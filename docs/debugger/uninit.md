@@ -1,36 +1,9 @@
 ---
-title: "UnInit | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# UnInit
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+redirect_url: /visualstudio/debugger/graphics/uninit
+ms.translationtype: HT
+ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
+ms.openlocfilehash: 2caa1cebaf419a41153d5e7f734ed062a246b26d
+ms.contentlocale: pt-br
+ms.lasthandoff: 11/08/2017
 
-Finaliza o arquivo de log de gráficos, fecha e libera os recursos que foram usados enquanto o aplicativo estava gravando ativamente informações gráficas.  
-  
-## Sintaxe  
-  
-```cpp  
-void UnInit();  
-```  
-  
-## Comentários  
- `UnInit` é chamado automaticamente quando uma instância do `VsgDbg` classe é destruída. Se o `VsgDbg` instância não estava gravando ativamente informações gráficas, isso não tem efeito.  
-  
- Depois de `UnInit` foi chamado em uma instância do `VsgDbg` classe, uma gráfico novo arquivo de log pode ser criado chamando `Init` e finalização, chamando `UnInit`. Você pode repetir isso quantas vezes você deseja usar o mesmo `VsgDbg` instância para criar o gráfico independente de vários arquivos de log.  
-  
-## Consulte também  
- [Init](../debugger/init.md)
+---

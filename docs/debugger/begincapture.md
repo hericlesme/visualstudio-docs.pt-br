@@ -1,8 +1,8 @@
 ---
-redirect_url: /visualstudio/debugger/graphics/graphics-state
+redirect_url: /visualstudio/debugger/graphics/begincapture
 ms.translationtype: HT
 ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
-ms.openlocfilehash: 191bd8160a2fda6548ab32fc376dfdc25e95db37
+ms.openlocfilehash: 75bcfe39eca5bf57190a415919f25b6d6e0c120a
 ms.contentlocale: pt-br
 ms.lasthandoff: 11/08/2017
 
