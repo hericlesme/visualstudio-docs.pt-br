@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: f21a064a-579f-44cb-9d21-76b62e8c18f5
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 7d11de01c44792d3e41cc2721a404f2ed906f02e
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsobjectbeforecollectcallback-typedef"></a>Typedef JsObjectBeforeCollectCallback
 Um retorno de chamada chamado antes de coletar um objeto.  

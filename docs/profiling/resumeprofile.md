@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- ResumeProfile
+helpviewer_keywords: ResumeProfile
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 59169c7e902fecf6bbe7822eec1d69f628b3f78b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bb0f988ce0d1b266fd930909f6e5d6462929e8f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 O método `ResumeProfile` diminui o contador de suspender/retomar para o nível de criação de perfil especificado.  
@@ -62,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  O identificador de processo ou thread gerado pelo sistema.  
   
 ## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
- A função indica êxito ou falha usando a enumeração de **PROFILE_COMMAND_STATUS**. O valor retornado pode ser um dos seguintes:  
+ A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  

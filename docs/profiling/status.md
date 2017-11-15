@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9045bef26e97cb5188d2dbaf96a59e5c97d9712c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: debc70294bf0b513f22ed1cc06b9f0790da7b778
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="status"></a>Status
 A opção VSPerfCmd.exe **Status** exibe informações sobre o estado do criador de perfil e todos os processos que estão atualmente sendo perfilados.  

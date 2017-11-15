@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsBoolToBoolean
-helpviewer_keywords:
-- JsBoolToBoolean function
+f1_keywords: jsrt/JsBoolToBoolean
+helpviewer_keywords: JsBoolToBoolean function
 ms.assetid: 24322ea3-0638-40a3-9b4c-fc912ebed3ff
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: b94f6f48cdb91edc967ad3e9f710462355fcd505
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsbooltoboolean-function"></a>Função JsBoolToBoolean
 Cria um valor booliano de um valor `bool`.  

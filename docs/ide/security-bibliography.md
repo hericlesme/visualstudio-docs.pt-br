@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- security [Visual Studio], additional information
+helpviewer_keywords: security [Visual Studio], additional information
 ms.assetid: 3e839007-c388-4fc4-a6d1-8127cd207750
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 06c8766b57159d193e1373d6d209727cd75ad76d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c523af49bde89a67111acbb456d7848ea42521c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="security-bibliography"></a>Bibliografia de segurança
 Veja a seguir os recursos selecionados disponíveis online e uma cópia impressa sobre o assunto de desenvolver aplicativos seguros e como configurar ambientes seguros:  

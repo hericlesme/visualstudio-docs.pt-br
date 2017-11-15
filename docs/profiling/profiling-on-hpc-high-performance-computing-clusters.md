@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,29 +20,15 @@ helpviewer_keywords:
 - profililng tools,HPC
 - HPC profiling
 ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 69c7e537211b80b1a787f951f7746626ee50793f
-
+ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
 Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem de Ferramentas de Criação de Perfil do [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] ou [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)]. Para obter mais informações sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) no site da Microsoft.  
@@ -165,8 +150,3 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
 |**Argumentos do script pré-perfil**|Especifica os argumentos que serão passados para o script pré-perfil.|  
 |**Script pré-perfil**|Especifica o caminho e o nome de arquivo de um script a ser executado no computador de desenvolvimento local depois de iniciar a sessão de criação de perfil.|  
 |**Argumentos do script pós-perfil**|Especifica os argumentos que serão passados para o script pós-perfil.|
-
-
-<!--HONumber=Feb17_HO4-->
-
-

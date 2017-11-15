@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- tools.alias
+f1_keywords: tools.alias
 helpviewer_keywords:
 - aliases, Visual Studio commands
 - commands, aliases
@@ -17,29 +15,15 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8ef96b7074f1972ee34bf053b21cf9dd2a73cc0c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cac24838cd848770c45794637620b70cea3e1bd6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="alias-command"></a>Comando Alias
 Cria um novo alias para um comando completo, comando e argumentos completos ou outro alias.  

@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Caller/Callee view
+helpviewer_keywords: Caller/Callee view
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1944efb30ac0852a362894239e5b8219b0b92e8a
-
+ms.openlocfilehash: a7e3d7541075642d3aaa417874aa51f7f3f7faa7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Exibição Chamador/Receptor da Chamada – dados de amostragem da memória do .NET
 A exibição de Chamador/Computador Chamado exibe dados de criação de perfil de memória do .NET para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.  
@@ -72,8 +56,3 @@ A exibição de Chamador/Computador Chamado exibe dados de criação de perfil d
  [Exibição Chamador/Receptor da Chamada – dados de instrumentação da memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Exibição de chamador/computador chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)   
  [Exibição de chamador/computador chamado – dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

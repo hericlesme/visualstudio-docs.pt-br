@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Call Tree view
+helpviewer_keywords: Call Tree view
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bb5afb459142b36d52e693ff72f0cdb5823d325c
-
+ms.openlocfilehash: 97cf11522b921ce9ebf1bfb26b40f2cd5a96d55e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Modo de exibição de árvore de chamadas – Dados de instrumentação
 Os valores para uma função na árvore de chamadas indicam a hora para as instâncias de função chamadas pela função pai na árvore de chamadas. Valores de percentual são calculados comparando o valor das instâncias de função com o tempo inclusivo decorrido total de todas as funções na execução de criação de perfil.  
@@ -105,8 +89,3 @@ Os valores para uma função na árvore de chamadas indicam a hora para as inst�
  [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-sampling-data.md)   
  [Modo de exibição de árvore de chamadas – instrumentação](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Modo de exibição de árvore de chamadas – amostragem](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

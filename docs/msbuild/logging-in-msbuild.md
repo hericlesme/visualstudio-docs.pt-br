@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, logging
+helpviewer_keywords: msbuild, logging
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 408818ae3bbaebad70c05e1851d90adb303ebd5b
-
+ms.openlocfilehash: 26a166779ae0a217e9522e7c3b577ec85507c0a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="logging-in-msbuild"></a>Registrando em logs no MSBuild
 O registro em logs oferece uma maneira de monitorar o andamento de um build. O registro em logs captura eventos de build, mensagens, avisos e erros em um arquivo de log.  
@@ -57,8 +41,3 @@ O registro em logs oferece uma maneira de monitorar o andamento de um build. O r
 ## <a name="related-sections"></a>Seções relacionadas  
  [Compilando Vários Projetos Paralelamente](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  Descreve como criar vários projetos mais rápido ao executá-los em paralelo.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

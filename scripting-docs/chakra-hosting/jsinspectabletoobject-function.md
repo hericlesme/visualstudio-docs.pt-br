@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: dd0ad567-2ba8-4a63-bee4-2c6ff5ce9fa9
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: dc2c1cb12bf4b89d15e20a06c5366ac5fbc07faf
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsinspectabletoobject-function"></a>Função JsInspectableToObject
 Cria um valor de JavaScript que é uma projeção do ponteiro `IInspectable` passado.  

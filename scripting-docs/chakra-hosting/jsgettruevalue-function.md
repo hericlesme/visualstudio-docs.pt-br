@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetTrueValue
-helpviewer_keywords:
-- JsGetTrueValue function
+f1_keywords: jsrt/JsGetTrueValue
+helpviewer_keywords: JsGetTrueValue function
 ms.assetid: c2a56d48-344b-492b-90b8-f570710f8310
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 61d4dfdb7d4e2b7c2c26e57e58f9f3d501e436c8
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgettruevalue-function"></a>Função JsGetTrueValue
 Obtém o valor de `true` no contexto de script atual.  

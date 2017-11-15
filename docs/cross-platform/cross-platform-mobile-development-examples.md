@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
-caps.latest.revision: 3
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "3"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0928308ccfaad947743618858f3c734bc4620059
-
+ms.openlocfilehash: 6809ffe0c53448d7d00fec1169b90fd87274367e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Exemplos de desenvolvimento móvel multiplataforma
 Vários dos modelos instalados pelo Visual C++ para Desenvolvimento Móvel Multiplataforma geram exemplos completos que podem ser usados para aprendizado. Além disso, o Centro de Desenvolvimento do Windows contém vários aplicativos de exemplo que você pode baixar e experimentar no Visual Studio.  
@@ -69,8 +53,3 @@ Vários dos modelos instalados pelo Visual C++ para Desenvolvimento Móvel Multi
  Para abrir um dos exemplos no Visual Studio, baixe o arquivo zip e abra a página **Propriedades** do arquivo baixado no Explorer. Escolha o botão **Desbloquear** e, em seguida, **OK**. Extraia o conteúdo do arquivo zip em um local conveniente e, em seguida, abra a pasta C++ na amostra extraída e abra o arquivo da solução.  
   
  Para compilar a amostra, pressione F7 ou, na barra de menus, escolha **Compilar**, **Compilar Solução**.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

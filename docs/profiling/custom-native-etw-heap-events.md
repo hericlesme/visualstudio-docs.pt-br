@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 02/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
-caps.latest.revision: 8
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
-dev_langs:
-- C++
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+dev_langs: C++
+ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: f2a659347823fee4b933463011c0b69c07fa937f
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="custom-native-etw-heap-events"></a>Eventos de heap ETW nativo personalizado
 
 O Visual Studio contém uma variedade de [ferramentas de criação de perfil e diagnóstico](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), incluindo um criador de perfil de memória nativa.  Esse criador de perfil vincula [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) do provedor de heap e fornece uma análise de como a memória está sendo alocada e utilizada.  Por padrão, essa ferramenta só pode analisar alocações feitas do heap padrão do Windows e todas as alocações fora desse heap nativo não serão exibidas.
@@ -176,6 +158,5 @@ Assim como ocorre com o heap padrão do Windows, também é possível usar essa 
 > O Visual Studio também contém uma ferramenta **Uso de Memória** no conjunto de ferramentas **Criação de Perfil de Desempenho**, que é habilitada na opção de menu **Depurar > Criador de Perfil de Desempenho** ou na combinação de teclas **Alt+F2**.  Esse recurso não inclui o acompanhamento de heap e não exibirá o heap personalizado descrito aqui.  Somente a janela **Ferramentas de Diagnóstico**, que pode ser habilitada com o menu **Depurar > Windows > Mostrar Ferramentas de Diagnóstico** ou a combinação de teclas **Ctrl+Alt+ F2**, contém essa funcionalidade.
 
 ## <a name="see-also"></a>Consulte também
-* [Ferramentas de Criação de Perfil](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
-* [Uso de Memória](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
-
+[Ferramentas de Criação de Perfil](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
+[Uso de Memória](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)

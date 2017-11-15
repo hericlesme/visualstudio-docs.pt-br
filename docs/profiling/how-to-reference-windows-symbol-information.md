@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - profiling tools, symbol servers
 - symbol servers
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: efa11bb6fcbdda678dc11c80ce97ee7d7eedc0c3
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 09e17cc1e28ad520f76d60c3411de4803a2b4b96
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Como fazer referência a informações de símbolo do Windows
 As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo (.pdb) para resolver nomes simbólicos como nomes de função em binários de programa. Siga estas etapas para baixar automaticamente e atualizar os arquivos .pdb corretos para a versão do Windows no computador local.  
@@ -63,7 +47,7 @@ As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo
   
      **C:\SymbolCache**  
   
-     Você também pode clicar no botão de reticências (**...**) e, em seguida, selecionar um diretório na caixa de diálogo **Procurar Pasta**.  
+     Você também pode clicar no botão de reticências (**...** ) e, em seguida, selecionar um diretório na caixa de diálogo **Procurar Pasta**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   

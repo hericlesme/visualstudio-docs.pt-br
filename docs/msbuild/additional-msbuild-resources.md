@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -599,31 +598,16 @@ helpviewer_keywords:
 - MSB3102
 - MSB3284
 ms.assetid: 29dd85ee-1530-43c1-b085-bb2330ac5a48
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e9b9d8d2498ec0c1f415242180c41af35a4addef
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bf172e3a2f2098d72db5e56d54c598d656650c88
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="additional-msbuild-resources"></a>Recursos adicionais do MSBuild
 Se você está tentando resolver um problema e não consegue encontrar as informações necessárias na documentação, é possível consultar outros recursos, como artigos da Base de Dados de Conhecimento, a comunidade de desenvolvedores ou o suporte ao produto.  
@@ -641,4 +625,3 @@ Se você está tentando resolver um problema e não consegue encontrar as inform
 
 ## <a name="see-also"></a>Consulte também  
  [Solução de problemas com erros de direcionamento do .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
-

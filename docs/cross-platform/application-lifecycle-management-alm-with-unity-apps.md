@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: de365cf073ed234ece1d9af56232a29b7ef8eec4
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: e2ab02d04f72ecfcbf792befdf1eb536e16c4e94
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos do Unity
 Desenvolver aplicativos para plataformas modernas envolve muito mais atividades do que apenas escrever código. Essas atividades, conhecidas como DevOps (desenvolvimento + operações), abrangem o ciclo de vida completo do aplicativo e incluem trabalhos de planejando e acompanhando, elaboração e implementação de código, gerenciamento de um repositório de código-fonte, execução de bulds, gerenciamento de integrações contínuas e implantações, testes (incluindo testes de unidade e testes de interface do usuário), execução de várias formas de diagnóstico em ambientes de desenvolvimento e produção e monitoramento do desempenho do aplicativo e dos comportamentos do usuário em tempo real por meio de telemetria e análise.  
@@ -63,7 +46,7 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|  
 |-------------|--------------------------|-------------------------|  
 |Diagramas de sequência|Não||  
-|Gráficos de dependência|Não||  
+|Grafos de dependência|Não||  
 |Hierarquia de chamadas|Não||  
 |Designer de Classe|Não||  
 |Gerenciador de arquitetura|Não||  

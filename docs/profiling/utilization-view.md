@@ -4,43 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.cpuutilization
-helpviewer_keywords:
-- Concurrency Visualizer, CPU Utilization View
+f1_keywords: vs.performance.view.cpuutilization
+helpviewer_keywords: Concurrency Visualizer, CPU Utilization View
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 22fe52a8f29840d1b99a1dc7de71b899f912dcf3
-
+ms.openlocfilehash: b57361df805fbeb374d01236af1d1a16d0a3365a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="utilization-view"></a>Exibição da utilização
-A **Exibição de Utilização** exibe informações sobre a CPU, GPU e outros recursos do sistema usados pelo processo atual. Ela mostra a utilização média do núcleo pelo processo analisado, o processo ocioso, o processo do Sistema e outros processos em execução no sistema ao longo do tempo. Ela não mostra qual núcleo específico está ativo em um determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com capacidade de 50% durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado. A exibição é gerada pela divisão do tempo de criação de perfil em segmentos de tempo curto. Para cada segmento, o gráfico plota o número médio de threads de processos em execução nos núcleos lógicos durante esse intervalo.  
+A **Exibição de Utilização** exibe informações sobre a CPU, GPU e outros recursos do sistema usados pelo processo atual. Ela mostra a utilização média do núcleo pelo processo analisado, o processo ocioso, o processo do Sistema e outros processos em execução no sistema ao longo do tempo. Ela não mostra qual núcleo específico está ativo em um determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com capacidade de 50% durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado. A exibição é gerada pela divisão do tempo de criação de perfil em segmentos de tempo curto. Para cada segmento, o grafo plota o número médio de threads de processos em execução nos núcleos lógicos durante esse intervalo.  
   
- ![Exibição de Utilização de CPU](~/profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
+ ![Exibição de Utilização de CPU](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
   
  O gráfico mostra o tempo (no eixo x) e os núcleos lógicos médios utilizados pelo processo de destino, o processo ocioso e o processo do Sistema. (O processo ocioso mostra núcleos ociosos. O processo do Sistema é um processo no Windows que pode executar o trabalho em nome de outros processos.) Os processos restantes em execução na conta do sistema para a utilização de qualquer um dos núcleos restantes.  
   
@@ -69,8 +52,3 @@ A **Exibição de Utilização** exibe informações sobre a CPU, GPU e outros r
 ## <a name="see-also"></a>Consulte também  
  [Visualização Simultânea](../profiling/concurrency-visualizer.md)   
  [Exibição de núcleos](../profiling/cores-view.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

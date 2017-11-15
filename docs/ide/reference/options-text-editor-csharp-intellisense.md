@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,33 +18,17 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-caps.latest.revision: 25
-author: kempb
-ms.author: kempb
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: b34b280b3558003c5c3ad92515d773bc7d45fdda
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: ac32cd3946e6d244f6ff658bb636c9ecfd89e197
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Opções, Editor de Texto, C#, IntelliSense
-<a id="options-text-editor-c-intellisense" class="xliff"></a>
+# <a name="options-text-editor-c-intellisense"></a>Opções, Editor de Texto, C#, IntelliSense
 Use a página de propriedades **IntelliSense** para modificar as configurações que afetam o comportamento do IntelliSense no Visual C#. É possível acessar a página de propriedades **IntelliSense** clicando em **Opções** no menu **Ferramentas**, clicando em **C#** na pasta **Editor de Texto** e, em seguida, em **IntelliSense.**  
   
 > [!NOTE]
@@ -53,8 +36,7 @@ Use a página de propriedades **IntelliSense** para modificar as configurações
   
  A página de propriedades **IntelliSense** contém as seguintes propriedades:  
   
-## Listas de Conclusão
-<a id="completion-lists" class="xliff"></a>  
+## <a name="completion-lists"></a>Listas de Conclusão  
  **Mostrar lista de preenchimento depois que um caractere é digitado**  
  Quando essa opção estiver selecionada, o IntelliSense exibirá automaticamente a lista de preenchimento quando você começar a digitar. Quando essa opção não estiver selecionada, o IntelliSense ainda estará disponível no menu **IntelliSense** ou pressionando CTRL+ESPAÇO.  
   
@@ -64,8 +46,7 @@ Use a página de propriedades **IntelliSense** para modificar as configurações
  **Colocar trechos de código em listas de preenchimento**  
  Quando essa opção estiver selecionada, o IntelliSense adicionará aliases de trechos de código C# à lista de preenchimento. Caso o alias do trecho de código seja igual a uma palavra-chave, por exemplo, [classe](/dotnet/csharp/language-reference/keywords/class), a palavra-chave será substituída pelo atalho. Para obter mais informações, consulte [Trechos de código do Visual C#](../../ide/visual-csharp-code-snippets.md).  
   
-## Seleção em listas de preenchimento
-<a id="selection-in-completion-lists" class="xliff"></a>  
+## <a name="selection-in-completion-lists"></a>Seleção em listas de preenchimento  
  **Confirmado pela digitação dos seguintes caracteres:**  
  Especifica todos os caracteres que executam o preenchimento automático do IntelliSense para o item selecionado na lista de preenchimento, depois de ele ser digitado.  
   
@@ -85,13 +66,11 @@ Use a página de propriedades **IntelliSense** para modificar as configurações
   
  `else|` (local do cursor)  
   
-## Seleção de Membro IntelliSense
-<a id="intellisense-member-selection" class="xliff"></a>  
+## <a name="intellisense-member-selection"></a>Seleção de Membro IntelliSense  
  **Pré-seleciona o membro usado mais recentemente**  
  Quando essa opção estiver selecionada, o IntelliSense pré-selecionará os membros selecionados recentemente na caixa pop-up Listar Membros do preenchimento automático de nome de objeto durante a sessão atual no IDE (ambiente de desenvolvimento integrado). O histórico dos membros mais usados recentemente é limpo entre cada sessão no IDE. Para obter mais informações, consulte [IntelliSense para membros usados mais recentemente](../../ide/visual-csharp-intellisense.md#most-recently-used-members).  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)   
  [Comentários da documentação XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Usando o IntelliSense](../../ide/using-intellisense.md)

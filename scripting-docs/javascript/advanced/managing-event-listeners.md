@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,16 +13,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 87717f5d-b0c6-4c8d-a293-476002b7bfcf
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 6a97c579716b9964b8dfb93db419e9a70160d33a
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="managing-event-listeners"></a>Gerenciando ouvintes de eventos
 Se o tempo de vida de um elemento ou objeto DOM é diferente do tempo de vida do ouvinte de eventos associado, talvez seja necessário usar o método [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx) para evitar perdas de memória.  

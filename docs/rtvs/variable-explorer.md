@@ -1,27 +1,24 @@
 ---
 title: "Gerenciador de Variáveis nas Ferramentas do R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6c669434-40d8-4970-92cc-502a98c8b5ab
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1d86bca24d9e8d4d1bde8d62cd0be25c485b9253
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 92396808161886cf3b15f7e8e0ab23a0a35e26b9
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="variable-explorer"></a>Gerenciador de Variáveis
 
 A janela **Gerenciador de Variáveis**, aberta usando **Ferramentas do R > Janelas > Gerenciador de Variáveis** (ou Ctrl + 8 se você já usou **Ferramentas do R > Configurações da Ciência de Dados**), mostra todas as variáveis em um determinado escopo na sessão atual do R. Por exemplo, se abrir o Gerenciador de Variáveis e inserir as seguintes linhas na [janela interativa](interactive-repl.md):
@@ -82,4 +79,3 @@ Dois comandos na barra de ferramentas do Gerenciador de Variáveis, que também 
 Depois de identificar o arquivo CSV a ser importado, o Visual Studio exibe uma caixa de diálogo **Importar Conjunto de Dados**, na qual há opções para controlar como esse arquivo de dados é analisado (ou seja, o que é o separador de campo e como lidar com aspas). Você também pode ver uma versão prévia do quadro de dados importado e do arquivo de dados original:
 
 ![Caixa de diálogo Importar conjunto de dados](media/variable-explorer-import-dataset-dialog.png)
-

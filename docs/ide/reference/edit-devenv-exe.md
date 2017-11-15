@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Devenv, /edit switch
 - /Edit Devenv swtich
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d2e85cae469358eef4b5dee707d84546b8de5e2f
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 05a43cbe880244da1abbb117d23fd928c60da9b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 Abre o arquivo especificado em uma instância existente do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

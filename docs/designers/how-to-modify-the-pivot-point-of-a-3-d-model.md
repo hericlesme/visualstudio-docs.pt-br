@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
-caps.latest.revision: 14
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: dbc81608b030742c86d0e88f68b49fe4f5f38bb8
-
+ms.openlocfilehash: 1f0c356df742f279e60d81a060551530be49ac9d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Como modificar o ponto dinâmico de um modelo 3D
 Este documento demonstra como usar o Editor de Modelo para modificar o *ponto dinâmico* de um modelo 3D. O ponto dinâmico é o ponto no espaço que define o centro matemático do objeto para rotação e colocação em escala.  
@@ -62,13 +47,8 @@ Este documento demonstra como usar o Editor de Modelo para modificar o *ponto di
   
  Aqui está um modelo que tem um ponto dinâmico modificado:  
   
- ![Um modelo de uma casa com um ponto dinâmico modificado](~/designers/media/digit-modified-model.png "Digit-Modified-Model")  
+ ![Um modelo de uma casa com um ponto dinâmico modificado](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
 ## <a name="see-also"></a>Consulte também  
  [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   
  [Editor de modelo](../designers/model-editor.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

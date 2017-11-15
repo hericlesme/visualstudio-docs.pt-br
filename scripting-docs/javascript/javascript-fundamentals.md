@@ -5,27 +5,24 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords:
-- JavaScript, fundamentals
+helpviewer_keywords: JavaScript, fundamentals
 ms.assetid: 0441e1e5-34e4-4d32-b188-f7fc35613478
-caps.latest.revision: 27
+caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 01eb433680881975adc3ca05d6ce7a9ed9222bca
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="javascript-fundamentals"></a>JavaScript princípios básicos
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] é uma linguagem de script interpretada baseada em objeto.  

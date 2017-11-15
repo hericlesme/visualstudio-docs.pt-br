@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSetCurrentContext
-helpviewer_keywords:
-- JsSetCurrentContext function
+f1_keywords: jsrt/JsSetCurrentContext
+helpviewer_keywords: JsSetCurrentContext function
 ms.assetid: 603cc94c-6585-411b-89f9-c6f144e2aa30
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: cd3daf7c97fa71ec19962233cdf5bd78bc4d2908
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetcurrentcontext-function"></a>Função JsSetCurrentContext
 Define o contexto de script atual no thread.  

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#OnError
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#OnError
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - OnError Element [MSBuild]
 - <OnError Element [MSBuild]
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 44be2189e785f6927e071a48cef2ba693cd5a245
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1c0238bb7a525166f69a59b0af5d08db5286a5f8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError` for `false` para uma tarefa com falha.  
@@ -97,4 +81,3 @@ Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError`
 ## <a name="see-also"></a>Consulte também  
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Destinos](../msbuild/msbuild-targets.md)
-

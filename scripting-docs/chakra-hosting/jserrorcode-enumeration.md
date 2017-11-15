@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsErrorCode
-helpviewer_keywords:
-- JsErrorCode enumeration
+f1_keywords: jsrt/JsErrorCode
+helpviewer_keywords: JsErrorCode enumeration
 ms.assetid: 4902f3f3-47a5-4e74-9c29-f96eeecbcda9
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: b09babd38505c5619f414d2e349cd52b3596ceac
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jserrorcode-enumeration"></a>Enumeração JsErrorCode
 Um código de erro retornado de uma API de hospedagem Chakra.  

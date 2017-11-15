@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
-caps.latest.revision: 15
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 955457ec56cecb291ce73e4fb521669ff68eb443
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: adec7e86fcb33985aa61b7e20b7e9ac16d2ad7b1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Como aplicar um sombreador a um modelo 3-D
 Este documento demonstra como usar o Editor de Modelos para aplicar um sombreador DGSL (Directed Graph Shader Language) a um modelo 3D.  
@@ -54,9 +38,9 @@ Este documento demonstra como usar o Editor de Modelos para aplicar um sombreado
   
  Este é um modelo ao qual o efeito de cor básico foi aplicado:  
   
- ![Cena&3;D que mostra o efeito de cor básico](~/designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
+ ![Cena 3D que mostra o efeito de cor básico](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
   
- Depois de aplicar um sombreador a um modelo, você pode abri-lo no Designer de Sombreador selecionando o modelo e, em seguida, na janela **Propriedades**, na propriedade **(Avançado)** do grupo de propriedades **Efeito**, escolha o botão de reticências (**...**).  
+ Depois de aplicar um sombreador a um modelo, você pode abri-lo no Designer de Sombreador selecionando o modelo e, em seguida, na janela **Propriedades**, na propriedade **(Avançado)** do grupo de propriedades **Efeito**, escolha o botão de reticências (**...** ).  
   
 ## <a name="see-also"></a>Consulte também  
  [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   

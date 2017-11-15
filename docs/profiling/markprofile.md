@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MarkProfile
+helpviewer_keywords: MarkProfile
 ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b6c88abbca3ba47d4c23d8a60a3643b30669baa6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0ab1c155b5c01f2278ca741ee13bb8e1a02e8b55
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="markprofile"></a>MarkProfile
 O método `MarkProfile` insere uma marca de perfil no arquivo .vsp. A criação de perfil para o thread que contém a função `MarkProfile` deve ser ON para a marca a ser inserida.  
@@ -50,14 +34,14 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  O marcador a inserir. O marcador deve ser maior ou igual a 0 (zero).  
   
 ## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
- A função indica êxito ou falha usando a enumeração de **PROFILE_COMMAND_STATUS**. O valor retornado pode ser um dos seguintes:  
+ A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|O parâmetro é menor ou igual a 0. Esses valores são reservados. A marca e o comentário não são registrados.|  
-|MARK_ERROR_MODE_NEVER|O modo de criação de perfil foi definido para NUNCA quando a função foi chamada. A marca e o comentário não são registrados.|  
+|MARK_ERROR_MODE_NEVER|O modo de criação de perfil foi definido para NEVER (NUNCA) quando a função foi chamada. A marca e o comentário não são registrados.|  
 |MARK_ERROR_MODE_OFF|O modo de criação de perfil foi definido como OFF quando a função foi chamada. A marca e o comentário não são registrados.|  
-|MARK_ERROR_NO_SUPPORT|Não há suporte para marca neste contexto. A marca e o comentário não são registrados.|  
+|MARK_ERROR_NO_SUPPORT|Não há suporte de marca neste contexto. A marca e o comentário não são registrados.|  
 |MARK_ERROR_OUTOFMEMORY|Não havia memória disponível para registrar o evento. A marca e o comentário não são registrados.|  
 |MARK_TEXTTOOLONG|A cadeia de caracteres excede o máximo de 256 caracteres. A cadeia de caracteres de comentário é truncada e a marca e o comentário são registrados.|  
 |MARK_OK|MARK_OK é retornado para indicar êxito.|  

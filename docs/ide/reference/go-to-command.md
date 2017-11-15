@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- edit.goto
+f1_keywords: edit.goto
 helpviewer_keywords:
 - Debug.Goto command
 - Go To command
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
-caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f977d4e63b015ec83ed0a189642caf2e74fcbb20
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 9273cd908a8948b47b818e9c4333cb8bd70fe094
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="go-to-command"></a>Comando Ir para
 Move o cursor para a linha especificada.  

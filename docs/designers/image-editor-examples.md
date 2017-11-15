@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 711493227189fe23968038345f420f864b3b0321
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b69e225bf4d7273e4e9ff1a33a1b5c4e8e332ebf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="image-editor-examples"></a>Exemplos do Editor de Imagem
 Os artigos nesta seção da documentação contêm exemplos que demonstram como você pode usar o Editor de imagens.  

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.cpplimitation
+f1_keywords: vs.classdesigner.cpplimitation
 helpviewer_keywords:
 - Visual C++, Class Designer
 - Class Designer, Visual C++ support
@@ -19,33 +17,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 0d974e9af7d22c5d02b1313cb2e46c873592f4d3
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: ef75c8108b7d86367e69ab7eead8a3a282596560
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Trabalhando com código do Visual C++ (Designer de Classe)
-<a id="working-with-visual-c-code-class-designer" class="xliff"></a>
+# <a name="working-with-visual-c-code-class-designer"></a>Trabalhando com código do Visual C++ (Designer de Classe)
 O Designer de Classe exibe uma superfície de design visual chamada um *diagrama de classe* que fornece uma representação visual dos elementos de código no projeto. É possível usar diagramas de classe para criar e visualizar classes e outros tipos em um projeto.  
 
  O Designer de Classe dá suporte aos seguintes elementos de código C++:  
@@ -67,21 +49,17 @@ O Designer de Classe exibe uma superfície de design visual chamada um *diagrama
 > [!NOTE]
 >  Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, consulte [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md).  
 
-## Solucionando problemas de exibição e resolução de tipo
-<a id="troubleshooting-type-resolution-and-display-issues" class="xliff"></a>  
+## <a name="troubleshooting-type-resolution-and-display-issues"></a>Solucionando problemas de exibição e resolução de tipo  
 
-### Local dos arquivos de origem
-<a id="location-of-source-files" class="xliff"></a>  
+### <a name="location-of-source-files"></a>Local dos arquivos de origem  
  O Designer de Classe não mantém controle sobre a localização dos arquivos de origem. Portanto, se você modificar a estrutura do projeto ou mover os arquivos de origem no projeto, o Designer de Classe pode perder o controle do tipo (especialmente, o tipo de origem de um typedef, classes base ou tipos de associação). É possível receber um erro como **O Designer de Classe não pode exibir este tipo**. Se você fizer isso, arraste o código-fonte realocado ou modificado para o diagrama de classe, para exibi-lo novamente.  
 
-### Problemas de atualização e desempenho
-<a id="update-and-performance-issues" class="xliff"></a>  
+### <a name="update-and-performance-issues"></a>Problemas de atualização e desempenho  
  Para projetos do Visual C++, pode levar de 30 a 60 segundos para que uma alteração no arquivo de origem seja exibida no diagrama de classe. Esse atraso também pode fazer com que o Designer de Classe gere o erro **Nenhum tipo foi encontrado na seleção**. Se você receber um erro como esse, clique em **Cancelar** na mensagem de erro e aguarde até que o elemento de código seja exibido no Modo de Exibição de Classe. Depois de fazer isso, o Designer de Classe deverá exibir o tipo.  
 
  Se um diagrama de classe não for atualizado com as alterações feitas no código, talvez seja necessário fechar o diagrama e abri-lo novamente.  
 
-### Problemas de resolução de tipo
-<a id="type-resolution-issues" class="xliff"></a>  
+### <a name="type-resolution-issues"></a>Problemas de resolução de tipo  
  O Designer de Classe poderá não resolver tipos pelos seguintes motivos:  
   
 -   O tipo está em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciando referências em um projeto](managing-references-in-a-project.md).  
@@ -104,8 +82,7 @@ O Designer de Classe exibe uma superfície de design visual chamada um *diagrama
   
 -   Verifique se o tipo está no escopo correto para que o Designer de Classe possa localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.  
 
-### Solucionando problemas de outras mensagens de erro
-<a id="troubleshooting-other-error-messages" class="xliff"></a>  
+### <a name="troubleshooting-other-error-messages"></a>Solucionando problemas de outras mensagens de erro  
  Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). Visite o [Fórum do Designer de Classe do Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  
 
 ##  <a name="limitations"></a> Limitações de elementos de código C++  
@@ -130,8 +107,7 @@ O Designer de Classe exibe uma superfície de design visual chamada um *diagrama
 
 -   O Designer de Classe não pode exibir tipos que são nulos ou que derivam de um tipo nulo.  
 
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Projetando e exibindo classes e tipos](../ide/designing-and-viewing-classes-and-types.md)   
  [Trabalhando com classes e outros tipos (Designer de Classe)](../ide/working-with-classes-and-other-types-class-designer.md)   
  [Trabalhando com diagramas de classe (Designer de Classe)](../ide/working-with-class-diagrams-class-designer.md)   
@@ -141,4 +117,3 @@ O Designer de Classe exibe uma superfície de design visual chamada um *diagrama
  [Estruturas do Visual C++ no Designer de Classe](../ide/visual-cpp-structures-in-class-designer.md)   
  [Enumerações do Visual C++ no Designer de Classe](../ide/visual-cpp-enumerations-in-class-designer.md)   
  [Typedefs do Visual C++ no Designer de Classe](../ide/visual-cpp-typedefs-in-class-designer.md)
-

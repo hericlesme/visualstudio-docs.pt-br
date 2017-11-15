@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- StartProfile
+helpviewer_keywords: StartProfile
 ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0f3fb0cc83befd44c3d154873dfba9d4c9b8766f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 077469a6e725638d29e19b45d088d74e83ff9961
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="startprofile"></a>StartProfile
 A função `StartProfile` define o contador como 1 (on) para o nível de criação de perfil especificado.  
@@ -62,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  O identificador de processo ou thread gerado pelo sistema.  
   
 ## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
- A função indica êxito ou falha usando a enumeração de **PROFILE_COMMAND_STATUS**. O valor retornado pode ser um dos seguintes:  
+ A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  

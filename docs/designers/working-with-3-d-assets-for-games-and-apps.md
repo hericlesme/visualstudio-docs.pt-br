@@ -4,23 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.graphics
+f1_keywords: vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: da8802e4b7143797f2e5f7694ee9d2092ec41dc8
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0c57284e21e1b276c6191109701f507c5a12f819
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Trabalhando com ativos 3D para jogos e aplicativos
 Este documento descreve as ferramentas [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que você pode usar para criar ou modificar modelos 3D, texturas e sombreadores para aplicativos e jogos do DirectX.  
@@ -43,7 +40,7 @@ Este documento descreve as ferramentas [!INCLUDE[vsprvs](../code-quality/include
 ### <a name="shaders"></a>Sombreadores  
  Sombreadores são programas pequenos específicos ao domínio executados em uma GPU (unidade de processamento gráfico). Os sombreadores determinam como os modelos 3D são transformados em formas na tela e como cada pixel nessas formas é colorido. Ao criar um sombreador e aplicá-lo a um objeto em seu jogo ou aplicativo, você pode dar ao objeto uma aparência exclusiva.  
   
- Use o Designer de Sombreador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que é uma ferramenta de design de sombreador baseada em gráfico, para criar efeitos visuais personalizados sem conhecer programação em HLSL.  
+ Use o Designer de Sombreador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que é uma ferramenta de design de sombreador baseada em grafo, para criar efeitos visuais personalizados sem conhecer programação em HLSL.  
   
 > [!NOTE]
 >  Para saber mais sobre como iniciar a programação em DirectX, consulte [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Para saber mais sobre como depurar um aplicativo baseado no DirectX, consulte [Diagnóstico de gráficos (Depuração de gráficos DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  

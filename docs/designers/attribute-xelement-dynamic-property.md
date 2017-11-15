@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8440fc7d-b3b4-4726-8ec8-492e6af79642
-caps.latest.revision: 2
-author: kempb
-ms.author: kempb
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f2feac03ad0fba1866a1df759fb6ffcf5a17aff6
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 0fd01945c2a33f3929f59e66a02a1d08a39c3cc7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Atributo (propriedade dinâmica de XElement)
 Obtém um indexador usado para recuperar a instância do atributo que corresponde ao nome especificado expandido.  

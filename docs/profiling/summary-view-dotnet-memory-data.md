@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Summary view
+helpviewer_keywords: Summary view
 ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a9d4792cc3f248b7772a81182f54233da8a35e9a
-
+ms.openlocfilehash: 968d46c4fe771229647282c719815982d81bf416
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="summary-view---net-memory-data"></a>Exibição Resumo – Dados de memória do .NET
 A exibição Resumo exibe informações sobre as funções e os tipos do .NET que alocaram a maior quantidade de memória e os tipos que foram criados mais vezes em uma execução de criação de perfil. Para obter mais informações, incluindo uma descrição das listas Links de notificação e Relatório, consulte [Exibição Resumo](../profiling/summary-view.md).  
@@ -68,8 +52,3 @@ A exibição Resumo exibe informações sobre as funções e os tipos do .NET qu
 ## <a name="see-also"></a>Consulte também  
  [Exibição Resumo](../profiling/summary-view-sampling-data.md)   
  [Exibição de Resumo](../profiling/summary-view-instrumentation-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

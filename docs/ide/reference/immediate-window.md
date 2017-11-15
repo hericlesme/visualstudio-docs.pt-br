@@ -4,40 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ImmediateWindow
+dev_langs: VB
+f1_keywords: VS.ImmediateWindow
 helpviewer_keywords:
 - design-time expression evaluation
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-caps.latest.revision: 24
-author: kempb
-ms.author: kempb
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d658394a4c5f773e281582810822956b9e28d268
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 81856823b511fc89f5f156915f843d4b0202e907
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="immediate-window"></a>Janela imediata
 A janela **Imediato** é usada para depurar e avaliar expressões, executar instruções, imprimir valores de variáveis e assim por diante. Ela permite inserir expressões a serem avaliadas ou executadas pela linguagem de desenvolvimento durante a depuração. Para exibir a janela **Imediato**, abra um projeto para edição, escolha **Windows** no menu **Depurar** e selecione **Imediato**, ou pressione CTRL + ALT + I.  
@@ -69,7 +54,7 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
   
 1.  Copie o código a seguir em um aplicativo de console do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:  
   
-    ```  
+    ```vb
     Module Module1  
   
         Sub Main()  
@@ -89,9 +74,9 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
   
      A janela **Imediato** executará `MyFunction` e exibirá `4`.  
   
- Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).  
+Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], projetos Web, projetos de dispositivo inteligente e projetos SQL.  
+Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], projetos Web, projetos de dispositivo inteligente e projetos SQL.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Avaliação de expressão em tempo de design em soluções multiprojeto  
  Ao estabelecer o contexto para a avaliação de expressão em tempo de design, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] faz referência ao projeto selecionado atualmente no Gerenciador de Soluções. Se nenhum projeto estiver selecionado no Gerenciador de Soluções, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta avaliar a função com relação ao projeto de inicialização. Se a função não puder ser avaliada no contexto atual, você receberá uma mensagem de erro. Se você estiver tentando avaliar uma função em um projeto que não é o projeto de inicialização da solução e receber um erro, tente selecionar o projeto no Gerenciador de Soluções e tente avaliar novamente.  

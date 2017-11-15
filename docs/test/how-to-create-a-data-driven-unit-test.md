@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,30 +15,14 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 2eaf4aa44fdc1bec56bb513af54ea7db72dcf3db
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: ec1c20ae334e81724af1b8d4e2b25d755a024bdc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como criar um teste de unidade orientado a dados
 Ao usar a estrutura de teste de unidade da Microsoft para código gerenciado, você pode configurar um método de teste de unidade para recuperar valores usados no método de teste de uma fonte de dados. O método é executado sucessivamente para cada linha na fonte de dados, o que facilita o teste de uma variedade de entradas usando um único método.  
@@ -208,4 +191,3 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)   
  [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)   
  [Escrevendo testes de unidade para .NET Framework com a estrutura de teste de unidade Microsoft para código gerenciado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-

@@ -1,28 +1,24 @@
 ---
 title: "Símbolos para a depuração de modo misto Python/C++ no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: be5fdf2f-b55f-488a-9772-58adfe07a7ab
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 365131bf30f57c90715bd04cded0f7c4c5761797
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 1be4e28055f0501433f85325870654671c12f961
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>Instalando símbolos de depuração para interpretadores do Python
 
 Para fornecer uma experiência de depuração completa, o [depurador de modo misto do Python](debugging-mixed-mode.md) no Visual Studio precisa de símbolos de depuração para que o interpretador do Python sendo usado analise várias estruturas de dados internas. Para o python27.dll, por exemplo, o arquivo de símbolo correspondente é python27.pdb; para o python36.dll, o arquivo de símbolo é python36.pdb. Cada versão do interpretador também fornece arquivos de símbolo para diversos módulos.

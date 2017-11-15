@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,42 +12,24 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, reserved properties
+helpviewer_keywords: MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 2edee236382b15c8f623acd1f4a650ef9628dd68
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: f1f9931e6e7c8dda4cb74f407901f41467c690cc
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Propriedades reservadas e conhecidas do MSBuild
-<a id="msbuild-reserved-and-well-known-properties" class="xliff"></a>
+# <a name="msbuild-reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um conjunto de propriedades predefinidas que armazenam informações sobre o arquivo de projeto e os binários [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Essas propriedades são avaliadas da mesma maneira que outras propriedades [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por exemplo, para usar a propriedade `MSBuildProjectFile`, digite `$(MSBuildProjectFile)`.  
   
  O MSBuild usa os valores na tabela a seguir para predefinir propriedades conhecidas e reservadas. As propriedades reservadas não podem ser substituídas, mas as propriedades conhecidas podem ser substituídas usando propriedades de ambiente com o mesmo nome, propriedades globais ou propriedades que são declaradas no arquivo de projeto.  
   
-## Propriedades reservadas e conhecidas
-<a id="reserved-and-well-known-properties" class="xliff"></a>  
+## <a name="reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas  
  A tabela a seguir descreve as propriedades predefinidas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
 |Propriedade|Descrição|Reservadas ou conhecidas|  
@@ -78,6 +59,5 @@ ms.lasthandoff: 07/14/2017
 |`MSBuildToolsPath`|O caminho de instalação da versão [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] associada ao valor de `MSBuildToolsVersion`.<br /><br /> Não inclua a barra invertida final no caminho.<br /><br /> Essa propriedade não pode ser substituída.|Reservado|  
 |`MSBuildToolsVersion`|A versão do Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que é usado para compilar o projeto.<br /><br /> Observação: um conjunto de ferramentas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consiste em tarefas, destinos e ferramentas que são usados para compilar um aplicativo. As ferramentas incluem compiladores, tais como csc.exe e vbc.exe. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurações padrão e personalizada do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).|Reservado|  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Referência do MSBuild](../msbuild/msbuild-reference.md) [Propriedades do MSBuild](../msbuild/msbuild-properties.md)

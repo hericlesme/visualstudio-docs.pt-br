@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-caps.latest.revision: 16
-author: kempb
-ms.author: kempb
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 912ac8a5130485faacaebd7bc7540e45bd7e0297
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-commands"></a>Comandos do Visual Studio
 Os comandos do Visual Studio permitem invocar um comando na janela **Comando**, janela **Imediato** ou na caixa **Localizar/Comando**. Em cada caso, o sinal maior que (`>`) é usado para indicar que um comando deve ser seguido em vez de uma operação de pesquisa ou de depuração.  

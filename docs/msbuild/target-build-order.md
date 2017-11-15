@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, build order
+helpviewer_keywords: msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 6ff353a186aa0fe05f66b59e18234867690f3624
-
+ms.openlocfilehash: 7fbe62b55fde85127756b9d73be333068bb9aad3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="target-build-order"></a>Ordem de build de destinos
 Os destinos deverão ser ordenados se a entrada para um destino depender da saída de outro. É possível usar esses atributos para especificar a ordem na qual os destinos são executados:  
@@ -138,8 +122,3 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
   
 ## <a name="see-also"></a>Consulte também  
  [Destinos](../msbuild/msbuild-targets.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

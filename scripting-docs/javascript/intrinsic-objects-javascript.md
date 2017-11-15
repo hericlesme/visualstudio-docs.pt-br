@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - built-in objects [JavaScript]
 - intrinsic objects [JavaScript]
 ms.assetid: 6520c634-a7d1-4a05-8c1b-2e79f449d2e4
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 242b572c2818f9968e6d5fc51e1272e3004c0f05
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="intrinsic-objects-javascript"></a>Objetos intrínsecos (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] fornece objetos intrínsecos (ou "internos"). Eles são os objetos `Array`, `Boolean`, `Date`, `Error`, `Function`, **Global**, **JSON**, **Math**, **Number**, `Object`, `RegExp` e `String`. Os objetos intrínsecos têm métodos, funções, propriedades e constantes associados, que são descritos detalhadamente na [referência de linguagem](../javascript/reference/javascript-reference.md).  

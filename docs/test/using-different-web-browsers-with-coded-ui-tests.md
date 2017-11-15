@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 28ce78165492b6f74cdd85ba79eae26e4d68d32c
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usando navegadores diferentes com testes de interface do usuário codificada
 Os testes de IU codificados podem automatizar testes para aplicativos Web gravando os testes usando o Internet Explorer. Você pode personalizar o teste e executá-lo usando o Internet Explorer ou outros tipos de navegador para esses aplicativos Web.  
@@ -117,17 +101,17 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
  *O que mais eu deveria saber?*  
  **Observações**  
   
--   ![Prerequsite](~/test/media/prereq.png "Prereq") não há suporte para o navegador Safari da Apple.  
+-   ![Prerequsite](../test/media/prereq.png "Prereq") não há suporte para o navegador Safari da Apple.  
   
--   ![Prerequsite](~/test/media/prereq.png "Prereq") A ação de iniciar o navegador deve fazer parte do teste de IU codificado.  
+-   ![Prerequsite](../test/media/prereq.png "Prereq") A ação de iniciar o navegador deve fazer parte do teste de IU codificado.  
   
      Se você tiver um navegador da Web já aberto e quiser executar etapas nele, a reprodução falhará a menos que você esteja usando o Internet Explorer. Consequentemente, é uma prática recomendada incluir a inicialização do navegador da Web como parte dos testes de IU codificados.  
   
--   ![Prerequsite](~/test/media/prereq.png "Prereq") Não há suporte para automatizar ações de IU baseadas em navegadores específicos, como maximizar, minimizar e restaurar.  
+-   ![Prerequsite](../test/media/prereq.png "Prereq") Não há suporte para automatizar ações de IU baseadas em navegadores específicos, como maximizar, minimizar e restaurar.  
   
  **Dicas**  
   
--   ![Tip](~/test/media/tip.png "Tip") Você pode configurar a saída para incluir capturas de tela nos logs de IU codificados. Para fazer isso, você precisa definir algumas configurações no arquivo QTAgent32.exe.config. Por padrão, esse arquivo é instalado no seguinte local:  
+-   ![Tip](../test/media/tip.png "Tip") Você pode configurar a saída para incluir capturas de tela nos logs de IU codificados. Para fazer isso, você precisa definir algumas configurações no arquivo QTAgent32.exe.config. Por padrão, esse arquivo é instalado no seguinte local:  
   
      **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
@@ -171,4 +155,3 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
  [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
  [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Analisando testes de IU codificados usando logs de teste de IU codificado](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
-

@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,16 +13,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 23c26185-6a7b-4b69-9d22-63e1841b4905
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: aa14730fffbf7c2747f15243590be89dc01a7ceb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="collections-javascript"></a>Coleções (JavaScript)
 É possível usar os objetos de coleção [Map](../../javascript/reference/map-object-javascript.md), [Set](../../javascript/reference/set-object-javascript.md) e [WeakMap](../../javascript/reference/weakmap-object-javascript.md) para armazenar valores e objetos. Esses objetos fornecem métodos convenientes para adicionar e recuperar membros usando uma chave ou um valor em vez de um índice. Para acessar membros de uma coleção usando um índice, use um objeto `Array`. Para obter mais informações, consulte [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md).  

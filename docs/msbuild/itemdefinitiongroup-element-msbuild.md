@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#ItemDefinitionGroup
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - ItemDefinitionGroup Element [MSBuild]
 - <ItemDefinitionGroup> Element [MSBuild]
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: d3c46b54fcfac4ebbcf3f716532411f3d06f710b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7f3ce1114f1f1b071e928128e3fea85f6a69c62a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Elemento ItemDefinitionGroup (MSBuild)
 O elemento `ItemDefinitionGroup` permite definir um conjunto de Definições de Item, que são valores de metadados aplicados por padrão a todos os itens do projeto. ItemDefinitionGroup substitui a necessidade de usar a [Tarefa CreateItem](../msbuild/createitem-task.md) e [Tarefa CreateProperty](../msbuild/createproperty-task.md). Para obter mais informações, consulte [Definições de item](../msbuild/item-definitions.md).  
@@ -103,4 +87,3 @@ O elemento `ItemDefinitionGroup` permite definir um conjunto de Definições de 
 ## <a name="see-also"></a>Consulte também  
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Itens](../msbuild/msbuild-items.md)
-

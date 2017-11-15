@@ -4,41 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.wizard.summarypage
+f1_keywords: vs.performance.wizard.summarypage
 helpviewer_keywords:
 - profiling tools, launching sessions
 - performance sessions, launching
 - performance sessions, ending
 - profiling tools, ending sessions
 ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4b69756c8e2bc36234cd3a6e2c930b7f4b3e75bc
-
+ms.openlocfilehash: 01870b4b687fc353c2e94d8e08ce57555cfc31f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Como iniciar e terminar a coleta de dados de desempenho
 Você deve adicionar o binário de destino do qual você deseja criar o perfil para a sessão de desempenho antes de iniciar a criação de perfil. Para adicionar um destino, clique com botão direito do mouse em **Destinos** no **Gerenciador de Desempenho** e clique em **Adicionar Binário de Destino**. Na caixa de diálogo **Adicionar Binário de Destino**, selecione o nome do arquivo e clique em **Abrir**. Um novo binário é adicionado.  
@@ -58,8 +42,3 @@ Você deve adicionar o binário de destino do qual você deseja criar o perfil p
 ## <a name="see-also"></a>Consulte também  
  [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  
  [Como pausar e retomar a coleta de dados de desempenho](../profiling/how-to-pause-and-resume-performance-data-collection.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

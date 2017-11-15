@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,29 +12,15 @@ f1_keywords:
 - vs.performance.DA0039
 - vs.performance.rules.DA0039
 ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9abfd8fbad9822de3c8c72c9e17bd890ba10c1f0
-
+ms.openlocfilehash: ce8fb29aed90680dece0483891653328854b1dc0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: taxa muito alta de contenções de bloqueio
 |||  
@@ -69,8 +54,3 @@ ms.openlocfilehash: 9abfd8fbad9822de3c8c72c9e17bd890ba10c1f0
  Clique duas vezes na mensagem para navegar para a exibição [Marcas](../profiling/marks-view.md) dos dados de criação de perfil.  Encontre a coluna **.NET CLR LocksAndThreads\Taxa de contenção/s**. Determine se há fases específicas da execução do programa em que a contenção de bloqueio é mais pesada do que em outras fases.  
   
  Essa regra é acionada somente quando o método de criação de perfil de simultaneidade não está sendo usado. O método de criação de perfil de simultaneidade é a melhor ferramenta a ser usada para diagnosticar problemas de desempenho relacionados à contenção de bloqueio em seu aplicativo. Colete dados de criação de perfil de simultaneidade para entender o comportamento de bloqueio do aplicativo. Isso inclui entender quais bloqueios têm uma contenção pesada, por quanto tempo a execução do thread é atrasada aguardando bloqueios com contenção e qual código específico está envolvido. Os perfis de simultaneidade coletam dados em todas as contenções de bloqueio, incluindo o comportamento de bloqueio de instalações nativas do Windows, classes do .NET Framework e todas as outras bibliotecas de terceiros referenciadas pelo aplicativo. Para obter informações sobre a criação de perfil de simultaneidade com base na IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consulte [Coletando dados de simultaneidade do thread e do processo](../profiling/collecting-thread-and-process-concurrency-data.md). Para obter links para informações sobre criação de perfil de simultaneidade por meio da linha de comando, consulte a seção **Usando o método de simultaneidade para coletar a contenção de recursos e dados de atividade de thread** de [Usando métodos de criação de perfil para coletar dados de desempenho por meio da linha de comando](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
-
-
-<!--HONumber=Feb17_HO4-->
-
-

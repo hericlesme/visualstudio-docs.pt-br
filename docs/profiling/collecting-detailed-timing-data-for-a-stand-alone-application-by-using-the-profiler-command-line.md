@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - profiling tools,instrumentation method
 - instrumentation profiling method
 ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ae8a0a40c00ee5f01e1d4741144dc466556161be
-
+ms.openlocfilehash: 340346aa6c4bea432f2946cf9311dd2f6442b42f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Coletando dados de tempo detalhados para um aplicativo autônomo usando a linha de comando do criador de perfil
 Esta seção descreve os procedimentos e opções para coletar dados de desempenho detalhados para um componente cliente (autônomo) usando o método de instrumentação da linha de comando.  
@@ -69,8 +54,3 @@ Esta seção descreve os procedimentos e opções para coletar dados de desempen
   
 ## <a name="reference"></a>Referência  
  [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

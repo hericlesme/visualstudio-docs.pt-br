@@ -4,41 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Call Tree view
+helpviewer_keywords: Call Tree view
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 69232e88ac4ff8a591836b570de4ac5d951785a2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a846dbd377a3a394fb23d29f907e29471abcc128
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Modo de exibição de árvore de chamadas – dados de amostragem de memória do .NET
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó de função lista todas as funções que ele chamou e os dados de alocação de memória do .NET sobre essas chamadas de função.  
   
- Os valores no modo de exibição de Árvore de Chamadas são para as instâncias de função que foram chamadas pela função pai na árvore de chamadas. Os valores de percentual são calculados comparando o valor de instância de função para o número total ou tamanho de alocações na execução da criação de perfil.  
+ Os valores no modo de exibição de Árvore de Chamadas são para as instâncias de função que foram chamadas pela função pai na árvore de chamadas. Os valores de porcentagem são calculados comparando o valor de instância de função para o número total ou tamanho de alocações na execução da criação de perfil.  
   
 ## <a name="highlighting-the-execution-hot-path"></a>Realce do afunilamento de execução  
  O modo de exibição de árvore de chamada pode expandir e realçar o caminho de execução do processo ou a função que criou o maior ou a maioria dos objetos de memória. Para exibir o caminho mais ativo, clique com o botão direito do mouse no processo ou na função e, em seguida, clique em **Expandir Afunilamento**.  

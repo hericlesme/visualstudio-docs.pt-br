@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSetIndexedProperty
-helpviewer_keywords:
-- JsSetIndexedProperty function
+f1_keywords: jsrt/JsSetIndexedProperty
+helpviewer_keywords: JsSetIndexedProperty function
 ms.assetid: ccbc5bf4-d99b-485c-ab25-d2bd1ed2142e
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 7814b1c1aa2ffe05edb171f53e91b7c3339aaf4d
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetindexedproperty-function"></a>Função JsSetIndexedProperty
 Define o valor no índice especificado de um objeto.  

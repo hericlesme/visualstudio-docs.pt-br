@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - advanced tasks for profiling tools
 - profiling tools, advanced tasks
 ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
-caps.latest.revision: 27
+caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8325469d681cbb616a41a27a8be97d7fb542fff2
-
+ms.openlocfilehash: 87d1e7fe63e16e81c7ff9465975f378f9e9e7c95
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="controlling-data-collection"></a>Controlando coleção de dados
 As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permitem controlar quando os dados de criação de perfil são coletados durante uma sessão de desempenho e especificar as funções das quais o perfil será criado. Esta seção descreve como iniciar e parar a coleta de dados nas janelas **Gerenciador de Desempenho** e **Controle de Coleta de Dados** e como limitar os objetos para os quais os dados de criação de perfil são coletados.  
@@ -51,8 +36,3 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/inclu
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

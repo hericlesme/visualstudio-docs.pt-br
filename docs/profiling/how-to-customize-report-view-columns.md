@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.test.columnchooser.dialogbox
+f1_keywords: vs.test.columnchooser.dialogbox
 helpviewer_keywords:
 - profiling tools, customizing reports
 - performance reports, customizing
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 405f7af3ff6a36e13f66c6b365becdeaa76462e8
-
+ms.openlocfilehash: 7e80bd33d9351c6b2dd5ce65d327e6cdb40fc70a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-customize-report-view-columns"></a>Como personalizar as colunas de exibição do relatório
 As ferramentas de desempenho no Visual Studio Team System Development Edition são totalmente integradas ao IDE (ambiente de desenvolvimento integrado) para proporcionar uma experiência perfeita para o usuário. A lista a seguir representa as exibições que podem ser personalizadas adicionando, removendo e reorganizando as colunas:  
@@ -74,8 +58,3 @@ As ferramentas de desempenho no Visual Studio Team System Development Edition s�
 4.  Clique no botão de seta para reordenar as colunas.  
   
 5.  Clique em **OK**.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

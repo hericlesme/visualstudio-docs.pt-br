@@ -7,19 +7,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Smart Host Helper Interfaces, implementing
+helpviewer_keywords: Smart Host Helper Interfaces, implementing
 ms.assetid: b9c44246-4d4d-469e-91be-00c8f5796fa5
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Interfaces auxiliares do host inteligente de implementação
 A [Interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) simplifica a tarefa de criação de um host inteligente para depuração ativa, porque ela fornece implementações de várias interfaces necessárias para hospedagem inteligente.  

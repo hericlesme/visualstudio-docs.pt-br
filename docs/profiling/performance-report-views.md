@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - profiling tools reports
 - profiling tools, report views
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ad2848823b32e98eb6f8f2869ca103b0bbb25157
-
+ms.openlocfilehash: e93b23c9bd30ec81088b7ec9a81cda837d6bafd4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="performance-report-views"></a>Exibições do relatório de desempenho
 Essa seção fornece informações de referência sobre os relatórios e as exibições das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Exibições dos arquivos de dados de criação de perfil são exibidas no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Os relatórios são gerados pela ferramenta de linha de comando [VSPerfReport](../profiling/vsperfreport.md).  
@@ -64,8 +49,3 @@ Essa seção fornece informações de referência sobre os relatórios e as exib
   
 ## <a name="see-also"></a>Consulte também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

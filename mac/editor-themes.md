@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: a00b4a38c0e1aeaf520ba84278109feb1758f2f0
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="editor-themes"></a>Temas do editor
 Os temas do editor podem ser alterados para qualquer um dos dez esquemas de cores fornecidos por padrão no Visual Studio para Mac por meio das opções do menu **Visual Studio > Preferências... > Editor de texto > Temas de Cores**:
 
@@ -35,4 +33,3 @@ Depois de encontrar ou criar um novo tema e baixá-lo para seu computador local,
 2. Navegue para o tema em seu computador local e pressione **Abrir**.
 3. Isso adiciona o tema à parte inferior da lista de temas pré-instalados. Selecione-o para visualizar. Isso atualizará seu editor em segundo plano: ![Visualizar Tema de Cores](media/source-editor-image21.png)
 4. Para aplicá-lo, pressione o botão **OK**. 
-

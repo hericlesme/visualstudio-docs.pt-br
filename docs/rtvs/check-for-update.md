@@ -1,27 +1,24 @@
 ---
 title: "Versão atual das Ferramentas do R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/25/2017
+ms.date: 07/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ae5fca3b-ce82-4b81-8625-75454e4099b0
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: e4d8c85efe007a890876865b0ab6b0cd69b54bbd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: 3f762f9f42577745f8e22280af010f34c82de3a8
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="rtvs-current-version"></a>Versão atual das RTVS
 
 Desde a última atualização para essa página, a versão mais recente das RTVS (Ferramentas do R para Visual Studio) era **1.0.30623.0940**. Sua versão pode variar dependendo da versão do Visual Studio e se você está usando um canal de visualização.

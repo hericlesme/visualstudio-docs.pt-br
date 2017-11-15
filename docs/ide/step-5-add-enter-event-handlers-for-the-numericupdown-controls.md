@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: f3cf117116f5da70391f5252e3d1bde4e2416b69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b5f12c71a894937ad452a31bf53e19e4fbb2d7a2
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown
 Na quinta parte deste tutorial, você adicionará manipuladores de eventos de Enter para facilitar a inserção de respostas aos problemas do teste. Esse código selecionará e desmarcará o valor atual em cada controle NumericUpDown para que o comprador de teste o escolha e comece em inserir um valor diferente.  
@@ -70,7 +53,8 @@ Caixa de diálogo Propriedades
   
 3.  No método para o manipulador de eventos **answer_Enter**, adicione o código a seguir.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
+     [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
   
      Este código pode parecer complexo, mas você pode entender se observar o passo a passo. Primeiro, olhe na parte superior de método: `object sender` no C# ou `sender As System.Object` no Visual Basic. Este parâmetro refere-se ao objeto cujo evento é acionando, que é conhecido como o remetente. Nesse caso, o objeto remetente é o controle NumericUpDown. Assim, na primeira linha do método, você especifica que o remetente não é apenas nenhum objeto genérico mas especificamente um controle NumericUpDown. (Cada controle NumericUpDown é um objeto, mas nem todo objeto é um controle NumericUpDown.) O controle NumericUpDown é chamado **answerBox** nesse método, porque será usado para todos os controles NumericUpDown no formulário, não apenas para o controle NumericUpDown de soma. Como você declara a variável answerBox nesse método, seu escopo se aplica somente a este método. Ou seja, a variável pode ser usada somente dentro desse método.  
   

@@ -4,41 +4,23 @@ ms.custom:
 ms.date: 11/16/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- sample applications [Visual Studio]
+helpviewer_keywords: sample applications [Visual Studio]
 ms.assetid: 3070fa13-46c7-4252-a1c2-857b4a2c9528
-caps.latest.revision: 51
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "51"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 702a87042fd3ddad3a96c066961494481e9c98c2
-
+ms.openlocfilehash: a69ac4580d14546211fb65b19e05b6766b07af91
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-samples"></a>Amostras do Visual Studio
 É possível encontrar exemplos do Visual Studio no site da [Galeria de Códigos do MSDN](http://go.microsoft.com/fwlink/?LinkID=127810).  
-  
- Você pode usar a caixa de diálogo **Novo Projeto** para procurar exemplos. (Para abrir a caixa de diálogo, na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**).  
   
 ## <a name="finding-samples"></a>Localizando exemplos  
  Veja a seguir alguns outros locais para procurar exemplos.  
@@ -58,8 +40,3 @@ ms.openlocfilehash: 702a87042fd3ddad3a96c066961494481e9c98c2
   
 ## <a name="see-also"></a>Consulte também  
  [Introdução ao Visual C# e ao Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

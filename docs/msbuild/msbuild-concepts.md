@@ -4,35 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, concepts
+helpviewer_keywords: MSBuild, concepts
 ms.assetid: 083b8ba3-e4ad-45af-bb5d-3bc81d406131
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: f6c59188abc8cbb9909c12438bc58fa9301d8af9
-ms.openlocfilehash: 9a53328adf662b1c47dc1bf2317764562f2e204e
-
+ms.openlocfilehash: 4395f4c82be689b1d573be44948e98711ba066c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-concepts"></a>Conceitos do MSBuild
 O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um esquema XML básico que você pode usar para controlar como a plataforma de build compila o software. Para especificar os componentes no build e como eles devem ser compilados, use essas quatro partes do MSBuild: propriedades, itens, tarefas e destinos.  
@@ -51,8 +36,3 @@ O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |[Passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md)|Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE (ambiente de desenvolvimento integrado) do Visual Studio.|  
 |[Referência do MSBuild](../msbuild/msbuild-reference.md)|Links para documentos que contêm informações de referência.|  
 |[MSBuild](../msbuild/msbuild.md)|Apresenta uma visão geral do esquema XML para um arquivo de projeto e mostra como ele controla os processos que compilam o software.|
-
-
-<!--HONumber=Feb17_HO4-->
-
-

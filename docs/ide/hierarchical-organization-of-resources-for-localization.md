@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -19,28 +18,15 @@ helpviewer_keywords:
 - resources [Visual Studio], fallback system
 - resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a8bc841364ce5fd7c2bd9f3e4ff68257bdc35165
-
+ms.openlocfilehash: 7f52d57d45c0f78a5bd64b16f10c9bb7c2256cd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organização hierárquica de recursos para localização
 No Visual Studio, os recursos localizados (dados como cadeias de caracteres e imagens apropriadas para cada cultura) são armazenados em arquivos separados e carregados de acordo com a configuração de cultura da interface do usuário. Para entender como os recursos localizados são carregados, é útil pensar neles como organizados de forma hierárquica.  
@@ -57,11 +43,11 @@ No Visual Studio, os recursos localizados (dados como cadeias de caracteres e im
   
  A melhor maneira de armazenar seus recursos é generalizá-los o máximo possível. Isso significa armazenar cadeias de caracteres localizadas, imagens e assim por diante nos arquivos de recursos para culturas neutras em vez de culturas específicas sempre que possível. Por exemplo, se você tiver recursos para a cultura francês belga ("fr-BE") e os recursos imediatamente acima forem os recursos de fallback em inglês, poderá ocorrer um problema quando alguém usar o aplicativo em um sistema configurado para a cultura do francês canadense. O sistema procurará por um assembly satélite para “fr-CA”, não o encontrará e carregará o assembly principal que contém o recurso de fallback, que está em inglês, em vez de carregar os recursos em francês. A figura a seguir mostra este cenário indesejável.  
   
- ![Apenas recursos específicos](~/ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
+ ![Apenas recursos específicos](../ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
  Se você seguir a prática recomendada de colocar o máximo de recursos possível em um arquivo de recurso neutro para a cultura “fr”, o usuário do francês canadense não verá os recursos marcados para a cultura “fr-BE”, mas verá cadeias de caracteres em francês. A situação a seguir mostra esse cenário preferencial.  
   
- ![Gráfico NeutralSpecificResources](~/ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
+ ![Gráfico NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
 ## <a name="see-also"></a>Consulte também  
  [Neutral Resources Languages for Localization](../ide/neutral-resources-languages-for-localization.md)  (Idiomas de recursos neutros para localização)  
@@ -70,8 +56,3 @@ No Visual Studio, os recursos localizados (dados como cadeias de caracteres e im
  [Globalizando e localizando aplicativos](../ide/globalizing-and-localizing-applications.md)   
  [How to: Set the Culture and UI Culture for Windows Forms Globalization](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)  (Como definir a cultura e a cultura da interface do usuário para globalização do Windows Forms)  
  [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0) (Como definir a cultura e a cultura da interface do usuário para globalização de página da Web do ASP.NET)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

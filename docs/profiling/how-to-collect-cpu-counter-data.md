@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.property.cpucounters
+f1_keywords: vs.performance.property.cpucounters
 helpviewer_keywords:
 - profiling tools, using portable CPU counters
 - performance tools, portable CPU counters
 ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: eed9be16b8cf7487a29332e9b1adb054e0c7597c
-
+ms.openlocfilehash: 856ffdc2bc2e33dec6e7ff531b9ce5582fc9b3db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Como coletar dados do contador de CPU
 Um contador de evento de CPU é usado para coletar dados de desempenho específicos de hardware. Este tópico mostra como coletar dados do contador de eventos quando você usa a método de criação de perfil de instrumentação.  
@@ -85,8 +69,3 @@ Um contador de evento de CPU é usado para coletar dados de desempenho específi
  [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)   
  [Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)   
  [Como escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

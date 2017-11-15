@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#AL
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#AL
 dev_langs:
 - VB
 - CSharp
@@ -19,30 +17,15 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 3b2427ae09beefcf1aca204815dd259eab0cde9a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 233946c0c46f9ee053f3497e7d6aa856315c3dfd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="al-assembly-linker-task"></a>Tarefa AL (Assembly Linker)
 A tarefa AL encapsula AL.exe, uma ferramenta que é distribuída com o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Essa ferramenta, o Assembly Linker, é usada para criar um assembly com um manifesto com base em um ou mais arquivos que são arquivos de recurso ou módulos. Compiladores e ambientes de desenvolvimento talvez já forneçam essas funcionalidades, então muitas vezes não é necessário usar essa tarefa diretamente. O Assembly Linker é mais útil para os desenvolvedores que precisam criar um único assembly com base em vários arquivos de componente, como aqueles que podem ser produzidos via desenvolvimento de linguagens mistas. Essa tarefa não combina os módulos em um único arquivo do assembly; os módulos individuais ainda deverão ser distribuídos e estar disponíveis para que o assembly resultante carregue corretamente. Para obter mais informações sobre o AL.exe, consulte [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  

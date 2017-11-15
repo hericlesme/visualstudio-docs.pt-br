@@ -4,43 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.err.debug_in_zone_no_hostproc
-- vs.err.debug_in_zone_no_hostproc:11310
-dev_langs:
-- VB
-- CSharp
-- C++
-helpviewer_keywords:
-- Advanced Security Settings dialog box
+f1_keywords: vs.err.debug_in_zone_no_hostproc
+helpviewer_keywords: Advanced Security Settings dialog box
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6333e9e76a5b5078471be864a60526df1d96014d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 06ca9ec7fc3c084ce503ba0900d10eb2b68f4349
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Caixa de diálogo Configurações de Segurança Avançadas
 Essa caixa de diálogo permite especificar configurações de segurança relacionadas à depuração na zona.  

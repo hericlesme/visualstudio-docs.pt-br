@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -25,30 +24,15 @@ helpviewer_keywords:
 - classes [Visual Studio]
 - Class Designer [Visual Studio], about
 ms.assetid: 4909e38d-2ea8-4caf-92b1-857bd162ab7c
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c6324c5dcf46c684ce271fd1b82163a7126c1350
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 967e2667b04f8be725c86054cc6fa391c2a4ad9c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>Trabalhando com classes e outros tipos (Designer de Classe)
 Concentre-se com mais facilidade nas classes e tipos mais importantes quando você cria e editá-los com o Designer de Classe no Visual Studio. Use diagramas de classe para trabalhar de maneira mais visual com o código do Visual C# .NET, Visual Basic .NET ou C++.  

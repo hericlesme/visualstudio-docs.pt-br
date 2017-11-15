@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d6615079-2df7-420f-a126-077e7d42486c
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: cc7dc7253616081bff396fc228e561d6a40c2163
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="javascript-runtime-hosting"></a>Hospedagem do Tempo de Execução do JavaScript
 As APIs de JsRT (tempo de execução de JavaScript) fornecem uma maneira para aplicativos da área de trabalho, da Windows Store e do lado do servidor em execução no sistema operacional Windows adicionarem recursos de script para um aplicativo usando o mecanismo JavaScript Chakra baseado em padrões que também é usado pelo Internet Explorer e Microsoft Edge. Essas APIs estão disponíveis no Windows 10 e qualquer versão do sistema operacional Windows que tenha o Internet Explorer versão 11.0 instalado no computador.  

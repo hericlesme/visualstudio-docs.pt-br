@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 07/13/2017
 ms.topic: article
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
+ms.openlocfilehash: b494128a26691f9916a0fe2380a5f403e61d21d4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 9e7d7314240688c1acbf064a53ba182b92833a60
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
  O Visual Studio para Mac facilita o desenvolvimento do serviço de seu aplicativo por meio de seu suporte para a plataforma de desenvolvimento na Web ASP.NET Core mais recente. O ASP.NET Core é executado no .NET Core, a evolução mais recente do .NET Framework e o tempo de execução. Ele foi ajustado a fim de proporcionar um desempenho rápido, perfeito para instalações de pequeno porte e recriado para ser executado no Linux, macOS e também no Windows.
@@ -63,7 +61,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configurando e iniciando um host por meio de uma instância de [`WebHostBuilder`](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
+Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configurando e iniciando um host por meio de uma instância de [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
 
  * `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo
  * `UseContentRoot(Directory.GetCurrentDirectory())`: usa pasta raiz do projeto Web como a raiz de conteúdo do aplicativo ele for iniciado desta pasta
@@ -109,7 +107,7 @@ Essa classe Startup sempre deve cumprir as seguintes regras:
 
 O método `ConfigureServices` define os serviços que serão usados pelo seu aplicativo.
 
-O `Configure` permite compor o pipeline de solicitação usando [Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware). Esses componentes são usados em um pipeline de aplicativo do ASP.NET para tratar solicitações e respostas. O pipeline HTTP consiste em diversos delegados de solicitação, chamados em sequência. Cada delegado pode escolher tratar a solicitação em si ou passá-la para o próximo delegado.
+O `Configure` permite compor o pipeline de solicitação usando [Middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware). Esses componentes são usados em um pipeline de aplicativo do ASP.NET para tratar solicitações e respostas. O pipeline HTTP consiste em diversos delegados de solicitação, chamados em sequência. Cada delegado pode escolher tratar a solicitação em si ou passá-la para o próximo delegado.
 
 Você pode configurar delegados usando os métodos `Run`,`Map` e `Use` métodos em `IApplicationBuilder`, mas o método `Run` nunca chama um próximo delegado e sempre deve ser usado no final do pipeline.
 
@@ -135,7 +133,7 @@ Aplicativos ASP.NET Core usam o padrão de design MVC (Modelo-Exibição-Control
 - **Exibição**: exibe a interface do usuário do aplicativo (que muitas vezes são os dados de modelo).
 - **Controlador**: uma classe que trata as solicitações do navegador, responde à entrada e interação do usuário.
 
-Para obter mais informações sobre como usar o MVC, consulte [Visão geral do guia de MVC do ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview).
+Para obter mais informações sobre como usar o MVC, consulte [Visão geral do guia de MVC do ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/overview).
 
 Para adicionar um controlador, faça o seguinte:
 
@@ -237,4 +235,3 @@ Para obter mais informações sobre as próximas etapas a partir daqui, consulte
 - Documentos do [ASP.NET Core](https://docs.microsoft.com/aspnet/core/#build-web-ui-and-web-apis-using-aspnet-core-mvc).
 - [Criando serviços de back-end para aplicativos móveis nativos](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend), que mostra como criar um serviço REST usando o ASP.NET Core para um aplicativo Xamarin.Forms.
 - [Laboratório prático do ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
-

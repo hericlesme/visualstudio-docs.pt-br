@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f697d7b4-704e-4cac-b13a-bc57d2ff8318
-caps.latest.revision: 131
+caps.latest.revision: "131"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: df30e760d4474d06058be38e236285247bddbe60
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 1763ce5fa669d4104cef51e39a1d58bf748d9810
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 Mantenha o foco no trabalho enquanto descobre o que aconteceu com seu código – sem sair do editor. Localize referências e alterações em seu código, bugs vinculados, itens de trabalho, revisões de código e testes de unidade.  
@@ -122,7 +105,7 @@ Mantenha o foco no trabalho enquanto descobre o que aconteceu com seu código �
   
  É possível ver quem alterou seu código ao longo do tempo. Isso pode ajudá-lo a encontrar padrões nas alterações da sua equipe e avaliar o impacto delas.  
   
- ![CodeLens: ver o histórico de alterações do código como um gráfico](../ide/media/codelens.png "CodeLens")  
+ ![CodeLens: ver o histórico de alterações do código como um grafo](../ide/media/codelens.png "CodeLens")  
   
 #### <a name="find-changes-in-your-current-branch"></a>Encontre alterações na sua ramificação atual  
  Suponha que sua equipe tenha várias ramificações - uma ramificação principal e um desenvolvimento filho - para reduzir o risco de ruptura de código estável:  

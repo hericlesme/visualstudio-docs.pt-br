@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetPrototype
-helpviewer_keywords:
-- JsGetPrototype function
+f1_keywords: jsrt/JsGetPrototype
+helpviewer_keywords: JsGetPrototype function
 ms.assetid: 05d743fc-103e-4a92-86f2-a063f39a2a6f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: cc1f3ae9780ca183d4d17c3eccb70bb4d56a50f3
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetprototype-function"></a>Função JsGetPrototype
 Retorna o protótipo de um objeto.  

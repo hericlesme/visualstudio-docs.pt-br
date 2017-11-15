@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- file.opensolution
+f1_keywords: file.opensolution
 helpviewer_keywords:
 - Open Solution command
 - File.OpenSolution command
 ms.assetid: 61de76c8-69d7-4cdb-b605-e132f45d05d9
-caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4ccedb5648c652317af7760d1cdfb55661cdebce
-
+ms.openlocfilehash: bae1a28c7d9d0a87eeec3148301234cc0f45c286
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="open-solution-command"></a>Comando Abrir Solução
 Abre uma solução existente, fechando outras soluções abertas.  
@@ -68,8 +52,3 @@ File.OpenSolution filename
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

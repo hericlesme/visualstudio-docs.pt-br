@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.resourcecontention
-helpviewer_keywords:
-- Resource Contentions view
+f1_keywords: vs.performance.view.resourcecontention
+helpviewer_keywords: Resource Contentions view
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5a2db682fb86b36d86e117791fb88a299fe71732
-
+ms.openlocfilehash: 0e763d37cecb35bee3d6b4ace9d5e4f9bf4e3173
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resource-contentions-view---contention-data"></a>Exibição de contenções de recurso – Dados de contenção
 A exibição Contenção de Recursos lista os dados de contenção para os recursos que estavam na fonte de eventos de contenção. Um evento de contenção ocorre quando uma função em um thread é forçada a aguardar o acesso ao recurso porque uma função em outro thread obteve acesso exclusivo ao recurso. Cada recurso é o nó raiz de uma árvore de chamadas que exibe os caminhos de execução de função que resultaram em eventos de contenção.  
@@ -75,8 +58,3 @@ A exibição Contenção de Recursos lista os dados de contenção para os recur
 |**ID do Processo**|A PID (ID do processo) do processo no qual a função estava sendo executada.|  
 |**Nome do Processo**|O nome do processo.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
-
-
-<!--HONumber=Feb17_HO4-->
-
-

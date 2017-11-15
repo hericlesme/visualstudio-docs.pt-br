@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vc.task.setenv
+f1_keywords: vc.task.setenv
 dev_langs:
 - VB
 - CSharp
@@ -20,29 +18,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), tasks
 - SetEnv task (MSBuild (Visual C++))
 ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a842c267c9c3943264cd492ad84cf97beb8a820f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0223d57cf4c16166149b1fc9e8903f563b724d20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="setenv-task"></a>Tarefa SetEnv
 Define ou exclui o valor de uma variável de ambiente especificada.  

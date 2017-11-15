@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.threads.report.execution
-helpviewer_keywords:
-- Concurrency Visualizer, Execution Profile Report
+f1_keywords: vs.cv.threads.report.execution
+helpviewer_keywords: Concurrency Visualizer, Execution Profile Report
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 36ecfc56c76d1f5c5bf2ce7188d0520a5e63ade7
-
+ms.openlocfilehash: bdf0605f635fd1cc07e04bcb848bc83f92d2d8c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="execution-profile-report"></a>Relatório do perfil de execução
 O relatório do perfil de execução é um perfil de amostragem tradicional. As amostras são colhidas aproximadamente a cada milissegundo durante períodos quando um thread está sendo executado em um núcleo lógico e a Visualização Simultânea cria uma árvore de chamada típica agrupando o conjunto acumulado de pilhas de amostra. Os dados nessa tabela podem ser afetados pelo intervalo de tempo atual e pelos threads ocultos e pelos seguintes filtros que podem ser aplicados:  
@@ -59,8 +42,3 @@ O relatório do perfil de execução é um perfil de amostragem tradicional. As 
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

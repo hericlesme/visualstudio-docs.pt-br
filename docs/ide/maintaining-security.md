@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,30 +15,15 @@ helpviewer_keywords:
 - MBSA (Microsoft Baseline Security Analyzer)
 - security [.NET Framework], maintaining after deployment
 ms.assetid: 621d10c1-842b-4902-be60-bb9719591751
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 16d6817f3da3379b80549163734328664a011a87
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4dcb40a02de239c8061ae2559ce6adb581625b8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="maintaining-security"></a>Mantendo segurança
 Costuma-se dizer que o preço da segurança é a vigilância constante. Apesar da sua dedicação à segurança durante o design e desenvolvimento de seu aplicativo, você deve supor que as falhas na segurança surgirão após a implantação. Ao auditar seu aplicativo e analisar os logs de evento, você pode descobrir algumas falhas anteriormente ocultas.  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,29 +13,15 @@ f1_keywords:
 - vs.performance.DA0008
 - vs.performance.rules.DA0008
 ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c56057ac5f5a31aca0826c5dec8e81bdd1c22102
-
+ms.openlocfilehash: 9f78e1e75eb328331adfdcdddfc659a4167ae503
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: poucas amostras coletadas
 |||  
@@ -55,8 +40,3 @@ ms.openlocfilehash: c56057ac5f5a31aca0826c5dec8e81bdd1c22102
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Considere a criação de perfil de uma execução mais longa do aplicativo ou o uso de uma taxa de amostragem mais rápida para obter resultados estatisticamente significativos. Para obter informações sobre como alterar a taxa de amostragem na IDE do Visual Studio, consulte [Como escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md). Para obter mais informações sobre como alterar a taxa de amostragem ao usar a linha de comando das Ferramentas de Criação de Perfil, consulte [Timer](../profiling/timer.md) na referência [VSPerfCmd](../profiling/vsperfcmd.md).
-
-
-<!--HONumber=Feb17_HO4-->
-
-

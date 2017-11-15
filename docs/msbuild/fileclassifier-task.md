@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,30 +17,15 @@ helpviewer_keywords:
 - non-localizable resources [WPF MSBuild], classifying to embed in an assembly
 - FileClassifier task [WPF MSBuild]
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: e8c0f52f1e3e15bd2a12716fc7c93a0fbf32779e
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 007a8332e741fe6c043b4444fcaf4447effdcd76
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="fileclassifier-task"></a>Tarefa FileClassifier
 O <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica um conjunto de recursos de origem uma vez que eles serão inseridos em um assembly. Se um recurso não for localizável, ele será inserido no assembly principal do aplicativo; caso contrário, ele será inserido em um assembly satélite.  

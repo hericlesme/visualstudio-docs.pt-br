@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,30 +18,15 @@ helpviewer_keywords:
 - regular expressions
 - Visual Studio, regular expressions
 ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
-caps.latest.revision: 53
+caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 541b728d006f85fc550c5ddad2a7cd74190c244a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: c01023649879c34838cbca3172aec6b5a053f4bd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Usando expressões regulares no Visual Studio
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa expressões regulares do .NET Framework para localizar e substituir texto. Para obter mais informações sobre as expressões regulares do .NET, consulte [Expressões regulares do .NET Framework](/dotnet/standard/base-types/regular-expressions).  
@@ -78,7 +62,7 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa expressões regu
 |Escapa o caractere após a barra invertida|\|`\^` corresponde ao caractere ^.|  
 |Especificar o número de ocorrências do caractere ou do grupo anterior|{x}, em que x é o número de ocorrências|`x(ab){2}x` corresponde a “xababx”, e `x(ab){2,3}x` corresponde a “xababx” e “xabababx”, mas não a “xababababx”.|  
 |Encontrar a correspondência do texto em uma classe de caracteres Unicode, em que “X” é o número Unicode. Para obter mais informações sobre classes de caracteres Unicode, consulte<br /><br /> [Propriedades de caracteres Unicode Standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` corresponde a “T” e “D” em “Thomas Doe”.|  
-|Encontrar a correspondência de um limite de palavra|`\b` (Fora de uma classe de caracteres, \b especifica um limite de palavra, e dentro de uma classe de caracteres, especifica um backspace).|`\bin` corresponde a “in” em “inside”, mas não em “pinto”.|  
+|Encontrar a correspondência de um limite de palavra|`\b` (Fora de uma classe de caracteres, \b especifica um limite de palavra, e dentro de uma classe de caracteres, especifica um backspace).|`\bin` corresponde a “in” em “inside”, mas não em “pintor”.|  
 |Encontrar a correspondência de uma quebra de linha (por exemplo, um retorno de carro seguido por uma nova linha).|\r?\n|`End\r?\nBegin` corresponde a “End” e “Begin” somente quando “End” é a última cadeia de caracteres em uma linha e “Begin” é a primeira cadeia de caracteres na próxima linha.|  
 |Encontrar a correspondência de um caractere alfanumérico|\w|`a\wd` corresponde a “add” e “a1d”, mas não a “a d”.|  
 |Encontrar a correspondência de um caractere de espaço em branco.|(?([^\r\n])\s)|`Public\sInterface` corresponde à frase “Public Interface”.|  

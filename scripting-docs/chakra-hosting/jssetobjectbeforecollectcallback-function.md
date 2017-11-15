@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: ea2cbd94-d8b0-4fa9-a4a1-c75a4e338eaf
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 6a472e63afd909ee7bcb74cb2fdd1ae98d6a2938
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetobjectbeforecollectcallback-function"></a>Função JsSetObjectBeforeCollectCallback
 Define uma função de retorno de chamada que é chamada pelo tempo de execução antes da coleta de lixo de um objeto.  

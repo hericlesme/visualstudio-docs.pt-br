@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -26,30 +25,15 @@ helpviewer_keywords:
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
 ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
-caps.latest.revision: 63
+caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 694e747f09e38a2dc363057ccdb43ac55f4c61ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
-ms.openlocfilehash: 759ffc281b8c673f5987afc6512b225434b69dec
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 O [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] fornece uma experiência de edição de JavaScript avançada pronta para o uso. Ativado por um serviço de linguagem baseado no TypeScript, o Visual Studio oferece um IntelliSense mais sofisticado, suporte para recursos modernos do JavaScript e recursos aprimorados de produtividade como Ir para Definição, refatoração e muito mais.
@@ -150,6 +134,5 @@ Por padrão, o serviço de linguagem Salsa tentará detectar quais bibliotecas d
 Atualmente, a detecção automática funciona para dependências baixadas no npm (com a leitura do arquivo `package.json`), no Bower (com a leitura do arquivo `bower.json`) e em arquivos soltos no projeto que correspondem a uma lista de aproximadamente as 400 bibliotecas mais populares do JavaScript. Por exemplo, se você tiver `jquery-1.10.min.js` no projeto, o arquivo `jquery.d.ts` será buscado e carregado para proporcionar uma melhor experiência de edição. Esse arquivo `.d.ts` não afetará o projeto. 
 
 Se você não desejar usar a aquisição automática, desabilite-a adicionando um arquivo de configuração, conforme descrito abaixo. Ainda é possível colocar arquivos de definição para uso diretamente no projeto manualmente.
-
 
 

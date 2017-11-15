@@ -1,27 +1,24 @@
 ---
 title: "Depuração remota do Azure com o Python no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d68fdc53-65a1-423c-8964-9815dbb3387e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1ce80ecdc38075b048c8ae0a7f5773de965355f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a4ddd2d52aa1a1e4437c0d1f7821761700c2a91e
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-azure"></a>Depurar o código do Python remotamente no Azure
 
 O [suporte do Python no Visual Studio](installation.md) inclui a capacidade de depurar o código do Python remotamente em execução no Serviço de Aplicativo do Azure. Ao contrário da depuração remota simples, o computador de destino neste cenário não é diretamente acessível por TCP e, portanto, o Visual Studio fornece um proxy que expõe o protocolo do depurador por HTTP. Os projetos criados com o modelo da Web configuram esse proxy automaticamente no arquivo `web.debug.config` gerado. A depuração remota também é habilitada quando você publica uma configuração Depuração do projeto, conforme descrito em [Publicando no Serviço de Aplicativo do Azure](template-web.md#publishing-to-azure-app-service).
@@ -55,4 +52,3 @@ A URL de que você precisa agora está no formato `wss://<secret>@<site_name>.az
 Para anexar o depurador, selecione **Depurar > Anexar ao Processo**, selecione **Depuração remota do Python** no menu suspenso **Transporte**, insira a URL na **Caixa de texto qualificadora** e pressione Enter. Se o Visual Studio puder se conectar com êxito ao Serviço de Aplicativo, ele mostrará um único processo do Python na lista. Selecione-o e, em seguida, **Anexar** para iniciar a depuração:
 
 ![Usando a caixa de diálogo Anexar ao Processo para se anexar a um site do Azure](media/azure-remote-debugging-manual-attach.png)
-

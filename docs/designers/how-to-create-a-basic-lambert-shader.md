@@ -4,41 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
-caps.latest.revision: 20
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: eb9028e128e27c7ec1c7cf2b9422b156687201bc
-
+ms.openlocfilehash: b2852c673f00234629450803d1c5d860c8646cd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Como criar um sombreador Lambert básico
 Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed Graph Shader Language) para criar um sombreador de iluminação que implementa o modelo de iluminação de Lambert clássico.  
   
  Este documento demonstra essas atividades:  
   
--   Adicionar nós a um gráfico de sombreador  
+-   Adicionar nós a um grafo de sombreador  
   
 -   Desconectar nós  
   
@@ -55,24 +40,24 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
   
 2.  Desconectar o nó **Ponto de Cor** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Ponto de Cor** e, em seguida, escolha **Quebrar Links**. Deixe o terminal **Alfa** conectado.  
   
-3.  Adicione um nó **Lambert** ao gráfico. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Lambert** e mova-o para a superfície de design. O nó Lambert calcula a contribuição de cor difusa total do pixel, com base em parâmetros de iluminação difusa e ambiente.  
+3.  Adicione um nó **Lambert** ao grafo. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Lambert** e mova-o para a superfície de design. O nó Lambert calcula a contribuição de cor difusa total do pixel, com base em parâmetros de iluminação difusa e ambiente.  
   
 4.  Conecte o nó **Ponto de Cor** ao nó **Lambert**. No modo de **Seleção**, mova o terminal **RGB** do nó **Ponto de Cor** para o terminal **Cor Difusa** do nó **Lambert**. Essa conexão fornece o nó Lambert com a cor difusa interpolada do pixel.  
   
 5.  Conecte o valor de cor calculado à cor final. Mova o terminal de **Saída** do nó **Lambert** para o terminal **RGB** do nó **Cor Final**.  
   
- A ilustração a seguir mostra o gráfico de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.  
+ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.  
   
 > [!NOTE]
 >  Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador. Um jogo ou um aplicativo pode usar esse parâmetro para fornecer um valor de cor exclusivo para cada objeto. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).  
   
- ![O gráfico de sombreador e uma visualização do seu efeito.](~/designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
+ ![O grafo de sombreador e uma visualização do seu efeito.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   
  Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).  
   
  A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a um modelo 3D.  
   
- ![Iluminação Lambert aplicada a um modelo.](~/designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")  
+ ![Iluminação Lambert aplicada a um modelo.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")  
   
  Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
@@ -82,8 +67,3 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
  [Como criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

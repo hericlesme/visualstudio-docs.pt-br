@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 12f8c649d09155ad48bc0acf9dd3ec2b86145524
-
+ms.openlocfilehash: 48e733a49617b55d2f09f7782c87c9160124ccd6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="overviews-performance-tools"></a>Visões gerais (ferramentas de desempenho)
 Esta seção fornece visões gerais conceituais e de terminologia para as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que você pode usar para medir as características de desempenho de um aplicativo em desenvolvimento.  
@@ -67,8 +52,3 @@ Esta seção fornece visões gerais conceituais e de terminologia para as Ferram
 ## <a name="see-also"></a>Consulte também  
  [Introdução](../profiling/getting-started-with-performance-tools.md)   
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

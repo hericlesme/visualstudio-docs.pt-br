@@ -15,16 +15,16 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 65cb324c1a7ed91ad5209da7826a1899657a414f
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2dfdf4f5a722bf4fea0c4bd3175e33799aa8b8df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Adicionando suporte para outras linguagens ao editor do Visual Studio
 Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à navegação por meio de diferentes linguagens de computador e como é possível adicionar suporte ao editor do Visual Studio para outras linguagens.  
@@ -32,7 +32,7 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Colorização de sintaxe, preenchimento de declaração e suporte Navegar até  
  Os recursos no editor do Visual Studio como colorização de sintaxe, preenchimento de declaração e Navegar até podem ajudá-lo a ler, criar e editar seu código mais facilmente. A captura de tela a seguir mostra um exemplo de edição de um script Perl no Visual Studio. A sintaxe é automaticamente colorizada. Por exemplo, os comentários no código são coloridos em verde, o código é em preto, os caminhos são em vermelho e as instruções são em azul. O editor do Visual Studio aplica automaticamente a colorização de sintaxe a qualquer linguagem que ele dá suporte. Além disso, quando você começar a inserir uma palavra-chave ou objeto de linguagem conhecido, o preenchimento de declaração exibe uma lista de possíveis declarações e objetos. O preenchimento de declaração pode ajudá-lo a criar código de maneira mais rápida e fácil.  
   
- ![Colorização de sintaxe no script Perl](~/ide/media/vside_perledit.png "VSIDE_PerlEdit")  
+ ![Colorização de sintaxe no script Perl](../ide/media/vside_perledit.png "VSIDE_PerlEdit")  
   
  No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenchimento de declaração básico para as seguintes linguagens usando [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se sua linguagem favorita não estiver na tabela, não se preocupe – é possível adicioná-la.  
   

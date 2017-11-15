@@ -7,16 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4a02aaec-0f67-4bf9-b37c-71cdb1410ca4
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 95459f9a9ff676f47d56ed584ad44a30f24fd4cb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscreateexternalarraybuffer-function"></a>Função JsCreateExternalArrayBuffer
 Cria um objeto `ArrayBuffer` JavaScript para acessar a memória externa.  

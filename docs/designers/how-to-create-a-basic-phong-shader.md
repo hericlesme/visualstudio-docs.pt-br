@@ -4,41 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
-caps.latest.revision: 13
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b2d3b82c87024804e00217e3a58628f47dedd7d1
-
+ms.openlocfilehash: 29def0d3aef8a097f5b956bd43df7d8b53abebb9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Como criar um sombreador Phong básico
 Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed Graph Shader Language) para criar um sombreador de iluminação que implementa o modelo de iluminação de Phong clássico.  
   
  Este documento demonstra essas atividades:  
   
--   Adicionar nós a um gráfico de sombreador  
+-   Adicionar nós a um grafo de sombreador  
   
 -   Desconectar nós  
   
@@ -57,7 +42,7 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
   
 2.  Desconecte o nó **Lambert** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Lambert** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.  
   
-3.  Adicione um nó **Adicionar** ao gráfico. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Adicionar** e mova-a para a superfície de design.  
+3.  Adicione um nó **Adicionar** ao grafo. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Adicionar** e mova-a para a superfície de design.  
   
 4.  Adicione um nó **Especular** ao gráfico. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Especular** e mova-o para a superfície de design.  
   
@@ -65,12 +50,12 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
   
 6.  Conecte o valor de cor calculado à cor final. Mova o terminal de **Saída** do nó **Adicionar** para o terminal **RGB** do nó **Cor Final**.  
   
- A ilustração a seguir mostra o gráfico de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.  
+ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.  
   
 > [!NOTE]
 >  Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador e foi especificado um acabamento de aparência metálica usando os parâmetros **MaterialSpecular** e **MaterialSpecularPower**. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).  
   
- ![Gráfico de sombreador e uma visualização de seu efeito](~/designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
+ ![Grafo de sombreador e uma visualização de seu efeito](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
   
  Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md)  
   
@@ -81,7 +66,7 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
 >   
 >  A propriedade **MaterialSpecularPower** determina a intensidade dos realces especulares. Alta potência especular simula realces mais opacos e localizados. A potência especular muito baixa simula realces intensos e abrangentes que podem saturar e ocultar a cor da superfície inteira.  
   
- ![Iluminação de Phong aplicada a um modelo](~/designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
+ ![Iluminação de Phong aplicada a um modelo](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   
  Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
@@ -91,8 +76,3 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
  [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

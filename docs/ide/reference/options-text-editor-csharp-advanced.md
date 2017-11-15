@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,30 +19,15 @@ helpviewer_keywords:
 - outlining options [J#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 61a061b6a58b18451fc53c8d53f77889cc1ea253
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 7537b4fc3fec90808c6bdc4a982fe3b7ff37a1d5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 Use essa caixa de diálogo para modificar as configurações de formatação do editor, refatoração de código e comentários da documentação XML do Visual C#. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto**, expanda **C#** e, em seguida, clique em **Avançado**.  
@@ -67,13 +51,13 @@ Use essa caixa de diálogo para modificar as configurações de formatação do 
   
 -   Edições de [Editar e Continuar](../../debugger/edit-and-continue.md) inválidas são roxas.  
   
- Mova o ponteiro sobre o segmento de código sublinhado para ver uma ToolTip com informações sobre o erro.  
+Mova o ponteiro sobre o segmento de código sublinhado para ver uma ToolTip com informações sobre o erro.  
   
- Mostrar erros semânticos em tempo real  
- Identifica alguns erros de compilação sem compilação explícita, por exemplo, declarando e usando um tipo desconhecido ou referenciando uma propriedade desconhecida.  
+Mostrar erros semânticos em tempo real  
+Identifica alguns erros de compilação sem compilação explícita, por exemplo, declarando e usando um tipo desconhecido ou referenciando uma propriedade desconhecida.  
   
- Realçar referências a símbolo sob o cursor  
- Quando o cursor é posicionado em um símbolo, ou ao clicar em um símbolo, todas as instâncias desse símbolo no arquivo de código são realçadas.  
+Realçar referências a símbolo sob o cursor  
+Quando o cursor é posicionado em um símbolo, ou ao clicar em um símbolo, todas as instâncias desse símbolo no arquivo de código são realçadas.  
   
 ## <a name="refactoring"></a>Refatoração  
  Verificar os resultados da refatoração  

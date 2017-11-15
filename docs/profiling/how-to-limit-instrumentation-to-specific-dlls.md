@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- performance tools, runtime profiling control window
+helpviewer_keywords: performance tools, runtime profiling control window
 ms.assetid: 17c5996f-e3d0-4e44-b175-52b401b0f2d5
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8d87e259b670ffe0eab114a04a213fe3f31df890
-
+ms.openlocfilehash: 59d24a6cc67429fb6c0231f9487d80abe91de965
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
 Ao usar o método de criação de perfil de instrumentação, é possível limitar a coleta de dados de criação de perfil a uma ou mais DLLs em um aplicativo. Para analisar uma ou mais DLLs em um aplicativo, você deve criar uma sessão de desempenho que inclui os arquivos .dll como destino. É possível especificar as DLLs que você deseja analisar como projetos em uma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou como arquivos binários independentes.  
@@ -88,8 +72,3 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 ## <a name="see-also"></a>Consulte também  
  [Controlando a coleta de dados](../profiling/controlling-data-collection.md)   
  [Como limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

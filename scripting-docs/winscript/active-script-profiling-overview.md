@@ -7,19 +7,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Active Script Profiling
+helpviewer_keywords: Active Script Profiling
 ms.assetid: eec2f413-6605-4df4-a86f-4919755e9358
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: c9413e8b6e6db0c81eb1853c24506d20c8d06f3e
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="active-script-profiling-overview"></a>Visão geral da criação de perfil de script ativo
 As [interfaces do criador de perfil de script ativo](../winscript/reference/active-script-profiler-interfaces.md) permitem a criação de perfil de um mecanismo de script. A criação de perfil do script ativo consiste das seguintes partes:  

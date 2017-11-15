@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: 6ef0faf4-1500-4bd9-aeca-c208492af8ea
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: c20b5c81bd34a44158a975f0c1aed88614e01022
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetpromisecontinuationcallback-function"></a>Função JsSetPromiseContinuationCallback
 Define uma função de retorno de chamada de continuação de promessa que é chamada pelo contexto quando uma tarefa precisa ser colocada na fila para execução futura.  

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Output
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Output
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - <Output> Element [MSBuild]
 - Output Element [MSBuild]
 ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 8407e5821a7fcc05abfaed948fdfa62104057c48
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 359bcd55d73429c118abc802a08ab86da96064e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 Armazena valores de saída da tarefa em itens e propriedades.  
@@ -103,4 +87,3 @@ Armazena valores de saída da tarefa em itens e propriedades.
 ## <a name="see-also"></a>Consulte também  
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)
-

@@ -7,31 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a8acd1f49f66ff0e5fb3023bff5de18db9c8c308
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: d203bf88f5af6e69b97404ef8da4548f646750b3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Saiba mais sobre desenvolvimento móvel com o Xamarin
 Este tópico direciona você a materiais de visão geral que ajudam a entender o desenvolvimento de aplicativos móveis de plataforma cruzada com o Xamarin. Se você não ainda tiver instalado o Visual Studio e o Xamarin, inicie primeiro o processo de [Instalação](../cross-platform/setup-and-install.md), depois volte aqui para trabalhar com esses recursos enquanto os instaladores estão em execução.  

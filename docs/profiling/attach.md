@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1de1fbd4db1167971774a4ad3fb450dfebdd6527
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cbba99fd39bff8364e7853cd8d0f73f0e567e1d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="attach"></a>Attach
 A opção **Anexar** do VSPerfCmd.exe inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).  
@@ -55,7 +40,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  As seguintes opções **VSPerfCmd** podem ser combinadas com a opção **Anexar** em uma única linha de comando.  
   
  **Crosssession**  
- Habilita aplicativos de criação de perfil em sessões que não sejam a sessão de logon. Necessário se a opção **Iniciar** foi especificada com a opção **Crosssession**.  
+ Permite aplicativos de criação de perfil em sessões que não seja a sessão de logon. Necessário se a opção **Iniciar** foi especificada com a opção **Crosssession**.  
   
  **Iniciar:** `Method`  
  Inicializa a sessão de criador de perfil de linha de comando e define o método de criação de perfil especificado.  

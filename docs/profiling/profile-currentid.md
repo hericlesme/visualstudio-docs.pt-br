@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- PROFILE_CURRENTID
+helpviewer_keywords: PROFILE_CURRENTID
 ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: aac0f3f9a09ce5dce805547bcfd6cb66734915b3
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: eaf85776b08f6df56b5e441d9e0c99e239bf8ca6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 O PROFILE_CURRENTID retorna o pseudotoken para a ID do thread ou a ID do processo, em uma chamada para as funções NameProfile StartProfile, StopProfile, SuspendProfile e ResumeProfile. Use-o para fazer com que a função opere no thread atual ou processo, em vez de um especificamente indicado.  

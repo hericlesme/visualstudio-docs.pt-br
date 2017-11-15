@@ -1,40 +1,10 @@
 ---
-title: "Referência do Visual Studio for Applications | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 877a0fa3-4b6f-4056-b320-d8727793f708
-caps.latest.revision: 3
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3aecf9602c27eb72be37ce6d2910e6476da70590
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+redirect_url: /visualstudio/ide/reference/visual-studio-reference
+ms.openlocfilehash: 8e7715b29914cbfe4231645f7cf3b7eaccfe23eb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="visual-studio-for-applications-reference"></a>Referência do Visual Studio for Applications
 Os namespaces do Visual Studio for Applications fornecem interfaces para integrar mecanismos de script do .NET Framework a aplicativos.  
-  
-## <a name="in-this-section"></a>Nesta seção

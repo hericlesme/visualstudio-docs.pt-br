@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSetRuntimeMemoryAllocationCallback
-helpviewer_keywords:
-- JsSetRuntimeMemoryAllocationCallback function
+f1_keywords: jsrt/JsSetRuntimeMemoryAllocationCallback
+helpviewer_keywords: JsSetRuntimeMemoryAllocationCallback function
 ms.assetid: 6aa7d58d-6456-4df1-815f-1ba36fb4ae14
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 755ab36c8edb8c0350eb2b245e060344c8825dee
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetruntimememoryallocationcallback-function"></a>Função JsSetRuntimeMemoryAllocationCallback
 Define um retorno de chamada de alocação de memória para o tempo de execução especificado  

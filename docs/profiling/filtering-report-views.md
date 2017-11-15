@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- profiling tools, configuring
+helpviewer_keywords: profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 935f26eb1d2c9ac91e20e735cd8e8e3379e921e7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c5aaff542f654928a7ed56313232a6e6ead67f9d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="filtering-report-views"></a>Filtrando exibições de relatório
 Você pode aplicar filtros para arquivos de dados de criação de perfil para limitar os dados de criação de perfil que são exibidos nas exibições de Relatório de Desempenho e exportados para arquivos de relatório. Você pode limitar um relatório aos dados entre os valores de carimbo de data/hora e limitar os dados a processos e threads específicos. Você pode salvar filtros em um arquivo e, em seguida, criar um filtro em um arquivo de dados de criação de perfil diferente importando o filtro salvo.  

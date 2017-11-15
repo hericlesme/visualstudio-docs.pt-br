@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsStringToPointer
-helpviewer_keywords:
-- JsStringToPointer function
+f1_keywords: jsrt/JsStringToPointer
+helpviewer_keywords: JsStringToPointer function
 ms.assetid: c7aa7a09-489d-4435-8f8a-aeb62f8875ae
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 7ff84f929833941fed9a709497dc615189c39386
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsstringtopointer-function"></a>Função JsStringToPointer
 Recupera o ponteiro de cadeia de caracteres de um valor de cadeia de caracteres.  

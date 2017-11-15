@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,37 +13,20 @@ helpviewer_keywords:
 - bi-directional language support, encoded files
 - file encoding, bi-directional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 83faa2ad32073c4133295953afa6259e88eee2d5
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: c9dca526f53c59b8db35b50378e4bf280d5e0a1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como salvar e abrir arquivos com codificação
-<a id="how-to-save-and-open-files-with-encoding" class="xliff"></a>
+# <a name="how-to-save-and-open-files-with-encoding"></a>Como salvar e abrir arquivos com codificação
 É possível salvar arquivos com uma codificação de caracteres específica para dar suporte a idiomas bidirecionais. Também é possível especificar uma codificação ao abrir um arquivo, para que o Visual Studio exiba o arquivo corretamente.  
   
-### Para salvar um arquivo com codificação
-<a id="to-save-a-file-with-encoding" class="xliff"></a>  
+### <a name="to-save-a-file-with-encoding"></a>Para salvar um arquivo com codificação  
   
 1.  No menu **Arquivo**, escolha **Salvar Arquivo Como** e clique no botão suspenso ao lado do botão **Salvar**.  
   
@@ -58,8 +40,7 @@ ms.lasthandoff: 05/30/2017
   
      Se deseja trabalhar com um arquivo que você sabe que está codificado de uma maneira específica, é possível informar ao Visual Studio para usar essa codificação ao abrir o arquivo. O método usado dependerá se o arquivo faz parte do projeto.  
   
-### Para abrir um arquivo codificado que faz parte de um projeto
-<a id="to-open-an-encoded-file-that-is-part-of-a-project" class="xliff"></a>  
+### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Para abrir um arquivo codificado que faz parte de um projeto  
   
 1.  Em **Gerenciador de Soluções**, clique com o botão direito do mouse no arquivo e escolha **Abrir Com**.  
   
@@ -69,8 +50,7 @@ ms.lasthandoff: 05/30/2017
   
 3.  Na caixa de diálogo **Codificação**, selecione a codificação que o editor deverá usar.  
   
-### Para abrir um arquivo codificado que não faz parte de um projeto
-<a id="to-open-an-encoded-file-that-is-not-part-of-a-project" class="xliff"></a>  
+### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Para abrir um arquivo codificado que não faz parte de um projeto  
   
 1.  No menu **Arquivo**, aponte para **Abrir**, escolha **Arquivo** ou **Arquivo da Web** e, em seguida, selecione o arquivo a ser aberto.  
   
@@ -78,7 +58,6 @@ ms.lasthandoff: 05/30/2017
   
 3.  Siga as Etapas 2 e 3 do procedimento anterior.  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Codificação e globalização do Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
  [Globalizando e localizando aplicativos](../ide/globalizing-and-localizing-applications.md)

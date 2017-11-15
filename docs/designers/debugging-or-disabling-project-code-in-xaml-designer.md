@@ -7,31 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 138f318b84044a1ed8a92f9b2ee7b47b2211cdb7
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Depurando ou desabilitando o código do projeto no Designer XAML
 Em muitos casos, exceções sem tratamento no designer XAML podem ser causadas quando o código de projeto tenta acessar propriedades ou métodos que retornam valores diferentes ou que funcionam de maneira diferente, quando o aplicativo é executado no designer. Você pode resolver essas exceções ao depurar o código do projeto em outra instância do Visual Studio ou impedindo temporariamente que elas desabilitem o código do projeto no designer.  

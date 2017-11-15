@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsBooleanToBool
-helpviewer_keywords:
-- JsBooleanToBool function
+f1_keywords: jsrt/JsBooleanToBool
+helpviewer_keywords: JsBooleanToBool function
 ms.assetid: ab16ac71-fe47-475d-a7ee-46e4643dee60
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: f554d0a0d328254dde373e0b14c45e299a6df0a5
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsbooleantobool-function"></a>Função JsBooleanToBool
 Recupera o valor de `bool` de um valor booliano.  

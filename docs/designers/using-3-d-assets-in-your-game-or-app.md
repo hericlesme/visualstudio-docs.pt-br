@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,16 +15,15 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-caps.latest.revision: 17
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2e106d406b01e6efb96b8c674ffcc167bfcf6326
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5613790632c4bd462c1efbb3f218a0299b276179
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usando ativos 3D no jogo ou no aplicativo
 Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para processar ativos 3D e incluí-los nas compilações.  

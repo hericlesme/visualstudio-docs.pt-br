@@ -3,38 +3,20 @@ title: Dicas e truques de desempenho do Visual Studio | Microsoft Docs
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 173811a4f2d9974755e2432822c801388403ab7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
-ms.openlocfilehash: fbaa543564506a99d3ed6833ec4d1f692fae43f7
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -61,7 +43,7 @@ Se você tiver uma solução muito grande com vários projetos, poderá ser úti
 
     Para habilitar a **Carga de solução leve**, escolha **Ferramentas > Opções > Projetos e Soluções > Carga de solução leve**.
 
-    Alguns recursos IDE não estão habilitados nesse modo. Para determinar se essa opção pode ajudar, confira [Tempo mais curto da carga de solução](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) e [Otimizar carregamento da solução](../ide/optimize-solution-loading-in-visual-studio).
+    Alguns recursos IDE não estão habilitados nesse modo. Para determinar se essa opção pode ajudar, confira [Tempo mais curto da carga de solução](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) e [Otimizar carregamento da solução](../ide/optimize-solution-loading-in-visual-studio.md).
 
 - **Descarregar projetos**
 
@@ -152,4 +134,3 @@ Para ver uma descrição detalhada do coletor de lixo CLR, consulte [Noções b�
 
 ## <a name="see-also"></a>Consulte também  
  [Visual Studio IDE](../ide/index.md)
-

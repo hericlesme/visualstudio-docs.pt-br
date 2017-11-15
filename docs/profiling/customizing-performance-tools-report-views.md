@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - profiling tools, customizing report views
 - reports, customizing profiling report views
 ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8086600d155db81e0a37fcfa8f14dd8e2f2afca2
-
+ms.openlocfilehash: da35bb6f685455e280609252561c8a676f37230c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customizing-performance-tools-report-views"></a>Personalizando exibições de relatório das ferramentas de desempenho
 Esta seção aborda como personalizar relatórios gerados com as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -53,8 +38,3 @@ Esta seção aborda como personalizar relatórios gerados com as Ferramentas de 
   
 ## <a name="see-also"></a>Consulte também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

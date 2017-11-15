@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - operator precedence
 - order of precedence
 ms.assetid: cf3c510a-2214-4b47-b8fe-3521298efaab
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 82503a312a4a4996e3bd38f596eef3104af3f11b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="operator-precedence-javascript"></a>Precedência do operador (JavaScript)
 A precedência dos operadores descreve a ordem em que as operações são realizadas quando uma expressão é avaliada. As operações com uma precedência maior são realizadas antes daquelas com precedência menor. Por exemplo, a multiplicação é realizada antes da adição.  

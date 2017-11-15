@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- debug.symbolpath
+f1_keywords: debug.symbolpath
 helpviewer_keywords:
 - symbol path command
 - Debug.SymbolPath command
 - SymbolPath command
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
-caps.latest.revision: 9
-author: kempb
-ms.author: kempb
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c97348e44cfa60338add30e10d0d27fddc243649
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d446779e4f84bf19e965393f9fa1142c7e4e166a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="symbol-path-command"></a>Comando demarcador do Símbolo
 Define a lista de diretórios para o depurador pesquisar símbolos.  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,28 +13,15 @@ helpviewer_keywords:
 - project properties, modifying
 - Hello World example [Visual Studio]
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: 9a7f77460e3e24ec3cef6694ea9515888c061ecc
-
+ms.openlocfilehash: 74e74184840e74c6333c6e503ea24cc7252061bc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Como compilar os mesmos arquivos de origem com opções diferentes
 Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode compilar um projeto para ser executado em uma plataforma específica, como x86 ou [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], você usa propriedades e condições para criar as diferentes configurações de build.  
@@ -204,8 +190,3 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
  [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

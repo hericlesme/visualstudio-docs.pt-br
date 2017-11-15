@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSetRuntimeMemoryLimit
-helpviewer_keywords:
-- JsSetRuntimeMemoryLimit function
+f1_keywords: jsrt/JsSetRuntimeMemoryLimit
+helpviewer_keywords: JsSetRuntimeMemoryLimit function
 ms.assetid: 74feb31f-19f6-43e3-b117-0694c59ac593
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 587eb369e6971c7527177624ccf5baf839246cf9
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetruntimememorylimit-function"></a>Função JsSetRuntimeMemoryLimit
 Define o limite de memória atual para um tempo de execução.  

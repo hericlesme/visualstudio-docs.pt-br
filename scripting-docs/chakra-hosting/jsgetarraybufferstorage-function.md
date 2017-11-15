@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: 712ae298-36a9-47ef-b089-e51835c056bc
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: a667325eb4d1d9540751a52232e5e06b3004b8b5
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetarraybufferstorage-function"></a>Função JsGetArrayBufferStorage
 Obtém o armazenamento subjacente de memória usado por uma `ArrayBuffer`.  

@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetRuntimeMemoryUsage
-helpviewer_keywords:
-- JsGetRuntimeMemoryUsage function
+f1_keywords: jsrt/JsGetRuntimeMemoryUsage
+helpviewer_keywords: JsGetRuntimeMemoryUsage function
 ms.assetid: b9bd4146-bfbc-4cb1-a0e9-a0ded7fb09bd
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 3519e4395ab5b3b7bbc5186c56775bdef9b12ecf
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetruntimememoryusage-function"></a>Função JsGetRuntimeMemoryUsage
 Obtém o uso de memória atual para um tempo de execução.  

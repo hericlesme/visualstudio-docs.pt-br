@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.threads.tools.managechannels
-helpviewer_keywords:
-- Concurrency Visualizer, Manage Channels
+f1_keywords: vs.cv.threads.tools.managechannels
+helpviewer_keywords: Concurrency Visualizer, Manage Channels
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 242f497030b04e082a215b9425f189a3f1133bae
-
+ms.openlocfilehash: 794b34365dfa025c6ade7f2d7a2f1216c2b4e4ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="manage-channels"></a>Gerenciar canais
 Em **Exibição de Threads** na Visualização Simultânea, você pode organizar os canais para o seu processo, de forma que você possa examinar padrões específicos. Você pode classificar os canais, movê-los para cima e para baixo, ocultá-los ou mostrá-los.  
@@ -80,8 +63,3 @@ Em **Exibição de Threads** na Visualização Simultânea, você pode organizar
  [Controle de Zoom (Exibição de Threads)](../profiling/zoom-control-threads-view.md)   
  [Ativar/desativar modo de medidas](../profiling/measure-mode-on-off.md)   
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

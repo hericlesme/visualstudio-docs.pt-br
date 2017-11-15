@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - ItemGroup element [MSBuild]
 - <ItemGroup> element [MSBuild]
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: e63c0dd4e201ef83f84f01148aacd4458806103d
-
+ms.openlocfilehash: 04920978073c85f968c51dc34dae54d90e7b6427
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Cada item usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve ser especificado como filho de um elemento `ItemGroup`.  
@@ -106,8 +90,3 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Itens](../msbuild/msbuild-items.md)   
  [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

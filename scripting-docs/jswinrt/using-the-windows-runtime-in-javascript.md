@@ -5,23 +5,20 @@ ms.date: 02/03/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- javascript
+ms.technology: javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- JavaScript, Windows Runtime
+helpviewer_keywords: JavaScript, Windows Runtime
 ms.assetid: 90658546-f746-4e34-a7d1-71cf9ee322a2
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
 ms.openlocfilehash: c81f5d83056ceb87987e263f09c0d5e5017dbb6f
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-the-windows-runtime-in-javascript"></a>Usar o Windows Runtime em JavaScript
 Ao gravar um aplicativo da UWP (Plataforma Universal do Windows), você pode usar classes, métodos e propriedades do Windows Runtime da mesma forma como usaria objetos, métodos e propriedades nativos do JavaScript. Este tópico fornece informações introdutórias e links a tópicos que explicam os conceitos básicos do uso das APIs do Tempo de Execução do Windows em JavaScript, inclusive uma explicação de como os tipos de Tempo de Execução do Windows são representados, como usar métodos assíncronos do Tempo de Execução do Windows e como ouvir e identificar eventos de Tempo de Execução do Windows.  

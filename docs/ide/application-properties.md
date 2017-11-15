@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,33 +12,17 @@ helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
 ms.assetid: 0ad4926f-636e-41f8-a5b1-faf9d9b0a254
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e372d9d6d935ff40054b8ba3f7684bf5ea9c458
-ms.openlocfilehash: 3274157b4463c902bc14fe077f1b8d2ca022170c
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/22/2017
-
+ms.openlocfilehash: a4c5753d12f8926653bcc655e403be20910472fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Propriedades do aplicativo
-<a id="application-properties" class="xliff"></a>
+# <a name="application-properties"></a>Propriedades do aplicativo
 Você pode definir propriedades gerais de aplicativo para aplicativos do Visual Basic, C# e F#, como o tipo de aplicativo, o objeto de inicialização e informações de assembly, no painel **Aplicativo** do **Designer de Projeto**.  
   
  As seguintes tarefas podem ser realizadas no painel **Aplicativo**:  
@@ -70,12 +53,10 @@ Você pode definir propriedades gerais de aplicativo para aplicativos do Visual 
   
  As tarefas disponíveis para seu aplicativo dependem da linguagem de desenvolvimento usada.  
   
-## Nesta seção
-<a id="in-this-section" class="xliff"></a>  
+## <a name="in-this-section"></a>Nesta seção  
  [Como especificar um ícone do aplicativo (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   

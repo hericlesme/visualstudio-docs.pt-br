@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 6776701ba108ae0ecefc2331c2b12272e0c1be19
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="objects-and-arrays-javascript"></a>Objetos e matrizes (JavaScript)
 Objetos [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] são coleções de propriedades e métodos. Um método é uma função que é um membro de um objeto. Uma propriedade é um valor ou conjunto de valores (na forma de uma matriz ou objeto) que é um membro de um objeto. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] dá suporte a quatro tipos de objetos:  

@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: df5c0c34a41c5b61869faaa3224caac1532736cd
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-3-d-models"></a>Trabalhando com modelos 3D
 Você pode usar o Editor de Modelo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para criar modelos 3D. Você pode usar os modelos no seu jogo ou aplicativo baseado no DirectX.  

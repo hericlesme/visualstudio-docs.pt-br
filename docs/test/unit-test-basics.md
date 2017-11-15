@@ -4,37 +4,19 @@ ms.custom:
 ms.date: 2016-01-07
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.UnitTest.CreateUnitTest
+f1_keywords: vs.UnitTest.CreateUnitTest
 ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
-caps.latest.revision: 27
+caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 14e31328aade21e8f181b7c81138c1d1181a394c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ff2a1dc934083bb237189a1ebdfa25d42612433e
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 Verifique se seu código está funcionando conforme o esperado criando e executando testes de unidade. Ele se chama teste de unidade porque a funcionalidade de seu programa é dividida em comportamentos distintos que podem ser testados individualmente como *unidades*. O Gerenciador de Testes do Visual Studio oferece uma maneira flexível e eficiente de executar seus testes de unidade e exibir seus resultados no Visual Studio. O Visual Studio instala as estruturas de teste de unidade da Microsoft para código gerenciado e nativo. Use uma *estrutura de teste de unidade* para criar testes de unidade, executá-los e relatar os resultados desses testes. Execute os testes de unidade novamente quando realizar alterações para testar se o código ainda está funcionando corretamente. Quando você usa o Visual Studio Enterprise, pode executar testes automaticamente após cada compilação.  
@@ -361,4 +343,3 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
  ![Selecione outra estrutura de teste de unidade instalada](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
  Seu stubs de teste de unidade serão criados usando a estrutura selecionada.
-

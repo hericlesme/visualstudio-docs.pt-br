@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,29 +13,15 @@ helpviewer_keywords:
 - /clean Devenv switch
 - Devenv, /clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
-caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1ac693743b2cc35275c2ebfbdd6c7e0a693894e7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bd4b344860190d0dcfc01adf6ccf553d34c5b038
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Limpa todos os arquivos intermediários e diretórios de saída.  

@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.resourcedetails
-helpviewer_keywords:
-- Resource Details view
+f1_keywords: vs.performance.view.resourcedetails
+helpviewer_keywords: Resource Details view
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2ddf9406e27214e15ba74adf2c2264712dfc93ef
-
+ms.openlocfilehash: eaf87be0e921d0e86818c29c078d8b214591418d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resource-details-view---contention-data"></a>Exibição de detalhes do recurso – Dados de contenção
 A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos eventos de bloqueio que foram causados por contenções em um recurso selecionado. Um evento de bloqueio ocorre quando um thread é forçado a suspender a execução porque outro thread bloqueou o acesso ao recurso.  
@@ -79,8 +62,3 @@ A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos 
 -   No gráfico de linha do tempo, clique no nome ou ID do thread.  
   
      A Exibição de Detalhes de Thread é exibida para o thread selecionado. Para obter mais informações, consulte [Exibição de Detalhes do Thread](../profiling/thread-details-view-contention-data.md).
-
-
-<!--HONumber=Feb17_HO4-->
-
-

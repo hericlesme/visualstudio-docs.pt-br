@@ -4,46 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ab08ff8cfc6abf369d5743d6bab2fafbd77d534a
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6e18791f33ddb9c373af8b0af8def615c26374b3
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opções, Editor de Texto, JavaScript, IntelliSense
 Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar as configurações que afetam o comportamento do IntelliSense para JavaScript. É possível acessar a página **IntelliSense** escolhendo **Ferramentas**, **Opções** na barra de menus e expandindo **Editor de Texto**, **JavaScript**, **IntelliSense.**  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
- A página **IntelliSense** contém as seguintes seções:  
+A página **IntelliSense** contém as seguintes seções:  
   
 ## <a name="validation"></a>Validação  
  Você pode usar essas opções para definir preferências de como o editor JavaScript valida a sintaxe no seu documento.  
@@ -87,14 +70,14 @@ Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar 
   
 -   Genérico, para outros tipos de projeto JavaScript.  
   
- **Arquivos incluídos**  
- Essa opção especifica a ordem na qual os arquivos são carregados no contexto do serviço de linguagem. Você pode configurar a ordem usando os botões **Remover**, **Subir** e **Descer**. Para que o IntelliSense funcione corretamente, um arquivo que depende de outro deve ser carregado depois do outro arquivo.  
+**Arquivos incluídos**  
+Essa opção especifica a ordem na qual os arquivos são carregados no contexto do serviço de linguagem. Você pode configurar a ordem usando os botões **Remover**, **Subir** e **Descer**. Para que o IntelliSense funcione corretamente, um arquivo que depende de outro deve ser carregado depois do outro arquivo.  
   
 > [!CAUTION]
 >  Se um objeto for definido incondicionalmente em duas ou mais referências implícitas, a última referência nessa lista será usada para definir o objeto.  
   
- **Adicionar uma referência ao grupo**  
- Essa opção fornece uma maneira de adicionar arquivos .js extras do IntelliSense navegando até os arquivos apropriados.  
+**Adicionar uma referência ao grupo**  
+Essa opção fornece uma maneira de adicionar arquivos .js extras do IntelliSense navegando até os arquivos apropriados.  
   
 ## <a name="see-also"></a>Consulte também  
- [JavaScript IntelliSense](../../ide/javascript-intellisense.md)
+[JavaScript IntelliSense](../../ide/javascript-intellisense.md)

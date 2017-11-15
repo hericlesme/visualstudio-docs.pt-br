@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -25,29 +24,15 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2e10835822943a19c677f9dabf78e68a9ef03cc6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2b0c421ca3d1e56c22cab7ff066d17d59914961c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="mt-task"></a>Tarefa MT
 Encapsula a Ferramenta de Manifesto da Microsoft, a mt.exe. Para obter mais informações, consulte “Mt.exe” no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

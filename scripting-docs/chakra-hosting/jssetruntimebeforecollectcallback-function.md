@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSetRuntimeBeforeCollectCallback
-helpviewer_keywords:
-- JsSetRuntimeBeforeCollectCallback function
+f1_keywords: jsrt/JsSetRuntimeBeforeCollectCallback
+helpviewer_keywords: JsSetRuntimeBeforeCollectCallback function
 ms.assetid: 7b2fb911-6007-4ed9-a307-66cefe590ea4
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 469b33a324f67d17bd6f5156da7cce169b98c663
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetruntimebeforecollectcallback-function"></a>Função JsSetRuntimeBeforeCollectCallback
 Define uma função de retorno de chamada que é chamada pelo tempo de execução antes da coleta de lixo.  

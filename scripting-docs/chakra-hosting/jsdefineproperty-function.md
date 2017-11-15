@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsDefineProperty
-helpviewer_keywords:
-- JsDefineProperty function
+f1_keywords: jsrt/JsDefineProperty
+helpviewer_keywords: JsDefineProperty function
 ms.assetid: b2cf48d6-eb40-457c-aa8b-b16a50dc5d6a
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 3f929dd875b2ba8bf95db8d5970a770ce2859484
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsdefineproperty-function"></a>Função JsDefineProperty
 Define a propriedade de um novo objeto por meio de um descritor de propriedade.  

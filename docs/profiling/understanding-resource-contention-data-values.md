@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
 ms.assetid: 071c0f0f-1eba-4dc8-ae87-0810e4086dd0
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 67c73222511046b10eaa172dafaf271e17170013
-
+ms.openlocfilehash: b4e128fa9a557569eb737a2b0a70ce60687d0830
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="understanding-resource-contention-data-values"></a>Noções básicas sobre valores de dados de contenção de recurso
 Perfis de contenção de recursos coletam informações de pilha de chamadas detalhadas sempre que segmentos concorrentes em um aplicativo são forçados a aguardar o acesso a um recurso compartilhado.  
@@ -56,8 +41,3 @@ Perfis de contenção de recursos coletam informações de pilha de chamadas det
 -   [Exibição de detalhes do recurso](../profiling/resource-details-view-contention-data.md)  
   
  Para obter mais informações sobre o segundo modo de criação de perfil de simultaneidade, consulte [Visualização Simultânea](../profiling/concurrency-visualizer.md).
-
-
-<!--HONumber=Feb17_HO4-->
-
-

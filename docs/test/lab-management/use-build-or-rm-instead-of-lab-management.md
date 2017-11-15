@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- automated testing, lab management, test lab
+helpviewer_keywords: automated testing, lab management, test lab
 ms.assetid: F34B0D19-B430-4C01-B402-62A861007E71
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: 77a0339e1aae3036990f0d9d133a1fcb68844486
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 8d843800666ae53a686a18fcab28d02eb4c16743
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usar o Build ou o Release Management em vez de o Lab Management para o teste automatizado
 
@@ -102,4 +85,3 @@ Você é incentivado a considerar as seguintes alternativas se precisar de isola
 * Uma motivação para o isolamento de rede foi a facilidade de configuração de vários clones. Como cada clone é uma réplica exata do original, os nomes do computador e as definições de configuração são preservadas como estão e isso torna mais fácil configurar novos ambientes. No entanto, o mesmo benefício faz com que surjam problemas posteriormente no ciclo de vida (por exemplo, na produção), pois a maneira como os aplicativos são implantados por fim não é mesma. **Em vez disso,**, considere configurar novos ambientes da mesma maneira que você configurou a produção e evite usar o isolamento de rede.
 
 * Usar uma infraestrutura de nuvem pública como o [Microsoft Azure](https://azure.microsoft.com/) para as necessidades de teste. Você pode usar facilmente [modelos do Azure Resource Manager](https://azure.microsoft.com/documentation/templates/) do [Azure Marketplace](https://azure.microsoft.com/marketplace/) ou de [modelos de início rápido do Azure](https://azure.microsoft.com/documentation/templates/) para configurar os grupos de máquinas virtuais que são conectados por meio de uma rede privada e são expostos à rede pública apenas usando um proxy ou um “jumpbox”.
-

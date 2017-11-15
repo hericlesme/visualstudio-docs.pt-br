@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Process view
+helpviewer_keywords: Process view
 ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 08a40af133d147298ddc344e492ecbb0198d98f0
-
+ms.openlocfilehash: 25e635ef74d19cc1f757b9a78ecbeae58fae92cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="process-view---contention-data"></a>Exibição de processo – dados de contenção
 A exibição Processo exibe dados de contenção para os processos e threads que foram executados durante o processo de criação de perfil.  
@@ -59,8 +43,3 @@ A exibição Processo exibe dados de contenção para os processos e threads que
 ## <a name="see-also"></a>Consulte também  
  [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição de Processo](../profiling/process-view.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSetExternalData
-helpviewer_keywords:
-- JsSetExternalData function
+f1_keywords: jsrt/JsSetExternalData
+helpviewer_keywords: JsSetExternalData function
 ms.assetid: 94e0ad34-67d7-4f7f-88a3-3b057ef5e4b9
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: bf7e21cded2b4b1bdb50fef53fc8d298434a14eb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetexternaldata-function"></a>Função JsSetExternalData
 Define os dados externos em um objeto externo.  

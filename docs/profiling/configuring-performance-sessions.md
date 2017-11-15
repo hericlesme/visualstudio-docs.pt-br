@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,29 +13,15 @@ helpviewer_keywords:
 - profiling tools, common tasks
 - performance, gathering data
 ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
-caps.latest.revision: 36
+caps.latest.revision: "36"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f9bfb5d1e3c5a803f520b9e71f84e361ee3a1e1b
-
+ms.openlocfilehash: 9bc896429c3d9e9307fd17a7727228770735af64
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="configuring-performance-sessions"></a>Configurando sessões de desempenho
 Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], é possível coletar uma grande variedade de dados de desempenho para um grande número de tipos de aplicativos. Esta seção mostra como usar o Assistente de Desempenho, as propriedades da sessão de desempenho e o binário de destino para configurar as Ferramentas de Criação de Perfil para coletar os dados que lhe interessam. As propriedades de configuração das Ferramentas de Criação de Perfil também podem ser usadas para controlar a quantidade de dados coletada em uma execução de criação de perfil. Para obter mais informações, consulte [Controlling Data Collection (Controlando a coleta de dados)](../profiling/controlling-data-collection.md).  
@@ -57,8 +42,3 @@ Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../code-quality/i
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

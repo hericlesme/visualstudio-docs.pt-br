@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -27,40 +26,23 @@ helpviewer_keywords:
 - Options dialog box, General Environment
 - General Environment Options dialog box
 ms.assetid: 90fc2e6f-572f-4384-96d8-5678299ce58e
-caps.latest.revision: 34
-author: kempb
-ms.author: kempb
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: bdf22448d04a37eb65aa8026c085c1d8e12b9a2c
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 72122fdd8f9b78429b90cacd093908e8fccb714d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Caixa de diálogo Geral, Ambientes, Opções
-<a id="general-environment-options-dialog-box" class="xliff"></a>
+# <a name="general-environment-options-dialog-box"></a>Caixa de diálogo Geral, Ambientes, Opções
 Use esta página para alterar temas de cores, configurações de barra de status e associações de extensões de arquivo, entre outras coisas, para o IDE (ambiente de desenvolvimento integrado). Você pode acessar a caixa de diálogo **Opções** abrindo o menu **Ferramentas**, escolhendo **Opções**, abrindo a pasta **Ambiente** e, em seguida, escolhendo a página **Geral**. Se essa página não aparecer na lista, marque a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções**.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, abra o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Experiência visual
-<a id="visual-experience" class="xliff"></a>  
+## <a name="visual-experience"></a>Experiência visual  
  **Tema da cor**  
  Escolha o tema de cor **Azul**, **Claro** ou **Escuro** para o IDE.  
   
@@ -78,8 +60,7 @@ Use esta página para alterar temas de cores, configurações de barra de status
  **Usar aceleração de elementos gráficos de hardware se disponível**  
  Usa aceleração de elementos gráficos de hardware se estiver disponível, em vez de aceleração de software.  
   
-## Outros
-<a id="other" class="xliff"></a>  
+## <a name="other"></a>Outros  
  **Itens mostrados no menu Janela**  
  Personaliza o número de janelas que aparecem na lista Janelas do menu **Janela**. Digite um número entre 1 e 24. Por padrão, o número é 10.  
   
@@ -100,7 +81,6 @@ Use esta página para alterar temas de cores, configurações de barra de status
   
  Essa opção pode ser útil se você tiver duas versões do Visual Studio instaladas no mesmo computador e, posteriormente, desinstalar uma das versões. Após a desinstalação, os ícones dos arquivos do Visual Studio não aparecem mais no Explorador de Arquivos. Além disso, o Windows deixa de reconhecer o Visual Studio como o aplicativo padrão para editar esses arquivos. Essa opção restaura as associações.  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)   
  [Personalizando layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)

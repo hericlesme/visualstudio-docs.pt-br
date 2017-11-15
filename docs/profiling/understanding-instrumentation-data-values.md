@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Profiling Tools,instrumentation
 - instrumentation profiling method
 ms.assetid: 2cf94cf9-c317-4a52-bf00-670f1262165e
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 906182cf9714c1dc71aa6187e5ca00de9fff51bc
-
+ms.openlocfilehash: b7f0fc8530e45831132f3ec3f357ff0113fa4abe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="understanding-instrumentation-data-values"></a>Noções básicas sobre valores de dados de instrumentação
 O método de criação de perfil de *instrumentação* dos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] registra informações detalhadas de tempo para as chamadas de função, linhas e instruções no aplicativo de perfil  
@@ -116,8 +101,3 @@ O método de criação de perfil de *instrumentação* dos [!INCLUDE[vsprvs](../
 ## <a name="see-also"></a>Consulte também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)   
  [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

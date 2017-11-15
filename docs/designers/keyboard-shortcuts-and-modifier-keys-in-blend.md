@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a015376c836aebfb82aaafd4515ee8e571b6c25c
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f9c616c359480831827549d05496157ad28e4575
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Atalhos de teclado e teclas modificadoras no Blend
 Atalhos de teclado podem acelerar seu trabalho reduzindo em um único atalho de teclado uma ação que normalmente exigiria vários cliques com o botão do mouse. Os atalhos de teclado no [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] estão divididos em duas categorias:  

@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs29106
+f1_keywords: vs29106
 helpviewer_keywords:
 - Code Analysis page in Project Designer
 - Project Designer, Code Analysis page
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
-caps.latest.revision: 9
-author: kempb
-ms.author: kempb
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6cd7ef18702004561f0883df400fb276490643fc
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 3f993e47ea748d8caf90aee0a2ee99cbf78dbede
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
 Contém a ferramenta de análise de código que você pode optar por executar em seu código. A ferramenta relata informações sobre seus assemblies, como violações de regras de programação e design estabelecidas nas Diretrizes de Design do Microsoft .NET Framework.  

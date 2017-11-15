@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,29 +12,15 @@ f1_keywords:
 - vs.performance.rules.DA0017
 - vs.performance.DA0017
 ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 026d372804d1fdda10afde3109ba778805016cfd
-
+ms.openlocfilehash: b1fad088c659c168b40e6d56cfd67ba28bf3cef4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: taxas elevadas de paginação de memória ativa em disco
 |||  
@@ -66,8 +51,3 @@ ms.openlocfilehash: 026d372804d1fdda10afde3109ba778805016cfd
  Se estiver coletando dados de perfil para um aplicativo ASP.NET em um cenário de teste de carga, tente executar novamente o teste de carga em um computador configurado com memória física (ou RAM) adicional.  
   
  Considere a redução das alocações de memória revisando os algoritmos e evitando APIs de uso intensivo de memória, como String.Concat e String.Substring.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

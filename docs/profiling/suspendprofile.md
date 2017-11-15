@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- SuspendProfile
+helpviewer_keywords: SuspendProfile
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e89083cb093daf0d2e6254894da4c6ad67969532
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f6b91542039544e085b6599923e9cc8dcb08d6c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 O método `SuspendProfile` incrementa o contador de Suspender/Retomar do nível de criação de perfil especificado.  
@@ -62,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  O identificador de processo ou thread gerado pelo sistema.  
   
 ## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
- A função indica êxito ou falha usando a enumeração de **PROFILE_COMMAND_STATUS**. O valor retornado pode ser um dos seguintes:  
+ A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  

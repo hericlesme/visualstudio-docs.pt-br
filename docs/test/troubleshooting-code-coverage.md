@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
-caps.latest.revision: 11
+caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: c435bb9e490e9a3c59de78f383632552c0ca4641
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: c3e5410769ba10a905c8116677ae5d03d0df656e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="troubleshooting-code-coverage"></a>Solução de problemas de cobertura de código
 A ferramenta de análise da cobertura de código no Visual Studio coleta dados para assemblies nativos e gerenciados (arquivos .dll ou .exe). No entanto, em alguns casos, a janela Resultados de Cobertura de Código exibe um erro semelhante a "Esvaziar resultados gerados: ...." Existem vários motivos possíveis pelos quais isso pode acontecer. Este tópico deve ajudar a resolver esses problemas.  
@@ -39,7 +23,7 @@ A ferramenta de análise da cobertura de código no Visual Studio coleta dados p
 ## <a name="what-you-should-see"></a>O que você deve ver  
  Se você escolher um comando **Analisar Cobertura de Código** no menu Teste e se o build e os testes forem executados com êxito, você deverá ver uma lista de resultados na janela Cobertura de Código. Você talvez tenha que expandir os itens para ver os detalhes.  
   
- ![Resultados da cobertura de código com coloração](~/test/media/codecoverage1.png "CodeCoverage1")  
+ ![Resultados da cobertura de código com coloração](../test/media/codecoverage1.png "CodeCoverage1")  
   
  Para obter mais informações, consulte [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
@@ -163,4 +147,3 @@ A ferramenta de análise da cobertura de código no Visual Studio coleta dados p
   
 ## <a name="see-also"></a>Consulte também  
  [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-

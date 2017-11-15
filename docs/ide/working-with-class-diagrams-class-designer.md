@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,29 +15,15 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: 25
-author: kempb
-ms.author: kempb
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 23c5b56f5c3382b65ea06cb5e631ac2078cac42d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fa34b3321d4b1b7e8f317d559583fb0bb75d97f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Trabalhando com diagramas de classe (Designer de Classe)
 Os diagramas de classe ajudam você a compreender a estrutura de classes de projetos que outras pessoas escreveram (ou que você escreveu há muito tempo). Você pode usá-los para personalizar, compartilhar e apresentar informações sobre o projeto para outras pessoas.  

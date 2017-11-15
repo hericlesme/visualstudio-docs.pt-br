@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,29 +12,15 @@ f1_keywords:
 - vs.performance.DA0506
 - vs.performance.506
 ms.assetid: e9c43554-9a85-4d98-9fa4-3b19986e7b62
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0b31f1a4bc8db33533f53a5a2c750319e96e8abc
-
+ms.openlocfilehash: 1a257478cf797741aee7f52361c59cbe06b72bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: máximo de bytes particulares alocados para o processo com criação de perfil
 |||  
@@ -63,8 +48,3 @@ ms.openlocfilehash: 0b31f1a4bc8db33533f53a5a2c750319e96e8abc
  Use o valor relatado para comparar o desempenho de diferentes versões ou compilações do programa ou para entender o desempenho do aplicativo em diferentes cenários de criação de perfil.  
   
  Um valor máximo de bytes privados do processo que está se aproximando do limite arquitetônico do crescimento máximo de um espaço de endereço do processo pode levar a exceções de memória insuficiente. Para obter mais informações, consulte [Investigando problemas de memória](http://go.microsoft.com/fwlink/?LinkID=177833) na Revista do MSDN.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

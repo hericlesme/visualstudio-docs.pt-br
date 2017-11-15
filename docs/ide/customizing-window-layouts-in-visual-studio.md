@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,31 +23,15 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 8ab795965dc205cd783f469d134d64fb2b5dacf6
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
 No Visual Studio, é possível personalizar a posição, tamanho e comportamento de janelas para criar layouts de janela que funcionam melhor para vários fluxos de trabalho de desenvolvimento. Quando você personaliza o layout, o IDE se lembra dele. Por exemplo, se você alterar o local de encaixe do **Gerenciador de Soluções** e fechar o Visual Studio, na próxima vez que o iniciar, mesmo que estiver trabalhando em outro computador, o **Gerenciador de Soluções** será encaixado no mesmo local. Também é possível dar um nome ao layout personalizado e salvá-lo e, em seguida, mudar entre layouts com um único comando. Por exemplo, é possível criar um layout para edição e outro para depuração e mudar entre eles usando o comando de menu **Janela &#124; Aplicar Layout de Janela**.  
@@ -105,13 +88,13 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
  A ilustração a seguir mostra o losango do guia para janelas de documentos, que só podem ser encaixadas dentro do quadro de edição:  
 
- ![Losango do guia da janela do documento](~/ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
+ ![Losango do guia da janela do documento](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
 
  As janelas de ferramentas podem ser fixadas em um lado de um quadro no IDE ou dentro do quadro de edição. Um guia do losango será exibido quando você arrastar uma janela de ferramentas para outro lugar para ajudá-lo a reencaixar a janela facilmente.  
 
  Losango do guia para janelas de ferramentas  
 
- ![Losangos do guia da janela de ferramentas](~/ide/media/vs10guidediamond.png "VS10GuideDiamond")  
+ ![Losangos do guia da janela de ferramentas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")  
 
  A ilustração a seguir mostra o Gerenciador de Soluções que está sendo encaixado em um novo local, mostrado pela área sombreada azul:  
 
@@ -186,7 +169,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
 1.  É possível remover, renomear ou reordenar seu layout personalizado escolhendo **Janela > Gerenciar Layouts de Janela**. Se você mover um layout, a associação de teclas será ajustada automaticamente para refletir a nova posição na lista. Do contrário, as associações não poderão ser modificadas e, assim, será possível armazenar, no máximo, 10 layouts por vez.  
 
-     ![Gerenciar layouts de janela](~/ide/media/managewindowlayouts.png "ManageWindowLayouts")  
+     ![Gerenciar layouts de janela](../ide/media/managewindowlayouts.png "ManageWindowLayouts")  
 
      Para se lembrar de qual atalho de teclado foi atribuído a qual layout, escolha **Janela > Aplicar Layout de Janela**.  
 
@@ -195,4 +178,3 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 ## <a name="related-topics"></a>Tópicos relacionados  
 
 [How to: Move Around in the IDE (Como mover-se no IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)
-

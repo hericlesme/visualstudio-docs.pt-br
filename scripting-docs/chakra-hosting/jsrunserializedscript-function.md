@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsRunSerializedScript
-helpviewer_keywords:
-- JsRunSerializedScript function
+f1_keywords: jsrt/JsRunSerializedScript
+helpviewer_keywords: JsRunSerializedScript function
 ms.assetid: 3fd3f6f1-eb3e-4751-92a5-c93b1035f3b2
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: b770edbcaa4e7dc36f295407627c10a8b574b88b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsrunserializedscript-function"></a>Função JsRunSerializedScript
 Executa um script serializado.  

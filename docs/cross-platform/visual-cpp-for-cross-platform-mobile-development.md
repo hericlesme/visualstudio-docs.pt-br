@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: 0bb872d6-981b-4c96-9143-fcec5336bf0d
-caps.latest.revision: 9
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "9"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 591fc488e2a2801fd6acb6e065038d11aaa13b67
-
+ms.openlocfilehash: 51b579d047987648caab31136b6378e0a6f0475d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ para Desenvolvimento Móvel Multiplataforma
 Você pode criar aplicativos C++ nativos para dispositivos iOS, Android e Windows e compartilhar código comum em bibliotecas criadas para iOS, Android e Windows, usando Visual C++ para Desenvolvimento Móvel de Multiplataforma. Essa é uma opção disponível no Visual Studio 2015 que instala os SDKs e ferramentas necessárias para o desenvolvimento de plataforma cruzada de bibliotecas compartilhadas e aplicativos nativos. Quando ele estiver instalado, você poderá usar o Visual C++ para criar código que é executado em dispositivos iOS e Android, além de Windows, Windows Phone e Xbox.  
@@ -122,8 +106,3 @@ Você pode criar aplicativos C++ nativos para dispositivos iOS, Android e Window
 4.  [Criar um aplicativo OpenGL ES no Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
 5.  [Exemplos de desenvolvimento móvel multiplataforma](../cross-platform/cross-platform-mobile-development-examples.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

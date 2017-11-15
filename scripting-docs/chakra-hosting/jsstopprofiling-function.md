@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsStopProfiling
-helpviewer_keywords:
-- JsStopProfiling function
+f1_keywords: jsrt/JsStopProfiling
+helpviewer_keywords: JsStopProfiling function
 ms.assetid: 3639c04f-a0f9-418b-be39-92f64b4e7ef8
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 0bed003e848a7ac34100a322275be04213da76e7
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsstopprofiling-function"></a>Função JsStopProfiling
 Interrompe a criação de perfil no contexto atual.  

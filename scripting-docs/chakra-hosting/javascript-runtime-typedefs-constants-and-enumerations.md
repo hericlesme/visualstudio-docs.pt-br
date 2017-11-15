@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: 1aa107ed-e144-4947-b5bb-90284a537174
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: ad2f5a086062d6a4473a1befc83790d76056d19c
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="javascript-runtime-typedefs-constants-and-enumerations"></a>Typedefs, constantes e enumerações do Tempo de Execução do JavaScript
 Typedefs, constantes e enumerações do JsRT (Tempo de Execução do JavaScript) dão suporte à adição de recursos de script para aplicativos de área de trabalho e do lado do servidor em execução no Windows.  

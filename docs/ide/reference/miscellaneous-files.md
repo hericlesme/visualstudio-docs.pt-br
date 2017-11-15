@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,36 +20,22 @@ helpviewer_keywords:
 - files [Visual Studio], outside of containers
 - files [Visual Studio], Miscellaneous Files folder
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 80b9475ef881a080d4f8482ac2133381b42cada5
-
+ms.openlocfilehash: 831d0f60c992324c81cb1366ac28b3e3f1b066ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="miscellaneous-files"></a>Arquivos diversos
 Talvez você queira usar os editores [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para trabalhar de forma independente nos arquivos de um projeto ou de uma solução. Enquanto você tiver uma solução aberta, pode abrir e modificar arquivos sem adicioná-los a uma solução ou um projeto. Os arquivos com os quais você deseja trabalhar independentemente dos contêineres são chamados de arquivos diversos. Os arquivos diversos são externos às soluções e projetos, não estão incluídos em builds e não podem ser incluídos com uma solução sob controle do código-fonte.  
   
  Abrir arquivos independentemente de um contêiner é útil para uma variedade de razões. Você pode ter um arquivo que deseja exibir enquanto desenvolve uma solução baseada em projeto, mas que não é parte integrante do desenvolvimento da solução. Exemplos comuns incluem instruções ou anotações de desenvolvimento, esquema de banco de dados e fragmentos de código. Além disso, você talvez queira criar um arquivo autônomo.  
   
- ![Projetos de soluções](~/ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")  
+ ![Projetos de soluções](../../ide/reference/media/projects_solutions_misc.gif "Projects_Solutions_Misc")  
   
  O Gerenciador de Soluções poderá exibir uma pasta Arquivos Diversos para os arquivos se as opções para a pasta estiverem habilitadas. As opções podem ser definidas em [Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md). Depois de fechar um arquivo diverso, ele não é associado a nenhuma solução ou projeto específico, a menos que uma opção seja habilitada para isso também.  
   
@@ -68,8 +53,3 @@ Talvez você queira usar os editores [!INCLUDE[vsprvs](../../code-quality/includ
 ## <a name="see-also"></a>Consulte também  
  [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)   
  [Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

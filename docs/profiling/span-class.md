@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- cvmarkersobj/Concurrency::diagnostic::span
-helpviewer_keywords:
-- Concurrency::diagnostic::span class
+f1_keywords: cvmarkersobj/Concurrency::diagnostic::span
+helpviewer_keywords: Concurrency::diagnostic::span class
 ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: da7d272f0ef13781a53b328e4a4daf531682f30a
-
+ms.openlocfilehash: 4547cec114568403d8f5fc7a0bb88af3fad3934b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="span-class"></a>Classe span
 Define uma fase do aplicativo.  
@@ -65,8 +48,3 @@ class span;
   
 ## <a name="see-also"></a>Consulte também  
  [Namespace de diagnóstico](../profiling/diagnostic-namespace.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

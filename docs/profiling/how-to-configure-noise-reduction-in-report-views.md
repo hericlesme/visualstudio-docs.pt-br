@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.noisereduction.dialog
+f1_keywords: vs.performance.noisereduction.dialog
 helpviewer_keywords:
 - profiling tools, trimming
 - profiling tools, report noise reduction
 - profiling tools, folding
 ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8f0216c8a4b86cf1a7938ce67be8becb71cde400
-
+ms.openlocfilehash: b1cda2b61c50deb98752063f9606849356386a84
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Como configurar redução de ruído em exibições de relatório
 Os relatórios de desempenho podem ser configurados para redução de ruído, limitando a quantidade de dados que são apresentados no modo de exibição de Árvore de Chamadas e na exibição de Alocação. Ao usar a redução de ruído, os problemas de desempenho serão mais proeminentes. Isso é útil ao analisar relatórios de desempenho.  
@@ -99,8 +83,3 @@ Os relatórios de desempenho podem ser configurados para redução de ruído, li
  [Como excluir ou incluir funções curtas por meio da instrumentação](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [Modo de exibição de árvore de chamadas](../profiling/call-tree-view.md)   
  [Exibição de alocações](../profiling/dotnet-memory-allocations-view.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

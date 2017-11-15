@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: dadeca1f7dc4ec558e9ee25184b53d10d1b94142
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 9ad9a9e8851d428010d7116ba94cc08ced211740
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Atalhos de teclado padrão para comandos frequentes no Visual Studio
 Você pode acessar comandos usados frequentemente no Visual Studio escolhendo estes atalhos de teclado padrão. Para obter uma lista completa de comandos que têm atalhos padrão, consulte [Default Keyboard Shortcuts (Atalhos de teclado padrão)](../ide/default-keyboard-shortcuts-in-visual-studio.md).  

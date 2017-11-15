@@ -4,33 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
-caps.latest.revision: 17
+caps.latest.revision: "17"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bd9028b7286cab40cf1e0932034a3b255bb38072
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 3e2e14748e27d965762b3245908382b278e6e132
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluídos no Internet Explorer 9 e no Internet Explorer 10.  
@@ -59,7 +44,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Controle de áudio  
  **Controle de áudio:** ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.  
   
- ![Controle Audio do HTML5](~/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
+ ![Controle Audio do HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -102,7 +87,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Controle Video  
  **Controle de vídeo:** ações no controle de vídeo HTML5 são registradas e reproduzidas corretamente.  
   
- ![Controle Video do HTML5](~/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
+ ![Controle Video do HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -132,7 +117,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider  
  **Controle deslizante:** ações no controle deslizante de HTML5 são registradas e reproduzidas corretamente.  
   
- ![Controle Slider do HTML5](~/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
+ ![Controle Slider do HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -152,7 +137,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
  **Controle ProgreesBar:** o ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle.  
   
- ![Controle ProgressBar do HTML5](~/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Controle ProgressBar do HTML5](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>Consulte também  
  [Elementos HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
@@ -160,4 +145,3 @@ string ValueAsNumber
  [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Personalização de seu teste de IU codificado](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
  [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

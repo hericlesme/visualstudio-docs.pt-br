@@ -1,11 +1,10 @@
 ---
 title: Portar, migrar e atualizar projetos do Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/24/2017
+ms.date: 07/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,14 +21,12 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: ef005f6456c532ade108299f556c8ef7211e6055
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: d637dc2b0349bfe1efbcf55417d4f4bf5817b303
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Portar, migrar e atualizar projetos do Visual Studio
 
 Geralmente, cada nova versão do Visual Studio dá suporte à maioria dos tipos anteriores de projetos, arquivos e outros ativos. É possível trabalhar com eles [como você sempre trabalhou](../ide/solutions-and-projects-in-visual-studio.md) e, desde que não dependa de recursos mais novos, o Visual Studio preservará a compatibilidade com versões anteriores, como o Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. (Consulte as [Notas de versão](https://www.visualstudio.com/vs/release-notes/) para saber quais recursos são específicos a quais versões.)
@@ -75,4 +72,3 @@ Se você não vir um projeto ou um tipo de arquivo que deveria estar listado aqu
 | Windows Communication Foundation, Windows Workflow Foundation | É possível abrir esse projeto no Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012 |
 | Windows Presentation Foundation | É possível abrir esse projeto no Visual Studio 2013, Visual Studio 2012 e Visual Studio 2010 SP1. |
 | Aplicativos da Windows Store/aplicativos Windows Phone | Não há suporte para projetos da Windows Store 8.1 e 8.0 e do Windows Phone 8.1 e 8.0 no Visual Studio 2017. Para manter esses aplicativos, continue a usar o Visual Studio 2015. Para manter os projetos do Windows Phone 7. x, use o Visual Studio 2012. |
-

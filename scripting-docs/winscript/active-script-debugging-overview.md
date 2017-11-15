@@ -7,19 +7,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Active Script Debugging overview
+helpviewer_keywords: Active Script Debugging overview
 ms.assetid: ce4ec768-d017-4dfa-a7e3-cced3a29e679
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 1d9aebdc3f8fa4df0f4386609e632e1a8611c87f
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="active-script-debugging-overview"></a>Visão geral de depuração de script ativo
 As interfaces de depuração de script ativo permitem a depuração com neutralidade de idioma e de host e dão suporte a uma ampla variedade de ambientes de desenvolvimento.  

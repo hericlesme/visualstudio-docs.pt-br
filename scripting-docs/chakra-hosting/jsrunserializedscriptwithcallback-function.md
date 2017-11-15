@@ -7,16 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 0608d778-f65b-4dc5-a745-364aac57ef59
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: ce51c9473100e71831dd53cc6572d9740790ffa0
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsrunserializedscriptwithcallback-function"></a>Função JsRunSerializedScriptWithCallback
 Executa um script serializado.     Fornece a capacidade de efetuar carregamento lento da fonte de script somente se/quando necessário.  

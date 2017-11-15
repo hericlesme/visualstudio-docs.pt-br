@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsCreateContext
-helpviewer_keywords:
-- JsCreateContext function
+f1_keywords: jsrt/JsCreateContext
+helpviewer_keywords: JsCreateContext function
 ms.assetid: aceca043-2c73-4029-a06c-8ad6695109cf
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: ee756158401468ee00007a764e18a0846f35a3dc
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscreatecontext-function"></a>Função JsCreateContext
 Cria um contexto de script para executar scripts.  

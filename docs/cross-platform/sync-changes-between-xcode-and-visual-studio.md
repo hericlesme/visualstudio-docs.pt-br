@@ -7,19 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
-caps.latest.revision: 7
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "7"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0bb84ea6c47764aa0429fdebf160dae0fd47e570
-
+ms.openlocfilehash: c2a665a397e89edf80f62d0150a98c1941afcd1d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Sincronizar alterações entre o XCode e o Visual Studio
 O componente Microsoft Visual C++ para Desenvolvimento Móvel inclui funcionalidades remotas para sincronizar seu trabalho entre o computador e o Mac. Quando os computadores do Visual Studio e do Mac são emparelhados, novas opções ficam disponíveis para projetos de Aplicativos do iOS no Visual Studio que podem ser usadas para abrir o projeto no XCode, mover o código entre o XCode e o Visual Studio e limpar o diretório de projeto temporário do XCode.  
@@ -36,7 +32,7 @@ O componente Microsoft Visual C++ para Desenvolvimento Móvel inclui funcionalid
 ### <a name="open-in-xcode"></a>Abrir no XCode  
  Para abrir o projeto no XCode por meio do Visual Studio, no submenu **Computador Remoto**, escolha **Abrir no XCode** para abrir o projeto selecionado no computador remoto emparelhado. O servidor vcremote é usado para abrir o XCode no Mac e navegar para um diretório temporário criado no Mac que contém uma cópia do projeto. O Visual Studio exibe uma caixa de diálogo que mostra o diretório temporário usado para o projeto. As ações realizadas no computador remoto também são mostradas na janela **Saída** do Visual Studio. Para vê-las, talvez você precise selecionar **Computador Remoto do Visual C++** na lista suspensa **Mostrar saída de** na parte superior da janela **Saída**.  
   
- ![A janela Saída mostra as ações do computador remoto.] (~/cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")  
+ ![A janela Saída mostra as ações do computador remoto.] (../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")  
   
  No Mac, é possível usar todas as ferramentas do XCode para editar o código e recursos, storyboards e ações. No Visual Studio, o projeto de Aplicativo do iOS é anotado com “Aberto no XCode” para indicar que podem ser feitas alterações no computador remoto. Depois que as edições forem concluídas, é possível usar os comandos Efetuar Pull de Remoto ou Pull Incremental de Remoto para copiar as alterações de volta para o projeto do Visual Studio.  
   
@@ -54,8 +50,3 @@ O componente Microsoft Visual C++ para Desenvolvimento Móvel inclui funcionalid
  É possível usar o comando Limpar Remoto para excluir os arquivos no diretório de projeto temporário no computador remoto. O conteúdo do diretório, incluindo arquivos de origem ou produtos de build, é removido do Mac. Verifique se você sincronizou todas as alterações que deseja manter de volta para o Visual Studio usando Efetuar Pull de Remoto ou Pull Incremental de Remoto antes de usar o comando Limpar Remoto.  
   
  Para limpar o diretório de projeto temporário no computador remoto, no Visual Studio, na janela **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto de Aplicativo do iOS para abrir o menu de contexto. Selecione **Computador Remoto** e escolha **Limpar Remoto** para remover os arquivos do diretório de projeto do Mac.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

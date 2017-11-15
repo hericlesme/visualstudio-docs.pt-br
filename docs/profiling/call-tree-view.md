@@ -4,41 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.calltree
+f1_keywords: vs.performance.view.calltree
 helpviewer_keywords:
 - Call Tree view
 - profiling tools reports, Call Tree view
 - performance reports, Call Tree view
 - profiling tools, Call Tree view
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
-caps.latest.revision: 34
+caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 535d39a34cdf49c8609a3d40da584417a3783846
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2e2e7369d57f7a23cf8467d8a8eb5c99447d35e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="call-tree-view"></a>Exibição de árvore de chamadas
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó da função lista todas as funções que ela chamou e os dados de desempenho sobre essas chamadas de função.  

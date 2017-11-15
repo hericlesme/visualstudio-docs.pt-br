@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Environment.Keyboard
+f1_keywords: VS.ToolsOptionsPages.Environment.Keyboard
 helpviewer_keywords:
 - keyboard shortcuts [Visual Studio], customizing
 - importing shortcut keys [Visual Studio]
@@ -19,30 +17,15 @@ helpviewer_keywords:
 - customizing keyboard shortcuts [Visual Studio]
 - exporting shortcut keys [Visual Studio]
 ms.assetid: d2774be2-60a4-4d6f-95f1-79d0d9e55b56
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 03cbcb05259b183052f20f7b12d8ceebebc981fd
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 13093fd63df094df624f0007ed593cbbf6014fef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificando e personalizando atalhos de teclado no Visual Studio
 Você pode identificar atalhos de teclado para comandos do Visual Studio, personalizar esses atalhos e exportá-los para que outras pessoas os usem. Muitos atalhos sempre invocam os mesmos comandos, mas o comportamento de um atalho pode variar de acordo com as seguintes condições:  

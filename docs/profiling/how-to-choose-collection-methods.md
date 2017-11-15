@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - profiling tools, choosing collection method
 - performance collection methods
 ms.assetid: c87cfd3a-0fc7-49ae-9c05-d8480891cc63
-caps.latest.revision: 34
+caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 36eb22c4f770d66584f3007786a63181f6826a6b
-
+ms.openlocfilehash: b94b842566c3f8bf5ad5374acda0ccc9e9b50cbe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleção
 As ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dão suporte a três métodos de coleta de dados de desempenho: amostragem, instrumentação e simultaneidade. Você também pode usar o método de amostragem ou instrumentação para coletar dados de tempo de vida e de alocação de memória do .NET.  
@@ -115,8 +100,3 @@ As ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/inclu
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
  [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

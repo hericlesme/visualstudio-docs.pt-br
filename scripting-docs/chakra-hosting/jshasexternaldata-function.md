@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsHasExternalData
-helpviewer_keywords:
-- JsHasExternalData function
+f1_keywords: jsrt/JsHasExternalData
+helpviewer_keywords: JsHasExternalData function
 ms.assetid: a077e3ac-4f6f-4d94-8398-f1b5cc4c18e0
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 66d48fe96245bf796592bca4c11d533263c85cb1
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jshasexternaldata-function"></a>Função JsHasExternalData
 Determina se um objeto é um objeto externo.  

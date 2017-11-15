@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,30 +14,14 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
-caps.latest.revision: 83
+caps.latest.revision: "83"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cbde644f9248935c73bb75b8b2de9573588867f5
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Instruções passo a passo: criando e executando testes de unidade para código gerenciado
 Este passo a passo guiará você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade do Microsoft para código gerenciado e o Gerenciador de Testes do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Você pode alterar o código do seu projeto e executar novamente os testes.  
@@ -141,7 +124,7 @@ public void Debit(double amount)
   
 5.  No projeto **BankTests** adicione uma referência à solução **Banco**.  
   
-     No Gerenciador de Soluções, selecione **Referências** no projeto **BankTests** e escolha **Adicionar Referência... ** no menu de contexto.  
+     No Gerenciador de Soluções, selecione **Referências** no projeto **BankTests** e escolha **Adicionar Referência...**  no menu de contexto.  
   
 6.  Na caixa de diálogo Gerenciador de Referências, expanda **Solução** e marque o item **Banco**.  
   
@@ -435,4 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  Nesta seção final, o trabalho que fizemos melhorando o código de teste levou a métodos de teste mais robustos e informativos. Mais importante ainda, a análise extra também levou a códigos melhores em nosso projeto em teste.
-

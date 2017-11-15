@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsCreateObject
-helpviewer_keywords:
-- JsCreateObject function
+f1_keywords: jsrt/JsCreateObject
+helpviewer_keywords: JsCreateObject function
 ms.assetid: 6c1d01a4-9254-443e-b974-6f0b0c861ca2
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 3fd52048bb50a6f7ae98059dd2ba75d6cbae15cb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscreateobject-function"></a>Função JsCreateObject
 Cria um novo objeto.  

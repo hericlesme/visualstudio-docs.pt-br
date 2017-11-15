@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,33 +12,17 @@ helpviewer_keywords:
 - Code Editor, displaying URLs
 - editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
-caps.latest.revision: 9
-author: kempb
-ms.author: kempb
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 47b609a3138dff39db7b817ce320a0a46665127a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: ca31c95a1927565153270c8280b595fa0131c726
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como exibir URLs como links no Editor
-<a id="how-to-display-urls-as-links-in-the-editor" class="xliff"></a>
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Como exibir URLs como links no Editor
 É possível optar por fazer o Editor de Código tratar URLs (Uniform Resource Locators) em seu código como links ativos. Quando você usa esse recurso, as URLs:  
   
 -   São exibidas sublinhadas.  
@@ -51,11 +34,9 @@ ms.lasthandoff: 05/24/2017
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Procedimento
-<a id="procedure" class="xliff"></a>  
+## <a name="procedure"></a>Procedimento  
   
-#### Para exibir URLs como links
-<a id="to-display-urls-as-links" class="xliff"></a>  
+#### <a name="to-display-urls-as-links"></a>Para exibir URLs como links  
   
 1.  No menu **Ferramentas**, clique em **Opções**.  
   
@@ -69,8 +50,7 @@ ms.lasthandoff: 05/24/2017
   
 4.  Em **Exibir**, selecione **Habilitar navegação de URL com um único clique**.  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Personalizando o editor](../../ide/customizing-the-editor.md)   
  [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)   
  [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)

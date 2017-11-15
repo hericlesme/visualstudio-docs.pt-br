@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- Debug.ListSource
+f1_keywords: Debug.ListSource
 helpviewer_keywords:
 - Debug.ListSource command
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-caps.latest.revision: 6
-author: kempb
-ms.author: kempb
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: dcb0ed50e925013009cd0ccd54e00a4dee1ff3d4
-
+ms.openlocfilehash: 2f94f7bea2f4742fa975948d838e0cb01ce5e11e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="list-source-command"></a>Comando Listar Origem
 Exibe as linhas de código-fonte especificadas.  
@@ -77,8 +61,3 @@ Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNum
 ## <a name="see-also"></a>Consulte também  
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Janela Comando](../../ide/reference/command-window.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

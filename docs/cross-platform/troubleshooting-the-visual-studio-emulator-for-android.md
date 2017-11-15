@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2b73f62b59c2106cdda090133013603e3dc887c6
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6794bf2bbf53df5648c595d7a4ec47b30a974359
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Solução de problemas do emulador do Visual Studio para Android
 Este tópico contém informações para ajudá-lo a resolver problemas que podem ocorrer ao usar o Emulador do Visual Studio para Android.  
@@ -231,7 +214,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
   
          As propriedades do adaptador são mostradas aqui.  
   
-         ![Propriedades do adaptador virtual](~/cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+         ![Propriedades do adaptador virtual](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
     3.  Para esse adaptador, os únicos itens que devem ser selecionados em **Esta conexão utiliza os seguintes itens** devem ser os seguintes:  
   
@@ -259,7 +242,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
   
     -   Abra o Hyper V e vá para o Gerenciador de Comutador Virtual. Crie um comutador virtual chamado "Comutador interno do emulador do Windows Phone" e defina o tipo de conexão à **rede interna**.  
   
-         ![Gerenciador de comutador virtual](~/cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+         ![Gerenciador de comutador virtual](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
      Agora inicialize o emulador. Ele deve funcionar.  
   

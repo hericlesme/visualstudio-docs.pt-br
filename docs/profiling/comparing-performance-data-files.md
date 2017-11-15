@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - profiling tools, comparing profiling tools report files
 - profiling tools reports, comparing
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9a0b4dcb86aa4241d223dd4a1172267dd8ec20da
-
+ms.openlocfilehash: 586665565126dc67fe3fbeb7d3eda3e7061e4650
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="comparing-performance-data-files"></a>Comparando arquivos de dados de desempenho
 A funcionalidade de comparação dos arquivos de dados das Ferramentas de Criação de Perfil permite selecionar dois arquivos de relatório (.VSP /ou .VSPS) e gerar um relatório que mostra as diferenças, regressões de desempenho e melhorias que ocorreram de uma sessão de criação de perfil para outra.  
@@ -51,8 +36,3 @@ A funcionalidade de comparação dos arquivos de dados das Ferramentas de Criaç
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Como comparar arquivos de dados de desempenho](../profiling/how-to-compare-performance-data-files.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

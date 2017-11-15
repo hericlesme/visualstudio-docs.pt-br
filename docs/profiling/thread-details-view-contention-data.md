@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.threaddetails
-helpviewer_keywords:
-- Thread Details view
+f1_keywords: vs.performance.view.threaddetails
+helpviewer_keywords: Thread Details view
 ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 49e30be5e7ffb868962b0fea7c840f4b804c3410
-
+ms.openlocfilehash: 669f227b1c5a13aada7573a245f459ba4c6a8a9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="thread-details-view---contention-data"></a>Exibição Detalhes do Thread – Dados de contenção
 A exibição Detalhes do Thread apresenta um gráfico de linha do tempo dos eventos de bloqueio no thread selecionado de uma execução de criação de perfil que foram causados por contenções em recursos. Um evento de bloqueio ocorre quando o thread é forçado a suspender a execução porque outro thread bloqueou o acesso a um recurso.  
@@ -77,8 +60,3 @@ A exibição Detalhes do Thread apresenta um gráfico de linha do tempo dos even
 -   No gráfico de linha do tempo, clique em **Total**.  
   
      A [Exibição Processo](../profiling/process-view-contention-data.md) é mostrada com o thread selecionado.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

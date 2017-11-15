@@ -1,27 +1,24 @@
 ---
 title: R Markdown com Ferramentas do R para Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3ac955b2-b6e1-4d32-b1a4-2882c93311fc
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: e3d9ee899c9ed82cacfd9466412bacfea6b8c5e8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: b29ae0240a29616edcdf2ae0dced7a9fca0f9584
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="creating-r-markdown-documents"></a>Criando documentos R Markdown
 
 [R Markdown](https://rmarkdown.rstudio.com/) é um formato de documento que transforma a análise em R em painéis, relatórios, apresentações e documentos de alta qualidade.
@@ -69,4 +66,3 @@ Para usar o R Markdown:
     ~~~
 
 1. A qualquer momento durante a edição, clique com botão direito do mouse no editor e selecione **Visualizar**, que tem opções para HTML, PDF e Microsoft Word. Nessa visualização é possível salvar o arquivo de acordo com o formato escolhido.
-

@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.threads.report.blocking
-helpviewer_keywords:
-- Concurrency Visualizer, Blocking Time Profile Report
+f1_keywords: vs.cv.threads.report.blocking
+helpviewer_keywords: Concurrency Visualizer, Blocking Time Profile Report
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3b227a5b2dca4f62afc0c99dabe2814bebe98315
-
+ms.openlocfilehash: 199c33ce94aa1fcb5cffc45570a4425df3dbd720
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="blocking-time-profile-report"></a>Bloqueando relatório de perfil de tempo
 Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilhas de chamadas específicas para cada categoria de bloqueio (por exemplo, "E/S" ou "Sincronização"). O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias de preempção. Para criar o relatório do perfil de bloqueio, a ferramenta coleta chamadas à API de bloqueio e acumula-as em uma árvore de pilhas de chamadas. Dados mostrados nesses relatórios variam pelo intervalo de tempo atual, por threads ocultos e os dois filtros a seguir que podem ser aplicados:  
@@ -78,8 +61,3 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

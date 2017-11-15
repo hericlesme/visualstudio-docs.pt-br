@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#When
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#When
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - <When> Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 9c65869ebcb2cd531b91bca19beca7d0aefa630b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 58032ea7c1c15de794b5374017e84f07434d8310
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 Especifica um possível bloco de códigos para o elemento `Choose` selecionar.  
@@ -91,10 +75,10 @@ Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
 ## <a name="remarks"></a>Comentários  
  Se o atributo `Condition` for avaliado como verdadeiro, os elementos `ItemGroup` filho e `PropertyGroup` do elemento `When` serão executados e todos os elementos `When` subsequentes serão ignorados.  
 
- Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar entre diversas possíveis alternativas. Para obter mais informações, consulte [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).  
+ Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar entre diversas possíveis alternativas. Para obter mais informações, confira [ Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).  
 
 ## <a name="example"></a>Exemplo  
- O projeto a seguir usa o elemento `Choose` para selecionar qual conjunto de valores de propriedade nos elementos `When` definir. Se os atributos `Condition` de ambos elementos `When` forem avaliadas como `false`, os valores de propriedade no elemento `Otherwise` serão definidos.  
+ O seguinte projeto usa o `Choose` elemento para selecionar o conjunto de valores de propriedades no elemento `When` a ser definido. Se os `Condition` atributos de ambos `When` elementos são avaliadas como `false`, os valores de propriedades no elemento `Otherwise` são definidos.  
 
 ```xml  
 <Project  
@@ -144,4 +128,3 @@ Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
 ## <a name="see-also"></a>Consulte também  
  [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md)   
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
-

@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- debug.evaluatestatement
+f1_keywords: debug.evaluatestatement
 helpviewer_keywords:
 - Debug.EvaluateStatement command
 - Evaluate Statement command
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
-caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: fa07b38fabc17f7cc3d18e1accd3cfce4e5de4ab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 46c80a49d0e043d7cdbffbc74698a29e10ab4795
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="evaluate-statement-command"></a>Comando Avaliar Instrução
 Avalia e exibe a instrução fornecida.  

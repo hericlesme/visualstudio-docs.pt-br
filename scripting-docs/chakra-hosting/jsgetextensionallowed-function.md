@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetExtensionAllowed
-helpviewer_keywords:
-- JsGetExtensionAllowed function
+f1_keywords: jsrt/JsGetExtensionAllowed
+helpviewer_keywords: JsGetExtensionAllowed function
 ms.assetid: 839054a1-d643-47d9-89db-6a015bba0d91
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: a515a0cc87eb8ab7f72a9f9fc02d4270abfa1484
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetextensionallowed-function"></a>Função JsGetExtensionAllowed
 Retorna um valor que indica se um objeto é ou não extensível.  

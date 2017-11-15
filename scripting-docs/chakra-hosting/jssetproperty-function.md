@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSetProperty
-helpviewer_keywords:
-- JsSetProperty function
+f1_keywords: jsrt/JsSetProperty
+helpviewer_keywords: JsSetProperty function
 ms.assetid: 2c36bebf-ec86-425c-8131-2dd75fd30f40
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 0930b0b3e59e2ea35f85295e2adc2cc5fdda33e1
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetproperty-function"></a>Função JsSetProperty
 Coloca a propriedade de um objeto.  

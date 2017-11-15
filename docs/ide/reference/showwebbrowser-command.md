@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- view.showwebbrowser
+f1_keywords: view.showwebbrowser
 helpviewer_keywords:
 - ShowWebBrowser command
 - View.ShowWebBrowser command
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ea111f99457ed69dc4705aa02012107a43d2f50a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4a54023892d1432639fd1211273195b941e8f081
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 Exibe a URL especificada em uma janela de navegador da Web, tanto dentro do IDE (ambiente de desenvolvimento integrado) ou externa ao IDE.  

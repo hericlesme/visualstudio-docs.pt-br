@@ -5,27 +5,24 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords:
-- conditional compilation, variables
+helpviewer_keywords: conditional compilation, variables
 ms.assetid: d6f9827d-c558-412c-8e68-de04c19c3d9d
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 900a44dab0ad418cd2899af6423f78016c90fe2b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="conditional-compilation-variables-javascript"></a>Variáveis de compilação condicional (JavaScript)
 As variáveis predefinidas a seguir estão disponíveis para compilação condicional. Se uma variável não for **true**, ela não será definida e não se comportará como `NaN` ao ser acessada.  

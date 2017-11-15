@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsStartDebugging
-helpviewer_keywords:
-- JsStartDebugging function
+f1_keywords: jsrt/JsStartDebugging
+helpviewer_keywords: JsStartDebugging function
 ms.assetid: c48ba02d-6d47-466f-a970-02f087d525f3
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: bd9b7e3deb407d1a1e9d16db38e17c85ccc8c797
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsstartdebugging-function"></a>Função JsStartDebugging
 Inicia a depuração de perfil no contexto atual.  

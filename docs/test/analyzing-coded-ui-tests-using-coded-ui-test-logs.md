@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 5f32c2bc9f289a69a5ef9e7acfc1a973017fec0f
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 39ed1ba397fd1c0a9ff1f30acea1cff4a38529a2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
 Os logs de teste de IU codificado filtram e registram informações importantes sobre as execuções de teste de IU codificado.  
@@ -96,17 +80,17 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
   
 4.  Clique no link **Saída** nos resultados do Gerenciador de Testes.  
   
-     ![Link de saída no Gerenciador de Testes](~/test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")  
+     ![Link de saída no Gerenciador de Testes](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")  
   
      Essa ação exibe a saída do teste, que inclui um link ao log de ações.  
   
-     ![Resultados e links de saída do teste de interface do usuário codificada](~/test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")  
+     ![Resultados e links de saída do teste de interface do usuário codificada](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")  
   
 5.  Escolha o link UITestActionLog.html.  
   
      O log é exibido em seu navegador da Web.  
   
-     ![Arquivo de log de teste de IU codificado](~/test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")  
+     ![Arquivo de log de teste de IU codificado](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")  
   
 ## <a name="q--a"></a>Perguntas e respostas  
   
@@ -126,4 +110,3 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 ## <a name="see-also"></a>Consulte também  
  [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
  [Como executar testes no Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
-

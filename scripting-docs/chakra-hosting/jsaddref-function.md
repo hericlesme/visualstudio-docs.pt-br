@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsAddRef
-helpviewer_keywords:
-- JsAddRef function
+f1_keywords: jsrt/JsAddRef
+helpviewer_keywords: JsAddRef function
 ms.assetid: a7f3ed49-6a86-489a-abdf-c99428e79cae
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 8e55ab6643dd949b8b41962161f76648dba926e8
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsaddref-function"></a>Função JsAddRef
 Adiciona uma referência a um objeto que passou por coleta de lixo.  

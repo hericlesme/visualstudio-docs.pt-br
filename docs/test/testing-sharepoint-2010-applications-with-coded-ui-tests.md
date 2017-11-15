@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
-caps.latest.revision: 30
+caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: d3ba0b9ce4366efd386d0b5c1b4d9c3f0094511b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9364f111bc310b9d57bec88611b795ec22ee2ec7
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testando os aplicativos do SharePoint 2010 com testes de interface do usuário codificada
 Incluir testes de IU codificados em um aplicativo do SharePoint permite verificar se o aplicativo inteiro, incluindo seus controles de interface do usuário, está funcionando corretamente. Testes de IU codificados também podem validar valores e lógica na interface do usuário.  
@@ -167,4 +150,3 @@ uiGridKeyboardInputEdit.Text=value;
  [Verificando e depurando código do SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
  [Compilando e depurando soluções do SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
  [Criando o perfil do desempenho de aplicativos do SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
-

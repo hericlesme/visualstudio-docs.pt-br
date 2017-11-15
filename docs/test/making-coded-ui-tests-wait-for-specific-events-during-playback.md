@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
-caps.latest.revision: 24
+caps.latest.revision: "24"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0440261e5d081c40701d3a2f93ccf35a7adb2fd8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 40983f5c5c79f1555ea039df8d71c931fa633f24
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Fazendo testes de IU codificado aguardar eventos específicos durante a reprodução
 Na reprodução de um teste de IU codificado, é possível instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Para fazer isso, use o método apropriado UITestControl.WaitForControlXXX(), conforme descrito na tabela a seguir. Para obter um exemplo de um teste de IU codificado que espera um controle ser habilitado usando o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consulte [Instruções passo a passo: criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
@@ -134,4 +118,3 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)   
  [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Como inserir um atraso antes de uma ação de interface do usuário usando o Editor de teste de IU codificado](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
-

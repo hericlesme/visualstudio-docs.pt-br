@@ -4,42 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: 4
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
-ms.openlocfilehash: 7b69cc5d96a1b51a3d58f688a53bb0156ec3b713
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f2c265fde65ae20012e2846d99b86c71254d5b44
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio para entender melhor a utilização de hardware de alto nível do aplicativo Direct3D. É possível usá-la para determinar se o desempenho do aplicativo está associado à CPU ou à GPU e obter informações sobre como você pode usar o hardware da plataforma com mais eficiência. O Uso de GPU dá suporte a aplicativos que usam o Direct3D 12, Direct3D 11 e Direct3D 10; ele não dá suporte a outras APIs de gráficos como Direct2D ou OpenGL.  
   
  Esta é a janela **Relatório de Uso de GPU**:  
   
- ![O relatório Uso de GPU, com as linhas do tempo CPU e GPU](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![O relatório Uso de GPU, com as linhas do tempo CPU e GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Requisitos  
  Veja a seguir os requisitos para o uso da ferramenta Uso de GPU, além dos requisitos do Diagnóstico de Gráficos.  
@@ -60,7 +44,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 2.  No hub Desempenho e Diagnóstico, marque a caixa ao lado de **Uso de GPU**. Opcionalmente, marque as caixas ao lado de outras ferramentas nas quais você esteja interessado. É possível executar várias ferramentas de Desempenho e Diagnóstico simultaneamente para obter uma visão mais completa do desempenho do aplicativo.  
   
-     ![Escolha as ferramentas de diagnóstico que você deseja usar.](~/profiling/media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
+     ![Escolha as ferramentas de diagnóstico que você deseja usar.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
     > [!NOTE]
     >  Nem todas as ferramentas de Desempenho e Diagnóstico podem ser usadas ao mesmo tempo.  
@@ -79,15 +63,15 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 1.  Na parte inferior da janela da sessão de diagnóstico, escolha o link **Parar Coleta** ou pressione **Parar** no canto superior esquerdo.  
   
-     ![Colete informações de intervalo de GPU e CPU.](~/profiling/media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
+     ![Colete informações de intervalo de GPU e CPU.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
   
 2.  Na parte superior do relatório, selecione uma seção de um dos gráficos que mostra o problema que você deseja investigar. A seleção pode ser feita em até 3 segundos; seções mais longas serão truncadas no início.  
   
-     ![Pós&#45;coleta, selecionar um intervalo para exibir os detalhes](~/profiling/media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+     ![Pós&#45;coleta, selecionar um intervalo para exibir os detalhes](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
 3.  Na parte inferior do relatório, escolha o link **exibir detalhes** na mensagem **... clique aqui para exibir detalhes de uso de GPU para esse intervalo** para exibir uma linha do tempo detalhada da seleção.  
   
-     ![Pós&#45;coleção, com o intervalo selecionado](~/profiling/media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+     ![Pós&#45;coleção, com o intervalo selecionado](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
  Isso abrirá um novo documento com guias que contém o relatório. O relatório Uso de GPU ajuda você a ver quando um evento de gráficos é iniciado na CPU, quando ele atinge a GPU e quanto tempo a GPU leva para executá-lo. Essas informações podem ajudá-lo a identificar afunilamentos e oportunidades de aumento de paralelismo no código.  
 
@@ -95,7 +79,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>Exportar para o GPUView ou o Windows Performance Analyzer
 A partir do Visual Studio 2017, esses dados podem ser abertos com o [GPUView](/windows-hardware/drivers/display/using-gpuview) e o [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) clicando nos links **Abrir no GpuView** ou **Abrir no WPA** localizados no canto inferior direito da sessão de diagnóstico.
 
-![Abrir em...](~/profiling/media/gfx_diag_open_in.png)
+![Abrir em...](media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
 
 ## <a name="using-the-gpu-usage-report"></a>Usando o relatório Uso de GPU  
@@ -105,7 +89,7 @@ A partir do Visual Studio 2017, esses dados podem ser abertos com o [GPUView](/w
   
  Esta é a janela **Relatório de Uso de GPU**:  
   
- ![O relatório Uso de GPU, com as linhas do tempo CPU e GPU](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![O relatório Uso de GPU, com as linhas do tempo CPU e GPU](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
  A seleção de um dos eventos na parte inferior do relatório coloca um marcador nos eventos correspondentes nas linhas do tempo relevantes, geralmente, um evento em um thread de CPU que representa a chamada à API e outro evento em uma das linhas do tempo da GPU que representa a hora em que a GPU concluiu a tarefa. Da mesma forma, a seleção de um dos eventos em uma linha do tempo realça o evento correspondente na parte inferior do relatório. Quando reduzidos nas linhas de tempo da parte superior do relatório, somente os eventos mais demorados são visíveis. Para ver os eventos que têm uma duração menor, amplie as linhas do tempo usando Ctrl + roda no dispositivo apontador ou o controle de colocação em escala no canto inferior esquerdo do painel superior. Também é possível arrastar o conteúdo do painel de linha do tempo para percorrer os eventos registrados.  
   
@@ -146,7 +130,7 @@ A partir do Visual Studio 2017, esses dados podem ser abertos com o [GPUView](/w
   
 3.  Em **Configuração de Criação de Perfil da GPU**, na página de propriedades **Geral**, desmarque a caixa de seleção **Iniciar a criação de perfil após a inicialização do aplicativo** para adiar a criação de perfil.  
   
-     ![Configurar o início da coleta de Uso de GPU](~/profiling/media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
+     ![Configurar o início da coleta de Uso de GPU](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 >  Não há suporte para o adiamento da criação de perfil em aplicativos Direct3D 12.  

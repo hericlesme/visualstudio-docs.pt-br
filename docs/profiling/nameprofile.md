@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - NameProfile
 - NameProfileA
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 65681e7d5628c934a87eacb1239733e99f877094
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 474ba0510194590a199c9a418eef2a46888342f8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="nameprofile"></a>NameProfile
 A função `NameProfile` atribui uma cadeia de caracteres ao thread ou processo especificado.  
@@ -78,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Identificador de nível de criação de perfil. Use o identificador de processo ou thread que é gerado pelo sistema.  
   
 ## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
- A função indica êxito ou falha usando a enumeração de **PROFILE_COMMAND_STATUS**. O valor retornado pode ser um dos seguintes:  
+ A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  
@@ -104,12 +89,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="net-framework-equivalent"></a>Equivalente ao .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## <a name="function-information"></a>Informações de Função  
+## <a name="function-information"></a>Informações de função  
   
 |||  
 |-|-|  
-|**Cabeçalho**|Incluir VSPerf.h|  
-|**Biblioteca**|Usar VSPerf.lib|  
+|**Header**|Inclui VSPerf.h|  
+|**Library**|Use VSPerf.lib|  
 |**Unicode**|Implementado como `NameProfileW` (Unicode) e `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Exemplo  

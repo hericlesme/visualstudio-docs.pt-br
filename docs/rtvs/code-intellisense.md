@@ -1,27 +1,24 @@
 ---
 title: "IntelliSense para código R Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d96e3677-e5ec-4e11-82a8-d914a93b1aa9
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 821f92f7a3cf0e5ca1d647890602ec17e580b36b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 4e96184aa9a7711a7c046eb886049563dd308433
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="intellisense"></a>IntelliSense
 
 O Visual Studio IntelliSense exibe informações sobre funções que você pode chamar, membros dos objetos, argumentos de função e [trechos de código](code-snippets.md) diretamente em sua exibição ao escrever código. Ele também exibe preenchimentos possíveis enquanto você digita e termina quando você pressiona as teclas Tab ou Enter (consulte [opções do editor](code-editing.md#editor-options) da guia **Avançado**). O IntelliSense está disponível no editor e na [janela interativa](interactive-repl.md).
@@ -69,4 +66,3 @@ O IntelliSense também se aplica a variáveis no mesmo arquivo e na sessão atua
 Quando uma lâmpada (chamada de smart tag) aparece na margem, o Visual Studio está sugerindo que um atalho está disponível para uma ação bastante usada. Por exemplo, passe o mouse sobre uma linha que contém uma instrução `library` no editor para ver uma lâmpada. Selecionar a lâmpada exibe as opções disponíveis:
 
 ![Smart tags para R no editor](media/intellisense-smart-tags.png)
-

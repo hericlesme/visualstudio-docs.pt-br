@@ -4,41 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.VBDefaults
+f1_keywords: VS.ToolsOptionsPages.Projects.VBDefaults
 helpviewer_keywords:
 - Option Explicit statement, setting in the IDE
 - Option Compare statement, setting in the IDE
 - Option Strict statement, setting in the IDE
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f0069432ee36bb1e6830f36f60c435471e2a521b
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7765323944508eb0d739703bcb78dcf2cdfe08c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Caixa de diálogo Padrões do Visual Basic, Projetos, Opções
 Especifica as configurações padrão para opções de projeto do Visual Basic. Quando um novo projeto é criado, as instruções da opção especificada serão adicionadas ao cabeçalho do projeto no Editor de Códigos. As opções se aplicam a todos os projetos do Visual Basic.  

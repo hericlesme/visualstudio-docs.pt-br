@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3573d4004f6a88984465a3bbae181fcbdf4e52f8
-
+ms.openlocfilehash: 61128255cfc7eb8cf3e9da50e31a10378f321b87
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usando métodos da criação de perfil para coletar dados de desempenho a partir da linha de comando
 A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferramentas de Criação de Perfil, ferramentas e opções de linha de comando depende de fatores como o tipo de aplicativo para o qual você está criando um perfil, o método de criação de perfil que você deseja usar e se o aplicativo de destino é gravado no formato nativo ou em código [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
@@ -49,7 +34,7 @@ A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferrament
   
  [Adicionando dados de interação de camadas a uma execução de criação de perfil](#BKMK_Adding_tier_interaction_data_to_a_profiling_run)  
   
-##  <a name="a-namebkmkusingthesamplingmethodtocollectperformancestatisticsa-using-the-sampling-method-to-collect-performance-statistics"></a><a name="BKMK_Using_the_sampling_method_to_collect_performance_statistics"></a> Usando o método de amostragem para coletar estatísticas de desempenho  
+##  <a name="BKMK_Using_the_sampling_method_to_collect_performance_statistics"></a> Usando o método de amostragem para coletar estatísticas de desempenho  
  O método de amostragem das Ferramentas de Criação de Perfil coleta dados de desempenho em intervalos especificados em uma execução de criação de perfil. A amostragem de dados pode fornecer informações sobre problemas de desempenho vinculados à CPU e pode ser uma boa maneira de começar a explorar o desempenho de um aplicativo.  
   
  Você pode iniciar o criador de perfil e o aplicativo ao mesmo tempo ou anexar o criador de perfil a uma instância de um aplicativo em execução.  
@@ -59,7 +44,7 @@ A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferrament
 |**Iniciar um aplicativo**|-   [Aplicativos Autônomos](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
 |**Anexar a um processo em execução**|-   [Aplicativos Autônomos do .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Aplicativos Autônomos Nativos](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [Aplicativos Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Serviços .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [Serviços Nativos](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
-##  <a name="a-namebkmkusingtheinstrumentationmethodtocollectdetailedtimingdataa-using-the-instrumentation-method-to-collect-detailed-timing-data"></a><a name="BKMK_Using_the_instrumentation_method_to_collect_detailed_timing_data"></a> Usando o método de instrumentação para coletar dados de tempo detalhados  
+##  <a name="BKMK_Using_the_instrumentation_method_to_collect_detailed_timing_data"></a> Usando o método de instrumentação para coletar dados de tempo detalhados  
  O método de instrumentação das Ferramentas de Criação de Perfil coleta dados de desempenho de cópias de binários de aplicativos que contêm sondas de software para gravar informações de desempenho. Dados de instrumentação são coletados no início e no final de cada função instrumentada e em cada chamada para outras funções da função instrumentada. O método de instrumentação é útil para descobrir problemas de desempenho com E/S, como o uso do disco.  
   
  O binário instrumentado é criado com a ferramenta [VInstr.exe](../profiling/vsinstr.md). Depois de inicializar o criador de perfil, os dados são coletados automaticamente dos binários instrumentados ao executar o aplicativo de destino.  
@@ -78,7 +63,7 @@ A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferrament
   
 -   [Serviços Nativos](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)  
   
-##  <a name="a-namebkmkusingnetmemorymethodstocollectmemoryallocationandobjectlifetimedataa-using-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a><a name="BKMK_Using__NET_memory_methods_to_collect_memory_allocation_and_object_lifetime_data"></a> Usando métodos de memória do .NET para coletar alocação de memória e dados de tempo de vida do objeto  
+##  <a name="BKMK_Using__NET_memory_methods_to_collect_memory_allocation_and_object_lifetime_data"></a> Usando métodos de memória do .NET para coletar alocação de memória e dados de tempo de vida do objeto  
  O método de memória do .NET das Ferramentas de Criação de Perfil permite que você colete dados de alocação de memória [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e informações sobre o tempo de vida de objetos no [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
  É possível iniciar o aplicativo de destino usando o criador de perfil; anexar o criador de perfil a uma instância em execução de um aplicativo; e criar versões instrumentadas do aplicativo para coletar informações detalhadas de tempo junto com os dados de memória [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
@@ -89,7 +74,7 @@ A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferrament
 |**Anexar a um processo em execução**|-   [Aplicativos Autônomos do .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Aplicativos Web ASP.NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [Serviços .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Módulos de instrumento**|-   [Componentes Autônomos do .NET Framework](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)<br />-   [Aplicativos Web do ASP.NET Compilados Estaticamente](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Aplicativos Web do ASP.NET Compilados Dinamicamente](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [Serviços .NET](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
-##  <a name="a-namebkmkusingtheconcurrencymethodtocollectresourcecontentionandthreadactivitydataa-using-the-concurrency-method-to-collect-resource-contention-and-thread-activity-data"></a><a name="BKMK_Using_the_concurrency_method_to_collect_resource_contention_and_thread_activity_data"></a> Usando o método de simultaneidade para coletar dados de contenção de recursos e de atividade de thread  
+##  <a name="BKMK_Using_the_concurrency_method_to_collect_resource_contention_and_thread_activity_data"></a> Usando o método de simultaneidade para coletar dados de contenção de recursos e de atividade de thread  
  O método de simultaneidade das Ferramentas de Criação de Perfil permite que você colete dados de contenção de recursos, thread e atividade de processos de aplicativos com multithread.  
   
  Você pode iniciar o aplicativo por meio do criador de perfil ou anexar o criador de perfil a uma instância em execução de um aplicativo.  
@@ -99,15 +84,10 @@ A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferrament
 |**Iniciar um aplicativo**|-   [Aplicativo Autônomo do .NET Framework](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplicativo Autônomo Nativo](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
 |**Anexar a um processo em execução**|-   [Aplicativo Autônomo do .NET Framework](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplicativo Autônomo Nativo](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Aplicativo Web ASP .NET](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Serviço do .NET](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [Serviço Nativo](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
-##  <a name="a-namebkmkaddingtierinteractiondatatoaprofilingruna-adding-tier-interaction-data-to-a-profiling-run"></a><a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> Adicionando dados de interação de camadas a uma execução de criação de perfil  
+##  <a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> Adicionando dados de interação de camadas a uma execução de criação de perfil  
  Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Consulte [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

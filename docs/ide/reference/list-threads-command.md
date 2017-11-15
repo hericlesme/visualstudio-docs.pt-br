@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- debug.listthreads
+f1_keywords: debug.listthreads
 helpviewer_keywords:
 - ListThreads command
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3830f86f539c28dde1fadf94f1e71ecb066763be
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fa71ec1c6eb8ac50d957782dda02a2c3fb59a3c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
 Exibe uma lista dos threads no programa atual.  

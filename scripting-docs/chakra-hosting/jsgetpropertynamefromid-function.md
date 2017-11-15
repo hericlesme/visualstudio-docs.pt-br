@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetPropertyNameFromId
-helpviewer_keywords:
-- JsGetPropertyNameFromId function
+f1_keywords: jsrt/JsGetPropertyNameFromId
+helpviewer_keywords: JsGetPropertyNameFromId function
 ms.assetid: b4ca442c-573d-4bc3-adf7-1b8d48480b3a
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 9f14851a52f4e6de1e2702ad11eab20bf448a048
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetpropertynamefromid-function"></a>Função JsGetPropertyNameFromId
 Obtém o nome associado à ID da propriedade.  

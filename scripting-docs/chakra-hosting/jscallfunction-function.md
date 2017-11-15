@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsCallFunction
-helpviewer_keywords:
-- JsCallFunction function
+f1_keywords: jsrt/JsCallFunction
+helpviewer_keywords: JsCallFunction function
 ms.assetid: 8a1dca72-d720-4a28-a86e-6809465006fe
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: cb4ed76fbd387c16a78dae12c519e7a22c185243
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscallfunction-function"></a>Função JsCallFunction
 Invoca uma função.  

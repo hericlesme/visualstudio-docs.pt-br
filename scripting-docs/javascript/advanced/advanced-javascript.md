@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - recursive procedures, JavaScript
 ms.assetid: ea26b6a1-e5c6-40d5-ac33-3961f584f941
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 8d28050e89b37fc6c2066b599e27789f0bebfd35
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="advanced-javascript"></a>Avançado JavaScript
 Estas seções explicam a funcionalidade avançada da linguagem [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], como recursão, matrizes e solução de problemas, entre outros.  

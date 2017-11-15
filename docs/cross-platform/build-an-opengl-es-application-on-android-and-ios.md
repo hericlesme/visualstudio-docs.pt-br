@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-caps.latest.revision: 5
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "5"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 148a64927d78db8ccf473fc0cc74c5a8df953c03
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 80463925da89165a569b1e6317ef8b1b22c77514
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Criar um aplicativo OpenGL ES no Android e iOS
 Ao instalar a opção Visual C++ para Desenvolvimento Móvel Multiplataforma, você pode criar soluções e projetos do Visual Studio para aplicativos iOS e Android que compartilhem código comum. Este tópico o conduz pelo modelo de solução que cria tanto um aplicativo iOS simples quanto um aplicativo de Atividade Nativa do Android. Os aplicativos têm código C++ em comum que usa o OpenGL ES para exibir o mesmo cubo de rotação animado em cada plataforma. O OpenGL ES (GLES [OpenGL para Sistemas Incorporados]) é uma API gráfica 2D e 3D que tem suporte em vários dispositivos móveis.  
@@ -109,7 +91,7 @@ Ao instalar a opção Visual C++ para Desenvolvimento Móvel Multiplataforma, vo
   
      O Visual Studio inicia o emulador, que leva vários segundos para carregar e implantar o código. É assim que o aplicativo aparece no Emulador do Visual Studio para Android.  
   
-     ![Aplicativo em execução no Emulador do Android](~/cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
+     ![Aplicativo em execução no Emulador do Android](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")  
   
      Quando o aplicativo tiver sido iniciado, você poderá definir pontos de interrupção e usar o depurador para executar o código em etapas, examinar os locais e inspecionar os valores.  
   
@@ -150,7 +132,7 @@ Ao instalar a opção Visual C++ para Desenvolvimento Móvel Multiplataforma, vo
   
      Quando seu aplicativo tiver sido iniciado, você poderá definir pontos de interrupção e usar o depurador do Visual Studio para examinar locais, consultar a pilha de chamadas e inspecionar os valores.  
   
-     ![Depurador no ponto de interrupção no aplicativo iOS](~/cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
+     ![Depurador no ponto de interrupção no aplicativo iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
   
 5.  Pressione Shift + F5 para parar a depuração.  
   

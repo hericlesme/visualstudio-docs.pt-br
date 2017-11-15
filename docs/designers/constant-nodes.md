@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1350102a88e9c96e0a128c48ce04611fb6d83887
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a47eb4e129ac90e8a397c936922a8cc3aeb80277
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="constant-nodes"></a>Nós de constante
 No Designer do Sombreador, nós constantes representam valores literais e atributos de vértice interpolados em cálculos do sombreador de pixel. Como os atributos de vértice são interpolados — e, portanto, são diferentes para cada pixel — cada instância de sombreador de pixel recebe uma versão diferente da constante. Isso dá a cada pixel uma aparência única.  

@@ -4,37 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, incremental builds
+helpviewer_keywords: msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 4b69ac4348511a831372d3002f873f26dfc2bcb2
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 978f1d43e278a6e8a112151221bda0a828b92f7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="incremental-builds"></a>Builds incrementais
 Os builds incrementais são builds que são otimizados para que os destinos que têm arquivos de saída que estão atualizados em relação aos seus arquivos de entrada correspondentes não sejam executados. Um elemento de destino pode ter um atributo de `Inputs`, que indica quais itens o destino espera como entrada e um atributo de `Outputs`, que indica quais itens ele gera como saída. O MSBuild tenta localizar um mapeamento de 1 para 1 entre os valores desses atributos. Se existir um mapeamento de 1 para 1, o MSBuild comparará o carimbo de hora de cada item de entrada com o carimbo de hora do seu item de saída correspondente. Arquivos de saída que não tenham nenhum mapeamento de 1 para 1 são comparados com todos os arquivos de entrada. Um item será considerado atualizado se seu arquivo de saída tiver a mesma idade ou for mais recente que seu arquivo ou arquivos de entrada.  

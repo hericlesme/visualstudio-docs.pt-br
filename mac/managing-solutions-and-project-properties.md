@@ -1,20 +1,19 @@
 ---
-title: "Gerenciando propriedades de solução e projeto"
+title: "Gerenciando propriedades de solução e projeto | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
+ms.openlocfilehash: 8871ab002a94a9c0bbc0063a25b4dea9cb271142
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: fefb6c5e67b21907150611b3639cc16c05812e1a
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-project-and-solution-properties"></a>Gerenciando propriedades de solução e projeto
 
-## <a name="project-options"></a>Opções do projeto 
+## <a name="project-options"></a>Opções do projeto
 
 As opções de projeto são específicas para cada projeto e afetam como ele é escrito, criado e executado. Isso contrasta com as Preferências do Visual Studio para Mac, que definem opções específicas do usuário, e com as Opções da solução, que definem as opções para toda a solução. As opções do projeto são armazenadas no arquivo de projeto (.csproj), para que outros desenvolvedores possam compilar e executar o projeto corretamente. Isso permite que vários desenvolvedores trabalhem no mesmo documento sem comprometer a formatação do arquivo.
 
@@ -45,4 +44,3 @@ O Xamarin.iOS conterá opções relacionadas à assinatura do pacote, tais como 
 As opções da solução são como as Opções do projeto, mas abrangem todas as Soluções em seu escopo. Elas fornecem uma maneira de definir informações de criador, configurações de build, estilos de formatação de código e controle de versão, e proporcionam uma maneira de atribuir o projeto de inicialização na Solução.  A caixa de diálogo Opções da Solução pode ser acessada no item de menu **Projeto > Opções de Solução**, no item de menu de contexto **Opções** na Solução no Painel de soluções ou clicando duas vezes na Solução no Painel de Soluções:
 
  ![Opções da Solução](media/projects-and-solutions-image7.png)
-

@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Modules view
+helpviewer_keywords: Modules view
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 672b6066dd426135a6feea3b5df9cebf0855927d
-
+ms.openlocfilehash: f572075106d815a791ca59fa2b35a31918f02bd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Exibição Módulos – Dados de amostragem de memória do .NET
 A exibição Módulos de dados de alocação de memória do .NET coletados usando o método de amostragem agrupa os dados de memória pelos módulos que foram executados na execução de criação de perfil. Cada módulo é a raiz de uma árvore hierárquica. As funções do módulo são listadas abaixo do nó do módulo.  
@@ -63,8 +47,3 @@ A exibição Módulos de dados de alocação de memória do .NET coletados usand
  [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Exibição Módulos](../profiling/modules-view-sampling-data.md)   
  [Exibição Módulos](../profiling/modules-view-instrumentation-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

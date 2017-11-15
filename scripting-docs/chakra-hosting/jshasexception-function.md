@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsHasException
-helpviewer_keywords:
-- JsHasException function
+f1_keywords: jsrt/JsHasException
+helpviewer_keywords: JsHasException function
 ms.assetid: ac7da3ce-c746-4154-bbb8-bcb0859a8d5b
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 32334f4b8787bebaffb9553fcdd40f85334462cb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jshasexception-function"></a>Função JsHasException
 Determina se o tempo de execução do contexto atual está em um estado de exceção.  

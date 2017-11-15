@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSetException
-helpviewer_keywords:
-- JsSetException function
+f1_keywords: jsrt/JsSetException
+helpviewer_keywords: JsSetException function
 ms.assetid: c528793a-2e1b-4ee1-bd2e-e63fd547dc40
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 5d8fce71f14dedea02e1809fb72281f575f60604
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jssetexception-function"></a>Função JsSetException
 Define o tempo de execução do contexto atual para um estado de exceção.  

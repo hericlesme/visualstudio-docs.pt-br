@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,15 @@ helpviewer_keywords:
 - performance tools, walkthroughs
 - performance tools, command-line tools
 ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d6de37cfc07f1ed45124ef176fc66a1c70c432ef
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Instruções passo a passo: criação de perfil de linha de comando usando instrumentação
 Este passo a passo leva você pela criação de perfil de um aplicativo autônomo [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Para coletar dados detalhados de tempo e contagem de chamadas usando o método de instrumentação das ferramentas de criação de perfil. Nesta explicação passo a passo, você concluirá as seguintes tarefas:  

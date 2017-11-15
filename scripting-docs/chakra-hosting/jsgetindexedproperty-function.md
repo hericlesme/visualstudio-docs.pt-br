@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetIndexedProperty
-helpviewer_keywords:
-- JsGetIndexedProperty function
+f1_keywords: jsrt/JsGetIndexedProperty
+helpviewer_keywords: JsGetIndexedProperty function
 ms.assetid: f61ea388-0ae6-4a19-b3b5-75ed49a3f32d
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 952681d72eb3cf9a5156484711a2c93d0d6ea90c
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetindexedproperty-function"></a>Função JsGetIndexedProperty
 Recupere o valor no índice especificado de um objeto.  

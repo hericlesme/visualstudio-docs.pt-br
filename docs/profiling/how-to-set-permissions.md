@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,29 +14,15 @@ helpviewer_keywords:
 - profiling tools, setting profiling permissions
 - performance tools, setting profiling permissions
 ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 47740d94354ee4849c337896e028655d6c729f8c
-
+ms.openlocfilehash: dcdf2ff51c0ed1aeb667c33a519d540251799c01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-set-permissions"></a>Como definir permissões
 Este tópico descreve como um Administrador de um computador concede as permissões de segurança necessárias para a criação de perfil para um usuário ou grupo que não tenha permissões de Administrador no computador.  
@@ -145,8 +130,3 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -1,27 +1,24 @@
 ---
 title: Ferramentas R para Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
 ms.assetid: 11324501-ceb6-47a2-ae13-e9e992d3603e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 693b070974c86babcfb57f71d37aa7eb030aac90
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 80a10c710aac8413bd59b53bb61de7a982c09952
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-r-in-visual-studio"></a>Trabalho com o R no Visual Studio
 
 O R é uma linguagem altamente extensível e um ambiente para gráficos e computação estatística. Ele é distribuído gratuitamente sob a Licença Pública Geral GNU, dispõe de suporte à comunidade forte e é conhecido por sua capacidade de gerar plotagens de qualidade de publicação incluindo fórmulas e símbolos matemáticos. Você pode saber mais sobre o R em [r-project.org](https://www.r-project.org/about.html) e [Uma introdução ao R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
@@ -126,4 +123,3 @@ R. Não, o Visual Studio não dá suporte ao carregamento de projetos de um comp
 1. **Envie um Smiley/Rosto Triste**: o menu **Ferramentas R > Comentários** é uma maneira rápida de enviar comentários e anexar arquivos de log das RTVS para auxiliar no diagnóstico do seu problema. (Os logs serão registrados nos `%temp%/RTVSlogs.zip` caso você queira enviá-los separadamente.) O log será desabilitado se você tiver cancelado a telemetria do Visual Studio por meio do comando de menu **Ajuda > Comentários > Configurações** ou durante a instalação.
 
 1. **Email**: você pode enviar comentários diretos para a equipe em *rtvsuserfeedback (arroba) microsoft.com*.
-

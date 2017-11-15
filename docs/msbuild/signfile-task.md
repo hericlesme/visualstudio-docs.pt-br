@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#SignFile
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#SignFile
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - MSBuild, SignFile task
 - SignFile task [MSBuild]
 ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 93596a9630405ac5dfddf23ae2ec960373bef93f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f2e09933d8e1bcfc8e29712a78fe3b2454e42117
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="signfile-task"></a>Tarefa SignFile
 Assina o arquivo especificado usando o certificado especificado.  
@@ -57,7 +41,7 @@ Assina o arquivo especificado usando o certificado especificado.
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
 |`CertificateThumbprint`|Parâmetro `String` obrigatório.<br /><br /> Especifica o certificado a ser usado para a assinatura. Esse certificado deve estar no repositório pessoal do usuário atual.|  
-|`SigningTarget`|Parâmetro obrigatório <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Especifica os arquivos a serem assinados com o certificado.|  
+|`SigningTarget`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica os arquivos a serem assinados com o certificado.|  
 |`TimestampUrl`|Parâmetro `String` opcional.<br /><br /> Especifica a URL de um servidor de carimbo de data/hora.|  
 |`TargetFrameworkVersion`|A versão do .NET Framework que é usada para o destino.|  
   

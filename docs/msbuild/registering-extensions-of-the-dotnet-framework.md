@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - MSBuild, registering extensions of the .NET Framework
 - .NET Framework extensions, registering
 ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 075542b0aa93e1366cf170884228bff5d0007a33
-
+ms.openlocfilehash: ccffad8637f032993c71efa2eca3ba7d14e6e88a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>Registrando extensões do .NET Framework
 Você pode desenvolver um assembly que estende uma versão específica do .NET Framework. Para habilitar o assembly a ser exibido na caixa de diálogo **Adicionar Referências** do Visual Studio, você deve adicionar a pasta que contém o Registro do sistema.  
@@ -51,8 +36,3 @@ Você pode desenvolver um assembly que estende uma versão específica do .NET F
   
 ## <a name="see-also"></a>Consulte também  
  [Integração com o Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

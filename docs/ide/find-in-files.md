@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,29 +20,15 @@ helpviewer_keywords:
 - files, searching
 - Find in Files tab, Find and Replace window
 ms.assetid: 989e0737-46d7-4474-8453-fad52a74669d
-caps.latest.revision: 41
-author: kempb
-ms.author: kempb
+caps.latest.revision: "41"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d8aa8b3c804f5d06f6050280e34743f96d2f92fa
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: be7da7a50003b302bf6ce8b211ff7f67d70b3e5f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="find-in-files"></a>Localizar em Arquivos
 O **Localizar nos Arquivos** permite pesquisar um conjunto de arquivos especificado. As correspondências encontradas e as ações executadas são listadas na janela **Localizar Resultados** selecionada em **Opções de resultado**.  

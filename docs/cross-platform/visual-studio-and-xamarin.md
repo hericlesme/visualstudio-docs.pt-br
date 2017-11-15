@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 78da5ca77ee2d6a8bd933907edbe5f921af4e2bc
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: e84f946915328eb0ee5a49e690b2ee520d29e968
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio e Xamarin
 O Xamarin é uma plataforma de desenvolvimento de aplicativos móveis para compilar aplicativos nativos iOS, Android e Windows de uma base C#/.NET comum, atingindo 75% a quase 100% de reutilização de código entre plataformas. Aplicativos gravados com Xamarin e C# têm acesso completo às APIs da plataforma subjacente e a capacidade de compilar interfaces do usuário nativas e compilar para pacotes específicos de plataforma, portanto não há muito impacto no desempenho de tempo de execução. (Observação: o Xamarin também dá suporte a F#, mas essa documentação se concentra somente em C#. No momento, não há suporte para o Visual Basic.)  

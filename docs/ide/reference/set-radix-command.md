@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- debug.setradix
+f1_keywords: debug.setradix
 helpviewer_keywords:
 - Set Radix command
 - Debug.SetRadix command
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b663af10d0ff0bd8a428bbb6cf724d847bff284e
-
+ms.openlocfilehash: 060221e5abe0ff9082a04f8b75561a7e4dec9f64
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="set-radix-command"></a>Comando Definir Base
 Define ou retorna a base numérica usada para exibir valores inteiros.  
@@ -63,8 +47,3 @@ Debug.SetRadix [10 | 16 | hex | dec]
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

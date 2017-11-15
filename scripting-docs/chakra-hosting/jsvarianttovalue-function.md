@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsVariantToValue
-helpviewer_keywords:
-- JsVariantToValue function
+f1_keywords: jsrt/JsVariantToValue
+helpviewer_keywords: JsVariantToValue function
 ms.assetid: e8f9eb8b-55b3-4b65-927e-cad5b482edee
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: fc778d87aab7e80e7c1b04a68c2d3b9c6fdd885a
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsvarianttovalue-function"></a>Função JsVariantToValue
 Cria um valor de JavaScript que é uma projeção do `VARIANT` passado.  

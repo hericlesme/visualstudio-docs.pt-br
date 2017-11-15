@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - sampling profiling method
 - Profiling Tools, sampling
 ms.assetid: fad540a8-24b6-4ff9-91ce-e67e9a58399d
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e5da15afad275b789af821ac528062556acdd69d
-
+ms.openlocfilehash: 761f08adead5037056e07031903517e4f5d76744
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="understanding-sampling-data-values"></a>Noções básicas sobre valores de dados de amostragem
 O método de criação de perfil de *amostragem* das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ferramentas de criação de perfil interrompe o processador do computador em intervalos definidos e coleta a pilha de chamadas de função. Uma *pilha de chamadas* é uma estrutura dinâmica que armazena informações sobre as funções que estão em execução no processador.  
@@ -70,8 +55,3 @@ O método de criação de perfil de *amostragem* das [!INCLUDE[vsprvs](../code-q
 ## <a name="see-also"></a>Consulte também  
  [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)   
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

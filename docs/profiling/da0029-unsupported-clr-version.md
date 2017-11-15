@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,29 +15,15 @@ helpviewer_keywords:
 - vs.performance.DA0029
 - vs.performance.rules.DA0029
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3a0c1282b691601ba09e9a6d611f2800d068a2ef
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: dfc7d33396825263a5fd846c62426fa67509e0da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: versão do CLR sem suporte
 |||  

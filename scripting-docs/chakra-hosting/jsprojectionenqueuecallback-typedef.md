@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: reference
 ms.assetid: 19c1cefb-a7be-4196-b780-9fe6adf35ba5
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: bda4a3a80edac38ab2c3885c2256cdf9d03eb8c1
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsprojectionenqueuecallback-typedef"></a>Typedef JsProjectionEnqueueCallback
 O retorno de chamada de aplicativo que é chamado por JsRT quando uma API de projeção é concluída em um thread diferente do original.  

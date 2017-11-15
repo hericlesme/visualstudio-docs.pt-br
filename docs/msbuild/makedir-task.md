@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#MakeDir
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#MakeDir
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - MakeDir task [MSBuild]
 - MSBuild, MakeDir task
 ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 1c4f732fe3d44afcfb81a75ff3b0f1aa13a1c7f5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d010e6ad8aaae06476a94c1589a4f69cf50c8ddc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="makedir-task"></a>Tarefa MakeDir
 Cria diretórios e, se necessário, qualquer diretório pai.  
@@ -55,7 +39,7 @@ Cria diretórios e, se necessário, qualquer diretório pai.
 |`DirectoriesCreated`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Os diretórios que são criados por essa tarefa. Se alguns diretórios não puderem ser criados, pode ser que não contenha todos os itens que foram passados para o parâmetro `Directories`.|  
   
 ## <a name="remarks"></a>Comentários  
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que, por sua vez, herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemplo  
  O seguinte exemplo de código usa a tarefa `MakeDir` para criar o diretório especificado pela propriedade `OutputDirectory`.  

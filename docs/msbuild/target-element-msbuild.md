@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Target
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
 - VB
 - CSharp
@@ -19,31 +17,15 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-caps.latest.revision: 34
+caps.latest.revision: "34"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 7d00a2954b3c354aa5325e72574e95ebce0a8a2b
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ed3af7142d556c52fbed71f03d5cc53eb3025035
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executar em sequência.  
@@ -139,4 +121,3 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
 ## <a name="see-also"></a>Consulte também  
  [Destinos](../msbuild/msbuild-targets.md)   
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
-

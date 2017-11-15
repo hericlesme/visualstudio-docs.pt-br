@@ -4,33 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: 11
+caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 69bea86fb806ac0b4d67a66134f6553e26e6542f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Teste de unidade de aplicativos do C++ existentes com Gerenciador de Testes
 Recomendamos que, antes de alterar um aplicativo existente, você verifique se ele tem uma boa cobertura com testes de unidade. Isso dá a garantia de que as alterações não introduziram bugs. Se o aplicativo ainda não tem testes de unidade, você pode adicioná-los usando as técnicas demonstradas neste tópico. Este tópico descreve como adicionar testes de unidade para código existente do Visual C++, iniciando com a decisão de como testar seu código e, em seguida, criando, escrevendo e executando os testes.  
@@ -182,4 +167,3 @@ Recomendamos que, antes de alterar um aplicativo existente, você verifique se e
 2.  No Gerenciador de Testes, escolha **Executar Todos**.  
   
  Para saber mais, confira [Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md).
-

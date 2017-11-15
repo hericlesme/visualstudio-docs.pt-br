@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetValueType
-helpviewer_keywords:
-- JsGetValueType function
+f1_keywords: jsrt/JsGetValueType
+helpviewer_keywords: JsGetValueType function
 ms.assetid: f403cf7c-c8c0-4a17-bfa9-0302d00e760e
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: bba54f2adebc281d5d9fc97748d1059757ee3bc8
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetvaluetype-function"></a>Função JsGetValueType
 Obtém o tipo de JavaScript de um JsValueRef.  

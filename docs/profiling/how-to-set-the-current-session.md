@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,29 +16,15 @@ helpviewer_keywords:
 - performance tools, setting current performance session
 - sessions, setting multiple
 ms.assetid: a593e551-18ec-46fd-bfd5-8a045165a334
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f00bcb579d2f3a6d8fd860aed7d41f3d67f164d5
-
+ms.openlocfilehash: 800b3f24db41ae2a76da5e3f2d1c1417b7486416
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-set-the-current-session"></a>Como definir a sessão atual
 Você pode abrir várias sessões de desempenho no **Gerenciador de Desempenho** e, em seguida, pode selecionar uma das sessões de desempenho visível para ser definida como a sessão atual.  
@@ -61,8 +46,3 @@ Você pode abrir várias sessões de desempenho no **Gerenciador de Desempenho**
  [Janela do Gerenciador de Desempenho](../profiling/performance-explorer-window.md)   
  [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)   
  [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

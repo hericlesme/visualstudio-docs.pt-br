@@ -4,36 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
 ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
-caps.latest.revision: 25
+caps.latest.revision: "25"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5897d209c050f73ed54378981bdab700ec5c251d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bb22521dc0c4f4a1a824c3554ce37297a61108c5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Executar um teste de unidade como um processo de 64 bits
 Se você tiver um computador de 64 bits, você poderá executar testes de unidade e capturar informações de cobertura de código como um processo de 64 bits.  
@@ -57,4 +42,3 @@ Se você tiver um computador de 64 bits, você poderá executar testes de unidad
  [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)   
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)   
  [Especificando configurações de teste para testes do Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
-

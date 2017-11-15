@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,29 +18,15 @@ helpviewer_keywords:
 - CvWriteFlagExA method
 - CvWriteFlagExVW method
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 07c492e462afeb60c41f9d48acf16c185bac42c1
-
+ms.openlocfilehash: 8b93fc7f8ce9b031b4ddb650c09b570ecb29a727
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="cvwriteflag-function"></a>Função CvWriteFlag
 Grava um sinalizador para o arquivo de rastreamento da Visualização Simultânea.  
@@ -108,8 +93,3 @@ HRESULT CvWriteFlagExVA(
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de biblioteca C++](../profiling/cpp-library-reference.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

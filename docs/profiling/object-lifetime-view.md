@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.objectlifetime
+f1_keywords: vs.performance.view.objectlifetime
 helpviewer_keywords:
 - lifetime, objects
 - Objects Lifetime view
@@ -17,29 +15,15 @@ helpviewer_keywords:
 - performance reports, objects lifetime view
 - profiling tools, Lifetime view
 ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 900746516ebc524725da0eff59cd5a2dcb9ed4ca
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b60a28d7422125a745cf1b088891b2675da0bc8a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
 A exibição de Tempo de vida do objeto está disponível quando **Também coletar dados de tempo de vida do objeto .NET** estiver marcada nas páginas de propriedade de Sessão de desempenho.  

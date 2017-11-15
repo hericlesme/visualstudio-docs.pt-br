@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - ByVal argument
 - string comparison, testing data
 ms.assetid: fbccd877-7249-45d4-bd9f-6bcd8ba94a6b
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: c3cf980ca1dfd0c0e09871b6de9756cb2a10364b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="copying-passing-and-comparing-data-javascript"></a>Copiando, transmitindo e comparando dados (JavaScript)
 No [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], a maneira como os dados são identificados depende do tipo de dados.  

@@ -1,27 +1,24 @@
 ---
 title: REPL do IPython no Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c9bd06b0-2021-4e55-b933-8346476224a8
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: fce859ff47d28a7de44c63f5dd4e52cfb58478f1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 9553aa4944f652c7b8505b0d99d5c2b88167f872
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="using-ipython-in-the-interactive-window"></a>Usando o IPython na Janela Interativa
 
 A janela interativa do Visual Studio no modo IPython é um ambiente avançado de desenvolvimento interativo, porém amigável, que contém recursos de Computação Paralela Interativa. Este tópico percorre o uso de IPython na janela interativa do Visual Studio, na qual todos os recursos normais de [janela interativa](interactive-repl.md) também estão disponíveis.
@@ -87,4 +84,3 @@ O IPython tem muitos outros recursos úteis, como escape para o shell do sistema
 - Para usar o Jupyter facilmente e sem instalação, experimente o [serviço hospedado dos Notebooks do Azure](https://notebooks.azure.com/) que permitem que você mantenha e compartilhe seus blocos de anotações com outras pessoas.
 
 - Você também pode executar o Jupyter (anteriormente conhecido como IPython) em sua própria máquina virtual Windows ou Linux no Azure. Para obter detalhes, consulte [Criando uma VM do Azure, instalando o Jupyter e executando um Notebook do Jupyter no Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
-

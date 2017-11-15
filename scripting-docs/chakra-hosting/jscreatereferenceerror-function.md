@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsCreateReferenceError
-helpviewer_keywords:
-- JsCreateReferenceError function
+f1_keywords: jsrt/JsCreateReferenceError
+helpviewer_keywords: JsCreateReferenceError function
 ms.assetid: 1d0b2339-4bea-4dd0-a46a-4dcbf0be3bd8
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 2e808b268b6b3896480556206479c843bc4b329f
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscreatereferenceerror-function"></a>Função JsCreateReferenceError
 Cria um novo objeto de erro ReferenceError do JavaScript  

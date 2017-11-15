@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vc.task.cppclean
+f1_keywords: vc.task.cppclean
 dev_langs:
 - VB
 - CSharp
@@ -20,29 +18,15 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CPPClean task
 - CPPClean task (MSBuild (Visual C++))
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8e5ec41f8471180273e366c2d303a6379aab089f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 437b4a7e6b1a8e92b4409188655dccdfcb1baf50
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="cppclean-task"></a>Tarefa CPPClean
 Exclui os arquivos temporários criados pelo MSBuild quando projeto do Visual C++ é compilado. O processo de exclusão de arquivos de build é conhecido como *limpeza*.  

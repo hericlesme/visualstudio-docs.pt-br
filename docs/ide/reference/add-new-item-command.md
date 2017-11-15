@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- project.addnewitem
+f1_keywords: project.addnewitem
 helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5962c018fba2de984fdd46df58c9c09e717d648e
-
+ms.openlocfilehash: ef0373d148d386d0b725d74ea639f1b8b0719cc3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="add-new-item-command"></a>Comando Adicionar Novo Item
 Adiciona um novo item de solução, como um .htm, .css, .txt ou conjunto de quadros à solução atual e a abre.  
@@ -86,8 +70,3 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

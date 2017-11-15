@@ -1,11 +1,10 @@
 ---
 title: "Opções das Ferramentas do R no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 f1_keywords:
@@ -14,18 +13,16 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 ms.topic: article
 ms.assetid: 554dc602-ecad-4cd0-8e6f-a60bb8a2328f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 82e17109ff595ae566ea326dae9237274ee5ad15
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: 5777be7df1256d4fe4d34be41fb10eb546d4a0ac
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="r-tools-for-visual-studio-options"></a>Opções das Ferramentas do R para Visual Studio
  
 As configurações são acessadas por meio do menu **Ferramentas do R > Opções** ou de **Ferramentas > Opções** e rolando até **Ferramentas do R**:
@@ -112,4 +109,3 @@ Essas opções controlam como os valores são manipulados no [Gerenciador de Var
 | Salvar espaço de trabalho quando o projeto é fechado | `No` | Definir como `Yes` permite salvar o ambiente global no arquivo `.RData` quando o projeto é fechado. |
 | Mostrar caixa de diálogo de confirmação antes de alternar espaços de trabalho | `Yes` | Definir como `No` desabilita o prompt de confirmação do usuário ao alternar entre espaços de trabalho diferentes. Consulte [alternando entre espaços de trabalho](workspaces.md#switching-between-workspaces) |
  
-

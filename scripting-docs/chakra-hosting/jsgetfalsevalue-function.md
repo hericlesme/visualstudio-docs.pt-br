@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetFalseValue
-helpviewer_keywords:
-- JsGetFalseValue function
+f1_keywords: jsrt/JsGetFalseValue
+helpviewer_keywords: JsGetFalseValue function
 ms.assetid: 621a584c-4ca8-4ba0-b19a-6cb50cf830b6
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: f05f6fc6852010c4728b4dae82bcf6a74ac29992
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetfalsevalue-function"></a>Função JsGetFalseValue
 Obtém o valor de `false` no contexto de script atual.  

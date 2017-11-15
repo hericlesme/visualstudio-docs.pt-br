@@ -4,42 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ErrorList
+f1_keywords: VS.ErrorList
 helpviewer_keywords:
 - Task List
 - build errors
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: ee881a2ecb205ad01a1d8be6229947dd748cb2b7
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: d332700fc663375c9fab96d86645b5762e77d851
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
 > [!NOTE]
@@ -59,11 +42,11 @@ ms.lasthandoff: 05/24/2017
   
 -   Pesquisar termos específicos e definir o escopo da pesquisa para apenas o projeto ou o documento atual.  
   
- Para exibir a **Lista de Erros**, clique em **Exibir/Lista de Erros** ou **CTRL+\\+E**.  
+Para exibir a **Lista de Erros**, clique em **Exibir/Lista de Erros** ou **CTRL+\\+E**.  
   
- É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.  
+É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.  
   
- Para classificar a lista, clique em um cabeçalho de coluna. Para classificar novamente por uma coluna adicional, mantenha pressionada a tecla SHIFT e clique em outro cabeçalho de coluna. Para selecionar quais colunas são exibidas e ocultadas, escolha **Mostrar Colunas** no menu de atalho. Para alterar a ordem na qual as colunas são exibidas, arraste um cabeçalho de coluna para a esquerda ou direita.  
+Para classificar a lista, clique em um cabeçalho de coluna. Para classificar novamente por uma coluna adicional, mantenha pressionada a tecla SHIFT e clique em outro cabeçalho de coluna. Para selecionar quais colunas são exibidas e ocultadas, escolha **Mostrar Colunas** no menu de atalho. Para alterar a ordem na qual as colunas são exibidas, arraste um cabeçalho de coluna para a esquerda ou direita.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos aqui, dependendo da edição ou das configurações ativas. Para alterar as configurações, clique em **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -82,9 +65,9 @@ ms.lasthandoff: 05/24/2017
   
 3.  **Documento Atual**: mostre erros, avisos e mensagens para o documento atualmente selecionado no **Editor** ou no **Gerenciador de Soluções**.  
   
- Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do filtro será exibido na barra de título **Lista de Erros**. Em seguida, os botões **Erros**, **Avisos** e **Mensagens** exibem o número de itens filtrados mostrados junto com o número total de itens; por exemplo, os botões mostram x de y Erros. Se nenhum filtro for aplicado, a barra de título indicará apenas a “Lista de Erros”.  
+Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do filtro será exibido na barra de título **Lista de Erros**. Em seguida, os botões **Erros**, **Avisos** e **Mensagens** exibem o número de itens filtrados mostrados junto com o número total de itens; por exemplo, os botões mostram x de y Erros. Se nenhum filtro for aplicado, a barra de título indicará apenas a “Lista de Erros”.  
   
- A lista no lado direito da barra de ferramentas especifica se serão mostrados os erros do build (os erros resultantes de uma operação de build), do IntelliSense (erros detectados antes da execução de um build) ou ambos.  
+A lista no lado direito da barra de ferramentas especifica se serão mostrados os erros do build (os erros resultantes de uma operação de build), do IntelliSense (erros detectados antes da execução de um build) ou ambos.  
   
 ## <a name="search"></a>Pesquisar  
  Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de ferramentas **Lista de Erros** para encontrar erros específicos na lista de erros. É possível pesquisar em qualquer coluna visível na lista de erros e os resultados da pesquisa são sempre classificados de acordo com a coluna que tem a prioridade de classificação, em vez da consulta ou do filtro aplicado. Se você escolher a tecla **Esc** enquanto o foco estiver na **Lista de Erros**, será possível limpar o termo de pesquisa e os resultados da pesquisa filtrados. Você também pode clicar no **X** no lado direito da caixa de texto para desmarcá-la.  

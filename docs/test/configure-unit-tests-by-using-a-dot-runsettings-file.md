@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
-caps.latest.revision: 25
+caps.latest.revision: "25"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: a02ce3721b6eb96770c9fbf074179b7afefdb97b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
-ms.openlocfilehash: 4401606f97452de235b8a2d406451e5481518006
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/01/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo .runsettings
 Os testes de unidade no Visual Studio podem ser configurados com um arquivo \*.runsettings. (O nome do arquivo não importa, contanto que você use a extensão ‘.runsettings’). Por exemplo, é possível alterar o .NET Framework em que os testes serão executados, o diretório para o qual os resultados de teste serão enviados e os dados coletados durante uma execução de teste.  
@@ -182,4 +165,3 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo \*.r
 ## <a name="see-also"></a>Consulte também  
  [Personalizando análise de cobertura de código](../test/customizing-code-coverage-analysis.md)   
  [Especificando configurações de teste para testes do Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
-

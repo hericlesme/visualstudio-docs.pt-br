@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: 11
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "11"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 53224c67d6778ea51e1cf055a0c4c0db34940ada
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar e configurar ferramentas para criação usando iOS
 É possível usar o Visual C++ para Desenvolvimento Móvel de Multiplataforma para editar, depurar e implantar código do iOS no Simulador de IOS ou em um dispositivo iOS, mas devido a restrições de licenciamento, o código deve ser compilado e executado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto, [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), no Mac. O agente remoto trata de solicitações de build do Visual Studio e executa o aplicativo em um dispositivo iOS conectado ao Mac, ou no Simulator de iOS no Mac.  
@@ -127,7 +109,7 @@ ms.lasthandoff: 05/13/2017
   
  Na primeira vez em que você iniciar o agente e sempre que criar um novo certificado de cliente, serão fornecidas as informações necessárias para configurar o agente no Visual Studio, incluindo o nome do host, a porta e o PIN.  
   
- ![Usar o vcremote para gerar um PIN seguro](~/cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+ ![Usar o vcremote para gerar um PIN seguro](../cross-platform/media/cppmdd_vcremote_generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
  Se você pretende configurar o agente remoto no Visual Studio usando o nome do host, execute o ping para o Mac do Windows usando o nome de host para verificar se ele está acessível. Caso contrário, poderá ser necessário usar o endereço IP em vez disso.  
   
@@ -177,7 +159,7 @@ ms.lasthandoff: 05/13/2017
   
 7.  Escolha **Emparelhamento** para habilitar o emparelhamento.  
   
-     ![Configurar a conexão de vcremote para compilações do iOS](~/cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")  
+     ![Configurar a conexão de vcremote para compilações do iOS](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")  
   
      O emparelhamento persiste até que você altere o nome do host ou a porta. Se você alterar o nome do host ou a porta na caixa de diálogo **Opções**, para desfazer a alteração, escolha o botão **Reverter** para reverter o emparelhamento anterior.  
   

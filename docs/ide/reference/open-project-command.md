@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- file.openproject
+f1_keywords: file.openproject
 helpviewer_keywords:
 - op command
 - File.OpenProject command
 - Open Project command
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: fe7e8e95aa623b26dadfe36c342245a43bf9a722
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a3b0916874fbd4c16dfe2232a6a5865743d0c388
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="open-project-command"></a>Comando Abrir Projeto
 Abre um projeto existente.  

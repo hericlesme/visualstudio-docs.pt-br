@@ -4,24 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-caps.latest.revision: 36
+caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 54eea838c686bf9956b9f9da2055bf3400f94aa5
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2b7176a0aed65a9595730247d857dc0c263dc0cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="model-editor"></a>Editor de modelo
 Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para exibir, criar e modificar modelos 3D.  

@@ -1,27 +1,24 @@
 ---
 title: "Trechos de código com Ferramentas do R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 90bf4f87-e276-40cd-bc17-3dfb47ef1870
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 47cf9ff074884902c94cd146c7a00826088833a3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 55d7e61f1066de900d6568a848a0aa78e3fd3897
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="code-snippets"></a>Trechos de código
 
 Os trechos de código no Visual Studio fornecem atalhos para inserir rapidamente os blocos de código de comprimento arbitrário, ajudando a evitar a necessidade de digitar novamente códigos semelhantes. As RTVS (Ferramentas do R para Visual Studio) adicionam dezenas de trechos do R úteis na coleção do Visual Studio.
@@ -68,4 +65,3 @@ Para criar trechos de código personalizados, siga as instruções em [Instruç�
 ```
 
 Os arquivos XML de todos os trechos de código são instalados com as RTVS; o campo **Local** no **Gerenciador de trechos de código** fornece o caminho. Você também pode encontrá-los no código-fonte das RTVS no GitHub em [src/Package/Impl/Snippets](https://github.com/Microsoft/RTVS/tree/master/src/Package/Impl/Snippets).
-

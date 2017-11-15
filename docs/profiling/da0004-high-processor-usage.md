@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,29 +13,15 @@ f1_keywords:
 - vs.performance.DA0004
 - vs.performance.4
 ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6975a7d70149855aa4290f7660b0b66ebdf734a4
-
+ms.openlocfilehash: 5eeb6d43ff388050ad9c1fa8140f2e6bdfb352ac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: uso do processador elevado
 |||  
@@ -57,8 +42,3 @@ ms.openlocfilehash: 6975a7d70149855aa4290f7660b0b66ebdf734a4
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Considere uma nova criação de perfil do aplicativo usando o método de amostragem em vez do método de instrumentação, a menos que você precise de tempos de função ou esteja mais interessado em entender a entrada/saída do que os afunilamentos do processador.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

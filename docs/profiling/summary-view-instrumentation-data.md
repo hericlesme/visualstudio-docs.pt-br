@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Summary view
+helpviewer_keywords: Summary view
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 90bcf3f94fce74a020b56d8eaf38072d55e8f1fb
-
+ms.openlocfilehash: 296faf330e23d65ae0ab7e9f434ab831ee520ac5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="summary-view---instrumentation-data"></a>Exibição Resumo – Dados de instrumentação
 A exibição Resumo exibe informações sobre as funções mais caras de desempenho em uma execução da criação de perfil. Para obter mais informações, incluindo uma descrição das listas Links de notificação e Relatório, consulte [Exibição Resumo](../profiling/summary-view.md).  
@@ -65,8 +49,3 @@ A exibição Resumo exibe informações sobre as funções mais caras de desempe
 ## <a name="see-also"></a>Consulte também  
  [Exibição Resumo](../profiling/summary-view-sampling-data.md)   
  [Exibição de Resumo](../profiling/summary-view-dotnet-memory-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

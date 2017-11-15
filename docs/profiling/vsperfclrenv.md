@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,29 +14,15 @@ helpviewer_keywords:
 - profiling tools,VSPerfCLREnv
 - VSPerfCLREnv tool
 ms.assetid: 4bc9dd6e-379c-4930-9bba-59a4faa93303
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 234d40b6ded0da578e4380b71f9f5cf6bff935ad
-
+ms.openlocfilehash: 580d3b5f1dab03e34dac7c452da08e00e453a503
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 A ferramenta VSPerfCLREnv é usada para definir variáveis de ambiente que são necessárias para criar o perfil de um aplicativo .NET Framework. Ela usa a seguinte sintaxe:  
@@ -128,8 +113,3 @@ VSPerfCmd /Attach:MyService.exe
   
 ## <a name="see-also"></a>Consulte também  
  [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

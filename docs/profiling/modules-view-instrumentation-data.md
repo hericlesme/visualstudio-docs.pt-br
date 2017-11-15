@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Modules view
+helpviewer_keywords: Modules view
 ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8c686c2548b903478d3e24a21ad89baae6f0bd4b
-
+ms.openlocfilehash: bdf78e13b7205ac5bc04a67796c1e226f194b0c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="modules-view---instrumentation-data"></a>Exibição Módulos – dados de instrumentação
 A exibição Módulos mostra dados de desempenho agrupados pelos módulos que estavam nos dados de criação de perfil. As funções do módulo são listadas abaixo do nó do módulo.  
@@ -102,8 +86,3 @@ A exibição Módulos mostra dados de desempenho agrupados pelos módulos que es
  [Exibição Módulos](../profiling/modules-view-sampling-data.md)   
  [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Exibição Módulos – amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

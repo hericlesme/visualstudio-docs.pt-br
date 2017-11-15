@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - packsymbols, in profiling tools reports
 - profiling tools, packsymbols
 ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6193453b9cbdaab387c6fff9e883d43dc436c41b
-
+ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvando informações de símbolo com arquivos de dados de desempenho
 Se você estiver usando o IDE (ambiente de desenvolvimento integrado) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para analisar arquivos e pretender mover o arquivo VSP para um computador diferente, você deverá definir as configurações de projeto de desempenho para salvar ou *serializar* símbolos no arquivo de relatório. No entanto, isso aumenta o tamanho de um arquivo de relatório. A serialização de símbolos é necessária por dois motivos:  
@@ -83,8 +68,3 @@ Se você estiver usando o IDE (ambiente de desenvolvimento integrado) [!INCLUDE[
  [Salvando e exportando dados de ferramentas de desempenho](../profiling/saving-and-exporting-performance-tools-data.md)   
  [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

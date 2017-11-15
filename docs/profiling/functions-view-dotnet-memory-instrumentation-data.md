@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Functions view
+helpviewer_keywords: Functions view
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 73a2d20819d7bed5b48e1e4f2937f89c6b8898d2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f50378179276a88ff9dd1a6017cd84143b499707
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Exibição Funções – Dados de instrumentação de memória do .NET
 A exibição Funções dos dados de criação de perfil de alocação de memória do .NET que foram coletados usando o método de instrumentação lista as funções que alocaram memória durante a execução da criação de perfil. Uma linha de função informa o tamanho e o número de alocações e dados de temporização para a função.  

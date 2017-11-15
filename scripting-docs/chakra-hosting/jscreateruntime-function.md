@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsCreateRuntime
-helpviewer_keywords:
-- JsCreateRuntime function
+f1_keywords: jsrt/JsCreateRuntime
+helpviewer_keywords: JsCreateRuntime function
 ms.assetid: 92d09b89-6593-4d73-a562-88f9fec10228
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 93a3df1e7ea76cf76fad9ffde9ccea19f2ba28af
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscreateruntime-function"></a>Função JsCreateRuntime
 Cria um novo tempo de execução.  

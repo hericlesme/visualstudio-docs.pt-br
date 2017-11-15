@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
-caps.latest.revision: 12
+caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5dc671e42430736c800010f6cf21e577eb940575
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d7a899e16d79ba2aae40506eb3cd6739dcdb4397
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como configurar testes de unidade para direcionar uma versão anterior do .NET Framework
 Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais recente do .NET Framework é definida como destino, por padrão. Além disso, se você atualizar projetos de teste de versões anteriores do Visual Studio, eles são atualizados para destinar-se à versão mais recente do .NET Framework. Ao editar as propriedades do projeto, é possível redirecionar explicitamente o projeto para versões anteriores do .NET Framework.  
@@ -80,11 +64,11 @@ Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais
   
 5.  Na guia **Compilar** escolha **Opções de Compilação Avançadas** conforme mostrado na ilustração a seguir.  
   
-     ![Opções de compilação Avançadas](~/test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
+     ![Opções de compilação Avançadas](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
 6.  Use a lista suspensa **Estrutura de destino (todas as configurações)** para alterar a estrutura de destino para **.NET Framework 3.5** ou uma versão posterior, conforme mostrado no texto explicativo B na ilustração a seguir. Não especifique uma versão de cliente.  
   
-     ![Lista de lista suspensa de estrutura de destino](~/test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")  
+     ![Lista de lista suspensa de estrutura de destino](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Redirecionar para uma versão específica do .NET Framework para projetos de teste de unidade do Visual C#  
   
@@ -102,7 +86,7 @@ Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais
   
 5.  Na guia **Aplicativo** escolha **Estrutura de destino** e, em seguida, escolha **.NET Framework 3.5** ou uma versão posterior na lista suspensa para alterar a estrutura de destino conforme mostrado na ilustração a seguir. Não especifique uma versão de cliente.  
   
-     ![Lista de lista suspensa de estrutura de destino](~/test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
+     ![Lista de lista suspensa de estrutura de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Redirecionar para uma versão específica do .NET Framework para projetos de teste de unidade do C++/CLI  
   
@@ -146,4 +130,3 @@ Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais
  [Criar soluções do SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
  [Compilando e depurando soluções do SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
  [Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
-

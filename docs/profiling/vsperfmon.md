@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,29 +16,15 @@ helpviewer_keywords:
 - performance tools, VSPerfMon tool
 - profilng tools,VSPerfCmd
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
-caps.latest.revision: 30
+caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3844a07a1ccf989baf37326c4af183dc32bc1451
-
+ms.openlocfilehash: 8fe5e6b129fd8c5f1e8ce20bb902b977a66f1035
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 Você pode usar a ferramenta VSPerfMon para coletar dados de desempenho para um aplicativo. Normalmente essa ferramenta é iniciada pelo VSPerfCmd.exe. VSPerfMon exibe informações adicionais sobre como anexar ou desanexar processo que não está disponível usando a ferramenta VSPerfCmd. Para exibir essas informações, inicie o VSPerfMon em uma janela separada. Para invocar VSPerfMon use a seguinte sintaxe:  
@@ -69,8 +54,3 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Exibições de relatório de desempenho](../profiling/performance-report-views.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

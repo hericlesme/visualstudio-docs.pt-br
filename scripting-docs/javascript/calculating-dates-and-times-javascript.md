@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - date comparison [JavaScript]
 - date and time calculations [JavaScript]
 ms.assetid: ea976f78-d934-479b-9056-880390d8bddd
-caps.latest.revision: 34
+caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 18b4ff307c8f2c48a37ed9ca50e7c5f1ff693ece
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="calculating-dates-and-times-javascript"></a>Calculando datas e horas (JavaScript)
 Você pode usar o [objeto Date](../javascript/reference/date-object-javascript.md) para executar tarefas de relógio e calendário comuns, tais como comparar datas e calcular o tempo decorrido.  

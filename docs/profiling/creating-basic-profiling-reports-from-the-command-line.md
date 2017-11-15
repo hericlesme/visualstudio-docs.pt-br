@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6793b3892061ad2abb5ed2101b906ad309b89ba6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 111227b41b3fe48af963f93f07cdee5e5511661f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Criando relatórios de criação de perfil básicos a partir da linha de comando
 Este tópico descreve os comandos básicos do VSPerfReport que geram relatórios de valores separados por vírgulas (.csv) de um arquivo de dados de criação de perfil .vsp ou .vsps. Para obter uma descrição de todas as opções de relatório, consulte [VSPerfReport](../profiling/vsperfreport.md).  

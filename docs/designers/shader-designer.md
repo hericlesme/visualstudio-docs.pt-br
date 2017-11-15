@@ -4,39 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: af7472d5152babe2088ae3cc49caaf718a539878
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para criar, modificar e exportar efeitos visuais personalizados que são conhecidos como *sombreadores*.  
@@ -73,7 +56,7 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
  As seções a seguir descrevem como usar o Designer de Sombreador para trabalhar com sombreadores personalizados.  
   
 ### <a name="shader-designer-toolbars"></a>Barras de ferramentas do Designer de sombreador  
- As barras de ferramentas do Designer de Sombreador contêm comandos que ajudam a trabalhar com gráficos de sombreador DGSL.  
+ As barras de ferramentas do Designer de Sombreador contêm comandos que ajudam a trabalhar com grafos de sombreador DGSL.  
   
  Os comandos que afetam o estado do Designer de Sombreador estão localizados na barra de ferramentas **Modo do Designer de Sombreador** na janela principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ferramentas de design e comandos estão localizados na barra de ferramentas **Designer de Sombreador** na superfície de design do Designer de Sombreador.  
   
@@ -85,10 +68,10 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
   
 |Item da barra de ferramentas|Descrição|  
 |------------------|-----------------|  
-|**Selecionar**|Habilita a interação com nós e bordas no gráfico. Nesse modo você pode selecionar nós e movê-los ou excluí-los, além de poder estabelecer bordas ou dividi-las.|  
-|**Panorâmica**|Habilita a movimentação de um gráfico de sombreador em relação ao quadro de janela. Para deslocar, selecione um ponto na superfície de design e movimente-o ao redor.<br /><br /> No modo **Selecionar**, você pode manter pressionada a tecla Ctrl para ativar o modo **Panorâmico** temporariamente.|  
-|**Zoom**|Habilita a exibição de mais ou menos detalhes do gráfico de sombreador em relação ao quadro de janela. No modo **Zoom**, selecione um ponto na superfície de design e mova-o para a direita ou para baixo para ampliar ou então para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, você pode ampliar ou reduzir usando a roda do mouse enquanto mantém a tecla Ctrl pressionada.|  
-|**Aplicar Zoom para Ajustar**|Exibe o gráfico de sombreador completo no quadro de janela.|  
+|**Selecionar**|Habilita a interação com nós e bordas no grafo. Nesse modo você pode selecionar nós e movê-los ou excluí-los, além de poder estabelecer bordas ou dividi-las.|  
+|**Panorâmica**|Habilita a movimentação de um grafo de sombreador em relação ao quadro de janela. Para deslocar, selecione um ponto na superfície de design e movimente-o ao redor.<br /><br /> No modo **Selecionar**, você pode manter pressionada a tecla Ctrl para ativar o modo **Panorâmico** temporariamente.|  
+|**Zoom**|Habilita a exibição de mais ou menos detalhes do grafo de sombreador em relação ao quadro de janela. No modo **Zoom**, selecione um ponto na superfície de design e mova-o para a direita ou para baixo para ampliar ou então para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, você pode ampliar ou reduzir usando a roda do mouse enquanto mantém a tecla Ctrl pressionada.|  
+|**Aplicar Zoom para Ajustar**|Exibe o grafo de sombreador completo no quadro de janela.|  
 |**Modo de Renderização em Tempo Real**|Quando a renderização em tempo real for habilitada, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] redesenhará a superfície de design, mesmo quando nenhuma ação de usuário for executada. Esse modo é útil quando você trabalha com sombreadores que se alteram ao longo do tempo.|  
 |**Visualizar com esfera**|Quando habilitado, um modelo de uma esfera é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|  
 |**Visualizar com cubo**|Quando habilitado, um modelo de um cubo é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|  
@@ -110,9 +93,9 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
   
 -   Veja como:  
   
-    -   Para adicionar um nó ao gráfico, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.  
+    -   Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.  
   
-    -   Para remover um nó do gráfico, selecione-o e pressione Delete.  
+    -   Para remover um nó do grafo, selecione-o e pressione Delete.  
   
     -   Para reposicionar um nó, selecione-o e, em seguida, mova-o para um novo local.  
   

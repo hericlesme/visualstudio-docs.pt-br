@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 01/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -31,40 +30,23 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 0d087d735f3db1f1d8fa7f37f049b6208e5242c0
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 978a2709fb95a0ade74f5c67d5dc774823ded6a3
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# Opções, Editor de Texto, XAML, Formatação
-<a id="options-text-editor-xaml-formatting" class="xliff"></a>
+# <a name="options-text-editor-xaml-formatting"></a>Opções, Editor de Texto, XAML, Formatação
 Use a página de propriedades **Formatação** para especificar como elementos e atributos são formatados nos documentos XAML. Para abrir a caixa de diálogo **Opções**, clique no menu **Ferramentas** e clique em **Opções**. Para acessar a página de propriedades de **Formatação**, expanda o nó **Editor de Texto**, **XAML**, **Formatação**.  
 
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
 
-## Eventos de Formatação Automática
-<a id="auto-formatting-events" class="xliff"></a>  
+## <a name="auto-formatting-events"></a>Eventos de Formatação Automática  
  Formatação automática pode ocorrer quando qualquer um dos eventos a seguir é detectado.  
 
 -   Preenchimento de uma marcação de fim ou de uma marcação simples.  
@@ -75,7 +57,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 
 -   Comandos de teclado de formatação.  
 
- Você pode especificar os eventos que causam formatação automática.  
+Você pode especificar os eventos que causam formatação automática.  
 
 |||  
 |-|-|  
@@ -83,8 +65,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 |**Ao preencher uma marcação de início**|Formatação automática ocorre quando você termina de digitar uma marcação de início.|  
 |**Ao colar da área de transferência**|Formatação automática ocorre quando você cola XAML da área de transferência para a exibição XAML.|  
 
-## Estilo de Aspas
-<a id="quotation-mark-style" class="xliff"></a>  
+## <a name="quotation-mark-style"></a>Estilo de Aspas  
  Essa configuração indica se os valores de atributo são colocados entre aspas simples ou duplas. O formatador automático e o preenchimento automático IntelliSense usam essa configuração.  
 
  Ao definir essa opção, apenas atributos subsequentemente adicionados usando o designer ou manualmente na exibição XAML são afetados.  
@@ -94,8 +75,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 |**Aspas duplas (")**|Valores de atributos são colocados entre aspas duplas.<br /><br /> `<Button Name="button1">Hello</Button>`|  
 |**Aspas simples (')**|Valores de atributos são colocados entre aspas simples.<br /><br /> `<Button Name='button1'>Hello</Button>`|  
 
-## Automática de marca
-<a id="tag-wrapping" class="xliff"></a>  
+## <a name="tag-wrapping"></a>Automática de marca  
  Você pode especificar um comprimento de linha para disposição de marcação. Quando a disposição de marcação está habilitada, qualquer XAML adicionado posteriormente usando o designer será disposto adequadamente.  
 
 |||  
@@ -103,8 +83,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 |**Encapsular marcações que excedam o comprimento especificado**|Especifica se as linhas são dispostas no comprimento de linha especificado por **Comprimento**.|  
 |**Comprimento**|O número de caracteres que uma linha pode conter. Se necessário, algumas linhas XAML poderão exceder o comprimento de linha especificado.|  
 
-## Espaçamento de Atributos
-<a id="attribute-spacing" class="xliff"></a>  
+## <a name="attribute-spacing"></a>Espaçamento de Atributos  
  Use essa configuração para controlar como os atributos são organizados no documento XAML  
 
 |||  
@@ -114,8 +93,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 |**Posicionar cada atributo em uma linha separada**|Cada atributo ocupa sua própria linha. Isso é útil quando existem muitos atributos.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
 |**Posicionar primeiro atributo na mesma linha que a marcação de início**|Quando essa opção está marcada, o primeiro atributo aparece na mesma linha que a marcação de início do elemento.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
 
-## Espaçamento de Elementos
-<a id="element-spacing" class="xliff"></a>  
+## <a name="element-spacing"></a>Espaçamento de Elementos  
  Use essa configuração para controlar como os elementos são organizados no documento XAML  
 
 |||  
@@ -124,8 +102,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 |**Recolher várias linhas vazias no conteúdo para uma linha única**|Linhas vazias no conteúdo do elemento são recolhidas em uma única linha.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|  
 |**Remover linhas vazias no conteúdo**|Todas as linhas vazias no conteúdo do elemento são removidas.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|  
 
-## Seção Diversos, Inserção Automática
-<a id="miscellaneous-section-auto-insert" class="xliff"></a>  
+## <a name="miscellaneous-section-auto-insert"></a>Seção Diversos, Inserção Automática  
  Use essa configuração para controlar quando marcas e aspas são geradas automaticamente.  
 
 |||  
@@ -135,9 +112,7 @@ Use a página de propriedades **Formatação** para especificar como elementos e
 |**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento (}) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura ({).|  
 |**Vírgulas para separar parâmetros MarkupExtension**|Especifica se vírgulas são geradas quando você digita mais de um parâmetro em uma extensão de marcação.|  
 
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [Como alterar as configurações do modo de exibição XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [Passo a passo do Code e XAML](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
-

@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- coded UI tests
+helpviewer_keywords: coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5eb576be81849215f1413a7b58c6e460479af7f3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d85e24701fd6bc31852fff3927f3698210681b82
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia de um teste de IU codificado
 Quando você cria um teste de IU codificado em um projeto de teste de IU codificado, vários arquivos são adicionados a sua solução. Neste tópico, usaremos um exemplo de teste de IU codificado para explorar esses arquivos.  
@@ -299,4 +282,3 @@ public void MyTestCleanup()
  [Práticas recomendadas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)   
  [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

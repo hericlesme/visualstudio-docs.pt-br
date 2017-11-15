@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsCreateError
-helpviewer_keywords:
-- JsCreateError function
+f1_keywords: jsrt/JsCreateError
+helpviewer_keywords: JsCreateError function
 ms.assetid: dadbcac8-c56f-4f30-ba00-2d284daee191
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: f151e40d05af7d8831c5c8e6a6939d98982360eb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscreateerror-function"></a>Função JsCreateError
 Cria um novo objeto de erro do JavaScript  

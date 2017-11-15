@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
-caps.latest.revision: 6
-author: kempb
-ms.author: kempb
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 860b104c546037e70afc9a711ff258c1f96d799f
-
+ms.openlocfilehash: f67fd72d6e7a74d0af462ef65e0ddd535474188c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de prancheta no Blend
 Alguns atalhos de teclado não têm itens de menu associados, o que significa que você não pode usar a interface do usuário do [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] para descobri-los. A tabela a seguir lista atalhos que modificam uma ação, como redimensionar um objeto.  
@@ -61,8 +46,3 @@ Alguns atalhos de teclado não têm itens de menu associados, o que significa qu
  [Atalhos de teclado](../designers/keyboard-shortcuts-in-blend.md)   
  [Teclas modificadoras da ferramenta Caneta](../designers/pen-tool-modifier-keys-in-blend.md)   
  [Teclas modificadoras da ferramenta Seleção Direta](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

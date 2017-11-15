@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsParseSerializedScript
-helpviewer_keywords:
-- JsParseSerializedScript function
+f1_keywords: jsrt/JsParseSerializedScript
+helpviewer_keywords: JsParseSerializedScript function
 ms.assetid: 40d0c7c4-fd5b-46ed-9e65-38c2db2fc859
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 7eb18c8537d7bdfe69969293b66a5909ba7c3fa1
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsparseserializedscript-function"></a>Função JsParseSerializedScript
 Analisa um script serializado e retorna uma função representando o script.  

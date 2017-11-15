@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsRunScript
-helpviewer_keywords:
-- JsRunScript function
+f1_keywords: jsrt/JsRunScript
+helpviewer_keywords: JsRunScript function
 ms.assetid: 8d6b8c9a-af3a-4e21-a330-5a6b535423a3
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: a4cefe561fce5b479c0f520693f5813cbd7594b9
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsrunscript-function"></a>Função JsRunScript
 Executa um script.  

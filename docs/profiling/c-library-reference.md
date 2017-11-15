@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Concurrency Visualizer SDK, C Library Reference
+helpviewer_keywords: Concurrency Visualizer SDK, C Library Reference
 ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0f5adf10d532580af9b736447e5370a76baa0b4c
-
+ms.openlocfilehash: 9d951c08e3505673242b249c42b846f3d4c88300
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="c-library-reference"></a>Referência de biblioteca C
 Esta seção contém informações de referência para o SDK da Visualização Simultânea.  
@@ -65,8 +49,3 @@ Esta seção contém informações de referência para o SDK da Visualização S
  [Função CvWriteFlag](../profiling/cvwriteflag-function.md)  
   
  [Função CvWriteMessage](../profiling/cvwritemessage-function.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

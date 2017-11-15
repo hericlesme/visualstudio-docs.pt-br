@@ -4,41 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.summary
+f1_keywords: vs.performance.view.summary
 helpviewer_keywords:
 - performance reports, summary view
 - profiling tools reports, Summary view
 - profiling tools, Summary view
 - Summary view
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
-caps.latest.revision: 37
+caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 61d0ee51d24093ec6bb8bcf2a4ac65a5eac0c426
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f07b924c5af117f39e19dc5add6046a14be22a6b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="summary-view"></a>Exibição do Resumo
 A exibição de resumo exibe informações sobre as funções ou os objetos de desempenho mais caro em uma execução de criação de perfil. Essa exibição fornece um gráfico de linha do tempo e listas de duas ou mais das funções mais caras ou objetos com base nas métricas de desempenho do método de criação de perfil. Os dados nessa exibição dependem do método de criação de perfil que foi usado (amostragem, instrumentação ou simultaneidade) e se a alocação de memória .NET foi coletada.  

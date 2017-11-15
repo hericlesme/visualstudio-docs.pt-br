@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Profiling Tools,views
 - Profiling Tools,reports
 ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: dfa18859d590550408481f2d263ffd4942bfff7a
-
+ms.openlocfilehash: e4157b6292a292274a24242fddc46fb1f707247e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="common-data-views"></a>Exibições de dados comuns
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil comuns a todos os métodos de criação de perfil.  
@@ -76,8 +61,3 @@ Esta seção contém informações de referência sobre as exibições e os rela
   
  [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md)  
  Informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil gerados usando a coleta de memória do .NET.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

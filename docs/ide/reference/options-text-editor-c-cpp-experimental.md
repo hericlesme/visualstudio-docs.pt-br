@@ -11,33 +11,16 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 ms.assetid: b9e9dda2-350c-460d-b368-37d6c5342eee
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
+ms.openlocfilehash: d67907a99851e09bf384c96b6ff6b87b4882cd30
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: faa37f88995f232f1198d3738ac5fba99d2970bd
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
 Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++. Esses recursos são realmente experimentais e podem ser modificados ou removidos do Visual Studio em uma versão futura. Este tópico descreve as opções no Visual Studio 2017. Para Visual Studio 2015, consulte [Opções, Editor de texto, C/C++, Experimental](https://msdn.microsoft.com/library/mt591979.aspx) 
@@ -67,9 +50,8 @@ Para obter outros recursos do editor de texto na Galeria do Visual Studio, consu
   
 -   **Ajuda do MSDN** – pesquisa as mensagens de erro no MSDN  
   
- Você pode passar o mouse sobre um rabisco para obter uma lâmpada ou usar o atalho de teclado padrão Ctrl+Ponto (Ctrl+.). Observe que para o atalho de teclado, o cursor do sistema não precisa ser posicionado sobre o erro específico ou o token, você pode simplesmente estar na mesma linha do erro para invocar sugestões para qualquer item nessa linha.  
+Você pode passar o mouse sobre um rabisco para obter uma lâmpada ou usar o atalho de teclado padrão Ctrl+Ponto (Ctrl+.). Observe que para o atalho de teclado, o cursor do sistema não precisa ser posicionado sobre o erro específico ou o token, você pode simplesmente estar na mesma linha do erro para invocar sugestões para qualquer item nessa linha.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)   
  [Refatoração em C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
-

@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsIsEnumeratingHeap
-helpviewer_keywords:
-- JsIsEnumeratingHeap function
+f1_keywords: jsrt/JsIsEnumeratingHeap
+helpviewer_keywords: JsIsEnumeratingHeap function
 ms.assetid: 5d14518e-3153-43f2-9a9c-068580cbd54f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 3ff27c12dce29d03d2516dfd7cfba34f22020da3
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsisenumeratingheap-function"></a>Função JsIsEnumeratingHeap
 Retorna um valor que indica se o heap do contexto atual está sendo enumerado.  

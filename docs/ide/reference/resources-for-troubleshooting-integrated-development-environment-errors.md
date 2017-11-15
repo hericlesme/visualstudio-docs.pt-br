@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -94,39 +93,24 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3b53681a12c1a3bb89ff3489ef63b3644f99836c
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: dacc2d2b34cd0e3bb755fc0ed6972457a307d006
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de erros de ambiente do ambiente integrado
 Nem todas as mensagens de erro têm um tópico de Ajuda específico associado. Se as informações na mensagem de erro não ajudarem você a resolver o problema, você pode consultar outros recursos, como artigos da Base de Dados de Conhecimento, a comunidade de desenvolvedores ou o suporte do produto.  
   
 ## <a name="knowledge-base-articles"></a>Artigos da Base de Dados de Conhecimento  
- Você pode pesquisar a KB (Base de Dados de Conhecimento) online para encontrar artigos sobre problemas do produto. Nem todos os problemas têm um artigo correspondente na KB, mas erros encontrados por um número significativo de clientes normalmente são documentados. Você pode acessar artigos da KB no site de [Suporte da Microsoft](http://go.microsoft.com/fwlink/?linkid=1782).  
+ É possível pesquisar a KB (Base de Dados de Conhecimento) online para encontrar artigos sobre problemas do produto. Nem todos os problemas têm um artigo correspondente na KB, mas erros encontrados por um número significativo de clientes normalmente são documentados. Você pode acessar artigos da KB no site de [Suporte da Microsoft](http://go.microsoft.com/fwlink/?linkid=1782).  
   
 ## <a name="the-developer-community"></a>A comunidade de desenvolvedores  
- Fóruns lhe permitem interagir com outros desenvolvedores e também com funcionários da Microsoft. Se encontrar um erro para o qual não é possível encontrar uma resolução, você poderá postar perguntas sobre o problema em um fórum. Você também pode pesquisar grupos de notícias para ver outras pessoas postaram sobre o mesmo problema.  
+ Fóruns lhe permitem interagir com outros desenvolvedores e também com funcionários da Microsoft. Se encontrar um erro para o qual não é possível encontrar uma resolução, você pode postar perguntas sobre o problema em um fórum. Você também pode pesquisar grupos de notícias para ver outras pessoas postaram sobre o mesmo problema.  
   
  Você pode acessar fóruns, blogs, chats e outros recursos sobre no site das [Comunidades Técnicas da Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922).  
   

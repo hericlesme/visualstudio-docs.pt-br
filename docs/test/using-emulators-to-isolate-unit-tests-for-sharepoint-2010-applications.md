@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
-caps.latest.revision: 15
+caps.latest.revision: "15"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1a7692176545f341fa753aa8838a089639a7b753
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 478415dee5bcf1b37277f84ad0a49240bfc21a16
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Usando emuladores para isolar testes de unidade para aplicativos do Sharepoint 2010
 O pacote Microsoft.SharePoint.Emulators fornece um conjunto de bibliotecas que ajudam você a criar testes de unidade isolados para aplicativos do Microsoft SharePoint 2010. Os emuladores usam [shims](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) da estrutura de isolamento do [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) para criar objetos na memória leves que imitam os objetos e métodos da API do SharePoint mais comuns. Quando um método do SharePoint não é emulado, ou quando há a necessidade de alterar o comportamento padrão de um emulador, você pode criar shims do Fakes para obter os resultados desejados.  
@@ -159,7 +143,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
   
 1.  Selecione o projeto de teste no Gerenciador de Soluções.  
   
-2.  Escolha **Gerenciar pacotes NuGet... ** no menu de atalho.  
+2.  Escolha **Gerenciar pacotes NuGet...**  no menu de atalho.  
   
 3.  Pesquise `Microsoft.SharePoint.Emulators` na categoria **Online** e escolha **Instalar**.  
   
@@ -608,4 +592,3 @@ namspace MySPAppTests
  [Testando aplicativos do SharePoint 2010 com testes de IU codificados](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
  [Teste de carga e de desempenho Web para aplicativos do SharePoint 2010 e 2013](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
  [Desenvolvendo soluções do SharePoint](/office-dev/office-dev/developing-sharepoint-solutions)
-

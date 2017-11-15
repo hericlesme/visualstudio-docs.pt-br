@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsParseScript
-helpviewer_keywords:
-- JsParseScript function
+f1_keywords: jsrt/JsParseScript
+helpviewer_keywords: JsParseScript function
 ms.assetid: e9d0e363-7cbe-43eb-9dc0-1f47e586c9ab
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: de55c249b6fb5b723086f48312904f0232f0a11b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsparsescript-function"></a>Função JsParseScript
 Analisa um script e retorna uma função representando o script.  

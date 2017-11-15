@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- file.openfile
+f1_keywords: file.openfile
 helpviewer_keywords:
 - Open File command
 - File.OpenFile command
 - of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d9cff2cf268a9c87112cfc09a8f915d1af9333f6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f7b1576ce7c34e953c45d7b303190a00d77e86cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="open-file-command"></a>Comando Abrir Arquivo
 Abre um arquivo existente e permite que você especifique um editor.  

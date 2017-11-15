@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,29 +17,15 @@ helpviewer_keywords:
 - Parameter element [MSBuild]
 - <Parameter> element [MSBuild]
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: faa21fe72a842ab24773ffccd4d6f57a6a4e2777
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 39dd727eee6f9af2f60410c4dbfc9daa9ea805a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="parameter-element"></a>Elemento de parâmetro
 Contém informações sobre um parâmetro específico de uma tarefa que é gerada por um `UsingTask``TaskFactory`.  O nome do elemento é o nome do parâmetro.  Para obter mais informações, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -98,4 +83,3 @@ Contém informações sobre um parâmetro específico de uma tarefa que é gerad
  [Tarefas](../msbuild/msbuild-tasks.md)   
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
-

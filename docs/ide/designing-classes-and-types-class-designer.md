@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - types [Visual Studio], designing
 - classes [Visual Studio], designing
 ms.assetid: 381481a2-87f4-475b-a780-18e85c8af350
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9346b1a84aa6bcef31a4dd627ced7a9678bed9dd
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 07bae865601183446308a37f7c91255392fee342
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Projetando classes e tipos (Designer de Classe)
 Usando o **Designer de Classe**, é possível não só visualizar classes e tipos, como também criá-las. Os tópicos a seguir descrevem como fazer isso.  

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.ClassDesigner.OverrideMembersDialog
+f1_keywords: vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
 - members, overriding
 - overriding members
@@ -20,31 +18,15 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: ba2ed6d0973e4775b1137c300608bc5ca1bdcb66
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: b18680e10adbd3bd1e91c821f1d1e9381dd96759
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refatorando classes e tipos (Designer de Classe)
 Quando você refatora o código, ele fica mais fácil de entender, manter e mais eficiente, alterando a estrutura interna e como os seus objetos são criados, não o comportamento externo dele. Use o Designer de Classe e a janela Detalhes da Classe para reduzir o trabalho que é necessário e a possibilidade de introduzir bugs quando você refatora o código do Visual C# .NET, Visual Basic .NET ou C++ em seu projeto do Visual Studio.  

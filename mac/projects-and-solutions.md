@@ -6,12 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 366e2c0df83a3e04f5f226a2a24ddced8c85dd2b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="projects-and-solutions"></a>Soluções e Projetos
 
@@ -24,7 +23,6 @@ Para criar um novo Projeto ou Solução, consulte o tópico [Criar novos Projeto
 ## <a name="project-and-solution-options"></a>Opções de Projetos e Soluções
 
 Você pode gerenciar as propriedades de projetos e de soluções clicando duas vezes no nome do Projeto/Solução ou clicando com o botão direito do mouse e navegando para **Opções**. Mais informações sobre essas opções são fornecidas no tópico [Gerenciando propriedades de Projetos e Soluções](~/managing-solutions-and-project-properties.md).
-
 
 
 

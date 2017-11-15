@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - .NET memory profiling method views
 - profiling tools,.NET memory profiling views
 ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7e42a38f454c73b2f0d0b7d27a9800e050caf4e5
-
+ms.openlocfilehash: c6bbbc764c7b5275082b6261249d48122ea3c836
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="net-memory-data-views"></a>Exibições de dados da memória do .NET
 Esta seção contém informações de referência para as exibições e os relatórios dos arquivos de dados do criador de perfil que contêm os dados de criação de perfil de memória do .NET.  
@@ -95,8 +80,3 @@ Esta seção contém informações de referência para as exibições e os relat
   
  [Exibições de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)  
  As informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil que foram gerados usando o método de instrumentação.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

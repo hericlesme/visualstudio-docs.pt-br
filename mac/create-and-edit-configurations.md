@@ -6,14 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 0cce820d76660124838307cc231b379c449b58a7
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="creating-and-editing-build-configurations"></a>Criando e editando configurações de build
 
 Configurações de build podem ser criadas para projetos individuais ou para toda uma solução. Essas configurações oferecem um controle preciso sobre um build.
@@ -62,4 +60,3 @@ Para renomear uma configuração, selecione-a na lista de Configurações das Op
 Selecione o botão **Renomear**.
 
 ![renomear caixa de diálogo](media/create-and-edit-configurations-image5.png) 
-

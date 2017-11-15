@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetExternalData
-helpviewer_keywords:
-- JsGetExternalData function
+f1_keywords: jsrt/JsGetExternalData
+helpviewer_keywords: JsGetExternalData function
 ms.assetid: 1919e1da-3ea7-4269-a5fb-a3be06bd029b
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: da78672f85159070949d067867699cfb5223b31c
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetexternaldata-function"></a>Função JsGetExternalData
 Recupera os dados de um objeto externo.  

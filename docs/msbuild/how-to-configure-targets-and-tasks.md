@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ce1142acf4acb0e44e85b7e9ab313136d7ed7727
-ms.openlocfilehash: 0ef80ff90b0182405f72f9413de13b699aed971d
-ms.lasthandoff: 03/28/2017
-
+ms.openlocfilehash: 69669acc9cc0815dc8df0c88172213ad3e3698f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Como configurar destinos e tarefas
 Tarefas do MSBuild selecionadas podem ser definidas para serem executadas no ambiente de destino, independentemente do ambiente do computador de desenvolvimento. Por exemplo, quando você usa um computador de 64 bits para criar um aplicativo destinado a uma arquitetura de 32 bits, as tarefas selecionadas são executadas em um processo de 32 bits.  
@@ -118,7 +103,7 @@ Tarefas do MSBuild selecionadas podem ser definidas para serem executadas no amb
  Ao contrário de outros parâmetros de tarefa, `MSBuildRuntime` e `MSBuildArchitecture` não são aparentes para a tarefa em si.  Para escrever uma tarefa que reconhece o contexto no qual ela é executada, é necessário testar o contexto chamando o .NET Framework ou usar propriedades de build para passar as informações de contexto por meio de outros parâmetros de tarefa.  
   
 > [!NOTE]
-> Os atributos  `UsingTask` podem ser definidos no conjunto de ferramentas e nas propriedades do ambiente.  
+>  Os atributos `UsingTask` podem ser definidos no conjunto de ferramentas e nas propriedades do ambiente.  
   
  Os parâmetros `MSBuildRuntime` e `MSBuildArchitecture` fornecem a maneira mais flexível de definir o contexto de destino, mas também é a mais limitada em escopo.  Por um lado, como eles são definidos na própria instância de tarefa e só são avaliados quando a tarefa está prestes a ser executada, eles podem derivar seu valor do escopo completo de propriedades disponíveis em tempo de avaliação e em tempo de build.  Por outro lado, esses parâmetros se aplicam somente a uma instância específica de uma tarefa em um destino específico.  
   
@@ -127,4 +112,3 @@ Tarefas do MSBuild selecionadas podem ser definidas para serem executadas no amb
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando destinos e tarefas](../msbuild/configuring-targets-and-tasks.md)
-

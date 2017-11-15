@@ -5,27 +5,24 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords:
-- JavaScript, operators
+helpviewer_keywords: JavaScript, operators
 ms.assetid: b8602b69-aba9-46e8-86e1-cb533ad41410
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="operators-javascript"></a>Operadores (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] tem uma gama completa de operadores, incluindo aritméticos, lógicos, bit a bit, de atribuição, bem como alguns operadores diversos. Para obter explicações e exemplos, consulte os tópicos sobre operadores específicos.  

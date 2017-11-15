@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d2827e7f1a653092ed88be517be95df1236b50a8
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c92f7975e3fe45e4f87e67f2c3c54a26a7d8b87a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-shaders"></a>Trabalhando com sombreadores
 Você pode usar o Designer de Sombreadores baseado em gráfico em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para efeitos de sombreamento personalizado de design. Você pode usar esses sombreadores em seu jogo ou aplicativo baseado no DirectX.  

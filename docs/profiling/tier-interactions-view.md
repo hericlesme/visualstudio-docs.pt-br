@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.tierinteraction
-helpviewer_keywords:
-- Tier Interactions view
+f1_keywords: vs.performance.view.tierinteraction
+helpviewer_keywords: Tier Interactions view
 ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 941d4e6d48d1e61804266b0fb334368145986eb1
-
+ms.openlocfilehash: 9aac5f9ac8886bef61d700209f77b4b1852fe2bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tier-interactions-view"></a>Exibição de interações da camada
 A criação de perfil de interação de camada fornece informações adicionais sobre os tempos de execução em funções de aplicativos de várias camadas que se comunicam com os bancos de dados por meio de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Os dados são coletados apenas para chamadas de função síncronas.  
@@ -74,8 +57,3 @@ A criação de perfil de interação de camada fornece informações adicionais 
 |**Tempo máximo decorrido**|O tempo máximo gasto na execução de uma instância da consulta.|  
 |**Tempo mínimo decorrido**|O tempo mínimo gasto na execução de uma instância da consulta.|  
 |**Tempo médio decorrido**|O tempo médio gasto na execução de uma instância da consulta.|
-
-
-<!--HONumber=Feb17_HO4-->
-
-

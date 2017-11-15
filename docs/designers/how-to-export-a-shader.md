@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-caps.latest.revision: 11
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1c6a729ba85fc275c9c513b64a9037e161d7bad2
-
+ms.openlocfilehash: ea578a020b4e60c3a2ff11af5d78570d636d822f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-export-a-shader"></a>Como exportar um sombreador
 Este documento demonstra como usar o Designer de Sombreador para exportar um sombreador da DGSL (Directed Graph Shader Language) para poder usá-lo em seu aplicativo.  
@@ -69,8 +54,3 @@ Este documento demonstra como usar o Designer de Sombreador para exportar um som
 ## <a name="see-also"></a>Consulte também  
  [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

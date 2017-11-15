@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a5758cb0-e73b-45f5-8cae-c0eb40491026
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 38bc7aca2c5c420d03a540ee10a9107651f9a1bb
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0bae39888104fb194b0ac178ae2c1be316d06585
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Programando o Visual Studio Tools for Unity
 Nesta seção, você encontrará exemplos de como usar as Ferramentas do Visual Studio para API do Unity.  

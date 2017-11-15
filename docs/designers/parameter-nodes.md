@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f2e48189ce49e48d13a616508dbba4686d2f957d
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6c93a889ca1bfa911a9f0934302450f6c1ec5413
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="parameter-nodes"></a>Nós de parâmetro
 No Designer de Sombreador, os nós de parâmetro representam entradas no sombreador que estão sob o controle do aplicativo em uma base por draw, por exemplo, propriedades de material, luzes direcionais, posição da câmera e tempo. Como você pode alterar esses parâmetros a cada chamada draw, é possível usar o mesmo sombreador para conceder aparências diferentes a um objeto.  

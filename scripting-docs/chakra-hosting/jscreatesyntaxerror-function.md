@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsCreateSyntaxError
-helpviewer_keywords:
-- JsCreateSyntaxError function
+f1_keywords: jsrt/JsCreateSyntaxError
+helpviewer_keywords: JsCreateSyntaxError function
 ms.assetid: 839845fc-60c4-4ffc-bfcc-fd7a8f06126f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: cfef3c7d2d866a860799ad31bdeaa9e6a1662546
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscreatesyntaxerror-function"></a>Função JsCreateSyntaxError
 Cria um novo objeto de erro SyntaxError do JavaScript  

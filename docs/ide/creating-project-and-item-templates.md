@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,29 +17,15 @@ helpviewer_keywords:
 - Visual Studio templates, project
 - templates [Visual Studio], about templates
 ms.assetid: a6ce501a-699b-4e3e-ade8-c81895645c20
-caps.latest.revision: 9
-author: kempb
-ms.author: kempb
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a1bd01618f24637c608e82d5c23042c764fe1be8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7d95781c2c5c4370e09c13b382016b015ec1a0d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="creating-project-and-item-templates"></a>Criando modelos de projeto e de item
 Modelos de projeto e de item do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornecem stubs reutilizáveis que oferecem aos usuários uma estrutura e código básico que eles podem usar para suas próprias finalidades.  

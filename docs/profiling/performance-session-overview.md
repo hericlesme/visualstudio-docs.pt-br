@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Profiling Tools, performance session
 - performance sessions
 ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
-caps.latest.revision: 35
+caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6e897dcd173ffd719efc146a3fee8b68586f5ad0
-
+ms.openlocfilehash: dff0b96bc40f857224df5222b43efac914de4f7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="performance-session-overview"></a>Visão geral da sessão de desempenho
 Esta visão geral explica as noções básicas de criação de perfil. Desenvolvedores pouco familiarizados com o trabalho de desempenho verão como as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podem ajudá-los a se tornarem rapidamente produtivos e a aumentar o desempenho do seu código. Desenvolvedores experientes na criação de perfis podem obter uma visão geral dos processos e recursos específicos das Ferramentas de Criação de Perfil.  
@@ -94,8 +79,3 @@ Esta visão geral explica as noções básicas de criação de perfil. Desenvolv
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [Passo a passo: identificando problemas de desempenho](../profiling/walkthrough-identifying-performance-problems.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - break statement
 - control flow, about control flow
 ms.assetid: 4ef58c82-e5d6-4b09-9458-cf0aa3b39bf5
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 20c256d26c6991067d7c25c0c835eda6e5e5aac6
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="controlling-program-flow-javascript"></a>Controlando o fluxo de programas (JavaScript)
 Normalmente, as instruções em um script [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] são executadas uma após a outra, na ordem em que elas são gravadas. Isso é chamado de execução sequencial e é a direção padrão de fluxo de programa.  

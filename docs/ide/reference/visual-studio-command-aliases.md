@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,33 +16,17 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0baf22ca488f4500fb3f4e845a0957b6225dd327
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 552e08a653c576a0f2e4bc916beaf4749ff490ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Aliases de comando do Visual Studio
-<a id="visual-studio-command-aliases" class="xliff"></a>
+# <a name="visual-studio-command-aliases"></a>Aliases de comando do Visual Studio
 Aliases fornecem um meio de inserir um comando na caixa **Localizar/Comando** ou na janela **Comando** reduzindo o texto necessário para executar o comando. Por exemplo, em vez de inserir `>File.OpenFile` para exibir a caixa de diálogo **Abrir Arquivo**, você pode usar o alias predefinido `>of`.  
   
  Digite `alias` na janela **Comando** para exibir uma lista de aliases atuais e suas definições. Digite `>cls` para limpar o conteúdo da janela **Comando**. Se você quiser ver um alias para um comando específico, digite `alias <command name>`.  
@@ -144,8 +127,7 @@ Aliases fornecem um meio de inserir um comando na caixa **Localizar/Comando** ou
 |Listar Processos|&#124;|Debug.ListProcesses|  
 |[Comando List Threads](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)

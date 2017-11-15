@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.performanceexplorer
 - vs.performance.explorer
-helpviewer_keywords:
-- performance tools, Performance Explorer
+helpviewer_keywords: performance tools, Performance Explorer
 ms.assetid: cb6a6efc-93a5-49a2-8d03-6969b5f3b6d7
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 110a292901356143b257c241b876d74a5ca86606
-
+ms.openlocfilehash: e6fc3be33c332d643e5feb48f4a3733395c2a608
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="performance-explorer-window"></a>Janela do Performance Explorer
 A janela do **Gerenciador de Desempenho** no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite configurar e iniciar sessões de desempenho usando o as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -73,8 +57,3 @@ A janela do **Gerenciador de Desempenho** no IDE (ambiente de desenvolvimento in
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Controlando a coleta de dados](../profiling/controlling-data-collection.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

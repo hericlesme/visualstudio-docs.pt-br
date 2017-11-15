@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsCreateTypeError
-helpviewer_keywords:
-- JsCreateTypeError function
+f1_keywords: jsrt/JsCreateTypeError
+helpviewer_keywords: JsCreateTypeError function
 ms.assetid: 8ef7bb77-2c98-482a-bccb-1f0fe2b826f5
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 42404084d7f6f75e5cdec6b9e4bf06f29b8a2136
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jscreatetypeerror-function"></a>Função JsCreateTypeError
 Cria um novo objeto de erro TypeError do JavaScript  

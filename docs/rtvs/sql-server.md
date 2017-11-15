@@ -1,27 +1,24 @@
 ---
 title: "Integrando o SQL Server às Ferramentas do R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 919dfc34-234a-489e-91bf-74a4cefae26c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 8c26ad4d9df3fb8b84c5d8c93e213858bc2ccb67
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: fa4f6a27eeacd2f016a248daa74074392b1137f2
-ms.openlocfilehash: b7afc0b2e62245e30814a0bc00d455400ae1b2d8
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/20/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-sql-server-and-r"></a>Trabalhando com o SQL Server e R
 
 O excelente suporte do Visual Studio para SQL Server ajuda os cientistas de dados a trabalhar com bancos de dados R e SQL por meio da capacidade de criar e executar consultas SQL e trabalhar com os procedimentos armazenados.
@@ -159,4 +156,3 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
 > [!Tip]
 > Se o Pesquisador de Objetos do SQL Server estiver aberto no Visual Studio, o procedimento armazenado publicado aparecerá na pasta **Programabilidade > Procedimentos Armazenados** do banco de dados. Você também pode executá-lo no Pesquisador de Objetos clicando com o botão direito do mouse e selecionando **Executar Procedimento** ou chamando-o interativamente de uma janela de consulta `.sql`.
-

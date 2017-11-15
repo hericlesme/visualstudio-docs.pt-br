@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,33 +14,17 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-caps.latest.revision: 11
-author: kempb
-ms.author: kempb
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 7ee0bae36003baff806dc010082668bec019a837
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 300ca6d9a3fd633b9cd20ad0436901e4080560e0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como alterar fontes e cores usadas no Editor
-<a id="how-to-change-fonts-and-colors-in-the-editor" class="xliff"></a>
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Como alterar fontes e cores usadas no Editor
 É possível alterar a face de fonte padrão, ajustar o tamanho da fonte e alterar as cores de primeiro plano e da tela de fundo para várias opções **Exibir itens** de texto no Editor de Código. Ao alterar as configurações de fonte, tenha em mente as seguintes informações:  
   
 -   As configurações de **Fonte** e **Tamanho** são globais para todos os elementos de texto em todos os editores [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -53,8 +36,7 @@ ms.lasthandoff: 05/24/2017
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos na **Ajuda**, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-### Para alterar a face de fonte padrão, o tamanho e as cores
-<a id="to-change-the-default-font-face-size-and-colors" class="xliff"></a>  
+### <a name="to-change-the-default-font-face-size-and-colors"></a>Para alterar a face de fonte padrão, o tamanho e as cores  
   
 1.  Selecione **Opções** no menu **Ferramentas** e, na pasta **Ambiente**, selecione **Fontes e Cores**.  
   
@@ -71,8 +53,7 @@ ms.lasthandoff: 05/24/2017
   
 5.  Clique em **OK**.  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Personalizando o editor](../../ide/customizing-the-editor.md)   
  [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)   
  [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)   

@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsGetOwnPropertyDescriptor
-helpviewer_keywords:
-- JsGetOwnPropertyDescriptor function
+f1_keywords: jsrt/JsGetOwnPropertyDescriptor
+helpviewer_keywords: JsGetOwnPropertyDescriptor function
 ms.assetid: 44c417ce-ab63-44eb-a0ab-19838e3ab34f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 026012613ee97f8bf4204a2b8d5bfc27de27e2ec
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsgetownpropertydescriptor-function"></a>Função JsGetOwnPropertyDescriptor
 Obtém um descritor de propriedade para uma propriedade do próprio objeto.  

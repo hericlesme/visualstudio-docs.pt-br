@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - objects, creating [JavaScript]
 - constructors, creating
 ms.assetid: e869702e-4caf-4513-8dd5-fe690535f8aa
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 0bff42606fda27e00a537cc227a0b636e016f7c6
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-constructors-to-define-types"></a>Usando construtores para definir tipos
 Um construtor é uma função que instancia um tipo específico de [Objeto](../../javascript/objects-and-arrays-javascript.md). Você invoca um construtor com a palavra-chave **new**. Veja a seguir alguns exemplos de construtores com objetos JavaScript internos e objetos personalizados.  

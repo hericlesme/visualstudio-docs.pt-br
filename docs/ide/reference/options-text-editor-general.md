@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -42,46 +41,31 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
 - VS.ToolsOptionsPages.Text_Editor.CSharp
+- VS.ToolsOptionsPages.Text_Editor.Python
+- VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-caps.latest.revision: 29
-author: kempb
-ms.author: kempb
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: eee3b34e9f473c200463b65f1b839416f5dce0ec
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 747e17f876972fb44f686fe90ad4e97fd035279e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Opções, Editor de Texto, Geral
-<a id="options-text-editor-general" class="xliff"></a>
+# <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
 Essa caixa de diálogo permite alterar as configurações globais para o Editor de Texto e Código do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para exibir essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e clique em **Geral**.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Configurações
-<a id="settings" class="xliff"></a>  
+## <a name="settings"></a>Configurações  
  Recurso de edição arrastar-e-soltar  
  Quando selecionado, permite mover texto selecionando-o e arrastando-o com o mouse para outro local no documento atual ou em qualquer outro documento aberto.  
   
@@ -94,14 +78,13 @@ Essa caixa de diálogo permite alterar as configurações globais para o Editor 
  Detecção automática de codificação UTF-8 sem assinatura  
  Por padrão, o editor detecta a codificação procurando por marcas de ordem de byte ou marcas de conjunto de caracteres. Se nenhum deles for encontrado no documento atual, o editor de códigos tenta detectar automaticamente a codificação UTF-8 examinando sequências de bytes. Para desabilitar a detecção automática da codificação, desmarque essa opção.  
   
-## Monitor
-<a id="display" class="xliff"></a>  
+## <a name="display"></a>Monitor  
  Margem de seleção  
  Quando selecionado, exibe uma margem vertical ao longo da borda esquerda da área de texto do editor. Você pode clicar nessa margem para selecionar uma linha de texto inteira ou clicar e arrastar para selecionar linhas consecutivas de texto.  
   
 |Margem de seleção ativada|Margem de seleção desativada|  
 |-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn screenshot](~/ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff screenshot](~/ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
+|![HTMLpageSelectionMarginOn screenshot](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff screenshot](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
   
  Margem de indicadores  
  Quando selecionado, exibe uma margem vertical fora da borda esquerda da área de texto do editor. Quando você clica nesta margem, um ícone e uma dica de ferramenta relacionados ao texto aparecem. Por exemplo, atalhos da lista de tarefas ou de pontos de interrupção aparecem na margem de indicadores. Informações da margem de indicadores não são impressas.  
@@ -115,8 +98,7 @@ Essa caixa de diálogo permite alterar as configurações globais para o Editor 
  Realçar linha atual  
  Quando selecionado, exibe uma caixa cinza ao redor da linha de código na qual o cursor está localizado.  
   
-## Consulte também
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Consulte também  
  [Opções, Editor de Texto, Todas as Linguagens](../../ide/reference/options-text-editor-all-languages.md)   
  [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [Opções, Editor de Texto, Extensão de Arquivo](../../ide/reference/options-text-editor-file-extension.md)   

@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Summary view
+helpviewer_keywords: Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6689f0e9ee158dd1b05d1ff666ba68b0d1840d29
-
+ms.openlocfilehash: 99865ecf81fbc7873fef43c51f543f224e281928
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="summary-view---resource-contention-view"></a>Exibição Resumo – Exibição de contenção de recursos
 A exibição Resumo exibe informações sobre os eventos no aplicativo nos quais um thread ou processo foi suspenso enquanto aguardava o acesso a um recurso.  
@@ -63,8 +47,3 @@ A exibição Resumo exibe informações sobre os eventos no aplicativo nos quais
 |**ID**|O identificador de thread.|  
 |**Nome**|O nome do processo que é o proprietário do thread.|  
 |**% de contenções**|O percentual de todos os eventos de contenção nos dados de criação de perfil que foram contenções sobre esse recurso.|
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -5,29 +5,25 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.WebClient.Help.General
+f1_keywords: VS.WebClient.Help.General
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords:
-- JavaScript
+helpviewer_keywords: JavaScript
 ms.assetid: 1c457e66-a6b2-4545-b2dd-33a59d8661e8
-caps.latest.revision: 62
+caps.latest.revision: "62"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 6f1b67e86120ae4604d12b53acdafd3e7f5f3b56
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="javascript-language-reference"></a>JavaScript Referência de linguagem
 O [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] é uma linguagem de scripts que pode ser inserida em páginas da Web e em outros aplicativos.  

@@ -7,21 +7,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords:
-- jsrt/JsSerializeScript
-helpviewer_keywords:
-- JsSerializeScript function
+f1_keywords: jsrt/JsSerializeScript
+helpviewer_keywords: JsSerializeScript function
 ms.assetid: ca42c194-e1c1-407d-b542-b9d494e3ac4e
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 92bc6c1de0f2cd43dfe9566413fb64188fd5a382
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="jsserializescript-function"></a>Função JsSerializeScript
 Serializa um script analisado para um buffer que pode ser reutilizado.  

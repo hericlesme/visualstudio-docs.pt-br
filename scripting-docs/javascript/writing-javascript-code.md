@@ -5,12 +5,10 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.htmldesigner.html
+f1_keywords: vs.htmldesigner.html
 dev_langs:
 - JavaScript
 - TypeScript
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - comments, JavaScript code
 - JavaScript code
 ms.assetid: dde28266-0d0f-4460-a819-f931cf0911ad
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: e50bc25f818724b59d9adda51f97d76ae14de2b4
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="writing-javascript-code"></a>Escrevendo código JavaScript
 Como muitas outras linguagens de programação, [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] é organizado em instruções, comentários e blocos consistindo de conjuntos de instruções relacionados. Dentro de uma instrução você pode usar variáveis, cadeias de caracteres, números e expressões.  

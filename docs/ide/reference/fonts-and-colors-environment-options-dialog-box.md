@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -27,30 +26,15 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 209ddbe4166e7818e5ea3a1a699f6a0f1ee096e0
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.  
@@ -93,17 +77,17 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
     > [!NOTE]
     >  Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.  
   
- **Usar Padrões**  
- Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.  
+**Usar Padrões**  
+Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.  
   
- **Fonte (o negrito indica fontes de largura fixa)**  
- Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.  
+**Fonte (o negrito indica fontes de largura fixa)**  
+Lista todas as fontes instaladas em seu sistema. Quando o menu suspenso aparece pela primeira vez, a fonte atual do elemento selecionado no campo **Mostrar configurações de** é realçada. Fontes fixas – que são mais fáceis de alinhar no editor – aparecem em negrito.  
   
- **Size**  
- Listas tamanhos de pontos disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.  
+**Size**  
+Listas tamanhos de pontos disponíveis para a fonte realçada. Alterar o tamanho da fonte afeta todos os **Itens de exibição** para a seleção **Mostrar configurações de**.  
   
- **Exibir itens**  
- Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.  
+**Exibir itens**  
+Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.  
   
 > [!NOTE]
 >  **Texto sem Formatação** é o item de exibição padrão. Sendo assim, propriedades atribuídas a **PlainText** serão substituídas por propriedades atribuídas a outros itens de exibição. Por exemplo, se você atribuir a cor azul a **PlainText** e a cor verde a **Identificador**, todos os identificadores serão exibidos em verde. Neste exemplo, as propriedades de **Identificador** substituem as propriedades em **PlainText**.  

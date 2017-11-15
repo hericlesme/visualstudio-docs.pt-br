@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,29 +12,15 @@ f1_keywords:
 - vs.performance.rules.DA0505
 - vs.performance.505
 ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bbeed40df7bf8e74ab8a47cae8689be60c4b4c95
-
+ms.openlocfilehash: 2c0b3bd538de0d38e4104a2769cb3e6ce079a7cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: média de bytes particulares alocados para o processo com criação de perfil
 |||  
@@ -61,8 +46,3 @@ ms.openlocfilehash: bbeed40df7bf8e74ab8a47cae8689be60c4b4c95
   
 ## <a name="how-to-use-rule-data"></a>Como usar dados de regra  
  Use o valor relatado para comparar o desempenho de diferentes versões ou compilações do programa ou para entender o desempenho do aplicativo em diferentes cenários de criação de perfil.
-
-
-<!--HONumber=Feb17_HO4-->
-
-

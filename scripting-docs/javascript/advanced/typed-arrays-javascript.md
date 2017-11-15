@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,16 +13,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: fa82c562-0ebf-4559-aecc-166e59f7fb64
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 5fc3b29a4593e7c627a6e606242229e87fa5be54
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="typed-arrays-javascript"></a>Matrizes Tipadas (JavaScript)
 Você pode usar matrizes tipadas para lidar com dados binários de fontes como protocolos de rede, formatos de arquivo binário e buffers de gráficos brutos. Matrizes tipadas também pode ser usadas para gerenciar dados binários na memória com layouts de bytes conhecidos.  

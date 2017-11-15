@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Lines view
+helpviewer_keywords: Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 161d6bc4adde40ed913b381d8296ad845c732734
-
+ms.openlocfilehash: 88b8169f5e0e53a76ff2b1bee61dc80f41a9f595
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="lines-view---contention-data"></a>Exibição de Linhas – Dados de Contenção
 A exibição de Linhas de dados de contenção lista os dados de desempenho das instruções que estavam em execução quando as amostras foram coletadas na criação de perfil. Em um arquivo de origem, uma instrução pode abranger mais de uma linha em um arquivo de origem, e uma única linha pode incluir mais de uma instrução.  
@@ -85,8 +69,3 @@ A exibição de Linhas de dados de contenção lista os dados de desempenho das 
  [Exibição de Linhas](../profiling/lines-view.md)   
  [Exibição de Linhas – Amostragem](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Exibição de Linhas](../profiling/lines-view-sampling-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

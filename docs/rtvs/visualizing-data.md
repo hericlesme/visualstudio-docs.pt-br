@@ -1,27 +1,24 @@
 ---
 title: Visualizando dados com as Ferramentas do R para Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 496619c9-4005-4c20-baf6-80b4bb1ceb56
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 48aaf1c8e02c1de84c36d8bff7d9b73eb4bd3af7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: af9627ba4eb245f4c4947b5d365449fce76c166c
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="creating-visual-data-plots-with-r"></a>Criando gráficos de dados visuais com R
 
 Criar gráficos é uma parte fundamental do fluxo de trabalho de um cientista de dados. Nas RTVS (Ferramentas do R para Visual Studio), todas as atividades de criação de gráficos giram em torno de uma ou mais janelas de gráficos, que são projetadas para melhorar a produtividade nesta importante atividade.
@@ -103,4 +100,3 @@ Você pode manipular as janelas de gráficos do código R de forma programática
 - `dev.new()`: criar um novo dispositivo de gráficos (uma nova janela de gráficos).
 - `dev.set(<device number>)`: definir o dispositivo de gráficos ativo.
 - `dev.off()`: excluir o dispositivo ativo.
-

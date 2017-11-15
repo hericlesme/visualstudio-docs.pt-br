@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vsperf.choosediffbinaries
+f1_keywords: vsperf.choosediffbinaries
 helpviewer_keywords:
 - profiling tools, how to compare profiler result files
 - profiler result files, how to compare
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8e02119f15f8505af519e2bd8153e59f5f0aee4a
-
+ms.openlocfilehash: b045646ffb5771d40cd7531d01ed33181dff9cc9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-compare-performance-data-files"></a>Como comparar arquivos de dados de desempenho
 Você pode comparar os resultados de dois arquivos de dados de criadores de perfil diferentes (.vsp ou .vsps), criando um relatório ou uma exibição de comparação ("Diff"). A comparação mostra as diferenças, regressões de desempenho e as melhorias que ocorreram de uma sessão de criação de perfil para a outra.  
@@ -74,8 +58,3 @@ Você pode comparar os resultados de dois arquivos de dados de criadores de perf
 2.  Na janela **Selecionar arquivos de análise para comparação**, procure e selecione o **Arquivo de Linha de Base** de análise (.vsp ou .vsps) e o **Arquivo de Comparação** (.vsp ou .vsps).  
   
 3.  Clique em **OK**.
-
-
-<!--HONumber=Feb17_HO4-->
-
-
