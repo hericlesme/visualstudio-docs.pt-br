@@ -1,13 +1,8 @@
 ---
 redirect_url: /visualstudio/msbuild/msbuild-glossary
-translationtype: Human Translation
-ms.sourcegitcommit: 72142f26abe092ee0750bdeadd625c10f1e3cbb9
 ms.openlocfilehash: 3c4c8f1f8762062247e65c35b2dcebda80edd25e
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-
-
-
-<!--HONumber=Feb17_HO4-->
-
-

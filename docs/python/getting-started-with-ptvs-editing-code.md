@@ -1,8 +1,8 @@
 ---
 redirect_url: /visualstudio/python/code-editing
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
 ms.openlocfilehash: e08be845db7a7a8f3c78f722a18d187efc90f809
-ms.lasthandoff: 03/07/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---

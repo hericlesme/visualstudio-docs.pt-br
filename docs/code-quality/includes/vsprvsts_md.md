@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: fe61f884afa1492cc0875dd72175c33f87b44c7a
+ms.openlocfilehash: 3eeb7999b5e2933f8fbe7d738ea4292da75fcbe2
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
 ---
-Para obter mais informações sobre
+Gerenciamento do Ciclo de Vida do Aplicativo no Visual Studio

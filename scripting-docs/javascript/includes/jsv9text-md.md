@@ -1,0 +1,1 @@
+Modo padrão do Internet Explorer 9, modo padrão do Internet Explorer 10, modo padrão do Explorer 11 e aplicativos da Windows Store
