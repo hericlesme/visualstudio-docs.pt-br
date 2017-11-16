@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 173811a4f2d9974755e2432822c801388403ab7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -36,14 +36,6 @@ As recomendações de desempenho do Visual Studio destinam-se a situações de b
 ## <a name="configure-solution-and-projects"></a>Configurar solução e projetos
 
 Se você tiver uma solução muito grande com vários projetos, poderá ser útil fazer as seguintes otimizações:
-
-- **Habilitar a carga de solução leve**
-
-    Usar a **Carga de solução leve** pode melhorar o desempenho de CPU e de memória, adiando a carga de alguns projetos na solução. Também é possível habilitar esse recurso por solução. Essa opção fica desativada por padrão.
-
-    Para habilitar a **Carga de solução leve**, escolha **Ferramentas > Opções > Projetos e Soluções > Carga de solução leve**.
-
-    Alguns recursos IDE não estão habilitados nesse modo. Para determinar se essa opção pode ajudar, confira [Tempo mais curto da carga de solução](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) e [Otimizar carregamento da solução](../ide/optimize-solution-loading-in-visual-studio.md).
 
 - **Descarregar projetos**
 

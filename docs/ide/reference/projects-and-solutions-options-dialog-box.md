@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f912a0aa6588895fb99da83396e2e5caf976e223
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: fee3419b6e041983fb3aa77cace5bb02e48e1b9a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Soluções e Projetos, caixa de diálogo Opções
 Define o comportamento de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] relacionado a projetos e soluções. Para acessar essas opções, selecione **Ferramentas > Opções**, expanda **Projetos e Soluções** e clique em **Geral**.
@@ -32,15 +32,7 @@ Os caminhos padrão para as pastas de projeto e de modelo são definidos por mei
 > [!NOTE]
 >  As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Esta página de Ajuda foi escrita considerando as **Configurações gerais de desenvolvimento**. Para exibir ou alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="general-tab-options"></a>Opções da guia Geral  
- 
-**Carregamento de Solução Leve** reduz o tempo e a memória necessários para carregar soluções grandes no IDE. Soluções grandes que contêm muitos projetos de C#, Visual Basic ou C++ provavelmente terão um benefício significativo em termos de desempenho usando o carregamento de solução leve.
-
-- **Deixar o Visual Studio escolher o que é melhor para minha solução**: permite que o Visual Studio determine automaticamente se deve aplicar o Carregamento de solução leve com base nas características da solução.
-- **Habilitado**: sempre aplica a Carga de solução leve ao carregar soluções.
-- **Desabilitado**: nunca aplica o Carregamento de solução leve.
-
-Para obter mais informações, consulte [Otimizar o tempo de inicialização do Visual Studio](../optimize-visual-studio-startup-time.md#speed_up_solution_load)
+## <a name="general-tab-options"></a>Opções da guia Geral
 
 **Sempre mostrar a Lista de Erros se houver erros após a conclusão do build**  
 Abre a janela **Lista de Erros** após a conclusão do build, somente se houve falha de build de um projeto. Os erros que ocorrem durante o processo de build são exibidos. Quando essa opção estiver desmarcada, os erros ainda ocorrerão, mas a janela não será aberta quando o build for concluído. Essa opção é habilitada por padrão.  

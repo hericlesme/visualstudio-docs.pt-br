@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8c26ad4d9df3fb8b84c5d8c93e213858bc2ccb67
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: dfccd737ae7017823fdf7f2a5112fd05c8900559
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="working-with-sql-server-and-r"></a>Trabalhando com o SQL Server e R
 
@@ -68,7 +68,7 @@ O vídeo a seguir (6m 09s) também fornece uma visão geral desses recursos:
 ### <a name="add-a-database-connection"></a>Adicionar uma conexão de banco de dados
 
 1. Selecione **Ferramentas do R > Dados > Adicionar Conexão de Banco de Dados** para trazer a caixa de diálogo **Propriedades da Conexão**. Aqui você especifica o nome da fonte de dados (SQL Server neste caso), o nome do servidor, o modo de autenticação e o nome do banco de dados. Selecione **Testar Conexão** para verificar sua entrada antes de fechar a caixa de diálogo.
- 
+
     ![Caixa de diálogo Conexão SQL](media/sql-connection-string-dialog.png)
 
 1. Depois de selecionar **OK** com uma conexão válida, o Visual Studio gera uma cadeia de conexão chamada `dbConnection` em um novo arquivo `settings.R`. As RTVS origina (executa) automaticamente esse arquivo, permitindo usar imediatamente a conexão dos scripts R:
@@ -78,7 +78,7 @@ O vídeo a seguir (6m 09s) também fornece uma visão geral desses recursos:
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Escrever e testar um procedimento armazenado SQL
 
 Para adicionar um novo procedimento armazenado SQL, clique com o botão direito do mouse em seu projeto, selecione **Adicionar > Novo Item...**, selecione **Procedimento Armazenado SQL com R** na lista de modelos, nomeie o arquivo (`StoredProcedure.R`, neste exemplo) e selecione **OK**.
- 
+
 As RTVS criam três arquivos para o procedimento armazenado: um arquivo `.R` para o código R, um arquivo `.Query.sql` para o código SQL e um arquivo `.Template.sql` que combina os dois arquivos. Os dois aparecem no Gerenciador de Soluções como filhos do arquivo `.R`:
 
 ![Exibição do Gerenciador de Soluções expandido com o procedimento armazenado SQL com R](media/sql-solution-explorer-expanded.png)
