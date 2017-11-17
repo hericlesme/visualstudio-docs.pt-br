@@ -1,40 +1,39 @@
 ---
-title: "Elemento &lt;RelatedProducts&gt; (bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MSBuild.GenerateBootstrapper.MissingDependency"
-  - "MSBuild.GenerateBootstrapper.DuplicateItems"
-  - "MSBuild.GenerateBootstrapper.IncludedProductIncluded"
-  - "MSBuild.GenerateBootstrapper.DependencyNotFound"
-  - "MSBuild.GenerateBootstrapper.PackageFileNotFound"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Elemento <RelatedProducts> [bootstrapper]"
+title: '&lt;RelatedProducts&gt; elemento (Bootstrapper) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MSBuild.GenerateBootstrapper.MissingDependency
+- MSBuild.GenerateBootstrapper.DuplicateItems
+- MSBuild.GenerateBootstrapper.IncludedProductIncluded
+- MSBuild.GenerateBootstrapper.DependencyNotFound
+- MSBuild.GenerateBootstrapper.PackageFileNotFound
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "12"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 4fa304f787c954b9ee89878e792e6f543f344f60
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Elemento &lt;RelatedProducts&gt; (bootstrapper)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-O `RelatedProducts` elemento define outros produtos que dependem ou estão incluídos no produto atual.  
+# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elemento (Bootstrapper)
+O `RelatedProducts` elemento define outros produtos que dependem de ou que estão incluídos no produto atual.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
 ```  
 <RelatedProducts>  
@@ -52,31 +51,31 @@ O `RelatedProducts` elemento define outros produtos que dependem ou estão inclu
 </RelatedProducts>  
 ```  
   
-## Elementos e atributos  
- O `RelatedProducts` elemento é filho de `Product` elemento.  Ela tem nenhum atributo.  
+## <a name="elements-and-attributes"></a>Elementos e atributos  
+ O `RelatedProducts` elemento é um filho de `Product` elemento. Ele não tem atributos.  
   
-## DependsOnProduct  
- O `DependsOnProduct` elemento significa que o produto atual depende do produto identificado e que o produto identificado deve ser instalado antes do atual.  Ele é um filho do `RelatedProducts` elemento.  A `RelatedProducts` elemento pode ter um ou mais `DependsOnProduct` elementos.  
+## <a name="dependsonproduct"></a>DependsOnProduct  
+ O `DependsOnProduct` elemento significa que o produto atual variam de acordo com o produto e que o produto deve ser instalado antes do ano atual. Ele é um filho de `RelatedProducts` elemento. Um `RelatedProducts` elemento pode ter um ou mais `DependsOnProduct` elementos.  
   
- `DependsOnProduct`tem o atributo a seguir.  
-  
-|Atributo|Descrição|  
-|--------------|---------------|  
-|`Code`|O nome do código do produto incluído, conforme especificado pelo `ProductCode` atributo da `Product` elemento.  Para obter mais informações, consulte [Elemento \<Product\>](../deployment/product-element-bootstrapper.md).|  
-  
-## EitherProducts  
- O `EitherProducts` elemento define zero ou mais `DependsOnProduct` elementos, e sem atributos.  Pelo menos um `DependsOnProduct` neste conjunto deve ser instalado antes do produto atual.  A `RelatedProducts` o elemento pode ter zero ou mais `EitherProducts` elementos.  
-  
-## IncludesProduct  
- O `IncludesProduct` elemento significa que um produto está incluído com a instalação atual e não requer uma instalação separada.  Ele é um filho do `RelatedProducts` elemento.  A `RelatedProducts` elemento pode ter um ou mais `IncludesProduct` elementos.  
-  
- `IncludesProduct`tem o atributo a seguir.  
+ `DependsOnProduct`tem o seguinte atributo.  
   
 |Atributo|Descrição|  
-|--------------|---------------|  
-|`Code`|O nome do código do produto incluído, conforme especificado pelo `ProductCode` atributo da `Product` elemento.  Para obter mais informações, consulte [Elemento \<Product\>](../deployment/product-element-bootstrapper.md).|  
+|---------------|-----------------|  
+|`Code`|O nome do código do produto incluído, conforme especificado pelo `ProductCode` atributo o `Product` elemento. Para obter mais informações, consulte [ \<produto > elemento](../deployment/product-element-bootstrapper.md).|  
   
-## Exemplo  
+## <a name="eitherproducts"></a>EitherProducts  
+ O `EitherProducts` elemento define zero ou mais `DependsOnProduct` elementos, e sem atributos. Pelo menos um `DependsOnProduct` neste conjunto deve ser instalado antes do produto atual. Um `RelatedProducts` elemento pode ter zero ou mais `EitherProducts` elementos.  
+  
+## <a name="includesproduct"></a>IncludesProduct  
+ O `IncludesProduct` elemento significa que um produto é incluído com a instalação atual e não requer uma instalação separada. Ele é um filho de `RelatedProducts` elemento. Um `RelatedProducts` elemento pode ter um ou mais `IncludesProduct` elementos.  
+  
+ `IncludesProduct`tem o seguinte atributo.  
+  
+|Atributo|Descrição|  
+|---------------|-----------------|  
+|`Code`|O nome do código do produto incluído, conforme especificado pelo `ProductCode` atributo o `Product` elemento. Para obter mais informações, consulte [ \<produto > elemento](../deployment/product-element-bootstrapper.md).|  
+  
+## <a name="example"></a>Exemplo  
  O exemplo de código a seguir especifica que o Microsoft Installer é instalado com o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]e, portanto, não será necessário uma instalação separada.  
   
 ```  
@@ -85,5 +84,5 @@ O `RelatedProducts` elemento define outros produtos que dependem ou estão inclu
 </RelatedProducts>  
 ```  
   
-## Consulte também  
- [Elemento \<Product\>](../deployment/product-element-bootstrapper.md)
+## <a name="see-also"></a>Consulte também  
+ [\<Produto > elemento](../deployment/product-element-bootstrapper.md)

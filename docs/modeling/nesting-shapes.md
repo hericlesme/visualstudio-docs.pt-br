@@ -1,5 +1,5 @@
 ---
-title: Aninhando formas | Documentos do Microsoft
+title: Formas de aninhamento | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,29 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 53066a5d-5b0c-4f60-adf1-60ac81cb9ab1
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b907394b1a52256bae0af5c96b0d76d8338f9525
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: adc7b8611b3a79d82263c5fa5dde3b15cf3a46e5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="nesting-shapes"></a>Aninhando formas
 Consulte [blog de Jean-Marc Prieur](http://blogs.msdn.com/b/jmprieur/archive/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1.aspx)

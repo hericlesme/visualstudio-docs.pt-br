@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produto&gt; elemento (Bootstrapper) | Microsoft Docs'
+title: "Referência de esquema de pacote e produto | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,147 +7,56 @@ ms.suite:
 ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
+f1_keywords:
+- MSBuild.GenerateBootstrapper.CircularIncludes
+- MSBuild.ResolveManifestFiles.PublishFileNotFound
 dev_langs:
 - FSharp
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <product> element [bootstrapper]
-ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-caps.latest.revision: "8"
+helpviewer_keywords:
+- ClickOnce, product and package files
+- Windows Installer, product and package files
+- product files [ClickOnce]
+- ClickOnce, bootstrapper elements
+- package files [Windows Installer]
+- product files [Windows Installer]
+- package files [ClickOnce]
+- Windows Installer, bootstrapper elements
+ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
+caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c115fa5cb7191ab1edcff3005620d9ac7835f8a0
+ms.openlocfilehash: ad3f3df67fe2545aadc8da71b89e600895cea780
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produto&gt; elemento (Bootstrapper)
-O `Product` é o elemento XML de nível superior dentro de um arquivo de produto.  
+# <a name="product-and-package-schema-reference"></a>Referência de esquema de produto e pacote
+Um *arquivo produto* é um manifesto XML que descreve todas as dependências externas exigidas por um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Exemplos de dependências externas a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e o Microsoft Data Access Components (MDAC). Um arquivo de pacote é semelhante a um arquivo de produto, mas é usado para instalar os componentes dependentes de cultura de uma dependência, como assemblies localizados, contratos de licença e documentação.  
   
-## <a name="syntax"></a>Sintaxe  
+ O arquivo de produto e pacotes consiste em um nível superior `Product` ou `Package` elemento, cada uma delas contém os seguintes elementos.  
   
-```  
-<Product  
-ProductCode  
->  
-    <RelatedProducts>  
-        <IncludesProduct  
-            Code  
-        >  
-    </RelatedProducts>  
+|Elemento|Descrição|Atributos|  
+|-------------|-----------------|----------------|  
+|[\<Produto > elemento](../deployment/product-element-bootstrapper.md)|Elemento de nível superior necessário para arquivos de produto.|Nenhum|  
+|[\<Pacote > elemento](../deployment/package-element-bootstrapper.md)|Elemento de nível superior necessário para arquivos de pacote.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts > elemento](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para arquivos de produto. Os outros produtos que este produto instala ou depende.|Nenhum|  
+|[\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)|Elemento obrigatório. Verifica se a dependência listas para executar no computador local durante a instalação.|Nenhum|  
+|[\<Comandos > elemento](../deployment/commands-element-bootstrapper.md)|Elemento obrigatório.  Executa uma ou mais verificações de instalação, conforme descrito pelo `InstallChecks`e indica qual pacote de instalação deve a verificação falhar.|Nenhum|  
+|[\<PackageFiles > elemento](../deployment/packagefiles-element-bootstrapper.md)|Elemento obrigatório. Lista os pacotes que podem ser instalados por esse processo de instalação.|Nenhum|  
+|[\<Cadeias de caracteres > elemento](../deployment/strings-element-bootstrapper.md)|Elemento obrigatório. Armazena as versões localizadas das cadeias de caracteres de erro e de nome de produto.|Nenhum|  
   
-    <InstallChecks>  
-        <AssemblyCheck   
-            Property  
-            Name  
-            PublicKeyToken  
-            Version  
-            Language  
-            ProcessorArchitecture  
-        />  
-        <RegistryCheck  
-            Property  
-            Key  
-            Value  
-        />  
-        <ExternalCheck   
-            PackageFile  
-            Property  
-            Arguments  
-            Log  
-        />  
-        <FileCheck   
-            Property  
-            FileName  
-            SearchPath  
-            SpecialFolder  
-            SearchDepth  
-        />  
-        <MsiProductCheck   
-            Property  
-            Product  
-            Feature  
-        />  
-        <RegistryFileCheck   
-            Property  
-            Key  
-            Value  
-            File  
-            SearchDepth  
-        />  
-    </InstallChecks>  
+## <a name="remarks"></a>Comentários  
+ O esquema do pacote é consumido pelos Setup.exe, um programa de stub gerado pela tarefa de inicialização de Build MS que contém pouca lógica embutida de seu próprio. O esquema controla todos os aspectos do processo de instalação.  
   
-    <Commands  
-        Reboot  
-    >  
-        <Command  
-            PackageFile  
-            Arguments  
-            EstimatedInstallSeconds  
-            EstimatedDiskBytes  
-            EstimatedTempBytes  
-            Log  
-        >  
-            <InstallConditions>  
-                <BypassIf   
-                    Property  
-                    Compare  
-                    Value  
-                    Schedule  
-                />  
-                <FailIf   
-                    Property  
-                    Compare  
-                    Value  
-                    String  
-                    Schedule  
-                />  
-            </InstallConditions>  
-            <ExitCodes>  
-                <ExitCode   
-                    Value  
-                    Result  
-                    String  
-                />  
-            </ExitCodes>  
-        </Command>  
-    </Commands>  
-  
-    <PackageFiles  
-        CopyAllComponents  
-    >  
-        <PackageFile   
-            Name  
-            Path  
-            HomeSite  
-            PublicKey  
-        />  
-    </PackageFiles>  
-  
-    <Schedules>  
-        <Schedule  
-            Name  
-        >  
-           <BuildList />  
-           <BeforePackage />  
-           <AfterPackage />  
-        </Schedule>  
-    </Schedules>  
-</Package>  
-```  
-  
-## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `Product` elemento é necessário em um arquivo de produto. Ele tem o seguinte atributo.  
-  
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`ProductCode`|Um identificador exclusivo para o produto.|  
+ `InstallChecks`os testes que setup.exe deve executar a existência de um determinado pacote. `PackageFiles`lista todos os pacotes que o processo de instalação pode ter para instalar, se um determinado teste falhar. Cada entrada de comando em comandos executa um dos testes descritos por `InstallChecks`e especifica quais `PackageFile` executar deve o teste falhar. Você pode usar o `Strings` elemento para localizar nomes de produtos e mensagens de erro, para que você pode usar uma única instalação binária para instalar seu aplicativo para qualquer número de idiomas.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir mostra um arquivo completa do produto para instalar o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ O exemplo de código a seguir demonstra um arquivo completa do produto para instalar o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -252,4 +161,5 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
+ [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)   
+ [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

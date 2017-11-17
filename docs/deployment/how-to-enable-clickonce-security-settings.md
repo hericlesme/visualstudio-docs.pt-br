@@ -1,65 +1,65 @@
 ---
-title: "Como habilitar configura&#231;&#245;es de seguran&#231;a do ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "implantação ClickOnce, configurações de segurança"
-  - "segurança [Visual Studio], Aplicativos ClickOnce"
-  - "configurações de segurança, implantação ClickOnce"
+title: "Como: Ativar configurações de segurança do ClickOnce | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- security [Visual Studio], ClickOnce applications
+- ClickOnce deployment, security settings
+- security settings, ClickOnce deployment
 ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 7fc7df79f798596901d74d089baf1b84f1dcd152
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Como habilitar configura&#231;&#245;es de seguran&#231;a do ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Segurança de acesso ao código para aplicativos de ClickOnce deve ser habilitada para publicar o aplicativo.  Isso é feito automaticamente quando você publica um aplicativo usando o assistente Publicar.  
+# <a name="how-to-enable-clickonce-security-settings"></a>Como habilitar configurações de segurança do ClickOnce
+Segurança de acesso ao código para aplicativos ClickOnce deve ser habilitada para publicar o aplicativo. Isso é feito automaticamente quando você publica um aplicativo usando o Assistente de publicação.  
   
- Em alguns casos, permitindo que a segurança de acesso ao código pode afetar o desempenho quando compilar ou depurar seu aplicativo; Nesses casos, talvez você queira desativar temporariamente as configurações de segurança.  
+ Em alguns casos, habilitando a segurança de acesso de código pode afetar o desempenho quando compilar ou depurar seu aplicativo. Nesses casos, talvez você queira desabilitar temporariamente as configurações de segurança.  
   
- ClickOnce as configurações de segurança podem ser ativadas ou desativadas no  **Security** página da  **Project Designer**.  
+ Configurações de segurança do ClickOnce podem ser habilitadas ou desabilitadas a **segurança** página do **Project Designer**.  
   
-### Para ativar as configurações de segurança de ClickOnce  
+### <a name="to-enable-clickonce-security-settings"></a>Para habilitar as configurações de segurança do ClickOnce  
   
-1.  Com um projeto selecionado no  **Solution Explorer**diante do  **projeto**  menu, clique em  **Propriedades**.  
+1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique na guia **Security**.  
+2.  Clique na guia **Segurança**.  
   
-3.  Selecione o  **Ativar configurações de segurança de ClickOnce** caixa de seleção.  
+3.  Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
   
-     Agora você pode personalizar as configurações de segurança para seu aplicativo na página segurança.  
+     Agora você pode personalizar as configurações de segurança para seu aplicativo na página de segurança.  
   
     > [!NOTE]
-    >  Esta caixa de seleção é selecionada automaticamente sempre que o aplicativo é publicado com o  **Publicar** assistente.  
+    >  Essa caixa de seleção é selecionada automaticamente cada vez que o aplicativo é publicado com o **publicar** assistente.  
   
-### Para desativar as configurações de segurança de ClickOnce  
+### <a name="to-disable-clickonce-security-settings"></a>Para desabilitar as configurações de segurança do ClickOnce  
   
-1.  Com um projeto selecionado no  **Solution Explorer**diante do  **projeto**  menu, clique em  **Propriedades**.  
+1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique na guia **Security**.  
+2.  Clique na guia **Segurança**.  
   
-3.  Limpar o  **Ativar configurações de segurança de ClickOnce** caixa de seleção.  
+3.  Limpar o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
   
-     Seu aplicativo será executado com as configurações de segurança confiança total; quaisquer configurações de  **Security** página será ignorada.  
+     O aplicativo será executado com as configurações de segurança de confiança total; todas as configurações do **segurança** página será ignorada.  
   
     > [!NOTE]
-    >  Cada vez que o aplicativo é publicado com o Assistente de publicação, esta caixa de seleção será selecionada; Você deve limpá\-lo novamente após cada publicação bem\-sucedida.  
+    >  Cada vez que o aplicativo é publicado com o Assistente de publicação, essa caixa de seleção será selecionada; é necessário desmarcá-la novamente depois de cada publicação bem-sucedida.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
+ 

@@ -1,37 +1,36 @@
 ---
-title: "Elemento &lt;Strings&gt; (bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MSBuild.GenerateBootstrapper.NoStringsForCulture"
-  - "MSBuild.GenerateBootstrapper.ProductCultureNotFound"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Elemento <Strings> [bootstrapper]"
+title: '&lt;Cadeias de caracteres&gt; elemento (Bootstrapper) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MSBuild.GenerateBootstrapper.NoStringsForCulture
+- MSBuild.GenerateBootstrapper.ProductCultureNotFound
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "4"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Elemento &lt;Strings&gt; (bootstrapper)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Define as seqüências de caracteres localizadas para nomes de produtos, nomes de pacote e mensagens de erro de instalação.  
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadeias de caracteres&gt; elemento (Bootstrapper)
+Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pacote e mensagens de erro de instalação.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
 ```  
 <Strings>  
@@ -42,20 +41,20 @@ Define as seqüências de caracteres localizadas para nomes de produtos, nomes d
 </Strings>  
 ```  
   
-## Elementos e atributos  
- O `Strings` elemento é filho de `Package` elemento.  Ela tem nenhum atributo.  
+## <a name="elements-and-attributes"></a>Elementos e atributos  
+ O `Strings` elemento é um filho de `Package` elemento. Ele não tem atributos.  
   
-## String  
- O `String` elemento é filho de `Strings` elemento.  A `Strings` elemento pode ter um ou mais `String` elementos.  
+## <a name="string"></a>Cadeia de caracteres  
+ O `String` elemento é um filho de `Strings` elemento. Um `Strings` elemento pode ter um ou mais `String` elementos.  
   
- `String`tem o atributo a seguir.  
+ `String`tem o seguinte atributo.  
   
 |Atributo|Descrição|  
-|--------------|---------------|  
-|`Name`|Obrigatório.  O nome da seqüência de caracteres.|  
+|---------------|-----------------|  
+|`Name`|Necessário. O nome da cadeia de caracteres.|  
   
-## Exemplo  
- O exemplo de código a seguir especifica que todas as seqüências em inglês para o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installer.  
+## <a name="example"></a>Exemplo  
+ O exemplo de código a seguir especifica que todas as cadeias de caracteres em inglês para o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installer.  
   
 ```  
 <Strings>  
@@ -76,5 +75,5 @@ Define as seqüências de caracteres localizadas para nomes de produtos, nomes d
 </Strings>  
 ```  
   
-## Consulte também  
- [Elemento \<Package\>](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Consulte também  
+ [\<Pacote > elemento](../deployment/package-element-bootstrapper.md)
