@@ -1,5 +1,5 @@
 ---
-title: T4 Diretivas de modelo de texto | Documentos do Microsoft
+title: T4 Diretivas de modelo de texto | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -14,29 +14,15 @@ helpviewer_keywords:
 - text templates, directives
 - text templates, template directive
 ms.assetid: 6898ee02-ebb2-4635-a4e9-350774c13cf2
-caps.latest.revision: 81
+caps.latest.revision: "81"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 63e07b4fbdc122411ccfa1db8bf78d8d3fc21ebf
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e4f3dd4d84e52c8ae98cd5ae2dd8b93ac1e69c59
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="t4-text-template-directives"></a>Diretivas de modelo de texto T4
 As diretivas fornecem instruções para o mecanismo de transformação do modelo de texto.  

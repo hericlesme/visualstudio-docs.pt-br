@@ -1,40 +1,42 @@
 ---
-title: "Rethrow Activity Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.Rethrow.UI"
+title: "Designer de atividade de relançar | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 1a41dd3b640b53689f8eb3ef3c0a02cd3e191df7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Rethrow Activity Designer
-O designer de atividade de **Relançar** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Rethrow> .  
+# <a name="rethrow-activity-designer"></a>Designer de atividade de Relançar
+O **relançar** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Rethrow> atividade.  
   
-## A atividade de Relançar  
- A atividade de <xref:System.Activities.Statements.Rethrow> lança uma exceção lançada anteriormente.  Esta atividade somente pode ser usada em um manipulador de <xref:System.Activities.Statements.Catch> na atividade de <xref:System.Activities.Statements.TryCatch> .  
+## <a name="the-rethrow-activity"></a>A atividade de Relançar  
+ A atividade de <xref:System.Activities.Statements.Rethrow> lança uma exceção lançada anteriormente. Esta atividade somente pode ser usada em um manipulador de <xref:System.Activities.Statements.Catch> na atividade de <xref:System.Activities.Statements.TryCatch> .  
   
-### Usando o designer de atividade de Relançar  
- O designer de atividade de **Relançar** pode ser encontrado na categoria de **Tratamento de Erros** de **Caixa de Ferramentas**, que é acessada clicando na guia **Caixa de Ferramentas** no lado esquerdo de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] \(como alternativa, **Barra de Ferramentas** partir do menu de **Modo de Visualização** ou CTRL\+ALT\+X.\)  
+### <a name="using-the-rethrow-activity-designer"></a>Usando o designer de atividade de Relançar  
+ O **relançar** designer de atividade pode ser encontrado no **tratamento de erros** categoria do **caixa de ferramentas**, que é acessado clicando o **ferramentas**guia no lado esquerdo do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)  
   
- O designer de atividade de **Relançar** pode ser arrastado de **Caixa de Ferramentas** e ser solto sobre a superfície de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] onde quer que as atividades são colocadas em geral, como em <xref:System.Activities.Statements.Sequence>.  Isso cria uma atividade de <xref:System.Activities.Statements.Rethrow> com uma opção **DisplayName** throw.  O valor de <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **Relançar** ou na caixa de **DisplayName** da grade de propriedade.  
+ O **relançar** designer de atividades pode ser arrastado o **caixa de ferramentas** e removidos no [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superfície onde quer que as atividades geralmente são colocados, tais como dentro um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.Rethrow> atividade com um padrão **DisplayName** de Throw. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **relançar** designer de atividade ou o **DisplayName** caixa da grade de propriedade.  
   
-### As propriedades de Relançar  
+### <a name="the-rethrow-properties"></a>As propriedades de Relançar  
  A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Rethrow> e descreve como elas são usadas no designer.  
   
-|Nome da propriedade|Obrigatório|Uso|  
-|-------------------------|-----------------|---------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.ReThrow> .  O padrão é Relançar.|  
+|Nome da Propriedade|Necessária|Uso|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.Rethrow> . O padrão é Relançar.|  
   
-## Consulte também  
- [Collection](../workflow-designer/collection-activity-designers.md)   
+## <a name="see-also"></a>Consulte também  
+ [Coleção](../workflow-designer/collection-activity-designers.md)   
  [Throw](../workflow-designer/throw-activity-designer.md)   
  [TryCatch](../workflow-designer/trycatch-activity-designer.md)

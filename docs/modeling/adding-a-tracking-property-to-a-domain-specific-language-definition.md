@@ -11,30 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
 ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: a126524672b0b827d278d2d76c01d907c9d403a1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ef5f86cb3b41af6cc9e7432cdbfb7365471320b8
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionando uma propriedade de acompanhamento a uma definição de linguagem específica do domínio
 Este passo a passo mostra como adicionar uma propriedade de controle a um modelo de domínio.  
@@ -120,7 +105,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
   
 3.  Para o **ExampleElement** domínio classe, adicione uma propriedade de domínio chamada `Namespace`.  
   
-     No **propriedades** janela para a nova propriedade, defina **é navegável** para **False**e defina **tipo** para **CustomStorage **.  
+     No **propriedades** janela para a nova propriedade, defina **é navegável** para **False**e defina **tipo** para **CustomStorage** .  
   
 4.  Para o **ExampleElement** domínio classe, adicione uma propriedade de domínio chamada `IsNamespaceTracking`.  
   
@@ -748,7 +733,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
   
 4.  Arraste um **ExampleElement** elemento a partir de **caixa de ferramentas** à superfície do diagrama.  
   
-5.  No **propriedades** janela para o elemento, selecione o **Namespace do elemento** propriedade e altere o valor de **DefaultNamespace** para ** OtherNamespace**.  
+5.  No **propriedades** janela para o elemento, selecione o **Namespace do elemento** propriedade e altere o valor de **DefaultNamespace** para  **OtherNamespace**.  
   
      Observe que o valor de **Namespace do elemento** agora é mostrado em negrito.  
   
@@ -766,7 +751,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
   
 9. Alterar **Namespace padrão** para o diagrama de **DefaultNamespace** para **NewNamespace**.  
   
-     O **Namespace** as faixas de elemento primeiro o **Namespace padrão** propriedade, enquanto o **Namespace** do segundo elemento retém seu valor de usuário atualizadas de ** OtherNamespace**.  
+     O **Namespace** as faixas de elemento primeiro o **Namespace padrão** propriedade, enquanto o **Namespace** do segundo elemento retém seu valor de usuário atualizadas de  **OtherNamespace**.  
   
 10. Salve a solução e, em seguida, feche a compilação experimental.  
   
@@ -778,4 +763,3 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Como criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md)   
-

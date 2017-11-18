@@ -1,46 +1,49 @@
 ---
-title: "Workflow Designer UI Help | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "Visual Studio 2010 Workflow Designer [WFD], user interface help"
-  - "Workflow Designer [WFD], user interface help"
+title: "Ajuda de interface de usuário de Designer de fluxo de trabalho | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- Visual Studio 2010 Workflow Designer [WFD], user interface help
+- Workflow Designer [WFD], user interface help
 ms.assetid: f7afc443-7c7f-4b0f-9517-c58070a640de
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: f83c2055ce8e8872b32bb7e7ab735a04bffcd553
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Workflow Designer UI Help
-Esta seção contém tópicos da Ajuda contextuais para [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].  Ao trabalhar em [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)], você pode acessar esses tópicos de interface do usuário pressionar **F1** quando uma caixa de diálogo [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] é aberta.  
+# <a name="workflow-designer-ui-help"></a>Ajuda de Designer de Fluxo de Trabalho interface de usuário
+Esta seção contém tópicos da Ajuda contextuais para [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Ao trabalhar em [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], você pode acessar esses tópicos da interface do usuário, pressionando **F1** quando um [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] caixa de diálogo é aberta.  
   
  Esta seção também contém vários tópicos preocupados com navegação e mensagens de erro.  
   
-## Nesta seção  
- [Browse and Select a .NET Type Dialog Box](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)  
+## <a name="in-this-section"></a>Nesta seção  
+ [Caixa de diálogo Procurar e Selecionar um Tipo .Net](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)  
   
- [CorrelatesOn Definition Dialog Box](../workflow-designer/correlateson-definition-dialog-box.md)  
+ [Caixa de diálogo Definição de CorrelatesOn](../workflow-designer/correlateson-definition-dialog-box.md)  
   
- [Add CorrelationInitializers Dialog Box](../workflow-designer/add-correlationinitializers-dialog-box.md)  
+ [Caixa de diálogo Adicionar CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md)  
   
- [Add Parameters and Add Arguments Dialog Boxes](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)  
+ [Caixas de diálogo Adicionar Parâmetros e Adicionar Argumentos](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)  
   
- [Type Collection Editor Dialog Box](../workflow-designer/type-collection-editor-dialog-box.md)  
+ [Caixa de diálogo Editor de Coleção de Tipos](../workflow-designer/type-collection-editor-dialog-box.md)  
   
- [Content Definition Dialog Box](../workflow-designer/content-definition-dialog-box.md)  
+ [Caixa de diálogo Definição de Conteúdo](../workflow-designer/content-definition-dialog-box.md)  
   
- [Initialize Correlation Dialog Box](../workflow-designer/initialize-correlation-dialog-box.md)  
+ [Caixa de diálogo Inicializar Correlação](../workflow-designer/initialize-correlation-dialog-box.md)  
   
- [System.Activities Tab, Choose Toolbox Items Dialog Box](../workflow-designer/system-activities-tab-choose-toolbox-items-dialog-box.md)  
+ [Guia System.Activities, caixa de diálogo Escolher Itens da Caixa de Ferramentas](../workflow-designer/system-activities-tab-choose-toolbox-items-dialog-box.md)  
   
- [Workflow Designer Shell Features](../workflow-designer/workflow-designer-shell-features.md)  
+ [Recurso Shell de Designer de Fluxo de Trabalho](../workflow-designer/workflow-designer-shell-features.md)  
   
- [Keyboard Shortcuts](../workflow-designer/keyboard-shortcuts-in-the-workflow-designer.md)  
+ [Atalhos de teclado](../workflow-designer/keyboard-shortcuts-in-the-workflow-designer.md)  
   
- [Error Messages](../workflow-designer/error-messages-in-workflow-designer.md)
+ [Mensagens de Erro](../workflow-designer/error-messages-in-workflow-designer.md)

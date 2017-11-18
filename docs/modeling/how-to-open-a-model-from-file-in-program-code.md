@@ -1,5 +1,5 @@
 ---
-title: "Como: abrir um modelo de arquivo no código do programa | Documentos do Microsoft"
+title: "Como: abrir um modelo de arquivo no código do programa | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,57 +7,57 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: d225f991d7d0160f261c4a7c25c1251564a8b97b
-ms.lasthandoff: 02/22/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Como abrir um modelo a partir de um arquivo no código do programa
 Você pode abrir modelos DSL em qualquer aplicativo.  
   
- De um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensão, você pode usar o ModelBus para essa finalidade. ModelBus fornece um mecanismo padrão para fazer referência a elementos em um modelo ou um modelo e localizar o modelo se tiver movido. Para obter mais informações, consulte [integrando modelos usando o Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
+ De um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensão, você pode usar ModelBus para essa finalidade. ModelBus fornece um mecanismo padrão para fazer referência a elementos em um modelo ou um modelo e para localizar o modelo se ela foi movida. Para obter mais informações, consulte [integrar modelos usando o Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
   
 ## <a name="target-framework"></a>Estrutura de Destino  
- Definir o **Target framework** de seu projeto de aplicativo **.NET Framework 4**.  
+ Definir o **framework de destino** de seu projeto de aplicativo para **.NET Framework 4**.  
   
 #### <a name="to-set-the-target-framework"></a>Para definir a estrutura de destino  
   
 1.  Abra o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto para o aplicativo no qual você deseja ler um modelo DSL.  
   
-2.  Em **Solution Explorer**, com o botão direito no projeto e, em seguida, clique em **propriedades**.  
+2.  Em **Solution Explorer**, clique com o botão direito e, em seguida, clique em **propriedades**.  
   
-3.  Na janela de propriedades do projeto, no **aplicativo** guia, defina o **Target framework** campo **.NET Framework 4**.  
+3.  Na janela de propriedades do projeto, no **aplicativo** guia, defina o **framework de destino** campo **.NET Framework 4**.  
   
 > [!NOTE]
 >  Talvez seja necessário fazer isso, mesmo se você selecionou **.NET Framework 4** na caixa de diálogo de criação do projeto. A estrutura de destino não deve ser **.NET Framework 4 Client Profile**.  
   
 ## <a name="references"></a>Referências  
- Você precisa adicionar estas referências ao seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto de aplicativo:  
+ Você precisa adicionar essas referências para seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto de aplicativo:  
   
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   Se você não vir isso no **.NET** guia de **adicionar referências** caixa de diálogo, clique o **procurar** guia e navegue até `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
+    -   Se você não vir isso sob o **.NET** guia o **adicionar referências** caixa de diálogo, clique no **procurar** guia e navegue até `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   O assembly DSL, que você encontrará na pasta bin do projeto DSL. Normalmente é o nome do formulário: *suaempresa*.* Projeto*`.Dsl.dll`.  
+-   O assembly DSL, que pode ser localizado na pasta bin do seu projeto DSL. Normalmente é o nome do formulário: *suaempresa*. *YourProject*`.Dsl.dll`.  
   
-## <a name="important-classes-in-the-dsl"></a>Classes importantes na DSL  
- Antes de escrever o código que lê a DSL, você deve saber os nomes de algumas das classes geradas pelo seu DSL. Em sua solução DSL, abra o **Dsl** do projeto e examinar o **GeneratedCode** pasta. Como alternativa, clique duas vezes no assembly em seu projeto DSL **referências**e abra o namespace DSL no **Pesquisador de objetos**.  
+## <a name="important-classes-in-the-dsl"></a>Classes importantes em DSL  
+ Antes de escrever o código que lê o DSL, você deve saber os nomes de algumas das classes geradas pelo seu DSL. Em sua solução DSL, abra o **Dsl** de projeto e procure o **GeneratedCode** pasta. Como alternativa, clique duas vezes o assembly DSL em seu projeto **referências**e abra o namespace DSL em **Pesquisador de objetos**.  
   
- Essas são as classes que você deve identificar:  
+ Estas são as classes que você deve identificar:  
   
--   *YourDslRootClass* -esse é o nome da classe raiz em seu `DslDefinition.dsl`.  
+-   *YourDslRootClass* -este é o nome da classe raiz no seu `DslDefinition.dsl`.  
   
--   *YourDslName* `SerializationHelper` -essa classe é definida em `SerializationHelper.cs` em seu projeto DSL.  
+-   *YourDslName* `SerializationHelper` -essa classe é definida no `SerializationHelper.cs` em seu projeto DSL.  
   
--   *YourDslName* `DomainModel` -essa classe é definida em `DomainModel.cs` em seu projeto DSL.  
+-   *YourDslName* `DomainModel` -essa classe é definida no `DomainModel.cs` em seu projeto DSL.  
   
-## <a name="reading-from-a-file"></a>Ler de um arquivo  
- O exemplo a seguir foi projetado para ler uma DSL na qual as classes importantes são os seguintes:  
+## <a name="reading-from-a-file"></a>Leitura de um arquivo  
+ O exemplo a seguir foi projetado para ler uma DSL na qual as classes importantes são as seguintes:  
   
 -   FamilyTreeModel  
   
@@ -65,7 +65,7 @@ Você pode abrir modelos DSL em qualquer aplicativo.
   
 -   FamilyTreeDomainModel  
   
- A outra classe de domínio essa DSL é a pessoa.  
+ A outra classe de domínio neste DSL é a pessoa.  
   
 ```  
 using System;  
@@ -103,8 +103,8 @@ namespace StandaloneReadDslConsole
 } } } }  
 ```  
   
-## <a name="saving-to-a-file"></a>Salvar um arquivo  
- As seguintes adições ao código anterior faz uma alteração no modelo e salva-o em um arquivo.  
+## <a name="saving-to-a-file"></a>Salvar em um arquivo  
+ As seguintes adições para o código anterior faz uma alteração no modelo e, em seguida, salva-o em um arquivo.  
   
 ```  
 using (Transaction t =  

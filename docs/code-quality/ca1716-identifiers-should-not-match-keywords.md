@@ -1,55 +1,55 @@
 ---
-title: "CA1716: os identificadores n&#227;o devem corresponder a palavras-chave | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldNotMatchKeywords"
-  - "CA1716"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotMatchKeywords"
-  - "CA1716"
+title: "CA1716: Os identificadores não devem corresponder a palavras-chave | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldNotMatchKeywords
+- CA1716
+helpviewer_keywords:
+- IdentifiersShouldNotMatchKeywords
+- CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
-caps.latest.revision: 21
-caps.handback.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 619fc7867d14a26f2c3b674b4b8ac8b2d8fba114
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1716: os identificadores n&#227;o devem corresponder a palavras-chave
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: os identificadores não devem corresponder a palavras-chave
 |||  
 |-|-|  
-|TypeName|IdentifiersShouldNotMatchKeywords|  
+|NomeDoTipo|IdentifiersShouldNotMatchKeywords|  
 |CheckId|CA1716|  
 |Categoria|Microsoft.Naming|  
 |Alteração Significativa|Quebra|  
   
-## Causa  
- Um nome de um namespace, de um tipo, ou um membro viritual ou da interface corresponda a uma palavra\-chave reservada em uma linguagem de programação.  
+## <a name="cause"></a>Causa  
+ Um nome de um namespace, um tipo ou um membro de interface ou viritual corresponde a uma palavra-chave reservada em uma linguagem de programação.  
   
-## Descrição da Regra  
- Os identificadores de namespaces, tipos e membros virtuais e da interface não devem corresponder às palavras\-chave que são definidos pelos idiomas que visam Common Language Runtime.  Dependendo do idioma usado e a palavra\-chave, os erros e as ambiguidades do compilador pode fazer a biblioteca difícil usar.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Identificadores para namespaces, tipos e virtuais e membros de interface não devem corresponder a palavras-chave que são definidas por linguagens que direcionam o common language runtime. Dependendo do idioma usado e a palavra-chave, ambiguidades e erros do compilador podem dificultar a biblioteca a ser usado.  
   
- Esta regra verifica em relação a palavra\-chave nos seguintes idiomas:  
+ Esta regra verifica em palavras-chave nos seguintes idiomas:  
   
 -   Visual Basic  
   
--   C\#  
+-   C#  
   
--   C\+\+\/CLI  
+-   C++/CLI  
   
- A comparação sem diferenciação de maiúsculas e minúsculas é usada para palavras\-chave de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] , e a comparação com diferenciação de maiúsculas e minúsculas é usada para os outros idiomas.  
+ Comparação de maiusculas e minúsculas é usada para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] palavras-chave e a comparação diferencia maiusculas de minúsculas é usada para os outros idiomas.  
   
-## Como Corrigir Violações  
- Selecione um nome que não aparece na lista de palavras\-chave.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Selecione um nome que não aparecem na lista de palavras-chave.  
   
-## Quando Suprimir Alertas  
- Você pode suprimir um aviso dessa regra se você for convencido que o identificador não será ofuscado por usuários de API, e que a biblioteca é útil em todos os idiomas disponíveis em [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Você pode suprimir um aviso de que essa regra se estiver convencido de que o identificador não será confundir os usuários da API e que a biblioteca é pode ser usada em todos os idiomas disponíveis no [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

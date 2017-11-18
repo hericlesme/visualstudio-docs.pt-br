@@ -1,5 +1,5 @@
 ---
-title: T4 Diretiva Import | Documentos do Microsoft
+title: T4 Diretiva Import | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,34 +7,20 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 713ca975-b9aa-4210-bf6d-b7660f5b193b
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: adcdcd8fe971f21057457d843e131e8371ff00a2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e27400d82f751136a3ce8e2e448f04935f2157a4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="t4-import-directive"></a>Diretiva de importação T4
 Em blocos de código de um modelo de texto T4 do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a diretiva `import` permite que você referencie os elementos em outro namespace sem fornecer um nome totalmente qualificado. É o equivalente de `using` em C# ou `imports` em [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].  
   
- Para obter uma visão geral da gravação de modelos de texto T4, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).  
+ Para obter uma visão geral de escrever modelos de texto T4, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).  
   
 ## <a name="using-the-import-directive"></a>Usando a diretiva de importação  
   
@@ -63,7 +49,7 @@ The file contains: <#=  fileContent #>
   
 -   `Microsoft.VisualStudio.Modeling`  
   
--   O namespace de sua DSL  
+-   Namespace do DSL  
   
 ## <a name="see-also"></a>Consulte também  
  [Diretiva de assembly T4](../modeling/t4-assembly-directive.md)

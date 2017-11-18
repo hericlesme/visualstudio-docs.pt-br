@@ -1,34 +1,36 @@
 ---
-title: "If Activity Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.If.UI"
+title: Se o Designer de atividade | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "4"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 3d3928330558c3d611decd2a87498d33fd6482ce
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# If Activity Designer
-A atividade de <xref:System.Activities.Statements.If> avalia uma condição e executa uma atividade dependendo dos resultados da avaliação.  Esta atividade é mais útil ao usar um estilo modelando procedural de programação.  Uma atividade de <xref:System.Activities.Statements.If> pode ser aninhadas dentro de uma atividade de <xref:System.Activities.Statements.Sequence> ou uma atividade de <xref:System.Activities.Statements.Parallel> , por exemplo.  Se você estiver usando uma atividade de <xref:System.Activities.Statements.Flowchart> , considere usar uma atividade de <xref:System.Activities.Statements.FlowDecision> em vez disso.  
+# <a name="if-activity-designer"></a>Se designer de atividades
+A atividade de <xref:System.Activities.Statements.If> avalia uma condição e executa uma atividade dependendo dos resultados da avaliação. Esta atividade é mais útil ao usar um estilo modelando procedural de programação. Uma atividade de <xref:System.Activities.Statements.If> pode ser aninhadas dentro de uma atividade de <xref:System.Activities.Statements.Sequence> ou uma atividade de <xref:System.Activities.Statements.Parallel> , por exemplo. Se você estiver usando uma atividade de <xref:System.Activities.Statements.Flowchart> , considere usar uma atividade de <xref:System.Activities.Statements.FlowDecision> em vez disso.  
   
-## Se as propriedades em Designer de Fluxo de Trabalho  
- A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:System.Activities.Statements.If> e descreve como usá\-los no designer.  
+## <a name="if-properties-in-the-workflow-designer"></a>Se as propriedades em Designer de Fluxo de Trabalho  
+ A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:System.Activities.Statements.If> e descreve como usá-los no designer.  
   
-|Nome da propriedade|Obrigatório|Uso|  
-|-------------------------|-----------------|---------|  
-|<xref:System.Activities.Statements.If.Condition%2A>|True|A condição que determina que atividade filho para executar.  Para definir <xref:System.Activities.Statements.If.Condition%2A>, digite uma expressão de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] na caixa de **Condição** no designer de atividade de **Se** ou na grade de propriedade.|  
-|<xref:System.Activities.Statements.If.Else%2A>|False|A atividade a executar se <xref:System.Activities.Statements.If.Condition%2A> é **false**.  Para adicionar uma atividade que é executada pelo ramificação de <xref:System.Activities.Statements.If.Else%2A> , soltar uma atividade de **Caixa de Ferramentas** na caixa de **Mais** no designer de atividade de **Se** com texto “atividade de dica operação aqui”.|  
-|<xref:System.Activities.Statements.If.Then%2A>|False|A atividade a executar se <xref:System.Activities.Statements.If.Condition%2A> é **true**.  Para adicionar uma atividade que é executada pelo ramificação de <xref:System.Activities.Statements.If.Then%2A> , soltar uma atividade de **Caixa de Ferramentas** na caixa de **Em seguida** no designer de atividade de **Se** com texto “atividade de dica operação aqui”.|  
+|Nome da Propriedade|Necessária|Uso|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Statements.If.Condition%2A>|verdadeiro|A condição que determina que atividade filho para executar. Para definir o <xref:System.Activities.Statements.If.Condition%2A>, digite um [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] expressão no **condição** caixa o **se** atividade designer ou na grade de propriedades.|  
+|<xref:System.Activities.Statements.If.Else%2A>|False|A atividade seja executada se o <xref:System.Activities.Statements.If.Condition%2A> é **false**. Para adicionar uma atividade que é executada pelo <xref:System.Activities.Statements.If.Else%2A> branch, remover uma atividade do **caixa de ferramentas** no **Else** caixa o **se** designer de atividade com o texto de dica " Descartar atividade aqui".|  
+|<xref:System.Activities.Statements.If.Then%2A>|False|A atividade seja executada se o <xref:System.Activities.Statements.If.Condition%2A> é **true**. Para adicionar uma atividade que é executada pelo <xref:System.Activities.Statements.If.Then%2A> branch, remover uma atividade do **caixa de ferramentas** no **, em seguida,** caixa o **se** designer de atividade com o texto de dica " Descartar atividade aqui".|  
   
-## Consulte também  
- [Sequence](../workflow-designer/sequence-activity-designer.md)   
- [Parallel](../workflow-designer/parallel-activity-designer.md)   
- [Control Flow](../workflow-designer/control-flow-activity-designers.md)
+## <a name="see-also"></a>Consulte também  
+ [Sequência](../workflow-designer/sequence-activity-designer.md)   
+ [Paralelo](../workflow-designer/parallel-activity-designer.md)   
+ [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)

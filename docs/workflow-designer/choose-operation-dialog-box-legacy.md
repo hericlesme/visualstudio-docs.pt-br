@@ -1,42 +1,44 @@
 ---
-title: "Choose Operation Dialog Box (Legacy) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Workflow.Activities.Design.OperationPickerDialog.UI"
+title: "Escolha a caixa de diálogo de operação (herdado) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Workflow.Activities.Design.OperationPickerDialog.UI
 ms.assetid: bc3ec902-7797-494e-af48-e70c97eb6779
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "10"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 320233edede13e2f33bdcb206b056bf1d0b94b8e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Choose Operation Dialog Box (Legacy)
-Este tópico descreve como usar a caixa de diálogo **Escolher Operação** em [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]herdado.  Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
+# <a name="choose-operation-dialog-box-legacy"></a>Escolha a caixa de diálogo da operação (o legados)
+Este tópico descreve como usar o **operação escolha** caixa de diálogo no herdado [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- A caixa de diálogo **Escolher Operação** é usada para selecionar uma operação para associar uma atividade de <xref:System.Workflow.Activities.ReceiveActivity> ou uma atividade de <xref:System.Workflow.Activities.SendActivity> .  Para obter mais informações sobre como usar esta caixa de diálogo com as atividades, consulte [How to: Implement a WCF Contract Operation \(Legacy\)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) e [How to: Invoke a WCF Contract Operation \(Legacy\)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md).  
+ O **operação escolha** caixa de diálogo é usada para selecionar uma operação para associar um <xref:System.Workflow.Activities.ReceiveActivity> atividade ou um <xref:System.Workflow.Activities.SendActivity> atividade. Para obter mais informações sobre como usar essa caixa de diálogo com essas atividades, consulte [como: implementar uma operação do WCF (legados)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) e [como: chamar uma operação do WCF (legados)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md).  
   
- A tabela a seguir descreve os elementos de \(UI\) de interface de usuário da caixa de diálogo **Escolher Operação** .  
+ A tabela a seguir descreve os elementos de interface de usuário do **operação escolha** caixa de diálogo.  
   
 |Elemento da Interface do Usuário|Descrição|  
-|--------------------------------------|---------------|  
-|**Adicionar Contrato**|Cria um novo contrato para você.  Você pode definir novos operações no contrato.  \(Isso é usado com <xref:System.Workflow.Activities.ReceiveActivity> somente.\)|  
-|**Adicionar Operação**|Adicionar novos operações para um novo contrato que você crie na caixa de diálogo **Escolher Operação** . **Note:**  Você pode adicionar novos operações somente a contratos que você criou através da caixa de diálogo **Escolher Operação** . <br /><br /> \(Isso é usado com <xref:System.Workflow.Activities.ReceiveActivity> somente.\)|  
-|**Importação…**|Importa um contrato definido anteriormente e permite que você selecione uma operação do contrato.|  
-|**Operação Nome**|Nome da operação selecionada.  Esta caixa de texto disponível para editar apenas se você criou uma operação através da caixa de diálogo **Escolher Operação** .|  
-|**Parâmetros**|Catalogue para conter as definições de parâmetro para a operação selecionada. **Note:**  As definições de parâmetro podem ser alteradas somente se você criou uma operação através da caixa de diálogo **Escolher Operação** .|  
-|**Propriedades**|Catalogue para conter configurações de <xref:System.Net.Security.ProtectionLevel> para as mensagens enviadas entre o cliente e o serviço. **Note:**  Este guia é ativado somente se você criou uma operação através da caixa de diálogo **Escolher Operação** .|  
-|**Permissões**|Catalogue para conter propriedades de <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> e de <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> de usuários são permitidos que chamar a operação.  Por exemplo, se apenas foram permitidos para usuários do grupo administradores chamar a operação, então você escreveria “administradores” na caixa de texto **Função** .<br /><br /> Este guia é habilitado para ambas as operações criadas pela caixa de diálogo **Escolher Operação** e operações que foram importados através de botão de **Importar** .|  
+|----------------|-----------------|  
+|**Adicionar contrato**|Cria um novo contrato para você. Você pode definir novos operações no contrato. (Isso é usado com <xref:System.Workflow.Activities.ReceiveActivity> somente.)|  
+|**Operação de adição**|Adiciona novas operações para um novo contrato que você criou no **operação escolha** caixa de diálogo. **Observação:** você pode adicionar novas operações somente a contratos que você criou por meio de **operação escolha** caixa de diálogo. <br /><br /> (Isso é usado com <xref:System.Workflow.Activities.ReceiveActivity> somente.)|  
+|**Importe...**|Importa um contrato definido anteriormente e permite que você selecione uma operação do contrato.|  
+|**Nome da operação**|Nome da operação selecionada. Essa caixa de texto está disponível para edição somente se você tiver criado uma operação por meio de **operação escolha** caixa de diálogo.|  
+|**Parâmetros**|Catalogue para conter as definições de parâmetro para a operação selecionada. **Observação:** definições de parâmetro podem ser alteradas apenas se você tiver criado uma operação por meio de **operação escolha** caixa de diálogo.|  
+|**Propriedades**|Catalogue para conter configurações de <xref:System.Net.Security.ProtectionLevel> para as mensagens enviadas entre o cliente e o serviço. **Observação:** essa guia é habilitada somente se você tiver criado uma operação por meio de **operação escolha** caixa de diálogo.|  
+|**Permissões**|Catalogue para conter propriedades de <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> e de <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> de usuários são permitidos que chamar a operação. Por exemplo, se apenas os usuários do grupo de administradores foram permissão para chamar essa operação, em seguida, você escreve "Administradores" **função** caixa de texto.<br /><br /> Essa guia é habilitada para operações criadas por meio de **ChooseOperation** caixa de diálogo e operações que foram importadas por meio do **importação** botão.|  
   
 > [!NOTE]
->  Contratos ou operações mostra a caixa de diálogo **Escolher Operação** somente que são usados por outras atividades de <xref:System.Workflow.Activities.SendActivity> no fluxo de trabalho.  Da mesma forma, a caixa de diálogo **Escolher Operação** para contratos mostra as atividades de <xref:System.Workflow.Activities.ReceiveActivity> ou somente operações que são usadas por outras atividades de **ReceiveActivity** no fluxo de trabalho.  
+>  O **operação escolha** caixa de diálogo mostra somente contratos ou operações que são usadas por outros <xref:System.Workflow.Activities.SendActivity> atividades no fluxo de trabalho. Da mesma forma, o **operação escolha** caixa de diálogo <xref:System.Workflow.Activities.ReceiveActivity> atividades mostra apenas contratos ou operações que são usadas por outros **ReceiveActivity** atividades no fluxo de trabalho.  
   
-## Consulte também  
- [How to: Implement a WCF Contract Operation \(Legacy\)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
- [How to: Invoke a WCF Contract Operation \(Legacy\)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
- [Legacy Designer for Windows Workflow Foundation UI Help](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+## <a name="see-also"></a>Consulte também  
+ [Como: implementar uma operação do WCF (legados)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Como: chamar uma operação do WCF (legados)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Designer herdado para a ajuda da interface do usuário do Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
