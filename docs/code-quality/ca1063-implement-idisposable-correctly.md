@@ -1,87 +1,87 @@
 ---
-title: "CA1063: implementar IDisposable corretamente | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ImplementIDisposableCorrectly"
-  - "CA1063"
-helpviewer_keywords: 
-  - "CA1063"
-  - "ImplementIDisposableCorrectly"
+title: 'CA1063: Implementar IDisposable corretamente | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ImplementIDisposableCorrectly
+- CA1063
+helpviewer_keywords:
+- CA1063
+- ImplementIDisposableCorrectly
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
-caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 55784b95f12d83318b8d217282c3a2bb8933d76b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1063: implementar IDisposable corretamente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: implementar IDisposable corretamente
 |||  
 |-|-|  
-|TypeName|ImplementIDisposableCorrectly|  
+|NomeDoTipo|ImplementIDisposableCorrectly|  
 |CheckId|CA1063|  
 |Categoria|Microsoft.Design|  
-|Alteração Significativa|Sem quebra|  
+|Alteração Significativa|Não recentes|  
   
-## Causa  
- `IDisposable` não é implementado corretamente.  Algumas razões para esse problema são listadas aqui:  
+## <a name="cause"></a>Causa  
+ `IDisposable`não é implementado corretamente. Alguns motivos para esse problema estão listados aqui:  
   
--   IDisposable novamente é implementado na classe.  
+-   IDisposable é novamente implementado na classe.  
   
--   Encerre novamente é substituída.  
+-   Finalizar novamente é substituído.  
   
--   Dispose é substituída.  
+-   Dispose é substituído.  
   
--   Dispose\(\) não é público, selado, ou nomeada descartado.  
+-   Dispose () não é público, sealed ou a chamada Dispose.  
   
--   Bool descartado \(\) não é protegido, virtual, nem unsealed.  
+-   Dispose (bool) não está protegido, virtual ou sem lacre.  
   
--   Em tipos não lacrados, Dispose\(\) deve chamar descartado \(retifique\).  
+-   Tipos não lacrados, Dispose () deve chamar Dispose (True).  
   
--   Para tipos não lacrados, a implementação de finalizacão não chama ou para descartar \(bool\) ou o finalizador da classe dos casos.  
+-   Para tipos sem lacre, a implementação de finalização não chama um ou ambos os Dispose (bool) ou o finalizador da classe maiusculas.  
   
- A violação de qualquer um desses padrões disparará esse aviso.  
+ Violação de qualquer um desses padrões irão disparar esse aviso.  
   
- Cada tipo não lacrado IDisposable raiz deve fornecer seu próprio void virtual protegido método dispose de bool \(\).  Dispose\(\) deve chamar Dipose \(true\) e Termina deve chamar descartado \(false\).  Se você estiver criando um tipo não lacrado IDisposable raiz, você deve definir descartado \(bool\) e chame.  Para obter mais informações, consulte [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) na seção de [Diretrizes de Design de estrutura](../Topic/Framework%20Design%20Guidelines.md) da documentação do.NET Framework.  
+ Cada raiz sem lacre tipo IDisposable deve fornecer seu próprio método void Dispose (bool) virtual protegido. Descarte devem chamar Dipose(true) e Finalize deve chamar Dispose (False). Se você estiver criando um tipo de IDisposable raiz sem lacre, você deve definir Dispose (bool) e chamá-lo. Para obter mais informações, consulte [limpeza de recursos não gerenciados](/dotnet/standard/garbage-collection/unmanaged) no [diretrizes de Design do Framework](/dotnet/standard/design-guidelines/index) seção da documentação do .NET Framework.  
   
-## Descrição da Regra  
- Todos os tipos de IDisposable devem implementar o padrão de disposição corretamente.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Todos os tipos IDisposable devem implementar o padrão Dispose corretamente.  
   
-## Como Corrigir Violações  
- Examine o código e determine quais das seguintes resoluções corrigirá essa violação.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Examine seu código e determinar que as seguintes resoluções corrigirá essa violação.  
   
--   Remover IDisposable da lista de interfaces que são implementadas por {0} e substituir a classe base disposto a implementação em vez disso.  
+-   Remova IDisposable da lista de interfaces que são implementados por {0} e substituir a implementação Dispose da classe base em vez disso.  
   
--   Remova o finalizador do tipo {0}, substituição descartado \(bool que descartado\), e coloca a lógica de acabamento no caminho de código onde “descartar” é falsa.  
+-   Remova o finalizador do tipo {0}, substitua Dispose (bool disposing) e coloque a lógica de finalização no caminho do código onde "disposing" é false.  
   
--   Remover {0}, substituição descartado \(bool que descartado\), e coloca a lógica de disposição no caminho de código onde “descartar” for verdadeira.  
+-   Remover {0}, substitua Dispose (bool disposing) e coloque a lógica de descarte no caminho do código onde "disposing" é true.  
   
--   Verifique se {0} ser declarado como públicas e selado.  
+-   Certifique-se de que {0} é declarado como público e lacrado.  
   
--   Renomear {0} “descartado” e ter certeza de que esteja declarado como públicas e selado.  
+-   Renomear {0} 'Dispose' e certifique-se de que ele é declarado como público e lacrado.  
   
--   Certifique\-se de que {0} é declarado como protegido, virtual, e unsealed.  
+-   Certifique-se de que {0} é declarado como protegido, virtual e sem lacre.  
   
--   Modifique {0} de modo que chama descartado \(retifique\), então chama GC.SuppressFinalize na instância atual do objeto \(“a” ou “i” em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\), e retorna em.  
+-   Modificar {0} para que ele chama Dispose (True), em seguida, chama GC. SuppressFinalize na instância atual do objeto ('this' ou 'Me' no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e, em seguida, retorna.  
   
--   Modifique {0} de modo que chama descartado \(false\) e retorne em.  
+-   Modificar {0} para que ele chama Dispose (False) e, em seguida, retorna.  
   
--   Se você estiver escrevendo uma classe não lacrada IDisposable raiz, certifique\-se de que a implementação IDisposable segue o padrão descrito anteriormente nesta seção.  
+-   Se você estiver escrevendo uma classe de IDisposable raiz sem lacre, certifique-se de que a implementação de IDisposable segue o padrão descrito anteriormente nesta seção.  
   
-## Quando Suprimir Alertas  
- Não elimine um alerta desta regra.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra.  
   
-## Exemplo do pseudocódigo  
- O pseudocódigo a seguir fornece um exemplo geral de como descartado \(bool\) deve ser implementada em uma classe que usa os recursos gerenciados e nativos.  
+## <a name="pseudo-code-example"></a>Exemplo de código pseudo  
+ O pseudocódigo a seguir fornece um exemplo geral de como Dispose (bool) devem ser implementadas em uma classe que usa gerenciada e recursos nativos.  
   
 ```  
 public class Resource : IDisposable   

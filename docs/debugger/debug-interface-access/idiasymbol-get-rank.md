@@ -1,50 +1,48 @@
 ---
-title: "IDiaSymbol::get_rank | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSymbol::get_rank"
+title: ': Get_rank | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_rank method
 ms.assetid: 14cc9c4b-a5ec-414a-b01f-4a142c17b7cc
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 623c700c6f9a30b6142faeb7e1b31881d0e0fe11
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_rank
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera a posição \(número de dimensões\) de uma matriz multidimensional do FORTRAN.  
+# <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
+Recupera a posição (número de dimensões) de uma matriz multidimensional FORTRAN.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_rank (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_rank (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna o número de dimensões em uma matriz multidimensional do FORTRAN.  
+ [out] Retorna o número de dimensões em uma matriz multidimensional FORTRAN.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## Comentários  
- Classificação indica o número de dimensões em uma matriz em que a matriz é declarada como `myarray[1,2,3]`.  Este exemplo tem uma classificação de dimensões de 3 e 3.  Classificação não se aplica ao C\+\+ que usa o conceito de uma matriz de matrizes para cada dimensão \(ou seja, `myarray[1][2][3]`\).  
+## <a name="remarks"></a>Comentários  
+ Classificação refere-se ao número de dimensões em uma matriz, onde a matriz é declarada como `myarray[1,2,3]`. Este exemplo tem uma classificação de dimensões 3 e 3. Classificação não é aplicável ao C++ que usa o conceito de uma matriz de matrizes para cada dimensão (ou seja, `myarray[1][2][3]`).  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

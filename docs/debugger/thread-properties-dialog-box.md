@@ -1,50 +1,50 @@
 ---
-title: "Caixa de di&#225;logo Propriedades do Thread | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, propriedades de thread"
-  - "propriedades de thread, Spy++"
+title: "Caixa de diálogo Propriedades de thread | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Spy++, thread properties
+- thread properties, Spy++
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d9250db8b405885b5f8e8c76a68d0663c52d82ec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Caixa de di&#225;logo Propriedades do Thread
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use essa caixa de diálogo caixa descobrir mais sobre como um segmento específico.  Para exibir esta caixa de diálogo, mova o foco para um  [Visualização de Threads](../debugger/threads-view.md) janela ou abrir  [o modo de exibição de mensagens](../debugger/messages-view.md) e expandir uma mensagem.  Selecione qualquer nó do thread na árvore e escolha  **Propriedades** da  **Exibir** menu.  
+# <a name="thread-properties-dialog-box"></a>Caixa de diálogo Propriedades do Thread
+Use essa caixa de diálogo caixa saber mais sobre um segmento específico. Para exibir essa caixa de diálogo, mova o foco para um [exibição de Threads](../debugger/threads-view.md) janela ou abra [exibição de mensagens](../debugger/messages-view.md) e expanda uma mensagem. Selecione qualquer nó de segmento na árvore e escolha **propriedades** do **exibição** menu.  
   
- O  **Geral** guia é a única guia exibida.  Em sistemas operacionais Windows 98 e Windows 95, uma versão modificada dessa guia é exibida.  
+ O **geral** guia é a única guia exibida. Em sistemas operacionais Windows 98 e Windows 95, uma versão modificada dessa guia é exibida.  
   
-## Nesta seção  
- [Guia geral, caixa de diálogo Propriedades de Thread](../debugger/general-tab-thread-properties-dialog-box.md)  
- Use esta caixa de diálogo para obter mais informações sobre o segmento selecionado.  
+## <a name="in-this-section"></a>Nesta seção  
+ [Guia Geral, Caixa de diálogo Propriedades do Thread](../debugger/general-tab-thread-properties-dialog-box.md)  
+ Use essa caixa de diálogo para obter mais informações sobre o thread selecionado.  
   
-## Seções relacionadas  
- [Caixa de diálogo de pesquisa de segmento.](../debugger/thread-search-dialog-box.md)  
+## <a name="related-sections"></a>Seções relacionadas  
+ [Caixa de diálogo Pesquisa de Threads](../debugger/thread-search-dialog-box.md)  
  Usado para localizar o nó para um segmento específico no modo de exibição de Threads.  
   
- [Referência Spy \+ \+](../debugger/spy-increment-reference.md)  
- Inclui seções descrevendo cada Spy \+ \+ menu e a caixa de diálogo caixa.  
+ [Referência a Spy++](../debugger/spy-increment-reference.md)  
+ Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.  
   
- [Procurando por um segmento no modo de exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Explica como localizar um segmento específico na visualização de Threads.  
+ [Procurando por um Thread na exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+ Explica como localizar um segmento específico no modo de exibição de Threads.  
   
- [Visualização de threads](../debugger/threads-view.md)  
- Exibe uma visualização em árvore de segmentos ativos.  
+ [Exibição de Threads](../debugger/threads-view.md)  
+ Exibe uma exibição de árvore de threads ativos.  
   
- [Modos de exibição Spy \+ \+](../debugger/spy-increment-views.md)  
- Explica as exibições de árvore Spy \+ \+ do windows, mensagens, processos e threads.  
+ [Exibições do Spy++](../debugger/spy-increment-views.md)  
+ Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  
   
- [Usando o Spy \+ \+](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy \+ \+ e explica como ele pode ser usado.
+ [Usando Spy++](../debugger/using-spy-increment.md)  
+ Apresenta a ferramenta Spy + + e explica como ele pode ser usado.

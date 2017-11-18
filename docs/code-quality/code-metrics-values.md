@@ -1,55 +1,55 @@
 ---
-title: "Valores de m&#233;tricas do c&#243;digo | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "métricas de código"
-  - "análise de código"
-  - "medir qualidade do código"
+title: "Valores de métricas de código | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code metrics
+- code analysis
+- measure code quality
 ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
-caps.latest.revision: 20
-caps.handback.revision: 20
-author: "erickson-doug"
-ms.author: "douge"
-manager: "douge"
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 234ec06d47afee3cbde7c2333742fe43ab599219
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Valores de m&#233;tricas do c&#243;digo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Métricas de código é um conjunto de medidas de software que fornecem desenvolvedores melhor informações no código que está desenvolvendo.  Usufruindo a métrica de código, os desenvolvedores podem entender quais digita e\/ou os métodos devem ser reworked ou mais minuciosamente sers.  As equipes de desenvolvimento pode identificar potenciais, riscos entender o estado atual de um projeto, e rastrear o progresso durante a programação de software.  
+# <a name="code-metrics-values"></a>Valores de métricas do código
+As métricas de código são um conjunto de medidas de software que fornecem aos desenvolvedores uma visão melhor do código que estão desenvolvendo. Aproveitando as métricas de código, os desenvolvedores podem compreender quais tipos de e/ou métodos devem ser reformulados ou mais totalmente testados. As equipes de desenvolvimento podem identificar possíveis riscos, entender o estado atual de um projeto e acompanhar o progresso durante o desenvolvimento de software.  
   
-## Medidas de software  
- A lista a seguir mostra a métrica de código resultados que calcula [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
+## <a name="software-measurements"></a>Medições de software  
+ A lista a seguir mostra os resultados de métricas de código que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] calcula:  
   
--   **Índice de manutenibilidade** – Calcula um valor de índice entre 0 e 100 que representa a facilidade relativa de manter o código.  Um valor alto significa a melhor manutenibilidade.  As estimativas codificadas cor podem ser usadas para identificar rapidamente pontos de conflito em seu código.  Uma estimativa verde estiver entre 20 e 100 e indica que o código tem boa a manutenibilidade.  Uma estimativa amarela estiver entre 10 e 19 e indica que o código é sustentável moderadamente.  Uma estimativa vermelha é uma estimativa entre 0 e 9 e indica pouca manutenibilidade.  
+-   **Índice de facilidade de manutenção** -calcula um valor de índice entre 0 e 100 que representa a relativa facilidade de manutenção do código. Um valor alto significa melhor capacidade de manutenção. Classificações de codificados por cores podem ser usadas para identificar rapidamente pontos problemáticos em seu código. Uma classificação verde entre 20 e 100 e indica que o código tem boa facilidade de manutenção. Uma classificação amarela está entre 10 e 19 e indica que o código é razoavelmente fácil manutenção. Uma classificação vermelha é uma classificação entre 0 e 9 e indica pouca facilidade de manutenção.  
   
--   **Complexidade de Cyclomatic** – Medidas a complexidade estrutural de código.  É criado para calcular o número de diferentes caminhos de código no fluxo do programa.  Um programa que tem o fluxo de controle complexo exigir mais testes obter uma boa cobertura de código e será menor sustentável.  
+-   **A complexidade ciclomática** -mede a complexidade estrutural do código. Ela é criada pelo cálculo do número de caminhos de código diferente no fluxo do programa. Um programa com o fluxo de controle complexo exigirá mais testes para obter a cobertura de código válido e será menos manutenção.  
   
     > [!NOTE]
-    >  Em alguns casos, o cálculo de complexidade cyclomatic para um método em  [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] difere das versões anteriores.  Para obter mais informações, consulte “as alterações na seção de cálculos da complexidade do código do Visual Studio 2010” de [Solucionando problemas de métricas do código](../code-quality/troubleshooting-code-metrics-issues.md).  
+    >  Em alguns casos, o cálculo da complexidade ciclomática para um método de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] difere das versões anteriores. Para obter mais informações, consulte "Alterações no Visual Studio 2010 seção de código complexidade cálculos" de [solução de problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md).  
   
--   **Profundidade de herança** – Indica o número de definições de classe que estendem à raiz da hierarquia da classe.  Mais profunda a hierarquia pode ser mais difícil entender onde os métodos específicos e os campos é definida e\/ou redefinido.  
+-   **Profundidade de herança** -indica o número de definições de classe que estende a raiz da hierarquia de classe. O maior hierarquia mais difícil seja entender onde determinados métodos e campos são definidos ou / e redefinido.  
   
--   **Acoplamento da classe** – Medidas o envolvimento às classes exclusivas com os parâmetros, as variáveis locais, os tipos de retorno, as chamadas de método, as instanciações genéricas ou do modelo, as classes base, as implementações da interface, os campos definidos em tipos externos, e a decoração do atributo.  O bom design de software que determina os tipos e os métodos devem ter a coesão alto e baixo acoplamento.  O envolvimento alto indica um design que é difícil de reutilizar e manter devido às suas muitas interdependências em outros tipos.  
+-   **Classe acoplamento** -mede o acoplamento de classes exclusivos por meio de parâmetros, variáveis locais, tipos de retorno, chamadas de método, instanciações genéricas ou modelo, classes base, implementações de interface, campos definidos em tipos externos, e decoração do atributo. Bom design de software determina que tipos e métodos devem ter coesão alta e baixa acoplamento. Acoplamento alta indica um design que é difícil para reutilizar e manter devido a seus muitas interdependências em outros tipos.  
   
--   **Linhas de código** – Indica o número aproximado de linhas no código.  A pontuação é baseada em código de IL e não em virtude disso é o número exato de linhas no arquivo de origem.  Uma quantidade muito grande pode indicar que um tipo ou um método estão tentando fazer muito trabalho e deve ser dividida acima.  Também pode indicar que o tipo ou o método podem ser difícil de manter.  
+-   **Linhas de código** -indica o número aproximado de linhas no código. A contagem é baseada no código IL e, portanto, não o número exato de linhas no arquivo de código fonte. Um número muito alto pode indicar que um tipo ou método está tentando fazer muito trabalho e deve ser dividido. Ele também pode indicar que o tipo ou método pode ser difícil de manter.  
   
-## Métodos anônimas  
- *Um método anônimo* é apenas um método que não tem nenhum nome.  Os métodos anônimas com mais frequência são usadas para passar um bloco de código como um parâmetro de delegação.  Métricas resultados para um método anônima que é declarada em um membro, como um método ou um acessador, é associado ao membro que declara o método.  Não são associados ao membro que chama o método.  
+## <a name="anonymous-methods"></a>Métodos anônimos  
+ Um *método anônimo* é apenas um método que não tem nome. Métodos anônimos com mais frequência são usados para passar um bloco de código como um parâmetro de representante. Resultados de métricas para um método anônimo que é declarado em um membro, como um método ou o acessador, estão associados com o membro que declara o método. Eles não estão associados com o membro que chama o método.  
   
- Para obter mais informações sobre como as métricas de código trata métodos anônimas, consulte [Métodos anônimos e análise de código](../code-quality/anonymous-methods-and-code-analysis.md).  
+ Para obter mais informações sobre como as métricas de código trata métodos anônimos, consulte [métodos anônimos e análise de código](../code-quality/anonymous-methods-and-code-analysis.md).  
   
-## Código gerado  
- Algumas ferramentas e os compiladores de software gerenciem o código que são adicionados a um projeto e que o desenvolvedor do projeto não consulta ou não deve ser alterado.  Na maior parte, a métrica de código ignora o código gerado quando o calcular os valores das métricas.  Isso permite que os valores das métricas para refletir o que o desenvolvedor pode consultar e alterar.  
+## <a name="generated-code"></a>Código gerado  
+ Algumas ferramentas de software e compiladores geram código que é adicionado a um projeto e que o desenvolvedor do projeto não vê ou não deve ser alterada. Basicamente, métricas de código ignora o código gerado quando ela calcula os valores de métricas. Isso permite que os valores de métricas refletir o que o desenvolvedor pode ver e alterar.  
   
- O código gerado para windows forms não é ignorado, porque é o código que o desenvolvedor pode consultar e alterar.  
+ Código gerado para formulários do Windows não é ignorado, porque ele é o código que o desenvolvedor pode ver e alterar.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

@@ -1,65 +1,63 @@
 ---
-title: "IDiaSession::findFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSession::findFile"
+title: ': FindFile | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findFile method
 ms.assetid: a215dc21-b316-40d7-9923-55bfa014976b
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ef230d1b82992f769011e0cb1d9d4ff11145b82d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findFile
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recuperar arquivos de origem pelo compiland e nome.  
+# <a name="idiasessionfindfile"></a>IDiaSession::findFile
+Recupera os arquivos de origem pelo nome e compiland.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT findFile (   
-   IDiaSymbol*           pCompiland,  
-   LPCOLESTR             name,  
-   DWORD                 option,  
-   IDiaEnumSourceFiles** ppResult  
+```C++  
+HRESULT findFile (   
+   IDiaSymbol*           pCompiland,  
+   LPCOLESTR             name,  
+   DWORD                 option,  
+   IDiaEnumSourceFiles** ppResult  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pCompiland`  
- \[in\] um objeto de [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o compiland a ser usado como um contexto para a pesquisa.  Defina o parâmetro como `NULL` para localizar arquivos de origem em todos os compilands.  
+ [in] Um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland a ser usado como um contexto para a pesquisa. Definir esse parâmetro como `NULL` para localizar arquivos de origem em todos os compilandos.  
   
  `name`  
- \[in\] especifica o nome do arquivo de origem para ser recuperado.  Defina o parâmetro como `NULL` para que todos os arquivos de origem sejam recuperados.  
+ [in] Especifica o nome do arquivo de origem a serem recuperados. Definir esse parâmetro como `NULL` para todos os arquivos a serem recuperados de origem.  
   
  `option`  
- \[in\] especifica as opções de comparação aplicadas para nomear a pesquisa.  Os valores da enumeração de [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) podem ser usados apenas ou em combinação.  
+ [in] Especifica as opções de comparação aplicadas à pesquisa de nome. Os valores do [enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) enumeração pode ser usada sozinha ou em combinação.  
   
  `ppResult`  
- \[out\] retorna um objeto de [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) que contém uma lista dos arquivos de origem recuperados.  
+ [out] Retorna um [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) recuperado do objeto que contém uma lista dos arquivos de origem.  
   
-## Valor de retorno  
- Se com êxito, retorna `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Exemplo  
+## <a name="example"></a>Exemplo  
   
-```cpp#  
+```C++  
 IDiaEnumSourceFiles* pEnum;  
 pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

@@ -1,52 +1,51 @@
 ---
-title: "IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 30e13cee-e511-49ec-affd-99b0097071b2
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e8467c25c8665dfb3fc91ea29d9b99c184b7ecce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_acceleratorPointerTags
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Retorna todos os valores da marca do ponteiro de aceleradores que correspondem à função de stub de aceleração de AMP de C\+\+.  
+# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+Retorna todos os valores de marca de ponteiro de aceleração que correspondem a uma função de stub do C++ AMP acelerador.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp  
+```C++  
 HRESULT get_acceleratorPointerTags(   
    DWORD          cnt,  
    DWORD*         pcnt,  
    DWORD*         pPointerTags);  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `cnt`  
- \[in\] o tamanho da matriz de saída `pPointerTags`.  
+ [in] O tamanho da matriz de saída `pPointerTags`.  
   
  `pcnt`  
- \[out\] o número de marcas ponteiro de aceleradores na função de stub de aceleração de AMP C\+\+.  
+ [out] A contagem de marcas de ponteiro de acelerador na função de stub do acelerador de C++ AMP.  
   
  `pPointerTags`  
- \[out\] o ponteiro de matriz de `DWORD` que é preenchido com a marca do ponteiro de aceleradores avalia na função de stub de aceleração de AMP C\+\+.  
+ [out] Um `DWORD` ponteiro de matriz que é preenchido com os valores de marca de ponteiro de acelerador na função de stub do acelerador de C++ AMP.  
   
-## Valor de retorno  
- Se com êxito, retorna `S_OK`; caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
-## Comentários  
- Este método é chamado uma interface de `IDiaSymbol` que corresponde à função de stub de aceleração de AMP de C\+\+.  
+## <a name="remarks"></a>Comentários  
+ Esse método é chamado em um `IDiaSymbol` interface que corresponde a uma função de stub do C++ AMP acelerador.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

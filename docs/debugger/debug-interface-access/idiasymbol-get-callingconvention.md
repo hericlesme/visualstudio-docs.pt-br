@@ -1,55 +1,53 @@
 ---
-title: "IDiaSymbol::get_callingConvention | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSymbol::get_callingConvention"
+title: ': Get_callingconvention | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_callingConvention method
 ms.assetid: 355d3877-b6b6-45fd-a1d8-baed428d8f96
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d44002f239c42635b154b574bfbd580b809107b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_callingConvention
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Retorna um indicador de uma convenção de chamada de métodos.  
+# <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
+Retorna um indicador de métodos de convenção de chamada.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_callingConvention (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_callingConvention (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna um valor a partir do [Enumeração CV\_call\_e](../../debugger/debug-interface-access/cv-call-e.md) enumeração que especifica um método da convenção de chamada.  
+ [out] Retorna um valor da [enumeração CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) enumeração que especifica um método de convenção de chamada.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descrição|  
-|---------------|---------------|  
+|-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|Versão 7.0 do SDK DIA|  
+|Versão:|Versão 7.0 do DIA SDK|  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Enumeração CV\_call\_e](../../debugger/debug-interface-access/cv-call-e.md)
+ [Enumeração CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)

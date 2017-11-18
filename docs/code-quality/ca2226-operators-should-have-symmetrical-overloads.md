@@ -1,58 +1,58 @@
 ---
-title: "CA2226: os operadores devem ter sobrecargas sim&#233;tricas | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OperatorsShouldHaveSymmetricalOverloads"
-  - "CA2226"
-helpviewer_keywords: 
-  - "CA2226"
-  - "OperatorsShouldHaveSymmetricalOverloads"
+title: "CA2226: Os operadores devem ter sobrecargas simétricas | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OperatorsShouldHaveSymmetricalOverloads
+- CA2226
+helpviewer_keywords:
+- OperatorsShouldHaveSymmetricalOverloads
+- CA2226
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 209741d29e3607f268fff6963723c59bc2221cb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2226: os operadores devem ter sobrecargas sim&#233;tricas
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: os operadores devem ter sobrecargas simétricas
 |||  
 |-|-|  
-|TypeName|OperatorsShouldHaveSymmetricalOverloads|  
+|NomeDoTipo|OperatorsShouldHaveSymmetricalOverloads|  
 |CheckId|CA2226|  
 |Categoria|Microsoft.Usage|  
-|Alteração Significativa|Sem Quebra|  
+|Alteração Significativa|Não separáveis|  
   
-## Causa  
+## <a name="cause"></a>Causa  
  Um tipo implementa o operador de igualdade ou de desigualdade e não implementa o operador oposto.  
   
-## Descrição da Regra  
- Não há nenhuma circunstância onde a igualdade ou desigualdade é aplicável às instâncias de um tipo, e o operador oposto é indefinido.  Os tipos implementam normalmente o operador de desigualdade retornar o valor negativo do operador de igualdade.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Não há nenhuma circunstância onde igualdade ou desigualdade é aplicável a instâncias de um tipo, e o operador oposto é indefinido. Tipos geralmente implementam o operador de desigualdade, retornando o valor negado do operador de igualdade.  
   
- O compilador C\# emite um erro para violações desta regra.  
+ O compilador c# emite um erro para violações desta regra.  
   
-## Como Corrigir Violações  
- Para corrigir uma violação desta regra, implemente os operadores de igualdade e de desigualdade, ou remover o que estiver presente.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, implementar a igualdade e operadores de desigualdade ou remova o que está presente.  
   
-## Quando Suprimir Alertas  
- Não elimine um alerta desta regra.  O tipo não funcionará de um modo que é consistente com [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra. O tipo não funcionará de forma consistente com o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-## Regras Relacionadas  
- [CA1046: não sobrecarregar igualdades de operador em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1046: não sobrecarregar operador Equals em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
   
- [CA2225: as sobrecargas do operador têm alternativas nomeadas](../Topic/CA2225:%20Operator%20overloads%20have%20named%20alternates.md)  
+ [CA2225: as sobrecargas do operador têm alternativos nomeados](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
   
- [CA2224: substituir igualdades em igualdades de operador de sobrecarga](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
+ [CA2224: substituir Equals ao sobrecarregar o operador Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
   
  [CA2218: substituir GetHashCode em igualdades de substituição](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
   
- [CA2231: sobrecarregar igualdades de operador em ValueType.Equals substituídos](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231: sobrecarregar operador Equals ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

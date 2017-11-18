@@ -1,11 +1,10 @@
 ---
-title: 'CA2215: Dispose methods should call base class dispose | Microsoft Docs'
+title: "CA2215: Métodos Dispose devem chamar dispose da classe base | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,62 +15,46 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallBaseClassDispose
 - CA2215
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2fc05a4489fbd8b4d30cb3e9c3e9c0e86c2c26a5
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0659b9ec82353e3c658f1ba89f07fad197dd8670
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose methods should call base class dispose
+# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: os métodos de descarte devem chamar o descarte da classe base
 |||  
 |-|-|  
-|TypeName|DisposeMethodsShouldCallBaseClassDispose|  
+|NomeDoTipo|DisposeMethodsShouldCallBaseClassDispose|  
 |CheckId|CA2215|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|Categoria|Microsoft.Usage|  
+|Alteração Significativa|Não separáveis|  
   
-## <a name="cause"></a>Cause  
- A type that implements <xref:System.IDisposable?displayProperty=fullName> inherits from a type that also implements <xref:System.IDisposable>. The <xref:System.IDisposable.Dispose%2A> method of the inheriting type does not call the <xref:System.IDisposable.Dispose%2A> method of the parent type.  
+## <a name="cause"></a>Causa  
+ Um tipo que implementa <xref:System.IDisposable?displayProperty=fullName> herda de um tipo que implementa também <xref:System.IDisposable>. O <xref:System.IDisposable.Dispose%2A> não chama o método do tipo herdo o <xref:System.IDisposable.Dispose%2A> método do tipo pai.  
   
-## <a name="rule-description"></a>Rule Description  
- If a type inherits from a disposable type, it must call the <xref:System.IDisposable.Dispose%2A> method of the base type from within its own <xref:System.IDisposable.Dispose%2A> method. Calling the base type method Dispose ensures that any resources created by the base type are released.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Se um tipo herda de um tipo descartável, ele deverá chamar o <xref:System.IDisposable.Dispose%2A> método do tipo de base em seu próprio <xref:System.IDisposable.Dispose%2A> método. Chamar o método do tipo base Dispose garante que todos os recursos criados pelo tipo de base são lançados.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, call `base`.<xref:System.IDisposable.Dispose%2A> in your <xref:System.IDisposable.Dispose%2A> method.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, chame `base`.<xref:System.IDisposable.Dispose%2A> no seu <xref:System.IDisposable.Dispose%2A> método.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the call to `base`.<xref:System.IDisposable.Dispose%2A> occurs at a deeper calling level than the rule checks.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso de que essa regra se a chamada para `base`.<xref:System.IDisposable.Dispose%2A> ocorre em um nível mais profundo de chamada que as verificações de regra.  
   
-## <a name="example"></a>Example  
- The following example shows a type `TypeA` that implements <xref:System.IDisposable>.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra um tipo `TypeA` que implementa <xref:System.IDisposable>.  
   
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]  
   
-## <a name="example"></a>Example  
- The following example shows a type `TypeB` that inherits from type `TypeA` and correctly calls its <xref:System.IDisposable.Dispose%2A> method.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra um tipo `TypeB` que herda do tipo `TypeA` e chama corretamente seu <xref:System.IDisposable.Dispose%2A> método.  
   
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Padrão de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

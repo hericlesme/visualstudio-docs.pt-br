@@ -1,43 +1,42 @@
 ---
-title: "IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 17a20542-5b45-478f-bb80-0d56031aadb5
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 53585bb1bd4b5185fa7ecc1dd998d48736d3b094
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isAcceleratorGroupSharedLocal
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um sinalizador que indica se o símbolo corresponde a uma variável local compartilhado grupo no código compilado para o acelerador de AMP de C\+\+.  
+# <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
+Recupera um sinalizador que indica se o símbolo corresponde a uma variável local compartilhado de grupo em código compilado para um acelerador de C++ AMP.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp  
+```C++  
 HRESULT get_isAcceleratorGroupSharedLocal(   
    BOOL* pFlag);  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pFlag`  
- \[out\] um ponteiro da `BOOL` que indica se o símbolo corresponde a uma variável local compartilhado grupo no código compilado para o acelerador de AMP de C\+\+.  Se `TRUE`, `get_baseDataSlot` e métodos de `get_baseDataOffset` podem ser usados para obter informações de local de armazenamento para a variável.  
+ [out] Um ponteiro para um `BOOL` que indica se o símbolo corresponde a uma variável local compartilhado de grupo em código compilado para um acelerador de C++ AMP. Se `TRUE`, o `get_baseDataSlot` e `get_baseDataOffset` métodos podem ser usados para obter as informações de local de armazenamento para a variável.  
   
-## Valor de retorno  
- Se com êxito, retorna `S_OK`; caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get\_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)   
- [IDiaSymbol::get\_baseDataOffset](../../debugger/debug-interface-access/idiasymbol-get-basedataoffset.md)
+ [IDiaSymbol::get_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)   
+ [IDiaSymbol::get_baseDataOffset](../../debugger/debug-interface-access/idiasymbol-get-basedataoffset.md)

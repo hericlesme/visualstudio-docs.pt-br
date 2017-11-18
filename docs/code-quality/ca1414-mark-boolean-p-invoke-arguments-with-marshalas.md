@@ -1,11 +1,10 @@
 ---
-title: 'CA1414: Mark boolean P-Invoke arguments with MarshalAs | Microsoft Docs'
+title: 'CA1414: Marcar argumentos P Invoke boolianos com MarshalAs | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,65 +14,51 @@ helpviewer_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
 ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f5b44ea17ce00bf3a3f04e17fc1a86e33367ea8e
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 25fd80168e78feda70b86f512598a850acae7010
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Mark boolean P/Invoke arguments with MarshalAs
+# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: marcar argumentos P/Invoke boolianos com MarshalAs
 |||  
 |-|-|  
-|TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|  
+|NomeDoTipo|MarkBooleanPInvokeArgumentsWithMarshalAs|  
 |CheckId|CA1414|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Breaking|  
+|Categoria|Microsoft.Interoperability|  
+|Alteração Significativa|Quebra|  
   
-## <a name="cause"></a>Cause  
- A platform invoke method declaration includes a <xref:System.Boolean?displayProperty=fullName> parameter or return value but the <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> attribute is not applied to the parameter or return value.  
+## <a name="cause"></a>Causa  
+ Uma plataforma de invocar o método de declaração inclui um <xref:System.Boolean?displayProperty=fullName> valor de parâmetro ou retornado, mas o <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> atributo não é aplicado ao valor de parâmetro ou retornado.  
   
-## <a name="rule-description"></a>Rule Description  
- A platform invoke method accesses unmanaged code and is defined by using the `Declare` keyword in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> specifies the marshaling behavior that is used to convert data types between managed and unmanaged code. Many simple data types, such as <xref:System.Byte?displayProperty=fullName> and <xref:System.Int32?displayProperty=fullName>, have a single representation in unmanaged code and do not require specification of their marshaling behavior; the common language runtime automatically supplies the correct behavior.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Uma plataforma de chamar código não gerenciado do método acessa e é definido usando o `Declare` palavra-chave em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Especifica o comportamento de marshaling que é usado para converter tipos de dados entre código gerenciado e não gerenciado. Tipos de muitos dados simples, como <xref:System.Byte?displayProperty=fullName> e <xref:System.Int32?displayProperty=fullName>, ter uma única representação em código não gerenciado e não exigem a especificação de seu comportamento de marshaling; o common language runtime fornece automaticamente o comportamento correto.  
   
- The <xref:System.Boolean> data type has multiple representations in unmanaged code. When the <xref:System.Runtime.InteropServices.MarshalAsAttribute> is not specified, the default marshaling behavior for the <xref:System.Boolean> data type is <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. This is a 32-bit integer, which is not appropriate in all circumstances. The Boolean representation that is required by the unmanaged method should be determined and matched to the appropriate <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool is the Win32 BOOL type, which is always 4 bytes. UnmanagedType.U1 should be used for C++ `bool` or other 1-byte types. For more information, see [Default Marshaling for Boolean Types](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).  
+ O <xref:System.Boolean> tipo de dados tem várias representações em código não gerenciado. Quando o <xref:System.Runtime.InteropServices.MarshalAsAttribute> não for especificado, o padrão de empacotamento de comportamento para o <xref:System.Boolean> é do tipo de dados <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Este é um inteiro de 32 bits, que não é apropriado em todas as circunstâncias. A representação de booliana que é exigida pelo método de não gerenciado deve ser determinada e correspondeu ao apropriado <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool é o tipo BOOL Win32, que sempre é de 4 bytes. UnmanagedType.U1 devem ser usados para C++ `bool` ou outros tipos de 1 byte. Para obter mais informações, consulte [padrão de empacotamento para tipos boolianos](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, apply <xref:System.Runtime.InteropServices.MarshalAsAttribute> to the <xref:System.Boolean> parameter or return value. Set the value of the attribute to the appropriate <xref:System.Runtime.InteropServices.UnmanagedType>.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, aplicar <xref:System.Runtime.InteropServices.MarshalAsAttribute> para o <xref:System.Boolean> parâmetro ou do valor retornado. Defina o valor do atributo como apropriada <xref:System.Runtime.InteropServices.UnmanagedType>.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. Even if the default marshaling behavior is appropriate, the code is more easily maintained when the behavior is explicitly specified.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra. Mesmo que o comportamento de marshaling padrão é apropriado, o código mais facilmente é mantido quando o comportamento é especificado explicitamente.  
   
-## <a name="example"></a>Example  
- The following example shows two platform invoke methods that are marked with the appropriate <xref:System.Runtime.InteropServices.MarshalAsAttribute> attributes.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra os métodos que são marcados com apropriada de invocação de plataforma dois <xref:System.Runtime.InteropServices.MarshalAsAttribute> atributos.  
   
- [!code-csharp[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/CSharp/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.cs)] [!code-vb[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/VisualBasic/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.vb)] [!code-cpp[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/CPP/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.cpp)]  
+ [!code-csharp[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/CSharp/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.cs)]
+ [!code-vb[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/VisualBasic/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.vb)]
+ [!code-cpp[FxCop.Interoperability.BoolMarshalAs#1](../code-quality/codesnippet/CPP/ca1414-mark-boolean-p-invoke-arguments-with-marshalas_1.cpp)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1901: P/Invoke declarations should be portable](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1901: Declarações P/Invoke devem ser portáteis](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)  
   
- [CA2101: Specify marshaling for P/Invoke string arguments](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)  
+ [CA2101: Especificar marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
- [Default Marshaling for Boolean Types](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)   
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)
+ [Marshaling padrão para tipos boolianos](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)   
+ [Interoperação com código não gerenciado](/dotnet/framework/interop/index)

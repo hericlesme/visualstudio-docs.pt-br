@@ -1,11 +1,10 @@
 ---
-title: 'CA1415: Declare P-Invokes correctly | Microsoft Docs'
+title: 'CA1415: Declarar P-invoca corretamente | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,56 +14,40 @@ helpviewer_keywords:
 - CA1415
 - DeclarePInvokesCorrectly
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2e19d4a786bb58ac6fac55ebcb977be8c330a081
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a9edc52bbc1cd05ed1a3a726dcfb49f26574ccc1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Declare P/Invokes correctly
+# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: declarar P/Invokes corretamente
 |||  
 |-|-|  
-|TypeName|DeclarePInvokesCorrectly|  
+|NomeDoTipo|DeclarePInvokesCorrectly|  
 |CheckId|CA1415|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Non-breaking - If the P/Invoke that declares the parameter cannot be seen outside the assembly. Breaking - If the P/Invoke that declares the parameter can be seen outside the assembly.|  
+|Categoria|Microsoft.Interoperability|  
+|Alteração Significativa|Separação de não - se a P/Invoke que declara que o parâmetro não pode ser vista fora do assembly. Quebrar - se P/Invoke que declara o parâmetro pode ser visto fora do assembly.|  
   
-## <a name="cause"></a>Cause  
- A platform invoke method is incorrectly declared.  
+## <a name="cause"></a>Causa  
+ Uma plataforma de invocar o método foi declarado incorretamente.  
   
-## <a name="rule-description"></a>Rule Description  
- A platform invoke method accesses unmanaged code and is defined by using the `Declare` keyword in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Currently, this rule looks for platform invoke method declarations that target Win32 functions that have a pointer to an OVERLAPPED structure parameter and the corresponding managed parameter is not a pointer to a <xref:System.Threading.NativeOverlapped?displayProperty=fullName> structure.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Uma plataforma de chamar código não gerenciado do método acessa e é definido usando o `Declare` palavra-chave em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. No momento, esta regra de aparência para declarações de métodos que se destinam a funções do Win32 que tem um ponteiro para um parâmetro de estrutura OVERLAPPED de invocação de plataforma e o parâmetro gerenciado correspondente não é um ponteiro para um <xref:System.Threading.NativeOverlapped?displayProperty=fullName> estrutura.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, correctly declare the platform invoke method.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, declare corretamente a plataforma de invocação de método.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra.  
   
-## <a name="example"></a>Example  
- The following example shows platform invoke methods that violate the rule and satisfy the rule.  
+## <a name="example"></a>Exemplo  
+ A exemplo a seguir mostra os métodos que violam a regra e atendem à regra de invocação de plataforma.  
   
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]  
   
-## <a name="see-also"></a>See Also  
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)
+## <a name="see-also"></a>Consulte também  
+ [Interoperação com código não gerenciado](/dotnet/framework/interop/index)

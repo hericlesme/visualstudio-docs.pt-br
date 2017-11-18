@@ -1,45 +1,45 @@
 ---
-title: "CA1600: n&#227;o usar a prioridade de processo ociosa | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotUseIdleProcessPriority"
-  - "CA1600"
-helpviewer_keywords: 
-  - "CA1600"
-  - "DoNotUseIdleProcessPriority"
+title: "CA1600: Não use prioridade de processo ociosa | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotUseIdleProcessPriority
+- CA1600
+helpviewer_keywords:
+- CA1600
+- DoNotUseIdleProcessPriority
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
-caps.latest.revision: 15
-caps.handback.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e52a658bd6161542ce909b8294f33d6e4bf140ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1600: n&#227;o usar a prioridade de processo ociosa
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: não usar a prioridade de processo ociosa
 |||  
 |-|-|  
-|TypeName|DoNotUseIdleProcessPriority|  
+|NomeDoTipo|DoNotUseIdleProcessPriority|  
 |CheckId|CA1600|  
 |Categoria|Microsoft.Mobility|  
 |Alteração Significativa|Quebra|  
   
-## Causa  
- Esta regra ocorre quando os processos são definidos como `ProcessPriorityClass.Idle`.  
+## <a name="cause"></a>Causa  
+ Essa regra ocorre quando os processos são definidos como `ProcessPriorityClass.Idle`.  
   
-## Descrição da Regra  
- Não defina a prioridade de processamento para executar em estado ocioso.  Os processos que têm `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando seria de outra forma ociosa, e podem bloquear consequentemente o suporte.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Não defina a prioridade do processo como Ocioso. Processos que têm `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando ele não esteja ocioso e, portanto, bloquearão standby.  
   
-## Como Corrigir Violações  
- Processos de cluster a `ProcessPriorityClass.BelowNormal`.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Definir processos `ProcessPriorityClass.BelowNormal`.  
   
-## Quando Suprimir Alertas  
- Esta regra deve ser suprimida somente quando a prioridade de ociosidade de processo é necessária e considerações a portabilidade pode ser ignorada com segurança.
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Essa regra deve ser suprimida somente quando a prioridade de processo ociosa é necessária e considerações de mobilidade podem ser ignoradas com segurança.

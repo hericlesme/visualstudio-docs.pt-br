@@ -1,11 +1,10 @@
 ---
-title: 'CA1014: Mark assemblies with CLSCompliantAttribute | Microsoft Docs'
+title: 'CA1014: Marcar assemblies com CLSCompliantAttribute | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,59 +14,45 @@ helpviewer_keywords:
 - CA1014
 - MarkAssembliesWithClsCompliant
 ms.assetid: 4fe57449-cf45-4745-bcd2-6345f1ed266d
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4d15d5c6d111f75bed1e73da1f94cbdae391c4ec
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a870721f0bf7192b417d2105635c663fb69713c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Mark assemblies with CLSCompliantAttribute
+# <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: marcar assemblies com CLSCompliantAttribute
 |||  
 |-|-|  
-|TypeName|MarkAssembliesWithClsCompliant|  
+|NomeDoTipo|MarkAssembliesWithClsCompliant|  
 |CheckId|CA1014|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Categoria|Microsoft.Design|  
+|Alteração Significativa|Não recentes|  
   
-## <a name="cause"></a>Cause  
- An assembly does not have the <xref:System.CLSCompliantAttribute?displayProperty=fullName> attribute applied to it.  
+## <a name="cause"></a>Causa  
+ Um assembly não tem o <xref:System.CLSCompliantAttribute?displayProperty=fullName> atributo aplicado a ele.  
   
-## <a name="rule-description"></a>Rule Description  
- The Common Language Specification (CLS) defines naming restrictions, data types, and rules to which assemblies must conform if they will be used across programming languages. Good design dictates that all assemblies explicitly indicate CLS compliance with <xref:System.CLSCompliantAttribute>. If the attribute is not present on an assembly, the assembly is not compliant.  
+## <a name="rule-description"></a>Descrição da Regra  
+ A CLS (Common Language Specification) define restrições de nomenclatura, tipos de dados e regras que assemblies deverão respeitar se forem usados em todas as linguagens de programação. Um bom design dita que todos os assemblies indicam explicitamente com compatibilidade com CLS <xref:System.CLSCompliantAttribute>. Se o atributo não estiver presente em um assembly, o assembly não é compatível.  
   
- It is possible for a CLS-compliant assembly to contain types or type members that are not compliant.  
+ É possível para um assembly compatível com CLS para conter tipos ou digitar os membros que não são compatíveis.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, add the attribute to the assembly. Instead of marking the whole assembly as noncompliant, you should determine which type or type members are not compliant and mark these elements as such. If possible, you should provide a CLS-compliant alternative for noncompliant members so that the widest possible audience can access all the functionality of your assembly.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, adicione o atributo para o assembly. Em vez de marcar o conjunto completo como não compatíveis, você deve determinar o tipo ou membros de tipo não são compatíveis e marcar como tal, esses elementos. Se possível, você deve fornecer uma alternativa compatível com CLS para membros não compatíveis para que o maior público possível possa acessar toda a funcionalidade do seu assembly.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. If you do not want the assembly to be compliant, apply the attribute and set its value to `false`.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra. Se você não quiser que o assembly deve estar em conformidade, aplique o atributo e defina seu valor como `false`.  
   
-## <a name="example"></a>Example  
- The following example shows an assembly that has the <xref:System.CLSCompliantAttribute?displayProperty=fullName> attribute applied that declares it CLS-compliant.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra um assembly que tem o <xref:System.CLSCompliantAttribute?displayProperty=fullName> atributo aplicado que declara compatível com CLS.  
   
- [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)] [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)] [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]  
+ [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
+ [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
+ [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  <xref:System.CLSCompliantAttribute?displayProperty=fullName>   
- [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Componentes de independência de linguagem e componentes independentes da linguagem](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

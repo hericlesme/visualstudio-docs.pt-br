@@ -1,57 +1,55 @@
 ---
-title: "CV_access_e | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Enumeração CV_access_e"
+title: CV_access_e | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: CV_access_e enumeration
 ms.assetid: 33c05d65-abb4-4800-a382-54a3805ea7b0
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6112c72836c718dbd97ddfb62504186fdcf6ca33
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CV_access_e
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Especifica o escopo de visibilidade \(nível de acesso\) de variáveis e funções de membro.  
+# <a name="cvaccesse"></a>CV_access_e
+Especifica o escopo de visibilidade (nível de acesso) de funções de membro e variáveis.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-typedef enum CV_access_e {   
-   CV_private   = 1,  
-   CV_protected = 2,  
-   CV_public    = 3  
+```C++  
+typedef enum CV_access_e {   
+   CV_private   = 1,  
+   CV_protected = 2,  
+   CV_public    = 3  
 } CV_access_e;  
 ```  
   
-## Elements  
- CV\_private  
- Membro tem acesso privado.  
+## <a name="elements"></a>Elementos  
+ CV_private  
+ Membro possui acesso privado.  
   
- CV\_protected  
- Membro tem protegidos de acesso.  
+ CV_protected  
+ Membro tenha acesso protegido.  
   
- CV\_public  
+ CV_public  
  Membro tem acesso público.  
   
-## Comentários  
- O `friend` especificador de acesso não é incluída aqui porque ele é normalmente usado por funções não\-membros que têm acesso aos elementos particulares e protegidos da classe.  Use o [IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md) método para encontrar símbolos com `SymTagFriend` acesso.  
+## <a name="remarks"></a>Comentários  
+ O `friend` especificador de acesso não é incluído aqui porque ele é normalmente usado por funções não membro que têm acesso aos elementos protegidos e privados da classe. Use o [: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) método para localizar símbolos com `SymTagFriend` acesso.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  Cabeçalho: cvconst.h  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
- [IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md)
+ [: Get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
+ [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

@@ -1,11 +1,10 @@
 ---
-title: 'CA1502: Avoid excessive complexity | Microsoft Docs'
+title: 'CA1502: Evitar complexidade excessiva | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,91 +14,83 @@ helpviewer_keywords:
 - CA1502
 - AvoidExcessiveComplexity
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
-caps.latest.revision: 30
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c04ac5e357556722770067fb61378580173f3462
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "30"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3c45ca232b555af1441502586a38c80f43c41edc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Avoid excessive complexity
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: evitar complexidade excessiva
 |||  
 |-|-|  
-|TypeName|AvoidExcessiveComplexity|  
+|NomeDoTipo|AvoidExcessiveComplexity|  
 |CheckId|CA1502|  
-|Category|Microsoft.Maintainability|  
-|Breaking Change|Non-breaking|  
+|Categoria|Microsoft.Maintainability|  
+|Alteração Significativa|Não recentes|  
   
-## <a name="cause"></a>Cause  
- A method has an excessive cyclomatic complexity.  
+## <a name="cause"></a>Causa  
+ Um método tem uma complexidade ciclomática excessiva.  
   
-## <a name="rule-description"></a>Rule Description  
- *Cyclomatic complexity* measures the number of linearly independent paths through the method, which is determined by the number and complexity of conditional branches. A low cyclomatic complexity generally indicates a method that is easy to understand, test, and maintain. The cyclomatic complexity is calculated from a control flow graph of the method and is given as follows:  
+## <a name="rule-description"></a>Descrição da Regra  
+ *A complexidade ciclomática* mede o número de caminhos independentes linearmente por meio do método, o que é determinado pelo número e a complexidade de ramificações condicionais. Uma complexidade ciclomática baixa geralmente indica um método fácil de entender, testar e manter. A complexidade ciclomática é calculada a partir de um gráfico de fluxo de controle do método e recebe da seguinte maneira:  
   
- cyclomatic complexity = the number of edges - the number of nodes + 1  
+ a complexidade ciclomática = o número de bordas - o número de nós + 1  
   
- where a node represents a logic branch point and an edge represents a line between nodes.  
+ em que um nó representa um ponto de ramificação de lógica e uma borda representa uma linha entre os nós.  
   
- The rule reports a violation when the cyclomatic complexity is more than 25.  
+ A regra relata uma violação quando a complexidade ciclomática é mais de 25.  
   
- You can learn more about code metrics at [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),  
+ Você pode aprender mais sobre as métricas de código em [medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, refactor the method to reduce its cyclomatic complexity.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, Refatore o método para reduzir sua complexidade ciclomática.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the complexity cannot easily be reduced and the method is easy to understand, test, and maintain. In particular, a method that contains a large `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) statement is a candidate for exclusion. The risk of destabilizing the code base late in the development cycle or introducing an unexpected change in runtime behavior in previously shipped code might outweigh the maintainability benefits of refactoring the code.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso de que essa regra se facilmente não pode ser reduzida a complexidade e o método é fácil de entender, testar e manter. Em particular, um método que contém um grande `switch` (`Select` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrução é um candidato para exclusão. O risco de desestabilizar o código base tardia no ciclo de desenvolvimento ou apresentando uma alteração inesperada no comportamento de tempo de execução de código fornecido anteriormente pode compensar os benefícios de facilidade de manutenção de refatorar o código.  
   
-## <a name="how-cyclomatic-complexity-is-calculated"></a>How Cyclomatic Complexity is Calculated  
- The cyclomatic complexity is calculated by adding 1 to the following:  
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Como a complexidade ciclomática é calculada  
+ A complexidade ciclomática é calculada adicionando 1 para o seguinte:  
   
--   Number of branches (such as `if`, `while`, and `do`)  
+-   Número de ramificações (como `if`, `while`, e `do`)  
   
--   Number of `case` statements in a `switch`  
+-   Número de `case` instruções em um`switch`  
   
- The following examples show methods that have varying cyclomatic complexities.  
+ Os exemplos a seguir mostram os métodos que possuem as complexidades de ciclomática variados.  
   
-## <a name="example"></a>Example  
- **Cyclomatic Complexity of 1**  
+## <a name="example"></a>Exemplo  
+ **Complexidade ciclomática igual a 1**  
   
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)] [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)] [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_1.cs)]  
+ [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
+ [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
+ [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_1.cs)]  
   
-## <a name="example"></a>Example  
- **Cyclomatic Complexity of 2**  
+## <a name="example"></a>Exemplo  
+ **Complexidade ciclomática igual 2**  
   
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)] [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)] [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_2.cs)]  
+ [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
+ [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
+ [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_2.cs)]  
   
-## <a name="example"></a>Example  
- **Cyclomatic Complexity of 3**  
+## <a name="example"></a>Exemplo  
+ **Complexidade ciclomática 3**  
   
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)] [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)] [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_3.cs)]  
+ [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
+ [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
+ [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_3.cs)]  
   
-## <a name="example"></a>Example  
- **Cyclomatic Complexity of 8**  
+## <a name="example"></a>Exemplo  
+ **Complexidade ciclomática de 8**  
   
- [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)] [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)] [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]  
+ [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
+ [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
+ [!code-csharp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CSharp/ca1502-avoid-excessive-complexity_4.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1501: Avoid excessive inheritance](../code-quality/ca1501-avoid-excessive-inheritance.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1501: evitar herança excessiva](../code-quality/ca1501-avoid-excessive-inheritance.md)  
   
-## <a name="see-also"></a>See Also  
- [Measuring Complexity and Maintainability of Managed Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+## <a name="see-also"></a>Consulte também  
+ [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

@@ -1,61 +1,59 @@
 ---
-title: "IDiaSession::findLinesByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSession::findLinesByAddr"
+title: ': Findlinesbyaddr | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLinesByAddr method
 ms.assetid: 640403c0-14cf-403c-ad19-38b3bdc28ca8
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 05e4ecac42acc1bf9eab27fb5e095dfc883ff3ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLinesByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera as linhas que contêm um endereço especificado em um compiland especificado.  
+# <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
+Recupera as linhas em um compiland especificado que contém um endereço especificado.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT findLinesByAddr (   
-   DWORD                 seg,  
-   DWORD                 offset,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLinesByAddr (   
+   DWORD                 seg,  
+   DWORD                 offset,  
+   DWORD                 length,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `seg`  
- \[in\] Especifica o componente de seção do endereço específico.  
+ [in] Especifica o componente da seção de endereço específico.  
   
  `offset`  
- \[in\] Especifica o componente de compensação do endereço específico.  
+ [in] Especifica o componente de deslocamento de endereço específico.  
   
  `length`  
- \[in\] Especifica o número de bytes do intervalo de endereços para cobrir com esta consulta.  
+ [in] Especifica o número de bytes do intervalo de endereços para cobrir com essa consulta.  
   
  `ppResult`  
- \[out\] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todos os da linha de números que tampa o intervalo de endereços especificado.  
+ [out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todas as linha de números que abrange o intervalo de endereços especificado.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Exemplo  
- Este exemplo mostra uma função que obtém todos os números de linha contidos em uma função usando o endereço da função e o comprimento.  
+## <a name="example"></a>Exemplo  
+ Este exemplo mostra uma função que obtém todos os números de linha contidos em uma função usando o endereço e o comprimento da função.  
   
-```cpp#  
+```C++  
 IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,  
                                           IDiaSession *pSession)  
 {  
@@ -74,7 +72,7 @@ IDiaEnumLineNumbers* GetLineNumbersByAddr(IDiaSymbol *pFunc,
 }  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)

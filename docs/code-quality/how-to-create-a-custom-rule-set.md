@@ -1,116 +1,114 @@
 ---
-title: "Como criar um conjunto de regras personalizado | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.addremoverulesets"
-helpviewer_keywords: 
-  - "Development Edition, conjuntos de regra"
+title: 'Como: criar um conjunto de regras personalizado | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.addremoverulesets
+helpviewer_keywords: Development Edition, rule sets
 ms.assetid: bcc42508-9592-4802-9f66-a50111641d73
-caps.latest.revision: 24
-caps.handback.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7e9cba33565af81a76d043a3fc3f63eef831e1ce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como criar um conjunto de regras personalizado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Em [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)], e [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], você pode criar e modificar *uma regra personalizada definida* para atender às necessidades de projeto específico associadas à análise de código.  Para criar um conjunto de regra personalizada, você abre um ou mais conjuntos padrão da regra no publicador do conjunto de regra.  Você pode adicionar ou remova as regras específicas e pode modificar a ação que ocorre quando a análise de código determina quais uma regra esteve violada.  
+# <a name="how-to-create-a-custom-rule-set"></a>Como criar um conjunto de regras personalizado
+Em [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)], e [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], você pode criar e modificar um personalizado *conjunto de regras* para atender às necessidades específicas do projeto associadas com a análise de código. Para criar uma regra personalizada definida, abrir um ou mais padrão regra define no editor de conjunto de regras. Você pode adicionar ou remover regras específicas e você pode alterar a ação que ocorre quando a análise de código determina que uma regra que foi violada.  
   
- Para criar um novo conjunto de regra personalizada, você salvará o usando um nome de arquivo novo.  O conjunto de regra personalizada é atribuído automaticamente ao projeto.  
+ Para criar uma nova regra personalizada definida, você pode salvá-lo usando um novo nome de arquivo. O conjunto de regras personalizado é automaticamente atribuído ao projeto.  
   
-## Abrindo o publicador do conjunto de regra  
+## <a name="opening-the-rule-set-editor"></a>Abrindo a regra de editor de conjunto  
   
-#### Para abrir um arquivo do conjunto de regra vazia no publicador do conjunto de regra  
+#### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Para abrir um vazio regra definir o arquivo no editor de conjunto de regras  
   
-1.  No menu de **Arquivo** de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], aponte para **Novo** e clique em **Arquivo**.  
+1.  Sobre o **arquivo** menu de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], aponte para **novo** e, em seguida, clique em **arquivo**.  
   
-2.  Na caixa de diálogo de **Novo Arquivo** , clique em **Geral** na lista de **Modelos Instalados** , e selecione **Conjunto de Regras da Análise de Código**.  
+2.  No **novo arquivo** caixa de diálogo, clique em **geral** no **modelos instalados** e, em seguida, selecione **conjunto de regras de análise de código**.  
   
-3.  O editor do conjunto de regra aparece.  Nenhuma regra é selecionada na lista do publicador.  
+3.  Editor de conjunto de regras é exibida. Nenhuma regra estiver selecionada na lista de editor.  
   
-#### Para criar uma regra personalizada de um único conjunto de regra existente  
+#### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para criar uma regra personalizada de um único conjunto de regras existente  
   
-1.  No Solution Explorer, clique com o botão direito do mouse no projeto e selecione **Propriedades**.  
+1.  No Gerenciador de soluções, clique com o botão direito e, em seguida, selecione **propriedades**.  
   
-2.  Na guia de **Propriedades** , clique em **Análise de Código**.  
+2.  Sobre o **propriedades** , clique em **análise de código**.  
   
-3.  Na lista suspensa de **Conjunto de Regras** , siga um destes procedimentos:  
+3.  No **do conjunto de regras** lista suspensa, siga um destes procedimentos:  
   
-    -   Selecione a regra definida que você deseja personalizar.  
+    -   Selecione o conjunto de regras que você deseja personalizar.  
   
-     \- ou \-  
+     \- ou -  
   
-    -   Selecione **\<Procurar…\>** para especificar uma regra existente definida que não está na lista.  
+    -   Selecione  **\<procurar... >** para especificar uma regra existente de conjunto que não está na lista.  
   
-4.  Clique **Abrir** para exibir as regras no publicador do conjunto de regra.  
+4.  Clique em **abrir** para exibir as regras no editor de conjunto de regras.  
   
-#### Para criar uma regra personalizada definida de vários conjuntos de regra  
+#### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Para criar uma regra personalizada definida de vários conjuntos de regra existente  
   
-1.  No Solution Explorer, clique com o botão direito do mouse no projeto e selecione **Propriedades**.  
+1.  No Gerenciador de soluções, clique com o botão direito e, em seguida, selecione **propriedades**.  
   
-2.  Na guia de **Propriedades** , clique em **Análise de Código**.  
+2.  Sobre o **propriedades** , clique em **análise de código**.  
   
-3.  Selecione **\<Escolha várias define a regra…\>**de **Executar este conjunto de regras**.  
+3.  Selecione  **\<escolher vários regra define... >** de **executar esse conjunto de regras**.  
   
-4.  Na caixa de diálogo de **Adicionar ou Remover Conjuntos de Regras** , selecione os conjuntos de regra em que você deseja basear o novo conjunto de regras e clique em **OK**.  
+4.  No **adicionar ou remover conjuntos de regras** caixa de diálogo, selecione os conjuntos de regras no qual você deseja basear o novo conjunto de regras e, em seguida, clique em **Okey**.  
   
-5.  Salvar o novo conjunto de regras.  
+5.  Salve o novo conjunto de regras.  
   
-     O nome do novo conjunto de regras é selecionado na lista de **Executar este conjunto de regras** .  Você pode alterar o nome para exibição da regra definida na próxima etapa.  
+     O nome do novo conjunto de regras é selecionado no **executar esse conjunto de regras** lista. Você pode alterar o nome para exibição da regra definida na próxima etapa.  
   
-6.  \(Opcional\) Para alterar o nome para exibição do conjunto de regras, em menu de **Exibir** , clique em **Janela de Propriedades**.  Digite o nome para exibição na caixa de **Nome** .  
+6.  (Opcional) Para alterar o nome de exibição do conjunto de regras no **exibição** menu, clique em **janela propriedades**. Digite o nome de exibição no **nome** caixa.  
   
-7.  Para adicionar, remover, modificar ou regras específicas do código no novo conjunto de regras, clique em **Abrir**.  
+7.  Para adicionar, remover, ou modificar as regras de análise de código específico no novo conjunto de regras, clique em **abrir**.  
   
-## Modificando um conjunto de regras  
+## <a name="modifying-a-rule-set"></a>Modificando um conjunto de regras  
   
-#### Para alterar uma regra definida no publicador do conjunto de regra  
+#### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Para modificar uma regra definida no editor de conjunto de regras  
   
--   Para alterar o nome para exibição do conjunto de regras, no menu de **Exibir** , clique em **Janela de Propriedades**.  Digite o nome para exibição na caixa de **Nome** .  Observe que o nome para exibição pode ser diferente do nome do arquivo.  
+-   Para alterar o nome de exibição do conjunto de regras no **exibição** menu, clique em **janela propriedades**. Digite o nome de exibição no **nome** caixa. Observe que o nome de exibição pode ser diferente do nome de arquivo.  
   
--   Para adicionar todas as regras de grupo para um conjunto de regra personalizada, marque a caixa de seleção do grupo.  Para remover todas as regras de grupo, desmarque a caixa de seleção.  
+-   Para adicionar todas as regras do grupo a um conjunto de regras personalizado, selecione a caixa de seleção do grupo. Para remover todas as regras do grupo, desmarque a caixa de seleção.  
   
--   Para adicionar uma regra específica ao conjunto de regra personalizada, marque a caixa de seleção da regra.  Para remover a regra do conjunto de regras, desmarque a caixa de seleção.  
+-   Para adicionar uma regra específica para o conjunto de regras personalizado, selecione a caixa de seleção da regra. Para remover a regra de conjunto de regras, desmarque a caixa de seleção.  
   
--   Para modificar a ação tomada quando uma regra é violada em uma análise de código, clique no campo de **Ação** para a regra e selecione um dos seguintes valores:  
+-   Para alterar a ação tomada quando uma regra é violada em uma análise de código, clique no **ação** campo para a regra e, em seguida, selecione um dos seguintes valores:  
   
-     **Warn** \- gerencia um aviso.  
+     **Avisar** -gera um aviso.  
   
-     **Error** \- gerencia um erro.  
+     **Erro** -gera um erro.  
   
-     **None** \- desabilita a regra.  Esta ação é a mesma que removendo a regra do conjunto de regras.  
+     **Nenhum** -desabilita a regra. Esta ação é o mesmo que remover regra do conjunto de regras.  
   
-## Alterando a exibição de conjunto do editor de regra  
+## <a name="changing-the-rule-set-editor-display"></a>Alterar a regra de definir a exibição do editor  
   
-#### Para agrupar, filtrar, ou alterar os campos no publicador do conjunto de regras usando a barra de ferramentas do editor de regra  
+#### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Para agrupar, filtrar ou alterar os campos no editor de conjunto de regras usando a barra de ferramentas do editor de conjunto de regras  
   
--   Para expandir as regras em todos os grupos, clique **Expandir Tudo**.  
+-   Para expandir as regras em todos os grupos, clique em **Expandir tudo**.  
   
--   Para recolher as regras em todos os grupos, clique **Recolher Tudo**.  
+-   Para recolher as regras em todos os grupos, clique em **Recolher tudo**.  
   
--   Para alterar o campo que as regras são agrupadas pelo, selecione o campo da lista de **Agrupar por** .  Para exibir as regras não agrupadas **\<Nenhum\>**, selecione.  
+-   Para alterar o campo de regras são agrupadas por, selecione o campo do **Group By** lista. Para exibir as regras desagrupadas, selecione  **\<nenhum >**.  
   
--   Para adicionar ou remover campos em colunas de regra, clique em **Opções de Coluna**.  
+-   Para adicionar ou remover campos em colunas de regra, clique em **opções de coluna**.  
   
--   Para ocultar as regras que não se aplicam à solução atual, **Ocultar as regras que não se aplicam à solução atual**.  
+-   Para ocultar as regras que não se aplicam à solução atual, **ocultar regras que não se aplicam à solução atual**.  
   
--   Para alternar entre a exibição e ocultar as regras que são atribuídas a ação de erro, clique em **Mostrar regras que podem gerar erros de Análise de Código**.  
+-   Para alternar entre mostrar e ocultar as regras que são atribuídas a ação de erro, clique em **Mostrar regras que podem gerar erros de análise de código**.  
   
--   Para alternar entre a exibição e ocultar as regras que são atribuídas a ação de aviso, clique em **Mostrar regras que podem gerar avisos de Análise de Código**.  
+-   Para alternar entre mostrar e ocultar as regras que são atribuídas a ação de aviso, clique em **Mostrar regras que podem gerar avisos de análise de código**.  
   
--   Para alternar entre a exibição e ocultar as regras que são atribuídas a ação de **Nenhum** , clique em **Mostrar regras que não estão habilitadas**.  
+-   Para alternar entre mostrar e ocultar as regras que são atribuídas a **nenhum** ação, clique em **Mostrar regras que não estão habilitadas**.  
   
--   Para adicionar ou remover conjuntos de regra padrão da Microsoft para o conjunto atual de regra, clique em **Adicionar ou remover conjuntos de regras filhas**.  
+-   Para adicionar ou remover conjuntos de regras do padrão para o conjunto de regras atual do Microsoft, clique em **adicionar ou remover conjuntos de regras filhas**.  
   
-## Consulte também  
- [Como configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Referência do conjunto de regras da análise de código](../code-quality/code-analysis-rule-set-reference.md)
+## <a name="see-also"></a>Consulte também  
+ [Como: configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Referência do conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)

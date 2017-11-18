@@ -1,51 +1,51 @@
 ---
-title: "CA1309: usar StringComparison ordinal | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseOrdinalStringComparison"
-  - "CA1309"
-helpviewer_keywords: 
-  - "UseOrdinalStringComparison"
-  - "CA1309"
+title: 'CA1309: Usar StringComparison ordinal | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseOrdinalStringComparison
+- CA1309
+helpviewer_keywords:
+- UseOrdinalStringComparison
+- CA1309
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
-caps.latest.revision: 15
-caps.handback.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ba777ea4cd272a1392413a2ecbb52b9f45a3d71b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1309: usar StringComparison ordinal
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: usar StringComparison ordinal
 |||  
 |-|-|  
-|TypeName|UseOrdinalStringComparison|  
+|NomeDoTipo|UseOrdinalStringComparison|  
 |CheckId|CA1309|  
 |Categoria|Microsoft.Globalization|  
-|Alteração Significativa|Sem quebra|  
+|Alteração Significativa|Não recentes|  
   
-## Causa  
- Uma operação de comparação de cadeia de caracteres que é nonlinguistic não define o parâmetro de <xref:System.StringComparison> a **Ordinal** ou a **OrdinalIgnoreCase**.  
+## <a name="cause"></a>Causa  
+ Uma operação de comparação de cadeia de caracteres que é nonlinguistic não define o <xref:System.StringComparison> parâmetro a **Ordinal** ou **OrdinalIgnoreCase**.  
   
-## Descrição da Regra  
- Muitos operações de cadeia, a maioria de <xref:System.String.Compare%2A?displayProperty=fullName> importante e os métodos de <xref:System.String.Equals%2A?displayProperty=fullName> , fornecem agora uma sobrecarga que aceita um valor de enumeração <xref:System.StringComparision?displayProperty=fullName> como um parâmetro.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Muitas operações, mais importantes de cadeia de caracteres de <xref:System.String.Compare%2A?displayProperty=fullName> e <xref:System.String.Equals%2A?displayProperty=fullName> métodos, agora fornecem uma sobrecarga que aceita um <xref:System.StringComparison?displayProperty=fullName> valor de enumeração como um parâmetro.  
   
- Quando você especifica **StringComparison.Ordinal** ou **StringComparison.OrdinalIgnoreCase**, a comparação de cadeia de caracteres será nonlinguistic.  Ou seja, os recursos que são específicos do idioma natural é ignorado quando as decisões de comparação são feitas.  Isso significa que as decisões são baseadas em comparações simples de byte e ignoram o uso de maiúsculas e minúsculas ou as tabelas da equivalência que são parametrizadas a cultura.  No resultado, definindo explicitamente o parâmetro a **StringComparison.Ordinal** ou a **StringComparison.OrdinalIgnoreCase**, seu código geralmente ganha a velocidade, aumenta a exatidão, e se torna mais confiável.  
+ Quando você especificar um **StringComparison** ou **OrdinalIgnoreCase**, a comparação de cadeia de caracteres será nonlinguistic. Ou seja, os recursos que são específicos para o idioma natural são ignorados ao tomar decisões de comparação. Isso significa que as decisões se baseiam em comparações de byte simples e Ignorar maiusculas e minúsculas ou equivalência de tabelas que são parametrizadas pela cultura. Como resultado, definindo explicitamente o parâmetro como o **StringComparison** ou **OrdinalIgnoreCase**, seu código geralmente ganhar velocidade, aumenta a exatidão e torna-se mais confiável.  
   
-## Como Corrigir Violações  
- Para corrigir uma violação desta regra, altere o método de comparação de cadeia de caracteres a sobrecarga que aceita a enumeração de <xref:System.StringComparison?displayProperty=fullName> como um parâmetro, e especifique **Ordinal** ou **OrdinalIgnoreCase**.  Por exemplo, altere `String.Compare(str1, str2)` a `String.Compare(str1, str2, StringComparison.Ordinal)`.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, altere o método de comparação de cadeia de caracteres para uma sobrecarga que aceita o <xref:System.StringComparison?displayProperty=fullName> enumeração como um parâmetro e especifique o **Ordinal** ou **OrdinalIgnoreCase**. Por exemplo, altere `String.Compare(str1, str2)` para `String.Compare(str1, str2, StringComparison.Ordinal)`.  
   
-## Quando Suprimir Alertas  
- É seguro suprimir um aviso desta regra quando a biblioteca ou o aplicativo são destinados para um público local delimitada ou quando a semântica da cultura atual deve ser usada.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso dessa regra quando a biblioteca ou o aplicativo é destinado para um público local limitado ou quando a semântica da cultura atual deve ser usada.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Avisos de globalização](../code-quality/globalization-warnings.md)   
  [CA1307: especificar StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

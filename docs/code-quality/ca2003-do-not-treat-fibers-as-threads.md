@@ -1,45 +1,45 @@
 ---
-title: "CA2003: n&#227;o tratar fibras como threads | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2003"
-  - "DoNotTreatFibersAsThreads"
-helpviewer_keywords: 
-  - "CA2003"
-  - "DoNotTreatFibersAsThreads"
+title: "CA2003: Não tratar fibras como threads | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2003
+- DoNotTreatFibersAsThreads
+helpviewer_keywords:
+- CA2003
+- DoNotTreatFibersAsThreads
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
-caps.latest.revision: 16
-caps.handback.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4ca9b0649950be50dcff5103258d60f6f924f12a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2003: n&#227;o tratar fibras como threads
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: não tratar fibras como threads
 |||  
 |-|-|  
-|TypeName|DoNotTreatFibersAsThreads|  
+|NomeDoTipo|DoNotTreatFibersAsThreads|  
 |CheckId|CA2003|  
 |Categoria|Microsoft.Reliability|  
-|Alteração Significativa|Sem quebra|  
+|Alteração Significativa|Não recentes|  
   
-## Causa  
- Um thread gerenciado está sendo tratado como um thread Win32.  
+## <a name="cause"></a>Causa  
+ Um thread gerenciado está sendo tratado como um thread do Win32.  
   
-## Descrição da Regra  
- Digamos que um thread gerenciado é um thread Win32.  É uma fibra.  Common Language Runtime \(CLR\) executará threads gerenciados como fibras no contexto de threads reais que são de propriedade do SQL.  Esses threads podem ser compartilhados pelos appdomains e até mesmo de bases de dados no processo do SQL Server.  Usar armazenamento de thread local gerenciado funcionará, mas você não pode usar o armazenamento de thread local não gerenciado ou presume que o código será executado no thread atual do sistema operacional novamente.  Não altere as configurações como a localidade do thread.  Não chame CreateCriticalSection ou CreateMutex por meio de P\/Invoke porque eles exigem que o thread que entra em um bloqueio também deve deixar o bloqueio.  Como esse não será o caso quando você usar fibras, as seções críticos e os mutexes do Win32 serão inúteis no SQL.  Você pode seguramente usar a maioria de estado em um objeto gerenciado de System.Thread.  Isso inclui o armazenamento de thread local gerenciado e a cultura atual de \(UI\) de interface de usuário do thread.  No entanto, por razões do modelo de programação, você não poderá alterar a cultura atual de um thread quando você usa SQL; isso será aplicada a uma nova permissão.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Não suponha que um thread gerenciado é um thread do Win32. É uma fibra. O common language runtime (CLR) serão executados threads gerenciados como fibras no contexto de threads reais que pertencem ao SQL. Esses threads podem ser compartilhados entre AppDomains e até mesmo bancos de dados no processo do SQL Server. Usando gerenciado funcionará armazenamento local de thread, mas não pode usar o armazenamento local de thread não gerenciado ou suponha que seu código será executado novamente no thread atual do sistema operacional. Não altere as configurações como a localidade do thread. Não chame CreateCriticalSection ou CreateMutex por meio de P/Invoke porque eles requerem que o thread que insere um bloqueio também deve fechar o bloqueio. Como esse não será o caso quando você usar fibras, mutexes e seções críticas do Win32 serão inúteis em SQL. Com segurança, você pode usar a maioria do estado em um objeto System.Thread gerenciado. Isso inclui o armazenamento local de thread gerenciado e a cultura de interface do usuário do usuário atual do thread. No entanto, para a programação de motivos de modelo, você não poderá alterar a cultura atual de um thread quando você usar o SQL; Isso será imposto por meio de uma nova permissão.  
   
-## Como Corrigir Violações  
- Examine o uso de threads e altere seu código adequadamente.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Examine o uso de threads e alterar seu código.  
   
-## Quando Suprimir Alertas  
- Você não deve omitir esta regra.
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Você não deve suprimir essa regra.

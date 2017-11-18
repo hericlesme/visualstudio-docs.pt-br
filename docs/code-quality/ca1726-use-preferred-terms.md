@@ -1,74 +1,73 @@
 ---
-title: "CA1726: usar termos preferenciais | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UsePreferredTerms"
-  - "CA1726"
-helpviewer_keywords: 
-  - "UsePreferredTerms"
+title: 'CA1726: Usar termos preferenciais | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UsePreferredTerms
+- CA1726
+helpviewer_keywords: UsePreferredTerms
 ms.assetid: 642b2acd-3a33-4d1f-b0a7-67073ae73be2
-caps.latest.revision: 23
-caps.handback.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2ae02d0eb136d45bc2b8af7dde5f897765493050
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1726: usar termos preferenciais
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1726-use-preferred-terms"></a>CA1726: usar termos preferenciais
 |||  
 |-|-|  
-|TypeName|UsePreferredTerms|  
+|NomeDoTipo|UsePreferredTerms|  
 |CheckId|CA1726|  
 |Categoria|Microsoft.Naming|  
-|Alteração Significativa|Interromper \- quando é acionado em assemblies<br /><br /> Sem\-quebras \- quando é acionado em parâmetros de tipo|  
+|Alteração Significativa|Quebra - quando disparado em assemblies<br /><br /> Separação de não - quando disparado em parâmetros de tipo|  
   
-## Causa  
- O nome de um identificador externamente visível inclui um termo para que uma alternativa, termo preferido existe.  Como alternativa, o nome inclui o sinalizador ou os sinalizadores de termos.  
+## <a name="cause"></a>Causa  
+ O nome de um identificador visível externamente inclui um termo para o qual existe um termo preferido, alternativo. Como alternativa, o nome inclui o termo sinalizador ou sinalizadores.  
   
-## Descrição da Regra  
- Esta regra analisa um identificador em tokens.  Cada único token e cada combinação de token dupla contíguo são comparados aos termos que são criados na regra e substituído na seção de todos os dicionários personalizados.  A tabela a seguir mostra os termos que são criados na regra e nas alternativas preferidas.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Esta regra analisa um identificador em tokens. Cada combinação de token dupla contígua e cada token único é comparado com termos que são criados para a regra e na seção preterido dicionários personalizados. A tabela a seguir mostra os termos que são incorporados a regra e suas alternativas preferenciais.  
   
 |Termo obsoleto|Termo preferencial|  
-|--------------------|------------------------|  
-|Arent|Não são|  
-|Cancelado|Cancelado|  
-|Cant|Não pode|  
+|-------------------|--------------------|  
+|não são|Não são|  
+|Cancelada|Cancelado|  
+|Não é possível|Não é possível|  
 |ComPlus|EnterpriseServices|  
-|Não pôde|CouldNot|  
-|Não fez|Não fez|  
-|Não faz|DoesNot|  
-|Não faça|DoNot|  
-|Sinalizador ou sinalizadores|Não há nenhum termo de substituição.  Não use.|  
-|Hadnt|HadNot|  
-|Não tem|HasNot|  
-|Havent|HaveNot|  
-|Índices|Índices|  
-|Não é|IsNot|  
-|Logon|Logon|  
-|Saída|Logoff|  
-|Se|ShouldNot|  
-|SignOn|SignIn|  
-|De término|SignOut|  
-|Não era|WasNot|  
-|Werent|WereNot|  
+|Couldnt|Não foi|  
+|Didnt|DidNot|  
+|Doesnt|Não|  
 |Não|Não|  
-|Não|WouldNot|  
-|Graváveis|Gravável|  
+|Sinalizador ou sinalizadores|Não há nenhum termo de substituição. Não use.|  
+|não haviam|HadNot|  
+|Não|HasNot|  
+|ainda não|HaveNot|  
+|Índices|Índices|  
+|não é|IsNot|  
+|Logon|LogOn|  
+|Logoff|Fazer LogOff|  
+|Shouldnt|ShouldNot|  
+|Logon|Entrar|  
+|Aprovação|Saída|  
+|Wasnt|WasNot|  
+|não foram|Não foram|  
+|Não|Vai|  
+|Wouldnt|WouldNot|  
+|Gravável|Gravável|  
   
-## Como Corrigir Violações  
- Para corrigir uma violação desta regra, substitua o termo com o termo de backup preferencial.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, substitua o termo com o termo alternativo preferido.  
   
-## Quando Suprimir Alertas  
- Suprima um aviso desta regra somente se o nome de identificador é intencional e se relaciona especificamente ao termo original em vez de termos preferencial.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Suprima um aviso dessa regra somente se o nome do identificador é intencional e se relaciona especificamente para o termo original em vez do termo preferencial.  
   
-## Regras Relacionadas  
- [Avisos de nomenclatura](../code-quality/naming-warnings.md)
+## <a name="related-rules"></a>Regras relacionadas  
+ [Avisos de Nomenclatura](../code-quality/naming-warnings.md)

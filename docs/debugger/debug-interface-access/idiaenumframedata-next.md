@@ -1,53 +1,51 @@
 ---
-title: "IDiaEnumFrameData::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaEnumFrameData::Next"
+title: Idiaenumframedata | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumFrameData::Next method
 ms.assetid: 546e2e23-efb2-425a-96a1-808c67c519fb
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ef6ba1cb860a1346db794e47a76258f80d57707
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumFrameData::Next
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um número especificado de elementos de dados de quadro na seqüência de enumeração.  
+# <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
+Recupera um número especificado de elementos de dados de quadro na sequência de enumeração.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT Next (   
-   ULONG           celt,   
-   IDiaFrameData** rgelt,  
-   ULONG*          pceltFetched  
+```C++  
+HRESULT Next (   
+   ULONG           celt,   
+   IDiaFrameData** rgelt,  
+   ULONG*          pceltFetched  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  celt  
- \[in\] O número de elementos de dados de quadro enumerador a serem recuperados.  
+ [in] O número de elementos de dados do quadro do enumerador a ser recuperado.  
   
  rgelt  
- \[out\] Uma matriz de [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objetos para ser preenchido com os elementos de dados de quadro solicitada.  
+ [out] Uma matriz de [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objetos a ser preenchida com os elementos de dados solicitado do quadro.  
   
  pceltFetched  
- \[out\] Retorna o número de elementos de dados de quadro buscadas enumerador.  
+ [out] Retorna o número de elementos de dados do quadro do enumerador buscadas.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não há mais registros.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhuma mais registros. Caso contrário, retornará um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

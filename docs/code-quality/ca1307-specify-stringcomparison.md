@@ -1,51 +1,51 @@
 ---
-title: "CA1307: especificar StringComparison | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1307"
-  - "SpecifyStringComparison"
-helpviewer_keywords: 
-  - "CA1307"
-  - "SpecifyStringComparison"
+title: 'CA1307: Especificar StringComparison | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1307
+- SpecifyStringComparison
+helpviewer_keywords:
+- CA1307
+- SpecifyStringComparison
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
-caps.latest.revision: 11
-caps.handback.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 61d8ca557bfc55e3488a35e82f0242f931c51ed4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1307: especificar StringComparison
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1307-specify-stringcomparison"></a>CA1307: especificar StringComparison
 |||  
 |-|-|  
-|TypeName|SpecifyStringComparison|  
+|NomeDoTipo|SpecifyStringComparison|  
 |CheckId|CA1307|  
 |Categoria|Microsoft.Globalization|  
-|Alteração Significativa|Sem quebra|  
+|Alteração Significativa|Não recentes|  
   
-## Causa  
- Uma operação de comparação de cadeia de caracteres usa uma sobrecarga do método que não definir um parâmetro de <xref:System.StringComparison> .  
+## <a name="cause"></a>Causa  
+ Uma operação de comparação de cadeia de caracteres usa uma sobrecarga de método que não define uma <xref:System.StringComparison> parâmetro.  
   
-## Descrição da Regra  
- Muitos operações de cadeia, a maioria de <xref:System.String.Compare%2A> importante e os métodos de <xref:System.String.Equals%2A> , fornecem uma sobrecarga que aceita um valor de enumeração <xref:System.StringComparison> como um parâmetro.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Muitas operações, mais importantes de cadeia de caracteres de <xref:System.String.Compare%2A> e <xref:System.String.Equals%2A> métodos, forneça uma sobrecarga que aceita um <xref:System.StringComparison> valor de enumeração como um parâmetro.  
   
- Sempre que uma sobrecarga existir que usa um parâmetro de <xref:System.StringComparison> , deverá ser usado em vez de uma sobrecarga que não faça esse parâmetro.  Definindo explicitamente esse parâmetro, o código é feito normalmente mais claro e fácil.  
+ Sempre que existir de uma sobrecarga que utiliza um <xref:System.StringComparison> parâmetro, ele deve ser usado em vez de uma sobrecarga que não têm esse parâmetro. Definindo explicitamente esse parâmetro, seu código é geralmente feita mais clara e mais fáceis de manter.  
   
-## Como Corrigir Violações  
- Para corrigir uma violação desta regra, métodos de comparação de cadeia de caracteres de alteração nas sobrecargas que aceitam a enumeração de <xref:System.StringComparison> como um parâmetro.  Por exemplo: alteração `String.Compare(str1, str2)` a `String.Compare(str1, str2, StringComparison.Ordinal)`.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, altere os métodos de comparação de cadeia de caracteres para sobrecargas que aceitam o <xref:System.StringComparison> enumeração como um parâmetro. Por exemplo: alterar `String.Compare(str1, str2)` para `String.Compare(str1, str2, StringComparison.Ordinal)`.  
   
-## Quando Suprimir Alertas  
- É seguro suprimir um aviso desta regra quando a biblioteca ou o aplicativo devem ser usados por um público local limitada e em virtude disso não serão localizados.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso dessa regra quando a biblioteca ou o aplicativo é destinado a um público limitado de local e, portanto, não será localizado.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Avisos de globalização](../code-quality/globalization-warnings.md)   
  [CA1309: usar StringComparison ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)

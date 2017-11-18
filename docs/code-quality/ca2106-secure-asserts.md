@@ -1,49 +1,49 @@
 ---
-title: "CA2106: declara&#231;&#245;es seguras | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2106"
-  - "SecureAsserts"
-helpviewer_keywords: 
-  - "CA2106"
-  - "SecureAsserts"
+title: "CA2106: Proteger declarações | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2106
+- SecureAsserts
+helpviewer_keywords:
+- CA2106
+- SecureAsserts
 ms.assetid: 91feb36e-6e2c-436c-8272-5aee31f77e98
-caps.latest.revision: 19
-caps.handback.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 321d00f13ebc891070549778239fec60201d03c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2106: declara&#231;&#245;es seguras
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2106-secure-asserts"></a>CA2106: declarações seguras
 |||  
 |-|-|  
-|TypeName|SecureAsserts|  
+|NomeDoTipo|SecureAsserts|  
 |CheckId|CA2106|  
 |Categoria|Microsoft.Security|  
 |Alteração Significativa|Quebra|  
   
-## Causa  
- Um método afirma uma permissão e nenhuma verificação de segurança é executado no chamador.  
+## <a name="cause"></a>Causa  
+ Um método declara uma permissão e nenhuma verificação de segurança é realizada no chamador.  
   
-## Descrição da Regra  
- Declare uma permissão de segurança sem executar qualquer verificações de segurança pode deixar uma fraqueza explorável de segurança em seu código.  Uma exames da pilha de segurança para quando uma permissão de segurança é declarada.  Se você afirma uma permissão sem executar nenhuma verificações no chamador, o chamador pode indiretamente executar o código usando suas permissões.  Afirma sem verificações de segurança são permitidos apenas quando você tiver certeza de que declare não pode ser usado em uma maneira prejudicial.  Assert é inofensivo se o código que chama é inofensivo, ou os usuários não podem passar informações para codificar arbitrária que você chama.  
+## <a name="rule-description"></a>Descrição da Regra  
+ A declaração de uma permissão de segurança sem realizar verificações de segurança pode deixar uma fraqueza de segurança explorável no código. Um exame da pilha de segurança para quando uma permissão de segurança é declarada. Se você declarar uma permissão sem realizar verificações no chamador, o chamador indiretamente pode executar códigos usando suas permissões. Declara sem verificações de segurança são permitidos apenas quando tiver certeza de que a declaração não pode ser usada de maneira prejudicial. Uma declaração é inofensiva se o código que você chamar é inofensivo, ou os usuários não é possível passar informações arbitrárias ao código que você chama.  
   
-## Como Corrigir Violações  
- Para corrigir uma violação desta regra, adicione uma procura de segurança para o método ou em seu tipo. declarando  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, adicione uma exigência de segurança para o método ou seu tipo declarativo.  
   
-## Quando Suprimir Alertas  
- Suprima um aviso desta regra somente depois revisão de segurança cuidadosa.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Suprima um aviso dessa regra somente após uma análise cuidadosa de segurança.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
- [Diretrizes de codificação segura](../Topic/Secure%20Coding%20Guidelines.md)
+ [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)

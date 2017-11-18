@@ -1,51 +1,51 @@
 ---
-title: "CA2103: revisar seguran&#231;a obrigat&#243;ria | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2103"
-  - "ReviewImperativeSecurity"
-helpviewer_keywords: 
-  - "CA2103"
-  - "ReviewImperativeSecurity"
+title: "CA2103: Revisar segurança obrigatória | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2103
+- ReviewImperativeSecurity
+helpviewer_keywords:
+- CA2103
+- ReviewImperativeSecurity
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b6047df9ea1b5454d4c4c689a5baef887907779a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2103: revisar seguran&#231;a obrigat&#243;ria
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2103-review-imperative-security"></a>CA2103: revisar segurança obrigatória
 |||  
 |-|-|  
-|TypeName|ReviewImperativeSecurity|  
+|NomeDoTipo|ReviewImperativeSecurity|  
 |CheckId|CA2103|  
 |Categoria|Microsoft.Security|  
 |Alteração Significativa|Quebra|  
   
-## Causa  
- Um método usa a segurança obrigatória e pode construir a permissão usando as informações do estado ou os valores de retorno que podem ser alteradas desde que a demanda está ativa.  
+## <a name="cause"></a>Causa  
+ Um método usa segurança obrigatória e pode construir a permissão usando as informações de estado ou os valores de retorno que podem ser alterados desde que a demanda esteja ativa.  
   
-## Descrição da Regra  
- O usa obrigatórios de segurança objetos gerenciados para especificar permissões e ações de segurança durante a execução do código, comparada à segurança declarativa, que usa atributos para armazenar permissões e ações nos metadados.  A segurança obrigatória é bem flexível como você pode definir o estado de um objeto de permissão e selecione ações de segurança usando informações não disponíveis até o tempo de execução.  Junto com essa flexibilidade o risco de informações de tempo de execução que você usa para determinar o estado de uma permissão não permanece inalterado à medida que a ação é aplicado.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Segurança obrigatória usa objetos gerenciados para especificar permissões e ações de segurança durante a execução de código, em comparação comparada a segurança declarativa, que usa atributos para armazenar permissões e ações nos metadados. Segurança obrigatória é muito flexível, porque você pode definir o estado de um objeto de permissão e selecione as ações de segurança usando as informações que não estão disponíveis até o tempo de execução. Junto com que a flexibilidade vem o risco de que as informações de tempo de execução que você pode usar para determinar que o estado de uma permissão não permanecem inalteradas desde que a ação está em vigor.  
   
- Use a segurança declarativa sempre que possível.  As demandas declarativa são mais fáceis de entender.  
+ Use a segurança declarativa sempre que possível. As solicitações declarativas são mais fáceis de entender.  
   
-## Como Corrigir Violações  
- Revise as demandas obrigatórias de segurança para garantir que o estado de permissão não confie nas informações que pode ser modificado desde a permissão está sendo usada.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Examine as demandas de segurança obrigatória para certificar-se de que o estado da permissão não se baseia em informações que podem ser alterados desde que a permissão está sendo usada.  
   
-## Quando Suprimir Alertas  
- É seguro suprimir um aviso dessa regra se a permissão não confie em alterar dados.  Porém, é melhor alterar a demanda obrigatória para seu equivalente declarativo.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso de que essa regra se a permissão não depende de alteração de dados. No entanto, é melhor alterar a demanda fundamental para seu equivalente declarativa.  
   
-## Consulte também  
- [Diretrizes de codificação segura](../Topic/Secure%20Coding%20Guidelines.md)   
- [Dados e modelagem](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)
+## <a name="see-also"></a>Consulte também  
+ [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)   
+ [Dados e modelagem](/dotnet/framework/data/index)

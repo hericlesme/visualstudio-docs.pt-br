@@ -1,47 +1,47 @@
 ---
-title: "CA1711: os identificadores n&#227;o devem ter sufixo incorreto | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1711"
-  - "IdentifiersShouldNotHaveIncorrectSuffix"
-helpviewer_keywords: 
-  - "CA1711"
-  - "IdentifiersShouldNotHaveIncorrectSuffix"
+title: "CA1711: Os identificadores não devem ter sufixo incorreto | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1711
+- IdentifiersShouldNotHaveIncorrectSuffix
+helpviewer_keywords:
+- CA1711
+- IdentifiersShouldNotHaveIncorrectSuffix
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1e0701c93146b4cc460a7216d2f4159832389db6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1711: os identificadores n&#227;o devem ter sufixo incorreto
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: os identificadores não devem ter sufixo incorreto
 |||  
 |-|-|  
-|TypeName|IdentifiersShouldNotHaveIncorrectSuffix|  
+|NomeDoTipo|IdentifiersShouldNotHaveIncorrectSuffix|  
 |CheckId|CA1711|  
 |Categoria|Microsoft.Naming|  
 |Alteração Significativa|Quebra|  
   
-## Causa  
- Um identificador tem um sufixo incorreto.  
+## <a name="cause"></a>Causa  
+ Um identificador possuem um sufixo incorreto.  
   
-## Descrição da Regra  
- Por convenção, somente os nomes dos tipos que estendem determinados tipos de base ou que implementam determinadas interfaces, ou tipos derivados desses tipos, deve terminar com sufixos específicos reservados.  Outros nomes de tipo não devem usar esses sufixos reservadas.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Por convenção, somente os nomes dos tipos que estendem determinados tipos de base ou que implementam determinadas interfaces, ou tipos derivados desses tipos, devem terminar com sufixos reservados específicos. Outros nomes de tipo não devem usar esses sufixos reservados.  
   
- A tabela a seguir lista os sufixos reservadas e os tipos de base e interfaces com associados.  
+ A tabela a seguir lista os sufixos reservados e os tipos base e interfaces às quais eles estão associados.  
   
-|Sufixo|Tipo de base\/interface|  
-|------------|-----------------------------|  
+|Sufixo|Interface/tipo de base|  
+|------------|--------------------------|  
 |Atributo|<xref:System.Attribute?displayProperty=fullName>|  
 |Coleção|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|  
 |Dicionário|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|  
@@ -53,27 +53,27 @@ manager: "wpickett"
 |Pilha|<xref:System.Collections.Stack?displayProperty=fullName>|  
 |Fluxo|<xref:System.IO.Stream?displayProperty=fullName>|  
   
- Além disso, os seguintes sufixos se **não** é usado:  
+ Além disso, os seguintes sufixos devem **não** ser usado:  
   
--   Delegate  
+-   Representante  
   
 -   Enum  
   
--   Executa \- use “core” em vez  
+-   Implementação - use 'Core' em vez disso  
   
--   O sufixo ex ou semelhante para distingui\-lo de uma versão anterior do mesmo tipo  
+-   Ex ou sufixo semelhante para distingui-lo de uma versão anterior do mesmo tipo  
   
- Convenções de nomenclatura dão uma aparência comum para bibliotecas que tem como foco o common language runtime.  Isto reduz a curva de aprendizado que é necessária para novas bibliotecas de software, e aumenta confiança dos clientes de que a biblioteca foi desenvolvida por alguém que com experiência programar código gerenciado.  
+ Convenções de nomenclatura fornecem uma aparência comum para bibliotecas de destino do common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por uma pessoa com experiência em desenvolvimento de código gerenciado.  
   
-## Como Corrigir Violações  
- Remova o sufixo do nome do tipo.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Remova o sufixo de nome de tipo.  
   
-## Quando Suprimir Alertas  
- Não suprima um aviso desta regra a menos que o sufixo tem um significado inequívoco no domínio de aplicativo.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso dessa regra, a menos que o sufixo tem um significado ambíguo no domínio do aplicativo.  
   
-## Regras Relacionadas  
- [CA1710: os identificadores devem ter o sufixo correto](../Topic/CA1710:%20Identifiers%20should%20have%20correct%20suffix.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1710: os identificadores devem ter o sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)  
   
-## Consulte também  
- [Atributos](../Topic/Attributes1.md)   
- [Delegados e eventos](http://msdn.microsoft.com/pt-br/d98fd58b-fa4f-4598-8378-addf4355a115)
+## <a name="see-also"></a>Consulte também  
+ [Atributos](/dotnet/standard/design-guidelines/attributes)   
+ [Manipulando e acionando eventos](/dotnet/standard/events/index)  

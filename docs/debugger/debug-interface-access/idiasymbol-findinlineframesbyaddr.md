@@ -1,52 +1,51 @@
 ---
-title: "IDiaSymbol::findInlineFramesByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::findInlineFramesByAddr | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 36a122e6-f27e-40cd-9784-cdaf279e1905
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 48d461133065d9f73e79160648f4b0fdc0afa7d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findInlineFramesByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera uma enumeração que permite que um cliente executa iterações através dos quadros definidas em um endereço especificado.  
+# <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
+Recupera uma enumeração que permite que um cliente iterar por todos os quadros embutido em um determinado endereço.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT findInlineFramesByAddr (   
+```C++  
+HRESULT findInlineFramesByAddr (   
    DWORD             isect,  
-   DWORD             offset,  
-   IDiaEnumSymbols** ppResult  
+   DWORD             offset,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `isect`  
- \[in\] especifica o componente da seção de endereços.  
+ [in] Especifica o componente de seção do endereço.  
   
  `offset`  
- \[in\] especifica o deslocamento de endereços.  
+ [in] Especifica o componente de deslocamento do endereço.  
   
  `ppResult`  
- \[out\] contém um objeto de `IDiaEnumSymbols` que contém a lista de quadros que são recuperados.  
+ [out] Contém uma `IDiaEnumSymbols` objeto que contém a lista de quadros que são recuperados.  
   
-## Valor de retorno  
- Se com êxito, retorna `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   

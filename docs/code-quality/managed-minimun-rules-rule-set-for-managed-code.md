@@ -1,29 +1,29 @@
 ---
-title: "Conjunto de regras m&#237;nimas gerenciado para c&#243;digo gerenciado | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Definir regras mínimas gerenciada para código gerenciado | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 44a50c54-8dd3-42b2-8387-532a150e5a6c
-caps.latest.revision: 2
-caps.handback.revision: 2
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ac5ec4db1fe36d7e92c4f9062f8d0c28bae2263e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Conjunto de regras m&#237;nimas gerenciado para c&#243;digo gerenciado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-As regras mínimas gerenciados referem\-se aos problemas mais importantes no código, inclusive buracos na segurança em potencial, falhas de aplicativo, e outros erros importantes de lógica e de design.  Você deve incluir esta regra definida em qualquer regra personalizada e cria para seus projetos.  
+# <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Gerenciado mínimo conjunto de regras para código gerenciado
+As regras de mínimo gerenciados enfocam os problemas mais críticos do código, inclusive falhas potenciais de segurança, falhas de aplicativo e outros erros importantes de lógica e design. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que criar para seus projetos.  
   
 |Regra|Descrição|  
-|-----------|---------------|  
-|[CA1001](../Topic/CA1001:%20Types%20that%20own%20disposable%20fields%20should%20be%20disposable.md)|Tipos que possui campos descartáveis deve ser descartável|  
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remova os finalizers vazias|  
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Os campos descartáveis devem ser removidos|  
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Operador de igual de sobrecarga em substituir ValueType.Equals|
+|----------|-----------------|  
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos que possuem campos descartáveis devem ser descartáveis|  
+|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remova finalizadores vazios|  
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Campos descartáveis devem ser descartados|  
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecarregar operador equals ao substituir ValueType. Equals|

@@ -1,50 +1,50 @@
 ---
-title: "CA1720: os identificadores n&#227;o devem conter nomes de tipo | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1720"
-  - "IdentifiersShouldNotContainTypeNames"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotContainTypeNames"
-  - "CA1720"
+title: "CA1720: Os identificadores não devem conter nomes de tipo | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1720
+- IdentifiersShouldNotContainTypeNames
+helpviewer_keywords:
+- IdentifiersShouldNotContainTypeNames
+- CA1720
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
-caps.latest.revision: 15
-caps.handback.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5418bc8d265c32057911df2d3a15aaddacf1398e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1720: os identificadores n&#227;o devem conter nomes de tipo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: os identificadores não devem conter nomes de tipo
 |||  
 |-|-|  
-|TypeName|IdentifiersShouldNotContainTypeNames|  
+|NomeDoTipo|IdentifiersShouldNotContainTypeNames|  
 |CheckId|CA1720|  
 |Categoria|Microsoft.Naming|  
 |Alteração Significativa|Quebra|  
   
-## Causa  
- O nome de um parâmetro em um membro externamente visível contém um nome de tipo de dados.  
+## <a name="cause"></a>Causa  
+ O nome de um parâmetro em um membro visível externamente contém um nome de tipo de dados.  
   
- \- ou \-  
+ -ou-  
   
- O nome de um membro externamente visível contém um nome específico do idioma do tipo de dados.  
+ O nome de um membro visível externamente contém um nome de tipo de dados específicos de idioma.  
   
-## Descrição da Regra  
- Os nomes dos parâmetros e dos membros são usados para comunicar melhor seu significado do que para descrever seu tipo, que deve ser fornecido por ferramentas de desenvolvimento.  Para nomes de membros, se um nome de tipo de dados deve ser usado, use um nome independente em vez de um específico do idioma.  Por exemplo, em vez do nome do tipo int “” C\#, use o nome independente do tipo de dados, Int32.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Nomes de parâmetros e membros são melhor usados para se comunicar seu significado que to descrevem o tipo, o que deve ser fornecido pelas ferramentas de desenvolvimento. Nomes de membros, se um nome de tipo de dados deve ser usado, use um nome de independente da linguagem em vez de um idioma específico. Por exemplo, em vez do c# tipo nome 'int', use o nome de tipo de dados independente de idioma, Int32.  
   
- Cada token discreto em nome do parâmetro ou do membro é verificado nos seguintes nomes específicos de idioma do tipo de dados, em um modo sem diferenciação de maiúsculas e minúsculas:  
+ Cada token discreto no nome do parâmetro ou um membro é verificado em relação os seguintes nomes de tipo de dados específicos de idioma, de uma maneira de maiusculas e minúsculas:  
   
--   Bool  
+-   bool  
   
 -   WChar  
   
@@ -52,15 +52,15 @@ manager: "wpickett"
   
 -   UInt8  
   
--   Short  
+-   Abreviado  
   
 -   UShort  
   
--   Int  
+-   int  
   
 -   UInt  
   
--   Integer  
+-   Inteiro  
   
 -   UInteger  
   
@@ -68,7 +68,7 @@ manager: "wpickett"
   
 -   ULong  
   
--   Não assinados  
+-   Não assinado  
   
 -   Assinado  
   
@@ -78,13 +78,13 @@ manager: "wpickett"
   
 -   Float64  
   
- Além disso, os nomes de parâmetro também são verificados em relação aos seguintes nomes de independentes de tipo de dados, em um modo sem diferenciação de maiúsculas e minúsculas:  
+ Além disso, os nomes de parâmetro também são verificados contra os seguintes nomes de tipo de dados independente de idioma, de uma maneira de maiusculas e minúsculas:  
   
--   Object  
+-   Objeto  
   
--   Obj  
+-   obj  
   
--   Booleano  
+-   Boolean  
   
 -   Char  
   
@@ -110,7 +110,7 @@ manager: "wpickett"
   
 -   IntPtr  
   
--   Ptr  
+-   PTR  
   
 -   Ponteiro  
   
@@ -120,28 +120,28 @@ manager: "wpickett"
   
 -   UPointer  
   
--   Single  
+-   Simples  
   
--   Double  
+-   Duplo  
   
 -   Decimal  
   
--   Guid  
+-   GUID  
   
-## Como Corrigir Violações  
- **Se acionado em um parâmetro:**  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ **Se acionado em relação a um parâmetro:**  
   
- Substitua o identificador do tipo de dados em nome do parâmetro com o como um termo que melhor descreve o significado ou uma condição mais genérico, como “value”.  
+ Substitua o identificador de tipo de dados no nome do parâmetro com um termo que descreve melhor seu significado ou um termo mais genérico, como 'value'.  
   
  **Se acionado em relação a um membro:**  
   
- Substitua o identificador específico do idioma do tipo de dados em nome do membro com um termo que melhor descreve o significado, um equivalente independente, ou uma condição mais genérico, como “value”.  
+ Substitua o identificador de tipo de dados específicos de idioma no nome do membro com um termo que descreve melhor seu significado, um equivalente independente de idioma ou um termo mais genérico, como 'value'.  
   
-## Quando Suprimir Alertas  
- Uso ocasional de nomes de tipo base do parâmetro e o membro pode ser apropriado.  No entanto, para desenvolvimento, nenhum cenário conhecido ocorre quando você precisar eliminar um aviso desta regra.  Para as bibliotecas que têm enviado anterior, talvez seja necessário suprimir um aviso desta regra.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Uso ocasional de nomes de parâmetro e o membro de tipo pode ser apropriado. No entanto, para novos desenvolvimentos, nenhum conhecidos situações ocorrer onde você deve suprimir um aviso dessa regra. Para bibliotecas que têm anterior fornecido, você terá que suprimir um aviso dessa regra.  
   
-## Regras Relacionadas  
- [CA1709: os identificadores do recurso devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
  [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   

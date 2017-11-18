@@ -1,58 +1,58 @@
 ---
-title: "CA2124: encapsular cl&#225;usulas finalmente vulner&#225;veis em tentativa externa | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2124"
-  - "WrapVulnerableFinallyClausesInOuterTry"
-helpviewer_keywords: 
-  - "CA2124"
-  - "WrapVulnerableFinallyClausesInOuterTry"
+title: "CA2124: Wrap vulnerável finalmente cláusulas externa tente | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2124
+- WrapVulnerableFinallyClausesInOuterTry
+helpviewer_keywords:
+- CA2124
+- WrapVulnerableFinallyClausesInOuterTry
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
-caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f4d30a07ed0930d5165629f7c4b468d7e5146613
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2124: encapsular cl&#225;usulas finalmente vulner&#225;veis em tentativa externa
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: encapsular cláusulas finalmente vulneráveis em tentativa externa
 |||  
 |-|-|  
-|TypeName|WrapVulnerableFinallyClausesInOuterTry|  
+|NomeDoTipo|WrapVulnerableFinallyClausesInOuterTry|  
 |CheckId|CA2124|  
 |Categoria|Microsoft.Security|  
-|Alteração Significativa|Sem Quebra|  
+|Alteração Significativa|Não separáveis|  
   
-## Causa  
- Nas versões 1,0 e 1,1 de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], um público ou um método protegido contêm `try`\/`catch`\/bloco de`finally` .  O bloco de `finally` aparece para reiniciar o estado de segurança e não é incluído em um bloco de `finally` .  
+## <a name="cause"></a>Causa  
+ Nas versões 1.0 e 1.1 do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], um método público ou protegido contém um `try` / `catch` / `finally` bloco. O `finally` bloco é exibido redefinir o estado de segurança e não está contido em um `finally` bloco.  
   
-## Descrição da Regra  
- Esta regra encontrar `try`\/blocos de`finally` no código que se destinam às versões 1,0 e 1,1 de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que pode ser vulneráveis a filtros mal\-intencionados da exceção atual da pilha de chamadas.  Se as operações particulares como a representação ocorrem no bloco try, e uma exceção será gerada, o filtro pode executar antes que o bloco de `finally` .  Para o exemplo de representação, isso significa que o filtro executado como o usuário representado.  Os filtros são implementable atualmente apenas no Visual Basic.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Essa regra localiza `try` / `finally` blocos no código que tem como alvo versões 1.0 e 1.1 do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que podem estar vulneráveis a filtros de exceção mal-intencionado presentes na pilha de chamadas. Se operações confidenciais como representação ocorrerem no bloco try, e uma exceção será lançada, o filtro pode ser executado antes do `finally` bloco. Para o exemplo de representação, isso significa que o filtro será executado como o usuário representado. Os filtros são implementável atualmente apenas no Visual Basic.  
   
 > [!WARNING]
->  **Observação** Nas versões 2,0 e posterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o tempo de execução protege automaticamente `try`\/`catch`\/bloco de `finally` filtros mal\-intencionados de exceção, se a reinicialização ocorre diretamente dentro do método que contém o bloco de exceção.  
+>  **Observação** nas versões 2.0 e posteriores do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o tempo de execução protege automaticamente um `try` / `catch` /  `finally` bloco de filtros de exceção mal-intencionados, se a reinicialização ocorre diretamente dentro do método que contém o bloco de exceção.  
   
-## Como Corrigir Violações  
- Colocar `try`desempacotado\/`finally` em um bloco CATCH da tentativa.  Consulte o segundo exemplo a seguir.  Isso força `finally` para executar antes de código de filtro.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Coloque o desencapsulamento `try` / `finally` em um bloco try externo. Consulte o segundo exemplo que segue. Isso força o `finally` seja executado antes do código de filtro.  
   
-## Quando Suprimir Alertas  
- Não elimine um alerta desta regra.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra.  
   
-## Exemplo do pseudocódigo  
+## <a name="pseudo-code-example"></a>Exemplo de código pseudo  
   
-### Descrição  
- O pseudocódigo a seguir ilustra o padrão detectado por esta regra.  
+### <a name="description"></a>Descrição  
+ O pseudocódigo a seguir ilustra o padrão detectado por essa regra.  
   
-### Código  
+### <a name="code"></a>Código  
   
 ```  
 try {  
@@ -66,8 +66,8 @@ finally {
 }  
 ```  
   
-## Exemplo  
- O pseudocódigo a seguir mostra o padrão que você pode usar para proteger seu código e para satisfazer essa regra.  
+## <a name="example"></a>Exemplo  
+ O pseudocódigo a seguir mostra o padrão que você pode usar para proteger seu código e atender a essa regra.  
   
 ```  
 try {  

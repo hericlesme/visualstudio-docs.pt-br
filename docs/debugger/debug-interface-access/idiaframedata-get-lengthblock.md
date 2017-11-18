@@ -1,48 +1,46 @@
 ---
-title: "IDiaFrameData::get_lengthBlock | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaFrameData::get_lengthBlock"
+title: ': Get_lengthblock | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_lengthBlock method
 ms.assetid: 2e54deb7-7744-428e-913c-1d47a2aa89b0
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 35c6643976faca9a6f990b4959ae8bb1110e59d9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_lengthBlock
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
 Recupera o comprimento, em bytes, do bloco de código descrito pelo quadro.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_lengthBlock (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_lengthBlock (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna o número de bytes de código no quadro.  
+ [out] Retorna o número de bytes de código no quadro.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não há suporte para esta propriedade.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## Comentários  
- O valor retornado por esse método é normalmente usado na interpretação de uma seqüência de programa \(consulte a [IDiaFrameData::get\_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método para a definição de uma seqüência de programa\).  
+## <a name="remarks"></a>Comentários  
+ O valor retornado por esse método é usado normalmente na interpretação de uma cadeia de caracteres do programa (consulte o [: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método para a definição de uma cadeia de caracteres do programa).  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get\_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+ [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

@@ -1,48 +1,46 @@
 ---
-title: "DataKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Enumeração DataKind"
+title: DataKind | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: DataKind enumeration
 ms.assetid: b64be708-22d6-4360-99e7-8f4e6b196de7
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6e9ffa36facb3c7f64f7eb2c0b96ef5209f70c78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# DataKind
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="datakind"></a>DataKind
 Indica o escopo específico de um valor de dados.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-enum DataKind {   
-   DataIsUnknown,  
-   DataIsLocal,  
-   DataIsStaticLocal,  
-   DataIsParam,  
-   DataIsObjectPtr,  
-   DataIsFileStatic,  
-   DataIsGlobal,  
-   DataIsMember,  
-   DataIsStaticMember,  
-   DataIsConstant  
+```C++  
+enum DataKind {   
+   DataIsUnknown,  
+   DataIsLocal,  
+   DataIsStaticLocal,  
+   DataIsParam,  
+   DataIsObjectPtr,  
+   DataIsFileStatic,  
+   DataIsGlobal,  
+   DataIsMember,  
+   DataIsStaticMember,  
+   DataIsConstant  
 };  
 ```  
   
-## Elements  
+## <a name="elements"></a>Elementos  
  DataIsUnknown  
  Símbolo de dados não pode ser determinado.  
   
@@ -56,10 +54,10 @@ enum DataKind { 
  Item de dados é um parâmetro formal.  
   
  DataIsObjectPtr  
- Item de dados é um ponteiro de objeto \(`this`\).  
+ Item de dados é um ponteiro de objeto (`this`).  
   
  DataIsFileStatic  
- Item de dados é uma variável de escopo do arquivo.  
+ Item de dados é uma variável de escopo de arquivo.  
   
  DataIsGlobal  
  Item de dados é uma variável global.  
@@ -68,17 +66,17 @@ enum DataKind { 
  Item de dados é uma variável de membro de objeto.  
   
  DataIsStaticMember  
- Item de dados é uma variável estática de classe.  
+ Item de dados é uma variável de classe estática.  
   
  DataIsConstant  
  Item de dados é um valor constante.  
   
-## Comentários  
- Os valores desta enumeração são retornados pela [IDiaSymbol::get\_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) método.  
+## <a name="remarks"></a>Comentários  
+ Os valores nesta enumeração são retornados pelo [: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) método.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  Cabeçalho: cvconst.h  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get\_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
+ [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

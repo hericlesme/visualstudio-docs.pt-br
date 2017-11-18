@@ -1,60 +1,58 @@
 ---
-title: "Exibi&#231;&#227;o de threads | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.externaltools.spyplus.threadsview"
-helpviewer_keywords: 
-  - "exibição Threads"
+title: "Exibição de threads | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.externaltools.spyplus.threadsview
+helpviewer_keywords: Threads view
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
-caps.latest.revision: 6
-caps.handback.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Exibi&#231;&#227;o de threads
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-O modo de exibição de Threads é uma lista simples de todos os segmentos associados ao windows em seu sistema.  O identificador do segmento e o nome do módulo para cada segmento são mostrados.  Processos não são incluídos, mas você poderá localizar facilmente o processo que possui um thread selecionada.  
+# <a name="threads-view"></a>Modo de Exibição de Threads
+O modo de exibição de Threads é uma lista simples de todos os threads associados com o windows em seu sistema. A ID do Thread e o nome do módulo para cada thread são mostrados. Os processos não são incluídos, mas você pode localizar facilmente o processo que possui um thread selecionado.  
   
-## Procedimentos  
+## <a name="procedures"></a>Procedimentos  
   
-#### Para abrir a visualização de Threads  
+#### <a name="to-open-the-threads-view"></a>Para abrir a exibição de Threads  
   
-1.  Do  **Spy** menu, escolha  **segmentos**.  
+1.  Do **Spy** menu, escolha **Threads**.  
   
- ![Visualização de Threads Spy &#43; &#43;](~/debugger/media/spy--_threads.png "Spy\+\+\_Threads")  
-Visualização de Threads Spy \+ \+  
+ ![Spy º 43; &#43; Exibição de threads](../debugger/media/spy--_threads.png "Spy + + _Threads")  
+Exibição de Threads do Spy + +  
   
- A figura acima mostra a visualização de Threads.  
+ A figura acima mostra a exibição de Threads.  
   
-## Nesta seção  
- [Procurando por um segmento no modo de exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Explica como localizar um segmento específico na visualização de Threads.  
+## <a name="in-this-section"></a>Nesta seção  
+ [Procurando por um Thread na exibição de Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+ Explica como localizar um segmento específico no modo de exibição de Threads.  
   
- [Exibindo propriedades de Thread](../Topic/How%20to:%20Display%20Thread%20Properties.md)  
- Explica como exibir mais informações sobre um segmento.  
+ [Exibindo propriedades de Thread](../debugger/how-to-display-thread-properties.md)  
+ Explica como mostrar mais informações sobre um segmento.  
   
-## Seções relacionadas  
- [Modos de exibição Spy \+ \+](../debugger/spy-increment-views.md)  
- Explica as exibições de árvore Spy \+ \+ do windows, mensagens, processos e threads.  
+## <a name="related-sections"></a>Seções relacionadas  
+ [Exibições do Spy++](../debugger/spy-increment-views.md)  
+ Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  
   
- [Usando o Spy \+ \+](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy \+ \+ e explica como ele pode ser usado.  
+ [Usando Spy++](../debugger/using-spy-increment.md)  
+ Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
   
- [Caixa de diálogo de pesquisa de segmento.](../debugger/thread-search-dialog-box.md)  
+ [Caixa de diálogo Pesquisa de Threads](../debugger/thread-search-dialog-box.md)  
  Usado para localizar o nó para um segmento específico no modo de exibição de Threads.  
   
- [Caixa de diálogo Propriedades de thread.](../debugger/message-properties-dialog-box.md)  
- Exibe as propriedades de um thread selecionado no modo de exibição de Threads ou mensagens.  
+ [Caixa de diálogo Propriedades do Thread](../debugger/message-properties-dialog-box.md)  
+ Exibe as propriedades de um thread selecionado na exibição de Threads ou a exibição de mensagens.  
   
- [Referência Spy \+ \+](../debugger/spy-increment-reference.md)  
- Inclui seções descrevendo cada Spy \+ \+ menu e a caixa de diálogo caixa.
+ [Referência a Spy++](../debugger/spy-increment-reference.md)  
+ Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.

@@ -1,48 +1,46 @@
 ---
-title: "IDiaFrameData::get_allocatesBasePointer | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaFrameData::get_allocatesBasePointer"
+title: ': Get_allocatesbasepointer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_allocatesBasePointer method
 ms.assetid: 8a33db5d-008c-4fe5-b64f-210c9b77f686
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3aef929dbbb3555313917fbb67f618fb569d6ec6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_allocatesBasePointer
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um sinalizador que indica se o ponteiro de base é alocado para o código neste intervalo de endereço.  Esse método é reprovado.  
+# <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
+Recupera um sinalizador que indica se o ponteiro de base está alocado para o código nesse intervalo de endereço. Este método é preterido.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_allocatesBasePointer (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_allocatesBasePointer (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna `TRUE` se for alocado a um ponteiro de base; Caso contrário, retornará `FALSE`.  
+ [out] Retorna `TRUE` se um ponteiro de base é alocado; caso contrário, retornará `FALSE`.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não há suporte para esta propriedade.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## Comentários  
- Esta propriedade deve ser usada somente pelo código que anteriormente acessados FPO\_DATA, ou quando o programa retornada pelo [IDiaFrameData::get\_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método é `NULL`.  Caso contrário, a seqüência de programa contém todas as informações necessárias para calcular os valores do registro anterior.  
+## <a name="remarks"></a>Comentários  
+ Essa propriedade deve ser usada somente pelo código que anteriormente acessados FPO_DATA ou quando a cadeia de caracteres do programa retornado pelo [: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método é `NULL`. Caso contrário, a cadeia de caracteres do programa contém todas as informações necessárias para calcular valores de registro anterior.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get\_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+ [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

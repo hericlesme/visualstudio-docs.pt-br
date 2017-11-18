@@ -1,40 +1,54 @@
 ---
-title: "Erro: o servidor Web n&#227;o foi configurado corretamente | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.remote.projnotconfigured"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurador, erros de aplicativo Web"
+title: "Erro: O servidor web não é configurado corretamente | Microsoft Docs"
+ms.custom: 
+ms.date: 09/20/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.remote.projnotconfigured
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: debugger, Web application errors
 ms.assetid: 875ba87f-c372-4126-8fe3-e33931cf26c0
-caps.latest.revision: 22
-caps.handback.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e0538693a815cf9749b3cd9df007486de1af3637
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Erro: o servidor Web n&#227;o foi configurado corretamente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: o servidor Web não foi configurado corretamente
 
-Possíveis causas do erro incluem:  
+Depois de fazer as etapas descritas aqui para resolver o problema e antes de tentar novamente depurar, você talvez precise redefinir o IIS. Você pode fazer isso, abra um prompt de comando do administrador e digitando `iisreset`.
+
+Siga estas etapas para resolver esse problema:
+
+1. Se o aplicativo web hospedado no servidor está configurado como uma versão de compilação, republicar como uma compilação de depuração e verifique se o arquivo Web. config contém `debug=true` no elemento de compilação. Redefinir o IIS e tente novamente.
+
+    Por exemplo, se você estiver usando um perfil de publicação para uma compilação de versão, alterá-la para depurar e publicar novamente. Caso contrário, o atributo de depuração será definido `false` quando você publica.
+
+2. (IIS) Verifique se o caminho físico está correto. No IIS, você encontrar essa configuração em **configurações básicas > caminho físico** (ou **configurações avançadas** em versões anteriores do IIS).
+
+    O caminho físico pode estar incorreto, se o aplicativo web foi copiado para um computador diferente, manualmente renomeado ou movido. Redefinir o IIS e tente novamente.
+
+3. No Visual Studio, verifique se o servidor correto está selecionado nas propriedades. (Abra **Propriedades > Web > servidores** ou **Propriedades > Depurar** dependendo do tipo de projeto. Para um projeto de formulários da Web, abra **páginas de propriedade > Iniciar Opções > servidor**).
+
+    Se você estiver usando um servidor externo (personalizado) como o IIS, a URL deve estar correta. Caso contrário, selecione o IIS Express e tente novamente.
+
+4. (IIS) Certifique-se de que a versão correta do ASP.NET está instalada no servidor.
+
+    Versões incompatíveis do ASP.NET no IIS e no projeto do Visual Studio podem causar esse problema. Talvez seja necessário definir a versão do framework no Web. config. Para instalar o ASP.NET no IIS, use o [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Além disso, consulte [IIS 8.0 usando ASP.NET 3.5 e o ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) ou, para o ASP.NET Core [Host no Windows com o IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
--   Tentando depurar um aplicativo da Web .NET que foi copiado para um computador diferente, renomeado manualmente ou movido.  
+4. Se o `maxConnection` limite no IIS é muito baixo e você tem muitas conexões, talvez você precise [aumentar o limite de conexão](https://docs.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
   
--   Não há conexões suficientes do IIS. Para obter mais informações sobre como implantar um site da web para o IIS, consulte [criar um Site](http://www.iis.net/learn/get-started/getting-started-with-iis/create-a-web-site).  
-  
--   Se você está tentando depurar um aplicativo ASP.NET, consulte [Publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html) para obter instruções sobre como implantar a um computador remoto executando o IIS 8 ou superior, ou [Depuração ASP.NET em um servidor remoto 7.5 remota do computador](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) para obter instruções sobre como implantar a um computador remoto executando o IIS 7.5.  
-  
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
+ [ASP.NET em um computador remoto do IIS a depuração remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

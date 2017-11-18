@@ -1,47 +1,46 @@
 ---
-title: "Como expandir e recolher &#225;rvores de Spy++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Expandindo e recolhendo Árvores do Spy++"
+title: "Como: expandir e recolher árvores de Spy + + | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Expanding and Collapsing Spy++ Trees
 ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6628ad8decf04fdb4a031c62c2dc3c4af5b179d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como expandir e recolher &#225;rvores de Spy++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Você pode expandir e recolher os modos de exibição do Windows, processos e Threads usando dois métodos: clicando nos ícones na janela ou usando o  **árvore** menu.  A \+ e – ícones na árvore de atuam como faziam na janela de projeto do Visual C\+\+.  
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Como expandir e recolher árvores de Spy++
+Você pode expandir e recolher os modos de exibição do Windows, processos e Threads usando dois métodos: clicando nos ícones na janela ou usando o **árvore** menu. A + e - ícones na árvore de atuam como na janela de projeto do Visual C++.  
   
- O  **árvore** menu contém quatro comandos:  
+ O **árvore** menu contém quatro comandos:  
   
-|Comando de menu|Descrição|  
-|---------------------|---------------|  
-|**Expandir um nível**|Expande o item atualmente selecionado para o próximo nível.|  
-|**Expanda a ramificação**|Totalmente expande o item atualmente selecionado.|  
-|**Expandir tudo**|Expande totalmente todos os itens na janela.|  
-|**Recolher**|Totalmente recolhe o item atualmente selecionado.|  
+|Menu Comando|Descrição|  
+|------------------|-----------------|  
+|**Expandir um nível**|Expande o item selecionado para o próximo nível.|  
+|**Expanda a ramificação**|Expande completamente o item atualmente selecionado.|  
+|**Expandir tudo**|Expande completamente todos os itens na janela.|  
+|**Recolher**|Recolhe totalmente o item atualmente selecionado.|  
   
 > [!TIP]
->  Se você expandir um processo, você pode ver todos os threads que é proprietária do processo.  Se você expandir um thread, você pode ver uma lista de todas as janelas que ele possui.  
+>  Se você expandir um processo, você verá todos os threads que possui o processo. Se você expandir um thread, você verá uma lista de todas as janelas que possui.  
   
-### Para expandir ou recolher o Spy \+ \+ árvores  
+### <a name="to-expand-or-collapse-spy-trees"></a>Para expandir ou recolher árvores de Spy + +  
   
-1.  Realce um dos itens no modo de exibição do Windows, processos ou Threads.  
+1.  Realce um dos itens na exibição de janelas, processos ou Threads.  
   
-2.  Do  **árvore** menu, escolha uma das expandir ou recolher comandos.  
+2.  Do **árvore** menu, escolha uma opção de expandir ou recolher os comandos.  
   
-## Consulte também  
- [Usando Spy\+\+](../debugger/using-spy-increment.md)   
- [Exibições do Spy\+\+](../debugger/spy-increment-views.md)   
- [Referência de Spy\+\+](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Consulte também  
+ [Usando Spy + +](../debugger/using-spy-increment.md)   
+ [Exibições do Spy + +](../debugger/spy-increment-views.md)   
+ [Referência a Spy++](../debugger/spy-increment-reference.md)

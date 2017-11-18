@@ -1,60 +1,58 @@
 ---
-title: "IDiaLoadCallback::NotifyDebugDir | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaLoadCallback::NotifyDebugDir"
+title: ': Notifydebugdir | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLoadCallback::NotifyDebugDir method
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3bc5150146953dc99970da82747c6e608660b104
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLoadCallback::NotifyDebugDir
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Chamado quando um diretório de depuração foi encontrado no arquivo. exe.  
+# <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
+Chamado quando um diretório de depuração foi encontrado no arquivo .exe.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT NotifyDebugDir (   
-   BOOL  fExecutable,  
-   DWORD cbData,  
-   BYTE  data[]  
+```C++  
+HRESULT NotifyDebugDir (   
+   BOOL  fExecutable,  
+   DWORD cbData,  
+   BYTE  data[]  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `fExecutable`  
- \[in\] `TRUE` se o diretório de depuração é lidos a partir de um arquivo executável \(em vez de um arquivo DBG\).  
+ [in] `TRUE` se o diretório de depuração é lido de um arquivo executável (em vez de um arquivo. dbg).  
   
  `cbData`  
- \[in\] Contagem de bytes de dados no diretório de depuração.  
+ [in] Contagem de bytes de dados no diretório de depuração.  
   
  `data[]`  
- \[in\] Uma matriz que é preenchida com o diretório de depuração.  
+ [in] Uma matriz que é preenchida com o diretório de depuração.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retorna um código de erro.  O código de retorno costuma ser ignorado.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro. O código de retorno normalmente é ignorado.  
   
-## Comentários  
- O [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método chama esse retorno de chamada quando encontra um diretório de depuração ao processar o arquivo executável.  
+## <a name="remarks"></a>Comentários  
+ O [: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método invoca esse retorno de chamada quando ele encontra um diretório de depuração ao processar o arquivo executável.  
   
- Esse método remove a necessidade de informações de depuração diferente da encontrada no arquivo. PDB de suporte ao cliente para o arquivo executável e\/ou depuração de engenharia reversa.  Com esses dados, o cliente pode reconhecer o tipo de informações de depuração disponíveis e se ele reside no arquivo executável ou o arquivo DBG.  
+ Este método remove a necessidade do cliente para o arquivo executável e/ou a depuração de engenharia reversa para dar suporte a informações de depuração que não seja encontrado no arquivo. PDB. Com esses dados, o cliente pode reconhecer o tipo de informações de depuração disponíveis e se ela reside no arquivo executável ou de arquivos. dbg.  
   
- A maioria dos clientes não necessitarão esse retorno de chamada porque o `IDiaDataSource::loadDataForExe` método transparente, abre arquivos. PDB e DBG tanto quando necessário para servir de símbolos.  
+ A maioria dos clientes não precisará esse retorno de chamada porque o `IDiaDataSource::loadDataForExe` método transparentemente abre arquivos. PDB e. dbg quando necessário para atender os símbolos.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

@@ -1,11 +1,10 @@
 ---
-title: 'CA1402: Avoid overloads in COM visible interfaces | Microsoft Docs'
+title: "CA1402: Evitar sobrecargas em interfaces visíveis COM | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,45 +14,29 @@ helpviewer_keywords:
 - AvoidOverloadsInComVisibleInterfaces
 - CA1402
 ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 59c167ccc0b33dade808b3537443de0c2ac18b82
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fdba95f57b969173cdcbfecbb8c2d8bcbc298d32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Avoid overloads in COM visible interfaces
+# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: evitar sobrecargas em interfaces visíveis COM
 |||  
 |-|-|  
-|TypeName|AvoidOverloadsInComVisibleInterfaces|  
+|NomeDoTipo|AvoidOverloadsInComVisibleInterfaces|  
 |CheckId|CA1402|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Breaking|  
+|Categoria|Microsoft.Interoperability|  
+|Alteração Significativa|Quebra|  
   
-## <a name="cause"></a>Cause  
- A Component Object Model (COM) visible interface declares overloaded methods.  
+## <a name="cause"></a>Causa  
+ Um modelo COM (Component Object) interface visível declarar métodos sobrecarregados.  
   
-## <a name="rule-description"></a>Rule Description  
- When overloaded methods are exposed to COM clients, only the first method overload retains its name. Subsequent overloads are uniquely renamed by appending to the name an underscore character '_' and an integer that corresponds to the order of declaration of the overload. For example, consider the following methods.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Quando os métodos sobrecarregados são expostos a clientes COM, apenas a primeira sobrecarga do método mantém seu nome. Sobrecargas subsequentes são renomeadas exclusivamente por meio do acréscimo para o nome de um caractere de sublinhado '_' e um número inteiro que corresponde à ordem de declaração da sobrecarga. Por exemplo, considere os seguintes métodos.  
   
 ```  
 void SomeMethod(int valueOne);  
@@ -61,7 +44,7 @@ void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);  
 ```  
   
- These methods are exposed to COM clients as the following.  
+ Esses métodos são expostos aos clientes COM o seguinte.  
   
 ```  
 void SomeMethod(int valueOne);  
@@ -69,26 +52,27 @@ void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);  
 ```  
   
- Visual Basic 6 COM clients cannot implement interface methods by using an underscore in the name.  
+ Clientes COM do Visual Basic 6 não podem implementar métodos de interface usando um sublinhado no nome.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, rename the overloaded methods so that the names are unique. Alternatively, make the interface invisible to COM by changing the accessibility to `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) or by applying the <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute set to `false`.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, renomeie os métodos sobrecarregados para que os nomes sejam exclusivos. Como alternativa, fazer a interface invisível COM alterando a acessibilidade ao `internal` (`Friend` na [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ou aplicando o <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> atributo definido como `false`.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra.  
   
-## <a name="example"></a>Example  
- The following example shows an interface that violates the rule and an interface that satisfies the rule.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra uma interface que viola a regra e uma interface que satisfaz a regra.  
   
- [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)] [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]  
+ [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
+ [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1413: Avoid non-public fields in COM visible value types](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1413: evitar campos não públicos em tipos de valor visíveis em COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
- [CA1407: Avoid static members in COM visible types](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
+ [CA1407: evitar membros estáticos em tipos visíveis em COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
   
- [CA1017: Mark assemblies with ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+ [CA1017: marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## <a name="see-also"></a>See Also  
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)   
- [Long Data Type](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+## <a name="see-also"></a>Consulte também  
+ [Interoperação com código não gerenciado](/dotnet/framework/interop/index)   
+ [Tipo de Dados Long](/dotnet/visual-basic/language-reference/data-types/long-data-type)

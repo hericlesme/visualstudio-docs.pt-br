@@ -1,11 +1,10 @@
 ---
-title: 'CA1057: String URI overloads call System.Uri overloads | Microsoft Docs'
+title: 'CA1057: Cadeia de caracteres as sobrecargas URI chamam sobrecargas de System. URI | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,62 +14,48 @@ helpviewer_keywords:
 - StringUriOverloadsCallSystemUriOverloads
 - CA1057
 ms.assetid: ef1e983e-9ca7-404b-82d7-65740ba0ce20
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0d9745583759f1bfe4f7f272d564456a53f4fc2f
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 094680be86955a47486ec108e779a313b7b0c0fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: String URI overloads call System.Uri overloads
+# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: as sobrecargas de URI da cadeia de caracteres chamam sobrecargas System.Uri
 |||  
 |-|-|  
-|TypeName|StringUriOverloadsCallSystemUriOverloads|  
+|NomeDoTipo|StringUriOverloadsCallSystemUriOverloads|  
 |CheckId|CA1057|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Categoria|Microsoft.Design|  
+|Alteração Significativa|Não recentes|  
   
-## <a name="cause"></a>Cause  
- A type declares method overloads that differ only by the replacement of a string parameter with a <xref:System.Uri?displayProperty=fullName> parameter, and the overload that takes the string parameter does not call the overload that takes the <xref:System.Uri> parameter.  
+## <a name="cause"></a>Causa  
+ Um tipo declara as sobrecargas do método que diferem apenas pela substituição de um parâmetro de cadeia de caracteres com um <xref:System.Uri?displayProperty=fullName> parâmetro e a sobrecarga que usa o parâmetro de cadeia de caracteres não chama a sobrecarga que utiliza o <xref:System.Uri> parâmetro.  
   
-## <a name="rule-description"></a>Rule Description  
- Because the overloads differ only by the string/<xref:System.Uri> parameter, the string is assumed to represent a uniform resource identifier (URI). A string representation of a URI is prone to parsing and encoding errors, and can lead to security vulnerabilities. The <xref:System.Uri> class provides these services in a safe and secure manner. To reap the benefits of the <xref:System.Uri> class, the string overload should call the <xref:System.Uri> overload using the string argument.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Como as sobrecargas diferem apenas pela cadeia de caracteres /<xref:System.Uri> parâmetro, a cadeia de caracteres é assumida para representar um uniform resource identifier (URI). Uma representação de cadeia de caracteres de um URI está propensa a erros de análise e de codificação, e pode resultar em vulnerabilidades de segurança. O <xref:System.Uri> classe fornece esses serviços de forma segura e protegida. Para aproveitar os benefícios do <xref:System.Uri> classe, a sobrecarga de cadeia de caracteres deve chamar o <xref:System.Uri> usando o argumento de cadeia de caracteres de sobrecarga.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- Re-implement the method that uses the string representation of the URI so that it creates an instance of the <xref:System.Uri> class using the string argument, and then passes the <xref:System.Uri> object to the overload that has the <xref:System.Uri> parameter.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Novamente, implemente o método que usa a representação de cadeia de caracteres do URI para que ele cria uma instância do <xref:System.Uri> classe usando o argumento de cadeia de caracteres e, em seguida, passa o <xref:System.Uri> objeto para a sobrecarga que tem o <xref:System.Uri> parâmetro.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the string parameter does not represent a URI.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso de que essa regra se o parâmetro de cadeia de caracteres não representa um URI.  
   
-## <a name="example"></a>Example  
- The following example shows a correctly implemented string overload.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra uma sobrecarga de cadeia de caracteres implementado corretamente.  
   
- [!code-csharp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CSharp/ca1057-string-uri-overloads-call-system-uri-overloads_1.cs)] [!code-cpp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CPP/ca1057-string-uri-overloads-call-system-uri-overloads_1.cpp)] [!code-vb[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/VisualBasic/ca1057-string-uri-overloads-call-system-uri-overloads_1.vb)]  
+ [!code-csharp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CSharp/ca1057-string-uri-overloads-call-system-uri-overloads_1.cs)]
+ [!code-cpp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CPP/ca1057-string-uri-overloads-call-system-uri-overloads_1.cpp)]
+ [!code-vb[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/VisualBasic/ca1057-string-uri-overloads-call-system-uri-overloads_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2234: Pass System.Uri objects instead of strings](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA2234: passar objetos System.Uri em vez de cadeias de caracteres](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)  
   
- [CA1056: URI properties should not be strings](../code-quality/ca1056-uri-properties-should-not-be-strings.md)  
+ [CA1056: as propriedades de URI não devem ser cadeias de caracteres](../code-quality/ca1056-uri-properties-should-not-be-strings.md)  
   
- [CA1054: URI parameters should not be strings](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)  
+ [CA1054: os parâmetros de URI não devem ser cadeias de caracteres](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)  
   
- [CA1055: URI return values should not be strings](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055: os valores de retorno de URI não devem ser cadeias de caracteres](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
