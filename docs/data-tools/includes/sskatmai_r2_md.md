@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 01e8b49caa97e02d76bdb14b55840e1121790053
+ms.openlocfilehash: ac081d5d9f139e308e1d25675a6013dbddcf9ca0
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
 ---
-.NET Framework versão 4
+SQL Server 2008 R2

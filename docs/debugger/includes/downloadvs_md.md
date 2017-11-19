@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 01e8b49caa97e02d76bdb14b55840e1121790053
+ms.openlocfilehash: 0e254e1f34feffcb900f60ed96e54a234ca16fe6
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
 ---
-.NET Framework versão 4
+[Baixe o Visual Studio Community](https://www.visualstudio.com/vs/#downloadvs) ou [compare as edições do Visual Studio](https://www.visualstudio.com/vs/compare/)
