@@ -1,41 +1,26 @@
 ---
-title: IDebugTypeFieldBuilder2 | Documentos do Microsoft
+title: IDebugTypeFieldBuilder2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugTypeFieldBuilder2 interface
+helpviewer_keywords: IDebugTypeFieldBuilder2 interface
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 143e0c4676720077692d9b078b77ff21a09b6fb6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cee126ad63e0a50ec2b859c470c06a4f2ae07600
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
-Estende o **IDebugTypeFieldBuilder** para poder criar tipos de matriz.  
+Estende o **IDebugTypeFieldBuilder** para poder criar os tipos de matriz.  
   
 ## <a name="syntax"></a>Sintaxe  
   

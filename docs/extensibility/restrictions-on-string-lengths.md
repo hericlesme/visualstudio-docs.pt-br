@@ -1,38 +1,23 @@
 ---
-title: "Restrições em comprimentos de cadeia de caracteres | Documentos do Microsoft"
+title: "Restrições em comprimentos de cadeia de caracteres | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- source control plug-ins, restrictions on string lengths
+helpviewer_keywords: source control plug-ins, restrictions on string lengths
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bf09f770265bd35cb82d654c5833667580b4e0cd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 302d36a968561f9823a5d36177e21c9698fc9e2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="restrictions-on-string-lengths"></a>Restrições em comprimentos de cadeia de caracteres
 A API de plug-in de controle de origem limita os comprimentos das cadeias de caracteres usadas em várias funções.  
@@ -57,4 +42,4 @@ A API de plug-in de controle de origem limita os comprimentos das cadeias de car
 |SCC_PRJPATH_SIZE|301|  
   
 ## <a name="see-also"></a>Consulte também  
- [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)
+ [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)

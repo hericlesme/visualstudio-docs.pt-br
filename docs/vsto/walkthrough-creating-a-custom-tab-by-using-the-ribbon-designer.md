@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Custom Tab by Using the Ribbon Designer | Microsoft Docs'
+title: "Passo a passo: Criando uma guia personalizada usando o Designer de faixa de opções | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,157 +18,159 @@ helpviewer_keywords:
 - custom Ribbon, tabs
 - Custom tab [Office development in Visual Studio]
 ms.assetid: 312865e6-950f-46ab-88de-fe7eb8036bfe
-caps.latest.revision: 68
-author: kempb
-ms.author: kempb
+caps.latest.revision: "68"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f3de58256e8c533b7cd092d056c785c7ad6b60b6
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 811e4eff77780bda2b348c26bb220a29d5fd1731
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Walkthrough: Creating a Custom Tab by Using the Ribbon Designer
-  By using the Ribbon Designer, you can create a custom tab and then add and position controls on it.  
+# <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Instruções passo a passo: criando uma guia usando o designer da faixa de opções
+  Usando o Designer de faixa de opções, você pode criar uma guia personalizada e, em seguida, adicionar e posicionar controles nele.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   [Creating Actions Panes](#BKMK_CreateActionsPanes).  
+-   [Criando painéis de ações](#BKMK_CreateActionsPanes).  
   
--   [Creating a Custom Tab](#BKMK_CreateCustomTab).  
+-   [Criando uma guia](#BKMK_CreateCustomTab).  
   
--   [Hiding and Showing Actions Panes by Using Buttons on the Custom Tab](#BKMK_HideShowActionsPane).  
+-   [Ocultando e mostrando painéis de ações, usando os botões na guia personalizada](#BKMK_HideShowActionsPane).  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Pré-requisitos  
+ Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Excel  
   
-## <a name="creating-an-excel-workbook-project"></a>Creating an Excel Workbook Project  
- The steps for using the Ribbon Designer are almost identical for all Office applications. This example uses an Excel workbook.  
+## <a name="creating-an-excel-workbook-project"></a>Criando um projeto de pasta de trabalho do Excel  
+ As etapas para usar o Designer de faixa de opções são quase idênticas para todos os aplicativos do Office. Este exemplo usa uma pasta de trabalho do Excel.  
   
-#### <a name="to-create-an-excel-workbook-project"></a>To create an Excel workbook project  
+#### <a name="to-create-an-excel-workbook-project"></a>Para criar um projeto de pasta de trabalho do Excel  
   
--   Create an Excel workbook project with the name **MyExcelRibbon**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Criar um projeto de pasta de trabalho do Excel com o nome **MyExcelRibbon**. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new workbook in the designer and adds the **MyExcelRibbon** project to **Solution Explorer**.  
+     Visual Studio abre a nova pasta de trabalho no designer e adiciona o **MyExcelRibbon** projeto **Gerenciador de soluções**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a> Creating Actions Panes  
- Add two custom actions panes to the project. You will later add buttons that show and hide these actions panes to the custom tab.  
+##  <a name="BKMK_CreateActionsPanes"></a>Criando painéis de ações  
+ Adicione dois painéis de ações personalizadas ao projeto. Posteriormente, você irá adicionar botões de mostram e ocultar esses painéis de ações para a guia personalizada.  
   
-#### <a name="to-create-actions-panes"></a>To create actions panes  
+#### <a name="to-create-actions-panes"></a>Para criar painéis de ações  
   
-1.  On the **Project** menu, choose **Add New Item**.  
+1.  No menu **Projeto**, escolha **Adicionar Novo Item**.  
   
-2.  In the **Add New Item** dialog box, select **ActionsPaneControl**, and then choose **Add**.  
+2.  No **Adicionar Novo Item** caixa de diálogo, selecione **ActionsPaneControl**e, em seguida, escolha **adicionar**.  
   
-     The **ActionsPaneControl1.cs** or **ActionsPaneControl1.vb** file opens in the designer.  
+     O **ActionsPaneControl1.cs** ou **ActionsPaneControl1.vb** arquivo é aberto no designer.  
   
-3.  From the **Common Controls** tab of the **Toolbox**, add a label to the designer surface.  
+3.  Do **controles comuns** guia do **caixa de ferramentas**, adicionar um rótulo para a superfície do designer.  
   
-4.  In the **Properties** window, set the **Text** property of label1 to **Actions Pane 1**.  
+4.  No **propriedades** janela, defina o **texto** propriedade Label1 para **1 do painel de ações**.  
   
-5.  Repeat steps 1 through 5 to create a second actions pane and label. Set the **Text** property of the second label to **Actions Pane 2**.  
+5.  Repita as etapas 1 a 5 para criar um painel de ações de segundo e um rótulo. Definir o **texto** propriedade do rótulo do segundo para **2 do painel de ações**.  
   
-##  <a name="BKMK_CreateCustomTab"></a> Creating a Custom Tab  
- One of the Office application design guidelines is that users should always have control of the Office application UI. To add this capability for the actions panes, you can add buttons that show and hide each actions pane from a custom tab on the ribbon. To create a custom tab, add a **Ribbon (Visual Designer)** item to the project. The designer helps you add and position controls, set control properties, and handle control events.  
+##  <a name="BKMK_CreateCustomTab"></a>Criando uma guia  
+ Uma das diretrizes de design de aplicativo do Office é que os usuários sempre devem ter o controle de interface do usuário do aplicativo do Office. Para adicionar esse recurso para os painéis de ações, você pode adicionar botões de mostram e ocultar cada painel de ações de uma guia na faixa de opções. Para criar uma guia personalizada, adicione uma **faixa de opções (Visual Designer)** item ao projeto. O designer ajuda a adicionar e posicionar controles, definir propriedades de controle e tratar eventos de controle.  
   
-#### <a name="to-create-a-custom-tab"></a>To create a custom tab  
+#### <a name="to-create-a-custom-tab"></a>Para criar uma guia personalizada  
   
-1.  On the **Project** menu, choose **Add New Item**.  
+1.  No menu **Projeto**, escolha **Adicionar Novo Item**.  
   
-2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
+2.  No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)**.  
   
-3.  Change the name of the new ribbon to **MyRibbon**, and choose **Add**.  
+3.  Alterar o nome da nova faixa de opções para **MyRibbon**e escolha **adicionar**.  
   
-     The **MyRibbon.cs** or **MyRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
+     O **MyRibbon.cs** ou **MyRibbon.vb** arquivo é aberto no Designer de faixa de opções e exibe um guia padrão e o grupo.  
   
-4.  In the Ribbon Designer, choose the default tab.  
+4.  No Designer de faixa de opções, escolha a guia padrão.  
   
-5.  In the **Properties** window, expand the **ControlId** property, and then set the **ControlIdType** property to **Custom**.  
+5.  No **propriedades** janela, expanda o **ControlId** propriedade e, em seguida, defina o **ControlIdType** propriedade **personalizado**.  
   
-6.  Set the **Label** property to **My Custom Tab**.  
+6.  Definir o **rótulo** propriedade **My Custom Tab**.  
   
-7.  In the Ribbon Designer, choose **group1**.  
+7.  No Designer de faixa de opções, escolha **group1**.  
   
-8.  In the **Properties** window, set **Label** to **Actions Pane Manager**.  
+8.  No **propriedades** janela, defina **rótulo** para **Manager do painel de ações**.  
   
-9. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a button onto **group1**.  
+9. Do **controles de faixa de opções do Office** guia do **caixa de ferramentas**, arraste um botão para **group1**.  
   
-10. Select **button1**.  
+10. Selecione **button1**.  
   
-11. In the **Properties** window, set **Label** to **Show Actions Pane 1**.  
+11. No **propriedades** janela, defina **rótulo** para **Mostrar 1 do painel de ações**.  
   
-12. Add a second button to **group1**, and set the **Label** property to **Show Actions Pane 2**.  
+12. Adicionar um segundo botão **group1**e defina o **rótulo** propriedade **Mostrar 2 do painel de ações**.  
   
-13. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ToggleButton** control onto **group1**.  
+13. Do **controles de faixa de opções do Office** guia do **caixa de ferramentas**, arraste um **ToggleButton** controle para **group1**.  
   
-14. Set the **Label** property to **Hide Actions Pane**.  
+14. Definir o **rótulo** propriedade **ocultar painel de ações**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a> Hiding and Showing Actions Panes by Using Buttons on the Custom Tab  
- The last step is to add code that responds to the user. Add event handlers for the <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> events of the two buttons and the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. Add code to these event handlers to enable hiding and showing the actions panes.  
+##  <a name="BKMK_HideShowActionsPane"></a>Ocultando e mostrando painéis de ações, usando os botões na guia personalizada  
+ A última etapa é adicionar o código que responde ao usuário. Adicionar manipuladores de eventos para o <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> eventos de dois botões e o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> eventos do botão de alternância. Adicione código para esses manipuladores de eventos para habilitar ocultando e mostrando os painéis de ações.  
   
-#### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>To hide and show actions panes by using buttons in the custom tab  
+#### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Para ocultar e Mostrar painéis de ações, usando os botões na guia personalizada  
   
-1.  In **Solution Explorer**, open the shortcut menu for MyRibbon.cs or MyRibbon.vb, and then choose **View Code**.  
+1.  Em **Solution Explorer**, abra o menu de atalho para MyRibbon.cs ou MyRibbon.vb e, em seguida, escolha **Exibir código**.  
   
-2.  Add the following code to the top of the `MyRibbon` class. This code creates two actions pane objects.  
+2.  Adicione o seguinte código na parte superior do `MyRibbon` classe. Esse código cria dois objetos do painel de ações.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
+     [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]  
   
-3.  Replace the `MyRibbon_Load` method with the following code. This code adds the actions pane objects to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> collection and hides the objects from view. The Visual C# code also attaches delegates to several ribbon control events.  
+3.  Substitua o `MyRibbon_Load` método com o código a seguir. Esse código adiciona os objetos do painel de ações para o <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> coleta e oculta os objetos da exibição. O código do Visual c# também anexa delegados para vários eventos de controle de faixa de opções.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
+     [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]  
   
-4.  Add the following three event handler methods to the `MyRibbon` class. These methods handle the <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> events of the two buttons and the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. The event handlers for button1 and button2 show alternate actions panes. The event handler for toggleButton1 shows and hides the active actions pane.  
+4.  Adicione os seguintes métodos de manipulador de eventos de três para o `MyRibbon` classe. Esses métodos controlam o <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> eventos de dois botões e o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> eventos do botão de alternância. Manipuladores de eventos para button1 e button2 mostram painéis de ações alternativas. O manipulador de eventos para toggleButton1 mostra e oculta o painel de ações ativa.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
+     [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]  
   
-## <a name="testing-the-custom-tab"></a>Testing the Custom Tab  
- When you run the project, Excel starts, and the **My Custom Tab** tab appears on the ribbon. Choose the buttons on **My Custom Tab** to show and hide the actions panes.  
+## <a name="testing-the-custom-tab"></a>A guia de teste  
+ Quando você executa o projeto, o início do Excel e o **My Custom Tab** guia aparece na faixa de opções. Escolha os botões na **My Custom Tab** para mostrar e ocultar os painéis de ações.  
   
-#### <a name="to-test-the-custom-tab"></a>To test the custom tab  
+#### <a name="to-test-the-custom-tab"></a>Para testar a guia personalizada  
   
-1.  Press F5 to run your project.  
+1.  Pressione F5 para executar o projeto.  
   
-2.  Choose the **My Custom Tab** tab.  
+2.  Escolha o **My Custom Tab** guia.  
   
-3.  In the **Custom Actions Pane Manager** group, choose **Show Actions Pane 1**.  
+3.  No **Gerenciador de painel de ações personalizadas** de grupo, escolha **Mostrar 1 do painel de ações**.  
   
-     The actions pane appears and displays the label **Actions Pane 1**.  
+     O painel de ações aparece e exibe o rótulo **1 do painel de ações**.  
   
-4.  Choose **Show Actions Pane 2**.  
+4.  Escolha **Mostrar painel de ações 2**.  
   
-     The actions pane appears and displays the label **Actions Pane 2**.  
+     O painel de ações aparece e exibe o rótulo **2 do painel de ações**.  
   
-5.  Choose **Hide Actions Pane**.  
+5.  Escolha **ocultar painel de ações**.  
   
-     The actions panes are no longer visible.  
+     Os painéis de ações não são visíveis.  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to customize the Office UI from these topics:  
+## <a name="next-steps"></a>Próximas etapas  
+ Você pode aprender mais sobre como personalizar a interface do usuário do Office com estes tópicos:  
   
--   Add context-based UI to any document-level customization. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
+-   Adicione baseado no contexto da interface do usuário para qualquer personalização no nível do documento. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).  
   
--   Extend a standard or custom Microsoft Office Outlook form. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Estenda um formulário personalizado ou padrão do Microsoft Office Outlook. Para obter mais informações, consulte [passo a passo: Criando uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## <a name="see-also"></a>See Also  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)   
- [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)  
+## <a name="see-also"></a>Consulte também  
+ [Acessando a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
+ [Designer de faixa de opções](../vsto/ribbon-designer.md)   
+ [Personalizando uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [Como: personalizar a faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Como: alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)   
+ [Como: adicionar controles à exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md)  
   
   

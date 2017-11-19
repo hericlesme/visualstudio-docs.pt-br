@@ -1,48 +1,33 @@
 ---
-title: IntelliSenseHostFlags | Documentos do Microsoft
+title: IntelliSenseHostFlags | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IntellisenseHostFlags
+f1_keywords: IntellisenseHostFlags
 helpviewer_keywords:
 - IntelliSense, IntellisenseHostFlags enumeration
 - IntellisenseHostFlags enumeration
 ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c99fa72e45e9b0c37bda598e021a8c055f89487f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d8e00768e544dbd6bb37a4de70e0f730fe967a70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Especifica os sinalizadores de host do IntelliSense.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum IntellisenseHostFlags  
 {  
     IHF_READONLYCONTEXT      = 0x00000001  
@@ -58,8 +43,8 @@ enum IntellisenseHostFlags
 |Membros|Descrição|  
 |-------------|-----------------|  
 |`IHF_READONLYCONTEXT`|Buffer de contexto é somente leitura.|  
-|`IHF_NOSEPARATESUBJECT`|Nenhum texto de assunto. Buffer de contexto contém destino de IntelliSense (implica `!IHF_READONLYCONTEXT`).|  
-|`IHF_SINGLELINESUBJECT`|Texto do assunto não tem multi-linha capacidade.|  
+|`IHF_NOSEPARATESUBJECT`|Nenhum texto de assunto. Buffer de contexto contém o destino do IntelliSense (implica `!IHF_READONLYCONTEXT`).|  
+|`IHF_SINGLELINESUBJECT`|Texto de assunto não tem multi-linha capacidade.|  
 |`IHF_FORCECOMMITTOCONTEXT`|Mesmo que `CanCommitIntoReadOnlyBuffer`.|  
 |`IHF_OVERTYPE`|Edição (no assunto ou contexto) deve ser feito no modo sobrescrever.|  
   
@@ -67,4 +52,4 @@ enum IntellisenseHostFlags
  SingleFileeditor.idl  
   
 ## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.TextManager.Interop></xref:Microsoft.VisualStudio.TextManager.Interop>
+ <xref:Microsoft.VisualStudio.TextManager.Interop>

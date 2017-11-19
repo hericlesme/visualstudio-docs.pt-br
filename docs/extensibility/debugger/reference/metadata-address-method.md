@@ -1,40 +1,24 @@
 ---
-title: METADATA_ADDRESS_METHOD | Documentos do Microsoft
+title: METADATA_ADDRESS_METHOD | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- METADATA_ADDRESS_METHOD
-helpviewer_keywords:
-- METADATA_ADDRESS_METHOD structure
+f1_keywords: METADATA_ADDRESS_METHOD
+helpviewer_keywords: METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: db9bfaf5cb0f81571dbf52fea98ce47add5b41a3
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d94087b9408afcc82dda8715faa643fa4f348cf0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Esta estrutura representa o endereço de um método de uma classe.  
@@ -49,7 +33,7 @@ typedef struct _tagMETADATA_ADDRESS_METHOD {
 } METADATA_ADDRESS_METHOD;  
 ```  
   
-```c#  
+```csharp  
 public struct METADATA_ADDRESS_METHOD {  
    public int  tokMethod;  
    public uint dwOffset;  
@@ -61,16 +45,16 @@ public struct METADATA_ADDRESS_METHOD {
  tokMethod  
  A ID do método.  
   
- [C++] `_mdToken` is a `typedef` for a 32-bit `int`.  
+ [C++] `_mdToken` é um `typedef` para 32 bits `int`.  
   
  dwOffset  
- O deslocamento desde o início da classe para esse método (pode representar o deslocamento em vtable).  
+ O deslocamento desde o início de classe para este método (pode representar o deslocamento para a vtable).  
   
  versão do DW  
  A versão do método (esse valor é exclusivo para o provedor de símbolo).  
   
 ## <a name="remarks"></a>Comentários  
- Essa estrutura é parte da união no [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo o `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_METHOD` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
+ Essa estrutura é parte da união no [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo do `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_METHOD` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: sh.h  

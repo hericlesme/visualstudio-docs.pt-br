@@ -1,43 +1,27 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Documentos do Microsoft
+title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramProvider2::WatchForProviderEvents
-helpviewer_keywords:
-- IDebugProgramProvider2::WatchForProviderEvents
+f1_keywords: IDebugProgramProvider2::WatchForProviderEvents
+helpviewer_keywords: IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a0062f85d07cc9b5c1b260a7bf8d9aed12a5d376
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 25dd140a13856d5fd20288d8740cfcb331f52cd6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-Permite que o processo ser notificado de eventos de porta.  
+Permite que o processo ser notificado sobre eventos de porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -52,7 +36,7 @@ HRESULT WatchForProviderEvents(
 );  
 ```  
   
-```c#  
+```csharp  
 int WatchForProviderEvents(  
    enum_PROVIDER_FLAGS   Flags,  
    IDebugDefaultPort2    pPort,  
@@ -65,12 +49,12 @@ int WatchForProviderEvents(
   
 #### <a name="parameters"></a>Parâmetros  
  `Flags`  
- [in] Uma combinação de sinalizadores do [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeração. Os seguintes sinalizadores são típicos para essa chamada:  
+ [in] Uma combinação de sinalizadores do [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeração. Os seguintes sinalizadores são típicos para esta chamada:  
   
 |Sinalizador|Descrição|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|Chamador está em execução no computador remoto.|  
-|`PFLAG_DEBUGGEE`|No momento está sendo depurado chamador (informações adicionais sobre empacotamento são retornadas para cada nó).|  
+|`PFLAG_DEBUGGEE`|No momento está sendo depurado chamador (informações adicionais sobre o empacotamento são retornadas para cada nó).|  
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Chamador foi anexado ao, mas não iniciado pelo depurador.|  
 |`PFLAG_REASON_WATCH`|Chamador deseja observar eventos. Se este sinalizador não está definido. em seguida, o evento de retorno de chamada é removido e o chamador não recebe notificações.|  
   
@@ -81,7 +65,7 @@ int WatchForProviderEvents(
  [in] Um [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura que contém a ID do processo que contém o programa em questão.  
   
  `EngineFilter`  
- [in] Uma matriz de GUIDs de mecanismos de depuração associados com o processo.  
+ [in] Uma matriz de GUIDs de mecanismos de depuração associados ao processo.  
   
  `guidLaunchingEngine`  
  [in] GUID do mecanismo de depuração que iniciou esse processo (se houver).  
@@ -90,15 +74,15 @@ int WatchForProviderEvents(
  [in] Um [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objeto que recebe as notificações de eventos.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Quando um chamador quiser remover um manipulador de eventos com uma chamada anterior a esse método foi estabelecido, o chamador passa os mesmos parâmetros, como na primeira vez, mas deixa desativar o `PFLAG_REASON_WATCH` sinalizador.  
+ Quando um chamador deseja remover um manipulador de eventos que foi estabelecido com uma chamada anterior a esse método, o chamador passa os mesmos parâmetros, como ocorria na primeira vez, mas deixa desativar o `PFLAG_REASON_WATCH` sinalizador.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugEngine** objeto expõe o [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um **CDebugEngine** objeto que expõe o [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  
     PROVIDER_FLAGS Flags,   
     IDebugDefaultPort2 *pPort,   

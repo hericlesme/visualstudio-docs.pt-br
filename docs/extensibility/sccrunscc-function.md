@@ -1,47 +1,31 @@
 ---
-title: "Função SccRunScc | Documentos do Microsoft"
+title: "Função SccRunScc | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccRunScc
-helpviewer_keywords:
-- SccRunScc function
+f1_keywords: SccRunScc
+helpviewer_keywords: SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a9db0777ff91bc01688164e5b38c8ede2c005d77
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d9ac82ac0363428ade1b6010a9060e15284db224
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sccrunscc-function"></a>Função SccRunScc
-Essa função chama a ferramenta de administração de controle de origem.  
+Esta função chama a ferramenta de administração de controle de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 SCCRTN SccRunScc(  
    LPVOID  pvContext,  
    HWND    hWnd,  
@@ -55,7 +39,7 @@ SCCRTN SccRunScc(
  [in] A estrutura de contexto de plug-in de controle de origem.  
   
  hWnd  
- [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para as caixas de diálogo que ele fornece.  
+ [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.  
   
  nFiles  
  [in] Número de arquivos especificados na `lpFileNames` matriz.  
@@ -77,14 +61,14 @@ SCCRTN SccRunScc(
 |SCC_E_NONSPECIFICERROR|Falha não específica.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa função permite que o chamador acessar toda a gama de recursos do sistema de controle de origem por meio de uma ferramenta de administração externa. Se o sistema de controle de origem não tem nenhuma interface do usuário, o plug-in de controle de origem pode implementar uma interface para realizar funções administrativas necessárias.  
+ Essa função permite que o chamador acessar a gama completa de recursos do sistema de controle do código-fonte por meio de uma ferramenta de administração externa. Se o sistema de controle de origem não tem nenhuma interface do usuário, o plug-in de controle de origem pode implementar uma interface para executar funções administrativas necessárias.  
   
- Essa função é chamada com uma contagem e uma matriz de nomes de arquivo para os arquivos selecionados no momento. Se a ferramenta de administração oferece suporte a ele, a lista de arquivos pode ser usada para pré-selecionar arquivos na interface de administração; Caso contrário, a lista pode ser ignorada.  
+ Esta função é chamada com uma contagem e uma matriz de nomes de arquivo para os arquivos selecionados no momento. Se a ferramenta de administração for compatível, a lista de arquivos pode ser usada para previamente os arquivos na interface de administração; Caso contrário, a lista pode ser ignorada.  
   
- Esta função geralmente é chamada quando o usuário seleciona o **iniciar \<servidor de controle de origem >** do **arquivo** -> **controle de origem** menu. Isso **iniciar** opção de menu pode ser sempre desabilitada ou até mesmo ocultada pela configuração de uma entrada de registro. Consulte [como: instalar um plug-in de controle de origem](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Essa função é chamada apenas se [SccInitialize](../extensibility/sccinitialize-function.md) retorna o `SCC_CAP_RUNSCC` bit de recurso (consulte [sinalizadores de recurso](../extensibility/capability-flags.md) para obter detalhes sobre esse e outros bits de capacidade).  
+ Essa função geralmente é chamado quando o usuário seleciona o **iniciar \<servidor de controle de origem >** do **arquivo** -> **controle de origem** menu. Isso **iniciar** opção de menu pode ser sempre desabilitada ou até mesmo ocultada pela configuração de uma entrada de registro. Consulte [como: instalar um plug-in de controle de origem](../extensibility/internals/how-to-install-a-source-control-plug-in.md) para obter detalhes. Essa função é chamada apenas se [SccInitialize](../extensibility/sccinitialize-function.md) retorna o `SCC_CAP_RUNSCC` bit de recurso (consulte [sinalizadores de recursos](../extensibility/capability-flags.md) para obter detalhes sobre este e outros elementos de recurso).  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)   
  [Como: instalar um plug-in de controle de origem](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
- [Sinalizadores de recurso](../extensibility/capability-flags.md)   
+ [Sinalizadores de recursos](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

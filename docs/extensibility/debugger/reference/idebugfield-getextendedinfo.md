@@ -1,47 +1,31 @@
 ---
-title: IDebugField::GetExtendedInfo | Documentos do Microsoft
+title: IDebugField::GetExtendedInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugField::GetExtendedInfo
-helpviewer_keywords:
-- IDebugField::GetExtendedInfo method
+f1_keywords: IDebugField::GetExtendedInfo
+helpviewer_keywords: IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c452ac23c276ca7fabe2d889e35c1c4d9d5d21e9
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a5b52c5634b4b34edf11ddb8a56317cc237063bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Esse método obtém informações estendido sobre um campo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetExtendedInfo(   
    REFGUID guidExtendedInfo,  
    BYTE**  prgBuffer,  
@@ -49,7 +33,7 @@ HRESULT GetExtendedInfo(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetExtendedInfo(  
    ref Guid guidExtendedInfo,   
    IntPtr[] prgBuffer,   
@@ -70,13 +54,13 @@ int GetExtendedInfo(
  [out] Retorna as informações estendidas.  
   
  `pdwLen`  
- [no, out] Retorna o tamanho das informações estendidas, em bytes.  
+ [out no] Retorna o tamanho das informações estendidas, em bytes.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Atualmente, esse método retorna apenas o tipo ou valor de uma constante. O chamador deve liberar o buffer retornado em `prgBuffer` chamando COM `CoTaskMemFree` função (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>(c#).</xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A>  
+ Atualmente, esse método retorna apenas o tipo ou valor de uma constante. O chamador deve liberar o buffer retornado em `prgBuffer` chamando COM `CoTaskMemFree` função (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (c#).  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

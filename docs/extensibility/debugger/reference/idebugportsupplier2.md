@@ -1,40 +1,24 @@
 ---
-title: IDebugPortSupplier2 | Documentos do Microsoft
+title: IDebugPortSupplier2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPortSupplier2
-helpviewer_keywords:
-- IDebugPortSupplier2 interface
+f1_keywords: IDebugPortSupplier2
+helpviewer_keywords: IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: adccfd687143d3452b87e6a27a61b6114a2792ee
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: dc6e5c5a9091b633c4c2c5ca46990393302e5e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Essa interface fornece portas para o Gerenciador de sessão de depuração (SDM).  
@@ -51,7 +35,7 @@ IDebugPortSupplier2 : IUnknown
 ## <a name="notes-for-callers"></a>Observações para chamadores  
  Uma chamada para `CoCreateInstance` com um fornecedor de porta `GUID` retorna essa interface (Isso é uma forma comum de obter essa interface). Por exemplo:  
   
-```cpp#  
+```cpp  
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
 {  
     IDebugPortSupplier2 *pPS = NULL;  
@@ -66,7 +50,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }  
 ```  
   
- Uma chamada para [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) retorna essa interface, que representa o fornecedor de porta atual está sendo usado por [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ Uma chamada para [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) retorna essa interface, que representa o fornecedor de porta atual que está sendo usado por [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) retorna essa interface, que representa o fornecedor de porta que criou a porta.  
   
@@ -88,7 +72,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Remove uma porta.|  
   
 ## <a name="remarks"></a>Comentários  
- Um fornecedor de porta pode identificar-se por nome e ID, adicionar e remover portas e enumerar todas as portas que o fornecedor de porta fornece.  
+ Um fornecedor de porta pode identificar-se por nome e ID, adicionar e remover portas e enumerar todas as portas que fornece o fornecedor de porta.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

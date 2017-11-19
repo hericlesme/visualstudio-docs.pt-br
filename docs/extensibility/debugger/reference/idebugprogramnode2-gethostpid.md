@@ -1,53 +1,37 @@
 ---
-title: IDebugProgramNode2::GetHostPid | Documentos do Microsoft
+title: IDebugProgramNode2::GetHostPid | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramNode2::GetHostPid
-helpviewer_keywords:
-- IDebugProgramNode2::GetHostPid
+f1_keywords: IDebugProgramNode2::GetHostPid
+helpviewer_keywords: IDebugProgramNode2::GetHostPid
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 24ab71361c457a01e3879cc767429976be883fbc
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 163999e160baeaaad618ee793a1879da694e35ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Obtém o identificador de processo do sistema para o processo que hospeda o programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetHostPid (   
    AD_PROCESS_ID * pdwHostPid  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetHostPid (   
    out AD_PROCESS_ID pdwHostPid  
 );  
@@ -58,12 +42,12 @@ int GetHostPid (
  [out] Retorna o identificador de processo do sistema para o processo de hospedagem.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra como implementar esse método para um simples `CProgram` objeto que implementa o [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    
     // Check for valid argument.    
    if (pdwHostPid)    

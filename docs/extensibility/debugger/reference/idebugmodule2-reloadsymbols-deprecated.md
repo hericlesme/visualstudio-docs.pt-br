@@ -1,54 +1,38 @@
 ---
-title: IDebugModule2::ReloadSymbols_Deprecated | Documentos do Microsoft
+title: IDebugModule2::ReloadSymbols_Deprecated | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugModule2::ReloadSymbols
-helpviewer_keywords:
-- IDebugModule2::ReloadSymbols method
+f1_keywords: IDebugModule2::ReloadSymbols
+helpviewer_keywords: IDebugModule2::ReloadSymbols method
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d169e819e3096d72997ed3d86b90f58578d75c78
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 3923431ed4936cf34a077d8d5d818c96e9630221
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
-OBSOLETO. NÃO USE. Recarrega os símbolos do módulo.  
+OBSOLETO. NÃO USE. Recarrega os símbolos para esse módulo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT ReloadSymbols(   
    LPCOLESTR pszUrlToSymbols,  
    BSTR*     pbstrDebugMessage  
 );  
 ```  
   
-```c#  
+```csharp  
 int ReloadSymbols(   
    string     pszUrlToSymbols,  
    out string pbstrDebugMessage  
@@ -57,16 +41,16 @@ int ReloadSymbols(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszUrlToSymbols`  
- [in] O caminho para o repositório de símbolos.  
+ [in] O caminho para o armazenamento de símbolo.  
   
  `pbstrDebugMessage`  
  [out] Retorna uma mensagem informativa, como uma mensagem de erro ou de status, que é exibida à direita do nome do módulo na janela de módulos.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Um mecanismo de depuração deve retornar sempre `E_FAIL`.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro. Um mecanismo de depuração deve retornar sempre `E_FAIL`.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método não é mais suportado. Implementar o [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) método em vez disso.  
+ Não há suporte para esse método. Implementar o [LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md) método em vez disso.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   

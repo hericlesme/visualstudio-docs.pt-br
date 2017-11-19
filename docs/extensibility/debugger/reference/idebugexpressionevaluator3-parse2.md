@@ -1,45 +1,30 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Documentos do Microsoft
+title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugExpressionEvaluator3::Parse2
+helpviewer_keywords: IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f44e181b45a1b3036ac19afbc38604a85f98726a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f8b170a0031374bcd9ecb2a63d72586797bfdbce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Converte uma cadeia de caracteres de expressão em uma expressão analisada considerando o provedor de símbolo e o endereço da estrutura de avaliação.  
+Converte uma cadeia de caracteres de expressão em uma expressão analisada considerando o provedor de símbolo e o endereço do quadro de avaliar.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Parse2 (  
    LPCOLESTR                upstrExpression,  
    PARSEFLAGS               dwFlags,  
@@ -52,7 +37,7 @@ HRESULT Parse2 (
 );  
 ```  
   
-```c#  
+```csharp  
 HRESULT Parse2 (  
    string                     upstrExpression,  
    enum_PARSEFLAGS            dwFlags,  
@@ -67,19 +52,19 @@ HRESULT Parse2 (
   
 #### <a name="parameters"></a>Parâmetros  
  `upstrExpression`  
- [in] A cadeia de caracteres de expressão a ser analisado.  
+ [in] A cadeia de caracteres de expressão a ser analisada.  
   
  `dwFlags`  
- [in] Uma coleção de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes que determinam como a expressão deve ser analisada.  
+ [in] Uma coleção de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes que determinam como a expressão é para ser analisado.  
   
  `nRadix`  
- [in] Base a ser usado para interpretar as informações numéricas.  
+ [in] Base a ser usado para interpretar todas as informações numéricas.  
   
  `pSymbolProvider`  
  [in] Interface do provedor de símbolo.  
   
  `pAddress`  
- [in] Endereço da estrutura de avaliação.  
+ [in] Endereço do quadro de avaliar.  
   
  `pbstrError`  
  [out] Retorna o erro como texto legível.  
@@ -91,15 +76,15 @@ HRESULT Parse2 (
  [out] Retorna a expressão analisada em um [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Este método gera uma expressão analisada, não um valor real. Uma expressão analisada está pronta para ser avaliada, ou seja, convertido em um valor.  
+ Esse método gera uma expressão analisada, não um valor real. Uma expressão analisada está pronta para ser avaliada, ou seja, convertido em um valor.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CEE** objeto expõe o [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um **CEE** objeto que expõe o [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  
   PARSEFLAGS in_FLAGS,  
   UINT in_RADIX,  

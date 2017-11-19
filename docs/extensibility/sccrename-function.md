@@ -1,47 +1,31 @@
 ---
-title: "Função SccRename | Documentos do Microsoft"
+title: "Função SccRename | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccRename
-helpviewer_keywords:
-- SccRename function
+f1_keywords: SccRename
+helpviewer_keywords: SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c896688743e6ff41fcc2fd5e11197ab36c45719e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2936c2ea4425ad6eaccc2d23853f4174e1c9c2a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sccrename-function"></a>Função SccRename
 Essa função renomeia um arquivo no sistema de controle de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 SCCRTN SccRename(  
    LPVOID pvContext,  
    HWND   hWnd,  
@@ -55,7 +39,7 @@ SCCRTN SccRename(
  [in] A estrutura de contexto de plug-in de controle de origem.  
   
  hWnd  
- [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para as caixas de diálogo que ele fornece.  
+ [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.  
   
  lpFileName  
  [in] O nome de arquivo totalmente qualificado do arquivo que está sendo renomeado.  
@@ -81,4 +65,4 @@ SCCRTN SccRename(
  Essa função pode ser usada para renomear um arquivo ou movê-lo de um local para outro no sistema de controle de origem. O plug-in de controle de origem não deve tentar acessar o arquivo no disco. É responsabilidade do IDE para renomear o arquivo local.  
   
 ## <a name="see-also"></a>Consulte também  
- [Funções de API de plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)
+ [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

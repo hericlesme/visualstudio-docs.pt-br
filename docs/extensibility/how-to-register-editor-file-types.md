@@ -1,47 +1,32 @@
 ---
-title: 'Como: registrar tipos de arquivo do Editor | Documentos do Microsoft'
+title: 'Como: registrar tipos de arquivo do Editor | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], legacy - register file types
+helpviewer_keywords: editors [Visual Studio SDK], legacy - register file types
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 80b17b10d4c0451a6522f2457ebac05dc8152b3f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d9f2837dff6c5dd62c03da2ab340fca287a1da56
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-register-editor-file-types"></a>Como: registrar tipos de arquivo do Editor
-A maneira mais fácil de registrar tipos de arquivo do editor é usando os atributos de registro fornecidos como parte do [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] pacote (MPF) framework classes gerenciadas. Se você estiver implementando seu pacote no formato nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], você também pode escrever um script de registro que registra seu editor e aos ramais associados.  
+A maneira mais fácil para registrar tipos de arquivo do editor está usando os atributos de registro fornecidos como parte do [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] pacote framework (MPF) classes gerenciadas. Se você estiver implementando seu pacote no formato nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], você também pode escrever um script de registro que registra seu editor e as extensões associadas.  
   
 ## <a name="registration-using-mpf-classes"></a>Usando Classes MPF de registro  
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Para registrar tipos de arquivo do editor usando classes MPF  
   
-1.  Forneça o <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>classe com os parâmetros adequados para seu editor na classe o VSPackage.</xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>  
+1.  Forneça o <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe com os parâmetros adequados para seu editor na classe de seu VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -50,17 +35,17 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
          NameResourceID = 106)]  
     ```  
   
-     Onde ". Exemplo"é a extensão que está registrada para este editor e"32"é o nível de prioridade.  
+     Onde ". Exemplo de"é a extensão que está registrada para este editor e"32"é o nível de prioridade.  
   
-     O `projectGuid` é o GUID para tipos de arquivo diverso, definidos em <xref:Microsoft.VisualStudio.VSConstants.CLSID_MiscellaneousFilesProject>.</xref:Microsoft.VisualStudio.VSConstants.CLSID_MiscellaneousFilesProject> O tipo de arquivo diverso é fornecido, o arquivo resultante não vai ser uma parte do processo de compilação.  
+     O `projectGuid` é o GUID para os tipos de arquivo diverso, definidos em <xref:Microsoft.VisualStudio.VSConstants.CLSID_MiscellaneousFilesProject>. O tipo de arquivo diverso é fornecido, para que o arquivo resultante não será parte do processo de compilação.  
   
-     `TemplateDir`representa a pasta que contém os arquivos de modelo são incluídos com o exemplo editor básico gerenciado.  
+     `TemplateDir`representa a pasta que contém os arquivos de modelo são incluídos com o exemplo de editor básico gerenciado.  
   
-     `NameResourceID`é definido no arquivo do projeto BasicEditorUI Resources.h e identifica o editor como "Meu Editor".  
+     `NameResourceID`é definido no arquivo do projeto BasicEditorUI Resources.h e identifica o editor como "My Editor".  
   
-2.  Substituir o <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>método.</xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>  
+2.  Substituir o método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
-     Na implementação do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>método, chame o <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>método e passar a instância de sua fábrica de editor, como demonstrada abaixo.</xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> </xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>  
+     Na implementação do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, chame o <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método e passe a instância de sua fábrica de editor, como demonstrada abaixo.  
   
     ```  
     protected override void Initialize()  
@@ -76,16 +61,16 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
   
      Esta etapa registra a fábrica do editor e as extensões de arquivo do editor.  
   
-3.  Cancelar o registro de fábricas de editor.  
+3.  Cancelar o registro as fábricas de editor.  
   
-     Fábricas de editor são canceladas automaticamente quando o VSPackage é descartado. Se o objeto de fábrica de editor implementar o <xref:System.IDisposable>interface, seu `Dispose` método é chamado após a fábrica foi não registrada com [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].</xref:System.IDisposable>  
+     Fábricas de editor são automaticamente canceladas quando o VSPackage é descartado. Se o objeto de fábrica de editor implementar o <xref:System.IDisposable> interface, seu `Dispose` método é chamado depois que a fábrica foi não registrou com [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="registration-using-a-registry-script"></a>Registro usando um Script de registro  
- Registrando fábricas e tipos de arquivo no formato nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] é feito usando um script de registro para gravar no registro do windows, como ilustrado a seguir.  
+ Registrar fábricas de editor e tipos de arquivo no formato nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] é feito usando um script de registro para gravar o registro do windows, conforme ilustrado a seguir.  
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Para registrar tipos de arquivo do editor usando um script de registro  
   
-1.  Em seu script de registro, definir a fábrica do editor e a fábrica de editor de cadeia de caracteres do GUID conforme o `GUID_BscEditorFactory` seção do script de registro a seguir. Além disso, defina a extensão e a prioridade da extensão do editor:  
+1.  No seu script de registro, definir a fábrica do editor e a cadeia de caracteres do GUID de fábrica do editor conforme o `GUID_BscEditorFactory` seção do script de registro a seguir. Além disso, defina a extensão e a prioridade da extensão do editor:  
   
     ```  
   
@@ -105,13 +90,13 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
     }  
     ```  
   
-     A extensão de arquivo do editor neste exemplo é identificada como ". rtf" e sua prioridade é "50". As cadeias de caracteres do GUID são definidas no arquivo Resource.h do projeto de exemplo BscEdit.  
+     A extensão de arquivo do editor neste exemplo é identificada como "RTF" e a prioridade for "50". As cadeias de caracteres do GUID são definidas no arquivo de Resource.h do projeto de exemplo BscEdit.  
   
 2.  Registre o VSPackage.  
   
 3.  Registre a fábrica do editor.  
   
-     A fábrica do editor é registrada o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>implementação.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>  
+     A fábrica de editor é registrada no <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementação.  
   
     ```  
     // create editor factory.  

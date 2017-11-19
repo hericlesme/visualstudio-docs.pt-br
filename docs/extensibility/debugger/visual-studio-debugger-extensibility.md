@@ -1,66 +1,52 @@
 ---
-title: Extensibilidade do depurador do Visual Studio | Documentos do Microsoft
+title: Extensibilidade de depurador do Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Debugging SDK
 - Debugging SDK
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
-caps.latest.revision: 32
+caps.latest.revision: "32"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b7baa5ac92cafd2bcb8b106c4bb0168932be262c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b9a14f95fbed47670b3c5b5db19e4e0e6b8ba074
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="visual-studio-debugger-extensibility"></a>Extensibilidade do depurador do Visual Studio
-O Visual Studio inclui um depurador de código fonte totalmente interativas, fornecendo uma ferramenta poderosa e fácil de usar para rastrear bugs em seu programa. O depurador tem suporte completo para Visual Basic, c#, C/C++ e JavaScript. No entanto, com o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], que está disponível na [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), outras linguagens de programação podem ter suporte no depurador com os mesmos recursos avançados.  
+# <a name="visual-studio-debugger-extensibility"></a>Extensibilidade de depurador do Visual Studio
+O Visual Studio inclui um depurador de código fonte totalmente interativo, fornecendo uma ferramenta poderosa e fácil de usar para rastrear bugs em seu programa. O depurador tem suporte completo Visual Basic, c#, C/C++ e JavaScript. No entanto, com o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]que está disponível na [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), outras linguagens de programação podem ter suporte no depurador com os mesmos recursos avançados.  
   
- O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador é comum front-end (ou seja, a interface do usuário) para os componentes de depuração são, por sua vez, específico do idioma que está sendo depurado. Novos idiomas, tudo o que é necessário para oferecer suporte o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador é criar os componentes de back-end necessários, como um mecanismo de depuração (DE). É aí que o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] chega.  
+ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador é comum front-end (ou seja, a interface do usuário) para os componentes de depuração são, por sua vez, específico do idioma que está sendo depurado. Para novos idiomas, tudo o que é necessário para suporte pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depurador é criar os componentes necessários do back-end, como um mecanismo de depuração (DE). É onde o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] entram em ação.  
   
- O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] inclui uma referência completa a todos os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] elementos necessários para criar um novo DE. Além disso, há exemplos e tutoriais que ajudarão a começar.  
+ O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] inclui uma referência completa para todos os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] elementos necessários para criar um novo DE. Além disso, há exemplos e tutoriais que ajudarão você a começar.  
   
- Para um exemplo de ponta a ponta de um sistema de projeto de linguagem com suporte à depuração, consulte o [IronPython exemplo](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Para um exemplo de ponta a ponta de um sistema de projeto de idioma com suporte à depuração, consulte o [IronPython exemplo](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  As seções a seguir descrevem como estender o depurador usando o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Introdução](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
- Descreve o que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração ofertas e como instalar o SDK.  
+ Descreve o que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ofertas e como instalar o SDK de depuração.  
   
- [Criando um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Documenta o processo DE personalizado, de preparação de seu programa para a da desanexação DE.  
+ [Criar um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+ Documenta o processo DE personalizados, de preparação de seu programa para a desanexação DE um DE.  
   
  [Escrevendo um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
- Explica se você deve escrever um avaliador de expressão.  
+ Explica como se você deve gravar um avaliador de expressão.  
   
- [Escolhendo uma estratégia de implementação do mecanismo de depuração](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
- Discute como implementar seu DE.  
+ [Escolher uma estratégia de implementação do mecanismo de depuração](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
+ Descreve como implementar sua DE.  
   
  [Referência](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
- Documentos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] API de depuração.  
+ Documentos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração da API.  
   
- [Exemplos](../../extensibility/debugger/visual-studio-debugging-samples.md)  
- Contém links para uma amostra do avaliador de expressão comuns language runtime e um exemplo de mecanismo de depuração.
+ [Amostras](../../extensibility/debugger/visual-studio-debugging-samples.md)  
+ Contém links para uma amostra do avaliador de expressão comum idioma em tempo de execução e um exemplo de mecanismo de depuração.

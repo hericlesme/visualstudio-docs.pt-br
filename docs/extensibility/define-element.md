@@ -1,42 +1,28 @@
 ---
-title: Definir elemento | Documentos do Microsoft
+title: Definir o elemento | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 67fdb3dd999c9e4d46eee7542abc04c314b3da2c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b435c4e44391bbf477ed94fa96ee382613290530
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="define-element"></a>Definir o elemento
-Define um par de nome e valor do símbolo. Esse símbolo pode ser avaliado por atributos condicionais. Para obter mais informações, consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md). Consulte também o [símbolos elemento](../extensibility/symbols-element.md).  
+Define um par de nome e valor do símbolo. Este símbolo pode ser avaliado por atributos condicionais. Para obter mais informações, consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md). Consulte também o [símbolos elemento](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -51,7 +37,7 @@ Define um par de nome e valor do símbolo. Esse símbolo pode ser avaliado por a
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|name|Necessário. O nome do símbolo:<br /><br /> nome = "Mode"|  
+|name|Necessário. O nome do símbolo:<br /><br /> Name = "Mode"|  
 |Valor |Necessário. O valor do símbolo:<br /><br /> valor = "Padrão"|  
 |Condição|Opcional. Para obter mais informações, consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
@@ -72,4 +58,4 @@ Define um par de nome e valor do símbolo. Esse símbolo pode ser avaliado por a
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

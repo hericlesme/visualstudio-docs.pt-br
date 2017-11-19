@@ -1,11 +1,10 @@
 ---
-title: "Práticas recomendadas para segurança no VSPackages | Documentos do Microsoft"
+title: "Práticas recomendadas para segurança no VSPackages | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,39 +12,26 @@ helpviewer_keywords:
 - security best practices, VSPackages
 - best practices, security
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
-caps.latest.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: c7ceb884ad060ea45c0fd204b5611ce284d3d2af
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 770dff4b531bf4a7347cb648ca4c930b28b79bea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Práticas recomendadas de segurança em VSPackages
-Para instalar o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] no seu computador, você deve estar executando em um contexto com credenciais administrativas. A unidade básica de segurança e a implantação de um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplicativo é o [VSPackages](../../extensibility/internals/vspackages.md). Um VSPackage deve ser registrado com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], que também requer credenciais administrativas.  
+Para instalar o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] em seu computador, você deve estar executando em um contexto com credenciais administrativas. A unidade básica de segurança e implantação de um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplicativo é o [VSPackages](../../extensibility/internals/vspackages.md). Um VSPackage deve ser registrado usando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], que também requer credenciais administrativas.  
   
  Os administradores têm permissões completas para gravar no registro e sistema de arquivos e para executar qualquer código. Você deve ter essas permissões para desenvolver, implantar ou instalar um VSPackage.  
   
- Assim que ele for instalado, um VSPackage é totalmente confiável. Devido a esse nível alto de permissão associada a um VSPackage, é possível instalar inadvertidamente um VSPackage com más intenções.  
+ Assim que ele é instalado, um VSPackage é totalmente confiável. Devido a esse nível alto de permissão associada a um VSPackage, é possível instalar inadvertidamente um VSPackage com más intenções.  
   
- Os usuários devem garantir que eles instalam os VSPackages somente de fontes confiáveis. As empresas a desenvolver os VSPackages fortemente devem nomear e assiná-los garantir que o usuário que a violação é impedida. As empresas a desenvolver os VSPackages devem examinar suas dependências externas, como serviços da web e de instalação remota, avaliar e corrigir quaisquer problemas de segurança.  
+ Os usuários devem garantir que eles instalam VSPackages somente de fontes confiáveis. Empresas de desenvolvimento de VSPackages fortemente devem nomear e assiná-las garantir que o usuário que viole é evitada. Empresas de desenvolvimento de VSPackages devem examinar suas dependências externas, como serviços web e de instalação remota, para avaliar e corrigir quaisquer problemas de segurança.  
   
- Para obter mais informações, consulte diretrizes para codificação segura para o .NET Framework ([http://msdn.microsoft.com/library/d55zzx87.aspx](http://msdn.microsoft.com/library/d55zzx87.aspx)).  
+ Para obter mais informações, consulte as diretrizes de codificação segura para o .NET Framework ([http://msdn.microsoft.com/library/d55zzx87.aspx](http://msdn.microsoft.com/library/d55zzx87.aspx)).  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do suplemento](http://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   

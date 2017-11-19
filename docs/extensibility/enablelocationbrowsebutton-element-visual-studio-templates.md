@@ -1,43 +1,27 @@
 ---
-title: Elemento EnableLocationBrowseButton (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento EnableLocationBrowseButton (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton
-helpviewer_keywords:
-- EnableLocationBrowseButton [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton
+helpviewer_keywords: EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8e2475e714f217ebdc2f1e4524cbf2c467a03ba3
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e9271df96f5fa84044b33550e0d73750030d7e66
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelos do Visual Studio)
-Especifica se o **procurar** botão está disponível na **novo projeto** caixa de diálogo, para que os usuários possam modificar facilmente o diretório padrão em que um novo projeto é salvo.  
+Especifica se o **procurar** botão está disponível no **novo projeto** caixa de diálogo, para que os usuários podem modificar facilmente o diretório padrão onde um novo projeto é salvo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -53,7 +37,7 @@ Especifica se o **procurar** botão está disponível na **novo projeto** caixa 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -62,7 +46,7 @@ Especifica se o **procurar** botão está disponível na **novo projeto** caixa 
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
@@ -72,7 +56,7 @@ Especifica se o **procurar** botão está disponível na **novo projeto** caixa 
 ## <a name="remarks"></a>Comentários  
  `EnableLocationBrowseButton` é um elemento opcional. O valor padrão é `true`, que exibe o **procurar** no botão de **novo projeto** caixa de diálogo.  
   
- No **novo projeto** caixa de diálogo, o **local** caixa de texto Especifica o diretório em que um novo projeto é salvo. O **procurar** botão Ajuda você a modificar esse diretório exibindo o **local do projeto** caixa de diálogo que permite navegar facilmente para um diretório diferente que está disponível no seu computador e, em seguida, escolha o diretório onde o novo projeto é salvo.  
+ No **novo projeto** caixa de diálogo, o **local** caixa de texto Especifica o diretório em que um novo projeto é salvo. O **procurar** botão Ajuda a você modificar esse diretório exibindo o **local do projeto** caixa de diálogo que permite que você navegue facilmente para um diretório diferente que está disponível no seu computador, e em seguida, escolha-o como o diretório onde o novo projeto é salvo.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.  

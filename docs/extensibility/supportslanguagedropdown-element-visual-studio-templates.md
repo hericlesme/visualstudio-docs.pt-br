@@ -1,41 +1,26 @@
 ---
-title: Elemento SupportsLanguageDropDown (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento SupportsLanguageDropDown (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
 helpviewer_keywords:
 - SupportsLanguageDropDown element [Visual Studio Templates]
 - <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c5d2043ec03eb26d9327c59323f008bc9cd9ed2b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4ff2e2167daa0cb22abac7d8c1a545d17b2faa36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>Elemento SupportsLanguageDropDown (modelos do Visual Studio)
 Especifica se o modelo de item da Web é idêntico para vários idiomas e se o **idioma** opção é habilitada no **Adicionar Novo Item** caixa de diálogo.  
@@ -54,7 +39,7 @@ Especifica se o modelo de item da Web é idêntico para vários idiomas e se o *
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -63,22 +48,22 @@ Especifica se o modelo de item da Web é idêntico para vários idiomas e se o *
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, indicando se o **idioma** opção está disponível no **Add New Item** caixa de diálogo.  
+ O texto deve ser `true` ou `false`, indicando se ou não o **idioma** opção está disponível na **Adicionar Novo Item** caixa de diálogo.  
   
 ## <a name="remarks"></a>Comentários  
  `SupportsLanguageDropDown` é um elemento opcional. O valor padrão é `false`.  
   
- O `SupportsLanguageDropDown` elemento só está disponível para modelos de item da Web.  
+ O `SupportsLanguageDropDown` elemento só está disponível para modelos de item de Web.  
   
- Se o valor desse elemento é definido como `true`, em seguida, o modelo de item é idêntico para todas as linguagens de programação e o **idioma** opção é habilitada no **Add New Item** caixa de diálogo. Essa opção permite que você escolha a linguagem de programação do novo item que você deseja criar a partir do modelo.  
+ Se o valor desse elemento for definido como `true`, em seguida, o modelo de item é idêntico para todas as linguagens de programação e a **idioma** opção está habilitada no **Adicionar Novo Item** caixa de diálogo. Essa opção permite que você escolha a linguagem de programação do novo item que você deseja criar a partir do modelo.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir especifica que o **idioma** suspensa opção.  
+ O exemplo a seguir especifica que o **idioma** suspensa da opção.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

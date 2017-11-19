@@ -1,53 +1,37 @@
 ---
-title: IEnumDebugPorts2::Clone | Documentos do Microsoft
+title: IEnumDebugPorts2::Clone | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugPorts2::Clone
-helpviewer_keywords:
-- IEnumDebugPorts2::Clone
+f1_keywords: IEnumDebugPorts2::Clone
+helpviewer_keywords: IEnumDebugPorts2::Clone
 ms.assetid: d5ce77e8-bb99-409a-98fa-20fe5a0de25e
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c62ffa0acd7e59973ebbd758961719878c01a60e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f2873c735f8f4417ea7f0ee3e6137a878dd806fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugports2clone"></a>IEnumDebugPorts2::Clone
 Retorna uma cópia da enumeração atual como um objeto separado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Clone(  
    IEnumDebugPorts2** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int Clone(  
    out IEnumDebugPorts2 ppEnum  
 );  
@@ -58,10 +42,10 @@ int Clone(
  [out] Retorna uma cópia dessa enumeração como um objeto separado.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- A cópia da enumeração tem o mesmo estado original no momento em que este método é chamado. No entanto, a cópia e o original estados são separados e podem ser alterados individualmente.  
+ A cópia da enumeração tem o mesmo estado original no momento em que este método é chamado. No entanto, o original e da cópia estados são separados e podem ser alterados individualmente.  
   
 ## <a name="see-also"></a>Consulte também  
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

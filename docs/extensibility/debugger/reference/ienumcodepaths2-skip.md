@@ -1,53 +1,37 @@
 ---
-title: IEnumCodePaths2::Skip | Documentos do Microsoft
+title: IEnumCodePaths2::Skip | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumCodePaths2::Skip
-helpviewer_keywords:
-- IEnumCodePaths2::Skip
+f1_keywords: IEnumCodePaths2::Skip
+helpviewer_keywords: IEnumCodePaths2::Skip
 ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 65a739919390521bbba54650d88d1fd3cb4f2dd5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e2dc00ec727be054ff05b08a968bdb52f8b33ee2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 Ignora o número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
    ULONG celt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Skip(  
    uint celt  
 );  

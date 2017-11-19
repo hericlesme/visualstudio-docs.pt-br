@@ -1,43 +1,27 @@
 ---
-title: "Função SccBackgroundGet | Documentos do Microsoft"
+title: "Função SccBackgroundGet | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccBackgroundGet
-helpviewer_keywords:
-- SccBackgroundGet function
+f1_keywords: SccBackgroundGet
+helpviewer_keywords: SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8bc845c2ef3cb4ece3e52dca272fdc75208e8dbd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 85b700f0cb1e3a364cae69ff6c628151ea6a7bd3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sccbackgroundget-function"></a>Função SccBackgroundGet
-Esta função recupera do controle de origem cada dos arquivos especificados sem interação do usuário.  
+Essa função recupera do controle de origem cada dos arquivos especificados sem interação do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -59,7 +43,7 @@ SCCRTN SccBackgroundGet(
  [in] Número de arquivos especificados na `lpFileNames` matriz.  
   
  lpFileNames  
- [no, out] Matriz de nomes de arquivos a serem recuperados.  
+ [out no] Matriz de nomes de arquivos a serem recuperados.  
   
 > [!NOTE]
 >  Os nomes devem ser totalmente qualificado de nomes de arquivo local.  
@@ -76,11 +60,11 @@ SCCRTN SccBackgroundGet(
 |Valor|Descrição|  
 |-----------|-----------------|  
 |SCC_OK|Operação concluída com êxito.|  
-|SCC_E_BACKGROUNDGETINPROGRESS|Recuperação de um plano de fundo já está em andamento (o plug-in de controle de origem deve retornar isso apenas se não dá suporte a operações em lotes simultâneos).|  
-|SCC_I_OPERATIONCANCELED|A operação foi cancelada antes de serem concluídas.|  
+|SCC_E_BACKGROUNDGETINPROGRESS|Uma recuperação do plano de fundo já está em andamento (o plug-in de controle de origem deve retornar isso apenas se não dá suporte a operações em lotes simultâneos).|  
+|SCC_I_OPERATIONCANCELED|Operação foi cancelada antes de serem concluídas.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa função é sempre chamada em um thread diferente do que carregar o plug-in de controle de origem. Essa função não deve retornar até que seja feita; No entanto, ele pode ser chamado várias vezes com várias listas de arquivos, todos ao mesmo tempo.  
+ Essa função sempre é chamada em um thread diferente do que carregar o plug-in de controle de origem. Essa função não é esperada para retornar até que ela seja feita; No entanto, ele pode ser chamado várias vezes com várias listas de arquivos, todos ao mesmo tempo.  
   
  O uso do `dwFlags` argumento é o mesmo que o [SccGet](../extensibility/sccget-function.md).  
   

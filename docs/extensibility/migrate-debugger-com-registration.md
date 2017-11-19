@@ -1,48 +1,32 @@
 ---
-title: Migrar o registro de classe do depurador de 64 bits COM | Documentos do Microsoft
+title: Migrar o registro de classe do depurador de 64 bits COM | Microsoft Docs
 ms.custom: 
 ms.date: 11/10/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregg-miskelly
 ms.author: greggm
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 19ce2d4cc1ff92240529f35f42845778ded49fdf
-ms.contentlocale: pt-br
-ms.lasthandoff: 03/07/2017
-
+ms.openlocfilehash: 06bfef5f1b4d67cb691a74b953296b1ab057d62f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrar o registro de classe COM de depurador de 64 bits
 
-Para extensões do depurador que registrar classes COM em HKEY_CLASSES_ROOT (com regasm, regsvr32, ou gravar diretamente no registro) e carregados no msvsmon.exe (o depurador remoto), é possível fornecer esse registro para msvsmon sem precisar gravar em HKEY_CLASSES_ROOT. Isso afeta os avaliadores de expressão de depurador .NET herdados ou mecanismos de depuração que são configurados para carregar no processo de msvsmon.exe.
+Para as extensões de depurador que registrar classes COM em HKEY_CLASSES_ROOT (por usando regasm, regsvr32, ou gravar diretamente no registro) e carregados no msvsmon.exe (o depurador remoto), agora é possível fornecer esse registro para msvsmon sem a necessidade para gravar HKEY_CLASSES_ROOT. Isso afeta herdados avaliadores de expressão do depurador .NET ou mecanismos de depuração que estão configurados para carregar no processo msvsmon.exe.
 
-## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
+## <a name="msvsmon-comclass-def"></a>o msvsmon-comclass-def
 
-Para usar essa técnica, adicione um arquivo comclass-*.msvsmon-def.json ao lado de msvsmon (InstallDir:\Common7\IDE\Remote Debugger\x64).
+Para usar essa técnica, adicione um arquivo de *.msvsmon-comclass-def.json ao lado do msvsmon (InstallDir:\Common7\IDE\Remote Debugger\x64).
 
-Aqui está um exemplo de arquivo de definição de comclass msvsmon que registra um gerenciado e uma classe nativa:
+Aqui está um exemplo de arquivo de definição de comclass msvsmon que registra um gerenciada e uma classe nativo:
 
 Nome do arquivo: MyCompany.MyExample.msvsmon comclass def.json
 
@@ -63,4 +47,3 @@ Nome do arquivo: MyCompany.MyExample.msvsmon comclass def.json
   ]
 }
 ```
-

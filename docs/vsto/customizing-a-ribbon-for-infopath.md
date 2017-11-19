@@ -1,12 +1,10 @@
 ---
-title: Customizing a Ribbon for InfoPath | Microsoft Docs
+title: "Personalizando uma faixa de opções para InfoPath | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,61 +14,61 @@ helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
 ms.assetid: 498c6457-679a-46f2-939f-c0597a17b7ec
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: befccdbf740c8ff166cb9d57e1998b07a1c24619
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c3f4612b3e8dc272b0f51bae80d66d8afe97938e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="customizing-a-ribbon-for-infopath"></a>Customizing a Ribbon for InfoPath
-  When you customize the Ribbon in Microsoft Office InfoPath, you must consider where your custom Ribbon will appear in the application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] can display the Ribbon in the following three types of InfoPath application windows:  
+# <a name="customizing-a-ribbon-for-infopath"></a>Personalizando uma faixa de opções para InfoPath
+  Quando você personaliza a faixa de opções no Microsoft Office InfoPath, você deve considerar onde a faixa de opções personalizada será exibida no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]pode exibir a faixa de opções os seguir três tipos de janelas de aplicativo do InfoPath:  
   
--   Windows that display a form template that is opened in design mode.  
+-   Janelas que exibem um modelo de formulário é aberto no modo de design.  
   
--   Windows that display a form that is based on a form template.  
+-   Janelas que exibem um formulário que é baseado em um modelo.  
   
--   The Print Preview window.  
+-   A janela de visualização de impressão.  
   
- **Applies to:** The information in this topic applies to VSTO Add-in projects for InfoPath 2010. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Aplica-se a:** as informações neste tópico se aplicam a projetos de suplemento do VSTO para InfoPath 2010. Para obter mais informações, consulte [recursos disponibilizados pelo aplicativo do Office e pelo tipo de projeto](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Users and designers open a form template in design mode to modify the appearance and layout of the template. Users open forms that are based in a form template to add content.  
+ Usuários e designers de abrem um modelo de formulário no modo de design para modificar a aparência e o layout do modelo. Os usuários abrem formulários com base em um modelo de formulário para adicionar conteúdo.  
   
- The Print Preview window enables designers and users to preview the pages of a form or form template before they print them.  
+ A janela de visualização de impressão habilita os designers e os usuários visualizar as páginas de um formulário ou o modelo antes de eles imprimem-los.  
   
 > [!NOTE]  
->  The **AddIns** tab does not appear in the Print Preview window. If you want a custom tab to appear in the Print Preview window, make sure that the **OfficeId** property of the tab is not set to **TabAddIns**.  
+>  O **AddIns** guia não aparece na janela de visualização de impressão. Se você quiser uma guia personalizada seja exibido na janela de visualização de impressão, verifique se o **OfficeId** propriedade da guia não está definida como **TabAddIns**.  
   
- You must specify the Ribbon type of each window in which you want your Ribbon to appear.  
+ Você deve especificar o tipo de faixa de opções de cada janela no qual você deseja que apareça da faixa de opções.  
   
-## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Specifying the Ribbon Type in the Ribbon Designer  
- If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the Ribbon in the **Properties** window, and then select any of the Ribbon ID's described in the following table.  
+## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Especifica o tipo de faixa de opções no Designer de faixa de opções  
+ Se você estiver usando o **faixa de opções (Visual Designer)** item, clique no **RibbonType** propriedade da faixa de opções no **propriedades** janela e, em seguida, selecione qualquer uma das IDs de faixa de opções descrito na tabela a seguir.  
   
-|Ribbon ID|Window in which the Ribbon will appear when you run the project|  
+|ID da faixa de opções|Janela em que a faixa de opções será exibida quando você executar o projeto|  
 |---------------|---------------------------------------------------------------------|  
-|**Microsoft.InfoPath.Designer**|Windows that display a form template that is opened in design mode.|  
-|**Microsoft.InfoPath.Editor**|Windows that display a form that is based on a form template.|  
-|**Microsoft.InfoPath.PrintPreview**|The Print Preview window.|  
+|**Microsoft.InfoPath.Designer**|Janelas que exibem um modelo de formulário é aberto no modo de design.|  
+|**Microsoft.InfoPath.Editor**|Janelas que exibem um formulário que é baseado em um modelo.|  
+|**Microsoft.InfoPath.PrintPreview**|A janela de visualização de impressão.|  
   
- You can add more than one Ribbon to a project. If more than one Ribbon share a Ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which Ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+ Você pode adicionar mais de uma faixa de opções para um projeto. Se mais de uma faixa de opções compartilharem uma ID de faixa de opções, substituir o método CreateRibbonExtensibilityObject o `ThisAddin` classe do seu projeto para especificar quais faixa de opções para exibir em tempo de execução. Para obter mais informações, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
   
-## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
- If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate Ribbon.  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Especificando o tipo de faixa de opções usando o XML da faixa de opções  
+ Se você estiver usando o **da faixa de opções (XML)** item, verifique o valor do *ribbonID* parâmetro o <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> método e retorne a faixa de opções apropriada.  
   
- The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the Ribbon code file. The *ribbonID* parameter is a string that identifies the type of InfoPath window that is opening.  
+ O <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> método é gerado automaticamente pelo Visual Studio no arquivo de código da faixa de opções. O *ribbonID* parâmetro é uma cadeia de caracteres que identifica o tipo de janela do InfoPath que está sendo aberto.  
   
- The following code example demonstrates how to display a custom Ribbon only in a window that displays a form template in design mode. The Ribbon to display is specified in the `GetResourceText()` method, which is generated in the Ribbon class. For more information about the Ribbon class, see [Ribbon XML](../vsto/ribbon-xml.md).  
+ O exemplo de código a seguir demonstra como exibir uma faixa de opções personalizada somente em uma janela que exibe um modelo de formulário no modo de design. Especificada na faixa de opções para exibir o `GetResourceText()` método, que é gerado na classe da faixa de opções. Para obter mais informações sobre a classe da faixa de opções, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)] [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
+ [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
+ [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
-## <a name="see-also"></a>See Also  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Ribbon XML](../vsto/ribbon-xml.md)  
+## <a name="see-also"></a>Consulte também  
+ [Acessando a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
+ [Designer de faixa de opções](../vsto/ribbon-designer.md)   
+ [XML da faixa de opções](../vsto/ribbon-xml.md)  
   
   

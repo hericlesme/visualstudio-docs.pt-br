@@ -1,35 +1,35 @@
 ---
-title: "O que h&#225; de novo no editor XML | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: O que &#39; s no Editor de XML | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: bd335a8d-6692-4a4c-9b5f-aa98f1fcaba3
-caps.latest.revision: 2
-caps.handback.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 79a4984bf33796f043c4a92ba83407c3c23e23d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# O que h&#225; de novo no editor XML
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="what39s-new-in-the-xml-editor"></a>O que &#39; s no Editor de XML
 Os seguintes recursos são novos no Visual Studio 2010.  
   
-## IntelliSense do XSLT  
- O recurso IntelliSense do XSLT permite nomes de conjunto de atributos de preenchimento automático; modos do modelo e nomes; e os nomes de parâmetro para um modo especificado ou um modelo nomeado especificado. Para obter mais informações, consulte [XML Editor IntelliSense Features](../xml-tools/xml-editor-intellisense-features.md).  
+## <a name="xslt-intellisense"></a>XSLT IntelliSense  
+ O recurso de fonte IntelliSense permite que você tenha o atributo auto-complete nomes definidos; modos e nomes do modelo; e nomes de parâmetro para um modo especificado ou um modelo nomeado especificado. Para obter mais informações, consulte [recursos de IntelliSense do Editor de XML](../xml-tools/xml-editor-intellisense-features.md).  
   
-## Perfil XSLT  
- O Profiler XSLT cria desempenho detalhados XSLT relatórios que ajudam você medem, avaliarem e direcionar problemas relacionados ao desempenho no código XSLT. O Profiler XSLT também inclui dicas úteis para otimizações de folha de estilo XSL e XSLT. Para obter mais informações, consulte [Walkthrough: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md).  
+## <a name="xslt-profiler"></a>Perfil XSLT  
+ O profiler XSLT cria os relatórios de desempenho detalhados XSLT que ajudam a medição, classificar, e direcionar problemas de desempenho relacionadas no código XSLT. O profiler XSLT também inclui dicas úteis para XSL e otimizações de folha de estilos XSLT. Para obter mais informações, consulte [passo a passo: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md).  
   
-## Hierarquia XSLT  
- A ferramenta da hierarquia XSLT permite que você adicione pontos de interrupção em folhas de estilo embutidas e\/ou regras de modelo interno. Para obter mais informações, consulte [Walkthrough: Using XSLT Hierarchy](../xml-tools/walkthrough-using-xslt-hierarchy.md).  
+## <a name="xslt-hierarchy"></a>Hierarquia XSLT  
+ A ferramenta da hierarquia XSLT permite que você adicione pontos de interrupção em folhas de estilos e/ou incluídas em regras de modelo interno. Para obter mais informações, consulte [passo a passo: usando XSLT hierarquia](../xml-tools/walkthrough-using-xslt-hierarchy.md).  
   
-## Consulte também  
- [XML Editor Tasks](../xml-tools/xml-editor-tasks.md)   
- [XML Editor](../xml-tools/xml-editor.md)
+## <a name="see-also"></a>Consulte também  
+ [Tarefas de Editor XML](../xml-tools/xml-editor-tasks.md)   
+ [Editor de XML](../xml-tools/xml-editor.md)

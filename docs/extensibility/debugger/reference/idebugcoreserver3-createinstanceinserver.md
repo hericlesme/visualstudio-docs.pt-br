@@ -1,47 +1,31 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Documentos do Microsoft
+title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCoreServer3::CreateInstanceInServer
-helpviewer_keywords:
-- IDebugCoreServer3::CreateInstanceInServer
+f1_keywords: IDebugCoreServer3::CreateInstanceInServer
+helpviewer_keywords: IDebugCoreServer3::CreateInstanceInServer
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 34d5fa61447d85d64b1860c8fe32f955089d0258
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a89657949938526fa8e53689ea04015253b52520
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Cria uma instância de um mecanismo de depuração no servidor.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT CreateInstanceInServer(  
    LPCWSTR  szDll,  
    WORD     wLangId,  
@@ -51,7 +35,7 @@ HRESULT CreateInstanceInServer(
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateInstanceInServer(  
    string     szDll,   
    ushort     wLangID,   
@@ -75,10 +59,10 @@ int CreateInstanceInServer(
  [in] ID de interface de uma interface específica para recuperar o objeto de classe.  
   
  `ppvObject`  
- [out] `IUnknown` interface do objeto instanciado. Converter ou empacotar este objeto para a interface desejada.  
+ [out] `IUnknown` interface do objeto instanciado. Converter ou empacotar este objeto para a interface desejado.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

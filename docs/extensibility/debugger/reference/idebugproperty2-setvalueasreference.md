@@ -1,47 +1,31 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Documentos do Microsoft
+title: IDebugProperty2::SetValueAsReference | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty2::SetValueAsReference
-helpviewer_keywords:
-- IDebugProperty2::SetValueAsReference method
+f1_keywords: IDebugProperty2::SetValueAsReference
+helpviewer_keywords: IDebugProperty2::SetValueAsReference method
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7be49c141968830afc261baea2ff091c4b68ccea
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d27a087c67401e90e8a3f4629c27d1255d0ade75
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Define o valor dessa propriedade para o valor da referência fornecida.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT SetValueAsReference(  
    IDebugReference2** rgpArgs,  
    DWORD              dwArgCount,  
@@ -50,7 +34,7 @@ HRESULT SetValueAsReference(
 );  
 ```  
   
-```c#  
+```csharp  
 int SetValueAsReference(  
    IDebugReference2[] rgpArgs,  
    uint               dwArgCount,  
@@ -61,7 +45,7 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>Parâmetros  
  `rgpArgs`  
- [in] Uma matriz de argumentos para passar para o setter da propriedade de código gerenciado. Se a propriedade setter não leva argumentos ou se esse [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto não faz referência a tal um setter de propriedade `rgpArgs` deve ser um valor nulo. Normalmente, este parâmetro é um valor nulo.  
+ [in] Uma matriz de argumentos para passar para o setter de propriedade de código gerenciado. Se a propriedade setter não obtém argumentos ou se esse [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto não faz referência a esse um setter de propriedade `rgpArgs` deve ser um valor nulo. Normalmente, este parâmetro é um valor nulo.  
   
  `dwArgCount`  
  [in] O número de argumentos a `rgpArgs` matriz.  
@@ -70,10 +54,10 @@ int SetValueAsReference(
  [in] Uma referência, na forma de um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto, o valor a ser usado para definir essa propriedade.  
   
  `dwTimeout`  
- [in] Quanto tempo para definir o valor, em milissegundos. Um valor típico é `INFINITE`. Isso afeta o período de tempo que pode executar qualquer avaliação possível.  
+ [in] Quanto tempo deve demorar para definir o valor, em milissegundos. Um valor típico é `INFINITE`. Isso afeta o período de tempo que pode executar qualquer avaliação possível.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um erro de código, geralmente um dos seguintes:  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retornará um erro de código, normalmente um dos seguintes:  
   
 |Erro|Descrição|  
 |-----------|-----------------|  

@@ -1,47 +1,31 @@
 ---
-title: MESSAGETYPE | Documentos do Microsoft
+title: MESSAGETYPE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MESSAGETYPE
-helpviewer_keywords:
-- MESSAGETYPE enumeration
+f1_keywords: MESSAGETYPE
+helpviewer_keywords: MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e224392640ce21c3d5501596f533f325b9f3f301
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7cbb3ddd27c7cbb92c7e248c5091d6fe0e21dc3e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Especifica o tipo de mensagem e o motivo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
@@ -53,7 +37,7 @@ enum enum_MESSAGETYPE {
 typedef DWORD MESSAGETYPE;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
@@ -75,10 +59,10 @@ public enum enum_MESSAGETYPE {
  Um valor de máscara para isolar o destino da mensagem.  
   
  MT_REASON_EXCEPTION  
- Indica que uma caixa de mensagem está sendo mostrada como resultado de uma exceção. Isso é mutuamente exclusivo do `MT_REASON_TRACEPOINT`.  
+ Indica que uma caixa de mensagem está sendo exibida como resultado de uma exceção. Isso é mutuamente exclusivo do `MT_REASON_TRACEPOINT`.  
   
  MT_REASON_TRACEPOINT  
- Indica que uma caixa de mensagem está sendo mostrada como resultado de atingir um tracepoint. Isso é mutuamente exclusivo com `MT_REASON_EXCEPTION`.  
+ Indica que uma caixa de mensagem está sendo exibida como resultado de atingir um tracepoint. Isso é mutuamente exclusivo com `MT_REASON_EXCEPTION`.  
   
  MT_REASON_MASK  
  Um valor de máscara para isolar o motivo para a mensagem que está sendo mostrado.  
@@ -86,7 +70,7 @@ public enum enum_MESSAGETYPE {
 ## <a name="remarks"></a>Comentários  
  Esses valores são retornados do [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) métodos.  
   
- Um dos valores de razão pode ser combinado com um dos valores de destino de saída usando um bit a bit `OR`.  
+ Um dos valores de motivo pode ser combinado com um dos valores de destino de saída usando um bit a bit `OR`.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

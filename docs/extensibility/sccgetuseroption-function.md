@@ -1,43 +1,27 @@
 ---
-title: "Função SccGetUserOption | Documentos do Microsoft"
+title: "Função SccGetUserOption | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccGetUserOption
-helpviewer_keywords:
-- SccGetUserOption function
+f1_keywords: SccGetUserOption
+helpviewer_keywords: SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: cbc06f25a57ee3b7ebab6f697cebc21f702d3bc8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ebd59cfada6064d40fe48df3cba4eaac3c3293b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sccgetuseroption-function"></a>Função SccGetUserOption
-Esta função recupera uma variedade de opções específicas do usuário.  
+Essa função recupera uma variedade de opções específicas do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -54,7 +38,7 @@ SCCRTN SccGetUserOption(
  [in] O ponteiro de contexto de plug-in de controle de origem.  
   
  nOption  
- [in] Opção de recuperação (consulte comentários para obter possíveis opções).  
+ [in] Opção de recuperação (consulte os comentários para opções possíveis).  
   
  lpVal  
  [out] Valor associado com a opção.  

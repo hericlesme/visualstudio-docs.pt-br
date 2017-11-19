@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating Your First VSTO Add-in for PowerPoint | Microsoft Docs'
+title: 'Passo a passo: Criando seu primeiro suplemento VSTO para PowerPoint | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,129 +16,129 @@ helpviewer_keywords:
 - PowerPoint [Office development in Visual Studio], creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 ms.assetid: 52d1543a-c9cb-4ee1-aa5b-90759fce9d3a
-caps.latest.revision: 34
-author: kempb
-ms.author: kempb
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 18569d5e0e719af3657fcbc4c9838b94daa9df75
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 655aea7bed7e61bd37f30240d02a8214b9ff23ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Walkthrough: Creating Your First VSTO Add-in for PowerPoint
-  This walkthrough shows you how to create an VSTO Add-in for Microsoft Office PowerPoint. The features that you create in this kind of solution are available to the application itself, regardless of which presentations are open. For more information, see [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+# <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Passo a passo: criando o seu primeiro suplemento VSTO para o PowerPoint
+  Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office PowerPoint. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual apresentações estão abertas. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Creating a PowerPoint VSTO Add-in project for PowerPoint.  
+-   Criando um projeto de suplemento do PowerPoint VSTO para PowerPoint.  
   
--   Writing code that uses the object model of PowerPoint to add a text box to each new slide.  
+-   Escrevendo código que usa o modelo de objeto do PowerPoint para adicionar uma caixa de texto para cada novo slide.  
   
--   Building and running the project to test it.  
+-   Criar e executar o projeto para testá-lo.  
   
--   Cleaning up the project so that the VSTO Add-in no longer runs automatically on your development computer.  
+-   Limpando o projeto para que o suplemento do VSTO não seja executado automaticamente no computador de desenvolvimento.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Pré-requisitos  
+ Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   PowerPoint  
   
-## <a name="creating-the-project"></a>Creating the Project  
+## <a name="creating-the-project"></a>Criando o Projeto  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  On the **File** menu, point to **New**, and then click **Project**.  
+2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
+3.  No painel de modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.  
   
-4.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
+4.  Em expandidos **Office/SharePoint** nó, selecione o **suplementos do Office** nó.  
   
-5.  In the list of project templates, select a PowerPoint VSTO Add-in project.  
+5.  Na lista de modelos de projeto, selecione um projeto de suplemento do VSTO do PowerPoint.  
   
-6.  In the **Name** box, type **FirstPowerPointAddIn**.  
+6.  No **nome** , digite **FirstPowerPointAddIn**.  
   
-7.  Click **OK**.  
+7.  Clique em **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the **FirstPowerPointAddIn** project and opens the **ThisAddIn** code file in the editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstPowerPointAddIn** projeto e abrirá o **ThisAddIn** arquivo de código no editor.  
   
-## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Writing Code that Adds Text to Each New Slide  
- Next, add code to the ThisAddIn code file. The new code uses the object model of PowerPoint to add a text box to each new slide. By default, the ThisAddIn code file contains the following generated code:  
+## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Escrevendo código que adiciona o texto para cada novo Slide  
+ Em seguida, adicione código ao arquivo de código ThisAddIn. O novo código usa o modelo de objeto do PowerPoint para adicionar uma caixa de texto para cada novo slide. Por padrão, o arquivo de código da classe ThisAddIn contém o seguinte código gerado:  
   
--   A partial definition of the `ThisAddIn` class. This class provides an entry point for your code and provides access to the object model of PowerPoint. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). The remainder of the `ThisAddIn` class is defined in a hidden code file that you should not modify.  
+-   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do PowerPoint. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
   
--   The `ThisAddIn_Startup` and `ThisAddIn_Shutdown` event handlers. These event handlers are called when PowerPoint loads and unloads your VSTO Add-in. Use these event handlers to initialize your VSTO Add-in when it is loaded, and to clean up resources used by your VSTO Add-in when it is unloaded. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
+-   O `ThisAddIn_Startup` e `ThisAddIn_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o PowerPoint carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar o suplemento do VSTO quando ele é carregado e para limpar os recursos usados pelo seu suplemento do VSTO quando ela é descarregada. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-text-box-to-each-new-slide"></a>To add a text box to each new slide  
+#### <a name="to-add-a-text-box-to-each-new-slide"></a>Para adicionar uma caixa de texto para cada novo slide  
   
-1.  In the ThisAddIn code file, add the following code to the `ThisAddIn` class. This code defines an event handler for the <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> event of the <xref:Microsoft.Office.Interop.PowerPoint.Application> object.  
+1.  No arquivo de código classe ThisAddIn, adicione o seguinte código para o `ThisAddIn` classe. Esse código define um manipulador de eventos para o <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> evento o <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto.  
   
-     When the user adds a new slide to the active presentation, this event handler adds a text box to the top of the new slide, and it adds some text to the text box.  
+     Quando o usuário adiciona um novo slide à apresentação ativa, esse manipulador de eventos adiciona uma caixa de texto à parte superior do novo slide, e ele adiciona um texto à caixa de texto.  
   
-     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]  [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
+     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
+     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  If you are using C#, add the following code to the `ThisAddIn_Startup` event handler. This code is required to connect the `Application_PresentationNewSlide` event handler with the <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> event.  
+2.  Se você estiver usando c#, adicione o seguinte código para o `ThisAddIn_Startup` manipulador de eventos. Esse código é necessária para conectar o `Application_PresentationNewSlide` manipulador de eventos com o <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> evento.  
   
      [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
- To modify each new slide, the previous code examples use the following objects:  
+ Para modificar cada novo slide, os exemplos de código anterior usam os seguintes objetos:  
   
--   The `Application` field of the `ThisAddIn` class. The `Application` field returns an <xref:Microsoft.Office.Interop.PowerPoint.Application> object, which represents the current instance of PowerPoint.  
+-   O `Application` campo o `ThisAddIn` classe. O `Application` campo retorna um <xref:Microsoft.Office.Interop.PowerPoint.Application> objeto que representa a instância atual do PowerPoint.  
   
--   The `Sld` parameter of the event handler for the <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> event. The `Sld` parameter is a <xref:Microsoft.Office.Interop.PowerPoint.Slide> object, which represents the new slide. For more information, see [PowerPoint Solutions](../vsto/powerpoint-solutions.md).  
+-   O `Sld` parâmetro do manipulador de eventos para o <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> evento. O `Sld` parâmetro é um <xref:Microsoft.Office.Interop.PowerPoint.Slide> objeto que representa o novo slide. Para obter mais informações, consulte [soluções PowerPoint](../vsto/powerpoint-solutions.md).  
   
-## <a name="testing-the-project"></a>Testing the Project  
- When you build and run the project, verify that the text box appears in new slides that you add to a presentation.  
+## <a name="testing-the-project"></a>O projeto de teste  
+ Quando você compilar e executa o projeto, verifique se a caixa de texto aparece em novos slides que você adicionar a uma apresentação.  
   
-#### <a name="to-test-the-project"></a>To test the project  
+#### <a name="to-test-the-project"></a>Para testar o projeto  
   
-1.  Press **F5** to build and run your project.  
+1.  Pressione **F5** para compilar e executar seu projeto.  
   
-     When you build the project, the code is compiled into an assembly that is put in the build output folder for the project. Visual Studio also creates a set of registry entries that enable PowerPoint to discover and load the VSTO Add-in, and it configures the security settings on the development computer to enable the VSTO Add-in to run. For more information, see [Building Office Solutions](../vsto/building-office-solutions.md).  
+     Quando você compila o projeto, o código é compilado em um assembly que é colocado na pasta de saída de compilação do projeto. O Visual Studio também cria um conjunto de entradas do registro que permitem o PowerPoint descobrir e carregar o suplemento do VSTO, e ele define as configurações de segurança no computador de desenvolvimento para habilitar o suplemento do VSTO executar. Para obter mais informações, consulte [criando soluções do Office](../vsto/building-office-solutions.md).  
   
-2.  In PowerPoint, add a new slide to the active presentation.  
+2.  No PowerPoint, adicione um novo slide à apresentação ativa.  
   
-3.  Verify that the following text is added to a new text box at the top of the slide.  
+3.  Verifique se o texto a seguir é adicionado a uma nova caixa de texto na parte superior do slide.  
   
-     **This text was added by using code.**  
+     **Este texto foi adicionado por meio de código.**  
   
-4.  Close PowerPoint.  
+4.  Feche o PowerPoint.  
   
-## <a name="cleaning-up-the-project"></a>Cleaning up the Project  
- When you finish developing a project, remove the VSTO Add-in assembly, registry entries, and security settings from your development computer. Otherwise, the VSTO Add-in will run every time you open PowerPoint on the development computer.  
+## <a name="cleaning-up-the-project"></a>O projeto de limpeza  
+ Quando você terminar de desenvolvimento de um projeto, remova o suplemento do VSTO assembly, entradas do registro e as configurações de segurança do seu computador de desenvolvimento. Caso contrário, o suplemento do VSTO será executado toda vez que abrir o PowerPoint no computador de desenvolvimento.  
   
-#### <a name="to-clean-up-your-project"></a>To clean up your project  
+#### <a name="to-clean-up-your-project"></a>Para limpar seu projeto  
   
-1.  In Visual Studio, on the **Build** menu, click **Clean Solution**.  
+1.  No Visual Studio, no **criar** menu, clique em **limpar solução**.  
   
-## <a name="next-steps"></a>Next Steps  
- Now that you have created a basic VSTO Add-in for PowerPoint, you can learn more about how to develop VSTO Add-ins from these topics:  
+## <a name="next-steps"></a>Próximas etapas  
+ Agora que você criou um Add-in básico do VSTO para PowerPoint, você pode aprender mais sobre como desenvolver um suplemento do VSTO com estes tópicos:  
   
--   General programming tasks that you can perform in VSTO Add-ins for PowerPoint. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+-   Tarefas de programação gerais que você pode executar nos suplementos do VSTO para PowerPoint. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Using the object model of PowerPoint. For more information, see [PowerPoint Solutions](../vsto/powerpoint-solutions.md).  
+-   Usando o modelo de objeto do PowerPoint. Para obter mais informações, consulte [soluções PowerPoint](../vsto/powerpoint-solutions.md).  
   
--   Customizing the UI of PowerPoint, for example, by adding a custom tab to the Ribbon or creating your own custom task pane. For more information, see [Office UI Customization](../vsto/office-ui-customization.md).  
+-   Personalizando a interface do usuário do PowerPoint, por exemplo, adicionando uma guia à faixa de opções ou criar seu próprio painel de tarefas personalizadas. Para obter mais informações, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).  
   
--   Building and debugging VSTO Add-ins for PowerPoint. For more information, see [Building Office Solutions](../vsto/building-office-solutions.md).  
+-   Compilando e depurando suplementos do VSTO para PowerPoint. Para obter mais informações, consulte [criando soluções do Office](../vsto/building-office-solutions.md).  
   
--   Deploying VSTO Add-ins for PowerPoint. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
+-   Implantação de suplementos do VSTO para PowerPoint. Para obter mais informações, consulte [implantar uma solução Office](../vsto/deploying-an-office-solution.md).  
   
-## <a name="see-also"></a>See Also  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [PowerPoint Solutions](../vsto/powerpoint-solutions.md)   
- [Office UI Customization](../vsto/office-ui-customization.md)   
- [Building Office Solutions](../vsto/building-office-solutions.md)   
- [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
- [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
+## <a name="see-also"></a>Consulte também  
+ [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Soluções PowerPoint](../vsto/powerpoint-solutions.md)   
+ [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)   
+ [Criando soluções do Office](../vsto/building-office-solutions.md)   
+ [Implantando uma solução do Office](../vsto/deploying-an-office-solution.md)   
+ [Visão geral dos modelos do Office Project](../vsto/office-project-templates-overview.md)  
   
   

@@ -1,73 +1,59 @@
 ---
-title: Shell do Visual Studio | Documentos do Microsoft
+title: Shell do Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 77f226d17b12c97615a885457caa8bd7414872f8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 63b8420b3941114f8edd1e494c8469ae4b81ba79
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-shell"></a>Shell do Visual Studio
-O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é o principal agente de integração do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. O shell fornece a funcionalidade necessária para habilitar os VSPackages compartilhar serviços comuns. Como o objetivo estrutural da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é casaco principal funcionalidade em VSPackages, o shell é uma estrutura para fornecer funcionalidade básica e suporte a comunicação entre seu componente VSPackages.  
+O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é o principal agente de integração em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. O shell fornece a funcionalidade necessária para habilitar VSPackages compartilhar serviços comuns. Como a meta de arquitetura de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é casaco principal funcionalidade em VSPackages, o shell é uma estrutura para fornecer a funcionalidade básica e dar suporte a comunicação cruzada entre seu componente VSPackages.  
   
 ## <a name="shell-responsibilities"></a>Responsabilidades do shell  
- O shell tem as seguintes responsabilidades principais:  
+ O shell tem as seguintes responsabilidades de chave:  
   
--   Elementos básicos de suporte (por meio de interfaces COM) da interface do usuário (IU). Isso inclui barras de ferramentas e menus padrão, janelas filho de interface de documentos múltiplos (MDI), ou quadros de janela de documento e quadros de janela de ferramenta e suporte de encaixe.  
+-   Elementos básicos de suporte (por meio de interfaces COM) da interface do usuário (IU). Esses incluem menus padrão e barras de ferramentas, quadros de janela de documento ou janelas filho de interface de documentos múltiplos (MDI), os quadros de janela de ferramenta e suporte de encaixe.  
   
--   Manter uma lista de todos os documentos abertos em uma tabela de documento (RDT) em execução para coordenar a persistência de documentos e a garantia de que um documento não pode ser aberto em mais de uma forma ou em formas incompatíveis.  
+-   Manter uma lista de execução de todos os documentos abertos em uma tabela de documento (RDT) em execução para coordenar a persistência de documentos e a garantia de que um documento não pode ser aberto em mais de uma forma ou formas incompatível.  
   
 -   Suporte a interface de roteamento de comando e manipulação de comandos, `IOleCommandTarget`.  
   
--   Carregando os VSPackages em momentos apropriados. Carregamento de atraso de um VSPackage é necessário para melhorar o desempenho do shell.  
+-   Carregando VSPackages em momentos apropriados. Um VSPackage de carregamento de atraso é necessário para melhorar o desempenho do shell.  
   
--   Gerenciando determinados serviços compartilhados, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, que fornece a funcionalidade básica do shell, e <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que fornece a funcionalidade básica windowing.</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> </xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  
+-   Gerenciando determinados serviços compartilhados, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, que fornece a funcionalidade básica do shell, e <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que fornece a funcionalidade básica de janelas.  
   
--   Gerenciando os arquivos de solução (. sln). Soluções conter grupos de projetos relacionados, semelhantes aos arquivos de espaço de trabalho (. dsw) no Visual C++ 6.0.  
+-   Gerenciando os arquivos de solução (. sln). As soluções contêm grupos de projetos relacionados, semelhantes aos arquivos de espaço de trabalho (dsw) no Visual C++ 6.0.  
   
--   Seleção de todo o shell de rastreamento, o contexto e moeda. O shell rastreia os seguintes tipos de itens:  
+-   Seleção de todo o shell do controle de contexto e moeda. O shell rastreia os seguintes tipos de itens:  
   
     -   O projeto atual  
   
-    -   O item de projeto atual ou ItemID atual<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy></xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+    -   O item de projeto atual ou ItemID atual<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
     -   A seleção atual para o **propriedades** janela ou`SelectionContainer`  
   
-    -   O contexto de interface do usuário IDs ou CmdUIGuids que controlam a visibilidade das barras de ferramentas, menus e comandos  
+    -   O contexto de interface do usuário IDs ou CmdUIGuids que controlam a visibilidade de comandos, menus e barras de ferramentas  
   
-    -   Os elementos atualmente ativos, como a janela ativa, o documento e o Gerenciador de desfazer  
+    -   Os elementos ativos no momento, como a janela ativa, o documento e o Gerenciador de desfazer  
   
-    -   Os atributos do contexto do usuário que orientam a Ajuda dinâmica  
+    -   Os atributos de contexto de usuário que orientam ajuda dinâmica  
   
- O shell também faz uma mediação comunicação entre serviços atuais e VSPackages instalados. Ele suporta os principais recursos do shell e torna disponíveis para todos os VSPackages integrados no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Esses recursos principais incluem os seguintes itens:  
+ O shell também atua como mediador comunicação entre VSPackages instalados e os serviços atuais. Ele dá suporte a recursos principais do shell e torna disponível para todos os VSPackages integrados no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Esses recursos principais incluem os seguintes itens:  
   
 -   **Sobre** tela inicial e de caixa de diálogo  
   
@@ -77,15 +63,15 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é o princi
   
 -   **Referências** caixa de diálogo  
   
--   **Estrutura de tópicos de documentos** janela  
+-   **Estrutura de tópicos de documento** janela  
   
 -   **Ajuda dinâmica** janela  
   
 -   **Localizar** e **substituir**  
   
--   **Abra o projeto** e **abrir arquivo** caixas de diálogo no **novo** menu  
+-   **Abra o projeto** e **abrir arquivo** em caixas de diálogo o **novo** menu  
   
--   **Opções de** na caixa de diálogo de **ferramentas** menu  
+-   **Opções de** caixa de diálogo de **ferramentas** menu  
   
 -   **Propriedades** janela  
   
@@ -96,8 +82,8 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é o princi
 -   **Caixa de Ferramentas**  
   
 ## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget></xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy></xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>   
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell></xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
- <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell></xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
+ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>   
  [VSPackages](../../extensibility/internals/vspackages.md)

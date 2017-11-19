@@ -1,53 +1,37 @@
 ---
-title: IEnumDebugObjects::GetCount | Documentos do Microsoft
+title: IEnumDebugObjects::GetCount | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugObjects::GetCount
-helpviewer_keywords:
-- IEnumDebugObjects::GetCount method
+f1_keywords: IEnumDebugObjects::GetCount
+helpviewer_keywords: IEnumDebugObjects::GetCount method
 ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 63f5b344347da89c8666f00de76ab73b33f787d9
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 464eca2473518cdc700e0035289a6b601f6fc5d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 Esse método retorna o número de elementos na enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetCount(  
    [out] ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCount(  
    out uint pcelt  
 );  
@@ -58,10 +42,10 @@ int GetCount(
  [out] Retorna o número de elementos na enumeração.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método não é parte da interface comum de enumeração COM que especifica que somente Avançar, Clone, Skip e redefinir precisam ser implementados.  
+ Este método não é parte da interface habitual de enumeração COM que especifica que somente Avançar, Clone, Skip e redefinição precisam ser implementado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

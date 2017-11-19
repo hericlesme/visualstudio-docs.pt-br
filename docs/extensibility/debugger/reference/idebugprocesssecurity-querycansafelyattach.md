@@ -1,60 +1,45 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Documentos do Microsoft
+title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugProcessSecurity::QueryCanSafelyAttach
+helpviewer_keywords: IDebugProcessSecurity::QueryCanSafelyAttach
 ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
-caps.latest.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bd37974453939cb0af7d5a4ff2cd1ff2b5d0315c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0ad6b7ffde868bf6b9dc4f9ef3bab9d9094ab765
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-Esse método permite que o fornecedor de porta exibir um aviso antes do usuário anexar a um processo não é seguro.  
+Esse método permite que o fornecedor de porta exibir um aviso antes do usuário se conecta a um processo seguro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT QueryCanSafelyAttach();  
 ```  
   
-```c#  
+```csharp  
 int QueryCanSafelyAttach();  
 ```  
   
 ## <a name="return-value"></a>Valor de retorno  
- Os valores de retorno são os seguintes:  
+ Os valores de retorno são da seguinte maneira:  
   
--   `S_OK`: Anexar a processo é seguro e nenhuma caixa de diálogo de aviso é mostrada.  
+-   `S_OK`: Anexar a processo é seguro e nenhuma caixa de diálogo de aviso será exibida.  
   
--   `S_FALSE`: Anexando poderia ser um problema de segurança e uma caixa de diálogo com um aviso é mostrada.  
+-   `S_FALSE`: Anexar pode ser um problema de segurança e uma caixa de diálogo com um aviso será exibida.  
   
--   `FAILURE`: Anexar a processo falhará.  
+-   `FAILURE`: Anexar ao processo falhará.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

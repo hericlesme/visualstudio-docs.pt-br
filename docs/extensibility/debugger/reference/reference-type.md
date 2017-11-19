@@ -1,47 +1,31 @@
 ---
-title: REFERENCE_TYPE | Documentos do Microsoft
+title: REFERENCE_TYPE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- REFERENCE_TYPE
-helpviewer_keywords:
-- REFERENCE_TYPE enumeration
+f1_keywords: REFERENCE_TYPE
+helpviewer_keywords: REFERENCE_TYPE enumeration
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3f26e91c87ca5c450f2fe8f5b0f89f7eec19e7ec
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7c5616cea578339f1527a73d03e9d6cb208ec6ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 Especifica o tipo de referência.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_REFERENCE_TYPE {   
    REF_TYPE_WEAK   = 0x0001,  
    REF_TYPE_STRONG = 0x0002  
@@ -49,7 +33,7 @@ enum enum_REFERENCE_TYPE {
 typedef DWORD REFERENCE_TYPE;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_REFERENCE_TYPE {   
    REF_TYPE_WEAK   = 0x0001,  
    REF_TYPE_STRONG = 0x0002  
@@ -64,7 +48,7 @@ public enum enum_REFERENCE_TYPE {
  Especifica uma referência forte. Não pode ser combinado com `REF_TYPE_WEAK`.  
   
 ## <a name="remarks"></a>Comentários  
- Usado como o `dwRefType` membro do [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura.  
+ Usado como o `dwRefType` membro o [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura.  
   
  Passado como um parâmetro para o [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) método.  
   

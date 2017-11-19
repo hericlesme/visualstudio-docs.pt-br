@@ -1,41 +1,26 @@
 ---
-title: IDebugProgram3 | Documentos do Microsoft
+title: IDebugProgram3 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugProgram3 interface
+helpviewer_keywords: IDebugProgram3 interface
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: fe1e3e4d5bcca1feae7f9fe245c57f2b7dd10ffd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2da4dcb4911488bd82c358efc3b8075f1941af6f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-Essa interface representa um programa que está sendo executado em um processo e estende [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) , fornecendo informações de thread.  
+Essa interface representa um programa que está em execução em um processo e que estenda [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornecendo informações de thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -54,7 +39,7 @@ IDebugProgram3 : IDebugProgram3
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Executa o programa. O thread é retornado para fornecer as informações do depurador em qual thread o usuário está exibindo durante a execução.|  
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Executa o programa. O thread é retornado para fornecer as informações do depurador do thread onde o usuário está exibindo durante a execução.|  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

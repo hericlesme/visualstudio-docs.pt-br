@@ -1,54 +1,38 @@
 ---
-title: TEXT_POSITION | Documentos do Microsoft
+title: TEXT_POSITION | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- TEXT_POSITION
-helpviewer_keywords:
-- TEXT_POSITION structure
+f1_keywords: TEXT_POSITION
+helpviewer_keywords: TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ed0adbcfe59bc9bc44e52b3e25751007cc733ff7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 178acde6dbadeb9d87b672582efebe8dcbd71408
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="textposition"></a>TEXT_POSITION
 Descreve o local de linha e coluna no texto especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct _tagTEXT_POSITION {   
    DWORD dwLine;  
    DWORD dwColumn;  
 } TEXT_POSITION;  
 ```  
   
-```c#  
+```csharp  
 public struct TEXT_POSITION {   
    public uint dwLine;  
    public uint dwColumn;  

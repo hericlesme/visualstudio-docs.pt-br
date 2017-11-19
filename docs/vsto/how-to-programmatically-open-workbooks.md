@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Open Workbooks | Microsoft Docs'
+title: 'Como: programaticamente abrir pastas de trabalho | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,41 +14,41 @@ helpviewer_keywords:
 - workbooks, opening
 - Excel [Office development in Visual Studio], opening workbooks
 ms.assetid: 06c0ac87-a2c6-4cc1-87be-39be0cb81c71
-caps.latest.revision: 36
-author: kempb
-ms.author: kempb
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: be53929363f0e984ca006e657de4940b9d075ed2
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: e7768aec2684e95c0201c88713e4a342737ce3cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>How to: Programmatically Open Workbooks
-  The <xref:Microsoft.Office.Interop.Excel.Workbooks> collection in Microsoft Office Excel makes it possible to work with all open workbooks and to open workbooks.  
+# <a name="how-to-programmatically-open-workbooks"></a>Como abrir pastas de trabalho programaticamente
+  O <xref:Microsoft.Office.Interop.Excel.Workbooks> coleção no Microsoft Office Excel torna possível para trabalhar com todas as pastas de trabalho e abrir pastas de trabalho.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-### <a name="to-open-an-existing-workbook"></a>To open an existing workbook  
+### <a name="to-open-an-existing-workbook"></a>Para abrir uma pasta de trabalho existente  
   
-1.  Use the <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> method of the <xref:Microsoft.Office.Interop.Excel.Workbooks> collection, passing in the path to the workbook.  
+1.  Use o <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> método o <xref:Microsoft.Office.Interop.Excel.Workbooks> coleção, passando o caminho para a pasta de trabalho.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]  [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
+     [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This code example requires the following:  
+## <a name="compiling-the-code"></a>Compilando o código  
+ Este exemplo de código requer o seguinte:  
   
--   A workbook named `YourWorkbook.xls` must exist in a directory named `Test` on drive C.  
+-   Uma pasta de trabalho chamada `YourWorkbook.xls` deve existir em um diretório chamado `Test` na unidade C.  
   
-## <a name="see-also"></a>See Also  
- [Working with Workbooks](../vsto/working-with-workbooks.md)   
- [How to: Programmatically Open Text Files as Workbooks](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
- [How to: Programmatically Create New Workbooks](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [How to: Programmatically Save Workbooks](../vsto/how-to-programmatically-save-workbooks.md)   
- [How to: Programmatically Close Workbooks](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>Consulte também  
+ [Trabalhando com pastas de trabalho](../vsto/working-with-workbooks.md)   
+ [Como: abrir programaticamente os arquivos de texto como pastas de trabalho](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
+ [Como: criar programaticamente novas pastas de trabalho](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [Como: programaticamente salvar pastas de trabalho](../vsto/how-to-programmatically-save-workbooks.md)   
+ [Como: programaticamente fechar pastas de trabalho](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Limitações programáticas de itens de Host e controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)   
+ [Visão geral dos Controles de Host e dos Itens de Host](../vsto/host-items-and-host-controls-overview.md)  
   
   

@@ -1,40 +1,24 @@
 ---
-title: IPropertyProxyEESide::CreateReplacementObject | Documentos do Microsoft
+title: IPropertyProxyEESide::CreateReplacementObject | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IPropertyProxyEESide::CreateReplacementObject
-helpviewer_keywords:
-- IPropertyProxyEESide::CreateReplacementObject
+f1_keywords: IPropertyProxyEESide::CreateReplacementObject
+helpviewer_keywords: IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3f718b13d24b576ecf86d5701d3a13dec056b358
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0f0202f017004e69f356b31299f0ed28b55348aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Cria uma cópia de um objeto de dados específicas para o avaliador de expressão (EE).  
@@ -48,7 +32,7 @@ HRESULT CreateReplacementObject(
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateReplacementObject(  
    IEEDataStorage     dataIn,  
    out IEEDataStorage dataOut  
@@ -63,10 +47,10 @@ int CreateReplacementObject(
  [out] Retorna um novo `IEEDataStorage` objeto.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método recebe um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que representa uma matriz de bytes. Normalmente, esse objeto de dados de entrada não é implementado pelo EE. No entanto, o objeto retornado por esse método sempre é implementado pela EE, que permite que o implemente EE o `IEEDataStorage` interface em qualquer classe for desejada.  
+ Esse método é fornecido um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que representa uma matriz de bytes. Normalmente, esse objeto de dados de entrada não é implementado pelo EE. No entanto, o objeto retornado por esse método sempre é implementado por EE, que permite a implementar EE o `IEEDataStorage` interface em qualquer classe for desejada.  
   
  Observe que os dados fornecidos pela entrada `IEEDataStorage` objeto deve ser os mesmos dados em que a saída `IEEDataStorage` objeto.  
   

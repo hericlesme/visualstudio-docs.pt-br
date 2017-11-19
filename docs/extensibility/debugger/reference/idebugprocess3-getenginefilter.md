@@ -1,52 +1,38 @@
 ---
-title: IDebugProcess3::GetEngineFilter | Documentos do Microsoft
+title: IDebugProcess3::GetEngineFilter | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - GetEngineFilter
 - IDebugProcess3::GetEngineFilter
 ms.assetid: ccb7ecb0-f189-4e80-b5b2-221a095e01f5
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 92abcc35c3d8a84ddd24db4e1b1c47bb4ad3c918
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d6b830a06e5d89a4b9decbdf466cb56db52a4e1f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
-Recupera uma matriz de identificadores exclusivos para os mecanismos de depuração disponíveis.  
+Recupera uma matriz de identificadores exclusivos para mecanismos de depuração disponíveis.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetEngineFilter(  
    GUID_ARRAY *pEngineArray  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetEngineFilter(  
    out GUID_ARRAY[] pEngineArray  
 );  
@@ -54,10 +40,10 @@ public int GetEngineFilter(
   
 #### <a name="parameters"></a>Parâmetros  
  `pEngineArray`  
- [out] Referência a uma estrutura que contém identificadores exclusivos para os mecanismos de depuração.  
+ [out] Referência a uma estrutura que contém identificadores exclusivos para mecanismos de depuração.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

@@ -1,47 +1,31 @@
 ---
-title: MODULE_INFO | Documentos do Microsoft
+title: MODULE_INFO | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MODULE_INFO
-helpviewer_keywords:
-- MODULE_INFO structure
+f1_keywords: MODULE_INFO
+helpviewer_keywords: MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 93b749d382d3fadcf50c0a4ae84aa14b200a67aa
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e5d86bf829c904acd56ca9ab37aa94a0f4038214
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Descreve um módulo específico (DLL, EXE ou assembly).  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct tagMODULE_INFO {   
    MODULE_INFO_FIELDS dwValidFields;  
    BSTR               m_bstrName;  
@@ -58,7 +42,7 @@ typedef struct tagMODULE_INFO {
 } MODULE_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct MODULE_INFO {   
    public uint     dwValidFields;  
    public string   m_bstrName;  
@@ -77,7 +61,7 @@ public struct MODULE_INFO {
   
 ## <a name="members"></a>Membros  
  dwValidFields  
- Uma combinação de sinalizadores do [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeração que especifica quais campos estão preenchidos.  
+ Uma combinação de sinalizadores do [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeração que especifica quais campos são preenchidos.  
   
  m_bstrName  
  O nome do módulo.  
@@ -104,16 +88,16 @@ public struct MODULE_INFO {
  A ordem de carregamento do módulo.  
   
  m_TimeStamp  
- A hora em que o arquivo de símbolo foi modificado pela última vez.  
+ A hora em que o arquivo de símbolo foi modificada pela última vez.  
   
  m_bstrUrlSymbolLocation  
- O local do arquivo de símbolo (por exemplo, ".\\") especificado no módulo. Usado como um local inicial para localizar símbolos para um módulo.  
+ O local do arquivo de símbolo (por exemplo, ".\\") especificado no módulo. Usado como um local de partida para localizar símbolos para um módulo.  
   
  m_dwModuleFlags  
  Uma combinação de sinalizadores do [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumeração que descreve o módulo.  
   
 ## <a name="remarks"></a>Comentários  
- Essa estrutura é passada para o [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método onde ele é preenchido.  
+ Essa estrutura é passada para o [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método em que ele é preenchido.  
   
  Essa estrutura corresponde a cada módulo listado no **módulos** janela.  
   

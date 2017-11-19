@@ -1,44 +1,29 @@
 ---
-title: Elemento TemplateGroupID (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento TemplateGroupID (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-caps.latest.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f02d4daf8b686ece738e4d0c9014d6c09213782d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e8f68b3a64fab519e31876d120f223961c10fffc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>Elemento TemplateGroupID (modelos do Visual Studio)
-Especifica o tipo de projeto de um modelo de item aparecerá no. Esse elemento é significativo quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `false`. Quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `true`, um modelo de item estará disponível em todos os tipos de projeto.  
+Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é significativo quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `false`. Quando [ShowByDefault (modelos do Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) é definido como `true`, em seguida, um modelo de item está disponível em todos os tipos de projeto.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -54,7 +39,7 @@ Especifica o tipo de projeto de um modelo de item aparecerá no. Esse elemento �
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -63,7 +48,7 @@ Especifica o tipo de projeto de um modelo de item aparecerá no. Esse elemento �
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
@@ -73,19 +58,19 @@ Especifica o tipo de projeto de um modelo de item aparecerá no. Esse elemento �
 ## <a name="remarks"></a>Comentários  
  `TemplateGroupID`é um elemento.  
   
- O valor da `TemplateGroupID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<número de versão >*\Projects\\) para modelos de filtro que aparecem no **Adicionar Novo Item** caixa de diálogo.  
+ O valor de `TemplateGroupID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<o número de versão >*\Projects\\) para modelos de filtro que aparecem no **Adicionar Novo Item** caixa de diálogo.  
   
 |Valor do Visual C++|Significado|  
 |------------------------|-------------|  
-|Nativo do VC|Usado para projetos nativos. Também o padrão se um tipo de projeto não pode ser determinado.|  
-|Gerenciado por VC|Usado para gerenciado (/ clr) projetos|  
-|VC-Windows|Usado para todos os projetos destinados a plataforma do windows (nativo/gerenciado/armazenamento)|  
-|WinRT nativo-UAP|Usado para projetos de armazenamento do Windows 10|  
+|VC nativo|Usado para projetos nativos. Também o padrão se um tipo de projeto não pode ser determinado.|  
+|VC gerenciados|Usado para gerenciada (/ clr) projetos|  
+|VC-Windows|Usado para todos os projetos para destinar a plataforma do windows (nativo/gerenciado/store)|  
+|WinRT-nativo-UAP|Usado para projetos de armazenamento do Windows 10|  
 |CodeSharing nativo|Usado para projetos de item compartilhado|  
-|6.3 do WinRT-nativo|Usado para projetos Windows 8.1 Store|  
-|WinRT nativo-Phone&6;.3|Usado para projetos do Windows Phone 8.1|  
-|Nativo do WinRT|Usado para projetos de armazenamento do Windows 8.0|  
-|VC-Android|Usado para projetos do Android|  
+|6.3 de nativo de WinRT|Usado para projetos de armazenamento do Windows 8.1|  
+|WinRT nativo-Phone 6.3|Usado para projetos do Windows Phone 8.1|  
+|WinRT nativo|Usado para projetos de armazenamento do Windows 8.0|  
+|VC-Android|Usado em projetos Android|  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

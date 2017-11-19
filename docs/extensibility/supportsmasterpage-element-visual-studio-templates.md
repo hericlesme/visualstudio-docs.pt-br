@@ -1,44 +1,29 @@
 ---
-title: Elemento SupportsMasterPage (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento SupportsMasterPage (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
 helpviewer_keywords:
 - <SupportsMasterPage> element [Visual Studio Templates]
 - SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 62302cb7e64a2099aa438c7f4f275cbbc08cb724
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6fe7edc9bcfe7df774c49afb2543170472d042aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Elemento SupportsMasterPage (modelos do Visual Studio)
-Especifica se a ou não o **Selecionar página mestra** caixa de seleção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
+Especifica se a ou não o **selecionar a página mestra** caixa de seleção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -54,7 +39,7 @@ Especifica se a ou não o **Selecionar página mestra** caixa de seleção está
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -63,17 +48,17 @@ Especifica se a ou não o **Selecionar página mestra** caixa de seleção está
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica os dados que categoriza o modelo e define como ele é exibido no **novo projeto** ou **Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica os dados que categoriza o modelo e define como ele exibe no **novo projeto** ou **Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, indicando se ou não o **Selecionar página mestra** caixa de seleção está habilitada no **Add New Item** caixa de diálogo.  
+ O texto deve ser `true` ou `false`, indicando se ou não o **selecionar a página mestra** caixa de seleção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
   
 ## <a name="remarks"></a>Comentários  
  `SupportsMasterPage` é um elemento opcional. O valor padrão é `false`.  
   
- O `SupportsMasterPage` elemento só está disponível para modelos de item da Web.  
+ O `SupportsMasterPage` elemento só está disponível para modelos de item de Web.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir ilustra os metadados para um projeto Web que inclui suporte para uma página mestra.  

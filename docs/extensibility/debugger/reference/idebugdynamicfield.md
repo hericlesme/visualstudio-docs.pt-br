@@ -1,40 +1,24 @@
 ---
-title: IDebugDynamicField | Documentos do Microsoft
+title: IDebugDynamicField | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDynamicField
-helpviewer_keywords:
-- IDebugDynamicField interface
+f1_keywords: IDebugDynamicField
+helpviewer_keywords: IDebugDynamicField interface
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 27b118b43d5ba801a668480dd0abaa084e7905ae
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5bb632d2ca51090f88b33ea6a8365fa9ac13ba9f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 Essa interface representa um tipo de uma variável.  
@@ -46,13 +30,13 @@ IDebugDynamicField : IDebugField
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- Essa interface é implementada por provedores de símbolo como uma classe base para qualquer tipo que pode ser determinada em tempo de execução. Isso é apenas para código gerenciado.  
+ Essa interface é implementada pelos provedores de símbolo como uma classe base para qualquer tipo que pode ser determinada em tempo de execução. Isso é somente código gerenciado.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Essa interface representa uma classe base da qual interfaces mais especializadas podem ser derivadas.  
+ Essa interface representa uma classe base da qual mais especializadas de interfaces podem ser derivadas.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
- Essa interface não fornece quaisquer métodos diferentes de aquelas herdadas do `IDebugField`.  
+ Esta interface não fornece qualquer métodos diferentes aquelas herdadas do `IDebugField`.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: sh.h  

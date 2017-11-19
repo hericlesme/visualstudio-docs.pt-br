@@ -1,38 +1,23 @@
 ---
-title: Elemento Description (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento Description (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Description element [Visual Studio project templates]
+helpviewer_keywords: Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4e0963e76268a957490a6d7774b6e17dc35266ca
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6618ee5f6d7e110dd712fa6df4fbfb7906d8b46f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="description-element-visual-studio-templates"></a>Elemento de descrição (modelos de projeto do Visual Studio)
 Especifica a descrição do modelo como ele aparece no **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.  
@@ -70,7 +55,7 @@ Especifica a descrição do modelo como ele aparece no **novo projeto** ou **Adi
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  É necessário um valor de texto, a menos que o `Package` e `ID` os atributos são usados.  

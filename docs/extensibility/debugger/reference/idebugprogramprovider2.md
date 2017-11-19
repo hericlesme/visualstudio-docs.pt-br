@@ -1,43 +1,27 @@
 ---
-title: IDebugProgramProvider2 | Documentos do Microsoft
+title: IDebugProgramProvider2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramProvider2
-helpviewer_keywords:
-- IDebugProgramProvider2 interface
+f1_keywords: IDebugProgramProvider2
+helpviewer_keywords: IDebugProgramProvider2 interface
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e1e5b4f953f83ae333cb6d1b058857bf07a50ed4
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e7810e4a88564f0705dd07bcee947f372b1626aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-Essa interface registrado permite a depuração de sessão (SDM) para obter informações sobre os programas que foram "publicado" por meio do Gerenciador de [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interface.  
+Essa interface registrado permite que a depuração de sessão (SDM) para obter informações sobre programas que foram "publicados" por meio do Gerenciador de [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interface.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -46,22 +30,22 @@ IDebugProgramProvider2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DE) implementa essa interface para fornecer informações sobre programas que está sendo depurado. Essa interface é registrada na seção do registro usando a métrica `metricProgramProvider`, conforme descrito em [SDK auxiliares para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+ O mecanismo de depuração (DE) implementa essa interface para fornecer informações sobre programas que está sendo depurado. Essa interface é registrada na seção do registro usando a métrica `metricProgramProvider`, conforme descrito em [auxiliares do SDK para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Chamar COM `CoCreateInstance` funcionar com o `CLSID` do provedor de programa que é obtido do registro. Consulte o exemplo.  
+ Chame COM `CoCreateInstance` funcionar com o `CLSID` do provedor de programa que é obtido do registro. Consulte o exemplo.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtém informações sobre os programas em execução, filtrados de diversas maneiras.|  
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtém informações sobre os programas em execução, filtrados em uma variedade de maneiras.|  
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Obtém um nó de programa, recebe uma ID de processo específico.|  
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Estabelece um retorno de chamada para observar eventos de provedor associados a tipos específicos de processos.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Estabelece uma localidade para quaisquer recursos específicos do idioma necessário por DE.|  
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Estabelece um retorno de chamada para observar os eventos de provedor associados a tipos específicos de processos.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Estabelece uma localidade para todos os recursos específicos de idioma exigidos por DE.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, um processo usa essa interface para obter informações sobre os programas em execução nesse processo.  
+ Normalmente, um processo usa essa interface para obter informações sobre os programas em execução no processo.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  
@@ -72,7 +56,7 @@ IDebugProgramProvider2 : IUnknown
   
 ## <a name="example"></a>Exemplo  
   
-```cpp#  
+```cpp  
 IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)  
 {  
     // This is typically defined globally.  For this example, it is  

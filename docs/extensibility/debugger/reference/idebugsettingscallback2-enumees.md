@@ -1,45 +1,30 @@
 ---
-title: IDebugSettingsCallback2::EnumEEs | Documentos do Microsoft
+title: IDebugSettingsCallback2::EnumEEs | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::EnumEEs
+helpviewer_keywords: IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5167ed353089718ac179f8b138183ef594f6057d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8c916ce59e1a96122d4fc50113ca74cbe5133acf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Enumera os avaliadores de expressão disponível considerando os identificadores de idioma e o fornecedor.  
+Enumera os avaliadores de expressão disponível considerando os identificadores de idioma e fornecedor.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT EnumEEs(  
    DWORD  celtBuffer,  
    GUID*  rgguidLang,  
@@ -48,7 +33,7 @@ HRESULT EnumEEs(
 );  
 ```  
   
-```c#  
+```csharp  
 public int EnumEEs(  
    uint       celtBuffer,  
    ref Guid   rgguidLang,  
@@ -59,19 +44,19 @@ public int EnumEEs(
   
 #### <a name="parameters"></a>Parâmetros  
  `celtBuffer`  
- [in] Número de elementos a `pceltEEs` buffer.  
+ [in] Número de elementos de `pceltEEs` buffer.  
   
  `rgguidLang`  
- [no, out] Identificador exclusivo para a linguagem de programação.  
+ [out no] Identificador exclusivo para a linguagem de programação.  
   
  `rgguidVendor`  
- [no, out] Identificador exclusivo para o fornecedor.  
+ [out no] Identificador exclusivo do fornecedor.  
   
  `pceltEEs`  
- [no, out] Matriz de avaliadores de expressão.  
+ [out no] Matriz de avaliadores de expressão.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

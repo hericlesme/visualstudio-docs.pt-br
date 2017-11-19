@@ -1,42 +1,27 @@
 ---
-title: IDebugFunctionObject2 | Documentos do Microsoft
+title: IDebugFunctionObject2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugFunctionObject2 interface
+helpviewer_keywords: IDebugFunctionObject2 interface
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: dee71fb0ce95de895091ec80dc7afd76021a3af5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4c0a13fead810ffc546488da22ba468e3ea4f323
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão do CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  No Visual Studio 2015, essa maneira de implementar avaliadores de expressão foi preterida. Para obter informações sobre como implementar avaliadores de expressão do CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Representa uma função e aprimora o [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
@@ -50,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
  Um avaliador de expressão (EE) implementa essa interface para representar uma função.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Métodos dessa interface adiar desses **IDebugFunctionObject** das seguintes maneiras:  
+ Métodos desta interface adiar desses **IDebugFunctionObject** das seguintes maneiras:  
   
 -   O **IDebugEvaluate** método usa sinalizadores.  
   
--   O **CreateObject** leva um tempo limite e sinalizadores.  
+-   O **CreateObject** método usa um tempo limite e sinalizadores.  
   
 -   O **CreateStringObjectWithLength** método usa um comprimento.  
   
@@ -63,7 +48,7 @@ IDebugFunctionObject2 : IUnknown
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Cria um objeto que usa um construtor que recebe um valor de tempo limite e de configurações de sinalizador de avaliação.|  
+|[CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject2-createobject.md)|Cria um objeto que usa um construtor que recebe as configurações de sinalizador de avaliação e um valor de tempo limite.|  
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Cria um objeto de cadeia de caracteres que tem o comprimento especificado.|  
 |[Avaliar](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Chama a função e retorna o valor resultante como um objeto.|  
   

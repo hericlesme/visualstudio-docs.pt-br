@@ -1,48 +1,33 @@
 ---
-title: Incluir elemento | Documentos do Microsoft
+title: Incluir elemento | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- Include
+f1_keywords: Include
 helpviewer_keywords:
 - Include element (VSCT XML schema)
 - VSCT XML schema elements, Include
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9a57551660b09d23833da0d9dd41ed16d34aaeb7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 818b56963c4733ef9bcf826b14df5a703c44e429
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="include-element"></a>Incluir elemento
-O elemento Include Especifica um arquivo que pode ser localizado em fornecido incluir o caminho para inserção no arquivo atual.  Todos os símbolos e tipos definidos se tornará parte do resultado compilado.  
+O elemento Include Especifica um arquivo que pode ser localizado no fornecido incluir o caminho para ser inserida no arquivo atual.  Todos os símbolos e tipos definidos farão parte do resultado compilado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```c#  
+```csharp  
 <Include href="stdidcmd.h" />  
 ```  
   
@@ -60,13 +45,13 @@ O elemento Include Especifica um arquivo que pode ser localizado em fornecido in
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|Nenhum.|Nenhum.|  
+|nenhuma.|nenhuma.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam os comandos — ou seja, itens de menu, menus, barras de ferramentas e caixas de combinação — que fornece um VSPackage ao IDE.|  
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos — ou seja, itens de menu, menus, barras de ferramentas e caixas de combinação, que fornece um VSPackage ao IDE.|  
   
 ## <a name="example"></a>Exemplo  
   
@@ -75,4 +60,4 @@ O elemento Include Especifica um arquivo que pode ser localizado em fornecido in
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

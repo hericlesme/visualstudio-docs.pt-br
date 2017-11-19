@@ -1,47 +1,31 @@
 ---
-title: "Função SccCloseProject | Documentos do Microsoft"
+title: "Função SccCloseProject | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccCloseProject
-helpviewer_keywords:
-- SccCloseProject function
+f1_keywords: SccCloseProject
+helpviewer_keywords: SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-caps.latest.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: da9ec8fd9798f468d8062ebeef3b63241d920d94
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d37dc9bff7652856109fb4ec29c8eaa52f1d2507
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="scccloseproject-function"></a>Função SccCloseProject
-Essa função fecha um projeto, marca o final de uma determinada sessão.  
+Essa função fecha um projeto, marca o final de uma sessão em particular.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 SCCRTN SccCloseProject (  
    LPVOID pvContext  
 );  
@@ -57,12 +41,12 @@ SCCRTN SccCloseProject (
 |Valor|Descrição|  
 |-----------|-----------------|  
 |SCC_OK|O projeto foi fechado com êxito.|  
-|SCC_E_PROJNOTOPEN|Nenhum projeto está aberto.|  
+|SCC_E_PROJNOTOPEN|Nenhum projeto estiver aberto.|  
 |SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|  
 |SCC_E_NONSPECIFICERROR|Falha não específica.|  
   
 ## <a name="remarks"></a>Comentários  
- O [SccOpenProject](../extensibility/sccopenproject-function.md) é sempre chamado antes dessa função. Uma chamada para essa função é seguida por uma chamada para o `SccOpenProject` função ou o [SccUninitialize](../extensibility/sccuninitialize-function.md), que termina a conexão ao sistema de controle de origem completamente.  
+ O [SccOpenProject](../extensibility/sccopenproject-function.md) é sempre chamado antes que essa função. Uma chamada para essa função é seguida por uma chamada para o `SccOpenProject` função ou o [SccUninitialize](../extensibility/sccuninitialize-function.md), que termina a conexão ao sistema de controle de origem completamente.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)   

@@ -1,47 +1,32 @@
 ---
-title: s_taskIdCounter campo | Documentos do Microsoft
+title: s_taskIdCounter campo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- m_taskIdCounter field, Task class [.NET Framework debug engines]
+helpviewer_keywords: m_taskIdCounter field, Task class [.NET Framework debug engines]
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: fd78ecbb80bf1cf2bd810b865084186ec5e0c0d0
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fd1f8bd45cb905b6b5efa5a6bce56f71d8418818
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="staskidcounter-field"></a>s_taskIdCounter campo
-O próximo identificador disponível para um <xref:System.Threading.Tasks.Task>objeto.</xref:System.Threading.Tasks.Task>  
+O próximo identificador disponível para um <xref:System.Threading.Tasks.Task> objeto.  
   
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName></xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (em mscorlib.dll)  
   
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida idioma intermediário comum (CIL).  
+ Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -52,4 +37,4 @@ O próximo identificador disponível para um <xref:System.Threading.Tasks.Task>o
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="see-also"></a>Consulte também  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

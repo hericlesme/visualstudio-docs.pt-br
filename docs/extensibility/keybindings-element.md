@@ -1,44 +1,29 @@
 ---
-title: Elemento KeyBindings | Documentos do Microsoft
+title: "Elemento de associações | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- KeyBindings
+f1_keywords: KeyBindings
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9903e3154cfab3189a40f3a6b6cefb25b78ab34b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ff72a2a7acf63dea678aad0cda4cdca196ffc14f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="keybindings-element"></a>Elemento KeyBindings
-O elemento KeyBindings agrupa elementos KeyBinding e outros agrupamentos KeyBindings.  
+# <a name="keybindings-element"></a>Elemento de associações
+O elemento de associações de grupos de elementos KeyBinding e outros agrupamentos de associações.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -63,13 +48,13 @@ O elemento KeyBindings agrupa elementos KeyBinding e outros agrupamentos KeyBind
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |[Elemento KeyBinding](../extensibility/keybinding-element.md)|Especifica os atalhos de teclado para os comandos.|  
-|[KeyBindings](../extensibility/keybindings-element.md)|Agrupa KeyBinding elementos e outros agrupamentos KeyBindings.|  
+|[Associações](../extensibility/keybindings-element.md)|Agrupa elementos de KeyBinding e outros agrupamentos de associações.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam os comandos.|  
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos.|  
   
 ## <a name="example"></a>Exemplo  
   
@@ -84,4 +69,4 @@ O elemento KeyBindings agrupa elementos KeyBinding e outros agrupamentos KeyBind
   
 ## <a name="see-also"></a>Consulte também  
  [Elemento KeyBinding](../extensibility/keybinding-element.md)   
- [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

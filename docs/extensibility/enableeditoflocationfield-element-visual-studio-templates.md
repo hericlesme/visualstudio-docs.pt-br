@@ -1,41 +1,26 @@
 ---
-title: Elemento EnableEditOfLocationField (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento EnableEditOfLocationField (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- EnableEditOfLocationField (Visual Studio project templates)
+helpviewer_keywords: EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 620243fa3c764ed5d6b045f240cbf5b10c4bdedb
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 99916d3affa41d90c9fcfb912e2d3f94c743d87c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelos do Visual Studio)
-Especifica se o usuário pode editar o campo local.  
+Especifica se o usuário pode editar o campo de local.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -60,15 +45,15 @@ Especifica se o usuário pode editar o campo local.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, indicando se o usuário pode editar o **local** caixa de texto o **novo projeto** caixa de diálogo.  
+ O texto deve ser `true` ou `false`, indicando se o usuário pode editar o **local** caixa de texto a **novo projeto** caixa de diálogo.  
   
 ## <a name="remarks"></a>Comentários  
- `EnableEditOfLocationField` é um elemento opcional. O valor padrão é `true`, que permite que o usuário edite o valor de **local** caixa de texto o **novo projeto** caixa de diálogo.  
+ `EnableEditOfLocationField` é um elemento opcional. O valor padrão é `true`, que permite que o usuário edite o valor de **local** caixa de texto a **novo projeto** caixa de diálogo.  
   
  No **novo projeto** caixa de diálogo, o **local** caixa de texto Especifica o diretório em que um novo projeto é salvo.  
   

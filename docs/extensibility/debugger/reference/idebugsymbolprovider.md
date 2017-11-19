@@ -1,43 +1,27 @@
 ---
-title: IDebugSymbolProvider | Documentos do Microsoft
+title: IDebugSymbolProvider | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugSymbolProvider
-helpviewer_keywords:
-- IDebugSymbolProvider interface
+f1_keywords: IDebugSymbolProvider
+helpviewer_keywords: IDebugSymbolProvider interface
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bb3f8a9c41e321c8e34e659c3e327b209d515eb8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 33958c7159c6348aca696e295deb245031e904d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-Essa interface representa um provedor de símbolo que fornece tipos, retorná-las como campos e símbolos.  
+Essa interface representa um provedor de símbolo que fornece tipos, retornando-las como campos e símbolos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -46,10 +30,10 @@ IDebugSymbolProvider : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- Um provedor de símbolo deve implementar essa interface para fornecer o símbolo e digite as informações para um avaliador de expressão.  
+ Um provedor de símbolo deve implementar essa interface para fornecer o símbolo e informações para um avaliador de expressão de tipo.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Essa interface é obtida por meio do COM `CoCreateInstance` função (por provedores de símbolo não gerenciado) ou carregando apropriado gerenciados assembly de código e instanciar o provedor de símbolo com base nas informações encontradas no assembly. O mecanismo de depuração instancia o provedor de símbolo para trabalhar em conjunto com o avaliador de expressão. Veja o exemplo de uma abordagem para criar uma instância dessa interface.  
+ Essa interface é obtida por meio do COM `CoCreateInstance` função (por provedores de símbolo não gerenciado) ou carregando apropriada gerenciados assembly de código e criando o provedor de símbolo com base nas informações encontradas no assembly. O mecanismo de depuração instancia o provedor de símbolo para trabalhar em conjunto com o avaliador de expressão. Consulte o exemplo para uma abordagem para instanciar essa interface.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  A tabela a seguir mostra os métodos de `IDebugSymbolProvider`.  
@@ -68,11 +52,11 @@ IDebugSymbolProvider : IUnknown
 |[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtém o campo que representa um nome de método totalmente qualificado.|  
 |[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtém o tipo de campo de classe que representa um nome de classe totalmente qualificado.|  
 |[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Cria um enumerador para namespaces associado ao endereço de depuração.|  
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Mapeia um nome de símbolo em um tipo de símbolo.|  
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtém o endereço de depuração que segue um endereço específico de depuração em um método.|  
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Mapeia um nome de símbolo para um tipo de símbolo.|  
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtém o endereço de depuração que segue um endereço de depuração fornecido em um método.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa interface mapeia posições de documento em endereços de depuração e vice-versa.  
+ Essa interface mapeia as posições de documento em endereços de depuração e vice-versa.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: sh.h  
@@ -82,9 +66,9 @@ IDebugSymbolProvider : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo mostra como criar uma instância do provedor de símbolo, dado seu GUID (um mecanismo de depuração deve saber esse valor).  
+ Este exemplo mostra como instanciar o provedor de símbolo, dado seu GUID (um mecanismo de depuração deve conhecer esse valor).  
   
-```cpp#  
+```cpp  
 // A debug engine uses its own symbol provider and would know the GUID  
 // of that provider.  
 IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)  
@@ -121,4 +105,4 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Interfaces de provedor de símbolo](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+ [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

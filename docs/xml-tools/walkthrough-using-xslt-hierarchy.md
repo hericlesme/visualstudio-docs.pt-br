@@ -1,33 +1,33 @@
 ---
-title: "Walkthrough: Using XSLT Hierarchy | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Passo a passo: Usando a hierarquia XSLT | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
-caps.latest.revision: 2
-caps.handback.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b0cd7d0567f12a7f1d57bdea765cbf9eb555dd8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Walkthrough: Using XSLT Hierarchy
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML.  Uma folha de estilos XSLT frequentemente usa `includes` e instruções de `imports` .  A compilação parte da folha de estilos principal, mas quando você verá um erro no resultado de criar uma folha de estilos XSLT, o erro pode vir de uma fonte diferente da folha de estilos principal.  Corrigir o erro ou editar a folha de estilos podem exigir acesso incluiu ou importaram folhas de estilos.  Percorrer de folha de estilo no depurador pode abrir folhas de estilo embutidas e importados, e você pode querer adicionar um ponto de interrupção em algum ponto de uma ou mais das folhas de estilo embutidas.  
+# <a name="walkthrough-using-xslt-hierarchy"></a>Passo a passo: Usando a hierarquia XSLT
+A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML. Uma folha de estilos XSLT frequentemente usa `includes` e instruções de `imports` . A compilação parte da folha de estilos principal, mas quando você verá um erro no resultado de criar uma folha de estilos XSLT, o erro pode vir de uma fonte diferente da folha de estilos principal. Corrigir o erro ou editar a folha de estilos podem exigir acesso incluiu ou importaram folhas de estilos. Percorrer de folha de estilo no depurador pode abrir folhas de estilo embutidas e importados, e você pode querer adicionar um ponto de interrupção em algum ponto de uma ou mais das folhas de estilo embutidas.  
   
- Outro cenário onde a ferramenta da hierarquia XSLT pode ser útil é colocando pontos de interrupção nas regras de modelo interno.  As regras de modelo são modelos especiais gerados para cada modo de folha de estilos e chamados por `xsl:apply-templates` quando nenhum outro modelo corresponde ao nó.  Para implementar a depuração em regras de modelos internos, o depurador XSLT gerencia o arquivo com as regras na pasta temporária e compilar\-las juntamente com a folha de estilos principal.  Sem entrar no código de qualquer `xsl:apply-template`, pode ser difícil localizar as folhas de estilos que foram incluídas na folha de estilos principal ou localizar e abrir a folha de estilos com as regras de modelo interno.  
+ Outro cenário onde a ferramenta da hierarquia XSLT pode ser útil é colocando pontos de interrupção nas regras de modelo interno. As regras de modelo são modelos especiais gerados para cada modo de folha de estilos e chamados por `xsl:apply-templates` quando nenhum outro modelo corresponde ao nó. Para implementar a depuração em regras de modelos internos, o depurador XSLT gerencia o arquivo com as regras na pasta temporária e compilar-las juntamente com a folha de estilos principal. Sem entrar no código de qualquer `xsl:apply-template`, pode ser difícil localizar as folhas de estilos que foram incluídas na folha de estilos principal ou localizar e abrir a folha de estilos com as regras de modelo interno.  
   
  O exemplo neste tópico demonstra a depuração em uma folha de estilos referenciada.  
   
-### Título do procedimento  
+### <a name="procedure-title"></a>Título do procedimento  
   
-1.  Abrir um documento XML no Visual Studio.  Este exemplo usa o seguinte documento de `collection.xml` .  
+1.  Abrir um documento XML no Visual Studio. Este exemplo usa o seguinte documento de `collection.xml` .  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -112,7 +112,7 @@ A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML
   
 5.  Inicie a depuração.  
   
-6.  Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a etapa no botão.  Observe que a depuração pode ser continuada na folha de estilos referenciada.  A hierarquia é visível e o designer o caminho correto.  
+6.  Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a etapa no botão. Observe que a depuração pode ser continuada na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.  
   
-## Consulte também  
- [Walkthrough: XSLT Profiler](../xml-tools/walkthrough-xslt-profiler.md)
+## <a name="see-also"></a>Consulte também  
+ [Passo a passo: Criador de Perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)

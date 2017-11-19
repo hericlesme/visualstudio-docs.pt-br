@@ -1,47 +1,31 @@
 ---
-title: SEEK_START | Documentos do Microsoft
+title: SEEK_START | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SEEK_START
-helpviewer_keywords:
-- SEEK_START enumeration
+f1_keywords: SEEK_START
+helpviewer_keywords: SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 50426dea5f7304e644229e4f249dccd297c939bd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 10937c4a5078574f7658bc54f2508b576209f9d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="seekstart"></a>SEEK_START
-Especifica a posição na qual iniciar a busca em um fluxo de desmontagem.  
+Especifica a posição da qual iniciar a busca em um fluxo de desmontagem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
@@ -52,7 +36,7 @@ enum enum_SEEK_START {
 typedef DWORD SEEK_START;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
@@ -64,22 +48,22 @@ public enum enum_SEEK_START {
   
 ## <a name="members"></a>Membros  
  SEEK_START_BEGIN  
- Inicia a busca no início do documento atual.  
+ Inicia a pesquisa no início do documento atual.  
   
  SEEK_START_END  
- Inicia a busca no final do documento atual.  
+ Inicia a pesquisa no final do documento atual.  
   
  SEEK_START_CURRENT  
  Inicia a busca na posição atual do documento atual.  
   
  SEEK_START_CODECONTEXT  
- Inicia a busca no contexto do código específico do documento atual.  
+ Inicia a pesquisa no contexto do código fornecido do documento atual.  
   
  SEEK_START_CODELOCID  
- Inicia a busca no identificador de local do código fornecido. Identificadores de localização de código são obtidos chamando [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
+ Inicia a busca no identificador de local de código fornecido. Identificadores de local de código são obtidos chamando [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
   
 ## <a name="remarks"></a>Comentários  
- Passada como um argumento para o [busca](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) método.  
+ Passado como um argumento para o [busca](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  
