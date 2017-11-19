@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - managed package framework, creating Tools Options pages
 - Tools Options pages [Visual Studio SDK], creating using managed package framework
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
-caps.latest.revision: 29
+caps.latest.revision: "29"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f6329950b3af0b0ec44347ad9a85124ee7192439
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6ed61dbc745b00f5f6f0beeba5aa38c3d316f98f
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="creating-options-pages"></a>Criando páginas de opções
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estrutura de pacote gerenciado, as classes derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> estender o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE adicionando **opções** páginas no **ferramentas** menu.  
@@ -81,13 +66,15 @@ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estrutura de pac
  A classe a seguir define uma página de opções "hello world" mínimo. Quando aberto, o usuário pode definir o público `HelloWorld` propriedade em uma grade de propriedade.  
   
 ### <a name="code"></a>Código  
- [!code-csharp[N º 11 do UI_UserSettings_ToolsOptionPages](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages n º 11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
+ [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
   
 ### <a name="description"></a>Descrição  
  Aplicar o seguinte atributo para a classe de pacote disponibiliza as opções de página quando o pacote for carregado. Os números são arbitrários IDs de recurso para a categoria e a página e o valor booliano no final Especifica se a página dá suporte à automação.  
   
 ### <a name="code"></a>Código  
- [!code-csharp[UI_UserSettings_ToolsOptionPages #07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages #07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
+ [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
   
 ### <a name="description"></a>Descrição  
  O manipulador de eventos a seguir exibe um resultado, dependendo do valor da propriedade definida na página de opções. Ele usa o <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> método com o resultado convertido explicitamente no tipo de página de opção personalizada para acessar as propriedades expostas pela página.  
@@ -95,7 +82,8 @@ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estrutura de pac
  No caso de um projeto gerado pelo modelo de pacote, chame essa função do `MenuItemCallback` função para anexá-lo para o comando padrão é adicionada para o **ferramentas** menu.  
   
 ### <a name="code"></a>Código  
- [!code-csharp[UI_UserSettings_ToolsOptionPages #08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages #08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
+ [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
   
 ## <a name="see-also"></a>Consulte também  
  [Opções e configurações de usuário de extensão](../../extensibility/extending-user-settings-and-options.md)   

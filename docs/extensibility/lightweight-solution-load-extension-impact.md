@@ -1,99 +1,75 @@
 ---
-title: "Carga de solução leve (LSL) | Documentos do Microsoft"
-ms.custom: 
-ms.date: 01/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- VSPackages, lightweight solution load
-- VSPackages, fast solution load
-ms.assetid: 0a71d91e-dc71-4d6b-bbfe-9e4ecd9e5fd1
-caps.latest.revision: 1
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 28957abccc03001546038da10cf4ff7bbe21f63e
-ms.lasthandoff: 02/22/2017
-
+redirect_url: /visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk/
+ms.openlocfilehash: 5706797ed88dce5b2f481b17d99e9501b960ddca
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/15/2017
+---
+título: "carga de solução leve (LSL) | Microsoft Docs"Custom:" "MS. Date: Reviewer" 17/01/2017":" "MS. Suite:" "MS. Technology: 
+  - "sdk de ide vs" tgt_pltfrm: "" MS. Topic: "artigo" helpviewer_keywords: 
+  - "Carga de solução leve VSPackages"
+  - "VSPackages, rápido carregamento da solução" MS. AssetID: 0a71d91e-dc71-4d6b-bbfe-9e4ecd9e5fd1 caps.latest.revision: 1 autor: author "gregvanl": "gregvanl" manager: ghogen
 ---
 # <a name="lightweight-solution-load-lsl"></a>Carga de solução leve (LSL)
 
-## <a name="background-information-on-lsl"></a>Informações gerais sobre LSL
+## <a name="background-information-on-lsl"></a>Informações básicas sobre LSL
 
-Solução leve de carga é um novo recurso em 2017 VS que reduzirá significativamente o tempo de carregamento de solução, permitindo que você seja mais produtivo rapidamente. Quando LSL está habilitado, Visual Studio não será totalmente carregado projetos até começar a trabalhar com eles.
+Solução leve de carga é um novo recurso no VS de 2017 que reduzirá significativamente o tempo de carregamento da solução, permitindo que você possa ser mais produtivo rapidamente. Quando LSL está habilitado, o Visual Studio não totalmente carregará projetos até começar a trabalhar com eles.
 
-LSL pode afetar extensões do Visual Studio. Extensões cujos recursos dependem de um projeto a ser carregado podem não funcionar ou funcionem corretamente sem seguir as diretrizes detalhadas neste documento.
+LSL pode afetar as extensões do Visual Studio. Extensões cujos recursos dependem de um projeto a ser carregado podem não funcionar ou funcionem corretamente sem seguir as orientações detalhadas neste documento.
 
 Para obter mais informações sobre LSL, use os links a seguir:
 
 * [Blog de carga de solução leve](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15)
-* Dúvidas? Entre em contato conosco em[lslsupport@microsoft.com](mailto:lslsupport@microsoft.com)
+* Perguntas? Entre em contato conosco em[lslsupport@microsoft.com](mailto:lslsupport@microsoft.com)
 
-## <a name="enable-the-setting-to-load-projects-in-deferred-mode"></a>Habilitar a configuração para carregar projetos no modo "adiado"
+## <a name="enable-the-setting-to-load-projects-in-deferred-mode"></a>Habilitar a configuração para carregar os projetos no modo "adiado"
 
 1. Feche qualquer solução atualmente aberta.
-2. Vá para **ferramentas** > **opção** > **projetos e soluções** > **geral** página de configurações.
-3. Verifique o **carga de solução leve** caixa para habilitar a configuração.
+2. Vá para **ferramentas** > **opção** > **projetos e soluções** > **geral** configurações página.
+3. Verifique o **carga solução leve** caixa para habilitar a configuração.
 
-Quando uma solução é aberta com a configuração acima ativada, o IDE mostra um modo de exibição normal dos projetos, mas os projetos não são carregados.
+Quando uma solução é aberta com a configuração acima ativada, o IDE mostra uma exibição normal dos projetos, mas os projetos não são carregados.
 
-## <a name="differences-between-deferred-load-and-regular-load-of-projects"></a>Diferenças entre carregamento diferido e carga regular de projetos
+## <a name="differences-between-deferred-load-and-regular-load-of-projects"></a>Diferenças entre carregamento adiado e carga regular de projetos
 
-Com a carga de solução leve, projetos não são carregados quando abrir uma solução. Esses "projetos adiada," uma hierarquia de stub é criada. O Gerenciador de soluções mostra a exibição esperada com ícones e nomes de projetos, não há nenhuma indicação de interface do usuário que alguns ou todos os projetos estão em "modo adiado".
+Com a carga de solução leve, projetos não são carregados quando abrir uma solução. Para esses "projetos adiados", uma hierarquia de stub é criada. O Gerenciador de soluções mostra a exibição esperada com ícones e nomes de projetos, não há nenhuma indicação de interface do usuário são alguns ou todos os projetos no "modo adiado".
 
-Com LSL habilitado, extensões não podem esperar que os projetos necessários já totalmente sejam carregados quando uma operação é disparada. Os chamadores precisam verificar se eles têm uma dependência em projetos carregados. Se uma extensão requer informações de um projeto adiada, a extensão faça o seguinte:
+Com LSL habilitado, extensões não podem esperar que projetos necessários já totalmente são carregados quando uma operação é disparada. Os chamadores precisam verificar se eles têm uma dependência de projetos carregados. Se uma extensão requer informações de um projeto adiada, a extensão de fazer o seguinte:
 
 1. Carregar os projetos conforme necessário.
-2. Use o novo **APIs do espaço de trabalho** para obter informações de um projeto adiado sem carregá-lo.
+2. Use a nova **APIs do espaço de trabalho** para obter informações de um projeto adiado sem carregá-lo.
 
-O novo **APIs do espaço de trabalho** Permitir extensões obter informações, como o projeto de um arquivo de origem e todos os arquivos de origem para um projeto específico, de um projeto adiado. Em alguns casos, apenas um conjunto limitado de projetos precisa ser carregado. A opção certa é um equilíbrio entre a frequência das operações, facilidade de abordagens alternativas e a experiência geral do usuário.
+O novo **APIs do espaço de trabalho** Permitir extensões obter informações, como o projeto de proprietário de um arquivo de origem e todos os arquivos de origem para um projeto especificado, de um projeto adiado. Em alguns casos, somente um conjunto limitado de projetos precisam ser carregados. A opção certa é um equilíbrio entre a frequência das operações, facilidade de abordagens alternativas e a experiência geral do usuário.
 
-Todos os projetos e carga de solução relacionados a eventos são disparados ainda no modo LSL. Isso permite que componentes obter o comportamento esperado do VS e se comportam da mesma maneira como quando os projetos são carregados. O carregamento do projeto relacionados ao trabalho realizado durante a solução aberta é drasticamente reduzido embora.
+Todos os projetos e carga de solução relacionadas a eventos são disparados ainda no modo LSL. Isso permite que os componentes obter o comportamento esperado do VS e se comportam da mesma maneira como quando os projetos são carregados. O carregamento do projeto relacionadas ao trabalho durante a solução aberta é drasticamente reduzido embora.
 
-## <a name="ui-requirements-and-changes"></a>Requisitos de interface do usuário e alterações
+## <a name="ui-requirements-and-changes"></a>As alterações e os requisitos de interface do usuário
 
-Toda interface do usuário deve tratar carregados e adiados projetos como iguais. Isso significa que todas as ações que podem ser executadas em um projeto carregado devem ser aplica a projetos adiados, com algumas exceções. Para ajudar a recursos de fazer isso, há alterações algumas APIs de plataforma existentes, bem como a introdução de novas APIs.
+Toda a UI deve tratar projetos carregados e adiados como iguais. Isso significa que todas as ações que podem ser executadas em um projeto carregado devem ser aplicáveis aos projetos adiados, com algumas exceções. Para ajudar a recursos de fazer isso, há alterações para algumas APIs de plataforma existentes, bem como a introdução de novas APIs.
 
-### <a name="expectations-for-ui"></a>Expectativas para a interface do usuário
+### <a name="expectations-for-ui"></a>Expectativas de interface do usuário
 
-1. Recursos devem mostrar que nenhum visual diferenças dependendo se projetos forem carregados ou adiados.
+1. Recursos devem mostrar que nenhum visual diferenças dependendo se os projetos são carregados ou adiados.
 2. Qualquer listagem ou enumeração sobre os projetos da solução carregada deve incluir projetos adiados.
 3. Qualquer ação disponível em um projeto carregado deve estar disponível em um projeto adiado.
-4. Recursos deve projetos de solicitação para carregar somente quando:
-  * Não há interação direta do usuário com um recurso. Não carregar preventivamente projetos.
-  * Um gesto "Ver mais resultados" é feito pelo usuário. Veja abaixo dessa diretriz de interface do usuário.
-  * Somente o projeto totalmente carregado pode ser usado para satisfazer a ação. Usar LSL e APIs abertas do projeto sempre que possível e enviar a solicitação de recurso pede quando a funcionalidade está ausente.
+4. Recursos deve projetos de solicitação para carregar apenas quando:
+  * Não há interação direta com um recurso. Não carregar preventivamente projetos.
+  * Um gesto "Ver mais resultados" é feito pelo usuário. Consulte abaixo para essa diretriz de interface do usuário.
+  * Somente o projeto totalmente carregado pode ser usado para satisfazer a ação. Usar LSL e APIs de projeto aberto sempre que possível e enviar a solicitação de recurso pede quando a funcionalidade está ausente.
 
-### <a name="changes-in-platform-apis-to-help-drive-ui"></a>Alterações na plataforma de APIs para ajudar a levar a interface do usuário
+### <a name="changes-in-platform-apis-to-help-drive-ui"></a>Alterações na plataforma APIs para ajudar a conduzir da interface do usuário
 
-1. Novas APIs são fornecidas para perguntar a solução se ele foi aberto no modo de carregamento da solução leve e quantos projetos estão em um estado adiado.
+1. Novas APIs são fornecidos para solicitar a solução se ele foi aberto no modo de carregamento da solução leve e como vários projetos estão em um estado adiado.
 2. Novo evento é fornecido para quando todos os projetos adiados são carregados na solução.
-3. Novas APIs são fornecidas para solicitar um projeto se ele é adiado.
-4. APIs existentes são atualizados para incluir projetos adiados quando se pede para projetos carregados.
-5. APIs existentes são atualizados para express a solução é totalmente carregado após a solução for aberta.
+3. Novas APIs são fornecidos para solicitar um projeto que se é adiada.
+4. APIs existentes são atualizados para incluir projetos adiados na solicitação de projetos carregados.
+5. APIs existentes são atualizados para express a solução é totalmente carregado após a solução é aberta.
 
 ### <a name="how-to-add-see-more-results-for-a-feature"></a>Como adicionar "Ver mais resultados" para um recurso.
 
-Considere o impacto dos projetos adiados recursos que executam uma consulta no conteúdo de projetos. Em algumas situações, recursos podem obter os resultados de sua consulta de LSL e APIs do espaço de trabalho para um projeto adiado. Em outros casos, limitações do recurso exigem projetos a serem carregados. Ambas as situações devem fornecer um novo gesto "Ver mais resultados" que permite aos usuários carregar totalmente projetos e consultar novamente. Esse gesto habilita recursos fornecer uma melhor aproximação quando há projetos adiados ao dar ao usuário uma maneira de obter o resultado perfeito quando projetos são de fato carregados.
+Recursos que executam uma consulta no conteúdo de projetos devem considerar o impacto de projetos adiados. Em algumas situações, recursos podem obter os resultados de sua consulta de LSL e APIs de espaço de trabalho para um projeto adiado. Em outros casos, as limitações de um recurso exigem projetos a serem carregadas. Essas duas situações devem fornecer um novo gesto "Ver mais resultados" que permite aos usuários carregar totalmente projetos e consulte novamente. Esse gesto habilita recursos dar uma aproximação melhor quando há adiados projetos ao mesmo tempo, dar ao usuário uma maneira de obter o resultado perfeito quando projetos são de fato carregados.
 
 O algoritmo geral de recursos deve ser:
 
@@ -134,7 +110,7 @@ public void OnClick_SeeMoreResults()
 }
 ```
 
-### <a name="when-the-query-is-performed-over-the-whole-solution"></a>Quando a consulta é executada ao longo de toda a solução
+### <a name="when-the-query-is-performed-over-the-whole-solution"></a>Quando a consulta é executada em toda a solução
 
 ```csharp
 // Requires Microsoft.VisualStudio.Shell.Interop.15.0.DesignTime.dll
@@ -150,7 +126,7 @@ public void Query()
     var solution = // the solution
     object deferredCount = 0;
     int hr = ((IVsSolution)solution).GetProperty((int)__VSPROPID7.VSPROPID_DeferredProjectCount, out deferredCount);
-    if (ErrorHandler.Succeeded(hr) && ((uint)deferredCount > 0))
+    if (ErrorHandler.Succeeded(hr) && ((int)deferredCount > 0))
     {
         ShowSeeMoreResults();
     }
@@ -173,21 +149,21 @@ public void OnClick_SeeMoreResults()
 }
 ```
 
-## <a name="api-changes"></a>Alterações na API
+## <a name="api-changes"></a>Alterações de API
 
 ### <a name="new-api"></a>Nova API
 
 IVsSolution7.IsSolutionLoadDeferred (out bool adiada)
 
-Retornará true se a solução atual foi carregada no modo adiado. Observe que se a solução inicialmente foi carregada no modo adiado, mesmo se todos os projetos adiados, eventualmente, são carregados na sessão atual (devido à gestos do usuário explícito ou forçado por operações), essa propriedade ainda retornará true.
+Retorna VERDADEIRO se a solução atual foi carregada no modo adiado. Observe que, se a solução inicialmente foi carregada no modo adiado, mesmo se todos os projetos adiados, eventualmente, são carregados na sessão atual (devido à gestos explícita do usuário ou forçada por operações), essa propriedade ainda retornará true.
 
 __VSPROPID7. VSPROPID_DeferredProjectCount
 
-Retorna a contagem de projetos atualmente no modo adiado. Esta propriedade terá um valor no intervalo [0, VSPROPID_ProjectCount].
+Retorna a contagem de projetos atualmente no modo adiado. Essa propriedade tem um valor no intervalo [0, VSPROPID_ProjectCount].
 
 __VSHPROPID9. VSHPROPID_IsDeferred
 
-Retorna VERDADEIRO se uma hierarquia de projeto estiver no estado de carregamento adiada.
+Retorna VERDADEIRO se uma hierarquia de projeto estiver no estado de carregamento adiado.
 
 __VSENUMPROJFLAGS3 com valores EPF_DEFERRED e EPF_NOTDEFERRED
 
@@ -197,18 +173,18 @@ Esses sinalizadores podem ser passados para [IVsSolution.GetProjectEnum()](https
 
 IVsSolutionEvents7.OnAfterLoadAllDeferredProjects()
 
-Esse evento é gerado depois que todos os projetos adiados foram carregados. Neste ponto, VSPROPID_DeferredProjectCount é igual a 0. Observe que este evento não é gerado como parte da carga de solução e não pode ser gerado de uma sessão. Ele só é acionado quando todos os projetos adiados são carregados.
+Esse evento é gerado depois que todos os projetos adiados tem sido carregados. Neste ponto, VSPROPID_DeferredProjectCount é igual a 0. Observe que este evento não é gerado como parte da carga de solução e não pode ser gerado em todos os em uma sessão. Ele só é acionado quando e se todos os projetos adiados são carregados.
 
-### <a name="changes-to-existing-api"></a>Alterações para a API existente
+### <a name="changes-to-existing-api"></a>Alterações no API existente
 
 * Passando [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_LOADEDINSOLUTION para [IVsSolution.GetProjectEnum()](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivssolution.getprojectenum.aspx) retorna adiada projetos.
 * Passando [__VSENUMPROJFLAGS](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vsenumprojflags.aspx). EPF_UNLOADEDINSOLUTION não retorna projetos adiados.
-* [KnownUIContexts.SolutionExistsAndFullyLoadedContext](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.knownuicontexts.solutionexistsandfullyloadedcontext.aspx) é definido como true na solução aberta. Projetos adiados são tratados como carregados para esse contexto é definido muito anterior no modo de não-LSL.
-* [__VSPROPID](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vspropid.aspx). VSPROPID_ProjectCount retorna a soma dos projetos carregados e adiadas.
+* [KnownUIContexts.SolutionExistsAndFullyLoadedContext](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.knownuicontexts.solutionexistsandfullyloadedcontext.aspx) é definido como true na solução aberta. Projetos adiados são tratados como carregado para esse contexto é definido muito anteriores no modo não LSL.
+* [__VSPROPID](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.__vspropid.aspx). VSPROPID_ProjectCount retorna a soma de projetos carregados e adiadas.
 
 ## <a name="helpful-code-snippets"></a>Trechos de código útil
 
-### <a name="check-if-a-solution-was-opened-in-deferred-load-mode"></a>Verifique se uma solução foi aberta no modo de carregamento diferido
+### <a name="check-if-a-solution-was-opened-in-deferred-load-mode"></a>Verifique se uma solução foi aberta no modo de carregamento adiado
 
 ```csharp
 /// <summary>
@@ -231,11 +207,11 @@ Esse evento é gerado depois que todos os projetos adiados foram carregados. Nes
 /// </summary>
 /// <param name="projectsToLoad">A set of deferred and/or loaded projects to ensure are loaded.</param>
 /// <returns>True if the project is deferred. False if it is any other state, such as loaded, unloaded, or virtual.</returns>
-/// <remarks>Requires Microsoft.VisualStudio.Shell.15.0.dll</remarks>
+/// <remarks>Requires Microsoft.VisualStudio.Shell.Interop.15.0.DesignTime.dll</remarks>
 public static bool IsInDeferredState(IVsHierarchy vsHierarchy)
 {
     object deferred;
-    int hr = vsHierarchy.GetProperty((int)VSConstants.VSITEMID.Root, (uint)__VSHPROPID9.VSHPROPID_IsDeferred, out deferred);
+    int hr = vsHierarchy.GetProperty((uint)VSConstants.VSITEMID.Root, (int)__VSHPROPID9.VSHPROPID_IsDeferred, out deferred);
 
     if (ErrorHandler.Succeeded(hr))
     {
@@ -347,13 +323,13 @@ public static bool SolutionHasDeferredProjects()
 
 Novas APIs de espaço de trabalho são expostos por meio de IVsSolutionWorkspaceService para ajudar a recuperar informações detalhadas sobre uma solução.
 
-Essas APIs podem ser usadas para obter o espaço de trabalho atual, a solução ativa, as informações de linha de comando gerenciado, bem como o serviço de índice do espaço de trabalho. Essas APIs podem aproveitar ainda mais o serviço de índice para obter dados detalhados, por exemplo, todos os arquivos de origem em um projeto, o projeto de um arquivo de origem, todos os projetos contidos na solução atual, todas as referências de P2P em um projeto, etc.
+Essas APIs pode ser usadas para obter o espaço de trabalho atual, a solução ativa, as informações de linha de comando gerenciados, bem como o serviço de índice para o espaço de trabalho. Essas APIs adicional pode aproveitar o serviço de índice para obter dados detalhados, por exemplo, todos os arquivos de origem em um projeto, o projeto proprietário de um arquivo de origem, todos os projetos contidos na solução atual, todas as referências de P2P em um projeto, etc.
 
 Os trechos de código a seguir demonstram o uso das APIs do espaço de trabalho.
 
 ### <a name="get-ivssolutionworkspaceservice-initially"></a>Obter IVsSolutionWorkspaceService inicialmente
 
->**Observação:** Obtenha apenas IVsSolutionWorkspaceService em cenários LSL para evitar o carregamento do pacote de API do espaço de trabalho.
+>**Observação:** Obtenha IVsSolutionWorkspaceService apenas em cenários LSL para evitar o carregamento do pacote de API do espaço de trabalho.
 
 ```csharp
 private readonly Lazy<IVsSolutionWorkspaceService> _solutionWorkspaceService;
@@ -366,9 +342,9 @@ public DeferredProjectWorkspaceService(SVsServiceProvider serviceProvider)
 }
 ```
 
->**Observação:** os trechos a seguir pressupõem _solutionWorkspaceService lentamente já foi inicializado.
+>**Observação:** os trechos de código a seguir pressupõem _solutionWorkspaceService lentamente já foi inicializado.
 
-### <a name="get-managed-command-line-info-for-deferred-projects-for-active-solution-configuration"></a>Obter informações de linha de comando gerenciado adiados projetos para a configuração de solução ativa
+### <a name="get-managed-command-line-info-for-deferred-projects-for-active-solution-configuration"></a>Obter informações da linha de comando gerenciado adiados projetos para a configuração de solução ativa
 
 ```csharp
 /// <summary>
@@ -387,7 +363,7 @@ public async Task<IReadOnlyDictionary<string, ManagedCommandLineInfo>> GetManage
 }
 ```
 
-### <a name="get-the-active-solution-file-in-lsl"></a>Obtenha o arquivo de solução ativa no LSL
+### <a name="get-the-active-solution-file-in-lsl"></a>Obter o arquivo de solução ativa em LSL
 
 ```csharp
 /// <summary>
@@ -400,7 +376,7 @@ public string GetActiveSolutionFile()
 }
 ```
 
-### <a name="get-the-owning-project-of-a-source-file"></a>Obtenha o projeto do proprietário de um arquivo de origem
+### <a name="get-the-owning-project-of-a-source-file"></a>Obter o projeto proprietário de um arquivo de origem
 
 ```csharp
 /// <summary>
@@ -472,23 +448,22 @@ public async Task<IEnumerable<string>> GetProjectsInSolutionAsync(string solutio
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-Devido à natureza de LSL, é intencional de que os usuários não possam ver a diferença entre projetos carregados e adiadas. Isso pode dificultar recursos de desenvolvimento e teste.
+Devido à natureza de LSL, é intencional de que os usuários não podem ver uma diferença entre projetos carregados e adiadas. Isso pode dificultar recurso de desenvolvimento e teste.
 
-Você pode habilitar dicas visuais na interface do usuário para projetos adiados, fazendo o seguinte:
+Você pode habilitar dicas visuais na interface de usuário para projetos adiados, fazendo o seguinte:
 
 1. Feche o Visual Studio
 2. Regedit.exe
 3. Selecione HKLM
 4. Arquivo > Carregar Hive
 5. `%localappdata%\microsoft\visualstudio\15.0_<instance ID>\privateregistry.bin`
-6. Digite "VisualStudio" como um nome de chave
+6. Insira "VisualStudio" como um nome de chave
 7. Definir `HKLM\VisualStudio\Software\Microsoft\VisualStudio\15.0_<instanceID>\FeatureFlags\Solution\Loading\Deferred\Hint\Value=1` (DWORD)
 8. Selecione HKLM\VisualStudio
 9. Arquivo > Descarregar Hive
 10. Inicie o Visual Studio
 
-Para mais dúvidas, entre em contato [ lslsupport@microsoft.com ](mailto:lslsupport@microsoft.com).
-
+Para outras perguntas, entre em contato com [ lslsupport@microsoft.com ](mailto:lslsupport@microsoft.com).
 
 
 

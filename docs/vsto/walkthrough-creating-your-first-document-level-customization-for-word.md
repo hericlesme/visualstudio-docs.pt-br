@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating Your First Document-Level Customization For Word | Microsoft Docs'
+title: "Passo a passo: Criando a primeira personalização no nível do documento para Word | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,158 +15,158 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
 ms.assetid: ec9f5173-0923-4aee-985a-e760e80eaae3
-caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+caps.latest.revision: "45"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 5d18e432f348950ce973baf92b8e9afd3146b63d
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 6c7992f36f82d7caf56b09b0f6887eed363b6665
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Walkthrough: Creating Your First Document-Level Customization For Word
-  This introductory walkthrough shows you how to create a document-level customization for Microsoft Office Word. The features that you create in this kind of solution are available only when a specific document is open. You cannot use a document-level customization to make application-wide changes, for example, displaying a new Ribbon tab when any document is open.  
+# <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Instruções passo a passo: criando a primeira personalização no nível do documento para Word
+  Este passo a passo introdutório mostra como criar uma personalização no nível do documento para o Microsoft Office Word. Os recursos que você criar este tipo de solução estão disponíveis somente quando um documento específico está aberto. Você não pode usar uma personalização no nível do documento para fazer alterações no nível de aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer documento está aberto.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Creating a Word document project.  
+-   Criando um projeto de documento do Word.  
   
--   Adding text to the document that is hosted in the Visual Studio designer.  
+-   Adicionando texto para o documento que está hospedado no designer do Visual Studio.  
   
--   Writing code that uses the object model of Word to add text to the customized document when it is opened.  
+-   Escrevendo código que usa o modelo de objeto do Word para adicionar texto ao documento personalizado quando ele é aberto.  
   
--   Building and running the project to test it.  
+-   Criar e executar o projeto para testá-lo.  
   
--   Cleaning up the project to remove unnecessary build files and security settings from your development computer.  
+-   Limpando o projeto para remover arquivos de compilação desnecessários e configurações de segurança de seu computador de desenvolvimento.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Pré-requisitos  
+ Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word  
   
-## <a name="creating-the-project"></a>Creating the Project  
+## <a name="creating-the-project"></a>Criando o Projeto  
   
-#### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>To create a new Word document project in Visual Studio  
+#### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Para criar um novo projeto de documento do Word no Visual Studio  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  On the **File** menu, point to **New**, and then click **Project**.  
+2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
+3.  No painel de modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.  
   
-4.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
+4.  Em expandidos **Office/SharePoint** nó, selecione o **suplementos do Office** nó.  
   
-5.  In the list of project templates, select a Word VSTO document project .  
+5.  Na lista de modelos de projeto, selecione um projeto de documento do Word VSTO.  
   
-6.  In the **Name** box, type **FirstDocumentCustomization**.  
+6.  No **nome** , digite **FirstDocumentCustomization**.  
   
-7.  Click **OK**.  
+7.  Clique em **OK**.  
   
-     The **Visual Studio Tools for Office Project Wizard** opens.  
+     O **Visual Studio Tools para Office Project Wizard** é aberto.  
   
-8.  Select **Create a new document**, and click **OK**.  
+8.  Selecione **criar um novo documento**e clique em **Okey**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the **FirstDocumentCustomization** project, and adds the **FirstDocumentCustomization** document and ThisDocument code file to the project. The **FirstDocumentCustomization** document is opened automatically in the designer.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstDocumentCustomization** do projeto e adiciona o **FirstDocumentCustomization** documento e arquivo de código ThisDocument ao projeto. O **FirstDocumentCustomization** documento é aberto automaticamente no designer.  
   
-## <a name="closing-and-reopening-the-document-in-the-designer"></a>Closing and Reopening the Document in the Designer  
- If you deliberately or accidentally close the document in the designer while you are developing your project, you can reopen it.  
+## <a name="closing-and-reopening-the-document-in-the-designer"></a>Fechar e reabrir o documento no Designer  
+ Se você deliberadamente ou não fechar o documento no designer enquanto você estiver desenvolvendo seu projeto, você poderá reabri-lo.  
   
-#### <a name="to-close-and-reopen-the-document-in-the-designer"></a>To close and reopen the document in the designer  
+#### <a name="to-close-and-reopen-the-document-in-the-designer"></a>Feche e reabra o documento no designer  
   
-1.  Close the document by clicking the **Close** button (X) for the designer window.  
+1.  Feche o documento clicando o **fechar** botão (X) para a janela do designer.  
   
-2.  In **Solution Explorer**, right-click the **ThisDocument** code file, and click **View Designer**.  
+2.  Em **Solution Explorer**, com o botão direito do **ThisDocument** arquivo de código e, em seguida, clique em **Designer de exibição**.  
   
-     \- or -  
+     \- ou -  
   
-     In **Solution Explorer**, double-click the **ThisDocument** code file.  
+     Em **Solution Explorer**, clique duas vezes o **ThisDocument** arquivo de código.  
   
-## <a name="adding-text-to-the-document-in-the-designer"></a>Adding Text to the Document in the Designer  
- You can design the user interface (UI) of your customization by modifying the document that is open in the designer. For example, you can add text, tables, or Word controls. For more information about how to use the designer, see [Office Projects in the Visual Studio Environment](../vsto/office-projects-in-the-visual-studio-environment.md).  
+## <a name="adding-text-to-the-document-in-the-designer"></a>Adicionar texto ao documento no Designer  
+ Você pode criar a interface do usuário (UI) de sua personalização modificando o documento está aberto no designer. Por exemplo, você pode adicionar texto, tabelas ou controles do Word. Para obter mais informações sobre como usar o designer, consulte [projetos do Office no ambiente do Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
-#### <a name="to-add-text-to-your-document-by-using-the-designer"></a>To add text to your document by using the designer  
+#### <a name="to-add-text-to-your-document-by-using-the-designer"></a>Para adicionar texto ao documento usando o designer  
   
-1.  In the document that is open in the designer, type the following text.  
+1.  No documento que está aberto no designer, digite o texto a seguir.  
   
-     **This text was added by using the designer.**  
+     **Este texto foi adicionado usando o designer.**  
   
-## <a name="adding-text-to-the-document-programmatically"></a>Adding Text to the Document Programmatically  
- Next, add code to the ThisDocument code file. The new code uses the object model of Word to add a second paragraph of text to the document. By default, the ThisDocument code file contains the following generated code:  
+## <a name="adding-text-to-the-document-programmatically"></a>Adicionar texto ao documento programaticamente  
+ Em seguida, adicione código ao arquivo de código ThisDocument. O novo código usa o modelo de objeto do Word para adicionar um segundo parágrafo de texto para o documento. Por padrão, o arquivo de código ThisDocument contém o seguinte código gerado:  
   
--   A partial definition of the `ThisDocument` class, which represents the programming model of the document and provides access to the object model of Word. For more information, see [Document Host Item](../vsto/document-host-item.md) and [Word Object Model Overview](../vsto/word-object-model-overview.md). The remainder of the `ThisDocument` class is defined in a hidden code file that you should not modify.  
+-   Uma definição parcial do `ThisDocument` classe que representa o modelo de programação do documento e fornece acesso ao modelo de objeto do Word. Para obter mais informações, consulte [Item de Host do documento](../vsto/document-host-item.md) e [visão geral de modelo de objeto do Word](../vsto/word-object-model-overview.md). O restante do `ThisDocument` classe é definida em um arquivo de código oculto que você não deve modificar.  
   
--   The `ThisDocument_Startup` and `ThisDocument_Shutdown` event handlers. These event handlers are called when the document is opened and closed. Use these event handlers to initialize your customization when the document is opened, and to clean up resources used by your customization when the document is closed. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
+-   O `ThisDocument_Startup` e `ThisDocument_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o documento é aberto e fechado. Use esses manipuladores de eventos para inicializar a personalização quando o documento for aberto e para limpar os recursos usados pela sua personalização quando o documento é fechado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>To add a second paragraph of text to the document by using code  
+#### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Para adicionar um segundo parágrafo de texto para o documento usando código  
   
-1.  In **Solution Explorer**, right-click **ThisDocument**, and then click **View Code**.  
+1.  Em **Solution Explorer**, clique com botão direito **ThisDocument**e, em seguida, clique em **Exibir código**.  
   
-     The code file opens in Visual Studio.  
+     O arquivo de código é aberto no Visual Studio.  
   
-2.  Replace the `ThisDocument_Startup` event handler with the following code. When the document is opened, this code adds a second paragraph of text to the document.  
+2.  Substitua o `ThisDocument_Startup` manipulador de eventos com o código a seguir. Quando o documento for aberto, esse código adiciona um segundo parágrafo de texto para o documento.  
   
-     [!code-vb[Trin_WordDocumentTutorial#1](../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb#1)]  [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]  
+     [!code-vb[Trin_WordDocumentTutorial#1](../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb#1)]
+     [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]  
   
     > [!NOTE]  
-    >  This code uses the index value 1 to access the first paragraph in the <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> property. Although Visual Basic and Visual C# use 0-based arrays, the lower array bounds of most collections in the Word object model is 1. For more information, see [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
+    >  Esse código usa o valor de índice 1 para acessar o primeiro parágrafo de <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> propriedade. Embora o Visual Basic e Visual c# usam conjuntos baseados em 0, os limites inferiores da matriz da maioria das coleções no modelo de objeto do Word é 1. Para obter mais informações, consulte [escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md).  
   
-## <a name="testing-the-project"></a>Testing the Project  
+## <a name="testing-the-project"></a>O projeto de teste  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-test-your-document"></a>Para testar o documento  
   
-1.  Press **F5** to build and run your project.  
+1.  Pressione **F5** para compilar e executar seu projeto.  
   
-     When you build the project, the code is compiled into an assembly that is associated with the document. Visual Studio puts a copy of the document and the assembly in the build output folder for the project, and it configures the security settings on the development computer to enable the customization to run. For more information, see [Building Office Solutions](../vsto/building-office-solutions.md).  
+     Quando você compila o projeto, o código é compilado em um assembly que está associado com o documento. O Visual Studio coloca uma cópia do documento e o assembly na pasta de saída de compilação do projeto, e ele configura as configurações de segurança no computador de desenvolvimento para habilitar a personalização executar. Para obter mais informações, consulte [criando soluções do Office](../vsto/building-office-solutions.md).  
   
-2.  In the document, verify that you see the following text.  
+2.  No documento, verifique se que você vê o seguinte texto.  
   
-     **This text was added by using the designer.**  
+     **Este texto foi adicionado usando o designer.**  
   
-     **This text was added by using code.**  
+     **Este texto foi adicionado por meio de código.**  
   
-3.  Close the document.  
+3.  Feche o documento.  
   
-## <a name="cleaning-up-the-project"></a>Cleaning up the Project  
- When you finish developing a project, you should remove the files in the build output folder and the security settings created by the build process.  
+## <a name="cleaning-up-the-project"></a>O projeto de limpeza  
+ Quando você terminar de desenvolvimento de um projeto, você deve remover os arquivos na pasta de saída de compilação e as configurações de segurança criadas pelo processo de compilação.  
   
-#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>To clean up the completed project on your development computer  
+#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Para limpar o projeto concluído no computador de desenvolvimento  
   
-1.  In Visual Studio, on the **Build** menu, click **Clean Solution**.  
+1.  No Visual Studio, no **criar** menu, clique em **limpar solução**.  
   
-## <a name="next-steps"></a>Next Steps  
- Now that you have created a basic document-level customization for Word, you can learn more about how to develop customizations from these topics:  
+## <a name="next-steps"></a>Próximas etapas  
+ Agora que você criou uma personalização básica de nível de documento para Word, você pode aprender mais sobre como desenvolver personalizações destes tópicos:  
   
--   General programming tasks that you can perform in document-level customizations: [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md).  
+-   Tarefas gerais de programação que você pode executar em personalizações no nível do documento: [personalizações de programação de nível de documento](../vsto/programming-document-level-customizations.md).  
   
--   Programming tasks that are specific to document-level customizations for Word: [Word Solutions](../vsto/word-solutions.md).  
+-   Tarefas de programação que são específicas para personalizações no nível de documento para Word: [soluções do Word](../vsto/word-solutions.md).  
   
--   Using the object model of Word: [Word Object Model Overview](../vsto/word-object-model-overview.md).  
+-   Usando o modelo de objeto do Word: [visão geral de modelo de objeto do Word](../vsto/word-object-model-overview.md).  
   
--   Customizing the UI of Word, for example, by adding a custom tab to the Ribbon or creating your own actions pane: [Office UI Customization](../vsto/office-ui-customization.md).  
+-   Personalizando a interface do usuário do Word, por exemplo, por adicionar uma guia a faixa de opções ou criar seu próprio painel de ações: [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).  
   
--   Using extended Word objects provided by Office solutions in Visual Studio to perform tasks that are not possible by using the Word object model (for example, hosting managed controls on documents and binding Word controls to data by using the Windows Forms data binding model): [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md).  
+-   Usando objetos estendidos do Word fornecidos pelas soluções do Office no Visual Studio para executar tarefas que não são possíveis por meio do modelo de objeto do Word (por exemplo, hospedagem de controles gerenciados em documentos e associando controles do Word a dados usando os dados de Windows Forms modelo de associação): [automatizando o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md).  
   
--   Building and debugging document-level customizations for Word: [Building Office Solutions](../vsto/building-office-solutions.md).  
+-   Compilar e depurar personalizações no nível de documento para Word: [criando soluções do Office](../vsto/building-office-solutions.md).  
   
--   Deploying document-level customizations for Word: [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
+-   Implantando as personalizações no nível de documento para Word: [implantar uma solução Office](../vsto/deploying-an-office-solution.md).  
   
-## <a name="see-also"></a>See Also  
- [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Word Solutions](../vsto/word-solutions.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
- [Word Object Model Overview](../vsto/word-object-model-overview.md)   
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Office UI Customization](../vsto/office-ui-customization.md)   
- [Building Office Solutions](../vsto/building-office-solutions.md)   
- [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
- [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
+## <a name="see-also"></a>Consulte também  
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Soluções do Word](../vsto/word-solutions.md)   
+ [Personalizações no nível do documento da programação](../vsto/programming-document-level-customizations.md)   
+ [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)   
+ [Automatizando o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)   
+ [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)   
+ [Criando soluções do Office](../vsto/building-office-solutions.md)   
+ [Implantando uma solução do Office](../vsto/deploying-an-office-solution.md)   
+ [Visão geral dos modelos do Office Project](../vsto/office-project-templates-overview.md)  
   
   

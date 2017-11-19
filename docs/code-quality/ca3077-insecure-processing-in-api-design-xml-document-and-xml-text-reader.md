@@ -1,54 +1,55 @@
 ---
-title: "CA3077: Processamento inseguro no projeto de API, o documento XML e o leitor de texto XML | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'CA3077: Processamento inseguro no projeto de API, o documento XML e o leitor de texto XML | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "7"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6944b49626771317f1643f7ae521b0db43c2200c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA3077: Processamento inseguro no projeto de API, o documento XML e o leitor de texto XML
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Processamento inseguro no projeto de API, o documento XML e o leitor de texto XML
 |||  
 |-|-|  
 |NomeDoTipo|InsecureDTDProcessingInAPIDesign|  
 |CheckId|CA3077|  
 |Categoria|Microsoft.Security|  
-|Alteração significativa|Não separável|  
+|Alteração Significativa|Não separáveis|  
   
-## Causa  
- Quando criar uma API derivados do XMLDocument e XMLTextReader, tenha cuidado com a <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Usando inseguro DTDProcessing instâncias quando referenciando Resolvendo fontes de entidade externa ou definindo valores inseguros no XML pode levar a divulgação de informações.  
+## <a name="cause"></a>Causa  
+ Quando criar uma API derivado do XMLDocument e XMLTextReader, estar atento ao <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Usando as instâncias de DTDProcessing inseguras quando referenciando Resolvendo fontes de entidade externa ou definir valores inseguros no XML pode levar à divulgação de informações.  
   
-## Descrição da regra  
- A [definição de tipo de documento \(DTD\)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) é uma das duas maneiras de um analisador XML pode determinar a validade de um documento, conforme definido pelo  [World Wide Web Consortium \(W3C\) Extensible Markup Language \(XML\) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regra procura propriedades e instâncias onde os dados não confiáveis é aceito para alertar os desenvolvedores sobre potencial [Divulgação de informações](../Topic/Information%20Disclosure.md) ameaças, que podem levar a [dos \(negação de serviço\)](../Topic/Denial%20of%20Service.md) ataques. Essa regra dispara quando:  
+## <a name="rule-description"></a>Descrição da Regra  
+ Um [definição de tipo de documento (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra buscas propriedades e instâncias onde os dados não confiáveis são aceitos para alertar os desenvolvedores sobre potencial [divulgação de informações](/dotnet/framework/wcf/feature-details/information-disclosure) ameaças, que podem levar à [dos (negação de serviço)](/dotnet/framework/wcf/feature-details/denial-of-service) ataques. Essa regra dispara quando:  
   
--   <xref:System.Xml.XmlDocument> ou <xref:System.Xml.XmlTextReader> classes usam valores de resolvedor padrão para processamento de DTD.  
+-   <xref:System.Xml.XmlDocument>ou <xref:System.Xml.XmlTextReader> classes usam valores de resolvedor padrão para o processamento do DTD.  
   
--   Nenhum construtor é definido para o XmlDocument ou XmlTextReader classes derivadas ou nenhum valor seguro é usado para <xref:System.Xml.XmlResolver>.  
+-   Nenhum construtor está definido para o XmlDocument ou classes derivadas de XmlTextReader ou nenhum valor seguro é usado para <xref:System.Xml.XmlResolver>.  
   
-## Como corrigir violações  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
   
 -   Capturar e processar todas as exceções de XmlTextReader corretamente para evitar a divulgação de informações de caminho.  
   
--   Use <xref:System.Xml.XmlSecureResolver>em vez de XmlResolver para restringir os recursos que o XmlTextReader pode acessar.  
+-   Use <xref:System.Xml.XmlSecureResolver>em vez de XmlResolver para restringir os recursos que pode acessar o XmlTextReader.  
   
-## Quando suprimir avisos  
- A menos que você tiver certeza de que a entrada é conhecida por ser de uma fonte confiável, suprime uma regra desse aviso.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ A menos que você tiver certeza de que a entrada é conhecida por ser de uma fonte confiável, não suprima uma regra deste aviso.  
   
-## Exemplos de código pseudo  
+## <a name="pseudo-code-examples"></a>Exemplos de código pseudo  
   
-### Violação  
+### <a name="violation"></a>Violação  
   
-```c#  
+```csharp  
 using System;   
 using System.Xml;   
   
@@ -68,9 +69,9 @@ namespace TestNamespace
 }  
 ```  
   
-### Solução  
+### <a name="solution"></a>Solução  
   
-```c#  
+```csharp  
 using System;   
 using System.Xml;   
   

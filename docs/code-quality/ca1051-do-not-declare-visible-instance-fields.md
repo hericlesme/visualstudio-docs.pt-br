@@ -1,11 +1,10 @@
 ---
-title: 'CA1051: Do not declare visible instance fields | Microsoft Docs'
+title: "CA1051: Não declarar campos de instância visíveis | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,61 +14,45 @@ helpviewer_keywords:
 - CA1051
 - DoNotDeclareVisibleInstanceFields
 ms.assetid: 2805376c-824c-462c-81d1-c51aaf7cabe7
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3c4be3eb3862e462b840569460993b2ff8a1000b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c80ac321100ecc0f88811332c73bdfd99b5a6a99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Do not declare visible instance fields
+# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: não declarar campos de instância visíveis
 |||  
 |-|-|  
-|TypeName|DoNotDeclareVisibleInstanceFields|  
+|NomeDoTipo|DoNotDeclareVisibleInstanceFields|  
 |CheckId|CA1051|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Categoria|Microsoft.Design|  
+|Alteração Significativa|Quebra|  
   
-## <a name="cause"></a>Cause  
- An externally visible type has an externally visible instance field.  
+## <a name="cause"></a>Causa  
+ Um tipo visível externamente tem um campo de instância visíveis externamente.  
   
-## <a name="rule-description"></a>Rule Description  
- The primary use of a field should be as an implementation detail. Fields should be `private` or `internal` and should be exposed by using properties. It is as easy to access a property as it is to access a field, and the code in the accessors of a property can change as the features of the type expand without introducing breaking changes. Properties that just return the value of a private or internal field are optimized to perform on par with accessing a field; very little performance gain is associated with the use of externally visible fields over properties.  
+## <a name="rule-description"></a>Descrição da Regra  
+ O principal uso de um campo deve ser um como um detalhe da implementação. Campos devem ser `private` ou `internal` e devem ser expostos por meio de propriedades. É fácil de acessar uma propriedade que é para acesso a um campo e o código nos acessadores de uma propriedade pode alterar como os recursos do tipo expanda sem introduzir alterações significativas. Propriedades que retornam apenas o valor de um campo particular ou interno são otimizadas para executar no acesso a um campo. ganho de desempenho muito pouco está associado com o uso de campos visíveis externamente sobre as propriedades.  
   
- Externally visible refers to `public`, `protected`, and `protected internal` (`Public`, `Protected`, and `Protected Friend` in Visual Basic) accessibility levels.  
+ Refere-se visível externamente para `public`, `protected`, e `protected internal` (`Public`, `Protected`, e `Protected Friend` no Visual Basic) níveis de acessibilidade.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, make the field `private` or `internal` and expose it by using an externally visible property.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, verifique o campo `private` ou `internal` e expô-lo usando uma propriedade visível externamente.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. Externally visible fields do not provide any benefits that are unavailable to properties. Additionally, public fields cannot be protected by [Link Demands](/dotnet/framework/misc/link-demands). See [CA2112: Secured types should not expose fields](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra. Campos visíveis externamente não fornecem nenhum benefício que não está disponível para propriedades. Além disso, os campos públicos não podem ser protegidos por [demandas de Link](/dotnet/framework/misc/link-demands). Consulte [CA2112: tipos seguros não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
   
-## <a name="example"></a>Example  
- The following example shows a type (`BadPublicInstanceFields`) that violates this rule. `GoodPublicInstanceFields` shows the corrected code.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra um tipo (`BadPublicInstanceFields`) que violam essa regra. `GoodPublicInstanceFields`mostra o código corrigido.  
   
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2112: Secured types should not expose fields](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA2112: os tipos seguros não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
   
-## <a name="see-also"></a>See Also  
- [Link Demands](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>Consulte também  
+ [Demandas de link](/dotnet/framework/misc/link-demands)

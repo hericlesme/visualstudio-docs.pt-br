@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Collecting Data Using a Windows Form | Microsoft Docs'
+title: "Passo a passo: Coletando dados usando um formulário do Windows | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,134 +16,136 @@ helpviewer_keywords:
 - forms [Office development in Visual Studio], walkthroughs
 - worksheets [Office development in Visual Studio], collecting data
 ms.assetid: 40e87f7f-cfbb-4761-bf1b-d042f45f4f09
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d69e91088401857391c935f768e171153a50faeb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 32156e4d2c9e8e5f809a4de64478667e7133aeb1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-collecting-data-using-a-windows-form"></a>Walkthrough: Collecting Data Using a Windows Form
-  This walkthrough demonstrates how to open a Windows Form from a document-level customization for Microsoft Office Excel, collect information from the user, and write that information into a worksheet cell.  
+# <a name="walkthrough-collecting-data-using-a-windows-form"></a>Instruções passo a passo: coletando dados usando um Windows Form
+  Este passo a passo demonstra como abrir um formulário do Windows de uma personalização no nível do documento para o Microsoft Office Excel, coletar informações do usuário e gravar informações em uma célula de planilha.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Although this walkthrough uses a document-level project for Excel specifically, the concepts demonstrated by the walkthrough are applicable to other Office projects.  
+ Embora este passo a passo usa um projeto no nível do documento para Excel, especificamente, os conceitos demonstrados pelo passo a passo sejam aplicam a outros projetos do Office.  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Pré-requisitos  
+ Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="creating-a-new-project"></a>Creating a New Project  
- The first step is to create an Excel Workbook project.  
+## <a name="creating-a-new-project"></a>Criando um novo projeto  
+ A primeira etapa é criar um projeto de pasta de trabalho do Excel.  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
   
-1.  Create an Excel Workbook project with the name **WinFormInput**, and select **Create a new document** in the wizard. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Criar um projeto de pasta de trabalho do Excel com o nome **WinFormInput**e selecione **criar um novo documento** no assistente. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio opens the new Excel workbook in the designer and adds the **WinFormInput** project to **Solution Explorer**.  
+     Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **WinFormInput** projeto **Gerenciador de soluções**.  
   
-## <a name="adding-a-namedrange-control-to-the-worksheet"></a>Adding a NamedRange Control to the Worksheet  
+## <a name="adding-a-namedrange-control-to-the-worksheet"></a>Adicionar um controle NamedRange a planilha  
   
-#### <a name="to-add-a-named-range-to-sheet1"></a>To add a named range to Sheet1  
+#### <a name="to-add-a-named-range-to-sheet1"></a>Para adicionar um intervalo nomeado para Sheet1  
   
-1.  Select cell **A1** on `Sheet1`.  
+1.  Selecione a célula **A1** em `Sheet1`.  
   
-2.  In the **Name** box, type **formInput**.  
+2.  No **nome** , digite **formInput**.  
   
-     The **Name** box is located to the left of the formula bar, just above column **A** of the worksheet.  
+     O **nome** caixa está localizada à esquerda da barra de fórmulas acima coluna **um** da planilha.  
   
-3.  Press ENTER.  
+3.  Pressione ENTER.  
   
-     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control is added to cell **A1**. There is no visible indication on the worksheet, but **formInput** appears in the **Name** box (just above the worksheet on the left side) and in the **Properties** window when cell **A1** is selected.  
+     Um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é adicionado à célula **A1**. Não há nenhuma indicação visível na planilha, mas **formInput** aparece no **nome** caixa (logo acima da planilha no lado esquerdo) e no **propriedades** janela quando célula **A1** está selecionado.  
   
-## <a name="adding-a-windows-form-to-the-project"></a>Adding a Windows Form to the Project  
- Create a Windows Form to prompt the user for information.  
+## <a name="adding-a-windows-form-to-the-project"></a>Adicionar um formulário do Windows para o projeto  
+ Crie um formulário do Windows para solicitar informações do usuário.  
   
-#### <a name="to-add-a-windows-form"></a>To add a Windows Form  
+#### <a name="to-add-a-windows-form"></a>Para adicionar um formulário do Windows  
   
-1.  Select the project **WinFormInput** in **Solution Explorer**.  
+1.  Selecione o projeto **WinFormInput** na **Gerenciador de soluções**.  
   
-2.  On the **Project** menu, click **Add Windows Form**.  
+2.  Sobre o **projeto** menu, clique em **Adicionar formulário do Windows**.  
   
-3.  Name the form **GetInputString.vb** or **GetInputString.cs**, and then click **Add**.  
+3.  Nomeie o formulário **GetInputString.vb** ou **GetInputString.cs**e, em seguida, clique em **adicionar**.  
   
-     The new form opens in the designer.  
+     O novo formulário é aberto no designer.  
   
-4.  Add a <xref:System.Windows.Forms.TextBox> and a <xref:System.Windows.Forms.Button> to the form.  
+4.  Adicionar um <xref:System.Windows.Forms.TextBox> e uma <xref:System.Windows.Forms.Button> ao formulário.  
   
-5.  Select the button, find the property **Text** in the **Properties** window, and change the text to **OK**.  
+5.  Selecione o botão, localize a propriedade **texto** no **propriedades** janela e altere o texto para **Okey**.  
   
- Next, add code to `ThisWorkbook.vb` or `ThisWorkbook.cs` to collect the user's information.  
+ Em seguida, adicione código para `ThisWorkbook.vb` ou `ThisWorkbook.cs` para coletar as informações do usuário.  
   
-## <a name="displaying-the-windows-form-and-collecting-information"></a>Displaying the Windows Form and Collecting Information  
- Create an instance of the `GetInputString` Windows Form and display it, and then write the user's information into a cell in the worksheet.  
+## <a name="displaying-the-windows-form-and-collecting-information"></a>Exibindo o formulário do Windows e a coleta de informações  
+ Criar uma instância do `GetInputString` formulário do Windows e exibi-lo e, em seguida, gravar as informações do usuário em uma célula na planilha.  
   
-#### <a name="to-display-the-form-and-collect-information"></a>To display the form and collect information  
+#### <a name="to-display-the-form-and-collect-information"></a>Para exibir o formulário e colete informações  
   
-1.  Right-click **ThisWorkbook.vb** or **ThisWorkbook.cs** in **Solution Explorer**, and then click **View Code**.  
+1.  Clique com botão direito **ThisWorkbook** ou **ThisWorkbook.cs** na **Solution Explorer**e, em seguida, clique em **Exibir código**.  
   
-2.  In the <xref:Microsoft.Office.Tools.Excel.Workbook.Open> event handler of `ThisWorkbook`, add the following code to declare a variable for the form `GetInputString` and then show the form.  
+2.  No <xref:Microsoft.Office.Tools.Excel.Workbook.Open> manipulador de eventos do `ThisWorkbook`, adicione o seguinte código para declarar uma variável para o formulário `GetInputString` e, em seguida, exibir o formulário.  
   
     > [!NOTE]  
-    >  In C#, you must add an event handler as shown in the <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> event below. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+    >  Em c#, você deve adicionar um manipulador de eventos conforme o <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> evento abaixo. Para obter informações sobre como criar manipuladores de eventos, consulte [como: criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]  [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Create a method called `WriteStringToCell` that writes text to a named range. This method is called from the form, and the user's input is passed to the <xref:Microsoft.Office.Tools.Excel.NamedRange> control, `formInput`, on cell **A1**.  
+3.  Criar um método chamado `WriteStringToCell` que escreve o texto para um intervalo nomeado. Este método é chamado do formulário e a entrada do usuário é passada para o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle, `formInput`, na célula **A1**.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]  [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- Next, add code to the form to handle the button's click event.  
+ Em seguida, adicione código ao formulário para lidar com o clique do botão eventos.  
   
-## <a name="sending-information-to-the-worksheet"></a>Sending Information to the Worksheet  
+## <a name="sending-information-to-the-worksheet"></a>Enviar informações à planilha  
   
-#### <a name="to-send-information-to-the-worksheet"></a>To send information to the worksheet  
+#### <a name="to-send-information-to-the-worksheet"></a>Para enviar informações para a planilha  
   
-1.  Right-click **GetInputString** in **Solution Explorer**, and then click **View Designer**.  
+1.  Clique com botão direito **GetInputString** na **Solution Explorer**e, em seguida, clique em **Designer de exibição**.  
   
-2.  Double-click the button to open the code file with the button's <xref:System.Windows.Forms.Control.Click> event handler added.  
+2.  Clique duas vezes no botão para abrir o arquivo de código com o botão <xref:System.Windows.Forms.Control.Click> adicionado do manipulador de eventos.  
   
-3.  Add code to the event handler to take the input from the text box, send it to the function `WriteStringToCell`, and then close the form.  
+3.  Adicione código para o manipulador de eventos para obter a entrada da caixa de texto, enviá-lo para a função `WriteStringToCell`e, em seguida, feche o formulário.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]  [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]  
+     [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
+     [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]  
   
-## <a name="testing"></a>Testing  
- You can now run the project. The Windows Form appears, and your input appears in the worksheet.  
+## <a name="testing"></a>Testes  
+ Agora você pode executar o projeto. O formulário do Windows é exibida e a entrada aparece na planilha.  
   
-#### <a name="to-test-your-workbook"></a>To test your workbook  
+#### <a name="to-test-your-workbook"></a>Para testar a sua pasta de trabalho  
   
-1.  Press F5 to run your project.  
+1.  Pressione F5 para executar o projeto.  
   
-2.  Confirm that the Windows Form appears.  
+2.  Confirme que o formulário do Windows é exibida.  
   
-3.  Type **Hello World** in the text box, and then click **OK**.  
+3.  Tipo **Hello World** na caixa de texto e depois clique em **Okey**.  
   
-4.  Confirm that **Hello World** appears in cell **A1** of the worksheet.  
+4.  Confirme se **Hello World** aparece na célula **A1** da planilha.  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of showing a Windows Form and passing data to a worksheet. Other tasks you may want to perform include:  
+## <a name="next-steps"></a>Próximas etapas  
+ Este passo a passo mostra os fundamentos da exibição de um formulário do Windows e passando dados em uma planilha. Outras tarefas que você pode desejar executar:  
   
--   Use Windows Forms controls on an Excel workbook or a Word document. For more information, see [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+-   Use controles de formulários do Windows em uma pasta de trabalho do Excel ou um documento do Word. Para obter mais informações, consulte [controles dos Windows Forms na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
--   Modify the user interface of a Microsoft Office application from a document-level customization or an VSTO Add-in. For more information, see [Office UI Customization](../vsto/office-ui-customization.md).  
+-   Modificar a interface do usuário de um aplicativo do Microsoft Office de uma personalização no nível do documento ou um suplemento do VSTO. Para obter mais informações, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).  
   
-## <a name="see-also"></a>See Also  
- [Developing Office Solutions](../vsto/developing-office-solutions.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
- [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
- [Walkthroughs Using Excel](../vsto/walkthroughs-using-excel.md)  
+## <a name="see-also"></a>Consulte também  
+ [Desenvolvendo soluções do Office](../vsto/developing-office-solutions.md)   
+ [Escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
+ [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Personalizações no nível do documento da programação](../vsto/programming-document-level-customizations.md)   
+ [Explicações passo a passo usando o Word](../vsto/walkthroughs-using-word.md)   
+ [Instruções passo a passo para usar o Excel](../vsto/walkthroughs-using-excel.md)  
   
   

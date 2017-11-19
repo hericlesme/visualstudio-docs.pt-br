@@ -1,53 +1,52 @@
 ---
-title: "Avisos de desempenho | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.performancerules"
-helpviewer_keywords: 
-  - "avisos de desempenho"
-  - "avisos de desempenho"
-  - "desempenho, avisos"
-  - "avisos da análise de código gerenciado, avisos de desempenho"
+title: Avisos de desempenho | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.performancerules
+helpviewer_keywords:
+- warnings, performance
+- performance warnings
+- performance, warnings
+- managed code analysis warnings, performance warnings
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
-caps.latest.revision: 22
-caps.handback.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2644275459343f0b30023439002d2fa83bb97c8e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Avisos de desempenho
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Os avisos de desempenho dão suporte a bibliotecas de alto desempenho e aplicativos.  
+# <a name="performance-warnings"></a>Avisos de desempenho
+Avisos de desempenho dão suporte a aplicativos e bibliotecas de alto desempenho.  
   
-## Nesta seção  
+## <a name="in-this-section"></a>Nesta seção  
   
 |Regra|Descrição|  
-|-----------|---------------|  
-|[CA1800: não converter desnecessariamente](../code-quality/ca1800-do-not-cast-unnecessarily.md)|As conversões duplicados diminui o desempenho, principalmente quando as conversões são executadas em instruções compactas da iteração.|  
-|[CA1801: revisar parâmetros não usados](../Topic/CA1801:%20Review%20unused%20parameters.md)|Uma assinatura de método inclui um parâmetro que não é usado no corpo do método.|  
-|[CA1802: usar literais quando apropriado](../code-quality/ca1802-use-literals-where-appropriate.md)|Um campo é declarado estático e somente leitura \(compartilhado e readonly em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\), e iniciado com um valor que é computável em tempo de compilação.  Como o valor atribuído ao campo de destino é computável em tempo de compilação, altere a declaração a um campo de const \(const em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) de modo que o valor é computado em tempo de compilação em vez de em tempo de execução.|  
-|[CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)|As variáveis locais não usado e as atribuições desnecessários aumenta o tamanho de um desempenho do assembly e a diminuição.|  
-|[CA1806: não ignore resultados do método](../code-quality/ca1806-do-not-ignore-method-results.md)|Um novo objeto é criado mas nunca usado, ou um método que cria e retorna uma nova cadeia de caracteres sejam chamados e a nova cadeia de caracteres é usada, nunca ou um método do Component Object Model \(COM\) ou de P\/Invoke retornam um HRESULT ou um código de erro que nunca sejam usados.|  
-|[CA1809: evitar locais excessivos](../code-quality/ca1809-avoid-excessive-locals.md)|Uma otimização comuns de desempenho é armazenar um valor em um registro de processador em vez de memória, que é chamado “enregistering o valor”.  Para aumentar a possibilidade de que todas as variáveis locais enregistered, limite o número de variáveis locais a 64.|  
-|[CA1810: inicializar campos estáticos de tipo de referência embutido](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|Quando um tipo declara um construtor estático explícito, o compilador de \(JIT\) just\-in\-time adiciona uma verificação a cada construtor de método estático e da instância do tipo para garantir que o construtor estático esteve chamado anteriormente.  As verificações estáticos de construtor podem diminuir o desempenho.|  
-|[CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)|Um membro particular ou interno de nível de assembly \(\) não tem chamadores no assembly, não é invocado por Common Language Runtime, e não é invocado por um representante.|  
-|[CA1812: evitar classes internas sem instâncias](../Topic/CA1812:%20Avoid%20uninstantiated%20internal%20classes.md)|Uma instância de um tipo de nível de assembly não é criada pelo código no assembly.|  
-|[CA1813: evitar atributos não lacrados](../code-quality/ca1813-avoid-unsealed-attributes.md)|A biblioteca de classes de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] fornece métodos para recuperar atributos personalizados.  Por padrão, esses métodos da hierarquia de herança do atributo.  Selar o atributo elimina a pesquisa pela hierarquia de herança e pode melhorar o desempenho.|  
-|[CA1814: preferir matrizes denteadas em relação às multidimensionais](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|Uma matriz denteada é uma matriz cujos elementos sejam matrizes.  As matrizes que compõem os elementos podem ter os tamanhos diferentes, o que pode resultar em menos espaço desperdiçado para alguns conjuntos de dados.|  
-|[CA1815: substituir igualdades e igualdades de operador em tipos de valor](../Topic/CA1815:%20Override%20equals%20and%20operator%20equals%20on%20value%20types.md)|Para tipos de valor, a implementação herdada de igual usa a biblioteca de reflexão e compara o conteúdo de todos os campos.  Reflexão é computacionalmente cara, e comparar cada campo por igualdade pode ser desnecessário.  Se você espera que os usuários comparar ou classificar instâncias, ou se usar instâncias como a tabela de hash chaves, seu tipo de valor deve implementar iguais.|  
-|[CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Um método que é uma implementação Dispose não chama GC.SuppressFinalize, ou um método que não é uma implementação Dispose chama GC.SuppressFinalize, ou chamadas GC.SuppressFinalize de um método e passa algo diferente do \(i em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\).|  
-|[CA1819: as propriedades não devem retornar matrizes](../code-quality/ca1819-properties-should-not-return-arrays.md)|As matrizes retornadas por propriedades para gravação não são protegidas, mesmo se a propriedade é somente leitura.  Para manter a matriz inalterável, a propriedade deve retornar uma cópia da matriz.  Normalmente, os usuários não adversas integrarem as implicações de desempenho de chamar essas propriedades.|  
-|[CA1820: teste para cadeias de caracteres vazias usando o comprimento da cadeia de caracteres](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Comparar cadeias de caracteres usando a propriedade de String.Length ou o método de String.IsNullOrEmpty é significativamente mais rápida do que usando iguais.|  
-|[CA1821: remover finalizadores vazios](../code-quality/ca1821-remove-empty-finalizers.md)|Sempre que possível, para evitar finalizers devido à sobrecarga adicional de desempenho que é envolvida no tempo de vida do objeto de rastreamento.  Um finalizador vazia incorre a sobrecarga adicionada sem nenhum benefício.|  
-|[CA1822: marcar membros como estáticos](../Topic/CA1822:%20Mark%20members%20as%20static.md)|Os membros que não acessam dados da instância ou métodos da instância de chamada podem ser marcados como estático \(compartilhada em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\).  Depois que você marca os métodos como estático, o compilador emitirá sites nonvirtual da chamada para esses membros.  Isso pode proporcionar um ganho mensurável de desempenho para o código de acentos.|  
-|[CA1823: evitar campos privados não usados](../code-quality/ca1823-avoid-unused-private-fields.md)|Os campos particulares foram detectados que não parece ser acessados no assembly.|  
-|[CA1824: marcar assemblies com NeutralResourcesLanguageAttribute](../Topic/CA1824:%20Mark%20assemblies%20with%20NeutralResourcesLanguageAttribute.md)|O atributo de NeutralResourcesLanguage informa o ResourceManager de idioma que foi usada para exibir os recursos de uma cultura neutra para um assembly.  Isso melhora o desempenho da pesquisa para o primeiro recursos que você carrega e reduzir seu conjunto de trabalho.|
+|----------|-----------------|  
+|[CA1800: não converter desnecessariamente](../code-quality/ca1800-do-not-cast-unnecessarily.md)|As conversões duplicadas diminui o desempenho, especialmente quando as conversões são realizadas em instruções de iteração compactas.|  
+|[CA1801: examinar parâmetros não usados](../code-quality/ca1801-review-unused-parameters.md)|Uma assinatura de método inclui um parâmetro que não é usado no corpo do método.|  
+|[CA1802: usar literais quando apropriado](../code-quality/ca1802-use-literals-where-appropriate.md)|Um campo está declarado como estático e somente leitura (compartilhado e somente leitura em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e é inicializada com um valor que é computáveis em tempo de compilação. Como o valor que é atribuído ao campo de destino é computáveis em tempo de compilação, altere a declaração para const (Const em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo para que o valor é computado em tempo de compilação em vez de em tempo de execução.|  
+|[CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)|As variáveis locais não utilizadas e as atribuições desnecessárias aumentam o tamanho de um assembly e diminuem o desempenho.|  
+|[CA1806: não ignorar resultados do método](../code-quality/ca1806-do-not-ignore-method-results.md)|Um novo objeto é criado, mas nunca é usado, um método que cria e retorna uma nova cadeia de caracteres é chamado e a nova cadeia de caracteres nunca é usada ou um método de modelo de objeto de componente (COM) ou P/Invoke retorna um código de erro ou HRESULT que nunca é usado.|  
+|[CA1809: evitar locais excessivos](../code-quality/ca1809-avoid-excessive-locals.md)|Uma otimização de desempenho comum é armazenar um valor em um registro de processador, em vez da memória, algo conhecido como "registro do valor".  Para aumentar a chance de que todas as variáveis locais são registrado, limite o número de variáveis locais a 64.|  
+|[CA1810: inicializar campos estáticos de tipo de referência embutido](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|Quando um tipo declara um construtor estático explícito, o compilador JIT (just-in-time) adiciona uma verificação a cada método estático e construtor de instância do tipo para garantir que o construtor estático tenha sido chamado anteriormente. As verificações de construtor estático podem diminuir o desempenho.|  
+|[CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)|Membro privado ou interno (nível de assembly) não tem chamadores no assembly, ele não é invocado pelo common language runtime e ele não é invocado por um delegate.|  
+|[CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|Uma instância de um tipo no nível de assembly não é criada pelo código no assembly.|  
+|[CA1813: evitar atributos não lacrados](../code-quality/ca1813-avoid-unsealed-attributes.md)|A biblioteca de classes do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] fornece métodos para recuperar atributos personalizados. Por padrão, esses métodos pesquisam a hierarquia de herança do atributo. A validação do atributo elimina a pesquisa na hierarquia de herança e pode melhorar o desempenho.|  
+|[CA1814: preferir matrizes denteadas em relação às multidimensionais](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|Uma matriz denteada é uma matriz cujos elementos são matrizes. As matrizes que compõem os elementos podem ser de tamanhos diferentes, o que podem resultar em menos perda de espaço para alguns conjuntos de dados.|  
+|[CA1815: substituir Equals e operador Equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|Para tipos de valor, a implementação herdada de Equals usa a biblioteca Reflection e compara o conteúdo de todos os campos. Reflection é computacionalmente cara, e pode ser desnecessário comparar a igualdade de cada campo. Se você espera que os usuários comparem ou classifiquem instâncias, ou usem instâncias como chaves de tabela de hash, o tipo de valor deverá implementar Equals.|  
+|[CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Um método que é uma implementação de Dispose não chama GC. SuppressFinalize ou um método que não é uma implementação de Dispose chama GC. SuppressFinalize ou um método chama GC. SuppressFinalize e passa algo diferente de isso (Me no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).|  
+|[CA1819: as propriedades não devem retornar matrizes](../code-quality/ca1819-properties-should-not-return-arrays.md)|Matrizes são retornadas pelas propriedades não são protegido contra gravação, mesmo se a propriedade é somente leitura. Para manter a matriz à prova de adulteração, a propriedade deve retornar uma cópia da matriz. Normalmente, os usuários não compreenderão as implicações adversas no desempenho de chamar uma propriedade assim.|  
+|[CA1820: testar se há cadeias de caracteres vazias usando o comprimento da cadeia de caracteres](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|A comparação de cadeias de caracteres usando-se a propriedade String.Length ou o método String.IsNullOrEmpty é significativamente mais rápida do que o uso de Equals.|  
+|[CA1821: remover finalizadores vazios](../code-quality/ca1821-remove-empty-finalizers.md)|Sempre que possível, evite finalizadores por conta da sobrecarga adicional no desempenho envolvida no acompanhamento do tempo de vida do objeto. Gera um finalizador vazia adicionada sobrecarga sem nenhum benefício.|  
+|[CA1822: marcar membros como estáticos](../code-quality/ca1822-mark-members-as-static.md)|Os membros que não acessam dados da instância ou os métodos da instância de chamada podem ser marcados como estáticos (Shared no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Depois que você marcar os métodos como estáticos, o compilador emitirá sites de chamada não virtuais para esses membros. Isso pode proporcionar um ganho de desempenho mensurável para o código sensível ao desempenho.|  
+|[CA1823: evitar campos privados não usados](../code-quality/ca1823-avoid-unused-private-fields.md)|Foram detectados campos particulares que aparentemente não são acessados no assembly.|  
+|[CA1824: marcar assemblies com NeutralResourcesLanguageAttribute](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|O atributo NeutralResourcesLanguage informa o ResourceManager da linguagem que foi usada para exibir os recursos de uma cultura neutra para um assembly. Isso melhora o desempenho da pesquisa para o primeiro recurso carregado e pode reduzir o conjunto de trabalho.|

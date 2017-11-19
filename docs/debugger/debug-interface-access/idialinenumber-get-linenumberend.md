@@ -1,44 +1,42 @@
 ---
-title: "IDiaLineNumber::get_lineNumberEnd | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaLineNumber::get_lineNumberEnd"
+title: ': Get_linenumberend | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber::get_lineNumberEnd method
 ms.assetid: b101853e-2bcf-47c1-acef-e13984c7ea9d
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7d87d8b6975a68f74e6900ef85ea9a19c5cfa810
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber::get_lineNumberEnd
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera o número de linha com base em uma fonte onde a instrução ou expressão termina.  
+# <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
+Recupera o número de linha com base em uma fonte em que a instrução ou expressão termina.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_lineNumberEnd (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_lineNumberEnd (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna o número da linha onde a instrução ou expressão termina.  Se o valor for zero, as informações finais não estão presentes.  
+ [out] Retorna o número da linha em que a instrução ou expressão termina. Se o valor for zero, as informações de fim não estão presentes.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não há suporte para esta propriedade.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

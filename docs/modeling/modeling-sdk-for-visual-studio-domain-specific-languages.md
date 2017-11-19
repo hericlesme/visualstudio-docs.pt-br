@@ -1,40 +1,25 @@
 ---
-title: "SDK de modelagem para Visual Studio - linguagens específicas do domínio | Documentos do Microsoft"
+title: "SDK de modelagem para Visual Studio - linguagens específicas do domínio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
-caps.latest.revision: 77
+caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 86e70eb82260cdced1ee4d74965832fbc7fa56ab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK de Modelagem para Visual Studio - linguagens específicas ao domínio
 Usando o SDK de modelagem para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode criar ferramentas de desenvolvimento sofisticado baseado no modelo que você pode integrar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Da mesma forma, você pode criar uma ou mais definições de modelo e integrá-las em um conjunto de ferramentas.  
@@ -57,9 +42,9 @@ Usando o SDK de modelagem para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs
   
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
  
- [Postagens de blogs relacionados](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+ [Postagens de blog relacionados](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
   
- Para obter orientação sobre técnicas avançadas e solução de problemas, visite [fórum DSL < / modelagem ferramentas extensibilidade do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).  
+ Para obter orientação sobre técnicas avançadas e solução de problemas, visite [DSL do Visual Studio e extensibilidade de ferramentas de modelagem fórum](http://go.microsoft.com/fwlink/?LinkID=186074).  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Introdução às linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md)  
@@ -93,4 +78,3 @@ Usando o SDK de modelagem para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs
  [Como migrar uma linguagem específica de domínio para uma nova versão](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
   
  [Referência de API do SDK de Modelagem para Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
-

@@ -1,46 +1,46 @@
 ---
-title: "Anotando estruturas e classes | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_Field_size_bytes_part_"
-  - "_Field_size_bytes_full_opt_"
-  - "_Field_size_bytes_"
-  - "_Field_size_opt_"
-  - "_Field_size_part_"
-  - "_Field_size_bytes_part_opt_"
-  - "_Field_range_"
-  - "_Field_size_part_opt_"
-  - "_Field_size_"
-  - "_Field_size_bytes_opt_"
-  - "_Struct_size_bytes_"
-  - "_Field_size_bytes_full_"
-  - "_Field_size_full_"
-  - "_Field_size_full_opt_"
+title: Anotando estruturas e Classes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- _Field_size_bytes_part_
+- _Field_size_bytes_full_opt_
+- _Field_size_bytes_
+- _Field_size_opt_
+- _Field_size_part_
+- _Field_size_bytes_part_opt_
+- _Field_range_
+- _Field_size_part_opt_
+- _Field_size_
+- _Field_size_bytes_opt_
+- _Struct_size_bytes_
+- _Field_size_bytes_full_
+- _Field_size_full_
+- _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 651108f2c917fb81857e3466384a9bfebada4a4b
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/15/2017
 ---
-# Anotando estruturas e classes
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Você pode anotar struct e membros de classe usando anotações que atuam como as invariáveis — eles presumidamente true em qualquer chamada de função ou entrada/saída da função que envolve a estrutura de inclusão como um parâmetro ou um valor de resultado.  
+# <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
+Você pode anotar os membros de classe e struct usando anotações que atuam como invariáveis — presume true em qualquer chamada de função ou entrada/saída da função que envolve a estrutura delimitador como um parâmetro ou um valor de resultado.  
   
-## <a name="struct-and-class-annotations"></a>Struct e anotações de classe  
+## <a name="struct-and-class-annotations"></a>Anotações de classe e struct  
   
 -   `_Field_range_(low, high)`  
   
-     O campo está no intervalo (inclusivo) de `low` para `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicado ao objeto anotado usando as condições apropriadas anterior ou posterior.  
+     O campo está no intervalo (inclusivo) de `low` para `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicadas ao objeto anotado usando as condições apropriadas anterior ou posterior.  
   
 -   `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
@@ -48,7 +48,7 @@ Você pode anotar struct e membros de classe usando anotações que atuam como a
   
 -   `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
-     Um campo que tem um tamanho gravável em elementos (ou bytes) como especificado pelo `size`, e o `count` desses elementos (bytes) que podem ser lidos.  
+     Um campo que tem um tamanho gravável em elementos (ou bytes) como especificado pelo `size`e o `count` desses elementos (bytes) que podem ser lidos.  
   
 -   `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
@@ -58,19 +58,19 @@ Você pode anotar struct e membros de classe usando anotações que atuam como a
   
      Um campo que tem o tamanho legível e gravável em elementos (ou bytes) como especificado pelo `size`.  
   
-     Aplica-se a declaração de estrutura ou classe.  Indica que um objeto válido desse tipo pode ser maior do que o tipo declarado, com o número de bytes especificado pela `size`.  Por exemplo:  
+     Aplica-se a declaração de classe ou estrutura.  Indica que um objeto válido desse tipo pode ser maior do que o tipo declarado, com o número de bytes especificado pela `size`.  Por exemplo:  
   
     ```cpp  
   
     typedef _Struct_size_bytes_(nSize)  
     struct MyStruct {  
         size_t nSize;  
-        …  
+        ...  
     };  
   
     ```  
   
-     O tamanho do buffer em bytes de um parâmetro `pM` do tipo `MyStruct *` é levado para ser:  
+     O tamanho do buffer em bytes de um parâmetro `pM` do tipo `MyStruct *` , em seguida, é considerada como:  
   
     ```cpp  
     min(pM->nSize, sizeof(MyStruct))  

@@ -1,44 +1,29 @@
 ---
-title: Elemento TemplateID (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento TemplateID (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#TemplateID
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateID
 helpviewer_keywords:
 - <TemplateID> element [Visual Studio Templates]
 - TemplateID element [Visual Studio Templates]
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
-caps.latest.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a69f3c22a6984c0ce18052e18dcf0ba4603d0c31
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5907a6953ae58c3cca042ce7aa975eec9f4563f1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Elemento TemplateID (modelos do Visual Studio)
-Especifica um identificador para um modelo de item que é categorizado em um grupo de modelos de item, o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) elemento.  
+Especifica um identificador para um modelo de item é categorizado em um grupo de modelos de item, o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) elemento.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -54,7 +39,7 @@ Especifica um identificador para um modelo de item que é categorizado em um gru
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -63,10 +48,10 @@ Especifica um identificador para um modelo de item que é categorizado em um gru
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
- A `string` que representa um identificador para um modelo de item que é categorizado em um grupo de modelos de item, o `TemplateGroupID` elemento.  
+ Um `string` que representa um identificador para um modelo de item é categorizado em um grupo de modelos de item, o `TemplateGroupID` elemento.  
   
 ## <a name="remarks"></a>Comentários  
  `TemplateID` é um elemento opcional.  

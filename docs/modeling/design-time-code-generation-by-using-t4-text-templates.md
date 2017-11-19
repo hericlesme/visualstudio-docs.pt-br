@@ -1,5 +1,5 @@
 ---
-title: "Geração de código de tempo de design usando modelos de texto T4 | Documentos do Microsoft"
+title: "Geração de código de tempo de design usando modelos de texto T4 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,39 +15,25 @@ helpviewer_keywords:
 - Text Template project item
 - text templates, generating code for your application
 ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
-caps.latest.revision: 38
+caps.latest.revision: "38"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 9ce8c3af5354d783900fda423483f55452e93854
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2444687c420feb1b7e949df349d3e609f1c542d0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código no tempo de design usando modelos de texto T4
-Modelos de texto T4 em tempo de design permitem que você gerar o código do programa e outros arquivos em seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto. Normalmente, você escreve os modelos para que eles variem o código que geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre os requisitos do seu aplicativo.  
+Modelos de texto T4 de tempo de design permitem que você gerar o código do programa e outros arquivos em seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto. Normalmente, você escreve os modelos de alterar o código que elas geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre requisitos do seu aplicativo.  
   
- Por exemplo, você pode ter um modelo que define um fluxo de trabalho, como uma tabela ou um diagrama. A partir do modelo, você pode gerar o software que executa o fluxo de trabalho. Quando os requisitos dos seus usuários mudam, fica fácil discutir o novo fluxo de trabalho com os usuários. Gerar novamente o código do fluxo de trabalho é mais confiável do que atualizar o código manualmente.  
+ Por exemplo, você pode ter um modelo que define um fluxo de trabalho, como uma tabela ou um diagrama. A partir do modelo, você pode gerar o software que executa o fluxo de trabalho. Quando as necessidades de seus usuários mudarem, é fácil discutir o novo fluxo de trabalho com os usuários. Gerar novamente o código do fluxo de trabalho é mais confiável do que atualizar o código manualmente.  
   
 > [!NOTE]
->  A *modelo* é uma fonte de dados que descreve um aspecto específico de um aplicativo. Ela pode estar em qualquer formulário, tipo de arquivo ou banco de dados. Ela não precisa estar em qualquer formulário particular, como um modelo UML ou modelo DSL. Os modelos comuns estão na forma de tabelas ou arquivos XML.  
+>  Um *modelo* é uma fonte de dados que descreve um aspecto específico de um aplicativo. Ela pode estar em qualquer formulário, tipo de arquivo ou banco de dados. Ela não precisa estar em qualquer formulário particular, como um modelo UML ou modelo DSL. Os modelos comuns estão na forma de tabelas ou arquivos XML.  
   
- Você provavelmente já está familiarizado com a geração de código. Quando você define recursos em uma **. resx** de arquivos em seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução, um conjunto de classes e métodos é gerado automaticamente. O arquivo de recursos torna mais fácil e confiável editar os recursos do que se você tivesse que editar as classes e métodos. Com modelos de texto, você pode gerar o código da mesma forma a partir de uma fonte de seu próprio projeto.  
+ Você provavelmente já está familiarizado com a geração de código. Quando você define os recursos em um **. resx** do arquivo em seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução, um conjunto de classes e métodos é gerado automaticamente. O arquivo de recursos torna mais fácil e confiável editar os recursos do que se você tivesse que editar as classes e métodos. Com modelos de texto, você pode gerar o código da mesma forma a partir de uma fonte de seu próprio projeto.  
   
  Um modelo de texto contém uma mistura do texto que você deseja gerar e o código de programa que gera partes variáveis ​​do texto. O código do programa permite repetir ou omitir condicionalmente partes do texto gerado. O texto gerado pode ser o próprio código de programa que fará parte do seu aplicativo.  
   
@@ -55,13 +41,13 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para criar um modelo T4 em tempo de design no Visual Studio  
   
-1.  Criar um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de projeto ou abra um existente.  
+1.  Criar um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de projeto ou abrir um existente.  
   
      Por exemplo, no **arquivo** menu, escolha **novo**, **projeto**.  
   
-2.  Adicione um arquivo de modelo de texto ao seu projeto e dê a ele um nome que tenha a extensão **. TT**.  
+2.  Adicionar um arquivo de modelo de texto ao seu projeto e dê a ele um nome que tem a extensão **. TT**.  
   
-     Para fazer isso, em **Solution Explorer**, no menu de atalho do projeto, escolha **adicionar**, **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** no painel central.  
+     Para fazer isso, em **Solution Explorer**, no menu de atalho do projeto, escolha **adicionar**, **Novo Item**. No **Adicionar Novo Item** select da caixa de diálogo **modelo de texto** do painel central.  
   
      Observe que o **ferramenta personalizada** é de propriedade do arquivo **TextTemplatingFileGenerator**.  
   
@@ -82,12 +68,12 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
 5.  Salve o arquivo.  
   
-     Você pode ver um **aviso de segurança** caixa de mensagem que solicita que você confirme se deseja executar o modelo. Clique em **OK**.  
+     Você pode ver um **aviso de segurança** caixa de mensagem que solicita a confirmação de que você deseja executar o modelo. Clique em **OK**.  
   
 6.  Em **Solution Explorer**, expanda o nó do arquivo de modelo e você encontrará um arquivo com a extensão **. txt**. O arquivo contém o texto gerado a partir do modelo.  
   
     > [!NOTE]
-    >  Se seu projeto for um projeto do Visual Basic, você deve clicar em **Show All Files** para ver o arquivo de saída.  
+    >  Se seu projeto for um projeto do Visual Basic, você deve clicar em **Mostrar todos os arquivos** para ver o arquivo de saída.  
   
 ### <a name="regenerating-the-code"></a>Gerando novamente o código  
  Um modelo será executado, gerando o arquivo subsidiário, em qualquer um dos seguintes casos:  
@@ -96,11 +82,11 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
 -   Salve o modelo.  
   
--   Clique em **transformar todos os modelos** no **criar** menu. Isso transformará todos os modelos na solução [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+-   Clique em **transformar todos os modelos de** no **criar** menu. Isso transformará todos os modelos na solução [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
--   Em **Solution Explorer**, no menu de atalho de qualquer arquivo, escolha **executar ferramenta personalizada**. Use esse método para transformar um subconjunto de modelos selecionado.  
+-   Em **Solution Explorer**, no menu de atalho de qualquer arquivo, escolha **executar personalizado ferramenta**. Use esse método para transformar um subconjunto de modelos selecionado.  
   
- Você também pode configurar um projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para executar os modelos quando os arquivos de dados que eles leem mudarem. Para obter mais informações, consulte [gerando o código automaticamente](#Regenerating).  
+ Você também pode configurar um projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para executar os modelos quando os arquivos de dados que eles leem mudarem. Para obter mais informações, consulte [regenerar o código automaticamente](#Regenerating).  
   
 ## <a name="generating-variable-text"></a>Gerando texto variável  
  Os modelos de texto permitem que você use o código de programa para alterar o conteúdo do arquivo gerado.  
@@ -109,7 +95,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
 1.  Altere o conteúdo do arquivo `.tt`:  
   
-    ```c#  
+    ```csharp  
     <#@ template hostspecific="false" language="C#" #>  
     <#@ output extension=".txt" #>  
     <#int top = 10;  
@@ -120,7 +106,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
     <# } #>  
     ```  
   
-    ```vb#  
+    ```vb  
     <#@ template hostspecific="false" language="VB" #>  
     <#@ output extension=".txt" #>  
     <#Dim top As Integer = 10  
@@ -149,12 +135,12 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
 -   Defina pontos de interrupção no modelo, da mesma maneira que você faria para um código comum.  
   
--   Escolha **depurar modelo T4** no menu de atalho do arquivo de modelo de texto no Gerenciador de soluções.  
+-   Escolha **depurar T4 modelo** no menu de atalho do arquivo de modelo de texto no Gerenciador de soluções.  
   
  O modelo executará e parará nos pontos de interrupção. Você pode examinar variáveis ​​e percorrer o código como de costume.  
   
 > [!TIP]
-> O  `debug="true"` torna o mapa de código gerado mais preciso para o modelo de texto, com a inserção de mais diretivas de numeração de linhas no código gerado. Se você deixa-o de fora, os pontos de interrupção podem parar a execução no estado errado.  
+>  O `debug="true"` torna o mapa de código gerado mais preciso para o modelo de texto, com a inserção de mais diretivas de numeração de linhas no código gerado. Se você deixa-o de fora, os pontos de interrupção podem parar a execução no estado errado.  
 >   
 >  Mas, você pode deixar a cláusula na diretiva do modelo mesmo quando você não estiver depurando. Isso causa apensa uma pequena queda de desempenho.  
   
@@ -167,7 +153,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
 2.  Insira o código que gerará o código da solução que você precisa. Por exemplo, se você deseja gerar três instruções de campo inteiro em uma classe:  
   
-    ```c#  
+    ```csharp  
   
               <#@ template debug="false" hostspecific="false" language="C#" #>  
     <#@ output extension=".cs" #>  
@@ -182,7 +168,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
     }  
     ```  
   
-    ```vb#  
+    ```vb  
     <#@ template debug="false" hostspecific="false" language="VB" #>  
     <#@ output extension=".cs" #>  
     <# Dim properties = {"P1", "P2", "P3"} #>  
@@ -239,7 +225,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
  Por exemplo, depois de importar **System.IO**, você poderia escrever:  
   
-```c#  
+```csharp  
   
       <# var properties = File.ReadLines("C:\\propertyList.txt");#>  
 ...  
@@ -247,7 +233,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
 ...  
 ```  
   
-```vb#  
+```vb  
 <# For Each propertyName As String In   
              File.ReadLines("C:\\propertyList.txt")  
 #>  
@@ -264,7 +250,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
  Depois, você pode escrever, por exemplo:  
   
-```c#  
+```csharp  
 <# string fileName = this.Host.ResolvePath("filename.txt");  
   string [] properties = File.ReadLines(filename);  
 #>  
@@ -274,7 +260,7 @@ Modelos de texto T4 em tempo de design permitem que você gerar o código do pro
   
 ```  
   
-```vb#  
+```vb  
 <# Dim fileName = Me.Host.ResolvePath("propertyList.txt")  
    Dim properties = File.ReadLines(filename)  
 #>  
@@ -308,10 +294,10 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Um modelo de texto é executado em seu próprio domínio de aplicativo e os serviços são acessados ​​por empacotamento. Nesse caso, GetCOMService() é mais confiável que GetService().  
   
-##  <a name="a-nameregeneratinga-regenerating-the-code-automatically"></a><a name="Regenerating"></a>Gerando o código automaticamente  
+##  <a name="Regenerating"></a>Gerar novamente o código automaticamente  
  Normalmente, vários arquivos em uma solução [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] são gerados com um modelo de entrada. Cada arquivo é gerado a partir do seu próprio modelo, mas todos os modelos se referem ao mesmo modelo.  
   
- Se o modelo de fonte mudar, você deve executar novamente todos os modelos na solução. Para fazer isso manualmente, escolha **transformar todos os modelos** sobre o **criar** menu.  
+ Se o modelo de fonte mudar, você deve executar novamente todos os modelos na solução. Para fazer isso manualmente, escolha **transformar todos os modelos de** no **criar** menu.  
   
  Se você tiver o SDK de visualização e modelagem do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado, você pode transformar todos os modelos automaticamente sempre que você executar uma compilação. Para fazer isso, edite o arquivo do projeto (.csproj ou .vbproj) em um editor de texto e adicione as seguintes linhas perto do final do arquivo, depois de qualquer outra instrução `<import>`:  
 
@@ -337,8 +323,8 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="a-nameconvertinga-converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Convertendo um arquivo existente em um modelo  
- Um recurso útil dos modelos é que eles parecem muito com os arquivos que eles geram, além de um código de programa inserido. Isso sugere um método útil para a criação de um modelo. Primeiro crie um arquivo comum como um protótipo, como um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de arquivo e introduza gradualmente o código de geração que varia o arquivo resultante.  
+##  <a name="Converting"></a>Convertendo um arquivo existente em um modelo  
+ Um recurso útil dos modelos é que eles parecem muito com os arquivos que eles geram, além de um código de programa inserido. Isso sugere um método útil para a criação de um modelo. Primeiro crie um arquivo comum como um protótipo, como um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de arquivo e introduzir gradualmente o código de geração que varia o arquivo resultante.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para converter um arquivo existente para um modelo de tempo de design  
   
@@ -348,7 +334,7 @@ Warning("A warning message");
   
 3.  No Gerenciador de soluções, altere a extensão de nome de arquivo para **. TT**.  
   
-4.  Verifique se as seguintes propriedades de **. TT** arquivo:  
+4.  Verifique se as seguintes propriedades do **. TT** arquivo:  
   
     |||  
     |-|-|  
@@ -368,14 +354,14 @@ Warning("A warning message");
   
 6.  Salve o arquivo.  
   
-     Um arquivo subsidiário é criado com a extensão especificada. As propriedades dele estão corretas para o tipo de arquivo. Por exemplo, o **Build Action** propriedade de um arquivo. cs seria **compilar**.  
+     Um arquivo subsidiário é criado com a extensão especificada. As propriedades dele estão corretas para o tipo de arquivo. Por exemplo, o **ação de compilação** propriedade de um arquivo. cs seria **compilar**.  
   
      Verifique se o arquivo gerado contém o mesmo conteúdo que o arquivo original.  
   
 7.  Identifique uma parte do arquivo que você deseja variar. Por exemplo, uma parte que aparece apenas sob certas condições, uma parte que se repete ou em que os valores específicos variam. Insira o código de geração. Salve o arquivo e verifique se o arquivo subsidiário é gerado corretamente. Repita essa etapa.  
   
 ## <a name="guidelines-for-code-generation"></a>Diretrizes para a geração de código  
- Consulte [diretrizes para modelos de texto T4 escrita](../modeling/guidelines-for-writing-t4-text-templates.md).  
+ Consulte [diretrizes para modelos de texto T4 gravação](../modeling/guidelines-for-writing-t4-text-templates.md).  
   
 ## <a name="next-steps"></a>Próximas etapas  
   
@@ -389,4 +375,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>Consulte também  
  [Diretrizes para escrever modelos de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)
-

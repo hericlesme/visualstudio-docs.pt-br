@@ -1,56 +1,56 @@
 ---
-title: "CA1409: os tipos vis&#237;veis Com devem ser cri&#225;veis | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ComVisibleTypesShouldBeCreatable"
-  - "CA1409"
-helpviewer_keywords: 
-  - "ComVisibleTypesShouldBeCreatable"
-  - "CA1409"
+title: "CA1409: Os tipos visíveis Com devem ser instanciáveis | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ComVisibleTypesShouldBeCreatable
+- CA1409
+helpviewer_keywords:
+- ComVisibleTypesShouldBeCreatable
+- CA1409
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c8d9fe357142cf8b95be0298797c4a18e9ee0df7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1409: os tipos vis&#237;veis Com devem ser cri&#225;veis
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: os tipos visíveis Com devem ser criáveis
 |||  
 |-|-|  
-|TypeName|ComVisibleTypesShouldBeCreatable|  
+|NomeDoTipo|ComVisibleTypesShouldBeCreatable|  
 |CheckId|CA1409|  
 |Categoria|Microsoft.Interoperability|  
-|Alteração Significativa|Sem quebra|  
+|Alteração Significativa|Não recentes|  
   
-## Causa  
- Um tipo de referência que é marcado como especificamente visível ao Component Object Model \(COM\) contém um construtor público mas não com parâmetros contém um construtor \(sem parâmetros\) público padrão.  
+## <a name="cause"></a>Causa  
+ Um tipo de referência é especificamente marcado como visível para o modelo de objeto componente (COM) contém um construtor parametrizado público, mas não tem um construtor público padrão (sem parâmetros).  
   
-## Descrição da Regra  
- Um tipo sem um construtor público padrão não pode ser criada por clientes COM.  No entanto, o tipo ainda poderá ser acessado pelos clientes COM se outros meios estão disponíveis para criar o tipo e o passar ao cliente \(por exemplo, com o valor de retorno da chamada do método\).  
+## <a name="rule-description"></a>Descrição da Regra  
+ Um tipo sem um construtor padrão público não pode ser criado por clientes COM. No entanto, o tipo ainda pode ser acessado por clientes COM se houver outros meios criar o tipo e passá-lo para o cliente (por exemplo, por meio do valor de retorno de uma chamada de método).  
   
- A regra ignora os tipos derivados de <xref:System.Delegate?displayProperty=fullName>.  
+ A regra ignora os tipos que são derivados de <xref:System.Delegate?displayProperty=fullName>.  
   
- Por padrão, os seguintes são visíveis à: os assemblies, tipos de chaves pública, membros públicos da instância do no utilitário, e todos os membros de tipos de valor públicos.  
+ Por padrão, os seguintes são visíveis no COM: assemblies, tipos públicos, membros de instância pública em tipos públicos e todos os membros de tipos de valor público.  
   
-## Como Corrigir Violações  
- Para corrigir uma violação desta regra, adicione um construtor padrão público ou remover <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> do tipo.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, adicione um construtor padrão público ou remova o <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> do tipo.  
   
-## Quando Suprimir Alertas  
- É seguro suprimir um aviso dessa regra se outros modos são fornecidas para criar e passe o objeto ao cliente da.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso de que essa regra se outros modos são fornecidos para criar e passar o objeto para o cliente COM.  
   
-## Regras Relacionadas  
+## <a name="related-rules"></a>Regras relacionadas  
  [CA1017: marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## Consulte também  
- [Qualificando tipos do .NET para interoperação](../Topic/Qualifying%20.NET%20Types%20for%20Interoperation.md)   
- [Interoperação com código não gerenciado](../Topic/Interoperating%20with%20Unmanaged%20Code.md)
+## <a name="see-also"></a>Consulte também  
+ [Qualificando tipos do .NET para interoperação](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
+ [Interoperação com código não gerenciado](/dotnet/framework/interop/index)

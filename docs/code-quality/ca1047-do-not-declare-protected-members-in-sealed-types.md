@@ -1,11 +1,10 @@
 ---
-title: 'CA1047: Do not declare protected members in sealed types | Microsoft Docs'
+title: "CA1047: Não declarar membros protegidos em tipos lacrados | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,55 +14,40 @@ helpviewer_keywords:
 - CA1047
 - DoNotDeclareProtectedMembersInSealedTypes
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 09e385abe5443912601f1dacce8760a3882b3cec
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: abdde6524f179cff3a1dd368cf218a91499f5381
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Do not declare protected members in sealed types
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: não declarar membros protegidos em tipos lacrados
 |||  
 |-|-|  
-|TypeName|DoNotDeclareProtectedMembersInSealedTypes|  
+|NomeDoTipo|DoNotDeclareProtectedMembersInSealedTypes|  
 |CheckId|CA1047|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Categoria|Microsoft.Design|  
+|Alteração Significativa|Não recentes|  
   
-## <a name="cause"></a>Cause  
- A public type is `sealed` (`NotInheritable` in Visual basic) and declares a protected member or a protected nested type. This rule does not report violations for <xref:System.Object.Finalize%2A> methods, which must follow this pattern.  
+## <a name="cause"></a>Causa  
+ É um tipo público `sealed` (`NotInheritable` no Visual basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações de <xref:System.Object.Finalize%2A> métodos, que devem seguir esse padrão.  
   
-## <a name="rule-description"></a>Rule Description  
- Types declare protected members so that inheriting types can access or override the member. By definition, you cannot inherit from a sealed type, which means that protected methods on sealed types cannot be called.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Os tipos declaram membros protegidos de forma que a herança de tipos possa acessar ou substituir o membro. Por definição, você não pode herdar de um tipo lacrado, que significa que protegido métodos em tipos lacrados não pode ser chamadas.  
   
- The C# compiler issues a warning for this error.  
+ O compilador c# emite um aviso para esse erro.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the access level of the member to private, or make the type inheritable.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, altere o nível de acesso do membro para privada ou torne o tipo herdado.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. Leaving the type in its current state can cause maintenance issues and does not provide any benefits.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra. Deixar o tipo em seu estado atual pode causar problemas de manutenção e não oferece nenhum benefício.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates this rule.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra um tipo que violam essa regra.  
   
- [!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)] [!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]
+ [!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)]
+ [!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]

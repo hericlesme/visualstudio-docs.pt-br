@@ -1,11 +1,10 @@
 ---
-title: 'CA1712: Do not prefix enum values with type name | Microsoft Docs'
+title: 'CA1712: Valores enum como prefixo com o nome do tipo | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,65 +14,51 @@ helpviewer_keywords:
 - CA1712
 - DoNotPrefixEnumValuesWithTypeName
 ms.assetid: df0e3a12-67bf-48f1-a10b-2ef60484a5c7
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 771fe3536bbf9a47962f6219ce249a168b6b3215
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a7c2ba5f81cadb8940c519174bec7cf76cbf8500
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Do not prefix enum values with type name
+# <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: não use valores enum como prefixo com o nome do tipo
 |||  
 |-|-|  
-|TypeName|DoNotPrefixEnumValuesWithTypeName|  
+|NomeDoTipo|DoNotPrefixEnumValuesWithTypeName|  
 |CheckId|CA1712|  
-|Category|Microsoft.Naming|  
-|Breaking Change|Breaking|  
+|Categoria|Microsoft.Naming|  
+|Alteração Significativa|Quebra|  
   
-## <a name="cause"></a>Cause  
- An enumeration contains a member whose name starts with the type name of the enumeration.  
+## <a name="cause"></a>Causa  
+ Uma enumeração contém um membro cujo nome começa com o nome do tipo de enumeração.  
   
-## <a name="rule-description"></a>Rule Description  
- Names of enumeration members are not prefixed with the type name because type information is expected to be provided by development tools.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Nomes de membros de enumeração não são prefixados com o nome do tipo porque as informações de tipo deve ser fornecido pelas ferramentas de desenvolvimento.  
   
- Naming conventions provide a common look for libraries that target the common language runtime. This reduces the time that is required for to learn a new software library, and increases customer confidence that the library was developed by someone who has expertise in developing managed code.  
+ Convenções de nomenclatura fornecem uma aparência comum para bibliotecas de destino do common language runtime. Isso reduz o tempo que é necessário para aprender uma nova biblioteca de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por uma pessoa com experiência em desenvolvimento de código gerenciado.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, remove the type name prefix from the enumeration member.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, remova o prefixo de nome de tipo de membro de enumeração.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra.  
   
-## <a name="example"></a>Example  
- The following example shows an incorrectly named enumeration followed by the corrected version.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra uma enumeração incorretamente nomeada seguida a versão corrigida.  
   
- [!code-csharp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CSharp/ca1712-do-not-prefix-enum-values-with-type-name_1.cs)] [!code-cpp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CPP/ca1712-do-not-prefix-enum-values-with-type-name_1.cpp)] [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]  
+ [!code-csharp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CSharp/ca1712-do-not-prefix-enum-values-with-type-name_1.cs)]
+ [!code-cpp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CPP/ca1712-do-not-prefix-enum-values-with-type-name_1.cpp)]
+ [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1711: Identifiers should not have incorrect suffix](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1711: os identificadores não devem ter sufixo incorreto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
   
- [CA1027: Mark enums with FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
+ [CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
   
- [CA2217: Do not mark enums with FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
+ [CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  <xref:System.Enum?displayProperty=fullName>

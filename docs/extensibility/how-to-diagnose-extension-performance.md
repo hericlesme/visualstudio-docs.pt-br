@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b78a02b9d780b9556cbbf42fce04b1da06e22833
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir o impacto de extensão na inicialização
 
@@ -195,4 +179,3 @@ Um dos outros modos de exibição no rastreamento que serão úteis para determi
 ## <a name="summary"></a>Resumo
 
 Inicialização do Visual Studio foi uma das áreas que continuamente chegar comentários. Nosso objetivo conforme mencionado anteriormente é para todos os usuários tenham uma inicialização consistente a experiência independentemente de componentes e extensões que esteja instalado e queremos trabalhar com os proprietários de extensão para ajudá-lo nos ajudar a alcançar essa meta. A orientação acima deve ser útil para entender o impacto extensões na inicialização e ou evitar a necessidade de automático de carga ou carregá-lo de forma assíncrona para minimizar o impacto na produtividade do usuário.
-

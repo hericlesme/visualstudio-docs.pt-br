@@ -19,30 +19,15 @@ helpviewer_keywords:
 - MSBuild, dependency diagrams
 - MSBuild, validating code
 ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
-caps.latest.revision: 82
+caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 53c623ce7ab7126c22aaab856a439862252a5d56
-ms.contentlocale: pt-br
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -282,4 +267,3 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 ## <a name="see-also"></a>Consulte também  
  [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)   
  [Vídeo: Validar suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
-

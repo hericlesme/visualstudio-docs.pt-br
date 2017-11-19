@@ -1,82 +1,82 @@
 ---
-title: "CA1901: as declara&#231;&#245;es de P/Invoke devem ser port&#225;teis | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1901"
-  - "PInvokeDeclarationsShouldBePortable"
-helpviewer_keywords: 
-  - "CA1901"
-  - "PInvokeDeclarationsShouldBePortable"
+title: "CA1901: Declarações P Invoke devem ser portáteis | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1901
+- PInvokeDeclarationsShouldBePortable
+helpviewer_keywords:
+- CA1901
+- PInvokeDeclarationsShouldBePortable
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
-caps.latest.revision: 23
-caps.handback.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c3c048ae73e2b15035c9be8afd6a82c860544bb5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA1901: as declara&#231;&#245;es de P/Invoke devem ser port&#225;teis
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: as declarações de P/Invoke devem ser portáteis
 |||  
 |-|-|  
-|TypeName|PInvokeDeclarationsShouldBePortable|  
+|NomeDoTipo|PInvokeDeclarationsShouldBePortable|  
 |CheckId|CA1901|  
 |Categoria|Microsoft.Portability|  
-|Alteração Significativa|Interromper \- se o P\/Invoke é visível fora do assembly.  Interrompendo não \- se o P\/Invoke não é visível fora do assembly.|  
+|Alteração Significativa|Quebrar - se a P/Invoke é visível fora do assembly. Não separáveis - se a P/Invoke não é visível fora do assembly.|  
   
-## Causa  
- Esta regra avalia o tamanho de cada parâmetro e o valor de retorno de um P\/Invoke e verifique se seu tamanho, quando marshaling para código não gerenciado em plataformas de 32 bits e de 64 bits, está correto.  A violação mais comuns dessa regra é transmitir um inteiro fixa dimensionado onde um plataforma dependente, variável ponteiro\- dimensionado é necessário.  
+## <a name="cause"></a>Causa  
+ Essa regra avalia o tamanho de cada parâmetro e o valor de retorno de um P/Invoke e verifica se o seu tamanho, quando passa por marshaling para código não gerenciado em plataformas de 32 bits e 64 bits, está correto. É a violação mais comum dessa regra passar um inteiro de tamanho fixo onde a variável dependente de plataforma, o tamanho de ponteiro é necessária.  
   
-## Descrição da Regra  
- Qualquer um dos seguintes cenários violar esta regra ocorre:  
+## <a name="rule-description"></a>Descrição da Regra  
+ Qualquer um dos seguintes cenários viola essa regra ocorre:  
   
--   O valor de retorno ou o parâmetro são digitados como um inteiro de tamanho fixo quando deve ser digitado como `IntPtr`.  
+-   O valor de retorno ou parâmetro é digitado como um inteiro de tamanho fixo quando ele deve ser digitado como um `IntPtr`.  
   
--   O valor de retorno ou o parâmetro são digitados como `IntPtr` quando devem ser digitados como um inteiro de tamanho fixo.  
+-   O valor de retorno ou parâmetro é digitado como um `IntPtr` quando ele deve ser digitado como um inteiro de tamanho fixo.  
   
-## Como Corrigir Violações  
- Você pode corrigir essa violação usando `IntPtr` ou `UIntPtr` para representar os identificadores em vez de `Int32` ou de `UInt32`.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Você pode corrigir essa violação usando `IntPtr` ou `UIntPtr` representar identificadores em vez de `Int32` ou `UInt32`.  
   
-## Quando Suprimir Alertas  
- Você não deve eliminar esse aviso.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Você não deve suprimir este aviso.  
   
-## Exemplo  
+## <a name="example"></a>Exemplo  
  O exemplo a seguir demonstra uma violação desta regra.  
   
-```c#  
+```csharp  
 internal class NativeMethods  
 {  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, IntPtr nIconIndex);  
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
+        string lpszExeFileName, IntPtr nIconIndex);  
 }  
 ```  
   
- Neste exemplo, o parâmetro de `nIconIndex` é declarado como `IntPtr`, que é de 4 bytes de comprimento em uma plataforma de 32 bits e 8 bytes de comprimento em uma plataforma de 64 bits.  Na declaração não gerenciados de forma, você pode ver que `nIconIndex` é um número inteiro sem sinal de 4 bytes em todas as plataformas.  
+ Neste exemplo, o `nIconIndex` parâmetro seja declarado como um `IntPtr`, que é de 4 bytes de largura em uma plataforma de 32 bits e de 8 bytes de largura em uma plataforma de 64 bits. A declaração não gerenciada que segue, você verá que `nIconIndex` é um inteiro sem sinal de 4 bytes em todas as plataformas.  
   
-```c#  
+```csharp  
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,   
-    UINT nIconIndex);  
+    UINT nIconIndex);  
 ```  
   
-## Exemplo  
- Para corrigir a violação, altere a declaração ao seguinte:  
+## <a name="example"></a>Exemplo  
+ Para corrigir a violação, altere a declaração para o seguinte:  
   
-```c#  
+```csharp  
 internal class NativeMethods{  
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
-    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
-        string lpszExeFileName, uint nIconIndex);  
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
+    internal static extern IntPtr ExtractIcon(IntPtr hInst,   
+        string lpszExeFileName, uint nIconIndex);  
 }  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Avisos de portabilidade](../code-quality/portability-warnings.md)

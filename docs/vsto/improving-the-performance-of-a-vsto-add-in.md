@@ -1,72 +1,69 @@
 ---
-title: Improving the Performance of a VSTO Add-in | Microsoft Docs
+title: Melhorando o desempenho de um suplemento do VSTO | Microsoft Docs
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ef25c2-6308-4737-a655-74bbbb472dc2
-caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ad0f4edffa387c89e5ef404117852f3f04574ca2
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: aa8aba456e6912569480305922511f6ffebe674b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="improving-the-performance-of-a-vsto-add-in"></a>Improving the Performance of a VSTO Add-in
-  You can give your users a better experience by optimizing VSTO Add-ins that you create for Office applications so that they quickly start up, shut down, open items, and perform other tasks. If your VSTO Add-in is for Outlook, you can also reduce the chance that your VSTO Add-in will be disabled because of poor performance. You can increase the performance of your VSTO Add-in by implementing the following strategies:  
+# <a name="improving-the-performance-of-a-vsto-add-in"></a>Melhorando o desempenho de um suplemento do VSTO
+  Você pode dar aos usuários uma experiência melhor otimizando suplementos do VSTO que você cria para o Office aplicativos para que eles iniciarem rapidamente, desligar, abrir itens e executar outras tarefas. Se o suplemento do VSTO para Outlook, você também pode reduzir a chance de que seu suplemento do VSTO será desabilitado devido ao baixo desempenho. Você pode aumentar o desempenho de seu suplemento do VSTO implementando as estratégias a seguir:  
   
--   [Load VSTO Add-ins on demand](#Load).  
+-   [Carregar o suplemento do VSTO sob demanda](#Load).  
   
--   [Publish Office solutions by using Windows Installer](#Publish).  
+-   [Publicar soluções do Office usando o Windows Installer](#Publish).  
   
--   [Bypass ribbon reflection](#Bypass).  
+-   [Ignorar a reflexão de faixa de opções](#Bypass).  
   
--   [Perform expensive operations in a separate execution thread](#Perform).  
+-   [Executar operações caras em um thread de execução separado](#Perform).  
   
- For more information about how to optimize an Outlook VSTO Add-in, see [Performance criteria for keeping VSTO Add-ins enabled](http://go.microsoft.com/fwlink/?LinkID=266503).  
+ Para obter mais informações sobre como otimizar um suplemento do VSTO do Outlook, consulte [critérios de desempenho para manter os suplementos do VSTO habilitados](http://go.microsoft.com/fwlink/?LinkID=266503).  
   
-##  <a name="Load"></a> Load VSTO Add-ins on demand  
- You can configure a VSTO Add-in to load only under the following circumstances:  
+##  <a name="Load"></a>Carregar o suplemento do VSTO sob demanda  
+ Você pode configurar um suplemento do VSTO para carregar somente nas seguintes circunstâncias:  
   
--   The first time that the user starts the application after the VSTO Add-in is installed.  
+-   Na primeira vez que o usuário inicia o aplicativo depois que o suplemento do VSTO é instalado.  
   
--   The first time that the user interacts with the VSTO Add-in after starting the application any subsequent time.  
+-   Na primeira vez que o usuário interage com o suplemento do VSTO após iniciar o aplicativo a qualquer momento subsequente.  
   
- For example, your VSTO Add-in might populate a worksheet with data when the user chooses a custom button that's labeled **Get My Data**. The application must load your VSTO Add-in at least one time so that the **Get My Data** button can appear in the ribbon. However, the VSTO Add-in doesn't load again when the user starts the application the next time. The VSTO Add-in loads only when the user chooses the **Get My Data** button.  
+ Por exemplo, o suplemento do VSTO pode preencher uma planilha com os dados quando o usuário escolhe um botão personalizado que é rotulado **obter meus dados**. O aplicativo deve carregar o suplemento do VSTO pelo menos uma vez para que o **obter meus dados** botão pode aparecer na faixa de opções. No entanto, o suplemento do VSTO não carrega novamente quando o usuário inicia o aplicativo na próxima vez. O suplemento do VSTO carrega apenas quando o usuário escolhe o **obter meus dados** botão.  
   
-#### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>To configure a ClickOnce solution to load VSTO Add-ins on demand  
+#### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>Para configurar uma solução ClickOnce para carregar o suplemento do VSTO sob demanda  
   
-1.  In **Solution Explorer**, choose the project node.  
+1.  Em **Solution Explorer**, escolha o nó do projeto.  
   
-2.  On the menu bar, choose **View**, **Property Pages**.  
+2.  Na barra de menus, escolha **Exibir**, **Páginas de Propriedade**.  
   
-3.  On the **Publish** tab, choose the **Options** button.  
+3.  Sobre o **publicar** guia, escolha o **opções** botão.  
   
-4.  In the **Publish Options** dialog box, choose the **Office Settings** list item, choose the **Load on Demand** option, and then choose the **OK** button.  
+4.  No **opções de publicação** caixa de diálogo caixa, escolha o **configurações Office** do item de lista, escolha o **carga sob demanda** opção e, em seguida, escolha o **Okey**botão.  
   
-#### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>To configure a Windows Installer solution to load VSTO Add-ins on demand  
+#### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Para configurar uma solução do Windows Installer para carregar o suplemento do VSTO sob demanda  
   
-1.  In the registry, set the `LoadBehavior` entry of the *Root*\Software\Microsoft\Office\\*ApplicationName*\Addins\\*Add-in ID* key to **0x10**.  
+1.  No registro, defina o `LoadBehavior` entrada o *raiz*\Software\Microsoft\Office\\*ApplicationName*\Addins\\*adicionar ID*chave para **0x10**.  
   
-     For more information, see [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md).  
+     Para obter mais informações, consulte [entradas do registro para suplementos do VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
-#### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>To configure a solution to load VSTO Add-ins on demand while you debug the solution  
+#### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Para configurar uma solução para carregar o suplemento do VSTO sob demanda ao depurar a solução  
   
-1.  Create a script that sets the `LoadBehavior` entry of the *Root*\Software\Microsoft\Office\\*ApplicationName*\Addins\\*Add-in ID* key to **0x10**.  
+1.  Criar um script que define o `LoadBehavior` entrada o *raiz*\Software\Microsoft\Office\\*ApplicationName*\Addins\\*adicionar ID* chave para **0x10**.  
   
-     The following code shows an example of this script.  
+     O código a seguir mostra um exemplo do script.  
   
     ```  
     [HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\MyAddIn]  
@@ -77,53 +74,54 @@ ms.lasthandoff: 08/30/2017
   
     ```  
   
-2.  Create a post-build event that updates the registry by using the script.  
+2.  Crie um evento de pós-compilação que atualiza o registro usando o script.  
   
-     The following code shows an example of a command string that you might add to a post-build event.  
+     O código a seguir mostra um exemplo de uma cadeia de caracteres de comando que você pode adicionar a um evento de pós-compilação.  
   
     ```  
     regedit /s "$(SolutionDir)$(SolutionName).reg"  
   
     ```  
   
-     For information about how to create post-build event in a C# project, see [How to: Specify Build Events &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Para obter informações sobre como criar um evento de pós-compilação em um projeto c#, consulte [como: especificar eventos de compilação &#40; C &#35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     For information about how to create a post-build event in a Visual Basic project, see [How to: Specify Build Events &#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Para obter informações sobre como criar um evento de pós-compilação em um projeto do Visual Basic, consulte [como: especificar eventos de compilação &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
-##  <a name="Publish"></a> Publish Office Solutions by Using Windows Installer  
- If you publish your solution by using Windows Installer, the Visual Studio 2010 Tools for Office Runtime bypasses the following steps when the VSTO Add-in loads.  
+##  <a name="Publish"></a>Publicar soluções do Office usando o Windows Installer  
+ Se você publicar sua solução usando o Windows Installer, o Visual Studio 2010 Tools para Office Runtime ignora as etapas a seguir, quando o suplemento do VSTO é carregado.  
   
--   Validating the manifest schema.  
+-   Validação do esquema de manifesto.  
   
--   Automatically checking for updates.  
+-   Verificando atualizações automaticamente.  
   
--   Validating the digital signatures of the deployment manifests.  
+-   Validação de assinaturas digitais de manifestos de implantação.  
   
     > [!NOTE]  
-    >  This approach isn't necessary if you deploy your VSTO Add-in to a secure location on the users' computers.  
+    >  Essa abordagem não é necessária se você implantar o suplemento do VSTO em um local seguro nos computadores dos usuários.  
   
- For more information, see [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Para obter mais informações, consulte [Implantando uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Bypass"></a> Bypass Ribbon Reflection  
- If you build a solution by using [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], ensure that your users have installed the most recent version of the Visual Studio 2010 Tools for Office Runtime when you deploy the solution. Older versions of that runtime reflected into solution assemblies to locate ribbon customizations. This process can cause the VSTO Add-in to load more slowly.  
+##  <a name="Bypass"></a>Reflexão de faixa de opções de Bypass  
+ Se você criar uma solução usando [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], certifique-se de que seus usuários instalou a versão mais recente do Visual Studio 2010 Tools para Office Runtime quando você implanta a solução. Versões mais antigas do que em tempo de execução são refletidas em assemblies de solução para localizar as personalizações da faixa de opções. Esse processo pode causar o suplemento do VSTO carregar mais lentamente.  
   
- As an alternative, you can prevent any version of the Visual Studio 2010 Tools for Office Runtime from using reflection to identify ribbon customizations. To follow this strategy, override the `CreateRibbonExtensibility` method, and explicitly return ribbon objects. If your VSTO Add-in doesn't contain any ribbon customizations, return `null` inside of the method.  
+ Como alternativa, você pode impedir que qualquer versão do Visual Studio 2010 Tools for Office Runtime usando a reflexão para identificar as personalizações da faixa de opções. Para seguir essa estratégia, substituir o `CreateRibbonExtensibility` método e objetos de retorno explicitamente da faixa de opções. Se o suplemento do VSTO não contém quaisquer personalizações da faixa de opções, retorno `null` dentro do método.  
   
- The following example returns a ribbon object based on the value of a field.  
+ O exemplo a seguir retorna um objeto de faixa de opções com base no valor de um campo.  
   
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)] [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
+ [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
+ [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-##  <a name="Perform"></a> Perform Expensive Operations in a Separate Execution Thread  
- Consider performing time-consuming tasks (such as long running tasks, database connections, or other sorts of network calls) in a separate thread. For more information, see [Threading Support in Office](../vsto/threading-support-in-office.md).  
+##  <a name="Perform"></a>Executar operações caras em um Thread de execução separado  
+ Considere a execução de tarefas demoradas (como tarefas de longa execução, conexões de banco de dados ou outros tipos de chamadas de rede) em um thread separado. Para obter mais informações, consulte [suporte a Threading no Office](../vsto/threading-support-in-office.md).  
   
 > [!NOTE]  
->  All code that calls into the Office object model must execute in the main thread.  
+>  Todo o código que chama o modelo de objeto do Office deve se executado no thread principal.  
   
-## <a name="see-also"></a>See Also  
- [Demand-Loading VSTO Add-ins](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
- [Delay-loading the CLR in Office Add-ins](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
- [VSTO Performance: Delay Loading and You (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   
- [Performance Improvements Coming Soon to a Service Pack Near You (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
- [VSTO Performance: Ribbon Reflection (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/06/03/vsto-performance-ribbon-reflection.aspx)  
+## <a name="see-also"></a>Consulte também  
+ [Suplementos do VSTO de carregamento por demanda](http://blogs.msdn.com/b/andreww/archive/2008/07/14/demand-loading-vsto-add-ins.aspx)   
+ [Carregamento de atraso do CLR em suplementos do Office](http://blogs.msdn.com/b/andreww/archive/2008/04/19/delay-loading-the-clr-in-office-add-ins.aspx)   
+ [Desempenho do VSTO: Carregamento de atraso e você (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/01/07/vsto-performance-delay-loading-and-you.aspx)   
+ [Melhorias de desempenho em breve para um Service Pack perto de você (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/11/30/performance-improvements-coming-soon-to-a-service-pack-near-you-stephen-peters.aspx)   
+ [Desempenho do VSTO: Reflexão de faixa de opções (Stephen Peters)](http://blogs.msdn.com/b/vsto/archive/2010/06/03/vsto-performance-ribbon-reflection.aspx)  
   
   

@@ -1,43 +1,27 @@
 ---
-title: Elemento VSTemplate (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento VSTemplate (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#VSTemplate
-helpviewer_keywords:
-- VSTemplate element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#VSTemplate
+helpviewer_keywords: VSTemplate element [Visual Studio project templates]
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
-caps.latest.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b07f33b696e8889d29a0cd22c243e1b69183d55e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e4a191c94731560cbc36b4738d16ef202f051873
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>Elemento VSTemplate (modelos de projeto do Visual Studio)
-Contém todos os metadados sobre o modelo de projeto, o modelo de item ou o starter kit.  
+Contém todos os metadados sobre o modelo de projeto, item modelo ou starter kit.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -57,19 +41,19 @@ Contém todos os metadados sobre o modelo de projeto, o modelo de item ou o star
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Type`|Identifica o modelo como um modelo de projeto ou um modelo de item. Esse atributo pode ter um valor de `Project` ou `Item`.|  
-|`Version`|Especifica um número de versão para o modelo. Modelos de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] tem um `Version` valor do atributo `3.0.0`.|  
+|`Version`|Especifica um número de versão para o modelo. Modelos de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] tem um `Version` valor de atributo `3.0.0`.|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Especifica os dados que categoriza o modelo e define como ele é exibido no **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Especifica os dados que categoriza o modelo e define como ele exibe no **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Especifica o conteúdo do modelo.|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Elemento opcional.|  
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Elemento opcional.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
- Nenhum.  
+ nenhuma.  
   
 ## <a name="remarks"></a>Comentários  
  O `VSTemplate` é o elemento raiz de arquivos. vstemplate.  

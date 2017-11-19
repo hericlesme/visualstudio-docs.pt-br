@@ -1,12 +1,10 @@
 ---
-title: Global Access to Objects in Office Projects | Microsoft Docs
+title: Acesso global a objetos em projetos do Office | Microsoft Docs
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -33,36 +31,35 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
 ms.assetid: f6a7f0ef-75d0-4a9b-9aec-be95ffa26adf
-caps.latest.revision: 55
-author: kempb
-ms.author: kempb
+caps.latest.revision: "55"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a166e8ce7dc6315d9e150e8c7a1a11d135fd5517
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c8119ccf0c6715d1c18957fcf8cac92d9872a27e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="global-access-to-objects-in-office-projects"></a>Global Access to Objects in Office Projects
-  When you create an Office project, Visual Studio automatically generates a class named `Globals` in the project. You can use the `Globals` class to access several different project items at run time from any code in the project.  
+# <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
+  Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma classe denominada `Globals` no projeto. Você pode usar o `Globals` classe para acessar vários itens de projeto diferente em tempo de execução de qualquer código no projeto.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="how-to-use-the-globals-class"></a>How to Use the Globals Class  
- `Globals` is a static class that keeps references to certain items in your project. By using the `Globals` class, you can access the following items from any code in the project at run time:  
+## <a name="how-to-use-the-globals-class"></a>Como usar a classe Globals  
+ `Globals`é uma classe estática que mantém referências a determinados itens em seu projeto. Usando o `Globals` classe, você pode acessar os seguintes itens de qualquer código no projeto em tempo de execução:  
   
--   The `ThisWorkbook` and `Sheet`*n* classes in an Excel workbook or template project. You can access these objects by using the `Globals.ThisWorkbook` and `Sheet`*n* properties.  
+-   O `ThisWorkbook` e `Sheet`  *n*  classes em um projeto de modelo ou pasta de trabalho do Excel. Você pode acessar esses objetos usando o `Globals.ThisWorkbook` e `Sheet`  *n*  propriedades.  
   
--   The `ThisDocument` class in a Word document or template project. You can access this object by using the `Globals.ThisDocument` property.  
+-   O `ThisDocument` classe em um projeto de modelo ou documento do Word. Você pode acessar esse objeto usando o `Globals.ThisDocument` propriedade.  
   
--   The `ThisAddIn` class in an VSTO Add-in project. You can access this object by using the `Globals.ThisAddIn` property.  
+-   O `ThisAddIn` classe em um projeto de suplemento do VSTO. Você pode acessar esse objeto usando o `Globals.ThisAddIn` propriedade.  
   
--   All Ribbons in your project that you customized by using the Ribbon Designer. You can access the Ribbons by using the `Globals.Ribbons` property. For more information, see [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md).  
+-   Todas as faixas de opções em seu projeto personalizados usando o Designer de faixa de opções. Você pode acessar as faixas de opções usando o `Globals.Ribbons` propriedade. Para obter mais informações, consulte [acessando a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md).  
   
--   All Outlook form regions in an Outlook VSTO Add-in project. You can access the form regions by using the `Globals.FormRegions` property. For more information, see [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md).  
+-   Todas as regiões de formulário Outlook em um projeto de suplemento do VSTO do Outlook. Você pode acessar as regiões de formulário usando o `Globals.FormRegions` propriedade. Para obter mais informações, consulte [acessando uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md).  
   
--   A factory object that enables you to create Ribbon controls, and host items at run time in projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. You can access this object by using the `Globals.Factory` property. This object is an instance of a class that implements one the following interfaces:  
+-   Um objeto de fábrica que permite criar controles de faixa de opções e hospedar itens em tempo de execução em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Você pode acessar esse objeto usando o `Globals.Factory` propriedade. Esse objeto é uma instância de uma classe que implementa uma as seguintes interfaces:  
   
     -   <xref:Microsoft.Office.Tools.Factory>  
   
@@ -72,23 +69,24 @@ ms.lasthandoff: 08/30/2017
   
     -   <xref:Microsoft.Office.Tools.Word.Factory>  
   
- For example, you can use the `Globals.Sheet1` property to insert text into a <xref:Microsoft.Office.Tools.Excel.NamedRange> control on `Sheet1` when a user clicks a button on the actions pane in a document-level project for Excel.  
+ Por exemplo, você pode usar o `Globals.Sheet1` propriedade para inserir texto em uma <xref:Microsoft.Office.Tools.Excel.NamedRange> control em `Sheet1` quando um usuário clica em um botão no painel de ações em um projeto no nível de documento para Excel.  
   
- [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)] [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
+ [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
+ [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## <a name="initializing-the-globals-class"></a>Initializing the Globals Class  
- Code that attempts to use the `Globals` class before the document or VSTO Add-in is completely initialized might throw a run time exception. For example, using `Globals` when declaring a class-level variable might fail because the `Globals` class might not be initialized with references to all of the host items before the declared object is instantiated.  
+## <a name="initializing-the-globals-class"></a>Inicializar a classe Globals  
+ Código que tenta usar o `Globals` classe antes do documento ou um suplemento do VSTO está completamente inicializado pode gerar uma exceção de tempo de execução. Por exemplo, usando `Globals` quando declarando uma variável de nível de classe pode falhar porque o `Globals` classe não pode ser inicializada com referências a todos os itens de host antes do objeto declarado é instanciado.  
   
 > [!NOTE]  
->  The `Globals` class is never initialized at design time, but control instances are created by the designer. This means that if you create a user control that uses a property of the `Globals` class from inside a user control class, you must whether the property returns **null** before you try to use the returned object.  
+>  O `Globals` classe nunca é inicializada no tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade do `Globals` classe de dentro de uma classe de controle de usuário, você deve se a propriedade retorna **nulo** antes de tentar usar o objeto retornado.  
   
-## <a name="see-also"></a>See Also  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Document Host Item](../vsto/document-host-item.md)   
- [Workbook Host Item](../vsto/workbook-host-item.md)   
- [Worksheet Host Item](../vsto/worksheet-host-item.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Acessando a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Acessando uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Itens de host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md)   
+ [Item de Host do documento](../vsto/document-host-item.md)   
+ [Item de Host de pasta de trabalho](../vsto/workbook-host-item.md)   
+ [Item de Host de planilha](../vsto/worksheet-host-item.md)   
+ [Escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
   
   

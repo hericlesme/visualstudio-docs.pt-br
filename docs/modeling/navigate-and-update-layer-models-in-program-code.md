@@ -10,30 +10,15 @@ helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 50da0b90dd1c8924d8772eabd83265ff3827c2c2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cfe4f389516a3421bdc0d8643790dbb9c7cc2733
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar e atualizar modelos de camada no código do programa
 Este tópico descreve os elementos e relações em modelos de camada, o que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de dependência do ponto de vista do usuário, consulte [diagramas de dependência: referência](../modeling/layer-diagrams-reference.md) e [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md).  
@@ -137,7 +122,7 @@ public void ... (...)
   
  ![Cada ILayerElement é apresentado por um IShape. ] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> e <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> também são usados para exibir modelos UML. Para obter mais informações, consulte [exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> e <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> também são usados para exibir modelos UML. 
   
 ## <a name="see-also"></a>Consulte também  
  [Adicionar comandos e gestos a diagramas de dependência](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
@@ -145,4 +130,3 @@ public void ... (...)
  [Adicionar propriedades personalizadas a diagramas de dependência](../modeling/add-custom-properties-to-layer-diagrams.md)   
  [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)   
  [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)   
-

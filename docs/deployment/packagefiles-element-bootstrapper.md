@@ -1,34 +1,33 @@
 ---
-title: "Elemento &lt;PackageFiles&gt; (bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Elemento <PackageFiles> [bootstrapper]"
+title: '&lt;PackageFiles&gt; elemento (Bootstrapper) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: 16
-caps.handback.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Elemento &lt;PackageFiles&gt; (bootstrapper)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-O `PackageFiles` elemento contém `PackageFile` elementos, que definem os pacotes de instalação executados como resultado do `Command` elemento.  
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (Bootstrapper)
+O `PackageFiles` elemento contém `PackageFile` elementos, que definem os pacotes de instalação executados como resultado da `Command` elemento.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
 ```  
 <PackageFiles  
@@ -44,28 +43,28 @@ O `PackageFiles` elemento contém `PackageFile` elementos, que definem os pacote
 </PackageFiles>  
 ```  
   
-## Elementos e atributos  
- O `PackageFiles` elemento tem o atributo a seguir.  
+## <a name="elements-and-attributes"></a>Elementos e atributos  
+ O `PackageFiles` elemento tem o seguinte atributo.  
   
 |Atributo|Descrição|  
-|--------------|---------------|  
-|`CopyAllPackageFiles`|Opcional.  Se definido como  `false`, o instalador só baixará arquivos referenciados a partir do `Command` elemento.  Se definido como  `true`, todos os arquivos serão baixados.<br /><br /> Se definido como  `IfNotHomesite`, o instalador se comportam da mesma como se  `False` se `ComponentsLocation` for definido como  `HomeSite`e caso contrário será se comportam da mesma como se  `True`.  Essa configuração pode ser útil para permitir que os pacotes que são os próprios bootstrappers executar o seu próprio comportamento em um cenário do HomeSite.<br /><br /> O padrão é `true`.|  
+|---------------|-----------------|  
+|`CopyAllPackageFiles`|Opcional. Se definido como `false`, o instalador só serão baixados os arquivos referenciados pelo `Command` elemento. Se definido como `true`, todos os arquivos serão baixados.<br /><br /> Se definido como `IfNotHomesite`, o instalador se comportam da mesma como se `False` se `ComponentsLocation` é definido como `HomeSite`e caso contrário irão se comportar o mesmo como se `True`. Essa configuração pode ser útil para permitir que os pacotes que são bootstrappers executar seu próprios comportamento em um cenário de HomeSite.<br /><br /> O padrão é `true`.|  
   
-## PackageFile  
- O `PackageFile` elemento é filho de `PackageFiles` elemento.  A `PackageFiles` elemento deve ter pelo menos um `PackageFile` elemento.  
+## <a name="packagefile"></a>PackageFile  
+ O `PackageFile` elemento é um filho de `PackageFiles` elemento. Um `PackageFiles` elemento deve ter pelo menos um `PackageFile` elemento.  
   
  `PackageFile`tem os seguintes atributos.  
   
 |Atributo|Descrição|  
-|--------------|---------------|  
-|`Name`|Obrigatório.  O nome do arquivo do pacote.  Este é o nome que o `Command` elemento fará referência quando ela define as condições sob as quais um pacote é instalado.  Esse valor também é usado como uma chave para o `Strings` tabela para recuperar o nome localizado que ferramentas como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] será usado para descrever o pacote.|  
-|`HomeSite`|Opcional.  O local do pacote no servidor remoto, se não estiver incluído com o instalador.|  
-|`CopyOnBuild`|Opcional.  Especifica se o bootstrapper deve copiar o arquivo de pacote para o disco em tempo de compilação.  O padrão é true.|  
-|`PublicKey`|A chave pública criptografada signatário do certificado do pacote.  Necessário se `HomeSite` é usado; Caso contrário, opcional.|  
-|`Hash`|Opcional.  Um hash SHA1, o arquivo de pacote.  Isso é usado para verificar a integridade do arquivo no momento da instalação.  Se o hash idêntico não pode ser computado a partir do arquivo de pacote, o pacote não será instalado.|  
+|---------------|-----------------|  
+|`Name`|Necessário. O nome do arquivo do pacote. Este é o nome que o `Command` fará referência a elemento quando ele define as condições sob as quais instala um pacote. Esse valor também é usado como uma chave para o `Strings` tabela para recuperar o nome localizado que ferramentas como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] será usado para descrever o pacote.|  
+|`HomeSite`|Opcional. O local do pacote no servidor remoto, se ele não está incluído com o instalador.|  
+|`CopyOnBuild`|Opcional. Especifica se o inicializador deve copiar o arquivo de pacote para o disco no momento da compilação. O padrão é true.|  
+|`PublicKey`|A chave pública criptografada do assinante de certificado do pacote. Necessário se `HomeSite` for usada; caso contrário, opcional.|  
+|`Hash`|Opcional. Um hash SHA1 do arquivo do pacote. Isso é usado para verificar a integridade do arquivo no momento da instalação. Se o hash idêntico não pode ser calculado do arquivo de pacote, o pacote não será instalado.|  
   
-## Exemplo  
- O exemplo de código a seguir define pacotes para o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pacote redistribuível e suas dependências, como, por exemplo, o Windows Installer.  
+## <a name="example"></a>Exemplo  
+ O exemplo de código a seguir define os pacotes para o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pacote redistribuível e suas dependências, como o Windows Installer.  
   
 ```  
 <PackageFiles>  
@@ -76,7 +75,7 @@ O `PackageFiles` elemento contém `PackageFile` elementos, que definem os pacote
 </PackageFiles>  
 ```  
   
-## Consulte também  
- [Elemento \<Product\>](../deployment/product-element-bootstrapper.md)   
- [Elemento \<Package\>](../deployment/package-element-bootstrapper.md)   
+## <a name="see-also"></a>Consulte também  
+ [\<Produto > elemento](../deployment/product-element-bootstrapper.md)   
+ [\<Pacote > elemento](../deployment/package-element-bootstrapper.md)   
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

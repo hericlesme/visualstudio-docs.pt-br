@@ -7,16 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Atualizando formas e conectores para refletir o modelo
 Em uma linguagem específica de domínio em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode fazer com que a aparência de uma forma refletem o estado do modelo subjacente.  
@@ -158,4 +157,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()`deve ser chamado uma vez para cada propriedade de domínio que você deseja registrar. Depois que ele tiver sido chamado, as alterações para a propriedade especificada chamará `OnAssociatedPropertyChanged()` em qualquer forma que apresentam o elemento de modelo da propriedade.  
   
  Não é necessário chamar `AssociateValueWith()` para cada instância. Embora InitializeResources é um método de instância, ele é chamado apenas uma vez para cada classe de forma.
-

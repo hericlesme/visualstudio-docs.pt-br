@@ -1,47 +1,31 @@
 ---
-title: "Função SccGet | Documentos do Microsoft"
+title: "Função SccGet | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccGet
-helpviewer_keywords:
-- SccGet function
+f1_keywords: SccGet
+helpviewer_keywords: SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 97f79ca001a2e79c6abb8dec0fc738694cb95e7b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 20abad6a195d8493be8849588b86035d03fdc654
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sccget-function"></a>Função SccGet
-Esta função recupera uma cópia de um ou mais arquivos para exibição e compilação, mas não para edição. Na maioria dos sistemas, os arquivos são marcados como somente leitura.  
+Essa função recupera uma cópia de um ou mais arquivos para exibição e a compilação, mas não para edição. Na maioria dos sistemas, os arquivos são marcados como somente leitura.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 SCCRTN SccGet(  
    LPVOID    pvContext,  
    HWND      hWnd,  
@@ -57,7 +41,7 @@ SCCRTN SccGet(
  [in] A estrutura de contexto de plug-in de controle de origem.  
   
  hWnd  
- [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para as caixas de diálogo que ele fornece.  
+ [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.  
   
  nFiles  
  [in] Número de arquivos especificados na `lpFileNames` matriz.  
@@ -76,47 +60,47 @@ SCCRTN SccGet(
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|SCC_OK|Sucesso da operação get.|  
+|SCC_OK|Êxito da operação de obtenção.|  
 |SCC_E_FILENOTCONTROLLED|O arquivo não está sob controle de origem.|  
 |SCC_E_OPNOTSUPPORTED|O sistema de controle de origem não oferece suporte a esta operação.|  
-|SCC_E_FILEISCHECKEDOUT|Não é possível obter o arquivo no momento o usuário fez check-out.|  
+|SCC_E_FILEISCHECKEDOUT|Não é possível obter o arquivo que o usuário tem check-out.|  
 |SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle de origem, provavelmente devido a problemas de rede ou de contenção. Recomenda-se uma nova tentativa.|  
-|SCC_E_NOSPECIFIEDVERSION|Uma versão inválida ou a data/hora especificado.|  
+|SCC_E_NOSPECIFIEDVERSION|Uma versão inválida ou data/hora especificado.|  
 |SCC_E_NONSPECIFICERROR|Falha não específica; arquivo não foi sincronizado.|  
-|SCC_I_OPERATIONCANCELED|Operação cancelada antes da conclusão.|  
+|SCC_I_OPERATIONCANCELED|A operação foi cancelada antes da conclusão.|  
 |SCC_E_NOTAUTHORIZED|O usuário não está autorizado para executar esta operação.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa função é chamada com uma contagem e uma matriz de nomes de arquivos a serem recuperados. Se o IDE passar o sinalizador `SCC_GET_ALL`, isso significa que os itens na `lpFileNames` não são arquivos, mas pastas e todos os arquivos sob controle de origem nos diretórios determinados devem ser recuperadas.  
+ Esta função é chamada com uma contagem e uma matriz de nomes de arquivos a serem recuperados. Se o IDE passa o sinalizador `SCC_GET_ALL`, isso significa que os itens na `lpFileNames` não são arquivos, mas diretórios e que todos os arquivos sob controle de origem nos diretórios de determinado devem ser recuperados.  
   
- O `SCC_GET_ALL` sinalizador pode ser combinado com o `SCC_GET_RECURSIVE` sinalizador para recuperar todos os arquivos nos diretórios determinados e todos os subdiretórios também.  
+ O `SCC_GET_ALL` sinalizador pode ser combinado com o `SCC_GET_RECURSIVE` sinalizador para recuperar todos os arquivos nos diretórios de determinado e também todos os subdiretórios.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`nunca deve ser passado sem `SCC_GET_ALL`. Além disso, observe que se diretórios C:\A e C:\A\B são ambos passado recursiva obtém, C:\A\B e todas as suas subpastas serão realmente recuperadas duas vezes. É responsabilidade do IDE, e não a fonte de controle do plug-in — para certificar-se de que duplicatas como essa são mantidas fora da matriz.  
+>  `SCC_GET_RECURSIVE`nunca deve ser passado sem `SCC_GET_ALL`. Além disso, observe que se diretórios C:\A e C:\A\B são ambos repassadas recursiva obtém, C:\A\B e seus subdiretórios serão realmente recuperados duas vezes. É responsabilidade do IDE, e não a fonte de controle do plug-in — para certificar-se de que duplicatas como esta são mantidas fora da matriz.  
   
- Por fim, mesmo que o plug-in de controle de uma origem especificada a `SCC_CAP_GET_NOUI` sinalizador na inicialização, indicando que ele não tem uma interface de usuário para um comando Get, essa função ainda pode ser chamada pelo IDE para recuperar arquivos. O sinalizador significa simplesmente que o IDE não exibirá um item de menu Get e que o plug-in não é esperado para fornecer qualquer interface de usuário.  
+ Por fim, mesmo que o plug-in de controle de uma origem especificada a `SCC_CAP_GET_NOUI` sinalizador na inicialização, indicando que ele não tem uma interface do usuário para um comando Get, essa função ainda pode ser chamada pelo IDE para recuperar arquivos. O sinalizador simplesmente significa que o IDE não exibe um item de menu Get e que o plug-in não é esperado para fornecer qualquer interface de usuário.  
   
 ## <a name="renaming-and-sccget"></a>Renomear e SccGet  
- Situação: um usuário faz check-out de um arquivo, por exemplo, a.txt e modifica a ele. Antes de a.txt pode fazer check-in, um segundo usuário renomeia a.txt para b. txt no banco de dados de controle de origem, o check-out b. txt, faz algumas modificações no arquivo e verifica o arquivo. O primeiro usuário que deseja que as alterações feitas pelo usuário segundo para que o primeiro usuário renomeia sua versão local do arquivo a. txt para b. txt e faz um get no arquivo. No entanto, o cache local que mantém o controle de números de versão ainda considera a primeira versão do a.txt é armazenada localmente e então o controle de origem não pode resolver as diferenças.  
+ Situação: um usuário faz check-out de um arquivo, por exemplo, a.txt e modifica. Antes de a.txt pode fazer check-in, um segundo usuário renomeia a.txt para b.txt no banco de dados de controle de origem, o check-out b.txt, faz algumas modificações no arquivo e verifica o arquivo de. O primeiro usuário que deseja que as alterações feitas pelo segundo usuário para que o primeiro usuário renomeia a versão local do arquivo a.txt para b.txt e faz um get no arquivo. No entanto, o cache local que mantém o controle de números de versão ainda considera a primeira versão do a.txt é armazenada localmente e assim o controle de origem não é possível resolver as diferenças.  
   
  Há duas maneiras de resolver essa situação em que o cache local de versões de controle de origem se torna fora de sincronia com o banco de dados de controle de origem:  
   
-1.  Não permite a renomeação de um arquivo de banco de dados de controle de origem que está sendo verificado.  
+1.  Não permita renomeação de um arquivo de banco de dados de controle de origem que está sendo verificado.  
   
-2.  É o equivalente de "excluir antigo" seguido de "Adicionar novo". O seguinte algoritmo é uma forma de fazer isso.  
+2.  É o equivalente de "excluir antigo" seguido de "Adicionar novo". O seguinte algoritmo é uma maneira de fazer isso.  
   
-    1.  Chamar o [SccQueryChanges](../extensibility/sccquerychanges-function.md) função para saber mais sobre a renomeação de a.txt para b. txt no banco de dados de controle de origem.  
+    1.  Chamar o [SccQueryChanges](../extensibility/sccquerychanges-function.md) função para saber mais sobre a renomeação de a.txt para b.txt no banco de dados de controle de origem.  
   
-    2.  Renomeie o a.txt local para b. txt.  
+    2.  Renomear o local a.txt para b.txt.  
   
-    3.  Chamar o `SccGet` função a.txt e b. txt.  
+    3.  Chamar o `SccGet` função a.txt e b.txt.  
   
-    4.  Porque a.txt não existe no banco de dados de controle de origem, o cache local de versão é limpos das informações de versão a.txt ausente.  
+    4.  Como a.txt não existe no banco de dados de controle de origem, o cache da versão local é limpos das informações de versão a.txt ausente.  
   
-    5.  O arquivo b. txt que está sendo extraído é mesclado com o conteúdo do arquivo local b. txt.  
+    5.  O arquivo b.txt check-out será mesclado com o conteúdo do arquivo b.txt local.  
   
-    6.  O arquivo b. txt atualizado agora pode fazer check-in.  
+    6.  O arquivo atualizado b.txt agora pode fazer check-in.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)   
- [Sinalizadores de bit usados pelos comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)
+ [Sinalizadores de bit usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)

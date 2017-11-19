@@ -1,11 +1,10 @@
 ---
-title: 'CA2126: Type link demands require inheritance demands | Microsoft Docs'
+title: "CA2126: Demandas de link do tipo exigem demandas de herança | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,67 +14,54 @@ helpviewer_keywords:
 - CA2126
 - TypeLinkDemandsRequireInheritanceDemands
 ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 76b7e16ebcd0f2b02c9bb233bb0136c1ef7050cd
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 254fd15f97afe69f927bb8a1aae1954105776641
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Type link demands require inheritance demands
+# <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: demandas do link de tipo exigem demandas de herança
 |||  
 |-|-|  
-|TypeName|TypeLinkDemandsRequireInheritanceDemands|  
+|NomeDoTipo|TypeLinkDemandsRequireInheritanceDemands|  
 |CheckId|CA2126|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Categoria|Microsoft.Security|  
+|Alteração Significativa|Quebra|  
   
-## <a name="cause"></a>Cause  
- A public unsealed type is protected with a link demand, has an overridable method, and neither the type nor the method is protected with an inheritance demand.  
+## <a name="cause"></a>Causa  
+ Um tipo público for protegido com uma demanda de link, tem um método substituível e o tipo, nem o método é protegido com uma demanda de herança.  
   
-## <a name="rule-description"></a>Rule Description  
- A link demand on a method or its declaring type requires the immediate caller of the method to have the specified permission. An inheritance demand on a method requires an overriding method to have the specified permission. An inheritance demand on a type requires a deriving class to have the specified permission.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Um link em um método ou seu tipo declarativo exige o chamador imediato do método para ter a permissão especificada. Uma demanda de herança em um método exige um método de substituição para ter a permissão especificada. Uma demanda de herança em um tipo requer uma classe derivada para ter a permissão especificada.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, secure the type or the method with an inheritance demand for the same permission as the link demand.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, proteja o tipo ou o método com uma demanda de herança para a mesma permissão que a demanda de link.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates the rule.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra um tipo que viola a regra.  
   
- [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)] [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)] [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]  
+ [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
+ [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
+ [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2108: Review declarative security on value types](../code-quality/ca2108-review-declarative-security-on-value-types.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA2108: examinar segurança declarativa em tipos de valor](../code-quality/ca2108-review-declarative-security-on-value-types.md)  
   
- [CA2112: Secured types should not expose fields](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
+ [CA2112: os tipos seguros não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
   
- [CA2122: Do not indirectly expose methods with link demands](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)  
+ [CA2122: não expor indiretamente métodos com demandas de link](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)  
   
- [CA2123: Override link demands should be identical to base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)  
+ [CA2123: as demandas de link de substituição devem ser idênticas à base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)  
   
-## <a name="see-also"></a>See Also  
- [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
- [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
- [Link Demands](/dotnet/framework/misc/link-demands)   
- [Demands](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)
+## <a name="see-also"></a>Consulte também  
+ [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)   
+ [Demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
+ [Demandas de link](/dotnet/framework/misc/link-demands)   
+ [Demandas de](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)

@@ -1,12 +1,10 @@
 ---
-title: 'How to: Export a Ribbon from the Ribbon Designer to Ribbon XML | Microsoft Docs'
+title: "Como: exportar uma faixa de opções do Designer de faixa de opções de XML da faixa de opções | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,60 +19,60 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - exporting Ribbon
 ms.assetid: 96e0e9ed-4392-4f45-ac33-b6f7c22ea321
-caps.latest.revision: 37
-author: kempb
-ms.author: kempb
+caps.latest.revision: "37"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: cf3b9b66e0626328bccac92ab473dee33326b0f2
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b73bff8170e351e9e22e95d53ae446895cfdbd2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>How to: Export a Ribbon from the Ribbon Designer to Ribbon XML
-  The **Ribbon (Visual Designer)** item does not support all possible types of Ribbon customization. To customize the Ribbon in advanced ways, you can export the Ribbon from the designer to Ribbon XML and edit the XML directly.  
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Como exportar uma faixa de opções a partir do Designer da faixa de opções para XML da faixa de opções
+  O **faixa de opções (Visual Designer)** item não oferece suporte a todos os tipos possíveis de personalização da faixa de opções. Para personalizar a faixa de opções de maneiras avançadas, você pode exportar a faixa de opções do designer para o XML da faixa de opções e editar o XML diretamente.  
   
 > [!NOTE]  
->  Not all property values appear in the Ribbon XML file. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+>  Nem todos os valores de propriedade aparecem no arquivo XML da faixa de opções. Para obter mais informações, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>To export a Ribbon from the Ribbon Designer to Ribbon XML  
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Para exportar uma faixa de opções do Designer de faixa de opções para XML da faixa de opções  
   
-1.  Right-click the Ribbon code file in **Solution Explorer**, and then click **View Designer**.  
+1.  Clique no arquivo de código da faixa de opções no **Solution Explorer**e, em seguida, clique em **Designer de exibição**.  
   
-2.  Right-click the Ribbon Designer, and then click **Export Ribbon to XML**.  
+2.  Clique com botão direito do Designer de faixa de opções e, em seguida, clique em **faixa de opções de exportação para XML**.  
   
-     Visual Studio adds a Ribbon XML file and a Ribbon XML code file to your project.  
+     O Visual Studio adiciona um arquivo XML da faixa de opções e um arquivo de código XML da faixa de opções ao seu projeto.  
   
-3.  In the Ribbon code class, locate the comments that start with `TODO:`.  
+3.  Na classe de código da faixa de opções, localize os comentários que começam com `TODO:`.  
   
-4.  Copy the code block in these comments to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, depending on which type of solution you are developing.  
+4.  Copie o bloco de código nesses comentários para o **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** classe, dependendo de qual tipo de solução que você está desenvolvendo.  
   
-     This code enables the Microsoft Office application to discover and load your custom Ribbon. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
+     Esse código permite que o aplicativo do Microsoft Office descobrir e carregar a faixa de opções personalizada. Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
   
-5.  In the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, uncomment the code block.  
+5.  No **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** classe, remova o bloco de código.  
   
-     After you uncomment the code, it should resemble the following example. In this example, the Ribbon class is called `MyRibbon`.  
+     Depois que você remova os comentários de código, ele deve se parecer com o exemplo a seguir. Neste exemplo, a classe de faixa de opções é chamada `MyRibbon`.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
+     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  Switch to the Ribbon XML code file and find the `Ribbon Callbacks` region.  
+6.  Alterne para o arquivo de código XML da faixa de opções e localize o `Ribbon Callbacks` região.  
   
-     This is where you write callback methods to handle user actions, such as clicking a button.  
+     Isso é onde você escrever métodos de retorno de chamada para manipular ações do usuário, como clicar em um botão.  
   
-7.  Create a callback method for each event handler that you wrote in the Ribbon Designer code.  
+7.  Crie um método de retorno de chamada para cada manipulador de eventos que você escreveu o código de Designer de faixa de opções.  
   
-8.  Move all your event handler code from the event handlers to the callback methods, and modify the code to work with the Ribbon extensibility (RibbonX) programming model.  
+8.  Mover todo o código de manipulador de eventos de manipuladores de eventos para os métodos de retorno de chamada e modifique o código para trabalhar com a extensibilidade da faixa de opções (RibbonX), modelo de programação.  
   
-     For information about writing callback methods and using the RibbonX programming model, see [Ribbon XML](../vsto/ribbon-xml.md).  
+     Para obter informações sobre métodos de retorno de chamada de gravação e usar o modelo de programação RibbonX, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
   
-## <a name="see-also"></a>See Also  
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Ribbon XML](../vsto/ribbon-xml.md)   
- [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+## <a name="see-also"></a>Consulte também  
+ [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
+ [Designer de faixa de opções](../vsto/ribbon-designer.md)   
+ [XML da faixa de opções](../vsto/ribbon-xml.md)   
+ [Passo a passo: Criando uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Instruções passo a passo: criando uma guia personalizada usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

@@ -1,11 +1,10 @@
 ---
-title: 'CA1001: Types that own disposable fields should be disposable | Microsoft Docs'
+title: "CA1001: Tipos que possuem campos descartáveis devem ser descartáveis | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,62 +14,47 @@ helpviewer_keywords:
 - CA1001
 - TypesThatOwnDisposableFieldsShouldBeDisposable
 ms.assetid: c85c126c-2b16-4505-940a-b5ddf873fb22
-caps.latest.revision: 22
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8c7941272b56a1b98c70f2f8bd3275cba3f3ce08
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 30609be8b70f65cb48478c6d6d2c0f3b6d89a029
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Types that own disposable fields should be disposable
+# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: tipos que tenham campos descartáveis devem ser descartáveis
 |||  
 |-|-|  
-|TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|  
+|NomeDoTipo|TypesThatOwnDisposableFieldsShouldBeDisposable|  
 |CheckId|CA1001|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking - If the type is not visible outside the assembly.<br /><br /> Breaking - If the type is visible outside the assembly.|  
+|Categoria|Microsoft.Design|  
+|Alteração Significativa|Não quebra - se o tipo não é visível fora do assembly.<br /><br /> Quebrar - se o tipo é visível fora do assembly.|  
   
-## <a name="cause"></a>Cause  
- A class declares and implements an instance field that is a <xref:System.IDisposable?displayProperty=fullName> type and the class does not implement <xref:System.IDisposable>.  
+## <a name="cause"></a>Causa  
+ Uma classe declara e implementa um campo de instância é um <xref:System.IDisposable?displayProperty=fullName> tipo e a classe não implementa <xref:System.IDisposable>.  
   
-## <a name="rule-description"></a>Rule Description  
- A class implements the <xref:System.IDisposable> interface to dispose of unmanaged resources that it owns. An instance field that is an <xref:System.IDisposable> type indicates that the field owns an unmanaged resource. A class that declares an <xref:System.IDisposable> field indirectly owns an unmanaged resource and should implement the <xref:System.IDisposable> interface. If the class does not directly own any unmanaged resources, it should not implement a finalizer.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Uma classe que implementa o <xref:System.IDisposable> interface descarte de recursos não gerenciados que é proprietária. Um campo de instância é um <xref:System.IDisposable> tipo indica se o campo tem um recurso não gerenciado. Uma classe que declara um <xref:System.IDisposable> campo indiretamente possui um recurso não gerenciado e deve implementar o <xref:System.IDisposable> interface. Se a classe não possui todos os recursos não gerenciados diretamente, ele não deve implementar um finalizador.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement <xref:System.IDisposable> and from the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method call the <xref:System.IDisposable.Dispose%2A> method of the field.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, implementar <xref:System.IDisposable> e o <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chamada de método de <xref:System.IDisposable.Dispose%2A> método do campo.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra.  
   
-## <a name="example"></a>Example  
- The following example shows a class that violates the rule and a class that satisfies the rule by implementing <xref:System.IDisposable>. The class does not implement a finalizer because the class does not directly own any unmanaged resources.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra uma classe que viola a regra e uma classe que satisfaz a regra ao implementar <xref:System.IDisposable>. A classe não implementa um finalizador porque a classe não possui todos os recursos não gerenciados diretamente.  
   
- [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)] [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]  
+ [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
+ [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2213: Disposable fields should be disposed](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA2213: os campos descartáveis devem ser descartados](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2216: Disposable types should declare finalizer](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
+ [CA2216: os tipos descartáveis devem declarar o finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
- [CA2215: Dispose methods should call base class dispose](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
+ [CA2215: métodos Dispose devem chamar o descarte da classe base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
   
- [CA1049: Types that own native resources should be disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+ [CA1049: tipos que tenham recursos nativos devem ser descartáveis](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

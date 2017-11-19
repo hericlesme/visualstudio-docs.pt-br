@@ -1,12 +1,10 @@
 ---
-title: 'How to: Update a Data Source with Data from a Host Control | Microsoft Docs'
+title: 'Como: atualizar uma fonte de dados com dados de um controle de Host | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,111 +16,114 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], data source updates
 - Office documents [Office development in Visual Studio, data sources
 ms.assetid: b91025af-1eaa-44ee-88f2-71ecaa7a0440
-caps.latest.revision: 53
-author: kempb
-ms.author: kempb
+caps.latest.revision: "53"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ebe1446b9571a3b2e3f932c0aad724d91f242c5f
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 1fd4716e81d280e049a8cbd1a5206b52f2714e27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>How to: Update a Data Source with Data from a Host Control
-  You can bind a host control to a data source and update the data source with the changes that are made to the data in the control. There are two main steps in this process:  
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Como atualizar uma fonte de dados com dados de um controle de host
+  Você pode associar um controle de host a uma fonte de dados e atualizar a fonte de dados com as alterações feitas aos dados no controle. Há duas etapas principais neste processo:  
   
-1.  Update the in-memory data source with the modified data in the control. Typically, the in-memory data source is a <xref:System.Data.DataSet>, a <xref:System.Data.DataTable>, or some other data object.  
+1.  Atualize a fonte de dados na memória com os dados modificados no controle. Normalmente, a fonte de dados na memória é um <xref:System.Data.DataSet>, um <xref:System.Data.DataTable>, ou algum outro objeto de dados.  
   
-2.  Update the database with the changed data in the in-memory data source. This is applicable only if the data source is connected to a back-end database, such as a SQL Server or Microsoft Office Access database.  
+2.  Atualize o banco de dados com os dados alterados na fonte de dados na memória. Isso é aplicável somente se a fonte de dados está conectada a um banco de dados de back-end, como um banco de dados do SQL Server ou Microsoft Office Access.  
   
- For more information about host controls and data binding, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) and [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Para obter mais informações sobre associação de dados e controles de host, consulte [itens de Host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md) e [ligar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
-## <a name="updating-the-in-memory-data-source"></a>Updating the In-Memory Data Source  
- By default, host controls that enable simple data binding (such as content controls on a Word document or a named range control on an Excel worksheet) do not save data changes to the in-memory data source. That is, when an end user changes a value in a host control and then navigates away from the control, the new value in the control is not automatically saved to the data source.  
+## <a name="updating-the-in-memory-data-source"></a>Atualizando a fonte de dados na memória  
+ Por padrão, os controles de host que permitem a associação de dados simples (como controles de conteúdo em um documento do Word ou um controle de intervalo nomeado em uma planilha do Excel) não salvar as alterações de dados à fonte de dados na memória. Ou seja, quando um usuário final altera os valores em um controle de host e, em seguida, navega para fora do controle, o novo valor no controle não é salva automaticamente para a fonte de dados.  
   
- To save the data to the data source, you can write code that updates the data source in response to a specific event at run time, or you can configure the control to automatically update the data source when the value in the control changes.  
+ Para salvar os dados para a fonte de dados, você pode escrever código que atualiza a fonte de dados em resposta a um evento específico no tempo de execução, ou você pode configurar o controle para atualizar automaticamente a fonte de dados quando o valor no controle é alterado.  
   
- You do not need to save <xref:Microsoft.Office.Tools.Excel.ListObject> changes to the in-memory data source. When you bind a <xref:Microsoft.Office.Tools.Excel.ListObject> control to data, the <xref:Microsoft.Office.Tools.Excel.ListObject> control automatically saves changes to the in-memory data source without requiring additional code.  
+ Você não precisa salvar <xref:Microsoft.Office.Tools.Excel.ListObject> muda para a fonte de dados na memória. Quando você associa um <xref:Microsoft.Office.Tools.Excel.ListObject> controle aos dados, o <xref:Microsoft.Office.Tools.Excel.ListObject> controle salva automaticamente as alterações para a fonte de dados na memória sem a necessidade de código adicional.  
   
-#### <a name="to-update-the-in-memory-data-source-at-run-time"></a>To update the in-memory data source at run time  
+#### <a name="to-update-the-in-memory-data-source-at-run-time"></a>Para atualizar a fonte de dados na memória em tempo de execução  
   
--   Call the <xref:System.Windows.Forms.Binding.WriteValue%2A> method of the <xref:System.Windows.Forms.Binding> object that binds the control to the data source.  
+-   Chamar o <xref:System.Windows.Forms.Binding.WriteValue%2A> método o <xref:System.Windows.Forms.Binding> objeto que associa o controle à fonte de dados.  
   
-     The following example saves changes made to a <xref:Microsoft.Office.Tools.Excel.NamedRange> control on an Excel worksheet to the data source. This example assumes that you have a <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `namedRange1` with its <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property bound to a field in a data source.  
+     O exemplo a seguir salva as alterações feitas em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle em uma planilha do Excel para a fonte de dados. Este exemplo pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `namedRange1` com seus <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade associada a um campo em uma fonte de dados.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]  [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]  
+     [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
+     [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]  
   
-### <a name="automatically-updating-the-in-memory-data-source"></a>Automatically Updating the In-Memory Data Source  
- You can also configure a control so that it automatically updates the in-memory data source. In a document-level project, you can do this by using code or the designer. In an VSTO Add-in project, you must use code.  
+### <a name="automatically-updating-the-in-memory-data-source"></a>Atualizar automaticamente a fonte de dados na memória  
+ Você também pode configurar um controle para que ele atualiza automaticamente a fonte de dados na memória. Em um projeto de nível de documento, você pode fazer isso usando o código ou o designer. Em um projeto de suplemento do VSTO, você deve usar o código.  
   
-##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>To set a control to automatically update the in-memory data source by using code  
+##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Para definir um controle para atualizar automaticamente a fonte de dados na memória usando código  
   
-1.  Use the System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged mode of the <xref:System.Windows.Forms.Binding> object that binds the control to the data source. There are two options for updating the data source:  
+1.  Use o modo de System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged do <xref:System.Windows.Forms.Binding> objeto que associa o controle à fonte de dados. Há duas opções para atualizar a fonte de dados:  
   
-    -   To update the data source when the control is validated, set this property to System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
+    -   Para atualizar a fonte de dados quando o controle é validado, defina essa propriedade como System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
   
-    -   To update the data source when the value of the data-bound property of the control changes, set this property to System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
-  
-        > [!NOTE]  
-        >  The System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged option does not apply to Word host controls, because Word does not offer document-change or control-change notifications. However, this option can be used for Windows Forms controls on Word documents.  
-  
-     The following example configures a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to automatically update the data source when the value in the control changes. This example assumes that you have a <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `namedRange1` with its <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property bound to a field in a data source.  
-  
-     [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)] [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  
-  
-##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>To set a control to automatically update the in-memory data source by using the designer  
-  
-1.  In Visual Studio, open the Word document or Excel workbook in the designer.  
-  
-2.  Click the control that you want to automatically update the data source.  
-  
-3.  In the **Properties** window, expand the **(DataBindings)** property.  
-  
-4.  Next to the **(Advanced)** property, click the ellipsis button (![VisualStudioEllipsesButton screenshot](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton screenshot")).  
-  
-5.  In the **Formatting and Advanced Binding** dialog box, click the **Data Source Update Mode** drop-down list and select one of the following values:  
-  
-    -   To update the data source when the control is validated, select **OnValidation**.  
-  
-    -   To update the data source when the value of the data-bound property of the control changes, select **OnPropertyChanged**.  
+    -   Para atualizar a fonte de dados quando o valor da propriedade de associação de dados do controle de alterações, defina essa propriedade como System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
         > [!NOTE]  
-        >  The **OnPropertyChanged** option does not apply to Word host controls, because Word does not offer document-change or control-change notifications. However, this option can be used for Windows Forms controls on Word documents.  
+        >  A opção System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged não se aplica a controles de host do Word, como o Word não notificações não oferta documento de alteração ou controle de alterações. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.  
   
-6.  Close the **Formatting and Advanced Binding** dialog box.  
+     O exemplo a seguir configura um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle para atualizar a fonte de dados automaticamente quando o valor no controle é alterado. Este exemplo pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `namedRange1` com seus <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade associada a um campo em uma fonte de dados.  
   
-## <a name="updating-the-database"></a>Updating the Database  
- If the in-memory data source is associated with a database, you must update the database with the changes to the data source. For more information about updating a database, see [Save data back to the database](../data-tools/save-data-back-to-the-database.md)  and [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
+     [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
+     [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  
   
-#### <a name="to-update-the-database"></a>To update the database  
+##### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Para definir um controle para atualizar automaticamente a fonte de dados na memória usando o designer  
   
-1.  Call the <xref:System.Windows.Forms.BindingSource.EndEdit%2A> method of the <xref:System.Windows.Forms.BindingSource> for the control.  
+1.  No Visual Studio, abra o documento do Word ou pasta de trabalho do Excel no designer.  
   
-     The <xref:System.Windows.Forms.BindingSource> is automatically generated when you add a data-bound control to a document or workbook at design time. The <xref:System.Windows.Forms.BindingSource> connects the control to the typed dataset in your project. For more information, see [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview).  
+2.  Clique no controle que você deseja atualizar automaticamente a fonte de dados.  
   
-     The following code example assumes that your project contains a <xref:System.Windows.Forms.BindingSource> named `customersBindingSource`.  
+3.  No **propriedades** janela, expanda o **(DataBindings)** propriedade.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]  [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]  
+4.  Ao lado de **(Avançado)** propriedade, clique no botão de reticências (![de tela de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "de tela de VisualStudioEllipsesButton")).  
   
-2.  Call the `Update` method of the generated TableAdapter in your project.  
+5.  No **formatação e associação avançada** caixa de diálogo, clique o **modo de atualização de fonte de dados** lista suspensa e selecione um dos seguintes valores:  
   
-     The TableAdapter is automatically generated when you add a data-bound control to a document or workbook at design time. The TableAdapter connects the typed dataset in your project to the database. For more information, see [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+    -   Para atualizar a fonte de dados quando o controle é validado, selecione **OnValidation**.  
   
-     The following code example assumes that you have a connection to the Customers table in the Northwind database, and that your project contains a TableAdapter named `customersTableAdapter` and a typed dataset named `northwindDataSet`.  
+    -   Para atualizar a fonte de dados quando o valor da propriedade de associação de dados do controle é alterado, selecione **OnPropertyChanged**.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]  [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]  
+        > [!NOTE]  
+        >  O **OnPropertyChanged** opção não se aplica a controles de host do Word, como o Word não notificações não oferta documento de alteração ou controle de alterações. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.  
   
-## <a name="see-also"></a>See Also  
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)    
- [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
- [How to: Scroll Through Database Records in a Worksheet](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [How to: Populate Worksheets with Data from a Database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [How to: Populate Documents with Data from Services](../vsto/how-to-populate-documents-with-data-from-services.md)  
+6.  Fechar o **formatação e associação avançada** caixa de diálogo.  
+  
+## <a name="updating-the-database"></a>Atualizando o banco de dados  
+ Se a fonte de dados na memória estiver associada um banco de dados, você deve atualizar o banco de dados com as alterações para a fonte de dados. Para obter mais informações sobre como atualizar um banco de dados, consulte [salvar dados no banco de dados](../data-tools/save-data-back-to-the-database.md) e [atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
+  
+#### <a name="to-update-the-database"></a>Para atualizar o banco de dados  
+  
+1.  Chamar o <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método o <xref:System.Windows.Forms.BindingSource> para o controle.  
+  
+     O <xref:System.Windows.Forms.BindingSource> é gerado automaticamente quando você adicionar um controle associado a dados para um documento ou a pasta de trabalho em tempo de design. O <xref:System.Windows.Forms.BindingSource> conecta-se o controle para o conjunto de dados tipado em seu projeto. Para obter mais informações, consulte [visão geral do componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).  
+  
+     O exemplo de código a seguir pressupõe que seu projeto contém um <xref:System.Windows.Forms.BindingSource> chamado `customersBindingSource`.  
+  
+     [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
+     [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]  
+  
+2.  Chamar o `Update` método do TableAdapter gerado no seu projeto.  
+  
+     O TableAdapter é gerado automaticamente quando você adicionar um controle associado a dados para um documento ou a pasta de trabalho em tempo de design. O TableAdapter conecta-se o conjunto de dados tipado em seu projeto para o banco de dados. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+  
+     O exemplo de código a seguir pressupõe que você tenha uma conexão para a tabela Customers no banco de dados Northwind, e que o seu projeto contém um TableAdapter chamado `customersTableAdapter` e um conjunto de dados tipado chamado `northwindDataSet`.  
+  
+     [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
+     [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]  
+  
+## <a name="see-also"></a>Consulte também  
+ [Associando dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Salvar dados no banco de dados](../data-tools/save-data-back-to-the-database.md)    
+ [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
+ [Como: percorrer registros do banco de dados em uma planilha](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Como: preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [Como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Como: preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Como preencher documentos usando dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   

@@ -1,40 +1,24 @@
 ---
-title: Elemento TemplateContent (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento TemplateContent (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#TemplateContent
-helpviewer_keywords:
-- TemplateContent element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateContent
+helpviewer_keywords: TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2edfc899416e44a28c020bc9c3cc2fe367d81fce
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1f083097ae79d045891b64d806820a58686b4c95
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>Elemento TemplateContent (modelos do Visual Studio)
 Especifica o conteúdo do modelo.  
@@ -57,15 +41,15 @@ Especifica o conteúdo do modelo.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|Especifica se a criação da solução quando um projeto é criado a partir do modelo.|  
+|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|Especifica se é criar a solução quando um projeto é criado a partir do modelo.|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica a organização e o conteúdo de modelos de vários projetos.|  
-|[Projeto](../extensibility/project-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica os arquivos ou diretórios para adicionar ao projeto.|  
-|[Referências](../extensibility/references-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica as referências de assembly necessárias para um modelo de item.|  
+|[Projeto](../extensibility/project-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica os arquivos ou diretórios a serem adicionados ao projeto.|  
+|[Referências](../extensibility/references-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica as referências a assembly necessárias para um modelo de item.|  
 |[Item de projeto](../extensibility/projectitem-element-visual-studio-item-templates.md)|Elemento opcional.<br /><br /> Especifica um arquivo contido no modelo.|  
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Elemento opcional.<br /><br /> Especifica os parâmetros personalizados que devem ser usados quando um projeto ou item é criado a partir do modelo.|  
   
@@ -73,7 +57,7 @@ Especifica o conteúdo do modelo.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Contém todos os metadados para o modelo de projeto, o modelo de item ou o starter kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Contém todos os metadados para o modelo de projeto, item modelo ou starter kit.|  
   
 ## <a name="remarks"></a>Comentários  
  `TemplateContent`é um elemento necessário.  

@@ -1,11 +1,10 @@
 ---
-title: 'CA1033: Interface methods should be callable by child types | Microsoft Docs'
+title: "CA1033: Métodos de Interface devem ser chamados por tipos filho | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,58 +14,42 @@ helpviewer_keywords:
 - CA1033
 - InterfaceMethodsShouldBeCallableByChildTypes
 ms.assetid: 9f171497-a5e3-4769-a77b-7aed755b2662
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ee5cfe4241fa80e435a3ceb66d7a90cc45a71d1b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4694e1dbcbcf541b502edbe5f2520229ee33f4a6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Interface methods should be callable by child types
+# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: os métodos de interface devem ser chamáveis por tipos filho
 |||  
 |-|-|  
-|TypeName|InterfaceMethodsShouldBeCallableByChildTypes|  
+|NomeDoTipo|InterfaceMethodsShouldBeCallableByChildTypes|  
 |CheckId|CA1033|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Categoria|Microsoft.Design|  
+|Alteração Significativa|Não recentes|  
   
-## <a name="cause"></a>Cause  
- An unsealed externally visible type provides an explicit method implementation of a public interface and does not provide an alternative externally visible method that has the same name.  
+## <a name="cause"></a>Causa  
+ Um tipo visível externamente sem lacre fornece uma implementação de método explícita de uma interface pública e não fornece um método visível externamente alternativo com o mesmo nome.  
   
-## <a name="rule-description"></a>Rule Description  
- Consider a base type that explicitly implements a public interface method. A type that derives from the base type can access the inherited interface method only through a reference to the current instance (`this` in C#) that is cast to the interface. If the derived type re-implements (explicitly) the inherited interface method, the base implementation can no longer be accessed. The call through the current instance reference will invoke the derived implementation; this causes recursion and an eventual stack overflow.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Considere a possibilidade de um tipo base que explicitamente implementa um método de interface pública. Um tipo derivado do tipo base pode acessar o método de interface herdada por meio de uma referência para a instância atual (`this` em c#) que é convertido para a interface. Se o tipo derivado novamente (explicitamente) implementa o método de interface herdada, a implementação base não pode mais ser acessada. A chamada por meio da referência de instância atual invocará a implementação derivada; Isso causa recursão e um estouro de pilha eventual.  
   
- This rule does not report a violation for an explicit implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> when an externally visible `Close()` or `System.IDisposable.Dispose(Boolean)` method is provided.  
+ Essa regra não relata uma violação de uma implementação explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> quando externamente visível `Close()` ou `System.IDisposable.Dispose(Boolean)` método é fornecido.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement a new method that exposes the same functionality and is visible to derived types or change to a nonexplicit implementation. If a breaking change is acceptable, an alternative is to make the type sealed.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, implemente um novo método que expõe a mesma funcionalidade e é visível para tipos derivados ou alterar uma implementação não explícitas. Se uma alteração significativa é aceitável, uma alternativa é fazer o tipo lacrado.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if an externally visible method is provided that has the same functionality but a different name than the explicitly implemented method.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso de que essa regra se um método externamente visível for fornecido, que tem a mesma funcionalidade, mas o método implementado explicitamente um nome diferente.  
   
-## <a name="example"></a>Example  
- The following example shows a type, `ViolatingBase`, that violates the rule and a type, `FixedBase`, that shows a fix for the violation.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra um tipo `ViolatingBase`, que viola a regra e um tipo, `FixedBase`, que mostra uma correção para a violação.  
   
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)

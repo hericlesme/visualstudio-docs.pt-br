@@ -1,42 +1,44 @@
 ---
-title: "Changing the return type of a DataContext method cannot be undone | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Alterar o tipo de retorno de um método DataContext não pode ser desfeita | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 28398032eb4c17916af4294e5ccab386040cf98e
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/09/2017
 ---
-# Changing the return type of a DataContext method cannot be undone
-Alterar o tipo de retorno de um método DataContext não pode ser desfeita. Para reverter para o tipo gerado automaticamente, você deve arrastar o item do Server Explorer\/Database Explorer para o Object Relational Designer novamente. Tem certeza de que deseja alterar o tipo de retorno?  
+# <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Altere o tipo de retorno de um método DataContext não pode ser desfeito
+A alteração do tipo retornado por um método DataContext não pode ser desfeita. Para reverter de volta para o tipo gerado automaticamente, você deve arraste o item do Gerenciador de Servidores/Gerenciador de Base de dados em object relational Designer de Objetos novamente. Tem certeza de que deseja alterar o tipo retornado?  
   
- O tipo de retorno de um <xref:System.Data.Linq.DataContext> método difere dependendo de onde você solta o item [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Se você soltar um item diretamente em uma classe de entidade existente, um <xref:System.Data.Linq.DataContext> método que tem o tipo de retorno da classe de entidade é criado. Se você soltar um item em uma área vazia do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], um <xref:System.Data.Linq.DataContext> método que retorna um tipo gerado automaticamente é criado. Você pode alterar o tipo de retorno de um <xref:System.Data.Linq.DataContext> método depois de adicioná\-lo ao painel de métodos. Para verificar ou alterar o tipo de retorno de um <xref:System.Data.Linq.DataContext> método, selecione\-o e clique no **tipo de retorno** propriedade no **propriedades** janela.  
+O tipo de retorno de um método de <xref:System.Data.Linq.DataContext> diferem dependendo de onde você ignora o item em [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Se você soltar um item diretamente em uma classe existente de entidade, um método de <xref:System.Data.Linq.DataContext> que tem o tipo de retorno de classe de entidade é criado. Se você soltar um item em uma área vazia de [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], um método de <xref:System.Data.Linq.DataContext> que retorna um tipo gerado automaticamente é criado. Você pode alterar o tipo de retorno de um método de <xref:System.Data.Linq.DataContext> depois de adicioná-lo ao painel de métodos. Para verificar ou alterar o tipo de retorno de um <xref:System.Data.Linq.DataContext> método, selecione-o e clique no **tipo de retorno** propriedade o **propriedades** janela.  
   
-### Para alterar o tipo de retorno de um DataContext  
+### <a name="to-change-the-return-type-of-a-datacontext"></a>Para alterar o tipo de retorno de um DataContext  
   
 -   Clique em **Sim**.  
   
-### Para sair da caixa de mensagem e deixar o tipo de retorno inalterado  
+### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Para sair da caixa de mensagem e deixar o tipo de retorno inalterado  
   
--   Clique em **não**.  
+-   Clique em **Não**.  
   
-### Para reverter para o tipo de retorno original após alterar o tipo de retorno  
+### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>Para reverter para o tipo de retorno original após alterar o tipo de retorno  
   
-1.  Selecione o <xref:System.Data.Linq.DataContext> método o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] e excluí\-lo.  
+1.  Selecione o <xref:System.Data.Linq.DataContext> método sobre o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] e excluí-lo.  
   
-2.  Localize o item na **Server Explorer\/Database Explorer** e arraste\-a para o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Localize o item em **Server Explorer/Database Explorer** e arraste-a para o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-     Um <xref:System.Data.Linq.DataContext> método é criado com o tipo de retorno padrão original.  
+    Um método de <xref:System.Data.Linq.DataContext> é criado com o tipo de retorno padrão original.  
   
-## Consulte também  
- [LINQ to SQL Tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [DataContext Methods \(O\/R Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Como: criar métodos DataContext mapeados para procedimentos armazenados e funções \(Object Relational Designer\)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>Consulte também
+[Mensagens de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

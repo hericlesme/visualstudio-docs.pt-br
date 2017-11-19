@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Delete Worksheets from Workbooks | Microsoft Docs'
+title: 'Como: excluir planilhas programaticamente de pastas de trabalho | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,67 +14,68 @@ helpviewer_keywords:
 - workbooks, deleting worksheets
 - worksheets, deleting
 ms.assetid: c5ae99f0-806d-4320-a29c-75ad444fb996
-caps.latest.revision: 48
-author: kempb
-ms.author: kempb
+caps.latest.revision: "48"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e28e765abd1c7b18bdc0121e12be99db6e87afc1
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: efa5c68555fbd9e309335d8c985c4f14f1b07b18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>How to: Programmatically Delete Worksheets from Workbooks
-  You can delete any worksheet in a workbook. To delete a worksheet, use the worksheet host item or access the worksheet by using the sheets collection of the workbook.  
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Como excluir planilhas de pastas de trabalho programaticamente
+  Você pode excluir qualquer planilha em uma pasta de trabalho. Para excluir uma planilha, use o item de host de planilha ou a planilha de acesso por meio da coleção de folhas da pasta de trabalho.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-the-worksheet-host-item"></a>Using the Worksheet Host Item  
- If the worksheet was added at design-time in a document-level customization, use the <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> method to delete a specified worksheet. The following code deletes a worksheet from a workbook by referencing the worksheet host item directly.  
+## <a name="using-the-worksheet-host-item"></a>Usando o Item de Host de planilha  
+ Se a planilha foi adicionada em tempo de design em uma personalização no nível do documento, use o <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> método para excluir uma planilha especificada. O código a seguir exclui uma planilha de uma pasta de trabalho referenciando o item de host de planilha diretamente.  
   
 > [!IMPORTANT]  
->  This code runs only in projects that you create by using any of the following project templates:  
+>  Esse código é executado apenas em projetos que você cria usando qualquer um dos modelos de projeto a seguir:  
 >   
->  -   Excel 2013 Workbook  
-> -   Excel 2013 Template  
-> -   Excel 2010 Workbook  
-> -   Excel 2010 Template  
+>  -   Pasta de trabalho do Excel 2013  
+> -   Modelo do Excel 2013  
+> -   Pasta de trabalho do Excel 2010  
+> -   Modelo do Excel 2010  
 >   
->  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Excel** assembly, and then you must use classes from that assembly to open a workbook and delete a worksheet. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Excel 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  Se você deseja executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Microsoft.Office.Interop.Excel** assembly e, em seguida, você deve usar classes do assembly para abrir uma pasta de trabalho e excluir uma planilha. Para obter mais informações, consulte [como: destino Office aplicativos por meio de Assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de Assembly de interoperabilidade do Excel 2010 primário](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
-#### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>To delete a worksheet by using a worksheet host item  
+#### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>Para excluir uma planilha usando um item de host de planilha  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> method of `Sheet1`.  
+1.  Chame o método <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> de `Sheet1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]  [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
+     [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]  
   
-## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Using the Sheets Collection of the Excel Workbook  
- Access worksheets through the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Sheets> collection in the following cases:  
+## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Usando a coleção de folhas da pasta de trabalho do Excel  
+ Acessar planilhas por meio do Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Sheets> coleção nos seguintes casos:  
   
--   You want to delete a worksheet in a VSTO Add-in.  
+-   Você deseja excluir uma planilha em um suplemento do VSTO.  
   
--   The worksheet that you want to delete was created at run time in a document-level customization.  
+-   A planilha que você deseja excluir foi criada em tempo de execução em uma personalização no nível do documento.  
   
- The following code deletes a worksheet from a workbook by referencing the sheet through the index number of the **Sheets** collection. This code assumes that a new worksheet was created programmatically.  
+ O código a seguir exclui uma planilha de uma pasta de trabalho referenciando a folha até o número de índice da **folhas** coleção. Esse código supõe que uma nova planilha foi criada por meio de programação.  
   
 > [!IMPORTANT]  
->  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Excel** assembly, and then you must use classes from that assembly to open a workbook and delete a worksheet. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Excel 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  Se você deseja executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Microsoft.Office.Interop.Excel** assembly e, em seguida, você deve usar classes do assembly para abrir uma pasta de trabalho e excluir uma planilha. Para obter mais informações, consulte [como: destino Office aplicativos por meio de Assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de Assembly de interoperabilidade do Excel 2010 primário](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
-#### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>To delete a worksheet by using the Sheets collection of the Excel workbook  
+#### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Para excluir uma planilha usando a coleção de folhas da pasta de trabalho do Excel  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> method of the <xref:Microsoft.Office.Interop.Excel.Sheets> collection.  
+1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> método o <xref:Microsoft.Office.Interop.Excel.Sheets> coleção.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]  [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
+     [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
- [How to: Programmatically Move Worksheets Within Workbooks](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [How to: Programmatically Select Worksheets](../vsto/how-to-programmatically-select-worksheets.md)   
- [How to: Programmatically Add New Worksheets to Workbooks](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Worksheet Host Item](../vsto/worksheet-host-item.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>Consulte também  
+ [Trabalhando com planilhas](../vsto/working-with-worksheets.md)   
+ [Como: ocultar planilhas programaticamente](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Como: programaticamente mover planilhas em pastas de trabalho](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Como: Selecionar planilhas programaticamente](../vsto/how-to-programmatically-select-worksheets.md)   
+ [Como: adicionar novas planilhas a pastas de trabalho programaticamente](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Item de Host de planilha](../vsto/worksheet-host-item.md)   
+ [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Limitações programáticas de itens de Host e Controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

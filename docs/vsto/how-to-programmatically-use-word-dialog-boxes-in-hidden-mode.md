@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Use Word Dialog Boxes in Hidden Mode | Microsoft Docs'
+title: "Como: usar programaticamente as caixas de diálogo do Word no modo oculto | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,38 +15,38 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], dialog boxes
 - dialog boxes, hidden mode in Word
 ms.assetid: a5619325-8b54-41f1-becb-3f6eae7e4a6b
-caps.latest.revision: 48
-author: kempb
-ms.author: kempb
+caps.latest.revision: "48"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 527b6c37d87f7a04d93e96692f6d40d4e25e8f39
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: daf5cfb79c16a26b871e2c4d07ec304c17cb6a33
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>How to: Programmatically Use Word Dialog Boxes in Hidden Mode
-  You can perform complex operations with one method call by invoking the built-in dialog boxes in Microsoft Office Word without displaying them to the user. You can do this by using the <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> method of the <xref:Microsoft.Office.Interop.Word.Dialog> object without calling the <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> method.  
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Como usar caixas de diálogo do Word no modo Oculto programaticamente
+  Você pode executar operações complexas com chamada de um método invocando caixas de diálogo internas no Microsoft Office Word sem exibi-los para o usuário. Você pode fazer isso usando o <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> método o <xref:Microsoft.Office.Interop.Word.Dialog> objeto sem chamar o <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> método.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="examples"></a>Examples  
- The following code examples demonstrate how to use the **Page Setup** dialog box in hidden mode to set multiple page setup properties with no user input. The examples use a <xref:Microsoft.Office.Interop.Word.Dialog> object to configure a custom page size. The specific settings for page setup, such as the top margin, bottom margin, and so on, are available as late-bound properties of the <xref:Microsoft.Office.Interop.Word.Dialog> object. These properties are dynamically created by Word at run time.  
+## <a name="examples"></a>Exemplos  
+ Os exemplos de código a seguir demonstram como usar o **Configurar página** caixa de diálogo no modo oculto para definir propriedades de instalação de várias página com nenhuma entrada do usuário. Os exemplos usam um <xref:Microsoft.Office.Interop.Word.Dialog> objeto para definir um tamanho de página personalizado. As configurações específicas de configuração de página, como a margem superior, margem inferior e assim por diante, estão disponíveis como propriedades de associação tardia do <xref:Microsoft.Office.Interop.Word.Dialog> objeto. Essas propriedades são criadas dinamicamente por palavra em tempo de execução.  
   
- The following example demonstrates how to perform this task in Visual Basic projects where **Option Strict** is off and in Visual C# projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. In these projects, you can use late binding features in the Visual Basic and Visual C# compilers. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
+ O exemplo a seguir demonstra como executar essa tarefa em projetos do Visual Basic onde **Option Strict** é desativado e em projetos do Visual c# que visam o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Nesses projetos, você pode usar os recursos de associação tardia nos compiladores do Visual Basic e Visual c#. Para usar este exemplo, executá-la na `ThisDocument` ou `ThisAddIn` classe em seu projeto.  
   
- [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)] [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]  
+ [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
+ [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]  
   
- The following example demonstrates how to perform this task in Visual Basic projects where **Option Strict** is on. In these projects, you must use reflection to access the late-bound properties. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
+ O exemplo a seguir demonstra como executar essa tarefa em projetos do Visual Basic onde **Option Strict** está em. Nesses projetos, você deve usar reflexão para acessar as propriedades de associação tardia. Para usar este exemplo, executá-la na `ThisDocument` ou `ThisAddIn` classe em seu projeto.  
   
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Use Built-In Dialog Boxes in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
- [Word Object Model Overview](../vsto/word-object-model-overview.md)   
- [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md)   
- [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
- [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
+## <a name="see-also"></a>Consulte também  
+ [Como: programaticamente, Use as caixas de diálogo integradas no Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)   
+ [Associação tardia em soluções do Office](../vsto/late-binding-in-office-solutions.md)   
+ [Reflexão (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
+ [Reflexão (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
   
   

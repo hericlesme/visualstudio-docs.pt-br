@@ -1,64 +1,57 @@
 ---
-title: "Personalizando o comportamento de exclusão | Documentos do Microsoft"
+title: "Personalizando comportamento de exclusão | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.dsltools.dsldesigner.deletebehavior
-helpviewer_keywords:
-- Domain-Specific Language, deletion
+f1_keywords: vs.dsltools.dsldesigner.deletebehavior
+helpviewer_keywords: Domain-Specific Language, deletion
 ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a8a647bdf122997c2b948f0c5a6c823cf0a91f07
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 159d6a7b3a381eeb5d6f92154e657de67c567a38
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizando o comportamento da operação de excluir
-A exclusão de um elemento geralmente provoca também a exclusão de seus elementos relacionados. Todas as relações conectadas a ele e quaisquer elementos filhos são excluídos. Esse comportamento é chamado *excluir propagação*. Você pode personalizar a propagação da exclusão, por exemplo, para providenciar que os elementos adicionais relacionados sejam excluídos. Ao escrever o código do programa, você pode fazer com que a propagação de exclusão dependa do estado do modelo. Também é possível causar outras alterações em resposta a uma exclusão.  
+A exclusão de um elemento geralmente provoca também a exclusão de seus elementos relacionados. Todas as relações conectadas a ele e quaisquer elementos filhos são excluídos. Esse comportamento é denominado *excluir propagação*. Você pode personalizar a propagação da exclusão, por exemplo, para providenciar que os elementos adicionais relacionados sejam excluídos. Ao escrever o código do programa, você pode fazer com que a propagação de exclusão dependa do estado do modelo. Também é possível causar outras alterações em resposta a uma exclusão.  
   
  Este tópico inclui as seções a seguir:  
   
 -   [Comportamento de exclusão padrão](#default)  
   
--   [Definindo a opção Propagar exclusão de uma função](#property)  
+-   [Definindo a opção Excluir propagação de uma função](#property)  
   
--   [Substituindo o fechamento da exclusão](#closure) – usar essa técnica onde a exclusão pode levar à exclusão de elementos vizinhos.  
+-   [Substituindo o encerramento excluir](#closure) -Use essa técnica em que a exclusão pode levar a exclusão dos elementos de vizinhos.  
   
--   [Usando OnDeleting e OnDeleted](#ondeleting) – usar esses métodos em que a resposta pode incluir outras ações como atualizar um valor dentro ou fora do repositório.  
+-   [Usando OnDeleting e OnDeleted](#ondeleting) -usar esses métodos em que a resposta pode incluir outras ações como atualizar um valor dentro ou fora da loja.  
   
--   [Regras de exclusão](#rules) – usar regras para propagar atualizações de qualquer tipo em armazenamento, em que uma alteração pode levar a outras pessoas.  
+-   [Regras de exclusão](#rules) -usar regras para propagar atualizações de qualquer espécie dentro do repositório, em que uma alteração pode levar a outras pessoas.  
   
--   [Eventos de exclusão](#rules) – eventos de uso de armazenamento para propagar atualizações fora do repositório, por exemplo, para outros [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] documentos.  
+-   [Eventos de exclusão](#rules) -eventos de uso de armazenamento para propagar atualizações fora da loja, por exemplo, para outros [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] documentos.  
   
--   [Desfazer mesclagem](#unmerge) – use a operação Desfazer mesclagem para desfazer a operação de mesclagem que anexa um elemento filho para seu pai.  
+-   [UnMerge](#unmerge) -use a operação UnMerge para desfazer a operação de mesclagem que anexado a um elemento filho para seu pai.  
   
-##  <a name="a-namedefaulta-default-deletion-behavior"></a><a name="default"></a>Comportamento de exclusão padrão  
+##  <a name="default"></a>Comportamento de exclusão padrão  
  Por padrão, as seguintes regras regem a propagação da exclusão:  
   
--   Se um elemento for excluído, todos os elementos incorporados também serão excluídos. Os elementos incorporados são os elementos de destino das relações de incorporação para os quais este elemento é a fonte. Por exemplo, se houver uma relação de incorporação de **álbum** para **música**, em seguida, quando um determinado álbum for excluído, todas as suas músicas também serão excluídas.  
+-   Se um elemento for excluído, todos os elementos incorporados também serão excluídos. Os elementos incorporados são os elementos de destino das relações de incorporação para os quais este elemento é a fonte. Por exemplo, se houver uma relação de incorporação de **álbum** para **música**, em seguida, quando um determinado álbum é excluído, todas as suas músicas também serão excluídas.  
   
      Por outro lado, a exclusão de uma música não exclui o álbum.  
   
--   Por padrão, a exclusão não se propaga ao longo das relações de referência. Se houver uma relação de referência **ArtistPlaysOnAlbum** de **álbum** para **artista**, excluir um álbum não excluirá nenhum artista relacionado e exclusão de um artista não excluirá nenhum álbum.  
+-   Por padrão, a exclusão não se propaga ao longo das relações de referência. Se houver uma relação de referência **ArtistPlaysOnAlbum** de **álbum** para **artista**, excluir um álbum não exclui qualquer artista relacionada e excluir um artista não Exclua qualquer álbum.  
   
      No entanto, a exclusão se propaga ao longo de algumas relações internas. Por exemplo, quando um elemento do modelo é excluído, sua forma no diagrama também é excluída. O elemento e a forma estão relacionados pela relação de referência `PresentationViewsSubject`.  
   
 -   Todo relacionamento conectado ao elemento, seja na origem ou no destino, é excluído. A propriedade de função do elemento na função oposta passa a não conter o elemento excluído.  
   
-##  <a name="a-namepropertya-setting-the-propagate-delete-option-of-a-role"></a><a name="property"></a>Definindo a opção Propagar exclusão de uma função  
+##  <a name="property"></a>Definindo a opção Excluir propagação de uma função  
  Você pode fazer com que a exclusão se propague ao longo da relação de referência ou de um filho incorporado ao seu pai.  
   
 #### <a name="to-set-delete-propagation"></a>Para configurar a propagação de exclusão  
@@ -67,7 +60,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
   
      Por exemplo, se você deseja especificar que sempre que um Álbum for excluído, os Artistas relacionados também sejam excluídos, selecione a função conectada ao Artista da classe de domínio.  
   
-2.  Na janela Propriedades, defina o **propaga exclusão** propriedade.  
+2.  Na janela Propriedades, defina o **propaga excluir** propriedade.  
   
 3.  Pressione F5 e verifique se:  
   
@@ -75,22 +68,22 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
   
     -   Quando um elemento na função oposta é excluído, instâncias dessa relação são excluídas e os elementos relacionados a essa função são excluídos.  
   
- Você também pode ver o **propaga exclusão** opção o **detalhes de DSL** janela. Selecione uma classe de domínio e, na janela de detalhes de DSL, abra o **comportamento de exclusão** página clicando no botão ao lado da janela. O **propagar** opção é mostrada para a função oposta de cada relação. O **Excluir estilo** coluna indica se o **propagar** opção é em sua configuração padrão, mas não tem nenhum efeito separado.  
+ Você também pode ver o **propaga excluir** opção o **DSL detalhes** janela. Selecione uma classe de domínio e, na janela de detalhes de DSL, abra o **excluir comportamento** página clicando no botão ao lado da janela. O **Propagate** opção é mostrada para a função oposta de cada relação. O **Excluir estilo** coluna indica se o **Propagate** opção é em sua configuração padrão, mas ele não tem nenhum efeito separado.  
   
 ## <a name="delete-propagation-by-using-program-code"></a>Propagação de exclusão usando o código do programa  
  As opções no arquivo Definição de DSL só permitem que você escolha se a exclusão se propaga para um vizinho imediato ou não. Para implementar um esquema mais complexo de propagação de exclusão, você pode gravar o código do programa.  
   
 > [!NOTE]
->  Para adicionar código de programa à definição de DSL, crie um arquivo de código separado no **Dsl** do projeto e escreva definições parciais para aumentar as classes na pasta código gerado. Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+>  Para adicionar código de programa à sua definição de DSL, crie um arquivo de código separado no **Dsl** do projeto e gravar as definições parciais para aumentar as classes na pasta de código gerado. Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
-##  <a name="a-nameclosurea-defining-a-delete-closure"></a><a name="closure"></a>Definindo um fechamento de exclusão  
- A operação de exclusão usa a classe *YourModel***DeleteClosure** para determinar quais elementos excluir, dada uma seleção inicial. Ela chama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` repetidamente, percorrendo o gráfico de relações. Você pode substituir esses métodos. ShouldVisitRolePlayer é fornecido com a identidade de um vínculo e o elemento de uma das funções do vínculo. Ele deve retornar um dos seguintes valores:  
+##  <a name="closure"></a>Definindo um fechamento de exclusão  
+ A operação de exclusão usa a classe *YourModel***DeleteClosure** para determinar quais elementos para excluir uma seleção inicial fornecida. Ela chama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` repetidamente, percorrendo o gráfico de relações. Você pode substituir esses métodos. ShouldVisitRolePlayer é fornecido com a identidade de um link e o elemento em uma das funções do link. Ele deve retornar um dos seguintes valores:  
   
--   **VisitorFilterResult.Yes**– o elemento deve ser excluído e o caminhador deve prosseguir e tentar o elemento de outros links.  
+-   **VisitorFilterResult.Yes**- o elemento deve ser excluído e o walker deve continuar para tentar o elemento de outros links.  
   
--   **VisitorFilterResult.DoNotCare** – o elemento não deve ser excluído, a menos que outra consulta responda que deve ser excluído.  
+-   **VisitorFilterResult.DoNotCare** -o elemento não deve ser excluído, a menos que outra consulta respostas que deve ser excluído.  
   
--   **VisitorFilterResult.Never** – o elemento não deve ser excluído, mesmo que outra consulta responda **Sim**, e o caminhador não deve tentar o elemento de outros links.  
+-   **VisitorFilterResult.Never** -o elemento não deve ser excluído mesmo que responde a outra consulta **Sim**, e o walker não deve tentar o elemento de outros links.  
   
 ```  
 // When a musician is deleted, delete their albums with a low rating.  
@@ -116,14 +109,14 @@ partial class MusicLibDeleteClosure
         return VisitorFilterResult.Yes;   
       }  
       else  
-        // Don’t delete unless another relationship deletes it:  
+        // Don't delete unless another relationship deletes it:  
         return VisitorFilterResult.DoNotCare;   
     }  
     else   
     {  
       // Test for and respond to other relationships and roles here.  
   
-      // Not the relationship or role we’re interested in.  
+      // Not the relationship or role we're interested in.  
       return base.ShouldVisitRolePlayer(walker, sourceElement,   
              elementLink, targetDomainRole, targetRolePlayer);  
     }  
@@ -136,16 +129,16 @@ partial class MusicLibDeleteClosure
   
  No entanto, a técnica supõe que a exclusão afete apenas seus vizinhos no gráfico de relações: não é possível usar esse método para excluir um elemento em outra parte do modelo. Você não poderá usá-lo se quiser adicionar elementos ou fazer outras alterações em resposta a uma exclusão.  
   
-##  <a name="a-nameondeletinga-using-ondeleting-and-ondeleted"></a><a name="ondeleting"></a>Usando OnDeleting e OnDeleted  
+##  <a name="ondeleting"></a>Usando OnDeleting e OnDeleted  
  Você pode substituir `OnDeleting()` ou `OnDeleted()` em uma classe de domínio ou em uma relação de domínio.  
   
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>é chamado quando um elemento está prestes a ser excluído, mas antes que suas relações sejam desconectadas.</xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> Ele ainda é navegável de outros elementos e ainda está em `store.ElementDirectory`.  
+1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> é chamado quando um elemento está prestes a ser excluído, mas antes que suas relações sejam desconectadas. Ele ainda é navegável de outros elementos e ainda está em `store.ElementDirectory`.  
   
      Se vários elementos forem excluído ao mesmo tempo, OnDeleting será chamado por todos eles antes de executar as exclusões.  
   
      `IsDeleting` é verdadeiro.  
   
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>é chamado quando o elemento foi excluído.</xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> Ele permanece no heap do CLR para que um Desfazer possa ser realizado, se necessário, mas é desvinculado de outros elementos e removido de `store.ElementDirectory`. Para relações, a função ainda referencia os antigo players de função.`IsDeleted` é verdade.  
+2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> é chamado quando o elemento foi excluído. Ele permanece no heap do CLR para que um Desfazer possa ser realizado, se necessário, mas é desvinculado de outros elementos e removido de `store.ElementDirectory`. Para relações, as funções ainda referenciam os antigo players de função.`IsDeleted` é verdadeiro.  
   
 3.  OnDeleting e OnDeleted são chamados quando o usuário invoca Desfazer depois de criar um elemento e quando uma exclusão anterior é repetida em Refazer. Use `this.Store.InUndoRedoOrRollback` para evitar atualizar elementos de repositório nesses casos. Para obter mais informações, consulte [como: usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
@@ -201,12 +194,12 @@ partial class Artist
   
 ```  
   
- Quando você executar <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A>em um elemento, OnDeleting e OnDeleted serão chamados.</xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> Esses métodos são realizados em linha, isto é, imediatamente antes e após a exclusão real. Se o seu código excluir dois ou mais elementos, OnDeleting e OnDeleted serão chamados em alternância em todos eles, um após o outro.  
+ Quando você executa <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> em um elemento, OnDeleting e OnDeleted são chamados. Esses métodos são sempre executado embutido - ou seja, imediatamente antes e após a exclusão real. Se o seu código excluir dois ou mais elementos, OnDeleting e OnDeleted serão chamados em alternância em todos eles, um após o outro.  
   
-##  <a name="a-namerulesa-deletion-rules-and-events"></a><a name="rules"></a>Regras de exclusão e eventos  
+##  <a name="rules"></a>Regras de exclusão e eventos  
  Como uma alternativa aos manipuladores OnDelete, você pode definir regras e eventos de exclusão.  
   
-1.  **Excluindo** e **excluir** são disparadas regras apenas em uma transação e não em Desfazer ou refazer. Você pode configurá-las para serem colocadas em fila para execução no final da transação em que a exclusão é realizada. As regras Deleting são sempre executadas antes de qualquer regra Deleted na fila.  
+1.  **Excluindo** e **excluir** são disparadas regras apenas em uma transação e não em um Desfazer ou refazer. Você pode configurá-las para serem colocadas em fila para execução no final da transação em que a exclusão é realizada. As regras Deleting são sempre executadas antes de qualquer regra Deleted na fila.  
   
      Use regras para propagar alterações que afetam apenas os elementos no repositório, incluindo relações, elementos de diagrama e suas propriedades. Normalmente, uma regra Deleting é usada para propagar exclusão e uma regra Delete é usada para criar elementos e relações de reposição.  
   
@@ -217,7 +210,7 @@ partial class Artist
      Para obter mais informações, consulte [manipuladores de propagar alterações fora do modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Quando um elemento é excluído, você pode acessar seus valores de propriedade de domínio, mas não é possível navegar nos vínculos de relação. No entanto, se você definir um evento excluído em um relacionamento, também poderá acessar os dois elementos que eram seus usuários. Assim, se você quiser responder à exclusão de um elemento de modelo, mas quiser acessar um elemento ao qual ele estava vinculado, defina um evento de exclusão no relacionamento em vez da classe de domínio do elemento modelo.  
+    >  Quando um elemento é excluído, você pode acessar seus valores de propriedade de domínio, mas não é possível navegar nos vínculos de relação. No entanto, se você definir um evento excluído em um relacionamento, também poderá acessar os dois elementos que eram seus usuários. Portanto, se você deseja responder à exclusão de um elemento de modelo, mas deseja acessar um elemento ao qual ele foi vinculado, defina um evento delete na relação, em vez de classe de domínio do elemento de modelo.  
   
 ### <a name="example-deletion-rules"></a>Exemplo de regras de exclusão  
   
@@ -293,14 +286,14 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="a-nameunmergea-unmerge"></a><a name="unmerge"></a>Desfazer mesclagem  
- A operação que anexa um elemento filho para seu pai é chamada *mesclagem*. Ela ocorre quando um novo elemento ou grupo de elementos é criado a partir da caixa de ferramentas, ou transferida de outra parte do modelo, ou copiada da área de transferência. Além de criar uma relação de incorporação entre o pai e seu novo filho, a operação de mesclagem também pode definir relações adicionais, criar elementos auxiliares e definir valores de propriedades nos elementos. A operação de mesclagem é encapsulada em uma EMD (Diretiva de Mesclagem de Elementos).  
+##  <a name="unmerge"></a>Desfazer a mesclagem  
+ A operação que é anexado a um elemento filho para seu pai é chamada *mesclagem*. Ela ocorre quando um novo elemento ou grupo de elementos é criado a partir da caixa de ferramentas, ou transferida de outra parte do modelo, ou copiada da área de transferência. Além de criar uma relação de incorporação entre o pai e seu novo filho, a operação de mesclagem também pode definir relações adicionais, criar elementos auxiliares e definir valores de propriedades nos elementos. A operação de mesclagem é encapsulada em uma EMD (Diretiva de Mesclagem de Elementos).  
   
- Uma EMD também encapsula complementar *Desfazer mesclagem* ou `MergeDisconnect` operação. Se você tiver um conjunto de elementos que foi construído usando uma mesclagem, é recomendável usar a operação desfazer mesclagem associada para remover um elemento dele se quiser deixar os elementos restantes em um estado consistente. A operação desfazer mesclagem normalmente usa as técnicas descritas nas seções anteriores.  
+ Um EMD também encapsula o complementar *desfazer* ou `MergeDisconnect` operação. Se você tiver um conjunto de elementos que foi construído usando uma mesclagem, é recomendável usar a operação desfazer mesclagem associada para remover um elemento dele se quiser deixar os elementos restantes em um estado consistente. A operação desfazer mesclagem normalmente usa as técnicas descritas nas seções anteriores.  
   
- Para obter mais informações, consulte [Personalizando a criação de elemento e o movimento](../modeling/customizing-element-creation-and-movement.md).  
+ Para obter mais informações, consulte [Personalizando o elemento de criação e a movimentação](../modeling/customizing-element-creation-and-movement.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizar o comportamento de cópia](../modeling/customizing-copy-behavior.md)   
- [Personalizando a criação de elemento e o movimento](../modeling/customizing-element-creation-and-movement.md)   
+ [Personalizando a criação de elemento e de movimentação](../modeling/customizing-element-creation-and-movement.md)   
  [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
