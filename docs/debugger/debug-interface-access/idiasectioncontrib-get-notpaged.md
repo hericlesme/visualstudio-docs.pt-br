@@ -1,44 +1,42 @@
 ---
-title: "IDiaSectionContrib::get_notPaged | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSectionContrib::get_notPaged"
+title: ': Get_notpaged | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_notPaged method
 ms.assetid: bb6baa40-fece-4a4c-aba9-f4b41f418f8b
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 25003d786b9467f62756fad164df135112c25f62
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_notPaged
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um sinalizador que indica se a seção não pode ser paginada memória insuficiente.  
+# <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
+Recupera um sinalizador que indica se a seção não pode ser paginada sem memória.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_notPaged (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_notPaged (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out, retval\] Retorna `TRUE` se a seção não pode ser paginada. Caso contrário, retornará `FALSE`.  
+ [out, retval] Retorna `TRUE` se a seção não pode ser paginada; caso contrário, retornará `FALSE`.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não há suporte para esta propriedade.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

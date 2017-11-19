@@ -1,32 +1,32 @@
 ---
-title: "C&#243;digo de exemplo de navega&#231;&#227;o do depurador (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "O código de exemplo de navegação (JavaScript) depurador | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 4e2d1346-91d6-4935-9e70-130e369a4cb7
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c6c0642e645fa3eba284fc1e4de888916aeb4a3a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;digo de exemplo de navega&#231;&#227;o do depurador (JavaScript)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-O código deste tópico é o arquivo de exemplo para o [Controlar a execução em uma sessão de depuração \(JavaScript\)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) tópico.  
+# <a name="debugger-navigation-sample-code-javascript"></a>Código de exemplo de navegação do depurador (JavaScript)
+O código neste tópico é o arquivo de exemplo para o [controlar a execução em uma sessão de depuração (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) tópico.  
   
-## código de exemplo default. js  
+## <a name="defaultjs-sample-code"></a>código de exemplo default.js  
   
 ```javascript  
 // For an introduction to the Blank template, see the following documentation:  

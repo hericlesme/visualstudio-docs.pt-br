@@ -1,39 +1,25 @@
 ---
-title: Elemento buildProjectOnload (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento buildProjectOnload (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e0298b10c383ca92a8a64b2bf3044a1ded10440f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (Modelos do Visual Studio)
-Como criar e adicioná-los para uma solução se baseia somente novos projetos. Toda a solução não é criada.  
+Cria apenas a novos projetos quando você cria e adicioná-los a uma solução. Toda a solução não está compilada.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,7 +35,7 @@ Como criar e adicioná-los para uma solução se baseia somente novos projetos. 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -63,13 +49,13 @@ Como criar e adicioná-los para uma solução se baseia somente novos projetos. 
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false` para indicar se deseja criar o novo projeto apenas quando ele é criado a partir do modelo.  
+ O texto deve ser `true` ou `false` para indicar se deseja criar somente o novo projeto quando ele é criado a partir do modelo.  
   
 ## <a name="remarks"></a>Comentários  
  `BuildProjectOnLoad` é um elemento opcional. O valor padrão é `false`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um modelo Visual c#.  
+ O exemplo a seguir ilustra os metadados para um modelo de Visual c#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -97,5 +83,5 @@ Como criar e adicioná-los para uma solução se baseia somente novos projetos. 
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Criando modelos de projeto e Item](../ide/creating-project-and-item-templates.md)   
+ [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

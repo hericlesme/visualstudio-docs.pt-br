@@ -1,57 +1,55 @@
 ---
-title: "Fun&#231;&#245;es de gancho do bloco de clientes | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.hooks"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "Função _CrtSetDumpClient"
-  - "blocos de cliente, funções de gancho"
-  - "blocos de cliente, validando e relatando dados"
-  - "depurando [C++], funções de gancho"
-  - "ganchos, bloco de cliente"
+title: "Funções de gancho do bloco de cliente | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.hooks
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- client blocks, validating and reporting data
+- debugging [C++], hook functions
+- _CrtSetDumpClient function
+- client blocks, hook functions
+- hooks, client block
 ms.assetid: f21c197e-565d-4e3f-9b27-4c018c9b87fc
-caps.latest.revision: 15
-caps.handback.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7761690ee905ffd65ded9498de7422857b31f455
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Fun&#231;&#245;es de gancho do bloco de clientes
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Se você quiser validar ou reportar o conteúdo dos dados armazenados em blocos `_CLIENT_BLOCK`, poderá escrever uma função especificamente para essa finalidade.  A função que você escreve deverá ter um protótipo semelhante ao seguinte, conforme definido em CRTDBG.H:  
+# <a name="client-block-hook-functions"></a>Funções de gancho do bloco de clientes
+Se você quiser validar ou reportar o conteúdo dos dados armazenados em blocos `_CLIENT_BLOCK`, poderá escrever uma função especificamente para essa finalidade. A função que você escreve deverá ter um protótipo semelhante ao seguinte, conforme definido em CRTDBG.H:  
   
 ```  
 void YourClientDump(void *, size_t)  
   
 ```  
   
- Em outras palavras, sua função de gancho deve aceitar um ponteiro **void** para o início do bloco de alocação, junto com um valor do tipo **size\_t** que indica o tamanho da alocação, e retornar `void`.  Além disso, o conteúdo depende de você.  
+ Em outras palavras, a função de gancho deve aceitar um **void** ponteiro no início do bloco de alocação, junto com um **size_t** digite um valor que indica o tamanho da alocação e retornar `void`. Além disso, o conteúdo depende de você.  
   
- Quando você tiver instalado a função de gancho usando [\_CrtSetDumpClient](/visual-cpp/c-runtime-library/reference/crtsetdumpclient), ela será chamada sempre que um bloco `_CLIENT_BLOCK` for despejado.  Você pode usar [\_CrtReportBlockType](/visual-cpp/c-runtime-library/reference/crtreportblocktype) para obter informações sobre o tipo ou subtipo de blocos despejados.  
+ Depois de instalar a função de gancho usando [crtsetdumpclient](/cpp/c-runtime-library/reference/crtsetdumpclient), ele será chamado sempre que uma `_CLIENT_BLOCK` bloco é despejado. Você pode usar [crtreportblocktype](/cpp/c-runtime-library/reference/crtreportblocktype) para obter informações sobre o tipo ou subtipo de blocos despejados.  
   
- O ponteiro para sua função que você passa para `_CrtSetDumpClient` é do tipo **\_CRT\_DUMP\_CLIENT**, conforme definido em CRTDBG.H:  
+ O ponteiro para a função que você passa para `_CrtSetDumpClient` é do tipo **crt_dump_client**, conforme definido em CRTDBG. H:  
   
 ```  
 typedef void (__cdecl *_CRT_DUMP_CLIENT)  
    (void *, size_t);  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Gravação da função de gancho de depuração](../debugger/debug-hook-function-writing.md)   
- [crt\_dbg2 Sample](http://msdn.microsoft.com/pt-br/21e1346a-6a17-4f57-b275-c76813089167)   
- [\_CrtReportBlockType](/visual-cpp/c-runtime-library/reference/crtreportblocktype)
+ [Exemplo de crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)   
+ [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

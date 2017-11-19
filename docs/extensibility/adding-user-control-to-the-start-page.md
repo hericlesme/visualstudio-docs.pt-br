@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 16be8f494b5e8709244568afeb654ae02ca85899
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ed511fa58ca0d98d38ed2ab1ed3bc24bed642170
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adicionar um controle de usuário para a página inicial
 Este passo a passo mostra como adicionar uma referência DLL para uma página inicial personalizada. O exemplo adiciona um controle de usuário para a solução, cria o controle de usuário e, em seguida, faz referência ao assembly compilado do arquivo. XAML de página inicial. Uma nova guia hospeda o controle de usuário, que funciona como um navegador da Web básico.  
@@ -190,7 +175,7 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testando uma página de início personalizados criados manualmente  
   
-1.  Copie seu arquivo XAML e quaisquer arquivos de texto de suporte ou marcação arquivos, como o **%USERPROFILE%\My Documentos\Visual Studio 2015\StartPages\\ ** pasta.  
+1.  Copie seu arquivo XAML e quaisquer arquivos de texto de suporte ou marcação arquivos, como o **%USERPROFILE%\My Documentos\Visual Studio 2015\StartPages\\**  pasta.  
   
 2.  Se sua página inicial referenciar os controles ou tipos em assemblies que não estão instalados pelo Visual Studio, copie os assemblies e, em seguida, cole-os em *pasta de instalação do Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
   

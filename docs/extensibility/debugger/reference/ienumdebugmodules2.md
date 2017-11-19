@@ -1,40 +1,24 @@
 ---
-title: IEnumDebugModules2 | Documentos do Microsoft
+title: IEnumDebugModules2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugModules2
-helpviewer_keywords:
-- IEnumDebugModules2
+f1_keywords: IEnumDebugModules2
+helpviewer_keywords: IEnumDebugModules2
 ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 69dfd5b565722fab4ecab9b13c5d2ef78837d621
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 481a9c04b56ad330731b1c5a06863eb7b3f0f8e2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 Essa interface enumera uma lista de módulos.  
@@ -57,7 +41,7 @@ IEnumDebugModules2 : IUnknown
 |Método|Descrição|  
 |------------|-----------------|  
 |[Avançar](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|Recupera um número especificado de módulos em uma sequência de enumeração.|  
-|[Ignorar](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Ignora um número especificado de módulos em uma sequência de enumeração.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|Ignora um número especificado de módulos em uma sequência de enumeração.|  
 |[Redefinir](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|Redefine uma sequência de enumeração para o início.|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração do enumerador atual.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|Obtém o número de módulos.|  
@@ -65,7 +49,7 @@ IEnumDebugModules2 : IUnknown
 ## <a name="remarks"></a>Comentários  
  O Visual Studio usa essa interface principalmente para atualizar o **módulos** janela.  
   
- Para fins de depuração no Visual Studio, um programa é uma sequência lógica de instruções de código que pode cruzar os limites do módulo, portanto, a necessidade de uma lista dos módulos de um único [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface. O primeiro módulo na lista normalmente contém o ponto de entrada inicial para o programa associado.  
+ Para fins de depuração no Visual Studio, um programa é uma sequência lógica de instruções de código que pode ultrapassar os limites de módulo, portanto, a necessidade de uma lista de módulos para um único [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface. O módulo primeiro na lista normalmente contém o ponto de entrada inicial para o programa associado.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

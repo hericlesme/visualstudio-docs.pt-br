@@ -1,48 +1,46 @@
 ---
-title: "IDiaStackWalkHelper::imageForVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaStackWalkHelper::imageForVA"
+title: ': Imageforva | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper::imageForVA method
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df2b5f938d136a3013c3128f3e32c583c109708e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::imageForVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Retorna o início da imagem de um executável memória recebe um endereço virtual em algum lugar no espaço de memória do executável.  
+# <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
+Retorna o início da imagem de um arquivo do executável na memória recebe um endereço virtual em algum lugar no espaço de memória do executável.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```C++  
 HRESULT imageForVA(  
-   ULONGLONG  vaContext,  
-   ULONGLONG *pvaImageStart  
+   ULONGLONG  vaContext,  
+   ULONGLONG *pvaImageStart  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `vaContext`  
- \[in\] O endereço virtual que se encontra em algum lugar no espaço do executável.  
+ [in] O endereço virtual que está em algum lugar no espaço do executável.  
   
  `pvaImageStart`  
- \[out\] Retorna o endereço virtual inicial da imagem do executável.  
+ [out] Retorna o endereço virtual inicial da imagem do executável.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

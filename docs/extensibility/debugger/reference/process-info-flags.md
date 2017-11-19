@@ -1,47 +1,31 @@
 ---
-title: PROCESS_INFO_FLAGS | Documentos do Microsoft
+title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- PROCESS_INFO_FLAGS
-helpviewer_keywords:
-- PROCESS_INFO_FLAGS enumeration
+f1_keywords: PROCESS_INFO_FLAGS
+helpviewer_keywords: PROCESS_INFO_FLAGS enumeration
 ms.assetid: 696951ce-701a-40c2-ac8c-b897f3aae6e2
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b463e647d12a7d3eaf25185ef2f910c4f9befc8d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 228b2d3286ad0b69a2eb813e18b8837ec038f28f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 Descreve ou especifica as propriedades de um processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_PROCESS_INFO_FLAGS {   
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
@@ -51,7 +35,7 @@ enum enum_PROCESS_INFO_FLAGS {
 typedef DWORD PROCESS_INFO_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 enum enum_PROCESS_INFO_FLAGS {   
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
@@ -65,16 +49,16 @@ enum enum_PROCESS_INFO_FLAGS {
  Indica que o processo é um processo do sistema.  
   
  PIFLAG_DEBUGGER_ATTACHED  
- Indica que o processo está sendo depurado por um depurador. Pode ser um [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador ou pode ser algum outro depurador, por exemplo, WinDbg.  
+ Indica que o processo está sendo depurado por um depurador. Pode ser um [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador, ou pode ser algum outro depurador, por exemplo, WinDbg.  
   
  PIFLAG_PROCESS_STOPPED  
- Indica que o processo é interrompido. Válido somente se `PIFLAG_DEBUGGER_ATTACHED` também for especificado. Disponível em [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] e posterior.  
+ Indica que o processo será interrompido. Válido somente se `PIFLAG_DEBUGGER_ATTACHED` também for especificado. Disponível em [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] e posterior.  
   
  PIFLAG_PROCESS_RUNNING  
- Indica que o processo está em execução. Válido somente se `PIFLAG_DEBUGGER_ATTACHED` também for especificado. Disponível em [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] e posterior.  
+ Indica que o processo está sendo executado. Válido somente se `PIFLAG_DEBUGGER_ATTACHED` também for especificado. Disponível em [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] e posterior.  
   
 ## <a name="remarks"></a>Comentários  
- Usado para o `Flags` membro do [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) estrutura.  
+ Usado para o `Flags` membro o [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) estrutura.  
   
  Esses sinalizadores podem ser combinados com um bit a bit `OR`.  
   

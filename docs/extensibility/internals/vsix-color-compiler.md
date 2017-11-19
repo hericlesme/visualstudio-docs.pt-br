@@ -1,5 +1,5 @@
 ---
-title: Compilador do VSIX cor | Documentos do Microsoft
+title: Compilador de cor do VSIX | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,35 +7,22 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d0fa0e56019de08f3a34a74f018732a6a85660f9
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b7ff76cd40f80f6855de72795b08e70fb87ed0f6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="vsix-color-compiler"></a>Compilador de cor do VSIX
-A ferramenta de compilador de cor de extensão do Visual Studio é um aplicativo de console que usa um arquivo. XML que representa as cores de temas existentes do Visual Studio e o converte para um pkgdef de arquivo para que essas cores podem ser usados no Visual Studio. Como é fácil comparar as diferenças entre arquivos. XML, essa ferramenta é útil para o gerenciamento de cores personalizadas no controle de origem. Ele também pode ser conectado em ambientes de compilação para que a saída da compilação é um arquivo pkgdef válido.  
+# <a name="vsix-color-compiler"></a>Compilador do VSIX cor
+A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo de console que usa um arquivo. XML que representa as cores de temas existentes do Visual Studio e converte-o para um .pkgdef de arquivos para que essas cores podem ser usados no Visual Studio. Como é fácil comparar as diferenças entre arquivos. XML, essa ferramenta é útil para o gerenciamento de cores personalizadas no controle de origem. Ele também pode ser conectado em ambientes de desenvolvimento para que a saída da compilação é um arquivo de .pkgdef válido.  
   
- **Esquema XML de tema**  
+ **Esquema XML do tema**  
   
- Um arquivo de tema concluída. XML tem esta aparência:  
+ Um arquivo. XML de tema completa tem esta aparência:  
   
 ```xml  
 <Themes>  
@@ -69,9 +56,9 @@ A ferramenta de compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|  
 |**Atributo**|**Definição**|  
 |Nome|[Obrigatório] O nome do tema|  
-|GUID|[Obrigatório] GUID do tema (devem corresponder a formatação de GUID)|  
+|GUID|[Obrigatório] GUID do tema (devem corresponder à formatação de GUID)|  
   
- Ao criar cores personalizadas para o Visual Studio, essas cores precisam ser definidos para os seguintes temas. Se nenhuma cor existir um tema específico, o Visual Studio tenta carregar a ausência de cores do tema no claro.  
+ Ao criar cores personalizadas para o Visual Studio, essas cores precisam ser definidos para os seguintes temas. Se nenhuma cor existir um tema específico, Visual Studio tenta carregar a ausência de cores do tema claro.  
   
 |||  
 |-|-|  
@@ -79,11 +66,11 @@ A ferramenta de compilador de cor de extensão do Visual Studio é um aplicativo
 |Claro|{de3dbbcd-f642-433c-8353-8f1df4370aba}|  
 |Escuro|{1ded0138-47ce-435e-84ef-9ec1f439b749}|  
 |Azul|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
-|Alto Contraste|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
+|{1&gt;Alto Contraste&lt;1}|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
   
  **Categoria**  
   
- O \<categoria > elemento define uma coleção de cores em um tema. Nomes de categoria fornecem agrupamento lógico e devem ser definidos como estritamente possível. Uma categoria deve conter pelo menos um \<cor > elemento. Elementos de categoria são definidos como este:  
+ O \<categoria > elemento define uma coleção de cores em um tema. Nomes de categoria fornecem agrupamento lógico e devem ser definidos como restrito possível. Uma categoria deve conter pelo menos um \<cor > elemento. Elementos de categoria são definidos como este:  
   
 ```xml  
 <Category Name="name" GUID="guid">  
@@ -95,11 +82,11 @@ A ferramenta de compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|  
 |**Atributo**|**Definição**|  
 |Nome|[Obrigatório] O nome da categoria|  
-|GUID|[Obrigatório] GUID da categoria (devem corresponder a formatação de GUID)|  
+|GUID|[Obrigatório] GUID da categoria (devem corresponder à formatação de GUID)|  
   
  **Cor**  
   
- O \<cor > elemento define uma cor para um componente ou o estado da interface do usuário. O esquema de nomenclatura preferencial para uma cor é [tipo de interface do usuário] [estado]. Não use a palavra "cor", pois é redundante. Uma cor claramente deve indicar o tipo de elemento e a situações ou "estado", para que a cor será aplicada. Uma cor não pode estar vazia e deve conter um ou ambos um \<fundo > e \<em primeiro plano > elemento. Elementos de cor são definidos como este:  
+ O \<cor > elemento define uma cor para um componente ou o estado da interface do usuário. O esquema de nomenclatura preferencial para uma cor é [tipo de interface do usuário] [estado]. Não use a palavra "cores", pois é redundante. Uma cor claramente deve indicar o tipo de elemento e a situações ou "estado", para que a cor será aplicada. Uma cor não deve estar vazia e deve conter um ou ambos um \<em segundo plano > e \<em primeiro plano > elemento. Elementos de cor são definidos como este:  
   
 ```xml  
 <Color Name="name">  
@@ -113,9 +100,9 @@ A ferramenta de compilador de cor de extensão do Visual Studio é um aplicativo
 |**Atributo**|**Definição**|  
 |Nome|[Obrigatório] O nome da cor|  
   
- **Plano de fundo e/ou primeiro plano**  
+ **Plano de fundo e/ou em primeiro plano**  
   
- O \<fundo > e \<em primeiro plano > elementos definem o valor de uma cor e o tipo para o plano de fundo ou primeiro plano de um elemento de interface do usuário. Esses elementos não tem nenhum filho.  
+ O \<em segundo plano > e \<em primeiro plano > elementos definem o valor de uma cor e o tipo para o plano de fundo ou primeiro plano de um elemento de interface do usuário. Esses elementos não têm filhos.  
   
 ```xml  
 <Background Type="type" Source="int" />  
@@ -125,14 +112,14 @@ A ferramenta de compilador de cor de extensão do Visual Studio é um aplicativo
 |||  
 |-|-|  
 |**Atributo**|**Definição**|  
-|Tipo|[Obrigatório] O tipo da cor. Ele pode ser um dos seguintes:<br /><br /> *CT_INVALID:* a cor é inválido ou não foi definida.<br /><br /> *CT_RAW:* um valor ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* uma cor de sistema do Windows da SysColor.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX uma cor Visual Studio.<br /><br /> *CT_AUTOMATIC:* a cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|  
+|Tipo|[Obrigatório] O tipo da cor. Pode ser um dos seguintes:<br /><br /> *CT_INVALID:* a cor é inválido ou não foi definida.<br /><br /> *CT_RAW:* um valor ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* uma cor de sistema do Windows em SysColor.<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX uma cor Visual Studio.<br /><br /> *CT_AUTOMATIC:* a cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|  
 |Origem|[Obrigatório] O valor da cor em hexadecimal|  
   
- O esquema no atributo de tipo oferece suporte a todos os valores com suporte pela enumeração __VSCOLORTYPE. No entanto, recomendamos que você use apenas CT_RAW e CT_SYSCOLOR.  
+ O esquema no atributo de tipo oferece suporte a todos os valores com suporte pela enumeração __VSCOLORTYPE. No entanto, é recomendável que você use somente CT_RAW e CT_SYSCOLOR.  
   
  **Todos juntos**  
   
- Este é um exemplo simple de um arquivo de tema válido. XML:  
+ Este é um exemplo simples de um arquivo. XML de tema válido:  
   
 ```xml  
 <Themes>  
@@ -157,8 +144,8 @@ A ferramenta de compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|-|  
 |**Nome do comutador**|**Observações**|**Obrigatório ou opcional**|  
 |Sem nome (arquivo. xml)|Isso é o primeiro parâmetro sem nome e é o caminho para o arquivo XML para converter.|Necessária|  
-|Sem nome (arquivo pkgdef)|Esse é o segundo parâmetro sem nome e o caminho de saída para o arquivo pkgdef gerado.<br /><br /> Padrão: \<nome do arquivo XML > pkgdef|Opcional|  
-|/noLogo|Defina esse sinalizador para de informações de produto e os direitos autorais de impressão.|Opcional|  
+|Sem nome (.pkgdef arquivo)|Este é o segundo parâmetro sem nome e é o caminho de saída para o arquivo .pkgdef gerado.<br /><br /> Padrão: \<nome do arquivo XML > .pkgdef|Opcional|  
+|/noLogo|Defina esse sinalizador para de informações de produto e os direitos autorais da impressão.|Opcional|  
 |/?|Imprima informações de Ajuda.|Opcional|  
 |/help|Imprima informações de Ajuda.|Opcional|  
   
@@ -172,10 +159,10 @@ A ferramenta de compilador de cor de extensão do Visual Studio é um aplicativo
   
 -   Essa ferramenta requer que a versão mais recente do tempo de execução do VC + + esteja instalado.  
   
--   Há suporte para apenas os arquivos individuais. Não há suporte para conversão em massa por meio de caminhos de pastas.  
+-   Há suporte para apenas arquivos únicos. Não há suporte para conversão em massa por meio de caminhos de pastas.  
   
 ## <a name="sample-output"></a>Saída de exemplo  
- O arquivo pkgdef gerado pela ferramenta será semelhante a de abaixo chaves:  
+ O arquivo .pkgdef gerado pela ferramenta será semelhante ao abaixo de chaves:  
   
 ```  
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\Environment]  

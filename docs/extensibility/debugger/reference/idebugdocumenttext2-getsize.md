@@ -1,54 +1,38 @@
 ---
-title: IDebugDocumentText2::GetSize | Documentos do Microsoft
+title: IDebugDocumentText2::GetSize | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocumentText2::GetSize
-helpviewer_keywords:
-- IDebugDocumentText2::GetSize
+f1_keywords: IDebugDocumentText2::GetSize
+helpviewer_keywords: IDebugDocumentText2::GetSize
 ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f5af97d594d7160d33628c8a8248decb4f2a1e91
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 25bf0a7c570c2c11e09c9e6d98d1f4be05d7adb5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Recupera o tamanho do texto nessa posição no documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetSize(   
    ULONG* pcNumLines,  
    ULONG* pcNumChars  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetSize(   
    ref uint pcNumLines,  
    ref uint pcNumChars  
@@ -63,10 +47,10 @@ int GetSize(
  [out] Retorna o número de caracteres de texto.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- [C++] Se um valor específico não for desejado, passe um valor nulo para o parâmetro.  
+ [C++] Se um valor específico não for desejado, passe um NULL para o parâmetro.  
   
  [Apenas c#] Ambos os parâmetros devem ser especificados.  
   

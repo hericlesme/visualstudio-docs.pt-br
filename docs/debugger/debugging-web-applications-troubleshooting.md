@@ -1,40 +1,40 @@
 ---
-title: "Depurando aplicativos Web: solucionando problemas | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurando aplicativos da Web, solucionando problemas"
-  - "solucionando problemas em aplicativos Web"
-  - "aplicativos da Web, depuração"
+title: 'Depurando aplicativos da Web: Solucionando problemas | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging Web applications, troubleshooting
+- Web applications, debugging
+- troubleshooting Web applications
 ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 364da0cdee3f063bc982f2731969c1be98cf386c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Depurando aplicativos Web: solucionando problemas
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: solucionando problemas
 Esta seção contém procedimentos comuns que podem ser usados para resolver erros.  
   
-## Nesta seção  
+## <a name="in-this-section"></a>Nesta seção  
  [Como verificar as configurações de propriedade do IIS](../debugger/how-to-verify-iis-property-settings.md)  
  Explica como definir corretamente as propriedades no IIS para ativar a depuração.  
   
-## Seções relacionadas  
+## <a name="related-sections"></a>Seções relacionadas  
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Explica a solução de problemas e a resolução de erros.  
   

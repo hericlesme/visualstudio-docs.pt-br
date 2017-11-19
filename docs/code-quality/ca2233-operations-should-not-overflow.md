@@ -1,11 +1,10 @@
 ---
-title: 'CA2233: Operations should not overflow | Microsoft Docs'
+title: "CA2233: As operações não deveriam estourar | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,61 +14,47 @@ helpviewer_keywords:
 - OperationsShouldNotOverflow
 - CA2233
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
-caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f77e3f267d991f4bffbb18c1f69f66c4603d104c
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d8b602d83eee4be49f63eef0ee8d2cd3d77f5040
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operations should not overflow
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233: as operações não devem estourar
 |||  
 |-|-|  
-|TypeName|OperationsShouldNotOverflow|  
+|NomeDoTipo|OperationsShouldNotOverflow|  
 |CheckId|CA2233|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|Categoria|Microsoft.Usage|  
+|Alteração Significativa|Não separáveis|  
   
-## <a name="cause"></a>Cause  
- A method performs an arithmetic operation and does not validate the operands beforehand to prevent overflow.  
+## <a name="cause"></a>Causa  
+ Um método executa uma operação aritmética e não validar os operandos antecipadamente para impedir o estouro.  
   
-## <a name="rule-description"></a>Rule Description  
- Arithmetic operations should not be performed without first validating the operands to make sure that the result of the operation is not outside the range of possible values for the data types involved. Depending on the execution context and the data types involved, arithmetic overflow can result in either a <xref:System.OverflowException?displayProperty=fullName> or the most significant bits of the result discarded.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Operações aritméticas não devem ser executadas sem antes validar os operandos para certificar-se de que o resultado da operação não está fora do intervalo de valores possíveis para os tipos de dados envolvidos. Dependendo do contexto de execução e os tipos de dados envolvidos, estouro aritmético pode resultar em um um <xref:System.OverflowException?displayProperty=fullName> ou os bits mais significativos do resultado é descartada.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, validate the operands before you perform the operation.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, valide os operandos antes de executar a operação.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the possible values of the operands will never cause the arithmetic operation to overflow.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso de que essa regra se os valores possíveis dos operandos nunca fará com que a operação aritmética de estouro.  
   
-## <a name="example-of-a-violation"></a>Example of a Violation  
+## <a name="example-of-a-violation"></a>Exemplo de uma violação  
   
-### <a name="description"></a>Description  
- A method in the following example manipulates an integer that violates this rule. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] requires the **Remove** integer overflow option to be disabled for this to fire.  
+### <a name="description"></a>Descrição  
+ Um método no exemplo a seguir manipula um inteiro que viola essa regra. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]requer o **remover** opção de estouro de inteiro para ser desabilitado para esta seja acionado.  
   
-### <a name="code"></a>Code  
- [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)] [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]  
+### <a name="code"></a>Código  
+ [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
+ [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]  
   
-### <a name="comments"></a>Comments  
- If the method in this example is passed <xref:System.Int32.MinValue?displayProperty=fullName>, the operation would underflow. This causes the most significant bit of the result to be discarded. The following code shows how this occurs.  
+### <a name="comments"></a>Comentários  
+ Se o método neste exemplo é passado <xref:System.Int32.MinValue?displayProperty=fullName>, a operação seria estouro negativo. Isso faz com que o bit mais significativo do resultado sejam descartadas. O código a seguir mostra como isso ocorre.  
   
  [C#]  
   
@@ -92,42 +77,43 @@ Public Shared Sub Main()
 End Sub  
 ```  
   
-### <a name="output"></a>Output  
+### <a name="output"></a>Saída  
   
 ```  
 2147483647  
 ```  
   
-## <a name="fix-with-input-parameter-validation"></a>Fix with Input Parameter Validation  
+## <a name="fix-with-input-parameter-validation"></a>Corrigir com validação de parâmetro de entrada  
   
-### <a name="description"></a>Description  
- The following example fixes the previous violation by validating the value of input.  
+### <a name="description"></a>Descrição  
+ O exemplo a seguir corrige a violação anterior ao validar o valor de entrada.  
   
-### <a name="code"></a>Code  
- [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)] [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]  
+### <a name="code"></a>Código  
+ [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)]
+ [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]  
   
-## <a name="fix-with-a-checked-block"></a>Fix with a Checked Block  
+## <a name="fix-with-a-checked-block"></a>Corrigir com um bloco marcado  
   
-### <a name="description"></a>Description  
- The following example fixes the previous violation by wrapping the operation in a checked block. If the operation causes an overflow, a <xref:System.OverflowException?displayProperty=fullName> will be thrown.  
+### <a name="description"></a>Descrição  
+ O exemplo a seguir corrige a violação anterior encapsulando a operação em um bloco marcado. Se a operação faz com que um estouro, um <xref:System.OverflowException?displayProperty=fullName> será lançada.  
   
- Note that checked blocks are not supported in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+ Observe que não há suporte para blocos marcados no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Código  
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]  
   
-## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Turn on Checked Arithmetic Overflow/Underflow  
- If you turn on checked arithmetic overflow/underflow in C#, it is equivalent to wrapping every integer operation in a checked block.  
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Ativar check estouro/estouro negativo aritmético  
+ Se você ativar check estouro/estouro negativo aritmético em c#, equivale a quebra automática de cada operação de inteiro em um bloco marcado.  
   
- **To turn on checked arithmetic overflow/underflow in C#**  
+ **Para ativar o check-estouro/estouro negativo aritmético em c#**  
   
-1.  In **Solution Explorer**, right-click your project and choose **Properties**.  
+1.  Em **Solution Explorer**, clique com o botão direito e escolha **propriedades**.  
   
-2.  Select the **Build** tab and click **Advanced**.  
+2.  Selecione o **criar** guia e clique em **avançado**.  
   
-3.  Select **Check for arithmetic overflow/underflow** and click **OK**.  
+3.  Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  <xref:System.OverflowException?displayProperty=fullName>   
- [C# Operators](/dotnet/csharp/language-reference/operators/index)   
- [Checked and Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)
+ [Operadores do C#](/dotnet/csharp/language-reference/operators/index)   
+ [Checked e Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)

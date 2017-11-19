@@ -1,45 +1,30 @@
 ---
-title: DisplayKind | Documentos do Microsoft
+title: DisplayKind | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- DisplayKind enumeration
+helpviewer_keywords: DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 675af4c67121b212332f564ea2e9169fbb552e88
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2a13d9146596bfc3d13cc4eea93224c5e7dceaae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="displaykind"></a>DisplayKind
 Enumera os valores válidos que representam os tipos de informações para colocar um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de objeto e exibir para o usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_DisplayKind  
 {  
    DisplayKind_Value = 0x1,  
@@ -49,7 +34,7 @@ enum enum_DisplayKind
 typedef DWORD DisplayKind;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_DisplayKind  
 {  
    DisplayKind_Value = 0x1,  

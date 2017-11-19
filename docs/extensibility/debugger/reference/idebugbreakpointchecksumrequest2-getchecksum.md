@@ -1,52 +1,37 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Documentos do Microsoft
+title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugBreakpointChecksumRequest2::GetChecksum
+helpviewer_keywords: IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4afe9cd2638be21069cfa21a033e37ffe8c75953
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 98ffcebd4070f86ff065e9eb3e4a1b06493cab20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Recupera a soma de verificação de documento para uma solicitação de ponto de interrupção recebe o identificador exclusivo do algoritmo de soma de verificação para usar.  
+Recupera a soma de verificação de documento para uma solicitação de ponto de interrupção considerando o identificador exclusivo do algoritmo de soma de verificação a ser usado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetChecksum(   
    REFGUID        guidAlgorithm,  
    CHECKSUM_DATA *pChecksumData  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetChecksum(   
    ref Guid               guidAlgorithm,  
    out enum_CHECKSUM_DATA pChecksumData  
@@ -61,12 +46,12 @@ public int GetChecksum(
  [out] Soma de verificação de documento para a solicitação de ponto de interrupção.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra uma função que verifica se a soma de verificação de um documento que está prestes a ser vinculado, corresponde a um da interface do usuário.  
+ O exemplo a seguir mostra uma função que verifica se a soma de verificação de um documento, que está prestes a ser associado, corresponde a um de interface do usuário.  
   
-```cpp#  
+```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
 {  
     bool fRet = false;  

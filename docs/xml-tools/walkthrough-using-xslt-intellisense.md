@@ -1,27 +1,27 @@
 ---
-title: "Walkthrough: Using XSLT IntelliSense | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Passo a passo: Usando XSLT IntelliSense | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-caps.latest.revision: 2
-caps.handback.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ae58db5ac642bca1e68d3ad074d4a69062a1f294
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Walkthrough: Using XSLT IntelliSense
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="walkthrough-using-xslt-intellisense"></a>Passo a passo: usando XSLT IntelliSense
 Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para completar automaticamente o valor de alguns atributos.  
   
-### Para usar o IntelliSense no atributo de nome de elementos xsl:with\-param e xsl:call\-template  
+### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Para usar o IntelliSense no atributo de nome de elementos xsl:with-param e xsl:call-template  
   
 1.  Crie um novo arquivo XSLT e copie no seguinte código:  
   
@@ -47,7 +47,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
     </xsl:stylesheet>  
     ```  
   
-2.  Insira o cursor após `<xsl:template name="msg23" match="msg23">` e pressione ENTER.  Inicie digitando o elemento `xsl:call-template` a seguir:  
+2.  Insira o cursor após `<xsl:template name="msg23" match="msg23">` e pressione ENTER. Inicie digitando o elemento `xsl:call-template` a seguir:  
   
     ```  
     <xsl:call-template name="localized-message">  
@@ -56,7 +56,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
   
      A lista de nomes de modelo aparece no atributo `name=""` do elemento `xsl:call-template` à medida que você digita.  
   
-3.  Insira o cursor após `<xsl:call-template name="localized-message">` e pressione ENTER.  Inicie digitando o elemento `xsl:with-param` a seguir:  
+3.  Insira o cursor após `<xsl:call-template name="localized-message">` e pressione ENTER. Inicie digitando o elemento `xsl:with-param` a seguir:  
   
     ```  
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
@@ -64,7 +64,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
   
      A lista de nomes de parâmetro aparece no atributo `name=""` do elemento `xsl:with-param`.  
   
-### Para usar o IntelliSense no atributo do modo de um elemento xsl:apply\-templates  
+### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Para usar o IntelliSense no atributo do modo de um elemento xsl:apply-templates  
   
 1.  Crie um novo arquivo XSLT e copie no seguinte código:  
   
@@ -113,7 +113,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
     </xsl:stylesheet>  
     ```  
   
-2.  Insira o cursor após `<xsl:apply-templates select="phone" />` e pressione ENTER.  Inicie digitando o elemento `xsl: apply-templates` a seguir:  
+2.  Insira o cursor depois `<xsl:apply-templates select="phone" />` e pressione ENTER. Inicie digitando o elemento `xsl: apply-templates` a seguir:  
   
     ```  
     <xsl:apply-templates select="phone"  mode="accountNumber">  
@@ -121,7 +121,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
   
      A lista de modos de modelo aparece no atributo `mode=""` do elemento `xsl:apply-templates`.  
   
-### Para usar o IntelliSense nos atributos stylesheet\-prefix e result\-prefix de um elemento xsl:namespace\-alias  
+### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Para usar o IntelliSense nos atributos stylesheet-prefix e result-prefix de um elemento xsl:namespace-alias  
   
 1.  Crie um novo arquivo XSLT e copie no seguinte código:  
   
@@ -154,7 +154,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
     </xsl:stylesheet>  
     ```  
   
-2.  Insira o cursor após `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e pressione ENTER.  Inicie digitando o elemento `xsl:namespace-alias` a seguir:  
+2.  Insira o cursor após `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e pressione ENTER. Inicie digitando o elemento `xsl:namespace-alias` a seguir:  
   
     ```  
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  
@@ -162,5 +162,5 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
   
      Observe como a lista de prefixos apareceu nos atributos `stylesheet-prefix` e `result-prefix` do elemento de `xsl:namespace-alias`.  
   
-## Consulte também  
- [XML Editor IntelliSense Features](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>Consulte também  
+ [Recursos do IntelliSense do editor de XML](../xml-tools/xml-editor-intellisense-features.md)

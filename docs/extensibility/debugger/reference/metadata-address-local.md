@@ -1,40 +1,24 @@
 ---
-title: METADATA_ADDRESS_LOCAL | Documentos do Microsoft
+title: METADATA_ADDRESS_LOCAL | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- METADATA_ADDRESS_LOCAL
-helpviewer_keywords:
-- METADATA_ADDRESS_LOCAL structure
+f1_keywords: METADATA_ADDRESS_LOCAL
+helpviewer_keywords: METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e085f8573bc67c8c4337bbd83a6c5983c1a7e0eb
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a9d5e32f6f99cddcd3d04d8c10bda958e58fbbf3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 Esta estrutura representa o endereço de uma variável local dentro de um escopo (geralmente uma função ou método).  
@@ -49,7 +33,7 @@ typedef struct _tagMETADATA_ADDRESS_LOCAL {
 } METADATA_ADDRESS_LOCAL;  
 ```  
   
-```c#  
+```csharp  
 public struct METADATA_ADDRESS_LOCAL {  
    public int    tokMethod;  
    public object pLocal;  
@@ -59,18 +43,18 @@ public struct METADATA_ADDRESS_LOCAL {
   
 ## <a name="terms"></a>Termos  
  tokMethod  
- A ID do método ou da função à variável local faz parte.  
+ A ID do método ou função a variável local é parte do.  
   
- [C++] `_mdToken` is a `typedef` for a 32-bit `int`.  
+ [C++] `_mdToken` é um `typedef` para 32 bits `int`.  
   
  pLocal  
  O token cujo endereço dessa estrutura representa.  
   
  dwIndex  
- Pode ser o índice da variável local no método ou função ou algum outro valor (específicos do idioma).  
+ Pode ser o índice da variável local em algum outro valor (específico do idioma), o método ou função.  
   
 ## <a name="remarks"></a>Comentários  
- Essa estrutura é parte da união no [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo o `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_LOCAL` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
+ Essa estrutura é parte da união no [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo do `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_LOCAL` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
   
  `Warning:`[C++]  Se `pLocal` não for nulo, então você deve chamar `Release` no ponteiro de token (`addr` é um campo de [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estrutura):  
   

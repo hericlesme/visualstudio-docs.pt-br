@@ -1,47 +1,31 @@
 ---
-title: MODULE_FLAGS | Documentos do Microsoft
+title: MODULE_FLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MODULE_FLAGS
-helpviewer_keywords:
-- MODULE_FLAGS enumeration
+f1_keywords: MODULE_FLAGS
+helpviewer_keywords: MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 31c3782eb1d6cc82a4ffea5b5b6f98c5f2829470
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bd55076df559b83c4bf4f3ed98fdea0e8bfd423a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 Usado para descrever um módulo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_MODULE_FLAGS {   
    MODULE_FLAG_NONE        = 0x0000,  
    MODULE_FLAG_SYSTEM      = 0x0001,  
@@ -53,7 +37,7 @@ enum enum_MODULE_FLAGS {
 typedef DWORD MODULE_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_MODULE_FLAGS {   
    MODULE_FLAG_NONE        = 0x0000,  
    MODULE_FLAG_SYSTEM      = 0x0001,  
@@ -84,7 +68,7 @@ public enum enum_MODULE_FLAGS {
  Especifica que o módulo não foi otimizado. Esse estado é refletido no **módulos** janela. Este é o estado padrão.  
   
 ## <a name="remarks"></a>Comentários  
- Usado para o `m_dwModuleFlags` membro do [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estrutura.  
+ Usado para o `m_dwModuleFlags` membro o [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estrutura.  
   
  Esses sinalizadores podem ser combinados com um bit a bit `OR`.  
   

@@ -1,47 +1,31 @@
 ---
-title: PROCESS_INFO_FIELDS | Documentos do Microsoft
+title: PROCESS_INFO_FIELDS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- PROCESS_INFO_FIELDS
-helpviewer_keywords:
-- PROCESS_INFO_FIELDS enumeration
+f1_keywords: PROCESS_INFO_FIELDS
+helpviewer_keywords: PROCESS_INFO_FIELDS enumeration
 ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b4bb8747a150a1652e0f25dcd25ff3b92954c472
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e5732b287512cb14ab885619799d0c885f69b791
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
-Especificar o tipo de informação para recuperar para um processo.  
+Especificar o tipo de informações para recuperar para um processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_PROCESS_INFO_FIELDS {   
    PIF_FILE_NAME             = 0x00000001,  
    PIF_BASE_NAME             = 0x00000002,  
@@ -56,7 +40,7 @@ enum enum_PROCESS_INFO_FIELDS {
 typedef DWORD PROCESS_INFO_FIELDS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_PROCESS_INFO_FIELDS {   
    PIF_FILE_NAME             = 0x00000001,  
    PIF_BASE_NAME             = 0x00000002,  
@@ -96,7 +80,7 @@ public enum enum_PROCESS_INFO_FIELDS {
  Inicializar/usar o `Flags` campo o `PROCESS_INFO` estrutura.  
   
  PIF_ALL  
- Preencha todos os campos.  
+ Preenche todos os campos.  
   
 ## <a name="remarks"></a>Comentários  
  Passado para o [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) método para indicar quais campos do [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) estrutura devem ser inicializado.  

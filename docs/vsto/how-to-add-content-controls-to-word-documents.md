@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add Content Controls to Word Documents | Microsoft Docs'
+title: 'Como: adicionar controles Content a documentos do Word | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -29,165 +27,170 @@ helpviewer_keywords:
 - DatePickerContentControl, adding to documents
 - Word [Office development in Visual Studio], restricted permissions
 ms.assetid: 68ddb24e-71c6-46f7-8e11-c9899d7814df
-caps.latest.revision: 51
-author: kempb
-ms.author: kempb
+caps.latest.revision: "51"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 5dca7affb4ca1cb447b296a574f4b5dea89eb0c4
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 33e431dc907de8573a4eca00b9de73bcd0f523f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>How to: Add Content Controls to Word Documents
-  In document-level Word projects, you can add content controls to the document in your project at design time or at run time. In Word VSTO Add-in projects, you can add content controls to any open document at run time.  
+# <a name="how-to-add-content-controls-to-word-documents"></a>Como adicionar controles Content a documentos do Word
+  Em projetos do Word em nível de documento, você pode adicionar controles de conteúdo para o documento em seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO do Word, você pode adicionar controles de conteúdo para qualquer documento aberto em tempo de execução.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- This topic describes the following tasks:  
+ Este tópico descreve as seguintes tarefas:  
   
--   [Adding content controls at design time](#designtime)  
+-   [Adicionando controles de conteúdo em tempo de design](#designtime)  
   
--   [Adding content controls at run time in a document-level project](#runtimedoclevel)  
+-   [Adicionando controles de conteúdo em tempo de execução em um projeto no nível do documento](#runtimedoclevel)  
   
--   [Adding content controls at run time in an VSTO Add-in project](#runtimeaddin)  
+-   [Adicionando controles de conteúdo em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)  
   
- For information about content controls, see [Content Controls](../vsto/content-controls.md).  
+ Para obter informações sobre controles de conteúdo, consulte [controles Content](../vsto/content-controls.md).  
   
-##  <a name="designtime"></a> Adding Content Controls at Design Time  
- There are several ways to add content controls to the document in a document-level project at design time:  
+##  <a name="designtime"></a>Adicionando controles de conteúdo em tempo de Design  
+ Há várias maneiras de adicionar controles de conteúdo para o documento em um projeto no nível do documento em tempo de design:  
   
--   Add a content control from the **Word Controls** tab of the **Toolbox**.  
+-   Adicionar um controle de conteúdo do **controles Word** guia do **caixa de ferramentas**.  
   
--   Add a content control to your document in the same manner you would add a native content control in Word.  
+-   Adicionar um controle de conteúdo para o documento da mesma forma você adicionaria um controle de conteúdo nativo no Word.  
   
--   Drag a content control to your document from the **Data Sources** window. This is useful when you want to bind the control to data when the control is created. For more information, see [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md) and [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+-   Arraste um controle de conteúdo para o documento a partir de **fontes de dados** janela. Isso é útil quando você deseja associar o controle de dados quando o controle é criado. Para obter mais informações, consulte [como: preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md) e [como: preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-#### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>To add a content control to a document by using the Toolbox  
+#### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Para adicionar um controle de conteúdo a um documento usando a caixa de ferramentas  
   
-1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, put the cursor where you want to add the content control, or select the text that you want the content control to replace.  
+1.  O documento que está hospedada no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, coloque o cursor onde você deseja adicionar o controle de conteúdo, ou selecione o texto que você deseja substituir o controle de conteúdo.  
   
-2.  Open the **Toolbox** and click the **Word Controls** tab.  
+2.  Abra o **caixa de ferramentas** e clique no **controles Word** guia.  
   
-3.  Add the control one of the following ways:  
+3.  Adicione o controle de uma das seguintes maneiras:  
   
-    -   Double-click a content control in the **Toolbox**.  
+    -   Clique duas vezes em um controle de conteúdo no **caixa de ferramentas**.  
   
-         or  
+         ou  
   
-    -   Click a content control in the **Toolbox** and then press the ENTER key.  
+    -   Clique em um controle de conteúdo no **caixa de ferramentas** e, em seguida, pressione a tecla ENTER.  
   
-         or  
+         ou  
   
-    -   Drag a content control from the **Toolbox** to the document. The content control is added at the current selection in the document, not at the location of the mouse pointer.  
-  
-> [!NOTE]  
->  You cannot add a <xref:Microsoft.Office.Tools.Word.GroupContentControl> by using the **Toolbox**. You can only add a <xref:Microsoft.Office.Tools.Word.GroupContentControl> in Word, or at run time.  
+    -   Arraste um controle de conteúdo do **caixa de ferramentas** ao documento. O controle de conteúdo é adicionado na seleção atual do documento, não no local do ponteiro do mouse.  
   
 > [!NOTE]  
->  Visual Studio does not provide a check box content control in the Toolbox. To add a check box content control to the document, you must create a <xref:Microsoft.Office.Tools.Word.ContentControl> object programmatically. For more information, see [Content Controls](../vsto/content-controls.md).  
+>  Não é possível adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> usando o **caixa de ferramentas**. Você só pode adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> no Word, ou em tempo de execução.  
   
-#### <a name="to-add-a-content-control-to-a-document-in-word"></a>To add a content control to a document in Word  
+> [!NOTE]  
+>  O Visual Studio não fornece um controle de conteúdo da caixa de seleção na caixa de ferramentas. Para adicionar um controle de conteúdo da caixa de seleção para o documento, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto programaticamente. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).  
   
-1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, put the cursor where you want to add the content control, or select the text that you want the content control to replace.  
+#### <a name="to-add-a-content-control-to-a-document-in-word"></a>Para adicionar um controle de conteúdo a um documento do Word  
   
-2.  On the Ribbon, click the **Developer** tab.  
+1.  O documento que está hospedada no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, coloque o cursor onde você deseja adicionar o controle de conteúdo, ou selecione o texto que você deseja substituir o controle de conteúdo.  
+  
+2.  Na faixa de opções, clique no **desenvolvedor** guia.  
   
     > [!NOTE]  
-    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro mostrá-la. Para obter mais informações, consulte [como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-3.  In the **Controls** group, click the icon for the content control that you want to add.  
+3.  No **controles** de grupo, clique no ícone para o controle de conteúdo que você deseja adicionar.  
   
-##  <a name="runtimedoclevel"></a> Adding Content Controls at Run Time in a Document-Level Project  
- You can add content controls programmatically to your document at run time by using methods of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of the `ThisDocument` class in your project. Each method has three overloads that you can use to add a content control in the following ways:  
+##  <a name="runtimedoclevel"></a>Adicionando controles de conteúdo em tempo de execução em um projeto no nível do documento  
+ Você pode adicionar controles de conteúdo por meio de programação para o documento em tempo de execução usando métodos do <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade o `ThisDocument` classe em seu projeto. Cada método tem três sobrecargas que você pode usar para adicionar um controle de conteúdo das seguintes maneiras:  
   
--   Add a control at the current selection.  
+-   Adicione um controle na seleção atual.  
   
--   Add a control at a specified range.  
+-   Adicione um controle em um intervalo especificado.  
   
--   Add a control that is based on a native content control in the document.  
+-   Adicione um controle baseado em um controle de conteúdo nativo no documento.  
   
- Dynamically created content controls are not persisted in the document when the document is closed. However, a native content control remains in the document. You can recreate a content control that is based on a native content control the next time the document is opened. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
-  
-> [!NOTE]  
->  To add a check box content control to a document in a Word 2010 project, you must create a <xref:Microsoft.Office.Tools.Word.ContentControl> object. For more information, see [Content Controls](../vsto/content-controls.md).  
-  
-#### <a name="to-add-a-content-control-at-the-current-selection"></a>To add a content control at the current selection  
-  
-1.  Use a <xref:Microsoft.Office.Tools.Word.ControlCollection> method that has the name `Add`\<*control class*> (where *control class* is the class name of the content control that you want to add, such as <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), and that has a single parameter for the name of the new control.  
-  
-     The following code example uses the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> method to add a new <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to the beginning of the document. To run this code, add the code to the `ThisDocument` class in your project, and call the `AddRichTextControlAtSelection` method from the `ThisDocument_Startup` event handler.  
-  
-     [!code-csharp[Trin_ContentControlReference#700](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#700)]  [!code-vb[Trin_ContentControlReference#700](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#700)]  
-  
-#### <a name="to-add-a-content-control-at-a-specified-range"></a>To add a content control at a specified range  
-  
-1.  Use a <xref:Microsoft.Office.Tools.Word.ControlCollection> method that has the name `Add`\<*control class*> (where *control class* is the name of the content control class that you want to add, such as <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), and that has a <xref:Microsoft.Office.Interop.Word.Range> parameter.  
-  
-     The following code example uses the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> method to add a new <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to the beginning of the document. To run this code, add the code to the `ThisDocument` class in your project, and call the `AddRichTextControlAtRange` method from the `ThisDocument_Startup` event handler.  
-  
-     [!code-csharp[Trin_ContentControlReference#701](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#701)]  [!code-vb[Trin_ContentControlReference#701](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#701)]  
-  
-#### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>To add a content control that is based on a native content control  
-  
-1.  Use a <xref:Microsoft.Office.Tools.Word.ControlCollection> method that has the name `Add`\<*control class*> (where *control class* is the name of the content control class that you want to add, such as <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), and that has a Microsoft.Office.Interop.Word.ContentControl parameter.  
-  
-     The following code example uses the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> method to create a new <xref:Microsoft.Office.Tools.Word.RichTextContentControl> for every native rich text control that is in the document. To run this code, add the code to the `ThisDocument` class in your project, and call the `CreateRichTextControlsFromNativeControls` method from the `ThisDocument_Startup` event handler.  
-  
-     [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]  [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]  
-  
-##  <a name="runtimeaddin"></a> Adding Content Controls at Run Time in a VSTO Add-in Project  
- You can add content controls programmatically to any open document at run time by using a VSTO Add-in. To do this, generate a <xref:Microsoft.Office.Tools.Word.Document> host item that is based on an open document, and then use methods of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of this host item. Each method has three overloads that you can use to add a content control in the following ways:  
-  
--   Add a control at the current selection.  
-  
--   Add a control at a specified range.  
-  
--   Add a control that is based on a native content control in the document.  
-  
- Dynamically created content controls are not persisted in the document when the document is closed. However, a native content control remains in the document. You can recreate a content control that is based on a native content control the next time the document is opened. For more information, see [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
-  
- For more information about generating host items in VSTO Add-in projects, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Criado dinamicamente conteúdo controles não são mantidos no documento quando o documento é fechado. No entanto, um controle de conteúdo nativo permanecerá no documento. Você pode recriar um controle de conteúdo baseado em um controle de conteúdo nativo na próxima vez em que o documento for aberto. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 > [!NOTE]  
->  To add a check box content control to a document, you must create a <xref:Microsoft.Office.Tools.Word.ContentControl> object. For more information, see [Content Controls](../vsto/content-controls.md).  
+>  Para adicionar um controle de conteúdo da caixa de seleção para um documento em um projeto do Word 2010, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).  
   
-#### <a name="to-add-a-content-control-at-the-current-selection"></a>To add a content control at the current selection  
+#### <a name="to-add-a-content-control-at-the-current-selection"></a>Para adicionar um controle de conteúdo na seleção atual  
   
-1.  Use a <xref:Microsoft.Office.Tools.Word.ControlCollection> method that has the name `Add`\<*control class*> (where *control class* is the class name of the content control that you want to add, such as <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), and that has a single parameter for the name of the new control.  
+1.  Use um <xref:Microsoft.Office.Tools.Word.ControlCollection> método que tem o nome `Add` \< *classe de controle*> (onde *classe de controle* é o nome da classe do controle de conteúdo que você deseja adicionar como <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), e que tem um único parâmetro para o nome do novo controle.  
   
-     The following code example uses the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> method to add a new <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to the beginning of the active document. To run this code, add the code to the `ThisAddIn` class in your project, and call the `AddRichTextControlAtSelection` method from the `ThisAddIn_Startup` event handler.  
+     O seguinte exemplo de código usa o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> método para adicionar um novo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> para o início do documento. Para executar esse código, adicione o código para o `ThisDocument` classe em seu projeto e chame o `AddRichTextControlAtSelection` método do `ThisDocument_Startup` manipulador de eventos.  
   
-     [!code-vb[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#1)]  [!code-csharp[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#1)]  
+     [!code-csharp[Trin_ContentControlReference#700](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#700)]
+     [!code-vb[Trin_ContentControlReference#700](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#700)]  
   
-#### <a name="to-add-a-content-control-at-a-specified-range"></a>To add a content control at a specified range  
+#### <a name="to-add-a-content-control-at-a-specified-range"></a>Para adicionar um controle de conteúdo em um intervalo especificado  
   
-1.  Use a <xref:Microsoft.Office.Tools.Word.ControlCollection> method that has the name `Add`\<*control class*> (where *control class* is the name of the content control class that you want to add, such as <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), and that has a <xref:Microsoft.Office.Interop.Word.Range> parameter.  
+1.  Use um <xref:Microsoft.Office.Tools.Word.ControlCollection> método que tem o nome `Add` \< *classe de controle*> (onde *classe de controle* é o nome da classe de controle de conteúdo que você deseja adicionar como <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), e que tem um <xref:Microsoft.Office.Interop.Word.Range> parâmetro.  
   
-     The following code example uses the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> method to add a new <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to the beginning of the active document. To run this code, add the code to the `ThisAddIn` class in your project, and call the `AddRichTextControlAtRange` method from the `ThisAddIn_Startup` event handler.  
+     O seguinte exemplo de código usa o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> método para adicionar um novo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> para o início do documento. Para executar esse código, adicione o código para o `ThisDocument` classe em seu projeto e chame o `AddRichTextControlAtRange` método do `ThisDocument_Startup` manipulador de eventos.  
   
-     [!code-vb[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#2)]  [!code-csharp[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#2)]  
+     [!code-csharp[Trin_ContentControlReference#701](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#701)]
+     [!code-vb[Trin_ContentControlReference#701](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#701)]  
   
-#### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>To add a content control that is based on a native content control  
+#### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Para adicionar um controle de conteúdo com base em um controle de conteúdo nativo  
   
-1.  Use a <xref:Microsoft.Office.Tools.Word.ControlCollection> method that has the name `Add`\<*control class*> (where *control class* is the name of the content control class that you want to add, such as <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), and that has a Microsoft.Office.Interop.Word.ContentControl parameter.  
+1.  Use um <xref:Microsoft.Office.Tools.Word.ControlCollection> método que tem o nome `Add` \< *classe de controle*> (onde *classe de controle* é o nome da classe de controle de conteúdo que você deseja adicionar como <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), e que tem um parâmetro de Microsoft.Office.Interop.Word.ContentControl.  
   
-     The following code example uses the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> method to create a new <xref:Microsoft.Office.Tools.Word.RichTextContentControl> for every native rich text control that is in a document, after the document is opened. To run this code, add the code to the `ThisAddIn` class in your project.  
+     O seguinte exemplo de código usa o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> método para criar um novo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> para cada controle RTF nativo no documento. Para executar esse código, adicione o código para o `ThisDocument` classe em seu projeto e chame o `CreateRichTextControlsFromNativeControls` método do `ThisDocument_Startup` manipulador de eventos.  
   
-     [!code-vb[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#3)]  [!code-csharp[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#3)]  
+     [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
+     [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]  
   
-     For C#, you must also attach the `Application_DocumentOpen` event handler to the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> event.  
+##  <a name="runtimeaddin"></a>Adicionando controles de conteúdo em tempo de execução em um projeto de suplemento do VSTO  
+ Você pode adicionar controles de conteúdo por meio de programação para qualquer documento aberto em tempo de execução usando um suplemento do VSTO. Para fazer isso, gerar um <xref:Microsoft.Office.Tools.Word.Document> hospedar o item com base em um documento aberto e usar os métodos do <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade deste item de host. Cada método tem três sobrecargas que você pode usar para adicionar um controle de conteúdo das seguintes maneiras:  
+  
+-   Adicione um controle na seleção atual.  
+  
+-   Adicione um controle em um intervalo especificado.  
+  
+-   Adicione um controle baseado em um controle de conteúdo nativo no documento.  
+  
+ Criado dinamicamente conteúdo controles não são mantidos no documento quando o documento é fechado. No entanto, um controle de conteúdo nativo permanecerá no documento. Você pode recriar um controle de conteúdo baseado em um controle de conteúdo nativo na próxima vez em que o documento for aberto. Para obter mais informações, consulte [persistência de controles dinâmicos em documentos do Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  
+ Para obter mais informações sobre como gerar itens de host em projetos de suplemento do VSTO, consulte [Estendendo documentos do Word e pastas de trabalho do Excel no suplemento do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+  
+> [!NOTE]  
+>  Para adicionar um controle de conteúdo da caixa de seleção para um documento, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).  
+  
+#### <a name="to-add-a-content-control-at-the-current-selection"></a>Para adicionar um controle de conteúdo na seleção atual  
+  
+1.  Use um <xref:Microsoft.Office.Tools.Word.ControlCollection> método que tem o nome `Add` \< *classe de controle*> (onde *classe de controle* é o nome da classe do controle de conteúdo que você deseja adicionar como <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), e que tem um único parâmetro para o nome do novo controle.  
+  
+     O seguinte exemplo de código usa o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> método para adicionar um novo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> para o início do documento ativo. Para executar esse código, adicione o código para o `ThisAddIn` classe em seu projeto e chame o `AddRichTextControlAtSelection` método do `ThisAddIn_Startup` manipulador de eventos.  
+  
+     [!code-vb[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#1)]
+     [!code-csharp[Trin_WordAddInDynamicControls#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#1)]  
+  
+#### <a name="to-add-a-content-control-at-a-specified-range"></a>Para adicionar um controle de conteúdo em um intervalo especificado  
+  
+1.  Use um <xref:Microsoft.Office.Tools.Word.ControlCollection> método que tem o nome `Add` \< *classe de controle*> (onde *classe de controle* é o nome da classe de controle de conteúdo que você deseja adicionar como <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), e que tem um <xref:Microsoft.Office.Interop.Word.Range> parâmetro.  
+  
+     O seguinte exemplo de código usa o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> método para adicionar um novo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> para o início do documento ativo. Para executar esse código, adicione o código para o `ThisAddIn` classe em seu projeto e chame o `AddRichTextControlAtRange` método do `ThisAddIn_Startup` manipulador de eventos.  
+  
+     [!code-vb[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#2)]
+     [!code-csharp[Trin_WordAddInDynamicControls#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#2)]  
+  
+#### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>Para adicionar um controle de conteúdo com base em um controle de conteúdo nativo  
+  
+1.  Use um <xref:Microsoft.Office.Tools.Word.ControlCollection> método que tem o nome `Add` \< *classe de controle*> (onde *classe de controle* é o nome da classe de controle de conteúdo que você deseja adicionar como <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>), e que tem um parâmetro de Microsoft.Office.Interop.Word.ContentControl.  
+  
+     O seguinte exemplo de código usa o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> método para criar um novo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> para cada controle RTF nativo que está em um documento, depois que o documento é aberto. Para executar esse código, adicione o código para o `ThisAddIn` classe em seu projeto.  
+  
+     [!code-vb[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#3)]
+     [!code-csharp[Trin_WordAddInDynamicControls#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#3)]  
+  
+     Para c#, você também deve anexar o `Application_DocumentOpen` manipulador de eventos para o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> evento.  
   
      [!code-csharp[Trin_WordAddInDynamicControls#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#6)]  
   
-## <a name="see-also"></a>See Also  
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)  
+## <a name="see-also"></a>Consulte também  
+ [Automatizando o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)   
+ [Itens de host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md)   
+ [Adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Limitações programáticas de itens de Host e controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Programando personalizações no nível do documento](../vsto/programming-document-level-customizations.md)  
   

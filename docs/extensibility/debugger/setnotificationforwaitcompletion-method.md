@@ -1,45 +1,30 @@
 ---
-title: "Método SetNotificationForWaitCompletion | Documentos do Microsoft"
+title: "Método SetNotificationForWaitCompletion | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
+helpviewer_keywords: SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 95789b92fe107181b34af86521be7306bcf372b4
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 385ae98e90d8f3a466c0983405c367347bb8ca10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Método SetNotificationForWaitCompletion
 Define ou limpa o bit de estado TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
   
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName></xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (em mscorlib.dll)  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -55,9 +40,9 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ## <a name="exceptions"></a>Exceções  
   
 ## <a name="remarks"></a>Comentários  
- O depurador definirá esse bit para ajudar a sair de um corpo de método assíncrono. Se `enabled` é `true`, esse método deve ser chamado somente em uma tarefa que ainda não foram concluída. Se `enabled` é `false`, esse método pode ser chamado em tarefas concluídas. Em ambos os casos, ele só deve ser usado para tarefas de estilo de promessa.  
+ O depurador define esse bit para ajudar a etapa fora de um corpo de método assíncrono. Se `enabled` é `true`, esse método deve ser chamado apenas em uma tarefa que ainda não foi concluída. Se `enabled` é `false`, esse método pode ser chamado em tarefas concluídas. Em ambos os casos, ele só deve ser usado para tarefas de estilo promessa.  
   
 ## <a name="requirements"></a>Requisitos  
   
 ## <a name="see-also"></a>Consulte também  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

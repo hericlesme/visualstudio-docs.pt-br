@@ -1,53 +1,52 @@
 ---
-title: "IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 024ccd78-5867-4ca7-bc26-548758e9ac53
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f12417323d0553fc6dd9ca33c65c566229454c99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Um determinado valor correspondente da marca, esse método retorna uma enumeração de símbolos que estão contidos em essa função de stub em um endereço virtual relativo especificado.  
+# <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
+Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidos nesta função stub num endereço virtual relativo especificado.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp  
+```C++  
 HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
    DWORD             tagValue,  
    DWORD             rva,  
    IDiaEnumSymbols** ppResult);  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `tagValue`  
- \[in\] o valor da marca do ponteiro para o símbolo de pointee registra for encontrado.  
+ [in] O valor de marca de ponteiro para o qual os registros de símbolo pointee são encontrados.  
   
  `rva`  
- \[in\] rva o que é usado para filtrar os símbolos que correspondem à variável de pointee com o valor especificado da marca.  
+ [in] Rva que é usado para filtrar os símbolos que correspondem à variável pointee com o valor da marca especificado.  
   
  `ppResult`  
- \[out\] um ponteiro à um ponteiro de interface de `IDiaEnumSymbols` que é inicializada com o resultado.  
+ [out] Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.  
   
-## Valor de retorno  
- Se com êxito, retorna `S_OK`; caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
-## Comentários  
- Chamar este método somente em uma interface de `IDiaSymbol` que corresponde a uma função de stub de aceleração.  
+## <a name="remarks"></a>Comentários  
+ Chame este método somente em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

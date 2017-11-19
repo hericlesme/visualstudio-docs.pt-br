@@ -1,53 +1,37 @@
 ---
-title: IEnumDebugProcesses2::Skip | Documentos do Microsoft
+title: IEnumDebugProcesses2::Skip | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugProcesses2::Skip
-helpviewer_keywords:
-- IEnumDebugProcesses2::Skip
+f1_keywords: IEnumDebugProcesses2::Skip
+helpviewer_keywords: IEnumDebugProcesses2::Skip
 ms.assetid: b9e9d888-189b-44c4-a65f-e91612458898
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3b4b736bda7487d520f5fe539cf9ecfbfabbf56d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: aebab7aef8ce033ce551629d1934ad91c1118f61
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
 Ignora o número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
    ULONG celt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Skip(  
    uint celt  
 );  

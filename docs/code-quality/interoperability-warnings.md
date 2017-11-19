@@ -1,49 +1,48 @@
 ---
-title: "Avisos de interoperabilidade | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.Interoperabilityrules"
-helpviewer_keywords: 
-  - "avisos da análise de código gerenciado, avisos de interoperabilidade"
-  - "avisos de interoperabilidade"
-  - "avisos de interoperabilidade"
+title: Avisos de interoperabilidade | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.Interoperabilityrules
+helpviewer_keywords:
+- managed code analysis warnings, interoperability warnings
+- interoperability warnings
+- warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 810583a04cea63582e560d8068827137ab5c8b89
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Avisos de interoperabilidade
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Os avisos de interoperabilidade dão suporte à interação com clientes COM.  
+# <a name="interoperability-warnings"></a>Avisos de interoperabilidade
+Avisos de interoperabilidade dão suporte à interação com clientes COM.  
   
-## Nesta seção  
+## <a name="in-this-section"></a>Nesta seção  
   
 |Regra|Descrição|  
-|-----------|---------------|  
-|[CA1400: os pontos de entrada P\/Invoke devem existir](../Topic/CA1400:%20P-Invoke%20entry%20points%20should%20exist.md)|Um público ou um método protegido são marcados usando o atributo de System.Runtime.InteropServices.DllImportAttribute.  Ou biblioteca não gerenciado não pode ser encontrada ou o método não pode corresponder a uma função na biblioteca.|  
-|[CA1401: P\/Invokes não deve estar visível](../Topic/CA1401:%20P-Invokes%20should%20not%20be%20visible.md)|Um público ou um método protegido em um tipo utilitário têm o atributo de System.Runtime.InteropServices.DllImportAttribute \(também implementada pela palavra\-chave declarar no Visual Basic\).  Esses métodos não devem ser expostos.|  
-|[CA1402: evitar sobrecargas em interfaces visíveis COM](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md)|Quando os métodos sobrecarregados são expostos para clientes COM, apenas a primeira sobrecarga do método retém seu nome.  As sobrecargas subsequentes são renomeadas exclusivamente através do nome a um caractere de sublinhado \(\_\) e um inteiro que corresponde à ordem de declaração de sobrecarga.|  
-|[CA1403: os tipos de layout automático não devem ser visíveis em COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Um tipo de valor COM\- visível é marcado usando o atributo de System.Runtime.InteropServices.StructLayoutAttribute definido como LayoutKind.Auto.  O layout deless podem ser alterados entre versões de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], que interromperão clientes COM que esperam por um layout específico.|  
-|[CA1404: chamar GetLastError logo depois de P\/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|For feita uma chamada para o método de Marshal.GetLastWin32Error ou à função de  [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]GetLastError de equivalente, e a chamada imediatamente anterior não é a um método de invocação de plataforma.|  
-|[CA1405: os tipos base de tipo visível em COM devem ser visíveis em COM](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Um tipo COM\- visível é derivado de um tipo que não é COM\- visível.|  
-|[CA1406: evitar argumentos Int64 para clientes do Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)|Visual Basic 6 clientes COM não pode acessar inteiros de 64 bits.|  
-|[CA1407: evitar membros estáticos em tipos visíveis COM](../Topic/CA1407:%20Avoid%20static%20members%20in%20COM%20visible%20types.md)|COM o não oferece suporte a métodos estáticos.|  
-|[CA1408: não usar AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)|Tipos que usa uma interface dupla permite que clientes para associar a um layout específico da interface.  Todas as modificações em uma versão futura ao layout do tipo ou de qualquer tipo de base do travará clientes COM que são associados à interface.  Por padrão, se o atributo de ClassInterfaceAttribute não for especificado, uma interface de expedição somente é usada.|  
-|[CA1409: os tipos visíveis Com devem ser criáveis](../code-quality/ca1409-com-visible-types-should-be-creatable.md)|Um tipo de referência que é marcado como visível a especificamente COM parâmetros contém um construtor público mas não contém um construtor \(sem parâmetros\) público padrão.  Um tipo sem um construtor público padrão não é creatable por clientes COM.|  
-|[CA1410: os métodos de registro COM devem ser correspondentes](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Um tipo declara um método marcado usando o atributo de <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> mas não declara um método marcado usando o atributo de <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> , ou vice\-versa.|  
-|[CA1411: os métodos de registro COM não devem estar visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)|Um método que foi marcada usando o atributo de System.Runtime.InteropServices.ComRegisterFunctionAttribute ou atributo de System.Runtime.InteropServices.ComUnregisterFunctionAttribute externamente é visível.|  
-|[CA1412: marcar interfaces ComSource como IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|Um tipo é marcado usando o atributo de System.Runtime.InteropServices.ComSourceInterfacesAttribute e, pelo menos uma das interfaces especificadas não está marcado usando o atributo de System.Runtime.InteropServices.InterfaceTypeAttribute definido como ComInterfaceType.InterfaceIsIDispatch.|  
-|[CA1413: evitar campos não públicos em tipos de valor visíveis COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|Os campos público da instância de tipo de valor COM\- visíveis são visíveis aos clientes COM.  Revise o conteúdo dos campos de informações que não são expostos, ou que terá efeitos não intencional de design ou de segurança.|  
-|[CA1414: marcar argumentos P\/Invoke boolianos com MarshalAs](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|O tipo de dados booliano tiver várias representações em código não gerenciado.|  
-|[CA1415: declarar P\/Invokes corretamente](../code-quality/ca1415-declare-p-invokes-correctly.md)|Esta regra procura as declarações de método de invocação de plataforma que visem as funções de [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] que têm um ponteiro para um parâmetro SOBREPOR da estrutura e o parâmetro gerenciado correspondente não é um ponteiro para uma estrutura de <xref:System.Threading.NativeOverlapped?displayProperty=fullName>.|
+|----------|-----------------|  
+|[CA1400: Os pontos de entrada P/Invoke devem existir](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Um método público ou protegido é marcado usando-se o atributo System.Runtime.InteropServices.DllImportAttribute. Não foi possível localizar a biblioteca não gerenciada ou não foi possível comparar o método a uma função na biblioteca.|  
+|[CA1401: P/Invokes não devem ser visíveis](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Um método público ou protegido em um tipo público tem o atributo DllImportAttribute (também implementado a palavra-chave de Declare no Visual Basic). Esses métodos não devem ser expostos.|  
+|[CA1402: evitar sobrecargas em interfaces visíveis em COM](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md)|Quando os métodos sobrecarregados são expostos a clientes COM, apenas a primeira sobrecarga do método mantém seu nome. As sobrecargas subsequentes são renomeadas com exclusividade acrescentando-se ao nome um caractere de sublinhado (_) e um inteiro correspondente à ordem de declaração da sobrecarga.|  
+|[CA1403: os tipos de layout automático não devem ser visíveis em COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Um tipo de valor visível por COM é marcado usando-se o atributo System.Runtime.InteropServices.StructLayoutAttribute definido como LayoutKind.Auto. O layout desses tipos pode ser alterado entre versões do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o que interromperá clientes COM que esperam um layout específico.|  
+|[CA1404: Chamar GetLastError logo depois de P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|É feita uma chamada para o método Marshal.GetLastWin32Error ou equivalente [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] função GetLastError e a chamada imediatamente anterior não é uma plataforma de invocação de método.|  
+|[CA1405: os tipos base de tipo visível em COM devem ser visíveis em COM](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Um tipo visível por COM deriva de um tipo que não é visível por COM.|  
+|[CA1406: evitar argumentos Int64 para clientes do Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)|Clientes COM do Visual Basic 6 não podem acessar números inteiros de 64 bits.|  
+|[CA1407: evitar membros estáticos em tipos visíveis em COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)|COM não dá suporte para métodos estáticos.|  
+|[CA1408: não usar AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)|Tipos que usam uma interface dupla permitem que clientes sejam associados a um layout de interface específico. Todas as alterações feitas em uma versão futura do layout do tipo ou de qualquer tipo de base interromperão clientes COM associados à interface. Por padrão, se o atributo ClassInterfaceAttribute não for especificado, será usada uma interface somente de expedição.|  
+|[CA1409: os tipos visíveis em Com devem ser criáveis](../code-quality/ca1409-com-visible-types-should-be-creatable.md)|Um tipo de referência marcado especificamente como visível para COM contém um construtor parametrizado público, mas não contém um construtor padrão público (sem parâmetros). Um tipo sem um construtor padrão público não pode ser criado por clientes COM.|  
+|[CA1410: os métodos de registro COM devem ser correspondentes](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Um tipo declara um método marcado com o uso de <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> de atributo, mas não declara um método marcado com o uso de <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo, ou vice-versa.|  
+|[CA1411: os métodos de registro COM não devem estar visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)|Um método que está marcado como usando o atributo System.Runtime.InteropServices.ComRegisterFunctionAttribute ou o atributo System.Runtime.InteropServices.ComUnregisterFunctionAttribute é visível externamente.|  
+|[CA1412: marcar interfaces ComSource como IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)|Um tipo é marcado usando-se o atributo System.Runtime.InteropServices.ComSourceInterfacesAttribute, e pelo menos uma das interfaces especificadas não está marcada usando-se o atributo System.Runtime.InteropServices.InterfaceTypeAttribute definido como ComInterfaceType.InterfaceIsIDispatch.|  
+|[CA1413: evitar campos não públicos em tipos de valor visíveis em COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)|Os campos de instância não pública dos tipos de valor visíveis por COM permanecem visíveis para clientes COM. Revise o conteúdo dos campos em busca de informações que não devem ser expostas, ou isso terá efeitos não intencionais sobre o design ou a segurança.|  
+|[CA1414: Marcar argumentos P/Invoke boolianos com MarshalAs](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|O tipo de dados Booliano tem várias representações em código não gerenciado.|  
+|[CA1415: Declarar P/Invokes corretamente](../code-quality/ca1415-declare-p-invokes-correctly.md)|Essa regra procura por declarações de método de invocação de plataforma destino [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] funções que têm um ponteiro para um OVERLAPPED estrutura parâmetro e o parâmetro gerenciado correspondente não é um ponteiro para um <xref:System.Threading.NativeOverlapped?displayProperty=fullName> estrutura.|

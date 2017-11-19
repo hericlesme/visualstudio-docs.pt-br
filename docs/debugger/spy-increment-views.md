@@ -1,48 +1,48 @@
 ---
-title: "Exibi&#231;&#245;es do Spy++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, modos de exibição"
-  - "modos de exibição, Spy++"
+title: "Exibições do Spy + + | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- views, Spy++
+- Spy++, views
 ms.assetid: c60867af-f814-4fac-8f06-3c39cbefc7ea
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c804ad5fc4921eefc5529094c45361c5fa115fb9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Exibi&#231;&#245;es do Spy++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spy \+ \+ exibe os modos de exibição de árvore do windows, mensagens, processos e threads disponíveis em sua máquina.  
+# <a name="spy-views"></a>Exibições do Spy++
+Spy + + exibe modos de exibição de árvore do windows, as mensagens, processos e threads disponíveis no seu computador.  
   
-## Nesta seção  
- [Modo de exibição do Windows](../debugger/windows-view.md)  
- Exibe uma visualização em árvore dos controles e janelas disponíveis.  
+## <a name="in-this-section"></a>Nesta seção  
+ [Exibição de janelas](../debugger/windows-view.md)  
+ Exibe uma exibição de árvore do windows disponível e controles.  
   
- [Modo de exibição de mensagens](../debugger/messages-view.md)  
- Exibe o fluxo de mensagens associado a uma janela, processo ou thread.  
+ [Exibição de Mensagens](../debugger/messages-view.md)  
+ Exibe o fluxo de mensagem associado a uma janela, processo ou thread.  
   
- [Modo de exibição de processos](../debugger/processes-view.md)  
- Exibe uma visualização em árvore de processos ativos.  
+ [Exibição de processos](../debugger/processes-view.md)  
+ Exibe uma árvore de processos ativos.  
   
- [Visualização de threads](../debugger/threads-view.md)  
- Exibe uma visualização em árvore de segmentos ativos.  
+ [Exibição de Threads](../debugger/threads-view.md)  
+ Exibe uma exibição de árvore de threads ativos.  
   
-## Seções relacionadas  
- [Ferramentas de pesquisa para modos de exibição Spy \+ \+](../debugger/search-tools-for-spy-increment-views.md)  
- Usado para localizar nós específicos no windows Spy \+ \+ modos de exibição de caixas de diálogo.  
+## <a name="related-sections"></a>Seções relacionadas  
+ [Ferramentas de pesquisa para as exibições do Spy++](../debugger/search-tools-for-spy-increment-views.md)  
+ Caixas de diálogo usadas para localizar nós específicos no windows de exibições do Spy + +.  
   
- [Usando o Spy \+ \+](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy \+ \+ e explica como ele pode ser usado.  
+ [Usando Spy++](../debugger/using-spy-increment.md)  
+ Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
   
- [Referência Spy \+ \+](../debugger/spy-increment-reference.md)  
- Inclui seções descrevendo cada Spy \+ \+ menu e a caixa de diálogo caixa.
+ [Referência a Spy++](../debugger/spy-increment-reference.md)  
+ Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.

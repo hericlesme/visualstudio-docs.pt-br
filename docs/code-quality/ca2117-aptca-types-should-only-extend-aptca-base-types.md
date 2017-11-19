@@ -1,11 +1,10 @@
 ---
-title: 'CA2117: APTCA types should only extend APTCA base types | Microsoft Docs'
+title: "CA2117: Os tipos APTCA só devem estender tipos base APTCA | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,92 +14,77 @@ helpviewer_keywords:
 - AptcaTypesShouldOnlyExtendAptcaBaseTypes
 - CA2117
 ms.assetid: c505b586-2f1e-47cb-98ee-a5afcbeda70f
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a10a5e0fb867e819f62705a224aadb1073854a3a
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA types should only extend APTCA base types
+# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: os tipos APTCA só devem estender tipos base APTCA
 |||  
 |-|-|  
-|TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|  
+|NomeDoTipo|AptcaTypesShouldOnlyExtendAptcaBaseTypes|  
 |CheckId|CA2117|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Categoria|Microsoft.Security|  
+|Alteração Significativa|Quebra|  
   
-## <a name="cause"></a>Cause  
- A public or protected type in an assembly with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attribute inherits from a type declared in an assembly that does not have the attribute.  
+## <a name="cause"></a>Causa  
+ Um tipo público ou protegido em um assembly com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atributo herda de um tipo declarado em um assembly que não tem o atributo.  
   
-## <a name="rule-description"></a>Rule Description  
- By default, public or protected types in assemblies with strong names are implicitly protected by an [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) for full trust. Strong-named assemblies marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute do not have this protection. The attribute disables the inheritance demand. This makes exposed types declared in the assembly inheritable by types that do not have full trust.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Por padrão, os tipos públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um [demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) de confiança total. Assemblies de nomes fortes marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a demanda de herança. Isso torna expostos tipos declarados no assembly herdados por tipos que não têm confiança total.  
   
- When the APTCA attribute is present on a fully trusted assembly, and a type in the assembly inherits from a type that does not allow partially trusted callers, a security exploit is possible. If two types `T1` and `T2` meet the following conditions, malicious callers can use the type `T1` to bypass the implicit full trust inheritance demand that protects `T2`:  
+ Quando o atributo APTCA estiver presente em um assembly totalmente confiável, e um tipo no assembly herda de um tipo que não permite chamadores parcialmente confiáveis, um ataque de segurança é possível. Se dois tipos `T1` e `T2` atendem às seguintes condições, chamadores mal-intencionados podem usar o tipo `T1` para ignorar a demanda de herança de confiança total implícito que protege `T2`:  
   
--   `T1` is a public type declared in a fully trusted assembly that has the APTCA attribute.  
+-   `T1`um tipo público é declarado em um assembly totalmente confiável que tem o atributo APTCA.  
   
--   `T1` inherits from a type `T2` outside its assembly.  
+-   `T1`herda de um tipo `T2` fora de seu assembly.  
   
--   `T2`'s assembly does not have the APTCA attribute and, therefore, should not be inheritable by types in partially trusted assemblies.  
+-   `T2`do assembly não tem o atributo APTCA e, portanto, não deve ser herdado pelos tipos em assemblies parcialmente confiáveis.  
   
- A partially trusted type `X` can inherit from `T1`, which gives it access to inherited members declared in `T2`. Because `T2` does not have the APTCA attribute, its immediate derived type (`T1`) must satisfy an inheritance demand for full trust; `T1` has full trust and therefore satisfies this check. The security risk is because `X` does not participate in satisfying the inheritance demand that protects `T2` from untrusted subclassing. For this reason, types with the APTCA attribute must not extend types that do not have the attribute.  
+ Um tipo parcialmente confiável `X` pode herdar de `T1`, que fornece acesso a membros herdados declarados em `T2`. Porque `T2` não tem o atributo APTCA, seu tipo derivado imediato (`T1`) devem atender a uma demanda de herança de confiança total; `T1` tem confiança total e portanto satisfaz essa verificação. O risco de segurança é porque `X` não participar no que satisfazem a demanda de herança que protege `T2` de subclassificação não confiável. Por esse motivo, tipos com o atributo APTCA não devem estender tipos que não têm o atributo.  
   
- Another security issue, and perhaps a more common one, is that the derived type (`T1`) can, through programmer error, expose protected members from the type that requires full trust (`T2`). When this occurs, untrusted callers gain access to information that should be available only to fully trusted types.  
+ Outro problema de segurança e talvez uma mais comum, é que o tipo derivado (`T1`) pode, por meio de erro do programador, expõe membros protegidos do tipo que requer confiança total (`T2`). Quando isso ocorrer, chamadores não confiáveis acessem informações que devem estar disponíveis somente para tipos totalmente confiáveis.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- If the type reported by the violation is in an assembly that does not require the APTCA attribute, remove it.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Se o tipo relatado pela violação está em um assembly que não requer o atributo APTCA, removê-lo.  
   
- If the APTCA attribute is required, add an inheritance demand for full trust to the type. This protects against inheritance by untrusted types.  
+ Se o atributo APTCA é necessário, adicione uma demanda de herança de confiança total para o tipo. Isso protege contra a herança de tipos não confiáveis.  
   
- It is possible to fix a violation by adding the APTCA attribute to the assemblies of the base types reported by the violation. Do not do this without first conducting an intensive security review of all code in the assemblies and all code that depends on the assemblies.  
+ É possível corrigir uma violação, adicionando o atributo APTCA para os assemblies dos tipos de base relatados pela violação. Fazer isso sem primeiro conduzir uma revisão de segurança de uso intensivo de todo o código no assembly e todo o código que depende dos assemblies.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- To safely suppress a warning from this rule, you must ensure that protected members exposed by your type do not directly or indirectly allow untrusted callers to access sensitive information, operations, or resources that can be used in a destructive manner.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Para suprimir com segurança um aviso dessa regra, você deve garantir que membros protegidos expostos pelo seu tipo não direta ou indiretamente permitem chamadores não confiáveis acessar informações confidenciais, operações ou recursos que podem ser usados de forma destrutivas.  
   
-## <a name="example"></a>Example  
- The following example uses two assemblies and a test application to illustrate the security vulnerability detected by this rule. The first assembly does not have the APTCA attribute and should not be inheritable by partially trusted types (represented by `T2` in the previous discussion).  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir usa dois assemblies e um aplicativo de teste para ilustrar a vulnerabilidade de segurança detectada por essa regra. O primeiro conjunto não tem o atributo APTCA e não deve ser herdado pelos tipos parcialmente confiáveis (representado por `T2` na discussão anterior).  
   
  [!code-csharp[FxCop.Security.NoAptcaInherit#1](../code-quality/codesnippet/CSharp/ca2117-aptca-types-should-only-extend-aptca-base-types_1.cs)]  
   
-## <a name="example"></a>Example  
- The second assembly, represented by `T1` in the previous discussion, is fully trusted and allows partially trusted callers.  
+## <a name="example"></a>Exemplo  
+ O segundo conjunto, representado pelo `T1` na discussão anterior, é totalmente confiável e permite que os chamadores parcialmente confiáveis.  
   
  [!code-csharp[FxCop.Security.YesAptcaInherit#1](../code-quality/codesnippet/CSharp/ca2117-aptca-types-should-only-extend-aptca-base-types_2.cs)]  
   
-## <a name="example"></a>Example  
- The test type, represented by `X` in the previous discussion, is in a partially trusted assembly.  
+## <a name="example"></a>Exemplo  
+ O tipo de teste, representado pelo `X` na discussão anterior, está em um assembly parcialmente confiável.  
   
  [!code-csharp[FxCop.Security.TestAptcaInherit#1](../code-quality/codesnippet/CSharp/ca2117-aptca-types-should-only-extend-aptca-base-types_3.cs)]  
   
- This example produces the following output.  
+ Este exemplo gerencia a seguinte saída.  
   
- **Meet at the shady glen 2/22/2003 12:00:00 AM!**  
-**From Test: sunny meadow**  
-**Meet at the sunny meadow 2/22/2003 12:00:00 AM!**   
-## <a name="related-rules"></a>Related Rules  
- [CA2116: APTCA methods should only call APTCA methods](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)  
+ **Atender no glen duvidoso 22/2/2003 12:00:00 AM!**  
+**Ensolarado Campina de teste:**  
+**Atender à Campina ensolarada 22/2/2003 12:00:00 AM!**   
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA2116: os métodos APTCA só devem chamar métodos APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)  
   
-## <a name="see-also"></a>See Also  
- [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET Framework Assemblies Callable by Partially Trusted Code](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
- [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+## <a name="see-also"></a>Consulte também  
+ [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)   
+ [Assemblies do .NET framework que pode ser chamados por código parcialmente confiável](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
+ [Usando Bibliotecas de Código Parcialmente Confiável](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
+ [Demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

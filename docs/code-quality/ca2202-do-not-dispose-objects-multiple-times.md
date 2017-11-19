@@ -1,56 +1,55 @@
 ---
-title: "CA2202: n&#227;o descartar objetos v&#225;rias vezes | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2202"
-  - "Do not dispose objects multiple times"
-  - "DoNotDisposeObjectsMultipleTimes"
-helpviewer_keywords: 
-  - "CA2202"
+title: "CA2202: Não descartar objetos várias vezes | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2202
+- Do not dispose objects multiple times
+- DoNotDisposeObjectsMultipleTimes
+helpviewer_keywords: CA2202
 ms.assetid: fa85349a-cf1e-42c8-a86b-eacae1f8bd96
-caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ab5acc92df96c416cd614ac18ac66ff34d142a22
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# CA2202: n&#227;o descartar objetos v&#225;rias vezes
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: não descartar objetos várias vezes
 |||  
 |-|-|  
-|TypeName|DoNotDisposeObjectsMultipleTimes|  
+|NomeDoTipo|DoNotDisposeObjectsMultipleTimes|  
 |CheckId|CA2202|  
 |Categoria|Microsoft.Usage|  
-|Alteração Significativa|Sem Quebra|  
+|Alteração Significativa|Não separáveis|  
   
-## Causa  
- Uma implementação do método contém os caminhos de código que poderiam causar várias chamadas para <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> ou a um equivalente de disposição, como um \(\) próximo método em alguns tipos, no mesmo objeto.  
+## <a name="cause"></a>Causa  
+ Uma implementação do método contém os caminhos de código que poderiam causar várias chamadas para <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> ou um equivalente de Dispose, como um método Close () em alguns tipos, no mesmo objeto.  
   
-## Descrição da Regra  
- Um método corretamente implementado de <xref:System.IDisposable.Dispose%2A> pode ser chamado várias vezes sem gerar uma exceção.  No entanto, isso não é garantido e para evitar gerar <xref:System.ObjectDisposedException?displayProperty=fullName> que você não deve chamar <xref:System.IDisposable.Dispose%2A> mais de uma vez em um objeto.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Um implementado corretamente <xref:System.IDisposable.Dispose%2A> método pode ser chamado várias vezes sem lançar uma exceção. No entanto, isso não é garantido e para evitar a geração de um <xref:System.ObjectDisposedException?displayProperty=fullName> você não deve chamar <xref:System.IDisposable.Dispose%2A> mais de uma vez em um objeto.  
   
-## Regras Relacionadas  
+## <a name="related-rules"></a>Regras relacionadas  
  [CA2000: descartar objetos antes de perder o escopo](../code-quality/ca2000-dispose-objects-before-losing-scope.md)  
   
-## Como Corrigir Violações  
- Para corrigir uma violação desta regra, altere a implementação de modo que independentemente do caminho de código, <xref:System.IDisposable.Dispose%2A> é chamado apenas uma vez para o objeto.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, altere a implementação assim que independentemente do caminho de código de <xref:System.IDisposable.Dispose%2A> é chamado apenas uma vez para o objeto.  
   
-## Quando Suprimir Alertas  
- Não elimine um alerta desta regra.  Se <xref:System.IDisposable.Dispose%2A> para o objeto é conhecido para ser acessível com segurança várias vezes, a implementação pode ser alterada no futuro.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra. Mesmo se <xref:System.IDisposable.Dispose%2A> para o objeto é conhecido para ser segura pode ser chamado várias vezes, a implementação pode ser alterado no futuro.  
   
-## Exemplo  
- As instruções aninhadas de `using` \(`Using` no Visual Basic\) podem causar violações de aviso CA2202.  Se o recurso IDisposable da instrução aninhada interna de `using` contém o recurso da instrução exterior de `using` , o método de `Dispose` de recursos aninhado libera o recurso independente.  Quando essa situação acontece, o método de `Dispose` da instrução exterior de `using` tentar descartar seu recurso pela segunda vez.  
+## <a name="example"></a>Exemplo  
+ Aninhados `using` instruções (`Using` no Visual Basic) pode causar violações do aviso CA2202. Se o recurso de IDisposable de aninhados interna `using` declaração contém o recurso de externa `using` instrução, o `Dispose` método do recurso aninhado libera os recursos contidos. Quando essa situação ocorrer, o `Dispose` método externo `using` declaração tenta descartar seu recurso pela segunda vez.  
   
- No exemplo a seguir, um objeto de <xref:System.IO.Stream> criado em uma instrução de utilização exterior é liberado no final da instrução de utilização interna no método dispose do objeto de <xref:System.IO.StreamWriter> que contém o objeto de `stream` .  No final da instrução exterior de `using` , o objeto de `stream` é liberado em uma segunda vez.  A segunda versão é uma violação de CA2202.  
+ No exemplo a seguir, uma <xref:System.IO.Stream> objeto que é criado em um externa usando a instrução é liberado no final da interna usando a instrução no método Dispose do <xref:System.IO.StreamWriter> objeto que contém o `stream` objeto. No final da externa `using` instrução, o `stream` objeto é liberado uma segunda vez. A segunda versão é uma violação de CA2202.  
   
 ```  
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))  
@@ -63,14 +62,14 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
   
 ```  
   
-## Exemplo  
- Para resolver esse problema, use um bloco de `try`\/`finally` em vez da instrução exterior de `using` .  No bloco de `finally` , verifique se o recurso de `stream` não for nulo.  
+## <a name="example"></a>Exemplo  
+ Para resolver esse problema, use um `try` / `finally` blocos em vez de externa `using` instrução. No `finally` bloquear, certifique-se de que o `stream` recurso não é nulo.  
   
 ```  
 Stream stream = null;  
 try  
 {  
-    stream = new FileStream("file.txt", FileMode.OpenOrCreate);  
+    stream = new FileStream("file.txt", FileMode.OpenOrCreate);  
     using (StreamWriter writer = new StreamWriter(stream))  
     {  
         stream = null;  
@@ -79,12 +78,12 @@ try
 }  
 finally  
 {  
-    if(stream != null)  
-        stream.Dispose();  
+    if(stream != null)  
+        stream.Dispose();  
 }  
   
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Padrão de descarte](../Topic/Dispose%20Pattern.md)
+ [Padrão de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

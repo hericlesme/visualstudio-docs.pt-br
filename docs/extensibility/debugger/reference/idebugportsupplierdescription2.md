@@ -1,41 +1,26 @@
 ---
-title: IDebugPortSupplierDescription2 | Documentos do Microsoft
+title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugPortSupplierDescription2 interface
+helpviewer_keywords: IDebugPortSupplierDescription2 interface
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b12bc5a819c709fb403d545b1f48c0bd4803c865
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8ce42039759128ac8b41556b94714da8cd43197d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Permite que o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário para exibir o texto dentro de **transportar informações** seção o **anexar ao processo** caixa de diálogo.  
+Permite que o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário para exibir o texto dentro de **informações de transporte** seção do **anexar ao processo** caixa de diálogo.  
   
 ## <a name="syntax"></a>Sintaxe  
   

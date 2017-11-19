@@ -1,47 +1,31 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Documentos do Microsoft
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MODULE_SYMBOL_SEARCH_INFO
-helpviewer_keywords:
-- MODULE_SYMBOL_SEARCH_INFO structure
+f1_keywords: MODULE_SYMBOL_SEARCH_INFO
+helpviewer_keywords: MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c67e292b341ba79536f1658a289d4d04ae6501ba
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 967da176757dbd9d1ac09b8710074f9038533734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
-Contém informações de status sobre os caminhos de pesquisa do símbolo que tenham sido pesquisados.  
+Contém informações de status sobre os caminhos de pesquisa de símbolo que foram pesquisadas.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct _tagSYMBOL_SEARCH_INFO  
 {  
    SYMBOL_SEARCH_INFO_FIELDS dwValidFields;  
@@ -49,7 +33,7 @@ typedef struct _tagSYMBOL_SEARCH_INFO
 } MODULE_SYMBOL_SEARCH_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct MODULE_SYMBOL_SEARCH_INFO {  
    public uint   dwValidFields;  
    public string bstrVerboseSearchInfo;  
@@ -66,13 +50,13 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é retornada de uma chamada para o [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) método.  
   
- Se o `bstrVerboseSearchInfo` campo não estiver vazio, ele contém uma lista de caminhos pesquisados e os resultados da pesquisa. A lista é formatada com um caminho, seguido por reticências ("..."), seguidas pelo resultado. Se houver mais de um par de resultado de caminho, cada par é separado por um par de "\r\n" (carro-retorno/alimentação de linha). O padrão tem esta aparência:  
+ Se o `bstrVerboseSearchInfo` campo não for vazio, contém uma lista de caminhos pesquisados e os resultados da pesquisa. A lista é formatada com um caminho, seguido por um sinal de reticências ("..."), seguido pelo resultado. Se houver mais de um par de resultados de caminho, cada par é separado por um par de (carro-retorno/alimentação de linha) "\r\n". O padrão é semelhante a:  
   
  \<caminho >... \<resultado > \r\n\<caminho >... \<resultado > \r\n\<caminho >... \<resultado >  
   
  Observe que a última entrada não tem uma sequência \r\n.  
   
- Aqui está uma possível `bstrVerboseSearchInfo` cadeia de caracteres que foi enviada para o padrão.  
+ Aqui está uma possível `bstrVerboseSearchInfo` cadeia de caracteres que foi enviada para saída padrão.  
   
  `c:\symbols\user32.pdb... File not found.`  
   

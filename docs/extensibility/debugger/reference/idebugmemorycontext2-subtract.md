@@ -1,55 +1,40 @@
 ---
-title: IDebugMemoryContext2::Subtract | Documentos do Microsoft
+title: IDebugMemoryContext2::Subtract | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugMemoryContext2::Subtract
+f1_keywords: IDebugMemoryContext2::Subtract
 helpviewer_keywords:
 - Subtract method
 - IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3ca21047d59aad2462be7d4aee285431502dce1f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 9b1dc686846e0ca1e60f6bfce03dc5976c0d1d34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Subtrai o valor especificado do contexto atual e retorna um novo contexto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Subtract(   
    UINT64                 dwCount,  
    IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Subtract(  
    ulong                    dwCount,   
    out IDebugMemoryContext2 ppMemCxt  
@@ -64,12 +49,12 @@ int Subtract(
  [out] Retorna um novo [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  Um contexto de memória é um endereço para que subtrair um valor de um endereço produz um novo endereço que exige uma nova interface de contexto.  
   
- Esse método sempre deve gerar um novo contexto, mesmo se o endereço resultante está fora do espaço de memória associado a esse contexto. A única exceção a isso é se a memória não pode ser alocada para o novo contexto ou `ppMemCxt` é um valor nulo (que é um erro).  
+ Esse método sempre deve produzir um novo contexto, mesmo se o endereço resultante está fora do espaço de memória associado a este contexto. A única exceção a isso é se a memória não pode ser alocada para o novo contexto ou se `ppMemCxt` é um valor nulo (que é um erro).  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

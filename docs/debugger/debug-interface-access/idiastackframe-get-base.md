@@ -1,44 +1,42 @@
 ---
-title: "IDiaStackFrame::get_base | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaStackFrame::get_base"
+title: ': Get_base | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackFrame::get_base method
 ms.assetid: f27477d7-26fe-4c1c-a08a-c52cb20c8293
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 26449893366c5c63892349976ef5db1c47dd8036
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackFrame::get_base
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
 Recupera o endereço base do quadro.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_base (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_base (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna o endereço base.  
+ [out] Retorna o endereço base.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se a propriedade não é suportada.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a propriedade não é suportada. Caso contrário, retornará um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

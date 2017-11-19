@@ -1,47 +1,32 @@
 ---
-title: m_stateFlags campo | Documentos do Microsoft
+title: m_stateFlags campo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- m_stateFlags field, Task class [.NET Framework debug engines]
+helpviewer_keywords: m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7ebc29016c88ac06930ac78b737815ae62824bba
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 624f9ef2f5cf2d44b565e8dd16c46938819a5df0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="mstateflags-field"></a>m_stateFlags campo
-Armazena informações sobre o estado atual do <xref:System.Threading.Tasks.Task>objeto.</xref:System.Threading.Tasks.Task>  
+Armazena informações sobre o estado atual do <xref:System.Threading.Tasks.Task> objeto.  
   
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName></xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (em mscorlib.dll)  
   
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida idioma intermediário comum (CIL).  
+ Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -50,9 +35,9 @@ Armazena informações sobre o estado atual do <xref:System.Threading.Tasks.Task
 ```  
   
 ## <a name="remarks"></a>Comentários  
- Você normalmente usa o <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName>propriedade para acessar esse valor.</xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName>  
+ Você normalmente usa o <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propriedade para acessar esse valor.  
   
- Esse membro pode ser qualquer combinação dos seguintes valores:  
+ Esse membro pode ser qualquer combinação dos valores a seguir:  
   
 -   [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)  
   
@@ -65,4 +50,4 @@ Armazena informações sobre o estado atual do <xref:System.Threading.Tasks.Task
 -   [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
 ## <a name="see-also"></a>Consulte também  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

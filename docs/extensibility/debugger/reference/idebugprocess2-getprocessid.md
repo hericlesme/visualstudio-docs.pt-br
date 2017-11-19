@@ -1,53 +1,37 @@
 ---
-title: IDebugProcess2::GetProcessId | Documentos do Microsoft
+title: IDebugProcess2::GetProcessId | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProcess2::GetProcessId
-helpviewer_keywords:
-- IDebugProcess2::GetProcessId
+f1_keywords: IDebugProcess2::GetProcessId
+helpviewer_keywords: IDebugProcess2::GetProcessId
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 46581f9ea2c6662ee70f031c446b6d9883127f1b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 779420e37f3057651f86273ec7d09368443ad1bb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
-Obtém o GUID para esse processo.  
+Obtém o GUID para este processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetProcessId(  
    GUID* pguidProcessId  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetProcessId(  
    out Guid pguidProcessId  
 );  
@@ -55,10 +39,10 @@ int GetProcessId(
   
 #### <a name="parameters"></a>Parâmetros  
  `pguidProcessId`  
- [out] Retorna o GUID para esse processo.  
+ [out] Retorna o GUID para este processo.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  O identificador global exclusivo (GUID) identifica esse processo de todos os outros processos em execução no sistema.  

@@ -1,42 +1,26 @@
 ---
-title: Elemento SupportsCodeSeparation (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento SupportsCodeSeparation (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9e39595b4fb24b023480d365a338fa46447a7e99
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: aa232e26309bf910ae4c19a9ebb2006b2ef2f7c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelos do Visual Studio)
 Especifica se o **colocar código em arquivo separado** caixa de seleção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
@@ -55,7 +39,7 @@ Especifica se o **colocar código em arquivo separado** caixa de seleção está
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -64,17 +48,17 @@ Especifica se o **colocar código em arquivo separado** caixa de seleção está
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou **Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, indicando se o **colocar código em arquivo separado** caixa de seleção está habilitada no **Add New Item** caixa de diálogo.  
+ O texto deve ser `true` ou `false`, indicando se ou não o **colocar código em arquivo separado** caixa de seleção está habilitada no **Adicionar Novo Item** caixa de diálogo.  
   
 ## <a name="remarks"></a>Comentários  
  `SupportsCodeSeparation` é um elemento opcional. O valor padrão é `false`.  
   
- O `SupportsCodeSeparation` elemento só está disponível para modelos de item da Web.  
+ O `SupportsCodeSeparation` elemento só está disponível para modelos de item de Web.  
   
  Separação de código, ou o modelo de página code-behind, permite que você mantenha a marcação em um arquivo e o código de programação em outro arquivo. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]e outras linguagens .NET usam esse modelo.  
   

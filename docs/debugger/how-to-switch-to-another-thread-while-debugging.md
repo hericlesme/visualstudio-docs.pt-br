@@ -1,48 +1,52 @@
 ---
-title: "Como alternar para outro thread durante a depura&#231;&#227;o | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "threads, trocando [depurando]"
+title: "Como: alternar para outro Thread durante a depuração | Microsoft Docs"
+ms.custom: 
+ms.date: 04/27/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: threads, switching [debugging]
 ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
-caps.latest.revision: 26
-caps.handback.revision: 26
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "26"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como alternar para outro thread durante a depura&#231;&#227;o
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Como: alternar para outro Thread durante a depuração no Visual Studio
+Quando você depurar um aplicativo multithread, você pode usar qualquer um dos vários métodos para alternar da thread que você estava trabalhando para outro thread.
 
-Quando você depura um aplicativo de vários threads, pode usar qualquer dos vários métodos para alternar o contexto do thread com o qual você vem trabalhando para outro thread.  
+> [!NOTE]
+> Se você quiser controlar a ordem na qual os threads são executados, você precisa [congelar e descongelar threads](/debugger/get-started-debugging-multithreaded-apps.md).
+
+Quando você examinar threads no editor de códigos e janelas de depuração multithread diferentes, a seta amarela indica o thread atual. Uma seta verde com uma chave final indica que um thread atual não tem o contexto atual do depurador.
   
-### Para alternar para determinado thread exibido na janela de threads  
+### <a name="to-switch-to-any-thread-that-appears"></a>Para alternar para qualquer thread que aparece 
   
--   Clique duas vezes no thread.  
+-   No **Threads** ou **inspeção paralela** janela, clique duas vezes o thread.  
   
-### Para alternar para um thread em uma janela de origem  
+### <a name="to-switch-to-a-thread-in-a-source-window"></a>Para alternar para um thread em uma janela de origem  
   
--   Na medianiz esquerda, clique com o botão direito em um indicador de thread, aponte para **Alternar para**e clique no nome desse thread para o qual você deseja alternar.  O menu de atalho mostra apenas os threads nesse local específico.  
+-   Na medianiz esquerda, clique em um ícone de marcador de thread ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker"), aponte para **alternar para**e, em seguida, clique no nome do thread para o qual você deseja alternar . O menu de atalho mostra apenas os threads nesse local específico.  
   
-     Se nenhum indicador for exibido, clique com o botão direito na janela **Threads** e verifique se **Mostrar Threads em Origem** está selecionado.  
+     Se nenhum marcadores de thread aparecerem, clique no **Threads** janela e verifique **Mostrar Threads na origem** está selecionado.  
   
-### Para alternar para um thread na barra de ferramentas do Local de Depuração  
+### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Para alternar para um thread na barra de ferramentas do Local de Depuração  
   
-1.  Na barra de ferramentas **Local de Depuração**, clique na caixa **Thread**.  
+1.  Sobre o **local do depurador** barra de ferramentas, clique no **Thread** lista.  
   
 2.  Na lista, clique no thread para o qual você deseja alternar.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)

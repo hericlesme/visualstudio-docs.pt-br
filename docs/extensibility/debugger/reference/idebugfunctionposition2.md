@@ -1,40 +1,24 @@
 ---
-title: IDebugFunctionPosition2 | Documentos do Microsoft
+title: IDebugFunctionPosition2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugFunctionPosition2
-helpviewer_keywords:
-- IDebugFunctionPosition2 interface
+f1_keywords: IDebugFunctionPosition2
+helpviewer_keywords: IDebugFunctionPosition2 interface
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7a06198d853596dec31d8ec2a5d8f298973c14c2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 3ae7a0dd442d8a48d6c69ecfd51b2fc17a2eb2fe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Essa interface representa uma posição abstrata de uma função em um documento de origem.  

@@ -1,44 +1,29 @@
 ---
-title: Fonte de recursos de controle de VSPackage | Documentos do Microsoft
+title: Fonte de recursos de controle de VSPackage | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- source control packages, features
+helpviewer_keywords: source control packages, features
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
-caps.latest.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7bf951915ffaf197c5be8366133a3e5d99549fc1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8204cd6fe59c87dd7ac2b6ca838d1c08b4ff25c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="source-control-vspackage-features"></a>Recursos de VSPackage de controle do código-fonte
-Esta seção descreve os vários recursos de controle de origem VSPackage. Descreve o registro e seleção de detalhes de tal um VSPackage e discute três dos recursos relacionados ao controle de origem principal: Manipulando eventos Editar consulta Salvar consulta (QEQS), substituição de glifo e interface do usuário personalizada (UI) para as funções de controle de origem.  
+# <a name="source-control-vspackage-features"></a>Recursos de VSPackage de controle de origem
+Esta seção descreve os vários recursos de controle de origem VSPackage. Descreve o registro e seleção de detalhes para tal um VSPackage e discute três dos recursos relacionados ao controle de origem principal: manipulação de eventos, substituição de glifo e interface de usuário personalizada (UI) para o controle de origem Editar consulta Salvar consulta (QEQS) funções.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Seleção e registro](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)  
+ [Registro e seleção](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)  
  Descreve os mecanismos de registro e seleção de pacote.  
   
  [Editar consulta salvar](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)  
@@ -48,8 +33,8 @@ Esta seção descreve os vários recursos de controle de origem VSPackage. Descr
  Descreve os níveis de controle de glifo e como implementá-los.  
   
  [Interface de usuário personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)  
- Descreve os elementos da interface do usuário especificado por um controle da fonte de VSPackage.  
+ Descreve os elementos de interface do usuário pode especificar um controle de origem VSPackage.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Criando um VSPackage de controle de origem](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Discute como criar um controle de origem VSPackage que não apenas fornece a funcionalidade de controle do código-fonte, mas pode ser usado para personalizar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] da interface do usuário do controle de origem.
+ [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ Discute como criar um controle de origem VSPackage que não só fornece a funcionalidade de controle de origem, mas pode ser usado para personalizar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] da interface do usuário do controle de origem.

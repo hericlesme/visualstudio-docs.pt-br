@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Sort Data in Worksheets | Microsoft Docs'
+title: 'Como: classificar os dados em planilhas programaticamente | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,59 +16,62 @@ helpviewer_keywords:
 - worksheets, sorting data
 - sorting data, in worksheets
 ms.assetid: 2fbc6e63-02ea-4624-8d6f-bed60e06c61e
-caps.latest.revision: 56
-author: kempb
-ms.author: kempb
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4ee2607b90964aad8fc298623ad5a6bae3617c42
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 211a357095290f8f8d608d01c093cd373c7525ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>How to: Programmatically Sort Data in Worksheets
-  You can sort data that is contained in worksheet ranges and lists at run time. The following code sorts a multi-column range named `Fruits` by the data in the first column, and then by the data in the second column.  
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Como classificar dados de forma programática em planilhas
+  Você pode classificar os dados contidos nas listas e intervalos de planilhas em tempo de execução. O código a seguir classifica um intervalo de várias coluna chamado `Fruits` os dados na primeira coluna e, em seguida, pelos dados na segunda coluna.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="sorting-data-in-a-document-level-customization"></a>Sorting Data in a Document-Level Customization  
+## <a name="sorting-data-in-a-document-level-customization"></a>Classificando dados em uma personalização no nível do documento  
   
-#### <a name="to-sort-data-in-a-namedrange-control"></a>To sort data in a NamedRange control  
+#### <a name="to-sort-data-in-a-namedrange-control"></a>Para classificar dados em um controle NamedRange  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> method of the <xref:Microsoft.Office.Tools.Excel.NamedRange> control. The following example requires a <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `Fruits` on a worksheet. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
+1.  Chamar o <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> método o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle. O exemplo a seguir exige um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `Fruits` em uma planilha. Esse código deve ser colocado em uma classe de folha, não o `ThisWorkbook` classe.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]  [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
+     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
   
- Place the following code in Sheet1.vb or Sheet1.cs to sort data in a <xref:Microsoft.Office.Tools.Excel.ListObject> control. The code assumes that you have a <xref:Microsoft.Office.Tools.Excel.ListObject> control named `fruitList` in a worksheet named `Sheet1`.  
+ Coloque o seguinte código em Sheet1.vb ou Sheet1.cs para classificar dados em um <xref:Microsoft.Office.Tools.Excel.ListObject> controle. O código presume que você tenha um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado `fruitList` em uma planilha denominada `Sheet1`.  
   
-#### <a name="to-sort-data-in-a-listobject-control"></a>To sort data in a ListObject control  
+#### <a name="to-sort-data-in-a-listobject-control"></a>Para classificar dados em um controle ListObject  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> method of the <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> property of the <xref:Microsoft.Office.Tools.Excel.ListObject> host control.  
+1.  Chamar o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método o <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> propriedade do <xref:Microsoft.Office.Tools.Excel.ListObject> controle de host.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]  [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]
+     [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]  
   
-## <a name="sorting-data-in-a-vsto-add-in"></a>Sorting Data in a VSTO Add-in  
+## <a name="sorting-data-in-a-vsto-add-in"></a>Classificando dados em um suplemento do VSTO  
   
-#### <a name="to-sort-data-in-a-native-range"></a>To sort data in a native range  
+#### <a name="to-sort-data-in-a-native-range"></a>Para classificar dados em um intervalo nativo  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> method of the native Excel <xref:Microsoft.Office.Interop.Excel.Range> control. The following example requires a native Excel control named `Fruits` on a worksheet.  
+1.  Chamar o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método do Excel nativo <xref:Microsoft.Office.Interop.Excel.Range> controle. O exemplo a seguir exige um controle nativo do Excel chamado `Fruits` em uma planilha.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#23)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#23)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#23)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#23)]  
   
-#### <a name="to-sort-data-in-a-listobject-control"></a>To sort data in a ListObject control  
+#### <a name="to-sort-data-in-a-listobject-control"></a>Para classificar dados em um controle ListObject  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> method of the <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> property of the native Excel <xref:Microsoft.Office.Interop.Excel.ListObject> control. The following example assumes that you have a native Excel <xref:Microsoft.Office.Interop.Excel.ListObject> control named `fruitList` in the active worksheet.  
+1.  Chamar o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método o <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> propriedade do Excel nativo <xref:Microsoft.Office.Interop.Excel.ListObject> controle. O exemplo a seguir supõe que você tenha um arquivo do Excel nativo <xref:Microsoft.Office.Interop.Excel.ListObject> controle chamado `fruitList` na planilha ativa.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#24)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#24)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Automatically Fill Ranges with Incrementally Changing Data](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [How to: Programmatically Refer to Worksheet Ranges in Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [How to: Programmatically Apply Styles to Ranges in Workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [ListObject Control](../vsto/listobject-control.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Trabalhando com planilhas](../vsto/working-with-worksheets.md)   
+ [Como: preencher intervalos programaticamente automaticamente com dados de alteração incremental](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Como: referência a intervalos de planilhas em código programaticamente](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Como: aplicar estilos a intervalos em pastas de trabalho programaticamente](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Controle NamedRange](../vsto/namedrange-control.md)   
+ [Controle ListObject](../vsto/listobject-control.md)   
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

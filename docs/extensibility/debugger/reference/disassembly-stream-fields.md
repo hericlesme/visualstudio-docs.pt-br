@@ -1,47 +1,31 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS | Documentos do Microsoft
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- DISASSEMBLY_STREAM_FIELDS
-helpviewer_keywords:
-- DISASSEMBLY_STREAM_FIELDS enumeration
+f1_keywords: DISASSEMBLY_STREAM_FIELDS
+helpviewer_keywords: DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2505b8d771218fa2ebe9a77b0eb3c92678a676d9
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d268b9056c53eb21ff9fb0e6ed408245880b55ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-Especifica quais informações devem ser recuperadas sobre um campo de desmontagem.  
+Especifica quais informações recuperar sobre um campo de desmontagem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
@@ -60,7 +44,7 @@ enum enum_DISASSEMBLY_STREAM_FIELDS {
 typedef DWORD DISASSEMBLY_STREAM_FIELDS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
@@ -121,7 +105,7 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 ## <a name="remarks"></a>Comentários  
  Passado como um parâmetro para o [leitura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método para indicar quais campos do [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estrutura devem ser inicializado.  
   
- Usado para o `dwFields` membro o `DisassemblyData` estrutura para indicar quais campos são usados e válida quando a estrutura é retornada.  
+ Usado para o `dwFields` membro o `DisassemblyData` estrutura para indicar quais campos são usados e válidos quando a estrutura é retornada.  
   
  Esses valores podem ser combinados com um bit a bit `OR`.  
   

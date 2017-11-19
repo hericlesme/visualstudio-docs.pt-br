@@ -1,34 +1,36 @@
 ---
-title: "Warning. Changes have been made to the Configure Behavior dialog box that have not been applied | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Aviso. Foram feitas alterações à caixa de diálogo Configurar o comportamento que não foram aplicadas | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: cb887a31855c7c31451b2f15c4da3c386a3fe0f4
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/09/2017
 ---
-# Warning. Changes have been made to the Configure Behavior dialog box that have not been applied
-Aviso. As alterações foram feitas à caixa de diálogo Configurar o comportamento que não foram aplicadas. Você deseja aplicar suas alterações?  
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas
+Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas. Você deseja aplicar as alterações?  
   
- O **Configurar comportamento** caixa de diálogo permite que você configure o comportamento de Insert, Update e Delete para todas as classes disponíveis. Esta mensagem aparece quando você seleciona um novo **classe** e **comportamento** combinação e a alteração anterior ainda não foi aplicado.  
+ O **configurar comportamento** caixa de diálogo permite que você configure o comportamento de Insert, Update e Delete para todas as classes disponíveis. Esta mensagem aparece quando você seleciona um novo **classe** e **comportamento** combinação e a alteração anterior ainda não foi aplicado.  
   
-### Para aplicar a alteração e continuar  
+### <a name="to-apply-the-change-and-continue"></a>Para aplicar a alteração e continuar  
   
 -   Clique em **Sim** para aplicar a alteração na **classe** e **comportamento**.  
   
-### Para cancelar a alteração anterior e continuar  
+### <a name="to-cancel-the-previous-change-and-continue"></a>Para cancelar a mudança anterior e continuar  
   
--   Clique em **não** para cancelar a mudança selecionado **classe** e **comportamento**.  
+-   Clique em **não** para cancelar a alteração selecionado **classe** e **comportamento**.  
   
-## Consulte também  
- [LINQ to SQL Tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões \(Object Relational Designer\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [Walkthrough: Creating LINQ to SQL Classes \(O\/R Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>Consulte também
+[Mensagens de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

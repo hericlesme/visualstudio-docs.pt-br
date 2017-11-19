@@ -1,40 +1,24 @@
 ---
-title: "Elemento FullClassName (extensão de Assistente de modelo do Visual Studio) | Documentos do Microsoft"
+title: "Elemento FullClassName (extensão de Assistente de modelo do Visual Studio) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
-helpviewer_keywords:
-- FullClassName element [Visual Studio project template]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
+helpviewer_keywords: FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ba650a36d2f2240406b1f69d021846fcdff7b63a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a94a6d95bee32da52d484bc4203433b092ef2b82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (Extensão do Assistente de Modelo do Visual Studio)
 O nome totalmente qualificado da classe que implementa o `IWizard` interface.  
@@ -54,7 +38,7 @@ O nome totalmente qualificado da classe que implementa o `IWizard` interface.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -106,5 +90,5 @@ O nome totalmente qualificado da classe que implementa o `IWizard` interface.
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e Item](../ide/creating-project-and-item-templates.md)   
- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
+ [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

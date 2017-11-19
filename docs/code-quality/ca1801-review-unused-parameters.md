@@ -1,11 +1,10 @@
 ---
-title: 'CA1801: Review unused parameters | Microsoft Docs'
+title: "CA1801: Revisar parâmetros não usados | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,73 +15,58 @@ helpviewer_keywords:
 - CA1801
 - ReviewUnusedParameters
 ms.assetid: 5d73545c-e153-4b7c-a7b2-be6bf5aca5be
-caps.latest.revision: 30
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3c640bad82bd7e84cafe1dcab69f565a9e6222c4
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "30"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1bb8c38d1436ca687664f92bfe0ba6db1ccf68ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: Review unused parameters
+# <a name="ca1801-review-unused-parameters"></a>CA1801: revisar parâmetros não usados
 |||  
 |-|-|  
-|TypeName|ReviewUnusedParameters|  
+|NomeDoTipo|ReviewUnusedParameters|  
 |CheckId|CA1801|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking - If the member is not visible outside the assembly, regardless of the change you make.<br /><br /> Non Breaking - If you change the member to use the parameter within its body.<br /><br /> Breaking - If you remove the parameter and it is visible outside the assembly.|  
+|Categoria|Microsoft.Usage|  
+|Alteração Significativa|Não separáveis - se o membro não é visível fora do assembly, independentemente da alteração feita.<br /><br /> Não separáveis - se você alterar o membro para usar o parâmetro em seu corpo.<br /><br /> Quebrar - se que você remova o parâmetro e é visível fora do assembly.|  
   
-## <a name="cause"></a>Cause  
- A method signature includes a parameter that is not used in the method body. This rule does not examine the following methods:  
+## <a name="cause"></a>Causa  
+ Uma assinatura de método inclui um parâmetro que não é usado no corpo do método. Esta regra examina os seguintes métodos:  
   
--   Methods referenced by a delegate.  
+-   Métodos referenciados por um representante.  
   
--   Methods used as event handlers.  
+-   Métodos usados como manipuladores de eventos.  
   
--   Methods declared with the `abstract` (`MustOverride` in Visual Basic) modifier.  
+-   Métodos declarados com o `abstract` (`MustOverride` no Visual Basic) modificador.  
   
--   Methods declared with the `virtual` (`Overridable` in Visual Basic) modifier.  
+-   Métodos declarados com o `virtual` (`Overridable` no Visual Basic) modificador.  
   
--   Methods declared with the `override` (`Overrides` in Visual Basic) modifier.  
+-   Métodos declarados com o `override` (`Overrides` no Visual Basic) modificador.  
   
--   Methods declared with the `extern` (`Declare` statement in Visual Basic) modifier.  
+-   Métodos declarados com o `extern` (`Declare` instrução no Visual Basic) modificador.  
   
-## <a name="rule-description"></a>Rule Description  
- Review parameters in non-virtual methods that are not used in the method body to make sure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Verifique os parâmetros em métodos não virtuais que não são usados no corpo do método para certificar-se de que nenhuma correção existe uma falha para acessá-los. Parâmetros não utilizados incorrem em custos de manutenção e desempenho.  
   
- Sometimes a violation of this rule can point to an implementation bug in the method. For example, the parameter should have been used in the method body. Suppress warnings of this rule if the parameter has to exist because of backward compatibility.  
+ Às vezes, uma violação desta regra pode apontar para um bug de implementação no método. Por exemplo, o parâmetro deve ter foi usado no corpo do método. Suprima avisos desta regra se o parâmetro precisar existir devido à compatibilidade com versões anteriores.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, remove the unused parameter (a breaking change) or use the parameter in the method body (a non-breaking change).  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, remova o parâmetro não utilizado (uma alteração significativa) ou use o parâmetro no corpo do método (uma alteração sem quebra).  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule for previously shipped code for which the fix would be a breaking change.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso dessa regra para o código fornecido anteriormente para os quais a correção seria uma alteração significativa.  
   
-## <a name="example"></a>Example  
- The following example shows two methods. One method violates the rule and the other method satisfies the rule.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra dois métodos. Um método viola a regra e o outro método satisfaz a regra.  
   
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1811: Avoid uncalled private code](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812: Avoid uninstantiated internal classes](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: Remove unused locals](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)

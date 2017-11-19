@@ -1,54 +1,38 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor | Documentos do Microsoft
+title: IDebugFunctionObject::CreateObjectNoConstructor | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugFunctionObject::CreateObjectNoConstructor
-helpviewer_keywords:
-- IDebugFunctionObject::CreateObjectNoConstructor method
+f1_keywords: IDebugFunctionObject::CreateObjectNoConstructor
+helpviewer_keywords: IDebugFunctionObject::CreateObjectNoConstructor method
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f3d891e1760546b29ee51d2acfe566f6da9bc717
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 52ba30532cb1a673b61e44874e3938ca1ee3ad06
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 Cria um objeto com nenhum construtor.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT CreateObjectNoConstructor(   
    IDebugField*   pClassObject,  
    IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateObjectNoConstructor(  
    IDebugField      pClassField,   
    out IDebugObject ppObject  
@@ -66,7 +50,7 @@ int CreateObjectNoConstructor(
  Se for bem-sucedido, retornará S_OK; Caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Chame esse método para criar um objeto que representa uma instância de uma estrutura ou tipo complexo (que não exigem um construtor) que é um parâmetro para a função que é representado pelo [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
+ Chame esse método para criar um objeto que representa uma instância de uma estrutura ou um tipo complexo (que não requer um construtor) que é um parâmetro para a função que é representado pelo [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
  Se o parâmetro de objeto requer um construtor, chame o [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) método.  
   

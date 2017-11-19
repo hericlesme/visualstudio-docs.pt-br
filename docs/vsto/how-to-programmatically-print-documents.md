@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Print Documents | Microsoft Docs'
+title: 'Como: imprimir documentos programaticamente | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,51 +14,54 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], printing documents
 - documents [Office development in Visual Studio], printing
 ms.assetid: 99285d98-1bb7-4ccb-83d9-e917b0a9ea42
-caps.latest.revision: 53
-author: kempb
-ms.author: kempb
+caps.latest.revision: "53"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: bc4d8dd6116d90e0b7da1b0ac29874a61a90c496
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 9e967ae840486126f5f5fb457e2b1ef8eda57881
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-print-documents"></a>How to: Programmatically Print Documents
-  You can print an entire Microsoft Office Word document, or part of a document, to your default printer.  
+# <a name="how-to-programmatically-print-documents"></a>Como imprimir documentos programaticamente
+  Você pode imprimir todo um documento do Microsoft Office Word ou parte de um documento, para a impressora padrão.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="printing-a-document-that-is-part-of-a-document-level-customization"></a>Printing a Document That Is Part of a Document-Level Customization  
+## <a name="printing-a-document-that-is-part-of-a-document-level-customization"></a>Imprimir um documento que faz parte de uma personalização no nível do documento  
   
-#### <a name="to-print-the-entire-document"></a>To print the entire document  
+#### <a name="to-print-the-entire-document"></a>Para imprimir o documento inteiro  
   
-1.  Call the <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> method of the `ThisDocument` class in your project to print the entire document. To use this example, run the code from the `ThisDocument` class.  
+1.  Chamar o <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> método o `ThisDocument` classe em seu projeto para imprimir o documento inteiro. Para usar esse exemplo, execute o código na classe `ThisDocument`.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#11)]  [!code-csharp[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#11)]  
+     [!code-vb[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#11)]
+     [!code-csharp[Trin_VstcoreWordAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#11)]  
   
-#### <a name="to-print-the-current-page-of-the-document"></a>To print the current page of the document  
+#### <a name="to-print-the-current-page-of-the-document"></a>Para imprimir a página atual do documento  
   
-1.  Call the <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> method of the `ThisDocument` class in your project and specify that one copy of the current page be printed. To use this example, run the code from the `ThisDocument` class.  
+1.  Chamar o <xref:Microsoft.Office.Tools.Word.Document.PrintOut%2A> método o `ThisDocument` classe em seu projeto e especifique que uma cópia da página atual seja impresso. Para usar esse exemplo, execute o código na classe `ThisDocument`.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#12)]  [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]  
+     [!code-vb[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#12)]
+     [!code-csharp[Trin_VstcoreWordAutomation#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#12)]  
   
-## <a name="printing-a-document-by-using-an-vsto-add-in"></a>Printing a Document By Using an VSTO Add-in  
+## <a name="printing-a-document-by-using-an-vsto-add-in"></a>Imprimir um documento usando um suplemento do VSTO  
   
-#### <a name="to-print-an-entire-document"></a>To print an entire document  
+#### <a name="to-print-an-entire-document"></a>Para imprimir um documento inteiro  
   
-1.  Call the <xref:Microsoft.Office.Interop.Word._Document.PrintOut%2A> method of the <xref:Microsoft.Office.Interop.Word.Document> object that you want to print. The following code example prints the active document. To use this example, run the code from the `ThisAddIn` class in your project.  
+1.  Chamar o <xref:Microsoft.Office.Interop.Word._Document.PrintOut%2A> método o <xref:Microsoft.Office.Interop.Word.Document> objeto que você deseja imprimir. O exemplo de código a seguir imprime o documento ativo. Para usar este exemplo, execute o código do `ThisAddIn` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#11)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#11)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#11)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#11](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#11)]  
   
-#### <a name="to-print-the-current-page-of-a-document"></a>To print the current page of a document  
+#### <a name="to-print-the-current-page-of-a-document"></a>Para imprimir a página atual de um documento  
   
-1.  Call the <xref:Microsoft.Office.Interop.Word._Document.PrintOut%2A> method of the <xref:Microsoft.Office.Interop.Word.Document> object that you want to print, and specify that one copy of the current page be printed. The following code example prints the active document. To use this example, run the code from the `ThisAddIn` class in your project.  
+1.  Chamar o <xref:Microsoft.Office.Interop.Word._Document.PrintOut%2A> método o <xref:Microsoft.Office.Interop.Word.Document> objeto que você deseja imprimir e especificar que uma cópia da página atual seja impresso. O exemplo de código a seguir imprime o documento ativo. Para usar este exemplo, execute o código do `ThisAddIn` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#12)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#12](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#12)]  
   
-## <a name="see-also"></a>See Also  
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

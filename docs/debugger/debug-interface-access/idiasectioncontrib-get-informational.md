@@ -1,47 +1,45 @@
 ---
-title: "IDiaSectionContrib::get_informational | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSectionContrib::get_informational"
+title: ': Get_informational | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_informational method
 ms.assetid: 5351e89f-7db1-4f8e-9e57-2dd1c74002e0
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a6f3c664b670625b36f25d7ff582afccb7f155c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_informational
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
 Recupera um sinalizador que indica se uma seção contém comentários ou informações semelhantes.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```C++  
 HRESULT get_informational(  
-   BOOL* pRetVal  
+   BOOL* pRetVal  
 };  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna `TRUE` se a seção contém comentários ou outras informações; Caso contrário, retornará `FALSE`.  
+ [out] Retorna `TRUE` se a seção contém comentários ou outras informações; caso contrário, retornará `FALSE`.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não há suporte para esta propriedade.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## Comentários  
- Normalmente, a seção .directive contém informações.  
+## <a name="remarks"></a>Comentários  
+ Normalmente, a seção de .directive contém informações.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

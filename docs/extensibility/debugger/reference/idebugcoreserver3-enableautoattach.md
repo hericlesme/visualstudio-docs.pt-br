@@ -1,47 +1,31 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Documentos do Microsoft
+title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCoreServer3::EnableAutoAttach
-helpviewer_keywords:
-- IDebugCoreServer3::EnableAutoAttach
+f1_keywords: IDebugCoreServer3::EnableAutoAttach
+helpviewer_keywords: IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1401f15584f270a859e8bded192b3a6af54e7040
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 23c7faed077b8af442d81593808f9360995ba246
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Permite anexar automática para os mecanismos de depuração especificado.  
+Habilita a anexação automática para os mecanismos de depuração especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT EnableAutoAttach(  
    GUID*     rgguidSpecificEngines,  
    DWORD     celtSpecificEngines,  
@@ -50,7 +34,7 @@ HRESULT EnableAutoAttach(
 );  
 ```  
   
-```c#  
+```csharp  
 int EnableAutoAttach(  
    Guid[]     rgguidSpecificEngines,  
    uint       celtSpecificEngines,  
@@ -73,10 +57,10 @@ int EnableAutoAttach(
  [out] ID da sessão que foi anexado automaticamente.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna o código de erro. Um código de erro é `E_AUTO_ATTACH_NOT_REGISTERED`, que indica que a fábrica de classes auto-attach não foi registrada.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna o código de erro. Um código de erro é `E_AUTO_ATTACH_NOT_REGISTERED`, que indica que a fábrica de classe auto-attach não foi registrada.  
   
 ## <a name="remarks"></a>Comentários  
- Quando um programa associado a URL especificada é iniciado, os mecanismos de depuração especificado são iniciados automaticamente e anexados.  
+ Quando um programa associado a URL especificada é iniciado, os mecanismos de depuração especificado são automaticamente iniciados e anexados.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

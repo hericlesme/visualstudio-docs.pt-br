@@ -1,11 +1,10 @@
 ---
-title: "Enumerador de código de Status do arquivo | Documentos do Microsoft"
+title: "Enumerador de código de Status do arquivo | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,31 +13,18 @@ helpviewer_keywords:
 - SccStatus enumerator
 - file status code enumerator
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
-caps.latest.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8ae9e713ee612c470116f47b6d27c5a58612ddc2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 25320e87bce135d442bfc25499f3c503fa529ff0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de Status do arquivo
-O `SccStatus` enumerador contém valores constantes nomeadas que especificam o estado de um arquivo no sistema de controle de origem. Essa enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e `POPLISTFUNC` função de retorno de chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).  
+O `SccStatus` enumerador contém valores constantes nomeados que especificam o estado de um arquivo no sistema de controle de origem. Essa enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e `POPLISTFUNC` função de retorno de chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -70,10 +56,10 @@ enum SccStatus {
  Não foi possível obter o status; Não confie nele.  
   
  SCC_STATUS_NOTCONTROLLED  
- O arquivo não está no controle do código-fonte.  
+ Arquivo não está sob controle de origem.  
   
  SCC_STATUS_CONTROLLED  
- Arquivo está sob controle de origem.  
+ Arquivo está sob controle do código-fonte.  
   
  SCC_STATUS_CHECKEDOUT  
  Check-out pelo usuário atual no disco local.  
@@ -88,7 +74,7 @@ enum SccStatus {
  Arquivo de check-out por mais de um usuário.  
   
  SCC_STATUS_OUTOFDATE  
- O arquivo não é o mais recente.  
+ O arquivo não é mais recente.  
   
  SCC_STATUS_DELETED  
  Arquivo foi excluído do projeto.  
@@ -97,22 +83,22 @@ enum SccStatus {
  Arquivo está bloqueado; Não há versões mais permitidos.  
   
  SCC_STATUS_MERGED  
- Arquivo foi mesclado, mas ainda não fixo/verificado.  
+ Arquivo foi mesclado mas fixo/verificado ainda não.  
   
  SCC_STATUS_SHARED  
  Arquivo é compartilhado entre projetos.  
   
  SCC_STATUS_PINNED  
- Arquivo compartilhado para uma versão explícita.  
+ Arquivo é compartilhado para uma versão explícita.  
   
  SCC_STATUS_MODIFIED  
- Arquivo foi modificado/dividida/violadas.  
+ Arquivo foi modificado/dividido/violadas.  
   
  SCC_STATUS_OUTBYUSER  
  Arquivo de check-out pelo usuário atual.  
   
  SCC_STATUS_NOMERGE  
- Arquivo nunca pode ser mesclado com e não precisa ser salvo antes de um GET.  
+ Arquivo não pode ser mesclado com e não precisa ser salvo antes de um GET.  
   
  SCC_STATUS_RESERVED_1  
  Reservado para uso interno.  

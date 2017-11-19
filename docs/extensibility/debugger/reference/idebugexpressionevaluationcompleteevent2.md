@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExpressionEvaluationCompleteEvent2
-helpviewer_keywords:
-- IDebugExpressionEvaluationCompleteEvent2
+f1_keywords: IDebugExpressionEvaluationCompleteEvent2
+helpviewer_keywords: IDebugExpressionEvaluationCompleteEvent2
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 67f767a04b91e4d5fc1139c3dc7eb519f440b2c7
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d161d8adcdc7a089ff8f57f079c31cb024d13ea7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando a avaliação de expressão assíncrona for concluída.  
@@ -62,7 +46,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 ## <a name="remarks"></a>Comentários  
  O DE deve enviar esse evento, se a avaliação foi bem-sucedida ou não.  
   
- Se a avaliação não foi bem-sucedida, o `DEBUG_PROPINFO_VALUE` e `DEBUG_PROPINFO_ATTRIB` sinalizadores não serão definidos [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estrutura que é retornada por [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (o [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto é criado por DE e retornado no `IDebugExpressionEvaluationCompleteEvent2` evento se a avaliação falhou).  
+ Se a avaliação não foi bem-sucedida, o `DEBUG_PROPINFO_VALUE` e `DEBUG_PROPINFO_ATTRIB` sinalizadores não serão definidos [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estrutura que é retornada por [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (o [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) criado pelo DE e retornado no objeto de `IDebugExpressionEvaluationCompleteEvent2` evento se a avaliação falhou).  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

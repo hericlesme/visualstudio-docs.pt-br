@@ -1,40 +1,24 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Documentos do Microsoft
+title: IDebugEngine3::SetAllExceptions | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEngine3::SetAllExceptions
-helpviewer_keywords:
-- IDebugEngine3::SetAllExceptions
+f1_keywords: IDebugEngine3::SetAllExceptions
+helpviewer_keywords: IDebugEngine3::SetAllExceptions
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 714152419bb8adf6074eac698805dfc106927d2c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 33801c7228e9f4b43c76ef3f29f26631bdad5edf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 Esse método define o estado de todas as exceções pendentes.  
@@ -47,7 +31,7 @@ HRESULT SetAllExceptions(
 );  
 ```  
   
-```c#  
+```csharp  
 int SetAllExceptions(  
    enum_EXCEPTION_STATE dwState  
 );  
@@ -55,10 +39,10 @@ int SetAllExceptions(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwState`  
- [in] Um do [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) valores.  
+ [in] Uma da [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) valores.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retornará o código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   

@@ -1,12 +1,10 @@
 ---
-title: Extending the SharePoint Connections Node in Server Explorer | Microsoft Docs
+title: "Estendendo o nó de conexões do SharePoint no Gerenciador de servidores | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,68 +15,68 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 ms.assetid: 8bfa5950-0ef4-4417-9538-cc8a5a1c35e2
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8c4c5bb5d72f46f079fa2a2cd8e415b4cd321c41
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 3cf332197227e2055b322bce3658cde66dc48f90
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Extending the SharePoint Connections Node in Server Explorer
-  In Visual Studio, you can connect to local SharePoint sites on the development computer by using the **SharePoint Connections** node in the**Server Explorer** window. This node displays many of the components of local SharePoint sites in a hierarchical tree view. For example, you can view the lists, document libraries, and content types on local sites. For more information about using **Server Explorer** to connect to local SharePoint sites, see [Browsing SharePoint Connections Using Server Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
+# <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Estendendo o nó Conexões do SharePoint no Gerenciador de Servidores
+  No Visual Studio, você pode conectar-se a sites locais do SharePoint no computador de desenvolvimento usando o **conexões do SharePoint** nó o**Server Explorer** janela. Esse nó exibe vários componentes de sites locais do SharePoint em uma exibição de árvore hierárquica. Por exemplo, você pode exibir as listas, bibliotecas de documentos e tipos de conteúdo em sites locais. Para obter mais informações sobre como usar **Server Explorer** para se conectar a sites locais do SharePoint, consulte [pesquisa do SharePoint conexões usando o Server Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
   
- You can extend the **SharePoint Connections** node by creating extensions for existing nodes, or by creating a custom node type and adding it to the hierarchy of nodes.  
+ Você pode estender o **conexões do SharePoint** nó com a criação de extensões para nós existentes ou criando um tipo de nó personalizados e adicioná-lo para a hierarquia de nós.  
   
-## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Tasks for Extending the SharePoint Connections Node  
- To extend an existing node, create a Visual Studio extension that implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface. When you extend a node, you can add functionality to the node such as your own shortcut menu items or custom properties. For more information, see [How to: Extend a SharePoint Node in Server Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Tarefas para expandir o nó de conexões do SharePoint  
+ Para estender um nó existente, criar uma extensão do Visual Studio que implementa o <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface. Quando você estende um nó, você pode adicionar funcionalidade para o nó, como seus próprios itens de menu de atalho ou propriedades personalizadas. Para obter mais informações, consulte [como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
- To create a custom node type, create a Visual Studio extension that implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface. Create a custom node if you want to display components of SharePoint sites that are not displayed in **Server Explorer** by default. For example, **Server Explorer** does not display the Web Part gallery of a SharePoint site by default, but you can add a custom node that does this. For more information, see [How to: Add a Custom SharePoint Node to Server Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) and [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ Para criar um tipo de nó personalizados, criar uma extensão do Visual Studio que implementa o <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface. Criar um nó de personalizado se você quiser exibir os componentes de sites do SharePoint que não são exibidos no **Server Explorer** por padrão. Por exemplo, **Server Explorer** não exibir a Galeria de Web Part de um site do SharePoint por padrão, mas você pode adicionar um nó personalizado que faz isso. Para obter mais informações, consulte [como: adicionar um nó do SharePoint personalizado para o Gerenciador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) e [passo a passo: estendendo o Gerenciador de servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="adding-custom-properties-to-nodes"></a>Adding Custom Properties to Nodes  
- When you extend a node or create a custom node type, you can add custom properties to the node. The properties appear in the **Properties** window when the node is selected.  
+## <a name="adding-custom-properties-to-nodes"></a>Adicionando propriedades personalizadas para nós  
+ Quando você estende um nó ou cria um tipo de nó personalizados, você pode adicionar propriedades personalizadas para o nó. As propriedades aparecem no **propriedades** janela quando o nó é selecionado.  
   
- There are two types of custom properties you can add to a node:  
+ Há dois tipos de propriedades personalizadas, que você pode adicionar a um nó:  
   
--   Properties that display a set of read-only data from the SharePoint site. The data describes the SharePoint component that the node represents. For a walkthrough that demonstrates how to do this, see [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+-   Propriedades que exibem um conjunto de dados somente leitura do site do SharePoint. Os dados descrevem o componente do SharePoint que o nó representa. Para uma explicação passo a passo que demonstra como fazer isso, consulte [passo a passo: estendendo o Gerenciador de servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
--   Properties that display custom read/write data. For a code example that demonstrates how to do this, see [How to: Extend a SharePoint Node in Server Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+-   Propriedades que exibem dados de leitura/gravação personalizado. Para obter um exemplo de código que demonstra como fazer isso, consulte [como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="getting-data-for-built-in-nodes"></a>Getting Data for Built-In Nodes  
- All of the built-in nodes provided by Visual Studio include some data about the SharePoint component that they represent. For example, a node that represents a list on the SharePoint site provides some data about the list, such as the title and the URL of the default view for the list.  
+## <a name="getting-data-for-built-in-nodes"></a>Obtendo dados para os nós internos  
+ Todos os nós internos fornecidos pelo Visual Studio incluem alguns dados sobre o componente do SharePoint que eles representam. Por exemplo, um nó que representa uma lista no site do SharePoint fornece alguns dados sobre a lista, como o título e a URL da exibição padrão da lista.  
   
- To access this data, retrieve a data object from the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> object that represents the node you are interested in. The type of the data object depends on the type of the node.  
+ Para acessar esses dados, recuperar um objeto de dados do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriedade o <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objeto que representa o nó que você está interessado. O tipo do objeto de dados depende do tipo do nó.  
   
- The following code example demonstrates how to get the data object for a list node. To see this example in the context of a larger example, see [How to: Get Data for a Built-In SharePoint Node in Server Explorer](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md).  
+ O exemplo de código a seguir demonstra como obter o objeto de dados para uma lista de nós. Para ver esse exemplo no contexto de um exemplo maior, consulte [como: obter dados para um nó SharePoint interno no Gerenciador de servidores](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md).  
   
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#11)] [!code-csharp[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#11)]  
+ [!code-vb[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#11)]
+ [!code-csharp[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#11)]  
   
- The following table lists the data object types for each built-in node type.  
+ A tabela a seguir lista os tipos de objeto de dados para cada tipo de nó interno.  
   
-|Node type|Data object type|  
+|Tipo de nó|Tipo de objeto de dados|  
 |---------------|----------------------|  
-|SharePoint site node|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|  
-|Content type|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|  
-|Feature|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|  
-|Field|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|  
-|List|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|  
-|List template|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|  
-|List view (Microsoft.SharePoint.SPView)|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListViewNodeInfo>|  
-|Workflow association|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowAssociationNodeInfo>|  
-|Workflow template|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowTemplateNodeInfo>|  
+|Nó do site do SharePoint|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|  
+|Tipo de conteúdo|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|  
+|Recurso|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|  
+|Campo|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|  
+|Lista|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|  
+|Modelo de lista|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|  
+|Modo de exibição de lista (Microsoft.SharePoint.SPView)|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListViewNodeInfo>|  
+|Associação de fluxo de trabalho|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowAssociationNodeInfo>|  
+|Modelo de fluxo de trabalho|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowTemplateNodeInfo>|  
   
- For more information about using the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property, see [Associating Custom Data with SharePoint Tools Extensions](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
+ Para obter mais informações sobre como usar o <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriedade, consulte [associando dados personalizados com extensões de ferramentas do SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [How to: Extend a SharePoint Node in Server Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [How to: Add a Custom SharePoint Node to Server Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
- [How to: Get Data for a Built-In SharePoint Node in Server Explorer](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)   
- [Associating Custom Data with SharePoint Tools Extensions](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
- [Browsing SharePoint Connections Using Server Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
- [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
+## <a name="see-also"></a>Consulte também  
+ [Passo a passo: Estendendo o Gerenciador de servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Como: adicionar um nó do SharePoint personalizado para o Gerenciador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
+ [Como: obter dados para um nó SharePoint interno no Gerenciador de servidores](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)   
+ [Associando dados personalizados a extensões de ferramentas do SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
+ [Pesquisa de conexões do SharePoint usando o Gerenciador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
+ [Estendendo as Ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
   
   

@@ -1,46 +1,32 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Documentos do Microsoft
+title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b3946a85e171ee2b6ce4696aceac922f62351844
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: eea91e5898296c9f315b83ea85dee8a91cc52010
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Dado de símbolos de depuração de cargas de **ICorDebugModule** objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbolsWithCorModule(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -52,7 +38,7 @@ HRESULT LoadSymbolsWithCorModule(
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbolsWithCorModule(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -78,21 +64,21 @@ int LoadSymbolsWithCorModule(
  [in] Objeto que contém os metadados de símbolo de depuração.  
   
  `pUnkCorDebugModule`  
- [in] Objeto que implementa o [ICorDebugModule Interface](ICorDebugModule%20Interface.xml).  
+ [in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
  [in] Nome do módulo.  
   
  `bstrSymSearchPath`  
- [in] Caminho para procurar o arquivo de símbolo.  
+ [in] Caminho para pesquisar o arquivo de símbolo.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto expõe o [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe o [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

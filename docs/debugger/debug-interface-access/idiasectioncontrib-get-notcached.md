@@ -1,44 +1,42 @@
 ---
-title: "IDiaSectionContrib::get_notCached | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSectionContrib::get_notCached"
+title: ': Get_notcached | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_notCached method
 ms.assetid: 5408ea53-f64c-431e-9f62-62819026b038
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ff988df644afd95a7b1596ff35b1579df79e86d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_notCached
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um sinalizador que indica se a seção não pode ser armazenado em cache.  
+# <a name="idiasectioncontribgetnotcached"></a>IDiaSectionContrib::get_notCached
+Recupera um sinalizador que indica se a seção não pode ser armazenados em cache.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_notCached (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_notCached (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna `TRUE` se a seção não pode ser armazenada em cache; Caso contrário, retornará `FALSE`.  
+ [out] Retorna `TRUE` se a seção não pode ser armazenado em cache; caso contrário, retornará `FALSE`.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não há suporte para esta propriedade.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

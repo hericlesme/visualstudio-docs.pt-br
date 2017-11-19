@@ -1,5 +1,5 @@
 ---
-title: "Referência de esquema de modelo do Visual Studio manifesto | Documentos do Microsoft"
+title: "Referência de esquema de manifesto do modelo do Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,36 +7,23 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-caps.latest.revision: 3
+caps.latest.revision: "3"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 512014c5070e4314ad2b7d0e8c5c404c43f32cd9
-ms.openlocfilehash: 0f4abf286dc8b1cf00e47468ddaa4831747a059d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f714120c6f5dced4760bb14cad1e53a794030a19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referência de esquema do manifesto de modelo do Visual Studio
-Esse esquema descreve o formato dos arquivos de manifesto (.vstman) de modelo do Visual Studio gerado para os modelos de projeto ou item do Visual Studio e descreve o local e outras informações relevantes sobre o modelo.  
+Esse esquema descreve o formato dos arquivos de manifesto (.vstman) de modelo de Visual Studio gerados para os modelos de projeto ou item do Visual Studio e descreve o local e outras informações relevantes sobre o modelo.  
   
- : Porque há diretórios de modelos de projeto e de item separado, um manifesto nunca deve ter uma combinação de modelos de item e projeto.  
+ : Porque há item separado e diretórios do modelo de projeto, um manifesto nunca deve ter uma mistura de modelos de projeto e item.  
   
 > [!IMPORTANT]
->  Esse manifesto está disponível no Visual Studio 2017.  
+>  Esse manifesto está disponível a partir do Visual Studio de 2017.  
   
 ## <a name="vstemplatemanifest-element"></a>Elemento VSTemplateManifest  
  O elemento raiz do manifesto.  
@@ -54,17 +41,17 @@ Esse esquema descreve o formato dos arquivos de manifesto (.vstman) de modelo do
 -   **VSTemplateDir** opcional.  
   
 ### <a name="parent-element"></a>Elementos pai  
- Nenhum.  
+ nenhuma.  
   
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer  
- O contêiner do modelo de manifesto elementos. Um manifesto tem um contêiner de modelo para cada modelo define.  
+ O contêiner do modelo de manifesto elementos. Um manifesto tem um contêiner de modelo para cada modelo que ela define.  
   
 ### <a name="attributes"></a>Atributos  
  **VSTemplateType** : um valor de cadeia de caracteres que especifica o tipo do modelo (`"Project"`, `"Item"`, ou `"ProjectGroup"`). Necessária  
   
 ### <a name="child-elements"></a>Elementos filho  
   
--   **RelativePathOnDisk**: O caminho relativo do arquivo de modelo no disco. Esse local também define o posicionamento do modelo na árvore do modelo mostrado no **novo projeto** ou **Novo Item** caixa de diálogo. Para modelos implantados como um diretório e os arquivos individuais, esse caminho refere-se para o diretório que contém os arquivos de modelo. Para modelos implantados como um arquivo. zip, esse caminho deve ser o caminho para o arquivo. zip.  
+-   **RelativePathOnDisk**: O caminho relativo do arquivo de modelo no disco. Esse local também define o posicionamento do modelo na árvore de modelo mostrada o **novo projeto** ou **Novo Item** caixa de diálogo. Para modelos implantados como um diretório e arquivos individuais, esse caminho refere-se para o diretório que contém os arquivos de modelo. Para modelos implantados como um arquivo. zip, esse caminho deve ser o caminho para o arquivo. zip.  
   
 -   **VSTemplateHeader** : um [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento que descreve o cabeçalho.  
   
@@ -74,26 +61,26 @@ Esse esquema descreve o formato dos arquivos de manifesto (.vstman) de modelo do
 ## <a name="vstemplatedir"></a>VSTemplateDir  
  Descreve o diretório onde o modelo está localizado. Um manifesto pode conter vários **VSTemplateDir** entradas para fornecer o nome localizado e ordem de classificação diretórios para controlar sua aparência na árvore de categoria do modelo.  
   
- Devido a seu design, **VSTemplateDir** entradas devem ser exibidas somente em manifestos de localidade não especificados.  
+ Devido a sua criação, **VSTemplateDir** entradas devem ser exibidas apenas em manifestos de localidade não especificados.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
--   **RelativePath**: O caminho do modelo. Pode haver apenas uma entrada por caminho, portanto vencerá primeiro para todos os manifestos.  
+-   **RelativePath**: O caminho do modelo. Pode haver apenas uma entrada por caminho, para o primeiro deles será a vencedora para todos os manifestos.  
   
 -   **LocalizedName**: um **NameDescriptionIcon** elemento que especifica o nome localizado. Opcional.  
   
--   **Ordem de classificação** : uma cadeia de caracteres que especifica a ordem de classificação. Opcional.  
+-   **SortOrder** : uma cadeia de caracteres que especifica a ordem de classificação. Opcional.  
   
--   **ParentFolderOverrideName**: O nome substituído da pasta pai. Opcional. Este elemento tem um **nome** atributo, que é um valor de cadeia de caracteres que especifica o nome.  
+-   **ParentFolderOverrideName**: O nome de substituição da pasta pai. Opcional. Este elemento tem um **nome** atributo, que é um valor de cadeia de caracteres que especifica o nome.  
   
 ### <a name="parent-element"></a>Elementos pai  
  **VSTemplateManifest**  
   
 ## <a name="namedescriptionicon"></a>NameDescriptionIcon  
- Especifica o nome e a descrição, possivelmente para modelos localizados. Consulte **LocalizedName** acima.  
+ Especifica o nome e descrição, possivelmente para modelos localizados. Consulte **LocalizedName** acima.  
   
 ### <a name="attributes"></a>Atributos  
   
@@ -102,7 +89,7 @@ Esse esquema descreve o formato dos arquivos de manifesto (.vstman) de modelo do
 -   **ID**: um valor de cadeia de caracteres que especifica a ID. Opcional.  
   
 ### <a name="child-elements"></a>Elementos filho  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="parent-element"></a>Elementos pai  
  **LocalizedName**  
@@ -134,7 +121,7 @@ Esse esquema descreve o formato dos arquivos de manifesto (.vstman) de modelo do
   
 ```  
   
- A seguir está um exemplo de um arquivo de .vstman de modelo de item.  
+ Este é um exemplo de um arquivo de .vstman de modelo de item.  
   
 ```  
 VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  

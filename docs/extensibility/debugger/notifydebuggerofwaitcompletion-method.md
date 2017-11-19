@@ -1,45 +1,30 @@
 ---
-title: "Método NotifyDebuggerOfWaitCompletion | Documentos do Microsoft"
+title: "Método NotifyDebuggerOfWaitCompletion | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
+helpviewer_keywords: NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 819c4166e61c4539e4a8962ede19351c8685aee6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5bfd605665627bcc9269f9225acb7d2e12418ab4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Método NotifyDebuggerOfWaitCompletion
-Método de espaço reservado usado como um destino de ponto de interrupção pelo depurador. Esse método não deve ser embutida ou otimizados.  
+Método de espaço reservado usado como um destino de ponto de interrupção pelo depurador. Esse método não deve ser embutida ou otimizado.  
   
- **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName></xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (em mscorlib.dll)  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -53,4 +38,4 @@ private void NotifyDebuggerOfWaitCompletion()
 ## <a name="requirements"></a>Requisitos  
   
 ## <a name="see-also"></a>Consulte também  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

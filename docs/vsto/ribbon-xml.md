@@ -1,16 +1,13 @@
 ---
-title: Ribbon XML | Microsoft Docs
+title: "XML da faixa de opções | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VSTO.Ribbon.RibbonXMLItem
+f1_keywords: VSTO.Ribbon.RibbonXMLItem
 dev_langs:
 - VB
 - CSharp
@@ -26,80 +23,81 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
 ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6b0eb5783aa5a58a1292f52bb50cb765673deddb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ribbon-xml"></a>Ribbon XML
-  The Ribbon (XML) item enables you to customize a Ribbon by using XML. Use the Ribbon (XML) item if you want to customize the Ribbon in a way that is not supported by the Ribbon (Visual Designer) item. For a comparison of what you can do with each item, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+# <a name="ribbon-xml"></a>XML da faixa de opções
+  O item da faixa de opções (XML) permite que você personalize uma faixa de opções usando XML. Se você quiser personalizar a faixa de opções de forma que não é suportada pelo item da faixa de opções (Visual Designer), use o item de faixa de opções (XML). Para obter uma comparação de que você pode fazer com cada item, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="adding-a-ribbon-xml-item-to-a-project"></a>Adding a Ribbon (XML) Item to a Project  
- You can add a **Ribbon (XML)** item to any Office project from the **Add New Item** dialog box. Visual Studio automatically adds the following files to your project:  
+## <a name="adding-a-ribbon-xml-item-to-a-project"></a>Adicionar um Item de faixa de opções (XML) a um projeto  
+ Você pode adicionar uma **da faixa de opções (XML)** item a qualquer projeto do Office do **Adicionar Novo Item** caixa de diálogo. O Visual Studio adiciona automaticamente os arquivos a seguir ao seu projeto:  
   
--   A Ribbon XML file. This file defines the Ribbon user interface (UI). Use this file to add UI elements such as tabs, groups, and controls. For details, see [Ribbon XML File Reference](#RibbonDescriptorFile) later in this topic.  
+-   Um arquivo XML da faixa de opções. Esse arquivo define a interface do usuário da faixa de opções (IU). Use esse arquivo para adicionar elementos de interface do usuário, como guias, grupos e controles. Para obter detalhes, consulte [referência do arquivo XML da faixa de opções](#RibbonDescriptorFile) mais adiante neste tópico.  
   
--   A Ribbon code file. This file contains the *Ribbon class*. This class has the name that you specified for the **Ribbon (XML)** item in the **Add New Item** dialog box. Microsoft Office applications use an instance of this class to load the custom Ribbon. For details, see [Ribbon Class Reference](#RibbonExtensionClass) later in this topic.  
+-   Um arquivo de código da faixa de opções. Este arquivo contém o *faixa classe*. Essa classe tem o nome que você especificou para o **da faixa de opções (XML)** item o **Adicionar Novo Item** caixa de diálogo. Aplicativos do Microsoft Office usam uma instância dessa classe para carregar a faixa de opções personalizada. Para obter detalhes, consulte [referência de classe da faixa de opções](#RibbonExtensionClass) mais adiante neste tópico.  
   
- By default, these files add a custom group to the **Add-Ins** tab in the Ribbon.  
+ Por padrão, esses arquivos adicionar um grupo personalizado para o **Add-Ins** guia na faixa de opções.  
   
-## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>Displaying the Custom Ribbon in a Microsoft Office Application  
- After you add a **Ribbon (XML)** item to your project, you must add code to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
+## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>Exibindo a faixa de opções personalizada em um aplicativo do Microsoft Office  
+ Depois de adicionar um **da faixa de opções (XML)** item ao seu projeto, você deve adicionar o código para o **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** classe que substitui o método CreateRibbonExtensibilityObject e retorna a classe de XML da faixa de opções para o aplicativo do Office.  
   
- The following code example overrides the CreateRibbonExtensibilityObject method and returns a Ribbon XML class named MyRibbon.  
+ O exemplo de código a seguir substitui o método CreateRibbonExtensibilityObject e retorna uma classe de XML da faixa de opções chamada MyRibbon.  
   
- [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)] [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
+ [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
+ [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-## <a name="defining-the-behavior-of-the-custom-ribbon"></a>Defining the Behavior of the Custom Ribbon  
- You can respond to user actions, such as clicking a button on the Ribbon, by creating *callback methods*. Callback methods resemble events in Windows Forms controls, but they are identified by an attribute in the XML of the UI element. You write methods in the Ribbon class, and a control calls the method that has the same name as the attribute value. For example, you can create a callback method that is called when a user clicks a button on the Ribbon. Two steps are required to create a callback method:  
+## <a name="defining-the-behavior-of-the-custom-ribbon"></a>Definir o comportamento da faixa de opções personalizada  
+ Você pode responder a ações do usuário, como clicar em um botão na faixa de opções, criando *métodos de retorno de chamada*. Métodos de retorno de chamada de eventos em controles de formulários do Windows são semelhantes, mas são identificados por um atributo no XML do elemento de interface do usuário. Escrever métodos na classe da faixa de opções e um controle chama o método que tem o mesmo nome que o valor do atributo. Por exemplo, você pode criar um método de retorno de chamada que é chamado quando um usuário clica em um botão na faixa de opções. São necessárias duas etapas para criar um método de retorno de chamada:  
   
--   Assign an attribute to a control in the Ribbon XML file that identifies a callback method in your code.  
+-   Atribua um atributo a um controle no arquivo XML da faixa de opções que identifica um método de retorno de chamada no seu código.  
   
--   Define the callback method in the Ribbon class.  
+-   Defina o método de retorno de chamada na classe da faixa de opções.  
   
 > [!NOTE]  
->  Outlook requires an additional step. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+>  O Outlook requer uma etapa adicional. Para obter mais informações, consulte [Personalizando uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- For a walkthrough that demonstrates how to automate an application from the Ribbon, see [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ Para uma explicação passo a passo que demonstra como automatizar um aplicativo da faixa de opções, consulte [passo a passo: Criando uma guia personalizada usando XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
-### <a name="assigning-callback-methods-to-controls"></a>Assigning Callback Methods to Controls  
- To assign a callback method to a control in the Ribbon XML file, add an attribute that specifies the type of the callback method and the name of the method. For example, the following element defines a toggle button that has an **onAction** callback method named `OnToggleButton1`.  
+### <a name="assigning-callback-methods-to-controls"></a>Atribuir métodos de retorno de chamada para controles  
+ Para atribuir um método de retorno de chamada para um controle no arquivo XML da faixa de opções, adicione um atributo que especifica o tipo do método de retorno de chamada e o nome do método. Por exemplo, o elemento a seguir define um botão de alternância que tem um **onAction** chamado de método de retorno de chamada `OnToggleButton1`.  
   
 ```  
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />  
 ```  
   
- **onAction** is called when the user performs the main task associated with a particular control. For example, the **onAction** callback method of a toggle button is called when the user clicks the button.  
+ **onAction** é chamado quando o usuário executa a tarefa principal associada a um controle específico. Por exemplo, o **onAction** método de retorno de chamada de um botão de alternância é chamado quando o usuário clica no botão.  
   
- The method that you specify in the attribute can have any name. However, it must match the name of the method that you define in the Ribbon code file.  
+ O método que você especificar no atributo pode ter qualquer nome. No entanto, ele deve corresponder ao nome do método que você definir no arquivo de código da faixa de opções.  
   
- There are many different types of callback methods that you can assign to Ribbon controls. For a complete list of the callback methods available for each control, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
+ Há muitos tipos diferentes de métodos de retorno de chamada que você pode atribuir a controles de faixa de opções. Para obter uma lista completa dos métodos de retorno de chamada disponíveis para cada controle, consulte o artigo técnico [Personalizando a Interface de usuário de faixa de opções do Office (2007) para desenvolvedores (parte 3 de 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
   
-###  <a name="CallBackMethods"></a> Defining Callback Methods  
- Define your callback methods in the Ribbon class in the Ribbon code file. A callback method has several requirements:  
+###  <a name="CallBackMethods"></a>Define os métodos de retorno de chamada  
+ Define os métodos de retorno de chamada na classe da faixa de opções no arquivo de código da faixa de opções. Um método de retorno de chamada tem vários requisitos:  
   
--   It must be declared as public.  
+-   Ele deve ser declarado como público.  
   
--   Its name must match the name of a callback method that you assigned to a control in the Ribbon XML file.  
+-   O nome deve corresponder ao nome de um método de retorno de chamada que é atribuída a um controle no arquivo XML da faixa de opções.  
   
--   Its signature must match the signature of a type of callback method that is available for the associated Ribbon control.  
+-   Sua assinatura deve corresponder à assinatura de um tipo de método de retorno de chamada que está disponível para o controle de faixa de opções associado.  
   
- For a complete list of the callback method signatures for Ribbon controls, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio does not provide IntelliSense support for callback methods that you create in the Ribbon code file. If you create a callback method that does not match a valid signature, the code will compile, but nothing will occur when the user clicks the control.  
+ Para obter uma lista completa das assinaturas de método de retorno de chamada para controles de faixa de opções, consulte o artigo técnico [Personalizando a Interface de usuário de faixa de opções do Office (2007) para desenvolvedores (parte 3 de 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). O Visual Studio não oferece suporte ao IntelliSense para os métodos de retorno de chamada que você criar no arquivo de código da faixa de opções. Se você criar um método de retorno de chamada que não corresponde a uma assinatura válida, o código será compilado, mas nada ocorrerá quando o usuário clica no controle.  
   
- All callback methods have a <xref:Microsoft.Office.Core.IRibbonControl> parameter that represents the control that called the method. You can use this parameter to reuse the same callback method for multiple controls. The following code example demonstrates an **onAction** callback method that performs different tasks depending on which control the user clicks.  
+ Todos os métodos de retorno de chamada tem um <xref:Microsoft.Office.Core.IRibbonControl> parâmetro que representa o controle que chamou o método. Você pode usar esse parâmetro para reutilizar o mesmo método de retorno de chamada para vários controles. O exemplo de código a seguir demonstra um **onAction** método de retorno de chamada que executa tarefas diferentes, dependendo de qual controle o usuário clica.  
   
- [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)] [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
+ [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
-##  <a name="RibbonDescriptorFile"></a> Ribbon XML File Reference  
- You can define your custom Ribbon by adding elements and attributes to the Ribbon XML file. By default, the Ribbon XML file contains the following XML.  
+##  <a name="RibbonDescriptorFile"></a>Referência do arquivo XML da faixa de opções  
+ Você pode definir a faixa de opções personalizada pela adição de elementos e atributos para o arquivo XML da faixa de opções. Por padrão, o arquivo XML da faixa de opções contém o XML a seguir.  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -116,41 +114,41 @@ ms.lasthandoff: 08/30/2017
 </customUI>  
 ```  
   
- The following table describes the default elements in the Ribbon XML file.  
+ A tabela a seguir descreve os elementos padrão no arquivo XML da faixa de opções.  
   
-|Element|Description|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
-|**customUI**|Represents the custom Ribbon in the VSTO Add-in project.|  
-|**ribbon**|Represents the Ribbon.|  
-|**tabs**|Represents a set of Ribbon tabs.|  
-|**tab**|Represents a single Ribbon tab.|  
-|**group**|Represents a group of controls on the Ribbon tab.|  
+|**customUI**|Representa a faixa de opções personalizada no projeto de suplemento do VSTO.|  
+|**Faixa de opções**|Representa a faixa de opções.|  
+|**guias**|Representa um conjunto de guias da faixa de opções.|  
+|**guia**|Representa uma única guia de faixa de opções.|  
+|**group**|Representa um grupo de controles na guia de faixa de opções.|  
   
- These elements have attributes that specify the appearance and behavior of the custom Ribbon. The following table describes the default attributes in the Ribbon XML file.  
+ Esses elementos têm atributos que especificam a aparência e o comportamento da faixa de opções personalizada. A tabela a seguir descreve os atributos padrão no arquivo XML da faixa de opções.  
   
-|Attribute|Parent element|Description|  
+|Atributo|Elemento pai|Descrição|  
 |---------------|--------------------|-----------------|  
-|**onLoad**|**customUI**|Identifies a method that is called when the application loads the Ribbon.|  
-|**idMso**|**tab**|Identifies a built-in tab to display in the Ribbon.|  
-|**id**|**group**|Identifies the group.|  
-|**label**|**group**|Specifies the text that appears on the group.|  
+|**onLoad**|**customUI**|Identifica um método que é chamado quando o aplicativo carrega a faixa de opções.|  
+|**idMso**|**guia**|Identifica uma guia interna para exibir na faixa de opções.|  
+|**id**|**group**|Identifica o grupo.|  
+|**rótulo**|**group**|Especifica o texto que aparece no grupo.|  
   
- The default elements and attributes in the Ribbon XML file are a small subset of the elements and attributes that are available. For a complete list of the available elements and attributes, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 2 of 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
+ Os elementos de padrão e atributos no arquivo XML da faixa de opções são um pequeno subconjunto dos elementos e atributos que estão disponíveis. Para obter uma lista completa dos atributos e elementos disponíveis, consulte o artigo técnico [Personalizando a Interface de usuário de faixa de opções do Office (2007) para desenvolvedores (parte 2 de 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
   
-##  <a name="RibbonExtensionClass"></a> Ribbon Class Reference  
- Visual Studio generates the Ribbon class in the Ribbon code file. Add the callback methods for controls on the Ribbon to this class. This class implements the <xref:Microsoft.Office.Core.IRibbonExtensibility> interface.  
+##  <a name="RibbonExtensionClass"></a>Referência de classe da faixa de opções  
+ Visual Studio gera a classe de faixa de opções no arquivo de código da faixa de opções. Adicione os métodos de retorno de chamada para controles da faixa de opções para essa classe. Essa classe implementa o <xref:Microsoft.Office.Core.IRibbonExtensibility> interface.  
   
- The following table describes the default methods in this class.  
+ A tabela a seguir descreve os métodos padrão nesta classe.  
   
-|Method|Description|  
+|Método|Descrição|  
 |------------|-----------------|  
-|`GetCustomUI`|Returns the contents of the Ribbon XML file. Microsoft Office applications call this method to obtain an XML string that defines the user interface of your custom Ribbon. This method implements the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method. **Note:**  `GetCustomUI` should be implemented only to return the contents of the Ribbon XML file; it should not be used to initialize your VSTO Add-in. In particular, you should not try to display dialog boxes or other windows in your `GetCustomUI` implementation. Otherwise, the custom Ribbon might not behave correctly. If you have to run code that initializes your VSTO Add-in, add the code to the `ThisAddIn_Startup` event handler.|  
-|`OnLoad`|Assigns the <xref:Microsoft.Office.Core.IRibbonControl> parameter to the `ribbon` field. Microsoft Office applications call this method when they load the custom Ribbon. You can use this field to dynamically update the custom Ribbon. For more information, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 1 of 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
-|`GetResourceText`|Called by the `GetCustomUI` method to obtain the contents of the Ribbon XML file.|  
+|`GetCustomUI`|Retorna o conteúdo do arquivo XML da faixa de opções. Aplicativos do Microsoft Office chamam este método para obter uma cadeia de caracteres XML que define a interface do usuário de sua faixa de opções personalizada. Esse método implementa o <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> método. **Observação:** `GetCustomUI` devem ser implementadas apenas para retornar o conteúdo do arquivo XML da faixa de opções; ele não deve ser usado para inicializar o suplemento do VSTO.   Em particular, você não deve tentar exibir caixas de diálogo ou outras janelas na sua `GetCustomUI` implementação. Caso contrário, a faixa de opções personalizada pode não funcionar corretamente. Se você precisar executar o código que inicializa o suplemento do VSTO, adicione o código para o `ThisAddIn_Startup` manipulador de eventos.|  
+|`OnLoad`|Atribui o <xref:Microsoft.Office.Core.IRibbonControl> parâmetro para o `ribbon` campo. Aplicativos do Microsoft Office chamam este método quando eles carregam a faixa de opções personalizada. Você pode usar esse campo para atualizar dinamicamente a faixa de opções personalizada. Para obter mais informações, consulte o artigo técnico [Personalizando a Interface de usuário de faixa de opções do Office (2007) para desenvolvedores (parte 1 de 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
+|`GetResourceText`|Chamado pelo `GetCustomUI` método para obter o conteúdo do arquivo XML da faixa de opções.|  
   
-## <a name="see-also"></a>See Also  
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [Office UI Customization](../vsto/office-ui-customization.md)  
+## <a name="see-also"></a>Consulte também  
+ [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
+ [Passo a passo: Criando uma guia usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
+ [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)  
   
   

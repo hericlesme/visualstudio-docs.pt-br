@@ -1,43 +1,27 @@
 ---
-title: IDebugProcess2::GetAttachedSessionName | Documentos do Microsoft
+title: IDebugProcess2::GetAttachedSessionName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProcess2::GetAttachedSessionName
-helpviewer_keywords:
-- IDebugProcess2::GetAttachedSessionName
+f1_keywords: IDebugProcess2::GetAttachedSessionName
+helpviewer_keywords: IDebugProcess2::GetAttachedSessionName
 ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 636da4a400f577c8dc327db7af3edcc1593025a1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 553141f01211389308978e80d22220634625c940
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
-Obtém o nome da sessão que está sendo depurado esse processo. Um IDE pode exibir essas informações para um usuário que estiver depurando um processo específico em um determinado computador.  
+Obtém o nome da sessão que está sendo depurado esse processo. Um IDE pode exibir essas informações para um usuário que estiver depurando um processo específico em um computador específico.  
   
 > [!NOTE]
 >  Esse método é preterido e sua implementação deve retornar sempre `E_NOTIMPL`.  

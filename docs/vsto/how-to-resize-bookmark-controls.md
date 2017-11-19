@@ -1,12 +1,10 @@
 ---
-title: 'How to: Resize Bookmark Controls | Microsoft Docs'
+title: 'Como: redimensionar controles de indicador | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,87 +14,89 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], resizing
 - Bookmark control, resizing
 ms.assetid: 3de1c774-921a-4113-a54a-e3b8d4a65d53
-caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+caps.latest.revision: "45"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: da99b72728523e83e6b894e8c451953426240b16
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b461aec44b30f8934a6a2388d6fd4f4bc7d65210
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-resize-bookmark-controls"></a>How to: Resize Bookmark Controls
-  You set the size of a <xref:Microsoft.Office.Tools.Word.Bookmark> control when you add it to a Microsoft Office Word document. You can also resize it at a later time.  
+# <a name="how-to-resize-bookmark-controls"></a>Como redimensionar controles de indicador
+  Definir o tamanho de um <xref:Microsoft.Office.Tools.Word.Bookmark> controle quando você adiciona a um documento do Microsoft Office Word. Você também pode redimensioná-la mais tarde.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- There are three ways to resize a bookmark:  
+ Há três maneiras de redimensionar um indicador:  
   
--   Add or remove text in the <xref:Microsoft.Office.Tools.Word.Bookmark> control.  
+-   Adicionar ou remover o texto de <xref:Microsoft.Office.Tools.Word.Bookmark> controle.  
   
-     Whenever you add text in a bookmark, the size of the bookmark automatically increases to contain the new text. When you delete text, the size of the bookmark automatically decreases.  
+     Sempre que você adicionar o texto em um indicador, o tamanho do indicador automaticamente aumenta para conter o novo texto. Quando você exclui o texto, diminui o tamanho do indicador automaticamente.  
   
--   Change the <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> and <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> properties of the <xref:Microsoft.Office.Tools.Word.Bookmark> control.  
+-   Alterar o <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedades do <xref:Microsoft.Office.Tools.Word.Bookmark> controle.  
   
-     This is useful if you are changing the size by only a few characters.  
+     Isso é útil se você estiver alterando o tamanho por apenas alguns caracteres.  
   
--   Recreate the <xref:Microsoft.Office.Tools.Word.Bookmark> control.  
+-   Recrie o <xref:Microsoft.Office.Tools.Word.Bookmark> controle.  
   
-     This is useful if there is a substantial change in the size or location of a bookmark.  
+     Isso é útil se houver uma alteração significativa no tamanho ou local de um indicador.  
   
- In document-level projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to the document in your project at design time or at run time. In VSTO Add-in projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to any open document at run time. For more information, see [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+ Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto em tempo de execução. Para obter mais informações, consulte [como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="changing-the-start-and-end-properties"></a>Changing the Start and End Properties  
+## <a name="changing-the-start-and-end-properties"></a>Alterando o início e término propriedades  
   
-#### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>To resize a bookmark in a document-level project at design time  
+#### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Para redimensionar um indicador em um projeto no nível do documento em tempo de design  
   
-1.  Select the bookmark in the **Properties** window.  
+1.  Selecione o indicador de **propriedades** janela.  
   
-2.  Increase or decrease the value of the <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> property.  
+2.  Aumente ou diminua o valor da <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> propriedade.  
   
-3.  Increase or decrease the value of the <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> property.  
+3.  Aumente ou diminua o valor da <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedade.  
   
-#### <a name="to-resize-a-bookmark-in-a-document-level-project-at-run-time"></a>To resize a bookmark in a document-level project at run time  
+#### <a name="to-resize-a-bookmark-in-a-document-level-project-at-run-time"></a>Para redimensionar um indicador em um projeto no nível do documento em tempo de execução  
   
-1.  Modify the <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> and <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> properties of a <xref:Microsoft.Office.Tools.Word.Bookmark> you created at run time or at design time.  
+1.  Modificar o <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedades de um <xref:Microsoft.Office.Tools.Word.Bookmark> criado em tempo de execução ou em tempo de design.  
   
-     The following code example adds five characters to the start of a bookmark named `SampleBookmark`. This code assumes that there are at least five characters of text before the bookmark.  
+     O exemplo de código a seguir adiciona cinco caracteres para o início de um indicador chamado `SampleBookmark`. Esse código supõe que há no mínimo cinco caracteres de texto antes do indicador.  
   
-     [!code-csharp[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#2)]  [!code-vb[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#2)]  
+     [!code-csharp[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#2)]
+     [!code-vb[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#2)]  
   
-     The following code example adds five characters to the end of the same bookmark. This code assumes that there are at least five characters of text after the bookmark.  
+     O exemplo de código a seguir adiciona cinco caracteres ao final do mesmo indicador. Esse código supõe que há no mínimo cinco caracteres de texto depois do indicador.  
   
-     [!code-csharp[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#3)]  [!code-vb[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#3)]  
+     [!code-csharp[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#3)]
+     [!code-vb[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#3)]  
   
-#### <a name="to-resize-a-bookmark-in-an-vsto-add-in-project-at-run-time"></a>To resize a bookmark in an VSTO Add-in project at run time  
+#### <a name="to-resize-a-bookmark-in-an-vsto-add-in-project-at-run-time"></a>Para redimensionar um indicador em um projeto de suplemento do VSTO em tempo de execução  
   
-1.  Modify the <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> and <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> properties of a <xref:Microsoft.Office.Tools.Word.Bookmark> you created at run time.  
+1.  Modificar o <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedades de um <xref:Microsoft.Office.Tools.Word.Bookmark> criado em tempo de execução.  
   
-     The following code example creates a <xref:Microsoft.Office.Tools.Word.Bookmark> that contains the text in the first paragraph of the active document, and then removes five characters from the start and end of the <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+     O exemplo de código a seguir cria um <xref:Microsoft.Office.Tools.Word.Bookmark> que contém o texto do primeiro parágrafo do documento ativo e, em seguida, remove cinco caracteres de início e de término do <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     [!code-vb[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#16)]  [!code-csharp[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#16)]  
+     [!code-vb[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#16)]
+     [!code-csharp[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#16)]  
   
-## <a name="recreating-the-bookmark"></a>Recreating the Bookmark  
- You can resize a bookmark in a document-level project by adding a new bookmark that has the same name as the existing bookmark, but that has a different size.  
+## <a name="recreating-the-bookmark"></a>Recriando o indicador  
+ Você pode redimensionar um indicador em um projeto no nível do documento adicionando um novo indicador que tem o mesmo nome que o indicador existente, mas que tem um tamanho diferente.  
   
-#### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>To recreate a bookmark in a document-level project at design time  
+#### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Para recriar um indicador em um projeto no nível do documento em tempo de design  
   
-1.  Select the text to be included in the new <xref:Microsoft.Office.Tools.Word.Bookmark> control.  
+1.  Selecione o texto a ser incluído no novo <xref:Microsoft.Office.Tools.Word.Bookmark> controle.  
   
-2.  On the **Insert** menu, click **Bookmark**.  
+2.  Sobre o **inserir** menu, clique em **indicador**.  
   
-3.  In the **Bookmark** dialog box, select the name of the bookmark that you want to resize and click **Add**.  
+3.  No **indicador** caixa de diálogo, selecione o nome do indicador que você deseja redimensionar e clique em **adicionar**.  
   
-## <a name="see-also"></a>See Also  
- [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [How to: Resize NamedRange Controls](../vsto/how-to-resize-namedrange-controls.md)   
- [How to: Resize ListObject Controls](../vsto/how-to-resize-listobject-controls.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>Consulte também  
+ [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Automatizando o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)   
+ [Itens de host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md)   
+ [Como: redimensionar controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
+ [Como: redimensionar controles ListObject](../vsto/how-to-resize-listobject-controls.md)   
+ [Limitações programáticas de itens de Host e Controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

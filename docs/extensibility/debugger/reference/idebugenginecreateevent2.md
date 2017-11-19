@@ -1,40 +1,24 @@
 ---
-title: IDebugEngineCreateEvent2 | Documentos do Microsoft
+title: IDebugEngineCreateEvent2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEngineCreateEvent2
-helpviewer_keywords:
-- IDebugEngineCreateEvent2 interface
+f1_keywords: IDebugEngineCreateEvent2
+helpviewer_keywords: IDebugEngineCreateEvent2 interface
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1a65ceb89017456f919d318f35ce72ae8178f051
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b98b21e3e3220da2a42609c9344e24867ab11828
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 O mecanismo de depuração (DE) envia essa interface para o Gerenciador de sessão de depuração (SDM) quando uma instância do DE é criada.  
@@ -49,7 +33,7 @@ IDebugEngineCreateEvent2 : IUnknown
  O DE implementa essa interface como parte de suas operações normais. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto dessa interface (o SDM usa o `QueryInterface` método para acessar o `IDebugEvent2` interface).  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- O DE cria e envia esse objeto de evento quando o DE foi instanciado. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada que é fornecida pelo SDM quando anexado a programa que está sendo depurado.  
+ O DE cria e envia esse objeto de evento quando o DE foi instanciado. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada que é fornecida pelo SDM quando anexado ao programa que está sendo depurado.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  A tabela a seguir mostra os métodos de `IDebugEngineCreateEvent2`.  

@@ -1,67 +1,67 @@
 ---
-title: "Como especificar uma vers&#227;o do .NET Framework para depura&#231;&#227;o | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - ".NET Framework, especificando versão para depuração"
-  - "depurando [Visual Studio], especificando versão do .NET Framework"
+title: "Como: especificar uma versão do .NET Framework para depuração | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- .NET Framework, specifying version for debugging
+- debugging [Visual Studio], specifying .NET Framework version
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ace7dcdf236a551725dcc60e211ca98e3753e5cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como especificar uma vers&#227;o do .NET Framework para depura&#231;&#227;o
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-O depurador do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] dá suporte a versões anteriores de depuração do Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bem como à versão atual.  Se você iniciar um aplicativo do Visual Studio, o depurador sempre poderá identificar a versão correta do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para o aplicativo que você está depurando.  Se o aplicativo já estiver em execução e você usar **Anexar a**, o depurador nem sempre pode conseguir identificar uma versão anterior do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  Se isso ocorrer, você receberá uma mensagem de erro, que indica  
+# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Como especificar uma versão do .NET Framework para depuração
+O depurador do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] dá suporte a versões anteriores de depuração do Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] bem como à versão atual. Se você iniciar um aplicativo do Visual Studio, o depurador sempre poderá identificar a versão correta do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para o aplicativo que você está depurando. Se o aplicativo já está em execução e você usar **anexar a**, o depurador pode não ser capaz de identificar uma versão mais antiga do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Se isso ocorrer, você receberá uma mensagem de erro, que indica  
   
  O depurador fez uma suposição incorreta sobre a versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que seu aplicativo usará.  
   
  Nesses casos raros, você pode definir uma chave do Registro para indicar ao depurador a versão a ser usada.  
   
-### Para especificar uma versão do .NET Framework para depuração  
+### <a name="to-specify-a-net-framework-version-for-debugging"></a>Para especificar uma versão do .NET Framework para depuração  
   
-1.  Examine no diretório Windows\\Microsoft.NET\\Framework para localizar as versões do .NET Framework instaladas no computador.  Os números de versão devem ser semelhantes a:  
+1.  Examine no diretório Windows\Microsoft.NET\Framework para localizar as versões do .NET Framework instaladas no computador. Os números de versão devem ser semelhantes a:  
   
      `V1.1.4322`  
   
      Identifique o número de versão correta e anote.  
   
-2.  Inicie o **Editor do Registro** \(regedit\).  
+2.  Iniciar o **Editor do registro** (regedit).  
   
-3.  Em **Editor do Registro**, abra a pasta HKEY\_LOCAL\_MACHINE.  
+3.  No **Editor do registro**, abra a pasta HKEY_LOCAL_MACHINE.  
   
-4.  Navegue até: HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\VisualStudio\\10.0\\AD7Metrics\\Engine\\{449EC4CC\-30D2\-4032\-9256\-EE18EB41B62B}  
+4.  Navegue até: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
-     Se a chave não existir, clique com o botão direito do mouse em HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\VisualStudio\\10.0\\AD7Metrics\\Engine, e clique **Nova Chave**.  Nomeie a nova chave `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
+     Se a chave não existir, clique com botão direito HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine e clique em **nova chave**. Nomeie a nova chave `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   
-5.  Depois de navegar até {449EC4CC\-30D2\-4032\-9256\-EE18EB41B62B}, examine a coluna **Nome** e localize a chave CLRVersionForDebugging.  
+5.  Depois de navegar até {449EC4CC-30D2-4032-9256-EE18EB41B62B}, examinar o **nome** coluna e localize a chave CLRVersionForDebugging.  
   
-    1.  Se a chave não existir, clique com o botão direito do mouse em {449EC4CC\-30D2\-4032\-9256\-EE18EB41B62B} e clique em **Novo Valor de Cadeia de Caracteres**.  Clique com o botão direito no novo valor de cadeia de caracteres, clique em **Renomear** e digite `CLRVersionForDebugging`.  
+    1.  Se a chave não existir, clique {449EC4CC-30D2-4032-9256-EE18EB41B62B} e clique em **novo valor de cadeia de caracteres**. Clique com o novo valor de cadeia de caracteres, clique em **Renomear**e o tipo `CLRVersionForDebugging`.  
   
 6.  Clique duas vezes em **CLRVersionForDebugging**.  
   
-7.  Na caixa **Editar Cadeia de Caracteres**, digite o número da versão do .NET Framework na caixa **Valor**.  Por exemplo: V1.1.4322  
+7.  No **Editar cadeia de caracteres** , digite o número da versão do .NET Framework para o **valor** caixa. Por exemplo: V1.1.4322  
   
 8.  Clique em **OK**.  
   
-9. Feche o **Editor do Registro**.  
+9. Fechar o **Editor do registro**.  
   
-     Se você ainda receber uma mensagem de erro quando começar a depuração, verifique se inseriu o número de versão corretamente no Registro.  Além disso, verifique se está usando uma versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] com suporte pelo Visual Studio.  O depurador é compatível com a versão atual e a anterior do .NET Framework, mas não é compatível com versões futuras.  
+     Se você ainda receber uma mensagem de erro quando começar a depuração, verifique se inseriu o número de versão corretamente no Registro. Além disso, verifique se está usando uma versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] com suporte pelo Visual Studio. O depurador é compatível com a versão atual e a anterior do .NET Framework, mas não é compatível com versões futuras.  
   
-## Consulte também  
- [Configurações de depuração e preparação](../debugger/debugger-settings-and-preparation.md)
+## <a name="see-also"></a>Consulte também  
+ [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)

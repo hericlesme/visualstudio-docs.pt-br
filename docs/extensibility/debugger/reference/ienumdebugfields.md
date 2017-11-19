@@ -1,40 +1,24 @@
 ---
-title: IEnumDebugFields | Documentos do Microsoft
+title: IEnumDebugFields | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugFields
-helpviewer_keywords:
-- IEnumDebugFields interface
+f1_keywords: IEnumDebugFields
+helpviewer_keywords: IEnumDebugFields interface
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 64a34c91f62364bea323e439aeb9ada1d4bc57ec
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ed697205a5cd7d866df639e2908e3cc0b4fa2f72
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Essa interface representa uma coleção de objetos que implementam o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.  
@@ -57,7 +41,7 @@ IEnumDebugFields : IUnknown
 |Método|Descrição|  
 |------------|-----------------|  
 |[Avançar](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|Recupera o próximo conjunto de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos a partir da enumeração.|  
-|[Ignorar](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Ignora um número especificado de entradas.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|Ignora um número especificado de entradas.|  
 |[Redefinir](../../../extensibility/debugger/reference/ienumdebugfields-reset.md)|Redefine a enumeração para a primeira entrada.|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugfields-clone.md)|Recupera uma cópia da enumeração atual.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugfields-getcount.md)|Recupera o número de entradas na enumeração.|  

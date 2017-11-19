@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 04/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
-caps.latest.revision: 2
+caps.latest.revision: "2"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
-ms.openlocfilehash: b36b5e35758ad10109328d6f001e043ad7dcbe15
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/04/2017
-
+ms.openlocfilehash: 6a554a52fc5ef42f81d1531dbe63bf320e1cd72e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="animations-for-visual-studio"></a>Animações para Visual Studio
 ## <a name="animation-fundamentals"></a>Conceitos básicos de animação  
@@ -228,12 +213,12 @@ Animações no Visual Studio devem atender a uma função específica sem diminu
   
 Esta ilustração mostra os estilos de animação, que é recomendável para o Visual Studio. Nenhuma animação ou animações sutis que desaparecer / desaparecer são usadas com mais frequência. Aplicativo limitado de animações de movimento como expandir e contrair, posições de X e Y alteração e a rotação. 
   
-![Estilos de animação recomendado para o Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202-a_VSAnimStyles")<br />Estilos de animação recomendado para o Visual Studio
+![Estilos de animação recomendados para o Visual Studio](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "a_VSAnimStyles 1202")<br />Estilos de animação recomendado para o Visual Studio
   
 #### <a name="appear-and-disappear"></a>Aparecem e desaparecem  
 Com esse padrão, um elemento alterna do visível para fora do modo de exibição e sem uma animação de transição.  
   
-![Aparecem e desaparecem animação](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202-b_AppearAndDisappear")<br />Aparecem e desaparecem animação  
+![Aparecem e desaparecem animação](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "b_AppearAndDisappear 1202")<br />Aparecem e desaparecem animação  
   
 ##### <a name="correct-usage"></a>Uso correto  
 Elementos de interface do usuário atualizados que precisam instantaneamente aparecer ou desaparecer para que o usuário não é distraiam nem obstruído. Além disso, animações lentos, podem ser consideradas como arrastar um desempenho, o que não ocorre com o estilo aparecem e desaparecem.  
@@ -254,7 +239,7 @@ Geralmente, o tempo de espera é zero segundos.
 #### <a name="fade-in-and-fade-out"></a>Fade in e fade-out  
 Com esse padrão, um elemento de interface do usuário faz a transição de não visível (0% de opacidade) visível (100% de opacidade) ou vice-versa.  
   
-![Animação gradualmente e esmaecimento](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202-c_FadeInFadeOut")<br />Animação gradualmente e esmaecimento  
+![Animação gradualmente e esmaecimento](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "c_FadeInFadeOut 1202")<br />Animação gradualmente e esmaecimento  
   
 ##### <a name="correct-usage"></a>Uso correto  
 Isso é o mais recomendado animação de interface do usuário. É um efeito sutil que adiciona interesse sem interromper o fluxo. Em alguns casos, o usuário pode nem mesmo perceber que há uma animação perceber um smooth e fluxo de sistema de interface do usuário.  
@@ -280,7 +265,7 @@ Isso é o mais recomendado animação de interface do usuário. É um efeito sut
 #### <a name="color-blend-from-a-to-b"></a>Mistura de cores de A para B  
 Com esse padrão, um elemento de interface do usuário muda de cor A cor B.  
   
-![Animação de mesclagem de cor](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202-d_ColorBlend")<br />Animação de mesclagem de cor  
+![Cor do blend animação](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "d_ColorBlend 1202")<br />Animação de mesclagem de cor  
   
 ##### <a name="correct-usage"></a>Uso correto  
 Como uma transição animada quando um elemento de interface do usuário altera a cor de um contexto ou estado para outro.  
@@ -304,7 +289,7 @@ Como uma transição animada quando um elemento de interface do usuário altera 
 #### <a name="expand-and-contract"></a>Expandir e contrair  
 Com esse padrão, um elemento de interface do usuário se expande em X, Y ou ambas as direções.  
   
-![Expandir e contrair de animação](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202-e_ExpandContract")<br />Expandir e contrair de animação  
+![Expandir e contrair animação](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "e_ExpandContract 1202")<br />Expandir e contrair de animação  
   
 ##### <a name="correct-usage"></a>Uso correto  
 Como uma transição animada quando um elemento de interface do usuário altera o tamanho de um contexto para outro.  
@@ -328,7 +313,7 @@ Como uma transição animada quando um elemento de interface do usuário altera 
 #### <a name="x-y-position-change"></a>Alteração de posição X-Y  
 Com esse padrão, um elemento de interface do usuário altera a posição X ou Y ou ambos.  
   
-![Animação de alteração de posição X-Y](~/extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />Animação de alteração de posição X-Y  
+![Alterar a posição de X-Y animação](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "f_XYPositionChange 1202")<br />Animação de alteração de posição X-Y  
   
 ##### <a name="correct-usage"></a>Uso correto  
 Como uma transição animada quando um elemento de interface do usuário altera a posição de um contexto para outro.  
@@ -351,7 +336,7 @@ Reorganização de guia
 #### <a name="rotate"></a>Girar  
 Com esse padrão, o elemento de interface do usuário gira.  
   
-![Animação de rotação do elemento de interface do usuário](~/extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />Animação de rotação do elemento de interface do usuário  
+![Animação de rotação do elemento de interface do usuário](../../extensibility/ux-guidelines/media/1202-g_rotate.png "g_Rotate 1202")<br />Animação de rotação do elemento de interface do usuário  
   
 ##### <a name="correct-usage"></a>Uso correto  
 Somente para o indicador de progresso indeterminado giratório.  
@@ -370,56 +355,56 @@ Indicador de progresso indeterminado (rotação)
 ### <a name="common-shell-ui-actions-and-recommended-animations"></a>Ações de interface de usuário comuns do shell e animações recomendadas  
   
 #### <a name="tab-open"></a>Guia Abrir  
-![Animação aberta TAB](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202-h_TabOpen")<br />Animação aberta TAB  
+![Guia animação abrir](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "h_TabOpen 1202")<br />Animação aberta TAB  
     
 -   Estilo: aparecem  
   
 -   Duração: segundos zero  
 
 #### <a name="tab-close"></a>Guia fechar  
-![Animação de fechamento de guia](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202-i_TabClose")<br />Animação de fechamento de guia  
+![Guia animação fechar](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "i_TabClose 1202")<br />Animação de fechamento de guia  
   
 -   Estilo: Alteração da posição X  
   
 -   Duração: 200 milissegundos  
   
 #### <a name="tab-reorder"></a>Guia reordenar  
-![Guia reordenar animação no Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202-j_TabReorder")<br />Guia reordenar animação
+![Guia reordenar animação no Visual Studio](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "j_TabReorder 1202")<br />Guia reordenar animação
 
 -   Estilo: Alteração da posição X  
   
 -   Duração: 200 milissegundos  
     
 #### <a name="close-floating-document"></a>Fechar documentos flutuante  
-![Animação de documentos flutuante fechar](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202-k_CloseFloatingDocument")<br />Animação de documentos flutuante fechar  
+![Fechar flutuante animação documento](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "k_CloseFloatingDocument 1202")<br />Animação de documentos flutuante fechar  
    
 -   Estilo: aparecem  
   
 -   Duração: 200 milissegundos   
  
 #### <a name="window-state-transition"></a>Transição de estado da janela  
-![Animação de transição de estado de janela](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202-l_WindowStateTransition")<br />Animação de transição de estado de janela  
+![Animação de transição de estado de janela](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "l_WindowStateTransition 1202")<br />Animação de transição de estado de janela  
     
 -   Estilo: para ser consistente com outras janelas, permitem que o sistema operacional atual defina animação de fechar o documento.  
   
 -   Duração: 200 milissegundos  
   
 #### <a name="menu-open"></a>Menu Abrir  
-![Animação abrir menu](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202-m_MenuOpen")<br />Animação abrir menu  
+![Animação abrir menu](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "m_MenuOpen 1202")<br />Animação abrir menu  
     
 -   Estilo: gradualmente  
   
 -   Duração: 200 milissegundos  
   
 #### <a name="menu-close"></a>Feche o menu  
-![Animação de fechamento de menu](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202-n_MenuClose")<br />Animação de fechamento de menu  
+![Animação de menu fechar](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "n_MenuClose 1202")<br />Animação de fechamento de menu  
     
 -   Estilo: esmaecimento  
   
 -   Duração: 200 milissegundos  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Ocultar automaticamente revelação da janela de ferramenta  
-![Ocultar automaticamente animação de revelação de janela de ferramenta](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")<br />Ocultar automaticamente animação de revelação de janela de ferramenta  
+![Ocultar automaticamente animação de revelação de janela de ferramenta](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "o_AutoHideToolWindowReveal 1202")<br />Ocultar automaticamente animação de revelação de janela de ferramenta  
 
 -   Estilo: aparecem  
   

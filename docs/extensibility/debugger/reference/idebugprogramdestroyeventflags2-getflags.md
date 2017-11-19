@@ -1,52 +1,38 @@
 ---
-title: IDebugProgramDestroyEventFlags2::GetFlags | Documentos do Microsoft
+title: IDebugProgramDestroyEventFlags2::GetFlags | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - GetFlags
 - IDebugProgramDestroyEventFlags2::GetFlags
 ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e368f502714e6866bb9e30446352330343102493
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cae47a73d04f5ccb99c02d99d4a16eb84e1b8271
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 Recupera o programa destruir sinalizadores.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetFlags(  
    PROGRAM_DESTROY_FLAGS* pdwFlags  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetFlags(  
    out enum_PROGRAM_DESTROY_FLAGS pdwFlags  
 );  
@@ -57,7 +43,7 @@ public int GetFlags(
  [out] Representa o programa destruir sinalizadores.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugProgramDestroyEventFlags2](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2.md)   

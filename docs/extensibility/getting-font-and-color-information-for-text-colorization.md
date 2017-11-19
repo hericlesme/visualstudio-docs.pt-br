@@ -4,36 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text, coloring
 - font and color control [Visual Studio SDK], coloring
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
-caps.latest.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 57b3d53f86d132779fb00608886fa7c479b71551
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: e3b31ad2ec080070dec3c68b304f400d204d47a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Obtendo informações de cores para coloração de texto e fonte
 O processo que renderiza ou exibe coloridos serão texto em elementos de interface do usuário depende do tipo de projeto, sua tecnologia e developer preferências. O **fontes e cores** página de propriedade armazena as configurações.  
@@ -50,17 +36,17 @@ O processo que renderiza ou exibe coloridos serão texto em elementos de interfa
   
 -   Use o mecanismo de persistência de fontes e cores para recuperar o estado atual ou armazenado. Para obter mais informações, consulte [acessar fonte armazenado e as configurações de cor](../extensibility/accessing-stored-font-and-color-settings.md).  
   
--   Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>interface de um serviço que fornece dados de fontes e cores para obter uma instância de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se o VSPackage também não é o provedor de fonte e cor.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> </xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
+-   Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface de um serviço que fornece dados de fontes e cores para obter uma instância de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se o VSPackage também não é o provedor de fonte e cor.  
   
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>interface.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
+-   Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.  
   
- Para garantir que os resultados obtidos por meio de sondagem são atualizadas, pode ser útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>interface para determinar se uma atualização é necessária antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>interface.</xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> </xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
+ Para garantir que os resultados obtidos por meio de sondagem são atualizadas, pode ser útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização é necessária antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
   
  Depois que você obteve as informações de fonte e cor, analise o texto a ser exibido para identificar elementos exigir colorização e, em seguida, exibir o texto na janela usando apropriadas fontes e cores.  
   
 ## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider></xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults></xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
- [Usando fontes e texto](http://msdn.microsoft.com/Library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
+ [Usando fontes e texto](/dotnet/framework/winforms/advanced/using-fonts-and-text)   
  [Trabalhando com cor](/cpp/windows/working-with-color-image-editor-for-icons)   
  [GDI (interface gráfica de dispositivo)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)

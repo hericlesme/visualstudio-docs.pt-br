@@ -1,40 +1,24 @@
 ---
-title: IDebugAlias::Dispose | Documentos do Microsoft
+title: IDebugAlias::Dispose | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugAlias::Dispose
-helpviewer_keywords:
-- IDebugAlias::Dispose method
+f1_keywords: IDebugAlias::Dispose
+helpviewer_keywords: IDebugAlias::Dispose method
 ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a9cc51d28e20fcdddf9caba9febb7288762f8056
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d10b1e45f9970b2bf331b590f709ef0d8cd15bcd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 Marca este alias para remoção.  
@@ -45,18 +29,18 @@ Marca este alias para remoção.
 HRESULT Dispose();  
 ```  
   
-```c#  
+```csharp  
 int Dispose();  
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Nenhum.  
+ nenhuma.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará S_OK; Caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Quando esse método é chamado, o alias não está mais disponível.  
+ Quando este método é chamado, o alias não está mais disponível.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

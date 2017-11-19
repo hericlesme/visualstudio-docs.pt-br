@@ -1,39 +1,25 @@
 ---
-title: Elemento de bitmaps | Documentos do Microsoft
+title: Elemento de bitmaps | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 79d98cc0779e5c90d27f8c7b50e4e5dc169feef7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a4db0446a0adeaeee3d3a3fc1c5ae6ee02594f34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bitmaps-element"></a>Elemento de bitmaps
 Grupos de [Bitmap elemento](../extensibility/bitmap-element.md) elementos.  
@@ -60,8 +46,8 @@ Grupos de [Bitmap elemento](../extensibility/bitmap-element.md) elementos.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento de bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos do Bitmap.|  
-|[Elemento de bitmap](../extensibility/bitmap-element.md)|Define um bitmap.|  
+|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos do Bitmap.|  
+|[Elemento Bitmap](../extensibility/bitmap-element.md)|Define um bitmap.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -80,5 +66,5 @@ Grupos de [Bitmap elemento](../extensibility/bitmap-element.md) elementos.
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como os VSPackages adicionar elementos de Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Barras de ferramentas, Menus e comandos](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Como VSPackages adicionar elementos da Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

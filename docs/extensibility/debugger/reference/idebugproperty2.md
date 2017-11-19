@@ -1,46 +1,30 @@
 ---
-title: IDebugProperty2 | Documentos do Microsoft
+title: IDebugProperty2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty2
-helpviewer_keywords:
-- IDebugProperty2 interface
+f1_keywords: IDebugProperty2
+helpviewer_keywords: IDebugProperty2 interface
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0fa2df98409dcb0f07f45a6fa719605506b28790
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 45ad3a6c0d250136d0ab3e1becb088ea140b42e8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
-Essa interface representa uma propriedade de quadro de pilha, uma propriedade de documento do programa ou outra propriedade. A propriedade é geralmente o resultado de uma avaliação de expressão.  
+Essa interface representa uma propriedade de quadro de pilha, uma propriedade de documento do programa ou outra propriedade. A propriedade normalmente é o resultado de uma avaliação de expressão.  
   
 > [!NOTE]
->  Esse uso de "propriedade" não deve ser confundido com que uma variável de membro de uma classe, significando que embora um `IDebugProperty2` pode representar essa entidade.  
+>  Esse uso de "property" não deve ser confundido com que uma variável de membro de uma classe, significando que embora um `IDebugProperty2` pode representar a essa entidade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -52,7 +36,7 @@ IDebugProperty2 : IUnknown
  O DE implementa essa interface para representar um determinado tipo de valor. Por exemplo, o valor pode ser um valor numérico como resultado de uma avaliação de expressão, um contexto de memória usado para exibir a memória ou uma lista de registros e seus valores.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Chamar [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obter essa interface, que representa o resultado de uma avaliação. `IDebugExpression2::EvaluateAsync`retorna essa interface, enviando uma [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interface para o SDM, que por sua vez chama [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) para recuperar a propriedade.  
+ Chamar [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obter essa interface, que representa o resultado de uma avaliação. `IDebugExpression2::EvaluateAsync`Retorna a essa interface, enviando um [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interface SDM, que por sua vez, chama [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) ao recuperar a propriedade.  
   
  [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) retorna essa interface para fornecer o documento de script associados.  
   
@@ -60,14 +44,14 @@ IDebugProperty2 : IUnknown
   
  [GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md) retorna essa interface para representar várias propriedades do programa, como um nome ou um contexto de memória.  
   
- [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) retorna essa interface para representar várias propriedades do quadro de pilha, como variáveis locais.  
+ [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) retorna essa interface para representar várias propriedades do quadro de pilhas como variáveis locais.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  A tabela a seguir mostra os métodos de `IDebugProperty2`.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Preenche um [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estrutura que descreve uma propriedade.|  
+|[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)|Preenche uma [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estrutura que descreve uma propriedade.|  
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|Define o valor de uma propriedade de uma cadeia de caracteres.|  
 |[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|Define o valor da propriedade do valor de uma determinada referência.|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|Enumera os filhos de uma propriedade.|  
@@ -76,15 +60,15 @@ IDebugProperty2 : IUnknown
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Retorna os bytes de memória que compõem o valor de uma propriedade.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Retorna o contexto de memória para um valor de propriedade.|  
 |[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Retorna o tamanho, em bytes, do valor da propriedade.|  
-|[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Retorna uma referência ao valor desta propriedade.|  
+|[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Retorna uma referência para o valor desta propriedade.|  
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Retorna as informações estendidas de uma propriedade.|  
   
 ## <a name="remarks"></a>Comentários  
- Uma propriedade, conforme representado por um `IDebugProperty2` interface, pode ser pensada como um valor com um nome, um tipo e um endereço. Em termos mais gerais, um `IDebugProperty2` pode representar qualquer coisa que tem uma estrutura hierárquica, com os pais e nós filho.  
+ Uma propriedade, conforme representado por um `IDebugProperty2` interface, pode ser pensada como um valor com um nome, um tipo e um endereço. Em termos mais gerais, um `IDebugProperty2` pode representar qualquer coisa que tenha uma estrutura hierárquica, com os pais e os nós filho.  
   
- Uma propriedade é geralmente transitório, dura apenas até o quadro de pilha atual, por exemplo. Por outro lado, uma referência, conforme representado por um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interface dura enquanto o valor permanece na memória.  
+ Uma propriedade é geralmente transitório, permanecendo apenas como o quadro de pilha atual, por exemplo. Por outro lado, uma referência, conforme representado por um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interface permanece como o valor permanece na memória.  
   
- O IDE pode usar o `IDebugProperty2` interface para permitir aos usuários navegar e modificar as propriedades em tempo de execução.  
+ O IDE pode usar o `IDebugProperty2` interface para permitir aos usuários navegar e modificar propriedades em tempo de execução.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

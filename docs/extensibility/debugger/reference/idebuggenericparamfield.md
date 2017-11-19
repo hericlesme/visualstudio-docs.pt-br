@@ -1,38 +1,23 @@
 ---
-title: IDebugGenericParamField | Documentos do Microsoft
+title: IDebugGenericParamField | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugGenericParamField interface
+helpviewer_keywords: IDebugGenericParamField interface
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6d2fff4038c02fb329a7b953be42353298311f96
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 78ad46b37274a3a2164f3618a1acbce55f0928bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 Representa um parâmetro para um tipo genérico de código gerenciado.  
@@ -56,7 +41,7 @@ IDebugGenericParamField : IDebugField
 |[GetFlags](../../../extensibility/debugger/reference/idebuggenericparamfield-getflags.md)|Recupera os sinalizadores para esse parâmetro genérico.|  
 |[GetIndex](../../../extensibility/debugger/reference/idebuggenericparamfield-getindex.md)|Recupera o índice do parâmetro genérico.|  
 |[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|Recupera o nome do parâmetro genérico.|  
-|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Recupera o proprietário desse parâmetro genérico do tipo ou método.|  
+|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Recupera o proprietário de tipo ou método desse parâmetro genérico.|  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: Sh.h  

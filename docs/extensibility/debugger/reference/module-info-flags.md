@@ -1,54 +1,38 @@
 ---
-title: MODULE_INFO_FLAGS | Documentos do Microsoft
+title: MODULE_INFO_FLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MODULE_INFO_FLAGS
-helpviewer_keywords:
-- MODULE_INFO_FLAGS enumeration
+f1_keywords: MODULE_INFO_FLAGS
+helpviewer_keywords: MODULE_INFO_FLAGS enumeration
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4e1c0eb4eebc8b6a8b55ef1845d755881748c2dd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 37c607089b548486e1df23f64f60d45f37f23978
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Especifica o estado de símbolos para um módulo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_MODULE_INFO_FLAGS {  
    MIF_SYMBOLS_LOADED = 0x0001  
 };  
 typedef DWORD MODULE_INFO_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_MODULE_INFO_FLAGS {  
    MIF_SYMBOLS_LOADED = 0x0001  
 };  

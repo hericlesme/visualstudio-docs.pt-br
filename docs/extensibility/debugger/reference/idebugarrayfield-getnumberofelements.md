@@ -1,53 +1,37 @@
 ---
-title: IDebugArrayField::GetNumberOfElements | Documentos do Microsoft
+title: IDebugArrayField::GetNumberOfElements | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugArrayField::GetNumberOfElements
-helpviewer_keywords:
-- IDebugArrayField::GetNumberOfElements method
+f1_keywords: IDebugArrayField::GetNumberOfElements
+helpviewer_keywords: IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 96580107297c9ee0f992c777701aac99cfa2a7fc
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 30b85f22a433a457eb9813790eb0456ba7275c0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 Obtém o número de elementos na matriz.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetNumberOfElements(   
    DWORD* pdwNumElements  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNumberOfElements(  
    out uint pdwNumElements  
 );  

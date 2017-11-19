@@ -1,41 +1,26 @@
 ---
-title: IDebugProcessSecurity | Documentos do Microsoft
+title: IDebugProcessSecurity | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugProcessSecurity interface
+helpviewer_keywords: IDebugProcessSecurity interface
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
-caps.latest.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 82d4e25bc78b49bbef0661f2f37188b6b08bf3d5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0e9c3a5f87540f8b255030654fb0917e3045ae19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity`é implementada por um fornecedor de porta para avisar o usuário que é seguro anexar ao processo.  
+`IDebugProcessSecurity`é implementado por um fornecedor de porta para avisar o usuário anexar ao processo é seguro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -52,7 +37,7 @@ IDebugProcessSecurity : IUnknown
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Avisa o usuário anexar ao processo de depuração é seguro.|  
   
 ## <a name="remarks"></a>Comentários  
- Implemente essa interface para mostrar um aviso e permitir que o usuário cancele se o processo ao qual você está anexando pode ser considerado inseguros.  
+ Implemente esta interface para mostrar um aviso e permitir que o usuário cancele se o processo ao qual você está anexando pode ser considerado inseguros.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

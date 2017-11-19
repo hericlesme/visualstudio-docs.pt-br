@@ -1,54 +1,52 @@
 ---
-title: "IDiaSymbol::get_container | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSymbol::get_container"
+title: Idiasymbol | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_container method
 ms.assetid: 24e832eb-80b3-484c-a41b-11477ec9de99
-caps.latest.revision: 6
-caps.handback.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f2a9dbd550247f432a7329bfbba224220ea6ea5a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_container
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Esta função recupera um ponteiro para um símbolo que representa o recipiente pai\/deste símbolo.  
+# <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
+Essa função recupera um ponteiro para um símbolo que representa o contêiner pai/desse símbolo.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```C++  
 HRESULT get_container(  
-   IDiaSymbol **pRetVal  
+   IDiaSymbol **pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna um ponteiro para um `IDiaSymbol` que contém informações sobre o recipiente deste símbolo.  
+ [out] Retorna um ponteiro para um `IDiaSymbol` que contém informações sobre o contêiner desse símbolo.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna S\_OK; Caso contrário, retornará S\_FALSE ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará S_OK; Caso contrário, retornará S_FALSE ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno de S\_FALSE significa que a propriedade não está disponível para o símbolo.  
+>  Um valor de retorno de S_FALSE significa que a propriedade não está disponível para o símbolo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descrição|  
-|---------------|---------------|  
+|-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|V 8.0 do SDK DIA|  
+|Versão:|V DIA SDK 8.0|  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

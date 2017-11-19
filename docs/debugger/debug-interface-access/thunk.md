@@ -1,67 +1,66 @@
 ---
-title: "Convers&#227;o thunk | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "propriedades de conversão [DIA SDK]"
-  - "Símbolo thunk"
+title: "Conversão | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- thunk properties [DIA SDK]
+- thunk symbol
 ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
-caps.latest.revision: 17
-caps.handback.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 514a0d7cea56158cbe15d59d2a809968b3c86979
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Convers&#227;o thunk
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Cada `thunk` é identificada por um `SymTagThunk` marca.  
+# <a name="thunk"></a>Conversão thunk
+Cada `thunk` é identificado por um `SymTagThunk` marca.  
   
-## Propriedades  
+## <a name="properties"></a>Propriedades  
  A tabela a seguir mostra as propriedades que são válidas para este tipo de símbolo.  
   
 |Propriedade|Tipo de dados|Descrição|  
-|-----------------|-------------------|---------------|  
-|[IDiaSymbol::get\_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Atributo de modificador de acesso, uma da [Enumeração CV\_access\_e](../../debugger/debug-interface-access/cv-access-e.md) valores \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Deslocamento de parte do local. Para obter detalhes, consulte a [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSegment::get\_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|`DWORD`|Parte da seção de local; Para obter detalhes, consulte a [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get\_classParent](../Topic/IDiaSymbol::get_classParent.md)|`IDiaSymbol*`|Colocando o pai da classe, se houver \(somente sob v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_classParentId](../Topic/IDiaSymbol::get_classParentId.md)|`DWORD`|ID do símbolo delimitador da classe pai \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|TRUE se a conversão estiver marcada como constante \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|TRUE se a conversão intermediária é uma introdução para uma função virtual \(somente no v 8.0 SDK do DIA ou posterior\)|  
-|[IDiaSymbol::get\_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|TRUE se a conversão intermediária é considerada estática \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Número de bytes de código em que a conversão intermediária.|  
-|[IDiaSymbol::get\_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo para o delimitador compiland, bloquear ou função.|  
-|[IDiaSymbol::get\_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID do símbolo pai lexical.|  
-|[IDiaSymbol::get\_locationType](../Topic/IDiaSymbol::get_locationType.md)|`DWORD`|Tem de pontos de extremidade estático local; Para obter detalhes, consulte [Locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md) enumeração.|  
-|[IDiaSymbol::get\_name](../Topic/IDiaSymbol::get_name.md)|`BSTR`|Nome da conversão intermediária.|  
-|[IDiaSymbol::get\_pure](../../debugger/debug-interface-access/idiasymbol-get-pure.md)|`BOOL`|TRUE se a conversão intermediária é puramente virtual \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Posição relativa desta conversão dentro de seu módulo.|  
-|[IDiaSymbol::get\_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID de índice do símbolo.|  
-|[IDiaSymbol::get\_symTag](../Topic/IDiaSymbol::get_symTag.md)|`DWORD`|Retorna `SymTagThunk` \(uma da [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valores\).|  
-|[IDiaSymbol::get\_targetOffset](../../debugger/debug-interface-access/idiasymbol-get-targetoffset.md)|`DWORD`|Parte do local do destino da conversão de compensação.|  
-|[IDiaSymbol::get\_targetRelativeVirtualAddress](../Topic/IDiaSymbol::get_targetRelativeVirtualAddress.md)|`DWORD`|Endereço virtual relativo do destino da conversão em seu bloco de delimitador.|  
-|[IDiaSymbol::get\_targetSection](../../debugger/debug-interface-access/idiasymbol-get-targetsection.md)|`DWORD`|Parte da seção do destino da conversão.|  
-|[IDiaSymbol::get\_targetVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetvirtualaddress.md)|`ULONGLONG`|Posição do destino da conversão da imagem executável.|  
-|[IDiaSymbol::get\_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Thunk tipo, conforme definido pela [Enumeração THUNK\_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md).|  
-|[IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|O tipo desta conversão \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID do símbolo de tipo \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`Se a conversão intermediária não estiver alinhada \(somente no v 8.0 SDK do DIA ou posterior\),|  
-|[IDiaSymbol::get\_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE`Se a conversão intermediária é virtual \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posição desta conversão dentro da imagem executável.|  
-|[IDiaSymbol::get\_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|O deslocamento da tabela virtual para esta conversão \(somente no v 8.0 SDK do DIA ou posterior\).|  
-|[IDiaSymbol::get\_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`Se a conversão estiver marcada como volátil \(somente no v 8.0 SDK do DIA ou posterior\).|  
+|--------------|---------------|-----------------|  
+|[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Atributo de modificador de acesso, um do [enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) valores (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte do deslocamento de local. Para obter detalhes, consulte o [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|`DWORD`|Parte da seção de local. Para obter detalhes, consulte o [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md).|  
+|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Delimitador pai da classe, se houver (somente sob v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID do símbolo delimitador de pai classe (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|TRUE se a conversão for marcada como constante (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|TRUE se a conversão é uma introdução para uma função virtual (somente no v 8.0 do SDK do DIA ou posterior)|  
+|[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|TRUE se a conversão for considerado estático (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Número de bytes de código em que a conversão.|  
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo compiland, bloco ou função delimitador.|  
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID do símbolo lexical pai.|  
+|[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|Pontos de extremidade ter local estático; Para obter detalhes, consulte [locais de símbolo](../../debugger/debug-interface-access/symbol-locations.md) enumeração.|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome da conversão.|  
+|[IDiaSymbol::get_pure](../../debugger/debug-interface-access/idiasymbol-get-pure.md)|`BOOL`|TRUE se a conversão é puramente virtual (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Posição relativa dessa conversão em seu módulo.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID de índice de símbolo.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagThunk` (um do [SymTagEnum enumeração](../../debugger/debug-interface-access/symtagenum.md) valores).|  
+|[IDiaSymbol::get_targetOffset](../../debugger/debug-interface-access/idiasymbol-get-targetoffset.md)|`DWORD`|Parte do deslocamento do local do destino da conversão.|  
+|[IDiaSymbol::get_targetRelativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetrelativevirtualaddress.md)|`DWORD`|Endereço virtual relativo do destino da conversão em seu bloco delimitador.|  
+|[IDiaSymbol::get_targetSection](../../debugger/debug-interface-access/idiasymbol-get-targetsection.md)|`DWORD`|Parte da seção do destino da conversão.|  
+|[IDiaSymbol::get_targetVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-targetvirtualaddress.md)|`ULONGLONG`|Posição do destino da conversão da imagem executável.|  
+|[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)|`DWORD`|Converter o tipo, conforme definido pelo [enumeração THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md).|  
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|O tipo dessa conversão (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID do símbolo de tipo (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE`Se a conversão não está alinhado (somente no v 8.0 do SDK do DIA ou posterior),|  
+|[IDiaSymbol::get_virtual](../../debugger/debug-interface-access/idiasymbol-get-virtual.md)|`BOOL`|`TRUE`Se a conversão é virtual (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posição dessa conversão dentro da imagem executável.|  
+|[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|O deslocamento da tabela virtual para esta conversão (somente no v 8.0 do SDK do DIA ou posterior).|  
+|[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE`Se a conversão é marcado como volátil (somente no v 8.0 do SDK do DIA ou posterior).|  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Hierarquia lexical de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)   
- [Enumeração THUNK\_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)
+ [Enumeração THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)

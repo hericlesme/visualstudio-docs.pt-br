@@ -1,48 +1,44 @@
 ---
-title: "Caixa de di&#225;logo Selecionar Tipo de C&#243;digo | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.selectengines"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "SQL"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurador, seleção de mecanismo"
-  - "depurando [Visual Studio], seleção de mecanismo"
-  - "depurando caixa de diálogo de seleção de mecanismo"
+title: "Selecione a caixa de diálogo de tipo de código | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.selectengines
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+- SQL
+helpviewer_keywords:
+- debugging [Visual Studio], engine selection
+- debugger, engine selection
+- debugging engine selection dialog box
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 421c8a206091bf69e20a814a693f1b88bbb0d843
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Caixa de di&#225;logo Selecionar Tipo de C&#243;digo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para abrir essa caixa de diálogo, abra a caixa de diálogo **Anexar ao Processo** e clique no botão **Selecionar**.  
+# <a name="select-code-type-dialog-box"></a>Caixa de diálogo Selecionar Tipo de Código
+Para abrir essa caixa de diálogo, abra o **anexar ao processo** caixa de diálogo e, em seguida, clique o **selecione** botão.  
   
- **Determinar automaticamente o tipo de código a ser depurado**.  
+ **Determinar automaticamente o tipo de código a ser depurado**  
  O depurador apropriado será selecionado com base no tipo de código que está executando.  
   
- **Depurar estes tipos de código:**  
+ **Depurar esses tipos de código:**  
  Na lista fornecida, escolha o tipo de código que você deseja depurar.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

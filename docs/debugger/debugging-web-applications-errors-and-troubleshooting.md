@@ -1,49 +1,49 @@
 ---
-title: "Depurando aplicativos Web: erros e solu&#231;&#227;o de problemas | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurador, erros"
-  - "depurando [Visual Studio], erros"
-  - "depurando aplicativos Web ASP.NET, solucionando problemas"
-  - "depurando script, solucionando problemas"
-  - "depurando aplicativos da Web, solucionando problemas"
-  - "depurando serviços Web, solucionando problemas"
-  - "erros [depurador], aplicativos da Web"
-  - "erros [Visual Studio], depurando aplicativos da Web"
-  - "scripts, depuração"
-  - "solucionando problemas em aplicativos Web"
-  - "aplicativos da Web, erros e solucionando problemas"
-  - "Serviços Web, erro de tempo limite durante a depuração"
+title: "Depurando aplicativos da Web: Erros e solução de problemas | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging script, troubleshooting
+- errors [debugger], Web applications
+- debugging ASP.NET Web applications, troubleshooting
+- scripts, debugging
+- errors [Visual Studio], debugging Web applications
+- debugging Web services, troubleshooting
+- Web services, timeout error when debugging
+- Web applications, errors and troubleshooting
+- debugging [Visual Studio], errors
+- debugger, errors
+- debugging Web applications, troubleshooting
+- troubleshooting Web applications
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
-caps.latest.revision: 11
-caps.handback.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6958776655f48fe22ef97f193ddffafe12da6cbb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Depurando aplicativos Web: erros e solu&#231;&#227;o de problemas
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurando aplicativos Web: erros e solução de problemas
 Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.  
   
 -   [Solução de problemas](../debugger/debugging-web-applications-troubleshooting.md)  
   
--   [Erro: o site usa endereço IP](../Topic/Error:%20Site%20Uses%20IP%20Address.md)  
+-   [Erro: o site usa endereço IP](../debugger/error-site-uses-ip-address.md)  
   
--   [Erro: falha na verificação de segurança porque o Serviço de Administração do IIS não respondeu](../Topic/Error:%20A%20Security%20Check%20Failed%20Because%20the%20IIS%20Admin%20Service%20Did%20Not%20Respond.md)  
+-   [Erro: falha em uma verificação de segurança porque o Serviço de Administração do IIS não respondeu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
 -   [Erro: ASP.NET não instalado](../debugger/error-aspnet-not-installed.md)  
   
@@ -57,6 +57,6 @@ Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.
   
 -   [Erro: não foi possível iniciar a depuração no servidor Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando aplicativos Web e script](../debugger/debugging-web-applications-and-script.md)

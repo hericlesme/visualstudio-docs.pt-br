@@ -1,12 +1,10 @@
 ---
-title: Customizing UI Features By Using Extensibility Interfaces | Microsoft Docs
+title: "Personalizando recursos de interface do usuário usando Interfaces de extensibilidade | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,70 +21,71 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
 ms.assetid: 3f3f7908-9404-4eda-8899-4d18c75e3b4a
-caps.latest.revision: 40
-author: kempb
-ms.author: kempb
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 47c9e12e7f61a4b6750a5c9aafa3dd964d07ad55
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 39d773ac7a4c3fa8541af30143a3d3031377b5b7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Customizing UI Features By Using Extensibility Interfaces
-  The Office development tools in Visual Studio provide classes and designers that handle many implementation details when you use them to create custom task panes, ribbon customizations, and Outlook form regions in a VSTO Add-in. However, you can also implement the *extensibility interface* for each feature yourself if you have special requirements.  
+# <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Personalizando Funcionalidades de Interface do Usuário usando interfaces de extensibilidade
+  As ferramentas de desenvolvimento do Office no Visual Studio fornecem classes e designers que lidam com muitos detalhes de implementação quando usá-los para criar regiões de formulário do Outlook, personalizações da faixa de opções e painéis de tarefas personalizados em um suplemento do VSTO. No entanto, você também pode implementar o *interface de extensibilidade* para cada recurso mesmo se você tiver requisitos especiais.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
-## <a name="overview-of-extensibility-interfaces"></a>Overview of Extensibility Interfaces  
- Microsoft Office defines a set of extensibility interfaces that COM VSTO Add-ins can implement to customize certain features, such as the ribbon. These interfaces provide full control over the features they provide access to. However, implementing these interfaces requires some knowledge of COM interoperability in managed code. In some cases, the programming model of these interfaces is also not intuitive for developers who are accustomed to the .NET Framework.  
+## <a name="overview-of-extensibility-interfaces"></a>Visão geral das Interfaces de extensibilidade  
+ Microsoft Office define um conjunto de interfaces de extensibilidade COM VSTO Add-ins podem implementar para personalizar determinados recursos, como a faixa de opções. Essas interfaces fornecem controle total sobre os recursos que eles fornecem acesso ao. No entanto, a implementação dessas interfaces requer algum conhecimento de interoperabilidade COM em código gerenciado. Em alguns casos, o modelo de programação dessas interfaces também não é intuitivo para desenvolvedores que estejam acostumados com o .NET Framework.  
   
- When you create a VSTO Add-in by using the Office project templates in Visual Studio, you do not have to implement the extensibility interfaces to customize features like the ribbon. The [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] implements these interfaces for you. Instead, you can use more intuitive classes and designers provided by Visual Studio. However, you can still implement the extensibility interfaces directly in your VSTO Add-in if you want to.  
+ Quando você criar um suplemento do VSTO usando os modelos de projeto do Office no Visual Studio, você não precisa implementar as interfaces de extensibilidade para personalizar recursos, como a faixa de opções. O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] implementa essas interfaces para você. Em vez disso, você pode usar mais intuitiva classes e designers fornecidos pelo Visual Studio. No entanto, você ainda pode implementar as interfaces de extensibilidade diretamente no seu suplemento do VSTO para.  
   
- For more information about the classes and designers that Visual Studio provides for these features, see [Custom Task Panes](../vsto/custom-task-panes.md), [Ribbon Designer](../vsto/ribbon-designer.md), and [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
+ Para obter mais informações sobre as classes e designers que o Visual Studio fornece esses recursos, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md), [Designer da faixa de opções](../vsto/ribbon-designer.md), e [criando regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).  
   
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Extensibility Interfaces You Can Implement in a VSTO Add-in  
- The following table lists the extensibility interfaces you can implement and the applications that support them.  
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Interfaces de extensibilidade, que você pode implementar em um suplemento do VSTO  
+ A tabela a seguir lista as interfaces de extensibilidade que você pode implementar e os aplicativos que dão suporte a eles.  
   
-|Interface|Description|Applications|  
+|Interface|Descrição|Aplicativos|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implement this interface to customize the ribbon UI. **Note:**  You can add a **Ribbon (XML)** item to a project to generate a default <xref:Microsoft.Office.Core.IRibbonExtensibility> implementation in your VSTO Add-in. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|  
-|<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implement this interface to create a custom task pane.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
-|<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implement this interface to create an Outlook form region.|Outlook|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implemente esta interface para personalizar a faixa de opções da interface do usuário. **Observação:** você pode adicionar uma **da faixa de opções (XML)** item a um projeto para gerar um padrão <xref:Microsoft.Office.Core.IRibbonExtensibility> implementação no seu suplemento do VSTO. Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Visio<br /><br /> Palavra|  
+|<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implemente esta interface para criar um painel tarefa personalizada.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Palavra|  
+|<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implemente esta interface para criar uma região de formulário do Outlook.|Outlook|  
   
- There are several other extensibility interfaces that are defined by Microsoft Office, such as <xref:Microsoft.Office.Core.IBlogExtensibility>, <xref:Microsoft.Office.Core.EncryptionProvider>, and <xref:Microsoft.Office.Core.SignatureProvider>. Visual Studio does not support implementing these interfaces in a VSTO Add-in created by using the Office project templates.  
+ Existem várias outras interfaces de extensibilidade que são definidos pelo Microsoft Office, como <xref:Microsoft.Office.Core.IBlogExtensibility>, <xref:Microsoft.Office.Core.EncryptionProvider>, e <xref:Microsoft.Office.Core.SignatureProvider>. O Visual Studio não dá suporte para a implementação dessas interfaces em um Add-in do VSTO criado usando os modelos de projeto do Office.  
   
-## <a name="using-extensibility-interfaces"></a>Using Extensibility Interfaces  
- To customize a UI feature by using an extensibility interface, implement the appropriate interface in your VSTO Add-in project. Then, override the <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> method to return an instance of the class that implements the interface.  
+## <a name="using-extensibility-interfaces"></a>Usando Interfaces de extensibilidade  
+ Para personalizar um recurso de interface do usuário usando uma interface de extensibilidade, implemente a interface adequada em seu projeto de suplemento do VSTO. Em seguida, substituir o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método para retornar uma instância da classe que implementa a interface.  
   
- For a sample application that demonstrates how to implement the <xref:Microsoft.Office.Core.IRibbonExtensibility>, <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, and <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> interfaces in a VSTO Add-in for Outlook, see the UI Manager Sample in [Office Development Samples](../vsto/office-development-samples.md).  
+ Para um aplicativo de exemplo que demonstra como implementar a <xref:Microsoft.Office.Core.IRibbonExtensibility>, <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, e <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> interfaces em um suplemento do VSTO para Outlook, consulte o exemplo de Gerenciador de interface do usuário [amostras de desenvolvimento do Office](../vsto/office-development-samples.md).  
   
-### <a name="example-of-implementing-an-extensibility-interface"></a>Example of Implementing an Extensibility Interface  
- The following code example demonstrates a simple implementation of the <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> interface to create a custom task pane. This example defines two classes:  
+### <a name="example-of-implementing-an-extensibility-interface"></a>Exemplo de implementação de uma Interface de extensibilidade  
+ O exemplo de código a seguir demonstra uma implementação simples do <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> interface para criar um painel tarefa personalizada. Este exemplo define duas classes:  
   
--   The `TaskPaneHelper` class implements <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> to create and display a custom task pane.  
+-   O `TaskPaneHelper` classe implementa <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> para criar e exibir um painel tarefa personalizada.  
   
--   The `TaskPaneUI` class provides the UI of the task pane. The attributes for the `TaskPaneUI` class make the class visible to COM, which enables Microsoft Office applications to discover the class. In this example, the UI is an empty <xref:System.Windows.Forms.UserControl>, but you can add controls by modifying the code.  
+-   O `TaskPaneUI` classe fornece a interface do usuário do painel de tarefas. Os atributos para o `TaskPaneUI` classe tornar a classe visível para COM, que permite que os aplicativos do Microsoft Office descobrir a classe. Neste exemplo, a interface do usuário está vazio <xref:System.Windows.Forms.UserControl>, mas você pode adicionar controles ao modificar o código.  
   
     > [!NOTE]  
-    >  To expose the `TaskPaneUI` class to COM, you must also set the **Register for COM Interop** property for the project.  
+    >  Para expor o `TaskPaneUI` classe ao COM, você também deve definir o **registrar para interoperabilidade COM** propriedade para o projeto.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)] [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+ [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+ [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- For more information about implementing <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, see [Creating Custom Task Panes in the 2007 Office System](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be) in the Microsoft Office documentation.  
+ Para obter mais informações sobre como implementar <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, consulte [criação de painéis de tarefas personalizados no sistema Office 2007](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be) na documentação do Microsoft Office.  
   
-### <a name="example-of-overriding-the-requestservice-method"></a>Example of Overriding the RequestService Method  
- The following code example demonstrates how to override the <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> method to return an instance of the `TaskPaneHelper` class from the previous code example. It checks the value of the *serviceGuid* parameter to determine which interface is being requested, and then returns an object that implements that interface.  
+### <a name="example-of-overriding-the-requestservice-method"></a>Exemplo de substituição do método RequestService  
+ O exemplo de código a seguir demonstra como substituir o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método para retornar uma instância do `TaskPaneHelper` classe do exemplo de código anterior. Ele verifica o valor da *serviceGuid* parâmetro para determinar qual interface solicitada e, em seguida, retorna um objeto que implementa essa interface.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)] [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]  
+ [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
+ [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]  
   
-## <a name="see-also"></a>See Also  
- [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Developing Office Solutions](../vsto/developing-office-solutions.md)   
- [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)  
+## <a name="see-also"></a>Consulte também  
+ [Explicações passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Desenvolvendo soluções do Office](../vsto/developing-office-solutions.md)   
+ [Chamando código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
+ [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)  
   
   

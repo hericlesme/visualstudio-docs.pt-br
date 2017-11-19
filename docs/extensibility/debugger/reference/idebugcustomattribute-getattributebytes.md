@@ -1,54 +1,38 @@
 ---
-title: IDebugCustomAttribute::GetAttributeBytes | Documentos do Microsoft
+title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCustomAttribute::GetAttributeBytes
-helpviewer_keywords:
-- IDebugCustomAttribute::GetAttributeBytes
+f1_keywords: IDebugCustomAttribute::GetAttributeBytes
+helpviewer_keywords: IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3999e70219855e7b84faf37d8eb6f1b9f58203c8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1258b2b7fdc1c91eaaa6265ce74a3891deda8ab0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Obtém as informações do atributo como um blob de bytes.  
+Obtém as informações de atributo como um blob de bytes.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetAttributeBytes(   
    BYTE*  ppBlob,  
    DWORD* pdwLen  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAttributeBytes(  
    ref byte[] ppBlob,   
    ref uint   pdwLen  
@@ -57,16 +41,16 @@ int GetAttributeBytes(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppBlob`  
- [no, out] Uma matriz é preenchida com os bytes de atributo.  
+ [out no] Uma matriz que é preenchida com os bytes de atributo.  
   
  `pdwLen`  
- [no, out] Especifica o número máximo de bytes a retornar o `ppBlob` de matriz e retorna o número de bytes gravados na matriz.  
+ [out no] Especifica o número máximo de bytes a serem retornados no `ppBlob` de matriz e retorna o número de bytes gravados para a matriz.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará S_OK; Caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Definir o `ppBlob` atributos de parâmetro para um valor null para retornar o número de bytes disponíveis. Em seguida, alocar uma matriz e passar a matriz em para o `ppBlob` parâmetro.  
+ Definir o `ppBlob` atributos de parâmetro para um valor null para retornar o número de bytes disponíveis. Em seguida, aloque uma matriz e passar a matriz para o `ppBlob` parâmetro.  
   
  Os bytes de atributo representam os dados brutos do atributo personalizado.  
   

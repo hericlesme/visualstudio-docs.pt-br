@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Store and Retrieve Date Values in Excel Ranges | Microsoft Docs'
+title: 'Como: programaticamente armazenar e recuperar valores de data em intervalos do Excel | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -22,71 +20,76 @@ helpviewer_keywords:
 - ranges, storing date values
 - date values
 ms.assetid: e1cdd262-0356-4499-8bc5-e730f74235a2
-caps.latest.revision: 40
-author: kempb
-ms.author: kempb
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 10f7e32f56c3e32f92e6601210bedc65bac78625
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 4d19de6848da22238dc1cf394fa3d417ea0d8c88
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>How to: Programmatically Store and Retrieve Date Values in Excel Ranges
-  You can store and retrieve values in a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Como armazenar e recuperar valores de datas em intervalos do Excel programaticamente
+  Você pode armazenar e recuperar valores em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto nativo de intervalo do Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- If you store a date value that falls on or after 1/1/1900 in a range using Office development tools in Visual Studio, it is stored in OLE Automation (OA) format. You must use the <xref:System.DateTime.FromOADate%2A> method to retrieve the value of OLE Automation (OA) dates. If the date is earlier than 1/1/1900, it is stored as a string.  
+ Se você armazenar um valor de data que está em ou após 1/1/1900 em um intervalo usando ferramentas de desenvolvimento do Office no Visual Studio, ele é armazenado no formato OLE Automation (OA). Você deve usar o <xref:System.DateTime.FromOADate%2A> método para recuperar o valor de datas de OLE Automation (OA). Se a data for anterior a 1/1/1900, ela será armazenada como uma cadeia de caracteres.  
   
 > [!NOTE]  
->  Excel dates differ from OLE Automation dates for the first two months of 1900. There are also differences if the **1904 date system** option is checked. The code examples below do not address these differences.  
+>  Datas do Excel são diferentes das datas de automação OLE para os primeiros dois meses de 1900. Também há diferenças se o **sistema de data de 1904** opção estiver marcada. Os exemplos de código a seguir não abordam essas diferenças.  
   
-## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
+## <a name="using-a-namedrange-control"></a>Usando um controle NamedRange  
   
--   This example is for document-level customizations. The following code must be placed in a sheet class, not in the `ThisWorkbook` class.  
+-   Este exemplo é para personalizações no nível do documento. O código a seguir deve ser colocado em uma classe de folha, não o `ThisWorkbook` classe.  
   
-#### <a name="to-store-a-date-value-in-a-named-range"></a>To store a date value in a named range  
+#### <a name="to-store-a-date-value-in-a-named-range"></a>Para armazenar um valor de data em um intervalo nomeado  
   
-1.  Create a <xref:Microsoft.Office.Tools.Excel.NamedRange> control at cell **A1**.  
+1.  Criar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle na célula **A1**.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]  [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]
+     [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]  
   
-2.  Set today's date as the value for `NamedRange1`.  
+2.  Definir a data de hoje como o valor para `NamedRange1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]  [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
+     [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]  
   
-#### <a name="to-retrieve-a-date-value-from-a-named-range"></a>To retrieve a date value from a named range  
+#### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Para recuperar um valor de data de um intervalo nomeado  
   
-1.  Retrieve the date value from `NamedRange1`.  
+1.  Recuperar o valor de data de `NamedRange1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]  [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
+     [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]  
   
-## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
+## <a name="using-native-excel-ranges"></a>Usando intervalos do Excel nativo  
   
-#### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>To store a date value in a native Excel range object  
+#### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Para armazenar um valor de data em um objeto nativo de intervalo do Excel  
   
-1.  Create a <xref:Microsoft.Office.Interop.Excel.Range> that represents cell **A1**.  
+1.  Criar um <xref:Microsoft.Office.Interop.Excel.Range> que representa a célula **A1**.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]  
   
-2.  Set today's date as the value for `rng`.  
+2.  Definir a data de hoje como o valor para `rng`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]  
   
-#### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>To retrieve a date value from a native Excel range object  
+#### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Para recuperar um valor de data de um objeto nativo de intervalo do Excel  
   
-1.  Retrieve the date value from `rng`.  
+1.  Recuperar o valor de data de `rng`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Ranges](../vsto/working-with-ranges.md)   
- [Excel Object Model Overview](../vsto/excel-object-model-overview.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [How to: Programmatically Refer to Worksheet Ranges in Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Trabalhando com intervalos](../vsto/working-with-ranges.md)   
+ [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)   
+ [Controle NamedRange](../vsto/namedrange-control.md)   
+ [Como: referência a intervalos de planilhas em código programaticamente](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Como: adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

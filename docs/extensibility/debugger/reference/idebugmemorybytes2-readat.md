@@ -1,48 +1,33 @@
 ---
-title: IDebugMemoryBytes2::ReadAt | Documentos do Microsoft
+title: IDebugMemoryBytes2::ReadAt | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugMemoryBytes2::ReadAt
+f1_keywords: IDebugMemoryBytes2::ReadAt
 helpviewer_keywords:
 - IDebugMemoryBytes2::ReadAt method
 - ReadAt method
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8d89bcaa34e62141e5cbe21ee09e9fdb219f7d76
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4de46d516efca856deef6fa9070e466de73e258f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-Lê uma sequência de bytes, começando em um local especificado.  
+Lê uma sequência de bytes, começando em um local específico.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT ReadAt(   
    IDebugMemoryContext2* pStartContext,  
    DWORD                 dwCount,  
@@ -52,7 +37,7 @@ HRESULT ReadAt(
 );  
 ```  
   
-```c#  
+```csharp  
 int ReadAt(  
    IDebugMemoryContext2 pStartContext,  
    uint                 dwCount,  
@@ -64,31 +49,31 @@ int ReadAt(
   
 #### <a name="parameters"></a>Parâmetros  
  `pStartContext`  
- [in] O [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica onde iniciar a leitura de bytes.  
+ [in] O [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica onde começar a ler bytes.  
   
  `dwCount`  
- [in] O número de bytes a serem lidos. Também especifica o comprimento da `rgbMemory` matriz.  
+ [in] O número de bytes a serem lidos. Também especifica o comprimento do `rgbMemory` matriz.  
   
  `rgbMemory`  
- [no, out] Matriz preenchido com os bytes realmente lidos.  
+ [out no] Matriz preenchido com os bytes realmente lidos.  
   
  `pdwRead`  
  [out] Retorna o número de bytes contíguos realmente lidos.  
   
  `pdwUnreadable`  
- [no, out] Retorna o número de bytes ilegíveis. Pode ser um valor nulo se o cliente não tem interesse em número de bytes ilegíveis.  
+ [out no] Retorna o número de bytes ilegíveis. Pode ser um valor nulo se o cliente tem interesse no número de bytes ilegíveis.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará S_OK; Caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Se 100 bytes são solicitados e os 50 primeiro são legíveis, os próximos 20 são ilegíveis e os 30 restantes são legíveis, esse método retorna:  
+ Se 100 bytes são solicitados a 50 primeiro são legíveis, os próximos 20 ilegível, e são 30 restantes são legíveis, esse método retorna:  
   
  *`pdwRead` = 50  
   
  *`pdwUnreadable` = 20  
   
- Nesse caso, porque `*pdwRead + *pdwUnreadable < dwCount`, o chamador deve fazer uma chamada adicional para ler os bytes restantes 30 a 100 original solicitada e o [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto passado a `pStartContext` parâmetro deve ser avançado por 70.  
+ Nesse caso, porque `*pdwRead + *pdwUnreadable < dwCount`, o chamador deve fazer uma chamada adicional para ler os bytes restantes de 30 a 100 original solicitada e o [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto passado a `pStartContext` parâmetro deve ser adiantado por 70.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

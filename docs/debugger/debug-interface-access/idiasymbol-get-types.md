@@ -1,55 +1,53 @@
 ---
-title: "IDiaSymbol::get_types | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSymbol::get_types"
+title: ': Get_types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_types method
 ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c53a8866856288aa039c0e23b6244da80184285d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_types
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 Recupera uma matriz de tipos específicos de compilador para esse símbolo.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_types (   
-   DWORD       cTypes,  
-   DWORD*      pcTypes,  
-   IDiaSymbol* types[]  
+```C++  
+HRESULT get_types (   
+   DWORD       cTypes,  
+   DWORD*      pcTypes,  
+   IDiaSymbol* types[]  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `cTypes`  
- \[in\] Tamanho do buffer para armazenar os dados.  
+ [in] Tamanho do buffer para armazenar os dados.  
   
  `pcTypes`  
- \[out\] Retorna o número de tipos escritos, ou então, se a `types` parâmetro é `NULL`, em seguida, o número total de tipos disponíveis.  
+ [out] Retorna o número de tipos gravado, ou, se o `types` parâmetro é `NULL`, em seguida, o número total de tipos disponíveis.  
   
  `types[]`  
- \[out\] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam todos os tipos desse símbolo.  
+ [out] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam todos os tipos para esse símbolo.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

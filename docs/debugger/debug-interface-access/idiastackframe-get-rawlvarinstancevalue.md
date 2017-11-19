@@ -1,56 +1,54 @@
 ---
-title: "IDiaStackFrame::get_rawLVarInstanceValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaStackFrame::get_rawLVarInstanceValue"
+title: ': Get_rawlvarinstancevalue | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackFrame::get_rawLVarInstanceValue method
 ms.assetid: ce526259-85a6-475b-9274-0b3a21d95db2
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5559ad617afbb2ae4a65ecbf399f7f79d93ae1c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackFrame::get_rawLVarInstanceValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Este método recupera o valor da variável local especificado como bytes brutos.  
+# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+Esse método recupera o valor da variável local especificada como bytes brutos.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```C++  
 HRESULT get_rawLVarInstanceValue(  
-   IDiaLVarInstance* pInstance,  
-   DWORD             cbDataMax,  
-   DWORD*            pcbData,  
-   BYTE*             pbData  
+   IDiaLVarInstance* pInstance,  
+   DWORD             cbDataMax,  
+   DWORD*            pcbData,  
+   BYTE*             pbData  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pInstance`  
- \[in\] Um `IDiaLVarInstance` representando uma instância de variável local para obter o valor do objeto.  
+ [in] Um `IDiaLVarInstance` que representa uma instância de variável local para obter o valor do objeto.  
   
  `cbDataMax`  
- \[in\] Número máximo de bytes no buffer apontada por `pbData`.  Isso pode ter no máximo de 8 bytes \(`sizeof(ULONGLONG)`\).  
+ [in] Número máximo de bytes no buffer apontado pelo `pbData`. Isso pode ter um máximo de 8 bytes (`sizeof(ULONGLONG)`).  
   
  `pcbData`  
- \[out\] Retorna o número real de bytes armazenados no buffer.  
+ [out] Retorna o número real de bytes armazenados em buffer.  
   
  `pbData`  
- \[out\] Um buffer para ser preenchido com dados.  Isso não pode ser `NULL`.  
+ [out] Um buffer a ser preenchida com dados. Esse não pode ser `NULL`.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

@@ -1,48 +1,46 @@
 ---
-title: "IDiaLoadCallback::NotifyOpenPDB | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaLoadCallback::NotifyOpenPDB"
+title: ': Notifyopenpdb | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLoadCallback::NotifyOpenPDB method
 ms.assetid: c0547f99-8468-4e57-82ca-9ef7d6707c8a
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0767be9a51c0d5c3395df9586c5c646a41b78e7e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLoadCallback::NotifyOpenPDB
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Chamado quando o candidato a abrir um arquivo. PDB.  
+# <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
+Chamado quando um arquivo. PDB de candidato é aberto.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT NotifyOpenPDB (   
-   LPCOLESTR pdbPath,  
-   HRESULT   resultCode  
+```C++  
+HRESULT NotifyOpenPDB (   
+   LPCOLESTR pdbPath,  
+   HRESULT   resultCode  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pdbPath`  
- \[in\] O caminho completo do arquivo. PDB.  
+ [in] O caminho completo do arquivo. PDB.  
   
  `resultCode`  
- \[in\] Código que indica o sucesso \(`S_OK`\) ou falha da carga como aplicada a este arquivo.  
+ [in] Código que indica o sucesso (`S_OK`) ou a falha da carga conforme aplicado a este arquivo.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retorna um código de erro.  O código de retorno costuma ser ignorado.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro. O código de retorno normalmente é ignorado.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

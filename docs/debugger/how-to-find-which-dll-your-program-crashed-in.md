@@ -1,60 +1,56 @@
 ---
-title: "Como localizar em qual DLL o programa falhou | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.dll"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "depurador, Falhas de DLL"
-  - "depurando [Visual Studio], Falhas de DLL"
-  - "DLLs, ordem de carga de"
-  - "erros [depurador], Falhas de DLL"
-  - "Caixa de diálogo Lista de Módulos"
-  - "Janela Módulos"
+title: 'Como: localizar qual DLL o programa falhou | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.dll
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugger, DLL crashes
+- Module List dialog box
+- errors [debugger], DLL crashes
+- Modules window
+- debugging [Visual Studio], DLL crashes
+- DLLs, load order of
 ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
-caps.latest.revision: 17
-caps.handback.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6232f86e9e9f5d59e9e109d08b75120cc90902c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como localizar em qual DLL o programa falhou
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Como localizar em qual DLL o programa falhou
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas.  Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas.  Para obter mais informações, consulte [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/pt-br/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- Se houver falhas no aplicativo durante uma chamada a uma DLL do sistema ou o código de outra pessoa, você precisará descobrir qual DLL estava ativa quando a falha ocorreu.  Se você tiver uma falha em uma DLL fora de seu próprio programa, poderá identificar o local usando a janela **Módulos**.  
+ Se houver falhas no aplicativo durante uma chamada a uma DLL do sistema ou o código de outra pessoa, você precisará descobrir qual DLL estava ativa quando a falha ocorreu. Se você tiver uma falha em uma DLL fora do seu próprio programa, você pode identificar o local usando o **módulos** janela.  
   
-### Para descobrir onde ocorreu uma falha usando a janela Módulos  
+### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Para descobrir onde ocorreu uma falha usando a janela Módulos  
   
 1.  Observe o endereço onde a falha ocorreu.  
   
-2.  No menu **Depurar**, escolha **Janelas** e clique em **Módulos**.  
+2.  Sobre o **depurar** menu, escolha **Windows**e clique em **módulos**.  
   
-3.  Na janela **Módulos**, localize a coluna **Endereço**.  Você poderá precisar usar a barra de rolagem para vê\-la.  
+3.  No **módulos** janela, localize a **endereço** coluna. Você poderá precisar usar a barra de rolagem para vê-la.  
   
-4.  Clique no botão **Endereço** na parte superior da coluna para classificar as DLLs por endereço.  
+4.  Clique o **endereço** botão na parte superior da coluna para classificar as DLLs por endereço.  
   
 5.  Examine a lista classificada para localizar a DLL cujo intervalo de endereço contém o local da falha.  
   
-6.  Examine as colunas **Nome** e **Caminho** para ver o nome e o caminho da DLL.  
+6.  Examine o **nome** e **caminho** colunas para ver o nome da DLL e o caminho.  
   
-## Consulte também  
- [Como depurar DLLs nativas](../Topic/How%20to:%20Debug%20Native%20DLLs.md)   
+## <a name="see-also"></a>Consulte também  
+ [Depurando projetos de DLL](../debugger/debugging-dll-projects.md)   
  [Como usar a janela Módulos](../debugger/how-to-use-the-modules-window.md)

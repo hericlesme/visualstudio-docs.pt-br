@@ -1,11 +1,10 @@
 ---
-title: 'CA1413: Avoid non-public fields in COM visible value types | Microsoft Docs'
+title: "CA1413: Evitar campos não públicos em tipos de valor visíveis COM | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,64 +14,49 @@ helpviewer_keywords:
 - CA1413
 - AvoidNonpublicFieldsInComVisibleValueTypes
 ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 505ea1325c7fbbbd27071d7c1586533ce97508f4
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e8dc7c435d9f853cfb67f7c45f5ec7116ff6fb8e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Avoid non-public fields in COM visible value types
+# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: evitar campos não públicos em tipos de valor visíveis COM
 |||  
 |-|-|  
-|TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|  
+|NomeDoTipo|AvoidNonpublicFieldsInComVisibleValueTypes|  
 |CheckId|CA1413|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Breaking|  
+|Categoria|Microsoft.Interoperability|  
+|Alteração Significativa|Quebra|  
   
-## <a name="cause"></a>Cause  
- A value type that is specifically marked as visible to Component Object Model (COM) declares a nonpublic instance field.  
+## <a name="cause"></a>Causa  
+ Um tipo de valor que está marcado como visível para COM Component Object Model () especificamente declara um campo de instância não público.  
   
-## <a name="rule-description"></a>Rule Description  
- Nonpublic instance fields of COM-visible value types are visible to COM clients. Review the content of the field for information that should not be exposed, or that will have an unintended design or security effect.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Os campos de instância não pública dos tipos de valor visíveis por COM permanecem visíveis para clientes COM. Revise o conteúdo do campo para informações que não devem ser expostos ou que terá um efeito não intencional de design ou de segurança.  
   
- By default, all public value types are visible to COM. However, to reduce false positives, this rule requires the COM visibility of the type to be explicitly stated. The containing assembly must be marked with the <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> set to `false` and the type must be marked with the <xref:System.Runtime.InteropServices.ComVisibleAttribute> set to `true`.  
+ Por padrão, todos os tipos de valor público estão visíveis para COM. No entanto, para reduzir o número de falsos positivos, essa regra requer a visibilidade de COM do tipo a ser declarado explicitamente. O assembly contendo deve ser marcado com o <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> definida como `false` e o tipo deve ser marcado com o <xref:System.Runtime.InteropServices.ComVisibleAttribute> definido como `true`.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule and keep the field hidden, change the value type to a reference type or remove the <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute from the type.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra e manter o campo ocultado, altere o tipo de valor para um tipo de referência ou remova o <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo do tipo.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if public exposure of the field is acceptable.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso de que essa regra se exposição pública do campo for aceitável.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates the rule.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra um tipo que viola a regra.  
   
- [!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)] [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]  
+ [!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
+ [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1407: Avoid static members in COM visible types](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1407: evitar membros estáticos em tipos visíveis em COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
   
- [CA1017: Mark assemblies with ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+ [CA1017: marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## <a name="see-also"></a>See Also  
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)   
- [Qualifying .NET Types for Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+## <a name="see-also"></a>Consulte também  
+ [Interoperação com código não gerenciado](/dotnet/framework/interop/index)   
+ [Qualificando tipos .NET para interoperação](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

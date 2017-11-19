@@ -1,40 +1,24 @@
 ---
-title: IDebugAlias::GetName | Documentos do Microsoft
+title: IDebugAlias::GetName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugAlias::GetName
-helpviewer_keywords:
-- IDebugAlias::GetName method
+f1_keywords: IDebugAlias::GetName
+helpviewer_keywords: IDebugAlias::GetName method
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2c3f265749227289eb28b9099bd71f45d83c8bf8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 26b9eec300d93695785605549fa109099008d799
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 Obtém o nome desse alias.  
@@ -47,7 +31,7 @@ HRESULT GetName(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetName(  
    out string pbstrName  
 );  

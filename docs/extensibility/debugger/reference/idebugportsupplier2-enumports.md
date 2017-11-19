@@ -1,53 +1,37 @@
 ---
-title: IDebugPortSupplier2::EnumPorts | Documentos do Microsoft
+title: IDebugPortSupplier2::EnumPorts | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPortSupplier2::EnumPorts
-helpviewer_keywords:
-- IDebugPortSupplier2::EnumPorts
+f1_keywords: IDebugPortSupplier2::EnumPorts
+helpviewer_keywords: IDebugPortSupplier2::EnumPorts
 ms.assetid: 88b57fd2-eba1-44fa-bd34-cf2ad2b1ff87
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 26a5f6eb0cd37cbba8146485c8d514caa056a66e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fd8f434177a0e665283786763a042edba2f65e69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
-Recupera uma lista de todas as portas fornecidos por um fornecedor de porta.  
+Recupera uma lista de todas as portas fornecido por um fornecedor de porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT EnumPorts(   
    IEnumDebugPorts2** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumPorts(   
    out IEnumDebugPorts2 ppEnum  
 );  
@@ -58,7 +42,7 @@ int EnumPorts(
  [out] Retorna um [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) objeto que contém uma lista de portas fornecido.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   

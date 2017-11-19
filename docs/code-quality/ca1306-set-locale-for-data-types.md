@@ -1,11 +1,10 @@
 ---
-title: 'CA1306: Set locale for data types | Microsoft Docs'
+title: 'CA1306: Definir localidade para tipos de dados | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,58 +14,42 @@ helpviewer_keywords:
 - CA1306
 - SetLocaleForDataTypes
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 80905172a6a64af9056945935562f7d6b3bb778b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2a8760aa983cdd798e5ea46fa4161375f0eab7fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Set locale for data types
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306: definir localidade para tipos de dados
 |||  
 |-|-|  
-|TypeName|SetLocaleForDataTypes|  
+|NomeDoTipo|SetLocaleForDataTypes|  
 |CheckId|CA1306|  
-|Category|Microsoft.Globalization|  
-|Breaking Change|Non-breaking|  
+|Categoria|Microsoft.Globalization|  
+|Alteração Significativa|Não recentes|  
   
-## <a name="cause"></a>Cause  
- A method or constructor created one or more <xref:System.Data.DataTable?displayProperty=fullName> or <xref:System.Data.DataSet?displayProperty=fullName> instances and did not explicitly set the locale property (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> or <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).  
+## <a name="cause"></a>Causa  
+ Um método ou construtor criado um ou mais <xref:System.Data.DataTable?displayProperty=fullName> ou <xref:System.Data.DataSet?displayProperty=fullName> instâncias e não definiu explicitamente a propriedade de localidade (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ou <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).  
   
-## <a name="rule-description"></a>Rule Description  
- The locale determines culture-specific presentation elements for data, such as formatting used for numeric values, currency symbols, and sort order. When you create a <xref:System.Data.DataTable> or <xref:System.Data.DataSet>, you should set the locale explicitly. By default, the locale for these types is the current culture. For data that is stored in a database or file and is shared globally, the locale should ordinarily be set to the invariant culture (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). When data is shared across cultures, using the default locale can cause the contents of the <xref:System.Data.DataTable> or <xref:System.Data.DataSet> to be presented or interpreted incorrectly.  
+## <a name="rule-description"></a>Descrição da Regra  
+ A localidade determina os elementos de apresentação específicas da cultura de dados, como formatação usada para valores numéricos, símbolos de moeda e ordem de classificação. Quando você cria um <xref:System.Data.DataTable> ou <xref:System.Data.DataSet>, você deve definir explicitamente a localidade. Por padrão, a localidade para esses tipos é a cultura atual. Para dados armazenados em um banco de dados ou arquivo e são compartilhados globalmente, a localidade normalmente deve ser definida para a cultura invariável (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Quando dados são compartilhados entre culturas, usando a localidade padrão pode causar o conteúdo do <xref:System.Data.DataTable> ou <xref:System.Data.DataSet> sejam apresentadas ou interpretados incorretamente.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, explicitly set the locale for the <xref:System.Data.DataTable> or <xref:System.Data.DataSet>.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, defina explicitamente a localidade para o <xref:System.Data.DataTable> ou <xref:System.Data.DataSet>.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the library or application is for a limited local audience, the data is not shared, or the default setting yields the desired behavior in all supported scenarios.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ É seguro suprimir um aviso dessa regra quando o aplicativo ou a biblioteca é para um público local limitado, os dados não são compartilhados ou a configuração padrão produz o comportamento desejado em todos os cenários com suporte.  
   
-## <a name="example"></a>Example  
- The following example creates two <xref:System.Data.DataTable> instances.  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir cria dois <xref:System.Data.DataTable> instâncias.  
   
  [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  <xref:System.Data.DataTable?displayProperty=fullName>   
  <xref:System.Data.DataSet?displayProperty=fullName>   
  <xref:System.Globalization.CultureInfo?displayProperty=fullName>   

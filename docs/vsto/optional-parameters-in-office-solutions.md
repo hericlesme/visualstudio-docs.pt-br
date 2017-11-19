@@ -1,12 +1,10 @@
 ---
-title: Optional Parameters in Office Solutions | Microsoft Docs
+title: "Parâmetros opcionais em soluções do Office | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,60 +19,61 @@ helpviewer_keywords:
 - optional parameters [Office development in Visual Studio]
 - parameters [Office development in Visual Studio], optional
 ms.assetid: 109eaef6-08bb-4b59-a29e-921f856027cc
-caps.latest.revision: 43
-author: kempb
-ms.author: kempb
+caps.latest.revision: "43"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c17f892328e948f052225d03eacd289b09e64e0b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 4293d13ffc5b69c23c0b613a3d9747248d6fa790
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="optional-parameters-in-office-solutions"></a>Optional Parameters in Office Solutions
-  Many of the methods in the object models of Microsoft Office applications accept optional parameters. If you use Visual Basic to develop an Office solution in Visual Studio, you do not have to pass a value for optional parameters because the default values are automatically used for each missing parameter. In most cases, you can also omit optional parameters in Visual C# projects. However, you cannot omit optional **ref** parameters of the `ThisDocument` class in document-level Word projects.  
+# <a name="optional-parameters-in-office-solutions"></a>Parâmetros opcionais em soluções do Office
+  Muitos métodos nos modelos de objeto dos aplicativos do Microsoft Office aceitam parâmetros opcionais. Se você usar o Visual Basic para desenvolver uma solução do Office no Visual Studio, você não precisa passar um valor para parâmetros opcionais, como os valores padrão são usados automaticamente para cada parâmetro ausente. Na maioria dos casos, você também pode omitir os parâmetros opcionais em projetos do Visual c#. No entanto, você não pode omitir opcional **ref** parâmetros de `ThisDocument` classe em projetos de nível de documento do Word.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- For more information about working with optional parameters in Visual C# and Visual Basic projects, see [Named and Optional Arguments &#40;C&#35; Programming Guide&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) and [Optional Parameters &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
+ Para obter mais informações sobre como trabalhar com parâmetros opcionais em projetos do Visual c# e Visual Basic, consulte [&#40; nome e argumentos opcionais C &#35; Guia de programação &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) e [parâmetros opcionais &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
   
 > [!NOTE]  
->  In earlier versions of Visual Studio, you must pass a value for every optional parameter in Visual C# projects. For convenience, these projects include a global variable named `missing` that you can pass to an optional parameter when you want to use the default value of the parameter. Visual C# projects for Office in Visual Studio still include the `missing` variable, but you typically do not need to use it when you develop Office solutions in [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], except when you call methods with optional **ref** parameters in the `ThisDocument` class in document-level projects for Word.  
+>  Em versões anteriores do Visual Studio, você deve passar um valor para cada parâmetro opcional em projetos do Visual c#. Para sua conveniência, esses projetos incluem uma variável global chamada `missing` que você pode passar para um parâmetro opcional quando você deseja usar o valor padrão do parâmetro. Projetos Visual c# para o Office no Visual Studio ainda incluam o `missing` variável, mas você normalmente não é necessário usá-lo ao desenvolver soluções do Office em [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], exceto quando você chama métodos com opcional **ref** parâmetros de `ThisDocument` classe em projetos de nível de documento para Word.  
   
-## <a name="example-in-excel"></a>Example in Excel  
- The <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> method has many optional parameters. You can specify values for some parameters and accept the default value of others as shown in the following code example. This example requires a document-level project with a worksheet class named `Sheet1`.  
+## <a name="example-in-excel"></a>Exemplo do Excel  
+ O <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> método tem muitos parâmetros opcionais. Você pode especificar valores para alguns parâmetros e aceitar o valor padrão de outras pessoas, conforme mostrado no exemplo de código a seguir. Este exemplo requer que um projeto no nível do documento com uma classe de planilha denominada `Sheet1`.  
   
- [!code-csharp[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/CSharp/excelworkbook1/Sheet1.cs#1)] [!code-vb[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/VisualBasic/excelworkbook1/Sheet1.vb#1)]  
+ [!code-csharp[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/CSharp/excelworkbook1/Sheet1.cs#1)]
+ [!code-vb[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/VisualBasic/excelworkbook1/Sheet1.vb#1)]  
   
-## <a name="example-in-word"></a>Example in Word  
- The <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> method has many optional parameters. You can specify values for some parameters and accept the default value of others as shown in the following code example.  
+## <a name="example-in-word"></a>Exemplo no Word  
+ O <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método tem muitos parâmetros opcionais. Você pode especificar valores para alguns parâmetros e aceitar o valor padrão de outras pessoas, conforme mostrado no exemplo de código a seguir.  
   
- [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)] [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
+ [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
+ [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="using-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Using Optional Parameters of Methods in the ThisDocument Class in Visual C# Document-Level Projects for Word  
- The Word object model contains many methods with optional **ref** parameters that accept <xref:System.Object> values. However, you cannot omit optional **ref** parameters of methods of the generated `ThisDocument` class in Visual C# document-level projects for Word. Visual C# enables you to omit optional **ref** parameters only for methods of interfaces, not classes. For example, the following code example does not compile, because you cannot omit optional **ref** parameters of the <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> method of the `ThisDocument` class.  
+## <a name="using-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Usando parâmetros opcionais dos métodos na classe ThisDocument em projetos Visual c# no nível de documento para Word  
+ O modelo de objeto do Word contém vários métodos com opcional **ref** parâmetros que aceitam <xref:System.Object> valores. No entanto, você não pode omitir opcional **ref** parâmetros dos métodos de gerado `ThisDocument` classe no Visual c# projetos no nível de documento para Word. Visual c# permite omitir opcional **ref** parâmetros apenas para os métodos das interfaces, não classes. Por exemplo, o exemplo de código a seguir não é compilado, porque você não pode omitir opcional **ref** parâmetros do <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> método o `ThisDocument` classe.  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
   
- When you call methods of the `ThisDocument` class, follow these guidelines:  
+ Quando você chama os métodos para o `ThisDocument` de classe, siga estas diretrizes:  
   
--   To accept the default value of an optional **ref** parameter, pass the `missing` variable to the parameter. The `missing` variable is automatically defined in Visual C# Office projects and is assigned to the value <xref:System.Type.Missing> in the generated project code.  
+-   Para aceitar o valor padrão de um recurso opcional **ref** parâmetro, passe o `missing` variável para o parâmetro. O `missing` variável é definida automaticamente em projetos do Visual c# Office e é atribuído ao valor <xref:System.Type.Missing> no código de projeto gerado.  
   
--   To specify your own value for an optional **ref** parameter, declare an object that is assigned to the value that you want to specify, and then pass the object to the parameter.  
+-   Para especificar seu próprio valor para um recurso opcional **ref** parâmetro, declare um objeto que é atribuído ao valor que você deseja especificar e, em seguida, passar o objeto para o parâmetro.  
   
- The following code example demonstrates how to call the <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> method by specifying a value for the *ignoreUppercase* parameter and accepting the default value for the other parameters.  
+ O exemplo de código a seguir demonstra como chamar o <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> método especificando um valor para o *ignoreUppercase* parâmetro e aceitar o valor padrão para os outros parâmetros.  
   
  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- If you want to write code that omits optional **ref** parameters of a method in the `ThisDocument` class, you can alternatively call the same method on the <xref:Microsoft.Office.Interop.Word.Document> object returned by the <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> property, and omit the parameters from that method. You can do this because <xref:Microsoft.Office.Interop.Word.Document> is an interface, rather than a class.  
+ Se você quiser escrever código que omite opcional **ref** parâmetros de um método no `ThisDocument` classe, você pode também chamar o mesmo método no <xref:Microsoft.Office.Interop.Word.Document> objeto retornado pelo <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> propriedade e omitir o parâmetros do método. Você pode fazer isso porque <xref:Microsoft.Office.Interop.Word.Document> é uma interface, em vez de uma classe.  
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- For more information about value and reference type parameters, see [Passing Arguments by Value and by Reference &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (for Visual Basic) and [Passing Parameters &#40;C&#35; Programming Guide&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Para obter mais informações sobre parâmetros de tipo de valor e referência, consulte [passando argumentos por valor e por referência &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) e [passando parâmetros &#40; C &#35; Guia de programação &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
-## <a name="see-also"></a>See Also  
- [Developing Office Solutions](../vsto/developing-office-solutions.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Desenvolvendo soluções do Office](../vsto/developing-office-solutions.md)   
+ [Escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
   
   

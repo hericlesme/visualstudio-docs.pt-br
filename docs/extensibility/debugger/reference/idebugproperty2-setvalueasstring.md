@@ -1,47 +1,31 @@
 ---
-title: IDebugProperty2::SetValueAsString | Documentos do Microsoft
+title: IDebugProperty2::SetValueAsString | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty2::SetValueAsString
-helpviewer_keywords:
-- IDebugProperty2::SetValueAsString
+f1_keywords: IDebugProperty2::SetValueAsString
+helpviewer_keywords: IDebugProperty2::SetValueAsString
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: dd4f02fc6dcc99f4ad8749c00c0fee8d258eb781
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4046bfccac12e79992805e7abec7dfda65b5a658
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 Define o valor de uma propriedade de uma determinada cadeia de caracteres.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    UINT      nRadix,  
@@ -49,7 +33,7 @@ HRESULT SetValueAsString (
 );  
 ```  
   
-```c#  
+```csharp  
 int SetValueAsString (   
    string pszValue,  
    uint   nRadix,  
@@ -65,10 +49,10 @@ int SetValueAsString (
  [in] Uma base a ser usada na interpretação todas as informações numéricas. Isso pode ser 0 para tentar determinar a base automaticamente.  
   
  `dwTimeout`  
- [in] Especifica o tempo máximo, em milissegundos, para aguardar antes de retornar desse método. Use `INFINITE` para aguardar indefinidamente.  
+ [in] Especifica o tempo máximo, em milissegundos, de espera antes de retornar desse método. Use `INFINITE` aguardar indefinidamente.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna o código de erro. A tabela a seguir mostra outros valores possíveis.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna o código de erro. A tabela a seguir mostra os outros valores possíveis.  
   
 |Valor|Descrição|  
 |-----------|-----------------|  

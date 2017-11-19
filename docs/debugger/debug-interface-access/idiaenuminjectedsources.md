@@ -1,58 +1,56 @@
 ---
-title: "IDiaEnumInjectedSources | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Interface IDiaEnumInjectedSources"
+title: IDiaEnumInjectedSources | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumInjectedSources interface
 ms.assetid: f97e2392-22e1-48da-b7ce-ad94c8b684b0
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: efc5773f3cadaaf2c2a4a57c3fd8b381ca3f5d43
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumInjectedSources
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Enumere várias fontes injetadas contidas na fonte de dados.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
 ```  
-IDiaEnumInjectedSources : IUnknown  
+IDiaEnumInjectedSources : IUnknown  
 ```  
   
-## Métodos na ordem de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  A tabela a seguir mostra os métodos de `IDiaEnumInjectedSources`.  
   
 |Método|Descrição|  
-|------------|---------------|  
-|[IDiaEnumInjectedSources::get\_\_NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Recupera o [IEnumVARIANT Interface](http://msdn.microsoft.com/pt-br/139e3c93-faef-4003-9079-e0e94494db3e) versão deste enumerador.|  
-|[IDiaEnumInjectedSources::get\_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Recupera o número de fontes injetados.|  
+|------------|-----------------|  
+|[IDiaEnumInjectedSources::get__NewEnum](../../debugger/debug-interface-access/idiaenuminjectedsources-get-newenum.md)|Recupera o [IEnumVARIANT Interface](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) versão este enumerador.|  
+|[IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)|Recupera o número de fontes injetados.|  
 |[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)|Recupera uma fonte injetada por meio de um índice.|  
-|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Recupera um número especificado de fontes injetados na seqüência de enumeração.|  
-|[IDiaEnumInjectedSources::Skip](../Topic/IDiaEnumInjectedSources::Skip.md)|Ignora um número especificado de fontes injetados em uma seqüência de enumeração.|  
-|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Redefine uma seqüência de enumeração para o início.|  
-|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|  
+|[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)|Recupera um número especificado de fontes injetados na sequência de enumeração.|  
+|[IDiaEnumInjectedSources::Skip](../../debugger/debug-interface-access/idiaenuminjectedsources-skip.md)|Ignora um número especificado de fontes injetados em uma sequência de enumeração.|  
+|[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Redefine uma sequência de enumeração para o início.|  
+|[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração do enumerador atual.|  
   
-## Comentários  
+## <a name="remarks"></a>Comentários  
   
-## Observações para chamadores  
- Essa interface é obtida chamando o [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) método com o nome de um arquivo de origem específica ou chamando o [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) método com o GUID da `IDiaEnumInjectedSources` interface.  
+## <a name="notes-for-callers"></a>Observações para chamadores  
+ Essa interface é obtida chamando o [: Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) método com o nome de um arquivo de origem específico ou chamando o [: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md) método com o GUID das `IDiaEnumInjectedSources` interface.  
   
-## Exemplo  
- Este exemplo mostra como obter \(o `GetEnumInjectedSources` função\) e usar \(o `DumpAllInjectedSources` função\) a `IDiaEnumInjectedSources` interface.  Consulte o [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) interface para uma implementação da `PrintPropertyStorage` função.  Para obter uma saída alternativa, consulte o [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interface.  
+## <a name="example"></a>Exemplo  
+ Este exemplo mostra como obter (o `GetEnumInjectedSources` função) e use (o `DumpAllInjectedSources` função) a `IDiaEnumInjectedSources` interface. Consulte o [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md) interface para uma implementação de `PrintPropertyStorage` função. Para uma saída alternativa, consulte o [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interface.  
   
-```cpp#  
+```C++  
   
 IDiaEnumInjectedSources* GetEnumInjectedSources(IDiaSession *pSession)  
 {  
@@ -108,16 +106,16 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  Cabeçalho: Dia2.h  
   
  Biblioteca: diaguids.lib  
   
  DLL: msdia80.dll  
   
-## Consulte também  
- [Interfaces \(SDK de Acesso à Interface de Depuração\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+## <a name="see-also"></a>Consulte também  
+ [Interfaces (SDK de acesso à Interface de depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [: Findinjectedsource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)   
+ [: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

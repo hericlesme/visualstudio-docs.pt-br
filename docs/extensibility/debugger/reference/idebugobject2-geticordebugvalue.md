@@ -1,43 +1,27 @@
 ---
-title: IDebugObject2::GetICorDebugValue | Documentos do Microsoft
+title: IDebugObject2::GetICorDebugValue | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugObject2::GetICorDebugValue
-helpviewer_keywords:
-- IDebugObject2::GetICorDebugValue method
+f1_keywords: IDebugObject2::GetICorDebugValue
+helpviewer_keywords: IDebugObject2::GetICorDebugValue method
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ee148302032f83ee553531f82fab82b7bfb9d428
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6b1d1c05b6156cb38222eeedb287de4b3fc52b18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
-Obtém um objeto de código gerenciado que representa o valor associado a esse objeto.  
+Obtém um objeto de código gerenciado que representa o valor associado a este objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -47,7 +31,7 @@ HRESULT GetICorDebugValue(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetICorDebugValue(  
    out object ppUnk  
 );  

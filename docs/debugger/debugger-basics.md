@@ -1,59 +1,67 @@
 ---
-title: "No&#231;&#245;es b&#225;sicas do depurador | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-  - "CSharp"
-  - "FSharp"
-  - "VB"
-helpviewer_keywords: 
-  - "depurando [Visual Studio]"
-  - "depurador, sobre o depurador"
-  - "depurador, roteiro"
+title: "Noções básicas do depurador | Microsoft Docs"
+ms.custom: 
+ms.date: 07/11/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- C++
+- FSharp
+- CSharp
+- VB
+helpviewer_keywords:
+- debugging [Visual Studio]
+- debugger, about debugger
+- debugger, roadmap
 ms.assetid: 4da42a10-384d-44d7-b4dc-032202ff784b
-caps.latest.revision: 27
-caps.handback.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "27"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# No&#231;&#245;es b&#225;sicas do depurador
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-O depurador do Visual Studio permite que você observar o comportamento em tempo de execução do seu programa e localizar erros de lógica. O depurador funciona com todas as linguagens de programação do Visual Studio e suas bibliotecas associadas. Com o depurador, você pode interromper a execução para depurar seu código e avaliar as variáveis no seu aplicativo.  
+# <a name="debugger-basics"></a>Noções básicas do depurador
+O depurador do Visual Studio permite que você observar o comportamento de tempo de execução do seu programa e localizar erros de lógica. O depurador funciona com todas as linguagens de programação do Visual Studio e com as bibliotecas associadas. Com o depurador, você pode interromper a execução para depurar seu código e avaliar as variáveis em seu aplicativo.  
   
-## Nesta seção  
+## <a name="in-this-section"></a>Nesta seção  
  [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md)  
- Explica como usar o depurador para controlar a execução de seu aplicativo.  
+ Explica como usar recursos do depurador para depurar seus aplicativos.  
+
+ [Assista a um vídeo sobre o depurador](../debugger/getting-started-with-the-debugger.md#video)  
+ Mostra como usar recursos do depurador para depurar seus aplicativos.
   
- [Navegar pelo Código com o Depurador](../debugger/navigating-through-code-with-the-debugger.md)  
+ [Navegar em códigos com o depurador](../debugger/navigating-through-code-with-the-debugger.md)  
  Descreve como depurar código com o depurador.  
   
- [Usando pontos de interrupção](../debugger/using-breakpoints.md)  
- Descreve o que são pontos de interrupção e como usá\-los.  
-  
+ [Usar pontos de interrupção](../debugger/using-breakpoints.md)  
+ Descreve quais são os pontos de interrupção e como usá-los.  
+
+ [Dicas e truques do depurador](../debugger/debugger-tips-and-tricks.md)  
+ Saiba como aumentar sua produtividade com o depurador. 
+
  [Janelas do depurador](../debugger/debugger-windows.md)  
- Lista as janelas do depurador diferentes.  
+ Lista as janelas do depurador diferentes.
+
+ [Exibir valores de cadeia de caracteres em um visualizador](string-visualizer-dialog-box.md) explica como exibir valores de cadeia de caracteres durante a depuração.
   
- [Apenas Meu Código](../debugger/just-my-code.md)  
- Descreve o recurso Just My Code que permite você depurar system, estrutura e outras chamadas de não usuário e que recolhe essas chamadas nas exibições da pilha de chamadas.  
+ [Depurar o código do usuário usando apenas meu código](../debugger/just-my-code.md)  
+ Descreve o recurso Apenas Meu Código que permite você acessar chamadas de sistema, de framework e de não usuário, e que recolhe essas chamadas nas exibições da pilha de chamadas.  
   
  [Tratamento de Exceção](../debugger/managing-exceptions-with-the-debugger.md)  
- Descreve exceções, como o depurador as manipula e como alterar que manipulação, como ver onde a exceção ocorreu e ver o conteúdo das variáveis, limitações para exceções não tratadas em código gerenciado e corrigir exceções em código nativo de \(C\+\+\).  
+ Descreve exceções, como o depurador as manipula e como alterar essa manipulação, como ver onde a exceção ocorreu e consultar o conteúdo variável, as restrições para exceções sem tratamento no código gerenciado e corrigir exceções em código nativo (C++).  
   
  [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
  Explica como anexar a um processo que já está em execução.  
   
- [Especificar arquivos de símbolo \(.pdb\) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
- Explica como especificar arquivos de origem e símbolos de depuração.  
+ [Especifique o símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ Explica como especificar arquivos de origem e o símbolo de depuração.  
   
  [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)  
  Explica como depurar aplicativos de 64 bits e como solucionar problemas.  
@@ -61,5 +69,5 @@ O depurador do Visual Studio permite que você observar o comportamento em tempo
  [Segurança do depurador](../debugger/debugger-security.md)  
  Descreve as práticas de segurança para o depurador.  
   
-## Consulte também  
- [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)
+## <a name="see-also"></a>Consulte também  
+ [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)

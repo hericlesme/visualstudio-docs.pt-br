@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Create Word Tables | Microsoft Docs'
+title: 'Como: criar programaticamente tabelas do Word | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,86 +14,91 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding tables
 - tables [Office development in Visual Studio], adding to documents
 ms.assetid: fe1f9143-9622-45e8-b0a5-511336d99ad1
-caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+caps.latest.revision: "45"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 206109fae04dfdce7ac94d15194ef66de720b076
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 0c903ed815e35c3d4f6821d70910ef56611889f9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-create-word-tables"></a>How to: Programmatically Create Word Tables
-  The <xref:Microsoft.Office.Interop.Word.Tables> collection is a member of the <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, and <xref:Microsoft.Office.Interop.Word.Range> classes, which means that you can create a table in any of those contexts. You use the <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Tables> collection to add a table at the specified range.  
+# <a name="how-to-programmatically-create-word-tables"></a>Como criar tabelas do Word programaticamente
+  O <xref:Microsoft.Office.Interop.Word.Tables> coleção é um membro do <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, e <xref:Microsoft.Office.Interop.Word.Range> classes, o que significa que você pode criar uma tabela em qualquer um nesses contextos. Você usa o <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> método o <xref:Microsoft.Office.Interop.Word.Tables> coleção para adicionar uma tabela no intervalo especificado.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="creating-tables-in-document-level-customizations"></a>Creating Tables in Document-Level Customizations  
+## <a name="creating-tables-in-document-level-customizations"></a>Criando tabelas em personalizações no nível do documento  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>To add a simple table to a document  
+#### <a name="to-add-a-simple-table-to-a-document"></a>Para adicionar uma tabela simple para um documento  
   
--   Use the <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> method to add a table consisting of three rows and four columns at the beginning of the document.  
+-   Use o <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> método para adicionar uma tabela consiste em três linhas e quatro colunas no início do documento.  
   
-     To use the following code example, run it from the `ThisDocument` class in your project.  
+     Para usar o exemplo de código a seguir, executá-la na `ThisDocument` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#86)]  [!code-csharp[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#86)]  
+     [!code-vb[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#86)]
+     [!code-csharp[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#86)]  
   
- When you create a table, it is automatically added to the <xref:Microsoft.Office.Interop.Word.Tables> collection of the <xref:Microsoft.Office.Tools.Word.Document> host item. You can then refer to the table by its item number by using the <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> property, as shown in the following code.  
+ Quando você cria uma tabela, ele é adicionado automaticamente para o <xref:Microsoft.Office.Interop.Word.Tables> coleção do <xref:Microsoft.Office.Tools.Word.Document> item de host. Você pode referir-se à tabela por seu número de item usando o <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> propriedade, conforme mostrado no código a seguir.  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>To refer to a table by item number  
+#### <a name="to-refer-to-a-table-by-item-number"></a>Para fazer referência a uma tabela por número de item  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> property and supply the item number of the table that you want to refer to.  
+1.  Use o <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> propriedade e fornecer o número de item da tabela que você deseja consultar.  
   
-     To use the following code example, run it from the `ThisDocument` class in your project.  
+     Para usar o exemplo de código a seguir, executá-la na `ThisDocument` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#87)]  [!code-csharp[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#87)]  
+     [!code-vb[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#87)]
+     [!code-csharp[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#87)]  
   
- Each <xref:Microsoft.Office.Interop.Word.Table> object also has a <xref:Microsoft.Office.Interop.Word.Table.Range%2A> property that enables you to set formatting attributes.  
+ Cada <xref:Microsoft.Office.Interop.Word.Table> objeto também tem um <xref:Microsoft.Office.Interop.Word.Table.Range%2A> atributos de propriedade que permite que você defina a formatação.  
   
-#### <a name="to-apply-a-style-to-a-table"></a>To apply a style to a table  
+#### <a name="to-apply-a-style-to-a-table"></a>Para aplicar um estilo a uma tabela  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Table.Style%2A> property to apply one of the Word built-in styles to a table.  
+1.  Use o <xref:Microsoft.Office.Interop.Word.Table.Style%2A> propriedade para aplicar um dos estilos internos de palavras em uma tabela.  
   
-     To use the following code example, run it from the `ThisDocument` class in your project.  
+     Para usar o exemplo de código a seguir, executá-la na `ThisDocument` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]  [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]  
+     [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]
+     [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]  
   
-## <a name="creating-tables-in-vsto-add-ins"></a>Creating Tables in VSTO Add-ins  
+## <a name="creating-tables-in-vsto-add-ins"></a>Criando tabelas em suplementos do VSTO  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>To add a simple table to a document  
+#### <a name="to-add-a-simple-table-to-a-document"></a>Para adicionar uma tabela simple para um documento  
   
--   Use the <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> method to add a table consisting of three rows and four columns at the beginning of the document.  
+-   Use o <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> método para adicionar uma tabela consiste em três linhas e quatro colunas no início do documento.  
   
-     The following code example adds a table to the active document. To use this example, run it from the `ThisAddIn` class in your project.  
+     O exemplo de código a seguir adiciona uma tabela para o documento ativo. Para usar este exemplo, executá-la na `ThisAddIn` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#86)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#86)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#86)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#86)]  
   
- When you create a table, it is automatically added to the <xref:Microsoft.Office.Interop.Word.Tables> collection of the <xref:Microsoft.Office.Interop.Word.Document>. You can then refer to the table by its item number by using the <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> property, as shown in the following code.  
+ Quando você cria uma tabela, ele é adicionado automaticamente para o <xref:Microsoft.Office.Interop.Word.Tables> coleção do <xref:Microsoft.Office.Interop.Word.Document>. Você pode referir-se à tabela por seu número de item usando o <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> propriedade, conforme mostrado no código a seguir.  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>To refer to a table by item number  
+#### <a name="to-refer-to-a-table-by-item-number"></a>Para fazer referência a uma tabela por número de item  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> property and supply the item number of the table that you want to refer to.  
+1.  Use o <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> propriedade e fornecer o número de item da tabela que você deseja consultar.  
   
-     The following code example uses the active document. To use this example, run it from the `ThisAddIn` class in your project.  
+     O exemplo de código a seguir usa o documento ativo. Para usar este exemplo, executá-la na `ThisAddIn` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#87)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#87)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#87)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#87)]  
   
- Each <xref:Microsoft.Office.Interop.Word.Table> object also has a <xref:Microsoft.Office.Interop.Word.Table.Range%2A> property that enables you to set formatting attributes.  
+ Cada <xref:Microsoft.Office.Interop.Word.Table> objeto também tem um <xref:Microsoft.Office.Interop.Word.Table.Range%2A> atributos de propriedade que permite que você defina a formatação.  
   
-#### <a name="to-apply-a-style-to-a-table"></a>To apply a style to a table  
+#### <a name="to-apply-a-style-to-a-table"></a>Para aplicar um estilo a uma tabela  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Table.Style%2A> property to apply one of the Word built-in styles to a table.  
+1.  Use o <xref:Microsoft.Office.Interop.Word.Table.Style%2A> propriedade para aplicar um dos estilos internos de palavras em uma tabela.  
   
-     The following code example uses the active document. To use this example, run it from the `ThisAddIn` class in your project.  
+     O exemplo de código a seguir usa o documento ativo. Para usar este exemplo, executá-la na `ThisAddIn` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#88)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#88)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#88)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Add Text and Formatting to Cells in Word Tables](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [How to: Programmatically Add Rows and Columns to Word Tables](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [How to: Programmatically Populate Word Tables with Document Properties](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Como: adicionar texto e formatação a células em tabelas do Word programaticamente](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Como: adicionar programaticamente as linhas e colunas a tabelas do Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Como: programaticamente preencher tabelas do Word com propriedades de documento](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

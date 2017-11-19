@@ -1,43 +1,27 @@
 ---
-title: Elemento PromptForSaveOnCreation (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento PromptForSaveOnCreation (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
-helpviewer_keywords:
-- PromptForSaveOnCreation element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
+helpviewer_keywords: PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-caps.latest.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6d39ad8e236ef2b9ea9fbf29fbe0d11d08e5643c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8ce7e73801b34542bcf1c6be35d950b1fabdc7c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelos do Visual Studio)
-Especifica se o usuário é solicitado para um projeto local por meio de salvamento de **novo projeto** caixa de diálogo ao criar um projeto. Se este elemento for definido como `true`, em seguida, o usuário será avisado para salvar local; se `false`, em seguida, ele não será solicitado. (Ou seja, um projeto temporário é criado.)  
+Especifica se o usuário é solicitado um projeto local por meio de salvamento de **novo projeto** caixa de diálogo ao criar um projeto. Se esse elemento é definido como `true`, em seguida, o usuário é solicitado para salvar local; se `false`, em seguida, ele não será solicitado. (Ou seja, um projeto temporário é criado.)  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -53,7 +37,7 @@ Especifica se o usuário é solicitado para um projeto local por meio de salvame
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -62,7 +46,7 @@ Especifica se o usuário é solicitado para um projeto local por meio de salvame
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
@@ -72,7 +56,7 @@ Especifica se o usuário é solicitado para um projeto local por meio de salvame
 ## <a name="remarks"></a>Comentários  
  `PromptForSaveOnCreation` é um elemento opcional. O valor padrão é `false`.  
   
- Projetos temporários são projetos que você pode criar e modificar sem salvar o conteúdo do projeto no disco. Para obter mais informações, consulte [projetos temporários PONTA](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Projetos temporários são projetos que você pode criar e modificar sem salvar o conteúdo do projeto no disco. Para obter mais informações, consulte [projetos temporários NIB](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir define o valor de `PromptForSaveOnCreation` igual a `false`, que especifica para permitir que o projeto a ser criado como um projeto temporário.  

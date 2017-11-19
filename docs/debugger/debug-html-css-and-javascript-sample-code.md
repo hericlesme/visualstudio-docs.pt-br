@@ -1,35 +1,35 @@
 ---
-title: "Depurar c&#243;digo de exemplo em HTML, CSS e JavaScript | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "Depurar o código de exemplo HTML, CSS e JavaScript | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 762caca321cdda941fd295306fdfdf73e03b0aae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Depurar c&#243;digo de exemplo em HTML, CSS e JavaScript
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-![Applies to Windows and Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+# <a name="debug-html-css-and-javascript-sample-code"></a>Depurar código de exemplo em HTML, CSS e JavaScript
+![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- O código neste tópico é o arquivo de exemplo do tópico [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.  
+ O código neste tópico é o arquivo de exemplo [início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.  
   
-## Código de exemplo  
- O código HTML a seguir é usado na marca \<body\> no Início Rápido.  
+## <a name="sample-code"></a>Código de exemplo  
+ O código HTML a seguir é usado no \<corpo > marca no início rápido.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -53,7 +53,7 @@ manager: "ghogen"
 }  
 ```  
   
- O exemplo de código a seguir mostra o código JavaScript completo no default.js.  As referências a namespaces WinJS para esse código estão no arquivo default.html do modelo.  
+ O exemplo de código a seguir mostra o código JavaScript completo no default.js. As referências a namespaces WinJS para esse código estão no arquivo default.html do modelo.  
   
 ```javascript  
 (function () {  
@@ -104,5 +104,5 @@ manager: "ghogen"
 })();  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

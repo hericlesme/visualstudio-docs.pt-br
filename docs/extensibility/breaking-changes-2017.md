@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/09/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1d474374a0c7603bc9b6995783bbed96c81c8907
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: MT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: ac7a99673eb4dc23dd53a46c3c93fd735325c255
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações de extensibilidade do Visual Studio de 2017
 
@@ -123,8 +107,3 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
 * Componentes externos podem encontrar o local do Visual Studio [seguindo as diretrizes aqui](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
 * É recomendável que componentes externos é usar o [Gerenciador de configurações externo](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) em vez de ler/gravar diretamente para as chaves de registro do Visual Studio.
 * Verifique se os componentes de que sua extensão está usando podem ter implementado outra técnica para o registro. Por exemplo, extensões de depurador poderá tirar proveito do novo [msvsmon registro arquivo JSON COM](migrate-debugger-COM-registration.md).
-
-## <a name="change-lightweight-solution-load"></a>Alteração: Carga de solução leve
-
-Carga de solução leve (LSL) reduz o tempo de carregamento da solução não totalmente Carregando projetos até que o usuário começa a trabalhar com eles. Isso pode afetar as extensões que supor que um projeto é completamente carregado. Consulte [Lightweight solução carga](lightweight-solution-load-extension-impact.md) para saber se sua extensão pode ser afetada e obter orientação sobre como atualizar sua extensão.
-

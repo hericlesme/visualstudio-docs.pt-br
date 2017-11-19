@@ -1,40 +1,24 @@
 ---
-title: IDebugPort2 | Documentos do Microsoft
+title: IDebugPort2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPort2
-helpviewer_keywords:
-- IDebugPort2 interface
+f1_keywords: IDebugPort2
+helpviewer_keywords: IDebugPort2 interface
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1ce4e1040a5daadff0b65e5f97259e9ca16055a0
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b40a141b90489fa65ffc5f29b363d3d647ca4cb8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Essa interface representa uma porta de depuração em um computador.  
@@ -48,17 +32,17 @@ IDebugPort2 : IUnknown
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
  Um fornecedor de porta personalizada implementa essa interface para representar uma porta de depuração em um computador.  
   
- Se a porta suporta enviar eventos de porta, ele também deve implementar o <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>interface para oferecer suporte a um <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>interface fornecida por sua vez o [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interface.</xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> </xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>  
+ Se a porta oferece suporte a eventos de porta de envio, ele deverá implementar também a <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interface para oferecer suporte a um <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interface que por sua vez fornece o [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interface.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Chamadas para [GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md) ou [adicionar porta](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) retornar essa interface, que representa a porta solicitada.  
+ Chamadas para [GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md) ou [adicionar porta](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) retornar esta interface, que representa a porta solicitada.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  A tabela a seguir mostra os métodos de `IDebugPort2`.  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|Retorna o nome da porta.|  
+|[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|Retorna o nome de porta.|  
 |[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|Retorna o identificador de porta.|  
 |[GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)|Retorna a solicitação usada para criar uma porta (se disponível).|  
 |[GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)|Retorna o fornecedor de porta para essa porta.|  
@@ -66,7 +50,7 @@ IDebugPort2 : IUnknown
 |[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|Enumera todos os processos em execução em uma porta.|  
   
 ## <a name="remarks"></a>Comentários  
- A porta local fornece acesso a todos os processos e programas em execução no computador local. Outras portas podem representar uma conexão de cabo serial para um dispositivo baseado em Windows CE ou uma conexão de rede em um computador não-DCOM. O `IDebugPort2` interface é usada para localizar o nome e o identificador de uma porta, enumerar todos os processos em execução na porta e fornecer recursos para iniciar e encerrar processos na porta.  
+ A porta local fornece acesso a todos os processos e programas em execução no computador local. Outras portas podem representar uma conexão de cabo serial para um dispositivo baseado em Windows CE ou uma conexão de rede em um computador não DCOM. O `IDebugPort2` interface é usada para localizar o nome e o identificador de uma porta, enumerar todos os processos em execução na porta e fornecer recursos para iniciar e encerrar processos na porta.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

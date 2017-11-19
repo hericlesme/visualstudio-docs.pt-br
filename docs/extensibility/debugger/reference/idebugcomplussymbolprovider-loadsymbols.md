@@ -1,46 +1,32 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbols | Documentos do Microsoft
+title: IDebugComPlusSymbolProvider::LoadSymbols | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2f5976a434c4e7ffbeceb86412bffcd85a7f571d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a70d09160feb2101edec6ae4f1ff24a1cc8c435b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Carrega os símbolos de depuração especificado na memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbols(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -51,7 +37,7 @@ HRESULT LoadSymbols(
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbols(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -79,15 +65,15 @@ int LoadSymbols(
  [in] Nome do módulo.  
   
  `bstrSymSearchPath`  
- [in] Caminho para procurar o arquivo de símbolo.  
+ [in] Caminho para pesquisar o arquivo de símbolo.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto expõe o [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe o [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbols(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

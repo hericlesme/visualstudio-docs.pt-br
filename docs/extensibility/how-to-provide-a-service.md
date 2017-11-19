@@ -1,66 +1,51 @@
 ---
-title: "Como: fornecer um serviço | Documentos do Microsoft"
+title: "Como: fornecer serviço | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- services, providing
+helpviewer_keywords: services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-caps.latest.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 56bba384f985f3dd14472939f65e8a91d0eda7dd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-provide-a-service"></a>Como: fornecer um serviço
-Um VSPackage pode fornecer serviços que podem usar outros VSPackages. Para fornecer um serviço, um VSPackage deve registrar o serviço com o Visual Studio e adicione o serviço.  
+Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para fornecer um serviço, um VSPackage deve registrar o serviço com o Visual Studio e adicione o serviço.  
   
- A <xref:Microsoft.VisualStudio.Shell.Package>classe implementa dois <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>e <xref:System.ComponentModel.Design.IServiceContainer>.</xref:System.ComponentModel.Design.IServiceContainer> </xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> </xref:Microsoft.VisualStudio.Shell.Package> <xref:System.ComponentModel.Design.IServiceContainer>contém métodos de retorno de chamada que fornecem serviços sob demanda.</xref:System.ComponentModel.Design.IServiceContainer>  
+ O <xref:Microsoft.VisualStudio.Shell.Package> classe implementa ambos <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> e <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>contém métodos de retorno de chamada que fornecem serviços sob demanda.  
   
- Para obter mais informações sobre serviços, consulte [Service Essentials](../extensibility/internals/service-essentials.md) .  
+ Para obter mais informações sobre serviços, consulte [Essentials do serviço](../extensibility/internals/service-essentials.md) .  
   
 > [!NOTE]
->  Quando um VSPackage está prestes a ser descarregado, o Visual Studio aguarda até que todas as solicitações de serviços que fornece um VSPackage foram entregues. Ele não permite que novas solicitações para esses serviços. Você não deve chamar explicitamente o <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>método revogar um serviço descarregando.</xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>  
+>  Quando um VSPackage está prestes a ser descarregado, o Visual Studio aguarda até que todas as solicitações de serviços que fornece um VSPackage foram entregues. Ele não permitir que novas solicitações para esses serviços. Você não deve chamar explicitamente o <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> método para revogar um serviço ao descarregar.  
   
-#### <a name="implementing-a-service"></a>Implementando um serviço  
+#### <a name="implementing-a-service"></a>Implementar um serviço  
   
-1.  Criar um projeto do VSIX (**arquivo / novo / projeto / Visual c# / Extensiblity / projeto do VSIX**).  
+1.  Criar um projeto do VSIX (**arquivo / novo / projeto / Visual C# / Extensiblity / projeto VSIX**).  
   
-2.  Adicione um VSPackage no projeto. Selecione o nó do projeto no **Solution Explorer** e clique em **adicionar / novo item / itens do Visual c# / extensibilidade / pacote do Visual Studio**.  
+2.  Adicione um VSPackage ao projeto. Selecione o nó do projeto no **Solution Explorer** e clique em **adicionar / novo item / Visual C# itens / extensibilidade / pacote do Visual Studio**.  
   
 3.  Para implementar um serviço, você precisa criar três tipos:  
   
-    -   Uma interface que descreve o serviço. Muitas dessas interfaces estiverem vazias, ou seja, eles têm não métodos.  
+    -   Uma interface que descreve o serviço. Muitas dessas interfaces estão vazias, ou seja, eles têm nenhum método.  
   
     -   Uma interface que descreve a interface de serviço. Essa interface inclui os métodos a serem implementados.  
   
     -   Uma classe que implementa o serviço e a interface de serviço.  
   
-     O exemplo a seguir mostra uma implementação muito básica dos três tipos. O construtor da classe de serviço deve definir o provedor de serviços.  
+     O exemplo a seguir mostra uma implementação muito básica dos três tipos. O construtor da classe de serviço deve definir o provedor de serviço.  
   
-    ```c#  
+    ```csharp  
     public class MyService : SMyService, IMyService  
     {  
         private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
@@ -93,9 +78,9 @@ Um VSPackage pode fornecer serviços que podem usar outros VSPackages. Para forn
   
 ### <a name="registering-a-service"></a>Registrar um serviço  
   
-1.  Para registrar um serviço, adicione a <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>para o VSPackage que fornece o serviço.</xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> Aqui está um exemplo:  
+1.  Para registrar um serviço, adicionar o <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> para o VSPackage que fornece o serviço. Veja um exemplo:  
   
-    ```c#  
+    ```csharp  
     [ProvideService(typeof(SMyService))]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [Guid(VSPackage1.PackageGuidString)]  
@@ -103,16 +88,16 @@ Um VSPackage pode fornecer serviços que podem usar outros VSPackages. Para forn
     {. . . }  
     ```  
   
-     Esse atributo registra `SMyService` com o Visual Studio.  
+     Este atributo registra `SMyService` com o Visual Studio.  
   
     > [!NOTE]
-    >  Para registrar um serviço que substitui outro serviço com o mesmo nome, use o <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>.</xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> Observe que somente uma substituição de um serviço é permitida.  
+    >  Para registrar um serviço que substitui outro serviço com o mesmo nome, use o <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Observe que somente uma substituição de um serviço é permitida.  
   
 ### <a name="adding-a-service"></a>Adicionando um serviço  
   
-1.  1.  No inicializador de VSPackage, adicione o serviço e um método de retorno de chamada para criar os serviços. Aqui está a mudança a fazer a <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>método:</xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>  
+1.  No inicializador VSPackage, adicione o serviço e um método de retorno de chamada para criar os serviços. Aqui está a alteração para fazer o <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método:  
   
-    ```c#  
+    ```csharp  
     protected override void Initialize()  
     {  
         ServiceCreatorCallback callback =new ServiceCreatorCallback(CreateService);  
@@ -138,7 +123,7 @@ Um VSPackage pode fornecer serviços que podem usar outros VSPackages. Para forn
   
 3.  Agora você pode obter o serviço e usar seus métodos. Vamos mostrar isso no inicializador, mas você pode obter o serviço em qualquer lugar que deseja usar o serviço.  
   
-    ```c#  
+    ```csharp  
     protected override void Initialize()  
     {  
         ServiceCreatorCallback callback =new ServiceCreatorCallback(CreateService);  
@@ -153,9 +138,9 @@ Um VSPackage pode fornecer serviços que podem usar outros VSPackages. Para forn
     }  
     ```  
   
-     O valor de `helloString` deve ser "Hello".  
+     O valor de `helloString` deve ser "Olá".  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: obter um serviço](../extensibility/how-to-get-a-service.md)   
  [Usando e fornecer serviços](../extensibility/using-and-providing-services.md)   
- [Conceitos básicos do serviço](../extensibility/internals/service-essentials.md)
+ [Fundamentos do serviço](../extensibility/internals/service-essentials.md)

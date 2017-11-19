@@ -1,46 +1,32 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Documentos do Microsoft
+title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 73e46663106ad4080036026df7f5d5a08a736118
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e482be9105670297e10dd392c4d32e9ee19d7ee9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Converte um objeto local ou um endereço de memória de 64 bits em um contexto de memória.  
+Converte um local do objeto ou um endereço de memória de 64 bits em um contexto de memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryContext64 (  
    IDebugField*           pField,  
    UINT64                 uConstant,  
@@ -48,7 +34,7 @@ HRESULT GetMemoryContext64 (
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMemoryContext64 (  
    IDebugField              pField,  
    ulong                    uConstant,  
@@ -67,12 +53,12 @@ int GetMemoryContext64 (
  [out] Retorna o [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface que representa o endereço do objeto ou o endereço na memória.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
  Os exemplos a seguir cria um objeto que implementa o [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) de interface e usa esse método para recuperar o contexto de memória.  
   
-```cpp#  
+```cpp  
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )  
 {  
     // precondition  

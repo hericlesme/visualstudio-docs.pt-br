@@ -1,40 +1,24 @@
 ---
-title: Elemento CreateNewFolder (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento CreateNewFolder (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#CreateNewFolder
-helpviewer_keywords:
-- CreateNewFolder element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CreateNewFolder
+helpviewer_keywords: CreateNewFolder element [Visual Studio project templates]
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f9696ebfb29877319b9c7edee259f6de81249d74
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 60659adc2c261f498b0e5ffeebe3831faf7e6402
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Elemento CreateNewFolder (modelos do Visual Studio)
 Determina se deve ser verificado se o diretório de destino onde o projeto será criado existe ou não. Se o diretório não existir, um novo diretório poderá ser criado para o projeto. Essa configuração é normalmente substituída pelo sinalizador de registro `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que todos os tipos de projetos comuns usam para determinar se um novo projeto deve ser criado ou não em um novo diretório.  
@@ -58,7 +42,7 @@ Determina se deve ser verificado se o diretório de destino onde o projeto será
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -67,7 +51,7 @@ Determina se deve ser verificado se o diretório de destino onde o projeto será
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  

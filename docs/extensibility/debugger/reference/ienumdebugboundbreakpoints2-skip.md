@@ -1,53 +1,37 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Skip | Documentos do Microsoft
+title: IEnumDebugBoundBreakpoints2::Skip | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugBoundBreakpoints2::Skip
-helpviewer_keywords:
-- IEnumDebugBoundBreakpoints2::Skip
+f1_keywords: IEnumDebugBoundBreakpoints2::Skip
+helpviewer_keywords: IEnumDebugBoundBreakpoints2::Skip
 ms.assetid: 95659709-6d7c-44ca-b598-629eb688429f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 39ec2af36b07f6b8e77a150afb7067f1057e2c8b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 818426745e356c0c4ec580ffc9023ea5d8645e2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
 Ignora o número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
    ULONG celt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Skip(  
    uint celt  
 );  

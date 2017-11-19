@@ -1,91 +1,88 @@
 ---
-title: 'How to: Create a SharePoint Command | Microsoft Docs'
+title: 'Como: criar um comando do SharePoint | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords:
-- SharePoint commands [SharePoint development in Visual Studio], creating
+helpviewer_keywords: SharePoint commands [SharePoint development in Visual Studio], creating
 ms.assetid: e1fda8f0-eae1-4278-91c1-19a5e1fc327f
-caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b4676efb2d64541566daf5c9902de8a4a2157e6d
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 913ccb36c54914387cd6ca8a50a350ada1b14ce7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>How to: Create a SharePoint Command
-  If you want to use the server object model in a SharePoint tools extension, you must create a custom *SharePoint command* to call the API. You define the SharePoint command in an assembly that can call into the server object model directly.  
+# <a name="how-to-create-a-sharepoint-command"></a>Como criar um novo comando do SharePoint
+  Se você quiser usar o modelo de objeto de servidor em uma extensão de ferramentas do SharePoint, você deve criar um personalizado *comando SharePoint* para chamar a API. Você pode definir o comando do SharePoint em um assembly que pode chamar diretamente o modelo de objeto do servidor.  
   
- For more information about the purpose of SharePoint commands, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+ Para obter mais informações sobre a finalidade de comandos do SharePoint, consulte [chamando os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
-### <a name="to-create-a-sharepoint-command"></a>To create a SharePoint command  
+### <a name="to-create-a-sharepoint-command"></a>Para criar um comando do SharePoint  
   
-1.  Create a class library project that has the following configuration:  
+1.  Crie um projeto de biblioteca de classe que tem a seguinte configuração:  
   
-    -   Targets the .NET Framework 3.5. For more information about selecting the target framework, see [How to: Target a Version of the .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+    -   Tem como alvo o .NET Framework 3.5. Para obter mais informações sobre como selecionar a estrutura de destino, consulte [como: uma versão do .NET Framework de destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
-    -   Targets the AnyCPU or x64 platform. By default, the target platform for class library projects is AnyCPU. For more information about selecting the target platform, see [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).  
+    -   Tem como alvo o AnyCPU ou x64 plataforma. Por padrão, a plataforma de destino para projetos de biblioteca de classe é AnyCPU. Para obter mais informações sobre como selecionar a plataforma de destino, consulte [como: configurar projetos para destinar plataformas](../ide/how-to-configure-projects-to-target-platforms.md).  
   
     > [!NOTE]  
-    >  You cannot implement a SharePoint command in the same project that defines a SharePoint tools extension, because SharePoint commands target the .NET Framework 3.5 and SharePoint tools extensions target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. You must define any SharePoint commands that are used by your extension in a separate project. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+    >  Você não pode implementar um comando do SharePoint no mesmo projeto que define uma extensão de ferramentas do SharePoint, pois o destino de extensões de ferramentas do .NET Framework 3.5 e do SharePoint de destino de comandos do SharePoint a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Você deve definir os comandos do SharePoint que são usados por sua extensão em um projeto separado. Para obter mais informações, consulte [implantação de extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-2.  Add references to the following assemblies:  
+2.  Adicione referências aos assemblies a seguir:  
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-    -   Microsoft.SharePoint  
+    -   Microsoft. SharePoint  
   
-3.  In a class in the project, create a method that defines your SharePoint command. The method must conform to the following guidelines:  
+3.  Em uma classe no projeto, crie um método que define o comando do SharePoint. O método deve estar de acordo com as diretrizes a seguir:  
   
-    -   It can have one or two parameters.  
+    -   Ele pode ter um ou dois parâmetros.  
   
-         The first parameter must be a <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> object. This object provides the Microsoft.SharePoint.SPSite or Microsoft.SharePoint.SPWeb in which the command is executed. It also provides an <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> object that can be used to write messages to the **Output** window or **Error List** window in Visual Studio.  
+         O primeiro parâmetro deve ser um <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> objeto. Esse objeto fornece o Microsoft.SharePoint.SPSite ou Microsoft.SharePoint.SPWeb no qual o comando é executado. Ele também fornece um <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> objeto que pode ser usado para gravar mensagens para o **saída** janela ou **lista de erros** janela no Visual Studio.  
   
-         The second parameter can be a type of your choice, but this parameter is optional. You can add this parameter to your SharePoint command if you need to pass data from your SharePoint tools extension to the command.  
+         O segundo parâmetro pode ser um tipo de sua escolha, mas esse parâmetro é opcional. Você pode adicionar esse parâmetro ao comando do SharePoint se você precisar passar dados de sua extensão de ferramentas do SharePoint para o comando.  
   
-    -   It can have a return value, but this is optional.  
+    -   Ele pode ter um valor de retorno, mas isso é opcional.  
   
-    -   The second parameter and return value must be a type that can be serialized by the Windows Communication Foundation (WCF). For more information, see [Types Supported by the Data Contract Serializer](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) and [Using the XmlSerializer Class](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).  
+    -   O segundo valor de retorno e de parâmetro deve ser um tipo que pode ser serializado pelo Windows Communication Foundation (WCF). Para obter mais informações, consulte [tipos suportados pelo serializador de contrato de dados](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) e [usando a classe XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).  
   
-    -   The method can have any visibility (**public**, **internal**, or **private**), and it can be static or non-static.  
+    -   O método pode ter qualquer visibilidade (**pública**, **interno**, ou **privada**), e pode ser estático ou não-estático.  
   
-4.  Apply the <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> to the method. This attribute specifies a unique identifier for the command; this identifier does not have to match the method name.  
+4.  Aplicar o <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> para o método. Esse atributo especifica um identificador exclusivo para o comando. Esse identificador não precisa corresponder ao nome do método.  
   
-     You must specify the same unique identifier when you call the command from your SharePoint tools extension. For more information, see [How to: Execute a SharePoint Command](../sharepoint/how-to-execute-a-sharepoint-command.md).  
+     Quando você chama o comando de sua extensão de ferramentas do SharePoint, você deve especificar o mesmo identificador exclusivo. Para obter mais informações, consulte [como: executar um comando SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md).  
   
-## <a name="example"></a>Example  
- The following code example demonstrates a SharePoint command that has the identifier `Contoso.Commands.UpgradeSolution`. This command uses APIs in the server object model to upgrade to a deployed solution.  
+## <a name="example"></a>Exemplo  
+ O exemplo de código a seguir demonstra um comando do SharePoint que tem o identificador `Contoso.Commands.UpgradeSolution`. Esse comando usa as APIs no modelo de objeto de servidor para atualizar para uma solução de implantação.  
   
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)] [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]  
+ [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
+ [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]  
   
- In addition to the implicit first <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parameter, this command also has a custom string parameter that contains the full path of the .wsp file that is being upgraded to the SharePoint site. To see this code in the context of a larger example, see [Walkthrough: Creating a Custom Deployment Step for SharePoint Projects](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
+ Além do primeiro implícita <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parâmetro, esse comando também tem um parâmetro de cadeia de caracteres personalizada que contém o caminho completo do arquivo. wsp que está sendo atualizado para o site do SharePoint. Para ver esse código no contexto de um exemplo maior, consulte [passo a passo: Criando uma etapa de implantação personalizada para projetos SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This example requires references to the following assemblies:  
+## <a name="compiling-the-code"></a>Compilando o código  
+ Este exemplo requer referências para os seguintes assemblies:  
   
 -   Microsoft.VisualStudio.SharePoint.Commands  
   
--   Microsoft.SharePoint  
+-   Microsoft. SharePoint  
   
-## <a name="deploying-the-command"></a>Deploying the Command  
- To deploy the command, include the command assembly in the same [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package with the extension assembly that uses the command. You must also add an entry for the command assembly in the extension.vsixmanifest file. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploying-the-command"></a>Implantando o comando  
+ Para implantar o comando, inclua o assembly de comando na mesma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) com o assembly de extensão que usa o comando. Você também deve adicionar uma entrada para o assembly de comando no arquivo extension.vsixmanifest. Para obter mais informações, consulte [implantação de extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>See Also  
- [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [How to: Execute a SharePoint Command](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
+## <a name="see-also"></a>Consulte também  
+ [A chamada para os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
+ [Como: executar um comando do SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
+ [Instruções passo a passo: estendendo o Gerenciador de Servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   
   

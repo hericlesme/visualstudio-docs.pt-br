@@ -1,41 +1,26 @@
 ---
-title: Elemento LocationFieldMRUPrefix (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento LocationFieldMRUPrefix (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#LocationFieldMRUPrefix
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#LocationFieldMRUPrefix
 helpviewer_keywords:
 - <LocationFieldMRUPrefix> element [Visual Studio Templates]
 - LocationFieldMRUPrefix element [Visual Studio Templates]
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7f47669085248b993c6ee446733f099e259024a7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d4544536c166392563a66db8e914ae19d786581b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelos do Visual Studio)
 Especifica os caminhos usados recentemente (MRU) a **novo projeto** e **Adicionar Novo Item** caixa de diálogo.  
@@ -50,7 +35,7 @@ Especifica os caminhos usados recentemente (MRU) a **novo projeto** e **Adiciona
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -59,7 +44,7 @@ Especifica os caminhos usados recentemente (MRU) a **novo projeto** e **Adiciona
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="remarks"></a>Comentários  
  Esse elemento só deve ser usado para modelos produzidos por meio de [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)].  

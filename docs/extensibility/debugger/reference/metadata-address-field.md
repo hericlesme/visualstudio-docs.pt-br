@@ -1,40 +1,24 @@
 ---
-title: METADATA_ADDRESS_FIELD | Documentos do Microsoft
+title: METADATA_ADDRESS_FIELD | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- METADATA_ADDRESS_FIELD
-helpviewer_keywords:
-- METADATA_ADDRESS_FIELD structure
+f1_keywords: METADATA_ADDRESS_FIELD
+helpviewer_keywords: METADATA_ADDRESS_FIELD structure
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a7d461bd6ba51cb9101b7faffaedab6c1eb56b20
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4f3de6d6dc309158f6c337d2aa2b76f477b17047
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 Esta estrutura representa o endereço de um campo de uma classe ou estrutura.  
@@ -47,7 +31,7 @@ typedef struct _tagMETADATA_ADDRESS_FIELD {
 } METADATA_ADDRESS_FIELD  
 ```  
   
-```c#  
+```csharp  
 public struct METADATA_ADDRESS_FIELD {  
    public int tokField;  
 }  
@@ -57,10 +41,10 @@ public struct METADATA_ADDRESS_FIELD {
  tokField  
  A ID do token de campo.  
   
- [C++] `_mdToken` is a `typedef` for a 32-bit `int`.  
+ [C++] `_mdToken` é um `typedef` para 32 bits `int`.  
   
 ## <a name="remarks"></a>Comentários  
- Essa estrutura é parte da união no [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo o `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_FIELD` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
+ Essa estrutura é parte da união no [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo do `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_FIELD` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: sh.h  

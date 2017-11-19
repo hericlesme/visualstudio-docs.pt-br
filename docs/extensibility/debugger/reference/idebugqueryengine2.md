@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugQueryEngine2
-helpviewer_keywords:
-- IDebugQueryEngine2 interface
+f1_keywords: IDebugQueryEngine2
+helpviewer_keywords: IDebugQueryEngine2 interface
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: cdf774a97ef3b1d0bfeec0be8482d2c116806885
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: b5545d49776e31b60719a49e4dbdca14d7dfdda3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Essa interface permite que a sessão de depuração manager (SDM) recuperar uma interface que representa o mecanismo de depuração (DE).  
@@ -46,7 +30,7 @@ IDebugQueryEngine2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- O DE implementa essa interface nos objetos que implementam as interfaces DE mais comuns (como [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md), e [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) para permitir o acesso ao [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface DE si mesmo.  
+ O DE implementa essa interface nos objetos que implementam as interfaces DE mais comuns (como [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md), e [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) em ordem para permitir o acesso para o [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface DE si mesmo.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
  Chamar [QueryInterface](/cpp/atl/queryinterface) em uma interface DE típico para obter essa interface.  
@@ -59,7 +43,7 @@ IDebugQueryEngine2 : IUnknown
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Obtém uma interface de mecanismo (DE) personalizados de depuração.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, essa interface é implementada no objeto que implementa o [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface para oferecer suporte a causalidade ordenado percorrendo funções; ou seja, quando o depurador é sair de uma função, a próxima função pode não ser uma função em outro thread, mas a função anterior na pilha completamente. Para obter uma definição de "causalidade", consulte o [Glossário de depurador do Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).  
+ Normalmente, essa interface é implementada no objeto que implementa o [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface para oferecer suporte a causalidade ordenado percorrendo a funções, ou seja, quando o depurador é sair de uma função, o para executar a função Next não pode ser uma função em outro thread, mas a função anterior na pilha completamente. Para obter uma definição de "causalidade", consulte o [Glossário de depurador do Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

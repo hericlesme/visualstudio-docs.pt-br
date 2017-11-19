@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Exclude Paragraph Marks When Creating Ranges | Microsoft Docs'
+title: "Como: excluir programaticamente marcas de parágrafo ao criar intervalos | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,102 +16,115 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], paragraph marks
 - paragraphs, controlling structure
 ms.assetid: 6d563834-34bd-4462-a556-4339d9277eee
-caps.latest.revision: 50
-author: kempb
-ms.author: kempb
+caps.latest.revision: "50"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a52d292ece7fdeaf079e4189649d29cd56580294
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 4012211a39e1286becadd503a20d402f9ac7c7a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>How to: Programmatically Exclude Paragraph Marks When Creating Ranges
-  Whenever you create a <xref:Microsoft.Office.Interop.Word.Range> object based on a paragraph, all non-printing characters, such as paragraph marks, are included in the range. You may want to insert the text from a source paragraph into a destination paragraph. If you do not want to split the destination paragraph into separate paragraphs, then you must first remove the paragraph mark from the source paragraph. Additionally, since paragraph formatting information is stored within the paragraph mark, you might not want to include this when you insert the range into an existing paragraph.  
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Como excluir marcas de parágrafo ao criar intervalos programaticamente
+  Sempre que você criar um <xref:Microsoft.Office.Interop.Word.Range> objeto com base em um parágrafo, todos os caracteres não imprimíveis, como marcas de parágrafo, estão incluídos no intervalo. Você talvez queira inserir o texto de um parágrafo de origem em um parágrafo de destino. Se você não deseja dividir o parágrafo de destino em parágrafos diferentes, deverá primeiro remover a marca de parágrafo do parágrafo fonte. Além disso, como as informações de formatação de parágrafo é armazenado dentro da marca de parágrafo, não convém incluí-lo quando você insere o intervalo em um parágrafo existente.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- The following example procedure declares two string variables, retrieves the contents of the first and second paragraphs in the active document, and then exchanges their contents. The example then demonstrates removing the paragraph marker from the range by using the <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> method and inserting text inside the paragraph.  
+ O procedimento de exemplo a seguir declara duas variáveis de cadeia de caracteres, recupera o conteúdo dos parágrafos primeiro e o segundo no documento ativo e, em seguida, troca seu conteúdo. O exemplo demonstra, em seguida, removendo o marcador de parágrafo do intervalo com o <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> método e a inserção de texto no parágrafo.  
   
-### <a name="to-control-paragraph-structure-when-inserting-text"></a>To control paragraph structure when inserting text  
+### <a name="to-control-paragraph-structure-when-inserting-text"></a>Para controlar a estrutura de parágrafo ao inserir texto  
   
-1.  Create two range variables for the first and second paragraphs, and retrieve their contents using the <xref:Microsoft.Office.Interop.Word.Range.Text%2A> property.  
+1.  Crie duas variáveis de intervalo para o primeiro e o segundo parágrafo e recuperar seu conteúdo usando o <xref:Microsoft.Office.Interop.Word.Range.Text%2A> propriedade.  
   
-     The following code example can be used in a document-level customization.  
+     O exemplo de código a seguir pode ser usado em uma personalização no nível do documento.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#27)]  [!code-csharp[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#27)]  
+     [!code-vb[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#27)]
+     [!code-csharp[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#27)]  
   
-     The following code example can be used in an application-level VSTO Add-in. This code uses the active document.  
+     O exemplo de código a seguir pode ser usado em um suplemento do VSTO do nível do aplicativo. Esse código usa o documento ativo.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#27)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#27)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#27)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#27)]  
   
-2.  Assign the <xref:Microsoft.Office.Interop.Word.Range.Text%2A> property, swapping the text between the two paragraphs.  
+2.  Atribuir o <xref:Microsoft.Office.Interop.Word.Range.Text%2A> propriedade trocar o texto entre dois parágrafos.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#28)]  [!code-csharp[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#28)]  
+     [!code-vb[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#28)]
+     [!code-csharp[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#28)]  
   
-3.  Select each range in turn and pause to display the results in a message box.  
+3.  Selecione cada intervalo separadamente e pausar para exibir os resultados em uma caixa de mensagem.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#29)]  [!code-csharp[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#29)]  
+     [!code-vb[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#29)]
+     [!code-csharp[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#29)]  
   
-4.  Adjust `firstRange` using the <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> method so that the paragraph marker is no longer a part of `firstRange`.  
+4.  Ajustar `firstRange` usando o <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> método para que o marcador de parágrafo não faz parte de `firstRange`.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#30)]  [!code-csharp[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#30)]  
+     [!code-vb[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#30)]
+     [!code-csharp[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#30)]  
   
-5.  Replace the rest of the text in the first paragraph, assigning a new string to the <xref:Microsoft.Office.Interop.Word.Range.Text%2A> property of the range.  
+5.  Substitua o restante do texto no primeiro parágrafo, atribuir uma nova cadeia de caracteres para o <xref:Microsoft.Office.Interop.Word.Range.Text%2A> propriedade do intervalo.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#31)]  [!code-csharp[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#31)]  
+     [!code-vb[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#31)]
+     [!code-csharp[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#31)]  
   
-6.  Replace the text in `secondRange`, including the paragraph mark.  
+6.  Substitua o texto da `secondRange`, incluindo a marca de parágrafo.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#32)]  [!code-csharp[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#32)]  
+     [!code-vb[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#32)]
+     [!code-csharp[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#32)]  
   
-7.  Select `firstRange` and pause to display the results in a message box, and then do the same with `secondRange`.  
+7.  Selecione `firstRange` pausar para exibir os resultados em uma caixa de mensagem e, em seguida, faça o mesmo com `secondRange`.  
   
-     Since `firstRange` was redefined to exclude the paragraph mark, the original formatting of the paragraph is preserved. However, a sentence was inserted over the paragraph mark in `secondRange`, removing the separate paragraph.  
+     Como `firstRange` foi redefinido para excluir a marca de parágrafo, a formatação original do parágrafo é preservada. No entanto, uma frase foi inserida sobre a marca de parágrafo em `secondRange`, removendo o parágrafo separado.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#33)]  [!code-csharp[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#33)]  
+     [!code-vb[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#33)]
+     [!code-csharp[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#33)]  
   
-     The original contents of both ranges were saved as strings, so you can restore the document to its original condition.  
+     O conteúdo original de ambos os intervalos foram salvas como cadeias de caracteres, para que você possa restaurar o documento para sua condição original.  
   
-8.  Readjust `firstRange` to include the paragraph mark by using the <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> method for one character position.  
+8.  Reajustar `firstRange` para incluir a marca de parágrafo, usando o <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> método para a posição de um caractere.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]  [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]  
+     [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
+     [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]  
   
-9. Delete `secondRange`. This restores paragraph three to its original position.  
+9. Excluir `secondRange`. Isso restaura o parágrafo 3 à sua posição original.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#35)]   [!code-csharp[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#35)]  
+     [!code-vb[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#35)]
+     [!code-csharp[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#35)]  
   
-10. Restore the original paragraph text in `firstRange`.  
+10. Restaurar o texto de parágrafo original em `firstRange`.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#36)]  [!code-csharp[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#36)]  
+     [!code-vb[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#36)]
+     [!code-csharp[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#36)]  
   
-11. Use the <xref:Microsoft.Office.Interop.Word.Range.InsertAfter%2A> method of the <xref:Microsoft.Office.Interop.Word.Range> object to insert the original paragraph-two content after `firstRange`, and then select `firstRange`.  
+11. Use o <xref:Microsoft.Office.Interop.Word.Range.InsertAfter%2A> método o <xref:Microsoft.Office.Interop.Word.Range> objeto para inserir o conteúdo de dois de parágrafo após `firstRange`e, em seguida, selecione `firstRange`.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#37)]  [!code-csharp[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#37)]  
+     [!code-vb[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#37)]
+     [!code-csharp[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#37)]  
   
-## <a name="document-level-customization-example"></a>Document-Level Customization Example  
+## <a name="document-level-customization-example"></a>Exemplo de personalização de nível de documento  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>To control paragraph structure when inserting text in document-level customizations  
+#### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Para controlar a estrutura de parágrafo ao inserir um texto em personalizações no nível do documento  
   
-1.  The following example shows the complete method for a document-level customization. To use this code, run it from the `ThisDocument` class in your project.  
+1.  O exemplo a seguir mostra o método complete uma personalização de nível de documento. Para usar esse código, executá-la na `ThisDocument` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#26)]  [!code-csharp[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#26)]  
+     [!code-vb[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#26)]
+     [!code-csharp[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#26)]  
   
-## <a name="vsto-add-in-example"></a>VSTO Add-in Example  
+## <a name="vsto-add-in-example"></a>Exemplo de suplemento do VSTO  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>To control paragraph structure when inserting text in an VSTO Add-in  
+#### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>Para controlar a estrutura de parágrafo ao inserir um texto em um suplemento do VSTO  
   
-1.  The following example shows the complete method for an VSTO Add-in. To use this code, run it from the `ThisAddIn` class in your project.  
+1.  O exemplo a seguir mostra o método de conclusão de um suplemento do VSTO. Para usar esse código, executá-la na `ThisAddIn` classe em seu projeto.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Extend Ranges in Documents](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [How to: Programmatically Collapse Ranges or Selections in Documents](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [How to: Programmatically Insert Text into Word Documents](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [How to: Programmatically Reset Ranges in Word Documents](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [How to: Programmatically Define and Select Ranges in Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Como: estender a intervalos em documentos programaticamente](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Como: programaticamente recolher intervalos ou seleções em documentos](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Como: programaticamente inserir texto em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Como: programaticamente redefinir intervalos em Word documentos](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Como: definir programaticamente e selecionar intervalos em documentos](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

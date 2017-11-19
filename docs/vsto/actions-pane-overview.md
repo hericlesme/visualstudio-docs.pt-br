@@ -1,12 +1,10 @@
 ---
-title: Actions Pane Overview | Microsoft Docs
+title: "Visão geral do painel de ações | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,146 +16,153 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
 ms.assetid: 1b9b7db5-b19f-44ea-a774-f0962ca03bd2
-caps.latest.revision: 101
-author: kempb
-ms.author: kempb
+caps.latest.revision: "101"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 89f1d8db1ebfce2fe27aa6762c6ebd95a0eacea0
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="actions-pane-overview"></a>Actions Pane Overview
-  An actions pane is a customizable **Document Actions** task pane that is attached to a specific Microsoft Office Word document or Microsoft Office Excel workbook. It is hosted inside the Office task pane along with other built-in task panes such as the **XML Source** task pane in Excel or the **Styles and Formatting** task pane in Word. You can use Windows Forms controls or WPF controls to design the actions pane user interface.  
+# <a name="actions-pane-overview"></a>Visão geral do painel Ações
+  Um painel de ações é uma personalizável **ações do documento** painel de tarefas que está anexado a um documento específico do Microsoft Office Word ou pasta de trabalho do Microsoft Office Excel. Ele está hospedado dentro do painel de tarefas do Office junto com outros painéis de tarefas interna, como o **origem XML** no Excel ou o **estilos e formatação** painel de tarefas no Word. Você pode usar controles de formulários do Windows ou controles do WPF para criar a interface de usuário do painel de ações.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- You can create an actions pane only in a document-level customization for Word or Excel. You cannot create an actions pane in a VSTO Add-in. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ Você pode criar um painel de ações somente em uma personalização de nível de documento para Word ou Excel. Você não pode criar um painel de ações em um suplemento do VSTO. Para obter mais informações, consulte [recursos disponibilizados pelo aplicativo do Office e pelo tipo de projeto](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
->  The actions pane differs from custom task panes. Custom task panes are associated with the application, not a specific document. You can create custom task panes in VSTO Add-ins for some Microsoft Office applications. For more information, see [Custom Task Panes](../vsto/custom-task-panes.md).  
+>  O painel de ações é diferente de painéis de tarefas personalizados. Painéis de tarefas personalizados estão associados com o aplicativo, não é um documento específico. Você pode criar painéis de tarefas personalizados no suplemento do VSTO para alguns aplicativos do Microsoft Office. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).  
   
- ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Use WPF Controls Inside an Excel Actions Pane?](http://go.microsoft.com/fwlink/?LinkId=132763).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração de vídeo relacionada, consulte [como fazer i: Use WPF controles dentro de um Excel painel Ações?](http://go.microsoft.com/fwlink/?LinkId=132763).  
   
-## <a name="displaying-the-actions-pane"></a>Displaying the Actions Pane  
- The actions pane is represented by the <xref:Microsoft.Office.Tools.ActionsPane> class. When you create a document-level project, an instance of this class is available to your code by using the `ActionsPane` field of the `ThisWorkbook` (for Excel) or `ThisDocument` (for Word) class in your project. To display the actions pane, add a Windows Forms control to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> property of the `ActionsPane` field. The following code example adds a control named `actions` to the actions pane.  
+## <a name="displaying-the-actions-pane"></a>Exibir o painel de ações  
+ O painel de ações é representado pela <xref:Microsoft.Office.Tools.ActionsPane> classe. Quando você cria um projeto no nível do documento, uma instância desta classe está disponível no seu código usando o `ActionsPane` campo o `ThisWorkbook` (para Excel) ou `ThisDocument` (para o Word) de classe em seu projeto. Para exibir o painel Ações, adicione um controle de formulários do Windows para o <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriedade o `ActionsPane` campo. O exemplo de código a seguir adiciona um controle chamado `actions` para o painel de ações.  
   
- [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)] [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]  
+ [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
+ [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]  
   
- The actions pane becomes visible at run time as soon as you explicitly add a control to it. After the actions pane is displayed, you can dynamically add or remove controls in response to the user's actions. Typically, you add the code to display the actions pane in the `Startup` event handler of `ThisDocument` or `ThisWorkbook` so that the actions pane is visible when the user first opens the document. However, you might want to display the actions pane only in response to a user's action in the document. For example, you might add the code to the `Click` event of a control on the document.  
+ O painel de ações se torna visível em tempo de execução assim que você adicionar um controle explicitamente a ele. Depois que o painel de ações é exibido, você pode adicionar ou remover controles em resposta a ações do usuário dinamicamente. Normalmente, você adiciona o código para exibir o painel de ações no `Startup` manipulador de eventos do `ThisDocument` ou `ThisWorkbook` para que o painel de ações é visível quando o usuário primeiro abre o documento. No entanto, você talvez queira exibir o painel de ações apenas em resposta a uma ação do usuário no documento. Por exemplo, você pode adicionar o código para o `Click` eventos de um controle no documento.  
   
-### <a name="adding-multiple-controls-to-the-actions-pane"></a>Adding Multiple Controls to the Actions Pane  
- If you are adding multiple controls to the actions pane, in most cases you should group the controls in a user control, and then add the user control to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> property. This process includes the following steps:  
+### <a name="adding-multiple-controls-to-the-actions-pane"></a>Adicionando vários controles para o painel de ações  
+ Se você estiver adicionando vários controles para o painel de ações, na maioria dos casos você deve agrupar os controles em um controle de usuário e, em seguida, adicione o controle de usuário para o <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriedade. Esse processo inclui as seguintes etapas:  
   
-1.  Create the user interface (UI) of the actions pane by adding an **Actions Pane Control** or **User Control** item to your project. Both of these items include a custom Windows Forms <xref:System.Windows.Forms.UserControl> class. The **Actions Pane Control** and **User Control** items are equivalent; the only difference is their name.  
+1.  Criar a interface do usuário (IU) do painel Ações, adicionando um **controle do painel Ações** ou **controle de usuário** item ao seu projeto. Esses itens incluem um Windows Forms personalizados <xref:System.Windows.Forms.UserControl> classe. O **controle do painel Ações** e **controle de usuário** itens são equivalentes; a única diferença é o seu nome.  
   
-2.  Add Windows Forms controls to the <xref:System.Windows.Forms.UserControl> by using the designer, or by writing code.  
+2.  Adicionar controles de formulários do Windows para o <xref:System.Windows.Forms.UserControl> usando o designer ou escrevendo código.  
   
     > [!NOTE]  
-    >  You can also add WPF controls to the actions pane by adding a WPF <xref:System.Windows.Controls.UserControl> to the Windows Forms <xref:System.Windows.Forms.UserControl>. For more information, see [Using WPF Controls in Office Solutions](../vsto/using-wpf-controls-in-office-solutions.md).  
+    >  Você também pode adicionar controles do WPF para o painel de ações, adicionando um WPF <xref:System.Windows.Controls.UserControl> para formulários do Windows <xref:System.Windows.Forms.UserControl>. Para obter mais informações, consulte [usando controles WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md).  
   
-3.  Add an instance of the custom user control to the controls that are contained in the `ActionsPane` field of the `ThisWorkbook` (for Excel) or `ThisDocument` (for Word) class in your project.  
+3.  Adicionar uma instância do controle de usuário personalizadas para os controles que estão contidos no `ActionsPane` campo o `ThisWorkbook` (para Excel) ou `ThisDocument` (para o Word) de classe em seu projeto.  
   
- For examples that demonstrate this process in more detail, see [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+ Para obter exemplos que demonstram esse processo em mais detalhes, consulte [como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
-## <a name="hiding-the-actions-pane"></a>Hiding the Actions Pane  
- Although the <xref:Microsoft.Office.Tools.ActionsPane> class has a <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> method and a <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> property, you cannot remove the actions pane from the user interface by using any members of the <xref:Microsoft.Office.Tools.ActionsPane> class itself. Calling the <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> method or setting the <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> property to **false** hides only the controls on the actions pane; it does not hide the task pane.  
+## <a name="hiding-the-actions-pane"></a>Ocultar o painel de ações  
+ Embora o <xref:Microsoft.Office.Tools.ActionsPane> classe tem um <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método e uma <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propriedade, você não pode remover o painel de ações da interface do usuário usando os membros a <xref:Microsoft.Office.Tools.ActionsPane> classe em si. Chamando o <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método ou configuração o <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propriedade **false** oculta somente os controles no painel Ações; não oculta o painel de tarefas.  
   
- To hide the task pane in your solution, you have several options:  
+ Para ocultar o painel de tarefas em sua solução, você tem várias opções:  
   
--   For Word, set the <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> property of the <xref:Microsoft.Office.Interop.Word.TaskPane> object that represents the Document Actions task pane to **false**. The following code example is intended to be run from the `ThisDocument` class in your project.  
+-   Para o Word, defina o <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> propriedade o <xref:Microsoft.Office.Interop.Word.TaskPane> objeto que representa o painel de tarefas ações do documento para **false**. O exemplo de código a seguir se destina a ser executado a partir de `ThisDocument` classe em seu projeto.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]  [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]  
   
--   For Excel, set the <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> property of the <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> object to **false**. The following code example is intended to be run from the `ThisWorkbook` class in your project.  
+-   Para Excel, defina o <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> propriedade o <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> do objeto para **false**. O exemplo de código a seguir se destina a ser executado a partir de `ThisWorkbook` classe em seu projeto.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]  [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]  
+     [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
+     [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]  
   
--   For Word or Excel, you can alternatively set the <xref:Microsoft.Office.Core.CommandBar.Visible%2A> property of the command bar that represents the task pane to **false**. The following code example is intended to be run from the `ThisDocument` or `ThisWorkbook` class in your project.  
+-   Para o Word ou Excel, você pode definir opcionalmente o <xref:Microsoft.Office.Core.CommandBar.Visible%2A> propriedade da barra de comandos que representa o painel de tarefas para **false**. O exemplo de código a seguir se destina a ser executado a partir de `ThisDocument` ou `ThisWorkbook` classe em seu projeto.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]  [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]  
+     [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
+     [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]  
   
-### <a name="clearing-the-actions-pane-when-the-document-is-opened"></a>Clearing the Actions Pane When the Document is Opened  
- If the user saves the document while the actions pane is visible, the actions pane is visible every time the document is opened, whether or not the actions pane contains any controls. If you want to control when it appears, call the <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> method of the `ActionsPane` field in the `Startup` event handler of `ThisDocument` or `ThisWorkbook` to ensure that the actions pane is not visible when the document is opened.  
+### <a name="clearing-the-actions-pane-when-the-document-is-opened"></a>Limpar o ações painel quando o documento é aberto.  
+ Se o usuário salva o documento, enquanto o painel de ações está visível, o painel de ações é visível toda vez que o documento for aberto, se o painel de ações contém todos os controles ou não. Se você deseja controlar quando ele for exibido, chame o <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> método o `ActionsPane` campo o `Startup` manipulador de eventos do `ThisDocument` ou `ThisWorkbook` para garantir que o painel de ações não estiver visível quando o documento é aberto.  
   
-### <a name="determining-when-the-actions-pane-is-closed"></a>Determining When the Actions Pane is Closed  
- There is no event that is raised when the actions pane is closed. Although the <xref:Microsoft.Office.Tools.ActionsPane> class has a <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> event, this event is not raised when the end user closes the actions pane. Instead, this event is raised when the controls on the actions pane are hidden by calling the <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> method or by setting the <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> property to **false**.  
+### <a name="determining-when-the-actions-pane-is-closed"></a>Determinar quando o painel de ações está fechado  
+ Não há nenhum evento que é gerado quando o painel de ações está fechado. Embora o <xref:Microsoft.Office.Tools.ActionsPane> classe tiver um <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> evento, esse evento não é gerado quando o usuário final para fechar o painel de ações. Em vez disso, esse evento é gerado quando os controles no painel de ações são ocultos por chamar o <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método ou definindo o <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propriedade **false**.  
   
- If the end user closes the actions pane, the user can display it again by performing one of the following procedures in the user interface (UI) of the application.  
+ Se o usuário final fecha o painel de ações, o usuário pode exibi-la novamente, executando um dos procedimentos a seguir na interface do usuário (IU) do aplicativo.  
   
-##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>To display the actions pane by using the UI of Word or Excel  
+##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Para exibir o painel de ações, usando a interface do usuário do Word ou Excel  
   
-1.  On the Ribbon, click the **View** tab.  
+1.  Na faixa de opções, clique no **exibição** guia.  
   
-2.  In the **Show/Hide** group, click the **Document Actions** toggle button.  
+2.  No **Mostrar/ocultar** de grupo, clique no **ações do documento** botão de alternância.  
   
-## <a name="programming-actions-pane-events"></a>Programming Actions Pane Events  
- You can add multiple user controls to the actions pane and then write code to respond to events on the document by showing and hiding the user controls. If you map XML schema elements to your document, you can show certain user controls in the actions pane whenever the insertion point is inside one of the XML elements. For more information, see [How to: Map Schemas to Word Documents Inside Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) and [How to: Map Schemas to Worksheets Inside Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).  
+## <a name="programming-actions-pane-events"></a>Eventos de painel de ações de programação  
+ Você pode adicionar vários controles de usuário para o painel de ações e, em seguida, escrever código para responder a eventos no documento mostrando e ocultando os controles de usuário. Se você mapear elementos de esquema XML para o documento, você pode mostrar determinados controles de usuário no painel Ações, sempre que o ponto de inserção está dentro de um dos elementos XML. Para obter mais informações, consulte [como: mapa de esquemas para o Word documentos dentro do Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) e [como: mapa de esquemas para planilhas dentro do Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).  
   
- You can also write code to respond to the events of any object, including host control, application, or document events. For more information see [Walkthrough: Programming Against Events of a NamedRange Control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ Você também pode escrever código para responder a eventos de qualquer objeto, incluindo controle de host, aplicativo ou eventos de documento. Para obter mais informações, consulte [passo a passo: Programando contra eventos de um controle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
-## <a name="binding-data-to-controls-on-the-actions-pane"></a>Binding Data to Controls on the Actions Pane  
- The controls on the actions pane have the same data binding capabilities as controls on Windows Forms. You can bind the controls to data sources such as data sets, typed data sets, and XML. For more information, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+## <a name="binding-data-to-controls-on-the-actions-pane"></a>Associando dados a controles no painel Ações  
+ Os controles no painel Ações têm as mesmas capacidades de associação de dados de controles de formulários do Windows. Você pode vincular os controles a fontes de dados como conjuntos de dados, conjuntos de dados tipados e XML. Para obter mais informações, consulte [Vinculação de dados e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- You can bind controls on the actions pane and controls on the document to the same dataset. For example, you can create a master/detail relation between the controls on the actions pane and the controls on the worksheet. For more information, see [Walkthrough: Binding Data to Controls on an Excel Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+ Você pode vincular controles no painel Ações e no documento para o mesmo conjunto de dados. Por exemplo, você pode criar uma relação mestre/detalhes entre os controles no painel Ações e os controles na planilha. Para obter mais informações, consulte [passo a passo: vinculação de dados a controles em um painel de ações do Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
-## <a name="validating-data-in-actions-pane-controls"></a>Validating Data in Actions Pane Controls  
- If you display a message box in the <xref:System.Windows.Forms.Control.Validating> event handler of a control on the actions pane, the event might be raised a second time when focus moves from the control to the message box. To prevent this issue, use an <xref:System.Windows.Forms.ErrorProvider> control to display any validation error messages.  
+## <a name="validating-data-in-actions-pane-controls"></a>Validando dados em controles de painel de ações  
+ Se você exibir uma caixa de mensagem no <xref:System.Windows.Forms.Control.Validating> manipulador de eventos de um controle no painel Ações, o evento pode ser gerado pela segunda vez quando o foco move de controle para a caixa de mensagem. Para evitar esse problema, use um <xref:System.Windows.Forms.ErrorProvider> controle para exibir as mensagens de erro de validação.  
   
-## <a name="user-control-stacking-order"></a>User Control Stacking Order  
- If you are using multiple user controls, you can write code to properly stack the user controls on the actions pane whether it is docked vertically or horizontally. You can set the stacking order of the user controls on the actions pane by using the <xref:Microsoft.Office.Tools.StackStyle> enumeration of the <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> property. For more information, see [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
+## <a name="user-control-stacking-order"></a>Controle de usuário, a ordem de empilhamento  
+ Se você estiver usando vários controles de usuário, você pode escrever código para os controles de usuário no painel de ações de pilha corretamente se ela estiver encaixada verticalmente ou horizontalmente. Você pode definir a ordem de empilhamento dos controles de usuário no painel Ações, usando o <xref:Microsoft.Office.Tools.StackStyle> enumeração do <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> propriedade. Para obter mais informações, consulte [como: gerenciar o controle de Layout em painéis de ações](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
   
- The <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> property can take the following <xref:Microsoft.Office.Tools.StackStyle> enumeration values.  
+ O <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> propriedade pode ter o seguinte <xref:Microsoft.Office.Tools.StackStyle> valores de enumeração.  
   
-|Stacking style|Definition|  
+|Estilo de empilhamento|Definição|  
 |--------------------|----------------|  
-|FromBottom|Stack from the bottom of the actions pane.|  
-|FromLeft|Stack from the left of the actions pane.|  
-|FromRight|Stack from the right of the actions pane.|  
-|FromTop|Stack from the top of the actions pane.|  
-|None|No stacking order defined; order is controlled by the developer.|  
+|FromBottom|Empilhar na parte inferior do painel de ações.|  
+|FromLeft|Empilhar na parte esquerda do painel de ações.|  
+|FromRight|Empilhar na parte direita do painel de ações.|  
+|FromTop|Empilhar na parte superior do painel de ações.|  
+|Nenhum|Nenhuma ordem de empilhamento definida, a ordem é controlada pelo desenvolvedor.|  
   
- The following code sets the <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> property to stack the user controls from the top of the actions pane.  
+ O código a seguir define o <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> propriedade para os controles de usuário da parte superior do painel de ações de pilha.  
   
- [!code-csharp[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#10)] [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]  
+ [!code-csharp[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#10)]
+ [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]  
   
-## <a name="anchoring-controls"></a>Anchoring Controls  
- If the user resizes the actions pane at run time, the controls can resize with the actions pane. You can use the <xref:System.Windows.Forms.Control.Anchor%2A> property of a Windows Forms control to anchor controls to the actions pane. You can also anchor the Windows Forms controls onto the user control in the same manner. For more information, see [How to: Anchor Controls on Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
+## <a name="anchoring-controls"></a>Controles de ancoragem  
+ Se o usuário redimensionar o painel de ações em tempo de execução, os controles podem redimensionar com o painel de ações. Você pode usar o <xref:System.Windows.Forms.Control.Anchor%2A> propriedade de um controle de formulários do Windows para controles de âncora para o painel de ações. Você também pode ancorar os controles de formulários do Windows para o controle de usuário da mesma maneira. Para obter mais informações, consulte [como: âncora controles nos Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
   
-## <a name="resizing-the-actions-pane"></a>Resizing the Actions Pane  
- You cannot directly change the size of an <xref:Microsoft.Office.Tools.ActionsPane> because the <xref:Microsoft.Office.Tools.ActionsPane> is embedded in the task pane. However, you can programmatically change the width of the task pane by setting the <xref:Microsoft.Office.Core.CommandBar.Width%2A> property of the <xref:Microsoft.Office.Core.CommandBar> that represents the task pane. You can change the height of the task pane if it is docked horizontally or is floating.  
+## <a name="resizing-the-actions-pane"></a>Redimensionar o painel de ações  
+ Você não pode alterar diretamente o tamanho de um <xref:Microsoft.Office.Tools.ActionsPane> porque o <xref:Microsoft.Office.Tools.ActionsPane> é inserido no painel de tarefas. No entanto, você pode alterar programaticamente a largura do painel de tarefas, definindo o <xref:Microsoft.Office.Core.CommandBar.Width%2A> propriedade o <xref:Microsoft.Office.Core.CommandBar> que representa o painel de tarefas. Você pode alterar a altura do painel de tarefas se ele está encaixado na horizontal ou é flutuante.  
   
- Programmatically resizing the task pane is generally not recommended because the user should be able to select the task pane size that best suits his or her needs. However, if you must resize the width of the task pane, you could use the following code to achieve this task.  
+ Redimensionar programaticamente o painel de tarefas geralmente não é recomendável porque o usuário deve ser capaz de selecionar o tamanho do painel de tarefas que melhor atenda às suas necessidades. No entanto, se você precisa redimensionar a largura do painel de tarefas, você pode usar o código a seguir para alcançar essa tarefa.  
   
- [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)] [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]  
+ [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
+ [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]  
   
-## <a name="repositioning-the-actions-pane"></a>Repositioning the Actions Pane  
- You cannot directly reposition the <xref:Microsoft.Office.Tools.ActionsPane> because it is embedded in the task pane. However, you can programmatically move the task pane by setting the <xref:Microsoft.Office.Core.CommandBar.Position%2A> property of the <xref:Microsoft.Office.Core.CommandBar> that represents the task pane.  
+## <a name="repositioning-the-actions-pane"></a>Reposicionar o painel de ações  
+ Não é possível reposicionar o <xref:Microsoft.Office.Tools.ActionsPane> porque ele é inserido no painel de tarefas. No entanto, você pode mover programaticamente o painel de tarefas, definindo o <xref:Microsoft.Office.Core.CommandBar.Position%2A> propriedade o <xref:Microsoft.Office.Core.CommandBar> que representa o painel de tarefas.  
   
- Programmatically repositioning the task pane is generally not recommended because the user should be able to choose the task pane position on the screen that best suits his or her needs. However, if you must move the task pane to a particular position, you could use the following code to achieve this task.  
+ Reposicionar programaticamente o painel de tarefas geralmente não é recomendável porque o usuário deve ser capaz de escolher a posição do painel de tarefas na tela que melhor atenda às suas necessidades. No entanto, se você deve mover o painel de tarefas para uma posição específica, você pode usar o código a seguir para alcançar essa tarefa.  
   
- [!code-csharp[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#100)] [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]  
+ [!code-csharp[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#100)]
+ [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]  
   
 > [!NOTE]  
->  End users can manually reposition the task pane at any time. There is no way to ensure that the task pane will remain docked at the position you indicate programmatically. However, you can check for orientation changes and ensure that the controls on the actions pane are stacked in the correct direction. For more information, see [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md).  
+>  Os usuários finais podem reposicionar o painel de tarefas manualmente a qualquer momento. Não há nenhuma maneira de garantir que o painel de tarefas permanecerá encaixado na posição em que você indique programaticamente. No entanto, você pode verificar as alterações de orientação e certifique-se de que os controles no painel Ações estão empilhados na direção certa. Para obter mais informações, consulte [como: gerenciar o controle de Layout em painéis de ações](../vsto/how-to-manage-control-layout-on-actions-panes.md).  
   
- Setting the <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> and <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> properties of the <xref:Microsoft.Office.Tools.ActionsPane> does not change its position because the <xref:Microsoft.Office.Tools.ActionsPane> object is embedded in the task pane.  
+ Definindo o <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> e <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> propriedades do <xref:Microsoft.Office.Tools.ActionsPane> não altera sua posição porque o <xref:Microsoft.Office.Tools.ActionsPane> objeto é inserido no painel de tarefas.  
   
- If the task pane is not docked, you can set the <xref:Microsoft.Office.Core.CommandBar.Top%2A> and <xref:Microsoft.Office.Core.CommandBar.Left%2A> properties of the <xref:Microsoft.Office.Core.CommandBar> that represents the task pane. The following code moves an undocked task pane to the upper-left corner of the document.  
+ Se o painel de tarefas não estiver encaixado, você pode definir o <xref:Microsoft.Office.Core.CommandBar.Top%2A> e <xref:Microsoft.Office.Core.CommandBar.Left%2A> propriedades da <xref:Microsoft.Office.Core.CommandBar> que representa o painel de tarefas. O código a seguir move um painel de tarefas não encaixada para o canto superior esquerdo do documento.  
   
- [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)] [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]  
+ [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
+ [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]  
   
-## <a name="see-also"></a>See Also  
- [Using WPF Controls in Office Solutions](../vsto/using-wpf-controls-in-office-solutions.md)   
- [Office UI Customization](../vsto/office-ui-customization.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
- [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Walkthrough: Inserting Text into a Document from an Actions Pane](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Walkthrough: Binding Data to Controls on a Word Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
- [Walkthrough: Binding Data to Controls on an Excel Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
- [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Walkthrough: Inserting Text into a Document from an Actions Pane](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+## <a name="see-also"></a>Consulte também  
+ [Usando controles WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md)   
+ [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)   
+ [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Como: adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Passo a passo: Inserindo texto em um documento de um painel de ações](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [Passo a passo: Associando dados a controles em um painel de ações do Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
+ [Passo a passo: Associando dados a controles em um painel de ações do Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
+ [Como: gerenciar o controle Layout em painéis de ações](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Instruções passo a passo: inserindo texto em um documento de um painel Ações](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

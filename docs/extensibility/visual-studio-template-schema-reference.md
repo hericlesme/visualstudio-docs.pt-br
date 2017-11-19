@@ -1,11 +1,10 @@
 ---
-title: "Referência de esquema de modelo do Visual Studio | Documentos do Microsoft"
+title: "Referência de esquema de modelo do Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,33 +12,20 @@ helpviewer_keywords:
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-caps.latest.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b4ff9aaf1026114040cb6229436ecf942d087317
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 803a5dd6b6f9153bb6bda6bf2a7a1f82e79d06b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-template-schema-reference"></a>Referência de esquema do modelo do Visual Studio
 Esta seção contém informações sobre elementos XML em arquivos .vstemplate, que são arquivos que armazenam metadados para modelos de projeto, modelos de item e Kits de Início.  
   
- Você pode usar vstemplate.xsd para validar arquivos .vstemplate personalizados. Esse arquivo está disponível em... \\ *Pasta de instalação do visual Studio*\xml\schemas\1033\vstemplate.xsd..  
+ Você pode usar vstemplate.xsd para validar arquivos .vstemplate personalizados. Esse arquivo está disponível no. \\ *Pasta de instalação do visual Studio*\Xml\Schemas\1033\vstemplate.xsd.  
   
 |Elemento|Elementos filho|Atributos|  
 |-------------|--------------------|----------------|  
@@ -80,7 +66,7 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
 |[Referências](../extensibility/references-element-visual-studio-templates.md)|Referência|--|  
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|  
 |[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|--|Versão|  
-|[SDKReference](72c8b352-0b7a-42b3-ba5d-2a2d1e90c3)|--|Pacote|  
+|[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Pacote|  
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|Nome|  
 |[Ordem de classificação](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|  
@@ -97,5 +83,5 @@ Esta seção contém informações sobre elementos XML em arquivos .vstemplate, 
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Assembly<br /><br /> FullClassName|--|  
   
 ## <a name="see-also"></a>Consulte também  
- [Criando modelos de projeto e Item](../ide/creating-project-and-item-templates.md)   
+ [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
  [Como criar kits de início](../ide/how-to-create-starter-kits.md)

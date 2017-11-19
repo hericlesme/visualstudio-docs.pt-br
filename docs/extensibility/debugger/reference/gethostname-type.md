@@ -1,47 +1,31 @@
 ---
-title: GETHOSTNAME_TYPE | Documentos do Microsoft
+title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- GETHOSTNAME_TYPE
-helpviewer_keywords:
-- GETHOSTNAME_TYPE enumeration
+f1_keywords: GETHOSTNAME_TYPE
+helpviewer_keywords: GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d3e32612fe3d9a63b41d8a2a4d78b7dd0ef2dfab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ba4c0eb77d1eb2a902c9db1288785cf2b6d0ac7a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 Especifica o tipo de nome de host.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_GETHOSTNAME_TYPE {   
    GHN_FRIENDLY_NAME = 0,  
    GHN_FILE_NAME     = 1  
@@ -49,7 +33,7 @@ enum enum_GETHOSTNAME_TYPE {
 typedef DWORD GETHOSTNAME_TYPE;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_GETHOSTNAME_TYPE {   
    GHN_FRIENDLY_NAME = 0,  
    GHN_FILE_NAME     = 1  

@@ -1,39 +1,25 @@
 ---
-title: Elemento de menus | Documentos do Microsoft
+title: Elemento menus | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a969260e8a8db727f69dc18c29e07815bf32c2ed
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5e9bfcf1d4da949c7f24ccf004cf3d031e776063
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="menus-element"></a>Elemento de menus
 Define todos os menus e barras de ferramentas que implementa um VSPackage.  
@@ -60,8 +46,8 @@ Define todos os menus e barras de ferramentas que implementa um VSPackage.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento de menus](../extensibility/menus-element.md)|Define todos os menus e barras de ferramentas que implementa um VSPackage.|  
-|[Elemento de menu](../extensibility/menu-element.md)|Representa um único menu ou barra de ferramentas.|  
+|[Elemento Menus](../extensibility/menus-element.md)|Define todos os menus e barras de ferramentas que implementa um VSPackage.|  
+|[Elemento Menu](../extensibility/menu-element.md)|Representa um único menu ou barra de ferramentas.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -95,5 +81,5 @@ Define todos os menus e barras de ferramentas que implementa um VSPackage.
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como os VSPackages adicionar elementos de Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Barras de ferramentas, Menus e comandos](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Como VSPackages adicionar elementos da Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

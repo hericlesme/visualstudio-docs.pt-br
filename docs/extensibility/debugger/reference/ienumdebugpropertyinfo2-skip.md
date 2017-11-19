@@ -1,53 +1,37 @@
 ---
-title: IEnumDebugPropertyInfo2::Skip | Documentos do Microsoft
+title: IEnumDebugPropertyInfo2::Skip | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugPropertyInfo2::Skip
-helpviewer_keywords:
-- IEnumDebugPropertyInfo2::Skip
+f1_keywords: IEnumDebugPropertyInfo2::Skip
+helpviewer_keywords: IEnumDebugPropertyInfo2::Skip
 ms.assetid: 0366c778-18eb-4065-a452-64b70c751a58
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4d01f839d8ba40375075b32d451cf7e83f54f772
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ac5b63d5ba85ca3688e226fb726cfead73826eaa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugpropertyinfo2skip"></a>IEnumDebugPropertyInfo2::Skip
 Ignora o número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
    ULONG celt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Skip(  
    uint celt  
 );  

@@ -1,38 +1,23 @@
 ---
-title: IDebugTypeFieldBuilder | Documentos do Microsoft
+title: IDebugTypeFieldBuilder | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugTypeFieldBuilder interface
+helpviewer_keywords: IDebugTypeFieldBuilder interface
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d5a6304ba4a83648f856638a855cc520d9108cca
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e90ed00775c8c2ba53a68c67b4bcc11ed84e20b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 Representa a capacidade de criar um campo que representa um tipo.  

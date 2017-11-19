@@ -1,54 +1,38 @@
 ---
-title: IDebugClassField::EnumConstructors | Documentos do Microsoft
+title: IDebugClassField::EnumConstructors | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugClassField::EnumConstructors
-helpviewer_keywords:
-- IDebugClassField::EnumConstructors method
+f1_keywords: IDebugClassField::EnumConstructors
+helpviewer_keywords: IDebugClassField::EnumConstructors method
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8eaacc89db63082ad907dd602302f88735fd4618
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 24ae27acb2dd78b086a8b94e28c3de705cd710ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
-Cria um enumerador para os construtores para essa classe.  
+Cria um enumerador para os construtores para esta classe.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT EnumConstructors(   
    CONSTRUCTOR_ENUM   cMatch,  
    IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumConstructors(  
    CONSTRUCTOR_ENUM     cMatch,   
    out IEnumDebugFields ppEnum  
@@ -57,16 +41,16 @@ int EnumConstructors(
   
 #### <a name="parameters"></a>Parâmetros  
  `cMatch`  
- [in] Um valor a partir de [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) enumeração que especifica o tipo de construtores para enumeração.  
+ [in] Um valor da [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) enumeração que especifica o tipo de construtores para enumeração.  
   
  `ppEnum`  
  [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de construtores. Retorna um valor nulo se não houver nenhum construtor.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, Retorna S_OK ou retorna S_FALSE se não houver nenhum construtor. Caso contrário, retornará um código de erro.  
+ Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhum construtor. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Cada elemento da enumeração é uma [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objeto que descreve um método de construtor.  
+ Cada elemento da enumeração é uma [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) que descreve um método de construtor do objeto.  
   
  A lista de construtores normalmente não inclui os construtores padrão fornecidos por um compilador.  
   

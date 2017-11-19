@@ -1,51 +1,36 @@
 ---
-title: IDebugPortSupplierLocale2::SetLocale | Documentos do Microsoft
+title: IDebugPortSupplierLocale2::SetLocale | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugPortSupplierLocale2::SetLocale
+helpviewer_keywords: IDebugPortSupplierLocale2::SetLocale
 ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e7fea4aa13e0789670a4f1368e34eee40eee34b8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 44a1e375f3b7a099bcd30724fa131f674373625e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 Define a localidade para o fornecedor de porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT SetLocale(  
    WORD wLangID  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetLocale(  
    ushort wLangID  
 );  
@@ -56,7 +41,7 @@ int SetLocale(
  Identificador de localidade a ser definida.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugPortSupplierLocale2](../../../extensibility/debugger/reference/idebugportsupplierlocale2.md)

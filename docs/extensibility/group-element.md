@@ -1,39 +1,25 @@
 ---
-title: Elemento de grupo | Documentos do Microsoft
+title: Elemento de grupo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 301559e444af1fbd52ebc78f90e4e9cbe4176e86
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: acdc524b00baaf0de52ad30ea7abad82dc57651b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="group-element"></a>Elemento de grupo
 Define um grupo de comando VSPackage.  
@@ -53,8 +39,8 @@ Define um grupo de comando VSPackage.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. GUID do identificador do comando GUID/ID.|  
-|id|Necessário. ID do identificador do comando GUID/ID.|  
+|GUID|Necessário. GUID do identificador de comando GUID ID.|  
+|id|Necessário. ID do identificador de comando GUID ID.|  
 |priority|Opcional. Um valor numérico que especifica a prioridade.|  
 |Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
@@ -80,4 +66,4 @@ Define um grupo de comando VSPackage.
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

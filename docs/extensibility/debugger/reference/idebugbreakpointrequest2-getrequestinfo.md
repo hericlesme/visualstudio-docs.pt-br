@@ -1,54 +1,38 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Documentos do Microsoft
+title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakpointRequest2::GetRequestInfo
-helpviewer_keywords:
-- IDebugBreakpointRequest2::GetRequestInfo
+f1_keywords: IDebugBreakpointRequest2::GetRequestInfo
+helpviewer_keywords: IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 01480660800ad141fe72a6bc190efbeda2cb5315
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c8f44bc48f2d16cd01be67a9058722749f1863d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Obtém as informações de solicitação de ponto de interrupção que descreve esta solicitação de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetRequestInfo(   
    BPREQI_FIELDS    dwFields,  
    BP_REQUEST_INFO* pBPRequestInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetRequestInfo(   
    eunm_BPREQI_FIELDS  dwFields,  
    BP_REQUEST_INFO[]   pBPRequestInfo  
@@ -57,16 +41,16 @@ int GetRequestInfo(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwFields`  
- [in] Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que determina quais campos no `pBPRequestInfo` parâmetro devem ser preenchidos.  
+ [in] Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que determina quais campos o `pBPRequestInfo` parâmetro devem ser preenchidos.  
   
  `pBPRequestInfo`  
- [out] Especifica o [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura a ser preenchido com a descrição da solicitação de ponto de interrupção.  
+ [out] Especifica o [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura a ser preenchida com a descrição da solicitação de ponto de interrupção.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CDebugBreakpointRequest` objeto expõe o [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um simples `CDebugBreakpointRequest` objeto que expõe o [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interface.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

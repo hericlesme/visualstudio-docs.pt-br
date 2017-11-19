@@ -1,42 +1,27 @@
 ---
-title: IDebugAlias2 | Documentos do Microsoft
+title: IDebugAlias2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugAlias2 interface
+helpviewer_keywords: IDebugAlias2 interface
 ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a8b7589f86979a5c09c08d450f33c5c3c6547589
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e77f4fed0bee4451b12463787bc2dd491ffc09c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão do CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  No Visual Studio 2015, essa maneira de implementar avaliadores de expressão foi preterida. Para obter informações sobre como implementar avaliadores de expressão do CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Representa um alias numérico para uma variável e permite que um avaliador de expressão (EE) para obter o domínio de aplicativo para o alias.  
   
@@ -57,7 +42,7 @@ IDebugAlias2 : IDebugAlias
 |[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|Recupera o identificador para o domínio de aplicativo.|  
   
 ## <a name="remarks"></a>Comentários  
- Um alias é um número decimal em forma de cadeia de caracteres, seguido pelo caractere #, por exemplo, # 1001.  
+ Um alias é um número decimal em formato de cadeia de caracteres, seguido pelo caractere #, por exemplo, # 1001.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: Ee.h  

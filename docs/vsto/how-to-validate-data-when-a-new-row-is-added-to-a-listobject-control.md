@@ -1,12 +1,10 @@
 ---
-title: 'How to: Validate Data When a New Row is Added to a ListObject Control | Microsoft Docs'
+title: "Como: validar dados quando uma nova linha é adicionada a um controle ListObject | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,51 +15,53 @@ helpviewer_keywords:
 - ListObject control, new row
 - ListObject control, validating data
 ms.assetid: 107bce92-e5ef-40be-8c05-cd6861d39d75
-caps.latest.revision: 43
-author: kempb
-ms.author: kempb
+caps.latest.revision: "43"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b8c536126dedb08f18bda2f826ccec449b307eac
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 4c4eb8446f26267eb0c3d5d9b2f5cdb5cfa02a78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>How to: Validate Data When a New Row is Added to a ListObject Control
-  Users can add new rows to a <xref:Microsoft.Office.Tools.Excel.ListObject> control that is bound to data. You can validate the user's data before committing the changes to the data source.  
+# <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Como validar dados quando uma nova linha é adicionada a um controle ListObject
+  Os usuários podem adicionar novas linhas para um <xref:Microsoft.Office.Tools.Excel.ListObject> controle associado a dados. Você pode validar os dados do usuário antes de confirmar as alterações para a fonte de dados.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="data-validation"></a>Data Validation  
- Whenever a row is added to a <xref:Microsoft.Office.Tools.Excel.ListObject> that is bound to data, the <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> event is raised. You can handle this event to perform your data validation. For example, if your application requires that only employees between the ages of 18 and 65 can be added to the data source, you can verify that the age entered falls within that range before the row is added.  
+## <a name="data-validation"></a>Validação de dados  
+ Sempre que uma linha é adicionada a um <xref:Microsoft.Office.Tools.Excel.ListObject> que está associado a dados, o <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> é gerado. Você pode manipular esse evento para executar a validação de dados. Por exemplo, se seu aplicativo exigir que somente os funcionários entre a idade de 18 e 65 podem ser adicionados à fonte de dados, você pode verificar a idade inserida cai dentro desse intervalo antes que a linha é adicionada.  
   
 > [!NOTE]  
->  You should always check user input on the server in addition to the client. For more information, see [Secure Client Applications](/dotnet/framework/data/adonet/secure-client-applications).  
+>  Sempre verifique a entrada do usuário no servidor, além de cliente. Para obter mais informações, consulte [proteger aplicativos de cliente](/dotnet/framework/data/adonet/secure-client-applications).  
   
-#### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>To validate data when a new row is added to data-bound ListObject  
+#### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Para validar dados quando uma nova linha é adicionada à associação de dados ListObject  
   
-1.  Create variables for the ID and <xref:System.Data.DataTable> at the class level.  
+1.  Criar variáveis para a ID e <xref:System.Data.DataTable> no nível de classe.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]  [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]  
   
-2.  Create a new <xref:System.Data.DataTable> and add sample columns and data in the `Startup` event handler of the `Sheet1` class (in a document-level project) or `ThisAddIn` class (in an VSTO Add-in project).  
+2.  Criar um novo <xref:System.Data.DataTable> e adicionar colunas de exemplo e os dados no `Startup` manipulador de eventos do `Sheet1` classe (em um projeto no nível de documento) ou `ThisAddIn` classe (em um projeto de suplemento do VSTO).  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]  [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]  
   
-3.  Add code to the `list1_BeforeAddDataBoundRow` event handler to check whether the age entered falls within the acceptable range.  
+3.  Adicione código para o `list1_BeforeAddDataBoundRow` manipulador de eventos para verificar se a idade inserida está dentro do intervalo aceitável.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]  [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This code example assumes that you have an existing <xref:Microsoft.Office.Tools.Excel.ListObject> named `list1` on the worksheet in which this code appears.  
+## <a name="compiling-the-code"></a>Compilando o código  
+ Este exemplo de código pressupõe que você tiver uma <xref:Microsoft.Office.Tools.Excel.ListObject> chamado `list1` na planilha em que esse código é exibido.  
   
-## <a name="see-also"></a>See Also  
- [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [ListObject Control](../vsto/listobject-control.md)   
- [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
- [How to: Map ListObject Columns to Data](../vsto/how-to-map-listobject-columns-to-data.md)  
+## <a name="see-also"></a>Consulte também  
+ [Estendendo documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Controles em documentos do Office](../vsto/controls-on-office-documents.md)   
+ [Adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Controle ListObject](../vsto/listobject-control.md)   
+ [Automatizando o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Como mapear colunas ListObject para dados](../vsto/how-to-map-listobject-columns-to-data.md)  
   
   

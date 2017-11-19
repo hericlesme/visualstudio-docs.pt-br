@@ -1,54 +1,39 @@
 ---
-title: IDebugActivateDocumentEvent2::GetDocumentContext | Documentos do Microsoft
+title: IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugActivateDocumentEvent2::GetDocumentContext
+f1_keywords: IDebugActivateDocumentEvent2::GetDocumentContext
 helpviewer_keywords:
 - GetDocumentContext method
 - IDebugActivateDocumentEvent2::GetDocumentContext method
 ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 63e468e716fc4bc48a89805f06d7bfe8af7cfc21
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0187124b425f9b4003caae515fc38639097825a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-Obtém o contexto do documento que descreve a posição do documento que deve se tornar ativo, o pacote de depuração.  
+Obtém o contexto de documento que descreve a posição do documento que está para se tornar ativa, o pacote de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetDocumentContext (   
    IDebugDocumentContext2** ppDocContext  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetDocumentContext (   
    out IDebugDocumentContext2 ppDocContext  
 );  
@@ -62,7 +47,7 @@ int GetDocumentContext (
  Nessa posição pode ser usada para mostrar o cursor, por exemplo.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   

@@ -1,53 +1,37 @@
 ---
-title: IDebugPropertyField::GetPropertySetter | Documentos do Microsoft
+title: IDebugPropertyField::GetPropertySetter | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPropertyField::GetPropertySetter
-helpviewer_keywords:
-- IDebugPropertyField::GetPropertySetter method
+f1_keywords: IDebugPropertyField::GetPropertySetter
+helpviewer_keywords: IDebugPropertyField::GetPropertySetter method
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a719664a3c61c8d802be34c86d17ad1191bec94e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d8499ec6caede611d0665c9d49f8f17fd2873c7f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 Obtém o método que define a propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetPropertySetter(   
    IDebugMethodField** ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetPropertySetter(  
    out IDebugMethodField ppField  
 );  
@@ -58,7 +42,7 @@ int GetPropertySetter(
  [out] Retorna um [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) que representa o método que define a propriedade do objeto.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  Para obter o método que obtém a propriedade, chame o [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) método.  

@@ -1,60 +1,56 @@
 ---
-title: "IDiaSession::findInlineeLinesByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: bb70e408-eed1-4c9c-b5b1-44323125f48b
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f93d9d04f83b2f23a3ae4e84e60b2b397bbd0c42
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineeLinesByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera uma enumeração que permite que um cliente executa iterações através da linha informações do número das funções que inlined, direta ou indiretamente, pelo símbolo pai especificado e está contida dentro do intervalo de endereços especificado.  
+# <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
+Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções embutidas, diretamente ou indiretamente, pelo símbolo de pai especificado e está contida dentro do intervalo especificado.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT findInlineeLinesByAddr (   
-   IDiaSymbol*           parent,  
-   DWORD                 isect,  
-   DWORD                 offset,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findInlineeLinesByAddr (   
+   IDiaSymbol*           parent,   DWORD                 isect,   DWORD                 offset,   DWORD                 length,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `parent`  
- \[in\] um objeto de `IDiaSymbol` que representa o pai.  
+ [in] Um `IDiaSymbol` que representa o pai do objeto.  
   
  `isect`  
- \[in\] especifica o componente da seção de endereços.  
+ [in] Especifica o componente de seção do endereço.  
   
  `offset`  
- \[in\] especifica o deslocamento de endereços.  
+ [in] Especifica o componente de deslocamento do endereço.  
   
  `length`  
- \[in\] especificar o intervalo de endereços, em número de bytes, para cobrir com esta consulta.  
+ [in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.  
   
  `ppResult`  
- \[out\] contém um objeto de `IDiaEnumLineNumbers` que contém a lista de linha números que é recuperado.  
+ [out] Contém uma `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.  
   
-## Valor de retorno  
- Se com êxito, retorna `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   

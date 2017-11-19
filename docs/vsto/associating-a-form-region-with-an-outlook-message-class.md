@@ -1,16 +1,13 @@
 ---
-title: Associating a Form Region with an Outlook Message Class | Microsoft Docs
+title: "Associando uma região de formulário uma classe de mensagem do Outlook | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VSTO.NewFormRegionWizard.InvalidMessageClassName
+f1_keywords: VSTO.NewFormRegionWizard.InvalidMessageClassName
 dev_langs:
 - VB
 - CSharp
@@ -18,103 +15,103 @@ helpviewer_keywords:
 - FormRegionMessageClassAttribute
 - form regions [Office development in Visual Studio], message classes
 ms.assetid: e2db8d61-fd5f-4059-beec-33b66970f520
-caps.latest.revision: 43
-author: kempb
-ms.author: kempb
+caps.latest.revision: "43"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 40eede2ae16f16b75b29d9e1b25ec76856ac2ae9
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 3346b5cf096c523c9eb2c066d87a85e0d57efd94
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associating a Form Region with an Outlook Message Class
-  You can specify which Microsoft Office Outlook items display a form region by associating the form region with the message class of each item. For example, if you want to append a form region to the bottom of a mail item, you can associate the form region with the IPM.Note message class.  
+# <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associando uma região de formulário a uma classe de mensagem do Outlook
+  Você pode especificar quais itens do Microsoft Office Outlook exibem uma região de formulário, associando a região de formulário com a classe de mensagem de cada item. Por exemplo, se você deseja acrescentar uma região de formulário para a parte inferior de um item de email, você pode associar uma região de formulário com o IPM. Observe a classe de mensagem.  
   
- To associate a form region with a message class, specify the message class name in the **New Outlook Form Region** wizard or apply an attribute to the form region factory class.  
+ Para associar uma região de formulário uma classe de mensagem, especifique o nome de classe de mensagem no **nova região de formulário do Outlook** assistente ou aplicar um atributo para a classe de fábrica de região de formulário.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="understanding-outlook-message-classes"></a>Understanding Outlook Message Classes  
- An Outlook message class identifies a type of Outlook item. The following table lists these eight standard types of items and their message class names.  
+## <a name="understanding-outlook-message-classes"></a>Noções básicas sobre Classes de mensagem do Outlook  
+ Uma classe de mensagem do Outlook identifica um tipo de item do Outlook. A tabela a seguir lista esses oito tipos padrão de itens e seus nomes de classe de mensagem.  
   
-|Outlook Item Type|Message Class Name|  
+|Tipo de Item do Outlook|Nome da classe de mensagem|  
 |-----------------------|------------------------|  
-|AppointmentItem|IPM.Appointment|  
-|ContactItem|IPM.Contact|  
-|DistListItem|IPM.DistList|  
-|JournalItem|IPM.Activity|  
-|MailItem|IPM.Note|  
-|PostItem|IPM.Post or IPM.Post.RSS|  
-|TaskItem|IPM.Task|  
+|AppointmentItem|IPM. Compromisso|  
+|ContactItem|IPM. Entre em contato com|  
+|DistListItem|IPM. DistList|  
+|JournalItem|IPM. Atividade|  
+|MailItem|IPM. Observação|  
+|PostItem|IPM. POST ou IPM. Post.RSS|  
+|TaskItem|IPM. Tarefa|  
   
- You can also specify the names of custom message classes. Custom message classes identify custom forms that you define in Outlook.  
-  
-> [!NOTE]  
->  For replacement and replace-all form regions, you can specify a new custom message class name. You do not need to use the message class name of an existing custom form. The name of the custom message class must be unique. One way to ensure that the name is unique is to use a naming convention similar to the following: \<*StandardMessageClassName*>.\<*Company*>.\<*MessageClassName*> (for example: IPM.Note.Contoso.MyMessageClass).  
-  
-## <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associating a Form Region with an Outlook Message Class  
- There are two ways to associate a form region with a message class:  
-  
--   Use the **New Outlook Form Region** wizard.  
-  
--   Apply class attributes.  
-  
-### <a name="using-the-new-outlook-form-region-wizard"></a>Using the New Outlook Form Region Wizard  
- On the final page of the **New Outlook Form Region** wizard, you can select standard message classes and type the names of custom message classes that you want to associate with the form region.  
-  
- The standard message classes are not available if the form region is designed to replace the whole form or the default page of a form. You can specify standard message class names only for forms that add a new page to a form or that are appended to the bottom of a form. For more information, see [How to: Add a Form Region to an Outlook Add-in Project](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
-  
- To include one or more custom message classes, type their names in the **Which custom message classes will display this form region?** box.  
-  
- The names that you type must comply with the following guidelines:  
-  
--   Use the fully qualified message class name (for example: "IPM.Note.Contoso").  
-  
--   Use semicolons to separate multiple message class names.  
-  
--   Do not include standard Outlook message classes, such as "IPM.Note" or "IPM.Contact". Only include custom message classes, such as "IPM.Note.Contoso".  
-  
--   Do not specify the base message class by itself (for example: "IPM").  
-  
--   Do not exceed 256 characters for each message class name.  
-  
- The **New Outlook Form Region** wizard validates the format of your input when you click **Finish**.  
+ Você também pode especificar os nomes das classes de mensagem personalizada. Classes de mensagem personalizado identificam formulários personalizados que você define no Outlook.  
   
 > [!NOTE]  
->  The **New Outlook Form Region** wizard does not verify that the message class names that you provide are correct or valid.  
+>  Para a substituição e regiões de formulário de substituir tudo, você pode especificar um novo nome de classe de mensagem personalizada. Você não precisa usar o nome de classe de mensagem de um formulário personalizado existente. O nome da classe de mensagem personalizada deve ser exclusivo. Uma maneira de garantir que o nome é exclusivo é usar uma convenção de nomenclatura semelhante à seguinte: \< *StandardMessageClassName*>.\< *Empresa*>.\< *MessageClassName*> (por exemplo: IPM. Note.Contoso.MyMessageClass).  
   
- When you complete the wizard, the **New Outlook Form Region** wizard applies attributes to the form region class that contain the specified message class names. You can also apply these attributes manually.  
+## <a name="associating-a-form-region-with-an-outlook-message-class"></a>Associando uma região de formulário a uma classe de mensagem do Outlook  
+ Há duas maneiras para associar uma região de formulário uma classe de mensagem:  
   
-### <a name="applying-class-attributes"></a>Applying Class Attributes  
- You can associate a form region with an Outlook message class after you complete the **New Outlook Form Region** wizard. To do this, apply attributes to the form region factory class.  
+-   Use o **nova região de formulário do Outlook** assistente.  
   
- The following example shows two <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> attributes that have been applied to a form region factory class named `myFormRegion`. The first attribute associates the form region with a standard message class for a mail message form. The second attribute associates the form region with a custom message class named `IPM.Task.Contoso`.  
+-   Aplica atributos de classe.  
   
- [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)] [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]  
+### <a name="using-the-new-outlook-form-region-wizard"></a>Usando o novo Assistente de região de formulário do Outlook  
+ Na página final do **nova região de formulário do Outlook** assistente, você pode selecionar as classes de mensagem padrão e digite os nomes das classes de mensagem personalizada que você deseja associar com a região do formulário.  
   
- Attributes must comply with the following guidelines:  
+ As classes de mensagem padrão não estarão disponíveis se a região de formulário é projetada para substituir todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Para obter mais informações, consulte [como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
--   For custom message classes, use the fully qualified message class name (for example: "IPM.Note.Contoso").  
+ Para incluir uma ou mais classes de mensagem personalizada, digite seus nomes no **quais classes de mensagem personalizada exibirá essa região de formulário?** caixa.  
   
--   Do not specify the base message class by itself (for example: "IPM").  
+ Os nomes que você digitar devem estar em conformidade com as diretrizes a seguir:  
   
--   Do not exceed 256 characters for each message class name.  
+-   Use o nome de classe de mensagem totalmente qualificado (por exemplo: "IPM. Note.Contoso").  
   
--   Do not include the names of standard message classes if the form region replaces the whole form or the default page of a form. You can specify standard message class names only for forms that add a new page to a form or that are appended to the bottom of a form. For more information, see [How to: Add a Form Region to an Outlook Add-in Project](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+-   Use ponto e vírgula para separar vários nomes de classe de mensagem.  
   
- Visual Studio validates the format of the message class names when you build the project.  
+-   Não inclua padrão classes de mensagem do Outlook, como "IPM. Observação"ou"IPM. Contato". Incluir apenas as classes de mensagem personalizada, como "IPM. Note.Contoso".  
+  
+-   Não especifique a classe base de mensagem por si só (por exemplo: "IPM").  
+  
+-   Não exceda 256 caracteres para cada nome de classe de mensagem.  
+  
+ O **nova região de formulário do Outlook** assistente valida o formato de sua entrada quando você clica em **concluir**.  
   
 > [!NOTE]  
->  Visual Studio does not verify that the message class names that you provide are correct or valid.  
+>  O **nova região de formulário do Outlook** assistente não verifique se os nomes de classe de mensagem que você fornece estão corretas ou válido.  
   
-## <a name="see-also"></a>See Also  
- [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)   
- [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)   
- [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Guidelines for Creating Outlook Form Regions](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Form Name and Message Class Overview](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [How Outlook forms and items work together](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ Quando você concluir o assistente, o **nova região de formulário do Outlook** assistente aplica atributos para a classe de região de formulário que contém os nomes de classe de mensagem especificada. Você também pode aplicar manualmente esses atributos.  
+  
+### <a name="applying-class-attributes"></a>Aplicando atributos de classe  
+ Você pode associar uma região de formulário com uma classe de mensagem do Outlook depois de concluir o **nova região de formulário do Outlook** assistente. Para fazer isso, aplica atributos para a classe de fábrica de região de formulário.  
+  
+ O exemplo a seguir mostra duas <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> atributos que foram aplicados a uma classe de fábrica de região de formulário chamada `myFormRegion`. O primeiro atributo associa a região de formulário de uma classe de mensagem padrão para um formulário de mensagem de email. O segundo atributo associa a região de formulário uma classe de mensagem personalizada denominada `IPM.Task.Contoso`.  
+  
+ [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)]
+ [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]  
+  
+ Atributos devem estar de acordo com as diretrizes a seguir:  
+  
+-   Para classes de mensagem personalizada, use o nome da classe de mensagem totalmente qualificado (por exemplo: "IPM. Note.Contoso").  
+  
+-   Não especifique a classe base de mensagem por si só (por exemplo: "IPM").  
+  
+-   Não exceda 256 caracteres para cada nome de classe de mensagem.  
+  
+-   Não inclua os nomes das classes de mensagem padrão se a região de formulário substitui todo o formulário ou a página padrão de um formulário. Você pode especificar nomes de classe de mensagem padrão somente para formulários que adicionar uma nova página a um formulário ou que são acrescentados à parte inferior de um formulário. Para obter mais informações, consulte [como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+  
+ Quando você compilar o projeto, o Visual Studio valida o formato dos nomes de classe de mensagem.  
+  
+> [!NOTE]  
+>  O Visual Studio não verifique se os nomes de classe de mensagem que você fornecer correto ou válido.  
+  
+## <a name="see-also"></a>Consulte também  
+ [Acessando uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Criando regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)   
+ [Passo a passo: Criando uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Diretrizes para criação de regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Nome do formulário e visão geral de classe de mensagem](http://msdn.microsoft.com/library/office/ff867629.aspx)   
+ [Como os formulários do Outlook e itens funcionam em conjunto](http://msdn.microsoft.com/library/office/ff869706.aspx)  
   
   

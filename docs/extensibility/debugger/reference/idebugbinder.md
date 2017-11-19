@@ -1,46 +1,30 @@
 ---
-title: IDebugBinder | Documentos do Microsoft
+title: IDebugBinder | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBinder
-helpviewer_keywords:
-- IDebugBinder interface
+f1_keywords: IDebugBinder
+helpviewer_keywords: IDebugBinder interface
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 28872d108bf55dab5b27a2acecfec90591405221
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 614133a72e05f8bd412216d466bbfc90a197ff07
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão do CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  No Visual Studio 2015, essa maneira de implementar avaliadores de expressão foi preterida. Para obter informações sobre como implementar avaliadores de expressão do CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Essa interface associa um campo de símbolo, normalmente retornado pelo provedor de símbolo, em um contexto de memória ou um objeto que contém o valor atual do símbolo.  
+ Essa interface associa um campo de símbolo, normalmente é retornado pelo provedor de símbolo, em um contexto de memória ou um objeto que contém o valor atual do símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -49,10 +33,10 @@ IDebugBinder : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- Esta interface dá suporte à avaliação de expressão e deve ser implementada pelo mecanismo de depuração (DE).  
+ Esta interface dá suporte a avaliação de expressão e deve ser implementado pelo mecanismo de depuração (DE).  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Essa interface é usada no processo de avaliação de expressão e normalmente é usada na implementação do [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) e [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md).  
+ Essa interface é usado no processo de avaliação de expressão e normalmente é usado na implementação de [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) e [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md).  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  A tabela a seguir mostra os métodos de `IDebugBinder`.  
@@ -66,7 +50,7 @@ IDebugBinder : IUnknown
 |[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|Obtém o tipo exato de uma variável.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa interface retorna objetos que são usados pelo avaliador de expressão em analisar árvores. O avaliador de expressão analisa uma expressão usando o provedor de símbolo para converter os símbolos na expressão em instâncias de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), que descrevem cada símbolo em termos de seu tipo e o local no código-fonte. O [ligar](../../../extensibility/debugger/reference/idebugbinder-bind.md) método converte `IDebugField` objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que se conectar ou associar um símbolo de tipo para um valor real na memória. Essas `IDebugObject` objetos são armazenados em uma árvore de análise para avaliação posterior.  
+ Essa interface retorna objetos que são usados pelo avaliador de expressão em árvores de análise. O avaliador de expressão analisa uma expressão, usando o provedor de símbolo para converter os símbolos na expressão em instâncias do [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), que descrevem cada símbolo em termos de seu tipo e o local no código-fonte. O [associar](../../../extensibility/debugger/reference/idebugbinder-bind.md) método converte `IDebugField` objetos [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que se conectar ou associar um símbolo de tipo para um valor real na memória. Essas `IDebugObject` objetos são armazenados em uma árvore de análise para avaliação posterior.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: ee.h  

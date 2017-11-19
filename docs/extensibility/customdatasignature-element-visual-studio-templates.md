@@ -1,39 +1,25 @@
 ---
-title: Elemento CustomDataSignature (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento CustomDataSignature (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2bad6cc3223e43401ac6876217317944b10c3ef6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d83992a58ba8cd45bf6ac5e6f555fc5320c18e80
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Elemento CustomDataSignature (modelos do Visual Studio)
 Especifica a assinatura de texto para localizar os dados personalizados.  
@@ -52,7 +38,7 @@ Especifica a assinatura de texto para localizar os dados personalizados.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -61,12 +47,12 @@ Especifica a assinatura de texto para localizar os dados personalizados.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto é uma cadeia de caracteres que tenha a assinatura de texto que é necessário para localizar os dados personalizados.  
+ O texto é uma cadeia de caracteres que tem a assinatura de texto que é necessário para localizar os dados personalizados.  
   
 ## <a name="remarks"></a>Comentários  
  `CustomDataSignature` é um elemento opcional.  

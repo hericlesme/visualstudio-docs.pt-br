@@ -1,44 +1,29 @@
 ---
-title: CreateInPlace (modelos do Visual Studio) | Documentos do Microsoft
+title: CreateInPlace (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
 - CreateInPlace element [Visual Studio Templates]
 - <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bdccd664b82ac382f5c69b2bf7e5a8c7b37fa0a7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ce445dec4ca7d09f2fb8822fa9b5632356950042
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (modelos do Visual Studio)
-Especifica se deve criar o projeto e executar a substituição no local especificado, ou executar a substituição de parâmetro em um local temporário e, em seguida, salve o projeto no local especificado.  
+Especifica se deseja criar o projeto e executar a substituição de parâmetro no local especificado, ou executar a substituição de parâmetro em um local temporário e, em seguida, salve o projeto no local especificado.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -54,7 +39,7 @@ Especifica se deve criar o projeto e executar a substituição no local especifi
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -63,12 +48,12 @@ Especifica se deve criar o projeto e executar a substituição no local especifi
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`. Se `true`, o projeto é criado e substituição de parâmetro é executada no local especificado no **novo projeto** caixa de diálogo. Se `false`, substituição de parâmetro é executada em um local temporário e o projeto é então copiado para o local especificado.  
+ O texto deve ser `true` ou `false`. Se `true`, o projeto é criado e a substituição do parâmetro é executada no local especificado no **novo projeto** caixa de diálogo. Se `false`, substituição do parâmetro é executada em um local temporário e o projeto, em seguida, é copiado para o local especificado.  
   
 ## <a name="remarks"></a>Comentários  
  `CreateInPlace` é um elemento opcional. O valor padrão é `true`.  
@@ -102,5 +87,5 @@ Especifica se deve criar o projeto e executar a substituição no local especifi
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Criando modelos de projeto e Item](../ide/creating-project-and-item-templates.md)   
+ [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

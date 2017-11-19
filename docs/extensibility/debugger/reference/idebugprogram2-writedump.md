@@ -1,54 +1,38 @@
 ---
-title: IDebugProgram2::WriteDump | Documentos do Microsoft
+title: IDebugProgram2::WriteDump | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgram2::WriteDump
-helpviewer_keywords:
-- IDebugProgram2::WriteDump
+f1_keywords: IDebugProgram2::WriteDump
+helpviewer_keywords: IDebugProgram2::WriteDump
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d1a39ca7e7fffbd00eca424f047ab24dde0559d7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b68392d94b16f13106e421c5d466e3fbdf4a2b27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Grava um despejo de memória em um arquivo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT WriteDump(   
    DUMPTYPE  DumpType,  
    LPCOLESTR pszDumpUrl  
 );  
 ```  
   
-```c#  
+```csharp  
 int WriteDump(   
    enum_DUMPTYPE  DumpType,  
    string         pszDumpUrl  
@@ -57,16 +41,16 @@ int WriteDump(
   
 #### <a name="parameters"></a>Parâmetros  
  `DumpType`  
- [in] Um valor a partir de [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) enumeração que especifica o tipo de despejo de memória, por exemplo, curto ou longo.  
+ [in] Um valor da [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) enumeração que especifica o tipo de despejo de memória, por exemplo, curto ou longo.  
   
  `pszDumpUrl`  
  [in] A URL para gravar o despejo de memória para. Normalmente, isso é na forma de `file://c:\path\filename.ext`, mas pode ser qualquer URL válido.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Um despejo de programa normalmente incluiria o quadro de pilha atual, a pilha em si, uma lista de threads em execução no programa e possivelmente toda a memória que possui o programa.  
+ Um despejo de memória de programa normalmente inclui o quadro de pilhas atual, a pilha em si, uma lista dos threads em execução no programa e possivelmente toda a memória que possui o programa.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

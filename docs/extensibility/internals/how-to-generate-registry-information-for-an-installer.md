@@ -1,11 +1,10 @@
 ---
-title: "Como: gerar informações de registro para um instalador | Documentos do Microsoft"
+title: "Como: gerar informações de registro para um instalador | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,40 +12,27 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-caps.latest.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 027290394756b138342dbf0bffb6145a7906cb40
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c31184a78bae612e4341c3210a1f34f993a0581f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Como: gerar informações de registro para um instalador
-O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para um VSPackage gerenciado. O manifesto pode ser incorporado a um pacote de instalação do Windows Installer. RegPkg também pode gerar um arquivo que pode ser incluído em um arquivo de origem de instalação com base no [conjunto de ferramentas XML do Windows Installer](http://go.microsoft.com/fwlink/?LinkId=62238).  
+O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para um VSPackage gerenciado. O manifesto pode ser incorporado em um pacote de instalação do Windows Installer. RegPkg também pode gerar um arquivo que pode ser incluído em um arquivo de origem de instalação com base no [o conjunto de ferramentas do Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]
->  RegPkg gera nomes de caminho que são específicos para seu sistema de desenvolvimento, para que toda vez que você usar RegPkg, você deve editar a saída para usar apropriada do Windows Installer formatada propriedades. Por exemplo, o valor de InprocServer32 deve ser **[SystemFolder]mscoree.dll** e caminhos devem usar **[#filekey]** e **[$componentkey]**. Ajustar a saída dessa forma oferece suporte a computadores com Windows instalado em uma unidade diferente ou em um diretório diferente, os nomes de diretório localizado e caminhos que os usuários podem escolher. Para obter mais informações, consulte [formatado](http://go.microsoft.com/fwlink/?LinkId=71120) no SDK do Windows Installer. Se você seguir as convenções de RegPkg para seus caminhos de sistema de desenvolvimento — por exemplo, arquivo IDs do formulário File _*filename*— você precisa fazer menos alterações.  
+>  RegPkg gera nomes de caminho que são específicos para seu sistema de desenvolvimento, portanto toda vez que você usar RegPkg, você deve editar a saída para uso apropriado do Windows Installer formatada propriedades. Por exemplo, o valor de InprocServer32 deve ser **[SystemFolder]mscoree.dll** e caminhos devem usar **[#filekey]** e **[$componentkey]**. Ajustando a saída dessa forma dá suporte a computadores com Windows instalado em uma unidade diferente ou em um diretório diferente, os nomes de diretório localizado e caminhos que os usuários podem escolher. Para obter mais informações, consulte [formatados](http://go.microsoft.com/fwlink/?LinkId=71120) no SDK do Windows Installer. Se você seguir as convenções de RegPkg para caminhos de sistema de desenvolvimento — por exemplo, arquivo IDs do formulário File _*filename*— você precisa fazer alterações menos.  
   
 ### <a name="to-create-a-registration-manifest"></a>Para criar um manifesto de registro  
   
 -   Executar RegPkg com o **/regfile** alternar. Fornece outras opções, o nome do arquivo de saída e o caminho do VSPackage.  
   
-     Por exemplo, no prompt de comando, você deve digitar algo como o seguinte:  
+     Por exemplo, no prompt de comando, você digitaria algo semelhante ao seguinte:  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll  
@@ -54,9 +40,9 @@ O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para
   
 ### <a name="to-view-a-registration-manifest"></a>Para exibir um manifesto de registro  
   
--   Abra o manifesto do registro em qualquer editor de texto.  
+-   Abra o registro de manifesto em qualquer editor de texto.  
   
-     O exemplo a seguir é o manifesto de registro RegPkg cria para o serviço de linguagem do IronPython:  
+     O exemplo a seguir é o manifesto de registro RegPkg cria para o serviço de linguagem IronPython:  
   
     ```  
     REGEDIT4  
@@ -117,7 +103,7 @@ O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para
   
 -   Executar RegPkg com o **/wixfile** alternar. Fornece outras opções, o nome do arquivo de saída e o caminho do VSPackage.  
   
-     Por exemplo, no prompt de comando, você deve digitar algo como o seguinte:  
+     Por exemplo, no prompt de comando, você digitaria algo semelhante ao seguinte:  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll  
@@ -127,7 +113,7 @@ O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para
   
 -   Abra o conjunto de ferramentas do Windows Installer XML incluir arquivo em qualquer editor de texto.  
   
-     O exemplo a seguir é o arquivo de inclusão RegPkg cria para o serviço de linguagem do IronPython:  
+     O exemplo a seguir é o arquivo de inclusão RegPkg cria para o serviço de linguagem IronPython:  
   
     ```  
     <Include>  
@@ -198,5 +184,5 @@ O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Registrando os VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Registrando VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
  [VSPackages](../../extensibility/internals/vspackages.md)

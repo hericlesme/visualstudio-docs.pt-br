@@ -1,47 +1,31 @@
 ---
-title: MODULE_INFO_FIELDS | Documentos do Microsoft
+title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MODULE_INFO_FIELDS
-helpviewer_keywords:
-- MODULE_INFO_FIELDS enumeration
+f1_keywords: MODULE_INFO_FIELDS
+helpviewer_keywords: MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 02a1c842e4292729d6bebb451c46dbc8f804ec81
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 807c49d6bbfba4cec3a87e07e851c73723cf0792
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Especifica os sinalizadores para as informações de módulo de depuração.  
+Especifica os sinalizadores de módulo para informações de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_MODULE_INFO_FIELDS {   
    MIF_NONE              = 0x0000,  
    MIF_NAME              = 0x0001,  
@@ -60,7 +44,7 @@ enum enum_MODULE_INFO_FIELDS {
 typedef DWORD MODULE_INFO_FIELDS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_MODULE_INFO_FIELDS {   
    MIF_NONE              = 0x0000,  
    MIF_NAME              = 0x0001,  
@@ -116,7 +100,7 @@ public enum enum_MODULE_INFO_FIELDS {
  Inicializar/usar o `m_dwModuleFlags` campo o `MODULE_INFO` estrutura.  
   
  MIF_ALLFIELDS  
- Inicializar/usar todos os campos de `MODULE_INFO` estrutura.  
+ Inicializar/usar todos os campos no `MODULE_INFO` estrutura.  
   
 ## <a name="remarks"></a>Comentários  
  Esses valores são passados como um argumento para o [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método para indicar quais campos do [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estrutura devem ser inicializado.  

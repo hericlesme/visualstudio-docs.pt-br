@@ -1,41 +1,26 @@
 ---
-title: Elemento WizardExtension (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento WizardExtension (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d23e6d14cd7118838bbe6e143bebd073171c73de
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 41b5b3b786716603167b3917e5aa7b4a7ae14920
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelos do Visual Studio)
 Contém os elementos de registro para personalizar o Assistente de modelo.  
@@ -57,7 +42,7 @@ Contém os elementos de registro para personalizar o Assistente de modelo.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -70,7 +55,7 @@ Contém os elementos de registro para personalizar o Assistente de modelo.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contém todos os metadados para o modelo de projeto, o modelo de item ou o starter kit.|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contém todos os metadados para o modelo de projeto, item modelo ou starter kit.|  
   
 ## <a name="remarks"></a>Comentários  
  O `WizardExtension` é um elemento filho opcional de `VSTemplate`.  
@@ -108,5 +93,5 @@ Contém os elementos de registro para personalizar o Assistente de modelo.
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e Item](../ide/creating-project-and-item-templates.md)   
- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
+ [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

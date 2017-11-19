@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,36 +12,23 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: 30
+caps.latest.revision: "30"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 565aaeb189ad129d5e4e26d9c73c080de2e77676
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="inside-the-visual-studio-sdk"></a>Dentro do Visual Studio SDK
+# <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 Esta seção fornece informações detalhadas sobre as extensões do Visual Studio, incluindo arquitetura do Visual Studio, componentes, serviços, esquemas, utilitários e assim por diante.  
   
 ## <a name="extensibility-architecture"></a>Arquitetura de extensibilidade  
- A ilustração a seguir mostra a arquitetura de extensibilidade do Visual Studio. VSPackages fornecem a funcionalidade do aplicativo, que é compartilhada entre o IDE como serviços. O IDE padrão também oferece uma ampla variedade de serviços, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que fornece acesso à funcionalidade de janelas do IDE.</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
+ A ilustração a seguir mostra a arquitetura de extensibilidade do Visual Studio. VSPackages fornecem a funcionalidade do aplicativo, que é compartilhada entre o IDE como serviços. O IDE padrão também oferece uma ampla variedade de serviços, como <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, que fornece acesso à funcionalidade de janelas do IDE.  
   
- ![Gráfico de arquitetura de ambiente](~/extensibility/internals/media/environment.gif "environment")  
+ ![Gráfico de arquitetura de ambiente](../../extensibility/internals/media/environment.gif "ambiente")  
 Exibição geral da arquitetura do Visual Studio  
   
 ## <a name="vspackages"></a>VSPackages  
@@ -51,7 +37,7 @@ Exibição geral da arquitetura do Visual Studio
 ## <a name="visual-studio-shell"></a>Shell do Visual Studio  
  Shell do Visual Studio fornece a funcionalidade básica e suporte a comunicação cruzada entre suas extensões de componentes VSPackages e MEF. Para obter mais informações, consulte [Shell do Visual Studio](../../extensibility/internals/visual-studio-shell.md).  
   
-## <a name="user-experience-guidelines"></a>Diretrizes de experiência do usuário  
+## <a name="user-experience-guidelines"></a>Diretrizes da Experiência do Usuário  
  Se você estiver planejando criar novos recursos para o Visual Studio, você deve dar uma olhada estas diretrizes para obter dicas de design e a usabilidade: [diretrizes de experiência de usuário do Visual Studio](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Comandos  
@@ -59,7 +45,7 @@ Exibição geral da arquitetura do Visual Studio
   
  Quando você estende o Visual Studio, você pode criar comandos e registrá-los com o shell do Visual Studio. Você pode especificar como esses comandos aparecerão no IDE, por exemplo, em um menu ou barra de ferramentas. Normalmente um comando personalizado aparece no **ferramentas** menu e um comando para exibir uma janela de ferramenta apareceria no **outras janelas** submenu a **exibição** menu.  
   
- Quando você criar um comando, você também deve criar um manipulador de eventos para ele. O manipulador de eventos determina quando o comando está visível ou habilitada, permite que você modifique seu texto e garante que o comando responde apropriadamente quando ele está ativado. Na maioria dos casos, o IDE controla os comandos usando o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>interface.</xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Comandos no Visual Studio são tratados começando com o contexto do comando interno, com base na seleção de local e continuar para o contexto mais externo, com base na seleção global. Os comandos adicionados ao menu principal ficam imediatamente disponíveis para execução de scripts.  
+ Quando você criar um comando, você também deve criar um manipulador de eventos para ele. O manipulador de eventos determina quando o comando está visível ou habilitada, permite que você modifique seu texto e garante que o comando responde apropriadamente quando ele está ativado. Na maioria dos casos, o IDE controla os comandos usando o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Comandos no Visual Studio são tratados começando com o contexto do comando interno, com base na seleção de local e continuar para o contexto mais externo, com base na seleção global. Os comandos adicionados ao menu principal ficam imediatamente disponíveis para execução de scripts.  
   
  Para obter mais informações, consulte [comandos, Menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md).  
   
@@ -68,18 +54,18 @@ Exibição geral da arquitetura do Visual Studio
   
  Barras de ferramentas são linhas ou colunas de botões e outros controles, como caixas de texto, caixas de listagem e caixas de combinação. Botões da barra de ferramentas normalmente têm imagens de ícone, como um ícone de pasta para um **abrir arquivo** comando ou uma impressora para um **impressão** comando. Todos os elementos da barra de ferramentas são associados a comandos. Quando você clica em um botão de barra de ferramentas, o comando associado é executado. No caso de um controle de lista suspensa, cada item na lista suspensa é associado um comando diferente. Alguns controles de barra de ferramentas, como um controle de separador, são híbridas. Um lado do controle é um botão de barra de ferramentas e o outro lado é uma seta para baixo que exibe vários comandos quando ele for clicado.  
   
-## <a name="tool-windows"></a>Janelas de Ferramentas  
+## <a name="tool-windows"></a>Janelas de ferramentas  
  Janelas de ferramentas são usadas no IDE para exibir informações. **Caixa de ferramentas**, **Solution Explorer**, **propriedades** janela, e **navegador da Web** são exemplos de janelas de ferramenta.  
   
  Janelas de ferramentas geralmente oferecem vários controles com o qual o usuário pode interagir. Por exemplo, o **propriedades** janela permite ao usuário definir propriedades de objetos que têm um propósito específico. O **propriedades** janela é especializada nesse sentido, mas também geral porque ele pode ser usado em muitas situações diferentes. Da mesma forma, o **saída** janela é especializada porque ele fornece uma saída com base em texto, mas geral porque vários subsistemas no Visual Studio podem ser usado para fornecer a saída para o usuário do Visual Studio.  
   
  Considere a imagem a seguir do Visual Studio, que contém várias janelas de ferramenta.  
   
- ![Captura de tela](~/extensibility/internals/media/t1gui.png "T1gui")  
+ ![Captura de tela](../../extensibility/internals/media/t1gui.png "T1gui")  
   
  Algumas das janelas de ferramenta encaixadas juntos em um único painel que exibe a janela de ferramenta do Gerenciador de soluções e oculta a ferramenta windows mas torna disponíveis clicando nas guias. A imagem mostra duas outras janelas de ferramenta, o **lista de erros** e **saída** janela encaixada juntos em um único painel.  
   
- Também é mostrado é o painel do documento principal, que mostra várias janelas do editor. Embora as janelas de ferramentas normalmente têm uma única instância (por exemplo, você pode abrir apenas uma **Solution Explorer**), janelas do editor podem ter várias instâncias, cada um deles é usada para editar um documento separado, mas que estão encaixados no mesmo painel. A figura mostra um painel de documento que tem duas janelas de editor, uma janela de designer de formulário e uma janela do navegador que mostra a página de início. Todas as janelas no painel do documento estão disponíveis clicando nas guias, mas a janela do editor que contém o arquivo EditorPane.cs está visível e ativo.  
+ Também é mostrado é o painel do documento principal, que mostra várias janelas do editor. Embora as janelas de ferramentas normalmente têm uma única instância (por exemplo, você pode abrir apenas uma **Solution Explorer**), janelas do editor podem ter várias instâncias, cada um deles é usada para editar um documento separado, mas que estão encaixados no o mesmo painel. A figura mostra um painel de documento que tem duas janelas de editor, uma janela de designer de formulário e uma janela do navegador que mostra a página de início. Todas as janelas no painel do documento estão disponíveis clicando nas guias, mas a janela do editor que contém o arquivo EditorPane.cs está visível e ativo.  
   
  Quando você estende o Visual Studio, você pode criar ferramenta janelas que permitem que os usuários do Visual Studio interagir com a extensão. Você também pode criar seus próprios editores que permitem que os usuários do Visual Studio editar documentos. Porque seu editores e janelas de ferramenta serão integrados ao Visual Studio, você não precisa programá-los para encaixar ou aparecer em uma guia corretamente. Quando eles são registrados corretamente no Visual Studio, eles terão automaticamente os recursos comuns de janelas de ferramentas e janelas de documentos no Visual Studio. Para obter mais informações, consulte [estender e personalizar janelas de ferramenta](../../extensibility/extending-and-customizing-tool-windows.md).  
   
@@ -118,7 +104,7 @@ Exibição geral da arquitetura do Visual Studio
  Para obter mais informações, consulte [adicionando projeto e modelos de Item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Propriedades e opções  
- O **propriedades** janela exibe as propriedades de um ou vários itens selecionados: [estendendo propriedades](../../extensibility/internals/extending-properties.md) páginas de opções contém conjuntos de opções que pertencem a um componente específico, como uma linguagem de programação ou um VSPackage: [opções e páginas de opções](../../extensibility/internals/options-and-options-pages.md). As configurações são recursos geralmente relacionados à interface do usuário que podem ser importados e exportados: [suporte para configurações de usuário](../../extensibility/internals/support-for-user-settings.md).  
+ O **propriedades** janela exibe as propriedades de um ou vários itens selecionados: [estendendo propriedades](../../extensibility/internals/extending-properties.md) páginas de opções contém conjuntos de opções que pertencem a um componente específico, como um programação de idioma ou um VSPackage: [opções e páginas de opções](../../extensibility/internals/options-and-options-pages.md). As configurações são recursos geralmente relacionados à interface do usuário que podem ser importados e exportados: [suporte para configurações de usuário](../../extensibility/internals/support-for-user-settings.md).  
   
 ## <a name="visual-studio-services"></a>Serviços do Visual Studio  
  Um serviço fornece um conjunto específico de interfaces de componentes consumir. Visual Studio fornece um conjunto de serviços que podem ser usados por todos os componentes, incluindo as extensões. Por exemplo, os serviços do Visual Studio habilitar janelas de ferramenta a ser mostrado ou oculto dinamicamente, habilitar o acesso à Ajuda, barra de status ou eventos de interface do usuário. Editor do Visual Studio também fornece serviços que podem ser importados por extensões de editor. Para obter mais informações, consulte [usando e fornecer serviços](../../extensibility/using-and-providing-services.md).  

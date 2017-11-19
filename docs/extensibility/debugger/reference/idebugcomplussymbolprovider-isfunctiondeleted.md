@@ -1,51 +1,36 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Documentos do Microsoft
+title: IDebugComPlusSymbolProvider::IsFunctionDeleted | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugComPlusSymbolProvider::IsFunctionDeleted
+helpviewer_keywords: IDebugComPlusSymbolProvider::IsFunctionDeleted
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: cbeeb934b9c682324099bf520d3a86f9a6f1d366
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: feb2101187db64c628fce8a57f1101dabf666af6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-Determina se a função no endereço especificado de depuração será excluída.  
+Determina se a função no endereço de depuração especificado é excluída.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT IsFunctionDeleted(  
    IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsFunctionDeleted(  
    IDebugAddress pAddress  
 );  
@@ -56,12 +41,12 @@ int IsFunctionDeleted(
  [in] O endereço de depuração é representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Esse endereço deve ser um METHOD_ADDRESS.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Retorna se a função for excluída, `S_OK`. Se a função for existir, retornará `S_FALSE`.  
+ Retorna se a função for excluída, `S_OK`. Se a função exists, retornará `S_FALSE`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto expõe o [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe o [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(  
     IDebugAddress* pAddress  
 )  

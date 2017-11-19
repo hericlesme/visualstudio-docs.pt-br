@@ -1,40 +1,24 @@
 ---
-title: Nome do elemento (modelos do Visual Studio) | Documentos do Microsoft
+title: Nome de elemento (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#Name
-helpviewer_keywords:
-- Name element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Name
+helpviewer_keywords: Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-caps.latest.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 29c96677f9a4e5369a8e8df3571984279f4b09a2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 919244051df838861816279513f14e8e98f3e34f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento de nome (Modelos do Visual Studio)
 Especifica o nome do modelo como ele aparece no **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.  
@@ -70,7 +54,7 @@ Especifica o nome do modelo como ele aparece no **novo projeto** ou **Adicionar 
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em um a **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  É necessário um valor de texto, a menos que o `Package` e `ID` os atributos são usados.  

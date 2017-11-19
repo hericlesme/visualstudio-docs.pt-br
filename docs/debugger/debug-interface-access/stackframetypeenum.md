@@ -1,46 +1,44 @@
 ---
-title: "StackFrameTypeEnum | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Enumeração StackFrameTypeEnum"
+title: StackFrameTypeEnum | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: StackFrameTypeEnum enumeration
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 37d8e960d256b8746781668068978aa72f45155c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# StackFrameTypeEnum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Especifica o tipo de quadro de pilha.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp  
+```C++  
 enum StackFrameTypeEnum {  
-   FrameTypeFPO,  
-   FrameTypeTrap,  
-   FrameTypeTSS,  
-   FrameTypeStandard,  
-   FrameTypeFrameData,  
-   FrameTypeUnknown = -1  
+   FrameTypeFPO,  
+   FrameTypeTrap,  
+   FrameTypeTSS,  
+   FrameTypeStandard,  
+   FrameTypeFrameData,  
+   FrameTypeUnknown = -1  
 };  
 ```  
   
-## Elements  
+## <a name="elements"></a>Elementos  
  `FrameTypeFPO`  
- Ponteiro do quadro não especificado; Info do FPO disponível.  
+ Ponteiro de quadro especificado; Informações de FPO disponíveis.  
   
  `FrameTypeTrap`  
  Quadro de interceptação de kernel.  
@@ -52,17 +50,17 @@ enum StackFrameTypeEnum {
  Quadro de pilha EBP padrão.  
   
  `FrameTypeFrameData`  
- Ponteiro do quadro não especificado; Informações de dados de quadro disponíveis.  
+ Ponteiro de quadro especificado; Informações de dados de quadro disponíveis.  
   
  `FrameTypeUnknown`  
- Quadro que não tem qualquer informação de depuração.  
+ Quadros que não tem nenhuma informação de depuração.  
   
-## Comentários  
- Os valores desta enumeração são retornados por uma chamada para o [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) método.  
+## <a name="remarks"></a>Comentários  
+ Os valores nesta enumeração são retornados por uma chamada para o [Idiastackframe](../../debugger/debug-interface-access/idiastackframe-get-type.md) método.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  Cabeçalho: cvconst.h  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+ [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

@@ -1,52 +1,38 @@
 ---
-title: IDebugPrimitiveTypeField::GetPrimitiveType | Documentos do Microsoft
+title: IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - GetPrimitiveType
 - IDebugPrimitiveTypeField::GetPrimitiveType
 ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 30de91316b0bea149124ac3007bca92371ba4248
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 3cba27320cd633c3f98ee01ec09cd2b8efbb3a45
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
-Recupera o tipo primitivo que está associado esse campo.  
+Recupera o tipo primitivo que está associado este campo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetPrimitiveType (  
    DWORD* pdwType  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetPrimitiveType (  
    out uint pdwType  
 );  
@@ -54,10 +40,10 @@ int GetPrimitiveType (
   
 #### <a name="parameters"></a>Parâmetros  
  `pdwType`  
- [out] O valor do [enumeração CorElementType](CorElementType%20Enumeration.xml) que representa o tipo primitivo.  
+ [out] Valor de [enumeração CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa o tipo primitivo.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará `S_FALSE`.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE`.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)

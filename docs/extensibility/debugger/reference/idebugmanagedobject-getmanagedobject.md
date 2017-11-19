@@ -1,53 +1,37 @@
 ---
-title: IDebugManagedObject::GetManagedObject | Documentos do Microsoft
+title: IDebugManagedObject::GetManagedObject | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugManagedObject::GetManagedObject
-helpviewer_keywords:
-- IDebugManagedObject::GetManagedObject method
+f1_keywords: IDebugManagedObject::GetManagedObject
+helpviewer_keywords: IDebugManagedObject::GetManagedObject method
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4cd3a8f67b4562812266c123866390a5f6f48ad6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cedcd5801d37256bcb419f4b4e6fb5317f0aedbf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 Retorna uma interface que representa o objeto gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetManagedObject(   
    IUnknown** ppManagedObject  
 );  
 ```  
   
-```cpp#  
+```cpp  
 int GetManagedObject(  
    out object ppManagedObject  
 );  
@@ -61,7 +45,7 @@ int GetManagedObject(
  Se for bem-sucedido, retornará S_OK; Caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- A interface retornada desse método pode ser consultada para qualquer interface implementada pela classe gerenciada, permitindo que seus métodos sejam chamados.  
+ A interface retornada deste método pode ser consultada para qualquer interface implementada pela classe gerenciada, permitindo que os seus métodos sejam chamados.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

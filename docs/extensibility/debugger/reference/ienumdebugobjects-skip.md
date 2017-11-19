@@ -1,53 +1,37 @@
 ---
-title: IEnumDebugObjects::Skip | Documentos do Microsoft
+title: IEnumDebugObjects::Skip | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugObjects::Skip
-helpviewer_keywords:
-- IEnumDebugObjects::Skip method
+f1_keywords: IEnumDebugObjects::Skip
+helpviewer_keywords: IEnumDebugObjects::Skip method
 ms.assetid: 957cead8-0a9c-4403-b190-b9fbadc49d42
-caps.latest.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 191371ee2a091f95824b73d6e44df3d0d21980c5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1a605a2e8380852310035ea9ba3cf39554a27ff7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
 Este método ignora o número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
    [in] ULONG celt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Skip(  
    [In] uint celt  
 );  

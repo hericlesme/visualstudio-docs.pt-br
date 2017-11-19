@@ -1,50 +1,49 @@
 ---
-title: "Habilitando recursos de depura&#231;&#227;o no Visual C++ (/D_DEBUG) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Opção de compilador /D_DEBUG (C++)"
-  - "Macro _DEBUG"
-  - "declarações, habilitando recursos de depuração"
-  - "Opção de compilador D_DEBUG"
-  - "depurar compilações, MFC"
-  - "depurando [C++], habilitando recursos de depuração"
-  - "depuração [MFC], habilitando recursos de depuração"
-  - "Bibliotecas MFC, versão de depuração"
+title: "Habilitando recursos de depuração no Visual C++ (-/d_debug) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- /D_DEBUG compiler option [C++]
+- debugging [C++], enabling debug features
+- debugging [MFC], enabling debug features
+- assertions, enabling debug features
+- D_DEBUG compiler option
+- MFC libraries, debug version
+- debug builds, MFC
+- _DEBUG macro
 ms.assetid: 276e2254-7274-435e-ba4d-67fcef4f33bc
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b762f34df693ac3b5992d0b1e9c2ba4fa6fb8cb8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Habilitando recursos de depura&#231;&#227;o no Visual C++ (/D_DEBUG)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-No [!INCLUDE[vcprvc](../debugger/includes/vcprvc_md.md)], os recursos de depuração como asserções são habilitados quando você compila seu programa com o símbolo **\_DEBUG** definido.  Há duas maneiras de definir **\_DEBUG**:  
+# <a name="enabling-debug-features-in-visual-c-ddebug"></a>Habilitando funcionalidades de depuração no Visual C++ (/D_DEBUG)
+Em [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], recursos de depuração, como as declarações são habilitadas quando você compila seu programa com o símbolo **Debug** definido. Você pode definir **Debug** em uma das duas maneiras:  
   
--   Especifique **\#define \_DEBUG** no código\-fonte ou  
+-   Especifique **#define Debug** em seu código-fonte, ou  
   
--   Especifique a opção de compilador **\/D\_DEBUG**. \(Se você criar seu projeto no Visual Studio usando assistentes, **\/D\_DEBUG** será definido automaticamente na configuração Depuração\).  
+-   Especifique o **/D_DEBUG** opção de compilador. (Se você criar seu projeto no Visual Studio usando assistentes, **/D_DEBUG** é definido automaticamente na configuração de depuração.)  
   
- Quando **\_DEBUG** é definido, o compilador compila as seções de código cercadas por **\#ifdef \_DEBUG** e por `#endif`.  
+ Quando **Debug** é definido, o compilador compila seções de código cercado por **#ifdef DEBUG** e `#endif`.  
   
- A configuração Depuração de um programa MFC deve ser vinculada a uma versão de depuração da biblioteca MFC.  Os arquivos de cabeçalho MFC determinam a versão correta deda biblioteca MFC à qual vincular com base nos símbolos definidos, como **\_DEBUG** e **\_UNICODE**.  Para obter detalhes, consulte [Versões da biblioteca MFC](/visual-cpp/mfc/mfc-library-versions).  
+ A configuração Depuração de um programa MFC deve ser vinculada a uma versão de depuração da biblioteca MFC. Os arquivos de cabeçalho MFC determinam a versão correta da biblioteca MFC para vincular com baseada nos símbolos que você definiu, tais como **Debug** e **Unicode**. Para obter detalhes, consulte [versões de biblioteca MFC](/cpp/mfc/mfc-library-versions).  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Depurando código nativo](../debugger/debugging-native-code.md)   
- [Definições do projeto para uma configuração de depuração do C\+\+](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+ [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

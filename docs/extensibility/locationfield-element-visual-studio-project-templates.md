@@ -1,43 +1,27 @@
 ---
-title: Elemento LocationField (modelos de projeto do Visual Studio) | Documentos do Microsoft
+title: Elemento LocationField (modelos de projeto do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
-helpviewer_keywords:
-- LocationField element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
+helpviewer_keywords: LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 50a88925f718caa3a76281b6e96632204f66c67c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 33be0fde28dded57aafa04e8d6862bcd6e0cf101
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelos de projeto do Visual Studio)
-Especifica se o **local** caixa de texto o **novo projeto** caixa de diálogo é habilitada, desabilitada ou ocultada para o modelo de projeto.  
+Especifica se ou não o **local** caixa de texto de **novo projeto** caixa de diálogo está habilitada, desabilitada ou ocultada para o modelo de projeto.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -53,7 +37,7 @@ Especifica se o **local** caixa de texto o **novo projeto** caixa de diálogo é
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -62,7 +46,7 @@ Especifica se o **local** caixa de texto o **novo projeto** caixa de diálogo é
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele exibe em ambos os **novo projeto**.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
@@ -78,7 +62,7 @@ Especifica se o **local** caixa de texto o **novo projeto** caixa de diálogo é
 ## <a name="remarks"></a>Comentários  
  O valor padrão é `Enabled`.  
   
- O **local** caixa de texto o **novo projeto** caixa de diálogo permite que os usuários alterem o diretório padrão no qual os novos projetos são salvos.  
+ O **local** caixa de texto de **novo projeto** caixa de diálogo permite que os usuários alterem o diretório padrão no qual novos projetos são salvos.  
   
  O valor especificado no `Location` elemento será considerado somente pela caixa de diálogo se o sistema de projeto subjacente oferece suporte a ele.  
   

@@ -1,45 +1,30 @@
 ---
-title: FIELD_KIND_EX | Documentos do Microsoft
+title: FIELD_KIND_EX | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- FIELD_KIND_EX enumeration
+helpviewer_keywords: FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 69d34f8fcdf50eeed34f39587f14febb94a9e3ae
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 700eae83a53cf9ef88c81d33a07f9a79bd77a4b8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Enumera os tipos adicionais de campos que um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto pode conter. Esta enumeração estende o [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -49,7 +34,7 @@ enum enum_FIELD_KIND_EX
 typedef DWORD FIELD_KIND_EX;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -63,7 +48,7 @@ public enum enum_FIELD_KIND_EX
  Campo não contém um tipo estendido.  
   
  FIELD_TYPE_EX_METHODVAR  
- Campo contém uma variável do método.  
+ Campo contém uma variável de método.  
   
  FIELD_TYPE_EX_CLASSVAR  
  Campo contém uma variável de classe.  

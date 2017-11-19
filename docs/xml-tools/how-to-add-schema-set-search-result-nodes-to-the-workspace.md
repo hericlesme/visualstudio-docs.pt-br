@@ -1,43 +1,43 @@
 ---
-title: "How to: Add Schema Set Search Result Nodes to the Workspace | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Como: adicionar nós de resultados de pesquisa de conjunto de esquema para o espaço de trabalho | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 659eaa454243dac8ac05a5f2749237944833da10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Add Schema Set Search Result Nodes to the Workspace
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Este tópico explica como adicionar os nós que são realçadas em XML Schema Explorer como resultado de uma pesquisa de palavra\-chave no espaço de trabalho.  
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Como: Para adicionar nós de resultados de pesquisa de esquema para o espaço de trabalho
+Este tópico explica como adicionar os nós que são realçadas em XML Schema Explorer como resultado de uma pesquisa de palavra-chave no espaço de trabalho.  
   
 > [!NOTE]
->  Somente os nós globais podem ser adicionados a [o espaço de trabalho](../xml-tools/xml-schema-designer-workspace.md).  
+>  Somente nós globais podem ser adicionados para o [espaço de trabalho](../xml-tools/xml-schema-designer-workspace.md).  
   
- Este exemplo usa o exemplo [Esquema de ordem de compra](../Topic/Sample%20XSD%20File:%20Purchase%20Order%20Schema.md).  
+ Este exemplo usa o exemplo [esquema de ordem de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md).  
   
-### Para adicionar nós definidos do resultado de esquema  
+### <a name="to-add-schema-set-result-nodes"></a>Para adicionar nós definidos do resultado de esquema  
   
-1.  Siga as etapas em [How to: Create and Edit an XSD Schema File](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Siga as etapas em [como: criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  O tipo “purchaseOrder” na caixa de texto de pesquisa de barra de ferramentas de [XML Explorer](../xml-tools/xml-schema-explorer.md) e clique no botão de pesquisa.  
+2.  Digite "purchaseOrder" na caixa de texto de pesquisa do [XML Explorer](../xml-tools/xml-schema-explorer.md) barra de ferramentas e clique no botão de pesquisa.  
   
-     ![XML Schema Explorer Keyword Search](~/xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
+     ![Pesquisa de palavra-chave do XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      Os resultados de pesquisa são realçadas em XML Schema Explorer e marcados por escalas na barra de rolagem vertical.  
   
-3.  Adicione os resultados de pesquisa para o espaço de trabalho clicando no botão de **Adicionar nós realçados ao Espaço de Trabalho** no painel de resultados de resumo.  
+3.  Adicionar os resultados da pesquisa para o espaço de trabalho clicando o **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo.  
   
-     ![XML Schema Explorer Search Result](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
+     ![Resultado da pesquisa do XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   
-     O nó de `purchaseOrder` e o nó de `PurchaseOrderType` aparecem próximos uns dos outros na superfície de design de [Representa graficamente a exibição](../xml-tools/graph-view.md).  Porque os dois nós são relacionados \(o elemento de `purchaseOrder` é do tipo de `PurchaseOrderType` \), uma seta é desenhada entre eles.
+     O `purchaseOrder` nó e o `PurchaseOrderType` nó aparecer ao lado do outro na superfície de design do [exibição de gráfico](../xml-tools/graph-view.md). Porque os dois nós são relacionados (o elemento de `purchaseOrder` é do tipo de `PurchaseOrderType` ), uma seta é desenhada entre eles.

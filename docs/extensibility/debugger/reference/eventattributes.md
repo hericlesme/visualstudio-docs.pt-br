@@ -1,47 +1,31 @@
 ---
-title: EVENTATTRIBUTES | Documentos do Microsoft
+title: EVENTATTRIBUTES | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- EVENTATTRIBUTES
-helpviewer_keywords:
-- EVENTATTRIBUTES enumeration
+f1_keywords: EVENTATTRIBUTES
+helpviewer_keywords: EVENTATTRIBUTES enumeration
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9621f2e96b089fe6c5bc7cbfaeb0dce6851dc9e8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 097a61ff6c96fd4901265ad960169fd5ec7244c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 Especifica os atributos de evento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_EVENTATTRIBUTES {   
    EVENT_ASYNCHRONOUS          = 0x0000,  
    EVENT_SYNCHRONOUS           = 0x0001,  
@@ -54,7 +38,7 @@ enum enum_EVENTATTRIBUTES {
 typedef DWORD EVENTATTRIBUTES;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_EVENTATTRIBUTES {   
    EVENT_ASYNCHRONOUS          = 0x0000,  
    EVENT_SYNCHRONOUS           = 0x0001,  
@@ -68,7 +52,7 @@ public enum enum_EVENTATTRIBUTES {
   
 ## <a name="members"></a>Membros  
  EVENT_ASYNCHRONOUS  
- Indica que o evento é assíncrono e não é necessária nenhuma resposta ao evento.  
+ Indica que o evento é assíncrono e nenhuma resposta para o evento é necessária.  
   
  EVENT_SYNCHRONOUS  
  Indica que o evento é síncrono; responder por meio de [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
@@ -77,19 +61,19 @@ public enum enum_EVENTATTRIBUTES {
  Indica que se trata de um evento de parada. Deve ser combinado com um `EVENT_ASYNCHRONOUS` ou `EVENT_SYNCHRONOUS`.  
   
  EVENT_ASYNC_STOP  
- Indica um evento de interrupção assíncrono. Atualmente, não há nenhum evento. Esse sinalizador é apenas um espaço reservado.  
+ Indica um evento de interrupção assíncrono. Atualmente, não há nenhum evento desse tipo. Esse sinalizador é apenas um espaço reservado.  
   
  EVENT_SYNC_STOP  
  Indica um evento de parada síncrona (uma combinação de `EVENT_SYNCHRONOUS` e `EVENT_STOPPING`). Esse valor é usado por um mecanismo de depuração (DE) quando ele envia um evento de parada. A resposta é feita por meio de uma chamada para [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [etapa](../../../extensibility/debugger/reference/idebugprogram2-step.md), ou [continuar](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
   
  EVENT_IMMEDIATE  
- Indica um evento que é enviado imediatamente e de forma síncrona ao IDE. Esse sinalizador é combinado com outros sinalizadores como `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, ou `EVENT_SYNC_STOP` para indicar o tipo de evento e o fato de que o mecanismo de resposta (se houver) é conhecido.  
+ Indica um evento que é enviado imediatamente e de forma síncrona para o IDE. Esse sinalizador é combinado com outros sinalizadores como `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, ou `EVENT_SYNC_STOP` para indicar o tipo de evento e o fato de que o mecanismo de resposta (se houver) é conhecido.  
   
  EVENT_EXPRESSION_EVALUATION  
- O evento é um resultado da avaliação da expressão.  
+ O evento é um resultado da avaliação de expressão.  
   
 ## <a name="remarks"></a>Comentários  
- Esses valores são passados a `dwAttrib` parâmetro o [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) método.  
+ Esses valores são transmitidos a `dwAttrib` parâmetro o [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) método.  
   
  Esses valores podem ser combinados com um bit a bit `OR`.  
   
@@ -103,4 +87,4 @@ public enum enum_EVENTATTRIBUTES {
 ## <a name="see-also"></a>Consulte também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)   
- [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

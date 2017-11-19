@@ -1,53 +1,51 @@
 ---
-title: "IDiaSymbol::get_targetVirtualAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSymbol::get_targetVirtualAddress"
+title: ': Get_targetvirtualaddress | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_targetVirtualAddress method
 ms.assetid: a0a5ce72-95f8-443e-bb4b-8c21194faad0
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 47808005cc2cd6e7e7577218936f029a8770623b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_targetVirtualAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera o endereço virtual \(VA\) de um destino de conversão.  
+# <a name="idiasymbolgettargetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
+Recupera o endereço virtual (VA) de um destino de conversão.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_targetVirtualAddress (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_targetVirtualAddress (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna o VA de um destino de conversão.  
+ [out] Retorna o VA de um destino de conversão.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## Comentários  
- Esta propriedade é válida somente se o símbolo como um [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valor de `SymTagThunk`.  
+## <a name="remarks"></a>Comentários  
+ Essa propriedade é válida somente se o símbolo como um [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valor `SymTagThunk`.  
   
- Uma "conversão" é um trecho de código que converte entre um espaço de endereço de memória de 32 bits \(também conhecido como o espaço de endereço plano\) e um espaço de endereço de 16 bits \(conhecido como um espaço de endereçamento segmentado\).  
+ Uma "conversão" é um trecho de código que converte entre um espaço de endereço de memória de 32 bits (também conhecido como o espaço de endereço simples) e um espaço de endereço de 16 bits (conhecido como um espaço de endereço segmentado).  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

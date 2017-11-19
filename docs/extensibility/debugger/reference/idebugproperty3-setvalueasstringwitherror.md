@@ -1,40 +1,24 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Documentos do Microsoft
+title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty3::SetValueAsStringWithError
-helpviewer_keywords:
-- IDebugProperty3::SetValueAsStringWithError
+f1_keywords: IDebugProperty3::SetValueAsStringWithError
+helpviewer_keywords: IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9f41873f442cf513f85515019f8bdc949e2fe5ca
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d713d4d29b0e7a0e51f998efe460ae75a8dbd0b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Define o valor dessa propriedade e retorna uma mensagem de erro, se necessário.  
@@ -50,7 +34,7 @@ HRESULT SetValueAsStringWithError(
 );  
 ```  
   
-```c#  
+```csharp  
 int SetValueAsStringWithError(  
    string     pszValue,  
    uint       dwRadix,  
@@ -67,21 +51,21 @@ int SetValueAsStringWithError(
  [in] A base do valor que está sendo definido.  
   
  `dwTimeout`  
- [in] O período de tempo de espera para o valor a ser definido (`INFINITE` significa aguardar indefinidamente).  
+ [in] O período de tempo de espera para o valor a ser definido (`INFINITE` significa espera indefinidamente).  
   
  `errorString`  
- [out] Se houver um erro ao definir o valor, ele mantém o motivo da falha.  
+ [out] Se houver um erro ao definir o valor, isso mantém o motivo da falha.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  O valor de entrada pode ser uma expressão a ser avaliada.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CProperty** objeto expõe o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um **CProperty** objeto que expõe o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   
     LPCOLESTR in_szValue,  
     DWORD in_RADIX,  

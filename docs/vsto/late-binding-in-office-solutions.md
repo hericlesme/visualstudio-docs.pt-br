@@ -1,12 +1,10 @@
 ---
-title: Late Binding in Office Solutions | Microsoft Docs
+title: "Associação tardia em soluções do Office | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,61 +16,62 @@ helpviewer_keywords:
 - automation [Office development in Visual Studio], casting objects
 - casting, object to specific type
 ms.assetid: 80b0d23e-df68-4ea9-a02b-238aee8ca9c0
-caps.latest.revision: 49
-author: kempb
-ms.author: kempb
+caps.latest.revision: "49"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a028772bd74c8160724f34e71489674809b8188f
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 932a7ccc3f52d80e4f75999f401c61b2663095f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="late-binding-in-office-solutions"></a>Late Binding in Office Solutions
-  Some types in the object models of Office applications provide functionality that is available through late-binding features. For example, some methods and properties can return different types of objects depending on the context of the Office application, and some types can expose different methods or properties in different contexts.  
+# <a name="late-binding-in-office-solutions"></a>Associação tardia em soluções do Office
+  Alguns tipos de modelos de objeto dos aplicativos do Office fornecem funcionalidade que está disponível por meio de recursos de associação tardia. Por exemplo, alguns métodos e propriedades podem retornar diferentes tipos de objetos, dependendo do contexto do aplicativo do Office, e alguns tipos podem expor métodos ou propriedades em diferentes contextos.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Visual Basic projects where **Option Strict** is off and Visual C# projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] can work directly with types that employ these late-binding features.  
+ Onde os projetos do Visual Basic **Option Strict** está desativado e o Visual C# projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] pode trabalhar diretamente com tipos que usam esses recursos de associação tardia.  
   
-## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Implicit and Explicit Casting of Object Return Values  
- Many methods and properties in the Microsoft Office primary interop assemblies (PIAs) return <xref:System.Object> values, because they can return several different types of objects. For example, the <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> property returns an <xref:System.Object> because its return value can be a <xref:Microsoft.Office.Interop.Excel.Worksheet> or <xref:Microsoft.Office.Interop.Excel.Chart> object, depending on what the active sheet is.  
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Conversão implícita e explícita de valores de retorno de objeto  
+ Vários métodos e propriedades do Microsoft Office assemblies de interoperabilidade primários (PIAs) retornam <xref:System.Object> valores, porque eles podem retornar vários tipos diferentes de objetos. Por exemplo, o <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> propriedade retorna um <xref:System.Object> porque seu valor de retorno pode ser um <xref:Microsoft.Office.Interop.Excel.Worksheet> ou <xref:Microsoft.Office.Interop.Excel.Chart> objeto, dependendo de qual é a planilha ativa.  
   
- When a method or property returns a <xref:System.Object>, you must explicitly convert (in Visual Basic) the object to the correct type in Visual Basic projects where **Option Strict** is on. You do not have to explicitly cast <xref:System.Object> return values in Visual Basic projects where **Option Strict** is off.  
+ Quando uma propriedade ou método retorna um <xref:System.Object>, você deverá converter explicitamente (no Visual Basic) o objeto para o tipo correto em projetos do Visual Basic onde **Option Strict** está em. Não é necessário converter explicitamente <xref:System.Object> valores de retorno em projetos do Visual Basic onde **Option Strict** está desativado.  
   
- In most cases, the reference documentation lists the possible types of the return value for a member that returns an <xref:System.Object>. Converting or casting the object enables IntelliSense for the object in the Code Editor.  
+ Na maioria dos casos, a documentação de referência lista os possíveis tipos de valor de retorno para um membro que retorna um <xref:System.Object>. Convertendo ou convertendo o objeto habilita IntelliSense para o objeto no Editor de códigos.  
   
- For information about conversion in Visual Basic, see [Implicit and Explicit Conversions &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) and [CType Function &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Para obter informações sobre a conversão em Visual Basic, consulte [implícita e explícita conversões &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) e [função CType &#40; Visual Basic &#41; ](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
-### <a name="examples"></a>Examples  
- The following code example demonstrates how to cast an object to a specific type in a Visual Basic project where **Option Strict** is on. In this type of project, you must explicitly cast the <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> property to a <xref:Microsoft.Office.Interop.Excel.Range>. This example requires a document-level Excel project with a worksheet class named `Sheet1`.  
+### <a name="examples"></a>Exemplos  
+ O exemplo de código a seguir demonstra como converter um objeto para um tipo específico em um projeto do Visual Basic onde **Option Strict** está em. Esse tipo de projeto, é necessário converter explicitamente o <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> propriedade para um <xref:Microsoft.Office.Interop.Excel.Range>. Este exemplo requer que um projeto de nível de documento do Excel com uma classe de planilha denominada `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]  
   
- The following code example demonstrates how to implicitly cast an object to a specific type in a Visual Basic project where **Option Strict** is off or in a Visual C# project that targets the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. In these types of projects, the <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> property is implicitly cast to a <xref:Microsoft.Office.Interop.Excel.Range>. This example requires a document-level Excel project with a worksheet class named `Sheet1`.  
+ O exemplo de código a seguir demonstra como converter implicitamente um objeto para um tipo específico em um projeto do Visual Basic onde **Option Strict** está desligado ou em um projeto do Visual c# que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Esses tipos de projetos, o <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> propriedade é implicitamente convertida para um <xref:Microsoft.Office.Interop.Excel.Range>. Este exemplo requer que um projeto de nível de documento do Excel com uma classe de planilha denominada `Sheet1`.  
   
- [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)] [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
+ [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
+ [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## <a name="accessing-members-that-are-available-only-through-late-binding"></a>Accessing Members That Are Available Only Through Late Binding  
- Some properties and methods in the Office PIAs are available only through late binding. In Visual Basic projects where **Option Strict** is off or in Visual C# projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], you can use the late binding features in these languages to access late-bound members. In Visual Basic projects where **Option Strict** is on, you must use reflection to access these members.  
+## <a name="accessing-members-that-are-available-only-through-late-binding"></a>Acessando membros que estão disponíveis apenas por meio de associação tardia  
+ Algumas propriedades e métodos em PIAs do Office estão disponíveis apenas por meio de associação tardia. No Visual Basic, projetos onde **Option Strict** está desligado ou em projetos do Visual c# que visam o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], você pode usar os recursos de associação tardia nestes idiomas para acessar membros de associação tardia. No Visual Basic, projetos onde **Option Strict** está ativada, você deve usar reflexão para acessar esses membros.  
   
-### <a name="examples"></a>Examples  
- The following code example demonstrates how to access late-bound members in a Visual Basic project where **Option Strict** is off or in a Visual C# project that targets the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. This example accesses the late-bound **Name** property of the **File Open** dialog box in Word. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in a Word project.  
+### <a name="examples"></a>Exemplos  
+ O exemplo de código a seguir demonstra como acessar membros de associação tardia em um projeto do Visual Basic onde **Option Strict** está desligado ou em um projeto do Visual c# que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Este exemplo acessa a associação tardia **nome** propriedade o **abrir arquivo** caixa de diálogo no Word. Para usar este exemplo, executá-la na `ThisDocument` ou `ThisAddIn` classe em um projeto do Word.  
   
- [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)] [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]  
+ [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
+ [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]  
   
- The following code example demonstrates how to use reflection to accomplish the same task in a Visual Basic project where **Option Strict** is on.  
+ O exemplo de código a seguir demonstra como usar reflexão para realizar a mesma tarefa em um projeto do Visual Basic onde **Option Strict** está em.  
   
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
-## <a name="see-also"></a>See Also  
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
- [Using Type dynamic &#40;C&#35; Programming Guide&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
- [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
- [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)   
+ [Usando o tipo dinâmico &#40; C &#35; Guia de programação &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Instrução Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
+ [Reflexão (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
+ [Reflexão (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
+ [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

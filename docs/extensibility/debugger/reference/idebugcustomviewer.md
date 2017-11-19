@@ -1,40 +1,24 @@
 ---
-title: IDebugCustomViewer | Documentos do Microsoft
+title: IDebugCustomViewer | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCustomViewer
-helpviewer_keywords:
-- IDebugCustomViewer interface
+f1_keywords: IDebugCustomViewer
+helpviewer_keywords: IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: cc2401231c8253784e4162e57b3338022d0d8559
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2b7d32746fa42dc270497252065c3ac117a59547
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Essa interface permite que um avaliador de expressão (EE) para exibir um valor de propriedade em qualquer formato que é necessário.  
@@ -49,7 +33,7 @@ IDebugCustomViewer : IUknown
  Um EE implementa essa interface para exibir um valor de propriedade em um formato personalizado.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Uma chamada para Spvoice `CoCreateInstance` função cria uma instância dessa interface. O `CLSID` passado para `CoCreateInstance` é obtido do registro. Uma chamada para [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) obtém o local do registro. Consulte comentários para obter detalhes, bem como o exemplo.  
+ Uma chamada para COM `CoCreateInstance` função instancia nesta interface. O `CLSID` passado para `CoCreateInstance` é obtido do registro. Uma chamada para [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) obtém o local no registro. Consulte comentários para obter detalhes, bem como o exemplo.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  Essa interface implementa o método a seguir:  
@@ -59,13 +43,13 @@ IDebugCustomViewer : IUknown
 |[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Faz o que for necessário para exibir um determinado valor.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa interface é usada quando o valor da propriedade não pode ser exibido por meio do normal — por exemplo, com uma tabela de dados ou outro tipo de propriedade complexa. Um visualizador personalizado, representados pelo `IDebugCustomViewer` interface, é diferente de um visualizador de tipo, que é um programa externo para exibir dados de um tipo específico, independentemente do EE. O EE implementa um visualizador personalizado específico que EE. Um usuário seleciona qual tipo de visualizador para usar, seja ele um visualizador de tipo ou um visualizador personalizado. Consulte [visualizando e exibindo dados](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obter detalhes sobre esse processo.  
+ Essa interface é usada quando o valor da propriedade não pode ser exibido por meios normais — por exemplo, com uma tabela de dados ou outro tipo de propriedade complexa. Um visualizador personalizado, representados pelo `IDebugCustomViewer` interface, que é diferente de um visualizador de tipo, que é um programa externo para exibir dados de um tipo específico, independentemente do EE. O EE implementa um visualizador personalizado que é específico para esse EE. Um usuário seleciona o tipo de visualizador para usar, seja ele um visualizador de tipo ou um visualizador personalizado. Consulte [Visualizing e exibindo dados](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obter detalhes sobre esse processo.  
   
- Um visualizador personalizado registrado da mesma forma como um EE e, portanto, requer um idioma GUID e um GUID de fornecedor. A métrica exata (ou o nome da entrada do registro) é conhecido apenas o EE. Essa métrica é retornada no [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estrutura, que por sua vez é retornada por uma chamada a [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). O valor armazenado na métrica é o `CLSID` que é passado para Spvoice `CoCreateInstance` funcionar (consulte o exemplo).  
+ Um visualizador personalizado é registrado da mesma forma como um EE e, portanto, requer um idioma GUID e um fornecedor de GUID. A métrica exata (ou o nome da entrada do registro) é conhecido apenas o EE. Essa métrica é retornada no [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estrutura, que por sua vez, é retornada por uma chamada para [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). O valor armazenado na métrica é o `CLSID` que é passado para COM `CoCreateInstance` função (veja o exemplo).  
   
- O [SDK auxiliares para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) função, `SetEEMetric`, pode ser usado para registrar um visualizador personalizado. Consulte a seção do Registro "Avaliadores de expressão" `Debugging SDK Helpers` para chaves de registro específico que precisa de um visualizador personalizado. Observe que um visualizador personalizado precisa apenas uma métrica (que é definida pelo implementador do EE) enquanto um avaliador de expressão requer várias métricas predefinidas.  
+ O [auxiliares do SDK para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) função, `SetEEMetric`, pode ser usado para registrar um visualizador personalizado. Consulte a seção do Registro "Avaliadores de expressão" `Debugging SDK Helpers` para chaves de registro específico que precisa de um visualizador personalizado. Observe que um visualizador personalizado precisa apenas uma métrica (que é definida por implementador da EE) enquanto um avaliador de expressão requer várias métricas predefinidas.  
   
- Normalmente, um visualizador personalizado fornece uma exibição somente leitura dos dados, como o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface fornecido para [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) não tem métodos para alterar o valor da propriedade exceto como uma cadeia de caracteres. Para oferecer suporte a alteração arbitrária blocos de dados, o EE implementa uma interface personalizada no mesmo objeto que implementa o `IDebugProperty3` interface. Essa interface personalizada forneceriam então os métodos necessários para alterar um bloco arbitrário de dados.  
+ Normalmente, um visualizador personalizado fornece uma exibição somente leitura dos dados, como o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface fornecida para [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) não possui métodos para alterar o valor da propriedade exceto como uma cadeia de caracteres. Para oferecer suporte a alteração arbitrários blocos de dados, o EE implementa uma interface personalizada no mesmo objeto que implementa o `IDebugProperty3` interface. Essa interface personalizada ofereceria, em seguida, os métodos necessários para alterar um bloco arbitrário de dados.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  
@@ -77,7 +61,7 @@ IDebugCustomViewer : IUknown
 ## <a name="example"></a>Exemplo  
  Este exemplo mostra como obter o primeiro visualizador personalizado de uma propriedade, se essa propriedade tem qualquer visualizadores personalizados.  
   
-```cpp#  
+```cpp  
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)  
 {  
     // This string is typically defined globally.  For this example, it  

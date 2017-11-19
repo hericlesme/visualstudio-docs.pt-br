@@ -1,12 +1,10 @@
 ---
-title: Ribbon Overview | Microsoft Docs
+title: "Visão geral da faixa de opções | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,122 +19,122 @@ helpviewer_keywords:
 - toolbars [Office development in Visual Studio]
 - custom Ribbon, multiple Ribbons
 ms.assetid: 2bdef092-190d-47e3-9440-e862b95dacaa
-caps.latest.revision: 64
-author: kempb
-ms.author: kempb
+caps.latest.revision: "64"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4335f1f397d8497ca0aaa359e443b823d7441dbe
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 52583bdbf6edf4f2a698bc8662a0faf659841926
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ribbon-overview"></a>Ribbon Overview
-  The Ribbon is a way to organize related commands so that they are easier to find. Commands appear as controls on the Ribbon. Controls are organized into *groups* along a horizontal strip at the top edge of an application window. Related groups are organized on tabs.  
+# <a name="ribbon-overview"></a>Visão geral da faixa de opções
+  A faixa de opções é uma maneira de organizar os comandos relacionados para que eles são mais fáceis de localizar. Os comandos são exibidos como controles na faixa de opções. Controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior de uma janela de aplicativo. Grupos são organizados nas guias.  
   
- Most of the features that were accessed by using menus and toolbars in earlier versions of the Microsoft Office system can now be accessed by using the Ribbon. For more information, see the technical article [Developer Overview of the User Interface for the 2007 Microsoft Office System](http://go.microsoft.com/fwlink/?LinkID=70860).  
+ A maioria dos recursos que foram acessados usando menus e barras de ferramentas em versões anteriores do Microsoft Office system agora pode ser acessada usando a faixa de opções. Para obter mais informações, consulte o artigo técnico [visão geral do desenvolvedor da Interface do usuário para o Microsoft Office 2007](http://go.microsoft.com/fwlink/?LinkID=70860).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="customizing-the-microsoft-office-ribbon"></a>Customizing the Microsoft Office Ribbon  
- To customize the Ribbon, add one of the following Ribbon items to your Office project:  
+## <a name="customizing-the-microsoft-office-ribbon"></a>Personalizando a faixa de opções do Microsoft Office  
+ Para personalizar a faixa de opções, adicione um dos seguintes itens de faixa de opções para o seu projeto do Office:  
   
--   **Ribbon (Visual Designer)**  
+-   **Faixa de opções (Visual Designer)**  
   
--   **Ribbon (XML)**  
+-   **Faixa de opções (XML)**  
   
- For example, to customize the Excel Ribbon, add a Ribbon item to an Excel VSTO Add-in project.  
+ Por exemplo, para personalizar a faixa de opções do Excel, adicione um item de faixa de opções para um projeto de suplemento do VSTO do Excel.  
   
-### <a name="ribbon-visual-designer-item"></a>Ribbon (Visual Designer) Item  
- The **Ribbon (Visual Designer)** item provides advanced tools that make it easier for you to design and develop a custom Ribbon. Use the **Ribbon (Visual Designer)** item to customize the Ribbon in the following ways:  
+### <a name="ribbon-visual-designer-item"></a>Item da faixa de opções (Visual Designer)  
+ O **faixa de opções (Visual Designer)** item fornece ferramentas avançadas que tornam mais fácil para você criar e desenvolver uma faixa de opções personalizada. Use o **faixa de opções (Visual Designer)** item para personalizar a faixa de opções das seguintes maneiras:  
   
--   Add custom or built-in tabs to a Ribbon.  
+-   Adicione guias internas ou personalizadas para uma faixa de opções.  
   
--   Add custom groups to a custom or built-in tab.  
-  
-    > [!NOTE]  
-    >  A built-in tab or group is one that already exists on the Ribbon of a Microsoft Office application. For example, the **Data** tab is a built-in tab in Excel. The **Connections** group is a built-in group on the **Data** tab.  
-  
--   Add custom controls to a custom group.  
-  
--   Add custom controls to the Backstage View.  
-  
- For more information about how to customize a Ribbon by using the **Ribbon (Visual Designer)** item, see [Ribbon Designer](../vsto/ribbon-designer.md).  
-  
-### <a name="ribbon-xml-item"></a>Ribbon (XML) Item  
- Use the **Ribbon (XML)** item if you want to customize the Ribbon in a way that is not supported by the **Ribbon (Visual Designer)** item. Use the **Ribbon (XML)** item to customize the Ribbon in the following ways:  
-  
--   Add *built-in* groups to a custom tab or built-in tab.  
-  
--   Add built-in controls to a custom group.  
-  
--   Add custom code to override the event handlers of built-in controls.  
-  
--   Customize the Quick Access Toolbar.  
-  
--   Share a Ribbon customization between VSTO Add-in by using a qualified ID.  
-  
- For more information about how to customize the Ribbon by using the **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
-## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exporting a Ribbon from the Ribbon Designer to Ribbon XML  
- If you create a Ribbon by using the Ribbon Designer, and then decide that you want to customize the Ribbon in ways that the **Ribbon (Visual Designer)** item does not support, you can export the Ribbon to XML.  
-  
- Visual Studio automatically creates a **Ribbon (XML)** item and populates the Ribbon XML file with elements and attributes for each control on the Ribbon.  
-  
- Not all of the properties that are in the **Properties** window of the Ribbon designer are transferred to the Ribbon XML file.  For example, Visual Studio does not export the value of the **Image** or **Text** property. That is because you must create a callback method in the Ribbon code file of the exported project to assign an image or set the text of a control. Visual Studio does not automatically generate callback methods as part of the export process.  
-  
- In addition, any unchanged default property values do not appear in the resulting Ribbon XML file.  
-  
- For more information about how to export the Ribbon to XML, see [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
-  
-### <a name="updating-the-code"></a>Updating the Code  
- A new Ribbon code file is added to **Solution Explorer**. This file contains the Ribbon XML class. You must create callback methods in the `Ribbon Callbacks` region of this class to handle user actions, such as clicking a button. Move your code from the event handlers to these callback methods and modify the code to work with the Ribbon extensibility (RibbonX) programming model. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
- You must also add code to the `ThisAddIn`, `ThisWorkbook`, or `ThisDocument` class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
-  
- For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
-## <a name="adding-multiple-ribbon-items-to-a-project"></a>Adding Multiple Ribbon Items to a Project  
- You can add more than one Ribbon item to a single project. This is useful if you want to perform either of the following two tasks:  
-  
--   Create Ribbons for Outlook *Inspectors*. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   Adicione grupos personalizados a uma guia interna ou personalizada.  
   
     > [!NOTE]  
-    >  An Inspector is a window that opens when users perform certain tasks, such as creating an e-mail message.  
+    >  Uma guia interna ou grupo é aquele que já existe na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel. O **conexões** é um grupo interno no **dados** guia.  
   
--   Select which Ribbon to display at run time.  
+-   Adicione controles personalizados para um grupo personalizado.  
   
-### <a name="selecting-which-ribbons-to-display-at-run-time"></a>Selecting Which Ribbons to Display at Run Time  
- Because a project can contain more than one Ribbon, you can select which Ribbon to display at run time.  
+-   Adicione controles personalizados à exibição Backstage.  
   
- To select a Ribbon to display at run time, override the CreateRibbonExtensibilityObject method in the `ThisAddin`, `ThisWorkbook`, or `ThisDocument` class of your project and return the Ribbon that you want to display. The following example checks the value of a field named `myCondition` and returns the appropriate Ribbon.  
+ Para obter mais informações sobre como personalizar uma faixa de opções usando o **faixa de opções (Visual Designer)** item, consulte [Designer da faixa de opções](../vsto/ribbon-designer.md).  
+  
+### <a name="ribbon-xml-item"></a>Item da faixa de opções (XML)  
+ Use o **da faixa de opções (XML)** item se você quiser personalizar a faixa de opções de forma que não há suporte para o **faixa de opções (Visual Designer)** item. Use o **da faixa de opções (XML)** item para personalizar a faixa de opções das seguintes maneiras:  
+  
+-   Adicionar *interna* grupos para uma guia personalizado ou uma guia interna.  
+  
+-   Adicione controles internos para um grupo personalizado.  
+  
+-   Adicione código personalizado para substituir os manipuladores de eventos de controles internos.  
+  
+-   Personalize a barra de ferramentas de acesso rápido.  
+  
+-   Compartilhar uma personalização da faixa de opções entre o suplemento do VSTO por meio de uma ID de qualificado.  
+  
+ Para obter mais informações sobre como personalizar a faixa de opções usando o **da faixa de opções (XML)** item, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
+  
+## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exportando uma faixa de opções do Designer de faixa de opções para XML da faixa de opções  
+ Se você criar uma faixa de opções usando o Designer de faixa de opções e, em seguida, decidir que deseja personalizar a faixa de opções de maneiras que o **faixa de opções (Visual Designer)** item não oferece suporte, você pode exportar a faixa de opções para XML.  
+  
+ Visual Studio cria automaticamente um **da faixa de opções (XML)** item e preenche o arquivo XML da faixa de opções com elementos e atributos para cada controle na faixa de opções.  
+  
+ Nem todas as propriedades que estão no **propriedades** janela do designer de faixa de opções são transferidos para o arquivo XML da faixa de opções.  Por exemplo, o Visual Studio não exporta o valor da **imagem** ou **texto** propriedade. Isso ocorre porque você deve criar um método de retorno de chamada no arquivo de código da faixa de opções do projeto exportado para atribuir uma imagem ou definir o texto de um controle. O Visual Studio não gera automaticamente os métodos de retorno de chamada como parte do processo de exportação.  
+  
+ Além disso, quaisquer valores de propriedade padrão inalterado não aparecem no arquivo XML da faixa de opções.  
+  
+ Para obter mais informações sobre como exportar a faixa de opções para XML, consulte [como: exportar uma faixa de opções do Designer de faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+  
+### <a name="updating-the-code"></a>Atualizando o código  
+ Um novo arquivo de código da faixa de opções é adicionado ao **Gerenciador de soluções**. Este arquivo contém a classe de XML da faixa de opções. Você deve criar métodos de retorno de chamada no `Ribbon Callbacks` região dessa classe para manipular ações do usuário, como clicar em um botão. Mova seu código de manipuladores de eventos para esses métodos de retorno de chamada e modifique o código para trabalhar com a extensibilidade da faixa de opções (RibbonX), modelo de programação. Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
+  
+ Você também deve adicionar o código para o `ThisAddIn`, `ThisWorkbook`, ou `ThisDocument` classe que substitui o método CreateRibbonExtensibilityObject e retorna a classe de XML da faixa de opções para o aplicativo do Office.  
+  
+ Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
+  
+## <a name="adding-multiple-ribbon-items-to-a-project"></a>Adicionar vários itens de faixa de opções para um projeto  
+ Você pode adicionar mais de um item de faixa de opções para um único projeto. Isso é útil se você quiser executar qualquer uma das seguintes tarefas:  
+  
+-   Criar faixas de opções para Outlook *inspetores*. Para obter mais informações, consulte [Personalizando uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+  
+    > [!NOTE]  
+    >  Um inspetor é uma janela que é aberta quando os usuários executam determinadas tarefas, como a criação de uma mensagem de email.  
+  
+-   Selecione quais faixa de opções para exibir em tempo de execução.  
+  
+### <a name="selecting-which-ribbons-to-display-at-run-time"></a>Selecionar qual faixas de opções para exibição em tempo de execução  
+ Como um projeto pode conter mais de uma faixa de opções, você pode selecionar quais faixa de opções para exibir em tempo de execução.  
+  
+ Para selecionar uma faixa de opções para exibir em tempo de execução, substituir o método CreateRibbonExtensibilityObject o `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe do seu projeto e os retornará a faixa de opções que você deseja exibir. O exemplo a seguir verifica o valor de um campo denominado `myCondition` e retorna a faixa de opções apropriada.  
   
 > [!NOTE]  
->  The syntax used in this example returns a Ribbon that was created by using the **Ribbon (Visual Designer)** item. The syntax for returning a Ribbon that is created by using a **Ribbon (XML)** item is slightly different. For more information about returning a **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
+>  A sintaxe usada neste exemplo retorna uma faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** item. A sintaxe para retornar uma faixa de opções que é criada usando um **da faixa de opções (XML)** item é ligeiramente diferente. Para obter mais informações sobre como retornar um **da faixa de opções (XML)** item, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
   
- Add the following code:  
+ Adicione o seguinte código:  
   
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)] [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
+ [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
+ [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-### <a name="related-topics"></a>Related Topics  
+### <a name="related-topics"></a>Tópicos relacionados  
   
-|Title|Description|  
+|Título|Descrição|  
 |-----------|-----------------|  
-|[How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)|Shows you how to customize the Ribbon of a Microsoft Office application, add a **Ribbon (Visual Designer)** or **Ribbon (XML)** item to an Office project.|  
-|[Ribbon Designer](../vsto/ribbon-designer.md)|Describes how you can use the Ribbon Designer to add custom tabs, groups, and controls to the Ribbon of a Microsoft Office application.|  
-|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Shows you how to create a custom Ribbon tab by using the Ribbon Designer. You can use the Ribbon Designer to add and position controls on the custom tab.|  
-|[Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)|Provides an overview of the strongly typed object model that you can use to get and set the properties of Ribbon controls at run time.|  
-|[Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstrates how to use the Ribbon object model to update the controls on a Ribbon after the Ribbon is loaded into the Office application.|  
-|[Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Provides guidance for customizing the Ribbon in Microsoft Office Outlook.|  
-|[Customizing a Ribbon for InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Provides guidance for customizing the Ribbon in Microsoft Office InfoPath.|  
-|[Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)|Shows how to show, hide, and modify the Ribbon, and enable users to run the code from controls in a custom task pane, actions pane, or Outlook form region.|  
-|[How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Shows how to change the order of tabs on a Ribbon.|  
-|[How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)|Shows how to add groups and controls to a built-in tab.|  
-|[How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)|Shows how to add controls to the menu that opens when you click the **File**.|  
-|[How to: Add a Dialog Box Launcher to a Ribbon Group](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Shows to add a dialog box launcher to any group on a Ribbon.|  
-|[How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Shows how to customize the Ribbon in advanced ways by exporting the Ribbon from the designer to Ribbon XML.|  
-|[Ribbon XML](../vsto/ribbon-xml.md)|Explains how you can customize a Ribbon by using Ribbon XML.|  
-|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.|  
+|[Como começar a personalizar a faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)|Mostra como personalizar a faixa de opções de um aplicativo do Microsoft Office, adicione um **faixa de opções (Visual Designer)** ou **da faixa de opções (XML)** item a um projeto do Office.|  
+|[Designer da faixa de opções](../vsto/ribbon-designer.md)|Descreve como você pode usar o Designer de faixa de opções para adicionar guias personalizadas, grupos e controles da faixa de opções de um aplicativo do Microsoft Office.|  
+|[Instruções passo a passo: criando uma guia personalizada usando o designer da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Mostra como criar uma guia faixa de opções personalizada usando o Designer de faixa de opções. Você pode usar o Designer de faixa de opções para adicionar e posicionar controles na guia personalizada.|  
+|[Visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md)|Fornece uma visão geral do modelo de objeto fortemente tipada que você pode usar para obter e definir as propriedades de controles de faixa de opções em tempo de execução.|  
+|[Instruções passo a passo: atualizando os controles em uma faixa de opções no tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstra como usar o modelo de objeto da faixa de opções para atualizar os controles em uma faixa de opções depois que a faixa de opções é carregada no aplicativo do Office.|  
+|[Personalizando uma faixa de opções para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Fornece orientação para personalizar a faixa de opções no Microsoft Office Outlook.|  
+|[Personalizando uma faixa de opções para InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Fornece orientação para personalizar a faixa de opções no Microsoft Office InfoPath.|  
+|[Acessando a faixa de opções no tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)|Mostra como mostrar, ocultar e modificar a faixa de opções e permitir que os usuários executar o código de controles em um painel tarefa personalizada, o painel de ações ou a região de formulário do Outlook.|  
+|[Como alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Mostra como alterar a ordem das guias em uma faixa de opções.|  
+|[Como personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)|Mostra como adicionar controles e grupos a uma guia interna.|  
+|[Como adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Mostra como adicionar controles ao menu aberto quando você clica o **arquivo**.|  
+|[Como adicionar um iniciador da caixa de diálogo a um grupo da faixa de opções](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Mostra como para adicionar um iniciador de caixa de diálogo a qualquer grupo em uma faixa de opções.|  
+|[Como exportar uma faixa de opções do Designer da Faixa de Opções para o XML da Faixa de Opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Mostra como personalizar a faixa de opções de maneiras avançadas exportando a faixa de opções do designer para o XML da faixa de opções.|  
+|[XML da faixa de opções](../vsto/ribbon-xml.md)|Explica como você pode personalizar uma faixa de opções usando o XML da faixa de opções.|  
+|[Instruções passo a passo: criando uma guia personalizada usando o designer da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstra como criar uma guia faixa de opções personalizada usando o **da faixa de opções (XML)** item.|  
   
   

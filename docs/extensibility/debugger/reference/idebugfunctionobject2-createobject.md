@@ -1,46 +1,32 @@
 ---
-title: IDebugFunctionObject2::CreateObject | Documentos do Microsoft
+title: IDebugFunctionObject2::CreateObject | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3c91d1ad034a602e8555073f38f81d6ba83a993a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 08ae477758aabb2b65b5823a37a9c07d61d4083b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-Cria um objeto que usa um construtor que recebe um valor de tempo limite e de configurações de sinalizador de avaliação.  
+Cria um objeto que usa um construtor que recebe as configurações de sinalizador de avaliação e um valor de tempo limite.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT CreateObject (  
    IDebugFunctionObject* pConstructor,  
    DWORD                 dwArgs,  
@@ -51,7 +37,7 @@ HRESULT CreateObject (
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateObject (  
    IDebugFunctionObject pConstructor,  
    uint                 dwArgs,  
@@ -76,16 +62,16 @@ int CreateObject (
  [in] Uma combinação de sinalizadores do [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeração que especificam como a avaliação deve ser executada.  
   
  `dwTimeout`  
- [in] Tempo máximo, em milissegundos, para aguardar antes de retornar desse método. Use **infinito** para aguardar indefinidamente.  
+ [in] Tempo máximo, em milissegundos, de espera antes de retornar desse método. Use **infinito** aguardar indefinidamente.  
   
  `ppObject`  
  [out] Retorna um **IDebugObject** que representa o objeto recém-criado.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Chame esse método para criar um objeto que representa uma instância de uma classe ou outro tipo complexo que exige um construtor, que é um parâmetro.  
+ Chame este método para criar um objeto que representa uma instância de uma classe ou outro tipo complexo que requer um construtor, que é um parâmetro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

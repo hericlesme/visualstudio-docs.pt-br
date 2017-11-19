@@ -1,43 +1,27 @@
 ---
-title: IDebugErrorBreakpoint2 | Documentos do Microsoft
+title: IDebugErrorBreakpoint2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugErrorBreakpoint2
-helpviewer_keywords:
-- IDebugErrorBreakpoint2 interface
+f1_keywords: IDebugErrorBreakpoint2
+helpviewer_keywords: IDebugErrorBreakpoint2 interface
 ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6e3e17080309529ca20a2478aeb12eca1cdab319
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b37d8596a6bf4465d1146651673acbccdd441a13
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
-Essa interface representa um erro ou um ponto de interrupção de aviso, como um local inválido, uma expressão inválida ou os motivos por que o ponto de interrupção pendente não vinculado (código carregado não ainda, e assim por diante).  
+Essa interface representa um erro ou um ponto de interrupção de aviso, como um local inválido, uma expressão inválida ou as razões por que o ponto de interrupção pendente não vinculado (código de não carregado ainda, e assim por diante).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -46,10 +30,10 @@ IDebugErrorBreakpoint2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- Um mecanismo de depuração implementa essa interface como parte de seu suporte para pontos de interrupção. Essa interface é usada para relatar problemas com a ligação de um ponto de interrupção.  
+ Um mecanismo de depuração implementa essa interface como parte de seu suporte para pontos de interrupção. Essa interface é usada para relatar problemas com a associação de um ponto de interrupção.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Uma chamada para [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) obtém essa interface. Essa interface também pode ser retornada (como parte de uma lista representada por uma [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) interface) por uma chamada a [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) ou [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).  
+ Uma chamada para [GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) obtém essa interface. Essa interface também pode ser retornada (como parte de uma lista representada por um [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) interface) por uma chamada para [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) ou [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  A tabela a seguir mostra os métodos de `IDebugErrorBreakpoint2`.  

@@ -1,49 +1,47 @@
 ---
-title: "IDiaSession::getEnumTables | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSession::getEnumTables"
+title: ': Getenumtables | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::getEnumTables method
 ms.assetid: 66e0fba2-ca63-4e24-a46a-c99c7fb61dd1
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 59061e02dcfefb1e841ea5b6a8947bb1a8af4bfa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::getEnumTables
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um enumerador para todas as tabelas contidas no armazenamento de símbolo.  
+# <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
+Recupera um enumerador para todas as tabelas contidas no repositório de símbolos.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT getEnumTables (   
-   IDiaEnumTables** ppEnumTables  
+```C++  
+HRESULT getEnumTables (   
+   IDiaEnumTables** ppEnumTables  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `ppEnumTables`  
- \[out\] Retorna um [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objeto.  Use esta interface para enumerar as tabelas no armazenamento de símbolo.  
+ [out] Retorna um [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objeto. Use esta interface para enumerar as tabelas no repositório de símbolos.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Exemplo  
- Este exemplo apresenta uma função geral que usa a `getEnumTables` método para obter um objeto enumerator específico.  Se o enumerador for encontrado, a função retorna um ponteiro que pode ser convertido para a interface desejada; Caso contrário, a função retornará `NULL`.  
+## <a name="example"></a>Exemplo  
+ Este exemplo apresenta uma função geral que usa o `getEnumTables` método para obter um objeto de enumerador específico. Se o enumerador for encontrado, a função retorna um ponteiro que pode ser convertido para a interface desejada; Caso contrário, a função retornará `NULL`.  
   
-```cpp#  
+```C++  
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  
 {  
     IUnknown *pUnknown = NULL;  
@@ -69,6 +67,6 @@ IUnknown *GetTable(IDiaSession *pSession, REFIID iid)
 }  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

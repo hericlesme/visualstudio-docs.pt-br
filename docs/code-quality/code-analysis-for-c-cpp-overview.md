@@ -1,55 +1,55 @@
 ---
-title: "An&#225;lise de c&#243;digo para vis&#227;o geral do C/C++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Diretivas (#pragma), análise de código"
-  - "anotações, análise de código"
-  - "integração de compilação, análise de código"
-  - "C, análise de código"
-  - "análise de código C/C++"
-  - "C++, análise de código"
-  - "políticas de check-in, análise de código"
-  - "ferramenta de análise de código"
-  - "análise de código, C/C++"
-  - "linha de comando, análise de código"
-  - "IDE, análise de código"
-  - "diretiva pragma, análise de código"
+title: "Análise de código para visão geral do C/C++ | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- annotations, code analysis
+- build integration, code analysis
+- C/C++ code analysis
+- IDE, code analysis
+- pragma directive, code analysis
+- code analysis, C/C++
+- code analysis tool
+- command line, code analysis
+- C++, code analysis
+- check-in policies, code analysis
+- '#pragma directives, code analysis'
+- C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-caps.latest.revision: 25
-caps.handback.revision: 25
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "25"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/15/2017
 ---
-# An&#225;lise de c&#243;digo para vis&#227;o geral do C/C++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-A ferramenta de análise de código C\/C\+\+ fornece aos desenvolvedores informações sobre defeitos possíveis em seu código\-fonte C\/C\+\+.  Os erros de codificação comuns relatados pela ferramenta incluem excesso de buffer, memória não inicializada, o ponteiro nulo cancelará, e vazamentos de memória e de recurso.  
+# <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
+A ferramenta de análise de código C/C++ fornece informações para desenvolvedores sobre defeitos possíveis no seu código-fonte C/C++. Erros de codificação comuns relatados pela ferramenta estão estouros de buffer, memória não inicializada, desreferências de ponteiro nulo e perdas de memória e recursos.  
   
-## Integração de IDE \(ambiente de desenvolvimento integrado\)  
- Para fazer isso natural para que os desenvolvedores usam a ferramenta de análise, é totalmente integrado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  Durante o processo de compilação, todos os avisos gerados para o código\-fonte são exibidas na Lista de erros.  Você pode navegar no código\-fonte que causou o aviso, e você pode exibir informações adicionais sobre a causa e as possíveis soluções do problema.  
+## <a name="ide-integrated-development-environment-integration"></a>Integração de IDE (ambiente de desenvolvimento integrado)  
+ Para torná-lo natural para os desenvolvedores a usar a ferramenta de análise, ele é totalmente integrado dentro de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Durante o processo de compilação, todos os avisos gerados para o código-fonte aparecem na lista de erros. Você pode navegar para o código-fonte que causou o aviso, e você pode exibir informações adicionais sobre a causa e possíveis soluções do problema.  
   
-## Suporte de \#pragma  
- Os desenvolvedores podem usar a diretiva de `#pragma` para tratar avisos como erros; habilitar ou desabilitar, avisos e suprima avisos para linhas de código individuais.  Para obter mais informações, consulte [How to: Enable and Disable Code Analysis for Specific C\/C\+\+ Warnings](http://msdn.microsoft.com/pt-br/910b8518-71f1-4b2e-b012-70647795642a).  
+## <a name="pragma-support"></a>#pragma suporte  
+ Os desenvolvedores podem usar o `#pragma` diretiva para tratar avisos como erros; ativar ou desativar avisos e suprimir avisos para linhas individuais de código. Para obter mais informações, consulte [como: habilitar e desabilitar análise de código para avisos específicos do C/C++](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a).  
   
-## Suporte de anotação  
- As anotações melhorar a precisão da análise de código.  As anotações fornecem informações adicionais sobre condições de pré e POST em parâmetros e em tipos de retorno de função.  Para obter mais informações, consulte [Como especificar informações de código adicionais usando \_\_analysis\_assume](../Topic/How%20to:%20Specify%20Additional%20Code%20Information%20by%20Using%20__analysis_assume.md)  
+## <a name="annotation-support"></a>Suporte de anotação  
+ Anotações de melhorar a precisão da análise de código. As anotações fornecem informações adicionais sobre condições de pré e pós-em parâmetros de função e tipos de retorno. Para obter mais informações, consulte [como: especificar informações de código adicionais usando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
   
-## Ferramenta de análise de execução como parte da política de check\-in  
- Talvez você queira exigir que todos os registros do código\-fonte satisfazem determinadas políticas.  Em particular, você deseja garantir que a análise esteve executada como uma etapa de compilação local a mais recente.  Para obter mais informações sobre como habilitar uma política de check\-in de análise de código, consulte [Criando e usando políticas de check\-in de análise do código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
+## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Execute a ferramenta de análise como parte da política de check-in  
+ Você talvez queira exigem que o código de origem todos os check-ins satisfazer certas políticas. Em particular, você deseja certificar-se de que a análise foi executada como uma etapa de compilação local mais recente. Para obter mais informações sobre como habilitar uma política de check-in do analysis código, consulte [criando e usando análise de código de Check-In políticas](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
-## Integração da compilação da equipe  
- Você pode usar os recursos integrados do sistema de compilação para executar a ferramenta de análise de código como uma etapa do processo de criação de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)].  Para obter mais informações, consulte [Compilar o aplicativo](../Topic/Build%20the%20application.md).  
+## <a name="team-build-integration"></a>Integração do Team Build  
+ Você pode usar os recursos integrados de sistema de compilação para executar a ferramenta de análise de código como uma etapa do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] do processo de compilação. Para obter mais informações, consulte [Compilar o aplicativo](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
-## Suporte de linha de comando  
- A integração de adição ao valor máximo no ambiente de desenvolvimento, os desenvolvedores também podem usar a ferramenta de análise de linha de comando, conforme mostrado no seguinte exemplo:  
+## <a name="command-line-support"></a>Suporte de linha de comando  
+ Além de integração total no ambiente de desenvolvimento, os desenvolvedores também podem usar a ferramenta de análise da linha de comando, conforme mostrado no exemplo a seguir:  
   
  `C:\>cl /analyze Sample.cpp`

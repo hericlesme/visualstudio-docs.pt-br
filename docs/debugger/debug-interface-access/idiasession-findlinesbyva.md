@@ -1,54 +1,52 @@
 ---
-title: "IDiaSession::findLinesByVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSession::findLinesByVA"
+title: ': Findlinesbyva | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLinesByVA method
 ms.assetid: f647eee9-a73c-483b-9fe9-21f42e560a7b
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ba8c06066c78505d915834f2ffcc1d8c634a1c73
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLinesByVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera as informações de número de linha para linhas contidas em um intervalo de endereços especificado virtual \(VA\).  
+# <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
+Recupera as informações de número de linha para linhas contidas em um intervalo de endereço virtual especificada (VA).  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT findLinesByVA (   
-   ULONGLONG             va,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLinesByVA (   
+   ULONGLONG             va,  
+   DWORD                 length,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `va`  
- \[in\] Especifica o endereço como um VA.  
+ [in] Especifica o endereço como um VA.  
   
  `length`  
- \[in\] Especifica o número de bytes do intervalo de endereços para cobrir com esta consulta.  
+ [in] Especifica o número de bytes do intervalo de endereços para cobrir com essa consulta.  
   
  `ppResult`  
- \[out\] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todos os da linha de números que tampa o intervalo de endereços especificado.  
+ [out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todas as linha de números que abrange o intervalo de endereços especificado.  
   
-## Exemplo  
- Este exemplo mostra uma função que obtém todos os números de linha contidos em uma função usando o endereço virtual da função e o comprimento.  
+## <a name="example"></a>Exemplo  
+ Este exemplo mostra uma função que obtém todos os números de linha contidos em uma função usando o endereço virtual da função e comprimento.  
   
-```cpp#  
+```C++  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
 {  
     IDiaEnumLineNumbers* pEnum = NULL;  
@@ -64,6 +62,6 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 }  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

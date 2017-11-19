@@ -1,44 +1,29 @@
 ---
-title: "Referências de elemento (modelos do Visual Studio) | Documentos do Microsoft"
+title: "Faz referência a elemento (modelos do Visual Studio) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#References
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#References
 helpviewer_keywords:
 - <References> element [Visual Studio Templates]
 - References element [Visual Studio Templates]
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b5cd8ddd86c8a45ede87a35fc13fb064fa49ed83
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 436b5f745dc9b3b8c135ad111e6e708bbd391b4e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento de referências (Modelos do Visual Studio)
-Agrupa as referências de assembly que o modelo adiciona aos projetos.  
+Agrupa as referências de assembly que adiciona o modelo para projetos.  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -58,7 +43,7 @@ Agrupa as referências de assembly que o modelo adiciona aos projetos.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -75,10 +60,10 @@ Agrupa as referências de assembly que o modelo adiciona aos projetos.
 ## <a name="remarks"></a>Comentários  
  O `References` é um elemento filho opcional de `TemplateContent`.  
   
- O `Reference` e `References` elementos podem ser usados somente em arquivos. vstemplate que têm um `Type` valor do atributo `Item`.  
+ O `Reference` e `References` elementos só podem ser usados em arquivos. vstemplate que têm um `Type` valor de atributo `Item`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona as referências aos assemblies System. dll e System.Data.dll.  
+ O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona referências aos assemblies System. dll e System.Data.dll.  
   
 ```  
 <TemplateContent>  

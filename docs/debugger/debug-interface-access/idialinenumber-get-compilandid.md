@@ -1,44 +1,42 @@
 ---
-title: "IDiaLineNumber::get_compilandId | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaLineNumber::get_compilandId"
+title: ': Get_compilandid | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber::get_compilandId method
 ms.assetid: 2cd6f551-8091-47c7-803f-3f79a766a211
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7db71923d924d9d19415a3311b75e3e15618a1f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber::get_compilandId
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um identificador exclusivo para o compiland que contribuiu com esta linha.  
+# <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
+Recupera um identificador exclusivo para o compiland que contribuiu com essa linha.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_compilandId (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_compilandId (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna `DWORD` que contém o identificador exclusivo para o compiland que contribuiu com esta linha.  
+ [out] Retorna `DWORD` que contém o identificador exclusivo para o compiland que contribuiu com essa linha.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não há suporte para esta propriedade.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

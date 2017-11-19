@@ -1,48 +1,33 @@
 ---
-title: Conceitos do depurador | Documentos do Microsoft
+title: Conceitos do depurador | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugging [Debugging SDK]
+helpviewer_keywords: debugging [Debugging SDK]
 ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9194a75d5d3da2b9ac2872c384c4f02df9658807
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8e928d396db2029bc4d2e659c869fd74e0df3191
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugger-concepts"></a>Conceitos do depurador
-Para criar o pacote de depuração do Visual Studio, você precisa estar familiarizado com os conceitos de arquiteturas usados na criação do pacote.  
+Para criar o pacote de depuração do Visual Studio, você precisa estar familiarizado com os conceitos de arquitetura usados na criação do pacote.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Sessão de depuração](../../extensibility/debugger/debug-session.md)  
  Explica a função de uma sessão na arquitetura de depuração.  
   
  [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)  
- Define que um servidor está em termos de depuração de arquitetura, em termos de abstratos e físicos.  
+ Define um servidor que está em termos de depuração de arquitetura, em termos de abstract e físicos.  
   
  [Fornecedores de porta](../../extensibility/debugger/port-suppliers.md)  
  Define o que é um fornecedor de porta em termos de arquitetura de depuração.  
@@ -54,7 +39,7 @@ Para criar o pacote de depuração do Visual Studio, você precisa estar familia
  Define um processo que está em termos de arquitetura de depuração.  
   
  [Nós de programa](../../extensibility/debugger/program-nodes.md)  
- Define o nó em termos de depuração de arquitetura, incluindo como ele pode identificar em si e o processo está em execução no programa.  
+ Define um nó de programa em termos de depuração de arquitetura, incluindo como ele pode identificar a mesmo e o processo de execução no.  
   
  [Programas](../../extensibility/debugger/programs.md)  
  Define um programa em termos de arquitetura de depuração.  
@@ -62,8 +47,8 @@ Para criar o pacote de depuração do Visual Studio, você precisa estar familia
  [Threads](../../extensibility/debugger/threads.md)  
  Define as características de threads em termos de arquitetura de depuração.  
   
- [Quadros de pilha](../../extensibility/debugger/stack-frames.md)  
- Define um quadro de pilha em termos de arquitetura de depuração. Um quadro de pilha é uma abstração de uma pilha que fornece o contexto de execução de um thread.  
+ [Registros de ativação](../../extensibility/debugger/stack-frames.md)  
+ Define um quadro de pilha em termos de arquitetura de depuração. Um quadro de pilhas é uma abstração de uma pilha que fornece o contexto de execução de um thread.  
   
  [Módulos](../../extensibility/debugger/modules.md)  
  Define um módulo, em termos de arquitetura, como um contêiner físico de código, como um arquivo executável ou uma DLL de depuração.  
@@ -72,11 +57,11 @@ Para criar o pacote de depuração do Visual Studio, você precisa estar familia
  Define os três tipos de pontos de interrupção, pendente, limite e erro — em termos de arquitetura de depuração.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Contextos de depurador](../../extensibility/debugger/debugger-contexts.md)  
- Explica como o mecanismo de depuração (DE) opera simultaneamente no código, documentação e contextos de avaliação de expressão. Descreve, para cada um dos três contextos, o local, posição ou avaliação relevante para ele.  
+ [Contextos do depurador](../../extensibility/debugger/debugger-contexts.md)  
+ Explica como o mecanismo de depuração (DE) simultaneamente opera no código, documentação e contextos de avaliação de expressão. Descreve, para cada um dos três contextos, local, posição ou avaliação relevante a ele.  
   
  [Componentes do depurador](../../extensibility/debugger/debugger-components.md)  
- Fornece uma visão geral sobre os componentes de depuração do Visual Studio, que incluem o mecanismo de depuração (DE), o avaliador de expressão (EE) e o manipulador de símbolo (SH).  
+ Fornece uma visão geral dos componentes de depuração do Visual Studio, que incluem o mecanismo de depuração (DE), o avaliador de expressão (EE) e o manipulador de símbolo (SH).  
   
  [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)  
  Contém links para várias tarefas de depuração, como iniciar um programa e avaliar expressões.

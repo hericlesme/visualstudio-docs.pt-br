@@ -1,40 +1,24 @@
 ---
-title: NATIVE_ADDRESS | Documentos do Microsoft
+title: NATIVE_ADDRESS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- NATIVE_ADDRESS
-helpviewer_keywords:
-- NATIVE_ADDRESS structure
+f1_keywords: NATIVE_ADDRESS
+helpviewer_keywords: NATIVE_ADDRESS structure
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7ba8a892c8137e7239130747cd2d99de55402278
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0fba67a73adb913e033f18288f0920b2e2da0b44
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 Esta estrutura representa um endereço nativo.  
@@ -47,18 +31,18 @@ typedef struct _tagNATIVE_ADDRESS {
 } NATIVE_ADDRESS;  
 ```  
   
-```c#  
+```csharp  
 public struct NATIVE_ADDRESS {  
    public uint unknown;  
 }  
 ```  
   
 ## <a name="terms"></a>Termos  
- desconhecido  
- O endereço nativo (o significado disso depende de tempo de execução e o sistema operacional).  
+ Desconhecido  
+ O endereço nativo (o significado deste depende do tempo de execução e o sistema operacional).  
   
 ## <a name="remarks"></a>Comentários  
- Essa estrutura é parte da união no [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo o `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_NATIVE` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
+ Essa estrutura é parte da união no [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo do `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_NATIVE` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: sh.h  

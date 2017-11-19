@@ -1,47 +1,31 @@
 ---
-title: IDebugExpression2::EvaluateSync | Documentos do Microsoft
+title: IDebugExpression2::EvaluateSync | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExpression2::EvaluateSync
-helpviewer_keywords:
-- IDebugExpression2::EvaluateSync
+f1_keywords: IDebugExpression2::EvaluateSync
+helpviewer_keywords: IDebugExpression2::EvaluateSync
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
-caps.latest.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f9a3117bf8cf90a4d883f61cd2703e76762dd23e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5ddc090e827b0a94a6534a0c4e625299cbc2ef5a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Esse método avalia a expressão de forma síncrona.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT EvaluateSync(   
    EVALFLAGS             dwFlags,  
    DWORD                 dwTimeout,  
@@ -50,7 +34,7 @@ HRESULT EvaluateSync(
 );  
 ```  
   
-```c#  
+```csharp  
 int EvaluateSync(  
    enum_EVALFLAGS       dwFlags,   
    uint                 dwTimeout,   
@@ -64,7 +48,7 @@ int EvaluateSync(
  [in] Uma combinação de sinalizadores do [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeração que controlam a avaliação da expressão.  
   
  `dwTimeout`  
- [in] Tempo máximo, em milissegundos, para aguardar antes de retornar desse método. Use `INFINITE` para aguardar indefinidamente.  
+ [in] Tempo máximo, em milissegundos, de espera antes de retornar desse método. Use `INFINITE` aguardar indefinidamente.  
   
  `pExprCallback`  
  [in] Esse parâmetro é sempre um valor nulo.  
@@ -73,20 +57,20 @@ int EvaluateSync(
  [out] Retorna o [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que contém o resultado da avaliação de expressão.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Alguns códigos de erro comum são:  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro. Alguns códigos de erro comuns são:  
   
 |Erro|Descrição|  
 |-----------|-----------------|  
 |E_EVALUATE_BUSY_WITH_EVALUATION|Outra expressão atualmente está sendo avaliada, e não há suporte para a avaliação da expressão simultâneas.|  
-|E_EVALUATE_TIMEOUT|Avaliação expirou.|  
+|E_EVALUATE_TIMEOUT|Avaliação atingiu o tempo limite.|  
   
 ## <a name="remarks"></a>Comentários  
- Para avaliação síncrona, não é necessário enviar um evento ao Visual Studio após a conclusão da avaliação.  
+ Para avaliação síncrona, não é necessário enviar um evento para o Visual Studio após a conclusão da avaliação.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra como implementar esse método para um simples `CExpression` objeto que implementa o [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  
                                   DWORD dwTimeout,  
                                   IDebugEventCallback2* pExprCallback,  

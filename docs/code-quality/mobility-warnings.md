@@ -1,35 +1,34 @@
 ---
-title: "Avisos de mobilidade | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.MobilityRules"
-helpviewer_keywords: 
-  - "avisos da análise de código gerenciado, avisos de mobilidade"
-  - "avisos de mobilidade"
-  - "avisos de mobilidade"
+title: Avisos de mobilidade | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.MobilityRules
+helpviewer_keywords:
+- managed code analysis warnings, mobility warnings
+- mobility warnings
+- warnings, mobility
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
-caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7fdcff36e689961200497298f3360fc0efb27f0a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Avisos de mobilidade
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Os avisos da portabilidade dão suporte ao consumo de energia eficiente.  
+# <a name="mobility-warnings"></a>Avisos de mobilidade
+Avisos de mobilidade suporte para o uso eficiente de energia.  
   
-## Nesta seção  
+## <a name="in-this-section"></a>Nesta seção  
   
 |Regra|Descrição|  
-|-----------|---------------|  
-|[CA1600: não usar a prioridade de processo ociosa](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Não defina a prioridade de processamento para executar em estado ocioso.  Os processos que têm System.Diagnostics.ProcessPriorityClass.Idle ocuparão a CPU quando seria de outra forma ociosa, e podem bloquear consequentemente o suporte.|  
-|[CA1601: não usar temporizadores que impeçam alterações no estado de energia](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|a atividade periódica de alta frequência pelo ocupação e interferirá com os timers ocioso da placa\-mãe salvando que desativa a exibição e os discos rígidos.|
+|----------|-----------------|  
+|[CA1600: não usar a prioridade de processo ociosa](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Não defina a prioridade do processo como Ocioso. Os processos que têm System.Diagnostics.ProcessPriorityClass.Idle ocuparão a CPU quando estariam ociosos e, assim, bloquearão a espera.|  
+|[CA1601: não usar temporizadores que impeçam alterações no estado de energia](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|A atividade periódica de alta frequência manterá a CPU ocupada e interferirá nos temporizadores ociosos que economizam energia e desligam monitores e discos rígidos.|

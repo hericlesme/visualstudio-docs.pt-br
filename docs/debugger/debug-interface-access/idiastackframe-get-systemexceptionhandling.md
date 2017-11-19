@@ -1,50 +1,48 @@
 ---
-title: "IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackFrame::get_systemExceptionHandling"
+title: IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackFrame::get_systemExceptionHandling
 ms.assetid: c76cf265-dea0-4159-883f-32b50bbef044
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 29fb7d0493991e2cfcfe60b474bce1ff749c38e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackFrame::get_systemExceptionHandling
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um sinalizador que indica se a manipulação de exceção do sistema está em vigor.  
+# <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
+Recupera um sinalizador que indica se o tratamento de exceção do sistema está em vigor.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_systemExceptionHandling (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_systemExceptionHandling (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna `TRUE` se a manipulação de exceção do sistema está em vigor para este quadro. Caso contrário, retornará `FALSE`.  
+ [out] Retorna `TRUE` se o tratamento de exceção do sistema está em vigor para este quadro; caso contrário, retornará `FALSE`.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se a propriedade não é suportada.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a propriedade não é suportada. Caso contrário, retornará um código de erro.  
   
-## Comentários  
- Manipulação de exceção do sistema também é conhecido como manipulação de exceção estruturada.  Isso não é a mesma coisa que a manipulação de exceção do C\+\+.  
+## <a name="remarks"></a>Comentários  
+ Tratamento de exceção do sistema também é conhecida como tratamento estruturado de exceções. Isso não é a mesma coisa que o tratamento de exceções C++.  
   
- Para determinar se a manipulação de exceção de C\+\+ estará em vigor, chame o [IDiaStackFrame::get\_cplusplusExceptionHandling](../Topic/IDiaStackFrame::get_cplusplusExceptionHandling.md) método.  
+ Para determinar se o tratamento de exceções C++ está em vigor, chame o [: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) método.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [IDiaStackFrame::get\_cplusplusExceptionHandling](../Topic/IDiaStackFrame::get_cplusplusExceptionHandling.md)
+ [IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)

@@ -1,47 +1,31 @@
 ---
-title: FRAMEINFO | Documentos do Microsoft
+title: FRAMEINFO | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- FRAMEINFO
-helpviewer_keywords:
-- FRAMEINFO structure
+f1_keywords: FRAMEINFO
+helpviewer_keywords: FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 77b2e6c80628cb54c7c77cc9dac4bf7be1f3d193
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 31f87c5261db32e19c9382d4d9cd95f4081cbe19
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Descreve um quadro de pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct tagFRAMEINFO {   
    FRAMEINFO_FLAGS    m_dwValidFields;  
    BSTR               m_bstrFuncName;  
@@ -59,7 +43,7 @@ typedef struct tagFRAMEINFO {
 } FRAMEINFO;  
 ```  
   
-```c#  
+```csharp  
 public struct FRAMEINFO {   
    public uint              m_dwValidFields;  
    public string            m_bstrFuncName;  
@@ -79,7 +63,7 @@ public struct FRAMEINFO {
   
 ## <a name="members"></a>Membros  
  m_dwValidFields  
- Uma combinação de sinalizadores do [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeração que especifica quais campos estão preenchidos.  
+ Uma combinação de sinalizadores do [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeração que especifica quais campos são preenchidos.  
   
  m_bstrFuncName  
  O nome da função associado ao quadro de pilha.  
@@ -94,7 +78,7 @@ public struct FRAMEINFO {
  O idioma no qual a função é implementada.  
   
  m_bstrModule  
- O nome do módulo associado com o quadro de pilha.  
+ O nome do módulo associado ao quadro de pilha.  
   
  m_addrMin  
  O endereço de pilha física mínimo.  
@@ -103,19 +87,19 @@ public struct FRAMEINFO {
  O endereço físico máximo da pilha.  
   
  m_pFrame  
- O [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa esse quadro de pilha.  
+ O [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa deste quadro de pilhas.  
   
  m_pFrame  
- O [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa o módulo que contém esse quadro de pilha.  
+ O [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa o módulo que contém este quadro de pilha.  
   
  m_fHasDebugInfo  
- Diferente de zero (`TRUE`) se houver informações de depuração em determinado quadro.  
+ Diferente de zero (`TRUE`) se houver informações de depuração no quadro especificado.  
   
  m_fHasDebugInfo  
- Diferente de zero (`TRUE`) se o quadro de pilha é associado com o código que não é mais válido.  
+ Diferente de zero (`TRUE`) se o quadro de pilhas é associado com o código que não é mais válido.  
   
  m_fHasDebugInfo  
- Diferente de zero (`TRUE`) se o quadro de pilha é anotado, o Gerenciador de sessão de depuração (SDM).  
+ Diferente de zero (`TRUE`) se o quadro de pilhas é anotado, o Gerenciador de sessão de depuração (SDM).  
   
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é passada para o [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) método a ser preenchido. Essa estrutura também está contida em uma lista que está contida no [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface que, por sua vez, é retornado de uma chamada para o [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) método.  

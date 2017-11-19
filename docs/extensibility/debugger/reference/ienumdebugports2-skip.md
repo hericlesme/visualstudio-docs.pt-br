@@ -1,53 +1,37 @@
 ---
-title: IEnumDebugPorts2::Skip | Documentos do Microsoft
+title: IEnumDebugPorts2::Skip | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugPorts2::Skip
-helpviewer_keywords:
-- IEnumDebugPorts2::Skip
+f1_keywords: IEnumDebugPorts2::Skip
+helpviewer_keywords: IEnumDebugPorts2::Skip
 ms.assetid: a837383f-7b39-4e06-b336-f1715b073dbe
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 65862441a90852f539367099cc8d9d1f128ca600
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a418713e9b1410145abaab9d048cdd1107313d0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 Ignora o número especificado de elementos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
    ULONG celt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Skip(  
    uint celt  
 );  

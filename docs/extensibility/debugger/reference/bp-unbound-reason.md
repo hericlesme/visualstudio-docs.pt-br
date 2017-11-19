@@ -1,47 +1,31 @@
 ---
-title: BP_UNBOUND_REASON | Documentos do Microsoft
+title: BP_UNBOUND_REASON | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_UNBOUND_REASON
-helpviewer_keywords:
-- BP_UNBOUND_REASON enumeration
+f1_keywords: BP_UNBOUND_REASON
+helpviewer_keywords: BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c7cc94a3ef2599b5b39fc8c5335a5a065146ef27
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: dfa3ab5ee6d38da45bd69cf4a9e49a86035d1252
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Fornece o motivo de que um ponto de interrupção foi desassociado.  
+Fornece o motivo pelo qual que um ponto de interrupção foi desassociado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
@@ -51,7 +35,7 @@ enum enum_BP_UNBOUND_REASON {
 typedef DWORD BP_UNBOUND_REASON;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
@@ -68,10 +52,10 @@ public enum enum_BP_UNBOUND_REASON {
  O código que contém o ponto de interrupção foi descarregado.  
   
  BPUR_BREAKPOINT_REBIND  
- O ponto de interrupção tem sido se recuperar para um local diferente. Isso pode acontecer após editar e continuar as operações quando move o ponto de interrupção ou quando o ponto de interrupção é associado a um arquivo com um caminho que não é mais válido.  
+ O ponto de interrupção foram religado para um local diferente. Isso pode ocorrer depois de editar e continuar as operações quando move o ponto de interrupção, ou quando o ponto de interrupção está associado a um arquivo com um caminho que não é mais válido.  
   
  BPUR_ BREAKPOINT_ERROR  
- O ponto de interrupção é considerado erro depois que ele está vinculado. Isso acontece para pontos de interrupção gerenciados cujas condições não são mais válidas.  
+ O ponto de interrupção é determinado para estar em erro depois que ele está associado. Isso acontece para pontos de interrupção gerenciados cujas condições não são mais válidas.  
   
 ## <a name="remarks"></a>Comentários  
  Retornado pelo [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.  

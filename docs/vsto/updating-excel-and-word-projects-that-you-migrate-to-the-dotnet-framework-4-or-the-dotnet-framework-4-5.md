@@ -1,63 +1,59 @@
 ---
-title: Updating Excel and Word Projects that You Migrate to the .NET Framework 4 or the .NET Framework 4.5 | Microsoft Docs
+title: "Atualizando projetos do Excel e Word que você migrar para o .NET Framework 4 ou o .NET Framework 4.5 | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - VB
 - CSharp
-helpviewer_keywords:
-- Office projects [Office development in Visual Studio], migrating to .NET Framework 4
+helpviewer_keywords: Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 ms.assetid: 282c8876-fd49-462e-875b-4a0a79ad951c
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9c5d38f710d879ba6ee94a58c4b42450638ff119
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: 7d3783eb2bd87decc0e01bb589b08f3d0c05803e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Updating Excel and Word Projects that You Migrate to the .NET Framework 4 or the .NET Framework 4.5
-  If you have an Excel or Word project that uses any of the following features, you must modify your code if the target framework is changed to the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later:  
+# <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualizando projetos do Excel e do Word migrados para o .NET Framework 4 ou o .NET Framework 4.5
+  Se você tiver um projeto do Excel ou Word que usa qualquer um dos seguintes recursos, você deve modificar seu código se a estrutura de destino for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior:  
   
--   [GetVstoObject and HasVstoObject methods](#GetVstoObject)  
+-   [Métodos GetVstoObject e HasVstoObject](#GetVstoObject)  
   
--   [Generated classes in document-level projects](#generatedclasses)  
+-   [Classes geradas no nível de documento](#generatedclasses)  
   
--   [Windows Forms controls on documents](#winforms)  
+-   [Controles de Windows Forms em documentos](#winforms)  
   
--   [Word content control events](#ccevents)  
+-   [Eventos de controle de conteúdo do Word](#ccevents)  
   
--   [OLEObject and OLEControl classes](#ole)  
+-   [Classes OLEObject e OLEControl](#ole)  
   
--   [Controls.Item(Object) property](#itemproperty)  
+-   [Propriedade Controls.Item(Object)](#itemproperty)  
   
--   [Collections that derive from CollectionBase](#collections)  
+-   [Coleções que derivam de CollectionBase](#collections)  
   
- You must also remove the Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute and references to the Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy class from Excel projects that are retargeted to the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later. Visual Studio doesn't remove this attribute or the class reference for you.  
+ Você também deve remover o Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute e referências à classe Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy de projetos do Excel que são redirecionadas para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. O Visual Studio não remove esse atributo ou a referência de classe para você.  
   
-## <a name="removing-the-excellocale1033-attribute-from-excel-projects"></a>Removing the ExcelLocale1033 Attribute From Excel Projects  
- The Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute has been removed from the portion of the Visual Studio 2010 Tools for Office Runtime that is used for solutions that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later. The common language runtime (CLR) in the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] and later always passes locale ID 1033 to the Excel object model, and you can no longer use this attribute to disable this behavior. For more information, see [Globalization and Localization of Excel Solutions](../vsto/globalization-and-localization-of-excel-solutions.md).  
+## <a name="removing-the-excellocale1033-attribute-from-excel-projects"></a>Removendo o atributo ExcelLocale1033 de projetos do Excel  
+ O Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute foi removido da parte do Visual Studio 2010 Tools para Office Runtime que é usado para soluções que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. O common language runtime (CLR) no [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e posteriormente sempre passa localidade 1033 ID para o modelo de objeto do Excel e você não pode usar esse atributo para desabilitar esse comportamento. Para obter mais informações, consulte [globalização e localização de soluções do Excel](../vsto/globalization-and-localization-of-excel-solutions.md).  
   
-#### <a name="to-remove-the-excellocale1033attribute"></a>To remove the ExcelLocale1033Attribute  
+#### <a name="to-remove-the-excellocale1033attribute"></a>Para remover o ExcelLocale1033Attribute  
   
-1.  With the project open in Visual Studio, open **Solution Explorer**.  
+1.  Com o projeto aberto no Visual Studio, abra **Gerenciador de soluções**.  
   
-2.  Under the **Properties** node (for C#) or the **My Project** node (for Visual Basic), double-click the AssemblyInfo code file to open it in the code editor.  
+2.  Sob o **propriedades** nó (c#) ou o **meu projeto** nó (para Visual Basic), clique duas vezes o arquivo de código AssemblyInfo para abri-lo no editor de códigos.  
   
     > [!NOTE]  
-    >  In Visual Basic projects, you must click the **Show All Files** button in **Solution Explorer** to see the AssemblyInfo code file.  
+    >  Em projetos do Visual Basic, você deve clicar no **Mostrar todos os arquivos** no botão **Solution Explorer** para ver o arquivo de código AssemblyInfo.  
   
-3.  Locate the Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute and either remove it from the file or comment it out.  
+3.  Localize o Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute e remova-o arquivo ou comente-o.  
   
     ```vb  
     <Assembly: ExcelLocale1033Proxy(True)>  
@@ -67,16 +63,16 @@ ms.lasthandoff: 08/28/2017
     [assembly: ExcelLocale1033Proxy(true)]  
     ```  
   
-## <a name="removing-a-reference-to-the-excellocal1033proxy-class"></a>Removing a Reference to the ExcelLocal1033Proxy class  
- Projects that were created by using Microsoft Visual Studio 2005 Tools for the Microsoft Office System instantiate the Excel <xref:Microsoft.Office.Interop.Excel.Application> object by using the Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy class. This class has been removed from the portion of the Visual Studio 2010 Tools for Office Runtime that's used for solutions that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later. Therefore, you must remove or comment out the line of code that references this class.  
+## <a name="removing-a-reference-to-the-excellocal1033proxy-class"></a>Removendo uma referência à classe ExcelLocal1033Proxy  
+ Projetos que foram criados usando o Microsoft Visual Studio 2005 Tools para o Microsoft Office System instanciar o Excel <xref:Microsoft.Office.Interop.Excel.Application> objeto usando a classe Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy. Essa classe foi removida da parte do Visual Studio 2010 Tools para Office Runtime que usou para soluções que têm como destino o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Portanto, você deve remover ou comentar a linha de código que faz referência a essa classe.  
   
-#### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>To remove the reference to the ExcelLocal1033Proxy class  
+#### <a name="to-remove-the-reference-to-the-excellocal1033proxy-class"></a>Para remover a referência à classe ExcelLocal1033Proxy  
   
-1.  Open the project in Visual Studio, and then open **Solution Explorer**.  
+1.  Abra o projeto no Visual Studio e abra **Gerenciador de soluções**.  
   
-2.  In **Solution Explorer**, open the shortcut menu for ThisAddin.cs (for C#) or ThisAddin.vb (for Visual Basic), and then choose **View Code**.  
+2.  Em **Solution Explorer**, abra o menu de atalho para ThisAddin.cs (para c#) ou ThisAddIn (para Visual Basic) e, em seguida, escolha **Exibir código**.  
   
-3.  In the Code Editor, in the `VSTO generated code` region, remove or comment out the following line of code.  
+3.  No Editor de códigos, no `VSTO generated code` região, remover ou comentar a seguinte linha de código.  
   
     ```vb  
     Me.Application = CType(Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy.Wrap(GetType(Excel.Application), Me.Application), Excel.Application)  
@@ -88,8 +84,8 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-##  <a name="GetVstoObject"></a> Updating Code that Uses the GetVstoObject and HasVstoObject Methods  
- In projects that target the .NET Framework 3.5, the GetVstoObject or HasVstoObject methods are available as extension methods on one of the following native objects in your project: <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, or <xref:Microsoft.Office.Interop.Excel.ListObject>. When you call these methods, you do not need to pass a parameter. The following code example demonstrates how to use the GetVstoObject method in a Word VSTO Add-in that targets the .NET Framework 3.5.  
+##  <a name="GetVstoObject"></a>Atualizando o código que usa os métodos HasVstoObject e GetVstoObject  
+ Em projetos direcionados ao .NET Framework 3.5, os métodos GetVstoObject ou HasVstoObject estão disponíveis como métodos de extensão em um dos seguintes objetos nativo em seu projeto: <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, ou <xref:Microsoft.Office.Interop.Excel.ListObject>. Quando você chamar esses métodos, você não precisa passar um parâmetro. O exemplo de código a seguir demonstra como usar o método GetVstoObject em um palavra VSTO suplemento que tem como alvo o .NET Framework 3.5.  
   
 ```vb  
 Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _  
@@ -101,9 +97,9 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
     Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject();  
 ```  
   
- In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, you must modify your code to access these methods in one of the following ways:  
+ Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve modificar seu código para acessar esses métodos em uma das seguintes maneiras:  
   
--   You can still access these methods as extension methods on <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, or <xref:Microsoft.Office.Interop.Excel.ListObject> objects. However, you must now pass the object returned by the Globals.Factory property to these methods.  
+-   Você ainda pode acessar esses métodos como métodos de extensão em <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Excel.Workbook>, <xref:Microsoft.Office.Interop.Excel.Worksheet>, ou <xref:Microsoft.Office.Interop.Excel.ListObject> objetos. No entanto, agora você deve passar o objeto retornado pela propriedade Globals.Factory para esses métodos.  
   
     ```vb  
     Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _  
@@ -115,7 +111,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
         Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject(Globals.Factory);  
     ```  
   
--   You can alternatively access these methods on the object that is returned by the Globals.Factory property. When you access these methods in this way, you must pass the native object that you want to extend to the method.  
+-   Como alternativa, você pode acessar esses métodos no objeto que é retornado pela propriedade Globals.Factory. Quando você acessa esses métodos dessa forma, você deve passar o objeto nativo que você deseja estender para o método.  
   
     ```vb  
     Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _  
@@ -127,10 +123,10 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
         Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);  
     ```  
   
- For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Para obter mais informações, consulte [Estendendo documentos do Word e pastas de trabalho do Excel no suplemento do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-##  <a name="generatedclasses"></a> Updating Code that Uses Instances of the Generated Classes in Document-Level Projects  
- In document-level projects that target the .NET Framework 3.5, the generated classes in the projects derive from the following classes in the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:  
+##  <a name="generatedclasses"></a>Atualizando o código que usa instâncias das Classes geradas em projetos no nível de documento  
+ Em projetos de nível de documento que o .NET Framework 3.5 de destino, as classes geradas nos projetos derivam as seguintes classes no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:  
   
 -   `ThisDocument`: <xref:Microsoft.Office.Tools.Word.Document>  
   
@@ -140,7 +136,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
 -   `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, the types in the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] listed above are interfaces, instead of classes. The generated classes in projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later derive from the following new classes in the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:  
+ Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, os tipos no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] listadas acima são interfaces, em vez de classes. Classes gerado em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior derivam as seguintes classes de novo no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:  
   
 -   `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>  
   
@@ -150,9 +146,9 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
 -   `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheetBase>  
   
- If code in your project refers to an instance of one of the generated classes as the base class that it derives from, you must modify the code.  
+ Se o código em seu projeto faz referência a uma instância de uma das classes geradas como a classe base que deriva de, você deve modificar o código.  
   
- For example, in an Excel Workbook project that targets the .NET Framework 3.5, you might have a helper method that performs some work on instances of the generated `Sheet`*n* classes in your project.  
+ Por exemplo, em um projeto de pasta de trabalho do Excel que tem como alvo o .NET Framework 3.5, você pode ter um método auxiliar que executa algum trabalho em instâncias do gerado `Sheet`  *n*  classes no seu projeto.  
   
 ```vb  
 Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.Worksheet)  
@@ -167,9 +163,9 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 }  
 ```  
   
- If you retarget the project to the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, you must make one of the following changes to your code:  
+ Se você redirecionar o projeto para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve fazer uma das seguintes alterações no seu código:  
   
--   Modify any code that calls the `DoSomethingToSheet` method to pass the <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Base%2A> property of a <xref:Microsoft.Office.Tools.Excel.WorksheetBase> object in your project. This property returns a <xref:Microsoft.Office.Tools.Excel.Worksheet> object.  
+-   Modificar qualquer código que chama o `DoSomethingToSheet` método para passar o <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Base%2A> propriedade de um <xref:Microsoft.Office.Tools.Excel.WorksheetBase> objeto em seu projeto. Essa propriedade retorna um <xref:Microsoft.Office.Tools.Excel.Worksheet> objeto.  
   
     ```vb  
     DoSomethingToSheet(Globals.Sheet1.Base)  
@@ -179,7 +175,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     DoSomethingToSheet(Globals.Sheet1.Base);  
     ```  
   
--   Modify the `DoSomethingToSheet` method parameter to expect a <xref:Microsoft.Office.Tools.Excel.WorksheetBase> object instead.  
+-   Modificar o `DoSomethingToSheet` parâmetro do método esperar um <xref:Microsoft.Office.Tools.Excel.WorksheetBase> do objeto em vez disso.  
   
     ```vb  
     Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.WorksheetBase)  
@@ -194,21 +190,21 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     }  
     ```  
   
-##  <a name="winforms"></a> Updating Code that Uses Windows Forms Controls on Documents  
- You must add a **using** (C#) or **Imports** (Visual Basic) statement for the <xref:Microsoft.Office.Tools.Excel> or <xref:Microsoft.Office.Tools.Word> namespace to the top of any code file that uses the Controls property to add Windows Forms controls to the document or worksheet programmatically.  
+##  <a name="winforms"></a>Atualizar o código que usa o Windows Forms a controles em documentos  
+ Você deve adicionar um **usando** (c#) ou **Imports** declaração (Visual Basic) para o <xref:Microsoft.Office.Tools.Excel> ou <xref:Microsoft.Office.Tools.Word> namespace para a parte superior de qualquer arquivo de código que usa a propriedade de controles para adicionar o Windows Forms controles para o documento ou a planilha programaticamente.  
   
- In projects that target the .NET Framework 3.5, the methods that add Windows Forms controls (such as the AddButton method) are defined in the <xref:Microsoft.Office.Tools.Excel.ControlCollection> and <xref:Microsoft.Office.Tools.Word.ControlCollection> classes.  
+ Em projetos direcionados ao .NET Framework 3.5, os métodos que adicionar controles de formulários do Windows (como o método AddButton) são definidos no <xref:Microsoft.Office.Tools.Excel.ControlCollection> e <xref:Microsoft.Office.Tools.Word.ControlCollection> classes.  
   
- In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, these methods are extension methods that are available on the Controls property. To use these extension methods, the code file in which you use the methods must have a **using** or **Imports** statement for the <xref:Microsoft.Office.Tools.Excel> or <xref:Microsoft.Office.Tools.Word> namespace. This statement is generated automatically in new projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later. However, this statement is not added automatically in projects that target the .NET Framework 3.5, so you must add it when you retarget the project.  
+ Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou versões posteriores, esses métodos são os métodos de extensão que estão disponíveis na propriedade de controles. Para usar esses métodos de extensão, o arquivo de código que você pode usar os métodos deve ter uma **usando** ou **Imports** instrução para o <xref:Microsoft.Office.Tools.Excel> ou <xref:Microsoft.Office.Tools.Word> namespace. Essa instrução é gerada automaticamente em novos projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. No entanto, essa instrução não é adicionada automaticamente em projetos direcionados ao .NET Framework 3.5, você deve adicioná-lo ao redirecionar o projeto.  
   
- For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-##  <a name="ccevents"></a> Updating Code that Handles Word Content Control Events  
- In projects that target the .NET Framework 3.5, events of Word content controls are handled by the generic <xref:System.EventHandler%601> delegate. In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, these events are handled by other delegates.  
+##  <a name="ccevents"></a>Atualizando o código que manipula eventos de controle de conteúdo do Word  
+ Em projetos direcionados ao .NET Framework 3.5, eventos de controles de conteúdo do Word são manipulados pelo genérica <xref:System.EventHandler%601> delegate. Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, esses eventos são tratados por outros delegados.  
   
- The following table lists the Word content control events and the delegates that are associated with them in projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later.  
+ A tabela a seguir lista os eventos de controle de conteúdo do Word e delegados que estão associados com eles em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.  
   
-|Event|Delegate to use in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] and later projects|  
+|Evento|Delegado a ser usado em [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|  
 |-----------|---------------------------------------------------------------------------------------------------|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|  
@@ -217,30 +213,30 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting>|<xref:Microsoft.Office.Tools.Word.ContentControlExitingEventHandler>|  
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlStoreUpdatingEventHandler>|  
   
-##  <a name="ole"></a> Updating Code that Uses the OLEObject and OLEControl Classes  
- In projects that target the .NET Framework 3.5, you can add custom controls (such as Windows Forms user controls) to a document or worksheet by using the Microsoft.Office.Tools.Excel.OLEObject and Microsoft.Office.Tools.Word.OLEControl classes.  
+##  <a name="ole"></a>Atualizando o código que usa as Classes de OLEControl e OLEObject  
+ Em projetos direcionados ao .NET Framework 3.5, você pode adicionar controles personalizados (por exemplo, controles de usuário do Windows Forms) para um documento ou a planilha usando as classes Microsoft.Office.Tools.Excel.OLEObject e Microsoft.Office.Tools.Word.OLEControl.  
   
- In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, these classes have been replaced by the <xref:Microsoft.Office.Tools.Excel.ControlSite> and <xref:Microsoft.Office.Tools.Word.ControlSite> interfaces. You must modify code that refers to Microsoft.Office.Tools.Excel.OLEObject and Microsoft.Office.Tools.Word.OLEControl to instead refer to <xref:Microsoft.Office.Tools.Excel.ControlSite> and <xref:Microsoft.Office.Tools.Word.ControlSite>. Other than the new names, these controls behave the same way that they do in projects that target the .NET Framework 3.5.  
+ Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, essas classes foram substituídas pelo <xref:Microsoft.Office.Tools.Excel.ControlSite> e <xref:Microsoft.Office.Tools.Word.ControlSite> interfaces. Você deve modificar o código que se refere a Microsoft.Office.Tools.Excel.OLEObject e Microsoft.Office.Tools.Word.OLEControl em vez disso, consulte <xref:Microsoft.Office.Tools.Excel.ControlSite> e <xref:Microsoft.Office.Tools.Word.ControlSite>. Diferente de novos nomes, esses controles se comportam da mesma maneira que em projetos direcionados ao .NET Framework 3.5.  
   
- For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-##  <a name="itemproperty"></a> Updating Code that Uses the Controls.Item(Object) Property  
- In projects that target the .NET Framework 3.5, you can use the Item(Object) property of the Microsoft.Office.Tools.Word.Document.Controls or Microsoft.Office.Tools.Excel.Worksheet.Controls collection to determine whether a document or worksheet has a specified control.  
+##  <a name="itemproperty"></a>Atualizando o código que usa a propriedade Controls.Item(Object)  
+ Em projetos direcionados ao .NET Framework 3.5, você pode usar a propriedade Item(Object) da coleção Microsoft.Office.Tools.Word.Document.Controls ou Microsoft.Office.Tools.Excel.Worksheet.Controls para determinar se um documento ou planilha tem um controle especificado.  
   
- In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, the Item(Object) property has been removed from these collections. To determine whether a document or worksheet contains a specified control, use the Contains(System.Object) method of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> or <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> collection instead.  
+ Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, a propriedade Item(Object) foi removida dessas coleções. Para determinar se um documento ou a planilha contém um controle especificado, use o método Contains(System.Object) o <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> ou <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> coleção em vez disso.  
   
- For more information about the Controls collection of documents and worksheets, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Para obter mais informações sobre a coleção de controles de planilhas e documentos, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-##  <a name="collections"></a> Updating Code that Uses Collections that Derive from CollectionBase  
- In projects that target the .NET Framework 3.5, several collection types in the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] derive from the <xref:System.Collections.CollectionBase> class, such as Microsoft.Office.Tools.SmartTagCollection, Microsoft.Office.Tools.Excel.ControlCollection, and Microsoft.Office.Tools.Word.ControlCollection.  
+##  <a name="collections"></a>Atualizando o código que usa coleções que derivam de CollectionBase  
+ Em projetos direcionados ao .NET Framework 3.5, tipos de coleção várias no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] derivam de <xref:System.Collections.CollectionBase> classe, como Microsoft.Office.Tools.SmartTagCollection, Microsoft.Office.Tools.Excel.ControlCollection, e Microsoft.Office.Tools.Word.ControlCollection.  
   
- In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or later, these collection types are now interfaces that do not derive from <xref:System.Collections.CollectionBase>. Some members are no longer available on these collection types, such as <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>, and <xref:System.Collections.CollectionBase.InnerList%2A>.  
+ Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, esses tipos de coleção agora são interfaces que não derivam <xref:System.Collections.CollectionBase>. Alguns membros não estão mais disponíveis nesses tipos de coleção, como <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>, e <xref:System.Collections.CollectionBase.InnerList%2A>.  
   
-## <a name="see-also"></a>See Also  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
- [Content Controls](../vsto/content-controls.md)   
- [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)  
+## <a name="see-also"></a>Consulte também  
+ [Migrando soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Controles de conteúdo](../vsto/content-controls.md)   
+ [Estendendo documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)  
   
   

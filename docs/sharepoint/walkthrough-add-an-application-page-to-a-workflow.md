@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Add an Application Page to a Workflow | Microsoft Docs'
+title: "Passo a passo: Adicionar uma página de aplicativo para um fluxo de trabalho | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,49 +16,48 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, adding applications page to workflow
 - application page [SharePoint development in Visual Studio]
 ms.assetid: e4845d07-917b-45cb-a569-4ecdd602fbd9
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c06cccc5a3bd846c1b8c3c75986e6ed9637b7e82
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: bab156bdd1589aaac10a619409b44e50558b9c15
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Walkthrough: Add an Application Page to a Workflow
-  This walkthrough demonstrates how to add an application page that displays data derived from a workflow to a workflow project. It builds on the project described in the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Instruções passo a passo: adicionar uma página de aplicativo a um fluxo de trabalho
+  Este passo a passo demonstra como adicionar uma página que exibe dados provenientes de um fluxo de trabalho para um projeto de fluxo de trabalho do aplicativo. Ele se baseia no projeto descrito no tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
- This walkthrough demonstrates the following tasks:  
+ Este passo a passo demonstra as seguintes tarefas:  
   
--   Adding an ASPX application page to a SharePoint workflow project.  
+-   Adicionando uma página ASPX do aplicativo para um projeto de fluxo de trabalho do SharePoint.  
   
--   Obtaining data from the workflow project and manipulating it.  
+-   Obtendo dados do projeto de fluxo de trabalho e manipulando a ele.  
   
--   Displaying data in a table on the application page.  
+-   Exibindo dados em uma tabela na página do aplicativo.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Pré-requisitos  
+ Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Edições do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
--   You also have to complete the project in the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
+-   Você também precisa concluir o projeto no tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
-## <a name="amending-the-workflow-code"></a>Amending the Workflow Code  
- First, add a line of code to the workflow to set the value of the Outcome column to the amount of the expense report. This value is used later in the expense report summary calculation.  
+## <a name="amending-the-workflow-code"></a>Corrigindo o código de fluxo de trabalho  
+ Primeiro, adicione uma linha de código para o fluxo de trabalho para definir o valor da coluna de resultado para o valor do relatório de despesas. Esse valor é usado posteriormente o cálculo de resumo de relatório de despesas.  
   
-#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>To set the value of the Outcome column in the workflow  
+#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Para definir o valor da coluna de resultado no fluxo de trabalho  
   
-1.  Load the completed project from the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Carregar o projeto completo do tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Open the code for Workflow1.cs or Workflow1.vb (depending on your programming language).  
+2.  Abra o código para workflow1 ou Workflow1.vb (dependendo da linguagem de programação).  
   
-3.  To the bottom of the `createTask1_MethodInvoking` method, add the following code:  
+3.  Na parte inferior do `createTask1_MethodInvoking` método, adicione o seguinte código:  
   
     ```vb  
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =   
@@ -72,16 +69,16 @@ ms.lasthandoff: 08/28/2017
       workflowProperties.InitiationData;  
     ```  
   
-## <a name="creating-an-application-page"></a>Creating an Application Page  
- Next, add an ASPX form to the project. This form will display data obtained from the expense report workflow project. To do this, you will add an application page. An application page uses the same master page as other SharePoint pages, meaning that it will resemble other pages on the SharePoint site.  
+## <a name="creating-an-application-page"></a>Criando uma Página de Aplicativo  
+ Em seguida, adicione um formulário ASPX ao projeto. Este formulário exibe dados obtidos de projeto de fluxo de trabalho de relatório de despesas. Para fazer isso, você adicionará uma página de aplicativo. Uma página de aplicativo usa a mesma página mestra como outras páginas do SharePoint, que significa que ele será semelhante a outras páginas no site do SharePoint.  
   
-#### <a name="to-add-an-application-page-to-the-project"></a>To add an application page to the project  
+#### <a name="to-add-an-application-page-to-the-project"></a>Para adicionar uma página de aplicativo ao projeto  
   
-1.  Choose the ExpenseReport project, and then, on the menu bar, choose **Project**, **Add New Item**.  
+1.  Escolha o projeto ExpenseReport e, em seguida, na barra de menus, escolha **projeto**, **Adicionar Novo Item**.  
   
-2.  In the **Templates** pane, choose the **Application Page** template, use the default name for the project item (**ApplicaitonPage1.aspx**), and choose the **Add** button.  
+2.  No **modelos** painel, escolha o **página aplicativos** modelo, use o nome padrão para o item de projeto (**ApplicaitonPage1.aspx**) e escolha o **Adicionar** botão.  
   
-3.  In the [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] of ApplicationPage1.aspx, replace the `PlaceHolderMain` section with the following:  
+3.  No [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] de ApplicationPage1.aspx, substitua o `PlaceHolderMain` seção com o seguinte:  
   
     ```  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
@@ -93,9 +90,9 @@ ms.lasthandoff: 08/28/2017
     </asp:Content>  
     ```  
   
-     This code adds a table to the page together with a title.  
+     Esse código adiciona uma tabela para a página junto com um título.  
   
-4.  Add a title to the application page by replacing the `PlaceHolderPageTitleInTitleArea` section with the following:  
+4.  Adicionar um título para a página de aplicativo, substituindo o `PlaceHolderPageTitleInTitleArea` seção com o seguinte:  
   
     ```  
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >  
@@ -103,14 +100,14 @@ ms.lasthandoff: 08/28/2017
     </asp:Content>  
     ```  
   
-## <a name="coding-the-application-page"></a>Coding the Application Page  
- Next, add code to the expense report summary application page. When you open the page, the code scans the Task list in SharePoint for expenses that exceeded the allocated spending limit. The report lists each item together with the sum of the expenses.  
+## <a name="coding-the-application-page"></a>Codificação de página do aplicativo  
+ Em seguida, adicione o código para a página de resumo de aplicativo de relatório de despesas. Quando você abre a página, o código verifica a lista de tarefas no SharePoint para despesas que excederam o limite de gastos alocado. O relatório lista cada item junto com a soma das despesas.  
   
-#### <a name="to-code-the-application-page"></a>To code the application page  
+#### <a name="to-code-the-application-page"></a>Para a página de aplicativo de código  
   
-1.  Choose the **ApplicationPage1.aspx** node, and then, on the menu bar, choose **View**, **Code** to display the code behind the application page.  
+1.  Escolha o **ApplicationPage1.aspx** nó e, em seguida, na barra de menus, escolha **exibição**, **código** para exibir o código por trás da página do aplicativo.  
   
-2.  Replace the **using** or **Import** statements (depending on your programming language) at the top of the class with the following:  
+2.  Substitua o **usando** ou **importação** instruções (dependendo da linguagem de programação) na parte superior da classe com o seguinte:  
   
     ```vb  
     Imports System  
@@ -138,7 +135,7 @@ ms.lasthandoff: 08/28/2017
     using Microsoft.SharePoint.Navigation;  
     ```  
   
-3.  Add the following code to the `Page_Load` method:  
+3.  Adicione o seguinte código ao método `Page_Load`:  
   
     ```vb  
     Try  
@@ -302,62 +299,62 @@ ms.lasthandoff: 08/28/2017
     ```  
   
     > [!WARNING]  
-    >  Be sure to replace "TestServer" in the code with the name of a valid server that's running SharePoint.  
+    >  Certifique-se de substituir "TestServer" no código com o nome de um servidor válido que está executando o SharePoint.  
   
-## <a name="testing-the-application-page"></a>Testing the Application Page  
- Next, determine whether the application page displays the expense data correctly.  
+## <a name="testing-the-application-page"></a>Testando a Página do Aplicativo  
+ Em seguida, determine se a página de aplicativo exibe corretamente os dados de despesa.  
   
-#### <a name="to-test-the-application-page"></a>To test the application page  
+#### <a name="to-test-the-application-page"></a>Para testar a página do aplicativo  
   
-1.  Choose the F5 key to run and deploy the project to SharePoint.  
+1.  Pressione a tecla F5 para executar e implantar o projeto do SharePoint.  
   
-2.  Choose the **Home** button, and then choose the **Shared Documents** link on the QuickLaunch bar to display the Shared Documents list on the SharePoint site.  
+2.  Escolha o **início** botão e, em seguida, escolha o **documentos compartilhados** link na barra Início rápido para exibir a lista de documentos compartilhados no site do SharePoint.  
   
-3.  To represent expense reports for this example, upload some new documents into the Documents list by choosing the **Documents** link on the **LibraryTools** tab at the top of the page and then choosing the **Upload Document** button on the tool ribbon.  
+3.  Para representar os relatórios de despesas para este exemplo, carregar alguns novos documentos na lista de documentos, escolhendo o **documentos** link o **LibraryTools** guia na parte superior da página e, em seguida, escolher o  **Carregar documento** botão na faixa de opções da ferramenta.  
   
-4.  After you upload some documents, instantiate the workflow by choosing the **Library** link on the **LibraryTools** tab at the top of the page and then choosing the **Library Settings** button on the tool ribbon.  
+4.  Depois de carregar alguns documentos, criar uma instância de fluxo de trabalho escolhendo o **biblioteca** link o **LibraryTools** guia na parte superior da página e, em seguida, escolher o **configurações da biblioteca**botão na faixa de opções da ferramenta.  
   
-5.  In the **Document Library Settings** page, choose the **Workflow Settings** link in the **Permissions and Management** section.  
+5.  No **definições da biblioteca de documentos** página, escolha o **configurações de fluxo de trabalho** link no **permissões e gerenciamento** seção.  
   
-6.  In the **Workflow Settings** page, choose the **Add a workflow** link.  
+6.  No **configurações de fluxo de trabalho** página, escolha o **adicionar um fluxo de trabalho** link.  
   
-7.  In the **Add a Workflow** page, choose the **ExpenseReport - Workflow1** workflow, enter a name for the workflow, such as **ExpenseTest**, and then choose the **Next** button.  
+7.  No **adicionar um fluxo de trabalho** página, escolha o **ExpenseReport - Workflow1** fluxo de trabalho, insira um nome para o fluxo de trabalho, como **ExpenseTest**e, em seguida, escolha o **Próxima** botão.  
   
-     The workflow Association form appears. Use it to report the expense limit amount.  
+     O formulário de associação de fluxo de trabalho é exibida. Usá-lo para relatar o valor de limite de despesa.  
   
-8.  In the Association form, enter **1000** into the **Auto Approval Limit** box, and then choose the **Associate Workflow** button.  
+8.  No formulário de associação, insira **1000** para o **limite de aprovação automática** caixa e, em seguida, escolha o **associar o fluxo de trabalho** botão.  
   
-9. Choose the **Home** button to return to the SharePoint home page.  
+9. Escolha o **inicial** botão para retornar à home page do SharePoint.  
   
-10. Choose the **Shared Documents** link on the QuickLaunch bar.  
+10. Escolha o **documentos compartilhados** link na barra Início rápido.  
   
-11. Choose one of the uploaded documents to display a drop-down arrow, choose it, and then choose the **Workflows** item.  
+11. Escolha um dos documentos carregados para exibir uma seta suspensa, escolha-o e, em seguida, escolha o **fluxos de trabalho** item.  
   
-12. Choose the image next to the ExpenseTest to display the workflow Initiation form.  
+12. Escolha a imagem ao lado de ExpenseTest para exibir o formulário de inicialização do fluxo de trabalho.  
   
-13. In the **Expense Total** text box, enter a value that's greater than 1000, and then choose the **Start Workflow** button.  
+13. No **despesa Total** caixa de texto, digite um valor maior que 1000 e, em seguida, escolha o **Iniciar fluxo de trabalho** botão.  
   
-     When a reported expense exceeds the allocated expense amount, a task is added to the Task List. A column named **ExpenseTest** with the value **Completed** is also added to the expense report item in the Shared Documents list.  
+     Quando uma despesa relatada excede o valor de despesas alocado, uma tarefa é adicionada à lista de tarefas. Uma coluna denominada **ExpenseTest** com o valor **concluído** também é adicionado ao item de relatório de despesas na lista de documentos compartilhados.  
   
-14. Repeat steps 11 - 13 with other documents in the Shared Documents list. (The exact number of documents is not important.)  
+14. Repita as etapas 11 a 13 com outros documentos na lista de documentos compartilhados. (O número exato de documentos não é importante.)  
   
-15. Display the expense report summary application page by opening the following URL in a Web browser: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
+15. Exibir a página de resumo do aplicativo de relatório de despesas, abrindo a URL a seguir em um navegador da Web: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
   
-     The expense report summary page lists all of the expense reports that exceeded the allocated amount, the amount they exceeded it by, and the total amount for all reports.  
+     A página Resumo do relatório de despesas lista todos os relatórios de despesa que excederam a quantidade alocada, a quantidade que eles excederam nela e a quantidade total de todos os relatórios.  
   
-## <a name="next-steps"></a>Next Steps  
- For more information about SharePoint application pages, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+## <a name="next-steps"></a>Próximas etapas  
+ Para obter mais informações sobre páginas de aplicativo do SharePoint, consulte [criando páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- You can learn more about how to design SharePoint page content by using the Visual Web Designer in Visual Studio from these topics:  
+ Você pode aprender mais sobre como criar conteúdo de página do SharePoint usando o Visual Web Designer no Visual Studio com estes tópicos:  
   
--   [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [Criando Web Parts do SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
--   [Creating Reusable Controls for Web Parts or Application Pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+-   [Criando controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
- [How to: Create an Application Page](../sharepoint/how-to-create-an-application-page.md)   
- [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+ [Como: criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)   
+ [Criando páginas de aplicativo do SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
+ [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
   

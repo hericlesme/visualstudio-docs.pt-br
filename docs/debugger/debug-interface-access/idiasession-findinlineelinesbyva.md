@@ -1,56 +1,53 @@
 ---
-title: "IDiaSession::findInlineeLinesByVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findInlineeLinesByVA | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: dffe6594-e0d1-4ed5-aeea-8773f88d82a6
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0309dfd4f14ed7bdb049cdb0bde16a038bb78e37
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineeLinesByVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera uma enumeração que permite que um cliente executa iterações através da linha informações do número das funções que inlined, direta ou indiretamente, pelo símbolo pai especificado e está contida dentro do endereço virtual especificado \(VA\).  
+# <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
+Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções embutidas, diretamente ou indiretamente, pelo símbolo de pai especificado e está contida dentro do endereço virtual especificado (VA).  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT findInlineeLinesByVA (   
-   IDiaSymbol*           parent,  
-   ULONGLONG             va,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findInlineeLinesByVA (   
+   IDiaSymbol*           parent,   ULONGLONG             va,   DWORD                 length,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `parent`  
- \[in\] um objeto de `IDiaSymbol` que representa o pai.  
+ [in] Um `IDiaSymbol` que representa o pai do objeto.  
   
  `va`  
- \[in\] especifica o endereço como um VA.  
+ [in] Especifica o endereço como um VA.  
   
  `length`  
- \[in\] especificar o intervalo de endereços, em número de bytes, para cobrir com esta consulta.  
+ [in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.  
   
  `ppResult`  
- \[out\] contém um objeto de `IDiaEnumLineNumbers` que contém a lista de linha números que é recuperado.  
+ [out] Contém uma `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.  
   
-## Valor de retorno  
- Se com êxito, retorna `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   

@@ -1,38 +1,23 @@
 ---
-title: "Estruturas e uniões | Documentos do Microsoft"
+title: "Estruturas e uniões | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- structures [Visual Studio SDK]
+helpviewer_keywords: structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1566dd961a044c3b0d4c563b0fa81584789bd3ad
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a2fc3225bda24a9ea0d759c1f684801723ea396f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="structures-and-unions"></a>Estruturas e uniões
 A seguir é estruturas e uniões no SDK do Visual Studio de depuração.  
@@ -53,16 +38,16 @@ A seguir é estruturas e uniões no SDK do Visual Studio de depuração.
  Define os componentes que descrevem a localização de um ponto de interrupção em um endereço no código.  
   
  [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)  
- Descreve o local de um ponto de interrupção é ligado diretamente ao endereço no programa que está sendo depurado.  
+ Descreve o local de um ponto de interrupção que está associado diretamente a um endereço no programa que está sendo depurado.  
   
  [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)  
  Descreve o local de um ponto de interrupção na linha em um arquivo de origem do código.  
   
  [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)  
- Descreve o local de deslocamento de um ponto de interrupção em uma função no código.  
+ Descreve o local de deslocamento de um ponto de interrupção em uma função em código.  
   
  [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)  
- Usada para definir pontos de interrupção do código com base em uma cadeia de caracteres que o usuário pode inserir a partir do IDE.  
+ Usada para definir pontos de interrupção de código com base em uma cadeia de caracteres que o usuário pode inserir a partir do IDE.  
   
  [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)  
  Usada para definir pontos de interrupção de dados se baseiam em uma cadeia de caracteres que o usuário pode inserir a partir do IDE.  
@@ -71,22 +56,22 @@ A seguir é estruturas e uniões no SDK do Visual Studio de depuração.
  Descreve a resolução de um ponto de interrupção em um local específico.  
   
  [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)  
- Descreve as condições e contagem no qual um ponto de interrupção será acionado após ter sido passado.  
+ Descreve a contagem e condições no qual um ponto de interrupção será acionado depois de ter que foi passado.  
   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
  Contém as informações necessárias para implementar um ponto de interrupção.  
   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
- Contém as informações necessárias para implementar um ponto de interrupção (mesmo que o [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura mas inclui informações de GUID, restrição e tracepoint do fornecedor).  
+ Contém as informações necessárias para implementar um ponto de interrupção (mesmo que o [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura mas não inclui informações de GUID, restrição e tracepoint do fornecedor).  
   
  [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)  
  Descreve o local de um ponto de interrupção do código.  
   
  [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)  
- Descreve o resultado de um ponto de interrupção de dados de associação.  
+ Descreve o resultado da associação a um ponto de interrupção de dados.  
   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)  
- Descreve as informações de ponto de interrupção associada para um ponto de interrupção de código ou um ponto de interrupção de dados.  
+ Descreve as informações de ponto de interrupção associado para um ponto de interrupção de código ou um ponto de interrupção de dados.  
   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)  
  Especifica a estrutura do local de resolução do ponto de interrupção.  
@@ -107,28 +92,28 @@ A seguir é estruturas e uniões no SDK do Visual Studio de depuração.
  Descreve uma lista de GUIDs.  
   
  [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)  
- Descreve um contexto de memória ou o contexto do código.  
+ Descreve um contexto de memória ou o contexto de código.  
   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)  
  Descreve um endereço em um programa que está sendo depurado.  
   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
- Representa um de vários tipos diferentes de endereços.  
+ Representa um de um número de tipos diferentes de endereços.  
   
  [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)  
- Identifica um visualizador personalizado ou digite visualizador.  
+ Identifica um visualizador personalizado ou tipo de visualizador.  
   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)  
- Descreve uma propriedade de depuração que por sua vez descreve um objeto de natureza hierárquica com nome, tipo e valor.  
+ Descreve uma propriedade de depuração que por sua vez descreve um objeto de natureza hierárquica que tem o nome, tipo e valor.  
   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)  
  Descreve uma referência.  
   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)  
- Descreve a desmontagem para o IDE para exibição.  
+ Descreve a desmontagem ao IDE para exibição.  
   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)  
- Descreve uma exceção ou erro de tempo de execução gerado pelo programa que está sendo depurado.  
+ Descreve um erro de tempo de execução gerada pelo programa que está sendo depurado ou exceção.  
   
  [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
  Descreve uma variável local, parâmetro ou outro campo.  
@@ -137,10 +122,10 @@ A seguir é estruturas e uniões no SDK do Visual Studio de depuração.
  Descreve um quadro de pilha.  
   
  [GUID_ARRAY](../../../extensibility/debugger/reference/guid-array.md)  
- Descreve uma matriz de identificadores exclusivos para os mecanismos de depuração disponíveis.  
+ Descreve uma matriz de identificadores exclusivos para mecanismos de depuração disponíveis.  
   
  [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)  
- Usado para definir as informações de JustMyCode para um módulo.  
+ Usado para definir as informações de /justmycode para um módulo.  
   
  [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)  
  Descreve uma determinada máquina.  
@@ -161,7 +146,7 @@ A seguir é estruturas e uniões no SDK do Visual Studio de depuração.
  Descreve um parâmetro de um método ou função.  
   
  [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)  
- Descreve o valor de retorno de um método ou função.  
+ Descreve o valor de retorno de uma função ou método.  
   
  [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
  Descreve um tipo de campo obtido de metadados.  
@@ -170,7 +155,7 @@ A seguir é estruturas e uniões no SDK do Visual Studio de depuração.
  Descreve um módulo específico (DLL, EXE ou assembly).  
   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
- Descreve informações de status sobre os caminhos de pesquisa do símbolo que tenham sido pesquisados.  
+ Descreve as informações de status sobre os caminhos de pesquisa de símbolo que foram pesquisadas.  
   
  [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)  
  Descreve um endereço nativo.  
@@ -179,7 +164,7 @@ A seguir é estruturas e uniões no SDK do Visual Studio de depuração.
  Descreve um tipo de campo obtido um símbolo PDB.  
   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)  
- Descreve o estado de um ponto de interrupção está pronto para vincular a um local de código.  
+ Descreve o estado de um ponto de interrupção que está pronto para vincular a um local de código.  
   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)  
  Descreve um processo.  
@@ -213,4 +198,4 @@ A seguir é estruturas e uniões no SDK do Visual Studio de depuração.
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Referência da API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+ [Referência de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

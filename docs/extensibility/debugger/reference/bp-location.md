@@ -1,47 +1,31 @@
 ---
-title: BP_LOCATION | Documentos do Microsoft
+title: BP_LOCATION | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_LOCATION
-helpviewer_keywords:
-- BP_LOCATION union
+f1_keywords: BP_LOCATION
+helpviewer_keywords: BP_LOCATION union
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a91abf687e12ffaf1f56d45ede59c20a1e72d614
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4af879fba6dacb30e7e20913a2b155ec7a7c040c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Especifica o tipo de estrutura usada para descrever o local do ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct _BP_LOCATION {  
    BP_LOCATION_TYPE bpLocationType;  
    union {  
@@ -57,7 +41,7 @@ typedef struct _BP_LOCATION {
 } BP_LOCATION;  
 ```  
   
-```c#  
+```csharp  
 public struct BP_LOCATION {  
    public uint   bpLocationType;  
    public IntPtr unionmember1;  
@@ -107,7 +91,7 @@ public struct BP_LOCATION {
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é membro do [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estruturas.  
   
- [Apenas c#] O `unionmemberX` membros são interpretados de acordo com a tabela a seguir. Examine a coluna à esquerda para a `bpLocationType` valor então procure pelas colunas para determinar o que cada `unionmemberX` membro representa e empacotar o `unionmemberX` adequadamente. Veja o exemplo de um modo para interpretar uma parte dessa estrutura no c#.  
+ [Apenas c#] O `unionmemberX` membros são interpretados de acordo com a tabela a seguir. Examine a coluna à esquerda para a `bpLocationType` valor, em seguida, procure pelas outras colunas para determinar o que cada `unionmemberX` membro representa e empacotar o `unionmemberX` adequadamente. Consulte o exemplo de uma maneira de interpretar uma parte dessa estrutura em c#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -120,9 +104,9 @@ public struct BP_LOCATION {
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo mostra como interpretar o `BP_LOCATION` estrutura em c# para o `BPLT_DATA_STRING` tipo. Esse tipo específico mostra como interpretar os quatro `unionmemberX` membros em todos os formatos possíveis (objeto, cadeia de caracteres e número).  
+ Este exemplo mostra como interpretar o `BP_LOCATION` estrutura em c# para o `BPLT_DATA_STRING` tipo. Esse tipo específico mostra como interpretar os quatro `unionmemberX` membros em todos os possíveis formatos (objeto, cadeia de caracteres e número).  
   
-```c#  
+```csharp  
 using System;  
 using System.Runtime.Interop.Services;  
 using Microsoft.VisualStudio.Debugger.Interop;  

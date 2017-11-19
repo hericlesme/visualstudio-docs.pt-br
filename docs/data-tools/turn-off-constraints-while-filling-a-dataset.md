@@ -1,5 +1,5 @@
 ---
-title: Turn off constraints while filling a dataset | Microsoft Docs
+title: "Desativar restrições ao preencher um conjunto de dados | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,60 +13,44 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - updating datasets, constraints
 - constraints [Visual Basic], datasets
 - datasets [Visual Basic], constraints
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
-caps.latest.revision: 18
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 5b5d6a28bfed55aa925aa667877f9c5e3b7f57c1
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 29b24794c74f2bd042845384d72a3716506d5e2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="turn-off-constraints-while-filling-a-dataset"></a>Turn off constraints while filling a dataset
-If a dataset contains constraints (such as foreign-key constraints), they can raise errors related to the order of operations that are performed against the dataset. For example, loading child records before loading related parent records can violate a constraint and cause an error. As soon as you load a child record, the constraint checks for the related parent record and raises an error.  
+# <a name="turn-off-constraints-while-filling-a-dataset"></a>Desativar restrições ao preencher um conjunto de dados
+Se um conjunto de dados contiver restrições (como restrições de chave estrangeira), eles podem gerar erros relacionados à ordem de operações que são executadas no conjunto de dados. Por exemplo, o carregamento de registros filho antes de carregar relacionado registros pai podem violar uma restrição e causar um erro. Assim que você carregue um registro filho, a restrição verifica o registro pai relacionado e gera um erro.  
   
- If there were no mechanism to allow temporary constraint suspension, an error would be raised every time you tried to load a record into the child table. Another way to suspend all constraints in a dataset is with the <xref:System.Data.DataRow.BeginEdit%2A>, and <xref:System.Data.DataRow.EndEdit%2A> properties.  
+ Se não houver nenhum mecanismo para permitir a suspensão de restrição temporária, um erro será gerado sempre que você tentou carregar um registro na tabela filho. Outra maneira de suspender todas as restrições em um conjunto de dados é com o <xref:System.Data.DataRow.BeginEdit%2A>, e <xref:System.Data.DataRow.EndEdit%2A> propriedades.  
   
 > [!NOTE]
->  Validation events (for example, <xref:System.Data.DataTable.ColumnChanging> and<xref:System.Data.DataTable.RowChanging>) will not be raised when constraints are turned off.  
+>  Eventos de validação (por exemplo, <xref:System.Data.DataTable.ColumnChanging> e<xref:System.Data.DataTable.RowChanging>) não serão gerados quando restrições estão desativadas.  
   
-### <a name="to-suspend-update-constraints-programmatically"></a>To suspend update constraints programmatically  
+### <a name="to-suspend-update-constraints-programmatically"></a>Para suspender restrições de atualização programaticamente  
   
--   The following example shows how to temporarily turn off constraint checking in a dataset:  
+-   O exemplo a seguir mostra como desativar temporariamente a restrição de verificação em um conjunto de dados:  
   
-     [!code-cs[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]  [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]  
+     [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]
+     [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]  
   
-### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>To suspend update constraints using the Dataset Designer  
+### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Para suspender restrições de atualização usando o Designer de conjunto de dados  
   
-1.  Open your dataset in the **Dataset Designer**. For more information, see [Walkthrough: Creating a Dataset in the Dataset Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).  
+1.  Abra o conjunto de dados de **Dataset Designer**. Para obter mais informações, consulte [passo a passo: Criando um conjunto de dados no Designer de conjunto de dados](walkthrough-creating-a-dataset-with-the-dataset-designer.md).  
   
-2.  In the **Properties** window, set the <xref:System.Data.DataSet.EnforceConstraints%2A> property to `false`.  
+2.  No **propriedades** janela, defina o <xref:System.Data.DataSet.EnforceConstraints%2A> propriedade `false`.  
   
-## <a name="see-also"></a>See Also  
- [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)   
- [Relationships in datasets](../data-tools/relationships-in-datasets.md)
+## <a name="see-also"></a>Consulte também  
+ [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)   
+ [Relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md)

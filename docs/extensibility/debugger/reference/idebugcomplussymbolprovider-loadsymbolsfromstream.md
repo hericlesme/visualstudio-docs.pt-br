@@ -1,46 +1,32 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream | Documentos do Microsoft
+title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 - LoadSymbolsFromStream
 ms.assetid: 1de272f0-24f4-4548-8b70-a205cddd4727
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 638b60ebc401adaa71a9c20872b49d8eb119db18
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8daf00c4463610e1b55bc4580a4ffa50962041f0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
-O fluxo de dados de símbolos de depuração de cargas.  
+Carrega símbolos recebe o fluxo de dados de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbolsFromStream(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -50,7 +36,7 @@ HRESULT LoadSymbolsFromStream(
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbolsFromStream(  
    uint    ulAppDomainID,  
    Guid    guidModule,  
@@ -77,12 +63,12 @@ int LoadSymbolsFromStream(
  [in] Fluxo de dados que contém os símbolos.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto expõe o [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface. O método chama o [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) método.  
+ O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe o [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface. O método chama o [LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md) método.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

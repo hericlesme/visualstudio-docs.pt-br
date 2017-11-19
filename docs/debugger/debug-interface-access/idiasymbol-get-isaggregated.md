@@ -1,58 +1,56 @@
 ---
-title: "IDiaSymbol::get_isAggregated | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSymbol::get_isAggregated"
+title: ': Get_isaggregated | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isAggregated method
 ms.assetid: 24d280ef-6ea3-4958-9418-4ad3ca7c67c1
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0da925fa76eb477a5995815f74a664899e721640
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isAggregated
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um sinalizador que especifica se o símbolo de dados é parte de uma agregação ou uma coleção de símbolos; o compilador irá tratar agregados símbolos como entidades separadas, mas eles realmente fazem parte de um único símbolo maior.  
+# <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
+Recupera um sinalizador que especifica se o símbolo de dados é parte de uma agregação ou uma coleção de símbolos; o compilador tratará símbolos agregados como entidades separadas, mas eles realmente fazem parte de um único símbolo maior.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```C++  
 HRESULT get_isAggregated(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pFlag`  
- \[out\] Retorna `TRUE` se os dados forem parte de uma agregação de símbolos divididos a partir de um símbolo de pai; Caso contrário, retornará `FALSE`.  
+ [out] Retorna `TRUE` se os dados fizer parte de uma agregação de símbolos de divisão de um símbolo de pai; caso contrário, retornará `FALSE`.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## Comentários  
- O [IDiaSymbol::get\_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) método é `TRUE` para o símbolo que é o pai dos símbolos agregados.  
+## <a name="remarks"></a>Comentários  
+ O [: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) método é `TRUE` para o símbolo que é o pai dos símbolos agregados.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descrição|  
-|---------------|---------------|  
+|-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|V 8.0 do SDK DIA|  
+|Versão:|V DIA SDK 8.0|  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get\_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)
+ [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md)

@@ -1,47 +1,48 @@
 ---
-title: "Analisando a qualidade do c&#243;digo do C/C++ usando a an&#225;lise de c&#243;digo | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "C/C++, análise de código"
-  - "análise de código em execução"
-  - "análise de código C/C++"
-  - "análise de código nativo"
-  - "análise de código nativo"
-  - "C++, análise de código"
-  - "C, análise de código"
+title: "Analisando a qualidade do código C/C++ usando a análise de código | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- C/C++, code analysis
+- code analysis, running
+- code analysis, C/C++
+- code analysis,native
+- native code analysis
+- C++, code analysis
+- C, code analysis
 ms.assetid: 03b8b47a-e9d8-4692-835f-2d22ec6c76a4
-caps.latest.revision: 35
-caps.handback.revision: 33
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "35"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 9694985711ee8bc9b46725214ecc6df2d5020b1d
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/15/2017
 ---
-# Analisando a qualidade do c&#243;digo do C/C++ usando a an&#225;lise de c&#243;digo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Você pode melhorar seu código C\/C\+\+ usando a análise de código no Visual Studio para localizar e corrigir falhas de código.  
+# <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Analisando a qualidade do código do C/C++ usando a análise de código
+Você pode melhorar o código C/C++ usando a análise de código no Visual Studio para localizar e corrigir defeitos de código.  
   
-## Nesta seção  
+## <a name="in-this-section"></a>Nesta seção  
   
 |||  
 |-|-|  
-|[Análise de código para visão geral do C\/C\+\+](../code-quality/code-analysis-for-c-cpp-overview.md)|Aprender sobre os recursos da ferramenta de análise de código.|  
-|[Início Rápido: análise de código para C\/C\+\+](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Aprender os conceitos básicos de análise de código para C\/C\+\+.|  
-|[Usando conjuntos de regras para especificar as regras do C\+\+ para execução](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)|Especificar regras a executar em seu projeto ou solução.|  
-|[Como definir propriedades de análise de código para projetos do C\/C\+\+](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|Descreve os parâmetros de configuração para análise de código.|  
-|[Como especificar informações de código adicionais usando \_\_analysis\_assume](../Topic/How%20to:%20Specify%20Additional%20Code%20Information%20by%20Using%20__analysis_assume.md)|Aprender como usar `__analysis_assume` para melhorar a análise de código.|  
-|[Instruções passo a passo: analisando código do C\/C\+\+ em busca de defeitos](../Topic/Walkthrough:%20Analyzing%20C-C++%20Code%20for%20Defects.md)|Ganhar experiência prática por meio de análise de código em um projeto C\/C\+\+.|  
-|[Usando anotações de SAL para reduzir defeitos de código do C\/C\+\+](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)|Aprender sobre recursos de anotação na ferramenta de análise de código para detectar violações do contrato entre o chamador e o receptor.|  
-|[Análise de código para avisos do C\/C\+\+](../code-quality/code-analysis-for-c-cpp-warnings.md)|Lista e descreve avisos de análise de código.|  
+|[Análise de código para visão geral do C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)|Saiba mais sobre os recursos da ferramenta de análise de código.|  
+|[Início Rápido: análise de código para C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md)|Conheça os fundamentos da análise de código para C/C++.|  
+|[Usando conjuntos de regras para especificar as regras do C++ para execução](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)|Especifique as regras a serem executados em seu projeto ou solução.|  
+|[Usando os verificadores de diretrizes de núcleo do C++](../code-quality/using-the-cpp-core-guidelines-checkers.md)|Adicione os verificadores de C++ Core diretrizes ao seu projeto.|  
+|[Como definir as propriedades de análise de código para projetos do C/C++](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md)|Descreve as configurações de análise de código.|  
+|[Como especificar informações de código adicionais usando __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)|Saiba como usar `__analysis_assume` para melhorar a análise de código.|  
+|[Instruções passo a passo: analisando o código do C/C++ em busca de defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)|Obter experiência prática ao executar análise de código em um projeto do C/C++.|  
+|[Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)|Saiba mais sobre os recursos de anotação da ferramenta de análise de código para detectar violações do contrato entre o chamador e o receptor.|  
+|[Análise de código para avisos do C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)|Lista e descreve os avisos da análise de código.|  
   
-## Consulte também  
- [Analisando a qualidade do aplicativo](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
+## <a name="see-also"></a>Consulte também  
+ [Analisando a Qualidade do Aplicativo](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

@@ -1,37 +1,37 @@
 ---
-title: "Como suprimir avisos de an&#225;lise do c&#243;digo para c&#243;digo gerenciado | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Como: suprimir avisos da análise de código para código gerado | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "5"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 24b94c0c4ce6031876f5ad26ce01a22299f7056a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como suprimir avisos de an&#225;lise do c&#243;digo para c&#243;digo gerenciado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Os compiladores de código gerenciado gerenciem que frequência o código que é adicionado a um projeto facilitar o desenvolvimento rápido de código.  Além disso, os desenvolvedores ferramentas de terceiros de uso com frequência para ajudar a desenvolver aplicativos rapidamente.  Essas ferramentas também gerenciam o código que é adicionado ao projeto.  
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Como suprimir avisos de análise do código para código gerenciado
+Compiladores de código gerenciado geralmente geram código que é adicionado a um projeto para facilitar o desenvolvimento rápido de código. Além disso, os desenvolvedores geralmente usam ferramentas de terceiros para ajudar a desenvolver aplicativos rapidamente. Essas ferramentas também geram código que é adicionado ao projeto.  
   
- Você pode querer ver as violações da regra que afeta a análise de descoberta no código gerado.  No entanto, talvez você não queira fazer se você não pode exibir e manter o código que contém a violação.  
+ Deseja ver as violações de regra da análise de código descobre no código gerado. No entanto, não deseja vê-los se você não pode exibir e manter o código que contém a violação.  
   
- A caixa de seleção de **Suprimir resultados do código gerado** na página de propriedades do código de um projeto permite que você selecione para ver os avisos de análise de código de código gerado por uma ferramenta de terceiros.  
+ O **Suprimir resultados do código gerado** caixa de seleção na página de propriedades de análise de código de um projeto permite que você selecione se você deseja ver avisos de análise de código do código gerado por uma ferramenta de terceiros.  
   
 > [!NOTE]
->  Essa opção não suprime erros e avisos de análise de código de código gerado quando os erros e avisos aparecem em formulários e modelos.  Você pode exibir e manter o código\-fonte de um formulário ou um modelo.  
+>  Essa opção suprime erros de análise de código e avisos do código gerado quando os erros e avisos aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo.  
   
-### Para suprimir avisos para o código gerado em um projeto  
+### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Para suprimir avisos para código gerenciado em um projeto  
   
-1.  Clique com o botão direito do mouse no projeto do no Solution Explorer, e clique em **Propriedades**.  
+1.  Clique com botão direito no projeto no Gerenciador de soluções e, em seguida, clique em **propriedades**.  
   
-2.  Clique **Análise de Código**.  
+2.  Clique em **de análise de código**.  
   
-3.  Marque a caixa de seleção de **Suprimir resultados do código gerado** .
+3.  Selecione o **Suprimir resultados do código gerado** caixa de seleção.

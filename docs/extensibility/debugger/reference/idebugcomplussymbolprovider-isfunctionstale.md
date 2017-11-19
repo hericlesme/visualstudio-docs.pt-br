@@ -1,51 +1,36 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionStale | Documentos do Microsoft
+title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugComPlusSymbolProvider::IsFunctionStale
+helpviewer_keywords: IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 54e1b15d32dcaf53a23c330948a86bbb8bd6c80f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 107eb5b3d33fcba0e06a015e2859342786cc7d2c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
-Determina se a função no endereço especificado debug é considerada obsoleta.  
+Determina se a função no endereço especificado de depuração é considerada obsoleta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT IsFunctionStale(  
    IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsFunctionStale(  
    IDebugAddress pAddress  
 );  
@@ -53,15 +38,15 @@ int IsFunctionStale(
   
 #### <a name="parameters"></a>Parâmetros  
  `pAddress`  
- [in] O endereço de depuração é representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Esse endereço deve ser um METHOD_ADDRESS.  
+ [in] O endereço de depuração que é representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Esse endereço deve ser um METHOD_ADDRESS.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se a função é considerada obsoleta, retornará `S_OK`. Se a função não é obsoleta, retornará `S_FALSE`.  
+ Retorna se a função é considerada obsoleta, `S_OK`. Retorna se a função não está desatualizada, `S_FALSE`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto expõe o [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe o [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionStale(  
     IDebugAddress* pAddress  
 )  

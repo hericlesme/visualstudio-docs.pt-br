@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Group Rows in a Worksheet | Microsoft Docs'
+title: 'Como: programaticamente agrupar linhas em uma planilha | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,50 +21,51 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio], ungrouping
 - columns [Office development in Visual Studio], ungrouping
 ms.assetid: 48037dca-35a2-4df2-918b-6a9f568fae91
-caps.latest.revision: 46
-author: kempb
-ms.author: kempb
+caps.latest.revision: "46"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 996904cfea85793c2359e6fc5264b8e8dd973024
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c11911d6d9e7b92b7a86b21723c8788afe15a57b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>How to: Programmatically Group Rows in a Worksheet
-  You can group one or more whole rows. To create a group in a worksheet, use a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Como agrupar linhas em uma planilha programaticamente
+  Você pode agrupar uma ou mais linhas inteiras. Para criar um grupo em uma planilha, use um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto nativo de intervalo do Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
- If you add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a document-level project at design time, you can use the control to programmatically create a group. The following example assumes that there are three <xref:Microsoft.Office.Tools.Excel.NamedRange> controls on the same worksheet: `data2001`, `data2002`, and `dataAll`. Each named range refers to a whole row in the worksheet.  
+## <a name="using-a-namedrange-control"></a>Usando um controle NamedRange  
+ Se você adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle a um projeto de nível de documento em tempo de design, você pode usar o controle para criar programaticamente um grupo. O exemplo a seguir assume que há três <xref:Microsoft.Office.Tools.Excel.NamedRange> controles na mesma planilha: `data2001`, `data2002`, e `dataAll`. Cada intervalo nomeado refere-se a uma linha inteira na planilha.  
   
-#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>To create a group of NamedRange controls on a worksheet  
+#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Para criar um grupo de controles NamedRange em uma planilha  
   
-1.  Group three named ranges by calling the <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> method of each range. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
+1.  Grupo de três intervalos nomeados chamando o <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> método de cada intervalo. Esse código deve ser colocado em uma classe de folha, não o `ThisWorkbook` classe.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]  [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
-  
-    > [!NOTE]  
-    >  To ungroup rows, call the <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> method.  
-  
-## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
- The code assumes that you have three Excel ranges named `data2001`, `data2002`, and `dataAll` on a worksheet.  
-  
-#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>To create a group of Excel ranges in a worksheet  
-  
-1.  Group three named ranges by calling the <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> method of each range. The following example assumes that there are three <xref:Microsoft.Office.Interop.Excel.Range> controls named `data2001`, `data2002`, and `dataAll` on the same worksheet. Each named range refers to a whole row in the worksheet.  
-  
-     [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]  [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
+     [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
   
     > [!NOTE]  
-    >  To ungroup rows, call the <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> method.  
+    >  Para desagrupar linhas, chame o <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> método.  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="using-native-excel-ranges"></a>Usando intervalos do Excel nativo  
+ O código presume que você tenha três intervalos do Excel denominados `data2001`, `data2002`, e `dataAll` em uma planilha.  
+  
+#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Para criar um grupo de intervalos do Excel em uma planilha  
+  
+1.  Grupo de três intervalos nomeados chamando o <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> método de cada intervalo. O exemplo a seguir assume que há três <xref:Microsoft.Office.Interop.Excel.Range> controles denominados `data2001`, `data2002`, e `dataAll` na mesma planilha. Cada intervalo nomeado refere-se a uma linha inteira na planilha.  
+  
+     [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
+     [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
+  
+    > [!NOTE]  
+    >  Para desagrupar linhas, chame o <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> método.  
+  
+## <a name="see-also"></a>Consulte também  
+ [Trabalhando com planilhas](../vsto/working-with-worksheets.md)   
+ [Controle NamedRange](../vsto/namedrange-control.md)   
+ [Como: adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

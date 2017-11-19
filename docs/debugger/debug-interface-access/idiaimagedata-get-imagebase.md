@@ -1,47 +1,45 @@
 ---
-title: "IDiaImageData::get_imageBase | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaImageData::get_imageBase"
+title: ': Get_imagebase | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaImageData::get_imageBase method
 ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: daaaf26e0a33ce8e90b2b8ac621ed47d299c8276
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaImageData::get_imageBase
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera o local da memória onde a imagem deve ser baseada.  
+# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
+Recupera o local de memória em que a imagem deve ser baseada.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT get_imageBase (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_imageBase (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- \[out\] Retorna o valor de base da imagem sugeridas.  
+ [out] Retorna o valor de base de imagem sugeridas.  
   
-## Valor de retorno  
- Se for bem\-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Comentários  
- Devido a conflitos de base da imagem, uma imagem pode ser rebasing automaticamente em um local de memória não usada quando ele é carregado. Esse método retorna a dica de base \(local de memória sugerido\) que foi armazenada no módulo em tempo de compilação.  
+## <a name="remarks"></a>Comentários  
+ Devido a conflitos de base de imagem, uma imagem pode ser restabelecida automaticamente em um local de memória não utilizada quando ele é carregado. Esse método retorna a dica de base (local de memória sugerido) que foi armazenada no módulo em tempo de compilação.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

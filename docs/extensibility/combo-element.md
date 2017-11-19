@@ -1,42 +1,28 @@
 ---
-title: "Elemento de combinação | Documentos do Microsoft"
+title: "Elemento de caixa de combinação | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2e13f09f920d72c9bb75933708f4e5d50d0a35cb
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f170efc945f92d13eda61830ef682ab4cd8fc755
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="combo-element"></a>Elemento de combinação
-Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos de caixas de combinação, como segue: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.  
+# <a name="combo-element"></a>Elemento de caixa de combinação
+Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos de caixas de combinação, da seguinte maneira: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -55,12 +41,12 @@ Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos d
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. GUID do identificador do comando GUID/ID.|  
-|id|Necessário. ID do identificador do comando GUID/ID.|  
+|GUID|Necessário. GUID do identificador de comando GUID ID.|  
+|id|Necessário. ID do identificador de comando GUID ID.|  
 |defaultWidth|Necessário. Um inteiro que especifica a largura de pixel da caixa de combinação.|  
-|idCommandList|Necessário. Uma ID que é enviada para o destino do comando ativo para recuperar a lista de itens a serem exibidos na caixa de combinação. A ID será no mesmo escopo de GUID do controle.|  
+|idCommandList|Necessário. Uma ID que é enviada para o destino do comando ativo para recuperar a lista de itens a serem exibidos na caixa de combinação. A ID será no mesmo escopo GUID como o controle.|  
 |priority|Opcional. Um valor numérico que especifica a prioridade.|  
-|tipo|Opcional. Um valor enumerado que especifica o tipo de botão.<br /><br /> Se não especificado, usa o botão.<br /><br /> DropDownCombo<br /> O VSPackage é responsável por preencher o conteúdo desta caixa de combinação. O usuário não pode digitar nada na caixa de texto nesta lista suspensa.<br /><br /> DynamicCombo<br /> O VSPackage é responsável por preencher o conteúdo dessa caixa de combinação. O usuário pode editar essa combinação e também selecionar itens nele.<br /><br /> IndexCombo<br /> O mesmo que DynamicCombo, exceto que ele gera o índice do item em vez de seu texto.<br /><br /> MRUCombo<br /> Preenchido pelo ambiente de desenvolvimento integrado (IDE) em nome de VSPackage.  O usuário pode editar nessa caixa de combinação. O IDE lembra-se até as último 16 entradas por caixa de combinação.<br /><br /> Quando o usuário seleciona algo na caixa de combinação ou insere algo novo, o IDE notifica o VSPackage apropriado.|  
+|tipo|Opcional. Um valor enumerado que especifica o tipo de botão.<br /><br /> Se não especificado, usa o botão.<br /><br /> DropDownCombo<br /> O VSPackage é responsável por preencher o conteúdo desta caixa de combinação. O usuário não é possível digitar nada na caixa de texto nesse menu suspenso.<br /><br /> DynamicCombo<br /> O VSPackage é responsável por preencher o conteúdo dessa caixa de combinação. O usuário pode editar essa combinação e também selecionar itens nele.<br /><br /> IndexCombo<br /> O mesmo que DynamicCombo, exceto que ele gera o índice do item em vez de seu texto.<br /><br /> MRUCombo<br /> Preenchido pelo ambiente de desenvolvimento integrado (IDE) em nome o VSPackage.  O usuário pode editar nessa caixa de combinação. O IDE lembra-se até as último 16 entradas por caixa de combinação.<br /><br /> Quando o usuário seleciona algo na caixa de combinação ou insere algo novo, o IDE notifica o VSPackage apropriado.|  
 |Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -101,4 +87,4 @@ Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos d
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

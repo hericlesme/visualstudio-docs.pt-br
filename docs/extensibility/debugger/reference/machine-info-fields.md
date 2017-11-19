@@ -1,47 +1,31 @@
 ---
-title: MACHINE_INFO_FIELDS | Documentos do Microsoft
+title: MACHINE_INFO_FIELDS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- MACHINE_INFO_FIELDS
-helpviewer_keywords:
-- MACHINE_INFO_FIELDS enumeration
+f1_keywords: MACHINE_INFO_FIELDS
+helpviewer_keywords: MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 499810945caa898848c9d4d8a849e772ee4065c7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 428d5cd0eccc67c95c1866afed139402ad1c22cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-Especifica o tipo de informação para recuperar para um determinado computador.  
+Especifica o tipo de informações para recuperar para um determinado computador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
@@ -50,7 +34,7 @@ enum enum_MACHINE_INFO_FIELDS {
 typedef DWORD MACHINE_INFO_FIELDS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  

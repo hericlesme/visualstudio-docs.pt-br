@@ -1,36 +1,36 @@
 ---
-title: "How to: Add Nodes to the Workspace from the Start View | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Como: adicionar nós ao espaço de trabalho do modo de exibição inicial | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0c3f1572306dfe26d50d51ba0e83037debaf1c7b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Add Nodes to the Workspace from the Start View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Este tópico descreve como adicionar nós globais para o [XML Schema Designer Workspace](../xml-tools/xml-schema-designer-workspace.md) do [Start View](../xml-tools/start-view.md).  
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Como: Adicionar nós ao modo de exibição de espaço de trabalho do início
+Este tópico descreve como adicionar nós global para o [espaço de trabalho de Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md) do [exibição início](../xml-tools/start-view.md).  
   
-### Para adicionar nós do início para o modo de espaço de trabalho  
+### <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Para adicionar nós do início para o modo de espaço de trabalho  
   
-1.  Siga as etapas no [How to: Create and Edit an XSD Schema File](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1.  Siga as etapas em [como: criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Clique com o botão direito no editor XML e selecione **Exibir Designer**.  
+2.  No Editor de XML e selecione **Designer de exibição**.  
   
      O modo de Início aparece.  
   
-     No **definir detalhes do esquema** seção, observe que há dois \(**2**\) **tipos complexos globais**.  
+     No **definir detalhes de esquema** seção, observe que há dois (**2**) **tipos complexos globais**.  
   
-3.  Clique no link de **adicionar** à direita de direção de **Tipos Complexos Globais** .  
+3.  Clique no **adicionar** link à direita do **tipos complexos globais** título.  
   
      Os nós de tipo complexo de `USAddress` e de `PurchaseOrderType` aparecerão na superfície de design do modo de gráfico.

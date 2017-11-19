@@ -1,55 +1,40 @@
 ---
-title: 'Como: registrar eventos de Buffer de texto com a API herdada | Documentos do Microsoft'
+title: 'Como: registrar para eventos de Buffer de texto com a API herdado | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], legacy - register for text buffer events
+helpviewer_keywords: editors [Visual Studio SDK], legacy - register for text buffer events
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b7da1dc26631294b6e41aa6335f2dca064c2831d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fabdf30480666ee3bc24bf3d68af4cc0dcc1ccb6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Como: registrar eventos de Buffer de texto com a API herdada
-Se você estiver acessando o buffer de texto usando a API herdada, você deve se registrar para eventos de buffer de texto, conforme mostrado no procedimento a seguir.  
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Como: registrar eventos de Buffer de texto com a API herdado de
+Se você estiver acessando o buffer de texto usando a API herdada, você deve registrar para eventos de buffer de texto conforme mostrado no procedimento a seguir.  
   
 ### <a name="to-advise-text-buffer-events"></a>Para eventos de buffer de texto de aviso  
   
-1.  De um ponteiro para uma das interfaces no <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>, chame `QueryInterface` de um ponteiro para <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> </xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>  
+1.  De um ponteiro para uma das interfaces no <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>, chame `QueryInterface` para um ponteiro para <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
   
-2.  Chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>método e passar a ID de interface de eventos para o qual você deseja registrar.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>  
+2.  Chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A> método e passar a ID de interface de eventos para o qual você deseja registrar.  
   
-     Por exemplo, se você deseja registrar para <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>, em seguida, passamos uma ID de IID_IVsTextLinesEvents interface.</xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>  
+     Por exemplo, se você deseja registrar para <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>, em seguida, passar uma ID de IID_IVsTextLinesEvents de interface.  
   
-     O buffer de texto retorna um ponteiro para o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>interface para o objeto de ponto de conexão apropriado.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>  
+     O buffer de texto retorna um ponteiro para o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para o objeto de ponto de conexão apropriado.  
   
-3.  Usando esse ponteiro, chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>método, transmitindo um ponteiro para a implementação da interface de eventos para o qual você deseja registrar, por exemplo, o `IVsTextLinesEvents` interface.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>  
+3.  Usando esse ponteiro, chame o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> método, passando um ponteiro para a implementação da interface de eventos para o qual você deseja registrar, por exemplo, o `IVsTextLinesEvents` interface.  
   
-     O ambiente retorna um cookie que você pode usar para parar de ouvir eventos chamando o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>método.</xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>  
+     O ambiente retorna um cookie que você pode usar para parar de escutar eventos chamando o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A> método.  
   
 ## <a name="see-also"></a>Consulte também  
- [Eventos de Buffer de texto na API herdada](../extensibility/text-buffer-events-in-the-legacy-api.md)
+ [Eventos de Buffer de texto na API herdado](../extensibility/text-buffer-events-in-the-legacy-api.md)

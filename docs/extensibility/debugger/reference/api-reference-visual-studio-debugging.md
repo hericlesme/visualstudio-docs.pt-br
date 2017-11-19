@@ -1,43 +1,28 @@
 ---
-title: "Referência da API (depuração no Visual Studio) | Documentos do Microsoft"
+title: "Referência da API (depuração no Visual Studio) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugging [Debugging SDK], API reference
+helpviewer_keywords: debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c9912ea24d3077c18ec5e054f8683e0160e352fa
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8ead1571856fa04e10103fbf2274dc0e22295154
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referência da API (depuração no Visual Studio)
-A seção de referência inclui uma visão geral conceitual da API, um guia que mostra a sintaxe e o uso de todos os elementos de API e uma variedade de exemplos de código. Todas as referências são listadas em ordem alfabética por categoria.  
+A seção de referência inclui uma visão geral conceitual da API, um guia que mostra a sintaxe e uso de todos os elementos de API e uma variedade de exemplos de código. Todas as referências são listadas em ordem alfabética por categoria.  
   
- A tabela a seguir mostra o comum `HRESULT` valores retornados por métodos.  
+ A tabela a seguir mostra comuns `HRESULT` valores retornados pelos métodos.  
   
 |Nome|Descrição|Valor|  
 |----------|-----------------|-----------|  
@@ -48,13 +33,13 @@ A seção de referência inclui uma visão geral conceitual da API, um guia que 
 |E_INVALIDARG|Um ou mais argumentos são inválidos.|0x80070057|  
 |E_NOINTERFACE|Não há suporte para essa interface.|0x80004002|  
 |E_POINTER|Ponteiro inválido.|0x80004003|  
-|E_HANDLE|Manuseio inválido.|0x80070006|  
+|E_HANDLE|Identificador inválido.|0x80070006|  
 |E_ABORT|Operação anulada.|0x80004004|  
 |E_FAIL|Falha inesperada.|0x80004005|  
-|E_ACCESSDENIED|Geral erro acesso negado.|0x80070005|  
+|E_ACCESSDENIED|Erro de acesso geral negado.|0x80070005|  
   
 > [!NOTE]
->  Quando um [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depuração método retorna `S_OK`, presume-se que todos os ponteiros de parâmetro são válidos, ou seja, nenhuma validação é realizada nos ponteiros de parâmetro quando `S_OK` é retornado.  
+>  Quando um [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depuração método retorna `S_OK`, presume-se que todo ponteiros de parâmetro são válidos, ou seja, nenhuma validação é realizada no limite ponteiros de parâmetro quando `S_OK` é retornado.  
   
 > [!NOTE]
 >  Inválido ou `NULL` [parâmetros out] pode causar falhas no IDE.  

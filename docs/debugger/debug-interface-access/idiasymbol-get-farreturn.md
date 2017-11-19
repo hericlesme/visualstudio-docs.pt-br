@@ -1,54 +1,52 @@
 ---
-title: "IDiaSymbol::get_farReturn | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSymbol::get_farReturn"
+title: ': Get_farreturn | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_farReturn method
 ms.assetid: 141df0e9-f4d9-4330-a043-5d9ea865257f
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df05c273b0b8bff4b30cf5940c825e3ee3bdcaf2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_farReturn
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um sinalizador que especifica se a função contém um retorno distante.  
+# <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
+Recupera um sinalizador que especifica se a função contém um retorno.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```C++  
 HRESULT get_farReturn(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pFlag`  
- \[in\] Retorna `TRUE` se a função usa o retorno distante, caso contrário, retornará `FALSE`.  
+ [in] Retorna `TRUE` se a função usa um retorno, caso contrário, retornará `FALSE`.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descrição|  
-|---------------|---------------|  
+|-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|V 8.0 do SDK DIA|  
+|Versão:|V DIA SDK 8.0|  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

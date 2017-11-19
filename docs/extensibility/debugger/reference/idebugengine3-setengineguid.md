@@ -1,40 +1,24 @@
 ---
-title: IDebugEngine3::SetEngineGuid | Documentos do Microsoft
+title: IDebugEngine3::SetEngineGuid | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEngine3::SetEngineGuid
-helpviewer_keywords:
-- IDebugEngine3::SetEngineGuid
+f1_keywords: IDebugEngine3::SetEngineGuid
+helpviewer_keywords: IDebugEngine3::SetEngineGuid
 ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4ecc4b4ae450c987ba50f788b89adf3f526df765
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f31bc27cdfe197a118d1b696225ea332fc0026ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 Esse método define o mecanismo de depuração (DE) `GUID`.  
@@ -59,7 +43,7 @@ int SetEngineGuid(
  [in] `GUID` do mecanismo.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retornará o código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

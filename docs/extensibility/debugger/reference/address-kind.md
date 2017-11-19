@@ -1,40 +1,24 @@
 ---
-title: ADDRESS_KIND | Documentos do Microsoft
+title: ADDRESS_KIND | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- ADDRESS_KIND
-helpviewer_keywords:
-- ADDRESS_KIND enumeration
+f1_keywords: ADDRESS_KIND
+helpviewer_keywords: ADDRESS_KIND enumeration
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 12446992390bbe63b8ced91b730f9721c3e2e5ef
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c5b35864a7a4e6d5aa0882ac9c0492e0e160ad53
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 Especifica os tipos de endereços.  
@@ -56,7 +40,7 @@ enum enum_ADDRESS_KIND {
 typedef DWORD ADDRESS_KIND;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_ADDRESS_KIND {  
    ADDRESS_KIND_NATIVE                  = 0x0001,  
    ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,  
@@ -99,7 +83,7 @@ public enum enum_ADDRESS_KIND {
  Um valor de retorno, representado pelo [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) estrutura.  
   
 ## <a name="remarks"></a>Comentários  
- O [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) método retorna o [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estrutura que contém uma união de estruturas possíveis, o [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura. O `dwKind` campo o `DEBUG_ADDRESS_UNION` estrutura mantém o `ADDRESS_KIND` valor e descreve como interpretar o campo de união.  
+ O [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) método retorna o [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estrutura que contém uma união de possíveis estruturas, o [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura. O `dwKind` campo o `DEBUG_ADDRESS_UNION` estrutura mantém o `ADDRESS_KIND` valor e descreve como interpretar o campo de união.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: sh.h  

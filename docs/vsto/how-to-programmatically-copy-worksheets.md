@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Copy Worksheets | Microsoft Docs'
+title: 'Como: copiar planilhas programaticamente | Microsoft Docs'
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,46 +14,47 @@ helpviewer_keywords:
 - worksheets, copying
 - Excel [Office development in Visual Studio], copying worksheets
 ms.assetid: e49e03f5-7b2f-416b-b5fe-0965336c47e1
-caps.latest.revision: 31
-author: kempb
-ms.author: kempb
+caps.latest.revision: "31"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: cec0a7c0408205f187572c191c1335a21484da86
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: f8a9e0e088df3654778177012a31a56d6fcb7451
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-copy-worksheets"></a>How to: Programmatically Copy Worksheets
-  You can create a copy of a worksheet, and insert that worksheet before or after an existing worksheet in the workbook. If you do not specify where to insert the worksheet, Excel creates a new workbook to contain the new worksheet.  
+# <a name="how-to-programmatically-copy-worksheets"></a>Como copiar planilhas programaticamente
+  Você pode criar uma cópia de uma planilha e inserir essa planilha antes ou depois de uma planilha existente na pasta de trabalho. Se você não especificar onde inserir a planilha, o Excel cria uma nova pasta de trabalho para conter a nova planilha.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 > [!NOTE]  
->  Whether you copy the worksheet programmatically, or the end user copies the worksheet manually, there is no code behind the new worksheet and controls on the new worksheet do not function. This is because the newly copied worksheet is a <xref:Microsoft.Office.Interop.Excel.Worksheet> object and not a <xref:Microsoft.Office.Tools.Excel.Worksheet> host item. Windows Forms controls and host controls can only be added to host items. For more information, see [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+>  Se você copiar a planilha programaticamente, ou o usuário final copia a planilha manualmente, não há nenhum código por trás da nova planilha e controles na nova planilha não funcionam. Isso ocorre porque a planilha copiada recentemente é um <xref:Microsoft.Office.Interop.Excel.Worksheet> objeto e não um <xref:Microsoft.Office.Tools.Excel.Worksheet> item de host. Controles de host e controles de formulários do Windows só podem ser adicionados aos itens de host. Para obter mais informações, consulte [limitações programáticas de itens de Host e controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
-### <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-document-level-customization"></a>To add a copied worksheet to a workbook in a document-level customization  
+### <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-document-level-customization"></a>Para adicionar uma planilha copiada para uma pasta de trabalho em uma personalização no nível do documento  
   
-1.  Use the <xref:Microsoft.Office.Interop.Excel.Worksheets.Copy%2A> method to copy the first worksheet in the current workbook and place the copy after the third sheet.  
+1.  Use o <xref:Microsoft.Office.Interop.Excel.Worksheets.Copy%2A> método para copiar a primeira planilha na pasta de trabalho atual e colocar a cópia após a terceira planilha.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#16](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#16)]  [!code-vb[Trin_VstcoreExcelAutomation#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#16)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#16](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#16)]
+     [!code-vb[Trin_VstcoreExcelAutomation#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#16)]  
   
-### <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-vsto-add-in"></a>To add a copied worksheet to a workbook in a VSTO Add-in  
+### <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-vsto-add-in"></a>Para adicionar uma planilha copiada para uma pasta de trabalho em um suplemento do VSTO  
   
-1.  Use the <xref:Microsoft.Office.Interop.Excel.Worksheets.Copy%2A> method to copy the first worksheet in the current workbook and place the copy after the third sheet.  
+1.  Use o <xref:Microsoft.Office.Interop.Excel.Worksheets.Copy%2A> método para copiar a primeira planilha na pasta de trabalho atual e colocar a cópia após a terceira planilha.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#12](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#12)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#12](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#12)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#12](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#12)]
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#12](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#12)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [How to: Programmatically Add New Worksheets to Workbooks](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [How to: Programmatically Delete Worksheets from Workbooks](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [How to: Programmatically Select Worksheets](../vsto/how-to-programmatically-select-worksheets.md)   
- [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>Consulte também  
+ [Trabalhando com planilhas](../vsto/working-with-worksheets.md)   
+ [Itens de host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md)   
+ [Como: adicionar novas planilhas a pastas de trabalho programaticamente](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Como: excluir planilhas programaticamente de pastas de trabalho](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Como: Selecionar planilhas programaticamente](../vsto/how-to-programmatically-select-worksheets.md)   
+ [Automatizando o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Limitações programáticas de itens de Host e controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

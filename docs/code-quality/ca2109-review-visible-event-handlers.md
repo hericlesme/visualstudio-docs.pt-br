@@ -1,11 +1,10 @@
 ---
-title: 'CA2109: Review visible event handlers | Microsoft Docs'
+title: "CA2109: Revisar manipuladores de eventos visíveis | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,71 +14,56 @@ helpviewer_keywords:
 - ReviewVisibleEventHandlers
 - CA2109
 ms.assetid: 8f8fa0ee-e94e-400e-b516-24d8727725d7
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 930c98a6b91eee69c3e145479694a58050dd3d22
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d558526f89b96c01e8bc7aba593d9c2b7f2654b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Review visible event handlers
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: revisar manipuladores de eventos visíveis
 |||  
 |-|-|  
-|TypeName|ReviewVisibleEventHandlers|  
+|NomeDoTipo|ReviewVisibleEventHandlers|  
 |CheckId|CA2109|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Categoria|Microsoft.Security|  
+|Alteração Significativa|Quebra|  
   
-## <a name="cause"></a>Cause  
- A public or protected event-handling method was detected.  
+## <a name="cause"></a>Causa  
+ Um método público ou protegido de tratamento de eventos foi detectado.  
   
-## <a name="rule-description"></a>Rule Description  
- An externally visible event-handling method presents a security issue that requires review.  
+## <a name="rule-description"></a>Descrição da Regra  
+ Um método de manipulação de eventos visível externamente apresenta um problema de segurança que requer a revisão.  
   
- Event-handling methods should not be exposed unless absolutely necessary. An event handler, a delegate type, that invokes the exposed method can be added to any event as long as the handler and event signatures match. Events can potentially be raised by any code, and are frequently raised by highly trusted system code in response to user actions such as clicking a button. Adding a security check to an event-handling method does not prevent code from registering an event handler that invokes the method.  
+ Os métodos de tratamento de eventos não devem ser expostos, a menos que seja absolutamente necessário. Um manipulador de eventos, um tipo de delegado, que chama o método exposto pode ser adicionado a qualquer evento desde que as assinaturas de evento e manipulador correspondem. Eventos potencialmente podem ser gerados por qualquer código e frequentemente são gerados pelo código do sistema altamente confiáveis em resposta a ações do usuário, como clicar em um botão. Adicionar uma verificação de segurança para um método de manipulação de eventos não impedir que o código ao registrar um manipulador de eventos que chama o método.  
   
- A demand cannot reliably protect a method invoked by an event handler. Security demands help protect code from untrusted callers by examining the callers on the call stack. Code that adds an event handler to an event is not necessarily present on the call stack when the event handler's methods run. Therefore, the call stack might have only highly trusted callers when the event handler method is invoked. This causes demands made by the event handler method to succeed. Also, the demanded permission might be asserted when the method is invoked. For these reasons, the risk of not fixing a violation of this rule can only be assessed after reviewing the event-handling method. When you review your code, consider the following issues:  
+ Uma demanda de forma confiável não pode proteger um método invocado por um manipulador de eventos. Demandas de segurança ajuda proteger o código de chamadores não confiáveis, examinando os chamadores na pilha de chamadas. Código que adiciona um manipulador de eventos para um evento não é necessariamente presente na pilha de chamadas quando os métodos do manipulador de eventos é executado. Portanto, a pilha de chamadas pode ter apenas altamente confiável chamadores quando o método de manipulador de eventos é chamado. Isso faz com que as demandas feitas pelo método de manipulador de eventos seja bem-sucedida. Além disso, a permissão exigida pode ser declarada quando o método é invocado. Por esses motivos, o risco de não corrigir uma violação desta regra pode ser avaliado somente depois de examinar o método de manipulação de eventos. Ao revisar seu código, considere os seguintes problemas:  
   
--   Does your event handler perform any operations that are dangerous or exploitable, such as asserting permissions or suppressing unmanaged code permission?  
+-   O manipulador de eventos realiza todas as operações que são perigosas ou explorável como declarando permissões ou suprimindo permissão de código não gerenciado?  
   
--   What are the security threats to and from your code because it can run at any time with only highly trusted callers on the stack?  
+-   Quais são as ameaças de segurança de seu código e como ele pode ser executado a qualquer momento com apenas altamente confiável chamadores na pilha?  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, review the method and evaluate the following:  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, examine o método e avaliar o seguinte:  
   
--   Can you make the event-handling method non-public?  
+-   Você pode fazer o método de manipulação de eventos não público?  
   
--   Can you move all dangerous functionality out of the event handler?  
+-   Você pode mover todas as funcionalidades perigosas fora do manipulador de eventos?  
   
--   If a security demand is imposed, can this be accomplished in some other manner?  
+-   Se uma exigência de segurança é imposta, isso pode ser feito em alguma outra forma?  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule only after a careful security review to make sure that your code does not pose a security threat.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Suprima um aviso dessa regra somente após uma revisão de segurança cuidado para garantir que seu código não representem uma ameaça de segurança.  
   
-## <a name="example"></a>Example  
- The following code shows an event-handling method that can be misused by malicious code.  
+## <a name="example"></a>Exemplo  
+ O código a seguir mostra um método de manipulação de eventos que pode ser usados incorretamente por códigos mal-intencionados.  
   
  [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>   
  <xref:System.EventArgs?displayProperty=fullName>   
- [Security Demands](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ [Demandas de segurança](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

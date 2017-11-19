@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating Your First Document-Level Customization for Excel | Microsoft Docs'
+title: "Passo a passo: Criando a primeira personalização no nível do documento para Excel | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,170 +15,170 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
 ms.assetid: 785d3b86-5ed5-4e0d-b5ee-896b6b1330ac
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 65318510dd4aa9fdfb78fcb21b74c72b2ddacf18
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 046f5376891c62278b3756078f82b9e5db3b28d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Walkthrough: Creating Your First Document-Level Customization for Excel
-  This introductory walkthrough shows you how to create a document-level customization for Microsoft Office Excel. The features that you create in this kind of solution are available only when a specific workbook is open. You cannot use a document-level customization to make application-wide changes, for example, displaying a new Ribbon tab when any workbook is open.  
+# <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Instruções passo a passo: criando a primeira personalização no nível do documento para Excel
+  Este passo a passo introdutório mostra como criar uma personalização no nível do documento para o Microsoft Office Excel. Os recursos que você criar este tipo de solução estão disponíveis somente quando uma determinada pasta de trabalho é aberta. Você não pode usar uma personalização no nível do documento para fazer alterações no nível de aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer pasta de trabalho é aberta.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ Esta explicação passo a passo ilustra as seguintes tarefas:  
   
--   Creating an Excel workbook project.  
+-   Criando um projeto de pasta de trabalho do Excel.  
   
--   Adding text to a worksheet that is hosted in the Visual Studio designer.  
+-   Adicionando texto em uma planilha que está hospedada no designer do Visual Studio.  
   
--   Writing code that uses the object model of Excel to add text to the customized worksheet when it is opened.  
+-   Escrevendo código que usa o modelo de objeto do Excel para adicionar texto à planilha personalizada quando ele é aberto.  
   
--   Building and running the project to test it.  
+-   Criar e executar o projeto para testá-lo.  
   
--   Cleaning up the completed project to remove unnecessary build files and security settings from your development computer.  
+-   A limpeza do projeto concluído para remover arquivos de compilação desnecessários e configurações de segurança de seu computador de desenvolvimento.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>Pré-requisitos  
+ Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Creating the Project  
+## <a name="creating-the-project"></a>Criando o Projeto  
   
-#### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>To create a new Excel workbook project in Visual Studio  
+#### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Para criar um novo projeto de pasta de trabalho do Excel no Visual Studio  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  On the **File** menu, point to **New**, and then click **Project**.  
+2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
+3.  No painel de modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.  
   
-4.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
+4.  Em expandidos **Office/SharePoint** nó, selecione o **suplementos do Office** nó.  
   
-5.  In the list of project templates, choose an Excel VSTO Add-in project.  
+5.  Na lista de modelos de projeto, escolha um projeto de suplemento do VSTO do Excel.  
   
-6.  In the **Name** box, type **FirstWorkbookCustomization**.  
+6.  No **nome** , digite **FirstWorkbookCustomization**.  
   
-7.  Click **OK**.  
+7.  Clique em **OK**.  
   
-     The **Visual Studio Tools for Office Project Wizard** opens.  
+     O **Visual Studio Tools para Office Project Wizard** é aberto.  
   
-8.  Select **Create a new document**, and click **OK**.  
+8.  Selecione **criar um novo documento**e clique em **Okey**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the **FirstWorkbookCustomization** project, and adds the following files to the project.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstWorkbookCustomization** do projeto e adiciona os seguintes arquivos ao projeto.  
   
-    -   *FirstWorkbookCustomization*.xlsx - Represents the Excel workbook in the project. Contains all the worksheets and charts.  
+    -   *FirstWorkbookCustomization*. xlsx - representa a pasta de trabalho do Excel no projeto. Contém todas as planilhas e gráficos.  
   
-    -   Sheet1 (.vb file for Visual Basic or .cs file for Visual C#) - A worksheet that provides the design surface and the code for the first worksheet in the workbook. For more information, see [Worksheet Host Item](../vsto/worksheet-host-item.md).  
+    -   Planilha1 (arquivo. vb para o arquivo. cs para Visual c# ou Visual Basic) - uma planilha que fornece a superfície de design e o código para a primeira planilha na pasta de trabalho. Para obter mais informações, consulte [Item de Host de planilha](../vsto/worksheet-host-item.md).  
   
-    -   Sheet2 (.vb file for Visual Basic or .cs file for Visual C#) - A worksheet that provides the design surface and the code for the second worksheet in the workbook.  
+    -   Planilha2 (arquivo. vb para o arquivo. cs para Visual c# ou Visual Basic) - uma planilha que fornece a superfície de design e o código para a segunda planilha na pasta de trabalho.  
   
-    -   Sheet3 (.vb file for Visual Basic or .cs file for Visual C#) - A worksheet that provides the design surface and the code for the third worksheet in the workbook.  
+    -   Sheet3 (arquivo. vb para o arquivo. cs para Visual c# ou Visual Basic) - uma planilha que fornece a superfície de design e o código para a terceira planilha na pasta de trabalho.  
   
-    -   ThisWorkbook (.vb file for Visual Basic or .cs file for Visual C#) - Contains the design surface and the code for workbook-level customizations. For more information, see [Workbook Host Item](../vsto/workbook-host-item.md).  
+    -   ThisWorkbook (arquivo. vb para o Visual Basic) ou arquivo. cs para Visual c# - contém a superfície de design e o código para personalizações no nível de pasta de trabalho. Para obter mais informações, consulte [Item de Host de pasta de trabalho](../vsto/workbook-host-item.md).  
   
-     The Sheet1 code file is opened automatically in the designer.  
+     O arquivo de código Planilha1 é aberto automaticamente no designer.  
   
-## <a name="closing-and-reopening-worksheets-in-the-designer"></a>Closing and Reopening Worksheets in the Designer  
- If you deliberately or accidentally close a workbook or a worksheet in the designer while you are developing your project, you can reopen it.  
+## <a name="closing-and-reopening-worksheets-in-the-designer"></a>Fechar e reabrir planilhas no Designer  
+ Se você deliberadamente ou acidentalmente fechar uma pasta de trabalho ou em uma planilha no designer enquanto você estiver desenvolvendo seu projeto, você poderá reabri-lo.  
   
-#### <a name="to-close-and-reopen-a-worksheet-in-the-designer"></a>To close and reopen a worksheet in the designer  
+#### <a name="to-close-and-reopen-a-worksheet-in-the-designer"></a>Fechar e reabrir uma planilha no designer  
   
-1.  Close the workbook by clicking the **Close** button (X) for the designer window.  
+1.  Feche a pasta de trabalho clicando o **fechar** botão (X) para a janela do designer.  
   
-2.  In **Solution Explorer**, right-click the **Sheet1** code file, and click **View Designer**.  
+2.  Em **Solution Explorer**, com o botão direito do **Planilha1** arquivo de código e, em seguida, clique em **Designer de exibição**.  
   
-     \- or -  
+     \- ou -  
   
-     In **Solution Explorer**, double-click the **Sheet1** code file.  
+     Em **Solution Explorer**, clique duas vezes o **Planilha1** arquivo de código.  
   
-## <a name="adding-text-to-a-worksheet-in-the-designer"></a>Adding Text to a Worksheet in the Designer  
- You can design the user interface (UI) of your customization by modifying the worksheet that is open in the designer. For example, you can add text to cells, apply formulas, or add Excel controls. For more information about how to use the designer, see [Office Projects in the Visual Studio Environment](../vsto/office-projects-in-the-visual-studio-environment.md).  
+## <a name="adding-text-to-a-worksheet-in-the-designer"></a>Adicionando texto em uma planilha no Designer  
+ Você pode criar a interface do usuário (UI) de sua personalização modificando a planilha que está aberta no designer. Por exemplo, adicionar texto às células, aplicar fórmulas ou adicionar controles do Excel. Para obter mais informações sobre como usar o designer, consulte [projetos do Office no ambiente do Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).  
   
-#### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>To add text to a worksheet by using the designer  
+#### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>Para adicionar texto a uma planilha usando o designer  
   
-1.  In the worksheet that is open in the designer, select cell **A1**, and then type the following text.  
+1.  Na planilha que está aberta no designer, selecione a célula **A1**e, em seguida, digite o texto a seguir.  
   
-     **This text was added by using the designer.**  
+     **Este texto foi adicionado usando o designer.**  
   
 > [!WARNING]  
->  If you add this line of text to cell **A2**, it will be overwritten by other code in this example.  
+>  Se você adicionar essa linha de texto para a célula **A2**, ele será substituído por outro código neste exemplo.  
   
-## <a name="adding-text-to-a-worksheet-programmatically"></a>Adding Text to a Worksheet Programmatically  
- Next, add code to the Sheet1 code file. The new code uses the object model of Excel to add a second line of text to the workbook. By default, the Sheet1 code file contains the following generated code:  
+## <a name="adding-text-to-a-worksheet-programmatically"></a>Adicionando texto em uma planilha programaticamente  
+ Em seguida, adicione código ao arquivo de código Planilha1. O novo código usa o modelo de objeto do Excel para adicionar uma segunda linha de texto para a pasta de trabalho. Por padrão, o arquivo de código Sheet1 contém o seguinte código gerado:  
   
--   A partial definition of the `Sheet1` class, which represents the programming model of the worksheet and provides access to the object model of Excel. For more information, [Worksheet Host Item](../vsto/worksheet-host-item.md) and [Word Object Model Overview](../vsto/word-object-model-overview.md). The remainder of the `Sheet1` class is defined in a hidden code file that you should not modify.  
+-   Uma definição parcial do `Sheet1` classe que representa o modelo de programação da planilha e fornece acesso ao modelo de objeto do Excel. Para obter mais informações, [Item de Host de planilha](../vsto/worksheet-host-item.md) e [visão geral de modelo de objeto do Word](../vsto/word-object-model-overview.md). O restante do `Sheet1` classe é definida em um arquivo de código oculto que você não deve modificar.  
   
--   The `Sheet1_Startup` and `Sheet1_Shutdown` event handlers. These event handlers are called when Excel loads and unloads your customization. Use these event handlers to initialize your customization when it is loaded, and to clean up resources used by your customization when it is unloaded. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
+-   O `Sheet1_Startup` e `Sheet1_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o Excel carrega e descarrega a personalização. Use esses manipuladores de eventos para inicializar a personalização quando ele é carregado e para limpar os recursos usados pela sua personalização quando ela é descarregada. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   
-#### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>To add a second line of text to the worksheet by using code  
+#### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Para adicionar uma segunda linha de texto à planilha usando código  
   
-1.  In **Solution Explorer**, right-click **Sheet1**, and then click **View Code**.  
+1.  Em **Solution Explorer**, clique com botão direito **Planilha1**e, em seguida, clique em **Exibir código**.  
   
-     The code file opens in Visual Studio.  
+     O arquivo de código é aberto no Visual Studio.  
   
-2.  Replace the `Sheet1_Startup` event handler with the following code. When Sheet1 is opened, this code adds a second line of text to the worksheet.  
+2.  Substitua o `Sheet1_Startup` manipulador de eventos com o código a seguir. Quando Sheet1 é aberto, esse código adiciona uma segunda linha de texto à planilha.  
   
-     [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]  [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]  
+     [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
+     [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]  
   
-## <a name="testing-the-project"></a>Testing the Project  
+## <a name="testing-the-project"></a>O projeto de teste  
   
-#### <a name="to-test-your-workbook"></a>To test your workbook  
+#### <a name="to-test-your-workbook"></a>Para testar a sua pasta de trabalho  
   
-1.  Press **F5** to build and run your project.  
+1.  Pressione **F5** para compilar e executar seu projeto.  
   
-     When you build the project, the code is compiled into an assembly that is associated with the workbook. Visual Studio puts a copy of the workbook and the assembly in the build output folder for the project, and it configures the security settings on the development computer to enable the customization to run. For more information, see [Building Office Solutions](../vsto/building-office-solutions.md).  
+     Quando você compila o projeto, o código é compilado em um assembly que está associado com a pasta de trabalho. O Visual Studio coloca uma cópia da pasta de trabalho e o assembly na pasta de saída de compilação do projeto, e ele configura as configurações de segurança no computador de desenvolvimento para habilitar a personalização executar. Para obter mais informações, consulte [criando soluções do Office](../vsto/building-office-solutions.md).  
   
-2.  In the workbook, verify that you see the following text.  
+2.  Na pasta de trabalho, verifique se que você vê o seguinte texto.  
   
-     **This text was added by using the designer.**  
+     **Este texto foi adicionado usando o designer.**  
   
-     **This text was added by using code.**  
+     **Este texto foi adicionado por meio de código.**  
   
-3.  Close the workbook.  
+3.  Feche a pasta de trabalho.  
   
-## <a name="cleaning-up-the-project"></a>Cleaning up the Project  
- When you finish developing a project, you should remove the files in the build output folder and the security settings created by the build process.  
+## <a name="cleaning-up-the-project"></a>O projeto de limpeza  
+ Quando você terminar de desenvolvimento de um projeto, você deve remover os arquivos na pasta de saída de compilação e as configurações de segurança criadas pelo processo de compilação.  
   
-#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>To clean up the completed project on your development computer  
+#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Para limpar o projeto concluído no computador de desenvolvimento  
   
-1.  In Visual Studio, on the **Build** menu, click **Clean Solution**.  
+1.  No Visual Studio, no **criar** menu, clique em **limpar solução**.  
   
-## <a name="next-steps"></a>Next Steps  
- Now that you have created a basic document-level customization for Excel, you can learn more about how to develop customizations from these topics:  
+## <a name="next-steps"></a>Próximas etapas  
+ Agora que você criou uma personalização básica de nível de documento para Excel, você pode aprender mais sobre como desenvolver personalizações destes tópicos:  
   
--   General programming tasks that you can perform in document-level customizations: [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md).  
+-   Tarefas gerais de programação que você pode executar em personalizações no nível do documento: [personalizações de programação de nível de documento](../vsto/programming-document-level-customizations.md).  
   
--   Programming tasks that are specific to document-level customizations for Excel: [Excel Solutions](../vsto/excel-solutions.md).  
+-   Tarefas de programação que são específicas para personalizações no nível de documento para Excel: [soluções do Excel](../vsto/excel-solutions.md).  
   
--   Using the object model of Excel: [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
+-   Usando o modelo de objeto do Excel: [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).  
   
--   Customizing the UI of Excel, for example, by adding a custom tab to the Ribbon or creating your own actions pane: [Office UI Customization](../vsto/office-ui-customization.md).  
+-   Personalizando a interface do usuário do Excel, por exemplo, por adicionar uma guia a faixa de opções ou criar seu próprio painel de ações: [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).  
   
--   Using extended Excel objects provided by Office development tools in Visual Studio to perform tasks that are not possible by using the Excel object model (for example, hosting managed controls on documents and binding Excel controls to data by using the Windows Forms data binding model): [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md).  
+-   Usando objetos estendidos do Excel fornecidos pelas ferramentas de desenvolvimento do Office no Visual Studio para executar tarefas que não são possíveis por meio do modelo de objeto do Excel (por exemplo, hospedagem de controles gerenciados em documentos e associando controles do Excel a dados usando o Windows Forms modelo de associação de dados): [automatizando o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md).  
   
--   Building and debugging document-level customizations for Excel: [Building Office Solutions](../vsto/building-office-solutions.md).  
+-   Compilar e depurar personalizações no nível de documento para Excel: [criando soluções do Office](../vsto/building-office-solutions.md).  
   
--   Deploying document-level customizations for Excel: [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
+-   Implantando as personalizações no nível de documento para Excel: [implantar uma solução Office](../vsto/deploying-an-office-solution.md).  
   
-## <a name="see-also"></a>See Also  
- [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Excel Solutions](../vsto/excel-solutions.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
- [Excel Object Model Overview](../vsto/excel-object-model-overview.md)   
- [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
- [Office UI Customization](../vsto/office-ui-customization.md)   
- [Building Office Solutions](../vsto/building-office-solutions.md)   
- [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
- [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
+## <a name="see-also"></a>Consulte também  
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Soluções do Excel](../vsto/excel-solutions.md)   
+ [Personalizações no nível do documento da programação](../vsto/programming-document-level-customizations.md)   
+ [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)   
+ [Automatizando o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)   
+ [Criando soluções do Office](../vsto/building-office-solutions.md)   
+ [Implantando uma solução do Office](../vsto/deploying-an-office-solution.md)   
+ [Visão geral dos modelos do Office Project](../vsto/office-project-templates-overview.md)  
   
   

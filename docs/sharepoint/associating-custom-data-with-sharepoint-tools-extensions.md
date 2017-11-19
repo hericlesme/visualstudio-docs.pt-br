@@ -1,12 +1,10 @@
 ---
-title: Associating Custom Data with SharePoint Tools Extensions | Microsoft Docs
+title: "Associando dados personalizados com o SharePoint extensões de ferramentas | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,28 +17,27 @@ helpviewer_keywords:
 - SharePoint projects, associating custom data
 - SharePoint development in Visual Studio, extensibility features
 ms.assetid: cfc87272-85a1-4c36-89e4-2662417d59ea
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2f63ba5c4457d7ca7eae2de52fde52e3ce304f8b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 3a37551f56159aaa3cda03edb6ec964a79d56da9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Associating Custom Data with SharePoint Tools Extensions
-  You can add custom data to certain objects in SharePoint tools extensions. This is useful when you have data in one part of your extension that you want to access later from other code in your extension. Instead of implementing a custom way to store and access data, you can associate the data with an object in your extension and then retrieve the data from the same object later.  
+# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Associando dados personalizados a extensões de ferramentas do SharePoint
+  Você pode adicionar dados personalizados a certos objetos em extensões de ferramentas do SharePoint. Isso é útil quando você tiver dados em uma parte de sua extensão que você deseja acessar posterior do código em sua extensão. Em vez de implementar uma maneira personalizada para armazenar e acessar dados, você pode associar os dados um objeto em sua extensão e, em seguida, recuperar os dados do mesmo objeto mais tarde.  
   
- Adding custom data to objects is also useful when you want to preserve data that is relevant to a specific item in Visual Studio. SharePoint tools extensions are loaded just once in Visual Studio, so your extension might work with several different items (such as projects, project items, or **Server Explorer** nodes) at any time. If you have custom data that is relevant only to a specific item, you can add the data to the object that represents that item.  
+ Adicionando dados personalizados a objetos também é útil quando você quiser preservar os dados que são relevantes para um item específico no Visual Studio. Extensões de ferramentas do SharePoint são carregadas apenas uma vez no Visual Studio, para sua extensão pode trabalhar com vários itens diferentes (como projetos, itens de projeto ou **Server Explorer** nós) a qualquer momento. Se você tiver dados personalizados que são relevantes apenas para um item específico, você pode adicionar os dados para o objeto que representa o item.  
   
- When you add custom data to objects in SharePoint tools extensions, the data does not persist. The data is available only during the lifespan of the object. After the object is reclaimed by garbage collection, the data is lost.  
+ Quando você adicionar dados personalizados a objetos em extensões de ferramentas do SharePoint, os dados não persistirão. Os dados estão disponíveis somente durante o tempo de vida do objeto. Depois que o objeto é recuperado pela coleta de lixo, os dados serão perdidos.  
   
- In extensions of the SharePoint project system, you can also save string data that persists after an extension is unloaded. For more information, see [Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Extensões do sistema de projeto do SharePoint, você também pode salvar os dados de cadeia de caracteres que persiste depois que uma extensão é descarregada. Para obter mais informações, consulte [salvando dados em extensões do sistema de projeto do SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="objects-that-can-contain-custom-data"></a>Objects that Can Contain Custom Data  
- You can add custom data to any object in the SharePoint tools object model that implements the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> interface. This interface defines just one property, <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, which is a collection of custom data objects. The following types implement <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
+## <a name="objects-that-can-contain-custom-data"></a>Objetos que podem conter dados personalizados  
+ Você pode adicionar dados personalizados para qualquer objeto no modelo de objeto do SharePoint ferramentas que implementa o <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> interface. Essa interface define apenas uma propriedade, <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, que é uma coleção de objetos de dados personalizado. Os seguintes tipos de implementam <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>  
   
@@ -72,23 +69,24 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>  
   
-## <a name="adding-and-retrieving-custom-data"></a>Adding and Retrieving Custom Data  
- To add custom data to an object in a SharePoint tools extension, get the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the object you want to add the data to, and then use the <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> method to add the data to the object.  
+## <a name="adding-and-retrieving-custom-data"></a>Adicionar e recuperar dados personalizados  
+ Para adicionar dados personalizados a um objeto em uma extensão de ferramentas do SharePoint, obtenha o <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriedade do objeto que você deseja adicionar os dados e, em seguida, usar o <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> para adicionar os dados ao objeto.  
   
- To retrieve custom data from an object in a SharePoint tools extension, get the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the object and then use one of the following methods:  
+ Para recuperar dados personalizados de um objeto em uma extensão de ferramentas do SharePoint, obtenha o <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriedade do objeto e, em seguida, use um dos seguintes métodos:  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. This method returns **true** if the data object exists, or **false** if it does not exist. You can use this method to retrieve instances of value types or reference types.  
+-   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Este método retorna **true** se o objeto de dados existir, ou **false** se ele não existe. Você pode usar esse método para recuperar instâncias dos tipos de valor ou tipos de referência.  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. This method returns the data object if it exits, or **null** if it does not exist. You can use this method only to retrieve instances of reference types.  
+-   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Esse método retorna os dados de objeto se ele existir, ou **nulo** se ele não existe. Você pode usar esse método somente para recuperar instâncias dos tipos de referência.  
   
- The following code example determines whether a certain data object is already associated with a project item. If the data object is not already associated with the project item, then the code adds the object to the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the project item. To see this example in the context of a larger example, see [How to: Add a Property to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+ O exemplo de código a seguir determina se um determinado objeto de dados já está associado um item de projeto. Se o objeto de dados já não está associado ao item de projeto, o código adiciona o objeto para o <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriedade do item de projeto. Para ver esse exemplo no contexto de um exemplo maior, consulte [como: adicionar uma propriedade a um tipo de Item de projeto de SharePoint personalizados](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)] [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
+ [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
+ [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
-## <a name="see-also"></a>See Also  
- [Programming Concepts and Features for SharePoint Tools Extensions](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [How to: Add a Property to SharePoint Projects](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [How to: Add a Property to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md   
+## <a name="see-also"></a>Consulte também  
+ [Conceitos de programação e recursos para extensões de ferramentas do SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
+ [Passo a passo: Criando um Item de projeto de ação personalizada com um modelo de Item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [Passo a passo: Estendendo o Gerenciador de servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Como: adicionar uma propriedade a projetos do SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [Como: adicionar uma propriedade a um tipo de Item de projeto do SharePoint personalizado] (.. /SharePoint/How-to-Add-a-property-to-a-Custom-SharePoint-Project-Item-Type.MD   
   

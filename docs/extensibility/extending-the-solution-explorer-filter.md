@@ -1,51 +1,37 @@
 ---
-title: Estendendo o filtro do Solution Explorer | Documentos do Microsoft
+title: "Estender o filtro do Pesquisador de objetos de solução | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-caps.latest.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b66d49bda2c3e621a5d3dc0bd749a760e09d77f0
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4f34f19d41f3d624c57cc6c92d51b5c19ddb2137
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="extending-the-solution-explorer-filter"></a>Estendendo o filtro do Solution Explorer
-Você pode estender **Solution Explorer** funcionalidade de filtro para mostrar ou ocultar arquivos diferentes. Por exemplo, você pode criar um filtro que mostre somente classe factory arquivos c# no **Solution Explorer**, como demonstra este passo a passo.  
+# <a name="extending-the-solution-explorer-filter"></a>Estender o filtro do Pesquisador de objetos de solução
+Você pode estender **Solution Explorer** funcionalidade para mostrar ou ocultar arquivos diferentes de filtro. Por exemplo, você pode criar um filtro que mostra somente classe fábrica arquivos c# no **Solution Explorer**, como este passo a passo demonstra.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é fornecido como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+ A partir do Visual Studio 2015, você não instalar o SDK do Visual Studio no Centro de download. Ele está incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS posteriormente. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ### <a name="create-a-visual-studio-package-project"></a>Criar um projeto de pacote do Visual Studio  
   
-1.  Crie um projeto do VSIX chamado `FileFilter`. Adicionar um modelo de item de comando personalizada chamado **FileFilter**. Para obter mais informações, consulte [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Crie um projeto do VSIX denominado `FileFilter`. Adicionar um modelo de item de comando personalizado chamado **FileFilter**. Para obter mais informações, consulte [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Adicione uma referência ao `System.ComponentModel.Composition` e `Microsoft.VisualStudio.Utilities`.  
+2.  Adicione uma referência a `System.ComponentModel.Composition` e `Microsoft.VisualStudio.Utilities`.  
   
 3.  Exibir o comando de menu no **Solution Explorer** barra de ferramentas. Abra o arquivo FileFilterPackage.vsct.  
   
@@ -73,24 +59,24 @@ Você pode estender **Solution Explorer** funcionalidade de filtro para mostrar 
   
 5.  No **projeto** campo, escolha **FileFilter**e, em seguida, escolha o **Okey** botão.  
   
-### <a name="add-the-filter-code"></a>Adicione o código do filtro  
+### <a name="add-the-filter-code"></a>Adicione o código de filtro  
   
 1.  Adicione alguns GUIDs para o arquivo FileFilterPackageGuids.cs:  
   
-    ```c#  
+    ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2.  Adicione um arquivo de classe ao projeto FileFilter chamado FileNameFilter.cs.  
+2.  Adicione um arquivo de classe ao projeto FileFilter nomeado FileNameFilter.cs.  
   
 3.  Substitua o namespace vazio e a classe vazia com o código a seguir.  
   
-     O `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` método utiliza a coleção que contém a raiz da solução (`rootItems`) e retorna a coleção de itens a serem incluídos no filtro.  
+     O `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` método usa a coleção que contém a raiz da solução (`rootItems`) e retorna a coleção de itens a serem incluídos no filtro.  
   
-     O `ShouldIncludeInFilter` método filtra os itens do **Solution Explorer** hierarquia com base na condição de que você especificar.  
+     O `ShouldIncludeInFilter` método filtra os itens a **Solution Explorer** hierarquia com base na condição de que você especificar.  
   
-    ```c#  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.ComponentModel.Composition;  
@@ -177,7 +163,7 @@ Você pode estender **Solution Explorer** funcionalidade de filtro para mostrar 
   
 4.  No FileFilter.cs, remova o código de tratamento e o posicionamento de comando do construtor FileFilter. O resultado deve ter esta aparência:  
   
-    ```c#  
+    ```csharp  
     private FileFilter(Package package)  
     {  
         if (package == null)  
@@ -191,9 +177,9 @@ Você pode estender **Solution Explorer** funcionalidade de filtro para mostrar 
   
      Remova o método ShowMessageBox() também.  
   
-5.  Em FileFilterPackage, cs, substitua o código no método Initialize () com o seguinte:  
+5.  No FileFilterPackage, cs, substitua o código no método Initialize () com o seguinte:  
   
-    ```c#  
+    ```csharp  
     protected override void Initialize()  
     {  
         Debug.WriteLine (string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));  
@@ -201,7 +187,7 @@ Você pode estender **Solution Explorer** funcionalidade de filtro para mostrar 
     }  
     ```  
   
-### <a name="test-your-code"></a>Teste seu código  
+### <a name="test-your-code"></a>Testar seu código  
   
 1.  Compile e execute o projeto. Uma segunda instância do Visual Studio é exibida. Isso é chamado de instância experimental.  
   
@@ -209,4 +195,4 @@ Você pode estender **Solution Explorer** funcionalidade de filtro para mostrar 
   
 3.  Procure o botão que você adicionou na barra de ferramentas do Gerenciador de soluções. Ele deve ser o quarto botão da esquerda.  
   
-4.  Quando você clica no botão, todos os arquivos devem ser filtrados e você deverá ver "todos os itens foram filtrados da exibição." no Solution Explorer.
+4.  Quando você clica no botão, todos os arquivos devem ser filtrados e você deverá ver "todos os itens foram filtrados da exibição." no Gerenciador de soluções.

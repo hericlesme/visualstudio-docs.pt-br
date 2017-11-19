@@ -1,54 +1,38 @@
 ---
-title: IDebugFunctionObject::CreateStringObject | Documentos do Microsoft
+title: IDebugFunctionObject::CreateStringObject | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugFunctionObject::CreateStringObject
-helpviewer_keywords:
-- IDebugFunctionObject::CreateStringObject method
+f1_keywords: IDebugFunctionObject::CreateStringObject
+helpviewer_keywords: IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ed64f6dffda7ac2581993ae8648c926c92dba063
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 60e690ebe589671e9ead6496f33f30923ea3ca36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 Cria um objeto de cadeia de caracteres.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT CreateStringObject(   
    LPCOLESTR      pcstrString,  
    IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateStringObject(  
    string      pcstrString,   
    out IDebugObject ppOjbect  

@@ -1,41 +1,26 @@
 ---
-title: "Elemento Assembly (extensão de Assistente de modelo do Visual Studio) | Documentos do Microsoft"
+title: "Elemento Assembly (extensão de Assistente de modelo do Visual Studio) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4aabc0b29f6fc771b0e22f14e887a3cb22912f9f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2adc2113d9ce1fbc2a80c9465ce403f03fc42db5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento de assembly (Extensão do Assistente de Modelo do Visual Studio)
 Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interface.  
@@ -54,7 +39,7 @@ Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interfa
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -106,5 +91,5 @@ Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interfa
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e Item](../ide/creating-project-and-item-templates.md)   
- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
+ [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

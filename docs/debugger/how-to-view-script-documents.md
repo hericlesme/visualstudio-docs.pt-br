@@ -1,54 +1,53 @@
 ---
-title: "Como exibir documentos de script | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Gerenciador de Script"
+title: 'Como: exibir documentos de Script | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: Script Explorer
 ms.assetid: 8b621e53-4508-4b4a-9995-70995b0b9ac8
-caps.latest.revision: 22
-caps.handback.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: af4230a0d0bec680be1231f37e4e0bfbe51bc459
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como exibir documentos de script
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Em versões anteriores do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], os arquivos de script do lado do cliente gerados do script do lado do servidor eram exibidos na janela Explorador de Script.  A janela Explorador de Script estava geralmente oculta, de modo que a disponibilidade de script do lado do cliente não era sempre óbvia.  
+# <a name="how-to-view-script-documents"></a>Como exibir documentos de script
+Em versões anteriores do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], os arquivos de script do lado do cliente gerados do script do lado do servidor eram exibidos na janela Explorador de Script. A janela Explorador de Script estava geralmente oculta, de modo que a disponibilidade de script do lado do cliente não era sempre óbvia.  
   
- No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], os arquivos de script do lado do cliente gerados do script do lado do servidor aparecem no Gerenciador de Soluções, que é visível por padrão.  A janela Explorador de Script foi eliminada.  
+ No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], os arquivos de script do lado do cliente gerados do script do lado do servidor aparecem no Gerenciador de Soluções, que é visível por padrão. A janela Explorador de Script foi eliminada.  
   
- Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção.  Eles aparecem no nó **Documentos de Script**.  
+ Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção. Eles aparecem no **documentos de Script** nó.  
   
- Os arquivos de script do lado do servidor são sempre visíveis.  Eles aparecem no nó **\<Nome do caminho do site\>**.  O nome do nó é semelhante a este exemplo: `c:\...\Website2\`  
+ Os arquivos de script do lado do servidor são sempre visíveis. Eles aparecem no  **\<nome de caminho do site >** nó. O nome do nó é semelhante a este exemplo:`c:\...\Website2\`  
   
-### Para exibir um documento de script do lado do servidor  
+### <a name="to-view-a-server-side-script-document"></a>Para exibir um documento de script do lado do servidor  
   
-1.  No **Gerenciador de Soluções**, abra o nó **\<Nome do caminho do site\>**.  
+1.  Em **Solution Explorer**, abra o  **\<nome de caminho do site >** nó.  
   
 2.  Clique duas vezes no arquivo de script que deseja exibir.  
   
      O arquivo de script do lado do servidor é aberto em uma janela de origem.  
   
-### Para exibir um documento de script do lado do cliente  
+### <a name="to-view-a-client-side-script-document"></a>Para exibir um documento de script do lado do cliente  
   
-1.  No **Gerenciador de Soluções**, abra o nó **Documentos de Script**.  
+1.  Em **Solution Explorer**, abra o **documentos de Script** nó.  
   
 2.  Clique duas vezes no arquivo de script que deseja exibir.  
   
      O arquivo de script do lado do cliente é aberto em uma janela de origem.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

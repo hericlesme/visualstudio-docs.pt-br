@@ -1,52 +1,38 @@
 ---
-title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Documentos do Microsoft
+title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 - IsAddressSequencePoint
 ms.assetid: 89b27c57-5295-428b-8229-a402500d8cd3
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d916bb03b4330eccfa711ddc5ac25bbfa05de02e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 757dd89d79db7e6bb1a3374de5693e8e76ca3f28
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Determina se o endereço de depuração especificado é um ponto de sequência.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT IsAddressSequencePoint(  
    IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsAddressSequencePoint(  
    IDebugAddress pAddress  
 );  
@@ -54,15 +40,15 @@ int IsAddressSequencePoint(
   
 #### <a name="parameters"></a>Parâmetros  
  `pAddress`  
- [in] Depurar o endereço é representado pelo [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] Depurar o endereço que é representado pelo [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se o endereço de depuração é um ponto de sequência, retornará `S_OK`; caso contrário, retornará `S_FALSE`.  
+ Retorna se o endereço de depuração é um ponto de sequência, `S_OK`; caso contrário, retorna `S_FALSE`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto expõe o [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe o [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(  
     IDebugAddress* pAddress  
 )  

@@ -1,45 +1,30 @@
 ---
-title: EVALFLAGS90 | Documentos do Microsoft
+title: EVALFLAGS90 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- EVALFLAGS90 enumeration
+helpviewer_keywords: EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 757bb6db3cae804bfd6c6a5920dc3ed3d66010d9
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cc570195b7d96ec602323952968b98b6c0168dce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Enumera os valores válidos para sinalizadores que controlam a avaliação da expressão. Esta enumeração estende o [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_EVALFLAGS90  
 {  
    // VS 8.0 values  
@@ -59,7 +44,7 @@ enum enum_EVALFLAGS90
 typedef DWORD EVALFLAGS90;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_EVALFLAGS90  
 {  
    // VS 8.0 values  
@@ -86,28 +71,28 @@ public enum enum_EVALFLAGS90
  Especifica que efeitos colaterais não serão permitidas.  
   
  EVAL90_ALLOWBPS  
- Especifica parar em pontos de interrupção.  
+ Especifica a parada em pontos de interrupção.  
   
  EVAL90_ALLOWERRORREPORT  
- Especifica que relatórios de erro para o host a ser permitido. Usada principalmente para a avaliação da expressão em script no Internet Explorer.  
+ Especifica que esse relatório de erros para o host a ser permitido. Usado principalmente para a avaliação da expressão no script no Internet Explorer.  
   
  EVAL90_FUNCTION_AS_ADDRESS  
- Funções de força a ser avaliada como endereços, em vez de chamar a função.  
+ Funções de força a ser avaliada como endereços, em vez de invocar a função.  
   
  EVAL90_NOFUNCEVAL  
- Impede que a função está sendo avaliada. Por exemplo, considere o `int` token na expressão `myExpression(int) + 10`. Essa função pode ser avaliada corretamente como um endereço, mas não como um valor.  
+ Impede que a função que está sendo avaliada. Por exemplo, considere o `int` token na expressão `myExpression(int) + 10`. Essa função pode ser avaliada corretamente como um endereço, mas não como um valor.  
   
  EVAL90_NOEVENTS  
  Sinalizador para indicar que os eventos que ocorrem durante a avaliação de expressão não devem ser enviados para o Gerenciador de sessão de depuração (SDM) ou para o IDE.  
   
  EVAL90_DESIGN_TIME_EXPR_EVAL  
- Permite a avaliação de expressão em tempo de design.  
+ Permite que a avaliação da expressão de tempo de design.  
   
  EVAL90_ALLOW_IMPLICIT_VARS  
- Permite a criação de variável implícita.  
+ Permite a criação da variável implícita.  
   
  EVAL90_FORCE_EVALUATION_NOW  
- Força a avaliação ocorrer imediatamente. Isso é útil quando a manutenção de uma solicitação, como uma solicitação de usuário.  
+ Avaliação de força ocorra imediatamente. Isso é útil quando uma solicitação, como uma solicitação de usuário de serviço.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: Msdbg90.h  

@@ -1,47 +1,31 @@
 ---
-title: DEBUGREF_INFO_FLAGS | Documentos do Microsoft
+title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- DEBUGREF_INFO_FLAGS
-helpviewer_keywords:
-- DEBUGREF_INFO_FLAGS enumeration
+f1_keywords: DEBUGREF_INFO_FLAGS
+helpviewer_keywords: DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 434428f484a3d9ce7c9e27c49088ef27a1e9f086
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6022173da00b42272c0b03d5a9a2e2c83f6fb890
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Especifica quais informações devem ser recuperadas sobre um objeto de referência de depuração.  
+Especifica quais informações recuperar sobre um objeto de referência de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
@@ -56,7 +40,7 @@ enum enum_DEBUGREF_INFO_FLAGS {
 typedef DWORD DEBUGREF_INFO_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
@@ -90,10 +74,10 @@ public enum enum_DEBUGREF_INFO_FLAGS {
  Inicializar/usar o `pReference` campo na estrutura.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- O campo de valor deve conter valor expandida automaticamente, se disponível, para este tipo de objeto.  
+ O campo de valor deve conter o valor expandido automaticamente, se disponível, para este tipo de objeto.  
   
  DEBUGREF_INFO_NONE  
- Indica que nenhum sinalizador está definido.  
+ Indica que nenhum sinalizador definido.  
   
  DEBUGREF_INFO_ALL  
  Indica uma máscara dos sinalizadores.  
@@ -101,7 +85,7 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ## <a name="remarks"></a>Comentários  
  Esses sinalizadores são passados para o [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) e [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) métodos para indicar quais campos do [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura devem ser inicializado.  
   
- Usado para o `dwFields` membro o `DEBUG_REFERENCE_INFO` estrutura para indicar quais campos são usados e válida quando a estrutura é retornada.  
+ Usado para o `dwFields` membro o `DEBUG_REFERENCE_INFO` estrutura para indicar quais campos são usados e válidos quando a estrutura é retornada.  
   
  Esses valores podem ser combinados com um bit a bit `OR`.  
   

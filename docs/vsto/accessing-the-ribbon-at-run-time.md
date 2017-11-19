@@ -1,12 +1,10 @@
 ---
-title: Accessing the Ribbon at Run Time | Microsoft Docs
+title: "Acessando a faixa de opções em tempo de execução | Microsoft Docs"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,55 +15,57 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], accessing
 - RibbonManager class
 ms.assetid: 8a7c7c6d-1a18-4d6b-98ee-e483d41f0cd8
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 7b913c5d123598c05ba068193eb799aea5435570
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: f69818d2e7c1b6ef2babd651247fe81709b80097
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="accessing-the-ribbon-at-run-time"></a>Accessing the Ribbon at Run Time
-  You can write code to show, hide, and modify the Ribbon, and enable users to run the code from controls in a custom task pane, actions pane, or Outlook form region.  
+# <a name="accessing-the-ribbon-at-run-time"></a>Acessando a faixa de opções em tempo de execução
+  Você pode escrever código para mostrar, ocultar e modificar a faixa de opções e permitir que os usuários executar o código de controles em um painel tarefa personalizada, o painel de ações ou a região de formulário do Outlook.  
   
- You can access the Ribbon by using the `Globals` class. For Outlook projects, you can access the Ribbons that appear in a specific Outlook Inspector or Outlook Explorer window.  
+ Você pode acessar a faixa de opções usando a `Globals` classe. Para projetos do Outlook, você pode acessar as faixas de opções que aparecem em uma janela do Inspetor do Outlook ou o Outlook Explorer específica.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="accessing-the-ribbon-by-using-the-globals-class"></a>Accessing the Ribbon by Using the Globals Class  
- You can use the `Globals` class to access the Ribbon in a document-level project or VSTO Add-in project from anywhere in the project.  
+## <a name="accessing-the-ribbon-by-using-the-globals-class"></a>Acessando a faixa de opções usando a classe Globals  
+ Você pode usar o `Globals` classe para acessar a faixa de opções em um projeto no nível do documento ou um projeto de suplemento do VSTO em qualquer lugar no projeto.  
   
- For more information about the `Globals` class, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
+ Para obter mais informações sobre o `Globals` de classe, consulte [acesso Global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- The following example uses the `Globals` class to access a custom Ribbon named `Ribbon1` and set the text that appears on a combo box on the Ribbon to `Hello World`.  
+ O exemplo a seguir usa o `Globals` classe para acessar uma faixa de opções personalizada denominada `Ribbon1` e defina o texto que aparece em uma caixa de combinação na faixa de opções para `Hello World`.  
   
- [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)] [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]  
+ [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)]
+ [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]  
   
-## <a name="accessing-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Accessing a Collection of Ribbons That Appear in a Specific Outlook Inspector Window  
- You can access a collection of Ribbons that appear in Outlook *Inspectors*. An Inspector is a window that opens in Outlook when users perform certain tasks, such as creating e-mail messages. To access the Ribbon of an Inspector window, call the `Ribbons` property of the `Globals` class and pass in an <xref:Microsoft.Office.Interop.Outlook.Inspector> object that represents the Inspector.  
+## <a name="accessing-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Acessar uma coleção de faixas de opções que aparecem em uma janela de Inspetor do Outlook específico  
+ Você pode acessar uma coleção de faixas de opções que aparecem no Outlook *inspetores*. Um inspetor é uma janela que é aberta no Outlook, quando os usuários executam determinadas tarefas, como a criação de mensagens de email. Para acessar a faixa de opções de uma janela de Inspetor, chame o `Ribbons` propriedade do `Globals` classe e passar uma <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto que representa o Inspetor.  
   
- The following example gets the Ribbon collection of the Inspector that currently has focus. This example then accesses a Ribbon named `Ribbon1` and sets the text that appears on a combo box on the Ribbon to `Hello World`.  
+ O exemplo a seguir obtém a coleção de faixa de opções do Inspetor que tem o foco no momento. Neste exemplo, em seguida, acessa uma faixa de opções chamada `Ribbon1` e define o texto que aparece em uma caixa de combinação na faixa de opções para `Hello World`.  
   
- [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)] [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]  
+ [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
+ [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]  
   
-## <a name="accessing-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Accessing a Collection of Ribbons That Appear for a Specific Outlook Explorer  
- You can access a collection of Ribbons that appear in an Outlook *Explorer*. An Explorer is the main application user interface (UI) for an instance of Outlook. To access the Ribbon of an Explorer window, call the `Ribbons` property of the `Globals` class and pass in an <xref:Microsoft.Office.Interop.Outlook.Explorer> object that represents the Explorer.  
+## <a name="accessing-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Acessar uma coleção de faixas de opções que aparecem para um Gerenciador específico do Outlook  
+ Você pode acessar uma coleção de faixas de opções que aparecem no Outlook *Explorer*. Um Explorer é a interface do usuário principal do aplicativo (IU) para uma instância do Outlook. Para acessar a faixa de opções de uma janela do Explorer, chame o `Ribbons` propriedade do `Globals` classe e passar uma <xref:Microsoft.Office.Interop.Outlook.Explorer> objeto que representa o Gerenciador.  
   
- The following example gets the Ribbon collection of the Explorer that currently has focus. This example then accesses a Ribbon named `Ribbon1` and sets the text that appears on a combo box on the Ribbon to `Hello World`.  
+ O exemplo a seguir obtém a coleção de faixa de opções do Explorer que tem o foco no momento. Neste exemplo, em seguida, acessa uma faixa de opções chamada `Ribbon1` e define o texto que aparece em uma caixa de combinação na faixa de opções para `Hello World`.  
   
- [!code-vb[Trin_Outlook_FR_Access#6](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#6)] [!code-csharp[Trin_Outlook_FR_Access#6](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#6)]  
+ [!code-vb[Trin_Outlook_FR_Access#6](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#6)]
+ [!code-csharp[Trin_Outlook_FR_Access#6](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#6)]  
   
-## <a name="see-also"></a>See Also  
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Ribbon Designer](../vsto/ribbon-designer.md)   
- [Ribbon XML](../vsto/ribbon-xml.md)   
- [Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)   
- [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)  
+## <a name="see-also"></a>Consulte também  
+ [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
+ [Designer de faixa de opções](../vsto/ribbon-designer.md)   
+ [XML da faixa de opções](../vsto/ribbon-xml.md)   
+ [Visão geral do modelo de objeto de faixa de opções](../vsto/ribbon-object-model-overview.md)   
+ [Passo a passo: Criando uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Passo a passo: Atualizando os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Personalizando uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [Acessando uma região do formulário no tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)  
   
   

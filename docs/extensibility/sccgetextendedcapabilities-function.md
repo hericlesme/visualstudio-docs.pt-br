@@ -1,43 +1,27 @@
 ---
-title: "Função SccGetExtendedCapabilities | Documentos do Microsoft"
+title: "Função SccGetExtendedCapabilities | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- SccGetExtendedCapabilities
-helpviewer_keywords:
-- SccGetExtendedCapabilities function
+f1_keywords: SccGetExtendedCapabilities
+helpviewer_keywords: SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c0331979eaae065730dab5d5daf0e226844d5e7a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d5134116a9d6a8d7872692e88ecd8adf60e9c02e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Função SccGetExtendedCapabilities
-Esta função retorna os recursos adicionais compatíveis com o plug-in de controle de origem.  
+Esta função retorna o plug-in de controle de origem com suporte de recursos adicionais.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -54,7 +38,7 @@ SCCRTN SccGetExtendedCapabilities(
  [in] O ponteiro de contexto de plug-in de controle de origem.  
   
  lSccExCaps  
- [in] Um sinalizador que especifica uma funcionalidade estendida para teste (consulte a tabela de código de recurso estendido em [sinalizadores de recurso](../extensibility/capability-flags.md) para os sinalizadores de possíveis).  
+ [in] Um sinalizador que especifica uma funcionalidade estendida para o qual testar (consulte a tabela código funcionalidade estendida [sinalizadores de recursos](../extensibility/capability-flags.md) para os sinalizadores de possíveis).  
   
  pbSupported  
  [out] Retorna diferente de zero (`TRUE`) se houver suporte para o recurso especificado; caso contrário, retorna zero (`FALSE`).  
@@ -65,10 +49,10 @@ SCCRTN SccGetExtendedCapabilities(
 |Valor|Descrição|  
 |-----------|-----------------|  
 |SCC_OK|A operação de recurso get foi concluída com êxito.|  
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Ocorreu um erro desconhecido ou não especificado.|  
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Ocorreu erro desconhecido ou não especificado.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método é chamado por demanda. ou seja, quando um recurso precisa ser testado, esse método é chamado para determinar se recursos com suporte. Sinalizador de apenas um por vez é especificado.  
+ Este método é chamado por demanda. ou seja, quando um recurso precisa ser testado, este método é chamado para determinar se funcionalidade com suporte. Sinalizador de apenas uma por vez é especificado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle de origem](../extensibility/source-control-plug-in-api-functions.md)   

@@ -1,38 +1,23 @@
 ---
-title: 'Como: limpar a pilha de desfazer | Documentos do Microsoft'
+title: 'Como: limpar a pilha de desfazer | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], legacy - clear undo stack
+helpviewer_keywords: editors [Visual Studio SDK], legacy - clear undo stack
 ms.assetid: 2200d2d4-7f58-401c-87fc-ddd32d368193
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1b62185f415e98886a49de8d228d1204c509ca28
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7a0d79b16c911390322c8ea3c27a0b0f8cd5d15d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-clear-the-undo-stack"></a>Como: limpar a pilha de desfazer
 O procedimento a seguir explica como limpar a pilha de desfazer.  

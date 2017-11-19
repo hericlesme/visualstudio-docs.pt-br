@@ -1,54 +1,38 @@
 ---
-title: IDebugBreakpointResolution2::GetResolutionInfo | Documentos do Microsoft
+title: IDebugBreakpointResolution2::GetResolutionInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakpointResolution2::GetResolutionInfo
-helpviewer_keywords:
-- IDebugBreakpointResolution2::GetResolutionInfo
+f1_keywords: IDebugBreakpointResolution2::GetResolutionInfo
+helpviewer_keywords: IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7c8ca0d889a4e930d9c4d8e78620b84502c655ba
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ada7f0ea6a4cf16900d20739b56c424beba20117
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-Obtém as informações de resolução de ponto de interrupção que descreve este ponto de interrupção.  
+Obtém as informações de resolução do ponto de interrupção que descreve este ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetResolutionInfo(   
    BPRESI_FIELDS       dwFields,  
    BP_RESOLUTION_INFO* pBPResolutionInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetResolutionInfo(   
    enum BPRESI_FIELDS   dwFields,  
    BP_RESOLUTION_INFO[] pBPResolutionInfo  
@@ -60,13 +44,13 @@ int GetResolutionInfo(
  [in] Uma combinação de sinalizadores do [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) que determinam quais campos de enumeração de `pBPResolutionInfo` parâmetro devem ser preenchidos.  
   
  `pBPResolutionInfo`  
- [out] O [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura a ser preenchido com informações sobre este ponto de interrupção.  
+ [out] O [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura a ser preenchida com informações sobre este ponto de interrupção.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir implementa esse método para um simples `CDebugBreakpointResolution` objeto expõe o [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface.  
+ O exemplo a seguir implementa este método para um simples `CDebugBreakpointResolution` objeto que expõe o [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface.  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(  

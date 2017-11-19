@@ -1,53 +1,37 @@
 ---
-title: IDebugProgramHost2::GetHostId | Documentos do Microsoft
+title: IDebugProgramHost2::GetHostId | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramHost2::GetHostId
-helpviewer_keywords:
-- IDebugProgramHost2::GetHostId
+f1_keywords: IDebugProgramHost2::GetHostId
+helpviewer_keywords: IDebugProgramHost2::GetHostId
 ms.assetid: 7702e221-feb1-446b-a224-cb46c420987e
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4bc790c9571e407654a7e2a33435c66774a30fe8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: af778ce0f2b5d14a952426abe6d068e7b8ff6b30
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
-Obtém o identificador do processo que hospeda este programa.  
+Obtém o identificador de processo do processo de hospedagem este programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetHostId(   
    AD_PROCESS_ID* pdwId  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetHostId(   
    AD_PROCESS_ID[] pdwId  
 );  
@@ -55,10 +39,10 @@ int GetHostId(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdwId`  
- [no, out] Um [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura é preenchida com as informações de identificador de processo.  
+ [out no] Um [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura que é preenchida com as informações de identificador de processo.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   

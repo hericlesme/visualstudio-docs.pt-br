@@ -1,51 +1,50 @@
 ---
-title: "IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 95fd5e7a-c637-437e-b369-c864eef733c2
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f67263b385c184b0182716469f110c87bcebb50
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolsForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Retorna uma enumeração de símbolos para a variável que o valor especificado de marca corresponde a função pai de stub de aceleração.  
+# <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
+Retorna uma enumeração de símbolos para que o valor da marca especificado corresponde à variável na função de stub do acelerador pai.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT findSymbolsForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findSymbolsForAcceleratorPointerTag (   
+   IDiaSymbol*           parent,  
    DWORD                 tagValue,  
-   IDiaEnumSymbols**     ppResult  
+   IDiaEnumSymbols**     ppResult  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `parent`  
- \[in\] um IDiaSymbol que corresponde à função de stub de aceleradores a ser pesquisada.  
+ [in] Um IDiaSymbol que corresponde à função de stub Acelerador a ser pesquisada.  
   
  `tagValue`  
- \[in\] o valor da marca do ponteiro.  
+ [in] O valor de marca do ponteiro.  
   
  `ppResult`  
- \[out\] um ponteiro à um ponteiro de interface de `IDiaEnumSymbols` que é inicializada com o resultado.  
+ [out] Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.  
   
-## Valor de retorno  
- Se com êxito, retorna `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -1,42 +1,27 @@
 ---
-title: IDebugIDECallback | Documentos do Microsoft
+title: IDebugIDECallback | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugIDECallback interface
+helpviewer_keywords: IDebugIDECallback interface
 ms.assetid: 8d31adc0-1c44-4658-8d4f-f4b73e35f4a6
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ec5857fe79a8a3d966c3d555fc6d0f09ce67e1c7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d74c49a7de90e0c804cd4ec10a9201d3bff57866
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão do CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  No Visual Studio 2015, essa maneira de implementar avaliadores de expressão foi preterida. Para obter informações sobre como implementar avaliadores de expressão do CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Permite que um avaliador de expressão (EE) exibir uma mensagem na janela de saída do depurador.  
   
@@ -47,7 +32,7 @@ IDebugIDECallback : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- Esse retorno de chamada é implementado pelo mecanismo de depuração gerenciados.  
+ Esse retorno de chamada é implementado pelo mecanismo de depuração gerenciada.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
  Ele pode ser consumido por um avaliador de expressão para enviar a saída para a janela de saída do depurador.  

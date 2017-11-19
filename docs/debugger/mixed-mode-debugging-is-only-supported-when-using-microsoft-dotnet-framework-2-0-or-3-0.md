@@ -1,32 +1,31 @@
 ---
-title: "A depura&#231;&#227;o de modo misto s&#243; &#233; suportada quando o Microsoft .NET Framework 2.0 ou 3.0 &#233; usado | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.interop_unsupported_to_old"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "Depuração de modo misto é suportado apenas quando usar o Microsoft .NET Framework 2.0 ou 3.0 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.error.interop_unsupported_to_old
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dd022d8f0a0e38ffbd7402c69f622df74e24bc30
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# A depura&#231;&#227;o de modo misto s&#243; &#233; suportada quando o Microsoft .NET Framework 2.0 ou 3.0 &#233; usado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-As versões do Microsoft .NET Framework anteriores à versão 2.0 não fornecem suporte à depuração de modo misto de processos de 64 bits.  Isso significa que, durante a depuração, você não pode depurar de código gerenciado para código nativo e vice\-versa.  
+# <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>A depuração de modo misto só é suportada quando o Microsoft .NET Framework 2.0 ou 3.0 é usado
+As versões do Microsoft .NET Framework anteriores à versão 2.0 não fornecem suporte à depuração de modo misto de processos de 64 bits. Isso significa que, durante a depuração, você não pode depurar de código gerenciado para código nativo e vice-versa.  
   
  Para resolver esse problema, você pode:  
   
@@ -36,25 +35,25 @@ As versões do Microsoft .NET Framework anteriores à versão 2.0 não fornecem 
   
 -   Depure seu código misto como um processo de 32 bits, como descrito nos procedimentos a seguir.  
   
-### Para alterar o sistema operacional para 32 bits \(Visual Basic ou C\#\)  
+### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>Para alterar o sistema operacional para 32 bits (Visual Basic ou C#)  
   
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.  
+1.  Em **Solution Explorer**, clique com o botão direito e, em seguida, clique em **propriedades** no menu de atalho.  
   
-2.  Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.  
+2.  Nas páginas de propriedades, clique no **compilar** ou **depurar** guia.  
   
-3.  Clique em **Plataforma** e selecione **x86** na lista de plataformas.  
+3.  Clique em **plataforma**e, em seguida, selecione **x86** da lista de plataformas.  
   
-     Por padrão, os compiladores do Visual Basic e do C\# produzem código para ser executado em qualquer CPU.  Em um computador de 64 bits, esses binários são executados como processos de 64 bits.  Para executar em um processo de 32 bits, você deve escolher **Win32** e não **AnyCPU**.  
+     Por padrão, os compiladores do Visual Basic e do C# produzem código para ser executado em qualquer CPU. Em um computador de 64 bits, esses binários são executados como processos de 64 bits. Para executar em um processo de 32 bits, você deve escolher **Win32**, não **AnyCPU**.  
   
-### Para alterar o sistema operacional para 32 bits \(C\/C\+\+\)  
+### <a name="to-change-the-operating-system-to-32-bit-cc"></a>Para alterar o sistema operacional para 32 bits (C/C++)  
   
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.  
+1.  Em **Solution Explorer**, clique com o botão direito e, em seguida, clique em **propriedades** no menu de atalho.  
   
-     Nas Páginas de Propriedades, clique em **Plataforma** e selecione **Win32** na lista de plataformas.  
+     Nas páginas de propriedades, clique em **plataforma**e, em seguida, selecione **Win32** da lista de plataformas.  
   
-### Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Consulte [Setting Up SQL Debugging](http://msdn.microsoft.com/pt-br/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+-   Consulte [Configurando a depuração SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

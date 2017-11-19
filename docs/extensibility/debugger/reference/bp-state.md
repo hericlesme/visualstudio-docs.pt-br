@@ -1,47 +1,31 @@
 ---
-title: BP_STATE | Documentos do Microsoft
+title: BP_STATE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_STATE
-helpviewer_keywords:
-- BP_STATE enumeration
+f1_keywords: BP_STATE
+helpviewer_keywords: BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 35c6ab03976896af1132c6b50f2ea8bf416dd1ec
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 51574fd91a338f7d05d38755884412202d33637b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpstate"></a>BP_STATE
-Especifica a existência de um ponto de interrupção associada e também especifica se ele está habilitado.  
+Especifica a existência de um ponto de interrupção associado e também especifica se ela está habilitada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
@@ -51,7 +35,7 @@ enum enum_BP_STATE {
 typedef DWORD BP_STATE;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
@@ -62,7 +46,7 @@ public enum enum_BP_STATE {
   
 ## <a name="members"></a>Membros  
  BPS_NONE  
- Especifica a existência de nenhum ponto de interrupção.  
+ Especifica que nenhum ponto de interrupção existe.  
   
  BPS_DELETED  
  Especifica que o ponto de interrupção foi excluído.  

@@ -1,11 +1,10 @@
 ---
-title: 'CA2218: Override GetHashCode on overriding Equals | Microsoft Docs'
+title: "CA2218: Substituir GetHashCode em igualdades de substituição | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,44 +14,29 @@ helpviewer_keywords:
 - OverrideGetHashCodeOnOverridingEquals
 - CA2218
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
-caps.latest.revision: 20
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 9ad25f33c609d2bbb99aeb90f2fb844744a69013
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fa24be65377c563e6118fa99ab2983ee407874b3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Override GetHashCode on overriding Equals
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: substituir GetHashCode em igualdades de substituição
 |||  
 |-|-|  
-|TypeName|OverrideGetHashCodeOnOverridingEquals|  
+|NomeDoTipo|OverrideGetHashCodeOnOverridingEquals|  
 |CheckId|CA2218|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|Categoria|Microsoft.Usage|  
+|Alteração Significativa|Não separáveis|  
   
-## <a name="cause"></a>Cause  
- A public type overrides <xref:System.Object.Equals%2A?displayProperty=fullName> but does not override <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
+## <a name="cause"></a>Causa  
+ Substitui um tipo público <xref:System.Object.Equals%2A?displayProperty=fullName> , mas não substitui <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
   
-## <a name="rule-description"></a>Rule Description  
- <xref:System.Object.GetHashCode%2A> returns a value, based on the current instance, that is suited for hashing algorithms and data structures such as a hash table. Two objects that are the same type and are equal must return the same hash code to ensure that instances of the following types work correctly:  
+## <a name="rule-description"></a>Descrição da Regra  
+ <xref:System.Object.GetHashCode%2A>Retorna um valor, com base na instância atual, que é adequada para algoritmos de hash e estruturas de dados como uma tabela de hash. Dois objetos que são do mesmo tipo e forem iguais devem retornar o mesmo código hash para garantir que instâncias dos tipos a seguir funcionem corretamente:  
   
 -   <xref:System.Collections.Hashtable?displayProperty=fullName>  
   
@@ -70,55 +54,55 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>  
   
--   Types that implement <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
+-   Tipos que implementam<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, provide an implementation of <xref:System.Object.GetHashCode%2A>. For a pair of objects of the same type, you must ensure that the implementation returns the same value if your implementation of <xref:System.Object.Equals%2A> returns `true` for the pair.  
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+ Para corrigir uma violação desta regra, forneça uma implementação de <xref:System.Object.GetHashCode%2A>. Para um par de objetos do mesmo tipo, você deve garantir que a implementação retorna o mesmo valor se sua implementação de <xref:System.Object.Equals%2A> retorna `true` para o par.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
+ Não suprima um aviso nessa regra.  
   
-## <a name="class-example"></a>Class Example  
+## <a name="class-example"></a>Exemplo de classe  
   
-### <a name="description"></a>Description  
- The following example shows a class (reference type) that violates this rule.  
+### <a name="description"></a>Descrição  
+ O exemplo a seguir mostra uma classe (tipo de referência) que violam essa regra.  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Código  
  [!code-csharp[FxCop.Usage.GetHashCodeErrorClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_1.cs)]  
   
-### <a name="comments"></a>Comments  
- The following example fixes the violation by overriding <xref:System.Object.GetHashCode>.  
+### <a name="comments"></a>Comentários  
+ O exemplo a seguir corrige a violação, substituindo <xref:System.Object.GetHashCode>.  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Código  
  [!code-csharp[FxCop.Usage.GetHashCodeFixedClass#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_2.cs)]  
   
-## <a name="structure-example"></a>Structure Example  
+## <a name="structure-example"></a>Exemplo de estrutura  
   
-### <a name="description"></a>Description  
- The following example shows a structure (value type) that violates this rule.  
+### <a name="description"></a>Descrição  
+ O exemplo a seguir mostra a estrutura (tipo de valor) que violam essa regra.  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Código  
  [!code-csharp[FxCop.Usage.GetHashCodeErrorStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_3.cs)]  
   
-### <a name="comments"></a>Comments  
- The following example fixes the violation by overriding <xref:System.Object.GetHashCode>.  
+### <a name="comments"></a>Comentários  
+ O exemplo a seguir corrige a violação, substituindo <xref:System.Object.GetHashCode>.  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>Código  
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1046: Do not overload operator equals on reference types](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
+## <a name="related-rules"></a>Regras relacionadas  
+ [CA1046: não sobrecarregar operador Equals em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
   
- [CA2225: Operator overloads have named alternates](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
+ [CA2225: as sobrecargas do operador têm alternativos nomeados](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
   
- [CA2226: Operators should have symmetrical overloads](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
+ [CA2226: os operadores devem ter sobrecargas simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
- [CA2224: Override equals on overloading operator equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
+ [CA2224: substituir Equals ao sobrecarregar o operador Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
   
- [CA2231: Overload operator equals on overriding ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)  
+ [CA2231: sobrecarregar operador Equals ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Consulte também  
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
  <xref:System.Object.GetHashCode%2A?displayProperty=fullName>   
  <xref:System.Collections.Hashtable?displayProperty=fullName>   
- [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)
+ [Operadores de igualdade](/dotnet/standard/design-guidelines/equality-operators)

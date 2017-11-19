@@ -1,167 +1,167 @@
 ---
-title: "Anotando par&#226;metros de fun&#231;&#227;o e valores de retorno | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_Outptr_opt_result_bytebuffer_to_"
-  - "_Inout_updates_all_opt_"
-  - "_Post_equal_to_"
-  - "_Outptr_opt_result_maybenull_"
-  - "_Out_writes_bytes_all_"
-  - "_Out_writes_all_opt_"
-  - "_In_opt_"
-  - "_Outptr_"
-  - "_Outptr_result_maybenull_"
-  - "_Outref_result_bytebuffer_all_maybenull_"
-  - "_Inout_updates_opt_z_"
-  - "_Inout_updates_z_"
-  - "_Out_writes_"
-  - "_Out_writes_to_ptr_opt_z_"
-  - "_In_reads_to_ptr_opt_"
-  - "_Ret_writes_to_maybenull_"
-  - "_Outref_result_maybenull_"
-  - "_Ret_writes_bytes_"
-  - "_Outptr_result_bytebuffer_"
-  - "_Out_writes_opt_"
-  - "_Inout_updates_bytes_opt_"
-  - "_In_z_"
-  - "_Inout_updates_to_"
-  - "_Ret_maybenull_"
-  - "_Ret_writes_bytes_to_"
-  - "_Ret_z_"
-  - "_COM_Outptr_"
-  - "_Ret_maybenull_z_"
-  - "_Out_opt_"
-  - "_In_reads_opt_z_"
-  - "_Outptr_result_bytebuffer_to_"
-  - "_Ret_notnull_"
-  - "_COM_Outptr_opt_result_maybenull_"
-  - "_Inout_updates_to_opt_"
-  - "_Inout_updates_"
-  - "_Outptr_opt_result_buffer_"
-  - "_Outptr_result_buffer_to_"
-  - "_Out_writes_to_ptr_opt_"
-  - "_Out_writes_bytes_all_opt_"
-  - "_Inout_updates_all_"
-  - "_Deref_inout_range_"
-  - "_Ret_writes_"
-  - "_Out_writes_z_"
-  - "_Ret_writes_to_"
-  - "_Out_writes_to_ptr_z_"
-  - "_Out_writes_bytes_to_opt_"
-  - "_In_reads_or_z_"
-  - "_Inout_updates_bytes_to_"
-  - "_In_reads_z_"
-  - "_In_opt_z_"
-  - "_Outref_result_buffer_maybenull_"
-  - "_Ret_range_"
-  - "_COM_Outptr_opt_"
-  - "_Ouptr_opt_result_maybenull_z_"
-  - "_In_reads_opt_"
-  - "_Inout_"
-  - "_Field_range_"
-  - "_Ret_writes_z_"
-  - "_Out_writes_to_"
-  - "_Out_writes_to_ptr_"
-  - "_Inout_opt_z_"
-  - "_Outref_"
-  - "_Deref_out_range_"
-  - "_Outref_result_buffer_"
-  - "_Outref_result_buffer_to_"
-  - "_Outref_result_bytebuffer_to_maybenull_"
-  - "_In_reads_bytes_"
-  - "_Outptr_opt_result_buffer_to_"
-  - "_Outref_result_buffer_all_"
-  - "_Out_writes_bytes_to_"
-  - "_Result_zeroonfailure_"
-  - "_In_reads_bytes_opt_"
-  - "_Outref_result_buffer_to_maybenull_"
-  - "_Outref_result_bytebuffer_all_"
-  - "_Outref_result_buffer_all_maybenull_"
-  - "_Ret_writes_maybenull_z_"
-  - "_In_range_"
-  - "_Inout_updates_bytes_all_opt_"
-  - "_Outref_result_bytebuffer_to_"
-  - "_Inout_updates_bytes_to_opt_"
-  - "_Pre_equal_to_"
-  - "_Ret_writes_bytes_maybenull_"
-  - "_COM_Outptr_result_maybenull_"
-  - "_Ret_writes_maybenull_"
-  - "_Out_writes_bytes_"
-  - "_Outptr_opt_"
-  - "_Out_writes_opt_z_"
-  - "_Outref_result_nullonfailure_"
-  - "_Outptr_opt_result_z_"
-  - "_Inout_opt_"
-  - "_Deref_in_range_"
-  - "_Outptr_result_z_"
-  - "_In_reads_to_ptr_opt_z_"
-  - "_Struct_size_bytes_"
-  - "_Outptr_result_nullonfailure_"
-  - "_In_"
-  - "_Inout_updates_bytes_"
-  - "_In_reads_to_ptr_z_"
-  - "_Ret_writes_bytes_to_maybenull"
-  - "_Outptr_opt_result_nullonfailure_"
-  - "_In_reads_to_ptr_"
-  - "_Outptr_result_buffer_"
-  - "_Out_"
-  - "_Outref_result_bytebuffer_maybenull_"
-  - "_Outptr_result_maybenull_z_"
-  - "_In_reads_"
-  - "_Inout_updates_opt_"
-  - "_Out_writes_to_opt_"
-  - "_Outptr_opt_result_bytebuffer_"
-  - "_Out_writes_all_"
-  - "_Out_range_"
-  - "_Inout_updates_bytes_all_"
-  - "_Inout_z_"
-  - "_Outref_result_bytebuffer_"
-  - "_Result_nullonfailure_"
-  - "_Ret_null_"
+title: "Anotando parâmetros de função e valores de retorno | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- _Outptr_opt_result_bytebuffer_to_
+- _Inout_updates_all_opt_
+- _Post_equal_to_
+- _Outptr_opt_result_maybenull_
+- _Out_writes_bytes_all_
+- _Out_writes_all_opt_
+- _In_opt_
+- _Outptr_
+- _Outptr_result_maybenull_
+- _Outref_result_bytebuffer_all_maybenull_
+- _Inout_updates_opt_z_
+- _Inout_updates_z_
+- _Out_writes_
+- _Out_writes_to_ptr_opt_z_
+- _In_reads_to_ptr_opt_
+- _Ret_writes_to_maybenull_
+- _Outref_result_maybenull_
+- _Ret_writes_bytes_
+- _Outptr_result_bytebuffer_
+- _Out_writes_opt_
+- _Inout_updates_bytes_opt_
+- _In_z_
+- _Inout_updates_to_
+- _Ret_maybenull_
+- _Ret_writes_bytes_to_
+- _Ret_z_
+- _COM_Outptr_
+- _Ret_maybenull_z_
+- _Out_opt_
+- _In_reads_opt_z_
+- _Outptr_result_bytebuffer_to_
+- _Ret_notnull_
+- _COM_Outptr_opt_result_maybenull_
+- _Inout_updates_to_opt_
+- _Inout_updates_
+- _Outptr_opt_result_buffer_
+- _Outptr_result_buffer_to_
+- _Out_writes_to_ptr_opt_
+- _Out_writes_bytes_all_opt_
+- _Inout_updates_all_
+- _Deref_inout_range_
+- _Ret_writes_
+- _Out_writes_z_
+- _Ret_writes_to_
+- _Out_writes_to_ptr_z_
+- _Out_writes_bytes_to_opt_
+- _In_reads_or_z_
+- _Inout_updates_bytes_to_
+- _In_reads_z_
+- _In_opt_z_
+- _Outref_result_buffer_maybenull_
+- _Ret_range_
+- _COM_Outptr_opt_
+- _Ouptr_opt_result_maybenull_z_
+- _In_reads_opt_
+- _Inout_
+- _Field_range_
+- _Ret_writes_z_
+- _Out_writes_to_
+- _Out_writes_to_ptr_
+- _Inout_opt_z_
+- _Outref_
+- _Deref_out_range_
+- _Outref_result_buffer_
+- _Outref_result_buffer_to_
+- _Outref_result_bytebuffer_to_maybenull_
+- _In_reads_bytes_
+- _Outptr_opt_result_buffer_to_
+- _Outref_result_buffer_all_
+- _Out_writes_bytes_to_
+- _Result_zeroonfailure_
+- _In_reads_bytes_opt_
+- _Outref_result_buffer_to_maybenull_
+- _Outref_result_bytebuffer_all_
+- _Outref_result_buffer_all_maybenull_
+- _Ret_writes_maybenull_z_
+- _In_range_
+- _Inout_updates_bytes_all_opt_
+- _Outref_result_bytebuffer_to_
+- _Inout_updates_bytes_to_opt_
+- _Pre_equal_to_
+- _Ret_writes_bytes_maybenull_
+- _COM_Outptr_result_maybenull_
+- _Ret_writes_maybenull_
+- _Out_writes_bytes_
+- _Outptr_opt_
+- _Out_writes_opt_z_
+- _Outref_result_nullonfailure_
+- _Outptr_opt_result_z_
+- _Inout_opt_
+- _Deref_in_range_
+- _Outptr_result_z_
+- _In_reads_to_ptr_opt_z_
+- _Struct_size_bytes_
+- _Outptr_result_nullonfailure_
+- _In_
+- _Inout_updates_bytes_
+- _In_reads_to_ptr_z_
+- _Ret_writes_bytes_to_maybenull
+- _Outptr_opt_result_nullonfailure_
+- _In_reads_to_ptr_
+- _Outptr_result_buffer_
+- _Out_
+- _Outref_result_bytebuffer_maybenull_
+- _Outptr_result_maybenull_z_
+- _In_reads_
+- _Inout_updates_opt_
+- _Out_writes_to_opt_
+- _Outptr_opt_result_bytebuffer_
+- _Out_writes_all_
+- _Out_range_
+- _Inout_updates_bytes_all_
+- _Inout_z_
+- _Outref_result_bytebuffer_
+- _Result_nullonfailure_
+- _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-caps.latest.revision: 15
-caps.handback.revision: 15
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "15"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: e256b519600a983886ac6d21317ef1757d7497f1
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/15/2017
 ---
-# Anotando par&#226;metros de fun&#231;&#227;o e valores de retorno
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Este artigo descreve os usos comuns de anotações para parâmetros de função simples — escalares e ponteiros para estruturas e classes — e a maioria dos tipos de buffers.  Este artigo também mostra os padrões comuns de uso de anotações. Para anotações adicionais relacionadas a funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md)  
+# <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
+Este artigo descreve os usos comuns de anotações para parâmetros de função simples — escalares e ponteiros para estruturas e classes — e a maioria dos tipos de buffers.  Este artigo também mostra os padrões de uso comuns para anotações. Para anotações adicionais que estão relacionadas às funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>Parâmetros de ponteiro  
- Para as anotações na tabela a seguir, quando um parâmetro de ponteiro é sendo anotado, o analisador relata um erro se o ponteiro for nulo.  Isso se aplica a ponteiros e a qualquer item de dados que está apontado.  
+ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está sendo anotado, o analisador informa um erro se o ponteiro for nulo.  Isso se aplica aos ponteiros e qualquer item de dados que aponte para.  
   
- **Anotações e descrições**  
+ **As anotações e descrições**  
   
 -   `_In_`  
   
-     Anota os parâmetros de entrada são escalares, estruturas, ponteiros para estruturas e assim por diante.  Explicitamente pode ser usada em escalares simples.  O parâmetro deve ser válido em estado de pré-lançamento e não será modificado.  
+     Anota parâmetros de entrada que são escalares, estruturas, ponteiros para estruturas e assim por diante.  Explicitamente, pode ser usado em escalares simples.  O parâmetro deve ser válido no estado de pré-lançamento e não será modificado.  
   
 -   `_Out_`  
   
-     Anota os parâmetros de saída são escalares, estruturas, ponteiros para estruturas e assim por diante.  Não aplicá-la a um objeto que não pode retornar um valor — por exemplo, um que é passado por valor escalar.  O parâmetro não precisa ser válido em pré- estado mas deve ser válido no estado após.  
+     Anota parâmetros de saída que são escalares, estruturas, ponteiros para estruturas e assim por diante.  Não use isso para um objeto que não é possível retornar um valor — por exemplo, um valor escalar que é transmitido por valor.  O parâmetro não precisa ser válido no estado anterior ao, mas deve ser válido no pós estado.  
   
 -   `_Inout_`  
   
-     Anota um parâmetro que será alterado pela função.  Ele deve ser válido no estado pré e pós-estado, mas deve para ter valores diferentes antes e depois da chamada. Aplique a um valor pode ser modificado.  
+     Anota um parâmetro que será alterado pela função.  Ele deve ser válido no estado pré e pós-estado, mas tem valores diferentes antes e após a chamada. Aplique a um valor pode ser modificado.  
   
 -   `_In_z_`  
   
-     Um ponteiro para uma cadeia de caracteres terminada em nulo que é usado como entrada.  A cadeia de caracteres deve ser válida em estado de pré-lançamento.  Variantes de `PSTR`, que já têm as anotações corretas, são preferencial.  
+     Um ponteiro para uma cadeia de caracteres terminada em nulo que é usado como entrada.  A cadeia de caracteres deve ser válida no estado de pré-lançamento.  Variantes de `PSTR`, que já tem as anotações corretas, são preferencial.  
   
 -   `_Inout_z_`  
   
-     Um ponteiro para uma matriz de caracteres terminada em nulo que será modificada.  Deve ser válida antes e depois da chamada, mas o valor será considerado foram alterados.  O terminador nulo pode ser movido, mas apenas os elementos até o terminador nulo original podem ser acessados.  
+     Um ponteiro para uma matriz de caracteres terminada em nulo que será modificada.  Ele deve ser válido antes e após a chamada, mas o valor será considerado ter sido alterado.  O terminador nulo pode ser movido, mas apenas os elementos até o terminador nulo original podem ser acessados.  
   
 -   `_In_reads_(s)`  
   
@@ -169,43 +169,43 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
      Um ponteiro para uma matriz, que é lido pela função.  A matriz é do tamanho `s` elementos, que deve ser válido.  
   
-     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use essa operação somente quando o tamanho não pode ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
+     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use somente quando o tamanho não pode ser expressas como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
   
 -   `_In_reads_z_(s)`  
   
-     Um ponteiro para uma matriz é terminada em nulo e tem um tamanho conhecido. Os elementos até o terminador nulo — ou `s` se houver um terminador nulo — deve ser válido em estado de pré-lançamento.  Se o tamanho for conhecido em bytes, dimensionar `s` pelo tamanho do elemento.  
+     Um ponteiro para uma matriz que é terminada em nulo e tem um tamanho conhecido. Os elementos até o terminador nulo — ou `s` se houver um terminador nulo — deve ser válido no estado de pré-lançamento.  Se o tamanho é conhecido em bytes, o dimensionamento `s` pelo tamanho do elemento.  
   
 -   `_In_reads_or_z_(s)`  
   
-     Um ponteiro para uma matriz terminada em nulo ou tem um tamanho conhecido, ou ambos. Os elementos até o terminador nulo — ou `s` se houver um terminador nulo — deve ser válido em estado de pré-lançamento.  Se o tamanho for conhecido em bytes, dimensionar `s` pelo tamanho do elemento.  (Usado para o `strn` família.)  
+     Um ponteiro para uma matriz que é terminada em nulo ou tem um tamanho conhecido, ou ambos. Os elementos até o terminador nulo — ou `s` se houver um terminador nulo — deve ser válido no estado de pré-lançamento.  Se o tamanho é conhecido em bytes, o dimensionamento `s` pelo tamanho do elemento.  (Usado para o `strn` família.)  
   
 -   `_Out_writes_(s)`  
   
      `_Out_writes_bytes_(s)`  
   
-     Um ponteiro para uma matriz de `s` elementos (Resp. bytes) que serão gravados pela função.  Os elementos da matriz não precisa ser válido em pré- estado e o número de elementos que são válidos em pós-estado não está especificado.  Se houver anotações no tipo de parâmetro, elas são aplicadas no estado após. Por exemplo, considere o código a seguir.  
+     Um ponteiro para uma matriz de `s` elementos (bytes Resp.) que serão gravados pela função.  Os elementos da matriz não precisam ser válido em pré- estado e o número de elementos que são válidos no pós-estado não é especificado.  Se houver anotações no tipo de parâmetro, eles são aplicados em pós estado. Por exemplo, considere o código a seguir.  
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     Neste exemplo, o chamador fornece um buffer de `size` elementos para `p1`.  `MyStringCopy` Alguns desses elementos torna válido. Mais importante, o `_Null_terminated_` anotação em `PWSTR` significa que `p1` é terminada em nulo no estado após.  Dessa forma, o número de elementos válidos é ainda bem definido, mas a contagem de um elemento específico não é necessária.  
+     Neste exemplo, o chamador fornece um buffer de `size` elementos para `p1`.  `MyStringCopy`Alguns desses elementos torna válido. Além disso, o `_Null_terminated_` anotação em `PWSTR` significa que `p1` é terminada em nulo no pós estado.  Dessa forma, o número de elementos válidos é ainda bem definido, mas a contagem de um elemento específico não é necessária.  
   
-     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use essa operação somente quando o tamanho não pode ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
+     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use somente quando o tamanho não pode ser expressas como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
   
 -   `_Out_writes_z_(s)`  
   
-     Um ponteiro para uma matriz de `s` elementos.  Os elementos não precisam ser válido em estado de pré-lançamento.  Pós-estado, os elementos de backup por meio de terminador nulo — que deve estar presente — deve ser válido.  Se o tamanho for conhecido em bytes, dimensionar `s` pelo tamanho do elemento.  
+     Um ponteiro para uma matriz de `s` elementos.  Os elementos não precisam ser válido em estado de pré-lançamento.  Pós-estado, os elementos de backup por meio de terminador nulo, que deve estar presente — deve ser válido.  Se o tamanho é conhecido em bytes, o dimensionamento `s` pelo tamanho do elemento.  
   
 -   `_Inout_updates_(s)`  
   
      `_Inout_updates_bytes_(s)`  
   
-     Um ponteiro para uma matriz, que é lido e gravado na função.  Ele é do tamanho `s` elementos e é válido no pré e pós-estado.  
+     Um ponteiro para uma matriz, que é lida e gravada para a função.  Ele é do tamanho `s` elementos e é válida no estado de pré e pós-estado.  
   
-     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use essa operação somente quando o tamanho não pode ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
+     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use somente quando o tamanho não pode ser expressas como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
   
 -   `_Inout_updates_z_(s)`  
   
-     Um ponteiro para uma matriz é terminada em nulo e tem um tamanho conhecido. Os elementos de backup por meio de terminador nulo, que deve estar presente — deve ser válido no estado pré e pós-estado.  É provável que o valor no estado após ser diferente do valor no estado anterior ao; Isso inclui o local do terminador nulo. Se o tamanho for conhecido em bytes, dimensionar `s` pelo tamanho do elemento.  
+     Um ponteiro para uma matriz que é terminada em nulo e tem um tamanho conhecido. Os elementos de backup por meio de terminador nulo, que deve estar presente — deve ser válido no estado pré e pós-estado.  O valor no pós-estado de deve ser diferente do valor no estado de pré-lançamento; Isso inclui o local do terminador nulo. Se o tamanho é conhecido em bytes, o dimensionamento `s` pelo tamanho do elemento.  
   
 -   `_Out_writes_to_(s,c)`  
   
@@ -215,7 +215,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
      `_Out_writes_bytes_all_(s)`  
   
-     Um ponteiro para uma matriz de `s` elementos.  Os elementos não precisam ser válido em estado de pré-lançamento.  Pós-estado, os elementos para o `c`-ésimo elemento deve ser válido.  Se o tamanho for conhecido em bytes, dimensionar `s` e `c` pelo tamanho do elemento ou use o `_bytes_` variante, que é definido como:  
+     Um ponteiro para uma matriz de `s` elementos.  Os elementos não precisam ser válido em estado de pré-lançamento.  Pós-estado, os elementos até o `c`elemento -ésimo deve ser válido.  Se o tamanho é conhecido em bytes, o dimensionamento `s` e `c` pelo tamanho do elemento ou use o `_bytes_` variante, que é definido como:  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
@@ -227,13 +227,13 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     Um ponteiro para uma matriz, que é lida e gravada pela função.  É de tamanho `s` elementos, que deve ser válido no pré-estado, e `c` elementos devem ser válidos no estado após.  
+     Um ponteiro para uma matriz, que é lida e gravada pela função.  Ele é do tamanho `s` elementos, que deve ser válido no estado de pré-lançamento, e `c` elementos devem ser válidos no pós estado.  
   
-     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use essa operação somente quando o tamanho não pode ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
+     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use somente quando o tamanho não pode ser expressas como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
   
 -   `_Inout_updates_z_(s)`  
   
-     Um ponteiro para uma matriz é terminada em nulo e tem um tamanho conhecido. Os elementos de backup por meio de terminador nulo, que deve estar presente — deve ser válido no estado pré e pós-estado.  É provável que o valor no estado após ser diferente do valor no estado anterior ao; Isso inclui o local do terminador nulo. Se o tamanho for conhecido em bytes, dimensionar `s` pelo tamanho do elemento.  
+     Um ponteiro para uma matriz que é terminada em nulo e tem um tamanho conhecido. Os elementos de backup por meio de terminador nulo, que deve estar presente — deve ser válido no estado pré e pós-estado.  O valor no pós-estado de deve ser diferente do valor no estado de pré-lançamento; Isso inclui o local do terminador nulo. Se o tamanho é conhecido em bytes, o dimensionamento `s` pelo tamanho do elemento.  
   
 -   `_Out_writes_to_(s,c)`  
   
@@ -243,7 +243,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
      `_Out_writes_bytes_all_(s)`  
   
-     Um ponteiro para uma matriz de `s` elementos.  Os elementos não precisam ser válido em estado de pré-lançamento.  Pós-estado, os elementos para o `c`-ésimo elemento deve ser válido.  Se o tamanho for conhecido em bytes, dimensionar `s` e `c` pelo tamanho do elemento ou use o `_bytes_` variante, que é definido como:  
+     Um ponteiro para uma matriz de `s` elementos.  Os elementos não precisam ser válido em estado de pré-lançamento.  Pós-estado, os elementos até o `c`elemento -ésimo deve ser válido.  Se o tamanho é conhecido em bytes, o dimensionamento `s` e `c` pelo tamanho do elemento ou use o `_bytes_` variante, que é definido como:  
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
@@ -255,9 +255,9 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
      `_Inout_updates_bytes_to_(s,c)`  
   
-     Um ponteiro para uma matriz, que é lida e gravada pela função.  É de tamanho `s` elementos, que deve ser válido no pré-estado, e `c` elementos devem ser válidos no estado após.  
+     Um ponteiro para uma matriz, que é lida e gravada pela função.  Ele é do tamanho `s` elementos, que deve ser válido no estado de pré-lançamento, e `c` elementos devem ser válidos no pós estado.  
   
-     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use essa operação somente quando o tamanho não pode ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
+     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use somente quando o tamanho não pode ser expressas como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
   
 -   `_Inout_updates_all_(s)`  
   
@@ -267,60 +267,60 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`  
   
-     Em outras palavras, cada elemento que existe no buffer até `s` no estado de pré-lançamento é válida no estado pré e pós-estado.  
+     Em outras palavras, cada elemento que existe no buffer até `s` no estado de pré-lançamento é válida no estado de pré e pós-estado.  
   
-     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use essa operação somente quando o tamanho não pode ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
+     O `_bytes_` variante retorna o tamanho em bytes em vez de elementos. Use somente quando o tamanho não pode ser expressas como elementos.  Por exemplo, `char` cadeias de caracteres usaria o `_bytes_` variante somente se a função semelhantes que usa `wchar_t` seria.  
   
 -   `_In_reads_to_ptr_(p)`  
   
-     Um ponteiro para uma matriz para o qual a expressão `p` – `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo idioma padrão apropriado.  Os elementos anteriores ao `p` deve ser válido em estado de pré-lançamento.  
+     Um ponteiro para uma matriz para o qual a expressão `p`  -  `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo idioma padrão apropriado.  Os elementos anteriores ao `p` deve ser válido no estado de pré-lançamento.  
   
 -   `_In_reads_to_ptr_z_(p)`  
   
-     Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p` – `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo idioma padrão apropriado.  Os elementos anteriores ao `p` deve ser válido em estado de pré-lançamento.  
+     Um ponteiro para uma matriz com terminação nula para o qual a expressão `p`  -  `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo idioma padrão apropriado.  Os elementos anteriores ao `p` deve ser válido no estado de pré-lançamento.  
   
 -   `_Out_writes_to_ptr_(p)`  
   
-     Um ponteiro para uma matriz para o qual a expressão `p` – `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo idioma padrão apropriado.  Os elementos anteriores ao `p` não precisa ser válido em estado de pré-lançamento e deve ser válido no estado após.  
+     Um ponteiro para uma matriz para o qual a expressão `p`  -  `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo idioma padrão apropriado.  Os elementos anteriores ao `p` não precisa ser válido em estado de pré-lançamento e deve ser válido no pós estado.  
   
 -   `_Out_writes_to_ptr_z_(p)`  
   
-     Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p` – `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo idioma padrão apropriado.  Os elementos anteriores ao `p` não precisa ser válido em estado de pré-lançamento e deve ser válido no estado após.  
+     Um ponteiro para uma matriz com terminação nula para o qual a expressão `p`  -  `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo idioma padrão apropriado.  Os elementos anteriores ao `p` não precisa ser válido em estado de pré-lançamento e deve ser válido no pós estado.  
   
 ## <a name="optional-pointer-parameters"></a>Parâmetros opcionais de ponteiro  
- Quando uma anotação de parâmetro de ponteiro inclui `_opt_`, ele indica que o parâmetro pode ser nulo. Caso contrário, a anotação executa a mesma versão que não inclua `_opt_`. Aqui está uma lista da `_opt_` variantes das anotações de parâmetro de ponteiro:  
+ Quando uma anotação de parâmetro de ponteiro inclui `_opt_`, ele indica que o parâmetro pode ser nulo. Caso contrário, a anotação executa o mesmo que a versão que não inclua `_opt_`. Aqui está uma lista da `_opt_` variantes de anotações de parâmetro de ponteiro:  
   
 ||||  
 |-|-|-|  
 |`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|  
   
-## <a name="output-pointer-parameters"></a>Parâmetros de ponteiro de saída  
- Parâmetros de saída de ponteiro exigem uma notação especial para resolver a ambiguidade a nulidade no parâmetro e o local apontado.  
+## <a name="output-pointer-parameters"></a>Parâmetros de saída de ponteiro  
+ Parâmetros de saída de ponteiro exigem uma notação especial para desambiguar a nulidade no parâmetro e o local apontado para.  
   
- **Anotações e descrições**  
+ **As anotações e descrições**  
   
 -   `_Outptr_`  
   
-     O parâmetro não pode ser nulo, e no estado após o local apontado não pode ser nulo e deve ser válido.  
+     O parâmetro não pode ser nulo e no pós-estado de local apontado para não pode ser nulo e deve ser válido.  
   
 -   `_Outptr_opt_`  
   
-     O parâmetro pode ser nulo, mas no estado após o local apontado não pode ser nulo e deve ser válido.  
+     O parâmetro pode ser nulo, mas no pós-estado de local apontado para não pode ser nulo e deve ser válido.  
   
 -   `_Outptr_result_maybenull_`  
   
-     O parâmetro não pode ser nulo e no estado após o local apontado pode ser nulo.  
+     O parâmetro não pode ser nulo e no pós-estado de local apontado para pode ser nulo.  
   
 -   `_Outptr_opt_result_maybenull_`  
   
-     O parâmetro pode ser nulo e no estado após o local apontado pode ser nulo.  
+     O parâmetro pode ser nulo, e no pós-estado de local apontado para pode ser nulo.  
   
  Na tabela a seguir, as subcadeias de caracteres adicionais são inseridas no nome da anotação para qualificar ainda mais o significado da anotação.  Diversas subcadeias de caracteres são `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, e `_to_`.  
   
 > [!IMPORTANT]
->  Se a interface que você estiver fazendo anotações COM, use o formulário COM dessas anotações. Não use as anotações COM qualquer outra interface de tipo.  
+>  Se a interface que você estiver fazendo anotações for COM, use o formulário COM dessas anotações. Não use as anotações COM qualquer outra interface de tipo.  
   
- **Anotações e descrições**  
+ **As anotações e descrições**  
   
 -   `_Outptr_result_z_`  
   
@@ -340,7 +340,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
      `_COM_Outptr_opt_result_maybenull_`  
   
-     O ponteiro retornado tem semântica COM e, portanto, carrega um `_On_failure_` posteriores à condição de que o ponteiro retornado é nulo.  
+     O ponteiro retornado tem semântica COM e, portanto, carrega um `_On_failure_` pós-condição em que o ponteiro retornado é nulo.  
   
 -   `_Outptr_result_buffer_(s)`  
   
@@ -360,11 +360,11 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
      `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     O ponteiro retornado aponta para um buffer de tamanho `s` elementos ou bytes, dos quais o primeiro `c` são válidos.  
+     O ponteiro retornado aponta para um buffer de tamanho `s` elementos ou bytes, dos quais a primeira `c` são válidos.  
   
- Certas convenções de interface assumem que os parâmetros de saída são inúteis em caso de falha.  Exceto COM código explicitamente os formulários na tabela a seguir são preferenciais.  Para o código de COM, use os formulários COM correspondentes são listados na seção anterior.  
+ Certas convenções de interface assumem que os parâmetros de saída são inúteis em caso de falha.  Exceto COM código explicitamente os formulários na tabela a seguir são preferenciais.  Para COM código, use as formas COM correspondentes são listadas na seção anterior.  
   
- **Anotações e descrições**  
+ **As anotações e descrições**  
   
 -   `_Result_nullonfailure_`  
   
@@ -376,20 +376,20 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
 -   `_Outptr_result_nullonfailure_`  
   
-     O ponteiro retornado aponta para um buffer válido se a função obtiver êxito, ou nulo se a função falhar. Essa anotação é um parâmetro não opcional.  
+     O ponteiro retornado aponta para um buffer válido se a função tiver êxito, ou nulo se a função falhar. Esta anotação é para um parâmetro não opcional.  
   
 -   `_Outptr_opt_result_nullonfailure_`  
   
-     O ponteiro retornado aponta para um buffer válido se a função obtiver êxito, ou nulo se a função falhar. Essa anotação é para um parâmetro opcional.  
+     O ponteiro retornado aponta para um buffer válido se a função tiver êxito, ou nulo se a função falhar. Esta anotação é para um parâmetro opcional.  
   
 -   `_Outref_result_nullonfailure_`  
   
-     O ponteiro retornado aponta para um buffer válido se a função obtiver êxito, ou nulo se a função falhar. Essa anotação é um parâmetro de referência.  
+     O ponteiro retornado aponta para um buffer válido se a função tiver êxito, ou nulo se a função falhar. Esta anotação é para um parâmetro de referência.  
   
 ## <a name="output-reference-parameters"></a>Parâmetros de referência de saída  
- Um uso comum do parâmetro de referência é para parâmetros de saída.  Parâmetros de referência de saída simples — por exemplo, `int&`–`_Out_` fornece a semântica correta.  No entanto, quando o valor de saída é um ponteiro — por exemplo `int *&`— como as anotações equivalentes ponteiro `_Outptr_ int **` não fornecer a semântica correta.  Para expressar forma concisa a semântica de referência de parâmetros de saída para tipos de ponteiro, use essas anotações compostas:  
+ Um uso comum do parâmetro de referência é para parâmetros de saída.  Para parâmetros de referência de saída simples — por exemplo, `int&`—`_Out_` fornece a semântica correta.  No entanto, quando o valor de saída é um ponteiro — por exemplo `int *&`— como as anotações equivalentes ponteiro `_Outptr_ int **` não fornecer a semântica correta.  Para expressar maneira concisa a semântica de referência de parâmetros de saída para tipos de ponteiro, use essas anotações compostas:  
   
- **Anotações e descrições**  
+ **As anotações e descrições**  
   
 -   `_Outref_`  
   
@@ -397,7 +397,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
 -   `_Outref_result_maybenull_`  
   
-     Resultado deve ser válido no estado após, mas pode ser nulo em estado após.  
+     Resultado deve ser válido em pós-estado, mas pode ser nulo em pós estado.  
   
 -   `_Outref_result_buffer_(s)`  
   
@@ -409,11 +409,11 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
 -   `_Outref_result_buffer_to_(s, c)`  
   
-     Resultado deve ser válido no pós- estado e não pode ser nulo. Aponta para um buffer de `s` elementos dos quais o primeiro `c` são válidos.  
+     Resultado deve ser válido no pós- estado e não pode ser nulo. Aponta para o buffer de `s` elementos dos quais a primeira `c` são válidos.  
   
 -   `_Outref_result_bytebuffer_to_(s, c)`  
   
-     Resultado deve ser válido no pós- estado e não pode ser nulo. Aponta para um buffer de `s` bytes do que o primeiro `c` são válidos.  
+     Resultado deve ser válido no pós- estado e não pode ser nulo. Aponta para o buffer de `s` bytes do que o primeiro `c` são válidos.  
   
 -   `_Outref_result_buffer_all_(s)`  
   
@@ -425,27 +425,27 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
 -   `_Outref_result_buffer_maybenull_(s)`  
   
-     Resultado deve ser válido no estado após, mas pode ser nulo em estado após. Aponta para um buffer válido de tamanho `s` elementos.  
+     Resultado deve ser válido em pós-estado, mas pode ser nulo em pós estado. Aponta para um buffer válido de tamanho `s` elementos.  
   
 -   `_Outref_result_bytebuffer_maybenull_(s)`  
   
-     Resultado deve ser válido no estado após, mas pode ser nulo em estado após. Aponta para um buffer válido de tamanho `s` bytes.  
+     Resultado deve ser válido em pós-estado, mas pode ser nulo em pós estado. Aponta para um buffer válido de tamanho `s` bytes.  
   
 -   `_Outref_result_buffer_to_maybenull_(s, c)`  
   
-     Resultado deve ser válido no estado após, mas pode ser nulo em estado após. Aponta para um buffer de `s` elementos dos quais o primeiro `c` são válidos.  
+     Resultado deve ser válido em pós-estado, mas pode ser nulo em pós estado. Aponta para o buffer de `s` elementos dos quais a primeira `c` são válidos.  
   
 -   `_Outref_result_bytebuffer_to_maybenull_(s,c)`  
   
-     Resultado deve ser válido no estado após, mas pode ser nulo em estado de post. Aponta para um buffer de `s` bytes do que o primeiro `c` são válidos.  
+     Resultado deve ser válido em pós-estado, mas pode ser nulo em estado de post. Aponta para o buffer de `s` bytes do que o primeiro `c` são válidos.  
   
 -   `_Outref_result_buffer_all_maybenull_(s)`  
   
-     Resultado deve ser válido no estado após, mas pode ser nulo em estado de post. Aponta para um buffer válido de tamanho `s` elementos válidos.  
+     Resultado deve ser válido em pós-estado, mas pode ser nulo em estado de post. Aponta para um buffer válido de tamanho `s` elementos válidos.  
   
 -   `_Outref_result_bytebuffer_all_maybenull_(s)`  
   
-     Resultado deve ser válido no estado após, mas pode ser nulo em estado de post. Aponta para um buffer válido de `s` bytes de elementos válidos.  
+     Resultado deve ser válido em pós-estado, mas pode ser nulo em estado de post. Aponta para um buffer válido de `s` bytes de elementos válidos.  
   
 ## <a name="return-values"></a>Valores de Retorno  
  O valor de retorno de uma função é semelhante a um `_Out_` parâmetro mas está em um nível diferente de de-reference, e você não deve considerar o conceito de ponteiro para o resultado.  Para as anotações a seguir, o valor de retorno é o objeto anotado — um escalar, um ponteiro para uma estrutura ou um ponteiro para um buffer. Essas anotações têm a mesma semântica correspondente `_Out_` anotação.  
@@ -455,7 +455,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|  
   
 ## <a name="other-common-annotations"></a>Outras anotações comuns  
- **Anotações e descrições**  
+ **As anotações e descrições**  
   
 -   `_In_range_(low, hi)`  
   
@@ -484,11 +484,11 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   
 -   `_Struct_size_bytes_(size)`  
   
-     Aplica-se a uma declaração de estrutura ou classe.  Indica que um objeto válido desse tipo pode ser maior do que o tipo declarado, com o número de bytes que está sendo fornecido pelo `size`.  Por exemplo:  
+     Aplica-se a uma declaração de classe ou estrutura.  Indica que um objeto válido desse tipo pode ser maior do que o tipo declarado, com o número de bytes que está sendo fornecido pelo `size`.  Por exemplo:  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
-     O tamanho do buffer em bytes de um parâmetro `pM` do tipo `MyStruct *` é levado para ser:  
+     O tamanho do buffer em bytes de um parâmetro `pM` do tipo `MyStruct *` , em seguida, é considerada como:  
   
      `min(pM->nSize, sizeof(MyStruct))`  
   

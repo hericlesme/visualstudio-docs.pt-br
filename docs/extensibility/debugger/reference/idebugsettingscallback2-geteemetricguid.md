@@ -1,45 +1,30 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricGuid | Documentos do Microsoft
+title: IDebugSettingsCallback2::GetEEMetricGuid | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::GetEEMetricGuid
+helpviewer_keywords: IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b5ddf9ed95176613a01c04cc2ff7de41d5222e91
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4ff78fe1aee2a0f9b72f5b90544fb936f4075c4f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
-Recupera o identificador exclusivo para uma métrica do avaliador de expressão recebe seu nome.  
+Recupera o identificador exclusivo de uma métrica de avaliador de expressão recebe seu nome.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricGuid(  
    REFGUID guidLang,  
    REFGUID guidVendor,  
@@ -48,7 +33,7 @@ HRESULT GetEEMetricGuid(
 );  
 ```  
   
-```c#  
+```csharp  
 HRESULT GetEEMetricGuid(  
    ref Guid guidLang,  
    ref Guid guidVendor,  
@@ -71,7 +56,7 @@ HRESULT GetEEMetricGuid(
  [out] Retorna o identificador exclusivo da métrica.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

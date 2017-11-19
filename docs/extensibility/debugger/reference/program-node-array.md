@@ -1,40 +1,24 @@
 ---
-title: PROGRAM_NODE_ARRAY | Documentos do Microsoft
+title: PROGRAM_NODE_ARRAY | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- PROGRAM_NODE_ARRAY
-helpviewer_keywords:
-- PROGRAM_NODE_ARRAY structure
+f1_keywords: PROGRAM_NODE_ARRAY
+helpviewer_keywords: PROGRAM_NODE_ARRAY structure
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 50aabe2da4f55c54e32f10b7746bc87109c56f1e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2da6717fa782d6888fb37da1a16c79ef2a546b6b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 Contém uma matriz de objetos que descrevem os programas de interesse.  
@@ -48,7 +32,7 @@ typedef struct tagPROGRAM_NODE_ARRAY {
 } PROGRAM_NODE_ARRAY;  
 ```  
   
-```c#  
+```csharp  
 public struct tagPROGRAM_NODE_ARRAY {  
    public uint                 dwCount;  
    public IDebugProgramNode2[] Members;  
@@ -57,7 +41,7 @@ public struct tagPROGRAM_NODE_ARRAY {
   
 ## <a name="members"></a>Membros  
  dwCount  
- Número de objetos na `Members` matriz.  
+ Número de objetos a `Members` matriz.  
   
  Membros  
  Uma matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que descrevem os programas solicitados.  

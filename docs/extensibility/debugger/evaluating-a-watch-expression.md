@@ -1,58 +1,44 @@
 ---
-title: "Avaliar uma expressão de inspeção | Documentos do Microsoft"
+title: "Avaliar uma expressão de inspeção | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - expression evaluation, watch expressions
 - watch expressions
 ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 42973a61ec8a410af77b1d59bcd30bfa449cad7e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0dfc63e378766fa6b50e52788d7117d767613bec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="evaluating-a-watch-expression"></a>Avaliar uma expressão de inspeção
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão do CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  No Visual Studio 2015, essa maneira de implementar avaliadores de expressão foi preterida. Para obter informações sobre como implementar avaliadores de expressão do CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Quando o Visual Studio está pronto para exibir o valor de uma expressão de inspeção, ele chama [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) que, por sua vez, chama [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Isso produz uma [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto que contém o valor e o tipo da expressão.  
+ Quando o Visual Studio está pronto para exibir o valor de uma expressão de inspeção, ele chama [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) chama [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Isso produz um [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto que contém o valor e o tipo da expressão.  
   
- Nessa implementação do `IDebugParsedExpression::EvaluateSync`, a expressão é analisada e avaliada ao mesmo tempo. Esta implementação realiza as seguintes tarefas:  
+ Nessa implementação de `IDebugParsedExpression::EvaluateSync`, a expressão é analisada e avaliada ao mesmo tempo. Essa implementação executa as seguintes tarefas:  
   
-1.  Analisa e avalia a expressão para produzir um objeto genérico que contém o valor e seu tipo. No c#, isso é representado como uma `object` enquanto em C++ é representado como um `VARIANT`.  
+1.  Analisa e avalia a expressão para produzir um objeto genérico que contém o valor e seu tipo. Em c#, isso é representado como um `object` enquanto em C++ é representado como um `VARIANT`.  
   
-2.  Cria uma instância de uma classe (chamado `CValueProperty` neste exemplo) que implementa o `IDebugProperty2` da interface e o armazena na classe o valor a ser retornado.  
+2.  Instancia uma classe (chamado `CValueProperty` neste exemplo) que implementa o `IDebugProperty2` de interface e o armazena na classe, o valor a ser retornado.  
   
 3.  Retorna o `IDebugProperty2` de interface do `CValueProperty` objeto.  
   
 ## <a name="managed-code"></a>Código gerenciado  
- Esta é uma implementação do `IDebugParsedExpression::EvaluateSync` em código gerenciado. O método auxiliar `Tokenize` analisa a expressão em uma árvore de análise. A função auxiliar `EvalToken` converte o token para um valor. A função auxiliar `FindTerm` recursivamente percorre a árvore de análise, chamar `EvalToken` para cada nó que representa um valor e a aplicação de qualquer operação (adição ou subtração) na expressão.  
+ Esta é uma implementação do `IDebugParsedExpression::EvaluateSync` em código gerenciado. O método auxiliar `Tokenize` analisa a expressão em uma árvore de análise. A função auxiliar `EvalToken` converte o token para um valor. A função auxiliar `FindTerm` recursivamente percorre a árvore de análise, chamando `EvalToken` para cada nó que representa um valor e a aplicação de todas as operações (adição ou subtração) na expressão.  
   
-```c#  
+```csharp  
 namespace EEMC  
 {  
     public class CParsedExpression : IDebugParsedExpression  
@@ -97,7 +83,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Código não gerenciado  
- Esta é uma implementação do `IDebugParsedExpression::EvaluateSync` em código não gerenciado. A função auxiliar `Evaluate` analisa e avalia a expressão, retornando um `VARIANT` contendo o valor resultante. A função auxiliar `VariantValueToProperty` pacotes a `VARIANT` em uma `CValueProperty` objeto.  
+ Esta é uma implementação do `IDebugParsedExpression::EvaluateSync` em código não gerenciado. A função auxiliar `Evaluate` analisa e avalia a expressão, retornando um `VARIANT` contendo o valor resultante. A função auxiliar `VariantValueToProperty` pacotes o `VARIANT` em uma `CValueProperty` objeto.  
   
 ```  
 [C++]  
@@ -191,4 +177,4 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
   
 ## <a name="see-also"></a>Consulte também  
  [Avaliar uma expressão de janela Inspeção](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
- [Implementação de exemplo de avaliação de expressão](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+ [Exemplo de implementação da Avaliação de expressão](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

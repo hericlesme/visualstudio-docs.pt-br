@@ -1,38 +1,23 @@
 ---
-title: IDebugModOpt | Documentos do Microsoft
+title: IDebugModOpt | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugModOpt interface
+helpviewer_keywords: IDebugModOpt interface
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7d0a111229a35afe2680dcd5958d7e6dea63401e
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fa4416bbb2a4b37ba986bb0d57b32dfa5aa319cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 Representa um modificador opcional de depuração.  
@@ -51,7 +36,7 @@ IDebugModOpt : IUnknown
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Recupera uma lista de modificadores opcionais.|  
+|[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Recupera uma lista dos modificadores opcionais.|  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: Sh.h  

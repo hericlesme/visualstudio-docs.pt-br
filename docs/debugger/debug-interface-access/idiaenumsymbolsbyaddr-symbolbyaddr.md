@@ -1,53 +1,51 @@
 ---
-title: "IDiaEnumSymbolsByAddr::symbolByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaEnumSymbolsByAddr::symbolByAddr"
+title: ': Symbolbyaddr | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSymbolsByAddr::symbolByAddr method
 ms.assetid: 0b6f5a68-8402-4f29-8219-20576fda8166
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b538c5ff956ebd6fcfa5d1cff111ec716def9c99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSymbolsByAddr::symbolByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Posiciona o enumerador realizando uma pesquisa por número de seção de imagem e deslocamento.  
+# <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
+Posiciona o enumerador executando uma pesquisa por número de seção de imagem e o deslocamento.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT symbolByAddr (   
-   DWORD**      isect,  
-   DWORD**      offsect,  
-   IDiaSymbol** ppsymbol  
+```C++  
+HRESULT symbolByAddr (   
+   DWORD**      isect,  
+   DWORD**      offsect,  
+   IDiaSymbol** ppsymbol  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  isect  
- \[in\] Número da seção de imagem.  
+ [in] Número de seção de imagem.  
   
  offsect  
- \[in\] Deslocamento na seção.  
+ [in] Na seção de deslocamento.  
   
  ppsymbol  
- \[out\] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o símbolo encontrado.  
+ [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o símbolo encontrado.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se o símbolo não pôde ser encontrado.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o símbolo não pôde ser encontrado. Caso contrário, retornará um código de erro.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

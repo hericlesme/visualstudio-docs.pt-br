@@ -1,45 +1,30 @@
 ---
-title: PROGRAM_DESTROY_FLAGS | Documentos do Microsoft
+title: PROGRAM_DESTROY_FLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- PROGRAM_DESTROY_FLAGS enumeration
+helpviewer_keywords: PROGRAM_DESTROY_FLAGS enumeration
 ms.assetid: be00d4a3-d5b8-4159-b632-64577f534883
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e9a3acc2d684bd5fe36610676a54493d8c0a8ef8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 011808759562310db47af2d9809c2ea36fe624c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
-Enumera válidos valores do programa destruir sinalizadores.  
+Enumera o válido sinalizadores de destruir os valores do programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_PPROGRAM_DESTROY_FLAGS  
 {  
    PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
@@ -47,7 +32,7 @@ enum enum_PPROGRAM_DESTROY_FLAGS
 typedef DWORD PROGRAM_DESTROY_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_PPROGRAM_DESTROY_FLAGS  
 {  
    PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  

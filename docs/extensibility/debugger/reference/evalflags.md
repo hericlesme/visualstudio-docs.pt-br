@@ -1,47 +1,31 @@
 ---
-title: EVALFLAGS | Documentos do Microsoft
+title: EVALFLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- EVALFLAGS
-helpviewer_keywords:
-- EVALFLAGS enumeration
+f1_keywords: EVALFLAGS
+helpviewer_keywords: EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 794ef7e68c60f2958dcbb3dcf7c6b4c069a09e41
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 45bef946605818f11d0199600849fd49b5463ab8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Especifica sinalizadores que controlam a avaliação da expressão.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_EVALFLAGS {  
    EVAL_RETURNVALUE = 0x0002,  
    EVAL_NOSIDEEFFECTS = 0x0004,  
@@ -54,7 +38,7 @@ enum enum_EVALFLAGS {
 typedef DWORD EVALFLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_EVALFLAGS {  
    EVAL_RETURNVALUE = 0x0002,  
    EVAL_NOSIDEEFFECTS = 0x0004,  
@@ -74,16 +58,16 @@ public enum enum_EVALFLAGS {
  Especifica que efeitos colaterais não serão permitidas.  
   
  EVAL_ALLOWBPS  
- Especifica parar em pontos de interrupção.  
+ Especifica a parada em pontos de interrupção.  
   
  EVAL_ALLOWERRORREPORT  
- Especifica o relatório de erros para o host a ser permitido. Usada principalmente para a avaliação da expressão em script no Internet Explorer.  
+ Especifica o relatório de erros para o host a ser permitido. Usado principalmente para a avaliação da expressão no script no Internet Explorer.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- Funções de força a ser avaliada como endereços, em vez de chamar a função.  
+ Funções de força a ser avaliada como endereços, em vez de invocar a função.  
   
  EVAL_NOFUNCEVAL  
- Impede que a função está sendo avaliada. Por exemplo, considere o `int` token na expressão `myExpression(int) + 10`. Essa função pode ser avaliada corretamente como um endereço, mas não como um valor.  
+ Impede que a função que está sendo avaliada. Por exemplo, considere o `int` token na expressão `myExpression(int) + 10`. Essa função pode ser avaliada corretamente como um endereço, mas não como um valor.  
   
  EVAL_NOEVENTS  
  Sinalizador para indicar que os eventos que ocorrem durante a avaliação de expressão não devem ser enviados para o Gerenciador de sessão de depuração (SDM) ou para o IDE.  

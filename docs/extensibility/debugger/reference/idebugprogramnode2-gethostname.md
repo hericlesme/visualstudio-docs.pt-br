@@ -1,54 +1,38 @@
 ---
-title: IDebugProgramNode2::GetHostName | Documentos do Microsoft
+title: IDebugProgramNode2::GetHostName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramNode2::GetHostName
-helpviewer_keywords:
-- IDebugProgramNode2::GetHostName
+f1_keywords: IDebugProgramNode2::GetHostName
+helpviewer_keywords: IDebugProgramNode2::GetHostName
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 338f2ca57b88940e5dafb6aa9e3610754b5ca9f0
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 35414810e32e55775f6774ed25625d253c0480fe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
-Obtém o nome do processo que hospeda o programa.  
+Obtém o nome do processo que está hospedando o programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetHostName (   
    GETHOSTNAME_TYPE dwHostNameType,  
    BSTR*            pbstrHostName  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetHostName (   
    enum_GETHOSTNAME_TYPE dwHostNameType,  
    out string            pbstrHostName  
@@ -57,18 +41,18 @@ int GetHostName (
   
 #### <a name="parameters"></a>Parâmetros  
  `dwHostNameType`  
- [in] Um valor a partir de [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumeração que especifica o tipo de nome a ser retornado.  
+ [in] Um valor da [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumeração que especifica o tipo de nome a ser retornado.  
   
  `pbstrHostName`  
  [out] Retorna o nome do processo de hospedagem.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CProgram` objeto expõe o [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface. Este exemplo ignora o `dwHostNameType` parâmetro e retorna somente o nome do programa como extraído do nome base do caminho do arquivo do módulo.  
+ O exemplo a seguir mostra como implementar esse método para um simples `CProgram` objeto que expõe o [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface. Este exemplo ignora o `dwHostNameType` parâmetro e retorna somente o nome do programa, conforme extraído do nome base do caminho de arquivo do módulo.  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {    
    // Check for valid argument.    
    if (pbstrHostName)    

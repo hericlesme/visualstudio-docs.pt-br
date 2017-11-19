@@ -1,47 +1,31 @@
 ---
-title: STEPKIND | Documentos do Microsoft
+title: STEPKIND | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- STEPKIND
-helpviewer_keywords:
-- STEPKIND enumeration
+f1_keywords: STEPKIND
+helpviewer_keywords: STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1365ba8a43bcd8b997bae460a4300ccd81c0e688
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 57bbce476883e90a569f5174ef46e3f8c1d0380b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="stepkind"></a>STEPKIND
 Especifica o tipo de etapa de revisão.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_STEPKIND {   
    STEP_INTO      = 0,  
    STEP_OVER      = 1,  
@@ -51,7 +35,7 @@ enum enum_STEPKIND {
 typedef DWORD STEPKIND;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_STEPKIND {   
    STEP_INTO      = 0,  
    STEP_OVER      = 1,  
@@ -71,10 +55,10 @@ public enum enum_STEPKIND {
  Etapas de uma função.  
   
  STEP_BACKWARDS  
- Etapas para trás em uma função.  
+ Etapas com versões anteriores em uma função.  
   
 ## <a name="remarks"></a>Comentários  
- Passada como um argumento para o [etapa](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.  
+ Passado como um argumento para o [etapa](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  
@@ -85,4 +69,4 @@ public enum enum_STEPKIND {
   
 ## <a name="see-also"></a>Consulte também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Etapa](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+ [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

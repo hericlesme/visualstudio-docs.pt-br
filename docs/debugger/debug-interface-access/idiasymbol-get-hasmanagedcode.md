@@ -1,58 +1,56 @@
 ---
-title: "IDiaSymbol::get_hasManagedCode | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaSymbol::get_hasManagedCode"
+title: ': Get_hasmanagedcode | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasManagedCode method
 ms.assetid: e40f82f5-88fe-4a9b-b594-3605f42773ec
-caps.latest.revision: 6
-caps.handback.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a5e6f9d23416da46245ec34383929e224b08d940
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasManagedCode
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Recupera um sinalizador que indica se o módulo contém código gerenciado.  
+# <a name="idiasymbolgethasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
+Recupera um sinalizador que indica se o módulo contém o código gerenciado.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```C++  
 HRESULT get_hasManagedCode(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  `pFlag`  
- \[out\] Retorna `TRUE` se o módulo contém o código gerenciado; Caso contrário, retornará `FALSE`, o código é o código não gerenciado.  
+ [out] Retorna `TRUE` se o módulo contém o código gerenciado; caso contrário, retornará `FALSE`, o código é um código não gerenciado.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`; Caso contrário, retornará `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+>  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## Comentários  
- Esta propriedade está disponível a partir do `SymTagCompilandDetails` tipo de símbolo \(consulte [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)\).  
+## <a name="remarks"></a>Comentários  
+ Essa propriedade está disponível na `SymTagCompilandDetails` tipo de símbolo (consulte [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descrição|  
-|---------------|---------------|  
+|-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|V 8.0 do SDK DIA|  
+|Versão:|V DIA SDK 8.0|  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

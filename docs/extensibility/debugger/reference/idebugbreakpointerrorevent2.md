@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakpointErrorEvent2
-helpviewer_keywords:
-- IDebugBreakpointErrorEvent2
+f1_keywords: IDebugBreakpointErrorEvent2
+helpviewer_keywords: IDebugBreakpointErrorEvent2
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 94ab4dfbe72d28f52767c6dde259483d6905e401
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 92a7d4207e18b661452c52a25a1c079b5feac734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Essa interface informa o Gerenciador de sessão de depuração (SDM) que um ponto de interrupção pendente não pôde ser associado a um programa carregado, devido a um aviso ou erro.  
@@ -61,7 +45,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ## <a name="remarks"></a>Comentários  
  Sempre que um ponto de interrupção está associado, um evento é enviado para o SDM. Se o ponto de interrupção não pode ser vinculado, um `IDebugBreakpointErrorEvent2` é enviada; caso contrário, um [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) é enviada.  
   
- Por exemplo, quando não conseguir analisar ou avaliar a condição associada com o ponto de interrupção pendente, um aviso é enviado de que o ponto de interrupção pendente não pode ser associado no momento. Isso pode ocorrer se o código para o ponto de interrupção não foi carregado ainda.  
+ Por exemplo, quando não conseguir analisar ou avaliar a condição associada com o ponto de interrupção pendente, um aviso é enviado se o ponto de interrupção pendente não pode ser associado no momento. Isso pode ocorrer se o código para o ponto de interrupção não foi carregado ainda.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

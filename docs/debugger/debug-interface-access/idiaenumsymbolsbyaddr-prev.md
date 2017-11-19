@@ -1,56 +1,54 @@
 ---
-title: "IDiaEnumSymbolsByAddr::Prev | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Método IDiaEnumSymbolsByAddr::Prev"
+title: Idiaenumsymbolsbyaddr | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumSymbolsByAddr::Prev method
 ms.assetid: da3b3dca-68cb-4cb0-b25c-e28a1ffe49d3
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c7edaccc32a6557071aa294884348029d2841f8c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumSymbolsByAddr::Prev
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 Recupera os símbolos anteriores na ordem por endereço.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
-HRESULT Prev (   
-   ULONG        celt,   
-   IDiaSymbol** rgelt,  
-   ULONG*       pceltFetched  
+```C++  
+HRESULT Prev (   
+   ULONG        celt,   
+   IDiaSymbol** rgelt,  
+   ULONG*       pceltFetched  
 );  
 ```  
   
-#### Parâmetros  
+#### <a name="parameters"></a>Parâmetros  
  celt  
- \[in\] O número de símbolos no enumerador a serem recuperados.  
+ [in] O número de símbolos no enumerador a ser recuperado.  
   
  rgelt  
- \[out\] Uma matriz que deve ser preenchido com [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam os símbolos desejados.  
+ [out] Uma matriz que deve ser preenchido com [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam os símbolos desejados.  
   
  pceltFetched  
- \[out\] Retorna o número de símbolos buscadas enumerador.  
+ [out] Retorna o número de símbolos no enumerador busca.  
   
-## Valor de retorno  
- Se bem\-sucedida, retorna `S_OK`.  Retorna `S_FALSE` se não houver nenhum símbolo anterior.  Caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum símbolo anterior. Caso contrário, retornará um código de erro.  
   
-## Comentários  
- Esse método atualiza a posição do enumerador pelo número de elementos buscados.  
+## <a name="remarks"></a>Comentários  
+ Este método atualizará a posição de enumerador pelo número de elementos buscados.  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

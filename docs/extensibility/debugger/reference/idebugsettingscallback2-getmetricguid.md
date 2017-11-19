@@ -1,45 +1,30 @@
 ---
-title: IDebugSettingsCallback2::GetMetricGuid | Documentos do Microsoft
+title: IDebugSettingsCallback2::GetMetricGuid | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::GetMetricGuid
+helpviewer_keywords: IDebugSettingsCallback2::GetMetricGuid
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: bb96e99b4ab6a002c8b061761fd797ed09d0272a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d43bb839b1c8c4be3d9c56a20d6e9e17eb79cd1b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Recupera o identificador exclusivo de uma métrica recebe seu nome.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetMetricGuid(  
    LPCWSTR pszType,  
    REFGUID guidSection,  
@@ -48,7 +33,7 @@ HRESULT GetMetricGuid(
 );  
 ```  
   
-```c#  
+```csharp  
 private int GetMetricGuid(  
    string   pszType,  
    ref Guid guidSection,  
@@ -71,7 +56,7 @@ private int GetMetricGuid(
  [out] Retorna o identificador exclusivo da métrica.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
