@@ -1,58 +1,42 @@
 ---
-title: IDebugDefaultPort2::QueryIsLocal | Documentos do Microsoft
+title: IDebugDefaultPort2::QueryIsLocal | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDefaultPort2::QueryIsLocal
-helpviewer_keywords:
-- IDebugDefaultPort2::QueryIsLocal
+f1_keywords: IDebugDefaultPort2::QueryIsLocal
+helpviewer_keywords: IDebugDefaultPort2::QueryIsLocal
 ms.assetid: 1a42e774-c6ed-419a-a0e3-cab5778652ca
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 6465ad9c3999e073da811bc0014ba77420e9a80d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b90459eb9dc3a2646bbe1ba5eb9ab25e9a8327b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
-Este método determina se essa porta está na máquina local.  
+Este método determina se essa porta é no computador local.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT QueryIsLocal(  
    void  
 );  
 ```  
   
-```c#  
+```csharp  
 int QueryIsLocal();  
 ```  
   
 ## <a name="return-value"></a>Valor de retorno  
- Retorna `S_OK` se essa porta é local (no mesmo computador que o chamador) ou `S_FALSE` se a porta estiver em outra máquina.  
+ Retorna `S_OK` se essa porta é local (no mesmo computador que o chamador) ou `S_FALSE` se a porta está em outra máquina.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

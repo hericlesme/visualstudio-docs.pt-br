@@ -1,43 +1,27 @@
 ---
-title: DEBUG_CUSTOM_VIEWER | Documentos do Microsoft
+title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- DEBUG_CUSTOM_VIEWER
-helpviewer_keywords:
-- DEBUG_CUSTOM_VIEWER structure
+f1_keywords: DEBUG_CUSTOM_VIEWER
+helpviewer_keywords: DEBUG_CUSTOM_VIEWER structure
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7d32ca283b82691f4391d069d28b4a634489dffd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cc6f9655d2ec7bc588bcd673d5331f12f7fab262
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-Uma estrutura que identifica um visualizador personalizado ou digite visualizador.  
+Uma estrutura que identifica um visualizador personalizado ou tipo de visualizador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -52,7 +36,7 @@ typedef struct tagDEBUG_CUSTOM_VIEWER {
 } DEBUG_CUSTOM_VIEWER;  
 ```  
   
-```c#  
+```csharp  
 public struct DEBUG_CUSTOM_VIEWER {  
    public uint   dwID;  
    public string bstrMenuName;  
@@ -68,7 +52,7 @@ public struct DEBUG_CUSTOM_VIEWER {
  Uma ID para diferenciar vários visualizadores ou visualizadores implementados por um `GUID`.  
   
  bstrMenuName  
- O texto que aparecerá no menu suspenso.  
+ O texto que será exibido no menu suspenso.  
   
  bstrDescription  
  Uma descrição do visualizador personalizado ou Visualizador de tipo (deve ser um valor nulo se não usado).  

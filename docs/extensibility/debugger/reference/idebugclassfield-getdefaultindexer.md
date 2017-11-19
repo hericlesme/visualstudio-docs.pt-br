@@ -1,53 +1,37 @@
 ---
-title: IDebugClassField::GetDefaultIndexer | Documentos do Microsoft
+title: IDebugClassField::GetDefaultIndexer | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugClassField::GetDefaultIndexer
-helpviewer_keywords:
-- IDebugClassField::GetDefaultIndexer method
+f1_keywords: IDebugClassField::GetDefaultIndexer
+helpviewer_keywords: IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c4b8e1c47cc65b72d6350800dad8ee4b39b6b9c3
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d30388b170f4a7de672fbdda11ccead83acce32c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Obtém o nome do indexador padrão.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetDefaultIndexer(   
    BSTR* pbstrIndexer  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetDefaultIndexer(  
    out string pbstrIndexer  
 );  
@@ -58,12 +42,12 @@ int GetDefaultIndexer(
  [out] Retorna uma cadeia de caracteres que contém o nome do indexador padrão.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, Retorna S_OK ou retorna S_FALSE se não houver nenhum indexador padrão. Caso contrário, retornará um código de erro.  
+ Se for bem-sucedido, retornará S_OK ou retornará S_FALSE se não há nenhum indexador padrão. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O indexador de padrão de uma classe é a propriedade que está marcada como o `Default` propriedade para acessos de matriz. Isso é específico para [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Aqui está um exemplo de um indexador padrão declarado no [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] e como ele é usado.  
+ O indexador padrão de uma classe é a propriedade que está marcada como o `Default` propriedade acessos de matriz. Isso é específico para [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]. Aqui está um exemplo de um indexador padrão declarado em [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] e como ele é usado.  
   
-```vb#  
+```vb  
 Imports System.Collections;  
   
 Public Class Class1  

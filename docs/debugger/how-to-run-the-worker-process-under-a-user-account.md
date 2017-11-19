@@ -1,36 +1,39 @@
 ---
-title: "Como executar o processo de trabalho em uma conta de usu&#225;rio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "contas de usuário, aspnet_wp.exe"
-  - "Depuração de aplicativos da Web do ASP.NET"
-  - "ferramentas, aspnet_wp.exe"
-  - "ASP.NET, ferramentas"
-  - "aspnet_wp.exe"
+title: "Como: executar o processo de trabalho em uma conta de usuário | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- user accounts, aspnet_wp.exe
+- ASP.NET, debugging Web applications
+- tools, aspnet_wp.exe
+- ASP.NET, tools
+- aspnet_wp.exe
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
-caps.latest.revision: 32
-caps.handback.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "32"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b823675623f20df49edb87582f3e40695aec50e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como executar o processo de trabalho em uma conta de usu&#225;rio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como executar o processo de trabalho em uma conta de usuário
 Para configurar o computador de modo que você possa executar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe ou w3wp.exe) em uma conta de usuário, siga estas etapas.  
+
+ > [!IMPORTANT]
+ > A partir do Windows Server 2008 R2, é recomendável o uso do [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) como a identidade de cada pool de aplicativos.
   
 ## <a name="procedure"></a>Procedimento  
   
@@ -38,28 +41,28 @@ Para configurar o computador de modo que você possa executar o processo de trab
   
 1.  Abra o arquivo machine.config, localizado no computador na pasta CONFIGURATION no caminho onde você instalou o tempo de execução.  
   
-2.  Encontre o &lt;processModel&gt; seção e alterar os atributos de usuário e senha para o nome e a senha da conta de usuário que você deseja aspnet_wp.exe para ser executado em.  
+2.  Localizar o &lt;processModel&gt; seção e altere os atributos de usuário e senha para o nome e a senha da conta de usuário que você deseja aspnet_wp.exe para ser executado em.  
   
 3.  Salve o arquivo machine.config.  
   
 4.  No [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], o IIS 6.0 está instalado por padrão. O processo de trabalho correspondente é w3wp.exe. Para executar no modo do IIS 6.0 com o aspnet_wp.exe como o processo de trabalho, siga estas etapas:  
   
-    1.  Clique em **Iniciar**, clique em **Ferramentas administrativas** e, em seguida, escolha **Serviços de informações da Internet**.  
+    1.  Clique em **iniciar**, clique em **ferramentas administrativas** e, em seguida, escolha **Internet Information Services**.  
   
     2.  No **Internet Information Services** caixa de diálogo, clique o **Sites da Web** pasta e escolha **propriedades**.  
   
-    3.  No **Propriedades de Sites da Web** caixa de diálogo, escolha **serviço**.  
+    3.  No **propriedades de Sites da Web** caixa de diálogo caixa, escolha **Service**.  
   
-    4.  Selecione **Executar serviço WWW no modo de isolamento do IIS 6.0**.  
+    4.  Selecione **executar serviço WWW no modo de isolamento IIS6.0**.  
   
-    5.  Feche o **propriedades** caixa de diálogo e **Gerenciador de serviços de Internet**.  
+    5.  Fechar o **propriedades** caixa de diálogo e **Gerenciador de serviços de Internet**.  
   
 5.  Abra um prompt de comando do Windows e redefina o servidor executando:  
   
     ```  
     iisreset  
     ```  
-    – ou –  
+    – ou —  
   
     ```  
     net stop iisadmin /y  
@@ -68,22 +71,23 @@ Para configurar o computador de modo que você possa executar o processo de trab
   
 6.  Localize a pasta de arquivos temporários do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], que deve estar no mesmo caminho que a pasta CONFIG. Clique com botão direito temporárias [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] arquivos de pasta e escolha **propriedades** no menu de atalho.  
   
-7.  No **Propriedades de arquivos temporários do ASP.NET** caixa de diálogo, clique o **segurança** guia.  
+7.  No **propriedades de arquivos temporários do ASP.NET** caixa de diálogo, clique o **segurança** guia.  
   
-8.  Clique em **avançada**.  
+8.  Clique em **Avançadas**.  
   
-9. No **configurações de segurança avançadas para arquivos temporários do ASP.Net** caixa de diálogo, clique em **Add**.  
+9. No **configurações de segurança avançadas para arquivos temporários do ASP.Net** caixa de diálogo, clique em **adicionar**.  
   
     O **caixa de diálogo Selecionar usuário, computador ou grupo** é exibida.  
   
-10. Digite o nome de usuário na **Insira o nome do objeto para selecionar** caixa e, em seguida, clique em **OK**. O nome de usuário deve seguir este formato: NomedeDomínio\NomedeUsuário.  
+10. Digite o nome de usuário na **insira o nome do objeto para selecionar** caixa e, em seguida, clique em **Okey**. O nome de usuário deve seguir este formato: NomedeDomínio\NomedeUsuário.  
   
-11. No **entrada de permissão para arquivos temporários do ASP.NET** caixa de diálogo caixa, dê ao usuário **controle total**, e, em seguida, clique em **OK** para fechar o **entrada para arquivos temporários do ASP.NET** caixa de diálogo.  
+11. No **entrada de permissão para arquivos temporários do ASP.NET** caixa de diálogo caixa, dar ao usuário **controle total**e, em seguida, clique em **Okey** para fechar o **entrada para temporário de ASP Arquivos do .NET** caixa de diálogo.  
   
-12. Um **segurança** caixa de diálogo será exibida e perguntará se você realmente quer alterar as permissões em uma pasta do sistema. Clique em **Sim**.  
+12. Um **segurança** caixa de diálogo será exibida e solicita se você realmente deseja alterar as permissões em uma pasta do sistema. Clique em **Sim**.  
   
-13. Clique em **OK** para fechar o **Propriedades de arquivos temporários do ASP.NET** caixa de diálogo.  
+13. Clique em **Okey** para fechar o **propriedades de arquivos temporários do ASP.NET** caixa de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
-[Depuração do ASP.NET: Requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md)  
+[Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Depuração do ASP.NET: requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md)  
   

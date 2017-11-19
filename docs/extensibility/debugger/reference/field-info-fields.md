@@ -1,47 +1,31 @@
 ---
-title: FIELD_INFO_FIELDS | Documentos do Microsoft
+title: FIELD_INFO_FIELDS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- FIELD_INFO_FIELDS
-helpviewer_keywords:
-- FIELD_INFO_FIELDS enumeration
+f1_keywords: FIELD_INFO_FIELDS
+helpviewer_keywords: FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7884cd936ce77b179e3930260501e04cc6da79f5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d1aa1c2363ecf3cb6bfd9531112c87d8bcaeefe4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-Especifica quais informações devem ser recuperadas sobre uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
+Especifica quais informações recuperar sobre um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_INFO_FIELDS {   
    FIF_FULLNAME  = 0x0001,  
    FIF_NAME      = 0x0002,  
@@ -53,7 +37,7 @@ enum enum_FIELD_INFO_FIELDS {
 typedef DWORD FIELD_INFO_FIELDS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_FIELD_INFO_FIELDS {  
    FIF_FULLNAME  = 0x0001,  
    FIF_NAME      = 0x0002,  

@@ -1,53 +1,37 @@
 ---
-title: IDebugMethodField::EnumArguments | Documentos do Microsoft
+title: IDebugMethodField::EnumArguments | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugMethodField::EnumArguments
-helpviewer_keywords:
-- IDebugMethodField::EnumArguments method
+f1_keywords: IDebugMethodField::EnumArguments
+helpviewer_keywords: IDebugMethodField::EnumArguments method
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 588dc55a0648be494f2c2fc0f82937c0efded701
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d500e5bedbd284c15430ab65e9477d4a3a404eaf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 Cria um enumerador para o tipo de cada argumento necessário para chamar o método.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT EnumArguments(   
    IEnumDebugFields** ppParams  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumArguments(  
    out IEnumDebugFields ppParams  
 );  
@@ -58,12 +42,12 @@ int EnumArguments(
  [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de tipos de argumento. Retorna um valor nulo se não houver nenhum argumento.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, Retorna S_OK ou retorna S_FALSE se não houver nenhum argumento. Caso contrário, retornará um código de erro.  
+ Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhum argumento. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  Cada elemento é um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa os tipos de cada parâmetro. Chamar o [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método para recuperar informações sobre o tipo de cada parâmetro.  
   
- Se o nome do parâmetro é necessário juntamente com o tipo, em seguida, chame o [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) método.  
+ Se o nome do parâmetro é necessário junto com o tipo, em seguida, chame o [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) método.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

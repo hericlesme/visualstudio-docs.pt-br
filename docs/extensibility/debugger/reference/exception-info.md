@@ -1,47 +1,31 @@
 ---
-title: EXCEPTION_INFO | Documentos do Microsoft
+title: EXCEPTION_INFO | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- EXCEPTION_INFO
-helpviewer_keywords:
-- EXCEPTION_INFO structure
+f1_keywords: EXCEPTION_INFO
+helpviewer_keywords: EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8fab538425beba08fcf58aeef80cb9065ccf6768
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8bb60642857f0f07562feffe7b48e0454a73097e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
-Descreve uma exceção ou erro de tempo de execução gerado pelo programa que está sendo depurado.  
+Descreve um erro de tempo de execução gerada pelo programa que está sendo depurado ou exceção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct tagEXCEPTION_INFO {   
    IDebugProgram2* pProgram;  
    BSTR            bstrProgramName;  
@@ -52,7 +36,7 @@ typedef struct tagEXCEPTION_INFO {
 } EXCEPTION_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct EXCEPTION_INFO {   
    public IDebugProgram2 pProgram;  
    public string         bstrProgramName;  
@@ -77,7 +61,7 @@ public struct EXCEPTION_INFO {
  O código de identificação para o erro de exceção ou tempo de execução.  
   
  dwState  
- Um valor a partir de [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) enumeração que define o estado da exceção.  
+ Um valor da [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) enumeração que define o estado da exceção.  
   
  guidType  
  O identificador de idioma GUID, `guidLang` ou `guidEng`.  

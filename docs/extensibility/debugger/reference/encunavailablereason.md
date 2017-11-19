@@ -1,47 +1,31 @@
 ---
-title: EncUnavailableReason | Documentos do Microsoft
+title: EncUnavailableReason | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- EncUnavailableReason
-helpviewer_keywords:
-- EncUnavailableReason enumeration
+f1_keywords: EncUnavailableReason
+helpviewer_keywords: EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: db9d76add958ecac1b97479da544a1515e2ca385
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7fe64a8c8e91535e575677d60b6d30d39fa9abf4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!`Representa os motivos que **editar e continuar** não está disponível.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum tagEncUnavailableReason {  
    ENCUN_NONE,  
    ENCUN_INTEROP,  
@@ -54,7 +38,7 @@ enum tagEncUnavailableReason {
 typedef enum tagEncUnavailableReason EncUnavailableReason;  
 ```  
   
-```c#  
+```csharp  
 public enum EncUnavailableReason {  
    ENCUN_NONE,  
    ENCUN_INTEROP,  
@@ -74,7 +58,7 @@ public enum EncUnavailableReason {
  Editar e continuar não está disponível durante uma chamada de interoperabilidade.  
   
  ENCUN_SQLCLR  
- Editar e continuar não está disponível durante uma chamada de procedimento SQL que usa o tempo de execução do CLR (Common Language).  
+ Editar e continuar não está disponível durante uma chamada de procedimento do SQL que usa o tempo de execução de linguagem comum (CLR).  
   
  ENCUN_MINIDUMP  
  Editar e continuar não está disponível durante o processamento de um minidespejo.  
@@ -83,13 +67,13 @@ public enum EncUnavailableReason {
  Editar e continuar não está disponível durante o processamento de código inserido.  
   
  ENCUN_ATTACH  
- Editar e continuar não está disponível porque a sessão foi anexada ao, não é iniciado pelo depurador.  
+ Editar e continuar não está disponível porque a sessão foi anexada ao, ainda não tiver iniciado pelo depurador.  
   
  ENCUN_WIN64  
  Editar e continuar não está disponível durante o processamento de código de 64 bits do Windows.  
   
 ## <a name="remarks"></a>Comentários  
- Essa enumeração é para uso interno apenas por [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. O [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) métodos conforme implementado por um fornecedor de porta personalizada devem retornar sempre `E_NOTIMPL`.  
+ Essa enumeração é para uso interno apenas por [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. O [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) métodos conforme implementado por um fornecedor de porta personalizado devem sempre retornar `E_NOTIMPL`.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.idl  

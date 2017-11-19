@@ -1,47 +1,31 @@
 ---
-title: BP_RESOLUTION_LOCATION | Documentos do Microsoft
+title: BP_RESOLUTION_LOCATION | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_RESOLUTION_LOCATION
-helpviewer_keywords:
-- BP_RESOLUTION_LOCATION structure
+f1_keywords: BP_RESOLUTION_LOCATION
+helpviewer_keywords: BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3a8d4f5e6a2f5d0d1e430e635c16a9ad36cc0b55
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e8a7f722ea92e20bbceb7ed1bfe9eed31d23c32e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Especifica a estrutura do local de resolução do ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 struct _BP_RESOLUTION_LOCATION {  
    BP_TYPE bpType;  
    union {  
@@ -52,7 +36,7 @@ struct _BP_RESOLUTION_LOCATION {
 } BP_RESOLUTION_LOCATION;  
 ```  
   
-```c#  
+```csharp  
 public struct BP_RESOLUTION_LOCATION {  
    public uint bpType;  
    public IntPtr unionmember1;  
@@ -64,7 +48,7 @@ public struct BP_RESOLUTION_LOCATION {
   
 ## <a name="members"></a>Membros  
  `bpType`  
- Um valor a partir de [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que especifica como interpretar o `bpResLocation` união ou `unionmemberX` membros.  
+ Um valor da [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que especifica como interpretar o `bpResLocation` união ou `unionmemberX` membros.  
   
  `bpResLocation.bpresCode`  
  [C++] Contém o [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) estrutura se `bpType`  =  `BPT_CODE`.  
@@ -90,7 +74,7 @@ public struct BP_RESOLUTION_LOCATION {
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é membro do [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estruturas.  
   
- [Apenas c#] O `unionmemberX` membros são interpretados de acordo com a tabela a seguir. Examine a coluna à esquerda para a `bpType` valor à direita, em seguida, para determinar o que cada `unionmemberX` membro representa e empacotar o `unionmemberX` adequadamente. Veja o exemplo de um modo para interpretar essa estrutura no c#.  
+ [Apenas c#] O `unionmemberX` membros são interpretados de acordo com a tabela a seguir. Examine a coluna à esquerda para a `bpType` valor em, em seguida, para determinar o que cada `unionmemberX` membro representa e empacotar o `unionmemberX` adequadamente. Consulte o exemplo de uma maneira de interpretar esta estrutura em c#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -100,7 +84,7 @@ public struct BP_RESOLUTION_LOCATION {
 ## <a name="example"></a>Exemplo  
  Este exemplo mostra como interpretar o `BP_RESOLUTION_LOCATION` estrutura em c#.  
   
-```c#  
+```csharp  
 using System;  
 using System.Runtime.Interop.Services;  
 using Microsoft.VisualStudio.Debugger.Interop;  

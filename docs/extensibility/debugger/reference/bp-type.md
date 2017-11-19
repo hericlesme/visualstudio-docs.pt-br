@@ -1,47 +1,31 @@
 ---
-title: BP_TYPE | Documentos do Microsoft
+title: BP_TYPE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_TYPE
-helpviewer_keywords:
-- BP_TYPE enumeration
+f1_keywords: BP_TYPE
+helpviewer_keywords: BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f659eda568178162e4d8e4450e4d301b7855fdd9
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0b7a03f3672e954c400bebcf66f97b62148b9fd9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bptype"></a>BP_TYPE
-Especifica se o ponto de interrupção é um local de código, é um local de dados ou outro tipo de ponto de interrupção.  
+Especifica se o ponto de interrupção estiver em um local de código, é um local de dados ou outro tipo de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_BP_TYPE {   
    BPT_NONE    = 0x0000,  
    BPT_CODE    = 0x0001,  
@@ -51,7 +35,7 @@ enum enum_BP_TYPE {
 typedef DWORD BP_TYPE;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_BP_TYPE {   
    BPT_NONE    = 0x0000,  
    BPT_CODE    = 0x0001,  
@@ -62,7 +46,7 @@ public enum enum_BP_TYPE {
   
 ## <a name="members"></a>Membros  
  BPT_NONE  
- Não especifica nenhum tipo de ponto de interrupção.  
+ Não especifica que nenhum tipo de ponto de interrupção.  
   
  BPT_CODE  
  Especifica um ponto de interrupção do código.  
@@ -71,7 +55,7 @@ public enum enum_BP_TYPE {
  Especifica um ponto de interrupção de dados.  
   
  BPT_SPECIAL  
- Especifica um ponto de interrupção que não é um código nem um tipo de dados. Esse tipo está obsoleto e não deve ser usado.  
+ Especifica um ponto de interrupção que não é um código nem um tipo de dados. Esse tipo foi preterido e não deve ser usado.  
   
 ## <a name="remarks"></a>Comentários  
  Passado como um parâmetro para o [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) e [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) métodos.  

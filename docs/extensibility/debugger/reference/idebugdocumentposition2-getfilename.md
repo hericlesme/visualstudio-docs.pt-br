@@ -1,53 +1,37 @@
 ---
-title: IDebugDocumentPosition2::GetFileName | Documentos do Microsoft
+title: IDebugDocumentPosition2::GetFileName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocumentPosition2::GetFileName
-helpviewer_keywords:
-- IDebugDocumentPosition2::GetFileName
+f1_keywords: IDebugDocumentPosition2::GetFileName
+helpviewer_keywords: IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a56a7e397924608e6cf86757ba51a95834105f13
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 24ac47f6af78a3e2c5a3d77d63f930d7b7396a2a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Obtém o nome do arquivo do arquivo de origem que contém a posição do documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetFileName(   
    BSTR* pbstrFileName  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetFileName(   
    out string pbstrFileName  
 );  
@@ -58,7 +42,7 @@ int GetFileName(
  [out] Retorna o nome de arquivo do arquivo de origem.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  Um arquivo de origem não pode ter sempre um nome de arquivo (o arquivo de origem pode não existir no disco, por exemplo).  

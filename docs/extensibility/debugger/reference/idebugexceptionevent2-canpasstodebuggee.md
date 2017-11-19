@@ -1,53 +1,37 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee | Documentos do Microsoft
+title: IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExceptionEvent2::CanPassToDebuggee
-helpviewer_keywords:
-- IDebugExceptionEvent2::CanPassToDebuggee
+f1_keywords: IDebugExceptionEvent2::CanPassToDebuggee
+helpviewer_keywords: IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e522e16c33cb0ebedc09eb3112e54af0f41e3869
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ef10fd3ca7f41c2afd1c827fb71ca2178782e3d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-Determina se o mecanismo de depuração (DE) oferece suporte à opção de passar essa exceção para o programa que está sendo depurado quando a execução é retomada.  
+Determina se o mecanismo de depuração (DE) oferece suporte ou não a opção de passar essa exceção para o programa que está sendo depurado quando a execução é retomada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT CanPassToDebuggee(  
    void  
 );  
 ```  
   
-```c#  
+```csharp  
 int CanPassToDebuggee();  
 ```  
   
@@ -55,8 +39,8 @@ int CanPassToDebuggee();
  Retorna um `S_OK` (a exceção pode ser passada para o programa) ou `S_FALSE` (a exceção não pode ser passada).  
   
 ## <a name="remarks"></a>Comentários  
- O DE deve ter uma ação padrão para passar para o elemento a ser depurado. O IDE pode receber o [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventos e chamadas de [continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md) método sem chamar o `CanPassToDebuggee` método. Portanto, o DE deve ter um caso de padrão para passar a exceção ou não.  
+ O DE deve ter uma ação padrão para passar para o depurador. O IDE pode receber o [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) eventos e chamadas de [continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md) método sem chamar o `CanPassToDebuggee` método. Portanto, o DE deve ter um caso de padrão para passar a exceção ou não.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
- [Continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+ [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

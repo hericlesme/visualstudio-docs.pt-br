@@ -1,47 +1,31 @@
 ---
-title: CONTEXT_INFO_FIELDS | Documentos do Microsoft
+title: CONTEXT_INFO_FIELDS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CONTEXT_INFO_FIELDS
-helpviewer_keywords:
-- CONTEXT_INFO_FIELDS enumeration
+f1_keywords: CONTEXT_INFO_FIELDS
+helpviewer_keywords: CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: aedfb0126bc57ce2b149d112b653c49cb2fbbbfa
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e604dc09215ac98b2c23fe85312e281b306e9961
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
-Especifica quais informações devem ser recuperadas sobre um contexto de memória.  
+Especifica quais informações recuperar sobre um contexto de memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_CONTEXT_INFO_FIELDS {   
    CIF_MODULEURL =       0x00000001,  
    CIF_FUNCTION =        0x00000002,  
@@ -54,7 +38,7 @@ enum enum_CONTEXT_INFO_FIELDS {
 typedef DWORD CONTEXT_INFO_FIELDS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_CONTEXT_INFO_FIELDS {  
    CIF_MODULEURL =       0x00000001,  
    CIF_FUNCTION =        0x00000002,  
@@ -88,7 +72,7 @@ public enum enum_CONTEXT_INFO_FIELDS {
 ## <a name="remarks"></a>Comentários  
  Esses valores são passados de um parâmetro para o [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método para indicar quais campos do [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estrutura devem ser inicializado.  
   
- Esses sinalizadores também são usados para indicar quais campos do `CONTEXT_INFO` estrutura são usados e válida quando a estrutura é retornada.  
+ Esses sinalizadores também são usados para indicar quais campos do `CONTEXT_INFO` estrutura são válidos e usadas quando a estrutura é retornada.  
   
  Esses valores podem ser combinados com um OR bit a bit.  
   

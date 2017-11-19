@@ -1,47 +1,31 @@
 ---
-title: IDebugPointerObject::GetBytes | Documentos do Microsoft
+title: IDebugPointerObject::GetBytes | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPointerObject::GetBytes
-helpviewer_keywords:
-- IDebugPointerObject::GetBytes method
+f1_keywords: IDebugPointerObject::GetBytes
+helpviewer_keywords: IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 26b360104aaf5777337a5c8d3a6bc4d629eb5a0d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e94564eaaf10765e68e35fa4f573efae7c74dc7e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Obtém o valor apontado como uma série de bytes consecutivos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetBytes(   
    DWORD  dwStart,  
    DWORD  dwCount,  
@@ -50,7 +34,7 @@ HRESULT GetBytes(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetBytes(  
    uint       dwStart,   
    uint       dwCount,   
@@ -61,13 +45,13 @@ int GetBytes(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwStart`  
- [in] Um deslocamento, em bytes, desde o início do objeto apontado.  
+ [in] Um deslocamento, em bytes, do início do objeto apontado.  
   
  `dwCount`  
  [in] O número de bytes a serem recuperados.  
   
  `pBytes`  
- [no, out] Uma matriz que é preenchida com o valor como uma série de bytes consecutivos, começando no deslocamento especificado do objeto apontado.  
+ [out no] Uma matriz que é preenchida com o valor como uma série de bytes consecutivos, começando no deslocamento especificado do objeto apontado.  
   
  `pdwBytes`  
  [out] Retorna o número de bytes realmente recuperados.  
@@ -76,7 +60,7 @@ int GetBytes(
  Se for bem-sucedido, retornará S_OK; Caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é usado se o ponteiro, conforme representado por esse [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) aponta para um tipo primitivo ou uma matriz de tipos primitivos (ou seja, uma matriz que pode ser representado por uma simple sequência de bytes).  
+ Esse método é usado se o ponteiro conforme representado por esse [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) aponta para um tipo primitivo ou uma matriz de tipos primitivos (ou seja, uma matriz que pode ser representado por uma sequência de bytes de simple).  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   

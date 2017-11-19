@@ -1,70 +1,70 @@
 ---
-title: "Caixa de di&#225;logo Propriedades da Mensagem | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "opções de mensagem"
-  - "opções de mensagem, Geral"
+title: "Caixa de diálogo Propriedades da mensagem | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- message options
+- message options, General
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e4a1516219df404b6447a9e95ae676d482cea7f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Caixa de di&#225;logo Propriedades da Mensagem
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Use essa caixa de diálogo para obter mais informações sobre uma mensagem específica.  Para exibir esta caixa de diálogo, mova o foco para um  [o modo de exibição de mensagens](../debugger/messages-view.md) janela.  Selecione qualquer nó da mensagem na árvore e escolha  **Propriedades** da  **Exibir** menu.  
+# <a name="message-properties-dialog-box"></a>Caixa de diálogo Propriedades da Mensagem
+Use essa caixa de diálogo para obter mais informações sobre uma mensagem específica. Para exibir essa caixa de diálogo, mova o foco para um [exibição de mensagens](../debugger/messages-view.md) janela. Selecione qualquer nó de mensagem na árvore e escolha **propriedades** do **exibição** menu.  
   
- O  **Geral** guia é a única guia exibida.  As configurações a seguir estão disponíveis:  
+ O **geral** guia é a única guia exibida. As configurações a seguir estão disponíveis:  
   
  **Identificador de janela**  
- A identificação exclusiva desta janela.  Os números de identificador de janela são reutilizados; Elas identificam uma janela somente para a vida útil do que a janela.  Clique neste valor para exibir as propriedades desta janela.  
+ A ID exclusiva desta janela. Os números de identificador de janela são reutilizados; eles identificarem uma janela somente para o tempo de vida da janela. Clique nesse valor para exibir as propriedades desta janela.  
   
  **Nível de aninhamento**  
- Profundidade de aninhamento dessa mensagem, onde 0 é há aninhamento.  
+ Profundidade de aninhamento desta mensagem, onde 0 é sem aninhamento.  
   
- **Message** \(Mensagem\)  
- Número, o status e o nome da mensagem selecionada do windows.  
+ **Message**  
+ Número, o status e o nome da mensagem do windows selecionados.  
   
  **lResult**  
- O valor da  *lResult* parâmetro, se houver.  
+ O valor de *lResult* parâmetro, se houver.  
   
  **wParam**  
- O valor da  *wParam* parâmetro, se houver.  
+ O valor de *wParam* parâmetro, se houver.  
   
  **lParam**  
- O valor da  *lParam* parâmetro, se houver.  Esse valor é decodificado se ele for um ponteiro para uma seqüência de caracteres ou estrutura.  
+ O valor de *lParam* parâmetro, se houver. Esse valor é decodificado se ele é um ponteiro para uma estrutura ou uma cadeia de caracteres.  
   
-## Seções relacionadas  
- [Caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md)  
- Usado para selecionar quais mensagens são listadas no modo de exibição de mensagens ativo.  
+## <a name="related-sections"></a>Seções relacionadas  
+ [Caixa de diálogo Opções de Mensagem](../debugger/message-options-dialog-box.md)  
+ Usado para selecionar quais mensagens são listadas na exibição de mensagens ativa.  
   
- [Caixa de diálogo de pesquisa de mensagem](../debugger/message-search-dialog-box.md)  
+ [Caixa de diálogo Pesquisa de Mensagens](../debugger/message-search-dialog-box.md)  
  Usado para localizar o nó de uma mensagem específica no modo de exibição de mensagens.  
   
- [Referência Spy \+ \+](../debugger/spy-increment-reference.md)  
- Inclui seções descrevendo cada Spy \+ \+ menu e a caixa de diálogo caixa.  
+ [Referência a Spy++](../debugger/spy-increment-reference.md)  
+ Inclui as seções que descrevem cada Spy + + menu e a caixa de diálogo caixa.  
   
- [Modo de exibição de mensagens de abertura da janela Localizar](_asug_choosing_message_options)  
- Explica como abrir o modo de exibição de mensagens da caixa de diálogo de janela Localizar.  
+ [Abrir modo de exibição de mensagens na janela Localizar](../debugger/how-to-open-messages-view-from-find-window.md)  
+ Explica como abrir a exibição de mensagens na caixa de diálogo Localizar janela.  
   
- [Procurando por uma mensagem no modo de exibição de mensagens](../Topic/How%20to:%20Search%20for%20a%20Message%20in%20Messages%20View.md)  
+ [Procurando uma mensagem na exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md)  
  Explica como localizar uma mensagem específica no modo de exibição de mensagens.  
   
- [Modo de exibição de mensagens](../debugger/messages-view.md)  
- Exibe o fluxo de mensagens associado a uma janela, processo ou thread.  
+ [Exibição de Mensagens](../debugger/messages-view.md)  
+ Exibe o fluxo de mensagem associado a uma janela, processo ou thread.  
   
- [Modos de exibição Spy \+ \+](../debugger/spy-increment-views.md)  
- Explica as exibições de árvore Spy \+ \+ do windows, mensagens, processos e threads.  
+ [Exibições do Spy++](../debugger/spy-increment-views.md)  
+ Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  
   
- [Usando o Spy \+ \+](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy \+ \+ e explica como ele pode ser usado.
+ [Usando Spy++](../debugger/using-spy-increment.md)  
+ Apresenta a ferramenta Spy + + e explica como ele pode ser usado.

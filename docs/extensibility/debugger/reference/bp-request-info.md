@@ -1,47 +1,31 @@
 ---
-title: BP_REQUEST_INFO | Documentos do Microsoft
+title: BP_REQUEST_INFO | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_REQUEST_INFO
-helpviewer_keywords:
-- BP_REQUEST_INFO structure
+f1_keywords: BP_REQUEST_INFO
+helpviewer_keywords: BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2c468d76819566049054a0919655d5a30524cb59
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 64f39aa59d566d85147b953ca8df4930d2a49eca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Contém as informações necessárias para implementar um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct _BP_REQUEST_INFO {  
    BPREQI_FIELDS   dwFields;  
    GUID            guidLanguage;  
@@ -56,7 +40,7 @@ typedef struct _BP_REQUEST_INFO {
 } BP_REQUEST_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct BP_REQUEST_INFO {  
    public uint           dwFields;  
    public Guid           guidLanguage;  
@@ -73,7 +57,7 @@ public struct BP_REQUEST_INFO {
   
 ## <a name="members"></a>Membros  
  `dwFields`  
- Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que especifica quais campos estão preenchidos.  
+ Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que especifica quais campos são preenchidos.  
   
  `guidLanguage`  
  O GUID do idioma.  
@@ -88,7 +72,7 @@ public struct BP_REQUEST_INFO {
  O nome do aplicativo no qual o ponto de interrupção ocorre.  
   
  `pThread`  
- O [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread no qual o ponto de interrupção ocorre.  
+ O [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread em que o ponto de interrupção ocorre.  
   
  `bstrThreadName`  
  O nome do thread no qual o ponto de interrupção ocorre.  
@@ -105,7 +89,7 @@ public struct BP_REQUEST_INFO {
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é retornada pelo [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) método.  
   
- Se você precisar obter o GUID do fornecedor do mecanismo de depuração, a restrição de ponto de interrupção ou o tracepoint, consulte o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estrutura.  
+ Se você precisar obter o GUID do fornecedor do mecanismo de depuração, a restrição de ponto de interrupção ou tracepoint, consulte o [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estrutura.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

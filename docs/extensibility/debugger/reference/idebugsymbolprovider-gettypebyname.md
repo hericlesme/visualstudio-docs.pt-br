@@ -1,47 +1,31 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName | Documentos do Microsoft
+title: IDebugSymbolProvider::GetTypeByName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugSymbolProvider::GetTypeByName
-helpviewer_keywords:
-- IDebugSymbolProvider::GetTypeByName method
+f1_keywords: IDebugSymbolProvider::GetTypeByName
+helpviewer_keywords: IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 10b804b0849343253a60d2142374e9c2489addd8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 816fc4685d4a431a81c5d3b3623690a95399aa99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-Esse método mapeia um nome de símbolo em um tipo de símbolo.  
+Esse método mapeia um nome de símbolo para um tipo de símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetTypeByName(   
    LPCOLESTR     pszClassName,  
    NAME_MATCH    nameMatch,  
@@ -49,7 +33,7 @@ HRESULT GetTypeByName(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeByName(  
    string          pszClassName,   
    NAME_MATCH      nameMatch,   
@@ -62,13 +46,13 @@ int GetTypeByName(
  [in] O nome do símbolo.  
   
  `nameMatch`  
- [in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas. Um valor a partir de [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeração.  
+ [in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas. Um valor da [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeração.  
   
  `ppField`  
  [out] Retorna o tipo de símbolo como um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  Esse método é uma versão genérica do [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  

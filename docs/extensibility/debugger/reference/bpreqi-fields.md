@@ -1,43 +1,27 @@
 ---
-title: BPREQI_FIELDS | Documentos do Microsoft
+title: BPREQI_FIELDS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BPREQI_FIELDS
-helpviewer_keywords:
-- BPREQI_FIELDS enumeration
+f1_keywords: BPREQI_FIELDS
+helpviewer_keywords: BPREQI_FIELDS enumeration
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c44847ef0f5f15e4c8b966b067feb89e91230b96
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 212949df682a71dd3debc28001bcdf07dbe8c061
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
-Especifica as informações a serem recuperadas sobre uma solicitação de ponto de interrupção.  
+Especifica as informações a serem recuperados sobre uma solicitação de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -61,7 +45,7 @@ enum enum_BPREQI_FIELDS {
 typedef DWORD BPREQI_FIELDS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_BPREQI_FIELDS {   
    BPREQI_BPLOCATION   = 0x0001,  
    BPREQI_LANGUAGE     = 0x0002,  
@@ -103,7 +87,7 @@ public enum enum_BPREQI_FIELDS {
  Inicializar/usar o `bpPassCount` campo o `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.  
   
  BPREQI_CONDITION  
- Inicializar/usar o `bpCondition` campo (condição de ponto de interrupção) do `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.  
+ Inicializar/usar o `bpCondition` campo (condição de ponto de interrupção) da `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.  
   
  BPREQI_FLAGS  
  Inicializar/usar o `dwFlags` campo o `BP_REQUEST_INFO` ou `BP_REQUEST_INFO2` estrutura.  
@@ -124,9 +108,9 @@ public enum enum_BPREQI_FIELDS {
  Especifica todos os campos para o `BP_REQUEST_INFO2` estrutura.  
   
 ## <a name="remarks"></a>Comentários  
- Passada como um argumento para o [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) e [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) métodos para especificar quais campos do [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estruturas devem ser inicializado.  
+ Passado como um argumento para o [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) e [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) métodos para especificar quais campos do [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) estruturas devem ser inicializado.  
   
- Esses sinalizadores também são usados para indicar quais campos do `BP_REQUEST_INFO` e `BP_REQUEST_INFO2` estruturas são usados e válidos quando cada estrutura é retornada.  
+ Esses sinalizadores também são usados para indicar quais campos do `BP_REQUEST_INFO` e `BP_REQUEST_INFO2` estruturas são usadas e válidos quando cada estrutura é retornada.  
   
  Esses valores podem ser combinados com um bit a bit `OR`.  
   

@@ -1,45 +1,30 @@
 ---
-title: GUID_ARRAY | Documentos do Microsoft
+title: GUID_ARRAY | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- GUID_ARRAY structure
+helpviewer_keywords: GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e167424c1778a949860daf40bfcbb5af4d1d93ab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 689285d73881ce4556b859c799a0f923a300d373
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="guidarray"></a>GUID_ARRAY
-Descreve uma matriz de identificadores exclusivos para os mecanismos de depuração disponíveis.  
+Descreve uma matriz de identificadores exclusivos para mecanismos de depuração disponíveis.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct tagGUID_ARRAY  
 {  
    DWORD dwCount;  
@@ -47,7 +32,7 @@ typedef struct tagGUID_ARRAY
 } GUID_ARRAY;  
 ```  
   
-```c#  
+```csharp  
 public struct GUID_ARRAY  
 {  
    public uint dwCount;  

@@ -1,54 +1,38 @@
 ---
-title: IDebugDocument2::GetName | Documentos do Microsoft
+title: IDebugDocument2::GetName | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocument2::GetName
-helpviewer_keywords:
-- IDebugDocument2::GetName
+f1_keywords: IDebugDocument2::GetName
+helpviewer_keywords: IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: faa72dd511d285ce1d9a12ce6200d1efddf12feb
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 717a1eb794e3712427d6b905851c32796c3865c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
-Obtém o nome do documento em uma das várias formas.  
+Obtém o nome do documento em um dos vários formatos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetName(   
    GETNAME_TYPE gnType,  
    BSTR*        pbstrFileName  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetName(   
    enum_GETNAME_TYPE gnType,  
    out string        pbstrFileName  
@@ -57,13 +41,13 @@ int GetName(
   
 #### <a name="parameters"></a>Parâmetros  
  `gnType`  
- [in] Um valor a partir de [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeração que determina o tipo de nome a ser retornado.  
+ [in] Um valor da [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeração que determina o tipo de nome a ser retornado.  
   
  `pbstrFileName`  
  [out] Retorna uma cadeia de caracteres que contém o nome do documento.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  Esse método pode, por exemplo, retornar o nome do documento como um título ou um nome de arquivo ou até mesmo parte de um nome de arquivo.  

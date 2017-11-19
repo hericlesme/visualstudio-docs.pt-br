@@ -1,54 +1,38 @@
 ---
-title: IDebugBreakpointRequest3::GetRequestInfo2 | Documentos do Microsoft
+title: IDebugBreakpointRequest3::GetRequestInfo2 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakpointRequest3::GetRequestInfo2
-helpviewer_keywords:
-- IDebugBreakpointRequest3::GetRequestInfo2
+f1_keywords: IDebugBreakpointRequest3::GetRequestInfo2
+helpviewer_keywords: IDebugBreakpointRequest3::GetRequestInfo2
 ms.assetid: 33942e4a-0a0a-49e8-a693-004954f6d38a
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b92efe86d039cd292f5baca7ad49d2a66f808ef1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2ce90963ce44ddfc5e47b84dcbe084dfc2f21d4f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Esse método obtém as informações de solicitação de ponto de interrupção que descreve esta solicitação de ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetRequestInfo2(  
    BPREQI_FIELDS      dwFields,  
    BP_REQUEST_INFO2*  bBPRequestInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetRequestInfo2(  
    enum_BPREQI_FIELDS  dwFields,   
    BP_REQUEST_INFO2[]  bBPRequestInfo  
@@ -63,10 +47,10 @@ int GetRequestInfo2(
  [out] O [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estrutura a ser preenchido.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retornará o código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Há mais informações nesta solicitação que é retornado a partir de [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) método.  
+ Mais informações sobre esta solicitação que é retornado do [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) método.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)   

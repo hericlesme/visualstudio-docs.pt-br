@@ -1,44 +1,30 @@
 ---
-title: Elemento CommandPlacement | Documentos do Microsoft
+title: Elemento CommandPlacement | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b030a4b9b38f650fc04fae32d833924ca7dec521
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 71a53dfcb7ae7cca5b360d2e115c34909ca32f86
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
-O elemento CommandPlacement permite botões, grupos e menus ser incluído em mais de um grupo ou menu. Usando o elemento CommandPlacement, não é preciso redefinir completamente esses itens para modificar a aparência de uma interface do usuário.  
+Permite que o elemento CommandPlacement botões, grupos e menus devem ser incluídos em mais de um grupo ou menu. Usando o elemento CommandPlacement, você não precisa redefinir completamente esses itens para modificar a aparência de uma interface de usuário.  
   
- Para obter mais informações, consulte [criando reutilizável grupos de botões](../extensibility/creating-reusable-groups-of-buttons.md).  
+ Para obter mais informações, consulte [criando grupos reutilizável de botões](../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -64,7 +50,7 @@ O elemento CommandPlacement permite botões, grupos e menus ser incluído em mai
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|Pai|Necessário. O menu ou grupo que hospeda o item a ser colocado.|  
+|Pai|Necessário. O menu ou grupo que hospeda o item será colocado.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -85,4 +71,4 @@ O elemento CommandPlacement permite botões, grupos e menus ser incluído em mai
   
 ## <a name="see-also"></a>Consulte também  
  [Elemento CommandPlacements](../extensibility/commandplacements-element.md)   
- [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

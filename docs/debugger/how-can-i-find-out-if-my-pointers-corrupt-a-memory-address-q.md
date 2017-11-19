@@ -1,52 +1,51 @@
 ---
-title: "Como posso saber se meus ponteiros corrompem um endere&#231;o de mem&#243;ria? | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "endereços, ponteiros que corrompem endereços de memória"
-  - "endereços de memória corrompidos"
-  - "depurando [C++], corrompimento de memória"
-  - "corrompimento de endereços de memória causado por ponteiros"
-  - "memória, corrompimento"
-  - "ponteiros, corrompendo endereços de memória"
+title: "Como posso saber se meus ponteiros corrompem um endereço de memória? | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- addresses, pointers corrupting memory address
+- memory, corruption
+- pointers, corrupting memory addresses
+- memory address corruption by pointers
+- debugging [C++], memory corruption
+- corrupted memory address
 ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
-caps.latest.revision: 19
-caps.handback.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 863acbf45268330e106360dd7778acab94b670de
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como posso saber se meus ponteiros corrompem um endere&#231;o de mem&#243;ria?
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-## Descrição do problema  
- Eu acho que um de meus ponteiros pode estar danificando a memória no endereço 0x00408000.  Como posso descobrir o que está acontecendo lá?  
+# <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Como posso saber se meus ponteiros corrompem um endereço de memória?
+## <a name="problem-description"></a>Descrição do problema  
+ Eu acho que um de meus ponteiros pode estar danificando a memória no endereço 0x00408000. Como posso descobrir o que está acontecendo lá?  
   
-## Solução  
+## <a name="solution"></a>Solução  
   
-#### Verificação de danos do heap  
+#### <a name="check-for-heap-corruption"></a>Verificação de danos do heap  
   
--   A maior parte das corrupções de memória acontece, na verdade, devido à corrupção da heap.  Tente usar o utilitário global dos sinalizadores \(gflags.exe\) ou pageheap.exe.  Consulte [http:\/\/support.microsoft.com\/default.aspx?scid\=kb;en\-us;286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).  
+-   A maior parte das corrupções de memória acontece, na verdade, devido à corrupção da heap. Tente usar o utilitário global dos sinalizadores (gflags.exe) ou pageheap.exe. Consulte [http://support.microsoft.com/default.aspx?scid=kb;en-us;286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).  
   
-#### Para localizar onde o endereço de memória foi alterado  
+#### <a name="to-find-where-the-memory-address-is-modified"></a>Para localizar onde o endereço de memória foi alterado  
   
-1.  Defina um ponto de interrupção de dados em 0x00408000.  See [Definir um ponto de interrupção de alteração de dados \(somente C\+\+ nativo\)](../debugger/using-breakpoints.md#BKMK_Set_a_data_change_breakpoint__native_C___only_).  
+1.  Defina um ponto de interrupção de dados em 0x00408000. Consulte [definir um ponto de interrupção de alteração de dados (apenas C++ nativo)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only).  
   
-2.  Quando você atingir o ponto de interrupção, use a janela **Memória** para exibir o conteúdo da memória que começam em 0x00408000.  Para obter mais informações, consulte [Janelas de memória](../debugger/memory-windows.md).  
+2.  Quando você atinge o ponto de interrupção, use o **memória** começando em 0x00408000 de conteúdo da janela para visualizar a memória. Para obter mais informações, consulte [memória Windows](../debugger/memory-windows.md).  
   
-## Consulte também  
- [Perguntas frequentes de depuração do código nativo](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>Consulte também  
+ [Perguntas frequentes de código nativo de depuração](../debugger/debugging-native-code-faqs.md)   
  [Depurando código nativo](../debugger/debugging-native-code.md)

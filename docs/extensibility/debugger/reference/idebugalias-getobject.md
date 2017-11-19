@@ -1,43 +1,27 @@
 ---
-title: IDebugAlias::GetObject | Documentos do Microsoft
+title: IDebugAlias::GetObject | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugAlias::GetObject
-helpviewer_keywords:
-- IDebugAlias::GetObject method
+f1_keywords: IDebugAlias::GetObject
+helpviewer_keywords: IDebugAlias::GetObject method
 ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2c4f81929fab4daad40f02c9b37a676f65560741
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c5258b1b17572ce1b6fdc82a00fca074a84385aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
-Obtém o objeto este alias para.  
+Obtém o objeto que é este alias.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -47,7 +31,7 @@ HRESULT GetObject(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetObject(  
    Out IDebugObject2 ppObject  
 )  

@@ -1,53 +1,37 @@
 ---
-title: IDebugManagedObject::SetFromManagedObject | Documentos do Microsoft
+title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugManagedObject::SetFromManagedObject
-helpviewer_keywords:
-- IDebugManagedObject::SetFromManagedObject method
+f1_keywords: IDebugManagedObject::SetFromManagedObject
+helpviewer_keywords: IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2885b77a760ee696359fd57284b6d51d222071ab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a3f73236b45edea7a9dea003a1f3604669eb3739
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-Define o valor da instância do objeto de classe de valor da instância da classe de valor fornecida como um parâmetro.  
+Define o valor da instância do objeto de classe de valor da instância da classe de valor fornecido como um parâmetro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT SetFromManagedObject(   
    IUnknown* pManagedObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetFromManagedObject(  
    object pManagedObject  
 );  

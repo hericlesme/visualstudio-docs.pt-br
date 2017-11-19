@@ -1,51 +1,36 @@
 ---
-title: IDebugPortSupplierEx2::SetServer | Documentos do Microsoft
+title: IDebugPortSupplierEx2::SetServer | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugPortSupplierEx2::SetServer
+helpviewer_keywords: IDebugPortSupplierEx2::SetServer
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
-caps.latest.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 353949fee95d8f00a0ea19fce26dd184167165b6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1750d6891cf6bec2c78212ad5c7f9137247f9147
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
-Define o servidor principal para o fornecedor de porta.  
+Define o server core para o fornecedor de porta.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT SetServer(  
    IDebugCoreServer2* pServer  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetServer(  
    IDebugCoreServer2 pServer  
 );  
@@ -56,7 +41,7 @@ int SetServer(
  Server Core a ser definido para o fornecedor de porta.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugPortSupplierEx2](../../../extensibility/debugger/reference/idebugportsupplierex2.md)

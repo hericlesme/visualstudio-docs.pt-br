@@ -1,42 +1,26 @@
 ---
-title: Elemento Assembly (modelos do Visual Studio) | Documentos do Microsoft
+title: Elemento Assembly (modelos do Visual Studio) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 67e72cf79ad1191356342150f21f3b89fd7daeec
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 9032fa397e8fb4cb443d0209853ba4cfe7a5e53f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento de assembly (modelos do Visual Studio)
 Especifica informações sobre um assembly, que usa o modelo para adicionar uma referência de assembly para projetos.  
@@ -57,7 +41,7 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhum.  
+ nenhuma.  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  
@@ -90,10 +74,10 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
 ## <a name="remarks"></a>Comentários  
  O `Assembly` é um elemento filho obrigatório de `Reference`.  
   
- O `Reference`, `References,` e `Assembly` elementos só podem ser usados em arquivos. vstemplate que têm um `Type` valor do atributo `Item`.  
+ O `Reference`, `References,` e `Assembly` elementos só podem ser usados em arquivos. vstemplate que têm um `Type` valor de atributo `Item`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona as referências aos assemblies System. dll e System.Data.dll.  
+ O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona referências aos assemblies System. dll e System.Data.dll.  
   
 ```  
 <TemplateContent>  

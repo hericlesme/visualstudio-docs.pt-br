@@ -1,47 +1,31 @@
 ---
-title: EXCEPTION_STATE | Documentos do Microsoft
+title: EXCEPTION_STATE | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- EXCEPTION_STATE
-helpviewer_keywords:
-- EXCEPTION_STATE enumeration
+f1_keywords: EXCEPTION_STATE
+helpviewer_keywords: EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f93e60c76f08dbee7162debabe9eb40909bed7e1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6237e061028ad568c0fdc0ed344d9eb86300c463
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 Especifica o estado de exceção.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
@@ -66,7 +50,7 @@ enum enum_EXCEPTION_STATE {
 typedef DWORD EXCEPTION_STATE;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
@@ -95,34 +79,34 @@ public enum enum_EXCEPTION_STATE {
  Não pare a exceção.  
   
  EXCEPTION_STOP_FIRST_CHANCE  
- Pare no primeiro acionamento de exceção. Ao descrever um evento de exceção, esse sinalizador indica que o evento de exceção é uma exceção de primeira chance.  
+ Pare na primeira acionamento da exceção. Ao descrever um evento de exceção, esse sinalizador indica que o evento de exceção é uma exceção de primeira chance.  
   
  EXCEPTION_STOP_SECOND_CHANCE  
- Pare no segundo acionamento de exceção. Ao descrever um evento de exceção, indica que o evento de exceção é uma exceção de segunda chance.  
+ Pare no segundo acionamento da exceção. Ao descrever um evento de exceção, indica que a exceção é um evento de exceção de segunda chance.  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE  
- Pare no primeiro acionamento de uma exceção do modo de usuário. Ao descrever um evento de exceção, indica que a exceção é um evento de exceção do usuário de primeira chance.  
+ Pare na primeira acionamento de uma exceção do modo de usuário. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção de primeira chance de usuário.  
   
  EXCEPTION_STOP_USER_UNCAUGHT  
- Interrompa quando uma exceção do modo de usuário não é capturada. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção do modo de usuário não identificadas.  
+ Interrompa quando uma exceção do modo de usuário não é capturada. Ao descrever um evento de exceção, indica que o evento de exceção é um evento de exceção de modo de usuário não identificada.  
   
  EXCEPTION_STOP_ALL  
- Interrompa qualquer exceção. Não é usado para descrever um evento de exceção.  
+ Pare em qualquer exceção. Não é usado para descrever um evento de exceção.  
   
  EXCEPTION_CANNOT_BE_CONTINUED  
- Ao descrever um evento de exceção, indica que a exceção não pode ser continuada de.  
+ Ao descrever um evento de exceção, indica que a exceção não pode ser contínuo do.  
   
  EXCEPTION_CODE_SUPPORTED  
- Indica que a exceção não tem código de suporte a ele. Usados para exibir uma exceção  
+ Indica que a exceção tem código de suporte a ele. Usados para exibir uma exceção  
   
  EXCEPTION_CODE_DISPLAY_IN_HEX  
  Indica que o código de exceção deve ser exibido em hexadecimal. Usados para exibir uma exceção.  
   
  EXCEPTION_JUST_MY_CODE_SUPPORTED  
- Indica que o código de exceção oferece suporte a JustMyCode. Usados para exibir uma exceção.  
+ Indica que o código de exceção suporta /justmycode. Usados para exibir uma exceção.  
   
  EXCEPTION_MANAGED_DEBUG_ASSISTANT  
- Indica que o depurador de código gerenciado deve tratar as exceções. Se não for definido, o depurador padrão manipula as exceções. Isso é passado para o [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método e não usado o [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura.  
+ Indica que o depurador de código gerenciado deve lidar com exceções. Se não for definido, o depurador padrão manipula as exceções. Isso é passado para o [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método e não usado no [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura.  
   
  EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
  OBSOLETO, NÃO USE.  
@@ -137,7 +121,7 @@ public enum enum_EXCEPTION_STATE {
  OBSOLETO, NÃO USE.  
   
 ## <a name="remarks"></a>Comentários  
- Usado como o `dwState` membro do [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura para indicar o estado da exceção e o que pode ser feito sobre isso.  
+ Usado como o `dwState` membro o [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura para indicar o estado de exceção e que pode ser feito sobre ele.  
   
  Esses valores também são passados para o [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) método para definir o estado de todas as exceções.  
   

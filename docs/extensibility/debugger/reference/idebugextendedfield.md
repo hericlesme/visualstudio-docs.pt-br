@@ -1,41 +1,26 @@
 ---
-title: IDebugExtendedField | Documentos do Microsoft
+title: IDebugExtendedField | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugExtendedField interface
+helpviewer_keywords: IDebugExtendedField interface
 ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
-caps.latest.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 8b1eccafe383b4b0c211f3f34846be03acd60d6d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2162b001e314cc331c64ebcd54c5a04410408a73
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
-Estende os tipos de campos que estão disponíveis para oferecer suporte a genéricos de código gerenciado.  
+Estende os tipos de campos que estão disponíveis para dar suporte a genéricos de código gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
   

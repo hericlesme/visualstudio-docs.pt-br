@@ -1,41 +1,38 @@
 ---
-title: "Como escrever uma fun&#231;&#227;o de relat&#243;rios de erro de tempo de execu&#231;&#227;o | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "função de relatórios"
-  - "erros de tempo de execução, funções de relatórios"
+title: "Como: gravar uma função de relatório de erros de tempo de execução | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- run-time errors, reporting functions
+- reporting function
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
-caps.latest.revision: 15
-caps.handback.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4d140606382367d5968871f65034db619fb9325e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Como escrever uma fun&#231;&#227;o de relat&#243;rios de erro de tempo de execu&#231;&#227;o
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Uma função personalizada de relatório para erros em tempo de execução deve ter a mesma declaração que `_CrtDbgReportW`.  Deve retornar um valor de 1 para o depurador.  
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Como escrever uma função de relatórios de erro de tempo de execução
+Uma função personalizada de relatório para erros em tempo de execução deve ter a mesma declaração que `_CrtDbgReportW`. Deve retornar um valor de 1 para o depurador.  
   
  O exemplo a seguir mostra como definir uma função personalizada de relatório.  
   
-## Exemplo  
+## <a name="example"></a>Exemplo  
   
 ```  
 #include <stdio.h>  
@@ -66,8 +63,8 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }  
 ```  
   
-## Exemplo  
- O exemplo a seguir mostra uma função personalizada de relatório mais complexa.  Neste exemplo, a instrução switch trata vários tipos de erro, conforme definido pelo parâmetro `reportType` de `_CrtDbgReportW`.  Como você está substituindo `_CrtDbgReportW`, não poderá usar `_CrtSetReportMode`.  A função deve tratar a saída.  O primeiro argumento variável nessa função usa um número de erro em tempo de execução.  Para obter mais informações, consulte [\_RTC\_SetErrorType](/visual-cpp/c-runtime-library/reference/rtc-seterrortype).  
+## <a name="example"></a>Exemplo  
+ O exemplo a seguir mostra uma função personalizada de relatório mais complexa. Neste exemplo, a instrução switch trata vários tipos de erro, conforme definido pelo parâmetro `reportType` de `_CrtDbgReportW`. Como você está substituindo `_CrtDbgReportW`, não poderá usar `_CrtSetReportMode`. A função deve tratar a saída. O primeiro argumento variável nessa função usa um número de erro em tempo de execução. Para obter mais informações, consulte [RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
 ```  
 #include <windows.h>  
@@ -111,8 +108,8 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)  
 ```  
   
-## Exemplo  
- Use `_RTC_SetErrorFuncW` para instalar a função personalizada em vez de `_CrtDbgReportW`.  Para obter mais informações, consulte [\_RTC\_SetErrorFuncW](/visual-cpp/c-runtime-library/reference/rtc-seterrorfuncw).  O valor de retorno de `_RTC_SetErrorFuncW` é a função de relatório anterior, que você pode salvar e restaurar se necessário.  
+## <a name="example"></a>Exemplo  
+ Use `_RTC_SetErrorFuncW` para instalar a função personalizada em vez de `_CrtDbgReportW`. Para obter mais informações, consulte [RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). O valor de retorno de `_RTC_SetErrorFuncW` é a função de relatório anterior, que você pode salvar e restaurar se necessário.  
   
 ```  
 #include <rtcapi.h>  
@@ -127,5 +124,5 @@ int main()
 }  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Personalização das verificações de tempo de execução nativas](../debugger/native-run-time-checks-customization.md)

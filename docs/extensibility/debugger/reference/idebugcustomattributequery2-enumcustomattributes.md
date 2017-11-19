@@ -1,53 +1,37 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Documentos do Microsoft
+title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCustomAttributeQuery2::EnumCustomAttributes
-helpviewer_keywords:
-- IDebugCustomAttributeQuery2::EnumCustomAttributes
+f1_keywords: IDebugCustomAttributeQuery2::EnumCustomAttributes
+helpviewer_keywords: IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: fa6c8b60ad4e520184c97c1c4a02876a7e7f0e0d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 47b643c8f08de60bb873f3daf69ee93e0816d31f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 Obtém um enumerador para todos os atributos personalizados anexados a esse campo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT EnumCustomAttributes(   
    IEnumDebugCustomAttributes** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumCustomAttributes(  
    out IEnumDebugCustomAttributes ppEnum  
 );  

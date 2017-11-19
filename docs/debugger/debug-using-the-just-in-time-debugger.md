@@ -1,105 +1,88 @@
 ---
-title: Debug using the Just-In-Time Debugger | Microsoft Docs
+title: Depurar usando o depurador Just-in | Microsoft Docs
 ms.custom: 
 ms.date: 07/06/17
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: 48
+caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 79cf2896fa6dca5c6846768f30e180ae540af6b8
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 470e4c728d246570e6f7e38ff3b71772de5b05fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debug using the Just-In-Time Debugger in Visual Studio
-Just-In-Time debugging launches Visual Studio automatically when an exception or crash occurs in an application that is running outside Visual Studio. This enables you to test your application when Visual Studio is not running, and begin debugging with Visual Studio when a problem occurs.
+# <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador Just-in-no Visual Studio
+Depuração Just-In-Time inicia o Visual Studio automaticamente quando uma exceção ou a falha ocorre em um aplicativo que está em execução fora do Visual Studio. Isso permite que você teste seu aplicativo quando o Visual Studio não está em execução e iniciar a depuração com o Visual Studio quando ocorre um problema.
 
-Just-In-Time debugging works for Windows desktop apps. It does not work for Universal Windows Apps, and it does not work for managed code that is hosted in a native application, such as Visualizers.
+Depuração Just-In-Time funciona para aplicativos de área de trabalho do Windows. Ele não funciona para aplicativos universais do Windows e não funciona para código gerenciado que é hospedado em um aplicativo nativo, como visualizadores.
 
 > [!TIP] 
-> If you just want to know how to respond to the Just-in-Time debugger dialog box, see [this topic](../debugger/just-in-time-debugging-in-visual-studio.md).
+> Se você desejar saber como responder a Just-in-Time caixa de diálogo do depurador, consulte [neste tópico](../debugger/just-in-time-debugging-in-visual-studio.md).
 
-##  <a name="BKMK_Enabling"></a> Enable or disable Just-In-Time debugging  
-You can enable or disable Just-In-Time debugging from the Visual Studio **Tools > Options** dialog box.
+##  <a name="BKMK_Enabling"></a>Habilitar ou desabilitar Just-In-Time de depuração  
+Você pode habilitar ou Desabilitar depuração no Visual Studio Just-In-Time **Ferramentas > Opções** caixa de diálogo.
   
-#### <a name="to-enable-or-disable-just-in-time-debugging"></a>To enable or disable Just-In-Time debugging  
+#### <a name="to-enable-or-disable-just-in-time-debugging"></a>Para habilitar ou desabilitar a depuração Just-In-Time  
   
-1.  Open Visual Studio with Administrator privileges (right-click and choose **Run as administrator**).
+1.  Abra o Visual Studio com privilégios de administrador (com o botão direito e escolha **executar como administrador**).
 
-    Enabling or disabling Just-In-Time debugging sets a registry key, and Administrator privileges may be required to change that key.
+    Habilitar ou desabilitar Just-In-Time depuração define uma chave do registro e podem ser necessários privilégios de administrador para alterar essa chave.
     
-2. On the **Tools** menu, click **Options**.
+2. No menu **Ferramentas**, clique em **Opções**.
   
-2.  In the **Options** dialog box, expand the **Debugging** node.  
+2.  No **opções** caixa de diálogo caixa, expanda o **depuração** nó.  
   
-3.  In the **Debugging** node, select **Just-In-Time**.
+3.  No **depuração** nó, selecione **Just-In-Time**.
 
-    ![Enable or Disable JIT Debugging](../debugger/media/dbg-jit-enable-or-disable.png "Enable or Disable JIT Debugging") 
+    ![Habilitar ou desabilitar a depuração JIT](../debugger/media/dbg-jit-enable-or-disable.png "habilitar ou desabilitar a depuração JIT") 
   
-4.  In the **Enable Just-In-Time debugging of these types of code** box, select or clear the relevant program types: **Managed**, **Native**, or **Script**.    
+4.  No **depuração Just-in-habilitar esses tipos de código** caixa, marque ou desmarque os tipos de programa relevantes: **gerenciado**, **nativo**, ou **Script**.    
   
-5.  Click **OK**.  
+5.  Clique em **OK**.  
   
-Just-In-Time debugging may still be enabled even if Visual Studio is no longer installed on your computer. When Visual Studio is not installed, you cannot disable Just-In-Time debugging from the Visual Studio **Options** dialog box. In that case, you can disable Just-In-Time debugging by editing the Windows registry.  
+A depuração Just-In-Time ainda poderá ser habilitada, mesmo que o Visual Studio não esteja mais instalado no seu computador. Quando o Visual Studio não estiver instalado, não é possível desabilitar depuração no Visual Studio Just-In-Time **opções** caixa de diálogo. Nesse caso, você poderá desabilitar a depuração Just-In-Time editando o Registro do Windows.  
   
-#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>To disable Just-In-Time debugging by editing the registry  
+#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Para desabilitar a depuração Just-In-Time editando o Registro  
   
-1.  On the **Start** menu, search for and run `regedit.exe`  
+1.  Sobre o **iniciar** menu, pesquisar e executar`regedit.exe`  
   
-2.  In the **Registry Editor** window, locate and delete the following registry entries:  
+2.  No **Editor do registro** janela, localize e exclua as entradas do registro a seguir:  
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\DbgManagedDebugger  
+    -   HKEY_LOCAL_MACHINE\Software\Microsoft\.NETFramework\DbgManagedDebugger  
 
-    ![JIT Registry Key](../debugger/media/dbg-jit-registry.png "JIT Registry Key") 
+    ![Chave de registro JIT](../debugger/media/dbg-jit-registry.png "chave do registro JIT") 
   
-3.  If your computer is running a 64-bit operating system, delete the following registry entries also:  
+3.  Se o computador estiver executando um sistema operacional de 64 bits, exclua as seguintes entradas de registro também:  
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger  
+    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger  
   
-4.  Take care not to accidentally delete or change any other registry keys.  
+4.  Tenha cuidado para não excluir ou não alterar acidentalmente quaisquer outras chaves do Registro.  
   
-5.  Close the **Registry Editor** window.   
+5.  Fechar o **Editor do registro** janela.   
   
-#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>To enable Just-In-Time debugging of a Windows Form  
+#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Para habilitar a depuração Just-In-Time de um formulário do Windows  
   
-1.  By default, Windows Forms applications have a top-level exception handler that allows the program to continue to run if it can recover. For example, if your Windows Forms application throws an unhandled exception, you will see a dialog like the following:  
+1.  Por padrão, os aplicativos do Windows Forms têm um manipulador de exceção de nível superior que permite que o programa continue a executar se puder recuperar. Por exemplo, se seu aplicativo do Windows Forms lança uma exceção sem tratamento, você verá uma caixa de diálogo semelhante ao seguinte:  
   
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")  
   
-     To enable Just-In-Time debugging of a Windows Forms application, you must perform the following additional steps:  
+     Para habilitar Just-In-Time depuração de um aplicativo de formulários do Windows, você deve executar as seguintes etapas adicionais:  
   
-2.  Set the `jitDebugging` value to `true` in the `system.windows.form` section of the machine.config or *\<application name>*.exe.config file:  
+2.  Definir o `jitDebugging` valor `true` no `system.windows.form` seção de Machine. config ou  *\<nome do aplicativo >*. exe:  
   
     ```  
     <configuration>  
@@ -107,28 +90,28 @@ Just-In-Time debugging may still be enabled even if Visual Studio is no longer i
     </configuration>  
     ```  
   
-3.  In a C++ Windows Form application, you must also set `DebuggableAttribute` in a .config file or in your code. If you compile with [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) and without [/Og](/cpp/build/reference/og-global-optimizations), the compiler sets this attribute for you. If you want to debug a non-optimized release build, however, you must set this yourself. You can do this by adding the following line to your the AssemblyInfo.cpp file of your application:  
+3.  No aplicativo C++ do Windows Form, você também deve definir `DebuggableAttribute` em um arquivo .config ou no seu código. Se você compilar com [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) e sem [/Og](/cpp/build/reference/og-global-optimizations), o compilador define esse atributo para você. Se você desejar depurar uma compilação de liberação não otimizada, no entanto, deverá definir isso por conta própria. Você pode fazer isso adicionando a seguinte linha ao arquivo de AssemblyInfo.cpp do seu aplicativo:  
   
     ```  
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];   
     ```  
   
-     For more information, see <xref:System.Diagnostics.DebuggableAttribute>.  
+     Para obter mais informações, consulte <xref:System.Diagnostics.DebuggableAttribute>.  
   
-## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Use Just-In-Time Debugging  
- This section shows what happens when an executable throws an exception.  
+## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Use a depuração Just-In-Time  
+ Esta seção mostra o que acontece quando um executável lança uma exceção.  
   
- You must have Visual Studio installed to follow these steps. If you don't have Visual Studio, you can download the free [Visual Studio Community Edition](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).  
+ Você deve ter o Visual Studio instalado para executar essas etapas. Se você não tiver o Visual Studio, você pode baixar a versão gratuita [Visual Studio Community Edition](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).  
   
- Make sure that Just-In-Time debugging is [enabled](#BKMK_Enabling).
+ Certifique-se de que Just-In-Time de depuração é [habilitado](#BKMK_Enabling).
   
- For the purposes of this section, we'll make a C# console app in Visual Studio that throws a [NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a).  
+ Para os fins desta seção, faremos um aplicativo de console c# no Visual Studio gera um [NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a).  
   
- In Visual Studio, create a C# console app (**File > New > Project > Visual C# > Console Application**) named **ThrowsNullException**. For more information about creating projects in Visual Studio, see [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).  
+ No Visual Studio, crie um aplicativo de console c# (**arquivo > Novo > projeto > Visual C# > aplicativo de Console**) denominado **ThrowsNullException**. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).  
   
- When the project opens in Visual Studio, open the Program.cs file. Replace the Main() method with the following code, which prints a line to the console and then throws a NullReferenceException:  
+ Quando o projeto é aberto no Visual Studio, abra o arquivo Program.cs. Substitua o método Main () com o código a seguir, que imprime uma linha para o console e, em seguida, gera uma NullReferenceException:  
   
-```C#  
+```csharp  
 static void Main(string[] args)  
 {  
     Console.WriteLine("we will now throw a NullReferenceException");  
@@ -137,64 +120,64 @@ static void Main(string[] args)
 ```  
   
 > [!IMPORTANT]
->  In order for this procedure to work in a [release configuration](../debugger/how-to-set-debug-and-release-configurations.md), you need to turn off [Just My Code](../debugger/just-my-code.md). In Visual Studio, click **Tools > Options**. In the **Options** dialog, select **Debugging**. Remove the check from **Enable Just My Code**.  
+>  Para que este procedimento para trabalhar um [configuração release](../debugger/how-to-set-debug-and-release-configurations.md), você precisará desativar [apenas meu código](../debugger/just-my-code.md). No Visual Studio, clique em **Ferramentas > Opções**. No **opções** caixa de diálogo, selecione **depuração**. Remover a verificação de **habilitar apenas meu código**.  
   
- Build the solution (in Visual Studio, choose **Build > Rebuild Solution**). You can choose either the Debug or the Release configuration (choose **Debug** for the full debugging experience). For more information about build configurations, see [Understanding Build Configurations](../ide/understanding-build-configurations.md).  
+ Compile a solução (no Visual Studio, escolha **Build > recompilar solução**). Você pode escolher a depuração ou a configuração de versão (escolha **depurar** para a experiência de depuração completa). Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).  
   
- The build process creates an executable ThrowsNullException.exe. You can find it under the folder where you created the C# project: **...\ThrowsNullException\ThrowsNullException\bin\Debug** or **...\ThrowsNullException\ThrowsNullException\bin\Release**.  
+ O processo de compilação cria um executável ThrowsNullException.exe. Você pode encontrar na pasta em que você criou o projeto c#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** ou **...\ThrowsNullException\ThrowsNullException\bin\Release**.  
   
- Double-click the ThrowsNullException.exe. You should see a command window like this:  
+ Clique duas vezes o ThrowsNullException.exe. Você verá uma janela de comando como este:  
   
  ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")  
   
- After a few seconds, an error window appears:  
+ Depois de alguns segundos, aparece uma janela de erro:  
   
  ![ThrowsNullExceptionError](../debugger/media/throwsnullexceptionerror.png "ThrowsNullExceptionError")  
   
- Do not click **Cancel**! After a few seconds, you should see two buttons, **Debug** and **Close program**. Click **Debug**.  
+ Não clique **Cancelar**! Depois de alguns segundos, você deverá ver dois botões, **depurar** e **fechar programa**. Clique em **depurar**.  
   
 > [!CAUTION]
->  If your application contains untrusted code, a dialog box with a security warning appears. This dialog box enables you to decide whether or not to proceed with debugging. Before you continue with debugging, decide whether you trust the code. Did you write the code yourself? Do you trust the coder? If the application is running on a remote machine, do you recognize the name of the process? Even if the application is running locally, that does not necessarily mean it can be trusted. Consider the possibility of malicious code running on your computer. If you decide that the code you are about to debug is trustworthy, click **Debug**. Otherwise, click **Don't Debug**.  
+>  Se seu aplicativo contiver código não confiável, será exibida uma caixa de diálogo com um aviso de segurança. Essa caixa de diálogo permite que você decida se deseja continuar com a depuração. Antes de prosseguir com a depuração, decida se você confia no código. Você mesmo escreveu o código? Você confia no programador? Se o aplicativo está sendo executado em um computador remoto, você reconhece o nome do processo? Mesmo que o aplicativo seja executado localmente, isso não significa necessariamente que ele é confiável. Considere a possibilidade de um código mal-intencionado em execução no seu computador. Se você decidir que o código que você está prestes a depuração é confiável, clique em **depurar**. Caso contrário, clique em **não depurar**.  
   
- The **Visual Studio Just-In-Time Debugger** window appears:  
+ O **depurador do Visual Studio Just-in-** janela é exibida:  
   
  ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")  
   
- Under **Possible Debuggers**, you should see that the **New instance of Microsoft Visual Studio <available version>** line is selected. If it isn't selected already, select it now.  
+ Em **possíveis depuradores**, você verá que o **nova instância do Microsoft Visual Studio <available version>**  linha está selecionada. Se ainda não estiver selecionado, selecione-o agora.  
   
- At the bottom of the window, under **Do you want to debug using the selected debugger?**, click **Yes**.  
+ Na parte inferior da janela, em **você deseja depurar usando o depurador selecionado?**, clique em **Sim**.  
   
- The ThrowsNullException project opens in a new instance of Visual Studio, with execution stopped at the line that throws the exception:  
+ O projeto de ThrowsNullException é aberto em uma nova instância do Visual Studio, com a execução interrompida na linha que gera a exceção:  
   
  ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")  
   
- You can start debugging at this point. If this were a real application, you would need to find out why the code is throwing the exception.  
+ Você pode iniciar a depuração nesse ponto. Se esse fosse um aplicativo real, você precisa descobrir por que o código está lançando a exceção.  
   
-## <a name="just-in-time-debugging-errors"></a>Just-In-Time debugging errors  
- if you don't see the dialog when the program crashes, this might due to Windows Error Reporting settings on your computer. For more information, see [.WER Settings](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).  
+## <a name="just-in-time-debugging-errors"></a>Erros da depuração Just-In-Time  
+ Se você não vir a caixa de diálogo quando o programa falhar, isso pode ser devido a configurações de relatório de erros do Windows em seu computador. Para obter mais informações, consulte [. Configurações do WER](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).  
   
- You might see the following error messages that are associated with Just-In-Time debugging.  
+ Você pode ver as seguintes mensagens de erro que estão associadas à depuração Just-In-Time.  
   
--   **Unable to attach to the crashing process. The specified program is not a Windows or MS-DOS program.**  
+-   **Não é possível anexar ao processo de travamento. O programa especificado não é um programa do Windows ou MS-DOS.**  
   
-     This error occurs when you try to attach to a process running as another user.  
+     Esse erro ocorre quando você tenta anexar a um processo em execução como outro usuário.  
   
-     To work around this problem, start Visual Studio, open the **Attach to Process** dialog box from the **Debug** menu, and find the process you want to debug in the **Available Processes** list. If you do not know the name of the process, look at the **Visual Studio Just-In-Time Debugger** dialog and note the process ID. Select the process in the **Available Processes** list and click **Attach**. In the **Visual Studio Just-In-Time Debugger** dialog, click **No** to dismiss the dialog box.  
+     Para contornar esse problema, iniciar o Visual Studio, abra o **anexar ao processo** na caixa de diálogo de **depurar** menu e localizar o processo que você deseja depurar no **processos disponíveis**lista. Se você não souber o nome do processo, examine o **depurador do Visual Studio Just-in-** caixa de diálogo e anote a ID de processo. Selecione o processo no **processos disponíveis** lista e clique em **Attach**. No **depurador do Visual Studio Just-in-** caixa de diálogo, clique em **não** para ignorar a caixa de diálogo.  
   
--   **Debugger could not be started because no user is logged on.**  
+-   **Não foi possível iniciar o depurador porque nenhum usuário está conectado.**  
   
-     This error occurs when Just-In-Time debugging tries to start Visual Studio on a machine where there is no user logged onto the console. Because no user is logged on, there is no user session to display the Just-In-Time debugging dialog box.  
+     Este erro ocorre quando a depuração Just-In-Time tenta iniciar o Visual Studio em um computador no qual não há nenhum usuário conectado ao console. Como nenhum usuário está conectado, não há sessão de usuário para exibir a caixa de diálogo Depuração Just-In-Time.  
   
-     To fix this problem, log onto the machine.  
+     Para corrigir esse problema, conecte-se ao computador.  
   
--   **Class not registered.**  
+-   **Classe não registrada.**  
   
-     This error indicates that the debugger tried to create a COM class that is not registered, probably due to an installation problem.  
+     Este erro indica que o depurador tentou criar uma classe COM não registrada, provavelmente devido a um problema de instalação.  
   
-     To fix this problem, use the setup disk to reinstall or repair your Visual Studio installation.  
+     Para corrigir o problema, use o disco de instalação para reinstalar ou reparar sua instalação do Visual Studio.  
   
-## <a name="see-also"></a>See Also  
- [Debugger Security](../debugger/debugger-security.md)   
- [Debugger Basics](../debugger/debugger-basics.md)   
- [Just-In-Time, Debugging, Options Dialog Box](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Security Warning: Attaching to a process owned by an untrusted user can be dangerous. If the following information looks suspicious or you are unsure, do not attach to this process](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+## <a name="see-also"></a>Consulte também  
+ [Segurança do depurador](../debugger/debugger-security.md)   
+ [Noções básicas do depurador](../debugger/debugger-basics.md)   
+ [Just-In-Time, depuração, a caixa de diálogo Opções](../debugger/just-in-time-debugging-options-dialog-box.md)   
+ [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)

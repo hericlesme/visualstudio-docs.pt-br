@@ -1,54 +1,38 @@
 ---
-title: IDebugDocumentContext2::GetLanguageInfo | Documentos do Microsoft
+title: IDebugDocumentContext2::GetLanguageInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocumentContext2::GetLanguageInfo
-helpviewer_keywords:
-- IDebugDocumentContext2::GetLanguageInfo
+f1_keywords: IDebugDocumentContext2::GetLanguageInfo
+helpviewer_keywords: IDebugDocumentContext2::GetLanguageInfo
 ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1bb285981011920a5b5c2755bac7e0fdbf8e53d1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 67e685bbe6920ddc4ebca32242c34caa6c585b9b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
-Obtém o idioma associado a esse contexto de documento.  
+Obtém o idioma associado a este contexto de documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 HRESULT GetLanguageInfo(   
    BSTR* pbstrLanguage,  
    GUID* pguidLanguage  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetLanguageInfo(   
    out string pbstrLanguage,  
    out Guid   pguidLanguage  
@@ -57,18 +41,18 @@ int GetLanguageInfo(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrLanguage`  
- [out] Retorna o nome do idioma que implementa o código no contexto neste documento.  
+ [out] Retorna o nome do idioma que implementa o código neste contexto de documento.  
   
  `pguidLanguage`  
- [out] Retorna o GUID da linguagem que implementa o código no contexto neste documento. Por exemplo, `guidVBScriptLang` ou `guidCPPLang`. Esse GUID não é limitado às linguagens fornecidas pelo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ [out] Retorna o GUID do idioma que implementa o código neste contexto de documento. Por exemplo `guidVBScriptLang` ou `guidCPPLang`. Esse GUID não é limitado aos idiomas fornecidos pelo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CDebugContext` objeto expõe o [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um simples `CDebugContext` objeto que expõe o [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)    
 {    
    HRESULT hr;    

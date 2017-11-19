@@ -1,47 +1,31 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO | Documentos do Microsoft
+title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- BP_ERROR_RESOLUTION_INFO
-helpviewer_keywords:
-- BP_ERROR_RESOLUTION_INFO structure
+f1_keywords: BP_ERROR_RESOLUTION_INFO
+helpviewer_keywords: BP_ERROR_RESOLUTION_INFO structure
 ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0388c0fac8e7789341983fe05ac3dabe977e40fa
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ae45c2a273d394c218d5140d8cec48aa9bd92997
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 Descreve a resolução de um ponto de interrupção de erro, inclusive local, o programa e o thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```cpp#  
+```cpp  
 typedef struct _BP_ERROR_RESOLUTION_INFO {   
    BPERESI_FIELDS         dwFields;  
    BP_RESOLUTION_LOCATION bpResLocation;  
@@ -52,7 +36,7 @@ typedef struct _BP_ERROR_RESOLUTION_INFO {
 } BP_ERROR_RESOLUTION_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct BP_ERROR_RESOLUTION_INFO {   
    public uint                   dwFields;  
    public BP_RESOLUTION_LOCATION bpResLocation;  
@@ -65,7 +49,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
   
 ## <a name="members"></a>Membros  
  `dwFields`  
- Uma combinação de valores de [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumeração especificando quais campos dessa estrutura são preenchidos.  
+ Uma combinação de valores da [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumeração que especifica quais campos dessa estrutura são preenchidos.  
   
  `bpResLocation`  
  O [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union, que especifica o local de resolução do ponto de interrupção.  
@@ -80,7 +64,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
  Uma cadeia de caracteres que contém qualquer mensagem de aviso ou erro resultantes da resolução erro.  
   
  `dwType`  
- Um valor a partir de [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) enumeração que especifica o tipo de erro de ponto de interrupção.  
+ Um valor da [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) enumeração que especifica o tipo de erro do ponto de interrupção.  
   
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é retornada a partir de [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) método.  
