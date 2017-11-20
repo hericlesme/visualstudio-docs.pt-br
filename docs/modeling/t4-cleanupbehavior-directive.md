@@ -1,5 +1,5 @@
 ---
-title: Diretiva CleanUpBehavior T4 | Documentos do Microsoft
+title: Diretiva CleanUpBehavior T4 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,29 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9e5a211f-a3bf-4229-bff0-7d2e45b71c64
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1076bc65be0b1504bf473811bc961760588e3a5a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f60151ba4563c07cd9f6f6619982d8e6a8657ead
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="t4-cleanupbehavior-directive"></a>Diretiva CleanUpBehavior T4
 Para excluir o appDomain depois de processar um modelo de texto, inclua a seguinte linha:  

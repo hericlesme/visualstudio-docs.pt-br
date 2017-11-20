@@ -1,51 +1,54 @@
 ---
-title: "How to: Invoke a Windows Communication Foundation Contract Operation (Legacy) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Como: chamar uma operação do contrato Windows Communication Foundation (legados) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "8"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 51b20275f63b47d607679e04ff061cf77b0d9f90
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Invoke a Windows Communication Foundation Contract Operation (Legacy)
+# <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Como: Chamar uma operação do Windows Communication Foundation (o legados)
 Este tópico descreve como chamar uma operação do contrato de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] usando o novas [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] que direciona [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- Após arrastar uma atividade de **SendActivity** da caixa de ferramentas para a superfície de design de fluxo de trabalho, você deve importar um contrato existente e determinar qual operação será chamada da atividade de **SendActivity** .  Você selecionar o contrato e as operações com [Choose Operation Dialog Box \(Legacy\)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
+ Depois de arrastar um **SendActivity** atividade da caixa de ferramentas para a superfície de design de fluxo de trabalho, você deve importar um contrato existente e determinar qual operação será invocada daquele **SendActivity** atividade. Selecione seu contrato e suas operações por meio de [escolha a caixa de diálogo da operação (herdado)](../workflow-designer/choose-operation-dialog-box-legacy.md).  
   
- Além disso, se você estiver usando um arquivo de configuração com o serviço, você precisará especificar <xref:System.Workflow.Activities.ChannelToken>.  <xref:System.Workflow.Activities.ChannelToken> identifica a configuração do ponto de extremidade a atividade de enviar usará para se conectar ao serviço de fluxo de trabalho.  
+ Além disso, se você estiver usando um arquivo de configuração com o serviço, você precisará especificar <xref:System.Workflow.Activities.ChannelToken>. <xref:System.Workflow.Activities.ChannelToken> identifica a configuração do ponto de extremidade a atividade de enviar usará para se conectar ao serviço de fluxo de trabalho.  
   
-### Para chamar a reduzir a operação de uma atividade de SendActivity  
+### <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Para chamar a reduzir a operação de uma atividade de SendActivity  
   
-1.  Clique duas vezes na atividade de **SendActivity** no designer ou clique nas reticências próximo à propriedade de **ServiceOperationInfo** no painel de **Propriedades** .  
+1.  Clique duas vezes no **SendActivity** atividade no designer ou clique no botão de reticências ao lado de **ServiceOperationInfo** propriedade no **propriedades** painel.  
   
-2.  Quando a caixa de diálogo **Escolher Operação** abre, clique **Importar** no canto superior direito da caixa de diálogo.  
+2.  Quando o **operação escolha** caixa de diálogo é aberta, clique em **importação** no canto superior direito da caixa de diálogo.  
   
-     O [Browse and Select a .NET Type Dialog Box \(Legacy\)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) será aberto.  
+     O [procurar e selecione uma caixa de diálogo de tipo .NET (legados)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) é aberto.  
   
 3.  Pesquise por um assembly ou projeto que contém o contrato que você deseja.  
   
-4.  Selecione o contrato e clique **OK**.  
+4.  Selecione o contrato e clique em **Okey**.  
   
-5.  Em **Operações Disponíveis**, selecione a operação que você deseja chamar e clique **OK**.  
+5.  Em **operações disponíveis**, selecione a operação que você deseja invocar e clique em **Okey**.  
   
-### Para especificar um token de canal  
+### <a name="to-specify-a-channel-token"></a>Para especificar um token de canal  
   
 1.  Selecione a atividade de <xref:System.Workflow.Activities.SendActivity> no designer.  
   
-2.  No painel de **Propriedades** , especifique um nome para <xref:System.Workflow.Activities.ChannelToken>.  Este nome identifica unicamente o símbolo do canal.  
+2.  No **propriedades** painel, especifique um nome para o <xref:System.Workflow.Activities.ChannelToken>. Este nome identifica unicamente o símbolo do canal.  
   
-3.  Expanda o nó simbólico do canal e especifique um nome para o ponto final de cliente que você usará no campo de <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> .  A configuração de ponto de extremidade de mesmo nome no arquivo de configuração será usada para configurar o canal.  
+3.  Expanda o nó simbólico do canal e especifique um nome para o ponto final de cliente que você usará no campo de <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> . A configuração de ponto de extremidade de mesmo nome no arquivo de configuração será usada para configurar o canal.  
   
-4.  Crie a configuração de ponto de extremidade no arquivo de configuração, se ele não existir.  Para obter mais informações sobre como configurar o cliente, consulte [Visão geral do cliente WCF](../Topic/WCF%20Client%20Overview.md).  
+4.  Crie a configuração de ponto de extremidade no arquivo de configuração, se ele não existir. Para obter mais informações sobre como configurar seu cliente, consulte [visão geral do cliente WCF](/dotnet/framework/wcf/wcf-client-overview).  
   
-## Consulte também  
- [Choose Operation Dialog Box \(Legacy\)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
- [How to: Implement a WCF Contract Operation \(Legacy\)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
- [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md)
+## <a name="see-also"></a>Consulte também  
+ [Escolha a caixa de diálogo de operação (o legados)](../workflow-designer/choose-operation-dialog-box-legacy.md)   
+ [Como: implementar uma operação do WCF (legados)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
+ [Atividades de fluxo de trabalho herdadas](../workflow-designer/legacy-workflow-activities.md)

@@ -1,34 +1,33 @@
 ---
-title: "Elemento &lt;Package&gt; (bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Elemento <package> [bootstrapper]"
+title: '&lt;Pacote&gt; elemento (Bootstrapper) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <package> element [bootstrapper]
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Elemento &lt;Package&gt; (bootstrapper)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-O `Package` é o elemento XML nível superior dentro de um arquivo de pacote.  
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacote&gt; elemento (Bootstrapper)
+O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
 ```  
 <Package  
@@ -143,16 +142,16 @@ O `Package` é o elemento XML nível superior dentro de um arquivo de pacote.
 </Package>  
 ```  
   
-## Elementos e atributos  
- O `Package` elemento é obrigatório.  Ele tem os seguintes atributos.  
+## <a name="elements-and-attributes"></a>Elementos e atributos  
+ O `Package` elemento é necessário. Ele tem os seguintes atributos.  
   
 |Atributo|Descrição|  
-|--------------|---------------|  
-|`Culture`|Obrigatório.  Define a cultura para este pacote, o que determina o idioma a ser usado.  Esse atributo é uma chave para o `Strings` elemento, o que lista as seqüências de caracteres específicos da cultura para nomes de produto e mensagens de erro durante a instalação.|  
-|`Name`|Obrigatório.  O nome do pacote exibido ao desenvolvedor dentro de uma ferramenta, como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Esse atributo é uma chave na `Strings` elemento, que deve conter um `String` elemento com o `Name` e `Culture` propriedades definidas para coincidir com o `Name` e `Culture` propriedades de `Package`.|  
-|`LicenseAgreement`|Opcional.  Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final \(EULA\).  Este arquivo pode ser em texto sem formatação \(. txt\) ou Rich Text Format.  \(. rtf\)|  
+|---------------|-----------------|  
+|`Culture`|Necessário. Define a cultura para este pacote, que determina o idioma a ser usado. Esse atributo é uma chave para o `Strings` elemento, que lista as cadeias de caracteres específicas da cultura para nomes de produtos e as mensagens de erro durante a instalação.|  
+|`Name`|Necessário. O nome do pacote exibido ao desenvolvedor de dentro de uma ferramenta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esse atributo é uma chave para o `Strings` elemento, que deve conter um `String` elemento com o `Name` e `Culture` propriedades definida para corresponder a `Name` e `Culture` propriedades de `Package`.|  
+|`LicenseAgreement`|Opcional. Especifica o nome do arquivo do pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser um texto sem formatação (. txt) ou Rich Text Format. (. rtf)|  
   
-## Exemplo  
+## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra um arquivo de pacote completo para redistribuir o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
   
 ```  
@@ -190,5 +189,5 @@ O `Package` é o elemento XML nível superior dentro de um arquivo de pacote.
 </Package>  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

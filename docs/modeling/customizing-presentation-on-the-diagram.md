@@ -1,23 +1,22 @@
 ---
-title: "Personalizando a apresentação no diagrama | Documentos do Microsoft"
+title: "Personalizar a apresentação no diagrama | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Domain-Specific Language, diagram
+helpviewer_keywords: Domain-Specific Language, diagram
 ms.assetid: 259836b0-783c-46a0-b7c7-dc4b2f7b4a81
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 6f171bdffd8fb76801156331f7016d061c8333a1
-ms.lasthandoff: 02/22/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Personalizando a apresentação no diagrama
 O diagrama é a principal área de apresentação de um designer de linguagem específica do domínio. Geralmente, os usuários usam o diagrama para construir seus modelos. Você pode personalizar o diagrama, conforme descrito nos tópicos a seguir.  

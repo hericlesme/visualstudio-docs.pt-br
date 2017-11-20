@@ -1,54 +1,52 @@
 ---
-title: "Elemento &lt;assembly&gt; (implanta&#231;&#227;o do ClickOnce) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#assembly"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Elemento <assembly> (manifesto da implantação do ClickOnce)"
+title: "&lt;assembly&gt; elemento (implantação do ClickOnce) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#assembly
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <assembly> element [ClickOnce deployment manifest]
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
-caps.latest.revision: 11
-caps.handback.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "11"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 90def1bc4d824c6fdfd597ec8beb4b1f18f9e008
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Elemento &lt;assembly&gt; (implanta&#231;&#227;o do ClickOnce)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-O elemento de nível superior para obter o manifesto de implantação.  
+# <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; elemento (implantação do ClickOnce)
+O elemento de nível superior para o manifesto de implantação.  
   
-## Sintaxe  
+## <a name="syntax"></a>Sintaxe  
   
 ```  
   
-      <assembly    
+      <assembly    
    manifestVersion  
 />  
 ```  
   
-## Elementos e atributos  
- O `assembly` elemento é o elemento raiz e é necessário.  O primeiro elemento contido deve ser um `assemblyIdentity` elemento.  Os elementos de manifesto devem estar nos seguintes namespaces:  `urn: schemas-microsoft-v1`,  `urn: schemas-microsoft-com:asm.v2`, e  `http://www.w3.org/2000/09/xmldsig#`.  Elementos filho do assembly também devem estar nesses namespaces, por herança ou marcação.  
+## <a name="elements-and-attributes"></a>Elementos e atributos  
+ O `assembly` elemento é o elemento raiz e é necessário. O primeiro elemento independente deve ser um `assemblyIdentity` elemento. Os manifestos elementos devem estar nos seguintes namespaces: `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, e `http://www.w3.org/2000/09/xmldsig#`. Elementos filho do assembly devem ser também nesses namespaces, por herança ou marcação.  
   
- O `assembly` elemento tem o atributo a seguir.  
+ O `assembly` elemento tem o seguinte atributo.  
   
 |Atributo|Descrição|  
-|--------------|---------------|  
-|`manifestVersion`|Obrigatório.  Este atributo deve ser definido como  `1.0`.|  
+|---------------|-----------------|  
+|`manifestVersion`|Necessário. Esse atributo deve ser definido como `1.0`.|  
   
-## Exemplo  
- O exemplo de código a seguir ilustra um `assembly` elemento em um manifesto de implantação para um aplicativo implantado usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  Este exemplo de código é parte de um exemplo maior fornecido para o  [O manifesto de implantação de ClickOnce](../deployment/clickonce-deployment-manifest.md) tópico.  
+## <a name="example"></a>Exemplo  
+ O exemplo de código a seguir ilustra uma `assembly` elemento em um manifesto de implantação para um aplicativo implantado usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Este exemplo de código é parte de um exemplo maior fornecido para o [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) tópico.  
   
 ```  
 <asmv1:assembly   
@@ -65,6 +63,6 @@ O elemento de nível superior para obter o manifesto de implantação.
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Elemento \<assembly\>](../deployment/assembly-element-clickonce-application.md)
+ [\<assembly > elemento](../deployment/assembly-element-clickonce-application.md)

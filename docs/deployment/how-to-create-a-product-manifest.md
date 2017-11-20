@@ -1,47 +1,47 @@
 ---
-title: "Como criar um manifesto de produto | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "dependências, pacote de inicializador personalizado"
-  - "pré-requisitos, pacote de inicializador personalizado"
-  - "arquivos de produto [ClickOnce]"
-  - "arquivos de produto [Windows Installer]"
+title: 'Como: criar um manifesto de produto | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- product files [ClickOnce]
+- product files [Windows Installer]
+- prerequisites, custom bootstrapper package
+- dependencies, custom bootstrapper package
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "10"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 36f1c1d5255233f57f7c2e266fe26fd8cbf789ee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Como criar um manifesto de produto
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para implantar os pré\-requisitos para seu aplicativo, você pode criar um pacote de bootstrapper.  Um pacote de bootstrapper contém um arquivo de manifesto único produto, mas um manifesto de pacote para cada localidade.  O manifesto de pacote contém os aspectos específicos de localização do seu pacote.  Isso inclui seqüências de caracteres, os contratos de licença de usuário final e os pacotes de idiomas.  
+# <a name="how-to-create-a-product-manifest"></a>Como criar um manifesto de produto
+Para implantar os pré-requisitos para o seu aplicativo, você pode criar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único mas um manifesto de pacote para cada localidade. O manifesto de pacote contém aspectos específicos de localização do seu pacote. Isso inclui cadeias de caracteres, os contratos de licença do usuário final e os pacotes de idiomas.  
   
- Para obter mais informações sobre manifestos de produto, consulte [Como criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
+ Para obter mais informações sobre manifestos de produto, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
   
-## Criando o manifesto do produto  
+## <a name="creating-the-product-manifest"></a>Criando o manifesto de produto  
   
-#### Para criar o manifesto do produto  
+#### <a name="to-create-the-product-manifest"></a>Para criar o manifesto de produto  
   
-1.  Crie um diretório para o pacote de bootstrapper.  Este exemplo usa o C:\\package.  
+1.  Crie um diretório para o pacote de bootstrapper. Este exemplo usa C:\package.  
   
-2.  No Visual Studio, crie um novo arquivo XML chamado  `Product. XML`e salvá\-lo para a pasta C:\\package.  
+2.  No Visual Studio, crie um novo arquivo XML chamado `product.xml`e salvá-lo para a pasta C:\package.  
   
-3.  Adicione o seguinte XML para descrever o código de produto e o espaço para nome XML para o pacote.  Substitua o código de produto com um identificador exclusivo para o pacote.  
+3.  Adicione o seguinte XML para descrever o código de produto e de namespace XML para o pacote. Substitua o código de produto com um identificador exclusivo para o pacote.  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode criar um paco
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Adicione o XML para especificar que o pacote tem uma dependência.  Este exemplo usa uma dependência no 3.1 do Microsoft Windows Installer.  
+4.  Adicione o XML para especificar que o pacote tem uma dependência. Este exemplo usa uma dependência no Microsoft Windows Installer 3.1.  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode criar um paco
       </RelatedProducts>  
     ```  
   
-5.  Adicione o XML para listar todos os arquivos que estão no pacote bootstrapper.  Este exemplo usa o nome de arquivo do pacote CorePackage.msi.  
+5.  Adicione XML para listar todos os arquivos que estão no pacote de bootstrapper. Este exemplo usa o nome do arquivo de pacote CorePackage.msi.  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode criar um paco
     </PackageFiles>  
     ```  
   
-6.  Copiar ou mover o arquivo CorePackage.msi para a pasta C:\\package.  
+6.  Copiar ou mover o arquivo CorePackage.msi para a pasta C:\package.  
   
-7.  Adicione o XML para instalar o pacote usando os comandos de bootstrapper.  O bootstrapper adiciona automaticamente o **\/qn** sinalizar para o arquivo. msi, que instalará silenciosamente.  Se o arquivo for um. exe, o bootstrapper executa o arquivo. exe usando o shell.  O XML a seguir mostra o sem argumentos para CorePackage.msi, mas você pode colocar o argumento de linha de comando para o atributo de argumentos.  
+7.  Adicione XML para instalar o pacote usando comandos de bootstrapper. O inicializador adiciona automaticamente o **/qn** sinalizador para o arquivo. msi, que será instalado silenciosamente. Se o arquivo for um .exe, o inicializador executa o arquivo de .exe usando o shell. O seguinte XML mostra sem argumentos para CorePackage.msi, mas você pode colocar o argumento de linha de comando para o atributo de argumentos.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Adicione o seguinte XML para verificar se este pacote de bootstrapper está instalado.  Substitua o código do produto com o GUID para o componente redistribuível.  
+8.  Adicione o seguinte XML para verificar se este pacote de bootstrapper está instalado. Substitua o código de produto com o GUID para o componente redistribuível.  
   
     ```  
     <InstallChecks>  
@@ -84,7 +84,7 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode criar um paco
     </InstallChecks>  
     ```  
   
-9. Adicione o XML para alterar o comportamento de bootstrapper dependendo se o componente de bootstrapper já estiver instalado.  Se o componente estiver instalado, o pacote de bootstrapper não é executado.  O XML a seguir verifica se o usuário atual for um administrador porque este componente requer privilégios administrativos.  
+9. Adicione XML para alterar o comportamento de bootstrapper dependendo se o componente inicializador já está instalado. Se o componente está instalado, o pacote de bootstrapper não será executado. O XML a seguir verifica se o usuário atual é um administrador, porque esse componente requer privilégios administrativos.  
   
     ```  
     <InstallConditions>  
@@ -97,7 +97,7 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode criar um paco
     </InstallConditions>  
     ```  
   
-10. Adicione o XML para definir códigos de saída, se a instalação for bem\-sucedida e se uma reinicialização é necessária.  O XML a seguir demonstra que a falha e FailReboot códigos, o que indicam que o bootstrapper não continuará instalando pacotes de saída.  
+10. Adicione o XML para definir os códigos de saída se a instalação foi bem-sucedida e se uma reinicialização é necessária. O XML a seguir demonstra que a falha e FailReboot códigos, o que indicam que o bootstrapper não continuará instalando os pacotes de saída.  
   
     ```  
     <ExitCodes>  
@@ -108,17 +108,17 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode criar um paco
     </ExitCodes>  
     ```  
   
-11. Adicione o seguinte XML para finalizar a seção para comandos de bootstrapper.  
+11. Adicione o seguinte XML para encerrar a seção de comandos de bootstrapper.  
   
     ```  
         </Command>  
     </Commands>  
     ```  
   
-12. Mova a pasta de C:\\package para o diretório de bootstrapper de Visual Studio.  Para 2010 Visual Studio, este é o diretório \\Program Files\\Microsoft SDKs\\Windows\\v7.0A\\Bootstrapper\\Packages.  
+12. Mova a pasta C:\package para o diretório de bootstrapper do Visual Studio. Para Visual Studio 2010, este é o diretório de SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
   
-## Exemplo  
- O manifesto do produto contém instruções de instalação para pré\-requisitos personalizados.  
+## <a name="example"></a>Exemplo  
+ O manifesto de produto contém instruções de instalação de pré-requisitos personalizados.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -161,5 +161,5 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode criar um paco
 </Product>  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

@@ -1,57 +1,57 @@
 ---
-title: "Como definir permiss&#245;es personalizadas para um aplicativo ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Aplicativos ClickOnce, permissões"
-  - "permissões de aplicativos ClickOnce"
+title: "Como: definir permissões personalizadas para um aplicativo ClickOnce | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce applications, permissions
+- permissions, ClickOnce applications
 ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
-caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "17"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 0e99583b9222e71421e548b0cdf1338e81c3c45b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Como definir permiss&#245;es personalizadas para um aplicativo ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Você pode implantar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que usa as permissões padrão para as zonas da Internet ou Intranet Local. Como alternativa, você pode criar uma zona personalizada para as permissões específicas que o aplicativo precisa. Você pode fazer isso ao personalizar as permissões de segurança no **segurança** página do **Project Designer**.  
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Como definir permissões personalizadas para um aplicativo ClickOnce
+Você pode implantar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que usa as permissões padrão para as zonas da Internet ou Intranet Local. Como alternativa, você pode criar uma zona personalizada para as permissões específicas que o aplicativo precisa. Você pode fazer isso, basta personalizar as permissões de segurança no **segurança** página do **Project Designer**.  
   
-### Para personalizar uma permissão  
+### <a name="to-customize-a-permission"></a>Para personalizar uma permissão  
   
-1.  Com um projeto selecionado no **Solution Explorer**, diante o **projeto** menu, clique em **propriedades**.  
+1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique o **segurança** guia.  
+2.  Clique na guia **Segurança**.  
   
-3.  Selecione o **Ativar configurações de segurança do ClickOnce** caixa de seleção.  
+3.  Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
   
 4.  Selecione o **é um aplicativo de confiança parcial** botão de opção.  
   
      Controles de **permissões de segurança do ClickOnce** seção estão habilitados.  
   
-5.  Do **seu aplicativo será instalado a partir de zona** lista suspensa, clique em **\(personalizada\)**.  
+5.  Do **seu aplicativo será instalado a partir de zona** lista suspensa, clique em **(personalizada)**.  
   
-6.  Clique em **Editar permissões XML**.  
+6.  Clique em **editar permissões XML**.  
   
-     O arquivo App. é aberto no Editor XML.  
+     O arquivo App. manifest é aberto no Editor de XML.  
   
 7.  Antes do `</applicationRequestMinimum>` elemento, adicione o código XML para as permissões que seu aplicativo requer.  
   
     > [!NOTE]
-    >  Você pode usar o `ToXml` método de uma permissão definida para gerar o código XML para o manifesto do aplicativo. Por exemplo, para gerar o XML para o <xref:System.Security.Permissions.EnvironmentPermission> conjunto de permissões, chame o <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> método. Para obter mais informações sobre a estrutura da permissão definida XML, consulte [PONTA: como: importar um conjunto de permissões usando um arquivo XML](http://msdn.microsoft.com/pt-br/dea16b54-c108-408a-ac36-cdc05f746236).  
+    >  Você pode usar o `ToXml` método de uma permissão definida para gerar o código XML para o manifesto do aplicativo. Por exemplo, para gerar o XML para o <xref:System.Security.Permissions.EnvironmentPermission> conjunto de permissões, chame o <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> método. Para obter mais informações sobre a estrutura da permissão do conjunto de XML, consulte [NIB: como: importar um conjunto de permissões usando um arquivo XML](http://msdn.microsoft.com/en-us/dea16b54-c108-408a-ac36-cdc05f746236).  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

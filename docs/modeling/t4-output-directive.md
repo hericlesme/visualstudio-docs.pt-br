@@ -1,5 +1,5 @@
 ---
-title: "T4 Diretiva de saída | Documentos do Microsoft"
+title: "T4 Diretiva de saída | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,29 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 03a14993-47ad-4f2e-8032-57db28d5842a
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a3062d101adc8cbd3f84c892cf1de26f7e16bac5
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bf96406356799a0953ee34eb736266267fe74510
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="t4-output-directive"></a>T4 Diretiva de saída
 Em modelos de texto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a diretiva de `output` é usada pare definir a extensão do nome de arquivo e a codificação do arquivo transformado.  
@@ -89,4 +75,4 @@ Em modelos de texto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a
   
  `0` (Padrão do sistema)  
   
- Em geral, você pode usar a cadeia de caracteres do WebName ou o número de página de código de qualquer uma das codificações retornadas pelo <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.</xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>
+ Em geral, é possível usar a cadeia de caracteres do WebName ou o número da CodePage de qualquer uma das codificações retornadas por <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

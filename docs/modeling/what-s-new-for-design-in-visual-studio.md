@@ -1,11 +1,10 @@
 ---
-title: Novidades no design no Visual Studio | Documentos do Microsoft
+title: O que &#39; s novo design no Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,71 +12,57 @@ helpviewer_keywords:
 - architecture [Visual Studio Ultimate], modeling
 - modeling software [Visual Studio ALM], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 17bc5792d4fa9fac0b97705e61372dcc884c82a2
-ms.openlocfilehash: 2704914ab8607e0a7442a45589e6a6cab08b7338
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ce1172baf41cf670b253b2420f5538607addfeb7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="what39s-new-for-design-in-visual-studio"></a>Novidades no design no Visual Studio
+# <a name="what39s-new-for-design-in-visual-studio"></a>O que &#39; s novo design no Visual Studio
 
-## <a name="live-dependency-validation"></a>Validação de dependência em tempo real
+## <a name="live-dependency-validation"></a>Validação de dependência dinâmica
 
-Removendo dependências indesejáveis é uma parte importante do gerenciamento de suas deficiências técnicas.
-Validação em tempo real das dependências é agora incluída, fornecendo informações precisas sobre problemas e se beneficiar totalmente com os novos recursos na lista de erros e o editor.
+Remoção de dependências indesejadas é uma parte importante de gerenciar seu débito técnico.
+Validação dinâmica de dependências é agora incluído, fornecendo informações precisas sobre problemas e totalmente usam os novos recursos na lista de erros e o editor.
 
-![Validação de dependência ao vivo em ação](~/modeling/media/dep-validation-whatsnew-01.png)
+![Validação de dependência dinâmica em ação](media/dep-validation-whatsnew-01.png)
 
-A experiência de criação foi alterado para fazer a validação de dependência mais detectáveis e mais acessível, alterando a terminologia de "Diagrama de camada" para "Diagrama de dependência".
+A experiência de criação foi alterada para fazer a validação de dependência mais detectáveis e mais acessível, alterando a terminologia de "Diagrama de camada" para "Diagrama de dependência".
 
-O **arquitetura** menu agora contém um comando para criar um diagrama de dependência diretamente:
+O **arquitetura** menu agora contém um comando para criar um diagrama de dependência:
 
-![Item de dependência ao vivo no menu de arquitetura](~/modeling/media/dep-validation-whatsnew-02.png)
+![Item de dependência dinâmica no menu de arquitetura](media/dep-validation-whatsnew-02.png)
 
 ... e os nomes de propriedade de uma camada em um diagrama de dependência e suas descrições, foram alterados para torná-los mais significativos:
 
-![Nomes de propriedade de dependência ao vivo atualizado](~/modeling/media/dep-validation-whatsnew-03.png)
+![Nomes de propriedade de dependência dinâmica atualizado](media/dep-validation-whatsnew-03.png)
 
-Agora você ver o impacto das alterações imediatamente nos resultados da análise para o código na solução atual sempre que você salvar o diagrama. Você não precisa mais esperar pela conclusão do comando "Validar dependências".
+Agora você ver o impacto das alterações imediatamente nos resultados da análise de código atual na solução de cada vez que você salvar o diagrama. Você não precisa aguardar a conclusão do comando "Validar dependências" mais.
 
 Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/). 
  
 ## <a name="uml-designers-have-been-removed"></a>Designers UML foram removidos
 
-Os designers UML foram removidos desta versão do Visual Studio Enterprise.
+Os designers UML foram removidos dessa versão do Visual Studio Enterprise.
 
 * Diagramas UML agora são apresentados como arquivos XML
-* O Gerenciador de modelos UML não existe
-* Referências não são mais usadas para validação de dependência de projeto de modelagem
-* O nó de "Referências de camada" no Gerenciador de soluções não é mais exibido
+* O Gerenciador de modelos UML não existe mais
+* As referências não são mais usadas para validação de dependência de projeto de modelagem
+* O nó "Camada referências" no Gerenciador de soluções não é mais exibido
 * A ação de compilação "Validação" em um diagrama de dependência (camada) não é mais usada - a tarefa de compilação foi removida 
-* A estrutura do projeto é mantida para o ciclo completo entre versões
+* A estrutura do projeto é mantida para ciclo entre versões
 * Você ainda pode abrir, criar, editar e salvar um diagrama de dependência (camada) como XML
 * Itens de trabalho do TFS vinculados a um diagrama de dependência (camada) não estão acessíveis na superfície de design
-* Não há suporte para a vinculação voltar de DSL ou uma camada 
-* Não há suporte para extensibilidade o SDK de modelagem UML
+* Não há suporte para a vinculação de voltar de DSL ou uma camada 
+* Não há suporte para extensibilidade UML no SDK de modelagem
 
-Entretanto, há suporte para visualizar a arquitetura do código .NET e C++ está disponível por meio de [mapas de código](map-dependencies-across-your-solutions.md)e os aperfeiçoamentos significativos para validação de dependência descrito acima.
+No entanto, há suporte para visualizar a arquitetura do código do C++ e .NET disponível por meio de [mapas de código](map-dependencies-across-your-solutions.md)e os aperfeiçoamentos significativos para validação de dependência descrito acima.
 
-Se você for um usuário significativo dos designers UML, você pode continuar a usar o Visual Studio 2015 ou versões anteriores enquanto você decidir sobre uma ferramenta alternativa para suas necessidades UML.
+Se você for um usuário significativo dos designers UML, você pode continuar a usar o Visual Studio 2015 ou versões anteriores ao decidir sobre uma ferramenta alternativa para suas necessidades UML.
 
 Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/). 
 
@@ -86,7 +71,7 @@ Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.mi
 <a name="VersionSupport"></a>
 ##  <a name="version-support-for-architecture-and-modeling-tools"></a>Suporte de versão para a arquitetura e ferramentas de modelagem  
 
-O Visual Studio está disponível em várias versões. Nem todos eles oferecem suporte para a arquitetura e ferramentas de modelagem. A tabela a seguir mostra a disponibilidade de cada ferramenta.  
+O Visual Studio está disponível em várias versões. Nem todos eles oferecem suporte para a arquitetura e modelagem de ferramentas. A tabela a seguir mostra a disponibilidade de cada ferramenta.  
   
 |**Recurso**|**Enterprise**|**Professional**|**Comunidade**|**Express**|  
 |-----------------|--------------------|----------------------|-------------------|-----------------|  
@@ -95,7 +80,6 @@ O Visual Studio está disponível em várias versões. Nem todos eles oferecem s
 |**Direcionado gráficos** (diagramas DGML)|Sim|Sim|Sim|-|  
 |**Clone de código**|Sim|-|-|-|  
   
-Observação (1): Suporta apenas ler mapas de código, filtragem de mapas de código, adicionar novos nós genéricos e criando um novo gráfico direcionado a partir de uma seleção.
+Observação (1): Tem suporte apenas para leitura mapas de código, a filtragem de mapas de código, adicionar novos nós genéricos e criar um novo gráfico direcionado de uma seleção.
 
-Observação (2): Tem suporte apenas para leitura de diagramas de dependência.
-
+Observação (2): Somente dá suporte à leitura de diagramas de dependência.

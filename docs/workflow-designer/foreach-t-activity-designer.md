@@ -1,35 +1,37 @@
 ---
-title: "ForEach&lt;T&gt; Activity Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.ForEach`1.UI"
+title: ForEach&lt;T&gt; Designer de atividade | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.ForEach`1.UI
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: ecfdc4d736f2be4ba4a8810b039ac11c88228160
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# ForEach&lt;T&gt; Activity Designer
+# <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt; Designer de atividade
 A atividade de <xref:System.Activities.Statements.ForEach%601> executa a atividade contida em seu <xref:System.Activities.Statements.ForEach%601.Body%2A> para cada item em uma coleção de <xref:System.Activities.Statements.ForEach%601.Values%2A> especificada.  
   
-## Propriedades de ForEach \< T \> no Designer de fluxo de trabalho  
- A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:System.Activities.Statements.ForEach%601> e descreve como usá\-los no designer.  
+## <a name="foreacht-properties-in-the-workflow-designer"></a>ForEach < T\> propriedades no Designer de fluxo de trabalho  
+ A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:System.Activities.Statements.ForEach%601> e descreve como usá-los no designer.  
   
-|Nome da propriedade|Obrigatório|Uso|  
-|-------------------------|-----------------|---------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.ForEach%601> .  O padrão é \< Int32 \> ForEach.  Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|  
-|<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|A coleção de itens para iterar.  Para definir a <xref:System.Activities.Statements.ForEach%601.Values%2A>, digite um [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] expressão no **valores** caixa a **ForEach \< T \>** atividade designer ou na grade de propriedade.|  
-|*TypeArgument*|True|O tipo dos itens na coleção de <xref:System.Activities.Statements.ForEach%601.Values%2A> especificado pelo parâmetro genérico *T*.  Por padrão, *TypeArgument* é definido como **Int32**.  Para alterar o tipo, altere o valor de caixa de combinação de *TypeArgument* na grade de propriedade.|  
+|Nome da Propriedade|Necessária|Uso|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.ForEach%601> . O padrão é ForEach < Int32\>. Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|  
+|<xref:System.Activities.Statements.ForEach%601.Values%2A>|verdadeiro|A coleção de itens para iterar. Para definir o <xref:System.Activities.Statements.ForEach%601.Values%2A>, digite um [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] expressão no **valores** caixa o **ForEach < T\>**  atividade designer ou na grade de propriedades.|  
+|*TypeArgument*|verdadeiro|O tipo dos itens a <xref:System.Activities.Statements.ForEach%601.Values%2A> coleção especificada pelo parâmetro genérico *T*. Por padrão, *TypeArgument* é definido como **Int32**. Para alterar o tipo, altere o valor de *TypeArgument* caixa de combinação na grade de propriedades.|  
   
- Por padrão, o iterador do loop é chamado **item**.  Você pode alterar o nome da variável de iterador no designer de atividade de <xref:System.Activities.Statements.ForEach%601> .  O iterador do loop pode ser usado em expressões nos filhos de atividade de <xref:System.Activities.Statements.ForEach%601> .  
+ Por padrão, o iterador de loop é denominado **item**. Você pode alterar o nome da variável de iterador no designer de atividade de <xref:System.Activities.Statements.ForEach%601> . O iterador do loop pode ser usado em expressões nos filhos de atividade de <xref:System.Activities.Statements.ForEach%601> .  
   
-## Consulte também  
- [ParallelForEach\<T\>](../workflow-designer/parallelforeach-t-activity-designer.md)   
- [Control Flow](../workflow-designer/control-flow-activity-designers.md)
+## <a name="see-also"></a>Consulte também  
+ [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)   
+ [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)

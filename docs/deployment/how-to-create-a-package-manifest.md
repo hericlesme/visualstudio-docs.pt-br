@@ -1,49 +1,49 @@
 ---
-title: "Como criar um manifesto de pacote | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "dependências, pacotes de inicializador personalizados"
-  - "arquivos de pacote [ClickOnce]"
-  - "arquivos de pacote [Windows Installer]"
-  - "pré-requisitos, pacote de inicializador personalizado"
+title: 'Como: criar um manifesto de pacote | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- package files [Windows Installer]
+- package files [ClickOnce]
+- prerequisites, custom bootstrapper package
+- dependencies, custom bootstrapper packages
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "12"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 92182b9b6c6b2b2759b77e7b14d71dfd40379fc7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
-# Como criar um manifesto de pacote
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para implantar os pré\-requisitos para seu aplicativo, você pode usar um pacote de bootstrapper.  Um pacote de bootstrapper contém um arquivo de manifesto único produto, mas um manifesto de pacote para cada localidade.  Funcionalidade compartilhada entre diferentes versões localizadas deve entrar no manifesto do produto.  
+# <a name="how-to-create-a-package-manifest"></a>Como criar um manifesto de pacote
+Para implantar os pré-requisitos para o seu aplicativo, você pode usar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único mas um manifesto de pacote para cada localidade. Funcionalidade compartilhada entre diferentes versões localizadas deve ir para o manifesto de produto.  
   
- Para obter mais informações sobre manifestos de pacote, consulte [Como criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).  
+ Para obter mais informações sobre manifestos de pacote, consulte [como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).  
   
-## Criando o manifesto do pacote  
+## <a name="creating-the-package-manifest"></a>Criando o manifesto de pacote  
   
-#### Para criar o manifesto do pacote  
+#### <a name="to-create-the-package-manifest"></a>Para criar o manifesto de pacote  
   
-1.  Crie um diretório para o pacote de bootstrapper.  Este exemplo usa o C:\\package.  
+1.  Crie um diretório para o pacote de bootstrapper. Este exemplo usa C:\package.  
   
-2.  Crie um subdiretório com o nome da localidade, como, por exemplo, en para inglês.  
+2.  Crie um subdiretório com o nome da localidade, como en para inglês.  
   
-3.  No Visual Studio, crie um arquivo XML chamado  `Package. XML`e salvá\-lo para a pasta C:\\package\\en.  
+3.  No Visual Studio, crie um arquivo XML denominado `package.xml`e salvá-lo para a pasta C:\package\en.  
   
-4.  Adicione o XML para listar o nome do pacote bootstrapper, a cultura para esse manifesto do pacote localizado e o contrato de licença opcional.  O XML a seguir usa as variáveis `DisplayName` e `Culture`, que são definidos em um elemento posterior.  
+4.  Adicione XML para listar o nome do pacote de bootstrapper, a cultura para esse manifesto de pacote localizado e o contrato de licença opcional. O XML a seguir usa as variáveis `DisplayName` e `Culture`, que é definido em um elemento posterior.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode usar um pacot
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Adicione o XML para listar todos os arquivos que estão no diretório específicos da localidade.  O XML a seguir usa um arquivo chamado EULA. txt que é aplicável para o  **en** localidade.  
+5.  Adicione XML para listar todos os arquivos que estão no diretório local específico. O XML a seguir usa um arquivo chamado EULA é aplicável para o **en** localidade.  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode usar um pacot
     </PackageFiles>  
     ```  
   
-6.  Adicione o XML para definir seqüências de caracteres localizáveis para o pacote de bootstrapper.  O XML a seguir adiciona as strings de erro para a localidade en.  
+6.  Adicione o XML para definir as cadeias de caracteres localizáveis para o pacote de bootstrapper. O XML a seguir adiciona cadeias de caracteres de erro para a localidade pt.  
   
     ```  
       <Strings>  
@@ -74,10 +74,10 @@ Para implantar os pré\-requisitos para seu aplicativo, você pode usar um pacot
     </Strings>  
     ```  
   
-7.  Copie a pasta C:\\package para o diretório de bootstrapper de Visual Studio.  Para 2010 Visual Studio, este é o diretório \\Program Files\\Microsoft SDKs\\Windows\\v7.0A\\Bootstrapper\\Packages.  
+7.  Copie a pasta C:\package para o diretório de bootstrapper do Visual Studio. Para Visual Studio 2010, este é o diretório de SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
   
-## Exemplo  
- O manifesto de pacote contém informações específicas de localidade, como, por exemplo, mensagens de erro, os termos de licença de software e pacotes de idiomas.  
+## <a name="example"></a>Exemplo  
+ O manifesto de pacote contém informações específicas da localidade, como mensagens de erro, termos de licença de software e pacotes de idiomas.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -101,5 +101,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## Consulte também  
+## <a name="see-also"></a>Consulte também  
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
