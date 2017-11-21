@@ -1,14 +1,13 @@
 ---
 layout: LandingPage
-title: "Criação de perfil dos Aplicativos com o Visual Studio"
+title: "Criação de perfil de seus aplicativos com o Visual Studio | Microsoft Docs"
 description: "Saiba como usar o Visual Studio 2017 para criar o perfil do desempenho dos seus aplicativos, serviços e ferramentas na linguagem de sua escolha."
 ms.technology: vs-ide-debug
+ms.openlocfilehash: 78313c0e8f4591fef161a246b1231cdb43b54b2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
-ms.openlocfilehash: e90fc5b4997acd7a9228e8132eb00f6f32ed2d3d
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/13/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="profiling-in-visual-studio"></a>Criação de perfis no Visual Studio
 
@@ -52,7 +51,7 @@ Ferramentas de diagnóstico e criação de perfil ajudam você a diagnosticar o 
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/beginners-guide-to-performance-profiling.md#video">
+        <a href="../profiling/beginners-guide-to-performance-profiling.md#video">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

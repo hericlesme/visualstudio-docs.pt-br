@@ -1,14 +1,13 @@
 ---
 layout: HubPage
-hide_bc: true
-title: "Documentação do Visual Studio"
+hide_bc: True
+title: "Documentação do Visual Studio | Microsoft Docs"
 description: "Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos."
+ms.openlocfilehash: f33fce2ca2020827e2013199e596c0e6be2e9793
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: bcd55d1b7e1037a4442ce47fe6b96bf865dfbdfc
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -92,7 +91,7 @@ ms.lasthandoff: 09/06/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
+                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -241,7 +240,7 @@ ms.lasthandoff: 09/06/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Armazenamento de dados e processamento</h3>
-                                                    <p>Um conjunto completo de ferramentas para desenvolvedores de banco de dados criarem soluções para o SQL Server, Hadoop e AM do Azure.</p>
+                                                    <p>Ferramentas e estruturas para desenvolver e testar soluções de dados usando SQL Server, Azure Data Lake ou Hadoop.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -559,18 +558,37 @@ ms.lasthandoff: 09/06/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833080">
+                                <a href="/vsts/#pivot=services&panel=code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-6.svg" src="./images/vs_features-6.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-version-control.svg" src="./images/vs-hub-docs-features-version-control.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Colaboração</h3>
+                                                    <h3>Controle de versão</h3>
                                                     <p>Compartilhe código usando tecnologias de controle de versão, como Git e TFVC.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-devops.svg" src="./images/vs-hub-docs-features-devops.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>DevOps</h3>
+                                                    <p>Crie e lance continuamente seus aplicativos na nuvem e implemente práticas Agile com VSTS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -694,7 +712,7 @@ ms.lasthandoff: 09/06/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833063">
-                                                    <h3>Visual C++</h3>
+                                                    <h3>C++</h3>
                                                     <p>Um ambiente de desenvolvimento e uma linguagem de programação poderosa e flexível para criar aplicativos para Windows, Linux, iOS e Android.</p>
                                                 </a>
                                             </div>
@@ -824,4 +842,3 @@ ms.lasthandoff: 09/06/2017
         </ul>
     </div>
 </div>
-

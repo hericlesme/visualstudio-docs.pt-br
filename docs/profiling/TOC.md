@@ -366,4 +366,4 @@
 ##### [Função CvWriteFlag](cvwriteflag-function.md)
 ##### [Função CvWriteMessage](cvwritemessage-function.md)
 ### [Utilitário de linha de comando da Visualização Simultânea (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analisar o uso de energia em aplicativos da Store](analyze-energy-use-in-store-apps.md)
+## [Analisar o uso de energia em aplicativos UWP](analyze-energy-use-in-store-apps.md)
