@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71facc3515bf90d378b19242bb804ce825131b4e
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos ao vivo do Azure do ASP.NET usando o depurador do instantâneo
 
@@ -29,7 +29,7 @@ Coleção de instantâneo está disponível para os seguintes aplicativos web em
 - Aplicativos ASP.NET em execução no .NET Framework 4.6.1 ou posterior.
 - Aplicativos do ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
 
-Além disso, o depurador de instantâneo só está disponível para o Visual Studio 2017 Enterprise versão 15.5 ou superior. 
+Além disso, o depurador de instantâneo só está disponível para o Visual Studio 2017 Enterprise versão 15.5 ou superior e planos de serviço de aplicativo básico ou superior. 
 
 ## <a name="start-the-snapshot-debugger"></a>Iniciar o depurador do instantâneo
 
