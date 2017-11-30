@@ -50,6 +50,7 @@
 ### [Managed Extensibility Framework no editor](managed-extensibility-framework-in-the-editor.md)
 ### [Serviço de linguagem e pontos de extensão do editor](language-service-and-editor-extension-points.md)
 ### [Importações do editor](editor-imports.md)
+### [Fornecendo suporte para EditorConfig](supporting-editorconfig.md)
 ### [Passo a passo: Vincular um tipo de conteúdo a uma extensão de nome de arquivo](walkthrough-linking-a-content-type-to-a-file-name-extension.md)
 ### [Passo a passo: Criar um glifo de margem](walkthrough-creating-a-margin-glyph.md)
 ### [Passo a passo: Personalizar a exibição de texto](walkthrough-customizing-the-text-view.md)
