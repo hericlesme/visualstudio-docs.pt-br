@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7ad92e708666baf1ab0429c041ca9b7d2e0f95
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Instantâneos de modo de exibição usando o IntelliTrace etapa-back
 Etapa-back do IntelliTrace automaticamente tira um instantâneo do seu aplicativo em cada ponto de interrupção e o depurador evento da etapa. Os instantâneos gravados permitem que você volte para os pontos de interrupção anteriores ou etapas e exibir o estado do aplicativo como ele era no passado. IntelliTrace back etapa pode economizar tempo quando você deseja ver o estado anterior do aplicativo, mas não deseja reiniciar a depuração ou recriar o estado do aplicativo desejado.
@@ -38,7 +38,7 @@ Por motivos de desempenho, instantâneos não são criados quando você entra mu
 
 ## <a name="navigate-and-view-snapshots"></a>Navegar e exibir instantâneos
 
-Você pode navegar entre eventos usando o **com versões anteriores do etapa** e **Avançar** botões na barra de ferramentas Depurar. Esses botões navegar os eventos que aparecem no **eventos** guia o **janela ferramentas de diagnóstico**. Passo a passo para trás ou para frente a um evento automaticamente ativa a depuração histórica no evento selecionado.
+Você pode navegar entre eventos usando o **etapa com versões anteriores (Alt + [)** e **Avançar uma etapa (Alt +])** botões na barra de ferramentas Depurar. Esses botões navegar os eventos que aparecem no **eventos** guia o **janela ferramentas de diagnóstico**. Passo a passo para trás ou para frente a um evento automaticamente ativa a depuração histórica no evento selecionado.
 
 ![Etapa para trás e encaminhar botões](../debugger/media/intellitrace-step-back-icons-description.png "botões etapa com versões anteriores e Avançar")
 

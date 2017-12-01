@@ -11,18 +11,19 @@ ms.assetid: b3c8cfc4-7c1f-4606-970e-3f7651604bab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d2972cfe2ea4481ab8f5eab6284277615d1d64a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f7193722e7ec1bee7c63e2495ed2d07155cc663b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="generate-an-override-in-c"></a>Gerar uma substituição em c# #
-**O que:** permite gerar imediatamente o código para um qualquer método que pode ser substituído de uma classe base. 
 
-**Quando:** você deseja substituir um método de classe base e gerar a assinatura automaticamente.  
+**O que:** permite gerar imediatamente o código para qualquer método que pode ser substituído de uma classe base.
 
-**Motivo:** você poderia escrever a assinatura do método, no entanto, esse recurso irá gerar automaticamente a assinatura. 
+**Quando:** você deseja substituir um método de classe base e gerar a assinatura automaticamente.
+
+**Motivo:** você poderia escrever a assinatura do método, no entanto, esse recurso irá gerar automaticamente a assinatura.
 
 **Como:**
 
@@ -34,11 +35,12 @@ ms.lasthandoff: 10/31/2017
 
    >[!TIP]
    >* Use o ícone de propriedade ![Ícone de propriedade](media/override_property.png) para mostrar ou ocultar propriedades na lista.
-   >* Use o ícone de método ![Ícone de propriedade](media/override_method.png) para mostrar ou ocultar métodos na lista.
+   >* Use o ícone de método ![Ícone de método](media/override_method.png) para mostrar ou ocultar métodos na lista.
 
 1. A propriedade ou método selecionado será adicionada à classe como uma substituição, pronta para ser implementada.
 
    ![Substituir os resultados](media/override_result.png)
 
-## <a name="see-also"></a>Consulte também  
-[Geração de código (C#)](../code-generation-csharp.md)  
+## <a name="see-also"></a>Consulte também
+
+[Geração de código (C#)](../code-generation-csharp.md)
