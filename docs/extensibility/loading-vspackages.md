@@ -15,11 +15,11 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94db8d3bb95e254a3fa528a424048162916fce99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 29022d14311e71b7ee33f5339f8e450c47d1ce5c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loading-vspackages"></a>Carregando VSPackages
 VSPackages só são carregados no Visual Studio quando sua funcionalidade é necessária. Por exemplo, um VSPackage é carregado quando o Visual Studio usa uma fábrica de projeto ou um serviço que implementa o VSPackage. Esse recurso é chamado de carregamento atrasado, que é usado sempre que possível melhorar o desempenho.  
@@ -72,61 +72,7 @@ VSPackages só são carregados no Visual Studio quando sua funcionalidade é nec
   
      Quando o VSPackage é inicializado, ele forçará `PackageToBeLoaded` para carregar.  
   
-     Carregamento de força não deve ser usado para comunicação de VSPackage. Use [usando e fornecer serviços](../extensibility/using-and-providing-services.md) em vez disso.  
-  
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Usando um atributo personalizado para registrar um VSPackage  
- Em certos casos, talvez seja necessário criar um novo atributo de registro para a sua extensão. Você pode usar atributos de registro para adicionar novas chaves de registro ou para adicionar novos valores para as chaves existentes. O novo atributo deve derivar de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, e deve substituir o <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> e <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> métodos.  
-  
-## <a name="creating-a-registry-key"></a>Criar uma chave do registro  
- No código a seguir, o atributo personalizado cria um **personalizado** subchave sob a chave para o VSPackage que está sendo registrado.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + @"}\Custom");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-    }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveKey(@"Packages\" + context.ComponentType.GUID + @"}\Custom");  
-}  
-  
-```  
-  
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Criando um novo valor em uma chave do registro existente  
- Você pode adicionar valores personalizados para uma chave existente. O código a seguir mostra como adicionar um novo valor a uma chave de registro VSPackage.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + "}");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-                }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveValue(@"Packages\" + context.ComponentType.GUID, "NewCustom");  
-}  
-```  
+     Carregamento de força não deve ser usado para comunicação de VSPackage. Use [usando e fornecer serviços](../extensibility/using-and-providing-services.md) em vez disso.
   
 ## <a name="see-also"></a>Consulte também  
  [VSPackages](../extensibility/internals/vspackages.md)
