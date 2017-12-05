@@ -1,5 +1,5 @@
 ---
-title: "Depuração com Xamarin"
+title: Depurando com o Xamarin | Microsoft Docs
 description: "A depuração é uma parte comum e necessária da programação. Como um IDE consolidado, o Visual Studio para Mac contém um pacote completo de recursos para facilitar a depuração. Desde depuração com segurança até a visualização de dados, este artigo explicará como usar todo o potencial de depuração no Visual Studio para Mac."
 author: asb3993
 ms.author: amburns
@@ -7,15 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
+ms.openlocfilehash: 6d85c318b60e065be86d242bf3199b3716c59ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: d416c0967daa3354e09660e3b618e0cc6f3b49f7
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
-
 # <a name="debugging-with-xamarin"></a>Depuração com Xamarin
 
 
@@ -103,4 +100,3 @@ Como esse recurso consome mais memória durante a depuração, ele fica desligad
 Para habilitar esse recurso, navegue para **Visual Studio para Mac > Preferências > Depurador** e verifique se a opção “**Depurar somente o código do projeto, não intervir no código da estrutura.**” está **desmarcada**, como ilustrado abaixo:
 
  ![Opção Não intervir no código da estrutura](media/debugging-image8.png)
-

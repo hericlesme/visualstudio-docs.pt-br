@@ -1,11 +1,10 @@
 ---
-title: "Opções do Python no Visual Studio | Microsoft Docs\""
+title: "Opções do Python no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -14,19 +13,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
+- VS.ToolsOptionsPages.Python_Tools.Diagnostics
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 24293c3362249f2afcbcbb4b0266a478eaa1c9ab
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a71d076e85e1e7ae070014e83186c0011ca9e58f
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
 Para exibir as opções do Python, use o comando de menu **Ferramentas > Opções**, verifique se **Mostrar todas as configurações** está selecionado e navegue até **Ferramentas do Python**:
@@ -39,6 +37,7 @@ As opções específicas são descritas nas seguintes seções:
 
 - [Opções gerais](#general-options)
 - [Opções de depuração](#debugging-options)
+- [Opções de diagnóstico](#diagnostics-options)
 - [Opções da Janela Interativa](#interactive-windows-options)
 - [Opções avançadas de editor de Python](#advanced-python-editor-options)
 
@@ -70,6 +69,17 @@ As opções específicas são descritas nas seguintes seções:
 | Habilitar a depuração da biblioteca padrão do Python | Off | Torna possível intervir no código-fonte da biblioteca padrão durante a depuração, mas aumenta o tempo necessário para iniciar o depurador.|
 
 ![Caixa de diálogo de opções do Python, guia Depuração](media/options-debugging.png)
+
+
+## <a name="diagnostics-options"></a>Opções de diagnóstico
+
+| Opção | Padrão | Descrição |
+| --- | --- | --- |
+| Inclui logs de análise | On | Inclui logs detalhados relacionados à análise de ambientes do Python instalados ao salvar o diagnóstico em um arquivo ou copiá-los na área de transferência usando os botões. Essa opção pode aumentar significativamente o tamanho do arquivo gerado, mas costuma ser necessária para diagnosticar problemas do IntelliSense. |
+| Salvar o diagnóstico no arquivo (botão) | N/D | Solicita um nome de arquivo e salva o log em um arquivo de texto. |
+| Copiar diagnóstico na área de transferência (botão) | N/D | Coloca a totalidade do log na área de transferência; essa operação pode levar algum tempo, dependendo do tamanho do log. |
+
+![Caixa de diálogo de opções do Python, guia Diagnóstico](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Opções da Janela Interativa
 

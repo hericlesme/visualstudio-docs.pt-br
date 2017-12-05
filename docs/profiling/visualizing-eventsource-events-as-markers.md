@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: fb5a4c0a8b1f8e9e0c9efedeb28386d2f9301205
-
+ms.openlocfilehash: f282d74f59970b3a0366d4576b0c88cae746a5f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizando eventos EventSource como marcadores
 A Visualização Simultânea pode exibir eventos do EventSource como marcadores e você pode controlar como os marcadores são exibidos. Para exibir os marcadores do EventSource, registre o GUID do provedor ETW usando a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). A Visualização Simultânea tem convenções padrão para representar eventos do EventSource como [Marcadores de Sinalizador](../profiling/flag-markers.md), [Marcadores de Período](../profiling/span-markers.md) e [Marcadores de Mensagem](../profiling/message-markers.md). Você pode personalizar como os eventos EventSource são exibidos, adicionando campos personalizados aos eventos. Para obter mais informações sobre marcadores, consulte [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md). Para obter mais informações sobre eventos do EventSource, consulte <xref:System.Diagnostics.Tracing>.  
@@ -106,15 +91,10 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
  Use o campo `cvTextW`, uma cadeia de caracteres, para controlar a descrição que a Visualização Simultânea dá a um evento do EventSource.  
   
 ### <a name="spanid"></a>SpanID  
- Use o campo cvSpanId, int, para fazer a correspondência de pares de eventos. O valor para cada par de eventos de iniciar/parar que representa um intervalo deve ser exclusivo. Normalmente, para código simultâneo, ele requer o uso dos primitivos de sincronização como <xref:System.Threading.Interlocked.Exchange%2A> para garantir que a chave (o valor que é usado para CvSpanID) esteja correto.  
+ Use o campo cvSpanId, int, para fazer a correspondência de pares de eventos. O valor para cada par de eventos de iniciar/parar que representa um intervalo deve ser exclusivo. Normalmente, para código simultâneo, ele requer o uso dos primitivos de sincronização, como <xref:System.Threading.Interlocked.Exchange%2A>, para garantir que a chave (o valor que é usado para CvSpanID) esteja correto.  
   
 > [!NOTE]
 >  O uso de SpanID para aninhar intervalos, permitir que eles parcialmente sobreponham o mesmo thread ou permitir que eles comecem em um thread e terminem em outro não tem suporte.  
   
 ## <a name="see-also"></a>Consulte também  
  [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

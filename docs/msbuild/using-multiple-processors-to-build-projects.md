@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2d8309ead037097b8205245feabdb67c68d0d6b2
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8f29ea38ab6f30c9e2d5f014c50d01f14aece947
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Usando vários processadores para compilar projetos
 MSBuild pode tirar proveito dos sistemas com vários processadores ou vários núcleos processadores. Um processo de compilação separado é criado para cada processador disponível. Por exemplo, se o sistema possui quatro processadores, então quatro processos de compilação são criados. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode processar essas compilações simultaneamente e, portanto, em geral o tempo de compilação é reduzido. No entanto, a construção em paralelo apresenta algumas alterações em como os processos de compilação ocorrem. Este tópico aborda essas alterações.  
@@ -46,7 +31,7 @@ MSBuild pode tirar proveito dos sistemas com vários processadores ou vários n�
  Ciclo de detecção funciona da mesma maneira que no [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, exceto que agora [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode relatar a detecção de ciclo em um momento diferente ou na compilação.  
   
 ## <a name="errors-and-exceptions-during-parallel-builds"></a>Erros e Exceções Durante Compilações Paralelas  
- Em compilações paralelas, erros e exceções podem ocorrer em momentos diferentes que fazem em uma compilação não paralelos e quando um projeto não será compilado, continuam as compilações do projeto. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] não irá parar qualquer compilação do projeto que está criando em paralelo com aqueles que falharam. Outros projetos continuam a ser criados até que tenham êxito ou falha. No entanto, se <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> tiver sido habilitado, nenhuma compilação será interrompida, mesmo se ocorrer um erro.  
+ Em compilações paralelas, erros e exceções podem ocorrer em momentos diferentes que fazem em uma compilação não paralelos e quando um projeto não será compilado, continuam as compilações do projeto. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] não irá parar qualquer compilação do projeto que está criando em paralelo com aqueles que falharam. Outros projetos continuam a ser criados até que tenham êxito ou falha. No entanto, se <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> foi habilitado, então nenhum build será interrompido, mesmo que ocorra um erro.  
   
 ## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Arquivos de Projeto do Visual C++ (.vcproj) e de Solução (.sln)  
  Ambos os arquivos de projetos [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] (.vcproj) e de solução (.sln) que podem ser passados para a [Tarefa MSBuild](../msbuild/msbuild-task.md). Para projetos [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], VCWrapperProject é chamado e então o projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interno é criado. Para [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] soluções, um SolutionWrapperProject é criado e, em seguida, interno [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projeto é criado. Em ambos os casos, o projeto resultante será tratado o mesmo que qualquer outro projeto do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  

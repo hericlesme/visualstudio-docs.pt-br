@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,30 +27,15 @@ helpviewer_keywords:
 - class view
 - object browser
 ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: cf7325de6a4d5ee4cac1b48a7da33202034fde0c
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: f85bcde09d6748aa781ceefd85ccbf138245aca6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="viewing-the-structure-of-code"></a>Exibindo a estrutura do código
 É possível examinar objetos e membros em projetos do Visual Studio e objetos e membros em componentes do .NET Framework, componentes COM, DLLs (bibliotecas de vínculo dinâmico) e TLBs (bibliotecas de tipos).  
@@ -127,11 +111,11 @@ ms.lasthandoff: 05/13/2017
 |**Exibir Hierarquia de Chamada**|Exibe o método selecionado na janela **Hierarquia de Chamada**.|  
   
 ##  <a name="BKMK_CallHierarchy"></a> Hierarquia de Chamada (Visual Basic, C#, C++)  
- A janela **Hierarquia de Chamada** mostra onde um determinado método (ou propriedade ou construtor) é chamado e lista os métodos que são chamados desse método. É possível exibir vários níveis de gráfico de chamadas, que mostra as relações de chamador/computador chamado entre os métodos em um escopo especificado.  
+ A janela **Hierarquia de Chamada** mostra onde um determinado método (ou propriedade ou construtor) é chamado e lista os métodos que são chamados desse método. É possível exibir vários níveis de grafo de chamadas, que mostra as relações de chamador/computador chamado entre os métodos em um escopo especificado.  
   
  Você pode exibir a janela **Hierarquia de Chamada** selecionando um método (ou propriedade ou construtor) e, em seguida, escolhendo **Exibir Hierarquia de Classe** no menu de atalho. A exibição deve se parecer com a imagem a seguir.  
   
- ![Hierarquia de Chamada com vários nós abertos](../ide/media/multiplenodes.png "MultipleNodes")  
+ ![Hierarquia de chamada com vários nós abertos](../ide/media/multiplenodes.png "MultipleNodes")  
 Janela de Hierarquia de Chamada  
   
  Usando a lista suspensa na barra de ferramentas, é possível especificar o escopo da hierarquia: a solução, o projeto atual ou o documento atual.  
@@ -164,7 +148,7 @@ Janela de Hierarquia de Chamada
   
 -   Um conjunto personalizado de componentes  
   
- Componentes personalizados podem incluir executáveis de código gerenciado, assemblies de biblioteca, bibliotecas de tipos e arquivos .ocx. Não é possível adicionar componentes personalizados C++. Configurações personalizadas são salvas no diretório de aplicativo do usuário do Visual Studio, %APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+ Componentes personalizados podem incluir executáveis de código gerenciado, assemblies de biblioteca, bibliotecas de tipos e arquivos .ocx. Não é possível adicionar componentes personalizados C++. Configurações personalizadas são salvas no diretório de aplicativo do usuário do Visual Studio, %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.  
   
  O painel esquerdo do **Pesquisador de Objetos** mostra contêineres físicos, como componentes COM e do .NET Framework. É possível expandir os nós do contêiner para exibir os namespaces que eles contêm e, em seguida, expandir os namespaces para exibir os tipos que eles contêm. Quando você seleciona um tipo, seus membros (como propriedades e métodos) são listados no painel direito. O painel inferior direito exibe informações detalhadas sobre o item selecionado.  
   

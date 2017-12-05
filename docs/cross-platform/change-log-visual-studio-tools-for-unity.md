@@ -4,39 +4,53 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b7545bb4eaf437223e79bccdb1ad2a082e37bd4a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: a2cfae1be1415a2d770d1467a09f207f73eafd05
-ms.openlocfilehash: 5b872f1d28c132fe2910bed16882ba6fb01e6782
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/16/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Log de alterações (Ferramentas do Visual Studio para Unity)
 Log de alterações de Ferramentas do Visual Studio para Unity.  
+
+## <a name="3402"></a>3.4.0.2
+ Lançada em 19/09/2017
+
+### <a name="new-features"></a>Novos recursos  
+
+-   **Geração do Projeto:**  
+
+    -   Adicionado suporte para unidades de compilação assembly.json.
+
+    -   Cópia de assemblies do Unity para a pasta do projeto interrompida.
+    
+-   **Depurador:**  
+
+    -   Adicionado suporte para definir a próxima instrução com o novo tempo de execução do Unity.
+    
+    -   Adicionado suporte para o tipo Decimal com o novo tempo de execução do Unity.
+    
+    -   Adicionado suporte para conversões implícitas/explícitas.
+    
+### <a name="bug-fixes"></a>Correções de bug  
+  
+-   **Avaliação:**  
+
+    -   Corrigida a criação de matriz com tamanho implícito.
+    
+    -   Corrigidos os itens com locais gerados pelo compilador.
+   
+-   **Geração do Projeto:**  
+   
+    -   Corrigida a referência a Microsoft.CSharp fixa para nível de API 4.6.
 
 ## <a name="3302"></a>3.3.0.2
  Lançado em 15/08/2017
@@ -1021,4 +1035,3 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
   
 ## <a name="1000---initial-release"></a>1.0.0.0 – versão inicial  
  Lançado em 22/08/2012
-

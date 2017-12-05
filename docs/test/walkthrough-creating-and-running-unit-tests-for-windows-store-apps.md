@@ -1,49 +1,32 @@
 ---
-title: 'Passo a passo: Criar e executar testes de unidade para aplicativos da Windows Store | Microsoft Docs'
+title: 'Passo a passo: criando e executando testes de unidade para aplicativos UWP | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
-- unit tests, Windows Store apps
+- unit tests, UWP apps
 - unit tests, running
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
-caps.latest.revision: 21
+caps.latest.revision: "21"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 11ae1d653bc34ccb9c8fd8834d134b7212bc4f9a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 32cab11dd909fc8b60134ebff0d5f37c0b14dcd6
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Explicação passo a passo: Criando e executando testes de unidade de aplicativos da Windows Store
+# <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>Passo a passo: criando e executando testes de unidade para aplicativos UWP
 O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] gerenciados por testes de unidade e inclui modelos de biblioteca de teste de unidade para o Visual C#, Visual Basic e Visual C++.  
   
 > [!TIP]
->  Para saber mais sobre como desenvolver aplicativos do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], consulte [Introdução aos aplicativos da Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
+>  Para saber mais sobre como desenvolver aplicativos do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], consulte [Introdução aos aplicativos UWP](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  O Visual Studio fornece a seguinte funcionalidade de teste de unidade:  
   
@@ -62,13 +45,13 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Criar projetos de teste de unidade  
   
-#### <a name="to-create-a-unit-test-project-for-a-windows-store-app"></a>Para criar um projeto de teste de unidade para um aplicativo da Windows Store  
+#### <a name="to-create-a-unit-test-project-for-a-uwp-app"></a>Para criar um projeto de teste de unidade para um aplicativo UWP  
   
 1.  No menu **Arquivo**, escolha **Novo**.  
   
      A caixa de diálogo Novo Projeto é exibida.  
   
-2.  Em Modelos, escolha a linguagem de programação com a qual você quer criar o teste de unidade e escolha a biblioteca de teste de unidade do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] associada. Por exemplo, escolha **Visual C#**, depois escolha **Windows Store** e escolha **Biblioteca de Teste de Unidade (aplicativos da Windows Store)**.  
+2.  Em Modelos, escolha a linguagem de programação com a qual você quer criar o teste de unidade e escolha a biblioteca de teste de unidade do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] associada. Por exemplo, escolha **Visual C#**, depois escolha **Windows Universal** e, em seguida, escolha **Biblioteca de Teste de Unidade (Universal Windows)**.  
   
     > [!NOTE]
     >  O Visual Studio inclui modelos de biblioteca de teste de unidade para Visual C#, Visual Basic e Visual C++.  
@@ -81,16 +64,16 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
   
 6.  Deixe a opção **Criar diretório para solução** selecionada e escolha o botão **OK**.  
   
-     ![Biblioteca de Testes de Unidade Adaptados](~/test/media/unit_test_win8_1.png "Unit_Test_Win8_1")  
+     ![Biblioteca de Testes de Unidade Adaptados](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")  
   
      O Gerenciador de soluções é preenchido com seu novo projeto de teste de unidade do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] e o editor de códigos exibe o teste de unidade padrão intitulado UnitTest1.  
   
-     ![Novo projeto de teste de unidade adaptado](~/test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")  
+     ![Novo projeto de teste de unidade adaptado](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")  
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a> Editar o manifesto para o projeto de teste de unidade  
  Talvez seja necessário editar o manifesto do projeto de teste de unidade a fim de fornecer os recursos necessários para executar o aplicativo.  
   
-#### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>Para editar o arquivo de manifesto do aplicativo da Windows Store do projeto de teste de unidade  
+#### <a name="to-edit-the-unit-test-projects-uwp-application-manifest-file"></a>Para editar o arquivo de manifesto do aplicativo UWP do projeto de teste de unidade  
   
 1.  No Gerenciador de Soluções, no novo projeto de teste de unidade do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], clique com o botão direito no arquivo de manifesto Package.appxmanifest e escolha **Abrir**.  
   
@@ -105,11 +88,11 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
   
      Para saber mais sobre o Designer de Manifesto, consulte [Configurar um pacote do aplicativo do Windows 8.1 usando o designer de manifesto](http://msdn.microsoft.com/Library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
-     ![Manifesto de teste de unidade](~/test/media/unit_test_win8_.png "Unit_Test_Win8_")  
+     ![Manifesto de teste de unidade](../test/media/unit_test_win8_.png "Unit_Test_Win8_")  
   
 ##  <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> Codificar o Teste de Unidade  
   
-#### <a name="to-code-the-unit-test-for-a-windows-store-app"></a>Para codificar o teste de unidade para um aplicativo da Windows Store  
+#### <a name="to-code-the-unit-test-for-a-uwp-app"></a>Para codificar o teste de unidade para um aplicativo UWP  
   
 1.  No Editor de Código, edite o teste de unidade e adicione as declarações e a lógica necessárias para o teste.  
   
@@ -140,7 +123,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
   
 4.  Escolha **Executar Todos**.  
   
-     ![Gerenciador de Testes de unidade &#45; executar o teste de unidade](~/test/media/unit_test_win8_unittestexplorer_contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
+     ![Gerenciador de Testes de unidade &#45; executar o teste de unidade](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
     >  Selecione um ou mais testes de unidade listados no Gerenciador, clique com botão direito e escolha **Executar Testes Selecionados**.  
@@ -151,12 +134,12 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
   
      O teste de unidade é executado. Após a conclusão, o Gerenciador de Testes exibirá o status do teste, o tempo decorrido e fornecerá um link para a fonte.  
   
-     ![Gerenciador de testes de unidade &#45; teste concluído](~/test/media/unit_test_win8_unittestexplorer_done.png "Unit_Test_Win8_UnitTestExplorer_Done")  
+     ![Gerenciador de testes de unidade &#45; teste concluído](../test/media/unit_test_win8_unittestexplorer_done.png "Unit_Test_Win8_UnitTestExplorer_Done")  
   
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="videos"></a>Vídeos  
- [Canal 9: teste de unidade dos aplicativos da Windows Store criados com XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9: teste de unidade dos aplicativos UWP criados com XAML](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Fóruns  
  [Teste de unidade do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -165,6 +148,5 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
  [Biblioteca MSDN – Criando e executando testes de unidade para o código existente (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
 ## <a name="see-also"></a>Consulte também  
- [Testar aplicativos da Store com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Compilar e testar um aplicativo da Windows Store usando o Team Foundation Build](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
+ [Testando aplicativos UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Compilar e testar um aplicativo UWP usando o Build do Team Foundation](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

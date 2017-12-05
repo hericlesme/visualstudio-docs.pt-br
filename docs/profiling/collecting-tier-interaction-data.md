@@ -4,41 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.property.tierinteraction
+f1_keywords: vs.performance.property.tierinteraction
 helpviewer_keywords:
 - Profiling Tools,ADO.NET profiling
 - tier interaction profiling method
 - Profiling Tools,tier-interaction method
 - ADO.NET performance profiling
 ms.assetid: 47a944c2-3098-497c-8fc7-e1f43d750bbc
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 41dc205ea44c28782ee82fe025565850e27e44b4
-
+ms.openlocfilehash: ae321a8d09bb52b6ef835ab6469fd161013d4eeb
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="collecting-tier-interaction-data"></a>Coletando dados de interação entre camadas
 A criação de perfil de interação de camadas fornece informações adicionais sobre os tempos de execução de funções de aplicativos de várias camadas que se comunicam com os bancos de dados por meio de serviços do ADO.NET. Os dados são coletados apenas para chamadas de função síncronas.  
@@ -49,7 +33,7 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
  **Windows 8 e Windows Server 2012**  
   
- Para coletar dados de interação de camada em aplicativos da área de trabalho do Windows 8 e os aplicativos do Windows Server 2012, é necessário usar o método de instrumentação. Não é possível coletar dados de interação de camada para aplicativos da Windows Store. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). É possível incluir dados de interação de camada em todos os métodos de criação de perfil em outra versão com suporte do Windows.  
+ Para coletar dados de interação de camada em aplicativos da área de trabalho do Windows 8 e os aplicativos do Windows Server 2012, é necessário usar o método de instrumentação. Não é possível coletar dados de interação de camada de aplicativos UWP. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md). É possível incluir dados de interação de camada em todos os métodos de criação de perfil em outra versão com suporte do Windows.  
   
  **Assistente de desempenho**  
   
@@ -65,8 +49,3 @@ A criação de perfil de interação de camadas fornece informações adicionais
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Interações de Camada](../profiling/tier-interactions-view.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

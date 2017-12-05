@@ -1,33 +1,31 @@
 ---
 title: Modelo de projeto Web para o Python no Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 401e7725-8be5-4e67-862c-bf0690a529e3
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2a21c43e039d9a1109f1870516e9b3d4ea3c644b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: e46dd1012d220015b1840c0c50332dbe45e43a1e
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-web-project-templates"></a>Modelos de projeto Web do Python
 
-O Python no Visual Studio dá suporte ao desenvolvimento de projetos da Web em estruturas como Bottle, Django e Flask por meio de modelos de projeto e um inicializador de depuração que pode ser configurado para manipular várias estruturas. No entanto, o Visual Studio não inclui as estruturas em si, que devem ser instaladas separadamente clicando com o botão direito do mouse no projeto e selecionando **Python > Instalar/atualizar estrutura...**.
+O Python no Visual Studio é compatível com o desenvolvimento de projetos da Web nas estruturas Bottle, Flask e Django por meio de modelos de projeto e um inicializador de depuração que pode ser configurado para manipular várias estruturas. Você também pode usar o modelo genérico "Projeto Web" para outras estruturas, como Pyramid.
 
-Cada modelo (acessado por meio de **Arquivo > Novo > Projeto...**) inicia um servidor Web com uma porta local selecionada aleatoriamente, abre o navegador padrão durante a depuração e permite a publicação direta no [Microsoft Azure](http://www.azure.com). São fornecidos modelos para o Bottle, Flask e Django, e é possível usar o modelo de “Projeto Web” genérico para outras estruturas, como o Pyramid.
+O Visual Studio não inclui as estruturas. Você deve instalar as estruturas separadamente, clicando com o botão direito do mouse no projeto e selecionando **Python > Instalar/atualizar estrutura...**.
+
+Quando executado, um projeto criado com base em um modelo (acessado por meio de **Arquivo > Novo > Projeto...**) inicia um servidor Web com uma porta local selecionada aleatoriamente, abre o navegador padrão durante a depuração e permite a publicação direta no Microsoft Azure.
 
 ![Novos modelos de projeto Web](media/template-web-new-project.png)
 
@@ -41,13 +39,9 @@ Ao implantar o Serviço de Aplicativo do Microsoft Azure, selecione uma versão 
 
 O Serviço de Nuvem do Microsoft Azure, *dá* suporte ao arquivo `requirements.txt`. [Projetos do Serviço de Nuvem do Azure](template-azure-cloud-service.md) para obter detalhes.
 
-Para obter uma introdução aos projetos Web do Python, assista a [Getting Started with PTVS, Part 6: Web sites](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introdução à PTVS, parte 6: Sites) (youtube.com, 3min10s).
-
-> [!VIDEO https://www.youtube.com/embed/FJx5mutt1uk]
-
 ## <a name="debugging"></a>Depuração
 
-Quando um projeto Web for iniciado para depuração, o Visual Studio iniciará o servidor Web localmente e abrirá o navegador padrão nesse endereço e nessa porta. Para especificar opções adicionais, clique com o botão direito do mouse no projeto, selecione **Propriedades**e selecione a guia **Inicializador da Web**:
+Quando um projeto Web for iniciado para depuração, o Visual Studio iniciará o servidor Web localmente e abrirá o navegador padrão nesse endereço e nessa porta. Para especificar opções adicionais, clique com o botão direito do mouse no projeto, selecione **Propriedades** e selecione a guia **Inicializador da Web**:
 
   ![Propriedades do inicializador da Web para o modelo da Web genérico](media/template-web-launcher-properties.png)
 
@@ -178,4 +172,3 @@ Se você adicionar o modelo `web.config` de depuração ao projeto e pretender u
 O comando **Converter em Projeto do Serviço de Nuvem do Microsoft Azure** (imagem abaixo) adiciona um projeto do Serviço de Nuvem à solução. Esse projeto inclui as configurações de implantação e a configuração das máquinas virtuais e dos serviços a serem usadas. Use o comando **Publicar** no projeto de nuvem para implantar no Serviço de Nuvem, o comando **Publicar** no projeto do Python ainda implanta em Sites. Consulte [Projetos do Serviço de Nuvem do Azure](template-azure-cloud-service.md) para obter mais detalhes.
 
 ![Comando Converter em Projeto do Serviço de Nuvem do Microsoft Azure](media/template-web-convert-menu.png)
-

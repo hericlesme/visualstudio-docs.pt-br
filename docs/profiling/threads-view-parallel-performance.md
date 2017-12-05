@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.threadblocking
-helpviewer_keywords:
-- Concurrency Visualizer, Threads View (Parallel Performance)
+f1_keywords: vs.performance.view.threadblocking
+helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1777df83f2c2764e173300f897b18a699a38c197
-
+ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho em paralelo)
 A Exibição Threads é a exibição mais detalhada e com uma grande variedade de recursos da Visualização Simultânea. Ao usar essa exibição, é possível identificar se os threads estão sendo executados ou bloqueados devido à sincronização, E/S ou a algum outro motivo.  
@@ -84,7 +67,7 @@ A Exibição Threads é a exibição mais detalhada e com uma grande variedade d
   
  Esta é uma ilustração da Exibição de Threads:  
   
- ![Exibição de Threads](~/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![Exibição de threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 Modo de Exibição de Threads  
   
  Inicialmente, os threads são classificados na ordem em que são criados, para que o thread do aplicativo principal seja o primeiro. É possível usar a opção de classificação no canto superior esquerdo da exibição para classificar threads por outro critério (por exemplo, pela maioria dos trabalhos de execução executada).  
@@ -166,8 +149,3 @@ Modo de Exibição de Threads
   
 ## <a name="see-also"></a>Consulte também  
  [Visualização Simultânea](../profiling/concurrency-visualizer.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

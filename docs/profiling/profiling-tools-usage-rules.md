@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3c425fee22b9df0a72aa8b5f1bbb2ea769fe76c2
-
+ms.openlocfilehash: f2660586ce2757f2aa1b58c6c7b0e4dc36a700bc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="profiling-tools-usage-rules"></a>Regras de uso das ferramentas de criação de perfil
 As regras de desempenho na categoria de Uso de Ferramentas de Criação de Perfil fornecem diretrizes para usar o criador de perfil para coletar dados de forma mais eficiente.  
@@ -45,8 +30,3 @@ As regras de desempenho na categoria de Uso de Ferramentas de Criação de Perfi
 |[DA0026: processamento de tempo de CPU do kernel excessivo](../profiling/da0026-excessive-kernel-cpu-time-processing.md)|Uma parte significativa de tempo na criação de perfil ocorreu no modo de núcleo de kernel de processador. Considere a amostragem por meio de chamadas do sistema como a métrica em vez de usar o tempo como a métrica.|  
 |[DA0029: versão do CLR sem suporte](../profiling/da0029-unsupported-clr-version.md)|O binário analisado está usando uma versão de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que não tem suporte no criador de perfil. Os relatórios do criador de perfil não podem resolver nomes de símbolos.|  
 |[DA0030: coletar medições de interação de camada para projetos de banco de dados](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md)|Foi coletado um número significativo de chamadas para métodos no namespace <xref:System.Data?displayProperty=fullName>. Para incluir dados sobre as chamadas de banco de dados, considere coletar dados de interação entre camadas em execução de análise.|
-
-
-<!--HONumber=Feb17_HO4-->
-
-

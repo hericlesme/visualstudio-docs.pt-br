@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 18627c9f14e82bef85ff433eea14d99653f78e68
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos trechos de código
 Os Trechos de Código IntelliSense são partes de código pré-criadas que estão prontas para serem inseridas no seu aplicativo com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Você pode aumentar a produtividade fornecendo trechos de código que reduzem a quantidade de tempo gasto digitando código repetitivo ou procurando exemplos. É possível usar o esquema XML do Trecho de Código IntelliSense para criar seus próprios trechos de código e adicioná-los aos trechos de código que o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] já contém.  
@@ -58,10 +42,7 @@ Os Trechos de Código IntelliSense são partes de código pré-criadas que estã
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header)|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference)||  
   
 ##  <a name="assembly"></a> Elemento Assembly  
- Especifica o nome do assembly referenciado pelo trecho de código.  
-  
-> [!NOTE]
->  O elemento `Assembly` tem suporte apenas de trechos de código Visual Basic.  
+ Especifica o nome do assembly referenciado pelo trecho de código.
   
  O valor de texto do elemento **Assembly** é o nome de texto amigável do assembly, como `System.dll`, ou seu nome forte, como `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -83,8 +64,7 @@ Os Trechos de Código IntelliSense são partes de código pré-criadas que estã
 ```xml  
 <Author>  
    Code Snippet Author  
-</Author>  
-  
+</Author>    
 ```  
   
 |Elementos pai|Descrição|  
@@ -93,36 +73,39 @@ Os Trechos de Código IntelliSense são partes de código pré-criadas que estã
   
  Um valor de texto é obrigatório. Esse texto especifica o autor do trecho de código.  
   
-##  <a name="code"></a> Elemento de Código  
- Fornece um contêiner para blocos de códigos curtos.  
+## <a name="a-namecode--code-element"></a>Elemento de código <a name="code" />  
+Fornece um contêiner para blocos de códigos curtos.  
   
- Duas palavras reservadas estão disponíveis para uso no texto do elemento `Code`: `$end$` e `$selected$`. `$end$` marca o local para colocar o cursor depois que o trecho de código é inserido. `$selected$` representa o texto selecionado no documento que deve ser inserido no trecho quando ele é invocado. Por exemplo, dado um trecho que inclui:  
+### <a name="keywords"></a>Palavras-chave
+Duas palavras reservadas estão disponíveis para uso no texto do elemento `Code`: `$end$` e `$selected$`. `$end$` marca o local para colocar o cursor depois que o trecho de código é inserido. `$selected$` representa o texto selecionado no documento que deve ser inserido no trecho quando ele é invocado. Por exemplo, dado um trecho que inclui:  
   
-```xml  
+```  
 $selected$ is a great color.  
 ```  
   
- Se a palavra "Blue" for selecionada, quando o usuário invoca o modelo, o resultado é:  
+Se a palavra "Blue" for selecionada, quando o usuário invoca o modelo, o resultado é:  
   
-```xml  
+```  
 Blue is a great color.  
 ```  
   
- Você não pode usar o `$end$` ou `$selected$` mais de uma vez em um trecho de código. Nesse caso, apenas a segunda instância é reconhecida. Dado um trecho que inclui:  
+Você não pode usar o `$end$` ou `$selected$` mais de uma vez em um trecho de código. Nesse caso, apenas a segunda instância é reconhecida. Dado um trecho que inclui:  
   
 ```  
 $selected$ is a great color. I love $selected$.  
 ```  
   
- Se a palavra "Blue" for selecionada, o resultado é:  
+Se a palavra "Blue" for selecionada, o resultado é:  
   
 ```  
-is a great color. I love Blue.  
+ is a great color. I love Blue.  
 ```  
   
- O espaço inicial aparece porque há um espaço entre `$selected$` e `is`.  
+O espaço inicial aparece porque há um espaço entre `$selected$` e `is`.  
   
- Todas as outras palavras-chave `$` são dinamicamente definidas nas marcas `<Literal>` e `<Object>`.  
+Todas as outras palavras-chave `$` são dinamicamente definidas nas marcas `<Literal>` e `<Object>`.  
+
+A seguir está a estrutura do Elemento de código:
   
 ```xml  
 <Code Language="Language"  
@@ -130,37 +113,41 @@ is a great color. I love Blue.
     Delimiter="Delimiter">  
     Code to insert  
 </Code>  
-```  
-  
-|Atributo|Descrição|  
-|---------------|-----------------|  
-|`Delimiter`|Atributo opcional. Especifica o delimitador usado para descrever os literais e os objetos no código. Por padrão, o delimitador é `$`.|  
-|`Kind`|Atributo opcional. Especifica o tipo de código que o trecho contém e o local em que um trecho de código deve ser inserido para compilação. Os valores disponíveis são `method body`, `method decl`, `type decl`, `file` e `any`.|  
-|`Language`|Atributo obrigatório. Especifica a linguagem do trecho de código.|  
-  
-|Valor do atributo do tipo|Descrição|  
-|--------------------------|-----------------|  
-|`method body`|Especifica que o trecho de código é um corpo de método e, portanto, deve ser inserido em uma declaração de método.|  
-|`method decl`|Especifica que o trecho de código é um método e, portanto, deve ser inserido em uma classe ou um módulo.|  
-|`type decl`|Especifica que o trecho de código é um tipo e, portanto, deve ser inserido em uma classe, um módulo ou um namespace.|  
-|`file`|Especifica que o trecho é um arquivo de código completo. Esses trechos de código podem ser inseridos sozinhos em um arquivo de código ou dentro de um namespace.|  
-|`any`|Especifica que o trecho pode ser inserido em qualquer lugar. Essa marca é usada para trechos de código que não dependem de contexto, como os comentários.|  
-  
-|Valor do atributo da linguagem|Descrição|  
-|------------------------------|-----------------|  
-|`VB`|Identifica um trecho de código Visual Basic.|  
-|`CSharp`|Identifica um trecho de código C#.|  
-|`CPP`|Identifica um trecho de código C++.|  
-|`XML`|Identifica um trecho de código XML.|  
-|`JavaScript`|Identifica um trecho de código JavaScript.|  
-|`SQL`|Identifica um trecho de código SQL.|  
-|`HTML`|Identifica um trecho de código HTML.|  
-  
+```
+
+Um valor de texto é obrigatório. Esse texto especifica o código, juntamente como os literais e objetos, que você pode usar quando esse trecho de código é inserido em um arquivo de código.  
+
+### <a name="attributes"></a>Atributos
+Há três atributos disponíveis para o Elemento de código:
+
+- **Language** - Atributo _requerido_ que especifica a linguagem do trecho de código. O valor pode ser um dos seguintes:
+
+   |Valor|Descrição|  
+   |-----|-----------|  
+   |`VB`|Identifica um trecho de código Visual Basic.|  
+   |`CSharp`|Identifica um trecho de código C#.|  
+   |`CPP`|Identifica um trecho de código C++.|  
+   |`XML`|Identifica um trecho de código XML.|  
+   |`JavaScript`|Identifica um trecho de código JavaScript.|  
+   |`SQL`|Identifica um trecho de código SQL.|  
+   |`HTML`|Identifica um trecho de código HTML.|
+ 
+- **Kind** - Atributo _opcional_ que especifica o tipo de código que o trecho de código contém e o local em que um trecho de código deve ser inserido para ser compilado. O valor pode ser um dos seguintes:
+
+   |Valor|Descrição|  
+   |-----|-----------|  
+   |`method body`|Especifica que o trecho de código é um corpo de método e, portanto, deve ser inserido em uma declaração de método.|  
+   |`method decl`|Especifica que o trecho de código é um método e, portanto, deve ser inserido em uma classe ou um módulo.|  
+   |`type decl`|Especifica que o trecho de código é um tipo e, portanto, deve ser inserido em uma classe, um módulo ou um namespace.|  
+   |`file`|Especifica que o trecho é um arquivo de código completo. Esses trechos de código podem ser inseridos sozinhos em um arquivo de código ou dentro de um namespace.|  
+   |`any`|Especifica que o trecho pode ser inserido em qualquer lugar. Essa marca é usada para trechos de código que não dependem de contexto, como os comentários.|
+
+- **Delimiter** - Atributo _Opcional_ que especifica o delimitador usado para descrever os literais e os objetos no código. Por padrão, o delimitador é `$`.
+
+### <a name="parent-element"></a>Elemento pai
 |Elementos pai|Descrição|  
 |--------------------|-----------------|  
-|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contém as referências, as importações, as declarações e o código do trecho de código.|  
-  
- Um valor de texto é obrigatório. Esse texto especifica o código, juntamente como os literais e objetos, que você pode usar quando esse trecho de código é inserido em um projeto.  
+|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contém as referências, as importações, as declarações e o código do trecho de código.|
   
 ##  <a name="codesnippet"></a> Elemento CodeSnippet  
  Permite que você especifique um título e vários Trechos de Código IntelliSense, que podem ser inseridos em arquivos de código do Visual Studio.  
@@ -170,7 +157,6 @@ is a great color. I love Blue.
     <Header>... </Header>  
     <Snippet>... </Snippet>  
 </CodeSnippet>  
-  
 ```  
   
 |Atributo|Descrição|  
@@ -193,7 +179,6 @@ is a great color. I love Blue.
 <CodeSnippets>  
     <CodeSnippet>... </CodeSnippet>  
 </CodeSnippets>  
-  
 ```  
   
 |Elementos filho|Descrição|  
@@ -208,7 +193,6 @@ is a great color. I love Blue.
     <Literal>... </Literal>  
     <Object>... </Object>  
 </Declarations>  
-  
 ```  
   
 |Elementos filho|Descrição|  
@@ -227,7 +211,6 @@ is a great color. I love Blue.
 <Default>  
     Default value  
 </Default>  
-  
 ```  
   
 |Elementos pai|Descrição|  
@@ -284,7 +267,6 @@ is a great color. I love Blue.
     <Keywords>... </Keywords>  
     <Shortcut>... </Shortcut>  
 </Header>  
-  
 ```  
   
 |Elementos filho|Descrição|  
@@ -311,7 +293,6 @@ is a great color. I love Blue.
 <HelpUrl>  
     www.microsoft.com  
 </HelpUrl>  
-  
 ```  
   
 |Elementos pai|Descrição|  
@@ -327,7 +308,6 @@ is a great color. I love Blue.
 <ID>  
     Unique Identifier  
 </ID>  
-  
 ```  
   
 |Elementos pai|Descrição|  
@@ -347,7 +327,6 @@ is a great color. I love Blue.
 <Import>  
     <Namespace>... </Namespace>  
 </Import>  
-  
 ```  
   
 |Elementos filho|Descrição|  
@@ -488,10 +467,7 @@ is a great color. I love Blue.
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Contém os literais e objetos de um trecho de código que você pode editar.|  
   
 ##  <a name="reference"></a> Elemento Reference  
- Especifica informações sobre as referências de assembly exigidas pelo trecho de código.  
-  
-> [!NOTE]
->  O elemento `Reference` tem suporte apenas em projetos do Visual Basic.  
+ Especifica informações sobre as referências de assembly exigidas pelo trecho de código. 
   
 ```xml  
 <Reference>  
@@ -511,9 +487,6 @@ is a great color. I love Blue.
   
 ##  <a name="references"></a> Elemento References  
  Agrupa elementos `Reference` individuais.  
-  
-> [!NOTE]
->  O elemento `References` tem suporte apenas em projetos do Visual Basic.  
   
 ```xml  
 <References>  
@@ -556,8 +529,7 @@ is a great color. I love Blue.
     <Imports>... </Imports>  
     <Declarations>... </Declarations>  
     <Code>... </Code>  
-</Snippet>  
-  
+</Snippet>    
 ```  
   
 |Elementos filho|Descrição|  

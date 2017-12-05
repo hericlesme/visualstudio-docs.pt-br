@@ -1,19 +1,17 @@
 ---
-title: "Compilação e Criação no Visual Studio para Mac"
+title: Compilando e criando no Visual Studio para Mac | Microsoft Docs
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
+ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: ea98f80d037a03912cf3d8212588ebb7520b4bbb
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilação e criação no Visual Studio para Mac
 
 O Visual Studio para Mac pode ser usado para compilar aplicativos e criar assemblies durante o desenvolvimento do seu projeto. É importante compilar e criar seu código antecipadamente e com frequência para poder identificar tipos incompatíveis e outros erros do tempo de compilação.
@@ -46,9 +44,9 @@ O Visual Studio para Mac também pode ser usado para fazer o seguinte:
 
 É possível usar o Microsoft Build Engine para compilar aplicativos por meio da linha de comando.
 
-Consulte o conteúdo do [MSBuild](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild) para ver mais informações sobre como usar o MSBuild.
+Consulte o conteúdo do [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) para ver mais informações sobre como usar o MSBuild.
 
 ### <a name="using-visual-studio-team-services"></a>Usando o Visual Studio Team Services
 
-* [Compilar seu aplicativo Xamarin](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin)
+* [Compilar seu aplicativo Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [Integração contínua com o Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- build
+helpviewer_keywords: build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: accbe2bded66b0c82f047ec0621f9ac55d466730
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 081bcfd01d8c28959bf0dd4d038e91895e9c3983
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Iniciando um build pelo IDE
-Os sistemas de projeto personalizados devem usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar os builds. Este tópico descreve as razões para isso e o procedimento.  
+Sistemas de projeto personalizado devem usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar os builds. Este tópico descreve as razões para isso e o procedimento.  
   
 ## <a name="parallel-builds-and-threads"></a>Builds paralelas e threads  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite builds paralelas que exigem a mediação de acesso aos recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build das quais o retorno de chamada é fornecido para o gerenciador de build.  
@@ -46,7 +30,7 @@ Os sistemas de projeto personalizados devem usar <xref:Microsoft.VisualStudio.Sh
 ## <a name="using-ivsbuildmanageraccessor"></a>Usando o IVSBuildManagerAccessor  
  O código a seguir descreve um método que um sistema de projeto pode usar para iniciar um build:  
   
-```cs
+```csharp
   
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  

@@ -1,39 +1,25 @@
 ---
-title: "Coletando dados de memória do .NET Framework para aplicativos autônomos usando a linha de comando do criador de perfil | Microsoft Docs"
+title: "Coletar dados de memória do .NET Framework usando a linha de comando do criador de perfil | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b948f69323c1b291333de9f763eb7894e3316a70
-
+ms.openlocfilehash: 2e3418910cb10f427d487fed0c58e766773eb196
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Coletando dados de memória do .NET Framework para aplicativos autônomos usando a linha de comando do criador de perfil
+# <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Coletar dados de memória do .NET Framework usando a linha de comando do criador de perfil
+
 Esta seção descreve os procedimentos e as opções para coletar alocação de memória e dados de tempo de vida do objeto para um aplicativo cliente do .NET (autônomo) usando o método de amostragem da linha de comando.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
@@ -67,8 +53,3 @@ Esta seção descreve os procedimentos e as opções para coletar alocação de 
   
 ## <a name="reference"></a>Referência  
  [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

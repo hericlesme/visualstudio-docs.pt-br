@@ -1,28 +1,24 @@
 ---
 title: "Editando o código do Python no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/10/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 03effe56-d6f6-461d-9005-e43c15bf537c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 134442008dccbeac12dd328ed3b01c2b3a1a2e8c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: d16b8fcae5b7d1a14c8f6068dfd7103115cba291
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editing-python-code"></a>Editando o código do Python
 
 Os desenvolvedores passam muito tempo no editor de código, portanto o [Suporte a Python no Visual Studio](installation.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação. 
@@ -35,11 +31,11 @@ Neste tópico:
 
 Para obter uma documentação geral sobre como editar o código no Visual Studio, consulte [Escrevendo código no editor de código e de texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte também [Estrutura de tópicos no Visual Studio](../ide/outlining.md), que ajuda você a manter o foco em seções específicas do código. O suporte do Python inclui o uso do Pesquisador de Objetos do Visual Studio (**Exibir > Outras Janelas > Pesquisador de Objetos** ou Ctrl+W, J) para inspecionar as classes definidas em cada módulo e as funções definidas nessas classes. 
 
-O editor também é integrado à janela interativa no Visual Studio, tornando mais fácil trocar o código entre as duas. Consulte [Introdução – Usando uma janela interativa REP]) (getting-started.md#using-the-interactive-repl-window) e [Usando a janela interativa – Enviar código para o comando interativo](interactive-repl.md#send-code-to-interactive-command) para obter detalhes.
+O editor também é integrado à janela interativa no Visual Studio, tornando mais fácil trocar o código entre as duas. Consulte [Etapa 3 do tutorial: usando a janela interativa REPL](vs-tutorial-01-03.md) e [Usando a janela interativa – comando Enviar código para interativa](interactive-repl.md#send-code-to-interactive-command) para obter detalhes.
 
-Para obter uma introdução à edição de código Python, assista à [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introdução ao Python no Visual Studio, parte 3: edição) (youtube.com, 3min48s):
+Para uma introdução sobre edição de código do Python, consulte [Editando o código do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy 2min30s):
 
-> [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 
 ## <a name="intellisense"></a>IntelliSense
 
@@ -123,8 +119,7 @@ Trechos de código são fragmentos de código que podem ser inseridos nos arquiv
 
 ![Gerenciador de Trechos de Código](media/code-editing-code-snippets-manager.png)
 
-Para criar seus próprios trechos de código, consulte [Passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md).
-Trechos de código podem ser personalizados com a [criação de um trecho de código](https://msdn.microsoft.com/library/ms165394.aspx) e importando-o por meio do 
+Para criar seus próprios trechos de código, consulte [Passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md). 
 
 Se você escrever um ótimo trecho de código que gostaria de compartilhar, fique à vontade para postá-lo em linhas gerais e [contar para nós](https://github.com/Microsoft/PTVS/issues). Talvez possamos incluí-lo em uma versão futura do Visual Studio.
 

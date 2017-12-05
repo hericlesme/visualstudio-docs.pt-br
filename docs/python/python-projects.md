@@ -1,28 +1,24 @@
 ---
 title: Projetos do Python no Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c9c53f76-d0ef-4095-8b39-b7eb9bb33aba
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 3ce10862b3d71be43a86c1a98a9edf822ac9baf6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 3898277e5520ccabea5fba488846e520ef52fc83
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-projects"></a>Projetos do Python
 
 Normalmente, os aplicativos do Python são definidos com o uso somente de arquivos e pastas, mas essa estrutura pode se tornar complexa conforme os aplicativos ficam maiores e talvez envolvam arquivos gerados automaticamente, JavaScript para aplicativos Web e assim por diante. Para ajudar a gerenciar essa complexidade, é possível criar projetos do Visual Studio para aplicativos do Python. Um projeto do Python (um arquivo `.pyproj`) identifica todos os arquivos de origem e de conteúdo associados ao projeto, contém informações de build de cada arquivo, mantém as informações para integração com sistemas de controle de código-fonte e ajuda você a organizar o aplicativo em componentes lógicos.
@@ -46,14 +42,11 @@ Neste tópico:
 >
 > É simples criar um projeto do Visual Studio com base em um código existente, conforme descrito abaixo em [Criando um projeto com base em arquivos existentes](#creating-a-project-from-existing-files).
 
-Para obter uma introdução aos projetos do Python no Visual Studio, assista a [Getting Started with Python Tools Part 2: Projects](https://youtu.be/KHPoVpL7zHg?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introdução às Ferramentas Python, parte 2: Projetos) (youtube.com, 3min18s).
+Para uma introdução a projetos do Python no Visual Studio, veja o vídeo [Getting Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567)(Obtendo código do Python) (Microsoft Virtual Academy 2min17s).
 
-> [!VIDEO https://www.youtube.com/embed/KHPoVpL7zHg]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
 
-Assista também ao vídeo [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Aprofundamento: Usando o controle do código-fonte com projetos do Python) (youtube.com, 8min55s).
-
-> [!VIDEO https://www.youtube.com/embed/Aq8eqApnugM]
-
+Assista também ao vídeo mais antigo, [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Aprofundamento: usando o controle do código-fonte com projetos do Python) (youtube.com, 8min55s).
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Adicionando arquivos, atribuindo um arquivo de inicialização e configurando ambientes
 
@@ -91,22 +84,13 @@ A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 (nem todo
 | Módulo de extensão do Python | Esse modelo é exibido no Visual C++ se você instalou as **ferramentas de desenvolvimento nativo do Python** com a carga de trabalho do Python no Visual Studio 2017 (confira [Instalação](installation.md)). Ele fornece a estrutura principal para uma DLL de extensão do C++, semelhante ao que é descrito em [Criando uma extensão do C++ para o Python](cpp-and-python.md). |
 
 <a name="create-project-from-existing-files"</a>
+
 ### <a name="creating-a-project-from-existing-files"></a>Criando um projeto com base em arquivos existentes
 
-1. Selecione o menu **Arquivo > Novo > Projeto...** e, em seguida, selecione o modelo **Com Base em um Código Existente do Python**.
-1. Na próxima caixa de diálogo, defina o caminho para o código existente, um filtro para tipos de arquivo e os caminhos de pesquisa exigidos pelo projeto e, em seguida, selecione **Avançar**:
+> [!Important]
+> O processo descrito aqui não move ou copia os arquivos de origem. Se você quiser trabalhar com uma cópia, basta primeiro duplicar a pasta.
 
-    ![Novo Projeto com base em um Código Existente, etapa 1](media/projects-from-existing-1.png)
-
-1. Escolha um ambiente para o projeto e o arquivo de inicialização e, em seguida, pressione **Avançar**. (Observe que a caixa de diálogo mostra somente os arquivos na raiz da árvore de pastas; se o arquivo desejado estiver em uma subpasta, deixe o arquivo de inicialização em branco e defina-o mais tarde no Gerenciador de Soluções).
-
-    ![Novo Projeto com base em um Código Existente, etapa 2](media/projects-from-existing-2.png)
-
-1. Selecione a localização para salvar o arquivo de projeto (essa ação não move nem copia os arquivos de origem, portanto, se desejar uma cópia, você deverá fazer uma antes de usar o modelo). Nesta caixa de diálogo, também é possível incluir a detecção automática de ambientes virtuais e personalizar o projeto para outras estruturas Web.
-
-    ![Novo Projeto com base em um Código Existente, etapa 3](media/projects-from-existing-3.png)
-
-1.  Selecione **Concluir** e o Visual Studio criará o projeto e o abrirá no Gerenciador de Soluções. Se desejar mover o arquivo `.pyproj` para outro lugar, selecione-o no Gerenciador de Soluções e escolha **Arquivo > Salvar Como**. Essa ação atualiza as referências de arquivo no projeto, mas não move nenhum arquivo de código.
+[!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
 ## <a name="linked-files"></a>Arquivos vinculados
 

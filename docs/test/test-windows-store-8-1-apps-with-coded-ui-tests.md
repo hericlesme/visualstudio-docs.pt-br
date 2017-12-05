@@ -1,46 +1,29 @@
 ---
-title: Testar aplicativos Windows UWP e 8.1 da Windows Store com testes de UI codificados | Microsoft Docs
+title: "Testar aplicativos Windows UWP com testes de interface do usuário codificados | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2a9dc338ce3d08ac61ecc77da8df96d9261b7e62
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testar aplicativos Windows UWP e 8.1 da Windows Store com testes de UI codificados
+# <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Testar aplicativos Windows UWP com testes de interface do usuário codificados
 
-Use este passo a passo para criar testes de interface do usuário para aplicativos UWP e aplicativos Store 8.1 baseados em XAML. 
+Use este passo a passo para criar testes de interface do usuário para aplicativos UWP e aplicativos 8.1 baseados em XAML. 
   
-## <a name="create-a-simple-windows-store-app"></a>Criar um aplicativo simples da Windows Store  
+## <a name="create-a-simple-uwp-app"></a>Criar um aplicativo UWP simples  
   
-1.  Se desejar executar testes de IU codificados no aplicativo da Windows Store baseado em XAML, será necessário [definir uma propriedade de automação exclusiva que identifica cada controle](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1.  Se desejar executar testes de interface do usuário codificados no aplicativo UWP baseado em XAML, será necessário [definir uma propriedade de automação exclusiva que identifica cada controle](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      No menu **Ferramentas**, aponte para **Opções** e escolha **Editor de Texto**, **XAML** e **Diversos**.  
   
@@ -48,13 +31,13 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
   
      ![Opções diversas de XAML](../test/media/cuit_windowsstoreapp_b.png "CUIT_WindowsStoreApp_B")  
   
-2.  Crie um novo projeto para um aplicativo da Windows Store baseado em XAML usando um modelo Visual C# ou Visual Basic.  
+2.  Crie um novo projeto para um aplicativo UWP em branco baseado em XAML usando um modelo do Visual C# ou Visual Basic.  
   
-     ![Criar um aplicativo em branco da Windows Store &#40;XAML&#41;](../test/media/cuit_windowsstoreapp_newproject_blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
+     ![Criar um aplicativo &#40;XAML&#41;](../test/media/cuit_windowsstoreapp_newproject_blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
 3.  No Gerenciador de Soluções, abra MainPage.xaml. Na Caixa de Ferramentas, arraste um controle de botão e um controle de caixa de texto para a superfície do design.  
   
-     ![Criar o aplicativo da Windows Store](../test/media/cuit_windowsstoreapp_design.png "CUIT_WindowsStoreApp_Design")  
+     ![Criar o aplicativo UWP](../test/media/cuit_windowsstoreapp_design.png "CUIT_WindowsStoreApp_Design")  
   
 4.  Clique duas vezes no controle de botão e adicione o código a seguir:  
   
@@ -76,15 +59,15 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
     End Class  
     ```  
   
-5.  Pressione F5 para executar o aplicativo da Windows Store.  
+5.  Pressione F5 para executar o seu aplicativo UWP.  
   
-## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>Crie e execute um teste de IU codificado no aplicativo da Windows Store  
+## <a name="create-and-run-a-coded-ui-test-for-the-uwp-app"></a>Criar e executar um teste de IU codificado para o aplicativo UWP  
 
 [Como criar testes de IU codificados para aplicativos UWP (Plataforma Universal do Windows)?](#uwpapps)
   
-1.  Crie um novo projeto de teste de IU codificado para o aplicativo da Windows Store.  
+1.  Crie um novo projeto de teste de IU codificado para o aplicativo UWP.  
   
-     ![Novo projeto de teste de IU codificado &#40;Aplicativos da Windows Store&#41;](../test/media/cuit_windowsstore_newproject.png "CUIT_WindowsStore_NewProject")  
+     ![Novo projeto de teste de interface do usuário codificado &#40;Aplicativos UWP &#41;](../test/media/cuit_windowsstore_newproject.png "CUIT_WindowsStore_NewProject")  
   
 2.  Escolha editar o mapa de interface do usuário usando a ferramenta de fios.  
   
@@ -94,7 +77,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
   
      ![Copiar AutomationId para a área de transferência](../test/media/cuit_windows_store_tileautomationid.png "CUIT_Windows_Store_TileAutomationID")  
   
-4.  No aplicativo da Windows Store em execução, use a ferramenta de fios para selecionar o controle de botão e o controle de caixa de texto. Depois de adicionar cada controle, escolha o botão **Adicionar controle ao mapa de controle de interface do usuário** na barra de ferramentas do Construtor de Teste de IU Codificado.  
+4.  No aplicativo da UWP em execução, use a ferramenta de mira para selecionar o controle de botão e o controle de caixa de texto. Depois de adicionar cada controle, escolha o botão **Adicionar controle ao mapa de controle de interface do usuário** na barra de ferramentas do Construtor de Teste de IU Codificado.  
   
      ![Adicionar controle ao mapa de interface do usuário](../test/media/cuit_windowsstoreapp_uimap.png "CUIT_WindowsStoreApp_UIMap")  
   
@@ -230,7 +213,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
   
 11. No Gerenciador de Soluções, abra o arquivo CodedUITest1.cs ou CodedUITest1.vb. Agora, é possível adicionar código ao método CodedUTTestMethod1 para as ações necessárias para executar o teste usando os controles adicionados ao UIMap:  
   
-    1.  Ative o aplicativo da Windows Store usando a propriedade de ID de automação copiada anteriormente na área de transferência.  
+    1.  Inicie o aplicativo UWP usando a propriedade de ID de automação copiada anteriormente na área de transferência:  
   
         ```csharp  
         XamlWindow.Launch("8ebca7c4-effe-4c86-9998-068daccee452_cyrqexqw8cc7c!App")  
@@ -302,7 +285,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
   
      ![Executar o teste de IU codificado no Gerenciador de Testes](../test/media/cuit_windowsstoreapp_runtest.png "CUIT_WindowsStoreApp_RunTest")  
   
-     O aplicativo da Windows Store é ativado, a ação de toque no botão é concluída e a propriedade Texto da caixa de texto é populada e validada com o método de asserção.  
+     O aplicativo UWP é iniciado, a ação de toque no botão é concluída e a propriedade Texto da caixa de texto é preenchida e validada com o método de asserção.  
   
      ![Executando um teste de IU codificado](../test/media/cuit_windowsstoreapp_running.png "CUIT_WindowsStoreApp_Running")  
   
@@ -314,13 +297,13 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
   
 #### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: Por que não vejo a opção de registrar meu teste de IU codificado no diálogo Gerar Código para Teste de IU Codificado?**  
   
-**R**: Não há suporte para a opção de registro em aplicativos da Windows Store.  
+**R**: A opção de registro não é compatível com aplicativos UWP.  
   
-#### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-store-apps-based-on-winjs"></a>P: Posso criar um teste de IU codificado para meus aplicativos da Windows Store baseados em WinJS?**  
+#### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>P: Posso criar um teste de IU codificado para meus aplicativos UWP baseados em WinJS?**  
 
 **R**: Não. Há suporte apenas para aplicativos baseados em XAML.  
   
-#### <a name="q-can-i-create-coded-ui-tests-for-my-windows-store-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>P: Posso criar testes de IU codificados para meus aplicativos da Windows Store em um sistema que não executa o Windows 8.1 nem o Windows 10?**  
+#### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>P: Posso criar testes de interface do usuário codificados para meus aplicativos UWP em um sistema que não esteja executando o Windows 8.1 nem o Windows 10?**  
   
 **R**: Não, os modelos de Projeto de Teste de IU Codificado estão disponíveis somente no Windows 8.1 e Windows 10. Para criar a automação para aplicativos UWP (Plataforma Universal do Windows), você precisará do Windows 10.  
 
@@ -329,7 +312,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
   
 **R**: Dependendo da plataforma em que você está testando o aplicativo UWP, crie o projeto de teste de IU codificado de uma destas maneiras:  
   
-- Um aplicativo UWP em execução no computador local será executado como um aplicativo da Loja. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows**.  
+- Um aplicativo UWP em execução no computador local será executado como um aplicativo UWP. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows**.  
   
 - Um aplicativo UWP em execução em um emulador ou dispositivo móvel será executado como um aplicativo do Windows Phone. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows Phone)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows Phone**.  
   
@@ -341,5 +324,4 @@ Depois de criar o projeto, a criação de um teste permanece a mesma que antes.
   
 ## <a name="see-also"></a>Consulte também  
  [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Definir uma propriedade de automação exclusiva para controles da Windows Store para teste](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
-
+ [Definir uma propriedade de automação exclusiva para controles UWP para teste](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

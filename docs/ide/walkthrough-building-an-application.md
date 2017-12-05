@@ -1,41 +1,25 @@
 ---
 title: 'Passo a passo: Criando um aplicativo | Microsoft Docs'
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
-caps.latest.revision: 8
-author: kempb
-ms.author: kempb
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: dc4bcdcc11e357979641268ae77a8e39f8408f7a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: a06bd1eb1ced8305425a9e3698e66f0d19438463
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-building-an-application"></a>Instruções passo a passo: criando um aplicativo
-Ao concluir este passo a passo, você ficará mais familiarizado com as várias opções que podem ser configuradas ao compilar aplicativos com o Visual Studio. Você criará uma configuração de build personalizada, ocultará determinadas mensagens de aviso e aumentará as informações de saída de build, entre outras tarefas, de um aplicativo de exemplo.  
+Ao concluir este passo a passo, você ficará mais familiarizado com as várias opções que podem ser configuradas ao compilar aplicativos com o Visual Studio. Você criará uma configuração de build personalizada, ocultará determinadas mensagens de aviso e aumentará as informações de saída de build de um aplicativo de exemplo.  
   
  Esse tópico contém as seguintes seções:  
   
@@ -52,43 +36,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
  [Criar um build da versão](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)  
   
 ##  <a name="BKMK_installapp"></a> Instalar o aplicativo de exemplo  
- Você usará a caixa de diálogo **Extensões e Atualizações** para encontrar e instalar a amostra [Introdução à compilação de aplicativos WPF](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) da Galeria de Amostras no site da Microsoft. A Galeria de Amostras fornece uma variedade de projetos e códigos de exemplo que podem ser baixados e examinados conforme você planeja e desenvolve seus aplicativos.  
-  
-#### <a name="to-install-the-sample-application"></a>Para instalar o aplicativo de exemplo  
-  
-1.  Na barra de menus, escolha **Ferramentas**, **Extensões e Atualizações**.  
-  
-2.  Escolha a categoria **Online** e, em seguida, a categoria **Galeria de Amostras**.  
-  
-3.  Especifique `Introduction` na caixa de pesquisa para encontrar a amostra.  
-  
-     ![Caixa de diálogo Extensões e Atualizações](~/ide/media/buildwalk_extensionsdialogsampledownload.png "BuildWalk_ExtensionsDialogSampleDownload")  
-  
-4.  Na lista de resultados, escolha **Introdução à compilação de aplicativos WPF (Visual C#)** ou **Introdução à compilação de aplicativos WPF (Visual Basic)**.  
-  
-5.  Escolha o botão **Baixar** e, em seguida, o botão **Fechar**.  
-  
- A amostra Introdução à compilação de aplicativos WPF é exibida na caixa de diálogo **Novo Projeto**.  
-  
-#### <a name="to-create-a-solution-for-the-sample-application"></a>Para criar uma solução para o aplicativo de exemplo  
-  
-1.  Abra a caixa de diálogo **Novo Projeto**.  
-  
-     ![Na barra de menus, escolha Arquivo, Novo, Projeto](~/ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
-  
-2.  Na categoria **Instaladas**, escolha a categoria **Amostras** para exibir a amostra Introdução à compilação de aplicativos WPF.  
-  
-3.  Nomeie a solução `IntroWPFcsharp` do Visual C#.  
-  
-     ![Caixa de diálogo Novo Projeto, Amostras Instaladas](~/ide/media/buildwalk_newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")  
-  
-     OU  
-  
-     Nomeie a solução `IntroWPFvb` do Visual Basic.  
-  
-     ![Caixa de diálogo Novo Projeto, Amostra do Visual Basic](~/ide/media/buildwalk_newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")  
-  
-4.  Escolha o botão **OK**.  
+Baixe o exemplo [Introdução à criação de aplicativos WPF](https://code.msdn.microsoft.com/Introduction-to-Building-b8d16419). Escolha C# ou Visual Basic. Depois de baixar o arquivo .zip, extraia-o e abra o arquivo **ExpenseItIntro.sln** usando o Visual Studio.  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> Criar uma configuração de build personalizada  
  Ao criar uma solução, as configurações de build de depuração e versão e seus destinos de plataforma padrão são definidos para a solução automaticamente. Depois, é possível personalizar essas configurações ou criar suas próprias. As configurações de build especificam o tipo de build. As plataformas de build especificam o sistema operacional que um aplicativo tem como destino para a configuração. Para obter mais informações, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md), [Noções básicas sobre plataformas de build](../ide/understanding-build-platforms.md) e [Configurações de depuração e versão do projeto](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
@@ -99,29 +47,31 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 1.  Abra a caixa de diálogo **Configuration Manager**.  
   
-     ![Menu Build, comando do Configuration Manager](~/ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")  
+     ![Menu Build, comando do Configuration Manager](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")  
   
-2.  Na lista **Configuração da solução ativa**, escolha **Nova**.  
+2.  Na lista **Configuração da solução ativa**, escolha **\<Nova....\>**.  
   
 3.  Na caixa de diálogo **Nova Configuração da Solução**, nomeie a nova configuração `Test`, copie as configurações da configuração de Depuração existentes e, em seguida, escolha o botão **OK**.  
   
-     ![Caixa de diálogo Nova Configuração da Solução](~/ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
+     ![Caixa de diálogo Nova Configuração da Solução](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")  
   
-4.  Na lista **Plataforma da solução ativa**, escolha **Nova**.  
+4.  Na lista **Plataforma da solução ativa**, escolha **\<Nova...\>**.  
   
-5.  Na caixa de diálogo **Nova Plataforma da Solução**, escolha**x64** e não copie as configurações da plataforma x86.  
+5.  Na caixa de diálogo **Nova Plataforma de Solução**, escolha **x64** e não copie as configurações da plataforma x86.  
   
-     ![Caixa de diálogo Nova Plataforma da Solução](~/ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
+     ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
 6.  Escolha o botão **OK**.  
   
  A configuração da solução ativa foi alterada para Teste com a plataforma da solução ativa definida como x64.  
   
- ![Configuration Manager com a configuração de Teste](~/ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")  
+ ![Configuration Manager com a configuração de Teste](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")  
   
- É possível verificar ou alterar de forma rápida a configuração da solução ativa usando a lista **Configurações da Solução** na barra de ferramentas **Padrão**.  
+7. Escolha **Fechar**.  
+
+É possível verificar ou alterar de forma rápida a configuração da solução ativa usando a lista **Configurações da Solução** na barra de ferramentas **Padrão**.  
   
- ![Opção de Configuração da Solução na barra de ferramentas Padrão](~/ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
+![Opção de Configuração da Solução na barra de ferramentas Padrão](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")  
   
 ##  <a name="BKMK_building"></a> Compilar o aplicativo  
  Em seguida, você compilará a solução com a configuração de build personalizada.  
@@ -130,19 +80,31 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 -   Na barra de menus, escolha **Compilar**, **Compilar Solução**.  
   
- A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido, mas várias mensagens de aviso foram geradas.  
+    A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido.  
   
+##  <a name="BKMK_hidewarning"></a> Ocultar avisos do compilador  
+Em seguida, apresentaremos alguns códigos que fazem com que um aviso seja gerado pelo compilador.  
+
+1. No projeto de C#, abra o arquivo **ExpenseReportPage.xaml.cs**. No método **ExpenseReportPage**, adicione o seguinte código: `int i;`.  
+
+    OU
+
+    No projeto do Visual Basic, abra o arquivo **ExpenseReportPage.xaml.vb**. No construtor personalizado **Public Sub New...**, adicione o seguinte código: `Dim i`.  
+
+2. Compile a solução.  
+
+A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido, mas foram gerados avisos:  
+
  Figura 1: Avisos do Visual Basic  
   
- ![Janela de Saída do Visual Basic](~/ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
+ ![Janela de Saída do Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
  Figura 2: Avisos do Visual C#  
   
- ![Janela de Saída do Visual C&#35;](~/ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
+ ![Janela de Saída do Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
-##  <a name="BKMK_hidewarning"></a> Ocultar avisos do compilador  
- Temporariamente, é possível ocultar determinadas mensagens de aviso durante um build, em vez de deixá-las acumular a saída do build.  
-  
+Temporariamente, é possível ocultar determinadas mensagens de aviso durante um build, em vez de deixá-las acumular a saída do build.  
+
 #### <a name="to-hide-a-specific-visual-c-warning"></a>Para ocultar um aviso específico do Visual C#  
   
 1.  No **Gerenciador de Soluções**, escolha o nó do projeto de nível superior.  
@@ -151,9 +113,9 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
      O **Designer de Projeto** é aberto.  
   
-3.  Escolha a página **Build** e, em seguida, na caixa **Suprimir avisos**, especifique o número de aviso `1762`.  
+3.  Escolha a página **Build** e, em seguida, na caixa **Suprimir avisos**, especifique o número de aviso **0168**.  
   
-     ![Página Build, Designer de Projeto](~/ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
+     ![Página Build, Designer de Projeto](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
   
      Para obter mais informações, consulte [Página Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -161,7 +123,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
      A Janela de **Saída** exibe apenas informações de resumo do build.  
   
-     ![Janela de Saída, Avisos de Build do Visual C&#35;](~/ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")  
+     ![Janela de Saída, Avisos de Build do Visual C&#35;](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")  
   
 #### <a name="to-suppress-all-visual-basic-build-warnings"></a>Para suprimir todos os avisos de build do Visual Basic  
   
@@ -173,7 +135,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 3.  Na página **Compilar**, marque a caixa de seleção **Desabilitar todos os avisos**.  
   
-     ![Página Compilar, Designer de Projeto](~/ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+     ![Página Compilar, Designer de Projeto](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
   
      Para obter mais informações, consulte [Configurando avisos no Visual Basic](../ide/configuring-warnings-in-visual-basic.md).  
   
@@ -181,7 +143,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
  A Janela de **Saída** exibe apenas informações de resumo do build.  
   
- ![Janela de Saída, Avisos de Build do Visual Basic](~/ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
+ ![Janela de Saída, Avisos de Build do Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")  
   
  Para obter mais informações, consulte [Como suprimir avisos do compilador](../ide/how-to-suppress-compiler-warnings.md).  
   
@@ -195,7 +157,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 1.  Abra a caixa de diálogo **Opções**.  
   
-     ![Comando Opções no menu Ferramentas](~/ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")  
+     ![Comando Opções no menu Ferramentas](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")  
   
 2.  Escolha a categoria **Projetos e Soluções** e, em seguida, a página **Compilar e Executar**.  
   
@@ -205,7 +167,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 5.  Compile a solução e, em seguida, examine as informações na Janela de **Saída**.  
   
-     As informações do build incluem a hora de início do build (localizada no início), a ordem em que os arquivos foram processados e o tempo que o processo levou para ser concluído (localizado no final). Essas informações também incluem a sintaxe real do compilador que o Visual Studio executa durante o build.  
+     As informações do build incluem a hora de início do build (localizada no início) e ordem em que os arquivos foram processados. Essas informações também incluem a sintaxe real do compilador que o Visual Studio executa durante o build.  
   
      Por exemplo, no build do Visual C#, a opção [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) lista o código de aviso 1762, que foi especificado anteriormente neste tópico, juntamente com três outros avisos.  
   
@@ -214,7 +176,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
     > [!TIP]
     >  É possível pesquisar o conteúdo da Janela de **Saída** se você exibir a caixa de diálogo **Localizar** escolhendo as teclas Ctrl+F.  
   
- Para obter mais informações, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).  
+Para obter mais informações, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ##  <a name="BKMK_releasebuild"></a> Criar um build da versão  
  É possível compilar uma versão do aplicativo de exemplo que é otimizada para enviá-lo. Para o build de versão, você especificará que o arquivo executável é copiado para um compartilhamento de rede antes do início do build.  
@@ -225,7 +187,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 1.  Abra o **Designer de Projeto**.  
   
-     ![Menu Exibir, comando Páginas de Propriedades](~/ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")  
+     ![Menu Exibir, comando Páginas de Propriedades](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")  
   
 2.  Escolha a página **Compilar**.  
   
@@ -242,13 +204,13 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
   
 6.  Compile o aplicativo.  
   
-     ![Comando Compilar Solução no menu Compilar](~/ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+     ![Comando Compilar Solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
 #### <a name="to-specify-a-release-build-for-visual-c"></a>Para especificar um build de versão para o Visual C# #
   
 1.  Abra o **Designer de Projeto**.  
   
-     ![Menu Exibir, comando Páginas de Propriedades](~/ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")  
+     ![Menu Exibir, comando Páginas de Propriedades](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")  
   
 2.  Escolha a página **Build**.  
   
@@ -263,16 +225,17 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
     > [!IMPORTANT]
     >  Uma caixa de mensagem poderá ser exibida, avisando que o compartilhamento de rede especificado pode não ser um local confiável. Se você confiar no local especificado, escolha o botão **OK** na caixa de mensagem.  
   
-6.  Compile o aplicativo.  
+6.  Na **barra de ferramentas Padrão**, defina as Configurações da solução como **Versão** e as Plataformas da solução como **x86**.  
+
+7.  Compile o aplicativo.  
   
-     ![Comando Compilar Solução no menu Compilar](~/ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+     ![Comando Compilar Solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
  O arquivo executável é copiado para o caminho de rede especificado. O caminho será \\\myserver\builds\\*FileName*.exe.  
   
- Parabéns, você concluiu este passo a passo com êxito.  
+Parabéns, você concluiu este passo a passo com êxito.  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Compilando um projeto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [Visão geral da pré-compilação de projeto de aplicativo Web ASP .NET](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [Passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md)
-

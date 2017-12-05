@@ -1,59 +1,70 @@
 ---
-title: "Operadores lógicos em expressões de pesquisa | Microsoft Docs"
+title: "Operadores lógicos e operadores avançados em expressões de pesquisa | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Help Viewer 2.0, logical operators in search
-- logical operators in search [Help Viewer 2.0]
+- Help Viewer, logical operators in search
+- logical operators in search [Help Viewer]
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
-caps.latest.revision: 9
-author: kempb
-ms.author: kempb
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 36df6d24923d56da9653beec94aa7f81aca9b939
-
+ms.openlocfilehash: 3378a554a9e576bde011a70916c48597218bb512
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="logical-operators-in-search-expressions"></a>Operadores lógicos em expressões de pesquisa
-Usando operadores lógicos, você pode refinar a pesquisa de conteúdo criando expressões de pesquisa mais complicadas desde mais simples. Como mostra a tabela a seguir, os operadores lógicos especificam como vários termos de pesquisa devem ser combinados em uma consulta de pesquisa.  
-  
-> [!IMPORTANT]
->  Você deve inserir os operadores lógicos em letras maiúsculas para o mecanismo de pesquisa reconhecê-los.  
+# <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos e avançados em expressões de pesquisa
+Você pode usar os operadores lógicos e operadores de pesquisa avançada para refinar sua pesquisa de conteúdo da Ajuda no Help Viewer.
+
+## <a name="logical-operators"></a>Operadores lógicos
+Os operadores lógicos especificam como vários termos de pesquisa devem ser combinados em uma consulta de pesquisa. A tabela a seguir mostra os operadores lógicos AND, OR, NOT e NEAR.
   
 |Para pesquisar|Use|Exemplo|Resultado|  
 |-------------------|---------|-------------|------------|  
-|Ambos os termos no mesmo tópico|AND|dib AND paleta|Tópicos que contêm "dib" e "paleta".|  
-|Um dos dois termos em um tópico|OU|varredura OR vetor|Tópicos que contêm "varredura" ou "vetor".|  
-|Primeiro termo sem um segundo termo no mesmo tópico|NOT|"operating system" NOT DOS|Tópicos que contêm "sistema operacional", mas não "DOS".|  
-|Os dois termos, próximos em um tópico|PRÓXIMO|usuário NEAR kernel|Tópicos que contêm "usuário" bastante próximo de "kernel".|  
+|Ambos os termos no mesmo artigo|AND|dib AND paleta|Tópicos que contêm "dib" e "paleta".|  
+|Um dos termos em um artigo|OU|varredura OR vetor|Tópicos que contêm "varredura" ou "vetor".|  
+|Primeiro termo sem o segundo termo no mesmo artigo|NOT|"operating system" NOT DOS|Tópicos que contêm "sistema operacional", mas não "DOS".|  
+|Os dois termos, próximos, em um artigo|PRÓXIMO|usuário NEAR kernel|Tópicos que contêm "usuário" bastante próximo de "kernel".|  
   
-## <a name="see-also"></a>Consulte também  
- [Dicas de pesquisa de texto completo](../ide/full-text-search-tips.md)   
- [Localizar informações](../ide/locate-information.md)
+> [!IMPORTANT]
+> Você deve inserir os operadores lógicos em letras maiúsculas para o mecanismo de pesquisa reconhecê-los.
 
+## <a name="advanced-operators"></a>Operadores avançados
+Os operadores de pesquisa avançada refinam sua pesquisa de conteúdo especificando o local a procurar o termo da pesquisa em um artigo. A tabela a seguir descreve os quatro operadores de pesquisa avançada disponíveis.
 
-<!--HONumber=Feb17_HO4-->
+|Para pesquisar|Use|Exemplo|Resultado|  
+|-------------------|---------|-------------|------------|  
+|Um termo no título do artigo|título:|title:binaryreader|Tópicos que contêm "binaryreader" em seus títulos.|  
+|Um termo em um exemplo de código|código:|code:readdouble|Tópicos que contêm "readdouble" em um exemplo de código.|  
+|Um termo em um exemplo de uma linguagem de programação específica|code:vb:|code:vb:string|Tópicos que contêm "string" em um exemplo de código do Visual Basic.|  
+|Um artigo associado a uma palavra-chave de índice específica|keyword:|keyword:readbyte|Tópicos associados à palavra-chave de índice "readbyte".|  
 
+> [!IMPORTANT]
+> Você precisa inserir os operadores de pesquisa avançada com dois pontos finais e nenhum espaço intermediário antes dos dois pontos para o mecanismo de pesquisa os reconheça.    
 
+### <a name="programming-languages-for-code-examples"></a>Linguagens de programação para exemplos de código
+Você pode usar o operador **code:** para localizar conteúdo sobre qualquer uma dentre várias linguagens de programação. Para retornar exemplos de uma linguagem de programação específica, use um dos seguintes valores de linguagem de programação:  
+
+|Linguagem de programação|Sintaxe do operador de pesquisa|  
+|--------------------|---------|  
+|Visual Basic|code:vb<br/>code:visualbasic|  
+|C#|code:c#<br/>code:csharp|  
+|C++|code:cpp<br/>code:c++<br/>code:cplusplus|  
+|F#|code:f#<br/>code:fsharp|  
+|JavaScript|code:javascript<br/>code:js|  
+|XAML|code:xaml|
+
+> [!NOTE]
+> O operador **code:** localiza apenas o conteúdo que é marcado com um rótulo de linguagem de programação, em vez de conteúdo que esteja marcado genericamente como código. 
+  
+## <a name="see"></a>Consulte 
+[Como pesquisar tópicos](how-to-search-for-topics.md)  
+[Microsoft Help Viewer](microsoft-help-viewer.md)

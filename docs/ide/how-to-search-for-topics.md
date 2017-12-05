@@ -1,47 +1,29 @@
 ---
 title: "Como pesquisar por tópicos | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-caps.latest.revision: 6
-author: kempb
-ms.author: kempb
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 93fc4c609b014341c8a3d9e6c826fd4c4a275f87
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ec4ec1c06d6c64a344e9e39d01c850b901534af8
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="how-to-search-for-topics"></a>Como procurar tópicos
+# <a name="how-to-search-for-topics"></a>Como pesquisar tópicos
 Você pode usar o recurso de pesquisa de texto completo para localizar todos os tópicos que contêm uma palavra específica. Você também pode refinar e personalizar sua pesquisa usando expressões curinga, operadores lógicos e operadores de pesquisa avançada.  
   
-### <a name="to-open-the-search-tab"></a>Para abrir a guia Pesquisar  
+Para abrir a guia Pesquisar, escolha a guia **Pesquisar** na janela do Help Viewer ou, se você é um usuário de teclado, escolha **CTRL + E**.  
   
--   Escolha a guia **Pesquisar** na janela do Visualizador da Ajuda ou escolha as teclas Ctrl + E.  
-  
-### <a name="to-perform-a-full-text-search"></a>Para realizar uma pesquisa de texto completo  
-  
+## <a name="to-perform-a-full-text-search"></a>Para realizar uma pesquisa de texto completo 
 1.  Na caixa de pesquisa, digite a palavra que deseja localizar.  
   
 2.  Na consulta de pesquisa, especifique quais operadores de pesquisa avançados ou lógicos deseja aplicar à pesquisa, se houver. Para pesquisar toda a Ajuda disponível, não use operadores.  
@@ -49,16 +31,48 @@ Você pode usar o recurso de pesquisa de texto completo para localizar todos os 
     > [!NOTE]
     >  Na caixa de diálogo **Opções do Visualizador**, você pode especificar preferências adicionais, como o número máximo de resultados da pesquisa a serem exibidos por vez e se deseja incluir conteúdo em inglês se a localidade principal não for inglês.  
   
-3.  Escolha a tecla Enter.  
+3.  Escolha a tecla **ENTER**.  
   
-     Uma pesquisa retorna no máximo 200 ocorrências, por padrão, e as exibe na área de resultados da pesquisa.  
+     Uma pesquisa retorna no máximo 200 ocorrências, por padrão, e as exibe na área de resultados da pesquisa. Informações adicionais de versão para cada resultado podem aparecer, dependendo do conteúdo.  
   
-     Informações adicionais de versão para cada resultado podem aparecer dependendo do conteúdo.  
+4.  Para exibir um tópico, escolha seu título na lista de resultados.
+
+## <a name="full-text-search-tips"></a>Dicas de pesquisa de texto completo
+Você pode criar pesquisas mais direcionadas, que retornam somente os tópicos mais interessantes, se você entender como a sintaxe afeta a consulta. A sintaxe inclui caracteres especiais, palavras reservadas e filtros. Este tópico fornece dicas, procedimentos e informações detalhadas de sintaxe para ajudá-lo a construir melhor suas consultas.
   
-4.  Para exibir um tópico, escolha seu título na lista de resultados.  
+### <a name="general-guidelines"></a>Diretrizes gerais  
+A tabela a seguir inclui algumas regras básicas e diretrizes para o desenvolvimento de consultas de pesquisa na Ajuda.  
   
-## <a name="see-also"></a>Consulte também  
- [Dicas de pesquisa de texto completo](../ide/full-text-search-tips.md)   
- [Operadores lógicos em expressões de pesquisa](../ide/logical-operators-in-search-expressions.md)   
- [Operadores de pesquisa avançada em expressões de pesquisa](../ide/advanced-search-operators-in-search-expressions.md)   
- [Como personalizar resultados da pesquisa](../ide/how-to-customize-search-results.md)
+|Sintaxe|Descrição|  
+|------------|-----------------|  
+|Diferenciação de maiúsculas e minúsculas|As pesquisas não diferenciam maiúsculas de minúsculas. Desenvolva seus critérios de pesquisa usando caracteres em maiúsculas ou em minúsculas. Por exemplo, "OLE" e "ole" retornam os mesmos resultados.|  
+|Combinações de caracteres|Não é possível pesquisar somente por letras (a–z) ou números (0–9) individuais. Se você tentar pesquisar determinadas palavras reservadas, como "e", "de" e "com", elas serão ignoradas. Para obter mais informações, consulte [Palavras ignoradas em pesquisas](#stopwords) posteriormente neste tópico.|  
+|Ordem de avaliação|As consultas de pesquisa são avaliadas da esquerda para a direita.|  
+  
+### <a name="search-syntax"></a>Pesquisa de sintaxe  
+Se você especificar uma cadeia de caracteres de pesquisa que inclui várias palavras, como "word1 word2", essa cadeia de caracteres será equivalente a digitar "word1 AND word2", que retornará apenas os tópicos que contêm todas as palavras individuais nessa cadeia de caracteres de pesquisa.  
+  
+> [!IMPORTANT]
+> - Não há suporte para pesquisas de frase. Se você especificar mais de uma palavra em uma cadeia de caracteres de pesquisa, os tópicos retornados conterão todas as palavras especificadas, mas não necessariamente a frase exata especificada.  
+> - Use operadores lógicos para especificar a relação entre as palavras em sua frase de pesquisa. É possível incluir operadores lógicos como AND, OR, NOT e NEAR para refinar ainda mais a sua pesquisa. Por exemplo, se você pesquisar "declarando NEAR união", os resultados da pesquisa incluirão tópicos que contêm as palavras "declarando" e "união" com poucas palavras entre as duas. Para obter mais informações, consulte [Operadores lógicos em expressões de pesquisa](../ide/logical-operators-in-search-expressions.md).  
+  
+### <a name="filters"></a>Filtros  
+É possível restringir ainda mais os resultados da pesquisa usando operadores de pesquisa avançada. A Ajuda inclui três categorias que você pode usar para filtrar os resultados de uma pesquisa de texto completo: Título, Código e Palavra-chave.
+  
+### <a name="ranking-of-search-results"></a>Classificação de resultados da pesquisa  
+O algoritmo de pesquisa é aplicável a determinados critérios para ajudar a classificar resultados da pesquisa superiores ou inferiores na lista de resultados. No geral:  
+  
+1.  O conteúdo que inclui palavras de pesquisa no título tem uma classificação mais alta do que o conteúdo que não inclui.  
+  
+2.  O conteúdo que inclui palavras de pesquisa muito próximas tem uma classificação mais alta do que o conteúdo que não inclui.  
+  
+3.  O conteúdo com uma densidade maior das palavras de pesquisa tem uma classificação mais alta do que o conteúdo que tem uma densidade menor das palavras de pesquisa.  
+  
+### <a name="stopwords"> Palavras ignoradas em pesquisas (palavras irrelevantes)</a>
+Palavras ou números que ocorrem com frequência, chamados de palavras irrelevantes, são automaticamente ignorados durante uma pesquisa de texto completo. Por exemplo, se você pesquisar a frase "passar por", os resultados da pesquisa exibirão tópicos que contêm a palavra "passar", mas não "por".  
+  
+## <a name="see-also"></a>Consulte também
+[Operadores lógicos e avançados](../ide/logical-operators-in-search-expressions.md)  
+[Como localizar tópicos no índice](../ide/how-to-find-topics-in-the-index.md)  
+[Como localizar tópicos no sumário](../ide/how-to-find-topics-in-the-table-of-contents.md)  
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

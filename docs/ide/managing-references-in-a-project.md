@@ -1,11 +1,10 @@
 ---
 title: "Gerenciando referências em um projeto | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 10/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,30 +22,15 @@ helpviewer_keywords:
 - COM components, referencing
 - objects [Visual Studio], referencing
 ms.assetid: 05d1c51b-44f3-4973-8a11-6c919b08ad62
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
-ms.openlocfilehash: 890e181643d2cc5d4861d64ffd9052e0400126d0
-ms.lasthandoff: 03/31/2017
-
+ms.openlocfilehash: 4145dda187e726096e2137d2a5fdc0455b6131e2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-references-in-a-project"></a>Gerenciando referências em um projeto
 Antes de escrever código em um componente externo ou um serviço conectado, o projeto primeiro deve conter uma referência a ele. Basicamente, uma referência é uma entrada em um arquivo de projeto que contém as informações de que o Visual Studio precisa para localizar o componente ou o serviço.  
@@ -55,11 +39,11 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 
  ![Adicionar uma referência no Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")  
 
- É possível fazer uma referência aos seguintes tipos de componentes/serviços:  
-
--   Referências de aplicativo da Windows Store  
+ É possível fazer uma referência aos seguintes tipos de componentes e serviços:    
 
 -   Bibliotecas de classes ou assemblies do .NET Framework  
+
+-   Aplicativos UWP
 
 -   componentes COM  
 
@@ -67,15 +51,15 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 
 -   Serviços Web XML  
 
-## <a name="windows-store-app-references"></a>Referências de aplicativo da Windows Store  
+## <a name="uwp-app-references"></a>Referências a aplicativos UWP  
 
 ### <a name="project-references"></a>Referências de Projeto  
- Projetos UWP (Plataforma Universal do Windows) que se destinam ao Windows 10 podem criar referências a outros projetos UWP na solução, ou a projetos ou binários da Windows Store que se destinam a [!INCLUDE[win81](../debugger/includes/win81_md.md)], desde que esses projetos não usem APIs que foram preteridas no Windows 10. Para obter mais informações, consulte [Mover do Windows Runtime 8 para a UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).  
+ Os projetos da UWP (Plataforma Universal do Windows) podem criar referências a outros projetos da UWP na solução ou a projetos ou binários do Windows 8.1, desde que esses projetos não usem APIs que foram preteridas do Windows 10. Para obter mais informações, consulte [Mover do Windows Runtime 8 para a UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).  
 
- Se você optar por redirecionar os projetos [!INCLUDE[win81](../debugger/includes/win81_md.md)] para o Windows 10, consulte [Portar, Migrar e Atualizar Projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+ Se você optar por redirecionar projetos do Windows 8.1 para o Windows 10, consulte [Portar, migrar e atualizar projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
 
 ### <a name="extension-sdk-references"></a>Referências do SDK de Extensão  
- Projetos do Visual Basic, C#, C++ e JavaScript da Windows Store que se destinam à UWP (Plataforma do Windows Universal) podem referenciar SDKs de Extensão que se destinam a [!INCLUDE[win81](../debugger/includes/win81_md.md)], desde que esses SDKs de Extensão não usem APIs que foram preteridas no Windows 10. Confira o site do fornecedor do SDK de Extensão para descobrir se ele pode ser referenciado por projetos da Windows Store que se destinam à UWP.  
+ Os aplicativos UWP (Plataforma do Windows Universal) em Visual Basic, C#, C++ e JavaScript podem referenciar SDKs de Extensão direcionados ao [!INCLUDE[win81](../debugger/includes/win81_md.md)], desde que esses SDKs de Extensão não usem APIs que foram preteridas no Windows 10. Confira o site do fornecedor do SDK de Extensão para descobrir se ele pode ser referenciado por projetos da Microsoft Store direcionados à UWP.  
 
  Se você determinar que não há suporte para o SDK de Extensão que está sendo referenciado pelo aplicativo, é necessário realizar as seguintes etapas:  
 
@@ -84,7 +68,7 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 2.  Acesse o site do fornecedor que é proprietário do SDK de Extensão sem suporte e instale a versão do SDK de Extensão com dependências que são compatíveis com a versão da plataforma de destino do projeto.  
 
     > [!NOTE]
-    >  Uma maneira de descobrir se um SDK de Extensão tem dependências em outros SDKs de Extensão é reiniciar o Visual Studio, criar um novo projeto do C# da Windows Store, clicar com o botão direito do mouse no projeto e escolher **Adicionar Referência**, acessar a guia **Windows**, acessar a subguia **Extensões**, selecionar o SDK de Extensão e examinar o painel direito no **Gerenciador de Referências**. Se ele tiver dependências, elas serão listadas no painel.  
+    >  Uma maneira de descobrir se um SDK de Extensão tem dependências de outros SDKs de Extensão é reiniciar o Visual Studio, criar um novo projeto de aplicativo UWP em C#, clicar com o botão direito do mouse no projeto e escolher **Adicionar Referência**, acessar a guia **Windows**, acessar a subguia **Extensões**, selecionar o SDK de Extensão e examinar o painel direito no **Gerenciador de Referências**. Se ele tiver dependências, elas serão listadas no painel.  
 
     > [!IMPORTANT]
     >  Se o projeto tiver como destino o Windows 10 e o SDK de Extensão instalado na etapa anterior tiver uma dependência do Pacote de Tempo de Execução do Microsoft Visual C++, a versão do Pacote de Tempo de Execução do Microsoft Visual C++ compatível com o Windows 10 será v14.0 e ela será instalada com o Visual Studio.  
@@ -93,7 +77,7 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 
 4.  Reinicie o Visual Studio e abra o aplicativo.  
 
-5.  Clique com o botão direito do mouse no nó **Referências** do projeto que causou o erro e escolha **Adicionar Referência**  
+5.  Clique com o botão direito do mouse no nó **Referências** do projeto que causou o erro e escolha **Adicionar Referência**.  
 
 6.  Clique na guia **Windows** e, em seguida, na subguia **Extensões**. Depois, desmarque as caixas de seleção dos SDKs de Extensão antigos e marque as caixas de seleção dos novos SDKs de Extensão. Clique em **OK**.  
 
@@ -110,11 +94,11 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 >  Todos os projetos do Visual Studio contêm uma referência implícita a `System.Core`, mesmo se `System.Core` foi removido da lista de referências.  
 
 ## <a name="references-to-shared-components-at-run-time"></a>Referências a componentes compartilhados em tempo de execução  
- Em tempo de execução, os componentes devem estar no caminho de saída do projeto ou no GAC (Cache de Assembly Global). Se o projeto contiver uma referência a um objeto que não está em um desses locais, será necessário copiar a referência para o caminho de saída do projeto ao compilá-lo. A propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indica se essa cópia precisa ser feita. Se o valor for **True**, a referência será copiada para o diretório do projeto durante o build do projeto. Se o valor for **False**, a referência não será copiada.  
+ Em tempo de execução, os componentes devem estar no caminho de saída do projeto ou no GAC (Cache de Assembly Global). Se o projeto contiver uma referência a um objeto que não está em um desses locais, será necessário copiar a referência para o caminho de saída do projeto ao compilá-lo. A propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indica se esta cópia precisa ser feita. Se o valor for **True**, a referência será copiada para o diretório do projeto durante o build do projeto. Se o valor for **False**, a referência não será copiada.  
 
- Se você implantar um aplicativo que contém uma referência a um componente personalizado que está registrado no GAC, o componente não será implantado com o aplicativo, independentemente da configuração <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>. Em versões anteriores do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], era possível definir a propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> de uma referência para garantir que o assembly foi implantado. Agora, é necessário adicionar o assembly à pasta \Bin manualmente. Isso coloca todo o código personalizado sob análise, reduzindo o risco de publicar um código personalizado com o qual você não está familiarizado.  
+ Se você implantar um aplicativo que contenha uma referência a um componente personalizado que esteja registrado no GAC, o componente não será implantado com o aplicativo, independentemente da configuração de <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A>. Nas versões anteriores do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], era possível definir a propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> em uma referência para garantir que o assembly fosse implantado. Agora, é necessário adicionar o assembly à pasta \Bin manualmente. Isso coloca todo o código personalizado sob análise, reduzindo o risco de publicar um código personalizado com o qual você não está familiarizado.  
 
- Por padrão, a propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> estará definida como **False** se o assembly ou o componente estiver no cache de assembly global ou for um componente de estrutura. Caso contrário, o valor será definido como **True**. Referências projeto a projeto são sempre definidas como **True**.  
+ Por padrão, a propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> será definida como **False** se o assembly ou o componente estiver no cache de assembly global ou for um componente de estrutura. Caso contrário, o valor será definido como **True**. Referências projeto a projeto são sempre definidas como **True**.  
 
 ## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Referenciando um projeto ou assembly que tem outra versão do .NET Framework como destino  
  É possível criar aplicativos que referenciam projetos ou assemblies que têm outra versão do .NET Framework como destino. Por exemplo, é possível criar um aplicativo que tem como destino o [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] que referencia um assembly que tem como destino [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Se você criar um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], não será possível definir uma referência no projeto a um projeto ou assembly que tem como destino o [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] ou o .NET Framework versão 4.  
@@ -135,4 +119,3 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
 ## <a name="see-also"></a>Consulte também  
  [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md)   
  [Como adicionar ou remover referências usando o Gerenciador de Referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
-

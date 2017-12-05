@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 3ebe300aa4e2a7314b55f8418bcfa0ad9fafdc59
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# Tutorial 1: Criar um visualizador de imagens
-<a id="tutorial-1-create-a-picture-viewer" class="xliff"></a>
+# <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 Neste tutorial, você cria um programa que carrega uma imagem de um arquivo e a exibe em uma janela. Você aprende a arrastar controles como botões e caixas de imagem no formulário, definir as respectivas propriedades e usar contêineres para redimensionar suavemente o formulário. Você também pode começar a escrever código. Você aprenderá como:  
   
 -   Crie um novo projeto.  
@@ -54,22 +37,21 @@ Neste tutorial, você cria um programa que carrega uma imagem de um arquivo e a 
   
  Quando você terminar, seu programa será como a imagem a seguir.  
   
- ![Imagem criada neste tutorial](~/ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
+ ![Imagem que você cria neste tutorial](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Mostre que você cria neste tutorial  
   
  Para baixar uma versão concluída do exemplo, consulte [Exemplo de tutorial completo do Visualizador de Imagens](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![link para o vídeo](~/data-tools/media/playvideo.gif "PlayVideo")Para ver uma versão em vídeo deste tópico, consulte [Como eu faço para: criar um visualizador de imagens no Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Como eu faço para: criar um visualizador de imagens em C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+ ![link para o vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para ver uma versão em vídeo deste tópico, consulte [Como eu faço para: criar um visualizador de imagens no Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Como eu faço para: criar um visualizador de imagens em C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio. O Visual C# e o Visual Basic são abordados neste tutorial, portanto concentre-se nas informações específicas da linguagem de programação que você está usando.  
 >   
 >  Para ver o código para Visual Basic, escolha a guia **VB** na parte superior dos blocos de código e, para ver o código para Visual C#, escolha a guia **C#**. Se estiver interessado em aprender sobre o Visual C++, consulte [Introdução](../ide/getting-started-with-cpp-in-visual-studio.md) e [Tutorial da linguagem C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
->  Se estiver interessado em aprender a escrever aplicativos do Visual C# ou do Visual Basic para a Windows Store, consulte [Criar seu primeiro aplicativo da Windows Store usando C# ou Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Para obter informações sobre como criar aplicativos JavaScript para a Windows Store, consulte [Criar seu primeiro aplicativo da Windows Store usando JavaScript](http://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
+>  Se você estiver interessado em aprender a escrever aplicativos UWP do Visual C# ou Visual Basic, consulte [Criar aplicativos UWP](https://developer.microsoft.com/windows/apps).
   
-## Tópicos relacionados
-<a id="related-topics" class="xliff"></a>  
+## <a name="related-topics"></a>Tópicos relacionados  
   
 |Título|Descrição|  
 |-----------|-----------------|  

@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, msbuild properties
+helpviewer_keywords: msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: cf04644c98062ffb2aee5b4b826f8426070c3d60
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="comparing-properties-and-items"></a>Comparando propriedades e itens
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.  
@@ -90,9 +74,9 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
 ## <a name="properties-and-items-in-tasks"></a>Propriedades e itens em Tarefas  
  As propriedades e os itens são usados como entradas e saídas para tarefas do MSBuild. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).  
   
- Propriedades são passadas para tarefas como atributos. Dentro da tarefa, uma propriedade do MSBuild é representada por um tipo de propriedade cujo valor pode ser convertido em ou de uma cadeia de caracteres. Os tipos de propriedade com suporte incluem `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` e qualquer tipo que <xref:System.Convert.ChangeType%2A> pode manipular.  
+ Propriedades são passadas para tarefas como atributos. Dentro da tarefa, uma propriedade do MSBuild é representada por um tipo de propriedade cujo valor pode ser convertido em ou de uma cadeia de caracteres. Os tipos de propriedade compatíveis incluem `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` e qualquer tipo que <xref:System.Convert.ChangeType%2A> possa manipular.  
   
- Os itens são passados para tarefas como objetos <xref:Microsoft.Build.Framework.ITaskItem>. Dentro da tarefa, <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> representa o valor do item e <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> recupera seus metadados.  
+ Os itens são passados para tarefas como objetos <xref:Microsoft.Build.Framework.ITaskItem>. Dentro da tarefa, o <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> representa o valor do item e <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> recupera os metadados.  
   
  A lista de itens de um tipo de item pode ser passada como uma matriz de objetos `ITaskItem`. A partir do .NET Framework 3.5, os itens podem ser removidos de uma lista de itens em um destino usando o atributo `Remove`. Como os itens podem ser removidos de uma lista de itens, é possível que um tipo de item tenha zero itens. Se uma lista de itens é passada para uma tarefa, o código na tarefa deve verificar essa possibilidade.  
   

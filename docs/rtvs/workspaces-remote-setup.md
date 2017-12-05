@@ -1,34 +1,34 @@
 ---
 title: "Espaços de trabalho remotos com as Ferramentas do R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5778c9cf-564d-47b0-8d64-e5dc09162479
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: aaea147589f274a5b3e1de4071f980b05e8f6745
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: b708aa33b490cb01ad1e1f31664804f658f1aa55
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="setting-up-remote-workspaces"></a>Configurando espaços de trabalho remotos
 
 Este tópico explica como configurar um servidor remoto com SSL e um serviço do R adequado. Isso permite que as RTVS (Ferramentas do R para Visual Studio) se conectem a um espaço de trabalho remoto nesse servidor. 
 
 - [Requisitos do computador remoto](#remote-computer-requirements)
 - [Instalar um certificado SSL](#install-an-ssl-certificate)
-- [Instalar serviços do R](#install-r-services)
+- [Instalar um certificado SSL no Windows](#install-an-ssl-certificate-on-windows)
+- [Instalar um certificado SSL no Ubuntu](#install-an-ssl-certificate-on-ubuntu)
+- [Instalar serviços do R no Windows](#install-r-services-on-windows)
+- [Instalar serviços do R no Ubuntu](#install-r-services-on-ubuntu)
 - [Configurar serviços do R](#configure-r-services)
 - [Solução de problemas](#troubleshooting)
 
@@ -49,9 +49,12 @@ O campo de chave que precisa estar no certificado é o nome de domínio totalmen
 
 Para obter mais informações, consulte [Public key certificate](https://en.wikipedia.org/wiki/Public_key_certificate) (certificados de chave pública) na Wikipédia.
 
+## <a name="install-an-ssl-certificate-on-windows"></a>Instalar um certificado SSL no Windows
+O certificado SSL deve ser instalado manualmente no Windows. Siga as instruções abaixo para instalar um certificado SSL.
+
 ### <a name="obtaining-a-self-signed-certificate"></a>Obtendo um certificado autoassinado
 
-Em comparação com um certificado de uma autoridade confiável, um certificado autoassinado é como criar um cartão de identificação para você. Esse processo é, naturalmente, muito mais simples do que trabalhar com uma autoridade confiável, mas também não tem autenticação forte, o que significa que um invasor pode substituir seus próprios certificados pelo certificado não assinado e capturar todo o tráfego entre o cliente e o servidor. Portanto, *o certificado autoassinado deve ser usado somente para testar cenários, em uma rede confiável e nunca em produção.*
+Ignore esta seção se você tem um certificado confiável. Em comparação com um certificado de uma autoridade confiável, um certificado autoassinado é como criar um cartão de identificação para você. Esse processo é, naturalmente, muito mais simples do que trabalhar com uma autoridade confiável, mas também não tem autenticação forte, o que significa que um invasor pode substituir seus próprios certificados pelo certificado não assinado e capturar todo o tráfego entre o cliente e o servidor. Portanto, *o certificado autoassinado deve ser usado somente para testar cenários, em uma rede confiável e nunca em produção.*
 
 Por esse motivo, as RTVS sempre emitem o seguinte aviso durante a conexão com um servidor com um certificado autoassinado:
 
@@ -94,8 +97,48 @@ Depois que o certificado for importado, conceda à conta `NETWORK SERVICE` permi
 
 1. Selecione **OK** duas vezes para fechar as caixas de diálogo e confirmar suas alterações.
 
+## <a name="install-an-ssl-certificate-on-ubuntu"></a>Instalar um certificado SSL no Ubuntu
+O pacote `rtvs-daemon` instalará um certificado autoassinado por padrão como parte da instalação.
 
-## <a name="install-r-services"></a>Instalar serviços do R
+### <a name="obtaining-a-self-signed-certificate"></a>Obtendo um certificado autoassinado
+
+Para benefícios e riscos de usar um certificado autoassinado, consulte a descrição do Windows. O pacote `rtvs-daemon` gera e configura o certificado autoassinado durante a instalação. Você precisará fazer isso apenas se quiser substituir o certificado autoassinado gerado automaticamente.
+
+Para emitir um certificado autoassinado por conta própria:
+1. SSH ou faça logon em seu computador Linux.
+2. Instale o pacote `ssl-cert`:
+    ```sh
+    sudo apt-get install ssl-cert
+    ```
+3. Execute `make-ssl-cert` para gerar o certificado SSL autoassinado padrão:
+    ```sh
+    sudo make-ssl-cert generate-default-snakeoil --force-overwrite
+    ```
+4. Converta a chave gerada e os arquivos PEM em PFX. O PFX gerado deve estar na sua pasta inicial:
+    ```sh
+    openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
+    ```
+
+### <a name="configuring-rtvs-daemon"></a>Configurando o daemon RTVS
+
+O caminho de arquivo do certificado SSL (caminho para o PFX) deve ser definido em `/etc/rtvs/rtvsd.config.json`. Atualize `X509CertificateFile` e `X509CertificatePassword` com o caminho do arquivo e a senha, respectivamente.
+
+    ```json
+    {
+      "logging": { "logFolder": "/tmp" },
+      "security": {
+        "allowedGroup": "",
+        "X509CertificateFile": "/etc/rtvs/ssl-cert-snakeoil.pfx",
+        "X509CertificatePassword": "SnakeOil"
+      },
+      "startup": { "name": "rtvsd" },
+      "urls": "https://0.0.0.0:5444"
+    }
+    ```
+
+Salve o arquivo e reinicie o daemon, `sudo systemctl restart rtvsd`.
+    
+## <a name="install-r-services-on-windows"></a>Instalar serviços do R no Windows
 
 Para executar o código R, o computador remoto deve ter um interpretador de R instalado da seguinte maneira:
 
@@ -108,10 +151,10 @@ Para executar o código R, o computador remoto deve ter um interpretador de R in
 
 1. Execute o [Instalador de serviços do R](https://aka.ms/rtvs-services) e reinicie quando solicitado. O instalador faz o seguinte:
 
-    -   Cria uma pasta no `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` e copia todos os binários necessários.
-    -   Instala `RHostBrokerService` e `RUserProfileService` e configura para iniciar automaticamente.
-    -   Configura o serviço `seclogon` para iniciar automaticamente.
-    -   Adiciona `Microsoft.R.Host.exe` e `Microsoft.R.Host.Broker.exe` às regras de entrada do firewall na porta padrão 5444.
+    - Cria uma pasta no `%PROGRAMFILES%\R Tools for Visual Studio\1.0\` e copia todos os binários necessários.
+    - Instala `RHostBrokerService` e `RUserProfileService` e configura para iniciar automaticamente.
+    - Configura o serviço `seclogon` para iniciar automaticamente.
+    - Adiciona `Microsoft.R.Host.exe` e `Microsoft.R.Host.Broker.exe` às regras de entrada do firewall na porta padrão 5444.
 
 Os serviços do R serão iniciados automaticamente quando o computador for reiniciado:
 
@@ -119,6 +162,33 @@ Os serviços do R serão iniciados automaticamente quando o computador for reini
 - O **Serviço de perfil do usuário do R** é um componente com privilégios que lida com a criação de perfil do usuário do Windows. O serviço é chamado quando um novo usuário faz logon pela primeira vez no computador do servidor R.
 
 Você pode ver esses serviços no console de gerenciamento de serviços (`compmgmt.msc`).  
+
+## <a name="install-r-services-on-ubuntu"></a>Instalar Serviços do R no Ubuntu
+
+Para executar o código R, o computador remoto deve ter um interpretador de R instalado da seguinte maneira:
+
+1. Baixe e instale um dos seguintes:
+
+    - [Microsoft R Open](https://mran.microsoft.com/open/)
+    - [CRAN R para Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+
+    Ambos têm funcionalidade idêntica, mas o Microsoft R Open beneficia-se de bibliotecas de álgebra linear aceleradas por hardware como cortesia do [Intel Math Kernel Library](https://software.intel.com/intel-mkl).
+
+1. Baixe, extraia e execute o script de instalação [pacote daemon RTVS](https://aka.ms/r-remote-services-linux-binary-current). Isso deve instalar os pacotes necessários, suas dependências e o daemon RTVS:
+
+    - Baixar: `wget -O rtvs-daemon.tar.gz https://aka.ms/rtvs-daemon-current`
+    - Extrair: `tar -xvzf rtvs-daemon.tar.gz`
+    - Executar instalador: `sudo ./rtvs-install`. A instalação de pacote do dotnet exige a adição de uma nova chave de assinatura confiável. Para instalar silenciosamente ou para automação, use este comando: `sudo ./rtvs-install -s`.
+    
+
+1. Habilite e inicie o daemon:
+
+    - Habilitar: `sudo systemctl enable rtvsd`
+    - Iniciar o daemon: `sudo systemctl start rtvsd`
+
+1. Verifique se o daemon está em execução, executando este comando: `ps -A -f | grep rtvsd`. Você deve ver um processo em execução como usuário `rtvssvc`. Agora você deve ser capaz de se conectar a ele através das Ferramentas do R para Visual Studio, usando a URL para esse computador Linux.
+
+Para configurar o `rtvs-daemon`, consulte `man rtvsd`.
 
 ## <a name="configure-r-services"></a>Configurar serviços do R
 
@@ -177,4 +247,3 @@ Verifique se as regras de firewall para `Microsoft.R.Host.Broker` e `Microsoft.R
 **P. Eu tentei todas essas soluções e ainda não funciona. E agora?**
 
 Examine os arquivos de log em `C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp`. Essa pasta contém arquivos de log separados para cada instância do Serviço de Agente do R que foi executada. Um novo arquivo de log é criado sempre que o serviço é reiniciado. Verifique o arquivo de log mais recente para encontrar pistas sobre o que pode estar errado.
-

@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,37 +13,21 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance, JavaScript [Windows Store apps]
-- performance tools, JavaScript [Windows Store apps]
+- performance, JavaScript [UWP apps]
+- performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
-- profiler, JavaScript [Windows Store apps]
+- profiler, JavaScript [UWP apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analisar a capacidade de resposta de interface do usuário HTML em Aplicativos Universais do Windows
 Este tópico descreve como isolar problemas de desempenho nos aplicativos usando o Criador de Perfil de Capacidade de Resposta da Interface do Usuário, uma ferramenta de desempenho disponível para Aplicativos Universais do Windows.  
@@ -58,7 +41,7 @@ Este tópico descreve como isolar problemas de desempenho nos aplicativos usando
 -   Atualizações visuais que são menos frequentes do que o esperado. Isso ocorrerá se o thread de interface de usuário estiver muito ocupado para manter uma taxa de quadros estável. Por exemplo, se o thread de interface de usuário estiver ocupado, os quadros poderão ser ignorados. Qualquer trabalho do thread sem interface de usuário, como solicitações de rede, decodificação de imagens e pinturas, também pode limitar a frequência de atualizações visuais. (Nem toda pintura é executada no thread de interface de usuário.)  
   
 ##  <a name="RunningProfiler"></a> Executar a ferramenta de capacidade de resposta da interface do usuário HTML  
- Você pode usar a ferramenta de Capacidade de Resposta de Interface do Usuário HTML quando tiver um aplicativo universal do Windows ou aplicativo da Windows Store aberto no Visual Studio ou instalado em um computador executando o Windows 8 ou posterior.  
+ É possível usar a ferramenta de capacidade de resposta da interface do usuário HTML quando tiver um aplicativo UWP ou Windows 8.1 em execução aberto no Visual Studio ou instalado em um computador executando o Windows 8 ou posterior.  
   
 1.  Se você estiver executando o aplicativo no Visual Studio, na barra de ferramentas **Padrão**, na lista **Iniciar Depuração**, escolha um destino de implantação, como um dos emuladores do Windows Phone, **Computador Local**, **Simulador** ou **Computador Remoto**.  
   
@@ -66,13 +49,13 @@ Este tópico descreve como isolar problemas de desempenho nos aplicativos usando
   
      Se desejar alterar o destino da análise para o criador de perfil, escolha **Alterar Destino**.  
   
-     ![Alterar destino de análise](~/profiling/media/js_tools_target.png "JS_Tools_Target")  
+     ![Alterar destino de análise](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
      As seguintes opções estão disponíveis para o destino de análise:  
   
     -   **Projeto de Inicialização**. Selecione esta opção para analisar o projeto de inicialização atual. Se você estiver executando o aplicativo em um computador ou dispositivo remoto, use essa configuração, que é o valor padrão.  
   
-    -   **Aplicativo em Execução**. Escolha esta opção para selecionar um aplicativo Windows Store em uma lista de aplicativos em execução. Não é possível usar esta opção ao executar o aplicativo em um computador ou dispositivo remoto.  
+    -   **Aplicativo em Execução**. Escolha esta opção para selecionar o aplicativo UWP em uma lista de aplicativos em execução. Não é possível usar esta opção ao executar o aplicativo em um computador ou dispositivo remoto.  
   
          Você pode usar esta opção para analisar o desempenho de aplicativos que estão em execução no seu computador quando você não tiver acesso ao código-fonte.  
   
@@ -117,7 +100,7 @@ Este tópico descreve como isolar problemas de desempenho nos aplicativos usando
   
 8.  Se você tiver adicionado marcas de usuário, elas aparecerão na opção [Exibir a linha do tempo da sessão de diagnóstico](#Ruler) do criador de perfil. A ilustração a seguir mostra uma única marca de usuário usada para especificar uma operação específica em seu código.  
   
-     ![Régua de diagnóstico mostrando uma marca de usuário](~/profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+     ![Régua de diagnóstico mostrando uma marca de usuário](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
 9. Identifique uma área de interesse na linha de tempo e nos gráficos do criador de perfil usando marcas de usuário, eventos de ciclo de vida do aplicativo ou dados visíveis nos gráficos. Veja a seguir algumas diretrizes para ajudá-lo a analisar e usar os dados dos gráficos:  
   
@@ -131,7 +114,7 @@ Este tópico descreve como isolar problemas de desempenho nos aplicativos usando
   
      A ilustração a seguir mostra o gráfico de utilização da CPU com uma área de interesse realçada.  
   
-     ![Gráfico de utilização de CPU](~/profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+     ![Gráfico de utilização de CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Use a opção [Exibir detalhes da linha de tempo](#TimelineDetails) para obter informações detalhadas sobre os eventos que são realizados com muita frequência ou demorando muito tempo para terminar. Por exemplo, procure o seguinte:  
   
@@ -174,7 +157,7 @@ if (performance && performance.mark) {
   
  A ilustração a seguir mostra a régua de diagnóstico com uma única marca de usuário e sua dica de ferramenta.  
   
- ![Régua de diagnóstico mostrando uma marca de usuário](~/profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+ ![Régua de diagnóstico mostrando uma marca de usuário](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
  Você também pode criar eventos gerados por ferramenta na exibição dos detalhes da linha do tempo para ver quanto tempo se passa entre duas marcas de usuário. O código a seguir adiciona uma segunda marca de usuário e uma medida do tempo decorrido entre a execução de duas marcas de usuário (o código anterior mostra a primeira marca de usuário).  
   
@@ -199,7 +182,7 @@ if (performance.mark && performance.measure) {
   
  Esta é a aparência da sessão de diagnóstico com uma dica de ferramenta exibida para vários eventos de ciclo de vida do aplicativo:  
   
- ![Régua da sessão de diagnóstico](~/profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
+ ![Régua da sessão de diagnóstico](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
   
  A linha do tempo mostra quando ocorrem os eventos de ciclo de vida do aplicativo, como o evento de ativação, e mostra marcas de usuário (triângulos com a marca de usuário) que você pode adicionar ao seu código. Você pode selecionar os eventos para mostrar dicas de ferramenta com mais informações. Para obter mais informações sobre as marcas de usuário, consulte [Marcar código para análise](#ProfileMark) neste tópico.  
   
@@ -219,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  Este exemplo mostra a aparência do gráfico da utilização da CPU:  
   
- ![Gráfico de utilização de CPU](~/profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+ ![Gráfico de utilização de CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
  Use este gráfico para:  
   
@@ -229,7 +212,7 @@ if (performance.mark && performance.measure) {
   
 -   Obtenha uma exibição mais detalhada de um período selecionado clicando no botão **Ampliar**.  
   
- Para obter mais informações sobre como usar o gráfico, consulte [Isolar um problema de capacidade de resposta da interface do usuário](#Workflow) neste tópico.  
+ Para obter mais informações sobre como usar o grafo , consulte [Isolar um problema de capacidade de resposta da interface do usuário](#Workflow) neste tópico.  
   
 ###  <a name="VisualThroughput"></a> Exibir a taxa de transferência visual (FPS)  
  O gráfico de taxa de transferência visual permite que você identifique períodos em que a taxa de quadros cai. Ele mostra os quadros por segundo (FPS) para o aplicativo. Este gráfico é mais útil para o desenvolvimento de jogos e de aplicativos de mídia avançados.  
@@ -255,9 +238,9 @@ if (performance.mark && performance.measure) {
 -   Obtenha uma exibição mais detalhada de um período selecionado clicando no botão **Ampliar**.  
   
 ###  <a name="TimelineDetails"></a> Exibir detalhes da linha de tempo  
- O gráfico de detalhes da linha do tempo aparece no painel inferior do Criador de Perfil de Capacidade de Resposta da Interface de Usuário. Ele fornece informações sequenciais e hierárquicas sobre eventos que consumiram a maioria do tempo da CPU durante períodos selecionados. Esse gráfico pode ajudá-lo a determinar o que disparou um evento específico e, em alguns casos, como o evento é remapeado para o código-fonte. Esse gráfico também ajuda a determinar o tempo necessário para pintar atualizações visuais na tela.  
+ O gráfico de detalhes da linha do tempo aparece no painel inferior do Criador de Perfil de Capacidade de Resposta da Interface de Usuário. Ele fornece informações sequenciais e hierárquicas sobre eventos que consumiram a maioria do tempo da CPU durante períodos selecionados. Esse grafo pode ajudá-lo a determinar o que disparou um evento específico e, em alguns casos, como o evento é remapeado para o código-fonte. Esse gráfico também ajuda a determinar o tempo necessário para pintar atualizações visuais na tela.  
   
- O gráfico mostra o trabalho de threads de interface de usuário e trabalha em threads de plano de fundo que podem contribuir para a lentidão das atualizações visuais. O gráfico não mostra o trabalho JavaScript JIT, o trabalho de GPU assíncrono, o trabalho executado fora do processo do host (como o trabalho RuntimeBroker.exe e dwm.exe) ou o trabalho para as áreas do Tempo de Execução do Windows que não foram instrumentadas para criação de perfil (como o E/S de disco).  
+ O gráfico mostra o trabalho de threads de interface de usuário e trabalha em threads de plano de fundo que podem contribuir para a lentidão das atualizações visuais. O gráfico não mostra o trabalho JavaScript JIT, o trabalho de GPU assíncrono, o trabalho executado fora do processo do host (como o trabalho RuntimeBroker.exe e dwm.exe) ou o trabalho para as áreas do Windows Runtime que não foram instrumentadas para criação de perfil (como o E/S de disco).  
   
 > [!TIP]
 >  Quando ocorre um evento em um thread de plano de fundo, a ID do thread aparece entre colchetes ao lado do nome do evento.  
@@ -303,7 +286,7 @@ if (performance.mark && performance.measure) {
   
  Desmarque a opção **Atividade em segundo plano** do ícone de filtro no painel inferior para filtrar a decodificação de imagem, o download especulativo e os eventos GC. Como esses eventos não são muito acionáveis, eles ficam ocultos por padrão.  
   
- ![Filtrando eventos na linha do tempo](~/profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![Filtrando eventos na linha do tempo](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  Para filtrar os eventos de solicitação HTTP, desmarque a opção **Tráfego de rede** do ícone de filtro no painel inferior. Por padrão, esses eventos são mostrados no gráfico de detalhes da linha do tempo.  
   
@@ -375,7 +358,7 @@ if (performance.mark && performance.measure) {
   
 -   Assista a [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o criador de perfil de Capacidade de Resposta de Interface do Usuário.  
   
--   Leia as dicas de desempenho para aplicativos da Windows Store criadas para o Windows usando JavaScript. Para obter mais informações, consulte [Práticas Recomendadas para aplicativos da Windows Store usando JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Leia as dicas de desempenho para aplicativos UWP criados para o Windows usando JavaScript. Para obter mais informações, consulte [Melhores práticas para aplicativos UWP usando JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
 -   Para obter informações sobre o modelo e desempenho de execução de código de thread único, consulte [Executando código](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   

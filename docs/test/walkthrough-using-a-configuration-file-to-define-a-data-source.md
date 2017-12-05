@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,17 @@ helpviewer_keywords:
 - unit tests, walkthrough
 - data sources, defining with configuration files
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: 32
+caps.latest.revision: "32"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 53fa8751ba5f3412041f6c3424def8d8ccb1d68b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 3f7ea8032efa4b35603568afd8b17107c293f2e6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados
-Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo app.config para testes de unidade. Você aprenderá a criar um arquivo app.config que define uma fonte de dados que pode ser usada pela classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. As tarefas ilustradas nesta explicação passo a passo incluem o seguinte:  
+Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo app.config para testes de unidade. Você aprenderá como criar um arquivo app.config que defina uma fonte de dados que possa ser usada pela classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. As tarefas ilustradas nesta explicação passo a passo incluem o seguinte:  
   
 -   Criando um arquivo app.config.  
   
@@ -127,7 +112,7 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo a
 ## <a name="define-data-sources"></a>Definir fontes de dados  
  A seção de fontes de dados contém quatro atributos que são usados pelo mecanismo de teste para recuperar dados de uma fonte de dados.  
   
--   `name` define a identidade usada pelo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> para especificar qual fonte de dados usar.  
+-   `name` define a identidade usada pelo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> para especificar qual fonte de dados será usada.  
   
 -   `connectionString` identifica a cadeia de conexão criada na seção anterior Definir cadeias de conexão.  
   
@@ -288,4 +273,3 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo a
  [Criar e Executar Testes de Unidade para Código Existente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Testando o aplicativo](/devops-test-docs/test/test-apps-early-and-often)   
  [Como criar um teste de unidade orientado a dados](../test/how-to-create-a-data-driven-unit-test.md)
-

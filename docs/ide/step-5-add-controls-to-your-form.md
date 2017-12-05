@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 07048d1ab89599609d7ece1e69056e6dd1dd7eea
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 879af047f09e34cf2d0f56e15ba786f7bb0562e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 Nessa etapa, você adiciona controles como um controle `PictureBox` e um controle `CheckBox` em seu formulário. Em seguida, você adiciona botões ao seu formulário.  
@@ -50,7 +33,7 @@ Nessa etapa, você adiciona controles como um controle `PictureBox` e um control
   
 4.  Escolha o novo controle PictureBox para selecioná-lo, e então escolha o triângulo preto no novo controle PictureBox para exibir a lista de tarefas, como mostrado na seguinte imagem.  
   
-     ![Tarefas PictureBox](../ide/media/express_pictureboxtasks.png "Express_PictureBoxTasks")  
+     ![Tarefas de PictureBox](../ide/media/express_pictureboxtasks.png "Express_PictureBoxTasks")  
 Tarefas PictureBox  
   
     > [!NOTE]
@@ -65,7 +48,7 @@ Tarefas PictureBox
   
 7.  Escolha o TableLayoutPanel no formulário e adicione um controle **CheckBox** ao formulário. Clique duas vezes no item **CheckBox** na Caixa de Ferramentas para adicionar um novo controle CheckBox à próxima célula livre em sua tabela. Como um PictureBox ocupa as duas primeiras células em TableLayoutPanel, o controle de caixa de seleção é adicionado à célula do canto inferior esquerdo. Escolha a propriedade **Text** e digite a palavra **Stretch**, como mostrado na imagem a seguir.  
   
-     ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png "Express_PictureViewerCheckbox")  
+     ![Controle TextBox com a propriedade Ampliação](../ide/media/express_pictureviewercheckbox.png "Express_PictureViewerCheckbox")  
 Controle de caixa de texto com propriedade de alongamento  
   
 8.  Escolha o TableLayoutPanel no formulário e, em seguida, vá para o grupo **Contêineres** na Caixa de Ferramentas (na qual você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula em PictureBox (canto inferior direito). Encaixe então o FlowLayoutPanel no TableLayoutPanel (escolhendo **Encaixar no contêiner pai** na lista de tarefas de triângulo preto de FlowLayoutPanel ou configurando a propriedade **Dock** de FlowLayoutPanel para **Fill**).  

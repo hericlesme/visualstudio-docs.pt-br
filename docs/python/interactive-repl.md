@@ -1,27 +1,24 @@
 ---
 title: REPL interativo do Python no Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 642dc47e-c265-44ea-a77d-3db14170a36f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 0e524208684afa38916af858e6ec3a8adb1f5932
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 69943d19c0eec4702285d255ce0c26defde79b1c
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-the-python-interactive-window"></a>Trabalhando com a Janela Interativa do Python
 
 O Visual Studio fornece uma janela interativa REPL (leitura-avaliação-impressão-loop) para cada um dos ambientes do Python, que é uma melhoria do REPL obtido com `python.exe` na linha de comando. A janela interativa (aberta com os comandos de menu **Exibir > Outras Janelas > Interativa do &lt;ambiente&gt;**) permite que você insira o código Python arbitrário e veja resultados imediatos. Esse modo de codificação ajuda a você aprender e experimentar com APIs e bibliotecas e a desenvolver de forma interativa o código funcional para incluir em seus projetos.
@@ -39,9 +36,9 @@ O Visual Studio tem diversos modos REPL do Python à sua disposição:
 
 Este tópico descreve os modos REPL **Padrão** e **Depuração**. Para obter detalhes sobre os modos do IPython, consulte [Usando o REPL do IPython](interactive-repl-ipython.md).
 
-Para obter instruções detalhadas com exemplos, incluindo as interações com o editor, como Ctrl+Enter, consulte [Introdução – Usando uma janela interativa REPL](getting-started.md#using-the-interactive-repl-window). Para obter uma introdução em vídeo, consulte [Getting Started with Python in Visual Studio, Part 5: Interactive REPL](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introdução ao Python no Visual Studio, parte 5: REPL interativo) (youtube.com, 2min51s).
+Para um passo a passo detalhado com exemplos, incluindo as interações com o editor, como CTRL+ENTER, consulte [Etapa 3 do tutorial: usando a janela interativa REPL](vs-tutorial-01-03.md). Para um vídeo de introdução, consulte [Janela interativa do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy 2min22s).
 
-> [!VIDEO https://www.youtube.com/embed/yc2CROtTsC0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
 ## <a name="opening-an-interactive-window"></a>Abrindo uma janela interativa
 
@@ -131,4 +128,3 @@ O Visual Studio também detecta células de código começando com comentários 
 A janela interativa inclui o IntelliSense baseado nos objetos dinâmicos, ao contrário do editor de código, no qual o IntelliSense é baseado apenas na análise de código-fonte. Essas sugestões são mais corretas na janela interativa, especialmente com o código gerado dinamicamente. A desvantagem é que as funções com efeitos colaterais (como mensagens de log) podem afetar sua experiência de desenvolvimento.
 
 Se esse comportamento for um problema, altere as configurações em **Ferramentas > Opções > Ferramentas Python > Janelas Interativas** no grupo **Modo de Conclusão**, conforme descrito em [Opções – Opções das Janelas Interativas](options.md#interactive-windows-options).
-

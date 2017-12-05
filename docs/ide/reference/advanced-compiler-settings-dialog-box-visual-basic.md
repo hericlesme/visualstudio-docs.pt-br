@@ -4,40 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vb.ProjectPropertiesAdvancedCompile
-helpviewer_keywords:
-- Advanced Compiler Settings dialog box
+f1_keywords: vb.ProjectPropertiesAdvancedCompile
+helpviewer_keywords: Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-caps.latest.revision: 46
+caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4a23c5e37e380fc963c938d01cb2cfefeb91f21c
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a6fce612245c07cf3bcd70b56b266857db88765d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)
 Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Designer de Projeto** para especificar as propriedades avançadas de configuração de build do projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic.  
@@ -60,7 +41,7 @@ Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Design
  **Remover verificações de estouro de inteiro**  
  Por padrão, essa caixa de seleção está desmarcada para habilitar a verificação de estouro de inteiro. Marque essa caixa de seleção para remover a verificação de estouro de inteiro. Se você marcar essa caixa de seleção, os cálculos de inteiro poderão ser mais rápidos. No entanto, se você remover a verificação de estouro e as capacidades de tipo de dados estourarem, resultados incorretos poderão ser armazenados sem gerar um erro.  
   
- Se as condições de estouro forem verificadas e uma operação de inteiro estourar, será gerada uma exceção <xref:System.OverflowException>. Se as condições de estouro não forem verificadas, estouros de operação de inteiro não gerarão uma exceção.  
+ Se as condições de estouro estiverem marcadas e uma operação de inteiro estourar, uma exceção <xref:System.OverflowException> será lançada. Se as condições de estouro não forem verificadas, estouros de operação de inteiro não gerarão uma exceção.  
   
  **Habilitar otimizações**  
  Por padrão, essa caixa de seleção está desmarcada para desabilitar otimizações do compilador. Marque essa caixa de seleção para habilitar otimizações do compilador. Otimizações do compilador tornam o arquivo de saída menor, mais rápido e mais eficiente. No entanto, uma vez que otimizações causam reorganização de código no arquivo de saída, as otimizações do compilador podem dificultar a depuração.  

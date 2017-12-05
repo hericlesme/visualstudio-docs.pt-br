@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- unit testing, create unit tests
+helpviewer_keywords: unit testing, create unit tests
 ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
-ms.openlocfilehash: b36882588281fc95ff4814c148cd428d09196fa1
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: 8ca7133aa2cb4f02e3a8761d38fb22fcc2ce6122
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Recursos, cenários e ferramentas de teste do desenvolvedor
 
@@ -68,7 +51,7 @@ O IntelliTest reduz drasticamente o esforço de criação e manutenção de test
 
 Teste sua interface do usuário com o que há de melhor com teste de interface do usuário aprovado pela comunidade.
 Os testes de IU codificados fornecem uma maneira de criar testes totalmente automatizados para validar a funcionalidade e o comportamento da interface do usuário do seu aplicativo.
-Eles podem automatizar o teste de interface do usuário em várias tecnologias, incluindo aplicativos da Windows Store com base em XAML, aplicativos de navegador e aplicativos SharePoint.
+Eles podem automatizar o teste de interface do usuário em várias tecnologias, incluindo aplicativos UWP baseados em XAML, aplicativos de navegador e aplicativos SharePoint.
 
 Quer você escolha o que há de melhor em testes de IU codificados ou teste de interface do usuário genérico com base no navegador com o Selenium, o Visual Studio fornece todas as ferramentas necessárias. 
 
@@ -76,7 +59,7 @@ Quer você escolha o que há de melhor em testes de IU codificados ou teste de i
 
 * [Usar automação de interface do usuário para testar código](use-ui-automation-to-test-your-code.md)
 * [Introdução à criação, à edição e à manutenção do teste de IU codificado](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Testar aplicativos da Windows Store com testes de UI codificados](test-windows-store-8-1-apps-with-coded-ui-tests.md)
+* [Testar aplicativos UWP com testes de interface do usuário codificados](test-windows-store-8-1-apps-with-coded-ui-tests.md)
 * [Testar aplicativos da Windows Phone com testes de UI codificados](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
 * [Testar aplicativos do SharePoint com testes de IU codificados](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introdução aos testes de IU codificados com Visual Studio Enterprise (Laboratório)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
@@ -118,4 +101,3 @@ O Visual Studio também é extensível e abre a porta para adaptadores de teste 
 * [Speeding up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx) (Acelerando a execução do teste de unidade no Team Foundation Server)
 * [Execução de teste de unidade paralela e sensível ao contexto](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Unit Testing, Code Coverage and Code Clone Analysis with Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx) (Teste de Unidade, Cobertura de Código e Análise de Clone de Código com o Visual Studio (Laboratório))
-

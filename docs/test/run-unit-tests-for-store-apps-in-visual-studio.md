@@ -1,38 +1,23 @@
 ---
-title: Executar testes de unidade de aplicativos da Store no Visual Studio | Microsoft Docs
+title: Executar testes de unidade de aplicativos UWP no Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
-caps.latest.revision: 12
+caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4ecdcce4d45b15e6574ca70044249e4d32776fdd
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cdb13478a7e403be916d7773dab6315429508e9c
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Executar testes de unidade de aplicativos da Store no Visual Studio
+# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Executar testes de unidade de aplicativos UWP no Visual Studio
 Este tópico descreve como executar testes de unidade usando o Gerenciador de Testes no Microsoft Visual Studio  
   
 > [!NOTE]
@@ -65,18 +50,18 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
  [Depurando testes de unidade](#BKMK_Debugging_unit_tests)  
   
 ##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Estruturas de teste de unidade e projetos de teste  
- O Visual Studio Express para aplicativos da Windows Store inclui as estruturas de teste de unidade da Microsoft para código C++ gerenciado e nativo. O Gerenciador de Testes pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Os projetos de teste podem ser qualquer combinação de Visual C++ ou estruturas de teste de unidade Visual C# e Visual Basic. Quando o código em teste é escrito para o .NET Framework, o projeto de teste pode ser escrito em qualquer linguagem do .NET Framework, independentemente do idioma de código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++.  
+ O Visual Studio Express para aplicativos UWP inclui as estruturas de teste de unidade da Microsoft para código C++ gerenciado e nativo. O Gerenciador de Testes pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Os projetos de teste podem ser qualquer combinação de Visual C++ ou estruturas de teste de unidade Visual C# e Visual Basic. Quando o código em teste é escrito para o .NET Framework, o projeto de teste pode ser escrito em qualquer linguagem do .NET Framework, independentemente do idioma de código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++.  
   
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Executando testes no Gerenciador de Testes  
  Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.  
   
- ![Gerenciador de testes de unidade](~/ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Gerenciador de testes de unidade](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados nos grupos padrão de **Testes com Falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Você pode alterar a forma como o Gerenciador de Testes agrupa seus testes.  
   
  Você pode executar a maior parte do trabalho de encontrar, organizar e executar testes usando a barra de ferramentas do Gerenciador de Testes.  
   
- ![Executar testes na barra de ferramentas do Gerenciador de Testes](~/test/media/ute_toolbar.png "UTE_ToolBar")  
+ ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
 ###  <a name="BKMK_Running_tests"></a> Executando testes  
  Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:  
@@ -119,12 +104,12 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
   
 |||  
 |-|-|  
-|![Botão do grupo do Gerenciador de Testes](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Para agrupar os testes pelo tempo necessário para executá-los, abra a lista **Agrupar por** e escolha **Duração**. Escolha **Resultado do Teste** para mudar para o agrupamento original.|  
+|![Botão do grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Para agrupar os testes pelo tempo necessário para executá-los, abra a lista **Agrupar por** e escolha **Duração**. Escolha **Resultado do Teste** para mudar para o agrupamento original.|  
   
 ###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Pesquisando e filtrando a lista de testes  
  Quando você tiver um grande número de testes, poderá digitar na caixa de pesquisa do Gerenciador de Testes para filtrar a lista por cadeia de caracteres especificada. Você pode restringir o filtro a tipos específicos de cadeias de caracteres escolhendo na lista de filtros antes de inserir a cadeia de caracteres de pesquisa.  
   
- ![Categorias de filtro de pesquisa](~/test/media/ute_searchfilter.png "UTE_SearchFilter")  
+ ![Categorias de filtro de pesquisa](../test/media/ute_searchfilter.png "UTE_SearchFilter")  
   
 ##  <a name="BKMK_Debugging_unit_tests"></a> Depurando testes de unidade  
  Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:  
@@ -137,4 +122,3 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 2.  No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de atalho.  
   
  Para obter mais informações sobre o depurador, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).
-

@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: 16
+caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: 01dc224a571144744028e98153df1c525c461156
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 64115171c64faf0f62b6530c37fa53c6631ac1d6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizando análise de cobertura de código
 Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos os assemblies de solução (.exe/.dll) que são carregados durante os testes de unidade. Recomendamos manter esse padrão, pois funciona bem na maioria das vezes. Para obter mais informações, consulte [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
@@ -69,7 +53,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
   
 5.  Para ativar ou desativar as configurações personalizadas, desmarque ou selecione o arquivo no menu **Teste**, **Configurações de Teste**.  
   
- ![Menu de configurações de teste com o arquivo de configurações personalizadas](~/test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
+ ![Menu de configurações de teste com o arquivo de configurações personalizadas](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
   
  Outros aspectos dos testes de unidade podem ser configurados no mesmo arquivo .runsettings. Para obter mais informações, consulte [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md).  
   
@@ -117,7 +101,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ### <a name="regular-expressions"></a>Expressões regulares  
  Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são iguais a curingas. Em particular:  
   
-1.  **.\*** corresponde a uma cadeia de caracteres de qualquer caractere  
+1.  **.\*** corresponde a uma cadeia de quaisquer caracteres  
   
 2.  **\\.** corresponde a um ponto ".")  
   
@@ -210,7 +194,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ### <a name="to-customize-run-settings-in-a-build-definition"></a>Para personalizar as configurações de execução em uma definição de compilação  
  Você pode obter dados de cobertura de código de uma compilação de equipe.  
   
- ![Especificação do runsettings em uma definição de compilação](~/test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
+ ![Especificação do runsettings em uma definição de compilação](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
   
 1.  Verifique se o arquivo .runsettings passou por check-in.  
   
@@ -344,4 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>Consulte também  
  [Uso da cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
-

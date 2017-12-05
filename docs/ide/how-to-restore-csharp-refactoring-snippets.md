@@ -1,46 +1,20 @@
 ---
 redirect_url: /visualstudio/csharp-ide/refactoring-csharp
-title: "Como restaurar trechos de refatoração C# | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- unsafe expansion
-- expansions, unsafe
-ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a4721d8bbd5dd6ec29f555ee8d4848ef3660243f
-ms.openlocfilehash: 87ecb3149443bc90c2398b67158df35b193bcfe1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cb4e45847008d99aa17b5ce3dde83da036a53dbb
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
+---
+title: "Como restaurar trechos de refatoração C# | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-ide-general" ms.tgt_pltfrm: "" ms.topic: "artigo" helpviewer_keywords: 
+  - "expansão não segura"
+  - "expansões, não segura" ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d caps.latest.revision: 20 author: "gewarren" ms.author: "gewarren" manager: ghogen
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Como restaurar trechos de refatoração C#
 Operações de refatoração C# dependem de trechos de código encontrados no seguinte diretório:  
   
- *Diretório de instalação*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID de idioma*\Refactoring  
+ *Diretório de instalação*\Microsoft Visual Studio 15.0\VC#\Snippets\\*ID de linguagem*\Refactoring  
   
  Se esse diretório de Refatoração, ou quaisquer arquivos nesse diretório, for excluído ou corrompido, as operações de refatoração C# poderão não funcionar no IDE. Os procedimentos a seguir podem ajudá-lo a restaurar trechos de código de refatoração C#.  
   
@@ -64,11 +38,11 @@ Operações de refatoração C# dependem de trechos de código encontrados no se
   
 5.  Localize a pasta **Refatoração** cujo caminho de diretório é:  
   
-     *Diretório de instalação*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID de idioma*\Refactoring  
+     *Diretório de instalação*\Microsoft Visual Studio 15.0\VC#\Snippets\\*ID de linguagem*\Refactoring  
   
      O caminho real é semelhante ao seguinte para uma instalação padrão:  
   
-     C:\Program Files\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring.  
+     C:\Program Files\Microsoft Visual Studio 15.0\VC#\Snippets\1033\Refactoring.  
   
 6.  Clique em **Abrir** na caixa de diálogo **Diretório de Trechos de Código** e clique em **OK** no Gerenciador de Trechos de Código.  
   

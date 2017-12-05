@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 565d52b87dd73d9c2cfd051aac6d5725c276a382
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f11a3717e6096ac08a8201bc9b6fc81e1a197d0a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Escrevendo agentes de log com reconhecimento de multiprocessador
 A capacidade do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de tirar proveito de vários processadores pode diminuir o tempo de criação do projeto, mas também adiciona complexidade para criar o log de eventos. Em um ambiente de processador único, eventos, erros, avisos e mensagens chegam ao agente de uma maneira previsível e sequencial. No entanto, em um ambiente com vários processadores, eventos de origens diferentes podem chegar ao mesmo tempo ou fora de sequência. Para isso, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um agente com reconhecimento de multiprocessador e um novo modelo de registro em log e permite que você crie "agentes de encaminhamento" personalizados.  
@@ -51,27 +36,27 @@ A capacidade do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vste
 ### <a name="central-logging-model"></a>Modelo de registro em log central  
  No modelo de registro em log central, uma única instância de MSBuild.exe age como o "nó central" e as instâncias filho do nó central ("nós secundários") são anexadas ao nó central para ajudar na execução de tarefas de build.  
   
- ![Modelo de agente central](~/msbuild/media/centralnode.png "CentralNode")  
+ ![Modelo de agente central](../msbuild/media/centralnode.png "CentralNode")  
   
  Agentes de vários tipos anexados ao nó central são conhecidos como "agentes centrais". Apenas uma instância de cada tipo de agente pode ser anexada ao nó central ao mesmo tempo.  
   
  Quando ocorre um build, os nós secundários encaminham os eventos de build para o nó central. O nó central encaminha todos os seus eventos e também os de nós secundários, para um ou mais dos agentes centrais anexados. Os agentes, em seguida, criam arquivos de log que são baseados nos dados de entrada.  
   
- Embora somente <xref:Microsoft.Build.Framework.ILogger> seja necessário ser implementado pelo agente central, é recomendável que você implemente também <xref:Microsoft.Build.Framework.INodeLogger> para que o agente central inicialize com o número de nós que participam do build. As seguintes sobrecargas do método <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> são chamadas quando o mecanismo inicializa o agente.  
+ Embora é necessário implementar somente o <xref:Microsoft.Build.Framework.ILogger> pelo agente central, é recomendável que você implemente também <xref:Microsoft.Build.Framework.INodeLogger> para que o agente central inicialize com o número de nós que participam do build. A sobrecarga do método <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> a seguir invoca quando o mecanismo inicializa o agente.  
   
-```cs
+```csharp
 public interface INodeLogger: ILogger  
 {  
     public void Initialize(IEventSource eventSource, int nodeCount);  
 }  
 ```  
   
- Qualquer agente com base em <xref:Microsoft.Build.Framework.ILogger> pode atuar como agente central e pode ser anexado ao build. No entanto, agentes centrais escritos sem suporte explícito para cenários de registro em log de multiprocessador e eventos fora de ordem podem quebrar um build ou produzir saída sem sentido.  
+ Qualquer agente pré-existente com base em <xref:Microsoft.Build.Framework.ILogger> pode atuar como agente central e pode ser anexado ao build. No entanto, agentes centrais escritos sem suporte explícito para cenários de registro em log de multiprocessador e eventos fora de ordem podem quebrar um build ou produzir saída sem sentido.  
   
 ### <a name="distributed-logging-model"></a>Modelo de Registro em Log Distribuído  
  No modelo de registro em log central, muito tráfego de mensagens de entrada pode sobrecarregar o nó central, por exemplo, ao criar vários projetos ao mesmo tempo. Isso pode enfatizar os recursos do sistema e diminuir o desempenho do build. Para facilitar esse problema, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dá suporte a um modelo de registro em log distribuído.  
   
- ![Modelo de registro em log distribuído](~/msbuild/media/distnode.png "DistNode")  
+ ![Modelo de registro em log distribuído](../msbuild/media/distnode.png "DistNode")  
   
  O modelo de registro em log distribuído estende o modelo de registro em log central, permitindo que você crie um agente de encaminhamento.  
   
@@ -80,7 +65,7 @@ public interface INodeLogger: ILogger
   
  Há duas maneiras de usar o registro em log distribuído:  
   
--   Personalizar o agente de encaminhamento pré-fabricado chamado <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
+-   Personalize o agente de encaminhamento pré-fabricado denominado <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
   
 -   Escrever seu próprio agente de encaminhamento personalizado.  
   

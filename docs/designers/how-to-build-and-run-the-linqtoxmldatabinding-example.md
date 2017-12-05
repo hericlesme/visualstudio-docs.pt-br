@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3943deaf-80e2-4968-ac04-d3ef56cfad6c
-caps.latest.revision: 3
-author: kempb
-ms.author: kempb
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 67003cd6b5f1ee54080f1efe5c6e13f0249f7047
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a90e55a60c9451229fd767dac6a8aaa0e2a2e224
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Como: Compilar e executar o exemplo de LinqToXmlDataBinding
 Este tópico mostra como criar e compilar o projeto de LinqToXmlDataBinding Visual Studio, e como executar o programa resultante de LinqToXmlDataBinding Windows Presentation Foundation (WPF).  
@@ -75,21 +60,21 @@ Este tópico mostra como criar e compilar o projeto de LinqToXmlDataBinding Visu
   
 1.  Execute LinqToXmlDataBinding pressionando **F5** (**Iniciar Depuração**) ou **Ctrl+F5** (**Iniciar sem Depuração**). Uma janela de programa com o título **Vinculação de dados de WPF usando LINQ to XML** deverá ser exibida.  
   
-2.  Observe a seção superior da interface do usuário, que exibe o **XML** bruto que representa a lista de livros. Ela é exibida usando um controle de WPF <xref:System.Windows.Controls.TextBlock>, que não habilita a interação por meio do mouse ou do teclado.  
+2.  Observe a seção superior da interface do usuário, que exibe o **XML** bruto que representa a lista de livros. É exibida usando um controle de <xref:System.Windows.Controls.TextBlock> WPF, que não permite a interação por meio do mouse ou do teclado.  
   
-3.  A segunda seção vertical, rotulada como **Lista de livros**, exibe os livros como uma lista ordenada de texto sem formatação. Ela usa um controle <xref:System.Windows.Controls.ListBox> que habilita a seleção por meio do mouse ou teclado.  
+3.  A segunda seção vertical, rotulada como **Lista de livros**, exibe os livros como uma lista ordenada de texto sem formatação. Usa um controle de <xref:System.Windows.Controls.ListBox> que permite a seleção embora o mouse ou o teclado.  
   
 #### <a name="to-add-and-delete-books-from-the-list"></a>Para adicionar e excluir livros de lista  
   
 1.  Para excluir um livro existente da lista, selecione-o na seção **Lista de livros** e, em seguida, clique no botão **Remover o livro selecionado**. Observe que a entrada de livro foi removida do livro e das listagens crua de código-fonte XML.  
   
-2.  Para adicionar um novo livro à lista, insira valores nos controles, **ID** e **Valor**<xref:System.Windows.Controls.TextBox> na última seção, **Adicionar Novo Livro** e clique no botão **Adicionar Livro**. Observe que o livro será acrescentado à lista no livro e em listagens de XML. Este programa não validar valores de entrada.  
+2.  Para adicionar um novo livro à lista, insira valores nos controles **ID** e **Valor** <xref:System.Windows.Controls.TextBox> na última seção, **Adicionar novo livro** e, em seguida, clique no botão **Adicionar Livro**. Observe que o livro será acrescentado à lista no livro e em listagens de XML. Este programa não validar valores de entrada.  
   
 #### <a name="to-edit-an-existing-book-entry"></a>Para editar uma entrada existente de livro  
   
 1.  Selecione a entrada de livro na segunda seção da **Lista de livros**. Os valores atuais devem ser exibidos na terceira seção, **Editar o livro selecionado**.  
   
-2.  Editar os valores usando o teclado. Assim que um dos controles <xref:System.Windows.Controls.TextBox> perdem o foco, as alterações são propagadas automaticamente para as listagens de código-fonte XML e de livro.  
+2.  Editar os valores usando o teclado. Assim que um ou outro controle de <xref:System.Windows.Controls.TextBox> fracamente acoplados o foco, as alterações são propagadas automaticamente as listagens de código-fonte XML e de livro.  
   
 ## <a name="see-also"></a>Consulte também  
  [Vinculação de dados de WPF usando o exemplo LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)   

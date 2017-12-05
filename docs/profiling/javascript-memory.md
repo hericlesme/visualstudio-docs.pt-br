@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,34 +22,18 @@ helpviewer_keywords:
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
 ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: 49
+caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 24250d68042f77a653fe9ef36c743dd4f32ee57c
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analisar o uso de memória do JavaScript em aplicativos UWP
-O analisador de memória do JavaScript está disponível no Visual Studio para ajudar você a entender o uso da memória e a localizar vazamentos de memória em seus aplicativos da Windows Store compilados para o Windows usando JavaScript. Os aplicativos com suporte incluem aplicativos para Aplicativos Universais do Windows.
+O analisador de memória do JavaScript está disponível no Visual Studio para ajudar você a entender o uso de memória e a localizar vazamentos de memória em seus aplicativos UWP compilados para o Windows usando JavaScript. Os aplicativos com suporte incluem aplicativos para Aplicativos Universais do Windows.
   
  O analisador de memória de JavaScript pode executar estas ações para você:  
   
@@ -85,13 +68,13 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
  [Dicas para identificar problemas de memória](#Tips)  
   
 ##  <a name="Run"></a> Executar o analisador de memória de JavaScript  
- É possível usar o analisador de memória quando houver um aplicativo da Windows Store em execução aberto no Visual Studio ou instalado em um computador que esteja executando [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou posterior.  
+ É possível usar o analisador de memória quando houver um aplicativo UWP em execução aberto no Visual Studio ou instalado em um computador que esteja executando [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou posterior.  
   
 #### <a name="to-run-the-memory-analyzer"></a>Para executar o Memory Analyzer  
   
 1.  Abra o Visual Studio.  
   
-2.  Se estiver executando o aplicativo pelo Visual Studio, na lista **Iniciar Depuração** na barra de ferramentas **Padrão**, escolha o destino de depuração de seu projeto: um Emulador de Windows Phone ou, para um aplicativo da Windows Store, **Computador Local**, **Simulador** ou **Computador Remoto**.  
+2.  Se estiver executando o aplicativo pelo Visual Studio, na lista **Iniciar Depuração** na barra de ferramentas **Padrão**, escolha o destino de depuração do seu projeto: um Emulador de Windows Phone ou, para um aplicativo UWP, **Computador Local**, **Simulador** ou **Computador Remoto**.  
   
      Para obter mais informações sobre essas opções, consulte [Executar aplicativos pelo Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
   
@@ -99,17 +82,17 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
      Por padrão, o projeto de inicialização atual é analisado. Se desejar alterar o destino da análise, escolha **Alterar Destino**.  
   
-     ![Alterar destino de análise](~/profiling/media/js_tools_target.png "JS_Tools_Target")  
+     ![Alterar destino de análise](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
      As seguintes opções estão disponíveis para o destino de análise:  
   
     -   **Projeto de Inicialização**. Analisa o projeto de inicialização atual. Se você estiver executando o aplicativo em um computador remoto, escolha esta opção, que é o valor padrão.  
   
-    -   **Aplicativo em Execução**. Permite selecionar um aplicativo da Windows Store em uma lista de aplicativos em execução. Não é possível usar esta opção ao executar seu aplicativo em um computador remoto.  
+    -   **Aplicativo em Execução**. Permite selecionar um aplicativo UWP de uma lista de aplicativos em execução. Não é possível usar esta opção ao executar seu aplicativo em um computador remoto.  
   
          Use esta opção para analisar o uso de memória de aplicativos em execução no seu computador quando você não tem acesso ao código-fonte.  
   
-    -   **Aplicativo Instalado**. Permite selecionar um aplicativo da Windows Store instalado que você queira analisar. Não é possível usar esta opção ao executar seu aplicativo em um computador remoto.  
+    -   **Aplicativo Instalado**. Permite selecionar um aplicativo UWP instalado que você deseja analisar. Não é possível usar esta opção ao executar seu aplicativo em um computador remoto.  
   
          Use esta opção para analisar o uso de memória de aplicativos instalados no seu computador quando você não tem acesso ao código-fonte. Esta opção também pode ser útil quando você deseja apenas analisar o uso de memória de qualquer aplicativo fora do seu próprio desenvolvimento de aplicativo.  
   
@@ -177,7 +160,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
      A ilustração a seguir mostra um exemplo de um segundo e um terceiro instantâneos.  
   
-     ![Segundo e terceiro instantâneos](~/profiling/media/js_mem_leak_workflow.png "JS_Mem_Leak_Workflow")  
+     ![Segundo e terceiro instantâneos](../profiling/media/js_mem_leak_workflow.png "JS_Mem_Leak_Workflow")  
   
      Ao determinar uma linha de base, um segundo e um terceiro instantâneos neste fluxo de trabalho, você pode descartar com mais facilidade as alterações que não estiverem associadas aos vazamentos de memória. Por exemplo, pode haver alterações previstas, como a atualização de cabeçalhos e rodapés em uma página, que criarão algumas alterações no uso da memória, mas tais alterações podem não estar relacionadas aos vazamentos de memória.  
   
@@ -213,7 +196,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
  O gráfico de memória mostra uma exibição em tempo real da memória do processo do aplicativo, que inclui bytes particulares, a memória nativa e o heap de JavaScript. O gráfico de memória é uma exibição rolável da memória do processo. Veja como ela se parece:  
   
- ![Gráfico de memória do Analisador de memória de JavaScript](~/profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")  
+ ![Gráfico de memória do Analisador de memória de JavaScript](../profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")  
   
  Se você tiver adicionado marcas de usuário ao código do aplicativo (consulte [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands)), um triângulo invertido aparecerá no gráfico de uso de memória para indicar quando essa seção de código for atingida.  
   
@@ -227,7 +210,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
  Este é um exemplo de resumo de instantâneo quando se obtém vários instantâneos.  
   
- ![Resumo de instantâneo](~/profiling/media/js_mem_snapshot_summary.png "JS_Mem_Snapshot_Summary")  
+ ![Resumo de instantâneo](../profiling/media/js_mem_snapshot_summary.png "JS_Mem_Snapshot_Summary")  
   
  O resumo de instantâneo inclui:  
   
@@ -252,7 +235,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
  Esta ilustração mostra a exibição Tipos, em um detalhe do instantâneo, com os dados de uso da memória classificados por tamanho retido.  
   
- ![Exibição de detalhes do instantâneo mostrando problemas potenciais](~/profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")  
+ ![Exibição de detalhes do instantâneo mostrando problemas potenciais](../profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")  
   
  Na exibição de detalhes de instantâneo, você pode examinar os dados de uso de memória por dominador, tipo ou raiz, escolhendo uma opção da barra de ferramentas:  
   
@@ -316,7 +299,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 ##  <a name="FoldObjects"></a> Exibir objetos por dominador  
  Nas exibições Tipos e Dominadores, você pode escolher ver os objetos classificados pelos dominadores (esta é a exibição padrão da guia Dominadores). Ao selecionar esta exibição, somente os dominadores são mostrados na exibição superior dos objetos. (Objetos descendentes de objetos não globais ficam ocultos na exibição superior.) Para alguns aplicativos, isso pode indicar quais objetos estão causando a perda de memória ao reduzir o ruído nos dados.  
   
- Para alternar a exibição de objetos por dominador, pressione o botão **Dobrar objetos pelo dominador**. ![Dobrando objetos em seus dominadores](~/profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
+ Para alternar a exibição de objetos por dominador, pressione o botão **Dobrar objetos pelo dominador**. ![Dobrando objetos em seus dominadores](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
  Para obter mais informações sobre dominadores, consulte [Exibir detalhes do instantâneo](#SnapshotDetails).  
   
@@ -407,7 +390,7 @@ if (performance && performance.mark) {
   
 -   Assista à última parte [deste vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o analisador de memória de JavaScript.  
   
--   Leia [Gerenciando a memória em aplicativos da Windows Store](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+-   Leia [Gerenciar memória em aplicativos UWP](http://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 -   Considere temporariamente modificar o código para isolar problemas. Por exemplo, é possível:  
   

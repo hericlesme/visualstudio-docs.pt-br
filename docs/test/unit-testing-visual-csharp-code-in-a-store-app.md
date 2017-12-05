@@ -1,47 +1,31 @@
 ---
-title: "Teste de unidade de código Visual C# em um aplicativo da Store | Microsoft Docs"
+title: "Teste de unidade de código Visual C# em um aplicativo UWP | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
-caps.latest.revision: 19
+caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 768dd5253edac137c50ced5bf524bcc1fdd7f6da
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-visual-c-code-in-a-store-app"></a>Executar o teste de unidade de um código Visual C# em um aplicativo da Store
-Este tópico descreve uma maneira de criar testes de unidade para uma classe Visual C# em um aplicativo da Windows Store. A classe Rooter demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. O aplicativo de matemática pode usar essa função para mostrar a um usuário as coisas divertidas que podem ser feitas com a matemática.  
+# <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Testes de unidade de código do Visual C# em um aplicativo UWP
+Este tópico descreve uma maneira de criar testes de unidade para uma classe do Visual C# em um aplicativo UWP. A classe Rooter demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. O aplicativo de matemática pode usar essa função para mostrar a um usuário as coisas divertidas que podem ser feitas com a matemática.  
   
  Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.  
   
  Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a DLL.  
   
 > [!NOTE]
->  A comunidade do Visual Studio, Enterprise. e Professional fornece recursos adicionais para teste de unidade.  
+>  O Visual Studio Community, Enterprise e Professional fornecem funcionalidades adicionais para teste de unidade.  
 >   
 >  -   Use um framework de teste de unidade de software livre e de terceiros que tenha criado um adaptador complementar para o gerenciador de testes da Microsoft. Também é possível analisar e exibir informações de cobertura de código para os testes.  
 > -   Execute os testes depois de cada compilação.  
@@ -68,13 +52,13 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
 1.  No menu **Arquivo**, escolha **Novo** e, em seguida, **Novo Projeto**.  
   
-2.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Store**. Escolha então **Aplicativo em Branco** na lista de modelos de projeto.  
+2.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Universal**. Escolha então **Aplicativo em Branco** na lista de modelos de projeto.  
   
 3.  Dê ao projeto o nome `Maths` e verifique se a opção **Criar diretório para a solução** está selecionada.  
   
 4.  No Gerenciador de Soluções, escolha o nome da solução, escolha **Adicionar** no menu de atalho e escolha **Novo Projeto**.  
   
-5.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e **Visual C#** e, em seguida, escolha **Windows Store**. Em seguida, escolha **Biblioteca de Teste de Unidade (aplicativos da Windows Store)** na lista de modelos de projeto.  
+5.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Universal**. Em seguida, escolha **Biblioteca de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.  
   
      ![Crie o projeto de teste de unidade](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
@@ -381,4 +365,3 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
 > [!NOTE]
 >  Para adicionar um método auxiliar a uma classe de teste, não adicione o atributo `[TestMethod]` ao método. O Gerenciador de Testes não registra o método a ser executado.
-

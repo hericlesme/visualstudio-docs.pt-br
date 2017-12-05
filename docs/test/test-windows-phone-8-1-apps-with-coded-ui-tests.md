@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 33c6d52536bc5295197c810058e959570c1d0242
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 01b31305ba4ed3706e6368a2b8d9963e524c9c1a
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testar aplicativos Windows UWP e 8.1 do Windows Phone com testes de UI codificados
 
@@ -353,7 +336,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>P: Como fazer para criar testes de IU codificados para aplicativos UWP (Plataforma Universal do Windows)?  
  **R**: Dependendo da plataforma em que você está testando o aplicativo UWP, crie o projeto de teste de IU codificado de uma destas maneiras:  
   
--   Um aplicativo UWP em execução no computador local será executado como um aplicativo da Loja. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows**.  
+-   Um aplicativo UWP em execução no computador local será executado como um aplicativo UWP. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows**.  
   
 -   Um aplicativo UWP em execução em um emulador ou dispositivo móvel será executado como um aplicativo do Windows Phone. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows Phone)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows Phone**.  
   
@@ -387,10 +370,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 </RunSettings>  
 ```  
   
-### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>P: Quais são as diferenças entre os testes de IU codificados para aplicativo da Windows Store baseados em XAML e para aplicativos do Windows Phone?  
+### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-uwp-apps-and-windows-phone-apps"></a>P: Quais são as diferenças entre os testes de interface do usuário codificados para aplicativos UWP baseados em XAML e para aplicativos do Windows Phone?  
  **R**: Estas são algumas das principais diferenças:  
   
-|Recurso|Aplicativos da Windows Store|Aplicativos do Windows Phone|  
+|Recurso|Aplicativos UWP|Aplicativos do Windows Phone|  
 |-------------|------------------------|------------------------|  
 |Destino da execução de testes|Computador local ou remoto. Você pode especificar os computadores remotos ao usar um caso de teste automatizado para executar os testes. Consulte [Automatizar um caso de teste no Microsoft Test Manager](/devops-test-docs/test/automate-a-test-case-in-microsoft-test-manager).|Emulador ou dispositivo. Consulte [P: Os testes só podem ser executados no emulador ou também posso usar um dispositivo físico?](#TestingPhoneAppsCodedUI_EmulatorDevice) neste tópico.|  
 |Executar da linha de comando|Não é necessário usar o arquivo de configurações para especificar o destino.|O arquivo runsettings necessário para especificar o destino.|  
@@ -399,11 +382,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Executar testes automatizados do MTM|Com suporte.|Sem suporte.|  
 |Testes direcionados a dados|Consulte [Testes controlados por dados](../test/creating-a-data-driven-coded-ui-test.md) para obter informações sobre como usar fontes de dados externas e o atributo DataSource em um método de teste.|Os dados são especificados e embutidos com o uso do atributo DataRow em um método de teste. Consulte [Usar testes de IU codificados e controlados por dados em aplicativos Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) neste tópico.|  
   
- Para obter informações sobre testes de IU codificados para aplicativos da Windows Store, consulte [Testar aplicativos da Windows Store UWP e 8.1 com testes de IU codificados](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md).  
+ Para obter informações sobre testes de interface do usuário codificados para aplicativos UWP, consulte [Testar aplicativos Windows UWP com testes de interface do usuário codificados](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md).  
   
 ## <a name="external-resources"></a>Recursos externos  
  Blog do Gerenciamento do Ciclo de Vida do Aplicativo do Microsoft Visual Studio: [Using Coded UI to test XAML-based Windows Phone apps](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments) (Usando a IU codificada para testar aplicativos Windows Phone baseados em XAML)  
   
 ## <a name="see-also"></a>Consulte também  
  [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
-

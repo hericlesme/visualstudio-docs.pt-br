@@ -1,19 +1,17 @@
 ---
-title: 'Passo a passo: estendendo o Visual Studio para Mac'
+title: 'Passo a passo: estendendo o Visual Studio para Mac | Microsoft Docs'
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
+ms.openlocfilehash: 30571e0f83d2b54fdb5346030cc7cc4430901797
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 7d267051abbf0341b3842b24906e10e0906a0a72
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Passo a passo: estendendo o Visual Studio para Mac
 
 Este tópico guiará você pela compilação de [um pacote de extensão simples](https://github.com/mjh4/AddIns/tree/master/DateInserter). O pacote de extensão criará um novo Comando no menu Editar do Visual Studio para Mac que permite ao usuário inserir a data e a hora atuais em um documento open text.
@@ -137,4 +135,3 @@ Este exemplo usa o Criador de Suplementos. O Criador de Suplementos cria um novo
 15.   Por fim, vamos executar nosso pacote de extensão para testá-lo. Na nova instância do Visual Studio para Mac, selecione **Editar > Inserir Data**. A data e hora atual é inserida em nosso cursor, conforme ilustrado na captura de tela abaixo:
 
   ![Inserir captura de tela de data](media/extending-visual-studio-mac-addin12.png)
-

@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: cc0ac8b3418c725579b25712e14c373028fca339
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: f4778bde9903ce3e264f0209c147eedc227b7d8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual Studio com mais rapidez e eficiência. Para obter mais informações sobre atalhos de teclado comuns, veja [Dicas e Truques](../ide/tips-and-tricks-for-visual-studio.md). Para obter uma lista mais completa, consulte [Identificando e personalizando atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) e [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
@@ -91,23 +75,11 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
   
      Para inserir um trecho, na barra de menus, escolha **Editar**, **IntelliSense**, **Inserir Trecho** ou abra o menu de atalho em um arquivo e escolha **Inserir Trecho**. Para obter mais informações, consulte [Trechos de Código](../ide/code-snippets.md).  
   
--   **Corrija erros de código embutidos**. Marcas inteligentes aparecem como caixas azuis ou vermelhas sob uma linha de código. Você pode exibir opções de marcas inteligentes apontando para uma das caixas ou colando o cursor na linha de código e escolhendo as teclas Ctrl +. (ponto).  
-  
-     As caixas azul sugerem maneiras de corrigir erros em seu código.  
-  
-     Figure 1: Marcas Inteligentes de erro  
-  
-     ![Sugestões de marcação inteligente de erro](~/ide/media/productivity_bluesmarttags.png "Productivity_BlueSmartTags")  
-  
-     As caixas vermelhas sugerem maneiras de refatorar seu código.  
-  
-     Figure 2: Refatorando Marcas Inteligentes  
-  
-     ![Sugestões de marcação inteligente de refatoração](~/ide/media/productivity_redsmarttags.png "Productivity_RedSmartTags")  
-  
+-   **Corrija erros de código embutidos**. As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o código de maneira fácil com uma única ação. Essas ações podem ser aplicadas usando o ícone de Lâmpada ![Ícone de lâmpada pequeno](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou pressionando **ALT + ENTER** ou **CTRL + .** quando o cursor estiver sobre a linha de código apropriada. Consulte [Ações Rápidas](quick-actions.md) para obter mais informações.  
+
 -   **Exibir e editar a definição de um elemento de código**. Você pode exibir e editar rapidamente o módulo no qual um elemento de código, como um membro, uma variável ou um local, é definido.  
   
-     Para abrir uma definição em uma janela pop-up, realce o elemento e escolha as chaves Alt+F12 ou abra o menu de atalho do elemento e escolha **Inspecionar Definição**. Para abrir uma definição em uma janela de código separada, abra o menu de atalho para o elemento de código e então escolha **Ir Para Definição**.  
+     Para abrir uma definição em uma janela pop-up, realce o elemento e escolha as teclas **ALT+F12** ou abra o menu de atalho do elemento e, em seguida, escolha **Inspecionar Definição**. Para abrir uma definição em uma janela de código separada, abra o menu de atalho para o elemento de código e então escolha **Ir Para Definição**.  
   
 ##  <a name="BKMK_Navigating"></a> Navegando em seu código  
  Você pode usar várias técnicas para localizar e mover para locais específicos em seu código com mais rapidez.  
@@ -133,7 +105,7 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
   
      Figura 3: lista de resultados do Início Rápido para `new project`  
   
-     ![Resultados de Início Rápido para 'novo projeto'](~/ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")  
+     ![Resultados de Início Rápido para 'novo projeto'](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")  
   
      O **Início Rápido** exibe links para a caixa de diálogo de **Novo Projeto**, a caixa de diálogo **Adicionar Novo Item** e a página Projetos e Soluções na caixa de diálogo **Opções**, entre outros. Os resultados do Início Rápido também podem incluir arquivos de projeto e janelas de ferramenta.  
   
@@ -142,7 +114,7 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
   
 -   **Teste a mesma página, aplicativo ou site em navegadores diferentes**. À medida que você depura seu código, poderá facilmente mudar entre os navegadores da Web instalados, incluindo o [Inspetor de Página (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sem ter que abrir a caixa de diálogo **Procurar Com**. Você pode usar a lista **Destino de Depuração**, que está na barra de ferramentas **Standard** ao lado do botão **Iniciar Depuração**, para verificar rapidamente qual navegador está utilizando enquanto depura ou exibe as páginas.  
   
-     ![Selecionar as opções de depuração do navegador da Web](~/ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")  
+     ![Selecionar as opções de depuração do navegador da Web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")  
   
 -   **Definir pontos de interrupção temporários**. Você pode criar um ponto de interrupção temporário na linha de código atual e iniciar o depurador simultaneamente. Quando você atinge esta linha de código, o depurador entra em modo de interrupção. Para obter mais informações, veja [Navegação pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md).  
   

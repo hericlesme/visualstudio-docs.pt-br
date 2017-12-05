@@ -1,78 +1,72 @@
 ---
-title: Microsoft Help Viewer | Microsoft Docs
+title: "Documentação de ajuda offline do Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/02/2017
+ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- hv_general
+f1_keywords: hv_general
 helpviewer_keywords:
-- Microsoft Help Viewer 2.0 Help
-- Help Viewer 2.0, printing a topic
-- printing a topic[Help Viewer 2.0]
-- Help Viewer 2.0, toolbar
-- Help on Help [Help Viewer 2.0]
-- Help Viewer 2.0, window components
-- Help Viewer 2.0, navigating
-- toolbar [Help Viewer 2.0]
+- Microsoft Help Viewer Help
+- Help Viewer, printing a topic
+- printing a topic [Help Viewer]
+- Help Viewer, toolbar
+- Help on Help [Help Viewer]
+- Help Viewer, window components
+- Help Viewer, navigating
+- toolbar [Help Viewer]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
-caps.latest.revision: 25
-author: kempb
-ms.author: kempb
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 07ff2413503209d6ade252ac89dbfbe2589e7e85
-ms.openlocfilehash: db54dec1306e89a085e10de5bb9e81d1b54246cf
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
-Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer.  
-
-> [!WARNING]
->  Ao instalar o Visual Studio, você tem a opção de instalar o Help Viewer. Para começar a ler os tópicos de ajuda no Help Viewer, em vez de acessar o site de download do MSDN, acesse o menu **Ajuda** no Visual Studio após instalar o Help Viewer, escolha **Definir Preferências de Ajuda** e, então, selecione **Inicialização no Help Viewer**. Os tópicos da ajuda offline para uma determinada versão do Visual Studio estão disponíveis somente após o lançamento final da respectiva versão.  
-
- Você pode fazer o seguinte:  
+Você pode instalar e exibir conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer, incluindo conteúdo do Visual Studio, do .NET Framework, da referência de linguagem, do SQL Server e do Desenvolvimento para Windows. O Help Viewer, permite que você:  
 
 -   Localize e baixe conjuntos de conteúdo, que também são chamados de livros.  
 
--   Procure e pesquise o sumário para localizar tópicos por título.  
+-   Localize tópicos por título, por meio da navegação e da pesquisa do sumário.  
 
 -   Pesquise assuntos no índice.  
 
 -   Localize informações usando a pesquisa de texto completo.  
 
--   Exibir, definir como indicador e imprimir tópicos.  
+-   Exibir, definir como indicador e imprimir tópicos.
 
-## <a name="navigating-the-help-viewer"></a>Navegando no Help Viewer  
- Você pode localizar informações no conteúdo instalado usando as guias de navegação, exibir o conteúdo instalado na guia ou nas guias de tópico e gerenciar o conteúdo usando a guia **Gerenciar Conteúdo**. Você também pode executar tarefas adicionais usando os botões na barra de ferramentas e localizar informações adicionais no canto inferior direito da janela.  
+Para instalar o Help Viewer, consulte [instalação do Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md). Para começar a ler os tópicos no Help Viewer, em vez de online, acesse o menu **Ajuda** no Visual Studio e, em seguida, escolha **Definir Preferência de Ajuda**, **Iniciar no Help Viewer**.
 
-|||  
-|-|-|  
-|Navegação|Usando a guia **Conteúdo**, você pode exibir o conteúdo instalado como uma hierarquia e especificar os critérios para filtrar os títulos que aparecem.<br /><br /> Usando a guia **Pesquisa**, você pode pesquisar termos em qualquer lugar no conteúdo, inclusive código e títulos de tópico.<br /><br /> Usando a guia **Índice**, você pode pesquisar no índice, especificar os critérios para filtrar as entradas e exigir que entradas de índice contenham ou comecem com texto que você especificar.<br /><br /> Usando a guia **Favoritos**, você pode salvar links para os tópicos mais usados e exibir uma lista de tópicos exibidos recentemente.|  
-|Exibição de tópico|Cada tópico aparece em uma guia, e você pode abrir vários tópicos ao mesmo tempo.|  
-|Gerenciando conteúdo|Você pode instalar, atualizar, mover e excluir conteúdo usando a guia **Gerenciar Conteúdo**. Na parte superior da guia, você pode usar o controle do **Código-fonte de instalação** para especificar se deseja instalar os livros de um local de rede ou de um disco ou um URI. A caixa **Caminho do repositório local** mostra o local em que os livros são instalados no computador local, e você pode movê-los para um local diferente escolhendo o botão **Mover**.<br /><br /> A lista de conteúdo mostra quais livros você pode instalar ou já instalou, se uma atualização está disponível e o tamanho de cada livro. Você pode instalar ou remover um ou mais livros escolhendo os links **Adicionar** ou **Remover** apropriados e, em seguida, escolhendo o botão **Atualizar** no painel **Alterações pendentes**. Se houver atualizações disponíveis para quaisquer livros que você já tenha instalado, você poderá atualizar o conteúdo escolhendo o link **Clique aqui para baixar agora** na parte inferior da janela. Além disso, todos os livros instalados serão atualizados se houver atualizações disponíveis quando você instalar livros adicionais. **Observação:** a funcionalidade da guia **Gerenciar Conteúdo** poderá ser diferentes se o administrador do Help Viewer desativar esses recursos ou se não houver acesso à Internet.|  
+## <a name="help-viewer-tour"></a>Tour do Help Viewer
+Você pode localizar informações no conteúdo instalado usando as guias de navegação, exibir o conteúdo instalado na guia ou nas guias de tópico e gerenciar o conteúdo usando a guia **Gerenciar Conteúdo**. Você também pode executar tarefas adicionais usando os botões na barra de ferramentas e localizar informações adicionais no canto inferior direito da janela.
 
- A barra de ferramentas na janela do Help Viewer contém os seguintes botões:  
+### <a name="navigation-tabs"></a>Guias de navegação
+
+|Tabulação|Descrição|
+|---|-----------|
+|Conteúdo|Exibe o conteúdo instalado como uma hierarquia (sumário). Você pode especificar critérios para filtrar os títulos que aparecem.|
+|Índice|Exibe uma lista alfabética de termos indexados. Você pode pesquisar no índice, especificar critérios para filtrar as entradas e exigir que entradas de índice contenham ou comecem com o texto que você especificar.|
+|Favoritos|Você pode adicionar tópicos aos "favoritos", escolhendo o botão **Adicionar a Favoritos** e os tópicos serão exibidos nessa guia. A seção Histórico exibe uma lista de tópicos que você exibiu recentemente.|
+|Pesquisar|Oferece uma caixa de texto em que você pode pesquisar termos em qualquer lugar no conteúdo, inclusive código e títulos de tópicos.|
+
+### <a name="viewing-topics"></a>Exibição de tópicos
+Cada tópico aparece em sua própria guia e você pode abrir vários tópicos ao mesmo tempo.
+
+### <a name="managing-content"></a>Gerenciando conteúdo
+Você pode instalar, atualizar, mover e excluir conteúdo usando a guia **Gerenciar Conteúdo**. Na parte superior da guia, você pode usar o controle do **Código-fonte de instalação** para especificar se deseja instalar os livros de um local de rede ou de um disco ou um URI. A caixa **Caminho do repositório local** mostra o local em que os livros são instalados no computador local, e você pode movê-los para um local diferente escolhendo o botão **Mover**.
+
+A lista de conteúdo mostra quais livros você pode instalar ou já instalou, se uma atualização está disponível e o tamanho de cada livro. Você pode instalar ou remover um ou mais livros escolhendo os links **Adicionar** ou **Remover** apropriados e, em seguida, escolhendo o botão **Atualizar** no painel **Alterações pendentes**. Se houver atualizações disponíveis para quaisquer livros que você já tenha instalado, você poderá atualizar o conteúdo escolhendo o link **Clique aqui para baixar agora** na parte inferior da janela. Além disso, todos os livros instalados são atualizados se há atualizações disponíveis quando você instala livros adicionais.
+
+**Observação:** a funcionalidade da guia **Gerenciar Conteúdo** poderá ser diferentes se o administrador do Help Viewer desativar esses recursos ou se não houver acesso à Internet.
+
+### <a name="toolbar-buttons"></a>Botões da barra de ferramentas
+A barra de ferramentas na janela do Help Viewer contém os seguintes botões:  
 
 -   O botão **Mostrar Tópico em Conteúdo** mostra a localização do tópico na guia **Conteúdo**.  
 
@@ -86,13 +80,9 @@ Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em se
 
 -   O botão **Gerenciar Conteúdo** torna a guia **Gerenciar Conteúdo** ativa.  
 
--   O triângulo pequeno abre uma lista de guias, incluindo guias de tópico e a guia **Gerenciar Conteúdo**. Você pode tornar qualquer uma dessas guias ativas escolhendo-as.  
+-   O triângulo pequeno do lado direito abre uma lista de guias, incluindo guias de tópico e a guia **Gerenciar Conteúdo**. Você pode escolher um nome de guia para torná-la a guia ativa. 
 
- A área inferior da janela do Help Viewer contém informações sobre o tamanho total de downloads pendentes, a quantidade de espaço em disco necessária que eles exigem e a quantidade de espaço em disco disponível. Essa área também contém informações sobre os erros que podem ter ocorrido e um link que você pode escolher para atualizar o conteúdo instalado, se houver atualizações disponíveis.  
-
-## <a name="see-also"></a>Consulte também  
- [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)   
- [Instalar e gerenciar o conteúdo local](../ide/install-and-manage-local-content.md)   
- [Localizar informações](../ide/locate-information.md)   
- [Solução de problemas do Help Viewer](../ide/troubleshooting-the-help-viewer.md)
-
+## <a name="see-also"></a>Consulte também
+[Instalação do Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md)  
+[Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)  
+[Instalar e gerenciar o conteúdo local](../ide/install-and-manage-local-content.md)

@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 06/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
-ms.openlocfilehash: 86f7fef0365a47e8ea88bc3fc46cb0016efd4628
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/15/2017
-
+ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customize-your-build"></a>Personalizar seu build
 Nas versões do MSBuild anteriores à versão 15, se você desejasse fornecer uma propriedade nova e personalizada para projetos em sua solução, você precisava adicionar manualmente uma referência a essa propriedade para cada arquivo de projeto na solução. Ou você precisava definir a propriedade em um arquivo .props e, em seguida, explicitamente, importar o arquivo .props em todos os projetos na solução, entre outras coisas.
@@ -76,7 +60,39 @@ O Directory.Build.props é importado muito no início no Microsoft.Common.props,
 
 O Directory.Build.targets é importado do Microsoft.Common.targets depois de importar os arquivos .target dos pacotes do NuGet. Portanto, ele pode ser usado para substituir as propriedades e os destinos definidos na maior parte da lógica de build, mas às vezes pode ser necessário fazer personalizações dentro do arquivo de projeto após a importação final.
 
+## <a name="use-case-multi-level-merging"></a>Caso de uso: mesclagem de vários níveis
+
+Suponha que você tenha essa estrutura de solução padrão:
+
+````
+\
+  MySolution.sln
+  Directory.Build.props     (1)
+  \src
+    Directory.Build.props   (2-src)
+    \Project1
+    \Project2
+  \test
+    Directory.Build.props   (2-test)
+    \Project1Tests
+    \Project2Tests
+````
+
+Pode ser interessante ter propriedades comuns para todos os projetos `(1)`, propriedades comuns para projetos `src` `(2-src)`e propriedades comuns para projetos `test` `(2-test)`.
+
+Para que o msbuild mescle corretamente os arquivos "internos" (`2-src` e `2-test`) com o arquivo "externo" (`1`), você deve considerar que, depois que o msbuild localiza um arquivo `Directory.Build.props`, ele interrompe o exame adicional. Para continuar o exame e mesclar no arquivo externo, coloque isso em ambos os arquivos internos:
+
+`<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
+
+Um resumo da abordagem geral do msbuild é o seguinte:
+
+- Para qualquer projeto, o msbuild localiza o primeiro `Directory.Build.props` para cima na estrutura da solução, mescla-o com padrões e interrompe o exame adicional
+- Se você quiser que vários níveis sejam encontrados e mesclados, então [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (mostrado acima) o arquivo "externo" do arquivo "interno"
+- Se o arquivo "externo" também não importar nada acima dele, a verificação será interrompida aqui
+- Para controlar o processo de exame/mesclagem, use `$(DirectoryBuildPropsPath)` e `$(ImportDirectoryBuildProps)`
+
+Ou, de maneira mais simples: o primeiro `Directory.Build.props` que não importar mais nada, será o local em que o msbuild será interrompido.
+
 ## <a name="see-also"></a>Consulte também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
-

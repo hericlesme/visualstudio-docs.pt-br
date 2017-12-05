@@ -1,41 +1,24 @@
 ---
-title: "Analisar a qualidade do código C++ de aplicativos da Store usando a análise de código estático do Visual Studio | Microsoft Docs"
+title: "Analisar a qualidade do código C++ de aplicativos UWP usando a análise de código estático do Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.codeanalysis.propertypages.native.express
+f1_keywords: vs.codeanalysis.propertypages.native.express
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pt-br
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d67d850e8fc6e11336dd7cd643f1ea58dbd4cebc
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c4c49f910615e1e181fe66feab3dce5bb3c90002
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código C++ de aplicativos da Store usando a análise de código estático do Visual Studio
+# <a name="analyze-c-code-quality-of-uwp-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código C++ de aplicativos UWP usando a análise de código estático do Visual Studio
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  A ferramenta de análise de código no Visual Studio Express Edition examina o código em busca de uma série de problemas e violações comuns das práticas recomendadas de programação. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código. A análise de código também pode localizar os defeitos no seu código que são difíceis de descobrir com testes. A execução da ferramenta de análise de código a intervalos regulares durante o processo de desenvolvimento pode melhorar a qualidade do seu aplicativo concluído.  
@@ -69,16 +52,16 @@ ms.lasthandoff: 02/22/2017
   
  A solução é compilada e a análise de código é executada. Os resultados aparecem na janela Análise de Código.  
   
- ![Janela Análise de Código](~/test/media/ca_cpp_collapsed.png "CA_CPP_Collapsed")  
+ ![Janela Análise de Código](../test/media/ca_cpp_collapsed.png "CA_CPP_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analisando e resolvendo avisos da análise de código  
  Para analisar um aviso específico, escolha o título do aviso na janela Análise de Código. O aviso se expande para exibir informações detalhadas sobre o problema. Quando possível, a análise de código exibe o número da linha e a lógica da análise que levou ao aviso.  
   
- ![Aviso de análise de código expandido](~/test/media/ca_cpp_expanded_callout.png "CA_CPP_Expanded_Callout")  
+ ![Aviso de análise de código expandido](../test/media/ca_cpp_expanded_callout.png "CA_CPP_Expanded_Callout")  
   
  Quando você expande um aviso, as linhas de código que causaram o aviso são realçadas no editor de códigos do Visual Studio.  
   
- ![Código-fonte destacado](~/test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
+ ![Código-fonte destacado](../test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
   
  Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, torne a executar a análise de código para verificar se o aviso não aparece mais na janela Análise de Código e se a sua correção não gerou novos avisos.  
   
@@ -101,7 +84,7 @@ ms.lasthandoff: 02/22/2017
 ##  <a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código  
  Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.  
   
- ![Pesquisar e filtrar a janela de análise de código](~/test/media/ca_searchfilter.png "CA_SearchFilter")  
+ ![Pesquisar e filtrar a janela de análise de código](../test/media/ca_searchfilter.png "CA_SearchFilter")  
   
 ##  <a name="Warnings"></a> Avisos da análise de código C++  
  A análise de código gera os seguintes avisos para o código C++:  
@@ -244,4 +227,3 @@ ms.lasthandoff: 02/22/2017
 |[C28305](../code-quality/c28305.md)|Foi encontrado um erro durante a análise de um token.|  
 |[C28350](../code-quality/c28350.md)|A anotação descreve uma situação que não é aplicável condicionalmente.|  
 |[C28351](../code-quality/c28351.md)|A anotação descreve onde um valor dinâmico (uma variável) não pode ser usado na condição.|
-

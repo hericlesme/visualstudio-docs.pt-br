@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 6f4db48b7e1f90654643efbfcfd41acbdcceaec8
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 1740beb4c671b2e66e249827c2db678f6b6f7da3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
 Nesta etapa, você adiciona um controle `TableLayoutPanel` ao formulário. O TableLayoutPanel ajuda a alinhar corretamente controles no formulário que você irá adicionar posteriormente.  
   
- ![link para vídeo](~/data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Para apresentar seu formulário com um controle TableLayoutPanel  
   
@@ -45,12 +29,12 @@ Nesta etapa, você adiciona um controle `TableLayoutPanel` ao formulário. O Tab
   
 2.  Escolha o pequeno símbolo de triângulo ao lado do grupo **Contêineres** para abri-lo, como mostrado na imagem a seguir.  
   
-     ![Grupo de contêineres](~/ide/media/express_toolbox.png "Express_Toolbox")  
+     ![Grupo de contêineres](../ide/media/express_toolbox.png "Express_Toolbox")  
 Grupo de contêineres  
   
 3.  Você pode adicionar controles como botões, caixas de seleção e rótulos para seu formulário. Clique duas vezes no controle `TableLayoutPanel` na Caixa de Ferramentas. (Ou, você pode arrastar o controle da caixa de ferramentas para o formulário.) Quando você fizer isso, o IDE adicionará um controle `TableLayoutPanel` ao formulário, conforme mostrado na seguinte imagem.  
   
-     ![Controle TableLayoutPanel](~/ide/media/express_formtablelayout.png "Express_FormTableLayout")  
+     ![Controle TableLayoutPanel](../ide/media/express_formtablelayout.png "Express_FormTableLayout")  
 Controle TableLayoutPanel  
   
     > [!NOTE]
@@ -58,19 +42,19 @@ Controle TableLayoutPanel
   
      Observe como a caixa de ferramentas expande para cobrir o formulário quando você clica em sua guia, e fecha depois que você clica em qualquer lugar fora dela. Esse é o recurso de ocultação automática IDE. Você pode ligar ou desligar para qualquer uma das janelas, escolhendo o ícone de anotações no canto superior direito da janela para alternar entre ocultar automaticamente e fixar no lugar. O ícone de anotações aparece da seguinte maneira.  
   
-     ![Ícone de pino](~/ide/media/express_pushpintoolbox.png "Express_PushpinToolbox")  
+     ![Ícone de pino](../ide/media/express_pushpintoolbox.png "Express_PushpinToolbox")  
 Ícone de pino  
   
 4.  Escolha **TableLayoutPanel** para garantir que esteja selecionado. Você pode verificar qual controle está selecionado examinando a lista suspensa na parte superior da janela **Propriedades**, conforme mostrado na imagem a seguir.  
   
-     ![Janela Propriedades mostrando o controle TableLayoutPanel](~/ide/media/express_controlspropwin.png "Express_ControlsPropWin")  
+     ![Janela Propriedades mostrando o controle TableLayoutPanel](../ide/media/express_controlspropwin.png "Express_ControlsPropWin")  
 A janela Propriedades que mostra o controle TableLayoutPanel  
   
 5.  Escolha o botão **Alfabético** na barra de ferramentas na janela **Propriedades**. Isso faz com que a lista de propriedades na janela **Propriedades** seja exibida em ordem alfabética, o que facilitará a localização de propriedades neste tutorial.  
   
 6.  O seletor de controle é uma lista suspensa na parte superior da janela **Propriedades**. Neste exemplo, ela mostra que um controle chamado `tableLayoutPanel1` está selecionado. Você pode selecionar controles escolhendo uma área no designer do Windows Forms ou escolhendo no seletor de controle. Agora que `TableLayoutPanel` está selecionado, localize a propriedade **Encaixar** e escolha **Encaixar**, que deve estar definido como **Nenhum**. Observe que uma seta suspensa aparece ao lado do valor. Escolha a seta e selecione o botão **Preenchimento** (o botão grande no meio), como mostrado na imagem a seguir.  
   
-     ![Janela Propriedades com Preenchimento selecionado](~/ide/media/express_docktable.png "Express_DockTable")  
+     ![Janela Propriedades com preenchimento selecionado](../ide/media/express_docktable.png "Express_DockTable")  
 A janela Propriedades com o preenchimento selecionado  
   
      *Encaixe* no Visual Studio refere-se a quando uma janela é anexada a outra janela ou área no IDE. Por exemplo, a janela Propriedades pode ser desencaixada – isto é, ser desanexada e ter flutuação livre no Visual Studio – ou pode ser encaixada no **Gerenciador de Soluções**.  
@@ -82,26 +66,26 @@ A janela Propriedades com o preenchimento selecionado
   
 8.  Atualmente, o TableLayoutPanel tem duas linhas de igual tamanho e duas colunas de igual tamanho. Você precisa redimensionar para que a primeira linha e a coluna da direita sejam bem maiores. No designer do Windows Forms, selecione o TableLayoutPanel. No canto superior direito, há um pequeno botão de triângulo preto, que aparece da seguinte maneira.  
   
-     ![Botão de triângulo](~/ide/media/express_iconblacktriangle.gif "Express_IconBlackTriangle")  
+     ![Botão de triângulo](../ide/media/express_iconblacktriangle.gif "Express_IconBlackTriangle")  
 Botão de triângulo  
   
      Este botão indica que o controle tem as tarefas que ajudam você definir suas propriedades automaticamente.  
   
 9. Escolha o triângulo para exibir a lista de tarefas do controle, como mostrado na imagem a seguir.  
   
-     ![Tarefas TableLayoutPanel](~/ide/media/express_tablepanel.png "Express_TablePanel")  
+     ![Tarefas de TableLayoutPanel](../ide/media/express_tablepanel.png "Express_TablePanel")  
 Tarefas TableLayoutPanel  
   
 10. Escolha a tarefa **Editar Linhas e Colunas** para exibir a janela **Estilos de Coluna e Linha**. Escolha **Column1** e defina o tamanho como 15%, certificando-se de que o botão **Porcentagem** esteja selecionado e inserindo `15` na caixa **Porcentagem**. (Trata-se de um controle `NumericUpDown`, que você usará em um tutorial posterior.) Escolha **Column2** e defina-a como 85%. Não escolha o botão **OK** ainda, pois a janela fechará. (Mas se você fizer isso, você pode reabri-la usando a lista de tarefas.)  
   
-     ![Estilos de coluna e linha TableLayoutPanel](../ide/media/vs_tablelayoutpanel_setup.png "VS_TableLayoutPanel_Setup")  
+     ![Estilos de linha e coluna de TableLayoutPanel](../ide/media/vs_tablelayoutpanel_setup.png "VS_TableLayoutPanel_Setup")  
 Estilos de coluna e linha TableLayoutPanel  
   
 11. Na lista suspensa **Mostrar** na parte superior da janela, escolha **Linhas**. Defina **Row1** como 90% e **Row2** como 10%.  
   
 12. Escolha o botão **OK**. O TableLayoutPanel agora deve ter uma grande primeira linha, uma pequena linha inferior, uma pequena coluna esquerda, e uma grande coluna direita. Você pode redimensionar linhas e colunas em TableLayoutPanel selecionando tableLayoutPanel1 no formulário e então arrastando as bordas de linha e coluna.  
   
-     ![Form1 com TableLayoutPanel redimensionado](../ide/media/vs_formafterlayoutpanel.png "VS_FormAfterLayoutPanel")  
+     ![Form1 com o painel TableLayoutPanel redimensionado](../ide/media/vs_formafterlayoutpanel.png "VS_FormAfterLayoutPanel")  
 Form1 com TableLayoutPanel redimensionado  
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  

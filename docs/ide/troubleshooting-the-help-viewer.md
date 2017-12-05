@@ -1,41 +1,15 @@
 ---
-title: "Solução de problemas do Visualizador da Ajuda | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- troubleshooting [Help Viewer 2.0]
-- Help Viewer 2.0, troubleshooting
-ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
-caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 944c3270a33f7eedc47ca4beced0fdaafdf519bc
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+redirect_url: /visualstudio/ide/microsoft-help-viewer
+ms.openlocfilehash: c0b1a114eb157860dd70873929727cc56f1d6514
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
+---
+title: "Solução de problemas do Help Viewer | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "artigo" helpviewer_keywords: 
+  - "solução de problemas [Help Viewer]"
+  - "Help Viewer, solução de problemas" ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12 caps.latest.revision: 13 author: "gewarren" ms.author: "gewarren" manager: ghogen
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solucionando problemas do Visualizador da Ajuda
 Este tópico aborda problemas que podem ocorrer com o Visualizador da Ajuda.  
@@ -63,7 +37,7 @@ Este tópico aborda problemas que podem ocorrer com o Visualizador da Ajuda.
   
 -   Para fornecer comentários, consulte [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) no site da Microsoft ou enviar um email para [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).  
   
--   Para obter mais informações, consulte o fórum [Documentação do Desenvolvedor e Sistema de Ajuda](http://go.microsoft.com/fwlink/?LinkId=232741) e o blog [The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743).  
+-   Para obter mais informações, procure no fórum [Documentação do Desenvolvedor e Sistema de Ajuda](http://go.microsoft.com/fwlink/?LinkId=232741).  
   
-## <a name="see-also"></a>Consulte também  
- [Guia do administrador do Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)
+## <a name="see-also"></a>Consulte também
+[Guia do administrador do Help Viewer](http://go.microsoft.com/fwlink/?LinkId=243985)

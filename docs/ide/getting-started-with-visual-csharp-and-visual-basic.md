@@ -1,11 +1,10 @@
 ---
-title: "Introdução ao Visual C# e ao Visual Basic | Microsoft Docs"
+title: "Introdução ao Visual C# e ao Visual Basic usando o Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 helpviewer_keywords:
@@ -16,31 +15,17 @@ helpviewer_keywords:
 - learn C#
 - learn Visual Basic
 ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e493d170def8951fe08f9024af28c79db3980779
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="getting-started-with-visual-c-and-visual-basic"></a>Introdução ao Visual C# e ao Visual Basic
+# <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Introdução ao Visual C# e ao Visual Basic usando o Visual Studio
 Se você não tem experiência no Visual C# ou no Microsoft Visual Basic, este é o lugar para começar. A Ajuda da Introdução é uma série de lições sequenciais que apresenta você ao Visual C# e ao Visual Basic. Divirta-se criando alguns softwares excelentes.  
   
  Para saber mais sobre o Visual C++, consulte [Recursos do Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
@@ -56,4 +41,11 @@ Se você não tem experiência no Visual C# ou no Microsoft Visual Basic, este �
  Crie um jogo de enigmas de matemática com tempo, em que o jogador deve resolver quatro problemas aritméticos aleatórios em um determinado tempo. Saiba como gerar números aleatórios usando a classe `Random`, disparar eventos usando um controle `Timer`, controlar o fluxo do programa usando instruções `if else` e executar operações aritméticas básicas.  
   
  [Tutorial 3: criar um jogo de correspondência](../ide/tutorial-3-create-a-matching-game.md)  
- Crie um jogo da memória, onde o jogador deve combinar pares de ícones ocultos. Aprenda como manter objetos usando um objeto `List`, usar um loop `foreach`, rastrear o estado de um formulário usando variáveis de referência, criar um manipulador de eventos que você possa usar com vários objetos e acionar um temporizador no começo do jogo.
+ Crie um jogo da memória, onde o jogador deve combinar pares de ícones ocultos. Aprenda como manter objetos usando um objeto `List`, usar um loop `foreach`, rastrear o estado de um formulário usando variáveis de referência, criar um manipulador de eventos que você possa usar com vários objetos e acionar um temporizador no começo do jogo.  
+
+|         |         |
+|---------|---------|
+|  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=nl3AuKD6D_9011787171) sobre como criar um simples aplicativo Universal do Windows no Visual Studio.  
+
+## <a name="see-also"></a>Consulte também
+[Introdução ao desenvolvimento com Visual Studio](get-started-developing-with-visual-studio.md)

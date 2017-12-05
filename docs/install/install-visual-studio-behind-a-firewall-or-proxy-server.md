@@ -5,8 +5,7 @@ ms.custom:
 ms.date: 08/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,12 +17,11 @@ ms.assetid:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: 2bafcbf441d4efd6446e77f619379a665597e063
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: cb2ef641cb5b9b6efbd1aeb539154da1e4082b51
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Instalar o Visual Studio por trás de um firewall ou servidor proxy
 
@@ -64,20 +62,26 @@ Se for possível para seu ambiente, considere adicionar os domínios a seguir co
 | incredibuildvs2017i.azureedge.net | Desenvolvimento de jogos com C++ <br />(IncrediBuild) |
 | www.python.org | Desenvolvimento do Python <br />(Python) <br /><br />Ciência de dados e aplicativos analíticos <br />(Python) |
 
+## <a name="get-support"></a>Obter suporte
+Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Aqui estão algumas outras opções de suporte:
+* Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
+* Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
+* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
+
 ## <a name="see-also"></a>Consulte também
 * [Instalar o Visual Studio 2017](install-visual-studio.md)
-* [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-  * [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-    * [Exemplos de parâmetro de linha de comando](command-line-parameter-examples.md)
-    * [Referência de ID de componente e carga de trabalho](workload-and-component-ids.md)
-  * [Criar uma instalação em rede do Visual Studio](create-a-network-installation-of-visual-studio.md)
-    * [Considerações especiais para a instalação do Visual Studio em um ambiente offline](install-visual-studio-in-offline-environment.md)
-  * [Automatizar o Visual Studio com um arquivo de resposta](automated-installation-with-response-file.md)
-  * [Chaves de produto automaticamente durante a implantação do Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
-  * [Definir padrões para implantações empresariais do Visual Studio](set-defaults-for-enterprise-deployments.md)
-  * [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md)
-  * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
-  * [Atualizações de controle para implantações do Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-  * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
-  * [Relatar um problema com o Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-
+* [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+  * [Exemplos de parâmetro de linha de comando](command-line-parameter-examples.md)
+  * [Referência de ID de componente e carga de trabalho](workload-and-component-ids.md)
+* [Criar uma instalação de rede do Visual Studio 2017](create-a-network-installation-of-visual-studio.md)
+  * [Instalar os certificados necessários para instalação offline do Visual Studio](install-certificates-for-visual-studio-offline.md)
+* [Automatizar a instalação do Visual Studio com um arquivo de resposta](automated-installation-with-response-file.md)
+* [Chaves de produto automaticamente durante a implantação do Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
+* [Definir padrões para implantações empresariais do Visual Studio 2017](set-defaults-for-enterprise-deployments.md)
+* [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md)
+* [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Atualizações de controle para implantações do Visual Studio 2017](controlling-updates-to-visual-studio-deployments.md)
+* [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)

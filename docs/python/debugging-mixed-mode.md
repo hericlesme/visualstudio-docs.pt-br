@@ -1,35 +1,31 @@
 ---
 title: "Depuração de modo misto do Python no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4ca86a87-e254-4ab7-b3ba-a0ab99c1da93
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2f7253e91535e5c9f3214b712da135db46ed7cf9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a185a7888b693d37aa5df8f3a051679d6b7e9ec5
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="debugging-python-and-c-together"></a>Depurando o Python e o C++ juntos
 
 A maioria dos depuradores regulares do Python dão suporte apenas à depuração de código do Python. No entanto, na prática, o Python é usado em conjunto com o C ou o C++, nos casos em que é necessário o alto desempenho ou a capacidade de invocar diretamente as APIs da plataforma (consulte [Criando uma extensão do C++ para o Python](cpp-and-python.md) para obter um exemplo). Quando um projeto Python é carregado, o Visual Studio fornece a depuração de modo misto integrada e simultânea para o Python e o C/C++ nativo, com pilhas de chamadas combinadas, a capacidade de alternar entre o código do Python e o código nativo, pontos de interrupção nos dois tipos de código e a capacidade de ver representações do Python de objetos em quadros nativos e vice-versa:
 
 ![Depuração de modo misto](media/mixed-mode-debugging.png) 
 
-Para obter uma introdução à compilação, ao teste e à depuração de módulos nativos do C com o Visual Studio, assista a [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Aprofundamento: Criar módulos nativos) (youtube.com, 9min9s).
+Para obter uma introdução à compilação, ao teste e à depuração de módulos nativos do C com o Visual Studio, assista a [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Aprofundamento: Criar módulos nativos) (youtube.com, 9min9s). O vídeo aplica-se para o Visual Studio 2015 e 2017.
 
 > [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
 
@@ -130,7 +126,7 @@ O nó “[Exibição do C++]” fornece uma representação da estrutura subjace
 
 ![Exibição do C++](media/mixed-mode-debugging-cpp-view.png)
 
-Se um campo filho de um objeto for do tipo `PyObject` ou um dos outros tipos com suporte, ele terá um nó de representação “[Exibição do Python]” (se essas representações estiverem habilitadas), possibilitando o acesso a gráficos de objeto em que links não são diretamente expostos ao Python.
+Se um campo filho de um objeto for do tipo `PyObject` ou um dos outros tipos com suporte, ele terá um nó de representação “[Exibição do Python]” (se essas representações estiverem habilitadas), possibilitando o acesso a grafos de objeto em que links não são diretamente expostos ao Python.
 
 Ao contrário dos nós “[Python View]”, que usam metadados de objeto do Python para determinar o tipo do objeto, não há nenhum mecanismo similarmente confiável para a “[C++ View]”. Em termos gerais, considerando um valor do Python (ou seja, uma referência `PyObject`), não é possível determinar com confiança qual estrutura do C/C++ está dando suporte a ele. O depurador de modo misto tenta adivinhar esse tipo, observando vários campos do tipo de objeto (como o `PyTypeObject` referenciado por seu campo `ob_type`) que têm tipos de ponteiro de função. Se um desses ponteiros de função referenciar uma função que pode ser resolvida e essa função tiver um parâmetro `self` com um tipo mais específico que `PyObject*`, esse tipo será considerado como o tipo de suporte. Por exemplo, se `ob_type->tp_init` de um objeto especificado apontar para a seguinte função:
 

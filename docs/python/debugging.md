@@ -1,35 +1,31 @@
 ---
 title: "Depuração do Python no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2192dc77-b5da-4332-b753-fa20f03f81e0
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7a6aac76bc3830dd6c003c9834b242c6d79f7821
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 92fd0f30dfbb09f0eca8d2c9bc98d7904d81353c
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="debugging-your-python-code"></a>Depurando o código do Python
 
 O Visual Studio fornece uma experiência de depuração abrangente para o Python, incluindo a anexação a processos em execução, avaliação de expressões nas janelas Inspeção e Imediata, inspeção de variáveis locais, pontos de interrupção, instruções intervir/depuração parcial/depuração circular, comando Definir Próxima Instrução e muito mais. 
 
-Para obter uma visão geral da depuração, assista a [Getting Started with PTVS, Part 4: Debugging](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introdução à PTVS, parte 4: Depuração) (youtube.com, 3min30s).
+Para um visão geral sobre depuração, consulte [Depuração de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Microsoft Virtual Academy 3min32s).
 
-> [!VIDEO https://www.youtube.com/embed/bO7wpzgy74A]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
 
 Neste tópico:
 
@@ -44,13 +40,15 @@ Consulte também os seguintes tópicos sobre depuração específicos ao cenári
 - [Depuração de modo misto do Python/C++](debugging-mixed-mode.md)
 - [Símbolos para a depuração do modo misto](debugging-symbols-for-mixed-mode.md)
 
-<a name="debugging-without-a-project"</a>
+<a name="debugging-without-a-project"></a>
+
 > [!Tip]
-> O Python no Visual Studio dá suporte à depuração sem um projeto. Com um arquivo independente do Python aberto, clique com o botão direito do mouse no editor, selecione **Iniciar Depuração** e o Visual Studio iniciará o script com o ambiente global padrão (confira [Ambientes do Python](python-environments.md)) sem nenhum argumento. Mas daí em diante, você tem suporte completo à depuração.
+> O Python no Visual Studio dá suporte à depuração sem um projeto. Com um arquivo independente do Python aberto, clique com o botão direito do mouse no editor, selecione **Iniciar com Depuração** e o Visual Studio iniciará o script com o ambiente global padrão (confira [Ambientes do Python](python-environments.md)) sem nenhum argumento. Mas daí em diante, você tem suporte completo à depuração.
 >
 > Para controlar o ambiente e os argumentos, crie um projeto para o código, o que é feito facilmente com o modelo de projeto [Do código Python Existente](python-projects.md#creating-a-project-from-existing-files).
 
-<a name="debugging-with-a-project"</a>
+<a name="debugging-with-a-project"></a>
+
 ## <a name="basic-debugging"></a>Depuração básica
 
 O fluxo de trabalho básico de depuração envolve a definição de pontos de interrupção, a execução do código em etapas, a inspeção de valores e o tratamento de exceções, conforme descrito nas próximas seções. Para obter detalhes completos sobre o depurador do Visual Studio, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).

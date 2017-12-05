@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,33 +12,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, reference
+helpviewer_keywords: MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f6c59188abc8cbb9909c12438bc58fa9301d8af9
-ms.openlocfilehash: 25d55f075a3586356cc291e2811520a9bbafadf0
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-reference"></a>Referência do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é o sistema de build para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Os links a seguir levam a tópicos que contêm informações de referência [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -88,8 +71,7 @@ ms.lasthandoff: 05/19/2017
  Lista os caracteres que podem ter “escapado” para serem interpretados corretamente. Uma sequência de escape é uma série de caracteres que indica que o que segue se trata de uma interpretação alternativa.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- A [Visão geral do MSBuild ](../msbuild/msbuild.md)
- introduz [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e fornece links para tópicos que explicam como o usar para criar projetos.  
+ [Visão geral do MSBuild ](../msbuild/msbuild.md) Introduz o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e fornece links para tópicos que explicam como o usar para criar projetos.  
   
  <xref:Microsoft.Build.Conversion>  
  Contém a referência ao namespace de conversão  

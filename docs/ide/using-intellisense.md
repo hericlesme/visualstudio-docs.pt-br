@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vc.tools.intellisense
+f1_keywords: vc.tools.intellisense
 helpviewer_keywords:
 - IntelliSense, Complete Word
 - IntelliSense, completion mode
@@ -25,29 +23,15 @@ helpviewer_keywords:
 - IntelliSense
 - List Members
 ms.assetid: 9fdb489b-8b46-4b92-9ccc-c8f8cc184081
-caps.latest.revision: 29
-author: kempb
-ms.author: kempb
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 77cf75613c2d3d31443849df960d30da5b641d62
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 149cb62f35ce4b1ce15ab939a0805bc63bfb6f26
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-intellisense"></a>Usando IntelliSense
 O IntelliSense é o termo geral para vários recursos: Listar Membros, Informações do Parâmetro, Informação Rápida e Completar Palavra. Esses recursos ajudam você a aprender mais sobre o código que está usando, a manter o acompanhamento dos parâmetros que está digitando e a adicionar chamadas a métodos e propriedades pressionando apenas algumas teclas.  
@@ -55,7 +39,7 @@ O IntelliSense é o termo geral para vários recursos: Listar Membros, Informaç
  Vários aspectos do IntelliSense são específicos do idioma. Para obter mais informações sobre o IntelliSense para diferentes idiomas, consulte os tópicos listados em Consulte também.  
   
 ## <a name="list-members"></a>Listar Membros  
- Uma lista de membros válidos de um tipo (ou namespace) aparece depois que você digita um caractere disparador (por exemplo, um ponto (`.`) no código gerenciado ou `::` em C++). Se você continuar digitando caracteres, a lista será filtrada para incluir somente os membros que comecem com esses caracteres.  
+ Uma lista de membros válidos de um tipo (ou namespace) aparece depois que você digita um caractere disparador (por exemplo, um ponto (`.`) no código gerenciado ou `::` em C++). Se você continuar a digitar caracteres, a lista será filtrada para incluir somente os membros que começam com esses caracteres ou aqueles em que o início de *qualquer* palavra do nome começar com esses caracteres. O IntelliSense também realiza a correspondência de "palavras concatenadas", para que você possa digitar apenas a primeira letra de cada palavra concatenada no nome do membro para ver as correspondências.   
   
  Após selecionar um item, você poderá inseri-lo em seu código pressionando TAB ou inserindo um espaço. Se você selecionar um item e digitar um ponto, o item aparecerá seguido pelo ponto, que abrirá outra lista de membros. Ao selecionar um item, mas antes de inseri-lo, você obtém a Informação Rápida do item.  
   
@@ -87,7 +71,7 @@ O IntelliSense é o termo geral para vários recursos: Listar Membros, Informaç
   
  Quando você seleciona um membro na caixa **Listar Membros**, as Informações Rápidas também são exibidas.  
   
- ![Informações do parâmetro em um arquivo de código C&#35;](~/ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")  
+ ![Informações do parâmetro em um arquivo de código C&#35;](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")  
   
  É possível invocar Informações Rápidas clicando em **Editar/IntelliSense/Informações Rápidas**, digitando CTRL+I ou clicando no botão **Informações Rápidas** na barra de ferramentas do editor.  
   
@@ -111,7 +95,7 @@ O IntelliSense é o termo geral para vários recursos: Listar Membros, Informaç
  **O cursor está em um literal de cadeia de caracteres.** Não será possível usar o IntelliSense se o cursor estiver entre aspas em um literal de cadeia de caracteres, como no exemplo a seguir:  
   
 ```  
-MessageBox( hWnd, "String literal|") )  
+MessageBox( hWnd, "String literal|")
 ```  
   
  **As opções automáticas estão desativadas.** Por padrão, o IntelliSense funciona automaticamente, mas é possível desabilitar isso. Mesmo se o preenchimento automático de declaração for desabilitado, é possível invocar um recurso IntelliSense.  

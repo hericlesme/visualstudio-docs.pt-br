@@ -1,39 +1,24 @@
 ---
-title: "Analisar a qualidade do código de aplicativos da Store usando a análise de código estático do Visual Studio | Microsoft Docs"
+title: "Analisar a qualidade do código de aplicativos UWP usando a análise de código estático do Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2341013d-a08b-49a7-b6fd-a7b6aaa797e0
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: erickson-doug
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 23cfce356ffbd97fe300a7b7d3da1cec6eb1c070
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d3c9afffc67897fd1c7a05a002264dcfea274992
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código de aplicativos da Store usando a análise de código estático do Visual Studio
+# <a name="analyze-the-code-quality-of-uwp-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código de aplicativos UWP usando a análise de código estático do Visual Studio
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  A ferramenta de análise de código do Visual Studio examina seu código em busca de um conjunto de defeitos e violações comuns das práticas recomendadas de programação. Os avisos da análise de código diferem dos erros e avisos do compilador porque a ferramenta de análise de código procura por padrões de código específicos que são válidos, mas ainda podem criar problemas para você ou outras pessoas que usem o seu código. A análise de código também pode localizar os defeitos no seu código que são difíceis de descobrir com testes. A execução da ferramenta de análise de código a intervalos regulares durante o processo de desenvolvimento pode melhorar a qualidade do seu aplicativo concluído.  

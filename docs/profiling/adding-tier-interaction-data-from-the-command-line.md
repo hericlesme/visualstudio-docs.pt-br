@@ -4,44 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tier interaction profiling method
 - profiling tools,tier interaction method
 ms.assetid: 5a35647f-03f2-4555-8eeb-fda7e0080e67
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 6c394dfcf1c0df0cb7d006592b3dc386da328876
-ms.openlocfilehash: 33bef5cc4eb777cb2778b12f919bbcac8f7cc574
-
+ms.openlocfilehash: a210ce1f6aeac113033bd82306bb5b682a5e21b9
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Adicionando dados de interação entre camadas da linha de comando
 A criação de perfil de interação de camadas fornece informações adicionais sobre os tempos de execução síncronos que o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] chama em funções de aplicativos de várias camadas que se comunicam com um ou mais bancos de dados.  
   
  **Windows 8 e Windows Server 2012**  
   
- Para coletar dados de interação de camadas em aplicativos da área de trabalho do Windows 8 e do Windows Server 2012, você deve usar o método de instrumentação. Não há suporte para a coleta de dados de interação de camadas nos aplicativos da Windows Store.  
+ Para coletar dados de interação de camadas em aplicativos da área de trabalho do Windows 8 e do Windows Server 2012, você deve usar o método de instrumentação. Não há suporte para a coleta de dados de interação de camadas nos aplicativos UWP.  
   
  **Edições do Visual Studio**  
   
@@ -169,8 +154,3 @@ vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```  
   
  Para obter mais informações sobre o VSPerfASPNETCmd, consulte [Criação de perfil do site rápida com VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
-
-
-<!--HONumber=Feb17_HO4-->
-
-

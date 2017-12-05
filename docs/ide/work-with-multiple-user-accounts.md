@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 592cde9dac7ea7b49934200469e85caf1fd58f82
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 42a66b69bb2c1736ddf3cb4c07e8ef8be86ed4d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudante, é possível adicionar todas elas no Visual Studio para acessar os recursos de qualquer conta sem a necessidade de entrar nas contas separadamente. No momento, os serviços Azure, Application Insights, Team Foundation Server e Office 365 oferecem suporte à experiência de logon simplificada. Serviços adicionais podem ser disponibilizados com o passar do tempo.
@@ -61,12 +44,12 @@ Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudant
 
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Acessar sua conta do Azure através da caixa de diálogo Adicionar Serviço Conectado  
 
-1.  Crie um projeto de Aplicativo Universal no C#.  
+1.  Crie um projeto de aplicativo UWP em C#.  
 
 2.  Escolha o nó do projeto no Gerenciador de Soluções e escolha **Adicionar, Serviço Conectado**. O assistente **Adicionar Serviço Conectado** é exibido e mostra a lista de serviços na conta do Azure que está associada com sua ID de logon do Visual Studio. Observe que você não precisa entrar separadamente no Azure. No entanto, é necessário entrar nas outras contas na primeira vez que você tentar acessar os recursos delas de um determinado computador.  
 
     > [!WARNING]
-    >  Se esta for a primeira vez que você está criando um aplicativo da Store no Visual Studio em um computador específico, você será solicitado a habilitar o dispositivo para o modo de desenvolvimento indo até **Configurações &#124; Atualizações e Segurança &#124; Para Desenvolvedores** em seu computador. Para obter mais informações, consulte [Habilitar seu dispositivo para desenvolvimento](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).  
+    >  Se esta for a primeira vez que você está criando um aplicativo UWP no Visual Studio em um computador específico, você será solicitado a habilitar o dispositivo para o modo de desenvolvimento acessando **Configurações &#124; Atualizações e Segurança &#124; Para Desenvolvedores** em seu computador. Para obter mais informações, consulte [Habilitar seu dispositivo para desenvolvimento](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).  
 
 ###  <a name="access_azure"></a> Acessar o Azure Active Directory em um projeto Web  
  O Azure AD habilita o suporte para o logon única do usuário final em aplicativos Web ASP.NET MVC ou autenticação AD nos serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao seu domínio do Active Directory podem usar suas contas existentes do Azure AD para conectar-se aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio. Para ver isso em ação, crie um aplicativo Web (**Arquivo, Novo Projeto, C#, Nuvem, Aplicativo Web ASP .NET**). Na caixa de diálogo Novo Projeto ASP.NET escolha **Alterar Autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.  
@@ -88,5 +71,7 @@ Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudant
  ![Gerenciador de Conta](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")  
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Rever o Assistente para Adicionar Serviços Conectados e o Gerenciador de Servidores  
- Vá novamente até o **Gerenciador de Servidores**, clique com botão direito do mouse no nó do Azure e escolha **Gerenciar e filtrar assinaturas**. Escolha a nova conta, clicando na seta suspensa ao lado da conta atual e, em seguida, escolha quais assinaturas você deseja exibir no Gerenciador de Servidores. Você deve ver todos os serviços associados à assinatura especificada. Mesmo que você não esteja conectado ao IDE do Visual Studio com a segunda conta, você está conectado aos serviços e recursos dessa conta. O mesmo se aplica para **Projeto, Adicionar Serviço Conectado** e **Equipe, Conectar-se ao Team Foundation Server**.
+ Vá novamente até o **Gerenciador de Servidores**, clique com botão direito do mouse no nó do Azure e escolha **Gerenciar e filtrar assinaturas**. Escolha a nova conta, clicando na seta suspensa ao lado da conta atual e, em seguida, escolha quais assinaturas você deseja exibir no Gerenciador de Servidores. Você deve ver todos os serviços associados à assinatura especificada. Mesmo que você não esteja conectado ao IDE do Visual Studio com a segunda conta, você está conectado aos serviços e recursos dessa conta. O mesmo se aplica para **Projeto, Adicionar Serviço Conectado** e **Equipe, Conectar-se ao Team Foundation Server**.  
 
+ ## <a name="see-also"></a>Consulte também  
+[Ambiente conectado](../ide/connected-environment.md)  

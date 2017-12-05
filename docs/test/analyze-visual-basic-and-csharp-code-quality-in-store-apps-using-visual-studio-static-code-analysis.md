@@ -1,41 +1,25 @@
 ---
-title: "Analisar a qualidade do código do Visual Basic e C# em aplicativos da Store usando a análise de código estático do Visual Studio | Microsoft Docs"
+title: "Analisar a qualidade do código do Visual Basic e C# em aplicativos UWP usando a análise de código estático do Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.codeanalysis.propertypages.csvb.express
+f1_keywords: vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: erickson-doug
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3be5926c1a31bd02b750116077d7cffe73edaf16
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: e61f307872f60da316480d3654507b5225588f41
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código do Visual Basic e C# em aplicativos da Store usando a análise de código estático do Visual Studio
+# <a name="analyze-visual-basic-and-c-code-quality-in-uwp-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código do Visual Basic e C# em aplicativos UWP usando a análise de código estático do Visual Studio
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  A ferramenta de análise de código Visual Studio Express examina seu código em busca de um conjunto de defeitos e violações comuns das práticas recomendadas de programação. Os avisos da análise de código diferem dos erros e avisos do compilador porque a ferramenta de análise de código procura por padrões de código específicos que são válidos, mas ainda podem criar problemas para você ou outras pessoas que usem o seu código. A análise de código também pode localizar os defeitos no seu código que são difíceis de descobrir com testes. A execução da ferramenta de análise de código a intervalos regulares durante o processo de desenvolvimento pode melhorar a qualidade do seu aplicativo concluído.  
@@ -69,16 +53,16 @@ ms.lasthandoff: 02/22/2017
   
  A solução é compilada e a análise de código é executada. Os resultados aparecem na janela Análise de Código.  
   
- ![Janela Análise de Código](~/test/media/ca_managed_collapsed.png "CA_Managed_Collapsed")  
+ ![Janela Análise de Código](../test/media/ca_managed_collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analisando e resolvendo avisos da análise de código  
  Para analisar um aviso específico, clique no respectivo título na janela Análise de Código. O aviso se expande para exibir informações detalhadas sobre o problema.  
   
- ![Aviso de análise de código expandido](~/test/media/ca_managed_callouts.png "CA_Managed_Callouts")  
+ ![Aviso de análise de código expandido](../test/media/ca_managed_callouts.png "CA_Managed_Callouts")  
   
  Quando você expande um aviso, a linha de código que o causou é realçada no editor de códigos do Visual Studio.  
   
- ![Realce de texto da análise de código](~/test/media/ca_managed_sourceline.png "CA_Managed_SourceLine")  
+ ![Realce de texto da análise de código](../test/media/ca_managed_sourceline.png "CA_Managed_SourceLine")  
   
  Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, torne a executar a análise de código para verificar se o aviso não aparece mais na janela Análise de Código e se a sua correção não gerou novos avisos.  
   
@@ -105,7 +89,7 @@ ms.lasthandoff: 02/22/2017
 ##  <a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código  
  Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.  
   
- ![Pesquisar e filtrar a janela de análise de código](~/test/media/ca_searchfilter.png "CA_SearchFilter")  
+ ![Pesquisar e filtrar a janela de análise de código](../test/media/ca_searchfilter.png "CA_SearchFilter")  
   
  No [!INCLUDE[vs_dev11_expwin_long](../misc/includes/vs_dev11_expwin_long_md.md)], todos os avisos de análise de código têm o nível de severidade Aviso.  
   

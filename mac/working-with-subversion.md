@@ -1,19 +1,17 @@
 ---
-title: Trabalhando com o Subversion
+title: Trabalhando com o Subversion | Microsoft Docs
 description: Usando o Subversion no Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
+ms.openlocfilehash: 026e3625b4ee2d6582ce5539e5cab68c945f09c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 70cf7a411141c5a59e275cb455ddcf91863c4f8b
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-subversion"></a>Trabalhando com o Subversion
 
 Como mencionado anteriormente neste artigo, o Subversion é o sistema de controle de versão centralizado que permite fazer check-out de uma única cópia mestra dos dados centralizados. Em contraste com o Git, fazer check-out de um repositório do Subversion não clona todo o repositório e cria apenas um instantâneo pontual.
@@ -58,4 +56,3 @@ Para confirmar um arquivo para o repositório remoto, pressione Confirmar..., di
 ![Confirmando um arquivo](media/version-control-svnCommit.png)
 
 Isso enviará as alterações ao repositório em que elas criarão a nova revisão de todas as suas modificações.
-

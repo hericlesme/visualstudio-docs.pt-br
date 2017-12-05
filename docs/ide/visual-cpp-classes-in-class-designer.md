@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.inheritancelinelabel
-helpviewer_keywords:
-- Class Designer [Visual Studio], classes
+f1_keywords: vs.classdesigner.inheritancelinelabel
+helpviewer_keywords: Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 02cd1cabf8cf296130ace9a3dcf37a237805dfe9
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: b4ba110a67604a24517cac90c4645f118a33e722
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes do Visual C++ no Designer de Classe
 O Designer de Classe dá suporte a classes do C++ e visualiza classes nativas do C++ da mesma maneira que formas de classe do Visual Basic e do Visual C#, exceto pelo fato de classes do C++ poderem ter múltiplas relações de herança. É possível expandir a forma de classe para exibir mais campos e métodos na classe ou recolhê-la para economizar espaço.  
@@ -69,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  O comando **Mostrar Classes Derivadas** não tem suporte para código C++. É possível exibir as classes derivadas indo até o Modo de Exibição de Classe, expandindo o nó de tipo, expandindo a subpasta **Tipos Derivados** e, em seguida, arrastando esses tipos para o diagrama de classe.  
   
- Para obter mais informações sobre a herança de classes múltiplas, consulte [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Classes Base Múltiplas](/cpp/cpp/multiple-base-classes).  
+ Para obter mais informações sobre a herança de classes múltiplas, consulte [Herança múltipla](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx) e [Classes Base Múltiplas](/cpp/cpp/multiple-base-classes).  
   
 ## <a name="abstract-classes"></a>Classes abstratas  
  O Designer de Classe dá suporte a classes abstratas (também chamadas de "classes base abstratas"). Essas são classes que você nunca instancia, mas das quais pode derivar outras classes. Usando um exemplo de "Herança múltipla" no início deste documento, você pode instanciar a classe `Bird` como objetos individuais, da seguinte maneira:  
@@ -188,6 +171,6 @@ typedef struct
  [Trabalhando com código do Visual C++ (Designer de Classe)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [Classes e structs](/cpp/cpp/classes-and-structs-cpp)   
  [Tipos de classe anônima](/cpp/cpp/anonymous-class-types)   
- [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Herança múltipla](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
  [Classes base múltiplas](/cpp/cpp/multiple-base-classes)   
  [Modelos](/cpp/cpp/templates-cpp)

@@ -1,34 +1,31 @@
 ---
 title: "Depuração remota multiplataforma Python no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: aa667357-763f-4ce6-8e47-48f9337658a8
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7d5526bbcde438896f63c0f9b4f75d919d3ca457
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: 2711238ccc6d90b34df748c6b59e4130c74de69b
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
 
 O Visual Studio pode iniciar e depurar aplicativos Python local e remotamente em um computador Windows (consulte [Depuração remota](../debugger/remote-debugging.md)). Ela também pode depurar remotamente em um dispositivo ou sistema operacional diferente ou em uma implementação Python que não seja o CPython usando a [biblioteca ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Ao usar a ptvsd, o código do Python que está sendo depurado hospeda o servidor de depuração ao qual o Visual Studio pode se anexar. Essa hospedagem exige uma pequena modificação no código para importar e habilitar o servidor e pode exigir configurações de rede ou de firewall no computador remoto para permitir conexões TCP.
 
-Para obter uma introdução à depuração remota, assista a [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (Aprofundamento: Depuração remota de plataforma cruzada) (youtube.com, 6min22s).
+Para uma introdução à depuração remota, assista a [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (Aprofundamento: depuração remota multiplataforma) (youtube.com, 6min22s), que é aplicável ao Visual Studio 2015 e 2017.
 
 > [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
 
@@ -185,4 +182,3 @@ O Visual Studio o avisará sobre possíveis problemas de certificado ao se conec
 
 > [!Warning]
 > No momento, o Visual Studio 2017 travará quando esses avisos forem ignorados. Verifique se todos os problemas foram corrigidos antes de tentar se conectar.
-

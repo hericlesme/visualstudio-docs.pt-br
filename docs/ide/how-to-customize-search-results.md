@@ -1,42 +1,15 @@
 ---
-title: Como personalizar resultados da pesquisa | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Help Viewer 2.0, customizing search results
-- customizing search results [Help Viewer 2.0]
-ms.assetid: 3431ec03-0221-4be2-9936-887a1c36db89
-caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5d8b0cded371eb77b9956fa701df9c8a79b5c0ff
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+redirect_url: /visualstudio/ide/how-to-search-for-topics
+ms.openlocfilehash: 27a19effba5489417c4646e2b0565a9fbf281d6a
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
+---
+title: "Como personalizar resultados da pesquisa | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "artigo" helpviewer_keywords: 
+  - "Help Viewer, personalizando resultados da pesquisa"
+  - "personalizando resultados da pesquisa [Help Viewer]" ms.assetid: 3431ec03-0221-4be2-9936-887a1c36db89 caps.latest.revision: 6 author: "gewarren" ms.author: "gewarren" manager: ghogen
 ---
 # <a name="how-to-customize-search-results"></a>Como personalizar resultados de pesquisa
 Você pode personalizar a aparência dos resultados da pesquisa na guia **Pesquisa** de várias maneiras.  
@@ -65,6 +38,3 @@ Você pode personalizar a aparência dos resultados da pesquisa na guia **Pesqui
      A caixa de diálogo **Opções do Visualizador** é exibida.  
   
 2.  Selecione a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1**.  
-  
-## <a name="see-also"></a>Consulte também  
- [Dicas de pesquisa de texto completo](../ide/full-text-search-tips.md)

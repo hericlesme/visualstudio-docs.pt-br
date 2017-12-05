@@ -1,68 +1,51 @@
 ---
-title: "Instalar e gerenciar conteúdo Local | Microsoft Docs"
+title: "Instalar documentação local do Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-help-viewer
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- hv_manage
+f1_keywords: hv_manage
 helpviewer_keywords:
-- changing content installation source [Help Viewer 2.0]
-- updating local content [Help Viewer 2.0]
-- Help Viewer 2.0, content installation source
-- Help Viewer 2.0, updating local content
-- Help Viewer 2.0, changing content installation source
-- installing local content [Help Viewer 2.0]
-- content installation source [Help Viewer 2.0]
-- downloading content [Help Viewer 2.0]
-- removing local content [Help Viewer 2.0]
-- Help Viewer 2.0, removing local content
-- Help Viewer 2.0, installing local content
-- Help Viewer 2.0, downloading content
+- changing content installation source [Help Viewer]
+- updating local content [Help Viewer]
+- Help Viewer, content installation source
+- Help Viewer, updating local content
+- Help Viewer, changing content installation source
+- installing local content [Help Viewer]
+- content installation source [Help Viewer]
+- downloading content [Help Viewer]
+- removing local content [Help Viewer]
+- Help Viewer, removing local content
+- Help Viewer, installing local content
+- Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b016ce5c67f1aa7242d7af3f3fb1142b61145f63
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 3bd498004568bab80565782e11b46691a7d0ef1f
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="install-and-manage-local-content"></a>Instalar e gerenciar o conteúdo local
 Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover o conteúdo de Ajuda instalado no seu computador para atender às suas necessidades de desenvolvimento de software.  
   
- Para gerenciar o conteúdo em seu computador local, faça logon com uma conta que tenha permissões administrativas. Além disso, você poderá não conseguir gerenciar o conteúdo local se trabalhar em um ambiente empresarial, pois os administradores de sistema podem tomar essas decisões para sua organização. Para obter mais informações, consulte o [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md).  
+Para gerenciar o conteúdo em seu computador local, faça logon com uma conta que tenha permissões de administrador. Além disso, você poderá não conseguir gerenciar o conteúdo local se trabalhar em um ambiente empresarial, pois os administradores de sistema podem tomar essas decisões para sua organização. Para obter mais informações, consulte o [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md).  
   
 ## <a name="changing-the-content-installation-source"></a>Alterando a origem da instalação de conteúdo  
- Por padrão, o Help Viewer instala o conteúdo usando um serviço online da Microsoft como origem. Geralmente, você não deve alterar a fonte de conteúdo, a menos que trabalhe em um ambiente corporativo para o qual um administrador do sistema já tenha instalado conteúdo em outro local.  
+Por padrão, o Help Viewer instala o conteúdo usando um serviço online da Microsoft como origem. Geralmente, você não deve alterar a fonte de conteúdo, a menos que trabalhe em um ambiente corporativo para o qual um administrador do sistema já tenha instalado conteúdo em outro local.  
   
 #### <a name="to-change-the-content-installation-source"></a>Para alterar a origem da instalação de conteúdo  
   
 1.  Na guia **Gerenciar Conteúdo**, escolha o botão de opção **Disco**.  
   
     > [!NOTE]
-    >  A opção **Disco** não estará disponível se o administrador o tiver impedido de modificar a origem de instalação de conteúdo. Para obter mais informações, consulte o [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md).  
+    >  A opção **Disco** não estará disponível se o administrador o impediu de modificar a origem de instalação de conteúdo. Para obter mais informações, consulte o [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md).  
   
 2.  Execute uma das seguintes etapas:  
   
@@ -73,12 +56,13 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
     -   Na lista, escolha a entrada usada mais recentemente.  
   
 ## <a name="download-and-install-content-locally"></a>Baixar e instalar o conteúdo localmente  
- Você poderá exibir tópicos sem uma conexão de Internet se baixar e instalar o conteúdo em seu computador local.  
+Se você baixar e instalar o conteúdo em seu computador local, poderá exibir tópicos quando não tiver uma conexão de Internet.  
   
 > [!IMPORTANT]
->  Para instalar o conteúdo, faça logon com uma conta que tenha permissões administrativas.  
+> Para instalar o conteúdo, faça logon com uma conta que tenha permissões administrativas.  
   
- Se o IDE do Visual Studio estiver definido como um idioma diferente do inglês, você poderá instalar o conteúdo em inglês, o conteúdo localizado ou ambos. No entanto, nenhum conteúdo será exibido se você instalar apenas a versão em inglês e a caixa de seleção **Incluir conteúdo em inglês em todas as solicitações de F1 e guias de navegação** na caixa de diálogo **Opções do Visualizador** estiver desmarcada.  
+> [!NOTE]
+> Se o IDE do Visual Studio estiver definido como um idioma diferente do inglês, você poderá instalar o conteúdo em inglês, o conteúdo localizado ou ambos. No entanto, nenhum conteúdo aparecerá se você instalar apenas a versão em inglês e a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1** na caixa de diálogo **Opções do Visualizador** estiver desmarcada.  
   
 #### <a name="to-download-and-install-content"></a>Para baixar e instalar conteúdo  
   
@@ -93,12 +77,13 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
      O livro ou os livros especificados são instalados junto com todas as atualizações de livros que já estão no seu computador. Os tempos de instalação variam, mas você pode exibir o progresso na barra de status.  
   
 ## <a name="removing-local-content"></a>Removendo conteúdo local  
- Você pode economizar espaço em disco removendo conteúdo indesejado do seu computador.  
+Você pode economizar espaço em disco removendo conteúdo indesejado do seu computador.  
   
 > [!IMPORTANT]
->  É preciso ter permissões administrativas para remover conteúdo.  
+> É preciso ter permissões administrativas para remover conteúdo.  
   
- Nenhum conteúdo será exibido se o IDE do Visual Studio estiver definido como um idioma diferente do inglês, você remover o conteúdo localizado e a caixa de seleção **Incluir conteúdo em inglês em todas as solicitações de F1 e guias de navegação** na caixa de diálogo **Opções do Visualizador** estiver desmarcada.  
+> [!NOTE]
+> Nenhum conteúdo aparecerá se o IDE do Visual Studio estiver definido como um idioma diferente do inglês, você remover o conteúdo localizado e a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1** na caixa de diálogo **Opções do Visualizador** estiver desmarcada.  
   
 #### <a name="to-remove-content"></a>Para remover conteúdo  
   
@@ -141,4 +126,4 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
 3.  Escolha o botão **Fechar** quando o conteúdo tiver sido movido.  
   
 ## <a name="see-also"></a>Consulte também  
- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

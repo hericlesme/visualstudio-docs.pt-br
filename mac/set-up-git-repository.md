@@ -1,19 +1,17 @@
 ---
-title: "Configurar um repositório Git no Visual Studio para Mac"
+title: "Configurar um repositório Git no Visual Studio para Mac | Microsoft Docs"
 description: Usando o Git e o Subversion no Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
+ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 9f25eda17648ba7eb3c264660ee0eb3b8eee166c
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="setting-up-a-git-repository"></a>Configurando um repositório Git
 
 O Git é um sistema de controle de versão distribuído que permite que as equipes trabalhem nos mesmos documentos simultaneamente. Isso significa que há um único servidor que contém todos os arquivos, mas sempre que um repositório passar por check-out nessa fonte central, todo o repositório será clonado localmente para seu computador.
@@ -85,14 +83,35 @@ A caixa de diálogo Novo projeto pode ser usada para publicar um novo projeto us
 
 ![Enviar alterações por push para um repositório remoto](media/version-control-git12.png)
 
+## <a name="checkout-an-existing-repository"></a>Fazer check-out de um repositório existente
+
+É muito provável que você precisará trabalhar com um repositório do GitHub que exista apenas remotamente e não em seu computador local. O Visual Studio para Mac permite que você faça check-out desse repositório rapidamente. Siga as etapas abaixo para cloná-lo em seu computador:
+
+1. Na Barra de menus, selecione **Controle de versão > Check-out...**:
+
+2. Isso exibirá a guia **Conectar ao Repositório**:
+
+    ![Conectar-se à guia Repositório com os detalhes inseridos](media/version-control-git13.png)
+
+3. Na página do GitHub do repositório remoto, pressione o botão **Clonar ou Baixar** e copie a URL fornecida:
+
+    ![url do github exibida](media/version-control-git14.png)
+
+4. Substitua todo o texto no campo de entrada de **URL** na guia **Conectar ao Repositório**. Isso preencherá a maioria dos outros campos desta guia, conforme ilustrado na imagem da etapa nº 2.
+
+5. Insira o diretório no qual você deseja clonar o repositório e pressione **Check-out**.
+
+> [!NOTE]
+Você poderá enfrentar problemas se o repositório for superior a 4 GB de tamanho.
+
 ## <a name="troubleshooting"></a>Solução de problemas
 
-Se você tiver problemas ao inicializar seu projeto com um repositório remoto vazio, você poderá tentar executar as seguintes etapas:
+Se houver problemas ao inicializar seu projeto com um repositório remoto vazio, você poderá tentar executar as seguintes etapas:
 
 - Acesse a pasta da solução.
 - Pressione `Command + Shift + . ` para mostrar os arquivos e as pastas ocultos.
-- Se houver uma pasta `.git`, exclua-a.
-- Se houver um arquivo `gitignore`, exclua-o.
+- Se houver uma pasta **.git**, exclua-a.
+- Se houver um arquivo **gitignore**, exclua-o.
 - Pressione `Command + Shift + . ` para ocultar os arquivos e as pastas.
 - Abra a solução no VS para Mac.
 - No painel de soluções, selecione o nó da sua solução.

@@ -1,5 +1,5 @@
 ---
-title: Instalar o Visual Studio para Mac
+title: Instalar o Visual Studio para Mac | Microsoft Docs
 description: "Instruções sobre como instalar o Visual Studio para Mac e os componentes adicionais necessários para o desenvolvimento de plataforma cruzada."
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
+ms.openlocfilehash: 25d3227bcf8a18a2fc6ba68c194e9cac75b2e919
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 24d2fa5f9054e621cd5167692a2571e9275c2bae
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/09/2017
 ---
-
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurar e instalar o Visual Studio para Mac
 
 ## <a name="setup"></a>Configuração
@@ -76,3 +74,22 @@ Para trabalhar com iOS no Visual Studio você precisará do seguinte:
 > [!NOTE]
 Se você optou por não instalar uma plataforma ou ferramenta durante a instalação original (desmarcando-a na etapa 6), deverá executar o [instalador](https://www.visualstudio.com/vs/) novamente se desejar adicionar os componentes mais tarde.
 
+## <a name="manual-installation"></a>Instalação manual
+
+Se a instalação falhar ou qualquer componente individual de sua instalação falhar, você poderá resolver o problema por meio de uma instalação manual. Para exibir os componentes necessários e baixar cada uma deles, execute as seguintes etapas:
+
+1. Na segunda tela do Instalador do Visual Studio, vá para a barra de menus e selecione **Exibir Instruções de Instalação Manual**:
+
+    ![Opção mostrando o item de menu de instalação manual](media/installer-image12.png)
+
+2. Siga as instruções para baixar e instalar os componentes manualmente:
+
+  ![Caixa de diálogo de instalação manual](media/installer-image13.png)
+
+## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar o Visual Studio para Mac por trás de um firewall ou servidor proxy
+
+Para instalar o Visual Studio para Mac por trás de um firewall, determinados pontos de extremidade devem estar acessíveis para permitir o download das ferramentas necessárias e as atualizações do software.
+
+Configure a rede para permitir o acesso aos seguintes locais:
+
+* [Pontos de extremidade do Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)

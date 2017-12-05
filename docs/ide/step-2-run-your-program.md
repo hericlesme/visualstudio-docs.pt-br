@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7ac22f18b282af6a38f751a6f4666579e2a4e8cc
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0c50254bc632bce298e547e5599adeb99d593da7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-2-run-your-program"></a>Etapa 2: Executar o programa
 Ao criar uma nova solução, você na verdade cria um programa que é executado. Ele não faz muita coisa — apenas exibe uma janela vazia que mostra **Form1** na barra de título. Mas se ela funciona, você está prestes a descobrir.  
@@ -49,7 +33,7 @@ Ao criar uma nova solução, você na verdade cria um programa que é executado.
   
     -   Na barra de ferramentas, clique no botão **Iniciar Depuração**, que aparece da seguinte maneira.  
   
-         ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png "Express_IconDebug")  
+         ![Botão Iniciar barra de ferramentas de depuração](../ide/media/express_icondebug.png "Express_IconDebug")  
 Botão da barra de ferramentas Iniciar Depuração  
   
 2.  O Visual Studio executa o seu programa e uma janela chamada **Form1** aparece. O diagrama a seguir mostra o programa que você acabou de criar. O programa está em execução e logo você o fará adições a ele.  

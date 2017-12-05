@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - performance, analyzing
 - profiling applications, walkthroughs
 ms.assetid: 36f6f123-0c14-4763-99c3-bd60ecb95b87
-caps.latest.revision: 53
+caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a20a64818982484a56ba7dc82af890c729da40e4
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Passo a passo: Identificando problemas de desempenho
 Este passo a passo demonstra como criar um perfil de um aplicativo para identificar problemas de desempenho.  
@@ -107,7 +91,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
      A janela **Exibição de Código da Função** mostrará o código-fonte da função se ela estiver disponível e realça as linhas mais caras na função selecionada. Quando GetNames é selecionada, você pode ver que essa função lê uma cadeia de caracteres nos recursos do aplicativo e, em seguida, usa um <xref:System.IO.StringReader> para adicionar cada linha da cadeia de caracteres a uma <xref:System.Collections.ArrayList>. Não há maneira óbvia de otimizar essa função.  
   
-3.  Como PeopleNS.People.GetPeople é o único chamador de GetNames, clique em GetPeople na janela de distribuição de custos para examinar seu código. Esse método retorna uma <xref:System.Collections.ArrayList> de objetos PersonInformationNS.PersonInformation de nomes de pessoas e empresas produzidas por GetNames. No entanto, GetNames é chamado duas vezes toda vez que um objeto PersonInformation é criado. Você pode ver que o método pode ser facilmente otimizado criando as listas apenas uma vez no início do método e indexando a essas listas durante o loop de criação de PersonInformation.  
+3.  Como PeopleNS.People.GetPeople é o único chamador de GetNames, clique em GetPeople na janela de distribuição de custos para examinar seu código. Esse método retorna uma <xref:System.Collections.ArrayList> de objetos PersonInformationNS.PersonInformation dos nomes de pessoas e empresas produzidos por GetNames. No entanto, GetNames é chamado duas vezes toda vez que um objeto PersonInformation é criado. Você pode ver que o método pode ser facilmente otimizado criando as listas apenas uma vez no início do método e indexando a essas listas durante o loop de criação de PersonInformation.  
   
 4.  Uma versão alternativa de GetPeople é fornecida com o código do aplicativo de exemplo e você poderá chamar a função otimizada adicionando um símbolo de build condicional às propriedades de build. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e clique em **Propriedades**. Clique em **Compilar** no menu de página de propriedades e digite **OPTIMIZED_GETPEOPLE** na caixa de texto do símbolo de build condicional. A versão otimizada de GetPeople substitui o método original na próximo build.  
   

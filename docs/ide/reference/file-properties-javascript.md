@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,30 +25,15 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 6c2b3c577685fcb09cd9e9c7eeee955b75e76e27
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
 É possível usar propriedades de arquivo para indicar quais ações o sistema de projeto deve executar nos arquivos. Por exemplo, é possível definir propriedades de arquivo para indicar se um arquivo deve ser adicionado ao pacote como um arquivo de recurso.  
@@ -73,7 +57,7 @@ ms.lasthandoff: 06/23/2017
 
 -   **Recurso** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o conteúdo do arquivo é indexado no PRI (Índice de Recurso do Pacote) que entra no manifesto do pacote. Normalmente, ele é usado para arquivos de recurso.  
 
- O valor padrão para **Ação do Pacote** depende da extensão do arquivo adicionado à solução.  
+O valor padrão para **Ação do Pacote** depende da extensão do arquivo adicionado à solução.  
 
 ### <a name="file-name-property"></a>Propriedade Nome de Arquivo  
  Exibe o nome de arquivo como um valor somente leitura. Para renomear o arquivo, é necessário clicar com o botão direito do mouse no Gerenciador de Soluções e selecionar **Renomear**.  
@@ -82,7 +66,7 @@ ms.lasthandoff: 06/23/2017
  Exibe o caminho completo no arquivo como um valor somente leitura. Para alterar o caminho do arquivo, é possível arrastar e soltar o arquivo no Gerenciador de Soluções.  
 
 ## <a name="reference-file-properties"></a>Propriedades do arquivo de referência  
- Esta seção descreve as propriedades comuns aos arquivos referenciados em um [!INCLUDE[win8_app_js](../../ide/reference/includes/win8_app_js_md.md)]. Quando você seleciona uma referência como um arquivo .winmd, uma referência de SDK, uma referência projeto a projeto ou uma referência de assembly no Gerenciador de Soluções, outras propriedades podem ser exibidas na janela Propriedades, de acordo com o tipo de arquivo.  
+ Esta seção descreve as propriedades comuns a arquivos referenciados de um aplicativo UWP compilado com JavaScript. Quando você seleciona uma referência como um arquivo .winmd, uma referência de SDK, uma referência projeto a projeto ou uma referência de assembly no Gerenciador de Soluções, outras propriedades podem ser exibidas na janela Propriedades, de acordo com o tipo de arquivo.  
 
 ### <a name="culture"></a>Cultura  
  Exibe o idioma associado à referência.  
@@ -113,4 +97,3 @@ ms.lasthandoff: 06/23/2017
 
 ## <a name="see-also"></a>Consulte também  
  [Gerenciando propriedades de solução e de projeto](../../ide/managing-project-and-solution-properties.md)
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,38 +12,22 @@ dev_langs:
 - VB
 - FSharp
 - C++
-helpviewer_keywords:
-- memory leaks, JavaScript example
+helpviewer_keywords: memory leaks, JavaScript example
 ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7e848a57962636a8ca346e809f3dadad675a7963
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Instruções passo a passo: localizar uma perda de memória (JavaScript)
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Este passo a passo o orienta pelo processo de identificar e corrigir um problema simples de memória usando o analisador de memória de JavaScript. O analisador de memória de JavaScript está disponível no Visual Studio para aplicativos da Windows Store criados para o Windows usando JavaScript. Neste cenário, você cria um aplicativo que retém incorretamente elementos DOM na memória, em vez de descartar os elementos na mesma proporção em que eles são criados.  
+ Este passo a passo o orienta pelo processo de identificar e corrigir um problema simples de memória usando o analisador de memória de JavaScript. O analisador de memória de JavaScript está disponível no Visual Studio para aplicativos UWP criados para o Windows usando JavaScript. Neste cenário, você cria um aplicativo que retém incorretamente elementos DOM na memória, em vez de descartar os elementos na mesma proporção em que eles são criados.  
   
  Embora a causa da perda de memória deste aplicativo seja bastante específica, as etapas mostradas aqui indicam um fluxo de trabalho que geralmente funciona para isolar objetos com perda de memória.  
   
@@ -153,7 +136,7 @@ ms.lasthandoff: 02/22/2017
 1.  Na barra de ferramentas **Depurar**, na lista **Iniciar Depuração**, escolha o destino de depuração para o projeto atualizado: um dos Emuladores ou **Simulator** do Windows Phone.  
   
     > [!TIP]
-    >  Para um aplicativo da Windows Store, você também pode escolher **Computador Local** ou **Computador Remoto** nesta lista. Entretanto, a vantagem de usar o emulador ou o simulador é que você pode colocá-lo ao lado do Visual Studio e facilmente alternar entre o aplicativo em execução e o analisador de memória JavaScript. Para obter mais informações, consulte [Executar aplicativos do Visual Studio](../debugger/run-store-apps-from-visual-studio.md) e [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+    >  Para um aplicativo UWP, também é possível escolher **Computador Local** ou **Computador Remoto** nessa lista. 
   
 2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
   
@@ -240,7 +223,7 @@ ms.lasthandoff: 02/22/2017
     > [!TIP]
     >  Às vezes, localizar um objeto em relação ao objeto `Global` pode ajudar a identificar esse objeto. Para isso, abra o menu de atalho do identificador e escolha **Mostrar na exibição de raiz**.  
   
-##  <a name="a-namefixingmemorya-fixing-the-memory-issue"></a><a name="FixingMemory"></a> Corrigindo o problema de memória  
+##  <a name="FixingMemory"></a> Corrigindo o problema de memória  
   
 1.  Usando os dados revelados pelo criador de perfis, você examina o código que é responsável por remover elementos DOM com ID de "item". Isso ocorre na função `initialize()`.  
   

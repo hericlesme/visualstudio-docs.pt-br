@@ -1,19 +1,17 @@
 ---
-title: "Controle de versão"
+title: "Controle de versão | Microsoft Docs"
 description: Usando o Git e o Subversion no Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
+ms.openlocfilehash: 6e467cf6acda75948a189309b7648b1c4c085941
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: a63ebdccc2a7cbde18715291a65ada613dc2c00e
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="version-control"></a>Controle de versão
 
 O controle de versão é um sistema para gerenciar arquivos em várias versões diferentes e, no desenvolvimento de software, geralmente tem a contribuição de muitos desenvolvedores. O objetivo da entidade de qualquer sistema de controle de versão (_VCS_) é encontrar uma solução que permite que todos os usuários trabalhem na base de código ao mesmo tempo.

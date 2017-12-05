@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 14b6e401d454e5f837c7e77e306c4ff7205ab712
-ms.contentlocale: pt-br
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d83a19e04a2e795005f2e0cdf0fdfe3a30c22c87
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-3-set-your-form-properties"></a>Etapa 3: Definir as propriedades do formulário
 Em seguida, use a janela **Propriedades** para alterar a aparência do seu formulário.  
@@ -58,7 +42,7 @@ Janela de Propriedades
   
 4.  Volte ao Windows Forms Designer. Escolha a alça inferior direita do formulário, que é o pequeno quadrado branco no canto inferior direito do formulário e aparece da seguinte maneira.  
   
-     ![Arraste a alça](../ide/media/express_bottomrt_drag.png "Express_BottomRT_Drag")  
+     ![Alça de arrastar](../ide/media/express_bottomrt_drag.png "Express_BottomRT_Drag")  
 Arraste a alça  
   
      Arraste a alça para redimensionar o formulário para que o formulário fique mais amplo e um pouco mais alto.  
@@ -73,7 +57,7 @@ Arraste a alça
   
     -   Na barra de ferramentas, clique no botão **Iniciar Depuração**, que aparece da seguinte maneira.  
   
-         ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png "Express_IconDebug")  
+         ![Botão Iniciar barra de ferramentas de depuração](../ide/media/express_icondebug.png "Express_IconDebug")  
 Botão da barra de ferramentas Iniciar Depuração  
   
      Assim como antes, o IDE compila e executa o programa e uma janela aparece.  

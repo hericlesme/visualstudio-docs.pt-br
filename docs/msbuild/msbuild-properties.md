@@ -4,35 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, properties
+helpviewer_keywords: MSBuild, properties
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: 6a83d555cf8968b6c1419633730e4b80d3b9aa3d
-
+ms.openlocfilehash: 0fe5627c7307b2d06e894a236d60f4188e6cf427
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="msbuild-properties"></a>Propriedades do MSBuild
 Propriedades são pares nome-valor que podem ser usados para configurar compilações. Propriedades são úteis para passar valores para tarefas, avaliar condições e armazenar os valores que serão referenciados em todo o arquivo de projeto.  
@@ -68,7 +53,7 @@ Propriedades são pares nome-valor que podem ser usados para configurar compila�
   
  Cada projeto do MSBuild tem um bloco de ambiente isolado: apenas observa, lê e grava em seu próprio bloco.  O MSBuild somente lê as variáveis de ambiente quando ele inicializa a coleção de propriedades, antes de o arquivo de projeto ser avaliado ou criado. Depois disso, as propriedades de ambiente são estáticas, ou seja, cada ferramenta gerada começa com os mesmos nomes e valores.  
   
- Para obter o valor atual de variáveis de ambiente de uma ferramenta gerada, use as [funções de propriedade](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. O método preferido, no entanto, é usar o parâmetro de tarefa <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. As propriedades de ambiente definidas nesta matriz de cadeia de caracteres podem ser passadas para a ferramenta gerada sem afetar as variáveis de ambiente do sistema.  
+ Para obter o valor atual de variáveis de ambiente de uma ferramenta gerada, use as [funções de propriedade](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. O método preferido, entretanto, é usar o parâmetro de tarefa <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. As propriedades de ambiente definidas nesta matriz de cadeia de caracteres podem ser passadas para a ferramenta gerada sem afetar as variáveis de ambiente do sistema.  
   
 > [!TIP]
 >  Nem todas as variáveis de ambiente são lidas para se tornarem propriedades iniciais. Qualquer variável de ambiente cujo nome não é um nome de propriedade do MSBuild válido, como "386", será ignorada.  
@@ -93,7 +78,7 @@ $(registry:Hive\MyKey\MySubKey)
 ```xml  
 <PropertyGroup>  
   <VisualStudioWebBrowserHomePage>  
-    $(registry:HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\WebBrowser@HomePage)  
+    $(registry:HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\WebBrowser@HomePage)  
   </VisualStudioWebBrowserHomePage>  
 <PropertyGroup>  
 ```  
@@ -107,7 +92,7 @@ $(registry:Hive\MyKey\MySubKey)
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   
- As propriedades globais também podem ser definidas ou modificadas para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa do MSBuild. Para mais informações, consulte [Tarefa do MSBuild](../msbuild/msbuild-task.md).  
+ As propriedades globais também podem ser definidas ou modificadas para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa do MSBuild. Propriedades globais também são encaminhadas para projetos filho, a menos que o atributo `RemoveProperties` da tarefa MSBuild seja usado para especificar a lista de propriedades que não devem ser encaminhadas. Para mais informações, consulte [Tarefa do MSBuild](../msbuild/msbuild-task.md).
   
  Se você especificar uma propriedade usando o atributo `TreatAsLocalProperty` em uma marca de projeto, esse valor da propriedade global não substituirá o valor da propriedade que é definido no arquivo de projeto. Para obter mais informações, consulte [Elemento de projeto (MSBuild)](../msbuild/project-element-msbuild.md) e [Como compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   
@@ -144,7 +129,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
                     ImageVersion="$(MySupportedVersion)"  
                     Version="$(MySupportedVersion)"/>  
                 <RequiredRuntime  
-                    ImageVersion="$(MyRequiredVersion)  
+                    ImageVersion="$(MyRequiredVersion)"  
                     Version="$(MyRequiredVersion)"  
                     SafeMode="$(MySafeMode)"/>  
             </Startup>  
@@ -161,8 +146,3 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
  [Como compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Elemento Property (MSBuild)](../msbuild/property-element-msbuild.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d6550f2aa1aab249eda569ff84ddf4dcf488aa18
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 2e3e99bfad1ebf33f23c3b38189568935d0cedee
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Atualizar projetos de teste de unidade do Visual Studio 2010
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] inclui compatibilidade de projeto de teste com projetos de teste [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] do SP1. Por exemplo, projetos de teste criados com o SP1 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] podem ser abertos com [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] sem qualquer atualização. Portanto, sua equipe pode usar ambos SP1 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] para trabalhar com o mesmo projeto de teste. Para obter mais informações, consulte [Atualizar testes no Visual Studio 2010](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
@@ -43,14 +26,14 @@ ms.lasthandoff: 05/13/2017
 >  Os testes de unidade existentes nos projetos de teste SP1 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] funcionarão perfeitamente entre SP1 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]. Nenhuma alteração será feita nos arquivos de projeto de teste quando um projeto de teste do Visual Studio 2010 que contém seus testes de unidade estiver aberto em [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ou vice-versa.  
   
 > [!CAUTION]
->  O Visual Studio 2010 não pode abrir um projeto C++/CLI que tem como destino o conjunto de ferramentas 11.0, ou seja, um projeto criado no Visual Studio 2012. Essa restrição se aplica a todos os projetos C++/CLI e não apenas a projetos de teste de unidade C++/CLI.  
+>  O Visual Studio 2010 não pode abrir um projeto C++/CLI que tenha como destino o conjunto de ferramentas 11.0, ou seja, um projeto criado no Visual Studio 2012 ou posterior. Essa restrição se aplica a todos os projetos C++/CLI e não apenas a projetos de teste de unidade C++/CLI.  
   
 > [!NOTE]
 >  É possível executar os novos testes de unidade usando vstest.console.exe na linha de comando. Para obter mais informações sobre como usar vstest.console.exe, consulte [Opções da linha de comando de VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options) ou execute o comando usando a opção de Ajuda: **vstest.console.exe /?**. Você pode continuar a executar seus testes de unidade existentes usando MStest.exe. Para obter mais informações, consulte [Executar testes automatizados da linha de comando usando o MSTest](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest) e [Opções da linha de comando de MSTest.exe](/devops-test-docs/test/mstest-exe-command-line-options).  
   
  Outra alteração significativa é o novo Gerenciador de Testes. Em [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], algumas janelas de teste de versões anteriores do Visual Studio com as quais você pode estar familiarizado foram preteridas, como a janela Modo de Teste. O Gerenciador de Testes foi projetado para oferecer um suporte melhor para desenvolvedores e equipes que incorporam testes de unidade em suas práticas de desenvolvimento de software. Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md).  
   
-## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012"></a>Problemas de compatibilidade entre o Visual Studio 2010 SP1 e o Visual Studio 2012  
+## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012-or-later"></a>Problemas de compatibilidade entre o Visual Studio 2010 SP1 e o Visual Studio 2012 ou posterior  
  Estas são algumas questões a serem consideradas ao migrar testes de unidade entre o Visual Studio 2010 SP1 e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]:  
   
 |Funcionalidade do Teste de Unidade|Problema|Solução|  
@@ -65,4 +48,3 @@ ms.lasthandoff: 05/13/2017
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)   
  [Atualizar Testes de Versões Anteriores do Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [Atualizando testes de IU codificados por meio do Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-

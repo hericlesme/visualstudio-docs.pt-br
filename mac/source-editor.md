@@ -1,19 +1,17 @@
 ---
-title: "Editor de Código-fonte"
+title: Editor de fonte | Microsoft Docs
 description: "Usar o editor de código-fonte no Visual Studio para Mac"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
+ms.openlocfilehash: f52e60c0ade8cebc78b3408b4ef81ef85fcd767b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: aa7635cd2593b871128c0588110f0bfdad5a82ec
-ms.contentlocale: pt-br
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="source-editor"></a>Editor de código-fonte
 
 Um editor de código-fonte confiável é essencial para escrever código eficiente sucintamente. O Visual Studio para Mac fornece um editor de código-fonte sofisticados que centraliza suas interações com o IDE. O editor de código-fonte fornece os recursos que você pode esperar e precisa para realizar seu trabalho com facilidade: desde itens básicos como realce de sintaxe, trechos de código e dobramento de código, até os benefícios da sua integração com o compilador Roslyn, como preenchimento de código do IntelliSense totalmente funcional.
@@ -84,7 +82,6 @@ Quando essa opção é ativada, um desenvolvedor pode colocar o cursor do mouse 
 A cor de realce também útil para indicar que algo está sendo atribuído ou referenciado. Se algo for atribuído, ele será realçado em vermelho; se for referenciado, ele será realçado em azul:
 
 ![](media/source-editor-image7.png)
-
 
 
 

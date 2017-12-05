@@ -1,40 +1,24 @@
 ---
-title: Executar o teste de unidade de uma DLL do Visual C++ para aplicativos da Store | Microsoft Docs
+title: Teste de unidade de uma DLL do Visual C++ para aplicativos UWP | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 998bfa207b2a8431b51dfd0025ac8bf037e0bd2b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Executar o teste de unidade de uma DLL do Visual C++ para aplicativos da Store
-Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++ para aplicativos da Windows Store. A DLL RooterLib demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. A DLL, em seguida, pode ser incluída em um aplicativo da Windows Store que mostra a um usuário as coisas divertidas que podem ser feitas com matemática.  
+# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>Teste de unidade de uma DLL do Visual C++ para aplicativos UWP
+Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++ para aplicativos UWP. A DLL RooterLib demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. A DLL, em seguida, pode ser incluída em um aplicativo UWP que mostra a um usuário as coisas divertidas que podem ser feitas com matemática.  
   
  Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.  
   
@@ -61,17 +45,17 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
   
 1.  No menu **Arquivo**, escolha **Novo** e, em seguida, **Novo Projeto**.  
   
-2.  No diálogo Novo Projeto, expanda **Instalado** e **Visual C++** e, em seguida, escolha **Windows Store**. Em seguida, escolha **Biblioteca de Teste de Unidade (aplicativos da Windows Store)** na lista de modelos de projeto.  
+2.  Na caixa de diálogo Novo Projeto, expanda **Instalado** e **Visual C++** e escolha **Windows Universal**. Em seguida, escolha **Biblioteca de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.  
   
-     ![Cria um C&#43;&#43; biblioteca de teste de unidade](~/test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+     ![Cria um C&#43;&#43; biblioteca de teste de unidade](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
 3.  Dê ao projeto o nome `RooterLibTests`; especifique o local, dê à solução o nome `RooterLib`; e certifique-se de que a opção **Criar diretório para solução** esteja selecionada.  
   
-     ![Especifique o nome do projeto e solução e local](~/test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
+     ![Especifique o nome do projeto e solução e local](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
   
 4.  No novo projeto, abra **unittest1.cpp**.  
   
-     ![unittest1.cpp](~/test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")  
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")  
   
      Observe que:  
   
@@ -100,15 +84,15 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
   
      O projeto de teste é compilado e executado. A janela Gerenciador de Testes é exibida e o teste é listado em **Testes Aprovados**. O painel Resumo, na parte inferior da janela, fornece mais detalhes sobre o teste selecionado.  
   
-     ![Gerenciador de testes](~/test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
+     ![Gerenciador de testes](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
 ##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Adicione o projeto DLL à solução  
   
 1.  No Gerenciador de Soluções, escolha o nome da solução. No menu de atalho, escolha **Adicionar** e então **Adicionar Novo Projeto**.  
   
-     ![Criar o projeto RooterLib](~/test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")  
+     ![Criar o projeto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")  
   
-2.  Na caixa de diálogo **Adicionar Novo Projeto**, escolha **DLL (aplicativos da Windows Store)**.  
+2.  Na caixa de diálogo **Adicionar Novo Projeto**, escolha **DLL (aplicativos UWP)**.  
   
 3.  Adicione o código a seguir ao arquivo **RooterLib.h**:  
   
@@ -140,7 +124,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
   
     1.  No Gerenciador de Soluções, escolha o projeto **RooterLib** e escolha **Propriedades** no menu de atalho.  
   
-         ![Adicionar uma definição de símbolo do pré-processador](~/test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")  
+         ![Adicionar uma definição de símbolo do pré-processador](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")  
   
     2.  Na caixa de diálogo Página de Propriedades de RooterLib, expanda **Propriedades de Configuração**, expanda **C++** e escolha **Pré-processador**.  
   
@@ -211,7 +195,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
   
 5.  No Gerenciador de Testes, escolha **Executar Todos**.  
   
-     ![Teste básico aprovado](~/test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+     ![Teste básico aprovado](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
  Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.  
   
@@ -243,7 +227,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
   
 3.  O teste falhará.  
   
-     ![Falha em RangeTest](~/test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
+     ![Falha em RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
     >  Verifique se os testes falham imediatamente após escrevê-los. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.  
@@ -314,7 +298,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
   
      O teste falhará. Escolha o nome do teste no Gerenciador de Testes. A asserção com falha é realçada. A mensagem de falha fica visível no painel de detalhes do Gerenciador de Testes.  
   
-     ![Falha em NegativeRangeTests](~/test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+     ![Falha em NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
 3.  Para ver o motivo da falha do teste, percorra a função:  
   
@@ -344,7 +328,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
   
  Todos os testes agora foram aprovados.  
   
- ![Todos os testes foram aprovados](~/test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
+ ![Todos os testes foram aprovados](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Refatorar o código sem alterar os testes  
   
@@ -364,4 +348,3 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
     >  Um conjunto estável de testes de unidade aprovados garante que você não introduziu bugs quando alterou o código.  
     >   
     >  Mantenha a refatoração separada das outras alterações.
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,38 +13,23 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance tools, JavaScript [Store apps]
-- performance, JavaScript [Store apps]
-- performance, HTML [Store apps]
-- performance tools, HTML [Store apps]
+- performance tools, JavaScript [UWP apps]
+- performance, JavaScript [UWP apps]
+- performance, HTML [UWP apps]
+- performance tools, HTML [UWP apps]
 ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 753b4abd76b56ff46406b3a2f5ab5b8fb008c526
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cf4747a1e2c0d9d7c20fe0856becb4cd42d1e847
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface de usuário (HTML)
-Este passo a passo o orienta no processo de identificação e correção de um problema de desempenho usando o [Criador de perfil de capacidade de resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md). O criador de perfil está disponível no Visual Studio para aplicativos universais do Windows e os aplicativos da Windows Store usando JavaScript. Neste cenário, você cria um aplicativo de teste de desempenho que atualiza os elementos DOM com muita frequência e usa o criador de perfil para identificar e corrigir esse problema.  
+Este passo a passo o orienta no processo de identificação e correção de um problema de desempenho usando o [Criador de perfil de capacidade de resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md). O criador de perfil está disponível no Visual Studio para aplicativos universais do Windows e os aplicativos UWP que usam JavaScript. Neste cenário, você cria um aplicativo de teste de desempenho que atualiza os elementos DOM com muita frequência e usa o criador de perfil para identificar e corrigir esse problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Criando e executando o aplicativo de teste de desempenho  
   
@@ -200,13 +184,13 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
 7.  Selecione uma parte de um a dois segundos no meio do gráfico de utilização da CPU (ou clique e arraste, ou use as teclas Tab e de direção). A ilustração a seguir mostra o gráfico de utilização da CPU depois de ser feita uma seleção. A área não sombreada é a seleção.  
   
-     ![Gráfico de utilização de CPU](~/profiling/media/js_htmlviz_app_cpu.png "JS_HTMLViz_App_CPU")  
+     ![Gráfico de utilização de CPU](../profiling/media/js_htmlviz_app_cpu.png "JS_HTMLViz_App_CPU")  
   
 8.  Escolha **Ampliar**.  
   
      O gráfico muda para mostrar mais detalhadamente o período selecionado. A ilustração a seguir mostra o gráfico de utilização da CPU após a ampliação. (Os dados específicos podem variar, mas o padrão geral será aparente.)  
   
-     ![Exibição ampliada](~/profiling/media/js_htmlviz_app_zoom.png "JS_HTMLViz_App_Zoom")  
+     ![Exibição ampliada](../profiling/media/js_htmlviz_app_zoom.png "JS_HTMLViz_App_Zoom")  
   
      Os Detalhes da linha do tempo no painel inferior mostram um exemplo de detalhes para o período selecionado.  
   

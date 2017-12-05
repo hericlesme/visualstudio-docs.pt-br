@@ -1,15 +1,13 @@
 ---
-title: "Codificações e quebras de linha | Microsoft Docs"
+title: "Caracteres de quebra de linha e codificação do Studio Visual | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.Encoding
+f1_keywords: vs.Encoding
 helpviewer_keywords:
 - line breaks
 - encoding
@@ -18,40 +16,20 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 34c400c280096acb7e0ce272fa717cbc2f8f0d8a
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: b6afbc9ca8f93dcb0313c70a9d1e41579a6bf31f
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="encodings-and-line-breaks"></a>Codificações e quebras de linha
-No Visual Studio, é possível usar os configurações **Arquivo/Opções avançadas de salvamento** configurações para determinar o tipo de quebra de linha caracteres que você deseja. Também é possível alterar a codificação de um arquivo com as mesmas configurações.  
+Os seguintes caracteres são interpretados como quebras de linha no Visual Studio:  
   
-> [!NOTE]
->  Se você tiver determinados tipos de configurações de desenvolvimento (Visual Basic, F#, Desenvolvimento para a Web), talvez você não veja **Opções avançadas de salvamento** no menu. Para alterar suas configurações (por exemplo para Geral), abra **Ferramentas/Importar e Exportar Configurações**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- No Visual Studio, os seguintes caracteres são interpretados como quebras de linha:  
-  
--   CRLF: retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A  
+-   CR LF: retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A  
   
 -   LF: alimentação de linha, caractere Unicode 000A  
   
@@ -61,6 +39,18 @@ No Visual Studio, é possível usar os configurações **Arquivo/Opções avanç
   
 -   PS: separador de parágrafo, caractere Unicode 2029  
   
- O texto copiado de outros aplicativos mantém a codificação original e os caracteres de quebra de linha. Por exemplo, quando você copia texto do Bloco de notas e o cola em um arquivo de texto no Visual Studio, o texto tem as mesmas configurações que ele tinha no Bloco de notas.  
+O texto copiado de outros aplicativos mantém a codificação original e os caracteres de quebra de linha. Por exemplo, quando você copia texto do Bloco de notas e o cola em um arquivo de texto no Visual Studio, o texto tem as mesmas configurações que ele tinha no Bloco de notas.  
   
- Quando você abre um arquivo que caracteres com uma quebra de linha diferente, talvez você veja uma caixa de diálogo que pergunta se os caracteres de quebra de linha inconsistentes devem ser normalizados e quais os tipo de quebras de linha você deseja escolher.
+Ao abrir um arquivo que tem caracteres de quebra de linha diferentes, talvez você veja uma caixa de diálogo que pergunta se os caracteres de quebra de linha inconsistentes devem ser normalizados e quais os tipo de quebras de linha você deseja escolher.
+
+Você pode usar a caixa de diálogo **Arquivo**, **Opções Avançadas de Salvamento** para determinar o tipo de caracteres de quebra de linha que você deseja. Também é possível alterar a codificação de um arquivo com as mesmas configurações.
+
+![Caixa de diálogo Opções Avançadas de Salvamento](media/line_endings.png)
+  
+> [!NOTE]
+>  Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo**, você poderá adicioná-la. Escolha **Ferramentas**, **Personalizar...**  e, em seguida, escolha a guia **Comandos**. No lista suspensa da **Barra de menus**, escolha **Arquivo** e, em seguida, escolha o botão **Adicionar Comando...**. Na caixa de diálogo **Adicionar Comando**, em **Categorias**, escolha **Arquivo** e, em seguida, na lista **Comandos**, escolha **Opções Avançadas de Salvamento...**. Escolha **OK** e, em seguida, escolha o botão **Mover para Baixo** para mover o comando para qualquer local no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar**. Para obter mais informações, consulte [Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+
+Como alternativa, você pode acessar a caixa de diálogo **Opções Avançadas de Salvamento**, escolhendo **Arquivo**, **Salvar \<arquivo\> Como...**. Na caixa de diálogo **Salvar Arquivo Como**, escolha o triângulo de lista suspensa ao lado do botão **Salvar** e escolha **Salvar com codificação...**.
+
+## <a name="see-also"></a>Consulte também
+[Escrevendo código no editor](../ide/writing-code-in-the-code-and-text-editor.md)

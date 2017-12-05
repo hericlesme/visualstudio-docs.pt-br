@@ -4,8 +4,7 @@ description: "Saiba como criar um arquivo de resposta JSON que ajuda a automatiz
 ms.date: 08/14/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,16 +13,14 @@ helpviewer_keywords:
 - installation
 - command-line
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: b17091a46e694256b95fd5799f8d5f165bb976a8
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 5c8aaf24a1952847c593d5eb70f7c94208310174
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/22/2017
 ---
-
 # <a name="how-to-define-settings-in-a-response-file"></a>Como definir as configurações em um arquivo de resposta
 Os administradores que implantam o Visual Studio podem especificar um arquivo de resposta usando o parâmetro `--in`, assim como no exemplo a seguir:
 
@@ -37,7 +34,7 @@ Parâmetros que são especificados nas configurações de substituição de linh
 
 # <a name="setting-a-default-configuration-for-visual-studio"></a>Definir uma configuração padrão para o Visual Studio
 
-Se você tiver criado um cache de layout de rede com o `--layout`, um arquivo `response.json` inicial será criado no layout. Se você criar um layout parcial, esse arquivo de resposta incluirá as cargas de trabalho e idiomas incluídos no layout.  Executar a instalação deste layout usa automaticamente esse arquivo response.json, que seleciona as cargas de trabalho e os componentes incluídos no layout.  Os usuários ainda podem selecionar ou desmarcar todas as cargas de trabalho na interface do usuário de configuração antes de instalar o Visual Studio. 
+Se você tiver criado um cache de layout de rede com o `--layout`, um arquivo `response.json` inicial será criado no layout. Se você criar um layout parcial, esse arquivo de resposta incluirá as cargas de trabalho e idiomas incluídos no layout.  Executar a instalação deste layout usa automaticamente esse arquivo response.json, que seleciona as cargas de trabalho e os componentes incluídos no layout.  Os usuários ainda podem selecionar ou desmarcar todas as cargas de trabalho na interface do usuário de configuração antes de instalar o Visual Studio.
 
 Os administradores que criam um layout podem modificar o arquivo `response.json` no layout para controlar as configurações padrão que os usuários veem quando instalam o Visual Studio do layout.  Por exemplo, se um administrador quiser que cargas de trabalho e componentes específicos sejam instalados por padrão, poderá configurar o arquivo `response.json` para adicioná-los.
 
@@ -59,7 +56,7 @@ O arquivo `response.json` base em um layout deve ser semelhante ao exemplo a seg
   "productId": "Microsoft.VisualStudio.Product.Enterprise"
 }
 ```
-Quando você cria ou atualiza um layout, um arquivo response.template.json também é criado.  Esse arquivo contém todas as IDs de carga de trabalho, de componente e de idioma que podem ser usadas.  Esse arquivo é fornecido como um modelo para o qual todas poderiam ser incluídas em uma instalação personalizada.  Os administradores podem usar esse arquivo como um ponto de partida para um arquivo de resposta personalizado.  Basta remover as IDs para os itens que você não deseja instalar e salvá-las em seu próprio arquivo de resposta.  Não personalize o arquivo response.template.json, caso contrário, as alterações serão perdidas sempre que o layout for atualizado. 
+Quando você cria ou atualiza um layout, um arquivo response.template.json também é criado.  Esse arquivo contém todas as IDs de carga de trabalho, de componente e de idioma que podem ser usadas.  Esse arquivo é fornecido como um modelo para o qual todas poderiam ser incluídas em uma instalação personalizada.  Os administradores podem usar esse arquivo como um ponto de partida para um arquivo de resposta personalizado.  Basta remover as IDs para os itens que você não deseja instalar e salvá-las em seu próprio arquivo de resposta.  Não personalize o arquivo response.template.json, caso contrário, as alterações serão perdidas sempre que o layout for atualizado.
 
 ## <a name="example-layout-response-file-content"></a>Conteúdo de arquivo de resposta de layout de exemplo
 O exemplo a seguir instalará o Visual Studio Enterprise com seis cargas de trabalho e componentes comuns e com os idiomas inglês e francês da interface do usuário. Você pode esse exemplo como um modelo; apenas altere as cargas de trabalho e os componentes para aqueles que você deseja instalar:
@@ -94,6 +91,15 @@ O exemplo a seguir instalará o Visual Studio Enterprise com seis cargas de trab
     ]
 }
 ```
+
+## <a name="get-support"></a>Obter suporte
+Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Aqui estão algumas outras opções de suporte:
+* Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
+* Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
+* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
+
 ## <a name="see-also"></a>Consulte também
 * [IDs de carga de trabalho e de componente do Visual Studio 2017](workload-and-component-ids.md)
-

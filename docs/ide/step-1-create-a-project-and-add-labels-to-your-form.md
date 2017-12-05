@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 79222e6c9cf609e617bd3cfd49d31be4f9c7c30e
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 55e0802f58be0a1ad3a060fce257554b36c01a52
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e adiciona rótulos, um botão, e outros controles a um formulário. Você também define as propriedades para cada controle adicionado. O projeto conterá o formulário, controles e (posteriormente neste tutorial) o código. O botão inicia o teste, os rótulos mostram os problemas do teste e outros controles mostram as respostas dos teste e o tempo permanece para concluir o teste.  
@@ -85,7 +68,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
   
      É possível alterar várias propriedades de fonte, como mostra a imagem a seguir.  
   
-     ![Tamanho da fonte de exibição na janela Propriedades](../ide/media/express_setfontsize.png "Express_setFontSize")  
+     ![Janela Propriedades mostrando o tamanho da fonte](../ide/media/express_setfontsize.png "Express_setFontSize")  
 Tamanho da fonte de exibição na janela Propriedades  
   
 8.  Adicione outro controle de **Label** da caixa de ferramentas e, em seguida, defina seu tamanho da fonte para **15,75**.  
@@ -134,7 +117,7 @@ Tamanho da fonte de exibição na janela Propriedades
   
      Você criou a primeira linha, como mostra a imagem a seguir.  
   
-     ![A primeira linha do teste de matemática](../ide/media/express_firstrow.png "Express_firstRow")  
+     ![Primeira linha do teste de matemática](../ide/media/express_firstrow.png "Express_firstRow")  
 A primeira linha do teste de matemática  
   
 ### <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Para adicionar controles para subtração, multiplicação e problemas de divisão  

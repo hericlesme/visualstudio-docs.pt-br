@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.markers.flag
+f1_keywords: vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0095311f5188260bf1207e4094c1ceb87b1bbb86
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="flag-markers"></a>Marcadores de sinalizador
 Um marcador de sinalizador representa algo que ocorreu em um instante de tempo em um aplicativo. Um sinalizador pode representar muitos tipos de eventos de aplicativo. Por exemplo, um sinalizador pode mostrar quando um determinado item de trabalho foi agendado ou quando uma exceção foi lançada. Tempos de execução, como a Biblioteca de Paralelismo de Tarefas, também podem gerar sinalizadores.  
@@ -43,19 +25,19 @@ Um marcador de sinalizador representa algo que ocorreu em um instante de tempo e
 ## <a name="flag-importance"></a>Importância do sinalizador  
  Sinalizadores são exibidos em tamanhos diferentes dependendo de sua importância. Como qualquer marcador, a importância pode ser baixa, normal, alta ou crítica.  Esta ilustração mostra a aparência dos marcadores segundo seu nível de importância:  
   
- ![Marcadores de importância baixa, normal, alta e crítica](~/profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
+ ![Marcadores de importância baixa, normal, alta e crítica](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
 Marcadores mostrando a importância do sinalizador  
   
 ## <a name="flag-category"></a>Categoria do sinalizador  
  Um sinalizador pode ser exibido em cinco cores diferentes, dependendo de sua categoria. As cores são reutilizadas se houver mais de cinco categorias. Não é possível escolher a cor. Como qualquer marcador, a categoria pode ser qualquer inteiro. A ilustração a seguir mostra as cores das cinco primeiras categorias.  
   
- ![Cinco cores de marcadores de categoria](~/profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+ ![Cinco cores de marcadores de categoria](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
 Marcadores mostrando as categorias  
   
 ## <a name="alerts"></a>Alertas  
  Um alerta é um sinalizador vermelho que representa um evento crítico do aplicativo, como uma exceção.  Este é um alerta:  
   
- ![Marcador de alerta de Visualização Simultânea](~/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![Marcador de alerta do Visualizador de simultaneidade](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 Um marcador de alerta  
   
 ## <a name="aggregation-flags"></a>Sinalizadores de agregação  
@@ -63,7 +45,7 @@ Um marcador de alerta
   
  Sinalizadores de agregação são desenhados em tamanhos diferentes. O tamanho depende do nível de importância do sinalizador mais importante da agregação. A ilustração a seguir mostra sinalizadores de agregação em ordem crescente de importância.  
   
- ![Sinalizadores de agregação mostrando quatro níveis de importância](~/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![Sinalizadores de agregação mostrando quatro níveis de importância](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Sinalizadores de agregação por nível de importância  
   
 ## <a name="see-also"></a>Consulte também  

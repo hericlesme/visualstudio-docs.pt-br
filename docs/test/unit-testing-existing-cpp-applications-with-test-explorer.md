@@ -1,23 +1,12 @@
 ---
-title: Teste de unidade de aplicativos do C++ existentes com Gerenciador de Testes | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/test/how-to-use-microsoft-test-framework-for-cpp
+ms.openlocfilehash: 7ab917a55d9a2d00a8d4635e2de45cd43cbe02f2
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Teste de unidade de aplicativos do C++ existentes com Gerenciador de Testes
+# <a name="how-to-use-the-microsoft-unit-testing-framework-for-c"></a>Como usar o Microsoft Unit Testing Framework para C++
 Recomendamos que, antes de alterar um aplicativo existente, você verifique se ele tem uma boa cobertura com testes de unidade. Isso dá a garantia de que as alterações não introduziram bugs. Se o aplicativo ainda não tem testes de unidade, você pode adicioná-los usando as técnicas demonstradas neste tópico. Este tópico descreve como adicionar testes de unidade para código existente do Visual C++, iniciando com a decisão de como testar seu código e, em seguida, criando, escrevendo e executando os testes.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Decidindo como testar seu código  
@@ -29,7 +18,7 @@ Recomendamos que, antes de alterar um aplicativo existente, você verifique se e
   
  Há várias maneiras de testar o código do produto, dependendo da exposição das interfaces que você deseja testar. Escolha uma das seguintes opções:  
   
- **Os testes de unidade usarão somente funções que são exportadas do código em teste:**  
+ **Os testes de unidade chamarão somente as funções que são exportadas do código em teste:**  
  Adicione um projeto de teste separado. No projeto de teste, adicione uma referência ao projeto em teste.  
   
  Vá para o procedimento [Para fazer referência a funções exportadas do projeto de teste](#projectRef).  
@@ -46,7 +35,7 @@ Recomendamos que, antes de alterar um aplicativo existente, você verifique se e
   
  Vá para o procedimento [Para alterar o código em teste para uma biblioteca estática](#staticLink).  
   
- **Os testes de unidade devem usar funções privadas e os dados, e o código precisa ser criado como uma DLL (biblioteca de vínculo dinâmico):**  
+ **Os testes de unidade devem usar funções de membro privadas e os dados, e o código precisa ser criado como uma DLL (biblioteca de vínculo dinâmico):**  
  Adicione testes de unidade no mesmo projeto que o código do produto.  
   
  Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sameProject).  
@@ -65,9 +54,9 @@ Recomendamos que, antes de alterar um aplicativo existente, você verifique se e
   
  Continue com o procedimento [Para vincular os testes aos arquivos de biblioteca ou objeto](#objectRef).  
   
-###  <a name="projectRef"></a>Para fazer referência a funções exportadas do projeto de teste  
+###  <a name="projectRef"></a> Para fazer referência a funções DLL exportadas do projeto de teste  
   
--   Se um projeto em teste exporta as funções que deseja testar, você pode adicionar uma referência ao projeto de código do projeto de teste.  
+-   Se um projeto em teste é uma DLL que exporta as funções que você deseja testar, é possível adicionar uma referência ao projeto de código do projeto de teste.  
   
     1.  Criar um projeto de teste em C++.  
   
@@ -162,8 +151,11 @@ Recomendamos que, antes de alterar um aplicativo existente, você verifique se e
   
 ## <a name="run-the-tests"></a>Executar os testes  
   
-1.  No menu **Exibir**, escolha **Outras Janelas**, **Gerenciador de Testes**.  
+1.  No menu **Teste**, escolha **Windows** e **Gerenciador de Testes**.  
+2. Caso todos os testes não estejam visíveis na janela, crie o projeto de teste clicando com o botão direito no mouse no nó do **Gerenciador de Soluções** e escolhendo **Criar** ou **Recompilar**.
   
-2.  No Gerenciador de Testes, escolha **Executar Todos**.  
+2.  No Gerenciador de Testes, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
   
- Para saber mais, confira [Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md).
+## <a name="see-also"></a>Consulte também
+[Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)
+

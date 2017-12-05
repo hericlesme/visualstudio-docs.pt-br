@@ -4,45 +4,28 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
-ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
-ms.contentlocale: pt-br
-ms.lasthandoff: 06/21/2017
-
+ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012
-Os recursos de segurança avançada a partir do Windows 8 e Windows Server 2012 exigiam alterações significativas na maneira como as ferramentas de desempenho do Visual Studio coletam dados dessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Este tópico descreve as alterações das ferramentas de desempenho a partir das plataformas Windows 8 e Windows Server 2012.
+Os recursos de segurança avançada a partir do Windows 8 e Windows Server 2012 exigiam alterações significativas na maneira como as ferramentas de desempenho do Visual Studio coletam dados dessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Este tópico descreve as alterações das ferramentas de desempenho a partir das plataformas Windows 8 e Windows Server 2012.
   
 > [!NOTE]
 >  As ferramentas de desempenho para outras versões do Windows com suporte (Windows 7 e Windows Server 2008 R2) não foram alteradas.
   
 ##  <a name="BKMK_In_this_topic"></a> Neste tópico  
- [Coletando dados nos aplicativos da Windows Store no IDE do Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+ [Coletando dados nos aplicativos UWP no IDE do Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Coletar dados em aplicativos em execução na área de trabalho do Windows 8 ou no Windows Server 2012 do IDE do Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
@@ -52,10 +35,10 @@ Os recursos de segurança avançada a partir do Windows 8 e Windows Server 2012 
   
  [Coletando dados de interação entre camadas (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Coletando dados nos aplicativos da Windows Store no IDE do Visual Studio  
- Ao analisar um aplicativo da Windows Store escrito em JavaScript e HTML 5, você coleta dados de instrumentação para o código JavaScript. Ao analisar um componente ou aplicativo da Windows Store escrito em Visual C++, Visual C# ou Visual Basic, você coleta dados de amostragem para os códigos nativo e gerenciado. Você pode analisar seu aplicativo localmente ou em um computador remoto.  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Coletando dados nos aplicativos UWP no IDE do Visual Studio  
+ Ao analisar um aplicativo UWP escrito em JavaScript e HTML 5, você coleta dados de instrumentação para o código JavaScript. Ao analisar um componente ou aplicativo UWP escrito em Visual C++, Visual C# ou Visual Basic, você coleta dados de amostragem para os códigos nativo e gerenciado. Você pode analisar seu aplicativo localmente ou em um computador remoto.  
   
- Não há suporte para esses recursos e opções de criação de perfil ao criar perfil de aplicativos da Windows Store:  
+ Não há suporte para esses recursos e opções de criação de perfil ao criar perfil de aplicativos UWP:  
   
 -   Criação de perfil de aplicativos JavaScript usando o método de amostragem.  
   
@@ -71,21 +54,21 @@ Os recursos de segurança avançada a partir do Windows 8 e Windows Server 2012 
   
 -   Opções de instrumentação, tais como coleta de desempenho e dados do contador da janela ou especificação de opções de linha de comando adicionais.  
   
- Para obter mais informações sobre a criação de perfil de aplicativos da Windows Store, consulte os seguintes tópicos:  
+ Para saber mais sobre a criação de perfil de aplicativos UWP, consulte os seguintes tópicos:  
   
- [Executar aplicativos da Windows Store no computador local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+ [Executar aplicativos UWP no computador local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [Executar aplicativos UWP em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
  [Ferramentas de Criação de Perfil](profiling-tools.md)  
   
 -   [Memória JavaScript](../profiling/javascript-memory.md)
   
--   [Analisar código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store em um computador local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+-   [Analisar código Visual C++, Visual C# e Visual Basic em aplicativos UWP em um computador local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [Analisar código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store em um dispositivo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+-   [Analisar código Visual C++, Visual C# e Visual Basic em aplicativos UWP em um dispositivo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Analisar os dados de desempenho de código Visual C++, Visual C# e Visual Basic em aplicativos da Windows Store](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+-   [Analisar os dados de desempenho de código Visual C++, Visual C# e Visual Basic em aplicativos UWP](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
  [Neste tópico](#BKMK_In_this_topic)  
   
@@ -106,7 +89,7 @@ Os recursos de segurança avançada a partir do Windows 8 e Windows Server 2012 
   
 |Nome da ferramenta|Descrição|  
 |---------------|-----------------|  
-|[VSPerf](../profiling/vsperf.md)|Coleta dados de criação de perfil de aplicativos da Windows Store e coleta dados de criação de perfil de amostra de aplicativos da área de trabalho do Windows 8 e aplicativos do Windows Server 2012.|  
+|[VSPerf](../profiling/vsperf.md)|Coleta dados de criação de perfil de aplicativos UWP e coleta dados de criação de perfil de amostra de aplicativos da área de trabalho do Windows 8 e aplicativos do Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Coleta dados de criação de aplicativo de instrumentação, simultaneidade e interação entre camadas de aplicativos em execução na área de trabalho do Windows 8 ou do Windows Server 2012. Coleta todos os tipos de dados de perfil de versões anteriores do Windows.|  
   
  Ambas as ferramentas são instaladas com o Visual Studio para uso no computador local.  
@@ -139,7 +122,7 @@ Os recursos de segurança avançada a partir do Windows 8 e Windows Server 2012 
   
 1.  Para coletar os dados de interação entre camadas de aplicativos em execução na área de trabalho do Windows 8 ou do Windows Server 2012, será necessário usar o método de instrumentação.  
   
-2.  Não é possível coletar dados de interação de camada para aplicativos da Windows Store.  
+2.  Não é possível coletar dados de interação de camada de aplicativos UWP.  
   
 3.  É possível incluir dados de interação de camada em todos os métodos de criação de perfil em outra versão com suporte do Windows.  
   

@@ -1,18 +1,16 @@
 ---
-title: "Benefícios do Visual Studio para Mac em relação ao Xamarin Studio"
+title: "Benefícios do Visual Studio para Mac em relação ao Xamarin Studio | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
+ms.openlocfilehash: 08e693e92d6d07da21f8230f9c1de49f071c05e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
-ms.openlocfilehash: 655795fd64958805e0137d7e231391c59f676776
-ms.contentlocale: pt-br
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Benefícios do Visual Studio para Mac em relação ao Xamarin Studio 
  
 O Visual Studio para Mac substituiu o Xamarin Studio como um IDE completo no Mac. Ele fornece recursos que permitem desenvolver aplicativos Web e serviços, aplicativos de plataforma cruzada móveis e de área de trabalho e jogos. Além disso, ele torna a integração com o Azure muito fácil, seja para publicar no Azure ou criar no Azure Functions. Ele tem tudo o que você esperaria de um IDE moderno, incluindo um editor de código-fonte completo, um depurador poderoso, um espaço de trabalho personalizável, integração com o GIT e um sistema avançado de extensão, todos projetados nativamente para o Mac. 
@@ -26,7 +24,7 @@ Outros recursos incluem:
 * Teste de unidade integrado 
 * Suporte imediato para F# 
 
-Os benefícios listados neste guia indicados como **Versão prévia** só estão disponíveis no [Canal alfa](https://docs.microsoft.com/en-us/visualstudio/mac/update#Changing_the_Updater_channel). 
+Os benefícios listados neste guia indicados como **Versão prévia** só estão disponíveis no [Canal alfa](https://docs.microsoft.com/visualstudio/mac/update#Changing_the_Updater_channel). 
 
 ## <a name="language-support"></a>Suporte ao idioma 
 

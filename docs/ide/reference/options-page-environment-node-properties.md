@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: ac450b7e414596632d56117813907ee4406ad69d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Página de Propriedades, Ambiente, Propriedades do Nó
 Este documento descreve as páginas (ou coleções de propriedades) associadas a uma categoria **Ambiente**, `DTE.Properties("Environment", <Property Page>)`, da caixa de diálogo **Opções**. O título de cada subseção é a chamada usada para acessar a coleção Propriedades e a tabela em cada subseção lista as propriedades na coleção.  
@@ -50,7 +35,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 |Animations|Get/Set (Booliano)|Determina se o IDE (ambiente de desenvolvimento integrado) usa animação na barra de status.|  
 |AnimationSpeed|Get/Set (Curto)||  
 |AutoAdjustExperience|Get/Set (Booliano)|Ajusta automaticamente a experiência visual conforme o desempenho do cliente.|  
-|RichClientExperienceOptions|Get/Set (Enum)|Habilita a experiência visual do cliente avançado com valores em <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
+|RichClientExperienceOptions|Get/Set (Enum)|Habilita a experiência visual avançada do cliente com valores em <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
 |CloseButtonActiveTabOnly|Get/Set (Booliano)|Determina se o botão **Fechar** é exibido somente na guia ativa.|  
 |AutohidePinActiveTabOnly|Get/Set (Booliano)|Determina se o botão **Ocultar Automaticamente** afeta somente a guia ativa.|  
   
@@ -71,7 +56,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 |ReuseSavedActiveDocWindow|Get/Set (Booliano)|Determina se abrir um novo arquivo reutiliza a janela do documento atual se o documento atual for salvo. `false` significa sempre abrir uma nova janela do documento para cada documento aberto.|  
 |DetectFileChangesOutsideIDE|Get/Set (Booliano)|Determina se o ambiente recarrega automaticamente arquivos abertos no IDE quando o sistema operacional notifica o IDE de que os arquivos foram modificados no disco.|  
 |AutoloadExternalChanges|Get/Set (Booliano)|Determina se modificações externas detectadas a documentos abertos recarregarão automaticamente o arquivo modificado se o documento aberto não for modificado. Se o documento aberto for modificado e essa propriedade for `true`, o IDE avisará como se essa propriedade fosse `false`.|  
-|InitializeOpenFileFromCurrentDocument|Get/Set (Booliano)|Determina se o comando <xref:EnvDTE.DTEClass.OpenFile%2A> propaga o nome de arquivo e diretório do último documento ativo ou do último lugar em que você abriu um arquivo.|  
+|InitializeOpenFileFromCurrentDocument|Get/Set (Booliano)|Determina se o comando <xref:EnvDTE.DTEClass.OpenFile%2A> propaga o nome do arquivo e do diretório do último documento ativo ou do último lugar em que você abriu um arquivo.|  
 |MiscFilesProjectSavesLastNItems|Get/Set (Curto)|Determina quantos arquivos o projeto Arquivos Diversos registra. Como resultado, você poderá ver o que você abriu mais recentemente como um arquivo diverso no disco na próxima vez que usar o IDE.|  
 |ShowMiscFilesProject|Get/Set (Booliano)|Determina se o projeto Arquivos Diversos é mostrado.|  
 |CheckForConsisentLineEndings|Get/Set (Booliano)|Verifica se há terminações consistentes de linha no carregamento do arquivo.|  
@@ -150,7 +135,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
   
 |Nome do item de propriedade|Valor|Descrição|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Enum)|Ação a ser adotada na inicialização, de <xref:EnvDTE.vsStartUp>, com valores de 0 a 5:<br /><br /> –   0: Abrir Página Inicial<br />–   1: Carregar última solução carregada<br />–   2: Mostrar caixa de diálogo **Abrir Projeto**<br />–   3: Mostrar caixa de diálogo **Novo Projeto**<br />–   4: Mostrar ambiente vazio<br />–   5: Mostrar Página Inicial|  
+|OnStartUp|Get/Set (Enum)|Ação a ser executada na inicialização, de <xref:EnvDTE.vsStartUp>, com valores de 0 a 5:<br /><br /> –   0: Abrir Página Inicial<br />–   1: Carregar última solução carregada<br />–   2: Mostrar caixa de diálogo **Abrir Projeto**<br />–   3: Mostrar caixa de diálogo **Novo Projeto**<br />–   4: Mostrar ambiente vazio<br />–   5: Mostrar Página Inicial|  
 |StartPageRSSUrl|Get/Set (Cadeia de Caracteres)|URL para o RSS feed usado na inicialização.|  
 |StartPageRefreshDownloadedContent|Get/Set (Booliano)|Atualiza a Página Inicial após cada passagem do intervalo especificado em StartPageRefreshInterval.|  
 |StartPageRefreshInterval|Get/Set (Curto)|Intervalo em minutos para atualizar a Página Inicial.|  
@@ -163,7 +148,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 |ConfirmTaskDeletion|Get/Set (Booliano)|Especifica se uma caixa de confirmação será exibida ao excluir tarefas da **Lista de Tarefas**.|  
 |WarnOnAddingHiddenItem|Get/Set (Booliano)|Especifica se você será avisado ao adicionar uma tarefa do usuário que não será exibida.|  
 |DontShowFilePaths|Get/Set (Booliano)|Especifica se serão mostrados caminhos completos de arquivos na Lista de Tarefas.|  
-|CommentTokens|SafeArray|Retorna um SafeArray de valores do token de comentário. Cada um tem os campos, `Name` (cadeia de caracteres) e `Priority` (<xref:EnvDTE.vsTaskPriority>, alta, média ou baixa).|  
+|CommentTokens|SafeArray|Retorna um SafeArray de valores do token de comentário. Cada um tem os campos `Name` (cadeia de caracteres) e `Priority` (<xref:EnvDTE.vsTaskPriority>, Alto, Médio ou Baixo).|  
   
 ## <a name="web-browser"></a>Navegador da Web  
  `DTE.Properties("Environment", "WebBrowser")`  
@@ -172,7 +157,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 |------------------------|-----------|-----------------|  
 |HomePage|Get/Set (Cadeia de Caracteres)|Representa a URL da home page.|  
 |SearchPage|Get/Set (Cadeia de Caracteres)|Representa a URL da página de pesquisa.|  
-|ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Fonte, Design, Externo).|  
+|ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Origem, Design, Externo).|  
 |ViewSourceExternalProgram|Get/Set (Cadeia de Caracteres)|O caminho do visualizador da fonte externa.|  
   
 ## <a name="see-also"></a>Consulte também  

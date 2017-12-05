@@ -4,73 +4,57 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-caps.latest.revision: 2
-author: kempb
-ms.author: kempb
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b62eac5ab4b057e26ed4a0a34551655984449cf1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c3ccc6fcfa8471d767356f1e30d1e5f8b0ed15d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>Código de L2DBForm.xaml
 Este tópico contém e descreve o arquivo de origem XAML para a [Vinculação de dados de WPF usando o exemplo LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
   
 ## <a name="overall-ui-structure"></a>Estrutura geral de interface de usuário  
- Como típico é para um projeto de WPF, esse arquivo contém um elemento pai, um elemento XML <xref:System.Windows.Window> associado com a classe derivada `L2XDBFrom` no namespace `LinqToXmlDataBinding`.  
+ Como típico é para um projeto de WPF, esse arquivo contém um elemento pai, um elemento XML <xref:System.Windows.Window> associado com a classe derivada `L2XDBFrom` no espaço de `LinqToXmlDataBinding` .  
   
- A área de cliente está contida dentro de <xref:System.Windows.Controls.StackPanel>, que recebe uma tela de fundo azul-claro. Este painel contém quatro seções de interface do usuário <xref:System.Windows.Controls.DockPanel> separadas por barras <xref:System.Windows.Controls.Separator>. O objetivo dessas seções é descrito em **Comentários** no [tópico anterior](../designers/walkthrough-linqtoxmldatabinding-example.md).  
+ A área cliente está contida dentro de <xref:System.Windows.Controls.StackPanel> que recebe um plano de fundo azul. Esse painel contém quatro seções de <xref:System.Windows.Controls.DockPanel> interface do usuário separados por barras de <xref:System.Windows.Controls.Separator> . O objetivo dessas seções é descrito em **Comentários** no [tópico anterior](../designers/walkthrough-linqtoxmldatabinding-example.md).  
   
- Cada seção contém um rótulo que a identifica. Nas duas primeiras seções, este rótulo é girado em 90 graus com o uso de um <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. O restante da seção contém os elementos de interface do usuário apropriados para a finalidade dessa seção: blocos de texto, caixas de texto, botões, e assim por diante. Às vezes, um filho <xref:System.Windows.Controls.StackPanel> é usado para alinhar esses controles filhos.  
+ Cada seção contém um rótulo que a identifica. Nas duas primeiras seções, este rótulo é girada em 90 graus com o uso de <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. O restante da seção contém os elementos de interface do usuário apropriados para a finalidade dessa seção: blocos de texto, caixas de texto, botões, e assim por diante. Um filho <xref:System.Windows.Controls.StackPanel> são às vezes para alinhar esses controles filho.  
   
 ## <a name="window-resource-section"></a>Seção de recursos de janela  
  A marca de abertura `<Window.Resources>` na linha 9 indica o início da seção de recursos da janela. Termina com a marca de fechamento na linha 35.  
   
- A marca `<ObjectDataProvider>`, que abrange as linhas 11 a 25, declara um <xref:System.Windows.Data.ObjectDataProvider> denominado `LoadedBooks`, que usa um <xref:System.Xml.Linq.XElement> como a origem. Este <xref:System.Xml.Linq.XElement> é inicializado analisar um documento XML inserido (um elemento de `CDATA`). Observe que o espaço em branco é preservada quando declarar o documento XML inserido e também quando é analisado. Isso foi feito porque o controle de <xref:System.Windows.Controls.TextBlock>, que é usado para exibir o XML bruto, não tem funcionalidades especiais de formatação de XML.  
+ A marca de `<ObjectDataProvider>` , que abrange as linhas 11 a 25, declara <xref:System.Windows.Data.ObjectDataProvider>, `LoadedBooks`chamado, que usa <xref:System.Xml.Linq.XElement> como a fonte. Este <xref:System.Xml.Linq.XElement> é inicializado analisar um documento XML inserido (um elemento de `CDATA` ). Observe que o espaço em branco é preservada quando declarar o documento XML inserido e também quando é analisado. Isso foi feito como o controle de <xref:System.Windows.Controls.TextBlock> , que é usado para exibir XML brutos, não tem XML especial que formata recursos.  
   
- Por fim, um <xref:System.Windows.DataTemplate> chamado `BookTemplate` é definido nas linhas 28 a 34. Este modelo será usado para exibir as entradas na seção de interface do usuário da **Lista de Livros**. Usa associação de dados e propriedades dinâmicas LINQ to XML para recuperar a identificação do livro e o nome de livro com as atribuições seguintes:  
+ Finalmente, <xref:System.Windows.DataTemplate> chamado `BookTemplate` é definido em linhas 28 a 34. Este modelo será usado para exibir as entradas na seção de interface do usuário da **Lista de Livros**. Usa associação de dados e propriedades dinâmicas LINQ to XML para recuperar a identificação do livro e o nome de livro com as atribuições seguintes:  
   
 ```  
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"  
 ```  
   
 ## <a name="data-binding-code"></a>Código de associação de dados  
- Além do elemento <xref:System.Windows.DataTemplate>, a vinculação de dados é usada em um número de outros locais neste arquivo.  
+ Além do elemento de <xref:System.Windows.DataTemplate> , associação de dados é usada em um número de outros locais neste arquivo.  
   
- Na marca de abertura `<StackPanel>` na linha 38, a propriedade <xref:System.Windows.FrameworkElement.DataContext%2A> deste painel é definida como o provedor de dados `LoadedBooks`.  
+ Na marca de abertura `<StackPanel>` na linha 38, a propriedade de <xref:System.Windows.FrameworkElement.DataContext%2A> desse painel é definida para o provedor de dados de `LoadedBooks` .  
   
 ```  
 DataContext="{Binding Source={StaticResource LoadedBooks}}  
 ```  
   
- Isso torna possível na linha (46) para o <xref:System.Windows.Controls.TextBlock> chamado `tbRawXml` exibir o XML bruto associando-se à propriedade `Xml` deste provedor de dados:  
+ Isso torna possível na linha (46) para <xref:System.Windows.Controls.TextBlock> chamado `tbRawXml` para exibir XML brutos associando a propriedade de `Xml` deste provedor de dados:  
   
 ```  
 Text="{Binding Path=Xml}"   
 ```  
   
- O <xref:System.Windows.Controls.ListBox> na seção de interface do usuário da **Lista de Livros**, linhas 58 a 62, define o modelo para seus itens de exibição para o `BookTemplate` definido na seção de recursos da janela:  
+ A <xref:System.Windows.Controls.ListBox> na seção da interface do usuário **Lista de Livros**, nas linhas 58 a 62, define o modelo para seus itens de exibição como o `BookTemplate` definido na seção de recursos de janela:  
   
 ```  
 ItemTemplate ="{StaticResource BookTemplate}"   
@@ -84,7 +68,7 @@ ItemTemplate ="{StaticResource BookTemplate}"
 </ListBox.ItemsSource>  
 ```  
   
- A terceira seção da interface do usuário, **Editar Livro Selecionado**, associa primeiro o <xref:System.Windows.FrameworkElement.DataContext%2A> do <xref:System.Windows.Controls.StackPanel> pai ao item da seção da interface do usuário **Lista de Livros** selecionado atualmente (linha 82):  
+ A terceira seção da interface do usuário, **Editar Livro Selecionado**, primeiro associa o <xref:System.Windows.FrameworkElement.DataContext%2A> do <xref:System.Windows.Controls.StackPanel> pai ao item que está selecionado no momento na seção da interface do usuário **Lista de Livros** (linha 82):  
   
 ```  
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"  

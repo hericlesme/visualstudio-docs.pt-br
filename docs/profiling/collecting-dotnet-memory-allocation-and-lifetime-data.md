@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools,.NET memory method
 ms.assetid: 62a6dd5f-db66-4456-9d57-f8913dbfe4d5
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4513235a6d2e81e0641adb312ebd4f912b5d46f2
-
+ms.openlocfilehash: e31c9c065f7e285e76d85bbcd901d3a9c23cba6a
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Coletando a alocação de memória do .NET e os dados de vida útil
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] As Ferramentas de Criação de Perfil dão suporte à coleta de alocação de memória e dados de tempo de vida do objeto do .NET, que ajuda a detectar problemas de desempenho relacionados à memória em seu aplicativo.  
@@ -48,7 +33,7 @@ ms.openlocfilehash: 4513235a6d2e81e0641adb312ebd4f912b5d46f2
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  É possível coletar dados usando a amostragem ou o método de criação de perfil de instrumentação.  
   
@@ -101,8 +86,3 @@ ms.openlocfilehash: 4513235a6d2e81e0641adb312ebd4f912b5d46f2
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)   
  [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

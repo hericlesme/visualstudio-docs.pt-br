@@ -1,27 +1,24 @@
 ---
 title: "Espaços de trabalho nas Ferramentas do R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d610279c-d6c3-4084-939a-bf042f64d4dd
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 559f5832be6d4fa87be39941401f2222e075b7a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 4764fb9fc6b0cd2e6160540fdec3f33370d81128
-ms.contentlocale: pt-br
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Controlando onde o código R é executado com espaços de trabalho
 
 Um espaço de trabalho nas RTVS (Ferramentas do R para Visual Studio) permite configurar onde uma sessão do R é executada, o que pode ocorrer em computadores locais e remotos. A meta é permitir que você trabalhe com uma experiência de usuário semelhante, que ofereça a capacidade de usufruir de computadores baseados em nuvem possivelmente mais poderosos.
@@ -37,6 +34,7 @@ Neste tópico:
 - [Salvando e redefinindo um espaço de trabalho](#saving-and-resetting-a-workspace)
 - [Espaços de trabalho locais](#local-workspaces)
 - [Espaços de trabalho remotos](#remote-workspaces)
+- [Logon em espaço de trabalho remoto](#remote-workspace-logon)
 - [Alternando entre espaços de trabalho](#switching-between-workspaces)
 - [Diretórios em computadores locais e remotos](#directories-on-local-and-remote-computers)
 - [Copiando arquivos de projeto para espaços de trabalho remotos](#copying-project-files-to-remote-workspaces)
@@ -75,6 +73,17 @@ O Visual Studio não detecta os espaços de trabalho remotos automaticamente, vo
 > [!Note]
 > Os espaços de trabalho remotos estão efetivamente na visualização. Estamos trabalhando em uma implementação melhor do problema de sincronização de arquivo para uma versão futura e são bem-vindas suas ideias e comentários.
 
+## <a name="remote-workspace-logon"></a>Logon em Espaço de Trabalho Remoto
+
+Você deve usar um nome de usuário e senha para fazer logon no espaço de trabalho remoto.
+
+### <a name="logon-to-windows-workspace"></a>Logon no espaço de trabalho do Windows
+
+Se seu computador remoto estiver configurado para usar a conta de domínio, você poderá usar o logon do domínio para acessar um espaço de trabalho remoto. Se não estiver, você deverá usar o formato `machine-name\username` para fazer logon com uma conta de computador no computador remoto.
+
+### <a name="logon-to-linux-workspace"></a>Logon em espaço de trabalho do Linux
+
+Para fazer logon em uma conta do Linux, use o formato `<<unix>>\username`. Por exemplo, se você tem uma conta com o nome `ruser`, você deverá digitar o nome de usuário como `<<unix>>\ruser`.
 
 ## <a name="switching-between-workspaces"></a>Alternando entre espaços de trabalho
 
@@ -139,4 +148,3 @@ Aqui, a propriedade **Transferir arquivos em execução** determina se as RTVS c
 ## <a name="copying-files-from-a-remote-workspace"></a>Copiando arquivos de um espaço de trabalho remoto
 
 Se o seu script R gera arquivos no servidor, você pode copiar esses arquivos de volta para o cliente usando a função `rtvs::fetch_file`. Essa função aceita, no mínimo, o caminho remoto para o arquivo que você deseja copiar para o computador e, opcionalmente, o caminho de destino em seu computador. Se você não especificar um caminho, o arquivo será copiado na pasta `%userprofile%\Downloads`.
-

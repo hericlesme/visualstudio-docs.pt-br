@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d3936d44f8591753df102cf65c15d9199a679316
-ms.contentlocale: pt-br
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 8b854bcfcb7227a454023f89ce732706b1e545cc
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Atualizando testes de IU codificados a partir do Visual Studio 2010
-Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 são reparados silenciosamente quando abertos no Visual Studio 2012. Se os Projetos de teste forem inseridos no controle do código-fonte, os arquivos do projeto serão verificados para realização desse reparo. Após o reparo, esses projetos de teste que contêm testes de IU codificados podem ser usados no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 e no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
+Os projetos de teste que contêm testes de interface do usuário codificados criados no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 são reparados silenciosamente quando abertos no Visual Studio 2012 ou posterior. Se os Projetos de teste forem inseridos no controle do código-fonte, os arquivos do projeto serão verificados para realização desse reparo. Após o reparo, esses projetos de teste que contêm testes de IU codificados podem ser usados no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 e no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
  **Requisitos**  
   
@@ -45,12 +28,12 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
 >  O Visual Studio inclui mais de um tipo de projeto de teste. Se você criar um novo teste de IU codificado, ele será criado em um tipo de projeto de teste de IU codificado. Para saber mais, consulte [Atualizar testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
   
 > [!WARNING]
-> Projetos de teste do  [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] que contêm testes de IU codificados devem ser recriados ao abri-los no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ou no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] lado a lado com [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
+>  Projetos de teste do [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] que contêm testes de IU codificados devem ser recriados ao abri-los no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ou no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] lado a lado com [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
 > [!WARNING]
 >  Quando um projeto de teste criado no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e que contém somente os testes de unidade é aberto no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], não é possível adicionar testes de IU codificados a ele. Da mesma forma, não é possível adicionar um teste de IU codificado a um projeto de teste de unidade que foi criado no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
-## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Problemas de compatibilidade entre o Visual Studio 2010 e o Visual Studio 2012  
+## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012-or-later"></a>Problemas de compatibilidade entre o Visual Studio 2010 e o Visual Studio 2012 ou posterior  
  A tabela a seguir lista os problemas dos quais você deve estar ciente ao migrar testes de IU codificados entre o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] e o [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
 > [!CAUTION]
@@ -64,7 +47,7 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
 |No [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)], foram adicionadas referências dentro de uma instrução ‘Choose’ no arquivo csproj. No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], estamos usando um arquivo de destino de Comentários para incluir referências ao Assembly de Teste de IU codificado.|No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], não é possível adicionar um Teste de IU codificado a um Projeto de teste criado no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] (ou SP1) que não continha um Teste de IU codificado.<br /><br /> O processo de reparação adiciona o arquivo de destino e a instrução Choose. Se um Teste de IU codificado não estiver no Projeto de teste, o projeto será marcado como reparado e as referências apropriadas não serão adicionadas na adição do Teste de IU codificado no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|Será necessário criar um novo Projeto de teste na mesma solução usando o [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] e adicionar o novo Teste de IU codificado a ele. Como alternativa, adicione Testes de IU codificados ao Projeto de teste no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 e abra esse projeto no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|  
   
 ##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Atualização do Visual Studio 2010 SP1  
- Uma atualização para o [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 com suporte de compatibilidade para o Visual Studio 2012 e o Windows 8 está disponível para download no [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=34677) e também como uma atualização do Visual Studio.  
+ Uma atualização para o [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 com suporte de compatibilidade para o Visual Studio 2012 ou posterior e o Windows 8 ou posterior, está disponível para download no [Centro de Download da Microsoft](http://www.microsoft.com/download/details.aspx?id=34677) e também como uma atualização do Visual Studio.  
   
  Depois de aplicar a atualização, os seguintes recursos de ferramenta de teste de IU codificado do [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 serão aprimorados para o Windows 8:  
   
@@ -86,4 +69,3 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
  [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
  [Gerar um Teste de IU Codificado de uma gravação da ação existente](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)   
  [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
+f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 dev_langs:
 - VB
 - CSharp
@@ -18,30 +16,15 @@ helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
 ms.assetid: 153527c6-8b95-4003-8e8e-03a489d0a629
-caps.latest.revision: 33
-author: kempb
-ms.author: kempb
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 51d39c4bb5563d8cf25dc5fe104a645e84ffcf49
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0829c1514e8d98d32914c4cc8f59de822d6b7f4d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
 A página **Publicar** do **Designer de Projeto** é usada para configurar as propriedades de implantação do ClickOnce.  
@@ -53,7 +36,7 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
   
 ## <a name="uielement-list"></a>Lista UIElement  
  **Local da Pasta de Publicação**  
- Especifica o local em que o aplicativo é publicado. Pode ser um caminho de unidade (`C:\deploy\myapplication`), um compartilhamento de arquivos (`\\server\myapplication`), um servidor FTP (`ftp://ftp.microsoft.com/myapplication`) ou um site da Web (`http://www.microsoft.com/myapplication`). Observe que o texto deve estar presente na caixa **Local de Publicação** para o botão de procurar (**...**) funcionar.  
+ Especifica o local em que o aplicativo é publicado. Pode ser um caminho de unidade (`C:\deploy\myapplication`), um compartilhamento de arquivos (`\\server\myapplication`), um servidor FTP (`ftp://ftp.microsoft.com/myapplication`) ou um site da Web (`http://www.microsoft.com/myapplication`). Observe que o texto deve estar presente na caixa **Local de Publicação** para o botão de procurar (**...** ) funcionar.  
   
  Por padrão, o local de publicação será `http://localhost/<projectname>/` se você tiver o IIS instalado, ou o diretório `publish\` se você não tiver o IIS instalado. Se o computador estiver executando o Windows Vista, o padrão será sempre o diretório `publish\`, independentemente de você ter o IIS instalado.  
   
@@ -78,7 +61,7 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
  Abre a [Caixa de Diálogo Opções de Publicação](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), que é usada para especificar mais opções de publicação avançadas.  
   
  **Versão da Publicação**  
- Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido por <xref:System.Version>.  
+ Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido pelo <xref:System.Version>.  
   
  Ao instalar mais de uma versão de um aplicativo usando o ClickOnce, a instalação moverá as versões anteriores do aplicativo para uma pasta chamada Arquivo, no local de publicação especificado. O arquivamento de versões anteriores dessa maneira mantém o diretório de instalação livre de pastas da versão anterior.  
   
