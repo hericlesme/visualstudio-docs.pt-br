@@ -1,5 +1,5 @@
 ---
-title: "Personalizar a página inicial do Visual Studio | Microsoft Docs"
+title: "Instalar uma página inicial personalizada ou alterar o item de inicialização no Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 02/01/2017
 ms.reviewer: 
@@ -15,48 +15,45 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start page
-ms.assetid: 925d42eb-ec34-426e-ad81-19db8630e536
 caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 178c20c9c4c3af8f5252e70ca603cdf8f8335e52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 45cfb501103c762f7af6fc130a981028c262540b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Personalizar a página inicial do Visual Studio
-É possível personalizar a página inicial do Visual Studio de várias maneiras padrão, mostrando, por exemplo, a caixa de diálogo **Abrir Projeto** ou abrindo a solução que foi carregada mais recentemente. Também é possível mostrar uma página inicial personalizada, que é uma página XAML do Windows Presentation Foundation (WPF) executada em uma janela de ferramenta e pode executar comandos que são internos do Visual Studio.  
 
-## <a name="customize-the-default-start-page"></a>Personalizar a página inicial padrão  
+É possível personalizar a experiência de inicialização do Visual Studio de várias maneiras diferentes, mostrando, por exemplo, a caixa de diálogo **Abrir Projeto** ou abrindo a solução que foi carregada mais recentemente. Também é possível mostrar uma página inicial personalizada, que é uma página XAML do Windows Presentation Foundation (WPF) executada em uma janela de ferramenta e pode executar comandos que são internos do Visual Studio.
 
-1.  Na barra de menus, escolha **Ferramentas**, **Opções**.  
+## <a name="to-change-the-startup-item"></a>Para alterar o item de inicialização
 
-2.  Expanda **Ambiente** e escolha **Inicialização**.  
+1. Na barra de menus, escolha **Ferramentas**, **Opções**.
 
-3.  Na lista **Na inicialização**, escolha o item da personalização desejado.  
+1. Expanda **Ambiente** e escolha **Inicialização**.
 
-## <a name="show-a-custom-start-page"></a>Mostrar uma página inicial personalizado  
+1. Na lista **Na inicialização**, escolha o item a ser exibido depois que o Visual Studio inicia.
 
-1.  Instale uma página inicial personalizada de uma das seguintes maneiras:  
+## <a name="to-show-a-custom-start-page"></a>Para mostrar uma página inicial personalizada
 
-    -   Instale-a por meio da [Galeria do Visual Studio](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page), de outro site ou de uma página da intranet local.  
+Você pode [criar sua própria página inicial personalizada](../extensibility/creating-a-custom-start-page.md) usando o SDK do Visual Studio ou usar uma que alguém criou. Por exemplo, você pode encontrar as páginas iniciais personalizadas no [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
 
-        Abra um arquivo .vsix que contém uma página inicial personalizada ou copie e cole os arquivos de página inicial na pasta **%USERPROFILE% \My Documents\Visual Studio 2017\StartPages** do computador.  
+Para instalar uma página inicial personalizada, abra um arquivo .vsix ou copie e cole os arquivos de página inicial na pasta **%USERPROFILE% \Documents\Visual Studio 2017\StartPages** do computador.
 
-    -   Criar sua própria página inicial se você instalou o SDK do Visual Studio.  
+### <a name="to-select-which-custom-start-page-to-display"></a>Para selecionar qual página inicial personalizada exibir
 
-         Consulte [Criando uma página inicial personalizada](../extensibility/creating-a-custom-start-page.md).  
+1. Na barra de menus, escolha **Ferramentas**, **Opções**.
 
-2.  Na barra de menus, escolha **Ferramentas**, **Opções**.  
+1. Expanda **Ambiente** e escolha **Inicialização**.
 
-3.  Expanda **Ambiente** e escolha **Inicialização**.  
-
-4.  Na lista **Personalizar Página Inicial**, escolha a página desejada.  
+1. Na lista **Personalizar Página Inicial**, escolha a página desejada.
 
 > [!NOTE]
->  Se um erro em uma página inicial personalizada causar pane no Visual Studio, você poderá iniciar o Visual Studio no modo de segurança e defini-lo para usar a página inicial padrão. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).  
+> Se um erro em uma página inicial personalizada causar pane no Visual Studio, você poderá iniciar o Visual Studio no modo de segurança e defini-lo para usar a página inicial padrão. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Consulte também  
- [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md)   
+## <a name="see-also"></a>Consulte também
+
+[Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md)

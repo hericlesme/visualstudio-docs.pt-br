@@ -1,44 +1,36 @@
 ---
-title: Personalizando o Editor | Microsoft Docs
+title: Personalizando o editor do Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- editors, Code Editor customization
+- editor, customizing
 - Code Editor, customizing
-ms.assetid: 7f4eee2a-586f-49ae-a763-4d9c0ac5bc71
-caps.latest.revision: "21"
+- Text Editor, customizing
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d301c12a27114de7def857e511240b9de1cabcf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4938949fa050770acb3473de4aed3ff913882323
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="customizing-the-editor"></a>Personalizando o editor
-É possível personalizar a formatação, guias, fontes e cores, o IntelliSense e muitos outros recursos do editor em um editor de linguagem geral ou específico alterando as opções. Para obter mais informações sobre essas opções, consulte [Caixa de diálogo Opções do Editor de Texto](../ide/reference/text-editor-options-dialog-box.md) ou digite `Editor` em **QuickLaunch**. Também é possível alterar a maneira como as janelas são exibidas.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- Estes tópicos explicam como ajustar a aparência e comportamento do editor de texto e de código.  
-  
- [Como alterar maiúsculas e minúsculas no texto no editor](../ide/how-to-change-text-case-in-the-editor.md)  
- Explica como alterar a capitalização do texto no seu código.  
-  
- [Como gerenciar janelas do editor](../ide/how-to-manage-editor-windows.md)  
- Mostra como manipular as janelas do editor.  
-  
- [Como gerenciar modos do editor](../ide/how-to-manage-editor-modes.md)  
- Explica como usar o modo de tela inteira e espaço virtual.  
-  
-## <a name="see-also"></a>Consulte também  
- [Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)   
- [Definindo indicadores no código](../ide/setting-bookmarks-in-code.md)   
- [Caixa de diálogo Geral, Ambiente, Opções](../ide/reference/general-environment-options-dialog-box.md)   
- [Caixa de diálogo Documentos, Ambiente, Opções](../ide/reference/documents-environment-options-dialog-box.md)   
- [Caixa de diálogo Fontes e Cores, Ambiente, Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+
+É possível personalizar a formatação, guias, fontes e cores, o IntelliSense e muitos outros recursos do Editor de Texto em geral uma linguagem de programação específica. Os tópicos nesta seção mostram como executar algumas dessas personalizações.
+
+Para obter mais informações sobre as opções do Editor de Texto, confira [Caixa de diálogo Opções do Editor de Texto](../ide/reference/text-editor-options-dialog-box.md).
+
+## <a name="see-also"></a>Consulte também
+
+[Início rápido: personalizar o IDE do Visual Studio e o Editor](../ide/quickstart-personalize-the-ide.md)  
+[Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)  
+[Configurando identificadores no código](../ide/setting-bookmarks-in-code.md)  
+[Caixa de diálogo Geral, Ambiente, Opções](../ide/reference/general-environment-options-dialog-box.md)  
+[Caixa de diálogo Documentos, Ambiente, Opções](../ide/reference/documents-environment-options-dialog-box.md)  
+[Caixa de diálogo Fontes e Cores, Ambiente, Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

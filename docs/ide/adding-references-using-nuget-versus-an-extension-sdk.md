@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40f554f21cc2cee9fb6d457ef9f4a560740cebc6
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Adicionando referências usando o NuGet versus um SDK de Extensão
 
@@ -56,7 +55,7 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 |O mecanismo dá suporte a um computador de desenvolvedor limpo. (Ou seja, não é necessária nenhuma instalação e a simples recuperação do controle do código-fonte funcionará.)|N|Como você referencia um SDK, é necessário verificar fazer check-in na sua solução e no SDK separadamente. É possível fazer check-in do SDK nos dois locais de não Registro padrão dos quais o MSBuild itera SDKs (para obter detalhes, consulte [Creating a Software Development Kit (Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md))). Como alternativa, se um local personalizado for composto dos SDKs, será possível especificar o código a seguir no arquivo de projeto:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Em seguida, faça check-in dos SDKs nesse local.|S|É possível fazer check-out da solução e o Visual Studio reconhece imediatamente e age nos arquivos.|
 |É possível ingressar a uma grande comunidade existente de autores de pacotes.|N/A|A comunidade é nova.|S||
 |É possível ingressar em uma grande comunidade existente de consumidores de pacotes.|N/A|A comunidade é nova.|S||
-|É possível ingressar em um ecossistema de parceiros (galerias personalizadas, repositórios e assim por diante).|N/A|Os repositórios disponíveis incluem a Galeria do Visual Studio, o Centro de Download da Microsoft e [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|S||
+|É possível ingressar em um ecossistema de parceiros (galerias personalizadas, repositórios e assim por diante).|N/D|Os repositórios disponíveis incluem Visual Studio Marketplace, o Centro de Download da Microsoft e a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|S||
 |O mecanismo se integra a servidores de build de integração contínua para criação e consumo de pacotes.|S|O SDK deve passar o local com check-in (propriedade SDKReferenceDirectoryRoot) na linha de comando para o MSBuild.|S||
 |O mecanismo dá suporte a versões do pacote estáveis e de pré-lançamento.|S|O SDK dá suporte à adição de referências a várias versões.|S||
 |O mecanismo dá suporte à atualização automática para pacotes instalados.|S|Se fornecido como VSIX ou como parte de atualizações automáticas do Visual Studio, o SDK oferece notificações automáticas.|S||

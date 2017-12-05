@@ -12,15 +12,13 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology:
-- vs-ide-install
-- vs-ide-sdk
+ms.technology: vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.openlocfilehash: 7a69153f0df6ba6f7da19f5e2a0046209fffdaf6
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: e3f2a67b37d4e6ef6ad7b5e1a946847f63d12903
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>IDs decomponente e carga de trabalho do Visual Studio 2017 Desktop Express
 
@@ -93,7 +91,13 @@ ID do componente | Nome | Versão
 N/D | N/D | N/D
 
 ## <a name="get-support"></a>Obter suporte
-Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, consulte a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md) para obter dicas de solução de problemas. Você pode nos relatar um problema do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), no IDE do Visual Studio, ou compartilhar uma sugestão conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579). É possível acompanhar os problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas. Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio) (exige uma conta do [GitHub](https://github.com/)).
+Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Aqui estão algumas outras opções de suporte:
+* Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
+* Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
+* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Consulte também
 
