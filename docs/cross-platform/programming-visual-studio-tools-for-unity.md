@@ -9,23 +9,23 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: a5758cb0-e73b-45f5-8cae-c0eb40491026
 caps.latest.revision: "3"
-author: ghogen
-ms.author: ghogen
-manager: ghogen
-ms.openlocfilehash: 0bae39888104fb194b0ac178ae2c1be316d06585
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+author: conceptdev
+ms.author: crdun
+manager: crdun
+ms.openlocfilehash: 7d099fae62e808f2a86db53241fc7e774c5ae945
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Programando o Visual Studio Tools for Unity
 Nesta seção, você encontrará exemplos de como usar as Ferramentas do Visual Studio para API do Unity.  
-  
+
 ## <a name="examples"></a>Exemplos  
  Aqui estão alguns exemplos que mostram como você pode usar as Ferramentas do Visual Studio para APIs do Unity.  
-  
+
 ### <a name="customize-project-files-created-by-vstu"></a>Personalizar arquivos de projeto criados pelo VSTU  
  Ferramentas do Visual Studio para Unity fornecem um retorno de chamada de estilo do Unity durante a geração do arquivo de projeto. Para saber como você pode modificar o arquivo de projeto sempre que ele for gerado novamente, consulte [Exemplo: geração de arquivo de projeto](../cross-platform/customize-project-files-created-by-vstu.md).  
-  
+
 ### <a name="share-the-unity-log-callback-with-vstu"></a>Compartilhar o retorno de log do Unity com o VSTU  
  As Ferramentas do Visual Studio para Unity registram um retorno de chamada de log do Unity para transmitir seu console para o Visual Studio. Se os scripts do seu editor também registram um retorno de chamada de log do Unity, o retorno de chamada VSTU pode interferir. Para saber como você pode compartilhar o retorno de chamada de log do Unity com VSTU, consulte [Exemplo: retorno de chamada do log](../cross-platform/share-the-unity-log-callback-with-vstu.md).
