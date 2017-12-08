@@ -1,6 +1,6 @@
 ---
 title: Depurar aplicativos ao vivo do Azure do ASP.NET - Visual Studio | Microsoft Docs
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos ao vivo do Azure do ASP.NET usando o depurador do instantâneo
 
@@ -33,7 +33,7 @@ Além disso, o depurador de instantâneo só está disponível para o Visual Stu
 
 ## <a name="start-the-snapshot-debugger"></a>Iniciar o depurador do instantâneo
 
-1. Instalar o [Visual Studio Enterprise 15,5 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) ou posterior. Se você estiver atualizando de uma visualização anterior do Visual Studio de 2017, execute o instalador do Visual Studio e verifique o componente do depurador de instantâneo na carga de trabalho de desenvolvimento do ASP.NET e web.
+1. Instalar [Visual Studio 2017 Enterprise versão 15,5](https://www.visualstudio.com/downloads/) ou posterior. Se você estiver atualizando de uma instalação anterior do Visual Studio de 2017, execute o instalador do Visual Studio e verifique o componente do depurador de instantâneo na carga de trabalho de desenvolvimento do ASP.NET e web.
 
 2. Abra o projeto que você gostaria de depuração de instantâneo. 
 

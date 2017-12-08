@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>Usando a janela Tarefas
 O **tarefas** janela é semelhante a **Threads** janela, exceto que ela mostra informações sobre <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), ou [WinJS. Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) objetos em vez de cada thread. Como threads, as tarefas representam as operações assíncronas que podem ser executadas simultaneamente; no entanto, várias tarefas podem ser executadas no mesmo thread. 
@@ -32,7 +32,7 @@ O **tarefas** janela é semelhante a **Threads** janela, exceto que ela mostra i
   
  No código nativo, você pode usar o **tarefas** janela quando você trabalha com [grupos de tarefas](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralelo algoritmos](/cpp/parallel/concrt/parallel-algorithms), [agentes assíncronos](/cpp/parallel/concrt/asynchronous-agents), e [tarefas leves](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Para obter mais informações sobre as tarefas em código nativo, consulte [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime).  
   
- No JavaScript, você pode usar a janela Tarefas quando estiver trabalhando com a tarefa e, em seguida, codificar. Consulte [programação assíncrona em JavaScript (aplicativos UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) para obter mais informações.   
+ No JavaScript, você pode usar a janela tarefas quando você estiver trabalhando com a promessa `.then` código. Consulte [programação assíncrona em JavaScript (aplicativos UWP)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) para obter mais informações.   
   
  Você pode usar o **tarefas** janela sempre que você entrar no depurador. Você pode acessá-lo no **depurar** menu clicando **Windows** e, em seguida, clicando em **tarefas**. A ilustração a seguir mostra o **tarefas** janela no modo padrão.  
   

@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31353d1063bc6d4f29eaa0fcde308ce3c34fc218
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>Controlar a execução de um aplicativo UWP em uma sessão de depuração do Visual Studio (JavaScript)
 Este guia rápido demonstra como navegar no depurador do Visual Studio e como exibir o estado do programa em uma sessão.  
@@ -69,7 +69,7 @@ Este guia rápido demonstra como navegar no depurador do Visual Studio e como ex
   
 2.  **Abra o arquivo de origem default.js.** No Solution Explorer, abra o **js** nó e escolha `default.js`.  
   
-3.  **Substitua o conteúdo da página com o código de exemplo.** Exclua todo o conteúdo do arquivo `default.js`. Siga este link: [código de exemplo de navegação (JavaScript) depurador](../debugger/debugger-navigation-sample-code-javascript.md)e, em seguida, copie o código listado na seção de JavaScript para a área de transferência. (Escolha **novamente** no navegador ou do Visualizador da Ajuda para retornar a esta página de início rápido.) No editor do Visual Studio, cole o código no `default.js` agora vazio. Escolha **Ctrl + S** para salvar o arquivo.  
+3.  **Substitua o conteúdo da página com o código de exemplo.** Exclua todo o conteúdo do arquivo `default.js`. Siga este link: [código de exemplo de navegação (JavaScript) depurador](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-javascript.js)e, em seguida, copie o código listado na seção de JavaScript para a área de transferência. (Escolha **novamente** no navegador ou do Visualizador da Ajuda para retornar a esta página de início rápido.) No editor do Visual Studio, cole o código no `default.js` agora vazio. Escolha **Ctrl + S** para salvar o arquivo.  
   
  {1&gt;Agora você pode acompanhar os exemplos neste tópico.&lt;1}  
   
