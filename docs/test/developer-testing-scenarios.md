@@ -12,11 +12,11 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8ca7133aa2cb4f02e3a8761d38fb22fcc2ce6122
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Recursos, cenários e ferramentas de teste do desenvolvedor
 
@@ -88,7 +88,7 @@ O Gerenciador de Testes ajuda os desenvolvedores a criar, gerenciar e obter o m�
 
 * [Introdução ao Teste de Unidade](unit-test-your-code.md)
 * [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)
-* [Escrevendo teste de unidade para C/C++](writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+* [Escrever Testes de Unidade para C/C++](writing-unit-tests-for-c-cpp.md)
 * [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md)
 
 O Visual Studio também é extensível e abre a porta para adaptadores de teste de unidade de terceiros como o NUnit e o xUnit.net. Além disso, a capacidade de clone de código caminha lado a lado com a entrega de software de alta qualidade ajudando você a identificar blocos de código semanticamente semelhantes que podem ser candidatos para correções de bugs comuns ou refatoração.
