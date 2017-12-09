@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d76ced1c908c832e9fd583eecc3419e57aeb76c7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Acesso a dados no Visual Studio
 
@@ -38,7 +38,7 @@ A lista a seguir mostra apenas alguns os muitos sistemas de banco de dados e arm
 |Banco de dados SQL|Documentos|Armazenamento (blobs, tabelas, filas, arquivos)|
 |SQL Data Warehouse|Banco de dados do SQL Server Stretch|StorSimple|
 
-e muito mais...
+E muito mais...
 
 **SQL**
 
@@ -48,7 +48,7 @@ e muito mais...
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
-e muito mais...
+E muito mais...
 
 **NoSQL**
 
@@ -58,7 +58,7 @@ e muito mais...
 |NDatabase|OrientDB|RavenDB|
 |VelocityDB|||
 
-e muito mais...
+E muito mais...
 
 Muitos fornecedores de banco de dados e de terceiros dão suporte à integração do Visual Studio pacotes do NuGet. Você pode explorar as ofertas em nuget.org ou por meio do Gerenciador de pacotes do NuGet no Visual Studio (**ferramentas** > **NuGet Package Manager** > **gerenciar NuGet Pacotes de solução**). Outros produtos de banco de dados se integram ao Visual Studio como uma extensão. Você pode procurar essas ofertas no Visual Studio Marketplace navegando até **ferramentas**, **extensões e atualizações** e, em seguida, selecionando **Online** no painel esquerdo das caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatível para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
@@ -104,7 +104,7 @@ Programas C++ que consumirem serviços REST podem usar o [C++ REST SDK](https://
 
 Programas em C++ que funcionam com o armazenamento do Microsoft Azure podem usar o [cliente de armazenamento do Microsoft Azure](http://www.nuget.org/packages/wastorage).
 
-Modelagem de dados &mdash; Visual Studio não fornecem uma camada ORM para C++. [ODB](http://www.codesynthesis.com/products/odb/) é um ORM popular do código-fonte aberto para C++.
+Modelagem de dados&mdash;Visual Studio não fornecem uma camada ORM para C++. [ODB](http://www.codesynthesis.com/products/odb/) é um ORM popular do código-fonte aberto para C++.
 
 Para saber mais sobre como conectar aos bancos de dados de aplicativos em C++, consulte [ferramentas de dados do Visual Studio para C++](../data-tools/visual-studio-data-tools-for-cpp.md). Para obter mais informações sobre tecnologias de acesso a dados herdadas do Visual C++, consulte [acesso a dados](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
 
