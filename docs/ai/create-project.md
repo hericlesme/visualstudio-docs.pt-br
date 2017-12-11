@@ -1,62 +1,27 @@
----
-title: Criar um projeto nas Ferramentas de IA para Visual Studio
-description: Criar um projeto usando um exemplo da galeria do Azure Machine Learning
-keywords: ia, visual studio, azure machine learning
-author: lisawong19
-ms.author: liwong
-manager: routlaw
-ms.date: 11/13/2017
-ms.topic: how to article
-ms.technology: visual studio
-ms.devlang: multiple
-ms.service: multiple
-ms.openlocfilehash: 2d8b5f1d06d31eaba9c75e0f0515b2526fc7efdf
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
----
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Criar um projeto de IA da galeria do Azure Machine Learning no Visual Studio
+# <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Criar um projeto do IA com base em um modelo no Visual Studio
 
-O Azure Machine Learning está integrado com as Ferramentas do Visual Studio para IA. É possível usá-lo para enviar trabalhos de aprendizado de máquina a destinos de computação remotos, como as máquinas virtuais do Azure, clusters Spark e muito mais. Saiba mais sobre a [Experimentação do Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), será fácil criar um novo projeto do Python usando uma variedade de modelos.
 
-Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), é fácil criar um novo projeto Python usando receitas predefinidas na galeria de exemplos do Azure Machine Learning.
+1. Inicie o Visual Studio.
 
-> ! O Azure Machine Learning Workbench deve estar instalado. Para instalá-lo, consulte o [Início rápido para instalar o Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation) 
+1. Selecione **Arquivo > Novo > Projeto** (CTRL + SHIFT + N). Na caixa de diálogo **Novo Projeto**, pesquise "**Ferramentas do AI**" e selecione o modelo desejado. Observe que a seleção de um modelo exibe uma breve descrição do que o modelo fornece. 
 
-1. Inicie o Visual Studio. Abra o **Gerenciador de Servidores** abrindo o menu **Ferramentas de IA** e escolhendo **Selecionar Cluster**  
+    ![Caixa de diálogo de Novo Projeto com modelo do Python do VS2017](media\create-project\new-ai-project.png)
 
-    ![Seletor de cluster](media\create-project\select-cluster.png)
+1. Para este Guia de início rápido, selecione o modelo "**Aplicativo do TensorFlow**", defina um local e um nome para o projeto (por exemplo, "MNIST") e selecione **OK**. 
 
-1. Entre na sua assinatura do Azure Machine Learning clicando com o botão direito do mouse no nó do **Azure Machine Learning** no Gerenciador de Servidores e, em seguida, selecione **Logon** e siga as instruções.
+1. O Visual Studio cria o arquivo de projeto (um arquivo `.pyproj` no disco) juntamente com outros arquivos, conforme descrito pelo modelo. Com o modelo "Aplicativo do TensorFlow", o projeto contém um arquivo com o mesmo nome que o seu projeto. O arquivo é aberto no editor do Visual Studio, por padrão.
 
-    ![Logon](media\create-project\azureml-login.png)
- 
-2. Selecione **Ferramentas de IA > Galeria de exemplos do Azure Machine Learning**. 
-    
-    ![Galeria de exemplos](media\create-project\gallery.png)
+    ![Projeto resultante ao usar o modelo de aplicativo do Python](media\create-project\new-tensorflowapp.png)
 
-1. Para este início rápido, selecione o exemplo "**MNIST usando TensorFlow**" e clique em **Instalar**. Forneça os 
-2.
- - **Grupo de Recursos**: grupo de recursos do Azure em que os metadados serão armazenados
- - **Conta**: conta de experimentação do Azure Machine Learning
- - **Espaço de Trabalho**: espaço de trabalho do Azure Machine Learning
- - **Tipo de Projeto**: a estrutura de aprendizado de máquina. Nesse caso, escolha o **TensorFlow**
- - **Adicionar à Solução**: determina se é necessário adicionar à sua solução do Visual Studio atual ou uma criar e abrir uma nova solução
- - **Caminho do Projeto**: local em que o código será salvo
- - **Nome do Projeto**: tipo **TensorFlowMNIST**
-   
+1. Observe que o código já importa várias bibliotecas, incluindo TensorFlow, numpy, sys e os. Além disso, ele inicia seu aplicativo pronto com alguns argumentos de entrada para permitir facilmente a comutação do local dos dados de treinamento de entrada, dos modelos de saída e dos arquivos de log. Esses parâmetros serão úteis quando você enviar seus trabalhos para vários contextos de computação (por exemplo, um diretório diferente em sua caixa de desenvolvimento local de um Compartilhamento de Arquivos do Azure). 
 
-    ![Projeto resultante ao usar o modelo de aplicativo do Python](media\create-project\new-AzureSampleProject.png)
+1. Seu projeto também tem algumas propriedades criadas para facilitar a depuração do seu aplicativo passando automaticamente argumentos de linha de comando para esses parâmetros de entrada. **Clique com botão direito do mouse** em seu projeto e selecione **Propriedades** 
 
-1. O Visual Studio cria o arquivo de projeto (um arquivo `.pyproj` no disco) junto com outros arquivos definidos no exemplo. Como o modelo "MNIST", o projeto contém vários arquivos.
+    ![Propriedades](media\create-project\project-properties.png)
 
-    ![mnist](media\create-project\azml-mnist.png)
+1. Clique na guia **Depurar** para ver os Argumentos de script adicionados automaticamente. você poderá alterá-los conforme necessário para o local em que seus dados de entrada estão localizados e para o local em que você gostaria que a saída fosse armazenada.
 
-1. Envie o trabalho ao Azure Machine Learning. 
+    ![Propriedades](media\create-project\/project-properties_1.png)
 
-    ![mnist](media\create-project\submit-azml.png)
-
-1. Execute em um contêiner do Docker ou no seu computador local
-
-    ![mnist](media\create-project\azml-local.png)
+1. Execute o programa pressionando CTRL + F5 ou selecionando **Depurar > Iniciar Sem Depuração** no menu. Os resultados são exibidos em uma janela do console.

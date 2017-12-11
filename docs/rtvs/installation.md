@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7a509743ce09f2bbfb69b62060abedb48e9777b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2f8e8267a07b1a5fb41f54da7547fad0f6a00e7a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Como instalar as Ferramentas do R para Visual Studio
 
@@ -33,20 +33,21 @@ Neste tópico:
 
 ## <a name="supported-versions-of-visual-studio"></a>Versões do Visual Studio com suporte
 
-As RTVS (Ferramentas do R para Visual Studio) têm suporte nas edições Enterprise, Professional e Community (gratuita) do [Visual Studio 2017](https://www.visualstudio.com/downloads/) e [Visual Studio 2015 Atualização 3 (ou superior)](http://go.microsoft.com/fwlink/?LinkId=691129) (download direto). 
+Há suporte para as RTVS (Ferramentas do R para Visual Studio) no Windows nas edições Enterprise, Professional e Community (gratuita) do [Visual Studio 2017](https://www.visualstudio.com/downloads/) e [Visual Studio 2015 Atualização 3 (ou superior)](http://go.microsoft.com/fwlink/?LinkId=691129) (download direto).
+
+No momento, não há suporte para as RTVS no Visual Studio para Mac.
 
 As RTVS não serão instaladas se você tiver somente o Shell do Visual Studio incluído com produtos como o Visual Studio Test Professional e o SQL Server Management Studio. O Shell do Visual Studio não tem os componentes necessários para as RTVS.
-
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalando as RTVS no Visual Studio 2017
 
 1. Execute o instalador do Visual Studio. (Consulte [Downloads](https://www.visualstudio.com/downloads/) se você ainda não tiver o Visual Studio instalado.) No Windows 7, certifique-se de que o instalador está atualizado para mostrar a versão do Visual Studio *15.2 build 26430.12* ou posterior.
 
-2. Selecione a carga de trabalho **Ciência de dados e aplicativos analíticos**:
+1. Selecione a carga de trabalho **Ciência de dados e aplicativos analíticos**:
 
     ![Carga de trabalho de ciência de dados e aplicativos analíticos no VS2017](media/installation-data-science-workload.png)
 
-3. Defina quaisquer opções adicionais no lado direito, sob o mesmo nome de carga de trabalho. Por padrão, essa carga de trabalho inclui suporte a F# e Python. Para R, os requisitos mínimos são **Suporte à linguagem R**, **Suporte de tempo de execução para desenvolvimento em R** e **Microsoft R Client**.
+1. Defina quaisquer opções adicionais no lado direito, sob o mesmo nome de carga de trabalho. Por padrão, essa carga de trabalho inclui suporte a F# e Python. Para R, os requisitos mínimos são **Suporte à linguagem R**, **Suporte de tempo de execução para desenvolvimento em R** e **Microsoft R Client**.
 
 As RTVS são instaladas em: `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio` em que `<version>` é normalmente `2017` e `<edition>` é `Community`, `Professional` ou `Enterprise`.
 
@@ -58,9 +59,9 @@ Com o Visual Studio 2015, você precisa instalar um interpretador de R e as Ferr
 
 As RTVS requerem uma instalação de 64 bits do R versão 3.2.1 ou posterior em uma ou mais das seguintes fontes:
 
-* [Microsoft R Open](https://mran.microsoft.com/download/)
-* [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started)
-* [CRAN R](https://cran.r-project.org/bin/windows/base/)
+- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [CRAN R](https://cran.r-project.org/bin/windows/base/)
 
 O Microsoft R Open e o CRAN R permitem várias versões lado a lado. O Microsoft R Client, no entanto, dá suporte a apenas uma versão e sempre usa a última que foi instalada.
 
@@ -92,3 +93,4 @@ A instalação offline é adequada para computadores que não estão conectados 
 - [Projetos de exemplo das Ferramentas do R](getting-started-samples.md)
 - [Obtendo ajuda](getting-started-help.md)
 - [Configurações de opção](options.md)
+- [Microsoft Machine Learning Server (anteriormente conhecido como R Server)](/machine-learning-server/)

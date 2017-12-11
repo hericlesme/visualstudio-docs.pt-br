@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
+Description: Learn how to obtain and manage your product keys in Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 9de4470a35c4eafdd16f8c8b40f2487383707f25
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e808b57d19306c4a4ce47fd1c623119be1c16422
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto nas assinaturas do Visual Studio
 ## <a name="product-keys-overview"></a>Visão geral das chaves do produto (Product Keys)
@@ -47,7 +47,9 @@ Nossa pesquisa mostra que o número de chaves do produto (Product Keys) incluíd
 ## <a name="locating-and-claiming-product-keys"></a>Localizando e solicitando chaves do produto (Product Keys)
 Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). Chaves do produto (Product Keys) individuais podem ser encontradas selecionando o botão azul Obter Chave de um produto específico na página [Downloads](https://my.visualstudio.com/downloads).  Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys). Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
 
-![Obter Chave da página Downloads](_img/product-keys/download-get-key-cropped.png) Alguns produtos agrupam várias edições do produto em um único download. Nesses casos, a chave do produto (Product Key) informada determina qual edição é instalada.
+![Obter chave da página de downloads](_img/product-keys/download-get-key-cropped.png)
+
+Alguns produtos incluem diversas edições do produto em um único download. Nesses casos, a chave do produto (Product Key) informada determina qual edição é instalada.
 Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”, que você pode usar sempre que necessário, uma vez que não é preciso fazer a ativação. Outras chaves devem ser solicitadas selecionando o botão Obter Chave do produto.
 
 Vários tipos de chave estão disponíveis, de acordo com o produto. 
@@ -79,7 +81,9 @@ Para solicitar a chave do produto (Product Key):
 1.  Entre na sua assinatura do Visual Studio.  Você deve estar conectado para baixar produtos ou solicitar chaves do produto (Product Keys). 
 2.  Clique na guia [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys).
 3.  As chaves do produto (Product Keys) são listadas em ordem alfabética pelo nome do produto.  Você pode rolar para baixo até o nome do produto desejado ou pesquisá-lo usando a barra de pesquisa na parte superior da página.  
-![Pesquisar a Chave do Produto (Product Key)](_img\product-keys\visio-product-key-cropped.png) Neste exemplo, usaremos a barra de pesquisa para localizar a chave do produto (Product Key) do Visio 2010.
+![Pesquisar chave do produto (Product Key)](_img\product-keys\visio-product-key-cropped.png)
+
+Neste exemplo, usaremos a barra de pesquisa para localizar uma chave do produto (Product Key) do Visio 2010.
 Como é possível ver, há várias versões listadas do Visio 2010.  Uma chave já foi solicitada para o Visio Standard 2010 e para o Visio Premium 2010, sendo que há quatro chaves restantes para cada um deles.  Ambas as chaves solicitadas são comerciais e estão exibidas na página.  Observe que é possível registrar uma breve observação sobre as chaves solicitadas na coluna “Observações”.  Você pode usar isso em conjunto com a data na coluna “Solicitada” para manter o controle das chaves já solicitadas.  Por exemplo, você pode fazer observações ao ativar uma instalação do produto usando a chave.  
 
 ### <a name="exporting-your-claimed-keys"></a>Exportando as chaves solicitadas

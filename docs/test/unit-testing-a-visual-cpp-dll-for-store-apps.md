@@ -1,7 +1,7 @@
 ---
-title: Teste de unidade de uma DLL do Visual C++ para aplicativos UWP | Microsoft Docs
+title: Como testar uma DLL do Visual C++ para aplicativos UWP | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -9,43 +9,42 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: "13"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 4fc133d96f8306b46e4d820b6f7256db8c471122
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>Teste de unidade de uma DLL do Visual C++ para aplicativos UWP
-Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++ para aplicativos UWP. A DLL RooterLib demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. A DLL, em seguida, pode ser incluída em um aplicativo UWP que mostra a um usuário as coisas divertidas que podem ser feitas com matemática.  
+# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Como testar uma DLL do Visual C++ para aplicativos UWP 
+Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++ para aplicativos UWP (Plataforma Universal do Windows) com o Microsoft Test Framework para C++. A DLL RooterLib demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. A DLL, em seguida, pode ser incluída em um aplicativo UWP que mostra a um usuário as coisas divertidas que podem ser feitas com matemática.  
   
  Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.  
   
  Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a .DLL. Consulte [Adicionar teste de unidade de aplicativos C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) para obter dicas sobre a estrutura a ser usada.  
   
-##  <a name="BKMK_In_this_topic"></a> Neste tópico  
- Este tópico apresenta as seguintes tarefas:  
+##  <a name="In_this_topic"></a> Neste tópico  
+
+ [Criar a solução e o projeto de teste de unidade](#Create_the_solution_and_the_unit_test_project)  
   
- [Criar a solução e o projeto de teste de unidade](#BKMK_Create_the_solution_and_the_unit_test_project)  
+ [Verificar se o testes são executados no Gerenciador de Testes](#Verify_that_the_tests_run_in_Test_Explorer)  
   
- [Verificar se o testes são executados no Gerenciador de Testes](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
+ [Adicione o projeto DLL à solução](#Add_the_DLL_project_to_the_solution)  
   
- [Adicione o projeto DLL à solução](#BKMK_Add_the_DLL_project_to_the_solution)  
+ [Tornar as funções de DLL visíveis para o código de teste](#make_the_dll_functions_visible_to_the_test_code)  
   
- [Acoplar o projeto de teste ao projeto de dll](#BKMK_Couple_the_test_project_to_the_dll_project)  
+ [Multiplicar os testes iterativamente e fazê-los passar](#Iteratively_augment_the_tests_and_make_them_pass)  
   
- [Multiplicar os testes iterativamente e fazê-los passar](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
+ [Depurar um teste que falhou](#Debug_a_failing_test)  
   
- [Depurar um teste que falhou](#BKMK_Debug_a_failing_test)  
+ [Refatorar o código sem alterar os testes](#Refactor_the_code_without_changing_tests)  
   
- [Refatorar o código sem alterar os testes](#BKMK_Refactor_the_code_without_changing_tests)  
-  
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade  
+##  <a name="Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade  
   
 1.  No menu **Arquivo**, escolha **Novo** e, em seguida, **Novo Projeto**.  
   
-2.  Na caixa de diálogo Novo Projeto, expanda **Instalado** e **Visual C++** e escolha **Windows Universal**. Em seguida, escolha **Biblioteca de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.  
+2.  Na caixa de diálogo Novo Projeto, expanda **Instalado** e, em seguida, **Visual C++** e escolha **UWP**. Em seguida, escolha **Biblioteca de Teste de Unidade (aplicativos UWP)** na lista de modelos de projeto.  
   
      ![Cria um C&#43;&#43; biblioteca de teste de unidade](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
@@ -67,7 +66,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
   
          Quando os testes são executados, uma instância de cada classe de teste é criada. Os métodos de teste são chamados em uma ordem não especificada. Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, consulte [Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) na biblioteca MSDN.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se o testes são executados no Gerenciador de Testes  
+##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se o testes são executados no Gerenciador de Testes  
   
 1.  Insira algum código de teste:  
   
@@ -86,7 +85,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
   
      ![Gerenciador de testes](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Adicione o projeto DLL à solução  
+##  <a name="Add_the_DLL_project_to_the_solution"></a> Adicione o projeto DLL à solução  
   
 1.  No Gerenciador de Soluções, escolha o nome da solução. No menu de atalho, escolha **Adicionar** e então **Adicionar Novo Projeto**.  
   
@@ -146,7 +145,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
   
     ```  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Acoplar o projeto de teste ao projeto de dll  
+##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Tornar as funções de dll visíveis para o código de teste  
   
 1.  Adicione RooterLib ao projeto RooterLibTests.  
   
@@ -199,7 +198,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
   
  Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados  
+##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados  
   
 1.  Adicione um novo teste:  
   
@@ -260,7 +259,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 > [!TIP]
 >  Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Depurar um teste que falhou  
+##  <a name="Debug_a_failing_test"></a> Depurar um teste que falhou  
   
 1.  Adicionar outro teste a **unittest1.cpp**:  
   
@@ -330,7 +329,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
   
  ![Todos os testes foram aprovados](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Refatorar o código sem alterar os testes  
+##  <a name="Refactor_the_code_without_changing_tests"></a> Refatorar o código sem alterar os testes  
   
 1.  Simplifique o cálculo central na função `SquareRoot`:  
   

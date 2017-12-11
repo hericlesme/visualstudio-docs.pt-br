@@ -15,11 +15,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Página de Propriedades, Ambiente, Propriedades do Nó
 Este documento descreve as páginas (ou coleções de propriedades) associadas a uma categoria **Ambiente**, `DTE.Properties("Environment", <Property Page>)`, da caixa de diálogo **Opções**. O título de cada subseção é a chamada usada para acessar a coleção Propriedades e a tabela em cada subseção lista as propriedades na coleção.  
@@ -71,7 +71,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 |Nome do item de propriedade|Valor|Descrição|  
 |------------------------|-----------|-----------------|  
 |EnableAdminExtensions|Get/Set (Booliano)|Carrega extensões por usuário quando o Visual Studio é executado com credenciais de Administrador. O Visual Studio deve ser reiniciado depois da alteração desse valor.|  
-|EnableOnline|Get/Set (Booliano)|Permite acesso a extensões na Galeria do Visual Studio.|  
+|EnableOnline|Get/Set (Booliano)|Habilita o acesso a extensões no Visual Studio Marketplace.|  
 |AutomaticallyCheckForUpdates|Get/Set (Booliano)|Verifica automaticamente atualizações a extensões instaladas.|  
   
 ## <a name="find-and-replace"></a>Localizar e Substituir  

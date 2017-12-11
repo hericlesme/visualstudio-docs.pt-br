@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: da14e15713e7c02dbd99bc0595e6ca19217a5cbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac891c48a4d3d2276fa925dd6092d1bf1d72176d
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>Usando a extensão Cookiecutter
 
 O [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Ele é incluído no Visual Studio 2017 e pode ser instalado separadamente em versões anteriores do Visual Studio.
 
-O Cookiecutter exige o Python 3.3 ou posterior (32 ou 64 bits) ou o Anaconda 3 4.2 ou posterior (32 ou 64 bits). Se um interpretador do Python adequado não estiver disponível, o Visual Studio exibirá um aviso. Se você instalar um interpretador do Python enquanto o Visual Studio estiver em execução, clique no botão Início na barra de ferramentas do Cookiecutter para detectar o interpretador recém-instalado.
+O Cookiecutter exige o Python 3.3 ou posterior (32 ou 64 bits) ou o Anaconda 3 4.2 ou posterior (32 ou 64 bits). Se um interpretador do Python adequado não estiver disponível, o Visual Studio exibirá um aviso. Se você instalar um interpretador do Python enquanto o Visual Studio estiver em execução, clique no botão Início na barra de ferramentas do Cookiecutter para detectar o interpretador recém-instalado. (Consulte [Python Environments](python-environments.md) (Ambientes de Python) para obter mais informações sobre ambientes em geral.)
 
 Depois de instalado, selecione **Exibir > Cookiecutter Explorer** para abrir sua janela:
 

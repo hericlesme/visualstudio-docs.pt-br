@@ -1,10 +1,10 @@
 ---
 title: "Solucionando problemas de instalação | Microsoft Docs"
 description: "Às vezes, as coisas podem dar errado. Se a instalação ou atualização do Visual Studio falhar, esta página poderá ajudar."
-ms.date: 11/08/2017
+ms.date: 11/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f0f71dab64a99965facac9ccaa0fff9b53a6e3f6
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio 2017
 
@@ -37,7 +37,8 @@ Pesquise em sua mensagem de erro com a [Comunidade de Desenvolvedores do Visual 
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Etapa 3 - excluir o diretório de instalação do Visual Studio para corrigir problemas de atualização
 O bootstrapper de instalação do Visual Studio é um executável leve mínimo que instala o restante do instalador do Visual Studio. A exclusão de arquivos de instalação do Visual Studio e a nova execução do bootstrapper podem resolver algumas falhas de atualização.
 
-**Observação:** executar as seguintes ações reinstalará os arquivos do Instalador do Visual Studio e redefinirá os metadados de instalação.
+>[!NOTE]
+Executar as seguintes ações reinstalará os arquivos do Instalador do Visual Studio e redefinirá os metadados de instalação.
 
 1. Fechar o instalador do Visual Studio.
 2. Exclua o diretório de instalação do Visual Studio. Normalmente, o diretório é `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -57,11 +58,11 @@ Em algumas situações, como aquelas relacionadas a arquivos corrompidos, os pro
 Como último recurso, você pode [remover o Visual Studio](remove-visual-studio.md) para remover todos os arquivos de instalação e informações do produto.
 
 1. Siga as instruções em [Remover o Visual Studio](remove-visual-studio.md).
-2. Execute novamente o bootstrapper descrito na [Etapa 3 - excluir o diretório do Instalador do Visual Studio para corrigir problemas de atualização](#step-3--delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Execute novamente o bootstrapper descrito na [Etapa 3 - excluir o diretório do Instalador do Visual Studio para corrigir problemas de atualização](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Tente instalar ou atualizar o Visual Studio.
 
 ### <a name="step-6---contact-us-optional"></a>Etapa 6 – Entrar em contato conosco (opcional)
-Se nenhuma das outras etapas possibilitarem uma instalação bem-sucedida, é possível entrar em contato conosco por meio de um chat ao vivo e obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, consulte a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Se nenhuma das outras etapas possibilitarem uma instalação bem-sucedida, é possível entrar em contato conosco por meio de um chat ao vivo e obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>Como solucionar problemas de um instalador offline
 Aqui está uma tabela de problemas conhecidos e algumas soluções alternativas durante a instalação em um layout local que pode ajudar.
@@ -88,10 +89,10 @@ Para coletar os logs:
 
 ## <a name="more-support-options"></a>Mais opções de suporte
 
-Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
+Se nenhuma das outras etapas possibilitarem uma instalação bem-sucedida, é possível entrar em contato conosco por meio de um chat ao vivo e obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções:
-
+* Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
 * Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
 * Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  Isso requer uma conta do [GitHub](https://github.com/).

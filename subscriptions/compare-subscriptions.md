@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Comparar recursos e benefícios das assinaturas padrão e de nuvem do Visual Studio"
+Description: Compare features and benefits of Visual Studio standard and cloud subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c231095c7d96c44f35752aa0a1c233599c43b420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Comparar opções de assinatura do Visual Studio
 
@@ -24,16 +24,16 @@ Seja você um estudante, um desenvolvedor individual, uma pequena equipe ou uma 
 
 **Visual Studio Enterprise:** não importa se é para um telefone, uma área de trabalho ou para a nuvem, o Visual Studio facilita a criação de softwares excelentes em Computadores e no Mac. As assinaturas incluem praticamente todos os softwares da Microsoft, além de créditos Azure, cursos da Pluralsight, suporte técnico e muito mais.
 
-**Visual Studio Professional**: serviços e ferramentas para desenvolvedores profissionais para criar qualquer aplicativo, para qualquer plataforma. Colabore com mais facilidade e seja mais produtivo, independentemente se você trabalha sozinho ou com uma equipe pequena.
+**Visual Studio Professional**: obtenha serviços e ferramentas para desenvolvedores profissionais para compilar qualquer aplicativo para qualquer plataforma. Colabore com mais facilidade e seja mais produtivo, independentemente se você trabalha sozinho ou com uma equipe pequena.
 
-**Visual Studio Test Professional:** impulsione a qualidade e a colaboração em todo o processo de desenvolvimento com ferramentas abrangentes de teste e os benefícios de assinatura padrão, que incluem software básico da Microsoft, créditos Azure mensais, treinamento técnico, suporte profissional e muito mais.
+**Visual Studio Test Professional:** impulsione a qualidade e a colaboração em todo o processo de desenvolvimento com ferramentas abrangentes de teste e os benefícios de assinatura padrão que incluem software básico da Microsoft, créditos Azure mensais, treinamento técnico, suporte profissional e muito mais.
 
 **Plataformas MSDN**: o mais completo conjunto de recursos para funcionários do departamento de TI e Operações e desenvolvedores não .NET para testar, implantar e gerenciar ótimos aplicativos em várias plataformas e dispositivos.
 
 **Visual Studio Dev Essentials**: obtenha tudo o que você precisa para compilar e implantar seu aplicativo em qualquer plataforma. Com ferramentas de ponta, o poder da nuvem, treinamento e suporte, é o nosso programa gratuito para desenvolvedores mais abrangente de todos os tempos.  
 
 ## <a name="subscription-types"></a>Tipo de assinatura
-**Assinaturas padrão** – disponível por meio de revendedores, em contratos de Licenciamento por Volume da Microsoft de vários anos e diretamente, através da Microsoft Store online.  Elas apresentam licenças perpétuas para o Visual Studio. 
+**Assinaturas padrão** – disponível por meio de revendedores, em contratos de Licenciamento por Volume da Microsoft de vários anos e diretamente, através da Microsoft Store online.  Licenças perpétuas de recursos de assinatura Standard para o Visual Studio. 
 
 **Assinaturas de Nuvem** – com as assinaturas de nuvem, você tem acesso ao Visual Studio, ao Visual Studio Team Services e a outros benefícios de assinante sem um contrato de longo prazo.  Assine em uma base mensal ou anual. A cobrança é tratada por meio da sua assinatura do Microsoft Azure. 
 
@@ -45,7 +45,7 @@ Seja você um estudante, um desenvolvedor individual, uma pequena equipe ou uma 
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx) – personalizado de maneira especial para oferecer acesso exclusivo aos recursos que ajudarão a desenvolver ainda mais suas habilidades de treinamento e experiência técnica.
 
 ## <a name="visual-studio-licensing"></a>Licenciamento do Visual Studio
-As assinaturas do Visual Studio (antes chamadas de assinaturas do MSDN) são licenciadas por usuário. As pessoas podem usar o software para criar, desenvolver, testar ou demonstrar seus programas em qualquer quantidade de dispositivos. Uma assinatura do Visual Studio também permite que o usuário licenciado avalie o software e simule os ambientes do cliente para diagnosticar problemas relacionados aos seus programas.
+As assinaturas do Visual Studio são licenciadas por usuário. As pessoas podem usar o software para criar, desenvolver, testar ou demonstrar seus programas em qualquer quantidade de dispositivos. Uma assinatura do Visual Studio também permite que o usuário licenciado avalie o software e simule os ambientes do cliente para diagnosticar problemas relacionados aos seus programas.
 
 Os assinantes do Visual Studio também são licenciados para executar o software do assinante (exceto para Windows e Windows Server) nas Máquinas Virtuais do Microsoft Azure, fornecendo maior flexibilidade para desenvolver e testar os aplicativos. O custo de licenciamento do Windows Server ou Windows está incluído na taxa da Máquina Virtual Windows.
 
@@ -58,7 +58,7 @@ Uma licença de assinatura do Visual Studio também permite que os usuários fin
 ## <a name="additional-information"></a>Informações adicionais
 [Baixe o white paper de licenciamento do Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
 
-[Comparar opções e preços de assinatura](https://www.visualstudio.com/pricing).
+[Comparar opções e preços de assinatura](https://www.visualstudio.com/vs/pricing).
 
 [Compare os recursos do IDE do Visual Studio](https://www.visualstudio.com/vs/compare/).
 

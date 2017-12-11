@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: aec5948ed985b6ff2abde47a48198cf1a67c4337
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Como relatar um problema com o Visual Studio 2017
 Se tiver algum problema com o Visual Studio, gostaríamos de saber o que é. Veja a seguir como relatar o problema para que possamos diagnosticá-lo e corrigi-lo.  
@@ -65,6 +65,12 @@ Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar 
 ## <a name="submit-the-report"></a>Enviar o relatório  
 ###  <a name="submit_the_report"></a>  
  Clique no botão **Enviar** para enviar seu relatório, juntamente com as imagens e os arquivos de despejo ou de rastreamento. (Se o botão **Enviar** estiver esmaecido, certifique-se de que você forneceu um título e uma descrição para o relatório.)  
+
+## <a name="alternate-reporting"></a>Relatórios alternativos
+###  <a name="alternate_reporting"></a>  
+ Se não for possível concluir a instalação do Visual Studio nem acessar a ferramenta de comentários dentro do Visual Studio, a ferramenta de comentários também estará disponível no Instalador do Visual Studio. Clique no ícone de comentários no canto superior direito do Instalador do Visual Studio e, em seguida, siga as etapas descritas neste artigo.
+
+ ![É possível pressionar Tab até acessar o botão Fornecer Comentários no Instalador do Visual Studio para abrir a ferramenta de comentários](../install/media/report-a-problem.png)
 
 ## <a name="see-also"></a>Consulte também  
  [Fale conosco](../ide/talk-to-us.md)

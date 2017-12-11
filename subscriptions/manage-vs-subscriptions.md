@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio."
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 ## <a name="signing-in-to-the-portal"></a>Entrando no portal
@@ -21,7 +21,7 @@ Bem-vindo à sua assinatura do Visual Studio!  Sua assinatura fornece todos os s
 ### <a name="first-time-access"></a>Primeiro acesso
 As etapas para usar sua assinatura pela primeira vez dependem de como você a adquiriu.  
 #### <a name="microsoft-store"></a>Microsoft Store
-Se você comprou uma assinatura do Visual Studio na Microsoft Store, as etapas de ativação poderão ser iniciadas na **Página de confirmação** do pagamento ou no **Email de confirmação.**  
+Se você tiver comprado uma assinatura do Visual Studio na Microsoft Store, as etapas de ativação poderão ser iniciadas na **Página de confirmação** ou no **Email de confirmação** do pagamento.  
 1.  Na "Página de confirmação" ou no "Email de confirmação", clique em **Clique aqui para entrar**.  Você será redirecionado para https://my.visualstudio.com/subscriptions/activate.
 2.  Insira o endereço de email que você usará para entrar no Portal do Assinante e clique em **Continuar**.
 3.  Dependendo do endereço de email, você poderá ser redirecionado para a página de conexão da Conta da Microsoft ou para a página de conexão da sua empresa/escola.
@@ -31,25 +31,25 @@ Se você comprou uma assinatura do Visual Studio na Microsoft Store, as etapas d
 #### <a name="workschool-accounts"></a>Contas corporativas ou de estudante
 Se a sua assinatura foi fornecida pela empresa/escola, você terá recebido um email de boas-vindas.  
 1.  Visite o [Portal do Assinante](https://my.visualstudio.com/)
-2.  Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída. Esse endereço também é identificado na **Carta de boas-vindas** do assinante. Se você não recebeu a **Carta de boas-vindas**, verifique suas pastas de lixo eletrônico.
+2.  Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída. Esse endereço também é identificado na **Carta de boas-vindas** do assinante. Se você não recebeu a Carta de boas-vindas, verifique as pastas de lixo eletrônico.
 3.  Clique em **Continuar**
-4.  Você será redirecionado para a página de entrada empresarial.
+4.  Você será redirecionado para sua página de entrada empresarial.
 5.  Insira sua senha.
 6.  Clique em **Entrar**.
 
 #### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
 Se você tiver comprado uma assinatura de nuvem mensal ou anual no Visual Studio Marketplace, visite o [Portal do Assinante](https://my.visualstudio.com/) e entre com a MSA (Conta da Microsoft) que você forneceu quando comprou a assinatura.
 #### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Usando uma conta corporativa ou de estudante com uma MSA (Conta da Microsoft)
-Se sua organização tiver um Azure Active Directory, mas você não tiver uma conta do Azure Active Directory, poderá ser necessário usar as opções **pessoais** fornecidas durante o processo de entrada.
+Se sua organização tiver um Azure Active Directory, mas você não tiver uma conta do Azure Active Directory, talvez seja necessário usar as opções **pessoais** fornecidas durante o processo de entrada.
 1.  Acesse o [Portal do Assinante](https://my.visualstudio.com)
 2.  Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída. Esse endereço também é identificado na **Carta de boas-vindas** do assinante.  (Se você não receber o email de boas-vindas, verifique suas pastas de lixo eletrônico).
 3.  Clique em **Continuar**
-4.  Você será redirecionado para uma **Página de decisão**.   Selecione **conta corporativa ou de estudante** se a sua assinatura estiver atribuída a uma conta **corporativa ou de estudante** associada a um locatário do AAD (Azure Active Directory).  Selecione **Pessoal** se a assinatura estiver associada a um endereço de email **corporativo**, mas também tiver sido convertida em uma MSA (Conta da Microsoft) **Pessoal**
+4.  Você será redirecionado para uma **Página de decisão**.   Selecione **conta corporativa ou de estudante** se a sua assinatura estiver atribuída a uma conta **corporativa ou de estudante** associada a um locatário do AAD (Azure Active Directory).  Selecione **Pessoal** se a assinatura estiver associada a um endereço de email **corporativo**, mas também tiver sido convertida em uma MSA (Conta da Microsoft) **pessoal**
 5.  Insira sua senha
 6.  Clique em **Entrar** 
 
 ### <a name="managing-multiple-subscriptions"></a>Gerenciando várias assinaturas
-O portal MY reúne todos os programas e as assinaturas do Visual Studio em uma única experiência de portal aprimorada.  Por exemplo, você pode ter uma assinatura padrão, como o Visual Studio Enterprise, para usar no trabalho e uma assinatura mensal do Visual Studio Professional ou uma associação ao Visual Studio Dev Essentials para usar em casa. 
+O portal de assinaturas do Visual Studio reúne todas as suas assinaturas e programas do Visual Studio em uma única experiência de portal aprimorada.  Por exemplo, você pode ter uma assinatura padrão, como o Visual Studio Enterprise, para usar no trabalho e uma assinatura mensal do Visual Studio Professional ou uma associação ao Visual Studio Dev Essentials para usar em casa. 
 #### <a name="which-subscription-am-i-using"></a>Qual assinatura estou usando?
 Na página Benefícios, a assinatura em uso será exibida na faixa azul em destaque.  Ela também será exibida no canto superior direito da página.
 
@@ -64,9 +64,9 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 #### <a name="if-your-subscription-is-not-visible"></a>Se sua assinatura não estiver visível...
 - Ela pode ter expirado.  Somente as assinaturas ativas são exibidas no Portal do Assinante.
 - Ela pode estar associada um endereço de email diferente. Por exemplo, se você entrar em uma assinatura do Visual Studio Professional com seu email corporativo ou de estudante e tiver uma associação ao Visual Studio Dev Essentials associada à sua Conta da Microsoft, somente será exibida a assinatura correspondente ao endereço de email usado para entrar no Portal do Assinante.  Para ver a outra assinatura, você precisará sair e, em seguida, entrar com o outro endereço de email.
-- Se a sua empresa compra assinaturas por meio de uma Licença de Volume, é possível que o administrador não tenha atribuído uma assinatura a você.  
+- Se a sua empresa compra assinaturas por meio de uma Licença de Volume, é possível que o administrador não tenha atribuído uma assinatura a você ou reatribuído a sua assinatura a outro usuário.  
 
-#### <a name="renewing-my-subscriptions"></a>Renovando minhas assinaturas
+### <a name="renewing-my-subscriptions"></a>Renovando minhas assinaturas
 **Assinaturas padrão**
 - Microsoft Store: se você tiver comprado sua assinatura na [Microsoft Store](http://www.microsoft.com/store), você também poderá renová-la na Microsoft Store. 
 - Licença de volume: se a sua empresa compra assinaturas por meio de uma Licença de Volume, o administrador deverá contatar um revendedor para renovar suas assinaturas.
@@ -81,7 +81,7 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 
 **Visual Studio Dev Essentials –** o Dev Essentials é um programa gratuito e as associações não expiram.  
 
-#### <a name="transferring-subscriptions"></a>Transferindo assinaturas
+### <a name="transferring-subscriptions"></a>Transferindo assinaturas
 Se a sua assinatura tiver sido comprada por meio do Microsoft Volume Licensing e você precisar reatribuí-la para outra pessoa da organização, o administrador deverá fazer isso. É possível transferir assinaturas de varejo para outro usuário contatando o Atendimento ao Cliente.  Assinaturas gratuitas ou “Proibida a revenda” não podem ser transferidas. 
 
 
@@ -91,7 +91,7 @@ Se a sua assinatura tiver sido comprada por meio do Microsoft Volume Licensing e
 Você pode alterar facilmente as informações de contato e as preferências em seu perfil.  
 1.  Clique em seu nome no canto superior direito do Portal do Assinante.
 2.  Clique no botão **Editar perfil**.
-3.  Na guia **Sobre**, você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato.  Na guia "Preferências", você pode selecionar suas preferências de idioma, padrões data e hora, fuso horário e tema da interface do usuário.  
+3.  Na guia **Sobre**, você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato.  Na guia **Preferências**, é possível selecionar suas preferências de idioma, padrões de data e hora, fuso horário e tema da interface do usuário.  
 4.  Ao concluir as alterações, clique em **Salvar**. 
 5.  Clique no botão **Voltar** do navegador para retornar à página Benefícios. 
 

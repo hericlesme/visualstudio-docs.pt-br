@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Explore as opções de compra das assinaturas do Visual Studio"
+Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c751048084e7f5e6ae65aee5b5fa52cff84c4439
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 474f8f7dc5f3b3b0e1d8323801f650420fce4da0
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 #   <a name="how-to-buy-a-subscription"></a>Como comprar uma assinatura
 Há três maneiras de comprar assinaturas do Visual Studio.  
@@ -21,7 +21,7 @@ Há três maneiras de comprar assinaturas do Visual Studio.
 - As assinaturas padrão podem ser compradas na Microsoft Store. 
 - As organizações podem comprar assinaturas de licença de volume por meio de revendedores.  
 
-## <a name="buying-cloud-subscriptions-through-the-visual-studio-marketplace"></a>Comprando assinaturas de nuvem no Visual Studio Marketplace
+## <a name="buying-cloud-subscriptions-through-the-visual-studio-marketplace"></a>Comprando assinaturas de nuvem por meio do Visual Studio Marketplace
 Você pode comprar as [assinaturas](https://www.visualstudio.com/subscriptions/) do Visual Studio Professional e do Visual Studio Enterprise no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Saiba mais sobre os benefícios completos dessas assinaturas, [compare as funcionalidades](https://www.visualstudio.com/vs/compare/) do IDE e encontre o [preço da assinatura](https://www.visualstudio.com/vs/pricing/).
 
 ### <a name="before-you-start"></a>Antes de começar

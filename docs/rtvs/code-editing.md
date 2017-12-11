@@ -1,26 +1,25 @@
 ---
 title: "Editando código com as Ferramentas do R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Editando código R no Visual Studio
- 
+
 As RTVS (Ferramentas do R para Visual Studio) personalizam a experiência de edição do Visual Studio especificamente para R, mantendo todos os recursos e a capacidade de usar extensões. (Por exemplo, se preferir associações de teclas VIM, você poderá instalar a [extensão VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) gratuita da galeria do Visual Studio.)
 
 Neste tópico:
@@ -33,8 +32,7 @@ Neste tópico:
 - [Inserindo comentários Roxygen](#inserting-roxygen-comments)
 - [Opções do editor](#editor-options)
 
-Consulte também os tópicos sobre [IntelliSense](code-intellisense.md), [trechos de código](code-snippets.md) e [R Markdown](rmarkdown.md).
-
+Consulte também os tópicos sobre [IntelliSense](code-intellisense.md), [linting](code-linting.md), [trechos de código](code-snippets.md) e [R Markdown](rmarkdown.md).
 
 ## <a name="syntax-highlighting"></a>Realce de sintaxe 
 
@@ -107,9 +105,9 @@ f <- function(a) { return(a + 1) }
 Para reformatar o arquivo de código inteiro, selecione **Editar > Avançado > Formatar Documento** (Ctrl + E, D).
 
 A formatação automática é uma operação separada que pode ser desfeita. Por exemplo, se você colar o código no editor e a formatação for aplicada, selecionar **Editar > Desfazer** ou pressionar Ctrl+Z uma vez reverterá a formatação, um segundo Desfazer desfaz a ação de colar em si.
- 
+
 As opções de formatação (incluindo a desativação de formatação) são definidas por meio de **Ferramentas > Opções** na guia **Editor de Texto > R > Avançado**. Você pode ir diretamente para essa página usando o comando **Ferramentas do R > Opções do editor...** ou clicando com o botão direito do mouse no editor e selecionando **Opções de formatação...**. Consulte a seção de [opções do editor](#editor-options) para obter detalhes.
- 
+
 ## <a name="inserting-roxygen-comments"></a>Inserindo comentários Roxygen
 
 As RTVS fornecem um atalho para a geração de comentários [Roxygen](http://roxygen.org/) usando os nomes de parâmetro de uma função. Basta digitar `###` em uma linha em branco acima da definição de função:
@@ -144,5 +142,5 @@ As opções na guia **R > Avançado** guia são específicas para RTVS:
 | | Lista de conclusão com a tecla Tab | Off | Invoca a lista de conclusão ao digitar um ou mais caracteres e pressionar a tecla Tab. |
 | | Corresponder parcialmente ao digitar nomes de argumento | Off | Ao digitar os nomes de argumento em uma chamada de função, a ajuda de assinatura mostra uma descrição do argumento que é a melhor correspondência. |
 | Janela Interativa | Verificação de sintaxe no console do R | Off | Aplica a verificação na janela interativa de sintaxe. A verificação de sintaxe pode não funcionar corretamente com instruções de várias linhas. | 
-| Estrutura de tópicos | Estrutura de tópicos de código | On | Cria regiões recolhíveis automaticamente para áreas como instruções de várias linhas. | 
+| Estrutura de tópicos | Estrutura de tópicos de código | On | Cria regiões recolhíveis automaticamente para áreas como instruções de várias linhas. |
 | Verificação de sintaxe | Mostrar erros de sintaxe | On | Habilita a verificação de sintaxe automática do código. |

@@ -1,32 +1,22 @@
 ---
-title: "Otimizar o carregamento de soluções no Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- startup time [Visual Studio]
-- optimizing startup time [Visual Studio]
-- speed up start time [Visual Studio]
-ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138
-caps.latest.revision: "4"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-f1_keywords: vs.performancecenter
-ms.technology: vs-ide-general
-ms.openlocfilehash: 2102fc026b566c89108f0d74dcf604020653e358
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/optimize-visual-studio-startup-time/
+ms.openlocfilehash: 6ba351d5b395caaddd12021b09f8792cd19b2905
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
+---
+título: "Otimizar o carregamento de soluções no Visual Studio | Microsoft Docs" ms.custom: "" ms.date: 31/08/2017 ms.reviewer: "" ms.suite: "" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "tempo de inicialização [Visual Studio]"
+  - "otimizando o tempo de inicialização [Visual Studio]"
+  - "acelerar o tempo de inicialização [Visual Studio]" ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138 caps.latest.revision: 4 author: "gewarren" ms.author: "gewarren" manager: ghogen f1_keywords: 
+  - "vs.performancecenter" ms.technology: 
+  - "vs-ide-general"
 ---
 # <a name="optimize-solution-loading-in-visual-studio"></a>Otimizar o carregamento de soluções no Visual Studio
 Muitas soluções contêm um grande número de projetos, o que afeta o tempo gasto para carregá-las. No entanto, em ambientes de equipe, os desenvolvedores normalmente trabalham em um subconjunto diferente desses projetos e não precisam carregar todos os projetos individuais.
 
-O Visual Studio 2017 é compatível com o **carregamento da solução leve**. Quando o modo LSL (carregamento da solução leve) estiver habilitado, o Visual Studio 2017 carregará um pequeno subconjunto de projetos em vez de carregar todos os projetos em uma solução grande. A maioria das funcionalidades mais usadas do IDE funciona no modo LSL e ele fornece a capacidade de compilar, de pesquisar e de depurar a solução inteira. (O principal recurso não compatível com o modo LSL é editar e continuar).
+O Visual Studio 2017 é compatível com o **carregamento da solução leve**. Quando o modo LSL (carregamento da solução leve) estiver habilitado, o Visual Studio 2017 carregará um pequeno subconjunto de projetos em vez de carregar todos os projetos em uma solução grande. A maioria das funcionalidades mais usadas do IDE funciona no modo LSL e ele fornece a capacidade de compilar, de pesquisar e de depurar a solução inteira. (O principal recurso não compatível com o modo LSL é editar e continuar.)  
 
 > [!NOTE]
 > Este conteúdo é aplicável ao Visual Studio 2017 Atualização 3
@@ -46,7 +36,7 @@ Você pode clicar com o botão direito do mouse no nome da solução no Gerencia
 
 ![Gerenciador de Soluções](../ide/media/VSIDE_LSL_Solution_Setting.png)
 
-## <a name="global_solution_load_settings"></a>Definir as configurações globais para o carregamento da solução leve
+## <a name="global_solution_load_settings"></a>Definir as configurações globais para a carga de solução leve
 
 Você pode desabilitar globalmente ou configurar o LSL para todas as soluções escolhendo **Ferramentas > Opções > Projetos e Soluções**.
 
@@ -54,16 +44,13 @@ Você pode desabilitar globalmente ou configurar o LSL para todas as soluções 
 
 ## <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>Como funciona o carregamento da solução leve em segundo plano?
 
-Quando você carrega a solução, o Visual Studio lembra quais projetos você abriu anteriormente e carrega apenas esses projetos. Todos os outros projetos permanecem visíveis no Gerenciador de Soluções, mas não são carregados. Depois de você expandir um projeto ou clicar com o botão direito do mouse em um projeto, o Visual Studio carregará o projeto de maneira automática. O carregamento automático de projetos normalmente demora menos de um segundo, mas pode demorar mais para alguns projetos.
-No entanto, o Visual Studio habilita funcionalidades do IDE como pesquisar, depurar, compilar e controlar o código-fonte que funcionam na solução inteira. Por exemplo, você pode pesquisar em uma solução inteira, mesmo que apenas alguns projetos estejam carregados no modo leve. 
+Quando você carrega a solução, o Visual Studio lembra quais projetos você abriu anteriormente e carrega apenas esses projetos. Todos os outros projetos permanecem visíveis no Gerenciador de Soluções, mas não são carregados. Depois de você expandir um projeto ou clicar com o botão direito do mouse em um projeto, o Visual Studio carregará o projeto de maneira automática. O carregamento automático de projetos normalmente demora menos de um segundo, mas pode demorar mais para alguns projetos. No entanto, o Visual Studio habilita funcionalidades do IDE como pesquisar, depurar, compilar e controlar o código-fonte que funcionam na solução inteira. Por exemplo, você pode pesquisar em uma solução inteira, mesmo que apenas alguns projetos estejam carregados no modo leve. 
 
 Ao expandir mais projetos, o Visual Studio se lembrará da lista de projetos expandidos. Ao reabrir uma solução, o Visual Studio carregará automaticamente os projetos expandidos anteriormente.
 
 ## <a name="visual-studio-prompts-developers-likely-to-see-significant-performance-gains"></a>O Visual Studio avisa os desenvolvedores que provavelmente obterão ganhos significativos de desempenho
 
-Da telemetria do Visual Studio, as soluções grandes com mais de 30 projetos obtêm benefícios significativos no modo LSL. Consequentemente, avisamos os desenvolvedores com soluções grandes para experimentar o modo LSL. A maioria dos desenvolvedores que experimenta o LSL pela primeira vez acaba usando esse modo regularmente. 
-
-Examinamos constantemente a telemetria de uso do Visual Studio para melhorar a heurística de modo a oferecer o modo LSL para desenvolvedores que podem conseguir mais benefícios. 
+Da telemetria do Visual Studio, as soluções grandes com mais de 30 projetos obtêm benefícios significativos no modo LSL. Consequentemente, avisamos os desenvolvedores com soluções grandes para experimentar o modo LSL. A maioria dos desenvolvedores que experimenta o LSL pela primeira vez acaba usando-o regularmente. 
 
 ## <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>O Visual Studio faz recomendações para ativar o carregamento da solução leve com base em heurística
 
@@ -71,7 +58,7 @@ Por padrão, o Visual Studio ativa o LSL para usuários com maior probabilidade 
 
 ![Janela pop-up](../ide/media/VSIDE_LSL_Popup.png)
 
-## <a name="ide-features-fully-supported-in-lightweight-mode"></a>Funcionalidades do IDE totalmente compatíveis no modo leve
+## <a name="ide-features-fully-supported-in-lightweight-mode"></a>Recursos do IDE totalmente compatíveis no modo leve
 
 |Recurso|Compatível no modo leve?|
 |-|-|-|
@@ -94,7 +81,7 @@ Por padrão, o Visual Studio ativa o LSL para usuários com maior probabilidade 
 
 ## <a name="scenarios-in-which-lightweight-solution-loads-the-appropriate-projects-to-complete-the-operation"></a>Cenários em que a solução leve carrega os projetos apropriados para concluir a operação
 
-Se você não estiver trabalhando em um projeto na solução, ele não será carregado no modo leve. Para algumas funcionalidades, projetos adicionais são carregados automaticamente para garantir a compatibilidade com o cenário do recurso. (Pretendemos minimizar essa lista de cenários.) Para esses cenários, o Visual Studio carrega os projetos automaticamente ou solicita que você carregue os projetos conforme necessário.
+Se você não estiver trabalhando em um projeto na solução, ele não será carregado no modo leve. Para algumas funcionalidades, projetos adicionais são carregados automaticamente para garantir a compatibilidade com o cenário do recurso. (Pretendemos minimizar essa lista de cenários. ) Para esses cenários, o Visual Studio carrega os projetos automaticamente ou solicita que você carregue-os conforme necessário.
 
 |Categoria|Problema|
 |-|-|-|
@@ -131,4 +118,4 @@ Existem alguns cenários que podem não funcionar no modo LSL e que exigem o car
 Estamos empolgados com as inovações para otimizar o desempenho do tempo do carregamento da solução para desenvolvedores. Por ser um recurso novo, estamos observando ativamente os comentários dos clientes e resolvendo os problemas conhecidos. Aguardamos os seus comentários. Envie um email para a equipe de otimização do carregamento de solução do Visual Studio no endereço lslsupport@microsoft.com
 
 ## <a name="see-also"></a>Consulte também
-[Dicas e truques de desempenho do Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+[Dicas e truques de desempenho do Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)  

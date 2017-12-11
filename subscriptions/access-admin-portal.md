@@ -5,17 +5,17 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Saiba como acessar o Portal do administrador
+Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 89661c12a820d2a7aa3bed562a5efec141dcf01a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="accessing-the-visual-studio-subsubscriptions-administrator-portal"></a>Acessando o Portal do administrador de assinaturas do Visual Studio
+# <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Acessando o Portal do administrador de assinaturas do Visual Studio
 ## <a name="for-mpsa"></a>Para MPSA
 Para acessar o Portal de administração de assinaturas do Visual Studio, você precisará ser configurado como um administrador no Portal do Microsoft Business Center ou no BCP. 
 
@@ -30,9 +30,9 @@ Para obter mais informações sobre como gerenciar assinaturas no VLSC, confira 
 
 O contato primário ou de notificações do contrato de Licenciamento por Volume da sua organização deverá realizar algumas etapas para configurar você como um administrador. 
 
-Se você precisar de informações sobre como configurar um administrador, assista a [este vídeo](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) e consulte estes artigos sobre [Integração e gerenciamento de administradores no Portal de administração de assinaturas do Visual Studio](https://go.microsoft.com/fwlink/?linkid=839391). 
+Se você precisar de informações sobre como configurar um administrador, assista a [este vídeo](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) e consulte estes artigos sobre [Integração e gerenciamento de administradores](https://go.microsoft.com/fwlink/?linkid=839391) no Portal de administração de assinaturas do Visual Studio. 
 
-Se você já foi configurado como administrador, acesse diretamente o [Portal de Administração de Assinaturas do Visual Studio](https://manage.visualstudio.com).
+Se você já foi configurado como administrador, acesse diretamente o [Portal de administração](https://manage.visualstudio.com) de assinaturas do Visual Studio.
 
 ## <a name="for-cloud-subscriptions"></a>Para assinaturas de Nuvem
 Ao comprar assinaturas de Nuvem do Visual Studio, você é automaticamente configurado como um administrador dessas assinaturas.  Se você já as comprou, poderá gerenciá-las em [https://manage.visualstudio.com](https://manage.visualstudio.com).

@@ -13,11 +13,11 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0fe5627c7307b2d06e894a236d60f4188e6cf427
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c603e0c235b37c63719abb8e9a5e6dbb3ca3e652
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="msbuild-properties"></a>Propriedades do MSBuild
 Propriedades são pares nome-valor que podem ser usados para configurar compilações. Propriedades são úteis para passar valores para tarefas, avaliar condições e armazenar os valores que serão referenciados em todo o arquivo de projeto.  
@@ -92,7 +92,7 @@ $(registry:Hive\MyKey\MySubKey)
 msbuild.exe MyProj.proj /p:Configuration=DEBUG  
 ```  
   
- As propriedades globais também podem ser definidas ou modificadas para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa do MSBuild. Propriedades globais também são encaminhadas para projetos filho, a menos que o atributo `RemoveProperties` da tarefa MSBuild seja usado para especificar a lista de propriedades que não devem ser encaminhadas. Para mais informações, consulte [Tarefa do MSBuild](../msbuild/msbuild-task.md).
+ As propriedades globais também podem ser definidas ou modificadas para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa do MSBuild. As propriedades globais também são encaminhadas para projetos filho, a menos que o atributo `RemoveProperties` da tarefa MSBuild seja usado para especificar a lista de propriedades que não devem ser encaminhadas. Para mais informações, consulte [Tarefa do MSBuild](../msbuild/msbuild-task.md).
   
  Se você especificar uma propriedade usando o atributo `TreatAsLocalProperty` em uma marca de projeto, esse valor da propriedade global não substituirá o valor da propriedade que é definido no arquivo de projeto. Para obter mais informações, consulte [Elemento de projeto (MSBuild)](../msbuild/project-element-msbuild.md) e [Como compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   

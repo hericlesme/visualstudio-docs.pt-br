@@ -15,11 +15,11 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: e6e0b55e86130f316c09583d4a52e1ad3dc22608
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: 7d4b3634f651cd8fc0ebc9c2e5254914a62e3771
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="unit-test-your-code"></a>Teste de unidade de código
 Os testes de unidade fornecem aos desenvolvedores e testadores uma maneira rápida de procurar por erros lógicos nos métodos de classes em projetos do [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], do [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] e do [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)].  
@@ -30,7 +30,7 @@ Os testes de unidade fornecem aos desenvolvedores e testadores uma maneira rápi
   
 2.  **Framework de teste de unidade da Microsoft para código gerenciado.** O framework de testes de unidade da Microsoft para código gerenciado é instalado com o Visual Studio e fornece um framework para testar o código .NET.  
   
-3.  **Framework de teste de unidade da Microsoft para C++.** O framework de testes de unidade da Microsoft para C++ é instalado com o Visual Studio e fornece um framework para testar o código nativo.  
+3.  **Framework de teste de unidade da Microsoft para C++.** O framework de testes de unidade da Microsoft para C++ é instalado com o Visual Studio e fornece um framework para testar o código nativo.  As estruturas do Google Test, Boost.Test e CTest também estão incluídas com o Visual Studio e os adaptadores de terceiros estão disponíveis para estruturas de teste adicionais. Para obter mais informações, consulte [Escrevendo testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md). 
   
 4.  **Ferramentas de cobertura de código.** É possível determinar a quantidade de código do produto que seus testes de unidade utilizam com um comando no Gerenciador de Testes.  
   

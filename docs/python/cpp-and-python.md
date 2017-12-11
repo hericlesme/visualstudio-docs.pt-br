@@ -8,17 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: f7dbda92-21bf-4af0-bb34-29b8bf231f32
 description: "Os processo e as etapas para escrever uma extensão ou um módulo do C++ para o Python no Visual Studio"
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 0438a2d0f2524ea2163cb3454fdcf50f2ae7f499
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="creating-a-c-extension-for-python"></a>Criando uma extensão do C++ para o Python
 
@@ -184,12 +183,12 @@ Para transformar a DLL do C++ em uma extensão para o Python, você precisa modi
     };
     ```
 
-1. Adicione uma estrutura que define o módulo da forma como ele é visto pelo Python:
+1. Adicione uma estrutura que define o módulo como você o vê por meio do código Python. (Nomes de arquivo internos ao projeto C++, como module.cpp, são irrelevantes.)
 
     ```cpp
     static PyModuleDef superfastcode_module = {
         PyModuleDef_HEAD_INIT,
-        "superfastcode",                        // Module name
+        "superfastcode",                        // Module name as Python sees it
         "Provides some functions, but faster",  // Module description
         0,
         superfastcode_methods                   // Structure that defines the methods

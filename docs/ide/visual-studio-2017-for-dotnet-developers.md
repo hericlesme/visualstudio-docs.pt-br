@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: 6fe98cea71bb49ea3e705a22cb696184966ea0ed
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f8830b24aa763a1a59830d0dd15231673f1dfac3
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desenvolvedores do .NET
 
@@ -36,7 +36,7 @@ Navegue rapidamente pelo código .NET indo para qualquer arquivo, tipo, membro o
 
 O Visual Studio oferece diagnóstico dinâmico de código para ajudar você a melhorar a qualidade do código detectando erros e possíveis problemas no código. Fornecemos ações rápidas (**Ctrl+.**) para resolver os problemas detectados em documentos, projetos ou soluções. Habilite a *análise da solução completa* para encontrar problemas na solução inteira, mesmo sem os arquivos abertos no editor. 
 
-Além disso, use as sugestões de código para saber as melhores práticas, fazer stub ou gerar código, refatorar o código e adotar novas funcionalidades de linguagem com o atalho **Ctrl+.** .
+Além disso, use as sugestões de código para conhecer as melhores práticas, fazer stub ou gerar código, refatorar o código e adotar novos recursos de linguagem com o atalho **Ctrl +.** atalho.
 
 ![Aplicar correções rápidas e refatorações usando o menu de lâmpada](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")  
 
@@ -51,7 +51,7 @@ Execute e depure os testes de unidade com base nas estruturas de teste MSTest, N
 [Documentação: Opções do editor personalizado portátil](create-portable-custom-editor-options.md)  
 [Documentação: Configurações de estilo de código do EditorConfig para .NET](editorconfig-code-style-settings-reference.md)
 
-O Visual Studio permite a configuração de convenções de codificação, detecta violações de estilo de codificação e fornece correções rápidas para solucionar problemas de estilo com o atalho **Ctrl+.** . Configure e imponha as convenções de formatação, de nomenclatura e de estilo de código da sua equipe em um repositório (permitindo a substituição de valores em nível de arquivo e de projeto) usando o *EditorConfig*. 
+O Visual Studio permite a configuração de convenções de codificação, detecta violações de estilo de codificação e fornece correções rápidas para solucionar problemas de estilo com o **Ctrl +.** atalho. Configure e imponha as convenções de formatação, de nomenclatura e de estilo de código da sua equipe em um repositório (permitindo a substituição de valores em nível de arquivo e de projeto) usando o *EditorConfig*. 
 
 ![Configurar e impor as convenções de codificação com o EditorConfig](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")  
 
@@ -69,6 +69,8 @@ Se seu serviço for executado no Azure, use a *Depuração de instantâneo* para
 
 Use GIT ou TFVC para armazenar e atualizar código no Visual Studio. No editor, organize as alterações locais com o Team Explorer e use a barra de status para acompanhar confirmações e alterações pendentes. Configure a integração e a entrega contínua no Visual Studio com nossa extensão [Ferramentas de Entrega Contínua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) para adotar um fluxo de trabalho de desenvolvedor Agile.
 
+![Controle do código-fonte no Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png "VSIDE_Productivity_SourceControl")
+
 ## <a name="extensibility"></a>Extensibilidade
 [Documentação: Estendendo o Visual Studio](../extensibility/index.md)
 
@@ -79,7 +81,7 @@ O Visual Studio tem um ecossistema de extensões rico que você pode instalar ou
 ## <a name="popular-extensions--shortcuts"></a>Extensões populares e atalhos
 Se estiver vindo de outro ambiente de codificação ou IDE, a instalação de uma das seguintes extensões poderá ser útil a você:
 - [Emulação de Emacs](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.Emacsemulation)
-- [Teclas de acesso para Visual Studio (IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
+- [Teclas de acesso para Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 | Atalho (todos os perfis) | Comando | Descrição |

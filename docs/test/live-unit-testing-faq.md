@@ -11,11 +11,11 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: de3ddc4288f2e14f0657f6bfb0ff3ee49ff7b5c9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a585310f19a03524d73deeb863b080d1d335c6c
+ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Perguntas frequentes sobre o Live Unit Testing
 
@@ -226,7 +226,9 @@ O Live Unit Testing inicia um build sempre que detecta uma alteração nos arqui
 
 **Resposta:**
 
-Atualmente, o Live Unit Testing não funciona bem com o recurso de carregamento de Solução Leve. Ele funciona somente depois que pelo menos um dos projetos de teste é carregado. Até lá, ele não funcionará porque atualmente o Live Unit Testing depende que de pelo menos um dos projetos de teste referenciando um adaptador de teste (MSTest, xUnit ou NUnit) seja carregado.
+No momento, o Live Unit Testing não funciona bem com o recurso de carga de solução leve. Ele funciona somente depois que pelo menos um dos projetos de teste é carregado. Até lá, ele não funcionará, porque o Live Unit Testing depende de que pelo menos um dos projetos de teste que referenciam um adaptador de teste (MSTest, xUnit ou NUnit) seja carregado.
+
+Observação: a carga de solução leve não está mais disponível no Visual Studio 2017 versão 15.5 e posterior. No Visual Studio versão 15.5 e posteriores, grandes soluções que contêm código gerenciado são carregadas mais rápido do que anteriormente, mesmo sem carga de solução leve.
  
 ## <a name="why-does-live-unit-testing-does-not-capture-coverage-from-a-new-process-created-by-a-test"></a>Por que o Live Unit Testing não captura a cobertura de um novo processo criado por um teste?
  

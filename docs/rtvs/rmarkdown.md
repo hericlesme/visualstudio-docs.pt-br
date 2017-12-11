@@ -1,31 +1,30 @@
 ---
 title: R Markdown com Ferramentas do R para Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 11/16/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3ac955b2-b6e1-4d32-b1a4-2882c93311fc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e3d9ee899c9ed82cacfd9466412bacfea6b8c5e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ed9a2c71807af604e83459299a4d7ec58dfedbe5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="creating-r-markdown-documents"></a>Criando documentos R Markdown
 
 [R Markdown](https://rmarkdown.rstudio.com/) é um formato de documento que transforma a análise em R em painéis, relatórios, apresentações e documentos de alta qualidade.
 
-As RTVS (Ferramentas do R para Visual Studio) fornecem um modelo de item R Markdown, suporte a editor (incluindo IntelliSense para código R dentro do editor) e recursos de geração de arquivo.
+As RTVS (Ferramentas do R para Visual Studio) oferecem modelo de item do R Markdown, suporte ao editor (incluindo IntelliSense para código R dentro do editor), funcionalidades de geração de arquivo e versão prévia dinâmica.
 
-Para usar o R Markdown:
+## <a name="using-r-markdown"></a>Usando o R Markdown
 
 1. Feche o Visual Studio.
 1. (Apenas uma vez) Instalar o `pandoc` do [pandoc.org](http://pandoc.org/installing.html).
@@ -37,7 +36,7 @@ Para usar o R Markdown:
     install.packages("rmarkdown")
 
     ```
-1. Crie um novo arquivo R Markdown usando o comando de menu **Arquivo > Novo** e selecionando **R Markdown** na lista ou clicando com o botão direito do mouse no seu projeto no Gerenciador de Soluções e selecionando **Adicionar R Markdown** (ou **Adicionar > Novo Item...** e selecionando **R Markdown** na lista).
+1. Crie um novo arquivo do R Markdown usando o comando de menu **Arquivo > Novo > Arquivo** e selecionando **R > R Markdown** na lista. No contexto de um projeto, clique com botão direito do mouse no projeto no Gerenciador de Soluções e selecione **Adicionar R Markdown** (ou **Adicionar > Novo Item...**  e selecionando **R Markdown** na lista).
 
 1. O conteúdo padrão do novo arquivo é o seguinte:
 
@@ -46,23 +45,29 @@ Para usar o R Markdown:
     title: "Untitled"
     output: html_document
     ---
-    
+
     This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-    
+
     When you click the **R Tools | Publish | Preview** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-    
+
     ```{r}
     summary(cars)
     ```
-    
+
     You can also embed plots, for example:
-    
+
     ```{r, echo=FALSE}
     plot(cars)
     ```
-    
+
     Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-    
+
     ~~~
 
-1. A qualquer momento durante a edição, clique com botão direito do mouse no editor e selecione **Visualizar**, que tem opções para HTML, PDF e Microsoft Word. Nessa visualização é possível salvar o arquivo de acordo com o formato escolhido.
+## <a name="previews"></a>Versões prévias
+
+O Visual Studio 2017 versão 15.5 e posterior fornece automaticamente a versão prévia dinâmica para o R Markdown. Para ativar a sincronização automática entre o editor e a versão prévia, selecione **Ferramentas do R > Markdown > Sincronização automática** (Ctrl + Shift + Y). Se você não estiver usando a sincronização automática, será possível atualizar a versão prévia usando **Ferramentas do R > Markdown > Recarregar a Versão Prévia do R Markdown**.
+
+Também é possível visualizar o arquivo nos formatos HTML, PDF e Microsoft Word clicando com o botão direito do mouse no editor e selecionando um dos comandos **Versão prévia**. Os mesmos comandos também estão disponíveis no menu **Ferramentas do R > Markdown**. (Nas versões anteriores do Visual Studio, estes comandos são encontrados no menu **Ferramentas R > Publicar**.)
+
+![Versão prévia dinâmica do R Markdown e outros comandos de menu de versão prévia](media/rmarkdown-live-preview.png)
