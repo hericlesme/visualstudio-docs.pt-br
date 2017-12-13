@@ -6,6 +6,7 @@
 # [Introdução ao desenvolvimento com o Visual Studio](get-started-developing-with-visual-studio.md)
 ## [Introdução ao Visual C# e ao Visual Basic](getting-started-with-visual-csharp-and-visual-basic.md)
 ### [Início rápido: Criar seu primeiro aplicativo Web ASP.NET Core](../ide/quickstart-aspnet-core.md)
+### [Guia de início rápido: Criar um aplicativo de console do Visual Basic](../ide/quickstart-visual-basic-console.md)
 ### [Passo a passo: criar um aplicativo simples com o Visual C# ou o Visual Basic](walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 ### [Tutorial 1: criar um visualizador de imagens](tutorial-1-create-a-picture-viewer.md)
 #### [Etapa 1: criar um projeto de aplicativo do Windows Forms](step-1-create-a-windows-forms-application-project.md)
