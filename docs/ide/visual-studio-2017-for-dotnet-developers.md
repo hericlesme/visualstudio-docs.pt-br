@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: f8830b24aa763a1a59830d0dd15231673f1dfac3
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desenvolvedores do .NET
 
@@ -84,6 +84,8 @@ Se estiver vindo de outro ambiente de codificação ou IDE, a instalação de um
 - [Teclas de acesso para Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
+Estes são os atalhos populares do Visual Studio. Observe que algumas extensões desvinculam as associações de teclas padrão do Visual Studio e você deve restaurar essas associações para usar os comandos abaixo. Para redefinir suas associações de teclas padrão do Visual Studio, acesse **Ferramentas > Importar e exportar configurações... > Redefinir todas as configurações**.
+
 | Atalho (todos os perfis) | Comando | Descrição |
 |-|-|-| 
 | **Ctrl+T** | Ir para Todos | Navegue diretamente para qualquer declaração de arquivo/tipo/membro/símbolo |
@@ -95,6 +97,6 @@ Se estiver vindo de outro ambiente de codificação ou IDE, a instalação de um
 | **F5** | Iniciar a depuração | Inicie a depuração do aplicativo |
 | **Ctrl+F5** | Executar sem Depurar | Execute o aplicativo localmente sem depuração |
 | **Ctrl+K, D** (Perfil Padrão) ou **Ctrl+E, D** (Perfil C#) | Formatar Documento | Limpe as violações de formatação de um arquivo com base nas configurações de nova linha, de espaçamento e de recuo |
-| **Ctrl+\,E** (Perfil Padrão) ou **Ctrl+W, E** (Perfil C#) | Exibir Lista de Erros | Veja todos os erros no documento, no projeto ou na solução |
+| **Ctrl+\\E** (Perfil Padrão) ou **Ctrl+W, E** (Perfil C#) | Exibir Lista de Erros | Veja todos os erros no documento, no projeto ou na solução |
 
 

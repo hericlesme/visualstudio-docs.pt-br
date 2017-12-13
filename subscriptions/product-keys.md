@@ -9,24 +9,24 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: e808b57d19306c4a4ce47fd1c623119be1c16422
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto nas assinaturas do Visual Studio
+# <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as Chaves do Produto (Product Keys) nas assinaturas do Visual Studio
 ## <a name="product-keys-overview"></a>Visão geral das chaves do produto (Product Keys)
 As assinaturas do Visual Studio fornecem acesso a grande variedade de produtos da Microsoft para projetar, desenvolver, testar e demonstrar aplicativos. Alguns produtos exigem chaves do produto (Product Keys) durante a instalação e alguns desses exigem ativação.
 
 As assinaturas do Visual Studio geralmente incluem cinco chaves do produto (Product Keys) para as versões atuais dos produtos do Windows e do Office, além de três chaves para as versões anteriores.
 
-A maioria das chaves do produto (Product Keys) também permite várias ativações do produto para cada chave.  Muitos produtos também permitem instalar e usar o produto por 30 dias ou mais sem a ativação.  Para a maioria dos assinantes, isso fornece uma quantidade mais do que suficiente de ativações para atender às suas necessidades.  No entanto, se as ativações disponíveis para um produto estiverem esgotado, você poderá enviar uma solicitação de chaves adicionais por meio do [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://www.visualstudio.com/subscriptions/support/).
+A maioria das chaves do produto (Product Keys) também permite várias ativações do produto para cada chave.  Muitos produtos também permitem instalar e usar o produto por 30 dias ou mais sem a ativação.  Para a maioria dos assinantes, isso fornece uma quantidade mais do que suficiente de ativações para atender às suas necessidades.  No entanto, se as ativações disponíveis para um produto estiverem esgotadas, você poderá enviar uma solicitação de chaves adicionais por meio do [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://www.visualstudio.com/subscriptions/support/).
 
 ## <a name="activating-a-product"></a>Ativando um produto
-Certos produtos exigem ativação. Geralmente, nas assinaturas do Visual Studio, isso se limita ao Windows, ao Windows Server, aos aplicativos cliente do Microsoft Office e ao Expression Studio. Quando a ativação é necessária, muitos produtos, incluindo o Windows e o Office, permitem a instalação e o uso do produto sem ativação por 30 dias ou mais. Se você refizer a imagem de seus computadores com frequência (pelo menos uma vez a cada 30 dias), considere NÃO ativar o produto. As chaves do produto (Product Keys) fornecidas como parte da assinatura do Visual Studio não permitem ativações ilimitadas de um produto.
+A ativação é necessária para determinados produtos.  Geralmente, nas assinaturas do Visual Studio, isso se limita ao Windows, ao Windows Server, aos aplicativos cliente do Microsoft Office e ao Expression Studio. Quando a ativação é necessária, muitos produtos, incluindo o Windows e o Office, permitem a instalação e o uso do produto sem ativação por 30 dias ou mais. Se você refizer a imagem de seus computadores com frequência (pelo menos uma vez a cada 30 dias), considere NÃO ativar o produto. As chaves do produto (Product Keys) fornecidas como parte da assinatura do Visual Studio não permitem ativações ilimitadas de um produto.
 
-Se você tiver solicitado todas as chaves do produto (Product Keys) disponíveis na assinatura e tiver usado todas as ativações disponíveis, poderá solicitar chaves adicionais contatando o [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://www.visualstudio.com/subscriptions/support/) local. As solicitações serão analisadas caso a caso. Se aprovadas, as chaves do produto (Product Keys) ficarão acessíveis em [Downloads](https://my.visualstudio.com/downloads).
+Se tiver solicitado todas as chaves do produto disponíveis na assinatura e tiver usado todas as ativações disponíveis, você poderá solicitar chaves adicionais ao entrar em contato com o [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://www.visualstudio.com/subscriptions/support/) local. As solicitações serão analisadas caso a caso. Se aprovadas, as chaves do produto (Product Keys) ficarão acessíveis em [Downloads](https://my.visualstudio.com/downloads).
 
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versões comercial e de licenciamento por volume dos produtos
 As assinaturas do Visual Studio oferecem uma seleção de versões comerciais e de licenciamento por volume dos produtos da Microsoft. Alguns produtos estão disponíveis em Downloads somente na versão comercial ou somente na versão de licenciamento por volume, enquanto outros estão disponíveis nas duas versões. Geralmente, os produtos que exigem ativação, como o Windows, o Windows Server e os produtos de cliente Office, são oferecidos apenas na versão comercial por meio de Downloads.
@@ -45,12 +45,12 @@ Se você tiver solicitado o número máximo de chaves disponíveis para sua assi
 Nossa pesquisa mostra que o número de chaves do produto (Product Keys) incluídas na assinatura é suficiente para a maioria dos assinantes. Se precisar de chaves adicionais, você poderá enviar uma solicitação por meio do [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://www.visualstudio.com/subscriptions/support/), que analisará cada caso individualmente.
 
 ## <a name="locating-and-claiming-product-keys"></a>Localizando e solicitando chaves do produto (Product Keys)
-Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). Chaves do produto (Product Keys) individuais podem ser encontradas selecionando o botão azul Obter Chave de um produto específico na página [Downloads](https://my.visualstudio.com/downloads).  Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys). Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
+Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul [Obter Chave](https://my.visualstudio.com/downloads) de um produto específico na página **Downloads**, conforme mostrado abaixo.  Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys). Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
 
-![Obter chave da página de downloads](_img/product-keys/download-get-key-cropped.png)
+![Obter chave da página de downloads](_img/product-keys/download-get-key.png)
 
 Alguns produtos incluem diversas edições do produto em um único download. Nesses casos, a chave do produto (Product Key) informada determina qual edição é instalada.
-Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”, que você pode usar sempre que necessário, uma vez que não é preciso fazer a ativação. Outras chaves devem ser solicitadas selecionando o botão Obter Chave do produto.
+Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”, que você pode usar sempre que necessário, uma vez que não é preciso fazer a ativação. Outras chaves devem ser solicitadas ao selecionar o link **Obter Chave** do produto.
 
 Vários tipos de chave estão disponíveis, de acordo com o produto. 
 
@@ -83,15 +83,15 @@ Para solicitar a chave do produto (Product Key):
 3.  As chaves do produto (Product Keys) são listadas em ordem alfabética pelo nome do produto.  Você pode rolar para baixo até o nome do produto desejado ou pesquisá-lo usando a barra de pesquisa na parte superior da página.  
 ![Pesquisar chave do produto (Product Key)](_img\product-keys\visio-product-key-cropped.png)
 
-Neste exemplo, usaremos a barra de pesquisa para localizar uma chave do produto (Product Key) do Visio 2010.
-Como é possível ver, há várias versões listadas do Visio 2010.  Uma chave já foi solicitada para o Visio Standard 2010 e para o Visio Premium 2010, sendo que há quatro chaves restantes para cada um deles.  Ambas as chaves solicitadas são comerciais e estão exibidas na página.  Observe que é possível registrar uma breve observação sobre as chaves solicitadas na coluna “Observações”.  Você pode usar isso em conjunto com a data na coluna “Solicitada” para manter o controle das chaves já solicitadas.  Por exemplo, você pode fazer observações ao ativar uma instalação do produto usando a chave.  
+Neste exemplo, utilizamos a barra de pesquisa para localizar uma chave do produto (Product Key) do Visio 2010.
+Como é possível ver, há várias versões listadas do Visio 2010.  Uma chave já foi solicitada para o Visio Standard 2010 e para o Visio Premium 2010, sendo que há quatro chaves restantes para cada um deles.  Ambas as chaves solicitadas são comerciais e estão exibidas na página.  Observe que é possível registrar uma breve observação sobre as chaves solicitadas na coluna **Observações**.  Você pode usar isso em conjunto com a data na coluna **Solicitada** para manter o controle das chaves já solicitadas.  Por exemplo, você pode fazer observações ao ativar uma instalação do produto usando a chave.  
 
 ### <a name="exporting-your-claimed-keys"></a>Exportando as chaves solicitadas
 Você pode exportar uma lista de todas as chaves já solicitadas, juntamente com uma grande seleção de chaves estáticas e de outros tipos automaticamente marcadas como “solicitadas” por você.  
 
 **IMPORTANTE: se sua assinatura expirar, você não poderá solicitar novas chaves nem exportar as chaves solicitadas.** 
 
-Para exportar as chaves, basta clicar no link **Exportar todas as chaves** à extrema direita da página Chaves do Produto (Product Keys).  Um arquivo .xml intitulado KeysExport.xml será criado e você terá a opção de abri-lo ou de salvá-lo.  Você precisará abrir o arquivo com um aplicativo compatível com arquivos .xml.  Por exemplo, você poderá abrir o arquivo como uma pasta de trabalho somente leitura no Excel.  
+Para exportar as chaves, basta clicar no botão **Exportar todas as chaves** na extremidade direita da página Chaves do Produto.  Um arquivo .xml intitulado KeysExport.xml será criado e você terá a opção de abri-lo ou de salvá-lo.  Você precisará abrir o arquivo com um aplicativo compatível com arquivos .xml.  Por exemplo, você poderá abrir o arquivo como uma pasta de trabalho somente leitura no Excel.  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>Demonstrações de Internet por meio dos Serviços de Terminal
 Com uma assinatura do Visual Studio, você pode fornecer aos usuários finais acesso a demonstrações de seus programas na Internet via Serviços de Terminal (Windows Server 2003 ou Windows Server 2008) ou Serviços de Área de Trabalho Remota (Windows Server 2008 R2 e posterior). Dessa forma, até 200 usuários anônimos poderão acessar simultaneamente a demonstração. A demonstração não deverá usar dados de produção. Os assinantes do Visual Studio são licenciados para demonstrar aplicativos aos usuários finais. Essa demonstração de Internet usando o TS (Serviços de Terminal) ou o RDS (Serviços de Área de Trabalho Remota) é o único cenário em que os usuários finais sem uma assinatura do Visual Studio podem interagir com o aplicativo de demonstração enquanto o software é licenciado por meio das assinaturas do Visual Studio.

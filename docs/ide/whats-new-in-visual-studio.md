@@ -1,12 +1,10 @@
 ---
 title: Novidades no Visual Studio 2017 | Microsoft Docs
 ms.custom: 
-ms.date: 11/15/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.StartPage.WhatsNew
@@ -17,14 +15,14 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d084dec8d70842e4247d7063b6a8cad1d3545882
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: dc865fe81a51ff3ae2ca497b8982292ffda18372
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
-#### <a name="updated-for-the-155-preview-4-releasehttpswwwvisualstudiocomen-usnewsreleasenotesvs2017-preview-relnotes"></a>Atualizado para a [Versão prévia 15.5 versão 4](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes)
+#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Atualizado para a [versão 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Deseja atualizar de uma versão anterior do Visual Studio? Veja o que o Visual Studio 2017 pode oferecer a você: produtividade inigualável para qualquer desenvolvimento, aplicativo e plataforma. Use o Visual Studio 2017 para desenvolver aplicativos para Android, iOS, Windows, Linux, Web e nuvem. Codifique rapidamente, depure e diagnostique com facilidade, teste com frequência e faça lançamentos com confiança. Também é possível estender e personalizar o Visual Studio criando suas próprias extensões. Use o controle de versão, seja ágil e colabore de maneira eficiente com esse lançamento!
 
 Veja uma recapitulação de alto nível das alterações feitas em relação à versão anterior, o Visual Studio 2015:
@@ -32,20 +30,21 @@ Veja uma recapitulação de alto nível das alterações feitas em relação à 
 * **Princípios básicos redefinidos**. Uma nova experiência de instalação significa que é possível instalar mais rapidamente e instalar o que você deseja quando necessário. Quando você deseja carregar projetos e soluções grandes ou trabalhar em pastas de código ou até mesmo em um único arquivo de código, o Visual Studio é iniciado mais rapidamente. Além disso, o Visual Studio ajuda você a manter o foco no contexto geral, especialmente para equipes que adotam o DevOps.
 * **Desempenho e produtividade**. Nosso foco ficou em novos e modernos recursos de desenvolvimento para desktop, dispositivos móveis e nuvem. Também melhoramos as experiências de aquisição geral, desempenho e a produtividade do desenvolvedor geral. O Visual Studio é iniciado mais rapidamente, é mais dinâmico e usa menos memória do que antes.
 * **Desenvolvimento de aplicativo na nuvem com o Azure**. Um pacote interno de ferramentas do Azure que permite criar com facilidade aplicativos diretamente em nuvem da plataforma Microsoft Azure. O Visual Studio facilita a configuração, o build, a depuração, o empacotamento e a implantação de aplicativos e serviços no Azure.
+* **Desenvolvimento de aplicativos do Windows**. Use os modelos da UWP no Visual Studio 2017 para criar um projeto único para todos os dispositivos do Windows 10 &ndash; PC, tablet, smartphone, Xbox, HoloLens, Surface Hub e muito mais. Então, crie um pacote do aplicativo e envie-o para a Microsoft Store pelo Visual Studio para divulgar seu aplicativo aos clientes.
 * **Desenvolvimento de aplicativos móveis**. No Visual Studio 2017, é possível inovar e obter resultados rápidos com o Xamarin, que unifica seus requisitos móveis multiplataforma usando uma base de código principal e um conjunto de habilidades. Entre na era móvel com suas equipes, investimentos em tecnologia e código C# existentes para fornecer experiências para o consumidor à frente do cronograma e abaixo do orçamento. Acelere cada etapa do ciclo de vida móvel para fornecer experiências de última geração para o consumidor ou um portfólio de aplicativos de produtividade para capacitar sua força de trabalho.
 * **Desenvolvimento multiplataforma**. Distribua software perfeitamente para qualquer plataforma de destino. Estenda os processos do DevOps para o SQL Server por meio do Redgate Data Tools e automatize com segurança as implantações do banco de dados por meio do Visual Studio. Ou então, use o .NET Core para escrever aplicativos e bibliotecas que são executados sem modificações nos sistemas operacionais Windows, Linux e macOS. (E uma **novidade no 15.3**: obtenha suporte lado a lado para SDKs do .NET Core 2.0.)
 * **Desenvolvimento de jogos**. Com o VSTU (Ferramentas do Visual Studio para Unity), é possível usar o Visual Studio para escrever scripts de jogo e editor em C# e, em seguida, usar seu depurador avançado para encontrar e corrigir erros. A última versão do VSTU inclui a coloração de sintaxe da linguagem de sombreador ShaderLab do Unity, melhores visualizações do depurador e geração de código aprimorada para o assistente MonoBehavior. O VSTU também leva seus arquivos de projeto do Unity, mensagens do console e a capacidade de iniciar seu jogo para o Visual Studio, para que você possa gastar menos tempo mudando do e para o Editor do Unity durante a escrita do código.
 * **Desenvolvimento do IA**. Com as Ferramentas do Visual Studio para IA (**novidade na versão 15.5**), é possível usar os recursos de produtividade do Visual Studio para acelerar a inovação em IA. Crie, teste e implante soluções de Aprendizagem profunda/do IA que se integram perfeitamente ao Azure Machine Learning para funcionalidades de experimentação robustas, como envio de trabalhos de preparação de dados e de treinamento de modelos de modo transparente para diferentes destinos de computação. Além disso, as Ferramentas do Visual Studio para IA dão suporte a métricas personalizadas e acompanhamento do histórico de execuções, que habilitam a capacidade de reprodução e auditoria da ciência de dados.
 
 > [!NOTE]
-> Para obter uma lista completa dos novos recursos e funcionalidades no Visual Studio 2017, consulte as [Notas de versão atuais](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). E para espiar ofertas futuras de recursos, consulte o [Preview Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) (Notas de versão prévia).
+> Para obter uma lista completa dos novos recursos e funcionalidades no Visual Studio 2017, consulte as [Notas de versão atuais](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). E para espiar ofertas futuras de recursos, consulte o [Preview Release Notes](https://www.visualstudio.com/news/releasenotes/vs2017-preview-relnotes) (Notas de versão prévia).
 
 Veja aqui informações mais detalhadas de algumas das melhorias mais importantes e das novas funcionalidades no Visual Studio 2017.
 
 ## <a name="redefined-fundamentals"></a>Princípios básicos redefinidos
 ### <a name="a-new-setup-experience"></a>Uma nova experiência de instalação
 
-[Baixar o Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ou [Verificar os requisitos do sistema do Visual Studio](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)
+[Baixar o Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) ou [Verificar os requisitos do sistema do Visual Studio](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)
 
  O Visual Studio facilita e agiliza a instalação de recursos específicos de que você precisa, quando necessário. Além disso, ele também se desinstala completamente.
 
@@ -116,7 +115,8 @@ E para saber mais sobre as novidades na extensão de DevLabs [Ferramentas de Ent
 
 ### <a name="visual-studio-ide-enhancements"></a>Aprimoramentos no IDE do Visual Studio
 #### <a name="use-new-refactorings"></a>Usar novas refatorações
-**Na versão 15.3**, adicionamos uma série de novas refatorações, para incluir:
+A refatoração é o processo de aperfeiçoar seu código após ele ter sido gravado. Ela altera a estrutura interna do código, sem modificar seu comportamento. Adicionamos novas refatorações constantemente. Eis apenas algumas delas:
+
 *   Adicionar parâmetro (de CallSite)
 *   Gerar substituições
 *   Adicionar argumento nomeado
@@ -175,7 +175,7 @@ O novo Auxiliar de Exceção ajuda você a exibir as informações de exceção 
 Para obter mais informações, consulte a postagem de blog [Usando o novo Auxiliar de Exceção no Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Instantâneos e retrocesso do IntelliTrace:
-**Novidade na versão 15.5** O retrocesso do IntelliTrace tira automaticamente um instantâneo do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
+**Novidade na versão 15.5**: o retrocesso do IntelliTrace tira automaticamente um instantâneo do seu aplicativo em cada evento de etapa do depurador e do ponto de interrupção. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
 
 É possível navegar e exibir instantâneos usando os botões **Voltar** e **Avançar** na barra de ferramentas Depurar. Esses botões navegam pelos eventos exibidos na guia **Eventos** na janela **Ferramentas de Diagnóstico**. Voltar ou avançar para um evento ativa automaticamente a depuração histórica no evento selecionado.
 
@@ -184,6 +184,8 @@ Para obter mais informações, consulte a postagem de blog [Usando o novo Auxili
 Para obter mais informações, consulte a página [View snapshots using IntelliTrace step-back](../debugger/how-to-use-intellitrace-step-back.md) (Exibir instantâneos usando o retrocesso do IntelliTrace).
 
 ### <a name="containerization"></a>Transporte em contêineres
+Os contêineres fornecem uma densidade de aplicativo aumentada e um custo de implantação menor, juntamente com melhorias na produtividade e na agilidade de DevOps.
+
 #### <a name="docker-container-tooling"></a>Ferramentas de Contêiner do Docker
 **Novidade na versão 15.5**
 * O Visual Studio inclui ferramentas para contêineres do Docker que agora são compatíveis com Dockerfiles de vários estágios, que simplificam a criação de imagens de contêiner otimizadas.
@@ -196,7 +198,7 @@ Como parte da carga de trabalho de "desenvolvimento do Azure", há ferramentas p
 Para obter mais informações, consulte a página [Ferramentas do Azure Functions para Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs).
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Depurar aplicativos ASP.NET dinâmicos usando snappoints e logpoints nos aplicativos dinâmicos do Azure
-**Novidade na versão 15.5** O Depurador de Instantâneo tira um instantâneo de seus aplicativos em produção quando o código no qual você está interessado é executado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
+**Novidades na versão 15.5**: o Depurador de Instantâneo tira um instantâneo de seus aplicativos em produção quando o código no qual você está interessado é executado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
 
 A coleção de instantâneos está disponível para os seguintes aplicativos Web em execução no Serviço de Aplicativo do Azure:
 
@@ -204,6 +206,24 @@ A coleção de instantâneos está disponível para os seguintes aplicativos Web
 * Aplicativos ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
 
 Para obter mais informações, consulte [Debug live ASP.NET apps using snappoints and logpoints](../debugger/debug-live-azure-applications.md) (Depurar aplicativos ASP.NET dinâmicos usando snappoints e logpoints).
+
+## <a name="windows-app-development"></a>Desenvolvimento de aplicativos para Windows
+### <a name="universal-windows-platform"></a>Plataforma Universal do Windows
+A UWP (Plataforma Universal do Windows) é a plataforma de aplicativo do Windows 10. Você pode desenvolver aplicativos para a UWP com apenas um conjunto de APIs, um pacote do aplicativo e um repositório para alcançar todos os dispositivos do Windows 10 &ndash; PC, tablet, smartphone, Xbox, HoloLens, Surface Hub e muito mais. A UWP é compatível com diferentes tamanhos de telas e com uma variedade de modelos de interação, seja uma entrada por toque, um teclado, um controlador de jogos ou uma caneta. No núcleo dos aplicativos da UWP está a ideia de que os usuários desejam que suas experiências sejam móveis em TODOS os dispositivos, e eles querem usar qualquer dispositivo que seja mais conveniente ou produtivo para a tarefa em questão.
+
+ ![Plataforma Universal do Windows](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+
+Escolha sua linguagem de desenvolvimento preferencial&mdash;entre C#, Visual Basic, C++ ou JavaScript&mdash;para criar um aplicativo da Plataforma Universal do Windows para dispositivos do Windows 10. O Visual Studio 2017 fornece um modelo de aplicativo da UWP para cada idioma, permitindo que você crie um projeto único para todos os dispositivos. Quando seu trabalho for concluído, você poderá produzir um pacote do aplicativo e enviá-lo à Microsoft Store pelo Visual Studio para divulgar seu aplicativo aos clientes em qualquer dispositivo do Windows 10.
+
+**Novidade na versão 15.5**<br/>
+O Visual Studio 2017 versão 15.5 fornece o melhor suporte para o SDK do Windows 10 Fall Creators Update (10.0.16299.0). O Windows 10 Fall Creators Update também oferece várias melhorias para os desenvolvedores da UWP. Aqui estão algumas das maiores alterações: 
+
+* **Compatível com o .NET Standard 2.0**<br/>
+Além da implantação simplificada do aplicativo, o Windows 10 Fall Creators Update é a primeira versão do Windows 10 compatível com o .NET Standard 2.0. De fato, o [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) é uma implementação de referência da biblioteca de classes base que qualquer plataforma do .NET pode implementar. A meta do .NET Standard é facilitar o máximo possível para os desenvolvedores do .NET compartilhar o código em qualquer plataforma do .NET que eles escolham trabalhar.
+* **O melhor da UWP e do Win32** <br/>
+Melhoramos a Plataforma do Windows 10 com a [Ponte de Desktop](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) para tornar o Windows 10 melhor para todos os desenvolvedores do .NET, quer o foco atual esteja na UWP, no WPF, no Windows Forms ou no Xamarin. Com o novo tipo de projeto do Pacote de Aplicativo no Visual Studio 2017 versão 15.5, você pode criar Pacotes de Aplicativos do Windows para seus projetos do WPF ou do Windows Forms, assim como você pode fazer com os projetos da UWP. Depois de empacotar seu aplicativo, você obterá todos os benefícios de implantação de aplicativo do Windows 10 e terá a opção de distribuir por meio da Microsoft Store (para aplicativos de consumidor) ou da Microsoft Store para Empresas e Educação. Como os aplicativos empacotados têm acesso à superfície da API da UWP completa e às APIs do Win32 na área de trabalho, agora você pode modernizar seus aplicativos do WPF e do Windows Forms gradualmente com as APIs da UWP e com os recursos do Windows 10. Além disso, você pode incluir os componentes do Win32 em seus aplicativos da UWP que são aprimorados na área de trabalho com todos os recursos do Win32. 
+
+Para obter mais informações sobre a UWP, consulte a página [Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp).
 
 ## <a name="mobile-app-development"></a>Desenvolvimento de aplicativos móveis
 ### <a name="xamarin"></a>Xamarin
@@ -223,6 +243,8 @@ Para obter mais informações, consulte a página [Visual Studio e Xamarin](../c
 
 ### <a name="visual-studio-app-center"></a>Centro de Aplicativos do Visual Studio
 **Novidade na versão 15.5**: o Visual Studio App Center&mdash;que agora está disponível para aplicativos Android, iOS, macOS e Windows&mdash;tem tudo de que você precisa para gerenciar o ciclo de vida dos seus aplicativos, incluindo builds automatizados, testes em dispositivos reais na nuvem, distribuição para testadores beta e lojas de aplicativos e monitoramento do uso real por meio de dados de falha e de análise. Há suporte para aplicativos escritos em Objective-C, Swift, Java, C#, Xamarin e React Native em todos os recursos.
+
+  ![Ambiente de teste do App Center do Visual Studio](../ide/media/app-center-test-env.png)
 
 Para obter mais informações, consulte a postagem no blog [Introdução ao App Center: compilar, testar, distribuir e monitorar aplicativos na nuvem](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/).
 
@@ -277,7 +299,7 @@ Se desejar fazer sugestões sobre como podemos melhorar o Visual Studio ou relat
  Se você quiser acompanhar o status de seus comentários do Visual Studio, acesse o [Connect](http://connect.microsoft.com/) e reporte o bug lá. Depois que você reportar, é possível retornar ao Connect para acompanhar o status.  
 
 ## <a name="see-also"></a>Consulte também
-* [Notas de versão do Visual Studio 2017](https://www.visualstudio.com/news/vs2015-vs)
+* [Notas de versão do Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Novidades no Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novidades no C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
 * [Novidades para o Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
