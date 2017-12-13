@@ -13,25 +13,23 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
-caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2926543ca041ac2b2cc25bc178b99bbafd2407db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 Para obter mais informações sobre acessibilidade de teclado, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como usar o teclado de forma exclusiva](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhendo o atalho de teclado apropriado. Este tópico lista os atalhos padrão para o perfil Desenvolvimento Geral, que você pode ter escolhido quando instalou o Visual Studio. Não importa qual o perfil escolhido, é possível identificar o atalho de um comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e escolhendo **Teclado**. Também é possível personalizar seus atalhos atribuindo um atalho diferente a qualquer comando.
 
- Para obter uma lista dos atalhos de teclado comuns e outras informações sobre produtividade, consulte [Atalhos de teclado padrão para comandos usados com frequência no Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Dicas e Truques](../ide/tips-and-tricks-for-visual-studio.md) e [Dicas de Produtividade](../ide/productivity-tips-for-visual-studio.md).
+Para obter uma lista dos atalhos de teclado comuns e outras informações sobre produtividade, consulte [Atalhos de teclado padrão para comandos usados com frequência no Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Dicas e Truques](../ide/tips-and-tricks-for-visual-studio.md) e [Dicas de Produtividade](../ide/productivity-tips-for-visual-studio.md).
 
- As seções na tabela a seguir incluem comandos que são globais e, desse modo, você pode acessar de qualquer lugar no Visual Studio usando os atalhos de teclado:  
+As seções na tabela a seguir incluem comandos que são globais e, desse modo, você pode acessar de qualquer lugar no Visual Studio usando os atalhos de teclado:
 
 |||||  
 |-|-|-|-|  
@@ -43,12 +41,12 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |[Menus de Contexto do Depurador](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Outros Menus de Contexto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus de Contexto do Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|  
 |[Hub de Diagnóstico](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||  
 
- Cada seção na tabela a seguir inclui comandos para os quais os atalhos de teclado são específicos ao contexto para o qual a seção foi nomeada.  
+Cada seção na tabela a seguir inclui comandos para os quais os atalhos de teclado são específicos ao contexto para o qual a seção foi nomeada.
 
 |||||  
 |-|-|-|-|  
 |[Designer de Modelo de Dados de Entidade ADO.NET](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[Diagrama de Camada](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[Designer de Configurações](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[Editor de Imagens do VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|  
-|[Diagrama de Classe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Editor de Recursos Gerenciados](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[Gerenciador de Soluções](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[Editor de Cadeia de Caracteres do VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|  
+|[Diagrama de Classe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Editor de Recursos Gerenciados](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[Gerenciador de Soluções](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[Editor de Cadeia de Caracteres do VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
 |[Editor de Teste de IU codificado](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[Janela do Editor de Mesclagem](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[Designer de Modo de Exibição](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|  
 |[Editor de Conjunto de Dados](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools, Comparação de Esquemas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Editor de Detalhes do Build do Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
 |[Visualizador de Diferenças](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools, Designer de Tabela](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[Gerenciador de Testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Designer de Formulários do Windows](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
@@ -56,26 +54,26 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |[F# Interativo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools, Editor T-SQL PDW](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[Diagrama de Atividade UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[Visualização da Consulta de Item de Trabalho](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
 |[Editor de Documento Gráfico](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Inspetor de Página](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[Diagrama de Classe UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[Visualização dos Resultados de Item de Trabalho](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
 |[Diagnóstico de gráfico](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[Designer de Consulta](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[Diagrama de Componente UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[Designer de Fluxo de Trabalho](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|  
-|[Editor de HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Resultados da Consulta](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[Diagrama de Casos de Uso UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[Designer de Interface do Usuário XAML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|  
+|[Editor de HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[Resultados da Consulta](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[Diagrama de Casos de Uso UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[Designer de Interface do Usuário XAML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
 |[Modo de Exibição de Design do Editor de HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Designer de Relatório](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[Editor de Aceleradores do VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[Editor XML (texto)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
 |[Exibição de Código-Fonte do Editor de HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Diagrama de Sequência](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[Editor de Caixa de Diálogo do VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[Designer de Esquema XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
 
-##  <a name="bkmk_global"></a> Global  
+##  <a name="bkmk_global"></a> Global
 
-###  <a name="bkmk_analyze"></a> Analisar  
+###  <a name="bkmk_analyze"></a> Analisar
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
 |Analyze.NavigateBackward|Shift+Alt+3|  
 |Analyze.NavigateForward|Shift+Alt+4|  
 
-###  <a name="bkmk_architecture"></a> Arquitetura  
+###  <a name="bkmk_architecture"></a> Arquitetura
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
 |Architecture.NewDiagram|Ctrl+\\, Ctrl+N|  
 
-###  <a name="bkmk_build"></a> Build  
+###  <a name="bkmk_build"></a> Build
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -84,13 +82,13 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |Build.Compile|Ctrl+F7|  
 |Build.RunCodeAnalysisonSolution|Alt+F11|  
 
-###  <a name="bkmk_classview"></a> Menus de Contexto do Modo de Exibição de Classe  
+###  <a name="bkmk_classview"></a> Menus de Contexto do Modo de Exibição de Classe
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Enter|  
 
-###  <a name="bkmk_debug"></a> Depurar  
+###  <a name="bkmk_debug"></a> Depurar
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -158,7 +156,7 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |Debug.Watch3|Ctrl+Alt+W, 3|  
 |Debug.Watch4|Ctrl+Alt+W, 4|  
 
-###  <a name="bkmk_debugger"></a> Menus de Contexto do Depurador  
+###  <a name="bkmk_debugger"></a> Menus de Contexto do Depurador
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -166,13 +164,13 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|  
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|  
 
-###  <a name="bkmk_diagnostics"></a> Hub de Diagnóstico  
+###  <a name="bkmk_diagnostics"></a> Hub de Diagnóstico
 
 |Comando|Atalho de teclado|  
 |-------------|-----------------------|  
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|  
 
-###  <a name="bkmk_edit"></a> Editar  
+###  <a name="bkmk_edit"></a> Editar
 
 |Comandos||  
 |--------------|-|  
@@ -231,7 +229,7 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|  
 |Edit.Undo|Ctrl+Z<br /><br /> ou<br /><br /> Alt+Backspace|  
 
-###  <a name="bkmk_editorContext"></a> Menus de Contexto do Editor  
+###  <a name="bkmk_editorContext"></a> Menus de Contexto do Editor
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -242,7 +240,7 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|  
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> ou<br /><br /> Ctrl+K, T|  
 
-###  <a name="bkmk_file"></a> Arquivo  
+###  <a name="bkmk_file"></a> Arquivo
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -258,7 +256,7 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |File.SaveSelectedItems|Ctrl+S|  
 |File.ViewinBrowser|Ctrl+Shift+W|  
 
-###  <a name="bkmk_help"></a> Ajuda  
+###  <a name="bkmk_help"></a> Ajuda
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -267,19 +265,19 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |Help.ViewHelp|Ctrl+F1|  
 |Help.WindowHelp|Shift+F1|  
 
-###  <a name="bkmk_loadtest"></a> Teste de carga  
+###  <a name="bkmk_loadtest"></a> Teste de carga
 
 |Comando|Atalho de teclado|  
 |-------------|-----------------------|  
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|  
 
-###  <a name="bkmk_otherContext"></a> Outros Menus de Contexto  
+###  <a name="bkmk_otherContext"></a> Outros Menus de Contexto
 
 |Comando|Atalho de teclado|  
 |-------------|-----------------------|  
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Inserir|  
 
-###  <a name="bkmk_project"></a> Projeto  
+###  <a name="bkmk_project"></a> Projeto
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -291,14 +289,14 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |Project.Publishselectedfiles|Alt+;, Alt+P|  
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|  
 
-###  <a name="bkmk_projectContext"></a> Menus de Contexto de Projeto e Solução  
+###  <a name="bkmk_projectContext"></a> Menus de Contexto de Projeto e Solução
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+Seta para Baixo|  
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+Seta para Cima|  
 
-###  <a name="bkmk_refactor"></a> Refatoração  
+###  <a name="bkmk_refactor"></a> Refatoração
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -309,7 +307,7 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |Refactor.Rename|Ctrl+R, Ctrl+R|  
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|  
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Gerenciador de Soluções  
+###  <a name="bkmk_solutionexplorerGLOBAL"></a> Gerenciador de Soluções
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -317,7 +315,7 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+P|  
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+S|  
 
-###  <a name="bkmk_team"></a> Equipe  
+###  <a name="bkmk_team"></a> Equipe
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -326,7 +324,7 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> ou<br /><br /> Ctrl+0, O|  
 |Team.TeamExplorerSearch|Ctrl+'|  
 
-###  <a name="bkmk_TFcontext"></a> Menus de Contexto do Team Foundation  
+###  <a name="bkmk_TFcontext"></a> Menus de Contexto do Team Foundation
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -341,14 +339,14 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> ou<br /><br /> Ctrl+0, A|  
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> ou<br /><br /> Ctrl+0, W|  
 
-###  <a name="bkmk_test"></a> Teste  
+###  <a name="bkmk_test"></a> Teste
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
 |Test.UseCodedUITestBuilder|Ctrl+\\, Ctrl+C|  
 |Test.UseExistingActionRecording|Ctrl+\\, Ctrl+A|  
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Gerenciador de Testes  
+###  <a name="bkmk_testexplorerGLOBAL"></a> Gerenciador de Testes
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
@@ -1166,6 +1164,7 @@ Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhen
 |XsdDesigner.ShowGraphView|Ctrl+3|  
 |XsdDesigner.ShowStartView|Ctrl+1|  
 
-## <a name="see-also"></a>Consulte também  
- [Editor de imagens para ícones](/cpp/windows/image-editor-for-icons)   
- [Usando o IntelliSense](../ide/using-intellisense.md)
+## <a name="see-also"></a>Consulte também
+ 
+[Editor de imagens para ícones](/cpp/windows/image-editor-for-icons)  
+[Usando o IntelliSense](../ide/using-intellisense.md)

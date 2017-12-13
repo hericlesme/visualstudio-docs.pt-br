@@ -11,11 +11,11 @@ caps.latest.revision: "16"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: dba101890bd2f27c85e8e6053944d8781fa03ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4f525157e9e34838be4379f8df0845b294880f11
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="setup-and-install"></a>Instalar e configurar
 Para criar aplicativos nativos do iOS, Android e Windows de uma base de código comum C#/.NET usando Xamarin, você precisa do seguinte:  
@@ -50,7 +50,7 @@ Se você tiver problemas para usar o Xamarin depois de fazer essa configuração
 ##  <a name="windows"></a> Instalação do Windows (Visual Studio e Xamarin)  
   
 > [!TIP]
->  Essas instruções se aplicam ao Visual Studio 2017. Para Visual Studio 2015, confira [MSDN](https://msdn.microsoft.com/en-us/library/mt613162.aspx). Para usar o Xamarin com o Visual Studio 2013 (A Atualização 2 é necessária), siga as instruções para [instalação direta do Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
+>  Essas instruções se aplicam ao Visual Studio 2017. Para Visual Studio 2015, confira [MSDN](setup-and-install.md). Para usar o Xamarin com o Visual Studio 2013 (A Atualização 2 é necessária), siga as instruções para [instalação direta do Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).  
   
 1.  [Baixe e inicie o instalador para qualquer edição do Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional ou Enterprise). O Visual Studio 2017 Community é a versão gratuita; as edições Professional e Enterprise poderão ser usadas em uma base de avaliação por 30 dias, após os quais você precisará adquirir uma licença.  
   

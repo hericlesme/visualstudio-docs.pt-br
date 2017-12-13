@@ -13,11 +13,11 @@ caps.latest.revision: "65"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 5ac7781ecb53727572a9d8594f4a65c5e9c6628c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9d35ce547e216f632f56cf8bf445b115290486cc
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introdução ao desenvolvimento com o Visual Studio
 Bem-vindo ao Visual Studio! Depois de [baixar](http://www.visualstudio.com/community) o produto, essas páginas o ajudarão a começar a codificação.  
@@ -32,11 +32,11 @@ Bem-vindo ao Visual Studio! Depois de [baixar](http://www.visualstudio.com/commu
 
 -   **[Crie aplicativos móveis de plataforma cruzada em C# ou Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**: comece a usar o Visual Studio e as Ferramentas para Xamarin para criar aplicativos móveis executados no Android, iOS e na Plataforma Universal do Windows em uma base de código compartilhada.  
 
-     Carregue uma amostra: [Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (interface do usuário nativa) ou [Amostra do Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interface do usuário compartilhada do Xamarin.Forms) &#124;   [Siga um tutorial](https://msdn.microsoft.com/library/dn879698.aspx) &#124;                             [Procure os documentos](https://msdn.microsoft.com/en-us/library/mt299001.aspx) &#124;                                  [Assista a um vídeo](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     Carregue uma amostra: [Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (interface do usuário nativa) ou [Amostra do Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interface do usuário compartilhada do Xamarin.Forms) &#124;   [Siga um tutorial](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md) &#124;                             [Procure os documentos](../cross-platform/visual-studio-and-xamarin.md) &#124;                                  [Assista a um vídeo](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
 
 -   **[Torne nativos aplicativos de plataforma cruzada e bibliotecas em C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Clique aqui para começar a criar aplicativos e bibliotecas em C++ com execução no Android, iOS e na Plataforma Universal do Windows.  
 
-     [Carregue uma amostra](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124;   [Siga um tutorial](https://msdn.microsoft.com/en-us/library/dn707595.aspx) &#124;                             [Procure os documentos](https://msdn.microsoft.com/en-us/library/dn707591.aspx) &#124;                                  [Assista a um vídeo](https://channel9.msdn.com/Series/ConnectOn-Demand/239)  
+     [Carregue uma amostra](https://code.msdn.microsoft.com/MoreTeaPots-Android-a9bd8549) &#124;   [Siga um tutorial](../cross-platform/create-an-android-native-activity-app.md) &#124;                             [Procure os documentos](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) &#124;                                  [Assista a um vídeo](https://channel9.msdn.com/Series/ConnectOn-Demand/239)  
 
 -   **[Crie jogos com DirectX](https://msdn.microsoft.com/en-us/library/windows/desktop/ee663274.aspx)**: comece a criar jogos da Plataforma Universal do Windows usando DirectX.  
 
@@ -44,7 +44,7 @@ Bem-vindo ao Visual Studio! Depois de [baixar](http://www.visualstudio.com/commu
 
 -   **[Crie jogos com Unity](../cross-platform/visual-studio-tools-for-unity.md)** : comece a criar jogos de plataforma cruzada usando a estrutura Unity.  
 
-     [Carregue uma amostra](http://unity3d.com/learn/resources/downloads) &#124;                     [Siga um tutorial](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124;                               [Procure os documentos](https://msdn.microsoft.com/en-us/library/dn940019.aspx) &#124;     [Assista a um vídeo](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)  
+     [Carregue uma amostra](http://unity3d.com/learn/resources/downloads) &#124;                     [Siga um tutorial](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) &#124;                               [Procure os documentos](../cross-platform/visual-studio-tools-for-unity.md) &#124;     [Assista a um vídeo](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em)  
 
 -   **[Crie aplicativos da Plataforma Universal do Windows](https://dev.windows.com/en-us/windows-apps)**: Crie aplicativos que serão executados na Plataforma Universal do Windows (XBox, computadores, tablets, Windows Phone, Surface Hub e Internet das Coisas).  
 
@@ -52,7 +52,7 @@ Bem-vindo ao Visual Studio! Depois de [baixar](http://www.visualstudio.com/commu
 
 -   **[Crie aplicativos da área de trabalho](https://dev.windows.com/en-us/desktop)**: clique aqui para começar a criar aplicativos da área de trabalho tradicionais executados em computadores Windows.  
 
-     [Carregue uma amostra](https://github.com/microsoft/windows-classic-samples) &#124;                     [Siga um tutorial](https://msdn.microsoft.com/en-us/library/dd492171.aspx) &#124;                               [Procure os documentos](https://dev.windows.com/en-us/desktop)  
+     [Carregue uma amostra](https://github.com/microsoft/windows-classic-samples) &#124;                     [Siga um tutorial](getting-started-with-visual-csharp-and-visual-basic.md) &#124;                               [Procure os documentos](https://dev.windows.com/en-us/desktop)  
 
 -   **[Crie aplicativos do Office](https://msdn.microsoft.com/en-us/library/fp161347.aspx)**: comece a criar aplicativos do Office que estendam e personalizem o Word, o Excel, o Outlook e o Powerpoint com os serviços do Office 365.  
 

@@ -18,11 +18,11 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guia do iniciante para criação de perfil de desempenho
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
@@ -108,7 +108,6 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
     Nesta exibição, a função selecionada aparece no título e na caixa **Função Atual** (GetNumber, neste exemplo). A função que chamou a função atual é mostrada à esquerda em **Função Chamadora** e todas as funções chamadas pela função atual são mostradas na caixa **Funções Chamadas** à direita. (Você pode selecionar cada uma das caixas para alterar a função atual.)
 
     Essa exibição mostra o tempo total (ms) e o percentual do tempo de execução geral do aplicativo que a função levou para ser concluída.
-
     **Corpo da Função** também mostra a quantidade total de tempo (e o percentual de tempo) gasta no corpo da função, excluindo o tempo gasto nas funções chamadoras e chamadas. (Neste exemplo, 3713 de 3729 ms foram gastos no corpo da função e os 16 ms restantes foram gastos em código externo chamado por essa função).
 
     > [!TIP]
@@ -157,7 +156,7 @@ Use a caixa de pesquisa para localizar um nó que você esteja procurando e use 
 </div>
   
 ## <a name="see-also"></a>Consulte também  
- [[Uso de Memória](../profiling/memory-usage.md)  
+ [Uso de Memória](../profiling/memory-usage.md)  
  [Uso da CPU](../profiling/cpu-usage.md)  
  [Criação de perfis no Visual Studio](../profiling/index.md)  
  [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)

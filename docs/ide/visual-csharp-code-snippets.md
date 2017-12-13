@@ -10,7 +10,6 @@ ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
-- Code Snippet Inserter [J#]
 - Code Snippet Inserter [C#]
 - Visual C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
@@ -18,11 +17,11 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e0e00fb5495946adcd7f47de8cdc2d6e0d32dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="visual-c-code-snippets"></a>Trechos de código do Visual C#
 Os trechos de código são trechos de código prontos que você pode inserir rapidamente em seu código. Por exemplo, o trecho de código `for` cria um loop `for` vazio. Alguns trechos de código são trechos de código envolvidos, que permite que você selecione linhas de código e, em seguida, escolha um trecho de código que incorpora as linhas de código selecionadas. Por exemplo, quando você seleciona linhas de código e, em seguida, ativa o trecho de código `for`, ele cria um loop `for` com as linhas de código selecionadas dentro do bloco de loop. Os trechos de código podem fazer com que escrever código de programa seja mais rápido, mais fácil e mais confiável.  

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c4ed4d6a90a91ac927feb3be76a06d8080267057
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 735c95d9eda5cba15b9d75a5abf10d26dd14b0cb
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Usando o Visual Studio Tools for Unity
 Nesta seção, você aprenderá como usar os recursos de integração e produtividade das Ferramentas do Visual Studio para Unity e como usar o depurador do Visual Studio para desenvolvimento no Unity.  
@@ -97,9 +97,9 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
 |Abrir o Gerenciador de Projetos do Unity|**Alt+Shift+E**|**View.UnityProjectExplorer**|  
 |Acessar a documentação do Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|  
 |Anexar ao depurador do Unity (player ou editor)|***nenhum padrão***|**Debug.AttachUnityDebugger**|  
-
- Será possível alterar as combinações de teclas de atalho se não desejar o padrão. Para obter informações sobre como mudá-las, consulte [Identificando e personalizando atalhos de teclado no Visual Studio](https://msdn.microsoft.com/en-us/library/5zwses53.aspx).  
-
+  
+ Será possível alterar as combinações de teclas de atalho se não desejar o padrão. Para obter informações sobre como mudá-las, consulte [Identificando e personalizando atalhos de teclado no Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+  
 ## <a name="unity-debugging"></a>Depuração do Unity  
  Ferramentas do Visual Studio para Unity permitem depurar scripts do editor e jogos para seu projeto do Unity usando um depurador poderoso do Visual Studio.  
 
