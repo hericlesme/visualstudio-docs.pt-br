@@ -1,6 +1,7 @@
 # [Visão geral do Visual Studio IDE](visual-studio-ide.md)
-# Guia de início rápido da IDE
+# Guias de Início Rápido
 ## [Introdução ao IDE do Visual Studio](quickstart-ide-orientation.md)
+## [Projetos e Soluções](quickstart-projects-solutions.md)
 ## [Personalizando o tema e as cores do texto](quickstart-personalize-the-ide.md)
 ## [Codificando no editor](quickstart-editor.md)
 # [Introdução ao desenvolvimento com o Visual Studio](get-started-developing-with-visual-studio.md)
@@ -54,7 +55,6 @@
 ## [Dicas e truques de desempenho do Visual Studio](visual-studio-performance-tips-and-tricks.md)
 # [Soluções e projetos no Visual Studio](solutions-and-projects-in-visual-studio.md)
 ## [Criando soluções e projetos](creating-solutions-and-projects.md)
-## [Adicionando e removendo itens de projeto](adding-and-removing-project-items.md)
 ## [Tipos de arquivo de Projeto e Solução](reference/project-and-solution-file-types.md)
 ## [Gerenciando propriedades de solução e de projeto](managing-project-and-solution-properties.md)
 ## [Gerenciando referências em um projeto](managing-references-in-a-project.md)
@@ -68,8 +68,7 @@
 ## [Gerenciando Assinatura de Assembly e Manifesto](managing-assembly-and-manifest-signing.md)
 ### [Como assinar manifestos de aplicativo e implantação](how-to-sign-application-and-deployment-manifests.md)
 ## [Como especificar um ícone do aplicativo (Visual Basic, C#)](how-to-specify-an-application-icon-visual-basic-csharp.md)
-## [Direcionamento de uma versão específica do .NET Framework](targeting-a-specific-dotnet-framework-version.md)
-### [Visão Geral do Visual Studio Multiplataforma](visual-studio-multi-targeting-overview.md)
+## [Visão Geral do Visual Studio Multiplataforma](visual-studio-multi-targeting-overview.md)
 ### [Como definir uma versão do .NET Framework como destino](how-to-target-a-version-of-the-dotnet-framework.md)
 ## [Criando modelos de projeto e de item](creating-project-and-item-templates.md)
 ### [Como criar modelos de projeto](how-to-create-project-templates.md)
