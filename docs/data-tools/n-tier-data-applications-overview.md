@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3949d49f763c2513e86c2cd3f1b20c20fb858ecc
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 0fb26eddd3a7bf6af9a2888b6fbc8efa79e33bf5
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 *N-camadas* aplicativos de dados são aplicativos de dados que são separados em várias *camadas*. Também chamado de "aplicativos distribuídos" e "aplicativos multicamadas", aplicativos de n camadas separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Ao desenvolver aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que constituem o aplicativo.  
@@ -34,7 +34,7 @@ O Visual Studio contém vários recursos para ajudar os desenvolvedores a criar 
   
 -   O [LINQ to SQL Tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornece configurações para gerar as classes DataContext e dados em namespaces separados. Isso permite uma separação lógica do acesso a dados e camadas de entidade de dados.  
   
--   [O LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornece o <xref:System.Data.Linq.Table%601.Attach%2A> método que permite reunir o DataContext de diferentes camadas em um aplicativo. Para obter mais informações, consulte [de N camadas e aplicativos remotos com o LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+-   [O LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornece o <xref:System.Data.Linq.Table%601.Attach%2A> método que permite reunir o DataContext de diferentes camadas em um aplicativo. Para obter mais informações, consulte [de N camadas e aplicativos remotos com o LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).  
   
 ## <a name="presentation-tier"></a>Camada de apresentação  
 O *da camada de apresentação* é a camada na qual os usuários interagem com um aplicativo. Ele geralmente contém a lógica do aplicativo adicionais também. Componentes da camada de apresentação típicos incluem o seguinte:  
@@ -82,7 +82,7 @@ Os tópicos a seguir fornecem informações sobre como trabalhar com aplicativos
   
 [Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 
-[N-camadas e aplicativos remotos com o LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+[Aplicativos de N camadas e remotos com o LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)  
   
 ## <a name="see-also"></a>Consulte também
 [Passo a passo: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   

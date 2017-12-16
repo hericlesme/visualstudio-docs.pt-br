@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: a segurança de método deve ser um superconjunto de tipo
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Alteração Significativa|Quebra|  
   
 ## <a name="cause"></a>Causa  
- Um tipo tem segurança declarativa e um de seus métodos tem a segurança declarativa para a mesma ação de segurança e a ação de segurança não é [demandas de Link](/dotnet/framework/misc/link-demands) ou [demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)e as permissões verificado pelo tipo não são um subconjunto das permissões verificadas pelo método.  
+ Um tipo tem segurança declarativa e um de seus métodos tem a segurança declarativa para a mesma ação de segurança e a ação de segurança não é [demandas de Link](/dotnet/framework/misc/link-demands), e as permissões são verificadas pelo tipo não são um subconjunto das permissões verificado pelo método.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
  Um método não deve ter tanto uma tipo de nível e de método a segurança declarativa para a mesma ação. As duas verificações não são combinadas; somente a demanda de nível de método é aplicada. Por exemplo, se um tipo exige permissão `X`, e um de seus métodos exige permissão `Y`, código não precisa ter permissão `X` para executar o método.  
@@ -63,6 +63,5 @@ ms.lasthandoff: 10/31/2017
 **[Nenhuma permissão de leitura (exigido pelo método)] Não foi possível acessar as informações pessoais: Falha na solicitação.**   
 ## <a name="see-also"></a>Consulte também  
  [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)   
- [Demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [Demandas de link](/dotnet/framework/misc/link-demands)   
  [Dados e modelagem](/dotnet/framework/data/index)

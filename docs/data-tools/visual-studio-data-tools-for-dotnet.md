@@ -12,14 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b48b16d33c62c2d0ca96eb1d55ce22682458029
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Ferramentas de dados do Visual Studio para .NET
-O Visual Studio e o .NET Framework juntas fornecem amplo API e as ferramentas de suporte para se conectar aos bancos de dados, modelagem de dados na memória e exibir os dados na interface do usuário. As classes do .NET Framework que fornecem a funcionalidade de acesso a dados são conhecidas como [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). ADO.NET, juntamente com os dados de ferramentas no Visual Studio, foi originalmente projetado principalmente para dar suporte a bancos de dados relacionais e XML. Atualmente, muitos fornecedores de banco de dados NoSQL, ou de terceiros, oferecem provedores ADO.NET.  
+O Visual Studio e o .NET Framework juntas fornecem amplo API e as ferramentas de suporte para se conectar aos bancos de dados, modelagem de dados na memória e exibir os dados na interface do usuário. As classes do .NET Framework que fornecem a funcionalidade de acesso a dados são conhecidas como [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, juntamente com os dados de ferramentas no Visual Studio, foi originalmente projetado principalmente para dar suporte a bancos de dados relacionais e XML. Atualmente, muitos fornecedores de banco de dados NoSQL, ou de terceiros, oferecem provedores ADO.NET.  
   
 [.NET core](https://www.dotnetfoundation.org/netcore) suporta ADO.NET, exceto para conjuntos de dados e tipos relacionados. Se você tiver como alvo o núcleo do .NET e exige uma camada de mapeamento relacional de objeto (ORM), use [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
   
@@ -39,7 +39,7 @@ O fluxo de trabalho típico é a seguinte:
   
 5.  Adicione código personalizado para coisas como regras de negócio, pesquisa e a validação de dados, ou para tirar proveito da funcionalidade personalizada que expõe o banco de dados subjacente.  
   
-Você pode ignorar a etapa 3 e programar um aplicativo .NET para emitir comandos diretamente para um banco de dados, em vez de usar um modelo. Nesse caso, você encontrará a documentação relevante aqui: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). Observe que você ainda pode usar o Assistente de configuração de fonte de dados e designers para gerar código de associação de dados ao preencher seus próprios objetos em memória e, em seguida, controles de interface do usuário de associação de dados para esses objetos.
+Você pode ignorar a etapa 3 e programar um aplicativo .NET para emitir comandos diretamente para um banco de dados, em vez de usar um modelo. Nesse caso, você encontrará a documentação relevante aqui: [ADO.NET](/dotnet/framework/data/adonet/index). Observe que você ainda pode usar o Assistente de configuração de fonte de dados e designers para gerar código de associação de dados ao preencher seus próprios objetos em memória e, em seguida, controles de interface do usuário de associação de dados para esses objetos.
   
 ## <a name="see-also"></a>Consulte também
 [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

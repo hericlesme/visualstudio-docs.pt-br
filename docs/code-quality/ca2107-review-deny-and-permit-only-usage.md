@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: revisar uso de deny e permit only
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Um método contém uma verificação de segurança que especifica a ação de segurança PermitOnly ou Deny.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
- O [usando o método PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> ações de segurança devem ser usadas apenas por aqueles que têm um conhecimento avançado de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] segurança. O código que usa essas ações de segurança deve passar por uma revisão de segurança.  
+ O <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> ação de segurança deve ser usada apenas por aqueles que têm um conhecimento avançado de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] segurança. O código que usa essas ações de segurança deve passar por uma revisão de segurança.  
   
  Negar altera o comportamento padrão do exame da pilha que ocorre em resposta a uma exigência de segurança. Ele permite que você especifique as permissões que não devem ser concedidas para a duração do método negar, independentemente das permissões reais de chamadores na pilha de chamadas. Se a movimentação da pilha detecta um método que é protegido pelo Deny, e se a permissão exigida é incluída nas permissões negadas, a movimentação da pilha falhará. PermitOnly também altera o comportamento padrão do exame da pilha. Ele permite que o código especificar somente as permissões que podem ser concedidas, independentemente das permissões dos chamadores. Se a movimentação da pilha detecta um método que é protegido pelo PermitOnly, e se a permissão exigida não está incluído nas permissões que são especificadas pelo PermitOnly, a movimentação da pilha falhará.  
   
@@ -82,5 +82,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
  [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)   
- [Substituindo verificações de segurança](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Usando o método PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+

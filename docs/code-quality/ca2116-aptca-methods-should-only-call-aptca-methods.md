@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: os métodos APTCA só devem chamar métodos APTCA
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  Um chamador parcialmente confiável `X` pode chamar o método `M1`, causando `M1` chamar `M2`. Porque `M2` não tem o atributo APTCA, o chamador imediato (`M1`) devem atender a uma demanda de link de confiança total; `M1` tem confiança total e portanto satisfaz essa verificação. O risco de segurança é porque `X` não participar no que satisfazem a demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não têm o atributo.  
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas dependerá de você demanda na funcionalidade exposta pelo método. Se for possível, proteja o método com uma solicitação de confiança total garantir que a funcionalidade subjacente não é exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que efetivamente protege a funcionalidade exposta. Para obter mais informações sobre as demandas, consulte [demandas](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+ Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas dependerá de você demanda na funcionalidade exposta pelo método. Se for possível, proteja o método com uma solicitação de confiança total garantir que a funcionalidade subjacente não é exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que efetivamente protege a funcionalidade exposta.  
   
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
  Para suprimir com segurança um aviso dessa regra, você deve garantir que a funcionalidade exposta pelo método não direta ou indiretamente permite chamadores acessem informações confidenciais, operações ou recursos que podem ser usados de forma destrutivas.  
@@ -78,8 +78,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Consulte também  
  [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)   
- [Assemblies do .NET framework que pode ser chamados por código parcialmente confiável](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Usando Bibliotecas de Código Parcialmente Confiável](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Demandas de](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [Demandas de link](/dotnet/framework/misc/link-demands)   
  [Dados e modelagem](/dotnet/framework/data/index)

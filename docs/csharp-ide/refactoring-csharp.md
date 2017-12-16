@@ -1,5 +1,5 @@
 ---
-title: "O Visual Studio refatoração recursos (c#) | Microsoft Docs"
+title: "Recursos do Visual Studio de refatoração c# | Microsoft Docs"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,15 +16,17 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring-features-for-c"></a>Recursos de refatoração c# #
+# <a name="refactoring-features-in-c"></a>Recursos de refatoração em c# #
 
-Refatoração é o processo de aperfeiçoar seu código após ele ter sido gravado. Refatoração altera a estrutura interna do código sem alterar seu comportamento. Os seguintes recursos de refatoração estão disponíveis no Visual Studio c#:
+Refatoração é o processo de alterar a estrutura interna de código sem alterar seu comportamento. Refatoração é frequentemente usada para tornar o código mais legível, manutenção e confiável.
+
+Os seguintes recursos de refatoração estão disponíveis no Visual Studio c#:
 
 * [Alterar assinatura do método](refactoring/change-method-signature.md)
 * [Converter o método Get em propriedade/propriedade em método Get](refactoring/convert-get-method-to-property.md)
@@ -40,4 +42,6 @@ Refatoração é o processo de aperfeiçoar seu código após ele ter sido grava
 
 ## <a name="see-also"></a>Consulte também
 
-[Usando o Ambiente de Desenvolvimento do Visual Studio para C#](using-the-visual-studio-development-environment-for-csharp.md)  
+[Refatoração, geração de código e ações rápidas no Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Refatoração no Visual Basic](../vb-ide/refactoring-vb.md)  
+[Usando o Ambiente de Desenvolvimento do Visual Studio para C#](using-the-visual-studio-development-environment-for-csharp.md)

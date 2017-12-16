@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76437dff5aa59e4864216318e64a07245c15c68d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizando modelos de Item para Visual Studio de 2017 e projeto personalizados
 A partir do Visual Studio de 2017, o Visual Studio está mudando a maneira como ele descobre que os modelos de projeto e item que foi instalados por um .vsix ou um arquivo. msi. Se você possui extensões que usam modelos de item ou projeto personalizados, você precisa atualizar suas extensões. Este tópico explica o que você deve fazer.  
@@ -26,7 +26,7 @@ A partir do Visual Studio de 2017, o Visual Studio está mudando a maneira como 
  Se você quiser criar um modelo de projeto ou item como parte de uma extensão do VSIX, consulte [criando personalizar modelos de projeto e Item](../extensibility/creating-custom-project-and-item-templates.md).  
   
 ## <a name="template-scanning"></a>Verificação de modelo  
- Anteriormente, **devenv /setup** ou **/installvstemplates devenv** verificados no disco local para localizar modelos de projeto e item. A partir do Preview 4, verificação será executada somente para o nível de usuário local (**%USERPROFILE%\Documents\\< versão do Visual Studio\>\My exportado modelos\\**) que é usado para modelos gerados pelo **arquivo / exportar modelos** comando.  
+ Anteriormente, **devenv /setup** ou **/installvstemplates devenv** verificados no disco local para localizar modelos de projeto e item. A partir do Preview 4, verificação será executada somente para o nível de usuário local (**%USERPROFILE%\Documents\\< versão do Visual Studio\>\My exportado modelos\\**) que é usado para modelos gerados pelo **arquivo > Exportar modelos** comando.  
   
  Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.vstman) que especifica o local e outras características do modelo. O arquivo .vstman é gerado junto com o arquivo. vstemplate usado para modelos. Se você instalar a extensão usando um .vsix, você pode fazer isso através da recompilação a extensão no Visual Studio de 2017. Mas se você usar um arquivo. msi, você precisa fazer as alterações manualmente. Para obter uma lista do que você precisa para fazer essas alterações, consulte **atualizações para extensões instaladas com um. MSI** mais adiante neste tópico.  
   

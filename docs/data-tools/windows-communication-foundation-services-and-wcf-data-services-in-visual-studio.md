@@ -39,11 +39,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 O Visual Studio fornece ferramentas para trabalhar com o Windows Communication Foundation (WCF) e [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], tecnologias da Microsoft para a criação de aplicativos distribuídos. Este tópico fornece uma introdução aos serviços de um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspectiva. Para obter a documentação completa, consulte [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
@@ -243,7 +243,6 @@ Para evitar esse problema, os tipos em assemblies referenciados são compartilha
 ||[Como adicionar, atualizar ou remover uma referência de WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Descreve como referenciar e usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Solução de problemas de referências de serviço](../data-tools/troubleshooting-service-references.md)|Apresenta alguns erros comuns que podem ocorrer com referências de serviço e como evitá-los.|  
 |[Depurando serviços WCF](../debugger/debugging-wcf-services.md)|Descreve problemas comuns de depuração e técnicas que você pode encontrar durante a depuração de serviços WCF.|  
-|[Visão geral do serviço de autenticação do Windows Communication Foundation](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Descreve como usar o WCF para fornecer um serviço de função para um site da Web.|  
 |[Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Fornece instruções passo a passo para criar um conjunto de dados tipado e separar o código do TableAdapter e do conjunto de dados em vários projetos.|  
 |[Caixa de diálogo Configurar Referência de Serviço](../data-tools/configure-service-reference-dialog-box.md)|Descreve os elementos da interface do usuário a **configurar referência de serviço** caixa de diálogo.|  
   

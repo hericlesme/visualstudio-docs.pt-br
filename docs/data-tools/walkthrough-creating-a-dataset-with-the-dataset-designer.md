@@ -12,34 +12,32 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Instruções passo a passo: criando um conjunto de dados com o Designer de Conjunto de Dados
+
 Neste passo a passo, você irá criar um conjunto de dados usando o **Dataset Designer**. Levará você pelo processo de criar um novo projeto e adicionar um novo **DataSet** item a ele. Você aprenderá como criar tabelas com base em tabelas em um banco de dados sem usar um assistente.  
-  
- As tarefas ilustradas neste passo a passo incluem:  
-  
+
+As tarefas ilustradas neste passo a passo incluem:  
+
 -   Criando um novo **aplicativo do Windows Forms** projeto.  
-  
+
 -   Adicionando vazio **DataSet** item ao projeto.  
-  
+
 -   Criar e configurar uma fonte de dados em seu aplicativo, criando um dataset com o **Dataset Designer**.  
-  
+ 
 -   Criar uma conexão ao banco de dados Northwind em **Server Explorer**.  
-  
+
 -   Criando tabelas com TableAdapters no conjunto de dados com base em tabelas no banco de dados.  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Pré-requisitos  

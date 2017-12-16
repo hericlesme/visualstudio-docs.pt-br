@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados no banco de dados
 O conjunto de dados é uma cópia na memória dos dados. Se você modificar esses dados, é uma boa prática para salvar as alterações no banco de dados. Você fazer isso em uma das três maneiras:  
@@ -50,7 +50,7 @@ Se você estiver familiarizado com TableAdapters, você pode ir diretamente para
 |[Atualização hierárquica](../data-tools/hierarchical-update.md)|Como realizar atualizações de um dataset com duas ou mais tabelas relacionadas|  
 |[Lidar com uma exceção de simultaneidade](../data-tools/handle-a-concurrency-exception.md)|Como manipular exceções quando dois usuários tentam alterar os mesmos dados em um banco de dados ao mesmo tempo|  
 |[Como: salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)|Como salvar dados em uma transação usando o namespace System Transactions e um objeto de TransactionScope|  
-|[Passo a passo: Salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)|Instruções passo a passo que cria um aplicativo do Windows Forms para demonstrar o salvamento de dados para um banco de dados dentro de uma transação|  
+|[Passo a passo: salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)|Instruções passo a passo que cria um aplicativo do Windows Forms para demonstrar o salvamento de dados para um banco de dados dentro de uma transação|  
 |[Salvar dados em um banco de dados (várias tabelas)](../data-tools/save-data-to-a-database-multiple-tables.md)|Como editar registros e salvar alterações em várias tabelas no banco de dados|  
 |[Salvar dados de um objeto em um banco de dados](../data-tools/save-data-from-an-object-to-a-database.md)|Como passar dados de um objeto que não está em um conjunto de dados para um banco de dados usando um método TableAdapter DbDirect|  
 |[Salvando dados com os métodos DBDirect TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Como usar o TableAdapter para enviar consultas SQL diretamente para o banco de dados|  
@@ -217,7 +217,7 @@ A tabela a seguir descreve quais alterações são confirmadas com base em qual 
 -   Nos dados de back-end, enviando dados para a fonte de dados — por exemplo, o banco de dados — e permitindo que ele aceite ou rejeite os dados. Se você estiver trabalhando com um banco de dados que tem recursos sofisticados para validação de dados e fornecer informações de erro, isso pode ser uma abordagem prática porque você pode validar os dados, independentemente de onde vêm. No entanto, essa abordagem não pode acomodar requisitos de validação específicas do aplicativo. Além disso, com a fonte de dados a validar os dados pode resultar em várias viagens à fonte de dados, dependendo de como seu aplicativo facilita a resolução de erros de validação gerado pelo back-end.  
   
     > [!IMPORTANT]
-    >  Ao usar comandos de dados com um <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriedade é definida como <xref:System.Data.CommandType.Text>, cuidadosamente verifique informações que são enviadas de um cliente antes de passá-la para seu banco de dados. Usuários mal-intencionados podem tentar enviar (inserir) instruções SQL modificadas ou adicionais em um esforço para obter acesso não autorizado ou danificar o banco de dados. Antes de transferir a entrada do usuário para um banco de dados, sempre verifique se que as informações são válidas. É uma prática recomendada sempre usar consultas parametrizadas ou procedimentos armazenados quando possível. Para obter mais informações, consulte [Visão geral de explorações de script](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+    >  Ao usar comandos de dados com um <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriedade é definida como <xref:System.Data.CommandType.Text>, cuidadosamente verifique informações que são enviadas de um cliente antes de passá-la para seu banco de dados. Usuários mal-intencionados podem tentar enviar (inserir) instruções SQL modificadas ou adicionais em um esforço para obter acesso não autorizado ou danificar o banco de dados. Antes de transferir a entrada do usuário para um banco de dados, sempre verifique se que as informações são válidas. É uma prática recomendada sempre usar consultas parametrizadas ou procedimentos armazenados quando possível.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Atualizações de transmissão à fonte de dados  
 Depois que as alterações foram feitas em um conjunto de dados, você pode transmitir as alterações para uma fonte de dados. Mais comumente, faça isso chamando o `Update` método de um TableAdapter (ou adaptador de dados). O método loops a cada registro em uma tabela de dados, determina que tipo de atualização é necessária (atualizar, inserir ou excluir), se houver, e, em seguida, executa o comando apropriado.  
@@ -258,7 +258,7 @@ Depois que as alterações foram feitas em um conjunto de dados, você pode tran
   
  O <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> propriedade de cada parâmetro aponta para uma coluna na tabela de dados. Por exemplo, o `SourceColumn` propriedade para o `au_id` e `Original_au_id` parâmetros é definida como qualquer coluna na tabela de dados que contém a id do autor. Quando o adaptador `Update` execuções do método, ele lê o autor coluna id do registro que está sendo atualizado e preenche os valores na instrução.  
   
- Em uma instrução UPDATE, você precisa especificar novos valores (aqueles que será gravado no registro), bem como os antigos valores (para que o registro pode ser localizado no banco de dados). Portanto, há dois parâmetros para cada valor: um para a cláusula SET e um diferente para a cláusula WHERE. Ambos os parâmetros leem dados do registro que está sendo atualizado, mas eles obtêm versões diferentes do valor da coluna com base no parâmetro de [SourceVersion Property](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). O parâmetro para a cláusula SET obtém a versão atual, e o parâmetro para a cláusula WHERE obtém a versão original.  
+ Em uma instrução UPDATE, você precisa especificar novos valores (aqueles que será gravado no registro), bem como os antigos valores (para que o registro pode ser localizado no banco de dados). Portanto, há dois parâmetros para cada valor: um para a cláusula SET e um diferente para a cláusula WHERE. Ambos os parâmetros leem dados do registro que está sendo atualizado, mas eles obtêm versões diferentes do valor da coluna com base no parâmetro de <xref:System.Data.SqlClient.SqlParameter.SourceVersion> propriedade. O parâmetro para a cláusula SET obtém a versão atual, e o parâmetro para a cláusula WHERE obtém a versão original.  
   
 > [!NOTE]
 >  Você também pode definir valores `Parameters` coleção por conta própria no código, que normalmente você faria em um manipulador de eventos para o adaptador de dados <xref:System.Data.DataTable.RowChanging> eventos.  

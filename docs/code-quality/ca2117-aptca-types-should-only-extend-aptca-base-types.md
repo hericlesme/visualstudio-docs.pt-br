@@ -18,11 +18,11 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: os tipos APTCA só devem estender tipos base APTCA
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Um tipo público ou protegido em um assembly com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atributo herda de um tipo declarado em um assembly que não tem o atributo.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
- Por padrão, os tipos públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um [demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) de confiança total. Assemblies de nomes fortes marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a demanda de herança. Isso torna expostos tipos declarados no assembly herdados por tipos que não têm confiança total.  
+ Por padrão, os tipos públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> de confiança total. Assemblies de nomes fortes marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a demanda de herança. Isso torna expostos tipos declarados no assembly herdados por tipos que não têm confiança total.  
   
  Quando o atributo APTCA estiver presente em um assembly totalmente confiável, e um tipo no assembly herda de um tipo que não permite chamadores parcialmente confiáveis, um ataque de segurança é possível. Se dois tipos `T1` e `T2` atendem às seguintes condições, chamadores mal-intencionados podem usar o tipo `T1` para ignorar a demanda de herança de confiança total implícito que protege `T2`:  
   
@@ -85,6 +85,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Consulte também  
  [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)   
- [Assemblies do .NET framework que pode ser chamados por código parcialmente confiável](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
- [Usando Bibliotecas de Código Parcialmente Confiável](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Usando bibliotecas de código parcialmente confiável](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   

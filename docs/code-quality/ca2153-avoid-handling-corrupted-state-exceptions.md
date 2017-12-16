@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eabddaea271eb07873fc50bd4824a5108514444c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 679b5c78330bb8be151a1b9f89625c8f2178456d
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Evitar tratamento de exceções de estado corrompidas
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  [Corrompido exceções de estado (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) indicar que a memória corrompidos no processo. Capturando esses em vez de permitir o processo a falha pode levar a vulnerabilidades de segurança se um invasor pode colocar uma exploração para a área de memória corrompidos.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
- CSE indica que o estado de um processo foi corrompido e não foi detectado pelo sistema. No cenário de estado corrompido, um manipulador geral somente captura a exceção se você marcar o método com o próprio `HandleProcessCorruptedStateExceptions` atributo. Por padrão, o [Common Language Runtime (CLR)](https://msdn.microsoft.com/en-us/library/8bs2ecf4.aspx) não invoca manipuladores catch para CSEs.  
+ CSE indica que o estado de um processo foi corrompido e não foi detectado pelo sistema. No cenário de estado corrompido, um manipulador geral somente captura a exceção se você marcar o método com o próprio `HandleProcessCorruptedStateExceptions` atributo. Por padrão, o [Common Language Runtime (CLR)](/dotnet/standard/clr) não invoca manipuladores catch para CSEs.  
   
  Permitir que o processo falhar sem capturando esses tipos de exceção é a opção mais segura, como o mesmo código de registro pode permitir que os invasores podem explorar bugs de corrupção de memória.  
   

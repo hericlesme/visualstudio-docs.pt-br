@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 O **configurar referência de serviço** caixa de diálogo permite que você configure o comportamento de [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] serviços.  
@@ -62,7 +62,7 @@ O **configurar referência de serviço** caixa de diálogo permite que você con
  Determina se os métodos de serviço WCF serão chamados síncrona (o padrão) ou assíncrona.  
   
  **Gerar operações com base em tarefa**  
- Ao escrever código assíncrono, esta opção permite que você tire proveito da tarefa paralela TPL (biblioteca) que foi introduzido com o .net 4. Consulte [tarefas biblioteca paralelas (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Ao escrever código assíncrono, esta opção permite que você tire proveito da tarefa paralela TPL (biblioteca) que foi introduzido com o .net 4. Consulte [tarefas biblioteca paralelas (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
   
  **Sempre gerar contratos de mensagem**  
  Determina se os tipos de contrato de mensagem serão gerados para um cliente do WCF. Para obter mais informações sobre contratos de mensagem, consulte [usando contratos de mensagem](/dotnet/framework/wcf/feature-details/using-message-contracts).  

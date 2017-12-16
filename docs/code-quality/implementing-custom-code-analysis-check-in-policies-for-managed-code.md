@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementando políticas de check-in de análise do código personalizadas para código gerenciado
 Uma política de check-in Especifica um conjunto de regras que devem ser executados por membros de um projeto de equipe no código-fonte antes de análise de código é verificada no controle de versão. A Microsoft fornece um conjunto de padrão *conjuntos de regras* regras de análise de código desse grupo em áreas funcionais. *Conjuntos de regras de política de check-in personalizado* especificar um conjunto de regras de análise de código que são específicos para um projeto de equipe. Um conjunto de regras é armazenado em um arquivo. RuleSet.  
@@ -35,7 +35,7 @@ Uma política de check-in Especifica um conjunto de regras que devem ser executa
  Para criar uma regra personalizada definida para um projeto de equipe, você primeiro crie uma pasta especial para o conjunto de regras de política de check-in **Gerenciador de controle do código-fonte**. Em seguida, criar o arquivo de conjunto de regras e adicioná-lo ao controle de versão. Por fim, você pode especificar o conjunto de regras como a código check-in de política de análise para o projeto de equipe.  
   
 > [!NOTE]
->  Para criar uma pasta em um projeto de equipe, primeiro você deve mapear a raiz do projeto de equipe em um local no computador local. Para obter mais informações, consulte [criar e trabalhar com espaços de trabalho (antigo)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Para criar uma pasta em um projeto de equipe, primeiro você deve mapear a raiz do projeto de equipe em um local no computador local.  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para criar a pasta de controle de versão para o conjunto de regras de política de check-in  
   
@@ -61,7 +61,7 @@ Uma política de check-in Especifica um conjunto de regras que devem ser executa
   
 1.  Em **Gerenciador de controle do código-fonte**, com o botão direito na nova pasta e, em seguida, clique em **adicionar itens à pasta**.  
   
-     Para obter mais informações, consulte [usar controle de versão](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Para obter mais informações, consulte [Git e VSTS](/vsts/git/overview).  
   
 2.  Clique na regra definir o arquivo que você criou e clique **concluir**.  
   

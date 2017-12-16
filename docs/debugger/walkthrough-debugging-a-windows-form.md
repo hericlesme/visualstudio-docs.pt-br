@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Instruções passo a passo: um Windows Form
 Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form cria um aplicativo padrão do Windows. Você pode concluir este passo a passo usando o Visual Basic, C# ou C++.  
@@ -126,7 +126,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
   
 4.  No **depurar** menu, escolha **Windows**, em seguida, **inspecionar**e clique em **inspecionar 1**.  
   
-5.  No **inspeção1** janela, clique em uma linha em branco. No **nome** coluna, digite `textBox1.Text` (se você estiver usando Visual Basic, Visual c# ou j#) ou `textBox1->Text` (se você estiver usando C++), pressione ENTER.  
+5.  No **inspeção1** janela, clique em uma linha em branco. No **nome** coluna, digite `textBox1.Text` (se você estiver usando Visual Basic ou Visual c#) ou `textBox1->Text` (se você estiver usando C++), pressione ENTER.  
   
      O **inspeção1** janela mostra o valor dessa variável entre aspas como:  
   

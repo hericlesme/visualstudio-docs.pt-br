@@ -25,11 +25,11 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: f1634250d97e83b21cccd3ada90933fc0806d35f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 A ferramenta de análise de código C/C++ fornece informações para desenvolvedores sobre defeitos possíveis no seu código-fonte C/C++. Erros de codificação comuns relatados pela ferramenta estão estouros de buffer, memória não inicializada, desreferências de ponteiro nulo e perdas de memória e recursos.  
@@ -38,7 +38,7 @@ A ferramenta de análise de código C/C++ fornece informações para desenvolved
  Para torná-lo natural para os desenvolvedores a usar a ferramenta de análise, ele é totalmente integrado dentro de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Durante o processo de compilação, todos os avisos gerados para o código-fonte aparecem na lista de erros. Você pode navegar para o código-fonte que causou o aviso, e você pode exibir informações adicionais sobre a causa e possíveis soluções do problema.  
   
 ## <a name="pragma-support"></a>#pragma suporte  
- Os desenvolvedores podem usar o `#pragma` diretiva para tratar avisos como erros; ativar ou desativar avisos e suprimir avisos para linhas individuais de código. Para obter mais informações, consulte [como: habilitar e desabilitar análise de código para avisos específicos do C/C++](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a).  
+ Os desenvolvedores podem usar o `#pragma` diretiva para tratar avisos como erros; ativar ou desativar avisos e suprimir avisos para linhas individuais de código. Para obter mais informações, consulte [como: definir propriedades de análise de código para projetos do C/C++ ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
   
 ## <a name="annotation-support"></a>Suporte de anotação  
  Anotações de melhorar a precisão da análise de código. As anotações fornecem informações adicionais sobre condições de pré e pós-em parâmetros de função e tipos de retorno. Para obter mais informações, consulte [como: especificar informações de código adicionais usando analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  

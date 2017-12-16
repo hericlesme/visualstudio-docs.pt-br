@@ -13,11 +13,11 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b16b7e9f4dba55babfc7ad2ad90affe0ca93c508
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Criando e usando políticas de check-in de análise do código
 Quando você usa o controle de versão de base da equipe (TFVC), você pode criar uma política de check-in do analysis código para o .NET Framework e projetos de código nativo (C/C++) em um projeto de equipe. Você pode usar a política de check-in do análise código para controlar e melhorar a qualidade do código é verificado para a base de código.  
@@ -43,6 +43,4 @@ Quando você usa o controle de versão de base da equipe (TFVC), você pode cria
  Explica como adicionar palavras e os tokens para o dicionário que é referenciado em regras de nomenclatura de análise de código.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Definir e impor barreiras de qualidade](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
-  
  [Melhorando a qualidade do código com políticas de check-in do projeto de equipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

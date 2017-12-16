@@ -18,11 +18,11 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92728eae21d4a3035f0396957fa643d14ef06e1c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ae326ec8172a7f0d43ca5b02c9946bd5b3398103
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: revisar uso de SuppressUnmanagedCodeSecurityAttribute
 |||  
@@ -74,7 +74,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>   
  [Diretrizes de codificação segura](/dotnet/standard/security/secure-coding-guidelines)   
- [Otimizações de segurança](http://msdn.microsoft.com/en-us/cf255069-d85d-4de3-914a-e4625215a7c0)   
  [Dados e modelagem](/dotnet/framework/data/index)  
  [Demandas de link](/dotnet/framework/misc/link-demands)  
   

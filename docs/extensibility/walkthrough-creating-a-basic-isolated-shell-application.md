@@ -17,11 +17,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4df0d9f772d92ac7f1f106b9befc0a8a2f89a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e3f8eaa704dca0b939665e900e74fc3cb5120307
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Passo a passo: Criando um aplicativo de Shell isolado básico
 Este passo a passo mostra como criar uma solução de shell isolado, personalizar a janela de ferramenta sobre da Ajuda e criar um programa de instalação que instala o shell isolado.  
@@ -78,7 +78,7 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
   
 3.  Compile a solução e inicie a depuração.  
   
-4.  Em **exibição / outras janelas**, clique em **navegador da Web**. O **navegador da Web** janela exibe a home page da Microsoft Corporation.  
+4.  Em **exibição > outras janelas**, clique em **navegador da Web**. O **navegador da Web** janela exibe a home page da Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Removendo o comando Print  
  O arquivo. VSCT em um projeto de interface do usuário do shell isolado consiste em um conjunto de declarações do formulário `<Define name=No_` *elemento*`>`, onde *elemento* é um dos comandos e menus padrão do Visual Studio.  
@@ -101,7 +101,7 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
   
 4.  Isso remove o comando print.  
   
-5.  Inicie a depuração do aplicativo de shell isolado. Verifique o **arquivo / impressão** comando não existe mais.  
+5.  Inicie a depuração do aplicativo de shell isolado. Verifique o **arquivo > imprimir** comando não existe mais.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Removendo recursos do Shell isolado  
  Você pode remover alguns dos pacotes que são carregados com o Visual Studio, editando o arquivo de .pkgundef se você não quiser esses recursos em seu aplicativo de shell isolado personalizado. Especifique o pacote em uma das subchaves da chave do registro $RootKey$ \Packages.  
@@ -147,7 +147,7 @@ Este passo a passo mostra como criar uma solução de shell isolado, personaliza
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  Iniciar a depuração e no aplicativo de shell isolado, abra o **ajuda / sobre** caixa. Você deve ver as cadeias de caracteres alteradas. O título da Ajuda/sobre caixa é o mesmo que o `AssemblyTitle` valor AssemblyInfo.  
+4.  Iniciar a depuração e no aplicativo de shell isolado, abra o **Ajuda > sobre** caixa. Você deve ver as cadeias de caracteres alteradas. O título da Ajuda/sobre caixa é o mesmo que o `AssemblyTitle` valor AssemblyInfo.  
   
 5.  As propriedades do **ajuda/sobre** caixa em si são encontrados no arquivo MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Para alterar a largura da Ajuda/sobre caixa, vá para o `AboutDialogStyle` bloquear e definir o `Width` propriedade 200:  
   

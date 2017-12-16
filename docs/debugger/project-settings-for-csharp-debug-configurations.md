@@ -14,23 +14,21 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debug configurations, C#
-- debugging [J#], debugger settings
 - project settings [Visual Studio], debug configurations
 - debug builds, project settings
 - projects [Visual Studio], debug configurations
 - project configurations, debug
 - debugging [C#], debugger settings
-- debug configurations, J#
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4310b9e84986ef50f735f0e7ddf6813d9c6fd60d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: d588f43271b127c675a6ec2fdf9e55ef388eadf2
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Definições do projeto para configurações de depuração do C#
 Você pode alterar as configurações de projeto para uma configuração de depuração c# no **páginas de propriedade** janela, conforme discutido em [configurações Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar configurações relacionadas a depuração no **páginas de propriedade** janela.  

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Usando a cor do Visual Studio  
@@ -320,7 +320,7 @@ Vários elementos de interface de usuário comuns já definidas de cores de alto
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Criar um VSPackage para as cores personalizadas  
 Um VSPackage pode controlar as fontes e cores por meio de categorias personalizadas e exibir os itens na página de propriedades de fontes e cores. Ao usar esse mecanismo, VSPackages deve implementar o [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) interface e suas interfaces associadas.  
   
-Em princípio, esse mecanismo pode ser usado para modificar todos os itens de exibição existente e as categorias que as contém. No entanto, ele não deve ser usado para modificar a categoria do Editor de texto ou seus itens de exibição. Para obter mais informações sobre a categoria do Editor de texto, consulte [visão geral de cor e de fonte](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+Em princípio, esse mecanismo pode ser usado para modificar todos os itens de exibição existente e as categorias que as contém. No entanto, ele não deve ser usado para modificar a categoria do Editor de texto ou seus itens de exibição. Para obter mais informações sobre a categoria do Editor de texto, consulte [visão geral de cor e de fonte](../font-and-color-overview.md).  
   
 Para implementar categorias personalizadas ou exibir itens, um VSPackage deve:  
   
@@ -397,7 +397,7 @@ Para fazer isso, um VSPackage deve:
   
  **OR**  
   
--   **sondar o IDE para que as alterações**. Isso pode ser feito por meio do sistema implementado [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface. Embora principalmente para suporte de persistência, o [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) método pode obter informações de fontes e cores para exibir itens. Para obter mais informações sobre configurações de fonte e cor, consulte o artigo do MSDN [acessar fonte armazenado e as configurações de cor](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **sondar o IDE para que as alterações**. Isso pode ser feito por meio do sistema implementado [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface. Embora principalmente para suporte de persistência, o [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) método pode obter informações de fontes e cores para exibir itens. Para obter mais informações sobre configurações de fonte e cor, consulte o artigo do MSDN [acessar fonte armazenado e as configurações de cor](../accessing-stored-font-and-color-settings.md).  
   
 > **Observação:** para garantir que os resultados da pesquisa estão corretos, use o [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interface para determinar se uma liberação de cache e atualização são necessárias antes de chamar os métodos de recuperação do [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interface.
   

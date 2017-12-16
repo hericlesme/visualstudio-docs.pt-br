@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99505c0d3c4ee59f6e07a5b38d5d95533ab879f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Criando modelos de Item e projeto personalizados
 O SDK do Visual Studio inclui modelos de projeto para criar um modelo de projeto personalizado e um modelo de item personalizado. Esses modelos incluem algumas substituições de parâmetro comum e criar como arquivos zip. Elas não serão implantadas automaticamente, e eles não estão disponíveis na instância experimental. Você deve copiar o zip arquivos para o local  
@@ -79,7 +79,7 @@ O SDK do Visual Studio inclui modelos de projeto para criar um modelo de projeto
   
 4.  Compile a solução e, em seguida, pressione F5. A instância experimental aparece.  
   
-5.  Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado no **novo projeto** caixa de diálogo (**arquivo / novo / projeto**), no Visual c# ou Visual Basic nó. Para um projeto de modelo de item, você deve ver o modelo de item listado na caixa de diálogo Adicionar Novo Item (no **Solution Explorer**, selecione o nó do projeto e clique em **Adicionar / Novo Item**).  
+5.  Para um projeto de modelo de projeto, você deve ver o modelo de projeto listado no **novo projeto** caixa de diálogo (**arquivo > Novo > projeto**), no Visual c# ou Visual Basic nó. Para um projeto de modelo de item, você deve ver o modelo de item listado na caixa de diálogo Adicionar Novo Item (no **Solution Explorer**, selecione o nó do projeto e clique em **Adicionar / Novo Item**).  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de modelo do Visual Studio](../ide/visual-studio-template-reference.md)

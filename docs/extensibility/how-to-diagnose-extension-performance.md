@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir o impacto de extensão na inicialização
 
@@ -48,7 +48,7 @@ Adicionamos vários recursos, a partir do Visual Studio 2015 para ajudar com a r
 
 Você pode encontrar mais detalhes sobre esses recursos nos seguintes documentos:
 
-[Regra com base em contextos de interface do usuário](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): um mecanismo com base em regra avançado criado em torno de contextos de interface de usuário permitem que você crie contextos personalizados com base em tipos de projeto, tipos e recursos. Nesses contextos personalizados podem ser usados para carregar um pacote durante cenários mais específicos, como a presença de um projeto com um recurso específico em vez de inicialização; ou permitir [comando visibilidade seja vinculado a um contexto personalizado](https://msdn.microsoft.com/en-us/library/bb166512.aspx) com base em recursos de projeto ou outros termos disponíveis, eliminando a necessidade de carregar um pacote para registrar um manipulador de consulta de status do comando.
+[Regra com base em contextos de interface do usuário](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): um mecanismo com base em regra avançado criado em torno de contextos de interface de usuário permitem que você crie contextos personalizados com base em tipos de projeto, tipos e recursos. Nesses contextos personalizados podem ser usados para carregar um pacote durante cenários mais específicos, como a presença de um projeto com um recurso específico em vez de inicialização; ou permitir [comando visibilidade seja vinculado a um contexto personalizado](visibilityconstraints-element.md) com base em recursos de projeto ou outros termos disponíveis, eliminando a necessidade de carregar um pacote para registrar um manipulador de consulta de status do comando.
 
 [Suporte de pacote assíncrono](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): A nova classe de base AsyncPackage no Visual Studio 2015 permite que os pacotes do Visual Studio ser carregado no plano de fundo assincronamente se carregar o pacote foi solicitado por um atributo de carregamento automático ou uma consulta de serviço assíncrona . Esse carregamento em segundo plano permite que o IDE permaneça responsivo enquanto a extensão é inicializada no plano de fundo e cenários críticos como carga de inicialização e a solução não seria afetados.
 

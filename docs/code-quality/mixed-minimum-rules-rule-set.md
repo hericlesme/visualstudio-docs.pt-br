@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c3e5c90818485ef8fc071f22709dde14933769a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e5b0ddc7a8f521101e09f41b5036b4233a8bcdc6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus projetos do C++ que dão suporte a Common Language Runtime, inclusive falhas potenciais de segurança e falhas de aplicativo. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que cria para seus projetos em C++ que dão suporte a Common Language Runtime.  
@@ -59,7 +59,6 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C6504](../code-quality/c6504.md)|Nulo em não ponteiro|  
 |[C6505](../code-quality/c6505.md)|MustCheck em nulo|  
 |[C6506](../code-quality/c6506.md)|Tamanho do buffer em não ponteiro ou matriz|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|Incompatibilidade nula na desreferência zero|  
 |[C6508](../code-quality/c6508.md)|Acesso para gravação na constante|  
 |[C6509](../code-quality/c6509.md)|Retorno usado em pré condição|  
 |[C6510](../code-quality/c6510.md)|Terminação nula em não ponteiro|  
@@ -70,12 +69,8 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C6516](../code-quality/c6516.md)|Nenhuma propriedade no atributo|  
 |[C6517](../code-quality/c6517.md)|Tamanho válido em buffer não legível|  
 |[C6518](../code-quality/c6518.md)|Tamanho gravável em buffer não gravável|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|Anotação inválida: o valor da propriedade 'NeedsRelease' deve ser Sim ou Não|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|Desreferência de tamanho de cadeia de caracteres inválido|  
 |[C6522](../code-quality/c6522.md)|Tipo de cadeia de caracteres de tamanho inválido|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|Parâmetro de cadeia de caracteres de tamanho inválido|  
 |[C6525](../code-quality/c6525.md)|Local inatingível da cadeia de caracteres inválido|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|Tipo de buffer de cadeia de caracteres de tamanho inválido|  
 |[C6527](../code-quality/c6527.md)|Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void|  
 |[C6530](../code-quality/c6530.md)|Estilo de cadeia de caracteres de formato não reconhecido|  
 |[C6540](../code-quality/c6540.md)|O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função|  
@@ -135,8 +130,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C28253](../code-quality/c28253.md)|Anotação inconsistente para função: o parâmetro tem outras anotações nesta instância.|  
 |[C28254](../code-quality/c28254.md)|dynamic_cast<>() não tem suporte nas anotações|  
 |[C28262](../code-quality/c28262.md)|Foi encontrado um erro de sintaxe na anotação na função, para anotação|  
-|[C28263](../code-quality/c28263.md)|Foi encontrado um erro de sintaxe em uma anotação condicional na anotação intrínseca|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|Os valores das listas de resultado devem ser constantes.|  
+|[C28263](../code-quality/c28263.md)|Foi encontrado um erro de sintaxe em uma anotação condicional na anotação intrínseca| 
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|  
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|  
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|  

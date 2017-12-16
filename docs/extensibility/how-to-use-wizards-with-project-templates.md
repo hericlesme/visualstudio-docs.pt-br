@@ -18,11 +18,11 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecbf4b95689d760a58e00a65671c13c4c0807b51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Como usar assistentes com modelos do projeto
 O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface que, quando implementada, permite que você execute o código personalizado quando um usuário cria um projeto de um modelo.  
@@ -34,12 +34,12 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> i
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Criando um projeto de modelo de projeto com um projeto do VSIX  
  Começar a criar um modelo personalizado com o projeto modelo projeto., que faz parte do SDK do Visual Studio. Neste procedimento, usaremos um projeto de modelo de projeto c#, mas também há um projeto de modelo de projeto do Visual Basic. Em seguida, você adicionar um projeto do VSIX para a solução que contém o projeto de modelo de projeto.  
   
-1.  Criar um projeto de modelo de projeto c# (no Visual Studio, **arquivo / novo / projeto / Visual C# / extensibilidade / modelo de projeto c#**). Nomeie- **MyProjectTemplate**.  
+1.  Criar um projeto de modelo de projeto c# (no Visual Studio, **arquivo > Novo > projeto > Visual C# > extensibilidade > modelo de projeto c#**). Nomeie- **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Você pode ser solicitado a instalar o SDK do Visual Studio. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Adicionar um novo projeto do VSIX (**arquivo / novo / projeto / Visual C# / extensibilidade / projeto VSIX**) na mesma solução que o projeto de modelo de projeto (no **Gerenciador de soluções**, selecione o nó da solução com o botão direito e selecione **adicionar / novo projeto**). Nomeie-o **MyProjectWizard.**  
+2.  Adicionar um novo projeto do VSIX (**arquivo > Novo > projeto > Visual C# > extensibilidade > projeto VSIX**) na mesma solução que o projeto de modelo de projeto (no **Solution Explorer**, selecione o nó da solução, o botão direito do mouse e selecione **Adicionar > Novo projeto**). Nomeie-o **MyProjectWizard.**  
   
 3.  Defina o projeto do VSIX como o projeto de inicialização. No **Solution Explorer**, selecione o nó do projeto VSIX, com o botão direito e selecione **definir como projeto de inicialização**.  
   
@@ -51,14 +51,14 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> i
   
 7.  Compile a solução e inicie a depuração. Uma segunda instância do Visual Studio é exibida. (Isso pode levar alguns minutos.)  
   
-8.  Na segunda instância do Visual Studio, tente criar um novo projeto com o novo modelo. (**Arquivo / novo / projeto / Visual C# / modelo MyProject**). O novo projeto deve aparecer com uma classe chamada **Class1**. Você criou um modelo de projeto personalizado! Pare a depuração agora.  
+8.  Na segunda instância do Visual Studio, tente criar um novo projeto com o novo modelo. (**Arquivo > Novo > projeto > Visual C# > modelo MyProject**). O novo projeto deve aparecer com uma classe chamada **Class1**. Você criou um modelo de projeto personalizado! Pare a depuração agora.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Criando um Assistente de modelo personalizado  
  Este tópico mostra como criar um assistente personalizado que abre um formulário do Windows antes do projeto é criado. O formulário permite que os usuários adicionar um valor de parâmetro personalizado que é adicionado ao código-fonte durante a criação do projeto.  
   
 1.  Configure o projeto do VSIX para permitir a criação de um assembly.  
   
-2.  No **Solution Explorer**, selecione o nó do projeto VSIX. Abaixo do Gerenciador de soluções, você deve ver o **propriedades** janela. Se você não fizer isso, selecione **exibição / janela propriedades**, ou pressione **F4**. Na janela Propriedades, selecione os campos a seguir para `true`:  
+2.  No **Solution Explorer**, selecione o nó do projeto VSIX. Abaixo do Gerenciador de soluções, você deve ver o **propriedades** janela. Se você não fizer isso, selecione **exibição > janela propriedades**, ou pressione **F4**. Na janela Propriedades, selecione os campos a seguir para `true`:  
   
     -   **IncludeAssemblyInVSIXContainer**  
   
@@ -295,7 +295,7 @@ namespace $safeprojectname$
   
 1.  Recompile a solução e iniciar a depuração. Uma segunda instância do Visual Studio deve ser exibida.  
   
-2.  Crie um novo projeto de MyProjectTemplate. (**Arquivo / novo / projeto / Visual C# / MyProjectTemplate**)  
+2.  Crie um novo projeto de MyProjectTemplate. (**Arquivo > Novo > projeto > Visual C# > MyProjectTemplate**)  
   
 3.  No **novo projeto** caixa de diálogo, localize seu modelo, digite um nome e clique em **Okey**.  
   

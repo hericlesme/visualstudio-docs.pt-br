@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemas de banco de dados compatível para o Visual Studio
 
@@ -30,7 +30,7 @@ Para um sistema de banco de dados possam ser acessadas de aplicativos .NET e fiq
 
 Se você estiver usando APIs de armazenamento do Azure, instale os emuladores de armazenamento do Azure em sua máquina local durante o desenvolvimento para evitar encargos até que você está pronto para implantar na produção. Para obter mais informações, consulte [usar o emulador de armazenamento do Azure para desenvolvimento e testes](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
 
-A lista a seguir inclui alguns dos sistemas de banco de dados mais populares que podem ser usados em projetos do Visual Studio. A lista não é exaustiva. Para obter uma lista de fornecedores que oferecem provedores de dados ADO.NET que habilitar a integração profunda com ferramentas do Visual Studio, consulte [provedores de dados ADO.NET](https://msdn.microsoft.com/en-us/library/dd363565.aspx).
+A lista a seguir inclui alguns dos sistemas de banco de dados mais populares que podem ser usados em projetos do Visual Studio. A lista não é exaustiva. Para obter uma lista de fornecedores que oferecem provedores de dados ADO.NET que habilitar a integração profunda com ferramentas do Visual Studio, consulte [provedores de dados ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 

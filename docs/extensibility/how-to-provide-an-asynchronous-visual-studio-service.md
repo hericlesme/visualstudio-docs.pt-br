@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Como: fornece um serviço assíncrono do Visual Studio
 Se você deseja obter um serviço sem bloquear o thread de interface do usuário, você deve criar um serviço assíncrono e carregar o pacote em um thread em segundo plano. Para essa finalidade, você pode usar um <xref:Microsoft.VisualStudio.Shell.AsyncPackage> em vez de <xref:Microsoft.VisualStudio.Shell.Package>e adicione o serviço com os métodos assíncronos especial do pacote assíncrona  
@@ -24,9 +24,9 @@ Se você deseja obter um serviço sem bloquear o thread de interface do usuário
   
 ## <a name="implementing-an-asynchronous-service"></a>Implementar um serviço assíncrono  
   
-1.  Criar um projeto do VSIX (**arquivo / novo / projeto / Visual C# / Extensiblity / projeto VSIX**). Nomeie o projeto **TestAsync**.  
+1.  Criar um projeto do VSIX (**arquivo > Novo > projeto > Visual C# > Extensiblity > projeto VSIX**). Nomeie o projeto **TestAsync**.  
   
-2.  Adicione um VSPackage ao projeto. Selecione o nó do projeto no **Solution Explorer** e clique em **adicionar / novo item / Visual C# itens / extensibilidade / pacote do Visual Studio**. Nomeie esse arquivo **TestAsyncPackage.cs**.  
+2.  Adicione um VSPackage ao projeto. Selecione o nó do projeto no **Solution Explorer** e clique em **Adicionar > novo item > Visual C# itens > extensibilidade > pacote do Visual Studio**. Nomeie esse arquivo **TestAsyncPackage.cs**.  
   
 3.  Em TestAsyncPackage.cs, altere o pacote para herdar de AsyncPackage em vez de pacote:  
   

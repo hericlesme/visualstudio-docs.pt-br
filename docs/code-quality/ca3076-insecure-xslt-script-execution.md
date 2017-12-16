@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bf7da81e41a00bd0d673e3522f944dc17a549c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a304d5b405431bca78b3978e25b00d3cf7cc96c2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: A execução do Script XSLT insegura
 |||  
@@ -27,10 +27,10 @@ ms.lasthandoff: 10/31/2017
 |Alteração Significativa|Não separáveis|  
   
 ## <a name="cause"></a>Causa  
- Se você executar [transformações de linguagem de folhas de estilo extensível (XSLT)](https://support.microsoft.com/en-us/kb/313997) em aplicativos .NET de maneira insegura, o processador pode [resolver referências URI não confiáveis](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) que pode divulgar confidenciais informações para os invasores, levando a ataques de negação de serviço e entre sites.  
+ Se você executar [transformações de linguagem de folhas de estilo extensível (XSLT)](https://support.microsoft.com/en-us/kb/313997) em aplicativos .NET de maneira insegura, o processador pode resolver referências URI não confiáveis que podem divulgar informações confidenciais para invasores, levando a Ataques de negação de serviço e entre sites.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
- [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) é um padrão de World Wide Web Consortium (W3C) para transformar dados XML. XSLT normalmente é usada para gravar folhas de estilo para transformar dados XML em outros formatos, como HTML, fixa texto de comprimento, texto separado por vírgula ou outro formato XML. Embora proibido por padrão, você poderá habilitá-lo para seu projeto.  
+ **XSLT** é um padrão de World Wide Web Consortium (W3C) para transformar dados XML. XSLT normalmente é usada para gravar folhas de estilo para transformar dados XML em outros formatos, como HTML, fixa texto de comprimento, texto separado por vírgula ou outro formato XML. Embora proibido por padrão, você poderá habilitá-lo para seu projeto.  
   
  Para garantir que você não estiver expondo a superfície de ataque, essa regra sempre que dispara o XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> recebe instâncias combinação insegura de <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, que permite o processamento de um script mal-intencionado.  
   

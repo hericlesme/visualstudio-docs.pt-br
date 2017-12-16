@@ -13,41 +13,39 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8ed511eed7b0ace46bbc61c1d486ade608d4b5a5
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c02ae1ba7091871f92d1fdf00f55f7d0ded6024f
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar os arquivos. mdf
-Este tópico descreve as opções para atualizar o arquivo de banco de dados (. mdf) depois de instalar uma versão mais recente do Visual Studio. Ele inclui instruções para as seguintes tarefas:  
-  
--   Atualizar um arquivo de banco de dados para usar uma versão mais recente do SQL Server Express LocalDB  
-  
--   Atualizar um arquivo de banco de dados para usar uma versão mais recente do SQL Server Express  
-  
--   Trabalhar com um arquivo de banco de dados no Visual Studio, mas manter a compatibilidade com uma versão mais antiga do SQL Server Express ou o LocalDB  
-  
--   Verifique o SQL Server Express o mecanismo de banco de dados padrão  
-  
-Você pode usar o Visual Studio para abrir um projeto que contém um arquivo de banco de dados (. mdf) que foi criado usando uma versão mais antiga do SQL Server Express ou LocalDB. No entanto, para continuar a desenvolver o projeto no Visual Studio, você deve ter a versão do SQL Server Express ou LocalDB instalada no mesmo computador que o Visual Studio, ou você deve atualizar o arquivo de banco de dados. Se você atualizar o arquivo de banco de dados, você não poderá acessá-lo usando versões anteriores do SQL Server Express ou LocalDB.  
-  
-Você também pode ser solicitado para atualizar um arquivo de banco de dados que foi criado por meio de uma versão anterior do SQL Server Express ou LocalDB se a versão do arquivo não é compatível com a instância do SQL Server Express ou LocalDB instalado no momento. Para resolver o problema, o Visual Studio solicitará que você atualizar o arquivo.  
-  
+
+Este tópico descreve as opções de atualização de um arquivo de banco de dados (. mdf) depois de instalar uma versão mais recente do Visual Studio. Ele inclui instruções para as seguintes tarefas:
+
+- Atualizar um arquivo de banco de dados para usar uma versão mais recente do SQL Server Express LocalDB
+
+- Atualizar um arquivo de banco de dados para usar uma versão mais recente do SQL Server Express
+
+- Trabalhar com um arquivo de banco de dados no Visual Studio, mas manter a compatibilidade com uma versão mais antiga do SQL Server Express ou o LocalDB
+
+- Verifique o SQL Server Express o mecanismo de banco de dados padrão
+
+Você pode usar o Visual Studio para abrir um projeto que contém um arquivo de banco de dados (. mdf) que foi criado usando uma versão mais antiga do SQL Server Express ou LocalDB. No entanto, para continuar a desenvolver o projeto no Visual Studio, você deve ter a versão do SQL Server Express ou LocalDB instalada no mesmo computador que o Visual Studio, ou você deve atualizar o arquivo de banco de dados. Se você atualizar o arquivo de banco de dados, você não poderá acessá-lo usando versões anteriores do SQL Server Express ou LocalDB.
+
+Você também pode ser solicitado para atualizar um arquivo de banco de dados que foi criado por meio de uma versão anterior do SQL Server Express ou LocalDB se a versão do arquivo não é compatível com a instância do SQL Server Express ou LocalDB instalado no momento. Para resolver o problema, o Visual Studio solicitará que você atualizar o arquivo.
+
 > [!IMPORTANT]
-> É recomendável que você faça backup do arquivo de banco de dados antes de atualizá-lo.  
-  
+> É recomendável que você faça backup do arquivo de banco de dados antes de atualizá-lo.
+
 > [!WARNING]
 > Se você atualizar um arquivo. mdf que foi criado no LocalDB 2014 (V12) de 32 bits para o LocalDB 2016 (V13) ou posterior, você não poderá abrir o arquivo novamente na versão de 32 bits do LocalDB.
-  
-Antes de atualizar um banco de dados, considere os seguintes critérios:  
+
+Antes de atualizar um banco de dados, considere os seguintes critérios:
   
 -   Não atualize se desejar trabalhar em seu projeto em uma versão mais antiga e uma versão mais recente do Visual Studio.  
   
@@ -116,4 +114,5 @@ Você também pode modificar uma conexão de SQL Server Express para usar LocalD
     SQL Server Express será o mecanismo de banco de dados padrão para seus aplicativos.
 
 ## <a name="see-also"></a>Consulte também
+
 [Acessando dados no Visual Studio](accessing-data-in-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
-title: "Introdução ao depurador | Microsoft Docs"
+title: "Aprenda a depuração usando o Visual Studio | Microsoft Docs"
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Introdução ao depurador do Visual Studio
+# <a name="learn-to-debug-using-visual-studio"></a>Aprenda a depuração usando o Visual Studio
 
 Este tópico apresenta os recursos do depurador do Visual Studio no passo a passo. Se você desejar um modo de exibição de alto nível dos recursos do depurador, consulte [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md).
 
@@ -138,19 +138,81 @@ Basicamente, usamos os atalhos de teclado aqui, porque ele é uma boa maneira de
 
      ![Resultados do passo a passo do método Update](../debugger/media/dbg-tour-update-method.png "etapa no método de atualização")
 
-    Aqui, podemos encontrar um código mais que pareça interessante; o aplicativo está obtendo todos os arquivos jpg que residem em um diretório específico e, em seguida, criar um objeto de foto para cada arquivo. Esse código nos dá uma boa oportunidade para iniciar inspecionar o estado do aplicativo (variáveis) com o depurador.
+    Aqui, podemos encontrar um código mais que pareça interessante; o aplicativo está obtendo todos os arquivos jpg que residem em um diretório específico e, em seguida, criar um objeto de foto para cada arquivo. Esse código nos dá uma boa oportunidade para iniciar inspecionar o estado do aplicativo (variáveis) com o depurador. Faremos que nas próximas seções deste tutorial.
 
     Recursos que permitem que você inspecione as variáveis são um dos recursos mais úteis do depurador e há diferentes maneiras de fazer isso. Geralmente, quando você tentar depurar um problema, você está tentando descobrir se variáveis estão armazenando os valores que você espera que eles têm em um determinado momento.
 
+## <a name="examine-the-call-stack"></a>Examinar a pilha de chamadas
+
+- Enquanto está em pausa no `Update` método, clique o **pilha de chamadas** janela, por padrão, abrir no painel inferior direito.
+
+     ![Examinar a pilha de chamadas](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    O **pilha de chamadas** janela mostra a ordem em que estão sendo chamadas funções e métodos. A linha superior mostra a função atual (o `Update` método no aplicativo do tour). A segunda linha mostra que `Update` foi chamado a partir de `Path.set` propriedade e assim por diante.
+
+    >  [!NOTE]
+    > O **pilha de chamadas** janela é semelhante à perspectiva de depuração em alguma IDEs como Eclipse.
+
+    A pilha de chamadas é uma boa maneira de examinar e compreender o fluxo de execução de um aplicativo.
+
+    Você pode clicar duas vezes uma linha de código para consultar esse código-fonte e que também altera o escopo atual que está sendo inspecionado pelo depurador. Esta ação não Avançar o depurador.
+
+    Você também pode usar os menus de atalho do **pilha de chamadas** janela para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificadas, promova o depurador usando **executar até o Cursor**e examine o código-fonte. Para obter mais informações, consulte [como: examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="step-out"></a>Sair
+
+Digamos que você tenha examinando o `Update` método Data.cs e você deseja obter sairá da função, mas permanecem no depurador. Você pode fazer isso usando o **sair** comando.
+
+1. Pressione Shift + F11 (ou **Depurar > Sair**).
+
+     Este comando retoma a execução do aplicativo (e avança o depurador) até que retorna a função atual.
+
+     Você deve estar no `Update` chamada de método no Data.cs.
+
+2. Pressione Shift + F11 novamente e o depurador vai a pilha de chamadas de volta para o `OnApplicationStartup` manipulador de eventos.
+
+## <a name="run-to-cursor"></a>Executar até o cursor
+
+1. Escolha o **parar depuração** botão vermelho ![parar depuração](../debugger/media/dbg-tour-stop-debugging.png "parar depuração") ou Shift + F5.
+
+2. No `Update` método Data.cs, com o botão direito do `Add` método chamar e escolha **executar até o Cursor**. Esse comando inicia a depuração e define um ponto de interrupção temporário na linha atual do código.
+
+     ![Use a execução para o recurso de Cursor](../debugger/media/dbg-tour-run-to-cursor.png "executar até o Cursor")
+
+    Você deve ser pausado no ponto de interrupção `MainWindow` (já que é o primeiro ponto de interrupção é definido).
+
+3. Pressione F5 para ir para o `Add` método em que você selecionou **executar até o Cursor**.
+
+    Esse comando é útil quando você estiver editando o código e deseja definir um ponto de interrupção temporário rapidamente e iniciar o depurador.
+
+## <a name="change-the-execution-flow"></a>Alterar o fluxo de execução
+
+1. Com o depurador em pausa no `Add` chamada de método, use o mouse para capturar a seta amarela (o ponteiro de execução) à esquerda e mova a seta amarela para cima de uma linha para o `foreach` loop.
+
+     ![Mova o ponteiro de execução](../debugger/media/dbg-tour-move-the-execution-pointer.gif "Move o ponteiro de execução")
+
+    Alterando o fluxo de execução, você pode fazer coisas como caminhos de execução de código diferente de teste ou execute novamente o código sem reiniciar o depurador.
+
+2. Agora, pressione F5.
+
+    Você pode ver as imagens adicionadas para a janela do aplicativo. Porque são novamente o código de `foreach` loop, algumas das imagens foram adicionadas duas vezes!
+    
+    > [!WARNING]
+    > Muitas vezes você precisa ter cuidado com esse recurso, e você ver um aviso na dica de ferramenta. Você pode ver outros avisos muito. Mover o ponteiro não é possível reverter o aplicativo para um estado anterior do aplicativo.
+
 ## <a name="inspect-variables-with-data-tips"></a>Inspecionar variáveis com dicas de dados
 
-1. Para pausar o depurador no `Add` chamada de método, passe o mouse sobre o `Add` chamada de método e clique no **executar em, clique em** botão ![executar em, clique em](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Abra Data.cs no aplicativo de demonstração do Visualizador de fotos, com o botão direito do `private void Update` declaração de função e escolha **executar até o Cursor** (parar o aplicativo primeiro se ele já está em execução).
 
-2. Agora, passe o mouse sobre o objeto de arquivo (`f`) e você verá o valor de propriedade padrão, o nome do arquivo `market 031.jpg`.
+    Isso irá pausar o aplicativo com o depurador anexado. Isso nos permite examinar seu estado.
+
+2. Passe o mouse sobre o `Add` chamada de método e clique no **executar em, clique em** botão ![executar em, clique em](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+
+3. Agora, passe o mouse sobre o objeto de arquivo (`f`) e você verá o valor de propriedade padrão, o nome do arquivo `market 031.jpg`.
 
      ![Exibir uma dica de dados](../debugger/media/dbg-tour-data-tips.gif "exibir uma dica de dados")
 
-3. Expanda o objeto para ver todas as suas propriedades, como o `FullPath` propriedade.
+4. Expanda o objeto para ver todas as suas propriedades, como o `FullPath` propriedade.
 
     Geralmente, ao depurar, você deseja uma maneira rápida de verificar os valores de propriedade em objetos e as dicas de dados são uma boa maneira de fazer isso.
 
@@ -192,66 +254,6 @@ Basicamente, usamos os atalhos de teclado aqui, porque ele é uma boa maneira de
 
     Para obter mais informações, consulte [definir uma inspeção usando a observação e QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>Examinar a pilha de chamadas
-
-1. Clique o **pilha de chamadas** janela, por padrão, abrir no painel inferior direito.
-
-     ![Examinar a pilha de chamadas](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    O **pilha de chamadas** janela mostra a ordem em que estão sendo chamadas funções e métodos. A linha superior mostra a função atual (o `Update` método no aplicativo do tour). A segunda linha mostra que `Update` foi chamado a partir de `Path.set` propriedade e assim por diante.
-
-    >  [!NOTE]
-    > O **pilha de chamadas** janela é semelhante à perspectiva de depuração em alguma IDEs como Eclipse.
-
-    A pilha de chamadas é uma boa maneira de examinar e compreender o fluxo de execução de um aplicativo.
-
-    Você pode clicar duas vezes uma linha de código para consultar esse código-fonte e que também altera o escopo atual que está sendo inspecionado pelo depurador. Esta ação não Avançar o depurador.
-
-    Você também pode usar os menus de atalho do **pilha de chamadas** janela para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificadas, promova o depurador usando **executar até o Cursor**e examine o código-fonte. Para obter mais informações, consulte [como: examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
-
-## <a name="change-the-execution-flow"></a>Alterar o fluxo de execução
-
-1. Com o depurador em pausa no `Add` chamada de método, use o mouse para capturar a seta amarela (o ponteiro de execução) à esquerda e mova a seta amarela para cima de uma linha para o `foreach` loop.
-
-     ![Mova o ponteiro de execução](../debugger/media/dbg-tour-move-the-execution-pointer.gif "Move o ponteiro de execução")
-
-    Alterando o fluxo de execução, você pode fazer coisas como caminhos de execução de código diferente de teste ou execute novamente o código sem reiniciar o depurador.
-
-2. Agora, pressione F5.
-
-    Você pode ver as imagens adicionadas para a janela do aplicativo. Porque são novamente o código de `foreach` loop, algumas das imagens foram adicionadas duas vezes!
-    
-    > [!WARNING]
-    > Muitas vezes você precisa ter cuidado com esse recurso, e você ver um aviso na dica de ferramenta. Você pode ver outros avisos muito. Mover o ponteiro não é possível reverter o aplicativo para um estado anterior do aplicativo.
-
-## <a name="run-to-cursor"></a>Executar até o cursor
-
-1. Escolha o **parar depuração** botão vermelho ![parar depuração](../debugger/media/dbg-tour-stop-debugging.png "parar depuração") ou Shift + F5.
-
-2. No `Update` método, com o botão direito do `Add` método chamar e escolha **executar até o Cursor**. Esse comando inicia a depuração e define um ponto de interrupção temporário na linha atual do código.
-
-     ![Use a execução para o recurso de Cursor](../debugger/media/dbg-tour-run-to-cursor.png "executar até o Cursor")
-
-    Você deve ser pausado no ponto de interrupção `MainWindow` (já que é o primeiro ponto de interrupção.
-
-3. Pressione F5 para ir para o `Add` método em que você selecionou **executar até o Cursor**.
-
-    Esse comando é útil quando você estiver editando o código e deseja definir um ponto de interrupção temporário rapidamente e iniciar o depurador.
-
-## <a name="step-out"></a>Sair
-
-Digamos que você tenha examinando o `Update` método Data.cs e você deseja obter sairá da função, mas permanecem no depurador. Você pode fazer isso usando o **sair** comando.
-
-1. Pressione Shift + F11 (ou **Depurar > Sair**).
-
-     Este comando retoma a execução do aplicativo (e avança o depurador) até que retorna a função atual.
-
-     Você deve estar no `Update` chamada de método no Data.cs.
-
-2. Pressione Shift + F11 novamente e o depurador vai a pilha de chamadas de volta para o `OnApplicationStartup` manipulador de eventos.
-
-3. Pressione F5 para continuar.
-
 ## <a name="examine-an-exception"></a>Examine a exceção
 
 1. Na janela do aplicativo em execução, exclua o texto no **caminho** caixa de entrada e selecione o **alteração** botão.
@@ -283,6 +285,7 @@ Para saber mais sobre os recursos do depurador, consulte [depurador dicas e truq
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>Consulte também  
- [Depurando no Visual Studio](../debugger/index.md)  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>Consulte também
+
+[Depurando no Visual Studio](../debugger/index.md)  
+[Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)

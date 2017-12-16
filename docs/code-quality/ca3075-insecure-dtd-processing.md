@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9660e2dc94cf23269b923c6ba5426a7cc384161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 955587b0fbf9a0fa48d2a7083bea04e102b7a622
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Processamento do DTD insegura
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  Se você usar insegura <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instâncias ou referência de fontes de entidade externa, o analisador podem aceitar não confiáveis de entrada e divulgar informações confidenciais para os invasores.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
- Um [definição de tipo de documento (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra buscas propriedades e instâncias onde os dados não confiáveis são aceitos para alertar os desenvolvedores sobre potencial [divulgação de informações](/dotnet/framework/wcf/feature-details/information-disclosure) ameaças, que podem levar à [dos (negação de serviço)](/dotnet/framework/wcf/feature-details/denial-of-service) ataques. Essa regra dispara quando:  
+ Um *definição de tipo de documento (DTD)* é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra buscas propriedades e instâncias onde os dados não confiáveis são aceitos para alertar os desenvolvedores sobre potencial [divulgação de informações](/dotnet/framework/wcf/feature-details/information-disclosure) ameaças, que podem levar à [dos (negação de serviço)](/dotnet/framework/wcf/feature-details/denial-of-service) ataques. Essa regra dispara quando:  
   
 -   DtdProcessing está ativado o <xref:System.Xml.XmlReader> instância, o que resolve entidades externas de XML usando <xref:System.Xml.XmlUrlResolver>.  
   
@@ -60,11 +60,11 @@ ms.lasthandoff: 10/31/2017
   
 -   Desabilitar o processamento de DTD, se você estiver lidando com fontes não confiáveis, definindo o <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propriedade **true** .  
   
--   Classe XmlTextReader tem uma demanda de herança de confiança total. Consulte [demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obter mais informações.  
+-   Classe XmlTextReader tem uma demanda de herança de confiança total.  
   
  .NET 4 e posterior  
   
--   Evite habilitar DtdProcessing se você estiver lidando com fontes não confiáveis, definindo a propriedade DtdProcessing como [proibir ou ignorar](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
+-   Evite habilitar DtdProcessing se você estiver lidando com fontes não confiáveis, definindo o <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> propriedade **proibir** ou **ignorar**.  
   
 -   Certifique-se de que o método Load () usa uma instância de XmlReader em todos os casos InnerXml.  
   

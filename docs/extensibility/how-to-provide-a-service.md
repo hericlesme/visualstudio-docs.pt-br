@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3c37f4dc215027752da9c16fbdfba44b4e10c41c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-a-service"></a>Como: fornecer um serviço
 Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para fornecer um serviço, um VSPackage deve registrar o serviço com o Visual Studio e adicione o serviço.  
@@ -31,9 +31,9 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
   
 #### <a name="implementing-a-service"></a>Implementar um serviço  
   
-1.  Criar um projeto do VSIX (**arquivo / novo / projeto / Visual C# / Extensiblity / projeto VSIX**).  
+1.  Criar um projeto do VSIX (**arquivo > Novo > projeto > Visual C# > Extensiblity > projeto VSIX**).  
   
-2.  Adicione um VSPackage ao projeto. Selecione o nó do projeto no **Solution Explorer** e clique em **adicionar / novo item / Visual C# itens / extensibilidade / pacote do Visual Studio**.  
+2.  Adicione um VSPackage ao projeto. Selecione o nó do projeto no **Solution Explorer** e clique em **Adicionar > novo item > Visual C# itens > extensibilidade > pacote do Visual Studio**.  
   
 3.  Para implementar um serviço, você precisa criar três tipos:  
   
@@ -109,7 +109,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
   
 2.  Implemente o método de retorno de chamada, que deve criar e retornar o serviço ou null se ela não pode ser criada.  
   
-    ```  
+    ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  

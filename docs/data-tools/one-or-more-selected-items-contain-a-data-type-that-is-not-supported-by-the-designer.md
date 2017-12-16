@@ -12,14 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31e42bfcaf8904932d4ea864a608c943f638428c
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 3da920f2beae4a611bdf773b7ff9abf562e5eb95
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Um ou mais itens selecionados contêm um tipo de dados que não é suportado pelo designer
-Arrastado de um ou mais dos itens de **Server Explorer**/**Pesquisador de objetos de banco de dados** até o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] contém um tipo de dados que não há suporte para o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] (por exemplo, [Tipos CLR definidos pelo usuário](http://msdn.microsoft.com/Library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2)).  
+Arrastado de um ou mais dos itens de **Server Explorer**/**Pesquisador de objetos de banco de dados** para o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] contém um tipo de dados que não há suporte para o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] por exemplo, [Tipos CLR definidos pelo usuário](/dotnet/framework/data/adonet/sql/clr-user-defined-types).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
@@ -28,5 +28,5 @@ Arrastado de um ou mais dos itens de **Server Explorer**/**Pesquisador de objeto
 2.  Arraste o modo de exibição de **Server Explorer**/**Pesquisador de objetos de banco de dados** no designer.  
   
 ## <a name="see-also"></a>Consulte também
-[Mensagens de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

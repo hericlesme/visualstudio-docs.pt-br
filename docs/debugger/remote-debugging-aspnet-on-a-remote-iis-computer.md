@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 2f1fbc41976afc6a906757fa5946b82abdd8bd02
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Depuração remota ASP.NET Core em um computador IIS remoto no Visual Studio de 2017
 Para depurar um aplicativo ASP.NET que tenha sido implantado no IIS, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo e, em seguida, anexe ao seu aplicativo em execução do Visual Studio.
@@ -35,11 +35,11 @@ Não há suporte para a depuração entre dois computadores conectados por meio 
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Criar o aplicativo do ASP.NET Core no computador Visual Studio de 2017 
 
-1. Crie um novo aplicativo ASP.NET Core. (**Arquivo > Novo > projeto**, em seguida, selecione **Visual C# > Web > aplicativo Web do ASP.NET Core (.NET Core)**).
+1. Crie um novo aplicativo ASP.NET Core. (**Arquivo > Novo > projeto**, em seguida, selecione **Visual C# > Web > aplicativo Web do ASP.NET Core**).
 
     No **ASP.NET Core** seção de modelos, selecione **aplicativo Web**.
 
-2. Verifique se **Habilitar suporte de Docker** é **não** selecionado e que **autenticação** é definido como **sem autenticação**.
+2. Verifique se **ASP.NET Core 2.0** for selecionada, que **Habilitar suporte de Docker** é **não** selecionado e que **autenticação** é definido como **Nenhuma autenticação**.
 
 3. Nomeie o projeto **MyASPApp** e clique em **Okey** para criar a nova solução.
 

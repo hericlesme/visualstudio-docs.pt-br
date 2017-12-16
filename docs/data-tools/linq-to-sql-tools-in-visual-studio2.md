@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cba3d5568ee2fa2b4af0eb9c10995c813fe09c01
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL Tools no Visual Studio
 O LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lançada pela Microsoft. Ela funciona bem em cenários básicos e continua a ter suporte no Visual Studio, mas ele não está mais em desenvolvimento ativo. Use o LINQ to SQL durante a manutenção de um aplicativo herdado que já está usando ou em aplicativos simples que usam o SQL Server e não exigem o mapeamento de várias tabela. Em geral, novos aplicativos devem usar o Entity Framework quando uma camada de mapeador relacional de objeto é necessária.  
@@ -62,7 +62,7 @@ O [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.m
  Como outros objetos, classes de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] podem usar a herança e ser derivadas de outras classes. Em uma base de dados, as relações de herança são criadas de várias maneiras. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Para obter mais informações, consulte [como: configurar a herança usando Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).  
   
 ## <a name="linq-to-sql-queries"></a>Consultas LINQ to SQL  
- As classes de entidade criadas pelo [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] são projetados para uso com [LINQ (consulta integrada à linguagem)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d). Para obter mais informações, consulte [como: consulta para obter informações](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
+ As classes de entidade criadas pelo [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] são projetados para uso com [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/). Para obter mais informações, consulte [como: consulta para obter informações](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
   
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Separando o DataContext e o código de classe de entidade gerados em diferentes namespaces  
  O [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] fornece o **contexto Namespace** e **entidade Namespace** propriedades no <xref:System.Data.Linq.DataContext>. Essas propriedades que determinam o namespace <xref:System.Data.Linq.DataContext> e o código de classe de entidade são gerados. Por padrão, essas propriedades são vazios e <xref:System.Data.Linq.DataContext> e classes de entidade são gerados no namespace do aplicativo. Para gerar o código em um namespace diferente do namespace do aplicativo, insira um valor para o **contexto Namespace** e/ou **entidade Namespace** propriedades.
