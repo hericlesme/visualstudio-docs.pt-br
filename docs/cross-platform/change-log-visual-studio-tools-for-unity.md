@@ -12,14 +12,47 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3f5569a6f6d5bb51db61292e3ba12b16dbc201b9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Log de alterações (Ferramentas do Visual Studio para Unity)
 Log de alterações de Ferramentas do Visual Studio para Unity.  
+
+## <a name="3502"></a>3.5.0.2
+ Lançado em 04/12/2017
+
+### <a name="new-features"></a>Novos recursos  
+
+-   **Integração:**  
+
+    -   Projetos do Unity agora são automaticamente recarregados no Visual Studio quando você adiciona ou remove um script do Unity.
+
+-   **Depurador:**  
+
+    -   Adicionada uma opção para usar o depurador Mono compartilhado pelo Xamarin e pelo Visual Studio para Mac para depurar o Editor Unity.
+
+    -   Suporte adicionado para arquivos de símbolo de depuração portátil.
+
+### <a name="bug-fixes"></a>Correções de bug  
+
+-   **Integração:**  
+
+    -   Problemas de dependências de instalação corrigidos.
+
+    -   O menu de ajuda da API de unidade fixa não está sendo exibido.
+    
+-   **Geração do Projeto:**  
+
+    -   Correção da geração de projetos do player ao trabalhar em um jogo UWP com o back-end IL2CPP/.NET 4.6.
+    
+    -   Correção da extensão .dll extra adicionada por engano ao arquivo do assembly.
+    
+    -   Correção do uso de um nível específico de compatibilidade da API do projeto em vez do global.
+    
+    -   Não force o sinalizador AllowAttachedDebuggingOfEditor do Unity, uma vez que o padrão agora é ‘true’.
 
 ## <a name="3402"></a>3.4.0.2
  Lançada em 19/09/2017

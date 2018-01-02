@@ -24,6 +24,7 @@
 ### [Introdução ao WPF](getting-started-with-wpf.md)
 #### [Introdução ao WPF](introduction-to-wpf.md)
 #### [Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF](walkthrough-my-first-wpf-desktop-application2.md)
+#### [Criar um aplicativo do WPF com C# ou Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [Recursos da comunidade do WPF](wpf-community-resources.md)
 #### [Vinculação de dados de WPF com LINQ to XML](wpf-data-binding-with-linq-to-xml.md)
 ##### [Visão geral da vinculação de dados do WPF com LINQ to XML](wpf-data-binding-with-linq-to-xml-overview.md)

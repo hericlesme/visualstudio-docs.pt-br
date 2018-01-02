@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 25d3227bcf8a18a2fc6ba68c194e9cac75b2e919
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurar e instalar o Visual Studio para Mac
 
@@ -22,7 +22,7 @@ Para começar a desenvolver aplicativos de plataforma cruzada nativos após baix
 Para trabalhar com iOS no Visual Studio você precisará do seguinte:
 
 * Um Mac com macOS Sierra 10.12 ou superior
-* Xcode 8.3
+* Xcode 8.3 ou posterior. A versão estável mais recente geralmente é recomendada.
 * Uma ID da Apple. Se você ainda não tiver uma ID da Apple, crie uma nova em https://appleid.apple.com. Será necessário ter uma ID da Apple para instalar e entrar no Xcode.
 
 ## <a name="install"></a>Instalar o

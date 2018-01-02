@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 6879d29b1e8c36ce9456fc44cf738a57603a6d50
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: cfcb85704302303704ef9b4bb1affc60031793d9
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -74,6 +74,9 @@ Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de pro
 1. Na parte superior do site, escolha **Sobre** para ver o diretório de mensagem que você adicionou no método `OnGet()` da página **Sobre**.
 
 1. Feche o navegador da Web.
+
+> [!NOTE]
+> Se você receber uma mensagem de erro que diz **Não é possível se conectar ao servidor Web ‘IIS Express’**, feche o Visual Studio e, então, abra-o usando a opção **Executar como administrador** ao clicar com o botão direito do mouse ou no menu de contexto. Em seguida, execute o aplicativo novamente.
 
 Parabéns por concluir este guia de início rápido! Esperamos que você tenha aprendido um pouco sobre o IDE do Visual Studio. Se você quiser se aprofundar mais em seus recursos, continue com um tutorial na seção **Tutoriais** do sumário.
 

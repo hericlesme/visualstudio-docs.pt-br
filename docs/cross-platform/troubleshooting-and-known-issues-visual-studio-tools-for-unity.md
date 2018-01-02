@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ede4bd9594e3bb19f081d8a7343f5a0c08003cad
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solucionando problemas e problemas conhecidos (Visual Studio Tools for Unity)
 Nesta seção, você encontrará soluções para problemas comuns das Ferramentas do Visual Studio para Unity, as descrições de problemas conhecidos e aprenderá como ajudar a melhorar as Ferramentas do Visual Studio para Unity por meio de relatórios de erro.  
@@ -62,7 +62,8 @@ Se o Visual Studio não conseguir encontrar um local de origem para um ponto de 
 ### <a name="unable-to-attach"></a>Não é possível anexar
 -   Tente desabilitar o antivírus temporariamente ou criar regras de exclusão para o VS e o Unity.
 -   Tente desabilitar o firewall temporariamente ou criar regras para permitir a rede TCP/UDP entre o Unity e o VS.
--   Identificamos que programas como o Visualizador de Equipe estão interferindo na detecção do processo. Tente interromper temporariamente algum software adicional para ver se algo é alterado.
+-   Identificamos que programas, como o Team Viewer, estão interferindo na detecção do processo. Tente interromper temporariamente algum software adicional para ver se algo é alterado.
+-   Não renomeie o executável principal do Unity, uma vez que o VSTU está monitorando apenas os processos de “Unity.exe”.
 
 ### <a name="unable-to-debug-android-players"></a>Não é possível depurar players Android
 O multicast é usado para a detecção de player (que é o mecanismo padrão usado pelo Unity), mas depois disso, é usada uma conexão TCP regular para anexar o depurador. A fase de detecção é o principal problema para dispositivos Android.

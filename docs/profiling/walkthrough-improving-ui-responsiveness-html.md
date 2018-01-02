@@ -22,14 +22,14 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4747a1e2c0d9d7c20fe0856becb4cd42d1e847
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface de usuário (HTML)
-Este passo a passo o orienta no processo de identificação e correção de um problema de desempenho usando o [Criador de perfil de capacidade de resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md). O criador de perfil está disponível no Visual Studio para aplicativos universais do Windows e os aplicativos UWP que usam JavaScript. Neste cenário, você cria um aplicativo de teste de desempenho que atualiza os elementos DOM com muita frequência e usa o criador de perfil para identificar e corrigir esse problema.  
+Este passo a passo o orienta no processo de identificação e correção de um problema de desempenho usando o [Criador de perfil de capacidade de resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md). O criador de perfil está disponível no Visual Studio para os aplicativos UWP que usam o JavaScript. Neste cenário, você cria um aplicativo de teste de desempenho que atualiza os elementos DOM com muita frequência e usa o criador de perfil para identificar e corrigir esse problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Criando e executando o aplicativo de teste de desempenho  
   

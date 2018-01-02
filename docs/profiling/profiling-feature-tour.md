@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>Tour pelos recursos de criação de perfil
 
@@ -152,7 +152,7 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |Ferramenta de Desempenho|Área de Trabalho do Windows|Windows Universal/Store|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|  
-|[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|  
+|[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|Sim (não para .NET Core/ASP.NET Core)|  
 |[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no|  
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|  
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|  

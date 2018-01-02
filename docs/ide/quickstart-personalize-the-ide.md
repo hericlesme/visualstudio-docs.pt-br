@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Início rápido: personalizar o Editor e o IDE do Visual Studio
 
@@ -79,11 +79,13 @@ Agora personalizaremos algumas cores de texto para o Editor. Primeiro, vamos abr
 
 1. Em **Ambiente**, escolha a categoria **Fontes e Cores**.
 
-   Observe que o texto em **Mostrar configurações para** diz **Editor de Texto** &mdash; e é isto o que queremos. Você pode expandir a lista suspensa para ver a lista abrangente dos locais onde você pode personalizar as fontes e a cor do texto.
+   Observe que o texto em **Mostrar configurações para** diz **Editor de Texto**&mdash; e é isto o que queremos. Você pode expandir a lista suspensa para ver a lista abrangente dos locais onde você pode personalizar as fontes e a cor do texto.
 
 1. Para alterar a cor do texto de números de linha, a lista **Exibir itens**, escolha **Número de Linha**. Na caixa **Primeiro plano do item**, escolha **Verde-oliva**.
 
    ![Caixa de diálogo Opções, categoria Fontes e Cores](media/quickstart-personalize-line-number-color.png)
+
+   Algumas linguagens têm suas próprias configurações específicas de fontes e cores. Se você for um desenvolvedor de C++ e quiser alterar a cor usada para as funções, por exemplo, você poderá procurar pelas **Funções de C++** na lista **Exibir itens**.
 
 1. Antes de sair da caixa de diálogo, vamos alterar também a cor dos atributos XML. Na lista **Exibir itens**, role para baixo até **Atributo XML** e selecione-o. Na caixa **Primeiro plano do item**, escolha **Verde-limão**. Escolha **OK** para salvar nossas seleções e fechar a caixa de diálogo.
 
@@ -96,6 +98,8 @@ Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esper
 ## <a name="see-also"></a>Consulte também
 
 [Início rápido: introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Guia de início rápido: codificação no editor](../ide/quickstart-editor.md)  
+[Guia de início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)  
 [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
 [Personalizando o editor](../ide/customizing-the-editor.md)  
 [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)

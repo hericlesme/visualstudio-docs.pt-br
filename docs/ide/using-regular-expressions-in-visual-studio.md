@@ -16,34 +16,32 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-- Visual Studio, regular expressions
-ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
-caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c01023649879c34838cbca3172aec6b5a053f4bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Usando expressões regulares no Visual Studio
-O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa expressões regulares do .NET Framework para localizar e substituir texto. Para obter mais informações sobre as expressões regulares do .NET, consulte [Expressões regulares do .NET Framework](/dotnet/standard/base-types/regular-expressions).  
-  
- Antes do Visual Studio 2012, o Visual Studio usava a sintaxe de expressão regular personalizada nas janelas Localizar e Substituir. Consulte [Conversões de expressões regulares do Visual Studio](https://msdn.microsoft.com/en-us/library/2k3te2cs\(v=vs.110\).aspx) para obter uma explicação de como converter alguns dos símbolos personalizados de expressões regulares mais usados nas versões do .NET.  
-  
+
+O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa expressões regulares do .NET Framework para localizar e substituir texto. Para obter mais informações sobre as expressões regulares do .NET, consulte [Expressões regulares do .NET Framework](/dotnet/standard/base-types/regular-expressions).
+
 > [!TIP]
->  Em sistemas operacionais Windows, a maioria das linhas termina em “\r\n” (um retorno de carro seguido por uma nova linha). Esses caracteres não são visíveis, mas estão presentes no editor e são passados para o serviço Expressão Regular do .NET.  
+> Em sistemas operacionais Windows, a maioria das linhas termina em “\r\n” (um retorno de carro seguido por uma nova linha). Esses caracteres não são visíveis, mas estão presentes no editor e são passados para o serviço Expressão Regular do .NET.
+
+## <a name="replacement-patterns"></a>Padrões de substituição
+
+Para obter informações sobre as expressões regulares usadas em padrões de substituição, consulte [Substituições](/dotnet/standard/base-types/substitutions-in-regular-expressions). Para usar um grupo de captura numerado, a sintaxe é `$1` para especificar o grupo numerado e `(x)` para especificar o grupo em questão. Por exemplo, a expressão regular agrupada `(\d)([a-z])` encontra quatro correspondências na seguinte cadeia de caracteres: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` converte essa cadeia de caracteres em **z1 z2 z3 z4**.
   
-> [!TIP]
->  Para obter informações sobre as expressões regulares usadas em padrões de substituição, consulte [Substituições](/dotnet/standard/base-types/substitutions-in-regular-expressions). Para usar um grupo de captura numerado, a sintaxe é `$1` para especificar o grupo numerado e `(x)` para especificar o grupo em questão. Por exemplo, a expressão regular agrupada `(\d)([a-z])` encontra quatro correspondências na seguinte cadeia de caracteres: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` converte essa cadeia de caracteres em **z1 z2 z3 z4**.  
-  
-## <a name="regular-expressions-in-visual-studio"></a>Expressões regulares no Visual Studio  
- Estes são alguns exemplos  
-  
-|Finalidade|Expressão|Exemplo|  
-|-------------|----------------|-------------|  
+## <a name="regular-expression-examples"></a>Exemplos de expressões regulares
+
+Estes são alguns exemplos:
+
+|Finalidade|Expressão|Exemplo|
+|-------------|----------------|-------------|
 |Encontrar a correspondência de um único caractere (exceto uma quebra de linha)|.|`a.o` corresponde a “aro” em “around” e “abo” em “about”, mas a não “acro” em “across”.|  
 |Encontrar a correspondência de zero ou mais ocorrências da expressão anterior (encontrar a correspondência do máximo de caracteres possíveis)|*|`a*r` corresponde a “r” em “rack”, “ar” em “ark” e “aar” em “aardvark”|  
 |Encontrar a correspondência de um caractere zero ou mais vezes (Curinga *)|.*|c.*e corresponde a “cke” em “racket”, “comme” em “comment” e “code” em “code”|  
@@ -72,6 +70,7 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa expressões regu
 |Encontrar a correspondência de uma cadeia de caracteres entre aspas|((\\".+?\\")&#124;('.+?'))|Encontrar a correspondência de uma cadeia de caracteres entre aspas simples ou duplas.|  
 |Encontrar a correspondência de um número hexadecimal|\b0[xX]([0-9a-fA-F]\)\b|Corresponde a “0xc67f”, mas não a “0xc67fc67f”.|  
 |Encontrar a correspondência de inteiros e decimais|\b[0-9]*\\.\*[0-9]+\b|Encontrar a correspondência de “1.333”.|  
-  
-## <a name="see-also"></a>Consulte também  
- [Localizando e substituindo texto](../ide/finding-and-replacing-text.md)
+
+## <a name="see-also"></a>Consulte também
+
+[Localizando e substituindo texto](../ide/finding-and-replacing-text.md)

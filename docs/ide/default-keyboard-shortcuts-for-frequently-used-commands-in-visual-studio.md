@@ -7,41 +7,33 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ad9a9e8851d428010d7116ba94cc08ced211740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Atalhos de teclado padrão para comandos frequentes no Visual Studio
-Você pode acessar comandos usados frequentemente no Visual Studio escolhendo estes atalhos de teclado padrão. Para obter uma lista completa de comandos que têm atalhos padrão, consulte [Default Keyboard Shortcuts (Atalhos de teclado padrão)](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
-  
+
+Você pode acessar comandos usados frequentemente no Visual Studio escolhendo estes atalhos de teclado padrão. Para obter uma lista completa de comandos que têm atalhos padrão, consulte [Default Keyboard Shortcuts (Atalhos de teclado padrão)](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
 > [!NOTE]
->  É possível pesquisar o atalho para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.  
-  
- **Neste tópico**  
-  
-||||||  
-|-|-|-|-|-|  
-|[Build](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Editar](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Projeto](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Ferramentas](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Janela](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|  
-|[Depurar](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Arquivo](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refatoração](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Exibir](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||  
-  
-##  <a name="bkmk_build"></a> Build  
-  
+> É possível pesquisar o atalho para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
+
+## <a name="build"></a>Build
+
 |Comandos|Atalhos de teclado [Contextos]|  
 |--------------|-------------------------------------|  
 |Build.BuildSolution|Ctrl+Shift+B [Global]|  
 |Build.Cancel|Ctrl+Break [Global]|  
 |Build.Compile|Ctrl+F7 [Global]|  
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Global]|  
-  
-##  <a name="bkmk_debug"></a> Depurar  
-  
+
+## <a name="debug"></a>Depurar
+
 |Comandos|Atalhos de teclado [Contextos]|  
 |--------------|-------------------------------------|  
 |Debug.BreakatFunction|Ctrl+B [Global]|  
@@ -59,9 +51,9 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 |Debug.StepOver|F10 [Global]|  
 |Debug.StopDebugging|Shift+F5 [Global]|  
 |Debug.ToggleBreakpoint|F9 [Global]|  
-  
-##  <a name="bkmk_edit"></a> Editar  
-  
+
+## <a name="edit"></a>Editar
+
 |Comandos|Atalhos de teclado [Contextos]|  
 |--------------|-------------------------------------|  
 |Edit.BreakLine|Enter [Editor de Texto, Designer de Relatórios, Designer de Formulários do Windows]<br /><br /> ou Shift+Enter [Editor d Texto]|  
@@ -110,9 +102,9 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Edit.Undo|Ctrl+Z [Global]<br /><br /> ou Alt+Backspace [Global]|  
 |Edit.WordDeleteToEnd|Ctrl+Delete [Editor de Texto]|  
 |Edit.WordDeleteToStart|Ctrl+Backspace [Editor de Texto]|  
-  
-##  <a name="bkmk_file"></a> Arquivo  
-  
+
+## <a name="file"></a>Arquivo
+
 |Comandos|Atalhos de teclado [Contextos]|  
 |--------------|-------------------------------------|  
 |File.Exit|Alt+F4 [Global]|  
@@ -126,28 +118,28 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |File.SaveAll|Ctrl+Shift+S [Global]|  
 |File.SaveSelectedItems|Ctrl+S [Global]|  
 |File.ViewinBrowser|Ctrl+Shift+W [Global]|  
-  
-##  <a name="bkmk_project"></a> Projeto  
-  
+
+## <a name="project"></a>Projeto
+
 |Comandos|Atalhos de teclado [Contextos]|  
 |--------------|-------------------------------------|  
 |Project.AddExistingItem|Shift+Alt+A [Global]|  
 |Project.AddNewItem|Ctrl+Shift+A [Global]|  
-  
-##  <a name="bkmk_refactor"></a> Refatoração  
-  
+
+## <a name="refactor"></a>Refatoração
+
 |Comando|Atalho de teclado [Contexto]|  
 |-------------|-----------------------------------|  
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [Global]|  
-  
-##  <a name="bkmk_tools"></a> Ferramentas  
-  
+
+## <a name="tools"></a>Ferramentas
+
 |Comando|Atalho de teclado [Contexto]|  
 |-------------|-----------------------------------|  
 |Tools.AttachtoProcess|Ctrl+Alt+P [Global]|  
-  
-##  <a name="bkmk_view"></a> Modo de Exibição  
-  
+
+## <a name="view"></a>Exibir
+
 |Comandos|Atalhos de teclado [Contextos]|  
 |--------------|-------------------------------------|  
 |View.ClassView|Ctrl+Shift+C [Global]|  
@@ -166,9 +158,9 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Global]|
 |View.Toolbox|Ctrl+Alt+X [Global]|  
 |View.ViewCode|Entre [Diagrama de Classes]<br /><br /> ou F7 [Designer de Configurações]|  
 |View.ViewDesigner|Shift+F7 [Modo Código-fonte do Editor de HTML]|  
-  
-##  <a name="bkmk_window"></a> Janela  
-  
+
+## <a name="window"></a>Janela
+
 |Comandos|Atalhos de teclado [Contextos]|  
 |--------------|-------------------------------------|  
 |Window.ActivateDocumentWindow|Esc [Global]|  
@@ -176,3 +168,7 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Global]|
 |Window.NextDocumentWindow|Ctrl+F6 [Global]|  
 |Window.NextDocumentWindowNav|Ctrl+Tab [Global]|  
 |Window.NextSplitPane|F6 [Global]|
+
+## <a name="see-also"></a>Consulte também
+
+[Identificação e personalização de atalhos de teclado no Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)

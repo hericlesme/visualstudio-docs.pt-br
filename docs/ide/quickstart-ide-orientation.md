@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início rápido: introdução ao IDE do Visual Studio
 
-Esta introdução de 5 a 10 minutos ao ambiente de desenvolvimento integrado (IDE) do Visual Studio, faremos um tour de algumas janelas, menus e outros recursos de interface do usuário.
+Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio, faremos um tour em algumas janelas, menus e em outros recursos de interface do usuário.
 
 ## <a name="start-page"></a>Start Page
 
@@ -94,8 +94,10 @@ Vimos apenas alguns dos recursos do IDE do Visual Studio para nos familiarizarmo
 
 - Procure a seção Elementos Gerais de Interface de Usuário da documentação do VS, que dá mais detalhes sobre janelas como [Lista de Erros](../ide/reference/error-list-window.md), a [janela Saída](../ide/reference/output-window.md), a [janela Propriedades](../ide/reference/properties-window.md) e a [caixa de diálogo Opções](../ide/reference/options-dialog-box-visual-studio.md)
 
-- Faça um tour mais detalhado do IDE e até mesmo explore a depuração em [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
+- Faça um tour mais detalhado pelo IDE e até mesmo explore a depuração na [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
 
 ## <a name="see-also"></a>Consulte também
 
-[Início rápido: personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)
+[Início rápido: personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Guia de início rápido: codificação no editor](../ide/quickstart-editor.md)  
+[Guia de início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)  

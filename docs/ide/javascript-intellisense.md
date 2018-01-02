@@ -24,40 +24,41 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
-caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 694e747f09e38a2dc363057ccdb43ac55f4c61ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 056101593be6119d994cab40f1536fe130fc25bb
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
+
 O [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] fornece uma experiência de edição de JavaScript avançada pronta para o uso. Ativado por um serviço de linguagem baseado no TypeScript, o Visual Studio oferece um IntelliSense mais sofisticado, suporte para recursos modernos do JavaScript e recursos aprimorados de produtividade como Ir para Definição, refatoração e muito mais.
 
 > [!NOTE]
->  O serviço de linguagem JavaScript do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] usa um novo mecanismo para o serviço de linguagem (“salsa”). Os detalhes estão incluídos aqui neste tópico, e talvez você deseje ler esta [postagem no blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). A nova experiência de edição também aplica-se principalmente no Código do VS. Consulte os [documentos do Código do VS](https://code.visualstudio.com/docs/languages/javascript) para obter mais informações.
+> O serviço de linguagem JavaScript do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] usa um novo mecanismo para o serviço de linguagem (chamado “Salsa”). Os detalhes estão incluídos neste tópico e você também pode ler esta [postagem no blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). A nova experiência de edição também se aplica ao Visual Studio Code. Consulte os [documentos do Código do VS](https://code.visualstudio.com/docs/languages/javascript) para obter mais informações.
 
-Para obter mais informações sobre a funcionalidade geral [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] do IntelliSense, consulte [Usando o IntelliSense](../ide/using-intellisense.md). 
+Para obter mais informações sobre a funcionalidade geral do IntelliSense no Visual Studio, consulte [Usando o IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Novidades no serviço de linguagem JavaScript do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-O JavaScript IntelliSense do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] agora exibirá muito mais informações sobre listas de parâmetro e de membro.
+A começar do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], o JavaScript IntelliSense exibe muito mais informações sobre listas de parâmetro e de membros.
 Essas novas informações são fornecidas pelo serviço de linguagem TypeScript, que usa a análise estática nos bastidores para entender melhor o código.
 O TypeScript usa várias fontes para criar essas informações:
+
 - [IntelliSense baseado na inferência de tipos](#TypeInference)
 - [IntelliSense baseado no JSDoc](#JsDoc)
 - [IntelliSense baseado em arquivos de declaração do TypeScript](#TSDeclFiles)
 - [Aquisição automática de definições de tipo](#Auto)
 
 ### <a name="TypeInference"></a>IntelliSense baseado na inferência de tipos
+
 No JavaScript, na maioria das vezes, não há nenhuma informação de tipo explícita disponível. Felizmente, geralmente é bastante fácil descobrir um tipo dado o contexto de código ao redor.
 Esse processo é chamado de inferência de tipos.
 
-Para uma variável ou uma propriedade, em geral, o tipo é o tipo do valor usado para inicializá-lo ou a atribuição de valor mais recente. 
+Para uma variável ou uma propriedade, em geral, o tipo é o tipo do valor usado para inicializá-lo ou a atribuição de valor mais recente.
 
 ```js
 var nextItem = 10;
@@ -67,13 +68,14 @@ nextItem = "box";
 nextItem; // now we know nextItem is a string
 ```
 
-Para uma função, o tipo de retorno pode ser inferido de instruções de returno. 
+Para uma função, o tipo de retorno pode ser inferido de instruções de returno.
 
 Para parâmetros de função, atualmente, não há nenhuma inferência, mas existem maneiras de resolver esse problema usando o JSDoc ou arquivos `.d.ts` TypeScript (consulte as próximas seções).
 
 Além disso, há uma inferência especial para o seguinte:
- - Classes de “estilo ES3”, especificadas usando uma função de construtor e atribuições à propriedade de protótipo.
- - Padrões de módulo de estilo CommonJS, especificados como atribuições de propriedade no objeto `exports` ou atribuições à propriedade `module.exports`.
+
+- Classes de “estilo ES3”, especificadas usando uma função de construtor e atribuições à propriedade de protótipo.
+- Padrões de módulo de estilo CommonJS, especificados como atribuições de propriedade no objeto `exports` ou atribuições à propriedade `module.exports`.
 
 ```js
 function Foo(param1) {
@@ -100,7 +102,7 @@ x.b = false;
 x. // <- "x" is shown as having properties a, b, and c of the types specified
 ```
 
-Conforme mencionado, os parâmetros de função nunca são inferidos. No entanto, usando a marcação `@param` do JSDoc, é possível adicionar tipos a parâmetros de função também. 
+Conforme mencionado, os parâmetros de função nunca são inferidos. No entanto, usando a marcação `@param` do JSDoc, é possível adicionar tipos a parâmetros de função também.
 
 ```js
 /**
@@ -110,7 +112,7 @@ function Foo(param1) {
     this.prop = param1; // "param1" (and thus "this.prop") are now of type "string".
 }
 ```
- 
+
 Consulte [este documento](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) para obter as anotações do JsDoc com suporte no momento.
 
 ### <a name="TsDeclFiles"></a> IntelliSense baseado em arquivos de declaração do TypeScript
@@ -119,20 +121,21 @@ Como o JavaScript e o TypeScript agora são baseados no mesmo serviço de lingua
 
 Abaixo, mostramos um exemplo simples de um arquivo de definição do TypeScript que fornece essas informações de tipo (por meio de uma interface) para um arquivo JavaScript no mesmo projeto (usando uma marcação do JsDoc).
 
-_**Declarações do TypeScript usadas no JavaScript**_
-
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
 ### <a name="Auto"></a> Aquisição automática de definições de tipo
+
 No mundo do TypeScript, as bibliotecas mais populares do JavaScript têm suas APIs descritas por arquivos `.d.ts` e o repositório mais comum dessas definições está em [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-Por padrão, o serviço de linguagem Salsa tentará detectar quais bibliotecas do JavaScript estão em uso e baixará e referenciará automaticamente o arquivo `.d.ts` correspondente que descreve a biblioteca, a fim de fornecer um IntelliSense mais sofisticado. Os arquivos são baixados em um cache localizado na pasta do usuário em `%LOCALAPPDATA%\Microsoft\TypeScript`. 
+Por padrão, o serviço de linguagem Salsa tentará detectar quais bibliotecas do JavaScript estão em uso e baixará e referenciará automaticamente o arquivo `.d.ts` correspondente que descreve a biblioteca, a fim de fornecer um IntelliSense mais sofisticado. Os arquivos são baixados em um cache localizado na pasta do usuário em `%LOCALAPPDATA%\Microsoft\TypeScript`.
 
 > [!NOTE]
 > Esse recurso estará **desabilitado** por padrão se um arquivo de configuração `tsconfig.json` estiver sendo usado, mas poderá ser definido como habilitado, conforme descrito mais abaixo.
 
-Atualmente, a detecção automática funciona para dependências baixadas no npm (com a leitura do arquivo `package.json`), no Bower (com a leitura do arquivo `bower.json`) e em arquivos soltos no projeto que correspondem a uma lista de aproximadamente as 400 bibliotecas mais populares do JavaScript. Por exemplo, se você tiver `jquery-1.10.min.js` no projeto, o arquivo `jquery.d.ts` será buscado e carregado para proporcionar uma melhor experiência de edição. Esse arquivo `.d.ts` não afetará o projeto. 
+Atualmente, a detecção automática funciona para dependências baixadas no npm (com a leitura do arquivo `package.json`), no Bower (com a leitura do arquivo `bower.json`) e em arquivos soltos no projeto que correspondem a uma lista de aproximadamente as 400 bibliotecas mais populares do JavaScript. Por exemplo, se você tiver `jquery-1.10.min.js` no projeto, o arquivo `jquery.d.ts` será buscado e carregado para proporcionar uma melhor experiência de edição. Esse arquivo `.d.ts` não afetará o projeto.
 
 Se você não desejar usar a aquisição automática, desabilite-a adicionando um arquivo de configuração, conforme descrito abaixo. Ainda é possível colocar arquivos de definição para uso diretamente no projeto manualmente.
 
+## <a name="see-also"></a>Consulte também
 
+[Usando o IntelliSense](../ide/using-intellisense.md)

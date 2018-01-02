@@ -1,7 +1,16 @@
-# [Tour pelos recursos de criação de perfil](profiling-feature-tour.md)
-## [Guia do iniciante à criação de perfil de desempenho](beginners-guide-to-performance-profiling.md)
-## [O que há de novo nas ferramentas de criação de perfil](what-s-new-in-profiling-tools.md)
+
+# [Documentação de criação de perfil](index.md)
+# Visão Geral
+## [Tour pelos recursos de criação de perfil](profiling-feature-tour.md)
+# Guias de Início Rápido
+## [Analisar o uso de CPU (gerenciado)](quickstart-cpu-usage-managed.md)
+## [Analisar o uso de CPU (nativo)](quickstart-cpu-usage-native.md)
+## [Analisar o uso de CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Tutoriais
+## [Analisar desempenho de aplicativos no Visual Studio](beginners-guide-to-performance-profiling.md)
+# Conceitos
 ## [Executar ferramentas de criação de perfil com ou sem o depurador](running-profiling-tools-with-or-without-the-debugger.md)
+# Guias de instruções
 ## [Analisar o uso de memória](memory-usage.md)
 ### [Eventos de heap do ETW nativo personalizados](custom-native-etw-heap-events.md)
 ### [Uso de memória sem o depurador](memory-usage-without-debugging2.md)
@@ -366,4 +375,6 @@
 ##### [Função CvWriteFlag](cvwriteflag-function.md)
 ##### [Função CvWriteMessage](cvwritemessage-function.md)
 ### [Utilitário de linha de comando da Visualização Simultânea (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analisar o uso de energia em aplicativos UWP](analyze-energy-use-in-store-apps.md)
+## [Analisar o uso de energia em aplicativos da Store](analyze-energy-use-in-store-apps.md)
+# Recursos
+## [O que há de novo nas ferramentas de criação de perfil](what-s-new-in-profiling-tools.md)

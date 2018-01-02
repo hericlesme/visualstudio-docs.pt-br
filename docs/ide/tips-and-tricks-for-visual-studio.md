@@ -1,5 +1,5 @@
 ---
-title: Dicas e truques sobre o Visual Studio | Microsoft Docs
+title: Atalhos de teclado do Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Dicas e truques sobre o Visual Studio
-É possível navegar no [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] de maneira mais fácil usando os atalhos neste tópico. Este tópico é apenas um subconjunto dos atalhos de teclado disponíveis. Para obter uma lista mais completa, consulte [Atalhos de teclado padrão no Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre como otimizar a acessibilidade do Visual Studio, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md).  
 
-##  <a name="BKMK_WindowMgmt"></a> Gerenciamento de Janelas  
+Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos neste tópico. Este tópico é apenas um subconjunto dos atalhos de teclado disponíveis. Para obter uma lista mais completa, consulte [Atalhos de teclado padrão no Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre como otimizar a acessibilidade do Visual Studio, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md).
+
+##  <a name="BKMK_WindowMgmt"></a> Gerenciamento de janelas
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 |Mostrar a Lista de Arquivos Abertos|Ctrl+Alt+Seta para baixo|  
 |Mostrar Todas as Janelas Flutuantes|Ctrl+Shift+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a> Atalhos das Janelas  
+##  <a name="BKMK_WindowShortcuts"></a> Atalhos das janelas
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 |Nova instância de Início|Win+Shift+n|  
 |Alternar entre as Janelas|Win+n|  
 
-##  <a name="BKMK_Search"></a> Pesquisa do Visual Studio  
+##  <a name="BKMK_Search"></a> Pesquisa do Visual Studio
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |Resultados de Escopo de Início Rápido|–   @opt Opções<br />–   @cmd Comandos<br />–   @mru Usado mais recentemente<br />–   @doc Abrir documentos|  
 |Pesquisar em Opções de Ferramentas|Ctrl+E|  
 
-##  <a name="BKMK_EditorFind"></a> Localização de editor  
+##  <a name="BKMK_EditorFind"></a> Localização de editor
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |Localizar em Arquivos|Ctrl+Shift+F|  
 |Substituir nos Arquivos|Ctrl+Shift+H|  
 
-##  <a name="BKMK_CodeEditor"></a> Editor de código  
+##  <a name="BKMK_CodeEditor"></a> Editor de código
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ ms.lasthandoff: 10/31/2017
 |Navegar entre vários resultados de espiada|F8 e Shift+F8|  
 |Alterne entre a janela do editor de códigos e a janela de definição de auge|Shift+Esc|  
 
-##  <a name="BKMK_Toolbars"></a> Barras de ferramentas  
+##  <a name="BKMK_Toolbars"></a> Barras de ferramentas
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 |Localize o Módulo de Comando de Caixa de Texto|Digite “>”|  
 |Crie novos alias|>Comando do alias NewAlias|  
 
-##  <a name="BKMK_Debugging"></a> Depuração  
+##  <a name="BKMK_Debugging"></a> Depuração
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ ms.lasthandoff: 10/31/2017
 |Buffer de limpeza imediata da janela|>cls|  
 |Valor de Impressão de Janela Imediato|?varname|  
 
-##  <a name="BKMK_ALM"></a> Gerenciamento do Ciclo de Vida do Aplicativo  
- Veja [Atalhos de teclado: Visual Studio Online, portal da Web do TFS e Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+##  <a name="BKMK_ALM"></a> Gerenciamento do Ciclo de Vida do Aplicativo
 
-## <a name="see-also"></a>Consulte também  
- [Blog do Visual Studio](http://blogs.msdn.com/b/visualstudio)   
- [Blog de dicas e truques sobre o Visual Studio](http://blogs.msdn.com/b/zainnab)   
- [Caixa de Ferramentas do Visual Studio no Canal 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Bugs de conexão do Visual Studio](http://connect.microsoft.com/VisualStudio)
+Veja [Atalhos de teclado: Visual Studio Online, portal da Web do TFS e Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+
+## <a name="see-also"></a>Consulte também
+
+[Blog do Visual Studio](http://blogs.msdn.com/b/visualstudio)  
+[Blog de dicas e truques sobre o Visual Studio](http://blogs.msdn.com/b/zainnab)  
+[Caixa de Ferramentas do Visual Studio no Canal 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
+[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Bugs de conexão do Visual Studio](http://connect.microsoft.com/VisualStudio)

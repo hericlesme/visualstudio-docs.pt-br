@@ -1,7 +1,7 @@
 ---
 title: "Configurações de Conversão de Codificação .NET para o EditorConfig | Microsoft Docs"
 ms.custom: 
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -14,17 +14,15 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-ms.assetid: 
-caps.latest.revision: "1"
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 25db1488faef4ddb54af9831bee7ccd3d8479f76
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e6ce48d060e340076b336083cb73bdd8145fc1a0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configurações de convenção de codificação do .NET para o EditorConfig
 
@@ -283,9 +281,9 @@ A tabela a seguir mostra os nomes das regras, as IDs de regra, as linguagens de 
 
 | Nome da regra | ID da regra | Linguagens Aplicáveis | Padrão do Visual Studio | Versão compatível |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# e Visual Basic | for_non_interface_members:none | Visual Studio 2017 versão 15.5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:none | Visual Studio 2017 versão 15.5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:none | Visual Studio 2017 versão 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# e Visual Basic | for_non_interface_members:none | Visual Studio 2017 v. 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | público, privado, protegido, interno, estático, externo, novo, virtual, abstrato, selado, substituído, somente leitura, não seguro, volátil, assíncrono:nenhum | Visual Studio 2017 v. 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Parcial, Padrão, Privado, Protegido, Público, Amigo, NotOverridable Substituível, MustOverride, Sobrecargas, Substituições, MustInherit, NotInheritable, Estático, Compartilhado, Sombras, Somente Leitura, Somente Gravação, Esmaecer, Const, WithEvents, Expandindo, Reduzindo, Personalizado, Assíncrono:nenhum | Visual Studio 2017 v. 15.5 |
 
 **dotnet\_style\_require\_accessibility_modifiers**  
 Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:  
@@ -293,7 +291,7 @@ Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita 
 | Valor | Descrição |
 | ----- |:----------- |
 | always | Preferir que modificadores de acessibilidade sejam especificados |
-| for_non_interface_members | Preferir que modificadores de acessibilidade sejam declarados, exceto os membros de interface pública. No momento, isso não será diferente de **always** e funcionará como preparação para o futuro caso C# adicione métodos de interface padrão. |
+| for\_non\_interface_members | Preferir que modificadores de acessibilidade sejam declarados, exceto os membros de interface pública. No momento, isso não será diferente de **always** e funcionará como preparação para o futuro caso C# adicione métodos de interface padrão. |
 | never | Não preferir que modificadores de acessibilidade sejam especificados | 
 
 Exemplos de código:  
@@ -577,126 +575,126 @@ A tabela a seguir mostra os nomes das regras, as IDs de regra, as versões de li
 
 | Nome da regra | ID da regra | Linguagens Aplicáveis | Padrão do Visual Studio | Versão compatível |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | never:none | Visual Studio 2017 versão 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | never:none | Visual Studio 2017 versão 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 e IDE0024 | C# 7.0+ | never:none | Visual Studio 2017 versão 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | when_possible:none | Visual Studio 2017 versão 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | when_possible:none | Visual Studio 2017 versão 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | when_possible:none | Visual Studio 2017 versão 15.3 |  
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 e IDE0024 | C# 7.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |  
 
 **csharp\_style\_expression\_bodied_methods**  
-Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:  
+Esta regra aceita valores da tabela a seguir:  
 
 | Valor | Descrição |
 | ----- |:----------- |
-| when_possible | Preferir membros aptos para expressão para métodos |
+| true | Preferir membros aptos para expressão para métodos |
 | when_on_single_line | Preferir membros aptos para expressão para métodos quando eles forem uma única linha |
-| never | Preferir corpos de bloco para métodos | 
+| false | Preferir corpos de bloco para métodos | 
 
 Exemplos de código:  
 
 ```csharp
-// csharp_style_expression_bodied_methods = when_possible
+// csharp_style_expression_bodied_methods = true
 public int GetAge() => this.Age;
 
-// csharp_style_expression_bodied_methods = never
+// csharp_style_expression_bodied_methods = false
 public int GetAge() { return this.Age; }
 ```  
 
 **csharp\_style\_expression\_bodied_constructors**  
-Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:  
+Esta regra aceita valores da tabela a seguir:   
 
 | Valor | Descrição |
 | ----- |:----------- |
-| when_possible | Preferir membros aptos para expressão para construtores |
+| true | Preferir membros aptos para expressão para construtores |
 | when_on_single_line | Preferir membros aptos para expressão para construtores quando eles forem uma única linha |
-| never | Preferir blocos do corpo para construtores |  
+| false | Preferir blocos do corpo para construtores |  
 
 Exemplos de código:  
 
 ```csharp
-// csharp_style_expression_bodied_constructors = when_possible
+// csharp_style_expression_bodied_constructors = true
 public Customer(int age) => Age = age;
 
-// csharp_style_expression_bodied_constructors = never
+// csharp_style_expression_bodied_constructors = false
 public Customer(int age) { Age = age; }
 ```  
 
 **csharp\_style\_expression\_bodied_operators**  
-Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:  
+Esta regra aceita valores da tabela a seguir:    
 
 | Valor | Descrição |
 | ----- |:----------- |
-| when_possible | Prefira membros aptos para expressão para operadores |
+| true | Prefira membros aptos para expressão para operadores |
 | when_on_single_line | Preferir membros aptos para expressão para operadores quando eles forem uma única linha |
-| never | Preferir blocos do corpo para operadores |  
+| false | Preferir blocos do corpo para operadores |  
 
 Exemplos de código:  
 
 ```csharp
-// csharp_style_expression_bodied_operators = when_possible
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = true
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
     => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
 
-// csharp_style_expression_bodied_operators = never
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = false
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```  
 
 **csharp\_style\_expression\_bodied_properties**  
-Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:  
+Esta regra aceita valores da tabela a seguir:   
 
 | Valor | Descrição |
 | ----- |:----------- |
-| when_possible | Prefira membros aptos para expressão para propriedades |
+| true | Prefira membros aptos para expressão para propriedades |
 | when_on_single_line | Preferir membros aptos para expressão para propriedades quando elas forem uma única linha |
-| never | Preferir blocos do corpo para propriedades |  
+| false | Preferir blocos do corpo para propriedades |  
 
 Exemplos de código:  
 
 ```csharp
-// csharp_style_expression_bodied_properties = when_possible
+// csharp_style_expression_bodied_properties = true
 public int Age => _age;
 
-// csharp_style_expression_bodied_properties = never
+// csharp_style_expression_bodied_properties = false
 public int Age { get { return _age; }}
 ```  
 
 **csharp\_style\_expression\_bodied_indexers**  
-Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:  
+Esta regra aceita valores da tabela a seguir:  
 
 | Valor | Descrição |
 | ----- |:----------- |
-| when_possible | Preferir membros aptos para expressão para indexadores |
+| true | Preferir membros aptos para expressão para indexadores |
 | when_on_single_line | Preferir membros aptos para expressão para indexadores quando eles forem uma única linha |
-| never | Preferir blocos do corpo para indexadores | 
+| false | Preferir blocos do corpo para indexadores | 
 
 Exemplos de código:  
 
 ```csharp
-// csharp_style_expression_bodied_indexers = when_possible
+// csharp_style_expression_bodied_indexers = true
 public T this[int i] => _value[i];
 
-// csharp_style_expression_bodied_indexers = never
+// csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }
 ```  
 
 **csharp\_style\_expression\_bodied_accessors**  
-Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:  
+Esta regra aceita valores da tabela a seguir:   
 
 | Valor | Descrição |
 | ----- |:----------- |
-| when_possible | Preferir membros aptos para expressão para acessadores |
+| true | Preferir membros aptos para expressão para acessadores |
 | when_on_single_line | Preferir membros aptos para expressão para acessadores quando eles forem uma única linha |
-| never | Preferir blocos do corpo para acessadores | 
+| false | Preferir blocos do corpo para acessadores | 
 
 Exemplos de código:  
 
 ```csharp
-// csharp_style_expression_bodied_accessors = when_possible
+// csharp_style_expression_bodied_accessors = true
 public int Age { get => _age; set => _age = value; }
 
-// csharp_style_expression_bodied_accessors = never
+// csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
 ```  
 
@@ -705,12 +703,12 @@ Exemplo de arquivo .editorconfig:
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = never:none
-csharp_style_expression_bodied_constructors = never:none
-csharp_style_expression_bodied_operators = never:none
-csharp_style_expression_bodied_properties = when_possible:suggestion
-csharp_style_expression_bodied_indexers = when_possible:suggestion
-csharp_style_expression_bodied_accessors = when_possible:suggestion
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
 ```  
 
 #### <a name="pattern_matching">Correspondência de padrões</a>

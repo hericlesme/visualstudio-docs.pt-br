@@ -15,11 +15,11 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: dc865fe81a51ff3ae2ca497b8982292ffda18372
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Atualizado para a [versão 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -126,7 +126,7 @@ A refatoração é o processo de aperfeiçoar seu código após ele ter sido gra
 *   Converter if para switch
 *   Remover variáveis não utilizadas
 
-Para obter mais informações, consulte a página [Refatoração, Geração de Código e Ações Rápidas no Visual Studio](refactoring-code-generation-quick-actions.md).  
+Para obter mais informações, consulte [Ações Rápidas](../ide/quick-actions.md#common-quick-actions).
 
 #### <a name="interact-with-git"></a>Interagir com o Git
 Quando você está trabalhando com um projeto no Visual Studio, pode configurar, confirmar rapidamente e publicar o código em um serviço Git. Também é possível gerenciar os repositórios Git usando o menu e cliques de botões no canto direito inferior do IDE.
