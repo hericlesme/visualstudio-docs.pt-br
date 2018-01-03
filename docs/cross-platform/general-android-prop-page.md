@@ -23,15 +23,16 @@ f1_keywords:
 - VC.Project.VCConfiguration.DeleteExtensionsOnClean
 - VC.Project.VCConfiguration.UseOfSTL
 - VC.Project.VCConfiguration.ThumbMode
-ms.openlocfilehash: f564ca09b3a19848ae95128ba8b529b8a84c2210
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: e18fffbe0eb3104ec445fca7d791d74f5bf02bf9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-project-properties-android-c"></a>Propriedades gerais do projeto (Android C++)
 
-Propriedade | Descrição | Opções
+propriedade | Descrição | Opções
 --- | ---| ---
 Diretório de saída | Especifica um caminho relativo para o diretório de arquivo de saída e pode incluir variáveis de ambiente.
 Diretório intermediário | Especifica um caminho relativo para o diretório de arquivo intermediário e pode incluir variáveis de ambiente.

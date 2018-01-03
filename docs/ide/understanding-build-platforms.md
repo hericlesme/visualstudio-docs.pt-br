@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ec355d4798da9a5134396801d744623fffc2da2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-platforms"></a>Noções sobre plataformas de build
 Você pode armazenar versões diferentes de propriedades de solução e de projeto que se aplicam a plataformas de destino diferentes. Por exemplo, você pode criar uma configuração de depuração que se destina a uma plataforma x86 e uma configuração de depuração que se destina a uma plataforma x64. Você pode alterar rapidamente a plataforma ativa para que você possa compilar várias configurações com facilidade.  

@@ -5,11 +5,12 @@ ms.author: gewarren
 title: "Usar ferramentas de dados no Visual Studio para desenvolver soluções de dados | Microsoft Docs"
 description: "Saiba mais sobre as ferramentas para soluções de dados no Visual Studio."
 ms.technology: vs-data-tools
-ms.openlocfilehash: 134d5ffa213f08bfa22a87e639edf59b990f1e68
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 74a4d787439f8a615f7f9937438e19179630b9f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Usar as ferramentas de dados no Visual Studio para desenvolver soluções de dados
 
@@ -120,7 +121,7 @@ Saiba como usar as ferramentas de dados no Visual Studio para desenvolver e test
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio</p>
+                        <p><Accessing data in Visual Studio></p>
                     </div>
                 </div>
             </div>

@@ -16,15 +16,16 @@ f1_keywords:
 - VC.Project.VCConfiguration.IntermediateDirectory
 - VC.Project.VCConfiguration.BuildLogFile
 - VC.Project.VCConfiguration.ConfigurationType
-ms.openlocfilehash: d7105b75328175abcaba98d062ebeb591ce72d46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 95d420d57fbf37ae511d92ce32ea03b9f7c5fcad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-project-properties-android-c-makefile"></a>Propriedades gerais do projeto (Makefile Android C++)
 
-Propriedade | Descrição | Opções
+propriedade | Descrição | Opções
 --- | ---| ---
 Diretório de saída | Especifica um caminho relativo para o diretório de arquivo de saída e pode incluir variáveis de ambiente.
 Diretório intermediário | Especifica um caminho relativo para o diretório de arquivo intermediário e pode incluir variáveis de ambiente.

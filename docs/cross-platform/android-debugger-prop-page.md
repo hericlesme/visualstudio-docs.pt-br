@@ -16,15 +16,16 @@ f1_keywords:
 - VC.Project.AndroidDebugger.AndroidDeviceID
 - VC.Project.AndroidDebugger.PackagePath
 - VC.Project.AndroidDebugger.LaunchActivity
-ms.openlocfilehash: a296ea142b13b9bdcda888a7f382de9eeb17a40a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: d8caf579aa73a77f3c20162ae775411df551f373
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="android-debugger-properties"></a>Propriedades do depurador Android
 
-Propriedade | Descrição | Opções
+propriedade | Descrição | Opções
 --- | ---| ---
 Tipo de Depurador | Especifica o tipo de código a ser depurado. | **Somente nativo**<br>**Somente Java**<br>
 Destino de depuração | Especifica o emulador ou o dispositivo a ser usado para depuração. Se nenhum emulador estiver em execução, use o 'Gerenciador de AVD (Dispositivo Virtual Android)' para iniciar um dispositivo.

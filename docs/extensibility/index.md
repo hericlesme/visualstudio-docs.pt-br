@@ -6,11 +6,12 @@ ms.technology: vs-ide-sdk
 ms.topic: landing-page
 title: "Documentação de Extensibilidade do Visual Studio | Microsoft Docs"
 description: Saiba mais sobre a Extensibilidade do Visual Studio.
-ms.openlocfilehash: f494ba02ed08f97b918ac3c835b91794fa35bcc8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: apexprodleads
+ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Documentação de Extensibilidade do Visual Studio
 

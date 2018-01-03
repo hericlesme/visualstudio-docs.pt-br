@@ -15,11 +15,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2b7176a0aed65a9595730247d857dc0c263dc0cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc01c0d5a2b4ad53f1384640e06b9637cd7fbe0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-editor"></a>Editor de modelo
 Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para exibir, criar e modificar modelos 3D.  

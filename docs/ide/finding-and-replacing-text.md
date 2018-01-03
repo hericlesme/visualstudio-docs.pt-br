@@ -40,11 +40,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2b925e32711e1624a4dfbe74fb5614ee6e0b062
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72081f6c140c4634918e67098493cb37bb324848
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-and-replacing-text"></a>Localizando e substituindo texto
 É possível localizar e substituir texto no editor de código do Visual Studio, bem como em determinadas janelas de saída baseadas em texto, como as janelas **Localizar Resultados**, usando o controle **Localizar e Substituir** controle ou **Localizar/Substituir em Arquivos**. Você também pode pesquisar e substituir em algumas janelas de designer, como o designer XAML e o Designer de Formulários do Windows, e em janelas de ferramentas  
