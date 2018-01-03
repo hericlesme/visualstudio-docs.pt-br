@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdb416aa4f3825c954c78106bd5e147f83705d2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0ca44152702c3669d791f67da8f41ad09f9bc72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="timeline-caret"></a>Circunflexo da linha do tempo
 Ao selecionar um ponto na linha do tempo de um segmento de thread em execução, um cursor da Linha do tempo é exibido acima dele. A pilha de chamadas exibida na guia da pilha atual é a mais próxima em tempo ao local em que você clicou no segmento. O cursor é usado para associar a pilha de chamadas, que é exibida sob a guia **Atual**, com o instante em que uma amostra dela foi coletada. O cursor mostra o local exato da pilha de chamadas, que é a pilha de chamadas mais próxima ao local que o usuário selecionou.  

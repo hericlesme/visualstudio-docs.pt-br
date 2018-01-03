@@ -12,11 +12,12 @@ ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 454cd11d9e196e7de9775448640a8ee22c434d4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7dac076dabaf0d44a1eda9c267e5c9b2eafe5a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Visão geral do Microsoft IntelliTest
 
@@ -146,7 +147,7 @@ A solução alternativa sugerida é ter um modo de teste em que esses métodos e
 O IntelliTest tem suporte apenas no .NET Framework X86 de 32 bits.
 
 <a name="language"></a>
-### <a name="language"></a>Linguagem
+### <a name="language"></a>Idioma
 
 Em princípio, o IntelliTest pode analisar programas .NET arbitrários, gravados em qualquer linguagem .NET. No entanto, no Visual Studio ele dá suporte apenas a C#.
 

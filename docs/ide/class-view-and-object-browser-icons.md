@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b20e30cc983d6dd809daa264e4fedbb3a879386
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="class-view-and-object-browser-icons"></a>Exibição de classe ícones do Pesquisador de Objetos
 
@@ -33,14 +34,14 @@ ms.lasthandoff: 12/07/2017
 |----------|-----------------|----------|-----------------|
 |![Símbolo de namespace](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|espaço de nome|![Símbolo de declaração](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Método ou função|
 |![Ícone de classe](../ide/media/vxclass_icon.gif "vxClass_Icon")|Classe|![Símbolo de operador](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|Operador|  
-|![Símbolo de interface pirulito](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Interface|![Símbolo de propriedade](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Propriedade|
+|![Símbolo de interface pirulito](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Interface|![Símbolo de propriedade](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|propriedade|
 |![Símbolo de estrutura](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Estrutura|![Ícone de campo](../ide/media/vxfield_icon.gif "vxField_Icon")|Campo ou variável|  
 |![Símbolo de união](../ide/media/vxunion_icon.gif "vxUnion_Icon")|União|![Símbolo de evento](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Evento|  
 |![Símbolo de enumeração](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![Ícone de constante](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Constante|  
 |![Símbolo de definição de tipo](../ide/media/vxtypedef_icon.gif "vxTypeDef_Icon")|TypeDef|![Símbolo do item Enumerar](../ide/media/vxenumitem_icon.gif "vxEnumItem_Icon")|Item Enum|  
 |![Símbolo do módulo do Visual Studio](../ide/media/vxmodule_icon.gif "vxModule_Icon")|Módulo|![Símbolo de item do mapa](../ide/media/vxmapitem_icon.gif "vxMapItem_Icon")|Item de Mapa|  
 |![Símbolo de método de extensão](../ide/media/extensionmethod.gif "ExtensionMethod")|Método de extensão|![Símbolo de declaração](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Declaração externa|  
-|![Símbolo de delegado](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|Representante|![Ícone de erro para o Modo de Exibição de Classe e Pesquisador de Objetos](../ide/media/erroricon.gif "ErrorIcon")|Erro|  
+|![Símbolo de delegado](../ide/media/vxdelegate_icon.gif "vxDelegate_Icon")|delegado|![Ícone de erro para o Modo de Exibição de Classe e Pesquisador de Objetos](../ide/media/erroricon.gif "ErrorIcon")|Erro|  
 |![Símbolo de exceção](../ide/media/vxexception_icon.gif "vxException_Icon")|Exceção|![Símbolo de modelo](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Modelo|  
 |![Símbolo de mapa](../ide/media/vxmap_icon.gif "vxMap_Icon")|Mapa|![Símbolo de ponto de exclamação de erro](../ide/media/vxerror_icon.gif "vxError_Icon")|Unknown|  
 |![Símbolo de encaminhamento de tipo](../ide/media/ob_type_forward.gif "ob_type_forward")|Encaminhamento de tipo|||  

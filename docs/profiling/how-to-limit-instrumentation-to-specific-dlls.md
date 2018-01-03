@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59d24a6cc67429fb6c0231f9487d80abe91de965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ad8aaf7dbf9960a3281add90da685c2942bd179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
 Ao usar o método de criação de perfil de instrumentação, é possível limitar a coleta de dados de criação de perfil a uma ou mais DLLs em um aplicativo. Para analisar uma ou mais DLLs em um aplicativo, você deve criar uma sessão de desempenho que inclui os arquivos .dll como destino. É possível especificar as DLLs que você deseja analisar como projetos em uma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou como arquivos binários independentes.  
@@ -70,5 +71,5 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
     >  Não especifique o arquivo executável (.exe) que exerce as DLLs.  
   
 ## <a name="see-also"></a>Consulte também  
- [Controlando a coleta de dados](../profiling/controlling-data-collection.md)   
+ [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  
  [Como limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

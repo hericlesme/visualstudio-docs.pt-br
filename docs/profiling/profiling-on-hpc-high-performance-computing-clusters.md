@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
 Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem de Ferramentas de Criação de Perfil do [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] ou [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)]. Para obter mais informações sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) no site da Microsoft.  
@@ -126,7 +127,7 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
   
 ### <a name="hpc-launch-properties"></a>Propriedades de inicialização do HPC  
   
-|Propriedade|Descrição|  
+|propriedade|Descrição|  
 |--------------|-----------------|  
 |**Nó principal**|Especifica o computador que atua como o nó principal do HPC na criação de perfil.|  
 |**Número de processos**|Especifica o número de instâncias do aplicativo a serem executadas no aplicativo analisado.|  
@@ -137,7 +138,7 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
   
 ### <a name="advanced-properties"></a>Propriedades avançadas  
   
-|Propriedade|Descrição|  
+|propriedade|Descrição|  
 |--------------|-----------------|  
 |**Nome do projeto**|O nome do projeto ou solução [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] atual.|  
 |**Limpar quando o criador de perfil é interrompido**|Quando verdadeiro, remove os binários que foram implantados para o diretório de execução. Arquivos e diretórios criados pelo programa de usuário não são removidos nesta etapa. Se o diretório de execução e o diretório de implantação foram criadas pelo IDE, o IDE tenta removê-los, mas não o fará se eles tiverem arquivos não implantados pelo IDE.|  

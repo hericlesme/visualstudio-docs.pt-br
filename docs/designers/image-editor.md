@@ -15,11 +15,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d746d874b7efe18b1bd8dabf15804f1c05b57ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor"></a>Editor de imagem
 Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para exibir e modificar os recursos de textura e imagens.  
@@ -151,7 +152,7 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
   
  A tabela a seguir descreve as propriedades da imagem.  
   
-|Propriedade|Descrição|  
+|propriedade|Descrição|  
 |--------------|-----------------|  
 |Largura|A largura da imagem.|  
 |Altura|A altura da imagem.|  

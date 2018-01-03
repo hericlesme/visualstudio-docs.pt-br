@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07be4c31e7bec729f9d6bdd77f522c5fe80b5bc6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ec02b03188ea0fd1fa7c15ea03878bdec12890f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="element-xelement-dynamic-property"></a>Elemento (propriedade dinâmica de XElement)
 Obtém um indexador usado para recuperar a instância do elemento filho que corresponde ao nome especificado expandido.  
@@ -29,7 +30,7 @@ Obtém um indexador usado para recuperar a instância do elemento filho que corr
 elem.Element[{namespaceName}localName]  
 ```  
   
-## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
+## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
  Um indicador de tipo `XElement Item(String expandedName)`. Esse marcador aceita um parâmetro expandido de nome e retorna <xref:System.Xml.Linq.XElement>correspondente, ou `null` se não houver nenhum elemento com o nome especificado.  
   
 ## <a name="remarks"></a>Comentários  

@@ -11,11 +11,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: "6"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 1a723104cdd350dcc2c5fac80eef4e98b178df4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9468b796a601956941fb8d913e6ae6198afbfa59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Use as classes e membros do namespace Microsoft.VisualStudio.TestPlatform.UnitTestFramework> ao codificar testes de unidade. É possível usá-los ao gravar o teste de unidade do zero ou refinar um teste de unidade gerado do código em teste.  

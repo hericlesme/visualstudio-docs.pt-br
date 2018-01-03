@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: aca1fc0200e57867418c2a4c5ca7a718afdbc469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>Depurando R no Visual Studio
 
@@ -57,12 +58,12 @@ Quando você for interrompido no depurador, você também será interrompido no 
 
 O Navegador de Ambiente dá suporte a uma série de comandos especiais:
 
-| Comando | Descrição | 
+| Comando | Descrição |
 | --- | --- |
 | n | próxima: executa a próxima instrução no arquivo de código (o mesmo que avançar). |
-| s | intervir: executa a próxima instrução no arquivo de código, executando um escopo de função quando a próxima instrução é uma chamada de função. | 
+| s | intervir: executa a próxima instrução no arquivo de código, executando um escopo de função quando a próxima instrução é uma chamada de função. |
 | f | concluir: executa o restante do escopo da função atual e retorna ao chamador (o mesmo que sair). |
-| c, cont | continuar: executa o programa até o próximo ponto de interrupção. | 
+| c, cont | continuar: executa o programa até o próximo ponto de interrupção. |
 | Q | encerra: termina a sessão de depuração. |
 | onde | mostrar pilha: exibe a pilha de chamadas na janela interativa. |
 | help | mostrar ajuda: exibe os comandos disponíveis na janela interativa. |

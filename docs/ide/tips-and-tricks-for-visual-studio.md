@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 23cd5cf58585c8ba1397552d20cb519c1f62c236
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Dicas e truques sobre o Visual Studio
 
@@ -56,7 +57,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |||  
 |-|-|  
 |Localização Rápida|Ctrl+F|  
-|Resultado Seguinte Rápido de Alterações|Entrar|  
+|Resultado Seguinte Rápido de Alterações|Enter|  
 |Resultado Anterior de Localização Rápida|Shift+Enter|  
 |Menu Suspenso Expansão de Localização Rápida|Alt+Seta para baixo|  
 |Ignorar Localizar|ESC|  
@@ -113,7 +114,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Definir próxima instrução|Ctrl+Shift+F10|  
 |Defina e Ative/Desative Pontos de interrupção|F9|  
 |Desabilitar Ponto de Interrupção|Ctrl+F9|  
-|Janela imediata|Ctrl + Alt + I|  
+|Janela imediata|Ctrl+Alt+I|  
 |Modo de Comando de Janela Imediato|Digite “>”|  
 |Buffer de limpeza imediata da janela|>cls|  
 |Valor de Impressão de Janela Imediato|?varname|  

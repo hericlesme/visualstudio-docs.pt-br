@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03fdce795cadba8496d9dd4ea2c0887e8738a8f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38441e88e1086b38ff7028cfbf81b38e48494358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="average-cpu-utilization"></a>Utilização da CPU média
 Mostra a média de utilização do processo com perfil criado, dos núcleos lógicos do sistema pela duração do processo. O gráfico não mostra qual núcleo específico está ativo em um determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com 50% da capacidade durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado.  

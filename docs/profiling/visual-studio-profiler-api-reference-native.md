@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7dcdbfa22301e6872e5ea39fd910a326f817ce1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: c5c09288baaeb0cad029a04641533f2b9c69f8cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referência da API do Visual Studio Profiler (nativo)
 APIs do criador de perfil do Visual Studio permitem que você controle programaticamente a quantidade de dados coletados e insira marcas de carimbo de data/hora e perfil durante a criação de perfil. Para usar as APIs nativas, inclua o arquivo de cabeçalho VSPerf.h e adicione o VSPerf.lib em seu projeto.  

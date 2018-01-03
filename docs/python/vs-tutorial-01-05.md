@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2acd8aebda03d7d9809563a6c1959c8dd69bf96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Etapa 5: instalando pacotes no ambiente do Python
 
@@ -48,23 +49,22 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
 
 1. Crie um novo projeto com **Arquivo > Novo > Projeto**, selecionando o modelo de "Aplicativo do Python". No arquivo de código que é exibido, cole o código a seguir, que cria uma curva de cosseno como nas etapas anteriores do tutorial, só que plotada graficamente desta vez:
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. Execute o programa com (F5) ou sem o depurador (CTRL + F5) para ver a saída:
 
   ![Saída de exemplo de matplotlib](media/environments-add-matplotlib3.png)
-
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -72,4 +72,5 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
 > [Trabalhando com Git](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Aprofundando-se
+
 - [Ambientes do Python](python-environments.md)

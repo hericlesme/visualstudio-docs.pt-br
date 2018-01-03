@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3ce9677f344b8d97992d78b08ed44341657d51c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c4c5b0e1cb14e32ae4303da76baca7b7ef88590f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-in-visual-studio"></a>Refatoração no Visual Studio
 Refatoração é o processo de modificar o código para torná-lo mais fácil de manter, entender e estender, mas sem alterar seu comportamento. Algumas *refatorações* comuns incluem:  

@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2a3175065cfa6886092b7cad05b348851db69e6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1b63f3c74a59630ea762cb1ba37bc192f53e5fcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Caixa de diálogo Opções, Ambiente, Importar e Exportar Configurações
 Use esta página para especificar onde seu arquivo de configurações de usuário está salvo e se você deseja usar um arquivo de configurações de equipe. Para obter mais informações sobre as configurações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  

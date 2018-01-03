@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72bcca85f57a5c68e70dfa942ec607072af86561
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-your-build"></a>Personalizar seu build
 Nas versões do MSBuild anteriores à versão 15, se você desejasse fornecer uma propriedade nova e personalizada para projetos em sua solução, você precisava adicionar manualmente uma referência a essa propriedade para cada arquivo de projeto na solução. Ou você precisava definir a propriedade em um arquivo .props e, em seguida, explicitamente, importar o arquivo .props em todos os projetos na solução, entre outras coisas.
@@ -87,7 +88,7 @@ Para que o msbuild mescle corretamente os arquivos "internos" (`2-src` e `2-test
 Um resumo da abordagem geral do msbuild é o seguinte:
 
 - Para qualquer projeto, o msbuild localiza o primeiro `Directory.Build.props` para cima na estrutura da solução, mescla-o com padrões e interrompe o exame adicional
-- Se você quiser que vários níveis sejam encontrados e mesclados, então [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (mostrado acima) o arquivo "externo" do arquivo "interno"
+- Se você quiser que vários níveis sejam encontrados e mesclados, então [`<Import...>`](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (mostrado acima) o arquivo "externo" do arquivo "interno"
 - Se o arquivo "externo" também não importar nada acima dele, a verificação será interrompida aqui
 - Para controlar o processo de exame/mesclagem, use `$(DirectoryBuildPropsPath)` e `$(ImportDirectoryBuildProps)`
 

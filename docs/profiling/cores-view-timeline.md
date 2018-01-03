@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd6e114837daa754c165d83be327bd6b3b39a6ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8e117c305c02d7a5af5cbc915b139cb80d2308
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-timeline"></a>Linha do tempo da exibição de núcleos
 Cada linha na linha do tempo representa um núcleo de processador lógico no sistema com perfil sendo criado. Para cada linha, o eixo horizontal mostra qual thread estava sendo executado em um núcleo lógico em um determinado ponto no tempo. É possível focalizar em uma cor de interesse em uma linha do tempo para retornar uma dica de ferramenta que identifica o thread. Para ajudar na identificação do thread, a legenda na parte inferior da janela mostra o que cada cor representa. Use a ferramenta Zoom para ampliar e reduzir, clicando e arrastando ou pressionando CTRL e movendo a roda do mouse. A consistência de zoom é mantida ao mudar entre a Exibição de Núcleos e Exibição de Threads.  

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c01007e3a1fd71af8c5204130a90b448f28c93f1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Criando projeto R no Visual Studio
 
@@ -40,7 +41,7 @@ O `.Rhistory` registra todos os comandos que você insere na janela [R Interativ
 
 O arquivo `rproject.rproj` mantém determinadas configurações do projeto específicas do R que não são gerenciadas pelo Visual Studio de nenhum outro modo:
 
-| Propriedade | Padrão | Descrição |
+| propriedade | Padrão | Descrição |
 | --- | --- | --- |
 | Versão | 1.0 | A versão das Ferramentas do R para Visual Studio usadas para criar o projeto. |
 | RestoreWorkspace | Padrão | Carregar automaticamente as variáveis do Espaço de trabalho anteriores do arquivo `.RData` no diretório do projeto. |
@@ -66,7 +67,7 @@ Se você tiver uma pasta existente de arquivos `.R` que deseje gerenciar em um p
 
 Para abrir as páginas de propriedades do projeto, clique com botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades** ou selecione o item de menu **Projeto > Propriedades do (nome do projeto)...*. A janela aberta exibe propriedades do projeto:
 
-| Tabulação | Propriedade | Descrição |
+| Tabulação | propriedade | Descrição |
 | --- | --- | --- |
 | Executar | Arquivo de inicialização | O nome do arquivo que é executado com o comando **Arquivo de inicialização de origem**, F5, **Depurar > Iniciar depuração** ou **Depurar > Iniciar sem depuração**. Clicar com o botão direito do mouse no arquivo no projeto e selecionar **Definir como script de inicialização do R** também o define como o arquivo de inicialização. |
 | | Redefinir R Interativo em execução | Limpa todas as variáveis de espaço de trabalho da janela interativa ao executar o projeto. Isso garante que não haja nenhum conteúdo no espaço de trabalho que restou das execuções anteriores. |
@@ -106,7 +107,6 @@ As RTVS incluem vários modelos para tipos de arquivo específicos. Você pode a
 | Documentação do R (conjunto de dados) | Um arquivo de documentação do R que contém vários campos com comentários para descrever um conjunto de dados. |
 | Consulta SQL | E um arquivo `.sql` vazio. Consulte [Integração do SQL Server](sql-server.md). |
 | Procedimento armazenado com R | Um arquivo R com uma consulta SQL filho e um arquivo de modelo de procedimento armazenado filho. Consulte [Integração do SQL Server](sql-server.md). |
-
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Usar vários tipos de projeto no Visual Studio
 

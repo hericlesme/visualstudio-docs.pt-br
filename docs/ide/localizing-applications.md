@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55e4156552c58f7505ec8a497d7ebb9d6d3f2c94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c389f8dd13514d940941bcefc228236b3418e317
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-applications"></a>Localizando aplicativos
 *Localização* é o processo de personalização do aplicativo para determinada cultura ou localidade. A localização consiste basicamente na tradução da interface do usuário.  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
  [Organização hierárquica de recursos para localização](../ide/hierarchical-organization-of-resources-for-localization.md)  
  Explica como os recursos localizados são armazenados e acessados no Visual Studio.  
   
- [Security and Localized Satellite Assemblies](../ide/security-and-localized-satellite-assemblies.md) (Assemblies satélite de segurança e localizados)  
+ [Assemblies satélite de segurança e localizados](../ide/security-and-localized-satellite-assemblies.md)  
  Aborda a assinatura de assemblies satélites com pares de chaves pública-privada.  
   
  [Números de versão para assemblies satélite principais e localizados](../ide/version-numbers-for-main-and-localized-satellite-assemblies.md)  

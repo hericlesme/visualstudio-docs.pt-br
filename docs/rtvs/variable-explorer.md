@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="variable-explorer"></a>Gerenciador de Variáveis
 
@@ -27,22 +28,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 A janela Gerenciador de Variáveis aparecerá da seguinte maneira:
 
 ![Janela do Gerenciador de Variáveis no Visual Studio](media/variable-explorer-window.png)
 
 Se você tiver um quadro de dados R mais complexo definido na sessão, será possível navegar nos dados. Por exemplo, após a execução de `cars <- mtcars`, você pode navegar pelo conjunto de dados expandindo os diferentes nós no Gerenciador de Variáveis:
- 
+
 ![Exibição expandida do Gerenciador de Variáveis](media/variable-explorer-expanded-results.png)
- 
+
 Para excluir variáveis, clique com o botão direito do mouse e selecione **Excluir** ou selecione a variável e pressione a tecla Excluir.
 
 Você também pode procurar uma observação em um quadro de dados usando a pesquisa incremental. Primeiro, expanda os nós no quadro de dados que deseja pesquisar e insira os termos de pesquisa na caixa de pesquisa.
 
 ## <a name="details-table-view"></a>Exibição de detalhes (tabela)
 
-Como os dados costumam ser tabulares, você pode exibir qualquer tipo de dados complexo como uma tabela separada, selecionando o ícone de lupa ou clicando com o botão direito do mouse e selecionando **Mostrar Detalhes**. 
+Como os dados costumam ser tabulares, você pode exibir qualquer tipo de dados complexo como uma tabela separada, selecionando o ícone de lupa ou clicando com o botão direito do mouse e selecionando **Mostrar Detalhes**.
 
 ![Exibição de tabela do Gerenciador de Variáveis](media/variable-explorer-table-view.png)
 
@@ -69,7 +70,6 @@ Você também pode mudar para um escopo de função ao ser interrompido um ponto
 ![Gerenciador de Variáveis mostrando um quadro de dados durante a depuração](media/variable-explorer-as-locals-window.png)
 
 O Gerenciador de Variáveis altera o escopo da função automaticamente conforme você percorre o código no depurador, como mostrar variáveis locais em uma função.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Importando dados para o Gerenciador de Variáveis
 

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf78e13b7205ac5bc04a67796c1e226f194b0c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 897a64f10ce7b4970f4ec0b9b631315104bcaae8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---instrumentation-data"></a>Exibição Módulos – dados de instrumentação
 A exibição Módulos mostra dados de desempenho agrupados pelos módulos que estavam nos dados de criação de perfil. As funções do módulo são listadas abaixo do nó do módulo.  

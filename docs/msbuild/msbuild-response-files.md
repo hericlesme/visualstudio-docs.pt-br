@@ -22,11 +22,12 @@ caps.latest.revision: "3"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a9ceab64ec0009dd143f42e1b94538690780f1bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2d204535d24fc1ef000c897f45bdb51710dfee9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-response-files"></a>Arquivos de resposta do MSBuild
 Arquivos de resposta (.rsp) são arquivos de texto que contêm as opções de linha de comando MSBuild.exe. Cada opção pode estar em uma linha separada ou todas as opções podem estar em uma linha. As linhas de comentários são precedidas por um símbolo  **#** . A opção  **@**  é usada para passar a outro arquivo de resposta para o MSBuild.exe.  

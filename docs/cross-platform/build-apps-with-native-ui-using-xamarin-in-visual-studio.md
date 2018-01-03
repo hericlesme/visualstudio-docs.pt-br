@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio
 Depois de concluir as etapas em [Configuração e instalação](../cross-platform/setup-and-install.md) e [Verificar seu ambiente Xamarin](../cross-platform/verify-your-xamarin-environment.md), este passo a passo mostra como criar um aplicativo Xamarin básico (mostrado abaixo) com as camadas de interface do usuário nativas. Com a interface do usuário nativa, o código compartilhado reside em uma PCL (biblioteca de classes portátil) e os projetos de plataforma individuais contêm as definições de interface do usuário.  
@@ -248,7 +249,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
   
 7.  Na janela **Propriedades**, defina essas propriedades (observação: pode ajudar classificar a lista em ordem alfabética usando o botão de classificação na barra de ferramentas de janela Propriedades):  
   
-    |Propriedade|Valor|  
+    |propriedade|Valor|  
     |--------------|-----------|  
     |**text**|**Pesquisar por CEP**|  
     |**id**|`@+id/ZipCodeSearchLabel`|  
@@ -302,7 +303,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
   
 10. Na **Caixa de Ferramentas**, arraste um controle de **Número** para **RelativeLayout** e posicione-o abaixo do rótulo **CEP**. Então defina as propriedades a seguir:  
   
-    |Propriedade|Valor|  
+    |propriedade|Valor|  
     |--------------|-----------|  
     |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
@@ -325,7 +326,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
   
 11. Na **Caixa de Ferramentas**, arraste um **Botão** para o controle **RelativeLayout** e posicione-o à direita do controle zipCodeEntry. Então defina estas propriedades:  
   
-    |Propriedade|Valor|  
+    |propriedade|Valor|  
     |--------------|-----------|  
     |**id**|`@+id/weatherBtn`|  
     |**text**|**Get Weather**|  

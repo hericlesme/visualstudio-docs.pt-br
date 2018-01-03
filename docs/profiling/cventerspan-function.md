@@ -28,11 +28,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7a24d3809c9e600620b074315a07f2d0eaf3d18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ded4d3227ab3840f393f35832160405ba0195c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cventerspan-function"></a>Função CvEnterSpan
 Marca o início de um novo intervalo.  
@@ -123,7 +124,7 @@ HRESULT CvEnterSpanExVA(
  `ppSpan`  
  Endereço da variável que conterá o objeto de intervalo resultante. O endereço não pode ser NULL; a variável pode ter qualquer valor.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  S_OK quando a mensagem é gravada com êxito. Código de erro em caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.  
   
 ## <a name="requirements"></a>Requisitos  

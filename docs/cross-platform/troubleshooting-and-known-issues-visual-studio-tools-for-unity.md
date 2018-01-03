@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: unity
+ms.openlocfilehash: 7ede7734ec2a8c261cce3f31e06e77f932edd326
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solucionando problemas e problemas conhecidos (Visual Studio Tools for Unity)
 Nesta seção, você encontrará soluções para problemas comuns das Ferramentas do Visual Studio para Unity, as descrições de problemas conhecidos e aprenderá como ajudar a melhorar as Ferramentas do Visual Studio para Unity por meio de relatórios de erro.  
@@ -99,7 +100,7 @@ Em seguida, conecte o VSTU usando a porta encaminhada 127.0.0.1:56xxx.
 ### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>No Windows, o Visual Studio pede para baixar a estrutura de destino do Unity  
  As Ferramentas do Visual Studio para Unity requerem o .NET framework 3.5, que não está instalado por padrão no Windows 8 nem no 10. Para corrigir esse problema, siga as instruções para baixar e instalar o .NET Framework 3.5.  
 
-## <a name="known-issues"></a>Problemas conhecidos  
+## <a name="known-issues"></a>Problemas Conhecidos  
  Há problemas conhecidos nas Ferramentas do Visual Studio para Unity, decorrentes de como o depurador interage com a versão mais antiga do compilador C# do Unity. Estamos trabalhando para ajudar a corrigir esses problemas, mas, enquanto isso, você poderá enfrentar os seguintes problemas:  
 
 -   O Unity pode falhar durante a depuração.  

@@ -22,11 +22,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7e64b6e055c5448ac063dde9a62c659e04757c72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72ddaf6f27450c2be0f17e90297ea05099f2f815
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getwinfxpath-task"></a>Tarefa GetWinFXPath
 A tarefa <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> retorna o diretório do tempo de execução [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] atual.  
@@ -36,8 +37,8 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> retorna o diretório 
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
 |`WinFXPath`|Parâmetro de saída opcional **String**.<br /><br /> Especifica o caminho real para o tempo de execução de [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)].|  
-|`WinFXNativePath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho para o tempo de execução de [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] nativo.|  
-|`WinFXWowPath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho para os assemblies de [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] no módulo **Windows on Windows** de 32 bits em sistemas de 64 bits.|  
+|`WinFXNativePath`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o caminho para o tempo de execução de [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] nativo.|  
+|`WinFXWowPath`|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o caminho para os assemblies de [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] no módulo **Windows on Windows** de 32 bits em sistemas de 64 bits.|  
   
 ## <a name="remarks"></a>Comentários  
  Se a tarefa <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> está em execução em um processador de 64 bits, o parâmetro **WinFXPath** está definido como o caminho armazenado no parâmetro **WinFXWowPath**, caso contrário, o parâmetro **WinFXPath** é definido como o caminho armazenado no parâmetro **WinFXNativePath**.  

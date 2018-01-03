@@ -16,11 +16,12 @@ caps.latest.revision: "3"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c00b78b3a1d69b0d68abf9d07615bc1875ffc5a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 34aa890b8aaa4f1b4dd1f61dc79091ed81eb428c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 Suspende o acompanhamento no contexto atual.  
@@ -31,7 +32,7 @@ Suspende o acompanhamento no contexto atual.
 HRESULT WINAPI SuspendTracking(void);  
 ```  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um **HRESULT** com o conjunto de bits **SUCCEEDED** se o acompanhamento tiver sido suspenso.  
   
 ## <a name="requirements"></a>Requisitos  

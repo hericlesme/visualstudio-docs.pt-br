@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: multiple
+ms.openlocfilehash: d0e0907e7127f83055bfafbcd4491576d94bc2c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="csc-task"></a>Tarefa Csc
 Encapsula CSC.exe e produz executáveis (arquivos .exe), bibliotecas de vínculo dinâmico (arquivos .dll) ou módulos de código (arquivos .netmodule). Para obter mais informações sobre o CSC.exe, consulte [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index).  

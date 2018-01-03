@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa33b329002991c5629f3d48361c6f4fa3c694e0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bdc04655ccfc8ca5f6c1e45e4378f15221b99f4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 Define o idioma padrão usado para texto, moeda e outros valores dentro do IDE (ambiente de desenvolvimento integrado).  
@@ -46,7 +47,7 @@ devenv {/LCID|/l} LocaleID
   
  A tabela a seguir lista os LCIDs dos idiomas com suporte do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-|Linguagem|LCID|  
+|Idioma|LCID|  
 |--------------|----------|  
 |Chinês (simplificado)|2052|  
 |Chinês (tradicional)|1028|  

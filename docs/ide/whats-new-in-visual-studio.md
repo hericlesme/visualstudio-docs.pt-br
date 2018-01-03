@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Atualizado para a [versão 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -301,6 +302,6 @@ Se desejar fazer sugestões sobre como podemos melhorar o Visual Studio ou relat
 ## <a name="see-also"></a>Consulte também
 * [Notas de versão do Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Novidades no Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Novidades no C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [Novidades no C#](/dotnet/csharp/whats-new)  
 * [Novidades para o Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Novidades no Visual Studio para Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

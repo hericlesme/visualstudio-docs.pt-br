@@ -11,11 +11,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: c3e5410769ba10a905c8116677ae5d03d0df656e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1612856fa4c098b5b7ff081020a84324bd5f8c4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-coverage"></a>Solução de problemas de cobertura de código
 A ferramenta de análise da cobertura de código no Visual Studio coleta dados para assemblies nativos e gerenciados (arquivos .dll ou .exe). No entanto, em alguns casos, a janela Resultados de Cobertura de Código exibe um erro semelhante a "Esvaziar resultados gerados: ...." Existem vários motivos possíveis pelos quais isso pode acontecer. Este tópico deve ajudar a resolver esses problemas.  

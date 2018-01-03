@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb0f988ce0d1b266fd930909f6e5d6462929e8f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899c39af318e16465ccd36d671a2c9d7305b431d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 O método `ResumeProfile` diminui o contador de suspender/retomar para o nível de criação de perfil especificado.  
@@ -45,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
  O identificador de processo ou thread gerado pelo sistema.  
   
-## <a name="property-valuereturn-value"></a>Valor de propriedade/Valor de retorno  
+## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
  A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  

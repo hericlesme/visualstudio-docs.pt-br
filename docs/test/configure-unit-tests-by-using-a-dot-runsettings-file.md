@@ -11,11 +11,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: "25"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a02ce3721b6eb96770c9fbf074179b7afefdb97b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 36e235af45e1ce313f2f0e22ab9777d5e205dbe1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo .runsettings
 Os testes de unidade no Visual Studio podem ser configurados com um arquivo \*.runsettings. (O nome do arquivo não importa, contanto que você use a extensão ‘.runsettings’). Por exemplo, é possível alterar o .NET Framework em que os testes serão executados, o diretório para o qual os resultados de teste serão enviados e os dados coletados durante uma execução de teste.  

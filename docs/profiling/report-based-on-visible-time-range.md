@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf6a2a2a663854d79a33eb84bb135d349a185532
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="report-based-on-visible-time-range"></a>Relatório com base no intervalo de tempo visível
 O modo de exibição de perfil exibe relatórios com base no intervalo de tempo visível no momento e canais. Para ver detalhes de subconjuntos diferentes de dados, clique em itens na legenda.  

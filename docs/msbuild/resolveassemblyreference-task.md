@@ -24,11 +24,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 094e3968b527261125753002d9b6a31c7bd5d244
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10dffd6ea1a07c33df07f27ee8268932f18d8c32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolveassemblyreference-task"></a>Tarefa ResolveAssemblyReference
 Determina todos os assemblies que dependem dos assemblies especificados. Isso inclui as segundas e `n`enésimas dependências.  

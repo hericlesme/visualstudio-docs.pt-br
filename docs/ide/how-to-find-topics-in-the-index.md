@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea90dba4090565143c84d510b5e4f9e998cfb5fc
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>Localização de tópicos usando o índice do Visualizador da Ajuda
 O índice contém uma lista de palavras-chave que são associadas a tópicos no conteúdo instalado. Cada tópico pode ter mais de uma palavra-chave associada a ele e cada palavra-chave pode ser associada a mais de um tópico. Use esse índice da mesma maneira como usaria um índice em um livro.  
@@ -42,7 +43,7 @@ Na guia **Índice**, execute uma das tarefas a seguir:
   
     Se a palavra-chave especificada for associada a apenas um tópico, ele será exibido. Caso contrário, uma lista de todos os tópicos associados àquela palavra-chave aparece.
 
-## <a name="index-search-tips"></a>Dicas de pesquisa do índice  
+## <a name="index-search-tips"></a>Dicas de pesquisa de índice  
 Usar o índice é um processo simples. No entanto, compreender a melhor forma de inserir palavras-chave pode tornar as pesquisas de índice mais produtivas.  
   
 ### <a name="general-guidelines"></a>Diretrizes gerais  
@@ -77,5 +78,5 @@ Se você não encontrar uma entrada para a palavra ou frase inserida, tente o se
   
 ## <a name="see-also"></a>Consulte também
 [Como localizar tópicos no sumário](../ide/how-to-find-topics-in-the-table-of-contents.md)  
-[Como pesquisar por tópicos](../ide/how-to-search-for-topics.md)  
+[Como pesquisar tópicos](../ide/how-to-search-for-topics.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

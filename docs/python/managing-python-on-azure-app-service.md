@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d328897a4d7644e76634ecff3bfbaef4dbd0c3ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gerenciando o Python no Serviço de Aplicativo do Azure
 
@@ -167,7 +170,7 @@ Para instalar pacotes diretamente no ambiente do servidor, use um dos seguintes 
 | [Console do Kudu do Serviço de Aplicativo do Azure](#azure-app-service-kudu-console) | Instala pacotes interativamente. Os pacotes devem ser Python puro ou publicar em wheels. |
 | [API REST do Kudu](#kudu-rest-api) | Pode ser usada para automatizar a instalação de pacote.  Os pacotes devem ser Python puro ou publicar em wheels. |
 | Pacote com aplicativo | Instala pacotes diretamente em seu projeto e, em seguida, implanta-os no Serviço de Aplicativo como se fizessem parte do seu aplicativo. Dependendo de quantas dependências você tem e da frequência com que você os atualiza, esse método pode ser a maneira mais fácil de dar início à implantação. Esteja ciente de que as bibliotecas devem corresponder à versão do Python no servidor, caso contrário, você verá erros obscuros após a implantação. Assim, como as versões do Python nas extensões de site do Serviço de Aplicativo são exatamente as mesmas que as versões lançadas em python.org, você pode obter uma versão compatível para desenvolvimento local facilmente. |
-| Ambientes virtuais | Não há suporte. Em vez disso, use o agrupamento e defina a variável de ambiente `PYTHONPATH` para apontar para o local dos pacotes. |
+| Ambientes virtuais | Sem suporte. Em vez disso, use o agrupamento e defina a variável de ambiente `PYTHONPATH` para apontar para o local dos pacotes. |
 
 
 ### <a name="azure-app-service-kudu-console"></a>Console do Kudu do Serviço de Aplicativo do Azure

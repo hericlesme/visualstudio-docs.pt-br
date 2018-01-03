@@ -12,11 +12,12 @@ ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: "26"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5a6a1a314e837b441e2fc563baabf935659adcf8
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5f61b5c2c0fc5f252ed331e58137f970f6705df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Criar e executar testes de unidade para um aplicativo UWP no Visual Studio
 As ferramentas de teste de unidade do Visual Studio foram projetadas para dar suporte a desenvolvedores e equipes que incorporam testes de unidade em suas práticas de desenvolvimento de software. Os testes de unidade dão aos desenvolvedores e testadores uma forma eficiente e sustentável de procurar erros lógicos nos métodos de classes nos projetos em Visual C#, Visual Basic e Visual C++.  

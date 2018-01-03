@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df87a8c890f5326e4b7b385016e17a432626ec92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97962debc24b9e8bff3d4daaa7b632db775c2476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="texture-nodes"></a>Nós de textura
 No Designer de Sombreador, os nós de textura coletam amostram de vários tipos de textura e geometrias e produzem ou transformam as coordenadas de textura. As texturas fornecem detalhes de cor e iluminação dos objetos.  

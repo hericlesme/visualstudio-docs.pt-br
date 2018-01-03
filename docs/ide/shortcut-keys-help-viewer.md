@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 17f71324031bfdf01b32151288257b97c036056b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de atalho (Visualizador da Ajuda)
 É possível navegar no Microsoft Help Viewer usando as teclas de atalho na tabela a seguir:  
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/07/2017
 |Opções do Visualizador|Alt + H|Altere o foco para a lista **Máximo de entradas do Histórico salvas**.|  
 |Opções do Visualizador|Alt + E|Selecione ou desmarque a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1** se ela estiver habilitada.|  
 |Opções do Visualizador|Alt + O|Marque ou desmarque a caixa de seleção **Ficar online para procurar atualizações de conteúdo**.|  
-|Localizar|Entrar|Altere o foco para o próximo item.|  
+|Localizar|Enter|Altere o foco para o próximo item.|  
 |Localizar|Shift + Enter|Altere o foco para o item anterior.|  
 |Localizar|ESC|Oculta a caixa de texto **Localizar**.|  
 |Barra de status|Alt + E|Abra a caixa de diálogo **Erro** se a barra de status mostrar que um erro ocorreu.|  

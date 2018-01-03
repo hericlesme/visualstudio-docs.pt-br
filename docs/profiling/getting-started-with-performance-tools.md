@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccfaa75052ffa90e1e06ba2943ae54305fd54541
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c18d2ada5f150abe379d3cae7ad830392cb62ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-performance-tools"></a>Introdução às Ferramentas de Desempenho
 Esta seção fornece uma visão geral dos conceitos e tarefas que você aplicará ao coletar, exibir e analisar o desempenho do código usando as Ferramentas de Desempenho do Visual Studio.  

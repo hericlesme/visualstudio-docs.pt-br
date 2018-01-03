@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4beda1530fb36b4cad751c143a3a3962029f2fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1986f1cf206774303ea9d3c040d7f10c05ffe491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="multiple-categories-are-present"></a>Há várias categorias presentes
 Uma seção que contém mais de um tipo de atividade em um intervalo de tempo determinado é selecionada. Observe que duas cores são exibidas, uma verticalmente empilhada na outra. Essas cores representam apenas as duas atividades mais frequentes no intervalo de tempo determinado. A relação da frequência dessas duas atividades é mostrada como terços ou metades da barra vertical. Para ver mais detalhes, tente aumentar o zoom nessa seção da exibição de threads.  

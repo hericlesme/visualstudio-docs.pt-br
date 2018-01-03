@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-functions"></a>Funções de trecho de código
 Há três funções disponíveis para uso com os trechos de código de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. As funções são especificadas no elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) do trecho de código. Para obter informações sobre como criar trechos de código, consulte [Trechos de Código](../ide/code-snippets.md).  
@@ -28,11 +29,11 @@ Há três funções disponíveis para uso com os trechos de código de [!INCLUDE
 ## <a name="functions"></a>Funções  
  A tabela a seguir descreve as funções disponíveis para uso com o elemento `Function` em trechos de código.  
   
-|Função|Descrição|Linguagem|  
+|Função|Descrição|Idioma|  
 |--------------|-----------------|--------------|  
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Gera uma instrução de opção e um conjunto de instruções de maiúsculas e minúsculas para os membros da enumeração especificada pelo parâmetro `EnumerationLiteral`. O parâmetro `EnumerationLiteral` deve ser uma referência a uma literal de enumeração ou a um tipo de enumeração.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`GenerateSwitchCases(``EnumerationLiteral``)`|Gera uma instrução de opção e um conjunto de instruções de maiúsculas e minúsculas para os membros da enumeração especificada pelo parâmetro `EnumerationLiteral`. O parâmetro `EnumerationLiteral` deve ser uma referência a uma literal de enumeração ou a um tipo de enumeração.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Retorna o nome da classe que contém o trecho inserido.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`SimpleTypeName(` `TypeName` `)`|Reduz o parâmetro *TypeName* para sua forma mais simples no contexto em que o trecho foi invocado.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`SimpleTypeName(``TypeName``)`|Reduz o parâmetro *TypeName* para sua forma mais simples no contexto em que o trecho foi invocado.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra como usar a função `GenerateSwitchCases`. Quando este trecho for inserido e uma enumeração for inserida no literal `$switch_on$`, o literal `$cases$` gerará uma instrução `case` para cada valor na enumeração.  

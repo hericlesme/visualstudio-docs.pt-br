@@ -23,11 +23,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analisar a capacidade de resposta de interface do usuário HTML em Aplicativos Universais do Windows
 Este tópico descreve como isolar problemas de desempenho nos aplicativos usando o Criador de Perfil de Capacidade de Resposta da Interface do Usuário, uma ferramenta de desempenho disponível para Aplicativos Universais do Windows.  
@@ -330,7 +331,7 @@ if (performance.mark && performance.measure) {
   
  Esta tabela mostra os eventos e suas descrições:  
   
-|Evento|Categoria do evento|Ocorre quando|  
+|evento|Categoria do evento|Ocorre quando|  
 |-----------|--------------------|-----------------|  
 |Análise de CSS|Carregando|Um novo conteúdo CSS foi encontrado e foi feita uma tentativa de analisar o conteúdo CSS.|  
 |Análise de HTML|Carregando|Um novo conteúdo HTML foi encontrado e foi feita uma tentativa de analisa-lo em nós e de inseri-lo na árvore DOM.|  
@@ -351,8 +352,8 @@ if (performance.mark && performance.measure) {
 |Pintura|Renderização|Foram feitas alterações visuais no DOM além de uma tentativa de renderizar novamente partes da página.|  
 |Renderizar camada|Renderização|Foram feitas alterações visuais em um fragmento do DOM (chamado de camada) renderizado independentemente, e as alterações exigiram que uma parte da página fosse renderizada.|  
 |Decodificação de imagem|Decodificação de Imagem|Foi incluída uma imagem no DOM e foi feita uma tentativa de descompactar decodificar a imagem do seu formato original para bitmap.|  
-|Quadro|N/A|Foram feitas alterações visuais no DOM, o que exigiu que todas as partes afetadas da página fossem redesenhadas. Este é um evento gerado por ferramenta usado para agrupamento.|  
-|Medida do usuário|N/A|Um cenário específico do aplicativo foi medido usando o método `performance.measure`. Este é um evento gerado por ferramenta usado para analisar códigos.|  
+|Quadro|N/D|Foram feitas alterações visuais no DOM, o que exigiu que todas as partes afetadas da página fossem redesenhadas. Este é um evento gerado por ferramenta usado para agrupamento.|  
+|Medida do usuário|N/D|Um cenário específico do aplicativo foi medido usando o método `performance.measure`. Este é um evento gerado por ferramenta usado para analisar códigos.|  
   
 ##  <a name="Tips"></a> Informações adicionais  
   

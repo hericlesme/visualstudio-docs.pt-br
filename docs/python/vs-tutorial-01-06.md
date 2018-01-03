@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8356a9d4ab470b67a6e495d753fa498237e530f4
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 46048b135dc0023e2a7b918b72ec226af3ed22b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-working-with-git"></a>Etapa 6: trabalhando com Git
 
@@ -48,7 +49,6 @@ Este tópico descreve a criação de um repositório local do Git para um projet
 
 Para obter um tutorial mais abrangente sobre como trabalhar com Git, consulte [Compartilhar seu código com o Git do Visual Studio 2017 e do VSTS](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
 
-
 ## <a name="tutorial-review"></a>Análise do tutorial
 
 Parabéns por concluir este tutorial sobre Python no Visual Studio. Neste tutorial, você aprendeu como:
@@ -62,7 +62,7 @@ Parabéns por concluir este tutorial sobre Python no Visual Studio. Neste tutori
 
 Agora, explore os conceitos e guias de instruções, incluindo o seguinte:
 
-- [Criando uma extensão do C++ para Python](cpp-and-python.md)
+- [Criando uma extensão do C++ para o Python](cpp-and-python.md)
 - [Publicando no Serviço de Aplicativo do Azure](publishing-to-azure.md)
 - [Criação de perfil](profiling.md)
-- [Testes de Unidade](unit-testing.md)
+- [Teste de unidade](unit-testing.md)

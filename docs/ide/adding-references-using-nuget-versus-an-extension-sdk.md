@@ -11,11 +11,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: eea8b4bb93d0e848bd085fd534fcaaa553a15e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Adicionando referências usando o NuGet versus um SDK de Extensão
 
@@ -53,8 +54,8 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 |O mecanismo implanta os arquivos de não referência (por exemplo, implante a estrutura de testes na qual os testes de aplicativos [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] serão executados).|S|Se você soltar os arquivos na pasta \redist, eles serão implantados automaticamente.|S||
 |O mecanismo adiciona automaticamente os SDKs da plataforma no IDE do Visual Studio.|S|Se você soltar o SDK do [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou do Windows Phone em um local específico com um layout específico, o SDK será automaticamente integrado a todos os recursos do Visual Studio.|N||
 |O mecanismo dá suporte a um computador de desenvolvedor limpo. (Ou seja, não é necessária nenhuma instalação e a simples recuperação do controle do código-fonte funcionará.)|N|Como você referencia um SDK, é necessário verificar fazer check-in na sua solução e no SDK separadamente. É possível fazer check-in do SDK nos dois locais de não Registro padrão dos quais o MSBuild itera SDKs (para obter detalhes, consulte [Creating a Software Development Kit (Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md))). Como alternativa, se um local personalizado for composto dos SDKs, será possível especificar o código a seguir no arquivo de projeto:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Em seguida, faça check-in dos SDKs nesse local.|S|É possível fazer check-out da solução e o Visual Studio reconhece imediatamente e age nos arquivos.|
-|É possível ingressar a uma grande comunidade existente de autores de pacotes.|N/A|A comunidade é nova.|S||
-|É possível ingressar em uma grande comunidade existente de consumidores de pacotes.|N/A|A comunidade é nova.|S||
+|É possível ingressar a uma grande comunidade existente de autores de pacotes.|N/D|A comunidade é nova.|S||
+|É possível ingressar em uma grande comunidade existente de consumidores de pacotes.|N/D|A comunidade é nova.|S||
 |É possível ingressar em um ecossistema de parceiros (galerias personalizadas, repositórios e assim por diante).|N/D|Os repositórios disponíveis incluem Visual Studio Marketplace, o Centro de Download da Microsoft e a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|S||
 |O mecanismo se integra a servidores de build de integração contínua para criação e consumo de pacotes.|S|O SDK deve passar o local com check-in (propriedade SDKReferenceDirectoryRoot) na linha de comando para o MSBuild.|S||
 |O mecanismo dá suporte a versões do pacote estáveis e de pré-lançamento.|S|O SDK dá suporte à adição de referências a várias versões.|S||
@@ -63,7 +64,7 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 |O check-in dos pacotes pode ser feito no controle de versão.|S|Não é possível fazer check-in fora do nó Documentos, o que significa que o check-in dos SDKs da Extensão não pode ser feito. O tamanho do SDK da Extensão pode ser grande.|S||
 |É possível usar uma interface do PowerShell para criar e consumir pacotes.|Y (consumo), N (criação)|Não há ferramentas para a criação de um SDK. Consumo está sendo executado o MSBuild na linha de comando.|S||
 |É possível usar um pacote de símbolos para o suporte à depuração.|S|Se você soltar arquivos .pdb no SDK, os arquivos são selecionados automaticamente.|S||
-|O mecanismo dá suporte a atualizações automáticas do gerenciador de pacotes.|N/A|O SDK é revisado com o MSBuild.|S||
+|O mecanismo dá suporte a atualizações automáticas do gerenciador de pacotes.|N/D|O SDK é revisado com o MSBuild.|S||
 |O mecanismo dá suporte a um formato de manifesto leve.|S|O SDKManifest.xml dá suporte a muitos atributos, mas geralmente um pequeno subconjunto é necessário.|S||
 |O mecanismo está disponível para todas as edições do Visual Studio.|S|O SDK dá suporte a todas as edições do Visual Studio, desde o Visual Studio Express até o [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|S|O NuGet dá suporte a todas as edições do Visual Studio Express, do Express até o [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|
 |O mecanismo está disponível para todos os tipos de projeto.|N|O SDK dá suporte a aplicativos do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] a partir do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|N|É possível examinar uma lista de projetos permitidos.|

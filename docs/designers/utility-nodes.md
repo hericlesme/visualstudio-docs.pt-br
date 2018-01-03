@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d3d01a13acf68bbf8e58ca0fa1cb41b145d9d3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e2920642c46aa3f6cdf85f4f80c2334d18095718
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utility-nodes"></a>Nós de utilitário
 No Designer de Sombreador, nós de utilitário representam cálculos comuns e úteis de sombreador que não se enquadram em outras categorias. Alguns nós de utilitário realizam operações simples como acrescentar vetores ou escolher resultados condicionalmente; outros executam operações complexas, como calcular contribuições de iluminação de acordo com modelos populares de iluminação.  

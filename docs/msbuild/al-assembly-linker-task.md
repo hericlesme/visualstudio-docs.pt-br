@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 233946c0c46f9ee053f3497e7d6aa856315c3dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 46ddcdba540128ed866e136bf0db548575e63910
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="al-assembly-linker-task"></a>Tarefa AL (Assembly Linker)
 A tarefa AL encapsula AL.exe, uma ferramenta que é distribuída com o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Essa ferramenta, o Assembly Linker, é usada para criar um assembly com um manifesto com base em um ou mais arquivos que são arquivos de recurso ou módulos. Compiladores e ambientes de desenvolvimento talvez já forneçam essas funcionalidades, então muitas vezes não é necessário usar essa tarefa diretamente. O Assembly Linker é mais útil para os desenvolvedores que precisam criar um único assembly com base em vários arquivos de componente, como aqueles que podem ser produzidos via desenvolvimento de linguagens mistas. Essa tarefa não combina os módulos em um único arquivo do assembly; os módulos individuais ainda deverão ser distribuídos e estar disponíveis para que o assembly resultante carregue corretamente. Para obter mais informações sobre o AL.exe, consulte [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -45,7 +46,7 @@ A tarefa AL encapsula AL.exe, uma ferramenta que é distribuída com o [!INCLUDE
 |`Description`|Parâmetro `String` opcional.<br /><br /> Especifica uma cadeia de caracteres para o campo `Description` no assembly. Para obter mais informações, consulte a documentação da opção `/descr[iption]` em [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`EmbedResources`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Incorpora os recursos especificados na imagem que contém o manifesto do assembly. Essa tarefa copia o conteúdo do arquivo de recurso para a imagem. Os itens passados para esse parâmetro podem ter metadados opcionais chamados `LogicalName` e `Access` anexados a eles. Os metadados `LogicalName` são usados para especificar o identificador interno do recurso.  Os metadados `Access` podem ser definidos como `private` para tornar o recurso não visível para outros assemblies. Para obter mais informações, consulte a documentação da opção `/embed[resource]` em [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`EvidenceFile`|Parâmetro `String` opcional.<br /><br /> Insere o arquivo especificado no assembly com o nome do recurso de `Security.Evidence`.<br /><br /> Não é possível usar `Security.Evidence` para recursos comuns. Esse parâmetro corresponde à opção `/e[vidence]` em [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
-|`ExitCode`|Parâmetro de saída opcional somente leitura `Int32`.<br /><br /> Especifica o código de saída fornecido pelo comando executado.|  
+|`ExitCode`|Parâmetro somente leitura de saída `Int32` opcional.<br /><br /> Especifica o código de saída fornecido pelo comando executado.|  
 |`FileVersion`|Parâmetro `String` opcional.<br /><br /> Especifica uma cadeia de caracteres para o campo `File Version` no assembly. Para obter mais informações, consulte a documentação da opção `/fileversion` em [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Flags`|Parâmetro `String` opcional.<br /><br /> Especifica um valor para o campo `Flags` no assembly. Para obter mais informações, consulte a documentação da opção `/flags` em [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`GenerateFullPaths`|Parâmetro `Boolean` opcional.<br /><br /> Faz com que a tarefa use o caminho absoluto para todos os arquivos reportados em uma mensagem de erro. Esse parâmetro corresponde à opção `/fullpaths` em [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
