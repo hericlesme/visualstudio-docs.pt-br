@@ -26,13 +26,14 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="saving-data"></a>Salvando dados
+# <a name="saving-data"></a>Salvar Dados
 Salvar dados é que o processo de persistir alterado dados no modelo de dados do aplicativo para o armazenamento de dados original, geralmente um banco de dados relacional, como o SQL Server.  
   
  Atualizar uma fonte de dados por meio de um modelo de dados geralmente é um processo de duas etapas. A primeira etapa é atualizar o modelo de dados com novas informações — novos registros, registros alterados ou registros excluídos. A segunda etapa é salvar as alterações no seu modelo de dados no banco de dados.  

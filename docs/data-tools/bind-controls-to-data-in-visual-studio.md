@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Vincular controles a dados no Visual Studio
 Você pode exibir dados para usuários do seu aplicativo pela associação de dados a controles. Você pode criar esses controles associados a dados, arrastando itens a partir de **fontes de dados** window em uma superfície de design ou controles em uma superfície no Visual Studio.  
@@ -67,4 +68,4 @@ Você pode exibir dados para usuários do seu aplicativo pela associação de da
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)   
- [Vinculação de dados dos Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
+ [Associação de dados do Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)

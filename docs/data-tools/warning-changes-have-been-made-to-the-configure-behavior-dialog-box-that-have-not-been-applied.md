@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cb887a31855c7c31451b2f15c4da3c386a3fe0f4
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: a5243d0a7b4e1d6ddf8665afda98fef824f723b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas
 Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas. Você deseja aplicar as alterações?  
@@ -32,5 +33,5 @@ Aviso. As alterações foram feitas à caixa de diálogo configurar o comportame
 -   Clique em **não** para cancelar a alteração selecionado **classe** e **comportamento**.  
   
 ## <a name="see-also"></a>Consulte também
-[Mensagens de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

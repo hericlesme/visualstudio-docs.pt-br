@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc71529f852e87ca206509e06cb80940c11ac36d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 77d2780200fd8be7a42d396cdade39b271b04bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Vincular controles a imagens de um banco de dados
 Você pode usar o **fontes de dados** janela para vincular uma imagem em um banco de dados a um controle em seu aplicativo. Por exemplo, você pode vincular uma imagem a um <xref:System.Windows.Controls.Image> controle em um aplicativo WPF, ou para um <xref:System.Windows.Forms.PictureBox> controle em um aplicativo do Windows Forms.  

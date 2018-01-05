@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b81665c4709eb76b28f2e56dd83915fab66bbd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13fa98876bef582a45ef3c3eeb5a190d8895b80b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 Se uma função tem um ponto definido no qual a depuração é até o fim, o ponto de partida de depuração é identificada por um símbolo com um `SymTagFuncDebugEnd` marca.  

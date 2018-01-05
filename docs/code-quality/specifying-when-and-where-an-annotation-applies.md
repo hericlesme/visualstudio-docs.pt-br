@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5bfff9eb7e2040d5a4b75fa82c2a504f2aaeceda
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: eaca3429ccc1defe51ee849bf46146931390a571
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Especificando quando e onde uma anotação se aplica
 Quando uma anotação condicional, ele pode exigir outras anotações para especificar que o analisador.  Por exemplo, se uma função tem uma variável que pode ser síncronas ou assíncronas, a função se comporta da seguinte maneira: no caso síncrono sempre eventualmente tiver êxito, mas no caso assíncrono relata um erro se ele não pode ser bem-sucedida imediatamente. Quando a função é chamada de forma síncrona, verificar o valor do resultado não fornece um valor para o analisador de código porque não poderia ter retornado.  No entanto, quando a função é chamada de forma assíncrona e o resultado da função não estiver marcado, pode ocorrer um erro grave. Este exemplo ilustra uma situação em que você pode usar o `_When_` anotação — descrito posteriormente neste artigo, para habilitar a verificação.  

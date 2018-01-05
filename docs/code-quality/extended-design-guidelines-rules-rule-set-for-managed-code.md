@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdba59674b53f82707a586aa3f94695666db695e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 78b9d5a2c2f147ade02e3123e2e5c08f130b29de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Conjunto de regras de diretrizes do design estendido para código gerenciado
 O conjunto de regras de regras de diretrizes de Design estendido Microsoft expande as regras de diretriz do design básico para maximizar os problemas de usabilidade e manutenção que são relatados. É dada ênfase adicional diretrizes de nomenclatura. Você deve considerar como essa regra definida se seu projeto incluir código de biblioteca ou se você deseja impor os mais altos padrões para escrever código que é fácil de manter.  

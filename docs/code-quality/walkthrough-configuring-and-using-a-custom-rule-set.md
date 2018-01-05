@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Instruções passo a passo: configurando e usando um conjunto de regras personalizado
 Este passo a passo mostra como usar as ferramentas de análise de código que foram configuradas para usar um personalizado *conjunto de regras* em uma biblioteca de classe. Você pode selecionar um conjunto de regras que se relaciona ao tipo de projeto que você especificou para sua solução, ou pode selecionar conjuntos de regras alternativa para atender uma necessidade específica, como verificação de código herdado para problemas que podem ser corrigidos de forma incondicional. Em ambos os casos, os conjuntos de regras também podem ser personalizados para ajustá-las aos seus requisitos de projeto.  

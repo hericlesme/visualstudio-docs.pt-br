@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8fda7a1663a8aa9ccbf1f89f2a3b05d74b0a2316
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: af42a48a311cadba9fc22a487d03492f92ba6469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="typed-vs-untyped-datasets"></a>Tipo vs. conjuntos de dados não tipados
 Um conjunto de dados tipado é um conjunto de dados que primeiro é derivado da base de <xref:System.Data.DataSet> classe e, em seguida, usa as informações do **Dataset Designer**, que é armazenada em um arquivo. xsd, para gerar um novo fortemente tipado classe dataset. Informações do esquema (tabelas, colunas e assim por diante) são geradas e compiladas essa nova classe de conjunto de dados como um conjunto de propriedades e objetos de primeira classe. Como um conjunto de dados tipado herda da base de <xref:System.Data.DataSet> classe, a classe tipada pressupõe que todas as funcionalidades do <xref:System.Data.DataSet> de classe e pode ser usado com métodos que levam a uma instância de um <xref:System.Data.DataSet> classe como um parâmetro.  

@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b0607013b6c40fc4276a233556320efcaa9e20a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 683e5588a9d0d7355af4efd531e6e3889f943c03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-quality-tools"></a>Solucionando problemas de ferramentas de qualidade
 Se você enfrentar problemas ao executar ferramentas de qualidade do Visual Studio, os tópicos nesta seção podem ajudá-lo a diagnosticar e corrigir o problema.  

@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: a6c32f906ca3edfa8afb27937f859d93c8428168
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: cplusplus
+ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de diretrizes de núcleos de C++
 As diretrizes de núcleos de C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado por especialistas de C++ e designers. Visual Studio atualmente oferece suporte a um subconjunto dessas regras como parte de suas ferramentas de análise de código do C++. Os verificadores de diretriz de núcleo são instalados por padrão no Visual Studio de 2017 e são [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -95,7 +96,7 @@ A partir do Visual Studio 2017 versão 15,3, os conjuntos de regra com suporte s
 
   - **Regras de tipo** impor o [tipo de perfil das diretrizes de núcleos de C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
-  **Visual Studio 2017 versão 15,5**:
+  **Visual Studio 2017 versão 15.5**:
   - **Classe regras** algumas regras que se concentrar em uso adequado de métodos especiais e especificações virtuais. Este é um subconjunto de verificações recomendado para [classes e hierarquias de classe](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class). 
   - **Regras de simultaneidade** uma única regra que captura o protetor declarado badlyly objetos. Para obter mais informações, consulte [diretrizes relacionadas à simultaneidade](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
   - **Regras de declaração** algumas regras de [interfaces diretrizes](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) que se concentram em variáveis como globais são declarados.  

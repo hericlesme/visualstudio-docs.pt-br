@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c23e1ebdcf4a4c14fe269376b56a62742e44db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f09b82507fd9876f37233c5f2ee4b98aa3b44b88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="naming-warnings"></a>Avisos de nomenclatura
 Suporte a aderência às convenções de nomenclatura de avisos de nomenclatura de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] diretrizes de Design.  

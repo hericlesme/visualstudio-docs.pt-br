@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a38494b21c87e249317b0a55fbdffa95702404cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Criando conjuntos de regras de análise de código personalizados
 Você pode aplicar regras de análise de código para um projeto de código gerenciado, especificando um conjunto de regras que contém uma ou mais regras. Os conjuntos de regra padrão da Microsoft fornecem grupos de regras que são organizados por função e a profundidade. Por exemplo, as regras de diretrizes de Design básicas da Microsoft e as regras de diretrizes de Design estendido Microsoft contêm regras que se concentrar em usabilidade e questões de facilidade de manutenção, com ênfase adicional em regras de nomenclatura no conjunto de regras estendida.  

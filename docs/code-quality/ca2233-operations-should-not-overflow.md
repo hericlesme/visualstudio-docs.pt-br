@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8b602d83eee4be49f63eef0ee8d2cd3d77f5040
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5d048476997517a835337b568930367f97c2c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: as operações não devem estourar
 |||  
@@ -109,7 +110,7 @@ End Sub
   
 1.  Em **Solution Explorer**, clique com o botão direito e escolha **propriedades**.  
   
-2.  Selecione o **criar** guia e clique em **avançado**.  
+2.  Selecione a guia **Compilar** e clique em **Avançado**.  
   
 3.  Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.  
   

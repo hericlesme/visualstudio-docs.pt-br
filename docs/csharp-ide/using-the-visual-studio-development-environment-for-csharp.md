@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4836bdb470bf993bdc6f2b8f581859030016600
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 206d93d748a1d1033df48f9156997bd37b27f482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>Usando o ambiente de desenvolvimento do Visual Studio c# #
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio é uma coleção de ferramentas de desenvolvimento expostas por meio de uma interface de usuário comum. Algumas ferramentas são compartilhados com outras linguagens [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e outras, como o compilador C#, são exclusivas do Visual C#. Este tópico fornece links para as ferramentas do Visual C# mais importantes.  

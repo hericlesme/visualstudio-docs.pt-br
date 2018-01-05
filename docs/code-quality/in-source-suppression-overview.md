@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>Visão geral de supressão na origem
 Supressão na origem é a capacidade para suprimir ou ignorar violações de análise de código em código gerenciado, adicionando o **SuppressMessage** para os segmentos de código que causam a violação de atributo. O **SuppressMessage** é um atributo condicional que é incluído nos metadados do seu assembly de código gerenciado IL somente se o símbolo de compilação CODE_ANALYSIS é definido em tempo de compilação.  

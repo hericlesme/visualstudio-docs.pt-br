@@ -14,11 +14,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44d64b7371f1b27afaa7796dc42d4b7864d20819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51b282cb86ca83ecf2ace1e4b12c8444928b15e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Usando conjuntos de regras para agrupar regras de análise de código
 Quando você configurar a análise de código no [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], você pode escolher de uma lista de internos da Microsoft *conjuntos de regras*. Um conjunto de regras é um agrupamento lógico de regras de análise de código que identificam problemas de destino e as condições específicas. Por exemplo, você pode aplicar um conjunto de regras que foi projetado para verificar o código de APIs disponível publicamente, ou você pode aplicar um conjunto de regras que inclui apenas o mínimo recomendado de regras. Você também pode aplicar um conjunto de regras que inclui todas as regras.  

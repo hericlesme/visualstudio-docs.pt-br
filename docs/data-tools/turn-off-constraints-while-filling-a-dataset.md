@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 29b24794c74f2bd042845384d72a3716506d5e2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 88c8687511dd600802cc7c6ecdc12f0827fd7f6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Desativar restrições ao preencher um conjunto de dados
 Se um conjunto de dados contiver restrições (como restrições de chave estrangeira), eles podem gerar erros relacionados à ordem de operações que são executadas no conjunto de dados. Por exemplo, o carregamento de registros filho antes de carregar relacionado registros pai podem violar uma restrição e causar um erro. Assim que você carregue um registro filho, a restrição verifica o registro pai relacionado e gera um erro.  
