@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ebcb3325cfefdfeeb95b30477c4b266a70f40eb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8d387cd29b0c17bdb31db495fe42146cf1a886d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: tipos que tenham recursos nativos devem ser descartáveis
 |||  
@@ -63,4 +64,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Consulte também  
  [Limpando recursos não gerenciados](/dotnet/standard/garbage-collection/unmanaged)   
- [Padrão de Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Padrão de descarte](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5a0fc10230c4c2b7638e1be75770872e0dcf4aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c832b29512bfd7339ab60044ece81f1626be9bc7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Trabalhando no Editor de Conjunto de Regras de Análise do Código
 O editor de conjunto de regras de análise de código permite que você especifique as regras que são incluídas em um conjunto de regra personalizada e para especificar a ação. Você também pode especificar a ação a ser tomada quando a análise de código encontra uma violação da regra.  

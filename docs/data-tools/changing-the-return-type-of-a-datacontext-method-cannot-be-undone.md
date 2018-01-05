@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 28398032eb4c17916af4294e5ccab386040cf98e
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e28cf13486e21564c4acdf62e3edc89321a4f1b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Altere o tipo de retorno de um método DataContext não pode ser desfeito
 A alteração do tipo retornado por um método DataContext não pode ser desfeita. Para reverter de volta para o tipo gerado automaticamente, você deve arraste o item do Gerenciador de Servidores/Gerenciador de Base de dados em object relational Designer de Objetos novamente. Tem certeza de que deseja alterar o tipo retornado?  
@@ -40,5 +41,5 @@ O tipo de retorno de um método de <xref:System.Data.Linq.DataContext> diferem d
     Um método de <xref:System.Data.Linq.DataContext> é criado com o tipo de retorno padrão original.  
   
 ## <a name="see-also"></a>Consulte também
-[Mensagens de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
+[Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cab0c6607865f82fab0320d171ba0a7671b01ea1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 4b509a1943419e9e12f13575da2fb7f9991c7ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-managed-code-defects"></a>Como exibir defeitos de código gerenciado
 Análise de código, erros, avisos e mensagens são reportadas na janela análise de código. A janela de análise de código é exibida automaticamente quando você executa a análise de código em um projeto ou solução.  

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33080a55043f9c88fa8e44a71a863e3a62ab3a1b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Início Rápido: análise de código para C/C++
 Você pode melhorar a qualidade do seu aplicativo ao executar análise de código regularmente em código C ou C++. Isso pode ajudá-lo a localizar problemas comuns de violações de práticas recomendadas de programação ou defeitos que são difíceis de descobrir com testes. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código.  

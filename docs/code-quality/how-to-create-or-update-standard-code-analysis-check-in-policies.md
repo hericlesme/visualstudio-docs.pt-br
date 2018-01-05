@@ -14,11 +14,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6396b698a5f4d2602c9969d6cab0422832b3e6dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d11a8c3169b019ac504ed98258d9281037eb1dd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 Você pode exigir que a análise de código seja executada em todos os projetos de código em um projeto de equipe usando a análise de código check-in de política. Necessidade de análise de código pode melhorar a qualidade do código que é verificada para a base de código.  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfe5e81256c6a1c105d8bff88c7f6271ffa4d235
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 011773ab8a1f4436313b318a13bde637c91b055a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção básico para código gerenciado
 O conjunto de regras de correção básico se concentra em erros de lógica e erros comuns no uso de APIs do framework. As regras básicas de correção incluem as regras no conjunto de regras mínimo recomendado regras. Para obter mais informações, consulte [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) deve incluir esse conjunto de regras para expandir a lista de avisos que o mínimo recomendado de relatório de regras.  

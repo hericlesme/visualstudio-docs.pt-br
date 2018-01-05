@@ -27,11 +27,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 651108f2c917fb81857e3466384a9bfebada4a4b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 8aafad0da7581f1fa07f1e0134df0032655d679a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
 Você pode anotar os membros de classe e struct usando anotações que atuam como invariáveis — presume true em qualquer chamada de função ou entrada/saída da função que envolve a estrutura delimitador como um parâmetro ou um valor de resultado.  

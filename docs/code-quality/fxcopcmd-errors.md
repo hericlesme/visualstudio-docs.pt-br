@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2439b04c921de6e06b98bd1bb5a9fc0af3ea56d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fxcopcmd-errors"></a>Erros (FxCopCmd)
 FxCopCmd não considera todos os erros para ser fatal. Se FxCopCmd tem informações suficientes para executar uma análise parcial, ele executa as análise e relatórios de erros que ocorreram. O código de erro, que é um inteiro de 32 bits, contém uma combinação bit a bit de valores numéricos que correspondem a erros.  
