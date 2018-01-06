@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2adc2113d9ce1fbc2a80c9465ce403f03fc42db5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 80a8185961e53222b2aa9b71cd397b96c9368048
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento de assembly (Extensão do Assistente de Modelo do Visual Studio)
 Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interface.  

@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e1b298f8088adf05992f7ebf8b5afbb743ec995
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: ebae0886db71b0b06f346d6bd174951b1c5d4752
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-apps-on-a-remote-machine"></a>Executar aplicativos UWP em um computador remoto
 ![Aplica-se apenas ao Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -105,5 +106,5 @@ Para PCs com Windows 8.1 e Windows 10 computadores executando a versão de atual
  Em seguida, escolha **iniciar depuração** no **depurar** menu (teclado: F5). O projeto é recompilado, depois é implantado e iniciado no dispositivo remoto. O depurador suspende a execução em pontos de interrupção, e você pode fazer step-into, step-over e step-out do seu código. Escolha **parar depuração** para encerrar a sessão de depuração e fechar o aplicativo remoto. Para obter mais informações, consulte [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Testando aplicativos da UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Testando aplicativos UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

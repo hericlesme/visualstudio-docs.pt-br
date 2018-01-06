@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5f5592893452c3fdf7f535758f09d7877030c03
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 636f88313d53625e5bb778ffe7bebc8f891ed4bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refresh-a-uwp-or-windows-81-app"></a>Atualizar uma UWP ou um aplicativo do Windows 8.1
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/11/2017
   
 -   Alterações no arquivo de manifesto do pacote, inclusive nas imagens especificadas no manifesto do pacote.  
   
--   Alterações em referências, como a adição ou a remoção de uma referência de SDK, ou alterações nos componentes do Tempo de Execução do Windows (arquivos .winmd).  
+-   Alterações em referências, como a adição ou a remoção de uma referência de SDK, ou alterações nos componentes do Windows Runtime  (arquivos .winmd).  
   
 -   Alterações em recursos, como as efetuadas nas cadeias de caracteres dos arquivos .resjson.  
   

@@ -29,11 +29,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb41f8fea8447f8616b4c20f442ffd4fa8b48c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c1186da8d276796816d8531963f746f222526b6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em c# no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido no **inspecionar** janela usando especificadores de formato. Você também pode usar os especificadores de formato no **imediato** janela, o **comando** janela e até mesmo no windows de origem. Se você pausar em uma expressão nessas janelas, o resultado aparecerá em uma DataTip. As DataTips refletirão o especificador de formato na tela DataTip.  
@@ -41,7 +42,7 @@ Você pode alterar o formato no qual um valor é exibido no **inspecionar** jane
  Para usar um especificador de formato, digite a expressão seguida por uma vírgula. Após a vírgula, adicione o especificador apropriado.  
   
 ## <a name="using-format-specifiers"></a>Usando especificadores de formato  
- Se você tiver o código a seguir:  
+ Se você tiver o seguinte código:  
   
 ```CSharp  
 {  

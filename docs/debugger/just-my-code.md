@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Especifique se deseja depurar somente código de usuário usando apenas meu código do Visual Studio
 Você pode configurar o Visual Studio para passar por sistema, framework e outras chamadas de não usuário automaticamente e recolher dessas chamadas na janela de pilha de chamadas. O recurso que habilita ou desabilita a esse comportamento é chamado *apenas meu código*. Este tópico descreve como usar apenas meu código em projetos c#, Visual Basic, C++ e JavaScript.

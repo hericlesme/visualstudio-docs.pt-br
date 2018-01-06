@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71e467984e0211496bea39a7b0c5207b228e4071
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: c93436266dacada869ca461405e39d29be346e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-apps-from-visual-studio"></a>Executar aplicativos UWP do Visual Studio
 Os aplicativos UWP são executados em uma grande variedade de dispositivos, e o Visual Studio fornece várias maneiras de executar e interagir com esses aplicativos. A experiência "F5" é aprimorada para facilitar a depuração, a criação de perfil e o teste de aplicativos durante o desenvolvimento.  

@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16404b5446b8aedc26d8ecc88e88b6061d896e69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a6aa48e8a83263ed31a36c97020a0f495a7a50f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Como procurar um thread na exibição de threads
 Você pode procurar um segmento específico no modo de exibição de Threads por meio de sua cadeia de caracteres de ID ou o módulo de thread como critério de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrará os atributos do thread selecionado na árvore de thread.  

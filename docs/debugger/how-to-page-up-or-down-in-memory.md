@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90e55a7a16731d6e4e501282d7b96293d0bc9acd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0499fbf29e9bb16d0f5ff99c42f031d06e4fb4de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Como subir ou descer a página na memória
 Quando você exibir o conteúdo da memória em um **memória** janela ou **desmontagem** janela, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.  

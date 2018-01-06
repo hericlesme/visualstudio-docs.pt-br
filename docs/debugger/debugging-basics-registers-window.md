@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87c230ed85ed666abbad96bbdbda614ae0a01a1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82d8c547885021d83e272bcd3ab1a5d560c73a39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>Sobre a janela de registros no Visual Studio
 O **registra** janela só estará disponível se a depuração de nível de endereço está habilitada no **opções** caixa de diálogo, **depuração** nó.  

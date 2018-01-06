@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: dotnet
+ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código suportadas (c# e Visual Basic)
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.
@@ -36,7 +37,7 @@ A tabela a seguir mostra as alterações que podem ser feitas para c# e o códig
 |Elemento de linguagem/recurso|Operação de edição com suporte|Limitações|
 |-|-|-|
 |Tipos|Adicionar métodos, campos, construtores, et al|[Sim](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Iteradores|Adicionar ou modificar|Não|
+|Iterators|Adicionar ou modificar|Não|
 |expressões async/await|Adicionar ou modificar|[Sim](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Objetos dinâmicos|Adicionar ou modificar|Não|
 |expressões lambda|Adicionar ou modificar|[Sim](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
@@ -78,7 +79,7 @@ A tabela a seguir mostra as alterações que podem ser feitas para c# e o códig
 |blocos try-catch-finally|Modificar quando ela contém uma instrução ativa|
 |usando instruções|Adicionar|
 |métodos/lambdas assíncrono|Modificar um método/lambda assíncrona em um projeto de destino do .NET Framework 4 e diminuir (consulte [detalhes](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iteradores|Modificar um iterador em um projeto de destino do .NET Framework 4 e diminuir (consulte [detalhes](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Iterators|Modificar um iterador em um projeto de destino do .NET Framework 4 e diminuir (consulte [detalhes](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
   
 ## <a name="unsafe-code"></a>Código não seguro  
  Alterações em código não seguro têm as mesmas limitações que as alterações para o código de segurança, com uma restrição adicional: editar e continuar não dá suporte a alterações de código não seguro que sai dentro de um método que contém o `stackalloc` operador.  

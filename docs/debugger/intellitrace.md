@@ -24,11 +24,12 @@ caps.latest.revision: "135"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f009abffb1c956a0f7c57315181234fbea2fc1c
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Você pode passar menos tempo depurar seu aplicativo quando você usar o IntelliTrace para registrar e rastrear o histórico de execução do seu código. Você pode localizar erros facilmente como IntelliTrace permite que você:  
@@ -141,7 +142,7 @@ Você pode passar menos tempo depurar seu aplicativo quando você usar o Intelli
   
     -   [Usar o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [Usar salva dados do IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
+    -   [Usar dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
     -   [Instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)  
  
@@ -184,7 +185,7 @@ Você pode passar menos tempo depurar seu aplicativo quando você usar o Intelli
   
  [Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)  
   
- [Usar salva dados do IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
+ [Usar dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blogs  
  [O Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)  

@@ -12,11 +12,12 @@ ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9312ad8a96c5829aae21c87e78a0d5f2f0db1b35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d349222b138a8d5c359d174849faf7641befc482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-frame-validation"></a>Validação de quadro de gráficos
 <!-- VERSIONLESS -->
@@ -32,7 +33,7 @@ ID do evento | ID que é mapeada para uma entrada de [lista de eventos](graphics
 Severidade | Corrupção, erro, aviso, informações ou mensagem.
 Categoria | Aplicativo definido, diverso, inicialização, limpeza, compilação, estado de criação, configuração de estado, obtendo estado, execução, manipulação de recursos, sombreador, redundante e não utilizado.
 Mensagem | A mensagem associada ao evento.
-Evento | O evento associado com o erro ou aviso.
+evento | O evento associado com o erro ou aviso.
 
 ## <a name="see-also"></a>Consulte também  
 [Diagnóstico de gráficos (depuração DirectX Graphics)](visual-studio-graphics-diagnostics.md)   

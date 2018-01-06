@@ -30,11 +30,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0318f5a3cb1cd19c658030d64c4f6ec8bcbf0a9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em C++ no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido no **inspecionar** janela usando especificadores de formato.  
@@ -48,7 +49,7 @@ Você pode alterar o formato no qual um valor é exibido no **inspecionar** jane
 > -   [Especificadores de formato para depuração interop com C + + CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração mais antigo.  
   
 ## <a name="using-format-specifiers"></a>Usando especificadores de formato  
- Se você tiver o código a seguir:  
+ Se você tiver o seguinte código:  
   
 ```C++  
 int main() {  
@@ -76,7 +77,7 @@ int main() {
 |**SB**|Const char * cadeia de caracteres (sem aspas)|\<local > "Olá, mundo"|Olá, mundo|  
 |s8|Cadeia de caracteres UTF-8|\<local > "Este é um â˜• de xícara de café UTF-8"|"Este é um ☕ de xícara de café UTF-8"|
 |**s8b**|Cadeia de caracteres UTF-8 (sem aspas)|\<local > "Olá, mundo"|Olá, mundo|  
-|su|Cadeia de caracteres Unicode (codificação UTF-16)|\<local > L "hello world"|L "hello world"<br /><br /> u "hello world"|  
+|su|Cadeia de caracteres Unicode (codificação UTF-16)|\<local > L "hello world"|L "hello world"<br /><br /> U "hello world"|  
 |sub|Cadeia de caracteres Unicode (codificação UTF-16) (sem aspas)|\<local > L "hello world"|Olá, mundo|  
 |bstr|Cadeia de caracteres BSTR|\<local > L "hello world"|L "hello world"|  
 |Env|Bloco de ambiente (cadeia de caracteres nula duplo encerrado)|\<local > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
@@ -132,14 +133,14 @@ int main() {
 |Símbolo|Formatar|Valor original de inspeção|Valor exibido|  
 |------------|------------|--------------------------|---------------------|  
 |**ma**|Caracteres ASCII na base 64|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**MB**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**m**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
+|**MB**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|  
 |**mW**|8 palavras|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**MD**|4 palavra duplas|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**MQ**|2 palavras quádruplas|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**MU**|Caracteres de 2 bytes (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Especificador de tamanho para ponteiros como matrizes em depuração interop com C + + CLIt  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Especificador de tamanho para ponteiros como matrizes em depuração interop com C + + CLI  
  Se você tiver um ponteiro para um objeto que você deseja exibir como uma matriz, pode usar um inteiro para especificar o número de elementos da matriz:  
   
 |Especificador|Formatar|Expressão|Valor exibido|  

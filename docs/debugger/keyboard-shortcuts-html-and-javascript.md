@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea32fcb78986d527959b8ef602161e5336395bfc
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 1d40167e8d7510e719fa55c534feb44ac877182a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Atalhos de teclado (HTML e JavaScript)
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/11/2017
 |Ação|Atalho|  
 |------------|--------------|  
 |Executar um comando do console|Enter|  
-|Limpar o console|Esc|  
+|Limpar o console|ESC|  
 |Alterar entre o modo de linha única e o modo de várias linhas|Ctrl+Alt+M|  
   
 ## <a name="dom-explorer-shortcuts"></a>Atalhos do Explorador do DOM  
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/11/2017
 |Alternar entre exibir e ocultar caixas de realce da página da Web usando **selecionar elemento**|Ctrl+Shift+I|  
 |Confirmar alterações usando **editar como HTML**|Ctrl+Enter|  
 |Descartar alterações usando **editar como HTML**|ESC|  
-|Aumentar o valor de CSS escolhido em 1|Seta para cima|  
+|Aumentar o valor de CSS escolhido em 1|Seta para Cima|  
 |Diminuir o valor de CSS escolhido em 1|Seta para Baixo|  
   
 ## <a name="see-also"></a>Consulte também  

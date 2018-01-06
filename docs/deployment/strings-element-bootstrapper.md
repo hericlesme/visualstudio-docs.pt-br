@@ -21,11 +21,12 @@ caps.latest.revision: "4"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadeias de caracteres&gt; elemento (Bootstrapper)
 Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pacote e mensagens de erro de instalação.  
@@ -44,7 +45,7 @@ Define as cadeias de caracteres localizadas para nomes de produtos, nomes de pac
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
  O `Strings` elemento é um filho de `Package` elemento. Ele não tem atributos.  
   
-## <a name="string"></a>Cadeia de caracteres  
+## <a name="string"></a>Cadeia de Caracteres  
  O `String` elemento é um filho de `Strings` elemento. Um `Strings` elemento pode ter um ou mais `String` elementos.  
   
  `String`tem o seguinte atributo.  

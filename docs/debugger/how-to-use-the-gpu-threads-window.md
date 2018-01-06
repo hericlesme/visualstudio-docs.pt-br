@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23bb4ee4550f70681152fc14cc66a642597125ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4782a1650034424d2616e47f46e07cec4d01ae5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Como usar a janela Threads de GPU
 Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos que são executados na GPU, consulte [visão geral do C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
@@ -60,7 +61,7 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
   
 3.  No **depurador a iniciar** lista, selecione **depurador Local do Windows**. No **tipo de depurador** lista, selecione **somente GPU**. Você deve escolher este depurador para parar em pontos de interrupção no código executado no GPU.  
   
-4.  Selecione o botão **OK**.  
+4.  Escolha o botão **OK**.  
   
 5.  Defina um ponto de interrupção no código do GPU.  
   

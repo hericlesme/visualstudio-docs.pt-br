@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8cc048ca07cca3b6005f938c4a97a225f472b7d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 064c16fee5615750df32b02e660429e8fceaec86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizer-api-reference"></a>Referência de API do visualizador
 As APIs do Visualizador são fornecidas para os usuários que quiserem escrever um visualizador para o depurador do Visual Studio. Um visualizador é um aplicativo pequeno que estende a funcionalidade da interface de usuário do depurador do Visual Studio. Um visualizador pode exibir (e, opcionalmente, editar) um objeto de dados de um tipo específico para o qual o Visualizador é criado.  

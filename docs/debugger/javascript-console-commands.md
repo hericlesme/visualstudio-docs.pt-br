@@ -21,11 +21,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9808c664e5e3d06558faf8f9b44a6a2bb6e9b83
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 32aa07920c496249271e6c337952129292a3d2aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos do Console do JavaScript no Visual Studio
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -59,9 +60,9 @@ ms.lasthandoff: 11/11/2017
 |`groupEnd()`|Encerra o grupo atual.<br /><br /> Requisitos:<br /><br /> Visual Studio 2013|Consulte o exemplo do comando `group`.|  
 |`info(message)`|Envia `message` para a janela do console. A mensagem é prefaciada por um símbolo de informação.|`console.info("info message");`<br /><br /> Para obter mais exemplos, consulte [formatação da saída do console.log](#ConsoleLog) mais adiante neste tópico.|  
 |`log(message)`|Envia `message` para a janela do console.<br /><br /> Se você transmitir um objeto, este comando o enviará para a janela do console e o exibirá num visualizador de objeto. Você pode usar o visualizador para inspecionar propriedades na janela do console.|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|Usado em aplicativos da Web. Não tem suporte em aplicativos UWP usando JavaScript.|Não há suporte.|  
-|`profile(reportName)`|Usado em aplicativos da Web. Não tem suporte em aplicativos UWP usando JavaScript.|Não há suporte.|  
-|`profileEnd()`|Usado em aplicativos da Web. Não tem suporte em aplicativos UWP usando JavaScript.|Não há suporte.|  
+|`msIsIndependentlyComposed(element)`|Usado em aplicativos da Web. Não tem suporte em aplicativos UWP usando JavaScript.|Sem suporte.|  
+|`profile(reportName)`|Usado em aplicativos da Web. Não tem suporte em aplicativos UWP usando JavaScript.|Sem suporte.|  
+|`profileEnd()`|Usado em aplicativos da Web. Não tem suporte em aplicativos UWP usando JavaScript.|Sem suporte.|  
 |`select(element)`|Seleciona o HTML especificado `element` no [Explorador do DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Inicia um temporizador que é identificado pelo parâmetro `name` opcional. Quando usado com `console.timeEnd`, calcula o tempo decorrido entre `time` e `timeEnd` e envia o resultado (medido em ms) ao console usando a cadeia de caracteres `name` como prefixo. Usado para habilitar a instrumentação de código do aplicativo para medir o desempenho.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Interrompe um temporizador que é identificado pelo parâmetro `name` opcional. Consulte o comando `time` do console.|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
