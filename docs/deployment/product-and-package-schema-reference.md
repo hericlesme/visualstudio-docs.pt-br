@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ad3f3df67fe2545aadc8da71b89e600895cea780
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="product-and-package-schema-reference"></a>Referência de esquema de produto e pacote
 Um *arquivo produto* é um manifesto XML que descreve todas as dependências externas exigidas por um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Exemplos de dependências externas a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e o Microsoft Data Access Components (MDAC). Um arquivo de pacote é semelhante a um arquivo de produto, mas é usado para instalar os componentes dependentes de cultura de uma dependência, como assemblies localizados, contratos de licença e documentação.  

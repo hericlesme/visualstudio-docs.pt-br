@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b52121850bd82090e756f700880be02d35e6d86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usando o Microsoft Monitoring Agent
 Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e do SharePoint 2010 ou 2013 aplicativos para erros, problemas de desempenho ou outros problemas usando **Microsoft Monitoring Agent**. Você pode salvar eventos de diagnóstico do agente em um arquivo de log do IntelliTrace (.iTrace). Em seguida, você pode abrir o log no Visual Studio Enterprise (mas não nas edições Professional ou comunidade) para depurar problemas com todas as ferramentas de diagnóstico do Visual Studio. Você também pode coletar dados de diagnóstico do IntelliTrace e método executando o agente em **rastreamento** modo. Microsoft Monitoring Agent podem ser integrado com [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) e [do System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado.  
@@ -218,7 +219,7 @@ Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e d
   
 -   Tipos de dados primitivos em campos para objetos no nível superior passados e retornados de métodos  
   
- Por exemplo, suponhamos que você tenha uma assinatura de método `AlterEmployee` que aceite um inteiro `id` e um objeto `Employee``oldemployee`:  
+ Por exemplo, suponhamos que você tenha uma assinatura de método `AlterEmployee` que aceite um inteiro `id` e um objeto `Employee` `oldemployee`:  
   
  `public Employee AlterEmployee(int id, Employee oldemployee)`  
   

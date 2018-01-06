@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ffb8aed183b50958c8835b2a1e79b808ac20174
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eec62227ec39c1758c15e83fd1d8306e807d59fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Alterando a aparência de um comando
 Você pode fornecer comentários ao usuário alterando a aparência de um comando. Por exemplo, talvez seja um comando para ter uma aparência diferente quando ele não está disponível. Você pode ativar ou desativar a comandos, ocultar ou mostrá-los, ou marque ou desmarque-os no menu.  

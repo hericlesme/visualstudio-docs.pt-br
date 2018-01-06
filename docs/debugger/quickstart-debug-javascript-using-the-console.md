@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5aed6bc3f7cd8c258eb7f566d6843792f5949b95
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guia de início rápido: depurar o JavaScript usando o console
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -43,7 +44,7 @@ ms.lasthandoff: 11/11/2017
   
 -   Execute o código JavaScript, que é executado no contexto do script atual.  
   
--   Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Tempo de Execução do Windows.  
+-   Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Windows Runtime .  
   
 -   Realizar outras tarefas, como limpar a tela. Consulte [comandos do JavaScript Console](../debugger/javascript-console-commands.md) para obter a lista completa de comandos.  
   

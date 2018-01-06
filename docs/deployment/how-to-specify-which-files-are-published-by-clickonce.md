@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 68773435bc35a93ab49189306db532c68e2b8dad
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: eee0e88b23a26ae7a89005ff304b565dd3d84c34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Como especificar os arquivos a serem publicados pelo ClickOnce
 Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos de aplicativo, todos os não-código do projeto são implantados com o aplicativo. Em alguns casos, não pode ser ou precisa publicar certos arquivos, ou talvez você queira instalar determinados arquivos com base nas condições. O Visual Studio fornece os recursos para excluir arquivos, marcar arquivos como arquivos de dados ou de pré-requisitos e criar grupos de arquivos para instalação condicional.  

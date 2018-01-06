@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc458bddfe354f43afd15176d0283cad4875234d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-windows-phone-81-apps-in-the-emulator"></a>Executar aplicativos do Windows Phone 8.1 no emulador
 O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode depurar e testar aplicativos do Windows Phone em seu computador sem um dispositivo físico. Você pode simular eventos comuns de toque e rotação e escolher o tamanho da tela física e a resolução que deseja emular. Você também pode testar muitas funcionalidades normalmente usadas, como local, rede, notificações, sensores, acelerômetro e cartão SD opcional.  

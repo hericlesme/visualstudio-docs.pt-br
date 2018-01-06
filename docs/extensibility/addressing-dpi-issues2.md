@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e944c8a998a3e8bba46d5018faf1b9103a91240
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addressing-dpi-issues"></a>Resolvendo problemas de DPI
 Um número crescente de dispositivos é fornecidos com telas "alta resolução". Normalmente, essas telas têm mais de 200 pixels por polegada (ppi). Trabalhar com um aplicativo nesses computadores exigirá o conteúdo a ser expandido para atender às necessidades de exibir o conteúdo em uma distância de exibição normal para o dispositivo. A partir de 2014, o destino principal de alta densidade exibe é móvel (tablets, laptops clamshell e celulares) de dispositivos de computação.  

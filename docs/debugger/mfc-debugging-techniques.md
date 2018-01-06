@@ -28,11 +28,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 274cd182fa3b9eab23c151a4143c935c24f68fea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuração MFC
 Se você estiver depurando um programa MFC, essas técnicas de depuração poderão ser úteis.  

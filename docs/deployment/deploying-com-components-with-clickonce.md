@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d3a8ae32afec789595ecd126eeaee0c5ea05a9e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implantando componentes do COM com o ClickOnce
 Implantação de componentes legados COM tradicionalmente foi uma tarefa difícil. Componentes precisam ser registrado globalmente e, portanto, podem causar efeitos colaterais indesejáveis entre aplicativos sobrepostos. Essa situação geralmente não é um problema em aplicativos do .NET Framework porque componentes são completamente isolados a um aplicativo ou são compatíveis com o lado a lado. O Visual Studio permite que você implante componentes isolados no sistema de operacional superior ou o Windows XP.  

@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2a731c504355cbd3869790720af1f67f6c6bf0eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (Bootstrapper)
 O `InstallChecks` elemento dá suporte a partir de uma variedade de testes para o computador local para garantir que todos os pré-requisitos apropriados para um aplicativo foi instalados.  
@@ -126,7 +127,7 @@ O `InstallChecks` elemento dá suporte a partir de uma variedade de testes para 
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Property`|Necessário. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
-|`Key`|Necessário. O nome da chave do registro.|  
+|`Key`|Necessário. O nome da chave do Registro.|  
 |`Value`|Opcional. O nome do valor do registro para recuperar. O padrão é retornar o texto do valor padrão. `Value`deve ser um DWORD ou uma cadeia de caracteres.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
@@ -137,7 +138,7 @@ O `InstallChecks` elemento dá suporte a partir de uma variedade de testes para 
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Property`|Necessário. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
-|`Key`|Necessário. O nome da chave do registro. Seu valor é interpretado como o caminho para um arquivo, a menos que o `File` atributo está definido. Se essa chave não existir, `Property` não está definido.|  
+|`Key`|Necessário. O nome da chave do Registro. Seu valor é interpretado como o caminho para um arquivo, a menos que o `File` atributo está definido. Se essa chave não existir, `Property` não está definido.|  
 |`Value`|Opcional. O nome do valor do registro para recuperar. O padrão é retornar o texto do valor padrão. `Value`deve ser uma cadeia de caracteres.|  
 |`FileName`|Opcional. O nome de um arquivo. Se especificado, o valor obtido da chave do registro deve para ser um caminho de diretório, e esse nome é anexado a ele. Se não for especificado, o valor retornado do registro deve para ser o caminho completo para um arquivo.|  
 |`SearchDepth`|Opcional. A profundidade na qual Pesquisar subpastas do compartilhamento de arquivo nomeado. A pesquisa é de profundidade. O padrão é 0, o que restringe a pesquisa a pasta de nível superior especificada pelo valor da chave do registro.|  

@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2db510e81231f7802d686b21a977c271a66c5d79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-engine"></a>Mecanismo de depuração
 Um mecanismo de depuração (DE) funciona com o sistema operacional ou interpretador para fornecer serviços de depuração, como avaliação de expressão, os pontos de interrupção e controle de execução. O DE é responsável por monitorar o estado de um programa que está sendo depurado. Para fazer isso, o DE usa qualquer métodos estão disponíveis para ele no tempo de execução com suporte, se da CPU ou APIs fornecidos pelo tempo de execução.  

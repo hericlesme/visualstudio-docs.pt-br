@@ -115,11 +115,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e32547d66d1bf4de73b209ac0174598da9bbb731
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configurações de projeto para uma configuração de depuração de C++
 Você pode alterar as configurações de projeto para uma configuração de depuração C ou Visual C++ no **páginas de propriedade** caixa de diálogo, conforme discutido em [como: definir depuração e configurações de versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar configurações relacionadas a depuração no **páginas de propriedade** caixa de diálogo.  

@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f81ab0253c9820f1e6c89ebf455601059d43bda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b8e9dfcc3f918dba7444b6a3478c8b6a2fb5db21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandname-element"></a>Elemento CommandName
 O `CommandName` elemento Especifica o texto que aparece na categoria de teclado no **opções** caixa de diálogo e, no **comandos** lista o **personalizar** caixa de diálogo caixa.  

@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.openlocfilehash: acef07cd95395312d1456401bd58142264d89794
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como publicar um aplicativo WPF com estilos visuais habilitados
 Estilos visuais permitem a aparência de controles comuns para mudar de acordo com o tema escolhido pelo usuário. Por padrão, estilos visuais não estão habilitados para aplicativos do Windows Presentation Foundation (WPF), portanto você deve habilitá-las manualmente. No entanto, habilitar estilos visuais para um aplicativo do WPF e, em seguida, a solução de publicação causa um erro. Este tópico descreve como resolver esse erro e o processo para publicar um aplicativo do WPF com estilos visuais habilitados. Para obter mais informações sobre estilos visuais, consulte [visão geral de estilos](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Para obter mais informações sobre a mensagem de erro, consulte [de solução de problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  

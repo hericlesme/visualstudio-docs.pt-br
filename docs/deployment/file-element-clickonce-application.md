@@ -26,11 +26,12 @@ caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f448b7455bcbe13b7257a58a0eafbadd1165b197
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;arquivo&gt; elemento (aplicativo ClickOnce)
 Identifica todos os arquivos nonassembly baixado e usado pelo aplicativo.  

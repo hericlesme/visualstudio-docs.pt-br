@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Alterar configurações de exibição usando a API herdado
 As configurações para os principais recursos do editor, como quebra automática de linha, a margem de seleção e o espaço virtual, podem ser alteradas pelo usuário por meio do **opções** caixa de diálogo. No entanto, também é possível alterar essas configurações por meio de programação.  

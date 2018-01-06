@@ -16,11 +16,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 786d7c8841f680d5af5c539e30723289df4db0f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 720aeb5670127d64e7b3fc9b016a032c0526c083
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Adicionar um controlador de Menu a uma barra de ferramentas
 Este passo a passo se baseia o [adicionando uma barra de ferramentas para uma janela de ferramenta](../extensibility/adding-a-toolbar-to-a-tool-window.md) passo a passo e mostra como adicionar um controlador de menu na barra de ferramentas de janela de ferramenta. As etapas mostradas aqui também podem ser aplicadas para a barra de ferramentas é criada no [adicionando uma barra de ferramentas](../extensibility/adding-a-toolbar.md) passo a passo.  

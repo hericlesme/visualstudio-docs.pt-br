@@ -24,11 +24,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ea763f5bbe174a0c8e58a72737e25b8a5e9a7b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar arquivos de despejo com o Visual Studio
 Arquivos de despejo com ou sem heaps; criar um arquivo de despejo de memória. abrir um arquivo de despejo de memória; Localize os binários, o do pdb e o arquivo de origem para um arquivo de despejo.

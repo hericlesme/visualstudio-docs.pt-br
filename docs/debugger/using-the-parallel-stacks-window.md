@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32870ebf31c88bbc6bdf024c2c4c93ae1869660a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Exibir Threads e tarefas usando a janela pilhas paralelas
 O **pilhas paralelas** janela é útil quando você estiver depurando aplicativos multithread. Seu **exibição de Threads** mostra informações da pilha de chamada para todos os threads em seu aplicativo. Permite navegar entre os threads e os quadros da pilha nesses threads. No código gerenciado, o **exibição tarefas** mostra chamar pilhas de <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. No código nativo, o **exibição tarefas** mostra chamar pilhas de [grupos de tarefas](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralelo algoritmos](/cpp/parallel/concrt/parallel-algorithms), [agentes assíncronos](/cpp/parallel/concrt/asynchronous-agents)e [tarefas leves](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  

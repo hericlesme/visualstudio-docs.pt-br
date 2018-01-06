@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f24037448970f7104174aacdc2bf53df6dc7b9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 62ec48106915f43ace3aed370e652e036e97baa0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Opções de linha de comando (SDK do Visual Studio)
 Devenv.exe, o executável que inicia o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE), oferece suporte a opções de linha de comando especificamente para desenvolvimento de VSPackages. VSPackages também pode fazer suas próprias opções disponíveis na linha de comando Devenv. Os tópicos a seguir fornecem informações sobre como usar as opções de linha de comando no IDE.  

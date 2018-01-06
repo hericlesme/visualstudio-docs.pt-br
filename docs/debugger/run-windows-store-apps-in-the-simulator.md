@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>Executar aplicativos UWP e Windows 8.1 no simulador
 O simulador do Visual Studio para aplicativos UWP e Windows 8.1 é um aplicativo de área de trabalho que simula um aplicativo UWP ou Windows 8.1. Você pode executar aplicativos, escolha o tamanho da tela física e a resolução que você deseja emular. Você também pode simular eventos comuns de toque e rotação e simular propriedades de conexão de rede.
@@ -146,7 +147,7 @@ O simulador do Visual Studio para aplicativos UWP e Windows 8.1 é um aplicativo
   
  [Como responder a eventos do sistema com tarefas em segundo plano](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Como disparar suspender, continuar e eventos em aplicativos UWP em segundo plano](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Como disparar eventos para suspender, retomar e em segundo plano em aplicativos UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Navegar no simulador com o teclado  
  Você pode navegar a barra de ferramentas do simulador pressionando **CTRL + ALT + seta para cima** para alternar o foco da janela do simulador na barra de ferramentas do simulador. Use o **seta para cima** e **seta para baixo** para mover entre os botões da barra de ferramentas.  

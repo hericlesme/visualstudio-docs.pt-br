@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dcd2b8457854817f84272420a42872a1b947e6c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd6acee81b2202500c9d84f5920cd4f1019a3b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Fontes de evento (SDK do Visual Studio)
 Há duas fontes de eventos: o mecanismo de depuração (DE) e a sessão de depuração do Gerenciador (SDM). Eventos enviados a partir DE tem um mecanismo de não-nulo, enquanto os eventos enviados a partir do SDM tem um mecanismo NULL.  

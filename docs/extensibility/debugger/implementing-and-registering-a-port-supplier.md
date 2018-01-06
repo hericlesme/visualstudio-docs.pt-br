@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementando e registrando um fornecedor de porta
 A função de um fornecedor de porta é rastrear e fornecer portas, que por sua vez, gerenciar processos. No momento em que uma porta precisa ser criado, o fornecedor de porta é instanciado usando CoCreate com o GUID do fornecedor de porta (o Gerenciador de sessão de depuração [SDM] usará o usuário selecionado do fornecedor de porta ou o fornecedor de porta especificado pelo sistema de projeto). O SDM chamará [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para ver se todas as portas podem ser adicionadas. Se uma porta pode ser adicionada, uma nova porta é solicitada ao chamar [adicionar porta](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) e passá-lo um [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) que descreve a porta. `AddPort`Retorna uma nova porta representada por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface.  
