@@ -20,11 +20,12 @@ caps.latest.revision: "101"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9d8bd58c8dabc1114b3516e518992b0f91bc173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b03d391917bb472b8b7c1780942c8259562a633
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="actions-pane-overview"></a>Visão geral do painel Ações
   Um painel de ações é uma personalizável **ações do documento** painel de tarefas que está anexado a um documento específico do Microsoft Office Word ou pasta de trabalho do Microsoft Office Excel. Ele está hospedado dentro do painel de tarefas do Office junto com outros painéis de tarefas interna, como o **origem XML** no Excel ou o **estilos e formatação** painel de tarefas no Word. Você pode usar controles de formulários do Windows ou controles do WPF para criar a interface de usuário do painel de ações.  

@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 9a77adbe5e2663ef11242d162b6ac718d88daea5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d583c662de31b990982b78d876bc0046e89089d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pickbranch-activity-designer"></a>Designer de atividade de PickBranch
 <xref:System.Activities.Statements.PickBranch> fornece um caminho de execução baseado em uma atividade de <xref:System.Activities.Statements.Pick> que pode ser acionada por um evento de entrada.  
@@ -59,4 +60,4 @@ ms.lasthandoff: 10/27/2017
 ## <a name="see-also"></a>Consulte também  
  [Fluxo de controle](../workflow-designer/control-flow-activity-designers.md)   
  [Escolher atividade](/dotnet/framework/windows-workflow-foundation/pick-activity)   
- [Usando a atividade de picareta](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)
+ [Usando a atividade de Pick](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)

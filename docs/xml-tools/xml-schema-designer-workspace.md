@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4a51f3c0491f35f10d8266b4cb06d3de686e021
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a3da032000d5d286e8476673b3c53b993b18303
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer-workspace"></a>O espaço de trabalho do designer de esquema XML
 O designer de esquema XML (XSD) designer é uma ferramenta gráfico que ajuda você explora seus esquemas XML. Além de [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), que permite que você navegue e navegar na árvore de esquema XML e realizar pesquisas, o Designer de XSD fornece três modos de exibição que permitem que você explore o seu esquema XSD em mais detalhes. A Exibição inicial é o ponto de partida para o Designer XSD; A partir da exibição inicial, é possível navegar até outras exibições do Designer XSD e ver os detalhes de seu conjunto de esquema. A Exibição de Gráfico permite que você tenha uma visão geral do conjunto de esquema e veja a relação entre os nós do esquema. A Exibição de Modelo de Conteúdo oferece uma representação gráfica dos detalhes de nós de esquema local e global, incluindo tipos complexos e simples, elementos, grupos, atributos e grupos de atributos.  

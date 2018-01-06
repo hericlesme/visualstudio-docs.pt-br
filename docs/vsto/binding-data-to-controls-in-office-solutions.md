@@ -23,11 +23,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb94603d3041a30e978fff0ac6fff399648fc027
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70748440dc325266439ee71569e858eb3d815fc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-data-to-controls-in-office-solutions"></a>Associando dados a controles em soluções do Office
   Você pode associar controles de formulários do Windows e *hospedar controles* em um documento do Microsoft Office Word ou planilha do Microsoft Office Excel para uma fonte de dados para os controles de exibem automaticamente os dados. Você pode associar dados a controles em projetos do nível do aplicativo e o nível do documento.  
@@ -105,7 +106,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Consulte também  
  [Como usar consumir os dados do banco de dados no Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)   
- [Vinculação de dados e os Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)   
+ [Associação de dados e o Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)   
  [Como criar um controle associado simples em um Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)   
  [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Salvar dados no banco de dados](../data-tools/save-data-back-to-the-database.md)    

@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-workflow-project"></a>Criando um fluxo de trabalho Projeto
 Fluxos de trabalho, os serviços de fluxo de trabalho [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] , as atividades personalizados, e designers personalizados de atividade podem ser criados usando modelos de projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Esta seção descreve como criar bibliotecas e aplicativos com modelos de projeto disponíveis em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

@@ -30,11 +30,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097a4247ccc7604dd4c39b81e0f733578fc91c89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5a655210f3ab8bbcdbae7c06815a05d1ad24b390
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefa personalizados
   Painéis de tarefas estão os painéis de interface do usuário que são normalmente encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Painéis de tarefas personalizados oferecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar recursos da solução. Por exemplo, a interface pode conter controles que execute o código para modificar documentos ou exibir dados de uma fonte de dados.  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
  A tabela a seguir lista os eventos que você pode manipular para responder às alterações que o usuário fez para o painel de tarefas.  
   
-|Tarefa|Evento|  
+|Tarefa|evento|  
 |----------|-----------|  
 |Para responder quando o usuário altera o local do painel de tarefas.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
 |Para responder quando o usuário oculta o painel de tarefas ou se torna visível.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  

@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 478bd6d27d6e4ef0fe75891d95cdc4b3258a74e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b15c9fbf2815132ac4ad84e3b321bb22db199ed2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-office-solutions"></a>Desenvolvendo soluções do Office
   Depois que você criar um projeto usando as ferramentas de desenvolvedor do Office no Visual Studio e configurar os arquivos de projeto, você pode começar a se concentrar em implementar o código e a interface do usuário personalizada (UI).  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 |[Programando personalizações no nível do documento](../vsto/programming-document-level-customizations.md)|Fornece uma visão geral do modelo de programação de tarefas de programação relacionadas e personalizações no nível do documento.|  
 |[Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)|Descreve as diferentes maneiras que você pode personalizar os aplicativos de interface do usuário do Office usando os suplementos do VSTO e personalizações no nível do documento.|  
 |[Dados em soluções do Office](../vsto/data-in-office-solutions.md)|Descreve as diferentes maneiras que você pode trabalhar com dados em soluções do Office, como associação de dados a controles e cache de dados em personalizações no nível do documento.|  
-|[Como o salvamento automático afeta soluções do Office](./how-autosave-impacts-office-solutions.md)|Descreve os ajustes que talvez você precise fazer para soluções do Office ao salvamento automático esteja habilitado.|
+|[Como o Salvamento Automático afeta as soluções do Office](./how-autosave-impacts-office-solutions.md)|Descreve os ajustes que talvez você precise fazer para soluções do Office ao salvamento automático esteja habilitado.|
 |[Solução de problemas de Soluções do Office](../vsto/troubleshooting-office-solutions.md)|Fornece dicas para solucionar problemas comuns que você pode encontrar durante a criação de soluções do Office.|  
 |[Suporte a threading no Office](../vsto/threading-support-in-office.md)|Fornece uma visão geral de como trabalhar com vários threads em soluções do Office.|  
 |[Acessibilidade em Projetos do Office](../vsto/accessibility-in-office-projects.md)|Descreve os recursos de acessibilidade que estão disponíveis em soluções do Office.|  

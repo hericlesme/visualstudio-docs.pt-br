@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03d9cb39384e60a1b4e2bd1af880f775c2a64ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c5b1b933f7e4c24b42449cf93e2b4778ec788fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start-view"></a>O modo de Início
 O modo de Início é o ponto iniciando para o designer de (XSD) de esquema XML. Quando você cria um novo arquivo XSD, você verá inicialmente modo de Início.  

@@ -43,11 +43,12 @@ caps.latest.revision: "65"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b2950370b35eb8e2f60f15c5de032284c5546f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d50e7c6177152b2cef3709c983334d05b48a812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-controls"></a>Controles de conteúdo
   Controles de conteúdo fornecem uma maneira para você para documentos de design e os modelos que têm estes recursos:  
@@ -208,7 +209,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-binding-events-for-content-controls"></a>Dados de eventos de associação para controles de conteúdo  
  Todos os controles de conteúdo fornecem um conjunto de eventos que você pode manipular para executar tarefas relacionadas a dados, como validar que o texto em um controle atenda a certos critérios antes de atualizar a fonte de dados. A tabela a seguir lista os eventos de controle de conteúdo relacionadas a associação de dados.  
   
-|Tarefa|Evento|  
+|Tarefa|evento|  
 |----------|-----------|  
 |Execute código antes do Word atualiza automaticamente o texto em um controle de conteúdo que está associado a uma parte XML personalizada.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |Executar código antes de palavra atualiza automaticamente os dados em uma parte XML personalizada que está associado a um conteúdo de controle (ou seja, depois que altera o texto no controle de conteúdo).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  

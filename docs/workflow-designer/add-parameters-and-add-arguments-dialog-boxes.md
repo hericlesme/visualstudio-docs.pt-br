@@ -11,11 +11,12 @@ ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
 caps.latest.revision: "7"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 517cbacd0c92d220ca446b8523c3383f8bac0a97
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7ae55ddf01ae6e9d4a2bee406a51774308cb78cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Adicionar parâmetros e adicionar caixas de diálogo de argumentos
 A tabela a seguir descreve os elementos de interface de usuário do **adicionar parâmetros** caixa de diálogo usada pelo <xref:System.Activities.Statements.InvokeMethod> designer.  

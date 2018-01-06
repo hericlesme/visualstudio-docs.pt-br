@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8fb47ec57ccaa6e0bf3ddc8304dff3a1ecaf8258
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd39848819087209455d31e481d560a0534ea385
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Fluxos de trabalho de depuração com designers de Fluxo de Trabalho
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] fornece a capacidade de depuração fluxos de trabalho e atividades personalizado. O processo e o comportamento são semelhantes ao do depurador padrão de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] . Os tópicos nesta seção descrevem como executar procedimentos de depuração bem como a depuração XAML e expressões tradicionais.  

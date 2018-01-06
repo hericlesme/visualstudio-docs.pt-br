@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b1da36fbf982b26f079b0aebbee67bc9d5f203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03d7f2eedef03a4995a9f14540351df80bd537f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-mail-items"></a>Trabalhando com itens de email
   O <xref:Microsoft.Office.Interop.Outlook.MailItem> classe contém os métodos e propriedades que você usa para executar tarefas com mensagens de email.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Tarefa|Procedimento|  
 |----------|---------------|  
 |Crie uma mensagem de email.|[Como criar um item de email de forma programática](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Enviar uma mensagem de email.|[Como: enviar email](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Enviar uma mensagem de email.|[Como enviar emails programaticamente](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
 |Responda a novas mensagens de email com uma ação personalizada.|[Como executar ações de forma programática quando uma mensagem de email é recebida](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
 |Salve anexos.|[Como salvar anexos de itens de email do Outlook de forma programática](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
 |Adicionar anexos|[Como anexar arquivos a itens de email do Outlook de forma programática](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  

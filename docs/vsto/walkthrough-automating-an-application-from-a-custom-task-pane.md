@@ -22,11 +22,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c08f04af21e42761b9b9c7e1a760e71fe79d025a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8d7c349261770e6b489a793f6f4533a852c96a8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>Instruções passo a passo: automatizando um aplicativo a partir de um painel Tarefa Personalizada
   Este passo a passo demonstra como criar um painel tarefa personalizada que automatiza o PowerPoint. O painel de tarefas personalizado insere datas em um slide quando o usuário clica em um <xref:System.Windows.Forms.MonthCalendar> controle que está no painel de tarefas personalizadas.  

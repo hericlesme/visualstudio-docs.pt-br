@@ -20,11 +20,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3eefde445f5c8aca7199d4316472fe92c3160d00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 99be4338bcee9ffb5c7cb9cf28f6187128345f85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Usando o computador de estado herdado Designer de Fluxo de Trabalho
 Quando você estiver criando um novo projeto de fluxo de trabalho de máquina de estado no [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] que tem como alvo o o [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], você pode optar por usar o **aplicativo de Console de fluxo de trabalho de máquina de estado** ou o  **Biblioteca de fluxo de trabalho de máquina de estado** modelo de projeto herdado. Se você escolher um desses modelos de projeto do computador de estado, o designer do computador de estado é apresentado como a interface do usuário herdado do designer de fluxo de trabalho. Para obter informações sobre os modelos de projeto de máquina de estado herdado, consulte [como: Criar estado máquina fluxo de trabalho de aplicativos de Console (o legados)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [como: criar uma biblioteca de fluxo de trabalho de máquina de estado (legados)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

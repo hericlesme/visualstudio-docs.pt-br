@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: aa06d4c63dbb18c080c8a6b8ffda01838607ba55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ab9ef5504b8785e31446d51f517e8ac41c27d579
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pick-activity-designer"></a>Escolha o designer de atividades
 A atividade de <xref:System.Activities.Statements.Pick> fornece o fluxo de controle baseado. A atividade executa um dos vários ramificações em resposta a um evento disparando.  
@@ -41,4 +42,4 @@ A atividade de <xref:System.Activities.Statements.Pick> fornece o fluxo de contr
 ## <a name="see-also"></a>Consulte também  
  [Fluxo de controle](../workflow-designer/control-flow-activity-designers.md)   
  [Escolher atividade](/dotnet/framework/windows-workflow-foundation/pick-activity)   
- [Usando a atividade de picareta](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)
+ [Usando a atividade de Pick](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)

@@ -26,11 +26,12 @@ caps.latest.revision: "96"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97cac11c943b75f5bc74e5cb67c9810b9ba7032
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: aca002dc7f9793dc379fb4e1a325342704e4d6c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Como criar projetos do Office no Visual Studio
   Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar o suplemento do VSTO e nível de documento personalizações para aplicativos do Microsoft Office. Para obter mais informações sobre esses tipos de projetos, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
     -   Sinal de porcentagem (%)  
   
-7.  Selecione o botão **OK**.  
+7.  Escolha o botão **OK**.  
   
     > [!NOTE]  
     >  Projetos de suplemento sempre são salvas quando eles são criados. Eles não podem ser criados como projetos temporários. Para obter mais informações sobre projetos temporários, consulte [projetos temporários](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
@@ -113,7 +114,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]  
     >  Você não pode usar caracteres substitutos no caminho do local do projeto ou no nome do projeto. Além disso, se você planeja implantar a solução para uso offline, os caracteres no nome do projeto devem ajustar as especificações de protocolo HTTP.  
   
-6.  Selecione o botão **OK**.  
+6.  Escolha o botão **OK**.  
   
      O **Visual Studio Tools para Office Project Wizard** é aberto.  
   

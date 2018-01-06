@@ -16,11 +16,12 @@ caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto da faixa de opções
   O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expõe um modelo de objeto fortemente tipada que você pode usar para obter e definir as propriedades de controles de faixa de opções em tempo de execução. Por exemplo, dinamicamente você pode preencher os controles de menu, ou mostrar e ocultar controles contextualmente. Você também pode adicionar controles de guias e grupos para uma faixa de opções, mas antes da faixa de opções é carregada pelo aplicativo do Office. Para obter informações, consulte [configuração de propriedades que se tornam somente leitura](#SettingReadOnlyProperties).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="RibbonEvents"></a>Eventos de faixa de opções  
  O **faixa de opções** classe contém três eventos a seguir:  
   
-|Evento|Descrição|  
+|evento|Descrição|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Gerado quando o aplicativo do Office carrega a personalização da faixa de opções. O <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> manipulador de eventos é adicionado automaticamente ao arquivo de código da faixa de opções. Use este manipulador de eventos para executar código personalizado durante seu carregamento.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Permite que você para imagens de cache na personalização da faixa de opções quando a faixa de opções é carregado. Se você escrever código para armazenar em cache as imagens de faixa de opções neste manipulador de eventos, você pode obter um ganho de desempenho pequeno. Para obter mais informações, consulte <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="ribbon-control-events"></a>Eventos de controle de faixa de opções  
  Cada classe de controle contém um ou mais eventos. A tabela a seguir descreve esses eventos.  
   
-|Evento|Descrição|  
+|evento|Descrição|  
 |-----------|-----------------|  
 |Clique em|Ocorre quando um controle é clicado.|  
 |TextChanged|Ocorre quando o texto de uma caixa de combinação ou caixa de edição é alterado.|  

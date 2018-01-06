@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01b82a31e0010c3998d1712d8ab004603893bbe5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 00d91f47b33a36e95a82f8b483483ed4da733db8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Como recuperar mensagens não lidas da Caixa de Entrada programaticamente
   Este exemplo recupera mensagens não lidas do Outlook do **caixa de entrada** e exibe o número de itens.  

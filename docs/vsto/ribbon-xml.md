@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-xml"></a>XML da faixa de opções
   O item da faixa de opções (XML) permite que você personalize uma faixa de opções usando XML. Se você quiser personalizar a faixa de opções de forma que não é suportada pelo item da faixa de opções (Visual Designer), use o item de faixa de opções (XML). Para obter uma comparação de que você pode fazer com cada item, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/31/2017
   
 |Método|Descrição|  
 |------------|-----------------|  
-|`GetCustomUI`|Retorna o conteúdo do arquivo XML da faixa de opções. Aplicativos do Microsoft Office chamam este método para obter uma cadeia de caracteres XML que define a interface do usuário de sua faixa de opções personalizada. Esse método implementa o <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> método. **Observação:** `GetCustomUI` devem ser implementadas apenas para retornar o conteúdo do arquivo XML da faixa de opções; ele não deve ser usado para inicializar o suplemento do VSTO.   Em particular, você não deve tentar exibir caixas de diálogo ou outras janelas na sua `GetCustomUI` implementação. Caso contrário, a faixa de opções personalizada pode não funcionar corretamente. Se você precisar executar o código que inicializa o suplemento do VSTO, adicione o código para o `ThisAddIn_Startup` manipulador de eventos.|  
+|`GetCustomUI`|Retorna o conteúdo do arquivo XML da faixa de opções. Aplicativos do Microsoft Office chamam este método para obter uma cadeia de caracteres XML que define a interface do usuário de sua faixa de opções personalizada. Este método implementa o método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>. **Observação:** `GetCustomUI` devem ser implementadas apenas para retornar o conteúdo do arquivo XML da faixa de opções; ele não deve ser usado para inicializar o suplemento do VSTO. Em particular, você não deve tentar exibir caixas de diálogo ou outras janelas na sua `GetCustomUI` implementação. Caso contrário, a faixa de opções personalizada pode não funcionar corretamente. Se você precisar executar o código que inicializa o suplemento do VSTO, adicione o código para o `ThisAddIn_Startup` manipulador de eventos.|  
 |`OnLoad`|Atribui o <xref:Microsoft.Office.Core.IRibbonControl> parâmetro para o `ribbon` campo. Aplicativos do Microsoft Office chamam este método quando eles carregam a faixa de opções personalizada. Você pode usar esse campo para atualizar dinamicamente a faixa de opções personalizada. Para obter mais informações, consulte o artigo técnico [Personalizando a Interface de usuário de faixa de opções do Office (2007) para desenvolvedores (parte 1 de 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Chamado pelo `GetCustomUI` método para obter o conteúdo do arquivo XML da faixa de opções.|  
   

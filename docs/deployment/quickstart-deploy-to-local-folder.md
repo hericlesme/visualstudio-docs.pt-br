@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8696e7ffb4120bae12538a03b77d62c0d091a7
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Implantar um aplicativo web ou aplicativo .NET Core para uma pasta local usando a ferramenta de publicação do Visual Studio
 
@@ -65,6 +66,6 @@ Implante os arquivos publicados na maneira que desejar. Por exemplo, você pode 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Implantar um aplicativo do .NET Core com a ferramenta de publicação](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs)
-- [Um aplicativo de área de trabalho do pacote para o Microsoft Store (ponte de área de trabalho)](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-- (.NET) [Implantar o .NET Framework e aplicativos](https://docs.microsoft.com/en-us/dotnet/framework/deployment/)
+- [Implantar um aplicativo do .NET Core com a ferramenta Publicar](/dotnet/core/deploying/deploy-with-vs)
+- [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+- (.NET) [Implantar o .NET Framework e aplicativos](/dotnet/framework/deployment/)

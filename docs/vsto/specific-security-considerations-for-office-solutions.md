@@ -23,11 +23,12 @@ caps.latest.revision: "51"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dcbda36113bbf17ec65b9397e8312b03dcf7615a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bfe5505fdd861fb99c3f4d40abd0f17e066339b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerações sobre segurança específicas para soluções do Office
   Os recursos de segurança fornecidos pelo Microsoft .NET Framework e do Microsoft Office podem ajudar a proteger as soluções do Office contra possíveis ameaças de segurança. Este tópico explica essas ameaças e fornece recomendações para ajudar a proteger contra elas. Ela também inclui informações sobre como as configurações de segurança do Microsoft Office afetam soluções do Office.  

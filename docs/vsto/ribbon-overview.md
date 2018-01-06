@@ -23,11 +23,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52583bdbf6edf4f2a698bc8662a0faf659841926
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fcf026af4877ee2aefe17551763752d385b63493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-overview"></a>Visão geral da faixa de opções
   A faixa de opções é uma maneira de organizar os comandos relacionados para que eles são mais fáceis de localizar. Os comandos são exibidos como controles na faixa de opções. Controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior de uma janela de aplicativo. Grupos são organizados nas guias.  

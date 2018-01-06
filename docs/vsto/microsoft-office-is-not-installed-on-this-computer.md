@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af9a13a72aed42f46a755520802f8688bc962161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70329c058146dde9b94713b66dfbd29319250f45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-office-is-not-installed-on-this-computer"></a>O Microsoft Office não está instalado neste computador
   O Visual Studio não pode localizar o aplicativo do Microsoft Office que corresponde ao tipo de projeto. Se você estiver desenvolvendo um projeto de suplemento do VSTO, isso significa que você não pode depurar ou executar o projeto. Se você estiver tentando criar um projeto no nível do documento, isso significa que não é possível criar o projeto.  
