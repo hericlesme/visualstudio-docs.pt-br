@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9366e3439ed636a2c856ef26c858a7383002a0e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a5ef93ab759f4e64607685d3d44fddfbf6c2c2dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;ponto de entrada&gt; elemento (desenvolvimento do Office no Visual Studio)
   Cada `entryPoint` elemento o `vstav3` namespace identifica um assembly de personalização deve ser executado quando isso [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplicativo está instalado.  

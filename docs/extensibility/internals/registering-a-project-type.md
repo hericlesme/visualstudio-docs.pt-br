@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a60ac9de727e8542df7455ee331737403f6bef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-project-type"></a>Registro de um tipo de projeto
 Quando você cria um novo tipo de projeto, você deve criar entradas do registro que habilitam [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para reconhecer e trabalhar com o tipo de projeto. Você normalmente cria essas entradas do registro usando um arquivo de script (. rgs) do registro.  

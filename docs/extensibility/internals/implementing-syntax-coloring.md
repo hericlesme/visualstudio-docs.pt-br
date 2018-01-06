@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d5d251c414c955480d3a7e4289935d913fa470c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-syntax-coloring"></a>Implementando a coloração de sintaxe
 Quando o serviço de linguagem fornece coloração de sintaxe, o analisador converte uma linha de texto em uma matriz de itens pode ser coloridos e retorna os tipos de token correspondente a esses itens pode ser coloridos. O analisador deve retornar tipos de token que pertencem a uma lista de itens pode ser coloridos. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Exibe cada item pode ser colorido na janela de código de acordo com os atributos atribuídos pelo objeto colorizador para o tipo de token apropriado.  

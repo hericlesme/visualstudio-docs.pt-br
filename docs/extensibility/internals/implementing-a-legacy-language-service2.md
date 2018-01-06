@@ -13,11 +13,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24e847eb0f1d05717ab6b114921a66b04cd94922
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 20dc3cf7b4db090bf7fcd0086b3e72575d8490cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementar um serviço de linguagem herdado
 Para implementar um serviço de idioma usando a estrutura de pacote gerenciado (MPF), você deve derivar uma classe a partir de <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementar os seguintes métodos abstratos e as propriedades:  

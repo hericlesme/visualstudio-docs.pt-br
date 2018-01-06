@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4dd37d33230be758bd5a5adf6f5e10d5a978800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces e os campos da janela de propriedades
 O modelo de seleção determinar quais informações são exibidas no **propriedades** janela baseia-se na janela que tem o foco no IDE. Cada janela e objeto dentro da janela selecionada, podem ter seu objeto de contexto de seleção enviada por push para o contexto da seleção global. O ambiente atualiza o contexto da seleção global com valores de um quadro de janela quando essa janela tem o foco. Quando o foco for alterado, portanto não o contexto da seleção.  

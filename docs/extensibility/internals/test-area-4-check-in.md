@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3694e8f4a8cdbdac147df3d6e60324888bccf048
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 698b46c7ccb0a3fb13c799349d36de0cadf80af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-4-check-in"></a>Área de teste 4: Check-In
 Essa área de plug-in de teste de controle de origem abrange enviar itens atualizados para o armazenamento de versão por meio de **Check-In** comando.  

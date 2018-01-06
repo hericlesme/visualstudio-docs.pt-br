@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d806c48cd96c93774b77363f1d427968613e60b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69c65fa2691f71b3bb7f115b771a0de83d543f03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 Informações de parâmetro de IntelliSense é uma dica de ferramenta que exibe a assinatura de um método quando o usuário digita a lista de parâmetros iniciar caractere (normalmente um parêntese de abertura) para a lista de parâmetros de método. Como cada parâmetro é inserido e o separador de parâmetro (geralmente uma vírgula) for digitado, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito.  

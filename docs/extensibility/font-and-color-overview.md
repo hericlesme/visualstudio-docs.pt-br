@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13a2a8b584af507f8937fd6abb46c85f329de0b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09597130864ae0c1e79ef7470c58b25dde8a9263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="font-and-color-overview"></a>Visão geral de cor e de fonte
 Este tópico discute as configurações de fonte e cor do texto no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE). Ele também apresenta os conceitos de categorias e itens de exibição e descreve como VSPackages e o editor de núcleo que usam atributos de texto.  

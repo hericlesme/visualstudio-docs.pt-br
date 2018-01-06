@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf34a3fe708a6ecab200262224da395b9fa37ecb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd45ebf8be2732cded5c84f18338f104b76840cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Considerações para descarregar e recarregando projetos aninhados
 Quando você implementa os tipos de projeto aninhado, você deve executar etapas adicionais quando você descarregar e recarregar os projetos. Para notificar corretamente os ouvintes de eventos de solução, você deve aumentar corretamente o `OnBeforeUnloadProject` e `OnAfterLoadProject` eventos.  

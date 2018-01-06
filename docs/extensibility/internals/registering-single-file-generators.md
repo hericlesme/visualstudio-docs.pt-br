@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29cbc142be40d4c4e2e8780304767bd17d1d94fe
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 22261c7485f1779eb3613c7ef5af693feeb51fbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-single-file-generators"></a>Registrar geradores de arquivo único
 Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve registrá-lo assim [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode criar uma instância e o associa a um tipo de projeto específico.  

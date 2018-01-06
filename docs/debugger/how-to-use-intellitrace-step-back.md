@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Instantâneos de modo de exibição usando o IntelliTrace etapa-back
-Etapa-back do IntelliTrace automaticamente tira um instantâneo do seu aplicativo em cada ponto de interrupção e o depurador evento da etapa. Os instantâneos gravados permitem que você volte para os pontos de interrupção anteriores ou etapas e exibir o estado do aplicativo como ele era no passado. IntelliTrace back etapa pode economizar tempo quando você deseja ver o estado anterior do aplicativo, mas não deseja reiniciar a depuração ou recriar o estado do aplicativo desejado.
+Etapa-back do IntelliTrace automaticamente tira um instantâneo do seu aplicativo em cada ponto de interrupção e o depurador evento da etapa. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
 
 Etapa-back do IntelliTrace está disponível a partir 2017 de Enterprise do Visual Studio versão 15.5 e superior e requer a atualização de aniversário do Windows 10 ou superior. O recurso atualmente há suporte para depuração de ASP.NET, WinForms, WPF, aplicativos de console gerenciados e bibliotecas de classe gerenciada. Atualmente não há suporte para a depuração de aplicativos do ASP.NET Core, .NET Core ou UWP. 
   
@@ -38,7 +39,7 @@ Por motivos de desempenho, instantâneos não são criados quando você entra mu
 
 ## <a name="navigate-and-view-snapshots"></a>Navegar e exibir instantâneos
 
-Você pode navegar entre eventos usando o **etapa com versões anteriores (Alt + [)** e **Avançar uma etapa (Alt +])** botões na barra de ferramentas Depurar. Esses botões navegar os eventos que aparecem no **eventos** guia o **janela ferramentas de diagnóstico**. Passo a passo para trás ou para frente a um evento automaticamente ativa a depuração histórica no evento selecionado.
+Você pode navegar entre eventos usando o **etapa com versões anteriores (Alt + [)** e **Avançar uma etapa (Alt +])** botões na barra de ferramentas Depurar. Esses botões navegar os eventos que aparecem no **eventos** guia o **janela ferramentas de diagnóstico**. Voltar ou avançar para um evento ativa automaticamente a depuração histórica no evento selecionado.
 
 ![Etapa para trás e encaminhar botões](../debugger/media/intellitrace-step-back-icons-description.png "botões etapa com versões anteriores e Avançar")
 
@@ -76,7 +77,7 @@ No modo de eventos e os instantâneos do IntelliTrace captura todo o instantâne
 
 O impacto no desempenho geral de revisão depende de seu aplicativo. A sobrecarga de tirar um instantâneo é em torno de 30 ms. Quando um instantâneo é criado, o processo do aplicativo estiver bifurcado e a cópia bifurcada é suspenso. Quando você exibir um instantâneo, o Visual Studio é anexar à cópia bifurcada do processo. Para cada instantâneo, o Visual Studio copia apenas a tabela de página e define páginas para copy-on-write. Se os objetos no heap alterar entre as etapas do depurador com instantâneos associados, a tabela a respectiva página, em seguida, é copiada, resultando em um custo mínimo de memória. Se o Visual Studio detectar que não há memória suficiente para criar um instantâneo, ele não tem um.
  
-## <a name="known-issues"></a>Problemas conhecidos  
+## <a name="known-issues"></a>Problemas Conhecidos  
 * Se você estiver usando o modo de eventos e os instantâneos do IntelliTrace em versões do Windows anterior ao Windows 10 outono criadores de atualização (RS3) e o destino de depuração de plataforma do aplicativo é definido para x86, IntelliTrace não instantâneos.
 
     Solução alternativa:

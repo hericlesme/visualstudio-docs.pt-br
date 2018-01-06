@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e74bda24459bedeef007b451c7fabe3922e7ab37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5c79d58530a7f6afc5779fab1bc0b5a1626cb595
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-placement-guidelines"></a>Diretrizes de posicionamento de comando
 Práticas recomendadas para comandos de posicionamento no ambiente de desenvolvimento integrado (IDE) do Visual Studio variam dependendo do tamanho do conjunto de comandos. Comandos são definidos e posicionados de acordo com as informações nos arquivos. VSCT.  

@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e79ec644426ed5068f79bb914b1202a800982cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-types-to-visual-designers"></a>Expondo os tipos de Designers visuais
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]deve ter acesso a definições de classe e tipo em tempo de design para exibir um designer visual. Classes são carregadas de um conjunto predefinido de assemblies que incluem o conjunto completo de dependência do projeto atual (referências e suas dependências). Ele também pode ser necessário para designers visuais para classes de acesso e tipos que são definidos em arquivos gerados por ferramentas personalizadas.  

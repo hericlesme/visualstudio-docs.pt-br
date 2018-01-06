@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c82476b9d6fd632ed67acbeeab147743ea16cb40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1159ccc35f47b34069461b27239173c1860b18a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriedades de documento personalizadas em um serviço de linguagem herdado
 Propriedades do documento podem ser exibidas no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propriedades** janela. Linguagens de programação geralmente não têm propriedades associadas com os arquivos de origem individuais. No entanto, o XML oferece suporte a propriedades de documento que afetam a codificação, o esquema e a folha de estilos.  

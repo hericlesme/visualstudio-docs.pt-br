@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dcad9882b1c72c15837529d736eeabff58f3826
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d5089d87156bd5eb191176fe73ab19a01d497b90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
 O `GuidSymbol` elemento contém o GUID do par GUID:ID que representa um menu, o grupo ou o comando. A ID vêm de um `IDSymbol` elemento o `GuidSymbol` elemento. O `GuidSymbol` elemento tem um `name` atributo que forneça um nome amigável para o GUID, que está contido no `value` atributo.  

@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Adicionar itens para o adicionar novo Item caixas de diálogo
 O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo começa com as chaves do registro. Conforme mostrado nas seguintes entradas do registro, a seção de AddItemTemplates contém o caminho do e o nome do diretório em que os itens disponibilizada no **Adicionar Novo Item** caixa de diálogo são colocados.  

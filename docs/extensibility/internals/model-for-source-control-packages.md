@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-for-source-control-packages"></a>Modelo de pacotes de controle de origem
 O modelo a seguir representa um exemplo de uma implementação de controle de origem. No modelo, você verá as interfaces que você deve implementar e os serviços de ambiente que você deve chamar. Como todos os serviços, você realmente chamar os métodos de uma interface específica que você pode obter por meio do serviço. Os nomes das classes são identificados para facilitar ainda mais ver como controle de origem é realizado.  

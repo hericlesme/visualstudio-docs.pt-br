@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3032c914408e94f430506549ab55e04815ba456c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8b2cfaedf63947f97ab912bb2ee657c54641beb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 Contém os dados para o local de um ponto de interrupção em uma linha específica em um arquivo do código fonte.  

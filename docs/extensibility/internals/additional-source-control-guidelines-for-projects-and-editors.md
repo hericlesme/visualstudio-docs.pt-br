@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ed84b4b1bf6c974f22682dcb8d899208c653ebc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Diretrizes de controle de origem adicionais para projetos e editores
 Há um número de diretrizes de projetos e editores devem aderir para oferecer suporte a controle de origem.  

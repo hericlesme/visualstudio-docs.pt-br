@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6138ffcd0c56b87e9e29a316aa2ae0ad9f982e18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface de usuário personalizada (VSPackage de controle de origem)
 Um VSPackage declara seus itens de menu e seus estados de padrão por meio do arquivo de tabela de comando do Visual Studio (. VSCT). O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) exibe os itens de menu em seus estados padrão até que o VSPackage é carregado. Subsequentemente, o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método é chamado para habilitar ou desabilitar itens de menu.  

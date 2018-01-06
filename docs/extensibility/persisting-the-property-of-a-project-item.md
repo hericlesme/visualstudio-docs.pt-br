@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61a477fa760a2ef9026b06facc8bc592706c5dd3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e732821cf1ea14497038a65d49f2a10ce22c28a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Manter a propriedade de um Item de projeto
 Talvez você queira manter uma propriedade que você adicionar a um item de projeto, como o autor de um arquivo de origem. Você pode fazer isso ao armazenar a propriedade no arquivo de projeto.  

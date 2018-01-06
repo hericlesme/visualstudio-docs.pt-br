@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd18d04adfbf3acd0ca50c1e75bd2a1694b28721
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d33c0e1bc54ee0c1abab736ba24ce76fbf710fdc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Sinalizadores de linha de comando do compilador VSCT
 O compilador de tabela de comando do Visual Studio (VSCT) fornece opções de linha de comando para garantir uma compilação bem-sucedida dos arquivos. VSCT.  

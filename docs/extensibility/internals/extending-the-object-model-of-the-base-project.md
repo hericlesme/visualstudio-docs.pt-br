@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b92fe7fece58dd2006507f0285d3c440af437ee4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 44bb1eebecbec036572a9bb8857c87db8e4e4817
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>Estendendo o modelo de objeto do projeto Base
 Um subtipo de projeto pode estender o modelo de objeto de automação do projeto base nos seguintes locais:  

@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d652db21fb98cbb0f06c2ac5ceec0f8f239beff6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces (VSPackage de controle de origem) e serviços relacionados
 Esta seção lista todas as interfaces relacionadas VSPackage de controle de fonte do [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. O controle de origem VSPackage implementa algumas dessas interfaces e usa outros para realizar tarefas de controle de origem.  

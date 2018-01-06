@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88af397feba9b06eabd73ec23dcf1204ebe755e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd740c437fc7e5f3d355e883d4023bc6edfcde1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Cores de sintaxe em um serviço de linguagem herdado
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]usa um serviço de cores para identificar elementos da linguagem e exibi-los com as cores especificadas em um editor.  

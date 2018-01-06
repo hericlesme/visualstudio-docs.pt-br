@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4cd83a8d8e72c18f8a6929e8985f7a8635a940d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-buttons"></a>Botões da janela de propriedades
 Dependendo do idioma de desenvolvimento e o tipo de produto, determinados botões são exibidos por padrão na barra de ferramentas para a **propriedades** janela. Em todos os casos, o **categorizado**, **Alphabetized**, **propriedades**, e **páginas de propriedade** botões são exibidos. Em Visual c# e Visual Basic, o **eventos** botão também é exibido. Em determinados projetos Visual C++, o **VC + + mensagens** e **VC substitui** botões são exibidos. Botões adicionais podem ser exibidos para outros tipos de projeto. Para obter mais informações sobre botões de **propriedades** janela, consulte [janela propriedades](../../ide/reference/properties-window.md).  

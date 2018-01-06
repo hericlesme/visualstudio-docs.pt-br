@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5d8af96857fa3e3c02ce8ea29711eaffbb532e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Como: acessar o esquema de cores e fontes internas
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de fontes e cores que está associado com a janela do editor. Você pode acessar esse esquema por meio de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.  

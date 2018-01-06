@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d37dc9bff7652856109fb4ec29c8eaa52f1d2507
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 70b0e693f4223c9fe004170a0ed1b4b70c6de442
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccloseproject-function"></a>Função SccCloseProject
 Essa função fecha um projeto, marca o final de uma sessão em particular.  

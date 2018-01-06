@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Gerar uma classe ou um tipo no Visual Basic
 **O que:** permite gerar imediatamente o código para uma classe ou tipo. 

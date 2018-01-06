@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0b0c883293cd01e21facfcc2e4483d2c5bbf164
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb61257b80e3f8b4a09819b2b037f342e2ecbee0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-the-program"></a>Registrando o programa
 Depois que o mecanismo de depuração adquiriu uma porta, representado por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, a próxima etapa para habilitar o programa a ser depurado é registrá-lo com a porta. Depois de registrado, o programa está disponível para depuração por uma das seguintes maneiras:  

@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8100c43578c11ae73f26764df74aa17caccc3611
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d7acd147fd8d2b73b2172900baf7e1f49808e9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="session-debug-manager"></a>Gerenciador de sessão de depuração
 O Gerenciador de sessão de depuração (SDM) gerencia qualquer número de mecanismos de depuração (DE) qualquer número de programas em vários processos em qualquer número de máquinas de depuração. Além de ser um mecanismo de depuração multiplexador, o SDM fornece uma exibição unificada da sessão de depuração para o IDE.  

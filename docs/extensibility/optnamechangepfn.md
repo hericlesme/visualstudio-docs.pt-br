@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 666174c4f0f54679907bd239a81c5c369dc09a3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2d067d5dd150dd026a2bd29a8933e8d9f72222b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 Essa é uma função de retorno de chamada especificada em uma chamada para o [SccSetOption](../extensibility/sccsetoption-function.md) (usando a opção `SCC_OPT_NAMECHANGEPFN`) e é usada para comunicar nome alterações feitas pelo controle da fonte de plug-in para o IDE.  

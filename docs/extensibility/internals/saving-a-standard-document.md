@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ef7f1b347dc2fdcfe2904ef19a2d52036d927e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cdfb4631420f6803e6434bd67b93bd713cfd1f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-standard-document"></a>Salvar um documento padrão
 O ambiente trata a salvar, salvar como e salvar todos os comandos. Quando um usuário seleciona **salvar**, **Salvar como**, ou **Salvar tudo** do **arquivo** menu ou fecha a solução, resultando em um  **Salvar todos os**, ocorre o seguinte processo.  

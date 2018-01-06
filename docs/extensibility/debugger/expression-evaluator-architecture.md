@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6805b97da8e8f742b1b6c0bb3298e9324bb1f72e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator-architecture"></a>Arquitetura do avaliador de expressão
 > [!IMPORTANT]
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
  Integrar um idioma proprietário o pacote de depuração do Visual Studio significa implementar as interfaces (EE) do avaliador de expressão necessária e chamar o provedor de símbolo de tempo de execução de linguagem comum (SP) e interfaces de associador. Os objetos de SP e associador, junto com o endereço de execução atual, são o contexto no qual as expressões são avaliadas. As informações que essas interfaces produzem e consomem representam os principais conceitos da arquitetura de um EE.  
   
-## <a name="overview"></a>Visão Geral  
+## <a name="overview"></a>Visão geral  
   
 ### <a name="parsing-the-expression"></a>Análise da expressão  
  Quando você estiver depurando um programa, as expressões são avaliadas para um número de motivos, mas sempre quando o programa que está sendo depurado foi interrompido no ponto de interrupção (um ponto de interrupção inserido pelo usuário ou causada por uma exceção). É no momento em que o Visual Studio obtém um quadro de pilha, conforme representado pelo [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interface do mecanismo de depuração (DE). O Visual Studio, em seguida, chama [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) para obter o [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interface. Essa interface representa um contexto no qual as expressões podem ser avaliadas; [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) é o ponto de entrada para o processo de avaliação. Até esse ponto, todas as interfaces são implementadas DE.  

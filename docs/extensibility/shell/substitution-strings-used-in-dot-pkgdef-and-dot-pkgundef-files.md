@@ -13,18 +13,19 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6144c0200c03776ead9e7dc7f46b5e9e707b6e82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0405e18419baf8bc152331a2bcfc7254ec602d1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Usado em cadeias de substituição. Pkgdef e. Arquivos de Pkgundef
 Você pode usar as cadeias de caracteres de substituição listadas na .pkgdef e .pkgundef arquivos definidos para o Visual Studio isolados do aplicativo de shell.  
   
 ## <a name="substitution-strings"></a>Cadeias de caracteres de substituição  
   
-|Cadeia de caracteres|Descrição|  
+|Cadeia de Caracteres|Descrição|  
 |------------|-----------------|  
 |$=*RegistryEntry*$|O valor de *RegistryEntry* entrada. Se a cadeia de caracteres de entrada de registro termina em uma barra invertida (\\), o valor padrão da subchave do registro é usado. Por exemplo, a substituição de cadeia de caracteres $= HKEY_CURRENT_USER\Environment\TEMP$ é expandido para a pasta temporária do usuário atual.|  
 |$AppName$|O nome qualificado do aplicativo que é passado para os pontos de entrada AppEnv.dll. O nome qualificado consiste em nome do aplicativo, um sublinhado e o identificador de classe (CLSID) do objeto de automação aplicativo, também é registrado como o valor da configuração do arquivo de projeto .pkgdef ThisVersionDTECLSID.|  

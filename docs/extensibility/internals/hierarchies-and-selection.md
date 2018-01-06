@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 002d9f2bb9a70d3f223b13d505639089005a09ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 846f0bff11c557164ff101d0b5beb1950fded62e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchies-and-selection"></a>Hierarquias e seleção
 Quando você personaliza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve entender como [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] manipula hierarquias como projetos e como ele usa o contexto de seleção para determinar o que é exibido ao usuário. Esta seção aborda os conceitos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarquias e seleção.  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 862d537585e3599a7069f1a30d1dc652a49e699c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 049521213437e2d28e1e26b61859685158cebc08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - membros internos
 Este tópico descreve os membros internos do <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe ajudá-lo a implementar um depurador personalizado. Para obter informações gerais sobre esta classe, consulte o <xref:System.Threading.Tasks.TaskScheduler> tópico de referência.  

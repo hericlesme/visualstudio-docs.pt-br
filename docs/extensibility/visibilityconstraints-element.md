@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f26268e6168379632868c07a9d9c58f9485c8ada
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 946fc12ab7a77aa72d5d09f7ba9522723f8e18b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityconstraints-element"></a>Elemento VisibilityConstraints
 O elemento VisibilityConstraints determina a visibilidade estática dos grupos de comandos e barras de ferramentas. A visibilidade é controlada pela primeira vez o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) sem carregar o VSPackage.  

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 504046999814b4766fa9e5e8c006a02049e7007d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 868fe0785c90a174610b9fff837fc6fbfb084e83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support-attributes"></a>Atributos de suporte do Site da Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Projeto de site pode ser estendido para oferecer suporte para Web linguagens de programação. O idioma deve ser registrado com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que os modelos de projeto podem aparecer no **novo Site** caixa de diálogo quando o idioma é selecionado.  

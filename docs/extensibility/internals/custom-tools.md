@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c198065c72f1e6eaa0722de562abe6079f88aa1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7589c9a2aedf987af79689e8babccb554fbb4ccc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-tools"></a>Ferramentas personalizadas
 *Ferramentas personalizadas* permitem que você associe uma ferramenta com um item em um projeto e executar essa ferramenta, sempre que o arquivo é salvo. Determinadas ferramentas personalizadas, também conhecido como *geradores de arquivo único*, costumam ser usados para implementar os tradutores que geram um código de dados e vice-versa. Por exemplo, criar geradores de arquivo único [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] código fora os arquivos. resx. Settings e fonte. O código-fonte gerados fornece acesso fortemente tipado para os dados nos arquivos. resx e de Settings. O [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipos de projeto dão suporte a ferramentas personalizadas; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipos de projeto não. Seus próprios tipos de projeto também podem dar suporte a ferramentas personalizadas.  

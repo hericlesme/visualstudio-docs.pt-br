@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a409a752d415430e9eab24ee08d2bfb0044dd742
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3744f9022ef1ef0fb435ac98d7e63d9cff717f32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handling-specialized-deployment"></a>Tratamento de especializado de implantação
 Uma implantação é uma operação opcional para projetos. Por exemplo, um projeto Web, dá suporte a uma implantação para permitir que um projeto de atualizar um servidor Web. Da mesma forma, um **dispositivo inteligente** projeto dá suporte a uma implantação para copiar um aplicativo criado para o dispositivo de destino. Subtipos de projeto podem fornecer o comportamento de implantação especializado Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Essa interface define um conjunto completo de operações de implantação:  

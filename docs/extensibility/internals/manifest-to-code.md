@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd693d56011173564650c0abbd2d5d73492d335d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-to-code"></a>Manifesto de código
 O manifesto para a ferramenta de código é um aplicativo de console que usa um arquivo .imagemanifest para o serviço de imagem do Visual Studio e gera um wrapper ou arquivos para fazer referência a valores do manifesto de imagem em C++, c#, VB ou arquivos. VSCT para extensões do Visual Studio. Essa ferramenta gera arquivos de conteúdo adicional que podem ser usados para solicitantes imagens do Visual Studio imagem serviço diretamente, ou para passar os valores do manifesto por meio de APIs se o código não processa qualquer uma de sua própria interface do usuário e a renderização.  

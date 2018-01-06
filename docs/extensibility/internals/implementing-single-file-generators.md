@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9894666dd435dcaa110ba8af8307d7e942119bee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b9fed2f4118600c48ad6cb769c8e697b06ae77d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-single-file-generators"></a>Implementando geradores de arquivo único
 Uma ferramenta personalizada — também conhecido como um gerador de arquivo único — podem ser usados para estender o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemas de projeto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Uma ferramenta personalizada é um componente COM que implementa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interface. Usando esta interface, uma ferramenta personalizada transforma um único arquivo de entrada em um único arquivo de saída. O resultado da transformação pode ser o código-fonte, ou qualquer outra saída que é útil. Dois exemplos de arquivos de código gerados por ferramenta personalizado são o código gerado em resposta a alterações em um designer visual e os arquivos gerados usando WSDL Web Services Description Language ().  

@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4207903fdd0f9a1462460d7f7cb2704e70e08df6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b91f9dc00b9130f2c239bd3254f78376bc0fdf3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nesting-projects"></a>Projetos de aninhamento
 Os desenvolvedores de aplicativos de empresa que usam o pacote do VS convenientemente podem agrupar tipos semelhantes de projetos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando *aninhamento de projeto*. Por exemplo, o projeto de modelo da empresa usa projetos aninhados para projetos de grupo em categorias. Projetos de fachada de negócios, projetos de interface de usuário da Web e assim por diante são agrupados juntos em uma categoria.  

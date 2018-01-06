@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 297d9535a8e9655ed87230d4f947faeb29e08487
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbf234d18c48ed501987f160bd2b98ec9f768b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-from-resources"></a>Manifesto de recursos
 O manifesto da ferramenta de recursos é um aplicativo de console que usa uma lista de recursos de imagem (arquivos. png ou. XAML) e gera um arquivo de .imagemanifest que permite que as imagens a serem usadas com o serviço de imagem do Visual Studio. Além disso, essa ferramenta pode ser usada para adicionar imagens a um .imagemanifest existente. Essa ferramenta é útil para adicionar suporte a alto DPI e temas para imagens a uma extensão do Visual Studio. O arquivo gerado .imagemanifest deve ser incluído no e implantado como parte de uma extensão do Visual Studio (.vsix).  

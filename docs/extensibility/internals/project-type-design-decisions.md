@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3e0216161669e12c245484da3ca6e4de63c6a48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-type-design-decisions"></a>Decisões de Design de tipo de projeto
 Antes de criar um novo tipo de projeto, você deve tomar várias decisões de design sobre o tipo de projeto. Você deve decidir quais tipos de itens que contém seus projetos, como arquivos de projeto serão mantidos e qual modelo de confirmação que você usará.  

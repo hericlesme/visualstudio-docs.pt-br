@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84d2700e1dfb5d66fb2df6376db9e0ce5352ad4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 21d7f013989607f7f5416a57829bc9b2b29b61d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes"></a>Subtipos de projeto
 Subtipos de projeto permitem que você personalize ou flavor o comportamento dos sistemas de projeto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Personalizações incluem salvando dados adicionais no arquivo de projeto, adicionando ou filtrar itens no **Adicionar Novo Item** caixa de diálogo, controlar como os assemblies devem ser depurados e implantados e estendendo o projeto **propriedade Páginas** caixa de diálogo. VSPackages implementar subtipos de projeto usando a agregação COM.  

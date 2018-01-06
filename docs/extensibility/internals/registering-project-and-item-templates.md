@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c1cb9e31384822dddcdd3668bfb3a54bc2782d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c064a6632741eba69a553be87fb8f829063b266b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de modelos de projeto e Item
 Tipos de projeto devem registrar os diretórios onde se encontram os modelos de projeto e item de projeto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]usa as informações de registro associadas os tipos de projeto para determinar o que mostrar o **adicionar novo projeto** e **Adicionar Novo Item** caixas de diálogo.  

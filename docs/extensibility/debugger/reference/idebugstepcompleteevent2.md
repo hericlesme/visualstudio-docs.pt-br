@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0b96a1156d736332bdc8110ae2244fdfc9aad1b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9b077f4bcfd0f4344c29659791accee36da60c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando o programa que está sendo depurado conclui uma etapa em, uma etapa por ou uma etapa de fora de uma linha do código-fonte, declaração ou instrução.  

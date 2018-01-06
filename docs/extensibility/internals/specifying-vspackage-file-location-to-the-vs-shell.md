@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b987d5e88bcbcf02bfd80ddf5c3ed0d67a149b53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35bd935683f8ace47536389ebc65f34311e9fcfd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Especificando o local do arquivo de VSPackage ao Shell do VS
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]deve ser capaz de localizar a DLL para carregar o VSPackage do assembly. Você pode localizá-lo de várias maneiras, conforme descrito na tabela a seguir.  

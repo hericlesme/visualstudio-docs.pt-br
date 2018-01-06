@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b437dad35850a20696702b84d8ea98ead8a1e9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9d09c452fb6d03f7f5072e34813c3757455f96a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces herdadas no Editor
 Você pode acessar o editor do Visual Studio de interfaces herdadas. O SDK do Visual Studio inclui adaptadores conhecidos como *shims*, que permitem que essas interfaces interagir com o novo editor. No entanto, é recomendável que você atualize seu código herdado para usar o novo editor de API. Seu código terão um desempenho melhor e você pode usar as novas tecnologias, como o Windows Presentation Foundation (WPF) e o Managed Extensibility Framework (MEF).  

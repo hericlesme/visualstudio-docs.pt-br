@@ -23,11 +23,12 @@ caps.latest.revision: "47"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de243ee4b36d180b93e1b64f2a08c013a05d5360
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fc24568849b2a5e6b9b1a55f9b07b15a34ee1f17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-host-item"></a>Item de host do documento
   O <xref:Microsoft.Office.Tools.Word.Document> item de host é um tipo que estende o <xref:Microsoft.Office.Interop.Word.Document> tipo do assembly de interoperabilidade primária para o Word. O <xref:Microsoft.Office.Tools.Word.Document> item de host fornece todas as mesmas propriedades, métodos e eventos como um <xref:Microsoft.Office.Interop.Word.Document> objeto, mas ele também expõe eventos adicionais e atua como um contêiner para controles de host e controles de formulários do Windows.  

@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 Esta seção fornece informações detalhadas sobre as extensões do Visual Studio, incluindo arquitetura do Visual Studio, componentes, serviços, esquemas, utilitários e assim por diante.  

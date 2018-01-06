@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7456ebe1e28618270bd90f09186ec49814c62b66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2d3dfd2111533896db2a3b298ff294ff180d4a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtém informações estendidas de propriedade.  

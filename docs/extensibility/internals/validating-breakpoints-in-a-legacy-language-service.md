@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8d2f56c29121a4be06f00198edd235007fc1cd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validar os pontos de interrupção em um serviço de linguagem herdado
 Um ponto de interrupção indica que a execução do programa deve parar em um momento específico, enquanto ele está sendo executado em um depurador. Um usuário pode colocar um ponto de interrupção em qualquer linha no arquivo de origem, desde que o editor não tem conhecimento sobre o que constitui um local válido para um ponto de interrupção. Quando o depurador é iniciado, todos os pontos de interrupção marcados (chamados pendentes pontos de interrupção) são vinculados para o local apropriado no programa em execução. Ao mesmo tempo em que os pontos de interrupção são validados para garantir que eles marcam os locais de código válido. Por exemplo, um ponto de interrupção em um comentário não é válido, porque não há nenhum código no local no código-fonte. O depurador desabilita os pontos de interrupção inválidos.  

@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ace754b9d6ddb220b3647b281011d3763810987c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 71a202bdb71469e4d6b46eb537147092b1ea9013
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Tabela de comando do Visual Studio (. Arquivos de VSCT)
 Um arquivo de configuração da tabela de comando é um arquivo de texto que descreve o conjunto de comandos que contém um VSPackage. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando compilador de tabela (VSCT) compila a configuração baseada em XML (arquivos. VSCT) em arquivos de saída (.cto) de tabela do comando binário. Os arquivos resultantes .cto são os mesmos que são criadas usando o compilador de tabela (CTC) de comando para compilar os arquivos de configuração .ctc. No entanto, os arquivos. VSCT baseado em XML tem algumas vantagens, como um editor de XML e XML IntelliSense.  

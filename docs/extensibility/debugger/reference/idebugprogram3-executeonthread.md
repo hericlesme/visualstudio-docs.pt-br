@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b75ee8c7b53e751f322ba41bc3f93e2542e192ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 649b16c1b57b2f66772c2117b776e6b79ad862be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Executa o programa do depurador. O thread é retornado para fornecer as informações do depurador do thread onde o usuário está exibindo ao executar o programa.  

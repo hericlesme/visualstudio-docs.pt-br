@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab3506a6906c4223888a14132339cbe5499c92d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dados de documento e visualização de documentos em editores personalizados
 Um editor personalizado consiste em duas partes: um objeto de dados de documento e um objeto de exibição do documento. Como os nomes sugerem, o objeto de dados de documento representa os dados de texto a ser exibida e o objeto de exibição de documento (ou "view") representa uma ou mais janelas no qual exibir o objeto de dados de documento.  

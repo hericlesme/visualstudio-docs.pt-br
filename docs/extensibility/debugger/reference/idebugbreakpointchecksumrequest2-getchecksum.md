@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 98ffcebd4070f86ff065e9eb3e4a1b06493cab20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8451e8745f8d0743856d4ca170dcce76ac731919
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 Recupera a soma de verificação de documento para uma solicitação de ponto de interrupção considerando o identificador exclusivo do algoritmo de soma de verificação a ser usado.  

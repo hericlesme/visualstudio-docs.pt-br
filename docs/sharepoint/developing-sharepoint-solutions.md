@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 836568ff9c8b18c944ed2fe9e1e407c2176b48c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-sharepoint-solutions"></a>Desenvolvendo soluções do SharePoint
   Vários modelos de tipo de projeto do SharePoint estão disponíveis em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para a criação de sites do SharePoint e os elementos do site. Para obter uma lista dos tipos de projeto disponíveis, consulte [projeto do SharePoint e modelos de Item de projeto](../sharepoint/sharepoint-project-and-project-item-templates.md). A seguir está uma descrição dos elementos e propriedades de um projeto do SharePoint.  

@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d5f044f1f1d0f36918939a67d9d2e5bb1899929
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 616dea48ba9689bd90a01dab64c8855bdf774adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caching-data"></a>Armazenando dados em cache
   Você pode armazenar em cache objetos de dados em uma personalização no nível do documento para que os dados podem ser acessados offline ou sem abrir o Microsoft Office Word ou o Microsoft Office Excel. Para armazenar em cache um objeto, o objeto deve ter um tipo de dados que atenda a certos requisitos. Muitos tipos de dados comum do .NET Framework atendem a esses requisitos, incluindo <xref:System.String>, <xref:System.Data.DataSet>, e <xref:System.Data.DataTable>.  

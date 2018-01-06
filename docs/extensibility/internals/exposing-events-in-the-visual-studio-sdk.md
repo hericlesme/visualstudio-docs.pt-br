@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7b392ac841a50d835186e79a383e404e7fba190
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74a9ff54d14b6212d0fc484acd2bd25fad18bb87
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Expõe eventos no Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]permite que você da fonte de eventos por meio de automação. É recomendável que você os eventos de projetos e itens de projeto de origem.  

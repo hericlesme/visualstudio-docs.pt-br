@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd0c23258034fb99f5e2e4e0c86ca9e61c3d68ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac92c327a5eb4e51c7e6c22a73fb331843adc99f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>O que &#39; s no código-fonte controle plug-in API versão 1.3
 A API de plug-in de controle de origem versão 1.3 apresenta as seguintes funções de novo para fornecer um controle mais avançado.  
@@ -27,7 +28,7 @@ A API de plug-in de controle de origem versão 1.3 apresenta as seguintes funç�
 ## <a name="changes"></a>Alterações  
  As funções a seguir são novas para a API de plug-in de controle de origem versão 1.3:  
   
-|Função|Visão Geral|  
+|Função|Visão geral|  
 |--------------|--------------|  
 |[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Permite que os bits de funcionalidade adicional a ser relatado|  
 |[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Permite que a verificação de arquivos que têm versões mais recentes no versão controle banco de dados no disco local|  

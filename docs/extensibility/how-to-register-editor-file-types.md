@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9f2837dff6c5dd62c03da2ab340fca287a1da56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 679223f21bd839a8d94b299319ad22c6701bc407
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-register-editor-file-types"></a>Como: registrar tipos de arquivo do Editor
 A maneira mais fácil para registrar tipos de arquivo do editor está usando os atributos de registro fornecidos como parte do [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] pacote framework (MPF) classes gerenciadas. Se você estiver implementando seu pacote no formato nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], você também pode escrever um script de registro que registra seu editor e as extensões associadas.  

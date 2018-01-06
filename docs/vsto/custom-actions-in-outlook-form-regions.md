@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74c688d0430b95c54f1f871ad6f82fde6fa781ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89b49139db9d91ba742caeb80308f9175195a843
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Personalizar ações em regiões de formulário do Outlook
   Ações exibem botões que permitem aos usuários responder a um item do Microsoft Office Outlook. Por exemplo, para responder a um item de email, os usuários clicam o **resposta**, **responder a todos**, ou **Forward** botões de ação. Cada uma dessas ações cria um novo item de email e preenche os campos do item usando as informações do item original.  

@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4fef2c76364c1ca1398aef3b94226e7a9a365cf1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que devem ser executados após a instalação
 Se você implantar sua extensão por meio de um arquivo. msi, você deve executar `devenv /setup` como parte da instalação para que o Visual Studio para descobrir suas extensões.  

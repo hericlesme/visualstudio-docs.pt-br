@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0145982781ca3e21229a7af46090ed2addcaccde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 18f1b473de12b53f3e1a7829d1f1c3b49862aef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implantando extensões para as ferramentas do SharePoint no Visual Studio
   Para implantar uma extensão de ferramentas do SharePoint, criar um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) que contém o assembly de extensão e outros arquivos que você quer distribuir com a extensão. Um pacote do VSIX é um arquivo compactado que segue o padrão de Open Packaging Conventions (OPC). Pacotes do VSIX tem a extensão de .vsix.  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
   
     -   Se o assembly de extensão é incluído como um arquivo em seu projeto, escolha **arquivo no sistema de arquivos**. No **caminho** lista, digite o caminho completo para o arquivo de assembly de extensão ou use o **procurar** botão para localizar e escolha o arquivo de assembly.  
   
-5.  Selecione o botão **OK**.  
+5.  Escolha o botão **OK**.  
   
 ##### <a name="to-include-a-sharepoint-command-assembly"></a>Para incluir um assembly de comando do SharePoint  
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
   
     -   Se o assembly de comando é incluído como um arquivo em seu projeto, escolha **arquivo no sistema de arquivos**. No **caminho** lista, digite o caminho completo para o arquivo de assembly de extensão ou use o **procurar** botão para localizar e escolha o arquivo de assembly.  
   
-5.  Selecione o botão **OK**.  
+5.  Escolha o botão **OK**.  
   
 ##### <a name="to-include-a-template-that-you-create"></a>Para incluir um modelo que você criar  
   
@@ -206,7 +207,7 @@ ms.lasthandoff: 10/31/2017
   
     -   Se o assembly do assistente está incluído como um arquivo em seu projeto, escolha **arquivo no sistema de arquivos**. No **caminho** campo, digite o caminho completo para o arquivo de assembly ou use o **procurar** botão para localizar e escolha o assembly.  
   
-5.  Selecione o botão **OK**.  
+5.  Escolha o botão **OK**.  
   
 ### <a name="related-walkthroughs"></a>Explicações passo a passo relacionada  
  A tabela a seguir lista as instruções passo a passo que demonstre como usar um projeto do VSIX para implantar diferentes tipos de extensões de ferramentas do SharePoint.  

@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8afe8ed1d59f8daec34a99b1479079a69a1bc740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c885fe006f1a6a65f97b1f11de61e0639dd1559a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Instruções passo a passo: estendendo um tipo de item do projeto do SharePoint
   Você pode usar o **modelo de conectividade de dados corporativos** item de projeto para criar um modelo para o serviço de conectividade de dados de negócios (BDC) no SharePoint. Por padrão, quando você cria um modelo usando o item de projeto, os dados no modelo não são exibidos aos usuários. Você também deve criar uma lista externa no SharePoint para permitir que os usuários exibir os dados.  
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
     -   Microsoft.VisualStudio.SharePoint  
   
-5.  Selecione o botão **OK**.  
+5.  Escolha o botão **OK**.  
   
 ## <a name="defining-the-project-item-extension"></a>Definir a extensão de Item de projeto  
  Criar uma classe que define a extensão para o **modelo de conectividade de dados corporativos** item de projeto. Para definir a extensão, a classe implementa o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interface. Implemente esta interface sempre que você deseja estender um tipo existente de item de projeto.  
@@ -241,7 +242,7 @@ ms.lasthandoff: 10/31/2017
   
 14. Verifique o **lista** seção na área de início rápido ainda não contém uma lista com base no modelo BDC padrão no projeto. Primeiro, você deve criar uma lista de dados externos, usando a interface do usuário do SharePoint ou usando a extensão de item de projeto.  
   
-15. Feche o navegador da web.  
+15. Feche o navegador da Web.  
   
 16. Na instância do Visual Studio que abriu o projeto TestBDCModel, abra o menu de atalho para o **TestBDCModel** nó **Solution Explorer**e, em seguida, escolha **gerar dados externos Lista**.  
   
@@ -259,7 +260,7 @@ ms.lasthandoff: 10/31/2017
   
      O **modelo de conectividade de dados corporativos** modelo de projeto gera o modelo BDC padrão que fornece todos esses dados.  
   
-22. Feche o navegador da web.  
+22. Feche o navegador da Web.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Limpando o computador de desenvolvimento  
  Depois de concluir o teste a extensão de item de projeto, remova a lista externa e o modelo BDC do site do SharePoint e remover a extensão de item de projeto do Visual Studio.  
@@ -274,7 +275,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Em **permissões e gerenciamento**, escolha **excluir essa lista**e, em seguida, escolha **Okey** para confirmar que você deseja enviar a lista para a Lixeira.  
   
-5.  Feche o navegador da web.  
+5.  Feche o navegador da Web.  
   
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Para remover o modelo BDC do site do SharePoint  
   

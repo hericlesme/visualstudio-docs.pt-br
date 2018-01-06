@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a93dbdff19d0a0feaafb549b00968e095690fd78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f5dd2a98ec84b656dc70a00236775710266c54ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-source-control"></a>Suporte a controle de origem
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]dá suporte a check-out do arquivo, check-ins e outras operações de controle de origem para o projeto ou o editor. Como um cliente de controle de origem, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é projetado para interagir com um pacote de controle de origem, como [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], que fornece arquivamento, controle de versão e recursos de controle para um conjunto de arquivos definido dinamicamente.  

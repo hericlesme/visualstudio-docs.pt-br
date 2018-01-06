@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a07f5b47ac6d9941a24f1d452bb1e290365049ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 357da47a68e3ae25fcd30f9516ce0509b9717807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-outlook-form-regions"></a>Criando regiões de formulário do Outlook
   Você pode usar regiões de formulário para personalizar formulários do Microsoft Office Outlook. Visual Studio fornece ferramentas avançadas que tornam mais fácil para você criar, desenvolver e depurar regiões de formulário.  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
 ###  <a name="HandlingFormRegionEvents"></a>Manipulação de eventos de região de formulário  
  O **região de formulário do Outlook** item adiciona automaticamente os manipuladores de eventos de três a seguir para o arquivo de código de região de formulário.  
   
-|Evento|Descrição|  
+|evento|Descrição|  
 |-----------|-----------------|  
 |FormRegionInitializing|Ocorre antes que a região de formulário seja inicializada. Você pode verificar as condições em que este manipulador de eventos para determinar se o Outlook deve exibir a região do formulário. Para obter mais informações, consulte [como: evitar que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).|  
 |FormRegionShowing|Ocorre após uma instância da região do formulário ser criada, mas antes da região do formulário ser exibida.|  

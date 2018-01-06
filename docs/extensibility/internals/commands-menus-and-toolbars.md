@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ba153c6ec1d9944e889919d1d49817dcd97c9a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa1513bcd61ac63fb9d2a59f69a8b2ce22cf5114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-menus-and-toolbars"></a>Comandos, Menus e barras de ferramentas
 Menus e barras de ferramentas são que os maneira como os usuários acessam comandos no seu VSPackage. Comandos são funções que realizar tarefas, como imprimir um documento, a atualização de uma exibição ou criar um novo arquivo. Menus e barras de ferramentas são maneiras gráficas convenientes para apresentar os comandos para os usuários. Normalmente, os comandos relacionados são agrupados juntos no mesmo menu ou barra de ferramentas.  

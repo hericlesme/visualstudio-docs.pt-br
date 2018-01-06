@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de um serviço de linguagem herdado
 Um serviço de idioma define os elementos e recursos para um idioma específico e é usado para fornecer o editor com informações específicas para esse idioma. Por exemplo, o editor precisa conhecer os elementos e as palavras-chave da linguagem para dar suporte a cores de sintaxe.  

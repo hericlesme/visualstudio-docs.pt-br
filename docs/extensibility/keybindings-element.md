@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff72a2a7acf63dea678aad0cda4cdca196ffc14f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3a56d930094c7a29deb4720836ba6e5a7365cc9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybindings-element"></a>Elemento de associações
 O elemento de associações de grupos de elementos KeyBinding e outros agrupamentos de associações.  

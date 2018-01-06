@@ -18,11 +18,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5126e15daa8cbc22f4b64be0bb2bb2f3e0bb6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ef55a90b55314bf7ab2c5aa6259f09b62a350da3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Instruções passo a passo: importar página mestre personalizada e página do local com uma imagem
   Este passo a passo demonstra como importar uma página mestre personalizada do SharePoint e uma página de site que tem uma imagem em um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.  

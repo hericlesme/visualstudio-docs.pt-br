@@ -18,11 +18,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9c5d24c8a3a2bb81c87b2cc405a6885b8f23374
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sdk-helpers-for-debugging"></a>Auxiliares do SDK para depuração
 Essas funções e as declarações são funções auxiliares global para implementar mecanismos de depuração, avaliadores de expressão e provedores de símbolo em C++.  
@@ -30,7 +31,7 @@ Essas funções e as declarações são funções auxiliares global para impleme
 > [!NOTE]
 >  Não há nenhum versões gerenciadas dessas funções e declarações neste momento.  
   
-## <a name="overview"></a>Visão Geral  
+## <a name="overview"></a>Visão geral  
  Em ordem para mecanismos de depuração, avaliadores de expressão e provedores de símbolo a ser usado pelo Visual Studio, eles devem estar registrados. Isso é feito definindo subchaves do registro e entradas, também conhecidas como "métricas de configuração". As seguintes funções globais são projetadas para facilitar o processo de atualizar essas métricas. Consulte a seção sobre locais do registro para descobrir o layout de cada subchave do registro que é atualizado por essas funções.  
   
 ## <a name="general-metric-functions"></a>Funções de métrica geral  

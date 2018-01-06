@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e85ad4c4027a27b33f2f96284df80f852ffe3b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1463fe22d4b08933112ca1ad0cf28f38a4e102c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de roteamento de comando
 No Visual Studio comandos são tratados por um número de diferentes componentes. Comandos são roteados do contexto interno, que é baseado na seleção atual, para o contexto mais externo de (também conhecido como global). Para obter mais informações, consulte [disponibilidade](../../extensibility/internals/command-availability.md).  

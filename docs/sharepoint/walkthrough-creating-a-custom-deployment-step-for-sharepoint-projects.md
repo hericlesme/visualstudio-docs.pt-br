@@ -18,11 +18,12 @@ caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7375071522ea59c9c00a5fa94277a3817438d25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1a2659e1c6ebf7bee8320f10549c2a8914010648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Instruções passo a passo: criando uma etapa de implantação para projetos SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui várias etapas de implantação interna, mas você também pode criar seus próprios.  
@@ -349,7 +350,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Verifique se o projeto é compilado com êxito, que o navegador da web abre o site do SharePoint, que o **lista** item na barra Início Rápido inclui o novo **funcionários** lista e que o  **Os funcionários** lista inclui a entrada para Jim Hance.  
   
-5.  Feche o navegador da web.  
+5.  Feche o navegador da Web.  
   
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>Para modificar a definição de lista e a instância de lista e reimplantá-los  
   

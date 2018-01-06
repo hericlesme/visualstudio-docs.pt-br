@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 010ec576fe8d1cd52c82165793324eede0da9e6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 76f47edd31892a98ec3235bfc4a00f5f2e647408
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Estrutura de tópicos em um serviço de linguagem herdado
 Estrutura de tópicos torna possível recolher um programa complexo em uma visão geral ou a estrutura de tópicos. Por exemplo, no c# todos os métodos podem ser recolhidos para uma única linha, mostrando apenas a assinatura do método. Além disso, as estruturas e classes podem ser recolhidas para mostrar apenas os nomes das classes e estruturas. Dentro de um único método, lógica complexa pode ser recolhida para mostrar o fluxo geral mostrando apenas a primeira linha de instruções como `foreach`, `if`, e `while`.  

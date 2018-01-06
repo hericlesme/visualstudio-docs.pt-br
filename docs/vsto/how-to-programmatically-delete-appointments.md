@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b27c536a9e5b7237efdd6b11b4be75ca1d91f19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 620b0643280adebad55adcfacb6883b644e42227
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Como excluir compromissos programaticamente
   Este exemplo exclui uma instância de um compromisso recorrente. O exemplo supõe que uma instância de um compromisso recorrente ocorre em 28 de junho de 2006, às 08:00.  

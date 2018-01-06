@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7759a2394f2cda19f875a85a22c4a674fee8964
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-model-core-components"></a>Componentes principais do projeto modelo
 As tabelas a seguir expandem o modelo de projeto. As tabelas presentes breves descrições das interfaces e serviços identificados no modelo e as interfaces e os serviços associados a objetos específicos. Além disso, as tabelas de detalham de outras interfaces que são opcionais na criação do projeto e na manutenção dependendo dos requisitos do seu tipo de projeto específico.  

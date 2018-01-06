@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55ba59a5a29181dfa3cdd70427720293582a648d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-vspackages"></a>Gerenciando VSPackages
 Na maioria dos casos você não precisa se preocupar em Gerenciar VSPackages, desde que os modelos de projeto e item registrar e carregar o pacote automaticamente. No entanto, em algumas circunstâncias você precisará saber um pouco mais para gerenciar seu pacote.  

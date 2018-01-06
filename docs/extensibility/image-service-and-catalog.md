@@ -11,11 +11,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5813788834a7a5a99c10fe6dafc35a300bac007
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-and-catalog"></a>Catálogo e o serviço de imagem
 Este guia contém orientações e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagem introduzido no Visual Studio 2015.  
@@ -108,9 +109,9 @@ Este guia contém orientações e práticas recomendadas para adotar o serviço 
 |-|-|  
 |**Subelemento**|**Definição**|  
 |Importar|Importa os símbolos do arquivo de manifesto especificado para uso no manifesto do atual|  
-|GUID|O símbolo representa um GUID e deve corresponder a formatação de GUID|  
+|Guid|O símbolo representa um GUID e deve corresponder a formatação de GUID|  
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo|  
-|Cadeia de caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária|  
+|Cadeia de Caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária|  
   
  Símbolos são referenciados usando a sintaxe $(symbol-name) e diferencia maiusculas de minúsculas:  
   
@@ -149,7 +150,7 @@ Este guia contém orientações e práticas recomendadas para adotar o serviço 
 |||  
 |-|-|  
 |**Atributo**|**Definição**|  
-|GUID|[Obrigatório] A parte GUID do moniker de imagem|  
+|Guid|[Obrigatório] A parte GUID do moniker de imagem|  
 |ID|[Obrigatório] A parte de identificação do moniker de imagem|  
 |AllowColorInversion|[Opcional, padrão Verdadeiro] Indica se a imagem pode ter suas cores invertidas programaticamente quando usado em um plano de fundo escuro.|  
   
@@ -206,7 +207,7 @@ Este guia contém orientações e práticas recomendadas para adotar o serviço 
 |||  
 |-|-|  
 |**Atributo**|**Definição**|  
-|GUID|[Obrigatório] A parte GUID do moniker de imagem|  
+|Guid|[Obrigatório] A parte GUID do moniker de imagem|  
 |ID|[Obrigatório] A parte de identificação do moniker de imagem|  
 |Externo|[Opcional, padrão é false] Indica se o moniker de imagem faz referência a uma imagem no manifesto do atual.|  
   

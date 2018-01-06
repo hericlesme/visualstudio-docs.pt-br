@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e928d396db2029bc4d2e659c869fd74e0df3191
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 920706adb86d79e635e4f5289ca010e03282853e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-concepts"></a>Conceitos do depurador
 Para criar o pacote de depuração do Visual Studio, você precisa estar familiarizado com os conceitos de arquitetura usados na criação do pacote.  

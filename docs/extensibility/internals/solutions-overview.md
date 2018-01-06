@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6a1afea2357fb0c0ef1bcf8152f8a3785a55786
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 539ceb45cce6c317ed3723c5006e6d2a77029335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions-overview"></a>Visão geral das soluções
 Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo. As informações de status e projeto pertencente à solução são armazenados em dois arquivos de solução diferentes. O arquivo de solução (. sln) é baseado em texto e pode ser colocado sob controle do código fonte e compartilhado entre os usuários. O arquivo de opção (. suo) de usuário de solução é binário. Como resultado, o arquivo. suo não pode ser colocado sob controle do código fonte e contém informações específicas do usuário.  

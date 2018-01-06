@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b05ff310a2e0c478b6f9be766f27731ca9f8f9ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d161b078e4001ea7f02311bbcefe4c7f1eb6b7b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-event-types"></a>Tipos de eventos com suporte
 Depuração do Visual Studio atualmente suporta os seguintes tipos de evento:  
@@ -55,7 +56,7 @@ Depuração do Visual Studio atualmente suporta os seguintes tipos de evento:
 > [!NOTE]
 >  O [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface é necessária para todos os eventos.  
   
-|Evento|IDebugProgram2|IDebugThread2|Interrompendo eventos|  
+|evento|IDebugProgram2|IDebugThread2|Interrompendo eventos|  
 |-----------|--------------------|-------------------|---------------------|  
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Permitido, mas não é necessária|Permitido, mas não é necessária|Não|  
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Necessária|Necessária|Sim|  

@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7aab5978d2fc5f7bee82b097ed61a9603d7e198
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 664ab99af45e8c449247c5515184293ecb1a469f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Como: fornecer suporte a texto oculto em um serviço de linguagem herdado
 Você pode criar regiões de texto oculto além das regiões de estrutura de tópicos. Regiões do texto oculto podem ser controlado pelo cliente ou controlada pelo editor e são usados para ocultar uma região do texto completamente. O editor exibe uma região oculta como linhas horizontais. Um exemplo disso é o modo de exibição somente Script no editor de HTML.  

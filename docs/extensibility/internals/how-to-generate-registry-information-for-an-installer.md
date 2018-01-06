@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31184a78bae612e4341c3210a1f34f993a0581f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc3236397dd8a9d0f10927ba3e8fe23d2c4ba78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Como: gerar informações de registro para um instalador
 O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para um VSPackage gerenciado. O manifesto pode ser incorporado em um pacote de instalação do Windows Installer. RegPkg também pode gerar um arquivo que pode ser incluído em um arquivo de origem de instalação com base no [o conjunto de ferramentas do Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=62238).  

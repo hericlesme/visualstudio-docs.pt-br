@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b37d8596a6bf4465d1146651673acbccdd441a13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2ea3b71f0ae5e66e100d7252c77c2fb1068b8985
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Essa interface representa um erro ou um ponto de interrupção de aviso, como um local inválido, uma expressão inválida ou as razões por que o ponto de interrupção pendente não vinculado (código de não carregado ainda, e assim por diante).  

@@ -19,11 +19,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932827db3c12c3376dd74605c55e1bfed3c3e978
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f399cd0d62cf9cf8e90191e293e56279930977e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-vsto-add-ins"></a>Introdução aos suplementos de programação VSTO
   Você pode usar os suplementos do VSTO para automatizar os aplicativos do Microsoft Office, estender os recursos do aplicativo e personalizar a interface do usuário (IU) do aplicativo. Para obter informações sobre como suplementos do VSTO em comparação com outros tipos de soluções do Office que você pode criar usando o Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  

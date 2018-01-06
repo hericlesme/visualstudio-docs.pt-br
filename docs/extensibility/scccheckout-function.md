@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de22bd4722df1cd78472fd9e180fdb8132401828
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: af8aac642ecd21f8f4709874e4e3e6ff0b3e58b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccheckout-function"></a>Função SccCheckout
 Dada uma lista de nomes de arquivo totalmente qualificado, essa função verifica-los para a unidade local. O comentário se aplica a todos os arquivos de check-out. O argumento de comentário pode ser um `null` cadeia de caracteres.  

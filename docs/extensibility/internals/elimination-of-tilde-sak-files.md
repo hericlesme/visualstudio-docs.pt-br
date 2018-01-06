@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e487acefcb06c4fa0cd2070bfcf20bd065d500ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d72a42c89cc775b9312d301a052ee102d977728
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elimination-of-sak-files"></a>Eliminação de ~ SAK arquivos
 No código-fonte controle plug-in API 1.2, o ~ arquivos SAK foram substituídos por sinalizadores de recursos e novas funções que detecta se um plug-in de controle de origem dá suporte a arquivo MSSCCPRJ e check-outs compartilhados.  

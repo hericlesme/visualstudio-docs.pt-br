@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88f7d2bf3a3351999175425366cf421c3b5ce0b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 209006129bcb2cfaaf88233768df1d9597cd09a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Como: suprimir notificações de alteração de arquivo
 Quando o arquivo físico que representa o buffer de texto tiver sido alterado, uma caixa de diálogo exibe a mensagem **você deseja salvar as alterações nos itens a seguir?** Isso é conhecido como a notificação de alteração de arquivo. Se muitas alterações vai ser para o arquivo, no entanto, essa caixa de diálogo Exibir repetidamente pode rapidamente se tornar incômoda.  

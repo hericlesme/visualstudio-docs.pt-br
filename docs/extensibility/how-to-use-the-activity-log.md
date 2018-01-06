@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d08cd747c762d7820e4744251fb00abff22b3fdc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c27934d043a067f88bd9f47efe7d8f7972959e10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: usar o Log de atividades
 VSPackages pode gravar mensagens no log de atividade. Esse recurso é especialmente útil para depuração VSPackages em ambientes de varejo.  

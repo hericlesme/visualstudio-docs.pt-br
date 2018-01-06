@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72460f39cf63346106c2ccd81dc9ab16f8af78b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-policy-and-the-properties-window"></a>Política de modelo e na janela Propriedades
 Quando um projeto está contido dentro de um projeto de modelo de empresa, projeto modelo enterprise pode impor a política. Política de modelo torna-se um sistema de restrição que pode ser usado para definir valores padrão para propriedades, ocultar propriedades, adicionar propriedades e assim por diante.  

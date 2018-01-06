@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a494b32a252a87c6863eaa6335aa1cd6b300db5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 42273797b1010afdee3d317e7aa2e6ae4362a7bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-data-in-project-files"></a>Salvando dados em arquivos de projeto
 Um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no arquivo de projeto. Estrutura de pacote gerenciado (MPF) fornecem duas interfaces para realizar essa tarefa:  

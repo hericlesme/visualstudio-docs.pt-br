@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc66e193b13ac6baf9d6089483a1281c2d6a59ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f2209ce2a2f6b1263bb52d550ca303f2525047d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parent-element"></a>Elementos pai
 O pai de um botão ou caixa de combinação só pode ser um grupo. O pai de um menu ou grupo pode ser qualquer outro menu ou grupo. Em um [CommandPlacement elemento](../extensibility/commandplacement-element.md), esse elemento é necessário; em todas as outras instâncias é opcional. Se esse elemento for omitido, o pai do `Group_Undefined:0` será implícita.  

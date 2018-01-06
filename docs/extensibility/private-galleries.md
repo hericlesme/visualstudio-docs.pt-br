@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c58ce16489c02475a7d76327e9df19a6022109a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5226ff7a4ed77333d2a6f9287f129c6a6d754cac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="private-galleries"></a>Galerias privadas
 Você pode compartilhar a controles, modelos e ferramentas que você desenvolver enviá-los para um *Galeria privada* na intranet de sua organização, da seguinte maneira:  

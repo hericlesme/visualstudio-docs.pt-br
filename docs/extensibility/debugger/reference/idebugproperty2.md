@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 45ad3a6c0d250136d0ab3e1becb088ea140b42e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8dc1305fb8534dc8e14192268913290aef25f2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Essa interface representa uma propriedade de quadro de pilha, uma propriedade de documento do programa ou outra propriedade. A propriedade normalmente é o resultado de uma avaliação de expressão.  

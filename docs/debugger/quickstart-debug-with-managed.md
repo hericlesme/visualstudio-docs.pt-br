@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545241d254d8ea2d2532ee8590e8e1867d635592
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: dotnet
+ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Depurar com código gerenciado usando o depurador do Visual Studio
 
@@ -29,7 +30,7 @@ O depurador do Visual Studio fornece muitos recursos poderosos para ajudá-lo a 
 
 2. Em **Visual C#** ou **Visual Basic**, escolha **.NET Core**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Core)**.
 
-     Se você não vir o **aplicativo de Console (.NET Core)** modelo de projeto, clique no **abrir instalador do Visual Studio** link no painel esquerdo do **novo projeto** caixa de diálogo. O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de área de trabalho do .NET** e **.NET Core** carga de trabalho, escolha **modificar**.
+     Se você não vir o modelo de projeto do **Aplicativo de Console (.NET Core)**, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha o **desenvolvimento de área de trabalho do .NET** e **.NET Core** carga de trabalho, escolha **modificar**.
 
 3. Digite um nome como **MyDbgApp** e clique em **Okey**.
 

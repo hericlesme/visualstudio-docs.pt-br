@@ -20,11 +20,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1033f33835dfdeefbb4791e356ca50a577b789ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 05a0f2a997791564a8358287ff1d632c3ff7bffe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Instruções passo a passo: criando um item de projeto da coluna de site com um modelo de projeto, parte 1
   Projetos SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio, criar seus próprios tipos de item de projeto do SharePoint e, em seguida, associá-los a um modelo de projeto. Neste passo a passo, você definirá um tipo de item de projeto para a criação de uma coluna de site e, em seguida, você criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto da coluna de site.  
@@ -736,7 +737,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  Na lista de colunas de site, verifique se um **colunas personalizadas** grupo contém uma coluna denominada **SiteColumnTest**.  
   
-7.  Feche o navegador da web.  
+7.  Feche o navegador da Web.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Limpando o computador de desenvolvimento  
  Depois de concluir o teste do projeto, remova o modelo de projeto da instância experimental do Visual Studio.  

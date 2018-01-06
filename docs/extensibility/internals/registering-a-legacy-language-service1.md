@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9335f9a9ad6aedab1f0455267c1cca48bf1b3ca4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2f8edcf34d43311be7406c307a7fea98169712a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar um serviço de linguagem herdado
 Na estrutura de pacote gerenciado (MPF), o serviço de linguagem é dedicaram por um VSPackage (consulte [VSPackages](../../extensibility/internals/vspackages.md)) e está registrado com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] adicionando chaves do registro e entradas. Esse processo de registro é feito parcialmente durante a instalação e parcialmente em tempo de execução.  

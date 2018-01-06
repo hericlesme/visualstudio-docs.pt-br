@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f64b02521fcea9abef9d7196a27e4a209100a892
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar um serviço de linguagem herdado
 As seções a seguir fornecem listas de entradas do registro para o idioma de várias opções de serviço disponíveis no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

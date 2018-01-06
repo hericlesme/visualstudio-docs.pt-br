@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>Como: implementar projetos aninhados
 Quando você cria um tipo de projeto aninhado não há são uma várias etapas adicionais que devem ser implementadas. Um projeto principal tem algumas das responsabilidades mesmo que a solução tem para seus projetos aninhados (filho). O projeto principal é um contêiner de projetos semelhantes a uma solução. Em particular, há vários eventos que devem ser gerados pela solução e pelos projetos pai para criar a hierarquia de projetos aninhados. Esses eventos são descritos no seguinte processo para a criação de projetos aninhados.  

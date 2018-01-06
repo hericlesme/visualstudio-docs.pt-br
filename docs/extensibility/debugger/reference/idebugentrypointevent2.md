@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8f6a5052943da57bc73beacdec8fc94a2b27164
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ed45b6d0166a92e9547b7ad76e189108cd2b5e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 O mecanismo de depuração (DE) envia essa interface para o Gerenciador de sessão de depuração (SDM) quando o programa está prestes a executar sua primeira instrução do código do usuário.  

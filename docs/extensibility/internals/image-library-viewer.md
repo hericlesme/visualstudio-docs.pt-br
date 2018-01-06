@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>Visualizador de biblioteca de imagens
 A ferramenta do Visualizador de biblioteca do Visual Studio imagem pode carregar e pesquisar os manifestos de imagem, permitindo que o usuário para manipulá-los da mesma maneira que faria do Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento de cada manifesto de imagem e exibe informações de origem de cada imagem no manifesto de imagem. Essa ferramenta é útil para:  
@@ -74,9 +75,9 @@ A ferramenta do Visualizador de biblioteca do Visual Studio imagem pode carregar
 |-|-|  
 |**Subelemento**|**Definição**|  
 |Importar|Importa os símbolos do arquivo de manifesto especificado para uso no manifesto do atual.|  
-|GUID|O símbolo representa um GUID e deve corresponder a formatação de GUID.|  
+|Guid|O símbolo representa um GUID e deve corresponder a formatação de GUID.|  
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo.|  
-|Cadeia de caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária.|  
+|Cadeia de Caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária.|  
   
  Símbolos são referenciados usando a sintaxe $(symbol-name) e diferencia maiusculas de minúsculas:  
   
@@ -115,7 +116,7 @@ A ferramenta do Visualizador de biblioteca do Visual Studio imagem pode carregar
 |||  
 |-|-|  
 |**Atributo**|**Definição**|  
-|GUID|[Obrigatório] A parte GUID do moniker de imagem|  
+|Guid|[Obrigatório] A parte GUID do moniker de imagem|  
 |ID|[Obrigatório] A parte de identificação do moniker de imagem|  
 |AllowColorInversion|[Opcional, padrão Verdadeiro] Indica se a imagem pode ter suas cores invertidas programaticamente quando usado em um plano de fundo escuro.|  
   
@@ -171,7 +172,7 @@ A ferramenta do Visualizador de biblioteca do Visual Studio imagem pode carregar
 |||  
 |-|-|  
 |**Atributo**|**Definição**|  
-|GUID|[Obrigatório] A parte GUID do moniker de imagem|  
+|Guid|[Obrigatório] A parte GUID do moniker de imagem|  
 |ID|[Obrigatório] A parte de identificação do moniker de imagem|  
 |Externo|[Opcional, padrão é false] Indica se o moniker de imagem faz referência a uma imagem no manifesto do atual.|  
   

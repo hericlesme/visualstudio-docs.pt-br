@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c6321644cb59f55ad1335249aec5b071aef4ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Como: abrir editores para documentos abertos
 Antes de um projeto é aberto em uma janela de documento, o projeto primeiro deve determinar se o arquivo já está aberto na janela do documento para outro editor. O arquivo pode ser abra em um editor específico do projeto ou um dos editores padrão registrado com [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a71f3e14c6a8c87290de2a6204fa28f99a8cabe8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0bca2eef930b871d5728ff1c85742a28f4b51a7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-user-options-suo-file"></a>Opções de usuário de solução (. Arquivo suo)
 O arquivo de opções (. suo) do usuário de solução contém opções de solução por usuário. Esse arquivo não deve fazer check-in de controle do código fonte.  

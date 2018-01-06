@@ -13,11 +13,12 @@ caps.latest.revision: "45"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ccd78a87f4c3d2d7ef178c939a22afb24e42d75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe656b22537276f15a1b3cebaaa6890ed4a87735
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackages"></a>VSPackages
 VSPackages são módulos de software que estendem o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE), fornecendo os elementos de interface do usuário, serviços, projetos, editores e designers.  

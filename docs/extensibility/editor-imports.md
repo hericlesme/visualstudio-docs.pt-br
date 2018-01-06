@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e0a131ef35202581ffb78a75a6b48239a7d81f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-imports"></a>Editor de importações
 Você pode importar um número de serviços de editor, fábricas e os agentes que fornecem a extensão com tipos diferentes de acesso para o editor de núcleo. Por exemplo, você pode importar o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> fornecer um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> para um determinado tipo de conteúdo. (Este navegador permite que executar diferentes tipos de pesquisas em um buffer de texto).  

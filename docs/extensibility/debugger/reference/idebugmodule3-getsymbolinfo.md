@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 341d31537f3c6c67e601296cf14eb5a6a10df08d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8648e591e545db73b636c6b21fcbcaa1d1afb640
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Recupera uma lista de caminhos que são pesquisados para símbolos, bem como os resultados da pesquisa de cada caminho.  

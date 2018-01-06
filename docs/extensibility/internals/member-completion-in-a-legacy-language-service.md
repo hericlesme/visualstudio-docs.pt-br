@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ee8dd14674a1157eefda60e2e7536d7ade90f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e77511bdaaa96dc75f5be75c175b63fcd3cc3253
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Conclusão de membro em um serviço de linguagem herdado
 A conclusão do IntelliSense membro é uma dica de ferramenta que exibe uma lista de possíveis membros de um escopo específico, como uma classe, estrutura, enumeração ou namespace. Por exemplo, no c#, se o usuário digitar "this" seguido por um período, uma lista de todos os membros da classe ou estrutura no escopo atual é apresentada em uma lista na qual o usuário pode selecionar.  

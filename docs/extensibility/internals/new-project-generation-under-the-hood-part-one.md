@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe08d9e23f1a77fd68df2bdba4389e7b7955b11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nova geração de projeto: Nos bastidores, parte 1
 Já pensou sobre como criar seu próprio tipo de projeto? Saber o que realmente acontece quando você cria um novo projeto? Vamos dar uma olhada nos bastidores e ver o que realmente está acontecendo.  

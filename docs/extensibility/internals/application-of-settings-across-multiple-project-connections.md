@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9750d946a941e86a6c0a6973661f00f8f44cf9b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a5d66bf7670d5ba9b6423461bdb5e5482819592f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplicativo de configurações em várias conexões de projeto
 Um plug-in de controle de origem criados usando o código-fonte controle plug-in API 1.2, pode usar uma operação em lote para executar a mesma operação de controle de origem em vários contextos de conexão ou de vários projetos. Lotes podem ser usados para eliminar a redundância, caixas de diálogo da experiência do usuário por projeto.  

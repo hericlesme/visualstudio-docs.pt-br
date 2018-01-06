@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f845e18bbd4c06d5652571ec83270a80d31ec852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e0f01e10050fcbdb5cf27390464ae6b8b3e62d64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-provider"></a>Provedor de símbolo
 Uma implementação do avaliador de expressão deve acessar as informações de depuração simbólicas geradas pelo compilador de linguagem para avaliar expressões e variáveis. Isso é feito pelo uso de interfaces de um provedor de símbolo (SP), também chamado de um manipulador de símbolo.  

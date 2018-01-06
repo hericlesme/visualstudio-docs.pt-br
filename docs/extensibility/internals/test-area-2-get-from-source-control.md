@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d436ef99907556c93f48c55bea315ae66e6218e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9ec7071a1e4ca78bb116c577cdcc77f9798c050
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de teste 2: Obter do controle de origem
 Essa área de teste abrange os casos de teste para recuperar itens do repositório de versão por meio do comando Get. Nesses casos de teste podem ser aplicados para ambos os locais e projetos da Web.  

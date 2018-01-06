@@ -11,11 +11,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 294767688039369cb651609cee630ae80dd47abf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac4154ef3fd275d89bd8858717a5850fe34c1f38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extensibility-in-visual-studio"></a>Extensibilidade do Visual Studio
 O Visual Studio fornece várias opções de extensibilidade. Você pode criar seus próprios SDKs, usar o Windows, Windows Phone e SDKs do Azure (que são instalados como parte do Visual Studio) e estender o próprio Visual Studio.  

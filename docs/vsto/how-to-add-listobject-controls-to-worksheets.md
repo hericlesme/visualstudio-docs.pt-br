@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c22c8aa98ab2b1522b2cd9094738dd251708aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6b8b171c7982098f75423d8953c8e4ab14b487c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Como adicionar controles ListObject a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha do Excel do Microsoft Office em tempo de design e em tempo de execução no nível de documento.  

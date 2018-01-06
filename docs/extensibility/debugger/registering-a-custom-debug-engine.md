@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58f58a1a6ec80331fd5cf6f735098c16c35db82e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50903d9b45828725da03c0fcb0db0f08d7f884eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registrando um mecanismo de depuração personalizado
 O mecanismo de depuração deve se registrar como uma fábrica de classe segue as convenções de COM, bem como registrar com o Visual Studio por meio da subchave do registro do Visual Studio.  

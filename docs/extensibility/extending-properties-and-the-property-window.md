@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba36f0279c8401e49b30a4f1f61b3e857cb20b5b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a0775a8476d7fc4842ade5f4ac7b96271d06a8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-properties-and-the-property-window"></a>Estendendo propriedades e a janela de propriedade
 O **propriedades** janela é usada para exibir e editar as propriedades de tempo de design e os eventos dos objetos selecionados.  
