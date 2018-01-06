@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 281d71670e19ba4df274716201c6c4181158309e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 5ca8bb777369054d7d83e75bcdcf8055aa083660
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparação de depuração: tipos de projeto C#, F# e Visual Basic
 Os tópicos nessa seção descrevem como depurar os tipos de projeto C#, F# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] criados pelos modelos de projeto do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c4b5021db951acc6ed8ed750542febab9fdfbf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9e1ade672c3abd81f4f71d1e48a39560e17e1465
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-console-projects"></a>Preparação de depuração: projetos de console
 Preparar para depurar um projeto de console é semelhante à preparar para depurar um projeto do Windows, com algumas considerações adicionais. Para obter mais informações, consulte [aplicativos dos Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), e [preparação de depuração: aplicativos de formulários do Windows (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Devido à semelhança de todos os aplicativos do console, este tópico abrange os seguintes tipos de projeto:  

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc2fcff3e458a0adb1f1f009528bdb3c788737ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1d6e747039c1690a6cd450999dc8c1c95f308a17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Recupera um sinalizador que indica se o módulo foi compilado com o [/Z7, /Zi, /ZI (Depurar formato de informações)](/cpp/build/reference/z7-zi-zi-debug-information-format) opção de compilador.  

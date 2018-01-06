@@ -12,22 +12,25 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos ao vivo do Azure do ASP.NET usando o depurador do instantâneo
 
-O depurador de instantâneo tira um instantâneo de seus aplicativos em produção quando executa código que você está interessado. Para instruir o depurador para obter um instantâneo, você defina snappoints e logpoints no seu código. O depurador permite que você veja exatamente o que deu errado, sem afetar o tráfego do seu aplicativo de produção. O depurador de instantâneo pode ajudá-lo a reduzir drasticamente o tempo necessário para resolver problemas que ocorrem em ambientes de produção.
+O depurador de instantâneo tira um instantâneo de seus aplicativos em produção quando executa código que você está interessado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
 
 Snappoints e logpoints são semelhantes aos pontos de interrupção. Ao contrário de pontos de interrupção, snappoints não pare o aplicativo quando visitado. Normalmente, capturando um instantâneo em um snappoint leva 10 a 20 milissegundos. 
 
-Coleção de instantâneo está disponível para os seguintes aplicativos web em execução no serviço de aplicativo do Azure:
+A coleção de instantâneos está disponível para os seguintes aplicativos Web em execução no Serviço de Aplicativo do Azure:
 
 - Aplicativos ASP.NET em execução no .NET Framework 4.6.1 ou posterior.
-- Aplicativos do ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
+- Aplicativos ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
 
 Além disso, o depurador de instantâneo só está disponível para o Visual Studio 2017 Enterprise versão 15.5 ou superior e planos de serviço de aplicativo básico ou superior. 
 

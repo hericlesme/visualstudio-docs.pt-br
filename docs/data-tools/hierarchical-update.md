@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0091e17cf24a9476dde84cf2d8ad1a34f94e2cdd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 *Atualização hierárquica* refere-se ao processo de salvar dados atualizados (de um dataset com duas ou mais tabelas relacionadas) para um banco de dados, mantendo as regras de integridade referencial. *A integridade referencial* refere-se às regras de consistência fornecido pelas restrições em um banco de dados que controlam o comportamento de inserindo, atualizando e excluindo registros relacionados. Por exemplo, é a integridade referencial que impõe a criação de um registro de cliente antes de permitir pedidos a ser criado para esse cliente.  Para obter mais informações sobre as relações em conjuntos de dados, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md)  

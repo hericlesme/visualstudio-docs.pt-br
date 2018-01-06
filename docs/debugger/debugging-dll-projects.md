@@ -22,11 +22,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92d888c04827f3df2c9bc5ede33d4dfd9a6742dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Depurando projetos DLL do Visual Studio
 Os seguintes modelos do Visual Studio criam DLLs:  

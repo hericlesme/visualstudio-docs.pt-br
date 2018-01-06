@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4cab890c97599b8b925004b735e7f980f5ba2fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52f1847112741e90634ce0e68acbcfdd11b837db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debugging-techniques"></a>Técnicas de depuração CRT
 Se você estiver depurando um programa que usa a biblioteca em tempo de execução C, essas técnicas de depuração poderão ser úteis.  
@@ -38,7 +39,7 @@ Se você estiver depurando um programa que usa a biblioteca em tempo de execuç�
  [Macros para relatórios](../debugger/macros-for-reporting.md)  
  Fornece informações sobre o **rptn** e **rptfn** macros (definidas em CRTDBG. H), que substitui o uso de `printf` instruções para depuração.  
   
- [Versões de depuração das funções de alocação de heap](../debugger/debug-versions-of-heap-allocation-functions.md)  
+ [Versões de depuração de funções de alocação de heap](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Discute as versões especiais de depuração das funções de alocação de heap, incluindo: como o CRT mapeia as chamadas, os benefícios de chamá-las explicitamente, como evitar a conversão, rastrear os tipos separados de alocações em blocos do cliente e os resultados de não definir _DEBUG.  
   
  [Detalhes do heap de depuração CRT](../debugger/crt-debug-heap-details.md)  

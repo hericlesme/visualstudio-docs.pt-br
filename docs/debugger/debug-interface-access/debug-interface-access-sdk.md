@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e404f0b893453fa319d5c4df97319f8e77720805
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd84741d006304f7dfefe8ee4a1060ba64ffdb8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-interface-access-sdk"></a>SDK de Acesso à Interface de Depuração
 O Microsoft Debug Interface Access Software Development Kit (DIA SDK) fornece acesso para depurar a informações armazenadas em arquivos de banco de dados (. PDB) do programa gerados por ferramentas postcompiler da Microsoft. Porque o formato do arquivo. PDB gerado pelas ferramentas postcompiler sofre revisão constante, expondo o formato é muito prática. Usando a API do DIA, você pode desenvolver aplicativos que pesquisar e procurar informações de depuração armazenadas em um arquivo. PDB. Esses aplicativos podem, por exemplo, relatar informações de retorno de rastreamento de pilha e analisar dados de desempenho.  

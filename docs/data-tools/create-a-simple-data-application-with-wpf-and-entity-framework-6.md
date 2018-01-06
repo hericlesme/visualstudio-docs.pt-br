@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com WPF e do Entity Framework 6
 Esta explicação passo a passo mostra como criar um aplicativo "formas básicas sobre dados" no Visual Studio com LocalDB do SQL Server, o banco de dados Northwind, Entity Framework 6 e Windows Presentation Foundation. Ele mostra como fazer a associação de dados básico com um modo de exibição de detalhes mestre, e ele também tem um personalizado "associação Navigator" com os botões para "MoveNext", "Mover anterior," "Mover para o início," "mover até o fim," "Atualizar" e "Excluir".  

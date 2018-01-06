@@ -39,11 +39,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 898cdbd15367aef6ac48d35a44b1ccb4a3deded9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 O Visual Studio fornece ferramentas para trabalhar com o Windows Communication Foundation (WCF) e [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], tecnologias da Microsoft para a criação de aplicativos distribuídos. Este tópico fornece uma introdução aos serviços de um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspectiva. Para obter a documentação completa, consulte [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
@@ -239,7 +240,7 @@ Para evitar esse problema, os tipos em assemblies referenciados são compartilha
 |-----------|-----------------|  
 |[Passo a passo: criando um Serviço WCF em Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Fornece uma demonstração passo a passo da criação e uso de serviços WCF no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Passo a passo: criando um Serviço de Dados WCF com WPF e Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Fornece uma demonstração passo a passo de como criar e usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[Using the WCF Development Tools](/dotnet/framework/wcf/using-the-wcf-development-tools) (Usando as ferramentas de desenvolvimento do WCF)|Discute como criar e testar os serviços WCF em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[Usando as ferramentas de desenvolvimento do WCF](/dotnet/framework/wcf/using-the-wcf-development-tools)|Discute como criar e testar os serviços WCF em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 ||[Como adicionar, atualizar ou remover uma referência de WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Descreve como referenciar e usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Solução de problemas de referências de serviço](../data-tools/troubleshooting-service-references.md)|Apresenta alguns erros comuns que podem ocorrer com referências de serviço e como evitá-los.|  
 |[Depurando serviços WCF](../debugger/debugging-wcf-services.md)|Descreve problemas comuns de depuração e técnicas que você pode encontrar durante a depuração de serviços WCF.|  
