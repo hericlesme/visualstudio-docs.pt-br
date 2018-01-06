@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f8798616d9a39d46150f039ffe4340302439f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multithread no Visual Studio
 Um thread é uma sequência de instruções para que o sistema operacional aloque tempo no processador. Cada processo que está em execução no sistema operacional consiste em pelo menos um thread. Os processos que têm mais de um thread são chamados multithread.  
@@ -41,7 +42,7 @@ Visual Studio fornece ferramentas diferentes para uso na depuração de aplicati
 
 - Para threads, são as principais ferramentas para threads de depuração a **Threads** janela, marcadores de thread no windows de origem, **pilhas paralelas** janela, **inspeção paralela** janela, e o **local do depurador** barra de ferramentas. Para saber mais sobre o **Threads** janela e **local do depurador** barra de ferramentas, consulte [passo a passo: depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md). Para saber como usar o **pilhas paralelas** e **inspeção paralela** windows, consulte [começar a depuração de um aplicativo multithread](../debugger/get-started-debugging-multithreaded-apps.md). Os dois tópicos mostram como usar marcadores de thread.
   
-- Para o código que usa o [tarefa TPL (biblioteca paralela)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime/), as principais ferramentas de depuração são o **pilhas paralelas** janela, o **Inspeção paralela** janela e o **tarefas** janela (a **tarefas** janela também oferece suporte a JavaScript). Para começar, consulte [passo a passo: depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md) e [passo a passo: depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application.md). 
+- Para o código que usa o [tarefa TPL (biblioteca paralela)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime/), as principais ferramentas de depuração são o **pilhas paralelas** janela, o **Inspeção paralela** janela e o **tarefas** janela (a **tarefas** janela também oferece suporte a JavaScript). Para começar, consulte [passo a passo: depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md) e [passo a passo: depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
 - Para threads de depuração na GPU, a principal ferramenta é o **Threads de GPU** janela. Consulte [como: usar a janela Threads de GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
