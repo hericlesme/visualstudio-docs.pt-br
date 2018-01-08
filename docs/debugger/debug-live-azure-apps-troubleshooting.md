@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problemas conhecidos e solução de problemas para instantâneo de depuração no Visual Studio
 
@@ -63,12 +64,12 @@ Siga estas etapas:
 
 - Instantâneos ocupam muito pouca memória, mas têm um encargo de confirmação. Se o depurador de instantâneo detecta que o servidor está sob carga pesada de memória, ele não entrará em instantâneos. Você pode excluir instantâneos já capturados por interromper a sessão do depurador de instantâneo e tente novamente.
 
-## <a name="known-issues"></a>Problemas conhecidos
+## <a name="known-issues"></a>Problemas Conhecidos
 
 - Atualmente não há suporte para a depuração de instantâneo com vários clientes do Visual Studio com o mesmo serviço de aplicativo.
 - Otimizações de IL Roslyn não têm suporte total em projetos do ASP.NET Core. Para alguns projetos do ASP.NET Core, você não poderá ver algumas variáveis ou usar algumas variáveis em instruções condicionais. 
 - Variáveis especiais, como *$FUNCTION* ou *$CALLER*, não pode ser avaliada em instruções condicionais ou logpoints para projetos do ASP.NET Core.
-- Depuração de instantâneo não funciona em serviços de aplicativos que têm [Cache Local](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) ativado.
+- Depuração de instantâneo não funciona em serviços de aplicativos que têm [Cache Local](/azure/app-service/app-service-local-cache) ativado.
 - Atualmente, não há suporte para depuração de aplicativos de API de instantâneo.
 
 ## <a name="see-also"></a>Consulte também
