@@ -1,5 +1,5 @@
 # [Documentação do depurador](index.md)
-# Visão Geral
+# Visão geral
 ## [Tour dos recursos do depurador](debugger-feature-tour.md)
 # Guias de Início Rápido
 ## [Depurar um aplicativo gerenciado](quickstart-debug-with-managed.md)
@@ -7,6 +7,8 @@
 ## [Depurar um aplicativo do ASP.NET](quickstart-debug-aspnet.md)
 # Tutoriais
 ## [Aprenda a depurar usando o Visual Studio](getting-started-with-the-debugger.md)
+## [Depurar um aplicativo ativo do Azure](debug-live-azure-applications.md)
+## [Depurar o ASP.NET no IIS ou IIS Express](how-to-enable-debugging-for-aspnet-applications.md)
 ## [Depuração remota de um projeto em C#](remote-debugging-csharp.md)
 ## [Depuração remota de um projeto em C++](remote-debugging-cpp.md)
 ## [Depuração remota do ASP.NET Core em um computador IIS](remote-debugging-aspnet-on-a-remote-iis-computer.md)
@@ -61,7 +63,6 @@
 ### [Depurar usando o depurador Just-in-Time](debug-using-the-just-in-time-debugger.md)
 #### [Como responder ao depurador Just-In-Time](just-in-time-debugging-in-visual-studio.md)
 ## Configurar a depuração
-### [Depurar o código do usuário](just-my-code.md)
 ### [Gerenciar exceções com o depurador](managing-exceptions-with-the-debugger.md)
 #### [Continuar a execução depois de uma exceção](continuing-execution-after-an-exception.md)
 #### [Como examinar um código de sistema após uma exceção](how-to-examine-system-code-after-an-exception.md)
@@ -70,6 +71,7 @@
 ##### [Como escrever uma função de relatório de erro em tempo de execução](how-to-write-a-run-time-error-reporting-function.md)
 ##### [Usar verificações de tempo de execução sem a biblioteca em tempo de execução do C](using-run-time-checks-without-the-c-run-time-library.md)
 ### [Especificar arquivos de símbolo (.pdb) e de origem no depurador do Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+### [Depurar o código do usuário](just-my-code.md)
 ### [Preparação e configurações do depurador](debugger-settings-and-preparation.md)
 #### [Configurações de projeto do depurador](debugger-project-settings.md)
 ##### [Como especificar configurações do depurador](how-to-specify-debugger-settings.md)

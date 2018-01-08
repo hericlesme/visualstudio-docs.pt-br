@@ -1,6 +1,6 @@
 
 # [Documentação de criação de perfil](index.md)
-# Visão Geral
+# Visão geral
 ## [Tour pelos recursos de criação de perfil](profiling-feature-tour.md)
 # Guias de Início Rápido
 ## [Analisar o uso de CPU (gerenciado)](quickstart-cpu-usage-managed.md)
@@ -8,14 +8,15 @@
 ## [Analisar o uso de CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)
 # Tutoriais
 ## [Analisar desempenho de aplicativos no Visual Studio](beginners-guide-to-performance-profiling.md)
+## [Analisar o uso de memória no Visual Studio](memory-usage.md)
 # Conceitos
 ## [Executar ferramentas de criação de perfil com ou sem o depurador](running-profiling-tools-with-or-without-the-debugger.md)
 # Guias de instruções
-## [Analisar o uso de memória](memory-usage.md)
-### [Eventos de heap do ETW nativo personalizados](custom-native-etw-heap-events.md)
-### [Uso de memória sem o depurador](memory-usage-without-debugging2.md)
 ## [Analisar o uso de CPU](cpu-usage.md)
 ### [Analisar o uso da CPU em um UWP (Aplicativo Universal do Windows)](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [Analisar o uso de memória](analyze-memory-usage.md)
+### [Eventos de heap do ETW nativo personalizados](custom-native-etw-heap-events.md)
+### [Uso de memória sem o depurador](memory-usage-without-debugging2.md)
 ## [Analisar o uso de GPU](gpu-usage.md)
 ## [Analisar o consumo de recursos](application-timeline.md)
 ## [Usar PerfTips](perftips.md)
