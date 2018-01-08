@@ -19,11 +19,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5209ec60734213fbafb7b176d91589527b571c32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b8d869dab81273262d23b7aa905370f530b24c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Visão geral do modelo de programação das extensões de ferramentas do SharePoint
   Quando você cria uma extensão para as ferramentas do SharePoint no Visual Studio, começar com a implementação de uma ou mais interfaces de extensibilidade que são expostas pelas ferramentas do SharePoint. Na maioria dos casos, você também usará outros tipos fornecidos pelas ferramentas do SharePoint para implementar recursos em sua extensão. Em alguns cenários, você também pode usar tipos de outros modelos de objeto fornecidos pelo Visual Studio e do SharePoint. Você deve entender a finalidade de cada um desses modelos de objeto e como usá-los uns com os outros para criar extensões para ferramentas do SharePoint.  

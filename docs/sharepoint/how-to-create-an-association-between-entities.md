@@ -27,11 +27,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c8643a87a6226e03e8726910a459168e8b4c5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3bfc9f37fa440b57ad78a3df9640888e4f2a3d73
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Como criar uma associação entre entidades
   Você pode definir relações entre entidades em seu modelo de conectividade de dados de negócios (BDC) ao criar associações. O Visual Studio gera os métodos que fornecem os consumidores do modelo com informações sobre cada associação. Esses métodos podem ser consumidos pelo web parts do SharePoint, listas ou aplicativos personalizados para exibir relações de dados em uma interface de usuário (IU).  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  Se você quiser criar uma associação sem chave estrangeira, desmarque o **é a associação de chave estrangeira** caixa de seleção.  
   
-5.  Selecione o botão **OK**.  
+5.  Escolha o botão **OK**.  
   
 6.  No Designer de BDC, aparece uma linha que representa a associação entre a entidade de origem e a entidade de destino.  
   

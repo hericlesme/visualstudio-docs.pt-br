@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 130222ef3a603576f02961979e64b0c8160430af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6f09f5b12f3c90aa3fd48c142996f1737b1c1ac9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Adicionar propriedades personalizadas a diagramas de dependência
 Quando você escreve o código de extensão para diagramas de dependência, você pode armazenar valores com qualquer elemento em um diagrama de dependência. Os valores serão mantidas quando o diagrama é salvo e aberto novamente. Você também pode ter essas propriedades aparecem no **propriedades** janela para que os usuários podem ver e editá-los. Por exemplo, você pode permitir que os usuários especificar uma expressão regular para cada camada e escrever código de validação para verificar se os nomes das classes em cada camada está de acordo com o padrão especificado pelo usuário.  

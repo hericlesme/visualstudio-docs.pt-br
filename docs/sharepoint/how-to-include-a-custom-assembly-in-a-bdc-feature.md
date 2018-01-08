@@ -23,11 +23,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5916da8b7aa5018824ffe8040e7184fe6d1bf31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: acf4038a5b3cafa1febcd4a44c3e82222d6f5d86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Como incluir um assembly personalizado em uma funcionalidade BDC
   Seu projeto pode fazer referência a assemblies de outros projetos na mesma solução. No entanto, você deve adicionar esses assemblies para o arquivo de recurso do projeto usando o **atribuir referenciado assemblies LobSystems** caixa de diálogo.  

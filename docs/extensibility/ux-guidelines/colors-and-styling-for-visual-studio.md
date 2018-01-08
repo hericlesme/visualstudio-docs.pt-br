@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: vssdk
+ms.openlocfilehash: 40e795238e46885707cfd6eff715a27a5f53f85c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Usando a cor do Visual Studio  
@@ -255,7 +256,7 @@ protected override void Dispose(bool disposing)
   
 ##  <a name="BKMK_ChoosingHighContrastColors"></a>Escolha de cores de alto contraste  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
 O Windows usa vários temas de nível de sistema de alto contraste que aumentam o contraste de cor de texto, planos de fundo e imagens, fazendo com que elementos são mais destacadas na tela. Por motivos de acessibilidade, é importante que elementos da interface do Visual Studio respondem corretamente quando os usuários alternam a um tema de alto contraste.  
   
 Apenas algumas das cores do sistema podem ser usada para temas de alto contraste. Ao escolher o sistema de nomes de cores, lembre-se as dicas a seguir:  
@@ -314,7 +315,7 @@ Vários elementos de interface de usuário comuns já definidas de cores de alto
   
 ##  <a name="BKMK_ExposingColorsForEndUsers"></a>Exposição de cores para os usuários finais  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
 Às vezes, convém permitir que o usuário final personalizar a interface do usuário, como quando você estiver criando um editor de código ou a superfície de design. É a maneira mais comum de fazer isso usando o **ferramentas &gt; opções** caixa de diálogo. A menos que você tenha altamente especializada da interface do usuário que requer controles especiais, a maneira mais fácil para apresentar a personalização é por meio de **fontes e cores** página dentro de **ambiente** seção da caixa de diálogo. Para cada elemento que você expõe para personalização, o usuário pode optar por alterar a cor de primeiro plano, cor de plano de fundo ou ambos.
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Criar um VSPackage para as cores personalizadas  

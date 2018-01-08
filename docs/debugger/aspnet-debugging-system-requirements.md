@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30ac9c68104423c559ad3bfa8712426b67a4c734
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 9cf9517775b5729507252a259485ad8d6cc276ff
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuração do ASP.NET: requisitos do sistema
 Este tópico descreve os requisitos de software e segurança para [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] cenários de depuração:  
@@ -43,7 +44,7 @@ Este tópico descreve os requisitos de software e segurança para [!INCLUDE[vste
  Para depurar o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o processo de trabalho (hospedado por um Pool de aplicativos), você deve ter permissão para depurar esse processo. Por padrão, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos IIS 6.0 antes de executar como a **ASPNET** usuário. No IIS 6.0 e IIS 7.0, o **serviço de rede** conta é o padrão. Se o processo de trabalho está em execução como **ASPNET**, ou como **serviço de rede**, você deve ter privilégios de administrador para depurá-lo.
 
  > [!IMPORTANT]
- > A partir do Windows Server 2008 R2, é recomendável o uso do [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) como a identidade de cada pool de aplicativos.
+ > A partir do Windows Server 2008 R2, é recomendável o uso do [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como a identidade de cada pool de aplicativos.
   
  O nome do processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia de acordo com o cenário de depuração e a versão do IIS. Para obter mais informações, consulte [como: localizar o nome do processo do ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

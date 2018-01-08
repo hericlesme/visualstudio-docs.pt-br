@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.assertions
 dev_langs:
 - CSharp
@@ -23,11 +23,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ca228390193dfb4408b0ccb43d864509e46d89d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0899e9ab0c01a25dcb0fa3a1f991e9dfa9726d40
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="assertion-failed-dialog-box"></a>Caixa de diálogo Falha de Asserção
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em algum ponto específico em seu programa. Se essa condição não se aplicar, a asserção falhará, a execução do programa será interrompida e essa caixa de diálogo será exibida.  

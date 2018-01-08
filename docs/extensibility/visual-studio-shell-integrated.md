@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d92a6c7250e22972a2b352b74b974601ff6065c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b43e4ac1c8e40a9f4f378be42cc642767bee0777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrado)
 Shell do Visual Studio integrado inclui o ambiente de desenvolvimento integrado (IDE), o depurador e a integração de controle de origem. Não há linguagem de programação é incluída. No entanto, o shell integrado fornecem uma estrutura que permite que você adicione linguagens de programação.  

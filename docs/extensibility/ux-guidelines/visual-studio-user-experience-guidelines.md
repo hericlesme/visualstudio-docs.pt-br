@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 783c93386ae967138a0fb782a05cb8a21f0ad009
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2d6326f08276da60a3e901912bfb579428680d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Diretrizes de experiência de usuário do Visual Studio
 As diretrizes de experiência do Visual Studio usuário destinam-se para aqueles que criam novos recursos para o Visual Studio. Essas diretrizes contêm informações sobre modelos de usuário comuns e padrões de interação para que os designers de novas interfaces de usuário (UI) podem criar experiências de usuário contínua e consistente dentro do ambiente de desenvolvimento.  

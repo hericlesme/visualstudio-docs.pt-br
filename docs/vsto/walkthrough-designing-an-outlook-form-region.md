@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2d8e1f8ad116bd6db12eca288e567a652e502a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 715d58e205442511db9709a5e57b1b689e008628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Instruções passo a passo: criando uma região de formulário do Outlook
   Regiões de formulário personalizado estendem formulários do Microsoft Office Outlook padrão ou personalizados. Este passo a passo, você criará uma região de formulário personalizado que aparece como uma nova página na janela do Inspetor de um item de contato. Esta região de formulário exibe um mapa de cada endereço listado para o contato, enviando as informações de endereço para o Windows Live pesquisa site Local. Para obter informações sobre regiões de formulário, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).  

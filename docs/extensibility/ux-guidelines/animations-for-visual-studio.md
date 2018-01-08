@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a554a52fc5ef42f81d1531dbe63bf320e1cd72e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a45fd22cce46cb9e43a649fb969980f42b395db2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="animations-for-visual-studio"></a>Animações para Visual Studio
 ## <a name="animation-fundamentals"></a>Conceitos básicos de animação  
@@ -198,7 +199,7 @@ Indicadores de progresso tem algumas vantagens importantes:
   
 ##  <a name="BKMK_AnimationPatterns"></a>Padrões de animação  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
 Animações no Visual Studio devem atender a uma função específica sem diminuir a produtividade do usuário. Geralmente, animações no Visual Studio devem ser:  
   
 -   Pequenas e discreto  

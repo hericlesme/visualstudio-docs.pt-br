@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 50da0b90dd1c8924d8772eabd83265ff3827c2c2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: a9350a7aa2ed3b4befaa2305042dbc4fc74fcf31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar e atualizar modelos de camada no código do programa
 Este tópico descreve os elementos e relações em modelos de camada, o que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de dependência do ponto de vista do usuário, consulte [diagramas de dependência: referência](../modeling/layer-diagrams-reference.md) e [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md).  

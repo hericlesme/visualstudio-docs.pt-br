@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f430486c613e6281404110d4441d2a3d2100534
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff1902689524dd980c8223ca83863238254df448
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrando verbos para extensões de nome de arquivo
 A associação de uma extensão de nome de arquivo com um aplicativo geralmente tem uma ação preferencial que ocorre quando um usuário clica duas vezes em um arquivo. Isso preferencial ação está vinculada a um verbo, por exemplo aberto, que corresponde à ação.  

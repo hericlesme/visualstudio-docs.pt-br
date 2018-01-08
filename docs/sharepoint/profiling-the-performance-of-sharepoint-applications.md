@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0effe0190d54d05d706127a8e5fada66af1c7ab6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Criando o perfil do desempenho de aplicativos do SharePoint
   Se seus aplicativos do SharePoint estiverem lento ou ineficiente, você pode usar os recursos de criação de perfil no Visual Studio para identificar código problemática e outros elementos. Usando a recurso de teste de carga, você pode determinar como um aplicativo do SharePoint executa sob carga excessiva, como quando muitos usuários acessam o aplicativo simultaneamente. Executando testes de desempenho na web, você pode medir o desempenho do aplicativo na web. Usando testes de IU codificados, você pode verificar se o aplicativo do SharePoint inteiro, incluindo sua interface de usuário, funciona corretamente. Quando você usar esses testes juntos, eles podem ajudá-lo a identificar problemas de desempenho antes de implantar seu aplicativo.  

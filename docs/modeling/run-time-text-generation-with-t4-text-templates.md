@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 Você pode gerar cadeias de caracteres de texto em seu aplicativo em tempo de execução usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelos de texto de tempo de execução. O computador onde o aplicativo é executado não precisa ter [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Modelos de tempo de execução são chamados de "pré-processados modelos de texto" porque em tempo de compilação, o modelo gera um código que é executado no tempo de execução.  

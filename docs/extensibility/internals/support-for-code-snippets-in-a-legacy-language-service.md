@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0089e5a8bf85ba352788767c821d95f41ca60eec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6102a5bb6298cd6403285e3d36842424b0be3412
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para trechos de código em um serviço de linguagem herdado
 Um trecho de código é um trecho de código é inserido no arquivo de origem. O trecho de código em si é um modelo baseado em XML com um conjunto de campos. Esses campos são realçados depois que o trecho de código é inserido e pode ter valores diferentes dependendo do contexto no qual o trecho de código é inserido. Imediatamente depois de inserido o trecho de código, o serviço de linguagem pode formatar o trecho de código.  
@@ -53,7 +54,7 @@ Um trecho de código é um trecho de código é inserido no arquivo de origem. O
   
  Geralmente, há dois locais onde são armazenados os arquivos de modelo de trecho de código: 1) em que o idioma foi instalado e 2) na pasta do usuário. Esses locais são adicionados ao registro até que o Visual Studio **Gerenciador de trechos de código** pode localizar os trechos de código. A pasta do usuário é onde os trechos de código criados pelo usuário são armazenados.  
   
- O layout de pasta comum para os arquivos de modelo de trecho de código instalado tem esta aparência: *[Raiz_da_instalação]*\\*[TestLanguage]*\snippets.\\*[LCID]*\Snippets..  
+ O layout de pasta comum para os arquivos de modelo de trecho de código instalado tem esta aparência: *[Raiz_da_instalação]*\\*[TestLanguage]*\snippets.\\*[LCID]*\Snippets.  
   
  *[Raiz_da_instalação]*  é a pasta de instalação no seu idioma.  
   

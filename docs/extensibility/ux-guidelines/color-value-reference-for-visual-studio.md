@@ -13,11 +13,12 @@ ms.suite:
 ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 manager: ghogen
-ms.openlocfilehash: be4b63e767463b7b801ab5ed98d8482e94aacd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: v-brickg
+ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referência do valor de cor para o Visual Studio
 Este tópico é uma referência para a criação de novos tokens de cor. Quando você estiver criando nova interface do usuário, você pode usar cores semelhantes da interface de usuário existente para escolher as cores para cada tema principal e o nome de cor do sistema para esse elemento para temas de alto contraste. 

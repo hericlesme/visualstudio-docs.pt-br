@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d3579c3d537dc13723cbe285b454b24d079fe1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b7a24c793755cdd5102407d1a3a5cbfad103c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Instruções passo a passo: criar uma atividade personalizada de fluxo de trabalho do local
   Este passo a passo demonstra como criar uma atividade personalizada para um fluxo de trabalho de nível de site usando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Fluxos de trabalho de nível de site se aplicam ao site inteiro, não apenas em uma lista no site.) A atividade personalizada cria um lista de avisos de backup e, em seguida, copia o conteúdo da lista de anúncios.  

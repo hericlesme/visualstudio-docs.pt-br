@@ -12,16 +12,17 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e06a3e89b69b2b69a97c4deb2d68d98913f6e03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões de controle comuns para Visual Studio
 ##  <a name="BKMK_CommonControls"></a>Controles comuns  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
 Controles comuns compõem a maioria da interface do usuário no Visual Studio. Controles comuns mais usados na interface do Visual Studio devem seguir o [diretrizes de interação de área de trabalho do Windows](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). Este tópico é específico para o Visual Studio e abrange situações especiais ou detalhes que aumentar as diretrizes do Windows.  
   
 #### <a name="common-controls-in-this-topic"></a>Controles comuns neste tópico  
@@ -218,7 +219,7 @@ Se desejar que os usuários tenham a capacidade de copiar as informações, text
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a>Hiperlinks e botões  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
 Controles de botões e links (hiperlinks) devem seguir [diretrizes básicas de área de trabalho do Windows em hiperlinks](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx) para uso de palavras, dimensionamento e espaçamento.  
   
 ### <a name="choosing-between-buttons-and-links"></a>Escolhendo entre os botões e links  

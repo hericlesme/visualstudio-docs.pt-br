@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b392b4de0288478c73fba8cecd88be1f701cd5ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 124f4ca6450b5fe19bc707627dfed03e46307cff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Passo a passo: Criando uma relação de detalhes mestre usando um conjunto de dados armazenados em cache
   Este passo a passo demonstra como criar uma relação mestre/detalhes em uma planilha e cache os dados para que a solução pode ser usada offline.  

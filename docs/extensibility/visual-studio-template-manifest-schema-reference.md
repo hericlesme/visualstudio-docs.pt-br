@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f714120c6f5dced4760bb14cad1e53a794030a19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 87f676ef30da7c667c4ce2b688520a49ed1931c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referência de esquema do manifesto de modelo do Visual Studio
 Esse esquema descreve o formato dos arquivos de manifesto (.vstman) de modelo de Visual Studio gerados para os modelos de projeto ou item do Visual Studio e descreve o local e outras informações relevantes sobre o modelo.  

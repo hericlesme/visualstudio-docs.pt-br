@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 34ba644d94ab24c4967bea6e64b5e70fdd582237
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8b96fb2b9f05656835cae4ca164babcc6fcb07cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-in-office-solutions"></a>Dados em soluções do Office
   Muitas soluções do Office permitem aos usuários recuperar ou modificar dados. Quando você criar soluções do Office usando o Visual Studio, há várias maneiras diferentes, que você pode trabalhar com dados.  

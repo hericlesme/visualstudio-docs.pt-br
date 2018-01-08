@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0bbb086c66bad3ad2beedab2b390244a9e185b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8f8d6087576f6b64b9b0694e9c177637dd28c059
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-projects"></a>Estendendo projetos SharePoint
   Crie uma extensão de projeto quando você desejar personalizar os recursos de nível de projeto de projetos do SharePoint. Por exemplo, você pode adicionar propriedades de projeto personalizados ou responder a eventos de nível de projeto que são gerados quando o usuário desenvolve uma solução do SharePoint no Visual Studio.  

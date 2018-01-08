@@ -20,11 +20,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c09c99bc5d8bc964ae3afd82fe7a4a9fd5764edd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2dc089fb2c4ae2714a0b94d7756aaa432406ef74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Como mapear esquemas para planilhas dentro do Visual Studio
   Você pode mapear um esquema XML para uma planilha, enquanto a planilha está aberta no Visual Studio. Você usar as mesmas ferramentas do Microsoft Office Excel que você usa quando a pasta de trabalho é aberta fora do Visual Studio. O Office project cria os objetos de mesmo se você mapear o esquema para a planilha antes ou depois de criar sua solução do Excel.  

@@ -22,11 +22,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7ea1c76cda46313458dcac01b415e7541732a26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1946d31d1e0f508267300c14551b0a8efff81587
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Criando modelos de item e de projeto para itens de projeto do SharePoint
   Quando você define um tipo de item de projeto do SharePoint personalizado, você pode associá-lo com um modelo de item ou um modelo de projeto para que outros desenvolvedores podem usar o item de projeto no Visual Studio. Você também pode criar um Assistente para o modelo.  

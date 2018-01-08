@@ -13,18 +13,19 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b5cec31349b2db94536f3d67ca137885f757263
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ac781256ee78becf3b0cfdffbbec6f0c6bc30225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-project-essentials"></a>Conceitos básicos de projeto da Web
 Projetos da Web criar aplicativos da Web. Você pode usar um projeto da Web para criar um aplicativo Web que tem inteligentes páginas da Web. Uma página da Web inteligente tem código de servidor que processa a página da Web sob demanda.  
   
  Usando linguagens de programação tradicionais, como [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], você pode criar inteligentes páginas da Web para coletar e processar informações de um usuário, armazene-o em um banco de dados e assim por diante.  
   
--   O modelo de code-behind associa a páginas da Web que têm a extensão de arquivo.. aspx ou. asmx de arquivos de código fonte dependentes. Por exemplo, Hello pode ter o hello.aspx.cs de arquivo de código fonte dependentes.  
+-   O modelo de code-behind associa a páginas da Web que têm a extensão de arquivo. aspx ou. asmx de arquivos de código fonte dependentes. Por exemplo, Hello pode ter o hello.aspx.cs de arquivo de código fonte dependentes.  
   
 -   O código do lado do servidor associado a uma página da Web inteligente é compilado em um arquivo executável que está localizado na pasta /bin do site.  
   

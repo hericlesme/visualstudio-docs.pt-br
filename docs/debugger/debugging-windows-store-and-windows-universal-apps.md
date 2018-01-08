@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 258389c08971089c523e2881a455411ea767801a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>Depurar aplicativos universais do Windows (UWP)
 O depurador do Visual Studio fornece suporte completo para depurar aplicativos da UWP.  
@@ -30,13 +31,11 @@ Para obter informações sobre como depurar aplicativos universais do Windows, c
   
 Para depurar aplicativos do Windows Phone 8, consulte [depurar aplicativos para Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
   
-## <a name="in-this-section"></a>Nesta seção  
-  
 |||  
 |-|-|  
 |[Executar aplicativos do Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Execute aplicativos UWP em um computador local, em um simulador de aplicativos ou o emulador ou em um dispositivo remoto.|  
 |[Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Localize e corrija erros em seus aplicativos UWP usando o depurador do Visual Studio.|  
-|[Depurar um pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)|Depura aplicativos implantados, locais e remotos.|
+|[Depurar pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)|Depura aplicativos implantados, locais e remotos.|
 |[Executar pré-busca de conteúdo para aplicativos UWP](../debugger/prefetch-content-for-windows-store-apps.md)|Analise o efeito da classe ContentPrefetcher nos aplicativos UWP.|  
   
 ## <a name="see-also"></a>Consulte também  

@@ -12,16 +12,17 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Interações de janela  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
 Os dois tipos de janela principal usados no Visual Studio são editores de documento e janelas de ferramenta. Raras, mas possível, é grandes caixas de diálogo sem janela restrita. Embora essas sejam tudo sem janela restrita no shell, seus padrões são fundamentalmente diferentes. Esta seção aborda a diferença entre janelas de documentos, janelas de ferramentas e caixas de diálogo sem janela restrita. Padrões da caixa de diálogo modal são abordadas em [caixas de diálogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
   
 ### <a name="comparing-window-usage-patterns"></a>Comparando os padrões de uso de janela  
@@ -43,7 +44,7 @@ Pense cuidadosamente sobre que tipo de contêiner que você precisa. Consideraç
   
 ##  <a name="BKMK_ToolWindows"></a>Janelas de ferramentas  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
 Janelas de ferramentas oferecem suporte a um trabalho do usuário que ocorre em janelas de documento. Eles podem ser usados para exibir uma hierarquia que representa um objeto raiz fundamental que o Visual Studio fornece e pode manipular.  
   
 Ao considerar uma nova janela de ferramenta no IDE, os autores devem:  
@@ -400,7 +401,7 @@ Não use as teclas de acesso para **Okey**, **Cancelar**, ou **ajuda** botões. 
   
 | Nome do botão | Atalho de teclado |  
 | --- | --- |  
-| OK | Entrar |  
+| OK | Enter |  
 | Cancelar | ESC |  
 | Ajuda | F1 |  
   

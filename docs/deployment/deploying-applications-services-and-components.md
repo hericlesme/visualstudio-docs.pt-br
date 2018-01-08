@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Visão geral da implantação no Visual Studio
 
@@ -43,7 +44,7 @@ Consulte os tutoriais para obter instruções passo a passo.
 
     ![Escolher publicar](../deployment/media/quickstart-publish.png)
 
-- **Tempo de execução do Visual C++**: você pode implantar o tempo de execução do Visual C++ usando a implantação local ou a vinculação estática. Para obter mais informações, consulte [implantação de área de trabalho aplicativos nativos (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Tempo de execução do Visual C++**: você pode implantar o tempo de execução do Visual C++ usando a implantação local ou a vinculação estática. Para obter mais informações, consulte [implantação de área de trabalho aplicativos nativos (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Publicar na Web ou implantar para compartilhamento de rede
 
@@ -55,7 +56,7 @@ Consulte os tutoriais para obter instruções passo a passo.
 
     Você também pode implantar aplicativos ASP.NET e serviços em um número de outras maneiras. Para obter mais informações, consulte [serviços e aplicativos web ASP.NET implantando](http://www.asp.net/aspnet/overview/deployment).
 
-- **Tempo de execução do Visual C++**: você pode implantar o tempo de execução do Visual C++ usando a implantação central. Para obter mais informações, consulte [implantação de área de trabalho aplicativos nativos (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **Tempo de execução do Visual C++**: você pode implantar o tempo de execução do Visual C++ usando a implantação central. Para obter mais informações, consulte [implantação de área de trabalho aplicativos nativos (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 - **Área de trabalho do Windows** você pode publicar um aplicativo de área de trabalho do Windows para um servidor web ou um compartilhamento de arquivos de rede usando a implantação do ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, consulte [implantar um aplicativo de área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) e [implantar um aplicativo nativo usando o ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -72,7 +73,7 @@ Consulte os tutoriais para obter instruções passo a passo.
     > [!NOTE]
     > Se você não tiver uma conta do Azure, você pode [Inscreva-se aqui](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-- Outros **os serviços do Azure**: consulte específico [serviço do Azure](https://docs.microsoft.com/azure/#pivot=products) documentação para diferentes opções de implantação que pode ser compatível com o Visual Studio.
+- Outros **os serviços do Azure**: consulte específico [serviço do Azure](/azure/#pivot=products) documentação para diferentes opções de implantação que pode ser compatível com o Visual Studio.
 
 ### <a name="publish-to-microsoft-store"></a>Publicar no repositório da Microsoft
 

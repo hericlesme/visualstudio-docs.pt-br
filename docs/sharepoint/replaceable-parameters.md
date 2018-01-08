@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>Parâmetros substituíveis
   Parâmetros substituíveis, ou *tokens*, pode ser usado em arquivos de projeto para fornecer valores para os itens de solução do SharePoint cujos valores reais não são conhecidos no tempo de design. Eles são semelhantes em função para o padrão [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de modelo. Para obter mais informações, consulte [parâmetros de modelo](/visualstudio/ide/template-parameters).  

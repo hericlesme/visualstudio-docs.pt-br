@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 586f087e4c0cbd087bd06d7dc54a524b09ae21c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77bd698149ca4e73b462fc3ada9256ba5911177e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-menu-commands"></a>Localizando os comandos de Menu
 Você pode fornecer o texto localizado para o menu e barra de ferramentas comandos por meio da criação de arquivos. VSCT localizada e localizados os arquivos. resx para seu VSPackage e, em seguida, atualizar os arquivos de projeto incorporar as alterações.  

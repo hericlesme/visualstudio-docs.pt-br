@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3723d4612df985b1ddd9bd31188596ebefc3548
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6baa1a72ec8f51a25d5abc0539b27b71b41c5d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-tables"></a>Trabalhando com tabelas
   Os tópicos nesta seção fornecem procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Office Word para trabalhar com tabelas em projetos do Office. Em alguns casos, as maneiras que você executa essas tarefas em suplementos do VSTO é diferente das maneiras que você realize em personalizações no nível do documento.  

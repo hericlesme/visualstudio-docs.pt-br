@@ -12,16 +12,17 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d16ed0f58929a6559812261c3443b3561375205
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificações e o andamento para o Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Sistemas de notificação  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Há várias maneiras para informar ao usuário que está acontecendo no Visual Studio sobre suas tarefas de desenvolvimento de software.  
   
  Ao implementar qualquer tipo de notificação:  
@@ -132,7 +133,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_ProgressIndicators"></a>Indicadores de progresso  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Indicadores de progresso são uma parte importante de um sistema de notificação para apresentar os comentários do usuário. Eles informam o usuário quando processos e as operações serão concluídas. Tipos de indicador familiar incluem barras de progresso, girando cursores e ícones animados. O tipo e o posicionamento de um indicador de andamento depende do contexto, incluindo o que está sendo relatado e quanto tempo o processo ou operação levará para completar.  
   
 #### <a name="factors"></a>Fatores  
@@ -288,7 +289,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_Infobars"></a>Infobars  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Infobars dar ao usuário um indicador perto de seu ponto de atenção e usando o controle de barra de informações compartilhadas garante a consistência em aparência e interação.  
   
  ![Barra de informações](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904 01_Infobar")  

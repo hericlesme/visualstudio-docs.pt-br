@@ -19,11 +19,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbc6f8876236d1a056874500aea4878f9643f91b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 06a2488606b93040cf897ac510455b8a9ef74ce2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Como gerenciar o layout de controle em painéis de ações
   Um painel de ações está encaixado à direita de um documento ou planilha por padrão. No entanto, pode ser encaixado à esquerda, superior ou inferior. Se você estiver usando vários controles de usuário, você pode escrever código para pilha corretamente os controles de usuário no painel Ações. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).  

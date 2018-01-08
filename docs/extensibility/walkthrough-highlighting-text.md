@@ -13,11 +13,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f702a834b925f13525db122934a5593d313e0ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54dabbe00b0df920655b595cab32ed21126415b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-highlighting-text"></a>Passo a passo: Realçando texto
 Você pode adicionar efeitos visuais diferentes para o editor Criando componentes do Managed Extensibility Framework (MEF). Este passo a passo mostra como realçar todas as ocorrências da palavra atual em um arquivo de texto. Se uma palavra ocorre mais de uma vez em um arquivo de texto, e você posicionar o cursor em uma ocorrência, todas as ocorrências é realçada.  

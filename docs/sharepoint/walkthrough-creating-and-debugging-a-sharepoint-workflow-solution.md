@@ -23,11 +23,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d64c0767cce43d5b157fca82cc3e1e210a2f8c58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc016efd3d0a3525f733929c294946bf9376417b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-debugging-a-sharepoint-workflow-solution"></a>Instruções passo a passo: criando e depurando uma solução de fluxo de trabalho do SharePoint
   Este passo a passo demonstra como criar um modelo de fluxo de trabalho sequencial básico. O fluxo de trabalho verifica uma propriedade de uma biblioteca de documentos compartilhados para determinar se um documento foi revisado. Se o documento foi revisado, o fluxo de trabalho for concluída.  

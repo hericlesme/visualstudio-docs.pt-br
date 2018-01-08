@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e20d37d0e1162b49ca0fc92f92056b3541698454
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-dsldefinitiondsl-file"></a>O arquivo DslDefinition.dsl
 Este tópico descreve a estrutura do arquivo no projeto Dsl de DslDefinition.dsl um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solução, que define uma *linguagem específica de domínio*. O arquivo DslDefinition.dsl descreve as classes e relacionamentos de uma linguagem específica de domínio, juntamente com o diagrama de formas, conectores, formato de serialização e **caixa de ferramentas** da linguagem específica de domínio e seu ferramentas de edição. Em uma solução de linguagem específica do domínio, o código que define essas ferramentas é gerado de acordo com as informações no arquivo DslDefinition.dsl.  

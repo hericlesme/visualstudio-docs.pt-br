@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 741fc8ac1ed4e0cc449c8010b71bd13a484933a8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 768082882c5ed180956b9bac28c20283404bb913
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-models-from-text-templates"></a>Acessando modelos a partir de modelos (templates) de texto
 Usando modelos de texto, você pode criar arquivos de relatório, arquivos de código fonte e outros arquivos de texto com base em modelos de linguagem específica de domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo de avaliação quando você estiver depurando seu DSL e também funcionará em um computador no qual você implantou o DSL.  

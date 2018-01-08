@@ -22,11 +22,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee19d6fd6bd84f344a205b0e508abbede63cdebb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0a670510a7898b38ec7f61a22f8258015b112151
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-document-properties-overview"></a>Visão geral de propriedades de documento personalizadas
   Quando você compila um projeto no nível do documento, o Visual Studio adiciona duas propriedades personalizadas para o documento no projeto: assemblylocation e AssemblyName. Quando um usuário abre um documento, o aplicativo do Microsoft Office procura essas propriedades de documento personalizadas. Se existirem no documento, o aplicativo carrega o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], que inicia a personalização. Para obter mais informações, consulte [arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).  

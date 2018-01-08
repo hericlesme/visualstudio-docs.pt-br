@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Aprenda a depuração usando o Visual Studio
 
@@ -27,7 +28,7 @@ Você pode ler ou ao longo para ver os recursos do depurador ou você pode baixa
 
 |         |         |
 |---------|---------|
-| ![Assista a um vídeo](../install/media/video-icon.png "WatchVideo") | [Assista a um vídeo](#video) depuração que mostra etapas semelhantes. |
+|  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) depuração que mostra etapas semelhantes. |
 
 Embora o aplicativo de demonstração é c#, os recursos são aplicáveis ao C++, Visual Basic, JavaScript e outras linguagens com suporte pelo Visual Studio (exceto onde observado).
 
@@ -278,12 +279,6 @@ Digamos que você tenha examinando o `Update` método Data.cs e você deseja obt
 3. Pressione F5 para continuar o aplicativo.
 
 Para saber mais sobre os recursos do depurador, consulte [depurador dicas e truques](../debugger/debugger-tips-and-tricks.md).
-
-## <a name="video"></a>Assista a um vídeo sobre depuração
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ## <a name="see-also"></a>Consulte também
 

@@ -12,14 +12,15 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e084ace914f65a9e97307f0a70d6c5e2211be55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 31a3bff68a15603c8d40818fa2d826da64421dad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Padrões de interação para Visual Studio
-## <a name="overview"></a>Visão Geral  
+## <a name="overview"></a>Visão geral  
  Um padrão de design, em geral, é o núcleo de um design que pode ser aplicado em situações específicas para solucionar problemas com conjuntos semelhantes de restrições. Designers de recurso e o sistema usam esses padrões de design como iniciando pontos, que podem ser adaptados para sua situação específica.  
   
  O Visual Studio tem uma biblioteca de padrões comuns de interação que devem ser considerados ao criar novos recursos. Há dois contextos de núcleo para nossos padrões de design: cliente Visual Studio (devenv) e Visual Studio Online. Para alguns problemas de design, há um padrão de todos os lugares que funciona bem em todas as situações. Em muitos casos, no entanto, a solução pode ser diferente para a interface do usuário que está sendo apresentado em um navegador e que está hospedado em um aplicativo cliente.  

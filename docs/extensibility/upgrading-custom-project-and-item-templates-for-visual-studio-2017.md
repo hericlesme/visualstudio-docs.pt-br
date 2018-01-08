@@ -12,26 +12,29 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 0c0843c8bfb899dc23bcb1ce31eb3f8b9eaffd54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizando modelos de Item para Visual Studio de 2017 e projeto personalizados
-A partir do Visual Studio de 2017, o Visual Studio está mudando a maneira como ele descobre que os modelos de projeto e item que foi instalados por um .vsix ou um arquivo. msi. Se você possui extensões que usam modelos de item ou projeto personalizados, você precisa atualizar suas extensões. Este tópico explica o que você deve fazer.  
-  
- Esta alteração afeta apenas de 2017 Visual Studio. Ele não afeta as versões anteriores do Visual Studio.  
-  
- Se você quiser criar um modelo de projeto ou item como parte de uma extensão do VSIX, consulte [criando personalizar modelos de projeto e Item](../extensibility/creating-custom-project-and-item-templates.md).  
-  
-## <a name="template-scanning"></a>Verificação de modelo  
- Anteriormente, **devenv /setup** ou **/installvstemplates devenv** verificados no disco local para localizar modelos de projeto e item. A partir do Preview 4, verificação será executada somente para o nível de usuário local (**%USERPROFILE%\Documents\\< versão do Visual Studio\>\My exportado modelos\\**) que é usado para modelos gerados pelo **arquivo > Exportar modelos** comando.  
-  
- Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.vstman) que especifica o local e outras características do modelo. O arquivo .vstman é gerado junto com o arquivo. vstemplate usado para modelos. Se você instalar a extensão usando um .vsix, você pode fazer isso através da recompilação a extensão no Visual Studio de 2017. Mas se você usar um arquivo. msi, você precisa fazer as alterações manualmente. Para obter uma lista do que você precisa para fazer essas alterações, consulte **atualizações para extensões instaladas com um. MSI** mais adiante neste tópico.  
+
+A partir do Visual Studio de 2017, o Visual Studio descobre modelos de projeto e item que foram instalados de forma diferente de versões anteriores do Visual Studio por um .vsix ou um arquivo. msi. Se você possui extensões que usam modelos de item ou projeto personalizados, você precisa atualizar suas extensões. Este tópico explica o que você deve fazer.
+
+Esta alteração afeta apenas de 2017 Visual Studio. Ele não afeta as versões anteriores do Visual Studio.
+
+Se você quiser criar um modelo de projeto ou item como parte de uma extensão do VSIX, consulte [criando personalizar modelos de projeto e Item](../extensibility/creating-custom-project-and-item-templates.md).
+
+## <a name="template-scanning"></a>Verificação de modelo
+
+Em versões anteriores do Visual Studio, **devenv /setup** ou **/installvstemplates devenv** verificados no disco local para localizar modelos de projeto e item. A partir do Visual Studio de 2017, a verificação é executada apenas para o local de nível de usuário. O local de nível de usuário padrão é **%USERPROFILE%\Documents\\< versão do Visual Studio\>\Templates\\**. Esse local é usado para modelos gerados pelo **projeto** > **exportar modelos...**  comando, se o **importar automaticamente o modelo no Visual Studio** opção é selecionada no assistente.
+
+Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.vstman) que especifica o local e outras características do modelo. O arquivo .vstman é gerado junto com o arquivo. vstemplate usado para modelos. Se você instalar a extensão usando um .vsix, você pode fazer isso através da recompilação a extensão no Visual Studio de 2017. Mas se você usar um arquivo. msi, você precisa fazer as alterações manualmente. Para obter uma lista do que você precisa para fazer essas alterações, consulte **atualizações para extensões instaladas com um. MSI** mais adiante neste tópico.  
   
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Como atualizar uma extensão do VSIX com modelos de Item ou projeto  
- Este procedimento explica como ter 2017 do Visual Studio
+
 1.  Abra a solução no Visual Studio de 2017. Você será solicitado a atualizar o código. Clique em **OK**.  
   
 2.  Após a conclusão da atualização, talvez seja necessário alterar a versão do destino da instalação. No projeto VSIX, abra o arquivo source.extension.vsixmanifest e selecione o **instalar destinos** guia. Se o **versão intervalo** campo é **[14.0]**, clique em **editar** e altere-o para incluir 2017 do Visual Studio. Por exemplo, você pode definir **[14.0,15.0]** para instalar a extensão do Visual Studio 2015 ou Visual Studio de 2017, ou em **[15.0]** para instalá-lo para apenas de 2017 Visual Studio.  
@@ -176,41 +179,19 @@ Vamos mostrar os pontos de diferença entre o Visual Studio 2015 e as versões d
   
  Para obter mais informações sobre os diferentes elementos do arquivo .vstman, consulte [Visual Studio Template manifesto Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Atualizações para as extensões instaladas com um. MSI  
- Algumas extensões de MSI implantar modelos locais comuns do modelo, como o seguinte:  
-  
--   **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**  
-  
--   **\<Diretório de instalação do Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< projeto/ItemTemplates >**  
-  
- Se sua extensão executa uma implantação de MSI, você precisa gerar o manifesto do modelo manualmente e certifique-se de que ele está incluído na configuração da extensão. Você deve comparar os exemplos de .vstman listados acima e [Visual Studio Template manifesto Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md). Para ver o que você precisa incluir  
-  
- Você deve criar manifestos separados para modelos de projeto e item, e eles devem apontar para o modelo diretório raiz conforme especificado acima. Você deve criar um manifesto por extensão e a localidade.  
-  
-## <a name="troubleshooting-template-installation"></a>Solucionando problemas de instalação do modelo  
- Se você tiver problemas de implantação de modelos de projeto ou item, você pode habilitar o log de diagnóstico.  
-  
-1.  Crie um arquivo pkgdef na pasta Common7\IDE\CommonExtensions para a instalação (por exemplo, C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) com o seguinte conteúdo:  
-  
-     ```
-     [$RootKey$\VsTemplate]
-     "EnableTemplateDiscoveryLog"=dword:00000001
-     ```
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Atualizações para as extensões instaladas com um. MSI
 
-2. Abra um "Prompt de comando de desenvolvedor" para a instalação por meio de pesquisa na pesquisa do Windows e execute `devenv /updateConfiguration`.
+Algumas extensões de MSI implantar modelos locais comuns do modelo, como o seguinte:
 
-3.  Inicie o Visual Studio e iniciar as caixas de diálogo Novo projeto e o novo Item para inicializar as duas árvores do modelo. O log do modelo agora aparece no **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid corresponde à ID de instalação da instância do Visual Studio). A inicialização de cada árvore modelo acrescenta as entradas nesse log.  
-  
- O arquivo de log contém as seguintes colunas:  
-  
--   **FullPathToTemplate**, que tem os seguintes valores:  
-  
-    -   1 para implantação baseada em manifesto  
-  
-    -   0 para implantação baseada em disco  
-  
--   **TemplateFileName**  
-  
--   Outras propriedades de modelo
+- **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
 
-Observação: Para desabilitar o log, remova o arquivo pkgdef ou altere o valor de `EnableTemplateDiscoveryLog` para `dword:00000000` e execute `devenv /updateConfiguration` novamente.
+- **\<Diretório de instalação do Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< projeto/ItemTemplates >**
+
+Se sua extensão executa uma implantação de MSI, você precisa gerar o manifesto do modelo manualmente e certifique-se de que ele está incluído na configuração da extensão. Compare os exemplos de .vstman listados acima e [Visual Studio Template manifesto Schema Reference](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
+Você deve criar manifestos separados para modelos de projeto e item, e eles devem apontar para o modelo diretório raiz conforme especificado acima. Crie um manifesto por extensão e a localidade.
+
+## <a name="see-also"></a>Consulte também
+
+[Solucionando problemas de descoberta do modelo](troubleshooting-template-discovery.md)  
+[Criando modelos personalizados de projeto e item](creating-custom-project-and-item-templates.md)

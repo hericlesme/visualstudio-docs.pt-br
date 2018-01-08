@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7856f8fac7e986f3e5383fa91261de39fe815a28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imagens e ícones para o Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a>Uso de imagem no Visual Studio  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_IconDesign"></a>Design de ícone  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  O Visual Studio usa ícones de estilo moderno, que tiverem geometry limpa e um saldo 50/50 de positivo/negativo (claro escuro) e usam metáforas diretas, compreensíveis. Design de ícone crucial pontos giram em torno de clareza, simplificação e contexto.  
   
 -   **Esclarecimento:** enfocam a metáfora de núcleo que fornece um ícone seu significado e individualidade.  
@@ -249,7 +250,7 @@ ms.lasthandoff: 10/31/2017
   
 ##  <a name="BKMK_UsingColorInImages"></a>Usando cores de imagens  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Ícones no Visual Studio são principalmente monocromáticos. Cor é reservada para transmitir informações específicas e nunca para a decoração. Cor é usada:  
   
 -   para indicar uma ação  
@@ -368,7 +369,7 @@ ms.lasthandoff: 10/31/2017
   
 ||||||  
 |-|-|-|-|-|  
-|![Ícone de classe IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "36_IntelliSenseClass 0405")<br />Classe|![Ícone de evento particular IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "37_IntelliSensePrivateEvent 0405")<br />Evento particular|![Ícone de delegado do IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "38_IntelliSenseDelegate 0405")<br />Representante|![Ícone de amigo do IntelliSense método](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "39_IntelliSenseMethodFriend 0405")<br />Método Friend|![Ícone de campo](../../extensibility/ux-guidelines/media/0405-40_field.png "40_Field 0405")<br />Campo|  
+|![Ícone de classe IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "36_IntelliSenseClass 0405")<br />Classe|![Ícone de evento particular IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "37_IntelliSensePrivateEvent 0405")<br />Evento particular|![Ícone de delegado do IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "38_IntelliSenseDelegate 0405")<br />delegado|![Ícone de amigo do IntelliSense método](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "39_IntelliSenseMethodFriend 0405")<br />Método Friend|![Ícone de campo](../../extensibility/ux-guidelines/media/0405-40_field.png "40_Field 0405")<br />Campo|  
 |![IntelliSense protegido ícone do item de enum](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "41_IntelliSenseProtectedEnumItem 0405")<br />Item de Enum protegido|![Ícone do objeto IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "42_IntelliSenseObject 0405")<br />Objeto|![Ícone de modelo do IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "43_IntelliSenseTemplate 0405")<br />Modelo|![Ícone de atalho do IntelliSense exceção](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "44_IntelliSenseExceptionShortcut 0405")<br />Atalho de exceção||  
   
 ### <a name="notifications"></a>Notificações  

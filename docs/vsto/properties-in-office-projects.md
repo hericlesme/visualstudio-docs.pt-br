@@ -23,11 +23,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c5832388db7e70791193024b263da275cdf5eaa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 54eb1f58c6e623df352b382df7259e4457dd4597
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-in-office-projects"></a>Propriedades em projetos do Office
   Há várias propriedades importantes que estão disponíveis para projetos do Office no Visual Studio. Essas propriedades podem ser acessadas de **propriedades** janela.  

@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d9568cd6fd26683e035ed9889e0d0b7928ce799
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b72fc46d64034ddc22e929fb1a1eff26115cce70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Preparando extensões para a implantação do Windows Installer
 Você não pode usar um pacote do Windows Installer (MSI) para implantar um pacote do VSIX. No entanto, você pode extrair o conteúdo de um pacote do VSIX para implantação de MSI. Este documento mostra como preparar um projeto cuja saída padrão é um pacote do VSIX para inclusão em um projeto de instalação.  

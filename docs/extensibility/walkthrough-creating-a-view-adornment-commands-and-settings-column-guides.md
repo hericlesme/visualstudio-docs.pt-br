@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3db7dea958fb3d80a109c021ffb20260f0748bba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Passo a passo: Criando um adorno de exibição, comandos e configurações (guias de coluna)
 Você pode estender o editor de texto/código do Visual Studio com comandos e efeitos de exibição.  Este tópico mostra como começar com um recurso de extensão populares, guias de coluna.  Guias de coluna são visualmente leves linhas desenhadas em modo de exibição do editor de texto para ajudá-lo a gerenciar seu código para as larguras das colunas específicas.  Código especificamente formatado pode ser importante para os exemplos incluem em documentos, postagens de blog ou relatórios de erros.  

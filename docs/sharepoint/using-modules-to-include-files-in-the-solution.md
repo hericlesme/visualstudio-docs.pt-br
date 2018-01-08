@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 484ae234839876922b6c04767d67ed56f85a108d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f340d0a8c713aedc6ee74aa598c7170495ac8c01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Usando módulos para incluir arquivos na solução
   Pode haver momentos em que você pode deseja implantar arquivos para o servidor do SharePoint, independentemente de seu tipo de arquivo, como novas páginas mestras. Para fazer isso, você pode usar *módulos* (não deve ser confundido com [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] módulos de código). Módulos são contêineres de arquivos em uma solução do SharePoint. Quando a solução for implantada, os arquivos no módulo são copiados para as pastas especificadas no servidor do SharePoint.  

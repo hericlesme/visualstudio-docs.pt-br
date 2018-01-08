@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc6fbfee6ab64cb50c03c55604db969e8ffc2d9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a9ef9fcce1a02820b2855b6e39c5da2d3a7cc48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Passo a passo: Implementando trechos de código
 Você pode criar trechos de código e incluí-los em uma extensão de editor, para que os usuários da extensão podem adicioná-los para seu próprio código.  

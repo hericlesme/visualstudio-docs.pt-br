@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4636e55fa2bc20ba9ff958a897ef7898099cb5c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-in-office-projects"></a>Acessibilidade em projetos do Office
   Microsoft Visual Studio e o Microsoft Office incluem muitos recursos de acessibilidade que permitem criar soluções personalizadas que atendem aos requisitos de acessibilidade padrão. A Microsoft publica as diretrizes de acessibilidade na Web. Para obter detalhes, consulte o [site de acessibilidade da](http://go.microsoft.com/fwlink/?LinkID=37113).  

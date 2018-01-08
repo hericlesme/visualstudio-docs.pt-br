@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bbf11e020380114f12de3c6b71960faf80791ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Instruções passo a passo: gerenciando código usando modelos de texto
 Geração de código permite que você gerar o código do programa que é fortemente tipado e ainda pode ser facilmente alterado quando o modelo de origem é alterado. Compare isso com a técnica alternativa de escrever um programa completamente genérico que aceita um arquivo de configuração, que é mais flexível, mas resulta em código que não é tão fácil de ler e alterar, nem tem tal bom desempenho. Este passo a passo demonstra esse benefício.  
@@ -104,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 4.  Para este passo a passo, nomeie o arquivo `exampleXml.xml`. Defina o conteúdo do arquivo a ser o XML mostrado na seção anterior.  
   
- ..  
+ .  
   
 ### <a name="add-a-test-code-file"></a>Adicionar um arquivo de código de teste  
  Adicionar um arquivo c# ao seu projeto e gravar nele, um exemplo de código que você deseja ser capaz de gravar. Por exemplo:  

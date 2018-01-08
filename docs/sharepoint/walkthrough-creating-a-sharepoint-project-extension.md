@@ -19,11 +19,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1974f32731d8ba45b2210b9d9231a7e69d6905f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2ca99a5ad13989f29126b23a93055b174bb49150
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Instruções passo a passo: criando uma extensão de projeto do SharePoint
   Este passo a passo ilustra como criar uma extensão para projetos do SharePoint. Você pode usar uma extensão de projeto para responder a eventos de nível de projeto, como quando um projeto é adicionado, excluído ou renomeado. Você também pode adicionar propriedades personalizadas ou responder quando uma alteração de valor de propriedade. Ao contrário das extensões de item de projeto, extensões de projeto não podem ser associadas um determinado tipo de projeto do SharePoint. Quando você cria uma extensão de projeto, a extensão carrega quando qualquer tipo de projeto do SharePoint é aberto em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

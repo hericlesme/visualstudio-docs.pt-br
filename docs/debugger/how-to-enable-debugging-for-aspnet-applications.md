@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Depurar aplicativos ASP.NET no Visual Studio
 
@@ -124,7 +125,7 @@ Para depurar em um servidor web local, defina as propriedades do projeto. Para d
 
 2. Se você escolher um servidor (personalizado), insira a URL correta no **URL do projeto** (ou **URL Base**) campo.
 
-    Se o servidor externo é IIS local, o IIS deve ser instalado e configurado corretamente. Por exemplo, a versão correta do ASP.NET deve ser configurada no IIS. Para obter mais informações, consulte [IIS 8.0 usando ASP.NET 3.5 e o ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Se você quiser testar a implantação, bem como de depuração, consulte [implantando para testar](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Se o servidor externo é IIS local, o IIS deve ser instalado e configurado corretamente. Por exemplo, a versão correta do ASP.NET deve ser configurada no IIS. Para obter mais informações, consulte [IIS 8.0 usando ASP.NET 3.5 e o ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Se você quiser testar a implantação, bem como de depuração, consulte [implantando para testar](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Se o servidor externo é [remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), anexar ao processo em vez disso, e essas configurações de projeto não são usadas para depuração.
 
@@ -134,7 +135,7 @@ Para o IIS Express, você não precisa configurar o servidor web (ignore esta se
 
 Se você estiver usando o servidor web local do IIS, siga estas etapas.
 
-1. Certifique-se de que o IIS está instalado corretamente. Para obter mais informações, consulte [IIS 8.0 usando ASP.NET 3.5 e o ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+1. Certifique-se de que o IIS está instalado corretamente. Para obter mais informações, consulte [IIS 8.0 usando ASP.NET 3.5 e o ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     * Certifique-se de que você instale a versão correta do ASP.NET no servidor. Use o Web Platform Installer (WebPI) para instalar o ASP.NET 4.5 (no nó do servidor no Windows Server 2012 R2, escolha **obter novos componentes do Web Platform** e, em seguida, procure ASP.NET). Para instalar o ASP.NET Core, consulte [publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
 
@@ -230,5 +231,5 @@ Por exemplo, você pode especificar `debug="true"` em www.microsoft.com/aaa/Web.
 [Depurar aplicativos da Web implantados](debugging-deployed-web-applications.md)   
 [Passo a passo: Depurando um formulário da Web](walkthrough-debugging-a-web-form.md)   
 [Como: depurar exceções do ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Depurar aplicativos da Web: erros e solução de problemas](debugging-web-applications-errors-and-troubleshooting.md)
+[Depurar aplicativos Web: erros e solução de problemas](debugging-web-applications-errors-and-troubleshooting.md)
   

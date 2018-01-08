@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d788121e81af48cb972631d0845ad7b4317818b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Começando a desenvolver extensões do Visual Studio
 Se você nunca escreveu uma extensão do Visual Studio antes, você provavelmente terá algumas perguntas. São listados algumas das mais comuns aqui. Se você não vir as informações que você está procurando, use os botões de comentários (**esta página foi útil?** na parte inferior da tela) para solicitar que você deseja.  
@@ -89,4 +90,4 @@ Se você nunca escreveu uma extensão do Visual Studio antes, você provavelment
 ## <a name="how-can-i-distribute-my-extension"></a>Como distribuir o extensão do my?  
  Você pode instalar a extensão em outro computador ou enviá-lo para seus amigos como um arquivo de .vsix, que você instalar clicando duas vezes nele. Você pode encontrar mais informações sobre pacotes VSIX no [envio extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  
   
- Você também pode publicar sua extensão no Visual Studio Marketplace, que é visível para um grande número de clientes do Visual Studio. Para obter um exemplo de uma extensão para o Marketplace de empacotamento, consulte [passo a passo: publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões para o Visual Studio](https://docs.microsoft.com/en-us/vsts/integrate/ide/extensions/overview).
+ Você também pode publicar sua extensão no Visual Studio Marketplace, que é visível para um grande número de clientes do Visual Studio. Para obter um exemplo de uma extensão para o Marketplace de empacotamento, consulte [passo a passo: publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões para o Visual Studio](/vsts/integrate/ide/extensions/overview).

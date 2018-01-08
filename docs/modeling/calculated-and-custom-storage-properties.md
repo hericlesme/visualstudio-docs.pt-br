@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0be1527c82264ef388eb01d3a06702c1c4bb4f7d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cf841cf70f092fb38adc42bfa6271c6c3aa121d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 Todas as propriedades de domínio em uma domínio específico DSL (linguagem) podem ser exibidas para o usuário no diagrama e no seu Gerenciador de idioma e podem ser acessadas pelo código do programa. No entanto, as propriedades diferem da forma que seus valores são armazenados.  

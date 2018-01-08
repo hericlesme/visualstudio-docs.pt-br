@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Usar marcadores de texto com a API herdado
 Um marcador de texto é um intervalo flutuante de texto em um buffer que pode afetar a exibição e o comportamento de uma região de texto. Marcadores de incluem os pontos de interrupção, indicadores, sublinhados ondulados e regiões de somente leitura. Marcadores de texto são basicamente diferentes das cores de sintaxe. Cores de sintaxe é uma maneira rápida de se comunicar a sintaxe de linguagem que está associada uma região do texto. Cores de sintaxe geral é solicitado ao Windows redesenha a tela, quando a velocidade é importante. Cores de sintaxe altera somente a cor do texto. Marcadores de texto podem alterar muitas outras propriedades de texto. Marcadores de texto podem "flutuar" e aplicar um comportamento especial e cores.  

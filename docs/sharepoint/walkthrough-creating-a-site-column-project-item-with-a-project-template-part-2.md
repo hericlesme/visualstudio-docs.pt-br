@@ -16,11 +16,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82a3793920b1e35f9077ee68eaa2f18db07d2d04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a3c2ff276d6f432a4b3cabcaa4aa1b27b033676e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 2
   Depois de definir um tipo personalizado do item de projeto do SharePoint e associá-lo a um modelo de projeto no Visual Studio, você também poderá fornecer um Assistente para o modelo. Você pode usar o Assistente para coletar informações de usuários quando eles usam o modelo para criar um novo projeto que contém o item de projeto. As informações que você coletar podem ser usadas para inicializar o item de projeto.  

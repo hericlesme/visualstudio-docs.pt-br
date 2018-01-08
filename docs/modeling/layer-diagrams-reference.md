@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: ce4a203fd0843fd6b15bfbf85019e85032defbd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 43901987c9f6f37e7082200f675549021fb63f83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependência: referência
 No Visual Studio, você pode usar um *diagrama de dependência* para visualizar a arquitetura de alto nível, a lógica do seu sistema. Um diagrama de dependência organiza os artefatos físicos no seu sistema em grupos lógicos, abstract chamados *camadas*. Essas camadas descrevem as tarefas principais que executam os artefatos ou os principais componentes do seu sistema. Cada camada também pode conter camadas aninhadas que descrevem as tarefas mais detalhadas.  

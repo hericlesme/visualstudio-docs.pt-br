@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a68df6ecfbf4c511922ae89f67e9323a245432d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 986cf8cd6051a08948fb633168792d127cddc5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Exemplos e instruções passo a passo de desenvolvimento do SharePoint
   Esta seção contém exemplos de aplicativos, código de exemplo e orientações passo a passo que ilustram a sintaxe, estrutura e técnicas usadas para criar soluções do SharePoint.  

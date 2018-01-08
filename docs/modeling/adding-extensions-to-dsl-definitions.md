@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f335db9f22392c4d0293a51111efff88c25c3145
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 77a631d7f245dfe6d324e2b392349b559447212f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Adicionando extensões a definições de DSL
 Extensão de definição de DSL permite que você crie um pacote de extensões para uma domínio específico DSL (linguagem). Extensão de DSL, que está contido em um Visual Studio Integration extensão (VSIX), pode ser instalado no computador do usuário da mesma maneira como uma DSL. Os recursos adicionais podem ser habilitados e desabilitados em tempo de execução dinamicamente. DSLs não precisam ser explicitamente criado para a extensão e as extensões podem ser criadas mais tarde ou por terceiros sem alterar o DSL estendida.  

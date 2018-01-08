@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b3a2cbaf98eeacb78f55bea23d638cd4a1ab6d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: office
+ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Práticas recomendadas de desenvolvimento de COM, o VSTO e o VBA suplementos do Office
   Se você estiver desenvolvendo suplementos do VSTO, COM ou do VBA para o Office, siga as práticas recomendadas de desenvolvimento descritas neste artigo.   Isso ajuda a garantir:
@@ -27,13 +28,13 @@ ms.lasthandoff: 11/11/2017
 -  Redução da complexidade da implantação do suplemento para seus usuários e administradores de TI.
 -  Falhas de instalação ou em tempo de execução não intencionais de seu suplemento não ocorrer.
 
->Observação: Usando o [ponte de área de trabalho](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root) para preparar o COM, VSTO VBA suplemento ou para a Windows Store não é suportado. Suplementos COM, o VSTO e o VBA não podem ser distribuídos no repositório do Windows ou o Office. 
+>Observação: Usando o [ponte de área de trabalho](/windows/uwp/porting/desktop-to-uwp-root) para preparar o COM, VSTO VBA suplemento ou para a Windows Store não é suportado. Suplementos COM, o VSTO e o VBA não podem ser distribuídos no repositório do Windows ou o Office. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Não verificar Office durante a instalação  
  Não é recomendável ter o suplemento detectar se o Office é instalado durante o processo de instalação do suplemento. Se o Office não estiver instalado, você pode instalar o suplemento e o usuário será capaz de acessá-lo após a instalação do Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Use os tipos de interoperabilidade inseridos (NoPIA)  
-Se sua solução usa o .NET 4.0 ou posterior, use tipos de interoperabilidade inseridos (NoPIA) em vez de dependendo o escritório principal Interop Assemblies (PIA) redistribuível. Usando a incorporação de tipo reduz o tamanho da instalação da solução e garante a compatibilidade futura. Office 2010 foi a última versão do Office que acompanha o PIA redistribuível. Para obter mais informações, consulte [passo a passo: inserindo informações de tipos do Microsoft Office Assemblies](https://msdn.microsoft.com/en-us/library/ee317478.aspx) e [equivalência de tipo e tipos de interoperabilidade inserido](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types). 
+Se sua solução usa o .NET 4.0 ou posterior, use tipos de interoperabilidade inseridos (NoPIA) em vez de dependendo o escritório principal Interop Assemblies (PIA) redistribuível. Usando a incorporação de tipo reduz o tamanho da instalação da solução e garante a compatibilidade futura. Office 2010 foi a última versão do Office que acompanha o PIA redistribuível. Para obter mais informações, consulte [passo a passo: inserindo informações de tipos do Microsoft Office Assemblies](https://msdn.microsoft.com/en-us/library/ee317478.aspx) e [equivalência de tipo e tipos de interoperabilidade inserido](/windows/uwp/porting/desktop-to-uwp-root).
 
 Se sua solução usar uma versão anterior do .NET, é recomendável que você atualize sua solução para usar o .NET 4.0 ou posterior. Usando o .NET 4.0 ou posterior reduz pré-requisitos de tempo de execução em versões mais recentes do Windows.
   
@@ -66,4 +67,4 @@ Para fornecer instruções de suporte para aplicativos de cliente do Office (por
 >Importante: A Microsoft mantém uma lista de suplementos com suporte para relatórios de preparação e informações de contato do ISV. Para obter o suplemento listado, consulte [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Use o Monitor de processo para ajudar a depurar instalação ou problemas de carregamento
-Se o suplemento tem problemas de compatibilidade durante a instalação ou carga, eles podem estar relacionados a problemas de acesso de arquivo ou do registro. Use [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) ou uma ferramenta semelhante de depuração para registrar e comparar o comportamento em um ambiente de trabalho para ajudar a identificar o problema. 
+Se o suplemento tem problemas de compatibilidade durante a instalação ou carga, eles podem estar relacionados a problemas de acesso de arquivo ou do registro. Use [Process Monitor](/sysinternals/downloads/procmon) ou uma ferramenta semelhante de depuração para registrar e comparar o comportamento em um ambiente de trabalho para ajudar a identificar o problema.

@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Como: alternar para outro Thread durante a depuração no Visual Studio
 Quando você depurar um aplicativo multithread, você pode usar qualquer um dos vários métodos para alternar da thread que você estava trabalhando para outro thread.
 
 > [!NOTE]
-> Se você quiser controlar a ordem na qual os threads são executados, você precisa [congelar e descongelar threads](/debugger/get-started-debugging-multithreaded-apps.md).
+> Se você quiser controlar a ordem na qual os threads são executados, você precisa [congelar e descongelar threads](../debugger/get-started-debugging-multithreaded-apps.md).
 
 Quando você examinar threads no editor de códigos e janelas de depuração multithread diferentes, a seta amarela indica o thread atual. Uma seta verde com uma chave final indica que um thread atual não tem o contexto atual do depurador.
   

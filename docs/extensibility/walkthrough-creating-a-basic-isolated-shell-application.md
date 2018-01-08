@@ -17,11 +17,12 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3f8eaa704dca0b939665e900e74fc3cb5120307
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 28a555f2ab6e907a54cfb88d57ee09f5f47771ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Passo a passo: Criando um aplicativo de Shell isolado básico
 Este passo a passo mostra como criar uma solução de shell isolado, personalizar a janela de ferramenta sobre da Ajuda e criar um programa de instalação que instala o shell isolado.  

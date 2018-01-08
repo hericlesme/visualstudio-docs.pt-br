@@ -19,11 +19,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c8e9faaf0b38623347c2b6e8ff7351f625416e82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b927b71e33ab6a26729a2db9190e2755eee092a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Como criar uma extensão de item do projeto do SharePoint
   Crie uma extensão de item de projeto para adicionar funcionalidade a um item de projeto do SharePoint que já está instalado no Visual Studio. Para obter mais informações, consulte [estendendo itens de projeto do SharePoint](../sharepoint/extending-sharepoint-project-items.md).  

@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0a4cc7b61426479a45e87568b040906426870233
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 294d10eb8a8fab361ddf5b3dadf4d779a95947a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode ser usada para ler e atualizar instâncias da DSL no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.  

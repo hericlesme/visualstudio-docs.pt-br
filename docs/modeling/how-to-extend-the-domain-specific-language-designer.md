@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 44b3ea3d3997ac781b02220316810f00826f2beb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9eaa07b0fdf0055ea4ba2849f6438882a22cf85e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Como estender o Designer de Linguagem Específica do Domínio
 Você pode fazer as extensões para o designer que você usa para editar as definições de DSL. Tipos de extensão que você pode fazer incluem a adição de comandos de menu, adicionar manipuladores para arrastar e clique duas vezes em gestos e regras que são disparadas quando alterar determinados tipos de valores ou relações. As extensões podem ser empacotadas como o Visual Studio Integration extensão (VSIX) e distribuídas a outros usuários.  

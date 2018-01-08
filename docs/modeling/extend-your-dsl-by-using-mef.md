@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 492455d06c65bdcf3838c4f61d1fd2dbbcbb0c3f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1f64368c90f6d77be24271eeaac96cc6b5624f67
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estender a DSL usando MEF
 Você pode estender sua linguagem específica de domínio (DSL) usando o Managed Extensibility Framework (MEF). Você ou outros desenvolvedores poderão gravar extensões para o DSL sem alterar a definição de DSL e o código do programa. Essas extensões incluem comandos de menu, manipuladores de arrastar e soltar e validação. Os usuários poderão instalar o DSL e opcionalmente instalar extensões para ele.  

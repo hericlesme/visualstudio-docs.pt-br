@@ -24,11 +24,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7b2277d725259fb5f95c186825773b5460ec17d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6a5dbff1d4a4c739ce8ecab0807e2d74c62f999e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Como adicionar um método Finder específico
   Você pode retornar uma instância de entidade única, criando uma *localizador específico* método. O serviço de conectividade de dados de negócios (BDC) executa o método Finder específico quando um usuário seleciona uma entidade em uma web part de dados de negócios ou lista externa. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  

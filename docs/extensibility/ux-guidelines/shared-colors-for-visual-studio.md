@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccc530a741aaefd7e1faf1bd5f8974e27d9c7fb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shared-colors-for-visual-studio"></a>Cores de compartilhado para o Visual Studio
 Quando você estiver criando uma interface do usuário que usa os elementos comuns de shell do Visual Studio, ou você deseja que o elemento de interface para ser consistente com recursos semelhantes, use nomes de token existentes nos arquivos de definição de pacote para escolher e atribuir cores. Isso garante que a interface do usuário permanece consistente com o ambiente geral do Visual Studio e que atualiza automaticamente quando os temas são adicionados ou atualizados.  

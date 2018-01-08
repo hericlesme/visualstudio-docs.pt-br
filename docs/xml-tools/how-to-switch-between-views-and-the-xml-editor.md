@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aeec1914acc64fe748d8c5d0f487b5349b84e59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea46fac34eea04f364f07d010267be5b1ef2ea69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Como: Alternar entre modos de exibição e o editor XML
 Este tópico mostra como alternar entre os modos de exibição do designer de esquema XML (XSD) designer e o editor XML. Este exemplo usa o [esquema de ordem de compra](../xml-tools/sample-xsd-file-simple-schema.md).  

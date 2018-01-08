@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 938c03a0bea5a4e96885f1816ddb1c1c13d80ce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 519c6907bb5779a3819419144905ca68e5cce939
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-event-receiver"></a>Como criar um receptor de evento
   Criando *receptores de evento*, você pode responder quando um usuário interage com itens do SharePoint, como listas ou itens de lista. Por exemplo, o código em um receptor de evento pode ser acionado quando um usuário altera o calendário ou exclui um nome de uma lista de contatos. Ao seguir neste tópico, você pode aprender a adicionar um receptor de evento para uma instância de lista.  

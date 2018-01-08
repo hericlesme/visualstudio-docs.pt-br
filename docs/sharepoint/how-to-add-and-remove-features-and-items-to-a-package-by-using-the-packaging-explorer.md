@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bafa2a4310a77f9f5a9f061e378ac05f2896d4ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ad944d9997b80a89971802d86a2fa3075533a5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Como adicionar e Remover Funcionalidades e itens de um pacote usando o Packaging Explorer
   Para configurar um pacote para implantar recursos e itens do SharePoint, você pode usar o Gerenciador de pacotes. Você pode ajustar os recursos e itens de projeto do SharePoint em seu arquivo. wsp.  

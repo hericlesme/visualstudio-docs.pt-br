@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3742887be40f07f4b64003727333d4d21d08831e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f95377f79d02952c63b673d50569fac058a8573c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scccheckin-function"></a>Função SccCheckin
 Essa função verifica no anteriormente arquivos com check-out ao sistema de controle de origem, armazenar as alterações e criar uma nova versão. Esta função é chamada com uma contagem e uma matriz de nomes de arquivos para fazer check-in.  

@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d72d4807f61adcab1321b6471c2bea31f048a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e936404d285fe5845ae364c3b5960e2fb335d2d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-aspx-markup"></a>Como localizar marcação ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]páginas (. aspx) normalmente usam valores de cadeia de caracteres codificada. Para localizar essas cadeias de caracteres, substitua-os com expressões que referenciam recursos localizados.  

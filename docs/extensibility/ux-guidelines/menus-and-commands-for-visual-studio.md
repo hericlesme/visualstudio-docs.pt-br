@@ -12,16 +12,17 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408a496b78defbca928420f39ebdf9e9de718019
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ce4e297b698952135ef9f771243577789719dbae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para o Visual Studio
 ## <a name="command-usage"></a>Uso do comando  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Ao contrário do Microsoft Office, que é um pacote que consiste em vários produtos separados, o Visual Studio contém muitos produtos que cada contribuem seus conjuntos de comandos para o Visual Studio IDE global. O IDE gerencia a complexidade de milhares de comandos filtrando a funcionalidade disponível para o usuário com base no contexto.  
   
  Quando as alterações em um contexto do usuário - como alternar de uma janela de design para um janela de edição de código - funcionalidade não relacionados para o novo contexto desaparece. Ao mesmo tempo, novas superfícies de funcionalidade junto com informações dinâmicas relacionadas, como opções de caixa de ferramentas e propriedades. O usuário não verá a troca do conjunto de comandos disponíveis. Se o usuário é distraído ou confuso com comandos que aparecem ou desaparecem, o design de interface do usuário precisa ajuste. O contexto do usuário atual sempre é indicado em uma ou mais formas, como na barra de título de IDE, a janela Propriedades ou a caixa de diálogo páginas de propriedades.  
@@ -255,7 +256,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="access-and-shortcut-keys"></a>Chaves de acesso e o atalho  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Há dois tipos de atribuições de teclas do teclado:  
   
 -   **Chaves de acesso** (também conhecido como aceleradores) permitem acesso de teclado através dos menus para ordenar e cada rótulo na caixa de diálogo da interface do usuário. Chaves de acesso são principalmente para fins de acessibilidade, são atribuídas a todos os menus e a maioria dos controles de caixa de diálogo, não devem ser memorizada, afeta apenas a janela atual e estão localizadas.  

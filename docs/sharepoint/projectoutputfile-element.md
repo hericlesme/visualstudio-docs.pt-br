@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a397648dd81ead8134777c8b36982fa6b65b687b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: edcaf6e858c2ebf6d8068fba4f9a179904ea0a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectoutputfile-element"></a>Elemento ProjectOutputFile
   Representa a saída de um projeto separado para incluir com o item de projeto quando ele é implantado no SharePoint.  

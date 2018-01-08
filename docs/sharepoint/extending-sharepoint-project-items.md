@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f17e43e2fe98e36939c91b37e72b185cb14d09e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ffbacd5748ae2a5284ed628dce974b20e25bcab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-project-items"></a>Estendendo itens de projeto do SharePoint
   Crie uma extensão de item de projeto quando você deseja adicionar funcionalidade a um tipo de item de projeto do SharePoint que já está instalado no Visual Studio. Por exemplo, você pode criar uma extensão para o interno **receptor de evento** ou **definição de lista** itens de projeto no Visual Studio, ou você pode criar uma extensão para um tipo de item de projeto personalizados. Você também pode criar uma extensão para todos os tipos de itens de projeto do SharePoint.  

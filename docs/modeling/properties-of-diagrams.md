@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fcd30a30bdae896be5aceb9dc685a5fb762ee4af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c1a259be5b9c8f572339279734b60ac2afd93ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-diagrams"></a>Propriedades de diagramas
 Você pode definir propriedades que especificam como os diagramas aparecerá no designer de gerado. Por exemplo, você pode especificar uma cor padrão para o texto no diagrama.  

@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 23288d1afe9b9c0a181a5d978b1956071b683218
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 74e58042c5bcd2aa4883b3e8bb0fc484a59237ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-decorators"></a>Propriedades de decoradores
 Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparecer em conectores ou formas no diagrama. As tabelas a seguir mostram as propriedades para os três tipos de decorador. Algumas das propriedades aparecem somente em decoradores forma ou somente em decoradores de conector.  

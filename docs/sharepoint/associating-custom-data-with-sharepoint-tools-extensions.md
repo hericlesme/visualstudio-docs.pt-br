@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a37551f56159aaa3cda03edb6ec964a79d56da9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 24525e553fabfd05972cbe2ee59fa1260d3b855b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Associando dados personalizados a extensões de ferramentas do SharePoint
   Você pode adicionar dados personalizados a certos objetos em extensões de ferramentas do SharePoint. Isso é útil quando você tiver dados em uma parte de sua extensão que você deseja acessar posterior do código em sua extensão. Em vez de implementar uma maneira personalizada para armazenar e acessar dados, você pode associar os dados um objeto em sua extensão e, em seguida, recuperar os dados do mesmo objeto mais tarde.  

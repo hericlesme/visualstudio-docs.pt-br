@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: d9d1f6ac733a0feccb3f2fa8175fb85ed035b35c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 978344a6a51662c1d9103c386a917e1eb3cdc0ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de códigos para depurar aplicativos
 Mapas de código podem ajudá-lo a evitar se perder em grandes bases de código, de código não familiar ou código herdado. Por exemplo, quando você estiver depurando, você talvez precise examine o código de vários arquivos e projetos. Usar mapas de códigos para navegar em torno de trechos de código e entender as relações entre eles. Dessa forma, você não precisa manter o controle desse código de cabeça ou desenhe um diagrama separado. Portanto, quando o trabalho for interrompido, o código mapeia atualização ajuda sua memória sobre o código que você está trabalhando.  

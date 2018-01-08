@@ -18,11 +18,12 @@ caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: efa5c68555fbd9e309335d8c985c4f14f1b07b18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4fb3251c2e47dab98dd731a56bc0a638587b2812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Como excluir planilhas de pastas de trabalho programaticamente
   Você pode excluir qualquer planilha em uma pasta de trabalho. Para excluir uma planilha, use o item de host de planilha ou a planilha de acesso por meio da coleção de folhas da pasta de trabalho.  

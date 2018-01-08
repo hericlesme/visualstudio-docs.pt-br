@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8792c9ed175d2ced5d9c10cc19b2d222f4d839a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Definir variáveis usando as janelas de QuickWatch no Visual Studio e observar um observador
 Enquanto você está depurando, você pode usar o **inspecionar** (**Depurar > Windows > Observação > Observação (1, 2, 3, 4)**) e **QuickWatch** (com o botão direito na variável /  **Depurar > QuickWatch**) windows para inspecionar variáveis e expressões.  A diferença é que o **inspecionar** janela pode exibir várias variáveis, enquanto o **QuickWatch** janela exibe uma única variável ao mesmo tempo.
@@ -232,7 +233,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Exibição dinâmica e a janela Inspeção  
  Algumas linguagens de script (por exemplo, Python ou JavaScript) usam dinâmico ou [digitação pato](https://en.wikipedia.org/wiki/Duck_typing), e linguagens .NET (na versão 4.0 e posterior) oferece suporte a objetos que são difíceis de observar usando as janelas de depuração normais, porque eles pode ter propriedades de tempo de execução e os métodos que não podem ser exibidos.  
   
- Quando a janela de observação exibe um objeto criado a partir de um tipo que implementa o [IDynamicMetaObjectProvider Interface](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), o depurador adiciona um especial **exibição dinâmica** nó para o **Autos**  exibir. Esse nó mostra os membros dinâmicos do objeto dinâmico, mas não permite a edição dos valores de membro.  
+ Quando a janela de observação exibe um objeto criado a partir de um tipo que implementa o [IDynamicMetaObjectProvider Interface](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), o depurador adiciona um especial **exibição dinâmica** nó para o **Autos**  exibir. Esse nó mostra os membros dinâmicos do objeto dinâmico, mas não permite a edição dos valores de membro.  
   
  Se você clique qualquer filho de um **exibição dinâmica** e escolha **Adicionar inspeção**, o depurador insere uma nova variável de inspeção que converte um objeto para um objeto dinâmico. Em outras palavras, **nome do objeto** torna-se (**objeto (dinâmico)). Nome**.  
   

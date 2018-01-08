@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6baa3086d1a81ce433a077ab1ed0dff4cb152308
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1cbc00fde74aa8f3592d4f50b31005e951b14962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Diretrizes para escrever modelos de texto T4
 Essas diretrizes gerais podem ser úteis se você estiver gerando o código do programa ou outros recursos de aplicativo em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Eles não são fixas regras.  

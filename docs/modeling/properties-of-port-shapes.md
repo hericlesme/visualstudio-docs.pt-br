@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6a645957ce06f77fe9cfb9d3bc3475a21a4213d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3cc8f57b0615be6255425e396f0fc4ea3e763810
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-port-shapes"></a>Propriedades de formas de porta
 Você pode usar formas de porta para representar as classes de domínio no designer de gerado.  

@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Como: migrar projetos de extensibilidade para o Visual Studio 2015
 Aqui está como atualizar sua extensão.  
@@ -45,7 +46,7 @@ Aqui está como atualizar sua extensão.
   
 2.  Remove os assemblies de referência do SDK do VS do projeto, selecionando-os, clique com botão direito e **remover**.  
   
-3.  Adicione as versões do NuGet dos assemblies de referência do SDK do VS.  Enquanto estiver no **Solution Explorer referências** nó, abra o **gerenciar pacotes NuGet...**  caixa de diálogo.  Se você quiser saber mais sobre essa caixa de diálogo, consulte [Package Manager UI](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). Os assemblies de referência do SDK do VS são publicados em [nuget.org](http://www.nuget.org) por [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  Adicione as versões do NuGet dos assemblies de referência do SDK do VS.  Enquanto estiver no **Solution Explorer referências** nó, abra o **gerenciar pacotes NuGet...**  caixa de diálogo.  Se você quiser saber mais sobre essa caixa de diálogo, consulte [Package Manager UI](/NuGet/Tools/Package-Manager-UI). Os assemblies de referência do SDK do VS são publicados em [nuget.org](http://www.nuget.org) por [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  Usando **nuget.org** como seu **origem do pacote**, procure o nome do pacote NuGet que corresponda ao assembly de referência desejada (por exemplo: Microsoft.VisualStudio.Shell.14.0) e instalá-lo no seu projeto.  O NuGet pode adicionar vários assemblies de referência para satisfazer as dependências do assembly inicial.  
   

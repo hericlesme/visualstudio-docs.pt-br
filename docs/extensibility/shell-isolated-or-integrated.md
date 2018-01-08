@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f06af0b884d404b3fd2e8e36cac235c10d254bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 787fd7c6980df9809fed9582f4ec8da81de8f862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolado ou integrado)
 Você pode criar seu próprio aplicativo com base no Visual Studio em modo integrado ou isolado. No modo integrado, muitos recursos do Visual Studio estão disponíveis além de seu aplicativo. No modo isolado, você deve escolher um subconjunto de recursos do Visual Studio que você deseja distribuir junto com sua própria extensão.  

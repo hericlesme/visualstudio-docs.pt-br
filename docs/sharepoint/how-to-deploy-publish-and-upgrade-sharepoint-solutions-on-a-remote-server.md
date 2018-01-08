@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 115509e8ff79aafa703c429b476041d558e3167c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 519f40017fff5dd3241f4563c5a85d0d0d15c01b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Como implantar, publicar uma atualizar soluções do SharePoint em um servidor remoto
   Além de implantar soluções do SharePoint para o sistema local, você pode publicar soluções em modo seguro do SharePoint para locais remotos ou sites locais do SharePoint. O processo de publicação remoto copia o arquivo. wsp no servidor do SharePoint, instala a solução e, em seguida, permite que você ative a solução. Você também pode atualizar uma instalação remota de solução do SharePoint depois que forem feitas alterações a ele.  

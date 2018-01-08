@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c925cc1cf8b1a5c70dfc1e650151d79945828935
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 071c8832e154f151d6ee9d04c45b5bc927366f7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Como adicionar e remover itens de funcionalidades do SharePoint
   Quando você cria uma solução do SharePoint, o Visual Studio adiciona os itens de projeto do SharePoint padrão para o recurso. Antes da implantação, você pode adicionar e remover itens de projeto do SharePoint para modificar o recurso do SharePoint.  

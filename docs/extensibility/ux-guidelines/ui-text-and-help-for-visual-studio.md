@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0019a0687370ac328fe78f57f1d26e661eb214a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 555fd622f5655a69ba77f3905a39635e01831c76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de interface do usuário e a Ajuda do Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a>Texto de interface do usuário e terminologia  
@@ -171,7 +172,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="error-messages"></a>Mensagens de erro  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Erros de acontecem. Definir limitações em que o usuário pode fazer é uma primeira etapa a sensata evitar mensagens de erro evitáveis. No entanto, quando ocorre um erro, uma mensagem de erro bem escrito pode ir um longo caminho para atenuar o problema. Mensagens de erro são possivelmente um dos tipos mais importantes de notificação de que o usuário vê, porque eles são síncronos e indicam um problema que precisa ser resolvido. Mensagens de erro de escrita inadequadamente deixam os usuários em seus próprios para decidir a causa dos erros e todas as soluções possíveis.  
   
  Os usuários podem parar prestar atenção ao uso excessivo ou confuso mensagens de erro, portanto experimentar mensagens somente necessário de gravação que agregam valor ao usuário. Se a mensagem é simplesmente uma notificação, use uma apresentação alternativa.  
@@ -266,7 +267,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="accessing-help"></a>Acessando a Ajuda  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Além de documentação no MSDN, um usuário do Visual Studio tem vários pontos de acesso para ajudar o usuário enquanto na interface de usuário. Para garantir que esses pontos de acesso estejam consistentemente disponíveis, é necessário tirar proveito do sistema de ajuda oferecido pelo ambiente de equipes de recursos. Esses pontos de acesso são:  
   
 -   **Texto de instrução e complementar em caixas de diálogo.** Texto estático que dá a direção ou explicação, na interface do usuário superfície ou passe o mouse sobre um ícone de InfoDica está disponível.  

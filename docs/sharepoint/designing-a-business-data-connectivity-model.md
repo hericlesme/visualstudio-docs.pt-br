@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0af1b3038fd0cdf4629c1a1acb9e14d0297dc19d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Criando um modelo de Conectividade de Dados Corporativos
   Você pode desenvolver um modelo para o serviço de conectividade de dados de negócios (BDC) com a adição de entidades e os métodos para um arquivo de modelo. Uma entidade descreve uma coleção de campos de dados. Por exemplo, uma entidade pode representar uma tabela em um banco de dados. Um método executa uma tarefa, como adicionar, excluir ou atualizar dados representados pelas entidades. Para obter mais informações, consulte [Integrando dados corporativos no SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  

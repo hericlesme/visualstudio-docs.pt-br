@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f8a60f9c4ca91ff9aac516d21b3a502a2898aff1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2631a81cd907c6946993461f953a0bc1ddbf2ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabalhando com o diagrama de definição de DSL
 O diagrama de um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é uma ferramenta importante para definir a linguagem específica de domínio. É possível adicionar elementos ao seu modelo de domínio e definir as relações no diagrama e é possível modificar o layout do diagrama para torná-lo mais legível.  
@@ -64,13 +65,13 @@ O diagrama de um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é 
 ### <a name="expandcollapse-inheritance-tree"></a>Expandir/Recolher Árvore de Relacionamentos  
  Se uma classe de domínio é a classe base de outras classes de domínio, você pode ocultar a árvore de herança clicando duas vezes a definição de classe de domínio e, em seguida, clicando em **árvore de herança recolher**. Para mostrar a árvore de herança, clique o elemento de definição e, em seguida, clique em **expandir a árvore de herança**.  
   
-### <a name="bring-tree-here"></a>Trazer Árvore Aqui  
+### <a name="bring-tree-here"></a>Bring Tree Here  
  Você pode consolidar o diagrama clicando duas vezes uma classe de domínio do espaço reservado e, em seguida, clicando em **colocar árvore aqui**. A classe de domínio do espaço reservado torna-se um elemento de definição e exibe as árvores de herança e relações. O elemento de definição anterior torna-se um elemento do espaço reservado, se este for o alvo de uma relação ou o filho em uma relação de herança; caso contrário, ele desaparece.  
   
-### <a name="split-tree"></a>Dividir Árvore  
+### <a name="split-tree"></a>Split Tree  
  Você pode separar árvores de herança ou relações clicando duas vezes a definição de classe de domínio que exibe-os e, em seguida, clicando em **divisão árvore**. O elemento de definição torna-se um elemento de espaço reservado e a classe de domínio de definição, juntamente com suas árvores de herança e relações, agora é exibida na parte inferior da partição.  
   
-### <a name="show-as-class"></a>Mostrar Como Classe  
+### <a name="show-as-class"></a>Show As Class  
  Se uma relação de domínio tem relações derivadas ou se ele tiver inserindo ou referência relações com outras relações de domínio, você pode exibir a relação como uma classe clicando duas vezes o relacionamento e, em seguida, clicando em **mostram como a classe** . A relação será exibida com um **propriedades do domínio** do compartimento e mostrará as árvores de herança e relações.  
   
 ## <a name="see-also"></a>Consulte também  

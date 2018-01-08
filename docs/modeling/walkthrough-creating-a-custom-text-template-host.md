@@ -14,11 +14,12 @@ caps.latest.revision: "51"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 40e8529dd439060172ead1ae2f68ac3052345eb4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Instruções passo a passo: criando um host de modelo de texto personalizado
 Um *modelo de texto**host* fornece um ambiente que permite que o *mecanismo de transformação de modelo de texto* para executar. O host é responsável por gerenciar a interação do mecanismo com o sistema de arquivos. O mecanismo ou *processador de diretiva* que precisa de um arquivo ou um assembly pode solicitar um recurso do host. O host pode pesquisar em diretórios e no cache de assembly global para localizar o recurso solicitado. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).  

@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ab25807ffaf62773b6c02f22c548fb5e5c769ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d3717d3bee3665705ce39307b640e02a931cd75f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verifying-and-debugging-sharepoint-code"></a>Verificando e depurando código do SharePoint
   Usando o IntelliTrace e testes de unidade, você pode mais fácil depurar suas soluções do SharePoint e certifique-se de que cada método neles funciona corretamente. Você pode usar esses recursos para projetos do SharePoint no [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] seguindo os mesmos procedimentos para outros tipos de projetos.  

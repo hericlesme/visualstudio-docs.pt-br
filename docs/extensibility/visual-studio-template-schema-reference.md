@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 803a5dd6b6f9153bb6bda6bf2a7a1f82e79d06b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb289f6ca65887433cbdb7dee65333ea31060097
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-template-schema-reference"></a>Referência de esquema do modelo do Visual Studio
 Esta seção contém informações sobre elementos XML em arquivos .vstemplate, que são arquivos que armazenam metadados para modelos de projeto, modelos de item e Kits de Início.  

@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 8a611bd18cb06b712f671d370bfc26d4dc8cf4f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 81c6ab1f043074b4da601dbfe2d3dc52243b00e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules restringem o local e o tamanho de uma forma
 Um *limites regra* é uma classe que define limites sobre o tamanho e o local de uma forma. Ele fornece um método que é chamado repetidamente enquanto um usuário está arrastando uma forma ou cantos ou lados de uma forma.  

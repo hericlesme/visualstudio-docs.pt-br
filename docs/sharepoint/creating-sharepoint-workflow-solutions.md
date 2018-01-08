@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 256eaf2b451f91abdcc90c2beeedb7f689e95db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Criando soluções de fluxo de trabalho do SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fornece ferramentas para ajudá-lo a criar fluxos de trabalho personalizados que gerenciam o ciclo de vida de documentos e itens de lista em um site do SharePoint. Itens fornecidos incluem um designer, um conjunto de controles de atividade e as referências de assembly necessárias. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]também inclui o **Assistente de personalização do SharePoint**, para ajudar a criar e configurar os fluxos de trabalho.  

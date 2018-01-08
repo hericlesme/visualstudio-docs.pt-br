@@ -16,11 +16,12 @@ caps.latest.revision: "55"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 6f55cbcd7e213d228a8b20f89538dfd88d8c2038
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4590652f37c3f1a1bdaf6bd601aee8d01d1a1c98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependência: diretrizes
 Descreve a arquitetura do aplicativo em um nível alto criando *diagramas de dependência* no Visual Studio. Certifique-se de que seu código permaneça consistente com esse design, validando seu código com um diagrama de dependência. Você também pode incluir validação de camada no processo de compilação. Consulte [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=252073).  

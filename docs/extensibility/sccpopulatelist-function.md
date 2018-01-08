@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60f22174ac217a66f860415de898240d41d9a631
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 474bb834d36661c7cd85b98db78c13f619d7cba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccpopulatelist-function"></a>Função SccPopulateList
 Esta função atualiza uma lista de arquivos para um comando de controle de origem em particular e fornece o status de controle de origem em todos os arquivos de determinado.  

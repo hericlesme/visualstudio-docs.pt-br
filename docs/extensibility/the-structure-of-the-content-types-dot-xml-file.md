@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f399cb0c88e044224d554cf8e17cc4d217498e87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>A estrutura do arquivo. XML [Content_types]
 Contém informações sobre os tipos de conteúdo em um pacote do VSIX. O Visual Studio usa o arquivo. XML [Content_Types] para instalar o pacote, mas não instala o arquivo propriamente dito.  

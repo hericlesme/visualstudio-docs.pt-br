@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3db5af044b1e3eb25e68c96a42335082fd3523f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a820bc1a29db10fa5f65f1781c30218c62c2ee08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Como criar um receptor de evento para uma instância da lista específica
   Um receptor de evento de instância de lista responde a eventos que ocorrem em qualquer instância de uma definição de lista. Embora o modelo de receptor de evento não habilitar o direcionamento de uma instância de lista específica, você pode modificar um receptor de evento com escopo em uma definição de lista para responder a eventos em uma instância de lista específica.  

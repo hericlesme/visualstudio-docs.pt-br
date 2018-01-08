@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões compostos para o Visual Studio
 Padrões compostos combinam elementos de design e interação em configurações distintas. Alguns dos mais importantes compostos padrões no Visual Studio em relação a consistência incluem:  
@@ -33,7 +34,7 @@ Padrões compostos combinam elementos de design e interação em configurações
   
 ##  <a name="BKMK_DataVisualization"></a>Visualização de dados  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Os gráficos são uma maneira visual para agregar e visualizar dados para aprimorar a tomada de decisões. Eles podem ajudar os usuários enfrentados muitos dados, mas pouco significando ver o que merece atenção e que pode ser uma ação.  
   
  O usuário se beneficiará de um gráfico se qualquer uma das seguintes condições forem verdadeiras:  
@@ -87,7 +88,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 ##  <a name="BKMK_OnObjectUI"></a>Interface do usuário no objeto e inspecionar  
  Esta seção fornece o contexto para inspecionar, também conhecida como exibição de inspeção de código, um tipo de interface do usuário no objeto exclusivo para o Visual Studio.  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
   
 -   Interface de usuário no objeto deve fornecer ao usuário mais informações ou interatividade sem desviar a atenção de sua tarefa principal.  
   
@@ -252,7 +253,7 @@ Padrões compostos combinam elementos de design e interação em configurações
   
 ##  <a name="BKMK_SelectionModels"></a>Modelos de seleção  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Um modelo de seleção é o mecanismo usado para indicar e confirmar as operações em um ou mais objetos de interesse na interface do usuário. Este tópico discute os padrões de interação de seleção nos editores de documento do Visual Studio: editores de texto, superfícies de design e superfícies de modelagem.  
   
  Os usuários devem ter uma maneira de indicar para o Visual Studio que eles estão trabalhando no, e o Visual Studio deve responder previsível com comentários aos usuários sobre o que está operando em. Diferenças ou um erro de comunicação entre o usuário e a interface do usuário pode resultar no usuário não perceba uma ação, que pode ter consequências não intencionais. Geralmente, o erro passa despercebido até que o usuário vê que algo está faltando ou foi alterada. Modelos de seleção são, portanto, uma das partes mais importantes do design de interface do usuário. Embora os modelos de seleção no Visual Studio são consistentes com o Windows, há pequenas variações.  
@@ -351,7 +352,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 |Ctrl + Alt + sinal de subtração|Diminui o fator de zoom em um nível.|  
 |Ctrl + Alt + sinal de adição|Aumenta o fator de zoom em um nível.|  
 |Ctrl ou SHIFT|Adiciona o objeto para o grupo de seleção. CTRL também permite que você remova objetos individualmente a partir do grupo de seleção.|  
-|Entrar|Executa o comando padrão para o objeto (geralmente abrir ou editar).|  
+|Enter|Executa o comando padrão para o objeto (geralmente abrir ou editar).|  
 |F2|Ativa a edição no local para o objeto.|  
 |Teclas de direção|Move os objetos selecionados na direção da tecla pressionada, em pequenos incrementos (por exemplo, 1 pixel de cada vez)|  
 |CTRL + teclas de direção|Move os objetos selecionados na direção da tecla pressionada, em incrementos maiores (por exemplo, 10 pixels por vez)|  
@@ -476,7 +477,7 @@ Padrões compostos combinam elementos de design e interação em configurações
   
 ##  <a name="BKMK_PersistenceAndSavingSettings"></a>Persistência e salvar as configurações  
   
-### <a name="overview"></a>Visão Geral  
+### <a name="overview"></a>Visão geral  
  Embora cada componente de software no Visual Studio é geralmente responsável por seu próprio estado e persistência, o Visual Studio automaticamente salva as configurações em alguns casos, como com posições e tamanhos de janela. A tabela a seguir é uma combinação de configurações salvas automaticamente e que exigem um usuário explícito ou programada a ação a ser executada.  
   
 |Objeto|O que salvar|Quando salvar|Onde salvar|  

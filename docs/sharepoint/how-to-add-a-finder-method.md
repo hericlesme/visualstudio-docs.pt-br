@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0aa8888456d75554b2270058b844c7f76cb63fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b7594c650c1492b16e784ec649de6e66d1e6ec33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-finder-method"></a>Como adicionar um método Finder
   Para habilitar o serviço de conectividade de dados corporativos exibir uma lista de entidades em uma web part ou lista, você deve criar um *localizador* método. Um método Finder é um método que retorna uma coleção de instâncias de entidade. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  

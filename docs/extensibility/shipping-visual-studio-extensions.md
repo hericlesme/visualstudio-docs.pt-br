@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf74110cf42daa51521cc7ea706c1b951b23deb8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shipping-visual-studio-extensions"></a>Envio de extensões do Visual Studio
 Depois de concluir o desenvolvimento de sua extensão, você pode instalá-lo em outros computadores, compartilhá-lo com seus colegas e amigos ou publicá-lo no Visual Studio Marketplace. Nesta seção, explicaremos tudo o que você precisa fazer para publicar e manter sua extensão: Trabalhando com arquivos .vsix, publicação, localizando e atualizando.  

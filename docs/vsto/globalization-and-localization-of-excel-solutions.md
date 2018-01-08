@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c51065eacda271daeb12c17fdeb5fe4e6b20683
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ac0fc1ca0efe4134889d8bf5ac1d3ca9ae2551ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalização e localização de soluções do Excel
   Esta seção contém informações sobre considerações especiais para soluções do Microsoft Office Excel que serão executadas em computadores que têm configurações diferentes do inglês do Windows. A maioria dos aspectos de globalização e localização de soluções do Microsoft Office são os mesmos encontrados ao criar outros tipos de soluções usando o Visual Studio. Para obter informações gerais, consulte [Globalizing e Localizando aplicativos](/visualstudio/ide/globalizing-and-localizing-applications).  

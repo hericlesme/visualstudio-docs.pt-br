@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 063a569ff047b3febd2608cb3c1e0003f40f7785
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 04257a6ea4bfb3dbe788ba48ee3077b1847b000d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-isolated-shell"></a>Estendendo o Shell isolado
 Você pode estender o shell do Visual Studio isolada adicionando um VSPackage, uma parte do componente Managed Extensibility Framework (MEF) ou um projeto do VSIX genérico para o seu aplicativo de shell isolado.  
@@ -74,7 +75,7 @@ Você pode estender o shell do Visual Studio isolada adicionando um VSPackage, u
   
 #### <a name="to-add-a-mef-component"></a>Para adicionar um componente MEF  
   
-1.  No **adicionar novo projeto** caixa de diálogo **Visual c#**, **extensibilidade**, use o **Editor margem** modelo para adicionar um projeto. Nomeie-o `ShellEditorMargin`.  
+1.  No **adicionar novo projeto** caixa de diálogo **Visual c#**, **extensibilidade**, use o **Editor margem** modelo para adicionar um projeto. Nomeie-o como `ShellEditorMargin`.  
   
 2.  No projeto ShellExtensionsVSIX, abra o arquivo de Source.extension.vsixmanifest no modo de exibição Design, não o modo de exibição de código.  
   
@@ -98,7 +99,7 @@ Você pode estender o shell do Visual Studio isolada adicionando um VSPackage, u
   
 #### <a name="to-add-a-generic-vsix-project"></a>Para adicionar um projeto do VSIX genérico  
   
-1.  No **adicionar novo projeto** caixa de diálogo **Visual C#**, **extensibilidade**, use o **VSIXProject** modelo para adicionar um projeto. Nomeie-o `EmptyVSIX`.  
+1.  No **adicionar novo projeto** caixa de diálogo **Visual C#**, **extensibilidade**, use o **VSIXProject** modelo para adicionar um projeto. Nomeie-o como `EmptyVSIX`.  
   
 2.  No projeto ShellExtensionsVSIX, abra o arquivo de Source.extensions.vsixmanifest no modo de exibição Design, não o modo de exibição de código.  
   

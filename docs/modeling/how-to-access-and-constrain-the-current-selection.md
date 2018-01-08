@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 870a8d1c08a8ca0fa72cabf47c8e1087a39e70f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Como acessar e restringir a seleção atual
 Quando você escreve um manipulador de comando ou gesto para sua linguagem específica de domínio, você pode determinar que o usuário pequeno de elemento. Você também pode impedir algumas formas ou campos sejam selecionadas. Por exemplo, você pode organizar que, quando o usuário clica em um decorador de ícone, de forma que o contém é selecionada em vez disso. Restringir a seleção dessa maneira reduz o número de manipuladores que você precisa escrever. Ele também torna mais fácil para o usuário, que pode clicar em qualquer lugar na forma sem a necessidade de evitar o decorador.  

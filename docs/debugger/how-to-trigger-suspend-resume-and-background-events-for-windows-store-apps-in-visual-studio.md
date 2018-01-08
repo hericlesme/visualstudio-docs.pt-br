@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Como disparar suspender, continuar e eventos em segundo plano durante a depuração de aplicativos UWP no Visual Studio
 Quando você não está depurando, Windows **gerenciamento de vida útil do processo** (PLM) controla o estado de execução do seu aplicativo, iniciando, suspendendo, retomando e encerrando o aplicativo em resposta a ações do usuário e o estado do dispositivo. Quando você está depurando, o Windows desabilita esses eventos de ativação. Este tópico descreve como acionar esses eventos no depurador.  
   
  Este tópico também descreve como depurar **tarefas em segundo plano**. Essas tarefas permitem que você execute certas operações em um processo em segundo plano, mesmo quando o aplicativo não está sendo executado. Você pode usar o depurador para colocar o aplicativo no modo de depuração e depois, sem iniciar a interface de usuário, iniciar e depurar a tarefa em segundo plano.  
   
- Para obter mais informações sobre tarefas de gerenciamento de vida útil de processo e em segundo plano, consulte [iniciando, retomar e multitarefa](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ Para obter mais informações sobre tarefas de gerenciamento de vida útil de processo e em segundo plano, consulte [iniciando, retomar e multitarefa](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_In_this_topic"></a> Neste tópico  
  [Disparar eventos do gerenciamento de tempo de vida do processo](#BKMK_Trigger_Process_Lifecycle_Management_events)  
@@ -124,7 +125,7 @@ Quando você não está depurando, Windows **gerenciamento de vida útil do proc
 4.  Escolha o **diagnóstico** log.  
   
 ## <a name="see-also"></a>Consulte também  
- [Testando aplicativos da UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Testando aplicativos UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Ciclo de vida do aplicativo](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
  [Iniciando, continuar e multitarefa](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

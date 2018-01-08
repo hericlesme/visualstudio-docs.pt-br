@@ -32,11 +32,12 @@ caps.latest.revision: "76"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8d086aec822d0e2e9ecc80834703cc5481f9eef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 106b61c18b9124a72c1b149dcab04e30be5f25f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Visão geral de controles dos Windows Forms em documentos do Office
   Controles de formulários do Windows são objetos que os usuários podem interagir com a inserção ou manipular dados. Em projetos de nível de documento para o Microsoft Office Excel e o Microsoft Office Word, você pode adicionar controles de formulários do Windows para o documento ou a pasta de trabalho em seu projeto em tempo de design ou você pode adicionar programaticamente desses controles em tempo de execução. Você pode programaticamente adicionar esses controles para qualquer documento aberto ou planilha em tempo de execução em um suplemento do VSTO para Excel ou Word.  

@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0ac8ba75920c4b3b8964d473258c162c256139ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 93e4393a7b6731a10a00dc309353dba5870c269f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 A API de imutabilidade do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] visualização e modelagem SDK permite que um programa para bloqueio parte ou todo um modelo de linguagem específica de domínio (DSL) para que ele pode ser lida mas não alterado. Essa opção somente leitura pode ser usada, por exemplo, para que um usuário pode solicitar seus colegas para anotar e analisar um modelo DSL, mas pode não permiti-los alterando o original.  

@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d1aa39880145513049134871a48210a0e1e0b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d2c7dfef925ff61255e57315a3980fa6a145c235
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualizando personalizações da Faixa de Opções nos projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5
   Se o projeto contém uma personalização da faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** item de projeto, você deve fazer as seguintes alterações para o código do projeto, se a estrutura de destino for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou mais tarde.  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
   
  A tabela a seguir lista os eventos de faixa de opções e os delegados que estão associados com eles em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.  
   
-|Evento|Delegado a ser usado em [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|  
+|evento|Delegado a ser usado em [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|  
 |-----------|---------------------------------------------------------------------------------------------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>evento em uma classe gerada da faixa de opções|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ac184805803e92758e1de93400c957d00e8ebda6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b891f2af72de34c2ccd71043f2674c338ddb44f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 No **propriedades** designers, como o designer de variáveis, quando você seleciona, caixas de diálogo ou janela **procurar tipos...**  em uma lista de tipos de dados, é o **procurar e selecionar um tipo .NET** caixa de diálogo (chamada em uma forma abreviada do navegador"tipo"). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.  

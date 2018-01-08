@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Passo a passo: Exibindo a correspondência de chaves
 Você pode implementar recursos de idioma como correspondência definindo as chaves que você deseja corresponder e, em seguida, adicionar uma marca de marcador de texto para correspondência de chaves quando o cursor estiver em uma das chaves de chaves. Você pode definir chaves no contexto de um idioma, você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e aplicar as marcas a apenas esse tipo ou você pode aplicar marcas para um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar a chave de correspondência de marcas para o tipo de conteúdo "texto".  

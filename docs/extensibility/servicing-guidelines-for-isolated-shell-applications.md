@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e15d228794fb03441d42c081f11bf75b11fdd45
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2c5c8bc626f8a6aabe7fbc450067667d301f11c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Diretrizes de serviço para aplicativos do Shell isolado
 Quando você distribui um aplicativo de shell do Visual Studio isolados, você deve ser capaz de fornecer atualizações de software para seu aplicativo após a instalação. Para fazer isso, você deve instalar o aplicativo usando um arquivo do Microsoft Installer (MSI). Esse tipo de instalação permite que as atualizações de software fornecidas pela Microsoft para ser redistribuído por Web baixarem e consumida por seus clientes sem intervenção personalizada.  

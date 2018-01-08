@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b3974c9103a385badc56fda759ee95ef3a40a93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06375b45e21e0b83c62f2509d666b786479ff2b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
 Permite que um VSPackage acessar um comando que é definido em outro arquivo. VSCT. Por exemplo, se seu VSPackage usa o padrão de **cópia** comando, que é definido como o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell, você pode adicionar o comando a um menu ou barra de ferramentas sem implementá-lo novamente.  

@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4909edabd71686948632f390dfeed5f49cb6fca0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 98d7efc90a07de02f255afe1a75d10fef749e88a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-t4-text-transformation"></a>Personalizando transformação de texto T4
 Modelos de texto são um recurso do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que permitem que você gerar o código do programa ou outros arquivos de texto por meio de um processo de transformação. Usando [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], você pode estender o processo de transformação de modelo padrão, personalizando o processador de diretiva de modelo de texto ou o host de modelo de texto.  

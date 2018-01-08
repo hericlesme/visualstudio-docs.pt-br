@@ -21,11 +21,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 27d565a51c026a6e143e18f122039d90627f55ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6250673ae2fa262fbe932aea79e36aeb6b0d0915
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Instruções passo a passo: adicionar receptores de evento de funcionalidade
   Receptores de evento de recurso são métodos que executar quando ocorrer por um dos seguintes eventos relacionados a recursos no SharePoint:  

@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b8f75dd12e0684edd4260e796540523a2c7d08d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b16a2ee34ca757e62a26676386566b94c31ebf74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>Navegando em conexões do SharePoint usando o Gerenciador de Servidores
   Agora você pode procurar conexões locais do SharePoint no **Server Explorer**. Usando essa técnica, você pode navegar por meio dos componentes de um site do SharePoint em seu sistema. Componentes do site do SharePoint, como definições de listas e tipos de conteúdo, aparecem em um nó chamado **conexões do SharePoint** na exibição de árvore de **Server Explorer**. Para exibir **Server Explorer**, na barra de menus, escolha **exibição**, **Server Explorer**. Além de exibir os componentes do site do SharePoint, você pode remover itens, exibir suas propriedades ou atualizar a exibição de árvore usando comandos no menu de atalho.  

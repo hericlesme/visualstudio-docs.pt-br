@@ -18,11 +18,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9da75468ae417bd835b457cdbd5219ef9462df1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 77325f725edcec41d71e5af38572f05e59c86198
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Como remover extensões de código gerenciado de documentos
   Programaticamente, você pode remover o assembly de personalização de um documento ou a pasta de trabalho que faz parte de uma personalização no nível do documento para o Microsoft Office Word ou o Microsoft Office Excel. Os usuários podem, em seguida, abra os documentos e exibir o conteúdo, mas nenhuma interface do usuário personalizada (UI) adicionar aos documentos não aparecerá, e seu código não será executado.  

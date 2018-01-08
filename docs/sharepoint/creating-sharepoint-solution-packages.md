@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe7822382443e6c1e9bc1a77eb0cd64844504172
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-solution-packages"></a>Criando pacotes de soluções do SharePoint
   Usando o Designer de pacote, você pode criar e personalizar pacotes de implantação. Por exemplo, você pode adicionar itens de projeto do SharePoint e recursos, redefina o servidor IIS, definir escopos de ativação de recurso e identificar as dependências de recurso. O designer também gera um manifesto de um arquivo XML que descreve cada pacote.  

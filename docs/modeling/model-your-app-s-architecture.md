@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 672e2ca393d8cd47466f44c1efb34e6648b7ed4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 669720bcffe8f33636147863b89c2a28113911c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-your-app39s-architecture"></a>Modelo de aplicativo &#39; arquitetura
 Para ajudar a garantir que seu sistema de software ou aplicativo atende aos seus usuários necessidades, você pode criar modelos no Visual Studio como parte de sua descrição da estrutura geral e o comportamento do seu aplicativo ou sistema de software. Usando modelos, você também pode descrever padrões que são usados em todo o projeto. Esses modelos de ajudarão-lo a entender a arquitetura existente, discuta as alterações e comunicar sua intenção claramente.  

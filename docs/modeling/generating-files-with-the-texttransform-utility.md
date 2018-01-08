@@ -14,11 +14,12 @@ caps.latest.revision: "41"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1d168695aca3626fa1ba351aef56faf001c5b6ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Gerando arquivos com o utilitário TextTransform
 TextTransform.exe é uma ferramenta de linha de comando que você pode usar para transformar um modelo de texto. Ao chamar TextTransform.exe, você especifica o nome de um arquivo de modelo de texto como um argumento. TextTransform.exe chama o mecanismo de transformação de texto e processa o modelo de texto. TextTransform.exe geralmente é chamado de scripts. No entanto, não é geralmente necessário, porque você pode executar a transformação de texto no Visual Studio ou no processo de compilação.  

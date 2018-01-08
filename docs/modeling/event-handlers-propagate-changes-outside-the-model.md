@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 29c8594b80c55eb000d70f05d35bbf28becb6e26
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 Na visualização e modelagem SDK, você pode definir manipuladores de eventos de armazenamento para propagar alterações aos recursos fora da loja, como modelos em outros repositórios ou outros, arquivos, variáveis de armazenamento não [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensões. Manipuladores de eventos de armazenamento são executados após o término da transação na qual ocorreu o evento de disparo. Elas também são executadas em uma operação de desfazer ou refazer. Portanto, ao contrário das regras de repositório de eventos de armazenamento são mais úteis para atualizar os valores que estão fora da loja. Ao contrário de eventos do .NET, manipuladores de eventos de armazenamento são registrados para escutar em uma classe: você não precisa registrar um manipulador separado para cada instância. Para obter mais informações sobre como escolher entre diferentes maneiras para controlar alterações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).  

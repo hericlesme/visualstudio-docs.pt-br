@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6661ca48321b1a19b5076beceb435e1f0c798ee0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d14e21189b3410c29efd670c58ffc8934bcb18d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-business-data-connectivity-model"></a>Criando um modelo de Conectividade de Dados Corporativos
   Você pode criar um modelo de conectividade de dados de negócios (BDC) ou personalizar um modelo BDC existente usando o Visual Studio. Cada projeto do SharePoint pode conter apenas um modelo. Para obter mais informações, consulte [Integrando dados corporativos no SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  

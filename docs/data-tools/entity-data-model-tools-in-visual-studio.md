@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Ferramentas do Entity Framework no Visual Studio
-Entity Framework é uma tecnologia de mapeamento relacional de objeto que permite que os desenvolvedores de .NET trabalhar com dados relacionais usando objetos específicos do domínio. Elimina a necessidade para a maioria do código de acesso a dados que os desenvolvedores geralmente precisam gravar. Entity Framework é o mapeamento relacional de objeto recomendado (ORM) modelagem tecnologia para novos aplicativos .NET.  
+Entity Framework é uma tecnologia de mapeamento relacional de objeto que permite que os desenvolvedores de .NET trabalhar com dados relacionais usando objetos específicos do domínio. Elimina a necessidade da maioria do código de acesso a dados que os desenvolvedores geralmente precisam gravar. Entity Framework é o mapeamento relacional de objeto recomendado (ORM) modelagem tecnologia para novos aplicativos .NET.  
   
-Ferramentas do Entity Framework são projetadas para ajudá-lo a criar aplicativos Entity Framework (EF). A documentação completa do Entity Framework está aqui: [EF núcleos e 6 EF](https://docs.microsoft.com/ef/).  
+Ferramentas do Entity Framework são projetadas para ajudá-lo a criar aplicativos Entity Framework (EF). A documentação completa do Entity Framework está aqui: [EF núcleos e 6 EF](/ef/).  
   
 Com ferramentas do Entity Framework, você pode criar um *modelo conceitual* de uma já existente do banco de dados e, em seguida, graficamente visualizar e editar o modelo conceitual. Ou então, criar um modelo conceitual graficamente primeiro e, em seguida, gerar um banco de dados que oferece suporte a seu modelo. Em ambos os casos, você pode atualizar automaticamente seu modelo quando subjacente alterações do banco de dados e gerar automaticamente o código da camada de objeto para o seu aplicativo. Geração de banco de dados e geração de código da camada de objeto são personalizáveis.  
   
@@ -48,8 +49,8 @@ As ferramentas geram ou modificar um arquivo. edmx. Esse arquivo. edmx contém i
   
 |Título|Descrição|  
 |-----------|-----------------|  
-|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Descreve como usar [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] ferramentas, que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] fornece para criar aplicativos.|  
-|[Modelo de dados de entidade](/dotnet/framework/data/adonet/entity-data-model)|Fornece links e informações sobre como trabalhar com dados que são usados por aplicativos baseados em [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
+|[Entity Framework do ADO.NET](/dotnet/framework/data/adonet/ef/index)|Descreve como usar [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] ferramentas, que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] fornece para criar aplicativos.|  
+|[Modelo de Dados de Entidade](/dotnet/framework/data/adonet/entity-data-model)|Fornece links e informações sobre como trabalhar com dados que são usados por aplicativos baseados em [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
 |[Documentação do Entity Framework (EF))](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|Fornece um índice de vídeos, tutoriais e documentação avançada para ajudá-lo a tirar o máximo proveito do Entity Framework.|  
 |[ASP.NET 5 aplicativo para o novo banco de dados](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Descreve como criar um novo aplicativo ASP.NET 5 usando o Entity Framework 7.|  
   

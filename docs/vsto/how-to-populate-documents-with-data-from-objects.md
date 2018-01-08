@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 418e56c83a463c10d9dfc990236315751e07c000
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2ecc8e8ce76c2212d9921cc9b15ead7a7b22316e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Como preencher documentos com dados de objetos
   Acessar dados em um objeto de dados funcionam da mesma maneira no nível de documento para o Microsoft Office Word como faz em projetos de formulários do Windows. Use as mesmas ferramentas e código para trazer os dados de um objeto para sua solução, e você pode usar controles de formulários do Windows para exibir os dados. Além disso, você pode exibir dados usando controles de host. Controles de host são objetos nativo no Microsoft Office Word que foram aprimorados com eventos e a capacidade de associação de dados. Para obter mais informações, consulte [itens de Host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md).  
