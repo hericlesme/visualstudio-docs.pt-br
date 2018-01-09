@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: cbb7b09e5c36980ceeedd99f69241996bd25bfa3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 61d58b172c185a908a6314664ccd4cfe2172dc8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Desenvolvendo aplicativos com designers de Fluxo de Trabalho
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] é um designer e um depurador visuais para a compilação e gráficos a depuração de aplicativos de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] em [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] que está hospedada no ambiente de desenvolvimento de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] . Permite que você escreve um aplicativo de fluxo de trabalho, uma biblioteca de atividade, ou um serviço composto de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] com o uso de modelos e os designers de atividade. [!INCLUDE[crabout](../test/includes/crabout_md.md)]fluxos de trabalho, consulte o [Windows Workflow Foundation &#91;. .NET Framework 4 &#93; ](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68eb471f1db42b60114c2a14745ba4771b640c0d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Introdução ao depurador do Visual Studio
 O depurador do Visual Studio é fácil de usar em qualquer idioma. Aqui vamos mostrar como depurar um programa c# simple, mas você pode aplicar as mesmas etapas para o código em outras linguagens, como C++ e JavaScript.
