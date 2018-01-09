@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d417ac531331b62b0f711fe155a94f1ac0954310
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 964ed265f4e2587a1bef4812797987c47d52fa80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>Etapa 2: escrevendo e executando um código
 
@@ -41,14 +42,14 @@ Embora o Gerenciador de Soluções seja o local em que você gerencia arquivos d
     ```
 
 1. Observe a coloração de sintaxe que diferencia a instrução `print` do argumento `"Hello Visual Studio"`. Além disso, exclua temporariamente a última `"` na cadeia de caracteres e observe como o Visual Studio mostrará um sublinhado vermelho para o código que contém erros de sintaxe. Então, substitua o `"` para corrigir o código.
- 
+
     ![Coloração de sintaxe e realce de erros do IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > Como o ambiente de desenvolvimento é uma questão muito pessoal, o Visual Studio oferece controle total sobre a aparência e o comportamento do Visual Studio. Selecione o comando de menu **Ferramentas > Opções** e explore as configurações nas guias **Ambiente** e **Editor de Texto**. Por padrão, você verá somente um número limitado de opções; para ver todas as opções de todas as linguagens de programação, selecione **Mostrar todas as configurações** na parte inferior da caixa de diálogo. 
 
 1. Execute o código que você escreveu até este ponto, pressionando CTRL + F5 ou selecionando o item de menu **Depurar > Iniciar Sem Depuração**. O Visual Studio avisará se ainda houver erros em seu código.
- 
+
 1. Quando você executa o programa, uma janela de console aparece exibindo os resultados, assim como seria se você executasse um interpretador do Python com `PythonApplication1.py`, usando a linha de comando. Pressione uma tecla para fechar a janela e retornar ao editor do Visual Studio.
 
     ![Saída da primeira execução do programa](media/vs-getting-started-python-07-output.png)
@@ -70,8 +71,8 @@ Embora o Gerenciador de Soluções seja o local em que você gerencia arquivos d
 1. Conclua com a importação dos membros `sin`, `cos` e `radians`, observando os preenchimentos automáticos disponíveis para cada um. Quando terminar, o código deverá ser exibido da seguinte maneira:
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
@@ -80,22 +81,20 @@ Embora o Gerenciador de Soluções seja o local em que você gerencia arquivos d
 1. Adicione um pouco mais de código para imprimir os valores de cosseno para 360 graus:
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. Execute o programa novamente com CTRL + F5 ou **Depurar > Iniciar Sem Depuração**. Quando terminar, feche a janela de saída.
-
 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Usando a janela interativa REPL](vs-tutorial-01-03.md)
 
-
 ## <a name="going-deeper"></a>Aprofundando-se
 
-- [Edição de código](code-editing.md)
-- [Código de formatação](code-formatting.md)
+- [Editando código](code-editing.md)
+- [Formatando o código](code-formatting.md)
 - [Código de refatoração](code-refactoring.md)
 - [Usando o PyLint](code-pylint.md)

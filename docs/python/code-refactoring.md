@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-python-code"></a>Refatorando o código do Python
 
@@ -28,6 +29,7 @@ O Visual Studio fornece vários comandos para transformar e limpar o código-fon
 - [Remover importações não utilizadas](#remove-imports) remove importações não utilizadas
 
 <a name="rename-variable"</a>
+
 ## <a name="rename"></a>Renomear
 
 1. Clique com o botão direito do mouse no identificador que você deseja renomear e selecione **Renomear**, coloque o cursor no identificador e selecione o comando de menu **Editar > Refatorar > Renomear...**  (F2).

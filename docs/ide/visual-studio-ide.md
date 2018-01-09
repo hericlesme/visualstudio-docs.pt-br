@@ -1,7 +1,7 @@
 ---
 title: "Visão geral do IDE do Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 10/03/2017
+ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -9,11 +9,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c20e36f91ecd7f5ef03785d42d33010796d105c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 0ffadcf35be9cc12327c6ef9a561cd1149cf281c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-ide-overview"></a>Visão geral do IDE do Visual Studio
 
@@ -35,19 +36,41 @@ Se preferir, basta abrir algum código obtido praticamente de qualquer lugar e c
 
 ### <a name="create-cloud-apps-for-azure"></a>Criar aplicativos na nuvem para o Azure
 
-O Visual Studio oferece um pacote de ferramentas que permite criar aplicativos habilitados para a nuvem com facilidade da plataforma Microsoft Azure. É possível configurar, compilar, depurar, empacotar e implantar aplicativos e serviços no Microsoft Azure diretamente por meio do IDE. Aproveite os serviços do Azure em seus aplicativos usando os Serviços Conectados. Para obter as Ferramentas do Azure para .NET, selecione a carga de trabalho **desenvolvimento do Azure** ao instalar o Visual Studio. Para obter mais informações, consulte [Ferramentas do Visual Studio para o Azure](https://www.visualstudio.com/vs/azure-tools/).
+O Visual Studio oferece um pacote de ferramentas que permite criar aplicativos habilitados para a nuvem com facilidade da plataforma Microsoft Azure. É possível configurar, compilar, depurar, empacotar e implantar aplicativos e serviços no Microsoft Azure diretamente por meio do IDE. Para obter as Ferramentas do Azure para .NET, selecione a carga de trabalho **desenvolvimento do Azure** ao instalar o Visual Studio. Para obter mais informações, consulte [Ferramentas do Visual Studio para o Azure](https://www.visualstudio.com/vs/azure-tools/).
+
+Você pode aproveitar os serviços do Azure em seus aplicativos usando Serviços Conectados como:
+
+- [Serviços Móveis do Azure](http://azure.microsoft.com/documentation/services/mobile-services/)
+
+- [Armazenamento do Azure](http://azure.microsoft.com/documentation/services/storage/)
+
+O [HockeyApp](https://www.visualstudio.com/hockey-app/) ajuda você a distribuir versões beta, coletar relatórios de falha em tempo real e obter comentários de usuários reais. Além disso, você pode integrar as APIs REST do Office 365 ao seu próprio aplicativo para se conectar aos dados armazenados na nuvem. Para obter mais informações, confira [estes exemplos do GitHub](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+
+[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) ajuda a detectar e diagnosticar problemas de qualidade em seus aplicativos e serviços Web. O Application Insights também ajudará a entender o que os usuários realmente fazem com seu aplicativo para que você possa otimizar a experiência do usuário.
 
 ### <a name="create-apps-for-the-web"></a>Criar aplicativos para a Web
 
-A Internet impulsiona nosso mundo moderno e o Visual Studio pode ajudá-lo a escrever aplicativos para ele. É possível criar aplicativos Web usando o ASP.NET, Node.js, Python, JavaScript e TypeScript. O Visual Studio reconhece estruturas Web como Angular, jQuery, Express e muito mais. O ASP.NET Core e o .NET Core são executados nos sistemas operacionais Windows, Mac e Linux. Para obter mais informações, consulte [Ferramentas da Web modernas](https://www.visualstudio.com/vs/modern-web-tooling/).
+A Internet impulsiona nosso mundo moderno e o Visual Studio pode ajudá-lo a escrever aplicativos para ele. É possível criar aplicativos Web usando o ASP.NET, Node.js, Python, JavaScript e TypeScript. O Visual Studio reconhece estruturas Web como Angular, jQuery, Express e muito mais. O ASP.NET Core e o .NET Core são executados nos sistemas operacionais Windows, Mac e Linux. O [ASP.NET Core](http://www.asp.net/core/overview) é uma atualização importante para MVC, WebAPI e SignalR e é executado no Windows, no Mac e no Linux.  O ASP.NET Core foi projetado desde o princípio para fornecer a você uma pilha .NET enxuta e combinável para compilar serviços e aplicativos Web modernos baseados em nuvem.
 
-### <a name="write-code-in-a-world-class-editing-environment"></a>Escrever um código em um ambiente de edição da mais alta qualidade
+Para obter mais informações, consulte [Ferramentas da Web modernas](https://www.visualstudio.com/vs/modern-web-tooling/).
 
-O Visual Studio ajuda você a escrever um código de forma rápida e fácil por meio de recursos, como coloração de sintaxe, preenchimento de declaração, IntelliSense (descrições pop-up do elemento de código selecionado), estrutura de tópicos do código, configuração de pontos de interrupção para depuração e muito mais.
+### <a name="build-cross-platform-apps-and-games"></a>Criar jogos e aplicativos de plataforma cruzada
 
-![Exemplo de código JavaScript](../ide/media/vside_tour_javascript_example.gif)
+É possível usar o Visual Studio para criar aplicativos e jogos para o Android, iOS, Linux, Windows e outros dispositivos. Saiba mais sobre isso em [Cross-Platform Mobile Development](../cross-platform/cross-platform-mobile-development-in-visual-studio.md) (Desenvolvimento Móvel Multiplataforma). Os Aplicativos Universais do Windows ajudam você a aproveitar o código em várias plataformas. Consulte [Aplicativos Universais do Windows](https://dev.windows.com/en-us/windows-apps) para obter mais informações.
 
-Para saber mais, consulte [Escrevendo código no editor de código e de texto](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
+Escolha as ferramentas necessárias com base nos requisitos dos aplicativos e na linguagem que deseja usar:
+
+- [Xamarin para Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): uma base de código comum em C# para todos os dispositivos.
+
+- [Ferramentas do Visual Studio para Apache Cordova](../cross-platform/visual-studio-tools-for-apache-cordova.md): uma base de código comum para HTML, CSS e JavaScript ou Typescript.
+
+- [Ferramentas do Visual Studio para Unity](../cross-platform/visual-studio-tools-for-unity.md): desenvolvimento de jogos 2D/3D em C#.
+
+- [C++ para desenvolvimento multiplataforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md): aplicativos e bibliotecas de códigos compartilhados em C++.
+
+- [Emulador do Visual Studio para Android](../cross-platform/visual-studio-emulator-for-android.md): depure e teste aplicativos Android, independentemente do IDE.
+
+[Crie jogos usando o Visual Studio](https://www.visualstudio.com/vs/game-development/) com ferramentas de desenvolvimento de jogos como DirectX, Unity, Unreal, Cocos e muito mais.
 
 O Visual Studio pode fazer ajudar você a fazer muito mais coisas. Para obter uma lista mais completa, consulte [IDE do Visual Studio](https://www.visualstudio.com/vs/).
 
@@ -153,7 +176,7 @@ Para fornecer uma visão geral visual de alto nível do Visual Studio, a imagem 
 
 - A janela [Saída](../ide/reference/output-window.md) é onde o Visual Studio envia suas notificações, como mensagens de erro e de depuração, avisos do compilador, mensagens de status de publicação e mais. Cada fonte de mensagem tem uma guia própria.
 
-- O [Team Explorer](/vsts/user-guide/work-team-explorer) permite acompanhar itens de trabalho e compartilhar código com outras pessoas usando tecnologias de controle de versão como [Git](https://git-scm.com/) e [TFVC (Controle de Versão do Team Foundation)] (/vsts/tfvc/overview).
+- O [Team Explorer (VSTS)](/vsts/user-guide/work-team-explorer) permite que você controle itens de trabalho e compartilhe código com outras pessoas usando tecnologias de controle de versão como [Git](https://git-scm.com/) e [TFVC (Controle de Versão do Team Foundation)](/vsts/tfvc/overview).
 
 - O [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) permite exibir e gerenciar seus recursos do Azure, como máquinas virtuais, tabelas, bancos de dados SQL e muito mais. Se uma determinada operação requer o portal do Azure, o Cloud Explorer fornece links que levam você até o local no portal do Azure que você precisa ir.
 
@@ -199,7 +222,7 @@ Veja a seguir algumas outras funcionalidades de produtividade comuns do Visual S
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gerenciar seu código-fonte e colaborar com outros
 
-É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Se preferir, use o [VSTS (Visual Studio Team Services)](/vsts/index) para gerenciar o código junto com bugs e itens de trabalho de todo o projeto. Consulte [Introdução aos Serviços de Equipe e Git](/vsts/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios Git no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos Recursos do Git no Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Se preferir, use o [VSTS (Visual Studio Team Services)](/vsts/index) para gerenciar o código junto com bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao Git e VSTS (Team Services)](/vsts/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios Git no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos Recursos do Git no Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 O Visual Studio Team Services é um serviço baseado em nuvem para hospedar projetos de software e permitir a colaboração em equipes. O VSTS oferece suporte a sistemas Git e Team Foundation Source Control, bem como as metodologias de desenvolvimento Agile, CMMI e Scrum. O TFVC (Controle de Versão do Team Foundation) usa um repositório de servidor único e centralizado para arquivos de versão e de controle. É sempre feito check-in das alterações locais no servidor central em que outros desenvolvedores podem obter as alterações mais recentes.
 
@@ -211,7 +234,7 @@ A seguinte imagem mostra a janela do Team Explorer em uma solução que é hospe
 
 ![Team Explorer para Visual Studio](../ide/media/vs2017_teamexplorer.png)
 
-Para ver a documentação sobre o Visual Studio Team Services e o Team Foundation Server, consulte [Visual Studio Team Services](/vsts/index).
+Também é possível automatizar o processo de build para compilar o código que os desenvolvedores de sua equipe fizeram check-in no controle de versão. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito. Confira [Continuous integration on any platform](https://www.visualstudio.com/en-us/docs/build/overview) (Integração contínua em qualquer plataforma) para obter mais informações.
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Conectar a serviços, bancos de dados e recursos baseados em nuvem
 
@@ -234,8 +257,13 @@ O **Pesquisador de Objetos do SQL Server** no Visual Studio fornece uma exibiç�
 ![Pesquisador de Objetos do SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Estenda o Visual Studio
+Se o Visual Studio não tiver a funcionalidade exata de que você precisa, será possível adicioná-la! É possível personalizar o IDE de acordo com o estilo e fluxo de trabalho, adicionar suporte para ferramentas externas que ainda não estão integradas ao Visual Studio e modificar a funcionalidade existente para aumentar a produtividade. Para encontrar a versão mais recente das Ferramentas de Extensibilidade do Visual Studio (SDK do VS), confira [Visual Studio SDK](../extensibility/visual-studio-sdk.md) (SDK do Visual Studio).
 
-Se o Visual Studio não tiver a funcionalidade exata de que você precisa, será possível adicioná-la! É possível personalizar o IDE de acordo com o estilo e fluxo de trabalho, adicionar suporte para ferramentas externas que ainda não estão integradas ao Visual Studio e modificar a funcionalidade existente para aumentar a produtividade. O Visual Studio fornece ferramentas, controles e modelos da Microsoft, de nossos parceiros e da comunidade. Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do Visual Studio](https://www.visualstudio.com/vs/extend/).
+Você pode usar o Plataforma de Compilador .NET (Roslyn) para escrever seus próprios analisadores e geradores de código. Encontre tudo o que você precisa em [Roslyn](https://github.com/dotnet/Roslyn).
+
+Encontre [extensões existentes](https://marketplace.visualstudio.com/vs) para o Visual Studio criadas pelos desenvolvedores da Microsoft, bem como pela nossa comunidade de desenvolvimento.
+
+Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do Visual Studio](https://www.visualstudio.com/vs/extend/).
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Saiba mais e descubra as novidades
 

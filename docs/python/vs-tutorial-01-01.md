@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d6c5cd4395ea0251027edbc94019637b72a630a8
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Trabalhando com o Python no Visual Studio
 
@@ -44,20 +45,20 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 
 1. No Visual Studio, selecione **Arquivo > Novo > Projeto** (CTRL+SHIFT+N), que abrirá a caixa de diálogo **Novo Projeto**. Aqui você pode procurar modelos em diversas linguagens, selecionar um para o seu projeto e especificar o local em que o Visual Studio colocará os arquivos.
 
-1. Para exibir modelos do Python, selecione **Modelos > Outras Linguagens > Python** à esquerda ou pesquise por "Python". O uso da pesquisa é uma ótima maneira de localizar um modelo quando você não se lembra da localização na árvore de linguagens.
+1. Para exibir modelos do Python, selecione **Instalado > Python** à esquerda ou pesquise por “Python”. O uso da pesquisa é uma ótima maneira de localizar um modelo quando você não se lembra da localização na árvore de linguagens.
 
     ![Nova caixa de diálogo mostrando os projetos do Python](media/vs-getting-started-python-01-new-project.png)
 
-1. Observe como o suporte do Python no Visual Studio inclui uma variedade de modelos de projeto, incluindo aplicativos Web usando as estruturas Bottle, Flask e Django. No entanto, para as finalidades deste passo a passo, vamos começar com um projeto vazio. 
+    Observe como o suporte do Python no Visual Studio inclui uma variedade de modelos de projeto, incluindo aplicativos Web usando as estruturas Bottle, Flask e Django. No entanto, para as finalidades deste passo a passo, vamos começar com um projeto vazio.
 
 1. Selecione o modelo **Aplicativo Python**, especifique um nome para o projeto e selecione **OK**. 
 
 1. Após alguns instantes, o Visual Studio mostrará a estrutura do projeto na janela **Gerenciador de Soluções** (1). O arquivo de código padrão será aberto no editor (2). A janela Propriedades (3) também será exibida para mostrar informações adicionais sobre qualquer item selecionado no Gerenciador de Soluções, incluindo sua localização exata no disco.
- 
+
     ![Gerenciador de Soluções com um projeto do Python](media/vs-getting-started-python-02-windows.png)
- 
+
 1. Gaste alguns minutos para se familiarizar com o Gerenciador de Soluções, que é o local em que você poderá procurar arquivos e pastas em seu projeto.
-    
+
     ![Gerenciador de Soluções expandido para mostrar vários recursos](media/vs-getting-started-python-03-solution-explorer.png)
 
     (1) O seu projeto está realçado em negrito, usando o nome que você forneceu na caixa de diálogo Novo Projeto. No disco, este projeto é representado por um arquivo `.pyproj` na pasta do projeto.
@@ -69,7 +70,7 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
     (4) Também no projeto está o nó **Ambientes do Python**. Quando expandido, você verá os interpretadores de Python disponíveis para você. Expanda um nó de interpretador para ver as bibliotecas que estão instaladas naquele ambiente (5).
 
     Clique com o botão direito do mouse em qualquer nó ou item no Gerenciador de Soluções para acessar um menu de comandos aplicáveis. Por exemplo, o comando **Renomear** permite que você altere o nome de qualquer nó ou item, incluindo o projeto e a solução.
-    
+
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]

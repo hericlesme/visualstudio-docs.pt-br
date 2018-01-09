@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: multiple
+ms.openlocfilehash: 5b6d7f0dc43ca11b6fee4b97d5422b863a7b89f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Convenções de nomenclatura para EditorConfig
 
@@ -43,7 +44,7 @@ Para descrever o tipo de símbolos aos quais aplicar a regra de nomenclatura, es
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-Os valores permitidos estão listados abaixo e é possível especificar vários valores separando-os por vírgula.
+A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
 - \* (use este valor para especificar todos os símbolos)
 - classe
@@ -63,7 +64,7 @@ Para descrever os níveis de acessibilidade dos símbolos aos quais você deseja
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-Os valores permitidos estão listados abaixo e é possível especificar vários valores separando-os por vírgula.
+A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
 - \* (use este valor para especificar todos os níveis de acessibilidade)
 - públicos
@@ -81,16 +82,15 @@ Para descrever os modificadores dos símbolos aos quais você deseja aplicar a r
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Os valores permitidos estão listados abaixo e é possível especificar vários valores separando-os por vírgula.
+A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
-- \* (use este valor para especificar todos os modificadores)
 - abstract ou must_inherit
 - async
 - const
 - readonly
 - estático ou compartilhado
 
-Se você omitir esta propriedade, a regra de nomenclatura será aplicada a todos os modificadores.
+`required_modifiers` é uma propriedade opcional. Se você omitir esta propriedade, a regra de nomenclatura será aplicada a todos os modificadores.
 
 ## <a name="style"></a>Estilo
 
@@ -155,7 +155,7 @@ erro | Quando esse estilo não estiver sendo seguido, mostre um erro do compilad
 
 ## <a name="example"></a>Exemplo
 
-Abaixo há um arquivo .editorconfig de exemplo que contém uma convenção de nomenclatura que especifica que propriedades públicas, métodos, campos, eventos e delegados devem sempre ser escritos com maiúsculas. Observe que esta convenção de nomenclatura especifica vários tipos de símbolo aos quais aplicar a regra, usando uma vírgula para separar os valores.
+O arquivo .editorconfig a seguir contém uma convenção de nomenclatura que especifica que propriedades públicas, métodos, campos, eventos e delegados devem sempre ser escritos com maiúsculas. Observe que esta convenção de nomenclatura especifica vários tipos de símbolo aos quais aplicar a regra, usando uma vírgula para separar os valores.
 
 ```
 # Public members must be capitalized (public_members_must_be_capitalized)

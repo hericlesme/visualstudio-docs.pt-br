@@ -1,5 +1,5 @@
 ---
-title: "IntelliSense para código R Visual Studio | Microsoft Docs"
+title: "IntelliSense para código R no Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,28 +12,29 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 160b39690cf2c1ebf933fb7a17f5d5b17b4d422a
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: a54ebc3abb5f63e2503f48e050e5b9d3e3546abb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense"></a>IntelliSense
 
 O Visual Studio IntelliSense exibe informações sobre funções que você pode chamar, membros dos objetos, argumentos de função e [trechos de código](code-snippets.md) diretamente em sua exibição ao escrever código. Ele também exibe preenchimentos possíveis enquanto você digita e termina quando você pressiona as teclas Tab ou Enter (consulte [opções do editor](code-editing.md#editor-options) da guia **Avançado**). O IntelliSense está disponível no editor e na [janela interativa](interactive-repl.md).
 
-![IntelliSense mostrando uma assinatura de função](media/intellisense-function-signature.png) 
+![IntelliSense mostrando uma assinatura de função](media/intellisense-function-signature.png)
 
 Ao digitar uma função ou outra instrução, o IntelliSense fornece um menu de preenchimento automático filtrado (diferenciando maiúsculas de minúsculas ), de acordo com o que você já inseriu:
 
 ![Menu de preenchimento automático do IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Pressionar Tab (ou Enter ou Espaço, dependendo de como as opções são definidas), insere o item selecionado na lista suspensa. Você pode alterar a seleção com as teclas de direção. 
+Pressionar Tab (ou Enter ou Espaço, dependendo de como as opções são definidas), insere o item selecionado na lista suspensa. Você pode alterar a seleção com as teclas de direção.
 
 O IntelliSense também oferece sugestões para membros dos objetos R:
- 
+
 ![Sugestões do IntelliSense para membros do objeto](media/intellisense-auto-complete-r-objects.png)
- 
+
 Pressionar ESC descarta o menu completamente. Você pode ativá-lo novamente com Ctrl + Espaço.
 
 Digitar o `(` de abertura para uma chamada de função insere o `)` de fechamento e abre a Ajuda de assinatura conforme mostrado anteriormente:

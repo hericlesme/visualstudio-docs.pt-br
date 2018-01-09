@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 170d4dd3aeb5dfb2d05f8f640c653790ccab0a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-r-interactive-window"></a>Trabalhando com a janela R Interativo
 
@@ -33,7 +34,7 @@ Para experimentar esses recursos, siga o passo a passo de [Introdução ao R](ge
 
 Os [Trechos de código](code-snippets.md) também funcionam na janela interativa como nas janelas do editor de R.
 
-## <a name="overview-of-the-interactive-window"></a>Visão geral da janela interativa
+## <a name="overview-of-the-interactive-window"></a>Visão geral da Janela Interativa
 
 Digitar um código R válido e pressionar Enter no final da linha executa o código nessa linha:
 
@@ -75,7 +76,6 @@ Os comandos da barra de ferramentas são os mostrados a seguir. A maioria deles 
 | ![Botão Definir diretório de trabalho para o local do projeto](media/repl-toolbar-11-set-working-directory-to-project.png) | Definir diretório de trabalho para o local do projeto | Ctrl+Shift+P | Define o diretório de trabalho para a raiz do projeto carregado atualmente no Visual Studio. Consulte [Diretório de trabalho](#working-directory). |
 | (Campo de texto) | Selecionar Diretório de Trabalho | N/D | Campo de entrada direta para o diretório de trabalho. Consulte [Diretório de trabalho](#working-directory). |
 
-
 ## <a name="workspaces-and-sessions"></a>Espaços de trabalho e sessões
 
 Executar o código na janela interativa cria um contexto em sua sessão atual. O contexto é composto de variáveis globais, definições de função, cargas de biblioteca e assim por diante. Esse contexto é chamado coletivamente de *espaço de trabalho* e você pode salvar e carregar espaços de trabalho a qualquer momento. 
@@ -88,12 +88,10 @@ Para recarregar um espaço de trabalho salvo anteriormente, selecione o botão *
 
 O botão **Redefinir** ou **Ferramentas do R > Sessão > Redefinir** limpa o contexto da sessão. Se você estiver usando uma sessão remota, a redefinição também excluirá o perfil do usuário no computador remoto para limpar todos os arquivos armazenados ali. (Consulte [Espaços de trabalho](workspaces.md#directories-on-local-and-remote-computers).)
 
-
 ## <a name="working-directory"></a>Diretório de trabalho
 
 Normalmente, os desenvolvedores desejam alterar seu diretório de trabalho enquanto estão em uma sessão interativa. Vários comandos, disponíveis na barra de ferramentas, no menu **Ferramentas do R > Diretório de trabalho** e no menu de contexto do projeto, permitem que você configure facilmente um diretório de trabalho para o local de um arquivo de origem, o local do projeto ou qualquer outro local. Isso ajuda a evitar a digitação de nomes de caminho completos ou de nomes de caminho relativos longos ao fazer referência a arquivos.
 
- 
 ## <a name="history"></a>Histórico
 
 Cada linha que você insere na janela interativa, incluindo as linhas enviadas de um editor, são mantidas no histórico da REPL. Você pode navegar pelo histórico com as teclas de seta Para Cima e Para Baixo, como provavelmente já está acostumado na linha de comando.

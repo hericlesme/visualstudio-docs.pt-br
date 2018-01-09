@@ -1,29 +1,18 @@
 ---
-title: "Introdução ao Visual C# e ao Visual Basic usando o Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-helpviewer_keywords:
-- C# tutorial
-- Visual Basic tutorial
-- learn VB
-- VB tutorial
-- learn C#
-- learn Visual Basic
-ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: "13"
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/quickstart-visual-basic-console
+ms.openlocfilehash: 584510fdc81abd52be390759beef0ac5d412700e
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
+---
+title: "Introdução ao Visual C# e Visual Basic usando o Visual Studio | Microsoft Docs" ms.custom: "" ms.date: "04/11/2016" ms.reviewer: "" ms.suite: "" ms.technology: "vs-acquisition" ms.tgt_pltfrm: "" ms.topic: "get-started-article" helpviewer_keywords: 
+  - "tutorial de C#"
+  - “tutorial de Visual Basic”
+  - “aprenda VB”
+  - “tutorial de VB”
+  - "aprenda C#"
+  - "aprenda Visual Basic" author: "TerryGLee" ms.author: "tglee" manager: ghogen
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Introdução ao Visual C# e ao Visual Basic usando o Visual Studio
 Se você não tem experiência no Visual C# ou no Microsoft Visual Basic, este é o lugar para começar. A Ajuda da Introdução é uma série de lições sequenciais que apresenta você ao Visual C# e ao Visual Basic. Divirta-se criando alguns softwares excelentes.  

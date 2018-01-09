@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d36f49a9b2865c89bd1551ded0d23cf541ff7840
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 74978a3ef43a1e98202d32ed418008071c8794be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-up-remote-workspaces"></a>Configurando espaços de trabalho remotos
 
@@ -105,8 +106,8 @@ O pacote `rtvs-daemon` instalará um certificado autoassinado por padrão como p
 Para benefícios e riscos de usar um certificado autoassinado, consulte a descrição do Windows. O pacote `rtvs-daemon` gera e configura o certificado autoassinado durante a instalação. Você precisará fazer isso apenas se quiser substituir o certificado autoassinado gerado automaticamente.
 
 Para emitir um certificado autoassinado por conta própria:
-1. SSH ou faça logon em seu computador Linux.
 
+1. SSH ou faça logon em seu computador Linux.
 1. Instale o pacote `ssl-cert`:
     ```sh
     sudo apt-get install ssl-cert

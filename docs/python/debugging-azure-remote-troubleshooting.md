@@ -12,13 +12,16 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6dc28135245cae755189174b18000b5c06537b6d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 4d64338d619cbff77333e6518569d5e3b8376e36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Solução de problemas da depuração remota para o Python e o Azure
+# <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>Solução de problemas da depuração remota para o Python e o Azure
 
 O Visual Studio não consegue se anexar a um [Serviço de Aplicativo do Azure para depuração remota](debugging-azure-remote.md) por um dos seguintes motivos:
 
@@ -33,4 +36,4 @@ O Visual Studio não consegue se anexar a um [Serviço de Aplicativo do Azure pa
 
 Confira também: 
 
-- [Depuração remota do Azure para o Python](debugging-azure-remote.md)
+- [Depuração remota do Azure para Python](debugging-azure-remote.md)

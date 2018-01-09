@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF
 Este passo a passo fornece uma introdução ao desenvolvimento no WPF (Windows Presentation Foundation). Você vai criar um aplicativo básico que inclui elementos comuns à maioria dos aplicativos de área de trabalho do WPF: marcação de XAML, code-behind, definições de aplicativo, controles, layout, vinculação de dados e estilos.  
@@ -268,7 +269,7 @@ Nesta seção, você criará a infraestrutura do aplicativo, que inclui o projet
   
 1.  Escolha a imagem a seguir e salve-a como `watermark.png`.  
   
-     ![Imagem de marca-d'água para instruções passo a passo](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Imagem de marca-d'água para instruções passo a passo](../designers/media/wpf_watermark.png "watermark")  
   
     > [!NOTE]
     >  Como alternativa, você pode criar sua própria imagem e salvá-la como `watermark.png`.  

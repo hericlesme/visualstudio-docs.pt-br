@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e5162a9da6fcafaaf27691081d9782191efb551
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c51f7217942f755eee45c4901cf0f8eecdbac605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="draw-shapes-and-paths"></a>Desenhe as formas e demarcadores
 No Designer XAML, uma *forma* é exatamente o que se espera que seja. Por exemplo: um retângulo, um círculo ou uma elipse. Um *caminho* é uma versão mais flexível de uma forma. É possível reformatar ou combiná-los para obter novas formas.  
@@ -54,7 +55,7 @@ No Designer XAML, uma *forma* é exatamente o que se espera que seja. Por exempl
  ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")  
   
 ### <a name="draw-a-straight-line"></a>Desenhar uma linha reta  
- Use a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")ou a ferramenta **Linha** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").  
+ Use a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") ou a ferramenta **Linha** ![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").  
   
  **Usando a ferramenta Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")  
   
@@ -72,7 +73,7 @@ No Designer XAML, uma *forma* é exatamente o que se espera que seja. Por exempl
  Se desejar fechar o caminho, clique no primeiro ponto da linha.  
   
 ### <a name="change-the-shape-of-a-curve"></a>Alterar a forma de uma curva  
- Use a ferramenta **Seleção Direta** ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362").  
+ Use a ferramenta **Seleção direta** ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362").  
   
  Clique na forma e, em seguida, arraste qualquer ponto na forma de alterar formas curvadas.  
   
@@ -82,19 +83,19 @@ No Designer XAML, uma *forma* é exatamente o que se espera que seja. Por exempl
  Na prancheta, desenhe um caminho de forma livre, assim como com um lápis real.  
   
 ### <a name="remove-part-of-a-path"></a>Remover parte de um caminho  
- Use a ferramenta **Seleção Direta** ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362").  
+ Use a ferramenta **Seleção direta** ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362").  
   
  Selecione o caminho que contém o segmento que deseja excluir e, em seguida, clique no botão **Excluir**.  
   
 ### <a name="remove-a-point-in-a-path"></a>Remover um ponto em um caminho  
  Use a ferramenta **Seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") e a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").  
   
- Use a ferramenta **Seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Em seguida, use a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar no ponto em que deseja remover.  
+ Use a ferramenta **Seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Em seguida, use a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar no ponto que você deseja remover.  
   
 ### <a name="add-a-point-to-a-path"></a>Adicionar um ponto a um caminho  
  Use a ferramenta **Seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") e a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").  
   
- Use a ferramenta **Seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Use a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar em qualquer local do caminho em que deseja adicionar o ponto.  
+ Use a ferramenta **Seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Use a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar em qualquer local do caminho em que você deseja adicionar o ponto.  
   
 ##  <a name="Convert"></a> Converter uma forma em um caminho  
  Para modificar uma forma da mesma maneira que um caminho, converta a forma em um caminho.  

@@ -22,18 +22,19 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2c44751b9a4eb60ddc6124311bd75592777d4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface de usuário (HTML)
 Este passo a passo o orienta no processo de identificação e correção de um problema de desempenho usando o [Criador de perfil de capacidade de resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md). O criador de perfil está disponível no Visual Studio para os aplicativos UWP que usam o JavaScript. Neste cenário, você cria um aplicativo de teste de desempenho que atualiza os elementos DOM com muita frequência e usa o criador de perfil para identificar e corrigir esse problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Criando e executando o aplicativo de teste de desempenho  
   
-1.  No Visual Studio, crie um novo projeto de JavaScript universal do Windows. (Selecione **Arquivo/Novo/Projeto**. Escolha **JavaScript** no painel esquerdo e depois escolha **Windows**, **Windows 10**, em seguida, **Universal** ou **Windows Phone**.  
+1.  No Visual Studio, crie um novo projeto de JavaScript universal do Windows. (Selecione **Arquivo > Novo > Projeto**. Escolha **JavaScript** no painel esquerdo e depois escolha **Windows**, **Windows 10**, em seguida, **Universal** ou **Windows Phone**.  
   
 2.  > [!IMPORTANT]
     >  Os resultados do diagnóstico mostrados neste tópico são mostrados para um aplicativo do Windows 8.  

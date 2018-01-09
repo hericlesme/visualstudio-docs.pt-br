@@ -7,19 +7,19 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9242bf08b879e415af658696b2be75a55dc5075
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 5315dd07ab0c791cc9a349c08431ceb4a9b5c797
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="managing-project-and-solution-properties"></a>Gerenciando propriedades de solução e projeto
+# <a name="managing-project-and-solution-properties"></a>Gerenciando propriedades do projeto e da solução
 
-Projetos têm propriedades que controlam muitos aspectos da compilação, da depuração, do teste e da implantação. Algumas propriedades são comuns entre todos os tipos de projeto, e algumas são exclusivas de linguagens ou plataformas específicas. Acesse propriedades do projeto clicando com o botão direito do mouse no nó do projeto no Gerenciador de Soluções e escolhendo **Propriedades** ou digitando as propriedades na caixa de pesquisa **Início Rápido** na barra de menus.
+Projetos têm propriedades que controlam muitos aspectos da compilação, da depuração, do teste e da implantação. Algumas propriedades são comuns entre todos os tipos de projeto, e algumas são exclusivas de linguagens ou plataformas específicas. Acesse propriedades do projeto clicando com o botão direito do mouse no nó do projeto no Gerenciador de Soluções e escolhendo **Propriedades** ou digitando “propriedades” na caixa de pesquisa **Início Rápido** na barra de menus.
 
 ![Menu de contexto do projeto](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
 
@@ -27,12 +27,9 @@ Os projetos do .NET também podem ter um nó de propriedades na árvore do proje
 
 ![Nó de propriedades na árvore do Gerenciador de Soluções](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
 
-> [!TIP]
-> As soluções têm algumas propriedades, bem como os itens de projeto; essas propriedades são acessadas na [Janela Propriedades](../ide/reference/properties-window.md), não no **Designer de Projeto**.
+## <a name="project-properties"></a>Propriedades de projeto
 
-## <a name="project-properties"></a>Propriedades do projeto
-
-Propriedades do Projeto são organizadas em grupos, cada grupo tem sua própria página de propriedades, e as páginas podem ser diferentes para diferentes linguagens e tipos de projeto.
+As propriedades do projeto são organizadas em grupos e cada grupo tem sua própria página de propriedades. As páginas podem ser diferentes para idiomas e tipos de projeto distintos.
 
 ### <a name="c-visual-basic-and-f-projects"></a>Projetos em C#, Visual Basic e F#
 
@@ -41,6 +38,9 @@ Nos projetos em C#, Visual Basic e F#, as propriedades são expostas no **Design
 ![Designer de Projeto do Visual Studio](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
 
 Para obter informações sobre cada uma das páginas de propriedades no Designer de Projeto, consulte [Referência de Propriedades de Projeto](../ide/reference/project-properties-reference.md).
+
+> [!TIP]
+> As soluções têm algumas propriedades, bem como os itens de projeto; essas propriedades são acessadas na [Janela Propriedades](../ide/reference/properties-window.md), não no **Designer de Projeto**.
 
 ### <a name="c-and-javascript-projects"></a>Projetos em C++ e JavaScript
 

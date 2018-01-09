@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dbb4c3d0a2d9077572a80c43d9d49d9c7e898dce
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 032c6489463aaaee59b39423506f18bda82fb414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-pylint-to-check-python-code"></a>Usando o PyLint para verificar o código do Python
 
@@ -39,7 +40,7 @@ Clicar duas vezes em um erro leva você diretamente para o código-fonte que ger
 
 ## <a name="setting-pylint-command-line-options"></a>Configurando opções de linha de comando do PyLint
 
-A seção [opções de linha de comando](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) da documentação do PyLint descreve como controlar o comportamento do PyLint por meio de um arquivo de configuração `.pylintrc`. Um arquivo desse tipo pode ser colocado na raiz de um projeto do Python no Visual Studio ou em outro lugar, dependendo da abrangência desejada da aplicação das configurações.
+A seção [opções de linha de comando](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) da documentação do PyLint descreve como controlar o comportamento do PyLint por meio de um arquivo de configuração `.pylintrc`. Um arquivo desse tipo pode ser colocado na raiz de um projeto do Python no Visual Studio ou em outro lugar, dependendo da abrangência desejada da aplicação das configurações (consulte a [opções de linha de comando](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options) para ver mais detalhes).
 
 Por exemplo, para suprimir os avisos “docstring ausente” mostrados na imagem anterior com um arquivo `.pylintrc` em um projeto, execute as etapas:
 
@@ -54,3 +55,9 @@ Por exemplo, para suprimir os avisos “docstring ausente” mostrados na imagem
 1. Abra o arquivo para edição, que contém uma variedade de configurações com as quais você pode trabalhar. Para desabilitar um aviso, localize a seção `[MESSAGES CONTROL]` e, em seguida, localize a configuração `disable` nessa seção. Há uma longa cadeia de mensagens específicas, à qual é possível acrescentar os avisos desejados. Neste exemplo, acrescente `,missing-docstring` (incluindo a vírgula delimitadora).
 
 1. Salve o arquivo `.pylintrc` e execute o PyLint novamente para ver se agora os avisos estão suprimidos.
+
+> [!Tip]
+> Para usar um `.pylintrc` de arquivos de um compartilhamento de rede, crie uma variável de ambiente denominada `PYLINTRC` com o valor do nome de arquivo no compartilhamento de rede usando um caminho UNC ou uma letra da unidade mapeada. Por exemplo:
+> ```
+> PYLINTRC=\\myshare\python\.pylintrc
+> ```

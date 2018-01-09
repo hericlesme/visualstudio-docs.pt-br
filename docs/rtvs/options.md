@@ -1,5 +1,5 @@
 ---
-title: "Opções das Ferramentas do R no Visual Studio | Microsoft Docs"
+title: "Opções de Ferramentas do R no Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
@@ -17,13 +17,18 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dd21ba3c54ed274f181c036ed0121d8d3c5a180e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: data-science
+ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opções das Ferramentas do R para Visual Studio
+
+As configurações são acessadas por meio do menu **Ferramentas do R > Opções** ou de **Ferramentas > Opções** e rolando até **Ferramentas do R**:
+
+  ![Caixa de diálogo de opções para Ferramentas de R](media/options-dialog.png)
 
 Opções e configurações específicas para o R são acessadas usando os métodos abaixo. É necessário selecionar a caixa **Mostrar todas as configurações** na parte inferior da caixa de diálogo **Opções** para que todas essas seções sejam exibidas.
 

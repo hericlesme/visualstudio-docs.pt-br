@@ -1,5 +1,5 @@
 ---
-title: "Modelo de Projeto do Serviço de Nuvem do Azure para o Python | Microsoft Docs"
+title: "Modelo de projeto do Serviço de Nuvem do Azure para Python | Microsoft Docs"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,23 +12,26 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b8ddcb234d43407c256145245b4cbdac308ed9ea
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="azure-cloud-service-projects-for-python"></a>Projetos do Serviço de Nuvem do Azure para o Python
+# <a name="azure-cloud-service-projects-for-python"></a>Projetos do serviço de nuvem do Azure para Python
 
 O Visual Studio fornece modelos para ajudá-lo a começar a criar Serviços de Nuvem do Azure usando o Python.
 
-Um [Serviço de Nuvem](http://go.microsoft.com/fwlink/?LinkId=306052) consiste em várias *funções de trabalho* e *funções web*, com cada uma executando uma tarefa separada conceitualmente, mas que podem ser replicadas separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Quanto ao Python, qualquer estrutura Web que dá suporte ao WSGI pode ser usada para escrever um aplicativo desse tipo (com suporte no [Modelo de Projeto Web](template-web.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Geralmente, elas fazem uso de bibliotecas de [dados](http://go.microsoft.com/fwlink/?LinkId=401571) e de [serviço de aplicativo](http://go.microsoft.com/fwlink/?LinkId=401572), que podem ser instaladas com `pip install`&nbsp;[`azure`](http://pypi.org/project/azure).
+Um [serviço de nuvem](http://go.microsoft.com/fwlink/?LinkId=306052) consiste em várias *funções de trabalho* e *funções web*, com cada uma executando uma tarefa separada conceitualmente, mas que podem ser replicadas separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Quanto ao Python, qualquer estrutura Web que dá suporte ao WSGI pode ser usada para gravam um aplicativo desse tipo (com suporte no [Modelo de Projeto Web](template-web.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Geralmente, elas fazem uso de bibliotecas de [dados](http://go.microsoft.com/fwlink/?LinkId=401571) e de [serviço de aplicativo](http://go.microsoft.com/fwlink/?LinkId=401572), que podem ser instaladas com `pip install`&nbsp;[`azure`](http://pypi.org/project/azure).
 
 Este tópico contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](http://go.microsoft.com/fwlink/?linkid=254360).
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. Instale o [SDK do .NET do Azure para Visual Studio](https://www.visualstudio.com/vs/azure-tools/), que é necessário para usar o modelo do Serviço de Nuvem.
+1. Instale o [SDK do .NET do Azure para Visual Studio](https://www.visualstudio.com/vs/azure-tools/), que é necessário para usar o modelo do serviço de nuvem.
 1. No Visual Studio, selecione **Arquivo > Novo > Projeto...**, pesquise “Azure Python” e selecione **Serviço de Nuvem do Azure** na lista:
 
     ![Modelo de Projeto de Nuvem do Azure para o Python](media/template-azure-cloud-project.png)
@@ -46,7 +49,6 @@ Este tópico contém detalhes sobre o modelo de projeto e outros tipos de suport
     ![Arquivos de suporte à função de trabalho](media/template-azure-cloud-service-worker-role-support-files.png)
 
     Para adicionar esses scripts de configuração a um novo projeto, clique com o botão direito do mouse no projeto, selecione **Adicionar > Novo Item...** e selecione **Arquivos de Suporte da Função Web** ou **Arquivos de Suporte da Função de Trabalho**.
-   
 
 ## <a name="configuring-role-deployment"></a>Configurando a implantação de função
 
@@ -66,12 +68,11 @@ Uma configuração adicional pode ser feita da seguinte maneira:
 
 ## <a name="testing-role-deployment"></a>Testando a implantação de função
 
-Ao escrever as funções, é possível testar o projeto de nuvem localmente usando o Emulador do Serviço de Nuvem. O emulador está incluído nas Ferramentas do SDK do Azure e é uma versão limitada do ambiente usado quando o Serviço de Nuvem é publicado no Azure.
+Ao escrever as funções, é possível testar o projeto de nuvem localmente usando o Emulador do Serviço de Nuvem. O emulador está incluído nas SDK Tools do Azure e é uma versão limitada do ambiente usado quando o Serviço de Nuvem é publicado no Azure.
 
 Para iniciar o emulador, primeiro verifique se o projeto de nuvem é o projeto de inicialização na solução clicando com o botão direito do mouse e selecionando **Definir como projeto de inicialização**. Em seguida, selecione **Depurar > Iniciar Depuração** (F5) ou **Depurar > Iniciar sem Depuração** (Ctrl+F5).
 
 Observe que, devido a limitações no emulador, não é possível depurar o código do Python. Portanto, recomendamos que você depure as funções executando-as de forma independente e, em seguida, use o emulador para o teste de integração antes da publicação.
-
 
 ## <a name="deploying-a-role"></a>Implantando uma função
 
@@ -83,10 +84,9 @@ Conforme cada máquina virtual é ativada, ele executa o script `ConfigureCloudS
 
 Por fim, as funções de trabalho executam `LaunchWorker.ps1`, que inicia a execução do script do Python; as funções web inicializam o IIS e começam a manipular solicitações da Web.
 
-
 ## <a name="dependencies"></a>Dependências
 
-Para o Serviço de Nuvem, o script `ConfigureCloudService.ps1` usa `pip` para instalar um conjunto de dependências do Python. As dependências devem ser especificadas em um arquivo chamado `requirements.txt` (personalizável com a modificação de `ConfigureCloudService.ps1`). O arquivo é executado com `pip install -r requirements.txt` como parte da inicialização.
+Para os Serviços de Nuvem, o script `ConfigureCloudService.ps1` usa `pip` para instalar um conjunto de dependências do Python. As dependências devem ser especificadas em um arquivo chamado `requirements.txt` (personalizável com a modificação de `ConfigureCloudService.ps1`). O arquivo é executado com `pip install -r requirements.txt` como parte da inicialização.
 
 Observe que as instâncias do Serviço de Nuvem não incluem compiladores do C e, portanto, todas as bibliotecas com extensões do C devem fornecer binários pré-compilados.
 
@@ -97,12 +97,13 @@ O PIP e suas dependências, bem como os pacotes em `requirements.txt`, são baix
 Se a função web ou a função de trabalho não funcionar corretamente após a implantação, verifique o seguinte:
 
 - O projeto do Python inclui uma pasta bin\ com (no mínimo):
+
     - `ConfigureCloudService.ps1`
     - `LaunchWorker.ps1` (para funções de trabalho)
     - `ps.cmd`
 
 - O projeto do Python inclui um arquivo `requirements.txt` que lista todas as dependências (ou, como alternativa, uma coleção de arquivos de roda).
-- Habilite a Área de Trabalho Remota no Serviço de Nuvem e investigue os arquivos de log.
+- Habilite a Área de Trabalho Remota no serviço de nuvem e investigue os arquivos de log.
 - Os logs de `ConfigureCloudService.ps1` e `LaunchWorker.ps1` são armazenados na pasta `C:\Resources\Directory\%RoleId%.DiagnosticStore\LogFiles` do computador remoto.
 - As funções web podem gravar logs adicionais para um caminho configurado em `web.config`, ou seja, o caminho na appSetting `WSGI_LOG`. A maioria dos logs do IIS ou FastCGI normal do host também funciona.
 - Atualmente, o arquivo `LaunchWorker.ps1.log` é a única maneira de exibir a saída ou os erros exibidos pela função de trabalho do Python.

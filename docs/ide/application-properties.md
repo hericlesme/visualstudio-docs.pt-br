@@ -11,52 +11,49 @@ helpviewer_keywords:
 - application properties [Visual Studio]
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 0ad4926f-636e-41f8-a5b1-faf9d9b0a254
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4c5753d12f8926653bcc655e403be20910472fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 203b8dad25cd7d6128cff54ac0f2c24c78fba680
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-properties"></a>Propriedades do aplicativo
-Você pode definir propriedades gerais de aplicativo para aplicativos do Visual Basic, C# e F#, como o tipo de aplicativo, o objeto de inicialização e informações de assembly, no painel **Aplicativo** do **Designer de Projeto**.  
-  
- As seguintes tarefas podem ser realizadas no painel **Aplicativo**:  
-  
+
+Você pode definir propriedades gerais de aplicativo para aplicativos do Visual Basic, C# e F#, como o tipo de aplicativo, o objeto de inicialização e informações de assembly, no painel **Aplicativo** do **Designer de Projeto**.
+
+As seguintes tarefas podem ser realizadas no painel **Aplicativo**:
+
 -   Especificar informações de assembly  
-  
+
 -   Especificar uma tela inicial para um aplicativo  
-  
+
 -   Especificar eventos no nível do aplicativo  
-  
+
 -   Alterar um nome de assembly  
-  
+
 -   Alterar o namespace de um aplicativo  
-  
+
 -   Alterar o tipo de aplicativo  
-  
+
 -   Alterar o objeto de inicialização de um aplicativo  
-  
+
 -   Especificar um ícone do aplicativo  
-  
+
 -   Habilitar estilos visuais do Windows XP  
-  
+
 -   Especificar o comportamento de instanciação de um aplicativo  
-  
+
 -   Habilitar a autenticação de usuário personalizada  
-  
--   Especificar o comportamento de desligamento de um aplicativo  
-  
- As tarefas disponíveis para seu aplicativo dependem da linguagem de desenvolvimento usada.  
-  
-## <a name="in-this-section"></a>Nesta seção  
+
+-   Especificar o comportamento de desligamento de um aplicativo
+
+## <a name="see-also"></a>Consulte também
+
  [Como especificar um ícone do aplicativo (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
-  
-## <a name="see-also"></a>Consulte também  
  [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   

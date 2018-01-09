@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 44065522229a1661efc41e79905d9650f7949ac3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-projects"></a>Projetos do Python
 
@@ -71,9 +72,9 @@ A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 (nem todo
 
 | Modelo | Descrição | 
 | --- | --- |
-| [Com Base em um Código Existente do Python](#creating-a-project-from-existing-files) | Cria um projeto do Visual Studio com base em um código existente do Python em uma estrutura de pastas.  |
+| [Com base em um código existente do Python](#creating-a-project-from-existing-files) | Cria um projeto do Visual Studio com base em um código existente do Python em uma estrutura de pastas.  |
 | Aplicativo do Python | Uma estrutura de projeto básica para um novo aplicativo do Python com um único arquivo de origem vazio. Por padrão, o projeto é executado no interpretador do console do ambiente global padrão, que pode ser alterado com a [atribuição de outro ambiente](python-environments.md#project-specific-environments). |
-| [Serviço de Nuvem do Azure](template-azure-cloud-service.md) | Um projeto para um Serviço de Nuvem do Azure escrito em Python. |
+| [Serviço de Nuvem do Azure](template-azure-cloud-service.md) | Um projeto para um serviço de nuvem do Azure escrito em Python. |
 | [Projetos Web](template-web.md) | Projetos para servidores Web baseados em várias estruturas, incluindo Bottle, Django, Flask e Flask/Jade. |
 | Aplicativo do IronPython | Semelhante ao modelo de Aplicativo do Python, mas usa o IronPython, por padrão, habilitando a interoperabilidade do .NET e a depuração de modo misto com as linguagens .NET. |
 | Aplicativo WPF do IronPython | Uma estrutura de projeto que usa o IronPython com arquivos XAML do Windows Presentation Foundation para a interface do usuário do aplicativo. O Visual Studio fornece um designer de interface do usuário XAML, code-behind pode ser escrito no Python e o aplicativo é executado sem exibir um console. |
@@ -144,6 +145,6 @@ Como as referências no IronPython não estão disponíveis até uma chamada par
 
 ### <a name="webpi-projects"></a>Projetos do WebPI
 
-É possível adicionar referências a entradas de produto do WebPI para implantação no Serviço de Nuvem do Microsoft Azure, em que é possível instalar componentes adicionais por meio do feed do WebPI. Por padrão, o feed exibido é específico ao Python e inclui o Django, o CPython e outros componentes básicos. Você também pode selecionar seu próprio feed, conforme mostrado abaixo. Ao publicar no Microsoft Azure, uma tarefa de instalação instala todos os produtos referenciados.
+É possível adicionar referências a entradas de produto do WebPI para implantação nos Serviços de Nuvem do Microsoft Azure, em que é possível instalar componentes adicionais por meio do feed do WebPI. Por padrão, o feed exibido é específico ao Python e inclui o Django, o CPython e outros componentes básicos. Você também pode selecionar seu próprio feed, conforme mostrado abaixo. Ao publicar no Microsoft Azure, uma tarefa de instalação instala todos os produtos referenciados.
 
 ![Referências do WebPI](media/projects-webPI-components.png)

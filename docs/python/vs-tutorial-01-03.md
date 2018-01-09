@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Etapa 3: usando a janela interativa REPL
 
@@ -47,7 +48,7 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +63,8 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![Colando várias linhas de código usando o comando Enviar para Interativa](media/vs-getting-started-python-15-interactive5.png)
@@ -82,14 +83,13 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     Se quiser copiar o conteúdo exato da janela interativa, incluindo os prompts e a saída, basta usar o comando **Copiar** padrão.
 
 1. O que você acabou de fazer é usar o ambiente de REPL rápido da janela interativa para trabalhar em detalhes de uma pequena parte de código e, em seguida, adicionou convenientemente esse código ao arquivo de origem do seu projeto. Agora, ao executar o código novamente com CTRL + F5 (ou **Depurar > Iniciar Sem Depurar**), você verá exatamente os resultados desejados.
-
 
 ## <a name="next-steps"></a>Próximas etapas
 

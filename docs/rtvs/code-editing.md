@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 013c32cb1567b3a4830a5c63059b14ea23df5427
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Editando código R no Visual Studio
 
@@ -34,7 +35,7 @@ Neste tópico:
 
 Consulte também os tópicos sobre [IntelliSense](code-intellisense.md), [linting](code-linting.md), [trechos de código](code-snippets.md) e [R Markdown](rmarkdown.md).
 
-## <a name="syntax-highlighting"></a>Realce de sintaxe 
+## <a name="syntax-highlighting"></a>Realce de sintaxe
 
 Além de colorir diferentes partes do código, como cadeias de caracteres, comentários e palavras-chave, as RTVS também realçam e habilitam links em comentários:
 
@@ -67,7 +68,7 @@ As regiões de código recolhíveis permitem ocultar parte do código temporaria
 Para criar uma região sua, coloque o código desejado entre comentários que terminam com `---`. Os controles pequenos +/- à esquerda do código permitem que você expanda e recolha regiões:
 
 ![Criando uma região recolhível com comentários](media/editing-collapsible-regions.gif)
- 
+
 Por padrão, o Visual Studio insere espaços quando você pressiona a tecla Tab. Novamente você pode alterar esse comportamento, conforme descrito em [Opções, Editor de Texto, Guias](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Navegação de código

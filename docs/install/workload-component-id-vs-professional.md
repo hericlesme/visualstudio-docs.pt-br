@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
-ms.openlocfilehash: 19a5ddd10a42a73fb15458cd6546877d62ceb96b
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 4f53afd1b91464823e506d26bf86a443ad572329
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Diretório de componentes do Visual Studio Professional 2017
 

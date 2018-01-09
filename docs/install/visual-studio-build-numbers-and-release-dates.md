@@ -5,22 +5,39 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/18/2017
+ms.date: 12/18/2017
 ms.topic: article
 helpviewer_keywords: 
 ms.technology: vs-acquisition
 ms.service: 
-ms.openlocfilehash: fff709bc75a4d9f9747c0fc47d5961fb2b00ec1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio 2017
 A tabela a seguir relaciona os números de build e as datas de lançamento do Visual Studio 2017 até o momento.
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.2 | Versão | 12/14/2017 | 15.5.27130.2010 |
+| 15.6.0 Versão prévia 1.1 | Visualizar | 12/14/2017 | 15.6.27205.2004 |
+| 15.5.1 | Versão | 12/7/2017 | 15.5.27130.2003 |
+| 15.6.0 Versão prévia 1.0 | Visualizar | 12/7/2017 | 15.6.27205.0 |
+| 15.0.7 | Versão | 12/6/2017 | 15.0.26228.18 |
+| 15.5 | Versão | 12/4/2017 | 15.5.27130.0 |
+| 15.5.0 Versão prévia 5.0 | Visualizar | 11/30/2017 | 15.5.27128.1 |
+| 15.4.5 | Versão | 11/27/2017 | 15.4.27004.2010 |
+| 15.5.0 Versão prévia 4.0 | Visualizar | 11/14/2017 | 15.5.27110.0 |
+| 15.4.4 | Versão | 11/14/2017 | 15.4.27004.2009 |
+| 15.0.6 | Versão | 11/14/2017 | 15.0.26228.17 |
+| 15.4.3 | Versão | 11/8/2017 | 15.4.27004.2008 |
+| 15.5.0 Versão prévia 3.0 | Visualizar | 11/6/2017 | 15.5.27102.0 |
+| 15.4.2 | Versão | 10/31/2017 | 15.4.27004.2006 |
+| 15.5.0 Versão prévia 2.0 | Visualizar | 10/23/2017 | 15.5.27019.1 |
+| 15.4.1 | Versão | 10/19/2017 | 15.4.27004.2005 |
 | 15.5 Versão prévia 1 | Visualizar | 11/10/2017 | 15.0.27009.1 |
 | 15.4 | Versão | 09/10/2017 | 15.0.27004.20002 |
 | 15.4 Versão prévia 6 | Visualizar | 09/10/2017| 15.0.27004.20002 |
@@ -37,7 +54,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.3.1 | Versão | 08/18/2017 | 15.0.26730.08 |
 | 15.3.1 Versão prévia 1 | Visualizar | 08/18/2017 | 15.0.26730.08 |
 | 15.3.1  | Versão | 08/18/2017 | 15.0.26730.08 |
-| 15.4 Versão prévia 1 | Visualizar | 22/08/2017 | N/D |
+| 15.4 Versão prévia 1 | Visualizar | 24/08/2017 | 15.4.26823.1 |
 | 15.3 | Versão | 14/08/2017 | 15.0.26730.3 |
 | 15.3 Versão prévia 7.1 | Visualizar | 11/08/2017 | 15.0.26730.3 |
 | 15.3 Versão prévia 7 | Visualizar | 01/08/2017 | 15.0.26730.0 |

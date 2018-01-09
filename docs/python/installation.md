@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalando o suporte do Python no Visual Studio no Windows
 
@@ -66,12 +67,11 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
     | Suporte Web do Python | Instala as ferramentas para desenvolvimento para a Web, incluindo suporte à edição HTML, CSS e JavaScript, juntamente com modelos para projetos que usam as estruturas Bottle, Flask e Django. Veja [Modelos de projeto Web do Python](template-web.md). |
     | Suporte ao Python IoT | Compatível com o desenvolvimento do Windows IoT Core usando Python. |
     | Ferramentas de desenvolvimento nativo do Python | Instala o compilador do C++ e outros componentes necessários para desenvolver extensões nativas para Python. Veja [Criando uma extensão do C++ para o Python](cpp-and-python.md). |
-    | Principais ferramentas dos Serviços de Nuvem do Azure | Fornece suporte adicional para os Serviços de Nuvem do Azure do desenvolvedor no Python. Veja [Projetos do Serviço de Nuvem do Azure](template-azure-cloud-service.md). |
+    | Principais ferramentas dos Serviços de Nuvem do Azure | Fornece suporte adicional para os Serviços de Nuvem do Azure do desenvolvedor no Python. Consulte [Projeto de Serviço de Nuvem do Azure](template-azure-cloud-service.md). |
 
 1. Após a instalação, o instalador fornece opções para modificar, iniciar, reparar ou desinstalar o Visual Studio. O botão **Modificar** transforma-se em **Atualizar** quando há atualizações para o Visual Studio disponíveis para os componentes instalados. (A opção Modificar ficará disponível no menu suspenso.) Você também pode iniciar o Visual Studio e o instalador no menu Iniciar do Windows pesquisando "Visual Studio".
 
     ![Iniciando, modificando ou desinstalando o Visual Studio no instalador](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

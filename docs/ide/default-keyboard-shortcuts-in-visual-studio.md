@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 Para obter mais informações sobre acessibilidade de teclado, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como usar o teclado de forma exclusiva](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -418,7 +419,7 @@ Cada seção na tabela a seguir inclui comandos para os quais os atalhos de tecl
 
 |Comandos|Atalhos de teclado|  
 |--------------|------------------------|  
-|Window.ActivateDocumentWindow|Esc|  
+|Window.ActivateDocumentWindow|ESC|  
 |Window.AddTabtoSelection|Ctrl+Shift+Alt+Space|  
 |Window.CloseDocumentWindow|Ctrl+F4|  
 |Window.CloseToolWindow|Shift+Esc|  
@@ -725,7 +726,7 @@ Cada seção na tabela a seguir inclui comandos para os quais os atalhos de tecl
 |Edit.MoveControlLeft|Ctrl+Seta para a Esquerda|  
 |Edit.MoveControlRight|Ctrl+Seta para a Direita|  
 |Edit.MoveControlUp|Ctrl+Seta para Cima|  
-|Edit.SelectionCancel|Esc|  
+|Edit.SelectionCancel|ESC|  
 |Edit.SizeControlDown|Ctrl+Shift+Seta para Baixo|  
 |Edit.SizeControlLeft|Ctrl+Shift+Seta para a Esquerda|  
 |Edit.SizeControlRight|Ctrl+Shift+Seta para a Direita|  
@@ -746,7 +747,7 @@ Cada seção na tabela a seguir inclui comandos para os quais os atalhos de tecl
 |--------------|------------------------|  
 |Edit.EditCell|F2|  
 |Edit.RemoveRow|Ctrl+Delete|  
-|Edit.SelectionCancel|Esc|  
+|Edit.SelectionCancel|ESC|  
 |View.ViewCode|F7|  
 
 ##  <a name="bkmk_SolutionExplorer"></a> Gerenciador de Soluções  

@@ -95,6 +95,7 @@
 ## [Gerenciar o carregamento do projeto em uma solução](managing-project-loading-in-a-solution.md)
 # [Criar modelos de itens e projetos personalizados](creating-custom-project-and-item-templates.md)
 ## [Atualizar modelos de item e projeto personalizados para o Visual Studio 2017](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
+## [Solução de problemas de descoberta do modelo](troubleshooting-template-discovery.md)
 ## [Como usar assistentes com modelos do projeto](how-to-use-wizards-with-project-templates.md)
 ## [Referência de esquema do modelo do Visual Studio](visual-studio-template-schema-reference.md)
 ### [Elemento AppliesTo (Modelos do Visual Studio)](appliesto-element-visual-studio-templates.md)

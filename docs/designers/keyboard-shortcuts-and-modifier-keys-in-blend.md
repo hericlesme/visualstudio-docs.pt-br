@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9c616c359480831827549d05496157ad28e4575
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c934ae4869867b0680999514cbaae99c74c3d2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Atalhos de teclado e teclas modificadoras no Blend
 Atalhos de teclado podem acelerar seu trabalho reduzindo em um único atalho de teclado uma ação que normalmente exigiria vários cliques com o botão do mouse. Os atalhos de teclado no [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] estão divididos em duas categorias:  
