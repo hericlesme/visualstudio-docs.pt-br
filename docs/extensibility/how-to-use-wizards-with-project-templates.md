@@ -19,11 +19,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Como usar assistentes com modelos do projeto
 O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface que, quando implementada, permite que você execute o código personalizado quando um usuário cria um projeto de um modelo.  
@@ -198,6 +198,7 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> i
             private void button1_Click(object sender, EventArgs e)  
             {  
                 customMessage = textBox1.Text;  
+                this.Close();
             }  
         }  
     ```  
@@ -231,13 +232,13 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> i
   
 10. Extrai a chave pública do arquivo key.snk. Na janela de comando, digite:  
   
-     **\<local do sn.exe > \sn.exe - p key.snk outfile.key.**  
+     **\<local do sn.exe > \sn.exe -p key.snk outfile.key.**  
   
      Não se esqueça de colocar o caminho de sn.exe entre aspas se houver espaços em nomes de diretório!  
   
 11. Obter token de chave pública do outfile:  
   
-     **\<local do sn.exe > \sn.exe - t outfile.key.**  
+     **\<local do sn.exe > \sn.exe -t outfile.key.**  
   
      Novamente, não se esqueça de aspas. Você deve ver uma linha na saída desta  
   

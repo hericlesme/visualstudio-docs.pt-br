@@ -14,11 +14,11 @@ caps.latest.revision: "7"
 ms.author: sdanie
 manager: erikre
 ms.workload: multiple
-ms.openlocfilehash: e4d547fed57abf11194b35bcd3ac42f12322374b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a508fe657be8e2a12c54bc7ae1a46f338273cd9
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Como: Adicionar comentários a um fluxo de trabalho em Designer de Fluxo de Trabalho
 Para facilitar a criação maior, os fluxos de trabalho mais complicados, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] permitem que o desenvolvedor adiciona anotações aos seguintes tipos de item sobre o designer:  
@@ -40,54 +40,52 @@ Para facilitar a criação maior, os fluxos de trabalho mais complicados, [!INCL
   
 ### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Adicionando uma anotação a uma atividade no designer  
   
-1.  No designer de fluxo de trabalho, clique em um item do fluxo de trabalho no designer e selecione **anotações**, **Adicionar anotação**.  
+1. No designer de fluxo de trabalho, clique em um item do fluxo de trabalho no designer e selecione **anotações**, **Adicionar anotação**.  
   
-2.  Adicione o texto de anotação no espaço fornecido.  
+1. Adicione o texto de anotação no espaço fornecido.  
   
-3.  O item mostrará um ícone de anotação. Passa sobre o ícone de anotação exibirá o texto de anotação.  
-  
-     ![Sequência de atividades, mostrando a anotação](../debugger/debug-interface-access/annotation.md "anotação")  
-  
+   O item mostra um ícone de anotação. Ao passar o mouse sobre o ícone de anotação exibe o texto da anotação.
+
 ### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Exibindo uma anotação no designer de uma atividade  
   
 1.  Com o designer de atividade que tem uma anotação exibindo fora da atividade, clique o **Pin** ícone no adorno de anotação.  
   
-2.  A anotação será exibida no designer de atividade. Em captura de tela abaixo, a anotação “que inicia a atividade no fluxo de trabalho” é exibida no designer de atividade.  
+   A anotação é exibida no designer da atividade. Em captura de tela abaixo, a anotação “que inicia a atividade no fluxo de trabalho” é exibida no designer de atividade.  
   
-     ![Anotação mostrada no designer de atividade](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")  
+   ![Anotação mostrada no designer de atividade](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")  
   
-3.  Para exibir a anotação fora do designer da atividade, passe o mouse sobre a área de anotação no designer da atividade e clique no **Desafixar** ícone  
+1. Para exibir a anotação fora do designer da atividade, passe o mouse sobre a área de anotação no designer da atividade e clique no **Desafixar** ícone  
   
-     ![Anotação exibida fora do Designer de uma atividade](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")  
+   ![Anotação exibida fora do Designer de uma atividade](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")  
   
-### <a name="showing-or-hiding-all-annotations"></a>Mostrar ou ocultar todas as anotações  
-  
-1.  Clique com o botão direito do mouse uma atividade que tenha uma anotação. Selecione **anotações**, **Mostrar todas as anotações**.  
-  
-2.  Todas as anotações serão exibidas no designer de atividade.  
-  
-3.  Para exibir todas as anotações fora designers da atividade, clique na atividade e selecione **anotações**, **ocultar todas as anotações**.  
-  
-### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Editando ou excluindo uma anotação para uma atividade  
-  
-1.  Clique com o botão direito do mouse em uma atividade que tenha uma anotação.  
-  
-2.  Selecione **anotações**, **editar anotação** ou **exclusão de anotação**.  
-  
-3.  A anotação será aberta editando ou excluída.  
-  
-4.  Para excluir todas as anotações de uma só vez, clique com botão direito do fluxo de trabalho no designer e selecione **anotação**, **excluir todas as anotações**.  
-  
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Adicionando, editar, e excluir uma anotação para uma variável ou um argumento  
-  
-1.  Clique com o botão direito do mouse em uma variável ou o argumento e selecione adicionar a anotação.  
-  
-2.  Digite o texto de anotação. A variável ou o argumento exibirá um ícone de anotação.  
-  
-3.  Clique com o botão direito do mouse em uma variável ou em um argumento que tenha uma anotação. Selecione a anotação de edição.  
-  
-4.  A anotação será aberta editando.  
-  
-5.  Clique com o botão direito do mouse em uma variável ou em um argumento que tenha uma anotação. Selecione a anotação excluir.  
-  
-6.  A anotação será excluída.
+### <a name="showing-or-hiding-all-annotations"></a>Mostrar ou ocultar todas as anotações
+
+1. Clique com o botão direito do mouse uma atividade que tenha uma anotação. Selecione **anotações**, **Mostrar todas as anotações**.
+
+   Todas as anotações são exibidas nos designers da atividade.
+
+1. Para exibir todas as anotações fora designers da atividade, clique na atividade e selecione **anotações**, **ocultar todas as anotações**.
+
+### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Editando ou excluindo uma anotação para uma atividade
+
+1. Clique com o botão direito do mouse em uma atividade que tenha uma anotação.
+
+1. Selecione **anotações**, **editar anotação** ou **exclusão de anotação**.
+
+   A anotação é aberta para edição ou excluída.
+
+1. Para excluir todas as anotações de uma só vez, clique com botão direito do fluxo de trabalho no designer e selecione **anotação**, **excluir todas as anotações**.
+
+### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Adicionando, editar, e excluir uma anotação para uma variável ou um argumento
+
+1. Clique com o botão direito do mouse em uma variável ou o argumento e selecione adicionar a anotação.
+
+1. Digite o texto de anotação. A variável ou argumento exibe um ícone de anotação.
+
+1. Clique com o botão direito do mouse em uma variável ou em um argumento que tenha uma anotação. Selecione a anotação de edição.
+
+   A anotação é aberta para edição.
+
+1. Clique com o botão direito do mouse em uma variável ou em um argumento que tenha uma anotação. Selecione a anotação excluir.
+
+   A anotação é excluída.

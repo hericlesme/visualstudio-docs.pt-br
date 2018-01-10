@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: VB
 ms.workload: multiple
-ms.openlocfilehash: 5eea45aafebe8c20431de5b2d3bd299789bf7285
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cda22612959e083cb1f0179d65554d38fab9cf03
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: Use o designer de esquema XML com literais XML
 Este tópico descreve como exibir um esquema associado com um literal XML em um projeto Visual Basic.  
@@ -70,7 +70,7 @@ Este tópico descreve como exibir um esquema associado com um literal XML em um 
   
        End Sub  
    End Module  
-   ```  
+   ```
   
 2.  Clique em qualquer nó XML em um literal XML ou uma importação de namespace XML e selecione **Mostrar no Gerenciador de esquema**.  
   

@@ -21,11 +21,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e78e17d4b9060a3a52498109a744c13cdf972abb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 82894a5d7f92c8231a6ba3a1948369fb2c819a6d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="replace-method-string-javascript"></a>Método replace (Cadeia de Caracteres) (JavaScript)
 Substitui texto em uma cadeia de caracteres usando uma expressão regular ou uma cadeia de caracteres de pesquisa.  
@@ -34,7 +34,7 @@ Substitui texto em uma cadeia de caracteres usando uma expressão regular ou uma
   
 ```  
   
-stringObj. replace(rgExp, replaceText)  
+stringObj.replace(rgExp, replaceText)  
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
@@ -89,7 +89,7 @@ var re = /(\S+)(\s+)(\S+)/g;
 var result = s.replace(re, "$3$2$1");  
 document.write(result);  
   
-// Output:  quick The fox brown over jumps lazy the dog.  
+// Output:  quick The fox brown over jumped lazy the dog.  
 ```  
   
  O exemplo a seguir, que funciona no [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] ou posterior, mostra como usar uma função que retorna o texto de substituição. Ele substitui qualquer instância de um número seguido por “F” por uma conversão em Celsius.  

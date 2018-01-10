@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: e635306deb8d26a41ddce1c59bf885cf96c4555b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: af95385a0d95f3f6edba3b5813d35103cd4e13f6
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-start-debugging-xslt"></a>Como: Iniciar a depuração XSLT
 O depurador XSLT pode ser usado para depurar uma folha de estilos XSLT ou um aplicativo XSLT. Para depurar, você pode executar a linha de código por vez em pisando, pisando sobre, ou pisando fora do código. Os comandos usar a funcionalidade do avançar são os mesmos para o depurador XSLT para que os outros depuradores do Visual Studio. Uma vez que você iniciar a depuração, o depurador XSLT abrir janelas para mostrar o documento de entrada e saída XSLT.  
@@ -87,7 +87,7 @@ namespace ConsoleApplication
     }  
   }  
 }  
-```  
+```
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
