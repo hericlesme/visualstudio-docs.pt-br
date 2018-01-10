@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gerenciando o Python no Serviço de Aplicativo do Azure
 
@@ -47,20 +47,19 @@ O suporte personalizável ao Python no Serviço de Aplicativo do Azure é fornec
 1. Selecione a extensão, aceite os termos legais e selecione **OK**.
 1. Uma notificação será exibida no portal quando a instalação for concluída.
 
-
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Escolhendo uma versão do Python por meio do Azure Resource Manager
 
 Se você estiver implantando um Serviço de Aplicativo com um modelo do Azure Resource Manager, adicione a extensão de site como um recurso. A extensão é exibida como um recurso aninhado com o tipo `siteextensions` e o nome de [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
 Por exemplo, depois de adicionar uma referência a `python361x64` (Python 3.6.1 x64), o modelo poderá ficar parecido com o seguinte (algumas propriedades foram omitidas):
 
-```
+```json
 "resources": [
   {
     "apiVersion": "2015-08-01",
     "name": "[parameters('siteName')]",
     "type": "Microsoft.Web/sites",
-    
+
     // ...
 
     "resources": [
@@ -99,8 +98,8 @@ Essa ação abre a página de descrição da extensão que contém o caminho:
 Se tiver problemas para ver o caminho para a extensão, você poderá encontrá-la manualmente usando o console:
 
 1. Na página do Serviço de Aplicativo, selecione **Ferramentas de Desenvolvimento > Console**.
-2. Digite o comando `ls ../home` ou `dir ..\home` para ver as pastas de extensões de nível superior, como `Python361x64`.
-3. Digite um comando como `ls ../home/python361x64` ou `dir ..\home\python361x64` para verificar se ela contém `python.exe` e outros arquivos de interpretador.
+1. Digite o comando `ls ../home` ou `dir ..\home` para ver as pastas de extensões de nível superior, como `Python361x64`.
+1. Digite um comando como `ls ../home/python361x64` ou `dir ..\home\python361x64` para verificar se ela contém `python.exe` e outros arquivos de interpretador.
 
 ### <a name="configuring-the-fastcgi-handler"></a>Configurando o manipulador do FastCGI
 
@@ -126,6 +125,7 @@ O FastCGI é uma interface que funciona no nível da solicitação. O IIS recebe
 ```
 
 As `<appSettings>` definidas aqui estão disponíveis para seu aplicativo como variáveis de ambiente:
+
 - O valor de `PYTHONPATH` pode ser estendido livremente, mas deve incluir a raiz do seu aplicativo.
 - `WSGI_HANDLER` deve apontar para um aplicativo WSGI importável do seu aplicativo.
 - `WSGI_LOG` é opcional, mas recomendado para depuração do seu aplicativo. 
@@ -172,33 +172,32 @@ Para instalar pacotes diretamente no ambiente do servidor, use um dos seguintes 
 | Pacote com aplicativo | Instala pacotes diretamente em seu projeto e, em seguida, implanta-os no Serviço de Aplicativo como se fizessem parte do seu aplicativo. Dependendo de quantas dependências você tem e da frequência com que você os atualiza, esse método pode ser a maneira mais fácil de dar início à implantação. Esteja ciente de que as bibliotecas devem corresponder à versão do Python no servidor, caso contrário, você verá erros obscuros após a implantação. Assim, como as versões do Python nas extensões de site do Serviço de Aplicativo são exatamente as mesmas que as versões lançadas em python.org, você pode obter uma versão compatível para desenvolvimento local facilmente. |
 | Ambientes virtuais | Sem suporte. Em vez disso, use o agrupamento e defina a variável de ambiente `PYTHONPATH` para apontar para o local dos pacotes. |
 
-
 ### <a name="azure-app-service-kudu-console"></a>Console do Kudu do Serviço de Aplicativo do Azure
 
 O [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) fornece acesso de linha de comando com privilégios elevados e direto para o servidor do Serviço de Aplicativo e seu sistema de arquivos. Isso é uma ferramenta valiosa de depuração e também permite operações de CLI, como instalação de pacotes.
 
 1. Abra o Kudu na sua página do Serviço de Aplicativo no Portal do Azure, selecionando **Ferramentas de Desenvolvimento > Ferramentas Avançadas** e, em seguida, selecionando **Ir**. Essa ação navega até uma URL que é a mesmo que a URL base do Serviço de Aplicativo, exceto pelo `.scm` inserido. Por exemplo, se a URL base for `https://vspython-test.azurewebsites.net/`, o Kudu será `https://vspython-test.scm.azurewebsites.net/` (que você poderá adicionar aos favoritos):
 
-    ![O console do Kudu para o Serviço de Aplicativo do Azure](media/python-on-azure-console01.png)    
+    ![O console do Kudu para o Serviço de Aplicativo do Azure](media/python-on-azure-console01.png)
 
-2. Selecione **Console de depuração > CMD** para abrir o console, no qual você pode navegar em sua instalação do Python e ver quais bibliotecas já estão lá.
+1. Selecione **Console de depuração > CMD** para abrir o console, no qual você pode navegar em sua instalação do Python e ver quais bibliotecas já estão lá.
 
-3. Para instalar um único pacote:
+1. Para instalar um único pacote:
 
     a. Navegue até a pasta da instalação do Python em que você deseja instalar o pacote, como `d:\home\python361x64`.
-     
+
     b. Use `python.exe -m pip install <package_name>` para instalar um pacote.
-    
+
     ![Exemplo de instalação do Bottle por meio do console do Kudu para o Serviço de Aplicativo do Azure](media/python-on-azure-console02.png)
-    
-4. Se você já implantou um `requirements.txt` para seu aplicativo no servidor, instale todos esses requisitos da seguinte maneira:
+
+1. Se você já implantou um `requirements.txt` para seu aplicativo no servidor, instale todos esses requisitos da seguinte maneira:
 
     a. Navegue até a pasta da instalação do Python em que você deseja instalar o pacote, como `d:\home\python361x64`.
-    
+
     b. Execute o comando `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
-    
+
     O uso do `requirements.txt` é recomendado porque é fácil reproduzir seu conjunto de pacote exato localmente e no servidor. Lembre-se visitar o console depois de implantar as alterações no `requirements.txt` e execute o comando novamente.
-    
+
 > [!Note]
 > Não há compilador de C no Serviço de Aplicativo, portanto você precisa instalar o wheel para todos os pacotes com módulos de extensão nativos. Muitos pacotes populares fornecem suas próprias rodas. Para pacotes que não o fazem, use `pip wheel <package_name>` em seu computador de desenvolvimento local e, em seguida, carregue a roda para seu site. Para obter um exemplo, consulte [Gerenciando pacotes necessários](python-environments.md#managing-required-packages)
 
@@ -213,7 +212,6 @@ Em vez de usar o console de Kudu por meio do portal do Azure, você pode executa
 }
 ```
 
-Para obter informações sobre comandos e autenticação, consulte a [Documentação do Kudu](https://github.com/projectkudu/kudu/wiki/REST-API). 
+Para obter informações sobre comandos e autenticação, consulte a [Documentação do Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Você também pode ver as credenciais usando o comando `az webapp deployment list-publishing-profiles` através da CLI do Azure (consulte [az webapp deployment](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles)). Há uma biblioteca auxiliar para publicar comandos de Kudu disponível no [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
-
+Você também pode ver as credenciais usando o comando `az webapp deployment list-publishing-profiles` através da CLI do Azure (consulte [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles)). Há uma biblioteca auxiliar para publicar comandos de Kudu disponível no [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).

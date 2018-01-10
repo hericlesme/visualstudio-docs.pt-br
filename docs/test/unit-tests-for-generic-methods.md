@@ -10,16 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
-ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
-caps.latest.revision: "47"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4e0afbcf6ff12376e3fcdf10925a20a4a7228130
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 Você pode gerar testes de unidade para métodos genéricos exatamente como faria para outros métodos, conforme descrito em [Como criar e executar um teste de unidade](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). As seções a seguir fornecem informações e exemplos de criação de testes de unidade para métodos genéricos.  

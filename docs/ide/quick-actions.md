@@ -14,11 +14,11 @@ dev_langs:
 - CSharp
 - VB
 ms.workload: multiple
-ms.openlocfilehash: 5d60fa62ee23ef942a6ef3ec20b7840374a33149
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7e70e4366ca91e00beeb4fff49ec30d4618bde81
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quick-actions"></a>Ações Rápidas
 
@@ -592,7 +592,7 @@ Dim s As String = $"My string with {num} in the middle"
 | ------- | -------------------- | ----------------  |
 | IDE0017 | C# e Visual Basic | Visual Studio 2017 RTW |
 
-Esta Ação rápida permite usar [inicializadores de objeto](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) em vez de invocar o construtor e ter linhas adicionais de instruções de atribuição.
+Esta Ação rápida permite usar [inicializadores de objeto](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) em vez de invocar o construtor e ter linhas adicionais de instruções de atribuição.
 
 ```csharp
 // Before
@@ -622,7 +622,7 @@ Dim c = New Customer() With {.Age = 21}
 | ------- | -------------------- | ----------------  |
 | IDE0028 | C# e Visual Basic | Visual Studio 2017 RTW |
 
-Esta Ação rápida permite usar [inicializadores de coleção](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) em vez de múltiplas chamadas ao método `Add` da sua classe.
+Esta Ação rápida permite usar [inicializadores de coleção](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) em vez de múltiplas chamadas ao método `Add` da sua classe.
 
 ```csharp
 // Before

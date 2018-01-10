@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 519bb7b70737e4c3e2d6e80f19a056b4cd385980
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -71,7 +71,7 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
     Para desabilitar as Ferramentas de Diagnóstico, inicie uma sessão de depuração, escolha **Ferramentas > Opções > Habilitar Ferramentas de Diagnóstico** e desmarque a opção.
 
-    Para obter mais informações, consulte [Ferramentas de Criação de Perfil](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
+    Para obter mais informações, consulte [Ferramentas de Criação de Perfil](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Desabilitar ferramentas e extensões
 Algumas ferramentas ou extensões podem desativadas para melhorar o desempenho.

@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 5eab9ef6f3030e8a71547babd9dd9cc279813eee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 33a6c3b57ae47e25eeaeb22c245e77c8a810d9a2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Usando o IPython na Janela Interativa
 
@@ -32,7 +32,7 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
 1. Examine a guia **Pacotes** ou (**pip**) e verifique se `IPython` e `matplotlib` estão listados. Caso contrário, instale-os nessa localização.
 
-1. Selecione a guia **Visão Geral** e selecione **Usar o modo interativo do IPython.** (No Visual Studio 2015, selecione **Configurar opções interativas** para abrir a caixa de diálogo **Opções** e defina o **Modo Interativo** como IPython e selecione **OK**).    
+1. Selecione a guia **Visão Geral** e selecione **Usar o modo interativo do IPython.** (No Visual Studio 2015, selecione **Configurar opções interativas** para abrir a caixa de diálogo **Opções** e defina o **Modo Interativo** como IPython e selecione **OK**).
 
 1. Selecione **Abrir janela interativa** para exibir a janela interativa no modo IPython. Talvez você precise redefinir a janela se tiver acabado de mudar para o modo interativo, talvez você também precise pressionar Enter se apenas um prompt >>> aparecer.
 
@@ -76,11 +76,11 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
     ![Enviando o código do editor para a janela interativa](media/ipython-repl-05.png)
 
 1. Para ver os gráficos fora da janela interativa, execute o código em vez de usar o comando **Depurar > Iniciar sem Depuração**.
-    
+
 O IPython tem muitos outros recursos úteis, como escape para o shell do sistema, substituição de variáveis, captura de saída etc. Consulte a [documentação do IPython](http://ipython.org/documentation.html) para obter mais informações.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 - Para usar o Jupyter facilmente e sem instalação, experimente o [serviço hospedado dos Notebooks do Azure](https://notebooks.azure.com/) que permitem que você mantenha e compartilhe seus blocos de anotações com outras pessoas.
 
-- Você também pode executar o Jupyter (anteriormente conhecido como IPython) em sua própria máquina virtual Windows ou Linux no Azure. Para obter detalhes, consulte [Criando uma VM do Azure, instalando o Jupyter e executando um Notebook do Jupyter no Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- Você também pode executar o Jupyter (anteriormente conhecido como IPython) em sua própria máquina virtual Windows ou Linux no Azure. Para obter detalhes, consulte [Criando uma VM do Azure, instalando o Jupyter e executando um Notebook do Jupyter no Azure](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).

@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88d34f29593af6e15a30c45f44793c60794ebb24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eab9e96906e5d6bd31ef0f84bebf635c4c104b3d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
 A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em páginas e formulários da Web. Para exibir essa guia, primeiro abra um documento para edição no designer de HTML. No menu **Exibir**, clique em **Caixa de ferramentas** e, em seguida, na guia **HTML** da Caixa de ferramentas.  
@@ -86,7 +86,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 ```  
 
 > [!IMPORTANT]
->  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).  
+>  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).  
 
  **Entrada (Arquivo)**  
  ![Campo de arquivo de paginação HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -100,7 +100,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 ```  
 
 > [!IMPORTANT]
->  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).  
+>  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).  
 
  **Entrada (Senha)**  
  ![Campo de senha do Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -114,7 +114,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 ```  
 
 > [!IMPORTANT]
->  Se o aplicativo transmitir nomes de usuário e senhas, será necessário configurar o site para usar o protocolo SSL para criptografar a transmissão. Para obter mais informações, consulte “Protegendo conexões com o protocolo SSL” no [Guia de Operações do IIS](http://go.microsoft.com/fwlink/?linkid=47856). Além disso, é recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).  
+>  Se o aplicativo transmitir nomes de usuário e senhas, será necessário configurar o site para usar o protocolo SSL para criptografar a transmissão. Para obter mais informações, consulte “Protegendo conexões com o protocolo SSL” no [Guia de Operações do IIS](http://go.microsoft.com/fwlink/?linkid=47856). Além disso, é recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).  
 
  **Entrada (caixa de seleção)**  
  ![Opção Caixa de seleção da caixa de ferramentas da página da Web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -161,7 +161,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 ```  
 
 > [!IMPORTANT]
->  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).  
+>  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).  
 
  **Tabela**  
  ![Captura de tela de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  

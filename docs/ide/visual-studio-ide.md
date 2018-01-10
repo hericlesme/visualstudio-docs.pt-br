@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0ffadcf35be9cc12327c6ef9a561cd1149cf281c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visão geral do IDE do Visual Studio
 
@@ -86,7 +86,7 @@ Para seguir as etapas para criar um programa abaixo, selecione e instale a carga
 
 Além do desempenho aprimorado de instalação, o Visual Studio 2017 também apresenta tempos de inicialização e de carregamento do IDE mais curtos.
 
-Para saber mais sobre como configurar o Visual Studio no sistema, consulte [Instalar o Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio).  
+Para saber mais sobre como configurar o Visual Studio no sistema, consulte [Instalar o Visual Studio 2017](../install/install-visual-studio.md).
 
 ## <a name="sign-in"></a>Entrar
 
@@ -152,7 +152,7 @@ Uma boa maneira de aprender sobre algo é usá-lo! Vamos nos aprofundar e criar 
 
 1. Quando terminar de executar o programa, escolha o botão Parar (![botão Parar](../ide/media/VSIDE_StopButton.png)) na barra de ferramentas para interrompê-lo.
 
-Vamos recapitular o que você fez até agora: você criou um novo projeto Universal do Windows do C# no Visual Studio, exibiu seu código, adicionou um controle ao designer, alterou uma parte do código XAML e, por fim, executou o projeto. Embora o processo tenha sido simplificado para este exemplo, isso mostra algumas partes comuns do IDE do Visual Studio que você usará para desenvolver seus próprios aplicativos. Se desejar obter mais detalhes sobre esse exemplo, consulte [Criar um aplicativo “Olá, mundo” (XAML)](https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
+Vamos recapitular o que você fez até agora: você criou um novo projeto Universal do Windows do C# no Visual Studio, exibiu seu código, adicionou um controle ao designer, alterou uma parte do código XAML e, por fim, executou o projeto. Embora o processo tenha sido simplificado para este exemplo, isso mostra algumas partes comuns do IDE do Visual Studio que você usará para desenvolver seus próprios aplicativos. Se desejar obter mais detalhes sobre esse exemplo, consulte [Criar um aplicativo “Olá, mundo” (XAML)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
 
 ## <a name="debug-test-and-improve-your-code"></a>Depurar, testar e melhorar o código
 
@@ -184,7 +184,7 @@ Para fornecer uma visão geral visual de alto nível do Visual Studio, a imagem 
 
 Veja a seguir algumas outras funcionalidades de produtividade comuns do Visual Studio:
 
-- A caixa de pesquisa [Início Rápido](https://docs.microsoft.com/en-us/visualstudio/ide/reference/quick-launch-environment-options-dialog-box) é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Comece inserindo o nome de qualquer coisa que esteja procurando e o Visual Studio listará resultados que levam você exatamente para o local desejado. O Início Rápido também mostra os links que iniciam o Instalador do Visual Studio para qualquer carga de trabalho ou componente individual.
+- A caixa de pesquisa [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md) é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Comece inserindo o nome de qualquer coisa que esteja procurando e o Visual Studio listará resultados que levam você exatamente para o local desejado. O Início Rápido também mostra os links que iniciam o Instalador do Visual Studio para qualquer carga de trabalho ou componente individual.
 
   ![Caixa de pesquisa Início Rápido](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -196,7 +196,7 @@ Veja a seguir algumas outras funcionalidades de produtividade comuns do Visual S
 
   ![Lista de membros do Visual Studio](../ide/media/vs2017_Intellisense.png)
 
-- **Rabiscos** são sublinhados vermelhos ondulados que alertam você sobre erros ou problemas potenciais no código em tempo real durante a digitação. Isso permite que você os corrija imediatamente sem esperar que o erro seja descoberto durante a compilação ou o tempo de execução. Se você passar o mouse sobre o rabisco, verá informações adicionais sobre o erro. Uma lâmpada também podem aparecer na margem esquerda com sugestões de como corrigir o erro. Para obter mais informações, consulte [Realizar ações rápidas com lâmpadas](../ide/perform-quick-actions-with-light-bulbs.md).
+- **Rabiscos** são sublinhados vermelhos ondulados que alertam você sobre erros ou problemas potenciais no código em tempo real durante a digitação. Isso permite que você os corrija imediatamente sem esperar que o erro seja descoberto durante a compilação ou o tempo de execução. Se você passar o mouse sobre o rabisco, verá informações adicionais sobre o erro. Uma lâmpada também podem aparecer na margem esquerda com sugestões de como corrigir o erro. Para obter mais informações, consulte [Ações Rápidas](../ide/quick-actions.md).
 
  ![Rabiscos](../ide/media/vs2017_squiggle.png)
 
@@ -248,9 +248,9 @@ A escolha de um serviço na página **Serviços Conectados** inicia um Assistent
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o Gerenciador de Servidores, no menu principal, escolha **Exibir**, **Gerenciador de Servidores**. Consulte [Adicionar novas conexões](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections) para obter mais informações sobre como usar o Gerenciador de Servidores.
+O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o Gerenciador de Servidores, no menu principal, escolha **Exibir**, **Gerenciador de Servidores**. Consulte [Adicionar novas conexões](../data-tools/add-new-connections.md) para obter mais informações sobre como usar o Gerenciador de Servidores.
 
-O [SSDT (SQL Server Data Tools)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, Banco de Dados SQL do Azure e Azure SQL Data Warehouse. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
+O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, Banco de Dados SQL do Azure e Azure SQL Data Warehouse. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 
 O **Pesquisador de Objetos do SQL Server** no Visual Studio fornece uma exibição dos objetos de banco de dados semelhante ao SQL Server Management Studio. O Pesquisador de Objetos do SQL Server permite realizar trabalhos leves de design e administração de banco de dados, incluindo edição de dados de tabela, comparação de esquemas e execução de consultas usando menus contextuais diretamente no Pesquisador de Objetos do SQL Server e muito mais.
 

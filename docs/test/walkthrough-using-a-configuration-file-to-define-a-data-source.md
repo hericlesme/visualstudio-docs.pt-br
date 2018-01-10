@@ -11,16 +11,15 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: "32"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados
 Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo app.config para testes de unidade. Você aprenderá como criar um arquivo app.config que defina uma fonte de dados que possa ser usada pela classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. As tarefas ilustradas nesta explicação passo a passo incluem o seguinte:  
@@ -269,8 +268,8 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo a
 > [!IMPORTANT]
 >  Implante itens como fontes de dados para que fiquem acessíveis para o teste no diretório de implantação.  
   
-## <a name="see-also"></a>Consulte também  
- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)   
- [Criar e Executar Testes de Unidade para Código Existente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Testando o aplicativo](/devops-test-docs/test/test-apps-early-and-often)   
- [Como criar um teste de unidade orientado a dados](../test/how-to-create-a-data-driven-unit-test.md)
+## <a name="see-also"></a>Consulte também
+
+[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)  
+[Criar e Executar Testes de Unidade para Código Existente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
+[Como criar um teste de unidade orientado a dados](../test/how-to-create-a-data-driven-unit-test.md)

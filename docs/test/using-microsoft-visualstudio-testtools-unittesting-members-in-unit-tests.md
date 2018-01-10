@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
-caps.latest.revision: "6"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9468b796a601956941fb8d913e6ae6198afbfa59
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 251843d3e5a32ddedfe4f9081bd52330a457fe24
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Use as classes e membros do namespace Microsoft.VisualStudio.TestPlatform.UnitTestFramework> ao codificar testes de unidade. É possível usá-los ao gravar o teste de unidade do zero ou refinar um teste de unidade gerado do código em teste.  

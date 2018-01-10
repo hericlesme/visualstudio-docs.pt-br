@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - azure
-ms.openlocfilehash: a5c3d0c63ad049d641368ceb3f9ef395f243e51c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 043e720d96c021bf510047a8dc7643d057d8982d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publicando no Serviço de Aplicativo do Azure
 
@@ -31,10 +31,10 @@ Neste tópico:
 
 - [Pré-requisitos](#prerequisites)
 - [Criar um Serviço de Aplicativo do Azure](#create-an-azure-app-service)
-- [Configurar o Python no Serviço de Aplicativo](#configure-python-on-app-service)
-- [Publicar no Serviço de Aplicativo – Visual Studio 2017](#publish-to-app-service-visual-studio-2017)
-- [Publicar no Serviço de Aplicativo – Visual Studio 2015](#publish-to-app-service-visual-studio-2015)
-- [Depuração remota no Serviço de Aplicativo](#remote-debugging-on-app-service)
+- [Configurar o Python no Serviço de Aplicativo](#configure-python-on-azure-app-service)
+- [Publicar no Serviço de Aplicativo – Visual Studio 2017](#publish-to-app-service---visual-studio-2017)
+- [Publicar no Serviço de Aplicativo – Visual Studio 2015](#publish-to-app-service---visual-studio-2015)
+- [Depuração remota no Serviço de Aplicativo](#remote-debugging-on-azure-app-service)
 
 > [!Note]
 > Para obter informações adicionais das alterações entre o Visual Studio 2015 e Visual Studio 2017, consulte a postagem de blog, [Publicar no Azure no Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
@@ -53,10 +53,10 @@ Para este passo a passo, você precisará um projeto de aplicativo Web com base 
 
 A publicação no Azure requer um Serviço de Aplicativo de destino. Para essa finalidade, você pode criar um Serviço de Aplicativo usando uma assinatura do Azure ou pode usar um site temporário.
 
-Se você ainda não tem uma assinatura, comece com uma [conta gratuita completa do Azure](https://azure.microsoft.com/en-us/free/), que inclui créditos generosos para os serviços do Azure. Além disso, considere inscrever-se no [Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/), que fornece a você um crédito de US$ 25 todo mês durante um ano.
+Se você ainda não tem uma assinatura, comece com uma [conta gratuita completa do Azure](https://azure.microsoft.com/free/), que inclui créditos generosos para os serviços do Azure. Além disso, considere inscrever-se no [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), que fornece a você um crédito de US$ 25 todo mês durante um ano.
 
 > [!Tip]
-> Embora o Azure solicite um cartão de crédito para verificar a sua conta, não haverá cobranças no cartão. Você também pode definir um [limite de gastos](https://docs.microsoft.com/azure/billing/billing-spending-limit) igual a seus créditos gratuitos para garantir que não haja encargos adicionais. Além disso, o Azure oferece uma camada gratuita do Plano do Serviço de Aplicativo, que é ideal para aplicativos de teste simples, conforme descrito na próxima seção.
+> Embora o Azure solicite um cartão de crédito para verificar a sua conta, não haverá cobranças no cartão. Você também pode definir um [limite de gastos](/azure/billing/billing-spending-limit) igual a seus créditos gratuitos para garantir que não haja encargos adicionais. Além disso, o Azure oferece uma camada gratuita do Plano do Serviço de Aplicativo, que é ideal para aplicativos de teste simples, conforme descrito na próxima seção.
 
 ### <a name="using-a-subscription"></a>Usando uma assinatura
 
@@ -88,7 +88,7 @@ Se desejar, você também pode instalar o pacote `bottle` usando o processo naqu
 
 A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017 copia somente os arquivos do seu projeto para o servidor. Portanto, é necessário criar os arquivos pertinentes para configurar o ambiente de servidor.
 
-1. No **Gerenciador de Soluções** do Visual Studio, clique com botão direito do mouse no projeto e selecione **Adicionar > Novo Item…*. Na caixa de diálogo que é exibida, selecione o modelo "Azure web.config (Fast CGI)" e selecione OK. Isso cria um arquivo `web.config` na raiz do seu projeto. 
+1. No **Gerenciador de Soluções** do Visual Studio, clique com botão direito do mouse no projeto e selecione **Adicionar > Novo Item…*. Na caixa de diálogo que é exibida, selecione o modelo "Azure web.config (Fast CGI)" e selecione OK. Isso cria um arquivo `web.config` na raiz do seu projeto.
 
 1. Modifique a entrada `PythonHandler` em `web.config` para que o caminho corresponda à instalação do Python no servidor. Por exemplo, para o Python 3.6.1 x64, a entrada deve ser semelhante ao seguinte:
 
@@ -164,7 +164,7 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 
     c. Use o console do Kudu para atualizar todos os pacotes listados no arquivo `requirements.txt` do seu aplicativo: navegue até a mesma pasta do Python que é usada em `web.config`, como `/home/python361x64`, e execute o seguinte comando, conforme descrito na seção [Console do Kudu](managing-python-on-azure-app-service.md#azure-app-service-kudu-console):
 
-    ```
+    ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
@@ -188,9 +188,9 @@ A publicação no Serviço de Aplicativo do Azure através do Visual Studio 2017
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Publicação no Serviço de Aplicativo – Visual Studio 2015
 
 > [!Note] 
-> Um breve vídeo desse processo pode ser encontrado em [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Tutorial do Python do Visual Studio: compilando um site) (youtube.com, 3min10s). 
+> Um breve vídeo desse processo pode ser encontrado em [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Tutorial do Python do Visual Studio: compilando um site) (youtube.com, 3min10s).
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e selecione **Publicar**. 
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e selecione **Publicar**.
 
 1. Na caixa de diálogo **Publicar**, selecione **Serviço de Aplicativo do Microsoft Azure**:
 
@@ -226,4 +226,4 @@ Quando você publica uma configuração de depuração através do Visual Studio
 
 Em vez disso, com o Visual Studio 2017 você adiciona esses componentes diretamente ao projeto. Clique com botão direito do mouse no projeto em **Gerenciador de Soluções**, selecione **Adicionar > Novo Item...** e, em seguida, selecione o modelo "web.config de depuração remota do Azure". Uma arquivo `web.debug.config` de depuração e a pasta de ferramenta `ptvsd` aparecerão em seu projeto.
 
-Depois que esses arquivos forem implantados no servidor (automaticamente com o Visual Studio 2015 e na sua próxima publicação com o Visual Studio 2017), você poderá seguir as instruções para [Depuração remota do Azure](https://docs.microsoft.com/visualstudio/python/debugging-azure-remote).
+Depois que esses arquivos forem implantados no servidor (automaticamente com o Visual Studio 2015 e na sua próxima publicação com o Visual Studio 2017), você poderá seguir as instruções para [Depuração remota do Azure](debugging-azure-remote.md).

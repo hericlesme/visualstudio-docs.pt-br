@@ -8,15 +8,14 @@ ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
-ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
 ms.workload: dotnet
-ms.openlocfilehash: 45ab3f266a46cd08d269f0c463fb6cc26f494a91
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing com o Visual Studio 2017
 
@@ -118,7 +117,7 @@ Ao focalizar o símbolo de êxito ou de falha na janela de código, é possível
  
   ![Image](./media/lut-failedinfo.png) 
 
-Além de fornecer os nomes e os resultados de testes, a dica de ferramenta permite executar novamente o conjunto de testes, bem como executar o conjunto de testes usando o depurador. Se você selecionar um ou mais dos testes na dica de ferramenta, é possível executar ou depurar apenas esses testes. Isso permite depurar seus testes sem ter que sair da janela de código. Ao depurar, além de observar quaisquer pontos de interrupção que você tenha definido, a execução do programa pausará quando o depurador executar um método [`Assert`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) que retorna um resultado inesperado. 
+Além de fornecer os nomes e os resultados de testes, a dica de ferramenta permite executar novamente o conjunto de testes, bem como executar o conjunto de testes usando o depurador. Se você selecionar um ou mais dos testes na dica de ferramenta, é possível executar ou depurar apenas esses testes. Isso permite depurar seus testes sem ter que sair da janela de código. Ao depurar, além de observar quaisquer pontos de interrupção que você tenha definido, a execução do programa pausará quando o depurador executar um método [`Assert`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) que retorna um resultado inesperado. 
 
 Ao focalizar um teste com falha na dica de ferramenta, ele é expandido para fornecer informações adicionais sobre a falha, conforme mostrado na imagem a seguir. Se você clicar duas vezes no teste com falha na dica de ferramenta, poderá acessá-lo diretamente.
 

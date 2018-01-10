@@ -1,7 +1,7 @@
 ---
 title: Trabalhando com o Python no Visual Studio, etapa 1 | Microsoft Docs
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9c80eb8b09a7bbcfc813c70d548f9762422262ed
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Trabalhando com o Python no Visual Studio
 
@@ -51,7 +51,7 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 
     Observe como o suporte do Python no Visual Studio inclui uma variedade de modelos de projeto, incluindo aplicativos Web usando as estruturas Bottle, Flask e Django. No entanto, para as finalidades deste passo a passo, vamos começar com um projeto vazio.
 
-1. Selecione o modelo **Aplicativo Python**, especifique um nome para o projeto e selecione **OK**. 
+1. Selecione o modelo **Aplicativo Python**, especifique um nome para o projeto e selecione **OK**.
 
 1. Após alguns instantes, o Visual Studio mostrará a estrutura do projeto na janela **Gerenciador de Soluções** (1). O arquivo de código padrão será aberto no editor (2). A janela Propriedades (3) também será exibida para mostrar informações adicionais sobre qualquer item selecionado no Gerenciador de Soluções, incluindo sua localização exata no disco.
 

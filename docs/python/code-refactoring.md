@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8ab260780c7cd2841d0ffe88f4eb0cc817592c4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="refactoring-python-code"></a>Refatorando o código do Python
 
@@ -26,7 +26,7 @@ O Visual Studio fornece vários comandos para transformar e limpar o código-fon
 - [Renomear](#rename) renomeia uma classe, um método ou um nome de variável selecionado
 - [Extrair método](#extract-method) cria um novo método do código selecionado
 - [Adicionar importação](#add-import) fornece uma marcação inteligente para adicionar uma importação ausente
-- [Remover importações não utilizadas](#remove-imports) remove importações não utilizadas
+- [Remover importações não utilizadas](#remove-unused-imports) remove importações não utilizadas
 
 <a name="rename-variable"</a>
 
@@ -72,6 +72,7 @@ Da mesma forma, o Visual Studio filtra funções importadas de outros módulos o
 Por fim, se algo normalmente precisar ser excluído devido às regras acima, mas tiver outros valores que serão incluídos (devido ao fato de o nome ter recebido um valor no módulo, por exemplo), o Visual Studio ainda excluirá a importação. Esse comportamento pressupõe que o valor não deverá ser exportado, pois ele é definido em outro módulo e, portanto, a atribuição adicional provavelmente será um valor fictício que também não é exportado.
 
 <a name="remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>Remover importações não utilizadas
 
 Ao escrever o código, é fácil acabar com instruções `import` para módulos que não estão sendo usados. Como o Visual Studio analisa o código, ele pode determinar automaticamente se uma instrução `import` é necessária, observando se o nome importado é usado dentro do escopo abaixo, no qual a instrução ocorre.
