@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Criando o perfil do desempenho de aplicativos do SharePoint
   Se seus aplicativos do SharePoint estiverem lento ou ineficiente, você pode usar os recursos de criação de perfil no Visual Studio para identificar código problemática e outros elementos. Usando a recurso de teste de carga, você pode determinar como um aplicativo do SharePoint executa sob carga excessiva, como quando muitos usuários acessam o aplicativo simultaneamente. Executando testes de desempenho na web, você pode medir o desempenho do aplicativo na web. Usando testes de IU codificados, você pode verificar se o aplicativo do SharePoint inteiro, incluindo sua interface de usuário, funciona corretamente. Quando você usar esses testes juntos, eles podem ajudá-lo a identificar problemas de desempenho antes de implantar seu aplicativo.  
@@ -66,9 +66,7 @@ ms.lasthandoff: 12/22/2017
 |[Efetuar teste de unidade em seu código](/visualstudio/test/unit-test-your-code)|Descreve como localizar erros lógicos em seu código usando testes de unidade.|  
 |[Testando os aplicativos do SharePoint 2010 com testes de IU codificados](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Descreve como testar a interface do usuário dos aplicativos do SharePoint.|  
   
-## <a name="see-also"></a>Consulte também  
- [Compilando e depurando soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Testando o aplicativo](/devops-test-docs/test/test-apps-early-and-often)   
- [Melhorar a qualidade do código](/visualstudio/test/improve-code-quality)  
-  
-  
+## <a name="see-also"></a>Consulte também
+
+[Compilando e depurando soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+[Melhorar a qualidade do código](/visualstudio/test/improve-code-quality)

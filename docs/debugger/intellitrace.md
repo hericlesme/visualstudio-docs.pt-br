@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Você pode passar menos tempo depurar seu aplicativo quando você usar o IntelliTrace para registrar e rastrear o histórico de execução do seu código. Você pode localizar erros facilmente como IntelliTrace permite que você:  
@@ -47,7 +47,7 @@ Você pode passar menos tempo depurar seu aplicativo quando você usar o Intelli
 |||  
 |-|-|  
 |**Depure o aplicativo com o IntelliTrace:**<br /><br /> -Mostre após eventos.<br />-Mostrar-me chamar informações com eventos passados.<br />-Salve minha sessão do IntelliTrace.<br />-Controle os dados que coleta do IntelliTrace.|-   [Passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Recursos do IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Depuração histórica](../debugger/historical-debugging.md)<br />-   [Instantâneos de modo de exibição usando o IntelliTrace etapa-back](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Coletar dados do IntelliTrace durante uma sessão de teste no Test Manager**|-   [Coletar mais dados de diagnóstico em testes manuais](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Coletar dados do IntelliTrace durante uma sessão de teste no Test Manager**|-   [Coletar mais dados de diagnóstico em testes manuais](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Coletar dados do IntelliTrace de aplicativos implantados**|-   [Usar o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Inicie a depuração de um arquivo de log do IntelliTrace (arquivo. itrace).**|-   [Usando os dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ Você pode passar menos tempo depurar seu aplicativo quando você usar o Intelli
   
 -   Seu aplicativo falha em um computador de teste, mas é executado com êxito em um computador de desenvolvimento.  
   
-     Você pode coletar dados do IntelliTrace do Microsoft Test Manager, salvar os dados em um arquivo .iTrace e anexar esse arquivo a um item de trabalho do Team Foundation Server para investigação posterior. Consulte [coletar mais dados de diagnóstico em testes manuais](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) e [usar salva dados do IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
+     Você pode coletar dados do IntelliTrace do Microsoft Test Manager, salvar os dados em um arquivo .iTrace e anexar esse arquivo a um item de trabalho do Team Foundation Server para investigação posterior. Consulte [coletar mais dados de diagnóstico em testes manuais](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) e [usar salva dados do IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   
 -   Um bug ou a falha ocorre em um aplicativo implantado.  
   
@@ -180,8 +180,6 @@ Você pode passar menos tempo depurar seu aplicativo quando você usar o Intelli
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Recursos do IntelliTrace](../debugger/intellitrace-features.md)  
-  
- [Incluir dados de rastreamento de diagnóstico com que sejam difíceis de reproduzir](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)  
   

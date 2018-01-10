@@ -13,11 +13,11 @@ author: willbrown
 ms.author: willbrown
 manager: justinclareburt
 ms.workload: willbrown
-ms.openlocfilehash: e6ce654e158fbfbdaa3692d37f638e72085f8c4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Como: fazer extensões compatível com 2017 do Visual Studio e o Visual Studio 2015
 
@@ -169,7 +169,7 @@ Neste ponto, o arquivo de manifesto deve ser algo assim:
 Por exemplo:
 
 ```xml
-<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201… Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
 * Adicionar instruções condicionais adicionais para o `<import>` marcas que têm um Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Faça isso inserindo `'$(VisualStudioVersion)' == '14.0' And` na frente da instrução de condição. Essas instruções aparecerá no cabeçalho e rodapé do arquivo csproj.
@@ -177,7 +177,7 @@ Por exemplo:
 Por exemplo:
 
 ```xml
-<Import Project="packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0… Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…/>
+<Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
 * Adicionar instruções condicionais adicionais para o `<Error>` marcas que têm uma referência de Microsoft.VSSDK.BuildTools.  Faça isso inserindo `'$(VisualStudioVersion)' != '14.0' And` na frente da instrução de condição. Essas instruções serão exibida no rodapé do arquivo csproj.
@@ -185,7 +185,7 @@ Por exemplo:
 Por exemplo:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…/>
+<Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
 * Adicionar instruções condicionais adicionais para o `<Error>` marcas que têm um Microsoft.VisualStudio.Sdk.BuildTasks.14.0.  Faça isso inserindo `'$(VisualStudioVersion)' == '14.0' And` na frente da instrução de condição. Essas instruções serão exibida no rodapé do arquivo csproj.
@@ -193,7 +193,7 @@ Por exemplo:
 Por exemplo:
 
 ```xml
-<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\ Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…/>
+<Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
 * Salve o arquivo csproj e fechá-lo.

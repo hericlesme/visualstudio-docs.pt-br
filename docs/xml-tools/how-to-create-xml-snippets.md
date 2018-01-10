@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Como: Crie trechos XML
 O editor XML pode ser usado para criar novos trechos XML. O editor inclui um trecho XML, chamado “pequena notícias”, que é uma pequena notícias de texto constante para criar novos trechos XML.  
@@ -54,7 +54,7 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um tre
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  O `Expansion` tipo determina se o trecho de código aparece quando você invoca o **Inserir trecho** comando. O `SurroundsWith` tipo determina se o trecho de código aparece quando você invoca o **Surrounds com** comando.  
   
@@ -72,7 +72,7 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um tre
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  O elemento de `Code` inclui três variáveis.  
   
@@ -88,7 +88,7 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um tre
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  O valor do elemento de nome é marcado como uma região editável.  
   
@@ -100,7 +100,7 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um tre
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  Literais também podem se referir funções. O Editor de XML inclui uma função chamada **LookupPrefix**. O **LookupPrefix** função procura o URI do namespace especificado no local no documento XML que este trecho de código é invocado do e retorna o prefixo de namespace que é definido para esse namespace, se houver, e inclui os dois-pontos (:) Esse nome. A seguir está um exemplo de um `Literal` elemento que usa o **LookupPrefix** função.  
   
@@ -109,7 +109,7 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um tre
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  A variável de $prefix$ pode então ser usado em qualquer lugar no seu trecho XML.  
   
