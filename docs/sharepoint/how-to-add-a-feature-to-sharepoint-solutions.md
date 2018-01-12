@@ -13,17 +13,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, features
-ms.assetid: 47f5f5df-19e3-40f6-8efb-f458193ef19a
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9202c60a990e2638e90daa380116aa2acfdc9f23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 17dd4438b0da4796cf553eee21eea4ccbefb13ee
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Como adicionar uma funcionalidade a soluções do SharePoint
   Quando você cria uma solução do SharePoint, um recurso e um pacote são adicionados à solução. Você pode adicionar mais itens de recurso para organizar os diferentes tipos de arquivos do SharePoint.  

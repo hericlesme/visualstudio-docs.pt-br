@@ -14,17 +14,15 @@ helpviewer_keywords:
 - databases [Office development in Visual Studio], scrolling records
 - records [Office development in Visual Studio], scrolling
 - data [Office development in Visual Studio], scrolling database records
-ms.assetid: 9b008be4-06a3-4ffc-9f02-79dd6cfe00ab
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 035b74048aca3b91449bc857a36594bc280065c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 386a8c14ebb831a47c6d08d6fd45f9c3d614263d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Passo a passo: Associando a dados de um serviço em um projeto de suplemento do VSTO
   Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este passo a passo demonstra como adicionar controles a um documento do Microsoft Office Word, vincular controles a dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.  

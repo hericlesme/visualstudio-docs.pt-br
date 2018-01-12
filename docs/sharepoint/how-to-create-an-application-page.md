@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], adding
 - application pages [SharePoint development in Visual Studio], creating
-ms.assetid: 9ad7044a-2fa7-4bba-8f25-b9f2cc1b7c6b
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 75c896f101f1eb0a11884b492ba559045a1dd180
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9429f2834997ce5ad2c3359fb04c164995dd2e12
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-an-application-page"></a>Como criar uma página de aplicativo
   Você pode criar uma página da web para um ou mais sites do SharePoint. No SharePoint, essas páginas são chamadas de páginas do aplicativo. Ao contrário de uma página do site, uma página de aplicativo contém código que é executado por trás da página. Para obter mais informações, consulte [criando páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  

@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-ms.assetid: 73f8d6a9-4c64-4bba-ae0e-9474baf8df26
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9e643eb31062bcd81302fba6e7d35cc8dfa674b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b5b3ab297612ec48027af8d4eb74956d1d255443
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Como: implantar um e publicar uma solução do SharePoint em um local do SharePoint
   Você pode implantar ou publicar soluções do SharePoint em um servidor local do SharePoint no computador de desenvolvimento. O processo de implantação copia o arquivo. wsp no servidor do SharePoint, instala a solução e, em seguida, ativa os recursos. O processo de publicação só copia o arquivo. wsp no servidor do SharePoint e instala-o. Você deve ativar manualmente para habilitá-lo no SharePoint.  

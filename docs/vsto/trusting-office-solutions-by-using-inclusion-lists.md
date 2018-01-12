@@ -15,17 +15,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - security [Office development in Visual Studio], inclusion lists
 - inclusion lists [Office development in Visual Studio]
-ms.assetid: 6dae0128-435b-4fa1-aed9-73e728fdcacf
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5eb6c744005c48fa33592da2113f88e4917a259a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1fd73ddef389ba1f97aed46a41e1e6972135fd21
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="trusting-office-solutions-by-using-inclusion-lists"></a>Confiando em soluções do Office usando listas de inclusões
   Listas de inclusão permitem aos usuários conceder confiança a soluções do Office que são assinados com um certificado que identifica o Editor. Listas de inclusão são específicas do usuário, e eles podem ser usados para personalizações no nível do documento e suplementos do VSTO.  
