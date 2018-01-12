@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Depuração remota
 Você pode depurar um aplicativo do Visual Studio que foi implantado em um computador diferente. Para fazer isso, você deve usar o depurador remoto do Visual Studio.
@@ -35,9 +35,9 @@ Para obter instruções detalhadas sobre a depuração remota, consulte estes t�
 |Cenário|Link|
 |-|-|-|
 |ASP.NET|[Depuração ASP.NET Core remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) ou [ASP.NET de depuração remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# ou Visual Basic|[Um c# ou Visual Basic Project a depuração remota](remote-debugging-csharp.md)|
-|C++|[Depuração remota de um projeto em C++](remote-debugging-cpp.md)|
-|Aplicativos universais do Windows (UWP)|[Depurar pacote de aplicativo instalado](debug-installed-app-package.md)|
+|C# ou Visual Basic|[Um c# ou Visual Basic Project a depuração remota](../debugger/remote-debugging-csharp.md)|
+|C++|[Depuração remota de um projeto em C++](../debugger/remote-debugging-cpp.md)|
+|Aplicativos universais do Windows (UWP)|[Executar aplicativos UWP em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) e [depurar um pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)|
 |Azure|[ASP.NET de depuração remota no Azure](remote-debugging-azure.md)|
 |Malha do serviço do Azure|[Depurar um aplicativo de malha do serviço remoto](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 

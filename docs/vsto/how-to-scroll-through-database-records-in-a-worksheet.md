@@ -15,17 +15,15 @@ helpviewer_keywords:
 - records [Office development in Visual Studio], scrolling
 - data [Office development in Visual Studio], scrolling database records
 - worksheets [Office development in Visual Studio], scrolling records
-ms.assetid: aea4c86c-9d6d-47dd-8977-066e21945dab
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6e3dcc6d0ed711d41fd47f043177e5d172193249
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7e6ea8269401a8b026da2562eff96e50820e0a0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Como percorrer registros do banco de dados em uma planilha
   O procedimento a seguir mostra como usar o designer para exibir um único campo de uma tabela de banco de dados em uma planilha do Microsoft Office Excel, com controles que permitem que o usuário final percorrer todos os registros.  

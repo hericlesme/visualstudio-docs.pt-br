@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Depurar HTML e CSS em UWP e aplicativos do Windows 8.1
 ![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Para aplicativos em JavaScript, Visual Studio fornece uma experiência de depuração abrangente que inclui recursos que são familiares para desenvolvedores do Internet Explorer e Visual Studio. Esses recursos têm suporte para [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplicativos do Windows Phone e para aplicativos criados usando ferramentas do Visual Studio para Apache Cordova.  
+ Para aplicativos em JavaScript, Visual Studio fornece uma experiência de depuração abrangente que inclui recursos que são familiares para desenvolvedores do Internet Explorer e Visual Studio. Esses recursos têm suporte para aplicativos UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplicativos do Windows Phone e para aplicativos criados usando ferramentas do Visual Studio para Apache Cordova.  
   
  Com o uso do modelo de depuração interativo fornecido pelas ferramentas de inspeção do DOM, você pode ver e modificar o código HTML e CSS renderizado. Você pode fazer tudo isso sem parar e reiniciar o depurador.
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  Para obter um exemplo que demonstra como selecionar elementos usando o **elemento Select** botão, consulte [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ##  <a name="BrowserSupport"></a>Suporte a navegadores e plataformas  
- As ferramentas do Visual Studio para JavaScript, o Explorador do DOM e a janela Console do JavaScript são suportadas nas seguintes plataformas:  
+ O Explorador do DOM e a janela do Console do JavaScript têm suporte nas seguintes plataformas:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]e aplicativos do Windows Phone que usam JavaScript e HTML  
+-   Aplicativos UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] e aplicativos do Windows Phone usando JavaScript e HTML  
   
 -   Internet Explorer 11 em execução no [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

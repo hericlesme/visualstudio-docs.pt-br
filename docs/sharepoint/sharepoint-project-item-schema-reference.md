@@ -23,17 +23,15 @@ helpviewer_keywords:
 - ProjectItemFile element
 - ExtensionDataItem element
 - ProjectItem element
-ms.assetid: 12b63cbc-bf94-4175-bfa8-2117943d00d1
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e02d3eff52ce0318f9a6f2a6e57c6e0fb2e3a56a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 99a2471919483f02a9f58a35ad164527a12a39c5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint Referência do esquema de item de projeto
   Visual Studio usa o esquema de item de projeto do SharePoint para validar o conteúdo de arquivos. spdata. Um arquivo. spdata Especifica o conteúdo e o comportamento de um item de projeto do SharePoint. Para obter mais informações sobre o conteúdo do SharePoint dos itens de projeto, consulte [criando modelos de Item e modelos de projeto do SharePoint para itens de projeto](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  

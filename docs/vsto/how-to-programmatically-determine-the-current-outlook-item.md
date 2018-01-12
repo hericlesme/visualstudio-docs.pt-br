@@ -15,17 +15,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], current item
 - SelectionChange event
 - Outlook [Office development in Visual Studio], current item
-ms.assetid: b4fb5ccd-b297-463e-9208-1fec42482531
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 112a2c1273b0087eea98736a4e47ac5de8787149
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: de17e299e98a46a82547bc38dfecd17a9f5aea58
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Como determinar o item atual do Outlook programaticamente
   Este exemplo usa o evento Explorer.SelectionChange para exibir o nome da pasta atual e algumas informações sobre o item selecionado. O código, em seguida, exibe o item selecionado.  

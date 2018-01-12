@@ -14,17 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], populating
 - databases [Office development in Visual Studio], populating worksheets
 - data [Office development in Visual Studio], adding to worksheets
-ms.assetid: e9e37cf1-53ca-45d0-8409-5428be7f96c5
-caps.latest.revision: "39"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6efeccfdaa6b3377869fb20f9c66613960529daf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5a5cfe5d15e1b883de46809523f1d1acaecddc91
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Como preencher planilhas com dados de um banco de dados
   Você pode acessar dados em projetos do Office em nível de documento da mesma maneira que você acessar dados em projetos de formulários do Windows. Usar as mesmas ferramentas e código para trazer os dados para sua solução, e você pode até usar controles de formulários do Windows para exibir os dados. Além disso, você pode tirar proveito dos controles chamados controles de host, que são objetos nativo no Microsoft Office Excel que foram aprimorados com eventos e a capacidade de associação de dados. Para obter mais informações, consulte [itens de Host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md).  

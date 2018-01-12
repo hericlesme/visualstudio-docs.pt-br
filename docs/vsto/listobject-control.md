@@ -17,17 +17,15 @@ helpviewer_keywords:
 - ListObject control, events
 - ListObject control, data binding
 - ListObject control, improving performance when bound to data
-ms.assetid: 2bdecbf0-2a0f-48de-a544-dca12bb4a9a3
-caps.latest.revision: "70"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3f203b7e350f30d27d88e27ff9688bdbdee2b3d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2100a1c30fda5981d3d7e58f2f5077e0cdf87a2d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="listobject-control"></a>Controle ListObject
   O <xref:Microsoft.Office.Tools.Excel.ListObject> controle é uma lista que expõe eventos e pode ser associada a dados. Quando você adiciona uma lista em uma planilha, o Visual Studio cria um <xref:Microsoft.Office.Tools.Excel.ListObject> controle que você pode programar diretamente sem a necessidade de desviar o modelo de objeto do Microsoft Office Excel.  

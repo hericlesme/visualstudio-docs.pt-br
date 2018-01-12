@@ -17,17 +17,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, browsing SharePoint sites
 - SharePoint development in Visual Studio, SharePoint Connections
 - SharePoint Connections [SharePoint development in Visual Studio]
-ms.assetid: b3b1d97b-e990-414c-8ba5-3fd1b463fbef
-caps.latest.revision: "20"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: b16a2ee34ca757e62a26676386566b94c31ebf74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5ea474f2439b6da519563f08ffe4ddc2f6dcef30
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>Navegando em conexões do SharePoint usando o Gerenciador de Servidores
   Agora você pode procurar conexões locais do SharePoint no **Server Explorer**. Usando essa técnica, você pode navegar por meio dos componentes de um site do SharePoint em seu sistema. Componentes do site do SharePoint, como definições de listas e tipos de conteúdo, aparecem em um nó chamado **conexões do SharePoint** na exibição de árvore de **Server Explorer**. Para exibir **Server Explorer**, na barra de menus, escolha **exibição**, **Server Explorer**. Além de exibir os componentes do site do SharePoint, você pode remover itens, exibir suas propriedades ou atualizar a exibição de árvore usando comandos no menu de atalho.  

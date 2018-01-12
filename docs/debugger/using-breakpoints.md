@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Você pode definir pontos de interrupção quando você deseja interromper a execução do depurador, talvez para ver o estado de variáveis de código ou para examinar a pilha de chamadas. Eles são uma das técnicas de depuração mais importantes na caixa de ferramentas do desenvolvedor.  
@@ -232,7 +232,7 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
 ## <a name="export-and-import-breakpoints"></a>Pontos de interrupção de importação e exportação  
  Você pode exportar um ponto de interrupção em um arquivo XML, clicando duas vezes no ponto de interrupção e selecionando **exportar**. O arquivo é salvo por padrão no diretório da solução. Para importar os pontos de interrupção, abra o **pontos de interrupção** janela (**CTRL + ALT + B**) e na barra de ferramentas, clique na seta para a direita (a dica de ferramenta é **importar pontos de interrupção de um arquivo**) .  
   
-## <a name="troubleshoot-breakpoints"></a>Solucionar problemas de pontos de interrupção  
+## <a name="troubleshoot"></a>Solucionar problemas de pontos de interrupção 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Excluí um ponto de interrupção, mas continuar a pressionar ele quando iniciar a depuração novamente  
  Se você excluir um ponto de interrupção durante a depuração, em alguns casos pode atingir o ponto de interrupção novamente na próxima vez que você iniciar a depuração. Para interromper a alcançar este ponto de interrupção, verifique se todas as instâncias do ponto de interrupção são removidas do **pontos de interrupção** janela.  

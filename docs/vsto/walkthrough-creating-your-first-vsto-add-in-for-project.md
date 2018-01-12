@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Project [Office development in Visual Studio], creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
-ms.assetid: da2b727e-6db8-4853-bf00-7afe0ef13213
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 391bd4bbdfe87f1bc00ac14356c61f988b8bf041
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1e1b768a8d812d3a4c0222bbb3e762c0f5046f56
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>Passo a passo: Criando seu primeiro suplemento VSTO para Project
   Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office Project. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual projeto estiver aberto. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  

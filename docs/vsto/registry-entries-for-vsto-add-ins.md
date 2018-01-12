@@ -16,17 +16,15 @@ helpviewer_keywords:
 - registry keys [Office development in Visual Studio]
 - application-level add-ins [Office development in Visual Studio], registry entries
 - registry entries [Office development in Visual Studio]
-ms.assetid: 319e5bbc-0234-4af0-91ce-54bcfafc173f
-caps.latest.revision: "79"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: bcc3b19bc84d418798f296f15b36a367223c21fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4be05e4fb1b4fc74467f1607acaa3e84a6bdef95
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas do Registro para suplementos VSTO
   Quando você implanta suplementos do VSTO que são criados usando o Visual Studio, você deve criar um conjunto específico de entradas do registro. Essas entradas de registro fornecem informações que permite que o aplicativo do Microsoft Office descobrir e carregar o suplemento do VSTO.  

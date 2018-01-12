@@ -25,17 +25,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-ms.assetid: a6349e85-45cf-4766-b856-e25c9f1ffd34
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3398364f4c9e4046c3ab4670a544a96c5ac455c6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d0c5acfac06702894f67a8bfc1547462a0069e15
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Criando Web Parts para SharePoint
   Usando web parts, você pode modificar o conteúdo, a aparência e o comportamento das páginas de um site do SharePoint usando um navegador. Web parts são controles do servidor que é executado dentro de uma página de web part: eles são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [blocos de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkID=182097).  

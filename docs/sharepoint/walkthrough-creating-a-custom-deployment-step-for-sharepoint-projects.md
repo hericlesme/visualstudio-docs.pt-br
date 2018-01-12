@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint commands
 - SharePoint development in Visual Studio, extending deployment
-ms.assetid: 4ba2d120-06b8-4ef3-84eb-c6c50ced9d82
-caps.latest.revision: "63"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1a2659e1c6ebf7bee8320f10549c2a8914010648
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Instruções passo a passo: criando uma etapa de implantação para projetos SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui várias etapas de implantação interna, mas você também pode criar seus próprios.  

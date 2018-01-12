@@ -23,17 +23,15 @@ helpviewer_keywords:
 - hiding custom task panes
 - task panes [Office development in Visual Studio], creating
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
-ms.assetid: 00ce8b1e-1370-42f2-9dc9-609cada392f1
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0505759a63598bedefb2315582ac844e16a9405f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Instruções passo a passo: sincronizando um painel Tarefa Personalizada com uma botão de faixa de opções
   Este passo a passo demonstra como criar um painel tarefa personalizada que os usuários podem ocultar ou exibir um botão de alternância na faixa de opções. Você sempre deve criar um elemento de interface do usuário do usuário, como um botão, o que os usuários podem clicar para exibir ou ocultar o painel de tarefas, como aplicativos do Microsoft Office não fornecem uma maneira padrão para os usuários mostrar ou ocultar painéis de tarefas personalizados.  

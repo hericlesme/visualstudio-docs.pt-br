@@ -16,17 +16,15 @@ helpviewer_keywords:
 - NamedRange control, events
 - NamedRange control, data binding
 - NamedRange control
-ms.assetid: 07878c7c-cb5a-4f98-95c4-e828de25dae5
-caps.latest.revision: "56"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6e2904a812f00e58e1ae5b4a56cd1ce742fc9357
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 22adc003c10e95de0e701eb3f382d9e530b28acf
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="namedrange-control"></a>Controle NamedRange
   O <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é um intervalo que tem um nome exclusivo, expõe eventos e pode ser associado a dados. Para obter mais informações, consulte [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).  

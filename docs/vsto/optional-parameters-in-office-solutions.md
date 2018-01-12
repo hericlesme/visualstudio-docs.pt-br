@@ -18,17 +18,15 @@ helpviewer_keywords:
 - missing field [Office development in Visual Studio]
 - optional parameters [Office development in Visual Studio]
 - parameters [Office development in Visual Studio], optional
-ms.assetid: 109eaef6-08bb-4b59-a29e-921f856027cc
-caps.latest.revision: "43"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3df07b6f60d4b870c830fc419b88decbe2f8fde1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fe40b6bc0af9df294408079c8a27dfac42df97b0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parâmetros opcionais em soluções do Office
   Muitos métodos nos modelos de objeto dos aplicativos do Microsoft Office aceitam parâmetros opcionais. Se você usar o Visual Basic para desenvolver uma solução do Office no Visual Studio, você não precisa passar um valor para parâmetros opcionais, como os valores padrão são usados automaticamente para cada parâmetro ausente. Na maioria dos casos, você também pode omitir os parâmetros opcionais em projetos do Visual c#. No entanto, você não pode omitir opcional **ref** parâmetros de `ThisDocument` classe em projetos de nível de documento do Word.  

@@ -20,17 +20,15 @@ helpviewer_keywords:
 - host controls, Word
 - host controls [Office development in Visual Studio], Word
 - Word [Office development in Visual Studio], host controls
-ms.assetid: 3911c7cd-7092-468d-bd82-2fdec53a2d9b
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 89dde8238cd2badb4ea9841263d822b5729d00cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3073f5f80e805f4c55e6924ada1be9a2ba139f6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="automating-word-by-using-extended-objects"></a>Automatizando o Word usando objetos estendidos
   Ao desenvolver soluções do Word no Visual Studio, você pode usar *itens de host* e *controle de host*s em suas soluções. Esses são objetos que estendem determinados objetos usados no modelo de objeto do Word (ou seja, o modelo de objeto que é exposto pelo assembly de interoperabilidade primária para o Word), como o <xref:Microsoft.Office.Interop.Word.Document> e <xref:Microsoft.Office.Interop.Word.ContentControl> objetos. Os objetos estendidos se comportam como os objetos do Word que eles se baseiam, mas adicionar eventos adicionais e recursos de associação de dados para os objetos.  

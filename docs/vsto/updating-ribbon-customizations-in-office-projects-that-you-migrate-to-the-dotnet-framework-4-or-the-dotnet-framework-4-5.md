@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-ms.assetid: 3b7c8ad4-a616-4b42-9d62-9658fdefe6a3
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d2c7dfef925ff61255e57315a3980fa6a145c235
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d3c2e834b3a618bf033ef7f37ca8bbac7d0efcf
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualizando personalizações da Faixa de Opções nos projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5
   Se o projeto contém uma personalização da faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** item de projeto, você deve fazer as seguintes alterações para o código do projeto, se a estrutura de destino for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou mais tarde.  

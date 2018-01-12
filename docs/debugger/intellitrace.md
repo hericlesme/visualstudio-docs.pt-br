@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Você pode passar menos tempo depurar seu aplicativo quando você usar o IntelliTrace para registrar e rastrear o histórico de execução do seu código. Você pode localizar erros facilmente como IntelliTrace permite que você:  
@@ -56,7 +56,7 @@ Você pode passar menos tempo depurar seu aplicativo quando você usar o Intelli
 |||  
 |-|-|  
 |**Com suporte**|-Aplicativos Visual Basic e Visual c# que usam o .NET Framework 2.0 ou versões posteriores.<br />     É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br />     Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [passo a passo: depurando um aplicativo do SharePoint, usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Para depurar aplicativos do Microsoft Azure com o IntelliTrace, consulte [depuração de um serviço de nuvem publicado com o Visual Studio e o IntelliTrace](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Suporte limitado**|-.NET core e ASP.NET Core aplicativos com suporte apenas para eventos de<br />-Aplicativos F # em uma base experimental<br />-Aplicativos da Windows Store Windows com suporte apenas para eventos de|  
+|**Suporte limitado**|-.NET core e ASP.NET Core aplicativos com suporte apenas para eventos de<br />-Aplicativos F # em uma base experimental<br />-Aplicativos UWP com suporte apenas para eventos de|  
 |**Sem suporte**|-C++, outros idiomas e script<br />-Serviços do Windows, Silverlight, Xbox, ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicativos|  
   
 > [!NOTE]

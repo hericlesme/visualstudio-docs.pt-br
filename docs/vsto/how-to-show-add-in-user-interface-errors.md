@@ -15,17 +15,15 @@ helpviewer_keywords:
 - errors [Office development in Visual Studio], user interface errors
 - user interfaces [Office development in Visual Studio], errors
 - application-level add-ins [Office development in Visual Studio], user interface errors
-ms.assetid: aa82cc04-e616-4501-940c-79d11fb393cc
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 35247fed0577d410db86b6d3bd436586784f240a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ce5204855cd6ebe468d652b8420cddc7fd19a1a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Como mostrar erros de interface do usuário do suplemento
   Por padrão, se um suplemento do VSTO tentar manipular a interface de usuário (IU) do Microsoft Office e falhar, nenhuma mensagem de erro é exibida. No entanto, você pode configurar aplicativos do Microsoft Office para exibir mensagens para erros relacionados à interface do usuário. Você pode usar essas mensagens para ajudar a determinar por que uma faixa de opções personalizada não aparece, ou por que aparece uma faixa de opções, mas não há controles aparecem.  

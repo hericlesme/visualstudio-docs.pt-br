@@ -16,17 +16,15 @@ helpviewer_keywords:
 - text searches, documents
 - text [Office development in Visual Studio], searching in documents
 - text [Office development in Visual Studio], text searches
-ms.assetid: a66962f5-eeb9-4dc6-a70f-9039ab437a63
-caps.latest.revision: "51"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3ce2298ee213e310409dd904acb342e390cb1db2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 658da08ee7d61651b02d7d42158637dad7ab16c4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text--in-documents"></a>Como localizar e substituir texto em documentos programaticamente
   O <xref:Microsoft.Office.Interop.Word.Find> objeto é um membro de ambos os <xref:Microsoft.Office.Interop.Word.Selection> e o <xref:Microsoft.Office.Interop.Word.Range> objetos e você pode usar qualquer um para pesquisar texto em documentos do Microsoft Office Word. O comando Substituir é uma extensão do comando Localizar.  

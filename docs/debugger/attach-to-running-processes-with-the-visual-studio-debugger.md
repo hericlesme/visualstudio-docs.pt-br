@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar aos processos em execução com o Depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está sendo executado, clique em **Depurar > Anexar ao processo** (ou pressione **CTRL + ALT + P**) para abrir o **anexar ao processo** caixa de diálogo.
@@ -145,12 +145,9 @@ Para alguns tipos de aplicativo (como aplicativos UWP), não conecte diretamente
 |Depuração remota ASP.NET 4 ou 4.5 em um servidor IIS|Usar as ferramentas remotas e anexar ao processo|W3wp.exe|Consulte [ASP.NET de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Depuração remota ASP.NET Core em um servidor IIS|Usar as ferramentas remotas e anexar ao processo|dotnet.exe|Para implantação de aplicativos, consulte [publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para depuração, consulte [remoto depuração ASP.NET Core em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |Depuração de outros tipos de aplicativos com suporte em um processo do servidor|Usar as ferramentas remotas (se o servidor for remoto) e anexar ao processo|outros processos ou iexplore.exe|Se necessário, use o Gerenciador de tarefas para ajudar a identificar o processo. Consulte [depuração remota](../debugger/remote-debugging.md) e seções posteriores neste tópico|
-|Um aplicativo de área de trabalho do Windows de depuração remota|F5 e as ferramentas remotas|N/D| Consulte [depuração remota](../debugger/remote-debugging.md)|
+|Um aplicativo de área de trabalho do Windows de depuração remota|Ferramentas remotas e F5|N/D| Consulte [depuração remota](../debugger/remote-debugging.md)|
 |Um aplicativo de UWP (Universal), OneCore, HoloLens e IoT de depuração remota|Depurar pacote do aplicativo instalado|N/D|Consulte [depurar um pacote de aplicativos instalado](debug-installed-app-package.md) em vez de usar **anexar ao processo**|
-|Depurar um aplicativo Universal aplicativo UWP (Windows), OneCore, HoloLens e IoT que não tenha iniciado a partir do Visual Studio|Depurar pacote do aplicativo instalado|N/D|Consulte [depurar um pacote de aplicativos instalado](debug-installed-app-package.md) em vez de usar **anexar ao processo**|
-  
-> [!WARNING]
->  Para anexar a um UWP que está escrito em JavaScript, você primeiro deve ativar a depuração para o aplicativo. Consulte [anexar o depurador](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) no Centro de desenvolvimento do Windows.  
+|Depurar um aplicativo Universal aplicativo UWP (Windows), OneCore, HoloLens e IoT que não tenha iniciado a partir do Visual Studio|Depurar pacote do aplicativo instalado|N/D|Consulte [depurar um pacote de aplicativos instalado](debug-installed-app-package.md) em vez de usar **anexar ao processo**|  
   
 > [!NOTE]
 >  Para que o depurador se anexe ao código escrito em C++, o código precisa emitir `DebuggableAttribute`. Você pode adicionar isso ao seu código automaticamente por meio da vinculação com a [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) opção de vinculador.

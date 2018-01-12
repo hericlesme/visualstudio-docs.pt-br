@@ -10,17 +10,15 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-ms.assetid: 03ef25c2-6308-4737-a655-74bbbb472dc2
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: bafc82f247f067f1f836730ec1f676f2f9559915
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Melhorando o desempenho de um suplemento do VSTO
   Você pode dar aos usuários uma experiência melhor otimizando suplementos do VSTO que você cria para o Office aplicativos para que eles iniciarem rapidamente, desligar, abrir itens e executar outras tarefas. Se o suplemento do VSTO para Outlook, você também pode reduzir a chance de que seu suplemento do VSTO será desabilitado devido ao baixo desempenho. Você pode aumentar o desempenho de seu suplemento do VSTO implementando as estratégias a seguir:  

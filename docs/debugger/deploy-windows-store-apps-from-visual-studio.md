@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP do Visual Studio
 ![Aplica-se apenas ao Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 Em um dispositivo remoto Windows 10, você deve habilitar [modo de desenvolvedor](/windows/uwp/get-started/enable-your-device-for-development). Em dispositivos Windows 10 que executam a atualização do criador ou posterior, as ferramentas remotas são instaladas automaticamente quando você implantar seu aplicativo. Para obter mais informações, consulte [depurar um pacote de aplicativos instalados](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> No Windows 8.1 e versões de atualização do pré-criador do Windows 10, as ferramentas remotas do Visual Studio deve ser instaladas no dispositivo remoto e o depurador remoto deve estar em execução. No Windows 8.1, você também deve instalar uma licença de desenvolvedor.
+> No Windows 8.1 e versões de atualização do pré-criador do Windows 10, as ferramentas remotas para Visual Studio deve ser instaladas no dispositivo remoto e o depurador remoto deve estar em execução. No Windows 8.1, você também deve instalar uma licença de desenvolvedor.
   
 A implantação usa o canal de rede do depurador remoto para enviar os arquivos do aplicativo ao dispositivo remoto.  
   
@@ -101,7 +101,7 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
  Você pode definir as opções de implantação a seguir na página de propriedade de depuração do projeto de inicialização.  
   
  **Permitir Loopback de rede**  
- Por motivos de segurança, um aplicativo [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] instalado de maneira padrão não pode efetuar chamadas de rede para o dispositivo em que está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], você deve testá-lo sem a isenção.  
+ Por motivos de segurança, um UWP ou [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativo instalado da maneira padrão não tem permissão para fazer chamadas de rede para o dispositivo está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], você deve testá-lo sem a isenção.  
   
  Para remover a isenção de loopback de rede do aplicativo:  
   

@@ -14,17 +14,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], control layout
 - controls [Office development in Visual Studio], layout on actions panes
 - smart documents [Office development in Visual Studio], control layout
-ms.assetid: 857550d0-b9c0-4d2f-a947-dd955bcf2823
-caps.latest.revision: "59"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 06a2488606b93040cf897ac510455b8a9ef74ce2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7b70bf12ee608b28e462f022fae15b3be6336545
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Como gerenciar o layout de controle em painéis de ações
   Um painel de ações está encaixado à direita de um documento ou planilha por padrão. No entanto, pode ser encaixado à esquerda, superior ou inferior. Se você estiver usando vários controles de usuário, você pode escrever código para pilha corretamente os controles de usuário no painel Ações. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).  

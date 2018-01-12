@@ -15,17 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], hiding while printing
 - printing [Office development in Visual Studio], hiding controls
 - worksheets, hiding controls when printing
-ms.assetid: a637fe9a-9de1-4162-8ff6-fe28ccd62389
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 17ebd691120d1d5aba2623f8178d95c3fc142dee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 32a967371cb247139285d5db5d3cf88a2a7cc8f9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Como ocultar controles em planilhas durante a impressão
   Quando você imprime um documento do Microsoft Office Excel que contém os controles de formulários do Windows, os controles são visíveis na planilha impressa. Você pode ocultar os controles ao imprimir uma planilha.  

@@ -14,17 +14,15 @@ helpviewer_keywords:
 - worksheets, updating using managed controls
 - controls [Office development in Visual Studio], updating worksheets
 - worksheets, using radio buttons
-ms.assetid: cacc43a3-6d95-4a47-b943-3457d97a16f8
-caps.latest.revision: "58"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 36a83dc849260f9d58595e2f52bb422a1854b5ec
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Instruções passo a passo: atualizando um gráfico em uma planilha usando botões de opção
   Este passo a passo mostra as Noções básicas do uso de botões de opção em uma planilha do Microsoft Office Excel para dar ao usuário uma maneira para alternar rapidamente entre opções. Nesse caso, as opções de alterar o estilo de um gráfico.  

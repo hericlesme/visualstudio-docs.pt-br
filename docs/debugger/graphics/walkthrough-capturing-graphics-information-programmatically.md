@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 12/22/2017
 -   Capturando informações de gráficos  
   
 > [!NOTE]
->  As implementações anteriores do Captura programática baseava-se em ferramentas remotas para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para fornecer funcionalidade de captura, Windows 8.1 dá suporte à captura diretamente por meio de 11.2 Direct3D. Como resultado, você não precisa instalar as ferramentas remotas para Captura programática no Windows 8.1.  
+>  As implementações anteriores do Captura programática baseava-se em ferramentas remotas para Visual Studio para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para fornecer funcionalidade de captura, Windows 8.1 dá suporte à captura diretamente por meio de 11.2 Direct3D. Como resultado, você não precisa instalar as ferramentas remotas para Visual Studio para Captura programática no Windows 8.1.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparando o aplicativo para usar a captura programática  
  Para usar a captura programática em seu aplicativo, ele deve incluir os cabeçalhos necessários. Esses cabeçalhos são parte do SDK do Windows 8.1.  
@@ -183,10 +183,10 @@ ms.lasthandoff: 12/22/2017
   
      Se você não realizar essa etapa, o nome do arquivo será default.vsglog. Se você não definiu `DONT_SAVE_VSGLOG_TO_TEMP`, o local do arquivo será relativo para o diretório temporário. Do contrário, ele será relativo para o diretório de trabalho ou em outro local, caso tenha sido especificado um nome de arquivo absoluto.  
   
- Para [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplicativos, o local do diretório temporário é específico para cada usuário e o aplicativo e geralmente é encontrado em um local como C:\users\\*username*\AppData\Local\Packages\\ *nome de família de pacote*\TempState\\. Para aplicativos de área de trabalho, o local do diretório temporário são específico para cada usuário e geralmente é encontrado em um local como C:\Users\\*username*\AppData\Local\Temp\\.  
+ Para a UWP e [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplicativos, o local do diretório temporário é específico para cada usuário e o aplicativo e geralmente é encontrado em um local como C:\users\\*username*\AppData\Local\Packages\\ *nome de família de pacote*\TempState\\. Para aplicativos de área de trabalho, o local do diretório temporário são específico para cada usuário e geralmente é encontrado em um local como C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Para gravar em um local específico, você deve ter permissões para gravar nesse local, ou ocorrerá um erro. Lembre-se de que os aplicativos do [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] são mais restritos do que os aplicativos da área de trabalho em relação ao local onde podem gravar dados e podem exigir configuração adicional para gravação em determinados locais.  
+>  Para gravar em um local específico, você deve ter permissões para gravar nesse local, ou ocorrerá um erro. Tenha em mente que UWP e [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplicativos são mais restritos do que os aplicativos de área de trabalho sobre onde possa gravar dados e podem requerer configuração adicional para gravar em determinados locais.  
   
 ### <a name="capturing-the-graphics-information"></a>Capturando as informações gráficas  
  Depois que você tiver preparado o aplicativo para captura programática e, como opção, configurado o local e o nome do arquivo de log de gráficos, compile o aplicativo, em seguida, execute ou o depure para capturar dados. Não inicie o diagnóstico de gráficos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] quando você usar a API de captura programática. O log de gráficos é gravado no local especificado por você. Se quiser manter essa versão do log, mova-a para outro local. Do contrário, ela será substituída quando o aplicativo for executado novamente.  

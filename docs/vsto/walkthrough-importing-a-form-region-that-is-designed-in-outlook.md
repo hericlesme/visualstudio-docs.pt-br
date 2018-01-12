@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - importing form regions
 - form regions [Office development in Visual Studio], importing
-ms.assetid: 86b0ef1a-6d7e-4ea5-b90e-458ffe4e1d10
-caps.latest.revision: "35"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cf5b5ff9f2c3b2db5d7082e4eecd9eee4e235866
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8a6abfd5c09194fe9fb37f05a50d874c0239cde
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Instruções passo a passo: importando uma região de formulário projetada no Outlook
   Este passo a passo demonstra como criar uma região de formulário do Microsoft Office Outlook e, em seguida, importe a região de formulário para um projeto de suplemento do VSTO do Outlook usando o **nova região de formulário** assistente. Projetar a região de formulário do Outlook possibilita que você adicione controles nativos do Outlook para a região de formulário que associar dados do Outlook. Depois de importar a região do formulário, você pode manipular os eventos de cada controle.  

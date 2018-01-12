@@ -12,17 +12,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], saving string data
 - projects [SharePoint development in Visual Studio], saving string data
 - SharePoint projects, saving string data
-ms.assetid: 903b9da7-2eea-404c-9a7a-7bc15cb90d6c
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 07865f3a52d4cca71cf76a3d95ac041a5c389494
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 56cdfb95de6f0e5f8644ea3c73daacbf90e33a97
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="saving-data-in-extensions-of-the-sharepoint-project-system"></a>Salvando dados em extensões do sistema de projeto do SharePoint
   Quando você estende o sistema de projeto do SharePoint, você pode salvar os dados de cadeia de caracteres que persiste depois que um projeto do SharePoint é fechado. Os dados são geralmente associados a um item de projeto específico ou com o projeto em si.  

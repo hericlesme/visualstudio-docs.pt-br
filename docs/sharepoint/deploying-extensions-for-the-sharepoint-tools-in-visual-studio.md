@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, deploying extensions
-ms.assetid: 69927d95-acdf-4fd8-ac43-28e9a7fa8a38
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 18f1b473de12b53f3e1a7829d1f1c3b49862aef2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implantando extensões para as ferramentas do SharePoint no Visual Studio
   Para implantar uma extensão de ferramentas do SharePoint, criar um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) que contém o assembly de extensão e outros arquivos que você quer distribuir com a extensão. Um pacote do VSIX é um arquivo compactado que segue o padrão de Open Packaging Conventions (OPC). Pacotes do VSIX tem a extensão de .vsix.  

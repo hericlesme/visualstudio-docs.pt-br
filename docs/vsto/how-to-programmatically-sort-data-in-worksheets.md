@@ -15,17 +15,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], sorting in worksheets
 - worksheets, sorting data
 - sorting data, in worksheets
-ms.assetid: 2fbc6e63-02ea-4624-8d6f-bed60e06c61e
-caps.latest.revision: "56"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: b519dad9f2736b7c4451dd01964b3b16cac8ad2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6049cd6ce5a42a410b98e19b354ed4f9ea2da826
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Como classificar dados de forma programática em planilhas
   Você pode classificar os dados contidos nas listas e intervalos de planilhas em tempo de execução. O código a seguir classifica um intervalo de várias coluna chamado `Fruits` os dados na primeira coluna e, em seguida, pelos dados na segunda coluna.  
