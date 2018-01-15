@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma linguagem específica de domínio (DSL), crie uma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a partir de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.  
@@ -122,7 +120,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
   
 -   A classe raiz é exibido no canto superior esquerdo do diagrama de definição de DSL, em **Classes e relacionamentos**. Renomeie-a com um nome diferente da DSL. Por exemplo, uma DSL denominada **MusicLibrary** pode ter uma classe raiz denominada **música**.  
   
--   A classe do diagrama aparece na parte inferior direita do diagrama de definição de DSL, no **elementos de diagrama** coluna. Talvez seja necessário rolar para a direita para vê-la. Ele geralmente é denominado *YourDsl***diagrama**.  
+-   A classe do diagrama aparece na parte inferior direita do diagrama de definição de DSL, no **elementos de diagrama** coluna. Talvez seja necessário rolar para a direita para vê-la. Ele geralmente é denominado * YourDsl ***diagrama**.  
   
 -   Se você usou o **tarefa de fluxo** modelo e você deseja criar diagramas com raias, manter e renomeie a classe de domínio de ator e ActorSwimlane forma.  
   
@@ -223,11 +221,11 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
   
 2.  **Compilar e executar o DSL.** Pressione F5 ou CTRL+F5 para executar uma nova instância do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] em modo experimental. Na instância experimental do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra ou crie um arquivo que tenha a extensão de nome de arquivo de sua DSL.  
   
-3.  **Abra o Gerenciador.** No lado do diagrama está janela do Gerenciador de idioma, que geralmente é chamada *YourLanguage* Explorer. Se você não vir essa janela, ela pode estar em uma guia no Gerenciador de Soluções. Se você não é possível encontrá-lo, no **exibição** , aponte para **outras janelas**e, em seguida, clique em *YourLanguage***Explorer**.  
+3.  **Abra o Gerenciador.** No lado do diagrama está janela do Gerenciador de idioma, que geralmente é chamada *YourLanguage* Explorer. Se você não vir essa janela, ela pode estar em uma guia no Gerenciador de Soluções. Se você não é possível encontrá-lo, no **exibição** , aponte para **outras janelas**e, em seguida, clique em * YourLanguage ***Explorer**.  
   
      Seu gerenciador apresentará uma exibição em árvore do modelo.  
   
-4.  **Crie novos elementos.** Clique com botão direito no nó raiz na parte superior e, em seguida, clique em **adicionar novo***YourClass*.  
+4.  **Crie novos elementos.** Clique com botão direito no nó raiz na parte superior e, em seguida, clique em **adicionar novo * YourClass*.  
   
      Uma nova instância de sua classe aparecerá no Gerenciador de linguagens.  
   
@@ -623,7 +621,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 |Não consigo adicionar uma coleção no Gerenciador de DSL. Por exemplo, quando clico com o botão direito do mouse em Ferramentas, não encontro o comando "Adicionar Ferramenta" no menu.<br /><br /> No gerenciador de minha DSL, não consigo adicionar um elemento à lista.|Clique com o botão direito do mouse no item acima do nó ao qual você está tentando adicionar elementos. Quando desejar adicionar elementos a uma lista, o comando Adicionar não estará no nó da lista, mas em seu proprietário.|  
 |Criei uma classe de domínio, mas não consigo criar instâncias no gerenciador de linguagens.|Cada classe de domínio, exceto a raiz, deve ser o destino de uma relação de incorporação.|  
 |No gerenciador de minha DSL, os elementos são mostrados somente com seus nomes de tipos.|Na definição de DSL, selecione uma propriedade da classe de domínio e nas propriedades da janela, defina **é o nome do elemento** como true.|  
-|Minha DSL sempre é aberta no editor XML.|Isso pode ocorrer em função de um erro durante a leitura do arquivo. No entanto, mesmo após a correção desse erro, você deve redefinir explicitamente o editor para que seja o designer de DSL.<br /><br /> O item de projeto, clique **abrir com** e selecione *YourLanguage***Designer (padrão)**.|  
+|Minha DSL sempre é aberta no editor XML.|Isso pode ocorrer em função de um erro durante a leitura do arquivo. No entanto, mesmo após a correção desse erro, você deve redefinir explicitamente o editor para que seja o designer de DSL.<br /><br /> O item de projeto, clique **abrir com** e selecione * YourLanguage ***Designer (padrão)**.|  
 |A caixa de ferramentas de minha DSL não aparece após a mudança de nomes do assembly.|Verifique e atualize **DslPackage\GeneratedCode\Package.tt** para obter mais informações, consulte [como: alterar o Namespace de uma linguagem específica do domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |A caixa de ferramentas de minha DSL não aparece, mas não alterei o nome do assembly.<br /><br /> Ou, uma caixa de mensagens aparece relatando a falha ao carregar uma extensão.|Redefina a instância experimental e recompile sua solução.<br /><br /> 1.  No Windows menu Iniciar, em **todos os programas**, expanda [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], em seguida, **ferramentas**e, em seguida, clique em **redefinir a instância de Experimental Microsoft Visual Studio**.<br />2.  Sobre o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **criar** menu, clique em **recompilar solução**.|  
   

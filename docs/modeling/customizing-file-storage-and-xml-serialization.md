@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords: Domain-Specific Language, serialization
-ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
-caps.latest.revision: "17"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ca481ef5f0994b88cc1eafd37815c07977b007cf
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizando o armazenamento de arquivos e a serialização XML
 Quando o usuário salva uma instância ou *modelo*, de uma linguagem específica de domínio (DSL) em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], um arquivo XML é criado ou atualizado. O arquivo pode ser recarregado para recriar o modelo no repositório.  
@@ -139,7 +137,7 @@ Quando o usuário salva uma instância ou *modelo*, de uma linguagem específica
   
 -   Definir **é Moniker chave** para uma propriedade de domínio de uma classe de domínio existente. O tipo da propriedade deve ser `string`.  
   
-    1.  No Explorador de DSL, expanda **dados de Behavior\Class de serialização de Xml\\***\<a classe de domínio >***\Element dados**e, em seguida, selecione o propriedade de domínio.  
+    1.  No Explorador de DSL, expanda **dados de Behavior\Class de serialização de Xml\\***\<a classe de domínio >***\Element dados**e, em seguida, selecione a propriedade de domínio.  
   
     2.  Na janela Propriedades, defina **é Moniker chave** para `true`.  
   

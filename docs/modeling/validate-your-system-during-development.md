@@ -8,17 +8,15 @@ ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams
-ms.assetid: c9dafb47-7b1d-4c72-9432-d43be3db1799
-caps.latest.revision: "37"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e05574ba51a690621d57b6f32017d1eb359675eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f843817e41485b1cc487afc0827c473431f658b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="validate-your-system-during-development"></a>Validar o sistema durante o desenvolvimento
 O Visual Studio pode ajudar a manter seu software consistente com os requisitos dos usuários e a arquitetura do seu sistema.  

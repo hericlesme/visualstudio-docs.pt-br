@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - requirements
 - stories
-ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: "28"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 Visual Studio o ajuda a entender, discuta e se comunicar suas necessidades de usuários ao desenhar diagramas sobre suas atividades e a parte um sistema desempenha no ajudando a atingir suas metas. Um modelo de requisitos é um conjunto desses diagramas, cada um deles se concentra em um aspecto das necessidades dos usuários. Para uma demonstração de vídeo, consulte: [modelagem de domínio da empresa](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
@@ -61,7 +59,7 @@ Visual Studio o ajuda a entender, discuta e se comunicar suas necessidades de us
 ##  <a name="BusinessRules"></a>Mostrando as regras de negócio  
  Uma regra de negócios é um requisito que não está associado um caso de uso específico e deve ser observado em todo o sistema.  
   
- Muitas regras de negócio são restrições nas relações entre as classes conceituais. Você pode escrever esses *estático**regras de negócio* como comentários associados as classes relevantes em um diagrama conceitual de classe. Por exemplo:  
+ Muitas regras de negócio são restrições nas relações entre as classes conceituais. Você pode escrever esses *estático * * as regras de negócio* como comentários associados as classes relevantes em um diagrama conceitual de classe. Por exemplo:  
   
  ![Regra em comentário anexado à classe Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   

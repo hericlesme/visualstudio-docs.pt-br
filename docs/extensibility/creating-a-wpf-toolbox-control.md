@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 605ce6f221df959e553cbfde2f3439da06b474c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0bc83d29eb076b70be5c9192acdbe39e301a6f16
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Criando um controle de caixa de ferramentas do WPF
 O modelo de controle de caixa de ferramentas do WPF (Windows Presentation Framework) permite que você crie controles do WPF que são adicionados automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar um **caixa de ferramentas** controle que você pode distribuir para outros usuários.  
@@ -61,7 +61,7 @@ O modelo de controle de caixa de ferramentas do WPF (Windows Presentation Framew
   
 1.  Abra MyToolboxControl.xaml.cs na exibição de código.  
   
-2.  Localizar a classe MyToolboxControl e renomeie-o para TestControl. (É a maneira mais rápida para fazer isso renomear a classe, selecione **Renomear** no menu de contexto e conclua as etapas. (Para obter mais informações sobre o **Renomear** command, consulte [renomear refatoração (c#)](../csharp-ide/rename-refactoring-csharp.md).)  
+2.  Localizar a classe MyToolboxControl e renomeie-o para TestControl. (É a maneira mais rápida para fazer isso renomear a classe, selecione **Renomear** no menu de contexto e conclua as etapas. (Para obter mais informações sobre o **Renomear** command, consulte [renomear refatoração (c#)](../ide/reference/rename-csharp.md).)
   
 3.  Vá para o `ProvideToolboxControl` de atributo e altere o valor do primeiro parâmetro para **teste**. Este é o nome do grupo que contém o controle no **caixa de ferramentas**.  
   

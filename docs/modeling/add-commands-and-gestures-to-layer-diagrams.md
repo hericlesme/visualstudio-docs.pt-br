@@ -15,11 +15,11 @@ author: alexhomer1
 ms.author: ahomer
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.openlocfilehash: af3df828a2abc441ce2efb3998b10fb1991e3127
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Adicionar comandos e gestos a diagramas de dependência
 Você pode definir os comandos de menu de contexto e gestos manipuladores em diagramas de dependência no Visual Studio. Você pode empacotar essas extensões em um Visual Studio Integration extensão (VSIX) que você pode distribuir para outros usuários do Visual Studio.  
@@ -45,7 +45,7 @@ Você pode definir os comandos de menu de contexto e gestos manipuladores em dia
   
 3.  Para testar a extensão, pressione **CTRL + F5** ou **F5**.  
   
-     Uma instância experimental do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inicia. Neste exemplo, crie um diagrama de dependência. A extensão de comando ou gesto deve funcionar neste diagrama.  
+     Inicia uma instância experimental do Visual Studio. Neste exemplo, crie um diagrama de dependência. A extensão de comando ou gesto deve funcionar neste diagrama.  
   
 4.  Feche a instância experimental e modificar o código de exemplo. Para obter mais informações, consulte [navegar e atualizar modelos no código do programa de camada](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -55,7 +55,7 @@ Você pode definir os comandos de menu de contexto e gestos manipuladores em dia
   
      [Definir um manipulador de gestos](#gesture)  
   
-6.  Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou em outro computador, localize o **.vsix** arquivo **bin\\\***. Copie-o para o computador onde você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, use **extensões e atualizações** no **ferramentas** menu.  
+6.  Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o **.vsix** arquivo **bin\\\***. Copie-o para o computador onde você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, use **extensões e atualizações** no **ferramentas** menu.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Adicionando um comando ou um gesto a um VSIX separado  
  Se você quiser criar um VSIX que contém comandos, validadores de camada e outras extensões, é recomendável que você crie um projeto para definir o VSIX e projetos separados para os manipuladores.
@@ -104,9 +104,9 @@ Você pode definir os comandos de menu de contexto e gestos manipuladores em dia
   
      Consulte também [navegar e atualizar modelos no código do programa de camada](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Para testar o recurso, pressione CTRL + F5 ou F5. Uma instância experimental do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é aberto. Nesse caso, crie ou abra um diagrama de dependência.  
+2.  Para testar o recurso, pressione CTRL + F5 ou F5. Uma instância experimental do Visual Studio é aberto. Nesse caso, crie ou abra um diagrama de dependência.  
   
-3.  Para instalar o VSIX na instância principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou em outro computador, localize o **.vsix** arquivo o **bin** diretório do projeto VSIX. Copie-o para o computador onde você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no Windows Explorer (Explorador de arquivos no Windows 8).  
+3.  Para instalar o VSIX na instância principal do Visual Studio ou em outro computador, localize o **.vsix** arquivo o **bin** diretório do projeto VSIX. Copie-o para o computador onde você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no Windows Explorer.  
   
      Para desinstalá-lo, use **extensões e atualizações** no **ferramentas** menu.  
   

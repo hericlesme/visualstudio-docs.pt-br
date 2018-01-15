@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Adicionar validação de arquitetura personalizada a diagramas de dependência
 No Visual Studio, os usuários podem validar o código-fonte em um projeto em um modelo de camada para que ele podem verificar se o código-fonte está em conformidade com as dependências em um diagrama de dependência. Há um algoritmo de validação padrão, mas você pode definir suas próprias extensões de validação.  
@@ -59,7 +57,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
     > [!NOTE]
     >  O método será chamado apenas em determinadas circunstâncias, e os pontos de interrupção não funcionará automaticamente. Para obter mais informações, consulte [validação de camada de depuração](#debugging).  
   
-5.  Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou em outro computador, localize o **.vsix** arquivo **bin\\\***. Copie-o para o computador onde você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, use **extensões e atualizações** no **ferramentas** menu.  
+5.  Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o **.vsix** arquivo **bin\\\***. Copie-o para o computador onde você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, use **extensões e atualizações** no **ferramentas** menu.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Adicionando um validador de camada para um VSIX separado  
  Se você quiser criar um VSIX que contém os validadores de camada, comandos e outras extensões, é recomendável que você crie um projeto para definir o VSIX e projetos separados para os manipuladores. 
@@ -116,7 +114,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
     > [!NOTE]
     >  O método será chamado apenas em determinadas circunstâncias, e os pontos de interrupção não funcionará automaticamente. Para obter mais informações, consulte [validação de camada de depuração](#debugging).  
   
-8.  Para instalar o VSIX na instância principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou em outro computador, localize o **.vsix** arquivo o **bin** diretório do projeto VSIX. Copie-o para o computador onde você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no Windows Explorer. (Explorador de arquivos no Windows 8).  
+8.  Para instalar o VSIX na instância principal do Visual Studio ou em outro computador, localize o **.vsix** arquivo o **bin** diretório do projeto VSIX. Copie-o para o computador onde você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no Windows Explorer.
   
      Para desinstalá-lo, use **extensões e atualizações** no **ferramentas** menu.  
   
@@ -150,7 +148,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
  Quando o usuário chama o **validar arquitetura** menu de comando, o sistema de tempo de execução de camada analisa as camadas e seus artefatos para produzir um gráfico. O gráfico não tem quatro partes:  
   
--   Os modelos de camada do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução são representados como nós e links no gráfico.  
+-   Os modelos de camada de solução do Visual Studio que são representados como nós e links no gráfico.  
   
 -   O código, itens de projeto e outros artefatos que são definidos na solução e são representados como nós e links que representam as dependências descobertas pelo processo de análise.  
   
@@ -190,7 +188,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
  Links de camadas para elementos no código apresentam a categoria "Representa".  
   
 ##  <a name="debugging"></a>Validação de depuração  
- Para depurar sua extensão de validação de camada, pressione CTRL + F5. Uma instância experimental do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é aberto. Nesse caso, abra ou crie um modelo de camada. Esse modelo deve ser associado ao código e deve ter pelo menos uma dependência.  
+ Para depurar sua extensão de validação de camada, pressione CTRL + F5. Uma instância experimental do Visual Studio é aberto. Nesse caso, abra ou crie um modelo de camada. Esse modelo deve ser associado ao código e deve ter pelo menos uma dependência.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Teste com uma solução que contém as dependências  
  A validação não é executada, a menos que as seguintes características estão presentes:  
@@ -199,7 +197,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
 -   Há camadas no modelo que estão associadas a elementos de código.  
   
- Na primeira vez que você inicia uma instância experimental do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para testar sua extensão de validação, abra ou crie uma solução que tem as seguintes características.  
+ Na primeira vez que você inicia uma instância experimental do Visual Studio para testar sua extensão de validação, abra ou crie uma solução que tem as seguintes características.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Execução limpar solução antes de validar arquitetura  
  Sempre que você atualizar seu código de validação, use o **limpar solução** comando o **criar** menu na solução experimental, antes de você testar o comando de validação. Isso é necessário porque os resultados da validação são armazenados em cache. Se você não tiver atualizado o diagrama de dependência de teste ou em seu código, os métodos de validação não serão executados.  
@@ -207,9 +205,9 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
 ### <a name="launch-the-debugger-explicitly"></a>Iniciar o depurador explicitamente  
  A validação é executada em um processo separado. Portanto, os pontos de interrupção em seu método de validação não serão disparados. Você deve anexar o depurador ao processo explicitamente quando a validação é iniciada.  
   
- Para anexar o depurador ao processo de validação, inserir uma chamada a `System.Diagnostics.Debugger.Launch()` no início de seu método de validação. Quando for exibida a caixa de diálogo de depuração, selecione a instância principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Para anexar o depurador ao processo de validação, inserir uma chamada a `System.Diagnostics.Debugger.Launch()` no início de seu método de validação. Quando for exibida a caixa de diálogo de depuração, selecione a instância principal do Visual Studio.  
   
- Como alternativa, você pode inserir uma chamada para `System.Windows.Forms.MessageBox.Show()`. Quando for exibida a caixa de mensagem, vá para a instância principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e na **depurar** menu clique **anexar ao processo**. Selecione o processo é denominado **Graphcmd.exe**.  
+ Como alternativa, você pode inserir uma chamada para `System.Windows.Forms.MessageBox.Show()`. Quando for exibida a caixa de mensagem, vá para a instância principal do Visual Studio e no **depurar** menu clique **anexar ao processo**. Selecione o processo é denominado **Graphcmd.exe**.  
   
  Sempre iniciar a instância experimental pressionando CTRL + F5 (**iniciar sem depuração**).  
   

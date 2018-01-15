@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 Na visualização e modelagem SDK, você pode definir manipuladores de eventos de armazenamento para propagar alterações aos recursos fora da loja, como modelos em outros repositórios ou outros, arquivos, variáveis de armazenamento não [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensões. Manipuladores de eventos de armazenamento são executados após o término da transação na qual ocorreu o evento de disparo. Elas também são executadas em uma operação de desfazer ou refazer. Portanto, ao contrário das regras de repositório de eventos de armazenamento são mais úteis para atualizar os valores que estão fora da loja. Ao contrário de eventos do .NET, manipuladores de eventos de armazenamento são registrados para escutar em uma classe: você não precisa registrar um manipulador separado para cada instância. Para obter mais informações sobre como escolher entre diferentes maneiras para controlar alterações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).  
@@ -38,7 +36,7 @@ Na visualização e modelagem SDK, você pode definir manipuladores de eventos d
   
     -   `ElementDeleted`-disparado depois de um elemento de modelo, relação, forma ou o conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele terá nenhuma relação com outros elementos.  
   
-2.  Adicione uma definição de classe parcial para *YourDsl***DocData** em um arquivo de código separado no **DslPackage** projeto.  
+2.  Adicione uma definição de classe parcial para *YourDsl * DocData** em um arquivo de código separado no **DslPackage** projeto.  
   
 3.  Escreva o código do evento como um método, como no exemplo a seguir. Ele pode ser `static`, a menos que você deseja acessar `DocData`.  
   

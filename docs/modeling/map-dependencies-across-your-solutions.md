@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
-Quando você quiser entender as dependências em seu código, visualize-los Criando mapas de código. Isso ajuda você a ver como o código se ajusta sem ler nos arquivos e linhas de código.  
-  
- ![Exibir as dependências nas soluções](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Aqui estão alguns vídeos**:  
-  
--   [Entender as dependências de código por meio de visualização](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Visualizar o impacto de uma alteração](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Noções básicas sobre código complexo com mapas de código](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a>Introdução ao mapa de códigos  
- **Usar mapas de código você será necessário**:  
+
+Quando você quiser entender as dependências em seu código, visualize-los Criando mapas de código. Isso ajuda você a ver como o código se ajusta sem ler nos arquivos e linhas de código.
+
+![Exibir as dependências nas soluções](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Aqui estão alguns vídeos**:
+
+- [Entender as dependências de código por meio de visualização](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Visualizar o impacto de uma alteração](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Noções básicas sobre código complexo com mapas de código](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a>Introdução ao mapa de códigos
+
+**Usar mapas de código você será necessário**:
   
 -   Visual Studio Enterprise: Crie mapas de código do editor de código, o Gerenciador de soluções, o modo de exibição de classe ou o Pesquisador de objetos.  
   
@@ -171,7 +171,7 @@ Quando você quiser entender as dependências em seu código, visualize-los Cria
   
 10. Outra maneira de foco em um mapa de solução complexa é gerar um novo mapa que contém os itens selecionados em um mapa existente. Manter **CTRL** enquanto seleciona os itens que você deseja se concentrar, abra o menu de atalho e escolha **novo gráfico da seleção**.  
   
-     ![Mostrar itens selecionados em um novo mapa de código](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Mostrar itens selecionados em um novo mapa de código](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. O contexto de recipiente é transportado para o novo mapa. Ocultar pastas de solução e quaisquer outros contêineres que você não deseja ver usando o **filtros** painel.  
   

@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>Função JSON.parse (JavaScript)
 Converte uma cadeia de caracteres JSON (JavaScript Object Notation) em um objeto.  
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   Certifique-se de que o argumento de `text` tenha sido serializado por uma implementação compatível com JSON, como `JSON.stringify`.  
   
--   Execute o `text` argumento em um validador JSON como [JSLint](http://www.jslint.com/) para ajudar a identificar erros de sintaxe.  
+-   Execute o `text` argumento em um validador JSON como [JSLint](http://www.jslint.com/) ou [JSON para CSV](https://json-csv.com) para ajudar a identificar erros de sintaxe.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir usa `JSON.parse` para converter uma cadeia de caracteres JSON em um objeto.  

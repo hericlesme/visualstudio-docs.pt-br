@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 6a1ae073-443e-45ca-8bc9-9b944362b449
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a1b7a8b2abafa4c63192c207ad73d00e508bddfa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e15efdb40b21b187dfc8bec543fc48c91f9efcf6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como migrar uma linguagem específica do domínio para uma nova versão
 Você pode migrar projetos que definem e usam a linguagem específica de domínio para [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] da versão do [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que foi distribuído com [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -63,9 +61,9 @@ Você pode migrar projetos que definem e usam a linguagem específica de domíni
   
     1.  Clique em **converter**.  
   
-         Antes de cada arquivo de projeto é convertido, uma cópia do *projeto***. csproj** é salvo como *projeto***. vs2008.csproj**  
+         Antes de cada arquivo de projeto é convertido, uma cópia do *projeto *. csproj** é salvo como *projeto * * *.vs2008.csproj**  
   
-         Uma cópia de cada *solução***. sln** é salvo como *solução***. vs2008.sln**  
+         Uma cópia de cada *solução *. sln** é salvo como *solução *.vs2008.sln**  
   
     2.  Investigue quaisquer conversões com falha que são relatados.  
   
