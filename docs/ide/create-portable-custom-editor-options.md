@@ -11,12 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 0219ff704e22ab1c27d47e312825a66cb3a15166
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -32,43 +31,86 @@ As convenções de codificação usadas em seus projetos pessoais podem ser dife
 
 Como as configurações estão contidas em um arquivo na base de código, elas viajam juntamente com essa base de código. Contanto que você abra o arquivo de código em um editor em conformidade com o EditorConfig, as configurações do editor de texto são implementadas. Para obter mais informações sobre arquivos EditorConfig, consulte o site [EditorConfig.org](http://editorconfig.org/).
 
-## <a name="override-editorconfig-settings"></a>Substituir as configurações do EditorConfig
-
-Quando você adiciona um arquivo .editorconfig a uma pasta em sua hierarquia de arquivos, as configurações se aplicam a todos os arquivos aplicáveis nesse nível e abaixo. Para substituir as configurações do EditorConfig de um projeto ou base de código específico, de modo que ele use convenções diferentes do que do arquivo de nível superior .EditorConfig, basta adicionar um arquivo .editorconfig à raiz do diretório do projeto ou do repositório da sua base de código. Certifique-se de colocar a propriedade ```root=true``` no arquivo para que o Visual Studio não procure além da estrutura de diretório para arquivos .editorconfig. As novas configurações do arquivo EditorConfig serão aplicadas a arquivos no mesmo nível e aos subdiretórios.
-
-```
-# top-most EditorConfig file
-root = true
-```
-
-![Hierarquia do EditorConfig](../ide/media/vside_editorconfig_hierarchy.png)
-
-Os arquivos do EditorConfig são lidos de cima para baixo e os arquivos do EditorConfig mais próximos são lidos por último. As convenções de seções do EditorConfig correspondentes são aplicadas na ordem em que foram lidas, portanto as convenções dos arquivos mais próximos têm precedência.
-
 ## <a name="supported-settings"></a>Configurações com suporte
 
-O editor do Visual Studio é compatível com o seguinte, do conjunto principal de [propriedades do EditorConfig](http://editorconfig.org/#supported-properties):
+O editor no Visual Studio é compatível com o conjunto principal de [propriedades do EditorConfig](http://editorconfig.org/#supported-properties):
 
 - indent_style
 - indent_size
 - tab_width
 - end\_of_line
 - charset
+- trim\_trailing_whitespace
+- insert\_final_newline
 - raiz
 
 Há suporte para as configurações de editor do EditorConfig em todas as linguagens compatíveis com o Visual Studio, exceto para XML. Além disso, o EditorConfig dá suporte ao [estilo de código](../ide/editorconfig-code-style-settings-reference.md) e convenções de [nomenclatura](../ide/editorconfig-naming-conventions.md) para C# e Visual Basic.
-
-## <a name="editing-editorconfig-files"></a>Editando arquivos EditorConfig
-
-O Visual Studio oferece IntelliSense para a edição de arquivos .editorconfig. Se você editar vários arquivos .editorconfig, a extensão [Serviço de linguagem do EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) poderá ser útil.
-
-Depois de editar seu arquivo EditorConfig, será necessário recarregar seus arquivos de código para que as novas configurações entrem em vigor.
 
 ## <a name="adding-and-removing-editorconfig-files"></a>Adicionando e removendo arquivos EditorConfig
 
 Adicionar um arquivo EditorConfig ao seu projeto ou base de código não converte os estilos existentes em novos. Por exemplo, se você tiver recuos em seu arquivo formatados com tabulações e adicionar um arquivo EditorConfig com recuos com espaços, os caracteres de recuo não serão convertidos em espaços. No entanto, novas linhas de código serão formatadas de acordo com o arquivo EditorConfig.
 
 Se você remover um arquivo EditorConfig do seu projeto ou da base de código, será necessário fechar e reabrir os arquivos de código aberto a serem revertidos para as configurações globais do editor para novas linhas de código.
+
+### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Para adicionar um arquivo EditorConfig em um projeto ou uma solução
+
+1. Abra um projeto ou uma solução no Visual Studio. Selecione o nó do projeto ou da solução, dependendo se as configurações de .editorconfig devem ser aplicadas a todos os projetos na solução ou a apenas um. Você também pode selecionar uma pasta no projeto ou na solução para adicionar o arquivo .editorconfig.
+
+1. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item...** ou pressione **Ctrl**+**Shift**+**A**.
+
+   A caixa de diálogo **Adicionar Novo Item** é aberta.
+
+1. Nas categorias à esquerda, escolha **Geral** e, em seguida, escolha o modelo **Arquivo de Texto**. Na caixa de texto **Nome**, insira `.editorconfig` e, em seguida, escolha **Adicionar**.
+
+   Um arquivo .editorconfig aparece no Gerenciador de Soluções e ele é aberto no editor.
+
+   ![Arquivo .editorconfig no Gerenciador de Soluções](media/editorconfig-in-solution-explorer.png)
+
+1. Edite o arquivo conforme o desejado, por exemplo:
+
+```EditorConfig
+root = true
+
+[*.{cs,vb}]
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cs]
+csharp_new_line_before_open_brace = methods
+```
+
+Como alternativa, você pode instalar a [Extensão do Serviço de Linguagem do EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Depois de instalar essa extensão, basta escolher **Adicionar** > **Arquivo .editorconfig** no menu de contexto ou no menu acionado com o botão direito do mouse do nó da solução, do nó do projeto ou de qualquer pasta no Gerenciador de Soluções.
+
+![Adicionar o arquivo .editorconfig com extensão](media/editorconfig-extension-add.png)
+
+## <a name="override-editorconfig-settings"></a>Substituir as configurações do EditorConfig
+
+Quando você adiciona um arquivo .editorconfig a uma pasta em sua hierarquia de arquivos, as configurações se aplicam a todos os arquivos aplicáveis nesse nível e abaixo. Você também pode substituir as configurações de EditorConfig para um projeto específico, uma base de código ou parte de uma base de código, de modo que ele use convenções diferentes do que as outras partes da base de código. Isso pode ser útil quando você incorpora código de outro lugar e não quer alterar suas convenções.
+
+Para substituir algumas ou todas as configurações do EditorConfig, adicione um arquivo .editorconfig no nível da hierarquia de arquivos em que você deseja aplicar essas configurações substituídas. As novas configurações de arquivo do EditorConfig aplicam-se aos arquivos no mesmo nível e a todas as subpastas.
+
+![Hierarquia do EditorConfig](../ide/media/vside_editorconfig_hierarchy.png)
+
+Se você apenas deseja substituir algumas, mas não todas as configurações, basta especificar essas configurações no arquivo .editorconfig. Somente as propriedades que você listar explicitamente no arquivo de nível inferior serão substituídas. As outras configurações de arquivos .editorconfig de nível superior continuarão a serem aplicadas. Se você deseja garantir que _nenhuma_ configurações de _nenhum_ arquivo .editorconfig de nível superior seja aplicada a essa parte da base de código, adicione a propriedade ```root=true``` no arquivo .editorconfig de nível inferior:
+
+```EditorConfig
+# top-most EditorConfig file
+root = true
+```
+
+Os arquivos do EditorConfig são lidos de cima para baixo e os arquivos do EditorConfig mais próximos são lidos por último. As convenções de seções do EditorConfig correspondentes são aplicadas na ordem em que foram lidas, portanto as convenções dos arquivos mais próximos têm precedência.
+
+## <a name="editing-editorconfig-files"></a>Editando arquivos EditorConfig
+
+O Visual Studio oferece IntelliSense para a edição de arquivos .editorconfig.
+
+![IntelliSense em um arquivo .editorconfig](media/editorconfig-intellisense-no-extension.png)
+
+Depois de editar seu arquivo EditorConfig, será necessário recarregar seus arquivos de código para que as novas configurações entrem em vigor.
+
+Se você edita vários arquivos .editorconfig, a [Extensão do Serviço de Linguagem do EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pode ser útil. Alguns dos recursos dessa extensão incluem realce de sintaxe, IntelliSense aprimorado, validação e formatação de código.
+
+![IntelliSense com a extensão do serviço de linguagem do EditorConfig](media/editorconfig-intellisense.png)
 
 ## <a name="example"></a>Exemplo
 
@@ -82,7 +124,7 @@ Conforme esperado, pressionar a tecla **TAB** na próxima linha faz a linha recu
 
 Adicionaremos um novo arquivo chamado .editorconfig ao projeto, com o seguinte conteúdo. A configuração `[*.cs]` significa que essa alteração se aplica somente a arquivos de código C# no projeto.
 
-```
+```EditorConfig
 # Top-most EditorConfig file
 root = true
 
@@ -107,7 +149,7 @@ Isso significa que, se as configurações do editor em **Ferramentas**, **Opçõ
 
 É possível encontrar arquivos .editorconfig em diretórios pai abrindo um prompt de comando e executando o seguinte comando na raiz do disco que contém seu projeto:
 
-```
+```Shell
 dir .editorconfig /s
 ```
 

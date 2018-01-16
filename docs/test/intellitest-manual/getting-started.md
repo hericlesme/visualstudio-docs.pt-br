@@ -8,35 +8,33 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: IntelliTest, Get started
-ms.assetid: 21FE4D68-9E7F-4BB1-BD69-B0D09A941F09
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 539565d5f37c60cfb87b3aa33ab8b82f7fee5015
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 9016006f9774c4a9eff2937f32543b9f8d9f5fb8
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Introdução ao Microsoft IntelliTest
 
 * Se esta for a primeira vez que você trabalha com o IntelliTest:
   * assista ao [vídeo do Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
   * leia esta [visão geral na MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
-  * leia nossa [documentação](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
-* Faça perguntas no [stackoverflow](http://stackoverflow.com/questions/tagged/intellitest)
+  * leia nossa [documentação](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
+* Fazer perguntas sobre [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)
 * Leia o restante deste manual de referência
 * Imprima esta página para referência rápida
 
-<a name="important-attributes"></a>
 ## <a name="important-attributes"></a>Atributos importantes
 
 * [PexClass](attribute-glossary.md#pexclass) marca um tipo que contém **PUT**
 * [PexMethod](attribute-glossary.md#pexmethod) marca um **PUT**
-* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) marca um parâmetro não nulo 
+* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) marca um parâmetro não nulo
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 
 [..., PexClass(typeof(Foo))]
@@ -51,20 +49,19 @@ public partial class FooTest {
 * [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) associa um projeto de teste a um projeto
 * [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) especifica um assembly para instrumentar
 
-```
+```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")] // also instruments "MyAssembly"
 [assembly: PexInstrumentAssembly("Lib")]
 ```
 
-<a name="helper-classes"></a>
-## <a name="important-static-helper-classes"></a>Classes auxiliares estáticas importantes
+## <a name="helper-classes"></a> Classes auxiliares estáticas importantes
 
 * [PexAssume](static-helper-classes.md#pexassume) avalia suposições (filtragem de entrada)
 * [PexAssert](static-helper-classes.md#pexassert) avalia declarações
 * [PexChoose](static-helper-classes.md#pexchoose) gera novas opções (entradas adicionais)
 * [PexObserve](static-helper-classes.md#pexobserve) registra valores dinâmicos para os testes gerados
 
-```
+```csharp
 [PexMethod]
 void StaticHelpers(Foo target) {
     PexAssume.IsNotNull(target);
@@ -79,4 +76,4 @@ void StaticHelpers(Foo target) {
 
 ## <a name="got-feedback"></a>Recebeu comentários?
 
-Poste suas ideias e solicitações de recursos no  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Poste suas ideias e solicitações de recursos em [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

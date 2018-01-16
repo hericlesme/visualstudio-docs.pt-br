@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Tour pelos recursos de criação de perfil
 
@@ -147,7 +147,8 @@ Se você precisar de recursos, como instrumentação, que não estão atualmente
 
 ![Ferramenta de Gerenciador de Desempenho](../profiling/media/prof-tour-performance-explorer.png "Gerenciador de Desempenho")
 
-## <a name="which-tool-should-i-use"></a>Qual ferramenta devo usar?  
+## <a name="tool_support_info"></a>Qual ferramenta devo usar?  
+
 Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio oferece e os diferentes tipos de projeto com os quais você poderá usá-las:
   
 |Ferramenta de Desempenho|Área de Trabalho do Windows|Windows Universal/Store|ASP.NET/ASP.NET Core|  
@@ -158,7 +159,7 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|  
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|  
 |[Gerenciador de Desempenho](../profiling/performance-explorer.md)|sim|no|sim (não para ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Somente .NET Enterprise|Somente .NET Enterprise|Somente .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|Somente .NET e Visual Studio Enterprise|Somente .NET e Visual Studio Enterprise|Somente .NET e Visual Studio Enterprise|
 |[Uso de rede](../profiling/network-usage.md)|no|sim|no| 
 |[Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no|  
 |[Memória JavaScript](../profiling/javascript-memory.md)|no|sim para HTML, não para XAML|no|  

@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-environments"></a>Ambientes do Python
 
@@ -53,7 +53,7 @@ Com exceção do Visual Studio 2017, o suporte do Python não é fornecido com u
 | Interpretador | Descrição |
 | --- | --- |
 | [CPython](https://www.python.org/) | O interpretador “nativo” e mais usado, disponível em versões de 32 e 64 bits (o recomendado é 32 bits). Inclui os últimos recursos de linguagem, a compatibilidade máxima com pacotes do Python, suporte de depuração completo e interoperabilidade com o [IPython](http://ipython.org/). Consulte também: [Devo usar o Python 2 ou 3?](http://wiki.python.org/moin/Python2orPython3). Observe que o Visual Studio 2015 e anteriores não são compatíveis com o Python 3.6 e podem resultar no erro "Versão do python 3.6 sem suporte". Use o Python 3.5 ou anteriores. |
-| [IronPython](https://github.com/IronLanguages/main) | Uma implementação do .NET do Python, disponível em versões de 32 e 64 bits, que fornece interoperabilidade do C#/F#/Visual Basic, acesso às APIs do .NET, depuração padrão do Python (mas não a depuração de modo misto do C++) e a depuração mista do IronPython/C#. No entanto, o IronPython não dá suporte a ambientes virtuais. | 
+| [IronPython](https://github.com/IronLanguages/ironpython2) | Uma implementação do .NET do Python, disponível em versões de 32 e 64 bits, que fornece interoperabilidade do C#/F#/Visual Basic, acesso às APIs do .NET, depuração padrão do Python (mas não a depuração de modo misto do C++) e a depuração mista do IronPython/C#. No entanto, o IronPython não dá suporte a ambientes virtuais. |
 | [Anaconda](https://www.continuum.io) | Uma plataforma aberta de ciência de dados do Python, além de incluir a última versão do CPython e a maioria dos pacotes difíceis de serem instalados. Recomendamos usá-la, caso você esteja indeciso sobre qual plataforma deverá usar. |
 | [PyPy](http://www.pypy.org/) | Uma implementação JIT de rastreamento de alto desempenho do Python que é boa para programas de execução longa e situações em que é possível identificar problemas de desempenho, mas em que não é possível encontrar outras resoluções. Funciona com o Visual Studio, mas com suporte limitado para recursos de depuração avançados. |
 | [Jython](http://www.jython.org/) | Uma implementação do Python na JVM (Máquina Virtual Java). Semelhante ao IronPython, o código em execução no Jython pode interagir com classes e bibliotecas Java, mas poderá não usar várias bibliotecas destinadas ao CPython. Funciona com o Visual Studio, mas com suporte limitado para recursos de depuração avançados. |
@@ -73,7 +73,7 @@ Em ambos os casos, a janela Ambientes do Python é exibida como uma guia irmã d
 
 ![Janela Ambientes do Python](media/environments-default-view.png)
 
-O exemplo acima mostra que o Python 3.4 (CPython de 32 bits) é instalado junto com as versões de 32 e 64 bits do IronPython 2.7. Neste caso, o ambiente padrão em negrito é o Python 3.4, que é usado para os novos projetos. Se não vir nenhum ambiente listado, isso significa que você instalou as Ferramentas Python para o Visual Studio no Visual Studio 2015 ou anterior, mas ainda não instalou um interpretador do Python (consulte [Selecionando e instalando interpretadores do Python](#selecting-and-installing-python-interpreters) acima). 
+O exemplo acima mostra que o Python 3.4 (CPython de 32 bits) é instalado junto com as versões de 32 e 64 bits do IronPython 2.7. Neste caso, o ambiente padrão em negrito é o Python 3.4, que é usado para os novos projetos. Se não vir nenhum ambiente listado, isso significa que você instalou as Ferramentas Python para o Visual Studio no Visual Studio 2015 ou anterior, mas ainda não instalou um interpretador do Python (consulte [Selecionando e instalando interpretadores do Python](#selecting-and-installing-python-interpreters) acima).
 
 > [!Tip]
 > Quando a janela **Ambientes do Python** for estreita, conforme mostrado acima, os ambientes serão listados na parte superior e as várias guias na parte inferior. No entanto, expandir a janela o suficiente muda para uma exibição ampla com a qual você talvez considere mais conveniente trabalhar.
@@ -161,7 +161,7 @@ No último caso, como o ambiente está localizado em uma área protegida do sist
 
 **Elevar agora** concede privilégios administrativos para executar o PIP para uma única operação, sujeita também a qualquer prompt de permissão do sistema operacional. Selecionar **Continuar sem Privilégios de administrador** tenta instalar o pacote, mas o PIP falha ao tentar criar pastas com uma saída como “erro: não foi possível criar 'C:\Arquivos de Programas\Anaconda3\Lib\site-packages\png.py': permissão negada”.
 
-Selecionar **Sempre elevar ao instalar o u remover pacotes** impede que a caixa de diálogo apareça para o ambiente em questão. Para fazer a caixa de diálogo aparecer novamente, vá para **Ferramentas > Opções > Ferramentas do Python > Geral** e selecione o botão **Redefinir todas as caixas de diálogo permanentemente ocultas**. 
+Selecionar **Sempre elevar ao instalar o u remover pacotes** impede que a caixa de diálogo apareça para o ambiente em questão. Para fazer a caixa de diálogo aparecer novamente, vá para **Ferramentas > Opções > Ferramentas do Python > Geral** e selecione o botão **Redefinir todas as caixas de diálogo permanentemente ocultas**.
 
 Nessa mesma guia de opções, você também pode selecionar **Sempre executar o PIP como administrador** para suprimir a caixa de diálogo para todos os ambientes. Consulte [Opções – guia Geral](options.md#general-options).
 
@@ -247,13 +247,13 @@ Tecnicamente, qualquer nome de arquivo pode ser usado para acompanhar os requisi
 
     ![Opções de atualização de requirements.txt](media/environments-requirements-txt-replace.png)
 
-    - **Substituir todo o arquivo** remove todos os itens, comentários e opções existentes.
-    - **Atualizar as entradas existentes** detecta os requisitos do pacote e atualiza os especificadores de versão para que eles correspondam à versão instalada.
-    - **Atualizar e adicionar entradas** atualiza todos os requisitos encontrados e adiciona todos os outros pacotes ao final do arquivo.
+  - **Substituir todo o arquivo** remove todos os itens, comentários e opções existentes.
+  - **Atualizar as entradas existentes** detecta os requisitos do pacote e atualiza os especificadores de versão para que eles correspondam à versão instalada.
+  - **Atualizar e adicionar entradas** atualiza todos os requisitos encontrados e adiciona todos os outros pacotes ao final do arquivo.
 
 Como os arquivos `requirements.txt` se destinam a congelar os requisitos do projeto, todos os pacotes instalados são escritos com versões precisas. Usar versões precisas garante que você possa reproduzir facilmente seu ambiente em outro computador. Os pacotes serão incluídos, mesmo se eles foram instalados com um intervalo de versão, como uma dependência de outro pacote ou com um instalador que não seja o PIP.
 
-Se existir um arquivo ` requirements.txt` ao adicionar um novo ambiente virtual, a caixa de diálogo **Adicionar Ambiente Virtual** exibirá uma opção para instalar os pacotes automaticamente, facilitando a recriação de um ambiente em outro computador:
+Se existir um arquivo `requirements.txt` ao adicionar um novo ambiente virtual, a caixa de diálogo **Adicionar Ambiente Virtual** exibirá uma opção para instalar os pacotes automaticamente, facilitando a recriação de um ambiente em outro computador:
 
 ![Criar um ambiente virtual com requirements.txt](media/environments-requirements-txt.png)
 

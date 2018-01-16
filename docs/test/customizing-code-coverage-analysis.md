@@ -7,21 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizando análise de cobertura de código
+
 Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos os assemblies de solução (.exe/.dll) que são carregados durante os testes de unidade. Recomendamos manter esse padrão, pois funciona bem na maioria das vezes. Para obter mais informações, consulte [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- Antes de personalizar o comportamento de cobertura de código, considere algumas alternativas:  
+Antes de personalizar o comportamento de cobertura de código, considere algumas alternativas:  
   
 -   *Desejo excluir o código de teste dos resultados de cobertura de código e incluir apenas o código do aplicativo.*  
   
@@ -31,10 +31,11 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
   
      Obtenha os arquivos .pdb desses assemblies e os copia na mesma pasta que os arquivos .dll do assembly.  
   
- Para personalizar o comportamento da cobertura de código, copie o [exemplo no final deste tópico](#sample) e o adicione à sua solução usando a extensão de arquivo .runsettings. Edite-o de acordo com suas necessidades e, no menu **Teste**, escolha **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste**. O restante deste tópico descreve este procedimento com mais detalhes.  
+Para personalizar o comportamento da cobertura de código, copie o [exemplo no final deste tópico](#sample) e o adicione à sua solução usando a extensão de arquivo .runsettings. Edite-o de acordo com suas necessidades e, no menu **Teste**, escolha **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste**. O restante deste tópico descreve este procedimento com mais detalhes.  
   
-## <a name="the-runsettings-file"></a>O arquivo .runsettings  
- As configurações avançadas da cobertura de código são especificadas em um arquivo .runsettings. Esse é o arquivo de configuração usado por ferramentas de teste da unidade. Recomendamos que você copie o [exemplo no final deste tópico](#sample) e o edite de acordo com suas necessidades.  
+## <a name="the-runsettings-file"></a>O arquivo .runsettings
+
+As configurações avançadas da cobertura de código são especificadas em um arquivo .runsettings. Esse é o arquivo de configuração usado por ferramentas de teste da unidade. Recomendamos que você copie o [exemplo no final deste tópico](#sample) e o edite de acordo com suas necessidades.  
   
 -   *O que aconteceu com o arquivo .testsettings que usei no Visual Studio 2010?*  
   
@@ -58,8 +59,9 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
   
  Outros aspectos dos testes de unidade podem ser configurados no mesmo arquivo .runsettings. Para obter mais informações, consulte [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md).  
   
-### <a name="specifying-symbol-search-paths"></a>Especificando caminhos de busca de símbolo  
- A cobertura de código requer símbolos (arquivos .pdb) para assemblies estarem presentes. Para assemblies compilados por sua solução, os arquivos de símbolos estão geralmente presentes nos arquivos binários, e a cobertura de código funciona automaticamente. Mas, em alguns casos, você pode incluir os assemblies referenciados na análise de cobertura de código. Nesses casos, os arquivos .pdb podem não estar adjacentes aos binários, mas você pode especificar o caminho de pesquisa de símbolos no arquivo .runsettings.  
+### <a name="specifying-symbol-search-paths"></a>Especificando caminhos de busca de símbolo
+
+A cobertura de código requer símbolos (arquivos .pdb) para assemblies estarem presentes. Para assemblies compilados por sua solução, os arquivos de símbolos estão geralmente presentes nos arquivos binários, e a cobertura de código funciona automaticamente. Mas, em alguns casos, você pode incluir os assemblies referenciados na análise de cobertura de código. Nesses casos, os arquivos .pdb podem não estar adjacentes aos binários, mas você pode especificar o caminho de pesquisa de símbolos no arquivo .runsettings.  
   
 ```xml  
 <SymbolSearchPaths>                
@@ -72,8 +74,9 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 > [!WARNING]
 >  A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Consequentemente, considere copiar arquivos remotos .pdb no mesmo local dos arquivos binários (.dll e .exe).  
   
-### <a name="excluding-and-including"></a>Excluindo e incluindo  
- Você pode excluir os assemblies especificados da análise de cobertura de código. Por exemplo:  
+### <a name="excluding-and-including"></a>Excluindo e incluindo
+
+Você pode excluir os assemblies especificados da análise de cobertura de código. Por exemplo:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -99,8 +102,9 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
   
  `Include` é processado antes de `Exclude`.  
   
-### <a name="regular-expressions"></a>Expressões regulares  
- Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são iguais a curingas. Em particular:  
+### <a name="regular-expressions"></a>Expressões regulares
+
+Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são iguais a curingas. Em particular:  
   
 1.  **.\*** corresponde a uma cadeia de quaisquer caracteres  
   
@@ -178,43 +182,47 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
   
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>Como especificar arquivos .runsettings ao executar testes  
   
-### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Para personalizar configurações de execução em testes do Visual Studio  
- Escolha **Teste**, **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste** e selecione o arquivo .runsettings. O arquivo aparece no menu Configurações de Teste, e você pode selecionar ou cancelar. Quando selecionado, o arquivo .runsettings se aplica sempre que você usar **Analisar Cobertura de Código**.  
-  
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>Para personalizar as configurações de execução em um teste de linha de comando  
- Para executar testes a partir da linha de comando, use vstest.console.exe. O arquivo de configurações é um parâmetro desse utilitário. Para obter mais informações, confira [usando VSTest.console na linha de comando](/devops-test-docs/test/using-vstest-console-from-the-command-line).  
-  
-1.  Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:  
-  
-     No menu **Iniciar** do Windows, escolha **Todos os Programas**, **Microsoft Visual Studio**, **Ferramentas do Visual Studio** e **Prompt de Comando do Desenvolvedor**.  
-  
-2.  Execute:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
-  
-### <a name="to-customize-run-settings-in-a-build-definition"></a>Para personalizar as configurações de execução em uma definição de compilação  
- Você pode obter dados de cobertura de código de uma compilação de equipe.  
-  
- ![Especificação do runsettings em uma definição de compilação](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
-  
+### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Para personalizar configurações de execução em testes do Visual Studio
+
+Escolha **Testar** > **Configurações de Teste** > **Selecionar Arquivo de Configurações de Teste** e selecione o arquivo .runsettings. O arquivo aparece no menu Configurações de Teste, e você pode selecionar ou cancelar. Quando selecionado, o arquivo .runsettings se aplica sempre que você usar **Analisar Cobertura de Código**.
+
+### <a name="to-customize-run-settings-in-a-command-line-test"></a>Para personalizar as configurações de execução em um teste de linha de comando
+
+Para executar testes a partir da linha de comando, use vstest.console.exe. O arquivo de configurações é um parâmetro desse utilitário.
+
+1.  Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:
+
+    No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **Prompt de Comando do Desenvolvedor para VS 2017**.
+
+2.  Execute o seguinte comando:
+
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
+
+### <a name="to-customize-run-settings-in-a-build-definition"></a>Para personalizar as configurações de execução em uma definição de compilação
+
+Você pode obter dados de cobertura de código de uma compilação de equipe.
+
+![Especificação do runsettings em uma definição de compilação](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
+
 1.  Verifique se o arquivo .runsettings passou por check-in.  
   
 2.  No Team Explorer, abra **Compilações** e adicione ou edite uma definição de build.  
   
-3.  Na página **Processo**, expanda **Testes Automatizados**, **Fonte de Teste**, **Configurações de Execução**. Selecione o seu arquivo **.runsettings**.  
+3.  Na página **Processo**, expanda **Testes Automatizados** > **Fonte de Teste** > **Configurações de Execução**. Selecione o seu arquivo **.runsettings**.
   
     -   *Mas **Assembly de Teste** será exibido em vez de **Fonte de Teste**. Quando tento definir o campo **Configurações de Execução**, só consigo selecionar arquivos .testsettings.*  
   
          Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, defina **Test Runner** para **Visual Studio Test Runner**.  
   
- Os resultados são visíveis na seção de resumo do relatório de compilação.  
+Os resultados são visíveis na seção de resumo do relatório de compilação.
   
-##  <a name="sample"></a>Exemplo de arquivo .runsettings  
- Copie este código e edite-o de acordo com suas necessidades. Este é o arquivo .runsettings padrão.  
-  
- (Para outros usos do arquivo .runsettings confira [Configuração de testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  
-  
-```xml  
+##  <a name="sample"></a>Exemplo de arquivo .runsettings
+
+Copie este código e edite-o de acordo com suas necessidades. Este é o arquivo .runsettings padrão.
+
+(Para outros usos do arquivo .runsettings confira [Configuração de testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <!-- File name extension must be .runsettings -->  
 <RunSettings>  
@@ -322,10 +330,10 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>  
     </DataCollectors>  
   </DataCollectionRunSettings>  
-</RunSettings>  
-  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Uso da cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+</RunSettings>
+```
+
+## <a name="see-also"></a>Consulte também
+
+[Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)  
+[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)

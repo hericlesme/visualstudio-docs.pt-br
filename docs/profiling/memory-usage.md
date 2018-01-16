@@ -7,24 +7,19 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30c2d7fe3562221c2238a6b12a3eed37318ea504
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="analyze-memory-usage"></a>Analisar o uso de memória
-Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico **Uso de Memória** integrada ao depurador. A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  
-  
--   É possível analisar um único instantâneo para compreender o impacto relativo dos tipos de objeto sobre o uso da memória e encontrar o código no aplicativo que usa a memória de maneira ineficiente.  
-  
--   Também é possível comparar (diff) dois instantâneos de um aplicativo para encontrar áreas no código que causam o aumento do uso da memória com o passar do tempo.  
+# <a name="profile-memory-usage-in-visual-studio"></a>Uso de memória de perfil no Visual Studio
+Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico **Uso de Memória** integrada ao depurador. A ferramenta Uso de Memória permite que você obtenha um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa para entender o impacto do uso de memória dos tipos de objeto. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  
   
  O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** (disponível no Visual Studio 2015 Atualização 1 e versões posteriores):  
   
@@ -161,13 +156,14 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
  ![Exibição de comparação de tipos nativos](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogs e vídeos  
- [Janela do depurador Ferramentas de Diagnóstico no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+
+|         |         |
+|---------|---------|
+|  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre como usar as ferramentas de diagnóstico que mostra como analisar o uso de memória e o uso de CPU no Visual Studio 2017. |
+
+ [Analyze CPU and Memory While Debugging](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/) (Analisar a CPU e a memória durante a depuração)  
   
- [Blog: Ferramenta Uso de Memória durante a depuração no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
-  
- [Blog do Visual C++: Diagnóstico de Memória Nativa na visualização do VS2015](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
-  
- [Blog do Visual C++: Ferramentas de Diagnóstico de Memória Nativa para Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+ [Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/) (Blog do Visual C++: Criação de perfil de memória no Visual C++ 2015)  
 
 ## <a name="see-also"></a>Consulte também
  [Criação de perfis no Visual Studio](../profiling/index.md)  

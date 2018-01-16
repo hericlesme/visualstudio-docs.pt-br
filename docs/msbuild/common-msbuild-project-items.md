@@ -19,14 +19,14 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
-Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um item é uma referência nomeada a um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] têm vários itens em comum. Esses itens são definidos no arquivo microsoft.build.commontypes.xsd.  
+Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um item é uma referência nomeada a um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] têm vários itens em comum. Esses itens são definidos no arquivo Microsoft.Build.CommonTypes.xsd.  
   
 ## <a name="common-items"></a>Itens Comuns  
  Esta é uma lista de todos os itens de projeto em comum.  
@@ -34,7 +34,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="reference"></a>Referência  
  Representa uma referência de assembly (gerenciado) no projeto.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |HintPath|Cadeia de caracteres opcional. O caminho relativo ou absoluto do assembly.|  
 |Nome|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|  
@@ -46,7 +46,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comreference"></a>COMReference  
  Representa uma referência a um componente COM (não gerenciado) no projeto.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |Nome|Cadeia de caracteres opcional. O nome de exibição do componente.|  
 |Guid|Cadeia de caracteres opcional. Um GUID do componente, no formulário {12345678-1234-1234-1234-1234567891234}.|  
@@ -59,14 +59,14 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comfilereference"></a>COMFileReference  
  Representa uma lista de bibliotecas de tipo que alimentam o destino ResolvedComreference.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |WrapperTool|Cadeia de caracteres opcional. O nome da ferramenta wrapper usada no componente, por exemplo, “tlbimp”.|  
   
 ### <a name="nativereference"></a>NativeReference  
  Representa um arquivo de manifesto nativo ou uma referência a esse arquivo.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |Nome|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|  
 |HintPath|Cadeia de caracteres obrigatória. O caminho relativo do arquivo de manifesto.|  
@@ -74,7 +74,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="projectreference"></a>ProjectReference  
  Representa uma referência a outro projeto.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |Nome|Cadeia de caracteres opcional. O nome de exibição da referência.|  
 |Projeto|Cadeia de caracteres opcional. Um GUID da referência, no formulário {12345678-1234-1234-1234-1234567891234}.|  
@@ -83,7 +83,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compilar  
  Representa os arquivos de origem do compilador.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |DependentUpon|Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente.|  
 |AutoGen|Booliano opcional. Indica se o arquivo foi gerado para o projeto pelo ambiente de desenvolvimento integrado (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
@@ -94,7 +94,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Representa os recursos a serem inseridos no assembly gerado.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |DependentUpon|Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente|  
 |Gerador|Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item.|  
@@ -108,7 +108,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Conteúdo  
  Representa os arquivos não compilados no projeto, mas pode ser inserido ou publicado junto com ele.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |DependentUpon|Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente.|  
 |Gerador|Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item.|  
@@ -123,7 +123,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="none"></a>Nenhum  
  Representa arquivos que não devem ter função no processo de build.  
   
-|Nome do Item|Descrição|  
+|Nome de metadados do item|Descrição|  
 |---------------|-----------------|  
 |DependentUpon|Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente.|  
 |Gerador|Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item.|  

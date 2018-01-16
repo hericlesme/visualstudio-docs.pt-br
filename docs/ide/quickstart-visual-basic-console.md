@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 46557b646db37b3f04420ca5b91ab71c4f5b088a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guia de início rápido: criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic
 Nesta introdução de 5 a 10 minutos ao IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo simples do Visual Basic que é executado no console.
@@ -44,7 +44,7 @@ Primeiro, você criará um projeto de aplicativo do Visual Basic. O tipo de proj
      ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Criar o aplicativo
-Depois de selecionar o modelo de projeto do Visual Basic e nomear o projeto, o Visual Studio criará um aplicativo “Olá, Mundo” simples para você. Ele chama o método [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) para exibir a cadeia de caracteres literal “Olá, Mundo!” na janela do console.
+Depois de selecionar o modelo de projeto do Visual Basic e nomear o projeto, o Visual Studio criará um aplicativo “Olá, Mundo” simples para você. Ele chama o método <xref:System.Console.WriteLine%2A> para exibir a cadeia de caracteres literal "Hello World!" na janela do console.
 
 ![Exibir o código Olá, Mundo padrão do modelo](../ide/media/vb-console-helloworld-template.png)
 
@@ -57,7 +57,7 @@ Quando você faz isso, a janela do console se torna visível somente por um mome
 ### <a name="add-some-code"></a>Adicionar código
 Vamos adicionar alguns códigos para pausar o aplicativo e, em seguida, solicitar a entrada do usuário.
 
-1. Adicione o seguinte código imediatamente após a chamada para o método [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String):
+1. Adicione o seguinte código imediatamente após a chamada ao método <xref:System.Console.WriteLine%2A>:
 
    ```vb
    Console.Write("Press any key to continue...")

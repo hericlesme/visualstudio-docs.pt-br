@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
-caps.latest.revision: "33"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a24166bb88737699dc3b853cf7a821649acbc118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Atualizando testes de IU codificados a partir do Visual Studio 2010
 Os projetos de teste que contêm testes de interface do usuário codificados criados no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 são reparados silenciosamente quando abertos no Visual Studio 2012 ou posterior. Se os Projetos de teste forem inseridos no controle do código-fonte, os arquivos do projeto serão verificados para realização desse reparo. Após o reparo, esses projetos de teste que contêm testes de IU codificados podem ser usados no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 e no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -64,9 +63,9 @@ Os projetos de teste que contêm testes de interface do usuário codificados cri
   
 -   **Teste de carga:** quando você executa um teste de carga junto com um tipo de rede que não é o perfil de rede local (LAN) em um computador com o Windows 8, o driver do emulador de rede faz com que o sistema operacional falhe. Para obter mais detalhes, consulte o [Artigo KB 2736182](http://support.microsoft.com/kb/2736182).  
   
-## <a name="see-also"></a>Consulte também  
- [Portabilidade, migração e atualização de projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Atualizar Testes de Versões Anteriores do Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Gerar um Teste de IU Codificado de uma gravação da ação existente](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)   
- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Consulte também
+
+[Portabilidade, migração e atualização de projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[Atualizando os testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
+[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)  
+[Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

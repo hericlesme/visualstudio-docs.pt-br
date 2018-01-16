@@ -1,40 +1,36 @@
 ---
-title: "Benefício Visual Studio Team Services"
+title: VSTS para assinantes do Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Visual Studio Team Services (VSTS) benefit included in your Visual Studio subscription.
+Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 72579bda7fdaa16c40759f1bc20504f035ffa7c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: c2545855f7e5226a1a679d5d8b558f1964fe72b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="activating-the-visual-studio-team-services-vsts-benefit-in-visual-studio-subscriptions"></a>Ativando o benefício VSTS (Visual Studio Team Services) nas assinaturas do Visual Studio
 
-A maioria das assinaturas do Visual Studio inclui o acesso ao VSTS (Visual Studio Team Services).  Ele é o complemento mais importante para o IDE, fornecendo repositórios Git, ferramentas de planejamento Agile e builds hospedados gratuitamente para qualquer linguagem.  
+Quando você entrar no VSTS usando a mesma identidade usada para ativar sua assinatura do Visual Studio, ela será reconhecida automaticamente. Isso funciona para a identidade principal usada ao fazer logon no Portal do Assinante e para qualquer identidade alternativa que esteja configurada para a sua assinatura do Visual Studio. O VSTS é compatível tanto com contas da Microsoft (como @outlook.com) quanto com contas corporativas ou de estudante (que usam um Azure Active Directory gerenciado pela organização). Você pode usar suas identidades principais e alternativas no VSTS e adicionar qualquer número de contas do VSTS como membros.
 
-Para usar o VSTS, você precisará de uma conta. Você pode entrar com uma conta existente ou criar uma nova.  Para criar uma nova conta:
-1.  Clique no link "Começar a usar" na parte inferior do bloco do benefício.   
+# <a name="vsts-features-included-by-visual-studio-subscription-level"></a>Recursos do VSTS incluídos por nível de assinatura do Visual Studio
 
-    ![Bloco do benefício VSTS](_img\vs-vsts\vs-vsts-tile.png)
+Estes recursos do VSTS estão incluídos nas seguintes assinaturas: 
+- Visual Studio Enterprise: [Básico](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web), [Gerenciamento de Pacotes](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+- Visual Studio Professional: [Básico](https://www.visualstudio.com/team-services/compare-features/)
+- Plataformas MSDN: [Básico](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+- Visual Studio Test Professional: [Básico](https://www.visualstudio.com/team-services/compare-features/), [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
-2.  Insira um nome para o site do projeto do VSTS.  
-3.  Escolha se deseja usar o **Git** ou o **TFVC (Controle de Versão do Team Foundation)** para gerenciar o projeto.  Essa é uma escolha permanente para cada projeto de equipe que você criar, mas é possível usar os projetos de equipe TFVC e Git na mesma coleção de projetos de equipe.  Não sabe qual deseja usar? 
-- Git: o Git é um sistema de controle de versão descentralizado. Cada desenvolvedor tem uma cópia do repositório inteiro de origem em seu computador de desenvolvimento. Os desenvolvedores podem confirmar cada conjunto de alterações em seu computador de desenvolvimento e executar operações de controle de versão, como histórico e comparação, sem uma conexão de rede.  [Saiba mais sobre o Git](https://www.visualstudio.com/en-us/docs/git/gitquickstart)
-- O TFVC (Controle de Versão do Team Foundation) é um sistema de controle de versão centralizado. Normalmente, os membros da equipe tem apenas uma versão de cada arquivo em seus computadores de desenvolvimento. Os dados históricos são mantidos somente no servidor. As ramificações são baseadas em caminho e criadas no servidor. [Saiba mais](https://www.visualstudio.com/en-us/docs/tfvc/overview) sobre o Controle de Versão do Team Foundation.
- 
-4.  Clique em **Alterar detalhes** para personalizar as opções de nome do projeto, de como organizar seu trabalho (Agile, Scrum, CMMI), de onde hospedar seus projetos e de como compartilhar seu trabalho com outras pessoas.  Clique em "Continuar".
+Esses recursos do VSTS estão incluídos em todas as assinaturas pagas, [nuvem e Standard](https://www.visualstudio.com/vs/pricing/) e também nas assinaturas oferecidas para inicializações no [programa BizSpark](https://bizspark.microsoft.com/) e para parceiros com alguma [competência](https://partner.microsoft.com/membership/competencies) na Microsoft Partner Network. O VSTS não está incluído no [Microsoft Action Pack](https://partner.microsoft.com/membership/action-pack) nem no [programa Imagine](https://imagine.microsoft.com/) para estudantes e instituições acadêmicas, embora qualquer pessoa possa criar uma conta do VSTS gratuitamente com até cinco membros da equipe.
 
-    ![Detalhes do projeto do benefício VSTS](_img\vs-vsts\vs-vsts-project-details.png)
+# <a name="create-your-vsts-account"></a>Criar sua conta do VSTS
 
-5.  Levará um tempo para criar sua conta e, em seguida, você verá a página do VSTS do seu primeiro projeto, usando o nome especificado.  Agora você está pronto para começar a usar o Visual Studio Team Services!
+Para usar o VSTS, você precisará criar uma conta ou a ser adicionado como membro na conta de outra pessoa. Criar uma conta do VSTS é gratuito e você pode criar várias contas do VSTS. 
 
-Você também receberá um email confirmando que a sua conta foi criada com êxito.  Ele também listará a URL da conta e os endereços de email de conexão e preferencial.  
-
-![Email de boas-vinda do benefício VSTS](_img\vs-vsts\vs-vsts-welcome.png)
+[Como se inscrever no VSTS](https://docs.microsoft.com/vsts/accounts/index)

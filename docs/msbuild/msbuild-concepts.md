@@ -14,11 +14,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e57abdc78bc5b5844959fe2e3077688ec496df49
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a428fa303fc3f4ad60599155b0663370f823210
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="msbuild-concepts"></a>Conceitos do MSBuild
 O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um esquema XML básico que você pode usar para controlar como a plataforma de build compila o software. Para especificar os componentes no build e como eles devem ser compilados, use essas quatro partes do MSBuild: propriedades, itens, tarefas e destinos.  
@@ -28,9 +28,9 @@ O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |Título|Descrição|  
 |-----------|-----------------|  
 |[Propriedades MSBuild](../msbuild/msbuild-properties.md)|Introduz propriedades e coleções de propriedades. As propriedades são pares chave-valor que podem ser usados para configurar builds.|  
-|[Itens](../msbuild/msbuild-items.md)|Descreve os conceitos gerais por trás do formato do arquivo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e como as partes se encaixam.|  
-|[Destinos](../msbuild/msbuild-targets.md)|Explica como agrupar tarefas em uma ordem específica e habilitar seções do processo de build a ser chamado na linha de comando.|  
-|[Tarefas](../msbuild/msbuild-tasks.md)|Mostra como criar uma unidade do código executável que pode ser usado por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para realizar operações de build atômicas.|  
+|[Itens do MSBuild](../msbuild/msbuild-items.md)|Apresenta os itens e as coleções de itens. Os itens são entradas no sistema de build e normalmente representam arquivos.|  
+|[Destinos do MSBuild](../msbuild/msbuild-targets.md)|Explica como agrupar tarefas em uma ordem específica e habilitar seções do processo de build a ser chamado na linha de comando.|  
+|[Tarefas do MSBuild](../msbuild/msbuild-tasks.md)|Mostra como criar uma unidade do código executável que pode ser usado por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para realizar operações de build atômicas.|  
 |[Comparando propriedades e itens](../msbuild/comparing-properties-and-items.md)|Compara itens e propriedades do MSBuild. Ambos são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.|  
 |[Caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md)|Explica como escapar alguns caracteres que o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reserva para uso especial em contextos específicos.|  
 |[Passo a passo: criando um arquivo de projeto MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto.|  

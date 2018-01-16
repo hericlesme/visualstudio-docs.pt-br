@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Trabalhando com a Janela Interativa do Python
 

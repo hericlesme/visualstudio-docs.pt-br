@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>Depurando o código do Python
 
@@ -31,7 +31,7 @@ Neste tópico:
 
 - [Depuração básica](#basic-debugging)
 - [Opções de depuração de projeto](#project-debugging-options)
-- [A janela Interativa de Depuração](#the-debug-interactive-window)
+- [Janelas imediatas e interativas](#immediate-and-interactive-windows)
 
 Consulte também os seguintes tópicos sobre depuração específicos ao cenário:
 
@@ -163,6 +163,7 @@ Por padrão, o depurador inicia o programa com o inicializador padrão do Python
 | Variáveis de ambiente | Nessa caixa de texto multilinha, adicione entradas com o formato `NAME=VALUE`. Como essa configuração é aplicada por último, na parte superior das variáveis de ambiente globais existentes e depois que `PYTHONPATH` é definido de acordo com a configuração de Caminhos de Pesquisa, ela pode ser usada para substituir qualquer um dos outros valores manualmente. |
 
 <a name="the-debug-interactive-window"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>Janelas imediata e interativa
 
 Há duas janelas interativas que podem ser usadas durante uma sessão de depuração: a janela Imediata padrão do Visual Studio e a janela Interativa de Depuração do Python.

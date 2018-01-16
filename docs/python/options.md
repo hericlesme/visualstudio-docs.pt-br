@@ -1,7 +1,7 @@
 ---
 title: "Opções do Python no Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -40,6 +40,8 @@ As opções específicas são descritas nas seguintes seções:
 - [Opções de diagnóstico](#diagnostics-options)
 - [Opções da Janela Interativa](#interactive-windows-options)
 - [Opções avançadas de editor de Python](#advanced-python-editor-options)
+
+Observe que o grupo **Experimental** contém opções para recursos que ainda estão em desenvolvimento e não estão documentados aqui. Geralmente eles são discutidos em postagens no [blog Python engineering at Microsoft (Engenharia Python na Microsoft)](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Opções gerais
 
@@ -69,7 +71,6 @@ As opções específicas são descritas nas seguintes seções:
 | Habilitar a depuração da biblioteca padrão do Python | Off | Torna possível intervir no código-fonte da biblioteca padrão durante a depuração, mas aumenta o tempo necessário para iniciar o depurador.|
 
 ![Caixa de diálogo de opções do Python, guia Depuração](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>Opções de diagnóstico
 

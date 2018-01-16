@@ -1,184 +1,179 @@
 ---
-title: Como criar modelos multiprojeto | Microsoft Docs
+title: Criar modelos multiprojetos para Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual Studio templates, creating multi-project templates
-- project templates, creating multi-project templates
+- Visual Studio templates, creating multi-project
+- project templates, multi-project
 - multi-project templates
-ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac7701e3e4dc11bc5634436c3e6f831f6711e514
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: 86952d3b742abf3b73b22e17d695717ca8dac9bd
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="how-to-create-multi-project-templates"></a>Como criar modelos multiprojeto
-Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. Quando um projeto baseado em um modelo multiprojeto é criado com base na caixa de diálogo **Novo Projeto**, todo projeto no modelo é adicionado à solução.  
+# <a name="how-to-create-multi-project-templates"></a>Como criar modelos multiprojetos
 
- Um modelo multiprojeto contém dois ou mais modelos de projeto juntamente com um modelo de raiz do tipo `ProjectGroup`.
+Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. Quando você cria um projeto baseado em um modelo multiprojetos usando a caixa de diálogo **Novo Projeto**, todos os projetos no modelo são adicionados à solução.
 
- Modelos multiprojeto também se comportam de maneira diferente dos modelos normais. Modelos multiprojeto têm as seguintes características exclusivas:  
-  
--   Projetos individuais em um modelo multiprojeto não podem ter nomes atribuídos pela caixa de diálogo **Novo Projeto**. Em vez disso, use o atributo `ProjectName` no elemento `ProjectTemplateLink` para especificar o nome de cada projeto. Para obter mais informações, consulte o primeiro exemplo na seção a seguir.  
-  
--   Modelos multiprojeto podem conter projetos escritos em diferentes linguagens, mas o próprio modelo inteiro só pode ser colocado em uma categoria usando o elemento `ProjectType`.  
-  
-### <a name="to-create-a-multi-project-template"></a>Para criar um modelo multiprojeto  
-  
-1.  Crie os projetos a serem incluídos no modelo multiprojeto:
-    1.  Criar um projeto.  
-  
-    > [!NOTE]
-    >  Use apenas caracteres identificadores válidos para nomear um projeto que será a origem de um modelo. Um modelo exportado de um projeto nomeado com caracteres inválidos pode causar erros de compilação em projetos futuros baseados no modelo. Para obter mais informações sobre caracteres identificadores válidos, consulte [Nomes de Elementos Declarados](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names).  
-  
-    2.  Edite o projeto até que ele esteja pronto para ser exportado como um modelo.  
-  
-    3.  Conforme apropriado, edite os arquivos de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações sobre a substituição de parâmetros, consulte [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).  
-  
-    4.  No menu **Projeto**, clique em **Exportar Modelo**. O assistente de **Exportação de Modelo** é aberto.  
-  
-    5.  Clique em **Modelo de Projeto**.  
-  
-    6.  Se você tiver mais de um projeto em sua solução atual, selecione os projetos que deseja exportar como um modelo.  
-  
-    7.  Clique em **Avançar**.  
-  
-    8.  Selecione um ícone e uma imagem de visualização para o modelo. Eles aparecerão na caixa de diálogo **Novo Projeto**.  
-  
-    9. Insira um nome e uma descrição para o modelo.  
-  
-    10. Clique em **Finalizar**. Seu projeto é exportado para um arquivo .zip e colocado no local de saída especificado e, se selecionado, é importado para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
-2.  Extraia o arquivo. vstemplate do arquivo zip gerado no mesmo diretório do arquivo de projeto usado para exportar o modelo.
+Um modelo multiprojetos contém dois ou mais modelos de projeto e um modelo raiz do tipo `ProjectGroup`.
 
-3.  Crie um arquivo .vstemplate raiz para conter os metadados do modelo multiprojeto. Para obter mais informações, consulte o primeiro exemplo na seção a seguir.  
-  
-4.  Selecione os arquivos e pastas a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)**. Esses arquivos e pastas estão compactados em um arquivo .zip.  
-  
-> [NOTE!] Um modelo multiprojeto precisa incluir os itens a seguir, compactados em um arquivo .zip:  
->   
-> -   Um arquivo .vstemplate raiz para todo o modelo multiprojeto. Esse arquivo .vstemplate raiz contém os metadados que a caixa de diálogo **Novo Projeto** exibe e especifica onde localizar os arquivos .vstemplate para os projetos nesse modelo. Esse arquivo deve estar localizado na raiz do arquivo .zip.  
->   
-> -   Uma ou mais pastas que contêm os arquivos necessários para um modelo de projeto completo. Isso inclui todos os arquivos de código do projeto e um arquivo .vstemplate do projeto.  
->   
-> Por exemplo, um arquivo .zip de modelo multiprojeto com dois projetos poderia ter os seguintes arquivos e diretórios:  
->   
->  MultiProjectTemplate.vstemplate  
->   
->  \Project1\Project1.vstemplate  
->   
->  \Project1\Project1.vbproj  
->   
->  \Project1\Class.vb  
->   
->  \Project2\Project2.vstemplate  
->   
->  \Project2\Project2.vbproj  
->   
->  \Project2\Class.vb  
->   
->  O arquivo .vstemplate raiz para um modelo multiprojeto difere de um modelo de projeto único das seguintes maneiras:  
->   
-> -   O atributo `Type` do elemento `VSTemplate` contém o valor `ProjectGroup`. Por exemplo:  
->   
->     ```  
->     <VSTemplate Version="2.0.0" Type="ProjectGroup"  
->         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
->     ```  
->   
-> -   O elemento `TemplateContent` contém um elemento `ProjectCollection` que tem um ou mais elementos `ProjectTemplateLink` que definem os caminhos para os arquivos .vstemplate dos projetos incluídos. Por exemplo:  
->   
->     ```  
->     <TemplateContent>  
->         <ProjectCollection>  
->             <ProjectTemplateLink>  
->                 Project1\Project1.vstemplate  
->             </ProjectTemplateLink>  
->             <ProjectTemplateLink>  
->                 Project2\Project2.vstemplate  
->             </ProjectTemplateLink>  
->         </ProjectCollection>  
->     </TemplateContent>  
->     ```  
->   
-  
-5.  Coloque o arquivo de modelo .zip no diretório de modelo de projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Por padrão, esse diretório é \Meus Documentos\Visual Studio *Versão*\Templates\ProjectTemplates\\.  
-  
-## <a name="example"></a>Exemplo  
- Esse exemplo mostra um arquivo .vstemplate raiz multiprojeto básico. Neste exemplo, o modelo contém dois projetos, `My Windows Application` e `My Class Library`. O atributo `ProjectName` no elemento `ProjectTemplateLink` define o nome do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para atribuir este projeto. Se o atributo `ProjectName` não existir, o nome do arquivo .vstemplate é usado como o nome do projeto.  
-  
-```  
-<VSTemplate Version="2.0.0" Type="ProjectGroup"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-Project Template Sample</Name>  
-        <Description>An example of a multi-project template</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink ProjectName="My Windows Application">  
-                WindowsApp\MyTemplate.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink ProjectName="My Class Library">  
-                ClassLib\MyTemplate.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="example"></a>Exemplo  
- Esse exemplo usa o elemento `SolutionFolder` para dividir os projetos em dois grupos, `Math Classes` e `Graphics Classes`. O modelo contém quatro projetos, dois dos quais são colocados em cada pasta de solução.  
-  
-```  
-<VSTemplate Version="2.0.0" Type="ProjectGroup"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>Multi-Project Template Sample</Name>  
-        <Description>An example of a multi-project template</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>VisualBasic</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <SolutionFolder Name="Math Classes">  
-                <ProjectTemplateLink ProjectName="MathClassLib1">  
-                    MathClassLib1\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-                <ProjectTemplateLink ProjectName="MathClassLib2">  
-                    MathClassLib2\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-            </SolutionFolder>  
-            <SolutionFolder Name="Graphics Classes">  
-                <ProjectTemplateLink ProjectName="GraphicsClassLib1">  
-                    GraphicsClassLib1\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-                <ProjectTemplateLink ProjectName="GraphicsClassLib2">  
-                    GraphicsClassLib2\MyTemplate.vstemplate  
-                </ProjectTemplateLink>  
-            </SolutionFolder>  
-        </ProjectCollection>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Elemento SolutionFolder (modelos do Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
- [Elemento ProjectTemplateLink (modelos do Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+Os modelos multiprojetos comportam-se de forma diferente dos modelos de projeto único. Eles têm as seguintes características exclusivas:
+
+- Os projetos individuais em um modelo multiprojetos não podem ter nomes atribuídos na caixa de diálogo **Novo Projeto**. Nesse caso, use o atributo `ProjectName` no elemento `ProjectTemplateLink` no arquivo .vstemplate para especificar um nome para cada projeto.
+
+- Os modelos multiprojetos podem conter projetos de diferentes linguagens, mas o modelo inteiro em si só pode ser colocado em uma única categoria. Especifique a categoria do modelo no elemento `ProjectType` do arquivo .vstemplate.
+
+Um modelo multiprojeto deve incluir os itens a seguir, compactados em um arquivo .zip:
+
+- Um arquivo .vstemplate raiz para todo o modelo multiprojeto. Esse arquivo .vstemplate raiz contém metadados que a caixa de diálogo **Novo Projeto** exibe e especifica onde localizar os arquivos .vstemplate dos projetos no modelo. Esse arquivo deve estar localizado na raiz do arquivo .zip.
+
+- Duas ou mais pastas que contêm os arquivos necessários para um modelo de projeto concluído. Isso inclui todos os arquivos de código do projeto e um arquivo .vstemplate do projeto.
+
+Por exemplo, um arquivo .zip de modelo multiprojeto com dois projetos poderia ter os seguintes arquivos e diretórios:
+
+- MultiProjectTemplate.vstemplate
+- \Project1\Project1.vstemplate
+- \Project1\Project1.vbproj
+- \Project1\Class.vb
+- \Project2\Project2.vstemplate
+- \Project2\Project2.vbproj
+- \Project2\Class.vb
+
+O arquivo .vstemplate raiz para um modelo multiprojeto difere de um modelo de projeto único das seguintes maneiras:
+
+- O atributo `Type` do elemento `VSTemplate` tem o valor `ProjectGroup` em vez de `Project`. Por exemplo:
+
+    ```xml
+    <VSTemplate Version="2.0.0" Type="ProjectGroup"
+        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    ```
+
+- O elemento `TemplateContent` contém um elemento `ProjectCollection` que tem um ou mais elementos `ProjectTemplateLink` que definem os caminhos para os arquivos .vstemplate dos projetos incluídos. Por exemplo:
+
+    ```xml
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink>
+                Project1\Project1.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink>
+                Project2\Project2.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+    ```
+
+## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>Para criar um modelo multiprojetos usando uma solução existente
+
+1. Crie uma solução e adicione dois ou mais projetos.
+
+1. Personalize os projetos até que eles estejam prontos para serem exportados para um modelo.
+
+1. No menu **Projeto**, escolha **Exportar Modelo...**.
+
+   O **Assistente para Exportar Modelo** é aberto.
+
+1. Na página **Escolher Tipo de Modelo**, selecione **Modelo de Projeto**. Selecione o projeto que você deseja exportar como um modelo e, em seguida, escolha **Avançar**.
+
+1. Na página **Selecionar Opções do Modelo**, insira um nome e uma descrição opcional, um ícone e uma imagem de exibição para o modelo. Escolha **Concluir**.
+
+   O projeto é exportado para um arquivo .zip e colocado no local de saída especificado.
+
+   > [!NOTE]
+   > Cada projeto deve ser exportado para um modelo separadamente, portanto, repita as etapas anteriores para cada projeto na solução.
+
+1. Crie um diretório para o modelo, com um subdiretório para cada projeto.
+
+1. Extraia o conteúdo do arquivo .zip de cada projeto para o subdiretório correspondente que você acabou de criar.
+
+1. No diretório base, crie um arquivo XML com uma extensão de arquivo **.vstemplate**. Esse arquivo contém os metadados do modelo multiprojetos. Consulte o exemplo a seguir para obter a estrutura do arquivo. Certifique-se de especificar o caminho relativo para o arquivo .vstemplate de cada projeto.
+
+1. Selecione o diretório base e, no menu de contexto ou no menu acionado com o botão direito do mouse, escolha **Enviar para** > **Pasta compactada (zipada)**.
+
+   Esses arquivos e pastas estão compactados em um arquivo .zip.
+
+1. Copie o arquivo .zip no diretório do modelo de projeto do usuário. Por padrão, esse diretório é %USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates.
+
+1. No Visual Studio, abra a caixa de diálogo **Novo Projeto** e verifique se o modelo é exibido.
+
+## <a name="two-project-example"></a>Exemplo de dois projetos
+
+Esse exemplo mostra um arquivo .vstemplate raiz multiprojeto básico. Neste exemplo, o modelo contém dois projetos, `My Windows Application` e `My Class Library`. O atributo `ProjectName` no elemento `ProjectTemplateLink` especifica o nome que é fornecido para o projeto.
+
+> [!TIP]
+> Se o atributo `ProjectName` não for especificado, o nome do arquivo .vstemplate será usado como o nome do projeto.
+
+```xml
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-Project Template Sample</Name>
+        <Description>An example of a multi-project template</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink ProjectName="My Windows Application">
+                WindowsApp\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="My Class Library">
+                ClassLib\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="example-with-solution-folders"></a>Exemplo com pastas de solução
+
+Esse exemplo usa o elemento `SolutionFolder` para dividir os projetos em dois grupos, `Math Classes` e `Graphics Classes`. O modelo contém quatro projetos, dois dos quais são colocados em cada pasta de solução.
+
+```xml
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Multi-Project Template Sample</Name>
+        <Description>An example of a multi-project template</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>VisualBasic</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="Math Classes">
+                <ProjectTemplateLink ProjectName="MathClassLib1">
+                    MathClassLib1\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="MathClassLib2">
+                    MathClassLib2\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+            <SolutionFolder Name="Graphics Classes">
+                <ProjectTemplateLink ProjectName="GraphicsClassLib1">
+                    GraphicsClassLib1\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+                <ProjectTemplateLink ProjectName="GraphicsClassLib2">
+                    GraphicsClassLib2\MyTemplate.vstemplate
+                </ProjectTemplateLink>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Consulte também
+
+[Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)  
+[Como criar modelos de projeto](../ide/how-to-create-project-templates.md)  
+[Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)  
+[Elemento SolutionFolder (modelos do Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)  
+[Elemento ProjectTemplateLink (modelos do Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

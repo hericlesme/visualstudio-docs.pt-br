@@ -7,47 +7,39 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
-caps.latest.revision: "25"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36e235af45e1ce313f2f0e22ab9777d5e205dbe1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 1925152f830d9969c8650fe698be6ebc70e65cf2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo .runsettings
-Os testes de unidade no Visual Studio podem ser configurados com um arquivo \*.runsettings. (O nome do arquivo não importa, contanto que você use a extensão ‘.runsettings’). Por exemplo, é possível alterar o .NET Framework em que os testes serão executados, o diretório para o qual os resultados de teste serão enviados e os dados coletados durante uma execução de teste.  
-  
- Se você não desejar adicionar nenhuma configuração especial, não será preciso ter um arquivo \*.runsettings. O uso mais frequente é para personalizar a [Cobertura de Código](../test/customizing-code-coverage-analysis.md).  
-  
-> [!NOTE]
->  **.runsettings e .testsettings**  
->   
->  Há dois tipos de arquivo para a configuração de testes. \*.runsettings são usados para testes de unidade. E \*.testsettings para [testes de ambiente de laboratório](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), testes de carga e desempenho da Web e para personalizar alguns tipos de adaptadores de dados de diagnóstico, como adaptadores de log de evento e IntelliTrace.  
->   
->  Em edições anteriores do Visual Studio até 2010, os testes de unidade também eram personalizados com arquivos \*.testsettings. Ainda é possível fazer isso, mas os testes serão executados mais lentamente do que usando as configurações equivalentes em um arquivo \*.runsettings.  
-  
-## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizando testes com um arquivo .runsettings  
-  
-1.  Adicione um arquivo XML à solução Visual Studio e renomeie-o para test.runsettings. (O nome do arquivo não importa, mas a extensão deve ser .runsettings).  
-  
-2.  Substitua o conteúdo do arquivo pelo [exemplo](#example).  
-  
-     Edite-o conforme suas necessidades.  
-  
-3.  No menu **Testar**, escolha **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste**.  
-  
- É possível criar mais de um arquivo \*.runsettings em sua solução e habilitá-los ou desabilitá-los em momentos diferentes com o menu **Configurações de Teste**.  
-  
- ![Habilitando um arquivo de configurações de execução](../test/media/runsettings-1.png "RunSettings-1")  
-  
-##  <a name="example"></a> Copiar este exemplo de arquivo .runsettings  
- Veja um arquivo \*.runsettings típico. Cada elemento do arquivo é opcional, porque cada valor possui um padrão.  
-  
-```xml  
+
+Os testes de unidade no Visual Studio podem ser configurados com um arquivo \*.runsettings. (O nome do arquivo não importa, desde que você use a extensão ‘.runsettings.’) Por exemplo, é possível alterar a versão do .NET Framework em que os testes serão executados, o diretório para onde os resultados do teste são enviados e os dados coletados durante execução de um teste.
+
+Se você não precisar de nenhuma configuração especial, não será necessário ter um arquivo \*.runsettings. O uso mais comum de um arquivo \*.runsettings é personalizar a [Cobertura de Código](../test/customizing-code-coverage-analysis.md).
+
+## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizando testes com um arquivo .runsettings
+
+1. Adicione um arquivo XML à solução Visual Studio e renomeie-o para test.runsettings. (O nome do arquivo não importa, mas a extensão deve ser .runsettings).
+
+1. Substitua o conteúdo do arquivo pelo XML do exemplo a seguir e personalize-o conforme o necessário.
+
+1. No menu **Testar**, escolha **Configurações de Teste** > **Selecionar Arquivo de Configurações de Teste**.
+
+É possível criar mais de um arquivo \*.runsettings em sua solução e habilitá-los ou desabilitá-los em momentos diferentes com o menu **Configurações de Teste**.
+
+![Habilitando um arquivo de configurações de execução](../test/media/runsettings-1.png "RunSettings-1")
+
+## <a name="example-runsettings-file"></a>Exemplo de arquivo .runsettings
+
+Veja a seguir um arquivo \*.runsettings típico. Cada elemento do arquivo é opcional, porque cada valor possui um padrão.
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <RunSettings>  
   <!-- Configurations that affect the Test Framework -->  
@@ -115,15 +107,16 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo \*.r
 </RunSettings>  
 ```  
   
- O arquivo .runsettings também é usado para configurar a [Cobertura de Código](../test/customizing-code-coverage-analysis.md).  
+O arquivo .runsettings também é usado para configurar a [Cobertura de Código](../test/customizing-code-coverage-analysis.md).  
   
- O restante deste tópico descreve o conteúdo do arquivo.  
-  
-## <a name="edit-your-runsettings-file"></a>Editar o arquivo .runsettings  
- O arquivo .runsettings possui os elementos a seguir.  
-  
-### <a name="test-run-configuration"></a>Configuração de execução de teste  
-  
+O restante deste tópico descreve o conteúdo do arquivo.  
+
+## <a name="edit-your-runsettings-file"></a>Editar o arquivo .runsettings
+
+O arquivo .runsettings possui os elementos a seguir.
+
+### <a name="test-run-configuration"></a>Configuração de execução de teste
+
 |Nó|Padrão|Valores|  
 |----------|-------------|------------|  
 |`ResultsDirectory`||O diretório no qual os resultados do teste serão colocados.|  
@@ -133,23 +126,22 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo \*.r
 |`TestAdaptersPaths`||Um ou vários caminhos para o diretório em que os TestAdapters estão localizados|  
 |`MaxCpuCount`|1|Isso controla o grau de execução de teste paralela ao executar testes de unidade usando os núcleos disponíveis no computador.  O mecanismo de execução de testes inicia como um processo distinto em cada núcleo disponível e fornece um contêiner para cada núcleo com testes a serem executados, como um assembly, DLL ou artefato relevante.  O contêiner do teste está agendando a unidade.  Em cada contêiner, os testes são executados de acordo com a estrutura de teste.  Se houver muitos contêineres, à medida que os processos terminarem de executar os testes em um contêiner, eles passarão para o próximo contêiner disponível.<br /><br /> MaxCpuCount pode ser:<br /><br /> n,em que 1 <= n <= número de núcleos: até n processos serão iniciados<br /><br /> n, em que n = qualquer outro valor: o número de processos iniciados será até a quantidade de núcleos disponíveis no computador|  
   
-### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de dados de diagnóstico (coletores de dados)  
- O elemento `DataCollectors` especifica configurações de adaptadores de dados de diagnóstico. Os adaptadores de dados de diagnóstico são usados para coletar informações adicionais sobre o ambiente e o aplicativo em teste. Cada adaptador tem configurações padrão e você só precisará fornecer configurações caso não deseje usar os padrões.  
-  
-#### <a name="code-coverage-adapter"></a>Adaptador de cobertura de código  
- O coletor de dados de cobertura de código cria um log das partes do código do aplicativo que foram utilizadas no teste. Para obter mais informações sobre como personalizar as configurações de cobertura de código, consulte [Personalizando análise de cobertura de código](../test/customizing-code-coverage-analysis.md).  
-  
-#### <a name="other-diagnostic-data-adapters"></a>Outros adaptadores de dados de diagnóstico  
- O adaptador de cobertura de código é atualmente o único adaptador que pode ser personalizado usando o arquivo de configurações de execução.  
-  
- Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, você deve usar um arquivo de configurações de teste. Para obter mais informações, consulte [Especificando configurações de teste do Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).  
-  
-#### <a name="testrunparameters"></a>TestRunParameters  
- TestRunParameters fornece uma maneira de definir variáveis e valores disponíveis para os testes em tempo de execução.  
-  
-### <a name="mstest-run-settings"></a>Configurações de execução do MSTest  
- Essas configurações são específicas para o adaptador de teste que executa os métodos de teste que têm o atributo `[TestMethod]`.  
-  
+### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de dados de diagnóstico (coletores de dados)
+
+O elemento `DataCollectors` especifica configurações de adaptadores de dados de diagnóstico. Os adaptadores de dados de diagnóstico são usados para coletar informações adicionais sobre o ambiente e o aplicativo em teste. Cada adaptador tem configurações padrão e você só precisará fornecer configurações caso não deseje usar os padrões.
+
+#### <a name="code-coverage-adapter"></a>Adaptador de cobertura de código
+
+O coletor de dados de cobertura de código cria um log das partes do código do aplicativo que foram utilizadas no teste. Para obter mais informações sobre como personalizar as configurações de cobertura de código, consulte [Personalizando análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
+
+### <a name="testrunparameters"></a>TestRunParameters
+
+TestRunParameters fornece uma maneira de definir variáveis e valores disponíveis para os testes em tempo de execução.  
+
+### <a name="mstest-run-settings"></a>Configurações de execução do MSTest
+
+Essas configurações são específicas para o adaptador de teste que executa os métodos de teste que têm o atributo `[TestMethod]`.  
+
 |Configuração|Padrão|Valores|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|false|No Visual Studio 2012, o adaptador MSTest foi otimizado para torná-lo mais rápido e mais escalonável. Alguns comportamentos, como a ordem em que os testes são executados, não podem ser exatamente iguais aos de edições anteriores do Visual Studio. Defina esse valor como `true` para usar o adaptador mais antigo de teste.<br /><br /> Por exemplo, você poderá usar isso se tiver um arquivo app.config especificado para um teste de unidade.<br /><br /> Recomendamos que você considere refatorar seus testes para permitir o uso do adaptador mais recente.|  
@@ -162,7 +154,7 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo \*.r
 |MapInconclusiveToFailed|false|Se um teste retornar com um status inconclusivo, ele geralmente será mapeado para o status Ignorado no Gerenciador de Testes. Se você quiser que os testes Inconclusivos sejam mostrados como Falha, use esta configuração.|  
 |InProcMode|false|Se você quiser que os testes sejam executados no mesmo processo do adaptador MSTest, defina esse valor como true. Essa configuração fornece um ganho menor de desempenho. Mas se um teste fechar com uma exceção, os outros testes não continuarão.|  
 |AssemblyResolution|false|É possível especificar caminhos para outros assemblies ao localizar e executar testes de unidade.  Por exemplo, use esses caminhos para assemblies de dependência que não residem no mesmo diretório que o assembly de teste.  Para especificar um caminho, use um elemento de “Caminho do diretório”.  Os caminhos podem conter variáveis de ambiente.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
-  
-## <a name="see-also"></a>Consulte também  
- [Personalizando análise de cobertura de código](../test/customizing-code-coverage-analysis.md)   
- [Especificando configurações de teste para testes do Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+
+## <a name="see-also"></a>Consulte também
+
+[Personalizando a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)  
