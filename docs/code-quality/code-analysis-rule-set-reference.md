@@ -14,14 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e132146ce1ae19e95a7e8f6974dab25be38db5b
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referência do conjunto de regras da análise de código
-Quando você configura a análise de código gerenciado projetos de código em [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]você verá uma lista dos internas *conjuntos de regras*. Você pode usar qualquer um dos conjuntos de regras padrão, ou você pode personalizar uma regra definida de acordo com seus requisitos de projeto.  
+Quando você configura a análise de código gerenciado projetos de código em [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)] você verá uma lista dos internas *conjuntos de regras*. Você pode usar qualquer um dos conjuntos de regras padrão, ou você pode personalizar uma regra definida de acordo com seus requisitos de projeto.  
   
 ## <a name="available-rule-sets"></a>Conjuntos de regras disponíveis  
  A tabela a seguir lista os conjuntos de regras padrão:  
