@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Como solucionar problemas de modelos
 
@@ -47,20 +47,6 @@ Se o arquivo .vstemplate em um modelo não estiver de acordo com o esquema de mo
 1. Insira o novo arquivo .zip no mesmo diretório do antigo arquivo .zip.
 
 1. Exclua os arquivos de modelo extraídos e o arquivo .zip de modelo antigo.
-
-## <a name="monitor-the-event-log"></a>Monitorar o log de eventos
-
-O Visual Studio registra erros encontrados durante o processamento de arquivos .zip de modelo. Se um modelo não for exibido na caixa de diálogo **Novo Projeto** conforme o esperado, use o **Visualizador de Eventos** para solucionar o problema.
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>Para localizar erros de modelo no Visualizador de Eventos
-
-1. No Windows, no menu **Iniciar**, escolha **ferramentas administrativas do Windows** > **Visualizador de Eventos**.
-
-1. No painel esquerdo, escolha **Logs do Windows** > **Aplicativo**.
-
-1. Procure eventos com um valor de **Origem** de `Visual Studio - VsTemplate`.
-
-1. Para exibir um erro, clique duas vezes em um evento de modelo.
 
 ## <a name="enable-diagnostic-logging"></a>Habilitar o registro em log de diagnóstico
 

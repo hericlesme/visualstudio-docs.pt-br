@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: uwp
 author: gewarren
-ms.openlocfilehash: b1cc13dfd81876f647178ebf3702c778cabb533e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Executar testes de unidade de aplicativos UWP no Visual Studio
 Este tópico descreve como executar testes de unidade usando o Gerenciador de Testes no Microsoft Visual Studio  
@@ -55,7 +55,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Executando testes no Gerenciador de Testes  
  Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.  
   
- ![Gerenciador de testes de unidade](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Gerenciador de testes de unidade](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados nos grupos padrão de **Testes com Falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Você pode alterar a forma como o Gerenciador de Testes agrupa seus testes.  
   

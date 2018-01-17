@@ -12,12 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-web-project-templates"></a>Modelos de projeto Web do Python
 
@@ -31,7 +33,7 @@ Quando executado, um projeto criado com base em um modelo (acessado por meio de 
 
 Os modelos do Bottle, Flask e Django incluem um site inicial com algumas páginas e alguns arquivos estáticos. Esse código é suficiente para executar e depurar o servidor localmente (em que algumas configurações precisam ser obtidas do ambiente) e para implantar o Microsoft Azure (em que um objeto [aplicativo WSGI](http://www.python.org/dev/peps/pep-3333/) precisa ser fornecido).
 
-Ao criar um projeto com base em um modelo específico à estrutura, uma caixa de diálogo é exibida para ajudá-lo a instalar os pacotes necessários usando o PIP. Também recomendamos o uso de um [ambiente virtual](python-environments.md#virtual-environments) para projetos Web, para que as dependências corretas sejam incluídas durante a publicação do site:
+Ao criar um projeto com base em um modelo específico à estrutura, uma caixa de diálogo é exibida para ajudá-lo a instalar os pacotes necessários usando o PIP. Também recomendamos o uso de um [ambiente virtual](python-environments.md#global-and-virtual-environments) para projetos Web, para que as dependências corretas sejam incluídas durante a publicação do site:
 
 ![Caixa de diálogo que instala os pacotes necessários para um modelo de projeto](media/template-web-requirements-txt-wizard.png)
 

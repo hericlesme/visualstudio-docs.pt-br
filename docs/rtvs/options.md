@@ -18,11 +18,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7bab332a66784dd473a0cf2b841b617aecda9e9f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opções das Ferramentas do R para Visual Studio
 
@@ -34,8 +34,8 @@ Opções e configurações específicas para o R são acessadas usando os métod
 
 - Opções de formatação de código (consulte [Opções do editor](code-editing.md#editor-options): menu **Ferramentas > Opções** e, em seguida, selecione **Editor de texto > R > Formatação**
 - Opções de linting (consulte [Linting](code-linting.md)): menu **Ferramentas > Opções** e, em seguida, selecione **Editor de texto > R > Lint**
-- Opções avançadas do editor ([descritas neste tópico](#text-editor-r-advanced-options)): menu **Ferramentas > Opções**, selecione **Editor de texto > R > Avançado**
-- Opções comportamentais ([descritas neste tópico](#r-tools-advanced-options)): menu **Ferramentas do R > Opções** ou **Ferramentas > Opções** e, em seguida, role até **Ferramentas do R**.
+- Opções avançadas do editor ([descritas neste tópico](#text-editor-r--advanced-options)): menu **Ferramentas > Opções**, selecione **Editor de texto > R > Avançado**
+- Opções comportamentais ([descritas neste tópico](#r-tools--advanced-options)): menu **Ferramentas do R > Opções** ou **Ferramentas > Opções** e, em seguida, role até **Ferramentas do R**.
 
 O comando **Ferramentas do R > Configurações da Ciência de Dados** afeta também inúmeras configurações diferentes no Visual Studio, de modo geral. Esse comando será descrito na próxima seção.
 

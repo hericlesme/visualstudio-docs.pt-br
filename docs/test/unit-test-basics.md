@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 492aaa5190bb0b24e7077d3523197ff4eff6ba49
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 17029522cae96200b7bc28b0f917cc5d33f6c673
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 Verifique se seu código está funcionando conforme o esperado criando e executando testes de unidade. Ele se chama teste de unidade porque a funcionalidade de seu programa é dividida em comportamentos distintos que podem ser testados individualmente como *unidades*. O Gerenciador de Testes do Visual Studio oferece uma maneira flexível e eficiente de executar seus testes de unidade e exibir seus resultados no Visual Studio. O Visual Studio instala as estruturas de teste de unidade da Microsoft para código gerenciado e nativo. Use uma *estrutura de teste de unidade* para criar testes de unidade, executá-los e relatar os resultados desses testes. Execute os testes de unidade novamente quando realizar alterações para testar se o código ainda está funcionando corretamente. O Visual Studio Enterprise pode fazer isso automaticamente com o [Live Unit Testing](live-unit-testing-intro.md), que detecta testes afetados pelas suas alterações de código e os executa em segundo plano enquanto você digita.
@@ -219,7 +219,7 @@ public void My_Test ()
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Executar testes de unidade no Gerenciador de Testes  
  Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.  
   
- ![Gerenciador de testes de unidade](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Gerenciador de testes de unidade](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Conforme você executa, grava e executa novamente os testes, o modo de exibição padrão do Gerenciador de Testes exibe os resultados em grupos **Testes Reprovados**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Você pode escolher um cabeçalho de grupo para abrir o modo de exibição que exibe todos os testes no grupo.  
   
@@ -286,7 +286,6 @@ public void My_Test ()
  Para criar um teste voltado para dados para o método `AddIntegerHelper`, primeiro criamos um banco de dados do Access denominado `AccountsTest.accdb` e uma tabela chamada `AddIntegerHelperData`. A tabela `AddIntegerHelperData` define colunas para especificar o primeiro e o segundo operandos da adição e uma coluna para especificar o resultado esperado. Vamos preencher um número de linhas com valores apropriados.  
   
 ```csharp  
-  
 [DataSource(  
     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",   
     "AddIntegerHelperData"  
@@ -300,8 +299,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
     int expected = Convert.ToInt32(TestContext.DataRow["Sum"]);  
     int actual = target.AddIntegerHelper(x, y);  
     Assert.AreEqual(expected, actual);  
-}  
-  
+}
 ```  
   
  O método atribuído é executado uma vez para cada linha na tabela. O Gerenciador de Testes relata uma falha de teste para o método se uma das iterações falhar. O painel de detalhes de resultados de teste para o método mostra o método de status de aprovação/reprovação para cada linha de dados.  

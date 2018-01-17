@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c865fd1d01f7bf0137c68010bcb850a7a8450680
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-application-resources-net"></a>Gerenciando recursos de aplicativo (.NET)
 
@@ -48,7 +48,6 @@ Selecione a guia **Recursos**. Você poderá adicionar um arquivo .resx se o pro
 Recursos são gerenciados de forma diferente em projetos do .NET que em outros tipos de projeto. Para obter mais informações sobre os recursos em:
 
 - Aplicativos UWP (Plataforma Universal do Windows), consulte [Recursos do aplicativo e o Sistema de Gerenciamento de Recursos](/windows/uwp/app-resources/)
-- Aplicativos do Windows 8.x, consulte [Definindo recursos de aplicativo (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx)
 - Para projetos C++, consulte [Trabalhando com arquivos de recurso](/cpp/windows/working-with-resource-files) e [Como criar um recurso](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Consulte também
