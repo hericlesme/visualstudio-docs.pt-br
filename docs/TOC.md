@@ -84,6 +84,13 @@
 #### [Direcionar uma Versão Específica do .NET Framework](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [Visão geral sobre multiplataforma](ide/visual-studio-multi-targeting-overview.md)
 ##### [Definir uma versão do .NET Framework como destino](ide/how-to-target-a-version-of-the-dotnet-framework.md)
+#### Criar modelos de item e de projeto
+##### [Criar modelos de projeto](ide/how-to-create-project-templates.md)
+##### [Criar modelos de vários projetos](ide/how-to-create-multi-project-templates.md)
+##### [Criar modelos de item](ide/how-to-create-item-templates.md)
+##### [Criar modelos de item de vários arquivos](ide/how-to-create-multi-file-item-templates.md)
+##### [Criar modelos da Web](ide/how-to-manually-create-web-templates.md)
+##### [Solucionar problemas de modelos](ide/how-to-troubleshoot-templates.md)
 #### [Suporte ao IDE do Visual Studio de 64 bits](ide/visual-studio-ide-64-bit-support.md)
 ### [Desenvolver sem Projetos ou Soluções ("Abrir pasta")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [Escrever Código no Editor](ide/writing-code-in-the-code-and-text-editor.md)
@@ -95,7 +102,7 @@
 #### [Codificações e quebras de linha](ide/encodings-and-line-breaks.md)
 ##### [Salvar e abrir arquivos com codificação](ide/how-to-save-and-open-files-with-encoding.md)
 #### [Estrutura de tópicos](ide/outlining.md)
-#### [Gerar Código Automaticamente](ide/code-generation-in-visual-studio.md)
+#### [Gerar e corrigir código](ide/code-generation-in-visual-studio.md)
 ##### [Trechos de código](ide/code-snippets.md)
 ###### Usar Trechos de Código
 ####### [Trechos de código do Visual C#](ide/visual-csharp-code-snippets.md)
@@ -305,15 +312,9 @@
 ### [Personalizar modelos de projeto e de item](ide/customizing-project-and-item-templates.md)
 #### [Atualizar modelos existentes](ide/how-to-update-existing-templates.md)
 #### [Substituir parâmetros em um modelo](ide/how-to-substitute-parameters-in-a-template.md)
-### Criar novos modelos de projeto e de item
-#### [Criar modelos de projeto](ide/how-to-create-project-templates.md)
-#### [Criar modelos de vários projetos](ide/how-to-create-multi-project-templates.md)
-#### [Criar modelos de item](ide/how-to-create-item-templates.md)
-#### [Criar modelos de item de vários arquivos](ide/how-to-create-multi-file-item-templates.md)
-#### [Criar modelos da Web](ide/how-to-manually-create-web-templates.md)
+### Modelos de item e de projeto
 ### [Parâmetros de modelo](ide/template-parameters.md)
-### [Referência de esquema de modelo (Extensibilidade)](extensibility/visual-studio-template-schema-reference.md)
-### [Solucionar problemas de modelos](ide/how-to-troubleshoot-templates.md)
+### [Referência de esquema de modelo (Extensibilidade)](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
 ## Elementos da interface do usuário geral
 ### [Hierarquia de chamadas](ide/reference/call-hierarchy.md)
 ### [Visualizar alterações](ide/preview-changes.md)
