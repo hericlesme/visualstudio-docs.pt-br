@@ -1,7 +1,7 @@
 ---
-title: Depurar aplicativos de Windows 8.1 e UWP | Microsoft Docs
+title: Depurar aplicativos da UWP - Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 07/18/2017
+ms.date: 01/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: dd1723b7-4a43-47aa-9acf-d44afce78154
 caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6e6b144e3456f9ce2019c791f71f2d0b631fc883
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload: uwp
+ms.openlocfilehash: de37ef22b9b8ebe8dbcfde9abae4d2acaab2cc2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-universal-windows-apps-uwp"></a>Depurar aplicativos universais do Windows (UWP)
-O depurador do Visual Studio fornece suporte completo para depurar aplicativos UWP e Windows 8.1.  
+# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depurar aplicativos universais do Windows (UWP) no Visual Studio
+
+O depurador do Visual Studio fornece suporte completo para depurar aplicativos da UWP. 
   
-Para depurar aplicativos do Windows Phone 8, consulte [depurar aplicativos para Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
+Para depurar aplicativos do Windows 8.1, consulte [depurar aplicativos da Store no Visual Studio](https://msdn.microsoft.com/en-us/library/hh441472.aspx). Para depurar aplicativos do Windows Phone 8, consulte [depurar aplicativos para Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff402572(v=vs.105).aspx).  
   
 |||  
 |-|-|  

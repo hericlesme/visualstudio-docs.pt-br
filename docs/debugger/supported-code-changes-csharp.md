@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código suportadas (c# e Visual Basic)
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.
@@ -86,7 +86,7 @@ A tabela a seguir mostra as alterações que podem ser feitas para c# e o códig
 
 ## <a name="unsupported-app-scenarios"></a>Cenários de aplicativos sem suporte
 
-Plataformas e aplicativos sem suporte incluem ASP.NET 5, emulador Silverlight 5, Windows Phone e Windows Phone e Windows 8.1.
+Plataformas e aplicativos sem suporte incluem ASP.NET 5, Silverlight 5 e Windows 8.1.
 
 > [!NOTE]
 > Aplicativos com suporte incluem UWP do Windows 10 em x86 e x64 aplicativos para o .NET Framework 4.6 desktop ou versões posteriores (.NET Framework é apenas uma versão de área de trabalho).

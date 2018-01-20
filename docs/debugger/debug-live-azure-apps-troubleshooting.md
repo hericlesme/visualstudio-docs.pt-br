@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problemas conhecidos e solução de problemas para instantâneo de depuração no Visual Studio
 
@@ -71,6 +71,17 @@ Siga estas etapas:
 - Variáveis especiais, como *$FUNCTION* ou *$CALLER*, não pode ser avaliada em instruções condicionais ou logpoints para projetos do ASP.NET Core.
 - Depuração de instantâneo não funciona em serviços de aplicativos que têm [Cache Local](/azure/app-service/app-service-local-cache) ativado.
 - Atualmente, não há suporte para depuração de aplicativos de API de instantâneo.
+
+## <a name="site-extension-upgrade"></a>Atualização da extensão de site
+
+Depuração de instantâneo e o Application Insights dependem um ICorProfiler que é carregado no processo de site e causa problemas de bloqueio de arquivo durante a atualização. Recomendamos que esse processo para garantir que não há nenhum tempo de inatividade para seu site de produção.
+
+- Criar um [Slot de implantação](/azure/app-service/web-sites-staged-publishing) no seu serviço de aplicativo e implante seu site no slot.
+- Troca o Slot de produção do Gerenciador de nuvem no Visual Studio ou do Portal do Azure.
+- Pare o site do Slot. Isso levará alguns segundos para interromper o processo de w3wp.exe do site de todas as instâncias.
+- Atualizar a extensão de site de Slot do site Kudu ou o Portal do Azure (*folha de serviço do aplicativo > Ferramentas de desenvolvimento > extensões > atualização*).
+- Inicie o site do Slot. É recomendável visitar o site para aquecimento-lo novamente.
+- Troca o Slot de produção.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,5 +1,5 @@
 ---
-title: "Pseudovariáveis | Microsoft Docs"
+title: Pseudovariables | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e2e5e716bd63170554537ec77895055de1fd83a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariáveis no depurador do Visual Studio
 Pseudovariáveis são termos usados para exibir certas informações em uma janela variável ou o **QuickWatch** caixa de diálogo. Você pode inserir um pseudovariável da mesma maneira que incorporaria uma variável normal. As pseudovariáveis não são variáveis, no entanto, e não correspondem aos nomes de variáveis em seu programa.  
@@ -52,7 +52,7 @@ $handles
 |`$`*registername*<br /><br /> ou<br /><br /> `@`*registername*|Exibe o conteúdo do registro de *registername*.<br /><br /> Normalmente, você pode exibir conteúdo do registro simplesmente inserindo o nome do registro. A única vez que você precisa usar essa sintaxe é quando o nome do registro sobrecarrega um nome de variável. Se o nome do registro for igual ao nome da variável no escopo atual, o depurador interpretará o nome como um nome de variável. Ou seja, quando `$` *registername* ou `@` *registername* é útil.|  
 |`$clk`|Exibe a hora em ciclos de relógio.|  
 |`$user`|Exibe uma estrutura com informações de conta para a conta que executa o aplicativo. Por motivo de segurança, as informações de senha não são exibidas.|  
-|`$exceptionstack`|Exibe o rastreamento de pilha da exceção atual de Tempo de Execução do Windows. `$ exceptionstack`funciona apenas em aplicativos UWP e Windows 8.1 ou posterior. `$ exceptionstack` não tem suporte para exceções de C++ e SHE|  
+|`$exceptionstack`|Exibe o rastreamento de pilha da exceção atual de Tempo de Execução do Windows. `$ exceptionstack`funciona apenas em aplicativos UWP. `$ exceptionstack` não tem suporte para exceções de C++ e SHE|  
 |`$ReturnValue`|Mostra o valor retornado de um método .NET Framework.|  
   
  No C# e no Visual Basic, você pode usar as pseudovariáveis mostradas na tabela:  
@@ -68,7 +68,7 @@ $handles
 |--------------------|--------------|  
 |`$delete` ou `$$delete`|Exclui uma variável implícita que foi criada o **imediato** janela. A sintaxe é `$delete,` *variável* ou`$delete,` *variável*`.`|  
 |`$objectids` ou `$listobjectids`|Exibe todas as IDs de objetos como filhos da expressão especificada. A sintaxe é `$objectid,` *expressão* ou`$listobjectids,` *expressão*`.`|  
-|`$`*N*`#`|Exibe os objetos com a ID de objeto igual a *N*.|  
+|`$` *N* `#`|Exibe os objetos com a ID de objeto igual a *N*.|  
 |`$dynamic`|Exibe o especial **exibição dinâmica** nó para um objeto que implementa o `IDynamicMetaObjectProvider`. Interface. A sintaxe é `$dynamic,` *objeto*. Esse recurso se aplica somente ao código que usa o .NET Framework versão 4.|  
   
 ## <a name="see-also"></a>Consulte também  

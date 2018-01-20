@@ -1,5 +1,5 @@
 ---
-title: Depurar HTML e CSS (UWP e aplicativos do Windows 8.1) | Microsoft Docs
+title: Depurar HTML e CSS em aplicativos UWP | Microsoft Docs
 ms.custom: 
 ms.date: 07/17/2017
 ms.reviewer: 
@@ -8,32 +8,26 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.DomExplorer
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Depurar HTML e CSS em UWP e aplicativos do Windows 8.1
-![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML e CSS em aplicativos UWP no Visual Studio
   
- Para aplicativos em JavaScript, Visual Studio fornece uma experiência de depuração abrangente que inclui recursos que são familiares para desenvolvedores do Internet Explorer e Visual Studio. Esses recursos têm suporte para aplicativos UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplicativos do Windows Phone e para aplicativos criados usando ferramentas do Visual Studio para Apache Cordova.  
+ Para aplicativos em JavaScript, Visual Studio fornece uma experiência de depuração abrangente que inclui recursos que são familiares para desenvolvedores do Internet Explorer e Visual Studio. Esses recursos têm suporte para aplicativos UWP e para aplicativos criados usando ferramentas do Visual Studio para Apache Cordova.  
   
  Com o uso do modelo de depuração interativo fornecido pelas ferramentas de inspeção do DOM, você pode ver e modificar o código HTML e CSS renderizado. Você pode fazer tudo isso sem parar e reiniciar o depurador.
   
@@ -67,11 +61,11 @@ ms.lasthandoff: 01/10/2018
   
 1.  Crie uma nova solução no Visual Studio escolhendo **arquivo** > **novo projeto**.  
   
-2.  Escolha **JavaScript** > **repositório**, escolha **aplicativos Windows** ou **aplicativos do Windows Phone**e, em seguida, escolha  **Aplicativo em branco**.  
+2.  Escolha **JavaScript** > **Windows Universal**e, em seguida, escolha **WinJS App**.  
   
 3.  Digite um nome para o projeto, como `FlipViewApp`e escolha **Okey** para criar o aplicativo.  
   
-4.  No elemento BODY de default.html, adicione este código:  
+4.  No elemento BODY de index. HTML, adicione este código:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -129,9 +123,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
         };  
   
         app.oncheckpoint = function (args) {  
@@ -148,19 +142,17 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-     A ilustração a seguir mostra o que queremos ver se executarmos esse aplicativo no Emulador do Windows Phone (é similar no simulador). No entanto, para colocar o aplicativo nesse estado, teremos de corrigir uma série de bugs primeiro.  
+     A ilustração a seguir mostra o que queremos ver se executarmos esse aplicativo. No entanto, para colocar o aplicativo nesse estado, teremos de corrigir uma série de bugs primeiro.  
   
      ![Aplicativo FlipView mostrando os resultados esperados](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Escolha **simulador** ou **Emulator 8.1 WVGA 4 inch 512MB** na lista suspensa lista ao lado de **iniciar depuração** botão o **depurar**barra de ferramentas:  
+7.  Escolha **Máquina Local** na lista suspensa lista ao lado de **iniciar depuração** botão o **depurar** barra de ferramentas:  
   
      ![Lista de destino de depuração selecione](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  Escolha **depurar** > **iniciar depuração**, ou pressione F5 para executar seu aplicativo no modo de depuração.  
   
-     Isso executará o aplicativo no Simulador ou no Emulador do Windows Phone, mas você verá uma tela basicamente em branco porque o estilo contém alguns bugs. Uma primeira imagem `FlipView` aparecerá em um pequeno quadrado próximo ao meio da tela.  
-  
-9. Se você estiver executando o aplicativo no simulador, escolha o **alterar resolução** comando da barra de ferramentas no canto direito do simulador para configurar a resolução de tela de 1280 x 800. Isso irá garantir que os valores mostrados nas tabelas a seguir correspondem ao que você vê no Simulador.  
+     Isso executará o aplicativo, mas você verá uma tela basicamente em branco porque o estilo contém alguns bugs. Uma primeira imagem `FlipView` aparecerá em um pequeno quadrado próximo ao meio da tela.  
   
 10. Alterne para o Visual Studio e escolha o **Explorador do DOM** guia.  
   
@@ -169,7 +161,7 @@ ms.lasthandoff: 01/10/2018
   
 11. Na janela Explorador do DOM, selecione o elemento DIV correspondente à seção cuja ID é `"fView"`. Use as teclas de seta para exibir e selecionar o elemento DIV correto. (A tecla de seta para a direita permite que você exiba os filhos de um elemento.)  
   
-     ![Explorador do DOM](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  Você também pode selecionar o elemento DIV no canto inferior esquerdo da janela do Console do JavaScript digitando `select(fView)` no >> entrada prompt e pressionando Enter.  
@@ -188,16 +180,16 @@ ms.lasthandoff: 01/10/2018
   
 14. Na janela principal do Explorador do DOM, clique duas vezes no estilo embutido para ver a altura e a largura do elemento DIV `fView`. Agora você pode editar os valores aqui. Nesse cenário, queremos removê-los completamente.  
   
-15. Selecione `width: 100px;height: 100px;` e pressione as tecla Delete, em seguida, Enter. Depois que você pressiona Enter, os novos valores são imediatamente refletidos no Simulador ou no Emulador do Windows Phone, mesmo que você não tenha parado a sessão de depuração.  
+15. Na janela principal, clique duas vezes em `width: 100px;height: 100px;`, pressione a **excluir** chave e, em seguida, pressione **Enter**. Depois que você pressiona Enter, os novos valores são refletidos imediatamente no aplicativo, embora você não tenha interrompido a sessão de depuração.  
   
     > [!IMPORTANT]
     >  Como você pode atualizar atributos na janela do Explorador do DOM, você também pode atualizar os valores que aparecem no **estilos**, **calculado**, e **Layout** guias. Para obter mais informações, consulte [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md) e [layout de depuração usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Alterne para o aplicativo selecionando o Simulador ou o Emulador do Windows Phone, ou usando as teclas Alt+Tab.  
+16. Alterne para o aplicativo, selecionando-o ou usando Alt + Tab.  
   
      Agora o controle `FlipView` parece maior do que o tamanho da tela do Simulador ou do Emulador do Windows Phone. Esse não é o resultado esperado. Para investigar, retorne ao Visual Studio.  
   
-17. No Explorador do DOM, selecione o **calculado** guia novamente e abra a regra de altura. O elemento fView ainda mostrará o valor 100%, conforme esperado do CSS, mas o valor calculado será igual à altura da tela do Simulador (por exemplo, 800px ou 667.67px), que não é o que queremos para este aplicativo. Para investigar, você pode remover a altura e a largura do elemento DIV `fView`.  
+17. No Explorador do DOM, selecione o **calculado** guia novamente e abra a regra de altura. O elemento fView ainda mostrará o valor de 100%, conforme o esperado do CSS, mas o valor calculado será igual à altura da tela do aplicativo (por exemplo, 800px, 667.67 px ou algum outro valor), que não é o que queremos para este aplicativo. Para investigar, nas etapas a seguir é remover a altura e largura para o `fView` elemento DIV.  
   
 18. No **estilos** guia, desmarque as propriedades de altura e largura para o `#fView` seletor de CSS.  
   
@@ -209,15 +201,13 @@ ms.lasthandoff: 01/10/2018
   
 20. Para investigar, alterne para o Visual Studio e escolha o **Layout** tab para ver o modelo da caixa do elemento.  
   
-     No **Layout** guia, você verá os seguintes valores:  
+     No **Layout** guia, você verá o seguinte:  
   
-    -   No caso do Simulador: 320 px (Deslocamento) e 320 px (Margem).  
+    -   255px (deslocamento) e 255px (margem) ou valores semelhantes, dependendo da resolução do dispositivo. 
   
-    -   No caso do Emulador do Windows Phone: 100 px (Deslocamento) e 100 px (Margem).  
+     A ilustração a seguir mostra como o **Layout** aparência da guia se você estiver usando um emulador com 100 px deslocamento e margem).  
   
-     A ilustração a seguir mostra como o **Layout** aparência da guia se você estiver usando o emulador do Windows Phone (deslocamento de 100 px e margem).  
-  
-     ![Guia Layout de Explorador do DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
+     ![DOM Explorer Layout tab](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
      Isso não parece estar correto. O **calculado** guia também mostra os mesmos valores de margem.  
   
@@ -265,24 +255,8 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]
 >  Realçar elementos ao focalizá-los só tem suporte parcial no Emulador do Windows Phone.  
   
- Para obter um exemplo que demonstra como selecionar elementos usando o **elemento Select** botão, consulte [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
-  
-##  <a name="BrowserSupport"></a>Suporte a navegadores e plataformas  
- O Explorador do DOM e a janela do Console do JavaScript têm suporte nas seguintes plataformas:  
-  
--   Aplicativos UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] e aplicativos do Windows Phone usando JavaScript e HTML  
-  
--   Internet Explorer 11 em execução no [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Internet Explorer 10 em execução no [!INCLUDE[win8](../debugger/includes/win8_md.md)]  
-  
- Vá [aqui](http://go.microsoft.com/fwlink/?LinkID=232448) baixar [!INCLUDE[win8](../debugger/includes/win8_md.md)] e o Visual Studio.  
-  
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Depurar estilos CSS com o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)   
- [Visualizar ouvintes de evento DOM](../debugger/view-dom-event-listeners.md)   
  [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Depurar um controle WebView](../debugger/debug-a-webview-control.md)   
  [Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)   

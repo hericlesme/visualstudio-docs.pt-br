@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar e Continuar (Visual Basic)
 Editar e Continuar são um recurso para depuração do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] que permite alterar seu código durante a execução em modo de interrupção. Depois que as edições do código tiverem sido aplicadas, você poderá retomar a execução de código com as novas edições no lugar e visualizar o efeito.  
@@ -42,7 +42,7 @@ Editar e Continuar são um recurso para depuração do [!INCLUDE[vbprvb](../code
  Editar e continuar há suporte para aplicativos UWP para Windows 10 e x86 e x64 aplicativos para o .NET Framework 4.6 desktop ou versões posteriores (.NET Framework é apenas uma versão de área de trabalho).
 
  > [!NOTE]
- > Plataformas e aplicativos sem suporte incluem ASP.NET 5, emulador Silverlight 5, Windows Phone e Windows Phone e Windows 8.1.
+ > Plataformas e aplicativos sem suporte incluem ASP.NET 5, Silverlight 5 e Windows 8.1.
   
  Editar e continuar não é suportado quando você inicia a depuração usando **anexar ao processo**. Editar e continuar não há suporte para o código otimizado ou misto código gerenciado e nativo. Para obter mais informações, consulte [suporte para alterações de código (c# e Visual Basic](../debugger/supported-code-changes-csharp.md).
   

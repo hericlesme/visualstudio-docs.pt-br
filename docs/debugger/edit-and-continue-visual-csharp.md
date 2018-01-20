@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: e2e2d380bf90ae2cb0140c508f7cb3b9842c7bf8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c9b820dceefbb84dc9c0b9b9efff75afdb38b30f
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C#)
  Com a função Editar e Continuar no C#, é possível fazer alterações em seu código no modo de interrupção durante a depuração. As alterações podem ser aplicadas sem precisar interromper e reiniciar a sessão de depuração. No modo de execução, o editor de origem é somente leitura.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/22/2017
  Editar e continuar há suporte para a UWP do Windows 10 em x86 e x64 aplicativos para o .NET Framework 4.6 desktop ou versões posteriores (.NET Framework é apenas uma versão de área de trabalho).
 
  > [!NOTE]
- > Plataformas e aplicativos sem suporte incluem ASP.NET 5, emulador Silverlight 5, Windows Phone e Windows Phone e Windows 8.1.
+ > Plataformas e aplicativos sem suporte incluem ASP.NET 5, Silverlight 5 e Windows 8.1.
   
  Quando editar e continuar estiver habilitada, as alterações com suporte são aplicadas automaticamente quando você usar um comando de execução do depurador, como **continuar**, **etapa**, **definir próxima instrução**, ou executar uma avaliação de função em uma janela de depurador.  
   

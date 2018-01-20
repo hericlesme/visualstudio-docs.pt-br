@@ -1,5 +1,5 @@
 ---
-title: "Início rápido: Depurar JavaScript usando o console | Microsoft Docs"
+title: Depurar JavaScript usando o console | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,31 +8,25 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.JavaScriptConsole
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - JavaScript Console
 - JavaScript debugging
 - debugging, JavaScript
-ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a3069f0528d346a2168bbb37535089d00e23aa15
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>Guia de início rápido: depurar o JavaScript usando o console
-![Aplica-se a Windows e Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript usando o console no Visual Studio
   
- Você pode usar a janela do Console do JavaScript para interagir e depurar aplicativos da UWP criados usando JavaScript. Esses recursos têm suporte para aplicativos UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativos, aplicativos do Windows Phone e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova. Para referência de comandos do console, consulte [comandos do JavaScript Console](../debugger/javascript-console-commands.md).  
+ Você pode usar a janela do Console do JavaScript para interagir e depurar aplicativos da UWP criados usando JavaScript. Esses recursos têm suporte para aplicativos UWP e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova. Para referência de comandos do console, consulte [comandos do JavaScript Console](../debugger/javascript-console-commands.md).  
   
  A janela Console do JavaScript permite que você:  
   
@@ -48,36 +42,26 @@ ms.lasthandoff: 01/10/2018
   
 -   Realizar outras tarefas, como limpar a tela. Consulte [comandos do JavaScript Console](../debugger/javascript-console-commands.md) para obter a lista completa de comandos.  
   
- Neste tópico:  
-  
--   [Depurar usando a janela do Console do JavaScript](#InteractiveConsole)  
-  
--   [Modo de depuração e quebrar interativo](#InteractiveDebuggingBreakMode)  
-  
--   [Modo de linha única e modo de várias linhas na janela do Console do JavaScript](#SinglelineMultilineMode)  
-  
--   [Alternar o contexto de execução do script](#Switching)  
-  
 > [!TIP]
->  Se a janela do Console do JavaScript estiver fechada, escolha **depurar**>**Windows** > **Console do JavaScript** para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.  
+>  Se a janela do Console do JavaScript estiver fechada, escolha **depurar**> **Windows** > **Console do JavaScript** para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.  
   
  Usando a janela Console do JavaScript, você pode interagir com seu aplicativo sem parar e reiniciar o depurador. Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obter informações sobre outros recursos, como usando o Explorador do DOM e configuração de pontos de interrupção, de depuração do JavaScript, consulte [início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a>Depurar usando a janela do Console do JavaScript  
  As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar interativamente um erro de codificação JavaScript.  
   
-> [!CAUTION]
+> [!NOTE]
 >  O aplicativo de exemplo é um aplicativo UWP. No entanto, os recursos de console descritos aqui também se aplicam a aplicativos criados usando ferramentas do Visual Studio para Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Para depurar o código JavaScript no aplicativo FlipView  
   
 1.  Crie uma nova solução no Visual Studio escolhendo **arquivo** > **novo projeto**.  
   
-2.  Escolha **JavaScript** > **aplicativos da Windows Store**, escolha **aplicativos Windows** ou **aplicativos do Windows Phone**e, em seguida, escolha  **Aplicativo em branco**.  
+2.  Escolha **JavaScript** > **Windows Universal**e, em seguida, escolha **WinJS App**.  
   
 3.  Digite um nome para o projeto, como `FlipViewApp`e escolha **Okey** para criar o aplicativo.  
   
-4.  No elemento BODY de default.html, substitua o código HTML existente por este código:  
+4.  No elemento BODY de index, substitua o código HTML existente por este código:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -133,9 +117,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
   
         };  
   
@@ -153,7 +137,7 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-7.  Se um destino de depuração não estiver selecionado, escolha **simulador** ou, para Windows Phone, **Emulator 8.1 WVGA 4 inch 512MB** na lista suspensa lista ao lado de **dispositivo** botão de **depurar** barra de ferramentas:  
+7.  Se um destino de depuração não estiver selecionado, escolha **Máquina Local** na lista suspensa lista ao lado de **dispositivo** botão o **depurar** barra de ferramentas:  
   
      ![Lista de destino de depuração selecione](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -161,7 +145,7 @@ ms.lasthandoff: 01/10/2018
   
      O aplicativo será executado, mas não haverá imagens. Erros APPHOST na janela Console do JavaScript indicam que não há imagens.  
   
-9. Com o `FlipView` aplicativo em execução no simulador ou o emulador do Windows Phone, digite `Data.items` no prompt de entrada da janela do console (ao lado de ">>" símbolo) e pressione Enter.  
+9. Com o `FlipView` aplicativo em execução, o tipo `Data.items` no prompt de entrada da janela do console (ao lado de ">>" símbolo) e pressione Enter.  
   
      Um visualizador para o objeto `items` aparece na janela do console. Isso indica que foi criada uma instância do objeto `items` e está disponível no contexto do script atual. Na janela do console, você pode clicar nos nós de um objeto para ver os valores de propriedade (ou usar as teclas de direção). Se você clicar na seta para baixo do objeto `items._data`, como mostra esta ilustração, verá que suas referências da origem das imagens estão incorretas, como esperado. As imagens padrão (logo.png) ainda estão presentes no objeto e há imagens ausentes intercaladas com as imagens esperadas.  
   
@@ -174,9 +158,9 @@ ms.lasthandoff: 01/10/2018
 11. Para corrigir esse problema interativamente, sem interromper a sessão de depuração, abra default.js e selecione esse código da função `updateImages`:  
   
     ```javascript  
-    pages.push(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    pages.push(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    pages.push(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
      Copie e cole esse código no aviso de entrada do console JavaScript.  
@@ -187,9 +171,9 @@ ms.lasthandoff: 01/10/2018
 12. Corrija as chamadas de função `push` no prompt, substituindo `pages.push` por `Data.items.setAt`. O código corrigido deve ter esta aparência:  
   
     ```javascript  
-    Data.items.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-    Data.items.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-    Data.items.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    Data.items.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+    Data.items.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+    Data.items.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
     ```  
   
     > [!TIP]
@@ -201,7 +185,7 @@ ms.lasthandoff: 01/10/2018
   
 15. Tipo `Data.items.length = 3` no prompt e pressione Enter. Isso remove os elementos extrínsecos aos dados.  
   
-16. Verifique o Simulador ou o Emulador do Windows Phone novamente: você verá que as imagens corretas estão nas páginas corretas de `FlipView`.  
+16. O aplicativo novamente, e você verá que as imagens corretas estão nas corretas `FlipView` páginas.  
   
 17. No Explorador de DOMs, você pode ver o elemento DIV atualizado e pode navegar na subárvore para localizar os elementos IMG esperados.  
   
@@ -218,7 +202,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  No arquivo default.html do `FlipView` aplicativo que você criou anteriormente, abra o menu de atalho para o `updateImages()` de função e, em seguida, escolha **ponto de interrupção** > **Inserir ponto de interrupção**.  
   
-2.  Escolha **Máquina Local** ou **Emulator 8.1 WVGA 4 inch 512MB** na lista suspensa lista ao lado de **iniciar depuração** botão o **depurar** barra de ferramentas.  
+2.  Escolha **Máquina Local** na lista suspensa lista ao lado de **iniciar depuração** botão o **depurar** barra de ferramentas.  
   
 3.  Escolha **depurar** > **iniciar depuração**, ou pressione F5.  
   
@@ -239,7 +223,7 @@ ms.lasthandoff: 01/10/2018
 6.  Copie uma linha da função da janela de saída para o prompt de entrada e altere o valor de índice para 3:  
   
     ```javascript  
-    pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+    pages.setAt(3, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
     ```  
   
 7.  Pressione Enter para executar a linha de código.  
@@ -264,16 +248,7 @@ ms.lasthandoff: 01/10/2018
   
  ![Destino de seleção na janela do console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")  
   
- Você também pode alternar o contexto de execução usando o comando `cd`, mas você precisa saber o nome do outro contexto de execução e a referência que será usada deve estar no escopo. O **destino** lista fornece um acesso melhor a outros contextos de execução.  
-  
-##  <a name="BrowserSupport"></a>Suporte a navegadores e plataformas  
- A janela Console do JavaScript tem suporte nas seguintes plataformas:  
-  
--   Aplicativos UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]e os aplicativos do Windows Phone usando JavaScript e HTML  
-  
--   Internet Explorer 11 em execução no [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Internet Explorer 10 em execução no [!INCLUDE[win8](../debugger/includes/win8_md.md)]  
+ Você também pode alternar o contexto de execução usando o comando `cd`, mas você precisa saber o nome do outro contexto de execução e a referência que será usada deve estar no escopo. O **destino** lista fornece um acesso melhor a outros contextos de execução.   
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   

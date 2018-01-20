@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos ao vivo do Azure do ASP.NET usando o depurador do instantâneo
 
@@ -47,9 +47,12 @@ Além disso, o depurador de instantâneo só está disponível para o Visual Stu
 
    ![Iniciar o depurador do instantâneo](../debugger/media/snapshot-launch.png "iniciar o depurador do instantâneo")
 
-    Na primeira vez que você selecionar **Anexar depurador de instantâneo**, você precisará instalar o depurador de instantâneo em seu serviço de aplicativo do Azure. Esta instalação requer uma reinicialização do seu serviço de aplicativo do Azure. 
+    Na primeira vez que você selecionar **Anexar depurador de instantâneo**, você precisará instalar a extensão de site do depurador de instantâneo em seu serviço de aplicativo do Azure. Esta instalação requer uma reinicialização do seu serviço de aplicativo do Azure. 
 
    O Visual Studio agora está em modo de depuração de instantâneo.
+
+    > [!NOTE]
+    > A extensão de site do Application Insights também dá suporte à depuração de instantâneo. Se você encontrar uma mensagem de erro "site extensão desatualizado", consulte [solução de problemas e problemas conhecidos para a depuração de instantâneo](../debugger/debug-live-azure-apps-troubleshooting.md) para atualizar os detalhes.
 
    ![Modo de depuração de instantâneo](../debugger/media/snapshot-message.png "modo de depuração de instantâneo")
 
@@ -130,7 +133,7 @@ Além de gerar um instantâneo quando um snappoint for atingido, você também p
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Para saber como inspecionar variáveis ao exibir um instantâneo, consulte [Tour em Debbuger](../debugger/debugger-feature-tour.md).
+- Para saber como inspecionar variáveis ao exibir um instantâneo, consulte [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md).
 - Exibição de [perguntas Frequentes de depuração de instantâneo](../debugger/debug-live-azure-apps-faq.md).
 - Exibição [solução de problemas e problemas conhecidos para a depuração de instantâneo](../debugger/debug-live-azure-apps-troubleshooting.md).
 - Se você quiser exibir instantâneos no Application Insights quando seu aplicativo atinge uma exceção, você pode fazer isso. Para obter mais informações, consulte [depurar instantâneos de exceções em aplicativos .NET](/azure/application-insights/app-insights-snapshot-debugger). Application Insights oferece suporte a aplicativos de serviço de malha além do serviço de aplicativo do Azure.

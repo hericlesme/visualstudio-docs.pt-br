@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Depurar um pacote de aplicativo instalado no Visual Studio (UWP)
 
@@ -91,9 +91,6 @@ Quando você depura um pacote de aplicativos instalados em um computador remoto 
 
      > [!NOTE]
 > Ao apresentar um XBox ou dispositivo HoloLens reiniciará o aplicativo com o depurador anexado se ele já está em execução.
-
-> [!NOTE]
-> Aplicativos UWP podem ser desenvolvidos e compilado no Windows 8.1 ou posterior, mas requerem o Windows 10 executar. Se você estiver desenvolvendo um aplicativo UWP em um computador do Windows 8.1, você pode depurar remotamente um aplicativo UWP em execução em outro dispositivo Windows 10, desde que o computador de host e de destino estão na mesma rede local. Para fazer isso, baixe e instale as ferramentas remotas para Visual Studio em ambos os computadores. A versão instalada deve corresponder à versão existente do Visual Studio que você instalou e a arquitetura que você selecionar (x86, x64) também deve corresponder para que seu aplicativo de destino.
 
 Para obter informações sobre opções avançadas para a implantação remota de aplicativos UWP, consulte [Implantando e Depurando aplicativos da UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   

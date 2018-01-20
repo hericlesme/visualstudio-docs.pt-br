@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar arquivos de despejo com o Visual Studio
 Arquivos de despejo com ou sem heaps; criar um arquivo de despejo de memória. abrir um arquivo de despejo de memória; Localize os binários, o do pdb e o arquivo de origem para um arquivo de despejo.
@@ -56,11 +56,11 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo de memória. a
   
 -   O Visual Studio pode depurar arquivos de despejo de aplicativos nativos em dispositivos ARM. O Visual Studio também pode depurar arquivos de despejo de aplicativos gerenciados em dispositivos ARM, mas somente no depurador nativo.  
   
--   Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) despejar arquivos no Visual Studio 2013, baixe o [Windows 8.1 versão das ferramentas de depuração para Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Consulte [depuração de Kernel no Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) arquivos de despejo, baixe as ferramentas de depuração para Windows que faz parte do [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit). 
   
 -   O Visual Studio não pode depurar arquivos de despejo salvos no formato de despejo mais antigo, conhecido como um [despejo do modo de usuário completo](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Observe que um despejo completo do modo de usuário não é igual a um despejo com heap.  
   
--   Para depurar com o [SOS.dll (extensão de depuração SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) no Visual Studio, você deve instalar as ferramentas de depuração para Windows que faz parte do Windows Driver Kit (WDK). Consulte [Windows 8.1 Preview: baixar kits, bits e ferramentas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   Para depurar com o [SOS.dll (extensão de depuração SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) no Visual Studio, você deve instalar as ferramentas de depuração para Windows que faz parte do [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Criar um arquivo de despejo  
  Para criar um arquivo de despejo com o Visual Studio:  
