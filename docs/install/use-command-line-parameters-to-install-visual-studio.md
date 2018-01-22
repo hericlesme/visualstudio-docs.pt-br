@@ -105,7 +105,7 @@ Para obter uma lista de IDs de componente e de carga de trabalho classificadas p
 | ----------------------- | --------------- |
 | cs-CZ | Tcheco |
 | de-DE | Alemão |
-| pt-BR | Inglês |
+| en-US | Inglês |
 | es-ES | Espanhol |
 | fr-FR | Francês |
 | it-IT | Italiano |
