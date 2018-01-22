@@ -18,11 +18,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a6649bd45aba299514b40e74b5683368bfd92b41
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-type-design-decisions"></a>Decisões de Design de tipo de projeto
 Antes de criar um novo tipo de projeto, você deve tomar várias decisões de design sobre o tipo de projeto. Você deve decidir quais tipos de itens que contém seus projetos, como arquivos de projeto serão mantidos e qual modelo de confirmação que você usará.  
@@ -32,7 +32,7 @@ Antes de criar um novo tipo de projeto, você deve tomar várias decisões de de
   
  Os itens em um projeto podem ser arquivos, ou podem ser objetos mais abstratos, como objetos em um banco de dados repositório ou conexões de dados pela Internet. Se os itens são arquivos, o projeto pode ser uma base de referência ou um projeto baseado no diretório.  
   
- Em projetos de referência, os itens podem aparecer em mais de um projeto. No entanto, o arquivo real que representa um item está localizado em um diretório somente. Em projetos com base no diretório, todos os itens de projeto existem na estrutura de diretório. Para obter mais informações, consulte [gerenciamento NIB: Item em projetos](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Em projetos de referência, os itens podem aparecer em mais de um projeto. No entanto, o arquivo real que representa um item está localizado em um diretório somente. Em projetos com base no diretório, todos os itens de projeto existem na estrutura de diretório.  
   
  Os itens locais são armazenados no mesmo computador onde o aplicativo está instalado. Os itens remotos podem ser armazenados em um servidor separado em uma rede local ou em outro lugar na Internet.  
   
@@ -62,7 +62,6 @@ Antes de criar um novo tipo de projeto, você deve tomar várias decisões de de
   
 ## <a name="see-also"></a>Consulte também  
  [Lista de verificação: Criar novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Gerenciamento de PONTA: Item em projetos](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Abrir e salvar itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Persistência de projeto](../../extensibility/internals/project-persistence.md)   
  [Elementos de um modelo de projeto](../../extensibility/internals/elements-of-a-project-model.md)   

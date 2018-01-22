@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: e350b3dfcf6b36cc93450affa34ae7bf5ac26330
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2cb6db61048765ec577a0d14ff4079f78e013219
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Obtém a mensagem a ser exibida.  
@@ -56,7 +56,7 @@ int GetMessage(
  [out] Retorna a mensagem.  
   
  `pdwType`  
- [out] Retorna o tipo da mensagem, usando as convenções do Win32 `MessageBox` função. Consulte o [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) função para obter detalhes.  
+ [out] Retorna o tipo da mensagem, usando as convenções do Win32 `MessageBox` função. Consulte o [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) função para obter detalhes.  
   
  `pbstrHelpFileName`  
  [out no] Retorna o nome do arquivo de Ajuda. Pode ser um valor vazio (c#) ou o nulo (C++), se não houver nenhum arquivo de Ajuda.  
@@ -70,4 +70,4 @@ int GetMessage(
 ## <a name="see-also"></a>Consulte também  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)   
- [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8)
+ [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

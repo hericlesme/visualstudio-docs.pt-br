@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>Estendendo propriedades
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propriedades** janela é um navegador de propriedade universal para componentes COM e COM+ e dá suporte a todos os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produtos. O **propriedades** janela funciona com `ITypeInfo` COM+ metadados para listar as propriedades de tempo de design para o objeto atualmente selecionado em qualquer outra janela no ambiente de desenvolvimento integrado (IDE) e informações de tipo.  
   
- O **propriedades** janela, que pode ser aberta pressionando F4 no teclado ou selecionando **janela propriedades** no **exibição** menu, é usado para exibir e editar Propriedades de configuração independente, o tempo de design e eventos dos objetos selecionados. Propriedades de configuração dependente, associadas com soluções e projetos, são exibidas em [páginas de propriedade](../../extensibility/internals/property-pages.md). Para obter mais informações, consulte [propriedades do projeto: NIB](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [opções de configuração do gerenciamento de](../../extensibility/internals/managing-configuration-options.md), e [gerenciamento NIB: Item em projetos](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ O **propriedades** janela, que pode ser aberta pressionando F4 no teclado ou selecionando **janela propriedades** no **exibição** menu, é usado para exibir e editar Propriedades de configuração independente, o tempo de design e eventos dos objetos selecionados. Propriedades de configuração dependente, associadas com soluções e projetos, são exibidas em [páginas de propriedade](../../extensibility/internals/property-pages.md). Para obter mais informações, [gerenciar opções de configuração](../../extensibility/internals/managing-configuration-options.md).  
   
  ![Visão geral da janela propriedades](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Janela de Propriedades  

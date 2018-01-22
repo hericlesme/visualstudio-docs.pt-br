@@ -15,11 +15,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e61b6bae37b9e37dc9e448122f4595f3cba20f7f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Essa interface é usada pelo mecanismo de depuração (DE) para enviar uma mensagem para o Visual Studio que requer uma resposta do usuário.  
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Comentários  
  O DE usará essa interface se ele requer uma resposta específica do usuário para uma determinada mensagem. Por exemplo, se o DE receber uma mensagem de "Acesso negado" após uma tentativa de se conectar remotamente a um programa, o DE envia a mensagem em questão para o Visual Studio em um `IDebugMessageEvent2` evento com o estilo de caixa de mensagem `MB_RETRYCANCEL`. Isso permite que o usuário tentar novamente ou cancelar a operação de anexação.  
   
- O DE Especifica como esta mensagem deve ser tratada pelo segue as convenções da função Win32 `MessageBox` (consulte [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) para obter detalhes).  
+ O DE Especifica como esta mensagem deve ser tratada pelo segue as convenções da função Win32 `MessageBox` (consulte [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) para obter detalhes).  
   
  Use o [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) interface para enviar mensagens para o Visual Studio que não exigem uma resposta do usuário.  
   

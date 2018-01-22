@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bec52fc091186aa660e10f1887f98bfdab5acc7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 14e03f7a7c5d9200cf1ebc40f9098121f4ddbff9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 Certifique-se de que o sistema de software atenda às necessidades de usuários usando a visualização e modelagem de ferramentas no Visual Studio.
@@ -252,7 +252,7 @@ Itens em diagramas de dependência estão localizados no projeto de modelagem, m
   
 -   [Usar controle de versão](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
--   [Compilar o aplicativo](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+-   [Build e versão](/vsts/build-release/index)  
   
 ##  <a name="UpdatingSystem"></a>Atualizando a sistema usando visualização e modelagem  
  Zulu e agora uma refeição devem integrar seus sistemas de pagamento. As seções a seguir mostram que os diagramas de modelagem no Visual Studio ajudá-los a realizar esta tarefa:  

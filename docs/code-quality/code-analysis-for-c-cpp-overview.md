@@ -26,11 +26,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 84ba9274258fe41b93a980c815bfd808454b9061
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28a5e13c2c56c7ecdb65efdfc1bd0b3c6eb47bfc
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 A ferramenta de análise de código C/C++ fornece informações para desenvolvedores sobre defeitos possíveis no seu código-fonte C/C++. Erros de codificação comuns relatados pela ferramenta estão estouros de buffer, memória não inicializada, desreferências de ponteiro nulo e perdas de memória e recursos.  
@@ -48,7 +48,7 @@ A ferramenta de análise de código C/C++ fornece informações para desenvolved
  Você talvez queira exigem que o código de origem todos os check-ins satisfazer certas políticas. Em particular, você deseja certificar-se de que a análise foi executada como uma etapa de compilação local mais recente. Para obter mais informações sobre como habilitar uma política de check-in do analysis código, consulte [criando e usando análise de código de Check-In políticas](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Integração do Team Build  
- Você pode usar os recursos integrados de sistema de compilação para executar a ferramenta de análise de código como uma etapa do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] do processo de compilação. Para obter mais informações, consulte [Compilar o aplicativo](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Você pode usar os recursos integrados de sistema de compilação para executar a ferramenta de análise de código como uma etapa do [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] do processo de compilação. Para obter mais informações, consulte [Build e versão](/vsts/build-release/index).  
   
 ## <a name="command-line-support"></a>Suporte de linha de comando  
  Além de integração total no ambiente de desenvolvimento, os desenvolvedores também podem usar a ferramenta de análise da linha de comando, conforme mostrado no exemplo a seguir:  

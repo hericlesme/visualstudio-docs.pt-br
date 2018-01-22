@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 699f9176fd39cacaf2bb4f433cd9d2ceb8e326b5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Criando um sistema de projeto básico, parte 2
 A primeiro passo a passo da série, [criando um sistema básico de projeto, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), mostra como criar um sistema de projeto básico. Este passo a passo se baseia no sistema de projeto básico, adicionando um modelo do Visual Studio, uma página de propriedades e outros recursos. Você deve concluir a primeiro passo a passo antes de iniciar este.  
@@ -283,7 +283,7 @@ ZipProjects:
   
 -   $ $safeprojectname é o nome fornecido pelo usuário no **novo projeto** caixa de diálogo, modificada para remover todos os caracteres inseguros e espaços.  
   
- Para ver uma lista completa dos parâmetros de modelo, consulte [Parâmetros de Modelo](../ide/template-parameters.md).  Se você quiser criar seus próprios parâmetros de modelo personalizado, consulte [NIB: como: passar parâmetros personalizados para modelos](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+ Para ver uma lista completa dos parâmetros de modelo, consulte [Parâmetros de Modelo](../ide/template-parameters.md).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Substituir parâmetros de modelo de projeto  
   

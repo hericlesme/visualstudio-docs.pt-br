@@ -1,7 +1,7 @@
 ---
 title: "Diretrizes do Visual Studio C++ Core verificador referência | Microsoft Docs"
 ms.custom: 
-ms.date: 11/15/2017
+ms.date: 01/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
@@ -13,20 +13,20 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: c17574722804409b58d648af66b255888e945db2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d5db13aa350e33a297981066f36c3d1dfd1ecb67
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referência de verificador de diretrizes do principal de C++
 Esta seção lista os avisos do verificador de diretrizes de núcleos de C++. Para obter informações sobre análise de código, consulte [/Analyze (análise de código)](/cpp/build/reference/analyze-code-analysis) e [início rápido: análise de código para C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
   
 **Observação**: alguns avisos pertencem a mais de um grupo, e não todos os avisos tem um tópico de referência.
 
-## <a name="ownerpointer-group"></a>Grupo de OWNER_POINTER
+## <a name="ownerpointer-group"></a>OWNER_POINTER Group
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
   Retorne um objeto no escopo, em vez de um alocados no heap se ele tem um construtor de movimento. Consulte [diretrizes de núcleos de C++ R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr). 
      
 [C26403 RESET_OR_DELETE_OWNER](C26403.md)  
@@ -53,10 +53,10 @@ Esta seção lista os avisos do verificador de diretrizes de núcleos de C++. Pa
 [C26431 DONT_TEST_NOTNULL](C26431.md)  
   O tipo da expressão '% % de expr' já está gsl::not_null. Não teste-o para nullness. Consulte [diretrizes de núcleos de C++ F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).  
 
-## <a name="rawpointer-group"></a>Grupo de RAW_POINTER
+## <a name="rawpointer-group"></a>RAW_POINTER Group
  
-[C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)  
-Não atribua o resultado de uma alocação ou uma chamada de função com um proprietário\<T > valor de retorno para um ponteiro bruto, use proprietário<T> em vez disso. Consulte [diretrizes de núcleos de C++ I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
+[C26400  NO_RAW_POINTER_ASSIGNMENT](c26400.md)  
+Não atribua o resultado de uma alocação ou uma chamada de função com um proprietário\<T > valor de retorno para um ponteiro bruto; use proprietário\<T > em vez disso. Consulte [diretrizes de núcleos de C++ I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
 
 [C26401 DONT_DELETE_NON_OWNER](c26401.md)  
 Não exclua um ponteiro bruto não é um proprietário\<T >. Consulte [diretrizes de núcleos de C++ I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
@@ -84,7 +84,7 @@ Não exclua um ponteiro bruto não é um proprietário\<T >. Consulte [diretrize
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   
   A expressão 'expr % % %': Nenhuma matriz de decay do ponteiro. Consulte [Bounds.3 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
 
-## <a name="uniquepointer-group"></a>Grupo de UNIQUE_POINTER
+## <a name="uniquepointer-group"></a>UNIQUE_POINTER Group
   
 [C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md)  
   O parâmetro '% % do parâmetro' é uma referência ao `const` ponteiro exclusivo, use const T * ou const T & em vez disso. Consulte [diretrizes de núcleos de C++ R.32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam).  
@@ -98,7 +98,7 @@ Não exclua um ponteiro bruto não é um proprietário\<T >. Consulte [diretrize
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md)  
   Ponteiro inteligente parâmetro '% Símbolo %' é usado somente para acesso contido ponteiro. Use T * ou T & em vez disso. Consulte [diretrizes de núcleos de C++ R.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).  
 
-## <a name="sharedpointer-group"></a>Grupo de SHARED_POINTER
+## <a name="sharedpointer-group"></a>SHARED_POINTER Group
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md)  
   Mover, copiar, reatribuir ou redefinir um ponteiro inteligente do local '% % de símbolo'. Consulte [diretrizes de núcleos de C++ R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).  
@@ -123,16 +123,30 @@ Não exclua um ponteiro bruto não é um proprietário\<T >. Consulte [diretrize
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md)  
   Inicializador global acessa o objeto extern '% % de símbolo'. Consulte [diretrizes de núcleos de C++ I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).  
   
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Evite sem nome objetos com construção personalizada e destruição. [ES.84: Não (tente) declarar uma variável local sem nome](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 ## <a name="class-group"></a>CLASSE de grupo
     
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md)  
   Se você define ou excluir qualquer operação padrão no tipo '% % de símbolo', definir ou excluir todos eles. Consulte [diretrizes de núcleos de C++ c. 21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).  
+
+
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) função '% % de símbolo' deve ser marcada com 'override'. Consulte [ C.128: funções virtuais devem especificar exatamente um dos virtual, substituição, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final). 
+
   
 [C26434 DONT_HIDE_METHODS](C26434.md)  
   A função '% symbol_1% ' oculta uma função não virtual '% symbol_2% '. Consulte [diretrizes de núcleos de C++ C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).  
   
+
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) função '% % de símbolo' deve especificar exatamente um 'virtual', 'override' ou 'final'. Consulte [ C.128: funções virtuais devem especificar exatamente um dos virtual, substituição, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md). 
+
+
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)  
   O tipo '% % de símbolo' com uma função virtual precisa ou destruidor virtual ou protegido público. Consulte [diretrizes de núcleos de C++ C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).  
+
+
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) substituindo destruidor não deve usar explícita 'override' ou 'virtuais' especificadores. Consulte [C.128: funções virtuais devem especificar exatamente um dos virtual, substituição, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 
 ## <a name="type-group"></a>TIPO de grupo
     
@@ -158,37 +172,37 @@ Não exclua um ponteiro bruto não é um proprietário\<T >. Consulte [diretrize
 
 ## <a name="const-group"></a>Grupo CONST
     
-C26460 USE_CONST_REFERENCE_ARGUMENTS:  
+C26460 USE_CONST_REFERENCE_ARGUMENTS  
   O argumento de referência '% % de argumento' para a função '% % de função' pode ser marcado como `const`. Consulte [C++ principais diretrizes con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
 C26461 USE_CONST_POINTER_ARGUMENTS: O argumento de ponteiro '% % de argumento' para a função '% % de função' pode ser marcado como um ponteiro para `const`. Consulte [C++ principais diretrizes con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
-C26462 USE_CONST_POINTER_FOR_VARIABLE:  
+C26462 USE_CONST_POINTER_FOR_VARIABLE  
   O valor apontado por '% variável %' é atribuído a apenas uma vez, marcá-la como um ponteiro para `const`. Consulte [C++ principais diretrizes con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26463 USE_CONST_FOR_ELEMENTS:  
+C26463 USE_CONST_FOR_ELEMENTS  
   Os elementos da matriz '% % de matriz' são atribuídos somente uma vez, os elementos de marca `const`. Consulte [C++ principais diretrizes con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26464 USE_CONST_POINTER_FOR_ELEMENTS:  
+C26464 USE_CONST_POINTER_FOR_ELEMENTS  
   Os valores apontados por elementos de matriz '% % de matriz' são atribuídos somente uma vez, os elementos de marca como ponteiro para `const`. Consulte [C++ principais diretrizes con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
 
-C26496 USE_CONST_FOR_VARIABLE:  
+C26496 USE_CONST_FOR_VARIABLE  
   A variável '% variável %' é atribuída somente uma vez, marque-a como `const`. Consulte [C++ principais diretrizes con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26497 USE_CONSTEXPR_FOR_FUNCTION:  
+C26497 USE_CONSTEXPR_FOR_FUNCTION  
   Essa função de % de função pode ser marcada `constexpr` caso deseje a avaliação do tempo de compilação. Consulte [diretrizes de núcleos de C++ F.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rf-constexpr).  
   
-C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL:  
+C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL  
   Essa chamada de função % % de função pode usar `constexpr` caso deseje a avaliação do tempo de compilação. Consulte [C++ principais diretrizes con.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-constexpr).  
 
 ## <a name="type-group"></a>TIPO de grupo
-C26465 NO_CONST_CAST_UNNECESSARY:  
+C26465 NO_CONST_CAST_UNNECESSARY  
   Não use `const_cast` para eliminar `const`. `const_cast`não é necessário; constness ou volatilidade não está sendo removida por essa conversão. Consulte [Type.3 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
   
-C26466 NO_STATIC_DOWNCAST_POLYMORPHIC:  
+C26466 NO_STATIC_DOWNCAST_POLYMORPHIC  
   Não use `static_cast` downcasts. Uma conversão de um tipo polimórfico deve usar dynamic_cast. Consulte [Type.2 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).  
   
-C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR:  
+C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR  
   Não use `reinterpret_cast`. Pode usar uma conversão de void * `static_cast`. Consulte [Type.1 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
   
 [C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md)  
@@ -203,22 +217,22 @@ C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR:
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md)  
   Não use o estilo de função C conversões. Consulte [diretrizes de núcleos de C++ ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).  
      
-C26490 NO_REINTERPRET_CAST:  
+C26490 NO_REINTERPRET_CAST  
   Não use `reinterpret_cast`. Consulte [Type.1 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26491 NO_STATIC_DOWNCAST:  
+C26491 NO_STATIC_DOWNCAST  
   Não use `static_cast` downcasts. Consulte [Type.2 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26492 NO_CONST_CAST:  
+C26492 NO_CONST_CAST  
   Não use `const_cast` para eliminar `const`. Consulte [Type.3 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
     
-C26493 NO_CSTYLE_CAST:  
+C26493 NO_CSTYLE_CAST  
   Não use conversões do estilo C. Consulte [Type.4 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type). 
      
-C26494 VAR_USE_BEFORE_INIT:  
+C26494 VAR_USE_BEFORE_INIT  
   A variável '% variável %' não foi inicializado. Sempre inicialize um objeto. Consulte [Type.5 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26495 MEMBER_UNINIT:  
+C26495 MEMBER_UNINIT  
   A variável '% variável %' não foi inicializado. Sempre inicialize uma variável de membro. Consulte [Type.6 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
 ## <a name="bounds-group"></a>Grupo de limites
@@ -226,10 +240,10 @@ C26495 MEMBER_UNINIT:
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)   
   Não use a aritmética de ponteiro. Use o alcance. Consulte [Bounds.1 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26482 NO_DYNAMIC_ARRAY_INDEXING:  
+C26482 NO_DYNAMIC_ARRAY_INDEXING  
   Apenas índice nas matrizes usando expressões de constante. Consulte [Bounds.2 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26483 STATIC_INDEX_OUT_OF_RANGE:  
+C26483 STATIC_INDEX_OUT_OF_RANGE  
   Valor % do valor está fora dos limites (0, associadas %) da variável '% variável %'. Apenas índice nas matrizes usando expressões de constante que estão dentro dos limites da matriz. Consulte [Bounds.2 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   

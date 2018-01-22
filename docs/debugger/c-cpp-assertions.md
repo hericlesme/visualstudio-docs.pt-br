@@ -33,11 +33,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 46ea417ccd8b4dbecd0c6584699e9f2e98330d69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a53c03f1ab2c8680329f17bfa36a49b12062bff5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="cc-assertions"></a>Asserções C/C++
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em um ponto específico em seu programa. Se essa condição não for verdadeira, a declaração falhará, a execução do seu programa for interrompida e o [caixa de diálogo Falha de asserção](../debugger/assertion-failed-dialog-box.md) é exibida.  
@@ -46,7 +46,7 @@ Uma instrução de declaração especifica uma condição que você espera ser v
   
 -   Asserções MFC para programas MFC.  
   
--   [ATLASSERT](http://msdn.microsoft.com/Library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) para programas que usam ATL.  
+-   [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert) para programas que usam ATL.  
   
 -   Asserções de CRT para programas que usam a biblioteca em tempo de execução C.  
   
@@ -95,7 +95,7 @@ ASSERT(nM++ > 0); // Don't do this!
   
 ```  
   
- Como a expressão `ASSERT` não é avaliada na versão de liberação do programa, `nM` terá valores diferentes nas versões de depuração e de liberação. Para evitar esse problema em MFC, você pode usar o [verificar](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) macro em vez de `ASSERT`.  `VERIFY`avalia a expressão em todas as versões, mas não verifica o resultado na versão de lançamento.  
+ Como a expressão `ASSERT` não é avaliada na versão de liberação do programa, `nM` terá valores diferentes nas versões de depuração e de liberação. Para evitar esse problema em MFC, você pode usar o [verificar](/cpp/mfc/reference/diagnostic-services#verify) macro em vez de `ASSERT`.  `VERIFY`avalia a expressão em todas as versões, mas não verifica o resultado na versão de lançamento.  
   
  Tenha cuidado especial quando usar chamadas de função em instruções de declaração, porque a avaliação de uma função pode ter efeitos colaterais inesperados.  
   
@@ -165,7 +165,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
   
  Se o argumento da macro `ASSERT` do MFC for avaliado como zero ou false, a macro interromperá a execução do programa e alerta o usuário; caso contrário, a execução continuará.  
   
- Quando uma asserção falha, uma caixa de diálogo de mensagem mostra o nome do arquivo de origem e o número da linha da asserção. Se você escolher repetição na caixa de diálogo caixa, uma chamada para [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) faz com que a execução para interromper o depurador. Nesse ponto, você pode examinar a pilha de chamadas e usar outros recursos do depurador para determinar o motivo da falha de asserção. Se você tiver habilitado [Just-in-time depuração](../debugger/just-in-time-debugging-in-visual-studio.md)e o depurador não estava sendo executado, a caixa de diálogo pode iniciar o depurador.  
+ Quando uma asserção falha, uma caixa de diálogo de mensagem mostra o nome do arquivo de origem e o número da linha da asserção. Se você escolher repetição na caixa de diálogo caixa, uma chamada para [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) faz com que a execução para interromper o depurador. Nesse ponto, você pode examinar a pilha de chamadas e usar outros recursos do depurador para determinar o motivo da falha de asserção. Se você tiver habilitado [Just-in-time depuração](../debugger/just-in-time-debugging-in-visual-studio.md)e o depurador não estava sendo executado, a caixa de diálogo pode iniciar o depurador.  
   
  O exemplo a seguir mostra como usar `ASSERT` para verificar o valor de retorno de uma função:  
   
@@ -180,7 +180,7 @@ ASSERT(x >= 0);   //  Assertion fails if x is negative
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
   
- A macro `ASSERT` não produz nenhum código na versão de liberação. Se você precisa avaliar a expressão na versão de lançamento, use o [verificar](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) macro em vez de ASSERT.  
+ A macro `ASSERT` não produz nenhum código na versão de liberação. Se você precisa avaliar a expressão na versão de lançamento, use o [verificar](/cpp/mfc/reference/diagnostic-services#verify) macro em vez de ASSERT.  
   
 ###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID e CObject::AssertValid  
  O [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid) método fornece verificações de tempo de execução do estado interno de um objeto. Embora não seja necessário substituir `AssertValid` quando você deriva a sua classe de `CObject`, é possível tornar sua classe mais confiável fazendo isso. `AssertValid` deve executar asserções em todas as variáveis de membro do objeto para verificar se contêm valores válidos. Por exemplo, ela deve verificar se as variáveis de membro do ponteiro não são NULL.  

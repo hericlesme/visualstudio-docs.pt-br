@@ -1,4 +1,5 @@
 ---
+redirect_url: shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file
 title: Modificando o Shell isolado usando o. Arquivo Pkgdef | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
@@ -13,8 +14,7 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 37c517792055c1d4a2026eef5171325622fec661
+ms.openlocfilehash: addeeaa294a81acce6558feb5257fee1344532f8
 ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
@@ -49,7 +49,7 @@ O arquivo .pkgdef oferece suporte a configurações que você pode usar para per
   
  Você pode adicionar comentários para o arquivo .pkgdef. Um comentário de linha única tem duas barras como os dois primeiros caracteres.  
   
- Para obter uma lista de cadeias de caracteres de substituição, consulte [substituição de cadeias de caracteres usadas no. Pkgdef e. Arquivos de Pkgundef](substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
+ Para obter uma lista de cadeias de caracteres de substituição, consulte [substituição de cadeias de caracteres usadas no. Pkgdef e. Arquivos de Pkgundef](../extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
   
  As seções a seguir descrevem os valores de registro específicos que afetam o comportamento do shell do Visual Studio em modo isolado. Você também pode definir valores de registro adicionais para o aplicativo nesse arquivo.  
   
@@ -68,12 +68,12 @@ O arquivo .pkgdef oferece suporte a configurações que você pode usar para per
 |AppName|cadeia de caracteres|O nome do aplicativo. O nome aparece na barra de título da janela do aplicativo.<br /><br /> O valor padrão é o nome do arquivo de solução do aplicativo.|  
 |CommandLineLogo|cadeia de caracteres|O texto da faixa quando o aplicativo é executado em uma janela de console. Essa configuração afeta somente os aplicativos que dão suporte a operações de criação de linha de comando.<br /><br /> O valor padrão é "*companyName * * solutionName* versão 1.0.", onde *companyName* é o nome da empresa fornecido quando o Windows foi instalado, e *solutionName*é o nome do arquivo de solução do aplicativo.|  
 |DefaultDebugEngine|cadeia de caracteres|O GUID do padrão o mecanismo usado para o aplicativo de depuração.<br /><br /> Observação: Um GUID vazio (todos os zeros à esquerda) indica que o aplicativo não especificar um mecanismo de depuração padrão. Isso permite que o depurador selecionar o mecanismo de depuração a ser usado.<br /><br /> O valor padrão é "{00000000-0000-0000-0000-000000000000}".|  
-|DefaultHomePage|cadeia de caracteres|A URL da página inicial padrão para a janela do navegador da Web interna.<br /><br /> Se o **Home page** opção está disponível no aplicativo, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [caixa de diálogo do navegador da Web, ambiente, opções](../../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> O valor padrão é a URL da empresa fornecida quando o Windows foi instalado.|  
+|DefaultHomePage|cadeia de caracteres|A URL da página inicial padrão para a janela do navegador da Web interna.<br /><br /> Se o **Home page** opção está disponível no aplicativo, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [caixa de diálogo do navegador da Web, ambiente, opções](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> O valor padrão é a URL da empresa fornecida quando o Windows foi instalado.|  
 |DefaultProjectsLocation|cadeia de caracteres|O caminho completo da pasta de projetos de padrão. Por exemplo,<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> Se o **local de projetos do Visual Studio** opção está disponível no aplicativo, em seguida, essa configuração também afeta o estado padrão da opção. <br /><br /> O valor padrão é "$ $MyDocuments\\*solutionName*", onde *solutionName* é o nome do arquivo de solução do aplicativo.|  
-|DefaultSearchPage|cadeia de caracteres|A URL de página de pesquisa padrão para a janela do navegador da Web interna.<br /><br /> Se o **página Pesquisa** opção está disponível no aplicativo, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [caixa de diálogo do navegador da Web, ambiente, opções](../../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> O valor padrão é "http://search.live.com".|  
+|DefaultSearchPage|cadeia de caracteres|A URL de página de pesquisa padrão para a janela do navegador da Web interna.<br /><br /> Se o **página Pesquisa** opção está disponível no aplicativo, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [caixa de diálogo do navegador da Web, ambiente, opções](../ide/reference/web-browser-environment-options-dialog-box.md).<br /><br /> O valor padrão é "http://search.live.com".|  
 |DefaultUserFilesFolderRoot|cadeia de caracteres|O nome da pasta de usuário, o usuário atual em relação a pasta Meus documentos do.<br /><br /> O valor padrão é o nome do arquivo de solução do aplicativo.|  
 |DisableOutputWindow|DWORD|Indica se o shell isolado deve tratar a janela de saída como desabilitado.<br /><br /> Se esse valor é definido como true, o Visual Studio não exibe a saída de Gerenciador de build de solução no **saída** janela e oculta o **janela de saída mostrar início da compilação** caixa de seleção a  **Projetos e soluções** categoria no **opções** caixa de diálogo.<br /><br /> O valor padrão é false.|  
-|HideMiscellaneousFilesByDefault|DWORD|True para ocultar o **arquivos diversos** pasta por padrão em **Solution Explorer**; caso contrário, false.<br /><br /> Se o **Mostrar arquivos diversos no Gerenciador de soluções** opção está disponível no aplicativo, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [documentos, ambiente, caixa de diálogo de opções](../../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> O valor padrão é false.|  
+|HideMiscellaneousFilesByDefault|DWORD|True para ocultar o **arquivos diversos** pasta por padrão em **Solution Explorer**; caso contrário, false.<br /><br /> Se o **Mostrar arquivos diversos no Gerenciador de soluções** opção está disponível no aplicativo, em seguida, essa configuração também afeta o estado padrão da opção. Para obter mais informações, consulte [documentos, ambiente, caixa de diálogo de opções](../ide/reference/documents-environment-options-dialog-box.md).<br /><br /> O valor padrão é false.|  
 |HideSolutionConcept|DWORD|True para criar projetos de todos os projetos como autônomos e ocultar a solução e comandos relacionados a uma solução para projetos autônomos por padrão. Caso contrário, false.<br /><br /> Se o **sempre mostrar solução** opção está disponível no aplicativo, em seguida, essa configuração também afeta o estado padrão da opção.<br /><br /> O valor padrão é false.|  
 |NewProjDlgInstalledTemplatesHdr|cadeia de caracteres|O nome para o cabeçalho de modelos do Visual Studio instalou no **modelos** lista o **novo projeto** caixa de diálogo. Isso é uma cadeia de caracteres ou um identificador de recurso localizável carregado a partir do pacote de interface do usuário do aplicativo.<br /><br /> O valor padrão é "*solutionName* modelos instalados", onde *solutionName* é o nome do arquivo de solução do aplicativo.|  
 |NewProjDlgSlnTreeNodeTitle|cadeia de caracteres|O nome para o **soluções do Visual Studio** nó o **tipos de projeto** árvore no **novo projeto** caixa de diálogo. Isso é uma cadeia de caracteres ou um identificador de recurso localizável carregado a partir do pacote de interface do usuário do aplicativo.<br /><br /> O valor padrão é "*solutionName* modelos instalados", onde *solutionName* é o nome do arquivo de solução do aplicativo.|  
@@ -122,12 +122,12 @@ O arquivo .pkgdef oferece suporte a configurações que você pode usar para per
 ## <a name="package-menu-item-settings"></a>Configurações de Item de Menu do pacote  
  Chave do Registro [$RootKey$ \Menus] define os arquivos de recursos de interface do usuário para o aplicativo.  
   
- Valores de item de menu têm o formato "{*vsUiPackageGuid*}"=" *resourceId*, *versionNumber*", onde *vsUiPackageGuid* é o GUID do o pacote de interface do usuário do aplicativo, *resourceId* é o identificador de recurso do recurso CTMENU que contém os elementos de interface do usuário, e *versionNumber* é um número de versão virtual para o CTMENU recurso. Para obter mais informações, consulte [Registrando manipuladores de comandos de Assembly de interoperabilidade](../internals/registering-interop-assembly-command-handlers.md).  
+ Valores de item de menu têm o formato "{*vsUiPackageGuid*}"=" *resourceId*, *versionNumber*", onde *vsUiPackageGuid* é o GUID do o pacote de interface do usuário do aplicativo, *resourceId* é o identificador de recurso do recurso CTMENU que contém os elementos de interface do usuário, e *versionNumber* é um número de versão virtual para o CTMENU recurso. Para obter mais informações, consulte [Registrando manipuladores de comandos de Assembly de interoperabilidade](../extensibility/internals/registering-interop-assembly-command-handlers.md).  
   
  Por padrão, uma entrada de item de menu é criada no arquivo .pkgdef para o pacote de interface do usuário do aplicativo.  
   
  Para cada pacote que fornece os itens de menu que é distribuída como parte do aplicativo, adicione uma entrada de item de menu para o pacote.  
   
 ## <a name="see-also"></a>Consulte também  
- [Personalizando o Shell isolado](customizing-the-isolated-shell.md)   
- [. Arquivos de Pkgundef](modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+ [Personalizando o Shell isolado](../extensibility/customizing-the-isolated-shell.md)   
+ [. Arquivos de Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)

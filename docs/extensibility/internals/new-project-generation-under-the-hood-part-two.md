@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nova geração de projeto: Nos bastidores, segunda parte
 Em [nova geração de projeto: sob o escopo, uma parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) , vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou um **Visual C# Windows Application**, preenchido de **nome** e **local** caixas de texto e Okey clicado.  
@@ -28,7 +28,7 @@ Em [nova geração de projeto: sob o escopo, uma parte](../../extensibility/inte
 ## <a name="generating-the-solution-files"></a>Gerar os arquivos de solução  
  Escolher um modelo de aplicativo direciona [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para descompactar e abrir o arquivo. vstemplate correspondente e para iniciar um modelo para interpretar os comandos XML no arquivo. Esses comandos criam projetos e itens de projeto na solução nova ou existente.  
   
- O modelo de descompactação de arquivos de origem, chamados de modelos de item, da mesma pasta. zip que contém o arquivo. vstemplate. O modelo de copiá-los para o novo projeto, personalizá-las adequadamente. Para obter uma visão geral de modelos de projeto e item, consulte [NIB: modelos do Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ O modelo de descompactação de arquivos de origem, chamados de modelos de item, da mesma pasta. zip que contém o arquivo. vstemplate. O modelo de copiá-los para o novo projeto, personalizá-las adequadamente.  
   
 ### <a name="template-parameter-replacement"></a>Substituição de parâmetro de modelo  
  Quando o modelo de cópias de um modelo de item para um novo projeto, ele substitui quaisquer parâmetros de modelo com cadeias de caracteres para personalizar o arquivo. Um parâmetro de modelo é um símbolo especial que é precedido e seguido por um sinal de cifrão, por exemplo, $date$.  
