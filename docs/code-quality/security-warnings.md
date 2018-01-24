@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f54a6dc2f47d10a47635a600d97decf3846e9d3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="security-warnings"></a>Avisos de segurança
 Os avisos de segurança oferecem suporte a bibliotecas e aplicativos mais seguros. Esses avisos ajudam a evitar falhas de segurança em seu programa. Se você desabilitar um desses avisos, você deve marcar claramente a razão no código e também informar o agente de segurança designado para seu projeto de desenvolvimento.  
@@ -81,7 +81,7 @@ Os avisos de segurança oferecem suporte a bibliotecas e aplicativos mais seguro
 |[CA2149: métodos transparentes não devem chamar código nativo](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Esta regra é acionada em qualquer método transparente chamado diretamente no código nativo, por exemplo, por meio de um P/Invoke. As violações dessa regra resultam em um MethodAccessException no modelo de transparência de nível 2 e uma demanda completa para UnmanagedCode no modelo de transparência de nível 1.|  
 |[CA2151: campos com tipos críticos devem ser críticos para segurança](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Para usar tipos de segurança crítica, o código que faz referência ao tipo deve ser de segurança crítica ou de segurança crítica segura. Isso será verdadeiro mesmo que a referência seja indireta. Por isso, ter um campo de segurança transparente ou de segurança crítica é enganoso porque o código transparente continuará incapaz de acessar o campo.|  
 |[Declarações ca5122: P/Invoke não devem ser seguras crítico](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Os métodos são marcados como SecuritySafeCritical quando executam uma operação confidencial de segurança, mas também são seguros para serem usados pelo código transparente. O código transparente jamais pode chamar diretamente o código nativo por meio de um P/Invoke. Por isso, a marcação de um P/Invoke como crítico de segurança não permitirá que o código transparente o chame, e é enganosa na análise de segurança.|  
-|[CA2153: evitar o tratamento de exceções de estado corrompidas](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Corrompido exceções de estado (CSE)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) indicar que a memória corrompidos no processo. Capturando esses em vez de permitir o processo a falha pode levar a vulnerabilidades de segurança se um invasor pode colocar uma exploração para a área de memória corrompidos.|  
+|[CA2153: evitar o tratamento de exceções de estado corrompidas](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Corrompido exceções de estado (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicar que a memória corrompidos no processo. Capturando esses em vez de permitir o processo a falha pode levar a vulnerabilidades de segurança se um invasor pode colocar uma exploração para a área de memória corrompidos.|  
 |[CA3075: processamento de DTD inseguro](../code-quality/ca3075-insecure-dtd-processing.md)|Se você usa instâncias de DTDProcessing inseguras ou fazem referência a fontes de entidade externa, o analisador pode aceitar a entrada não confiável e divulgar informações confidenciais para os invasores.|  
 |[CA3076: execução de Script XSLT não seguro](../code-quality/ca3076-insecure-xslt-script-execution.md)|Se você executar transformações de linguagem de folhas de estilo extensível (XSLT) em aplicativos .NET maneira insegura, o processador pode resolver referências URI não confiáveis que podem divulgar informações confidenciais para invasores, levando a negação de serviço e entre sites ataques.|  
 |[CA3077: processamento inseguro no design de API, documento XML e leitor de texto XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Quando criar uma API derivado do XMLDocument e XMLTextReader, estar atento a DtdProcessing.  Usando as instâncias de DTDProcessing inseguras quando referenciando Resolvendo fontes de entidade externa ou definir valores inseguros no XML pode levar à divulgação de informações.|

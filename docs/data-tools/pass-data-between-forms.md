@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 7704b8f4af9f6858e476f4075c6f38cda3052118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b93cacb9f64a4fbf0b6478feb922c74b35a3f7ea
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
 Este passo a passo fornece instruções detalhadas de como passar os dados de um formulário para outro. Usando as tabelas customers e orders da Northwind, um formulário permite que os usuários selecionem um cliente e um segundo formulário exibe os pedidos do cliente selecionado. Este passo a passo mostra como criar um método no segundo formulário que recebe dados do primeiro formulário.  
@@ -53,7 +53,7 @@ Este passo a passo fornece instruções detalhadas de como passar os dados de um
 ## <a name="prerequisites"></a>Pré-requisitos  
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.  
   
-1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download de edições do SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
+1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
   
 2.  Instale o banco de dados de exemplo Northwind seguindo estas etapas:  
 

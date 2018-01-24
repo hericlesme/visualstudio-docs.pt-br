@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 44139e06a09fc2883c7a42202129bfd3c82343d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 35f98e7442c6600baa1afcc38642abf8e7aeb3ba
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Instruções passo a passo: criando um conjunto de dados com o Designer de Conjunto de Dados
 
@@ -44,7 +44,7 @@ As tarefas ilustradas neste passo a passo incluem:
 ## <a name="prerequisites"></a>Pré-requisitos  
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.  
   
-1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download de edições do SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
+1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
   
 2.  Instale o banco de dados de exemplo Northwind seguindo estas etapas:  
 

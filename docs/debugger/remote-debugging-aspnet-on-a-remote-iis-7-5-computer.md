@@ -13,18 +13,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 35b8cd394881ba5bf075044d30aee17ab6a321c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuração remota ASP.NET em um computador remoto do IIS
 Para depurar um aplicativo ASP.NET que tenha sido implantado no IIS, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo e, em seguida, anexe ao seu aplicativo em execução do Visual Studio.
 
 ![Componentes do depurador remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Este guia explica como configurar e configurar um aplicativo do Visual Studio 2017 ASP.NET MVC 4.5.2, implantá-lo no IIS e anexar o depurador remoto do Visual Studio. A depuração remota ASP.NET Core, consulte [remota de depuração ASP.NET Core em um computador com IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Você também pode implantar e depurar no IIS usando o Azure. Para obter mais informações, consulte [de depuração remota no Azure](../debugger/remote-debugging-azure.md).
+Este guia explica como configurar e configurar um aplicativo do Visual Studio 2017 ASP.NET MVC 4.5.2, implantá-lo no IIS e anexar o depurador remoto do Visual Studio. A depuração remota ASP.NET Core, consulte [remota de depuração ASP.NET Core em um computador com IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Para o serviço de aplicativo do Azure, você pode facilmente implantar e depurar em uma instância pré-configurado do IIS usando o [instantâneo depurador](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 necessário) ou por [anexar o depurador do Gerenciador de servidores](../debugger/remote-debugging-azure.md).
 
 Esses procedimentos foram testados nessas configurações de servidor:
 * Windows Server 2012 R2 e IIS 8 (para o Windows Server 2008 R2, as etapas do servidor são diferentes)
@@ -50,10 +50,10 @@ O depurador remoto é suportado no Windows Server, iniciando com o Windows Serve
 
 Dependendo de suas configurações de segurança, isso pode economizar tempo para adicionar os seguintes sites confiáveis no seu navegador para que você pode facilmente baixar o software descrito neste tutorial. Acesso a esses sites pode ser necessários:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- VisualStudio.com
+- visualstudio.com
 
 Se você estiver usando o Internet Explorer, você pode adicionar sites confiáveis, vá para **opções da Internet > Segurança > Sites confiáveis > Sites**. Essas etapas são diferentes para outros navegadores. (Se você precisar baixar uma versão mais antiga do depurador remoto do my.visualstudio.com, alguns sites confiáveis adicionais são necessário para entrar.)
 
@@ -70,7 +70,7 @@ Se você quiser obter informações mais detalhadas para instalar o ASP.NET no I
     > [!NOTE]
     > Se você estiver usando o Windows Server 2008 R2, instale o ASP.NET 4, em vez de usar este comando:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Reiniciar o sistema (ou execute **net stop foi /y** seguido por **net start-w3svc** em um prompt de comando para acompanhar uma alteração no caminho do sistema).
 

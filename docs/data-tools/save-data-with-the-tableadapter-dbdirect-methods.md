@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628a3cfc75f786ceb989145ada6e2f2579f349cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com o TableAdapter DBDirect métodos
 Este passo a passo fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações de banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados chamando o indivíduo `Insert`, `Update`, e `Delete` métodos conforme necessário para seu aplicativo (em vez de sobrecarregados `Update` método que executa a atualização Instruções INSERT e DELETE todas em uma chamada).  
@@ -45,7 +45,7 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
 ## <a name="prerequisites"></a>Pré-requisitos  
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.  
   
-1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download de edições do SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
+1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
   
 2.  Instale o banco de dados de exemplo Northwind seguindo estas etapas:  
 

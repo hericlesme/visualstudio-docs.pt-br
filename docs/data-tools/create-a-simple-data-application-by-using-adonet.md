@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1525a858885bb7b824967712186f81e060f63519
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo simples de dados usando o ADO.NET
 Quando você cria um aplicativo que manipule dados em um banco de dados, você pode executar tarefas básicas, como definindo cadeias de conexão, inserir dados e executar procedimentos armazenados. Ao seguir neste tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples de "formulários sobre dados" do Windows Forms usando o Visual c# ou Visual Basic e ADO.NET.  Todas as tecnologias de dados do .NET, inclusive conjuntos de dados, o LINQ to SQL e Entity Framework —, por fim, execute as etapas que são muito semelhantes aos mostrados neste artigo.  
@@ -47,7 +47,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, você p
   
 -   O Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB. Se você não tiver o SQL Server Express LocalDB, você pode instalá-lo do [página de download de edições do SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+-   SQL Server Express LocalDB. Se você não tiver o SQL Server Express LocalDB, você pode instalá-lo do [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 Este tópico pressupõe que você está familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formas ao projeto, coloque os botões e outros controles em formulários, definir propriedades de controles e eventos de código simples. Se você não estiver familiarizado com essas tarefas, sugerimos que você conclua a [guia de Introdução ao Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tópico antes de começar este passo a passo.  
   
@@ -99,9 +99,9 @@ Crie o banco de dados de exemplo seguindo estas etapas:
   
 |Controles para o formulário de navegação|Propriedades|  
 |--------------------------------------|----------------|  
-|Botão|Nome = btnGoToAdd|  
-|Botão|Nome = btnGoToFillOrCancel|  
-|Botão|Nome = btnExit|  
+|Botão|Name = btnGoToAdd|  
+|Botão|Name = btnGoToFillOrCancel|  
+|Botão|Name = btnExit|  
   
  **Formulário de NewCustomer**  
   
@@ -111,12 +111,12 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 |---------------------------------------|----------------|  
 |TextBox|Nome = txtCustomerName|  
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = True|  
-|Botão|Nome = btnCreateAccount|  
-|NumericUpdown|DecimalPlaces = 0<br /><br /> Máximo = 5000<br /><br /> Nome = numOrderAmount|  
-|DateTimePicker|Formato = curto<br /><br /> Nome = dtpOrderDate|  
-|Botão|Nome = btnPlaceOrder|  
-|Botão|Nome = btnAddAnotherAccount|  
-|Botão|Nome = btnAddFinish|  
+|Botão|Name = btnCreateAccount|  
+|NumericUpdown|DecimalPlaces = 0<br /><br /> Máximo = 5000<br /><br /> Name = numOrderAmount|  
+|DateTimePicker|Formato = curto<br /><br /> Name = dtpOrderDate|  
+|Botão|Name = btnPlaceOrder|  
+|Botão|Name = btnAddAnotherAccount|  
+|Botão|Name = btnAddFinish|  
   
  **Formulário FillOrCancel**  
   
@@ -125,11 +125,11 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 |Controles do formulário FillOrCancel|Propriedades|  
 |----------------------------------------|----------------|  
 |TextBox|Nome = txtOrderID|  
-|Botão|Nome = btnFindByOrderID|  
-|DateTimePicker|Formato = curto<br /><br /> Nome = dtpFillDate|  
-|DataGridView|Nome = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|  
-|Botão|Nome = btnCancelOrder|  
-|Botão|Nome = btnFillOrder|  
+|Botão|Name = btnFindByOrderID|  
+|DateTimePicker|Formato = curto<br /><br /> Name = dtpFillDate|  
+|DataGridView|Name = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|  
+|Botão|Name = btnCancelOrder|  
+|Botão|Name = btnFillOrder|  
 |Botão|Nome = btnFinishUpdates|  
   
 ##  <a name="BKMK_storetheconnectionstring"></a>Armazenar a cadeia de caracteres de conexão  

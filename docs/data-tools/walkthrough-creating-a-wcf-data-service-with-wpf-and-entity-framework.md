@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 5c1d86d634579370565f2def7af233b4edffae53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c4db93f300c47bf3a09dac2fbf9d5b1f4bc17108
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: Criando um serviço de dados WCF com WPF e do Entity Framework
 Este passo a passo demonstra como criar um simples [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que é hospedado em um [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativo Web e, em seguida, acessá-lo a partir de um aplicativo de Windows Forms.  
@@ -47,7 +47,7 @@ Neste passo a passo, você realizará as seguintes tarefas:
 ## <a name="prerequisites"></a>Pré-requisitos  
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.  
   
-1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download de edições do SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
+1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
   
 2.  Instale o banco de dados de exemplo Northwind seguindo estas etapas:  
 

@@ -23,11 +23,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71572ac38c7aed3154360d3bad9e4b84fe0107e3
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="handle-a-concurrency-exception"></a>Lidar com uma exceção de simultaneidade
 Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são gerados quando dois usuários tentam alterar os mesmos dados em um banco de dados ao mesmo tempo. Neste passo a passo, você cria um aplicativo do Windows que ilustra como capturar uma <xref:System.Data.DBConcurrencyException>, localize a linha que causou o erro e aprender uma estratégia para como lidar com ele.  
@@ -51,7 +51,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ge
 ## <a name="prerequisites"></a>Pré-requisitos  
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.  
   
-1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download de edições do SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
+1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.  
   
 2.  Instale o banco de dados de exemplo Northwind seguindo estas etapas:  
 

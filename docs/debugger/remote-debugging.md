@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 94ce04f63870bb6ce9a40658c670c5b277cc675e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debugging"></a>Depuração remota
 Você pode depurar um aplicativo do Visual Studio que foi implantado em um computador diferente. Para fazer isso, você deve usar o depurador remoto do Visual Studio.
@@ -34,11 +34,13 @@ Para obter instruções detalhadas sobre a depuração remota, consulte estes t�
 
 |Cenário|Link|
 |-|-|-|
-|Azure|[Depuração de ASP.NET no serviço de aplicativo do Azure (instantâneo depurador)](../debugger/debug-live-azure-applications.md), [remoto depurar ASP.NET no Azure](../debugger/remote-debugging-azure.md), ou [depurar um aplicativo do Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|Serviço de Aplicativo do Azure|[Depurador de instantâneo](../debugger/debug-live-azure-applications.md) ou [remoto depurar ASP.NET no Azure](../debugger/remote-debugging-azure.md)|
+|VM do Azure|[Depuração remota ASP.NET no Azure](../debugger/remote-debugging-azure.md)|
+|Malha do serviço do Azure|[Depurar um aplicativo do Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[Remoto depurar ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) ou [ASP.NET de depuração remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# ou Visual Basic|[Depuração remota um projeto c# ou Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C# ou Visual Basic|[Depuração remota de um projeto C# ou Visual Basic](../debugger/remote-debugging-csharp.md)|
 |C++|[Depuração remota de um projeto em C++](../debugger/remote-debugging-cpp.md)|
-|Aplicativos universais do Windows (UWP)|[Executar aplicativos UWP em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) e [depurar um pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)|
+|Aplicativos universais do Windows (UWP)|[Executar aplicativos UWP em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) ou [depurar um pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)|
 
 Se você apenas deseja baixar e instalar o depurador remoto e não é necessário quaisquer instruções adicionais para seu cenário, siga as etapas neste artigo.
   

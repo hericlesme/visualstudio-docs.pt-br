@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 160cf1021e6b95dcfc6cf8ee97b20c4502f9099e
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: Salvar dados em uma transação
 Este passo a passo demonstra como salvar dados em uma transação usando o <xref:System.Transactions> namespace. Este passo a passo, você criará um aplicativo Windows Forms. Você usará o Assistente de configuração de fonte de dados para criar um conjunto de dados de duas tabelas no banco de dados de exemplo Northwind. Você adicionará dados controles associados a um formulário do Windows, e você modificará o código do BindingNavigator botão Salvar atualizar o banco de dados dentro de um TransactionScope.  
@@ -34,7 +34,7 @@ Este passo a passo demonstra como salvar dados em uma transação usando o <xref
 ## <a name="prerequisites"></a>Pré-requisitos  
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.  
   
-1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download de edições do SQL Server](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **desenvolvimento de área de trabalho do .NET** carga de trabalho, ou como um componente individual.  
+1.  Se você não tiver o SQL Server Express LocalDB, instale-o do [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte do **desenvolvimento de área de trabalho do .NET** carga de trabalho, ou como um componente individual.  
   
 2.  Instale o banco de dados de exemplo Northwind seguindo estas etapas:  
 

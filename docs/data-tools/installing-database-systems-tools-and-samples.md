@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: af76fad7d6288aff08de22b076d27cafbb5c3cff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8fbe818e233c8bbdaf4431c70b8962baf43a2ed2
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemas de banco de dados compatível para o Visual Studio
 
@@ -29,13 +29,13 @@ Para desenvolver um aplicativo conectado a dados no Visual Studio, você normalm
 
 Para um sistema de banco de dados possam ser acessadas de aplicativos .NET e fique visível em janelas de ferramentas de dados do Visual Studio, ele deverá ter um provedor de dados ADO.NET. Um provedor especificamente deve oferecer suporte a Entity Framework se você planeja usar modelos de dados de entidade em seu aplicativo .NET. Muitos provedores são oferecidos por meio do Gerenciador de pacotes do NuGet ou por meio do Visual Studio Marketplace.
 
-Se você estiver usando APIs de armazenamento do Azure, instale os emuladores de armazenamento do Azure em sua máquina local durante o desenvolvimento para evitar encargos até que você está pronto para implantar na produção. Para obter mais informações, consulte [usar o emulador de armazenamento do Azure para desenvolvimento e testes](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
+Se você estiver usando APIs de armazenamento do Azure, instale os emuladores de armazenamento do Azure em sua máquina local durante o desenvolvimento para evitar encargos até que você está pronto para implantar na produção. Para obter mais informações, consulte [usar o emulador de armazenamento do Azure para desenvolvimento e testes](/azure/storage/common/storage-use-emulator).
 
 A lista a seguir inclui alguns dos sistemas de banco de dados mais populares que podem ser usados em projetos do Visual Studio. A lista não é exaustiva. Para obter uma lista de fornecedores que oferecem provedores de dados ADO.NET que habilitar a integração profunda com ferramentas do Visual Studio, consulte [provedores de dados ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
-O SQL Server é o banco de dados do Microsoft principal da oferta. SQL Server 2016 oferece um desempenho inovador, segurança avançada e rico e integrado, relatórios e análises. Ele é fornecido em várias edições são projetadas para usos diferentes: de análise de negócios altamente escalonável e de alto desempenho, para usar em um único computador. SQL Server Express é uma edição completa do SQL Server que seja adequado para a redistribuição e inserção.  O LocalDB é uma edição simplificada do SQL Server Express que não requer configuração e é executado no processo do aplicativo. Você pode baixar um ou ambos os produtos de [a página de download do SQL Server Express](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx). Muitos dos exemplos de SQL nesta seção usam o LocalDB do SQL Server. SQL Server Management Studio (SSMS) é um aplicativo de gerenciamento de banco de dados autônomo que tenha mais funcionalidade que é fornecido no Visual Studio SQL Server Object Explorer. Você pode obter o SSMS do link anterior.
+O SQL Server é o banco de dados do Microsoft principal da oferta. SQL Server 2016 oferece um desempenho inovador, segurança avançada e rico e integrado, relatórios e análises. Ele é fornecido em várias edições são projetadas para usos diferentes: de análise de negócios altamente escalonável e de alto desempenho, para usar em um único computador. SQL Server Express é uma edição completa do SQL Server que seja adequado para a redistribuição e inserção.  O LocalDB é uma edição simplificada do SQL Server Express que não requer configuração e é executado no processo do aplicativo. Você pode baixar um ou ambos os produtos a [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Muitos dos exemplos de SQL nesta seção usam o LocalDB do SQL Server. SQL Server Management Studio (SSMS) é um aplicativo de gerenciamento de banco de dados autônomo que tenha mais funcionalidade que é fornecido no Visual Studio SQL Server Object Explorer. Você pode obter o SSMS do link anterior.
 
 ## <a name="oracle"></a>Oracle
 
