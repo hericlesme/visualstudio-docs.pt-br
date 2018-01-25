@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Instruções passo a passo: criando um ambiente de build de vários computadores
 
@@ -29,7 +29,6 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
 Este documento não confere direitos para redistribuir o software externamente nem para fornecer ambientes de build a terceiros.  
   
 > Aviso de isenção de responsabilidade<br /><br /> Este documento é fornecido "no estado em que se encontra". Embora tenhamos testado as etapas descritas, não é possível testar exaustivamente cada configuração. Tentaremos manter o documento atualizado com quaisquer informações adicionais que obtivermos. As informações e as exibições expressas neste documento, incluindo a URL e outras referências a sites da Internet, podem mudar sem aviso prévio. A Microsoft não oferece nenhuma garantia, explícita ou implícita, quanto às informações fornecidas aqui. Você assume o risco de utilizá-las.<br /><br /> Este documento não lhe concede nenhum direito legal à nenhuma propriedade intelectual de nenhum produto da Microsoft. Você pode copiar e usar este documento para fins internos de referência.<br /><br /> Você não tem obrigação de enviar à Microsoft nenhuma sugestão ou comentário ("Comentários") com relação a este documento. No entanto, qualquer Comentário que você forneça voluntariamente poderá ser usado em Produtos Microsoft e especificações relacionadas ou outra documentação (coletivamente, "Ofertas Microsoft"), que, por sua vez, poderão ser utilizados por terceiros para desenvolver seus próprios produtos. Portanto, ao fornecer Comentários sobre a Microsoft em qualquer versão deste documento ou das Ofertas da Microsoft aos quais elas se aplicam, você concorda que: (a) a Microsoft pode livremente usar, reproduzir, licenciar, distribuir e comercializar de outra forma seus Comentários em qualquer Oferta da Microsoft; (b) você também concede a terceiros, sem custos, somente os direitos de patente necessários para permitir que outros produtos usem ou interajam com quaisquer partes específicas de um Produto Microsoft que incorporem Seus Comentários; e (c) você não fornecerá à Microsoft nenhum Comentário (i) que você tenha motivo para acreditar que esteja sujeito a qualquer declaração ou direito de patente, direitos autorais ou outra propriedade intelectual de terceiros; ou (ii) sujeito a termos de licença que busquem exigir que qualquer Oferta da Microsoft que incorpore ou seja derivada desses Comentários, ou outra propriedade intelectual da Microsoft, seja licenciada ou compartilhada de outra forma com quaisquer terceiros.
-
 
 Este passo a passo foi validado nos seguintes sistemas operacionais executando o MSBuild na linha de comando e usando o Team Foundation Build.  
   
@@ -47,7 +46,7 @@ Este passo a passo foi validado nos seguintes sistemas operacionais executando o
   
  O ambiente de vários computadores não pode ser usado para compilar estes tipos de aplicativos:  
   
--   Aplicativos [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]. Para compilar aplicativos [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], instale o Visual Studio no computador de build.  
+-   Aplicativos UWP. Para compilar aplicativos UWP, instale o Visual Studio no computador de build.  
   
 -   Aplicativos de área de trabalho voltados para o .NET Framework 4 ou anterior. Para criar esses tipos de aplicativos, instale o Visual Studio ou Assemblies e Ferramentas do .NET Reference (do SDK do Windows 7.1) no computador de build.  
   

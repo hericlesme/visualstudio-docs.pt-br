@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Guia de início rápido: codificação no editor
 
@@ -135,7 +135,7 @@ O [IntelliSense](../ide/using-intellisense.md) é um recurso valioso quando voc�
 
 ## <a name="refactoring-a-name"></a>Refatoração de um nome
 
-Ninguém obtém o código correto na primeira vez e uma das coisas que talvez você queira alterar é o nome de uma variável ou de um método. Vamos experimentar a funcionalidade de [refatoração](../ide/refactoring-code-generation-quick-actions.md#refactoring) do Visual Studio para renomear a variável `_words` como `words`.
+Ninguém obtém o código correto na primeira vez e uma das coisas que talvez você queira alterar é o nome de uma variável ou de um método. Vamos experimentar a funcionalidade de [refatoração](../ide/refactoring-in-visual-studio.md) do Visual Studio para renomear a variável `_words` como `words`.
 
 1. Coloque o cursor sobre a definição da variável `words` e selecione **Renomear...**  ao clicar com o botão direito do mouse ou no menu de contexto, ou pressione **Ctrl**+**R**, **Ctrl**+**R**.
 
@@ -155,11 +155,11 @@ Você concluiu este guia de início rápido para o editor do Visual Studio! Logo
 
 ## <a name="see-also"></a>Consulte também
 
-[Início rápido: introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Início rápido: personalizar o IDE do Visual Studio e o Editor](../ide/quickstart-personalize-the-ide.md)  
-[Guia de início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)  
+[Guia de início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Guia de início rápido: Personalizar o Editor e o IDE do Visual Studio](../ide/quickstart-personalize-the-ide.md)  
+[Guia de início rápido: Projetos e soluções](../ide/quickstart-projects-solutions.md)  
 [Trechos de código](../ide/code-snippets.md)  
 [Estrutura de tópicos](../ide/outlining.md)  
 [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)  
-[Refatoração](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[Usando o IntelliSense](../ide/using-intellisense.md)  
+[Refatoração](../ide/refactoring-in-visual-studio.md)  
+[Usando o IntelliSense](../ide/using-intellisense.md)

@@ -12,16 +12,23 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 762829628e4f52c797bf98acf83a48eec0cbce6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: b1a36b387ad9fd8a2212cfaceefbd454edf33dde
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Depurando o Python e o C++ juntos
 
-A maioria dos depuradores regulares do Python dão suporte apenas à depuração de código do Python. No entanto, na prática, o Python é usado em conjunto com o C ou o C++, nos casos em que é necessário o alto desempenho ou a capacidade de invocar diretamente as APIs da plataforma (consulte [Criando uma extensão do C++ para o Python](cpp-and-python.md) para obter um exemplo). Quando um projeto Python é carregado, o Visual Studio fornece a depuração de modo misto integrada e simultânea para o Python e o C/C++ nativo, com pilhas de chamadas combinadas, a capacidade de alternar entre o código do Python e o código nativo, pontos de interrupção nos dois tipos de código e a capacidade de ver representações do Python de objetos em quadros nativos e vice-versa:
+A maioria dos depuradores regulares do Python dão suporte apenas à depuração de código do Python. No entanto, na prática, o Python é usado em conjunto com C ou C++, em cenários que exigem alto desempenho ou a capacidade de invocar diretamente as APIs da plataforma. (Confira [Criar uma extensão em C++ para Python](cpp-and-python.md) para obter um exemplo). Quando um projeto em Python é carregado, o Visual Studio fornece depuração simultânea e integrada de modo misto para Python e C/C++ nativo, incluindo:
+
+- Pilhas de chamada combinadas
+- Etapa entre o Python e o código nativo
+- Pontos de interrupção nos dois tipos de código
+- Veja as representações de Python de objetos em quadros nativos e vice-versa
 
 ![Depuração de modo misto](media/mixed-mode-debugging.png) 
 
@@ -34,31 +41,38 @@ Para obter uma introdução à compilação, ao teste e à depuração de módul
 
 ## <a name="enabling-mixed-mode-debugging"></a>Habilitando a depuração de modo misto
 
-1. Clique com o botão direito do mouse no projeto, no Gerenciador de Soluções, selecione **Propriedades**, selecione a guia **Depuração** e, em seguida, ative a opção para **Habilitar a depuração de código nativo**. Essa opção habilita o modo misto em todas as sessões de depuração.
+1. Clique com o botão direito do mouse no projeto do Python no Gerenciador de Soluções, selecione **Propriedades**, selecione a guia **Depuração** e, em seguida, selecione **Habilitar depuração de código nativo**. Essa opção habilita o modo misto em todas as sessões de depuração.
 
     ![Habilitando a depuração de código nativo](media/mixed-mode-debugging-enable-native.png)
 
-    > [!Tip]    
+    > [!Tip]
     > Ao habilitar a depuração de código nativo, a janela de saída do Python poderá desaparecer imediatamente quando o programa tiver concluído sem fornecer a pausa comum “Pressione qualquer tecla para continuar...”. Para forçar uma pausa, adicione a opção `-i` ao campo **Executar > Argumentos do Interpretador** na guia **Depurar** ao habilitar a depuração de código nativo. Esse argumento coloca o interpretador do Python no modo interativo após a conclusão do código e, nesse ponto, ele aguarda até que você pressione Ctrl + Z, Enter para sair.
 
-1. Ao anexar o depurador de modo misto a um processo existente (**Depurar > Anexar ao Processo...**), selecione o botão **Selecionar...**  para abrir a caixa de diálogo **Selecionar Tipo de Código**, defina a opção **Depurar esses tipos de código** e selecione **Nativo** e **Python** na lista:
+1. Ao anexar o depurador de modo misto a um processo existente (**Depurar > Anexar ao Processo...**), selecione o botão **Selecionar...**  para abrir a caixa de diálogo **Selecionar Tipo de Código**. Em seguida, defina a opção **Depurar esses tipos de código** e selecione **Nativo** e **Python** na lista:
 
     ![Selecionando os tipos de código Nativo e do Python](media/mixed-mode-debugging-code-type.png)
 
-    As configurações de tipo de código são persistentes, portanto, se desejar desabilitar a depuração de modo misto ao anexar a um processo diferente mais tarde, repita essas etapas e desmarque o tipo de código Python.
+    As configurações de tipo de código são persistentes, portanto, se desejar desabilitar a depuração de modo misto ao anexar a um processo diferente mais tarde, desmarque o tipo de código Python.
 
-    É possível selecionar outros tipos de código além do **Nativo** ou em vez dele. Por exemplo, se um aplicativo gerenciado hospedar o CPython, que, por sua vez, usa módulos de extensão nativos e você desejar depurar todos os três, é possível marcar **Python**, **Nativo** e Gerenciado** juntos para uma experiência de depuração unificada, incluindo pilhas de chamadas combinadas e a execução em etapas entre os três tempos de execução.
+    É possível selecionar outros tipos de código além do **Nativo** ou em vez dele. Por exemplo, se um aplicativo gerenciado hospedar o CPython, que, por sua vez, usa módulos de extensão nativos e você desejar depurar todos os três, é possível marcar **Python**, **Nativo** e **Gerenciado** juntos para uma experiência de depuração unificada, incluindo pilhas de chamadas combinadas e a execução em etapas entre os três tempos de execução.
 
-1. Ao iniciar a depuração no modo misto pela primeira vez, você poderá ver uma caixa de diálogo **Símbolos Obrigatórios do Python**. Consulte [Símbolos para a depuração de modo misto](debugging-symbols-for-mixed-mode.md) para obter detalhes. Você precisa instalar símbolos apenas uma vez para qualquer ambiente do Python. Observe que, se você instalar o suporte do Python por meio do instalador do Visual Studio 2017, os símbolos serão incluídos automaticamente.
+1. Ao iniciar a depuração no modo misto pela primeira vez, você poderá ver uma caixa de diálogo **Símbolos Obrigatórios do Python** (confira [Símbolos para depuração de modo misto](debugging-symbols-for-mixed-mode.md)). Você precisa instalar símbolos apenas uma vez para qualquer ambiente do Python. Os símbolos serão incluídos automaticamente se você instalar o suporte do Python por meio do instalador do Visual Studio 2017.
 
-1. Talvez você também deseje ter o próprio código-fonte do Python disponível. Para o Python padrão, o código-fonte pode ser obtido em [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/). Baixe o arquivo morto apropriado para sua versão e extraía-o em uma pasta. Em seguida, aponte o Visual Studio para arquivos específicos nessa pasta em qualquer ponto que for solicitado.
+1. Convém também ter o próprio código-fonte do Python disponível. Para Python padrão, visite [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), baixe o arquivo apropriado para sua versão e extraia-o para uma pasta. Em seguida, aponte o Visual Studio para arquivos específicos nessa pasta em qualquer ponto que for solicitado.
 
-> [!Note]
-> A depuração de modo misto, conforme descrita aqui, é habilitada somente quando há um projeto Python carregado no Visual Studio. Esse projeto determina o modo de depuração do Visual Studio, que é o que disponibiliza a opção de modo misto. Se, no entanto, você tiver um projeto C++ carregado (como ao [inserir Python em outro aplicativo, conforme descrito em python.org](https://docs.python.org/3/extending/embedding.html), o Visual Studio usará o depurador C++ nativo que não dá suporte à depuração de modo misto.
->
-> Nesse caso, inicie o projeto C++ sem depuração (**Depurar > Iniciar sem depuração** ou Ctrl + F5) e, em seguida, use **Depurar > Anexar ao Processo...** . Na caixa de diálogo que aparece, selecione o processo apropriado e use o botão **Selecionar...**  para abrir a caixa de diálogo **Selecionar Tipo de Código** na qual você pode selecionar o Python, conforme mostrado abaixo. Selecione **OK** para fechar essa caixa de diálogo, em seguida, **Anexar** para iniciar o depurador. Observe que talvez seja necessário introduzir uma pausa ou atraso adequado no aplicativo C++ para garantir que ele não chame o Python que você deseja depurar antes que você anexe o depurador.
->
-> ![Selecionando Python como o tipo de depuração ao anexar um depurador](media/mixed-mode-debugging-attach-type.png)
+### <a name="enable-mixed-mode-debugging-in-a-c-project"></a>Habilitar a depuração de modo misto em um projeto C++
+
+A depuração de modo misto, conforme descrita neste artigo, é habilitada somente quando há um projeto em Python carregado no Visual Studio. Esse projeto determina o modo de depuração do Visual Studio, que é o que disponibiliza a opção de modo misto.
+
+Se, no entanto, você tiver um projeto C++ carregado (como ao [inserir Python em outro aplicativo, conforme descrito em python.org](https://docs.python.org/3/extending/embedding.html), o Visual Studio usará o depurador C++ nativo que não dá suporte à depuração de modo misto. No entanto, você pode anexar o depurador separadamente:
+
+1. Inicie o projeto C++ sem depuração (**Depurar > Iniciar sem depuração** ou Ctrl + F5).
+1. Selecione **Depurar > Anexar ao Processo...**. Na caixa de diálogo que aparece, selecione o processo apropriado e use o botão **Selecionar...** para abrir a caixa de diálogo **Selecionar Tipo de Código** na qual você pode selecionar o Python:
+
+    ![Selecionando Python como o tipo de depuração ao anexar um depurador](media/mixed-mode-debugging-attach-type.png)
+
+1. Selecione **OK** para fechar essa caixa de diálogo, em seguida, **Anexar** para iniciar o depurador. 
+1. Talvez seja necessário introduzir uma pausa ou atraso adequado no aplicativo C++ para garantir que ele não chame o código Python que você deseja depurar antes que você tenha a chance de anexar o depurador.
 
 ## <a name="mixed-mode-specific-features"></a>Recursos específicos ao modo misto
 
@@ -73,8 +87,7 @@ A janela Pilha de Chamadas mostra os registros de ativação nativo e do Python 
 
 ![Pilha de chamadas combinada](media/mixed-mode-debugging-call-stack.png)
 
-> [!Note]
-> As transições serão exibidas como “[Código Externo]”, sem especificar a direção da transição, se a opção **Ferramentas > Opções > Depuração > Geral > Habilitar Apenas Meu Código** estiver definida.
+As transições serão exibidas como “[Código Externo]”, sem especificar a direção da transição, se a opção **Ferramentas > Opções > Depuração > Geral > Habilitar Apenas Meu Código** estiver definida.
 
 Clicar duas vezes em um quadro de chamada o torna ativo e abre o código-fonte apropriado, se possível. Se o código-fonte não estiver disponível, o quadro ainda ficará ativo e as variáveis locais poderão ser inspecionadas.
 
@@ -94,7 +107,7 @@ Para desabilitar esse recurso, clique com o botão direito do mouse em qualquer 
 
 Tipos C que mostram nós “[Exibição do Python]” (se estiverem habilitados):
 
-- `PyObject `
+- `PyObject`
 - `PyVarObject`
 - `PyTypeObject`
 - `PyByteArrayObject`
@@ -109,12 +122,11 @@ Tipos C que mostram nós “[Exibição do Python]” (se estiverem habilitados)
 - `PyStringObject`
 - `PyUnicodeObject`
 
-“[Exibição do Python]” não é mostrada automaticamente para tipos criados por conta própria. Ao criar extensões para o Python 3.x, geralmente, essa falta não é um problema, pois qualquer objeto, em última análise, tem um campo `ob_base` de um dos tipos acima, o que faz com que “[Exibição do Python]” seja mostrado. 
+“[Exibição do Python]” não é mostrada automaticamente para tipos criados por conta própria. Ao criar extensões para o Python 3.x, geralmente, essa falta não é um problema, pois qualquer objeto, em última análise, tem um campo `ob_base` de um dos tipos acima, o que faz com que “[Exibição do Python]” seja mostrado.
 
 No entanto, para o Python 2.x, cada tipo de objeto normalmente declara seu cabeçalho como uma coleção de campos embutidos e não há nenhuma associação entre os tipos criados personalizados e `PyObject` no nível do sistema de tipos do código C/C++. Para habilitar nós “[Exibição do Python]” para esses tipos personalizados, edite o `PythonDkm.natvis` no [diretório de instalação das ferramentas Python](installation.md#install-locations) e adicione outro elemento ao XML do struct do C ou da classe do C++.
 
 Uma opção alternativa (e melhor) é seguir o [PEP 3123](http://www.python.org/dev/peps/pep-3123/) e usar um campo `PyObject ob_base;` explícito em vez de `PyObject_HEAD`, embora isso nem sempre seja possível por motivos de compatibilidade com versões anteriores.
-
 
 ### <a name="native-values-view-in-python-code"></a>Exibição de valores Nativos no código do Python
 

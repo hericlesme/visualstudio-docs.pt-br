@@ -18,11 +18,11 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7275985d07f9f564dac98ba39e5ec31618dcaac4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="functions-javascript"></a>Funções (JavaScript)
 As funções [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] executam ações. Elas também podem retornar valores. Às vezes, eles são resultados de cálculos ou comparações. Funções também são chamadas de "métodos globais".  
@@ -232,7 +232,7 @@ console.log(f(3, 3, 3));
   
 <a name="Rest"></a>   
 ## <a name="rest-parameters"></a>Parâmetros Rest  
- Parâmetros Rest, especificados pelo operador de espalhamento (), permitem que você transforme argumentos consecutivos em uma chamada de função para uma matriz.  
+ Parâmetros Rest, especificados pelo operador de espalhamento `...`, permitem que você transforme argumentos consecutivos em uma chamada de função para uma matriz.  
   
  Parâmetros Rest eliminam a necessidade do objeto `arguments`. Parâmetros Rest diferem do objeto `arguments` de diversas maneiras, como:  
   

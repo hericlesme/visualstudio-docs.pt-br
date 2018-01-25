@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gerenciando o Python no Serviço de Aplicativo do Azure
 
 O [Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service/) é uma oferta de plataforma como serviço para aplicativos Web, quer eles sejam sites acessados por meio de um navegador, APIs REST usadas por seus próprios clientes ou processamento disparado por evento. O Serviço de Aplicativo dá suporte total ao uso do Python para implementar aplicativos.
 
-O suporte personalizável ao Python no Serviço de Aplicativo do Azure é fornecido como um conjunto de *extensões de site* do Serviço de Aplicativo e cada um contém uma versão específica do tempo de execução do Python. Assim, você pode instalar qualquer pacote desejado diretamente no ambiente, conforme descrito neste tópico. Ao personalizar o ambiente no próprio Serviço de Aplicativo, você não precisa manter pacotes em seus projetos de aplicativo Web ou carregá-los com o código do aplicativo. 
+O suporte personalizável ao Python no Serviço de Aplicativo do Azure é fornecido como um conjunto de *extensões de site* do Serviço de Aplicativo e cada um contém uma versão específica do tempo de execução do Python. Assim, você pode instalar qualquer pacote desejado diretamente no ambiente, conforme descrito neste tópico. Ao personalizar o ambiente no próprio Serviço de Aplicativo, você não precisa manter pacotes em seus projetos de aplicativo Web ou carregá-los com o código do aplicativo.
 
 > [!Tip]
 > Embora o Serviço de Aplicativo tenha o Python 2.7 e o Python 3.4 instalados em pastas raiz no servidor por padrão, você não pode personalizar ou instalar pacotes nesses ambientes, nem deve depender da presença deles. Em vez disso, você deve confiar em uma extensão de site que você controle, conforme descrito neste tópico.
@@ -87,7 +88,7 @@ Comece localizando o caminho completo para o `python.exe` da extensão de site e
 
 Uma extensão de site do Python é instalada no servidor em `d:\home` em uma pasta apropriada para a versão e arquitetura do Python (exceto no caso de algumas versões mais antigas). Por exemplo, o Python 3.6.1 x64 é instalado em `d:\home\python361x64`. Assim, o caminho completo para o interpretador do Python é `d:\home\python361x64\python.exe`.
 
-Para ver o caminho específico no Serviço de Aplicativo, selecione **Extensões** na página do Serviço de Aplicativo e, em seguida, selecione a extensão na lista. 
+Para ver o caminho específico no Serviço de Aplicativo, selecione **Extensões** na página do Serviço de Aplicativo e, em seguida, selecione a extensão na lista.
 
 ![Lista de extensão no Serviço de Aplicativo do Azure](media/python-on-azure-extension-list.png)
 
@@ -165,7 +166,7 @@ O interpretador do Python instalado por meio de uma extensão de site é apenas 
 
 Para instalar pacotes diretamente no ambiente do servidor, use um dos seguintes métodos:
 
-| Métodos | Uso | 
+| Métodos | Uso |
 | --- | --- |
 | [Console do Kudu do Serviço de Aplicativo do Azure](#azure-app-service-kudu-console) | Instala pacotes interativamente. Os pacotes devem ser Python puro ou publicar em wheels. |
 | [API REST do Kudu](#kudu-rest-api) | Pode ser usada para automatizar a instalação de pacote.  Os pacotes devem ser Python puro ou publicar em wheels. |
@@ -199,7 +200,7 @@ O [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) fornece 
     O uso do `requirements.txt` é recomendado porque é fácil reproduzir seu conjunto de pacote exato localmente e no servidor. Lembre-se visitar o console depois de implantar as alterações no `requirements.txt` e execute o comando novamente.
 
 > [!Note]
-> Não há compilador de C no Serviço de Aplicativo, portanto você precisa instalar o wheel para todos os pacotes com módulos de extensão nativos. Muitos pacotes populares fornecem suas próprias rodas. Para pacotes que não o fazem, use `pip wheel <package_name>` em seu computador de desenvolvimento local e, em seguida, carregue a roda para seu site. Para obter um exemplo, consulte [Gerenciando pacotes necessários](python-environments.md#managing-required-packages)
+> Não há compilador de C no Serviço de Aplicativo, portanto você precisa instalar o wheel para todos os pacotes com módulos de extensão nativos. Muitos pacotes populares fornecem suas próprias rodas. Para pacotes que não o fazem, use `pip wheel <package_name>` em seu computador de desenvolvimento local e, em seguida, carregue a roda para seu site. Para obter um exemplo, veja [Gerenciar os pacotes necessários](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>API REST do Kudu
 

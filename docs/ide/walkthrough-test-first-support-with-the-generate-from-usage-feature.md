@@ -1,7 +1,7 @@
 ---
 title: "Instruções passo a passo: desenvolvimento de teste antes da codificação com o recurso gerar com base no uso | Microsoft Docs"
 ms.custom: 
-ms.date: 10/9/2017
+ms.date: 10/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,19 +13,18 @@ ms.topic: article
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
-caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1906e55add4dfb4663e3c7da5e84d7538409db17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 696396260d96e25541cbbef6bac3b4a1be93ea13
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Instruções passo a passo: desenvolvimento de teste antes da codificação com o recurso gerar com base no uso
+
 Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-intellisense.md#generate-from-usage), que oferece suporte ao desenvolvimento de test-first.  
   
  O *desenvolvimento test-first* é uma abordagem para design de software em que você primeiro escreve testes de unidade baseados nas especificações do produto e, em seguida, escreve o código-fonte que é necessário para tornar os testes bem-sucedidos. O Visual Studio é compatível com o desenvolvimento teste antes da codificação (test-first) através da geração de novos tipos e membros no código-fonte ao referenciá-los pela primeira vez em seus casos de teste antes de serem definidos.  

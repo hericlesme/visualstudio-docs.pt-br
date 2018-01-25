@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b33c96844abc9bbf4cc7bcd403626980e0bf37a5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projetos do serviço de nuvem do Azure para Python
 
 O Visual Studio fornece modelos para ajudá-lo a começar a criar Serviços de Nuvem do Azure usando o Python.
 
-Um [serviço de nuvem](http://go.microsoft.com/fwlink/?LinkId=306052) consiste em várias *funções de trabalho* e *funções web*, com cada uma executando uma tarefa separada conceitualmente, mas que podem ser replicadas separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Quanto ao Python, qualquer estrutura Web que dá suporte ao WSGI pode ser usada para gravam um aplicativo desse tipo (com suporte no [Modelo de Projeto Web](template-web.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Geralmente, elas fazem uso de bibliotecas de [dados](http://go.microsoft.com/fwlink/?LinkId=401571) e de [serviço de aplicativo](http://go.microsoft.com/fwlink/?LinkId=401572), que podem ser instaladas com `pip install`&nbsp;[`azure`](http://pypi.org/project/azure).
+Um [serviço de nuvem](http://go.microsoft.com/fwlink/?LinkId=306052) consiste em várias *funções de trabalho* e *funções web*, com cada uma executando uma tarefa separada conceitualmente, mas que podem ser replicadas separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Quanto ao Python, qualquer estrutura Web que dá suporte ao WSGI pode ser usada para gravam um aplicativo desse tipo (com suporte no [Modelo de Projeto Web](template-web.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Geralmente, elas fazem uso de bibliotecas de [dados](http://go.microsoft.com/fwlink/?LinkId=401571) e de [serviço de aplicativo](http://go.microsoft.com/fwlink/?LinkId=401572), que podem ser instaladas com [`pip install azure`](http://pypi.org/project/azure).
 
 Este tópico contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](http://go.microsoft.com/fwlink/?linkid=254360).
 
@@ -80,7 +81,7 @@ Para abrir o assistente para **Publicação**, selecione a função de projeto n
 
 O processo de publicação envolve duas fases. Primeiro, o Visual Studio cria um único pacote que contém todas as funções para o serviço de nuvem. Esse pacote é o que é implantado no Azure, que inicializa uma ou mais máquinas virtuais para cada função e implanta a fonte.
 
-Conforme cada máquina virtual é ativada, ele executa o script `ConfigureCloudService.ps1` e instala as dependências. Por padrão, esse script instala uma versão recente do Python por meio do [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) e os pacotes especificados em um arquivo `requirements.txt`. 
+Conforme cada máquina virtual é ativada, ele executa o script `ConfigureCloudService.ps1` e instala as dependências. Por padrão, esse script instala uma versão recente do Python por meio do [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) e os pacotes especificados em um arquivo `requirements.txt`.
 
 Por fim, as funções de trabalho executam `LaunchWorker.ps1`, que inicia a execução do script do Python; as funções web inicializam o IIS e começam a manipular solicitações da Web.
 
@@ -90,7 +91,7 @@ Para os Serviços de Nuvem, o script `ConfigureCloudService.ps1` usa `pip` para 
 
 Observe que as instâncias do Serviço de Nuvem não incluem compiladores do C e, portanto, todas as bibliotecas com extensões do C devem fornecer binários pré-compilados.
 
-O PIP e suas dependências, bem como os pacotes em `requirements.txt`, são baixados automaticamente e podem ser contados como uso de largura de banda passível de cobrança. Consulte [Gerenciando os pacotes necessários](python-environments.md#managing-required-packages) para obter detalhes sobre como gerenciar arquivos `requirements.txt`.
+O PIP e suas dependências, bem como os pacotes em `requirements.txt`, são baixados automaticamente e podem ser contados como uso de largura de banda passível de cobrança. Consulte [Gerenciando os pacotes necessários](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) para obter detalhes sobre como gerenciar arquivos `requirements.txt`.
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
@@ -98,9 +99,9 @@ Se a função web ou a função de trabalho não funcionar corretamente após a 
 
 - O projeto do Python inclui uma pasta bin\ com (no mínimo):
 
-    - `ConfigureCloudService.ps1`
-    - `LaunchWorker.ps1` (para funções de trabalho)
-    - `ps.cmd`
+  - `ConfigureCloudService.ps1`
+  - `LaunchWorker.ps1` (para funções de trabalho)
+  - `ps.cmd`
 
 - O projeto do Python inclui um arquivo `requirements.txt` que lista todas as dependências (ou, como alternativa, uma coleção de arquivos de roda).
 - Habilite a Área de Trabalho Remota no serviço de nuvem e investigue os arquivos de log.

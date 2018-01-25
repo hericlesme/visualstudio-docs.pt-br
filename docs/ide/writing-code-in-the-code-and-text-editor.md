@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Escrever código no editor de códigos
 O editor do Visual Studio fornece muitos recursos que facilitam escrever e gerenciar seu código e texto. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode localizar o código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com trechos de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio, consulte [Editando seu Código](https://www.visualstudio.com/features/ide-vs) para obter uma visão geral rápida.  
@@ -130,9 +130,10 @@ Para localizar onde os elementos de código específicos são referenciados em t
 ## <a name="customize-the-editor"></a>Personalizar o Editor  
 É possível compartilhar configurações do Visual Studio com outro desenvolvedor, fazer com que suas configurações estejam em conformidade com um padrão ou retornar às configurações padrão do Visual Studio usando o comando **Assistente de Importação e Exportação de Configurações** no menu **Ferramentas**. No **Assistente de Importação e Exportação de Configurações**, é possível alterar configurações gerais selecionadas ou idioma e configurações específicas do projeto.
 
-Para definir novas teclas de atalho ou redefinir as teclas de atalho existentes, vá até **Ferramentas**, **Opções**, **Ambiente**, **Teclado**. Para obter mais informações sobre teclas de atalho, consulte [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+Para definir novas teclas de atalho ou redefinir as teclas de atalho existentes, vá até **Ferramentas**, **Opções**, **Ambiente**, **Teclado**. Para obter mais informações sobre teclas de atalho, consulte [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Para obter mais informações sobre como personalizar o editor, consulte [Personalizando o Editor](../ide/customizing-the-editor.md). Para obter mais informações sobre as opções do editor específicas a um idioma, consulte [Usando o Ambiente de Desenvolvimento do Visual Studio para C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) e [Opções, Editor de texto, JavaScript, Formatação](../ide/reference/options-text-editor-javascript-formatting.md).
+Para obter mais informações sobre como personalizar o editor, consulte [Personalizando o Editor](../ide/customizing-the-editor.md). Para conferir opções do editor específicas a JavaScript, veja [Opções, Editor de Texto, JavaScript, Formatação](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Consulte também  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Consulte também
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)

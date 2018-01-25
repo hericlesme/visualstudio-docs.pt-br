@@ -1,5 +1,6 @@
 ---
 title: "Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Web Python | Microsoft Docs"
+description: "Uma breve introdução ao uso de Python no Visual Studio que compila um aplicativo Web simples usando a estrutura do Falcon."
 ms.custom: 
 ms.date: 01/08/2018
 ms.reviewer: 
@@ -12,12 +13,14 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.workload: python
-ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Web Python
 
@@ -67,7 +70,7 @@ Neste guia de início rápido, no entanto, você usará a biblioteca Falcon para
 
 Para obter mais informações sobre o Falcon, visite [falconframework.org](https://falconframework.org/).
 
-Observe que, em vez de instalar as bibliotecas no ambiente global, os desenvolvedores geralmente criam um “ambiente virtual” no qual instalar bibliotecas para um projeto específico. Muitos modelos de projeto de Python no Visual Studio incluem um arquivo `requirements.txt` que lista as bibliotecas das quais o modelo depende. Criando um projeto de um desses modelos dispara a criação de um ambiente virtual no qual as bibliotecas são instaladas. Para obter mais informações, consulte [Ambientes Python – Ambientes virtuais](../python/python-environments.md#virtual-environments).
+Observe que, em vez de instalar as bibliotecas no ambiente global, os desenvolvedores geralmente criam um “ambiente virtual” no qual instalar bibliotecas para um projeto específico. Muitos modelos de projeto de Python no Visual Studio incluem um arquivo `requirements.txt` que lista as bibliotecas das quais o modelo depende. Criando um projeto de um desses modelos dispara a criação de um ambiente virtual no qual as bibliotecas são instaladas. Para obter mais informações, consulte [Ambientes Python – Ambientes virtuais](../python/python-environments.md#creating-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Adicionar um arquivo de código
 

@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>Gerenciando referências em um projeto
 
@@ -61,13 +61,13 @@ Se você optar por redirecionar projetos do Windows 8.1 para o Windows 10, consu
 
 ### <a name="extension-sdk-references"></a>Referências do SDK da Extensão
 
-Os aplicativos UWP (Plataforma do Windows Universal) em Visual Basic, C#, C++ e JavaScript podem referenciar SDKs de Extensão direcionados ao [!INCLUDE[win81](../debugger/includes/win81_md.md)], desde que esses SDKs de Extensão não usem APIs que foram preteridas no Windows 10. Confira o site do fornecedor do SDK da Extensão para descobrir se ele pode ser referenciado por aplicativos UWP.
+Os aplicativos UWP (Plataforma Universal do Windows) em Visual Basic, C#, C++ e JavaScript podem referenciar os SDKs de Extensão direcionados ao Windows 8.1, desde que esses SDKs de Extensão não usem APIs que foram preteridas no Windows 10. Confira o site do fornecedor do SDK da Extensão para descobrir se ele pode ser referenciado por aplicativos UWP.
 
 Se você determinar que não há suporte para o SDK de Extensão que está sendo referenciado pelo aplicativo, é necessário realizar as seguintes etapas:
 
-1. Observe o nome do projeto que está causando o erro. A plataforma de destino do projeto é indicada entre parênteses ao lado do nome do projeto. Por exemplo, **MyProjectName (Windows 8.1)** significa que o projeto **MyProjectName** se destina à versão da plataforma [!INCLUDE[win81](../debugger/includes/win81_md.md)].
+1. Observe o nome do projeto que está causando o erro. A plataforma de destino do projeto é indicada entre parênteses ao lado do nome do projeto. Por exemplo, **MyProjectName (Windows 8.1)** significa que o projeto **MyProjectName** se destina à versão da plataforma Windows 8.1.
 
-2. Acesse o site do fornecedor que é proprietário do SDK de Extensão sem suporte e instale a versão do SDK de Extensão com dependências que são compatíveis com a versão da plataforma de destino do projeto.
+1. Acesse o site do fornecedor que é proprietário do SDK de Extensão sem suporte e instale a versão do SDK de Extensão com dependências que são compatíveis com a versão da plataforma de destino do projeto.
 
     > [!NOTE]
     > Uma maneira de descobrir se um SDK de Extensão tem dependências em outros SDKs de Extensão é examinar no **Gerenciador de Referências**. Reinicie o Visual Studio, crie um novo projeto de aplicativo UWP de C#, clique com o botão direito do mouse no projeto e escolha **Adicionar Referência**. Acesse a guia **Windows**, a subguia **Extensões** e selecione o SDK de Extensão. Examine o painel à direita no **Gerenciador de Referências**. Se ele tiver dependências, elas serão listadas no painel.
@@ -75,13 +75,13 @@ Se você determinar que não há suporte para o SDK de Extensão que está sendo
     > [!IMPORTANT]
     > Se o projeto tiver como destino o Windows 10 e o SDK de Extensão instalado na etapa anterior tiver uma dependência do Pacote de Tempo de Execução do Microsoft Visual C++, a versão do Pacote de Tempo de Execução do Microsoft Visual C++ compatível com o Windows 10 será v14.0 e ela será instalada com o Visual Studio.
 
-3. Se o SDK de Extensão instalado na etapa anterior tiver dependências de outros SDKs de Extensão, acesse os sites dos fornecedores proprietários das dependências e instale as versões dessas dependências compatíveis com a versão da plataforma de destino do projeto.
+1. Se o SDK de Extensão instalado na etapa anterior tiver dependências de outros SDKs de Extensão, acesse os sites dos fornecedores proprietários das dependências e instale as versões dessas dependências compatíveis com a versão da plataforma de destino do projeto.
 
-4. Reinicie o Visual Studio e abra o aplicativo.
+1. Reinicie o Visual Studio e abra o aplicativo.
 
-5. Clique com o botão direito do mouse no nó **Referências** do projeto que causou o erro e escolha **Adicionar Referência**.
+1. Clique com o botão direito do mouse no nó **Referências** do projeto que causou o erro e escolha **Adicionar Referência**.
 
-6. Clique na guia **Windows** e, em seguida, na subguia **Extensões**, desmarque as caixas de seleção dos SDKs de Extensão antigos e marque as caixas de seleção dos novos SDKs de Extensão. Clique em **OK**.
+1. Clique na guia **Windows** e, em seguida, na subguia **Extensões**, desmarque as caixas de seleção dos SDKs de Extensão antigos e marque as caixas de seleção dos novos SDKs de Extensão. Clique em **OK**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Adicionando uma referência no tempo de design
 
