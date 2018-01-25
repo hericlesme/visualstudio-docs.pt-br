@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0cac283dacb0f63005f67dc279087726de26772
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 2703b526dd0823afa678dbe57eb6cf45e57b6da6
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Depurar o código do Python remotamente no Azure
 
-O [suporte do Python no Visual Studio](installation.md) inclui a capacidade de depurar o código do Python remotamente em execução no Serviço de Aplicativo do Azure. Ao contrário da depuração remota simples, o computador de destino neste cenário não é diretamente acessível por TCP e, portanto, o Visual Studio fornece um proxy que expõe o protocolo do depurador por HTTP. Os projetos criados com o modelo da Web configuram esse proxy automaticamente no arquivo `web.debug.config` gerado. A depuração remota também é habilitada quando você publica uma configuração Depuração do projeto, conforme descrito em [Publicando no Serviço de Aplicativo do Azure](template-web.md#publishing-to-azure-app-service).
+O [suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md) inclui a capacidade de depurar o código do Python remotamente em execução no Serviço de Aplicativo do Azure. Ao contrário da depuração remota simples, o computador de destino neste cenário não é diretamente acessível por TCP e, portanto, o Visual Studio fornece um proxy que expõe o protocolo do depurador por HTTP. Os projetos criados com o modelo da Web configuram esse proxy automaticamente no arquivo `web.debug.config` gerado. A depuração remota também é habilitada quando você publica uma configuração Depuração do projeto, conforme descrito em [Publicando no Serviço de Aplicativo do Azure](template-web.md#publishing-to-azure-app-service).
 
 Como a depuração remota do Azure usa soquetes da Web, os soquetes devem estar habilitados para o Serviço de Aplicativo por meio do [portal do Azure](https://portal.azure.com), acessando **Configurações > Configurações de aplicativo**, definindo **Configurações gerais > Soquetes da Web** como **Ativado** e selecionando **Salvar** para aplicar a alteração. (Observe que as configurações **Depuração** não se aplicam à depuração do Python.)
 

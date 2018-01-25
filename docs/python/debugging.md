@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 5cd67d031cd41a1f36de68d7372fdfcfd6f8e476
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="debugging-your-python-code"></a>Depurando o código do Python
 
@@ -45,9 +45,9 @@ Consulte também os seguintes tópicos sobre depuração específicos ao cenári
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> O Python no Visual Studio dá suporte à depuração sem um projeto. Com um arquivo independente do Python aberto, clique com o botão direito do mouse no editor, selecione **Iniciar com Depuração** e o Visual Studio iniciará o script com o ambiente global padrão (confira [Ambientes do Python](python-environments.md)) sem nenhum argumento. Mas daí em diante, você tem suporte completo à depuração.
+> O Python no Visual Studio dá suporte à depuração sem um projeto. Com um arquivo independente do Python aberto, clique com o botão direito do mouse no editor, selecione **Iniciar com Depuração** e o Visual Studio iniciará o script com o ambiente global padrão (confira [Ambientes do Python](managing-python-environments-in-visual-studio.md)) sem nenhum argumento. Mas daí em diante, você tem suporte completo à depuração.
 >
-> Para controlar o ambiente e os argumentos, crie um projeto para o código, o que é feito facilmente com o modelo de projeto [Do código Python Existente](python-projects.md#creating-a-project-from-existing-files).
+> Para controlar o ambiente e os argumentos, crie um projeto para o código, o que é feito facilmente com o modelo de projeto [Do código Python Existente](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files).
 
 <a name="debugging-with-a-project"></a>
 
@@ -58,7 +58,7 @@ O fluxo de trabalho básico de depuração envolve a definição de pontos de in
 Uma sessão de depuração é iniciada com o comando **Depurar > Iniciar Depuração**, o botão **Iniciar** na barra de ferramentas ou a tecla F5. Essas ações abrirão o arquivo de inicialização do projeto (mostrado em negrito no Gerenciador de Soluções) com o ambiente ativo do projeto e os argumentos de linha de comando ou caminhos de pesquisa especificados em Propriedades do Projeto (consulte [Opções de depuração de projeto](#project-debugging-options)). Se, no entanto, por alguma razão, você não tiver um arquivo de inicialização definido, uma janela de saída do Python aparecerá e desaparecerá rapidamente. Nesse caso, clique com o botão direito do mouse no arquivo apropriado e selecione **Definir como Arquivo de Inicialização**.
 
 > [!Note]
-> O depurador sempre é iniciado com o ambiente ativo do Python para o projeto. Para alterar o ambiente, torne outro ambiente ativo, conforme descrito em [Ambientes do Python](python-environments.md).
+> O depurador sempre é iniciado com o ambiente ativo do Python para o projeto. Para alterar o ambiente, torne outro ambiente ativo, conforme descrito em [Ambientes do Python](managing-python-environments-in-visual-studio.md).
 
 ### <a name="breakpoints"></a>Pontos de interrupção
 

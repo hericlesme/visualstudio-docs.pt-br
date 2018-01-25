@@ -7,41 +7,32 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.texteditor
 dev_langs:
 - JScript
 - VB
 - CSharp
 helpviewer_keywords:
-- code, editing
-- code editor, syntax coloring
-- code editor [Visual Studio]
-- brace matching
-- code editor, line numbers
-- code editor, brace matching
-- line numbers
-- syntax coloring
-- code editor
-- code files
-- code
-ms.assetid: cb53bb9b-5b76-4759-b9b8-7bf32298bcbb
-caps.latest.revision: "44"
+- open folder [Visual Studio]
+- anycode [Visual Studio]
+- projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 252f09a8a2322bca4f94b9d631ca2c6da6b14824
+ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/18/2018
 ---
-# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desenvolver código no Visual Studio sem projetos nem soluções  
+# <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desenvolver código no Visual Studio sem projetos nem soluções
+
 No Visual Studio 2017, é possível abrir códigos de quase todos os tipos de projeto baseado em diretório no Visual Studio sem a necessidade de um arquivo de solução ou de projeto. Isso significa que você pode, por exemplo, encontrar um projeto de código no Git, cloná-lo, abri-lo diretamente no Visual Studio e começar o desenvolvimento sem precisar criar uma solução ou um projeto.  
 
 Não apenas é possível editar o código e compilá-lo no Visual Studio, mas também navegar pelo código (por exemplo, usando o comando Navegar Para). O código será exibido com a colorização de sintaxe e, em muitos casos, incluirá o preenchimento de declaração básico e depuração, completo com pontos de interrupção. Algumas linguagens incluirão ainda mais funcionalidades. Consulte [Criar configurações do editor portáteis e personalizadas](create-portable-custom-editor-options.md) para obter mais informações.  
 
-## <a name="open-code-anywhere"></a>Abrir o código em qualquer lugar  
+## <a name="open-code-anywhere"></a>Abrir o código em qualquer lugar
+
 Você pode abrir o código no Visual Studio das seguintes maneiras:  
 
 - Na barra de menus do Visual Studio, escolha **Arquivo**, **Abrir**, **Pasta** e, em seguida, navegue para a localização do código.  
@@ -52,7 +43,8 @@ Você pode abrir o código no Visual Studio das seguintes maneiras:
 
 - Código aberto clonado de um repositório GitHub.  
 
-### <a name="to-open-code-from-a-cloned-github-repo"></a>Para abrir o código de um repositório GitHub clonado  
+### <a name="to-open-code-from-a-cloned-github-repo"></a>Para abrir o código de um repositório GitHub clonado
+
 O exemplo a seguir mostra como clonar um repositório GitHub e, em seguida, abrir seu código no Visual Studio. Para seguir este procedimento, você deve ter uma conta do GitHub e o Git para Windows instalado no sistema. Consulte [Inscrevendo em uma nova conta do GitHub](https://help.github.com/articles/signing-up-for-a-new-github-account/) e o [Git para Windows](https://git-for-windows.github.io/) para obter mais informações.  
 
 1. Acesse o repositório que deseja clonar no GitHub.  
@@ -88,7 +80,8 @@ O exemplo a seguir mostra como clonar um repositório GitHub e, em seguida, abri
 |---------|---------|
 |  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) sobre como clonar e abrir o código de um repositório do GitHub no Visual Studio. |
 
-## <a name="debug-your-code"></a>Depurar seu código  
+## <a name="debug-your-code"></a>Depurar seu código
+
 É possível depurar o código no Visual Studio sem um projeto ou uma solução. Para depurar algumas linguagens, talvez seja necessário especificar um *arquivo de inicialização* válido no projeto de código, como um script, executável ou projeto. O Visual Studio executa esse código especificado primeiro ao depurar o código.  
 
 A caixa de listagem suspensa ao lado do botão Iniciar na barra de ferramentas lista todos os itens de inicialização detectados pelo Visual Studio, bem como os itens escolhidos por você especificamente em uma pasta.  
@@ -107,31 +100,36 @@ Atualmente, o Visual Studio dá suporte à depuração para as seguintes linguag
 
 - Qualquer executável com arquivos PDB (Depurador do Python).  
 
-### <a name="to-debug-nodejs-and-python"></a>Para depurar o Node.js e o Python:  
+### <a name="to-debug-nodejs-and-python"></a>Para depurar o Node.js e o Python:
+
 1. Instale o Node.js, as Ferramentas Python ou o Visual Studio 2017 e o tempo de execução do Node.js.  
 
 1. No menu de contexto de um arquivo JavaScript no Gerenciador de Soluções, escolha o comando **Definir como Item de Inicialização**.  
 
 1. Escolha a tecla **F5** para iniciar a depuração.  
 
-### <a name="to-debug-msbuild-projects"></a>Para depurar projetos do MSBuild  
+### <a name="to-debug-msbuild-projects"></a>Para depurar projetos do MSBuild
+
 1. No menu do Visual Studio, escolha **Depurar**. No menu suspenso, escolha o projeto ou selecione o projeto ou o arquivo que você deseja exibir como o item de inicialização no Gerenciador de Soluções.  
 
 1. Escolha a tecla **F5** para iniciar a depuração.  
 
-### <a name="to-debug-executable-files"></a>Para depurar arquivos executáveis  
+### <a name="to-debug-executable-files"></a>Para depurar arquivos executáveis
+
 1. No menu do Visual Studio, escolha **Depurar**. No menu suspenso, escolha o projeto ou selecione o projeto ou o arquivo que você deseja exibir como o item de inicialização no Gerenciador de Soluções.  
 
 1. Escolha a tecla **F5** para iniciar a depuração.  
 
 ## <a name="enable-custom-build-tools"></a>Habilitar ferramentas de build personalizadas
+
 O Visual Studio sabe como executar várias linguagens diferentes, mas não como executar tudo. Se o Visual Studio souber como executar a linguagem, será possível executar o código imediatamente. Caso você tente executar o código, mas o Visual Studio não saiba como executá-lo, uma barra de informações solicita a designação de um arquivo na base de código para atuar como o item de inicialização.  
 
 No entanto, se a base de código usar ferramentas de build personalizadas não reconhecidas pelo Visual Studio, provavelmente, você não poderá executar e depurar o código no Visual Studio antes de concluir algumas etapas adicionais. Você deve especificar um tipo de arquivo executável válido, como um compilador, juntamente com quaisquer parâmetros e argumentos personalizados necessários para a linguagem. Para habilitar isso, o Visual Studio fornece *tarefas de build*. É possível criar uma tarefa de build para especificar todos os itens que uma linguagem precisa para compilar e executar seu código.  
 
 Você também pode criar tarefas de build arbitrárias que podem fazer quase tudo o que você deseja. Por exemplo, é possível criar uma tarefa para listar o conteúdo de uma pasta ou renomear um arquivo. Se preferir, é possível criar tarefas de build personalizadas mais direcionadas que executam ações como compilação do projeto usando argumentos específicos. As etapas a seguir mostram como criar ambos os tipos de tarefas de build.  
 
-#### <a name="to-create-an-arbitrary-build-task"></a>Para criar uma tarefa de build arbitrária  
+#### <a name="to-create-an-arbitrary-build-task"></a>Para criar uma tarefa de build arbitrária
+
 1. Escolha o arquivo ou a pasta do projeto no Gerenciador de Soluções na qual você deseja a tarefa e, no arquivo ou no menu de contexto (acesso por clique com o botão direito do mouse) da pasta, escolha **Configurar Tarefas**.  
 
   ![Configurar tarefas](./media/VSIDE_Code_Config_Task.png)
@@ -166,6 +164,7 @@ Você também pode criar tarefas de build arbitrárias que podem fazer quase tud
 1. Escolha o novo comando **Listar saídas** para executar a tarefa.  
 
 ### <a name="to-create-a-custom-build-task"></a>Para criar uma tarefa de build personalizada
+
 Neste procedimento, adicionaremos duas tarefas de build personalizadas que usam nMake para compilar e limpar o código.  
 
 1. Escolha um arquivo do projeto no Gerenciador de Soluções que você desejará designar mais tarde como o item de inicialização. No menu de contexto (acesso por clique com o botão direito do mouse) do arquivo, escolha **Configurar Tarefas**.  
@@ -222,15 +221,17 @@ As tarefas de build personalizadas podem ser adicionadas a arquivos individuais 
 
 O Visual Studio dá suporte à substituição `$variable` do VSCode na raiz de tasks.vs.json, além de variáveis de ambiente (como `$env.var`) ou chaves.  
 
-## <a name="specify-build-output"></a>Especificar a saída de build  
+## <a name="specify-build-output"></a>Especificar a saída de build
+
 Se o projeto precisar ser compilado, será possível adicionar uma marca adicional chamada `output` ao arquivo tasks.vs.json. Vejamos um exemplo.  
 
 `"output": "${workspaceRoot}\\bin\\hellomake.exe"`
 
 A especificação da localização de saída notifica o Visual Studio em que localização ele deverá encontrar a saída de build do projeto.  
 
-## <a name="tasksvsjson-file-location"></a>Localização do arquivo tasks.vs.json  
-Por padrão, o arquivo tasks.vs.json está localizado em uma pasta oculta chamada `.vs`. Para exibir arquivos ocultos no Visual Studio, escolha o botão **Mostrar Todos os Arquivos** na barra de ferramentas do Gerenciador de Soluções.  
+## <a name="tasksvsjson-file-location"></a>Localização do arquivo tasks.vs.json
+
+Por padrão, o arquivo tasks.vs.json está localizado em uma pasta oculta chamada `.vs`. Para exibir arquivos ocultos no Visual Studio, escolha o botão **Mostrar Todos os Arquivos** na barra de ferramentas do Gerenciador de Soluções.
 
 ![Comando arbitrário de tarefa de build](./media/VSIDE_Code_Tasks_FileLocation.png)
 
@@ -239,4 +240,5 @@ O arquivo tasks.vs.json é oculto porque a maioria dos usuários geralmente não
 Outros arquivos .json podem estar presentes na pasta .vs, mas os únicos que você deverá mover são os arquivos tasks.vs.json e launch.vs.json (se houver). O arquivo launch.vs.json configura o depurador do Visual Studio, enquanto o arquivo tasks.vs.json configura o build no Visual Studio.  
 
 ## <a name="see-also"></a>Consulte também
+
 [Escrevendo código no editor de código e texto](../ide/writing-code-in-the-code-and-text-editor.md)

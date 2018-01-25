@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Configurando o teste de unidade para o código do Python
 
@@ -35,7 +35,7 @@ Este tópico fornece uma breve descrição das funcionalidades de teste de unida
 
 Por convenção, o Visual Studio identifica os testes como métodos cujos nomes começam com `test`. Para ver esse comportamento, faça o seguinte:
 
-1. Abra um [projeto do Python](python-projects.md) carregado no Visual Studio, clique com o botão direito do mouse no projeto, selecione **Adicionar > Novo Item...** e selecione **Teste de Unidade do Python** seguido por **Adicionar**.
+1. Abra um [projeto do Python](managing-python-projects-in-visual-studio.md) carregado no Visual Studio, clique com o botão direito do mouse no projeto, selecione **Adicionar > Novo Item...** e selecione **Teste de Unidade do Python** seguido por **Adicionar**.
 
 1. Essa ação cria um arquivo `test1.py` com um código que importa o módulo `unittest` padrão, deriva uma classe de teste de `unittest.TestCase` e invoca `unittest.main()` se o script é executado diretamente:
 
@@ -92,7 +92,7 @@ Para iniciar a depuração, defina um ponto de interrupção inicial no código,
 
 ![Depurando um teste](media/unit-test-debugging.png)
 
-Também é possível usar os comandos **Analisar Cobertura de Código nos Testes Selecionados** e **Teste de Perfil**, dependendo da versão do Visual Studio (consulte a [Matriz de recursos](python-in-visual-studio.md#features-matrix)).
+Também é possível usar os comandos **Analisar Cobertura de Código nos Testes Selecionados** e **Teste de Perfil**, dependendo da versão do Visual Studio (consulte a [Matriz de recursos](overview-of-python-tools-for-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Problemas Conhecidos
 

@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 518f952f4b983acbcd3d2f508126f5298e16d579
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="editing-python-code"></a>Editando o código do Python
 
-Os desenvolvedores passam muito tempo no editor de código, portanto o [Suporte a Python no Visual Studio](installation.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação. 
+Os desenvolvedores passam muito tempo no editor de código, portanto o [Suporte a Python no Visual Studio](installing-python-support-in-visual-studio.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação. 
 
 Neste tópico:
 
@@ -33,7 +33,7 @@ Neste tópico:
 
 Para obter uma documentação geral sobre como editar o código no Visual Studio, consulte [Escrevendo código no editor de código e de texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte também [Estrutura de tópicos no Visual Studio](../ide/outlining.md), que ajuda você a manter o foco em seções específicas do código. O suporte do Python inclui o uso do Pesquisador de Objetos do Visual Studio (**Exibir > Outras Janelas > Pesquisador de Objetos** ou Ctrl+W, J) para inspecionar as classes definidas em cada módulo e as funções definidas nessas classes. 
 
-O editor também é integrado à janela interativa no Visual Studio, tornando mais fácil trocar o código entre as duas. Consulte [Etapa 3 do tutorial: usando a janela interativa REPL](vs-tutorial-01-03.md) e [Usando a janela interativa – comando Enviar código para interativa](interactive-repl.md#send-code-to-interactive-command) para obter detalhes.
+O editor também é integrado à janela interativa no Visual Studio, tornando mais fácil trocar o código entre as duas. Consulte [Etapa 3 do tutorial: usando a janela interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usando a janela interativa – comando Enviar código para interativa](interactive-repl.md#send-code-to-interactive-command) para obter detalhes.
 
 Para uma introdução à edição de código do Python, consulte [Editando o código do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy 2min30s):
 
@@ -41,7 +41,7 @@ Para uma introdução à edição de código do Python, consulte [Editando o có
 
 ## <a name="intellisense"></a>IntelliSense
 
-O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). Para melhorar o desempenho, o IntelliSense depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do Gerenciador de Soluções) da guia **IntelliSense** (consulte [Ambientes do Python](python-environments.md)). 
+O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). Para melhorar o desempenho, o IntelliSense depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do Gerenciador de Soluções) da guia **IntelliSense** (consulte [Ambientes do Python](managing-python-environments-in-visual-studio.md)). 
 
 ### <a name="completions"></a>Preenchimentos
 

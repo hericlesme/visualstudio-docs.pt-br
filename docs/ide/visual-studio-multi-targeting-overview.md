@@ -1,7 +1,7 @@
 ---
 title: Direcionamento para .NET Framework no Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: c3d388238b443fcb717502a893a674f99a315f38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multiplataforma no Visual Studio
 
@@ -70,9 +70,6 @@ Ao criar um projeto, selecione a versão [!INCLUDE[dnprdnshort](../code-quality/
 ## <a name="resolving-system-and-user-assembly-references"></a>Resolvendo referências de assembly do sistema e do usuário
 
 Para definir uma versão do .NET Framework como destino, é necessário primeiro instalar as referências de assembly apropriadas. É possível baixar pacotes de desenvolvedor para diferentes versões do .NET Framework na página de [downloads do .NET](https://www.microsoft.com/net/download/windows).
-
-> [!NOTE]
-> Se seu destino é o .NET Framework 4 ou 3.5 e você deseja saber mais sobre o Client Profile e quando usá-lo, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/library/cc656912\(v=vs.100\).aspx) na documentação do .NET Framework 4.
 
 A caixa de diálogo **Adicionar Referência** desabilita assemblies do sistema que não pertencem à versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino, para que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos .dll incluídos em uma versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].) As referências que pertencem a uma versão do Framework posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não podem ser adicionados. Se você desejar habilitar essa referência, redefina o destino [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] do projeto para um que inclua a referência.  Para obter mais informações, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 

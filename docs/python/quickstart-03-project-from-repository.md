@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Início Rápido: clonar um repositório de código do Python no Visual Studio
 
-Depois de [instalar o suporte ao Python no Visual Studio 2017](installation.md), você poderá facilmente clonar um repositório de código do Python e criar um projeto com base nele.
+Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python-support-in-visual-studio.md), você poderá facilmente clonar um repositório de código do Python e criar um projeto com base nele.
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installation.md),
 14. Execute o programa novamente para ver se a primeira verificação passa e o programa é interrompido no próximo koan. Continue corrigindo os erros e executando novamente o programa se quiser.
 
 > [!Important]
-> Neste guia de início rápido, você criou um clone direto do repositório *python_koans* no GitHub. Esse tipo de repositório é protegido pelo autor contra alterações diretas, portanto, a tentativa de confirmar as alterações no repositório falhará. Na prática, os desenvolvedores criam fork desse tipo de repositório em suas próprias contas do GitHub, fazem as alterações ali mesmo e, em seguida, criam solicitações de pull para enviar essas alterações para o repositório original. Essas etapas estão descritas na [Etapa 6 do tutorial – trabalhando com o Git](vs-tutorial-01-06.md).
+> Neste guia de início rápido, você criou um clone direto do repositório *python_koans* no GitHub. Esse tipo de repositório é protegido pelo autor contra alterações diretas, portanto, a tentativa de confirmar as alterações no repositório falhará. Na prática, os desenvolvedores criam fork desse tipo de repositório em suas próprias contas do GitHub, fazem as alterações ali mesmo e, em seguida, criam solicitações de pull para enviar essas alterações para o repositório original. Essas etapas estão descritas na [Etapa 6 do tutorial – trabalhando com o Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Tutorial: trabalhando com o Python no Visual Studio](vs-tutorial-01-01.md)
+> [Tutorial: trabalhando com o Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criando um ambiente para um interpretador do Python existente](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Instalar o suporte do Python no Visual Studio 2015 e anterior](installation.md).
-- [Locais de instalação](installation.md#install-locations).
+- [Criando um ambiente para um interpretador do Python existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Instalar o suporte do Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md).
+- [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations).

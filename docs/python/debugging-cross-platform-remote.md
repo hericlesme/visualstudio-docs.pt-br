@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: df8e23f0544571aa07e8b013c62922e1a69868d2
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 0d7c6644dc3f52629ff91d2f6b5dd44dbdba6b3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
 
@@ -38,7 +38,7 @@ Os itens a seguir são necessários para acompanhar esse passo a passo:
 - Um computador remoto que execute o Python em um sistema operacional como o Mac OSX ou Linux.
 - A porta 5678 (entrada) aberta no firewall desse computador, que é o padrão para a depuração remota.
 
-É possível criar facilmente [máquinas virtuais do Linux no Azure](/azure/virtual-machines/linux/creation-choices) e [acessá-las usando a Área de Trabalho Remota](/azure/virtual-machines/linux/use-remote-desktop) do Windows. É conveniente um Ubuntu para a VM, pois o Python é instalado por padrão. Caso contrário, consulte a lista em [Instalar um interpretador do Python de sua escolha](python-environments.md#selecting-and-installing-python-interpreters) para obter mais locais de download do Python.
+É possível criar facilmente [máquinas virtuais do Linux no Azure](/azure/virtual-machines/linux/creation-choices) e [acessá-las usando a Área de Trabalho Remota](/azure/virtual-machines/linux/use-remote-desktop) do Windows. É conveniente um Ubuntu para a VM, pois o Python é instalado por padrão. Caso contrário, consulte a lista em [Instalar um interpretador do Python de sua escolha](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) para obter mais locais de download do Python.
 
 Para obter detalhes sobre como criar uma regra de firewall para uma VM do Azure, consulte [Abrir portas para uma VM no Azure usando o Portal do Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 

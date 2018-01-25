@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Você pode definir pontos de interrupção quando você deseja interromper a execução do depurador, talvez para ver o estado de variáveis de código ou para examinar a pilha de chamadas. Eles são uma das técnicas de depuração mais importantes na caixa de ferramentas do desenvolvedor.  
@@ -160,6 +160,9 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
  Se você definir uma condição de ponto de interrupção com sintaxe inválida, será exibida uma mensagem de aviso. Se você especificar uma condição de ponto de interrupção com sintaxe válida mas semântica inválida, uma mensagem de aviso aparecerá na primeira vez em que o ponto de interrupção for atingido. Nos dois casos, o depurador interrompe a execução quando o ponto de interrupção inválido é atingido. O ponto de interrupção é ignorado somente se a condição é válida e avalia como `false`.  
   
  A condição pode ser qualquer expressão válida que seja reconhecida pelo depurador. Para obter mais informações sobre expressões válidas, consulte [expressões no depurador](../debugger/expressions-in-the-debugger.md).  
+
+> [!NOTE]
+> Você pode usar **CTRL + Enter** para fechar o **configurações de ponto de interrupção** janela.
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Usando IDs de objeto em condições de ponto de interrupção (c# e F #)  
  Há momentos em que você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira descobrir por que um objeto foi inserido mais de uma vez em uma coleção. Em c# e F #, você pode criar IDs de objeto para instâncias específicas de [tipos de referência](/dotnet/csharp/language-reference/keywords/reference-types) e usá-los em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  Para criar uma ID de objeto, faça o seguinte:  
@@ -232,20 +235,6 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
 ## <a name="export-and-import-breakpoints"></a>Pontos de interrupção de importação e exportação  
  Você pode exportar um ponto de interrupção em um arquivo XML, clicando duas vezes no ponto de interrupção e selecionando **exportar**. O arquivo é salvo por padrão no diretório da solução. Para importar os pontos de interrupção, abra o **pontos de interrupção** janela (**CTRL + ALT + B**) e na barra de ferramentas, clique na seta para a direita (a dica de ferramenta é **importar pontos de interrupção de um arquivo**) .  
   
-## <a name="troubleshoot"></a>Solucionar problemas de pontos de interrupção 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Excluí um ponto de interrupção, mas continuar a pressionar ele quando iniciar a depuração novamente  
- Se você excluir um ponto de interrupção durante a depuração, em alguns casos pode atingir o ponto de interrupção novamente na próxima vez que você iniciar a depuração. Para interromper a alcançar este ponto de interrupção, verifique se todas as instâncias do ponto de interrupção são removidas do **pontos de interrupção** janela.  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>O depurador não pode localizar a versão correta do arquivo de origem de um ponto de interrupção  
- Se um arquivo de origem tiver sido alterado e se a fonte não corresponder mais ao código que você estiver depurando, o depurador poderá localizar o arquivo de origem que corresponda a um ponto de interrupção, mesmo se o arquivo de origem existir.  
-  
-1.  Se você quiser que o Visual Studio para exibir o código-fonte que não corresponde à versão você está depurando, escolha **Depurar > Opções e configurações**. Sobre o **depuração/geral** página, desmarque o **requer arquivos de origem que correspondam exatamente à versão original** opção.  
-  
-2.  Você também pode associar o ponto de interrupção ao arquivo de origem. Selecione o ponto de interrupção e escolha **condições** no menu de contexto. Verificar **permitir que o código-fonte seja diferente do original** no **configurações de ponto de interrupção** janela.  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>Os pontos de interrupção não funcionam em uma DLL  
- Você não pode definir um ponto de interrupção em um arquivo de origem quando o depurador não carregou informações de depuração do módulo no qual o código está localizado. Os sintomas podem incluir mensagens como **o ponto de interrupção não será definido**. O glifo de ponto de interrupção Aviso aparece no local do ponto de interrupção. No entanto, esses pontos de interrupção de Aviso tornam-se pontos de interrupção reais quando o código é carregado. Para obter mais informações sobre como carregar símbolos, consulte [especificar símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
 ## <a name="see-also"></a>Consulte também  
- [Navegar pelo Código com o Depurador](../debugger/navigating-through-code-with-the-debugger.md)
+[Solucionar problemas de pontos de interrupção no depurador do Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+[Navegar pelo Código com o Depurador](../debugger/navigating-through-code-with-the-debugger.md)

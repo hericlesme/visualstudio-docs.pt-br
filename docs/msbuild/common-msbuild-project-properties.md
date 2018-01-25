@@ -1,7 +1,7 @@
 ---
 title: Propriedades de projeto comuns do MSBuild | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-sdk
@@ -23,11 +23,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b78c2c1276f04a53a4f7a01e70a7d98efdba0514
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 A tabela a seguir lista propriedades frequentemente usadas que são definidas nos arquivos de projeto do Visual Studio ou incluídas nos arquivos .targets que o MSBuild fornece.  
@@ -75,12 +75,11 @@ A tabela a seguir lista propriedades frequentemente usadas que são definidas no
 |IntermediateOutputPath|O caminho de saída completo intermediário conforme derivado de `BaseIntermediateOutputPath`, se nenhum caminho for especificado. Por exemplo, \obj\debug\\. Se essa propriedade for substituída, então a configuração de `BaseIntermediateOutputPath` não terá efeito.|  
 |KeyContainerName|O nome do contêiner de chave de nome forte.|  
 |KeyOriginatorFile|O nome do arquivo de chave de nome forte.|  
-|NoWin32Manifest|Determina se o compilador gera o manifesto Win32 padrão no assembly de saída. O valor padrão de `false` significa que o manifesto Win32 padrão é gerado para todos os aplicativos. Esta propriedade é equivalente à opção do compilador `/nowin32manifest` de vbc.exe.|  
 |ModuleAssemblyName|O nome do assembly ao qual o módulo compilado será incorporado. A propriedade é equivalente à opção do compilador `/moduleassemblyname`.|  
 |NoLogo|Um valor booliano que indica se você deseja que o logotipo do compilador seja desligado. Essa propriedade é equivalente à opção do compilador `/nologo`.|  
 |NoStdLib|Um valor booliano que indica se é necessário evitar a referência à biblioteca padrão (mscorlib.dll). O valor padrão é `false`.|  
 |NoVBRuntimeReference|Um valor booliano que indica se o tempo de execução [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (em Microsoft.VisualBasic.dll) deve ser incluído como referência no projeto.|  
-|NoWin32Manifest|Um valor booliano que indica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. Aplica-se somente a projetos do Visual Studio que direcionam [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Em projetos implantados usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro, esse elemento será ignorado. `False` (o valor padrão) especifica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. `True` especifica se as informações de manifesto de UAC não serão inseridas.<br /><br /> Essa propriedade é aplicável somente a projetos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que direcionam [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Em projetos implantados usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro, essa propriedade será ignorada.<br /><br /> Você deverá adicionar NoWin32Manifest somente se não quiser que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] insira qualquer manifesto no executável do aplicativo. Esse processo é chamado *virtualização*. Para usar a virtualização, defina `<ApplicationManifest>` em conjunto com `<NoWin32Manifest>` da seguinte maneira:<br /><br /> -   Para projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], remova o nó `<ApplicationManifest>`. (Em projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `<NoWin32Manifest>` é ignorado quando um nó `<ApplicationManifest>` existe.)<br />-   Para projetos [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], defina `<ApplicationManifest>` como `False` e `<NoWin32Manifest>` como `True`. (Em projetos [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], `<ApplicationManifest>` substitui `<NoWin32Manifest>`.)|  
+|NoWin32Manifest|Um valor booliano que indica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. Aplica-se somente a projetos do Visual Studio que direcionam [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Em projetos implantados usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro, esse elemento será ignorado. `False` (o valor padrão) especifica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. `True` especifica se as informações de manifesto de UAC não serão inseridas.<br /><br /> Essa propriedade é aplicável somente a projetos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que direcionam [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Em projetos implantados usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro, essa propriedade será ignorada.<br /><br /> Você deverá adicionar NoWin32Manifest somente se não quiser que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] insira qualquer manifesto no executável do aplicativo. Esse processo é chamado *virtualização*. Para usar a virtualização, defina `<ApplicationManifest>` em conjunto com `<NoWin32Manifest>` da seguinte maneira:<br /><br /> -   Para projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], remova o nó `<ApplicationManifest>`. (Em projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `<NoWin32Manifest>` é ignorado quando um nó `<ApplicationManifest>` existe.)<br />-   Para projetos [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], defina `<ApplicationManifest>` como `False` e `<NoWin32Manifest>` como `True`. (Em projetos [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], `<ApplicationManifest>` substitui `<NoWin32Manifest>`.)<br /> Esta propriedade é equivalente à opção do compilador `/nowin32manifest` de vbc.exe.|  
 |Otimizar|Um valor booliano que, quando definido como `true`, permite otimizações do compilador. Essa propriedade é equivalente à opção do compilador `/optimize`.|  
 |OptionCompare|Especifica como são feitas comparações de cadeia de caracteres. Os valores válidos são "binary" ou "text". Esta propriedade é equivalente à opção do compilador `/optioncompare` de vbc.exe.|  
 |OptionExplicit|Um valor booliano que, quando definido como `true`, exige a declaração explícita de variáveis no código-fonte. Essa propriedade é equivalente à opção do compilador `/optionexplicit`.|  

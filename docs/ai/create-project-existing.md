@@ -24,7 +24,7 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), �
 8. Se desejar, execute o programa pressionando CTRL + F5 ou selecionando **Depurar > Iniciar Sem Depuração**. 
 
 > [!div class="nextstepaction"]
-> [Tutorial: trabalhando com o Python no Visual Studio](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [Tutorial: trabalhando com o Python no Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Consulte também
 

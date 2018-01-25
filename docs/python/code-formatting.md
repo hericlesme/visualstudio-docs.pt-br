@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aa91005774baf1a3154418a5e0b7780d0238b69
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 96ef5d340a961671b199e521b2d6ee5d05794160
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="formatting-python-code"></a>Formatando o código do Python
 
@@ -30,7 +30,7 @@ O Visual Studio permite reformatar rapidamente o código para que ele correspond
 
 As opções são definidas por meio de **Ferramentas > Opções > Editor de Texto > Python > Formatação** e suas guias aninhadas e, por padrão, são definidas para corresponderem a um superconjunto do [Guia de estilo do PEP 8](http://www.python.org/dev/peps/pep-0008/). A guia **Geral** determina quando a formatação é aplicada, as configurações das outras três guias são descritas neste tópico.
 
-O [suporte do Python no Visual Studio](installation.md) também adiciona o comando útil [Preencher Parágrafo de Comentário](#fill-comment-paragraph-command) ao menu **Editar > Avançado**, conforme descrito a seguir.
+O [suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md) também adiciona o comando útil [Preencher Parágrafo de Comentário](#fill-comment-paragraph-command) ao menu **Editar > Avançado**, conforme descrito a seguir.
 
 ## <a name="spacing"></a>Espaçamento
 

@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: bf04cbfaff76747c952f9cf86e93fea47be2e91f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Trabalhando com a Janela Interativa do Python
 
@@ -38,7 +38,7 @@ O Visual Studio tem diversos modos REPL do Python à sua disposição:
 
 Este tópico descreve os modos REPL **Padrão** e **Depuração**. Para obter detalhes sobre os modos do IPython, consulte [Usando o REPL do IPython](interactive-repl-ipython.md).
 
-Para um passo a passo detalhado com exemplos, incluindo as interações com o editor, como CTRL+ENTER, consulte [Etapa 3 do tutorial: usando a janela interativa REPL](vs-tutorial-01-03.md). Para um vídeo de introdução, consulte [Janela interativa do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy 2min22s).
+Para um passo a passo detalhado com exemplos, incluindo as interações com o editor, como CTRL+ENTER, consulte [Etapa 3 do tutorial: usando a janela interativa REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Para um vídeo de introdução, consulte [Janela interativa do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy 2min22s).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
