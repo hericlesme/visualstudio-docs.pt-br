@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7f5bd86a9fe8d67111886e7578187747b1ea3ec8
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b3f1c171f86c9af82e532abf948ee6199a16d0e1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-decorators"></a>Propriedades de decoradores
 Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparecer em conectores ou formas no diagrama. As tabelas a seguir mostram as propriedades para os três tipos de decorador. Algumas das propriedades aparecem somente em decoradores forma ou somente em decoradores de conector.  
@@ -28,7 +28,7 @@ Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparec
 |--------------|-----------------|-------------|  
 |DisplayName|O nome do decorador que será exibido no designer de gerado.|Expanda recolher decorador|  
 |Nome|O nome do decorador.|ExpandCollapseDecorator|  
-|Observações|Anotações informais que estão associadas este decorador.|\<Nenhum >|  
+|Observações|Anotações informais que estão associadas este decorador.|\<none>|  
 |HorizontalOffset|O deslocamento horizontal, em relação à posição padrão de decorador, em polegadas. (Em formas somente.)|0|  
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão de decorador, em polegadas. (Em formas somente.)|0|  
 |OffsetFromLine|O deslocamento do decorador de linha, em relação a sua posição padrão, em polegadas. (Nos conectores somente.)|0|  
@@ -39,10 +39,10 @@ Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparec
   
 |Propriedade|Descrição|Padrão|  
 |--------------|-----------------|-------------|  
-|DefaultIcon|O caminho do arquivo de ícone ou imagem a ser exibida.|\<Nenhum >|  
+|DefaultIcon|O caminho do arquivo de ícone ou imagem a ser exibida.|\<none>|  
 |DisplayName|O nome do decorador para ser exibido no designer de gerado.|Ícone decorador|  
 |Nome|O nome do decorador.|IconDecorator|  
-|Observações|Anotações informais que estão associadas com o decorador.|\<Nenhum >|  
+|Observações|Anotações informais que estão associadas com o decorador.|\<none>|  
 |HorizontalOffset|O deslocamento horizontal, em relação à posição padrão de decorador, em polegadas. (Em formas somente.)|0|  
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão de decorador, em polegadas. (Em formas somente.)|0|  
 |OffsetFromLine|O deslocamento do decorador de linha, em relação a sua posição padrão, em polegadas. (Nos conectores somente.)|0|  
@@ -58,7 +58,7 @@ Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparec
 |FontSize|O tamanho da fonte para o texto que é exibido no decorador.|8|  
 |FontStyle|O estilo da fonte para o texto que é exibido no decorador.|Normal|  
 |Nome|O nome do decorador.|Rotular|  
-|Observações|Anotações informais que estão associadas com o decorador.|\<Nenhum >|  
+|Observações|Anotações informais que estão associadas com o decorador.|\<none>|  
 |HorizontalOffset|O deslocamento horizontal, em relação à posição padrão de decorador, em polegadas. (Em formas somente.)|0|  
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão de decorador, em polegadas. (Em formas somente.)|0|  
 |OffsetFromLine|O deslocamento do decorador de linha, em relação a sua posição padrão, em polegadas. (Nos conectores somente.)|0|  
@@ -66,4 +66,4 @@ Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparec
 |Posição|A posição padrão do decorador.|TargetBottom|  
   
 ## <a name="see-also"></a>Consulte também  
- [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

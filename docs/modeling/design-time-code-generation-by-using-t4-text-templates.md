@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 64a7f5ae729ff2badfc03750efa43c70973a7498
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 9c21673f318d97ac5abb2b89bdd8d65ae01cef17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código no tempo de design usando modelos de texto T4
 Modelos de texto T4 de tempo de design permitem que você gerar o código do programa e outros arquivos em seu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto. Normalmente, você escreve os modelos de alterar o código que elas geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre requisitos do seu aplicativo.  
@@ -298,12 +298,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
  Se o modelo de fonte mudar, você deve executar novamente todos os modelos na solução. Para fazer isso manualmente, escolha **transformar todos os modelos de** no **criar** menu.  
   
- Se você tiver o SDK de visualização e modelagem do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado, você pode transformar todos os modelos automaticamente sempre que você executar uma compilação. Para fazer isso, edite o arquivo do projeto (.csproj ou .vbproj) em um editor de texto e adicione as seguintes linhas perto do final do arquivo, depois de qualquer outra instrução `<import>`:  
+ Se você tiver instalado o SDK do Visual Studio de modelagem, você pode ter todos os modelos transformados automaticamente sempre que você executar uma compilação. Para fazer isso, edite o arquivo do projeto (.csproj ou .vbproj) em um editor de texto e adicione as seguintes linhas perto do final do arquivo, depois de qualquer outra instrução `<import>`:
 
+> [!NOTE]
+> No Visual Studio de 2017, o SDK de transformação de modelo de texto e o SDK do Visual Studio de modelagem são instalados automaticamente quando você instala recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ```  
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  

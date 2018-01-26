@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Métodos de utilitário do modelo de texto
-Há vários métodos que estão sempre disponíveis para você quando você escreve o código um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelo de texto. Esses métodos são definidos no <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Há vários métodos que estão sempre disponíveis para você quando você escreve o código em um modelo de texto do Visual Studio. Esses métodos são definidos no <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  Você também pode usar outros métodos e os serviços fornecidos pelo ambiente de host em um modelo de texto (não pré-processados) regular. Por exemplo, você pode resolver os caminhos de arquivos, log de erros e obter serviços fornecidos por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e qualquer carregar pacotes.  Para obter mais informações, consulte [acessando o Visual Studio a partir de um modelo de texto](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Você também pode usar outros métodos e os serviços fornecidos pelo ambiente de host em um modelo de texto (não pré-processados) regular. Por exemplo, você pode resolver os caminhos de arquivos, log de erros e obter os serviços fornecidos pelo Visual Studio e qualquer carregar pacotes. Para obter mais informações, consulte [acessando o Visual Studio a partir de um modelo de texto](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Métodos de gravação  
- Você pode usar o `Write()` e `WriteLine()` métodos para acrescentar o texto dentro de um bloco de código padrão, em vez de usar um bloco de código expressão. Os blocos de código de dois a seguir são funcionalmente equivalentes.  
+## <a name="write-methods"></a>Métodos de gravação
+
+Você pode usar o `Write()` e `WriteLine()` métodos para acrescentar o texto dentro de um bloco de código padrão, em vez de usar um bloco de código expressão. Os blocos de código de dois a seguir são funcionalmente equivalentes.  
   
-##### <a name="code-block-with-an-expression-block"></a>Bloco de código com um bloco da expressão  
+### <a name="code-block-with-an-expression-block"></a>Bloco de código com um bloco da expressão  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Bloco de código usando WriteLine()  
+### <a name="code-block-using-writeline"></a>Bloco de código usando WriteLine()  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Métodos de recuo  
+## <a name="indentation-methods"></a>Métodos de recuo
+
  Você pode usar métodos de recuo para formatar a saída do modelo de texto. O <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> classe tiver um `CurrentIndent` propriedade que mostra o recuo atual do modelo de texto da cadeia de caracteres e um `indentLengths` campo que é uma lista dos recuos que foram adicionados. Você pode adicionar um recuo com o `PushIndent()` método e subtrair um recuo com o `PopIndent()` método. Se você quiser remover todos os recuos, use o `ClearIndent()` método. O bloco de código a seguir mostra o uso dos seguintes métodos:  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Métodos de aviso e erro  
- Você pode usar métodos de utilitário de erro e aviso para adicionar mensagens para o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lista de erros. Por exemplo, o código a seguir adicionará uma mensagem de erro para a lista de erros.  
+ Você pode usar métodos de utilitário de aviso e erro para adicionar mensagens à lista de erros do Visual Studio. Por exemplo, o código a seguir adicionará uma mensagem de erro para a lista de erros.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- O tipo de `this.Host` depende do tipo de host no qual o modelo está em execução. Em um modelo que está sendo executado no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode converter `this.Host` para `IServiceProvider` para obter acesso a serviços como o IDE. Por exemplo:  
+ O tipo de `this.Host` depende do tipo de host no qual o modelo está em execução. Em um modelo que está sendo executado no Visual Studio, você pode converter `this.Host` para `IServiceProvider` para obter acesso a serviços como o IDE. Por exemplo:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

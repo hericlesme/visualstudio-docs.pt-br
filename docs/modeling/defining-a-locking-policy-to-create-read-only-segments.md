@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1b26da119360462c5237977a1b1da8ac5041d84a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 6848f2c0b6c8d25fe7964fdb5519aa3f075bde57
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 A API de imutabilidade do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] visualização e modelagem SDK permite que um programa para bloqueio parte ou todo um modelo de linguagem específica de domínio (DSL) para que ele pode ser lida mas não alterado. Essa opção somente leitura pode ser usada, por exemplo, para que um usuário pode solicitar seus colegas para anotar e analisar um modelo DSL, mas pode não permiti-los alterando o original.  
@@ -24,7 +24,7 @@ A API de imutabilidade do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.m
 > [!NOTE]
 >  Uma política de bloqueio pode ser evitada por meio de reflexão. Ele fornece um limite claro para os desenvolvedores de terceiros, mas não fornece alta segurança.  
   
- Mais informações e exemplos estão disponíveis no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [visualização e modelagem SDK](http://go.microsoft.com/fwlink/?LinkId=186128) site da Web.  
+ Mais informações e exemplos estão disponíveis no Visual Studio [visualização e modelagem SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) site da Web.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   

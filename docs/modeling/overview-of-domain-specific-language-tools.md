@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c1a163e50e2f237430ba13d57a76cfc0d6b1d67
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 1fcba975443deb768a2b3de36bd2744183cdcf40
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 Ferramentas de linguagem específica de domínio (ferramentas de DSL), que são hospedados em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], permitem que você criar uma linguagem específica de domínio e, em seguida, gerar tudo o que os usuários devem ter para criar modelos com base no idioma.  
@@ -51,7 +51,7 @@ Ferramentas de linguagem específica de domínio (ferramentas de DSL), que são 
   
  O assistente cria um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução que tem os seguintes projetos:  
   
--   DSL  
+-   Dsl  
   
      O projeto de Dsl define a linguagem específica de domínio e suas ferramentas de edição e de processamento.  
   
@@ -77,4 +77,4 @@ Ferramentas de linguagem específica de domínio (ferramentas de DSL), que são 
   
 ## <a name="see-also"></a>Consulte também  
  [A instância Experimental](../extensibility/the-experimental-instance.md)   
- [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

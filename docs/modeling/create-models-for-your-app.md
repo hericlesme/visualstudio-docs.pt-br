@@ -25,19 +25,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 26dbef0fce67b4af461e7bbc15ecb870f630ca0e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
+
 Diagramas de modelagem ajudarão-lo a entender, esclarecer e comunicar ideias sobre seu código e os requisitos de usuário que deve dar suporte a seu sistema de software.
-  
- Para ver quais versões do Visual Studio oferecem suporte a cada tipo de diagrama, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Para visualizar a arquitetura de um sistema ou o código existente, crie os diagramas a seguir:  
-  
+
+Para ver quais versões do Visual Studio oferecem suporte a cada tipo de diagrama, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+
+Para visualizar a arquitetura de um sistema ou o código existente, crie os diagramas a seguir:  
+
 |**Diagrama**|**programas**|  
 |-----------------|---------------|  
 |[Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)|Arquitetura de alto nível do sistema|  
@@ -52,11 +53,10 @@ Diagramas de modelagem ajudarão-lo a entender, esclarecer e comunicar ideias so
 |[Requisitos de usuário do modelo](../modeling/model-user-requirements.md)|Use modelos para esclarecer e se comunicar necessidades dos usuários.|  
 |[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|Use modelos para descrever a estrutura geral e o comportamento do seu sistema e certifique-se de que ele atende às necessidades dos usuários.|  
 |[Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)|Certifique-se de que seu software permaneça consistente com suas necessidades de usuários e a arquitetura geral do sistema.|  
-|[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos de desenvolvimento ágil](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar o seu sistema durante o desenvolvimento.|  
+|[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos de desenvolvimento ágil](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar o seu sistema durante o desenvolvimento.|  
 |[Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)|Organize modelos em um projeto de médias ou grande.|  
   
-## <a name="external-resources"></a>Recursos externos  
-  
-|**Categoria**|**Links**|  
-|------------------|---------------|  
-|**Fóruns**|-   [Visualização do Visual Studio e ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visualização do Visual Studio e modelagem SDK (ferramentas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+## <a name="resources"></a>Recursos
+
+[Visualização do Visual Studio e Fórum das ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)  
+[Fórum de extensibilidade do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)

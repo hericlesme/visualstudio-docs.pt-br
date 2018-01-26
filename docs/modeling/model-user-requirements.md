@@ -13,13 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 495e226a16e94dbe87584c54fa317ccb0ab84482
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
+
 Visual Studio o ajuda a entender, discuta e se comunicar suas necessidades de usuários ao desenhar diagramas sobre suas atividades e a parte um sistema desempenha no ajudando a atingir suas metas. Um modelo de requisitos é um conjunto desses diagramas, cada um deles se concentra em um aspecto das necessidades dos usuários. Para uma demonstração de vídeo, consulte: [modelagem de domínio da empresa](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Para ver quais versões do Visual Studio oferecem suporte a cada tipo de modelo, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -43,10 +44,11 @@ Visual Studio o ajuda a entender, discuta e se comunicar suas necessidades de us
  Um modelo de requisitos fornece o maior benefício de se você usá-lo para discussões de foco com os usuários ou seus representantes e revisá-lo no início de cada iteração. Você não precisa ser concluída em detalhes antes de escrever código. Um aplicativo de trabalho parcialmente, mesmo se muito simplificado, geralmente constitui a base mais interessantes para discussão de requisitos com usuários. O modelo é uma maneira eficiente de resumir os resultados dessas conversas. Para obter mais informações, consulte [usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
->  Durante esses tópicos, "sistema" significa que o sistema ou o aplicativo que você está desenvolvendo. Pode ser uma grande coleção de muitos componentes de hardware e software; ou um único aplicativo; ou um componente de software dentro de um sistema maior. Em cada caso, o modelo de requisitos descreve o comportamento que é visível fora de seu sistema, através de uma interface de usuário ou a API.  
+> Durante esses tópicos, "sistema" significa que o sistema ou o aplicativo que você está desenvolvendo. Pode ser uma grande coleção de muitos componentes de hardware e software; ou um único aplicativo; ou um componente de software dentro de um sistema maior. Em cada caso, o modelo de requisitos descreve o comportamento que é visível fora de seu sistema, através de uma interface de usuário ou a API.  
   
-## <a name="common-tasks"></a>Tarefas comuns  
- Você pode criar várias exibições diferentes dos requisitos dos usuários.  Cada modo de exibição fornece um tipo específico de informações.  Quando você cria esses modos de exibição, é melhor mudam frequentemente uns aos outros. Você pode iniciar a partir de qualquer modo de exibição.  
+## <a name="common-tasks"></a>Tarefas comuns
+
+Você pode criar várias exibições diferentes dos requisitos dos usuários.  Cada modo de exibição fornece um tipo específico de informações.  Quando você cria esses modos de exibição, é melhor mudam frequentemente uns aos outros. Você pode iniciar a partir de qualquer modo de exibição.  
   
 |Diagrama ou documento|Ele descreve em um modelo de requisitos|Seção|  
 |-------------------------|-----------------------------------------------|-------------|  
@@ -56,8 +58,9 @@ Visual Studio o ajuda a entender, discuta e se comunicar suas necessidades de us
   
  Observe que a maioria dos tipos de diagrama pode ser usada para outras finalidades. Para obter uma visão geral dos tipos de diagrama, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).
   
-##  <a name="BusinessRules"></a>Mostrando as regras de negócio  
- Uma regra de negócios é um requisito que não está associado um caso de uso específico e deve ser observado em todo o sistema.  
+##  <a name="BusinessRules"></a>Mostrando as regras de negócio
+
+Uma regra de negócios é um requisito que não está associado um caso de uso específico e deve ser observado em todo o sistema.  
   
  Muitas regras de negócio são restrições nas relações entre as classes conceituais. Você pode escrever esses *estático * * as regras de negócio* como comentários associados as classes relevantes em um diagrama conceitual de classe. Por exemplo:  
   
@@ -75,8 +78,9 @@ Visual Studio o ajuda a entender, discuta e se comunicar suas necessidades de us
 |--------------------|----------|  
 |Como desenvolver o código que segue as regras de negócio|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a>Que descreve a qualidade dos requisitos de serviço  
- Há várias categorias de qualidade de requisito de serviço. Elas incluem o seguinte:  
+##  <a name="QoSRequirements"></a>Que descreve a qualidade dos requisitos de serviço
+
+Há várias categorias de qualidade de requisito de serviço. Elas incluem o seguinte:  
   
 -   Desempenho  
   
@@ -88,17 +92,13 @@ Visual Studio o ajuda a entender, discuta e se comunicar suas necessidades de us
   
 -   Robustez  
   
- Você pode incluir alguns desses requisitos nas descrições de casos de uso específico. Outros requisitos não são específicos para casos de uso e com mais eficácia são gravados em um documento separado. Quando possível, é útil cumprir o vocabulário definido pelo modelo de requisitos. No exemplo a seguir, observe que as palavras principais usadas requisitos de títulos de atores, casos de uso e classes nas ilustrações anteriores:  
-  
- Se um restaurante exclui um Item de Menu enquanto uma refeição ordenação de um cliente, qualquer Item do pedido que se refere a esse Item de Menu será exibido em vermelho.  
-  
- Os tópicos a seguir fornecem mais informações:  
-  
-|Para saber mais sobre|Ler|  
-|--------------------|----------|  
-|Informações mais detalhadas sobre a gravação de qualidade de serviço|[Diretrizes para definir a qualidade dos requisitos de serviço](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
-|Como desenvolver o código que segue a qualidade dos requisitos de serviço|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="see-also"></a>Consulte também  
- [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)   
- [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)   
+Você pode incluir alguns desses requisitos nas descrições de casos de uso específico. Outros requisitos não são específicos para casos de uso e com mais eficácia são gravados em um documento separado. Quando possível, é útil cumprir o vocabulário definido pelo modelo de requisitos. No exemplo a seguir, observe que as palavras principais usadas requisitos de títulos de atores, casos de uso e classes nas ilustrações anteriores:
+
+Se um restaurante exclui um Item de Menu enquanto uma refeição ordenação de um cliente, qualquer Item do pedido que se refere a esse Item de Menu será exibido em vermelho.
+
+Consulte [modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md) para aprender a desenvolver o código que segue a qualidade dos requisitos de serviço.
+
+## <a name="see-also"></a>Consulte também
+
+[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)  
+[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)

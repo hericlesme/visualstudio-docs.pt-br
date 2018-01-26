@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e15efdb40b21b187dfc8bec543fc48c91f9efcf6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7578426058c5e41bb6507c044be411348c42d050
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como migrar uma linguagem específica do domínio para uma nova versão
 Você pode migrar projetos que definem e usam a linguagem específica de domínio para [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] da versão do [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que foi distribuído com [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -23,7 +23,7 @@ Você pode migrar projetos que definem e usam a linguagem específica de domíni
   
  Você deve executar a ferramenta de migração explicitamente: ele não será iniciado automaticamente quando você abrir uma solução em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. A ferramenta e o documento de diretrizes detalhadas podem ser encontrados no seguinte caminho:  
   
- **% Programa Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar seus projetos DSL  
  A ferramenta de migração modifica [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] arquivos de projeto (**. csproj**) e arquivos de solução (**. sln**).  
@@ -42,7 +42,7 @@ Você pode migrar projetos que definem e usam a linguagem específica de domíni
   
     -   Você pode clique duas vezes a ferramenta no Windows Explorer (ou Explorador de arquivos) ou iniciar a ferramenta de prompt de comando. A ferramenta está neste local:  
   
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Escolha uma pasta que contém as soluções e projetos que você deseja converter.  
   
@@ -76,7 +76,7 @@ Você pode migrar projetos que definem e usam a linguagem específica de domíni
     2.  Clique o **transformar todos os modelos** botão no cabeçalho do Gerenciador de soluções.  
   
         > [!NOTE]
-        >  Você pode tornar esta etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformação de todos os modelos](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+        >  Você pode tornar esta etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformação de todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6.  Atualize seu código personalizado no projeto convertido.  
   

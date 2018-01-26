@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 84773891342b18a583cf2919a7d09e0aaa9d2b93
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7c2b54b5bbda108c7f616eb71f7945e071721856
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriedades de formas geométricas
 Você pode usar formas de geometria para especificar como as instâncias de classes de domínio são exibidas em uma linguagem específica de domínio. Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizar e estender uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -34,7 +34,7 @@ Você pode usar formas de geometria para especificar como as instâncias de clas
 |Espessura da estrutura de tópicos|A espessura da estrutura de tópicos dessa forma.|0.03125|  
 |Cor do texto|A cor que é usada para decoradores de texto que estão associados esta forma.|Preto|  
 |Modificador de acesso|O modificador de acesso da classe (público ou interno).|Público|  
-|Atributos personalizados|Usado para adicionar atributos para a classe do código fonte que é gerada para esta forma.|\<Nenhum >|  
+|Atributos personalizados|Usado para adicionar atributos para a classe do código fonte que é gerada para esta forma.|\<none>|  
 |Gera dois derivado|Se `True`, uma classe base e uma classe parcial (para dar suporte a personalização por meio de substituições) será gerada. Para obter mais informações, consulte [substituir e estender as Classes geradas pelo](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Tem um construtor personalizado|Se `True`, será fornecido um construtor personalizado no código-fonte. Para obter mais informações, consulte [substituir e estender as Classes geradas pelo](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificador de herança|Descreve o tipo de herança da classe de código fonte que é gerado de forma (`none`, `abstract` ou `sealed`).|nenhum|  
@@ -42,14 +42,14 @@ Você pode usar formas de geometria para especificar como as instâncias de clas
 |Nome|O nome dessa forma.|Nome atual|  
 |Namespace|O namespace que é associado a esta forma.|Namespace atual|  
 |Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixo, variável ou nenhum). Se for resolvido, em seguida, o valor da `Fixed Tooltip Text` propriedade é usada como a dica de ferramenta; se a variável, em seguida, a dica de ferramenta é definida no código personalizado.|Nenhum|  
-|Observações|Anotações informais que estão associadas esse elemento.|\<Nenhum >|  
+|Observações|Anotações informais que estão associadas esse elemento.|\<none>|  
 |Altura inicial|Altura inicial dessa forma, em polegadas.|1|  
 |Largura inicial|Largura inicial dessa forma, em polegadas.|1.5|  
 |Cor de preenchimento exposto como propriedade<br /><br /> Modo de gradação de preenchimento exposto<br /><br /> Exposto a cor do contorno como propriedade<br /><br /> Exposto estilo do tracejado da estrutura de tópicos como propriedade<br /><br /> Exposto a espessura da estrutura de tópicos como propriedade<br /><br /> Expõe a cor do texto|Se `True`, o usuário pode definir a propriedade declarada de uma forma. Para definir isso, a definição de forma de mouse e clique em **adicionar expostos**.|False|  
-|Descrição|A descrição é usada para documentar o designer gerado.|\<Nenhum >|  
-|Nome de Exibição|O nome que será exibido no designer gerado para esta forma.|\<Nenhum >|  
-|Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<Nenhum >|  
-|Palavra-chave de ajuda|A palavra-chave que é usada para indexar a Ajuda de F1 para esta forma.|\<Nenhum >|  
+|Descrição|A descrição é usada para documentar o designer gerado.|\<none>|  
+|Nome de Exibição|O nome que será exibido no designer gerado para esta forma.|\<none>|  
+|Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<none>|  
+|Palavra-chave de ajuda|A palavra-chave que é usada para indexar a Ajuda de F1 para esta forma.|\<none>|  
   
 ## <a name="see-also"></a>Consulte também  
- [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

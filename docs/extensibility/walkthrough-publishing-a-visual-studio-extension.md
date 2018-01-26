@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Passo a passo: Publicando uma extensão do Visual Studio
 
@@ -70,9 +70,7 @@ Nesse caso, usaremos uma extensão de VSPackage padrão, mas as mesmas etapas s�
 
   ![Carregar no Marketplace](media/upload-to-marketplace.png)
 
-6. Escolha o editor que você deseja usar para carregar a extensão.  Você pode alterar os editores clicando no nome do publicador no canto superior esquerdo.
-
-  ![Editor de alteração de Marketplace](media/change-marketplace-publisher.png)
+6. Escolha o editor que você deseja usar para carregar a extensão.  Você pode alterar os editores clicando nos nomes de publicador listados à esquerda.  Clique em **nova extensão** e selecione **Visual Studio**.
 
 7. Em **1: carregar a extensão**, você pode optar por carregar um arquivo VSIX diretamente no Visual Studio Marketplace ou simplesmente adiciona um link para seu próprio site. Nesse caso, estamos carregará nossa extensão, TestPublish.vsix.  Arraste e solte a sua extensão ou use o **clique** link para navegar até o arquivo.  A extensão pode ser encontrada na pasta \bin\Release. do projeto.  Clique em **Continue**.
 
@@ -86,7 +84,7 @@ Nesse caso, usaremos uma extensão de VSPackage padrão, mas as mesmas etapas s�
     
     * **ID do VSIX** é o identificador exclusivo que o Visual Studio usa para a sua extensão.  Isso é necessário se você gostaria de ter a extensão a ser atualizado automaticamente.  Isso é preenchido automaticamente do arquivo source.extension.vsixmanifest.
     
-    * **Logotipo** que será usado para a sua extensão.  Ele será preenchido automaticamente o arquivo source.extension.vsixmanifest se fornecido.
+   * **Logotipo** que será usado para a sua extensão.  Ele será preenchido automaticamente o arquivo source.extension.vsixmanifest se fornecido.
     
     * **Descrição breve** do que faz a sua extensão.  Ele será preenchido automaticamente o arquivo source.extension.vsixmanifest.
     
@@ -108,12 +106,32 @@ Nesse caso, usaremos uma extensão de VSPackage padrão, mas as mesmas etapas s�
     
     * **Permitir que o p e r para a sua extensão** permitirá que os usuários deixem perguntas em sua página de entrada de extensão.
 
-9. Clique em **salvar e carregar**. Isso o levará página Gerenciar de volta para o publicador.  A extensão ainda não foram publicada.  Para publicar seu foco extensão sobre a entrada de sua extensão e clique em **...**  e **tornar público**.  Você pode exibir a sua extensão de aparência semelhante no Marketplace selecionando **exibir detalhes**.  Para obter números de aquisição, clique em **relatórios**.  Para fazer alterações em sua extensão, clique em **editar*.
+9. Clique em **salvar e carregar**. Isso o levará página Gerenciar de volta para o publicador.  A extensão ainda não foram publicada.  Para publicar sua extensão, com o botão direito em sua extensão e selecione **tornar público**.  Você pode exibir a sua extensão de aparência semelhante no Marketplace selecionando **exibição extensão**.  Para obter números de aquisição, clique em **relatórios**.  Para fazer alterações em sua extensão, clique em **editar*.
 
   ![Menu de entrada de extensão](media/extension-entry-menu.png)
 
 10. Depois de clicar em **tornar público**, sua extensão agora é pública.  Pesquise o Visual Studio Marketplace para a sua extensão.
 
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Adicionar usuários para gerenciar sua conta do publicador
+
+Marketplace oferece suporte a concessão de permissões de usuários adicionais para acessar e gerenciar uma conta do publicador.
+
+1. Navegue até a conta de editor que você deseja acrescentar usuários adicionais.
+
+2. Selecione **membros** e clique em **adicionar**
+
+  ![Adicionar usuário adicional](media/add-users.png)
+
+3. Em seguida, você pode especificar o endereço de email do usuário que você deseja adicionar e conceder o nível certo de acesso em **selecionar uma função**.  É possível escolher entre as seguintes opções:
+
+  * **Criador**: O usuário pode publicar extensões, mas não é possível exibir ou gerenciar extensões publicadas por outros usuários.
+  
+  * **Leitor**: O usuário pode exibir extensões, mas não é possível publicar ou gerenciar extensões.
+  
+  * **Colaborador**: O usuário pode publicar e gerenciar extensões, mas não é possível editar configurações do publicador ou gerenciar o acesso.
+  
+  * **Proprietário**: O usuário pode publicar e gerenciar extensões, editar configurações do publicador e gerenciar o acesso.
+  
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Instalar a extensão do Visual Studio Marketplace
 
 Agora que a extensão é publicada, instale-o no Visual Studio e testá-lo lá.
@@ -126,7 +144,7 @@ Agora que a extensão é publicada, instale-o no Visual Studio e testá-lo lá.
 
 4. Para concluir a instalação, feche todas as instâncias do Visual Studio.
 
-## <a name="removing-the-extension"></a>Removendo a extensão
+## <a name="remove-the-extension"></a>Remova a extensão
 
 Você pode remover a extensão do Visual Studio Marketplace e do computador.
 
@@ -136,7 +154,7 @@ Você pode remover a extensão do Visual Studio Marketplace e do computador.
 
 2. No canto superior direito, clique em **publicar** extensões.  Selecione o editor que é usado para publicar TestPublish.  A listagem de TestPublish é exibida.
 
-3. Passe o mouse sobre a entrada de extensão e clique em **...**  e **remover...** Você será solicitado a confirmar se deseja remover a extensão.  Clique em **OK**.
+3. Clique na entrada de extensão e clique em **remover** você será solicitado a confirmar se deseja remover a extensão.  Clique em **OK**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Para remover a extensão do computador
 

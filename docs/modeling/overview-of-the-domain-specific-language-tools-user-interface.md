@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5d489f41069f478abfba32a65690a5adc9c2272c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 4dabfb345d9a98228afae5e20b63e6ded760800d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
 Quando você abre uma solução de ferramentas de linguagem específica de domínio (ferramentas de DSL) em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a interface do usuário será semelhante a figura a seguir.  
@@ -39,7 +39,7 @@ Quando você abre uma solução de ferramentas de linguagem específica de domí
   
  A tabela a seguir explica alguns dos elementos do diagrama de modelo de domínio.  
   
-|**Termo**|**Definição**|  
+|**Term**|**Definição**|  
 |--------------|--------------------|  
 |Classe de domínio|Classes de domínio são os tipos de elementos em seus modelos.<br /><br /> Uma classe de domínio pode aparecer mais de uma vez em um diagrama, se ele é o destino de mais de uma relação.<br /><br /> Para adicionar uma classe de domínio, arraste a ferramenta de classe de domínio do **caixa de ferramentas** para o **Classes e relacionamentos** lado do diagrama.|  
 |Relacionamento de domínio|Relações de domínio são os tipos de links entre elementos nos seus modelos.<br /><br /> Um *relacionamento de incorporação* indica que o elemento de destino é de propriedade ou contido no elemento de origem e aparece como uma linha sólida. Cada elemento em um modelo deve ser o destino de um relacionamento de incorporação, para que o modelo de uma árvore de formulários. Um *relação de referência* indica um link geral entre elementos de modelo e aparece como uma linha tracejada. Qualquer elemento pode ter qualquer número de links de referência.<br /><br /> Criar uma relação clicando na ferramenta sobre o **caixa de ferramentas**, clicando na classe de domínio de origem e, em seguida, clicando na classe de destino.|  
@@ -48,5 +48,5 @@ Quando você abre uma solução de ferramentas de linguagem específica de domí
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral das ferramentas de linguagem específica de domínio](../modeling/overview-of-domain-specific-language-tools.md)   
- [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)

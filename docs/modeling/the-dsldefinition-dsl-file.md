@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>O arquivo DslDefinition.dsl
 Este tópico descreve a estrutura do arquivo no projeto Dsl de DslDefinition.dsl um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solução, que define uma *linguagem específica de domínio*. O arquivo DslDefinition.dsl descreve as classes e relacionamentos de uma linguagem específica de domínio, juntamente com o diagrama de formas, conectores, formato de serialização e **caixa de ferramentas** da linguagem específica de domínio e seu ferramentas de edição. Em uma solução de linguagem específica do domínio, o código que define essas ferramentas é gerado de acordo com as informações no arquivo DslDefinition.dsl.  
@@ -151,7 +151,7 @@ Este tópico descreve a estrutura do arquivo no projeto Dsl de DslDefinition.dsl
   
  Cada classe de domínio (incluindo relações, formas, conectores e diagramas) podem ter esses atributos e nós filho:  
   
--   **ID.** Esse atributo é um GUID. Se você não fornecer um valor no arquivo, o Designer de Linguagem Específica do Domínio criará um valor. (Nas ilustrações deste documento, esse atributo é geralmente omitido para economizar espaço.)  
+-   **Id.** Esse atributo é um GUID. Se você não fornecer um valor no arquivo, o Designer de Linguagem Específica do Domínio criará um valor. (Nas ilustrações deste documento, esse atributo é geralmente omitido para economizar espaço.)  
   
 -   **Nome e Namespace.** Estes atributos especificam o nome e o namespace da classe no código gerado. Juntos, eles devem ser exclusivos dentro da linguagem específica do domínio.  
   
@@ -546,6 +546,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Os mapas do conector também podem conter mapas do decorador.  
   
 ## <a name="see-also"></a>Consulte também  
- [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)

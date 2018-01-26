@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 744dffd17f13c821381de6014881ef2115c0f75c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 0c08986b9508e4061a44575d629937c70bffc06e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-diagrams"></a>Propriedades de diagramas
 Você pode definir propriedades que especificam como os diagramas aparecerá no designer de gerado. Por exemplo, você pode especificar uma cor padrão para o texto no diagrama.  
@@ -30,7 +30,7 @@ Você pode definir propriedades que especificam como os diagramas aparecerá no 
 |Cor de preenchimento|A cor de preenchimento para o diagrama.|Branco|  
 |Cor do texto|A cor do texto que é exibido no diagrama.|Preto|  
 |Modificador de acesso|O modificador de acesso da classe (público ou interno).|Público|  
-|Atributos personalizados|Usado para adicionar atributos para a classe do código gerado.|\<Nenhum >|  
+|Atributos personalizados|Usado para adicionar atributos para a classe do código gerado.|\<none>|  
 |Gera dois derivado|Se `True`, uma classe base e uma classe parcial (para dar suporte a personalização por meio de substituições) será gerada. Para obter mais informações, consulte [substituir e estender as Classes geradas pelo](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Tem um construtor personalizado|Se `True`, será fornecido um construtor personalizado no código-fonte. Para obter mais informações, consulte [substituir e estender as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
 |Modificador de herança|Descreve o tipo de herança da classe de código fonte que é gerada a partir do diagrama (`none`, `abstract` ou `sealed`).|Nenhum|  
@@ -38,12 +38,12 @@ Você pode definir propriedades que especificam como os diagramas aparecerá no 
 |Nome|O nome do diagrama.|Nome atual|  
 |Namespace|O namespace que é associado a este diagrama.|Namespace atual|  
 |Classe representada|A classe de domínio raiz que este diagrama representa.|Classe raiz atual se aplicável|  
-|Observações|Anotações informais que estão associadas esse elemento.|\<Nenhum >|  
+|Observações|Anotações informais que estão associadas esse elemento.|\<none>|  
 |Cor de preenchimento expõe como propriedade|Se `True`, o usuário pode definir a cor de preenchimento do diagrama do designer gerado. Para configurar isso, clique com botão direito na forma de diagrama e clique em **Explosed adicionar**.|False|  
 |Expõe a cor do texto como propriedade|Se `True`, o usuário pode definir a cor do texto do diagrama no designer de gerado. Para configurar isso, clique com botão direito na forma de diagrama e clique em **Explosed adicionar**.|False|  
-|Descrição|A descrição é usada para documentar o designer gerado.|\<Nenhum >|  
-|Nome de Exibição|O nome que será exibido no designer gerado para este diagrama.|\<Nenhum >|  
-|Palavra-chave de ajuda|A palavra-chave que é usada para indexar Ajuda F1 do diagrama.|\<Nenhum >|  
+|Descrição|A descrição é usada para documentar o designer gerado.|\<none>|  
+|Nome de Exibição|O nome que será exibido no designer gerado para este diagrama.|\<none>|  
+|Palavra-chave de ajuda|A palavra-chave que é usada para indexar Ajuda F1 do diagrama.|\<none>|  
   
 ## <a name="see-also"></a>Consulte também  
- [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

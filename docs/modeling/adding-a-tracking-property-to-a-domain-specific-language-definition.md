@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionando uma propriedade de acompanhamento a uma definição de linguagem específica do domínio
 Este passo a passo mostra como adicionar uma propriedade de controle a um modelo de domínio.  
@@ -27,7 +27,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
   
  Por exemplo, nas ferramentas de linguagem específica de domínio (ferramentas de DSL), o nome de exibição a propriedade de uma classe de domínio tem um valor padrão é calculado usando o nome da classe de domínio, mas um usuário pode alterar o valor em tempo de design ou redefini-lo para o valor calculado.  
   
- Este passo a passo, você criará uma linguagem específica de domínio (DSL) que tem um Namespace de propriedade que tem um valor padrão com base na propriedade de Namespace padrão do modelo de controle. Para obter mais informações sobre propriedades de controle, consulte [definindo propriedades de controle](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ Este passo a passo, você criará uma linguagem específica de domínio (DSL) que tem um Namespace de propriedade que tem um valor padrão com base na propriedade de Namespace padrão do modelo de controle. Para obter mais informações sobre propriedades de controle, consulte [definindo propriedades de controle](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 -   O suporte a ferramentas de DSL descritores de propriedade de rastreamento. No entanto, o designer DSL não pode ser usado para adicionar uma propriedade de controle a um idioma. Portanto, você deve adicionar código personalizado para definir e implementar a propriedade de controle.  
   
@@ -48,9 +48,9 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
 ## <a name="creating-the-dsl-project"></a>Criando o projeto DSL  
  Crie o projeto para sua linguagem específica de domínio.  
@@ -253,7 +253,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Para modificar o descritor de tipo para a classe de domínio ExampleModel  
   
 1.  Adicione o seguinte código ao arquivo TypeDescriptor.cs.  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

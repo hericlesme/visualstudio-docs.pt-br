@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 467874db7b9dc0dbdc8e168bd5396fd033b90fc7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 8a8b349e43f4728fee3ec676a689e6ba03cde758
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
 Uma linguagem específica de domínio (DSL) é criada usando um especializado [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução.  
@@ -29,8 +29,8 @@ Uma linguagem específica de domínio (DSL) é criada usando um especializado [!
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
 |SDK de Visualização e Modelagem do Visual Studio||  
 
 
@@ -131,7 +131,8 @@ Uma linguagem específica de domínio (DSL) é criada usando um especializado [!
  Use esta opção se você deseja integrar seu DSL com outro assembly.  
   
  Para obter mais informações sobre nomes fortes, consulte [Creating and Using Strong-Named Assemblies](http://go.microsoft.com/fwlink/?LinkId=186073).  
-  
-## <a name="see-also"></a>Consulte também  
- [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)   
- [Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+
+## <a name="see-also"></a>Consulte também
+
+[Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)  
+[Glossário de ferramentas de linguagem específica de domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

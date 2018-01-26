@@ -11,27 +11,29 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implantando um processador de diretiva personalizada
+
 Para usar um processador de diretiva no Visual Studio em qualquer computador, você deve registrá-lo por um dos métodos descritos neste tópico.  
   
- Os métodos alternativos são:  
+Os métodos alternativos são:  
   
--   [Extensão do Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Isso fornece uma maneira de instalar e desinstalar o processador de diretriz em seu próprio computador e em outros computadores. Normalmente, você pode empacotar outros recursos na mesma VSIX.  
+-   [Extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Isso fornece uma maneira de instalar e desinstalar o processador de diretriz em seu próprio computador e em outros computadores. Normalmente, você pode empacotar outros recursos na mesma VSIX.  
   
 -   [VSPackage](../extensibility/internals/vspackages.md). Se você estiver for definir um VSPackage que contém outros recursos além do processador de diretriz, há um método conveniente para registrar o processador de diretriz.  
   
 -   Definir uma chave do Registro. Nesse método, você adiciona uma entrada de Registro para o processador de diretriz.  
   
- Você precisa usar um dos métodos a seguir somente se você deseja transformar o modelo de texto no Visual Studio ou [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Se você usar um host personalizado em seu próprio aplicativo, seu host personalizado será responsável por localizar os processadores de diretrizes para cada diretiva.  
+Você precisa usar um dos métodos a seguir somente se você deseja transformar o modelo de texto no Visual Studio ou o MSBuild. Se você usar um host personalizado em seu próprio aplicativo, seu host personalizado será responsável por localizar os processadores de diretrizes para cada diretiva.  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implantando um processador de diretriz em uma VSIX  
- Você pode adicionar um processador de diretiva para um [extensão de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implantando um processador de diretriz em uma VSIX
+
+Você pode adicionar um processador de diretiva para um [extensão de Visual Studio (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
   
  Você precisará certificar-se de que os dois seguintes itens estejam contidos no arquivo .vsix:  
   
@@ -39,10 +41,10 @@ Para usar um processador de diretiva no Visual Studio em qualquer computador, vo
   
 -   Um arquivo .pkgdef que registra o processador de diretriz. O nome raiz do arquivo deve ser igual ao do assembly. Por exemplo, seus arquivos podem ser nomeados como CDP.dll e CDP.pkgdef.  
   
- Para inspecionar ou alterar o conteúdo de um arquivo .vsix, altere a extensão do seu nome de arquivo para .zip e abra-o. Depois de editar o conteúdo, altere o nome do arquivo de volta para .vsix.  
-  
- Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve um método.  
-  
+Para inspecionar ou alterar o conteúdo de um arquivo .vsix, altere a extensão do seu nome de arquivo para .zip e abra-o. Depois de editar o conteúdo, altere o nome do arquivo de volta para .vsix.  
+
+Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve um método.  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Para desenvolver um processador de diretriz personalizado em um projeto VSIX  
   
 1.  Crie um projeto do VSIX no Visual Studio.  
@@ -90,11 +92,11 @@ Para usar um processador de diretiva no Visual Studio em qualquer computador, vo
   
 5.  Adicione as seguintes referências ao projeto:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Adicione sua classe de processador de diretriz personalizado ao projeto.  
   
@@ -197,5 +199,6 @@ Para usar um processador de diretiva no Visual Studio em qualquer computador, vo
 |Classe|REG_SZ|\<**O nome de classe totalmente qualificado**>|  
 |Assembly|REG_SZ|\<**O nome do Assembly no GAC**>|  
   
-## <a name="see-also"></a>Consulte também  
- [Criando processadores de diretiva de modelo de texto T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>Consulte também
+
+[Criando processadores de diretiva de modelo de texto T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md)

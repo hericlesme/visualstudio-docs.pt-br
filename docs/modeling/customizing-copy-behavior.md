@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 49a410ef816f2e77713b65b33a2ad8bc59b5b116
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a9a17cba8e1ff1cca66f82c1d3934ff179b04fd9
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma linguagem específica de domínio (DSL) criada com o SDK de Visualização e Modelagem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode alterar o que acontece quando o usuário copia e cola elementos.  
@@ -561,11 +561,11 @@ namespace Company.MyDsl
   
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Personalizando a criação de elemento e de movimentação](../modeling/customizing-element-creation-and-movement.md)   
- [Como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Personalizando comportamento de exclusão](../modeling/customizing-deletion-behavior.md)   
- [Exemplo: Exemplo de diagramas de circuito VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+## <a name="see-also"></a>Consulte também
+
+[Personalizando a criação de elemento e de movimentação](../modeling/customizing-element-creation-and-movement.md)   
+[Como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+[Personalizando comportamento de exclusão](../modeling/customizing-deletion-behavior.md)   
+[Exemplo: Exemplo de diagramas de circuito VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
- 
