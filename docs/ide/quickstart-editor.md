@@ -10,15 +10,17 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
-ms.workload: multiple
-ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+dev_langs:
+- CSharp
+ms.workload:
+- multiple
+ms.openlocfilehash: fd24e4ebcdda7a3b8fbc0b992e1ef952a930029a
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-coding-in-the-editor"></a>Guia de início rápido: codificação no editor
+# <a name="quickstart-coding-in-the-editor"></a>Guia de início rápido: Codificação no editor
 
 Nesta introdução de 10 minutos ao editor, vamos adicionar o código a um arquivo para ver algumas das formas em que o Visual Studio facilita a gravação, a navegação e o entendimento do código.
 

@@ -12,17 +12,16 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.workload:
+- multiple
+ms.openlocfilehash: 6a19d67530d3cb7ac81ee00e3e65f4cce74c8d07
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permissões de usuário e Visual Studio
 
@@ -39,7 +38,7 @@ Você pode fazer quase tudo no IDE do Visual Studio como um usuário normal, mas
 ||Instalar, atualizar ou remover conteúdo da Ajuda local.|[Instalar e gerenciar o conteúdo local](../ide/install-and-manage-local-content.md)|  
 |Tipos de aplicativo|Desenvolver soluções do SharePoint.|[Requisitos para desenvolver soluções do SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
 ||Adquirir uma licença de desenvolvedor da [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Obter uma licença de desenvolvedor](http://go.microsoft.com/fwlink/?LinkID=241313)|  
-|Caixa de Ferramentas|Adicionar controles COM clássicos à **Caixa de Ferramentas**.|[Usando a caixa de ferramentas](../ide/using-the-toolbox.md)|  
+|Caixa de Ferramentas|Adicionar controles COM clássicos à **Caixa de Ferramentas**.|[Caixa de Ferramentas](../ide/reference/toolbox.md)|  
 |Suplementos|Instalar e usar suplementos escritos usando COM clássico no IDE.|[Criando suplementos e assistentes](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
 |Compilação|Usar eventos pós-compilação que registram um componente.|[Noções básicas sobre etapas e eventos de build personalizados](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 ||Incluir uma etapa de registro ao criar projetos do C++.|[Noções básicas sobre etapas e eventos compilação personalizada](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
