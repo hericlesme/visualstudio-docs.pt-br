@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -21,11 +22,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4113eda7afc2a5509c4f3f19b74628d7a9eb36e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 1c4f90aae0644ec1ff0edad55904360ddddb4be5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -51,10 +52,10 @@ Observe que o grupo **Experimental** contém opções para recursos que ainda es
 | --- | --- | --- |
 | Mostrar a Janela de Saída ao criar ambientes virtuais| On | Desmarque essa opção para impedir que a janela de saída apareça. |
 | Mostrar a Janela de Saída ao instalar ou remover pacotes | On |  Desmarque essa opção para impedir que a janela de saída apareça. |
-| Sempre executar pip como administrador | Off | Sempre eleva as operações `pip install` para todos os ambientes. Ao instalar pacotes, o Visual Studio solicitará privilégios de administrador se o ambiente estiver localizado em uma área protegida do sistema de arquivos como `c:\Program Files`. Nesse prompt, você pode optar por sempre elevar `pip install` apenas para esse ambiente específico. Consulte [Ambientes do Python – guia pip](python-environments.md#pip-tab). |
+| Sempre executar pip como administrador | Off | Sempre eleva as operações `pip install` para todos os ambientes. Ao instalar pacotes, o Visual Studio solicitará privilégios de administrador se o ambiente estiver localizado em uma área protegida do sistema de arquivos como `c:\Program Files`. Nesse prompt, você pode optar por sempre elevar `pip install` apenas para esse ambiente específico. Consulte [Ambientes do Python – guia pip](managing-python-environments-in-visual-studio.md#pip-tab). |
 | Gerar automaticamente o BD de conclusão no primeiro uso | On | Para as [conclusões do IntelliSense](code-editing.md#intellisense) funcionarem para uma biblioteca, o Visual Studio deve gerar um banco de dados de conclusão para essa biblioteca. A criação do banco de dados é feita em segundo plano quando uma biblioteca é instalada, mas não pode ser concluída quando você começa a escrever código. Com esta opção selecionada, o Visual Studio prioriza a conclusão do banco de dados para uma biblioteca quando você escreve código que a usa. |
-| Ignorar variáveis PYTHONPATH de todo o sistema | On | PYTHONPATH é ignorado por padrão porque o Visual Studio fornece um meio mais direto para especificar caminhos de pesquisa em projetos e ambientes. Consulte [Ambientes do Python – caminhos de pesquisa](python-environments.md#search-paths) para obter detalhes. |
-| Atualizar os caminhos de pesquisa ao adicionar arquivos vinculados | On | Quando definido, adicionar um [arquivo vinculado](python-projects.md#linked-files) a um projeto atualiza os [caminhos de pesquisa](python-environments.md#search-paths) para que o IntelliSense possa incluir o conteúdo da pasta do arquivo vinculado em seu banco de dados de conclusão. Desmarque esta opção para excluir o conteúdo do banco de dados de conclusão. |
+| Ignorar variáveis PYTHONPATH de todo o sistema | On | PYTHONPATH é ignorado por padrão porque o Visual Studio fornece um meio mais direto para especificar caminhos de pesquisa em projetos e ambientes. Consulte [Ambientes do Python – caminhos de pesquisa](managing-python-environments-in-visual-studio.md#search-paths) para obter detalhes. |
+| Atualizar os caminhos de pesquisa ao adicionar arquivos vinculados | On | Quando definido, adicionar um [arquivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a um projeto atualiza os [caminhos de pesquisa](managing-python-environments-in-visual-studio.md#search-paths) para que o IntelliSense possa incluir o conteúdo da pasta do arquivo vinculado em seu banco de dados de conclusão. Desmarque esta opção para excluir o conteúdo do banco de dados de conclusão. |
 | Avisar quando o módulo importado não puder ser encontrado | On | Desmarque esta opção para suprimir avisos quando você sabe que um módulo importado não está disponível no momento, mas não afeta a operação do código de outra forma. |
 | Relatar recuo divergente como | Avisos | Como o interpretador do Python depende muito do recuo adequado para determinar o escopo, o Visual Studio por padrão emite avisos quando detecta recuos inconsistentes que podem indicar erros de codificação. Definir como *Erros* para ser ainda mais estrito, o que faz com que o programa saia nesses casos. Para desabilitar esse comportamento completamente, selecione *Não*. |
 | Verificar se há pesquisa/notícias | Uma vez por semana | Define a frequência com que você permite que o Visual Studio possa abrir uma janela contendo uma página da Web com itens de notícias e pesquisas relacionados ao Python, se disponível. As opções são *Nunca*, *Uma vez por dia*, *Uma vez por semana* e *Uma vez por mês*. |
@@ -88,7 +89,7 @@ Observe que o grupo **Experimental** contém opções para recursos que ainda es
 
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
-| Scripts | N/D | Especifica uma pasta geral para scripts de inicialização aplicar a serem aplicados às janelas interativas para todos os ambientes. Consulte [Scripts de inicialização](python-environments.md#startup-scripts). No entanto, observe que esse recurso não funciona no momento. |
+| Scripts | N/D | Especifica uma pasta geral para scripts de inicialização aplicar a serem aplicados às janelas interativas para todos os ambientes. Consulte [Scripts de inicialização](managing-python-environments-in-visual-studio.md#startup-scripts). No entanto, observe que esse recurso não funciona no momento. |
 | As setas para cima e para baixo navegam o histórico | On | Usa as teclas de direção para navegar no histórico na janela interativa. Desmarcar essa configuração para usar as teclas de direção na saída da janela interativa. |
 | Modo de Conclusão | Avaliar somente expressões sem função chamadas | O processo de determinar os membros disponíveis em uma expressão na janela interativa pode exigir a avaliação da expressão incompleta atual, que pode resultar em efeitos colaterais ou funções sendo chamadas várias vezes. A configuração padrão *Avaliar somente expressões sem função chamadas* exclui expressões que aparecem para chamar uma função, mas avaliada outras expressões. Por exemplo, ele avalia `a.b`, mas não `a().b`.  *Nunca avaliar expressões* impede todos os efeitos colaterais, usando apenas o mecanismo IntelliSense normal para obter sugestões. *Avaliar todas as expressões* avalia a expressão completa para obter sugestões, independentemente de efeitos colaterais. |
 | Ocultar sugestões de análise estática | Off | Quando definido, exibe apenas sugestões que são obtidas avaliando a expressão. Se combinado com o Modo de Conclusão *Nunca avaliar expressões*, não aparece nenhuma conclusão útil na janela interativa. |
