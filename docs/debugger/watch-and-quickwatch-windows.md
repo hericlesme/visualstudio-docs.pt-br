@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Definir variáveis usando as janelas de QuickWatch no Visual Studio e observar um observador
-Enquanto você está depurando, você pode usar o **inspecionar** (**Depurar > Windows > Observação > Observação (1, 2, 3, 4)**) e **QuickWatch** (com o botão direito na variável /  **Depurar > QuickWatch**) windows para inspecionar variáveis e expressões.  A diferença é que o **inspecionar** janela pode exibir várias variáveis, enquanto o **QuickWatch** janela exibe uma única variável ao mesmo tempo.
+Enquanto você está depurando, você pode usar o **inspecionar** e **QuickWatch** windows para inspecionar variáveis e expressões.  A diferença é que o **inspecionar** janela pode exibir várias variáveis, enquanto o **QuickWatch** janela exibe uma única variável ao mesmo tempo. 
 
-Os windows estão disponíveis somente durante uma sessão de depuração. 
+Os windows estão disponíveis somente durante uma sessão de depuração. Para abrir o **inspecionar** janela, escolha **Depurar > Windows > Observação > Observação (1, 2, 3, 4)**). Para abrir o **QuickWatch** janela, ou com o botão direito na variável e escolha **QuickWatch** ou escolha **Depurar > QuickWatch**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observando a uma única variável com QuickWatch  
  Você pode usar o **QuickWatch** janela para observar uma única variável. Por exemplo, se você tiver o seguinte código:  
@@ -54,7 +55,7 @@ static void Main(string[] args)
   
 2.  Inicie a depuração. Interrompe a execução no ponto de interrupção.  
   
-3.  Abra o **QuickWatch** janela (com o botão direito em a, escolha **QuickWatch**, ou **SHIFT + F9**).
+3.  Abra o **QuickWatch** janela (com o botão direito em `a`, em seguida, escolha **QuickWatch**, ou selecione `a` e pressione **SHIFT + F9**).
 
     Você deve ver uma variável no **valores** janela, com um valor de 1.
 

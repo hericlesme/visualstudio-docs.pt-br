@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: não foi possível iniciar a depuração no servidor Web
 
@@ -84,8 +86,10 @@ O `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 
 ## <a name="server_error"></a>O servidor remoto retornou um erro
 
-Verifique o código de erro é retornado na mensagem para ajudar a identificar a causa do problema. Aqui estão alguns códigos de erro comuns.
-- Proibido (403). Verifique se você está se conectando para o tipo de servidor correto e a URL (em **Propriedades > Web > servidores** ou **Propriedades > Depurar**, dependendo de seu tipo de projeto). Além disso, verifique se Web. config do servidor inclui `debug=true` no elemento de compilação. Se essas configurações já estiverem corretas, verifique se sua pasta de aplicativo Web tem as permissões da pasta correta. Para obter mais informações, consulte [Verifique a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
+Verifique seu [arquivo de log do IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) para subcódigos de erro e informações adicionais e esta IIS 7 [postagem de blog](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
+
+Além disso, aqui estão alguns dos códigos de erro comuns e algumas sugestões.
+- Proibido (403). Há muitas causas possíveis para esse erro, portanto, verifique o arquivo de log e as configurações de segurança do IIS para o site da web. Certifique-se Web. config do servidor inclui `debug=true` no elemento de compilação. Certifique-se de que sua pasta de aplicativo Web tem as permissões corretas e se a configuração do Pool de aplicativos está correta (uma senha pode ter sido alterado). Consulte [Verifique a configuração do IIS](#vxtbshttpservererrorsthingstocheck). Se essas configurações já estão corretas e você estiver depurando localmente, verifique também se você está se conectando para o tipo de servidor correto e a URL (em **Propriedades > Web > servidores** ou **Propriedades > Depurar**, Dependendo de seu tipo de projeto).
 - Servidor (503) não está disponível. O Pool de aplicativos pode ter parado devido a uma erro ou alteração de configuração. Reinicie o Pool de aplicativos.
 - (404) não encontrado. Certifique-se de que o Pool de aplicativos está configurado para a versão correta do ASP.NET.
 
@@ -125,7 +129,7 @@ Depois de fazer as etapas descritas aqui para resolver o problema e antes de ten
     
 * Verifique se a pasta de aplicativo Web tem as permissões corretas.
 
-    Certifique-se de que você dê IIS_IUSRS, IUSR ou usuário específico associado com a leitura do Pool de aplicativos e direitos para a pasta do aplicativo Web de execução. Corrija o problema e reinicie o Pool de aplicativos.
+    Certifique-se de que você fornecer IIS_IUSRS, IUSR, ou o usuário específico associado a [Pool de aplicativos](/iis/manage/configuring-security/application-pool-identities) de leitura e execução de direitos para a pasta de aplicativo da Web. Corrija o problema e reinicie o Pool de aplicativos.
 
 * Certifique-se de que a versão correta do ASP.NET é instalada no IIS.
 

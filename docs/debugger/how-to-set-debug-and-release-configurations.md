@@ -4,10 +4,12 @@ ms.custom: H1HackMay2017
 ms.date: 04/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.builds
+f1_keywords:
+- vs.debug.builds
 dev_langs:
 - CSharp
 - VB
@@ -30,16 +32,17 @@ helpviewer_keywords:
 - release builds, switching to debug build
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cc63ca48f7c35c382b668d9b7c794a4905b9dac9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca61d09bb1d2ab09c6991f0cd50cc302dff7fb77
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Como: definir depuração e configurações no Visual Studio de versão
 Projetos do Visual Studio têm versão separada e configurações para o programa de depuração. Como o nome sugere, você deve criar a versão de depuração para depuração e a versão de lançamento para a distribuição da versão final.  
@@ -119,5 +122,4 @@ Para obter informações detalhadas sobre configurações de projeto para depura
  [Configurações de projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Configurações do projeto para configurações de depuração de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Configurações do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)   
- [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) (Configurações de projeto de depuração e lançamento)
+ [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
