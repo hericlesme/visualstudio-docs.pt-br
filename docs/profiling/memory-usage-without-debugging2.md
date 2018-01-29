@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,16 +13,17 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e8f4ae16436143999b0a459ba4b039e796f42111
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 1d2f023900735b2e8f3f2235850ab55ec6237efc
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analisar o uso de memória sem o depurador do Visual Studio
 Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o seguinte  
@@ -32,7 +34,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
 -   Comparar instantâneos para encontrar a causa raiz de problemas de memória.  
   
- Este tópico descreve como usar a ferramenta Uso de Memória para analisar um aplicativo XAML universal do Windows. Se você quiser analisar o uso de memória em aplicativos universais do Windows que usam JavaScript e HTML, consulte [Analisar o uso de memória (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+ Este tópico descreve como usar a ferramenta Uso de Memória para analisar um aplicativo UWP XAML. Se você quiser analisar o uso de memória no aplicativo UWP que usa JavaScript e HTML, confira [Analisar o uso de memória (JavaScript)](../profiling/javascript-memory.md).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Iniciar uma a sessão de diagnóstico de uso de memória  
   

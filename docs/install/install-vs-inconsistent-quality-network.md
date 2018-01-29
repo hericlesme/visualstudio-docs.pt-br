@@ -1,25 +1,26 @@
 ---
 title: "Instalar em ambientes de rede não confiável ou de baixa largura de banda | Microsoft Docs"
 description: "Descreve como o instalador do Visual Studio funciona em condições de rede não confiável e explica como baixar os arquivos de instalação antes de iniciar a instalação."
-ms.date: 08/30/2017
-ms.reviewer: tims
+ms.date: 01/17/2018
+ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- '{{PLACEHOLDER}}'
-- '{{PLACEHOLDER}}'
-ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
-author: timsneath
+- installing Visual Studio
+- no internet connection
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b78f51c3b408d5a8c0723779cdf0b2d165aeec1
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Instalar o Visual Studio 2017 em ambientes de rede não confiável ou de baixa largura de banda
 
@@ -32,7 +33,7 @@ Recomendamos que você experimente o novo instalador da Web do Visual Studio&mda
 No entanto, se sua conexão de Internet não está disponível ou não é confiável, é possível usar a linha de comando para criar um cache local dos arquivos necessários para concluir uma instalação offline. Veja como.
 
 > [!NOTE]
-> Se você for um administrador de empresas que deseja executar uma implantação do Visual Studio 2017 em uma rede de estações de trabalho cliente protegidas por um firewall da Internet, consulte nossas páginas [Criar uma instalação de rede do Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) e [Considerações especiais para a instalação do Visual Studio em um ambiente offline](../install/install-visual-studio-in-offline-environment.md).
+> Se você for um administrador de empresas que deseja executar uma implantação do Visual Studio 2017 em uma rede de estações de trabalho cliente protegidas da Internet por firewall, confira nossas páginas [Criar uma instalação de rede do Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) e [Instalar os certificados necessários para a instalação offline do Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
 
 ## <a name="step-1---download-the-visual-studio-bootstrapper"></a>Etapa 1 – Baixar o bootstrapper do Visual Studio
 
@@ -84,8 +85,8 @@ Use este comando para executar a instalação:
 
 ```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
 
-  > [!NOTE]
-  > Caso ocorra um erro indicando que a assinatura é inválida, será necessário instalar certificados atualizados. Abra a pasta Certificados no cache offline. Clique duas vezes em cada um dos arquivos de certificado e, em seguida, clique no assistente do Gerenciador de Certificados. Se for solicitado a fornecer uma senha, deixe-a em branco.
+> [!NOTE]
+> Caso ocorra um erro indicando que a assinatura é inválida, será necessário instalar certificados atualizados. Abra a pasta Certificados no cache offline. Clique duas vezes em cada um dos arquivos de certificado e, em seguida, clique no assistente do Gerenciador de Certificados. Se for solicitado a fornecer uma senha, deixe-a em branco.
 
 ## <a name="list-of-language-locales"></a>Lista de localidades de idioma
 
@@ -93,7 +94,7 @@ Use este comando para executar a instalação:
 | ----------------------- | --------------- |
 | cs-CZ | Tcheco |
 | de-DE | Alemão |
-| pt-BR | Inglês |
+| en-US | Inglês |
 | es-ES | Espanhol |
 | fr-FR | Francês |
 | it-IT | Italiano |

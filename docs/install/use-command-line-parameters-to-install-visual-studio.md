@@ -1,10 +1,11 @@
 ---
 title: "Usar parâmetros de linha de comando para instalar o Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 09/22/2017
+ms.date: 01/17/2018
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,12 +16,13 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Usar parâmetros de linha de comando para instalar o Visual Studio 2017
 Ao instalar o Visual Studio 2017 por meio de um prompt de comando, é possível usar uma variedade de parâmetros de linha de comando para controlar ou personalizar a instalação. Da linha de comando, você pode realizar as seguintes ações:
@@ -40,7 +42,10 @@ As opções de linha de comando são usadas em conjunto com o bootstrapper de in
 
 > Syntax: `vs_enterprise.exe [command] <options>...`
 
-(Substitua `vs_enterprise.exe` conforme apropriado para a edição do produto que você está instalando. Para obter exemplos, consulte a página [Exemplos de parâmetros de linha de comando](command-line-parameter-examples.md).)
+(Substitua `vs_enterprise.exe` conforme apropriado de acordo com a edição do produto que você está instalando.)
+
+>[!TIP]
+> Para obter mais exemplos de como usar a linha de comando para instalar o Visual Studio 2017, confira a página [Exemplos de parâmetro de linha de comando](command-line-parameter-examples.md).
 
 | **Comando** | **Descrição** |
 | ----------------------- | --------------- |
@@ -143,7 +148,6 @@ Aqui estão algumas outras opções de suporte:
 
 ## <a name="see-also"></a>Consulte também
 
- * [Instalar o Visual Studio 2017](install-visual-studio.md)
- * [Criar uma instalação offline do Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Exemplos de parâmetros de linha de comando para a instalação do Visual Studio 2017](command-line-parameter-examples.md)
+ * [Criar uma instalação offline do Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Automatizar a instalação do Visual Studio com um arquivo de resposta](automated-installation-with-response-file.md)

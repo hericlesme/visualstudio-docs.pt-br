@@ -1,13 +1,15 @@
 ---
 title: "Como adicionar ou remover referências usando o Gerenciador de Referências | Microsoft Docs"
 ms.custom: 
-ms.date: 06/21/2017
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ReferenceManager
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
 - Visual C# projects, references
 - references [Visual Studio], adding
@@ -23,12 +25,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 24c317a641fc178306013d8b75c3254f3d3f7b1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 
@@ -198,7 +201,7 @@ Se um tipo de projeto não der suporte para as **Extensões**, a guia não será
 
 É possível usar o botão **Procurar** para procurar um componente no sistema de arquivos.
 
-Um projeto pode referenciar um componente que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um aplicativo que tem como destino o .NET Framework 4 Client Profile, que referencia um componente que tem como destino o .NET Framework 2. Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).
+Um projeto pode referenciar um componente que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você poderia criar um aplicativo direcionado ao .NET Framework 4.7, que referencia um componente direcionado ao .NET Framework 4. Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa tática pode causar erros de compilação. Em vez disso, use a guia **Solução** da caixa de diálogo **Gerenciador de Referências** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
 

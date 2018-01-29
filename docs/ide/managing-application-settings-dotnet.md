@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: msvse_settingsdesigner.err.nameblank
-helpviewer_keywords: application settings [Visual Studio]
+f1_keywords:
+- msvse_settingsdesigner.err.nameblank
+helpviewer_keywords:
+- application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a41ed010a4e950bd0fa4d28f63481587b847309
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fdd95f1890033e90b2679a2c992f3a49ad474851
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="managing-application-settings-net"></a>Gerenciando configurações de aplicativo (.NET)
 
@@ -99,7 +103,7 @@ Você deve explicitamente chamar o método `Save` dessa classe wrapper para pers
 Properties.Settings.Default.Save();
 ```
 
-Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, consulte [Visão geral sobre configurações de aplicativo (.NET Frameword)](/dotnet/framework/winforms/advanced/application-settings-overview). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, confira [Visão geral sobre configurações de aplicativo (.NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Consulte também
 

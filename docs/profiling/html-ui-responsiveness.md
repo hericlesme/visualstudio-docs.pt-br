@@ -4,31 +4,29 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+- JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analisar a capacidade de resposta de interface do usuário HTML em Aplicativos Universais do Windows
 Este tópico descreve como isolar problemas de desempenho nos aplicativos usando o Criador de Perfil de Capacidade de Resposta da Interface do Usuário, uma ferramenta de desempenho disponível para Aplicativos Universais do Windows.  
@@ -42,9 +40,9 @@ Este tópico descreve como isolar problemas de desempenho nos aplicativos usando
 -   Atualizações visuais que são menos frequentes do que o esperado. Isso ocorrerá se o thread de interface de usuário estiver muito ocupado para manter uma taxa de quadros estável. Por exemplo, se o thread de interface de usuário estiver ocupado, os quadros poderão ser ignorados. Qualquer trabalho do thread sem interface de usuário, como solicitações de rede, decodificação de imagens e pinturas, também pode limitar a frequência de atualizações visuais. (Nem toda pintura é executada no thread de interface de usuário.)  
   
 ##  <a name="RunningProfiler"></a> Executar a ferramenta de capacidade de resposta da interface do usuário HTML  
- É possível usar a ferramenta de capacidade de resposta da interface do usuário HTML quando tiver um aplicativo UWP ou Windows 8.1 em execução aberto no Visual Studio ou instalado em um computador executando o Windows 8 ou posterior.  
+ Use a ferramenta de Capacidade de Resposta de IU em HTML quando tiver um aplicativo UWP de trabalho aberto no Visual Studio.  
   
-1.  Se você estiver executando o aplicativo no Visual Studio, na barra de ferramentas **Padrão**, na lista **Iniciar Depuração**, escolha um destino de implantação, como um dos emuladores do Windows Phone, **Computador Local**, **Simulador** ou **Computador Remoto**.  
+1.  Se você estiver executando o aplicativo no Visual Studio, na barra de ferramentas **Padrão**, na lista **Iniciar Depuração**, escolha um destino de implantação como **Máquina Local** ou **Dispositivo**.  
   
 2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
   

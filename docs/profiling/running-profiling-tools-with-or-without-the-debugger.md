@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Executando ferramentas de criação de perfil com ou sem o depurador
 O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas das quais (por exemplo, **Utilização de CPU** e **Uso de Memória**) podem ser executadas com ou sem o depurador. Ferramentas de desempenho de não depurador não devem ser executadas em configurações de versão, enquanto ferramentas integradas ao depurador destinam-se a ser executadas em configurações de depuração.  
@@ -77,7 +79,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
 2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...** (Tecla de atalho: Alt + F2).  
   
-3.  Na página de inicialização de diagnóstico, escolha uma ou mais ferramentas para executar na sessão. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Quando você escolhe uma ferramenta de diagnóstico, as seleções de ferramentas que não podem ser executadas na mesma sessão de diagnóstico são desabilitadas. Veja aqui suas possíveis suas escolhas para um aplicativo Universal do Windows C#:  
+3.  Na página de inicialização de diagnóstico, escolha uma ou mais ferramentas para executar na sessão. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Quando você escolhe uma ferramenta de diagnóstico, as seleções de ferramentas que não podem ser executadas na mesma sessão de diagnóstico são desabilitadas. Veja aqui como suas escolhas podem parecer para um aplicativo UWP em C#:  
   
      ![Selecionar as ferramentas de diagnóstico](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
@@ -123,7 +125,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
  ![Especifique a URL a ser exibida no Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Depuração remota  
- Executar uma sessão de diagnóstico em um computador ou tablet remoto exige que as Ferramentas Remotas do Visual Studio estejam instaladas e em execução no destino remoto. Para aplicativos de área de trabalho, consulte [Depuração remota](../debugger/remote-debugging.md).  Para aplicativos universais do Windows, consulte [Run UWP apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md) (Executar aplicativos UWP em um computador remoto).  
+ Executar uma sessão de diagnóstico em um computador ou tablet remoto exige que as Ferramentas Remotas do Visual Studio estejam instaladas e em execução no destino remoto. Para aplicativos de área de trabalho, consulte [Depuração remota](../debugger/remote-debugging.md).  Para aplicativos UWP, confira [Executar aplicativos UWP em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Postagens em blogs e artigos do MSDN da equipe de desenvolvimento de Diagnóstico  
  [MSDN Magazine: análise do desempenho durante a depuração no Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  

@@ -1,20 +1,20 @@
 ---
-title: "Visão geral do IDE do Visual Studio | Microsoft Docs"
+title: "Visão geral do Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Visão geral do IDE do Visual Studio
 
@@ -32,7 +32,7 @@ Se preferir, basta abrir algum código obtido praticamente de qualquer lugar e c
 
 É possível criar aplicativos móveis nativos para diferentes plataformas usando o Visual C# e o Xamarin ou o Visual C++ ou aplicativos híbridos usando o JavaScript com o Apache Cordova. É possível escrever jogos móveis para o Unity, Unreal, DirectX, Cocos e muito mais. O Visual Studio inclui um emulador do Android para ajudá-lo a executar e depurar aplicativos Android.
 
-É possível aproveitar o poder da nuvem para seus aplicativos móveis criando serviços de aplicativos do Azure. Os serviços de aplicativos do Azure permitem que os aplicativos armazenem dados na nuvem, autentiquem usuários com segurança e escalem ou reduzam verticalmente seus recursos de forma automática para acomodar as necessidades do aplicativo e dos negócios. Para saber mais, consulte [Desenvolvimento de aplicativos móveis](https://www.visualstudio.com/vs/mobile-app-development/).
+É possível aproveitar o poder da nuvem para seus aplicativos móveis criando serviços de aplicativos do Azure. Os serviços de aplicativos do Azure permitem que os aplicativos armazenem dados na nuvem, autentiquem usuários com segurança e escalem ou reduzam verticalmente seus recursos de forma automática para acomodar as necessidades do aplicativo e dos negócios. Para saber mais, confira [Desenvolvimento de aplicativos móveis](https://www.visualstudio.com/vs/mobile-app-development/).
 
 ### <a name="create-cloud-apps-for-azure"></a>Criar aplicativos na nuvem para o Azure
 
@@ -96,7 +96,7 @@ Ao iniciar o Visual Studio pela primeira vez, opcionalmente, é possível entrar
 
 Uma boa maneira de aprender sobre algo é usá-lo! Vamos nos aprofundar e criar um novo programa simples.
 
-1. Abra o Visual Studio. No menu, escolha **Arquivo**, **Novo**, **Projeto**.
+1. Abra o Visual Studio. No menu, escolha **Arquivo** > **Novo** > **Projeto**.
 
   ![captura de tela](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -104,11 +104,14 @@ Uma boa maneira de aprender sobre algo é usá-lo! Vamos nos aprofundar e criar 
 
 1. A caixa de diálogo **Novo Projeto** mostra vários modelos de projeto. Escolha a categoria **Universal do Windows** em **Visual C#**, escolha o modelo **Aplicativo em Branco (Universal do Windows)** e, em seguida, o botão **OK**.
 
-  ![captura de tela](../ide/media/VSIDE_Tour_NewProject2.png)
+  > [!NOTE]
+  > Se você não vir a categoria **Universal do Windows**, será necessário instalar a carga de trabalho **Desenvolvimento na Plataforma Universal do Windows**. Para fazer isso, escolha o link **Abrir o Instalador do Visual Studio** na parte inferior esquerda da caixa de diálogo **Novo Projeto**. Após o **Instalador do Visual Studio** abrir, selecione a carga de trabalho **Desenvolvimento na Plataforma Universal do Windows** e, em seguida, escolha **Modificar**.
+
+  ![Modelo de aplicativo em branco UWP](../ide/media/new-uwp-blank-app-template.png)
 
   Isso cria um novo projeto de aplicativo em branco Universal do Windows usando o Visual C# e XAML como as linguagens de programação. Aguarde um pouco enquanto o Visual Studio configura o projeto para você. Se você precisar fornecer alguma informação, basta aceitar os valores padrão por enquanto.
 
-1. Na caixa de diálogo **Novo Projeto Universal do Windows**, aceite os padrões escolhendo **OK**.
+1. Na caixa de diálogo **Novo Projeto de Plataforma Universal do Windows**, aceite os padrões escolhendo **OK**.
 
 1. Em breve, você deverá ver algo parecido com a captura de tela a seguir. Os arquivos de projeto são listados no lado direito em uma janela chamada Gerenciador de Soluções.
 
@@ -140,7 +143,7 @@ Uma boa maneira de aprender sobre algo é usá-lo! Vamos nos aprofundar e criar 
 
   ![captura de tela](../ide/media/VSIDE_Tour_XAMLButton2.png)
 
-1. Agora, inicie o aplicativo. É possível fazer isso ao clicar no botão **Iniciar** (![botão Iniciar](../ide/media/VSIDE_StartButton.png)) na barra de ferramentas ou na tecla **F5** ou, no menu, escolhendo **Depurar**, **Iniciar Depuração**.
+1. Agora, inicie o aplicativo. É possível fazer isso ao clicar no botão **Iniciar** (![botão Iniciar](../ide/media/VSIDE_StartButton.png)) na barra de ferramentas ou na tecla **F5** ou, no menu, escolhendo **Depurar** > **Iniciar Depuração**.
 
   ![captura de tela](../ide/media/VSIDE_Tour_RunButton.png)
 
@@ -248,7 +251,7 @@ A escolha de um serviço na página **Serviços Conectados** inicia um Assistent
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o Gerenciador de Servidores, no menu principal, escolha **Exibir**, **Gerenciador de Servidores**. Consulte [Adicionar novas conexões](../data-tools/add-new-connections.md) para obter mais informações sobre como usar o Gerenciador de Servidores.
+O **Gerenciador de Servidores** ajuda você a procurar e a gerenciar ativos e instâncias do SQL Server locais, remotos e no Azure, no Salesforce.com, no Office 365 e em sites. Para abrir o Gerenciador de Servidores, no menu principal, escolha **Exibir** > **Gerenciador de Servidores**. Consulte [Adicionar novas conexões](../data-tools/add-new-connections.md) para obter mais informações sobre como usar o Gerenciador de Servidores.
 
 O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, Banco de Dados SQL do Azure e Azure SQL Data Warehouse. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 
@@ -257,6 +260,7 @@ O **Pesquisador de Objetos do SQL Server** no Visual Studio fornece uma exibiç�
 ![Pesquisador de Objetos do SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Estenda o Visual Studio
+
 Se o Visual Studio não tiver a funcionalidade exata de que você precisa, será possível adicioná-la! É possível personalizar o IDE de acordo com o estilo e fluxo de trabalho, adicionar suporte para ferramentas externas que ainda não estão integradas ao Visual Studio e modificar a funcionalidade existente para aumentar a produtividade. Para encontrar a versão mais recente das Ferramentas de Extensibilidade do Visual Studio (SDK do VS), confira [Visual Studio SDK](../extensibility/visual-studio-sdk.md) (SDK do Visual Studio).
 
 Você pode usar o Plataforma de Compilador .NET (Roslyn) para escrever seus próprios analisadores e geradores de código. Encontre tudo o que você precisa em [Roslyn](https://github.com/dotnet/Roslyn).

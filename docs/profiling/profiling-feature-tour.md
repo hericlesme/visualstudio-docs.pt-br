@@ -4,21 +4,24 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>Tour pelos recursos de criação de perfil
 
@@ -32,7 +35,7 @@ Durante a depuração, é possível usar a janela **Ferramentas de Diagnóstico*
 
 ![Exibição do Resumo de Ferramentas de Diagnóstico](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Resumo de Ferramentas de Diagnóstico")
 
-A janela **Ferramentas de Diagnóstico** costuma ser a maneira preferencial de criar perfil de aplicativos, mas também é possível fazer uma análise post-mortem do aplicativo. Se desejar obter mais informações sobre diferentes abordagens, consulte [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+A janela **Ferramentas de Diagnóstico** costuma ser a maneira preferencial para criar perfis de aplicativos, mas para builds de Versão também é possível fazer uma análise post-mortem do aplicativo. Se desejar obter mais informações sobre diferentes abordagens, consulte [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Para ver o suporte à ferramentas de criação de perfil para tipos diferentes de aplicativo, confira [Qual ferramenta devo usar?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
 
@@ -44,11 +47,11 @@ Na exibição **Resumo** das Ferramentas de Diagnóstico, escolha **Habilitar Cr
 
 Para usar a ferramenta com mais eficiência, defina dois pontos de interrupção no código: um no início e outro no final da função ou na região de código que você deseja analisar. Examine os dados de criação de perfil quando eles estiverem em pausa no segundo ponto de interrupção.
 
-A exibição **Uso da CPU** mostra uma lista de funções ordenadas pela execução mais longa, com a função de execução mais longa na parte superior. Isso pode ajudar a levá-lo para as funções em que estão ocorrendo afunilamentos de desempenho.
+A exibição **Uso da CPU** mostra uma lista de funções ordenadas pela execução mais longa, com a função de execução mais longa na parte superior. Isso pode ajudar a levá-lo para as funções em que estão ocorrendo gargalos de desempenho.
 
 ![Exibição de Uso da CPU das Ferramentas de Diagnóstico](../profiling/media/prof-tour-cpu-usage.png "Uso da CPU das Ferramentas de Diagnóstico")
 
-Clique duas vezes em uma função de interesse e você verá uma exibição "borboleta" de três painéis mais detalhada, com a função selecionada no centro da janela, a função de chamada à esquerda e as funções chamadas à direita. A seção **Corpo da função** também mostra o tempo total (e o percentual de tempo) gasto no corpo da função, excluindo o tempo gasto nas funções de chamada e nas funções chamadas. Esses dados podem ajudá-lo a avaliar se a própria função é um afunilamento de desempenho.
+Clique duas vezes em uma função de interesse e você verá uma exibição "borboleta" de três painéis mais detalhada, com a função selecionada no centro da janela, a função de chamada à esquerda e as funções chamadas à direita. A seção **Corpo da função** também mostra o tempo total (e o percentual de tempo) gasto no corpo da função, excluindo o tempo gasto nas funções de chamada e nas funções chamadas. Esses dados podem ajudá-lo a avaliar se a própria função é um gargalo de desempenho.
 
 ![Exibição "borboleta" de Computador Chamado do Chamador das Ferramentas de Diagnóstico](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Exibição de Computador Chamado do Chamador das Ferramentas de Diagnóstico")
 
@@ -115,17 +118,17 @@ Ao selecionar um período nos gráficos e escolher **Exibir detalhes**, uma exib
 
 ![Ferramenta de criação de perfil de Uso de GPU](../profiling/media/prof-tour-gpu-usage.png "Uso de GPU de Diagnóstico")
 
-Também é possível usar os gráficos para determinar se há afunilamentos de desempenho limitados à CPU ou à GPU.
+Também é possível usar os gráficos para determinar se há gargalos de desempenho limitados à CPU ou à GPU.
 
 ## <a name="analyze-performance-javascript"></a>Analisar o desempenho (JavaScript)
 
-Para aplicativos HTML Universais do Windows, é possível usar as ferramentas Memória JavaScript e Capacidade de Resposta de Interface do Usuário HTML.
+Para aplicativos UWP, é possível usar a ferramenta Memória JavaScript e a ferramenta Capacidade de Resposta de IU em HTML.
 
 A ferramenta Memória JavaScript é semelhante à ferramenta Uso de Memória disponível para outros tipos de aplicativos. É possível usar essa ferramenta para entender o uso de memória e encontrar perdas de memória no aplicativo. Para obter mais detalhes sobre a ferramenta, consulte [Memória JavaScript](../profiling/javascript-memory.md).
 
 ![Ferramenta de criação de perfil de Memória JavaScript](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-Para diagnosticar a capacidade de resposta de interface do usuário, tempo de carregamento lento e atualizações lentas de visual em aplicativos HTML Universais do Windows, use a ferramenta Capacidade de Resposta de Interface do Usuário HTML. O uso é semelhante à ferramenta Linha do Tempo do Aplicativo para outros tipos de aplicativos. Para obter mais informações, consulte [Capacidade de resposta de interface do usuário HTML](../profiling/html-ui-responsiveness.md).
+Para diagnosticar a capacidade de resposta de IU, tempo de carregamento lento e atualizações visuais lentas em aplicativos UWP, use a ferramenta Capacidade de Resposta de IU em HTML. O uso é semelhante à ferramenta Linha do Tempo do Aplicativo para outros tipos de aplicativos. Para obter mais informações, consulte [Capacidade de resposta de interface do usuário HTML](../profiling/html-ui-responsiveness.md).
 
 ![Ferramenta de criação de perfil de capacidade de resposta da interface do usuário HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
@@ -151,7 +154,7 @@ Se você precisar de recursos, como instrumentação, que não estão atualmente
 
 Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio oferece e os diferentes tipos de projeto com os quais você poderá usá-las:
   
-|Ferramenta de Desempenho|Área de Trabalho do Windows|Windows Universal/Store|ASP.NET/ASP.NET Core|  
+|Ferramenta de Desempenho|Área de Trabalho do Windows|UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|  
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|Sim (não para .NET Core/ASP.NET Core)|  

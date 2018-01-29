@@ -1,55 +1,77 @@
 ---
-title: Caixa de Ferramentas | Microsoft Docs
+title: Janela Caixa de Ferramentas no Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
 helpviewer_keywords:
-- Toolbox
-- Toolbox, adding controls
-- Toolbox, moving items
-ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
-caps.latest.revision: "34"
+- Toolbox [Visual Studio]
+- custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 50c9cc96d501eb6d7d10ab31f48600eb65eb57a7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
-A **Caixa de Ferramentas** exibe ícones de controles e outros itens que você pode adicionar a projetos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para abrir a **Caixa de Ferramentas**, clique em **Caixa de Ferramentas** no menu **Exibir**. Você pode encaixar a **Caixa de Ferramentas** e pode fixá-la aberta ou configurá-la para **Ocultar Automaticamente**.  
-  
- Ícones da **Caixa de Ferramentas** podem ser arrastados para o modo de exibição de Design ou colados em um editor de código. As duas ações adicionam o código fundamental para criar uma instância do item de **Caixa de Ferramentas** no arquivo de projeto ativo.  
-  
- A **Caixa de Ferramentas** exibe apenas os itens que são apropriados para o tipo de arquivo em que você está trabalhando. Você pode pesquisar na Caixa de Ferramentas para filtrar ainda mais os itens que aparecem. Se o projeto exigir um controle que não tem suporte do Perfil de Cliente, você pode configurar o projeto para ter como destino a estrutura inteira editando as propriedades do projeto.  
-  
+
+A janela **Caixa de Ferramentas** exibe os controles que você pode adicionar a projetos do Visual Studio. Para abrir a Caixa de Ferramentas, escolha **Caixa de Ferramentas** no menu **Exibir**.
+
+![Janela caixa de ferramentas](media/toolbox.png)
+
+Você pode arrastar e soltar diferentes controles na superfície do designer que você está usando, redimensionar e posicionar os controles.
+
+A Caixa de Ferramentas aparece com as exibições de designer, como a exibição de designer de um arquivo XAML. A Caixa de Ferramentas exibe apenas os controles que podem ser usados ​​no designer atual. Você pode pesquisar na Caixa de Ferramentas para filtrar ainda mais os itens que aparecem.
+
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="help-on-toolbox-tabs"></a>Ajuda sobre as guias da Caixa de Ferramentas  
- Os documentos a seguir fornecem mais informações sobre guias específicas da **Caixa de Ferramentas**.  
-  
--   [Caixa de Ferramentas, Guia Dados](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
-  
--   [Caixa de Ferramentas, Guia Componentes](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
-  
--   [Caixa de Ferramentas, Guia HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
-  
--   [Caixa de Ferramentas, Guia Dados](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
-  
--   [Caixa de Ferramentas, Guia Componentes](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
-  
--   [Caixa de Ferramentas, Guia HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
-  
-## <a name="see-also"></a>Consulte também  
- [Usando a caixa de ferramentas](../../ide/using-the-toolbox.md)
+> Para alguns tipos de projeto, talvez a Caixa de Ferramentas não mostre todos os itens.
+
+A versão do .NET Framework direcionada pelo seu projeto também afeta o conjunto de controles visíveis na Caixa de Ferramentas. Você pode definir seu projeto para direcionar para uma versão diferente do .NET Framework nas páginas de propriedades do projeto. Selecione o nó do projeto no **Gerenciador de Soluções** e na barra de menus, escolha **Projeto** > **\<projeto\> Propriedades**. Na guia **Aplicativo**, use o menu suspenso **Estrutura de destino**.
+
+## <a name="managing-the-toolbox-window-and-its-controls"></a>Gerenciar a janela Caixa de Ferramentas e seus controles
+
+Por padrão, a Caixa de Ferramentas fica recolhida no lado esquerdo do IDE do Visual Studio e aparece quando o cursor é movido sobre ela. É possível fixar a Caixa de Ferramentas (clicando no ícone **Fixar** na barra de ferramentas dela) para que ela permaneça aberta quando você move o cursor. Você também pode desencaixar a janela da Caixa de Ferramentas e arrastá-la para qualquer lugar na tela. Você pode encaixar, desencaixar e ocultar a Caixa de Ferramentas, clicando com o botão direito na barra de ferramentas dela e selecionando uma das opções.
+
+Você pode reorganizar os itens em uma guia de Caixa de Ferramentas ou adicionar guias e itens personalizados usando os seguintes comandos no menu de contexto:
+
+- **Renomear Item** – renomeia o item selecionado.
+
+- **Mostrar Todos** – mostra todos os controles possíveis (e não apenas os que se aplicam ao designer atual).
+
+- **Exibição de Lista** – mostra os controles em uma lista vertical. Se todas as opções estiverem desmarcadas, os controles aparecem na horizontal.
+
+- **Escolher Itens** – abre a caixa de diálogo **Escolher Itens da Caixa de Ferramentas** para que você possa especificar os itens que aparecem na **Caixa de Ferramentas**. Você pode mostrar ou ocultar um item, marcando ou desmarcando a caixa de seleção.
+
+- **Classificar itens em ordem alfabética** – classifica os itens por nome.
+
+- **Redefinir barra de ferramentas**: restaura as configurações e itens padrão da Caixa de Ferramentas.
+
+- **Adicionar Guia**: adiciona uma nova guia da Caixa de Ferramentas.
+
+- **Mover para Cima** – move o item selecionado para cima.
+
+- **Mover para Baixo** – move o item selecionado para baixo.
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>Criar e distribuir controles personalizados da Caixa de Ferramentas
+
+Você pode criar controles personalizados da Caixa de Ferramentas, começando com um modelo de projeto baseado no [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) ou no [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Depois, você pode distribuir o controle personalizado para seus colegas de equipe ou publicá-lo na Web usando o [Instalador de Controles da Caixa de Ferramentas](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+
+## <a name="help-on-toolbox-tabs"></a>Ajuda sobre as guias da Caixa de Ferramentas
+
+Os tópicos a seguir fornecem mais informações sobre algumas das guias disponíveis na **Caixa de Ferramentas**.
+
+- [Caixa de Ferramentas, Guia Dados](../../ide/reference/toolbox-data-tab.md)
+
+- [Caixa de Ferramentas, Guia Componentes](../../ide/reference/toolbox-components-tab.md)
+
+- [Caixa de Ferramentas, Guia HTML](../../ide/reference/toolbox-html-tab.md)

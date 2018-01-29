@@ -20,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>Trechos de código
 
@@ -35,7 +36,7 @@ Trechos de código são pequenos blocos de código reutilizável que podem ser i
 
 Há dois tipos de trecho de código no Visual Studio: trechos de expansão, que são adicionados a um ponto de inserção especificado e podem substituir um atalho de trecho; e trechos Surround-with (somente C# e C++), que são adicionados ao redor de um bloco de código selecionado.
 
-Um exemplo de um trecho de inserção: em C#, o atalho tryf é usado para inserir um bloco try-finally:
+Um exemplo de um trecho de expansão: em C#, o atalho tryf é usado para inserir um bloco try-finally:
 
 ```csharp
 try

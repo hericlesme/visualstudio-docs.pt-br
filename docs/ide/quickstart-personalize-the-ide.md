@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef88495e4251376a7b2f297293ce865f3917c7e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e5195693a4ef2ba3aeec1f2d5751e56b70f19e57
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Início rápido: personalizar o Editor e o IDE do Visual Studio
+# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Início rápido: Personalizar o Editor e o IDE do Visual Studio
 
 Neste guia de início rápido de 5 a 10 minutos, nós personalizaremos o tema de cores do Visual Studio e duas cores de texto no Editor de Texto.
 
@@ -98,9 +100,9 @@ Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esper
 
 ## <a name="see-also"></a>Consulte também
 
-[Início rápido: introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Guia de início rápido: codificação no editor](../ide/quickstart-editor.md)  
-[Guia de início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)  
+[Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Início rápido: Codificação no editor](../ide/quickstart-editor.md)  
+[Início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)  
 [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
 [Personalizando o editor](../ide/customizing-the-editor.md)  
 [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)

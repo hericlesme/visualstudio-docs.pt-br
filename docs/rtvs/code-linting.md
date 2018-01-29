@@ -1,36 +1,41 @@
 ---
 title: "Fazendo linting do código R com as Ferramentas do R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 01/15/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
-f1_keywords: vs.toolsoptionspages.text_editor.r.lint
+f1_keywords:
+- vs.toolsoptionspages.text_editor.r.lint
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 76f4ceb040e62e4ebac46e8a791f5dac0d73aff5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: b7fcd958c1bed744f40c1a726e6bec4f86d307df
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Fazendo linting do código R no Visual Studio
 
-O linting é um processo que analisa o código para revelar eventuais erros, tais como problemas de formatação e outros ruídos nos arquivos de código (como espaço em branco falso). O linting também ajuda a incentivar certas convenções de codificação como a maneira pela qual os identificadores são nomeados, o que é muito útil dentro de equipes e de outras situações colaborativas.
+O linting é um processo que analisa o código para revelar possíveis erros, problemas de formatação e outros ruídos no código, como espaço em branco falso. O linting também ajuda a incentivar certas convenções de codificação como a maneira pela qual os identificadores são nomeados, o que é muito útil dentro de equipes e de outras situações colaborativas.
 
-As RTVS (Ferramentas do R para Visual Studio) fornecem linting interno para R, cujo comportamento é controlado por meio de uma variedade de opções. Essas opções são encontradas em **Ferramenta > Opções > Editor de texto > R > Lint**.
+As RTVS (Ferramentas do R para Visual Studio) fornecem linting interno para R, cujo comportamento é controlado por meio de várias opções descritas neste artigo. Essas opções são encontradas em **Ferramenta > Opções > Editor de texto > R > Lint**.
 
-O linting está desabilitado por padrão. Para habilitar o linting, defina a opção **Tudo > Habilitar lint** como true. As seções a seguir neste tópico descrevem todas as outras opções de linting:
+O linting está desabilitado por padrão. Para habilitar o linting, defina a opção **Tudo > Habilitar lint** como true.
 
 Quando habilitado, o linting é aplicado no editor enquanto você digita. Os problemas são exibidos como rabiscos verdes. No gráfico a seguir, por exemplo, as RTVS identificaram seis problemas de linting, incluindo o uso de `=` em vez de `<-` para uma atribuição, falta de espaçamento em torno de argumentos da função, uso de identificadores em Pascal e em maiúsculas e uso de um ponto e vírgula. Passar o mouse sobre um problema fornece uma descrição.
 
 ![Exemplos de linting para o código R](media/linting-01.png)
+
+Geralmente, você altera as opções de linting dependendo das necessidades de um arquivo ou projeto. Por exemplo, o código de exemplo de um curso online pode usar `=` em vez de `<-`, junto com identificadores de formatação Pascal. Esse código mostraria avisos frequentes de linting, pois as opções padrão de linting sinalizam esses casos. Ao trabalhar com esse código, você pode simplesmente desabilitar as opções em vez de gastar tempo corrigindo cada instância.
 
 ## <a name="assignment-group"></a>Grupo de atribuição
 

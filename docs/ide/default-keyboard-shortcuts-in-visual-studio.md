@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 06/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,19 +17,20 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 Para obter mais informações sobre acessibilidade de teclado, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como usar o teclado de forma exclusiva](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhendo o atalho de teclado apropriado. Este tópico lista os atalhos padrão para o perfil Desenvolvimento Geral, que você pode ter escolhido quando instalou o Visual Studio. Não importa qual o perfil escolhido, é possível identificar o atalho de um comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e escolhendo **Teclado**. Também é possível personalizar seus atalhos atribuindo um atalho diferente a qualquer comando.
 
-Para obter uma lista dos atalhos de teclado comuns e outras informações sobre produtividade, consulte [Atalhos de teclado padrão para comandos usados com frequência no Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Dicas e Truques](../ide/tips-and-tricks-for-visual-studio.md) e [Dicas de Produtividade](../ide/productivity-tips-for-visual-studio.md).
+Para obter uma lista dos atalhos de teclado comuns e outras informações sobre produtividade, confira [Atalhos de teclado padrão para comandos usados com frequência no Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Dicas de teclado](../ide/tips-and-tricks-for-visual-studio.md) e [Dicas de Produtividade](../ide/productivity-tips-for-visual-studio.md).
 
 As seções na tabela a seguir incluem comandos que são globais e, desse modo, você pode acessar de qualquer lugar no Visual Studio usando os atalhos de teclado:
 

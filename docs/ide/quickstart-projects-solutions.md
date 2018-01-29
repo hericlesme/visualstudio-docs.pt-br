@@ -10,14 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-projects-and-solutions"></a>Guia de início rápido: projetos e soluções
+# <a name="quickstart-projects-and-solutions"></a>Início rápido: Projetos e soluções
 
 Neste guia de início rápido de 10 minutos, vamos explorar o que significa criar uma solução e um projeto no Visual Studio. Vamos examinar as propriedades de um projeto e alguns dos arquivos que ele pode conter. Também vamos criar uma referência a um segundo projeto.
 
@@ -62,7 +63,7 @@ Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um
    Um projeto chamado “QuickDate” aparecerá abaixo da solução no **Gerenciador de Soluções**. Atualmente, ele contém um único arquivo chamado **App.config**.
 
    > [!NOTE]
-   > Se você não vir a opção **Visual C#** no painel esquerdo da caixa de diálogo, será necessário instalar a carga de trabalho **Desenvolvimento de área de trabalho do .NET**. Uma maneira fácil de fazer isso é clicar no link **Abrir Instalador do Visual Studio** na parte inferior do painel esquerdo. O **Instalador do Visual Studio** é aberto e, daí, você pode escolher a carga de trabalho correta e, em seguida, o botão **Modificar**.
+   > Se você não vir a opção **Visual C#** no painel esquerdo da caixa de diálogo, será necessário instalar a carga de trabalho **Desenvolvimento de área de trabalho do .NET**. Uma maneira fácil de fazer isso é escolher o link **Abrir Instalador do Visual Studio** no canto inferior esquerdo da caixa de diálogo. Após o início do **Instalador do Visual Studio**, escolha a carga de trabalho **Desenvolvimento para área de trabalho em .NET** e, em seguida, o botão **Modificar**.
 
    ![Abrir o link do Instalador do Visual Studio](media/quickstart-projects-open-installer.png)
 
@@ -182,9 +183,9 @@ Parabéns por concluir este guia de início rápido! Logo depois, talvez você q
 
 ## <a name="see-also"></a>Consulte também
 
-[Início rápido: introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Início rápido: personalizar o Editor e o IDE do Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Guia de início rápido: codificação no editor](../ide/quickstart-editor.md)  
+[Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Início rápido: Personalizar o Editor e o IDE do Visual Studio](../ide/quickstart-personalize-the-ide.md)  
+[Início rápido: Codificação no editor](../ide/quickstart-editor.md)  
 [Gerenciando propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)  
 [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)  
 [Desenvolver código no Visual Studio sem projetos ou soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
