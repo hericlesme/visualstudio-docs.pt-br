@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspecionar variáveis nos Autos e janelas de locais no Visual Studio
 O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **Depurar > Windows > Autos**) e o **locais** janela (durante a depuração **CTRL + ALT + V, L**, ou **Depurar > Windows > locais**) são muito úteis quando você deseja ver os valores de variáveis enquanto está depurando. O **locais** janela exibe as variáveis definidas no escopo local, que geralmente é a função ou método que está sendo executado atualmente. O **Autos** janela exibe variáveis usadas ao redor da linha atual (o local onde o depurador está parado). Exatamente quais variáveis são exibidos nessa janela são diferentes em idiomas diferentes. Consulte [o que as variáveis que aparecem na janela Autos?](#bkmk_whatvariables) abaixo.  
@@ -33,14 +35,14 @@ Se você precisar de mais informações sobre depuração básica, consulte [gui
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinando objetos na janela Autos e locais  
 Matrizes e objetos são exibidos na janela Autos e locais, como controles de árvore. Clique na seta à esquerda do nome da variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de um [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) objeto o **locais** janela:  
   
-![Locais &#45; FileStream](../debugger/media/locals-filestream.png "FileStream locais")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="bkmk_whatvariables"></a>Quais variáveis são exibidos na janela Autos?  
  Você pode usar o **Autos** janela no código c#, Visual Basic e C++. O **Autos** não tem suporte JavaScript ou F #.  
   
  Em c# e Visual Basic, o **Autos** janela exibe qualquer variável usada na linha atual ou anterior. Por exemplo, se você declara quatro variáveis e defini-las da seguinte maneira:
 
-```CSharp
+```csharp
     public static void Main()
     {
        int a, b, c, d;
@@ -53,7 +55,7 @@ Matrizes e objetos são exibidos na janela Autos e locais, como controles de ár
 
  Se você definir um ponto de interrupção na linha `c = 3`; e executar o depurador, quando a execução é interrompida a **Autos** janela terá esta aparência:  
 
- ![Autos &#45; CSharp](../debugger/media/autos-csharp.png "CSharp Autos")  
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
 
  Observe que o valor de `c` é 0, porque a linha `c = 3` ainda não foi executada.  
 
@@ -73,7 +75,7 @@ Matrizes e objetos são exibidos na janela Autos e locais, como controles de ár
 
  Se você definir um ponto de interrupção na linha `e = 5;` e executar o depurador, quando a execução é interrompida a **Autos** janela terá esta aparência:  
   
- ![Autos &#45; Cplus](../debugger/media/autos-cplus.png "Cplus Autos")  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Observe que a variável não foi inicializada porque o código na linha `e = 5;` ainda não foi executada.  
   
@@ -84,7 +86,7 @@ Matrizes e objetos são exibidos na janela Autos e locais, como controles de ár
   
  O código c# a seguir adiciona os valores de retorno das duas funções:  
 
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b, c, d;  

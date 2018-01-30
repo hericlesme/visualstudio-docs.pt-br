@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
 Familiarize-se com os comandos e atalhos para navegar pelo código no depurador e que tornará mais rápida e fácil de localizar e resolver problemas em seu aplicativo. Enquanto você navegar pelo código no depurador, você pode inspecionar o estado do seu aplicativo ou saber mais sobre o seu fluxo de execução.  
@@ -32,13 +35,13 @@ Familiarize-se com os comandos e atalhos para navegar pelo código no depurador 
   
  A seta verde também inicia o depurador (mesmo que **F5**).  
   
- ![DBG &#95; Noções básicas sobre &#95; Iniciar &#95; depuração](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Outras maneiras que você pode iniciar o aplicativo com o depurador anexado incluem **F11** ([intervir código](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([passar sobre código](#BKMK_Step_over_Step_out)), ou usando **executar até o Cursor**.  Consulte as outras seções neste tópico para obter informações sobre o que fazem essas opções.  
   
  Quando você depura, a linha amarela mostra o código que executará a seguir.  
   
- ![DBG &#95; Noções básicas sobre &#95; Quebra &#95; Modo](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Durante a depuração, você pode alternar entre os comandos **F5**, **F11** e usar outros recursos descritos neste tópico (como pontos de interrupção) para obter o código que você deseja examinar rapidamente.  
   
@@ -56,7 +59,7 @@ Familiarize-se com os comandos e atalhos para navegar pelo código no depurador 
   
 -   O depurador avança realmente com as instruções de código em vez de linhas físicas. Por exemplo, uma cláusula `if` pode ser gravada em uma linha:  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -78,7 +81,7 @@ Familiarize-se com os comandos e atalhos para navegar pelo código no depurador 
 |Comando de teclado|Menu Comando|Descrição|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Depuração parcial**|Se a linha atual contiver uma chamada de função **contornar** executa o código, em seguida, suspende a execução na primeira linha de código após a função chamada retorna.|  
-|**SHIFT + F11.**|**Sair**|**Sair** continua a execução do código e suspende a execução quando a função atual retorna (ignora depurador por meio da função atual).|  
+|**Shift+F11**|**Sair**|**Sair** continua a execução do código e suspende a execução quando a função atual retorna (ignora depurador por meio da função atual).|  
   
 > [!TIP]
 >  Se você precisa localizar o ponto de entrada em seu aplicativo, inicie com **F10** ou **F11**. Esses comandos geralmente são úteis quando você estiver verificando o estado do aplicativo ou ao tentar encontrar mais informações sobre seu fluxo de execução.  

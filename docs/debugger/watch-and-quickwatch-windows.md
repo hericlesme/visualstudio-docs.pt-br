@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ Os windows estão disponíveis somente durante uma sessão de depuração. Para 
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observando a uma única variável com QuickWatch  
  Você pode usar o **QuickWatch** janela para observar uma única variável. Por exemplo, se você tiver o seguinte código:  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a>Atualizando valores de inspeção estão desatualizados  
  Em determinadas circunstâncias, você verá um ícone de atualização (uma seta circular) quando uma expressão é avaliada no **inspecionar** janela.  Por exemplo, se você tiver desativada de avaliação de propriedade (**Ferramentas > Opções > Depuração > Habilitar avaliação de propriedades e outras chamadas de função implícitas**), e você tiver o código a seguir:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  No código a seguir, um método cria um `Person` usando uma variável local, mas você deseja descobrir o que o `Person`do nome está em um método diferente:  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  
