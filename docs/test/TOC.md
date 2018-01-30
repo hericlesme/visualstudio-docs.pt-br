@@ -20,6 +20,7 @@
 ## [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)
 ### [Executar um teste de unidade como um processo de 64 bits](run-a-unit-test-as-a-64-bit-process.md)
 ### [Passo a passo: criando e executando testes de unidade para aplicativos UWP](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
+### [Perguntas Frequentes sobre o Gerenciador de Testes](test-explorer-faq.md)
 ## [Configurar testes de unidade usando um arquivo .runsettings](configure-unit-tests-by-using-a-dot-runsettings-file.md)
 ## [Escrevendo testes de unidade para código gerenciado](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 ### [Passo a passo: criando e executando testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
