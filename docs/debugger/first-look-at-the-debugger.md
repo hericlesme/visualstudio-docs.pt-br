@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Introdução ao depurador do Visual Studio
 O depurador do Visual Studio é fácil de usar em qualquer idioma. Aqui vamos mostrar como depurar um programa c# simple, mas você pode aplicar as mesmas etapas para o código em outras linguagens, como C++ e JavaScript.
@@ -27,7 +29,7 @@ Para assistir um vídeo mostrando recursos semelhantes, consulte [guia de Introd
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>Depurar um projeto c# básico  
  Vamos começar com um aplicativo de console c# simples (**arquivo > Novo > projeto**, em seguida, selecione **Visual C#** e **aplicativo de Console**). Se você nunca tiver trabalhado com o Visual Studio antes, consulte [passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). O **principal** método apenas adiciona 1 a uma variável de inteiro de 10 vezes e imprime o resultado para o console:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -56,7 +58,7 @@ static void Main(string[] args)
   
  Você pode focalizar o **testInt** variável para exibir o valor atual em uma dica de dados.  
   
- ![DBG &#95; Noções básicas de &#95; dados &#95; Dicas](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  A janela de código abaixo, você deve ver o **Autos**, **locais**, e **inspecionar** windows. Essas janelas mostram os valores atuais das variáveis no momento da execução. Ambos o **Autos** e **locais** mostra **testInt** com um valor de **10**.  
   
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  Para ver a diferença entre **intervir** e **passar por**, precisamos adicionar um método que é chamado por outro método. Adicione um método para o aplicativo c# e chamá-lo de que o método Main. O código deve ter esta aparência:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  
