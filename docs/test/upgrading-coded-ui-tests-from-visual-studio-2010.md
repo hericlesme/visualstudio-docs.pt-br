@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Atualizando testes de IU codificados a partir do Visual Studio 2010
 Os projetos de teste que contêm testes de interface do usuário codificados criados no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 são reparados silenciosamente quando abertos no Visual Studio 2012 ou posterior. Se os Projetos de teste forem inseridos no controle do código-fonte, os arquivos do projeto serão verificados para realização desse reparo. Após o reparo, esses projetos de teste que contêm testes de IU codificados podem ser usados no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 e no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -25,7 +26,7 @@ Os projetos de teste que contêm testes de interface do usuário codificados cri
 -   Visual Studio Enterprise  
   
 > [!NOTE]
->  O Visual Studio inclui mais de um tipo de projeto de teste. Se você criar um novo teste de IU codificado, ele será criado em um tipo de projeto de teste de IU codificado. Para saber mais, consulte [Atualizar testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
+> O Visual Studio inclui mais de um tipo de projeto de teste. Se você criar um novo teste de IU codificado, ele será criado em um tipo de projeto de teste de IU codificado.
   
 > [!WARNING]
 >  Projetos de teste do [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] que contêm testes de IU codificados devem ser recriados ao abri-los no [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ou no [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] lado a lado com [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -66,6 +67,5 @@ Os projetos de teste que contêm testes de interface do usuário codificados cri
 ## <a name="see-also"></a>Consulte também
 
 [Portabilidade, migração e atualização de projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[Atualizando os testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)  
 [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

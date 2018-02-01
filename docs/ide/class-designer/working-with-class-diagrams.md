@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9856a7061bf6fbe70ad39b2b70f052c2bd8c9bd5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 606024fd031814b91cfb97e3e674d9d1240e3efb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Trabalhando com diagramas de classe (Designer de Classe)
 Os diagramas de classe ajudam você a compreender a estrutura de classes de projetos que outras pessoas escreveram (ou que você escreveu há muito tempo). Você pode usá-los para personalizar, compartilhar e apresentar informações sobre o projeto para outras pessoas.  
@@ -39,6 +41,7 @@ Depois de ajustar um ou mais diagramas de classe, copie-os em documentos do Micr
 >  O Designer de Classe não controla o local dos arquivos de origem, por isso quando você altera a estrutura do projeto ou move os arquivos de origem no projeto, o Designer de Classe pode perder o controle do tipo, especialmente o tipo de origem de um typedef, classes base ou tipos de associação. Você pode receber um erro, como **O Designer de Classe não pode exibir esse tipo**. Se você fizer isso, arraste o código-fonte realocado ou modificado para o diagrama de classe, para exibi-lo novamente.
   
 ## <a name="see-also"></a>Consulte também
-[Exibindo tipos e relações](viewing-types-and-relationships.md)   
-[Como personalizar diagramas de classe](how-to-customize-class-diagrams.md)   
-[Como remover formas de tipos de diagramas de classe](http://msdn.microsoft.com/en-us/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+
+[Exibindo tipos e relações](viewing-types-and-relationships.md)  
+[Como personalizar diagramas de classe](how-to-customize-class-diagrams.md)  
+[Como remover formas de tipos de diagramas de classe](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

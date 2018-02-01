@@ -3,21 +3,24 @@ title: Dicas e truques de desempenho do Visual Studio | Microsoft Docs
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -32,7 +35,7 @@ As recomendações de desempenho do Visual Studio destinam-se a situações de b
 
     Se você atualizar seu sistema de uma versão de 32 bits do Windows para uma versão de 64 bits, expanda a quantidade de memória virtual disponível para o Visual Studio de 2 GB para 4 GB. Isso permite que o Visual Studio lide com cargas de trabalho significativamente maiores, mesmo sendo um processo de 32 bits.
 
-    Para obter mais informações, consulte [Limites de memória](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e [Usando /LARGEADDRESSAWARE no Windows de 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Para obter mais informações, consulte [Limites de memória](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) e [Usando /LARGEADDRESSAWARE no Windows de 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Configurar solução e projetos
 
@@ -47,6 +50,7 @@ Se você tiver uma solução muito grande com vários projetos, poderá ser úti
     Você pode dividir a solução em vários arquivos menores de solução com projetos usados com frequência. Esta refatoração deve reduzir significativamente o uso de memória para o fluxo de trabalho. Soluções menores também são carregadas mais rapidamente.
 
 ## <a name="configure-debugging-options"></a>Configurar as opções de depuração
+
 Se você tem ficado com pouca memória durante as sessões de depuração normalmente, você pode otimizar o desempenho fazendo uma ou mais alterações de configuração.
 
 - **Habilitar Apenas Meu Código**
@@ -74,6 +78,7 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
     Para obter mais informações, consulte [Ferramentas de Criação de Perfil](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Desabilitar ferramentas e extensões
+
 Algumas ferramentas ou extensões podem desativadas para melhorar o desempenho.
 
 > [!TIP]
@@ -123,7 +128,8 @@ Para forçar uma coleta de lixo, use a tecla de atalho: **Ctrl+Alt + Shift + F12
 
 Se forçar a coleta de lixo de forma confiável faz seu cenário funcionar, relate isso na ferramenta de comentários do Visual Studio, pois esse comportamento provavelmente trata-se de um bug.
 
-Para ver uma descrição detalhada do coletor de lixo CLR, consulte [Noções básicas da coleta de lixo](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+Para ver uma descrição detalhada do coletor de lixo CLR, consulte [Noções básicas da coleta de lixo](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Consulte também  
- [Visual Studio IDE](../ide/index.md)
+## <a name="see-also"></a>Consulte também
+
+[Visual Studio IDE](../ide/visual-studio-ide.md)

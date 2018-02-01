@@ -14,13 +14,14 @@ helpviewer_keywords:
 - unit tests, Assert classes
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: f2d0e0020ae26a3a2331643f74f436441612b9fc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 01d41202f49a61a1ae2ba0f926b5c5b563ab351c
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-the-assert-classes"></a>Usando as classes Assert
 Use as classes Assert do namespace UnitTestingFramework para verificar a funcionalidade específica. Um método de teste de unidade executa o código de um método em seu código de desenvolvimento, mas relata a exatidão do comportamento do código somente se você incluir instruções Assert.  
@@ -59,6 +60,7 @@ Use as classes Assert do namespace UnitTestingFramework para verificar a funcion
   
  Decore um método de teste com o atributo ExpectedExceptionAttribute quando desejar que o método de teste verifique se uma exceção que você espera que seja lançada por um método em seu código de desenvolvimento, de fato, está sendo lançada nesse método.  
   
-## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [Criar e Executar Testes de Unidade para Código Existente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
+## <a name="see-also"></a>Consulte também
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
+[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)

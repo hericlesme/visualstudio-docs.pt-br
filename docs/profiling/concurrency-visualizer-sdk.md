@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.sdk.about
+f1_keywords:
+- vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5eecc1d317f2391632cbe87df30a2ba2fd7c692c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f3745e863a94c0e2b899da0bf9d81589570c6ac0
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
 Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Simultânea para exibir informações adicionais na Visualização Simultânea. É possível associar os dados adicionais a fases e eventos em seu código. Estas visualizações adicionais são conhecidas como *marcadores*.  Para ver um passo a passo introdutório, consulte [Apresentando o SDK da Visualização Simultânea](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -40,7 +43,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
   
 3.  Adicione uma importação ou instrução using ao seu código.  
   
-    ```CSharp  
+    ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
@@ -93,7 +96,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
   
 1.  Para usar um novo <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, primeiro o crie usando um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> e, em seguida, gere eventos de marcador diretamente da nova série.  
   
-    ```CSharp  
+    ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");  
     series1.WriteFlag("My flag");  
     ```  

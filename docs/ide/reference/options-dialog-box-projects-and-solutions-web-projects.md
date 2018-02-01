@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.Projects.WebProjects
+f1_keywords:
+- VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 75d892c4947ee93521234f9bb2cdb781bd0b09f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1cf6798a8870834b97693845c1e39870863a66e4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Caixa de diálogo Opções, Projetos e Soluções, Projetos Web
 
 Define o servidor Web que projetos Web usarão para desenvolvimento dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para acessar essas opções, selecione **Ferramentas > Opções**, expanda **Projetos e Soluções** e selecione **Projetos Web**.
 
-Por padrão, executar um projeto Web no Visual Studio usa o Visual Studio Development Server. Para obter mais informações, consulte [Servidores Web no Visual Studio para projetos Web ASP.NET](http://msdn.microsoft.com/en-us/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
+Por padrão, executar um projeto Web no Visual Studio usa o Visual Studio Development Server. Para obter mais informações, consulte [Servidores Web no Visual Studio para projetos Web ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).
 
 > [!NOTE]
 >  As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Esta página de Ajuda foi escrita pensando nas **Configurações da Web** em mente. Para exibir ou alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  

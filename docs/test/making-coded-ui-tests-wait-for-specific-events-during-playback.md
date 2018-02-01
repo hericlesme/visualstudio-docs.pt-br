@@ -7,17 +7,19 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 4a6c7ae9f0438d440471bc9e049b539e96e63e13
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: d28182eb626bb937e8d1e1d0e3cc39bd62233df7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Fazendo testes de IU codificado aguardar eventos específicos durante a reprodução
+
 Na reprodução de um teste de IU codificado, é possível instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Para fazer isso, use o método apropriado UITestControl.WaitForControlXXX(), conforme descrito na tabela a seguir. Para obter um exemplo de um teste de IU codificado que espera um controle ser habilitado usando o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consulte [Instruções passo a passo: criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  **Requisitos**  
@@ -103,18 +105,15 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  Você pode usar a propriedade <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> para modificar a duração da suspensão. Por padrão, essa variável é 1, mas você pode aumentá-la ou diminui-la para alterar o tempo de espera em todo o código. Por exemplo, se estiver testando uma rede lenta especificamente ou algum outro caso de baixo desempenho, você poderá alterar essa variável em um único lugar (ou até mesmo no arquivo de configuração) para 1,5 para adicionar 50% de espera extra em todos os locais.  
   
  O Playback.Wait() chama Thread.Sleep() internamente (após o cálculo acima) em partes menores em um loop for durante a verificação da operação cancelar\suspender do usuário. Em outras palavras, o Playback.Wait() permite que você cancele a reprodução antes do final da espera enquanto a suspensão pode ou não lançar a exceção.  
-  
+
 > [!TIP]
->  o Editor de testes de interface de usuário codificada permite modificar facilmente os testes de IU codificados. Com o Editor de testes de interface de usuário codificada, você pode localizar, exibir e editar os métodos de teste. Também é possível editar ações de interface do usuário e seus controles associados no mapa de controles de IU. Para obter mais informações, consulte [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md) (Editando testes de IU codificada usando o Editor de teste de IU codificado).  
-  
- **Diretrizes**  
-  
- Para obter informações adicionais, consulte [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Testando para entrega contínua com o Visual Studio 2012 – Capítulo 5: Automatizando testes de sistema)  
-  
-## <a name="see-also"></a>Consulte também  
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Instruções passo a passo: Criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
- [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)   
- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Como inserir um atraso antes de uma ação de interface do usuário usando o Editor de teste de IU codificado](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+> o Editor de testes de interface de usuário codificada permite modificar facilmente os testes de IU codificados. Com o Editor de testes de interface de usuário codificada, você pode localizar, exibir e editar os métodos de teste. Também é possível editar ações de interface do usuário e seus controles associados no mapa de controles de IU. Para obter mais informações, consulte [Editing Coded UI Tests Using the Coded UI Test Editor](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md) (Editando testes de IU codificada usando o Editor de teste de IU codificado).
+
+## <a name="see-also"></a>Consulte também
+
+[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)  
+[Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)  
+[Passo a passo: criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)  
+[Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)  
+[Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[Como inserir um atraso antes de uma ação de interface do usuário usando o Editor de teste de IU codificado](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)

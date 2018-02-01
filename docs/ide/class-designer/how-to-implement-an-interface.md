@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c926da09cb8bbb191d0d307dd9e8ce16cfef3c20
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 819fdb15a436dbdb4059d7ecef3e23d95c0aebe4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Como implementar uma interface (Designer de Classe)
 No Designer de Classe, você pode implementar uma interface no diagrama de classe conectando-a a uma classe que fornece código para os métodos de interface. O Designer de Classe gera uma implementação de interface e exibe a relação entre a interface e a classe como uma relação de herança. É possível implementar uma interface desenhando uma linha de herança entre a interface e a classe ou arrastando a interface do Modo de Exibição de Classe.  
@@ -45,7 +47,7 @@ No Designer de Classe, você pode implementar uma interface no diagrama de class
 2.  Abra o Modo de Exibição de Classe e localize a interface.  
   
     > [!TIP]
-    >  Se o Modo de Exibição de Classe não estiver aberto, abra-o no menu **Exibir**. Para obter mais informações sobre o Modo de Exibição de Classe, consulte [Exibindo classes e seus membros](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    > Se o Modo de Exibição de Classe não estiver aberto, abra-o no menu **Exibir**.
   
 3.  Arraste o nó da interface para a forma de classe no diagrama.  
   

@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.CannotShowBaseType
+f1_keywords:
+- vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
 - types [Visual Studio], visualizing
 - types [Visual Studio], class diagrams
 - class diagrams, types
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2fa9ab600c4f4be61a80b819fd20104a3639f0a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f9b5b4aed79dfbfda19020cfda17af68d7ae186c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Como exibir tipos existentes (Designer de Classe)
 Para ver um tipo existente e seus membros, adicione sua forma a um diagrama de classe.  
@@ -50,7 +53,7 @@ Para criar novos tipos em diagramas de classe, consulte [Como criar tipos usando
 Também é possível exibir tipos no projeto arrastando um ou mais tipos do nó do projeto no Modo de Exibição de Classe para o diagrama de classes.  
   
 > [!TIP]
->  Se o Modo de Exibição de Classe não estiver aberto, abra-o no menu **Exibir**. Para obter mais informações sobre o Modo de Exibição de Classe, consulte [Exibindo classes e seus membros](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Se o Modo de Exibição de Classe não estiver aberto, abra-o no menu **Exibir**.
   
 Para exibir tipos em locais padrão no diagrama, selecione um ou mais tipos no Modo de Exibição de Classe, clique com o botão direito do mouse nos tipos selecionados e escolha **Exibir Diagrama de Classe**.  
   

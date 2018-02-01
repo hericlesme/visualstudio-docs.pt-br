@@ -7,18 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: coded UI tests, data-driven
+helpviewer_keywords:
+- coded UI tests, data-driven
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 50d4a9d6b300a46ac074989e91d9eb4aecf9a496
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f88dcf7bf952cf96663e8d42ad9d64e6459cb7d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Criando um teste de interface do usuário codificado controlado por dados
+
 Para testar diferentes condições, você pode executar os testes várias vezes com valores de parâmetros diferentes. Os testes de interface do usuário codificados controlados por dados são uma forma conveniente de fazer isso. Definir valores de parâmetro em uma fonte de dados e cada linha da fonte de dados é uma interação do teste de interface do usuário codificado. O resultado geral do teste será baseado no resultado para todas as iterações. Por exemplo, se uma interação de teste falhar, o resultado geral do teste terá falhas.  
   
  **Requisitos**  
@@ -47,17 +50,16 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
      ![Gerar método de teste](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Feche o construtor de teste. O método é adicionado ao teste:  
-  
-    ```csharp  
+
+    ```csharp
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
         // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.  
-        this.UIMap.AddNumbers();  
-  
-    }  
-    ```  
-  
+        this.UIMap.AddNumbers();
+    }
+    ```
+
 5.  Use o método `AddNumbers()` para verificar se o teste é executado. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Executar Testes**. (Atalho de teclado: Ctrl + R, T).  
   
      O resultado do teste que mostra se o teste passou ou falhou é exibido na janela do Gerenciador de Testes. Para abrir a janela do Gerenciador de Testes, no menu **TESTE**, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.  
@@ -78,7 +80,7 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
   
      Como o método `ValidateSum` valida os resultados do método `AddNumbers`, mova-o para a parte inferior do bloco de códigos.  
   
-    ```csharp  
+    ```csharp
     public void CodedUITestMethod1()  
     {  
   
@@ -86,8 +88,8 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
         this.UIMap.AddNumbers();  
         this.UIMap.ValidateSum();  
   
-    }  
-    ```  
+    }
+    ```
   
 9. Verifique se o teste é executado usando o método `ValidateSum()`. Coloque o cursor no método de teste mostrado acima, abra o menu de contexto e escolha **Executar Testes**. (Atalho de teclado: Ctrl + R, T).  
   
@@ -123,7 +125,7 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
   
 1.  Para associar a fonte de dados, adicione um atributo `DataSource` dentro do atributo `[TestMethod]` existente que está imediatamente acima do método de teste.  
   
-    ```  
+    ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
     public void CodedUITestMethod1()  
     {  
@@ -132,14 +134,13 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
         this.UIMap.AddNumbers();  
         this.UIMap.ValidateSum();  
   
-    }  
-  
-    ```  
-  
+    }
+    ```
+
      A fonte de dados agora está disponível para ser usada nesse método de teste.  
   
     > [!TIP]
-    >  Consulte [amostras de atributos de fonte de dados](#CreateDataDrivenCUIT_QA_DataSourceAttributes) na seção de P e R para obter amostras sobre como usar outros tipos de fonte de dados como XML, SQL Express e Excel.  
+    > Consulte [amostras de atributos de fonte de dados](#CreateDataDrivenCUIT_QA_DataSourceAttributes) na seção de P e R para obter amostras sobre como usar outros tipos de fonte de dados como XML, SQL Express e Excel.  
   
 2.  Execute o teste.  
   
@@ -151,7 +152,7 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
   
 1.  Adicione `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` à parte superior do arquivo CodedUITest.cs:  
   
-    ```  
+    ```csharp
     using System;  
     using System.Collections.Generic;  
     using System.Text.RegularExpressions;  
@@ -163,11 +164,11 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
     using Microsoft.VisualStudio.TestTools.UITest.Extension;  
     using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;  
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
-    ```  
+    ```
   
 2.  Adicione `TestContext.DataRow[]` no método `CodedUITestMethod1()` que aplicará valores da fonte de dados. Os valores de fonte de dados substituem as constantes atribuídas aos controles UIMap usando os controles `SearchProperties`:  
   
-    ```  
+    ```csharp
     public void CodedUITestMethod1()  
     {  
   
@@ -177,8 +178,8 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
         this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();  
         this.UIMap.ValidateSum();  
   
-    }  
-    ```  
+    }
+    ```
   
      Para descobrir quais propriedades de pesquisa nas quais codificar os dados, use o Editor de Teste de Interface do Usuário Codificados.  
   
@@ -235,26 +236,26 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
   
 ### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>P: Posso usar testes controlados por dados em meu aplicativo Windows Phone?  
  **R:** Sim. Os testes de IU codificados e orientados a dados para Windows Phone são definidos com o uso do atributo DataRow em um método de teste. No exemplo a seguir, x e y usam os valores de 1 e 2 na primeira iteração e de -1 e -2 na segunda iteração do teste.  
-  
-```  
+
+```csharp
 [DataRow(1, 2, DisplayName = "Add positive numbers")]  
 [DataRow(-1, -2, DisplayName = "Add negative numbers")]  
 [TestMethod]  
-public void DataDrivingDemo_MyTestMethod(int x, int y)  
-  
-```  
-  
- Para obter mais informações, consulte [Usar testes de IU codificados e controlados por dados em aplicativos Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
+public void DataDrivingDemo_MyTestMethod(int x, int y)
+```
+
+Para obter mais informações, consulte [Usar testes de IU codificados e controlados por dados em aplicativos Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).
   
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Por que não posso modificar o código no arquivo UIMap.Designer?  
  **R:** Todas as alterações de código feitas no arquivo UIMapDesigner.cs serão substituídas sempre que você gerenciar o código usando o UIMap – Construtor de Teste de IU Codificado. Neste exemplo e na maioria dos casos, as alterações de código necessárias para habilitar um teste para usar uma fonte de dados podem ser feitas no arquivo de código-fonte do teste (ou seja, CodedUITest1.cs).  
-  
- Se você tiver de modificar um método gravado, copie-o para o arquivo UIMap.cs e renomeie-o. O arquivo UIMap.cs pode ser usado para substituir métodos e propriedades no arquivo UIMapDesigner.cs. Você deve remover a referência para o método original no arquivo Coded UITest.cs e substituí-la pelo nome do método renomeado.  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Práticas recomendadas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)   
- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+Se você tiver de modificar um método gravado, copie-o para o arquivo UIMap.cs e renomeie-o. O arquivo UIMap.cs pode ser usado para substituir métodos e propriedades no arquivo UIMapDesigner.cs. Você deve remover a referência para o método original no arquivo Coded UITest.cs e substituí-la pelo nome do método renomeado.  
+
+## <a name="see-also"></a>Consulte também
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
+[Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
+[Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)   
+[Práticas recomendadas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)   
+[Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

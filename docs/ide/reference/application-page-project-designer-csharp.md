@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
-caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ec48d6a581eb756ee89d9db1a3dfaa78ac1fb3a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f9b348ad39b26b22e1678e76a1310e2c3f9b863
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
+
 Use a página **Aplicativo** do **Designer de Projeto** para especificar as propriedades e configurações de aplicativo do projeto.  
   
 Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto**, **Propriedades** na barra de menus. Quando o Designer de Projeto for exibido, clique na guia **Aplicativo**.  
@@ -98,8 +99,4 @@ Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **S
 **Arquivo de recurso**  
 Selecione esse botão de opção quando você estiver fornecendo um arquivo de recurso para o projeto. Selecionar essa opção desabilita as opções **Ícone** e **Manifesto**.  
   
-Insira um nome de caminho ou use o botão Procurar (**...** ) para adicionar um arquivo de recurso Win32 ao projeto.  
-  
-## <a name="see-also"></a>Consulte também  
-[Gerenciando propriedades do aplicativo](../../ide/application-properties.md)  
-[Escrevendo código em soluções do Office](/office-dev/office-dev/writing-code-in-office-solutions)
+Insira um nome de caminho ou use o botão Procurar (**...** ) para adicionar um arquivo de recurso Win32 ao projeto.

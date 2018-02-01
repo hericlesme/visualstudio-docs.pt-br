@@ -15,17 +15,19 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Adicionando suporte para outras linguagens ao editor do Visual Studio
 Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à navegação por meio de diferentes linguagens de computador e como é possível adicionar suporte ao editor do Visual Studio para outras linguagens.  
@@ -40,7 +42,7 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
 |||||||  
 |-|-|-|-|-|-|  
 |Bat|F#|Java|Markdown|Rust|Visual Basic|  
-|Clojure|Ir|JavaDoc|Objective-C|ShaderLab|Visual C#|  
+|Clojure|Ir|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
 |CSS|INI|LUA|R|Swift|XML|  
@@ -62,7 +64,7 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
   
 -   Visual C++  
   
--   Visual C#  
+-   C#  
   
  Todos esses tipos de arquivo têm os recursos descritos anteriormente, mesmo se o suporte para uma linguagem determinada ainda não tenha sido instalado. Instalar suporte especializado para algumas linguagens pode oferecer suporte a outras linguagens, como IntelliSense ou outros recursos de linguagem avançados como Light Bulbs.  
   

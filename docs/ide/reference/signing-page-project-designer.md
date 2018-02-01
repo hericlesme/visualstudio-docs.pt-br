@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,16 +20,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 53fe343002de3f89431927c95f36a0c092b36c2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
 Use a página **Assinatura** do **Designer de Projeto** para assinar os manifestos do aplicativo e de implantação e também para assinar o assembly (assinatura de nome forte).  
@@ -89,11 +91,11 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
 > [!NOTE]
 >  Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.  
   
-## <a name="see-also"></a>Consulte também  
- [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)   
- [Gerenciando a assinatura de assembly e de manifesto](../../ide/managing-assembly-and-manifest-signing.md)   
- [Assinatura de nome forte para aplicativos gerenciados](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Como assinar manifestos do aplicativo e de implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Como assinar um assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)   
- [Como assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
- [Assemblies de nomes fortes](/dotnet/framework/app-domains/strong-named-assemblies)   
+## <a name="see-also"></a>Consulte também
+
+[Referência de Propriedades do Projeto](../../ide/reference/project-properties-reference.md)  
+[Gerenciando Assinatura de Assembly e Manifesto](../../ide/managing-assembly-and-manifest-signing.md)  
+[Como assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)  
+[Como Assinar um Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)  
+[Como assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)  
+[Assemblies de nomes fortes](/dotnet/framework/app-domains/strong-named-assemblies) 

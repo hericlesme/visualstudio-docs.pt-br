@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
-caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 13d04bde21f46fd8950e79464beccfe2228633aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c0683e9c619352c6d3f7d0cb431d3e2c973b6270
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
+
 Use a página **Aplicativo** do Designer de Projeto para especificar as propriedades e configurações de aplicativo de um projeto.  
   
 Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto**, **Propriedades** na barra de menus. Quando o Designer de Projeto for exibido, clique na guia **Aplicativo**.  
@@ -111,7 +112,7 @@ Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **S
  As seguintes configurações estão disponíveis na seção **Propriedades da estrutura dos aplicativos do Windows**. Essas opções estarão disponíveis somente se a caixa de seleção **Habilitar estrutura de aplicativo** estiver selecionada. A seção depois desta descreve as configurações **Propriedades da estrutura do aplicativos do Windows** para aplicativos WPF (Windows Presentation Foundation).  
   
  **Habilitar estilos visuais do XP**  
- Habilita ou desabilita os estilos visuais do Windows XP, também conhecidos como *Temas do Windows XP*. Os estilos visuais do Windows XP habilitam, por exemplo, controles com cantos arredondados e cores dinâmicas. O padrão é habilitado. Para obter mais informações sobre estilos visuais do Windows XP, consulte [Recursos do Windows XP e controles do Windows Forms](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Habilita ou desabilita os estilos visuais do Windows XP, também conhecidos como *Temas do Windows XP*. Os estilos visuais do Windows XP habilitam, por exemplo, controles com cantos arredondados e cores dinâmicas. O padrão é habilitado.
   
  **Criar um aplicativo de instância única**  
  Marque esta caixa de seleção para impedir que usuários executem várias instâncias do aplicativo. A configuração padrão para essa caixa de seleção é desmarcada. Essa configuração permite que várias instâncias do aplicativo sejam executadas.  
@@ -157,7 +158,4 @@ Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **S
  **Exibir eventos de aplicativo**  
  Clique neste botão para exibir o arquivo de classe parcial `Application` (Application.xaml.vb) em um editor de código. Se o arquivo não existir, o Designer de Projeto criará um com o namespace e o nome de classe apropriado.  
   
- O objeto <xref:System.Windows.Application> gera eventos quando ocorrem determinadas alterações no estado do aplicativo (por exemplo, na inicialização ou no desligamento do aplicativo). Para obter uma lista completa dos eventos que essa classe expõe, consulte <xref:System.Windows.Application>. Esses eventos são manipulados na seção de código do usuário da classe parcial `Application`.  
-  
-## <a name="see-also"></a>Consulte também  
-[Gerenciando propriedades do aplicativo](../../ide/application-properties.md) [Escrevendo código em soluções do Office](/office-dev/office-dev/writing-code-in-office-solutions)
+ O objeto <xref:System.Windows.Application> gera eventos quando ocorrem determinadas alterações no estado do aplicativo (por exemplo, na inicialização ou no desligamento do aplicativo). Para obter uma lista completa dos eventos que essa classe expõe, consulte <xref:System.Windows.Application>. Esses eventos são manipulados na seção de código do usuário da classe parcial `Application`.

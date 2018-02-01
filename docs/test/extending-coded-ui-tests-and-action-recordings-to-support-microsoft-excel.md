@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ae08752c7687844fbe620bf6314496b474b6e915
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0133db8e1060da48e5938a08ded187fa900b4d30
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Estendendo testes de IU codificado e gravações da ação para dar suporte ao Microsoft Excel
 A estrutura de teste para testes de IU codificados e gravações da ação não dá suporte a todas as interfaces do usuário possíveis. Ele pode não dar suporte à interface do usuário específica que você deseja testar. Por exemplo, você não pode criar imediatamente um teste de IU codificado ou uma gravação da ação para uma planilha [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. No entanto, você pode criar sua própria extensão para a estrutura de teste de IU codificado que dará suporte a interface do usuário específica, tirando proveito da extensibilidade da estrutura de teste de IU codificado. O tópico a seguir fornece um exemplo de como estender a estrutura para dar suporte à criação de testes de UI codificados e gravações da ação para [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Para obter mais informações sobre as plataformas que têm suporte, consulte [Configurações e Plataformas com Suporte para Testes de IU Codificados e Gravações da Ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
@@ -68,14 +69,16 @@ Visão geral da arquitetura
   
  Talvez você precise ajustar os caminhos de cópia exatos, mas nenhuma instalação adicional será necessária. Em um computador de 64 bits, use o prompt de comando do Visual Studio Enterprise de 32 bits para executar o arquivo `CopyDrop.bat`.  
   
-### <a name="testing-excel-with-the-sampletestproject"></a>Testando o Excel com o SampleTestProject  
- Você pode executar o teste no projeto de teste fornecido que usa uma versão específica do Excel que talvez você não tenha ou então criar seu próprio projeto de teste e gravar um teste de sua preferência. Para obter mais informações, consulte [Criar um Teste de IU Codificado](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Práticas recomendadas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)   
- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+### <a name="testing-excel-with-the-sampletestproject"></a>Testando o Excel com o SampleTestProject
+
+Você pode executar o teste no projeto de teste fornecido que usa uma versão específica do Excel que talvez você não tenha ou então criar seu próprio projeto de teste e gravar um teste de sua preferência. Para obter mais informações, consulte [Criar um Teste de IU Codificado](../test/use-ui-automation-to-test-your-code.md).
+
+## <a name="see-also"></a>Consulte também
+
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
+[Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
+[Práticas recomendadas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)   
+[Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

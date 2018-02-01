@@ -16,13 +16,14 @@ helpviewer_keywords:
 - data-driven unit tests
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: a582796e7436df49a719d758896ee8dcea43b068
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 74d271b6d1c9124d323b9c1ecbbfe9e716b1c5b8
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como criar um teste de unidade orientado a dados
 Ao usar a estrutura de teste de unidade da Microsoft para código gerenciado, você pode configurar um método de teste de unidade para recuperar valores usados no método de teste de uma fonte de dados. O método é executado sucessivamente para cada linha na fonte de dados, o que facilita o teste de uma variedade de entradas usando um único método.  
@@ -182,12 +183,12 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
  Quando o método em teste é corrigido e o teste é novamente executado, a barra de resultados ficará verde e o método de teste é movido para o grupo **Teste Aprovado**.  
   
-## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Como criar e executar um teste de unidade](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)   
- [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)   
- [Escrevendo testes de unidade para .NET Framework com a estrutura de teste de unidade Microsoft para código gerenciado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+## <a name="see-also"></a>Consulte também
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>  
+[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)  
+[Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)  
+[Escrevendo testes de unidade para .NET Framework com a estrutura de teste de unidade Microsoft para código gerenciado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
