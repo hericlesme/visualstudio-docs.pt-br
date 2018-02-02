@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36e0ab96c1c0c3deeced62ff9808737c903e682b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c82bc929fa7633719c06569cb3dded5df651a349
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Melhorando a qualidade do código com políticas de check-in do projeto de equipe
 
@@ -48,7 +50,7 @@ Você pode especificar essas políticas de check-in do projeto equipe:
 |Tarefa|Conteúdo de suporte|
 |----------|------------------------|
 |**Use a análise de código no processo de desenvolvimento:** membros da equipe executam análise de código em seus computadores de desenvolvimento. No Visual Studio, os desenvolvedores de configurar e executar análise de código é executado para projetos de código individuais, exibir em analisar problemas encontrados pelo é executado e criar itens de trabalho para avisos.|[Analisando a qualidade do aplicativo](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|
-|**Criar e executar testes de unidade:** testes de unidade dão aos desenvolvedores e testadores uma forma rápida de procurar erros lógicos nos métodos de classes em projetos c#, Visual Basic .NET e C++. Um teste de unidade pode ser criado uma vez e pode ser executado toda vez que o código fonte é alterado para certificar-se de que nenhum bugs foram introduzidos.|[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|
+|**Criar e executar testes de unidade:** testes de unidade dão aos desenvolvedores e testadores uma forma rápida de procurar erros lógicos nos métodos de classes em projetos c#, Visual Basic e C++. Um teste de unidade pode ser criado uma vez e pode ser executado toda vez que o código fonte é alterado para certificar-se de que nenhum bugs foram introduzidos.|[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|
 |**Acompanhar itens de trabalho e defeitos:** você pode usar itens de trabalho para controlar e gerenciar seu trabalho e informações sobre seu projeto de equipe. Um item de trabalho é um banco de dados de registro [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] usa para controlar a atribuição e o andamento do trabalho. Você pode usar tipos diferentes de itens de trabalho para acompanhar diferentes tipos de trabalho, como requisitos de cliente, bugs de produto e tarefas de desenvolvimento.|[Itens de trabalho (VSTS)](/vsts/work/work-items/index)|
 
 ## <a name="external-resources"></a>Recursos externos

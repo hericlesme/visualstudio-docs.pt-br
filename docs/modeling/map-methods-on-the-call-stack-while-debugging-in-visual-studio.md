@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.debugwithcodemaps
+f1_keywords:
+- vs.progression.debugwithcodemaps
 dev_langs:
 - FSharp
 - VB
@@ -30,12 +32,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d4d759f0e271e3473c41635dcbc8777423d361d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 4b29267f46495378d0bf6ae53e991372509d7543
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.  
@@ -46,7 +49,7 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
   
 -   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   Código que você pode depurar, como Visual c# .NET, Visual Basic .NET, C++, JavaScript ou X + +  
+-   Código que você pode depurar, como Visual c#, Visual Basic, C++, JavaScript ou X + +  
   
  Consulte:  
   
@@ -91,7 +94,7 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
  ![Mapa de código de atualização com a seguinte pilha de chamadas](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
 ##  <a name="AddRelatedCode"></a>Adicione o código relacionado ao mapa  
- Agora você tem um mapa - o em seguida? Se você estiver trabalhando com o Visual c# .NET ou Visual Basic .NET, adicione itens, como campos, propriedades e outros métodos, para controlar o que está acontecendo no código.  
+ Agora você tem um mapa - o em seguida? Se você estiver trabalhando com c# ou Visual Basic, adicione itens, como campos, propriedades e outros métodos, para controlar o que está acontecendo no código.  
   
  Clique duas vezes em um método para ver sua definição de código, ou use o menu de atalho para o método. (Teclado: selecione o método no mapa e pressione **F12**)  
   

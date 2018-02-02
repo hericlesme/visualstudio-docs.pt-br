@@ -10,34 +10,19 @@ ms.topic: article
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
-caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed2f4acfe185039950d627092839b14234cadccd
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Início Rápido: análise de código para C/C++
-Você pode melhorar a qualidade do seu aplicativo ao executar análise de código regularmente em código C ou C++. Isso pode ajudá-lo a localizar problemas comuns de violações de práticas recomendadas de programação ou defeitos que são difíceis de descobrir com testes. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código.  
-  
-## <a name="in-this-topic"></a>Neste tópico  
-  
--   [Configurar conjuntos de regras para um projeto](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
-  
--   [Executar análise de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
-  
--   [Analisar e resolver avisos da análise de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
-  
--   [Suprimindo avisos da análise de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
-  
--   [Criando itens de trabalho para o código avisos da análise](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
-  
--   [Pesquisando e filtrando resultados de análise de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
+# <a name="quickstart-code-analysis-for-cc"></a>Início rápido: Análise de código para C/C++
+Você pode melhorar a qualidade do seu aplicativo ao executar análise de código regularmente em código C ou C++. Isso pode ajudá-lo a localizar problemas comuns de violações de práticas recomendadas de programação ou defeitos que são difíceis de descobrir com testes. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código.
   
 ##  <a name="BKMK_ConfigureRuleSets"></a>Configurar conjuntos de regras para um projeto  
   
@@ -85,20 +70,18 @@ Você pode melhorar a qualidade do seu aplicativo ao executar análise de códig
   
 -   No **criar** menu, escolha **executar análise de código em** *nome do projeto*.  
   
- O projeto ou solução é compilada e análise de código é executada. Os resultados aparecem na janela Análise de Código.  
+ O projeto ou solução é compilada e análise de código é executada. Os resultados aparecem na lista de erros.  
   
-##  <a name="BKMK_Analyze"></a>Analisar e resolver avisos da análise de código  
- Para analisar um aviso específico, escolha o título do aviso na janela Análise de Código. O aviso se expande para exibir informações adicionais sobre o problema. Quando possível, análise de código exibe os números de linha e a lógica de análise que levou ao aviso. Para obter informações detalhadas sobre o aviso, incluindo as soluções possíveis para o problema, escolha a id do aviso para exibir o tópico da Ajuda na biblioteca de MSND para a mensagem.  
-  
- Quando você expande um aviso, a linha de código que o causou é realçada no editor de códigos do Visual Studio.  
-  
- Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, torne a executar a análise de código para verificar se o aviso não aparece mais na janela Análise de Código e se a sua correção não gerou novos avisos.  
-  
-> [!TIP]
->  Você pode executar a análise de código novamente na janela Análise de Código. Escolha o **analisar** botão e escolha o escopo da análise. A análise pode ser executada na solução inteira ou em um projeto selecionado.  
-  
+##  <a name="BKMK_Analyze"></a>Analisar e resolver avisos da análise de código
+
+Para analisar um aviso específico, escolha o título do aviso na lista de erros. O aviso se expande para exibir informações adicionais sobre o problema. Quando possível, análise de código exibe os números de linha e a lógica de análise que levou ao aviso. Para obter informações detalhadas sobre o aviso, incluindo as soluções possíveis para o problema, escolha a ID do aviso para exibir o tópico da Ajuda online correspondente.
+
+Quando você seleciona um aviso, a linha de código que causaram o aviso é realçada no editor de código do Visual Studio.
+
+Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, execute novamente a análise de código para certificar-se de que o aviso não aparece mais na lista de erros e se sua correção não gerou novos avisos.
+
 ##  <a name="BKMK_Suppress"></a> Suprimindo avisos da análise de código  
- Há ocasiões em que você pode decidir não corrigir um aviso de análise de código. Você pode decidir que resolver o aviso exige recodificação demais considerando a probabilidade de que o problema ocorrerá em qualquer implementação do seu código no mundo real. Ou você pode achar que a análise usada no aviso é inadequada nesse contexto específico. É possível suprimir avisos individuais para que não apareçam mais na janela Análise de Código.  
+ Há ocasiões em que você pode decidir não corrigir um aviso de análise de código. Você pode decidir que resolver o aviso exige recodificação demais considerando a probabilidade de que o problema ocorrerá em qualquer implementação do seu código no mundo real. Ou você pode achar que a análise usada no aviso é inadequada nesse contexto específico. É possível suprimir avisos individuais para que eles não aparecem mais na lista de erros.  
   
  Para suprimir um aviso:  
   
@@ -115,19 +98,22 @@ Você pode melhorar a qualidade do seu aplicativo ao executar análise de códig
   
  **Para criar um item de trabalho para um ou mais avisos de código C/C++**  
   
-1.  Na janela análise de código, expanda e selecione os avisos  
+1.  Na lista de erros, expanda e selecione os avisos  
   
-2.  No menu de atalho para os avisos, escolha **Criar Item de trabalho**e, em seguida, escolha o tipo de item de trabalho.  
+2.  No menu de atalho para os avisos, escolha **Criar Item de trabalho**e, em seguida, escolha o tipo de item de trabalho.
   
 3.  Visual Studio cria um único item de trabalho para os avisos selecionados e exibe o item de trabalho em uma janela de documento do IDE.  
   
 4.  Adicionar informações adicionais e, em seguida, escolha **Salvar Item de trabalho**.  
   
-##  <a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código  
- Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.  
+##  <a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código
+
+Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.  
   
-1.  **Para filtrar avisos por título ou id de aviso**: insira a palavra-chave no **filtro** caixa de texto.  
+- **Para filtrar avisos por título ou id de aviso**: insira a palavra-chave na caixa de pesquisa.
   
-2.  **Para avisos do filtro pelo projeto**: em uma solução multiprojeto, escolha um ou mais projetos na lista na parte superior direita da janela análise de código. Escolha o nome da solução para exibir todos os avisos.  
-  
-3.  **Para filtrar avisos por severidade**: por padrão, mensagens de análise de código são atribuídas a uma severidade de **aviso**. Você pode atribuir a severidade de uma ou mais mensagens como **erro** em uma regra personalizada definida. Escolha **aviso** ou **erro** para exibir apenas as mensagens que são atribuídas a severidade do respectiva. Escolha **todos os** para exibir todas as mensagens.
+- **Para filtrar avisos por severidade**: por padrão, mensagens de análise de código são atribuídas a uma severidade de **aviso**. Você pode atribuir a severidade de uma ou mais mensagens como **erro** em uma regra personalizada definida. No **severidade** coluna o **lista de erros**, escolha a seta suspensa e, em seguida, no ícone de filtro. Escolha **aviso** ou **erro** para exibir apenas as mensagens que são atribuídas a severidade do respectiva. Escolha **Selecionar tudo** para exibir todas as mensagens.
+
+## <a name="see-also"></a>Consulte também
+
+[Análise de código para C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

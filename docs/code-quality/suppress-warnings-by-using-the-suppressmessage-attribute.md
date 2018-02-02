@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - SuppressMessage attribute
 - code analysis, SuppressMessage attribute
 ms.assetid: a38c57a2-d29d-43c0-84ff-3308b2484ce6
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Suprimir avisos usando o atributo SuppressMessage
 Geralmente é útil indicar que o aviso é nonapplicable para permitir que os membros da equipe sabe que o código foi revisado e foi determinado que o aviso deve ser suprimido. Supressão na origem (ISS) permite que um desenvolvedor para colocar o atributo que suprime o aviso de perto o local que gerou o aviso. Você pode adicionar o atributo ISS diretamente para o arquivo de origem ou você pode usar o menu de atalho a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  

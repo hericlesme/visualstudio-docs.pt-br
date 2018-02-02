@@ -5,27 +5,26 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
-ms.assetid: 7fe0a4e3-1ce0-4f38-a87a-7d81238ec7cd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Instruções passo a passo: configurando e usando um conjunto de regras personalizado
+
 Este passo a passo mostra como usar as ferramentas de análise de código que foram configuradas para usar um personalizado *conjunto de regras* em uma biblioteca de classe. Você pode selecionar um conjunto de regras que se relaciona ao tipo de projeto que você especificou para sua solução, ou pode selecionar conjuntos de regras alternativa para atender uma necessidade específica, como verificação de código herdado para problemas que podem ser corrigidos de forma incondicional. Em ambos os casos, os conjuntos de regras também podem ser personalizados para ajustá-las aos seus requisitos de projeto.  
   
- Neste passo a passo, você percorrer esses processos:  
+Neste passo a passo, você percorrer esses processos:  
   
 -   Crie uma biblioteca de classe.  
   
@@ -39,14 +38,11 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
   
 -   Executar análise de código e ver como o conjunto de regras personalização comportamento funciona.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="using-rule-sets-with-code-analysis"></a>Usando conjuntos de regras com análise de código
+
+Primeiro, crie uma biblioteca de classe simples.  
   
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] ou [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
-  
-## <a name="using-rule-sets-with-code-analysis"></a>Usando conjuntos de regras com análise de código  
- Primeiro, crie uma biblioteca de classe simples.  
-  
-#### <a name="create-a-class-library"></a>Criar uma biblioteca de classes  
+### <a name="create-a-class-library"></a>Criar uma biblioteca de classes  
   
 1.  Sobre o **arquivo** menu, clique em **novo** e, em seguida, clique em **projeto**.  
   
@@ -58,7 +54,7 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
   
  Em seguida, você selecionará o **regras de diretriz do Design básico Microsoft** conjunto de regras e salvá-lo com o seu projeto.  
   
-#### <a name="select-a-code-analysis-rule-set"></a>Selecione um conjunto de regras de análise de código  
+### <a name="select-a-code-analysis-rule-set"></a>Selecione um conjunto de regras de análise de código  
   
 1.  Sobre o **analisar** menu, clique em **configurar a análise de código para RuleSetSample**.  
   
@@ -75,11 +71,11 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
   
  Em seguida, você adicionará um código para a biblioteca de classes que será usada para demonstrar as violações de CA1704 "Identificadores devem ser grafados corretamente" regra de análise de código. Para obter mais informações, consulte [CA1704: os identificadores devem ser grafados corretamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
-#### <a name="add-your-own-code"></a>Adicionar seu próprio código  
+### <a name="add-your-own-code"></a>Adicionar seu próprio código  
   
 -   No Solution Explorer, abra o arquivo Class1.cs e substitua o código existente pelo seguinte:  
   
-    ```  
+    ```csharp
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -99,13 +95,12 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
                 return (sum);  
             }  
         }  
-    }  
+    }
+    ```
   
-    ```  
+Agora você pode executar a análise de código no projeto RuleSetSample e procure os erros e avisos gerados na janela lista de erros.  
   
- Agora você pode executar a análise de código no projeto RuleSetSample e procure os erros e avisos gerados na janela lista de erros.  
-  
-#### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Executar análise de código no projeto RuleSetSample  
+### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Executar análise de código no projeto RuleSetSample  
   
 1.  Sobre o **analisar** menu, clique em **executar análise de código em RuleSetSample**.  
   
@@ -117,7 +112,7 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
   
  Em seguida, você personalizará o conjunto de regras para excluir o aviso CA1704, "Identificadores devem ser grafados corretamente".  
   
-#### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Personalizar a regra definida para seu projeto desabilitar uma regra específica  
+### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Personalizar a regra definida para seu projeto desabilitar uma regra específica  
   
 1.  Sobre o **analisar** menu, clique em **configurar a análise de código para RuleSetSample**.  
   
@@ -127,15 +122,15 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
   
 4.  Sob o **ação** coluna, selecione **None.** Isso impede que CA1704 exibir como um aviso ou erro na janela lista de erros.  
   
-     Agora, um bom momento para fazer experiências com vários botões de barra de ferramentas e opções para se familiarizar com eles de filtragem. Por exemplo, você pode usar o **Group By** lista suspensa para ajudar a localizar uma regra específica, ou uma categoria de regras. Outro exemplo é que você pode usar o **ocultar regras desabilitadas** botão na barra de ferramentas de páginas de conjunto de regra para ocultar ou Mostrar todas as regras com o **ação** coluna definida como **nenhum**. Isso pode ser útil se você deseja procurar todas as regras que desativada para verificar que você ainda deseja sejam desabilitadas.  
+     Agora é um bom momento para fazer experiências com vários botões de barra de ferramentas e opções para se familiarizar com eles de filtragem. Por exemplo, você pode usar o **Group By** lista suspensa para ajudar a localizar uma regra específica, ou uma categoria de regras. Outro exemplo é que você pode usar o **ocultar regras desabilitadas** botão na barra de ferramentas de páginas de conjunto de regra para ocultar ou Mostrar todas as regras com o **ação** coluna definida como **nenhum**. Isso pode ser útil se você deseja procurar todas as regras que desativada para verificar que você ainda deseja sejam desabilitadas.  
   
 5.  No menu Exibir, clique na janela Propriedades. Tipo **meu conjunto de regras personalizado** na caixa Nome da janela de ferramentas de propriedades. Isso altera o nome de exibição da nova regra definida [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE.  
   
 6.  Sobre o **arquivo** menu, clique em **salvar Rules.ruleset todos da Microsoft** salvar a regra personalizada definida. Navegue até a pasta raiz do seu projeto. Em **o nome do arquivo** caixa de texto, digite **MyCustomRuleSet**. O conjunto de regras personalizado agora pode ser selecionado para uso com o seu projeto.  
   
- Com o novo conjunto de regras criado, agora você tem que definir as configurações de projeto para especificar que você deseja usar a nova regra com ele.  
+Com o novo conjunto de regras criado, agora você tem que definir as configurações de projeto para especificar que você deseja usar a nova regra com ele.  
   
-#### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Especifique a nova regra definida para uso com o seu projeto  
+### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Especifique a nova regra definida para uso com o seu projeto  
   
 1.  No Gerenciador de soluções, clique com o botão direito e, em seguida, selecione **propriedades**.  
   
@@ -147,12 +142,13 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
   
  Por fim, você executará novamente usando o conjunto de regras MyCustomRuleSet de análise de código. Observe que a janela lista de erros não exibirá a violação de regra de desempenho CA1704.  
   
-#### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Executar análise de código no projeto RuleSetSample pela segunda vez  
+### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Executar análise de código no projeto RuleSetSample pela segunda vez  
   
 1.  Sobre o **analisar** menu, clique em **executar análise de código em RuleSetSample**.  
   
 2.  Na janela lista de erros, observe que quando você clica em **avisos**, você não verá mais as violações do aviso CA1704 para a regra "Identificadores devem ser grafados corretamente".  
   
-## <a name="see-also"></a>Consulte também  
- [Como: configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Referência do conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)
+## <a name="see-also"></a>Consulte também
+
+[Como: configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+[Referência do conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)

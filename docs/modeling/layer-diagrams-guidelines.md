@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependência: diretrizes
 Descreve a arquitetura do aplicativo em um nível alto criando *diagramas de dependência* no Visual Studio. Certifique-se de que seu código permaneça consistente com esse design, validando seu código com um diagrama de dependência. Você também pode incluir validação de camada no processo de compilação. Consulte [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=252073).  
@@ -62,7 +63,7 @@ Descreve a arquitetura do aplicativo em um nível alto criando *diagramas de dep
  Consulte [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md).  
   
 ##  <a name="CreateLayers"></a>Definir camadas para representar as áreas funcionais ou componentes  
- Camadas representam grupos lógicos de *artefatos*, como projetos, arquivos de código, namespaces, classes e métodos. Você pode criar camadas de artefatos de projetos do Visual c# .NET e Visual Basic .NET ou anexar especificações ou planos para uma camada por meio da vinculação de documentos, como arquivos do Word ou apresentações do PowerPoint. Cada camada aparece como um retângulo no diagrama e mostra o número de artefatos que estão vinculados a ele. Uma camada pode conter camadas aninhadas que descrevem as tarefas mais específicas.  
+ Camadas representam grupos lógicos de *artefatos*, como projetos, arquivos de código, namespaces, classes e métodos. Você pode criar camadas de artefatos de projetos do Visual c# e Visual Basic, ou anexar especificações ou planos para uma camada por meio da vinculação de documentos, como arquivos do Word ou apresentações do PowerPoint. Cada camada aparece como um retângulo no diagrama e mostra o número de artefatos que estão vinculados a ele. Uma camada pode conter camadas aninhadas que descrevem as tarefas mais específicas.  
   
  Como diretriz geral, camadas de nome de acordo com a sua função, por exemplo, "Apresentação" ou "Serviços". Se os artefatos estão estreitamente interdependentes, coloque-os na mesma camada. Se os artefatos podem ser atualizados separadamente ou usados em aplicativos separados, coloquem-os em diferentes camadas. Para saber mais sobre os padrões de camadas, visite o site de padrões e práticas em [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).  
   

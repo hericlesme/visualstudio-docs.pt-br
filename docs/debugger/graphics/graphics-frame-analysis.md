@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>Análise de Quadros de Gráficos
 Use a análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.  
@@ -112,7 +113,7 @@ Use a análise de quadros de gráficos no analisador de gráficos do Visual Stud
   
  ![Contadores de hardware são exibidos quando houver suporte. ] (media/pix_frame.png "pix_frame")  
   
- As informações do contador de hardware oferecem uma visão bastante detalhada de comportamentos específicos da plataforma de hardware para cada chamada de desempenho, o que pode ajudar a identificar a causa de afunilamentos de desempenho de maneira bastante precisa.  
+ As informações do contador de hardware oferecem uma visão bastante detalhada de comportamentos específicos da plataforma de hardware para cada chamada de desempenho, o que pode ajudar a identificar a causa de gargalos de desempenho de maneira bastante precisa.  
   
 > [!NOTE]
 >  Diferentes plataformas de hardware oferecem suporte a diferentes contadores; não há um padrão. Os contadores e aquilo que eles representam são determinados exclusivamente para cada fabricante de GPU.  
@@ -147,37 +148,32 @@ Use a análise de quadros de gráficos no analisador de gráficos do Visual Stud
 ### <a name="gpu-counters"></a>Contadores de GPU  
  O suporte a contadores de hardware de GPU dependem do hardware.  
   
- Como nenhuma GPU de computador atualmente oferecida pela Intel, AMD ou nVidia tem suporte confiável a contadores de hardware de GPU, a Análise de Quadro não coleta contadores delas. No entanto, a Análise de Quadro coleta contadores de hardware dessas GPUs, com suporte confiável a elas:  
+ Como nenhuma GPU de computador atualmente oferecida pela Intel, AMD ou nVidia tem suporte confiável a contadores de hardware de GPU, a Análise de Quadro não coleta contadores delas. No entanto, a análise de quadros coletar contadores de hardware da GPU seguinte, que suporta confiável:  
   
--   SOCs da Qualcomm (qualquer um com suporte a Windows Phone)  
-  
--   nVidia T40 (Tegra4).  
+-   nVidia T40 (Tegra4)
   
  Nenhuma outra plataforma com suporte à Análise de Quadro coleta contadores de hardware de GPU.  
   
 > [!NOTE]
 >  Como os contadores de hardware de GPU são recursos de hardware, pode levar vários passos para coletar o conjunto completo de contadores de hardware para cada variante de renderização. Como resultado, a ordem na qual os contadores de GPU são coletados não é especificada.  
   
-### <a name="windows-phone"></a>Windows Phone  
- Somente há suporte para os carimbos de hora, oclusão consultas e contadores de hardware GPU em aparelhos do Windows Phone fornecido originalmente com o Windows Phone 8.1 ou Windows Phone 10. A Análise de Quadro requer esses recursos para reproduzir o arquivo de log de elementos gráficos. Telefones Windows Phone que foram enviados originalmente com o Windows Phone 8 não dão suporte a análise de quadros, mesmo para aparelhos que foram atualizados para Windows Phone 8.1 ou Windows Phone 10.  
-  
 ## <a name="unsupported-scenarios"></a>Cenários sem suporte  
  Determinadas maneiras de usar a análise de quadro não possui suporte ou simplesmente não valem a pena.  
-  
-### <a name="warp"></a>WARP  
- A análise de quadro deve ser usada para analisar e aprimorar o desempenho de renderização em hardwares reais. Executar a análises de quadro em dispositivos WARP não é proibido, o emulador do Windows Phone pode ser executado em WARP, mas essa tarefa geralmente não vale a pena, pois o WARP em execução em uma CPU de alto nível é mais lento até mesmo do que as GPUs modernas com menor capacidade, e porque o desempenho de WARP pode variar bastante dependendo da CPU específica em que ele está sendo executado.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Reprodução de capturas de alto nível de recursos em dispositivos de baixo nível  
  No analisador de gráficos, ao reproduzir um arquivo de log de elementos gráficos que usa um nível mais alto de recurso que oferece suporte a máquina de reprodução, ele automaticamente volta a distorção. Na Análise de Quadro, ele não recorre explicitamente ao WARP e gera um erro; o WARP é útil para examinar a precisão do aplicativo Direct3D, mas não para examinar seu desempenho.  
   
 > [!NOTE]
->  Embora seja importante manter os problemas de nível de recurso em mente, você pode capturar e reproduzir arquivos de log de elementos gráficos em diferentes configurações de hardware e dispositivos. Por exemplo, você pode capturar informações de gráficos em um Windows Phone e reproduzi-las em um computador desktop, ou vice-versa. Em ambos os casos, o log de elementos gráficos pode ser reproduzido considerando que o arquivo de log não contenha APIs nem utilize níveis de recurso sem suporte no computador de reprodução.  
+>  Embora seja importante manter os problemas de nível de recurso em mente, você pode capturar e reproduzir arquivos de log de elementos gráficos em diferentes configurações de hardware e dispositivos. O log de elementos gráficos pode ser executado novamente desde que o arquivo de log não contém APIs ou usar níveis de recurso que não têm suporte no computador de reprodução.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e versão anterior  
  Se seu aplicativo chamar a API do Direct3D 10, análise de quadros não reconhece ou criar o perfil mesmo que eles são reconhecidos e usados por outras ferramentas do analisador de gráficos.
   
 > [!NOTE]
 >  Isso se aplica somente às chamadas à API do Direct3D que você estiver utilizando, e não aos níveis de recurso.
+
+### <a name="warp"></a>WARP  
+ A análise de quadro deve ser usada para analisar e aprimorar o desempenho de renderização em hardwares reais. Executar análise de quadros em dispositivos de distorção não será impedida, mas não é geralmente vantajoso pois WARP em execução em uma CPU high-end é mais lenta que até mesmo as GPUs modernas menos capacidade e desempenho WARP pode variar muito, dependendo da CPU específica ele está em execução.  
   
 ##  <a name="Variants"></a>Variantes  
  Cada alteração que torna a análise de quadros à forma como um quadro é processado durante a reprodução é conhecida como um *variante*. As variantes examinadas pela Análise de Quadro correspondem a alterações comuns e relativamente fáceis que podem ser feitas para aprimorar o desempenho de renderização ou a qualidade visual do aplicativo; por exemplo, reduzir o tamanho das texturas, usar a compactação de texturas ou habilitar diferentes tipos de suavização. As variantes substituem o contexto de renderização e os parâmetros comuns do seu aplicativo. Segue um resumo:  
@@ -185,9 +181,9 @@ Use a análise de quadros de gráficos no analisador de gráficos do Visual Stud
 |Variante|Descrição|  
 |-------------|-----------------|  
 |**Tamanho do 1x1 visor**|Reduz as dimensões do visor em todos os destinos de renderização para 1 x 1 pixels.<br /><br /> Para obter mais informações, consulte [variante de tamanho do visor 1x1](1x1-viewport-size-variant.md)|  
-|**0 x MSAA**|Desativa a MSAA (suavização de múltipla amostra) em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
-|**2 x MSAA**|Ativa a MSAA de 2x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
-|**4 x MSAA**|Ativa a MSAA de 4x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|Desativa a MSAA (suavização de múltipla amostra) em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Ativa a MSAA de 2x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Ativa a MSAA de 4x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
 |**Filtragem de textura de ponto**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtragem de textura de ponto) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e anisotrópico variantes de filtragem de textura](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtragem de textura bilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtragem de textura bilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e anisotrópico variantes de filtragem de textura](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtragem de textura trilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtragem de textura trilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e anisotrópico variantes de filtragem de textura](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

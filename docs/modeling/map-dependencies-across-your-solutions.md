@@ -29,12 +29,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
 
@@ -63,13 +64,13 @@ Quando você quiser entender as dependências em seu código, visualize-los Cria
   
  **Você pode mapear as dependências para código nestes idiomas**:  
   
--   Visual c# .NET ou Visual Basic .NET em uma solução ou assemblies (. dll ou .exe)  
+-   Visual c# ou Visual Basic em uma solução ou assemblies (. dll ou .exe)  
   
 -   Código C ou C++ nativo ou gerenciado em projetos do Visual C++, arquivos de cabeçalho (. h ou `#include`) ou binários  
   
 -   Projetos e assemblies do X++ feitos com base nos módulos do .NET para Microsoft AX Dynamics  
   
- **Observação:** para projetos que não seja o c# ou Visual Basic .NET, há menos opções para iniciar um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não pode clique um objeto no editor de texto de um projeto de C++ e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de Gerenciador de soluções, modo de exibição de classe e Pesquisador de objetos.  
+ **Observação:** para projetos que não seja o c# ou Visual Basic, há menos opções para iniciar um mapa de código ou adicionar itens a um mapa de código existente. Por exemplo, você não pode clique um objeto no editor de texto de um projeto de C++ e adicioná-lo a um mapa de código. No entanto, você pode arrastar e soltar elementos de código individuais ou arquivos de Gerenciador de soluções, modo de exibição de classe e Pesquisador de objetos.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Para ver as dependências gerais em sua solução  
   
@@ -307,10 +308,10 @@ Quando você quiser entender as dependências em seu código, visualize-los Cria
   
  Esses problemas podem ocorrer quando você criar mapas de código para código C e C++:  
   
-|**Problema**|**Causa possível**|**Resolução**|  
+|**Issue**|**Causa possível**|**Resolução**|  
 |---------------|------------------------|--------------------|  
 |O mapa de código falha ao gerar.|Nenhum projeto na solução foi compilado com êxito.|Corrija os erros de compilação ocorrem e, em seguida, gerar o mapa.|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]deixar de responder quando você tenta gerar um mapa de código do **arquitetura** menu.|O arquivo de banco de dados do programa (.pdb) pode estar corrompido.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Recompile a solução e, em seguida, tente novamente.|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deixar de responder quando você tenta gerar um mapa de código do **arquitetura** menu.|O arquivo de banco de dados do programa (.pdb) pode estar corrompido.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Recompile a solução e, em seguida, tente novamente.|  
 |Determinadas configurações do banco de dados de navegação do IntelliSense estão desabilitadas.|Determinadas configurações do IntelliSense podem ser desabilitadas no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **opções** caixa de diálogo.|Ative as configurações para habilitá-las.<br /><br /> Consulte [opções, Editor de texto, C/C++, avançado](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
 |A mensagem **métodos desconhecido** aparece em um nó de método.<br /><br /> Esse problema ocorre porque o nome do método não pode ser resolvido.|O arquivo binário não pode ter uma tabela de realocação de base.|Ativar o **/fixed:** opção de vinculador.|  
 ||Talvez o arquivo de banco de dados do programa (.pdb) não tenha sido compilado.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Ativar o **/Debug** opção de vinculador.|  

@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
+dev_langs:
+- CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de diretrizes de núcleos de C++
 As diretrizes de núcleos de C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado por especialistas de C++ e designers. Visual Studio atualmente oferece suporte a um subconjunto dessas regras como parte de suas ferramentas de análise de código do C++. Os verificadores de diretriz de núcleo são instalados por padrão no Visual Studio de 2017 e são [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -191,7 +191,7 @@ Você pode usar as verificações de diretrizes de núcleos de C++ em compilaç�
 ```
 Certifique-se de que adicionar essas propriedades antes da importação do arquivo Microsoft.Cpp.targets. Pode escolher conjuntos de regras específicas ou criar um conjunto de regras personalizado ou usar o conjunto de regras padrão que inclui outras verificações PREfast.
 
-Você pode executar o verificador de núcleo de C++ somente em arquivos especificados usando a mesma abordagem [descrita anteriormente](#coreckeck_per_file), mas o uso de arquivos do MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
+Você pode executar o verificador de núcleo de C++ somente em arquivos especificados usando a mesma abordagem [descrita anteriormente](#corecheck_per_file), mas o uso de arquivos do MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
 
 ```xml
 <ItemGroup>

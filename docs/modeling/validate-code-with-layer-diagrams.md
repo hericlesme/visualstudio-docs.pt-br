@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -54,7 +55,7 @@ Para certificar-se de que o código não causa conflito com seu design, valide s
   
 -   Visual Studio em seu servidor do Team Foundation Build para validar o código automaticamente com o Team Foundation Build  
   
--   Uma solução que tem um projeto de modelagem com um diagrama de dependência. Este diagrama de dependência deve ser vinculado aos artefatos em projetos do Visual c# .NET ou Visual Basic .NET que você deseja validar. Consulte [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Uma solução que tem um projeto de modelagem com um diagrama de dependência. Este diagrama de dependência deve ser vinculado aos artefatos em projetos c# ou Visual Basic que você deseja validar. Consulte [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +121,7 @@ Nesta versão do Visual Studio, ocorre a validação de dependência em tempo re
 2.  Para exibir a origem de cada erro, clique duas vezes o erro a **lista de erros** janela.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]pode mostrar um mapa de código ao invés da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly que não for especificado, o diagrama de dependência ou o código está faltando uma dependência que é especificada pelo diagrama de dependência. Examine o mapa de códigos ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de códigos, consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode mostrar um mapa de código ao invés da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly que não for especificado, o diagrama de dependência ou o código está faltando uma dependência que é especificada pelo diagrama de dependência. Examine o mapa de códigos ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de códigos, consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Para gerenciar erros, consulte [gerenciar erros de validação](#ManageErrors).  
   

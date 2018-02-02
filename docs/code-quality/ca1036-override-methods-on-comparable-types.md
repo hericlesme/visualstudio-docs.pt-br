@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - OverrideMethodsOnComparableTypes
 - CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9c8eedd58df2665b9e00051e40a07a0ac226ec6c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d5e366144a70e25fc805d63ddcc7664a60df4303
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: substituir métodos em tipos comparáveis
 |||  
@@ -53,7 +55,7 @@ ms.lasthandoff: 12/22/2017
  No c#, os tokens que são usados para representar esses operadores são os seguintes: = =,! =, \<, e >.  
   
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- É seguro suprimir um aviso dessa regra quando a violação é causada por falta de operadores e a linguagem de programação não oferece suporte a sobrecarga de operador, como é o caso com o Visual Basic .NET. Também é seguro suprimir um aviso para essa regra quando ele é acionado em operadores de igualdade que op_Equality se você determinar que os operadores a implementação não faz sentido no contexto de seu aplicativo. No entanto, você deve sempre sobre op_Equality e o operador = = se substitui Object. Equals.  
+ É seguro suprimir um aviso dessa regra quando a violação é causada por falta de operadores e a linguagem de programação não oferece suporte a sobrecarga de operador, como é o caso com o Visual Basic. Também é seguro suprimir um aviso para essa regra quando ele é acionado em operadores de igualdade que op_Equality se você determinar que os operadores a implementação não faz sentido no contexto de seu aplicativo. No entanto, você deve sempre sobre op_Equality e o operador = = se substitui Object. Equals.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir contém um tipo que implementa corretamente <xref:System.IComparable>. Comentários de código identificam os métodos que atendem várias regras relacionadas a <xref:System.Object.Equals%2A> e <xref:System.IComparable> interface.  

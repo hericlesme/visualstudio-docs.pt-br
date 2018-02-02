@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Instruções passo a passo: analisando código do C/C++ em busca de defeitos
 Este passo a passo demonstra como analisar o código C/C++ em busca de possíveis defeitos de código usando a ferramenta de análise de código para código C/C++.  
@@ -85,9 +87,9 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
 3.  Corrija esse aviso usando a macro SUCCEEDED. Seu código deve se parecer com o código a seguir:  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  No **lista de erros**, clique duas vezes o seguinte aviso:  
   
@@ -95,17 +97,17 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
 5.  Teste de igualdade para corrigir este aviso. Seu código deve se parecer com o código a seguir:  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>Tratar aviso como erro  
   
 1.  No arquivo Bug.cpp, adicione o seguinte `#pragma` instrução para o início do arquivo para tratar o aviso C6001 como um erro:  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  Recompile o projeto CodeDefects.  
   
@@ -141,17 +143,14 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
 8.  Para corrigir esse aviso, use uma instrução 'if' para testar o valor de retorno. Seu código deve se parecer com o código a seguir:  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. Recompile o projeto de anotações.  
   
@@ -161,15 +160,13 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
 1.  Anotar parâmetros formais e retornar o valor da função `AddTail` usando as condições anteriores e subsequentes, conforme mostrado neste exemplo:  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  Recompile o projeto de anotações.  
   
@@ -181,19 +178,21 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
   
 4.  Para corrigir esse aviso, use uma instrução 'if' para testar o valor de retorno. Seu código deve se parecer com o código a seguir:  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  Recompile o projeto de anotações.  
   
      O projeto é compilado sem avisos ou erros.  
   
-## <a name="see-also"></a>Consulte também  
- [Passo a passo: analisando código gerenciado em busca de defeitos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>Consulte também
+
+[Passo a passo: analisando código gerenciado em busca de defeitos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[Análise de código para C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)
