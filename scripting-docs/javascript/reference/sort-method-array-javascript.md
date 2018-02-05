@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>Método sort (Array) (JavaScript)
 Classifica um `Array`.  
@@ -48,13 +49,13 @@ arrayobj.sort(sortFunction)
 ## <a name="remarks"></a>Comentários  
  O `sort` método classifica o `Array` objeto no local; nenhum novo `Array` objeto é criado durante a execução.  
   
- Se você fornecer uma função de `sortFunction` argumento, ele deve retornar um dos seguintes valores:  
+ `sortFunction`leva dois argumentos e deve retornar um dos seguintes valores:  
   
--   Um valor negativo se o primeiro argumento passado é menor que o segundo argumento.  
+-   Um valor negativo (menor que 0) se o primeiro argumento passado é menor que o segundo argumento.  O primeiro argumento é classificado em um índice inferior.
   
--   Zero se os dois argumentos são equivalentes.  
+-   Zero (0) se os dois argumentos são equivalentes.  Os dois argumentos são classificados em relação a outros elementos na matriz, mas não são classificados em relação à outra.
   
--   Um valor positivo se o primeiro argumento for maior que o segundo argumento.  
+-   Um valor positivo (maior que 0) se o primeiro argumento for maior que o segundo argumento.  O segundo argumento é classificado em um índice inferior.
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra como usar o método `sort`.  
