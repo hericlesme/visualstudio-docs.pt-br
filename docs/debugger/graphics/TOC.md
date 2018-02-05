@@ -30,7 +30,6 @@
 ## [Passo a passo: depurando erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
 ## [Passo a passo: usando diagnóstico de gráficos para depurar um sombreador de cálculo](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
 ## [Como alterar o computador de reprodução de diagnóstico de gráficos](how-to-change-the-graphics-diagnostics-playback-machine.md)
-## [Como usar diagnóstico de gráficos com um dispositivo ARM](how-to-use-graphics-diagnostics-with-an-arm-device.md)
 # [Referência (captura programática)](reference-programmatic-capture.md)
 ## [Classe VsgDbg](vsgdbg-class.md)
 ### [VsgDbg::VsgDbg (Construtor)](vsgdbg-vsgdbg-constructor.md)

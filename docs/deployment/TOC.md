@@ -1,5 +1,5 @@
 # [Documentação de implantação](index.md)
-# Visão Geral
+# Visão geral
 ## [Visão geral da implantação](deploying-applications-services-and-components.md)
 # Guias de Início Rápido
 ## [Implantar em uma pasta local](quickstart-deploy-to-local-folder.md)
@@ -24,7 +24,7 @@
 ## Node.js
 ### [Publicar no site do Azure usando a Implantação da Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [Publicar no Serviço de Aplicativo do Azure](/visualstudio/python/publishing-to-azure)
+### [Publicar no Serviço de Aplicativo do Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # Guias de instruções
 ## [Segurança e implantação do ClickOnce](clickonce-security-and-deployment.md)
 ### [Escolhendo uma estratégia de implantação do ClickOnce](choosing-a-clickonce-deployment-strategy.md)
