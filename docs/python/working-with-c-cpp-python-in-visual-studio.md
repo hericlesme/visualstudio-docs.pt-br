@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Criando uma extensão do C++ para o Python
 
@@ -50,7 +50,7 @@ Para obter mais informações, consulte [Instalando o suporte do Python para Vis
 
 1. Crie um novo projeto do Python no Visual Studio selecionando **Arquivo > Novo > Projeto**. Pesquise "Python", selecione o modelo **Aplicativo Python**, atribua a ele um nome e um local adequados e selecione **OK**.
 
-1. No arquivo `.py` do projeto, cole o código a seguir que submeterá a benchmark o cálculo de uma tangente hiperbólica (implementada sem o uso da biblioteca de matemática para facilitar a comparação). Fique à vontade para inserir o código manualmente para experimentar alguns [recursos de edição do Python](code-editing.md).
+1. No arquivo `.py` do projeto, cole o código a seguir que submeterá a benchmark o cálculo de uma tangente hiperbólica (implementada sem o uso da biblioteca de matemática para facilitar a comparação). Fique à vontade para inserir o código manualmente para experimentar alguns [recursos de edição do Python](editing-python-code-in-visual-studio.md).
 
     ```python
     from itertools import islice
@@ -289,7 +289,7 @@ O Visual Studio é compatível com a depuração de código de Python e C++ junt
 
     ![Parando em um ponto de interrupção no código C++](media/cpp-debugging.png)
 
-1. Neste ponto, você poderá executar o código C++ em etapas, examinar variáveis e assim por diante. Esses recursos são detalhados em [Depuração de C++ e Python juntos](debugging-mixed-mode.md).
+1. Neste ponto, você poderá executar o código C++ em etapas, examinar variáveis e assim por diante. Esses recursos são detalhados em [Depuração de C++ e Python juntos](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
 ## <a name="alternative-approaches"></a>Abordagens alternativas
 

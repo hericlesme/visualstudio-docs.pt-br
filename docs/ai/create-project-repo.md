@@ -34,7 +34,7 @@ Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installa
 
     ![Primeira saída do programa MNIST do Python](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Se você estiver usando o Anaconda e receber um erro sobre numpy ausente, talvez seja necessário [alterar seu ambiente de python para usar o Anaconda](https://docs.microsoft.com/visualstudio/python/python-environments) 
+> Se você estiver usando o Anaconda e receber um erro sobre numpy ausente, talvez seja necessário [alterar seu ambiente de python para usar o Anaconda](../python/managing-python-environments-in-visual-studio.md)
 
 11. É possível visualizar o andamento com o TensorBoard. Clique com botão direito do mouse no seu projeto e em **Executar TensorBoard**. Em seguida, selecione o diretório os seus logs do TensorBoard de saída.
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 146e3f80de674e6219d1f7c89ea4186b66ee310f
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-environments"></a>Ambientes do Python
 
@@ -123,7 +123,7 @@ Fornece informações básicas e comandos para o ambiente:
 | --- | --- |
 | Tornar este ambiente padrão para novos projetos | Definir o ambiente ativo, o que pode fazer com que o Visual Studio pare de responder brevemente enquanto ele carrega o banco de dados do IntelliSense. Ambientes com muitos pacotes podem parar de responder por um período maior. |
 | Visitar o site do distribuidor | Abre um navegador para a URL fornecida para a distribuição de Python. Python 3. x, por exemplo, vai para python.org. |
-| Abrir a janela interativa | Abre a [janela interativa (REPL)](interactive-repl.md) para esse ambiente dentro do Visual Studio, aplicando quaisquer [scripts de inicialização (veja abaixo)](#startup-scripts). |
+| Abrir a janela interativa | Abre a [janela interativa (REPL)](python-interactive-repl-in-visual-studio.md) para esse ambiente dentro do Visual Studio, aplicando quaisquer [scripts de inicialização (veja abaixo)](#startup-scripts). |
 | Explorar scripts interativos | Veja os [scripts de inicialização](#startup-scripts). |
 | Usar o modo interativo do IPython | Quando definido, abre a janela interativa com IPython por padrão. Isso habilita os gráficos embutidos e a sintaxe estendida do IPython como `name?` para exibir a ajuda e `!command` para comandos shell. Essa opção é recomendada quando estiver usando uma distribuição Anaconda, pois ela requer pacotes extras. Para obter mais informações, consulte [Usando o IPython na Janela Interativa](interactive-repl-ipython.md). |
 | Abrir no PowerShell | Inicia o interpretador em uma janela de comando do PowerShell. |
@@ -137,7 +137,7 @@ Os scripts de inicialização contêm o código que a janela interativa carrega 
 
 1. Quando você instala um ambiente, o Visual Studio cria uma pasta `Documents\Visual Studio 2017\Python Scripts\<environment>` em que &lt;environment&gt' corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela interativa para esse ambiente, ela carrega e executa qualquer arquivo `.py` que for encontrado aqui em ordem alfabética.
 
-1. O controle **Scripts** na guia **Ferramentas > Opções > Ferramentas do Python > Janelas Interativas** (consulte [Opções de janelas interativas](options.md#interactive-windows-options)) destina-se a especificar uma pasta adicional para os scripts de inicialização que estão carregados e são executados em todos os ambientes. No entanto, esse recurso não funciona no momento.
+1. O controle **Scripts** na guia **Ferramentas > Opções > Ferramentas do Python > Janelas Interativas** (consulte [Opções de janelas interativas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) destina-se a especificar uma pasta adicional para os scripts de inicialização que estão carregados e são executados em todos os ambientes. No entanto, esse recurso não funciona no momento.
 
 ### <a name="configure-tab"></a>Guia Configurar
 
@@ -172,7 +172,7 @@ No último caso, como o ambiente está localizado em uma área protegida do sist
 
 Selecionar **Sempre elevar ao instalar o u remover pacotes** impede que a caixa de diálogo apareça para o ambiente em questão. Para fazer a caixa de diálogo aparecer novamente, vá para **Ferramentas > Opções > Ferramentas do Python > Geral** e selecione o botão **Redefinir todas as caixas de diálogo permanentemente ocultas**.
 
-Nessa mesma guia de opções, você também pode selecionar **Sempre executar o PIP como administrador** para suprimir a caixa de diálogo para todos os ambientes. Consulte [Opções – guia Geral](options.md#general-options).
+Nessa mesma guia de opções, você também pode selecionar **Sempre executar o PIP como administrador** para suprimir a caixa de diálogo para todos os ambientes. Consulte [Opções – guia Geral](python-support-options-and-settings-in-visual-studio.md#general-options).
 
 ### <a name="intellisense-tab"></a>Guia IntelliSense
 
@@ -232,7 +232,7 @@ Observe que uma desvantagem dos ambientes virtuais é que eles contêm caminhos 
 
 ## <a name="managing-required-packages-requirementstxt"></a>Gerenciar os pacotes necessários (requirements.txt)
 
-Se você estiver compartilhando um projeto com outras pessoas, usando um sistema de compilação ou pretender [publicá-lo no Microsoft Azure](template-azure-cloud-service.md), precisará especificar os pacotes externos exigidos pelo projeto. A abordagem recomendada é usar um [arquivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contém uma lista de comandos do PIP que instala as versões necessárias dos pacotes dependentes.
+Se você estiver compartilhando um projeto com outras pessoas, usando um sistema de compilação ou pretender [publicá-lo no Microsoft Azure](python-azure-cloud-service-project-template.md), precisará especificar os pacotes externos exigidos pelo projeto. A abordagem recomendada é usar um [arquivo requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) que contém uma lista de comandos do PIP que instala as versões necessárias dos pacotes dependentes.
 
 Tecnicamente, qualquer nome de arquivo pode ser usado para acompanhar os requisitos (usando `-r <full path to file>` durante a instalação de um pacote), mas o Visual Studio fornece suporte específico para `requirements.txt`:
 

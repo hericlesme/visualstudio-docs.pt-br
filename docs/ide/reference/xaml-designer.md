@@ -4,23 +4,26 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.XAMLDesigner
-ms.assetid: ad3820b2-0d95-4807-a75c-c3467ed973a3
-caps.latest.revision: "1"
+ms.topic: reference
+f1_keywords:
+- VS.ToolsOptionsPages.XAMLDesigner
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: bf71bb6f2d52159ab203d14c690a73525af091ae
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="xaml-designer-options-page"></a>Página de opções do Designer XAML
+
 Use a página de opções do **Designer XAML** para especificar como os elementos e atributos são formatados nos documentos XAML. Para abrir essa página, escolha o menu **Ferramentas** e, em seguida, **Opções**. Para acessar a página de propriedades **XAML Designer**, escolha o nó **XAML Designer**. As configurações para o XAML Designer são aplicadas quando você abre o documento. Portanto, se você alterar as configurações, será necessário fechar e reabrir o Visual Studio para ver as alterações.
 
 > [!NOTE]
@@ -100,7 +103,7 @@ Use essas configurações para determinar se efeitos são renderizados ao editar
 |**Renderizar efeitos**|Especifica se efeitos renderizam ao editar arquivos XAML no XAML Designer usando o Blend.|  
 |**Limite de zoom**|Especifica o percentual de ampliação com a qual os efeitos são renderizados quando a caixa de seleção **Renderizar efeitos** está selecionada. Se você aplicar zoom além dessa configuração os efeitos não serão mais renderizados no XAML Designer.|  
 
-## <a name="see-also"></a>Consulte também  
- [XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
- [Como alterar as configurações do modo de exibição XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [Passo a passo do Code e XAML](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>Consulte também
+
+[XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)  
+[Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF](../../designers/walkthrough-my-first-wpf-desktop-application2.md)

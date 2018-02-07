@@ -2,7 +2,7 @@
 title: Trabalhar com o Python no Visual Studio, Etapa 3, Janela REPL Interativa | Microsoft Docs
 description: "Etapa 3 de um tutorial básico para trabalhar com Python no Visual Studio, abordando como a janela REPL Python interativa."
 ms.custom: 
-ms.date: 10/16/2017
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cdfcd81108437e611d7ba58f0a612b19931cc654
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f251e49847655251de46d44a23ee1d4c1c9f0263
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Etapa 3: usando a janela interativa REPL
 
@@ -102,5 +102,5 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
 ### <a name="going-deeper"></a>Aprofundando-se
 
-- [Usando a Janela interativa](interactive-repl.md)
+- [Usando a Janela interativa](python-interactive-repl-in-visual-studio.md)
 - [Usando o IPython REPL](interactive-repl-ipython.md)

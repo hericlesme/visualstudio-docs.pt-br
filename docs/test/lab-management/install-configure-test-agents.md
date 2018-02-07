@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
+helpviewer_keywords:
+- configure test agents, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 495f14643245f17a2e7fcef1e21d2fc1fe978a46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>Instalar e configurar agentes de teste
 
@@ -81,7 +83,7 @@ A tabela a seguir mostra os cenários com suporte pelo Agents para o Visual Stud
 | Cenários com suporte pelo Agents para Visual Studio 2013 | Alternativa no TFS e TS |
 | --- | --- |
 | Fluxo de trabalho compilar-implantar-testar no Visual Studio | Os usuários podem usar uma [definição de build](https://www.visualstudio.com/team-services/continuous-integration/) (não um build XAML) para compilar, implantar e testar os cenários no TFS. |
-| Teste de carga (teste de desempenho) usando computadores remotos locais | Use o Test Controller/Test Agents 2013 Atualização 5 para executar os testes de carga locais. [Mais informações](https://msdn.microsoft.com/en-us/library/ff400223.aspx). |
+| Teste de carga (teste de desempenho) usando computadores remotos locais | Use o Test Controller/Test Agents 2013 Atualização 5 para executar os testes de carga locais. [Mais informações](https://msdn.microsoft.com/library/ff400223.aspx). |
 | Execução remota de testes automatizados do Microsoft Test Manager usando um ambiente de laboratório | Atualmente não há nenhuma alternativa para esse cenário. Recomendamos que você use a tarefa Executar Testes Funcionais nas definições de build e versão (não em um build XAML) para executar testes remotamente. |
 | Desenvolvedores executando testes remotos no Visual Studio | Não há mais suporte. |
 

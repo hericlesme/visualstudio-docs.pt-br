@@ -5,12 +5,7 @@ ms.date: 09/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- JScript
-- VB
-- CSharp
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
@@ -19,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: abde071bd67ab3f6a65891d347b9214f6dd5257b
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.openlocfilehash: 5847c97f3fddea65b00c35a5a0f4d5665329ae7e
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Escrever código no editor de códigos
 
@@ -68,7 +63,6 @@ Você pode encontrar uma série de recursos avançados no submenu **Editar/Avan�
 |Colocar em Minúsculas|Alterar todos os caracteres na seleção para minúsculos ou se não houver nenhuma seleção, altera o caractere no ponto de inserção para minúsculo.|
 |Mover linhas selecionadas para cima|Move a linha selecionada uma linha para cima. Atalho: ALT + SETA PARA CIMA.|
 |Mover Linhas Selecionadas para Baixo|Move a linha selecionada uma linha para baixo. Atalho: ALT + SETA PARA BAIXO.|
-|Validar Documento|Valida os arquivos de código JScript.|
 |Excluir Espaço em Branco Horizontal|Exclui tabulações ou espaços ao final da linha atual.|
 |Exibir Espaço em Branco|Exibe espaços como pontos elevados e tabulações como setas. O final de um arquivo é exibido como um glifo retangular. Se **Ferramentas/Opções/Editor de Texto/Todas as Linguagens/Quebra automática de linha/Mostrar glifos visíveis para quebra automática de linha** estiver selecionado, esse glifo também será exibido.|
 |Quebra automática de linha|Faz com que todas as linhas em um documento sejam visíveis na janela de código. Você pode ativar e desativar a quebra automática de linha na configuração Todas as Linguagens do Editor de Texto (**Ferramentas/Opções/Editor de Texto/Todas as Linguagens**).|

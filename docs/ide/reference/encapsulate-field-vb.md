@@ -1,0 +1,62 @@
+---
+title: Refatorar um campo para uma propriedade em Visual Basic | Microsoft Docs
+ms.custom: 
+ms.date: 12/14/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: reference
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+f1_keywords:
+- vs.csharp.refactoring.encapsulatefield
+dev_langs:
+- VB
+ms.workload:
+- multiple
+ms.openlocfilehash: 010a297745ed6028f7ee127fffc210097d6d26f5
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/06/2018
+---
+# <a name="encapsulate-a-field-in-visual-basic"></a>Encapsular um campo em Visual Basic
+
+**O quê:** permite que você transforme um campo em uma propriedade e atualize todos os usos desse campo a fim de usar a propriedade recém-criada.
+
+**Quando:** você quer mover um campo para uma propriedade e atualizar todas as referências a esse campo.  
+
+**Por quê:** você quer conceder a outras classes o acesso a um campo, mas não quer que essas classes tenham acesso direto.  Ao encapsular o campo em uma propriedade, você pode escrever o código para verificar o valor que está sendo atribuído, por exemplo.
+
+**Como:**
+
+1. realce ou coloque o cursor do texto dentro do nome do campo para encapsular:
+
+   ![Código realçado](media/encapsulate-highlight-vb.png)
+
+1. Depois, siga um destes procedimentos:
+   * **Teclado**
+     * Pressione **Ctrl+R**, em seguida, **Ctrl+E**.  (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
+     * Pressione **Ctrl +.** para disparar o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.
+   * **Mouse**
+     * Selecione **Editar > Refatorar > Encapsular Campo**.
+     * Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.
+
+   Seleção | Descrição
+   --------- | -----------
+   **Encapsular campo (e usar propriedade)** | Encapsula o campo com uma propriedade e atualiza todos os usos do campo a fim de usar a propriedade gerada
+   **Encapsular campo (mas ainda usá-lo)** | Encapsula o campo com uma propriedade, mas não altera qualquer uso do campo
+
+   A propriedade será criada imediatamente, e as referências ao campo serão atualizadas, se isso for selecionado.
+
+   > [!TIP]
+   > Use o link [**Visualizar alterações**](../../ide/preview-changes.md) na janela pop-up para ver qual será o resultado antes de confirmá-lo.
+
+   ![Resultado de encapsular a propriedade](media/encapsulate-result-vb.png)
+
+## <a name="see-also"></a>Consulte também
+
+[Refatoração](../refactoring-in-visual-studio.md)  
+[Visualizar alterações](../../ide/preview-changes.md)

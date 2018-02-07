@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de Opções, Depuração, Propriedades do Nó
 As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) associadas à categoria **Depuração**, `DTE.Properties("Debugging", <Property Page>)` da caixa de diálogo **Opções**.  
@@ -39,7 +41,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
 |ShowAllMembers|Get/Set (Booliano)|Para objetos que não são de usuário, determina se o depurador exibe todos os membros de objeto nas janelas de variáveis. Essa opção só terá efeito se Apenas Meu Código estiver habilitado.|  
 |WarnIfNoUserCode|Get/Set (Booliano)|Determina se o depurador emite um aviso quando o usuário tenta se anexar a um processo que não tem nenhum código de usuário. Essa opção só terá efeito se Apenas Meu Código estiver habilitado.|  
 |EnablePropertyEvaluation|Get/Set (Booliano)|Determina se o depurador avalia automaticamente as propriedades e as chamadas de função implícitas no código gerenciado.|  
-|CallStringConversion|Get/Set (Booliano)|Determina se o depurador chama implicitamente uma função de conversão de cadeia de caracteres em objetos nas janelas de variáveis. Essa opção se aplica somente ao código C# e JScript.|  
+|CallStringConversion|Get/Set (Booliano)|Determina se o depurador chama implicitamente uma função de conversão de cadeia de caracteres em objetos nas janelas de variáveis.|  
 |EnableSourceServer|Get/Set (Booliano)|Determina se o depurador pode acessar o código em um servidor de origem.|  
 |PrintSourceServerDiagnostics|Get/Set (Booliano)|Determina se a Janela de Saída mostra mensagens de diagnóstico relacionadas ao servidor de origem. Essa opção só terá efeito se o acesso ao servidor de origem estiver habilitado.|  
 |HighlightEntireLine|Get/Set (Booliano)|Determina se o depurador realça uma linha inteira de pontos de interrupção e a instrução atual.|  
