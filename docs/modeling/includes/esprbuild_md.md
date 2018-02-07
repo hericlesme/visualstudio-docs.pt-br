@@ -1,1 +1,0 @@
-Compilação do Team Foundation
