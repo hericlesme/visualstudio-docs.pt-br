@@ -4,30 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d550b5b6df7b799f00b0043846be387cb6e6322
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9e9d1b0dca7c8e9d152a84273410e4bd7d768508
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Como dividir uma classe em classes parciais (Designer de Classe)
-Você pode dividir a declaração de uma classe ou estrutura entre várias declarações usando a palavra-chave `Partial` no Visual Basic ou a palavra-chave `partial` no Visual C#. É possível usar quantas declarações parciais você desejar, em quantos arquivos de origem diferentes desejar ou em um único arquivo de origem. No entanto, todas as declarações devem estar no mesmo assembly e no mesmo namespace.  
+Você pode dividir a declaração de uma classe ou estrutura entre várias declarações usando a palavra-chave `Partial` no Visual Basic ou a palavra-chave `partial` no C#. É possível usar quantas declarações parciais você desejar, em quantos arquivos de origem diferentes desejar ou em um único arquivo de origem. No entanto, todas as declarações devem estar no mesmo assembly e no mesmo namespace.  
   
 Classes parciais são úteis em várias situações. Por exemplo, quando você estiver trabalhando em projetos grandes, separar uma classe em mais de um arquivo permite que mais de um programador trabalhe ao mesmo tempo. Quando estiver trabalhando com código gerado pelo Visual Studio, você pode alterar a classe sem precisar recriar o arquivo de origem. (Exemplos de códigos gerados pelo Visual Studio incluem código de wrapper do serviço Web e do Windows Forms). Portanto, você pode criar um código que usa classes geradas automaticamente sem precisar modificar o arquivo que o Visual Studio cria.  
   
-Existem dois tipos de métodos parciais. No Visual C#, eles são chamados de declarar e implementar. No Visual Basic, são chamados de declaração e implementação.  
+Existem dois tipos de métodos parciais. No C#, eles são chamados de declarar e implementar. No Visual Basic, são chamados de declaração e implementação.  
   
 O Designer de Classe dá suporte a métodos e classes parciais. A forma de tipo no diagrama de classe se refere a um único local de declaração para a classe parcial. Se a classe parcial for definida em vários arquivos, você pode especificar qual local de declaração o Designer de Classe usará definindo a propriedade **Localização de Novo Membro** na janela **Propriedades**. Ou seja, quando você clica duas vezes em uma forma de classe, o Designer de Classe vai até o arquivo de origem que contém a declaração de classe identificada pela propriedade **Localização de Novo Membro**. Quando você clica duas vezes em um método parcial em uma forma de classe, o Designer de Classe vai para a declaração de método parcial. Além disso, na janela **Propriedades**, a propriedade **Nome de Arquivo** aponta para o local da declaração. Para classes parciais, **Nome de Arquivo** lista todos os arquivos que contêm código de implementação e declaração dessa classe. No entanto, para métodos parciais, **Nome de Arquivo** lista apenas o arquivo que contém a declaração de método parcial.  
   
@@ -56,7 +58,7 @@ End Class
 ```  
 
 ## <a name="example"></a>Exemplo  
-Para dividir uma definição de classe no Visual C#, use a palavra-chave `partial`, conforme mostrado no exemplo a seguir.  
+Para dividir uma definição de classe no C#, use a palavra-chave `partial`, conforme mostrado no exemplo a seguir.  
   
 ```csharp  
 // First part of class definition.  

@@ -1,5 +1,5 @@
 ---
-title: Usando os downloads do assinante nas assinaturas do Visuals Studio | Visual Studio Marketplace
+title: Usar os downloads do assinante nas assinaturas do Visuals Studio | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,15 +9,15 @@ Description: Learn how to locate and download Microsoft products included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d5826576cb0e36c0c8a6a145bc6ed3f34d2d43cc
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visual Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.  
-Você precisa estar conectado à sua assinatura para acessar a guia [Downloads](https://my.visualstudio.com/downloads). 
+Você precisa estar conectado à sua assinatura para acessar a guia [Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs). 
 
 ## <a name="product-availability"></a>Disponibilidade do produto
 Em geral, todos os produtos comerciais e para o consumidor da Microsoft relevantes para os projetos de desenvolvimento de software são disponibilizados aos assinantes do Visual Studio. Com as assinaturas do Visual Studio, os produtos normalmente permanecem disponíveis para download por muito tempo, mesmo após o término do período estendido de suporte do produto, para que os clientes possam desenvolver e testar aplicativos herdados e fazer a transição para plataformas mais novas. Há casos em que não podemos fornecer determinados produtos para os assinantes, conforme descrito a seguir, mas nos esforçamos ao máximo para minimizar essas ocorrências.
@@ -34,10 +34,12 @@ Há várias razões pelas quais determinados produtos podem não estar disponív
 ## <a name="what-do-i-get"></a>O que eu posso obter?
 O número e os tipos de downloads dependem do seu nível de assinatura e das suas associações ao programa.  Os assinantes com assinaturas padrão do Visual Studio Enterprise, por exemplo, podem ter downloads disponíveis diferentes dos de assinantes que obtêm suas assinaturas por meio de uma assinatura do programa Microsoft Partner Network ou BizSpark.  Para saber mais sobre quais downloads estão disponíveis para cada nível de assinatura, baixe a lista de [Produtos por nível de benefício](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
+Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Como fazer para localizar downloads no portal do assinante? 
 Somente os downloads incluídos na sua assinatura são exibidos na página [Downloads](https://my.visualstudio.com/downloads/featured).  Se você tiver mais de uma assinatura ou associação ao programa, os downloads mostrados serão referentes a **assinatura mais alta** que você tiver, mesmo que você esteja exibindo uma assinatura diferente no momento.  Por exemplo, se você tiver uma assinatura do Visual Studio Professional e uma associação ao Visual Studio Dev Essentials associadas à mesma ID de conexão, os downloads mostrados serão os incluídas na assinatura do Professional, mesmo que você esteja exibindo os benefícios do Dev Essentials no momento.  
 
-Ao visitar a página [Downloads](https://my.visualstudio.com/downloads/featured), você verá os downloads populares organizados em grupos por tipo de produto.  Você pode selecionar um dos downloads populares mostrados ou pesquisar qualquer produto usando a barra de pesquisa na parte superior da página. 
+Ao visitar a página [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), você verá os downloads populares organizados em grupos por tipo de produto.  Você pode selecionar um dos downloads populares mostrados ou pesquisar qualquer produto usando a barra de pesquisa na parte superior da página. 
 
 ![Página de downloads do assinante](_img\subscriber-downloads\subscriber-downloads-resized.png)
 

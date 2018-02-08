@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 4573d87bbb7d5f447bf6d2038cec310132a0c9f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usando navegadores diferentes com testes de interface do usuário codificada
 Os testes de IU codificados podem automatizar testes para aplicativos Web gravando os testes usando o Internet Explorer. Você pode personalizar o teste e executá-lo usando o Internet Explorer ou outros tipos de navegador para esses aplicativos Web.  
@@ -78,7 +79,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
     > [!TIP]
     >  Você também pode baixar os componentes Selenium para testes de IU codificados entre navegadores [aqui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Para obter mais informações sobre a criação e o uso de testes de IU codificados, confira [Criação de testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+ Para obter mais informações sobre a criação e o uso de testes de IU codificados, confira [Criação de testes de IU codificados](../test/use-ui-automation-to-test-your-code.md).  
   
 ### <a name="enable-debugging"></a>Habilitar a depuração  
  Para habilitar a depuração em seu aplicativo Web, conclua as seguintes opções de configuração:  
@@ -101,13 +102,13 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
  *O que mais eu deveria saber?*  
  **Observações**  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") não há suporte para o navegador Safari da Apple.  
+-   ![Pré-requisito](../test/media/prereq.png "Prereq") Não há suporte para o navegador Safari da Apple.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") A ação de iniciar o navegador deve fazer parte do teste de IU codificado.  
+-   ![Pré-requisito](../test/media/prereq.png "Prereq") A ação de iniciar o navegador deve fazer parte do teste de IU codificado.  
   
      Se você tiver um navegador da Web já aberto e quiser executar etapas nele, a reprodução falhará a menos que você esteja usando o Internet Explorer. Consequentemente, é uma prática recomendada incluir a inicialização do navegador da Web como parte dos testes de IU codificados.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") Não há suporte para automatizar ações de IU baseadas em navegadores específicos, como maximizar, minimizar e restaurar.  
+-   ![Pré-requisito](../test/media/prereq.png "Prereq") Não há suporte para automatizar ações de IU baseadas em navegadores específicos, como maximizar, minimizar e restaurar.  
   
  **Dicas**  
   

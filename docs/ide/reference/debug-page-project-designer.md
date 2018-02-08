@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesDebug
+f1_keywords:
+- vb.ProjectPropertiesDebug
 helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a16f39d9f9ba6c3e0790a53c85d0824178083953
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 305f5160ab91fdfa61e9133ab9f867194e4a117f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="debug-page-project-designer"></a>Página de Depuração, Designer de Projeto
 > [!WARNING]
@@ -29,16 +32,16 @@ ms.lasthandoff: 12/22/2017
   
  Use a página **Depurar** do **Designer de Projeto** para definir as propriedades do comportamento de depuração em um projeto do Visual Basic ou C#.  
   
- Para acessar a página **Depurar**, selecione um nó do projeto no **Gerenciador de Soluções**. No menu **Projeto**, escolha *ProjectName***Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Depurar**.  
+ Para acessar a página **Depurar**, selecione um nó do projeto no **Gerenciador de Soluções**. No menu **Projeto**, escolha *ProjectName* **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Depurar**.  
   
 ## <a name="configuration-and-platform"></a>Configuração e plataforma  
  As opções a seguir permitem selecionar a configuração e a plataforma a ser exibida ou modificada.  
   
  **Configuração**  
- Especifica quais definições de configuração exibir ou modificar. As configurações podem ser **Depurar** (padrão), **Versão** ou **Todas as Configurações**. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica quais definições de configuração exibir ou modificar. As configurações podem ser **Depurar** (padrão), **Versão** ou **Todas as Configurações**.
   
  **Plataforma**  
- Especifica quais configurações de plataforma exibir ou modificar. As opções podem incluir **Qualquer CPU** (padrão), **x64** e **x86**. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica quais configurações de plataforma exibir ou modificar. As opções podem incluir **Qualquer CPU** (padrão), **x64** e **x86**.
   
 ## <a name="start-action"></a>Iniciar ação  
  **Iniciar ação** indica o item a ser iniciado quando o aplicativo for depurado: o projeto, um programa personalizado, uma URL ou nada. Por padrão, essa opção é definida como **Iniciar projeto**. A configuração **Iniciar ação** na página **Depurar** determina o valor da propriedade `StartAction`.  
@@ -74,10 +77,10 @@ ms.lasthandoff: 12/22/2017
   
  Para depurar em uma zona de segurança, você precisa habilitar essa opção e **Depurar este aplicativo com o conjunto de permissões selecionado** na [Caixa de diálogo Configurações de Segurança Avançadas](../../ide/reference/advanced-security-settings-dialog-box.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Depurando no Visual Studio](../../debugger/debugging-in-visual-studio.md)   
- [Configurações do projeto para configurações de depuração de C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configurações do projeto para uma configuração de depuração do Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Gerenciando propriedades de depuração](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Como depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)
+## <a name="see-also"></a>Consulte também
+
+[Depurando no Visual Studio](../../debugger/debugging-in-visual-studio.md)  
+[Configurações do projeto para configurações de depuração de C#](../../debugger/project-settings-for-csharp-debug-configurations.md)  
+[Definições do projeto para uma configuração de depuração do Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
+[Como depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)  
+[Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

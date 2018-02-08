@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 1ca2e83bab05c336f4b4ed37a13271c636b457dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 71d7f7e342ecd6d9ca3bff4e04b84352c65c0e17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Instruções passo a passo: criando, editando e mantendo um teste de IU codificado
 Neste passo a passo, você criará um aplicativo simples do Windows Presentation Foundation (WPF) para demonstrar como criar, editar e manter um teste de IU codificado. O passo a passo fornece soluções para corrigir os testes que foram interrompidos por vários problemas de timing e refatoração de controle.  
@@ -143,7 +144,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
   
      O UIMap – Construtor de Teste de IU Codificado é exibido e a janela do Visual Studio é minimizada.  
   
-     Para obter mais informações sobre as opções da caixa de diálogo, consulte [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+     Para obter mais informações sobre as opções da caixa de diálogo, consulte [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md).  
   
 8.  Escolha **Iniciar Gravação** no UIMap – Construtor de Teste de IU Codificado.  
   
@@ -368,26 +369,20 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
   
 ## <a name="external-resources"></a>Recursos externos  
   
-### <a name="videos"></a>Vídeos  
- ![link para o vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+### <a name="videos"></a>Vídeos
+
+![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Introdução aos testes de IU codificados](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![link para o vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Manutenção e depuração de testes de IU codificados](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![link para o vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Codificação manual de testes de IU codificados](http://go.microsoft.com/fwlink/?LinkID=230575)
   
-### <a name="hands-on-lab"></a>Laboratório prático  
- [Laboratório Virtual do MSDN: Introdução à criação de testes de IU codificados com o Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
+### <a name="faq"></a>Perguntas Frequentes
+
+[Perguntas frequentes sobre testes de IU codificados](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
   
-### <a name="faq"></a>Perguntas Frequentes  
- [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
-  
- [Perguntas frequentes sobre testes de IU codificados – 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
-  
-### <a name="forum"></a>Fórum  
- [Teste de Automação de interface do usuário do Visual Studio (inclui CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
-  
-## <a name="see-also"></a>Consulte também  
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Introdução ao Designer do WPF](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Editando testes de IU codificados usando o editor de testes de IU codificados](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>Consulte também
+
+[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)  
+[Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[Editando testes de IU codificados usando o editor de testes de IU codificados](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

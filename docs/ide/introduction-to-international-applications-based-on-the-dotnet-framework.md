@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - resource files, fallback processes
 - user interface, culture setting
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 9acc8f2e015b6ca2ad26881eeb1f53012d96e56d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 20eefe3933767e357d977e2f3a5a0626aa555c39
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introdução a aplicativos internacionais com base no .NET Framework
 No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], há duas partes para criar um aplicativo pronto para o mundo: globalização, o processo de criação de aplicativos que podem se adaptar a diferentes culturas, e localização, o processo de traduzir recursos para uma cultura específica. Para obter informações gerais sobre como criar aplicativos para um público internacional, consulte [Melhores práticas para o desenvolvimento de aplicativos prontos para o mundo](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
@@ -47,7 +49,7 @@ No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], há duas partes pa
   
  O sistema do projeto do Windows Forms e do Web Forms permite compilar arquivos de recurso usando um modelo de Arquivo de Recurso de Assembly, além de acessar os recursos e compilar o projeto. Assemblies satélites serão criados juntamente com o assembly principal.  
   
- Quando um aplicativo localizado é executado, sua aparência é determinada por dois valores de cultura. (Uma *cultura* é um conjunto de informações de preferência do usuário relacionadas ao idioma, ao ambiente e às convenções culturais do usuário.) A configuração de cultura de interface do usuário determina quais recursos serão carregados. A cultura de interface do usuário é definida como `UICulture` nos arquivos Web.config e em diretivas de páginas e como <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> no código do Visual Basic ou do Visual C#. A configuração de cultura determina a formatação de valores, como datas, números, moeda e assim por diante. A cultura é definida como `Culture` nos arquivos Web.config e em diretivas de páginas e como <xref:System.Globalization.CultureInfo.CurrentCulture%2A> no código do Visual Basic ou do Visual C#.  
+ Quando um aplicativo localizado é executado, sua aparência é determinada por dois valores de cultura. (Uma *cultura* é um conjunto de informações de preferência do usuário relacionadas ao idioma, ao ambiente e às convenções culturais do usuário.) A configuração de cultura de interface do usuário determina quais recursos serão carregados. A cultura de interface do usuário é definida como `UICulture` nos arquivos Web.config e em diretivas de páginas e como <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> no código do Visual Basic ou do C#. A configuração de cultura determina a formatação de valores, como datas, números, moeda e assim por diante. A cultura é definida como `Culture` nos arquivos Web.config e em diretivas de páginas, <xref:System.Globalization.CultureInfo.CurrentCulture%2A> no código do Visual Basic ou do C#.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Globalization>   

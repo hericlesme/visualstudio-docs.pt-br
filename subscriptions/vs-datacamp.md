@@ -1,36 +1,57 @@
 ---
-title: "Aprimore suas habilidades de ciência de dados ativando o benefício do DataCamp na sua assinatura do Visual Studio."
+title: "Aprimore suas habilidades de ciência de dados hoje mesmo com o benefício DataCamp em assinaturas selecionadas do Visual Studio. | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 11/15/2017
+Ms.date: 1/12/20108
 Ms.topic: Get-Started-Article
-Description: Learn how to get started using the DataCamp training subscription included with your Visual Studio subscription.
+Description: Learn about the DataCamp training subscription included with selected Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 5519f1984392c8c816b548892763498e154f30e8
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 9ca8cc7d70b7078366d136618ac523c9133490fb
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="activating-the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Ativar o benefício de treinamento do DataCamp nas assinaturas do Visual Studio
+# <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 
+## <a name="overview"></a>Visão geral
 As assinaturas qualificadas do Visual Studio incluem assinaturas do DataCamp.  Com o DataCamp, você aprende todas as habilidades de ciência de dados necessárias no conforto do seu navegador. Você escolhe quando e o que aprender. Sem software para instalar e sem requisitos especiais de hardware, aprender ciência de dados é mais fácil do que nunca.
 
-A duração do benefício do DataCamp depende da sua assinatura do Visual Studio:
-| Assinatura                                                     | Benefício do DataCamp              |
-|------------------------------------------------------------------|----------------------|
-| Assinaturas de nuvem anual e padrão do Visual Studio Enterprise   | Assinatura de três meses |
-| Assinaturas de nuvem anual e padrão do Visual Studio Professional | Assinatura de três meses |
-| Visual Studio Dev Essentials                                     | Assinatura de dois meses |
+A duração do benefício do DataCamp depende da sua assinatura do Visual Studio.
 
-**OBSERVAÇÃO:** o benefício do DataCamp incluído nas assinaturas do Visual Studio está disponível somente para os novos assinantes do DataCamp. 
+## <a name="eligibility"></a>Qualificação
+| Nível de Assinatura/Programa                                                  | Benefício               | Renovável?                                                         |
+|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
+| Visual Studio Enterprise Standard                                             | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
+| Visual Studio Enterprise anual                                               | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
+| Visual Studio Enterprise mensal                                              | Não disponível         |                                                                    |
+| Visual Studio Professional Standard                                           | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
+| Visual Studio Professional anual                                             | 3 meses              |  Nº Disponível apenas para novos assinantes.                            | 
+| Visual Studio Professional mensal                                            | Não disponível         |                                                                    |
+| Visual Studio Test Pro                                                        | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
+| Plataformas MSDN                                                                | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
+| Visual Studio Dev Essentials                                                  | 2 meses              |  Nº Disponível apenas para novos assinantes.                            |
+| Visual Studio Enterprise – NFR<sup>1</sup>                                               | Não disponível         |                                                                    |
+| Visual Studio Enterprise - FTE                                                | Não disponível         |                                                                    |
+| Visual Studio Enterprise ‒ Microsoft Partner Network                          | Não disponível         |                                                                    |
+| Visual Studio Professional – Microsoft Partner Network                        | Não disponível         |                                                                    |
+| Visual Studio Enterprise – Imagine (Standard)                                 | Não disponível         |                                                                    |
+| Visual Studio Enterprise – Imagine (Premium)                                  | Não disponível         |                                                                    |
+| Visual Studio Enterprise – BizSpark                                           | Não disponível         |                                                                    |
+| Microsoft Certified Trainer ‒ Software e Serviços                             | Não disponível         |                                                                    |
+| Microsoft Certified Trainer ‒ Desenvolvedor de Software e Serviços                   | Não disponível         |                                                                    |
 
-## <a name="activating-your-datacamp-subscription-is-fast-and-easy"></a>Ativar sua assinatura do DataCamp é rápido e fácil.  
+<sup>1</sup>  *Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)*  
 
-1. Entre em [https://my.visualstudio.com](https://my.visualstudio.com).
+Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+
+
+## <a name="activation-steps"></a>Etapas de Ativação  
+
+1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do benefício do DataCamp na categoria "Desenvolvimento Profissional" e clique em **Ativar**.
 
@@ -40,17 +61,17 @@ A duração do benefício do DataCamp depende da sua assinatura do Visual Studio
 
     ![Criar nova conta no DataCamp](_img\vs-datacamp\vs-datacamp-create-account.png)
 
-**OBSERVAÇÃO:** quando você começar a criar sua conta, poderá receber a seguinte mensagem de erro: "Ops!  Seu código promocional é inválido ou expirou."
-Isso ocorre, porque quando seu código promocional é criado, ele expira após alguns minutos.  Se você receber esta mensagem, bastará voltar para a página [Benefícios](https://my.visualstudio.com/benefits) e clicar no link **Ativar** no bloco do benefício do DataCamp.  
+> [!NOTE]
+> Quando você começar a criar a conta, poderá receber a seguinte mensagem de erro: "Opa!  Seu código promocional é inválido ou expirou."  Isso ocorre, porque quando seu código promocional é criado, ele expira após alguns minutos.  Se você receber essa mensagem, bastará voltar para a página [Benefícios](https://my.visualstudio.com/benefits) e clicar no link **Ativar** no bloco do benefício do DataCamp.  
 
 4. Depois de criar uma conta, você pode escolher um roteiro de aprendizagem.  As opções incluem:
     - Aprendizado de R para ciência de dados
     - Aprendizado de Python para ciência de dados
     - Desenvolver seu conjunto de qualificações de ciência de dados
 
-    Basta clicar no roteiro escolhido para começar. 
+Basta clicar no roteiro escolhido para começar. 
 
-![Escolha de roteiro no DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
+   ![Escolha de roteiro no DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
 
 5. Depois de selecionar o roteiro, é possível refinar ainda mais seu roteiro de aprendizagem selecionando uma meta.  Por exemplo, se você escolher o caminho "Desenvolver seu conjunto de qualificações de ciência de dados", as opções a seguir serão exibidas. Escolha uma opção ou clique em **Não sei.  Mostre-me todos os caminhos de carreiras** para criar um roteiro mais amplo. 
 
@@ -65,7 +86,14 @@ Isso ocorre, porque quando seu código promocional é criado, ele expira após a
 
     ![Introdução ao DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
-Você pode parar a qualquer momento e retomar seu treinamento na próxima sessão.  Basta acessar [http://www.datacamp.com](http://www.datacamp.com) e entrar.  O seu painel será exibido e você poderá retomar o treinamento exatamente onde parou. Basta clicar em **Continuar Treinamento**.
+Você pode parar a qualquer momento e retomar seu treinamento na próxima sessão.  Basta acessar [http://www.datacamp.com](http://www.datacamp.com) e entrar.  O seu painel será exibido e você poderá retomar o treinamento exatamente onde parou. Basta clicar em **Continuar Treinamento**. ![Treinamento Contínuo no DataCamp](_img\vs-datacamp\vs-datacamp-continue-training.png)
 
-    ![DataCamp Continue Training](_img\vs-datacamp\vs-datacamp-continue-training.png)
+## <a name="faq"></a>Perguntas Frequentes
+*Verifique aqui se há atualizações*
 
+## <a name="support-resources"></a>Recursos de suporte
+-  Precisa de ajuda para usar o DataCamp?  Confira estes recursos:
+    - [Comunidade DataCamp](https://www.datacamp.com/community/tutorials), com fóruns e tutoriais.
+    - [Perguntas frequentes](https://datacamp.groovehq.com/help_center).  Na página Perguntas Frequentes, você também tem a oportunidade de enviar uma solicitação de suporte por email.
+-  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
+-  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 

@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - references [Visual Studio], adding
 - assemblies [Visual Studio], references
 - Visual Basic projects, references
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: aefd0227717352e449b51950620d0f0900cf2e60
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 
@@ -164,7 +164,7 @@ A guia Windows lista todos os SDKs específicos às plataformas na qual sistemas
 
 Você pode gerar um arquivo WinMD no Visual Studio de duas maneiras:
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] Projetos gerenciados pelo aplicativo**: os projetos do aplicativo [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] podem produzir binários WinMD definindo Propriedades do Projeto &#124; Tipo de Saída = Arquivo WinMD. O nome do arquivo WinMD deve ser o namespace do superconjunto de todos os namespaces existentes dentro dele. Por exemplo, se um projeto consiste nos namespaces A.B e A.B.C, os possíveis nomes para o WinMD emitido serão A.winmd e A.B.winmd. Se um usuário inserir uma Propriedade de Projeto &#124, um Nome de Assembly ou as Propriedades de Projeto &#124, o Valor do namespace separado do conjunto de namespaces no projeto ou se não houver nenhum namespace de superconjunto em um projeto, um aviso de compilação será gerado: ‘A.winmd’ não é um nome de arquivo .winmd válido para esse assembly. Todos os tipos em um arquivo de metadados do Windows devem existir em um namespace secundário do nome do arquivo. Os tipos que não existirem em um namespace secundário do nome de arquivo não poderão ser localizados no tempo de execução. Nesse assembly, o menor namespace comum é “CSWSClassLibrary1”. A área de trabalho do Visual Basic ou um projeto do Visual C# só podem consumir WinMDs gerados usando SDKs [!INCLUDE[win8](../debugger/includes/win8_md.md)], conhecidos como a primeira parte do WinMDs e não podem gerar WinMDs.
+- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] Projetos gerenciados pelo aplicativo**: os projetos do aplicativo [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] podem produzir binários WinMD definindo Propriedades do Projeto &#124; Tipo de Saída = Arquivo WinMD. O nome do arquivo WinMD deve ser o namespace do superconjunto de todos os namespaces existentes dentro dele. Por exemplo, se um projeto consiste nos namespaces A.B e A.B.C, os possíveis nomes para o WinMD emitido serão A.winmd e A.B.winmd. Se um usuário inserir uma Propriedade de Projeto &#124, um Nome de Assembly ou as Propriedades de Projeto &#124, o Valor do namespace separado do conjunto de namespaces no projeto ou se não houver nenhum namespace de superconjunto em um projeto, um aviso de compilação será gerado: ‘A.winmd’ não é um nome de arquivo .winmd válido para esse assembly. Todos os tipos em um arquivo de metadados do Windows devem existir em um namespace secundário do nome do arquivo. Os tipos que não existirem em um namespace secundário do nome de arquivo não poderão ser localizados no tempo de execução. Nesse assembly, o menor namespace comum é “CSWSClassLibrary1”. A área de trabalho do Visual Basic ou um projeto do C# só podem consumir WinMDs gerados usando SDKs [!INCLUDE[win8](../debugger/includes/win8_md.md)], conhecidos como a primeira parte do WinMDs e não podem gerar WinMDs.
 
 - **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] Projetos nativos do aplicativo**: um arquivo WinMD nativo consiste apenas em metadados. Sua implementação existe em um arquivo separado da DLL. É possível gerar binários nativos escolhendo o modelo de projeto do componente do Tempo de Execução do Windows na caixa de diálogo **Novo Projeto** ou em um projeto em branco e modificando as propriedades do projeto para gerar um arquivo WinMD. Se o projeto consiste em namespaces separados, um erro de compilação dirá ao usuário para combinar os namespaces ou executar a ferramenta MSMerge.
 

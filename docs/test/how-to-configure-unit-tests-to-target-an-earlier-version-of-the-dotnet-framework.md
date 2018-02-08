@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 author: gewarren
-ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 13780b561ba14cc06269e443265313e3b2e664c6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como configurar testes de unidade para direcionar uma versão anterior do .NET Framework
 Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais recente do .NET Framework é definida como destino, por padrão. Além disso, se você atualizar projetos de teste de versões anteriores do Visual Studio, eles são atualizados para destinar-se à versão mais recente do .NET Framework. Ao editar as propriedades do projeto, é possível redirecionar explicitamente o projeto para versões anteriores do .NET Framework.  
@@ -62,7 +63,7 @@ Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais
   
      As propriedades do seu projeto de teste do Visual Basic são exibidas.  
   
-5.  Na guia **Compilar** escolha **Opções de Compilação Avançadas** conforme mostrado na ilustração a seguir.  
+5.  Na guia **Compilar** escolha **Opções de Compilação Avançadas** conforme mostrado na ilustração a seguir.
   
      ![Opções de compilação Avançadas](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
@@ -84,7 +85,7 @@ Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais
   
      As propriedades do seu projeto de teste do Visual C# são exibidas.  
   
-5.  Na guia **Aplicativo** escolha **Estrutura de destino** e, em seguida, escolha **.NET Framework 3.5** ou uma versão posterior na lista suspensa para alterar a estrutura de destino conforme mostrado na ilustração a seguir. Não especifique uma versão de cliente.  
+5.  Na guia **Aplicativo**, escolha **Estrutura de destino**. Na lista suspensa, escolha **.NET Framework 3.5** ou uma versão posterior, conforme mostra a ilustração a seguir. Não especifique uma versão de cliente.
   
      ![Lista de lista suspensa de estrutura de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
@@ -125,8 +126,8 @@ Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais
   
 8.  No Gerenciador de Soluções, escolha **Recarregar Projeto** no menu de atalho do seu novo projeto de teste do Visual C++.  
   
-## <a name="see-also"></a>Consulte também  
- [Criar e Executar Testes de Unidade para Código Existente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Criar soluções do SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Compilando e depurando soluções do SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+## <a name="see-also"></a>Consulte também
+
+[Criar soluções do SharePoint](/office-dev/office-dev/create-sharepoint-solutions)  
+[Compilando e depurando soluções do SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)  
+[Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

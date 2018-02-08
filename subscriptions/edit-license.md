@@ -1,5 +1,5 @@
 ---
-title: Editar assinaturas no portal do administrador | Visual Studio Marketplace
+title: Editar assinaturas no Portal do administrador | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Editando atribuições de assinatura do Visual Studio
 
@@ -21,7 +21,7 @@ ms.lasthandoff: 12/01/2017
 Você pode editar as informações do assinante para corrigir erros ou para atualizar as informações. 
 **Observe que a edição do endereço de email do assinante fará com que os benefícios existentes sejam redefinidos.**
 
-Para editar um assinante, selecione as reticências (...) que aparecem ao lado do endereço de email do assinante ao passar o mouse sobre ele. Será exibida uma lista suspensa.  Selecione **editar** para modificar os detalhes do assinante. Também é possível clicar duas vezes na linha do assinante na grade para abrir a janela de edição.
+Para editar um assinante, selecione as reticências (...) que aparecem ao lado do endereço de email do assinante ao passar o mouse sobre ele. Será exibida uma lista suspensa.  Selecione **Editar** para modificar os detalhes do assinante. Também é possível clicar duas vezes na linha do assinante na grade para abrir a janela de edição.
 
    ![Selecione um assinante a ser editado](_img\edit-license\select-subscriber.png)
 
@@ -29,13 +29,15 @@ Você pode atualizar o nome, o sobrenome, o país, o idioma e os downloads do as
 
    ![Editar detalhes do assinante](_img\edit-license\edit-subscriber.png)
 
-Observação: se você precisar alterar o nível de assinatura de um assinante, será necessário excluir o usuário do portal e adicioná-lo novamente. Os níveis de assinatura não são editáveis.
+> [!NOTE]
+> Se você precisar alterar o nível de assinatura de um assinante, será necessário excluir o usuário do portal e adicioná-lo novamente. Os níveis de assinatura não são editáveis.
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>Editando vários assinantes por meio da edição em massa
 
 Você pode editar vários assinantes de uma vez usando o processo de edição em massa. Esse recurso é usado principalmente para organizações que estão passando por alterações de endereço de email corporativo ou quando uma organização decide restringir o acesso a downloads. 
 
-**IMPORTANTE:** os níveis de assinatura (ou seja, Enterprise, Professional, etc.) e os GUIDs da assinatura não podem ser alterados.  Se você tentar um upload com esses itens alterados, o upload falhará.  
+> [!IMPORTANT]
+> Os níveis de assinatura (ou seja, Enterprise, Professional, etc.) e os GUIDs da assinatura não podem ser alterados.  Se você tentar um upload com esses itens alterados, o upload falhará.  
 
 1.  Para editar vários assinantes de uma vez, navegue até a guia Assinantes. Na faixa de opções na parte superior, clique em **Editar em Massa**. 
 

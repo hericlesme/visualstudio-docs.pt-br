@@ -1,30 +1,32 @@
 ---
-title: "Trechos de código do Visual C# | Microsoft Docs"
+title: "Trechos de código C# | Microsoft Docs"
 ms.custom: 
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
 - Code Snippet Inserter [C#]
-- Visual C#, default snippets
+- C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 04b75cb77a41d69edfae565660d7dbabe6c10ee9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-code-snippets"></a>Trechos de código do Visual C#
+# <a name="c-code-snippets"></a>Trechos de código C#
 Os trechos de código são trechos de código prontos que você pode inserir rapidamente em seu código. Por exemplo, o trecho de código `for` cria um loop `for` vazio. Alguns trechos de código são trechos de código envolvidos, que permite que você selecione linhas de código e, em seguida, escolha um trecho de código que incorpora as linhas de código selecionadas. Por exemplo, quando você seleciona linhas de código e, em seguida, ativa o trecho de código `for`, ele cria um loop `for` com as linhas de código selecionadas dentro do bloco de loop. Os trechos de código podem fazer com que escrever código de programa seja mais rápido, mais fácil e mais confiável.  
 
  Você pode inserir um trecho de código no local do cursor ou inserir um trecho de código envolvido com o código atualmente selecionado. A Unidade de Inserção de Trecho de Código é invocada por meio dos comandos **Inserir Trecho de Código** ou **Envolver com** no menu do **IntelliSense** ou usando os atalhos de teclado CTRL + K e, em seguida, X ou CTRL + K e, em seguida, S, respectivamente.  

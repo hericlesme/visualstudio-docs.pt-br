@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesCompile
+f1_keywords:
+- vb.ProjectPropertiesCompile
 helpviewer_keywords:
 - compilation, Visual Basic projects
 - compilation, options [Visual Basic]
@@ -17,16 +19,17 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-caps.latest.revision: "60"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3cd68fa71bf201c7a2ac05fd7881b216cbca0938
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 32a883c1a04dc6ab5189cd5b2e5173406c098f6d
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
 Use a página **Compilar** do Designer de Projeto para especificar instruções de compilação. Você também pode especificar opções avançadas do compilador e eventos de pré ou pós-build nessa página.  
@@ -39,21 +42,21 @@ Para acessar a página **Compilar**, escolha um nó de projeto (não o nó **Sol
  As configurações a seguir permitem selecionar a configuração e a plataforma a exibir ou modificar.  
   
 > [!NOTE]
->  Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+> Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, as listas **Configuração** e **Plataforma** não são exibidas.
   
  **Configuração**  
- Especifica quais definições de configuração exibir ou modificar. As configurações são **Depurar** (padrão), **Versão** ou **Todas as Configurações**. Para obter mais informações, consulte [Configurações de depuração e versão do projeto](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) e [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).  
+ Especifica quais definições de configuração exibir ou modificar. As configurações são **Depurar** (padrão), **Versão** ou **Todas as Configurações**. Para saber mais, consulte [Noções básicas das configurações de build](../../ide/understanding-build-configurations.md) e [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
   
  **Plataforma**  
- Especifica quais configurações de plataforma exibir ou modificar. Você pode especificar **Qualquer CPU** (padrão), **x64** ou **x86**. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica quais configurações de plataforma exibir ou modificar. Você pode especificar **Qualquer CPU** (padrão), **x64** ou **x86**.
   
 ## <a name="compiler-configuration-options"></a>Opções de configuração do compilador  
  As configurações a seguir permitem definir as opções de configuração do compilador.  
   
  **Caminho de saída de build**  
- Especifica o local dos arquivos de saída para a configuração deste projeto. Digite o caminho da saída de build nesta caixa ou clique no botão **Procurar** para selecionar um caminho. Observe que o caminho é relativo; se você inserir um caminho absoluto, ele será salvo como relativo. O caminho padrão é bin\Debug\ ou bin\Release\\. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica o local dos arquivos de saída para a configuração deste projeto. Digite o caminho da saída de build nesta caixa ou clique no botão **Procurar** para selecionar um caminho. Observe que o caminho é relativo; se você inserir um caminho absoluto, ele será salvo como relativo. O caminho padrão é bin\Debug\ ou bin\Release\\.
   
- Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. O comando **Build** do menu **Depurar** (F5) colocará o build no local de depuração, independentemente do **Caminho de saída** você especificar. No entanto, o comando **Build** do menu **Build** o coloca no local especificado. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. O comando **Build** do menu **Depurar** (F5) colocará o build no local de depuração, independentemente do **Caminho de saída** você especificar. No entanto, o comando **Build** do menu **Build** o coloca no local especificado.
   
  **Opção explícita**  
  Especifica se a declaração implícita de variáveis deve ser permitida. Selecione **Ativar** para exigir a declaração explícita de variáveis. Isso faz o compilador relatar erros se variáveis não forem declaradas antes de serem usadas. Selecione **Desativar** para permitir a declaração implícita de variáveis.  
@@ -167,10 +170,9 @@ Clique nesse botão para acessar a caixa de diálogo **Eventos de Build**. Use e
   
 **Opções avançadas de compilação**  
 Clique neste botão para acessar a caixa de diálogo **Configurações Avançadas do Compilador**. Use a caixa de diálogo **Configurações Avançadas do Compilador** para especificar as propriedades avançadas de configuração de build de um projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic. Para obter mais informações, consulte [Caixa de diálogo Configurações Avançadas do Compilador (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Debug and Release Project Configurations (Configurações de projeto de depuração e lançamento)](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Gerenciando propriedades de compilação](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
- [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)
+
+## <a name="see-also"></a>Consulte também
+
+[Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)  
+[Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)  
+[Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

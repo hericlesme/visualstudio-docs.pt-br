@@ -10,24 +10,26 @@ ms.topic: article
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: ca9114dfe601f523878749593a213b36465bd0a7
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: c2eff9fc8e8aedecb1fd9b99538fa600dbcc5eb1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testando um aplicativo grande com vários mapas de interface do usuário
+
 Este tópico fala sobre como usar testes de IU codificados quando você estiver testando um aplicativo grande usando diversos mapas de interface do usuário.  
   
  **Requisitos**  
   
 -   Visual Studio Enterprise  
   
- Quando você cria um novo teste de IU codificado, a estrutura de testes [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gera um código para o teste em uma classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> por padrão. Para obter mais informações sobre como gravar testes de IU codificados, consulte [Criando testes de UI codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md).  
+ Quando você cria um novo teste de IU codificado, a estrutura de testes do Visual Basic gera um código para o teste em uma classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> por padrão. Para obter mais informações sobre como gravar testes de IU codificados, consulte [Criando testes de UI codificados](../test/use-ui-automation-to-test-your-code.md) e [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md).  
   
  O código gerado para o mapa de interface do usuário contém uma classe para cada objeto com o qual há interação. Para cada método gerado, é gerada uma classe complementar aos parâmetros de método especificamente para o método em questão. Se houver uma grande quantidade de objetos, páginas, formulários e controles em seu aplicativo, o mapa de interface do usuário pode ficar muito grande. Além disso, se houver diversas pessoas trabalhando nos testes, o aplicativo fica pesado com um único arquivo grande de mapa de interface do usuário.  
   
@@ -67,24 +69,25 @@ Este tópico fala sobre como usar testes de IU codificados quando você estiver 
   
 4.  Escolha **Adicionar**.  
   
-     A janela do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é minimizada e a caixa de diálogo **Construtor de Teste de IU Codificado** aparece.  
+     A janela do Visual Studio é minimizada e a caixa de diálogo **Construtor de Teste de IU Codificado** é exibida.  
   
 5.  Registre as ações para o primeiro método e escolha **Gerar Código**.  
   
 6.  Depois de registrar todas as ações e asserções do primeiro componente ou da página e agrupá-las em métodos, feche a caixa de diálogo **Construtor de Teste de IU Codificado**.  
   
 7.  Continue a criar mapas de interface do usuário. Registre as ações e asserções, agrupe-as em métodos para cada componente e gere o código.  
-  
- Em muitos casos, a janela principal do seu aplicativo é uma constante para assistentes, formulários e páginas. Embora cada mapa de interface do usuário tenha uma classe para a janela principal, provavelmente, todos os mapas fazem referência à mesma janela principal na qual todos os componentes do aplicativo são executados. Os testes de IU codificados procuram controles hierarquicamente, de cima para baixo, começando na janela principal. Assim, em aplicativos complexos, é possível duplicar a janela principal em todos os mapas de interface do usuário. Se a janela principal real for duplicada, essa janela sofrerá alterações com diversas modificações. Isso pode resultar em problemas de desempenho quando você alterna entre os mapas de interface do usuário.  
-  
- Para minimizar esse efeito, você pode usar o método `CopyFrom()` para garantir que a nova janela principal do mapa seja a mesma janela principal.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir faz parte de uma classe de utilitários que proporciona acesso a cada componente e seus controles filhos, que são representados pelas classes geradas nos diversos mapas de interface do usuário.  
-  
- Nesse exemplo, o aplicativo Web `Contoso` tem uma Home page, uma Página de produtos e uma Página de carrinho de compras. Essas páginas usam a mesma janela principal, que é a janela do navegador. Há um mapa de interface do usuário para cada página e o código da classe do utilitário é parecido com este:  
-  
-```  
+
+ Em muitos casos, a janela principal do seu aplicativo é uma constante para assistentes, formulários e páginas. Embora cada mapa de interface do usuário tenha uma classe para a janela principal, provavelmente, todos os mapas fazem referência à mesma janela principal na qual todos os componentes do aplicativo são executados. Os testes de IU codificados procuram controles hierarquicamente, de cima para baixo, começando na janela principal. Assim, em aplicativos complexos, é possível duplicar a janela principal em todos os mapas de interface do usuário. Se a janela principal real for duplicada, essa janela sofrerá alterações com diversas modificações. Isso pode resultar em problemas de desempenho quando você alterna entre os mapas de interface do usuário.
+
+ Para minimizar esse efeito, você pode usar o método `CopyFrom()` para garantir que a nova janela principal do mapa seja a mesma janela principal.
+
+## <a name="example"></a>Exemplo
+
+O exemplo a seguir faz parte de uma classe de utilitários que proporciona acesso a cada componente e seus controles filhos, que são representados pelas classes geradas nos diversos mapas de interface do usuário.
+
+Nesse exemplo, o aplicativo Web `Contoso` tem uma Home page, uma Página de produtos e uma Página de carrinho de compras. Essas páginas usam a mesma janela principal, que é a janela do navegador. Há um mapa de interface do usuário para cada página e o código da classe do utilitário é parecido com este:
+
+```csharp
 using ContosoProject.UIMaps;  
 using ContosoProject.UIMaps.HomePageClasses;  
 using ContosoProject.UIMaps.ProductPageClasses;  
@@ -135,12 +138,13 @@ namespace ContosoProject
     // Continue to create properties for each page, getting the   
     // page object from the corresponding UI Map and copying the   
     // top level window properties from the Home Page.  
-}  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)
+}
+```
+
+## <a name="see-also"></a>Consulte também
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>  
+<xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>  
+[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)  
+[Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)  
+[Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)

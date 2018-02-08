@@ -1,5 +1,5 @@
 ---
-title: Visual C# IntelliSense | Microsoft Docs
+title: C# IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C# IntelliSense
+# <a name="c-intellisense"></a>C# IntelliSense
 
-O Visual C# IntelliSense fica disponível durante a codificação no editor e durante a depuração na janela Comando do [Modo Imediato](../ide/reference/immediate-window.md).
+O C# IntelliSense fica disponível durante a codificação no editor e durante a depuração na janela Comando do [Modo Imediato](../ide/reference/immediate-window.md).
 
 ## <a name="completion-lists"></a>Listas de conclusão
 
-As listas de preenchimento do IntelliSense no Visual C# contêm tokens de Listar Membros, Completar Palavra e muito mais. Ele fornece acesso rápido a:
+As listas de preenchimento do IntelliSense no C# contêm tokens de Listar Membros, Completar Palavra e muito mais. Ele fornece acesso rápido a:
 
 - Membros de um tipo ou namespace
 
@@ -42,15 +43,15 @@ A Lista de Conclusão no C# também é inteligente o suficiente para filtrar tok
 
 ## <a name="code-snippets-in-completion-lists"></a>Trechos de código em listas de conclusão
 
-No Visual C#, a lista de preenchimento inclui trechos de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os trechos de código são exibidos na lista de conclusão como [texto de atalho](../ide/code-snippets-schema-reference.md#shortcut) do trecho. Para obter mais informações sobre os trechos de código disponíveis no Visual C# por padrão, consulte [Trechos de código do Visual C#](../ide/visual-csharp-code-snippets.md).
+No C#, a lista de preenchimento inclui trechos de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os trechos de código são exibidos na lista de conclusão como [texto de atalho](../ide/code-snippets-schema-reference.md#shortcut) do trecho. Para saber mais sobre os trechos de código disponíveis no C# por padrão, consulte [Trechos de código do C#](../ide/visual-csharp-code-snippets.md).
 
 ## <a name="language-keywords-in-completion-lists"></a>Palavras-chave de linguagem em listas de conclusão
 
-No Visual C#, a lista de preenchimento também inclui palavras-chave. Para obter mais informações sobre palavras-chave de linguagem do C#, consulte [Palavras-chave do C#](/dotnet/csharp/language-reference/keywords/index).
+No C#, a lista de preenchimento também inclui palavras-chave. Para obter mais informações sobre palavras-chave de linguagem do C#, consulte [Palavras-chave do C#](/dotnet/csharp/language-reference/keywords/index).
 
 ## <a name="extension-methods-in-completion-lists"></a>Métodos de extensão em listas de conclusão
 
-No Visual C#, a lista de preenchimento inclui Métodos de Extensão que estão no escopo.
+No C#, a lista de preenchimento inclui Métodos de Extensão que estão no escopo.
 
 > [!NOTE]
 > A lista de conclusão não exibe todos os métodos de extensão para objetos <xref:System.String>.
@@ -59,9 +60,9 @@ Os métodos de extensão usam um ícone diferente dos métodos de instância. Pa
 
 ## <a name="filtered-completion-lists"></a>Listas de preenchimento filtradas
 
-O IntelliSense remove membros desnecessários da lista de preenchimento usando filtros. O Visual C# filtra as listas de preenchimento exibidas para estes itens:
+O IntelliSense remove membros desnecessários da lista de preenchimento usando filtros. O C# filtra as listas de preenchimento exibidas para estes itens:
 
-- **Interfaces e classes base**: o IntelliSense remove automaticamente itens das listas de conclusão de interface e de classe base, tanto nas listas de interface quanto nas listas de restrição de base de declaração de classe. Por exemplo, enumerações não aparecem na lista de preenchimento nas classes base, pois enumerações não podem ser usadas para as classes base. A lista de preenchimento de classes base contém apenas interfaces e namespaces. Se você selecionar um item na lista e, em seguida, digitar uma vírgula, o IntelliSense removerá as classes base da lista de preenchimento, pois o Visual C# não dá suporte à herança múltipla. O mesmo comportamento também ocorre em cláusulas de restrição.
+- **Interfaces e classes base**: o IntelliSense remove automaticamente itens das listas de conclusão de interface e de classe base, tanto nas listas de interface quanto nas listas de restrição de base de declaração de classe. Por exemplo, enumerações não aparecem na lista de preenchimento nas classes base, pois enumerações não podem ser usadas para as classes base. A lista de preenchimento de classes base contém apenas interfaces e namespaces. Se você selecionar um item na lista e, em seguida, digitar uma vírgula, o IntelliSense removerá as classes base da lista de preenchimento, pois o C# não dá suporte à herança múltipla. O mesmo comportamento também ocorre em cláusulas de restrição.
 
 - **Atributos**: ao aplicar um atributo a um tipo, a lista de conclusão é filtrada para que ela tenha somente os tipos que descendem dos namespaces que contêm esses tipos, como <xref:System.Attribute>.
 

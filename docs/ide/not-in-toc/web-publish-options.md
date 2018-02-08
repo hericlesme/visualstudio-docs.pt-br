@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # Quais opções de publicação são adequadas para mim?
 
@@ -31,26 +34,22 @@ De dentro do Visual Studio, os aplicativos Web podem ser publicados diretamente 
 
 Na guia **Publicar** é possível selecionar um perfil de publicação existente, importar um perfil existente ou criar um novo perfil usando as opções descritas aqui.
 
-## Serviço de Aplicativo do Azure
+## Aplicativos Web do Serviço de Aplicativo do Azure
 
-O [Serviço de Aplicativo do Azure](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) ajuda os desenvolvedores a criar rapidamente uma variedade de serviços e aplicativos Web escalonáveis sem infraestrutura de manutenção.
+Os [Aplicativos Web do Serviço de Aplicativo do Azure](/azure/app-service/app-service-web-overview) (ou apenas Aplicativos Web) ajudam os desenvolvedores a criar rapidamente uma variedade de serviços e aplicativos Web escalonáveis sem infraestrutura de manutenção.
 
-Especialmente para aplicativos Web, um Serviço de Aplicativo é um contêiner para um [*Aplicativo Web*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/), o que se aproxima muito do que você consideraria como um host Web tradicional. Ou seja, um Aplicativo Web fornece os recursos de computação necessários que podem executar o código do lado do servidor e torná-lo disponível para a Internet.
-
-Você determina a capacidade de computação que um aplicativo Web tem escolhendo um [plano ou tipo de preço](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) para o Serviço de Aplicativo recipiente. Você pode ter vários aplicativos Web (e outros tipos de aplicativos) compartilhando o mesmo Serviço de Aplicativo sem alterar o tipo de preço. Por exemplo, você pode hospedar o desenvolvimento, o preparo e a produção de aplicativos Web juntos no mesmo Serviço de Aplicativo.
+Você determina a capacidade de computação que um aplicativo Web tem escolhendo um [plano ou tipo de preço](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) para o Serviço de Aplicativo recipiente. Você pode ter vários aplicativos Web (e outros tipos de aplicativos) compartilhando o mesmo Serviço de Aplicativo sem alterar o tipo de preço. Por exemplo, você pode hospedar o desenvolvimento, o preparo e a produção de aplicativos Web juntos no mesmo Serviço de Aplicativo.
 
 Um Serviço de Aplicativo é executado em máquinas virtuais hospedadas na nuvem no Azure, mas essas máquinas virtuais são gerenciadas para você. Cada Aplicativo Web em um Serviço de Aplicativo receberá uma URL \*.azurewebsites.net exclusiva; todos os tipos de preço diferentes de Gratuito também permitem a atribuição de nomes de domínio personalizados ao site.
 
-### Quando escolher o Serviço de Aplicativo do Azure
+### Quando escolher os Aplicativos Web do Serviço de Aplicativo do Azure
 
 - Você deseja implantar um aplicativo Web que é acessível pela Internet.
 - Você deseja escalonar automaticamente seu aplicativo Web de acordo com a demanda sem a necessidade de reimplantar.
 - Você não deseja manter uma infraestrutura de servidor (incluindo atualizações de software).
 - Você não precisa de nenhuma personalização de nível de computador nos servidores que hospedam seu aplicativo Web.
 
-
 > Se quiser usar o Serviço de Aplicativo do Azure em seu próprio datacenter ou em outros computadores locais, você poderá fazer isso usando o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
-
 
 ## Máquinas Virtuais do Azure
 

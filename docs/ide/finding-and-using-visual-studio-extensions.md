@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 06/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ExtensionManager
+f1_keywords:
+- vs.ExtensionManager
 helpviewer_keywords:
 - install extensions
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6ed49a18c7497eefc21a7fe7bfe9d35003863a5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
@@ -31,7 +34,7 @@ As extensões do Visual Studio são pacotes de código executados dentro do Visu
 É possível usar a caixa de diálogo **Extensões e Atualizações** para instalar as extensões e amostras do Visual Studio de sites e outros locais e habilitá-las, desabilitá-las, atualizá-las ou desinstalá-las. (**Ferramentas/Extensões e Atualizações** ou digite ou **Extensões** na janela **Início Rápido**). A caixa de diálogo também mostra atualizações para amostras e extensões instaladas. Também é possível baixar extensões de sites ou obtê-las de outros desenvolvedores.
 
 > [!NOTE]
-> A partir do Visual Studio 2015, as extensões hospedadas no Visual Studio Marketplace serão atualizadas automaticamente.  É possível alterar essa configuração por meio da caixa de diálogo **Extensões e Atualizações**.  Consulte a seção **Atualizações automáticas de extensões** abaixo para obter detalhes.
+> A partir do Visual Studio 2015, as extensões hospedadas no Visual Studio Marketplace são atualizadas automaticamente. É possível alterar essa configuração por meio da caixa de diálogo **Extensões e Atualizações**.  Consulte a seção **Atualizações automáticas de extensões** abaixo para obter detalhes.
 
 ## <a name="finding-visual-studio-extensions"></a>Localizando extensões do Visual Studio
 
@@ -66,24 +69,26 @@ Se você desejar desabilitar as atualizações automáticas, será possível des
 > [!NOTE]
 > A partir do Visual Studio 2015 Atualização 2, é possível especificar (em **Ferramentas/Opções/Ambiente/Extensões e Atualizações**) se você deseja atualizações automáticas para extensões por usuário, todas as extensões do usuário ou ambas (a configuração padrão).
 
-## <a name="extension-crash-notifications"></a>Notificações de falha de extensão
+## <a name="extension-crashunresponsiveness-notifications"></a>Notificações de falha/falta de resposta da extensão
 
-No Visual Studio 2017 (versão 15.3 – Versão Prévia), o Visual Studio notifica você se suspeitar que uma extensão estava envolvida em uma falha durante uma sessão anterior. Quando o Visual Studio falhar, ele armazenará a pilha de exceção. Na próxima vez em que o Visual Studio for iniciado, ele examinará a pilha, começando com a folha e funcionando em direção à base. Se o Visual Studio determinar que um quadro pertence a um módulo que faz parte de uma extensão instalada e habilitada, ele notificará você com uma mensagem, como
+Novidade no **Visual Studio 2017 versão 15.3**, o Visual Studio notifica você se suspeitar que uma extensão estava envolvida em uma falha durante uma sessão anterior. Quando o Visual Studio falhar, ele armazenará a pilha de exceção. Na próxima vez em que o Visual Studio for iniciado, ele examinará a pilha, começando com a folha e funcionando em direção à base. Se o Visual Studio determinar que um quadro pertence a um módulo que faz parte de uma extensão instalada e habilitada, ele mostra uma notificação.
 
-“Uma sessão anterior terminou inesperadamente. Desabilitar a extensão 'extension_name' pode ajudar a evitar problemas semelhantes”.
+Novidade no **Visual Studio versão 15.6 versão prévia 3**, o Visual Studio também notifica se suspeitar que uma extensão está causando a falta de resposta da interface do usuário.
 
-Você pode ignorar a notificação ou executar uma das seguintes ações:
+Quando essas notificações forem exibidas, você poderá ignorar a notificação ou executar uma das seguintes ações:
 
 - Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode habilitar a extensão novamente na caixa de diálogo **Extensões e atualizações** se desejar.
 
-- Escolha **Não mostrar novamente para esta extensão**. O IDE não mostrará mais notificações de falhas associadas a essa extensão, mas mostrará as notificações de falhas associadas a outras extensões.
+- Escolha **Nunca mostrar essa mensagem novamente**. 
+  - Se a notificação for sobre uma falha em uma sessão anterior, o Visual Studio não mostrará mais uma notificação quando uma falha associada a essa extensão ocorrer. O Visual Studio ainda mostrará notificações quando a falta de resposta puder ser associada a essa extensão, ou para falhas ou falta de resposta que possam ser associadas a outras extensões. 
+  - Se a notificação for sobre a falta de resposta, o IDE não mostrará mais uma notificação quando essa extensão for associada à falta de resposta. O Visual Studio ainda mostrará notificações relacionadas à falha para essa extensão, e notificações relacionados a falhas e falta de resposta para outras extensões. 
 
-- Escolha **Saiba mais** para exibir este tópico de Ajuda no navegador padrão.
+- Escolha **Saiba mais** para chegar a esta página.
 
-- Escolha o botão **X** no final da notificação para ignorar a notificação. Se a mesma extensão estiver envolvida com uma falha em uma sessão futura, a notificação será exibida novamente.
+- Escolha o botão **X** no final da notificação para ignorar a notificação. Uma nova notificação será exibida para instâncias futuras da extensão que está sendo associada a uma falha ou falta de resposta da interface do usuário.
 
 > [!NOTE]
-> Uma notificação de falha significa que apenas um dos módulos de extensão estava na pilha da falha. Isso não significa necessariamente que a extensão em si causou a falha. É possível que a extensão tenha chamado o código, que faz parte do Visual Studio e que o código tenha causado a falha. No entanto, a notificação ainda pode ser útil se o cenário que levou à falha não for importante para você. Nesse caso, desabilitar a extensão evita que a mesma falha ocorra no futuro, sem afetar sua produtividade.
+> Uma notificação de falha ou de falta de resposta da interface do usuário significa apenas que um dos módulos de extensão estava na pilha quando a interface do usuário ficou sem resposta ou quando a falha ocorreu. Isso não significa necessariamente que a própria extensão foi a culpada. É possível que a extensão tenha chamado um código que faz parte do Visual Studio, que por sua vez resultou em uma falha ou interface do usuário sem resposta. No entanto, a notificação ainda pode ser útil se a extensão que levou à falha ou falta de resposta da interface do usuário não for importante para você. Nesse caso, desabilitar a extensão evita que a falta de resposta da IU ou a falha ocorra no futuro, sem afetar sua produtividade. 
 
 ## <a name="sample-master-copies-and-working-copies"></a>Cópias mestras e cópias funcionais de amostras
 

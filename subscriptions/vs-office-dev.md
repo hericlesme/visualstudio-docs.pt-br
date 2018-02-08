@@ -1,39 +1,64 @@
 ---
-title: "Benefício de desenvolvedor do Office 365"
+title: "Benefício de Desenvolvedor do Office 365 nas assinaturas do Visual Studio | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 11/12/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Power BI Pro subscription included in your Visual Studio subscription.
+Description: Learn about the Office 365 Developer benefit included in your Visual Studio subscription.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 2c0144daad1060ab4004804159fd1433cff6f820
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 24d43f71aec3be05809fe79085cd7710f47f99ca
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-studio-subscriptions---the-office-365-developer-subscription-benefit"></a>Assinaturas do Visual Studio – o Benefício da Assinatura de Desenvolvedor do Office 365
+# <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>O Benefício da Assinatura de Desenvolvedor do Office 365 em assinaturas do Visual Studio
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
-Os assinantes com assinaturas padrão Visual Studio Enterprise ou em nuvem Visual Studio Enterprise Anual recebem o Benefício da Assinatura de Desenvolvedor do Office 365.  A assinatura de desenvolvedor do Office 365 permite que um assinante desenvolva, teste e implante suplementos para o Microsoft Office e o Microsoft SharePoint.  Esse benefício dá permissão a um locatário e até 25 usuários.
+Os assinantes com assinaturas selecionadas do Visual Studio Enterprise recebem o benefício da Assinatura de Desenvolvedor do Office 365.  A Assinatura de Desenvolvedor do Office 365 permite que você desenvolva, teste e implante suplementos para o Microsoft Office e Microsoft SharePoint.  Esse benefício dá permissão a um locatário e até 25 usuários.
 
-## <a name="activating-the-office-365-developer-benefit-in-visual-studio-subscriptions"></a>Ativando o benefício de desenvolvedor do Office 365 nas assinaturas do Visual Studio
+## <a name="eligibility"></a>Qualificação
+| Nível de Assinatura/Programa                                                  | Benefício               | Renovável?                                                         |
+|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
+| Visual Studio Enterprise Standard                                             | Incluído              |  Sim                                                               |
+| Visual Studio Enterprise anual                                               | Incluído              |  Sim                                                               |
+| Visual Studio Enterprise mensal                                              | Não disponível         |                                                                    |
+| Visual Studio Professional Standard                                           | Não disponível         |                                                                    |
+| Visual Studio Professional anual                                             | Não disponível         |                                                                    | 
+| Visual Studio Professional mensal                                            | Não disponível         |                                                                    |
+| Visual Studio Test Pro                                                        | Não disponível         |                                                                    |
+| Plataformas MSDN                                                                | Não disponível         |                                                                    |
+| Visual Studio Dev Essentials                                                  | Não disponível         |                                                                    |
+| Visual Studio Enterprise – NFR<sup>1</sup>                                               | Incluído              |  Sim                                                               |
+| Visual Studio Enterprise - FTE                                                | Incluído              |  Sim                                                               |
+| Visual Studio Enterprise ‒ Microsoft Partner Network                          | Não disponível         |                                                                    |
+| Visual Studio Professional – Microsoft Partner Network                        | Não disponível         |                                                                    |
+| Visual Studio Enterprise – Imagine (Standard)                                 | Não disponível         |                                                                    |
+| Visual Studio Enterprise – Imagine (Premium)                                  | Não disponível         |                                                                    |
+| Visual Studio Enterprise – BizSpark                                           | Incluído              |  Sim                                                               |
+| Microsoft Certified Trainer ‒ Software e Serviços                             | Incluído              |  Sim                                                               |
+| Microsoft Certified Trainer ‒ Desenvolvedor de Software e Serviços                   | Incluído              |  Sim                                                               |
 
-1. Acesse [https://my.visualstudio.com](https://my.visualstudio.com) para entrar no portal do assinante.
+<sup>1</sup>  *Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)*  
+
+Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+
+## <a name="activation-steps"></a>Etapas de Ativação
+
+1. Acesse [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) para entrar no portal do assinante.
 2. Dependendo de sua conta, você será redirecionado para a página de entrada da sua organização ou para a página de entrada da Conta da Microsoft.   Em qualquer um dos casos, insira seu nome de usuário e senha e clique em **Avançar**.
 3. Quando o processo de entrada estiver concluído, você verá a página Benefícios de Assinaturas.  Se você tem mais de uma assinatura, você pode alternar entre as assinaturas, clicando na seta suspensa no canto superior direito, abaixo da faixa de opções preta.  O bloco do benefício da assinatura de desenvolvedor do Office 365 está na categoria Ferramentas.  Use a seta à direita da linha de blocos para rolar até que o bloco do Office fique visível. 
-4. Clique no link **Obter Código** na parte inferior do bloco do benefício.   Quando o código tiver sido recuperado, clique em **Ativar**. 
+4. Localize o bloco da Assinatura de Desenvolvedor do Office 365 na seção Ferramentas.  Clique no link **Obter Código** na parte inferior do bloco do benefício.   Quando o código tiver sido recuperado, clique em **Ativar**. 
 
     ![Bloco do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
 
 5.  A próxima etapa é para criar uma conta.  Forneça suas informações de contato e clique em **Avançar**. 
 
     ![Conta do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-account-cropped.png)
-
 
 
 6.  Forneça as informações solicitadas sobre onde você usará a assinatura e clique em **Avançar**.  As informações são usadas para determinar a disponibilidade da assinatura e os impostos aplicáveis.  
@@ -55,24 +80,24 @@ Os assinantes com assinaturas padrão Visual Studio Enterprise ou em nuvem Visua
 
     ![Qual é a aparência do benefício de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-price.png)
 
-11. Na finalização da "Etapa 3", você deverá selecionar uma "Forma de pagamento".  Há duas formas de pagamento disponíveis.  A primeira opção seria adicionar um **Cartão de crédito** (como exibido abaixo) e a segunda opção é uma **Fatura**.  Em ambos os casos, um pedido de $0,00 será enviado ao clicar em **Fazer Pedido**.
+11. Na finalização da "Etapa 3", você deverá selecionar uma "Forma de pagamento".  Há duas formas de pagamento disponíveis.  A primeira opção seria adicionar um **Cartão de crédito** (como exibido abaixo) e a segunda opção é uma **Fatura**.  Em ambos os casos, um pedido de $0,00 será enviado ao clicar em **Fazer Pedido**.   
 
-    Observação: os assinantes que não desejam fornecer um cartão de crédito devem selecionar a forma de pagamento **Fatura**.  Você também pode selecionar **Pagar por ano** para limitar o recebimento de faturas a uma vez por ano.
- 
-
-    ![Pagamento de benefícios de desenvolvedor do Office 365](_img\vs-office-dev\vs-office-dev-credit-blur-cropped.png)
-
+> [!NOTE]
+> Os assinantes que não desejam fornecer um cartão de crédito devem selecionar a forma de pagamento **Fatura**.  Você também pode selecionar **Pagar por ano** para limitar o recebimento de faturas a uma vez por ano.
 
 12. Neste ponto, você resgatou com êxito o benefício da assinatura de desenvolvedor do Office 365.  Você verá uma página de confirmação do pedido.  A página fornecerá um link para a [página de conexão](https://portal.office.com "página de conexão do Office 365").  É recomendável adicionar a página aos favoritos para uso posterior.  Registre também a ID de usuário mostrada na página.  (Você também receberá um email de boas-vindas no endereço fornecido ao configurar a conta).  Clique em **Iniciar Configuração** para continuar.  
 
     ![Pedido de benefício de desenvolvedor do Office 365 confirmado](_img\vs-office-dev\vs-office-dev-confirm.png)
 
+## <a name="faq"></a>Perguntas Frequentes
 
-## <a name="setting-up-the-office-365-developer-subscription-benefit"></a>Configurando o benefício da assinatura de desenvolvedor do Office 365
+### <a name="q--how-do-i-set-up-my-office-365-developer-subscription-once-its-been-activated"></a>P: Como configuro minha Assinatura de Desenvolvedor Office 365 após a ativação?
+R: Configuração do benefício da Assinatura de Desenvolvedor do Office 365
 
 1. Para configurar o benefício da assinatura de desenvolvedor do Office 365, inicie na página "Agradecemos o seu pedido" ou entre no portal do Office, através do endereço [https://portal.office.com](https://portal.office.com), em um momento posterior.  Nesse caso, selecionamos **Iniciar Configuração** depois da página de confirmação.
 
-Observação: para entrar no https://portal.office.com, você precisará usar a nova ID de usuário da assinatura de desenvolvedor do Office 365, que foi criada na etapa 7 acima.
+> [!NOTE]
+> Para entrar no https://portal.office.com, você precisará usar a nova ID de usuário da assinatura de desenvolvedor do Office 365, que foi criada na etapa 7 acima.
 
 2. Depois de clicar em **Iniciar Configuração**, a "Etapa 1" pedirá para se conectar a um domínio existente, que já seja seu ou para continuar usando a configuração de locatário durante o processo de resgate.  No exemplo abaixo, optamos por continuar usando nosso domínio "appsbyjane2017.onmicrosoft.com".
 
@@ -102,13 +127,13 @@ Observação: para entrar no https://portal.office.com, você precisará usar a 
 7.  Quando a caixa de diálogo Controle de Conta de Usuário for exibida, clique em **Sim** para permitir que o Office instale no computador.  
 
 
-## <a name="updating-the-number-of-users-from-the-office-365-admin-portal"></a>Atualizando o número de usuários do Portal de Administração do Office 365
-
-Caso você não tenha atribuído o número necessário de usuários durante o processo de resgate e queira aumentar esse número mais tarde, siga as etapas abaixo. 
+### <a name="q-how-do-i-update-the-number-of-users-from-the-office-365-admin-portal"></a>P: Como fazer para atualizar o número de usuários do Portal de Administração do Office 365?
+R: Caso você não tenha atribuído o número necessário de usuários durante o processo de resgate e queira aumentar esse número mais tarde, execute as etapas abaixo. 
 
 1. Para aumentar a quantidade de usuários depois que o processo de resgate for concluído, você precisará acessar [https://portal.office.com](https://portal.office.com) e entrar com a "ID de usuário" criada durante as etapas de criação de locatário.
 
-Observação: se você tiver dificuldades para localizar as informações de entrada, procure em seu email de "Confirmação de pedido", enviado pela "Equipe do Microsoft Online Service" com o assunto "Confirmação de pedido: agradecemos sua compra".  Como alternativa, você também pode pesquisar a caixa de entrada por "Body:(Office 365 Enterprise E3 Developer MSDN)".
+> [!NOTE]
+> Se você tiver dificuldades para localizar as informações de entrada, procure em seu email de "Confirmação de pedido", enviado pela "Equipe do Microsoft Online Service" com o assunto "Confirmação de pedido: agradecemos sua compra".  Como alternativa, você também pode pesquisar a caixa de entrada por "Body:(Office 365 Enterprise E3 Developer MSDN)".
 
 2. Após a entrada bem-sucedida, selecione o bloco **Administrador**. Você será redirecionado para o "Centro de Administração".
 
@@ -120,6 +145,10 @@ Observação: se você tiver dificuldades para localizar as informações de ent
 
 6. Agora o valor de "Compra", conforme indicado na página "Assinaturas", deve corresponder ao valor enviado.
 
-Observação: um valor "Total de usuários" maior que 25 resultará em um erro.
+> [!NOTE]
+> Um valor "Total de usuários" maior que 25 resultará em um erro.
 
-
+## <a name="support-resources"></a>Recursos de suporte
+-  Precisa de ajuda com sua Assinatura de Desenvolvedor do Office? Confira os recursos de [suporte](https://developer.microsoft.com/office/support) no [Centro de Desenvolvimento do Office](https://developer.microsoft.com/office).
+-  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
+-  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 

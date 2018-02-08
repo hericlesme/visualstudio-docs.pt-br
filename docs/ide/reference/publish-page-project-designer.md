@@ -4,22 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
+f1_keywords:
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
 A página **Publicar** do **Designer de Projeto** é usada para configurar as propriedades de implantação do ClickOnce.  
@@ -44,16 +47,16 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
  Para Aplicativos do Navegador da Web WPF, a opção **O aplicativo está disponível também offline** está desabilitada, pois esses aplicativos estão disponíveis somente online.  
   
  **Arquivos de Aplicativo**  
- Abre a [Caixa de Diálogo de Arquivos do Aplicativo](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8), que é usada para especificar como e o local em que os arquivos individuais são instalados.  
+ Abre a caixa de diálogo Arquivos do Aplicativo, que é usada para especificar como e o local em que os arquivos individuais são instalados.  
   
  **Pré-requisitos**  
- Abre a [Caixa de Diálogo de Pré-Requisitos](../../ide/reference/prerequisites-dialog-box.md), que é usada para especificar os componentes de pré-requisito, como o .NET Framework, a serem instalados junto com o aplicativo.  
+ Abre a caixa de diálogo de Pré-Requisitos, que é usada para especificar os componentes de pré-requisito, como o .NET Framework, a serem instalados junto com o aplicativo.  
   
  **Atualizações**  
- Abre a [Caixa de Diálogo de Atualizações do Aplicativo](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), que é usada para especificar o comportamento da atualização para o aplicativo. Não disponível quando **O aplicativo está disponível apenas online** está selecionado.  
+ Abre a caixa de diálogo Atualizações do Aplicativo, que é usada para especificar o comportamento da atualização para o aplicativo. Não disponível quando **O aplicativo está disponível apenas online** está selecionado.  
   
  **Opções**  
- Abre a [Caixa de Diálogo Opções de Publicação](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), que é usada para especificar mais opções de publicação avançadas.  
+ Abre a caixa de diálogo Opções de Publicação, que é usada para especificar mais opções de publicação avançadas.  
   
  **Versão da Publicação**  
  Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido pelo <xref:System.Version>.  
@@ -64,7 +67,7 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
  Opcional. Quando essa opção é selecionada (padrão), a parte de **Revisão** do número de versão de publicação é incrementada em uma unidade toda vez que o aplicativo é publicado. Isso faz o aplicativo ser publicado como uma atualização.  
   
  **Assistente de Publicação**  
- Abre o [Assistente de Publicação](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872). Concluir o Assistente de Publicação tem o mesmo efeito que executar o comando **Publicar** no menu **Build**.  
+ Abre o Assistente de Publicação. Concluir o Assistente de Publicação tem o mesmo efeito que executar o comando **Publicar** no menu **Build**.  
   
  **Publicar Agora**  
  Publica o aplicativo usando as configurações atuais. Equivalente ao botão **Concluir** no **PublishWizard**.  

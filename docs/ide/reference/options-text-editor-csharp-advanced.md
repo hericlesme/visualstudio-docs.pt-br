@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,19 +19,20 @@ helpviewer_keywords:
 - outlining options [C#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 1f7bcff6d2e94944985789db2bf0ac80150a478e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 193b61ab95daa84c5815c251c7d52103c88977e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
-Use essa caixa de diálogo para modificar as configurações de formatação do editor, refatoração de código e comentários da documentação XML do Visual C#. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto**, expanda **C#** e, em seguida, clique em **Avançado**.  
+Use essa caixa de diálogo para modificar as configurações de formatação do editor, refatoração de código e comentários da documentação XML do C#. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto**, expanda **C#** e, em seguida, clique em **Avançado**.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -76,9 +78,9 @@ Quando o cursor é posicionado em um símbolo, ou ao clicar em um símbolo, toda
   
 ## <a name="organize-usings"></a>Organizar Usos  
  Colocar as diretivas “System” primeiro ao classificar os usos  
- Quando selecionado, `System` usando diretivas é exibido antes de outras diretivas de uso. Para obter mais informações, consulte Organizar usos no [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
+ Quando selecionado, `System` usando diretivas é exibido antes de outras diretivas de uso. Para saber mais, consulte Organizar usos no [C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
   
 ## <a name="see-also"></a>Consulte também  
  [Comentários da documentação XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)   
- [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+ [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

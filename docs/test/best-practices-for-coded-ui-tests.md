@@ -7,32 +7,36 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: coded UI tests, best practices
+helpviewer_keywords:
+- coded UI tests, best practices
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: faeaa6aaa6902e35e0b878bda91609ca12dbf248
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a77c9c31cc12a802360a64499f730335762a508
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Práticas recomendadas para testes de IU codificados
-Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU codificados.  
-  
- **Requisitos**  
-  
--   Visual Studio Enterprise  
-  
-## <a name="best-practices"></a>Práticas recomendadas  
- Use as orientações a seguir para criar um teste de IU codificado flexível.  
+
+Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU codificados.
+
+**Requisitos**  
+
+- Visual Studio Enterprise
+
+## <a name="best-practices"></a>Práticas recomendadas
+
+Use as orientações a seguir para criar um teste de IU codificado flexível.
   
 -   Use o **Construtor de Teste de IU Codificado** sempre que possível.  
   
 -   Não modifique o arquivo `UIMap.designer.cs` diretamente. Se fizer isso, as alterações no arquivo serão substituídas.  
   
--   Crie o teste como uma sequência de métodos registrados. Para saber mais sobre como registrar um método, consulte [Criando Testes de IU Codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+-   Crie o teste como uma sequência de métodos registrados. Para saber mais sobre como registrar um método, consulte [Criando Testes de IU Codificados](../test/use-ui-automation-to-test-your-code.md).
   
 -   Cada método registrado deve agir em uma única página, formulário ou caixa de diálogo. Crie um novo método de teste para cada nova página, formulário ou caixa de diálogo.  
   
@@ -55,9 +59,10 @@ Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU
  Os testes de IU codificados se adaptam automaticamente a várias alterações na interface do usuário. Se, por exemplo, a posição ou cor de um elemento da interface do usuário forem alteradas, na maioria das vezes, o teste de IU codificado ainda encontrará o elemento correto.  
   
  Durante uma execução de teste, os controles de interface do usuário são localizados pela estrutura de teste por meio de um conjunto de propriedades de pesquisa aplicadas a cada classe de controle nas definições criadas pelo **Construtor de Teste de IU Codificado** no arquivo `UIMap.Designer.cs`. As propriedades de pesquisa contêm pares nome-valor de nomes e valores da propriedade que podem ser usados para identificar o controle, como as propriedades <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> e <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> do controle. Se as propriedades de pesquisa não forem alteradas, o teste de IU codificado encontrará o controle na interface do usuário com êxito. Se as propriedades de pesquisa forem alteradas, o teste de IU codificado terá um algoritmo de correspondência inteligente que aplica a heurística para encontrar controles e janelas na interface do usuário. Quando a interface do usuário é alterada, pode ser possível modificar as propriedades de pesquisa dos elementos identificados anteriormente para garantir que eles sejam encontrados.  
-  
-## <a name="what-to-do-if-your-user-interface-changes"></a>O que fazer se a interface do usuário for alterada  
- Interfaces do usuário mudam frequentemente durante o desenvolvimento. Aqui estão algumas maneiras de reduzir o efeito dessas alterações:  
+
+## <a name="if-your-user-interface-changes"></a>Se a interface do usuário for alterada
+
+Interfaces do usuário mudam frequentemente durante o desenvolvimento. Aqui estão algumas maneiras de reduzir o efeito dessas alterações:  
   
 -   Localize o método registrado que faz referência a esse controle e use o **Construtor de Teste de IU Codificado** para registrar as ações desse método. É possível usar o mesmo nome para que o método substitua as ações existentes.  
   
@@ -71,10 +76,11 @@ Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU
   
  Para saber mais sobre como registrar testes de IU codificados, consulte [Usar a Automação de Interface do Usuário para Testar o Código](../test/use-ui-automation-to-test-your-code.md).  
   
-## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>O que fazer se um processo de segundo plano precisar ser concluído antes de continuar o teste  
- Talvez seja necessário esperar até que o processo seja concluído para continuar com a próxima ação de interface do usuário. Para fazer isso, você pode usar <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> para esperar para que o teste continue, como no exemplo a seguir.  
-  
-```  
+## <a name="if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Se um processo de segundo plano precisar ser concluído antes de continuar o teste
+
+Talvez seja necessário esperar até que o processo seja concluído para continuar com a próxima ação de interface do usuário. Para fazer isso, você pode usar <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> para esperar para que o teste continue, como no exemplo a seguir.  
+
+```csharp
 // Set the playback to wait for all threads to finish  
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.AllThreads;  
   
@@ -83,12 +89,13 @@ this.UIMap.ClickSubmit();
   
 // Reset the playback to wait only for the UI thread to finish  
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting>   
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md)   
- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+```
+
+## <a name="see-also"></a>Consulte também
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
+<xref:Microsoft.VisualStudio.TestTools.UITesting>   
+[Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
+[Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)   
+[Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md)   
+[Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

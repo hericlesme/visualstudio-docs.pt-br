@@ -7,17 +7,20 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.codedUItest.testeditor
-helpviewer_keywords: coded UI test, Coded UI Test Editor
+f1_keywords:
+- vs.codedUItest.testeditor
+helpviewer_keywords:
+- coded UI test, Coded UI Test Editor
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 2302c2bbfbd38ff307335b525aa319afb5f07e25
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0cb316475748033bb020a2f3065f9492a5a201ed
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editando testes de interface de usuário codificada usando o editor de teste de interface de usuário codificada
 o Editor de testes de interface de usuário codificada permite modificar facilmente os testes de IU codificados. Ao usar o Editor de Teste de IU Codificado, é possível localizar, exibir e editar as propriedades de métodos de teste e ações de interface do usuário. Além disso, é possível utilizar o mapa de controles de interface do usuário para exibir e editar os controles correspondentes.  
@@ -216,6 +219,6 @@ Editar propriedades de controle
 ## <a name="see-also"></a>Consulte também
 
 [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)  
-[Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)  
+[Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)  
 [Criando um teste de IU codificado controlado por dados](../test/creating-a-data-driven-coded-ui-test.md)  
 [Passo a passo: criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

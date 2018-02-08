@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,19 +25,21 @@ helpviewer_keywords:
 - formatting [C#]
 - Text Editor Options dialog box, formatting
 ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 2032b0b50c9f22396d63b32b1d050eb40ea70a79
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 0c4303cb996094562ed955e58f6b7ec37b38fc2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-formatting"></a>Opções, editor de texto, C#, formatação
-Use a caixa de diálogo da página de propriedades **Formatação** para definir opções para formatar código no Editor de Código. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda **Editor de Texto**, expanda **C#** e, em seguida, clique em **Formatação**.  
+
+Use a caixa de diálogo da página de propriedades **Formatação** para definir opções para formatar código no Editor de Código. Para acessar a caixa de diálogo **Opções** no Visual Studio, clique em **Ferramentas** > **Opções**. Em seguida, expanda **Editor de Texto**, expanda **C#**, expanda **Estilo do Código** e clique em **Formatação**.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  

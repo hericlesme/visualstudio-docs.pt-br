@@ -4,26 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Visual Basic code, international applications
 - globalization [Visual Studio], localizing applications
-- Visual C#, international applications
+- C#, international applications
 - applications [Visual Studio], localizing
 - localization [.NET Framework], applications
 ms.assetid: 879c20e0-8301-4f44-b520-97283848c965
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c389f8dd13514d940941bcefc228236b3418e317
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 92a7e56d05d0f9d71d51aa80fcc5d545b3baf061
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="localizing-applications"></a>Localizando aplicativos
 *Localização* é o processo de personalização do aplicativo para determinada cultura ou localidade. A localização consiste basicamente na tradução da interface do usuário.  
@@ -43,7 +45,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Introdução a aplicativos internacionais com base no .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
- Aborda os conceitos relacionados ao desenvolvimento de software para um mercado internacional usando o Visual Basic ou o Visual C#.  
+ Aborda os conceitos relacionados ao desenvolvimento de software para um mercado internacional usando o Visual Basic ou C#.  
   
  [Globalizando o Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)  
  Fornece links para páginas que explicam como criar aplicativos do Windows que dão suporte a várias culturas.  

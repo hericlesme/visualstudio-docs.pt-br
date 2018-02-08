@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b454893c2d68b23d130d6ff38be493d988dfb1fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -40,9 +42,9 @@ Itens necessários:
 
 -  Visual Studio Enterprise ou Visual Studio Professional
 
--  Código Visual C# .NET ou Visual Basic .NET
+-  Código em C# ou Visual Basic
 
-Escolha o indicador **referências** (**Alt + 2**). Se você vir referências **0 referências**, você não terá nenhuma referência do código Visual C# ou Visual Basic. Isso não inclui referências de outros itens como arquivos XAML e ASPX.
+Escolha o indicador **referências** (**Alt + 2**). Se você vir **0 referências**, você não terá nenhuma referência do código em C# ou Visual Basic. Isso não inclui referências de outros itens como arquivos XAML e ASPX.
 
 ![CodeLens &#45; Escolha o indiador de referências](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -66,9 +68,9 @@ Itens necessários:
 
 - O Team Foundation Server 2013 ou posterior, Visual Studio Team Services ou Git
 
-- [Lync 2010 ou posterior ou Skype for Business](http://technet.microsoft.com/en-us/lync), para entrar em contato com sua equipe no editor de códigos  
+- [Lync 2010 ou posterior ou Skype for Business](https://technet.microsoft.com/office/dn788773), para entrar em contato com sua equipe no editor de códigos
 
-Para o código Visual C# .NET ou Visual Basic .NET armazenado com o TFVC (controle de versão do Team Foundation) ou Git, você obtém detalhes do CodeLens nos níveis de classe e de método (indicadores do *nível de elemento do código*). Se seu repositório Git estiver hospedado no TfGit, você receberá links para itens de trabalho do TFS.  
+Para o código em C# ou Visual Basic armazenado com o TFVC (controle de versão do Team Foundation) ou Git, você obtém detalhes do CodeLens nos níveis de classe e de método (indicadores do *nível de elemento do código*). Se seu repositório Git estiver hospedado no TfGit, você receberá links para itens de trabalho do TFS.  
 
 ![Indicadores de nível de elemento de código](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
 
@@ -86,7 +88,7 @@ Descubra quem alterou seu código C# ou Visual Basic, e as alterações feitas, 
 
 ![CodeLens: obtenha o histórico de alterações para seu código no TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
 
-O período de tempo padrão são os últimos 12 meses. Se seu código estiver armazenado no Team Foundation Server, será possível alterar isso executando o [comando TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) com o [comando CodeIndex](../ide/codeindex-command.md) e com o sinalizador **/indexHistoryPeriod**.  
+O período de tempo padrão são os últimos 12 meses. Se seu código estiver armazenado no Team Foundation Server, será possível alterar isso executando o [comando TFSConfig](/vsts/tfs-server/command-line/tfsconfig-cmd) com o [comando CodeIndex](../ide/codeindex-command.md) e com o sinalizador **/indexHistoryPeriod**.
 
 Para ver um histórico detalhado de todas as alterações, inclusive aquelas de mais de um ano atrás, escolha **Mostrar todas as alterações do arquivo**.  
 
@@ -193,7 +195,7 @@ Saiba mais sobre testes de unidade que existem para seu código sem abrir o Gere
 
 -   Visual Studio Enterprise ou Visual Studio Professional  
   
--   Código Visual C# .NET ou Visual Basic .NET  
+-   Código em C# ou Visual Basic  
   
 -   Um [projeto de teste de unidade](../test/unit-test-your-code.md) que tem testes de unidade para o código do seu aplicativo  
   
@@ -233,15 +235,15 @@ Saiba mais sobre testes de unidade que existem para seu código sem abrir o Gere
   
 ###  <a name="NoIndicators"></a> P: onde fica o CodeLens?
 
-**R:** o CodeLens é exibido no código Visual C# .NET e Visual Basic .NET no nível de método, classe, indexador e propriedade. O CodeLens é exibido no nível de arquivo para todos os outros tipos de arquivos.
+**R:** o CodeLens é exibido no código C# e Visual Basic no nível de método, classe, indexador e propriedade. O CodeLens é exibido no nível de arquivo para todos os outros tipos de arquivos.
 
 - Certifique-se que o CodeLens está ativado. Acesse **Ferramentas**, **Opções**, **Editor de Texto**, **Todos os Idiomas**, **CodeLens**.  
-  
-- Se seu código estiver armazenado no TFS, certifique-se de que a indexação do código está ativada usando o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).  
 
-- Os indicadores relacionados ao TFS são exibidos apenas quando os itens de trabalho são vinculados ao código e quando você tem permissão para abrir itens de trabalho vinculados. [Confirme se você tem permissões de membro da equipe.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+- Se seu código estiver armazenado no TFS, certifique-se de que a indexação do código está ativada usando o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](/vsts/tfs-server/command-line/tfsconfig-cmd).
 
-- Os indicadores de teste de unidade não são exibidos quando o código do aplicativo não tem testes de unidade. Os indicadores de status do teste aparecem automaticamente em projetos de teste. Se você souber que seu código do aplicativo tem testes de unidade, mas os indicadores de teste não são exibidos, experimente criar a solução (**Ctrl + Shift + B**).  
+- Os indicadores relacionados ao TFS são exibidos apenas quando os itens de trabalho são vinculados ao código e quando você tem permissão para abrir itens de trabalho vinculados. [Confirme se você tem permissões de membro da equipe](/vsts/work/scale/multiple-teams).
+
+- Os indicadores de teste de unidade não são exibidos quando o código do aplicativo não tem testes de unidade. Os indicadores de status do teste aparecem automaticamente em projetos de teste. Se você souber que seu código do aplicativo tem testes de unidade, mas os indicadores de teste não são exibidos, experimente criar a solução (**Ctrl + Shift + B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>P: Por que eu não vejo os detalhes de item de trabalho para uma confirmação?
 
@@ -301,11 +303,11 @@ Para usar o teclado:
 
 ###  <a name="LocalVersion"></a> P: o que é “versão local”?
 
-**R:** a seta **Versão local** aponta para o conjunto de alterações mais recente em sua versão local deste arquivo. Quando o servidor tem um conjunto de alterações mais recente, elas são exibidas acima ou abaixo da seta **Versão local**, dependendo da ordem usada para classificar os conjuntos de alterações.  
+**R:** a seta **Versão local** aponta para o conjunto de alterações mais recente em sua versão local deste arquivo. Quando o servidor tem um conjunto de alterações mais recente, elas são exibidas acima ou abaixo da seta **Versão local**, dependendo da ordem usada para classificar os conjuntos de alterações.
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: posso gerenciar a maneira como o CodeLens processa o código para mostrar o histórico e os itens vinculados?
 
-**R:** sim, se seu código estiver no TFS, use o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).
+**R:** sim, se seu código estiver no TFS, use o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](/vsts/tfs-server/command-line/tfsconfig-cmd).
 
 ## <a name="see-also"></a>Consulte também
 

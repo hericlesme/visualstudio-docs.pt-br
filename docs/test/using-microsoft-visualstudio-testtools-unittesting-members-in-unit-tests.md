@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 251843d3e5a32ddedfe4f9081bd52330a457fe24
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 3e0be7d788d4471f249b50f8c846343514b1c346
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Use as classes e membros do namespace Microsoft.VisualStudio.TestPlatform.UnitTestFramework> ao codificar testes de unidade. É possível usá-los ao gravar o teste de unidade do zero ou refinar um teste de unidade gerado do código em teste.  
@@ -41,9 +42,10 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.DataSourceElementCollection  
   
-## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos Usados para Estabelecer uma Ordem de Chamada  
- Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
-  
+## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos Usados para Estabelecer uma Ordem de Chamada
+
+Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+
 ### <a name="for-assemblies"></a>Para Assemblies  
  AssemblyInitialize e AssemblyCleanup são chamados logo após o assembly ser carregado e logo antes de seu assembly ser descarregado.  
   
@@ -64,8 +66,9 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestCleanupAttribute  
   
-## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos Usados para Identificar Classes de Teste e Métodos  
- Cada classe de teste deve ter o atributo TestClass e cada método de teste deve ter o atributo TestMethod. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
+## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos Usados para Identificar Classes de Teste e Métodos
+
+Cada classe de teste deve ter o atributo TestClass e cada método de teste deve ter o atributo TestMethod. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute  
   
@@ -120,12 +123,10 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.CssProjectStructureAttribute  
   
-## <a name="classes-used-with-private-accessors"></a>Classes Usadas com Acessadores Particulares  
- Conforme descrito em [Usar o Publicize para Criar um Acessador Particular](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb), é possível gerar um teste de unidade para um método particular. Essa geração cria uma classe de acessador particular, que instancia um objeto da classe PrivateObject. A classe PrivateObject é uma classe wrapper que usa reflexão como parte do processo do acessador particular. A classe PrivateType é semelhante, mas é usada para chamar métodos estáticos privados em vez de chamar os métodos de instância privada.  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType  
-  
-## <a name="see-also"></a>Consulte também  
- Microsoft.VisualStudio.TestPlatform.UnitTestFramework
+## <a name="classes-used-with-private-accessors"></a>Classes Usadas com Acessadores Particulares
+
+Você pode gerar um teste de unidade para um método privado. Essa geração cria uma classe de acessador particular, que instancia um objeto da classe PrivateObject. A classe PrivateObject é uma classe wrapper que usa reflexão como parte do processo do acessador particular. A classe PrivateType é semelhante, mas é usada para chamar métodos estáticos privados em vez de chamar os métodos de instância privada.
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType

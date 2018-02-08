@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Toolbox, Components tab
-ms.assetid: 332fafab-a763-4244-b388-15d1b5b5cc04
-caps.latest.revision: "14"
+helpviewer_keywords:
+- Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cf0ab13b104422771b117c17ed3ff89b53fa461f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="toolbox-components-tab"></a>Caixa de Ferramentas, Guia Componentes
-Exibe os componentes que podem ser adicionados a designers [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Além dos componentes [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] incluídos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou os componentes de terceiros a essa guia. Para obter mais informações, consulte [Como manipular guias da caixa de ferramentas](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+
+Exibe os componentes que podem ser adicionados a designers do Visual Basic e C#. Além dos componentes do .NET Framework incluídos no Visual Studio, como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou os componentes de terceiros a essa guia.
   
  Para exibir essa guia, no menu **Exibir**, selecione **Caixa de ferramentas**. Na **Caixa de ferramentas**, selecione a guia **Componentes**.  
   

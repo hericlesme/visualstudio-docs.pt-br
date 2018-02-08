@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - bi-directional language support, about bi-directional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b0d0010d9aa4c56fdffef2eceb458776a863d23
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Criando aplicativos em idiomas bidirecionais
 É possível usar o Visual Studio para criar aplicativos que exibem o texto corretamente em idiomas escritos da direita para a esquerda, incluindo árabe e hebraico. Para alguns recursos, é possível apenas definir as propriedades. Em outros casos, é necessário implementar recursos no código.  
@@ -80,15 +82,16 @@ ms.lasthandoff: 12/22/2017
 -   Código e texto literal. No editor de código (que também é o editor de texto), é possível usar o árabe ou o hebraico para nomear classes, funções, variáveis, propriedades, literais de cadeia de caracteres, atributos e assim por diante. No entanto, o editor não dá suporte ao sentido de leitura da direita para a esquerda; o texto sempre começa na margem esquerda.  
   
     > [!TIP]
-    >  É recomendável colocar literais de cadeia de caracteres em arquivos de recurso, em vez de codificá-los nos programas. Para obter mais informações, consulte [Passo a passo: Localizando o Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > É recomendável colocar literais de cadeia de caracteres em arquivos de recurso, em vez de codificá-los nos programas. Para saber mais, veja [Recursos em aplicativos da área de trabalho (.NET Framework)](/dotnet/framework/resources/index).
   
     > [!NOTE]
-    >  Você deve ser consistente na forma como se refere aos objetos nomeados nesses idiomas. Por exemplo, se você usar Kashida ao nomear uma variável em árabe, deverá sempre usar Kashida ao se referir a essa variável; caso contrário, ocorrerão erros.  
+    > Você deve ser consistente na forma como se refere aos objetos nomeados nesses idiomas. Por exemplo, se você usar Kashida ao nomear uma variável em árabe, deverá sempre usar Kashida ao se referir a essa variável; caso contrário, ocorrerão erros.  
   
 -   Comentários sobre o código. É possível criar comentários em árabe ou hebraico. Você também pode usar esses idiomas na ferramenta de construtor de comentários.  
   
-## <a name="see-also"></a>Consulte também  
- [Suporte bidirecional para aplicativos do Windows Forms](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [Suporte bidirecional para aplicativos Web ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
- [Globalizando aplicativos](../ide/globalizing-applications.md)   
- [Localizando aplicativos](../ide/localizing-applications.md)
+## <a name="see-also"></a>Consulte também
+
+[Suporte Bidirecional para Aplicativos dos Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)  
+[Suporte bidirecional para aplicativos Web ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
+[Globalizando aplicativos](../ide/globalizing-applications.md)  
+[Localizando aplicativos](../ide/localizing-applications.md)

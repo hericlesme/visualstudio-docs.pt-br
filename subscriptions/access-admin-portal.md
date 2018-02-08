@@ -9,11 +9,11 @@ Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Acessando o Portal do administrador de assinaturas do Visual Studio
 ## <a name="for-mpsa"></a>Para MPSA
@@ -32,7 +32,7 @@ O contato primário ou de notificações do contrato de Licenciamento por Volume
 
 Se você precisar de informações sobre como configurar um administrador, assista a [este vídeo](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) e consulte estes artigos sobre [Integração e gerenciamento de administradores](https://go.microsoft.com/fwlink/?linkid=839391) no Portal de administração de assinaturas do Visual Studio. 
 
-Se você já foi configurado como administrador, acesse diretamente o [Portal de administração](https://manage.visualstudio.com) de assinaturas do Visual Studio.
+Se você já foi configurado como administrador, acesse diretamente o [Portal do administrador](https://manage.visualstudio.com) de assinaturas do Visual Studio.
 
 ## <a name="for-cloud-subscriptions"></a>Para assinaturas de Nuvem
 Ao comprar assinaturas de Nuvem do Visual Studio, você é automaticamente configurado como um administrador dessas assinaturas.  Se você já as comprou, poderá gerenciá-las em [https://manage.visualstudio.com](https://manage.visualstudio.com).

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos trechos de código
 Os Trechos de Código IntelliSense são partes de código pré-criadas que estão prontas para serem inseridas no seu aplicativo com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Você pode aumentar a produtividade fornecendo trechos de código que reduzem a quantidade de tempo gasto digitando código repetitivo ou procurando exemplos. É possível usar o esquema XML do Trecho de Código IntelliSense para criar seus próprios trechos de código e adicioná-los aos trechos de código que o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] já contém.  
@@ -145,7 +147,7 @@ Há três atributos disponíveis para o Elemento de código:
 
 - **Delimiter** - Atributo _Opcional_ que especifica o delimitador usado para descrever os literais e os objetos no código. Por padrão, o delimitador é `$`.
 
-### <a name="parent-element"></a>Elemento pai
+### <a name="parent-element"></a>Elementos pai
 |Elementos pai|Descrição|  
 |--------------------|-----------------|  
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contém as referências, as importações, as declarações e o código do trecho de código.|
@@ -240,7 +242,7 @@ Há três atributos disponíveis para o Elemento de código:
  Especifica uma função a ser executada quando o literal ou o objeto receber foco no Visual Studio.  
   
 > [!NOTE]
->  O elemento `Function` tem suporte somente em trechos de código Visual C#.  
+>  O elemento `Function` tem suporte somente em trechos de código em C#.  
   
 ```xml  
 <Function>  
@@ -563,7 +565,7 @@ Há três atributos disponíveis para o Elemento de código:
   
 -   `Expansion`: permite que o trecho de código seja inserido onde está o cursor.  
   
--   `Refactoring`: especifica que o trecho de código é usado durante refatoração do Visual C#. `Refactoring` não pode ser usado em trechos de código personalizados.  
+-   `Refactoring`: especifica que o trecho de código é usado durante refatoração de C#. `Refactoring` não pode ser usado em trechos de código personalizados.  
   
 ##  <a name="snippettypes"></a> Elemento SnippetTypes  
  Agrupa elementos `SnippetType` individuais. Se o elemento `SnippetTypes` não estiver presente, o trecho de código poderá ser inserido em qualquer lugar no código.  

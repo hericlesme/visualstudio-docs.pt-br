@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testando os aplicativos do SharePoint 2010 com testes de interface do usuário codificada
 Incluir testes de IU codificados em um aplicativo do SharePoint permite verificar se o aplicativo inteiro, incluindo seus controles de interface do usuário, está funcionando corretamente. Testes de IU codificados também podem validar valores e lógica na interface do usuário.  
@@ -34,7 +35,7 @@ Incluir testes de IU codificados em um aplicativo do SharePoint permite verifica
 -   ![Pré-requisito](../test/media/prereq.png "Prereq") Não há suporte para controles do Visio e PowerPoint 2010 no seu aplicativo do SharePoint.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Criando um teste de IU codificado para seu aplicativo do SharePoint  
- [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) para seus aplicativos do SharePoint 2010 é o mesmo processo que criar testes para outros tipos de aplicativos. A gravação e reprodução têm suporte para todos os controles na interface de edição na Web. A interface para a seleção de categorias e as Web parts são controles da Web padrão.  
+ [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md) para seus aplicativos do SharePoint 2010 é o mesmo processo que criar testes para outros tipos de aplicativos. A gravação e reprodução têm suporte para todos os controles na interface de edição na Web. A interface para a seleção de categorias e as Web parts são controles da Web padrão.  
   
  ![Web parts do SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   

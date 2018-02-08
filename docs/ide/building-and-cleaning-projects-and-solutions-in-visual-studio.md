@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilando e limpando projetos e soluções no Visual Studio
 Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para ver um tutorial passo a passo, consulte [Instruções passo a passo: criando um aplicativo](../ide/walkthrough-building-an-application.md).  
@@ -111,11 +113,12 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
     -   Escolha as teclas Ctrl + Break.  
   
 ## <a name="see-also"></a>Consulte também
-[How to: View, Save, and Configure Build Log Files](../ide/how-to-view-save-and-configure-build-log-files.md)  (Como exibir, salvar e configurar arquivos de log de build)  
-[Obtaining Build Logs (Obtendo logs de build)](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)   
-[Noções sobre configurações de build](../ide/understanding-build-configurations.md)   
-[Debug and Release Project Configurations (Configurações de projeto de depuração e lançamento)](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[Referência de build do C/C++](/cpp/build/reference/c-cpp-building-reference)   
-[Opções de linha de comando devenv](../ide/reference/devenv-command-line-switches.md)   
+
+[Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Obtendo Logs de Build](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)  
+[Noções sobre configurações de build](../ide/understanding-build-configurations.md)  
+[Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)  
+[Referência de build C/C++](/cpp/build/reference/c-cpp-building-reference)  
+[Opções de linha de comando devenv](../ide/reference/devenv-command-line-switches.md)  
 [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)

@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e88e3999bdca7b926042685ca7bd2d561c12d5d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Caixa de diálogo Pré-requisitos
 
@@ -46,7 +46,7 @@ Os componentes de pré-requisitos exibidos na caixa de diálogo **Pré-requisito
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Esse pacote instala o seguinte:<br /><br /> -   .NET Framework versões 2.0, 3.0 e 3.5.<br />-   Suporte para todas as versões do .NET Framework em sistemas operacionais de 32 bits (x86) e 64 bits (x64).<br />-   Pacotes de idiomas para cada versão do .NET Framework que é instalada com o pacote.<br />-   Service packs para o .NET Framework 2.0 e 3.0.<br /><br /> O .NET Framework 3.0 está incluído no Windows Vista e o .NET Framework 3.5 está incluído no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. O .NET Framework 3.5 é necessário para todos os projetos do Visual Basic e Visual C# que são compilados para sistemas operacionais de 32 bits e para quais a estrutura de destino é definida como **.NET Framework 3.5**, bem como para projetos do Visual Basic e Visual C# compilados para sistemas operacionais de 64 bits. (Não há suporte para o IA64.) Observe que os projetos do Visual Basic e do Visual C# são compilados para qualquer arquitetura de CPU, por padrão. Para obter mais informações, consulte [Visão geral do Visual Studio Multi-Targeting](../../ide/visual-studio-multi-targeting-overview.md), [Redistribuindo o .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287), e [Implantando pré-requisitos de aplicativos de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Por padrão, esse item está selecionado.|
+|**.NET Framework 3.5 SP1**|Esse pacote instala o seguinte:<br /><br /> -   .NET Framework versões 2.0, 3.0 e 3.5.<br />-   Suporte para todas as versões do .NET Framework em sistemas operacionais de 32 bits (x86) e 64 bits (x64).<br />-   Pacotes de idiomas para cada versão do .NET Framework que é instalada com o pacote.<br />-   Service packs para o .NET Framework 2.0 e 3.0.<br /><br /> O .NET Framework 3.0 está incluído no Windows Vista e o .NET Framework 3.5 está incluído no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. O .NET Framework 3.5 é necessário para todos os projetos do Visual Basic e C# que são compilados para sistemas operacionais de 32 bits e para quais a estrutura de destino é definida como **.NET Framework 3.5**, bem como para projetos do Visual Basic e C# compilados para sistemas operacionais de 64 bits. (Não há suporte para o IA64.) Observe que os projetos do Visual Basic e do C# são compilados para qualquer arquitetura de CPU, por padrão. Para saber mais, consulte [Visão geral de multissegmentação do Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) e [Pré-requisitos de implantação para aplicativos de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Por padrão, esse item está selecionado.|
 |**Microsoft .NET Framework 4.x**|Esse pacote instala o .NET Framework 4.x para as plataformas x86 e x64.|
 |**Microsoft System CLR Types para SQL Server 2014 (x64 e x86)**|Este pacote instala o Microsoft System CLR Types para SQL Server 2014 para x64 ou x86.|
 |**SQL Server 2008 R2 Express**|Esse pacote instala o Microsoft SQL Server 2008 R2 Express, uma edição gratuita do Microsoft SQL Server 2008 R2, um banco de dados ideal para aplicativos Web, de servidor ou de área de trabalho pequenos. Pode ser usado gratuitamente para desenvolvimento e produção. Um [registro](http://go.microsoft.com/fwlink/?LinkId=130380) gratuito é necessário para distribuir o SQL Server 2008 Express R2 com o aplicativo.|
@@ -60,6 +60,5 @@ Os componentes de pré-requisitos exibidos na caixa de diálogo **Pré-requisito
 
 [Página de Publicação, Designer de Projeto](../../ide/reference/publish-page-project-designer.md)  
 [Pré-requisitos de implantação de aplicativos](../../deployment/application-deployment-prerequisites.md)  
-[Redistribuição do .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)  
 [Implantando pré-requisitos para aplicativos de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
 [Visão Geral do Visual Studio Multiplataforma](../../ide/visual-studio-multi-targeting-overview.md)

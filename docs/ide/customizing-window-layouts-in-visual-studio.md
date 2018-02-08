@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e26a9fa0daf5c92c81161bdcafd92490f9a05113
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
 No Visual Studio, é possível personalizar a posição, tamanho e comportamento de janelas para criar layouts de janela que funcionam melhor para vários fluxos de trabalho de desenvolvimento. Quando você personaliza o layout, o IDE se lembra dele. Por exemplo, se você alterar o local de encaixe do **Gerenciador de Soluções** e fechar o Visual Studio, na próxima vez que o iniciar, mesmo que estiver trabalhando em outro computador, o **Gerenciador de Soluções** será encaixado no mesmo local. Também é possível dar um nome ao layout personalizado e salvá-lo e, em seguida, mudar entre layouts com um único comando. Por exemplo, é possível criar um layout para edição e outro para depuração e mudar entre eles usando o comando de menu **Janela &#124; Aplicar Layout de Janela**.  
@@ -134,7 +136,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Criar um projeto de interface do usuário e personalizar o layout  
 
-1.  Na caixa de diálogo **Novo Projeto**, crie um Aplicativo de Área de Trabalho WPF em Visual C#. Suponhamos que este seja o projeto em que trabalharemos na interface do usuário. Portanto, queremos maximizar o espaço da janela de designer e tirar outras janelas de ferramentas do caminho.  
+1.  Na caixa de diálogo **Novo Projeto**, crie um Aplicativo de Área de Trabalho WPF em C#. Suponhamos que este seja o projeto em que trabalharemos na interface do usuário. Portanto, queremos maximizar o espaço da janela de designer e tirar outras janelas de ferramentas do caminho.  
 
 2.  Se você tiver vários monitores, leve a janela **Gerenciador de Soluções** e o janela **Propriedades** sobre o segundo monitor. Em um sistema de monitor único, tente fechar todas as janelas exceto o designer.  
 

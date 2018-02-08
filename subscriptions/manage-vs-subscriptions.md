@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 ## <a name="signing-in-to-the-portal"></a>Entrando no portal
@@ -31,7 +31,7 @@ Se você tiver comprado uma assinatura do Visual Studio na Microsoft Store, as e
 #### <a name="workschool-accounts"></a>Contas corporativas ou de estudante
 Se a sua assinatura foi fornecida pela empresa/escola, você terá recebido um email de boas-vindas.  
 1.  Visite o [Portal do Assinante](https://my.visualstudio.com/)
-2.  Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída. Esse endereço também é identificado na **Carta de boas-vindas** do assinante. Se você não recebeu a Carta de boas-vindas, verifique as pastas de lixo eletrônico.
+2.  Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída. Esse endereço também é identificado no email de boas-vindas do assinante. Se você não recebeu o email de boas-vindas, verifique as pastas de lixo eletrônico.
 3.  Clique em **Continuar**
 4.  Você será redirecionado para sua página de entrada empresarial.
 5.  Insira sua senha.
