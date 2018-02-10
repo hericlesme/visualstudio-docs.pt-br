@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Instruções passo a passo: configurando e usando um conjunto de regras personalizado
 
@@ -106,7 +106,7 @@ Agora você pode executar a análise de código no projeto RuleSetSample e procu
   
 2.  Na janela lista de erros, clique em **avisos** e, em seguida, clique no **descrição** cabeçalho de coluna para classificar os avisos ordem alfanumérica.  
   
-     Em um aplicativo do mundo real, você deve corrigir quaisquer violações de regra vale a pena corrigir neste ponto, ou opcionalmente desativar ou suprimir uma regra se você determinou que não era vale a pena corrigir. Para obter mais informações, consulte [suprimir avisos usando o atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     Em um aplicativo do mundo real, você deve corrigir quaisquer violações de regra vale a pena corrigir neste ponto, ou opcionalmente desativar ou suprimir uma regra se você determinou que não era vale a pena corrigir. Para obter mais informações, consulte [suprimir avisos](../code-quality/in-source-suppression-overview.md).
   
 3.  Observe os avisos de CA1704. Essas violações nessa regra indicam que "considere fornecer um nome mais significativo para os parâmetros." Você pode corrigir o problema no seu código, ou você pode desabilitar a regra, conforme explicado no próximo procedimento.  
   

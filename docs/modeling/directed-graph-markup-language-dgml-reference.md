@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e0bffe7db51da8ccf73bc73e294c102b597d338
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referência DGML
 Direcionado a linguagem de marcação de gráfico (DGML) descreve informações usadas para visualização e para executar a análise de complexidade e é o formato usado para manter o mapa de código no Visual Studio. Ele usa XML simples para descrever cíclicos e acíclicos gráficos direcionados. Um gráfico direcionado é um conjunto de nós conectados por links ou bordas. Nós e links podem ser usados representam estruturas de rede como, por exemplo, elementos em um projeto de software.  

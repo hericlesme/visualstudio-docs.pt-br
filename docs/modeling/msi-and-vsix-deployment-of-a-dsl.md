@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a5351c359f708eeb1d2a9aa030f5b82337d38d56
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implantação de uma DSL por MSI e VSIX
 Você pode instalar uma linguagem específica de domínio em seu próprio computador ou em outros computadores. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]já deve estar instalado no computador de destino.  
@@ -101,7 +102,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
   
 5.  Adicionar **CreateMsiSetupProject.tt** ao seu projeto de Dsl.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]cria um arquivo chamado **CreateMsiSetupProject.vdproj**.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria um arquivo chamado **CreateMsiSetupProject.vdproj**.  
   
 6.  No Windows Explorer, copie Dsl\\*.vdproj para uma nova pasta denominada programa de instalação.  
   

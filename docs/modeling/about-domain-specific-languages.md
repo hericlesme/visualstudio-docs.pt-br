@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
+helpviewer_keywords:
+- Domain-Specific Language
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98b65fbb732b6736c91c605f03b7f2de2325487
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 
@@ -53,7 +55,7 @@ Você também pode definir os comandos de menu e outras ferramentas que ajudam o
   
 Normalmente, uma linguagem específica de domínio é criada quando uma equipe de desenvolvimento precisa gravar um código semelhante para vários produtos. Por exemplo, uma empresa especializada em bagagem tratamento sistemas pode definir uma DSL de acompanhar bagagem do qual podem gerar alguns dos códigos de cada instalação. Os benefícios de DSL é que ele pode ser compreendido por seus clientes, que o código gerado dele é confiável e que o sistema pode ser atualizado rapidamente se alterarem às necessidades dos clientes.  
   
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]permite criar uma linguagem específica de domínio que tem seu próprio designer gráfico e a notação de seu próprio diagrama e, em seguida, usar a linguagem para gerar código-fonte apropriado para cada projeto.  
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] permite criar uma linguagem específica de domínio que tem seu próprio designer gráfico e a notação de seu próprio diagrama e, em seguida, usar a linguagem para gerar código-fonte apropriado para cada projeto.  
   
 ## <a name="domain-specific-development"></a>Desenvolvimento de domínio específico
 

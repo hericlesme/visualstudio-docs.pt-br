@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 09/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de8564aa1743ed22ff4a600d9bf655bbb4adaed4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: b7816e11c431f17336955f2037d288641b6c3ad5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Gerando arquivos com o utilitário TextTransform
 TextTransform.exe é uma ferramenta de linha de comando que você pode usar para transformar um modelo de texto. Ao chamar TextTransform.exe, você especifica o nome de um arquivo de modelo de texto como um argumento. TextTransform.exe chama o mecanismo de transformação de texto e processa o modelo de texto. TextTransform.exe geralmente é chamado de scripts. No entanto, não é geralmente necessário, porque você pode executar a transformação de texto no Visual Studio ou no processo de compilação.  
@@ -55,13 +56,13 @@ TextTransform [<options>] <templateName>
   
 |**Opção**|**Descrição**|  
 |----------------|---------------------|  
-|**-out** \<filename >|O arquivo para o qual a saída da transformação é gravada.|  
-|**-r** \<assembly >|Um assembly usado para compilar e executar o modelo de texto.|  
-|**-u** \<namespace >|Um namespace que é usado para compilar o modelo.|  
+|**-out** \<filename>|O arquivo para o qual a saída da transformação é gravada.|  
+|**-r** \<assembly>|Um assembly usado para compilar e executar o modelo de texto.|  
+|**-u** \<namespace>|Um namespace que é usado para compilar o modelo.|  
 |**-I** \<includedirectory >|Um diretório que contém os modelos de texto incluídos no modelo de texto especificado.|  
 |**-P** \<referencepath >|Um diretório para procurar por assemblies especificados no modelo de texto ou usando o **- r** opção.<br /><br /> Por exemplo, para incluir os assemblies usados para a API do Visual Studio, use<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|  
-|**-dp** \<processorName >!\< className >! \<assemblyName &#124; codeBase >|O nome, o nome completo do tipo e o assembly de um processador de diretiva que pode ser usado para processar diretivas personalizadas dentro do modelo de texto.|  
-|**-um** [processorName]! [ directiveName]! \<parameterName >! \<parameterValue >|Especifique um valor de parâmetro para um processador de diretiva. Se você especificar apenas o nome do parâmetro e valor, o parâmetro estará disponível para todos os processadores de diretiva. Se você especificar um processador de diretiva, o parâmetro está disponível somente para o processador especificado. Se você especificar um nome de diretiva, o parâmetro está disponível apenas quando a diretiva especificada está sendo processada.<br /><br /> Para acessar os valores de parâmetro de um processador de diretiva ou o modelo de texto, use <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. Em um modelo de texto incluem `hostspecific` na diretiva de modelo e invocar a mensagem em `this.Host`. Por exemplo:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Sempre digite o '!' marca, mesmo se você omitir os nomes de diretiva e de processador opcional. Por exemplo:<br /><br /> `-a !!param!value`|  
+|**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|O nome, o nome completo do tipo e o assembly de um processador de diretiva que pode ser usado para processar diretivas personalizadas dentro do modelo de texto.|  
+|**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|Especifique um valor de parâmetro para um processador de diretiva. Se você especificar apenas o nome do parâmetro e valor, o parâmetro estará disponível para todos os processadores de diretiva. Se você especificar um processador de diretiva, o parâmetro está disponível somente para o processador especificado. Se você especificar um nome de diretiva, o parâmetro está disponível apenas quando a diretiva especificada está sendo processada.<br /><br /> Para acessar os valores de parâmetro de um processador de diretiva ou o modelo de texto, use <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. Em um modelo de texto incluem `hostspecific` na diretiva de modelo e invocar a mensagem em `this.Host`. Por exemplo:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Sempre digite o '!' marca, mesmo se você omitir os nomes de diretiva e de processador opcional. Por exemplo:<br /><br /> `-a !!param!value`|  
 |**-h**|Fornece ajuda.|  
   
 ## <a name="related-topics"></a>Tópicos relacionados  

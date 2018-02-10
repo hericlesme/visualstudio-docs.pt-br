@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurando um modelo de texto T4
 Você pode definir pontos de interrupção em modelos de texto. Para depurar um modelo de texto de tempo de design, salve o arquivo de modelo de texto e, em seguida, escolha **depurar T4 modelo** no menu de atalho do arquivo no Gerenciador de soluções. Para depurar um modelo de texto de tempo de execução, simplesmente depure o aplicativo ao qual ele pertence.  
@@ -46,7 +47,7 @@ Você pode definir pontos de interrupção em modelos de texto. Para depurar um 
 |O caminho '{0}' deve ser local neste computador ou parte de uma zona confiável.|Ocorre quando uma diretiva ou diretiva de assembly faz referência a um arquivo não está no seu computador local ou na zona de confiança da sua rede.|Certifique-se de que o diretório onde estão localizadas a diretiva ou diretivas de assembly está na zona confiável. Você pode adicionar um diretório de rede à zona confiável pelo Internet Explorer.|  
 |Vários erros de sintaxe, como "Inválido token ' catch'" ou "um namespace não pode conter diretamente membros"|Há muitas chaves de fechamento no seu código de modelo. O compilador é confuso com o código de geração de padrão.|Verifique o número de fechamento de chaves e colchetes dentro de delimitadores de código.|  
 |Loops condicionais não compilado ou executado corretamente. Por exemplo: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Este código sempre produz o valor de i. Somente "número é:" é condicional.|No c#, sempre use chaves ao redor de blocos de texto que são inseridos em instruções de controle.|Adicionar chaves: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|"Expressão muito complexa" ao processar um modelo de tempo de design ou compilando um modelo (pré-processados) de tempo de execução.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]parar de funcionar durante a tentativa de inspecionar o código gerado por um modelo de tempo de execução.|Bloco de texto é muito longo. T4 converte os blocos de texto em uma expressão de concatenação de cadeia de caracteres, com uma cadeia de caracteres literal para cada linha do modelo. Blocos de texto muito longas podem overstep limites de tamanho do compilador.|Divida o bloco de texto longo com um bloco da expressão, como:<br /><br /> `<#= "" #>`|  
+|"Expressão muito complexa" ao processar um modelo de tempo de design ou compilando um modelo (pré-processados) de tempo de execução.<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] parar de funcionar durante a tentativa de inspecionar o código gerado por um modelo de tempo de execução.|Bloco de texto é muito longo. T4 converte os blocos de texto em uma expressão de concatenação de cadeia de caracteres, com uma cadeia de caracteres literal para cada linha do modelo. Blocos de texto muito longas podem overstep limites de tamanho do compilador.|Divida o bloco de texto longo com um bloco da expressão, como:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Correções e descrições de aviso  
  A tabela a seguir lista os avisos mais comuns com correções, se disponível.  

@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords: Domain-Specific Language, element merge directives
+f1_keywords:
+- vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords:
+- Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0310821ab2968f0709b002166d188a4ebc4c2ff4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 Você pode permitir que um elemento ser arrastado para outra, da caixa de ferramentas ou em uma operação de colar ou mover a operação. Você pode fazer com que os elementos movidos vinculados para os elementos de destino, usando as relações que você especificar.  
@@ -37,7 +40,7 @@ Você pode permitir que um elemento ser arrastado para outra, da caixa de ferram
   
  A responsabilidade de um EMD é decidir como um objeto ou grupo de objetos deve ser mesclado em um local específico no modelo. Em particular, ele decide quais relações devem ser inicializadas para vincular o grupo mesclado no modelo. Você também pode personalizá-lo para definir propriedades e criar objetos adicionais.  
   
- ![DSL &#45; EMD &#95; Mesclar](../modeling/media/dsl-emd_merge.png "EMD_Merge DSL")  
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
 A função de uma diretiva de mesclagem do elemento  
   
  Um EMD é gerado automaticamente quando você define um relacionamento de incorporação. Esse padrão EMD cria uma instância da relação, quando os usuários adicionam novas instâncias filho para o pai. Você pode modificar essas EMDs padrão, por exemplo, adicionando o código personalizado.  
@@ -47,7 +50,7 @@ A função de uma diretiva de mesclagem do elemento
 ## <a name="defining-an-element-merge-directive"></a>Definindo uma diretiva de mesclagem do elemento  
  Você pode adicionar as diretivas de mesclagem do elemento para classes de domínio, relações de domínio, formas, conectores e diagramas. Você pode adicionar ou encontrá-los no Pesquisador de objetos de DSL na classe de domínio de recebimento. A classe de recebimento é a classe de domínio do elemento que já está no modelo e, em que o elemento novo ou copiado será mesclado.  
   
- ![DSL &#45; EMD &#95; detalhes](../modeling/media/dsl-emd_details.png "EMD_Details DSL")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  O **classe indexação** é a classe de domínio de elementos que podem ser mescladas em membros da classe de recebimento. Instâncias de subclasses da classe indexação também serão mescladas por este EMD, a menos que você defina **aplica-se à subclasses** como False.  
   

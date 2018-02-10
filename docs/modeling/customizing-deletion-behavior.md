@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.deletebehavior
-helpviewer_keywords: Domain-Specific Language, deletion
+f1_keywords:
+- vs.dsltools.dsldesigner.deletebehavior
+helpviewer_keywords:
+- Domain-Specific Language, deletion
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizando o comportamento da operação de excluir
 A exclusão de um elemento geralmente provoca também a exclusão de seus elementos relacionados. Todas as relações conectadas a ele e quaisquer elementos filhos são excluídos. Esse comportamento é denominado *excluir propagação*. Você pode personalizar a propagação da exclusão, por exemplo, para providenciar que os elementos adicionais relacionados sejam excluídos. Ao escrever o código do programa, você pode fazer com que a propagação de exclusão dependa do estado do modelo. Também é possível causar outras alterações em resposta a uma exclusão.  
@@ -285,7 +288,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a>Desfazer a mesclagem  
+##  <a name="unmerge"></a> UnMerge  
  A operação que é anexado a um elemento filho para seu pai é chamada *mesclagem*. Ela ocorre quando um novo elemento ou grupo de elementos é criado a partir da caixa de ferramentas, ou transferida de outra parte do modelo, ou copiada da área de transferência. Além de criar uma relação de incorporação entre o pai e seu novo filho, a operação de mesclagem também pode definir relações adicionais, criar elementos auxiliares e definir valores de propriedades nos elementos. A operação de mesclagem é encapsulada em uma EMD (Diretiva de Mesclagem de Elementos).  
   
  Um EMD também encapsula o complementar *desfazer* ou `MergeDisconnect` operação. Se você tiver um conjunto de elementos que foi construído usando uma mesclagem, é recomendável usar a operação desfazer mesclagem associada para remover um elemento dele se quiser deixar os elementos restantes em um estado consistente. A operação desfazer mesclagem normalmente usa as técnicas descritas nas seções anteriores.  

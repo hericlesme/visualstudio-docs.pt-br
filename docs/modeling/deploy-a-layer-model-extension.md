@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, deploying extensions
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 060cf2551f6c79259c7094d52f35db92f9ebcfef
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 311add860016c914aab232ffad6e3a4efadb15c9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 Outros usuários do Visual Studio podem instalar camada modelagem extensões que você cria usando o Visual Studio.  
@@ -42,7 +43,7 @@ Outros usuários do Visual Studio podem instalar camada modelagem extensões que
 2.  Clique no nome da extensão e, em seguida, clique em **desinstalação**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalando uma extensão em um servidor de compilação do Team Foundation  
- [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]servidores normalmente não tenha instalado o Visual Studio, e portanto não é possível instalar o VSIX clicando duas vezes nele. A instalação do [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] inclui alguns componentes que permitem que uma extensão do VSIX ser executado, mas você deve instalar a extensão manualmente.  
+ [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] servidores normalmente não tenha instalado o Visual Studio, e portanto não é possível instalar o VSIX clicando duas vezes nele. A instalação do [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] inclui alguns componentes que permitem que uma extensão do VSIX ser executado, mas você deve instalar a extensão manualmente.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Para instalar a extensão de camada em um [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] Server  
   
@@ -56,11 +57,11 @@ Outros usuários do Visual Studio podem instalar camada modelagem extensões que
   
     -   Para instalar somente para o serviço de rede que executa [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]:  
   
-         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\\Extensions\Microsoft [versão]  
+         %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
     -   Se você tiver configurado [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] para executar no modo interativo, como um usuário específico, você pode instalar apenas para o usuário:  
   
-         %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [versão]  
+         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData % normalmente é *DriveName*: usuários*UserName*AppDataLocal.  

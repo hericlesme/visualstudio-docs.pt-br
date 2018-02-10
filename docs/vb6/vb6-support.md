@@ -1,21 +1,23 @@
 ---
 title: "Política de suporte para o Visual Basic 6.0 | Microsoft Docs"
 ms.date: 08/28/2017
-ms.technology: devlang-visual-basic
+ms.technology: devlang-vb
 ms.topic: article
-dev_langs: VB
+dev_langs:
+- VB
 helpviewer_keywords:
 - VB6 support
 - Visual Basic 6.0 support
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: paulyuk
 ms.author: paulyuk
-ms.workload: paulyuk
-ms.openlocfilehash: a8977aad735a115089685ed0032b3d358d8b89c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- paulyuk
+ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Política de suporte para o Visual Basic 6.0 no Windows
 
@@ -177,67 +179,67 @@ Se você encontrar um problema com o aplicativo do Visual Basic 6.0 em execuçã
 
 | | | | |
 |---|---|---|---|
-|ATL.dll|         msadcor.dll|     msorcl32. dll|   OLE2. dll|
-|Asycfilt|    Msadcs|      Msvbvm60|   Ole32|
-|Comcat|      MSADDS|      Msvcirt|    Oleaut32.dll|
-|COMPOBJ. dll|     msaddsr.dll|     Msvcrt|     Oleaut32.dll|
-|DBNMPNTW.dll|    msader15.dll|    Msvcrt40.|   Oledb32|
-|dcomcnfg.exe|    Msado15.dll|     Mtxdm|      oledb32r.dll|
-|Dllhost.exe|     Msador15|    Mtxoci. dll|     oledlg.dll|
-|Ds16gt.dll|      msadrh15.dll|    Odbc16gt.dll|   OLEPRO32|
-|ds32gt.dll|      mscpxl32.dll|    Odbc32.dll|     olethk32.dll|
-|expsrv.dll|      msdadc.dll|      Odbc32gt.dll|   Regsvr32.exe|
-|hh.exe|          msdaenum.dll|    Odbcad32.exe|   rpcns4.dll|
-|Hhctrl|      msdaer.dll|      ODBCCP32.cpl|   Rpcrt4.dll|
-|Imagehlp.dll|    MSDAORA.dll|     ODBCCP32. dll|   Scrrun|
-|iprop.dll|       msdaosp.dll|     odbccr32.dll|   Secur32.dll|
-|itircl|      Msdaprst. dll|    odbccu32.dll|   simpdata.tlb|
-|ITSS|        MSDAPS.dll|      odbcint.dll|    SQLOLEDB|
-|Mfc40|       Msdasc|      odbcji32.dll|   Sqlsrv32.dll|
-|Mfc42|       MSDASQL|     odbcjt32.dll|   Stdole2|
-|mfc42enu.dll|    msdasqlr.dll|    Odbctrac|   stdole32.tlb|
-|Msadce. dll|      msdatsrc.tlb|    oddbse32.dll|   Storage.dll|
-|msadcer.dll|     msdatt.dll|      odexl32.dll|    VBAJET32|
-|msadcf.dll|      msdfmap.dll|     odfox32.dll|    vfpodbc|
+|atl.dll|         msadcor.dll|     msorcl32.dll|   ole2.dll|
+|asycfilt.dll|    msadcs.dll|      msvbvm60.dll|   ole32.dll|
+|comcat.dll|      msadds.dll|      msvcirt.dll|    oleaut32.dll|
+|compobj.dll|     msaddsr.dll|     msvcrt.dll|     oleaut32.dll|
+|dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   oledb32.dll|
+|dcomcnfg.exe|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
+|dllhost.exe|     msador15.dll|    mtxoci.dll|     oledlg.dll|
+|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
+|ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
+|expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
+|hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
+|hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
+|imagehlp.dll|    msdaora.dll|     odbccp32.dll|   scrrun.dll|
+|iprop.dll|       msdaosp.dll|     odbccr32.dll|   secur32.dll|
+|itircl.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
+|itss.dll|        msdaps.dll|      odbcint.dll|    sqloledb.dll|
+|mfc40.dll|       msdasc.dll|      odbcji32.dll|   sqlsrv32.dll|
+|mfc42.dll|       msdasql.dll|     odbcjt32.dll|   stdole2.tlb|
+|mfc42enu.dll|    msdasqlr.dll|    odbctrac.dll|   stdole32.tlb|
+|msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   storage.dll|
+|msadcer.dll|     msdatt.dll|      odexl32.dll|    vbajet32.dll|
+|msadcf.dll|      msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
 |msadcfr.dll|     msdfmap.ini|     odpdx32.dll|                |
-|Msadco. dll|      msjtes40.dll|    odtext32.dll|               |
+|msadco.dll|      msjtes40.dll|    odtext32.dll|               |
 
 ## <a name="supported-runtime-files-to-distribute-with-your-application"></a>Arquivos de tempo de execução com suporte para distribuir com seu aplicativo
 
 | | | | |
 |---|---|---|---|
-|comct232.ocx |msbind.dll   |msdbrptr.dll  |MSstdfmt| 
-|comct332.ocx |mscdrun.dll  |Msflxgrd  |msstkprp.dll| 
-|Comctl32 |Mschrt20 |mshflxgd.ocx  |mswcrun.dll|  
-|Comdlg32 |Mscomct2 |mshtmpgr.dll  |Mswinsck. ocx| 
-|dbadapt.dll  |Mscomctl |MSINET.ocx    |picclp32.ocx| 
-|dbgrid32. ocx |mscomm32.ocx |Msmapi32.ocx  |Richtx32. ocx| 
-|dblist32.ocx |msdatgrd.ocx |Msmask32  |sysinfo.ocx|  
-|mci32.ocx    |msdatlst.ocx |msrdc20.ocx   |tabctl32. ocx| 
-|msadodc.ocx  |msdatrep.ocx |MSRDO20. dll
+|comct232.ocx |msbind.dll   |msdbrptr.dll  |msstdfmt.dll| 
+|comct332.ocx |mscdrun.dll  |msflxgrd.ocx  |msstkprp.dll| 
+|comctl32.ocx |mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
+|comdlg32.ocx |mscomct2.ocx |mshtmpgr.dll  |mswinsck.ocx| 
+|dbadapt.dll  |mscomctl.ocx |msinet.ocx    |picclp32.ocx| 
+|dbgrid32.ocx |mscomm32.ocx |msmapi32.ocx  |richtx32.ocx| 
+|dblist32.ocx |msdatgrd.ocx |msmask32.ocx  |sysinfo.ocx|  
+|mci32.ocx    |msdatlst.ocx |msrdc20.ocx   |tabctl32.ocx| 
+|msadodc.ocx  |msdatrep.ocx |msrdo20.dll
 
 ## <a name="unsupported-but-supported-and-compatible-updates-or-upgrades-are-available"></a>Sem suporte, mas com suporte e compatível com atualizações disponíveis
 
 | | | | |
 |---|---|---|---|
-|Dao350|   Msexch35. dll| msjter35.dll| Msrepl35. dll|
-|Mdac_typ.exe| MSEXCL35.dll| msjtor35.dll| Mstext35|
-|MSChart.ocx|  msjet35|  msltus35.dll| Msxbse35|
-|msdaerr.dll|  msjint35.dll| Mspdox35| odbctl32.dll|
-|msdatl2.dll|  MSjt4jlt| msrd2x35.dll| oledb32x.dll|
+|dao350.dll|   msexch35.dll| msjter35.dll| msrepl35.dll|
+|mdac_typ.exe| msexcl35.dll| msjtor35.dll| mstext35.dll|
+|mschart.ocx|  msjet35.dll|  msltus35.dll| msxbse35.dll|
+|msdaerr.dll|  msjint35.dll| mspdox35.dll| odbctl32.dll|
+|msdatl2.dll|  msjt4jlt.dll| msrd2x35.dll| oledb32x.dll|
 
 ## <a name="unsupported-runtime-files"></a>Arquivos de tempo de execução sem suporte
 
 | | | | |
 |---|---|---|---|
-|anibtn32.ocx| spin32.ocx|   rpcltscm.dll|  RDOCURS.dll|
-|graph32.ocx|  gauge32.ocx|  rpcmqcl.dll|   Vbar332. dll|
+|anibtn32.ocx| spin32.ocx|   rpcltscm.dll|  rdocurs.dll|
+|graph32.ocx|  gauge32.ocx|  rpcmqcl.dll|   vbar332.dll|
 |keysta32.ocx| gswdll32.dll| rpcmqsvr.dll|  visdata.exe|
-|autmgr32.exe| ciscnfg.exe|  Rpcss.exe|     vsdbflex.srg|
-|autprx32.dll| Olecnv32| dbmsshrn.dll|  threed32.ocx|
-|racmgr32.exe| rpcltc1.dll|  Dbmssocn. dll|  MSWLess.ocx|
-|racreg32.dll| rpcltc5.dll|  windbver.exe|  tblinf32|
-|grid32.ocx|   rpcltccm.dll| msderun.dll|   TriEdit|
+|autmgr32.exe| ciscnfg.exe|  rpcss.exe|     vsdbflex.srg|
+|autprx32.dll| olecnv32.dll| dbmsshrn.dll|  threed32.ocx|
+|racmgr32.exe| rpcltc1.dll|  dbmssocn.dll|  MSWLess.ocx|
+|racreg32.dll| rpcltc5.dll|  windbver.exe|  tlbinf32.dll|
+|grid32.ocx|   rpcltccm.dll| msderun.dll|   triedit.dll|
 |msoutl32.ocx| rpclts5.dll|  odkob32.dll|
 
 ## <a name="localization-support-binaries"></a>Binários de suporte de localização

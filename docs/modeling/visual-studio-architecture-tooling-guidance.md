@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d45bc500004c0014e2d2d27a427198eef888ecaa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: d2642741ef8d00e194f4fbd7f028aa8a29f24a43
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Orientação de ferramentas de arquitetura do Visual Studio
 Este guia de ferramentas de arquitetura é um pacote pode ser baixado de orientação prática sobre o uso das ferramentas de modelagem no Visual Studio 2010. Ele apresenta uma visão geral de como usar as ferramentas de modelagem de maneira integrada e aborda os cenários mais comuns em que as ferramentas são usadas.  

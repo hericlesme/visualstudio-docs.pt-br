@@ -4,22 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.workload: multiple
-ms.openlocfilehash: af3df828a2abc441ce2efb3998b10fb1991e3127
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
-ms.translationtype: HT
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Adicionar comandos e gestos a diagramas de dependência
 Você pode definir os comandos de menu de contexto e gestos manipuladores em diagramas de dependência no Visual Studio. Você pode empacotar essas extensões em um Visual Studio Integration extensão (VSIX) que você pode distribuir para outros usuários do Visual Studio.  
@@ -93,8 +92,8 @@ Você pode definir os comandos de menu de contexto e gestos manipuladores em dia
 |Microsoft.VisualStudio.Uml.Interfaces|Criar e editar camadas|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Modificar formas em diagramas|  
 |System.ComponentModel.Composition|Definir componentes usando Managed Extensibility Framework (MEF)|  
-|Microsoft.VisualStudio.Modeling.Sdk. [versão]|Definir as extensões de modelagem|  
-|Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [versão]|Atualizar formas e diagramas|  
+|Microsoft.VisualStudio.Modeling.Sdk.[version]|Definir as extensões de modelagem|  
+|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Atualizar formas e diagramas|  
   
 1.  Edite o arquivo de classe na classe biblioteca projeto c# para conter o código para a sua extensão. Para obter mais informações, consulte uma das seções a seguir:  
   

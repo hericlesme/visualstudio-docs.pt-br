@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-csharp
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-caps.latest.revision: "46"
+caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 1153d35c022f4734488e71c38f4dbc34418610f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0465057549543d8e07742e3b3806ebdcab28eb28
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Você pode criar comandos de menu derivando de <xref:System.ComponentModel.Design.MenuCommand> ou <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto e impementling os manipuladores de eventos apropriado. Na maioria dos casos, você pode usar <xref:System.ComponentModel.Design.MenuCommand>, conforme o VSPackage do modelo de projeto, mas, ocasionalmente, você talvez precise usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  

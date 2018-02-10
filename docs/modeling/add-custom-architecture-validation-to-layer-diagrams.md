@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: dependency diagrams, adding custom validation
+helpviewer_keywords:
+- dependency diagrams, adding custom validation
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Adicionar validação de arquitetura personalizada a diagramas de dependência
 No Visual Studio, os usuários podem validar o código-fonte em um projeto em um modelo de camada para que ele podem verificar se o código-fonte está em conformidade com as dependências em um diagrama de dependência. Há um algoritmo de validação padrão, mas você pode definir suas próprias extensões de validação.  
@@ -78,7 +80,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
     2.  No **adicionar novo ativo** caixa de diálogo, defina:  
   
-         **Tipo** = **Microsoft.VisualStudio.MefComponent**  
+         **Type** = **Microsoft.VisualStudio.MefComponent**  
   
          **Origem** = **um projeto na solução atual**  
   
@@ -90,7 +92,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
     2.  No **adicionar novo ativo** caixa de diálogo, defina:  
   
-         **Tipo** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Isso não é uma das opções na lista suspensa. Você deve inseri-lo do teclado.  
+         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Isso não é uma das opções na lista suspensa. Você deve inseri-lo do teclado.  
   
          **Origem** = **um projeto na solução atual**  
   
@@ -105,7 +107,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Ler o modelo de camada|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Ler e atualizar formas e diagramas.|  
     |System.ComponentModel.Composition|Definir o componente de validação usando Managed Extensibility Framework (MEF)|  
-    |Microsoft.VisualStudio.Modeling.Sdk. [versão]|Definir as extensões de modelagem|  
+    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definir as extensões de modelagem|  
   
 6.  Copie o código de exemplo no final deste tópico para o arquivo de classe no projeto de biblioteca de validador para conter o código para a validação. Para obter mais informações, consulte [programação validação](#programming).  
   

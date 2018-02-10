@@ -4,19 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-devops-techdebt
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-modeling
 ms.topic: get-started-article
-helpviewer_keywords: UML, using models
+helpviewer_keywords:
+- UML, using models
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 42c873fc8c7991d5397d611c0aa6009bfc1720c1
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.openlocfilehash: 7b5ce42d3856a4caf73413bf49894a78502e55e2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar um sistema, aplicativo ou componente. Um modelo pode ajudá-lo a visualizar o mundo em que o sistema funciona, esclarecer necessidades dos usuários, definir a arquitetura do seu sistema, analisar o código e certifique-se de que seu código atende aos requisitos. Consulte [vídeo do Channel 9: arquitetura por meio da modelagem de melhorar](http://go.microsoft.com/fwlink/?LinkID=252078).  

@@ -4,9 +4,9 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.codemapanalyzers
+f1_keywords:
+- vs.progression.codemapanalyzers
 helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
@@ -14,12 +14,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45d2a0a026afd0ed7fcdda965fc726543223533f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: bcbfdedaf0c60ffcd293d69cfb4da67a5e89d6fb
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Encontrar possíveis problemas usando analisadores de mapa de códigos
 Execute analisadores em mapas de código para ajudá-lo a identificar o código que pode ser excessivamente complexas ou que pode ser aperfeiçoado. Por exemplo, você pode usar esses analisadores:  

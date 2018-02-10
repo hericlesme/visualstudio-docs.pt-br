@@ -1,5 +1,5 @@
 ---
-title: "Suprimindo avisos da análise de código usando o atributo SuppressMessage no Visual Studio | Microsoft Docs"
+title: "Suprimir avisos da análise de código no Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 01/29/2018
 ms.reviewer: 
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd3800e082673e9478eb32c6ae5627eef4d7e81
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="suppressing-code-analysis-warnings"></a>Suprimindo avisos da análise de código
 
@@ -34,6 +34,9 @@ Em C + + CLI, use as macros da autoridade de certificação\_SUPRIMIR\_mensagem 
 
 > [!NOTE]
 > Você não deve usar as supressões do código-fonte em compilações de versão, para impedir que os metadados de supressão na origem de envio acidentalmente. Além disso, devido ao custo de processamento de supressão de código-fonte, o desempenho do seu aplicativo pode ser degradado.
+
+> [!NOTE]
+> Se você migrar um projeto para Visual Studio de 2017, você pode encontrar repentinamente com um número excessivo de avisos da análise de código. Se você não estiver pronto para corrigir os avisos e deseja desativar temporariamente a análise de código, abra as páginas de propriedades do projeto (**projeto** > ***projeto* propriedades...** ) e vá para o **análise de código** guia. Desmarque **habilitar análise de código no Build**e, em seguida, recrie seu projeto. Como alternativa, você pode selecionar uma regra diferente, menor definida para ser executado com o código. Lembre-se de ativar a análise de código em quando estiver pronto para corrigir os avisos.
 
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage
 
@@ -95,7 +98,7 @@ Por motivos de manutenção, não é recomendável omitir o nome da regra.
 
 Atributos de supressão podem ser aplicados a um método, mas não podem ser inseridos em um corpo de método. Isso significa que todas as violações de uma determinada regra são suprimidas, se você adicionar o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo ao método.
 
-Em alguns casos, você talvez queira suprimir uma instância específica de violação, por exemplo, para que o código futuro não é automaticamente isento da regra de análise de código. Certas regras de análise de código permitem que você faça isso usando o `MessageId` propriedade o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo. Em geral, herdado regras para violações de uma relação de símbolo específico (uma variável local ou parâmetro) de `MessageId` propriedade. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) é um exemplo de tal uma regra. No entanto, as regras herdadas de violações de código executável (não símbolo) não respeitam o `MessageId` propriedade. Além disso, os analisadores de Roslyn não respeitam o `MessageId` propriedade.
+Em alguns casos, você talvez queira suprimir uma instância específica de violação, por exemplo, para que o código futuro não é automaticamente isento da regra de análise de código. Certas regras de análise de código permitem que você faça isso usando o `MessageId` propriedade o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo. Em geral, herdado regras para violações de uma relação de símbolo específico (uma variável local ou parâmetro) de `MessageId` propriedade. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) é um exemplo de tal uma regra. No entanto, as regras herdadas de violações de código executável (não símbolo) não respeitam o `MessageId` propriedade. Além disso, os analisadores de plataforma de compilador .NET ("Roslyn") não respeitam o `MessageId` propriedade.
 
 Para suprimir uma violação de símbolo específico de uma regra, especifique o nome do símbolo para o `MessageId` propriedade o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo. O exemplo a seguir mostra o código com dois violações de [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;um para o `name` variável e uma para o `age` variável. Somente a violação para o `age` símbolo será suprimido.
 

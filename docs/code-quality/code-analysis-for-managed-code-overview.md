@@ -7,19 +7,21 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.projectpropertypages.codeanalysis
+f1_keywords:
+- vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
 - code analysis, managed code
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 8739c5aafbc8914e3de5f0a51659b40234fa079c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Análise de código para visão geral de código gerenciado
 
@@ -39,11 +41,11 @@ Para executar a análise de código manualmente em um projeto, na barra de menus
 
 Regras de análise de código para código gerenciado são agrupadas em *conjuntos de regras*. Você pode usar um dos conjuntos de regra padrão Microsoft, ou você pode criar uma regra personalizada definida para atender uma necessidade específica. Para obter mais informações, consulte [usando conjuntos de regras para agrupar regras de análise de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
 
-## <a name="in-source-suppression"></a>Na supressão da fonte
+## <a name="suppress-warnings"></a>Suprimir avisos
 
 Normalmente, é útil indicar que um aviso é não aplicável. Isso informará o desenvolvedor e outras pessoas que podem analisar o código mais tarde, que um aviso foi investigado e suprimido ou ignorado.
 
-Na fonte de supressão de avisos é implementada por meio de atributos personalizados. Para suprimir um aviso, adicione o atributo `SuppressMessage` para o código-fonte conforme mostrado no exemplo a seguir:
+A supressão de avisos na origem é implementada por meio de atributos personalizados. Para suprimir um aviso, adicione o atributo `SuppressMessage` para o código-fonte conforme mostrado no exemplo a seguir:
 
 ```csharp
 [System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
@@ -53,7 +55,10 @@ Public class MyClass
 }
 ```
 
-Para obter mais informações, consulte [suprimir avisos usando o atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).
+Para obter mais informações, consulte [suprimir avisos](../code-quality/in-source-suppression-overview.md).
+
+> [!NOTE]
+> Se você migrar um projeto para Visual Studio de 2017, você pode encontrar repentinamente com um número excessivo de avisos da análise de código. Se você não estiver pronto para corrigir os avisos e deseja desativar temporariamente a análise de código, abra as páginas de propriedades do projeto (**projeto** > ***projeto* propriedades...** ) e vá para o **análise de código** guia. Desmarque **habilitar análise de código no Build**e, em seguida, recrie seu projeto. Como alternativa, você pode selecionar uma regra diferente, menor definida para ser executado com o código. Lembre-se de ativar a análise de código em quando estiver pronto para corrigir os avisos.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Executar análise de código como parte da política de check-in
 
