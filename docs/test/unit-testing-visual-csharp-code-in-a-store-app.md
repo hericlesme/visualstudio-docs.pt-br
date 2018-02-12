@@ -9,58 +9,34 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: dc9a2ac6d7267cd94902b7bbf950b49e0d71f815
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0e0af23cca96238a0ea7bbcde11ac4507e55a9bc
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Testes de unidade de código do Visual C# em um aplicativo UWP
-Este tópico descreve uma maneira de criar testes de unidade para uma classe do Visual C# em um aplicativo UWP. A classe Rooter demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. O aplicativo de matemática pode usar essa função para mostrar a um usuário as coisas divertidas que podem ser feitas com a matemática.  
-  
- Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.  
-  
- Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a DLL.  
-  
-> [!NOTE]
->  O Visual Studio Community, Enterprise e Professional fornecem funcionalidades adicionais para teste de unidade.  
->   
->  -   Use um framework de teste de unidade de software livre e de terceiros que tenha criado um adaptador complementar para o gerenciador de testes da Microsoft. Também é possível analisar e exibir informações de cobertura de código para os testes.  
-> -   Execute os testes depois de cada compilação.  
-> -   O VS Enterprise também contém Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar os testes no seu próprio código substituindo o código de teste para funcionalidade do sistema e de terceiros.  
->   
->  Para obter mais informações, confira [Verificação do código usando testes de unidade](http://msdn.microsoft.com/library/dd264975.aspx) na biblioteca MSDN.  
-  
-##  <a name="BKMK_In_this_topic"></a> Neste tópico  
- [Criar a solução e o projeto de teste de unidade](#BKMK_Create_the_solution_and_the_unit_test_project)  
-  
- [Verificar se o testes são executados no Gerenciador de Testes](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Adição da classe Rooter ao projeto Matemática](#BKMK_Add_the_Rooter_class_to_the_Maths_project)  
-  
- [Como acoplar o projeto de teste ao projeto de aplicativo](#BKMK_Couple_the_test_project_to_the_app_project)  
-  
- [Multiplicar os testes iterativamente e fazê-los passar](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Depurar um teste que falhou](#BKMK_Debug_a_failing_test)  
-  
- [Como refatorar o código](#BKMK_Refactor_the_code_)  
-  
+
+Este tópico descreve uma maneira de criar testes de unidade para uma classe do Visual C# em um aplicativo UWP. A classe Rooter demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. O aplicativo de matemática pode usar essa função para mostrar a um usuário as coisas divertidas que podem ser feitas com a matemática.
+
+Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.
+
+Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a DLL.
+
 ##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade  
   
-1.  No menu **Arquivo**, escolha **Novo** e, em seguida, **Novo Projeto**.  
+1.  No menu **Arquivo**, escolha **Novo** > **Projeto...**.
   
-2.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Universal**. Escolha então **Aplicativo em Branco** na lista de modelos de projeto.  
+2.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** > **Visual C#** e escolha **Windows Universal**. Escolha então **Aplicativo em Branco** na lista de modelos de projeto.
   
 3.  Dê ao projeto o nome `Maths` e verifique se a opção **Criar diretório para a solução** está selecionada.  
   
 4.  No Gerenciador de Soluções, escolha o nome da solução, escolha **Adicionar** no menu de atalho e escolha **Novo Projeto**.  
   
-5.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Universal**. Em seguida, escolha **Biblioteca de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.  
-  
-     ![Crie o projeto de teste de unidade](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
+5.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Universal**. Em seguida, escolha **Aplicativo de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.
   
 6.  Abra UnitTest1.cs no editor do Visual Studio.  
   

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 067684c7b5064e096849afe69d2f0db1bcc75ea6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Trabalhar com o Python no Visual Studio (Windows)
 
@@ -32,7 +32,7 @@ O Visual Studio no Windows fornece suporte de [software livre](https://github.co
 Para começar:
 
 - Siga as [instruções de instalação](installing-python-support-in-visual-studio.md) para configurar a carga de trabalho do Python
-- Realize ou mais Guias de Início Rápido para criar um projeto. Se não souber por onde começar, experimente o [Criar um projeto com base em um modelo](quickstart-02-project-from-template.md).
+- Realize ou mais Guias de Início Rápido para criar um projeto. Se não souber por onde começar, experimente o [Criar um projeto com base em um modelo](quickstart-02-python-in-visual-studio-project-from-template.md).
 - Siga o tutorial [Trabalhando com o Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) para uma experiência completa de ponta a ponta.
 - Depois, use os links na tabela abaixo para explorar os recursos relacionados ao Python e as funcionalidades do próprio Visual Studio.
 
@@ -42,11 +42,11 @@ Para começar:
 | [Modelos de projeto](managing-python-projects-in-visual-studio.md#project-templates) | Cria rapidamente a estrutura do projeto para console, Web, Azure, ciência de dados e outros tipos de projetos | [Modelos do Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
 | Suporte a vários interpretadores | Dá suporte a várias versões do CPython e do IronPython. | N/D |
 | Suporte do IPython | Inclui suporte para o IPython/Jupyter no REPL para plotagens embutidas, .NET e WPF (Windows Presentation Foundation). | N/D |
-| [Edição avançada, IntelliSense e compreensão de código](code-editing.md) | Inclui coloração de sintaxe, preenchimento automático em todo o código e todas as bibliotecas, [formatação de código](code-formatting.md), ajuda da assinatura, modo de exibição de classe, comandos Ir Para Definição e Localizar Todas as Referências, trechos de código, [refatoração](code-refactoring.md), [PyLint](code-pylint.md) e muito mais. | [Escrevendo código no editor de códigos e de texto](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [Janela Interativa](interactive-repl.md) | Fornece uma experiência de REPL rápida para o Python com a capacidade de realçar com facilidade uma parte do código e enviá-lo para a Janela Interativa. | N/D |
-| [Depuração completa](debugging.md) | A depuração pode ser feita com ou sem um projeto do Visual Studio, incluindo a capacidade de depurar um executável existente, [depuração de modo misto do Python/C++](debugging-mixed-mode.md), [depuração remota](debugging-cross-platform-remote.md) para o Windows/Linux/Mac, [depuração remota para o Azure](debugging-azure-remote.md) e depuração na Janela Interativa. | [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md) |
-| [Ferramentas de criação de perfil com relatórios abrangentes](profiling.md) | Explora como o tempo é gasto no aplicativo, incluindo a capacidade de comparar o desempenho entre diferentes execuções de criação de perfil. | [Ferramentas de Criação de Perfil](../profiling/profiling-tools.md) (nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para o Python) |
-| [Ferramentas de teste de unidade](unit-testing.md) | Descubra, execute e gerencie testes no Gerenciador de Testes do Visual Studio e depure testes de unidade com facilidade. | [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md) |
+| [Edição avançada, IntelliSense e compreensão de código](editing-python-code-in-visual-studio.md) | Inclui coloração de sintaxe, preenchimento automático em todo o código e todas as bibliotecas, [formatação de código](formatting-python-code.md), ajuda da assinatura, modo de exibição de classe, comandos Ir Para Definição e Localizar Todas as Referências, trechos de código, [refatoração](refactoring-python-code.md), [PyLint](linting-python-code.md) e muito mais. | [Escrevendo código no editor de códigos e de texto](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Janela Interativa](python-interactive-repl-in-visual-studio.md) | Fornece uma experiência de REPL rápida para o Python com a capacidade de realçar com facilidade uma parte do código e enviá-lo para a Janela Interativa. | N/D |
+| [Depuração completa](debugging-python-in-visual-studio.md) | A depuração pode ser feita com ou sem um projeto do Visual Studio, incluindo a capacidade de depurar um executável existente, [depuração de modo misto do Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md), [depuração remota no Linux](debugging-python-code-on-remote-linux-machines.md) para o Windows/Linux/Mac, [depuração remota para o Azure](debugging-remote-python-code-on-azure.md) e depuração na Janela Interativa. | [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Ferramentas de criação de perfil com relatórios abrangentes](profiling-python-code-in-visual-studio.md) | Explora como o tempo é gasto no aplicativo, incluindo a capacidade de comparar o desempenho entre diferentes execuções de criação de perfil. | [Ferramentas de Criação de Perfil](../profiling/profiling-tools.md) (nem todos os recursos de criação de perfil do Visual Studio estão disponíveis para o Python) |
+| [Ferramentas de teste de unidade](unit-testing-python-in-visual-studio.md) | Descubra, execute e gerencie testes no Gerenciador de Testes do Visual Studio e depure testes de unidade com facilidade. | [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md) |
 
 A carga de trabalho do Python também inclui o [SDK do Azure para Python](azure-sdk-for-python.md), que simplifica o consumo de serviços do Azure de aplicativos Windows, Mac OS X e Linux.
 

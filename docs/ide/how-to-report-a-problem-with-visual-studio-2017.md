@@ -11,12 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.workload: multiple
-ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Como relatar um problema com o Visual Studio 2017
 Se tiver algum problema com o Visual Studio, gostaríamos de saber o que é. Veja a seguir como relatar o problema para que possamos diagnosticá-lo e corrigi-lo.  
@@ -24,8 +25,9 @@ Se tiver algum problema com o Visual Studio, gostaríamos de saber o que é. Vej
 ## <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 Se você ainda não fez isso, entre no Visual Studio antes de relatar um problema. Dessa forma, você pode relatar o problema e também votar ou fazer comentários sobre ele. Você também pode até mesmo votar ou comentar em qualquer outro problema postado.
 
-1.  Clique em **Entrar**. Essa opção está do lado direito da ferramenta, conforme mostrado na captura de tela a seguir.
-2.  Siga as instruções na tela para se conectar.
+1.  No Visual Studio, selecione **Ajuda** > **Enviar Comentários** > **Relatar um Problema**.
+2.  Se for necessário, selecione **Entrar**; essa opção está do lado direito da ferramenta, conforme mostrado na captura de tela a seguir.
+3.  Siga as instruções na tela para se conectar.
 
  ![Conectar para relatar um problema](../ide/media/sign-in-new-ux.png "Conectar para relatar um problema")  
 

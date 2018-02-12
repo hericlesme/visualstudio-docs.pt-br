@@ -1,33 +1,30 @@
 ---
 title: "Introdução ao R no Visual Studio | Microsoft Docs"
+description: "Um passo a passo de como usar R no Visual Studio, incluindo a criação de projetos, a janela interativa, edição e depuração de código."
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: cf8df86322e10054dee5dbcee95839506f690306
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Introdução às Ferramentas do R para Visual Studio
 
-Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Instalação](installation.md)), você poderá ter uma rápida ideia da experiência que essas ferramentas fornecem. As seções a seguir guiam você em um pequeno tour:
-
-- [Criar um projeto R](#create-an-r-project)
-- [Explorar a janela interativa e o IntelliSense](#explore-the-interactive-window-and-intellisense)
-- [Experimentar recursos de edição de código](#experience-code-editing-features)
-- [Depurando seu código](#debugging-your-code)
-- [Próximas etapas](#next-steps)
+Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Instalação](installing-r-tools-for-visual-studio.md)), você poderá ter uma rápida ideia da experiência que essas ferramentas fornecem. 
 
 ## <a name="create-an-r-project"></a>Criar um projeto R
 
@@ -39,7 +36,7 @@ Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Inst
 
 1. Quando o projeto for criado, você verá as seguintes janelas:
 
-    - À direita está o Gerenciador de Soluções do Visual Studio, em que você vê seu projeto contido dentro de uma *solução*. (As soluções podem conter qualquer número de projetos de diferentes tipos, consulte [Projetos](projects.md) para obter detalhes.
+    - À direita está o Gerenciador de Soluções do Visual Studio, em que você vê seu projeto contido dentro de uma *solução*. (As soluções podem conter qualquer número de projetos de diferentes tipos, consulte [Projetos](r-projects-in-visual-studio.md) para obter detalhes.
     - No canto superior esquerdo estará um novo arquivo R (`script.R`) em que você poderá editar o código-fonte com todos os recursos de edição do Visual Studio.
     - No canto inferior esquerdo estará a janela **R Interativo** na qual você pode desenvolver e testar o código de forma interativa.
 
@@ -74,13 +71,13 @@ Depois de instalar as RTVS (Ferramentas do R para Visual Studio) (consulte [Inst
 
     ![Exibição de um gráfico no Visual Studio](media/getting-started-07-plot-window.png)
 
-A janela interativa também permite que você examine seu histórico, carregue e salve espaços de trabalho, anexe a um depurador e interaja com os arquivos de código-fonte em vez de usar os recursos de copiar e colar. Consulte [Trabalhando com a janela do R Interativo](interactive-repl.md) para obter detalhes.
+A janela interativa também permite que você examine seu histórico, carregue e salve espaços de trabalho, anexe a um depurador e interaja com os arquivos de código-fonte em vez de usar os recursos de copiar e colar. Consulte [Trabalhando com a janela do R Interativo](interactive-repl-for-r-in-visual-studio.md) para obter detalhes.
 
 ## <a name="experience-code-editing-features"></a>Experimentar recursos de edição de código
 
 O rápido trabalho com a janela interativa demonstra recursos de edição básicos como o IntelliSense que também funcionam no editor de código. Se inserir o mesmo código que antes, você verá os mesmos prompts de preenchimento automático e do IntelliSense, mas não a saída.
 
-Escrever código em um arquivo `.R` permite que você veja todo o código de uma vez e torna mais fácil fazer pequenas alterações e, em seguida, ver o resultado rapidamente executando o código na janela interativa. Você também pode ter quantos arquivos desejar em um projeto. Quando o código está em um arquivo, você também pode executá-lo passo a passo no depurador (discutido posteriormente neste tópico). Esses recursos são muito úteis para desenvolver algoritmos computacionais e escrever código para manipular um ou mais conjuntos de dados, principalmente quando se deseja examinar todos os resultados intermediários.
+Escrever código em um arquivo `.R` permite que você veja todo o código de uma vez e torna mais fácil fazer pequenas alterações e, em seguida, ver o resultado rapidamente executando o código na janela interativa. Você também pode ter quantos arquivos desejar em um projeto. Quando o código está em um arquivo, você também pode executá-lo passo a passo no depurador (discutido posteriormente neste artigo). Esses recursos são muito úteis para desenvolver algoritmos computacionais e escrever código para manipular um ou mais conjuntos de dados, principalmente quando se deseja examinar todos os resultados intermediários.
 
 Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teorema central do limite](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipédia). [Este exemplo é adaptado do *Cookbook do R* (Guia do R) de Paul Teetor.]
 
@@ -109,7 +106,7 @@ Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teore
 
     ```R
     n <- 30
-    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))    
+    samp.means <- rnorm(N, mean = mu, sd = stddev / sqrt(n))
     lines(density(samp.means))
     ```
 
@@ -139,7 +136,7 @@ Por exemplo, as seguintes etapas criam um pequeno código para explorar o [Teore
 
     ![Gráfico dual atualizado no Visual Studio com a escala ajustada corretamente](media/getting-started-10-plot3.png)
 
-Há mais coisas que você pode fazer no editor. Para obter detalhes, consulte [editando código](code-editing.md), [IntelliSense](code-intellisense.md) e [trechos de código](code-snippets.md).
+Há mais coisas que você pode fazer no editor. Para obter detalhes, consulte [editando código](editing-r-code-in-visual-studio.md), [IntelliSense](r-intellisense.md) e [trechos de código](code-snippets-for-r.md).
 
 ## <a name="debugging-your-code"></a>Depurando seu código
 
@@ -169,14 +166,14 @@ Uma das principais vantagens do Visual Studio é sua interface do usuário de de
 
 1. Você pode continuar percorrendo o programa linha por linha ou selecionar **Continuar** (F5) para executá-lo até a conclusão (ou o até o próximo ponto de interrupção).
 
-Para aprofundar-se, consulte [Depuração](debugging.md) e [Gerenciador de Variáveis](variable-explorer.md).
+Para aprofundar-se, consulte [Depuração](debugging-r-in-visual-studio.md) e [Gerenciador de Variáveis](variable-explorer.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste passo a passo, você aprendeu as noções básicos de projetos R, usando a janela interativa, edição de código e depuração no Visual Studio. Para continuar a explorar mais recursos, consulte os tópicos a seguir, bem como os tópicos mostrados no índice:
+Neste passo a passo, você aprendeu as noções básicos de projetos R, usando a janela interativa, edição de código e depuração no Visual Studio. Para continuar a explorar mais recursos, veja os artigos a seguir, bem como os artigos mostrados no índice:
 
 - [Projetos de exemplo](getting-started-samples.md)
-- [Editando código](code-editing.md)
-- [Depuração](debugging.md)
-- [Espaços de trabalho](workspaces.md)
-- [Visualizando dados](visualizing-data.md)
+- [Editando código](editing-r-code-in-visual-studio.md)
+- [Depuração](debugging-r-in-visual-studio.md)
+- [Espaços de trabalho](r-workspaces-in-visual-studio.md)
+- [Visualizando dados](visualizing-data-with-r-in-visual-studio.md)

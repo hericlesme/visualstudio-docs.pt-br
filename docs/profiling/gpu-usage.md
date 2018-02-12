@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio para entender melhor a utilização de hardware de alto nível do aplicativo Direct3D. É possível usá-la para determinar se o desempenho do aplicativo está associado à CPU ou à GPU e obter informações sobre como você pode usar o hardware da plataforma com mais eficiência. O Uso de GPU dá suporte a aplicativos que usam o Direct3D 12, Direct3D 11 e Direct3D 10; ele não dá suporte a outras APIs de gráficos como Direct2D ou OpenGL.  
@@ -74,7 +74,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
      ![Pós&#45;coleção, com o intervalo selecionado](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
- Isso abrirá um novo documento com guias que contém o relatório. O relatório Uso de GPU ajuda você a ver quando um evento de gráficos é iniciado na CPU, quando ele atinge a GPU e quanto tempo a GPU leva para executá-lo. Essas informações podem ajudá-lo a identificar afunilamentos e oportunidades de aumento de paralelismo no código.  
+ Isso abrirá um novo documento com guias que contém o relatório. O relatório Uso de GPU ajuda você a ver quando um evento de gráficos é iniciado na CPU, quando ele atinge a GPU e quanto tempo a GPU leva para executá-lo. Essas informações podem ajudá-lo a identificar gargalos e oportunidades de aumento de paralelismo no código.  
 
 <!-- VERSIONLESS -->
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>Exportar para o GPUView ou o Windows Performance Analyzer
@@ -118,7 +118,7 @@ A partir do Visual Studio 2017, esses dados podem ser abertos com o [GPUView](/w
 |**ID do Thread**|A ID do thread da qual o evento foi obtido.|  
   
 > [!IMPORTANT]
->  O Windows 8.1 é necessário para a atribuição de eventos. Além disso, se a GPU ou o driver não derem suporte aos recursos de instrumentação necessários, todos os eventos serão exibidos como ‘não atribuídos’. Lembre-se de atualizar o driver da GPU e tente novamente caso ocorra esse problema. Para obter mais informações, consulte [Suporte de hardware e driver](#hwsupport) abaixo.  
+>  Se a GPU ou o driver não derem suporte aos recursos de instrumentação necessários, todos os eventos serão exibidos como "não atribuídos". Lembre-se de atualizar o driver da GPU e tente novamente caso ocorra esse problema. Para obter mais informações, consulte [Suporte de hardware e driver](#hwsupport) abaixo.  
   
 ## <a name="gpu-usage-settings"></a>Configurações de Uso de GPU  
  É possível configurar a ferramenta Uso de GPU para adiar a coleta de informações de criação de perfil, em vez de iniciar a coleta de informações logo após a inicialização do aplicativo. Como o tamanho das informações de criação de perfil pode ser significativo, isso será útil quando você souber que os problemas de lentidão no desempenho do aplicativo apenas serão exibidos posteriormente.  

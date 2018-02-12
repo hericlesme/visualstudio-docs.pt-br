@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6924f4a4b3c2f0b4319af14ab8518bf01eaab912
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 94ee933b80c92f18fcc47cb8cb8940b48bfe7fc7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Etapa 4: executando o código no depurador
 
@@ -96,7 +96,7 @@ Além de gerenciar projetos, fornecer uma experiência de edição avançada e a
 
 1. Continue usando Intervir até que você esteja novamente quase em `make_dot_string`. Então, use **Sair** e observe que você retornará ao loop `for`. Com Sair, o depurador executa o restante da função e, em seguida, faz automaticamente uma pausa no código de chamada. Isso é muito útil quando você percorreu algumas partes de uma função longa que deseja depurar, mas não deseja percorrer o restante e não quer definir um ponto de interrupção explícito no código de chamada.
 
-1. Para continuar a execução do programa até que o próximo ponto de interrupção seja atingido, use **Continuar** (F5). Como há um ponto de interrupção no loop `for`, você interromperá na próxima iteração.
+1. Para continuar a execução do programa até que o próximo ponto de interrupção seja atingido, use **Continuar** (F5). Como há um ponto de interrupção no loop `for`, você interrompe na próxima iteração.
 
 1. Percorrer centenas de iterações de um loop pode ser entediante, portanto, o Visual Studio permite que você adicione uma *condição* a um ponto de interrupção. Assim, o depurador só pausa o programa no ponto de interrupção quando a condição é satisfeita. Por exemplo, você pode usar uma condição com o ponto de interrupção na instrução `for` para que ele faça uma pausa somente quando o valor de `i` exceder 1600. Para definir essa condição, clique com o botão direito do mouse no ponto de interrupção e selecione **Condições...** (ALT + F9, C). Na janela pop-up **Configurações de Ponto de Interrupção** exibida, insira `i > 1600` como a expressão e selecione **Fechar**. Pressione F5 para continuar e observe que o programa executa muitas iterações antes da próxima interrupção.
 
@@ -114,5 +114,5 @@ Além de gerenciar projetos, fornecer uma experiência de edição avançada e a
 
 ### <a name="going-deeper"></a>Aprofundando-se
 
-- [Depuração](debugging.md).
+- [Depuração](debugging-python-in-visual-studio.md)
 - [Depuração no Visual Studio](../debugger/debugger-feature-tour.md) oferece uma documentação completa sobre os recursos de depuração do Visual Studio.

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3f788b114b4250819c4867136cb1b888c816cf8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 552d256b315d6506911ae4cf8724b33173cd39a4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalando o suporte do Python no Visual Studio no Windows
 
@@ -31,12 +31,12 @@ Para instalar o suporte do Python para Visual Studio (também conhecido como Fer
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e anterior](#visual-studio-2013-and-earlier)
 
-Para o Visual Studio 2015 e anterior, também é necessário instalar separadamente um interpretador do Python de sua escolha (Python 3.5 e anterior; a versão 3.6 não é compatível e gerará a mensagem “Versão 3.6 do Python incompatível”). Para obter detalhes, consulte [Ambientes do Python](managing-python-environments-in-visual-studio.md). A mesma página também contém instruções para adicionar um interpretador do Python existente ao Visual Studio 2017.
+Para o Visual Studio 2015 e anterior, também é necessário instalar separadamente um interpretador do Python de sua escolha (Python 3.5 e anterior; a versão 3.6 não é compatível e gerará a mensagem "Versão 3.6 do Python incompatível"). Para obter detalhes, consulte [Ambientes do Python](managing-python-environments-in-visual-studio.md). A mesma página também contém instruções para adicionar um interpretador do Python existente ao Visual Studio 2017.
 
 Para testar rapidamente o suporte do Python depois de seguir as etapas de instalação, abra a janela Interativa do Python pressionando Alt-I e inserindo `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
 
 > [!Tip]
-> A carga de trabalho do Python inclui a extensão útil Cookiecutter, que fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Para obter detalhes, consulte [Usando o Cookiecutter](cookiecutter.md).
+> A carga de trabalho do Python inclui a extensão útil Cookiecutter, que fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Para obter detalhes, consulte [Usando o Cookiecutter](using-python-cookiecutter-templates.md).
 
 > [!Note]
 > O suporte ao Python não está disponível atualmente no Visual Studio para Mac, mas está disponível no Mac e no Linux por meio do Visual Studio Code. Confira [Perguntas e respostas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -64,11 +64,11 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
     | Opção | Descrição |
     | --- | --- |
     | Distribuições do Python | Escolha qualquer combinação de variantes de 32 bits e de 64 bits das distribuições do Python 2, do Python 3, do Anaconda2 e do Anaconda3 com as quais planeja trabalhar. Cada uma delas inclui o interpretador, o tempo de execução e as bibliotecas da distribuição. O Anaconda, especificamente, é uma plataforma de ciência de dados aberta que inclui uma grande variedade de pacotes pré-instalados. (Você pode retornar ao Instalador do Visual Studio a qualquer momento para adicionar ou remover distribuições.) |
-    | Suporte do modelo Cookiecutter | Instala a interface gráfica do usuário Cookiecutter para descobrir modelos, inserir opções de modelo e criar projetos e arquivos. Consulte [Usando a extensão Cookiecutter](cookiecutter.md). |
-    | Suporte Web do Python | Instala as ferramentas para desenvolvimento para a Web, incluindo suporte à edição HTML, CSS e JavaScript, juntamente com modelos para projetos que usam as estruturas Bottle, Flask e Django. Veja [Modelos de projeto Web do Python](template-web.md). |
+    | Suporte do modelo Cookiecutter | Instala a interface gráfica do usuário Cookiecutter para descobrir modelos, inserir opções de modelo e criar projetos e arquivos. Consulte [Usando a extensão Cookiecutter](using-python-cookiecutter-templates.md). |
+    | Suporte Web do Python | Instala as ferramentas para desenvolvimento para a Web, incluindo suporte à edição HTML, CSS e JavaScript, juntamente com modelos para projetos que usam as estruturas Bottle, Flask e Django. Veja [Modelos de projeto Web do Python](python-web-application-project-templates.md). |
     | Suporte ao Python IoT | Compatível com o desenvolvimento do Windows IoT Core usando Python. |
     | Ferramentas de desenvolvimento nativo do Python | Instala o compilador do C++ e outros componentes necessários para desenvolver extensões nativas para Python. Veja [Criando uma extensão do C++ para o Python](working-with-c-cpp-python-in-visual-studio.md). Além disso, instale a carga de trabalho **Desenvolvimento de área de trabalho C++** para obter suporte total a C++. |
-    | Principais ferramentas dos Serviços de Nuvem do Azure | Fornece suporte adicional para os Serviços de Nuvem do Azure do desenvolvedor no Python. Consulte [Projeto de Serviço de Nuvem do Azure](template-azure-cloud-service.md). |
+    | Principais ferramentas dos Serviços de Nuvem do Azure | Fornece suporte adicional para os Serviços de Nuvem do Azure do desenvolvedor no Python. Consulte [Projeto de Serviço de Nuvem do Azure](python-azure-cloud-service-project-template.md). |
 
 1. Após a instalação, o instalador fornece opções para modificar, iniciar, reparar ou desinstalar o Visual Studio. O botão **Modificar** transforma-se em **Atualizar** quando há atualizações para o Visual Studio disponíveis para os componentes instalados. (A opção Modificar ficará disponível no menu suspenso.) Você também pode iniciar o Visual Studio e o instalador no menu Iniciar do Windows pesquisando "Visual Studio".
 

@@ -9,44 +9,28 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: mikeblome
-ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Como testar uma DLL do Visual C++ para aplicativos UWP 
+# <a name="how-to-test-a-visual-c-dll"></a>Como testar uma DLL do Visual C++
+
 Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++ para aplicativos UWP (Plataforma Universal do Windows) com o Microsoft Test Framework para C++. A DLL RooterLib demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. A DLL, em seguida, pode ser incluída em um aplicativo UWP que mostra a um usuário as coisas divertidas que podem ser feitas com matemática.  
   
  Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.  
   
- Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a .DLL. Consulte [Adicionar teste de unidade de aplicativos C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) para obter dicas sobre a estrutura a ser usada.  
-  
-##  <a name="In_this_topic"></a> Neste tópico  
-
- [Criar a solução e o projeto de teste de unidade](#Create_the_solution_and_the_unit_test_project)  
-  
- [Verificar se o testes são executados no Gerenciador de Testes](#Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Adicione o projeto DLL à solução](#Add_the_DLL_project_to_the_solution)  
-  
- [Tornar as funções de DLL visíveis para o código de teste](#make_the_dll_functions_visible_to_the_test_code)  
-  
- [Multiplicar os testes iterativamente e fazê-los passar](#Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Depurar um teste que falhou](#Debug_a_failing_test)  
-  
- [Refatorar o código sem alterar os testes](#Refactor_the_code_without_changing_tests)  
+ Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a .DLL. Consulte [Adicionar teste de unidade de aplicativos C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) para obter dicas sobre a estrutura a ser usada.
   
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade  
   
-1.  No menu **Arquivo**, escolha **Novo** e, em seguida, **Novo Projeto**.  
+1.  No menu **Arquivo**, escolha **Novo** > **Projeto...**.
   
-2.  Na caixa de diálogo Novo Projeto, expanda **Instalado** e, em seguida, **Visual C++** e escolha **UWP**. Em seguida, escolha **Biblioteca de Teste de Unidade (aplicativos UWP)** na lista de modelos de projeto.  
-  
-     ![Cria um C&#43;&#43; biblioteca de teste de unidade](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+2.  Na caixa Novo Projeto, expanda **Instalado** > **Visual C++** e escolha **Windows Universal**. Em seguida, escolha **Aplicativo de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.
   
 3.  Dê ao projeto o nome `RooterLibTests`; especifique o local, dê à solução o nome `RooterLib`; e certifique-se de que a opção **Criar diretório para solução** esteja selecionada.  
   

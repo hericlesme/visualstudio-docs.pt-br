@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: e1da05cbbb2415ad6ce701e1330f9e9e60568aeb
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 A tabela a seguir lista propriedades frequentemente usadas que são definidas nos arquivos de projeto do Visual Studio ou incluídas nos arquivos .targets que o MSBuild fornece.  
@@ -50,7 +52,7 @@ A tabela a seguir lista propriedades frequentemente usadas que são definidas no
 |BaseOutputPath|Especifica o caminho básico para o arquivo de saída. Se estiver definido, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usará `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Sintaxe de exemplo: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|A pasta de nível superior na qual todas as pastas de saída intermediárias específicas da configuração são criadas. O valor padrão é `obj\`. O código a seguir é um exemplo: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|Um valor booliano que indica se as referências de projeto são criadas ou limpas em paralelo quando Multi-Proc [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] for usado. O valor padrão é `true`, que significa que projetos serão compilados em paralelo se o sistema tiver vários processadores ou núcleos.|  
-|BuildProjectReferences|Um valor booliano que indica se as referências do projeto são criadas por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Defina `false` se você estiver criando seu projeto no IDE (ambiente de desenvolvimento integrado) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], `true`, caso contrário.|  
+|BuildProjectReferences|Um valor booliano que indica se as referências do projeto são criadas por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Defina automaticamente como `false` se você estiver compilando seu projeto no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], caso contrário, use `true`. `/p:BuildProjectReferences=false` pode ser especificado na linha de comando para evitar a verificação de atualização dos projetos referenciados.|  
 |CleanFile|O nome do arquivo que será usado como o "cache limpo". O cache limpo é uma lista dos arquivos gerados que serão excluídos durante a operação de limpeza. O arquivo é colocado no caminho de saída intermediária pelo processo de build.<br /><br /> Esta propriedade especifica apenas os nomes de arquivo que não têm informações de caminho.|  
 |CodePage|Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação. Essa propriedade é equivalente à opção do compilador `/codepage`.|  
 |CompilerResponseFile|Um arquivo de resposta opcional que pode ser passado para as tarefas do compilador.|  
@@ -71,7 +73,7 @@ A tabela a seguir lista propriedades frequentemente usadas que são definidas no
 |ExcludeDeploymentUrl|A [tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) adicionará uma marca deploymentProvider ao manifesto de implantação se o arquivo de projeto incluir qualquer um dos seguintes elementos:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Entretanto, ao usar ExcludeDeploymentUrl, você poderá impedir que a marca deploymentProvider seja adicionada ao manifesto de implantação, mesmo se qualquer uma das URLs acima for especificada. Para fazer isso, adicione a propriedade a seguir ao arquivo de projeto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`**Observação:** ExcludeDeploymentUrl não é exposto no IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e pode ser definido apenas editando manualmente o arquivo de projeto. A configuração dessa propriedade não afeta a publicação em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; ou seja, a marca deploymentProvider ainda será adicionada à URL especificada pelo PublishUrl.|  
 |FileAlignment|Especifica, em bytes, onde alinhar as seções do arquivo de saída. Os valores válidos são 512, 1024, 2048, 4096, 8192. Essa propriedade é equivalente à opção do compilador `/filealignment`.|  
 |FrameworkPathOverride|Especifica o local de mscorlib.dll e microsoft.visualbasic.dll. Esse parâmetro corresponde à opção `/sdkpath` do compilador vbc.exe.|  
-|GenerateDocumentation|(somente Visual Basic .NET) Um parâmetro booliano que indica se a documentação é gerada pelo build. Se `true`, o build gerará informações sobre a documentação e as colocará em um arquivo .xml junto com o nome do arquivo executável ou a biblioteca que a tarefa de build criou.|
+|GenerateDocumentation|(somente Visual Basic) Um parâmetro booliano que indica se a documentação é gerada pelo build. Se `true`, o build gerará informações sobre a documentação e as colocará em um arquivo .xml junto com o nome do arquivo executável ou a biblioteca que a tarefa de build criou.|
 |IntermediateOutputPath|O caminho de saída completo intermediário conforme derivado de `BaseIntermediateOutputPath`, se nenhum caminho for especificado. Por exemplo, \obj\debug\\. Se essa propriedade for substituída, então a configuração de `BaseIntermediateOutputPath` não terá efeito.|  
 |KeyContainerName|O nome do contêiner de chave de nome forte.|  
 |KeyOriginatorFile|O nome do arquivo de chave de nome forte.|  

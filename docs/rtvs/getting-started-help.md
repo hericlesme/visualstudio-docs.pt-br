@@ -1,23 +1,26 @@
 ---
 title: Janela da Ajuda nas Ferramentas do R para Visual Studio | Microsoft Docs
+description: "A ajuda do R está integrada diretamente na janela interativa no Visual Studio por meio do comando ? comando."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Ajuda nas Ferramentas do R para Visual Studio
 
@@ -28,7 +31,7 @@ A ajuda do R está integrada diretamente na janela interativa no Visual Studio. 
 > [!Tip]
 > A janela da Ajuda, como todas as outras no Visual Studio, pode ser organizada e encaixada conforme o desejado. Consulte [Personalização de layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Para abrir os resultados da ajuda em um navegador, selecione o menu **Ferramentas do R > Opções** e defina a propriedade **Navegador da Ajuda do R** como `External`. Consulte [Opções](options.md).
+> Para abrir os resultados da ajuda em um navegador, selecione o menu **Ferramentas do R > Opções** e defina a propriedade **Navegador da Ajuda do R** como `External`. Consulte [Opções](options-for-r-tools-in-visual-studio.md).
 
 Para pesquisar a ajuda, use o comando `??` seguido por um termo de pesquisa. Use aspas se o termo de pesquisa contiver espaços:
 
@@ -52,7 +55,7 @@ Os desenvolvedores geralmente pesquisam a documentação do R para obter ajuda s
     ![Invocando a ajuda por meio do menu de contexto acionado com um clique no botão direito do mouse](media/help-right-click.png)
 
 > [!Tip]
-> Para abrir a ajuda integrada em um navegador, selecione **Ferramentas do R > Opções** e defina **Navegador da Web F1** para `External`. Consulte [Opções](options.md).
+> Para abrir a ajuda integrada em um navegador, selecione **Ferramentas do R > Opções** e defina **Navegador da Web F1** para `External`. Consulte [Opções](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Pesquisa integrada do StackOverflow
 
@@ -64,4 +67,4 @@ Você pode alterar a cadeia de caracteres de escopo acrescentada, `R site:stacko
 
 ![Alterando a opção de cadeia de pesquisa da Web F1](media/options-dialog.png)
 
-Se você preferir exibir os resultados em um navegador, altere a opção **Navegador da Web F1** conforme descrito em [Opções](options.md).
+Se você preferir exibir os resultados em um navegador, altere a opção **Navegador da Web F1** conforme descrito em [Opções](options-for-r-tools-in-visual-studio.md).

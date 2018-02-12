@@ -1,5 +1,5 @@
 ---
-title: Executar testes de unidade de aplicativos UWP no Visual Studio | Microsoft Docs
+title: Executar testes de unidade no Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,49 +9,23 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c06ad430664f1e6cd5010e4af5d8d28efa1f8d25
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Executar testes de unidade de aplicativos UWP no Visual Studio
-Este tópico descreve como executar testes de unidade usando o Gerenciador de Testes no Microsoft Visual Studio  
-  
-> [!NOTE]
->  Os tópicos nesta seção descrevem a funcionalidade do Visual Studio Express para Windows 8. O Visual Studio Community, Enterprise e Professional fornecem funcionalidades adicionais para teste de unidade.  
->   
->  -   Use qualquer estrutura de teste de unidade de software livre ou de terceiros que tenham criado um adaptador complementar para o Gerenciador de Testes da Microsoft. Você também pode analisar e exibir informações de cobertura de código para seus testes.  
-> -   Execute os testes depois de cada compilação. Você também pode usar Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar seus testes no seu próprio código, substituindo o código de teste pela funcionalidade do sistema e de terceiros.  
->   
->  Para obter mais informações, consulte [Executar o teste de unidade em seu código](../test/unit-test-your-code.md) na Biblioteca do MSDN.  
-  
-##  <a name="BKMK_In_this_topic"></a> Neste tópico  
- [Estruturas de teste de unidade e projetos de teste](#BKMK_Unit_test_frameworks_and_test_projects)  
-  
- [Executando testes no Gerenciador de Testes](#BKMK_Running_tests_in_Test_Explorer)  
-  
--   [Executando testes](#BKMK_Running_tests)  
-  
- [Exibindo resultados de teste](#BKMK_Viewing_test_results)  
-  
--   [Exibindo detalhes do teste](#BKMK_Viewing_test_details)  
-  
--   [Exibindo o código-fonte de um método de teste](#BKMK_Viewing_the_source_code_of_a_test_method)  
-  
- [Organizando a lista de testes](#BKMK_Organizing_the_test_list)  
-  
--   [Agrupando testes](#BKMK_Grouping_tests)  
-  
--   [Pesquisando e filtrando a lista de testes](#BKMK_Searching_and_filtering_the_test_list)  
-  
- [Depurando testes de unidade](#BKMK_Debugging_unit_tests)  
-  
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Estruturas de teste de unidade e projetos de teste  
- O Visual Studio Express para aplicativos UWP inclui as estruturas de teste de unidade da Microsoft para código C++ gerenciado e nativo. O Gerenciador de Testes pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Os projetos de teste podem ser qualquer combinação de Visual C++ ou estruturas de teste de unidade Visual C# e Visual Basic. Quando o código em teste é escrito para o .NET Framework, o projeto de teste pode ser escrito em qualquer linguagem do .NET Framework, independentemente do idioma de código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++.  
-  
+# <a name="run-unit-tests-in-visual-studio"></a>Executar testes de unidade no Visual Studio
+
+Este tópico descreve como executar testes de unidade usando o Gerenciador de Testes no Microsoft Visual Studio.
+
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Estruturas de teste de unidade e projetos de teste
+
+O Visual Studio inclui as estruturas de teste de unidade da Microsoft para código gerenciado e código C++ nativo. O Gerenciador de Testes pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Os projetos de teste podem ser qualquer combinação de Visual C++ ou estruturas de teste de unidade Visual C# e Visual Basic. Quando o código em teste é escrito para o .NET Framework, o projeto de teste pode ser escrito em qualquer linguagem do .NET Framework, independentemente do idioma de código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++.
+
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Executando testes no Gerenciador de Testes  
  Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.  
   
@@ -117,7 +91,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 1.  No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
   
     > [!NOTE]
-    >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
+    > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
   
 2.  No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de atalho.  
   
