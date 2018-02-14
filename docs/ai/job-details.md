@@ -1,3 +1,5 @@
+---
+---
 # <a name="view-recent-job-performance-and-details"></a>Exibir detalhes e desempenho do trabalho recentes
 Depois que os trabalhos forem enviados, será possível exibir a lista de trabalhos para ver seus status, duração e mais.
 

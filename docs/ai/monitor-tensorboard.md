@@ -1,3 +1,5 @@
+---
+---
 # <a name="monitor-with-tensorboard"></a>Monitorar com TensorBoard
 
 É possível visualizar o progresso do treinamento de modelo com TensorBoard. 
