@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,22 +17,23 @@ helpviewer_keywords:
 - debugging [Visual Studio], client-side scripts
 - client-side scripts, debugging
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 401ee40e2d296cbef041cb56568b639d05835f04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f1d0073f1623c96c86f3c43b6992385eca38193
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="client-side-script-debugging"></a>Depuração de script do lado do cliente
 O depurador do Visual Studio fornece um ambiente de depuração abrangente para localizar e corrigir erros em scripts do lado do cliente em páginas ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Abrindo Documentos de Script  
- Você pode ver a lista de documentos de script do lado do servidor e cliente no **Solution Explorer** para exibir. Você pode abrir qualquer documento de script de **Gerenciador de soluções**. Para obter mais informações, consulte [como: exibir documentos de Script](../debugger/how-to-view-script-documents.md).  
+Você pode ver a lista de documentos de script do lado do servidor e cliente no **Solution Explorer** para exibir. Você pode abrir qualquer documento de script de **Gerenciador de soluções**. Para obter mais informações, consulte [como: exibir documentos de Script](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mapeamento de ponto de interrupção  
  No Visual Studio, você não pode depurar diretamente o código do lado do servidor, mas pode definir um ponto de interrupção em um arquivo do lado do servidor. O Visual Studio automaticamente mapeia o ponto de interrupção em um local correspondente no arquivo do cliente e cria um ponto de interrupção mapeado no código do cliente.  
