@@ -1,27 +1,27 @@
 ---
 title: Gerenciar ambientes do Python no Visual Studio | Microsoft Docs
-description: Como usar a janela de Ambientes do Python no Visual Studio para gerenciar ambientes globais e virtuais, configurar ambientes personalizados, instalar interpretadores Python, instalar pacotes, configurar caminhos de pesquisa e gerenciar ambientes para projetos do Visual Studio.
+description: Como usar a janela Ambientes do Python no Visual Studio para gerenciar ambientes globais e virtuais, configurar ambientes personalizados, instalar interpretadores Python, instalar pacotes, configurar caminhos de pesquisa e gerenciar ambientes para projetos do Visual Studio.
 ms.custom: 
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="python-environments"></a>Ambientes do Python
 
@@ -70,13 +70,13 @@ Para os desenvolvedores que desejam fornecer novas formas de detecção para amb
 
 Para abrir a janela de Ambientes do Python, selecione o comando de menu **Exibir > Outras Janelas > Ambientes do Python** ou clique com o botão direito do mouse no nó **Ambientes do Python** de um projeto no Gerenciador de Soluções e selecione **Exibir Todos os Ambientes do Python**:
 
-    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
+![Comando Exibir Todos os Ambientes no Gerenciador de Soluções](media/environments-view-all.png)
 
 Em ambos os casos, a janela Ambientes do Python é exibida como uma guia irmã do Gerenciador de Soluções:
 
 ![Janela Ambientes do Python](media/environments-default-view.png)
 
-O exemplo acima mostra que o Python 3.4 (CPython de 32 bits) é instalado junto com as versões de 32 e 64 bits do IronPython 2.7. O ambiente padrão em negrito é o Python 3.4, que é usado para os novos projetos. Se não vir nenhum ambiente listado, isso significa que você instalou as Ferramentas Python para o Visual Studio no Visual Studio 2015 ou anterior, mas ainda não instalou um interpretador do Python (consulte [Selecionando e instalando interpretadores do Python](#selecting-and-installing-python-interpreters) acima). O comando **+ Personalizado...** permite que você [crie um ambiente para um intérprete existente](#create-an-environment-for-an-existing-interpreter).
+O exemplo acima mostra que o Python 3.4 (CPython de 32 bits) é instalado junto com as versões de 32 e 64 bits do IronPython 2.7. O ambiente padrão em negrito é o Python 3.4, que é usado para os novos projetos. Se não vir nenhum ambiente listado, isso significa que você instalou as Ferramentas Python para o Visual Studio no Visual Studio 2015 ou anterior, mas ainda não instalou um interpretador do Python (consulte [Selecionando e instalando interpretadores do Python](#selecting-and-installing-python-interpreters) acima). O comando **+ Personalizado...** permite que você [crie um ambiente para um intérprete existente](#creating-an-environment-for-an-existing-interpreter).
 
 À direita de cada ambiente listado está um controle que abre uma janela interativa para esse ambiente. Pode aparecer outro controle que atualiza o banco de dados IntelliSense para esse ambiente.
 

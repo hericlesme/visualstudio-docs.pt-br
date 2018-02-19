@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para carregar e compilar projetos gerenciados. Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é responsável pelo projeto, quase todo projeto que estiver no formato [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poderá ser utilizado com êxito no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mesmo se o projeto tiver sido criado por meio de uma ferramenta diferente e tenha um processo de build personalizado.  
@@ -56,7 +57,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examina as condições em elementos `PropertyGroup`, `ItemGroup`, `Import`, de propriedade e de item para essa finalidade.  
   
 ## <a name="additional-build-actions"></a>Ações de Compilação Adicionais  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite que o nome do tipo de item de um arquivo seja alterado em um projeto com a propriedade **Ação de build** da janela [Propriedades do Arquivo](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). Os nomes de tipo de item de `Compile`, `EmbeddedResource`, `Content` e `None` sempre estarão listados no menu, juntamente com quaisquer outros nomes de tipo de item que já estejam no projeto. Para garantir a disponibilidade dos nomes de tipo de item personalizados nesse menu, é possível adicionar os nomes a um tipo de item de nome `AvailableItemName`. Por exemplo, adicionar o seguinte ao arquivo de projeto adicionará o tipo personalizado `JScript` a esse menu para todos os projetos que o importarem:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite que o nome do tipo de item de um arquivo seja alterado em um projeto com a propriedade **Ação de Build** da janela [Propriedades do Arquivo](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). Os nomes de tipo de item de `Compile`, `EmbeddedResource`, `Content` e `None` sempre estarão listados no menu, juntamente com quaisquer outros nomes de tipo de item que já estejam no projeto. Para garantir a disponibilidade dos nomes de tipo de item personalizados nesse menu, é possível adicionar os nomes a um tipo de item de nome `AvailableItemName`. Por exemplo, adicionar o seguinte ao arquivo de projeto adicionará o tipo personalizado `JScript` a esse menu para todos os projetos que o importarem:  
   
 ```xml  
 <ItemGroup>  
@@ -91,7 +92,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Ao compilar em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], a propriedade `$(BuildingInsideVisualStudio)` será definida como `true`. Isso pode ser usado no projeto ou em arquivos .targets para fazer com que o build se comporte de maneira diferente.  
   
 ## <a name="displaying-properties-and-items"></a>Exibindo Propriedades e Itens  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconhece determinados nomes de propriedades e valores. Por exemplo, a seguinte propriedade de um projeto fará com que **Aplicativos do Windows** apareçam na caixa **Tipo de Aplicativo** no **Designer de Projeto**.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconhece determinados nomes de propriedade e valores. Por exemplo, a seguinte propriedade de um projeto fará com que **Aplicativos do Windows** apareçam na caixa **Tipo de Aplicativo** no **Designer de Projeto**.  
   
 ```xml  
 <OutputType>WinExe</OutputType>  
@@ -126,7 +127,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Para localizar e iniciar o assembly de saída e anexar o depurador, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] precisa que as propriedades `OutputPath`, `AssemblyName` e `OutputType` estejam definidas corretamente. Não será possível anexar o depurador se o processo de build não fizer com que o compilador gere um arquivo .pdb.  
   
 ## <a name="design-time-target-execution"></a>Execução de Destino do Tempo de Design  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tentará executar destinos com determinados nomes ao carregar um projeto. Esses destinos incluem `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] executará esses destinos para que o compilador seja inicializado a fim de fornecer o IntelliSense, o depurador poderá ser inicializado e as referências exibidas no Gerenciador de Soluções poderão ser resolvidas. Se esses destinos não estiverem presentes, o projeto carregará e compilará corretamente, mas a experiência de tempo de design no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não será totalmente funcional.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tenta executar destinos com determinados nomes ao carregar um projeto. Esses destinos incluem `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] executará esses destinos para que o compilador seja inicializado a fim de fornecer o IntelliSense, o depurador poderá ser inicializado e as referências exibidas no Gerenciador de Soluções poderão ser resolvidas. Se esses destinos não estiverem presentes, o projeto carregará e compilará corretamente, mas a experiência de tempo de design no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não será totalmente funcional.  
   
 ##  <a name="BKMK_EditingProjects"></a> Editando Arquivos de Projeto no Visual Studio  
  Para editar um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] diretamente do projeto, abra o arquivo de projeto no editor de XML do Visual Studio.  

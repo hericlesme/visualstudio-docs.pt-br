@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,16 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mt-task"></a>Tarefa MT
 Encapsula a Ferramenta de Manifesto da Microsoft, a mt.exe. Para obter mais informações, consulte “Mt.exe” no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -59,7 +60,7 @@ Encapsula a Ferramenta de Manifesto da Microsoft, a mt.exe. Para obter mais info
 |**ManifestFromManagedAssembly**|Parâmetro **String** opcional.<br /><br /> Gera um manifesto do assembly gerenciado especificado.<br /><br /> Para obter mais informações, consulte a opção **/managedassemblyname** em “Mt.exe”, no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ManifestToIgnore**|Parâmetro **String** opcional.<br /><br /> (Não usado).|  
 |**OutputManifestFile**|Parâmetro **String** opcional.<br /><br /> Especifica o nome do manifesto de saída. Se esse parâmetro for omitido e somente um manifesto for operado, esse manifesto será modificado.<br /><br /> Para obter mais informações, consulte a opção **/out** em “Mt.exe”, no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
-|**OutputResourceManifests**|Parâmetro **String** opcional.<br /><br /> A saída do manifesto por meio de um recurso do tipo RT_MANIFEST que tem o identificador especificado. O recurso é do formulário, *\<file>[***;***[***#***]<resource_id>]*, em que o parâmetro `resource_id` opcional é um número não negativo de 16 bits.<br /><br /> Se nenhum `resource_id` for especificado, o valor padrão (1) CREATEPROCESS_MANIFEST_RESOURCE será usado.<br /><br /> Para obter mais informações, consulte a opção **/outputresource** em “Mt.exe”, no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
+|**OutputResourceManifests**|Parâmetro **String** opcional.<br /><br /> A saída do manifesto por meio de um recurso do tipo RT_MANIFEST que tem o identificador especificado. O formato do recurso é *\<file>[***;***[***#***]<resource_id>]*, em que o parâmetro `resource_id` opcional é um número não negativo de 16 bits.<br /><br /> Se nenhum `resource_id` for especificado, o valor padrão (1) CREATEPROCESS_MANIFEST_RESOURCE será usado.<br /><br /> Para obter mais informações, consulte a opção **/outputresource** em “Mt.exe”, no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**RegistrarScriptFile**|Parâmetro **String** opcional.<br /><br /> Especifica o nome do arquivo script de registrador (.rgs) a ser usado para suporte ao manifesto COM sem registro.<br /><br /> Para obter mais informações, consulte a opção **/rgs** em “Mt.exe”, no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ReplacementsFile**|Parâmetro **String** opcional.<br /><br /> Especifica o arquivo que contém valores para cadeias de caracteres substituíveis no arquivo registrador (.rgs).<br /><br /> Para obter mais informações, consulte a opção **/replacements** em “Mt.exe”, no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ResourceOutputFileName**|Parâmetro **String** opcional.<br /><br /> Especifica o arquivo de recurso de saída usado para inserir o manifesto na saída do projeto.|  

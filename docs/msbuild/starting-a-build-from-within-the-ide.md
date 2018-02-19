@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: build
+helpviewer_keywords:
+- build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: "5"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3738c9a34ebd346e0757e84716d13785541b767a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 307d05c9f35309d97b3813dfaa4cc4db1cf1f91c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Iniciando um build pelo IDE
 Sistemas de projeto personalizado devem usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar os builds. Este tópico descreve as razões para isso e o procedimento.  
   
 ## <a name="parallel-builds-and-threads"></a>Builds paralelas e threads  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite builds paralelas que exigem a mediação de acesso aos recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build das quais o retorno de chamada é fornecido para o gerenciador de build.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite builds paralelos que exigem a mediação para acesso a recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build das quais o retorno de chamada é fornecido para o gerenciador de build.  
   
  Se o sistema de projeto modificar variáveis de ambiente, ele deverá definir o NodeAffinity do build para OutOfProc. Isso significa que você não pode usar objetos de host, já que eles exigem o nó em processamento.  
   

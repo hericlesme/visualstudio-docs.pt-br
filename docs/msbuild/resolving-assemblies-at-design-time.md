@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: msbuild
+helpviewer_keywords:
+- msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3db59c3cb9234231a5a5fe4f881857433ab09479
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 10c327995363b2064498f88d9ec1a02a18650970
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Resolvendo assemblies em tempo de design
 Quando você adiciona uma referência a um assembly por meio da guia .NET da caixa de diálogo Adicionar Referência, a referência aponta para um assembly de referência intermediário ou seja, um assembly que contém todas as informações de tipo e a assinatura, mas que não necessariamente contém qualquer código. A guia .NET lista assemblies de referência que correspondem aos assemblies de tempo de execução do .NET Framework. Além disso, ela lista os assemblies de referência que correspondem aos assemblies de tempo de execução nas pastas AssemblyFoldersEx registradas usados por terceiros.  
   
 ## <a name="multi-targeting"></a>Multiplataforma  
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] permite que você use como destino as versões do .NET Framework que executam no CLR (Common Language Runtime) versão 2.0 ou versão 4. Isso inclui as versões 2.0, 3.0, 3.5, 4, 4.5 e 4.5.1 do .NET Framework e as versões 1.0, 2.0 e 3.0 do Silverlight. Se uma nova versão do .NET Framework que se baseia na versão 2.0 versão 4 do CLR for lançada, o Framework poderá ser instalado usando um pacote de direcionamento e ele será automaticamente exibido como um destino no Visual Studio.  
+ [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] permite que você use como destino as versões do .NET Framework que são executadas no CLR (Common Language Runtime) versão 2.0 ou versão 4. Isso inclui as versões 2.0, 3.0, 3.5, 4, 4.5 e 4.5.1 do .NET Framework e as versões 1.0, 2.0 e 3.0 do Silverlight. Se uma nova versão do .NET Framework que se baseia na versão 2.0 versão 4 do CLR for lançada, o Framework poderá ser instalado usando um pacote de direcionamento e ele será automaticamente exibido como um destino no Visual Studio.  
   
 ## <a name="how-type-resolution-works"></a>Como Funciona a Resolução de Tipo  
  Em tempo de execução, o CLR resolve os tipos no assembly procurando no GAC, no diretório bin e em quaisquer caminhos de investigação. Isso é manipulado pelo carregador de fusão. Mas como o carregador de fusão sabe o que está procurando? Isso depende de uma resolução feita no tempo de design, quando o aplicativo é compilado.  

@@ -1,55 +1,52 @@
 ---
 title: "Configurações padrão e personalizadas do Conjunto de Ferramentas | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 19e01346c8af84faad2ac1877091a395db3fd3ce
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurações padrão e personalizadas do Toolset
 Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e ferramentas que você pode usar para criar um projeto de aplicativo. MSBuild inclui um Conjunto de Ferramentas padrão, mas você também pode criar ferramentas personalizadas. Para obter informações sobre como especificar um Conjunto de Ferramentas, consulte [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
   
 ## <a name="standard-toolset-configurations"></a>Configurações padrão do Conjunto de Ferramentas  
- O MSBuild 12.0 inclui os seguintes conjuntos de ferramentas padrão:  
+ O MSBuild 15.0 inclui os seguintes conjuntos de ferramentas padrão:  
   
 |ToolsVersion|Caminho do conjunto de ferramentas (conforme especificado na propriedade de build do MSBuildToolsPath ou MSBuildBinPath)|  
 |------------------|--------------------------------------------------------------------------------------------|  
 |2.0|*Caminho de instalação do Windows*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Caminho de instalação do Windows*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Caminho de instalação do Windows*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
+|15.0|*Caminho de instalação do Visual Studio*\MSBuild\15.0\bin|  
   
- O valor `ToolsVersion` determina qual conjunto de ferramentas é usado por um projeto que o Visual Studio gera. Em [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] o valor padrão é "12.0" (não importa qual a versão especificada no arquivo de projeto), mas você pode substituir esse atributo usando a opção **/toolsversion** em um prompt de comando. Para obter informações sobre esse atributo e outras formas de especificar o `ToolsVersion`, consulte [Substituindo as configurações do ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ O valor `ToolsVersion` determina qual conjunto de ferramentas é usado por um projeto que o Visual Studio gera. No Visual Studio de 2017, o valor padrão é "15.0" (independentemente da versão especificada no arquivo de projeto), mas você pode substituir esse atributo usando a opção **/toolsversion** em um prompt de comando. Para obter informações sobre esse atributo e outras formas de especificar o `ToolsVersion`, consulte [Substituindo as configurações do ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   
- Se o `ToolsVersion` não for especificado, a chave do Registro **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\<Version Number\>\DefaultToolsVersion** define o `ToolsVersion`, que é sempre 2.0.  
-  
- As seguintes chaves do Registro especificam o caminho de instalação do MSBuild.exe.  
+ O Visual Studio 2017 não usa uma chave do Registro no caminho do MSBuild. Para as versões do MSBuild anteriores à 15.0 que são instaladas com o Visual Studio 2017, as seguintes chaves do Registro especificam o caminho de instalação do MSBuild.exe.  
   
 |Chave do Registro|Nome da chave|Valor-chave da cadeia de caracteres|  
 |------------------|--------------|----------------------|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Caminho de instalação do .NET Framework 2.0|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Caminho de instalação do .NET Framework 3.5|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|Caminho de instalação do .NET Framework 4|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\12.0\|MSBuildToolsPath|Caminho de instalação do MSBuild|  
   
 ### <a name="sub-toolsets"></a>Subconjunto de ferramentas  
- Se a chave do Registro na tabela anterior tiver uma subchave, MSBuild usará para determinar que o caminho de um subconjunto de ferramentas pode substituir o caminho no conjunto de ferramentas pai. A seguinte sub-chave é um exemplo:  
+ Se a chave do registro na tabela anterior tiver uma subchave, o MSBuild a usará para determinar o caminho de um subconjunto de ferramentas que substitua o caminho no conjunto de ferramentas pai. A seguinte sub-chave é um exemplo:  
   
  \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0  
   
@@ -63,11 +60,11 @@ Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e fe
 ## <a name="custom-toolset-definitions"></a>Definições personalizadas do conjunto de ferramentas  
  Quando um conjunto de ferramentas padrão não atender a seus requisitos de build, você pode criar um conjunto de ferramentas personalizado. Por exemplo, você pode ter um cenário de laboratório de build que você deve ter um sistema separado para projetos de build [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Usando um conjunto de ferramentas personalizado, você pode atribuir valores personalizados para o `ToolsVersion` atributo ao criar projetos ou executar MSBuild.exe. Fazendo isso, você também pode usar a `$(MSBuildToolsPath)` propriedade para importar arquivos .targets do diretório, bem como definir suas próprias propriedades de conjunto de ferramentas personalizadas que podem ser usadas para qualquer projeto que usa esse conjunto de ferramentas.  
   
- Especifique um conjunto de ferramentas personalizado no arquivo de configuração para MSBuild.exe (ou a ferramenta personalizada que hospeda o mecanismo do MSBuild, se você estiver usando). Por exemplo, o arquivo de configuração para MSBuild.exe poderia incluir a seguinte definição de conjunto de ferramentas se você quisesse substituir o comportamento padrão de ToolsVersion 12.0.  
+ Especifique um conjunto de ferramentas personalizado no arquivo de configuração para MSBuild.exe (ou a ferramenta personalizada que hospeda o mecanismo do MSBuild, se você estiver usando). Por exemplo, o arquivo de configuração do MSBuild.exe poderia incluir a seguinte definição de conjunto de ferramentas para substituir o comportamento padrão do ToolsVersion 15.0.  
   
 ```xml  
-<msbuildToolsets default="12.0">  
-   <toolset toolsVersion="12.0">  
+<msbuildToolsets default="15.0">  
+   <toolset toolsVersion="15.0">  
       <property name="MSBuildToolsPath"   
         value="C:\SpecialPath" />  
    </toolset>  
@@ -80,7 +77,7 @@ Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e fe
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=12.0.0.0, Culture=neutral,   
+       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  

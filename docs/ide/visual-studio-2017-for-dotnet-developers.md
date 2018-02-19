@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desenvolvedores do .NET
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 01/23/2018
 [Documentação: Usando o IntelliSense](using-intellisense.md)  
 [Documentação: Funcionalidades do editor inteligente](writing-code-in-the-code-and-text-editor.md)
 
-O Visual Studio apresenta um entendimento profundo do código por meio do compilador Roslyn para fornecer funcionalidades de edição inteligente, como colorização de sintaxe, preenchimento de código, verificação ortográfica de variáveis digitadas incorretamente, resolução de tipo não importado, estrutura de tópicos, visualizadores de estrutura, [CodeLens](find-code-changes-and-other-history-with-codelens.md), hierarquia de chamadas, informações rápidas ao focalizar, ajuda de parâmetro, bem como ferramentas para refatoração, aplicação de ações rápidas e geração de código.
+O Visual Studio apresenta um entendimento profundo do código por meio do compilador .NET (“Roslyn”) para fornecer recursos de edição inteligente, como aplicação de cores na sintaxe, preenchimento de código, verificação ortográfica de variáveis digitadas incorretamente, resolução de tipo não importado, estrutura de tópicos, visualizadores de estrutura, [CodeLens](find-code-changes-and-other-history-with-codelens.md), hierarquia de chamadas, informações rápidas ao focalizar, ajuda de parâmetro, bem como ferramentas para refatoração, aplicação de ações rápidas e geração de código.
 
 ![Editor de código inteligente do Visual Studio](../ide/media/VSIDE_Productivity_SmartCodeEditor.png "VSIDE_Productivity_SmartCodeEditor")
 

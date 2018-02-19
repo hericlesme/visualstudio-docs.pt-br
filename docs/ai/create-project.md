@@ -1,6 +1,8 @@
+---
+---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Criar um projeto do IA com base em um modelo no Visual Studio
 
-Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), será fácil criar um novo projeto do Python usando uma variedade de modelos.
+Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), será fácil criar um novo projeto de IA usando uma variedade de modelos.
 
 1. Inicie o Visual Studio.
 

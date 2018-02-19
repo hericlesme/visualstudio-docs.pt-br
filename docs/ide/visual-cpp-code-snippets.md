@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Trechos de código do Visual C++
 
@@ -31,7 +34,7 @@ Para inserir um trecho de código, abra um arquivo de código do C++ (.cpp ou .h
 
 - No menu **Editar / IntelliSense**, selecione **Inserir Trecho**
 
-- Use as teclas de atalho: **CTRL + K + X**
+- Use as teclas de atalho: **Ctrl**+**K**+**X**
 
 Você deve ver uma lista de opções que começam com **#if**. Ao selecionar **#if**, você verá o seguinte código adicionado ao arquivo:
 
@@ -47,11 +50,11 @@ Em seguida, você pode substituir o 0 pela condição correta.
 
 Para usar um trecho de código para envolver o código selecionado, selecione uma linha (ou várias linhas) e siga um destes procedimentos:
 
-1. Clique com o botão direito do mouse para obter o menu de contexto e selecione **Envolver com**
+- Clique com o botão direito do mouse para obter o menu de contexto e selecione **Envolver Com**
 
-2. No menu **Editar / IntelliSense**, selecione **Envolver com**
+- No menu **Editar** > **IntelliSense**, selecione **Envolver Com**
 
-3. Use as teclas de atalho: **CTRL + K + S**
+- Usando o teclado, pressione: **CTRL**+**K**+**S**
 
 Selecione **#if**. Você deve ver algo parecido com isso:
 

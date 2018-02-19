@@ -1,10 +1,10 @@
 ---
 title: MSBuild Toolset (ToolsVersion) | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: "30"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7c8658b3c1a39efc24e65845be2ce75eafc4437
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e274fa60ff209436be9d11f52464d7b42972ef47
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para compilar um aplicativo. Normalmente, um conjunto de ferramentas do MSBuild inclui um arquivo microsoft.common.tasks, um arquivo microsoft.common.targets e compiladores como o csc.exe e o vbc.exe. A maioria dos conjuntos de ferramentas pode ser usada para compilar aplicativos para mais de uma versão do .NET Framework e mais de uma plataforma de sistema. No entanto, o conjunto de ferramentas do MSBuild 2.0 pode ser usado para visar apenas o NET Framework 2.0.  
@@ -32,7 +32,10 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
   
 ```xml  
 <Project ToolsVersion="15.0" ... </Project>  
-```  
+``` 
+
+> [!NOTE] 
+> Alguns tipos de projeto usam o atributo `sdk` em vez do `ToolsVersion`. Para obter mais informações, consulte [Pacotes, Metadados e Estruturas](/dotnet/core/packages) e [Adições ao formato csproj para .NET Core](/dotnet/core/tools/csproj).
   
 ## <a name="how-the-toolsversion-attribute-works"></a>Como funciona o atributo ToolsVersion  
  Ao criar um projeto no Visual Studio ou atualizar um projeto existente, um atributo chamado `ToolsVersion` é automaticamente incluído no arquivo de projeto e seu valor corresponde à versão do MSBuild incluída na edição do Visual Studio. Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).  
@@ -72,7 +75,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
   
 -   Usando os métodos <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
- As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. O MSBuild usa o valor do atributo `ToolsVersion` no arquivo do projeto para localizar a chave do registro correspondente e usa as informações na chave do registro para definir as propriedades do conjunto de ferramentas. Por exemplo, se `ToolsVersion` tiver um valor `12.0`, o MSBuild configurará as propriedades do conjunto de ferramentas de acordo com esta chave do Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+ As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. Começando no Visual Studio 2017, o MSBuild deixa de ter um local fixo. Por padrão, ele está localizado na pasta MSBuild\15.0\Bin relativa ao local de instalação do Visual Studio. Nas versões anteriores, o MSBuild usa o valor do atributo `ToolsVersion` no arquivo de projeto para localizar a chave do Registro correspondente e, em seguida, usa as informações da chave do Registro para definir as propriedades do conjunto de ferramentas. Por exemplo, se `ToolsVersion` tiver um valor `12.0`, o MSBuild configurará as propriedades do conjunto de ferramentas de acordo com esta chave do Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
  Estas são as propriedades do conjunto de ferramentas:  
   
@@ -95,7 +98,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
 -   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> retorna o caminho das ferramentas de compilação.  
   
 ### <a name="sub-toolsets"></a>Subconjunto de ferramentas  
- Conforme descrito anteriormente neste tópico, o MSBuild usa uma chave de registro para especificar o caminho das ferramentas básicas. Se a chave tiver uma subchave, o MSBuild a usará para especificar o caminho de um subconjunto de ferramentas que contém ferramentas adicionais. Nesse caso, o conjunto de ferramentas é definido pela combinação das definições de propriedades definidas nas duas chaves.  
+ Para as versões do MSBuild anteriores à 15.0, o MSBuild usa uma chave do Registro para especificar o caminho das ferramentas básicas. Se a chave tiver uma subchave, o MSBuild a usará para especificar o caminho de um subconjunto de ferramentas que contém ferramentas adicionais. Nesse caso, o conjunto de ferramentas é definido pela combinação das definições de propriedades definidas nas duas chaves.  
   
 > [!NOTE]
 >  Se os nomes de propriedade do conjunto de ferramentas coincidirem, o valor que está definido para o caminho da subchave substituirá o valor que está definido para o caminho da chave raiz.  
@@ -106,7 +109,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
   
 -   “11.0” especifica o subconjunto de ferramentas do .NET Framework 4.5  
   
--   “12.0” especifica o subconjunto de ferramentas do .NET Framework 4.5.1  
+-   “12.0” especifica o subconjunto de ferramentas do .NET Framework 4.5.1 
   
  Os subconjuntos de ferramentas 10.0 e 11.0 devem ser usados com o ToolsVersion 4.0. Em versões posteriores, a versão do subconjunto de ferramentas e o ToolsVersion devem corresponder.  
   

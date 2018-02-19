@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>Etapa 6: trabalhando com Git
 
@@ -35,7 +35,7 @@ Este tópico descreve a criação de um repositório local do Git para um projet
 
   ![Informações adicionais são exibidas ao passar o mouse sobre um controle de Git na janela do Visual Studio](media/working-with-git-01.png)
 
-1. A janela **Team Explorer** também é exibida com várias opções de Git disponíveis ao selecionar o cabeçalho do repositório. O painel **Sincronizar** oferece opções para a publicação em um repositório remoto, conforme mostrado.
+1. A janela **Team Explorer** também é exibida com várias opções de Git disponíveis ao selecionar o cabeçalho do repositório. O painel **Sincronizar**, mostrado quando você seleciona o cabeçalho **Push**, fornece opções para publicar em um repositório remoto.
 
   ![Team Explorer no Visual Studio depois de criar um repositório local](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ Este tópico descreve a criação de um repositório local do Git para um projet
 
   ![Team Explorer no Visual Studio mostrando branches](media/working-with-git-04.png)
 
-1. Ao usar um repositório local, as alterações confirmadas vão diretamente para o repositório. Se você estiver conectado a um repositório remoto, selecione **Sincronizar** para enviar por push as confirmações locais.
+1. Ao usar um repositório local, as alterações confirmadas vão diretamente para o repositório. Se você estiver conectado a um repositório remoto, selecione o cabeçalho, escolha **Sincronizar** para mudar para a seção **Sincronização** e trabalhar com os comandos apresentados.
 
 ## <a name="going-deeper"></a>Aprofundando-se
 
