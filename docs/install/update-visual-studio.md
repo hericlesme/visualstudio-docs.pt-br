@@ -4,7 +4,8 @@ description: Saiba como atualizar o Visual Studio, passo a passo.
 ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,12 +15,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e61def66e68d7f889349d0e7b7337238e220dce
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Atualizar o Visual Studio 2017 para a versão mais recente
 Podemos atualizar o Visual Studio com frequência para estender sua funcionalidade e para corrigir os problemas reportados por clientes. Para garantir que você tem a versão otimizada mais [recente do Visual Studio](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history), é preciso atualizá-lo. Veja como.

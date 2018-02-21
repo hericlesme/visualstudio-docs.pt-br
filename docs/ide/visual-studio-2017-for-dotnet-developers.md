@@ -11,18 +11,18 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desenvolvedores do .NET
 
 ## <a name="smart-code-editor"></a>Editor de códigos inteligente
 
-[Documentação: Usando o IntelliSense](using-intellisense.md)  
-[Documentação: Funcionalidades do editor inteligente](writing-code-in-the-code-and-text-editor.md)
+- [Documentação: Usando o IntelliSense](using-intellisense.md)
+- [Documentação: Funcionalidades do editor inteligente](writing-code-in-the-code-and-text-editor.md)
 
 O Visual Studio apresenta um entendimento profundo do código por meio do compilador .NET (“Roslyn”) para fornecer recursos de edição inteligente, como aplicação de cores na sintaxe, preenchimento de código, verificação ortográfica de variáveis digitadas incorretamente, resolução de tipo não importado, estrutura de tópicos, visualizadores de estrutura, [CodeLens](find-code-changes-and-other-history-with-codelens.md), hierarquia de chamadas, informações rápidas ao focalizar, ajuda de parâmetro, bem como ferramentas para refatoração, aplicação de ações rápidas e geração de código.
 
@@ -50,14 +50,14 @@ Além disso, use as sugestões de código para conhecer as melhores práticas, f
 
 [Documentação: Teste de unidade no Visual Studio](../test/improve-code-quality.md)
 
-Execute e depure os testes de unidade com base nas estruturas de teste MSTest, NUnit ou XUnit para qualquer aplicativo direcionado ao .NET Framework, ao .NET Standard ou ao .NET Core. Explore e examine os testes no *Gerenciador de Testes* ou veja imediatamente como as alterações no código afetam os testes de unidade no editor com o *Live Unit Testing* (somente em SKU do Enterprise). 
+Execute e depure os testes de unidade com base nas estruturas de teste MSTest, NUnit ou XUnit para qualquer aplicativo direcionado ao .NET Framework, ao .NET Standard ou ao .NET Core. Explore e examine os testes no *Gerenciador de Testes* ou veja imediatamente como as alterações no código afetam os testes de unidade no editor com o *Live Unit Testing* (somente em SKU do Enterprise).
 
 ![Live Unit Testing no Visual Studio](../ide/media/VSIDE_Productivity_LiveUnitTesting.png "VSIDE_Productivity_LiveUnitTesting")
 
 ## <a name="code-consistency-and-style"></a>Coerência e estilo do código
 
-[Documentação: Opções do editor personalizado portátil](create-portable-custom-editor-options.md)  
-[Documentação: Configurações de estilo de código do EditorConfig para .NET](editorconfig-code-style-settings-reference.md)
+- [Documentação: Opções do editor personalizado portátil](create-portable-custom-editor-options.md)
+- [Documentação: Configurações de estilo de código do EditorConfig para .NET](editorconfig-code-style-settings-reference.md)
 
 O Visual Studio permite a configuração de convenções de codificação, detecta violações de estilo de codificação e fornece correções rápidas para solucionar problemas de estilo com o **Ctrl +.** atalho. Configure e imponha as convenções de formatação, de nomenclatura e de estilo de código da sua equipe em um repositório (permitindo a substituição de valores em nível de arquivo e de projeto) usando o *EditorConfig*.
 
@@ -107,8 +107,6 @@ Estes são os atalhos populares do Visual Studio. Observe que algumas extensões
 | **Shift+F12** | Localizar Todas as Referências | Veja todas as referências de símbolo ou de literal |
 | **Ctrl+.** (também **ALT+ENTER** no Perfil C#) | Ações e Refatorações Rápidas | Veja quais correções de código, ações de geração de código, refatorações ou outras ações rápidas estão disponíveis na posição do cursor ou na seleção do código |
 | **Ctrl**+**E**,**V** | Duplicar linha | Duplica a linha de código onde o cursor está posicionado (disponível no **Visual Studio 2017 versão 15.6 versão prévia 2** e posterior) |
-| **Ctrl**+**W** | Expandir seleção | Expande a seleção atual em uma unidade estrutural (disponível no **Visual Studio 2017 versão 15.5**) |
-| **Ctrl**+**Shift**+**W** | Seleção de contrato | Reduz (diminui) a seleção atual em uma unidade estrutural (disponível no **Visual Studio 2017 versão 15.5**) |
 | **Ctrl+Q** | Início Rápido | Pesquise todas as configurações do Visual Studio |
 | **F5** | Iniciar a depuração | Inicie a depuração do aplicativo |
 | **Ctrl+F5** | Executar sem Depurar | Execute o aplicativo localmente sem depuração |

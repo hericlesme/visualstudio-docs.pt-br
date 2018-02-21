@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Comparar opções de assinatura do Visual Studio
 
@@ -39,10 +39,10 @@ Seja você um estudante, um desenvolvedor individual, uma pequena equipe ou uma 
 
 **Programas** – além das assinaturas padrão e nuvem, a Microsoft oferece assinaturas por meio de uma variedade de programas especiais.
 
-- [Imagine](https://imagine.microsoft.com/en-us/about) – software e ferramentas para desenvolvedores de nível profissional para estudantes, sem nenhum custo: tudo o que é necessário para criar jogos, aplicativos e sites.
+- [Imagine](https://imagine.microsoft.com/about) – software e ferramentas para desenvolvedores de nível profissional para estudantes, sem nenhum custo: tudo o que é necessário para criar jogos, aplicativos e sites.
 - [BizSpark](https://bizspark.microsoft.com/About/Offers) –produtos e serviços gratuitos para startups.  Os membros do BizSpark têm acesso gratuito a todos os softwares de desenvolvimento e teste da Microsoft, incluindo Azure, Windows, Visual Studio, Office e SQL Server. 
-- [MPN (Microsoft Partner Network)](https://partner.microsoft.com/en-us) – dependendo do seu nível na MPN, você pode receber até 10 assinaturas Enterprise 
-- [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx) – personalizado de maneira especial para oferecer acesso exclusivo aos recursos que ajudarão a desenvolver ainda mais suas habilidades de treinamento e experiência técnica.
+- [MPN (Microsoft Partner Network)](https://partner.microsoft.com/) – dependendo do seu nível na MPN, você pode receber até 10 assinaturas Enterprise 
+- [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx) – personalizado de maneira especial para oferecer acesso exclusivo aos recursos que ajudarão a desenvolver ainda mais suas habilidades de treinamento e experiência técnica. Para as assinaturas do MCT Software & Services e do MCT Developer Software & Services, consulte o [site Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA) para obter detalhes sobre os direitos de uso de treinamento fornecidos com sua assinatura. 
 
 ## <a name="visual-studio-licensing"></a>Licenciamento do Visual Studio
 As assinaturas do Visual Studio são licenciadas por usuário. As pessoas podem usar o software para criar, desenvolver, testar ou demonstrar seus programas em qualquer quantidade de dispositivos. Uma assinatura do Visual Studio também permite que o usuário licenciado avalie o software e simule os ambientes do cliente para diagnosticar problemas relacionados aos seus programas.
@@ -62,4 +62,4 @@ Uma licença de assinatura do Visual Studio também permite que os usuários fin
 
 [Compare os recursos do IDE do Visual Studio](https://www.visualstudio.com/vs/compare/).
 
-Para as assinaturas do MCT Software & Services e do MCT Developer Software & Services, consulte o [site Microsoft Certified Trainer](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA) para obter detalhes sobre os direitos de uso de treinamento fornecidos com sua assinatura.  
+ 
