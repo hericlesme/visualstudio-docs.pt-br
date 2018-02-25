@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Adicionar uma extensão do protocolo de idioma do servidor
 
@@ -136,7 +136,7 @@ O LSP não incluem especificação sobre como fornecer coloração de texto para
 
 1. Crie uma pasta chamada "Gramáticas" dentro de sua extensão (ou pode ser qualquer nome que você escolher).
 
-2. Dentro da pasta "Gramáticas", inclua arquivos *.tmlanguage ou *.tmtheme você gostaria que fornece colorização personalizada.
+2. Dentro da pasta "Gramáticas", inclua qualquer *.tmlanguage, *.plist, *.tmtheme ou os arquivos *. JSON você gostaria que fornece colorização personalizada.
 
 3. Clique com botão direito nos arquivos e selecione **propriedades**. Altere a ação de compilação para **conteúdo** e **incluir VSIX** propriedade como true.
 
