@@ -16,11 +16,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Introdução ao Node.js no Visual Studio
 Neste tutorial para desenvolvimento em Node.js usando o Visual Studio, você criará um aplicativo Web Node.js, adicionará código a ele, explorará alguns recursos do IDE e executará o aplicativo. Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.  
@@ -37,6 +37,10 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
      Se você não vir o modelo de projeto do **Aplicativo Basic Azure Node.js Express 4**, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**. 
 
     O Visual Studio cria a nova solução e abre seu projeto. O arquivo de projeto **app.js** é aberto no editor (painel esquerdo). Se você não estiver familiarizado com projetos e soluções do Visual Studio, consulte [Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js](../ide/quickstart-nodejs.md).
+
+4. Se você não tiver o tempo de execução do Node.js já instalado, instale-o do site do [Node.js](https://nodejs.org/en/download/).
+
+    Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para referenciar o tempo de execução instalado.
 
 ## <a name="add-some-code"></a>Adicionar código
 
@@ -121,7 +125,7 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
     ![Selecionar o destino de depuração](../nodejs/media/tutorial-nodejs-deploy-target.png) 
 
-1. Pressione **CTRL+F5** para executar o aplicativo.
+1. Pressione **F5** (**Depurar** > **Iniciar Depuração**) para executar o aplicativo.
 
     O depurador faz uma pausa no ponto de interrupção que você definir. Agora, você pode inspecionar o estado do aplicativo.
 
@@ -129,7 +133,7 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
     ![Inspecionar variáveis](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. Pressione **F5** para continuar.
+1. Pressione **F5** (**Depurar** > **Continuar**) para continuar.
 
     O aplicativo é aberto em um navegador.
 
@@ -139,7 +143,7 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
     ![Aplicativo em execução no navegador](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Abra a Janela Interativa Node.js selecionando **Exibir > Outras Janelas > Janela Interativa Node.js**.
+1. Abra a Janela Interativa Node.js selecionando **Exibir** > **Outras Janelas** > **Janela Interativa Node.js**.
 
    ![Abrir a Janela Interativa do Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
 

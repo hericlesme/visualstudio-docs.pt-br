@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # Quais opções de publicação são adequadas para mim?
 
@@ -50,6 +50,8 @@ Um Serviço de Aplicativo é executado em máquinas virtuais hospedadas na nuvem
 - Você não precisa de nenhuma personalização de nível de computador nos servidores que hospedam seu aplicativo Web.
 
 > Se quiser usar o Serviço de Aplicativo do Azure em seu próprio datacenter ou em outros computadores locais, você poderá fazer isso usando o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
+
+Para obter mais informações sobre a publicação de aplicativos do ASP.NET Core, consulte [Publicar um aplicativo Web ASP.NET Core no Serviço de Aplicativo do Azure usando o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Máquinas Virtuais do Azure
 
@@ -83,7 +85,7 @@ Observe que se, por algum motivo (como acesso ao computador), não for possível
 - Você precisa apenas de uma implantação de teste local.
 - Você deseja examinar e potencialmente modificar os arquivos do aplicativo independentemente, antes de enviá-los a outro destino de implantação.
 
-
+Para obter mais informações sobre a implantação de aplicativos .NET Core, consulte [Implantando aplicativos .NET Core com o Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Destinos personalizados
 
@@ -103,3 +105,5 @@ Ao escolher um destino personalizado, o Visual Studio solicitará um nome de per
 - Você está usando serviços de nuvem em um provedor diferente do Azure que pode ser acessado por meio de URLs.
 - Você deseja implantar usando credenciais diferentes das que você usa no Visual Studio ou daquelas diretamente ligadas às suas contas do Azure.
 - Você deseja excluir os arquivos do destino a cada vez que implantar.
+
+Para obter mais informações sobre a publicação para IIS, consulte [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 usando ASP.NET 3.5 e ASP.NET 4.5) e [Depuração remota ASP.NET em um computador remoto do IIS](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).

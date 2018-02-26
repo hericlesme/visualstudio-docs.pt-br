@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -28,7 +28,7 @@ Para saber mais sobre os atalhos de teclado comuns, confira [Dicas de teclado](.
 
 Escreva código mais rapidamente usando os seguintes recursos.
 
-- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, no **Visual Studio 2017 versão 15.6 versão prévia 2** e posterior, você pode escolher um comando para duplicar facilmente uma linha de código sem a necessidade de copiá-lo, reposicionar o cursor e, depois, colá-lo. Escolha **Editar** > **Duplicar** ou pressione **Ctrl**+**E**,**V**. Você também pode expandir ou recolher uma seleção de texto escolhendo **Editar** > **Avançado** > **Expandir Seleção** e **Seleção de Contrato**, ou pressionando **Ctrl**+**W** e **Ctrl**+**Shift**+**W** (disponível no **Visual Studio 2017 versão 15.5** e posterior).
+- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, no **Visual Studio 2017 versão 15.6 versão prévia 2** e posterior, você pode escolher um comando para duplicar facilmente uma linha de código sem a necessidade de copiá-lo, reposicionar o cursor e, depois, colá-lo. Escolha **Editar** > **Duplicar** ou pressione **Ctrl**+**E**,**V**. Você também pode expandir ou recolher uma seleção de texto escolhendo **Editar** > **Avançado** > **Expandir Seleção** ou **Editar** > **Avançado** > **Reduzir Seleção** ou pressionando **Shift**+**Alt**+**=** ou **Shift**+**Alt**+**-** (disponível no **Visual Studio 2017 versão 15.5** e posterior).
 
 - **Use o IntelliSense**. À medida que você inserir código no editor, informações do IntelliSense, como Membros da Lista, Informações do Parâmetro, Informações Rápidas, Ajuda de Assinatura e Completar Palavras, serão exibidas. Esses recursos dão suporte à correspondência difusa de texto; por exemplo, as listas de resultados para Membros da Lista incluem não só entradas que começam com os caracteres que você inseriu, como também entradas que contêm a combinação de caracteres em qualquer lugar de seus nomes. Para obter mais informações, veja [Usando o IntelliSense](../ide/using-intellisense.md).
 
@@ -124,7 +124,7 @@ A qualquer momento, você pode estar trabalhando em vários arquivos de código 
 
 ## <a name="see-also"></a>Consulte também
 
-[Atalhos de teclado padrão para comandos usados com frequência](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
-[Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
-[Passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)
+- [Atalhos de teclado padrão para comandos usados com frequência](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)

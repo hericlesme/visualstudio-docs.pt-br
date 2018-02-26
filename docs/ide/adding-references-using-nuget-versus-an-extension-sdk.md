@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 101d16c647887aced273804fc80a890d5102d22c
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Adicionando referências usando o NuGet versus um SDK de Extensão
 
@@ -66,7 +68,7 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 |É possível usar um pacote de símbolos para o suporte à depuração.|S|Se você soltar arquivos .pdb no SDK, os arquivos são selecionados automaticamente.|S||
 |O mecanismo dá suporte a atualizações automáticas do gerenciador de pacotes.|N/D|O SDK é revisado com o MSBuild.|S||
 |O mecanismo dá suporte a um formato de manifesto leve.|S|O SDKManifest.xml dá suporte a muitos atributos, mas geralmente um pequeno subconjunto é necessário.|S||
-|O mecanismo está disponível para todas as edições do Visual Studio.|S|O SDK dá suporte a todas as edições do Visual Studio, desde o Visual Studio Express até o [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|S|O NuGet dá suporte a todas as edições do Visual Studio Express, do Express até o [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|
+|O mecanismo está disponível para todas as edições do Visual Studio.|S|O SDK é compatível com todas as edições do Visual Studio.|S|O NuGet é compatível com todas as edições do Visual Studio.|
 |O mecanismo está disponível para todos os tipos de projeto.|N|O SDK dá suporte a aplicativos do [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] a partir do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|N|É possível examinar uma lista de projetos permitidos.|
 
 ## <a name="see-also"></a>Consulte também

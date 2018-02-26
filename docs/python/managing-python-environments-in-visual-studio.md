@@ -2,13 +2,12 @@
 title: Gerenciar ambientes do Python no Visual Studio | Microsoft Docs
 description: Como usar a janela Ambientes do Python no Visual Studio para gerenciar ambientes globais e virtuais, configurar ambientes personalizados, instalar interpretadores Python, instalar pacotes, configurar caminhos de pesquisa e gerenciar ambientes para projetos do Visual Studio.
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/13/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-dev_langs:
-- python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 author: kraigb
@@ -17,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6abf950f7af86bf65b14752bd1cd9df4a6e292e5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-environments"></a>Ambientes do Python
 
@@ -50,7 +49,7 @@ No Visual Studio, você pode criar um ambiente virtual para um projeto específi
 
 ### <a name="selecting-and-installing-python-interpreters"></a>Selecionando e instalando interpretadores do Python
 
-Por padrão, a instalação da carga de trabalho de desenvolvimento do Python no Visual Studio 2017 também instala o Python 3 (64 bits). Como opção, você pode optar por instalar versões de 32 bits e 64 bits do Python 2, Python 3, Anaconda 2 e Anaconda 3, conforme descrito em [Instalação](installing-python-support-in-visual-studio.md). Você também pode instalar manualmente qualquer um dos interpretadores listados na tabela a seguir.
+Por padrão, a instalação da carga de trabalho de desenvolvimento do Python no Visual Studio 2017 também instala o Python 3 (64 bits). Como opção, você pode optar por instalar versões de 32 bits e 64 bits do Python 2, Python 3, Anaconda 2 e Anaconda 3, conforme descrito em [Instalação](installing-python-support-in-visual-studio.md). Você também pode instalar manualmente qualquer um dos interpretadores listados na tabela abaixo e o Visual Studio os detecta. (Por exemplo, se você instalar o Anaconda 3 antes de instalar o Visual Studio, não será necessário instalar novamente usando o instalador do Visual Studio.)
 
 Para o Visual Studio 2015 e versões anteriores, é necessário instalar manualmente um dos interpretadores.
 
@@ -70,13 +69,16 @@ Para os desenvolvedores que desejam fornecer novas formas de detecção para amb
 
 Para abrir a janela de Ambientes do Python, selecione o comando de menu **Exibir > Outras Janelas > Ambientes do Python** ou clique com o botão direito do mouse no nó **Ambientes do Python** de um projeto no Gerenciador de Soluções e selecione **Exibir Todos os Ambientes do Python**:
 
-![Comando Exibir Todos os Ambientes no Gerenciador de Soluções](media/environments-view-all.png)
+    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
 
 Em ambos os casos, a janela Ambientes do Python é exibida como uma guia irmã do Gerenciador de Soluções:
 
 ![Janela Ambientes do Python](media/environments-default-view.png)
 
-O exemplo acima mostra que o Python 3.4 (CPython de 32 bits) é instalado junto com as versões de 32 e 64 bits do IronPython 2.7. O ambiente padrão em negrito é o Python 3.4, que é usado para os novos projetos. Se não vir nenhum ambiente listado, isso significa que você instalou as Ferramentas Python para o Visual Studio no Visual Studio 2015 ou anterior, mas ainda não instalou um interpretador do Python (consulte [Selecionando e instalando interpretadores do Python](#selecting-and-installing-python-interpreters) acima). O comando **+ Personalizado...** permite que você [crie um ambiente para um intérprete existente](#creating-an-environment-for-an-existing-interpreter).
+O exemplo acima mostra que o Python 3.4 (CPython de 32 bits) é instalado junto com as versões de 32 e 64 bits do IronPython 2.7. O ambiente padrão em negrito é o Python 3.4, que é usado para os novos projetos. Se não vir nenhum ambiente listado, isso significa que você instalou as Ferramentas Python para o Visual Studio no Visual Studio 2015 ou anterior, mas ainda não instalou um interpretador do Python (consulte [Selecionando e instalando interpretadores do Python](#selecting-and-installing-python-interpreters) acima). O comando **+ Personalizado...** permite que você [crie um ambiente para um intérprete existente](#create-an-environment-for-an-existing-interpreter).
+
+> [!Tip]
+> O Visual Studio detecta atualizações para um interpretador existente, como a atualização do Python 2.7.11 para 2.7.14 usando os instaladores de python.org. Durante o processo de instalação, o ambiente mais antigo desaparecerá da lista **Ambientes Python** antes de a atualização aparecer em seu lugar.
 
 À direita de cada ambiente listado está um controle que abre uma janela interativa para esse ambiente. Pode aparecer outro controle que atualiza o banco de dados IntelliSense para esse ambiente.
 
@@ -87,9 +89,9 @@ Abaixo da lista de ambientes há um seletor de lista suspensa para as opções *
 > [!Note]
 > Embora o Visual Studio respeite a opção de pacotes de site do sistema, ele não fornece uma maneira de alterá-lo no próprio Visual Studio.
 
-Para conferir um vídeo de introdução ao gerenciamento de ambientes no Visual Studio, veja [Gerenciar ambientes do Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2min35s).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+|   |   |
+|---|---|
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) sobre os ambientes do Python no Visual Studio (2min35s).|
 
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>Criando um ambiente para um interpretador existente
 

@@ -3,21 +3,22 @@ title: "Lidar com licenças solicitada em excesso | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
 Description: Learn how administrators can resolve over-claimed subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 1040c38e9c45bc833db4fb04a19d9aee45859e79
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d01474a410e2c2b115e5026da5e4d3e5b6783ad5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Tratar de assinaturas solicitadas “em excesso”
-Às vezes, os pedidos são alterados após os assinantes serem adicionados, o que pode resultar em um número maior de assinaturas atribuídas que licenças pertencentes à empresa. Quando isso ocorre, a guia Assinantes mostrará um alerta e fornecerá mais informações. 
-**Observação: os cenários de solicitações em excesso não serão permitidos no programas de licença aberta.**
+Às vezes, os pedidos são alterados após os assinantes serem adicionados, o que pode resultar em um número maior de assinaturas atribuídas que licenças pertencentes à empresa. Quando isso ocorre, a guia Assinantes mostra um alerta e fornece mais informações. 
+> [!NOTE] 
+> Os cenários de solicitações em excesso não são permitidos em programas Open License.
 
 ![Aviso de assinaturas solicitadas em excesso](_img\over-claimed\over-claimed-alert.png)
 

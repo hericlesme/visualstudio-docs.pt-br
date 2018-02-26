@@ -1,5 +1,5 @@
 ---
-title: "Mantendo a segurança | Microsoft Docs"
+title: "Mantendo a segurança do aplicativo | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,18 +15,19 @@ helpviewer_keywords:
 - MBSA (Microsoft Baseline Security Analyzer)
 - security [.NET Framework], maintaining after deployment
 ms.assetid: 621d10c1-842b-4902-be60-bb9719591751
-caps.latest.revision: "18"
-author: TerryGLee
-ms.author: tglee
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 01c2867c60a3aa7b00462503da08bda0a8ac80fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3f4b3e958cbf02f09d850ed9c50fb3e248617398
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="maintaining-security"></a>Mantendo segurança
+
 Costuma-se dizer que o preço da segurança é a vigilância constante. Apesar da sua dedicação à segurança durante o design e desenvolvimento de seu aplicativo, você deve supor que as falhas na segurança surgirão após a implantação. Ao auditar seu aplicativo e analisar os logs de evento, você pode descobrir algumas falhas anteriormente ocultas.  
   
  Além de ser vigilante com seu próprio aplicativo, você também deve se manter atualizado sobre as ameaças e falhas de segurança da plataforma na qual seu aplicativo é executado e de outros produtos dos quais seu aplicativo depende.  

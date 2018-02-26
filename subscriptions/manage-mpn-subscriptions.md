@@ -9,11 +9,11 @@ Description: Managing Visual Studio subscriptions included with Microsoft Partne
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 9866b018d93e1a7b9612f65107f978ecd15bc9de
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 20c8e0593fa6049a270c8575608d57d59d0c4d2d
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="managing-visual-studio-subscriptions-included-with-microsoft-partner-network-mpn-memberships"></a>Gerenciar assinaturas do Visual Studio incluídas em associações do MPN (Microsoft Partner Network)
 
@@ -28,7 +28,8 @@ O número e o nível de assinaturas do Visual Studio variam conforme o nível de
 - [Guia do Administrador do Programa para Benefícios de Serviços Online e de Software]((https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) ) do Microsoft Partner Network
     - PG 6 - atribuir funções de contato e assinaturas do Visual Studio ao Action Pack
 
-      **Observação:** a Função de Contato Técnico é necessária para assinaturas do Visual Studio
+> [!NOTE]
+> A Função de Contato Técnico é necessária para assinaturas do Visual Studio
     - PG 8 – atribuir assinaturas do Visual Studio a parceiros de competência
 
 

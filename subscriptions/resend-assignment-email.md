@@ -1,22 +1,34 @@
 ---
-title: "Como reenviar emails de atribuição de assinatura no VLSC | Microsoft Docs"
+title: "Como reenviar emails de atribuição de assinatura do Manage.visualstudio.com ou VLSC | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 12/29/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to a subscriber from within VLSC
+Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7162435044a578a94249774305f2c6b8b6438219
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails-from-vlsc"></a>Como reenviar emails de atribuição de assinatura no VLSC:
+# <a name="how-to-resend-subscription-assignment-emails"></a>Como reenviar emails de atribuição de assinatura:
 
+As etapas necessárias para reenviar um email de atribuição dependem de qual portal você está usando para gerenciar suas assinaturas. 
+
+## <a name="resending-assignment-emails-from-within-managevisualstudiocom"></a>Reenviar emails de atribuição de dentro de manage.visualstudio.com
+
+O processo para reenviar emails de atribuição de dentro do portal de manage.visualstudio.com é muito simples:
+
+1. Visite o portal [manage.visualstudio.com](https://manage.visualstudio.com) e entre. 
+2. Use a guia **Filtro** para pesquisar o assinante para o qual deseja reenviar o email de atribuição. (Para obter mais informações sobre filtragem, consulte [Pesquisar uma assinatura](/visualstudio/subscriptions/search-license).)
+3. Clique nos assinantes.  Você pode usar Ctrl+clique ou Shift+clique para selecionar vários assinantes.
+4. Clique em **Reenviar** na parte superior dos resultados da pesquisa.  
+
+## <a name="resending-assignment-emails-from-within-vlsc"></a>Reenviar emails de atribuição de dentro do VLSC
 Quando uma assinatura é atribuída a um assinante no VLSC e o assinante solicita que o email de atribuição seja reenviado, você pode fazer isso editando as informações de email do assinante e alterando-as de volta para o endereço original. Isso disparará automaticamente o reenvio do email de atribuição.
 
 Siga as instruções abaixo para reenviar o email de atribuição:
@@ -36,4 +48,3 @@ Isso fará com que o VLSC reconheça que não houve alterações na assinatura e
 
 > [!NOTE]
 > - As assinaturas atribuídas recentemente gerarão automaticamente o email de atribuição. As opções acima só são necessárias quando um usuário solicita uma nova notificação de email de atribuição ou a notificação não é enviada por qualquer motivo.
-> - Este procedimento não é necessário para reenviar emails de atribuição a assinaturas atribuídas por meio de https://manage.visualstudio.com.  Para reenviar emails de atribuição a assinantes no portal, basta selecionar os assinantes e clicar no botão **Reenviar** na parte superior da lista de assinantes.  

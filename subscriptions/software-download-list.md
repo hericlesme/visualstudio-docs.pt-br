@@ -9,11 +9,11 @@ Description: Find a list of the software downloads included with your Visual Stu
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 2d61917908d46a2174e77b46e3cc7ce7738cbc26
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 072b39475f9020b84df0d72acca87119e12ce3b9
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>Como saber qual software está disponível para download?
 
@@ -27,6 +27,6 @@ Se você já tem uma assinatura do Visual Studio:
 Para localizar produtos rapidamente, use as funções de "Pesquisar" na parte superior da página ou clique nos diferentes tipos de produtos à esquerda.
 
 > [!TIP]
-> Se você estiver procurando as chaves do produto, clique em "Chaves do Produto" na parte superior da página.
+> Se você estiver procurando as chaves do produto, clique em **Chaves do Produto** na parte superior da página.
 
 Você também pode baixar uma planilha do Excel que contém uma lista extensa de [títulos de software disponíveis](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) para cada tipo de assinatura.  

@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF
 
@@ -60,7 +60,7 @@ Nesta seção, você criará a infraestrutura do aplicativo, que inclui o projet
 
 1. Na janela **Propriedades**, expanda o nó de categoria **Comum**, escolha a propriedade **Título** e, em seguida, insira `ExpenseIt` e pressione a tecla **Enter**.
   
-     Observe que o elemento **Título** na janela do XAML é alterado para corresponder ao novo valor. Você pode modificar as propriedades de XAML na janela XAML ou na janela **Propriedades** e as alterações são sincronizadas.
+     Observe que o atributo **Título** na janela do XAML é alterado para corresponder ao novo valor. Você pode modificar as propriedades de XAML na janela XAML ou na janela **Propriedades** e as alterações são sincronizadas.
 
 1. Na janela XAML, defina o valor do elemento **Altura** como `375` e defina o valor da propriedade **Largura** como `500`.
   
@@ -116,7 +116,7 @@ Nesta seção, você adicionará duas páginas e uma imagem ao aplicativo.
 
 1. No designer, escolha a guia **ExpenseItHome.xaml** se ela ainda não for a guia ativa do designer.
 
-1. Escolha o elemento `<Title>` e altere o título para **ExpenseIt – Início**.
+1. Escolha o atributo `Title` e altere seu valor para **ExpenseIt - Home**.
   
      O arquivo **ExpenseItHome.xaml** agora deve ter essa aparência em C#:  
   
@@ -178,7 +178,7 @@ Nesta seção, você adicionará duas páginas e uma imagem ao aplicativo.
 
 1. No designer, escolha a guia **ExpenseReportPage.xaml** se ela ainda não for a guia ativa do designer.
 
-1. Escolha o elemento `<Title>` e altere o título para **ExpenseIt – Exibir despesa**.
+1. Escolha o atributo `Title` e altere seu valor para **ExpenseIt - View Expense**.
   
      O arquivo ExpenseReportPage.xaml agora deve ter essa aparência em C#:  
   

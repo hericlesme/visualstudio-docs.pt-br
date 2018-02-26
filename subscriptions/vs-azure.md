@@ -9,11 +9,11 @@ Description: Learn how to activate the Azure benefit included in your Visual Stu
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7354f96a441faa587e2f669ee39defcf3ced1ff6
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: a0587e063aa73666a0e97460b8d92f4614b3b116
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Usando o Microsoft Azure nas assinaturas do Visual Studio
 
@@ -68,11 +68,16 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://m
 ![Painel do Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Perguntas Frequentes
-*Verifique aqui se há atualizações*
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>P: Como posso enviar um incidente de suporte técnico de dentro do Portal do Azure?
+R: O envio de um incidente de suporte do Portal do Azure é um processo de três etapas.
+1. Ative o benefício de suporte técnico e obtenha sua ID de Acesso de ID de Contrato.
+2. Vincule seu contrato de suporte à sua assinatura do Azure. 
+3. Envie um incidente de suporte.
+Visite a documentação do [Suporte Técnico](/visualstudio/subscriptions/vs-tech-support) para encontrar os detalhes completos. 
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Precisa de Ajuda com o Azure?  Confira estes recursos:
-    - Suporte técnico: https://azure.microsoft.com/support/options/ 
-    - [Documentação](/azure/)
+    - Suporte técnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+    - [Documentação do Azure](/visualstudio/azure/)
 -  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
 -  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 
