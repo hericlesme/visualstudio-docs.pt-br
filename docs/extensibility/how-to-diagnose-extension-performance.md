@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir o impacto de extensão na inicialização
 
@@ -30,6 +32,9 @@ Para ajudar os usuários a compreender esse impacto, adicionamos um novo recurso
 ![gerenciar o desempenho do Visual Studio](media/manage-performance.png)
 
 Este documento visa ajudar os desenvolvedores de extensão descrevendo como o impacto de extensão é calculado e como ele pode ser analisado localmente para testar se uma extensão pode ser mostrada como um impacto de extensão de desempenho.
+
+> [!NOTE]
+> Este documento enfoca o impacto das extensões na carga de solução e de inicialização. Extensões também afetam o desempenho do Visual Studio quando eles fazem com que a interface do usuário pare de responder. Para obter mais informações sobre este tópico, consulte [como: atrasos de interface do usuário diagnosticar causados pelas extensões de](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Como as extensões podem afetar a inicialização
 

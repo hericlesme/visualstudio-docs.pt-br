@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 68ea5a718b1a0d1ccff7155f842bc3808d640c21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="command-line-capture-tool"></a>Ferramenta de captura de linha de comando
 O DXCap.exe é uma ferramenta de linha de comando para reprodução e captura de diagnóstico de gráficos. Ele dá suporte a Direct3D 10 a 12 Direct3D em todos os níveis de recurso.  
@@ -42,12 +44,12 @@ DXCap.exe -info
   
  `-frame` `frames`  
  No modo de captura, `frames` especifica os quadros que você deseja capturar. O primeiro quadro é 1. Você pode especificar vários quadros usando vírgulas e intervalos. Por exemplo, se `frames` é `2, 5, 7-9, 15`, em seguida, os quadros `2`, `5`, `7`, `8`, `9`, e `15` são capturadas.  
+
+> [!TIP]
+> Use `-frame` `manual` para especificar que quadros serão capturados manualmente, pressionando a tecla Print Screen. Quadros poderão ser capturados quando o aplicativo é iniciado. Para parar a captura quadros, retorne para a interface de linha de comando e pressione enter.  
   
  `-period` `periods`  
  No modo de captura, `periods` especifica os intervalos de tempo, em segundos, durante o qual você deseja capturar quadros. Você pode especificar vários períodos usando vírgulas e intervalos. Por exemplo se `periods` é `2.1-5, 7.0-9.3`, em seguida, quadros que são renderizados entre `2.1` e `5` segundos e entre`7` e `9.3` segundos são capturados.  
-  
- `-manual`  
- No modo de captura, `-manual` Especifica que quadros serão capturados manualmente, pressionando a tecla Print Screen. Quadros poderão ser capturados quando o aplicativo é iniciado. Para parar a captura quadros, retorne para a interface de linha de comando e pressione enter.  
   
  `-c` `app` [`args...`]  
  Modo de captura. No modo de captura, `app` especifica o nome do aplicativo do qual você deseja capturar informações gráficas; `args...` especifica os parâmetros de linha de comando adicionais para que o aplicativo.  
@@ -166,14 +168,14 @@ DXCap.exe -e map
   
  **Pacote "Microsoft.BingMaps":**  
  **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Nome: Microsoft.BingMaps**  
  **Publicador: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
  **Versão: 2.1.2914.1734**  
  **Aplicativos pode ser iniciados:**  
  **ID: AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: não**  
  * * AppSpec (para iniciar): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** a última linha de saída para cada aplicativo enumerada exibe o comando que você pode usar para capturar informações de gráficos dele.  
   

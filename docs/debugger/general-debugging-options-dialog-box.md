@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,18 +19,20 @@ dev_langs:
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: Options dialog box, debugging
+helpviewer_keywords:
+- Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Caixa de diálogo Geral, Depuração, Opções
 O **Ferramentas > Opções > Depuração > geral** página permite que você defina as seguintes opções:  
@@ -115,7 +118,7 @@ Envia todas as mensagens que normalmente apareceriam do depurador de **saída** 
 Desative todas as personalizações de exibição da estrutura do objeto. Para obter mais informações sobre personalizações de exibição, consulte [criar exibições personalizadas de objetos .managed](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
 **Suprimir Otimização JIT no carregamento do módulo (somente gerenciado)**  
-Desativa a otimização JIT de código gerenciado quando um módulo é carregado e JIT é compilado enquanto o depurador é anexado. Desativar a otimização pode facilitar a depuração de alguns problemas, embora às custas de desempenho. Se você estiver usando Apenas Meu Código, a supressão da otimização de JIT poderá fazer com que código que não seja do usuário apareça como código do usuário ("Meu Código").
+Desativa a otimização JIT de código gerenciado quando um módulo é carregado e JIT é compilado enquanto o depurador é anexado. Desativar a otimização pode facilitar a depuração de alguns problemas, embora às custas de desempenho. Se você estiver usando Apenas Meu Código, a supressão da otimização de JIT poderá fazer com que código que não seja do usuário apareça como código do usuário ("Meu Código"). Para obter mais informações, consulte [Otimização JIT e depuração](../debugger/jit-optimization-and-debugging.md).
 
 **Habilitar depuração de JavaScript para o ASP.NET (Chrome e o IE)** permite que o depurador de script para aplicativos ASP.NET. No primeiro uso no Chrome, talvez seja necessário entrar no navegador no primeiro uso, para habilitar extensões de cromo que você instalou. Desabilite essa opção para reverter para o comportamento herdado.    
 

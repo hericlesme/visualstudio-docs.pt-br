@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.dll
+f1_keywords:
+- vs.debug.dll
 dev_langs:
 - CSharp
 - VB
@@ -21,26 +23,27 @@ helpviewer_keywords:
 - debugging [Visual Studio], DLL crashes
 - DLLs, load order of
 ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95ad4f9c028b9b40bf5104539a608453c9d6f9dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: df872ea52d716b4eaedc9414bc7234ba7c6294d3
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Como localizar em qual DLL o programa falhou
-> [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
  Se houver falhas no aplicativo durante uma chamada a uma DLL do sistema ou o código de outra pessoa, você precisará descobrir qual DLL estava ativa quando a falha ocorreu. Se você tiver uma falha em uma DLL fora do seu próprio programa, você pode identificar o local usando o **módulos** janela.  
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Para descobrir onde ocorreu uma falha usando a janela Módulos  
   
-1.  Observe o endereço onde a falha ocorreu.  
+1.  Observe o endereço onde a falha ocorreu.
+
+    Se o endereço não é exibido na mensagem de erro, você precisará usar métodos alternativos para identificar a DLL. Se você suspeitar de uma DLL do sistema, você pode [carregar símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) de servidores de símbolo Microsoft durante a depuração. Caso contrário, você precisará [criar um arquivo de despejo](../debugger/using-dump-files.md) com pilha informações em vez disso. Vários [ferramentas](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) estão disponíveis para criar arquivos de despejo.
   
 2.  Sobre o **depurar** menu, escolha **Windows**e clique em **módulos**.  
   

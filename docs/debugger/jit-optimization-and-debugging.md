@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,28 +17,41 @@ helpviewer_keywords:
 - debugging [Visual Studio], optimized code
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 23de1ec4e053a87c4f91cf7b599f49b8fe318015
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="jit-optimization-and-debugging"></a>Otimização e depuração JIT
-Quando você depurar um aplicativo gerenciado, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] suprime a otimização de código just-in-time (JIT) por padrão. A supressão da otimização JIT significa que você está depurando código não otimizado. O código é executado um pouco mais lentamente porque não é otimizado, mas sua experiência de depuração é muito mais completa. A depuração de código otimizado é mais difícil e recomendada somente se você encontrar um bug no código otimizado que não pode ser reproduzido na versão não otimizada.  
-  
- Otimização JIT é controlada no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pelo **otimização Suppress JIT no carregamento do módulo** opção. Você pode encontrar essa opção no **geral** página sob o **depuração** nó o **opções** caixa de diálogo.  
-  
- Se você desmarcar a **otimização Suppress JIT no carregamento do módulo** opção, você pode depurar código otimizado JIT, mas sua capacidade de depuração pode ser limitada porque o código otimizado não coincide com o código-fonte. Como resultado, janelas do depurador, como o **locais** e **Autos** janela não podem exibir as informações que eles seriam se você for depurando código não otimizado.  
-  
- Outra diferença importante está relacionada à depuração com Apenas Meu Código. Se você estiver depurando com Apenas Meu Código, o depurador considerará o código otimizado como código de não usuário, que não deve ser exibido durante a depuração. Consequentemente, se estiver depurando código otimizado JIT, provavelmente será conveniente desativar Apenas Meu Código. Para obter mais informações, consulte [restringir passo a passo para apenas meu código](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code).  
-  
- Lembre-se de que o **otimização Suppress JIT no carregamento do módulo** opção suprime a otimização de código quando módulos são carregados. Se você anexar a um processo que já estiver em execução, ele poderá conter código já carregado, compilado por JIT e otimizado. O **otimização Suppress JIT no carregamento do módulo** opção não tem nenhum efeito sobre esse código, embora ela afetará módulos que estão carregados depois que você anexar. Além disso, o **otimização Suppress JIT no carregamento do módulo** opção não afeta módulos, como WinForms, que são criados com NGEN.  
-  
+**Como as otimizações funcionam no .NET:** se você está tentando depurar o código, é mais fácil quando que o código é **não** otimizado. Isso ocorre porque quando o código está otimizado, o compilador e o tempo de execução de fazem alterações para o código de CPU emitido para que ele é executado mais rapidamente, mas tem um mapeamento menos direto ao código-fonte original. Isso significa que depuradores são geralmente não é possível informar o valor de variáveis locais e a revisão de código e os pontos de interrupção podem não funcionar conforme o esperado.
+
+Normalmente a configuração de compilação de versão cria código otimizado e a configuração de compilação de depuração não. O `Optimize` propriedade MSBuild controla se o compilador deve otimizar código.
+
+No ecossistema do .NET, código esteja ativado de origem para instruções de CPU em um processo de duas etapas: primeiro, o compilador c# converte o texto digitado em um formato binário intermediário chamado MSIL e grava isso em arquivos. dll. Posteriormente, o tempo de execução do .NET converte este MSIL em instruções de CPU. As duas etapas podem otimizar até certo ponto, mas a segunda etapa executada pelo tempo de execução .NET executa as otimizações mais significativas.
+
+**A opção 'Otimização Suppress JIT no carregamento do módulo (somente gerenciado)':** o depurador expõe uma opção que controla o que acontece quando uma DLL que é compilada com otimizações habilitadas carrega dentro do processo de destino. Se essa opção estiver desmarcada (o estado padrão), em seguida, quando o tempo de execução do .NET compila o código MSIL em código de CPU, ele deixa as otimizações habilitadas. Se a opção estiver marcada, o depurador solicita que otimizações desabilitada.
+
+O **otimização Suppress JIT no carregamento do módulo (somente gerenciado)** opção pode ser encontrada no **geral** página sob o **depuração** nó no **opções** caixa de diálogo.
+
+**Quando você marca essa opção:** marque essa opção quando você baixou as DLLs de outra origem, como um pacote do nuget, e você deseja depurar o código nessa DLL. Em ordem para este trabalho, você também deve localizar o arquivo de símbolo (. PDB) para essa DLL.
+
+Se você só está interessado em depurar o código que você está criando localmente, convém deixar essa opção estiver desmarcada, como, em alguns casos, a habilitação dessa opção será significativamente mais lenta de depuração. Há dois motivos para isso lento:
+
+* Código otimizado é executada mais rapidamente. Se você está desativando otimizações de muita código, o impacto no desempenho pode somar.
+* Se você tiver Just My Code ativado, o depurador nem tente e carregar símbolos para DLLs que são otimizados. Localizar símbolos pode levar muito tempo.
+
+**Limitações desta opção:** há duas situações em que essa opção será **não** funcionam:
+
+1. Em situações em que você está anexando o depurador a um processo já em execução, essa opção não terá efeito nos módulos que já foram carregados no momento em que o depurador foi anexado.
+2. Essa opção não tem nenhum efeito em DLLs que foram previamente compilado (também conhecidos como ngen'ed) para código nativo. No entanto, você pode desabilitar o uso do código compilado previamente iniciando o processo com o ambiente de que variável 'COMPlus_ZapDisable' definido como '1'.
+
 ## <a name="see-also"></a>Consulte também  
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
  [Navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md)   

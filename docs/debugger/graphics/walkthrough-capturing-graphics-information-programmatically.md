@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.  
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/05/2018
   
 -   Chamar `CaptureCurrentFrame`quando um problema de processamento é difícil de prever e capturar em testes manuais, mas pode ser previsto programaticamente usando informações sobre o estado do aplicativo em tempo de execução.  
   
-##  <a name="CaptureDX11_2"></a>Captura programática no Windows 10  
+##  <a name="CaptureDX11_2"></a> Captura programática no Windows 10  
  Esta parte do passo a passo demonstra Captura programática em aplicativos que usam a API do DirectX 11.2 no Windows 10, que usa o método de captura robusta.
   
  Esta seção mostra como fazer estas tarefas:  
@@ -79,7 +79,7 @@ ms.lasthandoff: 02/05/2018
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Não se esqueça de verificar o `HRESULT` retornado por `DXGIGetDebugInterface1` para garantir que você obtenha uma interface válida antes de usá-la:  
+     Verifique o `HRESULT` retornado por [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) para garantir que você tenha uma interface válida antes de você usá-lo:  
   
     ```  
     if (FAILED(getAnalysis))  
