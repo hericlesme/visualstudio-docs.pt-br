@@ -16,11 +16,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 2ae49bb09d30122297efc66779f808e0c39dd0d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 10ac98027a4f7e50f66ec27636507e89f64849ee
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ para Desenvolvimento Móvel Multiplataforma
 Você pode criar aplicativos C++ nativos para dispositivos iOS, Android e Windows e compartilhar código comum em bibliotecas criadas para iOS, Android e Windows, usando Visual C++ para Desenvolvimento Móvel de Multiplataforma. Essa é uma opção disponível no Visual Studio 2015 que instala os SDKs e ferramentas necessárias para o desenvolvimento de plataforma cruzada de bibliotecas compartilhadas e aplicativos nativos. Quando ele estiver instalado, você poderá usar o Visual C++ para criar código que é executado em dispositivos iOS e Android, além de Windows, Windows Phone e Xbox.  
@@ -39,7 +39,7 @@ Você pode criar aplicativos C++ nativos para dispositivos iOS, Android e Window
  Visual C++ para Desenvolvimento Móvel de Multiplataforma é uma opção instalável que vem com o Visual Studio 2015. Para obter instruções de instalação e pré-requisitos, consulte [Instalar o Visual C++ para Desenvolvimento Móvel de Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Para compilar código para iOS, você também precisa de um computador Mac e uma Conta de Desenvolvedor do Apple iOS. Para obter mais informações, consulte [Instalar e Configurar Ferramentas para Compilar usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
 ## <a name="come-up-to-speed"></a>Excelente operação  
- Se você estiver vindo do desenvolvimento Android ou iOS, temos materiais excelente sobre como começar. O Visual Studio é um ambiente de desenvolvimento completo expressivo e capaz. Para saber como usá-lo, tente o [Introdução para desenvolvedores do Android](https://msdn.microsoft.com/en-us/library/windows/apps/dn275875.aspx) ou [Introdução para desenvolvedores do iOS](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj657966.aspx). Esses tópicos o apresentarão ao Visual Studio e os conceitos que você precisará para desenvolver aplicativos de plataforma cruzada para Windows e Windows Phone. Para começar a gravar seu primeiro aplicativo de plataforma cruzada para iOS e Android, consulte [Compilar um Aplicativo do OpenGL ES no Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
+ Se você estiver vindo do desenvolvimento Android ou iOS, temos materiais excelente sobre como começar. O Visual Studio é um ambiente de desenvolvimento completo expressivo e capaz. Para saber como usá-lo, tente o [Introdução para desenvolvedores do Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) ou [Introdução para desenvolvedores do iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Esses tópicos o apresentarão ao Visual Studio e os conceitos que você precisará para desenvolver aplicativos de plataforma cruzada para Windows e Windows Phone. Para começar a gravar seu primeiro aplicativo de plataforma cruzada para iOS e Android, consulte [Compilar um Aplicativo do OpenGL ES no Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
   
  O Visual C++ para Desenvolvimento Móvel de Multiplataforma inclui vários modelos para ajudá-lo a começar com seus aplicativos:  
   

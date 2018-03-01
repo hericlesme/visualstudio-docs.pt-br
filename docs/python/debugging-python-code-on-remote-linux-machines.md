@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Depurar o código do Python remotamente no Linux
 
@@ -40,7 +40,7 @@ Os itens a seguir são necessários para acompanhar esse passo a passo:
 - Um computador remoto que execute o Python em um sistema operacional como o Mac OSX ou Linux.
 - A porta 5678 (entrada) aberta no firewall desse computador, que é o padrão para a depuração remota.
 
-É possível criar facilmente [máquinas virtuais do Linux no Azure](/azure/virtual-machines/linux/creation-choices) e [acessá-las usando a Área de Trabalho Remota](/azure/virtual-machines/linux/use-remote-desktop) do Windows. É conveniente um Ubuntu para a VM, pois o Python é instalado por padrão. Caso contrário, consulte a lista em [Instalar um interpretador do Python de sua escolha](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) para obter mais locais de download do Python.
+É possível criar facilmente [máquinas virtuais do Linux no Azure](/azure/virtual-machines/linux/creation-choices) e [acessá-las usando a Área de Trabalho Remota](/azure/virtual-machines/linux/use-remote-desktop) do Windows. É conveniente um Ubuntu para a VM, pois o Python é instalado por padrão. Caso contrário, consulte a lista em [Instalar um interpretador do Python de sua escolha](installing-python-interpreters.md) para obter mais locais de download do Python.
 
 Para obter detalhes sobre como criar uma regra de firewall para uma VM do Azure, consulte [Abrir portas para uma VM no Azure usando o Portal do Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 

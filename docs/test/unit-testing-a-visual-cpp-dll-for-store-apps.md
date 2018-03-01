@@ -1,7 +1,7 @@
 ---
 title: Como testar uma DLL do Visual C++ para aplicativos UWP | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 02c1e5a2bc4ba10aa1719ace69fc33de79995984
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Como testar uma DLL do Visual C++
 
@@ -54,7 +54,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
   
 1.  Insira algum código de teste:  
   
-    ```cpp  
+    ```cpp
     TEST_METHOD(TestMethod1)  
     {  
         Assert::AreEqual(1,1);  

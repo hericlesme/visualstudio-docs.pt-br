@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 520cd9eacf494ac1d8f8e26a7e1ef51581a49956
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos do sistema para o emulador do Visual Studio para Android
 O Emulador do Visual Studio para Android é executado como uma máquina virtual no Hyper-V, a tecnologia de virtualização para o Windows 8 e versões posteriores. Para executar o emulador, o computador deve atender aos requisitos para executar o Hyper-V, conforme descrito neste tópico.  
   
- O programa de instalação tenta configurar esses pré-requisitos para você silenciosamente durante a instalação do emulador. Quando a instalação configurar os pré-requisitos com êxito, o emulador funcionará apenas como esperado. Caso contrário, talvez você precise habilitar esses pré-requisitos manualmente. Se você precisar configurar os pré-requisitos manualmente, as etapas e ferramentas serão as mesmas etapas descritas [aqui](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx) para o Emulador do Windows Phone.  
+ O programa de instalação tenta configurar esses pré-requisitos para você silenciosamente durante a instalação do emulador. Quando a instalação configurar os pré-requisitos com êxito, o emulador funcionará apenas como esperado. Caso contrário, talvez você precise habilitar esses pré-requisitos manualmente. Se você precisar configurar os pré-requisitos manualmente, as etapas e ferramentas serão as mesmas etapas descritas [aqui](/previous-versions/windows/apps/jj863509\(v=vs.105\)) para o Emulador do Windows Phone.  
   
 > [!IMPORTANT]
 >  O programa de instalação do emulador verifica os pré-requisitos para executar o Emulador do Visual Studio para Android. Exibirá avisos se os pré-requisitos não estiverem presentes, mas não os exige.  

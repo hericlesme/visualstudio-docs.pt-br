@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f6122e989ce1394f31aab26b3c2eace68e9f3d21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projetos do serviço de nuvem do Azure para Python
 
@@ -93,7 +93,7 @@ Para os Serviços de Nuvem, o script `ConfigureCloudService.ps1` usa `pip` para 
 
 Observe que as instâncias do Serviço de Nuvem não incluem compiladores do C e, portanto, todas as bibliotecas com extensões do C devem fornecer binários pré-compilados.
 
-O PIP e suas dependências, bem como os pacotes em `requirements.txt`, são baixados automaticamente e podem ser contados como uso de largura de banda passível de cobrança. Consulte [Gerenciando os pacotes necessários](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) para obter detalhes sobre como gerenciar arquivos `requirements.txt`.
+O PIP e suas dependências, bem como os pacotes em `requirements.txt`, são baixados automaticamente e podem ser contados como uso de largura de banda passível de cobrança. Consulte [Gerenciando os pacotes necessários](managing-required-packages-with-requirements-txt.md) para obter detalhes sobre como gerenciar arquivos `requirements.txt`.
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
