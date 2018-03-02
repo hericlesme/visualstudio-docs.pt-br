@@ -43,7 +43,6 @@
 #### [Como coletar dados de desempenho de um site da Web](how-to-collect-performance-data-for-a-web-site.md)
 #### [Como criar manualmente sessões de desempenho](how-to-manually-create-performance-sessions.md)
 #### [Passo a passo: identificar problemas de desempenho](walkthrough-identifying-performance-problems.md)
-#### [Exemplo PeopleTrax (ferramentas de criação de perfil)](peopletrax-sample-profiling-tools.md)
 ### [Configurar sessões de desempenho](configuring-performance-sessions.md)
 #### [Como fazer referência a informações de símbolo do Windows](how-to-reference-windows-symbol-information.md)
 #### [Como escolher métodos de coleta](how-to-choose-collection-methods.md)
