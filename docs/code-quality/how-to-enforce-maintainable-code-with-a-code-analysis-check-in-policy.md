@@ -15,21 +15,21 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4f31d1e93ed648bf2065bbff9dac8800c1d4f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como impor um código com facilidade de manutenção com uma política de check-in de análise do código
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como: impor um código com uma política de check-in do analysis código
 
-Os desenvolvedores podem usar a ferramenta de avaliação de código para medir a complexidade e facilidade de manutenção de seu código, mas você não pode invocar as métricas de código como parte de uma política de check-in. No entanto, você pode habilitar as regras de análise de código que verificam a conformidade do seu código com os padrões de métricas de código e impor as regras por meio de políticas de check-in. Para obter mais informações sobre as métricas de código, consulte o [valores de métricas de código](../code-quality/code-metrics-values.md).
+Os desenvolvedores podem usar a ferramenta de avaliação de código para medir a complexidade e facilidade de manutenção de seu código, mas você não pode invocar as métricas de código como parte de uma política de check-in. No entanto, você pode habilitar as regras de análise de código que verificam a conformidade do seu código com os padrões de métricas de código e impor as regras por meio de políticas de check-in. Para obter mais informações sobre as métricas de código, consulte [valores de métricas de código](../code-quality/code-metrics-values.md).
 
 Você pode habilitar a profundidade de herança, acoplamento de classe, o índice de facilidade de manutenção e regras de complexidade para impor um código por meio de uma política de check-in de análise de código. Todos os quatro essas regras são encontrados na categoria "Regras de facilidade de manutenção" no editor de política de análise de código.
 
 Os administradores de controle de versão do Team Foundation podem adicionar as regras de facilidade de manutenção de análise de código para os requisitos de política de check-in. Esses check-in políticas exigirem que os desenvolvedores executar a análise de código com base em alterações essas regras antes de iniciar um check-in.
 
-## <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir o Editor de política de análise de código
+## <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir o editor de política de análise de código
 
 1. no **Team Explorer**, o projeto de equipe, clique **as configurações de projeto de equipe**e, em seguida, clique em **controle de origem**.
 
@@ -64,4 +64,4 @@ Os administradores de controle de versão do Team Foundation podem adicionar as 
 ## <a name="see-also"></a>Consulte também
 
 [Valores de métricas de código](../code-quality/code-metrics-values.md)
-[criando e usando políticas do Check-In de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+[criando e usando políticas do check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

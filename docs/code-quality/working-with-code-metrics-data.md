@@ -1,5 +1,5 @@
 ---
-title: "Resultados de métricas no Visual Studio de código | Microsoft Docs"
+title: "A janela de resultados de métricas de código no Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,13 +19,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>Trabalhando com dados de métricas de código
+# <a name="using-the-code-metrics-results-window"></a>Usando a janela de resultados de métricas de código
 
 O **resultados de métricas de código** janela exibe os dados que são gerados pela análise de métricas de código. Para obter mais informações sobre valores de dados de métricas de código, consulte [valores de métricas de código](../code-quality/code-metrics-values.md).
 
@@ -41,7 +41,7 @@ O **resultados de métricas de código** janela é exibida automaticamente quand
 
 - Sobre o **exibição** menu, escolha **outras janelas** > **resultados de métricas de código**.
 
-   O **resultados de métricas de código** janela é exibida, mesmo se ele não contém nenhum resultado.
+O **resultados de métricas de código** janela é exibida, mesmo se ele não contém nenhum resultado.
 
 ### <a name="to-view-code-metrics-details"></a>Para exibir detalhes de métricas de código
 
@@ -73,7 +73,7 @@ Você pode adicionar ou remover colunas para os resultados de **resultados de m�
 
 1. Clique o **Adicionar/remover colunas** botão.
 
-     \-ou - clique qualquer cabeçalho de coluna e, em seguida, clique em **Adicionar/remover colunas**.
+     \- ou - clique qualquer cabeçalho de coluna e, em seguida, clique em **Adicionar/remover colunas**.
 
 1. No **Adicionar/remover colunas** caixa de diálogo, desmarque a caixa de seleção para a coluna que você deseja remover e, em seguida, clique em **Okey**.
 
@@ -131,5 +131,5 @@ Para obter mais informações sobre VSTS itens de trabalho, consulte [(VSTS) de 
 
 ## <a name="see-also"></a>Consulte também
 
-[Valores de métricas de código](../code-quality/code-metrics-values.md)  
-[Como gerar dados de métricas do código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Valores de métricas de código](../code-quality/code-metrics-values.md)
+- [Como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

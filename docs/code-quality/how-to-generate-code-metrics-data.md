@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ca031d23d244c3b02cfea1e64685663e4e25a34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 52726b521d3887dee31b74b0ba110aa8d25350e5
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como: gerar dados de métricas de código
 
@@ -37,7 +38,7 @@ Você pode gerar resultados de métricas de código para uma solução inteira o
 
 - No **resultados de métricas de código** janela, escolha o **calcular métricas de código para solução** botão.
 
-   Os resultados são gerados e **resultados de métricas de código** janela é exibida.
+Os resultados são gerados e **resultados de métricas de código** janela é exibida.
 
 ## <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Para gerar resultados de métricas de código para um ou mais projetos selecionados
 
@@ -49,8 +50,9 @@ Você pode gerar resultados de métricas de código para uma solução inteira o
 
 ## <a name="to-view-the-results-details"></a>Para exibir os detalhes de resultados
 
-- No **resultados de métricas de código** janela, expanda a árvore no **hierarquia** coluna.
+No **resultados de métricas de código** janela, expanda a árvore no **hierarquia** coluna.
 
 ## <a name="see-also"></a>Consulte também
 
-[Valores de métricas de código](../code-quality/code-metrics-values.md)
+- [Use a janela de resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
+- [Valores de métricas de código](../code-quality/code-metrics-values.md)

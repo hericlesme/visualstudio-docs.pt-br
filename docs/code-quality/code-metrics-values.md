@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>Valores de métricas de código
 
@@ -26,9 +26,11 @@ O aumento da complexidade de aplicativos modernos também aumenta a dificuldade 
 
 Os desenvolvedores podem usar o Visual Studio para gerar dados de métricas de código que medem a complexidade e facilidade de manutenção de seu código gerenciado. Dados de métricas de código podem ser gerados para uma solução inteira ou um único projeto.
 
+Para obter informações sobre como gerar dados de métricas de código no Visual Studio, consulte [como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md).
+
 ## <a name="software-measurements"></a>Medições de software
 
-A lista a seguir mostra os resultados de métricas de código que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] calcula:
+A lista a seguir mostra o código de resultados de métricas que calcula o Visual Studio:
 
 - **Índice de facilidade de manutenção** -calcula um valor de índice entre 0 e 100 que representa a relativa facilidade de manutenção do código. Um valor alto significa melhor capacidade de manutenção. Classificações de codificados por cores podem ser usadas para identificar rapidamente pontos problemáticos em seu código. Uma classificação verde entre 20 e 100 e indica que o código tem boa facilidade de manutenção. Uma classificação amarela está entre 10 e 19 e indica que o código é razoavelmente fácil manutenção. Uma classificação vermelha é uma classificação entre 0 e 9 e indica pouca facilidade de manutenção.
 
@@ -51,3 +53,8 @@ Para obter mais informações sobre como as métricas de código trata métodos 
 Algumas ferramentas de software e compiladores geram código que é adicionado a um projeto e que o desenvolvedor do projeto não vê ou não deve ser alterada. Basicamente, métricas de código ignora o código gerado quando ela calcula os valores de métricas. Isso permite que os valores de métricas refletir o que o desenvolvedor pode ver e alterar.
 
 Código gerado para formulários do Windows não é ignorado, porque ele é o código que o desenvolvedor pode ver e alterar.
+
+## <a name="next-steps"></a>Próximas etapas
+
+- [Como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Use a janela de resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
