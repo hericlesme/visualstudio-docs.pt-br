@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0503abb3d62e9fd61149b884a7b58a685fbc62c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a2335c3697be9ef3e2d674ac37047ddd3de242d
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-version-information"></a>JavaScript Informações da versão
 Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de elementos JavaScript. Os aplicativos [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] oferecem suporte a um conjunto de recursos ligeiramente diferente daqueles do Internet Explorer.  
@@ -37,7 +37,7 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
  A tabela a seguir mostra os modos de documento do Internet Explorer (e aplicativos da Store que representam o [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] e o [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)]) que dão suporte a elementos de linguagem específicos. Modos de documento que oferecem suporte a um determinado elemento são indicados pela letra **Y**, e os modos de documento que não dão suporte a um determinado elemento são indicados pela letra **N**.  
   
 > [!IMPORTANT]
->  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (Navegador Edge no Windows 10) não inclui suporte para modos de documento herdado. O suporte para aplicativos [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] começa com o Windows Phone 8.1. Recursos experimentais (sobre: flags) são indicados por "Exp".  
+>  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (Navegador edge no Windows 10) não inclui suporte para modos de documento herdado. O suporte para aplicativos [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] começa com o Windows Phone 8.1. Recursos experimentais (sobre: flags) são indicados por "Exp".  
   
  A tabela contém informações de resumo. Para obter informações mais específicas, consulte a documentação do elemento de linguagem.  
   
@@ -112,7 +112,7 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[Propriedade Debug.setNonUserCodeExceptions](../../javascript/reference/debug-setnonusercodeexceptions-property.md)|N|N|N|S|S|S|S|  
 |[Instrução debugger](../../javascript/reference/debugger-statement-javascript.md)|S|S|S|S|S|S|S|  
 |[Função decodeURI](../../javascript/reference/decodeuri-function-javascript.md)|S|S|S|S|S|S|S|  
-|[Função DecodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)|S|S|S|S|S|S|S|  
+|[Função decodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador de decremento (-)](../../javascript/reference/increment-and-decrement-operators-javascript.md)|S|S|S|S|S|S|S|  
 |[Funções](../../javascript/functions-javascript.md)|N|N|N|N|N|Exp.|v8.1: N<br />V10: Exp.|  
 |[Função defineProperties](../../javascript/reference/object-defineproperties-function-javascript.md)|N|S*|S|S|S|S|S|  
@@ -231,8 +231,8 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[Propriedade lastIndex](../../javascript/reference/lastindex-property-regexp-javascript.md)|S|S|S|S|S|S|S|  
 |[Método lastIndexOf (Array)](../../javascript/reference/lastindexof-method-array-javascript.md)|N|N|S|S|S|S|S|  
 |[Método lastIndexOf (String)](../../javascript/reference/lastindexof-method-string-javascript.md)|S|S|S|S|S|S|S|  
-|[Propriedade lastMatch ($&)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)|S|S|S|S|S|S|S|  
-|[Propriedade lastParen ($ +)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)|S|S|S|S|S|S|S|  
+|[lastMatch Property ($&)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)|S|S|S|S|S|S|S|  
+|[lastParen Property ($+)](../../javascript/reference/lastparen-property-dollar-regexp-javascript.md)|S|S|S|S|S|S|S|  
 |[Método LBound](../../javascript/reference/lbound-method-vbarray-javascript.md)|S|S|S|S|S|S|S|  
 |[Propriedade leftContext ($')](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador de atribuição de deslocamento para a esquerda(<<=)](../../javascript/reference/left-shift-assignment-operator-decrement-equal-javascript.md)|S|S|S|S|S|S|S|  
@@ -249,7 +249,7 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[Método localeCompare](../../javascript/reference/localecompare-method-string-javascript.md)|S|S|S|S|S|S|S|  
 |[Função log](../../javascript/reference/math-log-function-javascript.md)|S|S|S|S|S|S|S|  
 |[Constante LOG2E](../../javascript/reference/math-constants-javascript.md)|S|S|S|S|S|S|S|  
-|[Constante LOG10E](../../javascript/reference/math-constants-javascript.md)|S|S|S|S|S|S|S|  
+|[LOG10E Constant](../../javascript/reference/math-constants-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador AND lógico (&&)](../../javascript/reference/logical-and-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador NOT lógico (!)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|S|S|S|S|S|S|S|  
 |[OR lógico operador (&#124; &#124;)](../../javascript/reference/logical-or-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
@@ -262,14 +262,14 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[Propriedade Message](../../javascript/reference/message-property-error-javascript.md)|S|S|S|S|S|S|S|  
 |[Função min](../../javascript/reference/math-min-function-javascript.md)|S|S|S|S|S|S|S|  
 |[Constante MIN_VALUE](../../javascript/reference/number-constants-javascript.md)|S|S|S|S|S|S|S|  
-|[Operador de atribuição de módulo (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
-|[Operador de módulo (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|S|S|S|S|S|S|S|  
+|[Operador de atribuição de resto (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
+|[Operador restante (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|S|S|S|S|S|S|S|  
 |[Método moveFirst](../../javascript/reference/movefirst-method-enumerator-javascript.md)|S|S|S|S|S|S|S|  
 |[Método moveNext](../../javascript/reference/movenext-method-enumerator-javascript.md)|S|S|S|S|S|S|S|  
 |[Propriedade Multiline](../../javascript/reference/multiline-property-regular-expression-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador de atribuição de multiplicação (*=)](../../javascript/reference/multiplication-assignment-operator-decrement-equal-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador de multiplicação (*)](../../javascript/reference/multiplication-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
-|[nome de propriedade](../../javascript/reference/name-property-error-javascript.md)|S|S|S|S|S|S|S|  
+|[Propriedade Name](../../javascript/reference/name-property-error-javascript.md)|S|S|S|S|S|S|S|  
 |[Constante NaN (Global)](../../javascript/reference/nan-constant-javascript.md)|S|S|S|S|S|S|S|  
 |[Constante NaN (número)](../../javascript/reference/number-constants-javascript.md)|S|S|S|S|S|S|S|  
 |[Constante NEGATIVE_INFINITY](../../javascript/reference/number-constants-javascript.md)|S|S|S|S|S|S|S|  
@@ -277,7 +277,7 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[Operador nonidentity (! = =)](../../javascript/reference/comparison-operators-javascript.md)|S|S|S|S|S|S|S|  
 |[Função Now](../../javascript/reference/date-now-function-javascript.md)|N|N|S|S|S|S|S|  
 |[Objeto Number](../../javascript/reference/number-object-javascript.md)|S|S|S|S|S|S|S|  
-|[Propriedade Number](../../javascript/reference/number-property-error-javascript.md)|S|S|S|S|S|S|S|  
+|[Propriedade de número](../../javascript/reference/number-property-error-javascript.md)|S|S|S|S|S|S|S|  
 |[Objeto Object](../../javascript/reference/object-object-javascript.md)|S|S|S|S|S|S|S|  
 |[Precedência do Operador](../../javascript/operator-subtractprecedence-javascript.md)|S|S|S|S|S|S|S|  
 |[Função Date.parse](../../javascript/reference/date-parse-function-javascript.md)|S|S|S|S|S|S|S|  
@@ -345,7 +345,7 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[Método split](../../javascript/reference/split-method-string-javascript.md)|S|S|S|S|S|S|S|  
 |[Funções](../../javascript/functions-javascript.md)|N|N|N|N|N|S|v8.1: N<br />V10: S|  
 |[Função Sqrt](../../javascript/reference/math-sqrt-function-javascript.md)|S|S|S|S|S|S|S|  
-|[Constante SQRT1_2](../../javascript/reference/math-constants-javascript.md)|S|S|S|S|S|S|S|  
+|[SQRT1_2 Constant](../../javascript/reference/math-constants-javascript.md)|S|S|S|S|S|S|S|  
 |[Constante SQRT2](../../javascript/reference/math-constants-javascript.md)|S|S|S|S|S|S|S|  
 |[Diretiva use strict](../../javascript/reference/use-strict-directive.md)|N|N|N|S|S|S|S|  
 |[Método Strike](../../javascript/reference/html-tag-methods-javascript.md)|S|S|S|S|S|S|S|  
@@ -412,7 +412,7 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[Função Write](../../javascript/reference/debug-write-function-javascript.md)|S|S|S|S|S|S|S|  
 |[Função writein](../../javascript/reference/debug-writeln-function-javascript.md)|S|S|S|S|S|S|S|  
   
- \*Oferece suporte a objetos DOM, mas não definido pelo usuário a objetos. Os atributos `enumerable` e `configurable` podem ser especificados, mas não são usados.  
+ \* Oferece suporte a objetos DOM, mas não definido pelo usuário a objetos. Os atributos `enumerable` e `configurable` podem ser especificados, mas não são usados.  
   
 ## <a name="see-also"></a>Consulte também  
  [Definindo a compatibilidade do documento](http://go.microsoft.com/fwlink/?LinkId=208537)
