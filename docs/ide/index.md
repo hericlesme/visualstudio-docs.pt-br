@@ -5,13 +5,15 @@ layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 8e4b17a5f7c7e7bc6795cd595308bd4d4de9d2a5
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: 5d5005e4aa6a41b2062f2dab62d577edb5f91674
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="visual-studio-documentation"></a>Documentação do Visual Studio
 
@@ -125,7 +127,7 @@ Tutoriais, vídeos e outras documentações mostram maneiras de criar código e 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Escrever código no editor</h3>
+                        <h3>Usar o editor de códigos</h3>
                     </div>
                 </div>
             </div>

@@ -33,6 +33,8 @@
 #### [Atualizações de controle para implantações do Visual Studio](install/controlling-updates-to-visual-studio-deployments.md)
 ### Gerenciar instalações
 #### [Ferramentas para detectar e gerenciar instâncias do Visual Studio](install/tools-for-managing-visual-studio-instances.md)
+### Gerenciar assinaturas
+#### [Assinaturas do Visual Studio: visão geral do Administrador](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Guia do administrador do Help Viewer](ide/help-viewer-administrator-guide.md)
 #### [Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Substituições do Gerenciador de Conteúdo da Ajuda](ide/help-content-manager-overrides.md)
@@ -46,7 +48,7 @@
 # Guias de Início Rápido
 ## [Orientação do Visual Studio](ide/quickstart-ide-orientation.md)
 ## [Projetos e Soluções](ide/quickstart-projects-solutions.md)
-## [Escrever Código no Editor](ide/quickstart-editor.md)
+## [Usar o Editor](ide/quickstart-editor.md)
 ## [Personalizar Tema e Cores do Texto](ide/quickstart-personalize-the-ide.md)
 ## [C++: criar um aplicativo do console](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python: criar um aplicativo Web](ide/quickstart-python.md)
@@ -97,7 +99,8 @@
 ##### [Substituir parâmetros em um modelo](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Suporte ao IDE do Visual Studio de 64 bits](ide/visual-studio-ide-64-bit-support.md)
 ### [Desenvolver sem Projetos ou Soluções ("Abrir pasta")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-### [Escrever Código no Editor](ide/writing-code-in-the-code-and-text-editor.md)
+#### [Personalizar as tarefas de depuração e build](ide/customize-build-and-debug-tasks-in-visual-studio.md)
+### [Usar o Editor](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Localizar e Substituir Texto](ide/finding-and-replacing-text.md)
 ##### [Usar Expressões Regulares](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Caixa Localizar/Comando](ide/find-command-box.md)
