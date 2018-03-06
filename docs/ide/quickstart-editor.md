@@ -14,15 +14,17 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: fd24e4ebcdda7a3b8fbc0b992e1ef952a930029a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="quickstart-coding-in-the-editor"></a>Guia de início rápido: Codificação no editor
+# <a name="quickstart-use-the-code-editor"></a>Início rápido: Usar o editor de códigos
 
 Nesta introdução de 10 minutos ao editor, vamos adicionar o código a um arquivo para ver algumas das formas em que o Visual Studio facilita a gravação, a navegação e o entendimento do código.
+
+Este guia de início rápido pressupõe que você já esteja familiarizado com uma linguagem de programação. Se não estiver, sugerimos que você confira um dos tutoriais de programação, por exemplo, como criar um aplicativo Web com [Python](../ide/quickstart-python.md) ou [C#](../ide/tutorial-csharp-aspnet-core.md), ou criar um aplicativo de console com [Visual Basic](../ide/quickstart-visual-basic-console.md) ou [C++](../ide/quickstart-cpp.md).
 
 ## <a name="create-a-new-code-file"></a>Criar um novo arquivo de código
 
@@ -70,7 +72,7 @@ A barra de ferramentas fornece uma série de botões para aumentar sua produtivi
         "brown",
         "fox",
         "jumps"
-    }
+    };
 
     string[] morewords = {
         "over",
@@ -102,7 +104,7 @@ O bloco de código é recolhido apenas na primeira linha, seguido por um sinal d
 
 O editor do Visual Studio facilita a inspeção da definição de um tipo, de um método, etc. Uma maneira é navegar até o arquivo que contém a definição, por exemplo, ao selecionar **Ir para Definição** em qualquer lugar em que o símbolo esteja referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../ide/go-to-and-peek-definition.md#peek-definition). Vamos inspecionar a definição de `string`.
 
-1. Clique com botão direito do mouse em qualquer ocorrência do `string` e selecione **Inspecionar Definição** no menu de conteúdo&mdash; ou pressione **Alt**+**F12**.
+1. Clique com o botão direito do mouse em qualquer ocorrência do `string` e selecione **Inspecionar Definição** no menu de conteúdo&mdash; ou pressione **Alt**+**F12**.
 
    Uma janela pop-up será exibida com a definição da classe `String`. Você pode rolar na janela pop-up ou até mesmo inspecionar a definição de outro tipo do código inspecionado.
 
@@ -147,7 +149,7 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 
    ![Caixa de diálogo Renomear](media/quickstart-rename.png)
 
-1. Pressione **ENTER**.
+1. Pressione **Enter**.
 
    As duas ocorrências de `words` foram renomeadas, bem como a referência ao `words` do comentário de código.
 
@@ -157,11 +159,11 @@ Você concluiu este guia de início rápido para o editor do Visual Studio! Logo
 
 ## <a name="see-also"></a>Consulte também
 
-[Guia de início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Guia de início rápido: Personalizar o Editor e o IDE do Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Guia de início rápido: Projetos e soluções](../ide/quickstart-projects-solutions.md)  
-[Trechos de código](../ide/code-snippets.md)  
-[Estrutura de tópicos](../ide/outlining.md)  
-[Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)  
-[Refatoração](../ide/refactoring-in-visual-studio.md)  
-[Usando o IntelliSense](../ide/using-intellisense.md)
+- [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Guia de início rápido: Personalizar o Editor e o IDE do Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Início rápido: projetos e soluções](../ide/quickstart-projects-solutions.md)
+- [Trechos de código](../ide/code-snippets.md)
+- [Estrutura de tópicos](../ide/outlining.md)
+- [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)
+- [Refatoração](../ide/refactoring-in-visual-studio.md)
+- [Usando o IntelliSense](../ide/using-intellisense.md)

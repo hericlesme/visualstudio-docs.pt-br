@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca3dccf8a30bb4e1132c0bbc7ea8d8e660ae0f8e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 30e3341db1543690d39f5144ed67894b1fb65c4d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalar o suporte ao Python no Visual Studio
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 02/19/2018
 
     ![Carga de trabalho de desenvolvimento do Python no instalador do Visual Studio](media/installation-python-workload.png)
 
-1. Para testar rapidamente o suporte ao Python, inicie o Visual Studio, pressione ALT + I para abrir a Janela interativa do Python e digite `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
+1. Para testar rapidamente o suporte ao Python, inicie o Visual Studio, pressione Alt+I para abrir a Janela interativa do Python e digite `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
 
     ![Testando o Python por meio da janela interativa](media/installation-interactive-test.png)
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 02/19/2018
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criando um ambiente para um interpretador do Python existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 - [Instalar o suporte do Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md).
 - [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations).
 

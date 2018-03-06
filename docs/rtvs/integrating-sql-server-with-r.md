@@ -17,11 +17,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>Trabalhando com o SQL Server e R
 
@@ -32,15 +32,15 @@ O excelente suporte do Visual Studio para SQL Server ajuda os cientistas de dado
 > - Visual Studio de 2017: execute o instalador do Visual Studio e selecione a carga de trabalho Armazenamento e processamento de dados, que inclui o SQL Server Data Tools.
 > - Visual Studio 2015: siga as instruções em [Baixar o SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-O vídeo a seguir (3m 03s) fornece uma visão geral do SQL Server e do R:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4AYr0QIwdQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) para obter uma visão geral do SQL Server e do R (3 m 03s). |
 
 ## <a name="creating-and-running-sql-queries"></a>Criando e executando consultas SQL
 
 As RTVS dão suporte para adição de consultas SQL em projetos R, permitindo que você desenvolva consultas SQL iterativamente em um contexto separado até obter os resultados que está procurando.
 
-Para adicionar um arquivo de consulta SQL, clique com botão direito do mouse no projeto no Gerenciador de Soluções, selecione **Adicionar > Novo Item...** e selecione o tipo de arquivo de **Consulta SQL**:
+Para adicionar um arquivo de consulta SQL, clique com o botão direito do mouse no projeto no Gerenciador de Soluções, selecione **Adicionar > Novo Item...** e selecione o tipo de arquivo de **Consulta SQL**:
 
 ![Adicionar item de consulta SQL a um projeto](media/sql-add-item.png)
 
@@ -65,9 +65,9 @@ As RTVS simplificam o processo, que seria complicado e sujeito a erros, de combi
 - [Escrever e testar um procedimento armazenado SQL](#write-and-test-a-sql-stored-procedure)
 - [Publicar um procedimento armazenado SQL](#publish-a-sql-stored-procedure)
 
-O vídeo a seguir (6m 09s) também fornece uma visão geral desses recursos:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dFKIT2OitWQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) para obter uma visão geral de procedimentos armazenados de R e SQL (6 m 09s). |
 
 ### <a name="add-a-database-connection"></a>Adicionar uma conexão de banco de dados
 
@@ -117,7 +117,7 @@ Depois que estiver satisfeito com seu código SQL, integre-o ao código R em `St
 
 Como você pode ver, essa etapa simples gera automaticamente o código R para abrir o arquivo `.sql`, lê seu conteúdo em uma cadeia de caracteres e o passa para o pacote RODBC para enviá-lo ao SQL Server.
 
-Agora você pode escrever interativamente o código R que manipula o dataframe `InputDataSet`, conforme o desejado. Lembre-se de que basta selecionar o código R no editor e enviá-lo à [janela interativa](interactive-repl-for-r-in-visual-studio.md) pressionando Ctrl + Enter.
+Agora você pode escrever interativamente o código R que manipula o dataframe `InputDataSet`, conforme o desejado. Lembre-se de que basta selecionar o código R no editor e enviá-lo à [janela interativa](interactive-repl-for-r-in-visual-studio.md) pressionando Ctrl+Enter.
 
 `StoredProcedure.Template.sql`, por fim, contém o modelo para gerar o procedimento armazenado SQL:
 

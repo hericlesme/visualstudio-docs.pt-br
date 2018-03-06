@@ -4,23 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology:
+- tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.workload: unity
-ms.openlocfilehash: 45a06d17b2a3033af64c9d9a007af4a74dedabba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- unity
+ms.openlocfilehash: f3ff8389c6d8f84ed534f259ada36db7489f7b31
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Log de alterações (Ferramentas do Visual Studio para Unity)
 Log de alterações de Ferramentas do Visual Studio para Unity.  
+
+## <a name="3503"></a>3.5.0.3
+ Lançado em 09/01/2018
+
+### <a name="bug-fixes"></a>Correções de bug  
+
+-   **Integração:**  
+
+    -   Correção de pdb automático para conversão de símbolo de depuração de mdb.
 
 ## <a name="3502"></a>3.5.0.2
  Lançado em 04/12/2017
@@ -718,7 +729,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 -   Corrigido o tratamento do projeto do Unity com um traço (-) no nome.  
 
--   Corrigidos scripts de abertura do Unity para não confundir a ordem ALT+TAB para o Unity 4.2 e superiores.  
+-   Corrigidos scripts de abertura do Unity para não confundir a ordem Alt+Tab para o Unity 4.2 e superiores.  
 
 ## <a name="1800"></a>1.8.0.0  
  Lançado em 24/09/2013  
@@ -814,7 +825,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 -   Preserve projetos personalizados adicionados à solução do UnityVS ao gerar o arquivo de solução.  
 
--   Adicione novo atalho de teclado CTRL+ALT+M -> CTRL+H para exibir a documentação do Unity para a função do Unity ou membro na posição do cursor.  
+-   Adicione novo atalho de teclado Ctrl+Alt+M -> Ctrl+H para exibir a documentação do Unity para a função do Unity ou membro na posição do cursor.  
 
 -   Leve arquivos de resposta do compilador (rsp) em consideração ao compilar do Visual Studio.  
 
@@ -852,7 +863,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 -   Corrigido o bug UVS-42: o logotipo de conectividade do Unity na barra de status não trata eventos de mouse no VS 2012.  
 
--   Corrigido o bug UVS-44: CTRL+SHIFT+Q não está disponível no VS 2012 para MonoBehaviours Rápidos.  
+-   Corrigido o bug UVS-44: Ctrl+Shift+Q não está disponível no VS 2012 para MonoBehaviours Rápidos.  
 
 -   Corrigido o bug UVS-40: itens selecionados no Explorador de Projeto do Unity são ilegíveis quando a janela está inativa no tema "escuro" do VS2012.  
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>Editando o código do Python
 
@@ -39,7 +39,7 @@ Também é possível usar o Pesquisador de Objetos do Visual Studio (**Exibir > 
 
 ## <a name="intellisense"></a>IntelliSense
 
-O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). Para melhorar o desempenho, o IntelliSense depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do Gerenciador de Soluções) da guia **IntelliSense** (consulte [Ambientes do Python](managing-python-environments-in-visual-studio.md)). 
+O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). Para melhorar o desempenho, o IntelliSense depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do Gerenciador de Soluções) da guia **IntelliSense** (veja [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
 ### <a name="completions"></a>Preenchimentos
 
@@ -93,7 +93,7 @@ Ao escrever o código que chama uma função, a ajuda da assinatura é exibida q
 
 Focalizar o ponteiro do mouse em um identificador exibe uma dica de ferramenta Informações Rápidas. Dependendo do identificador, Informações Rápidas poderá exibir os possíveis valores ou tipos, toda a documentação disponível, tipos de retorno e localizações de definição:
 
-![Informação Rápida](media/code-editing-quick-info.png)
+![Informações rápidas](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Coloração de código
 

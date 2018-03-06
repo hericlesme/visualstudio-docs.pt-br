@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.threadblocking
-helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
+f1_keywords:
+- vs.performance.view.threadblocking
+helpviewer_keywords:
+- Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d2245ae466948122cbf39225043125b4feec8579
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho em paralelo)
-A Exibição Threads é a exibição mais detalhada e com uma grande variedade de recursos da Visualização Simultânea. Ao usar essa exibição, é possível identificar se os threads estão sendo executados ou bloqueados devido à sincronização, E/S ou a algum outro motivo.  
+A **Exibição de Threads** é a mais detalhada e cheia de recursos do Visualizador de Simultaneidade (escolha **Analisar** > **Visualizador de Simultaneidade** para iniciar o visualizador de simultaneidade). Ao usar essa exibição, é possível identificar se os threads estão sendo executados ou bloqueados devido à sincronização, E/S ou a algum outro motivo.  
   
  Durante a análise do perfil, a Visualização Simultânea examina todos os eventos de alternância de contexto do sistema operacional em cada thread do aplicativo. Alternâncias de contexto podem ocorrer por vários motivos, como estes:  
   

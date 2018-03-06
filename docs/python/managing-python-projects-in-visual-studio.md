@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-projects"></a>Projetos do Python
 
@@ -52,9 +52,9 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 Cada projeto do Python tem um arquivo de inicialização atribuído, mostrado em negrito no Gerenciador de Soluções. O arquivo de inicialização é o arquivo executado quando você inicia a depuração (F5 ou **Depurar > Iniciar Depuração**) ou quando executa o projeto na janela interativa (Shift+Alt+F5 ou **Depurar > Executar Projeto na Interativa do Python**). Para alterá-lo, clique com o botão direito do mouse no novo arquivo e selecione **Definir como Arquivo de Inicialização**.
 
 > [!Tip]
-> Se você remover o arquivo de inicialização selecionado de um projeto e não selecionar um novo, a execução do projeto fará com que uma janela de saída do Python apareça, porém desapareça quase imediatamente. Se você observar esse comportamento, verifique se haverá um arquivo de inicialização atribuído. Além disso, para manter a janela de saída aberta nesses casos, clique com o botão direito do mouse no projeto, selecione **Propriedades**, selecione a guia **Depurar** e, em seguida, adicione `-i` ao campo **Argumentos do Interpretador**. Esse argumento faz com que o interpretador entre no modo interativo após a conclusão de um programa, mantendo a janela aberta até que você pressione Ctrl + Z, Enter para sair.
+> Se você remover o arquivo de inicialização selecionado de um projeto e não selecionar um novo, a execução do projeto fará com que uma janela de saída do Python apareça, porém desapareça quase imediatamente. Se você observar esse comportamento, verifique se haverá um arquivo de inicialização atribuído. Além disso, para manter a janela de saída aberta nesses casos, clique com o botão direito do mouse no projeto, selecione **Propriedades**, selecione a guia **Depurar** e, em seguida, adicione `-i` ao campo **Argumentos do Interpretador**. Esse argumento faz com que o interpretador entre no modo interativo após a conclusão de um programa, mantendo a janela aberta até que você pressione Ctrl+Z, Enter para sair.
 
-Um novo projeto sempre é associado ao ambiente global padrão do Python. Para associar o projeto a outro ambiente (incluindo ambientes virtuais), clique com o botão direito do mouse no nó **Ambientes do Python** do projeto, selecione **Adicionar/Remover Ambientes do Python** e selecione os ambientes desejados. Para alterar o ambiente ativo, clique com o botão direito do mouse no ambiente desejado e selecione **Ativar Ambiente**, conforme mostrado abaixo. Para saber mais, veja [Ambientes do Python](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project).
+Um novo projeto sempre é associado ao ambiente global padrão do Python. Para associar o projeto a outro ambiente (incluindo ambientes virtuais), clique com o botão direito do mouse no nó **Ambientes do Python** do projeto, selecione **Adicionar/Remover Ambientes do Python** e selecione os ambientes desejados. Para alterar o ambiente ativo, clique com o botão direito do mouse no ambiente desejado e selecione **Ativar Ambiente**, conforme mostrado abaixo. Para saber mais, confira [Selecionar um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
 
 ![Ativando um ambiente para um projeto do Python](media/projects-activate-environment.png)
 
@@ -71,7 +71,7 @@ A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 (nem todo
 | Modelo | Descrição |
 | --- | --- |
 | [Com base em um código existente do Python](#creating-a-project-from-existing-files) | Cria um projeto do Visual Studio com base em um código existente do Python em uma estrutura de pastas.  |
-| Aplicativo do Python | Uma estrutura de projeto básica para um novo aplicativo do Python com um único arquivo de origem vazio. Por padrão, o projeto é executado no interpretador do console do ambiente global padrão, que pode ser alterado com a [atribuição de outro ambiente](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
+| Aplicativo do Python | Uma estrutura de projeto básica para um novo aplicativo do Python com um único arquivo de origem vazio. Por padrão, o projeto é executado no interpretador do console do ambiente global padrão, que pode ser alterado com a [atribuição de outro ambiente](selecting-a-python-environment-for-a-project.md). |
 | [Serviço de Nuvem do Azure](python-azure-cloud-service-project-template.md) | Um projeto para um serviço de nuvem do Azure escrito em Python. |
 | [Projetos Web](python-web-application-project-templates.md) | Projetos para servidores Web baseados em várias estruturas, incluindo Bottle, Django, Flask e Flask/Jade. |
 | Aplicativo do IronPython | Semelhante ao modelo de Aplicativo do Python, mas usa o IronPython, por padrão, habilitando a interoperabilidade do .NET e a depuração de modo misto com as linguagens .NET. |
@@ -136,7 +136,7 @@ Uma referência a um arquivo `.pyd` habilita o IntelliSense no módulo gerado. O
 
 Se, a qualquer momento, o módulo de extensão é atualizado em disco, o Visual Studio analisa o módulo novamente em segundo plano. Essa ação não tem nenhum efeito no comportamento do tempo de execução, mas alguns preenchimentos não estarão disponíveis até que a análise seja concluída.
 
-Talvez você também precise adicionar um [caminho de pesquisa](managing-python-environments-in-visual-studio.md#search-paths) à pasta que contém o módulo.
+Talvez você também precise adicionar um [caminho de pesquisa](search-paths.md) à pasta que contém o módulo.
 
 ### <a name="net-projects"></a>Projetos do .NET
 

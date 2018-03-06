@@ -17,13 +17,13 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00b9d59ad1736d212dcd9fff3c097e81e0ad2a60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Web Python
+# <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web Python
 
 Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Python simples. Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
 
@@ -71,7 +71,7 @@ Neste guia de início rápido, no entanto, você usará a biblioteca Falcon para
 
 Para obter mais informações sobre o Falcon, visite [falconframework.org](https://falconframework.org/).
 
-Observe que, em vez de instalar as bibliotecas no ambiente global, os desenvolvedores geralmente criam um “ambiente virtual” no qual instalar bibliotecas para um projeto específico. Muitos modelos de projeto de Python no Visual Studio incluem um arquivo `requirements.txt` que lista as bibliotecas das quais o modelo depende. Criando um projeto de um desses modelos dispara a criação de um ambiente virtual no qual as bibliotecas são instaladas. Para obter mais informações, consulte [Ambientes Python – Ambientes virtuais](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments).
+Observe que, em vez de instalar as bibliotecas no ambiente global, os desenvolvedores geralmente criam um “ambiente virtual” no qual instalar bibliotecas para um projeto específico. Muitos modelos de projeto de Python no Visual Studio incluem um arquivo `requirements.txt` que lista as bibliotecas das quais o modelo depende. Criando um projeto de um desses modelos dispara a criação de um ambiente virtual no qual as bibliotecas são instaladas. Para saber mais, confira [Usar ambientes virtuais](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Adicionar um arquivo de código
 
@@ -130,7 +130,7 @@ Para obter mais informações sobre Falcon, consulte o [Início rápido de Falco
 
 1. Clique com o botão direito do mouse no projeto “Olá, Python” no **Gerenciador de Soluções** e selecione **Propriedades**. Selecione a guia **Depurar** e defina a propriedade **Número da porta** para `8080`. Essa etapa garante que o Visual Studio inicie um navegador com `localhost:8080` em vez de usar uma porta aleatória.
 
-1. Selecione **Depurar > Iniciar Sem Depuração** (Ctrl + F5) para salvar as alterações nos arquivos e executar o aplicativo.
+1. Selecione **Depurar > Iniciar Sem Depuração** (Ctrl+F5) para salvar as alterações nos arquivos e executar o aplicativo.
 
 1. Aparece uma janela de comando com a mensagem “Iniciando servidor de aplicativo Web”, em seguida, uma janela do navegador deverá ser aberta para `localhost:8080`, exibindo a mensagem “Olá, Python!” A solicitação GET também aparece na janela de comando.
 

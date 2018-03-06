@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalando o suporte do Python no Visual Studio no Windows
 
@@ -31,7 +31,7 @@ Para instalar o suporte do Python para Visual Studio (também conhecido como Fer
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 e anterior](#visual-studio-2013-and-earlier)
 
-Para o Visual Studio 2015 e anterior, também é necessário instalar separadamente um interpretador do Python de sua escolha (Python 3.5 e anterior; a versão 3.6 não é compatível e gerará a mensagem "Versão 3.6 do Python incompatível"). Para obter detalhes, consulte [Ambientes do Python](managing-python-environments-in-visual-studio.md). A mesma página também contém instruções para adicionar um interpretador do Python existente ao Visual Studio 2017.
+Para o Visual Studio 2015 e anterior, também é necessário [instalar separadamente um interpretador do Python](installing-python-interpreters.md) de sua escolha (Python 3.5 e anterior; a versão 3.6 não é compatível e gerará a mensagem "Versão 3.6 do Python incompatível"). A mesma página também contém instruções para adicionar um interpretador do Python existente ao Visual Studio 2017.
 
 Para testar rapidamente o suporte do Python depois de seguir as etapas de instalação, abra a janela Interativa do Python pressionando Alt-I e inserindo `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
 
@@ -91,7 +91,7 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
 
     ![Opção PTVS no instalador do Visual Studio 2015](media/installation-vs2015.png)
 
-1. Depois que a instalação do Visual Studio for concluída, [instale um interpretador do Python de sua escolha](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Se você já tiver um interpretador instalado, consulte [Criando um ambiente para um interpretador existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. Depois que a instalação do Visual Studio for concluída, [instale um interpretador do Python de sua escolha](installing-python-interpreters.md). Se você já tiver um interpretador instalado e o Visual Studio não o detectar automaticamente, confira [Identificar manualmente um ambiente existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 e anterior
 
@@ -101,7 +101,7 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
     - Visual Studio 2012: [PTVS 2.1 para Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010: [PTVS 2.1 para Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [Instale um interpretador do Python de sua escolha](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters). Se você já tiver um interpretador instalado, consulte [Criando um ambiente para um interpretador existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+1. [Instale um interpretador do Python de sua escolha](installing-python-interpreters.md). Se você já tiver um interpretador instalado e o Visual Studio não o detectar automaticamente, confira [Identificar manualmente um ambiente existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 
 ## <a name="install-locations"></a>Locais de instalação
 

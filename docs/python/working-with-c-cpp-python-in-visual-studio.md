@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Criando uma extensão do C++ para o Python
 
@@ -98,7 +98,7 @@ Para obter mais informações, consulte [Instalando o suporte do Python para Vis
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
     ```
 
-1. Execute o programa usando **Depurar > Iniciar Sem Depurar** (Ctrl + F5) para ver os resultados. Você pode ajustar a variável `COUNT` para alterar o tempo que os parâmetros de comparação levam para serem executados. Para a finalidade deste passo a passo, defina a contagem de forma que cada parâmetro de comparação leve cerca de dois segundos.
+1. Execute o programa usando **Depurar > Iniciar Sem Depurar** (Ctrl+F5) para ver os resultados. Você pode ajustar a variável `COUNT` para alterar o tempo que os parâmetros de comparação levam para serem executados. Para a finalidade deste passo a passo, defina a contagem de forma que cada parâmetro de comparação leve cerca de dois segundos.
 
 ## <a name="create-the-core-c-project"></a>Criar o projeto principal do C++
 
@@ -219,7 +219,7 @@ Para transformar a DLL C++ em uma extensão para Python, primeiro você precisa 
 1. Defina a configuração de destino como "Versão" e crie o projeto C++ novamente para verificar o código. Se você encontrar erros, verifique os seguintes casos:
     - Não é possível localizar Python.h: verifique se o caminho em **C/C++ > Geral > Diretórios de Inclusão Adicionais** nos pontos de propriedades do projeto aponta para a pasta `include` da instalação do Python.
     - Não é possível localizar as bibliotecas Python.h: verifique se o caminho em **Vinculador > Geral > Diretórios de Inclusão Adicionais** nos pontos de propriedades do projeto aponta para a pasta `libs` da instalação do Python.
-    - Erros do vinculador relacionadas à arquitetura de destino: altere a arquitetura do projeto de destino C++ para corresponder à instalação do Python.
+    - Erros do vinculador relacionadas à arquitetura de destino: altere a arquitetura do projeto de destino C++ para corresponder à instalação do Python. Por exemplo, se você tiver como alvo x64 com o projeto C++, mas a instalação do Python for x86, altere o projeto C++ para ter como destino x86.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Testar o código e comparar os resultados
 
@@ -267,7 +267,7 @@ Depois de concluir um dos métodos acima, você poderá chamar a função `fast_
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 
-1. Execute o programa Python (**Depurar > Iniciar Sem Depuração** ou Ctrl + F5) e observe que a rotina do C++ é executada com uma rapidez cinco a 20 vezes maior do que a implementação do Python. Novamente, tente aumentar a variável `COUNT` para que as diferenças sejam mais evidentes. Observe também que um build de depuração do módulo C++ é executado mais lentamente do que um build de liberação porque o build de depuração é menos otimizado e contém várias verificações de erro. Fique à vontade para alternar entre essas configurações para comparação.
+1. Execute o programa Python (**Depurar > Iniciar Sem Depuração** ou Ctrl+F5) e observe que a rotina do C++ é executada com uma rapidez cinco a 20 vezes maior do que a implementação do Python. Novamente, tente aumentar a variável `COUNT` para que as diferenças sejam mais evidentes. Observe também que um build de depuração do módulo C++ é executado mais lentamente do que um build de liberação porque o build de depuração é menos otimizado e contém várias verificações de erro. Fique à vontade para alternar entre essas configurações para comparação.
 
 ## <a name="debug-the-c-code"></a>Depurar o código C++
 
@@ -276,7 +276,7 @@ O Visual Studio é compatível com a depuração de código de Python e C++ junt
 1. Clique com o botão direito do mouse no projeto do Python, no Gerenciador de Soluções, selecione **Propriedades**, a guia **Depuração** e, em seguida, a opção **Depurar > Habilitar depuração de código nativo**.
 
     > [!Tip]
-    > Ao habilitar a depuração de código nativo, a janela de saída do Python poderá desaparecer imediatamente quando o programa tiver concluído sem fornecer a pausa comum “Pressione qualquer tecla para continuar...”. Para forçar uma pausa, adicione a opção `-i` ao campo **Executar > Argumentos do Interpretador** na guia **Depurar** ao habilitar a depuração de código nativo. Esse argumento coloca o interpretador do Python no modo interativo após a conclusão do código e, nesse ponto, ele aguarda até que você pressione Ctrl + Z, Enter para sair. (Como alternativa, se você não se importar em modificar o código do Python, poderá adicionar as instruções `import os` e `os.system("pause")` ao final do programa. Esse código duplicará o prompt de pausa original.)
+    > Ao habilitar a depuração de código nativo, a janela de saída do Python poderá desaparecer imediatamente quando o programa tiver concluído sem fornecer a pausa comum “Pressione qualquer tecla para continuar...”. Para forçar uma pausa, adicione a opção `-i` ao campo **Executar > Argumentos do Interpretador** na guia **Depurar** ao habilitar a depuração de código nativo. Esse argumento coloca o interpretador do Python no modo interativo após a conclusão do código e, nesse ponto, ele aguarda até que você pressione Ctrl+Z, Enter para sair. (Como alternativa, se você não se importar em modificar o código do Python, poderá adicionar as instruções `import os` e `os.system("pause")` ao final do programa. Esse código duplicará o prompt de pausa original.)
 
 1. Selecione **Arquivo > Salvar** para salvar as alterações de propriedade.
 

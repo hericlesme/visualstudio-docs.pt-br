@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67cf109b0964bcb9eca104ec138f968e273111e9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4b9b7a51436eeeb67634714216f9a583de679a07
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Início rápido: criar um projeto por meio de um modelo do Cookiecutter
 
@@ -43,7 +43,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 1. Quando o processo for concluído, você verá a mensagem "Arquivos criados com êxito". Selecione o comando **Abrir no Gerenciador de Soluções** para abrir o projeto.
 
-1. Pressione CTRL + F5 ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. 
+1. Pressione Ctrl+F5 ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. 
 
     ![Saída do projeto do modelo python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 
@@ -55,6 +55,6 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 ## <a name="see-also"></a>Consulte também
 
 - [Usando a extensão Cookiecutter](using-python-cookiecutter-templates.md)
-- [Criando um ambiente para um interpretador do Python existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 - [Instalar o suporte do Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md).
 - [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations).

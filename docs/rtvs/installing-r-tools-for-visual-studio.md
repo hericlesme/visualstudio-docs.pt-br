@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Como instalar as Ferramentas do R para Visual Studio
 
@@ -44,7 +44,7 @@ As RTVS não serão instaladas se você tiver somente o Shell do Visual Studio i
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalando as RTVS no Visual Studio 2017
 
-1. Execute o instalador do Visual Studio. (Consulte [Downloads](https://www.visualstudio.com/downloads/) se você ainda não tiver o Visual Studio instalado.) No Windows 7, certifique-se de que o instalador está atualizado para mostrar a versão do Visual Studio *15.2 build 26430.12* ou posterior.
+1. Execute o instalador do Visual Studio. (Consulte [Downloads](https://www.visualstudio.com/downloads/) se você ainda não tiver o Visual Studio instalado.) No Windows 7, certifique-se de que o instalador esteja atualizado para mostrar a versão do Visual Studio 2017 versão *15.2 build 26430.12* ou posterior.
 
 1. Selecione a carga de trabalho **Ciência de dados e aplicativos analíticos**:
 
@@ -81,12 +81,12 @@ As RTVS para Visual Studio 2015 estão instaladas em: `%ProgramFiles(x86)%\Micro
 
 A instalação offline é adequada para computadores que não estão conectados à Internet:
 
-1. Siga as instruções para criar um instalador offline para sua versão do Visual Studio: 
+1. Siga as instruções para criar um instalador offline para sua versão do Visual Studio:
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Para o Visual Studio 2015, baixe os instaladores das RTVS offline em [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) e em [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
+1. Para o Visual Studio 2015, baixe os instaladores das RTVS offline em [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) e em [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
 1. Instale o Visual Studio e as RTVS dos instaladores offline.
 

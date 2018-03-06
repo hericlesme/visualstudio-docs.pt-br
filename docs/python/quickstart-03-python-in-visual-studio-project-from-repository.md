@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca32058d9207221c1752e522bbba82d0033626f2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a7ddd0f7cf24805eef529d08bf0e37b19fc6a8bc
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Início Rápido: clonar um repositório de código do Python no Visual Studio
 
@@ -48,13 +48,13 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 7. Selecione **Exibir > Gerenciador de Soluções** no menu.
 
-8. No Gerenciador de Soluções, expanda o nó `python3`, clique com botão direito do mouse em `contemplate_koans.py` e selecione **Definir como Arquivo de Inicialização**. Esta etapa informa ao Visual Studio qual arquivo deve ser usado ao executar o projeto.
+8. No Gerenciador de Soluções, expanda o nó `python3`, clique com o botão direito do mouse em `contemplate_koans.py` e selecione **Definir como Arquivo de Inicialização**. Esta etapa informa ao Visual Studio qual arquivo deve ser usado ao executar o projeto.
 
 9. Selecione **Projeto > Propriedades** no menu, selecione a guia **Geral** e defina o **Diretório de Trabalho** como "python3". Isso é necessário porque, por padrão, o Visual Studio define o diretório de trabalho como a raiz do projeto em vez do local do arquivo de inicialização (`python3\contemplate_koans.py`, que você também pode ver nas propriedades do projeto). O código do programa procurará um arquivo `koans.txt` na pasta de trabalho, portanto sem a alteração desse valor, você vê um erro de tempo de execução.
 
     ![Configurar o diretório de trabalho para um projeto do Python](media/projects-set-working-directory.png)
 
-10. Pressione CTRL + F5 ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. Se você vir um `FileNotFoundError` para `koans.txt`, verifique novamente a configuração do diretório de trabalho na etapa anterior.
+10. Pressione Ctrl+F5 ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. Se você vir um `FileNotFoundError` para `koans.txt`, verifique novamente a configuração do diretório de trabalho na etapa anterior.
 
 11. Quando o programa é executado com êxito, ele exibe um erro de asserção na linha 17 do `python3/koans/about_asserts.py`. Isso é intencional: o programa foi projetado para ensinar Python, fazendo com que você corrija todos os erros intencionais. (Mais detalhes são encontrados em [Ruby Koans](http://rubykoans.com/), que inspirou os Koans do Python).
 
@@ -82,6 +82,6 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criando um ambiente para um interpretador do Python existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 - [Instalar o suporte do Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md).
 - [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations).

@@ -1,7 +1,7 @@
 ---
 title: Portar, migrar e atualizar projetos do Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 02/12/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -23,11 +23,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd23e22024e493256d2ba839998d561e2894a80
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 035bf2c514988dc65fe5182ad4b5371915dd2dce
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Portar, migrar e atualizar projetos do Visual Studio
 
@@ -68,7 +68,7 @@ Se não estiver listado aqui um projeto ou um tipo de arquivo que deveria estar,
 | Silverlight | Não há suporte para projetos do Silverlight no Visual Studio 2017. Para manter os aplicativos do Silverlight, continue a usar o Visual Studio 2015. |
 | SQL Server Reporting Services e SQL Server Analysis Services (SSRS, SSDT, SSAS, MSAS) | O suporte para esses tipos de projeto é fornecido por meio de duas extensões na Galeria do Visual Studio: [Projetos de Modelagem do Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) e [Projetos do Microsoft Reporting Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Suporte do SSDT também está incluso com a carga de trabalho de Processamento e Armazenamento de Dados no Visual Studio de 2017. |
 | SQL Server Integration Services (SSIS) | O suporte para o Visual Studio 2017 está disponível por meio do SSDT (SQL Server Data Tools). Para obter mais informações, consulte o [blog do SQL Server Integration Services](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
-| Visual C++ | Você pode usar o Visual Studio 2017 para abrir soluções e projetos que foram criados no Visual Studio 2015 no estado em que se encontram. Os projetos criados em versões anteriores do Visual Studio podem exigir a atualização do projeto ou o redirecionamento para um conjunto de ferramentas mais recente para criar com o Visual Studio 2017. Para obter mais informações, consulte [Guia de portabilidade e de atualização do Visual C++](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide). |
+| Visual C++ | Você pode usar o Visual Studio 2017 para trabalhar em projetos criados em versões anteriores do Visual Studio no Visual Studio 2010. Quando você abre o projeto pela primeira vez, tem a opção de atualizar para o compilador e o conjunto de ferramentas mais recentes, ou continuar usando os originais. Se você optar por continuar usando os originais, o Visual Studio 2017 não modificará o arquivo de projeto e usará o conjunto de ferramentas da instalação anterior do Visual Studio para compilar o projeto. Isso significa que você ainda pode abrir o projeto na versão original do Visual Studio, se for necessário. Para obter mais informações, consulte [Usar a multiplataforma nativa no Visual Studio para compilar projetos antigos](/cpp/porting/use-native-multi-targeting). |
 | Extensibilidade/VSIX do Visual Studio | Os projetos com o MinimumVersion 14.0 ou inferior serão atualizados para declarar a MinimumVersion 15.0, que impede que o projeto seja aberto em versões anteriores do Visual Studio. Para permitir que um projeto seja aberto em versões anteriores, defina MinimumVersion como `$(VisualStudioVersion)`. Consulte também [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | É possível usar o Microsoft Test Manager ou o Visual Studio 2010 SP1 e posterior para abrir ambientes criados em qualquer uma dessas versões. No entanto, para o Visual Studio 2010 SP1, a versão do Microsoft Test Manager deve corresponder à versão do Team Foundation Server para que você possa criar ambientes. |
 | Ferramentas do Visual Studio para Apache Cordova | Os projetos podem ser abertos no Visual Studio 2017, mas não são compatíveis com versões anteriores. Ao abrir um projeto do Visual Studio 2015, será solicitado que você permita modificações no projeto. Essa modificação atualiza o projeto para usar conjuntos de ferramentas em vez de um arquivo `taco.json` para gerenciar o controle de versão da biblioteca Cordova, suas plataformas e seus plug-ins, bem como suas dependências de nó/npm. Consulte o [guia de migração](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) para obter mais informações. |

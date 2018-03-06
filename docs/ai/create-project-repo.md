@@ -27,18 +27,18 @@ Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installa
 
 7. Selecione **Exibir > Gerenciador de Soluções** no menu.
 
-8. No Gerenciador de Soluções, expanda o nó `TensorFlow Examples> MNIST`, clique com botão direito do mouse em `convolutional.py` e selecione **Definir como Arquivo de Inicialização**. Esta etapa informa ao Visual Studio qual arquivo deve ser usado ao executar o projeto.
+8. No Gerenciador de Soluções, expanda o nó `TensorFlow Examples> MNIST`, clique com o botão direito do mouse em `convolutional.py` e selecione **Definir como Arquivo de Inicialização**. Esta etapa informa ao Visual Studio qual arquivo deve ser usado ao executar o projeto.
 
-10. Pressione CTRL + F5 ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. Se você vir um `, verifique novamente a configuração do diretório de trabalho na etapa anterior.
+10. Pressione Ctrl+F5 ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. Se você vir um `, verifique novamente a configuração do diretório de trabalho na etapa anterior.
 
 
 11. Quando o programa é executado com sucesso, você o verá iniciando o download do seu treinamento, testando o conjunto de dados, treinando o modelo e transmitindo sua taxa de erros. Convém que a taxa de erro diminua com o tempo
 
     ![Primeira saída do programa MNIST do Python](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Se você estiver usando o Anaconda e receber um erro sobre numpy ausente, talvez seja necessário [alterar seu ambiente de python para usar o Anaconda](../python/managing-python-environments-in-visual-studio.md)
+> Se você estiver usando o Anaconda e receber um erro sobre numpy ausente, talvez seja necessário [alterar seu ambiente de python para usar o Anaconda](../python/selecting-a-python-environment-for-a-project.md).
 
-11. É possível visualizar o andamento com o TensorBoard. Clique com botão direito do mouse no seu projeto e em **Executar TensorBoard**. Em seguida, selecione o diretório os seus logs do TensorBoard de saída.
+11. É possível visualizar o andamento com o TensorBoard. Clique com o botão direito do mouse no seu projeto e em **Executar TensorBoard**. Em seguida, selecione o diretório os seus logs do TensorBoard de saída.
 
     ![executar tensorboard](media\create-project-repo\run-tensorboard.png)
 

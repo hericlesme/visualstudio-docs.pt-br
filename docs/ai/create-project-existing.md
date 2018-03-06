@@ -22,11 +22,11 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), �
 
 1. Para definir um arquivo de inicialização, localize o arquivo no Gerenciador de Soluções, clique com o botão direito do mouse e selecione **Definir como Arquivo de Inicialização**.
 
-1. Se desejar, execute o programa pressionando CTRL + F5 ou selecionando **Depurar > Iniciar Sem Depuração**.
+1. Se desejar, execute o programa pressionando Ctrl+F5 ou selecionando **Depurar > Iniciar Sem Depuração**.
 
 > [!div class="nextstepaction"]
 > [Tutorial: trabalhando com o Python no Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criando um ambiente para um interpretador Python existente](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Identificar manualmente um ambiente de Python existente](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)

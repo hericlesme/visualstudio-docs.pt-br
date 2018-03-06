@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2af5a7412b6d4a6554d4bc11f5877541a3384115
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 648c1e2b4ee3a5c9bc10d74ee384a08bc5ddce64
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Início rápido: criar um projeto do Python com base em um modelo no Visual Studio
 
@@ -29,7 +29,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 1. Inicie o Visual Studio.
 
-1. Selecione **Arquivo > Novo > Projeto** (CTRL + SHIFT + N). Na caixa de diálogo **Novo Projeto**, pesquise por "Python" e selecione o modelo desejado. Observe que a seleção de um modelo exibe uma breve descrição do que o modelo fornece. (Consulte também [Projetos do Python](managing-python-projects-in-visual-studio.md#project-templates).)
+1. Selecione **Arquivo > Novo > Projeto** (Ctrl+Shift+N). Na caixa de diálogo **Novo Projeto**, pesquise por "Python" e selecione o modelo desejado. Observe que a seleção de um modelo exibe uma breve descrição do que o modelo fornece. (Consulte também [Projetos do Python](managing-python-projects-in-visual-studio.md#project-templates).)
 
     ![Caixa de diálogo de Novo Projeto com modelo do Python do VS2017](media/projects-new-project-dialog2.png)
 
@@ -84,7 +84,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
         test_py();
     ```
 
-1. Execute o programa pressionando CTRL + F5 ou selecionando **Depurar > Iniciar Sem Depuração** no menu. Os resultados são exibidos em uma janela do console.
+1. Execute o programa pressionando Ctrl+F5 ou selecionando **Depurar > Iniciar Sem Depuração** no menu. Os resultados são exibidos em uma janela do console.
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -93,6 +93,6 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criando um ambiente para um interpretador do Python existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 - [Instalar o suporte do Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md).
 - [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations).

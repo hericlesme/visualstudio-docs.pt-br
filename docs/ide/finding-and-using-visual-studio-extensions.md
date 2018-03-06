@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
@@ -73,22 +73,22 @@ Se você desejar desabilitar as atualizações automáticas, será possível des
 
 Novidade no **Visual Studio 2017 versão 15.3**, o Visual Studio notifica você se suspeitar que uma extensão estava envolvida em uma falha durante uma sessão anterior. Quando o Visual Studio falhar, ele armazenará a pilha de exceção. Na próxima vez em que o Visual Studio for iniciado, ele examinará a pilha, começando com a folha e funcionando em direção à base. Se o Visual Studio determinar que um quadro pertence a um módulo que faz parte de uma extensão instalada e habilitada, ele mostra uma notificação.
 
-Novidade no **Visual Studio versão 15.6 versão prévia 3**, o Visual Studio também notifica se suspeitar que uma extensão está causando a falta de resposta da interface do usuário.
+Novidade no **Visual Studio 2017 15.6 versão prévia 3**, o Visual Studio também notifica se suspeitar que uma extensão está causando a falta de resposta da interface do usuário.
 
 Quando essas notificações forem exibidas, você poderá ignorar a notificação ou executar uma das seguintes ações:
 
 - Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode habilitar a extensão novamente na caixa de diálogo **Extensões e atualizações** se desejar.
 
-- Escolha **Nunca mostrar essa mensagem novamente**. 
-  - Se a notificação for sobre uma falha em uma sessão anterior, o Visual Studio não mostrará mais uma notificação quando uma falha associada a essa extensão ocorrer. O Visual Studio ainda mostrará notificações quando a falta de resposta puder ser associada a essa extensão, ou para falhas ou falta de resposta que possam ser associadas a outras extensões. 
-  - Se a notificação for sobre a falta de resposta, o IDE não mostrará mais uma notificação quando essa extensão for associada à falta de resposta. O Visual Studio ainda mostrará notificações relacionadas à falha para essa extensão, e notificações relacionados a falhas e falta de resposta para outras extensões. 
+- Escolha **Nunca mostrar essa mensagem novamente**.
+  - Se a notificação for sobre uma falha em uma sessão anterior, o Visual Studio não mostrará mais uma notificação quando uma falha associada a essa extensão ocorrer. O Visual Studio ainda mostrará notificações quando a falta de resposta puder ser associada a essa extensão, ou para falhas ou falta de resposta que possam ser associadas a outras extensões.
+  - Se a notificação for sobre a falta de resposta, o IDE não mostrará mais uma notificação quando essa extensão for associada à falta de resposta. O Visual Studio ainda mostrará notificações relacionadas à falha para essa extensão, e notificações relacionados a falhas e falta de resposta para outras extensões.
 
 - Escolha **Saiba mais** para chegar a esta página.
 
 - Escolha o botão **X** no final da notificação para ignorar a notificação. Uma nova notificação será exibida para instâncias futuras da extensão que está sendo associada a uma falha ou falta de resposta da interface do usuário.
 
 > [!NOTE]
-> Uma notificação de falha ou de falta de resposta da interface do usuário significa apenas que um dos módulos de extensão estava na pilha quando a interface do usuário ficou sem resposta ou quando a falha ocorreu. Isso não significa necessariamente que a própria extensão foi a culpada. É possível que a extensão tenha chamado um código que faz parte do Visual Studio, que por sua vez resultou em uma falha ou interface do usuário sem resposta. No entanto, a notificação ainda pode ser útil se a extensão que levou à falha ou falta de resposta da interface do usuário não for importante para você. Nesse caso, desabilitar a extensão evita que a falta de resposta da IU ou a falha ocorra no futuro, sem afetar sua produtividade. 
+> Uma notificação de falha ou de falta de resposta da interface do usuário significa apenas que um dos módulos de extensão estava na pilha quando a interface do usuário ficou sem resposta ou quando a falha ocorreu. Isso não significa necessariamente que a própria extensão foi a culpada. É possível que a extensão tenha chamado um código que faz parte do Visual Studio, que por sua vez resultou em uma falha ou interface do usuário sem resposta. No entanto, a notificação ainda pode ser útil se a extensão que levou à falha ou falta de resposta da interface do usuário não for importante para você. Nesse caso, desabilitar a extensão evita que a falta de resposta da IU ou a falha ocorra no futuro, sem afetar sua produtividade.
 
 ## <a name="sample-master-copies-and-working-copies"></a>Cópias mestras e cópias funcionais de amostras
 
@@ -114,7 +114,7 @@ Quando você instala um exemplo online, a solução é armazenada em dois locais
 
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalando sem usar a caixa de diálogo Extensões e Atualizações
 
-As extensões que foram empacotadas em arquivos .vsix podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo .vsix clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla ENTER. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos .vsix podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo .vsix clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla Enter. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>A caixa de diálogo Extensões e Atualizações não dá suporte aos tipos de extensão
 
