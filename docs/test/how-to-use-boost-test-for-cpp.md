@@ -12,11 +12,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b91c4dc3cc3bc3550f11bc60c95f1c3ed511cf62
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Como usar o Boost.Test para C++ no Visual Studio
 
@@ -35,18 +35,18 @@ O Boost.Test exige o [Boost](http://www.boost.org/)! Se o Boost não estiver ins
 1. Instale a biblioteca Boost.Test dinâmica ou estática:
 
     - Execute **vcpkg install boost-test** para instalar a biblioteca dinâmica Boost.Test.
-    
+
        -OU-
-       
+
     - Execute **vcpkg install boost-test:x86-windows-static** para instalar a biblioteca estática Boost.Test.
 
 1. Execute **vcpkg integrate install** para configurar o Visual Studio com a biblioteca e incluir caminhos para os cabeçalhos e os binários do Boost.
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Adicionar o modelo de item (Visual Studio 2017 versão 15.6 e posterior)
 
-1. Para criar um arquivo .cpp para seus testes, clique com o botão direito nó do projeto no **Gerenciador de Soluções** e escolha **Adicionar Novo Item**. 
- 
-![Modelo de Item Boost.Test](media/boost_test_item_template.png "Modelo de Item Boost.Test")
+1. Para criar um arquivo .cpp para seus testes, clique com o botão direito nó do projeto no **Gerenciador de Soluções** e escolha **Adicionar Novo Item**.
+
+   ![Modelo de Item Boost.Test](media/boost_test_item_template.png "Modelo de Item Boost.Test")
 
 1. O novo arquivo contém um método de teste de exemplo. Compile o projeto para habilitar o **Gerenciador de Testes** e descobrir o método.
 
@@ -54,14 +54,14 @@ O modelo de item usa a variante de cabeçalho único do Boost.Test, mas você po
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Criar um projeto de teste (Visual Studio 2017 versão 15.5)
 
-No Visual Studio 2017 versão 15.5, não há nenhum modelo de projeto de teste ou de item pré-configurado disponível para o Boost.Test. Portanto, é necessário criar e configurar um projeto de aplicativo de console para armazenar seus testes. 
+No Visual Studio 2017 versão 15.5, não há nenhum modelo de projeto de teste ou de item pré-configurado disponível para o Boost.Test. Portanto, é necessário criar e configurar um projeto de aplicativo de console para armazenar seus testes.
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó da solução e escolha **Adicionar** > **Novo Projeto...**.
 
 1. No painel esquerdo, escolha **Visual C++** > **Windows Desktop** e, em seguida, selecione o modelo **Aplicativo de Console do Windows**.
 
 1. Nomeie o projeto e escolha **OK**.
-1. Exclua a função `main` do arquivo .cpp. 
+1. Exclua a função `main` do arquivo .cpp.
 
 1. Se você estiver usando a versão da biblioteca de cabeçalho único ou dinâmica de Boost.Test, vá até [Adicionar diretivas de inclusão](#add_include_directives). Se você estiver usando a versão da biblioteca estática, será necessário realizar outras configurações:
 
@@ -126,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my\_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>Gravar e executar testes
-Agora, você está pronto para gravar e executar testes no Boost.Test. Consulte a [documentação da Boost Test Library](http://www.boost.org/doc/libs/1_38_0/libs/test/doc/html/index.html) (Biblioteca do Boost Test) para saber mais sobre as macros de teste. Consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) para saber mais sobre como descobrir, executar e agrupar testes usando o **Gerenciador de Testes**.
+Agora, você está pronto para gravar e executar testes no Boost.Test. Consulte a [documentação da Boost Test Library](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) (Biblioteca do Boost Test) para saber mais sobre as macros de teste. Consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) para saber mais sobre como descobrir, executar e agrupar testes usando o **Gerenciador de Testes**.
 
 ## <a name="see-also"></a>Consulte também
 [Escrever Testes de Unidade para C/C++](writing-unit-tests-for-c-cpp.md)

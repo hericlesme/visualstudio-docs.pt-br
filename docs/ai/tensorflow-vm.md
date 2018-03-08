@@ -9,17 +9,18 @@ ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 424072fd91672921c470dbc16e1a9287b1cc575a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Treinar um modelo do TensorFlow na nuvem
 
-Neste tutorial, treinaremos um modelo do TensorFlow usando um [conjunto de dados MNIST](http://yann.lecun.com/exdb/mnist/) em uma máquina virtual de [aprendizagem profunda](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) do Azure. 
+Neste tutorial, treinaremos um modelo do TensorFlow usando um [conjunto de dados MNIST](http://yann.lecun.com/exdb/mnist/) em uma máquina virtual de [aprendizagem profunda](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) do Azure.
 
 O banco de dados MNIST tem um conjunto de treinamento de 60 mil exemplos e um conjunto de testes de 10 mil exemplos de dígitos manuscritos.
 
@@ -28,10 +29,10 @@ Antes de começar, confira se os itens a seguir estão instalados e configurados
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurar uma máquina virtual de aprendizagem profunda do Azure
 
-> [!NOTE] 
+> [!NOTE]
 > Definir **tipo do sistema operacional** como Linux.
 
-As instruções para configurar a máquina virtual de aprendizagem profunda podem ser encontradas [aqui](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm). 
+As instruções para configurar a máquina virtual de aprendizagem profunda podem ser encontradas [aqui](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
 ### <a name="remove-comment-in-parens"></a>Remover o comentário entre parênteses
 
@@ -41,13 +42,13 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Baixar o código de exemplo
 
-Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) que contém exemplos de como começar a trabalhar com aprendizagem profunda no TensorFlow, CNTK, Theano e muito mais. 
+Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) que contém exemplos de como começar a trabalhar com aprendizagem profunda no TensorFlow, CNTK, Theano e muito mais.
 
 ## <a name="open-project"></a>Abrir o projeto
 
 - Inicie o Visual Studio e selecione **Arquivo > Abrir > Projeto/Solução**.
 
-- Selecione a pasta **Exemplos do TensorFlow** no repositório de exemplos baixada e abra o arquivo **TensorflowExamples.sln**. 
+- Selecione a pasta **Exemplos do TensorFlow** no repositório de exemplos baixada e abra o arquivo **TensorflowExamples.sln**.
 
 ![Abrir o projeto](media\tensorflow-local\open-project.png)
 
@@ -55,7 +56,7 @@ Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) qu
 
 ## <a name="add-azure-remote-vm"></a>Adicionar a VM remota do Azure
 
-No Gerenciador de Servidores, clique com o botão direito do mouse no nó **Computadores Remotos** no nó Ferramentas de IA e selecione "Adicionar...". Insira o nome de exibição do computador remoto, o IP host, a porta SSH, o nome de usuário e a senha/arquivo de chave. 
+No Gerenciador de Servidores, clique com o botão direito do mouse no nó **Computadores Remotos** no nó Ferramentas de IA e selecione "Adicionar...". Insira o nome de exibição do computador remoto, o IP host, a porta SSH, o nome de usuário e a senha/arquivo de chave.
 
 ![Adicionar um novo computador remoto](media\tensorflow-vm\add-remote-vm.png)
 
@@ -68,11 +69,11 @@ Na janela de envio:
 
 - Na lista **Cluster a ser usado**, selecione o computador remoto (com o prefixo "rm:") ao qual enviar o trabalho.
 
-- Insira um **Nome do trabalho**. 
+- Insira um **Nome do trabalho**.
 
-- Clique em **Enviar**. 
+- Clique em **Enviar**.
 
-## <a name="check-status-of-job"></a>Verificar o status do trabalho 
+## <a name="check-status-of-job"></a>Verificar o status do trabalho
 Para ver o status e detalhes dos trabalhos, expanda a máquina virtual a que o trabalho foi enviado no **Gerenciador de Servidores**. Clique duas vezes em **Trabalhos**.
 
 ![Navegador do trabalho](media\tensorflow-vm\job-browser.png)

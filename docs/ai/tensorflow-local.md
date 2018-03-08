@@ -9,40 +9,42 @@ ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 395340bbaaafb1a990590ab50e3b0257c221e355
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 107145ddc607aeb981797c935a9d693a3fd9f9a6
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
-# <a name="train-a-tensorflow-model-locally"></a>Treinar um modelo do TensorFlow no local 
+# <a name="train-a-tensorflow-model-locally"></a>Treinar um modelo do TensorFlow no local
 
-Neste guia de início rápido, treinaremos um modelo do TensorFlow com o conjunto de dados [MNIST](http://yann.lecun.com/exdb/mnist/) localmente nas Ferramentas do Visual Studio para IA. O banco de dados MNIST tem um conjunto de treinamento de 60 mil exemplos e um conjunto de testes de 10 mil exemplos de dígitos manuscritos. 
+Neste guia de início rápido, treinaremos um modelo do TensorFlow com o conjunto de dados [MNIST](http://yann.lecun.com/exdb/mnist/) localmente nas Ferramentas do Visual Studio para IA.
+O banco de dados MNIST tem um conjunto de treinamento de 60 mil exemplos e um conjunto de testes de 10 mil exemplos de dígitos manuscritos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Antes de começar, confira se os itens a seguir estão instalados:
 
-### <a name="google-tensorflow"></a>Google TensorFlow 
+### <a name="google-tensorflow"></a>Google TensorFlow
 
-Em um terminal, execute o seguinte comando. 
+Em um terminal, execute o seguinte comando.
 ```cmd
 C:\>pip.exe install tensorflow
 ```
 
-### <a name="numpy-and-scipy"></a>NumPy e SciPy 
-Instale o [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) e o [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy). 
+### <a name="numpy-and-scipy"></a>NumPy e SciPy
+Instale o [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) e o [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
 ### <a name="download-sample-code"></a>Baixar o código de exemplo
-Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) que contém exemplos de como começar a trabalhar com aprendizagem profunda no TensorFlow, CNTK, Theano e muito mais. 
+Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) que contém exemplos de como começar a trabalhar com aprendizagem profunda no TensorFlow, CNTK, Theano e muito mais.
 
 ## <a name="open-solution-and-train-model"></a>Abrir a solução e treinar o modelo
 
 - Inicie o Visual Studio e selecione **Arquivo > Abrir > Projeto/Solução**.
 
-- Selecione a pasta **Exemplos do TensorFlow** no repositório de exemplos baixada e abra o arquivo **TensorflowExamples.sln**. 
+- Selecione a pasta **Exemplos do TensorFlow** no repositório de exemplos baixada e abra o arquivo **TensorflowExamples.sln**.
 
 ![Abrir o projeto](media\tensorflow-local\open-project.png)
 
@@ -50,7 +52,7 @@ Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) qu
 
 - Localize o Projeto MNIST no **Gerenciador de Soluções**, clique com o botão direito do mouse e selecione **Definir como Projeto de Inicialização**.
 
-- Clique em **Iniciar**. 
+- Clique em **Iniciar**.
 
 - A saída é impressa no console.
 

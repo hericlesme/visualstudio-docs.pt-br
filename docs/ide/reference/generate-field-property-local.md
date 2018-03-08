@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8de048928286017d4e6f79bda6aff804b49d3150
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4e5da77f3053aabc2e8e4813c8ef5e7fb3407b5f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Gerar um campo, uma propriedade ou uma variável local no Visual Studio
 
@@ -47,7 +47,7 @@ Esta geração de código aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl +.** para acionar o menu **Ações e Refatorações Rápidas**.
+     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
@@ -72,5 +72,5 @@ Esta geração de código aplica-se a:
 
 ## <a name="see-also"></a>Consulte também
 
-[Geração de código](../code-generation-in-visual-studio.md)  
-[Visualizar alterações](../../ide/preview-changes.md)
+- [Geração de código](../code-generation-in-visual-studio.md)
+- [Visualizar alterações](../../ide/preview-changes.md)

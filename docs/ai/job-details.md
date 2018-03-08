@@ -1,11 +1,17 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: f11a66fd06a2b0b3b23d35c3153c5dd26fab282e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="view-recent-job-performance-and-details"></a>Exibir detalhes e desempenho do trabalho recentes
 Depois que os trabalhos forem enviados, será possível exibir a lista de trabalhos para ver seus status, duração e mais.
 
-1. No **Gerenciador de Servidores**, expanda o contexto de computação específico 
+1. No **Gerenciador de Servidores**, expanda o contexto de computação específico
 1. Clique duas vezes em **Trabalhos**
-1. Você verá a lista de trabalhos enviados para esse contexto de computação. 
+1. Você verá a lista de trabalhos enviados para esse contexto de computação.
 1. Selecionar um **trabalho** específico na lista para exibir detalhes
 
 ![monitorar trabalhos](media\job-details\monitor-jobs.png)

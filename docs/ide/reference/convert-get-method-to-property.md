@@ -16,11 +16,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d0a532e2e3e5bb8afa4a3c3dc9720134a1b7e8b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ab91e95d699b4a7fcc27ca1f6bcdf43b51af9c26
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refatorações para converter o método Get em propriedade/converter uma propriedade no método Get
 
@@ -41,7 +41,7 @@ Essas refatorações aplicam-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl +.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Substituir método por propriedade** no pop-up da janela Visualização.
+     - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Substituir método por propriedade** no pop-up da janela Visualização.
    - **Mouse**
      - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Substituir método por propriedade** no pop-up da janela Visualização.
 
@@ -73,7 +73,7 @@ public int MyValue
 
 **O quê:** permite converter uma propriedade em um método Get
 
-**Quando:** você tem uma propriedade que envolve mais do que imediatamente configurar e obter um valor 
+**Quando:** você tem uma propriedade que envolve mais do que imediatamente configurar e obter um valor
 
 ### <a name="how-to"></a>Como fazer
 
@@ -82,7 +82,7 @@ public int MyValue
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl +.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Substituir propriedade por métodos** no pop-up da janela Visualização.
+     - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Substituir propriedade por métodos** no pop-up da janela Visualização.
    - **Mouse**
      - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Substituir propriedade por métodos** no pop-up da janela Visualização.
 
@@ -90,5 +90,5 @@ public int MyValue
 
 ## <a name="see-also"></a>Consulte também
 
-[Refatoração](../refactoring-in-visual-studio.md)  
-[Visualizar alterações](../../ide/preview-changes.md)
+- [Refatoração](../refactoring-in-visual-studio.md)
+- [Visualizar alterações](../../ide/preview-changes.md)

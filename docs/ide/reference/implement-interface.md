@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcdad47ebb8ecae9d943acd8e0db60c20ef8378
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 152b5f1c0bc3129078effb07cbe5aa36a4591f9d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementar uma interface no Visual Studio
 
@@ -46,7 +46,7 @@ Esta geração de código aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-     - Pressione **Ctrl +.** para acionar o menu **Ações e Refatorações Rápidas**.
+     - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
      - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
      - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![Lâmpada](media/bulb-cs.png) que aparece.
@@ -77,5 +77,5 @@ Esta geração de código aplica-se a:
 
 ## <a name="see-also"></a>Consulte também
 
-[Geração de código](../code-generation-in-visual-studio.md)  
-[Visualizar alterações](../../ide/preview-changes.md)
+- [Geração de código](../code-generation-in-visual-studio.md)
+- [Visualizar alterações](../../ide/preview-changes.md)

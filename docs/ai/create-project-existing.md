@@ -1,4 +1,10 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 053ea5ad7579a040cdefbf7e519c852dc4fb7fe9
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Criar um projeto IA com base no código existente
 
@@ -22,7 +28,7 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), �
 
 1. Para definir um arquivo de inicialização, localize o arquivo no Gerenciador de Soluções, clique com o botão direito do mouse e selecione **Definir como Arquivo de Inicialização**.
 
-1. Se desejar, execute o programa pressionando Ctrl+F5 ou selecionando **Depurar > Iniciar Sem Depuração**.
+1. Se desejar, execute o programa pressionando CTRL + F5 ou selecionando **Depurar > Iniciar Sem Depuração**.
 
 > [!div class="nextstepaction"]
 > [Tutorial: trabalhando com o Python no Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)

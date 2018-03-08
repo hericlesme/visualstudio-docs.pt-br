@@ -1,13 +1,19 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Clonar um repositório de código Python no Visual Studio
 
 Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installation.md), será possível clonar facilmente um repositório de código Python e criar um projeto com base nele.
 
 1. Para conectar-se aos repositórios do GitHub, execute o instalador do Visual Studio, selecione **Modificar** e escolha a guia **Componentes individuais**. Role para baixo até a seção **Ferramentas de código**, selecione **Extensão GitHub para Visual Studio** e escolha **Modificar**.
-    
+
     ![Selecionando a extensão GitHub no instalador do Visual Studio](media\create-project-repo\installation-github-extension.png)
-    
+
 2. Inicie o Visual Studio.
 
 3. Selecione **Exibir > Team Explorer...** para abrir a janela do **Team Explorer** em que é possível se conectar ao GitHub ou ao Visual Studio Team Services ou clonar um repositório.
@@ -27,9 +33,9 @@ Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installa
 
 7. Selecione **Exibir > Gerenciador de Soluções** no menu.
 
-8. No Gerenciador de Soluções, expanda o nó `TensorFlow Examples> MNIST`, clique com o botão direito do mouse em `convolutional.py` e selecione **Definir como Arquivo de Inicialização**. Esta etapa informa ao Visual Studio qual arquivo deve ser usado ao executar o projeto.
+8. No Gerenciador de Soluções, expanda o nó `TensorFlow Examples> MNIST`, clique com botão direito do mouse em `convolutional.py` e selecione **Definir como Arquivo de Inicialização**. Esta etapa informa ao Visual Studio qual arquivo deve ser usado ao executar o projeto.
 
-10. Pressione Ctrl+F5 ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. Se você vir um `, verifique novamente a configuração do diretório de trabalho na etapa anterior.
+10. Pressione CTRL + F5 ou selecione **Depurar > Iniciar Sem Depuração** para executar o programa. Se você vir um `, verifique novamente a configuração do diretório de trabalho na etapa anterior.
 
 
 11. Quando o programa é executado com sucesso, você o verá iniciando o download do seu treinamento, testando o conjunto de dados, treinando o modelo e transmitindo sua taxa de erros. Convém que a taxa de erro diminua com o tempo
@@ -38,7 +44,7 @@ Depois de [instalar o suporte às Ferramentas do Visual Studio para IA](installa
 
 > Se você estiver usando o Anaconda e receber um erro sobre numpy ausente, talvez seja necessário [alterar seu ambiente de python para usar o Anaconda](../python/selecting-a-python-environment-for-a-project.md).
 
-11. É possível visualizar o andamento com o TensorBoard. Clique com o botão direito do mouse no seu projeto e em **Executar TensorBoard**. Em seguida, selecione o diretório os seus logs do TensorBoard de saída.
+11. É possível visualizar o andamento com o TensorBoard. Clique com botão direito do mouse no seu projeto e em **Executar TensorBoard**. Em seguida, selecione o diretório os seus logs do TensorBoard de saída.
 
     ![executar tensorboard](media\create-project-repo\run-tensorboard.png)
 
