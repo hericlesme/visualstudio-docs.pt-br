@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9dede2f30a9d91e94bda3183deaae337e4c556dc
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Como: diagnosticar UI atrasos causados pelas extensões
 
@@ -44,7 +44,7 @@ As seções a seguir, veremos essas etapas em mais detalhes.
 
 ## <a name="identifying-the-trigger-scenario"></a>Identificando o cenário de gatilho
 
-Para diagnosticar um atraso de interface do usuário, você primeiro precisa idetify quais (sequência de ações) faz com que o Visual Studio para mostrar a notificação. Isso está na ordem para que você pode disparar a notificação posteriormente com o log ativado.
+Para diagnosticar um atraso de interface do usuário, você primeiro precisa identificar quais (sequência de ações) faz com que o Visual Studio para mostrar a notificação. Isso está na ordem para que você pode disparar a notificação posteriormente com o log ativado.
 
 ## <a name="restarting-vs-with-activity-logging-on"></a>Reiniciar VS com atividade de logon
 
@@ -158,3 +158,5 @@ PerfView tem detalhadas orientação sob o menu de Ajuda que você pode usar par
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
 
+> [!NOTE]
+> Se não for possível resolver a falta de resposta devido a dependências você não tem controle sobre (por exemplo, se sua extensão precisa chamar serviços de VS síncronos no thread da interface do usuário), gostaríamos de saber sobre ele. Se você for um membro de nosso programa de parceiro do Visual Studio, você pode contatar nos enviando uma solicitação de suporte do desenvolvedor. Caso contrário, use a ferramenta de um problema de relatório para enviar seus comentários e incluir `"Extension UI Delay Notifications"` no título. Também inclua uma descrição detalhada da sua análise.

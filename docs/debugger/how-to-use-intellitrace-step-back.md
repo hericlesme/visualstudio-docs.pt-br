@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Etapa-back de instantâneos de modo de exibição usando o IntelliTrace no Visual Studio
 
@@ -107,5 +107,7 @@ O impacto no desempenho geral de revisão depende de seu aplicativo. A sobrecarg
 
     Solução alternativa:
     * Limpe todos os instantâneos de finalizar a sessão de depuração. 
+
+* Ao depurar um aplicativo cujo processo tem um grande número de regiões de memória exclusivo, como um aplicativo que carrega um grande número de DLLs, passar o desempenho com instantâneos habilitados pode ser afetado. Esse problema será corrigido em uma versão futura do Windows. Se você estiver enfrentando o problema, falar conosco em stepback@microsoft.com. 
 
 * Ao salvar um arquivo com **Depurar > IntelliTrace > Salvar IntelliTrace sessão** no modo de eventos e instantâneos, os dados adicionais capturados de instantâneos não estão disponíveis no arquivo. itrace. Nos eventos de ponto de interrupção e etapa, você ver as mesmas informações como se tivesse salvou o arquivo no modo somente de eventos de IntelliTrace. 
