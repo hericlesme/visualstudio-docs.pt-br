@@ -1,13 +1,14 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: "Documentação do Visual Studio | Microsoft Docs"
 description: "Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos."
-ms.openlocfilehash: 3875594d51eeb54322eed2fbe423f045c6aa1d4a
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.topic: hub-page
+ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -224,7 +225,7 @@ ms.lasthandoff: 12/15/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Melhorar o desempenho</h3>
-                                                    <p>Identifique os afunilamentos e otimize o desempenho do código usando ferramentas de diagnóstico.
+                                                    <p>Identifique os gargalos e otimize o desempenho do código usando ferramentas de diagnóstico.
                                                     </p>
                                                 </div>
                                             </div>
