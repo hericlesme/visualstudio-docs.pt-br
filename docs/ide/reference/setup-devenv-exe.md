@@ -1,10 +1,10 @@
 ---
 title: "Opção de configuração devenv.exe | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,11 +14,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93f03de74540d130d66ce123b355691e0828b93e
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e37fe50eefc36e7b5396f396d2b614851a0bd9cb
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 
@@ -26,7 +26,7 @@ A opção /Setup faz com que o Visual Studio mescle os metadados de recursos que
 
 ## <a name="syntax"></a>Sintaxe
 
-```
+```shell
 devenv /setup
 ```
 
@@ -34,13 +34,14 @@ devenv /setup
 
 Esta opção não aceita nenhum argumento. O comando `devenv /setup` geralmente é fornecido como a última etapa do processo de instalação. O uso da opção `/setup` não inicia o Visual Studio.
 
-É necessário executar `devenv` como administrador para usar as opções [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).
+> [!NOTE]
+> Você deve executar `devenv` como administrador para usar a opção `/setup`.
 
 ## <a name="example"></a>Exemplo
 
 Este exemplo mostra a última etapa na instalação de uma versão do Visual Studio que inclui VSPackages.
 
-```
+```shell
 devenv /setup
 ```
 

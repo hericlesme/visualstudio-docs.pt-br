@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF
 
@@ -46,53 +46,53 @@ Nesta seção, você criará a infraestrutura do aplicativo, que inclui o projet
 1. No designer, escolha a guia **MainWindow.xaml** se ela ainda não for a guia ativa do designer.
 
 1. Se estiver usando C#, localize a linha `<Window x:Class="ExpenseIt.MainWindow"` e substitua-a por `<NavigationWindow x:Class="ExpenseIt.MainWindow"`.
-  
+
      Se estiver usando o Visual Basic, localize a linha `<Window x:Class=" MainWindow"` e substitua-a por `<NavigationWindow x:Class="MainWindow"`.
-  
+
      Observe que quando você altera a marca `<Window` para `<NavigationWindow`, o IntelliSense altera automaticamente a marca de fechamento para `</NavigationWindow>` também.
-  
+
     > [!NOTE]
     >  Depois de alterar a marca, se a janela **Lista de Erros** estiver aberta, você poderá notar vários erros. Não se preocupe, as alterações feitas nas próximas etapas farão com que eles desapareçam.
 
 1. Escolha as marcas `<Grid>` e `</Grid>`, e exclua-as.
-  
+
      Uma **NavigationWindow** não pode conter outros elementos de interface do usuário, como uma **Grade**.
 
 1. Na janela **Propriedades**, expanda o nó de categoria **Comum**, escolha a propriedade **Título** e, em seguida, insira `ExpenseIt` e pressione a tecla **Enter**.
-  
+
      Observe que o atributo **Título** na janela do XAML é alterado para corresponder ao novo valor. Você pode modificar as propriedades de XAML na janela XAML ou na janela **Propriedades** e as alterações são sincronizadas.
 
 1. Na janela XAML, defina o valor do elemento **Altura** como `375` e defina o valor da propriedade **Largura** como `500`.
-  
+
      Esses elementos correspondem às propriedades **Altura** e **Largura**, encontradas na categoria **Layout** na janela **Propriedades**.
-  
-     O arquivo **MainWindow.xaml** agora deve ter essa aparência em C#:  
-  
-    ```xaml  
-    <NavigationWindow x:Class="ExpenseIt.MainWindow"  
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-            xmlns:local="clr-namespace:ExpenseIt"  
-            mc:Ignorable="d"  
+
+     O arquivo **MainWindow.xaml** agora deve ter essa aparência em C#:
+
+    ```xaml
+    <NavigationWindow x:Class="ExpenseIt.MainWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:ExpenseIt"
+            mc:Ignorable="d"
             Title="ExpenseIt" Height="375" Width="500">
-    </NavigationWindow>  
+    </NavigationWindow>
     ```
 
     Ou essa, no Visual Basic:
 
-    ```xaml  
-    <NavigationWindow x:Class="MainWindow"  
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-            xmlns:local="clr-namespace:ExpenseIt"  
-            mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500">    
-    </NavigationWindow>  
-    ```  
+    ```xaml
+    <NavigationWindow x:Class="MainWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:ExpenseIt"
+            mc:Ignorable="d"
+            Title="ExpenseIt" Height="375" Width="500">
+    </NavigationWindow>
+    ```
 
 ### <a name="to-modify-the-code-behind-file-c"></a>Para modificar o arquivo code- (C#)
 
@@ -111,103 +111,103 @@ Nesta seção, você adicionará duas páginas e uma imagem ao aplicativo.
 1. No **Gerenciador de Soluções**, abra o menu de atalho para o nó **ExpenseIt** e escolha **Adicionar** > **Página**.
 
 1. Na caixa de diálogo **Adicionar Novo Item**, escolha a caixa de texto **Nome**, insira `ExpenseItHome` e escolha o botão **Adicionar**.
-  
+
      Esta página é a primeira janela que é exibida quando o aplicativo é iniciado.
 
 1. No designer, escolha a guia **ExpenseItHome.xaml** se ela ainda não for a guia ativa do designer.
 
 1. Escolha o atributo `Title` e altere seu valor para **ExpenseIt - Home**.
-  
-     O arquivo **ExpenseItHome.xaml** agora deve ter essa aparência em C#:  
-  
-    ```xaml  
-    <Page x:Class="ExpenseIt.ExpenseItHome"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - Home">    
-        <Grid>  
-  
-        </Grid>  
-    </Page>  
-    ```  
-  
-    No Visual Basic, a primeira linha será um pouco diferente:  
-  
-    ```xaml  
-    <Page x:Class="ExpenseItHome"  
-    ```  
+
+     O arquivo **ExpenseItHome.xaml** agora deve ter essa aparência em C#:
+
+    ```xaml
+    <Page x:Class="ExpenseIt.ExpenseItHome"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:local="clr-namespace:ExpenseIt"
+          mc:Ignorable="d"
+          d:DesignHeight="300" d:DesignWidth="300"
+          Title="ExpenseIt - Home">
+        <Grid>
+
+        </Grid>
+    </Page>
+    ```
+
+    No Visual Basic, a primeira linha será um pouco diferente:
+
+    ```xaml
+    <Page x:Class="ExpenseItHome"
+    ```
 
 1. No designer, escolha a guia **MainWindow.xaml**.
 
 1. Localize o elemento de linha `Title="ExpenseIt" Height="375" Width="500">` e adicione uma propriedade `Source="ExpenseItHome.xaml"`.
-  
-     Isso define **ExpenseItHome.xaml** como a primeira página aberta quando o aplicativo é iniciado. O arquivo **MainWindow.xaml** agora deve ter essa aparência em C#:  
-  
-    ```xaml  
-    <NavigationWindow x:Class="ExpenseIt.MainWindow"  
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-            xmlns:local="clr-namespace:ExpenseIt"  
-            mc:Ignorable="d"  
-            Title="ExpenseIt" Height="375" Width="500" Source="ExpenseItHome.xaml">    
-    </NavigationWindow>  
-    ```  
-  
-    No Visual Basic, a primeira linha será um pouco diferente:  
-  
-    ```xaml  
+
+     Isso define **ExpenseItHome.xaml** como a primeira página aberta quando o aplicativo é iniciado. O arquivo **MainWindow.xaml** agora deve ter essa aparência em C#:
+
+    ```xaml
+    <NavigationWindow x:Class="ExpenseIt.MainWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:ExpenseIt"
+            mc:Ignorable="d"
+            Title="ExpenseIt" Height="375" Width="500" Source="ExpenseItHome.xaml">
+    </NavigationWindow>
+    ```
+
+    No Visual Basic, a primeira linha será um pouco diferente:
+
+    ```xaml
     <NavigationWindow x:Class="MainWindow"
-    ```  
-  
+    ```
+
      Como as propriedades definidas anteriormente, você pode definir a propriedade `Source` na categoria **Diversos** da janela **Propriedades**.
-  
+
 ### <a name="to-add-a-details-window"></a>Para adicionar uma janela de detalhes
 
 1. No **Gerenciador de Soluções**, abra o menu de atalho para o nó **ExpenseIt** e escolha **Adicionar** > **Página**.
 
 1. Na caixa de diálogo **Adicionar Novo Item**, escolha a caixa de texto **Nome**, insira `ExpenseReportPage` e escolha o botão **Adicionar**.
-  
+
      Essa janela exibirá um relatório de despesas individuais.
 
 1. No designer, escolha a guia **ExpenseReportPage.xaml** se ela ainda não for a guia ativa do designer.
 
 1. Escolha o atributo `Title` e altere seu valor para **ExpenseIt - View Expense**.
-  
-     O arquivo ExpenseReportPage.xaml agora deve ter essa aparência em C#:  
-  
-    ```xaml  
-    <Page x:Class="ExpenseIt.ExpenseReportPage"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - View Expense">    
-        <Grid>  
-  
-        </Grid>  
-    </Page>  
-    ```  
-  
-    No Visual Basic, a primeira linha será um pouco diferente:  
-  
-    ```xaml  
-    <Page x:Class="ExpenseReportPage"  
-    ```  
+
+     O arquivo ExpenseReportPage.xaml agora deve ter essa aparência em C#:
+
+    ```xaml
+    <Page x:Class="ExpenseIt.ExpenseReportPage"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:local="clr-namespace:ExpenseIt"
+          mc:Ignorable="d"
+          d:DesignHeight="300" d:DesignWidth="300"
+          Title="ExpenseIt - View Expense">
+        <Grid>
+
+        </Grid>
+    </Page>
+    ```
+
+    No Visual Basic, a primeira linha será um pouco diferente:
+
+    ```xaml
+    <Page x:Class="ExpenseReportPage"
+    ```
 
 1. Na barra de menus, escolha **Depurar** > **Iniciar Depuração** (ou pressione **F5**) para executar o aplicativo.
-  
+
      A ilustração a seguir mostra o aplicativo com os botões da janela de navegação.
-  
+
      ![Captura de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure1.png "GettingStartedFigure1")
 
 1. Feche o aplicativo para retornar ao modo de design.
@@ -226,33 +226,33 @@ O layout oferece uma maneira ordenada de posicionar elementos e também gerencia
 
 1. Adicione o seguinte código XAML ao elemento `Grid` para criar as definições de linha e coluna:
 
-    ```xaml  
-    <Grid.ColumnDefinitions>  
-        <ColumnDefinition />  
-    </Grid.ColumnDefinitions>  
-    <Grid.RowDefinitions>  
-        <RowDefinition Height="Auto"/>  
-        <RowDefinition />  
-        <RowDefinition Height="Auto"/>  
-    </Grid.RowDefinitions>  
+    ```xaml
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition />
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
     ```
 
 ### <a name="to-add-controls"></a>Para adicionar controles
 
 1. Abra **ExpenseItHome.xaml**.
 
-1. Adicione o seguinte código XAML logo acima da marca `</Grid>` para criar os controles `Border`, `ListBox` e `Button`:  
+1. Adicione o seguinte código XAML logo acima da marca `</Grid>` para criar os controles `Border`, `ListBox` e `Button`:
 
-    ```xaml  
-    <!-- People list -->  
-      <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">  
-          <Label VerticalAlignment="Center" Foreground="White">Names</Label>  
-      </Border>  
-      <ListBox Name="peopleListBox" Grid.Column="0" Grid.Row="1">  
-          <ListBoxItem>Mike</ListBoxItem>  
-          <ListBoxItem>Lisa</ListBoxItem>  
-          <ListBoxItem>John</ListBoxItem>  
-          <ListBoxItem>Mary</ListBoxItem>  
+    ```xaml
+    <!-- People list -->
+      <Border Grid.Column="0" Grid.Row="0" Height="35" Padding="5" Background="#4E87D4">
+          <Label VerticalAlignment="Center" Foreground="White">Names</Label>
+      </Border>
+      <ListBox Name="peopleListBox" Grid.Column="0" Grid.Row="1">
+          <ListBoxItem>Mike</ListBoxItem>
+          <ListBoxItem>Lisa</ListBoxItem>
+          <ListBoxItem>John</ListBoxItem>
+          <ListBoxItem>Mary</ListBoxItem>
       </ListBox>
 
       <!-- View report button -->
@@ -264,7 +264,7 @@ O layout oferece uma maneira ordenada de posicionar elementos e também gerencia
 
 1. Crie e execute o aplicativo. A ilustração a seguir mostra a aparência do tempo de execução dos controles criados pelo XAML nesse procedimento.
 
-     ![Captura de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
+     ![Captura de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure2.png "GettingStartedFigure2")
 
 1. Feche o aplicativo para retornar ao modo de design.
 
@@ -272,7 +272,7 @@ O layout oferece uma maneira ordenada de posicionar elementos e também gerencia
 
 1. Escolha a imagem a seguir e salve-a como `watermark.png`.
 
-     ![Imagem de marca-d'água para instruções passo a passo](../designers/media/wpf_watermark.png "watermark")  
+     ![Imagem de marca-d'água para instruções passo a passo](../designers/media/wpf_watermark.png "watermark")
 
     > [!NOTE]
     >  Como alternativa, você pode criar sua própria imagem e salvá-la como `watermark.png`.
@@ -304,7 +304,7 @@ O layout oferece uma maneira ordenada de posicionar elementos e também gerencia
 
     Isso cria uma coluna adicional à esquerda das outras colunas com uma largura fixa de 230 pixels.
 
-1. Localize a linha `<Grid.RowDefinitions>` e adicione o seguinte abaixo dela:  
+1. Localize a linha `<Grid.RowDefinitions>` e adicione o seguinte abaixo dela:
 
     ```xaml
     <RowDefinition />
@@ -332,94 +332,94 @@ O layout oferece uma maneira ordenada de posicionar elementos e também gerencia
      O conteúdo de **ExpenseItHome.xaml** agora deve ter essa aparência em C#:
 
     ```xaml
-    <Page x:Class="ExpenseIt.ExpenseItHome"  
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   
-          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
-          xmlns:local="clr-namespace:ExpenseIt"  
-          mc:Ignorable="d"   
-          d:DesignHeight="300" d:DesignWidth="300"  
-          Title="ExpenseIt - Home">  
-        <Grid Margin="10,0,10,10">  
-            <Grid.ColumnDefinitions>  
-                <ColumnDefinition Width="230" />  
-                <ColumnDefinition />  
-            </Grid.ColumnDefinitions>  
-            <Grid.RowDefinitions>  
-                <RowDefinition />  
-                <RowDefinition Height="Auto"/>  
-                <RowDefinition />  
-                <RowDefinition Height="Auto"/>  
-            </Grid.RowDefinitions>  
-            <Border Grid.Column="1" Grid.Row="1" Height="35" Padding="5" Background="#4E87D4">  
-                <Label VerticalAlignment="Center" Foreground="White">Names</Label>  
-            </Border>  
-            <!-- People list -->  
-            <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
-            FontWeight="Bold" FontSize="18" Foreground="#0066cc">  
-                View Expense Report  
-            </Label>  
-            <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2">  
-                <ListBoxItem>Mike</ListBoxItem>  
-                <ListBoxItem>Lisa</ListBoxItem>  
-                <ListBoxItem>John</ListBoxItem>  
-                <ListBoxItem>Mary</ListBoxItem>  
-            </ListBox>  
-  
-            <!-- View report button -->  
-            <Button Grid.Column="1" Grid.Row="3" Margin="0,10,0,0" Width="125"  
-    Height="25" HorizontalAlignment="Right">View</Button>  
-            <Grid.Background>  
-                <ImageBrush ImageSource="watermark.png"/>  
-            </Grid.Background>  
-        </Grid>  
-    </Page>  
-    ```  
-  
-    No Visual Basic, a primeira linha será um pouco diferente:  
-  
-    ```xaml  
-    <Page x:Class="ExpenseItHome"  
-    ```  
+    <Page x:Class="ExpenseIt.ExpenseItHome"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:local="clr-namespace:ExpenseIt"
+          mc:Ignorable="d"
+          d:DesignHeight="300" d:DesignWidth="300"
+          Title="ExpenseIt - Home">
+        <Grid Margin="10,0,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Column="1" Grid.Row="1" Height="35" Padding="5" Background="#4E87D4">
+                <Label VerticalAlignment="Center" Foreground="White">Names</Label>
+            </Border>
+            <!-- People list -->
+            <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
+            FontWeight="Bold" FontSize="18" Foreground="#0066cc">
+                View Expense Report
+            </Label>
+            <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2">
+                <ListBoxItem>Mike</ListBoxItem>
+                <ListBoxItem>Lisa</ListBoxItem>
+                <ListBoxItem>John</ListBoxItem>
+                <ListBoxItem>Mary</ListBoxItem>
+            </ListBox>
 
-1. Se você compilar e executar o aplicativo neste ponto, ele deverá se parecer com a seguinte ilustração:  
-  
-     ![Captura de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")  
+            <!-- View report button -->
+            <Button Grid.Column="1" Grid.Row="3" Margin="0,10,0,0" Width="125"
+    Height="25" HorizontalAlignment="Right">View</Button>
+            <Grid.Background>
+                <ImageBrush ImageSource="watermark.png"/>
+            </Grid.Background>
+        </Grid>
+    </Page>
+    ```
+
+    No Visual Basic, a primeira linha será um pouco diferente:
+
+    ```xaml
+    <Page x:Class="ExpenseItHome"
+    ```
+
+1. Se você compilar e executar o aplicativo neste ponto, ele deverá se parecer com a seguinte ilustração:
+
+     ![Captura de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure3.png "GettingStartedFigure3")
 
 ### <a name="to-add-code-to-the-button"></a>Para adicionar código ao botão
 
 1. Abra **ExpenseItHome.xaml**.
 
 1. Escolha o elemento `Button` e adicione o seguinte código XAML logo após o elemento `HorizontalAlignment="Right"`: `Click="Button_Click"`.
-  
-     Isso adiciona um manipulador de eventos ao evento `Click` do botão. Agora, código do elemento **Botão** deve estar assim:  
-  
-    ```xaml  
-    <!-- View report button -->  
-      <Button Grid.Column="1" Grid.Row="3" Margin="0,10,0,0" Width="125"  
-    Height="25" HorizontalAlignment="Right" Click="Button_Click">View</Button>  
-    ```  
+
+     Isso adiciona um manipulador de eventos ao evento `Click` do botão. Agora, código do elemento **Botão** deve estar assim:
+
+    ```xaml
+    <!-- View report button -->
+      <Button Grid.Column="1" Grid.Row="3" Margin="0,10,0,0" Width="125"
+    Height="25" HorizontalAlignment="Right" Click="Button_Click">View</Button>
+    ```
 
 1. Abra o arquivo **ExpenseItHome.xaml.cs** ou **ExpenseItHome.xaml.vb**.
 
-1. Adicione o seguinte código à classe `ExpenseItHome`:  
-  
-   ```csharp  
-   private void Button_Click(object sender, RoutedEventArgs e)  
-   {  
-       // View Expense Report  
-       ExpenseReportPage expenseReportPage = new ExpenseReportPage();  
-       this.NavigationService.Navigate(expenseReportPage);    
-   }  
-   ```  
-  
-   ```vb  
-   Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
-       ' View Expense Report  
-       Dim expenseReportPage As New ExpenseReportPage()  
-   Me.NavigationService.Navigate(expenseReportPage)  
-   End Sub  
+1. Adicione o seguinte código à classe `ExpenseItHome`:
+
+   ```csharp
+   private void Button_Click(object sender, RoutedEventArgs e)
+   {
+       // View Expense Report
+       ExpenseReportPage expenseReportPage = new ExpenseReportPage();
+       this.NavigationService.Navigate(expenseReportPage);
+   }
+   ```
+
+   ```vb
+   Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+       ' View Expense Report
+       Dim expenseReportPage As New ExpenseReportPage()
+   Me.NavigationService.Navigate(expenseReportPage)
+   End Sub
    ```
 
     Esse manipulador de eventos abre a página Relatório de Despesas quando o botão é clicado.
@@ -432,466 +432,466 @@ O layout oferece uma maneira ordenada de posicionar elementos e também gerencia
 
 1. Adicione o seguinte código XAML entre as marcas `<Grid>` e `</Grid>`:
 
-    ```xaml  
-    <Grid.Background>  
-        <ImageBrush ImageSource="watermark.png" />  
-    </Grid.Background>  
-    <Grid.ColumnDefinitions>  
-        <ColumnDefinition Width="230" />  
-        <ColumnDefinition />  
-    </Grid.ColumnDefinitions>  
-    <Grid.RowDefinitions>  
-        <RowDefinition Height="Auto" />  
-        <RowDefinition />  
-    </Grid.RowDefinitions>  
-  
-    <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"   
-    FontWeight="Bold" FontSize="18" Foreground="#0066cc">  
-        Expense Report For:  
-    </Label>  
-    <Grid Margin="10" Grid.Column="1" Grid.Row="1">  
-  
-        <Grid.ColumnDefinitions>  
-            <ColumnDefinition />  
-            <ColumnDefinition />  
-        </Grid.ColumnDefinitions>  
-        <Grid.RowDefinitions>  
-            <RowDefinition Height="Auto" />  
-            <RowDefinition Height="Auto" />  
-            <RowDefinition />  
-        </Grid.RowDefinitions>  
-  
-        <!-- Name -->  
-        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">  
-            <Label Margin="0,0,0,5" FontWeight="Bold">Name:</Label>  
-            <Label Margin="0,0,0,5" FontWeight="Bold"></Label>  
-        </StackPanel>  
-  
-        <!-- Department -->  
-        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal">  
-            <Label Margin="0,0,0,5" FontWeight="Bold">Department:</Label>  
-            <Label Margin="0,0,0,5" FontWeight="Bold"></Label>  
-        </StackPanel>  
-  
-        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top"   
-              HorizontalAlignment="Left">  
-            <!-- Expense type and Amount table -->  
-            <DataGrid  AutoGenerateColumns="False" RowHeaderWidth="0" >  
-                <DataGrid.ColumnHeaderStyle>  
-                    <Style TargetType="{x:Type DataGridColumnHeader}">  
-                        <Setter Property="Height" Value="35" />  
-                        <Setter Property="Padding" Value="5" />  
-                        <Setter Property="Background" Value="#4E87D4" />  
-                        <Setter Property="Foreground" Value="White" />  
-                    </Style>  
-                </DataGrid.ColumnHeaderStyle>  
-                <DataGrid.Columns>  
-                    <DataGridTextColumn Header="ExpenseType" />  
-                    <DataGridTextColumn Header="Amount"  />  
-                </DataGrid.Columns>  
-            </DataGrid>  
-        </Grid>  
-    </Grid>  
-    ```  
-  
+    ```xaml
+    <Grid.Background>
+        <ImageBrush ImageSource="watermark.png" />
+    </Grid.Background>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="230" />
+        <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+
+    <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
+    FontWeight="Bold" FontSize="18" Foreground="#0066cc">
+        Expense Report For:
+    </Label>
+    <Grid Margin="10" Grid.Column="1" Grid.Row="1">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- Name -->
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
+            <Label Margin="0,0,0,5" FontWeight="Bold">Name:</Label>
+            <Label Margin="0,0,0,5" FontWeight="Bold"></Label>
+        </StackPanel>
+
+        <!-- Department -->
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal">
+            <Label Margin="0,0,0,5" FontWeight="Bold">Department:</Label>
+            <Label Margin="0,0,0,5" FontWeight="Bold"></Label>
+        </StackPanel>
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top"
+              HorizontalAlignment="Left">
+            <!-- Expense type and Amount table -->
+            <DataGrid  AutoGenerateColumns="False" RowHeaderWidth="0" >
+                <DataGrid.ColumnHeaderStyle>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Height" Value="35" />
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="Background" Value="#4E87D4" />
+                        <Setter Property="Foreground" Value="White" />
+                    </Style>
+                </DataGrid.ColumnHeaderStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ExpenseType" />
+                    <DataGridTextColumn Header="Amount"  />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+    ```
+
      Essa interface do usuário é semelhante à criada para a home page, mas os dados do relatório são exibidos em um controle de **DataGrid**.
 
 1. Crie e execute o aplicativo.
 
 1. Escolha o botão **Exibir**.
-  
+
      A página de relatório de despesas é exibida.
-  
+
      A ilustração a seguir mostra a página Relatório de Despesas. Observe que o botão de navegação regressiva está habilitado.
-  
-     ![Captura de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure4.png "GettingStartedFigure4")  
-  
-### <a name="to-style-controls"></a>Para controles de estilo  
+
+     ![Captura de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure4.png "GettingStartedFigure4")
+
+### <a name="to-style-controls"></a>Para controles de estilo
 
 1. Abra o arquivo **App.xaml** (C#) ou **Application.xaml** (Visual Basic).
 
-1. Adicione o seguinte XAML entre as marcas `<Application.Resources>` e `</Application.Resources>`:  
-  
-    ```xaml  
-    <!-- Header text style -->  
-    <Style x:Key="headerTextStyle">  
-        <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>  
-        <Setter Property="Label.FontFamily" Value="Trebuchet MS"></Setter>  
-        <Setter Property="Label.FontWeight" Value="Bold"></Setter>  
-        <Setter Property="Label.FontSize" Value="18"></Setter>  
-        <Setter Property="Label.Foreground" Value="#0066cc"></Setter>  
-    </Style>  
-  
-    <!-- Label style -->  
-    <Style x:Key="labelStyle" TargetType="{x:Type Label}">  
-        <Setter Property="VerticalAlignment" Value="Top" />  
-        <Setter Property="HorizontalAlignment" Value="Left" />  
-        <Setter Property="FontWeight" Value="Bold" />  
-        <Setter Property="Margin" Value="0,0,0,5" />  
-    </Style>  
-  
-    <!-- DataGrid header style -->  
-    <Style x:Key="columnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">  
-        <Setter Property="Height" Value="35" />  
-        <Setter Property="Padding" Value="5" />  
-        <Setter Property="Background" Value="#4E87D4" />  
-        <Setter Property="Foreground" Value="White" />  
-    </Style>  
-  
-    <!-- List header style -->  
-    <Style x:Key="listHeaderStyle" TargetType="{x:Type Border}">  
-        <Setter Property="Height" Value="35" />  
-        <Setter Property="Padding" Value="5" />  
-        <Setter Property="Background" Value="#4E87D4" />  
-    </Style>  
-  
-    <!-- List header text style -->  
-    <Style x:Key="listHeaderTextStyle" TargetType="{x:Type Label}">  
-        <Setter Property="Foreground" Value="White" />  
-        <Setter Property="VerticalAlignment" Value="Center" />  
-        <Setter Property="HorizontalAlignment" Value="Left" />  
-    </Style>  
-  
-    <!-- Button style -->  
-    <Style x:Key="buttonStyle" TargetType="{x:Type Button}">  
-        <Setter Property="Width" Value="125" />  
-        <Setter Property="Height" Value="25" />  
-        <Setter Property="Margin" Value="0,10,0,0" />  
-        <Setter Property="HorizontalAlignment" Value="Right" />  
-    </Style>  
-    ```  
-  
-     Esse XAML adiciona os seguintes estilos:  
-  
+1. Adicione o seguinte XAML entre as marcas `<Application.Resources>` e `</Application.Resources>`:
+
+    ```xaml
+    <!-- Header text style -->
+    <Style x:Key="headerTextStyle">
+        <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
+        <Setter Property="Label.FontFamily" Value="Trebuchet MS"></Setter>
+        <Setter Property="Label.FontWeight" Value="Bold"></Setter>
+        <Setter Property="Label.FontSize" Value="18"></Setter>
+        <Setter Property="Label.Foreground" Value="#0066cc"></Setter>
+    </Style>
+
+    <!-- Label style -->
+    <Style x:Key="labelStyle" TargetType="{x:Type Label}">
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="0,0,0,5" />
+    </Style>
+
+    <!-- DataGrid header style -->
+    <Style x:Key="columnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="Height" Value="35" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="Background" Value="#4E87D4" />
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <!-- List header style -->
+    <Style x:Key="listHeaderStyle" TargetType="{x:Type Border}">
+        <Setter Property="Height" Value="35" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="Background" Value="#4E87D4" />
+    </Style>
+
+    <!-- List header text style -->
+    <Style x:Key="listHeaderTextStyle" TargetType="{x:Type Label}">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+
+    <!-- Button style -->
+    <Style x:Key="buttonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Width" Value="125" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Margin" Value="0,10,0,0" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+    </Style>
+    ```
+
+     Esse XAML adiciona os seguintes estilos:
+
     -   `headerTextStyle`: para formatar o título da página `Label`.
-  
+
     -   `labelStyle`: para formatar os controles `Label`.
-  
+
     -   `columnHeaderStyle`: para formatar o `DataGridColumnHeader`.
-  
+
     -   `listHeaderStyle`: para formatar os controles `Border` do cabeçalho da lista.
-  
+
     -   `listHeaderTextStyle`: para formatar o **Rótulo** do cabeçalho.
-  
+
     -   `buttonStyle`: para formatar o `Button` na página **ExpenseItHome.xaml**.
 
-1. Abra **ExpenseItHome.xaml** e substitua tudo entre os elementos `<Grid>` e `</Grid>` pelo seguinte XAML:  
-  
-    ```xaml  
-    <Grid.ColumnDefinitions>  
-                <ColumnDefinition Width="230" />  
-                <ColumnDefinition />  
-            </Grid.ColumnDefinitions>  
-  
-            <Grid.RowDefinitions>  
-                <RowDefinition/>  
-                <RowDefinition Height="Auto"/>  
-                <RowDefinition />  
-                <RowDefinition Height="Auto"/>  
-            </Grid.RowDefinitions>  
-            <Label Grid.Column="1" Style="{StaticResource headerTextStyle}" >  
-                View Expense Report  
-            </Label>  
-            <!-- People list -->  
-                  <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}">  
-                <Label Style="{StaticResource listHeaderTextStyle}">Names</Label>  
-            </Border>  
-            <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2">  
-                <ListBoxItem>Mike</ListBoxItem>  
-                <ListBoxItem>Lisa</ListBoxItem>  
-                <ListBoxItem>John</ListBoxItem>  
-                <ListBoxItem>Mary</ListBoxItem>  
-            </ListBox>  
-  
-            <!-- View report button -->  
-            <Button Grid.Column="1" Grid.Row="3" Click="Button_Click" Style="{StaticResource buttonStyle}">View</Button>  
-            <Grid.Background>  
-                <ImageBrush ImageSource="watermark.png"  />  
-            </Grid.Background>  
-    ```  
-  
+1. Abra **ExpenseItHome.xaml** e substitua tudo entre os elementos `<Grid>` e `</Grid>` pelo seguinte XAML:
+
+    ```xaml
+    <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="1" Style="{StaticResource headerTextStyle}" >
+                View Expense Report
+            </Label>
+            <!-- People list -->
+                  <Border Grid.Column="1" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
+                <Label Style="{StaticResource listHeaderTextStyle}">Names</Label>
+            </Border>
+            <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2">
+                <ListBoxItem>Mike</ListBoxItem>
+                <ListBoxItem>Lisa</ListBoxItem>
+                <ListBoxItem>John</ListBoxItem>
+                <ListBoxItem>Mary</ListBoxItem>
+            </ListBox>
+
+            <!-- View report button -->
+            <Button Grid.Column="1" Grid.Row="3" Click="Button_Click" Style="{StaticResource buttonStyle}">View</Button>
+            <Grid.Background>
+                <ImageBrush ImageSource="watermark.png"  />
+            </Grid.Background>
+    ```
+
      As propriedades como `VerticalAlignment` e `FontFamily` que definem a aparência de cada controle são removidas e substituídas ao aplicar os estilos.
 
-1. Abra **ExpenseReportPage.xaml** e substitua tudo entre os elementos `<Grid>` e `</Grid>` final pelo seguinte XAML:  
-  
-    ```xaml  
-    <Grid.Background>  
-        <ImageBrush ImageSource="watermark.png" />  
-    </Grid.Background>  
-    <Grid.ColumnDefinitions>  
-        <ColumnDefinition Width="230" />  
-        <ColumnDefinition />  
-    </Grid.ColumnDefinitions>  
-    <Grid.RowDefinitions>  
-        <RowDefinition Height="Auto" />  
-        <RowDefinition />  
-    </Grid.RowDefinitions>  
-    <Label Grid.Column="1" Style="{StaticResource headerTextStyle}">  
-        Expense Report For:  
-    </Label>  
-    <Grid Margin="10" Grid.Column="1" Grid.Row="1">  
-        <Grid.ColumnDefinitions>  
-            <ColumnDefinition />  
-            <ColumnDefinition />  
-        </Grid.ColumnDefinitions>  
-        <Grid.RowDefinitions>  
-            <RowDefinition Height="Auto" />  
-            <RowDefinition Height="Auto" />  
-            <RowDefinition />  
-        </Grid.RowDefinitions>  
-  
-        <!-- Name -->  
-        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">  
-            <Label Style="{StaticResource labelStyle}">Name:</Label>  
-            <Label Style="{StaticResource labelStyle}"></Label>  
-        </StackPanel>  
-  
-        <!-- Department -->  
-        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"   
-    Orientation="Horizontal">  
-            <Label Style="{StaticResource labelStyle}">Department:</Label>  
-            <Label Style="{StaticResource labelStyle}"></Label>  
-        </StackPanel>  
-  
-        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top"   
-              HorizontalAlignment="Left">  
-            <!-- Expense type and Amount table -->  
-            <DataGrid ColumnHeaderStyle="{StaticResource columnHeaderStyle}"   
-                      AutoGenerateColumns="False" RowHeaderWidth="0" >  
-                <DataGrid.Columns>  
-                    <DataGridTextColumn Header="ExpenseType" />  
-                    <DataGridTextColumn Header="Amount"  />  
-                </DataGrid.Columns>  
-            </DataGrid>  
-        </Grid>  
-    </Grid>    
-    ```  
-  
+1. Abra **ExpenseReportPage.xaml** e substitua tudo entre os elementos `<Grid>` e `</Grid>` final pelo seguinte XAML:
+
+    ```xaml
+    <Grid.Background>
+        <ImageBrush ImageSource="watermark.png" />
+    </Grid.Background>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="230" />
+        <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+    <Label Grid.Column="1" Style="{StaticResource headerTextStyle}">
+        Expense Report For:
+    </Label>
+    <Grid Margin="10" Grid.Column="1" Grid.Row="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- Name -->
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
+            <Label Style="{StaticResource labelStyle}">Name:</Label>
+            <Label Style="{StaticResource labelStyle}"></Label>
+        </StackPanel>
+
+        <!-- Department -->
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"
+    Orientation="Horizontal">
+            <Label Style="{StaticResource labelStyle}">Department:</Label>
+            <Label Style="{StaticResource labelStyle}"></Label>
+        </StackPanel>
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top"
+              HorizontalAlignment="Left">
+            <!-- Expense type and Amount table -->
+            <DataGrid ColumnHeaderStyle="{StaticResource columnHeaderStyle}"
+                      AutoGenerateColumns="False" RowHeaderWidth="0" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ExpenseType" />
+                    <DataGridTextColumn Header="Amount"  />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+    ```
+
      Isso adiciona estilos aos elementos `<Label>` e `<Border>`.
-  
-## <a name="connecting-to-data"></a>Conectando-se a Dados  
+
+## <a name="connecting-to-data"></a>Conectando-se a Dados
  Nesta seção, você criará um provedor de dados e um modelo de dados e conectará os controles para exibir os dados.
-  
+
 ### <a name="to-bind-data-to-a-control"></a>Para associar dados a um controle
 
 1. Abra **ExpenseItHome.xaml** e escolha o elemento `<Grid>`.
 
-1. Adicione o seguinte código XAML:  
-  
-    ```xaml    
-    <Grid.Resources>  
-    <!-- Expense Report Data -->  
-    <XmlDataProvider x:Key="ExpenseDataSource" XPath="Expenses">  
-        <x:XData>  
-            <Expenses xmlns="">  
-                <Person Name="Mike" Department="Legal">  
-                    <Expense ExpenseType="Lunch" ExpenseAmount="50" />  
-                    <Expense ExpenseType="Transportation" ExpenseAmount="50" />  
-                </Person>  
-                <Person Name="Lisa" Department="Marketing">  
-                    <Expense ExpenseType="Document printing"  
-          ExpenseAmount="50"/>  
-                    <Expense ExpenseType="Gift" ExpenseAmount="125" />  
-                </Person>  
-                <Person Name="John" Department="Engineering">  
-                    <Expense ExpenseType="Magazine subscription"   
-         ExpenseAmount="50"/>  
-                    <Expense ExpenseType="New machine" ExpenseAmount="600" />  
-                    <Expense ExpenseType="Software" ExpenseAmount="500" />  
-                </Person>  
-                <Person Name="Mary" Department="Finance">  
-                    <Expense ExpenseType="Dinner" ExpenseAmount="100" />  
-                </Person>  
-            </Expenses>  
-        </x:XData>  
-    </XmlDataProvider>  
-    </Grid.Resources>  
-    ```  
-  
+1. Adicione o seguinte código XAML:
+
+    ```xaml
+    <Grid.Resources>
+    <!-- Expense Report Data -->
+    <XmlDataProvider x:Key="ExpenseDataSource" XPath="Expenses">
+        <x:XData>
+            <Expenses xmlns="">
+                <Person Name="Mike" Department="Legal">
+                    <Expense ExpenseType="Lunch" ExpenseAmount="50" />
+                    <Expense ExpenseType="Transportation" ExpenseAmount="50" />
+                </Person>
+                <Person Name="Lisa" Department="Marketing">
+                    <Expense ExpenseType="Document printing"
+          ExpenseAmount="50"/>
+                    <Expense ExpenseType="Gift" ExpenseAmount="125" />
+                </Person>
+                <Person Name="John" Department="Engineering">
+                    <Expense ExpenseType="Magazine subscription"
+         ExpenseAmount="50"/>
+                    <Expense ExpenseType="New machine" ExpenseAmount="600" />
+                    <Expense ExpenseType="Software" ExpenseAmount="500" />
+                </Person>
+                <Person Name="Mary" Department="Finance">
+                    <Expense ExpenseType="Dinner" ExpenseAmount="100" />
+                </Person>
+            </Expenses>
+        </x:XData>
+    </XmlDataProvider>
+    </Grid.Resources>
+    ```
+
      Esse código cria uma classe `XmlDataProvider` que contém os dados de cada pessoa. Normalmente, isso seria carregado como um arquivo, mas para simplificar, os dados são adicionados embutidos.
 
-1. Dentro do elemento `<Grid.Resources>`, adicione o seguinte código XAML:  
-  
-    ```xaml  
-    <!-- Name item template -->  
-    <DataTemplate x:Key="nameItemTemplate">  
-        <Label Content="{Binding XPath=@Name}"/>  
-    </DataTemplate>  
-    ```  
-  
+1. Dentro do elemento `<Grid.Resources>`, adicione o seguinte código XAML:
+
+    ```xaml
+    <!-- Name item template -->
+    <DataTemplate x:Key="nameItemTemplate">
+        <Label Content="{Binding XPath=@Name}"/>
+    </DataTemplate>
+    ```
+
      Isso adiciona um `Data Template` que define como exibir os dados na **Caixa de Listagem**.
 
-1. Substitua o elemento existente `<ListBox>` pelo seguinte XAML:  
-  
-    ```xaml  
-    <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2"   
-             ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"  
-             ItemTemplate="{StaticResource nameItemTemplate}">  
-    </ListBox>  
-    ```  
-  
+1. Substitua o elemento existente `<ListBox>` pelo seguinte XAML:
+
+    ```xaml
+    <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2"
+             ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"
+             ItemTemplate="{StaticResource nameItemTemplate}">
+    </ListBox>
+    ```
+
      Esse código associa a propriedade `ItemsSource` de `ListBox` à fonte de dados e aplica o modelo de dados como o `ItemTemplate`.
-  
-### <a name="to-connect-data-to-controls"></a>Para conectar dados aos controles  
+
+### <a name="to-connect-data-to-controls"></a>Para conectar dados aos controles
 
 1. Abra **ExpenseReportPage.xaml.vb** ou **ExpenseReportPage.xaml.cs**.
 
-1. No C#, adicione o seguinte construtor à classe **ExpenseReportPage** ou, no Visual Basic, substitua a classe existente pelo seguinte:  
-  
-   ```csharp  
-   // Custom constructor to pass expense report data  
-   public ExpenseReportPage(object data):this()  
-   {  
+1. No C#, adicione o seguinte construtor à classe **ExpenseReportPage** ou, no Visual Basic, substitua a classe existente pelo seguinte:
+
+   ```csharp
+   // Custom constructor to pass expense report data
+   public ExpenseReportPage(object data):this()
+   {
        // Bind to expense report data.
-       this.DataContext = data;  
-   }  
-   ```  
-  
-   ```vb  
-   Partial Public Class ExpenseReportPage  
-   Inherits Page  
-       Public Sub New()  
-       InitializeComponent()  
-       End Sub  
-  
-       ' Custom constructor to pass expense report data  
-       Public Sub New(ByVal data As Object)  
-           Me.New()  
+       this.DataContext = data;
+   }
+   ```
+
+   ```vb
+   Partial Public Class ExpenseReportPage
+   Inherits Page
+       Public Sub New()
+       InitializeComponent()
+       End Sub
+
+       ' Custom constructor to pass expense report data
+       Public Sub New(ByVal data As Object)
+           Me.New()
            ' Bind to expense report data.
-           Me.DataContext = data  
-       End Sub    
-   End Class  
-   ```  
-  
+           Me.DataContext = data
+       End Sub
+   End Class
+   ```
+
    Este construtor aceita um objeto de dados como um parâmetro. Nesse caso, o objeto de dados conterá o nome da pessoa selecionada.
 
 1. Abra **ExpenseItHome.xaml.vb** ou **ExpenseItHome.xaml.cs**.
 
-1. Substitua o código do manipulador de eventos `Click` pelo seguinte:  
-  
-   ```csharp  
-   private void Button_Click(object sender, RoutedEventArgs e)  
-   {  
-       // View Expense Report  
-       ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem);  
-       this.NavigationService.Navigate(expenseReportPage);    
-   }  
-   ```  
-  
-   ```vb  
-   Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
-       ' View Expense Report  
-       Dim expenseReportPage As New ExpenseReportPage(Me.peopleListBox.SelectedItem)  
-       Me.NavigationService.Navigate(expenseReportPage)  
-   End Sub  
-   ```  
-  
+1. Substitua o código do manipulador de eventos `Click` pelo seguinte:
+
+   ```csharp
+   private void Button_Click(object sender, RoutedEventArgs e)
+   {
+       // View Expense Report
+       ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem);
+       this.NavigationService.Navigate(expenseReportPage);
+   }
+   ```
+
+   ```vb
+   Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+       ' View Expense Report
+       Dim expenseReportPage As New ExpenseReportPage(Me.peopleListBox.SelectedItem)
+       Me.NavigationService.Navigate(expenseReportPage)
+   End Sub
+   ```
+
    Esse código chama o novo construtor.
-  
-### <a name="to-update-the-ui-with-data-templates"></a>Para atualizar a interface do usuário com modelos de dados  
+
+### <a name="to-update-the-ui-with-data-templates"></a>Para atualizar a interface do usuário com modelos de dados
 
 1. Abra **ExpenseReportPage.xaml**.
 
-1. Substitua o código XAML dos elementos **Nome** e **Departamento**`<StackPanel` pelo seguinte:  
-  
-    ```xaml  
-    <!-- Name -->  
-    <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">  
-        <Label Style="{StaticResource labelStyle}">Name:</Label>  
-        <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Name}"></Label>  
-    </StackPanel>  
-  
-    <!-- Department -->  
-    <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal">  
-        <Label Style="{StaticResource labelStyle}">Department:</Label>  
-        <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department}"></Label>  
-    </StackPanel>    
-    ```  
-  
+1. Substitua o código XAML dos elementos **Nome** e **Departamento**`<StackPanel` pelo seguinte:
+
+    ```xaml
+    <!-- Name -->
+    <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
+        <Label Style="{StaticResource labelStyle}">Name:</Label>
+        <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Name}"></Label>
+    </StackPanel>
+
+    <!-- Department -->
+    <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal">
+        <Label Style="{StaticResource labelStyle}">Department:</Label>
+        <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department}"></Label>
+    </StackPanel>
+    ```
+
      Isso associa os controles do **Rótulo** às propriedades da fonte de dados apropriada.
 
-1. Adicione o seguinte código XAML dentro do elemento `<Grid>`:  
-  
-    ```xaml  
-    <!--Templates to display expense report data-->  
-    <Grid.Resources>  
-        <!-- Reason item template -->  
-        <DataTemplate x:Key="typeItemTemplate">  
-            <Label Content="{Binding XPath=@ExpenseType}"/>  
-        </DataTemplate>  
-        <!-- Amount item template -->  
-        <DataTemplate x:Key="amountItemTemplate">  
-            <Label Content="{Binding XPath=@ExpenseAmount}"/>  
-        </DataTemplate>  
-    </Grid.Resources>    
-    ```  
-  
+1. Adicione o seguinte código XAML dentro do elemento `<Grid>`:
+
+    ```xaml
+    <!--Templates to display expense report data-->
+    <Grid.Resources>
+        <!-- Reason item template -->
+        <DataTemplate x:Key="typeItemTemplate">
+            <Label Content="{Binding XPath=@ExpenseType}"/>
+        </DataTemplate>
+        <!-- Amount item template -->
+        <DataTemplate x:Key="amountItemTemplate">
+            <Label Content="{Binding XPath=@ExpenseAmount}"/>
+        </DataTemplate>
+    </Grid.Resources>
+    ```
+
      Isso define como exibir os dados do relatório de despesas.
 
-1. Substitua o elemento `<DataGrid>` pelo seguinte:  
-  
-    ```xaml  
-    <!-- Expense type and Amount table -->  
-    <DataGrid ItemsSource="{Binding XPath=Expense}" ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0" >  
-  
-        <DataGrid.Columns>  
-            <DataGridTextColumn Header="ExpenseType" Binding="{Binding XPath=@ExpenseType}"  />  
-            <DataGridTextColumn Header="Amount" Binding="{Binding XPath=@ExpenseAmount}" />  
-        </DataGrid.Columns>  
-  
-    </DataGrid>  
-    ```  
-  
+1. Substitua o elemento `<DataGrid>` pelo seguinte:
+
+    ```xaml
+    <!-- Expense type and Amount table -->
+    <DataGrid ItemsSource="{Binding XPath=Expense}" ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0" >
+
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="ExpenseType" Binding="{Binding XPath=@ExpenseType}"  />
+            <DataGridTextColumn Header="Amount" Binding="{Binding XPath=@ExpenseAmount}" />
+        </DataGrid.Columns>
+
+    </DataGrid>
+    ```
+
      Isso adiciona uma **ItemSource** e define as associações para os itens de despesa.
 
 1. Crie e execute o aplicativo.
 
 1. Escolha uma pessoa e, em seguida, escolha o botão **Exibir**.
-  
-     A ilustração a seguir mostra as duas páginas do aplicativo ExpenseIt com controles, layout, estilos, vinculação de dados e modelos de dados aplicados.
-  
-     ![Capturas de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure5.png "GettingStartedFigure5")  
-  
-## <a name="best-practices"></a>Práticas recomendadas  
 
-Este exemplo demonstra os fundamentos do WPF e, consequentemente, não segue as práticas recomendadas de desenvolvimento de aplicativos. Para obter uma cobertura abrangente das práticas recomendadas de desenvolvimento dos aplicativos WPF e .NET Framework, consulte os tópicos a seguir, conforme apropriado:  
-  
--   Acessibilidade – [Práticas recomendadas de acessibilidade](/dotnet/framework/ui-automation/accessibility-best-practices)  
-  
--   Segurança – [Segurança do Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
-  
--   Localização – [Visão geral de globalização e localização do WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
-  
--   Desempenho – [Otimizando o desempenho do aplicativo WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
-  
-## <a name="whats-next"></a>O que vem a seguir  
+     A ilustração a seguir mostra as duas páginas do aplicativo ExpenseIt com controles, layout, estilos, vinculação de dados e modelos de dados aplicados.
+
+     ![Capturas de tela de exemplo de ExpenseIt](../designers/media/gettingstartedfigure5.png "GettingStartedFigure5")
+
+## <a name="best-practices"></a>Práticas recomendadas
+
+Este exemplo demonstra os fundamentos do WPF e, consequentemente, não segue as práticas recomendadas de desenvolvimento de aplicativos. Para obter uma cobertura abrangente das práticas recomendadas de desenvolvimento dos aplicativos WPF e .NET Framework, consulte os tópicos a seguir, conforme apropriado:
+
+-   Acessibilidade – [Práticas recomendadas de acessibilidade](/dotnet/framework/ui-automation/accessibility-best-practices)
+
+-   Segurança – [Segurança do Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)
+
+-   Localização – [Visão geral de globalização e localização do WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)
+
+-   Desempenho – [Otimizando o desempenho do aplicativo WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
+
+## <a name="whats-next"></a>O que vem a seguir
 
 Agora você tem uma série de técnicas à sua disposição para criar um aplicativo da área de trabalho usando o WPF. Agora você deve ter uma compreensão básica dos blocos de construção de um aplicativo do WPF limitado por dados. Este tópico não é exaustivo, mas dará a você uma noção de algumas das possibilidades que você pode descobrir por conta própria, além das técnicas do tópico.
-  
-Para obter mais informações sobre os modelos de arquitetura e programação do WPF, consulte os seguintes tópicos:  
-  
--   [Arquitetura do WPF](/dotnet/framework/wpf/advanced/wpf-architecture)  
-  
--   [Visão geral do XAML](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
-  
--   [Visão geral das propriedades da dependência](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
-  
--   [Sistema de layout](/dotnet/framework/wpf/advanced/layout)  
-  
--   [Estilos e modelos](/dotnet/framework/wpf/controls/styles-and-templates)  
-  
-Para obter mais informações sobre como criar aplicativos, consulte os seguintes tópicos:  
-  
--   [Visão geral do desenvolvimento de aplicativos](/dotnet/framework/wpf/app-development/index)  
-  
--   [Visão geral dos controles](/dotnet/framework/wpf/controls/index)  
-  
--   [Visão geral da vinculação de dados](/dotnet/framework/wpf/data/data-binding-overview)  
-  
--   [Visão geral de mídia, animação e elementos gráficos do WPF](/dotnet/framework/wpf/graphics-multimedia/index)  
-  
--   [Documentos no WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
-  
+
+Para obter mais informações sobre os modelos de arquitetura e programação do WPF, consulte os seguintes tópicos:
+
+-   [Arquitetura do WPF](/dotnet/framework/wpf/advanced/wpf-architecture)
+
+-   [Visão geral do XAML](/dotnet/framework/wpf/advanced/xaml-overview-wpf)
+
+-   [Visão geral das propriedades da dependência](/dotnet/framework/wpf/advanced/dependency-properties-overview)
+
+-   [Sistema de layout](/dotnet/framework/wpf/advanced/layout)
+
+-   [Estilos e modelos](/dotnet/framework/wpf/controls/styles-and-templates)
+
+Para obter mais informações sobre como criar aplicativos, consulte os seguintes tópicos:
+
+-   [Visão geral do desenvolvimento de aplicativos](/dotnet/framework/wpf/app-development/index)
+
+-   [Visão geral dos controles](/dotnet/framework/wpf/controls/index)
+
+-   [Visão geral da vinculação de dados](/dotnet/framework/wpf/data/data-binding-overview)
+
+-   [Visão geral de mídia, animação e elementos gráficos do WPF](/dotnet/framework/wpf/graphics-multimedia/index)
+
+-   [Documentos no WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)
+
 ## <a name="see-also"></a>Consulte também
 
 [Criar modernos aplicativos da área de trabalho com o Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

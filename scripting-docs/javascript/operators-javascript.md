@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>Operadores (JavaScript)
 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] tem uma gama completa de operadores, incluindo aritméticos, lógicos, bit a bit, de atribuição, bem como alguns operadores diversos. Para obter explicações e exemplos, consulte os tópicos sobre operadores específicos.  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/27/2017
 |[Decremento](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Multiplicação](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Divisão](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Módulo aritmético](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Resto aritmético](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Adição](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Subtração](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   

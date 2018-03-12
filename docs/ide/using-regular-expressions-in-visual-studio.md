@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 077bb266e6ed55bfe59ec4e537b516ccde59e0c3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Usando expressões regulares no Visual Studio
 
@@ -56,11 +56,11 @@ Estes são alguns exemplos:
 |Invalidar uma correspondência|(?!abc)|`real (?!ity)` corresponde a “real” em “realty” e “really”, mas não a “reality”. Também encontra o segundo “real” (mas não o primeiro “real”) em “realityreal”.|
 |Encontrar a correspondência de um caractere que não está em um conjunto de caracteres específico|[^abc]|`be[^n-t]` corresponde a “bef” em “before”, “beh” em “behind” e “bel” em “below”, mas não a “beneath”.|
 |Encontrar a correspondência da expressão antes ou depois do símbolo.|&#124;|`(sponge&#124;mud) bath` corresponde a “sponge bath” e a “mud bath”.|
-|Escapa o caractere após a barra invertida|\\|`\^` corresponde ao caractere ^.|
+|Escapa o caractere após a barra invertida| \\ |`\^` corresponde ao caractere ^.|
 |Especificar o número de ocorrências do caractere ou do grupo anterior|{x}, em que x é o número de ocorrências|`x(ab){2}x` corresponde a “xababx”, e `x(ab){2,3}x` corresponde a “xababx” e “xabababx”, mas não a “xababababx”.|
 |Encontrar a correspondência do texto em uma classe de caracteres Unicode, em que “X” é o número Unicode. Para obter mais informações sobre classes de caracteres Unicode, consulte<br /><br /> [Propriedades de caracteres Unicode Standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` corresponde a “T” e “D” em “Thomas Doe”.|
 |Encontrar a correspondência de um limite de palavra|`\b` (Fora de uma classe de caracteres, \b especifica um limite de palavra, e dentro de uma classe de caracteres, especifica um backspace).|`\bin` corresponde a “in” em “inside”, mas não em “pintor”.|
-|Encontrar a correspondência de uma quebra de linha (por exemplo, um retorno de carro seguido por uma nova linha).|\r?\n|`End\r?\nBegin` corresponde a “End” e “Begin” somente quando “End” é a última cadeia de caracteres em uma linha e “Begin” é a primeira cadeia de caracteres na próxima linha.|
+|Encontrar a correspondência de uma quebra de linha (isto é, um retorno de carro seguido por uma nova linha).|\r?\n|`End\r?\nBegin` corresponde a “End” e “Begin” somente quando “End” é a última cadeia de caracteres em uma linha e “Begin” é a primeira cadeia de caracteres na próxima linha.|
 |Encontrar a correspondência de um caractere alfanumérico|\w|`a\wd` corresponde a “add” e “a1d”, mas não a “a d”.|
 |Encontrar a correspondência de um caractere de espaço em branco.|(?([^\r\n])\s)|`Public\sInterface` corresponde à frase “Public Interface”.|
 |Encontrar a correspondência de um caractere numérico|\d|`\d` corresponde a “3” em “3456”, “2” em “23” e “1” em “1”.|

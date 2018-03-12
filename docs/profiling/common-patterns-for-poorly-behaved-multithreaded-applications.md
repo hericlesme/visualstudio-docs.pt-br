@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8f389efcde93d9a618fbbac272b0f0b2cf5c75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multithread de mau comportamento
 
@@ -65,7 +65,7 @@ Você deve considerar o seguinte ao avaliar esse problema:
 
 ![E&#47;S ineficiente](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-O uso excessivo ou incorreto de E/S é uma causa comum de ineficiências em aplicativos. Considere a ilustração anterior. O Perfil da Linha de Tempo Visível mostra que 42 por cento do tempo de thread visível é consumido por E/S. A linha de tempo mostra grandes quantidades de E/S, que indica que o aplicativo analisado é frequentemente bloqueado por E/S. Para ver detalhes sobre os tipos de E/S e onde o seu programa está bloqueado, amplie as regiões problemáticas, examine o Perfil da Linha de Tempo Visível e, em seguida, clique em um bloco de E/S específico para ver as pilhas de chamadas atuais.
+O uso excessivo ou incorreto de E/S é uma causa comum de ineficiências em aplicativos. Considere a ilustração anterior. O Perfil da Linha de Tempo Visível mostra que 44% do tempo de thread visível é consumido por E/S. A linha de tempo mostra grandes quantidades de E/S, que indica que o aplicativo analisado é frequentemente bloqueado por E/S. Para ver detalhes sobre os tipos de E/S e onde o seu programa está bloqueado, amplie as regiões problemáticas, examine o Perfil da Linha de Tempo Visível e, em seguida, clique em um bloco de E/S específico para ver as pilhas de chamadas atuais.
 
 ## <a name="lock-convoys"></a>Comboios de bloqueio
 
