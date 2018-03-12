@@ -1,52 +1,35 @@
 ---
 title: Criando um projeto de fluxo de trabalho | Microsoft Docs
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - Visual Studio 2010 Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
-caps.latest.revision: "15"
-author: ErikRe
-ms.author: erikre
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e3afe9926fbb45738016d312d094af5c8fab2ee
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="creating-a-workflow-project"></a>Criando um fluxo de trabalho Projeto
-Fluxos de trabalho, os serviços de fluxo de trabalho [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] , as atividades personalizados, e designers personalizados de atividade podem ser criados usando modelos de projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Esta seção descreve como criar bibliotecas e aplicativos com modelos de projeto disponíveis em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- Os quatro primeiros tópicos a seguir descrevem como usar os modelos de fluxo de trabalho encontradas no **novo projeto** janela. Esses modelos podem ser acessados através da abertura [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] e selecionando **arquivo** -> **novo** -> **projeto...** , o **fluxo de trabalho** categoria do **modelos instalados** seção à esquerda, em qualquer um de **Visual Basic** ou **Visual C#** nó.  
-  
- O tópico o último descreve como adicionar atividades de fluxo de trabalho, designer e serviços ou outros itens de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a um fluxo de trabalho WF existente (ou a outro projeto.)  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Como criar um aplicativo do console do fluxo de trabalho](../workflow-designer/how-to-create-a-workflow-console-application.md)  
- Descreve como criar um aplicativo de console do fluxo de trabalho.  
-  
- [Como criar um aplicativo de Serviço de fluxo de trabalho WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
- Descreve as etapas necessárias para criar um aplicativo de serviço do fluxo de trabalho [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] .  
-  
- [Como criar uma biblioteca de atividades](../workflow-designer/how-to-create-an-activity-library.md)  
- Descreve as etapas para usar para criar uma biblioteca de atividade em [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
-  
- [Como criar uma biblioteca do designer de atividade](../workflow-designer/how-to-create-an-activity-designer-library.md)  
- Descreve como criar designers que são personalizados para mais audiências.  
-  
- [Como adicionar um novo item em um projeto de fluxo de trabalho](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
- Descreve como adicionar atividades adicionais de fluxo de trabalho ou designer e outros itens de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] como atividades de código a um projeto existente.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Criando fluxos de trabalho](/dotnet/framework/windows-workflow-foundation/designing-workflows)  
-  
-## <a name="see-also"></a>Consulte também  
- [Usando o Designer de Fluxo de Trabalho](../workflow-designer/using-the-workflow-designer.md)
+
+Fluxos de trabalho, os serviços de fluxo de trabalho [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] , as atividades personalizados, e designers personalizados de atividade podem ser criados usando modelos de projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Esta seção descreve como criar bibliotecas e aplicativos com modelos de projeto disponíveis em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+Os quatro primeiros tópicos a seguir descrevem como usar os modelos de fluxo de trabalho encontradas no **novo projeto** janela. Esses modelos podem ser acessados através da abertura [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] e selecionando **arquivo** -> **novo** -> **projeto...** , o **fluxo de trabalho** categoria do **modelos instalados** seção à esquerda, em qualquer um de **Visual Basic** ou **Visual C#** nó.
+
+O tópico o último descreve como adicionar atividades de fluxo de trabalho, designer e serviços ou outros itens de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a um fluxo de trabalho WF existente (ou a outro projeto.)
+
+## <a name="related-sections"></a>Seções relacionadas
+
+- [Criando fluxos de trabalho](/dotnet/framework/windows-workflow-foundation/designing-workflows)
+
+## <a name="see-also"></a>Consulte também
+
+- [Usando o Designer de Fluxo de Trabalho](../workflow-designer/using-the-workflow-designer.md)

@@ -1,24 +1,20 @@
 ---
 title: "Adicionar parâmetros e adicionar caixas de diálogo de argumentos | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-caps.latest.revision: 
-ms.author: sdanie
-manager: erikre
+ms.author: gewarren
+manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae55ddf01ae6e9d4a2bee406a51774308cb78cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: c93f881c22e61bffe8a12375d027407cc89cf9f9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Adicionar parâmetros e adicionar caixas de diálogo de argumentos
 A tabela a seguir descreve os elementos de interface de usuário do **adicionar parâmetros** caixa de diálogo usada pelo <xref:System.Activities.Statements.InvokeMethod> designer.  

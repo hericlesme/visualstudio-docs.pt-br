@@ -1,25 +1,21 @@
 ---
 title: Usando o Designer de fluxo de trabalho | Microsoft Docs
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer [WFD], using
 - Visual Studio 2010 Workflow Designer [WFD], using
 ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
-caps.latest.revision: "13"
-author: ErikRe
-ms.author: erikre
-manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 0ea166c2770e78482aa47c3fe903339e8e2501a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: 3df728fffc84b44243b34d03c5ea7dd2b3c28de0
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="using-the-workflow-designer"></a>Usando Designer de Fluxo de Trabalho
 Detalhes desta seção como criar novos projetos e atividades de fluxo de trabalho usando o designer internos e o editor de expressão que é hospedado por vários designer de atividade.  
