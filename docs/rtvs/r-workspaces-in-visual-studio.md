@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Controlando onde o código R é executado com espaços de trabalho
 
@@ -31,17 +31,6 @@ Para abrir a janela **Espaços de trabalho**, use o comando **Ferramentas do R >
 ![Janela de espaços de trabalho nas Ferramentas do R para Visual Studio (VS2017)](media/workspaces-window.png)
 
 Nessa janela, a marca de seleção verde indica o espaço de trabalho ativo ao qual as RTVS estão associadas. Selecionar uma seta azul define o espaço de trabalho ativo. O ícone de configurações (engrenagem) à direita de cada espaço de trabalho permite que você altere os argumentos de linha de comando, o local e o nome. O X vermelho remove um espaço de trabalho adicionado manualmente.
-
-Neste tópico:
-
-- [Salvando e redefinindo um espaço de trabalho](#saving-and-resetting-a-workspace)
-- [Espaços de trabalho locais](#local-workspaces)
-- [Espaços de trabalho remotos](#remote-workspaces)
-- [Logon em espaço de trabalho remoto](#remote-workspace-logon)
-- [Alternando entre espaços de trabalho](#switching-between-workspaces)
-- [Diretórios em computadores locais e remotos](#directories-on-local-and-remote-computers)
-- [Copiando arquivos de projeto para espaços de trabalho remotos](#copying-project-files-to-remote-workspaces)
-- [Copiando arquivos de um espaço de trabalho remoto](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>Salvando e redefinindo um espaço de trabalho
 

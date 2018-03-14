@@ -14,15 +14,17 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bbdabf7d35c2705d028c84ddc6c6dc82f71ff48
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 082a89453d76ac70edfbd39681d33b6af2700cc7
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-the-code-editor"></a>Início rápido: Usar o editor de códigos
 
 Nesta introdução de 10 minutos ao editor, vamos adicionar o código a um arquivo para ver algumas das formas em que o Visual Studio facilita a gravação, a navegação e o entendimento do código.
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente.
 
 Este guia de início rápido pressupõe que você já esteja familiarizado com uma linguagem de programação. Se não estiver, sugerimos que você confira um dos tutoriais de programação, por exemplo, como criar um aplicativo Web com [Python](../ide/quickstart-python.md) ou [C#](../ide/tutorial-csharp-aspnet-core.md), ou criar um aplicativo de console com [Visual Basic](../ide/quickstart-visual-basic-console.md) ou [C++](../ide/quickstart-cpp.md).
 
@@ -104,7 +106,7 @@ O bloco de código é recolhido apenas na primeira linha, seguido por um sinal d
 
 O editor do Visual Studio facilita a inspeção da definição de um tipo, de um método, etc. Uma maneira é navegar até o arquivo que contém a definição, por exemplo, ao selecionar **Ir para Definição** em qualquer lugar em que o símbolo esteja referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../ide/go-to-and-peek-definition.md#peek-definition). Vamos inspecionar a definição de `string`.
 
-1. Clique com o botão direito do mouse em qualquer ocorrência do `string` e selecione **Inspecionar Definição** no menu de conteúdo&mdash; ou pressione **Alt**+**F12**.
+1. Clique com botão direito do mouse em qualquer ocorrência do `string` e selecione **Inspecionar Definição** no menu de conteúdo&mdash; ou pressione **Alt**+**F12**.
 
    Uma janela pop-up será exibida com a definição da classe `String`. Você pode rolar na janela pop-up ou até mesmo inspecionar a definição de outro tipo do código inspecionado.
 
@@ -149,7 +151,7 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 
    ![Caixa de diálogo Renomear](media/quickstart-rename.png)
 
-1. Pressione **Enter**.
+1. Pressione **ENTER**.
 
    As duas ocorrências de `words` foram renomeadas, bem como a referência ao `words` do comentário de código.
 

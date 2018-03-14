@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 12/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c75b5508cd23a2131bcdd64cf52aacc1486d2713
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Introdução à depuração no Visual Studio
 O Visual Studio fornece um poderoso conjunto integrado de ferramentas de depuração e build do projeto. Neste tópico, descubra como começar a usar o conjunto mais básico de recursos de interface do usuário de depuração.  
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio"></a>Meu código não funciona. Ajude-me, Visual Studio!  
  Então, você descobriu o editor e criou alguns códigos. Agora, você deseja iniciar a depuração desse código. No Visual Studio, assim como acontece com a maioria dos IDEs, há duas fases para depuração: compilar o código para detectar e resolver erros de compilador e de projeto e executar código no ambiente para detectar e resolver erros de tempo de execução e dinâmicos.  
@@ -118,7 +122,7 @@ A maneira mais fácil de compilar seu projeto é pressionar **F7**, mas você ta
 ### <a name="inspect-your-code-at-run-time"></a>Inspecionar seu código no tempo de execução  
  Quando seu código em execução atinge um ponto de interrupção e pausa, a linha de código marcada em amarelo (a instrução atual) não foi executada ainda. Neste ponto, pode ser útil executar a instrução atual e, em seguida, inspecionar os valores alterados. Você pode usar vários comandos *step* para executar o código no depurador. Se o código marcado for uma chamada de método, você poderá intervir nele pressionando **F11**. Você também pode *ultrapassar* a linha de código pressionando **F10**. Para obter detalhes sobre como percorrer o código e comandos adicionais, leia [Navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md).
 
- ![Inspeção do valor de tempo de execução do Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value") 
+ ![Inspeção do valor de tempo de execução do Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
 
  Na ilustração anterior, você pode avançar uma instrução do depurador pressionando **F10** ou **F11** (como não há nenhuma chamada de método, os dois comandos têm o mesmo resultado).
 
@@ -126,7 +130,7 @@ A maneira mais fácil de compilar seu projeto é pressionar **F7**, mas você ta
 
  ![Inspeção do valor de tempo de execução do Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
- Passe o mouse sobre uma variável para ver os valores e referências que ela contém no momento. Se você vir um valor que não esperava, provavelmente haverá um bug nas linhas de código anteriores ou de chamada.  Para obter informações mais detalhadas, [saiba mais](../debugger/getting-started-with-the-debugger.md) sobre como usar o depurador. 
+ Passe o mouse sobre uma variável para ver os valores e referências que ela contém no momento. Se você vir um valor que não esperava, provavelmente haverá um bug nas linhas de código anteriores ou de chamada.  Para obter informações mais detalhadas, [saiba mais](../debugger/getting-started-with-the-debugger.md) sobre como usar o depurador.
 
  Além disso, o Visual Studio exibe a janela Ferramentas de Diagnóstico, na qual você pode observar o uso de memória e CPU do aplicativo ao longo do tempo. Mais tarde no desenvolvimento do seu aplicativo, você pode usar essas ferramentas para procurar uso intenso da CPU ou alocação de memória inesperada. Use-o em conjunto com a janela **Inspeção** e com os pontos de interrupção para determinar o que está ocasionando o uso intenso inesperado ou os recursos não liberados.  Para obter mais informações, consulte [Tour do recurso de criação de perfil](../profiling/profiling-feature-tour.md).
 

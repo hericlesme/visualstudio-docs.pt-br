@@ -12,15 +12,17 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Início rápido: Projetos e soluções
 
 Neste guia de início rápido de 10 minutos, vamos explorar o que significa criar uma solução e um projeto no Visual Studio. Vamos examinar as propriedades de um projeto e alguns dos arquivos que ele pode conter. Também vamos criar uma referência a um segundo projeto.
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente.
 
 > [!TIP]
 > Desenvolveremos uma solução e um projeto do zero neste guia de início rápido, como um exercício educacional para compreendermos o conceito de um projeto. Em seu uso geral do Visual Studio, você provavelmente utilizará os vários modelos de projeto que ele oferece quando estiver criando um novo projeto.
