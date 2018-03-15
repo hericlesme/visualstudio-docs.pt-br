@@ -50,7 +50,6 @@
 ### [Executar testes de unidade para aplicativos UWP](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Usar a cobertura de código para determinar quanto do código está sendo testado](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 ### [Personalizar a análise de cobertura de código](customizing-code-coverage-analysis.md)
-### [Analisar a cobertura de código em testes de verificação de build](analyzing-code-coverage-in-build-verification-tests.md)
 ### [Solução de problemas de cobertura de código](troubleshooting-code-coverage.md)
 ## [Usar emuladores para isolar testes de unidade para aplicativos do Sharepoint 2010](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 # [Teste de Unidade Dinâmica](live-unit-testing-intro.md)
