@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como: impor um código com uma política de check-in do analysis código
 
@@ -31,23 +31,23 @@ Os administradores de controle de versão do Team Foundation podem adicionar as 
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir o editor de política de análise de código
 
-1. no **Team Explorer**, o projeto de equipe, clique **as configurações de projeto de equipe**e, em seguida, clique em **controle de origem**.
+1. Em **Team Explorer**, o projeto de equipe, clique **as configurações de projeto de equipe**e, em seguida, clique em **controle de origem**.
 
-     The **Source Control** dialog box appears.
+     O **controle de origem** caixa de diálogo é exibida.
 
-2. no **política de Check-in** guia e, em seguida, clique em **adicionar**.
+2. Sobre o **política de Check-in** guia e, em seguida, clique em **adicionar**.
 
-     The **Add Check-in Policy** dialog box appears.
+     O **adicionar política de Check-in** caixa de diálogo é exibida.
 
-3. no **política de Check-in** lista, selecione o **análise de código** caixa de seleção e, em seguida, clique em **Okey**.
+3. No **política de Check-in** lista, selecione o **análise de código** caixa de seleção e, em seguida, clique em **Okey**.
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     O **Editor de política de análise de código** caixa de diálogo é exibida.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Para habilitar regras de facilidade de manutenção de análise de código
 
-1. em o **Editor de política de análise de código** caixa de diálogo **configurações de regra**, expanda o **regras de facilidade de manutenção** nó.
+1. No **Editor de política de análise de código** caixa de diálogo **configurações de regra**, expanda o **regras de facilidade de manutenção** nó.
 
-2. Selecione as caixas de seleção para as seguintes regras:
+2. Marque as caixas de seleção para as seguintes regras:
 
     -   Profundidade: **CA1501 AvoidExcessiveInheritance** -limite: aviso em mais de 5 níveis de profundidade
 
@@ -59,9 +59,9 @@ Os administradores de controle de versão do Team Foundation podem adicionar as 
 
     Além disso, se você quiser que uma violação de regra para impedir que uma compilação bem-sucedida, selecione o **tratar aviso como um erro** caixa de seleção ao lado da descrição da regra.
 
-3. clique em **Okey**. A nova política de check-in agora se aplica ao check-ins futuras.
+3. Clique em **OK**. A nova política de check-in agora se aplica ao check-ins futuras.
 
 ## <a name="see-also"></a>Consulte também
 
-[Valores de métricas de código](../code-quality/code-metrics-values.md)
-[criando e usando políticas do check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Valores de métricas de código](../code-quality/code-metrics-values.md)
+- [Criando e usando políticas do check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

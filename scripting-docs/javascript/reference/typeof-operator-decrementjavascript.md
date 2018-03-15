@@ -22,11 +22,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c79c69e6c447b14e61fa67ccb8600d5d83bebd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a9ff8c7942c773d138dd599956c41d1e583e6288
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="typeof-operator-javascript"></a>Operador typeof (JavaScript)
 Retorna uma cadeia de caracteres que identifica o tipo de dados de uma expressão.  
@@ -41,9 +41,11 @@ typeof[(]expression[)] ;
 ## <a name="remarks"></a>Comentários  
  O *expressão* argumento é qualquer expressão para qual tipo de informações são pesquisadas.  
   
- O `typeof` operador retorna informações de tipo como uma cadeia de caracteres. Há seis possíveis valores que `typeof` retorna: "number", "cadeia de caracteres," ",""objeto boolean," "função" e "indefinida".  
+ O `typeof` operador retorna informações de tipo como uma cadeia de caracteres. Há sete possíveis valores que `typeof` retorna: "number", "cadeia de caracteres," "boolean", "objeto" "funciona," "indefinidos" e "desconhecido".  
   
  Os parênteses são opcionais no `typeof` sintaxe.  
+
+ Pode retornar um objeto como um tipo desconhecido em uma XMLHTTPRequest. Um objeto COM nenhuma analógico em JavaScript também pode retornar como um tipo desconhecido.
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir testa o tipo de dados de variáveis.  

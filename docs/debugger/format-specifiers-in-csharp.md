@@ -32,14 +32,14 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1191884f0a20463f9d248a6acfca4337212b613
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: fee9e4c355c83ae44cf6147084c95a3b213bce5a
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em c# no depurador do Visual Studio
-Você pode alterar o formato no qual um valor é exibido no **inspecionar** janela usando especificadores de formato. Você também pode usar os especificadores de formato no **imediato** janela, o **comando** janela e até mesmo no windows de origem. Se você pausar em uma expressão nessas janelas, o resultado aparecerá em uma DataTip. As DataTips refletirão o especificador de formato na tela DataTip.  
+Você pode alterar o formato no qual um valor é exibido no **inspecionar** janela usando especificadores de formato. Você também pode usar os especificadores de formato no **imediato** janela, o **comando** janela, na [pontos de rastreamento](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e até mesmo no windows de origem. Se você pausar em uma expressão nessas janelas, o resultado aparecerá em uma DataTip. As DataTips refletirão o especificador de formato na tela DataTip.  
   
  Para usar um especificador de formato, digite a expressão seguida por uma vírgula. Após a vírgula, adicione o especificador apropriado.  
   

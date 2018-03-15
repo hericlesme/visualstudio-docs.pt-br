@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0cb73a5e5f40d21a5b17faae9602e40f7cd39d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: e13fb299d513f045c4c7c339a9c6602890079e40
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Criar uma janela de ferramentas de várias instâncias
 Você pode programar uma janela de ferramenta para que várias instâncias dele podem ser abertas simultaneamente. Por padrão, janelas de ferramentas podem ter apenas uma instância abrir.  
@@ -36,14 +38,14 @@ Você pode programar uma janela de ferramenta para que várias instâncias dele 
   
 ## <a name="making-a-tool-window-multi-instance"></a>Fazer uma instância múltipla de janela de ferramenta  
   
-1.  Abra o **MIToolWindowPackage.cs** de arquivos e localizar o `ProvideToolWindow` atributo. e o `MultiInstances=true` parâmetro, conforme mostrado no exemplo a seguir.  
+1.  Abra o **MIToolWindowPackage.cs** de arquivos e localizar o `ProvideToolWindow` atributo. e o `MultiInstances=true` parâmetro, conforme mostrado no exemplo a seguir:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
         [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
         [ProvideMenuResource("Menus.ctmenu", 1)]  
         [ProvideToolWindow(typeof(MultiInstanceToolWindow.MIToolWindow), MultiInstances = true)]  
-        [Guid(MIToolWindowPackageGuids.PackageGuidString)]  
+        [Guid(MIToolWindowPackage.PackageGuidString)]  
         public sealed class MIToolWindowPackage : Package  
     {. . .}  
     ```  
@@ -52,7 +54,7 @@ Você pode programar uma janela de ferramenta para que várias instâncias dele 
   
 3.  Para criar uma instância da janela da ferramenta, chame o <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método e defina seu `id` para um valor disponível e seu `create` sinalizador como `true`.  
   
-     Por padrão, o valor da `id` parâmetro o <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método é `0`. Isso faz com que uma janela de ferramenta de instância única. Para mais de uma instância sejam hospedados, cada instância deve ter seu próprio exclusivo `id`.  
+     Por padrão, o valor da `id` parâmetro o <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método é `0`. Esse valor faz com que uma janela de ferramenta de instância única. Para mais de uma instância sejam hospedados, cada instância deve ter seu próprio exclusivo `id`.  
   
 4.  Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que é retornado pelo <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propriedade da instância de janela de ferramenta.  
   

@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>funcionalidades do IntelliTrace
 
@@ -55,7 +55,7 @@ Se você estiver depurando, pare a depuração. Vá para **Ferramentas > Opçõe
 
 Isso não é habilitado por padrão, mas IntelliTrace pode capturar instantâneos de seu aplicativo em todos os eventos de etapa de ponto de interrupção e o depurador e você pode exibir instantâneos essas políticas em uma sessão de depuração histórica. Um instantâneo fornece uma exibição do seu estado de aplicativo completo. Para habilitar a captura de instantâneos, vá para **Ferramentas > Opções > IntelliTrace > geral**e selecione **IntelliTrace eventos e instantâneos**. Para obter mais informações, consulte [exibir instantâneos usando IntelliTrace etapa-back](../debugger/how-to-use-intellitrace-step-back.md)
 
-Instantâneos estão disponíveis no 2017 de Enterprise do Visual Studio versão 15.5 e superior e requer a atualização de aniversário do Windows 10 ou superior.  Instantâneos não estão atualmente disponíveis para aplicativos .NET Core e ASP.NET Core.
+Instantâneos estão disponíveis no 2017 de Enterprise do Visual Studio versão 15.5 e superior e requer a atualização de aniversário do Windows 10 ou superior.  Para aplicativos .NET Core e ASP.NET Core, a versão do Visual Studio Enterprise de 2017 visualização 15.7 1 é necessário.
 
 ## <a name="GoingFurther"></a> Coletar eventos do IntelliTrace e informações de chamadas
 

@@ -1,13 +1,13 @@
 ---
 title: "Exibir um instantâneo do IntelliTrace etapa-back - Visual Studio | Microsoft Docs"
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Etapa-back de instantâneos de modo de exibição usando o IntelliTrace no Visual Studio
 
 Etapa-back do IntelliTrace automaticamente tira um instantâneo do seu aplicativo em cada ponto de interrupção e o depurador evento da etapa. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
 
-Etapa-back do IntelliTrace está disponível a partir 2017 de Enterprise do Visual Studio versão 15.5 e superior e requer a atualização de aniversário do Windows 10 ou superior. O recurso atualmente há suporte para depuração de ASP.NET, WinForms, WPF, aplicativos de console gerenciados e bibliotecas de classe gerenciada. Atualmente não há suporte para a depuração de aplicativos do ASP.NET Core, .NET Core ou UWP. 
+Etapa-back do IntelliTrace está disponível a partir 2017 de Enterprise do Visual Studio versão 15.5 e superior e requer a atualização de aniversário do Windows 10 ou superior. O recurso atualmente há suporte para depuração de ASP.NET, WinForms, WPF, aplicativos de console gerenciados e bibliotecas de classe gerenciada. A partir do Visual Studio 2017 Enterprise versão 15.7 visualização 1, o recurso também tem suporte para .NET Core e o ASP.NET Core. Atualmente não há suporte para a depuração de aplicativos UWP.
+
+Neste tutorial, você irá:
+
+> [!div class="checklist"]
+> * Habilitar instantâneos e eventos do Intellitrace
+> * Navegar usando os comandos de etapa-voltar e Avançar de etapa de eventos
+> * Exibir instantâneos de evento
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Habilitar o modo de eventos e os instantâneos do IntelliTrace 
 
-1. No Visual Studio Enterprise, vá para **Ferramentas > Opções > IntelliTrace** configurações e selecione a opção **IntelliTrace eventos e instantâneos**. 
+1. Abra seu projeto no Visual Studio Enterprise.
+
+1. Vá para **Ferramentas > Opções > IntelliTrace** configurações e selecione a opção **IntelliTrace eventos e instantâneos**. 
 
     ![Habilitar o modo de eventos do IntelliTrace e instantâneos](../debugger/media/intellitrace-enable-snapshots.png "ativar eventos do IntelliTrace e instantâneos de modo")
 
-2. Abra seu projeto no Visual Studio.
-
-3. Definir um ou mais pontos de interrupção em seu projeto e iniciar a depuração (pressione **F5**), ou iniciar a depuração, percorrendo o código (**F10** ou **F11**).
+1. Definir um ou mais pontos de interrupção em seu projeto e iniciar a depuração (pressione **F5**), ou iniciar a depuração, percorrendo o código (**F10** ou **F11**).
 
     IntelliTrace tira um instantâneo do processo do aplicativo no depurador de cada evento de etapa e o ponto de interrupção. Esses eventos são registrados no **eventos** guia o **ferramentas de diagnóstico** janela, juntamente com outros eventos do IntelliTrace. Para abrir essa janela, escolha **depurar** > **Windows** > **Mostrar ferramentas de diagnóstico**.
 
@@ -49,7 +56,7 @@ Etapa-back do IntelliTrace está disponível a partir 2017 de Enterprise do Visu
 
 1. Navegar entre eventos usando o **etapa com versões anteriores (Alt + [)** e **Avançar uma etapa (Alt +])** botões na barra de ferramentas Depurar.
 
-    Esses botões navegar os eventos que aparecem no **eventos** guia o **janela ferramentas de diagnóstico**. Voltar ou avançar para um evento ativa automaticamente a depuração histórica no evento selecionado.
+    Esses botões navegar os eventos que aparecem no **eventos** guia o **janela ferramentas de diagnóstico**. Passo a passo para trás ou para frente a um evento automaticamente ativa [depuração histórica](../debugger/historical-debugging.md) no evento selecionado.
 
     ![Etapa para trás e encaminhar botões](../debugger/media/intellitrace-step-back-icons-description.png "botões etapa com versões anteriores e Avançar")
 
@@ -73,9 +80,7 @@ Etapa-back do IntelliTrace está disponível a partir 2017 de Enterprise do Visu
 
     ![Visão geral do retorno do IntelliTrace etapa](../debugger/media/intellitrace-step-back-overview.png "visão geral do IntelliTrace etapa-back")
 
-## <a name="next-steps"></a>Próximas etapas  
- Para saber como inspecionar variáveis no Visual Studio, consulte [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md)  
- Para obter uma visão geral de depuração histórica, consulte [depuração histórica](../debugger/historical-debugging.md).  
+    Para saber mais sobre como inspecionar variáveis no Visual Studio, consulte [tour pelos recursos do depurador](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
@@ -111,3 +116,10 @@ O impacto no desempenho geral de revisão depende de seu aplicativo. A sobrecarg
 * Ao depurar um aplicativo cujo processo tem um grande número de regiões de memória exclusivo, como um aplicativo que carrega um grande número de DLLs, passar o desempenho com instantâneos habilitados pode ser afetado. Esse problema será corrigido em uma versão futura do Windows. Se você estiver enfrentando o problema, falar conosco em stepback@microsoft.com. 
 
 * Ao salvar um arquivo com **Depurar > IntelliTrace > Salvar IntelliTrace sessão** no modo de eventos e instantâneos, os dados adicionais capturados de instantâneos não estão disponíveis no arquivo. itrace. Nos eventos de ponto de interrupção e etapa, você ver as mesmas informações como se tivesse salvou o arquivo no modo somente de eventos de IntelliTrace. 
+
+## <a name="next-steps"></a>Próximas etapas
+
+Neste tutorial, você aprendeu como usar o IntelliTrace etapa-back. Você talvez queira saber mais sobre outros recursos do IntelliTrace.
+
+> [!div class="nextstepaction"]
+> [Recursos do IntelliTrace](../debugger/intellitrace-features.md)

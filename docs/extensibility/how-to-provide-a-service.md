@@ -4,26 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: services, providing
+helpviewer_keywords:
+- services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>Como: fornecer um serviço
 Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para fornecer um serviço, um VSPackage deve registrar o serviço com o Visual Studio e adicione o serviço.  
   
- O <xref:Microsoft.VisualStudio.Shell.Package> classe implementa ambos <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> e <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>contém métodos de retorno de chamada que fornecem serviços sob demanda.  
+ O <xref:Microsoft.VisualStudio.Shell.Package> classe implementa ambos <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> e <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contém métodos de retorno de chamada que fornecem serviços sob demanda.  
   
  Para obter mais informações sobre serviços, consulte [Essentials do serviço](../extensibility/internals/service-essentials.md) .  
   
@@ -32,7 +35,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
   
 #### <a name="implementing-a-service"></a>Implementar um serviço  
   
-1.  Criar um projeto do VSIX (**arquivo > Novo > projeto > Visual C# > Extensiblity > projeto VSIX**).  
+1.  Criar um projeto do VSIX (**arquivo > Novo > projeto > Visual C# > extensibilidade > projeto VSIX**).  
   
 2.  Adicione um VSPackage ao projeto. Selecione o nó do projeto no **Solution Explorer** e clique em **Adicionar > novo item > Visual C# itens > extensibilidade > pacote do Visual Studio**.  
   
@@ -44,7 +47,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
   
     -   Uma classe que implementa o serviço e a interface de serviço.  
   
-     O exemplo a seguir mostra uma implementação muito básica dos três tipos. O construtor da classe de serviço deve definir o provedor de serviço.  
+     O exemplo a seguir mostra uma implementação básica dos três tipos. O construtor da classe de serviço deve definir o provedor de serviço.  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -114,7 +117,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -122,7 +125,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
     > [!NOTE]
     >  O Visual Studio pode rejeitar uma solicitação para fornecer um serviço. Ele faz isso, se outro VSPackage já fornece o serviço.  
   
-3.  Agora você pode obter o serviço e usar seus métodos. Vamos mostrar isso no inicializador, mas você pode obter o serviço em qualquer lugar que deseja usar o serviço.  
+3.  Agora você pode obter o serviço e usar seus métodos. O exemplo a seguir mostra o uso do serviço no inicializador, mas você pode obter o serviço em qualquer lugar que deseja usar o serviço.  
   
     ```csharp  
     protected override void Initialize()  
@@ -133,7 +136,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

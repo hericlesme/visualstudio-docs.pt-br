@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de build
 [Transformação de texto](../modeling/code-generation-and-t4-text-templates.md) pode ser chamado como parte do [do processo de compilação](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) de um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução. Há tarefas de compilação que são especializadas para a transformação de texto. As tarefas de compilação T4 executam modelos de texto de tempo de design e também compilam modelos de texto de tempo de execução (pré-processados).  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  Isso significa que você não pode acessar coisas como nomes de arquivo de projeto da mesma forma quando você cria um modelo de texto no MSBuild. No entanto, você pode [passar informações de ambiente para modelos de texto e os processadores de diretiva usando parâmetros de compilação](#parameters).  
   
-##  <a name="buildserver"></a>Configurar as máquinas  
+##  <a name="buildserver"></a> Configurar as máquinas  
  Para habilitar tarefas de compilação no computador de desenvolvimento, instale o SDK de modelagem para Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  Para especificar que os arquivos somente leitura devem ser substituídos, insira esta propriedade:  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  A menos que você personalize a etapa de pós-processamento, um aviso será registrado na lista de erros quando um arquivo for substituído.  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>Passar dados de contexto de compilação para os modelos  
+##  <a name="parameters"></a> Passar dados de contexto de compilação para os modelos  
  Você pode definir valores de parâmetros no arquivo do projeto. Por exemplo, você pode passar [criar](../msbuild/msbuild-properties.md) propriedades e [variáveis de ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -242,7 +242,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 >  `ResolveParameterValue` obtém dados de `T4ParameterValues` somente quando você usa o MSBuild. Quando você transformar o modelo usando o Visual Studio, os parâmetros terão valores padrão.  
   
-##  <a name="msbuild"></a>Usando as propriedades do projeto no assembly e as diretivas de inclusão  
+##  <a name="msbuild"></a> Usando as propriedades do projeto no assembly e as diretivas de inclusão  
  Macros do Visual Studio como $ (solutiondir) não funcionam no MSBuild. Você pode usar as propriedades do projeto como alternativa.  
   
  Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Este exemplo define uma propriedade chamada `myLibFolder`:  

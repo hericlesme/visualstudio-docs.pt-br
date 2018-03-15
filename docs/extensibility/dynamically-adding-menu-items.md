@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1eaa8cc41e7b27d509e68d6785c34a9ae214ffd3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8c7a803933b3b1e6d353b9899cb8997dbaa6897e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="dynamically-adding-menu-items"></a>Dinamicamente adicionando itens de Menu
 Você pode adicionar itens de menu em tempo de execução, especificando o `DynamicItemStart` comando sinalizador em uma definição de botão do espaço reservado no arquivo de comando-tabela (. VSCT) do Visual Studio, em seguida, definir (no código) o número do menu de itens para exibir e manipular os comandos. Quando o VSPackage é carregado, o espaço reservado é substituído com os itens de menu dinâmico.  
@@ -43,7 +45,7 @@ Você pode adicionar itens de menu em tempo de execução, especificando o `Dyna
   
 -   Dois grupos, um que contém o controlador de menu e outra que contém os itens de menu no menu suspenso de comando  
   
--   Elemento de um menu do tipo`MenuController`  
+-   Elemento de um menu do tipo `MenuController`  
   
 -   Dois botões, que atua como o espaço reservado para os itens de menu e outro que fornece o ícone e a dica de ferramenta na barra de ferramentas.  
   
@@ -209,7 +211,7 @@ Você pode adicionar itens de menu em tempo de execução, especificando o `Dyna
 ## <a name="adding-the-command"></a>Adicionando o comando  
  O construtor DynamicMenu é onde você configurar os comandos de menu, incluindo itens de menu e menus dinâmicos.  
   
-1.  No DynamicMenuPackageGuids.cs, adicione o GUID do conjunto de comandos e a ID de comando:  
+1.  No DynamicMenuPackage.cs, adicione o GUID do conjunto de comandos e a ID de comando:  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
@@ -342,7 +344,7 @@ Você pode adicionar itens de menu em tempo de execução, especificando o `Dyna
 [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
 [ProvideMenuResource("Menus.ctmenu", 1)]  
 [ProvideAutoLoad(UIContextGuids.SolutionHasMultipleProjects)]  
-[Guid(DynamicMenuPackageGuids.PackageGuidString)]  
+[Guid(DynamicMenuPackage.PackageGuidString)]  
 public sealed class DynamicMenuItemsPackage : Package  
 {}  
 ```  
