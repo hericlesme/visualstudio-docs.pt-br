@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,8 +58,8 @@ Você pode usar o IntelliTrace na edição Enterprise do Visual Studio (mas não
 |||
 |-|-|
 |**Com suporte**|-Aplicativos Visual Basic e Visual c# que usam o .NET Framework 2.0 ou versões posteriores.<br/>É possível depurar a maioria dos aplicativos, inclusive ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e aplicativos de 64 bits.<br/>Para depurar aplicativos do SharePoint com o IntelliTrace, consulte [passo a passo: depurando um aplicativo do SharePoint, usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicativos do Microsoft Azure com o IntelliTrace, consulte [depuração de um serviço de nuvem publicado com o Visual Studio e o IntelliTrace](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Suporte limitado**|-.NET core e ASP.NET Core aplicativos com suporte apenas para eventos de<br />-Aplicativos F # em uma base experimental<br />-Aplicativos UWP com suporte apenas para eventos de|
-|Sem suporte|-C++, outros idiomas e script<br />-Serviços do Windows, Silverlight, Xbox, ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicativos|
+|**Suporte limitado**|-.NET core e ASP.NET Core aplicativos com suporte para determinados eventos apenas controlador MVC, ADO.NET e HTTPClicent no depuração local. Não há suporte para o coletor autônomo para aplicativos .NET Core ou ASP.NET Core.<br />-Aplicativos F # em uma base experimental<br />-Aplicativos UWP com suporte apenas para eventos de|
+|**Sem suporte**|-C++, outros idiomas e script<br />-Serviços do Windows, Silverlight, Xbox, ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicativos|
 
 > [!NOTE]
 > Se você quiser depurar um processo que já está em execução, você pode coletar apenas eventos do IntelliTrace (nenhuma informação de chamada). Você pode anexar a um processo de 32 bits ou 64 bits na máquina local. Eventos que ocorrem antes de anexar ao processo não são coletados.

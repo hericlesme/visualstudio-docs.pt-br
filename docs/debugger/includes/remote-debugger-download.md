@@ -13,20 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 7e911686d1f8bff191c439f4fc2b92c37d60a31f
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 03/17/2018
 ---
 1.  No dispositivo ou servidor máquina que você deseja depurar (em vez do computador executando o Visual Studio), obtenha a versão correta das ferramentas remotas.
 
     |Versão|Link|Observações|
     |-|-|-|
-    |Visual Studio 2017 versão 15.5|[Ferramentas remotas](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Sempre Baixe a versão correspondente de seu sistema operacional do dispositivo (x86 ou x64). Se o modo de segurança aprimorada estiver ativado (Windows Server), você deve adicionar novos sites confiáveis se solicitado.|
+    |Visual Studio 2017 (versão mais recente)|[Ferramentas remotas](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Sempre Baixe a versão correspondente de seu sistema operacional do dispositivo (x86 ou x64). Se o modo de segurança aprimorada estiver ativado (Windows Server), você deve adicionar novos sites confiáveis se solicitado.|
     |Visual Studio de 2017 (antiga)|[Ferramentas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Ferramentas remotas para versões anteriores do Visual Studio de 2017 estão disponíveis no My.VisualStudio.com. Se solicitado, associação a grupo livre de Fundamentos de desenvolvimento do Visual Studio, ou entre com sua assinatura do Visual Studio ID. Se o modo de segurança aprimorada estiver ativado (Windows Server), você deve adicionar novos sites confiáveis se solicitado.|
     |Visual Studio 2015 Atualização 3|[Ferramentas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se solicitado, associação a grupo livre de Fundamentos de desenvolvimento do Visual Studio, ou entre com sua assinatura do Visual Studio ID. Se o modo de segurança aprimorada estiver ativado (Windows Server), você deve adicionar novos sites confiáveis se solicitado.|
-    |Visual Studio 2015 (antiga)|[Ferramentas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se solicitado, associação a grupo livre de Fundamentos de desenvolvimento do Visual Studio, ou entre com sua assinatura do Visual Studio ID. Se o modo de segurança aprimorada estiver ativado (Windows Server), você deve adicionar novos sites confiáveis se solicitado.|
+    |Visual Studio 2015 (older)|[Ferramentas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se solicitado, associação a grupo livre de Fundamentos de desenvolvimento do Visual Studio, ou entre com sua assinatura do Visual Studio ID. Se o modo de segurança aprimorada estiver ativado (Windows Server), você deve adicionar novos sites confiáveis se solicitado.|
     |Visual Studio 2013|[Ferramentas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Baixar página na documentação do Visual Studio 2013|
     |Visual Studio 2012|[Ferramentas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Baixar página na documentação do Visual Studio 2012|
   
