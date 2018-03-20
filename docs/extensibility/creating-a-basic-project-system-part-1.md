@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1e0c2e41baa6f1c97a272e7c9655f4f837552cac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf0570dd6f58d6a6893be5babdcde530d3a57109
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Criando um sistema de projeto básico, parte 1
 No Visual Studio, os projetos são os contêineres que os desenvolvedores usam para organizar arquivos de código fonte e outros ativos. Projetos aparecem como filhos das soluções de **Gerenciador de soluções**. Projetos permitem organizar, compilar, depurar e implantar o código-fonte e criar referências para os serviços Web, bancos de dados e outros recursos.  
@@ -29,12 +31,12 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
  Projetos são definidos em arquivos de projeto, por exemplo, um arquivo. csproj para um projeto do Visual c#. Você pode criar seu próprio tipo de projeto que tem sua própria extensão de nome de arquivo de projeto. Para obter mais informações sobre tipos de projeto, consulte [tipos de projeto](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
->  Se você precisar estender o Visual Studio com um tipo de projeto personalizado, é altamente recomendável utilizar o [sistema de projeto do Visual Studio](https://github.com/Microsoft/VSProjectSystem) que tem várias vantagens em relação à criação de um sistema de projeto a partir do zero:  
+>  Se você precisar estender o Visual Studio com um tipo de projeto personalizado, é altamente recomendável utilizar o [sistema de projeto do Visual Studio](https://github.com/Microsoft/VSProjectSystem) (VSPS) que tem várias vantagens em relação à criação de um sistema de projeto a partir do zero:  
 >   
->  -   Integração mais fácil.  Até mesmo um sistema de projeto básico requer dezenas de milhares de linhas de código.  Aproveitar o CPS reduz o custo de integração para apenas alguns cliques, antes que você está pronto para personalizá-lo às suas necessidades.  
-> -   Manutenção mais fácil.  Aproveitando o CPS, você somente precisa manter seus próprios cenários.  Lidar com a manutenção de toda a infra-estrutura de sistema de projeto.  
+>  -  Integração mais fácil.  Até mesmo um sistema de projeto básico requer dezenas de milhares de linhas de código.  Aproveitar VSPS reduz o custo de integração para apenas alguns cliques, antes que você está pronto para personalizá-lo às suas necessidades.  
+>  -  Manutenção mais fácil.  Aproveitando VSPS, você só precisa manter seus próprios cenários.  Lidar com a manutenção de toda a infra-estrutura de sistema de projeto.  
 >   
->  Se você precisar de versões de destino do Visual Studio anteriores do Visual Studio 2013, você não poderá aproveitar CPS em uma extensão do Visual Studio.  Se esse for o caso, este passo a passo é um bom lugar para começar.  
+>  Se você precisar de versões de destino do Visual Studio anteriores do Visual Studio 2013, você não poderá aproveitar VSPS em uma extensão do Visual Studio.  Se esse for o caso, este passo a passo é um bom lugar para começar.  
   
  Este passo a passo mostra como criar um tipo de projeto que tem o .myproj de extensão de nome de arquivo de projeto. Este passo a passo usa do sistema de projeto Visual c# existente.  
   
@@ -65,7 +67,7 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
  Você também deve baixar o código-fonte para o [estrutura de pacote gerenciado para projetos](http://mpfproj12.codeplex.com/). Extraia o arquivo para um local que seja acessível para a solução que você pretende criar.  
   
 ## <a name="creating-a-basic-project-type"></a>Criando um tipo de projeto básico  
- Crie um projeto c# VSIX denominado **SimpleProject**. (**Arquivo, novo, projeto** e **o pacote do Visual Studio c#, extensibilidade,**). Adicionar um modelo de item de projeto de pacote do Visual Studio (no Gerenciador de soluções, clique com botão direito no nó do projeto e selecione **Adicionar / Novo Item**, em seguida, vá para **extensibilidade / pacote do Visual Studio**). Nomeie o arquivo **SimpleProjectPackage**.  
+ Crie um projeto c# VSIX denominado **SimpleProject**. (**Arquivo, novo, projeto** e **o projeto do VSIX Visual c#, extensibilidade,**). Adicionar um modelo de item de projeto de pacote do Visual Studio (no Gerenciador de soluções, clique com botão direito no nó do projeto e selecione **Adicionar / Novo Item**, em seguida, vá para **extensibilidade / pacote do Visual Studio**). Nomeie o arquivo **SimpleProjectPackage**.  
   
 ## <a name="creating-a-basic-project-template"></a>Criando um modelo de projeto básico  
  Agora, você pode modificar este VSPackage básico para implementar o novo tipo de projeto .myproj. Para criar um projeto com base no tipo de projeto .myproj, Visual Studio precisa saber quais arquivos, recursos e referências para adicionar ao novo projeto. Para fornecer essas informações, coloque os arquivos de projeto em uma pasta de modelo de projeto. Quando um usuário utiliza o projeto .myproj para criar um projeto, os arquivos são copiados para o novo projeto.  
@@ -74,7 +76,7 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
   
 1.  Adicionar três pastas para o projeto, um sob o outro: **Templates\Projects\SimpleProject**. (No **Solution Explorer**, com o botão direito do **SimpleProject** nó do projeto, aponte para **adicionar**e, em seguida, clique em **nova pasta**. Nomeie a pasta `Templates`. No **modelos** pasta, adicione uma pasta denominada `Projects`. Além de **projetos** pasta, adicione uma pasta denominada `SimpleProject`.)  
   
-2.  No **Projects\SimpleProject** pasta adicionar um arquivo de ícone chamado `SimpleProject.ico`. Quando você clica em **adicionar**, abre o editor de ícones.  
+2.  No **Templates\Projects\SimpleProject** pasta, adicionar um arquivo de imagem de Bitmap a ser usado como o ícone chamado `SimpleProject.ico`. Quando você clica em **adicionar**, abre o editor de ícones.  
   
 3.  Verifique o ícone diferente. Esse ícone aparecerá no **novo projeto** caixa de diálogo posteriormente no passo a passo.  
   
@@ -82,27 +84,27 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
   
 4.  O ícone Salvar e feche o editor de ícone.  
   
-5.  No **Projects\SimpleProject** pasta, adicione um **classe** item chamado `Program.cs`.  
+5.  No **Templates\Projects\SimpleProject** pasta, adicione um **classe** item chamado `Program.cs`.  
   
 6.  Substitua o código existente com as seguintes linhas.  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Text;  
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
   
-    namespace $nameSpace$  
+    namespace $nameSpace$
     {  
-        public class $className$  
-        {  
-            static void Main(string[] args)  
-            {  
-                Console.WriteLine("Hello VSX!!!");  
-                Console.ReadKey();  
-            }  
-        }  
-    }  
-    ```  
+        public class $className$
+        {
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Hello VSX!!!");
+                Console.ReadKey();
+            }
+        }
+    }
+    ```
   
     > [!IMPORTANT]
     >  Isso não é a forma final do código Program.cs; os parâmetros de substituição serão abordados em uma etapa posterior. Você pode ver erros de compilação, mas desde que o arquivo **BuildAction** é **conteúdo**, você deve ser capaz de compilar e executar o projeto como de costume.  
@@ -162,61 +164,49 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
   
  Este modelo de projeto descreve um projeto Visual c# básico que tem uma configuração de depuração e uma configuração de versão. O projeto inclui dois arquivos de origem, AssemblyInfo.cs e Program.cs e assembly várias referências. Quando um projeto é criado a partir do modelo, o valor de ProjectGuid automaticamente é substituído por um novo GUID.  
   
- Em **Solution Explorer**, expandidos **modelos** pasta deve aparecer da seguinte maneira:  
-  
- Modelos  
-  
- Projetos  
-  
- SimpleProject  
-  
- AssemblyInfo.cs  
-  
- Module.vb  
-  
- SimpleProject.ico  
-  
- SimpleProject.myproj  
-  
+ Em **Solution Explorer**, expandidos **modelos** pasta deve aparecer da seguinte maneira:
+
+```
+Templates  
+   Projects  
+      SimpleProject  
+         AssemblyInfo.cs  
+         Program.cs  
+         SimpleProject.ico  
+         SimpleProject.myproj  
+```
+
 ## <a name="creating-a-basic-project-factory"></a>Criando uma fábrica de projeto básico  
  Você deve informar o local da pasta do modelo de projeto do Visual Studio. Para fazer isso, adicione um atributo para a classe de VSPackage que implementa a fábrica de projeto para que o local de modelo é gravado no registro do sistema quando o VSPackage é criado. Comece criando uma fábrica de projeto básico é identificada por um GUID de fábrica do projeto. Use o <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo para conectar-se a fábrica de projeto para a classe SimpleProjectPackage.  
   
 #### <a name="to-create-a-basic-project-factory"></a>Para criar uma fábrica de projeto básico  
   
-1.  Abra SimpleProjectPackageGuids.cs no editor de códigos.  
+1.  Criar GUIDs para sua fábrica de projeto (no **ferramentas** menu, clique em **criar GUID**), ou usar o exemplo a seguir. Adicionar os GUIDs para a classe SimpleProjectPackage próximo a seção já definido `PackageGuidString`. Os GUIDs devem estar no formato GUID e o formato de cadeia de caracteres. O código resultante deve se parecer com o exemplo a seguir.  
   
-2.  Criar GUIDs para sua fábrica de projeto (no **ferramentas** menu, clique em **criar GUID**), ou usar o exemplo a seguir. Adicione os GUIDs para a classe SimpleProjectPackageGuids. Os GUIDs devem estar no formato GUID e o formato de cadeia de caracteres. O código resultante deve se parecer com o exemplo a seguir.  
-  
-    ```  
-    static class SimpleProjectPackageGuids  
-    {  
-        public const string guidSimpleProjectPkgString =   
-            "96bf4c26-d94e-43bf-a56a-f8500b52bfad";  
-        public const string guidSimpleProjectCmdSetString =   
-            "72c23e1d-f389-410a-b5f1-c938303f1391";  
-        public const string guidSimpleProjectFactoryString =   
-            "471EC4BB-E47E-4229-A789-D1F5F83B52D4";  
-  
-        public static readonly Guid guidSimpleProjectCmdSet =   
-            new Guid(guidSimpleProjectCmdSetString);  
-        public static readonly Guid guidSimpleProjectFactory =   
-            new Guid(guidSimpleProjectFactoryString);  
-    }  
+    ```csharp  
+        public sealed class SimpleProjectPackage : Package
+        {  
+            ...
+            public const string SimpleProjectPkgString = "96bf4c26-d94e-43bf-a56a-f8500b52bfad";  
+            public const string SimpleProjectFactoryString = "471EC4BB-E47E-4229-A789-D1F5F83B52D4";  
+    
+            public static readonly Guid guidSimpleProjectFactory = new Guid(SimpleProjectFactoryString);  
+        }  
     ```  
   
 3.  Adicionar uma classe para a parte superior **SimpleProject** pasta denominada `SimpleProjectFactory.cs`.  
   
 4.  Adicione o seguinte usando instruções:  
   
-    ```  
+    ```csharp  
     using System.Runtime.InteropServices;  
     using Microsoft.VisualStudio.Shell;  
     ```  
   
 5.  Adicione um atributo de Guid para a classe SimpleProjectFactory. O valor do atributo é o novo GUID de fábrica de projeto.  
   
-    ```  
-    [Guid(SimpleProjectGuids.guidSimpleProjectFactoryString)]  
+    ```csharp  
+    [Guid(SimpleProjectPackage.SimpleProjectFactoryString)]  
     class SimpleProjectFactory  
     {  
     }  
@@ -232,7 +222,7 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
     [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",   
         "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",   
         @"Templates\Projects\SimpleProject",     LanguageVsTemplate = "SimpleProject")]  
-    [Guid(SimpleProjectGuids.guidSimpleProjectPkgString)]  
+    [Guid(SimpleProjectPackage.PackageGuidString)]  
     public sealed class SimpleProjectPackage : Package  
     ```  
   
@@ -403,7 +393,7 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
             }  
             public override Guid ProjectGuid  
             {  
-                get { return SimpleProjectGuids.guidSimpleProjectFactory; }  
+                get { return SimpleProjectPackage.guidSimpleProjectFactory; }  
             }  
             public override string ProjectType  
             {  
@@ -538,7 +528,7 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
   
 -   SimpleProject.Resources.SimpleProjectNode.bmp  
   
- Durante a construção da instância, o `ProjectNode` classe base carrega Resources.imagelis.bmp, no qual são inseridos bitmaps de 16 x 16 usadas de Resources\imagelis.bmp. Esta lista de bitmap é disponibilizada para `SimpleProjectNode` como ImageHandler.ImageList. `SimpleProjectNode`anexa o bitmap de nó do projeto na lista. O deslocamento do bitmap de nó do projeto na lista de imagens é armazenado em cache para uso posterior, como o valor do público `ImageIndex` propriedade. Visual Studio usa essa propriedade para determinar quais bitmap a ser exibido como o ícone de nó do projeto.  
+ Durante a construção da instância, o `ProjectNode` classe base carrega Resources.imagelis.bmp, no qual são inseridos bitmaps de 16 x 16 usadas de Resources\imagelis.bmp. Esta lista de bitmap é disponibilizada para `SimpleProjectNode` como ImageHandler.ImageList. `SimpleProjectNode` anexa o bitmap de nó do projeto na lista. O deslocamento do bitmap de nó do projeto na lista de imagens é armazenado em cache para uso posterior, como o valor do público `ImageIndex` propriedade. Visual Studio usa essa propriedade para determinar quais bitmap a ser exibido como o ícone de nó do projeto.  
   
 ## <a name="testing-the-custom-project-node-icon"></a>Teste o ícone do nó de projeto personalizados  
  Teste sua fábrica de projeto para ver se ele cria uma hierarquia de projeto que tem o ícone do nó de projeto personalizados.  
@@ -619,9 +609,9 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
   
 3.  Examine os valores para o `nameSpace` e `className` parâmetros.  
   
-    -   `nameSpace`recebe o valor de \<RootNamespace > elemento no arquivo de modelo de projeto \Templates\Projects\SimpleProject\SimpleProject.myproj. Nesse caso, o valor é "MyRootNamespace".  
+    -   `nameSpace` recebe o valor de \<RootNamespace > elemento no arquivo de modelo de projeto \Templates\Projects\SimpleProject\SimpleProject.myproj. Nesse caso, o valor é "MyRootNamespace".  
   
-    -   `className`recebe o valor do nome de arquivo de fonte da classe, sem a extensão de nome de arquivo. Nesse caso, o primeiro arquivo a ser copiado para a pasta de destino é AssemblyInfo.cs; Portanto, o valor do nome da classe é "AssemblyInfo".  
+    -   `className` recebe o valor do nome de arquivo de fonte da classe, sem a extensão de nome de arquivo. Nesse caso, o primeiro arquivo a ser copiado para a pasta de destino é AssemblyInfo.cs; Portanto, o valor do nome da classe é "AssemblyInfo".  
   
 4.  Remova o ponto de interrupção e pressione F5 para continuar a execução.  
   

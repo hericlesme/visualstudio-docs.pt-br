@@ -1,32 +1,35 @@
 ---
 title: "Depuração ASP.NET - Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- aspnet
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Depurar ASP.NET com o depurador do Visual Studio
 
-O depurador do Visual Studio fornece muitos recursos poderosos para ajudá-lo a depurar seus aplicativos. Este tópico fornece uma maneira rápida de aprender alguns dos recursos básicos.
+O depurador do Visual Studio fornece muitos recursos poderosos para ajudá-lo a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto 
 
-1. No Visual Studio, escolha **arquivo > Novo projeto**.
+1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
 1. Em **Visual C#**, escolha **Web**e, em seguida, no painel central, escolha **aplicativo Web do ASP.NET Core**.
 
@@ -93,17 +96,17 @@ Um *ponto de interrupção* é um marcador que indica onde o Visual Studio deve 
     > [!TIP]
     > Se você tiver um ponto de interrupção em um loop ou recursão, ou se você tiver muitos pontos de interrupção que você frequentemente percorrer, use um [ponto de interrupção condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para certificar-se de que seu código está suspenso somente quando condições específicas forem atendidas. Isso economiza tempo e pode também facilitam a depurar problemas difíceis de reproduzir.
 
-## <a name="navigate-code"></a>Navegar pelo código
+## <a name="navigate-code"></a>Navegue pelos códigos
 
-Há diferentes comandos para instruir o depurador para continuar. Mostraremos um comando de navegação de código útil que há de novo no Visual Studio de 2017.
+Há diferentes comandos para instruir o depurador para continuar. Vamos mostrar um comando de navegação de código útil que há de novo no Visual Studio de 2017.
 
-- Enquanto está em pausa no ponto de interrupção, passe o mouse sobre a instrução `return c2` até que o verde **execução clique** botão ![executar em, clique em](../debugger/media/dbg-tour-run-to-click.png) aparece e, em seguida, pressione a **execução clique** botão.
+Enquanto está em pausa no ponto de interrupção, passe o mouse sobre a instrução `return c2` até que o verde **execução clique** botão ![executar em, clique em](../debugger/media/dbg-tour-run-to-click.png) aparece e, em seguida, pressione a **execução clique** botão.
 
-    ![Executar, clique em](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![Executar, clique em](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    O aplicativo continua a execução e pausa na linha de código em que você clicou no botão.
+O aplicativo continua a execução e pausa na linha de código em que você clicou no botão.
 
-    Comandos comuns do teclado usados para percorrer o código incluem **F10** e **F11**. Para obter mais instruções detalhadas, consulte o [guia do Iniciante](../debugger/getting-started-with-the-debugger.md).
+Comandos comuns do teclado usados para percorrer o código incluem **F10** e **F11**. Para obter mais instruções detalhadas, consulte o [guia do Iniciante](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspecionar variáveis em um datatip
 
@@ -133,9 +136,7 @@ Para obter mais informações sobre como usar Editar e continuar e limitações 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Para saber mais sobre o depurador, consulte [iniciar o depurador e navegar pelo código](../debugger/getting-started-with-the-debugger.md).
-- Para obter mais informações sobre pontos de interrupção, consulte [usando pontos de interrupção](../debugger/using-breakpoints.md).
+Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Você talvez queira obter uma visão de alto nível de recursos do depurador junto com links para mais informações.
 
-## <a name="see-also"></a>Consulte também  
- [Depurando no Visual Studio](../debugger/index.md)  
- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
