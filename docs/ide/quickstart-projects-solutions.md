@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Início rápido: Projetos e soluções
 
@@ -185,10 +185,10 @@ Parabéns por concluir este guia de início rápido! Logo depois, talvez você q
 
 ## <a name="see-also"></a>Consulte também
 
-[Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Início rápido: Personalizar o Editor e o IDE do Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Início rápido: Codificação no editor](../ide/quickstart-editor.md)  
-[Gerenciando propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)  
-[Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)  
-[Desenvolver código no Visual Studio sem projetos ou soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)
+- [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Início rápido: Personalizar o Editor e o IDE do Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Início rápido: Codificação no editor](../ide/quickstart-editor.md)
+- [Gerenciando propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)
+- [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)
+- [Desenvolver código no Visual Studio sem projetos ou soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)

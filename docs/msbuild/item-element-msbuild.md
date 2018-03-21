@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contém um item definido pelo usuário e seus metadados. Cada item usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve ser especificado como o filho de um elemento `ItemGroup`.  
@@ -75,7 +75,7 @@ No entanto, é possível passar os metadados `Version` como um atributo, como na
 
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Include`|Atributo obrigatório.<br /><br /> O arquivo ou curinga a ser incluído na lista de itens.|  
+|`Include`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser incluído na lista de itens.|  
 |`Exclude`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser excluído da lista de itens.|  
 |`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
 |`Remove`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser removido da lista de itens.<br /><br />|  
