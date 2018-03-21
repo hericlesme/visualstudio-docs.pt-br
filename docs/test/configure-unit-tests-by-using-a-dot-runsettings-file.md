@@ -8,15 +8,15 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c0808635d0cd471f0fdaeb00e970ffde94a279c6
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um *.runsettings*
 
-Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.runsettings*. Por exemplo, é possível alterar a versão do .NET Framework em que os testes são executados, o diretório para onde os resultados do teste são enviados ou os dados coletados durante execução de um teste.
+Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.runsettings*. Por exemplo, é possível alterar a versão do .NET Framework em que os testes são executados, o diretório para os resultados do teste ou os dados coletados durante execução de um teste.
 
 > [!NOTE]
 > O nome do arquivo não importa, desde que você use a extensão '.runsettings'.
@@ -57,6 +57,10 @@ Veja a seguir um arquivo *.runsettings* típico. Cada elemento do arquivo é opc
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
+  
+     <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
+     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -129,6 +133,7 @@ As seções a seguir detalham os elementos de um arquivo *.runsettings*.
 |`TreatTestAdapterErrorsAsWarnings`|false|false, true|
 |`TestAdaptersPaths`||Um ou vários caminhos para o diretório em que os TestAdapters estão localizados|
 |`MaxCpuCount`|1|Essa configuração controla o grau de execução de teste paralela ao executar testes de unidade usando os núcleos disponíveis no computador. O mecanismo de execução de testes inicia como um processo distinto em cada núcleo disponível e fornece um contêiner para cada núcleo com testes a serem executados. Um contêiner pode ser um assembly, uma DLL ou um artefato relevante. O contêiner do teste está agendando a unidade. Em cada contêiner, os testes são executados de acordo com a estrutura de teste. Se houver muitos contêineres, à medida que os processos terminarem de executar os testes em um contêiner, eles passarão para o próximo contêiner disponível.<br /><br /> MaxCpuCount pode ser:<br /><br /> n,em que 1 <= n <= número de núcleos: até n processos serão iniciados<br /><br /> n, em que n = qualquer outro valor: o número de processos iniciados será até a quantidade de núcleos disponíveis no computador|
+|`TestSessionTimeout`||Permite que os usuários finalizem uma sessão de teste quando ele exceder o tempo limite determinado. Definir um tempo limite assegura que os recursos serão restritos e as sessões de teste serão restritas a um período de tempo. Essa configuração está disponível no **Visual Studio 2017 versão 15.5** e posterior.
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de dados de diagnóstico (coletores de dados)
 
@@ -140,7 +145,7 @@ O coletor de dados de cobertura de código cria um log das partes do código do 
 
 #### <a name="video-data-collector"></a>Coletor de dados de vídeo
 
-O coletor de dados de vídeo captura uma gravação de tela quando os testes são executados. A gravação é útil para solucionar problemas de testes de interface do usuário. O coletor de dados de vídeo está disponível no **Visual Studio 2017 versão 15.5** e superior.
+O coletor de dados de vídeo captura uma gravação de tela quando os testes são executados. A gravação é útil para solucionar problemas de testes de interface do usuário. O coletor de dados de vídeo está disponível no **Visual Studio 2017 versão 15.5** e posterior.
 
 Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, você deve usar um arquivo de configurações de teste. Para obter mais informações, consulte [Especificando configurações de teste do Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
 

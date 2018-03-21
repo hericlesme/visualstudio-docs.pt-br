@@ -2,7 +2,7 @@
 title: "Referência à janela Ambientes do Python - Visual Studio | Microsoft Docs"
 description: Detalhes sobre cada uma das guias que aparecem na janela Ambientes de Python no Visual Studio.
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92d5014c257cf35e556eca1928e1c5612f4913eb
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 13d84eb160b4ba82d4a03d48fe814cb0d92388b0
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -44,7 +44,7 @@ Fornece informações básicas e comandos para o ambiente:
 | Tornar este ambiente padrão para novos projetos | Definir o ambiente ativo, o que pode fazer com que o Visual Studio pare de responder brevemente enquanto ele carrega o banco de dados do IntelliSense. Ambientes com muitos pacotes podem parar de responder por um período maior. |
 | Visitar o site do distribuidor | Abre um navegador para a URL fornecida para a distribuição de Python. Python 3. x, por exemplo, vai para python.org. |
 | Abrir a janela interativa | Abre a [janela interativa (REPL)](python-interactive-repl-in-visual-studio.md) para esse ambiente dentro do Visual Studio, aplicando quaisquer [scripts de inicialização (veja abaixo)](#startup-scripts). |
-| Explorar scripts interativos | Confira [Scripts de inicialização](#startup-scripts). |
+| Explorar scripts interativos | Veja os [scripts de inicialização](#startup-scripts). |
 | Usar o modo interativo do IPython | Quando definido, abre a janela interativa com IPython por padrão. Isso habilita os gráficos embutidos e a sintaxe estendida do IPython como `name?` para exibir a ajuda e `!command` para comandos shell. Essa opção é recomendada quando estiver usando uma distribuição Anaconda, pois ela requer pacotes extras. Para obter mais informações, consulte [Usando o IPython na Janela Interativa](interactive-repl-ipython.md). |
 | Abrir no PowerShell | Inicia o interpretador em uma janela de comando do PowerShell. |
 | (Links de pasta e do programa) | Fornecem acesso rápido à pasta de instalação do ambiente, o interpretador python.exe e o interpretador pythonw.exe. O primeiro abre no Windows Explorer, os dois últimos abrem uma janela do console. |
@@ -55,7 +55,7 @@ Como você janelas interativas no fluxo de trabalho diário, provavelmente desen
 
 Os scripts de inicialização contêm o código que a janela interativa carrega e executa automaticamente, incluindo importações, definições de função e literalmente qualquer outra coisa. Esses scripts são referenciados de duas maneiras:
 
-1. Quando você instala um ambiente, o Visual Studio cria uma pasta `Documents\Visual Studio 2017\Python Scripts\<environment>` em que &lt;environment&gt' corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela interativa para esse ambiente, ela carrega e executa qualquer arquivo `.py` que for encontrado aqui em ordem alfabética.
+1. Quando você instala um ambiente, o Visual Studio cria uma pasta `Documents\Visual Studio 2017\Python Scripts\<environment>` em que &lt;environment&gt; corresponde ao nome do ambiente. Você pode navegar facilmente para a pasta específica do ambiente com o comando **Explorar scripts interativos**. Quando você inicia a janela interativa para esse ambiente, ela carrega e executa qualquer arquivo `.py` que for encontrado aqui em ordem alfabética.
 
 1. O controle **Scripts** na guia **Ferramentas > Opções > Ferramentas do Python > Janelas Interativas** (consulte [Opções de janelas interativas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) destina-se a especificar uma pasta adicional para os scripts de inicialização que estão carregados e são executados em todos os ambientes. No entanto, esse recurso não funciona no momento.
 
@@ -80,9 +80,17 @@ Se estiver disponível, conterá detalhes, conforme descrito na tabela abaixo. S
 
 *Também chamada de "pip" em versões anteriores.*
 
-Gerencia os pacotes instalados no ambiente, permitindo também pesquisar e instalar novos (incluindo as dependências). A pesquisa filtra seus pacotes instalados no momento e [PyPI](https://pypi.python.org). Também é possível inserir diretamente qualquer comando `pip install` na caixa de pesquisa, incluindo sinalizadores como `--user` ou `--no-deps`.
+Gerencia os pacotes instalados no ambiente, permitindo também pesquisar e instalar novos (incluindo as dependências).
 
-![Guia de pacotes de ambientes do Python](media/environments-pip-tab.png)
+Os pacotes que já estão instalados são exibidos com controles para atualizar (uma seta para cima) e desinstalar (X em um círculo) o pacote:
+
+![Guia de pacotes de ambientes do Python](media/environments-pip-tab-controls.png)
+
+Inserir um termo de pesquisa filtra a lista de pacotes instalados, bem como os pacotes que podem ser instalados do PyPI.
+
+![Guia de pacotes de ambientes do Python com uma pesquisa em "num"](media/environments-pip-tab.png)
+
+Também é possível inserir diretamente qualquer comando `pip install` na caixa de pesquisa, incluindo sinalizadores como `--user` ou `--no-deps`.
 
 Instalar um pacote cria subpastas dentro da pasta `Lib` do ambiente no sistema de arquivos. Por exemplo, se você tiver Python 3.6 instalados em `c:\Python36`, os pacotes são instalados em `c:\Python36\Lib`, se você tiver o Anaconda3 instalado em `c:\Program Files\Anaconda3`, os pacotes serão instalados em `c:\Program Files\Anaconda3\Lib`.
 
@@ -102,7 +110,9 @@ Mostra o status atual do banco de dados de preenchimento do IntelliSense:
 
 ![Guia IntelliSense de Ambientes do Python](media/environments-intellisense-tab.png)
 
-O banco de dados contém metadados para todas as bibliotecas do ambiente, melhora a velocidade do IntelliSense e reduz o uso de memória. Quando o Visual Studio detecta um novo ambiente (ou você adiciona um), ele começa a compilar o banco de dados automaticamente, analisando os arquivos de origem da biblioteca. Esse processo pode levar de um minuto a uma hora ou mais, dependendo do que está instalado. (O Anaconda, por exemplo, é fornecido com várias bibliotecas e leva algum tempo para compilar o banco de dados.) Depois de concluído, você obtém um IntelliSense detalhado não precisa atualizar o banco de dados novamente (com o botão **Atualizar Banco de Dados**) quando instalar mais bibliotecas.
+No **Visual Studio 2017 versão 15.5** e anteriores, as conclusões do IntelliSense dependem de um banco de dados que é compilado para essa biblioteca. A criação do banco de dados é feita em segundo plano quando uma biblioteca é instalada, mas pode levar algum tempo e não pode ser concluída quando você começa a escrever código. O **Visual Studio 2017 versão 15.6** e posterior usa um método mais rápido para fornecer conclusões que não dependem do banco de dados a menos que você escolha especificamente habilitá-lo.
+
+Quando o Visual Studio detecta um novo ambiente (ou você adiciona um), ele começa a compilar o banco de dados automaticamente, analisando os arquivos de origem da biblioteca. Esse processo pode levar de um minuto a uma hora ou mais, dependendo do que está instalado. (O Anaconda, por exemplo, é fornecido com várias bibliotecas e leva algum tempo para compilar o banco de dados.) Depois de concluído, você obtém um IntelliSense detalhado não precisa atualizar o banco de dados novamente (com o botão **Atualizar Banco de Dados**) quando instalar mais bibliotecas.
 
 As bibliotecas para as quais os dados não foram compilados serão marcadas com um **!**; se o banco de dados de um ambiente não estiver concluído, um **!** também é exibido ao lado da lista do ambiente principal.
 
@@ -110,5 +120,5 @@ As bibliotecas para as quais os dados não foram compilados serão marcadas com 
 
 - [Gerenciando ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
-- [Usando requirements.txt para dependências](managing-required-packages-with-requirements-txt.md) 
+- [Usando requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Caminhos de pesquisa](search-paths.md)

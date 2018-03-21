@@ -1,26 +1,26 @@
 ---
 title: Atalhos de teclado do Visual Studio | Microsoft Docs
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Dicas de teclado para o Visual Studio
 
-Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de teclado neste tópico. Este tópico é apenas um subconjunto dos atalhos de teclado disponíveis. Para obter uma lista mais completa, consulte [Atalhos de teclado padrão no Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre como otimizar a acessibilidade do Visual Studio, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md).
+Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de teclado neste artigo.
+
+Os atalhos listados aqui são apenas um subconjunto dos atalhos de teclado disponíveis. Para obter uma lista mais completa, consulte [Atalhos de teclado padrão no Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+Para obter informações sobre como otimizar a acessibilidade do Visual Studio, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md).
 
 ## <a name="window-management"></a>Gerenciamento de janelas
 
@@ -83,7 +83,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 |Zoom de editor|Ctrl+Shift+> (entrada), Ctrl+Shift+< (saída)||
 |Bloquear seleção|Mantenha a tecla ALT pressionada e arraste o mouse, Shift+Alt+Teclas de Seta||
 |Mover uma Linha para Cima/para Baixo|Alt+Seta para cima / Alt+Seta para baixo||
-|Duplicar linha|Ctrl+E,V|Visual Studio 2017 versão 15.6 versão prévia 2|
+|Duplicar linha|Ctrl+E,V|Visual Studio 2017 versão 15.6|
 |Expandir seleção|**Shift**+**Alt**+**=**|Visual Studio 2017 versão 15.5|
 |Seleção de contrato|**Shift**+**Alt**+**-**|Visual Studio 2017 versão 15.5|
 |Ir para definição|F12||

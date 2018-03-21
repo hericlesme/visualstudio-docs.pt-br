@@ -6,36 +6,36 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: f52e60c0ade8cebc78b3408b4ef81ef85fcd767b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: af5c66d8bd2b9fd16f7a0e7d5d9796ada1ede022
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="source-editor"></a>Editor de código-fonte
 
 Um editor de código-fonte confiável é essencial para escrever código eficiente sucintamente. O Visual Studio para Mac fornece um editor de código-fonte sofisticados que centraliza suas interações com o IDE. O editor de código-fonte fornece os recursos que você pode esperar e precisa para realizar seu trabalho com facilidade: desde itens básicos como realce de sintaxe, trechos de código e dobramento de código, até os benefícios da sua integração com o compilador Roslyn, como preenchimento de código do IntelliSense totalmente funcional.
 
-O editor de código-fonte no Visual Studio para Mac proporciona uma experiência perfeita com todas as outras funcionalidades fornecidas pelo IDE, como depuração, refatoração e integração de controle de versão.
+O editor de código-fonte no Visual Studio para Mac proporciona uma experiência perfeita com todas as outras funcionalidades no IDE, como depuração, refatoração e integração de controle de versão.
 
-Este tópico apresenta alguns dos principais recursos do editor de código-fonte e explora como você pode usar o Visual Studio para Mac para ser o mais produtivo possível.
+Este artigo apresenta alguns dos principais recursos do editor de código-fonte e explora como você pode usar o Visual Studio para Mac para ser o mais produtivo possível.
 
 ## <a name="the-source-editor-experience"></a>A experiência do Editor de código-fonte
 
 Exibir e mover com eficiência por todo o código faz parte integral do fluxo de trabalho de desenvolvimento. A maneira específica de como você decide exibir e manter o código é uma decisão pessoal, que varia entre os desenvolvedores e geralmente entre projetos.
 
-O Visual Studio para Mac oferece muitos recursos poderosos para tornar o desenvolvimento de plataforma cruzada tão acessível e o mais útil possível. As seções a seguir descrevem alguns dos destaques.
+O Visual Studio para Mac oferece muitos recursos poderosos para tornar o desenvolvimento de plataforma cruzada tão acessível e o mais útil possível. As seções abaixo descrevem alguns dos destaques.
 
 
-### <a name="code-folding"></a>Dobramento de código
+## <a name="code-folding"></a>Dobramento de código
 
-O dobramento de código facilita a tarefa de gerenciar arquivos de código-fonte grandes permitindo aos desenvolvedores mostrar ou ocultar seções completas do código, tal como o uso de diretivas, código clichê, comentários e instruções de #region. Isso é desativado por padrão no Visual Studio para Mac
+O dobramento de código facilita a tarefa de gerenciar arquivos de código-fonte grandes permitindo aos desenvolvedores mostrar ou ocultar seções completas do código, tal como o uso de diretivas, código clichê, comentários e instruções de #region. O dobramento de código é desativado por padrão no Visual Studio para Mac
 
 Para habilitar o dobramento de código, navegue para **Visual Studio > Preferências... > Editor de texto > Geral > Dobramento de código**:
 
 ![Opções de dobramento de código](media/source-editor-image1.png)
 
-Além de fornecer a opção para habilitar o dobramento de código, esse menu também inclui a opção de dobra #regions e comentários por padrão, exibindo uma dica nomeada, em vez de código.
+Esse menu também inclui a opção de dobra #regions e comentários por padrão, exibindo uma dica nomeada, em vez de código.
 
 Para mostrar ou ocultar seções, use o widget de divulgação de informações ao lado de número de linha:
 
@@ -47,11 +47,11 @@ Você também pode alternar entre mostrar e ocultar as dobras usando o item de m
 
 Este item de menu também pode ser usado para habilitar ou desabilitar o dobramento de código.
 
-### <a name="white-space"></a>Espaço em branco
+## <a name="white-space"></a>Espaço em branco
 
-Pode ser necessário que você seja capaz de exibir caracteres invisíveis no código-fonte. É uma maneira visível de garantir que você está atendendo aos padrões de codificação e não desperdiçando espaço desnecessariamente. Isso também é muito útil ao escrever em F#, que depende de linhas recuadas com precisão para avaliar o código.
+Pode ser necessário que você exiba caracteres invisíveis no código-fonte. É uma maneira visível de garantir que você esteja atendendo aos padrões de codificação e não desperdiçando espaço desnecessariamente. Isso também é útil ao escrever em F#, que depende de linhas recuadas com precisão para avaliar o código.
 
-Defina as opções para mostrar o espaço em branco navegando para **Visual Studio > Preferências > Editor de texto > Marcadores e Réguas**, conforme ilustrado abaixo. Selecionar essa opção permite definir _quando_ os caracteres invisíveis serão exibidos: Nunca, Na seleção ou Sempre:
+Defina as opções para mostrar o espaço em branco navegando para **Visual Studio > Preferências > Editor de texto > Marcadores e Réguas**. Selecionar essa opção permite definir _quando_ os caracteres invisíveis serão exibidos: Nunca, Na seleção ou Sempre:
 
  ![Mostrar opções de caracteres invisíveis](media/source-editor-image3.png)
 
@@ -59,23 +59,23 @@ A opção para mostrar guias, espaços e terminações de linha também está di
 
  ![Mostrar guias e espaços](media/source-editor-image4.png)
 
- Caracteres invisíveis são exibidos como pontos cinza, conforme ilustrado abaixo:
+ Caracteres invisíveis são exibidos como pontos cinza, conforme ilustrado na imagem abaixo:
 
  ![espaço em branco exibido](media/source-editor-image22.png)
 
 
-### <a name="ruler"></a>Régua
+## <a name="ruler"></a>Régua
 
-Mostrar a régua de coluna é útil para determinar os comprimentos de linhas, especialmente ao trabalhar em uma equipe com diretrizes de comprimento de linha. A régua de coluna pode ser ativada ou desativado navegando para **Visual Studio > Preferências... > Editor de texto > Marcadores e Réguas** e marcando (ou desmarcando) **Mostrar régua de coluna**, conforme ilustrado abaixo:
+A régua de coluna é útil para determinar os comprimentos de linhas, especialmente ao trabalhar em uma equipe com diretrizes de comprimento de linha. A régua de coluna pode ser ativada ou desativado navegando para **Visual Studio > Preferências... > Editor de texto > Marcadores e Réguas** e marcando (ou desmarcando) **Mostrar régua de coluna**, conforme ilustrado na imagem abaixo:
 
  ![](media/source-editor-image5.png)
 
  Ela é exibida como uma linha cinza clara vertical no editor de código-fonte.
 
 
-### <a name="highlight-identifier-references"></a>Realçar as referências do identificador
+## <a name="highlight-identifier-references"></a>Realçar as referências do identificador
 
-Quando essa opção é ativada, um desenvolvedor pode colocar o cursor do mouse em qualquer símbolo no código-fonte e o editor de código-fonte fornecerá um guia visual para todas as outras referências nesse arquivo. Isso é ativado navegando para **Visual Studio > Preferências... > Editor de texto > Marcadores e Réguas** e selecionando _Realçar as referências do identificador_, conforme ilustrado abaixo:
+Com a opção "Realçar as referências do identificador" ativada, você pode selecionar qualquer símbolo no código-fonte e o editor de código-fonte fornecerá um guia visual para todas as outras referências nesse arquivo. Para ativar essa opção, vá até **Visual Studio > Preferências... > Editor de Texto > Marcadores e Réguas** e selecione _Realçar as referências do identificador_, conforme ilustrado na imagem abaixo:
 
 ![](media/source-editor-image6.png)
 

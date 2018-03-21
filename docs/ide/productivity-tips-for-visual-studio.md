@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8e91411539f1e511b04fd455b8ee775fa7abccc2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -28,7 +28,7 @@ Para saber mais sobre os atalhos de teclado comuns, confira [Dicas de teclado](.
 
 Escreva código mais rapidamente usando os seguintes recursos.
 
-- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, no **Visual Studio 2017 versão 15.6 versão prévia 2** e posterior, você pode escolher um comando para duplicar facilmente uma linha de código sem a necessidade de copiá-lo, reposicionar o cursor e, depois, colá-lo. Escolha **Editar** > **Duplicar** ou pressione **Ctrl**+**E**,**V**. Você também pode expandir ou recolher uma seleção de texto escolhendo **Editar** > **Avançado** > **Expandir Seleção** ou **Editar** > **Avançado** > **Reduzir Seleção** ou pressionando **Shift**+**Alt**+**=** ou **Shift**+**Alt**+**-** (disponível no **Visual Studio 2017 versão 15.5** e posterior).
+- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, no **Visual Studio 2017 versão 15.6** e posterior, você pode escolher um comando para duplicar facilmente uma linha de código sem a necessidade de copiá-lo, reposicionar o cursor e, depois, colá-lo. Escolha **Editar** > **Duplicar** ou pressione **Ctrl**+**E**,**V**. Você também pode expandir ou recolher uma seleção de texto escolhendo **Editar** > **Avançado** > **Expandir Seleção** ou **Editar** > **Avançado** > **Reduzir Seleção** ou pressionando **Shift**+**Alt**+**=** ou **Shift**+**Alt**+**-** (disponível no **Visual Studio 2017 versão 15.5** e posterior).
 
 - **Use o IntelliSense**. À medida que você inserir código no editor, informações do IntelliSense, como Membros da Lista, Informações do Parâmetro, Informações Rápidas, Ajuda de Assinatura e Completar Palavras, serão exibidas. Esses recursos dão suporte à correspondência difusa de texto; por exemplo, as listas de resultados para Membros da Lista incluem não só entradas que começam com os caracteres que você inseriu, como também entradas que contêm a combinação de caracteres em qualquer lugar de seus nomes. Para obter mais informações, veja [Usando o IntelliSense](../ide/using-intellisense.md).
 

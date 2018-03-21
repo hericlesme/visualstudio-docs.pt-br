@@ -2,7 +2,7 @@
 title: Como gerenciar ambientes Python e interpretadores no Visual Studio | Microsoft Docs
 description: Como usar a janela Ambientes do Python no Visual Studio para gerenciar ambientes globais e virtuais, configurar ambientes personalizados, instalar interpretadores Python, instalar pacotes, configurar caminhos de pesquisa e gerenciar ambientes para projetos do Visual Studio.
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 570ce6beccf14c9f04fcd3e21b86a8d00a3d607f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Gerenciando ambientes do Python no Visual Studio
 
@@ -70,9 +70,9 @@ Em ambos os casos, a janela **Ambientes do Python** é exibida como uma guia irm
 
 A imagem acima mostra que o Visual Studio detectou duas instalações do Python 3.6 (32 bits) junto com o Anaconda 5.0.0.
 
-O ambiente padrão em negrito é o Python 3.6 (nesse caso, parte de uma instalação do Anaconda), que usa o Visual Studio para quaisquer projetos novos. Os comandos na parte inferior da janela se aplicam ao interpretador do Python 3.6 selecionado, que, como você pode ver, é a instalação específica no `C:\Python36-32`. Se você não vir um ambiente esperado, confira [Identificar manualmente um intérprete existente](#manually-identifying-an-existing-interpreter).
+O ambiente padrão em negrito é o Python 3.6 (nesse caso, parte de uma instalação do Anaconda), que usa o Visual Studio para quaisquer projetos novos. Os comandos na parte inferior da janela se aplicam ao interpretador do Python 3.6 selecionado, que, como você pode ver, é a instalação específica no `C:\Python36-32`. Se você não vir um ambiente esperado, confira [Identificar manualmente um ambiente existente](#manually-identifying-an-existing-environment).
 
-À direita de cada ambiente listado está um controle que abre uma janela interativa para esse ambiente. Pode aparecer outro controle que atualiza o banco de dados IntelliSense para esse ambiente.
+À direita de cada ambiente listado está um controle que abre uma janela interativa para esse ambiente. Outro controle pode parecer que atualiza o banco de dados do IntelliSense para esse ambiente (veja [Referência da janela de ambientes](python-environments-window-tab-reference.md#intellisense-tab) para obter detalhes sobre o banco de dados).
 
 Abaixo da lista de ambientes há um seletor de lista suspensa para as opções **Visão geral**, **Pacotes** e **IntelliSense** descritas em [Referência à guia da janela Ambientes](python-environments-window-tab-reference.md). Além disso, se você expandir a janela **Ambientes do Python** até o tamanho suficiente, essas opções serão mostradas como guias, o que talvez você considere mais conveniente para trabalhar:
 

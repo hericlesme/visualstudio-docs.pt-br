@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 57a33ce473cd82fcb6fb8517d7003c8772c1d4da
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c0cd7853c65d5501213076cb7ccb533c5134c9f4
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar estruturas de teste de unidade de terceiros
 O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de teste de unidade que desenvolveu uma interface de adaptador para o Gerenciador. O programa de instalação da estrutura instala os binários e adiciona modelos de projeto do Visual Studio para os idiomas que ele dá suporte. Quando você cria um projeto com o modelo, a estrutura é registrada com o Gerenciador de Testes. Uma solução do Visual Studio pode conter projetos de teste de unidade que usam diferentes estruturas e que são direcionados em diferentes idiomas. O Gerenciador de Testes executa todos eles.  
@@ -56,7 +57,24 @@ O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de tes
   
 3.  Na lista **Categoria** (rotulada como **Mostrando**), expanda o nó **Ferramentas** e, em seguida, escolha **Teste**.  
   
-4.  Escolha uma estrutura na lista de resultados para navegar até uma página do Visual Studio Marketplace da ferramenta.  
-  
-## <a name="see-also"></a>Consulte também  
- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+4.  Escolha uma estrutura na lista de resultados para navegar até uma página do Visual Studio Marketplace da ferramenta. 
+
+## <a name="update-to-the-latest-test-adapters"></a>Atualizar para os adaptadores de teste mais recentes
+
+Atualização para o adaptador de teste estável mais recente para aproveitar melhor a detecção e a execução de teste. Para saber mais sobre atualizações para adaptadores de teste MSTest, NUnit e xUnit, veja o [blog do Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Para atualizar para a versão estável mais recente do adaptador de teste
+
+1. Abra o Gerenciador de Pacotes Nuget para sua solução navegando até **Ferramentas > Gerenciador de Pacotes NuGet > Gerenciar Pacotes NuGet para Solução...**
+
+2. Clique na guia **Atualizações** e procurar os adaptadores de teste NUnit ou xUnit que estão instalados.
+
+3. Selecione cada adaptador de teste e, em seguida, selecione a versão estável mais recente no menu suspenso.
+
+4. Escolha o botão **Instalar**.
+
+![Atualizar adaptador de teste](media/installadapter-upgrade.png)
+
+## <a name="see-also"></a>Consulte também
+
+- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)

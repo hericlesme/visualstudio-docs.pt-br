@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>Noções sobre configurações de build
 
 ## <a name="project-build-configurations"></a>Configurações de build do projeto 
 
-Projetos podem ter várias configurações e alternar entre elas permite produzir resultados diferentes no tempo de build. Por exemplo, ao usar uma Configuração de depuração, a saída incluirá símbolos de depuração, permitindo que o depurador resolva nomes de funções, parâmetros ou variáveis do rastreamento de pilha do aplicativo com falha. Usar uma configuração de depuração, no entanto, leva a um tamanho do arquivo inflado e isso não seria ideal para um aplicativo destinado à distribuição.
+Os projetos costumam ter várias configurações e alternar entre elas permite produzir resultados diferentes no tempo de build. Por exemplo, uma Configuração de depuração gerará a saída de símbolos de depuração, permitindo que o depurador resolva nomes de funções, parâmetros ou variáveis do rastreamento de pilha do aplicativo com falha. Embora essas informações adicionais sejam úteis durante o desenvolvimento, elas levarão a um tamanho de arquivo inflado e não é ideal para distribuição.
 
-Cada plataforma terá configurações específicas para seu build. O desenvolvimento do Xamarin.Android sempre terá apenas uma configuração de Versão ou de Depuração. O Xamarin.iOS tem mais configurações. Projetos iOS mais recentes terão apenas configurações de depuração ou de versão, porém elas podem ser definidas para um dispositivo ou qualquer simulador instalado.
+Cada plataforma tem configurações específicas para seu build. 
 
 ## <a name="solution-configurations"></a>Configurações da solução
 
-Semelhante às configurações de projeto, as configurações da solução são usadas para criar configurações personalizadas para um projeto inteiro. Usando a guia **Mapeamentos de Configuração** no item **Build > Configurações**, você pode atribuir uma configuração de destino para cada item da solução, conforme ilustrado abaixo:
+Semelhante às configurações de projeto, as configurações da solução são usadas para criar configurações personalizadas para um projeto inteiro. Usando a guia **Mapeamentos de Configuração** no item **Build > Configurações**, você pode atribuir uma configuração de destino para cada item da solução, conforme a imagem abaixo:
 
 
  ![Opções de mapeamento de configuração](media/projects-and-solutions-image3.png)
 
-Para obter mais informações, consulte o vídeo do [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) de James Montemagno.
+Para saber mais sobre configurações, veja o vídeo do [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) de James Montemagno.
 
 ## <a name="run-configuration"></a>Configuração de execução
 

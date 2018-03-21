@@ -2,7 +2,7 @@
 title: "Editando o código do Python no Visual Studio | Microsoft Docs"
 description: "A edição de Python no Visual Studio fornece recursos de IntelliSense, trechos de código e navegação, juntamente com formatação, lint e refatoração."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>Editando o código do Python
 
@@ -39,7 +39,11 @@ Também é possível usar o Pesquisador de Objetos do Visual Studio (**Exibir > 
 
 ## <a name="intellisense"></a>IntelliSense
 
-O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). Para melhorar o desempenho, o IntelliSense depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do Gerenciador de Soluções) da guia **IntelliSense** (veja [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md#intellisense-tab)).
+O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring).
+
+Para melhorar o desempenho, o IntelliSense no **Visual Studio 2017 versão 15.5** e anteriores depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do Gerenciador de Soluções) da guia **IntelliSense** (veja [Referência à janela Ambientes](python-environments-window-tab-reference.md#intellisense-tab)).
+
+O **Visual Studio 2017 versão 15.6** e posterior usa um modo diferente para fornecer as conclusões de IntelliSense que não são dependentes do banco de dados.
 
 ### <a name="completions"></a>Preenchimentos
 
@@ -93,7 +97,7 @@ Ao escrever o código que chama uma função, a ajuda da assinatura é exibida q
 
 Focalizar o ponteiro do mouse em um identificador exibe uma dica de ferramenta Informações Rápidas. Dependendo do identificador, Informações Rápidas poderá exibir os possíveis valores ou tipos, toda a documentação disponível, tipos de retorno e localizações de definição:
 
-![Informações rápidas](media/code-editing-quick-info.png)
+![Informação Rápida](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Coloração de código
 
@@ -110,15 +114,41 @@ Para personalizar as cores, acesse **Ferramentas > Opções > Ambiente > Fontes 
 
 ## <a name="code-snippets"></a>Trechos de código
 
-Trechos de código são fragmentos de código que podem ser inseridos nos arquivos digitando um atalho e pressionando Tab ou usando os comandos **Editar > IntelliSense > Inserir Trecho de Código** **Envolver com**. Por exemplo, digitar `class` seguido pela tecla Tab gera o restante da classe. É possível digitar sobre o nome e a lista de bases, movendo entre os campos realçados com Tab e, em seguida, pressionando Enter para começar a digitar o corpo.
+Os trechos de código são fragmentos de código que podem ser inseridos nos arquivos digitando um atalho e pressionando Tab ou usando os comandos **Editar > IntelliSense > Inserir Trecho de Código** **Envolver com**, selecionando **Python** e, em seguida, selecionando o trecho desejado.
 
-![Trechos de código](media/code-editing-code-snippets.png)
+Por exemplo, `class` é um atalho para um trecho de código que insere uma definição de classe. Você vê o trecho de código aparecer na lista de conclusão automática ao digitar `class`:
 
-É possível ver os trechos de código disponíveis no Gerenciador de Trechos de Código (**Ferramentas > Gerenciador de Trechos de Código**), selecionando **Python** como a linguagem:
+![Trecho de código para o atalho de classe](media/code-editing-code-snippet-class.png)
+
+Pressionar Tab gera o restante da classe. É possível, em seguida, digitar sobre o nome e a lista de bases, movendo entre os campos realçados com Tab e, em seguida, pressionando Enter para começar a digitar o corpo.
+
+![Destaques em áreas de um trecho de código para você preencher](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>Comandos de menu
+
+Quando você usa o comando de menu **Editar > IntelliSense > Inserir Trecho de Código**, primeiro selecione "Python" e selecione um trecho de código:
+
+![Como selecionar um trecho de código por meio do comando Inserir Trecho de Código](media/code-editing-code-snippet-insert.png)
+
+O comando **Editar > IntelliSense > Envolver com** da mesma forma coloca a seleção atual no editor de texto dentro de um elemento estrutural escolhido. Por exemplo, suponha que você tivesse um trecho de código semelhante ao seguinte:
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+Selecionar esse código e escolher o comando **Envolver com** exibe uma lista de trechos de código disponíveis. Escolher `def` da lista coloca o código selecionado em uma definição de função e você pode usar a tecla Tab para navegar entre os argumentos e o nome da função realçado:
+
+![Usando o comando Envolver com para trechos de código](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>Examinar trechos de código disponíveis
+
+É possível ver os trechos de código disponíveis no Gerenciador de Trechos de Código, abertos usando o comando de menu **Ferramentas > Gerenciador de Trechos de Código** e selecionando **Python** como a linguagem:
 
 ![Gerenciador de Trechos de Código](media/code-editing-code-snippets-manager.png)
 
-Para criar seus próprios trechos de código, consulte [Passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md). 
+Para criar seus próprios trechos de código, consulte [Passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 Se você escrever um ótimo trecho de código que gostaria de compartilhar, fique à vontade para postá-lo em linhas gerais e [contar para nós](https://github.com/Microsoft/PTVS/issues). Talvez possamos incluí-lo em uma versão futura do Visual Studio.
 

@@ -2,7 +2,7 @@
 title: "Trabalhar com o Python no Visual Studio, Etapa 5 – Instalação de pacotes | Microsoft Docs"
 description: "Etapa 5 de um tutorial básico para trabalhar com Python no Visual Studio, demonstrando recursos do Visual Studio para gerenciamento de pacotes em um ambiente Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Etapa 5: instalando pacotes no ambiente do Python
 
@@ -44,19 +44,21 @@ A comunidade de desenvolvedores do Python produziu milhares de pacotes úteis qu
   ![Instalação do matplotlib no ambiente](media/environments-add-matplotlib1.png)
 
 1. Dê permissão para a elevação, se for solicitado.
- 
-1. Depois de instalar o pacote, ele aparecerá na janela Ambientes do Python. O **X** à direita do pacote serve para desinstalá-lo. 
+
+1. Depois de instalar o pacote, ele aparecerá na janela Ambientes do Python. O **X** à direita do pacote serve para desinstalá-lo.
 
   ![Conclusão da instalação do matplotlib no ambiente](media/environments-add-matplotlib2.png)
 
   A pequena barra de progresso sob o ambiente indica que o Visual Studio está compilando o banco de dados do IntelliSense para o pacote recém-instalado. A guia **IntelliSense** também mostra mais informações detalhadas. Observe que, até que o banco de dados seja concluído, os recursos do IntelliSense, como preenchimento automático e verificação de sintaxe, não estarão ativos no editor para esse pacote.
 
+  Observe que o **Visual Studio 2017 versão 15.6** e posterior usa um método diferente e mais rápido para trabalhar com o IntelliSense e exibe uma mensagem para esse efeito na guia **IntelliSense**.
+
 1. Crie um novo projeto com **Arquivo > Novo > Projeto**, selecionando o modelo de "Aplicativo do Python". No arquivo de código que é exibido, cole o código a seguir, que cria uma curva de cosseno como nas etapas anteriores do tutorial, só que plotada graficamente desta vez:
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

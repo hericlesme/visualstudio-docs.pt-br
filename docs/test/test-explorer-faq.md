@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Como funciona a classificação de resultados de teste no modo de exibição de hierarquia?
 
-  O modo de exibição de hierarquia classifica os testes em ordem alfabética e não por resultado. As outras configurações de agrupamento normalmente classificam os resultados de teste por resultado e, em seguida, em ordem alfabética. As diferentes opções de agrupamento são mostradas abaixo para comparação. Você pode fornecer comentários sobre o design [neste assunto do GitHub](https://github.com/Microsoft/vstest/issues/1425).
+  O modo de exibição de hierarquia classifica os testes em ordem alfabética e não por resultado. As outras configurações de agrupamento normalmente classificam os resultados de teste por resultado e, em seguida, em ordem alfabética. Veja o grupo diferente pelas opções na imagem a seguir para comparação. Você pode fornecer comentários sobre o design [neste assunto do GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
   ![SortingExamples](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. Na exibição de hierarquia, há ícones passados, com falha, ignorados e não executados ao lado dos agrupamentos Projeto, Namespace e Classe. O que esses ícones significam?
+
+  Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe refletem o estado dos testes nesse agrupamento. Consulte a tabela a seguir.
+
+  ![Ícones de Hierarquia do Gerenciador de Testes](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>Recursos
 

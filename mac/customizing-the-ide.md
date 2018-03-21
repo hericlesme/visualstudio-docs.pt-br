@@ -6,27 +6,27 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bbc2f70f0d6774269f481cad5571dd9b78bac2da
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-ide"></a>Personalizando o IDE
 
-O Visual Studio para Mac pode ser personalizado de várias maneiras, permitindo que os usuários desenvolvam aplicativos em um ambiente que atenda suas necessidades estéticas e de eficiência. Este tópico explora as várias formas em que o Visual Studio para Mac pode ser adaptado para atender às suas necessidades.
+O Visual Studio para Mac pode ser personalizado de várias maneiras, permitindo que os usuários desenvolvam aplicativos em um ambiente que atenda suas necessidades estéticas e de eficiência. Este artigo explora as várias formas em que o Visual Studio para Mac pode ser adaptado para atender às suas necessidades.
 
 ## <a name="dark-theme"></a>Tema escuro
 
 ![Exibição de tema escuro](media/customizing-the-ide-image7a.png)
 
-Você pode trocar os temas no Visual Studio para Mac navegando para **Visual Studio > Preferências... > Ambiente > Estilo Visual** e selecionando o tema desejado na lista suspensa **Tema da Interface do Usuário**, conforme ilustrado na captura de tela a seguir:
+Você pode trocar os temas no Visual Studio para Mac navegando para **Visual Studio > Preferências... > Ambiente > Estilo Visual** e selecionando o tema desejado na lista suspensa **Tema da Interface do Usuário**, conforme ilustrado na imagem a seguir:
 
  ![Seleção de tema escuro](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Localização
 
-O Visual Studio para Mac está traduzido em 13 idiomas, permitindo que ele fique acessível para mais desenvolvedores. Os idiomas disponíveis no momento estão listados abaixo:
+O Visual Studio para Mac está traduzido nos 13 idiomas a seguir, permitindo que ele fique acessível para mais desenvolvedores:
 
 * Chinês – China
 * Chinês – Taiwan
@@ -42,29 +42,29 @@ O Visual Studio para Mac está traduzido em 13 idiomas, permitindo que ele fique
 * Espanhol
 * Turco
 
-Para trocar os idiomas exibidos temas no Visual Studio para Mac, navegue para **Visual Studio > Preferências... > Ambiente > Estilo Visual** e selecione o idioma desejado na lista suspensa **Idioma da Interface do Usuário**, conforme ilustrado na captura de tela a seguir:
+Para trocar os idiomas exibidos temas no Visual Studio para Mac, navegue para **Visual Studio > Preferências... > Ambiente > Estilo Visual** e selecione o idioma desejado na lista suspensa **Idioma da Interface do Usuário**, conforme ilustrado na imagem a seguir:
 
 
 ![Seleção de Idioma](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Informações do autor
 
-O painel de informações do autor permite que você adicione informações relevantes sobre si mesmo como nome, endereço de email, o proprietário dos direitos autorais do seu trabalho, sua empresa e marca registrada, conforme ilustrado abaixo:
+O painel de informações do autor permite que você adicione informações relevantes sobre si mesmo como nome, endereço de email, o proprietário dos direitos autorais do seu trabalho, sua empresa e marca registrada:
 
  ![Seção Editar Informações do Autor](media/customizing-the-ide-image9a.png)
 
-Essas informações são usadas para popular os cabeçalhos de arquivo padrão, como uma licença, que podem ser adicionadas a novos arquivos criados no Visual Studio para Mac:
+Essas informações são usadas para popular os cabeçalhos de arquivo padrão, como uma licença, que podem ser adicionadas a novos arquivos:
 
  ![Opções de cabeçalho padrão](media/customizing-the-ide-image8a.png)
 
 
-Os campos **Nome** e **Email** populados serão usados para adicionar informações a qualquer confirmação feita por meio do Controle de Versão no Visual Studio para Mac. Se você não popular esses campos, o Visual Studio para Mac solicitará que você faça isso quando você tentar usar o Controle de Versão.
+Os campos **Nome** e **Email** populados serão usados em qualquer confirmação feita por meio do Controle de Versão no Visual Studio para Mac. Se você não popular esses campos, o Visual Studio para Mac solicitará que você faça isso quando você tentar usar o Controle de Versão.
 
 ## <a name="key-bindings"></a>Associações de teclas
 
 Associações de teclas permitem adaptar seu ambiente de desenvolvimento para que você possa mover-se com mais eficiência por todo o Visual Studio para Mac. Ele fornece associações de teclas familiares para muitos IDEs populares, como o Visual Studio (Windows), ReSharper, Visual Studio Code e Xcode.
 
-As associações de teclas podem ser definidas navegando para **Visual Studio > Preferências... > Ambiente > Associações de teclas**, conforme ilustrado abaixo:
+As associações de teclas podem ser definidas navegando para **Visual Studio > Preferências... > Ambiente > Associações de teclas**, conforme ilustrado na imagem abaixo:
 
  ![Definir associações de teclas](media/customizing-the-ide-image10a.png)
 
@@ -78,7 +78,7 @@ O espaço de trabalho do Visual Studio para Mac consiste em uma área de documen
 
 ### <a name="viewing-and-arranging-pads"></a>Exibindo e organizando os painéis
 
-Quando você abrir qualquer nova solução ou arquivo no Visual Studio para Mac, observe alguns *painéis* no espaço de trabalho, incluindo o Painel de Soluções, Estrutura de tópicos do documento e Erros, conforme ilustrado abaixo:
+Quando você abrir qualquer nova solução ou arquivo no Visual Studio para Mac, observe alguns *painéis* no espaço de trabalho, incluindo o Painel de Soluções, Estrutura de tópicos do documento e Erros:
 
 ![Painéis de Solução](media/customizing-the-ide-image2a.png)
 
@@ -103,7 +103,7 @@ Painéis ocultos automaticamente são encaixados nas laterais do espaço de trab
 
 Os painéis que são exibidos a qualquer momento dependem do contexto atual. Por exemplo, ao usar o designer visual, os painéis da caixa de ferramentas e da grade de propriedade são mais importantes; durante a depuração, é útil ter painéis do depurador para exibir a pilha e os locais.
 
-O estado dos painéis abertos é representado por um *layout*. Os layouts podem ser alternados manualmente por meio do menu Exibir, conforme ilustrado abaixo ou alternamos automaticamente quando você executar uma ação, como depuração ou ao abrir um Storyboard:
+O estado dos painéis abertos é representado por um *layout*. Os layouts podem ser alternados manualmente por meio do menu Exibir, conforme ilustrado na imagem a seguir ou são alternados automaticamente quando você executar uma ação, como depuração ou ao abrir um Storyboard:
 
 ![Selecionar novos Layouts](media/customizing-the-ide-image6b.png)
 
@@ -118,7 +118,7 @@ No entanto, é possível criar um novo layout usando o item de menu **Exibir > S
 
 O Visual Studio para Mac permite abrir os editores de texto lado a lado ou ter um editor como uma janela flutuante desanexada.
 
-O modo de duas colunas pode ser habilitado por meio do item de menu Exibir selecionando **Exibir > Colunas do Editor > Duas colunas** ou arrastando uma guia do editor para uma das bordas da área do editor, conforme mostrado abaixo:
+O modo de duas colunas pode ser habilitado por meio do item de menu Exibir selecionando **Exibir > Colunas do Editor > Duas colunas** ou arrastando uma guia do editor para uma das bordas da área do editor:
 
  ![Modo de duas colunas lado a lado](media/customizing-the-ide-sbs.png)
 

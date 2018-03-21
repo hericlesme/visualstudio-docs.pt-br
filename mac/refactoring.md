@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 925c928e171b76af76304074e736fd8962158564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="refactoring"></a>Refatoração
 
-Refatorar o código é uma maneira para reorganizar, reestruturar e esclarecer o código existente e garantir ainda que o comportamento geral do código não se altere.
+Refatorar o código é uma maneira para reorganizar, reestruturar e esclarecer o código existente e garantir que o comportamento geral do código não se altere.
 
-Ele produz uma base de código mais íntegra, tornando-a muito mais utilizável, saudável, legível e fácil de manter tanto para você quanto para qualquer outro desenvolvedor ou usuário que poderia consultar o código.
+Refatorar produz uma base de código mais íntegra, tornando-a mais utilizável, saudável, legível e fácil de manter tanto para você quanto para qualquer outro desenvolvedor ou usuário que poderia consultar o código.
 
-A integração do Visual Studio para Mac com o Roslyn, a plataforma de compilador .NET do software livre da Microsoft, permite realizar mais operações de refatoração, bem como dá suporte total à versão mais recente do C#.
+A integração do Visual Studio para Mac com o Roslyn, a plataforma de compilador .NET do software livre da Microsoft, permite realizar mais operações de refatoração.
 
 ## <a name="renaming"></a>Renomear 
 

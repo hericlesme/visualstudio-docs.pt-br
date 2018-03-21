@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Gerenciando o Python no Serviço de Aplicativo do Azure
 
 O [Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service/) é uma oferta de plataforma como serviço para aplicativos Web, quer eles sejam sites acessados por meio de um navegador, APIs REST usadas por seus próprios clientes ou processamento disparado por evento. O Serviço de Aplicativo dá suporte total ao uso do Python para implementar aplicativos.
 
-O suporte personalizável ao Python no Serviço de Aplicativo do Azure é fornecido como um conjunto de *extensões de site* do Serviço de Aplicativo e cada um contém uma versão específica do tempo de execução do Python. Assim, você pode instalar qualquer pacote desejado diretamente no ambiente, conforme descrito neste tópico. Ao personalizar o ambiente no próprio Serviço de Aplicativo, você não precisa manter pacotes em seus projetos de aplicativo Web ou carregá-los com o código do aplicativo.
+O suporte personalizável ao Python no Serviço de Aplicativo do Azure é fornecido como um conjunto de *extensões de site* do Serviço de Aplicativo e cada um contém uma versão específica do tempo de execução do Python. Assim, você pode instalar qualquer pacote desejado diretamente no ambiente, conforme descrito neste artigo. Ao personalizar o ambiente no próprio Serviço de Aplicativo, você não precisa manter pacotes em seus projetos de aplicativo Web ou carregá-los com o código do aplicativo.
 
 > [!Tip]
-> Embora o Serviço de Aplicativo tenha o Python 2.7 e o Python 3.4 instalados em pastas raiz no servidor por padrão, você não pode personalizar ou instalar pacotes nesses ambientes, nem deve depender da presença deles. Em vez disso, você deve confiar em uma extensão de site que você controle, conforme descrito neste tópico.
+> Embora o Serviço de Aplicativo tenha o Python 2.7 e o Python 3.4 instalados em pastas raiz no servidor por padrão, você não pode personalizar ou instalar pacotes nesses ambientes, nem deve depender da presença deles. Em vez disso, você deve confiar em uma extensão de site que você controle, conforme descrito neste artigo.
 
 > [!Important]
 > Os processos descritos aqui estão sujeitos a alterações e especialmente a aperfeiçoamento. As alterações são anunciadas no [blog Python Engineering at Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/) (Engenharia do Pyhton na Microsoft).

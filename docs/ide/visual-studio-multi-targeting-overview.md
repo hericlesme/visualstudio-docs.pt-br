@@ -1,10 +1,11 @@
 ---
 title: Direcionamento para .NET Framework no Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multiplataforma no Visual Studio
 
@@ -48,7 +50,7 @@ A definição de destino da estrutura inclui os seguintes recursos:
 
 Ao trabalhar em um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o Visual Studio altera dinamicamente o ambiente de desenvolvimento, da seguinte maneira:
 
-- Ele filtra os itens das caixas de diálogo **Novo Projeto**, **Adicionar Novo Item**, **Adicionar Nova Referência** e **Adicionar Referência de Serviço** para omitir as opções que não estão disponíveis na versão de destino.
+- Ele filtra os itens das caixas de diálogo **Adicionar Novo Item**, **Adicionar Nova Referência** e **Adicionar Referência de Serviço** para omitir as opções que não estão disponíveis na versão de destino.
 
 - Ele filtra os controles personalizados da **Caixa de ferramentas** para remover aqueles que não estão disponíveis na versão de destino e mostrar somente os controles mais atualizados quando vários controles estão disponíveis.
 
@@ -65,7 +67,11 @@ Ao trabalhar em um projeto que tem como destino uma versão anterior do [!INCLUD
 
 ## <a name="selecting-a-target-framework-version"></a>Selecionando uma versão de estrutura de destino
 
-Ao criar um projeto, selecione a versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino na caixa de diálogo **Novo Projeto**. A lista de modelos de projeto disponíveis é filtrada com base na seleção. Em um projeto existente, é possível alterar a versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Ao criar um projeto, selecione a versão do .NET Framework de destino na caixa de diálogo **Novo Projeto**. A lista de estruturas disponíveis inclui as versões da estrutura instalada que são aplicáveis para o tipo de modelo selecionado. Para os tipos de modelo que não exigem o .NET Framework, por exemplo modelos do .NET Core, a lista suspensa **Estrutura** está oculta.
+
+![A lista suspensa Estrutura na caixa de diálogo Novo Projeto](media/vside-newproject-framework.png)
+
+Em um projeto existente, é possível alterar a versão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Resolvendo referências de assembly do sistema e do usuário
 

@@ -2,7 +2,7 @@
 title: "Opções e configurações para Python no Visual Studio | Microsoft Docs"
 description: "Uma referência para as várias configurações no Visual Studio que se relacionam ao código e projetos Python."
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -36,19 +37,21 @@ Para exibir as opções do Python, use o comando de menu **Ferramentas > Opçõe
 
 ![Caixa de diálogo de opções do Python, guia Geral](media/options-general.png)
 
-Também há opções adicionais específicas do Python na guia **Editor de Texto > Python > Avançado**.
+Também há opções adicionais específicas do Python na guia **Editor de Texto > Python > Avançado** e na guia **Ambiente > Fontes e Cores** dentro do grupo "Editor de texto".
 
 > [!Note]
 > O grupo **Experimental** contém opções para recursos que ainda estão em desenvolvimento e não estão documentados aqui. Geralmente eles são discutidos em postagens no [blog Python engineering at Microsoft (Engenharia Python na Microsoft)](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Opções gerais
 
+(guia **Ferramentas > Opções > Python**).
+
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
 | Mostrar a Janela de Saída ao criar ambientes virtuais| On | Desmarque essa opção para impedir que a janela de saída apareça. |
 | Mostrar a Janela de Saída ao instalar ou remover pacotes | On | Desmarque essa opção para impedir que a janela de saída apareça. |
 | Sempre executar pip como administrador | Off | Sempre eleva as operações `pip install` para todos os ambientes. Ao instalar pacotes, o Visual Studio solicitará privilégios de administrador se o ambiente estiver localizado em uma área protegida do sistema de arquivos como `c:\Program Files`. Nesse prompt, você pode optar por sempre elevar `pip install` apenas para esse ambiente específico. Confira [guia pacotes](python-environments-window-tab-reference.md#packages-tab). |
-| Gerar automaticamente o BD de conclusão no primeiro uso | On | Para as [conclusões do IntelliSense](editing-python-code-in-visual-studio.md#intellisense) funcionarem para uma biblioteca, o Visual Studio deve gerar um banco de dados de conclusão para essa biblioteca. A criação do banco de dados é feita em segundo plano quando uma biblioteca é instalada, mas não pode ser concluída quando você começa a escrever código. Com esta opção selecionada, o Visual Studio prioriza a conclusão do banco de dados para uma biblioteca quando você escreve código que a usa. |
+| Gerar automaticamente o BD de conclusão no primeiro uso | On | *Aplica-se ao Visual Studio 2017 versão 15.5 e anteriores e a versões posteriores ao usar um banco de dados do IntelliSense.* Prioriza a conclusão do banco de dados para uma biblioteca quando você escreve código que a usa. Para saber mais, veja [Referência à janela de ambientes - guia Intellisense](python-environments-window-tab-reference.md). |
 | Ignorar variáveis PYTHONPATH de todo o sistema | On | PYTHONPATH é ignorado por padrão porque o Visual Studio fornece um meio mais direto para especificar caminhos de pesquisa em projetos e ambientes. Confira [Caminhos de pesquisa](search-paths.md) para obter detalhes. |
 | Atualizar os caminhos de pesquisa ao adicionar arquivos vinculados | On | Quando definido, adicionar um [arquivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a um projeto atualiza os [caminhos de pesquisa](search-paths.md) para que o IntelliSense possa incluir o conteúdo da pasta do arquivo vinculado em seu banco de dados de conclusão. Desmarque esta opção para excluir o conteúdo do banco de dados de conclusão. |
 | Avisar quando o módulo importado não puder ser encontrado | On | Desmarque esta opção para suprimir avisos quando você sabe que um módulo importado não está disponível no momento, mas não afeta a operação do código de outra forma. |
@@ -59,6 +62,8 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 ![Caixa de diálogo de opções do Python, guia Geral](media/options-general.png)
 
 ## <a name="debugging-options"></a>Opções de depuração
+
+(guia **Ferramentas > Opções > Python > Depuração**).
 
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 ## <a name="diagnostics-options"></a>Opções de diagnóstico
 
+(guia **Ferramentas > Opções > Python > Diagnóstico**).
+
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
 | Inclui logs de análise | On | Inclui logs detalhados relacionados à análise de ambientes do Python instalados ao salvar o diagnóstico em um arquivo ou copiá-los na área de transferência usando os botões. Essa opção pode aumentar significativamente o tamanho do arquivo gerado, mas costuma ser necessária para diagnosticar problemas do IntelliSense. |
@@ -82,9 +89,11 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 ## <a name="interactive-windows-options"></a>Opções da Janela Interativa
 
+(guia **Ferramentas > Opções > Python > Janelas interativas**).
+
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
-| Scripts | N/D | Especifica uma pasta geral para scripts de inicialização aplicar a serem aplicados às janelas interativas para todos os ambientes. Confira [Scripts de inicialização](python-environments-window-tab-reference.md#startup-scripts). No entanto, observe que esse recurso não funciona no momento. |
+| Scripts | N/D | Especifica uma pasta geral para scripts de inicialização aplicar a serem aplicados às janelas interativas para todos os ambientes. Consulte [Scripts de inicialização](python-environments-window-tab-reference.md#startup-scripts). No entanto, observe que esse recurso não funciona no momento. |
 | As setas para cima e para baixo navegam o histórico | On | Usa as teclas de direção para navegar no histórico na janela interativa. Desmarcar essa configuração para usar as teclas de direção na saída da janela interativa. |
 | Modo de Conclusão | Avaliar somente expressões sem função chamadas | O processo de determinar os membros disponíveis em uma expressão na janela interativa pode exigir a avaliação da expressão incompleta atual, que pode resultar em efeitos colaterais ou funções sendo chamadas várias vezes. A configuração padrão *Avaliar somente expressões sem função chamadas* exclui expressões que aparecem para chamar uma função, mas avaliada outras expressões. Por exemplo, ele avalia `a.b`, mas não `a().b`.  *Nunca avaliar expressões* impede todos os efeitos colaterais, usando apenas o mecanismo IntelliSense normal para obter sugestões. *Avaliar todas as expressões* avalia a expressão completa para obter sugestões, independentemente de efeitos colaterais. |
 | Ocultar sugestões de análise estática | Off | Quando definido, exibe apenas sugestões que são obtidas avaliando a expressão. Se combinado com o Modo de Conclusão *Nunca avaliar expressões*, não aparece nenhuma conclusão útil na janela interativa. |
@@ -92,6 +101,8 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 ![Caixa de diálogo de opções do Python, guia Janelas Interativas](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>Opções avançadas de editor de Python
+
+(guia **Ferramentas > Opções > Editor de Texto > Python > Avançado**).
 
 ### <a name="completion-results"></a>Resultados de Conclusão
 
@@ -105,7 +116,7 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
-| Confirmado pela digitação dos seguintes caracteres | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Esses caracteres normalmente seguem um identificador que pode ser selecionado em uma lista de conclusão, portanto, é conveniente confirmar a conclusão digitando um caractere. Você pode remover ou adicionar caracteres específicos à lista conforme desejado.  |
+| Confirmado pela digitação dos seguintes caracteres | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Esses caracteres normalmente seguem um identificador que pode ser selecionado em uma lista de conclusão, portanto, é conveniente confirmar a conclusão digitando um caractere. Você pode remover ou adicionar caracteres específicos à lista conforme desejado.  |
 | Inserir a conclusão atual de confirmação | On | Quando definido, a tecla Enter escolhe e aplica a conclusão selecionada no momento, assim como acontece com os caracteres acima (mas obviamente, não há um caractere para Enter portanto, ele não pode entrar diretamente para essa lista!). |
 | Adicionar uma nova linha ao pressionar Enter após o fim da palavra totalmente digitada | Off | Por padrão, se você digitar a palavra inteira que aparece no pop-up de conclusão e pressionar Enter, você confirmará a conclusão. Definindo essa opção, você efetivamente confirmar conclusões quando terminar de digitar o identificador que Enter insere uma nova linha. |
 
@@ -118,3 +129,11 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 | Nomes de cores com base em tipos | On | Habilita as cores de sintaxe no código do Python. |
 
 ![Caixa de diálogo de opções do editor do Python, guia Avançado](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>Opções de Fontes e Cores
+
+(guia **Ambiente > Fontes e Cores** dentro do grupo "Editor de Texto").
+
+Os nomes das opções de Python são prefixados com "Python" e são autoexplicativas. A fonte padrão para todos os temas de cores do Visual Studio é 10pt Consolas regular (não está em negrito). As cores padrão variam de acordo com o tema. Normalmente, você altera uma fonte ou a cor se tiver dificuldade para ler texto com as configurações padrão.
+
+![Opções de fonte e cor do Python](media/options-fonts-and-colors.png)

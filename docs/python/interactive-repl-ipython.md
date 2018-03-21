@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Usando o IPython na Janela Interativa
 
-A janela interativa do Visual Studio no modo IPython é um ambiente avançado de desenvolvimento interativo, porém amigável, que contém recursos de Computação Paralela Interativa. Este tópico percorre o uso de IPython na janela interativa do Visual Studio, na qual todos os recursos normais de [janela interativa](python-interactive-repl-in-visual-studio.md) também estão disponíveis.
+A janela interativa do Visual Studio no modo IPython é um ambiente avançado de desenvolvimento interativo, porém amigável, que contém recursos de Computação Paralela Interativa. Este artigo percorre o uso de IPython na janela interativa do Visual Studio, na qual todos os recursos normais de [janela interativa](python-interactive-repl-in-visual-studio.md) também estão disponíveis.
 
 Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.continuum.io) instalado, que inclui o IPython e as bibliotecas necessárias.
 
@@ -83,7 +83,7 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
 O IPython tem muitos outros recursos úteis, como escape para o shell do sistema, substituição de variáveis, captura de saída etc. Consulte a [documentação do IPython](http://ipython.org/documentation.html) para obter mais informações.
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-articles"></a>Artigos relacionados
 
 - Para usar o Jupyter facilmente e sem instalação, experimente o [serviço hospedado dos Notebooks do Azure](https://notebooks.azure.com/) que permitem que você mantenha e compartilhe seus blocos de anotações com outras pessoas.
 

@@ -2,7 +2,7 @@
 title: Gerenciar projetos de aplicativos Python no Visual Studio | Microsoft Docs
 description: "Explica a finalidade de projetos no Visual Studio, demonstra como criar e gerenciar projetos para código Python e descreve os modelos de projeto diferentes disponíveis para Python."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-projects"></a>Projetos do Python
 
@@ -52,13 +52,15 @@ O Visual Studio fornece uma variedade de modelos de projeto do Python para confi
 Cada projeto do Python tem um arquivo de inicialização atribuído, mostrado em negrito no Gerenciador de Soluções. O arquivo de inicialização é o arquivo executado quando você inicia a depuração (F5 ou **Depurar > Iniciar Depuração**) ou quando executa o projeto na janela interativa (Shift+Alt+F5 ou **Depurar > Executar Projeto na Interativa do Python**). Para alterá-lo, clique com o botão direito do mouse no novo arquivo e selecione **Definir como Arquivo de Inicialização**.
 
 > [!Tip]
-> Se você remover o arquivo de inicialização selecionado de um projeto e não selecionar um novo, a execução do projeto fará com que uma janela de saída do Python apareça, porém desapareça quase imediatamente. Se você observar esse comportamento, verifique se haverá um arquivo de inicialização atribuído. Além disso, para manter a janela de saída aberta nesses casos, clique com o botão direito do mouse no projeto, selecione **Propriedades**, selecione a guia **Depurar** e, em seguida, adicione `-i` ao campo **Argumentos do Interpretador**. Esse argumento faz com que o interpretador entre no modo interativo após a conclusão de um programa, mantendo a janela aberta até que você pressione Ctrl+Z, Enter para sair.
+> Se você remover o arquivo de inicialização selecionado de um projeto e não selecionar um novo, o Visual Studio não saberá com qual arquivo do Python iniciar quando tentar executar o projeto. Nesse caso, o Visual Studio 2017 versão 15.6 e posterior mostrará um erro; as versões anteriores abrem uma janela de saída com o interpretador do Python em execução ou você vê a janela de saída aparece, mas, em seguida, desaparece quase imediatamente. Se você observar algum desses comportamentos, verifique se haverá um arquivo de inicialização atribuído.
+>
+> Se quiser manter a janela de saída aberta por qualquer motivo, clique com o botão direito do mouse no projeto, selecione **Propriedades**, selecione a guia **Depurar** e, em seguida, adicione `-i` ao campo **Argumentos do Interpretador**. Esse argumento faz com que o interpretador entre no modo interativo após a conclusão de um programa, mantendo a janela aberta até que você pressione Ctrl + Z, Enter para sair.
 
 Um novo projeto sempre é associado ao ambiente global padrão do Python. Para associar o projeto a outro ambiente (incluindo ambientes virtuais), clique com o botão direito do mouse no nó **Ambientes do Python** do projeto, selecione **Adicionar/Remover Ambientes do Python** e selecione os ambientes desejados. Para alterar o ambiente ativo, clique com o botão direito do mouse no ambiente desejado e selecione **Ativar Ambiente**, conforme mostrado abaixo. Para saber mais, confira [Selecionar um ambiente para um projeto](selecting-a-python-environment-for-a-project.md).
 
 ![Ativando um ambiente para um projeto do Python](media/projects-activate-environment.png)
 
-<a name="project-types"</a>
+<a name="project-types"></a>
 
 ## <a name="project-templates"></a>Modelos de projeto
 

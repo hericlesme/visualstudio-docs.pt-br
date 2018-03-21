@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e68fff14ea51816ae45a29410d09cb6633689534
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef8e1c5be39119574f838df93d067a7404f7f5
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="formatting-python-code"></a>Formatando o código do Python
 
@@ -30,9 +30,13 @@ O Visual Studio permite reformatar rapidamente o código para que ele correspond
 - Para formatar uma seleção: selecione **Editar > Avançado > Seleção de Formato** ou pressione Ctrl+E, F.
 - Para formatar todo o arquivo: selecione **Editar > Avançado > Formatar Documento** ou pressione Ctrl+E, D.
 
-As opções são definidas por meio de **Ferramentas > Opções > Editor de Texto > Python > Formatação** e suas guias aninhadas e, por padrão, são definidas para corresponderem a um superconjunto do [Guia de estilo do PEP 8](http://www.python.org/dev/peps/pep-0008/). A guia **Geral** determina quando a formatação é aplicada, as configurações das outras três guias são descritas neste tópico.
+As opções são definidas em **Ferramentas > Opções > Editor de Texto > Python > Formatação** e em suas abas aninhadas. Você precisa selecionar **Mostrar todas as configurações** para essas opções serem exibidas:
 
-O [suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md) também adiciona o comando útil [Preencher Parágrafo de Comentário](#fill-comment-paragraph-command) ao menu **Editar > Avançado**, conforme descrito a seguir.
+![Opções de formatação de Python no Visual Studio](media/options-editor-formatting.png)
+
+As opções de formatação por padrão são definidas para corresponder a um subconjunto do [guia de estilo PEP 8](http://www.python.org/dev/peps/pep-0008/). A guia **Geral** determina quando a formatação é aplicada, as configurações para as outras três guias são descritas neste artigo.
+
+O [suporte do Python no Visual Studio](installing-python-support-in-visual-studio.md) também adiciona o comando útil [Preencher Parágrafo de Comentário](#fill-comment-paragraph-command) ao menu **Editar > Avançado**, conforme descrito em uma seção posterior.
 
 ## <a name="spacing"></a>Espaçamento
 

@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: be14af66f5aa5389e9e701eb79dc68ee733c6068
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desenvolvedores do .NET
 
@@ -106,7 +106,7 @@ Estes são os atalhos populares do Visual Studio. Observe que algumas extensões
 | **Ctrl+F12** | Ir Para Implementação | Navegue de um membro ou tipo base até suas várias implementações |
 | **Shift+F12** | Localizar Todas as Referências | Veja todas as referências de símbolo ou de literal |
 | **Ctrl**+**.** (também **ALT+ENTER** no Perfil C#) | Ações e Refatorações Rápidas | Veja quais correções de código, ações de geração de código, refatorações ou outras ações rápidas estão disponíveis na posição do cursor ou na seleção do código |
-| **Ctrl**+**E**,**V** | Duplicar linha | Duplica a linha de código onde o cursor está posicionado (disponível no **Visual Studio 2017 versão 15.6 versão prévia 2** e posterior) |
+| **Ctrl**+**E**,**V** | Duplicar linha | Duplica a linha de código onde o cursor está posicionado (disponível no **Visual Studio 2017 versão 15.6** e posterior) |
 | **Ctrl+Q** | Início Rápido | Pesquise todas as configurações do Visual Studio |
 | **F5** | Iniciar a depuração | Inicie a depuração do aplicativo |
 | **Ctrl+F5** | Executar sem Depurar | Execute o aplicativo localmente sem depuração |

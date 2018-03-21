@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: 46338778813b73dbc87458f90cfe0548bd8ccb8a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 95aa6abeb5a64158fe0ef0ed2b64392108248523
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-app-resources"></a>Gerenciamento de recursos do aplicativo
 
-Arquivos de recurso do aplicativo, como imagens, arquivos de texto e arquivos de áudio são elementos integrais do aplicativo que não são compilados com ele. Cada plataforma com suporte no Visual Studio para Mac lida com esses tipos de arquivos de formas diferentes. Consulte os guias abaixo para obter mais informações sobre como lidar com recursos de aplicativo no Visual Studio para Mac.
+Arquivos de recurso do aplicativo, como imagens, arquivos de texto e arquivos de áudio são necessários para o aplicativo, mas não são compilados com ele. Cada plataforma com suporte pelo Visual Studio para Mac trata esses recursos de maneiras diferentes, conforme explicado nos seguintes guias:
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-Código do Xamarin.Forms são executados em várias plataformas e cada uma delas tem seu próprio sistema de arquivos. Isso significa que é possível realizar a leitura e gravação de arquivos usando APIs de arquivo nativo em cada plataforma ou adicionando arquivos como recursos de incorporação.
+O código Xamarin.Forms é executado em várias plataformas, cada uma das quais tem seu próprio sistema de arquivos e cada sistema de arquivos determina como ler e gravar em arquivos. No Xamarin.Forms, você pode gerenciar os recursos do aplicativo usando as APIs do arquivo nativas em cada plataforma ou adicionando arquivos como recursos incorporados.
 
 * [Trabalhando com imagens](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [Trabalhando com arquivos]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)

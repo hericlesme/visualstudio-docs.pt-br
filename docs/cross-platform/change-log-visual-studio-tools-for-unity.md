@@ -13,14 +13,107 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Log de alterações (Ferramentas do Visual Studio para Unity)
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="3604"></a>3.6.0.4
+ Lançado em 05/03/2018
+
+### <a name="bug-fixes"></a>Correções de bug
+
+-   **Geração do Projeto:**
+
+    -   Correção da detecção de versão Mono.
+
+-   **Integração:**
+
+    -   Correção dos problemas de timing com 2018.1 e ativação de plug-in.
+
+## <a name="3603"></a>3.6.0.3
+ Lançado em 23/02/2018
+
+### <a name="new-features"></a>Novos recursos
+
+-   **Geração do Projeto:**
+
+    -   Suporte adicionado para o .NET Standard.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+-   **Geração do Projeto:**
+
+    -   Corrigida a detecção da estrutura de destino Unity.
+
+-   **Depurador:**
+
+    -   Corrigida a quebra de exceções que são lançadas fora do código do usuário.
+
+## <a name="3602"></a>3.6.0.2
+ Lançado em 07/02/2018
+
+### <a name="new-features"></a>Novos recursos
+
+-   **Integração:**
+
+    -   Atualize a superfície da API do UnityMessage para 2017.3.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+-   **Integração:**
+
+    -   Somente recarrega projetos em alterações externas (com a limitação).
+ 
+## <a name="3601"></a>3.6.0.1
+ Lançado em 24/01/2018
+
+### <a name="bug-fixes"></a>Correções de bug
+
+-   **Integração:**
+
+    -   Correção de pdb automático para conversão de símbolo de depuração de mdb.
+    
+    -   Correção de chamada indireta para EditorPrefs.GetBool afetando o inspetor ao tentar alterar o tamanho da matriz.
+ 
+## <a name="3600"></a>3.6.0.0
+ Lançado em 10/01/2018
+
+### <a name="new-features"></a>Novos recursos
+
+-   **Geração do Projeto:**
+
+    -   Adicionado o suporte para o modelo de referência MonoIsland 2018.1.
+
+-   **Avaliação:**
+
+    -   Adicionado o suporte para o identificador de $exception.
+
+-   **Depurador:**
+
+    -   Adicionado o suporte para atributos de DebuggerHidden/DebuggerStepThrough com o novo tempo de execução do Unity.
+    
+-   **Assistentes:**
+
+    -   Introduza 'Última' versão para os assistentes.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+-   **Geração do Projeto:**
+
+    -   Correção do cálculo de guid de projeto para projetos de player.
+
+-   **Depurador:**
+
+    -   Correção de uma corrida na manipulação de eventos recentes.
+    
+-   **Assistentes:**
+
+    -   Atualize o contexto do roslyn antes de inserir o método.
 
 ## <a name="3503"></a>3.5.0.3
  Lançado em 09/01/2018

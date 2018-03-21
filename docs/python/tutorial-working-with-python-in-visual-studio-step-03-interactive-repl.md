@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Etapa 3: usando a janela interativa REPL
 
@@ -31,7 +31,7 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
 1. Abra a janela interativa clicando com o botão direito do mouse no ambiente de projeto do Python no Gerenciador de Soluções (como "Python 3.6 (32 bits)", mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir > Outras Janelas > Janelas Interativas do Python** no menu principal do Visual Studio.
 
-1. A janela interativa abre-se abaixo do editor com o prompt habitual `>>>` de REPL do Python. Se você quiser deixar a janela interativa maior, arraste o separador entre as duas janelas:
+1. A janela interativa abre-se abaixo do editor com o prompt padrão `>>>` de REPL do Python. A lista suspensa **Ambiente** permite selecionar um intérprete específico com o qual trabalhar. Se você também quiser deixar a janela interativa maior, arraste o separador entre as duas janelas:
 
     ![Janela interativa Python: arrastando para redimensionar](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -100,7 +100,7 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 > [!div class="nextstepaction"]
 > [Executando o código no depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-### <a name="going-deeper"></a>Aprofundando-se
+## <a name="going-deeper"></a>Aprofundando-se
 
 - [Usando a Janela interativa](python-interactive-repl-in-visual-studio.md)
 - [Usando o IPython REPL](interactive-repl-ipython.md)

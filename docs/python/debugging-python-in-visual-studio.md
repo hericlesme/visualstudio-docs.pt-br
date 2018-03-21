@@ -2,7 +2,7 @@
 title: "Depurar o código do Python no Visual Studio | Microsoft Docs"
 description: "Um passo a passo dos recursos de depuração no Visual Studio, especificamente para código Python, incluindo pontos de interrupção, passo a passo, inspeção dos valores, observação de exceções e depuração na janela interativa."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,17 +17,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Depurando o código do Python
 
 O Visual Studio fornece uma experiência de depuração abrangente para o Python, incluindo a anexação a processos em execução, avaliação de expressões nas janelas Inspeção e Imediata, inspeção de variáveis locais, pontos de interrupção, instruções intervir/depuração parcial/depuração circular, comando Definir Próxima Instrução e muito mais.
 
-Consulte também os seguintes tópicos sobre depuração específicos ao cenário:
+Veja também os seguintes artigos sobre depuração específicos ao cenário:
 
 - [Depuração remota do Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Depuração remota do Azure](debugging-remote-python-code-on-azure.md)
@@ -51,7 +51,7 @@ Consulte também os seguintes tópicos sobre depuração específicos ao cenári
 
 O fluxo de trabalho básico de depuração envolve a definição de pontos de interrupção, a execução do código em etapas, a inspeção de valores e o tratamento de exceções, conforme descrito nas próximas seções. Para obter detalhes completos sobre o depurador do Visual Studio, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-Uma sessão de depuração é iniciada com o comando **Depurar > Iniciar Depuração**, o botão **Iniciar** na barra de ferramentas ou a tecla F5. Essas ações abrirão o arquivo de inicialização do projeto (mostrado em negrito no Gerenciador de Soluções) com o ambiente ativo do projeto e os argumentos de linha de comando ou caminhos de pesquisa especificados em Propriedades do Projeto (consulte [Opções de depuração de projeto](#project-debugging-options)). Se, no entanto, por alguma razão, você não tiver um arquivo de inicialização definido, uma janela de saída do Python aparecerá e desaparecerá rapidamente. Nesse caso, clique com o botão direito do mouse no arquivo apropriado e selecione **Definir como Arquivo de Inicialização**.
+Uma sessão de depuração é iniciada com o comando **Depurar > Iniciar Depuração**, o botão **Iniciar** na barra de ferramentas ou a tecla F5. Essas ações abrirão o arquivo de inicialização do projeto (mostrado em negrito no Gerenciador de Soluções) com o ambiente ativo do projeto e os argumentos de linha de comando ou caminhos de pesquisa especificados em Propriedades do Projeto (consulte [Opções de depuração de projeto](#project-debugging-options)). O **Visual Studio 2017 versão 15.6** e posterior alerta se você não tiver um arquivo de inicialização definido; as versões anteriores podem abrir uma janela de saída com o interpretador do Python em execução ou a janela de saída brevemente aparece e desaparece. De qualquer forma, clique com o botão direito do mouse no arquivo apropriado e selecione **Definir como Arquivo de Inicialização**.
 
 > [!Note]
 > O depurador sempre é iniciado com o ambiente ativo do Python para o projeto. Para alterar o ambiente, torne outro ambiente ativo, conforme descrito em [Selecionar um ambiente do Python para um projeto](selecting-a-python-environment-for-a-project.md).
@@ -160,13 +160,13 @@ Por padrão, o depurador inicia o programa com o inicializador padrão do Python
 | Caminho do Interpretador | Substitui o caminho associado ao ambiente atual.  O valor pode ser útil para iniciar o script com um interpretador não padrão. |
 | Variáveis de ambiente | Nessa caixa de texto multilinha, adicione entradas com o formato `NAME=VALUE`. Como essa configuração é aplicada por último, na parte superior das variáveis de ambiente globais existentes e depois que `PYTHONPATH` é definido de acordo com a configuração de Caminhos de Pesquisa, ela pode ser usada para substituir qualquer um dos outros valores manualmente. |
 
-<a name="the-debug-interactive-window"</a>
+<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Janelas imediata e interativa
 
 Há duas janelas interativas que podem ser usadas durante uma sessão de depuração: a janela Imediata padrão do Visual Studio e a janela Interativa de Depuração do Python.
 
-A janela Imediata (**Depurar > Janelas > Imediata**) é usada para avaliação rápida de expressões do Python e para inspeção ou atribuição de variáveis no programa em execução. Consulte o tópico geral [Janela Imediata](../ide/reference/immediate-window.md) para obter detalhes.
+A janela Imediata (**Depurar > Janelas > Imediata**) é usada para avaliação rápida de expressões do Python e para inspeção ou atribuição de variáveis no programa em execução. Veja o artigo geral [Janela Imediata](../ide/reference/immediate-window.md) para obter detalhes.
 
 A janela Interativa de Depuração do Python (**Depurar > Janelas > Interativa de Depuração do Python**) é mais avançada, pois disponibiliza toda a experiência de [REPL Interativo](python-interactive-repl-in-visual-studio.md) durante a depuração, incluindo a escrita e execução de código. Ela se conecta automaticamente a qualquer processo iniciado no depurador usando o inicializador padrão do Python (incluindo os processos anexados por meio de **Depurar > Anexar ao Processo**). No entanto, ela não está disponível ao usar a depuração de modo misto do C/C++.
 

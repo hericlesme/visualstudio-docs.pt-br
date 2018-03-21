@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
@@ -73,7 +73,7 @@ Se você desejar desabilitar as atualizações automáticas, será possível des
 
 Novidade no **Visual Studio 2017 versão 15.3**, o Visual Studio notifica você se suspeitar que uma extensão estava envolvida em uma falha durante uma sessão anterior. Quando o Visual Studio falhar, ele armazenará a pilha de exceção. Na próxima vez em que o Visual Studio for iniciado, ele examinará a pilha, começando com a folha e funcionando em direção à base. Se o Visual Studio determinar que um quadro pertence a um módulo que faz parte de uma extensão instalada e habilitada, ele mostra uma notificação.
 
-Novidade no **Visual Studio 2017 15.6 versão prévia 3**, o Visual Studio também notifica se suspeitar que uma extensão está causando a falta de resposta da interface do usuário.
+Novidade no **Visual Studio 2017 15.6**, o Visual Studio também notifica se suspeitar que uma extensão está causando a falta de resposta da interface do usuário.
 
 Quando essas notificações forem exibidas, você poderá ignorar a notificação ou executar uma das seguintes ações:
 
@@ -114,7 +114,7 @@ Quando você instala um exemplo online, a solução é armazenada em dois locais
 
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalando sem usar a caixa de diálogo Extensões e Atualizações
 
-As extensões que foram empacotadas em arquivos .vsix podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo .vsix clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla Enter. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos .vsix podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo .vsix clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla ENTER. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>A caixa de diálogo Extensões e Atualizações não dá suporte aos tipos de extensão
 

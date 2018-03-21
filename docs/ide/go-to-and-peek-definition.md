@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Exibir Definições de Membro e de Tipo
 
@@ -70,7 +71,7 @@ Por exemplo, se você executar o comando **Ir para Definição** para o <xref:Sy
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Exibir definições de fonte descompilada em vez de metadados (C#)
 
-Novidade na **Versão prévia 15.6 2 do Visual Studio 2017**, você pode definir uma opção para ver o código-fonte descompilado quando exibir a definição de um tipo ou membro de C# cujo código-fonte não está disponível. Para ativar esse recurso, escolha **Ferramentas** > **Opções** na barra de menus. Em seguida, expanda **Editor de Texto** > **C#** > **Avançado**e selecione **Habilitar navegação para fontes descompiladas**.
+Novidade na **No Visual Studio 2017 versão 15.6**, você pode definir uma opção para ver o código-fonte descompilado quando exibir a definição de um tipo ou membro de C# cujo código-fonte não está disponível. Para ativar esse recurso, escolha **Ferramentas** > **Opções** na barra de menus. Em seguida, expanda **Editor de Texto** > **C#** > **Avançado**e selecione **Habilitar navegação para fontes descompiladas**.
 
 ![Exibindo uma definição descompilada](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ Novidade na **Versão prévia 15.6 2 do Visual Studio 2017**, você pode definir
 
 ## <a name="see-also"></a>Consulte também
 
-[Navegando no código](../ide/navigating-code.md)  
-[Como exibir e editar o código usando Inspecionar Definição (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+[Navegando o código](../ide/navigating-code.md)
+[Como visualizar e editar códigos usando a janela Inspecionar Definição (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

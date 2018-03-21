@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projetos do serviço de nuvem do Azure para Python
 
@@ -30,7 +30,7 @@ O Visual Studio fornece modelos para ajudá-lo a começar a criar Serviços de N
 
 Um [serviço de nuvem](http://go.microsoft.com/fwlink/?LinkId=306052) consiste em várias *funções de trabalho* e *funções web*, com cada uma executando uma tarefa separada conceitualmente, mas que podem ser replicadas separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Quanto ao Python, qualquer estrutura Web que dá suporte ao WSGI pode ser usada para gravam um aplicativo desse tipo (com suporte no [Modelo de Projeto Web](python-web-application-project-templates.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Geralmente, elas fazem uso de bibliotecas de [dados](http://go.microsoft.com/fwlink/?LinkId=401571) e de [serviço de aplicativo](http://go.microsoft.com/fwlink/?LinkId=401572), que podem ser instaladas com [`pip install azure`](http://pypi.org/project/azure).
 
-Este tópico contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](http://go.microsoft.com/fwlink/?linkid=254360).
+Este artigo contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](http://go.microsoft.com/fwlink/?linkid=254360).
 
 ## <a name="create-a-project"></a>Criar um projeto
 
