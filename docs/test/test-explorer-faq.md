@@ -1,10 +1,7 @@
 ---
-title: Perguntas Frequentes do Gerenciador de Teste | Microsoft Docs
+title: Perguntas frequentes do Gerenciador de Testes do Visual Studio | Microsoft Docs
 ms.date: 1/15/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Test Explorer
@@ -18,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -90,10 +87,10 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 
 > [!NOTE]
 > Você pode desativar o sinalizador com o mesmo comando, usando o valor 0 em vez de 1 após dword.
-  
+
 ## <a name="see-also"></a>Consulte também
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>  
-[Criar e executar testes de unidade para código existente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
-[Testar código de unidade](unit-test-your-code.md)
-[Perguntas frequentes sobre Live Unit Testing](live-unit-testing-faq.md)
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
+- [Criar e Executar Testes de Unidade para Código Existente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+- [Efetuar teste de unidade em seu código](unit-test-your-code.md)
+- [Perguntas Frequentes sobre os Testes de Unidade Dinâmicos](live-unit-testing-faq.md)

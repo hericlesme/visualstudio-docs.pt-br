@@ -1,23 +1,23 @@
 ---
-title: "Números de build e datas de lançamento do Visual Studio 2017 | Microsoft Docs"
-description: "Uma lista com as versões lançadas e números de build do Visual Studio 2017, classificadas por data."
-keywords: 
+title: Números de build e datas de lançamento do Visual Studio 2017 | Microsoft Docs
+description: Uma lista com as versões lançadas e números de build do Visual Studio 2017, classificadas por data.
+keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/08/2018
+ms.date: 03/19/2018
 ms.topic: article
-helpviewer_keywords: 
+helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
-ms.service: 
+ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: fffebc62b18226d50fb836144f250894b6a013fd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 4fb2238d8a0afb8334a05585bf040931da81d66a
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio 2017
 
@@ -25,6 +25,10 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.3 | Versão | 19 de março de 2018 | 15.6.27428.2011 |
+| 15.7.0 Versão prévia 1.0 | Visualizar | 13 de março de 2018 | 15.7.27512.0 |
+| 15.6.2 | Versão | 13 de março de 2018 | 15.6.27428.2005 |
+| 15.0.11 | Versão | 13 de março de 2018 | 15.0.26228.29 |
 | 15.6.1 | Versão | 8 de março de 2018 | 15.6.27428.2002 |
 | 15.6.1 Versão prévia 1.0 | Visualizar | 8 de março de 2018 | 15.6.27428.2002 |
 | 15.6.0 | Versão | 5 de março de 2018 | 15.6.27428.1 |

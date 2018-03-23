@@ -1,18 +1,18 @@
 ---
-title: Configurar testes de unidade no Visual Studio usando um *.runsettings* | Microsoft Docs
+title: Configurar testes de unidade no Visual Studio com um arquivo .runsettings | Microsoft Docs
 ms.date: 02/28/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um *.runsettings*
 
@@ -57,7 +57,7 @@ Veja a seguir um arquivo *.runsettings* típico. Cada elemento do arquivo é opc
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
-  
+
      <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
      <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
      <TestSessionTimeout>10000</TestSessionTimeout>
@@ -147,7 +147,7 @@ O coletor de dados de cobertura de código cria um log das partes do código do 
 
 O coletor de dados de vídeo captura uma gravação de tela quando os testes são executados. A gravação é útil para solucionar problemas de testes de interface do usuário. O coletor de dados de vídeo está disponível no **Visual Studio 2017 versão 15.5** e posterior.
 
-Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, você deve usar um arquivo de configurações de teste. Para obter mais informações, consulte [Especificando configurações de teste do Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
+Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, você deve usar um arquivo de configurações de teste.
 
 ### <a name="testrunparameters"></a>TestRunParameters
 
@@ -181,4 +181,4 @@ Essas configurações são específicas para o adaptador de teste que executa os
 
 ## <a name="see-also"></a>Consulte também
 
-[Personalizando a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
+- [Personalizando a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
