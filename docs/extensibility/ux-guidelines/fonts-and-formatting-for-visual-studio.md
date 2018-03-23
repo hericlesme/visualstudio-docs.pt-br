@@ -1,26 +1,28 @@
 ---
-title: "Fontes e formatação para o Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Fontes e formatação para o Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: "5"
+caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fcd6b5edd5d0c6724ca7ed1e393e32d657a4a29b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 83c1d4e20dd372d3b76362b9f06ee894b045333c
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
-##  <a name="BKMK_TheEnvironmentFont"></a>A fonte de ambiente  
+##  <a name="BKMK_TheEnvironmentFont"></a> A fonte de ambiente
  Todas as fontes dentro do Visual Studio devem ser expostas ao usuário para personalização. Isso é feito principalmente através de **fontes e cores** página o **Ferramentas > Opções** caixa de diálogo. As três categorias principais de configurações de fonte são:  
   
 -   **Fonte de ambiente** -fonte primária para o IDE (ambiente de desenvolvimento integrado), usada para todos os elementos de interface, incluindo caixas de diálogo e janelas de documentos, janelas de ferramentas e menus. Por padrão, a fonte de ambiente é vinculada a uma fonte de sistema que aparece como 9 pt Segoe UI nas versões atuais do Windows. Usando uma fonte para todos os elementos de interface ajuda a garantir uma aparência consistente fonte em todo o IDE.  
@@ -49,9 +51,9 @@ ms.lasthandoff: 12/22/2017
   
  Para o Windows Presentation Foundation (WPF), derivar a classe de janela de diálogo do shell `DialogWindow` classe em vez do WPF `Window` classe.  
   
- Em XAML, o código tem esta aparência:  
+ Em XAML, o código tem esta aparência:
   
-```  
+```xaml
 <ui:DialogWindow  
     x:Class"MyNameSpace.MyWindow"  
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
@@ -61,35 +63,37 @@ ms.lasthandoff: 12/22/2017
     WindowStartupLocation="CenterOwner"  
     Title="My Dialog">  
 </ui:DialogWindow>  
-  
-code behind:  
-  
+```
+
+code-behind:
+
+```csharp
 internal partial class WebConfigModificationWindow : DialogWindow  
 {  
 }  
-```  
+```
   
  (Substitua `Microsoft.VisualStudio.Shell.11.0` com a versão atual da dll MPF.)  
   
- Para exibir a caixa de diálogo, chame "`ShowModal()`" na classe sobre `ShowDialog()`. `ShowModal()`Define o estado modal correto no shell, garante que a caixa de diálogo é centralizada na janela pai e assim por diante.  
+ Para exibir a caixa de diálogo, chame "`ShowModal()`" na classe sobre `ShowDialog()`. `ShowModal()` Define o estado modal correto no shell, garante que a caixa de diálogo é centralizada na janela pai e assim por diante.  
   
  O código é da seguinte maneira:  
   
-```  
+```csharp
 MyWindow window = new MyWindow();  
 window.ShowModal()  
-```  
+```
   
- `ShowModal`Retorna um bool? (booleano anulável) com o `DialogResult`, que pode ser usado se necessário. O valor de retorno será true se a caixa de diálogo foi fechada com **Okey**.  
+ `ShowModal` Retorna um bool? (booleano anulável) com o `DialogResult`, que pode ser usado se necessário. O valor de retorno será true se a caixa de diálogo foi fechada com **Okey**.  
   
  Se você precisar exibir algumas UI WPF que não é uma caixa de diálogo e está hospedado no seu próprio `HwndSource`, como uma janela pop-up ou uma janela filho WPF de uma janela do Win32/WinForms pai, você precisará definir o `FontFamily` e `FontSize` no elemento raiz do WPF e elemento. (O shell define as propriedades na janela principal, mas eles não serão herdados após um `HWND`). O shell fornece recursos para o qual as propriedades podem ser associadas, como este:  
   
-```  
-<Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
-<Setter property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />  
-```  
+```xaml
+<Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
+<Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />  
+```
   
-###  <a name="BKMK_Formatting"></a>Formatação de referência (dimensionamento/negrito)  
+###  <a name="BKMK_Formatting"></a> Formatação de referência (dimensionamento/negrito)  
  Algumas caixas de diálogo exigem texto em negrito ou um tamanho diferente da fonte de ambiente. Anteriormente, as fontes maiores do que a fonte de ambiente foram codificadas como "`environment font +2`" ou semelhantes. Usar os trechos de código fornecido, monitores de alto DPI e certifique-se de que o texto de exibição sempre aparece no tamanho correto e peso (como luz ou Semilight).  
   
 > **Observação: Antes de aplicar formatação, certifique-se de seguir as diretrizes encontradas [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**  
@@ -97,10 +101,10 @@ window.ShowModal()
  Para dimensionar a fonte de ambiente, defina o estilo do TextBlock ou rótulo conforme indicado. Cada um desses trechos de código, quando usados corretamente, gerará a fonte correta, incluindo as variações de tamanho e peso apropriadas.  
   
  Onde "`vsui`" é uma referência ao namespace `Microsoft.VisualStudio.Shell`:  
-  
-```  
+
+```xaml
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0" 
-```  
+```
   
 #### <a name="375-environment-font--light"></a>Fonte de ambiente % 375 + luz  
  **Aparece como:** pt 34 Segoe UI Light  
@@ -108,19 +112,19 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 
  **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
-```  
+```
   
  **XAML:** definir o estilo do rótulo ou TextBlock conforme mostrado.  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
-```  
+```
   
 #### <a name="310-environment-font--light"></a>Fonte de ambiente % 310 + luz  
  **Aparece como:** pt 28 Segoe UI Light   
@@ -128,19 +132,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:** definir o estilo do rótulo ou TextBlock conforme mostrado.  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
-```  
+```
   
 #### <a name="200-environment-font--semilight"></a>Fonte de ambiente 200% + Semilight  
  **Aparece como:** 18 pt Segoe UI Semilight    
@@ -148,19 +152,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente: 
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:** definir o estilo do rótulo ou TextBlock conforme mostrado:  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="155-environment-font"></a>Fonte de ambiente 155%  
  **Aparece como:** 14 pt Segoe UI    
@@ -168,19 +172,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:** definir o estilo do rótulo ou TextBlock conforme mostrado:  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
-```  
+```
   
 #### <a name="133-environment-font"></a>Fonte de ambiente % 133  
  **Aparece como:** 12 pt Segoe UI    
@@ -188,19 +192,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:** definir o estilo do rótulo ou TextBlock conforme mostrado:  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="122-environment-font"></a>Fonte de ambiente 122%  
  **Aparece como:** 11 pt Segoe UI    
@@ -208,19 +212,19 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
-```  
+```
   
  **XAML:** definir o estilo do rótulo ou TextBlock conforme mostrado:  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
-```  
+```
   
 #### <a name="environment-font--bold"></a>Fonte de ambiente + em negrito  
  **Aparece como:** em negrito 9 pt Segoe UI    
@@ -228,26 +232,26 @@ label.SetResourceReference(Label.StyleProperty,
   
  **Código procedural:** onde `textBlock` é um TextBlock definido anteriormente e `label` é um rótulo definido anteriormente:  
   
-```  
+```csharp
 textBlock.SetResourceReference(TextBlock.StyleProperty,    
         VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
 label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
-```  
+```
   
  **XAML:** definir o estilo do rótulo ou TextBlock conforme mostrado:  
   
-```  
+```xaml
 <TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
-```  
+```
   
 ### <a name="localizable-styles"></a>Estilos localizáveis  
  Em alguns casos, os localizadores precisará modificar os estilos de fonte para localidades diferentes, como a remoção de negrito do texto para idiomas do Leste Asiático. Para possibilitar a localização de estilos de fonte, esses estilos devem estar dentro do arquivo. resx. É a melhor maneira de fazer isso e ainda Editar estilos de fonte no designer de formulário do Visual Studio definir explicitamente os estilos de fonte em tempo de design. Embora isso cria um objeto de fonte completa e pode parecer interromper a herança de fontes de pai, apenas a propriedade FontStyle é usada para definir a fonte.  
   
  A solução é conectar-se com o formulário de caixa de diálogo `FontChanged` eventos. No `FontChanged` mostram todos os controles de evento e verificar se a fonte está definida. Se estiver definido, mude para uma nova fonte com base na fonte do formulário e o estilo de fonte do controle anterior. Um exemplo no código é:  
   
-```  
+```csharp
 private void Form1_FontChanged(object sender, System.EventArgs e)  
 {  
           SetFontStyles();  
@@ -279,7 +283,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
           }  
      }  
 }  
-```  
+```
   
  Usar esse código, você garante que, quando a fonte do formulário é atualizada, as fontes de controles serão atualizados também. Esse método também deve ser chamado do construtor do formulário, porque a caixa de diálogo pode falhar obter uma instância de `IUIService` e `FontChanged` evento nunca será acionado. Capturando `FontChanged` permitirá caixas de diálogo Selecionar a nova fonte dinamicamente mesmo se a caixa de diálogo já estiver aberta.  
   
@@ -296,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
  Para redefinir a fonte, clique em "Usar padrões" em **Ferramentas > Opções > ambiente > fontes e cores**.  
   
-##  <a name="BKMK_TextStyle"></a>Estilo de texto  
+##  <a name="BKMK_TextStyle"></a> Estilo de texto  
  Estilo de texto refere-se maiusculas e minúsculas, peso e tamanho da fonte. Para obter diretrizes de implementação, consulte [a fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).  
   
 ### <a name="text-casing"></a>Uso de maiusculas e minúsculas do texto  
@@ -417,7 +421,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Título maior em caixas de diálogo de assinatura<br />-Título do relatório principal<br /><br /> **Fazer:**<br /><br /> -Usar a capitalização de frase<br />-Use sempre leve<br /><br /> **Não:**<br /><br /> -Use para a interface do usuário que não seja de assinatura da interface do usuário como página inicial<br />-Em negrito, itálico ou negrito, itálico<br />-Use para corpo de texto<br />-Usar em janelas de ferramentas|**Aparece como:** pt 28 Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente % 310 &#43; Título da luz](../../extensibility/ux-guidelines/media/0202-a_ef310.png "a_EF310 0202")|  
+|**Uso:**<br /><br /> -Título maior em caixas de diálogo de assinatura<br />-Título do relatório principal<br /><br /> **Fazer:**<br /><br /> -Usar a capitalização de frase<br />-Use sempre leve<br /><br /> **Não:**<br /><br /> -Use para a interface do usuário que não seja de assinatura da interface do usuário como página inicial<br />-Em negrito, itálico ou negrito, itálico<br />-Use para corpo de texto<br />-Usar em janelas de ferramentas|**Aparece como:** pt 28 Segoe UI Light<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente % 310 &#43; título leve](../../extensibility/ux-guidelines/media/0202-a_ef310.png "a_EF310 0202")|  
   
 #### <a name="200-environment-font--semilight"></a>Fonte de ambiente 200% + Semilight  
   
@@ -447,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**Uso:**<br /><br /> -Rótulos e subtítulos nas caixas de diálogo de assinatura<br />-Rótulos e subtítulos em relatórios<br />-Rótulos e subtítulos documento bem da interface do usuário<br /><br /> **Fazer:**<br /><br /> -Usar a capitalização de frase<br />-Use peso em negrito<br /><br /> **Não:**<br /><br /> -Itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Usar em janelas de ferramentas|**Aparece como:** em negrito 9 pt Segoe UI<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente &#43; Título em negrito](../../extensibility/ux-guidelines/media/0202-f_efb.png "f_EFB 0202")|  
+|**Uso:**<br /><br /> -Rótulos e subtítulos nas caixas de diálogo de assinatura<br />-Rótulos e subtítulos em relatórios<br />-Rótulos e subtítulos documento bem da interface do usuário<br /><br /> **Fazer:**<br /><br /> -Usar a capitalização de frase<br />-Use peso em negrito<br /><br /> **Não:**<br /><br /> -Itálico ou negrito itálico<br />-Use para corpo de texto<br />-Usar em controles padrão do Visual Studio<br />-Usar em janelas de ferramentas|**Aparece como:** em negrito 9 pt Segoe UI<br /><br /> **Exemplo de Visual:**<br /><br /> ![Exemplo de fonte de ambiente &#43; título em negrito](../../extensibility/ux-guidelines/media/0202-f_efb.png "f_EFB 0202")|  
   
 #### <a name="environment-font"></a>Fonte de ambiente  
   
