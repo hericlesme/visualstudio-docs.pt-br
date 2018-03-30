@@ -1,12 +1,13 @@
 ---
-title: "Visão geral da implantação - Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Visão geral da implantação - Visual Studio | Microsoft Docs
+ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +22,19 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: d07129bc373cf74c8ba373b3c51847016d585ade
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="deployment-overview-in-visual-studio"></a>Visão geral da implantação no Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Início rápido: Primeiro examinar a implantação no Visual Studio
 
 Ao implantar um aplicativo, serviço ou componente, você o distribui para instalação em outros computadores, dispositivos, servidores ou na nuvem. Você escolhe o método apropriado no Visual Studio para o tipo de implantação que deseja. (O muitos tipos de aplicativo oferecer suporte a outras ferramentas de implantação, como implantação de linha de comando ou NuGet que não são descritas aqui.)
 
@@ -40,7 +42,7 @@ Consulte os tutoriais para obter instruções passo a passo.
 
 ### <a name="deploy-to-local-folder"></a>Implantar na pasta local
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, e **.NET Core**: usar a ferramenta de publicação para implantar em um local pasta. As opções exatas disponíveis dependem de seu tipo de aplicativo. No Gerenciador de soluções, clique com o botão direito e escolha **publicar**e, em seguida, escolha **pasta**. Para obter mais informações, consulte [implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, e **.NET Core**: usar a ferramenta de publicação para implantar em uma pasta local. As opções exatas disponíveis dependem de seu tipo de aplicativo. No Gerenciador de soluções, clique com o botão direito e escolha **publicar**e, em seguida, escolha **pasta**. Para obter mais informações, consulte [implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
 
     ![Escolher publicar](../deployment/media/quickstart-publish.png)
 

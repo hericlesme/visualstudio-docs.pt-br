@@ -1,32 +1,32 @@
 ---
-title: "Introdução ao depurador no Visual Studio | Microsoft Docs"
+title: Introdução ao depurador no Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Introdução ao depurador do Visual Studio
 O depurador do Visual Studio é fácil de usar em qualquer idioma. Aqui vamos mostrar como depurar um programa c# simple, mas você pode aplicar as mesmas etapas para o código em outras linguagens, como C++ e JavaScript.
 
 Para assistir um vídeo mostrando recursos semelhantes, consulte [guia de Introdução com o depurador](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>Depurar um projeto c# básico  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Depurar um projeto c# básico  
  Vamos começar com um aplicativo de console c# simples (**arquivo > Novo > projeto**, em seguida, selecione **Visual C#** e **aplicativo de Console**). Se você nunca tiver trabalhado com o Visual Studio antes, consulte [passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). O **principal** método apenas adiciona 1 a uma variável de inteiro de 10 vezes e imprime o resultado para o console:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Para obter mais informações sobre pontos de interrupção, consulte [usando pontos de interrupção](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a>Inspecionar variáveis  
+##  <a name="BKMK_Inspect_Variables"></a> Inspecionar variáveis  
  Depuração geralmente envolve a localização de variáveis que não contêm os valores esperados em um momento específico. Mostraremos algumas das maneiras que você pode inspecionar variáveis.  
   
  Inicie a depuração novamente. A execução é interrompida antes do `Console.WriteLine` código é executado. Você pode fazer com que ele execute passo a passo à frente (clique **Depurar > passar por** ou **F10**). Nesse caso, você pode ter escolhido **intervir** (**F11**) e obteve o mesmo resultado; vamos explicar a diferença mais tarde. A linha com a última chave do método deve ter desativado amarela. Observe a janela de Console. Você deve ver **10**.  

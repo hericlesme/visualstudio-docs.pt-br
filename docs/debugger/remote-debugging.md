@@ -1,13 +1,13 @@
 ---
-title: "Depuração remota no Visual Studio | Microsoft Docs"
+title: Depuração remota no Visual Studio | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -19,17 +19,17 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
+caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="remote-debugging"></a>Depuração remota
 Você pode depurar um aplicativo do Visual Studio que foi implantado em um computador diferente. Para fazer isso, você deve usar o depurador remoto do Visual Studio.
@@ -40,7 +40,7 @@ Para obter instruções detalhadas sobre a depuração remota, consulte estes t�
 |-|-|-|
 |Serviço de Aplicativo do Azure|[Depurador de instantâneo](../debugger/debug-live-azure-applications.md) ou [remoto depurar ASP.NET no Azure](../debugger/remote-debugging-azure.md)|
 |VM do Azure|[Depuração remota ASP.NET no Azure](../debugger/remote-debugging-azure.md)|
-|Malha do serviço do Azure|[Depurar um aplicativo do Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
+|Azure Service Fabric|[Depurar um aplicativo do Azure Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
 |ASP.NET|[Remoto depurar ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) ou [ASP.NET de depuração remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C# ou Visual Basic|[Depuração remota de um projeto C# ou Visual Basic](../debugger/remote-debugging-csharp.md)|
 |C++|[Depuração remota de um projeto em C++](../debugger/remote-debugging-cpp.md)|
@@ -52,7 +52,7 @@ Se você apenas deseja baixar e instalar o depurador remoto e não é necessári
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="fileshare_msvsmon"></a>(Opcional) Para executar o depurador remoto de um compartilhamento de arquivo
+### <a name="fileshare_msvsmon"></a> (Opcional) Para executar o depurador remoto de um compartilhamento de arquivo
 
 Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com Visual Studio Community, Professional ou Enterprise já instalado. Para alguns cenários, a maneira mais fácil de configurar a depuração remota é executar o depurador remoto (msvsmon.exe) de um compartilhamento de arquivos. Para limitações de uso, consulte a página de Ajuda do depurador remoto (**Ajuda > uso** no depurador remoto).
 
@@ -77,7 +77,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a>Configurar o depurador remoto  
+### <a name="configure_msvsmon"></a> Configurar o depurador remoto  
 Depois de ele ter iniciado pela primeira vez, você pode alterar alguns aspectos da configuração do depurador remoto.
   
 -   Se você precisa adicionar permissões para outros usuários para se conectar ao depurador remoto, escolha **Ferramentas > permissões**. Você deve ter privilégios de administrador para conceder ou negar permissões.
@@ -94,7 +94,7 @@ Depois de ele ter iniciado pela primeira vez, você pode alterar alguns aspectos
      > [!WARNING]
      >  Você também pode optar por executar as ferramentas remotas no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo não há nenhuma segurança de rede. Escolha o modo sem autenticação somente se você tiver certeza de que a rede não está em risco de tráfego mal-intencionado ou hostil.
 
-##  <a name="bkmk_configureService"></a>(Opcional) Configurar o depurador remoto como um serviço
+##  <a name="bkmk_configureService"></a> (Opcional) Configurar o depurador remoto como um serviço
 Para a depuração do ASP.NET e outros ambientes de servidor, você deve executar o depurador remoto como um administrador ou, se você deseja que ele sempre em execução, executar o depurador remoto como um serviço.
   
  Se você quiser configurar o depurador remoto como um serviço, siga estas etapas.  

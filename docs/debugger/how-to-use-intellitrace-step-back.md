@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Etapa-back de instantâneos de modo de exibição usando o IntelliTrace no Visual Studio
 
@@ -39,11 +39,11 @@ Neste tutorial, você irá:
 
 1. Abra seu projeto no Visual Studio Enterprise.
 
-1. Vá para **Ferramentas > Opções > IntelliTrace** configurações e selecione a opção **IntelliTrace eventos e instantâneos**. 
+1. Abra **ferramentas** > **opções** > **IntelliTrace** configurações e selecione a opção **IntelliTrace eventos e instantâneos** . 
 
     ![Habilitar o modo de eventos do IntelliTrace e instantâneos](../debugger/media/intellitrace-enable-snapshots.png "ativar eventos do IntelliTrace e instantâneos de modo")
 
-1. Definir um ou mais pontos de interrupção em seu projeto e iniciar a depuração (pressione **F5**), ou iniciar a depuração, percorrendo o código (**F10** ou **F11**).
+1. No seu projeto, defina um ou mais pontos de interrupção e iniciar a depuração (pressione **F5**), ou iniciar a depuração, percorrendo o código (**F10** ou **F11**).
 
     IntelliTrace tira um instantâneo do processo do aplicativo no depurador de cada evento de etapa e o ponto de interrupção. Esses eventos são registrados no **eventos** guia o **ferramentas de diagnóstico** janela, juntamente com outros eventos do IntelliTrace. Para abrir essa janela, escolha **depurar** > **Windows** > **Mostrar ferramentas de diagnóstico**.
 

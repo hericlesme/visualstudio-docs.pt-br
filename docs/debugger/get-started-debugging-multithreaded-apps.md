@@ -1,13 +1,13 @@
 ---
-title: "Começar a depurar aplicativos multithread | Microsoft Docs"
+title: Começar a depurar aplicativos multithread | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Começar a depuração de um aplicativo multithread no Visual Studio
 Visual Studio fornece várias ferramentas e elementos de interface do usuário para ajudá-lo a depurar aplicativos multithread. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Este tutorial leva apenas alguns minutos, mas concluí-la irá familiarizá-lo com os recursos para depurar aplicativos multithread.
@@ -319,7 +319,7 @@ Você pode sinalizar threads para dar atenção especial. Sinalizar threads é u
 
 Para sinalizar threads, clique uma ou mais threads sinalizados no **inspeção paralela** janela e escolha **Unflag**.
 
-## <a name="bkmk_freeze"></a>Congelar e descongelar a execução do thread 
+## <a name="bkmk_freeze"></a> Congelar e descongelar a execução do thread 
 
 > [!TIP]
 > Você pode congelar e descongelar (suspender e retomar) threads para controlar a ordem na qual os threads executam trabalho. Isso pode ajudá-lo a resolver problemas de simultaneidade, como deadlocks e condições de corrida.
@@ -340,7 +340,7 @@ Para sinalizar threads, clique uma ou mais threads sinalizados no **inspeção p
 
     O aplicativo também pode criar uma instância de alguns novos threads. Observe que quaisquer novos threads são sem sinalizador e não estão congelados.
 
-## <a name="bkmk_follow_a_thread"></a>Execute um único Thread usando pontos de interrupção condicionais
+## <a name="bkmk_follow_a_thread"></a> Execute um único Thread usando pontos de interrupção condicionais
 
 Às vezes, pode ser útil acompanhar a execução de um único thread no depurador. Uma forma que você pode fazer isso é congelando threads que não estão interessados em, mas em alguns cenários, talvez seja conveniente seguir um único thread sem congelamento de outros threads (para reprodução de um determinado erro, por exemplo). Para seguir um segmento sem congelamento de outros threads, você deve evitar dividir em código, exceto no thread que você está interessado. Você pode fazer isso definindo uma [ponto de interrupção condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
