@@ -1,23 +1,26 @@
 ---
-title: "Erro: Modo misto depuração para processos x64 é suportada apenas ao usar o Microsoft .NET Framework 4 ou superior | Microsoft Docs"
-ms.custom: 
+title: 'Erro: Modo misto depuração para processos x64 é suportada apenas ao usar o Microsoft .NET Framework 4 ou superior | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: vs.debug.error.interop_unsupported_x64
+f1_keywords:
+- vs.debug.error.interop_unsupported_x64
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 87ca4ffe1a80d6d6fdc948c3a1617f888aba4baf
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,13 +1,15 @@
 ---
-title: "Habilitando recursos de depuração no Visual C++ (-/d_debug) | Microsoft Docs"
-ms.custom: 
+title: Habilitando recursos de depuração no Visual C++ (-/d_debug) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: vs.debug
+f1_keywords:
+- vs.debug
 dev_langs:
 - CSharp
 - VB
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - debug builds, MFC
 - _DEBUG macro
 ms.assetid: 276e2254-7274-435e-ba4d-67fcef4f33bc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0f1067ee5b60b8a8a402c9612357f2d83b6da138
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

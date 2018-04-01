@@ -1,23 +1,26 @@
 ---
-title: "Erro: O servidor Web não foi possível localizar o recurso solicitado | Microsoft Docs"
-ms.custom: 
+title: 'Erro: O servidor Web não foi possível localizar o recurso solicitado | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, Web application errors
-caps.latest.revision: "9"
+helpviewer_keywords:
+- debugger, Web application errors
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 9d5cc83d8d2d0b37d3bb7203e1a20c93478fb96b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -1,20 +1,24 @@
 ---
-title: "Função SccBackgroundGet | Microsoft Docs"
-ms.custom: 
+title: Função SccBackgroundGet | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: SccBackgroundGet
-helpviewer_keywords: SccBackgroundGet function
+f1_keywords:
+- SccBackgroundGet
+helpviewer_keywords:
+- SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b63a7e8c9a6b2a4f2539cd6a8426ba9df365ab76
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

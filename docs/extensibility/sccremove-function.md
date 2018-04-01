@@ -1,20 +1,24 @@
 ---
-title: "Função SccRemove | Microsoft Docs"
-ms.custom: 
+title: Função SccRemove | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: SccRemove
-helpviewer_keywords: SccRemove function
+f1_keywords:
+- SccRemove
+helpviewer_keywords:
+- SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5f4d7d76e80fa165206a3faa53835b74c2716d94
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

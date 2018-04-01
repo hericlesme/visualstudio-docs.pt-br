@@ -1,20 +1,24 @@
 ---
 title: ': Get_hasmanagedcode | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: IDiaSymbol::get_hasManagedCode method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDiaSymbol::get_hasManagedCode method
 ms.assetid: e40f82f5-88fe-4a9b-b594-3605f42773ec
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 7cdd260deb348cd9d8986f74cea850086dcf0c41
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

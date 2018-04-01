@@ -1,20 +1,24 @@
 ---
-title: "Função SccCloseProject | Microsoft Docs"
-ms.custom: 
+title: Função SccCloseProject | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-f1_keywords: SccCloseProject
-helpviewer_keywords: SccCloseProject function
+f1_keywords:
+- SccCloseProject
+helpviewer_keywords:
+- SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 70b0e693f4223c9fe004170a0ed1b4b70c6de442
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

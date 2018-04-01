@@ -1,20 +1,24 @@
 ---
 title: Personalizado (Debug Interface Access SDK) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: Custom symbol
+dev_langs:
+- C++
+helpviewer_keywords:
+- Custom symbol
 ms.assetid: a219fc83-d2a8-4bc5-b7e1-bfafeb247f16
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 0e367a96bd24840e734ada21d45ee35dfaee36b1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

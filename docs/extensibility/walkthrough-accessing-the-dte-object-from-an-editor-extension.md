@@ -1,19 +1,22 @@
 ---
-title: "Passo a passo: Acessando o objeto DTE de uma extensão de Editor | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Acessando o objeto DTE de uma extensão de Editor | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], new - getting the DTE object
+helpviewer_keywords:
+- editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: af14fa5f9a76e08a1fba3355e9391ce8229bd652
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
