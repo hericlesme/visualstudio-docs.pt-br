@@ -1,12 +1,13 @@
 ---
-title: "Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js | Microsoft Docs"
-ms.custom: 
+title: 'Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js | Microsoft Docs'
+description: Neste guia de início rápido, você cria um aplicativo Node.js no Visual Studio
+ms.custom: ''
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -17,11 +18,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8597d7ee61820afdd8fcfdbff9cdb5be8dfaa61c
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Node.js
 Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Node.js simples. Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.  
@@ -29,21 +30,21 @@ Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integra
 ## <a name="create-a-project"></a>Criar um projeto
 Primeiro, você criará um projeto de aplicativo Web Node.js.
 
+1. Se não tiver o tempo de execução do Node.js instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/).
+
+    Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para referenciar o tempo de execução instalado.
+
 1. Abra o Visual Studio 2017.  
 
-2. Na barra de menus superior, selecione **Arquivo** > **Novo** > **Projeto...**.  
+1. Na barra de menus superior, selecione **Arquivo** > **Novo** > **Projeto...**.  
 
-3. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em branco** e, em seguida, escolha **OK**.   
+1. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em branco** e, em seguida, escolha **OK**.   
 
      Se você não vir o modelo de projeto do **Aplicativo Web Node.js em branco**, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.  
 
      ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)  
 
-    O Visual Studio cria a nova solução e abre o projeto. **Server.js** aberto no editor.
-
-4. Se você não tiver o tempo de execução do Node.js já instalado, instale-o do site do [Node.js](https://nodejs.org/en/download/).
-
-    Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para referenciar o tempo de execução instalado.
+    O Visual Studio cria a nova solução e abre o projeto. *server.js* é aberto no editor no painel esquerdo.
 
 ## <a name="explore-the-ide"></a>Explorar o IDE  
 
@@ -61,11 +62,11 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
    ![Prompt de comando do Node.js](../ide/media/quickstart-nodejs-command-prompt.png) 
 
-1. No arquivo **server.js** no editor (painel esquerdo), escolha `http.createServer` e pressione **F12** ou escolha **Ir para Definição** no menu de contexto (acessado com o clique do botão direito do mouse). Esse comando acessará a definição da função `createServer` em index.d.ts.  
+1. No arquivo *server.js* no editor (painel esquerdo), escolha `http.createServer` e pressione **F12** ou escolha **Ir para Definição** no menu de contexto (acessado com o clique do botão direito do mouse). Esse comando acessará a definição da função `createServer` em index.d.ts.  
 
    ![Menu de contexto de Ir para Definição](../ide/media/quickstart-nodejs-gotodefinition.png)  
 
-1. Coloque o cursor no final da cadeia de caracteres nesta linha de código, `res.end('Hello World\n');`, e modifique-o para que fique assim:
+1. Volte para *server.js*, coloque o cursor no final da cadeia de caracteres nesta linha de código, `res.end('Hello World\n');` e modifique-a para que fique assim:
 
     `res.end('Hello World\n' + res.connection.`
 
@@ -88,6 +89,5 @@ Parabéns por concluir este guia de início rápido! Esperamos que você tenha a
 
 ## <a name="next-steps"></a>Próximas etapas 
 
-- Passar pelo [Tutorial para Node.js](../nodejs/tutorial-nodejs.md)  
-- Saiba mais sobre o [IDE do Visual Studio](../ide/visual-studio-ide.md)  
-- Saiba mais sobre as [Ferramentas Node.js para Visual Studio](https://github.com/Microsoft/nodejstools/wiki)
+- Veja o [Tutorial para Node.js e Express](../nodejs/tutorial-nodejs.md)  
+- Veja o [Tutorial para Node.js e React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)  

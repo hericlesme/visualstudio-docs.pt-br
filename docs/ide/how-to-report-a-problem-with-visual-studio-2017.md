@@ -1,10 +1,10 @@
 ---
 title: Como relatar um problema com o Visual Studio 2017 | Microsoft Docs
-ms.custom: 
-ms.date: 02/26/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.date: 03/11/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +13,11 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Como relatar um problema com o Visual Studio 2017
 
@@ -69,7 +69,7 @@ Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar 
 
  Escolha o botão **Enviar** para enviar seu relatório, juntamente com as imagens e os arquivos de despejo ou de rastreamento. (Se o botão **Enviar** estiver esmaecido, verifique se você forneceu um título e uma descrição para o relatório.)
 
-## Relatórios alternativos <a name="alternate_reporting"></a>
+## Alternativas de relatórios <a name="alternate_reporting"></a>
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Relatar um problema ao usar o Instalador do Visual Studio
 
@@ -77,9 +77,9 @@ Se não for possível concluir a instalação do Visual Studio ou acessar a ferr
 
  ![É possível pressionar Tab até acessar o botão Fornecer Comentários no Instalador do Visual Studio para abrir a ferramenta de comentários](../install/media/report-a-problem.png)
 
-### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>Relatar um problema diretamente para a comunidade de desenvolvedores do Visual Studio
+### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Pesquise problemas e soluções usando a comunidade de desenvolvedores do Visual Studio
 
-Se você não quiser ou não puder usar o Visual Studio para relatar um problema, poderá fazer isso diretamente na comunidade de desenvolvedores do Visual Studio. Para obter mais informações, consulte a página da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/).
+Se você não quiser ou não puder usar o Visual Studio para relatar um problema, há a possibilidade de que o problema já tenha sido relatado e uma solução tenha sido postada na comunidade de desenvolvedores do Visual Studio. Para obter mais informações, consulte a página da [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/).
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>Fornecer comentários sobre o produto ou uma sugestão
 

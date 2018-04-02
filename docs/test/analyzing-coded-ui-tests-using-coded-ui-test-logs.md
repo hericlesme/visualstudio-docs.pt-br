@@ -1,112 +1,89 @@
 ---
-title: Analisando testes de IU codificado usando logs de teste de IU codificado | Microsoft Docs
-ms.custom: 
+title: Analisando testes de IU codificado usando logs de teste de IU codificado no Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: c768eda5d1b4c6b181f2b301397b050b5f7fbe99
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: a2dcc590dfa6cb6c7a9d4b61acba1178295f8405
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
-Os logs de teste de IU codificado filtram e registram informações importantes sobre as execuções de teste de IU codificado.  
-  
- **Requisitos**  
-  
--   Visual Studio Enterprise  
-  
-## <a name="why-should-i-do-this"></a>Por que devo fazer isso?  
- Os logs são apresentados em um formato que permite depurar os problemas rapidamente.  
-  
-## <a name="how-do-i-do-this"></a>Como faço isso?  
-  
-### <a name="step-1-enable-logging"></a>Etapa 1: Habilitar registro em log  
- De acordo com seu cenário, use um destes métodos para habilitar o log.  
-  
--   Usar a versão 4 do .NET Framework sem arquivo App.config no projeto de teste  
-  
-    -   Abra o arquivo **QTAgent32_40.exe.config**.  
-  
-         Por padrão, esse arquivo está localizado em **\<drive>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Modifique o valor de EqtTraceLevel, informando o nível de log desejado.  
-  
-         Salve o arquivo.  
-  
--   Usar a versão 4.5 do .NET Framework sem arquivo App.config no projeto de teste  
-  
-    -   Abra o arquivo **QTAgent32.exe.config**.  
-  
-         Por padrão, esse arquivo está localizado em **\<drive>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Modifique o valor de EqtTraceLevel, informando o nível de log desejado.  
-  
-         Salve o arquivo.  
-  
--   Arquivo App.config presente no projeto de teste  
-  
-    -   Abra o arquivo App.config no projeto.  
-  
-         Acrescente este código ao nó de configuração:  
-  
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
-  
--   Habilitar o registro em logs do próprio código de teste  
-  
-    -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
-  
-### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Etapa 2: Execute o teste de IU codificado e veja o log  
- Quando executar um teste de IU codificado com as modificações no arquivo **QTAgent32.exe.config**, você verá um link de saída nos resultados do Gerenciador de Testes. Os arquivos de log são gerados não apenas quando o teste falha, mas também quando o nível de rastreamento está definido como "detalhado" e os testes são bem-sucedidos.  
-  
-1.  No menu **TESTE**, escolha a opção **Windows** e **Gerenciador de Testes**.  
-  
-2.  No menu **COMPILAR**, escolha **Compilar Solução**.  
-  
-3.  No Gerenciador de Testes, selecione o teste de IU codificado que você deseja executar, abra seu menu de atalho e escolha em **Executar Testes Selecionados**.  
-  
-     Os testes automatizados será executados e indicarão se passaram ou falharam.  
-  
+
+Os logs de teste de IU codificado filtram e registram informações importantes sobre as execuções de teste de IU codificado. Os logs são apresentados em um formato que permite depurar os problemas rapidamente.
+
+## <a name="step-1-enable-logging"></a>Etapa 1: Habilitar registro em log
+
+De acordo com seu cenário, use um destes métodos para habilitar o log:
+
+- Use a versão 4 do .NET Framework sem arquivo *App.config* no projeto de teste:
+
+   1. Abra o arquivo **QTAgent32_40.exe.config**. Por padrão, esse arquivo fica localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+
+   2. Modifique o valor de EqtTraceLevel, informando o nível de log desejado.
+
+   3. Salve o arquivo.
+
+- Use a versão 4.5 do .NET Framework sem arquivo *App.config* no projeto de teste:
+
+   1. Abra o arquivo **QTAgent32.exe.config**. Por padrão, esse arquivo fica localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+
+   2. Modifique o valor de EqtTraceLevel, informando o nível de log desejado.
+
+   3. Salve o arquivo.
+
+- O arquivo *App.config* está presente no projeto de teste:
+
+    - Abra o arquivo *App.config* no projeto e adicione o seguinte código sob o nó de configuração:
+
+      ```xml
+      <system.diagnostics>
+        <switches>
+          <add name="EqtTraceLevel" value="4" />
+        </switches>
+      </system.diagnostics>`
+      ```
+
+- Habilitar registro em log do próprio código de teste:
+
+   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Etapa 2: Execute o teste de IU codificado e veja o log
+
+Quando executar um teste de IU codificado com as modificações no arquivo **QTAgent32.exe.config**, você verá um link de saída nos resultados do Gerenciador de Testes. Os arquivos de log são gerados não apenas quando o teste falha, mas também quando o nível de rastreamento está definido como "detalhado" e os testes são bem-sucedidos.
+
+1.  No menu **Teste**, escolha a opção **Windows** e selecione **Gerenciador de Testes**.
+
+2.  No menu **Compilar**, escolha **Compilar Solução**.
+
+3.  No Gerenciador de Testes, selecione o teste de IU codificado que você deseja executar, abra seu menu de atalho e escolha em **Executar Testes Selecionados**.
+
+     Os testes automatizados são executados e indicam se passaram ou falharam.
+
     > [!TIP]
-    >  Para exibir o Gerenciador de Testes no **Menu de Teste**, aponte para **Windows** e escolha **Gerenciador de Testes**.  
-  
-4.  Clique no link **Saída** nos resultados do Gerenciador de Testes.  
-  
-     ![Link de saída no Gerenciador de Testes](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")  
-  
-     Essa ação exibe a saída do teste, que inclui um link ao log de ações.  
-  
-     ![Resultados e links de saída do teste de interface do usuário codificada](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")  
-  
-5.  Escolha o link UITestActionLog.html.  
-  
-     O log é exibido em seu navegador da Web.  
-  
-     ![Arquivo de log de teste de IU codificado](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")  
-  
-## <a name="q--a"></a>Perguntas e respostas  
-  
-### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>P: O que aconteceu com a chave EnableHtmlLogger?  
- Havia duas ou mais definições de configuração para habilitar o agente HTML em testes de IU codificados nas versões anteriores do Visual Studio:  
-  
-```  
-  
-<add key="EnableHtmlLogger" value="true"/>  
-  
-<add key="EnableSnapshotInfo" value="true"/>  
-  
-```  
-  
- Essas duas definições foram preteridas no Visual Studio 2012. EqtTraceLevel é a única definição que precisa ser modificada para habilitar o HtmlLogger.  
-  
-## <a name="see-also"></a>Consulte também  
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Como executar testes no Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+    > Para exibir o Gerenciador de Testes, escolha **Teste** > **Windows** e escolha **Gerenciador de Testes**.
+
+4.  Clique no link **Saída** nos resultados do Gerenciador de Testes.
+
+     ![Link de saída no Gerenciador de Testes](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+
+     Essa ação exibe a saída do teste, que inclui um link ao log de ações.
+
+     ![Resultados e links de saída do teste de interface do usuário codificada](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+
+5.  Escolha o link *UITestActionLog.html*.
+
+     O log é exibido em seu navegador da Web.
+
+     ![Arquivo de log de teste de IU codificado](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+
+## <a name="see-also"></a>Consulte também
+
+- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
+- [Como executar testes no Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

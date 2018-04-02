@@ -1,11 +1,12 @@
 ---
-title: "Caixa de diálogo Geral, Ambiente, Opções | Microsoft Docs"
-ms.custom: 
+title: Caixa de diálogo Geral, Ambiente, Opções | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.Message.0x800a002e
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c434b60efa054dbadcb8ef24470ed135d450e12
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Caixa de diálogo Geral, Ambientes, Opções
 
@@ -49,7 +51,7 @@ Use esta página para alterar temas de cores, configurações de barra de status
 
 Escolha o tema de cor **Azul**, **Claro** ou **Escuro** para o IDE.
 
-É possível instalar temas predefinidos adicionais e criar temas personalizados, baixando e instalando o **Visual Studio Color Theme Editor** do [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Após você instalar essa ferramenta, temas de cores adicionais aparecem na caixa de listagem Tema da cor.
+É possível instalar temas predefinidos adicionais e criar temas personalizados, baixando e instalando o **Visual Studio Color Theme Editor** do [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Após você instalar essa ferramenta, temas de cores adicionais aparecem na caixa de listagem Tema da cor.
 
 **Aplicar a capitalização de título à barra de menus**
 
@@ -69,22 +71,17 @@ Usa aceleração de elementos gráficos de hardware se estiver disponível, em v
 
 ## <a name="other"></a>Outros
 
-**Itens mostrados no menu Janela**  
-Personaliza o número de janelas que aparecem na lista Janelas do menu **Janela**. Digite um número entre 1 e 24. Por padrão, o número é 10.
+**Itens mostrados no menu Janela** Personaliza o número de janelas que aparecem na lista Janelas do menu **Janela**. Digite um número entre 1 e 24. Por padrão, o número é 10.
 
-**Itens mostrados em listas usadas recentemente**  
-Personaliza o número de projetos e arquivos usados mais recentemente que aparecem no menu **Arquivo**. Digite um número entre 1 e 24. Por padrão, o número é 10. Esta é uma maneira fácil de recuperar projetos e arquivos usados recentemente.
+**Itens mostrados em listas usadas recentemente** Personaliza o número de projetos e arquivos usados mais recentemente que aparecem no menu **Arquivo**. Digite um número entre 1 e 24. Por padrão, o número é 10. Esta é uma maneira fácil de recuperar projetos e arquivos usados recentemente.
 
-**Mostrar barra de status**  
-Exibe a barra de status. A barra de status fica localizada na parte inferior da janela do IDE e exibe informações sobre o progresso das operações em andamento.
+**Mostrar barra de status** Exibe a barra de status. A barra de status fica localizada na parte inferior da janela do IDE e exibe informações sobre o progresso das operações em andamento.
 
-**Botão Fechar afeta apenas a janela da ferramenta ativa**  
-Especifica que, quando o botão **Fechar** é acionado, somente a janela da ferramenta que está em foco é fechada, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção é selecionada.
+**Botão Fechar afeta apenas a janela de ferramentas ativa** Especifica que, quando o botão **Fechar** é acionado, somente a janela de ferramentas que está em foco é fechada e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção é selecionada.
 
-**Botão Ocultar Automaticamente afeta apenas a janela da ferramenta ativa**  
-Especifica que, quando o botão **Ocultar Automaticamente** é acionado, somente a janela da ferramenta que está em foco é ocultada automaticamente, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção não é selecionada.
+**Botão Ocultar Automaticamente afeta apenas a janela de ferramentas ativa** Especifica que, quando o botão **Ocultar Automaticamente** é acionado, somente a janela de ferramentas que está em foco é ocultada automaticamente e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção não é selecionada.
 
 ## <a name="see-also"></a>Consulte também
 
-[Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)  
+[Caixa de diálogo de opções do ambiente](../../ide/reference/environment-options-dialog-box.md)
 [Personalizando layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)

@@ -1,15 +1,15 @@
 ---
 title: Instalar suporte do Python no Visual Studio | Microsoft Docs
-description: "Instruções detalhadas sobre como instalar as Ferramentas Python para Visual Studio (PTVS) no Visual Studio 2017, 2015, 2013, 2012 e 2010, incluindo opções e locais de instalação."
-ms.custom: 
+description: Instruções detalhadas sobre como instalar as Ferramentas Python para Visual Studio (PTVS) no Visual Studio 2017, 2015, 2013, 2012 e 2010, incluindo opções e locais de instalação.
+ms.custom: ''
 ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: faa901c14bd5d115aa3e7384a5d3b63c0410b64b
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalando o suporte do Python no Visual Studio no Windows
 
@@ -43,7 +43,7 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Baixe e execute o Instalador do Visual Studio 2017 mais recente. Se você já tiver o Visual Studio instalado, execute o instalador do Visual Studio e vá para a etapa 2.
+1. Baixe e execute o Instalador do Visual Studio 2017 mais recente. Se já tiver o Visual Studio instalado, execute o instalador do Visual Studio, selecione as opções **Modificar** (consulte [Modificar o Visual Studio](../install/modify-visual-studio.md)) e vá para a etapa 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Instalar Visual Studio 2017 Community</a>

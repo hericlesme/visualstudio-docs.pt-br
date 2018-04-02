@@ -1,11 +1,11 @@
 ---
-title: "Bibliografia de segurança | Microsoft Docs"
-ms.custom: 
+title: Bibliografia de segurança | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], additional information
@@ -15,22 +15,16 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2186630e5c93254f38bfb4bcd05fc74d73ba67e2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8d3db09285e0a7bb76a38e03a1fee467a9891843
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="security-bibliography"></a>Bibliografia de segurança
 
-Veja a seguir os recursos selecionados disponíveis online e uma cópia impressa sobre o assunto de desenvolver aplicativos seguros e como configurar ambientes seguros:  
-  
-## <a name="microsoft-web-sites"></a>Sites da Microsoft  
- [Segurança da Microsoft](http://go.microsoft.com/fwlink/?LinkId=55529)  
- Saiba como a Microsoft está trabalhando para ajudá-lo a manter seus aplicativos e sistemas seguros, desde a área de trabalho até sistemas de rede, com links para recursos de segurança para profissionais de TI, desenvolvedores e usuários domésticos.  
-  
- [Recursos de segurança no MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
- Documentação voltada para o desenvolvedor, exemplos de código, artigos técnicos e outros recursos para desenvolver aplicativos seguros.  
-  
- [Segurança do Microsoft TechNet](http://go.microsoft.com/fwlink/?LinkId=67991)  
- Contém ponteiros para as informações técnicas mais importantes sobre segurança para profissionais de TI e “usuários avançados”.
+Veja a seguir recursos selecionados que contêm informações sobre o desenvolvimento de aplicativos seguros e a configuração de ambientes seguros:
+
+[Segurança da Microsoft](https://www.microsoft.com/security/default.aspx)&mdash;Saiba como a Microsoft está trabalhando para ajudá-lo a manter seus aplicativos e sistemas em segurança, desde a área de trabalho até os sistemas de rede, com links para recursos de segurança para profissionais de TI, desenvolvedores e usuários domésticos.
+
+[Recursos de segurança no MSDN](https://technet.microsoft.com/security/)&mdash;Encaminha você para documentação voltada para o desenvolvedor, exemplos de código, artigos técnicos e outros recursos para desenvolver aplicativos seguros.

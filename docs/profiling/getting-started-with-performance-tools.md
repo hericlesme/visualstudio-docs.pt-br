@@ -1,30 +1,30 @@
 ---
-title: "Introdução às Ferramentas de Desempenho | Microsoft Docs"
-ms.custom: 
+title: Introdução às ferramentas de desempenho | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="getting-started-with-performance-tools"></a>Introdução às Ferramentas de Desempenho
+# <a name="getting-started-with-performance-tools"></a>Introdução às ferramentas de desempenho
 Esta seção fornece uma visão geral dos conceitos e tarefas que você aplicará ao coletar, exibir e analisar o desempenho do código usando as Ferramentas de Desempenho do Visual Studio.  
   
  Essas ferramentas fornecem várias maneiras de coletar e analisar dados de desempenho. Mas, em muitos casos, a melhor maneira de começar é usar as configurações padrão do Assistente de Desempenho, o que lhe permite coletar estatísticas do aplicativo que podem indicar problemas de desempenho em seu código.  
@@ -39,7 +39,6 @@ Esta seção fornece uma visão geral dos conceitos e tarefas que você aplicar�
 |----------|---------------------|  
 |**Criar rapidamente o perfil de um aplicativo ou site da Web:** use o Assistente de Desempenho para configurar e executar uma sessão de criação de perfil para um site da Web ou solução do Visual Studio.|-   [Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [Como coletar dados de desempenho de um site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**Criar o perfil de um aplicativo sem o assistente:** saiba como usar as páginas de propriedade de sessão de desempenho para criar uma sessão de desempenho.|-   [Como criar manualmente sessões de desempenho](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Experimente:** tenha experiência prática fazendo o perfil de um aplicativo de exemplo.|-   [Passo a passo: Identificando problemas de desempenho](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Amostra de PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   

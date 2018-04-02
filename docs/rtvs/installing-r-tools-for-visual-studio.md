@@ -1,13 +1,13 @@
 ---
 title: Instalando as Ferramentas do R para Visual Studio | Microsoft Docs
-description: "Como instalar as Ferramentas do R para Visual Studio no Visual Studio 2017 e no Visual Studio 2015, incluindo instalações offline."
-ms.custom: 
+description: Como instalar as Ferramentas do R para Visual Studio no Visual Studio 2017 e no Visual Studio 2015, incluindo instalações offline.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 dev_langs:
 - R
 ms.topic: article
@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Como instalar as Ferramentas do R para Visual Studio
 
@@ -36,7 +36,7 @@ Neste artigo:
 
 ## <a name="supported-versions-of-visual-studio"></a>Versões do Visual Studio com suporte
 
-Há suporte para as RTVS (Ferramentas do R para Visual Studio) no Windows nas edições Enterprise, Professional e Community (gratuita) do [Visual Studio 2017](https://www.visualstudio.com/downloads/) e [Visual Studio 2015 Atualização 3 (ou superior)](http://go.microsoft.com/fwlink/?LinkId=691129) (download direto).
+Há suporte para as RTVS (Ferramentas do R para Visual Studio) no Windows nas edições Enterprise, Professional e Community (gratuita) do [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) e [Visual Studio 2015 Atualização 3 (ou superior)](http://go.microsoft.com/fwlink/?LinkId=691129) (download direto).
 
 No momento, não há suporte para as RTVS no Visual Studio para Mac.
 
@@ -44,7 +44,7 @@ As RTVS não serão instaladas se você tiver somente o Shell do Visual Studio i
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalando as RTVS no Visual Studio 2017
 
-1. Execute o instalador do Visual Studio. (Consulte [Downloads](https://www.visualstudio.com/downloads/) se você ainda não tiver o Visual Studio instalado.) No Windows 7, certifique-se de que o instalador esteja atualizado para mostrar a versão do Visual Studio 2017 versão *15.2 build 26430.12* ou posterior.
+1. Execute o instalador do Visual Studio e selecione a opção **Modificar** (para obter detalhes, consulte [Modificar o Visual Studio](../install/modify-visual-studio.md)). Consulte [Instalar o Visual Studio](../install/install-visual-studio.md) se você ainda não tiver o Visual Studio instalado. No Windows 7, certifique-se de que o instalador esteja atualizado para mostrar a versão do Visual Studio 2017 versão *15.2 build 26430.12* ou posterior.
 
 1. Selecione a carga de trabalho **Ciência de dados e aplicativos analíticos**:
 
@@ -86,7 +86,7 @@ A instalação offline é adequada para computadores que não estão conectados 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Para o Visual Studio 2015, baixe os instaladores das RTVS offline em [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) e em [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
+1. Para o Visual Studio 2015, baixe os instaladores da RTVS offline de [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) e [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
 1. Instale o Visual Studio e as RTVS dos instaladores offline.
 

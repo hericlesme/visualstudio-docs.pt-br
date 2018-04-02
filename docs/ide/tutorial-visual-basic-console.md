@@ -1,12 +1,12 @@
 ---
-title: "Introdução ao Visual Basic no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Introdução ao Visual Basic no Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 12/08/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3df1f9c2f7fc2af97bc5541d313df58da5907cea
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Introdução ao Visual Basic no Visual Studio
 Neste tutorial para o Visual Basic (VB), você usará o Visual Studio para criar e executar alguns aplicativos de console diferentes e explorar alguns recursos do [IDE (ambiente de desenvolvimento integrado)](visual-studio-ide.md) do Visual Studio enquanto isso.
@@ -125,9 +125,9 @@ Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e 
 
     ![Janela do console mostrando o aplicativo CaluculateThis, que inclui solicitações de ações a serem tomadas.](../ide/media/vb-console-calculate-this.png)
 
-Parabéns por concluir este tutorial.
+## <a name="next-steps"></a>Próximas etapas
+Parabéns por concluir este tutorial. Para saber ainda mais sobre o Visual Basic e o IDE do Visual Studio, consulte as páginas a seguir.
 
-## <a name="see-also"></a>Consulte também
 * [Guia do Visual Basic](/dotnet/visual-basic/index)
 * [Novidades no Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense para arquivos de código do Visual Basic](visual-basic-specific-intellisense.md)

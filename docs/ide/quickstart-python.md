@@ -1,13 +1,13 @@
 ---
-title: "Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Web Python | Microsoft Docs"
-description: "Uma breve introdução ao uso de Python no Visual Studio que compila um aplicativo Web simples usando a estrutura do Falcon."
-ms.custom: 
-ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+title: 'Início rápido: usar o Visual Studio para criar seu primeiro aplicativo Web Python | Microsoft Docs'
+description: Uma breve introdução ao uso de Python no Visual Studio que compila um aplicativo Web simples usando a estrutura do Falcon.
+ms.custom: ''
+ms.date: 03/14/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web Python
 
-Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Python simples. Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
+Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo Web Python simples. Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente. No instalador, selecione a carga de trabalho de **Desenvolvimento de Python**.
 
 ## <a name="create-the-project"></a>Criar o projeto
 
@@ -130,7 +130,7 @@ Para obter mais informações sobre Falcon, consulte o [Início rápido de Falco
 
 1. Clique com o botão direito do mouse no projeto “Olá, Python” no **Gerenciador de Soluções** e selecione **Propriedades**. Selecione a guia **Depurar** e defina a propriedade **Número da porta** para `8080`. Essa etapa garante que o Visual Studio inicie um navegador com `localhost:8080` em vez de usar uma porta aleatória.
 
-1. Selecione **Depurar > Iniciar Sem Depuração** (Ctrl+F5) para salvar as alterações nos arquivos e executar o aplicativo.
+1. Selecione **Depurar > Iniciar Sem Depuração** (Ctrl + F5) para salvar as alterações nos arquivos e executar o aplicativo.
 
 1. Aparece uma janela de comando com a mensagem “Iniciando servidor de aplicativo Web”, em seguida, uma janela do navegador deverá ser aberta para `localhost:8080`, exibindo a mensagem “Olá, Python!” A solicitação GET também aparece na janela de comando.
 

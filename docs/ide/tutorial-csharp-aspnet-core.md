@@ -1,12 +1,12 @@
 ---
-title: "Introdução a C# e ASP.NET Core no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Introdução a C# e ASP.NET Core no Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 12/11/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Introdução a C# e ASP.NET no Visual Studio
 Neste tutorial para desenvolvimento em C# com ASP.NET Core usando o Visual Studio, você criará um aplicativo Web C# ASP.NET Core, adicionará código a ele, explorará alguns recursos do IDE e executará o aplicativo.
@@ -61,7 +61,7 @@ Se o modelo de projeto **Aplicativo Web do ASP.NET Core** não for exibido, voc�
 
 2. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
 
-   ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](../ide/media/asp-dot-net-web-dev-workload.png)
+   ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: usar a barra de menus Ferramentas
 1. Cancele a caixa de diálogo **Novo Projeto** e, na barra de menus superior, escolha **Ferramentas** > **Obter Ferramentas e Recursos...**.
@@ -167,12 +167,9 @@ O padrão MVC ajuda a criar aplicativos que são mais fáceis de testar e atuali
 
  ![Clique no botão Parar Depuração na barra de ferramentas](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>Próximas etapas
 
-Parabéns por concluir este tutorial.
+Parabéns por concluir este tutorial. Esperamos que você tenha aprendido um pouco sobre o C#, o ASP.NET Core e o IDE do Visual Studio. Para saber ainda mais, continue com o tutorial a seguir.
 
-## <a name="see-also"></a>Consulte também
-* [Introdução ao ASP.NET Core MVC e ao Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [Introdução a Páginas do Razor no ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [Novidades no C#](/dotnet/csharp/whats-new)
-* [Referência da linguagem C#](/dotnet/csharp/language-reference/index)
-* Curso em vídeo [Conceitos básicos do C# para iniciantes completos](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169)
+ > [!div class="nextstepaction"]
+ > [Introdução ao ASP.NET Core MVC e ao Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

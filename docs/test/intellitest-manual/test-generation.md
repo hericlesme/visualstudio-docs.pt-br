@@ -1,11 +1,7 @@
 ---
-title: "Geração de teste | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest | Microsoft Docs"
-ms.custom: 
+title: Geração de teste | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest | Microsoft Docs
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest, Test generation
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 478dbdd71845d8bc0eb98250318b853ba4b8e5e6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8cb42b33907b528ee2c4cdd6a85ce5c361111772
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-generation"></a>Geração de teste
 
@@ -120,7 +116,7 @@ public partial class ListTest {
 
 O IntelliTest fornece vários atributos de validação para ajudar na triagem de exceções em exceções esperadas e exceções inesperadas.
 
-As exceções esperadas geram casos de teste negativos com a anotação apropriada, como **ExpectedException(typeof(*xxx*))**, enquanto as exceções inesperadas geram casos de teste com falha.
+As exceções esperadas geram casos de teste negativos com a anotação apropriada, como **ExpectedException(typeof(*xxx*))**, enquanto exceções inesperadas geram casos de teste com falha.
 
 ```
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]

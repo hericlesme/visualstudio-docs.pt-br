@@ -1,12 +1,12 @@
 ---
-title: "Guia de início rápido: criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic | Microsoft Docs"
-ms.custom: 
+title: 'Guia de início rápido: criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic | Microsoft Docs'
+ms.custom: ''
 ms.date: 12/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Guia de início rápido: criar seu primeiro aplicativo de console no Visual Studio com o Visual Basic
 Nesta introdução de 5 a 10 minutos ao IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo simples do Visual Basic que é executado no console.
@@ -81,9 +81,8 @@ Vamos adicionar alguns códigos para pausar o aplicativo e, em seguida, solicita
 
    ![Janela de console mostrando Olá, Mundo e Pressione qualquer tecla para continuar](../ide/media/vb-console-hello-world-press-any-key.png)
 
-Parabéns por concluir este guia de início rápido! Esperamos que você tenha aprendido um pouco sobre o Visual Basic e sobre o IDE do Visual Studio. Se quiser se aprofundar mais, continue com um tutorial na seção **Tutoriais** do sumário.
+## <a name="next-steps"></a>Próximas etapas
+Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha aprendido um pouco sobre o Visual Basic e sobre o IDE do Visual Studio. Para saber mais, continue com o tutorial a seguir.
 
-## <a name="see-also"></a>Consulte também
-* [Guia de início rápido: criar um aplicativo “Olá, Mundo” do Windows Forms no Visual Studio com o Visual Basic](quickstart-visual-basic-winforms.md)
-* [Tutorial: introdução ao Visual Basic no Visual Studio](tutorial-visual-basic-console.md)
-* [IntelliSense para arquivos de código do Visual Basic](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Introdução ao Visual Basic no Visual Studio](tutorial-visual-basic-console.md)

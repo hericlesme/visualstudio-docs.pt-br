@@ -1,12 +1,12 @@
 ---
-title: "Gerenciando referências em um projeto | Microsoft Docs"
-ms.custom: 
+title: Gerenciando referências em um projeto | Microsoft Docs
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Gerenciando referências em um projeto
 
@@ -108,7 +108,7 @@ Por padrão, a propriedade <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjec
 
 É possível criar aplicativos que referenciam projetos ou assemblies que têm outra versão do .NET Framework como destino. Por exemplo, é possível criar um aplicativo que tem como destino o [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] que referencia um assembly que tem como destino [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Se você criar um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], não será possível definir uma referência no projeto a um projeto ou assembly que tem como destino uma versão mais recente.
 
-Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).
+Para obter mais informações, consulte [Visão geral da multissegmentação](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Referências de projeto a projeto
 
@@ -125,5 +125,5 @@ Referências de arquivo são referências diretas a assemblies fora do contexto 
 
 ## <a name="see-also"></a>Consulte também
 
-[Solução de Problemas de Referências Quebradas](../ide/troubleshooting-broken-references.md)  
+[Solução de problemas com referências desfeitas](../ide/troubleshooting-broken-references.md)
 [Como adicionar ou remover referências usando o Gerenciador de Referências](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
