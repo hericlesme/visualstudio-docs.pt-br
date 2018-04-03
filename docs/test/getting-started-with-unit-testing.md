@@ -1,11 +1,7 @@
 ---
-title: "Introdução ao teste de unidade – criar planos de teste | Microsoft Docs"
-ms.custom: 
+title: Introdução ao teste de unidade no Visual Studio | Microsoft Docs
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -14,155 +10,141 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e6789c3a8ddb9b0aa317df0d2362d39946069cbd
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: a95891afa4a5b05dcaa238bb06fcc57268542187
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
 Use o Visual Studio para definir e executar os testes de unidade para manter a integridade de código, certificar-se da cobertura de código e localizar erros e falhas antes de seus clientes.
 
-<a name="create-tests"></a>
 ## <a name="create-unit-tests"></a>Criar testes de unidade
 
 Crie testes de unidade e execute-os frequentemente para ter certeza de que seu código está funcionando corretamente.
 
 1. Crie um projeto de teste de unidade.
-        
+
    ![Adicionar um projeto de teste de unidade à sua solução](media/createunittest1.png)
-    
+
 1. Nomeie o projeto.
-        
+
    ![Modelo de projeto de teste de unidade](media/createunittest2.png)
-  
+
    O projeto é adicionado à solução.
-    
+
    ![Projeto de teste de unidade no Gerenciador de Soluções](media/createunittest5.png)
-    
+
 1. No projeto de teste de unidade, adicione uma referência ao projeto que deseja testar.
-        
+
    ![Adicionar uma referência ao seu projeto de teste de unidade](media/createunittest6.png)
-    
+
 1. Selecione o projeto que contém o código que você testará.
-        
+
    ![Selecionar a referência a ser adicionada](media/createunittest7.png)
-    
+
 1. Codifique seu teste de unidade.
 
-   ![Adicionar código ao teste de unidade](media/createunittest8.png) 
+   ![Adicionar código ao teste de unidade](media/createunittest8.png)
 
-Você também pode criar stubs de método de teste de unidade com o [comando **Criar Testes de Unidade**](create-unit-tests-menu.md).
-Ou você pode usar uma [estrutura de teste de unidade diferente](#frameworks) para criar testes para linguagens de código diferente.
+Você também pode criar stubs de método de teste de unidade com o[comando](create-unit-tests-menu.md) **Criar Testes de Unidade**.
 
 ![Usando o comando Criar testes de unidade](media/createunittestcommand2.png)
 
 ## <a name="run-unit-tests"></a>Executar testes de unidade
 
 1. Abra o Gerenciador de Testes.
-        
-   ![No menu Teste, abra o Gerenciador de testes](media/rununittest1.png) 
+
+   ![No menu Teste, abra o Gerenciador de testes](media/rununittest1.png)
 
 1. Execute os testes de unidade.
-        
-   ![Executar testes de unidade no Gerenciador de Testes](media/rununittest2.png) 
+
+   ![Executar testes de unidade no Gerenciador de Testes](media/rununittest2.png)
 
    Você pode ver os testes de unidade que foram aprovados ou falharam no Gerenciador de Testes.
-      
-   ![Examine os resultados de teste de unidade no Gerenciador de Testes](media/rununittest3.png) 
+
+   ![Examine os resultados de teste de unidade no Gerenciador de Testes](media/rununittest3.png)
 
 ## <a name="view-live-unit-test-results"></a>Exibir resultados de teste de unidade em tempo real
 
-Se você estiver usando a estrutura de teste do MSTest, do xUnit ou do NUnit no Visual Studio de 2017 ou acima, poderá ver os resultados em tempo real de seus testes de unidade na interface do usuário do Visual Studio.
+Se estiver usando a estrutura de teste do MSTest, do xUnit ou do NUnit no Visual Studio de 2017 ou posterior, você poderá ver os resultados em tempo real de seus testes de unidade.
 
 1. Ative o teste de unidade em tempo real no menu **Teste**.
 
-   ![Ativar o teste de unidade em tempo real](media/live-test-results-start.png) 
+   ![Ativar o teste de unidade em tempo real](media/live-test-results-start.png)
 
 1. Exiba os resultados dos testes dentro da janela do editor de código conforme você escreve e edita o código.
 
-   ![Apontar para e clicar nos indicadores de resultado do teste](media/live-test-results-ui.png) 
+   ![Exibir os resultados dos testes](media/live-test-results-ui.png)
 
-1. Aponte para e clique nos indicadores de resultados do teste para obter mais informações.
+1. Escolha os indicadores de resultados do teste para obter mais informações.
 
-   ![Exibir os resultados dos testes](media/live-test-results-details.png) 
+   ![Escolha os indicadores de resultados do teste](media/live-test-results-details.png)
 
-Para obter mais detalhes, consulte [Live Unit Testing in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/11/18/live-unit-testing-visual-studio-2017-rc/) (Live Unit Testing no Visual Studio).
+Para obter mais detalhes, consulte [Live unit testing](../test/live-unit-testing-intro.md) (Testes de unidade dinâmicos).
 
-<a name="intellitest"></a>
 ## <a name="generate-unit-tests-with-intellitest"></a>Gerar testes de unidade com IntelliTest
 
 Quando executa o IntelliTest, você pode ver facilmente quais testes estão falhando e adicionar o código que for necessário para corrigi-los. É possível selecionar quais dos testes gerados serão salvos em um projeto de teste para oferecer um pacote de regressão. Conforme você alterar seu código, execute novamente o IntelliTest para manter os testes gerados em sincronia com as alterações do código. Para saber como, consulte [Gerar testes de unidade para seu código com o IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
 ![Gerando testes de unidade com IntelliTest](media/intellitest.png)
 
-<a name="unit-tests"></a>
 ## <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
 Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou projetos de teste de unidade de terceiros, agrupar testes em categorias, filtre a lista de testes, criar, salvar e executar as listas de reprodução de testes. Você também pode depurar testes e analisar um teste de desempenho e cobertura de código. Para saber como, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md).
 
 ![Executando testes de unidade com o Gerenciador de Testes](media/testexplorer.png)
 
-<a name="code-coverage"></a>
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
 Para determinar que proporção do código do projeto está sendo testada de fato por testes codificados, como os testes de unidade, você pode usar o recurso de cobertura de código do Visual Studio. Para se proteger efetivamente contra bugs, os testes devem utilizar ou "cobrir" uma grande proporção de seu código. Para saber como, consulte [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ![Usando a cobertura de código para determinar quanto código está sendo testado](media/codecoverage.png)
 
-## <a name="q--a"></a>Perguntas e respostas
+## <a name="use-a-different-unit-test-framework"></a>Usar uma estrutura de teste de unidade diferente
 
-<!-- BEGINSECTION class="m-qanda" -->
+Você pode executar testes de unidade no Visual Studio usando estruturas de teste de terceiros, como Boost, Google e nUnit. Use o plug-in para essa estrutura para que o executor de teste do Visual Studio possa funcionar com ela.
 
-<a name="frameworks"></a>
-####Posso executar testes de unidade no Visual Studio se eu usar uma estrutura diferente de teste de unidade?
+Veja a seguir as etapas para habilitar estruturas de teste de terceiros:
 
-R: sim, use o plug-in para essa estrutura para que o executor de teste do Visual Studio possa funcionar com ela. Aqui estão alguns dos [plug-ins de estrutura de teste de unidade para o Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630).
+1. Na barra de menus, escolha **Ferramentas** > **Extensões e Atualizações...**.
 
-1. Use o gerenciador de extensões do Visual Studio para baixar seu plug-in.
-        
-   ![Selecione plug-ins de teste de unidade de terceiros com o gerenciador de extensões](media/install3rdpartyunittestframeworks1.png) 
+1. Na caixa de diálogo **Extensões e Atualizações**, expanda a categoria **Online** e escolha **Visual Studio Marketplace**. Em seguida, escolha **Ferramentas** > **Testes**.
 
-1. Baixe o plug-in da Galeria do Visual Studio, em Ferramentas/Teste ou pesquise por ele se souber o nome.
-        
-   ![Baixar o plug-in](media/install3rdpartyunittestframeworks2.png) 
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. Crie um projeto de biblioteca de classes.
-        
-   ![Criar um projeto de biblioteca de classes](media/create3rdpartyunittest1.png) 
+1. Selecione a estrutura ou adaptador que deseja instalar e, em seguida, escolha **Baixar**.
 
-   Adicione o projeto à sua solução.
-    
-   ![Atribua um nome ao projeto de biblioteca de classes e adicione-o](media/create3rdpartyunittest3.png) 
+1. Crie um projeto de biblioteca de classes e adicione-o à sua solução.
 
-1. No projeto de biblioteca de classes, execute NuGet para instalar o plug-in.
+   ![Atribua um nome ao projeto de biblioteca de classes e adicione-o](media/create3rdpartyunittest3.png)
 
-   ![Gerenciar pacotes NuGet para instalar o plug-in](media/create3rdpartyunittest3a.png) 
+1. Instale o plug-in. No **Gerenciador de Soluções**, selecione o projeto de biblioteca de classes e, em seguida, escolha **Gerenciar pacotes NuGet...**  no menu de contexto ou clicando com o botão direito do mouse.
+
+   ![Gerenciar pacotes NuGet para instalar o plug-in](media/create3rdpartyunittest3a.png)
 
    O [NuGet](https://www.nuget.org/) é uma extensão do Visual Studio que pode ser usada para adicionar e atualizar bibliotecas e ferramentas dos seus projetos.
 
-1. Instale seu plug-in. Se souber o nome, você poderá pesquisar por ele na Internet.
+1. Na janela do **Gerenciador de Pacotes NuGet**, pesquise e selecione o plug-in e, em seguida, escolha **Instalar**.
 
-   ![Instalar a estrutura de terceiros](media/create3rdpartyunittest4.png) 
+   ![Instalar a estrutura de terceiros](media/create3rdpartyunittest4.png)
 
    A estrutura é referenciada no seu projeto.
-        
-   ![A referência para a estrutura de teste de unidade de terceiros é adicionada à solução](media/create3rdpartyunittest6.png) 
 
-1. No projeto de biblioteca de classes, adicione uma referência ao projeto que deseja testar.
-        
-   ![Adicionar uma referência ao projeto](media/createunittest6.png) 
+   ![A referência para a estrutura de teste de unidade de terceiros é adicionada à solução](media/create3rdpartyunittest6.png)
 
-1. Selecione o projeto que contém o código que você testará.
-        
-   ![Selecione o projeto de código para testar](media/createunittest7.png) 
+1. No nó **Referências** do projeto de biblioteca de classes, selecione **Adicionar referência...**.
+
+   ![Adicionar uma referência ao projeto](media/createunittest6.png)
+
+1. Na caixa de diálogo **Gerenciador de Referências**, selecione o projeto que contém o código que você testará.
+
+   ![Selecione o projeto de código para testar](media/createunittest7.png)
 
 1. Codifique seu teste de unidade.
 
-   ![Adicionar código ao teste de unidade](media/create3rdpartyunittest7.png)   
-
-<!-- ENDSECTION -->
+   ![Adicionar código ao teste de unidade](media/create3rdpartyunittest7.png)
 
 ## <a name="see-also"></a>Consulte também
 

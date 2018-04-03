@@ -1,22 +1,18 @@
 ---
 title: Gravar testes de unidade para C/C++ no Visual Studio | Microsoft Docs
-ms.custom: 
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 25a5d358ce8c9b36286929232a42dad48099cff5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: ecb611d7ab816ed99e4bcce954466309f7436f76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -36,12 +32,11 @@ Além das estruturas instaladas, é possível gravar seu próprio adaptador de t
 
 **Visual Studio 2017 versão 15.5**
 
-1) O **adaptador de teste do Google** está incluído como um componente padrão da carga de trabalho **Desenvolvimento de Área de Trabalho com C++**. Ele tem um modelo de projeto que pode ser adicionado a uma solução por meio do menu de contexto **Adicionar Novo Projeto**, no nó da solução do **Gerenciador de Soluções** e opções que podem ser configuradas por meio de **Ferramentas | Opções**. Para saber mais, consulte [How to: use Google Test in Visual Studio](how-to-use-google-test-for-cpp.md) (Como usar o Google Test no Visual Studio).
+- O **Adaptador do Google Test** está incluído como componente padrão da carga de trabalho **Desenvolvimento para área de trabalho com C++**. Ele tem um modelo de projeto que pode ser adicionado a uma solução por meio do menu de contexto **Adicionar Novo Projeto**, no nó da solução do **Gerenciador de Soluções** e opções que podem ser configuradas por meio de **Ferramentas | Opções**. Para saber mais, consulte [How to: use Google Test in Visual Studio](how-to-use-google-test-for-cpp.md) (Como usar o Google Test no Visual Studio).
 
-2) O **Boost.Test** está incluído como um componente padrão da carga de trabalho **Desenvolvimento de Área de Trabalho com C++**. Ele é integrado ao **Gerenciador de Testes**, mas, atualmente, não tem um modelo de projeto, portanto, deve ser configurado manualmente. Para saber mais, consulte [How to: use Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md) (Como usar o Boost.Test no Visual Studio).
+- **Boost.Test** está incluído como componente padrão da carga de trabalho **Desenvolvimento para área de trabalho com C++**. Ele é integrado ao **Gerenciador de Testes**, mas, atualmente, não tem um modelo de projeto, portanto, deve ser configurado manualmente. Para saber mais, consulte [How to: use Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md) (Como usar o Boost.Test no Visual Studio).
 
-3) O suporte ao **CTest** está incluído no componente [CMake Tools para Visual Studio](/cpp/ide/cmake-tools-for-cpp), que é parte da carga de trabalho **Desenvolvimento de Área de Trabalho com C++**. No entanto, o CTest ainda não está totalmente integrado ao **Gerenciador de Testes**. Para saber mais, consulte [How to: use CTest in Visual Studio](how-to-use-ctest-for-cpp.md) (Como usar o CTest no Visual Studio).
-
+- O suporte para **CTest** está incluído no componente [Ferramentas CMake para Visual Studio](/cpp/ide/cmake-tools-for-cpp), que faz parte da carga de trabalho **Desenvolvimento para área de trabalho com C++**. No entanto, o CTest ainda não está totalmente integrado ao **Gerenciador de Testes**. Para saber mais, consulte [How to: use CTest in Visual Studio](how-to-use-ctest-for-cpp.md) (Como usar o CTest no Visual Studio).
 
 **Visual Studio 2015 e versões anteriores**
 
@@ -96,16 +91,16 @@ No exemplo anterior, o resultado da chamada `Assert::AreEqual` determina o resul
 
 ### <a name="run-the-tests"></a>Executar os testes
 
-1.  No menu **Teste**, escolha **Windows** e **Gerenciador de Testes**. A ilustração a seguir mostra um projeto de teste cujos testes ainda não foram executados.
+1. No menu **Teste**, escolha **Windows** > **Gerenciador de Testes**. A ilustração a seguir mostra um projeto de teste cujos testes ainda não foram executados.
 
-![Gerenciador de Testes antes dos testes serem executados](media/cpp-test-explorer.png "Gerenciador de Testes para C++")
+   ![Gerenciador de Testes antes dos testes serem executados](media/cpp-test-explorer.png "Gerenciador de Testes para C++")
 
-> [!NOTE]
-> A integração do CTest com o **Gerenciador de Testes** ainda não está disponível. Execute testes de CTest no menu principal do CMake.
+   > [!NOTE]
+   > A integração do CTest com o **Gerenciador de Testes** ainda não está disponível. Execute testes de CTest no menu principal do CMake.
 
-2. Caso todos os testes não estejam visíveis na janela, crie o projeto de teste clicando com o botão direito no mouse no nó do **Gerenciador de Soluções** e escolhendo **Criar** ou **Recompilar**.
+1. Caso todos os testes não estejam visíveis na janela, crie o projeto de teste clicando com o botão direito no mouse no nó do **Gerenciador de Soluções** e escolhendo **Criar** ou **Recompilar**.
 
-3.  No Gerenciador de Testes, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados. Depois de executar todos os testes, a janela mostrará quais testes foram aprovados e quais falharam:
+1. No Gerenciador de Testes, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados. Depois de executar todos os testes, a janela mostrará quais testes foram aprovados e quais falharam:
 
 ![Gerenciador de Testes depois que os testes são executados](media/cpp-test-explorer-passed.png "C++ Gerenciador de Testes depois de executar os testes")
 
