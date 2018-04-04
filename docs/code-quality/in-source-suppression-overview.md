@@ -1,9 +1,6 @@
 ---
-title: "Suprimir avisos da análise de código no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Suprimir avisos da análise de código no Visual Studio | Microsoft Docs
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Suprimindo avisos da análise de código
+# <a name="suppress-code-analysis-warnings"></a>Suprimir avisos da análise de código
 
 Geralmente é útil indicar que um aviso não é aplicável. Isso indica a membros da equipe que o código foi revisado e que o aviso pode ser suprimido. Na origem supressão (ISS) usa o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo para suprimir um aviso. O atributo pode ser colocado perto o segmento de código que gerou o aviso. Você pode adicionar o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> de atributo para o arquivo de origem, digitando-o, ou você pode usar o menu de atalho em um aviso de **lista de erros** para adicioná-lo automaticamente.
 
@@ -94,7 +91,7 @@ Se houver motivos de desempenho estrito para minimizar os metadados de supressã
 
 Por motivos de manutenção, não é recomendável omitir o nome da regra.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Suprimindo seletivas violações dentro de um corpo de método
+## <a name="suppress-selective-violations-within-a-method-body"></a>Suprimir seletivas violações dentro de um corpo de método
 
 Atributos de supressão podem ser aplicados a um método, mas não podem ser inseridos em um corpo de método. Isso significa que todas as violações de uma determinada regra são suprimidas, se você adicionar o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo ao método.
 
@@ -160,7 +157,7 @@ Supressões no nível global são a única maneira de suprimir mensagens que faz
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`sempre contém o nome totalmente qualificado de item.
+> `Target` sempre contém o nome totalmente qualificado de item.
 
 ## <a name="global-suppression-file"></a>Arquivo de supressão global
 
@@ -168,4 +165,5 @@ O arquivo de supressão global mantém supressões supressões no nível global 
 
 ## <a name="see-also"></a>Consulte também
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Use os analisadores de Roslyn](../code-quality/use-roslyn-analyzers.md)
