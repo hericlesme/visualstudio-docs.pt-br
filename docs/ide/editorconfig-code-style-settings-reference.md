@@ -1,5 +1,5 @@
 ---
-title: "Configurações de convenção de codificação do .NET para EditorConfig no Visual Studio | Microsoft Docs"
+title: Configurações de convenção de codificação do .NET para EditorConfig no Visual Studio | Microsoft Docs
 ms.date: 02/28/2018
 ms.topic: article
 dev_langs:
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 53345fa849715a8065b0bf569977393033608caa
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configurações de convenção de codificação do .NET para o EditorConfig
 
@@ -77,10 +77,11 @@ A lista a seguir mostra as regras convenção de linguagem permitidas:
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_style\_coalesce_expression
-        - dotnet\_style\_null_propagation
         - dotnet\_prefer\_inferred\_tuple_names
         - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
+    - [Preferências da verificação de "null"](#null_checking)
+        - dotnet\_style\_coalesce_expression
+        - dotnet\_style\_null_propagation
 - Configurações de Estilo de Código de C#
     - [Tipos implícitos e explícitos](#var)
         - csharp\_style\_var\_for\_built\_in_types
@@ -102,7 +103,7 @@ A lista a seguir mostra as regras convenção de linguagem permitidas:
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - csharp\_style\_pattern\_local\_over\_anonymous_function
-    - [Preferências da verificação de "null"](#null_checking)
+    - [Preferências da verificação de "null"](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
     - [Preferências de bloco de código](#code_block)
@@ -380,7 +381,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="expression_level">Preferências de nível de expressão</a>
 
-As regras de estilo nesta seção referem-se a preferências de nível de expressão, incluindo o uso de inicializadores de objeto, inicializadores de coleção, nomes de tupla explícita, expressões de união nula versus operadores ternários e o operador condicional nulo.
+As regras de estilo nesta seção referem-se às preferências no nível da expressão, incluindo o uso de inicializadores de objeto, inicializadores de coleção, nomes de tupla explícitos ou inferidos e tipos anônimos inferidos.
 
 A tabela a seguir mostra os nomes das regras, as IDs de regra, as linguagens de programação aplicáveis, os valores padrão e a primeira versão compatível do Visual Studio:
 
@@ -389,10 +390,8 @@ A tabela a seguir mostra os nomes das regras, as IDs de regra, as linguagens de 
 | dotnet_style_object_initializer | IDE0017 | C# e Visual Basic | true:suggestion | Primeira versão |
 | dotnet_style_collection_initializer | IDE0028 | C# e Visual Basic | true:suggestion | Primeira versão |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0+ e Visual Basic 15+ | true:suggestion | Primeira versão |
-| dotnet_style_coalesce_expression | IDE0029 | C# e Visual Basic | true:suggestion | Primeira versão |
-| dotnet_style_null_propagation | IDE0031 | C# 6.0+ e Visual Basic 14+ | true:suggestion | Primeira versão |
-| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ e Visual Basic 15+ | true:suggestion | 15.6 |
-| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# e Visual Basic | true:suggestion | 15.6 |
+| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1+ e Visual Basic 15+ | true:suggestion | 15.6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# e Visual Basic | true:suggestion | 15.6 |
 
 **dotnet\_style\_object_initializer**
 
@@ -475,6 +474,60 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
+**dotnet\_style\_prefer\_inferred\_tuple_names**
+
+- Quando essa regra for definida como **true**, prefira nomes de elemento de tupla inferidos.
+- Quando essa regra for definida como **false**, prefira nomes de elemento de tupla explícitos.
+
+Exemplos de código:
+
+```csharp
+// dotnet_style_prefer_inferred_tuple_names = true
+var tuple = (age, name);
+
+// dotnet_style_prefer_inferred_tuple_names = false
+var tuple = (age: age, name: name);
+```
+
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
+
+- Quando essa regra for definida como **true**, prefira nomes de membro de tipo anônimo inferidos.
+- Quando essa regra for definida como **false**, prefira nomes de membro de tipo anônimo explícitos.
+
+Exemplos de código:
+
+```csharp
+// dotnet_style_prefer_inferred_anonymous_type_member_names = true
+var anon = new { age, name };
+
+// dotnet_style_prefer_inferred_anonymous_type_member_names = false
+var anon = new { age = age, name = name };
+
+```
+
+Essas regras podem aparecer em um arquivo .editorconfig, assim como mostrado a seguir:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+```
+
+#### <a name="null_checking">Preferências de verificação de nulo</a>
+
+As regras de estilo nesta seção referem-se às preferências de verificação de nulo.
+
+A tabela a seguir mostra os nomes das regras, as IDs de regra, as linguagens de programação aplicáveis, os valores padrão e a primeira versão compatível do Visual Studio:
+
+| Nome da regra | ID da regra | Linguagens Aplicáveis | Padrão do Visual Studio | Versão do Visual Studio 2017 |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_coalesce_expression | IDE0029 | C# e Visual Basic | true:suggestion | Primeira versão |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0+ e Visual Basic 14+ | true:suggestion | Primeira versão |
+
 **dotnet\_style\_coalesce_expression**
 
 - Quando essa regra é definida como **true**, prefira expressões de união nula a verificação do operador ternário.
@@ -525,49 +578,13 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-**dotnet\_prefer\_inferred\_tuple_names**
-
-- Quando essa regra for definida como **true**, prefira nomes de elemento de tupla inferidos.
-- Quando essa regra for definida como **false**, prefira nomes de elemento de tupla explícitos.
-
-Exemplos de código:
-
-```csharp
-// dotnet_style_prefer_inferred_tuple_names = true
-var tuple = (age, name);
-
-// dotnet_style_prefer_inferred_tuple_names = false
-var tuple = (age: age, name: name);
-```
-
-**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
-
-- Quando essa regra for definida como **true**, prefira nomes de membro de tipo anônimo inferidos.
-- Quando essa regra for definida como **false**, prefira nomes de membro de tipo anônimo explícitos.
-
-Exemplos de código:
-
-```csharp
-// dotnet_style_prefer_inferred_anonymous_type_member_names = true
-var anon = new { age, name };
-
-// dotnet_style_prefer_inferred_anonymous_type_member_names = false
-var anon = new { age = age, name = name };
-
-```
-
 Essas regras podem aparecer em um arquivo .editorconfig, assim como mostrado a seguir:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_object_initializer = true:suggestion
-dotnet_style_collection_initializer = true:suggestion
-dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
 ### <a name="c-code-style-settings"></a>Configurações de estilo de código de C#
@@ -960,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking">Preferências da verificação de "null"</a>
+#### <a name="null_checking_csharp">Preferências da verificação de "null"</a>
 
 Essas regras de estilo referem-se à sintaxe da verificação de `null`, incluindo o uso de expressões `throw` ou instruções `throw`, e se é desejável executar uma verificação nula ou usar o operador de união condicional (`?.`) ao invocar uma [expressão lambda](/dotnet/csharp/lambda-expressions).
 
@@ -1545,7 +1562,7 @@ MyMethod(argument);
 
 **csharp_space_between_parentheses**
 
-Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:
+Essa regra aceita um ou mais valores da tabela a seguir:
 
 | Valor | Descrição |
 | ----- |:------------|
@@ -1553,14 +1570,16 @@ Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita 
 | expressões | Inserir espaço entre os parênteses das expressões |
 | type_casts | Inserir espaço entre os parênteses nas conversões de tipo |
 
+Se você omitir essa regra ou usar um valor diferente de `control_flow_statements`, `expressions` ou `type_casts`, a configuração não será aplicada.
+
 Exemplos de código:
 
 ```csharp
 // csharp_space_between_parentheses = control_flow_statements
-for( int i;i<x;i++ ) { ... }
+for ( int i = 0; i < 10; i++ ) { }
 
 // csharp_space_between_parentheses = expressions
-var z = ( x * y ) - ( ( y - x ) * 3);
+var z = ( x * y ) - ( ( y - x ) * 3 );
 
 // csharp_space_between_parentheses = type_casts
 int y = ( int )x;

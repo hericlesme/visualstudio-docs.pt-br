@@ -1,22 +1,24 @@
 ---
-title: "Exemplo avançado para contêineres | Microsoft Docs"
-ms.custom: 
+title: Exemplo avançado para contêineres | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6009114d16871f4582aae298b25de9a3b9fe5888
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b5497a6957c457300f7741e1e0d4acc68240020a
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="advanced-example-for-containers"></a>Exemplo avançado para contêineres
 
@@ -27,7 +29,7 @@ O Dockerfile de exemplo a seguir usa uma marca de versão específica da imagem 
 > [!NOTE]
 > Não é possível instalar o Visual Studio no microsoft/windowsservercore:10.0.14393.1593, que tem problemas conhecidos ao iniciar o instalador em um contêiner. Para saber mais, confira os [problemas conhecidos](build-tools-container-issues.md).
 
-O exemplo também usa um bootstrapper das Ferramentas de Build 2017 que instala uma versão específica criada ao mesmo tempo em que o bootstrapper. O produto ainda poderia ser atualizado por meio do canal de versão, mas esse não é um cenário prático para contêineres que você normalmente recompilaria. Caso queira obter as URLs de um canal específico, é possível baixar o canal em https://aka.ms/vs/15/release/channel, abrir o arquivo JSON e analisar as URLs do bootstrapper. Para saber mais, consulte [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md).
+O exemplo também usa um bootstrapper das Ferramentas de Build 2017 que instala uma versão específica criada ao mesmo tempo em que o bootstrapper. O produto ainda poderia ser atualizado por meio do canal de versão, mas esse não é um cenário prático para contêineres que você normalmente recompilaria. Caso queira obter as URLs de um canal específico, baixe o canal em https://aka.ms/vs/15/release/channel, abra o arquivo JSON e examine as URLs do bootstrapper. Para saber mais, consulte [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md).
 
 ```dockerfile
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.

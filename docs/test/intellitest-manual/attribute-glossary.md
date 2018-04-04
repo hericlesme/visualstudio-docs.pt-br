@@ -1,5 +1,5 @@
 ---
-title: "Glossário do atributo | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest | Microsoft Docs"
+title: Glossário do atributo | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest | Microsoft Docs
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
 ms.topic: article
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 474666d6243f8602c1da55ec113e459d5f2ec1d9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7a0962b8efff6e6715936b8d954d5c8b447c0693
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="attribute-glossary"></a>Glossário do atributo
 
@@ -201,7 +201,7 @@ public void MyTest(object testParameter)
 <a name="pexallowedexception"></a>
 ## <a name="pexallowedexception"></a>PexAllowedException
 
-Se esse atributo for anexado a um [PexMethod](#pexmethod) (ou um [PexClass](#pexclass), ele alterará a lógica do IntelliTest padrão que indica quando os testes falham. O teste não será considerado como com falha, mesmo se ele lançar a exceção especificada.
+Se esse atributo estiver anexado a um [PexMethod](#pexmethod) (ou a uma [PexClass](#pexclass), ele vai alterar a lógica do IntelliTest padrão que indica quando os testes falham. O teste não será considerado como com falha, mesmo se ele lançar a exceção especificada.
 
 **Exemplo**
 

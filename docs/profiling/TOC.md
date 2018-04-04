@@ -1,8 +1,8 @@
 
 # [Documentação de criação de perfil](index.md)
 # Visão geral
-## [Tour pelos recursos de criação de perfil](profiling-feature-tour.md)
 # Guias de Início Rápido
+## [Introdução à criação de perfil](profiling-feature-tour.md)
 ## [Analisar o uso de CPU (gerenciado)](quickstart-cpu-usage-managed.md)
 ## [Analisar o uso de CPU (nativo)](quickstart-cpu-usage-native.md)
 ## [Analisar o uso de CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)

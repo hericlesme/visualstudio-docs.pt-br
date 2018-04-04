@@ -1,7 +1,8 @@
 # [Documentação de implantação](index.md)
 # Visão geral
-## [Visão geral da implantação](deploying-applications-services-and-components.md)
+## [Visão geral da implantação](deploying-applications-services-and-components-resources.md)
 # Guias de Início Rápido
+## [Introdução à implantação](deploying-applications-services-and-components.md)
 ## [Implantar em uma pasta local](quickstart-deploy-to-local-folder.md)
 ## [Implantar em um site da Web](quickstart-deploy-to-a-web-site.md)
 ## [Implantar no Azure](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [Elemento <Signature> (implantação do ClickOnce)](signature-element-clickonce-deployment.md)
 #### [Elemento <customErrorReporting> (implantação do ClickOnce)](customerrorreporting-element-clickonce-deployment.md)
 ### [Referência de API não gerenciada do ClickOnce](clickonce-unmanaged-api-reference.md)
-# Recursos
-## [Implantando aplicativos, serviços e componentes](deploying-applications-services-and-components-resources.md)
 

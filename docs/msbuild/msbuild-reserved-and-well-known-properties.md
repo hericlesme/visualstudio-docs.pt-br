@@ -1,11 +1,11 @@
 ---
 title: Propriedades reservadas e conhecidas do MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,22 +15,22 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-caps.latest.revision: 
+caps.latest.revision: 29
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 89610426b944c3b3948c23c246337fd7aa9c1af8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9eafd9de132e2fa71ddfb4016115d84ef222db26
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas do MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um conjunto de propriedades predefinidas que armazenam informações sobre o arquivo de projeto e os binários do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Essas propriedades são avaliadas da mesma maneira que outras propriedades [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por exemplo, para usar a propriedade `MSBuildProjectFile`, digite `$(MSBuildProjectFile)`.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um conjunto de propriedades predefinidas que armazenam informações sobre o arquivo de projeto e os binários [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Essas propriedades são avaliadas da mesma maneira que outras propriedades [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por exemplo, para usar a propriedade `MSBuildProjectFile`, digite `$(MSBuildProjectFile)`.  
   
- O MSBuild usa os valores na tabela a seguir para predefinir propriedades conhecidas e reservadas. As propriedades reservadas não podem ser substituídas, mas as propriedades conhecidas podem ser substituídas usando propriedades de ambiente com o mesmo nome, propriedades globais ou propriedades que são declaradas no arquivo de projeto.  
+ O MSBuild usa os valores na tabela a seguir para predefinir propriedades conhecidas e reservadas. As propriedades reservadas não podem ser substituídas, mas as propriedades conhecidas podem ser substituídas usando propriedades de ambiente com o mesmo nome, propriedades globais ou propriedades que são declaradas no arquivo de projeto.
   
 ## <a name="reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas  
  A tabela a seguir descreve as propriedades predefinidas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -61,6 +61,23 @@ ms.lasthandoff: 02/09/2018
 |`MSBuildThisFileName`|A parte do nome de arquivo de `MSBuildThisFileFullPath`, sem a extensão de nome de arquivo.|Reservado|  
 |`MSBuildToolsPath`|O caminho de instalação da versão [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] associada ao valor de `MSBuildToolsVersion`.<br /><br /> Não inclua a barra invertida final no caminho.<br /><br /> Essa propriedade não pode ser substituída.|Reservado|  
 |`MSBuildToolsVersion`|A versão do Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que é usado para compilar o projeto.<br /><br /> Observação: um conjunto de ferramentas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consiste em tarefas, destinos e ferramentas que são usados para compilar um aplicativo. As ferramentas incluem compiladores, tais como csc.exe e vbc.exe. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurações padrão e personalizada do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).|Reservado|  
-  
+
+## <a name="names-that-conflict-with-msbuild-elements"></a>Nomes em conflito com elementos do MSBuild
+
+Além do citado acima, os nomes que correspondem a elementos da linguagem do MSBuild não podem ser usados para propriedades, itens ou metadados de item definidos pelo usuário:
+
+* VisualStudioProject
+* Destino
+* GrupoPropriedade
+* Saída
+* ItemGroup
+* UsingTask
+* ProjectExtensions
+* OnError
+* ImportGroup
+* Escolha
+* When
+* Otherwise
+
 ## <a name="see-also"></a>Consulte também  
  [Referência do MSBuild](../msbuild/msbuild-reference.md) [Propriedades do MSBuild](../msbuild/msbuild-properties.md)

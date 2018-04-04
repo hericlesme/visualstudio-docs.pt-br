@@ -1,23 +1,23 @@
 ---
-title: "Noções básicas de compilação de aplicativos com o Xamarin.Forms no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Noções básicas de compilação de aplicativos com o Xamarin.Forms no Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: charlespetzold
+ms.author: chape
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 71470cd03844c7761afbd07c9d454214f5dc36ca
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6c0659e63feb685f002b7be969ee827e5e047cdd
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Aprender as noções básicas de criação de aplicativos com o Xamarin.Forms no Visual Studio
 
@@ -103,7 +103,7 @@ Estas etapas criam uma solução do Xamarin.Forms que contém uma biblioteca de 
 
 É no projeto **WeatherApp** que você escreverá código para a biblioteca .NET Standard que será compartilhada entre todas as plataformas. Essa biblioteca é incluída automaticamente nos pacotes de aplicativo compilados pelos projetos de iOS, Android e Windows.  
   
-Para executar este exemplo, primeiro você deve se inscrever para uma chave de API gratuita em [http://openweathermap.org/appid](http://openweathermap.org/appid).  
+Para executar este exemplo, primeiro você precisa se inscrever para obter uma chave de API gratuita em [http://openweathermap.org/appid](http://openweathermap.org/appid).  
   
 Depois, as etapas a seguir adicionam o código à biblioteca .NET Standard para acessar e armazenar dados do serviço meteorológico:  
   

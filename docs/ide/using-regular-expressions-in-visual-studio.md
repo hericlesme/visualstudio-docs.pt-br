@@ -1,12 +1,8 @@
 ---
-title: "Usando expressões regulares no Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Usando expressões regulares no Visual Studio | Microsoft Docs
+ms.custom: 03/26/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Usando expressões regulares no Visual Studio
 
@@ -33,7 +29,9 @@ O Visual Studio usa [expressões regulares do .NET Framework](/dotnet/standard/b
 
 ## <a name="replacement-patterns"></a>Padrões de substituição
 
-Para obter informações sobre as expressões regulares que são usadas em padrões de substituição, confira [Substituições em expressões regulares (guia do .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions). Para usar um grupo de captura numerado, a sintaxe é `$1` para especificar o grupo numerado e `(x)` para especificar o grupo em questão. Por exemplo, a expressão regular agrupada `(\d)([a-z])` encontra quatro correspondências na seguinte cadeia de caracteres: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` converte essa cadeia de caracteres em **z1 z2 z3 z4**.
+Para usar um grupo de captura numerado, coloque o grupo entre parênteses no padrão de expressão regular. Use `$number`, em que `number` é um inteiro começando em 1, para especificar um grupo numerado específico em um padrão de substituição. Por exemplo, a expressão regular agrupada `(\d)([a-z])` define dois grupos: o primeiro grupo contém um único dígito decimal e o segundo grupo contém um único caractere entre **a** e **z**. A expressão localiza quatro correspondências na cadeia de caracteres a seguir: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` referencia somente o primeiro grupo e converte a cadeia de caracteres em **z1 z2 z3 z4**.
+
+Para obter informações sobre as expressões regulares que são usadas em padrões de substituição, confira [Substituições em expressões regulares (guia do .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Exemplos de expressões regulares
 
@@ -52,7 +50,7 @@ Estes são alguns exemplos:
 |Ancorar a cadeia de caracteres de correspondência ao final de uma linha|\r?$|`End\r?$` corresponde a “end” somente quando aparece no final de uma linha.|
 |Encontrar a correspondência de um único caractere em um conjunto|[abc]|`b[abc]` corresponde a “ba”, “bb” e “bc”.|
 |Encontrar a correspondência de um caractere em um intervalo de caracteres|[a-f]|`be[n-t]` corresponde a “bet” em “between”, “ben” em “beneath” e “bes” em “beside”, mas não a “below”.|
-|Capturar e numerar implicitamente a expressão contida entre parênteses|()|`([a-z])X\1` corresponde a “aXa” e “bXb”, mas não a “aXb”. ". “\1” se refere ao primeiro grupo de expressão “[a-z]”.|
+|Capturar e numerar implicitamente a expressão contida entre parênteses|()|`([a-z])X\1` corresponde a “aXa” e “bXb”, mas não a “aXb”. “\1” se refere ao primeiro grupo de expressão “[a-z]”.|
 |Invalidar uma correspondência|(?!abc)|`real (?!ity)` corresponde a “real” em “realty” e “really”, mas não a “reality”. Também encontra o segundo “real” (mas não o primeiro “real”) em “realityreal”.|
 |Encontrar a correspondência de um caractere que não está em um conjunto de caracteres específico|[^abc]|`be[^n-t]` corresponde a “bef” em “before”, “beh” em “behind” e “bel” em “below”, mas não a “beneath”.|
 |Encontrar a correspondência da expressão antes ou depois do símbolo.|&#124;|`(sponge&#124;mud) bath` corresponde a “sponge bath” e a “mud bath”.|

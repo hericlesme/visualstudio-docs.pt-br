@@ -1,24 +1,24 @@
 ---
-title: "Compilar aplicativos com interface do usuário nativa usando Xamarin no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Compilar aplicativos com interface do usuário nativa usando Xamarin no Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: 31
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 71004088d421bcc2e0809fc4004cd7af887b95af
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio
 Depois de concluir as etapas em [Configuração e instalação](../cross-platform/setup-and-install.md) e [Verificar seu ambiente Xamarin](../cross-platform/verify-your-xamarin-environment.md), este passo a passo mostra como criar um aplicativo Xamarin básico (mostrado abaixo) com as camadas de interface do usuário nativas. Com a interface do usuário nativa, o código compartilhado reside em uma PCL (biblioteca de classes portátil) e os projetos de plataforma individuais contêm as definições de interface do usuário.  
@@ -101,7 +101,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
   
  As etapas a seguir então adicionam código para o PCL acessar e armazenar dados de serviço de clima:  
   
-1.  Para executar este exemplo, primeiro você deve se inscrever para uma chave de API gratuita em [http://openweathermap.org/appid](http://openweathermap.org/appid).  
+1.  Para executar este exemplo, primeiro você precisa se inscrever para obter uma chave de API gratuita em [http://openweathermap.org/appid](http://openweathermap.org/appid).  
   
 2.  Clique com botão direito do mouse no projeto **WeatherApp** e selecione **Adicionar > Classe…**. Na caixa de diálogo **Adicionar Novo Item**, dê ao arquivo o nome **Weather.cs**. Você usará essa classe para armazenar dados do serviço de dados de clima.  
   
@@ -261,7 +261,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
     > [!TIP]
     >  Observe que muitas propriedades não contêm uma lista suspensa de valores que você pode selecionar.  Pode ser difícil adivinhar qual valor de cadeia de caracteres usar para qualquer propriedade específica. Para obter sugestões, tente pesquisar o nome de uma propriedade na página [R.attr](http://developer.android.com/reference/android/R.attr.html).  
     >   
-    >  Além disso, uma pesquisa rápida na web geralmente leva a uma página em [http://stackoverflow.com/](http://stackoverflow.com/) em que outras pessoas usaram a mesma propriedade.  
+    >  Além disso, uma pesquisa rápida na Web geralmente leva a uma página no [http://stackoverflow.com/](http://stackoverflow.com/) na qual outras pessoas já usaram a mesma propriedade.  
   
      Para referência, se você mudar para a exibição **Fonte**, deverá ver o seguinte código para esse elemento:  
   

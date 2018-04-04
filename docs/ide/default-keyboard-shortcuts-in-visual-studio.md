@@ -1,12 +1,12 @@
 ---
-title: "Atalhos de teclado padrão no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Atalhos de teclado padrão no Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 Para obter mais informações sobre acessibilidade de teclado, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como usar o teclado de forma exclusiva](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -1134,6 +1134,7 @@ Cada seção na tabela a seguir inclui comandos para os quais os atalhos de tecl
 |Design.ShowHandles|F9|  
 |Design.ZoomIn|Ctrl+Alt+=|  
 |Design.ZoomOut|Ctrl+Alt+-|  
+|Opções do designer|Ctrl+Shift+;|  
 |Format.EditText|F2|  
 |Format.ResetLayout.All|Ctrl+Shift+R|  
 |Executar código do projeto|Ctrl+F9|  

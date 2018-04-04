@@ -1,23 +1,23 @@
 ---
 title: Instalar o Xamarin para Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: bcaa49552c0e904b07cc90f3ae7e44aaa58a3895
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: a935ab3768d5e900aea681b392e920763cb53016
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="setup-and-install"></a>Instalar e configurar
 
@@ -82,9 +82,9 @@ Se você tiver problemas para usar o Xamarin depois de fazer essa configuração
 
 ##  <a name="mac"></a> Configuração do Mac (Apple ID, Xcode e Xamarin)
 
-1.  Crie uma ID Apple gratuita em [https://appleid.apple.com](https://appleid.apple.com/) caso ainda não tenha uma. Isso é necessário para instalar e entrar no Xcode.
+1.  Crie uma ID Apple gratuita em [https://appleid.apple.com](https://appleid.apple.com/) se você ainda não tiver uma. Isso é necessário para instalar e entrar no Xcode.
 
-2.  Baixe e instale o Xcode de [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) e adicione sua ID Apple, conforme descrito em [Adicionar sua conta para XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
+2.  Baixe e instale o Xcode de [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) e adicione sua ID Apple, conforme é descrito em [Adicionando sua conta no XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
 3.  Baixe e instale o Xamarin, seguindo as instruções em [Instalando e configurando o Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 

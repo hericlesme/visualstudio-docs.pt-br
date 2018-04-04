@@ -1,7 +1,7 @@
 # [Documentação do depurador](index.md)
-# Visão geral
-## [Tour dos recursos do depurador](debugger-feature-tour.md)
+# [Visão geral](debugger-overview.md)
 # Guias de Início Rápido
+## [Introdução ao depurador](debugger-feature-tour.md)
 ## [Depurar um aplicativo gerenciado](quickstart-debug-with-managed.md)
 ## [Depurar um aplicativo nativo](quickstart-debug-with-cplusplus.md)
 ## [Depurar um aplicativo do ASP.NET](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [Valores de cadeia de caracteres de exibição em um visualizador](string-visualizer-dialog-box.md)
 ### [Exibir o código de desmontagem](how-to-use-the-disassembly-window.md)
 #### [Como rolar uma página para cima ou para baixo na memória](how-to-page-up-or-down-in-memory.md)
-### [Exibir a pilha de chamadas](how-to-use-the-call-stack-window.md)
-#### [Código misto e informações ausentes na janela Pilha de Chamadas](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [Como sair do código gerenciado quando quadros nativos estiverem ausentes da janela Pilha de Chamadas](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [Exibir os valores do Registro](how-to-use-the-registers-window.md)
 #### [Sobre a janela Registros](debugging-basics-registers-window.md)
 #### [Como exibir e ocultar grupos de registros](how-to-display-and-hide-register-groups.md)

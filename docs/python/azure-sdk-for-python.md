@@ -1,15 +1,15 @@
 ---
 title: SDK do Azure para Python | Microsoft Docs
-description: "O SDK do Azure para Python facilita o consumo de serviços do Microsoft Azure em aplicativos Python executados em qualquer plataforma."
-ms.custom: 
+description: O SDK do Azure para Python facilita o consumo de serviços do Microsoft Azure em aplicativos Python executados em qualquer plataforma.
+ms.custom: ''
 ms.date: 01/22/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: baa206dfbb9caf58ce872d0c9dee22e183403adb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 728fc1249671025ca99f36f62aab19a1282f15aa
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="azure-sdk-for-python"></a>SDK do Azure para Python
 
@@ -50,7 +50,7 @@ O [SDK do Azure para a Central de desenvolvedores do Python](http://azure.micros
 - [Armazenamento de Blobs](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Armazenamento de tabelas](/azure/storage/storage-python-how-to-use-table-storage)
 - [Armazenamento de filas](/azure/storage/storage-python-how-to-use-queue-storage)
-- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Filas do Barramento de Serviço](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
 - [Tópicos/assinaturas do Barramento de Serviço](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Gerenciamento de serviços](/azure/cloud-services/cloud-services-python-how-to-use-service-management)

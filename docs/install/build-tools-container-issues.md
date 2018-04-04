@@ -1,22 +1,24 @@
 ---
-title: "Problemas conhecidos de contêineres | Microsoft Docs"
-ms.custom: 
+title: Problemas conhecidos de contêineres | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6edcc59a2d726fbd76fee86b750f21dc468b727e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94b3acaeffc709978cc9c49645fd7e788abef177
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="known-issues-for-containers"></a>Problemas conhecidos de contêineres
 
@@ -34,7 +36,7 @@ Estes problemas conhecidos ocorrem quando as Ferramentas de Build do Visual Stud
 
 ## <a name="build-tools-container"></a>Contêiner das Ferramentas de Build
 
-Os problemas conhecidos a seguir podem ocorrer ao usar o contêiner das Ferramentas de Build. Para saber se os problemas foram corrigidos ou se existem outros problemas conhecidos, acesse https://developercommunity.visualstudio.com.
+Os problemas conhecidos a seguir podem ocorrer ao usar o contêiner das Ferramentas de Build. Para ver se os problemas foram corrigidos ou se há outros problemas conhecidos, visite https://developercommunity.visualstudio.com.
 
 * O IntelliTrace pode não funcionar em [alguns cenários](https://github.com/Microsoft/vstest/issues/940) dentro de um contêiner.
 

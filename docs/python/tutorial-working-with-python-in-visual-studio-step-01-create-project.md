@@ -1,15 +1,15 @@
 ---
 title: Trabalhar com o Python no Visual Studio, Etapa 1, Criar um projeto | Microsoft Docs
-description: "Etapa 1 de um tutorial básico para trabalhar com Python no Visual Studio, descrevendo o tutorial inteiro, os pré-requisitos e percorrendo o processo de criação de um novo projeto em Python."
-ms.custom: 
+description: Etapa 1 de um tutorial básico para trabalhar com Python no Visual Studio, descrevendo o tutorial inteiro, os pré-requisitos e percorrendo o processo de criação de um novo projeto em Python.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 22588c1e8221375f05b9fb62870662d9aa3d2f5e
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Trabalhando com o Python no Visual Studio
 
@@ -71,7 +71,7 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 
     (3) Em seu projeto você vê os arquivos de origem, nesse caso, um único arquivo `.py`. Ao selecionar um arquivo, as respectivas propriedades são exibidas na janela Propriedades. Ao clicar duas vezes em um arquivo, ele será aberto da forma que for apropriada para esse arquivo.
 
-    (4) Também no projeto está o nó **Ambientes do Python**. Quando expandido, você verá os interpretadores de Python disponíveis para você. Expanda um nó de interpretador para ver as bibliotecas que estão instaladas naquele ambiente (5).
+    (4) Também no projeto está o nó **Ambientes do Python**. Quando expandido, você verá os interpretadores de Python que estão disponíveis. Expanda um nó de interpretador para ver as bibliotecas que estão instaladas naquele ambiente (5).
 
     Clique com o botão direito do mouse em qualquer nó ou item no Gerenciador de Soluções para acessar um menu de comandos aplicáveis. Por exemplo, o comando **Renomear** permite que você altere o nome de qualquer nó ou item, incluindo o projeto e a solução.
 
