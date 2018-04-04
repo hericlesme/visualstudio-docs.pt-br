@@ -1,27 +1,27 @@
 ---
 title: IDs de carga de trabalho e de componente do Feedback Client do Visual Studio 2017 | Microsoft Docs
-description: "Usar IDs de carga de trabalho e de componente do Visual Studio para fornecer comentários detalhados para o Visual Studio Team Services ou o Team Foundation Server"
-keywords: 
+description: Usar IDs de carga de trabalho e de componente do Visual Studio para fornecer comentários detalhados para o Visual Studio Team Services ou o Team Foundation Server
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: 78ed18608b862edea3f82a732be232bd88c98d79
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: c6becc74b22dd52f0b438e781b4b1bd9a6a35fb5
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio 2017
 
