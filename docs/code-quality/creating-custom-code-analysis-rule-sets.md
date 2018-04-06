@@ -1,23 +1,25 @@
 ---
-title: "Criando conjuntos de regras de análise de código personalizado | Microsoft Docs"
-ms.custom: 
+title: Criando conjuntos de regras de análise de código personalizado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Criando conjuntos de regras de análise de código personalizados
 Você pode aplicar regras de análise de código para um projeto de código gerenciado, especificando um conjunto de regras que contém uma ou mais regras. Os conjuntos de regra padrão da Microsoft fornecem grupos de regras que são organizados por função e a profundidade. Por exemplo, as regras de diretrizes de Design básicas da Microsoft e as regras de diretrizes de Design estendido Microsoft contêm regras que se concentrar em usabilidade e questões de facilidade de manutenção, com ênfase adicional em regras de nomenclatura no conjunto de regras estendida.  
