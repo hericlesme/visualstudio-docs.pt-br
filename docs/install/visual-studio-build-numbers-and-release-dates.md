@@ -4,20 +4,20 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.date: 03/21/2018
-ms.topic: article
+manager: douge
+ms.date: 03/22/2018
+ms.topic: reference
 helpviewer_keywords: ''
 ms.technology:
 - vs-acquisition
 ms.service: ''
 ms.workload:
 - multiple
-ms.openlocfilehash: a3c7f0c1ea828cb1d63875c1646d33d7b70612f6
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: d036abe3aa3b6e348eae7f0045b30144900255fd
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio 2017
 
@@ -25,6 +25,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.4 | Versão | 22 de março de 2018 | 15.6.27428.2015 |
 | 15.7.0 Versão Prévia 2.0 | Visualizar | 21 de março de 2018 | 15.7.27520.0 |
 | 15.6.3 | Versão | 19 de março de 2018 | 15.6.27428.2011 |
 | 15.7.0 Versão prévia 1.0 | Visualizar | 13 de março de 2018 | 15.7.27512.0 |
