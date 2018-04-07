@@ -2,7 +2,7 @@
 title: Conjuntos de regras de análise de código no Visual Studio | Microsoft Docs
 ms.date: 04/02/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
@@ -12,19 +12,54 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 837ba95fc50ac32855889c4eca9010712906e646
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 3d6ac4a771efc34fcee8cdf46d21bf7a265da17b
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Conjuntos de regras de uso para agrupar regras de análise de código
 
-Quando você configura a análise de código no Visual Studio, você pode escolher de uma lista de interno *conjuntos de regras*. Um conjunto de regras é um agrupamento lógico de regras de análise de código que identificam problemas de destino e as condições específicas. Por exemplo, você pode aplicar um conjunto de regras que foi projetado para verificar o código de APIs disponível publicamente, ou você pode aplicar um conjunto de regras que inclui apenas o mínimo recomendado de regras. Você também pode aplicar um conjunto de regras que inclui todas as regras.
+Quando você configura a análise de código no Visual Studio, você pode escolher de uma lista de interno *conjuntos de regras*. Um conjunto de regras se aplicam a um projeto e é um agrupamento de código de regras de análise para identificam problemas de destino e as condições específicas para o projeto. Por exemplo, você pode aplicar um conjunto de regras que foi projetado para verificar o código de APIs disponível publicamente, ou apenas o mínimo recomendado regras. Você também pode aplicar um conjunto de regras que inclui todas as regras.
 
-Você pode personalizar uma conjunto de regras, adicionando ou excluindo regras ou alterando severidades de regra para aparecem como avisos ou erros no **lista de erros**. Conjuntos de regras personalizado podem atender uma necessidade de seu ambiente de desenvolvimento específico. Quando você personaliza um conjunto de regras, a página de conjunto de regra fornece pesquisa e ferramentas para ajudá-lo no processo de filtragem.
+Você pode personalizar uma conjunto de regras, adicionando ou excluindo regras ou alterando severidades de regra para aparecem como avisos ou erros no **lista de erros**. Conjuntos de regras personalizado podem atender uma necessidade de seu ambiente de desenvolvimento específico. Quando você personaliza um conjunto de regras, o editor de conjunto de regras fornece pesquisa e ferramentas para ajudá-lo no processo de filtragem.
+
+## <a name="rule-set-format"></a>Formato do conjunto de regras
+
+Um conjunto de regras é especificado em formato XML em um *. RuleSet* arquivo. Regras, que consistem em uma ID e um *ação*, são agrupadas por ID de analisador e o namespace no arquivo.
+
+O conteúdo XML de um *. RuleSet* arquivo é semelhante a este:
+
+```xml
+<RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
+  <Localization ResourceAssembly="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.dll" ResourceBaseName="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.Localized">
+    <Name Resource="HelloWorldRules_Name" />
+    <Description Resource="HelloWorldRules_Description" />
+  </Localization>
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1001" Action="Warning" />
+    <Rule Id="CA1009" Action="Warning" />
+    <Rule Id="CA1016" Action="Warning" />
+    <Rule Id="CA1033" Action="Warning" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1802" Action="Error" />
+    <Rule Id="CA1814" Action="Info" />
+    <Rule Id="CA1823" Action="None" />
+    <Rule Id="CA2217" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+> [!TIP]
+> É mais fácil [editar um conjunto de regras](../code-quality/working-in-the-code-analysis-rule-set-editor.md) no gráfico **Editor de conjunto de regra** que manualmente.
+
+A regra definida para um projeto é especificado o `CodeAnalysisRuleSet` propriedade no arquivo de projeto do Visual Studio. Por exemplo:
+
+```xml
+<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+```
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Configurar um conjunto de regras personalizado](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-- [Referência do conjunto de regras de análise de código](../code-quality/managed-minimun-rules-rule-set-for-managed-code.md)
+- [Referência do conjunto de regras de análise de código](../code-quality/rule-set-reference.md)
