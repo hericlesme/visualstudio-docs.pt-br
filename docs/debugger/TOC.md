@@ -7,7 +7,7 @@
 ## [Depurar um aplicativo do ASP.NET](quickstart-debug-aspnet.md)
 # Tutoriais
 ## [Aprenda a depurar usando o Visual Studio](getting-started-with-the-debugger.md)
-## [Executando o código Python no depurador...](../python/vs-tutorial-01-04.md)
+## [Executando o código Python no depurador...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Depurar um aplicativo ativo do Azure](debug-live-azure-applications.md)
 ## [Exibir instantâneos usando o retrocesso do IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Guias de instruções

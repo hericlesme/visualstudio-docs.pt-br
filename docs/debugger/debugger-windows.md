@@ -2,24 +2,24 @@
 title: O depurador de janelas no Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Saiba mais sobre as janelas do depurador no Visual Studio
 
@@ -43,7 +43,7 @@ Você pode abrir a maioria das janelas do depurador enquanto você está depuran
 |Módulos|CTRL + ALT + U|[Como usar a janela Módulos](../debugger/how-to-use-the-modules-window.md)|
 |Threads de GPU|-|[Como usar a janela Threads da GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tarefas|CTR: + SHIFT + D, K|[Usando a janela Tarefas](../debugger/using-the-tasks-window.md)|
-|Depuração de Python interativa|SHIFT + ALT + I|[REPL de Python interativo](../python/interactive-repl.md)|
+|Depuração de Python interativa|SHIFT + ALT + I|[REPL de Python interativo](../python/python-interactive-repl-in-visual-studio.md)|
 |Console do JavaScript|CTRL + ALT + V, C|[Início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Explorador do DOM|CTRL+ALT+V, D|[Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Árvore Visual dinâmica|-|[Inspecione as propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md)|

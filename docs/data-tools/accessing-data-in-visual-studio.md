@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 82717e8b0eb8b4b751fc8c5ed983695ff6b6fc4a
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Acesso a dados no Visual Studio
 
@@ -109,7 +109,7 @@ Para saber mais sobre como conectar aos bancos de dados de aplicativos em C++, c
 
 ## <a name="python"></a>Python
 
-Instalar [suporte a Python no Visual Studio](../python/python-in-visual-studio.md) para criar aplicativos de Python. Documentação do Azure tem vários tutoriais sobre como se conectar a dados, inclusive o seguinte:
+Instalar [suporte a Python no Visual Studio](../python/overview-of-python-tools-for-visual-studio.md) para criar aplicativos de Python. Documentação do Azure tem vários tutoriais sobre como se conectar a dados, inclusive o seguinte:
 
 - [Django e banco de dados do SQL Azure](/azure/app-service/app-service-web-get-started-python)
 - [Django e MySQL no Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
