@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78e9245df26a2de747414a91b9024fde9325ef22
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guia de produtividade do Visual Studio 2017 para Desenvolvedores do .NET
 
@@ -31,12 +31,7 @@ Se estiver vindo de outro ambiente de codificação ou IDE, a instalação de um
 - [Teclas de acesso para Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![A galeria de extensões do Visual Studio](../ide/media/VSIDE_Productivity_Extensibility.png)
-
-Estes são os atalhos populares do Visual Studio. 
-
-> [!NOTE]
-> Algumas extensões desvinculam as associações de teclas padrão do Visual Studio, então, é necessário restaurá-las para usar os comandos a seguir. Para restaurar suas associações de teclas padrão do Visual Studio, vá para: **Ferramentas > Importar e Exportar Configurações... > Redefinir todas as configurações** ou **Ferramentas > Opções > Teclado > Redefinir**.
+Estes são os atalhos populares do Visual Studio: 
 
 | Atalho (todos os perfis) | Comando | Descrição |
 |-|-|-|
@@ -53,6 +48,9 @@ Estes são os atalhos populares do Visual Studio.
 | **Ctrl+K, D** (Perfil Padrão) ou **Ctrl+E, D** (Perfil C#) | Formatar Documento | Limpe as violações de formatação de um arquivo com base nas configurações de nova linha, de espaçamento e de recuo |
 | **Ctrl+\\E** (Perfil Padrão) ou **Ctrl+W, E** (Perfil C#) | Exibir Lista de Erros | Veja todos os erros no documento, no projeto ou na solução |
 
+> [!NOTE]
+> Algumas extensões desassociam as associações de teclas padrão do Visual Studio. Para usar os comandos a seguir, restaure suas associações de teclas padrão do Visual Studio acessando **Ferramentas > Importar e Exportar Configurações... > Redefinir todas as configurações** ou **Ferramentas > Opções > Teclado > Redefinir**.
+
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Preciso de uma maneira para navegar rapidamente nos arquivos ou tipos.
 O Visual Studio 2017 tem um recurso chamado _Ir para Todos_ (**Ctrl + T**). Ir para Todos permite que você acesse rapidamente qualquer declaração de arquivo, tipo, membro ou símbolo.
 - Altere a localização desta barra de pesquisa ou desative a "visualização de navegação dinâmica" com o ícone **engrenagem**
@@ -62,64 +60,85 @@ O Visual Studio 2017 tem um recurso chamado _Ir para Todos_ (**Ctrl + T**). Ir p
 ![Ir para todos no Visual Studio](../ide/media/VS2017Guide-go-to-all.png)
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Minha equipe impõe regras de estilo de código em nossa base de código.
-Você pode usar um arquivo .editorconfig para codificar as convenções de codificação. É recomendável instalar a [extensão Serviços de Linguagem EditorConfig](https://aka.ms/editorconfig) para adicionar e editar um arquivo .editorconfig. É recomendável fazer check-out da [documentação](https://aka.ms/editorconfigDocs) para todas as opções de convenção de codificação .NET.
-
-Confira [este gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) para obter um exemplo de .editorconfig.
+Você pode usar um arquivo .editorconfig para codificar as convenções de codificação e aplicá-las à sua fonte.
+- É recomendável instalar a [extensão Serviços de Linguagem EditorConfig](https://aka.ms/editorconfig) para adicionar e editar um arquivo .editorconfig no Visual Studio. 
+- Confira a [documentação](https://aka.ms/editorconfigDocs) para ver todas as opções de convenção de codificação .NET.
+- Confira [este gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) para ver um exemplo de .editorconfig.
 
 ![Imposição de estilo de código no Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Preciso de mais correções de código e refatorações.
-O Visual Studio 2017 vem com muitas ações de geração de código, refatorações e correções de códigos, que podem ser visualizadas na nossa [documentação](https://aka.ms/refactorings). As linhas onduladas vermelhas representam erros, as linhas onduladas verdes representam avisos e os três pontos cinzas representam sugestões de código.
+O Visual Studio 2017 vem com muitas refatorações, ações de geração de códigos e correções de códigos. As linhas onduladas vermelhas representam erros, as linhas onduladas verdes representam avisos e os três pontos cinzas representam sugestões de código. Você pode acessar as correções de código clicando no ícone de lâmpada/chave de fenda ou pressionando **Ctrl +.** ou **Alt+Enter**. Cada correção vem com uma janela de visualização que mostra a diferença do código em tempo real de como a correção funciona.
 
-Você pode acessar as correções de código clicando no ícone de lâmpada/chave de fenda ou pressionando **Ctrl +.** ou **Alt+Enter**. Cada correção vem com uma janela de visualização que mostra a diferença do código em tempo real de como a correção funciona.
-
-Aqui estão algumas correções e refatorações rápidas comuns: *Renomear*, *Extrair método*, *Alterar assinatura do método*, *Gerar construtor*, *Gerar método*, *Mover tipo para arquivo*, *Adicionar verificação de nulo*, *Adicionar parâmetro*, *Remover usos desnecessários*.
-
-As correções de código e as refatorações podem ser facilmente escritas com [analisadores Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix). Vários membros da comunidade escreveram extensões *gratuitas* que adicionam inspeções de código adicionais: [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017), [SonarLint para Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017) e [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/). 
+- As correções rápidas e refatorações comuns incluem: 
+  - *Renomear*
+  - *Método Extract*
+  - *Alterar assinatura do método* 
+  - *Gerar construtor*
+  - *Método Generate*
+  - *Mover Tipo para Arquivo*
+  - *Adicionar Null-Check*
+  - *Adicionar Parâmetro*
+  - *Remover Usos Desnecessários*
+  - Confira mais em nossa [documentação](https://aka.ms/refactorings)
+- Crie sua própria refatoração ou correção de código com [analisadores Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix). 
+- Vários membros da comunidade escreveram extensões *gratuitas* que adicionam inspeções de código: 
+  - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
+  - [SonarLint para Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
+  - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
 ![Refatorações no Visual Studio](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Preciso Localizar Usos, Ir Para Implementação, Navegar para Assemblies Descompiladas
-O Visual Studio 2017 tem muitos recursos para ajudá-lo a pesquisar e navegar na base de código, incluindo Localizar Todas as Referências (**Shift+F12**), Ir para Implementação (**Ctrl+F12**), Ir para Definição ( **F12** ou **Ctrl+Clique**). Fizemos vários aprimoramentos nestes recursos no VS2017, por exemplo, Localizar Todas as Referências agora é colorido e permite o agrupamento personalizado. *Navegar para Assemblies Descompilados* em Ir para definição foi adicionado na versão 15.6. Para ativar esse recurso, vá para **Ferramentas > Opções > Editor de Texto > C# > Avançado > Habilitar navegação para códigos-fonte descompilados**.
+O Visual Studio 2017 tem muitos recursos para ajudar você a pesquisar e navegar em sua base de código. Leia mais sobre os [recursos de navegação de código](../ide/navigating-code.md)
 
-Outras ferramentas de navegação comuns incluem: Inspecionar Definição (**Alt + F12**), o Visualizador de estrutura (linhas pontilhadas entre chaves focalizáveis) e [muito mais](../ide/navigating-code.md).
+| Recurso | Atalho | Detalhes/melhorias |
+|- | - | -| 
+| Localizar Todas as Referências | **Shift+F12**| Os resultados são coloridos e podem ser agrupados por projeto, definição etc. Também é possível “bloquear” resultados. |
+| Ir Para Implementação | **Ctrl+F12** | É possível usar “Ir para definição” na palavra-chave `override` para navegar até o membro substituído |
+| Ir para definição | **F12** ou **Ctrl+Click**| Ou pressione **Ctrl** enquanto clica para navegar até a definição | 
+| Inspecionar Definição | **Alt+F12** | Exibição embutida de uma definição |
+| Visualizador de Estrutura | Linhas cinzas pontilhadas entre chaves | Passe o mouse para ver a estrutura do código |
+| Navegação para assemblies descompilados | **F12** ou **Ctrl+Click** | Navegue até a origem externa (descompilado com ILSpy) habilitando o recurso: **Ferramentas > Opções > Editor de Texto > C# > Avançado > Habilitar a navegação para origens descompiladas**. |
 
 ![Ir para Todos e Localizar Todas as Referências](../ide/media/VSIDE_Productivity_Navigation.png)
 
 ## <a name="i-want-to-run-and-see-my-unit-tests"></a>Preciso executar e ver meus testes de unidade.
-Há duas ofertas para teste de unidade no Visual Studio de 2017: o Gerenciador de Testes e o _Live Unit Testing_ (ambos são compatíveis com MSTest v1, MSTest v2, NUnit e XUnit). Nós melhoramos significativamente a velocidade da detecção de testes no Gerenciador de Testes na versão 15.6 (para obter melhores resultados, atualize para a versão mais recente do adaptador de teste). Também reformulamos a interface do usuário para permitir a classificação hierárquica.
-
-O Visual Studio 2017 Enterprise também tem uma recurso de teste de unidade chamado [Live Unit Testing](../test/live-unit-testing.md). O Live Unit Testing é executado continuamente em segundo plano, executa os testes afetados pela sua alteração de código e atualiza os ícones de editor embutido para informar o status dos seus testes.
+Fizemos muitos aprimoramentos à experiência de teste no Visual Studio 2017. Use qualquer uma das nossas experiências de teste de unidade com as estruturas de teste MSTest v1, v2 MSTest, NUnit ou XUnit.
+- A detecção de testes do *Gerenciador de Testes* está rápida na versão 15.6 (para obter melhores resultados, atualize para a versão mais recente do adaptador de teste).
+- Organize seus testes no Gerenciador de Testes com nossa nova *classificação hierárquica* na versão 15.6.
+- O [Live Unit Testing](../test/live-unit-testing.md) executa continuamente testes afetados pelas suas alterações de código e atualiza os ícones de editor embutidos para informar o status dos seus testes. Inclua ou exclua testes específicos ou projetos de teste pelo *Live Test Set*.
 
 ![Exibição de hierarquia do Gerenciador de Testes no Visual Studio](../ide/media/VSGuide_Testing.png)
 
 ## <a name="i-want-to-debug-my-code"></a>Quero depurar meu código.
-Nós adicionamos inúmeros recursos de depuração novos no Visual Studio 2017. *Executar até o clique* permite que você passe o mouse ao lado de uma linha de código, pressione o ícone verde 'executar' que é exibido e execute o programa até atingir essa linha. O novo *Auxiliar de Exceção* coloca as informações mais importantes, como qual variável é 'nula' em uma NullReferenceException, na parte superior da caixa de diálogo. E [Retroceder](../debugger/how-to-use-intellitrace-step-back.md) a depuração permite voltar para os pontos de interrupção ou para as etapas anteriores e exibir o estado do aplicativo como ele estava anteriormente.
-
-Se você tiver recursos no Azure, use [Depuração de Instantâneo](/azure/application-insights/app-insights-snapshot-debugger) para investigar o estado de um aplicativo Web em tempo real no momento em que uma exceção foi gerada.
+Nós adicionamos inúmeros recursos de depuração novos no Visual Studio 2017. 
+- *Executar até o clique* permite que você passe o mouse ao lado de uma linha de código, pressione o ícone verde 'executar' que é exibido e execute o programa até atingir essa linha. 
+- O novo *Auxiliar de Exceção* coloca as informações mais importantes, como qual variável é 'nula' em uma NullReferenceException, na parte superior da caixa de diálogo.
+- A opção [Retroceder](../debugger/how-to-use-intellitrace-step-back.md) a depuração permite voltar para os pontos de interrupção ou para as etapas anteriores e exibir o estado do aplicativo como ele estava anteriormente.
+- A opção [Depuração de Instantâneo](/azure/application-insights/app-insights-snapshot-debugger) permite investigar o estado de um aplicativo Web em tempo real no momento em que uma exceção foi gerada (deve ser no Azure).
 
 ![Novo auxiliar de exceção no VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Desejo usar o controle de versão com meus projetos.
-Você pode usar o Git ou o TFVC para armazenar e atualizar seu código no Visual Studio. No editor, organize as alterações locais com o Team Explorer e use a barra de status para acompanhar confirmações e alterações pendentes. Configure a integração e a entrega contínuas de seus projetos no Visual Studio com a extensão [Ferramentas de Entrega Contínua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) para adotar um fluxo de trabalho de desenvolvedor Agile.
+Você pode usar o Git ou o TFVC para armazenar e atualizar seu código no Visual Studio. 
+- Organize as alterações locais com o *Team Explorer* e use a barra de status para acompanhar confirmações e alterações pendentes. 
+- Configure a integração e a entrega contínuas de seus projetos no Visual Studio com a extensão [Ferramentas de Entrega Contínua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) para adotar um fluxo de trabalho de desenvolvedor Agile.
 
 ![Controle do código-fonte no Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png)
 
 ## <a name="what-other-features-do-i-need-to-know-about"></a>Quais outros recursos que preciso conhecer?
 Aqui está uma lista dos recursos do editor e de produtividade para escrever códigos com mais eficiência. Pode ser necessário ativar alguns recursos, pois eles ficam desativado por padrão (eles podem indexar itens em sua máquina, são controversos ou atualmente são experimentais).
-- *Localizar o Arquivo no Gerenciador de Soluções* realça o arquivo ativo no Gerenciador de Soluções.
-  - **Ferramentas > Opções > Projetos e Soluções > Acompanhar Item Ativo no Gerenciador de Soluções**
-- *Adicionar usos para tipos em assemblies de referência e pacotes do NuGet* mostra uma lâmpada com uma correção de código para instalar um pacote do NuGet para um tipo não referenciado.
-  - **Ferramentas > Opções > Editor de Texto > C# > Avançado > Sugerir usos para tipos em assemblies de referência** e **Sugerir usos para tipos em pacotes NuGet**
-- *Habilitar análise de solução completa* para ver todos os erros em sua solução na Lista de Erros.
-  - **Ferramentas > Opções > Editor de Texto > C# > Avançado > Habilitar análise de solução completa**
-- *Habilitar navegação para fontes descompiladas* para habilitar Ir Para a Definição em tipos/membros de fontes externas e usar o descompilador ILSpy para mostrar os corpos de método.
-  - **Ferramentas > Opções > Editor de Texto > C# > Avançado > Habilitar navegação para fontes descompiladas**
-- *Modo de Sugestão/Conclusão* no IntelliSense muda o comportamento de conclusão. Os desenvolvedores com experiência em IntelliJ tendem a alterar aqui a configuração do padrão.
-  - **Menu > Editar > IntelliSense > Alternar Modo de Conclusão**
-- *[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)* exibe informações de referência de código e o histórico de alterações no editor.
-  - **Ferramentas > Opções > Editor de Texto > Todas as Linguagens > CodeLens**
-- Temos *trechos de código* para ajudar a criar um stub de texto clichê comum (pressione Tab duas vezes). Veja a [lista completa](../ide/visual-csharp-code-snippets.md).
+
+| Recurso | Detalhes | Como habilitar |
+|-|-|-|
+| Arquivo local no Gerenciador de Soluções | Realça o arquivo ativo no Gerenciador de Soluções | **Ferramentas > Opções > Projetos e Soluções > Acompanhar Item Ativo no Gerenciador de Soluções** |
+| Adicionar usos para tipos em assemblies de referência e pacotes do NuGet | Mostra uma lâmpada com uma correção de código para instalar um pacote do NuGet para um tipo não referenciado | **Ferramentas > Opções > Editor de Texto > C# > Avançado > Sugerir usos para tipos em assemblies de referência** e **Sugerir usos para tipos em pacotes NuGet** |
+| Habilitar análise de solução completa | Ver todos os erros em sua solução na Lista de Erros | **Ferramentas > Opções > Editor de Texto > C# > Avançado > Habilitar análise de solução completa** |
+| Habilitar a navegação para origens descompiladas | Habilite Ir Para a Definição em tipos/membros de fontes externas e usar o descompilador ILSpy para mostrar os corpos de método | **Ferramentas > Opções > Editor de Texto > C# > Avançado > Habilitar navegação para fontes descompiladas** |
+| Modo de conclusão/sugestão | Altera o comportamento de conclusão no IntelliSense – os desenvolvedores com experiência em IntelliJ tendem a alterar aqui a configuração padrão | **Menu > Editar > IntelliSense > Alternar Modo de Conclusão** |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Exibe informações de referência de código e o histórico de alterações no editor | **Ferramentas > Opções > Editor de Texto > Todas as Linguagens > CodeLens** |
+| [Trechos de código](../ide/visual-csharp-code-snippets.md) | Ajudar a remover um texto clichê |  Digite um nome de trecho de código e pressione “Tab” duas vezes. |
 
 ![Trechos de código no Visual Studio](../ide/media/VSGuide_SmartEditor.png)
 
