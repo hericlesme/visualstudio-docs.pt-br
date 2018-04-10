@@ -1,9 +1,9 @@
 ---
-title: "Referência de API para modelos de texto T4 | Microsoft Docs"
-ms.custom: 
+title: Referência de API para modelos de texto T4 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: a229ea504fee1d39b697cc5f69c5c77d64758751
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Referência de API para modelos de texto T4
 A API de modelagem de texto permite invocar e personalizar a transformação de [modelos de texto](../modeling/code-generation-and-t4-text-templates.md).  

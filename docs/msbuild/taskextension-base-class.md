@@ -1,11 +1,11 @@
 ---
 title: Classe Base TaskExtension | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, tool task base class
 - tool task base class [MSBuild]
 ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
-caps.latest.revision: 
+caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: c2ac7a4811033eec63c5db3d8546b033b7db9c32
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="taskextension-base-class"></a>Classe TaskExtension (base)
 Muitas tarefas são herdadas da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que é herdada da classe <xref:Microsoft.Build.Utilities.Task>. Esta cadeia de herança adiciona vários parâmetros nas tarefas que derivam deles. Esses parâmetros são listados neste documento.  

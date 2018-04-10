@@ -1,27 +1,27 @@
 ---
 title: Acessando as camadas de texto usando a API herdado | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text layers
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a5f7a80e8d594f3c9e62ecd2047cc1116948d2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Acessando as camadas de texto usando a API herdado
 Normalmente, uma camada de texto encapsula alguns aspectos do layout de texto. Por exemplo, uma camada de "uma função no tempo" oculta o texto antes e depois de uma função que contém o cursor (ponto de inserção de texto).  

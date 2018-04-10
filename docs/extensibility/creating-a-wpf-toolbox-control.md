@@ -1,29 +1,29 @@
 ---
 title: Criando um controle de caixa de ferramentas do WPF | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - toolbox control
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-caps.latest.revision: 
+caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: c1a8338f0ebd964e5d039ffa8dff000a441523f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Criando um controle de caixa de ferramentas do WPF
 O modelo de controle de caixa de ferramentas do WPF (Windows Presentation Framework) permite que você crie controles do WPF que são adicionados automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar um **caixa de ferramentas** controle que você pode distribuir para outros usuários.  

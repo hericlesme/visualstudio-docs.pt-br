@@ -1,12 +1,12 @@
 ---
 title: Depurar HTML e CSS em aplicativos UWP | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
+caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML e CSS em aplicativos UWP no Visual Studio
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
  Para obter informações sobre outros recursos, como usando a janela do Console do JavaScript e configuração de pontos de interrupção, de depuração do JavaScript, consulte [início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a>Inspecionando o DOM ativo  
+##  <a name="InspectingDOM"></a> Inspecionando o DOM ativo  
  O Explorador de DOMs mostra a página renderizada, e você pode usá-lo para alterar valores e imediatamente ver os resultados. Isso permite que você teste as mudanças sem parar e reiniciar o depurador. O código-fonte em seu projeto não muda quando você interage com a página usando esse método; então, quando você encontra as correções de código desejadas, você faz as mudanças no seu código-fonte.  
   
 > [!TIP]
@@ -211,7 +211,7 @@ ms.lasthandoff: 01/19/2018
   
      A ilustração a seguir mostra como o **Layout** aparência da guia se você estiver usando um emulador com 100 px deslocamento e margem).  
   
-     ![DOM Explorer Layout tab](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
+     ![Guia Layout de Explorador do DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
      Isso não parece estar correto. O **calculado** guia também mostra os mesmos valores de margem.  
   
@@ -235,7 +235,7 @@ ms.lasthandoff: 01/19/2018
   
      Para obter mais informações sobre o recurso de atualização, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a>Selecionando elementos  
+##  <a name="SelectingElements"></a> Selecionando elementos  
  Você pode selecionar elementos DOM de três maneiras ao depurar um aplicativo:  
   
 -   Clicando diretamente nos elementos na janela Explorador de DOMs (ou usando as teclas de direção).  

@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb9e284435cdf8a5905e068b0044cd118a1621c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Essa interface é usada para notificar o Visual Studio sobre alterações para o documento de origem que são fornecidas pelo mecanismo de depuração.  
@@ -38,7 +38,7 @@ IDebugDocumentTextEvents2 : IUnknown
  O DE implementa essa interface para oferecer suporte a fazer alterações ao código-fonte. Normalmente, essa interface é implementada no mesmo objeto que implementa o [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Obtém a esta interface por meio de uma chamada para o <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> método. O <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interface é obtida de uma chamada para o <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> método. O <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interface é obtida chamando o [QueryInterface](/cpp/atl/queryinterface) método em um [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Obtém a esta interface por meio de uma chamada para o <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> método. O <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> interface é obtida de uma chamada para o <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> método. O <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> interface é obtida chamando o [QueryInterface](/cpp/atl/queryinterface) método em um [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interface.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem Vtable  
  A tabela a seguir mostra os métodos de `IDebugDocumentTextEvents2`.  

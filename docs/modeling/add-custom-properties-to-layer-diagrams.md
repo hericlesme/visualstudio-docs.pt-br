@@ -1,9 +1,9 @@
 ---
-title: "Adicionar propriedades personalizadas a diagramas de dependência | Microsoft Docs"
-ms.custom: 
+title: Adicionar propriedades personalizadas a diagramas de dependência | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f05c5f5a16b0d44794bf6fdcc6990a206dec30f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Adicionar propriedades personalizadas a diagramas de dependência
 Quando você escreve o código de extensão para diagramas de dependência, você pode armazenar valores com qualquer elemento em um diagrama de dependência. Os valores serão mantidas quando o diagrama é salvo e aberto novamente. Você também pode ter essas propriedades aparecem no **propriedades** janela para que os usuários podem ver e editá-los. Por exemplo, você pode permitir que os usuários especificar uma expressão regular para cada camada e escrever código de validação para verificar se os nomes das classes em cada camada está de acordo com o padrão especificado pelo usuário.  
@@ -31,7 +31,7 @@ Quando você escreve o código de extensão para diagramas de dependência, voc�
 > [!IMPORTANT]
 >  Para exibir propriedades, faça as seguintes alterações em cada computador onde você deseja que as propriedades da camada fique visível.  
 >   
->  1.  Execute o bloco de notas usando **executar como administrador**. Abrir`%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  1.  Execute o bloco de notas usando **executar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
 > 2.  Dentro de `Content` elemento, adicionar:  
 >   
 >     ```xml  
@@ -65,11 +65,11 @@ public class MyProperty
   
  Você pode definir propriedades em <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ou qualquer uma de suas classes derivadas, que incluem:  
   
--   `ILayerModel`-o modelo  
+-   `ILayerModel` -o modelo  
   
--   `ILayer`-cada camada  
+-   `ILayer` -cada camada  
   
--   `ILayerDependencyLink`-os links entre camadas  
+-   `ILayerDependencyLink` -os links entre camadas  
   
 -   `ILayerComment`  
   

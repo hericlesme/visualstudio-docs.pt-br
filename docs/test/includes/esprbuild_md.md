@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2bf76fea98cb30b0b32ede245be3bbd774699b58
+ms.openlocfilehash: f13d060b089537109d021a166c29075e43d35ec8
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/10/2018
 ---
-MSBuild
+Compilação do Team Foundation

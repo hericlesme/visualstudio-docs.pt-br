@@ -1,12 +1,12 @@
 ---
 title: Formatar especificadores no depurador (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug
@@ -28,17 +28,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato em C++ no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido no **inspecionar** janela usando especificadores de formato.  
@@ -76,19 +76,19 @@ int main() {
 |x<br /><br /> **h**|inteiro hexadecimal|102|0xcccccccc|  
 |X<br /><br /> **H**|inteiro hexadecimal|102|0xCCCCCCCC|  
 |c|caractere único|0x0065, c|101 'e'|  
-|s|Const char * de cadeia de caracteres|\<local > "Olá, mundo"|"hello world"|  
-|**sb**|Const char * cadeia de caracteres (sem aspas)|\<local > "Olá, mundo"|Olá, mundo|  
+|s|Const char * de cadeia de caracteres|\<location> "hello world"|"hello world"|  
+|**sb**|Const char * cadeia de caracteres (sem aspas)|\<location> "hello world"|Olá, mundo|  
 |s8|Cadeia de caracteres UTF-8|\<local > "Este é um â˜• de xícara de café UTF-8"|"Este é um ☕ de xícara de café UTF-8"|
-|**s8b**|Cadeia de caracteres UTF-8 (sem aspas)|\<local > "Olá, mundo"|Olá, mundo|  
-|su|Cadeia de caracteres Unicode (codificação UTF-16)|\<local > L "hello world"|L "hello world"<br /><br /> U "hello world"|  
-|sub|Cadeia de caracteres Unicode (codificação UTF-16) (sem aspas)|\<local > L "hello world"|Olá, mundo|  
-|bstr|Cadeia de caracteres BSTR|\<local > L "hello world"|L "hello world"|  
+|**s8b**|Cadeia de caracteres UTF-8 (sem aspas)|\<location> "hello world"|Olá, mundo|  
+|su|Cadeia de caracteres Unicode (codificação UTF-16)|\<location> L"hello world"|L "hello world"<br /><br /> U "hello world"|  
+|sub|Cadeia de caracteres Unicode (codificação UTF-16) (sem aspas)|\<location> L"hello world"|Olá, mundo|  
+|bstr|Cadeia de caracteres BSTR|\<location> L"hello world"|L "hello world"|  
 |env|Bloco de ambiente (cadeia de caracteres nula duplo encerrado)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Cadeia de caracteres UTF-32|\<local > U "hello world"|U "hello world"|  
 |**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|Olá, mundo|  
 |**en**|enum|Saturday(6)|Sábado|  
-|**hv**|Tipo de ponteiro - indica que o valor do ponteiro sendo inspecionado é o resultado da alocação de heap de uma matriz, por exemplo, `new int[3]`.|\<local > {\<primeiro membro >}|\<local > {\<primeiro membro >, \<segundo membro >,...}|  
-|**na**|Suprime o endereço de memória de um ponteiro para um objeto.|\<local >, {membro = valor...}|{membro = valor...}|  
+|**hv**|Tipo de ponteiro - indica que o valor do ponteiro sendo inspecionado é o resultado da alocação de heap de uma matriz, por exemplo, `new int[3]`.|\<local > {\<primeiro membro >}|\<location>{\<first member>, \<second member>, ...}|  
+|**na**|Suprime o endereço de memória de um ponteiro para um objeto.|\<location>, {member=value...}|{member=value...}|  
 |**nd**|Exibe apenas as informações de classe base, ignorando as classes derivadas|`(Shape*) square` inclui a classe base e derivadas informações de classe|Exibe somente informações de classe de base|  
 |hr|Código de erro HRESULT ou Win32. (O depurador agora decodifica HRESULTs automaticamente. Portanto, esse especificador não é necessário nesses casos.|S_OK|S_OK|  
 |wc|Sinalizador de classe de janela|0x0010|WC_DEFAULTCHAR|  
@@ -112,19 +112,19 @@ int main() {
   
 |Especificador|Formatar|Valor original de inspeção|Valor exibido|  
 |---------------|------------|--------------------------|---------------------|  
-|**d, i**|inteiro decimal assinado|0xF000F065|-268373915|  
+|**d,i**|inteiro decimal assinado|0xF000F065|-268373915|  
 |**u**|inteiro decimal não assinado|0x0065|101|  
 |o|inteiro octal não assinado|0xF065|0170145|  
 |x,X|Inteiro hexadecimal|61541|0x0000f065|  
-|**l, h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|  
+|**l,h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|  
 |**f**|ponto flutuante assinado|(3./2.), f|1.500000|  
 |**e**|notação científica assinada|(3.0/2.0)|1.500000e+000|  
 |**g**|ponto flutuante assinado ou notação científica assinada, o que for menor|(3.0/2.0)|1.5|  
 |c|caractere único|\<location>|101 'e'|  
-|s|Const char *|\<location>|"hello world"|  
-|su|wchar_t const *<br /><br /> char16_t const\*|\<location>|L "hello world"|  
-|sub|wchar_t const *<br /><br /> char16_t const\*|\<location>|Olá, mundo|  
-|s8|Const char *|\<location>|"hello world"|  
+|s|const char*|\<location>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L "hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|Olá, mundo|  
+|s8|const char*|\<location>|"hello world"|  
 |hr|Código de erro HRESULT ou Win32. (O depurador agora decodifica HRESULTs automaticamente. Portanto, esse especificador não é necessário nesses casos.|S_OK|S_OK|  
 |wc|Sinalizador de classe do Windows.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Números de mensagens do Windows|0x0010|WM_CLOSE|  

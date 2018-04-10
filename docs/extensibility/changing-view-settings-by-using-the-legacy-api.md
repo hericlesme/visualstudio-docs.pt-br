@@ -1,27 +1,27 @@
 ---
-title: "Alterar configurações de exibição usando a API herdado | Microsoft Docs"
-ms.custom: 
+title: Alterar configurações de exibição usando a API herdado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
-caps.latest.revision: 
+caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Alterar configurações de exibição usando a API herdado
 As configurações para os principais recursos do editor, como quebra automática de linha, a margem de seleção e o espaço virtual, podem ser alteradas pelo usuário por meio do **opções** caixa de diálogo. No entanto, também é possível alterar essas configurações por meio de programação.  

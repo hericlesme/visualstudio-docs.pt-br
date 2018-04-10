@@ -1,27 +1,27 @@
 ---
-title: "Personalização do Windows de código usando a API herdado | Microsoft Docs"
-ms.custom: 
+title: Personalização do Windows de código usando a API herdado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
-caps.latest.revision: 
+caps.latest.revision: 19
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0b00c31280b9471da99aea55118e25dd551ad96
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalização do Windows de código usando a API herdado
 Uma janela de código é um objeto de janela de documento que oferece suporte a um ou mais modos de exibição de texto. Os recursos exatos de uma janela de código dependem do serviço de idioma associado. No modo de interface de documentos múltiplos (MDI), a janela de código é o quadro de filho MDI.  

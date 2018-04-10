@@ -1,12 +1,12 @@
 ---
-title: "Caixa de diálogo de páginas de propriedade do origem arquivos, propriedades comuns, solução de depuração | Microsoft Docs"
-ms.custom: 
+title: Caixa de diálogo de páginas de propriedade do origem arquivos, propriedades comuns, solução de depuração | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -23,17 +23,17 @@ helpviewer_keywords:
 - source files, specifying in debugger
 - debugger, source files
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: aa83025b15fe3773220a2b27394890318d60c850
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Caixa de diálogo Depurar Arquivos de Origem, Propriedades Comuns, Páginas de Propriedades da Solução
 Esta página de propriedades especifica onde o depurador procurará arquivos de origem ao depurar a solução.  

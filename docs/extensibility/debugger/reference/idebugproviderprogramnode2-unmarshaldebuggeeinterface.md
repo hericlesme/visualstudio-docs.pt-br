@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: c0f09d5b5fb1d420eef6b91ea596adbcab665ded
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Obtém uma interface especificada nos limites do processo.  

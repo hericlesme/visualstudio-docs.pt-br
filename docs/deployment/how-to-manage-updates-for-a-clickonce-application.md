@@ -1,12 +1,12 @@
 ---
-title: "Como: gerenciar atualizações para um aplicativo ClickOnce | Microsoft Docs"
-ms.custom: 
+title: 'Como: gerenciar atualizações para um aplicativo ClickOnce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Como gerenciar atualizações para um aplicativo ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplicativos podem verificar se há atualizações automaticamente ou programaticamente. Como desenvolvedor, você tem muita flexibilidade para especificar quando e como executar verificações de atualização, se as atualizações são obrigatórias, e onde o aplicativo deve verificar se há atualizações.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos podem verificar se há atualizações automaticamente ou programaticamente. Como desenvolvedor, você tem muita flexibilidade para especificar quando e como executar verificações de atualização, se as atualizações são obrigatórias, e onde o aplicativo deve verificar se há atualizações.  
   
  Você pode configurar o aplicativo para verificar se há atualizações automaticamente antes do início do aplicativo ou em intervalos definidos depois que o aplicativo for iniciado. Além disso, você pode especificar uma versão mínima necessária; ou seja, uma atualização é instalada se a versão do usuário é menor do que a versão necessária.  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  No **atualizações do aplicativo** caixa de diálogo caixa, certifique-se de que o **o aplicativo deve verificar se há atualizações** caixa de seleção é marcada.  
   
-5.  No **atualizar local** campo, digite o local de atualização com uma URL totalmente qualificada, usando o formato http://Hostname/ApplicationName ou um caminho UNC no formato \\\Server\ApplicationName, ou clique no **Procurar** botão para procurar o local de atualização.  
+5.  No **atualizar local** campo, digite o local de atualização com uma URL totalmente qualificada, usando o formato http://Hostname/ApplicationName, ou um caminho UNC no formato \\\Server\ApplicationName ou clique o **procurar** botão para procurar o local de atualização.  
   
 ### <a name="to-check-for-updates-programmatically"></a>Para verificar atualizações programaticamente  
   
@@ -105,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  No **atualizações do aplicativo** caixa de diálogo caixa, certifique-se de que o **o aplicativo deve verificar se há atualizações** caixa de seleção é desmarcada. (Opcionalmente, você pode selecionar essa caixa de seleção de verificação de atualizações por meio de programação e também permitem que o tempo de execução do ClickOnce verificar se há atualizações automaticamente).  
   
-5.  No **atualizar local** campo, digite o local de atualização com uma URL totalmente qualificada, usando o formato http://Hostname/ApplicationName ou um caminho UNC no formato \\\Server\ApplicationName, ou clique no **Procurar** botão para procurar o local de atualização. O local de atualização é onde o aplicativo irá procurar uma versão atualizada de si mesma.  
+5.  No **atualizar local** campo, digite o local de atualização com uma URL totalmente qualificada, usando o formato http://Hostname/ApplicationName, ou um caminho UNC no formato \\\Server\ApplicationName ou clique o **procurar** botão para procurar o local de atualização. O local de atualização é onde o aplicativo irá procurar uma versão atualizada de si mesma.  
   
 6.  Crie um botão, o item de menu ou outro item de interface do usuário em um Windows Form que selecionará os usuários para verificar se há atualizações. Manipulador de eventos do item, chame um método para verificar e instalar atualizações. Você pode encontrar um exemplo de código do Visual Basic e Visual c# para tal método em [como: verificar se há atualizações de aplicativo programaticamente usando a API de implantação do ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   

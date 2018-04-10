@@ -1,27 +1,27 @@
 ---
 title: Tarefas do MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: e1de29741f11413d8829902635c1284aa6e5bce6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-tasks"></a>Tarefas do MSBuild
 Uma plataforma de build precisa de capacidade para executar qualquer número de ações durante o processo de build. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa *tarefas* para executar essas ações. Uma tarefa é uma unidade de código executável usada por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para executar operações atômicas de build.  
@@ -40,7 +40,7 @@ Uma plataforma de build precisa de capacidade para executar qualquer número de 
   
  Para executar uma tarefa em um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], crie um elemento com o nome da tarefa como um filho de um elemento `Target`. Se uma tarefa aceita parâmetros, eles são passados como atributos do elemento.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] listas de itens e propriedades podem ser usadas como parâmetros. Por exemplo, o código a seguir chama a tarefa `MakeDir` e define o valor da propriedade `Directories` do objeto `MakeDir` igual ao valor da propriedade `BuildDir` declarada no exemplo anterior.  
+ As listas de item [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e as propriedades podem ser usadas como parâmetros. Por exemplo, o código a seguir chama a tarefa `MakeDir` e define o valor da propriedade `Directories` do objeto `MakeDir` igual ao valor da propriedade `BuildDir` declarada no exemplo anterior.  
   
 ```xml  
 <Target Name="MakeBuildDirectory">  
@@ -64,10 +64,10 @@ Uma plataforma de build precisa de capacidade para executar qualquer número de 
 ```  
   
 ## <a name="included-tasks"></a>Tarefas incluídas  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é fornecido com várias tarefas, como [Copy](../msbuild/copy-task.md), que copia arquivos, [MakeDir](../msbuild/makedir-task.md), que cria diretórios e [Csc](../msbuild/csc-task.md), que compila arquivos de código-fonte [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Para obter uma lista completa das tarefas disponíveis e informações de uso, consulte [Referência das tarefas](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é fornecido com várias tarefas, como [Copiar](../msbuild/copy-task.md), que copia arquivos, [MakeDir](../msbuild/makedir-task.md), que cria diretórios e [Csc](../msbuild/csc-task.md), que compila arquivos de código-fonte [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Para obter uma lista completa das tarefas disponíveis e informações de uso, consulte [Referência das tarefas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Tarefas substituídas  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] procura tarefas em vários locais. O primeiro local está em arquivos com a extensão .OverrideTasks armazenados nos diretórios do .NET Framework. As tarefas nesses arquivos substituem quaisquer outras tarefas com os mesmos nomes, incluindo tarefas no arquivo de projeto. O segundo local está nos arquivos com a extensão .Tasks nos diretórios do .NET Framework. Se a tarefa não for encontrada em um desses locais, a tarefa no arquivo de projeto será usada.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] procura por tarefas em vários locais. O primeiro local está em arquivos com a extensão .OverrideTasks armazenados nos diretórios do .NET Framework. As tarefas nesses arquivos substituem quaisquer outras tarefas com os mesmos nomes, incluindo tarefas no arquivo de projeto. O segundo local está nos arquivos com a extensão .Tasks nos diretórios do .NET Framework. Se a tarefa não for encontrada em um desses locais, a tarefa no arquivo de projeto será usada.  
   
 ## <a name="see-also"></a>Consulte também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   

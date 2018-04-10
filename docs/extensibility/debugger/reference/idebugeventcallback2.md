@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Essa interface é usada pelo mecanismo de depuração (DE) para enviar eventos de depuração para o Gerenciador de sessão de depuração (SDM).  
@@ -35,7 +35,7 @@ IDebugEventCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]implementa essa interface para receber eventos de um mecanismo de depuração.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] implementa essa interface para receber eventos de um mecanismo de depuração.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
  Um mecanismo de depuração costuma recebe esta interface quando chama o SDM [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md), ou [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Um mecanismo de depuração envia eventos para o SDM chamando [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  

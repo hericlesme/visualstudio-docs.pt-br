@@ -1,5 +1,5 @@
 ---
-title: Idiatable | Microsoft Docs
+title: IDiaTable::get__NewEnum | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a4b5a9bac5edc31fd4e4db73890c0479c0058754
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idiatablegetnewenum"></a>IDiaTable::get__NewEnum
 Recupera o <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> versão este enumerador.  

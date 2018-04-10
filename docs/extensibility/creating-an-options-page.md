@@ -1,27 +1,27 @@
 ---
-title: "Criando uma página de opções | Microsoft Docs"
-ms.custom: 
+title: Criando uma página de opções | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-caps.latest.revision: 
+caps.latest.revision: 62
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: d0888a584e31c26c9f64cdcff70cc2f5dc8a1453
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-an-options-page"></a>Criando uma página de opções
 Este passo a passo cria uma página Ferramentas/opções simples que usa uma grade de propriedade para examinar e definir propriedades.  
@@ -246,7 +246,7 @@ Este passo a passo cria uma página Ferramentas/opções simples que usa uma gra
   
     ```  
   
-     Esse código chama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> para criar ou recuperar um `OptionPageGrid` instância. `OptionPageGrid`chamadas <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> para carregar suas opções, que são propriedades públicas.  
+     Esse código chama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> para criar ou recuperar um `OptionPageGrid` instância. `OptionPageGrid` chamadas <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> para carregar suas opções, que são propriedades públicas.  
   
 2.  Agora, adicione um modelo de item de comando personalizado chamado **MyToolsOptionsCommand** para exibir o valor. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual C# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **MyToolsOptionsCommand.cs**.  
   

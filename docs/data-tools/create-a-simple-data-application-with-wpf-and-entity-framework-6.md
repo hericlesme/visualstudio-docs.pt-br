@@ -1,10 +1,10 @@
 ---
 title: Criar um aplicativo de dados simples com WPF e do Entity Framework 6 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com WPF e do Entity Framework 6
 
@@ -56,7 +56,7 @@ Este exemplo usa o SQL Server Express LocalDB e o banco de dados de exemplo Nort
   
 3.  No Gerenciador de pacote NuGet, clique no **procurar** link. Entity Framework é provavelmente o pacote superior na lista. Clique em **instalar** no painel direito e siga os prompts. A janela de saída informará quando a instalação for concluída.  
   
-     ![Entity Framework NuGet Package](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
+     ![Pacote do NuGet do Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
   
 4.  Agora podemos usar o Visual Studio para criar um modelo com base no banco de dados Northwind.  
   
@@ -118,7 +118,7 @@ Agora você está pronto para conectar esse modelo para a página XAML de forma 
         </Grid.RowDefinitions>
     ```
 
-5.  Agora, abra MainWindow. XAML para que você está exibindo-lo no designer. Isso fará com que a janela fontes de dados sejam exibidos como uma opção na margem da janela do Visual Studio ao lado da caixa de ferramentas. Clique na guia para abrir a janela ou pressione else **Shift + Alt + D** ou escolha **exibição &#124; Outras janelas &#124; Fontes de dados**. Vamos para exibir cada propriedade na classe de clientes em sua própria caixa de texto individuais. Primeiro, clique na seta na caixa de combinação de clientes e escolha **detalhes**. Arraste o nó para a parte central da superfície de design para que o designer sabe que você deseja na linha do meio.  Se você substitua a ele, você pode especificar a linha manualmente mais tarde no XAML. Por padrão, os controles são colocados verticalmente em um elemento de grade, mas agora você pode organizá-los como no formulário.  Por exemplo, pode fazer sentido colocar a caixa de texto nome na parte superior, acima do endereço. O aplicativo de exemplo para este artigo reorganiza os campos e reorganiza-los em duas colunas.  
+5.  Agora, abra MainWindow. XAML para que você está exibindo-lo no designer. Isso fará com que a janela fontes de dados sejam exibidos como uma opção na margem da janela do Visual Studio ao lado da caixa de ferramentas. Clique na guia para abrir a janela ou pressione else **Shift + Alt + D** ou escolha **exibição &#124; outras janelas &#124; fontes de dados**. Vamos para exibir cada propriedade na classe de clientes em sua própria caixa de texto individuais. Primeiro, clique na seta na caixa de combinação de clientes e escolha **detalhes**. Arraste o nó para a parte central da superfície de design para que o designer sabe que você deseja na linha do meio.  Se você substitua a ele, você pode especificar a linha manualmente mais tarde no XAML. Por padrão, os controles são colocados verticalmente em um elemento de grade, mas agora você pode organizá-los como no formulário.  Por exemplo, pode fazer sentido colocar a caixa de texto nome na parte superior, acima do endereço. O aplicativo de exemplo para este artigo reorganiza os campos e reorganiza-los em duas colunas.  
   
      ![Associação de fonte de dados de clientes para os controles individuais](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "raddata ligação da fonte de dados aos clientes para os controles individuais")  
   
