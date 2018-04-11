@@ -1,12 +1,13 @@
 ---
-title: "Variáveis (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Variáveis (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>Variáveis (JavaScript)
 Em [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], uma variável contém um valor, como 5 ou "Olá". Quando você usa a variável, você se refere aos dados que ela representa, por exemplo, `NumberOfDaysLeft = EndDate - TodaysDate`.  
@@ -48,7 +49,7 @@ var count = 0, amount = 100;
 ## <a name="naming-variables"></a>Nomeando variáveis  
  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] é uma linguagem que diferencia maiúsculas e minúsculas. Isso significa que um nome de variável como **myCounter** é diferente do nome de variável **MYCounter**. Nomes de variável podem ser de qualquer tamanho. As regras para criar nomes de variável válidos são as seguintes:  
   
--   O primeiro caractere deve ser uma letra ASCII (maiúscula ou minúscula) ou um sublinhado (_). Observe que um número não pode ser usado como o primeiro caractere.  
+-   O primeiro caractere deve ser uma letra ASCII (maiúscula ou minúscula), uma letra em conformidade com as convenções de nomenclatura de variáveis Unicode ou um sublinhado (_). Observe que um número não pode ser usado como o primeiro caractere.  
   
 -   Os caracteres subsequentes devem ser letras, números ou sublinhados (_).  
   

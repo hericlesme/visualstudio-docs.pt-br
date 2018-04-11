@@ -1,25 +1,27 @@
 ---
-title: "Criar uma instalação baseada em rede do Visual Studio | Microsoft Docs"
-description: "Descreve como criar um ponto de instalação de rede para implantação do Visual Studio em uma empresa"
+title: Criar uma instalação baseada em rede do Visual Studio | Microsoft Docs
+description: Descreve como criar um ponto de instalação de rede para implantação do Visual Studio em uma empresa
 ms.date: 10/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: timsneath
+author: tglee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c85d839c76d272a0a90a37fa16fc812596c3198e
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Criar uma instalação de rede do Visual Studio 2017
 
@@ -143,7 +145,7 @@ Quando atualizações de produto se tornam disponíveis, pode-se [atualizar o la
 > [!NOTE]
 > Os bootstrappers do Visual Studio 2017 disponíveis em [VisualStudio.com](http://www.visualstudio.com) baixarão e instalarão a versão mais recente do Visual Studio 2017 disponível sempre que forem executados. Se você baixar um bootstrapper Visual Studio hoje e executá-lo daqui a seis meses, ele instalará a versão Visual Studio 2017 disponível nesse momento posterior. Se você criar um layout, a instalação do Visual Studio por meio desse layout instalará a versão específica do Visual Studio que existe no layout. Mesmo que uma versão mais recente exista online, você obterá a versão do Visual Studio que está no layout.
 
-Se você precisar criar um layout para uma versão anterior do Visual Studio 2017, acesse https://my.visualstudio.com e baixe versões "corrigidas" de bootstrappers do Visual Studio 2017.
+Se você precisar criar um layout para uma versão anterior do Visual Studio 2017, acesse https://my.visualstudio.com "corrigidas" de bootstrappers do Visual Studio 2017.
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Como obter suporte para o instalador offline
 
