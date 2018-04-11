@@ -1,13 +1,13 @@
 ---
-title: "Informações de versão do JavaScript | Microsoft Docs"
-ms.custom: 
+title: Informações de versão do JavaScript | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, version information
 ms.assetid: 440f4924-f7a9-48e0-873e-bd599a93b437
-caps.latest.revision: 
+caps.latest.revision: 93
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -41,7 +41,7 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
   
  A tabela contém informações de resumo. Para obter informações mais específicas, consulte a documentação do elemento de linguagem.  
   
-|Elemento de linguagem|Quirks, Internet Explorer 6 Standards, Internet Explorer 7 Standards|Internet Explorer 8 Standards|Internet Explorer 9 Standards|Internet Explorer 10 Standards|Internet Explorer 11 Standards|Edge|Aplicativos da Store|  
+|Elemento de linguagem|Quirks, Internet Explorer 6 Standards, Internet Explorer 7 Standards|Internet Explorer 8 Standards|Internet Explorer 9 Standards|Internet Explorer 10 Standards|Internet Explorer 11 Standards|Microsoft Edge|Aplicativos da Store|  
 |----------------------|--------------------------------------------------------------------------|-----------------------------------|-----------------------------------|------------------------------------|------------------------------------|----------|----------------|  
 |[__proto\_ \_ propriedade (Object)](../../javascript/reference/proto-property-object-javascript.md)|N|N|N|N|S|S|v8 (Win): N<br />v8.1 (Win): S<br />v8.1 (Phone): S|  
 |[Propriedades $1...$9 (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)|S|S|S|S|S|S|S|  
@@ -72,8 +72,8 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[Operador AND bit a bit (&)](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
 |[Bit a bit operador Left Shift (<\<)](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador NOT bit a bit (~)](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|S|S|S|S|S|S|S|  
-|[Bit a bit ou operador de atribuição (&#124; =)](../../javascript/reference/bitwise-or-assignment-operator-decrement-equal-javascript.md)|S|S|S|S|S|S|S|  
-|[OR bit a bit operador (&#124;)](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
+|[Bit a bit ou operador de atribuição (& #124; =)](../../javascript/reference/bitwise-or-assignment-operator-decrement-equal-javascript.md)|S|S|S|S|S|S|S|  
+|[OR bit a bit operador (& #124;)](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador bit a bit de deslocamento para a direita (>>)](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador de atribuição YOR bit a bit (^ =)](../../javascript/reference/bitwise-xor-assignment-operator-decrement-hat-equal-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador YOR bit a bit (^)](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|S|S|S|S|S|S|S|  
@@ -252,7 +252,7 @@ Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de ele
 |[LOG10E Constant](../../javascript/reference/math-constants-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador AND lógico (&&)](../../javascript/reference/logical-and-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
 |[Operador NOT lógico (!)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|S|S|S|S|S|S|S|  
-|[OR lógico operador (&#124; &#124;)](../../javascript/reference/logical-or-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
+|[OR lógico operador (& #124; & #124;)](../../javascript/reference/logical-or-operator-decrement-javascript.md)|S|S|S|S|S|S|S|  
 |[Método Map](../../javascript/reference/map-method-array-javascript.md)|N|N|S|S|S|S|S|  
 |[Objeto Map](../../javascript/reference/map-object-javascript.md)|N|N|N|N|S|S|v8: N<br />v8.1: S|  
 |[Método match](../../javascript/reference/match-method-string-javascript.md)|S|S|S|S|S|S|S|  

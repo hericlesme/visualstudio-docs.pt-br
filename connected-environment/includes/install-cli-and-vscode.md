@@ -8,8 +8,6 @@ curl -L https://aka.ms/get-vsce-mac | bash
 ```
 
 ### <a name="install-on-windows"></a>Instalar no Windows
-1. Instale o [Git para Windows](https://git-scm.com/downloads), selecionando as opções de instalação padrão. 
-1. Baixe **kubectl.exe** [neste link](https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/windows/amd64/kubectl.exe) e **salve-o** em um local em seu caminho.
 1. Baixe e execute o [Instalador da CLI do Connected Environment](https://aka.ms/get-vsce-windows). 
 
 ### <a name="install-on-linux"></a>Instalar no Linux
@@ -23,5 +21,5 @@ Embora seja possível usar a CLI do Connected Environment como uma ferramenta au
 1. Instale a extensão: 
 
 ```cmd
-code --install-extension path-to-downloaded-extension/vsce-0.1.0.vsix
+code --install-extension path-to-downloaded-extension/vsce-0.1.1.vsix
 ```
