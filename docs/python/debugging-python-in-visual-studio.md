@@ -1,27 +1,27 @@
 ---
-title: "Depurar o código do Python no Visual Studio | Microsoft Docs"
-description: "Um passo a passo dos recursos de depuração no Visual Studio, especificamente para código Python, incluindo pontos de interrupção, passo a passo, inspeção dos valores, observação de exceções e depuração na janela interativa."
-ms.custom: 
+title: Como depurar código do Python | Microsoft Docs
+description: Um passo a passo dos recursos de depuração no Visual Studio, especificamente para código Python, incluindo pontos de interrupção, passo a passo, inspeção dos valores, observação de exceções e depuração na janela interativa.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a9e8cf75bcdf11994f549be3ef47d5a95868eeef
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-your-python-code"></a>Depurando o código do Python
 
@@ -49,7 +49,7 @@ Veja também os seguintes artigos sobre depuração específicos ao cenário:
 
 ## <a name="basic-debugging"></a>Depuração básica
 
-O fluxo de trabalho básico de depuração envolve a definição de pontos de interrupção, a execução do código em etapas, a inspeção de valores e o tratamento de exceções, conforme descrito nas próximas seções. Para obter detalhes completos sobre o depurador do Visual Studio, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).
+O fluxo de trabalho básico de depuração envolve a definição de pontos de interrupção, a execução do código em etapas, a inspeção de valores e o tratamento de exceções, conforme descrito nas próximas seções.
 
 Uma sessão de depuração é iniciada com o comando **Depurar > Iniciar Depuração**, o botão **Iniciar** na barra de ferramentas ou a tecla F5. Essas ações abrirão o arquivo de inicialização do projeto (mostrado em negrito no Gerenciador de Soluções) com o ambiente ativo do projeto e os argumentos de linha de comando ou caminhos de pesquisa especificados em Propriedades do Projeto (consulte [Opções de depuração de projeto](#project-debugging-options)). O **Visual Studio 2017 versão 15.6** e posterior alerta se você não tiver um arquivo de inicialização definido; as versões anteriores podem abrir uma janela de saída com o interpretador do Python em execução ou a janela de saída brevemente aparece e desaparece. De qualquer forma, clique com o botão direito do mouse no arquivo apropriado e selecione **Definir como Arquivo de Inicialização**.
 
@@ -198,3 +198,7 @@ Observe que as janelas padrão do depurador, como Processos, Threads e Pilha de 
 A janela Interativa de Depuração tem seu próprio conjunto de opções, que pode ser acessado por meio de **Ferramentas > Opções > Ferramentas Python > Janela Interativa de Depuração**. Ao contrário da janela Interativa normal do Python, que tem uma instância separada para cada ambiente do Python, há apenas uma janela Interativa de Depuração e ela sempre usa o interpretador do Python do processo que está sendo depurado. Consulte [Opções – Opções de depuração](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Opções da Janela Interativa de Depuração](media/debugging-interactive-options.png)
+
+## <a name="see-also"></a>Consulte também
+
+Para obter detalhes completos sobre o depurador do Visual Studio, consulte [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md).

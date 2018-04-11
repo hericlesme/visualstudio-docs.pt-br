@@ -1,15 +1,15 @@
 ---
-title: Trabalhar com o Python no Visual Studio, Etapa 3, Janela REPL Interativa | Microsoft Docs
-description: "Etapa 3 de um tutorial básico para trabalhar com Python no Visual Studio, abordando como a janela REPL Python interativa."
-ms.custom: 
+title: Trabalhar com o Python, Etapa 3, a Janela REPL Interativa | Microsoft Docs
+description: Etapa 3 de um tutorial básico para trabalhar com Python no Visual Studio, abordando como a janela REPL Python interativa.
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 437dc0b64c3fb9b1a92c4651ad66e5cec867d66b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Etapa 3: usando a janela interativa REPL
 
@@ -31,7 +31,7 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
 1. Abra a janela interativa clicando com o botão direito do mouse no ambiente de projeto do Python no Gerenciador de Soluções (como "Python 3.6 (32 bits)", mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir > Outras Janelas > Janelas Interativas do Python** no menu principal do Visual Studio.
 
-1. A janela interativa abre-se abaixo do editor com o prompt padrão `>>>` de REPL do Python. A lista suspensa **Ambiente** permite selecionar um intérprete específico com o qual trabalhar. Se você também quiser deixar a janela interativa maior, arraste o separador entre as duas janelas:
+1. A janela interativa abre-se abaixo do editor com o prompt padrão `>>>` de REPL do Python. A lista suspensa **Ambiente** permite selecionar um interpretador específico com o qual trabalhar. Se você também quiser deixar a janela interativa maior, arraste o separador entre as duas janelas:
 
     ![Janela interativa Python: arrastando para redimensionar](media/vs-getting-started-python-11-interactive1b.png)
 

@@ -1,36 +1,38 @@
 ---
 title: Configurando avisos no Visual Basic | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="configuring-warnings-in-visual-basic"></a>Configurando avisos no Visual Basic
+# <a name="configuring-warnings-in-visual-basic"></a>Como configurar avisos no Visual Basic
 O compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclui um conjunto de avisos sobre o código que podem causar erros em tempo de execução. É possível usar essas informações para escrever códigos mais limpos, mais rápidos e melhores com menos bugs. Por exemplo, o compilador produzirá um aviso quando o usuário tentar invocar um membro de uma variável de objeto não atribuída, retornar de uma função sem definir o valor retornado ou executar um bloco `Try` com erros na lógica para capturar exceções.  
   
- Às vezes, o compilador fornece lógica extra em nome do usuário para que o usuário possa se concentrar na tarefa em questão, em vez de antecipar possíveis erros. Nas versões anteriores do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], o `Option Strict` era usado para limitar a lógica adicional fornecida pelo compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. A configuração de avisos permite limitar essa lógica de uma maneira mais granular, no nível dos avisos individuais.  
+ Às vezes, o compilador fornece lógica extra em nome do usuário para que o usuário possa se concentrar na tarefa em questão, em vez de antecipar possíveis erros. Nas versões anteriores do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], o **Option Strict** era usado para limitar a lógica adicional fornecida pelo compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. A configuração de avisos permite limitar essa lógica de uma maneira mais granular, no nível dos avisos individuais.  
   
  Talvez você deseje personalizar seu projeto e desligar alguns avisos não relevantes ao aplicativo enquanto transforma outros avisos em erros. Esta página explica como ativar e desativar avisos individuais.  
   
-## <a name="turning-warnings-off-and-on"></a>Ativando e desativando avisos  
+## <a name="turning-warnings-off-and-on"></a>Ativar e desativar avisos  
  Há duas maneiras diferentes para configurar avisos: é possível configurá-los usando o **Designer de Projeto** ou usar as opções **/warnaserror** e **/nowarn** do compilador.  
   
  A guia **Compilar** da página **Designer de Projeto** permite ativar e desativar avisos. Marque a caixa de seleção **Desabilitar Todos os Avisos** para desabilitar todos os avisos; marque **Tratar Todos os Avisos como Erros** para tratar todos os avisos como erros. Alguns avisos individuais podem ser ativados/desativados como erro ou aviso, conforme desejado, na tabela exibida.  
@@ -75,13 +77,13 @@ O compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclui um
   
  ID: 42017  
   
-### <a name="operands-of-type-object-warnings"></a>Avisos de operandos de objeto de tipo  
- Gerados quando ocorrem operandos do tipo `Object` que criarão um erro com `Option Strict On`. O padrão para novos projetos é ativado.  
+### <a name="operands-of-type-object-warnings"></a>Avisos de operandos do tipo 'Object'  
+ Gerados quando ocorrem operandos do tipo `Object` que criarão um erro com **Option Strict On**. O padrão para novos projetos é ativado.  
   
  ID: 42018 e 42019  
   
-### <a name="declarations-require-as-clause-warnings"></a>Avisos de declarações que exigem a cláusula “As”  
- Gerados quando uma declaração da variável, função ou propriedade que não tem uma cláusula `As` cria um erro com `Option Strict On`. Variáveis que não têm um tipo atribuído a elas são consideradas como sendo do tipo `Object`. O padrão para novos projetos é ativado.  
+### <a name="declarations-require-as-clause-warnings"></a>Avisos de declarações que exigem a cláusula 'As'  
+ Gerados quando uma declaração da variável, função ou propriedade que não tem uma cláusula `As` cria um erro com **Option Strict On**. Variáveis que não têm um tipo atribuído a elas são consideradas como sendo do tipo `Object`. O padrão para novos projetos é ativado.  
   
  ID: 42020 (declaração da variável), 42021 (declaração da função) e 42022 (declaração da propriedade).  
   
@@ -121,7 +123,7 @@ O compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclui um
  ID: 42029, 42031  
   
 ## <a name="see-also"></a>Consulte também  
- [Tipos de Erro](/dotnet/visual-basic/programming-guide/language-features/error-types)   
+ [Tipos de erro](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Instrução Try...Catch...Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
  [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   

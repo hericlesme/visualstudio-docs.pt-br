@@ -1,11 +1,11 @@
 ---
-title: "Melhores práticas para uso de trechos de código | Microsoft Docs"
-ms.custom: 
+title: Melhores práticas para uso de trechos de código | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar trechos de código
 
@@ -27,13 +27,13 @@ O código em um trecho de código mostra somente a maneira mais simples de fazer
 
 ## <a name="handling-exceptions"></a>Tratando exceções
 
-Normalmente, o trecho de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para obter exemplos, confira [Como manipular uma exceção usando try/catch (Guia de Programação em C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Normalmente, o trecho de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para obter exemplos, confira [Como manipular uma exceção usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Locais de arquivo
 
 Quando você adaptar locais de arquivo ao seu aplicativo, deverá considerar o seguinte:
 
-- Encontrando um local acessível. Os usuários poderão não ter acesso à pasta Arquivos de Programas do computador; portanto, armazenar arquivos com os arquivos do aplicativo pode não funcionar.
+- Encontrando um local acessível. Os usuários poderão não ter acesso à pasta *Arquivos de Programas do computador*; portanto, armazenar arquivos com os arquivos do aplicativo pode não funcionar.
 
 - Encontrando um local seguro. Não é seguro armazenar arquivos na pasta raiz (*C:\\*). Para dados de aplicativo, recomendamos a pasta *Dados de Aplicativos*. Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
 
@@ -55,7 +55,7 @@ A segurança de um trecho depende do local em que ele é usado no código-fonte 
 
 - Passando dados para tecnologias de script
 
-Para obter mais informações, consulte [Protegendo aplicativos](../ide/securing-applications.md).
+Para saber mais, veja [Como proteger aplicativos](../ide/securing-applications.md).
 
 ## <a name="downloaded-code-snippets"></a>Trechos de código baixados
 
@@ -73,6 +73,6 @@ Os trechos de código do IntelliSense instalados pelo Visual Studio não são em
 
 ## <a name="see-also"></a>Consulte também
 
-[Trechos de Código do Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Protegendo aplicativos](../ide/securing-applications.md)  
+[Trechos de código do Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
+[Como proteger aplicativos](../ide/securing-applications.md)  
 [Trechos de código](../ide/code-snippets.md)

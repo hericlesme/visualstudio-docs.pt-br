@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9e64528b6b0669a0403188b540a90e9b921bfb34
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -70,6 +70,10 @@ ms.lasthandoff: 03/19/2018
   Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe refletem o estado dos testes nesse agrupamento. Consulte a tabela a seguir.
 
   ![Ícones de Hierarquia do Gerenciador de Testes](media/testex-hierarchyicons.png)
+  
+### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Não existe mais um filtro de "caminho do arquivo" na caixa de pesquisa do Gerenciador de Testes.
+
+O filtro de caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes** foi removida na versão prévia 3 da versão 15.7 do Visual Studio 2017. Esse recurso tinha pouco uso, e o Gerenciador de Testes pode recuperar os métodos de teste com mais rapidez com a exclusão desse recurso. Se essa alteração interrompe seu fluxo de desenvolvimento, informe-nos enviando comentários na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/).
 
 ## <a name="features"></a>Recursos
 

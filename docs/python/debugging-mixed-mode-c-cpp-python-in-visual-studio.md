@@ -1,28 +1,28 @@
 ---
-title: "Depuração de modo misto do Python no Visual Studio | Microsoft Docs"
-description: "Como depurar simultaneamente C++ e Python no Visual Studio, incluindo a troca entre ambientes, valores de exibição e expressões de avaliação."
-ms.custom: 
+title: Depuração de modo misto do Python| Microsoft Docs
+description: Como depurar simultaneamente C++ e Python no Visual Studio, incluindo a troca entre ambientes, valores de exibição e expressões de avaliação.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Depurando o Python e o C++ juntos
 
@@ -66,7 +66,7 @@ Os recursos de depuração de modo misto incluem o seguinte, conforme explicado 
 
 1. Ao iniciar a depuração no modo misto pela primeira vez, você poderá ver uma caixa de diálogo **Símbolos Obrigatórios do Python** (confira [Símbolos para depuração de modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Você precisa instalar símbolos apenas uma vez para qualquer ambiente do Python. Os símbolos serão incluídos automaticamente se você instalar o suporte do Python por meio do instalador do Visual Studio 2017.
 
-1. Crie o código-fonte para o próprio Python padrão disponível durante a depuração, visite [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), baixe o arquivo morto apropriado para a versão e extraia-o em uma pasta. Em seguida, aponte o Visual Studio para arquivos específicos nessa pasta em qualquer ponto que for solicitado.
+1. Crie o código-fonte para o próprio Python padrão disponível durante a depuração, acesse [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), baixe os arquivos apropriados para a versão e extraia-os em uma pasta. Em seguida, aponte o Visual Studio para arquivos específicos nessa pasta em qualquer ponto que for solicitado.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Habilitar a depuração de modo misto em um projeto do C/C++
 

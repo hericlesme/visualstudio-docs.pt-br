@@ -1,11 +1,11 @@
 ---
 title: Tarefa RC | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -22,17 +22,17 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="rc-task"></a>Tarefa RC
 Encapsula a ferramenta de Compilador de Recurso do Microsoft Windows, rc.exe. A tarefa **RC** compila recursos como cursores, ícones, bitmaps, caixas de diálogo e fontes em um arquivo de recurso (.res). Para obter mais informações, consulte “Compilador de Recursos” no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -46,7 +46,7 @@ Encapsula a ferramenta de Compilador de Recurso do Microsoft Windows, rc.exe. A 
 |**AdditionalOptions**|Parâmetro **String** opcional.<br /><br /> Uma lista de opções ou exemplos de linha de comando: **"***/option1 /option2 /option#*". Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro de tarefa **RC**.<br /><br /> Para obter mais informações, consulte as opções em [Usando RC (A linha de comando RC)](http://go.microsoft.com/fwlink/?LinkId=155730) no site do MSDN.|  
 |**Cultura**|Parâmetro **String** opcional.<br /><br /> Especifica uma ID de localidade que representa a cultura usada nos recursos.<br /><br /> Para obter mais informações, consulte a opção **/l** em [Usando RC (A linha de comando RC)](http://go.microsoft.com/fwlink/?LinkId=155730) no site do MSDN.|  
 |**IgnoreStandardIncludePath**|Parâmetro **Boolean** opcional.<br /><br /> Se for `true`, impede que o compilador de recurso verifique a variável de ambiente INCLUDE ao procurar por arquivos de cabeçalho ou arquivos de recurso.<br /><br /> Para obter mais informações, consulte a opção **/x** em [Usando RC (A linha de comando RC)](http://go.microsoft.com/fwlink/?LinkId=155730) no site do MSDN.|  
-|**NullTerminateStrings**|Parâmetro **Boolean** opcional.<br /><br /> Se for `true`, termina em nulo todas as cadeias de caracteres na tabela de cadeia de caracteres.<br /><br /> Para obter mais informações, consulte a opção **/n** em [Usando RC (A linha de comando RC)](http://go.microsoft.com/fwlink/?LinkId=155730) no site MSDN.|  
+|**NullTerminateStrings**|Parâmetro **Boolean** opcional.<br /><br /> Se for `true`, termina em nulo todas as cadeias de caracteres na tabela de cadeia de caracteres.<br /><br /> Para obter mais informações, consulte a opção **/n** em [Usando RC (A linha de comando RC)](http://go.microsoft.com/fwlink/?LinkId=155730) no site do MSDN.|  
 |**PreprocessorDefinitions**|Parâmetro **String[]** opcional.<br /><br /> Defina um ou mais símbolos de pré-processador para o compilador de recurso. Especifique uma lista de símbolos de macro.<br /><br /> Para obter mais informações, consulte a opção **/d** em [Usando RC (A linha de comando RC)](http://go.microsoft.com/fwlink/?LinkId=155730) no site do MSDN. Consulte também **UndefinePreprocessorDefinitions** nessa tabela.|  
 |**ResourceOutputFileName**|Parâmetro **String** opcional.<br /><br /> Especifica o nome do arquivo de recurso. Especifica um nome de arquivo de recurso.<br /><br /> Para obter mais informações, consulte a opção **/fo** em [Usando RC (A linha de comando RC)](http://go.microsoft.com/fwlink/?LinkId=155730) no site do MSDN.|  
 |**ShowProgress**|Parâmetro **Boolean** opcional.<br /><br /> Se for `true`, exibe mensagens que relatam o andamento do compilador.<br /><br /> Para obter mais informações, consulte a opção **/v** em [Usando RC (A linha de comando RC)](http://go.microsoft.com/fwlink/?LinkId=155730) no site do MSDN.|  

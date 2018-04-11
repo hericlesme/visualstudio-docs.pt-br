@@ -1,26 +1,26 @@
 ---
 title: Selecionar e instalar interpretadores do Python | Microsoft Docs
-description: "Uma lista completa de interpretadores do Python que têm suporte no Visual Studio com instruções breves sobre onde localizar os instaladores."
-ms.custom: 
+description: Uma lista completa de interpretadores do Python que têm suporte no Visual Studio com instruções breves sobre onde localizar os instaladores.
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-python-interpreters"></a>Instalar interpretadores do Python
 
@@ -28,7 +28,7 @@ Por padrão, a instalação da carga de trabalho de desenvolvimento do Python no
 
 Você também pode instalar manualmente qualquer um dos interpretadores listados na tabela abaixo fora do instalador do Visual Studio. Por exemplo, se você instalar o Anaconda 3 antes de instalar o Visual Studio, não será necessário instalar novamente usando o instalador do Visual Studio.
 
-Para o Visual Studio 2015 e versões anteriores, é necessário instalar manualmente um dos interpretadores.
+Para o **Visual Studio 2015 e versões anteriores**, é necessário instalar manualmente um dos interpretadores.
 
 O Visual Studio (todas as versões) detecta automaticamente cada interpretador Python instalado e seu ambiente verificando o Registro (seguindo [PEP 514 - Registro do Python no Registro do Windows](https://www.python.org/dev/peps/pep-0514/)).
 
@@ -64,7 +64,7 @@ Esse processo garante que as entradas do Registro que identificam o local do int
 ## <a name="see-also"></a>Consulte também
 
 - [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
-- [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
+- [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
 - [Usando requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Caminhos de pesquisa](search-paths.md)
 - [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)

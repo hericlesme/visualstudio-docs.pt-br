@@ -1,13 +1,13 @@
 ---
 title: Criar um aplicativo do Windows Forms no Visual Studio com o Visual Basic | Microsoft Docs
 description: Aprenda o passo a passo de como criar um aplicativo do Windows Forms no Visual Studio com o Visual Basic.
-ms.custom: 
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.devlang: vb
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: d3a6593a6e459b16541358a0e89dc5bc21fde982
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Criar um aplicativo do Windows Forms no Visual Studio com o Visual Basic
 Nesta introdução curta ao IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio, você criará um aplicativo simples do Visual Basic que tem uma UI (interface do usuário) baseada no Windows.
@@ -50,31 +50,31 @@ Depois de selecionar o modelo de projeto do Visual Basic e nomear seu arquivo, o
 
      ![Clique na Caixa de Ferramentas para abrir a janela da Caixa de Ferramentas](../ide/media/vb-toolbox-toolwindow.png)  
 
-     (Se você não vir a opção suspensa Caixa de Ferramentas, ela poderá ser aberta da barra de menus. Para fazer isso, clique em **Exibir** > **Caixa de Ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
+     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, clique em **Exibir** > **Caixa de Ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
 
-2. Clique no ícone **Fixar** para encaixar a janela Caixa de Ferramentas.
+2. Clique no ícone **Fixar** para encaixar a janela **Caixa de Ferramentas**.
 
      ![Clique no ícone Fixar para fixar a janela Caixa de Ferramentas no IDE](../ide/media/vb-pin-the-toolbox-window.png)  
 3. Clique no controle **Botão** e, em seguida, arraste-o para o formulário.
 
      ![Adicionar um botão no formulário](../ide/media/vb-add-a-button-to-form1.png)
 
-4. Na seção **Aparência** da janela **Propriedades**, digite “Click this” (Clique aqui) e, em seguida, pressione **Enter**.
+4. Na seção **Aparência** da janela **Propriedades**, digite `Click this` (Clique aqui), depois pressione **Enter**.
 
      ![Adicionar texto no botão do formulário](../ide/media/vb-button-control-text.png)  
 
-     (Se você não vir a janela Propriedades, ela poderá ser aberta da barra de menus. Para fazer isso, clique em **Exibir** > **Janela Propriedades**. Ou pressione **F4**.)
+     (Se você não encontrar a janela **Propriedades**, ela poderá ser aberta da barra de menus. Para fazer isso, clique em **Exibir** > **Janela Propriedades**. Ou pressione **F4**.)
 
-5. Na seção **Design** da janela **Propriedades**, altere o nome de “Button1” para “btnClickThis” e, em seguida, pressione **Enter**.
+5. Na seção **Design** da janela **Propriedades**, altere o nome de **Button1** para `btnClickThis` e, em seguida, pressione **Enter**.
 
      ![Adicionar uma função ao botão no formulário](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>Adicionar um rótulo ao formulário
 Agora que adicionamos um controle de botão para criar uma ação, vamos adicionar um controle de rótulo para enviar o texto.
 
-1. Selecione o controle **Rótulo** da janela Caixa de Ferramentas e, então, arraste-a para o formulário e solte-a sob o botão **Clique aqui**.
+1. Selecione o controle **Rótulo** da janela **Caixa de Ferramentas** e, então, arraste-a para o formulário e solte-a abaixo do botão **Clique aqui**.
 
-2. Na seção **Design** da janela **Propriedades**, altere o nome de “Label1” para “lblHelloWorld” e, em seguida, pressione **Enter**.
+2. Na seção **Design** da janela **Propriedades**, altere o nome de **Label1** para `lblHelloWorld` e, em seguida, pressione **Enter**.
 
 ### <a name="add-code-to-the-form"></a>Adicionar código ao formulário
 
@@ -91,9 +91,9 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 
      ![Clique em Iniciar para depurar e executar o aplicativo](../ide/media/vb-click-start-hello-world.png)
 
-   Várias coisas acontecerão. No IDE do Visual Studio, a janela Ferramentas de Diagnóstico será aberta e uma janela de saída também. Mas fora do IDE, uma caixa de diálogo Form1 aparecerá. Ela incluirá seu botão **Clique aqui** e o texto que diz “Label1”.
+   Várias coisas acontecerão. No IDE do Visual Studio, a janela **Ferramentas de Diagnóstico** será aberta, e uma janela de **saída** também. Porém, fora do IDE, uma caixa de diálogo **Form1** será exibida. Ela incluirá o botão **Clique aqui** e o texto **Label1**.
 
-2. Clique no botão **Clique aqui** na caixa de diálogo **Form1**. Observe que o texto “Label1” é alterado para “Olá, Mundo!”.
+2. Clique no botão **Clique aqui** na caixa de diálogo **Form1**. Observe que o texto **Label1** é alterado para **Olá, Mundo!**.
 
     ![Uma caixa de diálogo Form1 que inclui o texto Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 

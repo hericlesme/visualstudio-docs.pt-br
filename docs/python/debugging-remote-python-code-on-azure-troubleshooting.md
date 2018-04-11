@@ -1,16 +1,16 @@
 ---
-title: "Solução de problemas de depuração remota do Azure para Python no Visual Studio | Microsoft Docs"
-description: "Como solucionar problemas ao tentar depurar um aplicativo Python em execução no Serviço de Aplicativo do Azure usando o Visual Studio."
-ms.custom: 
+title: Solução de problemas de depuração remota do Azure para Python | Microsoft Docs
+description: Como solucionar problemas ao tentar depurar um aplicativo Python em execução no Serviço de Aplicativo do Azure usando o Visual Studio.
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b183cab67e8ac9382808832fb5c2c1e5283e70c0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 92429ea893c4eccee75f3a70ffda44eac8f91aa9
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Solução de problemas da depuração remota para o Python e o Azure
 

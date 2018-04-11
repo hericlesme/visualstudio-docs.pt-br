@@ -1,7 +1,7 @@
 ---
-title: Trabalhar com o Python no Visual Studio, Etapa 1, Criar um projeto | Microsoft Docs
+title: Trabalhar com o Python, Etapa 1, Criar um projeto | Microsoft Docs
 description: Etapa 1 de um tutorial básico para trabalhar com Python no Visual Studio, descrevendo o tutorial inteiro, os pré-requisitos e percorrendo o processo de criação de um novo projeto em Python.
-ms.custom: ''
+ms.custom: mvc
 ms.date: 01/16/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -17,8 +17,8 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 22588c1e8221375f05b9fb62870662d9aa3d2f5e
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: c97af84d02b1dcf6fb60f8dad06bf3bd6975a4e3
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/28/2018

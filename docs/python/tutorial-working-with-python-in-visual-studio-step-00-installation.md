@@ -1,15 +1,15 @@
 ---
-title: "Trabalhar com o Python no Visual Studio, Etapa 0, Instalação | Microsoft Docs"
-description: "Etapa 0 (pré-requisitos) de um tutorial básico para trabalhar com Python no Visual Studio, abordando como instalar o suporte a Python no Visual Studio."
-ms.custom: 
+title: Trabalhar com o Python, Etapa 0, Instalação | Microsoft Docs
+description: Etapa 0 (pré-requisitos) de um tutorial básico para trabalhar com Python no Visual Studio, abordando como instalar o suporte a Python no Visual Studio.
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 30e3341db1543690d39f5144ed67894b1fb65c4d
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: af6bfa2e1739e60e6c0a5eca625f358b528ebd85
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalar o suporte ao Python no Visual Studio
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 02/23/2018
 
     ![Carga de trabalho de desenvolvimento do Python no instalador do Visual Studio](media/installation-python-workload.png)
 
-1. Para testar rapidamente o suporte ao Python, inicie o Visual Studio, pressione Alt+I para abrir a Janela interativa do Python e digite `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
+1. Para testar rapidamente o suporte ao Python, inicie o Visual Studio, pressione ALT + I para abrir a Janela interativa do Python e digite `2+2`. Se você não vir a saída de `4`, verifique as etapas novamente.
 
     ![Testando o Python por meio da janela interativa](media/installation-interactive-test.png)
 

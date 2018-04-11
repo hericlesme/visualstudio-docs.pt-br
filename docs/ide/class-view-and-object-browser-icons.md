@@ -1,11 +1,12 @@
 ---
-title: "Ícones de Modo de Exibição de Classe e Pesquisador de Objetos | Microsoft Docs"
-ms.custom: 
+title: Ícones de Modo de Exibição de Classe e Pesquisador de Objetos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - icons, in Object Browser
@@ -19,14 +20,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f0a4371ae086e158f3fd7025e9867ffb99c92090
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="class-view-and-object-browser-icons"></a>Exibição de classe ícones do Pesquisador de Objetos
+# <a name="class-view-and-object-browser-icons"></a>Ícones do Pesquisador de Objetos e do Modo de Exibição de Classe
 
 **Modo de Exibição de Classe** e **Pesquisador de Objetos** exibem ícones que representam entidades de código, por exemplo, namespaces, classes, funções e variáveis. A tabela a seguir ilustra e descreve os ícones.
 
@@ -64,4 +66,4 @@ Os ícones de sinal a seguir aplicam-se a todos os ícones anteriores e indicam 
 
 ## <a name="see-also"></a>Consulte também
 
-[Exibindo a estrutura do código](../ide/viewing-the-structure-of-code.md)
+[Exibir a estrutura do código](../ide/viewing-the-structure-of-code.md)
