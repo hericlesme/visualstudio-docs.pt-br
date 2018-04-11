@@ -1,9 +1,9 @@
 ---
-title: "Personalizando a criação de elemento e a movimentação | Microsoft Docs"
-ms.custom: 
+title: Personalizando a criação de elemento e a movimentação | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 Você pode permitir que um elemento ser arrastado para outra, da caixa de ferramentas ou em uma operação de colar ou mover a operação. Você pode fazer com que os elementos movidos vinculados para os elementos de destino, usando as relações que você especificar.  

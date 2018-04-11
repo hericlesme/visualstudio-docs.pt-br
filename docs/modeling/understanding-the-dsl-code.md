@@ -1,9 +1,9 @@
 ---
-title: "Noções básicas sobre o código DSL | Microsoft Docs"
-ms.custom: 
+title: Noções básicas sobre o código DSL | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode ser usada para ler e atualizar instâncias da DSL no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.  
@@ -59,7 +59,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl  
  Os seguintes arquivos gerados aparecem no **Dsl** projeto.  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  O esquema dos arquivos que contêm instâncias da DSL. Esse arquivo é copiado para a compilação (**bin**) directory. Quando você instala o DSL, você pode copiar esse arquivo para **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que os arquivos de modelo podem ser validados. Para obter mais informações, consulte [implantar soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).  
   

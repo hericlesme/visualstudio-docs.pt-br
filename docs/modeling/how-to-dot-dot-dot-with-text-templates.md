@@ -1,9 +1,9 @@
 ---
 title: Como... com modelos de texto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
 Modelos de texto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornecem uma maneira útil de geração de texto de qualquer tipo. Você pode usar modelos de texto para gerar o texto em tempo de execução como parte do seu aplicativo e em tempo de design para gerar alguns dos seus códigos de projeto. Este tópico resume a mais frequentes "Como fazer...?" perguntas.  
@@ -79,7 +79,7 @@ Modelos de texto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fo
   
      Para obter mais informações, consulte [guia de Introdução com linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md) e [código de geração de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obter dados[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obter dados [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Para usar os serviços fornecidos na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], pelo conjunto o `hostSpecific` atributo e carregar o `EnvDTE` assembly. Por exemplo:  
   
 ```csharp  
@@ -101,7 +101,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>Perguntas mais gerais  
   
-###  <a name="starting"></a>O que é a melhor maneira de iniciar a gravação de um modelo de texto?  
+###  <a name="starting"></a> O que é a melhor maneira de iniciar a gravação de um modelo de texto?  
   
 1.  Grave um exemplo específico de arquivo gerado.  
   

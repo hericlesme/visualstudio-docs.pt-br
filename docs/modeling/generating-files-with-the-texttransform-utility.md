@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 5ecc5af3c37889bc79dc5978c33caf8249433978
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Gerar arquivos com o utilitário TextTransform
 
@@ -57,8 +57,8 @@ TextTransform [<options>] <templateName>
 |**-out** \<filename>|O arquivo para o qual a saída da transformação é gravada.|
 |**-r** \<assembly>|Um assembly usado para compilar e executar o modelo de texto.|
 |**-u** \<namespace>|Um namespace que é usado para compilar o modelo.|
-|**-I** \<includedirectory >|Um diretório que contém os modelos de texto incluídos no modelo de texto especificado.|
-|**-P** \<referencepath >|Um diretório para procurar por assemblies especificados no modelo de texto ou usando o **- r** opção.<br /><br /> Por exemplo, para incluir os assemblies usados para a API do Visual Studio, use<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
+|**-I** \<includedirectory>|Um diretório que contém os modelos de texto incluídos no modelo de texto especificado.|
+|**-P** \<referencepath>|Um diretório para procurar por assemblies especificados no modelo de texto ou usando o **- r** opção.<br /><br /> Por exemplo, para incluir os assemblies usados para a API do Visual Studio, use<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|O nome, o nome completo do tipo e o assembly de um processador de diretiva que pode ser usado para processar diretivas personalizadas dentro do modelo de texto.|
 |**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|Especifique um valor de parâmetro para um processador de diretiva. Se você especificar apenas o nome do parâmetro e valor, o parâmetro estará disponível para todos os processadores de diretiva. Se você especificar um processador de diretiva, o parâmetro está disponível somente para o processador especificado. Se você especificar um nome de diretiva, o parâmetro está disponível apenas quando a diretiva especificada está sendo processada.<br /><br /> Para acessar os valores de parâmetro de um processador de diretiva ou o modelo de texto, use [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). Em um modelo de texto incluem `hostspecific` na diretiva de modelo e invocar a mensagem em `this.Host`. Por exemplo:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Sempre digite o '!' marca, mesmo se você omitir os nomes de diretiva e de processador opcional. Por exemplo:<br /><br /> `-a !!param!value`|
 |**-h**|Fornece ajuda.|

@@ -1,9 +1,9 @@
 ---
 title: Atualizando formas e conectores para refletir o modelo | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Atualizando formas e conectores para refletir o modelo
 Em uma linguagem específica de domínio em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode fazer com que a aparência de uma forma refletem o estado do modelo subjacente.  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  Esse método pode ser usado para propriedades de domínio e os recursos de armazenamento não, como o tamanho da forma.  
   
-##  <a name="OnAssociatedProperty"></a>Use associatevaluewith () para atualizar outros recursos de uma forma  
+##  <a name="OnAssociatedProperty"></a> Use associatevaluewith () para atualizar outros recursos de uma forma  
  Para alguns recursos de uma forma, como se ele possui uma sombra ou o estilo de seta de um conector, não há nenhum método interno de expor o recurso como uma propriedade de domínio.  Alterações em recursos não estão sob o controle do sistema de transação. Portanto, não é apropriado para atualizá-los usando regras, pois as regras não são invocadas quando o usuário executa o comando Desfazer.  
   
  Em vez disso, você pode atualizar esses recursos usando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. No exemplo a seguir, o estilo de seta de um conector é controlado por um valor de uma propriedade de domínio na relação que exibe o conector:  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`deve ser chamado uma vez para cada propriedade de domínio que você deseja registrar. Depois que ele tiver sido chamado, as alterações para a propriedade especificada chamará `OnAssociatedPropertyChanged()` em qualquer forma que apresentam o elemento de modelo da propriedade.  
+ `AssociateValueWith()` deve ser chamado uma vez para cada propriedade de domínio que você deseja registrar. Depois que ele tiver sido chamado, as alterações para a propriedade especificada chamará `OnAssociatedPropertyChanged()` em qualquer forma que apresentam o elemento de modelo da propriedade.  
   
  Não é necessário chamar `AssociateValueWith()` para cada instância. Embora InitializeResources é um método de instância, ele é chamado apenas uma vez para cada classe de forma.

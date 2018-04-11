@@ -1,9 +1,9 @@
 ---
-title: "MSI e implantação do VSIX de uma DSL | Microsoft Docs"
-ms.custom: 
+title: MSI e implantação do VSIX de uma DSL | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implantação de uma DSL por MSI e VSIX
-Você pode instalar uma linguagem específica de domínio em seu próprio computador ou em outros computadores. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]já deve estar instalado no computador de destino.  
+Você pode instalar uma linguagem específica de domínio em seu próprio computador ou em outros computadores. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] já deve estar instalado no computador de destino.  
   
-##  <a name="which"></a>Escolhendo entre VSIX e implantação de MSI  
+##  <a name="which"></a> Escolhendo entre VSIX e implantação de MSI  
  Há dois métodos de implantação de uma linguagem específica de domínio:  
   
 |Método|Benefícios|  
@@ -28,7 +28,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensão)|Muito fácil de implantar: copiar e executar o **.vsix** arquivo do projeto DslPackage.<br /><br /> Para obter mais informações, consulte [instalação e desinstalação de uma DSL usando o VSX](#Installing).|  
 |MSI (arquivo)|-Permite que o usuário abra [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] clicando duas vezes em um arquivo DSL.<br />-Associa um ícone com o tipo de arquivo DSL no computador de destino.<br />-Associa um XSD (esquema XML) com o tipo de arquivo DSL. Isso evita avisos quando o arquivo é carregado no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Você deve adicionar um projeto de instalação para sua solução para criar um MSI.<br /><br /> Para obter mais informações, consulte [Implantando uma DSL usando um arquivo MSI](#msi).|  
   
-##  <a name="Installing"></a>Instalando e desinstalando uma DSL usando o VSX  
+##  <a name="Installing"></a> Instalando e desinstalando uma DSL usando o VSX  
  Quando seu DSL é instalado por este método, o usuário pode abrir um arquivo DSL no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mas não é possível abrir o arquivo do Windows Explorer.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Para instalar uma DSL usando o VSX  
@@ -65,7 +65,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>Implantando uma DSL em um MSI  
+##  <a name="msi"></a> Implantando uma DSL em um MSI  
  Definindo um arquivo MSI (Windows Installer) para seu DSL, você pode permitir aos usuários abrir arquivos DSL do Windows Explorer. Você também pode associar um ícone e uma descrição curta com sua extensão de nome de arquivo. Além disso, o MSI pode instalar um XSD que pode ser usado para validar os arquivos DSL. Se desejar, você pode adicionar outros componentes no MSI que será instalado ao mesmo tempo.  
   
  Para obter mais informações sobre arquivos MSI e outras opções de implantação, consulte [implantação de aplicativos, serviços e componentes](../deployment/deploying-applications-services-and-components.md).  
@@ -76,7 +76,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
   
 1.  Definir `InstalledByMsi` no manifesto da extensão. Isso impede que o VSX instalado e desinstalado exceto pelo MSI. Isso é importante se você incluir outros componentes no MSI.  
   
-    1.  Abrir DslPackage\source.extension.tt  
+    1.  Open DslPackage\source.extension.tt  
   
     2.  Insira a linha a seguir antes de `<SupportedProducts>`:  
   

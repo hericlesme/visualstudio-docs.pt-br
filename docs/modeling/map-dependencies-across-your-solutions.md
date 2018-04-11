@@ -32,10 +32,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
 
@@ -287,7 +287,7 @@ Quando você quiser entender as dependências em seu código, visualize-los Cria
 ##  <a name="SeeSourceHeader"></a> Consulte as dependências entre os arquivos de origem C e C++ e arquivos de cabeçalho  
  Se você quiser criar mapas mais completos para projetos C++, defina a opção de compilador de informações de procura (**/FR**) nesses projetos. Do contrário, uma mensagem é exibida e solicita a definição dessa opção. Se você selecionar **Okey**, define a opção do mapa atual. Você pode optar por ocultar a mensagem para todos os mapas posteriores. Se você ocultar essa mensagem, poderá exibi-la novamente. Defina a seguinte chave do registro `0` ou excluir a chave:  
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
 
  Quando você abre uma solução que contém projetos do Visual C++, pode demorar algum tempo para atualizar o banco de dados do IntelliSense. Durante esse tempo, você não poderá criar mapas de código de cabeçalho (. h ou `#include`) arquivos até que o banco de dados do IntelliSense conclui a atualização. É possível monitorar o andamento da atualização na barra de status do Visual Studio. Para resolver problemas ou mensagens exibidas porque algumas configurações do IntelliSense estão desabilitadas, consulte [solucionar problemas de mapas de código C e C++](#Troubleshooting).  
 
@@ -308,7 +308,7 @@ Quando você quiser entender as dependências em seu código, visualize-los Cria
 
  Esses problemas podem ocorrer quando você criar mapas de código para código C e C++:  
 
-|**Issue**|**Causa possível**|**Resolução**|  
+|**Problema**|**Causa possível**|**Resolução**|  
 |---------------|------------------------|--------------------|  
 |O mapa de código falha ao gerar.|Nenhum projeto na solução foi compilado com êxito.|Corrija os erros de compilação ocorrem e, em seguida, gerar o mapa.|  
 |[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deixar de responder quando você tenta gerar um mapa de código do **arquitetura** menu.|O arquivo de banco de dados do programa (.pdb) pode estar corrompido.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Recompile a solução e, em seguida, tente novamente.|  

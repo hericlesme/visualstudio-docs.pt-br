@@ -1,9 +1,9 @@
 ---
-title: "Como: modificar um comando de Menu padrão em uma linguagem específica do domínio | Microsoft Docs"
-ms.custom: 
+title: 'Como: modificar um comando de Menu padrão em uma linguagem específica do domínio | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como modificar um comando de menu padrão em uma linguagem específica do domínio
 É possível modificar o comportamento de alguns dos comandos padrão que são definidos automaticamente na DSL. Por exemplo, você poderia modificar **Recortar** para que ele exclui informações confidenciais. Para isso, substitua métodos em uma classe de conjunto de comandos. Essas classes são definidas no arquivo CommandSet.cs, no projeto DslPackage e são derivadas de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 >  Se você quiser criar seus próprios comandos de menu, consulte [como: adicionar um comando no menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>Os comandos que você pode modificar?  
+##  <a name="what"></a> Os comandos que você pode modificar?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Para descobrir quais comandos podem ser modificados  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/09/2018
     > [!NOTE]
     >  Normalmente, é aconselhável não editar arquivos que foram gerados. Qualquer edição será perdida na próxima vez em que os arquivos forem gerados.  
   
-##  <a name="extend"></a>Estender a classe de conjunto de comando apropriado  
+##  <a name="extend"></a> Estender a classe de conjunto de comando apropriado  
  Crie um novo arquivo que contenha uma declaração parcial da classe de conjunto de comandos.  
   
 #### <a name="to-extend-the-command-set-class"></a>Estender a classe de Conjunto de Comandos  
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/09/2018
   
      **Observação** se você usou o modelo de arquivo de classe para criar o novo arquivo, você deve corrigir o namespace e o nome da classe.  
   
-##  <a name="override"></a>Substituir os métodos de comando  
+##  <a name="override"></a> Substituir os métodos de comando  
  A maioria dos comandos têm dois métodos associados: O método com um nome como `ProcessOnStatus`… determina se o comando deve ser visível e habilitado. É chamado sempre que o usuário clicar com o botão direito do mouse no diagrama e deve ser executado rapidamente e não realizar alterações. `ProcessOnMenu`... é chamado quando o usuário clica no comando e deve executar a função do comando. É possível substituir qualquer um dos métodos ou os dois.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para alterar quando o comando é exibido em um menu  
@@ -137,7 +137,7 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. A forma que o usuário clicou com o botão direito sempre é incluída nessa lista de formas e conectores. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.  
   
--   `this.IsDiagramSelected()` - `true`Se o usuário clicou uma parte em branco do diagrama.  
+-   `this.IsDiagramSelected()` - `true` Se o usuário clicou uma parte em branco do diagrama.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   

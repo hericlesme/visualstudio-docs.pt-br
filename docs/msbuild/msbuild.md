@@ -1,27 +1,27 @@
 ---
 title: MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: 
+caps.latest.revision: 59
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild"></a>MSBuild
 O [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] é uma plataforma para a criação de aplicativos. Esse mecanismo, que é também conhecido como MSBuild, fornece um esquema XML para um arquivo de projeto que controla como a plataforma de build processa e compila software. O Visual Studio usa o MSBuild, mas ele não depende do Visual Studio. Ao invocar o msbuild.exe no seu arquivo de projeto ou solução, você pode organizar e criar produtos em ambientes em que o Visual Studio não está instalado.  
@@ -88,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 >  Antes de baixar um projeto, determine a confiabilidade do código.  
   
 ##  <a name="BKMK_ProjectFile"></a> Arquivo de Projeto  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa um formato de arquivo de projeto baseado em XML que é simples e extensível. O formato de arquivo de projeto do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] permite que os desenvolvedores descrevam os itens que devem ser compilados e também como eles devem ser compilados para diferentes sistemas operacionais e configurações. Além disso, o formato de arquivo de projeto permite aos desenvolvedores criar regras de build reutilizáveis que podem ser fatoradas em arquivos separados para que os builds possam ser realizados de forma consistente entre os diferentes projetos no produto.  
+ O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa um formato de arquivo de projeto baseado em XML que é simples e extensível. O formato de arquivo de projeto do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] permite que os desenvolvedores descrevam os itens que devem ser compilados e também como eles devem ser compilados para diferentes sistemas operacionais e configurações. Além disso, o formato de arquivo de projeto permite aos desenvolvedores criar regras de build reutilizáveis que podem ser fatoradas em arquivos separados para que os builds possam ser realizados de forma consistente entre os diferentes projetos no produto.  
   
  As seções a seguir descrevem alguns dos elementos básicos do formato de arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obter um tutorial sobre como criar um arquivo de projeto básico, consulte [Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
@@ -170,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Você pode registrar erros de build, avisos e mensagens para o console ou outro dispositivo de saída. Para obter mais informações, consulte [Obtendo logs de build](../msbuild/obtaining-build-logs-with-msbuild.md) e [Registrando em logs no MSBuild](../msbuild/logging-in-msbuild.md).  
   
 ##  <a name="BKMK_VisualStudio"></a> Usando MSBuild no Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa o formato de arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para armazenar informações de build sobre projetos gerenciados. As configurações do projeto adicionadas ou alteradas usando a interface [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] são refletidas no arquivo .*proj gerado para cada projeto. O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa uma instância hospedada do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para compilar projetos gerenciados. Isso significa que um projeto gerenciado pode ser criado no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou em um prompt de comando (mesmo se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não estiver instalado) e os resultados serão idênticos.  
+ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa o formato de arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para armazenar informações de build sobre projetos gerenciados. As configurações do projeto adicionadas ou alteradas usando a interface [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] são refletidas no arquivo .*proj gerado para cada projeto. O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa uma instância hospedada do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para compilar projetos gerenciados. Isso significa que um projeto gerenciado pode ser criado no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou em um prompt de comando (mesmo se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não estiver instalado) e os resultados serão idênticos.  
   
  Para obter um tutorial sobre como usar o MSBuild no Visual Studio, consulte [Instruções passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   

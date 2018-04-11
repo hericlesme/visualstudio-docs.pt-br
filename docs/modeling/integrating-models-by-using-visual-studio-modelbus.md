@@ -1,9 +1,9 @@
 ---
-title: "Integração de modelos usando o Visual Studio Modelbus | Microsoft Docs"
-ms.custom: 
+title: Integração de modelos usando o Visual Studio Modelbus | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrando modelos por meio do Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus fornece um método para criar links entre modelos e de outras ferramentas em modelos. Por exemplo, você pode vincular modelos UML e modelos de linguagem específica de domínio (DSL). É possível criar um conjunto integrado de DSLs.  
@@ -33,10 +33,10 @@ ms.lasthandoff: 02/09/2018
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>Fornecimento de acesso a uma DSL  
+##  <a name="provide"></a> Fornecimento de acesso a uma DSL  
  Antes de ser possível criar referências do ModelBus para um modelo ou seus elementos, é necessário definir um ModelBusAdapter para a DSL. A maneira mais fácil de fazer isso é utilizar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model Bus Extension, que inclui comandos ao Designer de DSL.  
   
-###  <a name="expose"></a>Para expor uma definição de DSL barramento de modelo  
+###  <a name="expose"></a> Para expor uma definição de DSL barramento de modelo  
   
 1.  Faça o download e instale a extensão Visual Studio Model Bus, a menos que já estiver instalada. Para obter mais informações, consulte [visualização e modelagem SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 02/09/2018
  A pasta `ModelBusAdapters\bin\*` contém os assemblies compilados pelo projeto `Dsl` e o projeto `ModelBusAdapters`. Para referenciar essa DSL a partir de outra DSL, esses assemblies devem ser importados.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Garantindo que elementos possam ser referenciados  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Adaptadores de ModelBus usam o guid de um elemento para identificá-lo, por padrão. Esses identificadores devem, portanto, ser persistidos no arquivo do modelo.  
+ Os adaptadores do ModelBus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usam o guid de um elemento para identificá-lo, por padrão. Esses identificadores devem, portanto, ser persistidos no arquivo do modelo.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Para garantir que as IDs de elementos serão persistidas  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Substituir `ResolveElementReference` para localizar o elemento correto a partir de uma referência do Model Bus.  
   
-##  <a name="editRef"></a>Acessando uma DSL de outro DSL  
+##  <a name="editRef"></a> Acessando uma DSL de outro DSL  
  É possível armazenar referências do model bus em uma propriedade de domínio em uma DSL e, é possível gerar código personalizado que as utiliza. Também é possível permitir ao usuário criar uma referência do model bus selecionando um arquivo de modelo e um elemento dentro dele.  
   
  Para habilitar uma DSL usar referências a DSL outro, você deverá torná-lo um *consumidor* de referências de barramento de modelo.  
@@ -144,7 +144,7 @@ ms.lasthandoff: 02/09/2018
 3.  Em Depuração de projeto na instância experimental do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], inclua arquivos que são instâncias de cada DSL.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus somente pode resolver referências a modelos de itens no mesmo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solução. Por exemplo, não é possível criar uma referência para um arquivo de modelo em outra parte do sistema de arquivos.  
+    >  O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus pode resolver apenas referências para modelos que são itens na mesma solução de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Por exemplo, não é possível criar uma referência para um arquivo de modelo em outra parte do sistema de arquivos.  
   
 4.  Crie alguns elementos e vínculos na instância da DSL exposta e salve.  
   

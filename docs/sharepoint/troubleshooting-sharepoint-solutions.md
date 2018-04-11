@@ -1,12 +1,12 @@
 ---
-title: "Solucionando problemas de soluções do SharePoint | Microsoft Docs"
-ms.custom: 
+title: Solucionando problemas de soluções do SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Solucionando problemas de soluções do SharePoint
   Os seguintes problemas ou alertas que podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [depuração soluções de fluxo de trabalho do SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  Esse problema ocorre se você renomear uma instância de lista importada e, em seguida, executá-lo no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Mensagem de erro  
- Erro de compilação: erro na etapa de implantação 'Ativar recursos': O arquivo Template\Features\\[*Importar projeto**recurso**nome*] \Files\Lists \\[*antigo**nome da lista*] \Schema.xml não existe.  
+ Erro de compilação: erro na etapa de implantação 'Ativar recursos': O arquivo Template\Features\\[*Importar projeto**recurso**nome*] \Files\Lists\\[*antigo * * nome da lista*] \Schema.xml não existe.  
   
 ### <a name="resolution"></a>Resolução  
  Quando você importar uma instância de lista, um atributo chamado CustomSchema é adicionado ao arquivo Elements da instância de lista. Elements inclui o caminho de um Schema. XML personalizado para a instância de lista. Quando você renomear a instância de lista no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], o caminho de implantação para o Schema. XML personalizado for alterado, mas o valor do caminho do atributo CustomSchema não é atualizado. Como resultado, a instância da lista não é possível localizar o arquivo Schema no caminho antigo que é especificado pelo atributo CustomSchema quando o recurso está ativado.  
@@ -280,7 +280,7 @@ ms.lasthandoff: 01/10/2018
  Não foi possível carregar o arquivo de configuração Web. config. Verifique o arquivo para todos os elementos XML malformados e tente novamente. Ocorreu o seguinte erro: A chave fornecida não estava presente no dicionário.  
   
 ### <a name="resolution"></a>Resolução  
- Para resolver esse problema, certifique-se de que o valor da propriedade URL do Site do projeto do SharePoint no Visual Studio corresponde à URL que é atribuída para a zona padrão para os mapeamentos alternativos de acesso do aplicativo web. Você não pode resolver o erro usando outra zona, como a Intranet, para a URL. O site de URL para o projeto e a URL na zona padrão devem corresponder. Para acessar os mapeamentos alternativos de acesso, abra o utilitário de Administração Central do SharePoint 2010, escolha o **gerenciamento de aplicativos** link e, em seguida, em **aplicativos Web**, escolha o ** Configurar mapeamentos alternativos de acesso** link. Para obter mais informações, consulte [criar zonas para aplicativos Web](http://go.microsoft.com/fwlink/?LinkId=192274).  
+ Para resolver esse problema, certifique-se de que o valor da propriedade URL do Site do projeto do SharePoint no Visual Studio corresponde à URL que é atribuída para a zona padrão para os mapeamentos alternativos de acesso do aplicativo web. Você não pode resolver o erro usando outra zona, como a Intranet, para a URL. O site de URL para o projeto e a URL na zona padrão devem corresponder. Para acessar os mapeamentos alternativos de acesso, abra o utilitário de Administração Central do SharePoint 2010, escolha o **gerenciamento de aplicativos** link e, em seguida, em **aplicativos Web**, escolha o  **Configurar mapeamentos alternativos de acesso** link. Para obter mais informações, consulte [criar zonas para aplicativos Web](http://go.microsoft.com/fwlink/?LinkId=192274).  
   
 ## <a name="see-also"></a>Consulte também  
  [Solução de problemas do SharePoint empacotamento e implantação](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   

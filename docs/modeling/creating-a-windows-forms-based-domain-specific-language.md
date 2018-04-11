@@ -1,9 +1,9 @@
 ---
-title: "Criando uma linguagem específica de domínio de baseada em formulários do Windows | Microsoft Docs"
-ms.custom: 
+title: Criando uma linguagem específica de domínio de baseada em formulários do Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Criando uma linguagem específica do domínio baseada no Windows Forms
 Você pode usar formulários do Windows para exibir o estado de um modelo de linguagem específica de domínio (DSL), em vez de usar um diagrama DSL. Este tópico o orienta a associação de um formulário do Windows a uma DSL, usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] visualização e modelagem SDK.  
@@ -53,9 +53,9 @@ Uma instância DSL, mostrando uma interface de usuário de formulário do Window
   
  Na instância principal do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], observe os seguintes pontos sobre a solução DSL:  
   
--   `DslDefinition.dsl`não contém nenhum elemento de diagrama. Isso ocorre porque você não usará diagramas DSL para exibir modelos de instância desse DSL. Em vez disso, você associará a um formulário do Windows para o modelo e os elementos no formulário exibirá o modelo.  
+-   `DslDefinition.dsl` não contém nenhum elemento de diagrama. Isso ocorre porque você não usará diagramas DSL para exibir modelos de instância desse DSL. Em vez disso, você associará a um formulário do Windows para o modelo e os elementos no formulário exibirá o modelo.  
   
--   Além de `Dsl` e `DslPackage` projetos, a solução contém um terceiro projeto chamado `UI.` **UI** projeto contém a definição de um controle de formulários do Windows. `DslPackage`depende de `UI`, e `UI` depende `Dsl`.  
+-   Além de `Dsl` e `DslPackage` projetos, a solução contém um terceiro projeto chamado `UI.` **UI** projeto contém a definição de um controle de formulários do Windows. `DslPackage` depende de `UI`, e `UI` depende `Dsl`.  
   
 -   No `DslPackage` projeto, `UI\DocView.cs` contém o código que exibe o controle de formulários do Windows que é definido no `UI` projeto.  
   
@@ -88,9 +88,9 @@ Uma instância DSL, mostrando uma interface de usuário de formulário do Window
   
 4.  Use o **classe de domínio nomeado** ferramenta para criar as seguintes classes de domínio:  
   
-    -   `Field`-Forneça uma propriedade de domínio adicional denominada `Size`.  
+    -   `Field` -Forneça uma propriedade de domínio adicional denominada `Size`.  
   
-    -   `Animal`-Na janela Propriedades, defina **modificador de herança** para **abstrata**.  
+    -   `Animal` -Na janela Propriedades, defina **modificador de herança** para **abstrata**.  
   
 5.  Use o **classe de domínio** ferramenta para criar as classes a seguir:  
   
@@ -223,7 +223,7 @@ Esquema de links entre fontes de dados e exibições.
   
 3.  No **FarmApp Explorer**, abra o menu de atalho no **Farm** nó raiz e escolha **adicionar novo bode**.  
   
-     `Goat1`aparece no **animais** exibição.  
+     `Goat1` aparece no **animais** exibição.  
   
     > [!WARNING]
     >  Você deve usar o menu de atalho no **Farm** nó, não o **animais** nó.  

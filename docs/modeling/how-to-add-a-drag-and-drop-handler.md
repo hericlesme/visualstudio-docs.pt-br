@@ -1,9 +1,9 @@
 ---
 title: 'Como: adicionar um manipulador de arrastar e soltar | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 61eff22f3a666f067f4a1eddd8ecab84429fea21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Como adicionar um manipulador de evento de arrastar e soltar
 É possível adicionar manipuladores para eventos arrastar e soltar à DSL, para os usuários poderem arrastar itens para o diagrama de outros diagramas ou de outras partes do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Também é possível adicionar manipuladores de eventos como cliques duplos. Juntas, arrastar e soltar e clique duas vezes em manipuladores são conhecidos como *manipuladores de gestos*.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [Usando ações do Mouse: Arrastando os itens de compartimento](#mouseActions). Este exemplo demonstra um manipulador de nível inferior que intercepta a ações do mouse em campos de uma forma. O exemplo permite ao usuário reordenar os itens em um compartimento arrastando com o mouse.  
   
-##  <a name="overrideShapeElement"></a>Definindo manipuladores de gesto substituindo métodos ShapeElement  
+##  <a name="overrideShapeElement"></a> Definindo manipuladores de gesto substituindo métodos ShapeElement  
  Adicione um novo arquivo de código ao projeto DSL. Para um manipulador de gestos, geralmente é necessário ter ao menos as seguintes instruções `using`:  
   
 ```csharp  
@@ -64,7 +64,7 @@ using System.Linq;
   
     ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-Este método é chamado se o usuário libera o botão do mouse enquanto o ponteiro do mouse permanece sobre esta forma ou um diagrama, se `OnDragOver(DiagramDragEventArgs e)` definida anteriormente `e.Effect` para um valor diferente de `None`.  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -Este método é chamado se o usuário libera o botão do mouse enquanto o ponteiro do mouse permanece sobre esta forma ou um diagrama, se `OnDragOver(DiagramDragEventArgs e)` definida anteriormente `e.Effect` para um valor diferente de `None`.  
   
     ```csharp  
     public override void OnDragDrop(DiagramDragEventArgs e)  
@@ -81,13 +81,13 @@ using System.Linq;
   
     ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-Este método é chamado quando o usuário clica duas vezes na forma ou diagrama.  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -Este método é chamado quando o usuário clica duas vezes na forma ou diagrama.  
   
      Para obter mais informações, consulte [como: interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
  Defina `IsAcceptableDropItem(e)` para determinar se o item arrastado é aceitável e ProcessDragDropItem(e) para atualizar o modelo quando o item for solto. Esses métodos devem primeiro extrair o item dos argumentos do evento. Para obter informações sobre como fazer isso, consulte [como obter uma referência para o item arrastado](#extracting).  
   
-##  <a name="MEF"></a>Definindo manipuladores de gesto usando MEF  
+##  <a name="MEF"></a> Definindo manipuladores de gesto usando MEF  
  MEF (Managed Extensibility Framework) permite definir componentes que podem ser instalados com configuração mínima. Para saber mais, confira [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
 #### <a name="to-define-a-mef-gesture-handler"></a>Para definir um manipulador de gestos de MEF  
@@ -130,22 +130,22 @@ using System.Linq;
   
 3.  Adicione definições de classe parcial para as classes de forma, conector ou diagrama de destino e defina os métodos `IsAcceptableDropItem()` e `ProcessDragDropItem()`. Esses métodos devem começar extraindo o item arrastado dos argumentos do evento. Para obter mais informações, consulte [como obter uma referência para o item arrastado](#extracting).  
   
-##  <a name="extracting"></a>Como decodificar o item arrastado  
+##  <a name="extracting"></a> Como decodificar o item arrastado  
  Quando o usuário arrasta um item para o diagrama ou de uma parte do diagrama para outra, as informações sobre o item que está sendo arrastado estão disponíveis em `DiagramDragEventArgs`. Como a operação de arrastar pode ter começado em qualquer objeto na tela, os dados podem estar disponíveis em qualquer um entre uma variedade de formatos. O código deve reconhecer os formatos com os quais é capaz de lidar.  
   
  Para saber os formatos nos quais as informações de origem do arrasto estão disponíveis, execute o código em modo de depuração, definindo um ponto de interrupção na entrada para `OnDragOver()` ou `CanDragDrop()`. Inspecione os valores do parâmetro `DiagramDragEventArgs`. As informações são fornecidas em dois formulários:  
   
--   <xref:System.Windows.Forms.IDataObject>  `Data`-Esta propriedade executa serializadas versões dos objetos de origem, geralmente em mais de um formato. Suas funções mais úteis são:  
+-   <xref:System.Windows.Forms.IDataObject>  `Data` -Esta propriedade executa serializadas versões dos objetos de origem, geralmente em mais de um formato. Suas funções mais úteis são:  
   
     -   diagramEventArgs.Data.GetDataFormats() - lista os formatos na qual é possível decodificar o objeto arrastado. Por exemplo, se o usuário arrastar um arquivo da área de trabalho, os formatos disponíveis incluem o nome de arquivo ("`FileNameW`").  
   
-    -   `diagramEventArgs.Data.GetData(format)`-Decodifica o objeto arrastado no formato especificado. Converte o objeto para o tipo adequado. Por exemplo:  
+    -   `diagramEventArgs.Data.GetData(format)` -Decodifica o objeto arrastado no formato especificado. Converte o objeto para o tipo adequado. Por exemplo:  
   
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
          Também é possível transmitir objetos como referências do Model Bus da origem em seu próprio formato personalizado. Para obter mais informações, consulte [como enviar referências de barramento de modelo em um arrastar e soltar](#mbr).  
   
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype` -Use essa propriedade se você quiser que os usuários arrastar itens de uma DSL ou um modelo UML. Um protótipo de grupo de elementos contém um ou mais objetos, links e os valores de suas propriedades. Também é usado em operações colar e ao adicionar um elemento da caixa de ferramentas. Em um protótipo, objetos e seus tipos são identificados por Guid. Por exemplo, esse código permite ao usuário arrastar elementos de classe de um diagrama UML ou do Gerenciador de Modelos UML:  
+-   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Use essa propriedade se você quiser que os usuários arrastar itens de uma DSL ou um modelo UML. Um protótipo de grupo de elementos contém um ou mais objetos, links e os valores de suas propriedades. Também é usado em operações colar e ao adicionar um elemento da caixa de ferramentas. Em um protótipo, objetos e seus tipos são identificados por Guid. Por exemplo, esse código permite ao usuário arrastar elementos de classe de um diagrama UML ou do Gerenciador de Modelos UML:  
   
     ```csharp  
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
@@ -162,7 +162,7 @@ using System.Linq;
   
  `DiagramDragEventArgs` também têm propriedades que indicam a posição atual do ponteiro do mouse e se o usuário está pressionando as teclas CTRL, ALT ou SHIFT.  
   
-##  <a name="getOriginal"></a>Como obter o original de um elemento arrastado  
+##  <a name="getOriginal"></a> Como obter o original de um elemento arrastado  
  As propriedades `Data` e `Prototype` dos argumentos do evento contêm apenas uma referência à forma arrastada. Geralmente, se desejar criar um objeto na DSL de destino que é derivada do protótipo de alguma maneira, será necessário obter acesso ao original, por exemplo, lendo o conteúdo do arquivo ou navegando até o elemento do modelo representado por uma forma.  É possível usar o Visual Studio Model Bus para ajudar com isso.  
   
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Preparar um projeto DSL para Model Bus  
@@ -175,7 +175,7 @@ using System.Linq;
   
     3.  Clique em **transformar todos os modelos** e recompile a solução.  
   
-###  <a name="mbr"></a>Para enviar um objeto de uma fonte de DSL  
+###  <a name="mbr"></a> Para enviar um objeto de uma fonte de DSL  
   
 1.  Na subclasse ElementOperations, substitua `Copy()` para codificar uma Referência do Model Bus (MBR) no IDataObject. Esse método será chamado quando o usuário começar a arrastar do diagrama de origem. A MBR codificada estará disponível no IDataObject quando o usuário soltar no diagrama de destino.  
   
@@ -335,7 +335,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a>Usando ações do Mouse: Arrastando os itens do compartimento  
+##  <a name="mouseActions"></a> Usando ações do Mouse: Arrastando os itens do compartimento  
  Você pode escrever um manipulador que intercepta a ações do mouse em campos de uma forma. O exemplo a seguir permite ao usuário reordenar os itens em um compartimento arrastando com o mouse.  
   
  Para criar este exemplo, crie uma solução usando o **diagramas de classe** modelo de solução. Adicione um arquivo de código e adicione o código a seguir. Ajuste o namespace para o mesmo que o seu próprio.  

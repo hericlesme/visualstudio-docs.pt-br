@@ -1,9 +1,9 @@
 ---
-title: "Adicionar validação de arquitetura personalizada a diagramas de dependência | Microsoft Docs"
-ms.custom: 
+title: Adicionar validação de arquitetura personalizada a diagramas de dependência | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Adicionar validação de arquitetura personalizada a diagramas de dependência
 No Visual Studio, os usuários podem validar o código-fonte em um projeto em um modelo de camada para que ele podem verificar se o código-fonte está em conformidade com as dependências em um diagrama de dependência. Há um algoritmo de validação padrão, mas você pode definir suas próprias extensões de validação.  
@@ -120,7 +120,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
      Para desinstalá-lo, use **extensões e atualizações** no **ferramentas** menu.  
   
-##  <a name="programming"></a>Validação de programação  
+##  <a name="programming"></a> Validação de programação  
  Para definir uma extensão de validação de camada, você define uma classe que tem as seguintes características:  
   
 -   A forma geral da declaração é a seguinte:  
@@ -189,7 +189,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
  Links de camadas para elementos no código apresentam a categoria "Representa".  
   
-##  <a name="debugging"></a>Validação de depuração  
+##  <a name="debugging"></a> Validação de depuração  
  Para depurar sua extensão de validação de camada, pressione CTRL + F5. Uma instância experimental do Visual Studio é aberto. Nesse caso, abra ou crie um modelo de camada. Esse modelo deve ser associado ao código e deve ter pelo menos uma dependência.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Teste com uma solução que contém as dependências  
@@ -216,7 +216,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
 ### <a name="deploying-a-validation-extension"></a>Implantando uma extensão de validação  
  Para instalar a extensão de validação em um computador em que uma versão adequada do Visual Studio está instalada, abra o arquivo VSIX no computador de destino. Para instalar em um computador no qual [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] é instalado, copie manualmente o conteúdo do VSIX para uma pasta de extensões. Para obter mais informações, consulte [implantar uma extensão de modelo de camada](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a>Exemplo de código  
+##  <a name="example"></a> Exemplo de código  
   
 ```csharp  
 using System;  

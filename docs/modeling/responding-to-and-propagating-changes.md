@@ -1,9 +1,9 @@
 ---
-title: "Respondendo a e propagando alterações | Microsoft Docs"
-ms.custom: 
+title: Respondendo a e propagando alterações | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, events
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f814cc9ca963b59217dc486539d22f42f487a3db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>Respondendo a alterações e propagando-as
 Quando um elemento é criado, excluído ou atualizado, você pode escrever código que se propaga a alteração para outras partes do modelo, ou para recursos externos como arquivos, bancos de dados ou outros componentes.  

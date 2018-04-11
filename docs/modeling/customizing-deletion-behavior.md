@@ -1,9 +1,9 @@
 ---
-title: "Personalizando comportamento de exclusão | Microsoft Docs"
-ms.custom: 
+title: Personalizando comportamento de exclusão | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizando o comportamento da operação de excluir
 A exclusão de um elemento geralmente provoca também a exclusão de seus elementos relacionados. Todas as relações conectadas a ele e quaisquer elementos filhos são excluídos. Esse comportamento é denominado *excluir propagação*. Você pode personalizar a propagação da exclusão, por exemplo, para providenciar que os elementos adicionais relacionados sejam excluídos. Ao escrever o código do programa, você pode fazer com que a propagação de exclusão dependa do estado do modelo. Também é possível causar outras alterações em resposta a uma exclusão.  
@@ -40,7 +40,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
   
 -   [UnMerge](#unmerge) -use a operação UnMerge para desfazer a operação de mesclagem que anexado a um elemento filho para seu pai.  
   
-##  <a name="default"></a>Comportamento de exclusão padrão  
+##  <a name="default"></a> Comportamento de exclusão padrão  
  Por padrão, as seguintes regras regem a propagação da exclusão:  
   
 -   Se um elemento for excluído, todos os elementos incorporados também serão excluídos. Os elementos incorporados são os elementos de destino das relações de incorporação para os quais este elemento é a fonte. Por exemplo, se houver uma relação de incorporação de **álbum** para **música**, em seguida, quando um determinado álbum é excluído, todas as suas músicas também serão excluídas.  
@@ -53,7 +53,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
   
 -   Todo relacionamento conectado ao elemento, seja na origem ou no destino, é excluído. A propriedade de função do elemento na função oposta passa a não conter o elemento excluído.  
   
-##  <a name="property"></a>Definindo a opção Excluir propagação de uma função  
+##  <a name="property"></a> Definindo a opção Excluir propagação de uma função  
  Você pode fazer com que a exclusão se propague ao longo da relação de referência ou de um filho incorporado ao seu pai.  
   
 #### <a name="to-set-delete-propagation"></a>Para configurar a propagação de exclusão  
@@ -78,7 +78,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
 > [!NOTE]
 >  Para adicionar código de programa à sua definição de DSL, crie um arquivo de código separado no **Dsl** do projeto e gravar as definições parciais para aumentar as classes na pasta de código gerado. Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
-##  <a name="closure"></a>Definindo um fechamento de exclusão  
+##  <a name="closure"></a> Definindo um fechamento de exclusão  
  A operação de exclusão usa a classe *YourModel * DeleteClosure** para determinar quais elementos para excluir uma seleção inicial fornecida. Ela chama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` repetidamente, percorrendo o gráfico de relações. Você pode substituir esses métodos. ShouldVisitRolePlayer é fornecido com a identidade de um link e o elemento em uma das funções do link. Ele deve retornar um dos seguintes valores:  
   
 -   **VisitorFilterResult.Yes**- o elemento deve ser excluído e o walker deve continuar para tentar o elemento de outros links.  
@@ -131,7 +131,7 @@ partial class MusicLibDeleteClosure
   
  No entanto, a técnica supõe que a exclusão afete apenas seus vizinhos no gráfico de relações: não é possível usar esse método para excluir um elemento em outra parte do modelo. Você não poderá usá-lo se quiser adicionar elementos ou fazer outras alterações em resposta a uma exclusão.  
   
-##  <a name="ondeleting"></a>Usando OnDeleting e OnDeleted  
+##  <a name="ondeleting"></a> Usando OnDeleting e OnDeleted  
  Você pode substituir `OnDeleting()` ou `OnDeleted()` em uma classe de domínio ou em uma relação de domínio.  
   
 1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> é chamado quando um elemento está prestes a ser excluído, mas antes que suas relações sejam desconectadas. Ele ainda é navegável de outros elementos e ainda está em `store.ElementDirectory`.  
@@ -198,7 +198,7 @@ partial class Artist
   
  Quando você executa <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> em um elemento, OnDeleting e OnDeleted são chamados. Esses métodos são sempre executado embutido - ou seja, imediatamente antes e após a exclusão real. Se o seu código excluir dois ou mais elementos, OnDeleting e OnDeleted serão chamados em alternância em todos eles, um após o outro.  
   
-##  <a name="rules"></a>Regras de exclusão e eventos  
+##  <a name="rules"></a> Regras de exclusão e eventos  
  Como uma alternativa aos manipuladores OnDelete, você pode definir regras e eventos de exclusão.  
   
 1.  **Excluindo** e **excluir** são disparadas regras apenas em uma transação e não em um Desfazer ou refazer. Você pode configurá-las para serem colocadas em fila para execução no final da transação em que a exclusão é realizada. As regras Deleting são sempre executadas antes de qualquer regra Deleted na fila.  

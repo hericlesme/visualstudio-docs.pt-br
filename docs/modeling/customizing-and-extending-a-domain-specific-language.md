@@ -1,9 +1,9 @@
 ---
-title: "Personalizando e estendendo uma linguagem específica do domínio | Microsoft Docs"
-ms.custom: 
+title: Personalizando e estendendo uma linguagem específica do domínio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizando e estendendo uma linguagem específica do domínio
 O Visual Studio de modelagem e visualização SDK (VMSDK) fornece vários níveis em que você pode definir as ferramentas de modelagem:  
@@ -33,7 +33,7 @@ O Visual Studio de modelagem e visualização SDK (VMSDK) fornece vários nívei
 > [!NOTE]
 >  Quando você atualizou o arquivo de definições de DSL, não se esqueça de clicar em **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções antes de recompilar a solução.  
   
-##  <a name="customShapes"></a>Nesta seção  
+##  <a name="customShapes"></a> Nesta seção  
   
 |Para obter esse efeito|Consulte este tópico|  
 |----------------------------|-------------------------|  
@@ -55,7 +55,7 @@ O Visual Studio de modelagem e visualização SDK (VMSDK) fornece vários nívei
 |Habilitar copiar, recortar e colar|Definir o **habilitar copiar-colar** propriedade o **Editor** nó no Gerenciador de DSL.|  
 |Links de referência de cópia e suas metas sempre que um elemento é copiado. Por exemplo, copie comentários anexados a um item.|Definir o **cópia propaga** propriedade da função de origem (representada pela linha em um lado da relação de domínio no diagrama de definição de DSL).<br /><br /> Escreva código para substituir ProcessOnCopy para obter efeitos mais complexos.<br /><br /> Consulte [personalizar o comportamento de cópia](../modeling/customizing-copy-behavior.md).|  
 |Excluir, reassociar ou vincular novamente os elementos relacionados quando um elemento é excluído.|Definir o **propaga excluir** valor de uma função de relação. Efeitos mais complexos, substituir `ShouldVisitRelationship` e `ShouldVisitRolePlayer` métodos o `MyDslDeleteClosure` definido na classe **DomainModel.cs**<br /><br /> Consulte [personalizar o comportamento de exclusão](../modeling/customizing-deletion-behavior.md)|  
-|Preserve o layout de forma e a aparência na cópia e arraste e solte.|Adicionar as formas e os conectores para copiado `ElementGroupPrototype`. É o método mais conveniente para substituir`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consulte [personalizar o comportamento de cópia](../modeling/customizing-copy-behavior.md).|  
+|Preserve o layout de forma e a aparência na cópia e arraste e solte.|Adicionar as formas e os conectores para copiado `ElementGroupPrototype`. É o método mais conveniente para substituir `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consulte [personalizar o comportamento de cópia](../modeling/customizing-copy-behavior.md).|  
 |Cole formas em um local escolhido, como a posição atual do cursor.|Substituir `ClipboardCommandSet.ProcessOnCopy()` para usar a versão específica do local de `ElementOperations.Merge().` consulte [Personalizando comportamento de cópia](../modeling/customizing-copy-behavior.md).|  
 |Criar links adicionais ao colar|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Habilitar arrastar e soltar neste diagrama, outras DSLs e Windows elementos|Consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)|  

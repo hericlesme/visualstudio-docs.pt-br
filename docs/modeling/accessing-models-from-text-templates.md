@@ -1,9 +1,9 @@
 ---
 title: Acessar modelos de modelos de texto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Acessando modelos a partir de modelos (templates) de texto
 Usando modelos de texto, você pode criar arquivos de relatório, arquivos de código fonte e outros arquivos de texto com base em modelos de linguagem específica de domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo de avaliação quando você estiver depurando seu DSL e também funcionará em um computador no qual você implantou o DSL.  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   Embora o idioma no qual são gravados os fragmentos de código c#, você pode gerar o texto de qualquer tipo. Como alternativa você pode escrever o código em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] adicionando a propriedade `language="VB"` para o `template` diretiva.  
   
--   Para depurar o modelo, adicione `debug="true"` para o `template` diretiva. O modelo será aberto em outra instância do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se ocorrer uma exceção. Se você quiser invadir o depurador em um ponto específico no código, a instrução insert`System.Diagnostics.Debugger.Break();`  
+-   Para depurar o modelo, adicione `debug="true"` para o `template` diretiva. O modelo será aberto em outra instância do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se ocorrer uma exceção. Se você quiser invadir o depurador em um ponto específico no código, a instrução insert `System.Diagnostics.Debugger.Break();`  
   
      Para obter mais informações, consulte [depurando um modelo de texto T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -99,7 +99,7 @@ Here is a list of elements in the model:
   
  Se um erro for encontrado, ele será relatado na janela de erros e o arquivo de resultado conterá uma mensagem de erro.  
   
-##  <a name="Multiple"></a>Acessando vários modelos em um modelo de texto  
+##  <a name="Multiple"></a> Acessando vários modelos em um modelo de texto  
   
 > [!NOTE]
 >  Esse método permite que você leia vários modelos no mesmo modelo, mas não oferece suporte a referências de ModelBus. Para ler os modelos que são interligados por ModelBus referências, consulte [usando o Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`invoca `LoopTemplate.t4`e, em seguida, divide o arquivo resultante em seus segmentos. Observe que este modelo não tem como um modelo de modelagem, porque ela não lê o modelo.  
+ `LoopSplitter.tt` invoca `LoopTemplate.t4`e, em seguida, divide o arquivo resultante em seus segmentos. Observe que este modelo não tem como um modelo de modelagem, porque ela não lê o modelo.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  
