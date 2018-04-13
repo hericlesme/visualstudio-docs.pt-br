@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 33b9a56d88b4f64c4253126dafa5e3515aa498c6
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 6276c70cebd8f4d71e056142258422645c50cdfa
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalando o suporte do Python no Visual Studio no Windows
 
@@ -80,6 +80,16 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
 |   |   |
 |---|---|
 | ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) sobre como instalar o suporte do Python no Visual Studio.|
+
+### <a name="troubleshooting"></a>Solução de problemas
+
+Se você encontrar problemas ao instalar ou executar o Python no Visual Studio, tente o seguinte:
+
+- Determine se o mesmo erro ocorre usando a CLI do Python, isto é, executando `python.exe` em um prompt de comando.
+- Use a [opção Reparar no Instalador do Visual Studio](../install/repair-visual-studio.md).
+- Repare ou reinstale o Python por meio de **Configurações > Aplicativos e recursos** no Windows.
+
+**Erro de exemplo**: Falha ao iniciar o processo interativo: System.ComponentModel.Win32Exception (0x80004005): erro desconhecido (0xc0000135) em Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
