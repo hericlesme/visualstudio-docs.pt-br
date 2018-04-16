@@ -16,12 +16,12 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Instruções passo a passo: criando um host de modelo de texto personalizado
-Um *modelo de texto * * host* fornece um ambiente que permite que o *mecanismo de transformação de modelo de texto* para executar. O host é responsável por gerenciar a interação do mecanismo com o sistema de arquivos. O mecanismo ou *processador de diretiva* que precisa de um arquivo ou um assembly pode solicitar um recurso do host. O host pode pesquisar em diretórios e no cache de assembly global para localizar o recurso solicitado. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).  
+Um *modelo de texto**host* fornece um ambiente que permite que o *mecanismo de transformação de modelo de texto* para executar. O host é responsável por gerenciar a interação do mecanismo com o sistema de arquivos. O mecanismo ou *processador de diretiva* que precisa de um arquivo ou um assembly pode solicitar um recurso do host. O host pode pesquisar em diretórios e no cache de assembly global para localizar o recurso solicitado. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).  
   
  Você pode escrever um host personalizado se você deseja usar o *transformação de modelo de texto* funcionalidade de fora [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou se você deseja integrar que a funcionalidade de ferramentas personalizadas. Para criar um host personalizado, é preciso criar uma classe herdada de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Para obter a documentação dos métodos individuais, consulte <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

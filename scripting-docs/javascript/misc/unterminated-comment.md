@@ -27,7 +27,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="unterminated-comment"></a>Comentário não finalizado
-Início de um bloco de comentário de várias linhas, mas não terminou corretamente-lo. Comentários de várias linhas começam com um "/ *" combinação e terminar com o inverso "\*/" combinação. A seguir está um exemplo:  
+Início de um bloco de comentário de várias linhas, mas não terminou corretamente-lo. Comentários de várias linhas começam com um "/\*" combinação e terminar com o inverso "\*/" combinação. A seguir está um exemplo:  
   
 ```JavaScript  
 /* This is a comment  
@@ -36,7 +36,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Certifique-se de encerrar os comentários de várias linhas com "* /".  
+-   Certifique-se de encerrar os comentários de várias linhas com "*/".  
   
 ## <a name="see-also"></a>Consulte também  
  [Instruções Comment](../../javascript/reference/comment-statements-javascript.md)

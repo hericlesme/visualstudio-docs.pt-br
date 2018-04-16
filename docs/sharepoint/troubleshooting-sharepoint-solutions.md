@@ -24,7 +24,7 @@ ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/10/2018
 ---
@@ -217,7 +217,7 @@ ms.lasthandoff: 04/10/2018
  Esse problema ocorre se você renomear uma instância de lista importada e, em seguida, executá-lo no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Mensagem de erro  
- Erro de compilação: erro na etapa de implantação 'Ativar recursos': O arquivo Template\Features\\[*Importar projeto**recurso**nome*] \Files\Lists\\[*antigo * * nome da lista*] \Schema.xml não existe.  
+ Erro de compilação: erro na etapa de implantação 'Ativar recursos': O arquivo Template\Features\\[*Importar projeto**recurso**nome*]\Files\Lists\\[*antigo**nome da lista*]\Schema.xml não existe.  
   
 ### <a name="resolution"></a>Resolução  
  Quando você importar uma instância de lista, um atributo chamado CustomSchema é adicionado ao arquivo Elements da instância de lista. Elements inclui o caminho de um Schema. XML personalizado para a instância de lista. Quando você renomear a instância de lista no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], o caminho de implantação para o Schema. XML personalizado for alterado, mas o valor do caminho do atributo CustomSchema não é atualizado. Como resultado, a instância da lista não é possível localizar o arquivo Schema no caminho antigo que é especificado pelo atributo CustomSchema quando o recurso está ativado.  

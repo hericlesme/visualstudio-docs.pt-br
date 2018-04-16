@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ Você pode fazer as extensões para o designer que você usa para editar as defi
   
  Para implantar as extensões para o principal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]e a outros computadores, siga estas etapas:  
   
-1.  Localize o arquivo de instalação de VSIX, no seu projeto do VSIX na gaveta\\*\\\*.vsix  
+1.  Localize o arquivo de instalação de VSIX, no seu projeto do VSIX na gaveta\\*\*\\\*.vsix  
   
 2.  Copie esse arquivo para o computador de destino e, em seguida, no Windows Explorer (ou Explorador de arquivos), clique duas vezes nele.  
   

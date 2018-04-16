@@ -17,7 +17,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/10/2018
 ---
@@ -79,7 +79,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
 >  Para adicionar código de programa à sua definição de DSL, crie um arquivo de código separado no **Dsl** do projeto e gravar as definições parciais para aumentar as classes na pasta de código gerado. Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Definindo um fechamento de exclusão  
- A operação de exclusão usa a classe *YourModel * DeleteClosure** para determinar quais elementos para excluir uma seleção inicial fornecida. Ela chama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` repetidamente, percorrendo o gráfico de relações. Você pode substituir esses métodos. ShouldVisitRolePlayer é fornecido com a identidade de um link e o elemento em uma das funções do link. Ele deve retornar um dos seguintes valores:  
+ A operação de exclusão usa a classe *YourModel***DeleteClosure** para determinar quais elementos para excluir uma seleção inicial fornecida. Ela chama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` repetidamente, percorrendo o gráfico de relações. Você pode substituir esses métodos. ShouldVisitRolePlayer é fornecido com a identidade de um link e o elemento em uma das funções do link. Ele deve retornar um dos seguintes valores:  
   
 -   **VisitorFilterResult.Yes**- o elemento deve ser excluído e o walker deve continuar para tentar o elemento de outros links.  
   
