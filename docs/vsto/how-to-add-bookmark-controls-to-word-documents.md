@@ -1,13 +1,10 @@
 ---
 title: 'Como: adicionar controles de indicador a documentos do Word | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Bookmark.Dialog
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ebe8536887f2f60876b64407ffb96cdaf4618c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a33160ba534a1ee6bd56238cffaa2064e4332ec1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Como adicionar controles de indicador a documentos do Word
   Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto em tempo de execução.  
@@ -43,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações sobre <xref:Microsoft.Office.Tools.Word.Bookmark> controles, consulte [indicador controle](../vsto/bookmark-control.md).  
   
-##  <a name="designtime"></a>Adicionando controles de indicador em tempo de Design  
+##  <a name="designtime"></a> Adicionando controles de indicador em tempo de Design  
  Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em um projeto no nível do documento em tempo de design:  
   
 -   No Visual Studio **caixa de ferramentas**.  
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  No **indicador** caixa de diálogo, digite o nome do novo indicador e clique em **adicionar**.  
   
-##  <a name="runtimedoclevel"></a>Adicionando controles de indicador em tempo de execução em um projeto no nível do documento  
+##  <a name="runtimedoclevel"></a> Adicionando controles de indicador em tempo de execução em um projeto no nível do documento  
  Você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles programaticamente para o documento em tempo de execução usando métodos do <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade o `ThisDocument` classe em seu projeto. Há duas sobrecargas do método que você pode usar para adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle das seguintes maneiras:  
   
 -   Adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> em um intervalo especificado.  
@@ -101,7 +98,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Se você desejar criar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle de uma já existente <xref:Microsoft.Office.Interop.Word.Bookmark>, use o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> método e passe existentes no <xref:Microsoft.Office.Interop.Word.Bookmark>.  
   
-##  <a name="runtimeaddin"></a>Adicionando controles de indicador em tempo de execução em um projeto de suplemento do VSTO  
+##  <a name="runtimeaddin"></a> Adicionando controles de indicador em tempo de execução em um projeto de suplemento do VSTO  
  Você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles programaticamente para qualquer documento aberto em tempo de execução usando um suplemento do VSTO. Para fazer isso, gerar um <xref:Microsoft.Office.Tools.Word.Document> hospedar o item com base em um documento aberto e usar os métodos do <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade deste item de host. Há duas sobrecargas do método que você pode usar para adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle das seguintes maneiras:  
   
 -   Adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> em um intervalo especificado.  

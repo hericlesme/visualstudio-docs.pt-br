@@ -1,13 +1,10 @@
 ---
-title: "Escrevendo código em soluções do Office | Microsoft Docs"
-ms.custom: 
+title: Escrevendo código em soluções do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Escrevendo código em soluções do Office
   Há alguns aspectos de escrever código em projetos do Office que são diferentes de outros tipos de projetos no Visual Studio. Muitas dessas diferenças estão relacionadas à forma como os modelos de objeto do Office são expostos para código gerenciado. Outras diferenças estão relacionadas ao design de projetos do Office.  
@@ -78,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="understanding-the-generated-classes"></a>Noções básicas sobre Classes geradas  
  Em projetos de nível de documento para Excel e Word, a classe gerada é semelhante a um objeto de nível superior no modelo de objeto do aplicativo. Por exemplo, gerado `ThisDocument` classe em um projeto de documento do Word fornece os mesmos membros como o <xref:Microsoft.Office.Interop.Word.Document> classe no modelo de objeto do Word. Para obter mais informações sobre as classes geradas no nível de documento, consulte [personalizações de programação de nível de documento](../vsto/programming-document-level-customizations.md).  
   
- Projetos de suplemento do VSTO fornecem uma classe gerada chamada `ThisAddIn`. Essa classe não se assemelha a uma classe no modelo de objeto do aplicativo host. Em vez disso, essa classe representa o Add-in do VSTO em si, e fornece membros, que você pode usar para acessar o modelo de objeto do aplicativo host e acessar outros recursos disponíveis para suplementos do VSTO. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+ Projetos de suplemento do VSTO fornecem uma classe gerada chamada `ThisAddIn`. Essa classe não se assemelha a uma classe no modelo de objeto do aplicativo host. Em vez disso, essa classe representa o Add-in do VSTO em si, e fornece membros, que você pode usar para acessar o modelo de objeto do aplicativo host e acessar outros recursos disponíveis para suplementos do VSTO. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
  Todas as classes geradas em projetos do Office incluem `Startup` e `Shutdown` manipuladores de eventos. Para começar a escrever código, você normalmente adiciona código para esses manipuladores de eventos. Para inicializar o suplemento do VSTO, você pode adicionar código para o `Startup` manipulador de eventos. Para limpar os recursos usados pelo seu suplemento do VSTO, você pode adicionar código para o `Shutdown` manipulador de eventos. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Para obter mais informações, consulte [acesso Global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Considerações sobre o Namespace em soluções do Office  
- Não é possível alterar o *namespace padrão* (ou *namespace raiz* no Visual Basic) de um projeto do Office depois de criar o projeto. O namespace padrão corresponderá sempre o nome do projeto que você especificou quando criou o projeto. Se você renomear o projeto, o namespace padrão não é alterado. Para obter mais informações sobre o namespace padrão em projetos, consulte [página de aplicativo, Designer de projeto &#40; C &#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) e [página de aplicativo, Designer de projeto &#40; Visual Basic &#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Não é possível alterar o *namespace padrão* (ou *namespace raiz* no Visual Basic) de um projeto do Office depois de criar o projeto. O namespace padrão corresponderá sempre o nome do projeto que você especificou quando criou o projeto. Se você renomear o projeto, o namespace padrão não é alterado. Para obter mais informações sobre o namespace padrão em projetos, consulte [página de aplicativo, Designer de projeto &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) e [página de aplicativo, Designer de projeto &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Alterar o Namespace das Classes de Item de Host em projetos c#  
  Classes de item de host (por exemplo, o `ThisAddIn`, `ThisWorkbook`, ou `ThisDocument` classes) têm seus próprios namespaces em projetos do Visual c# Office. Por padrão, o namespace para itens de host em seu projeto coincide com o nome do projeto que você especificou quando criou o projeto.  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |Recurso|Descrição|Suporte ao Visual Basic|Suporte do Visual c#|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Parâmetros opcionais|Muitos métodos do Microsoft Office têm parâmetros que não são necessários quando você chamar o método. Se nenhum valor é passado para o parâmetro, um valor padrão será usado.|Visual Basic oferece suporte a parâmetros opcionais.|Visual c# oferece suporte a parâmetros opcionais na maioria dos casos. Para obter mais informações, consulte [parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md).|  
-|Passando parâmetros por referência|Parâmetros opcionais na maioria dos assemblies de interoperabilidade primários do Microsoft Office podem ser passados por valor. No entanto, em alguns assemblies de interoperabilidade primários, os parâmetros opcionais que aceitam os tipos de referência devem ser transmitidos por referência.<br /><br /> Para obter mais informações sobre parâmetros de tipo de valor e referência, consulte [passando argumentos por valor e por referência &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) e [passando parâmetros &#40; C &#35; Guia de programação &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Nenhum trabalho adicional é necessário para passar parâmetros por referência. O compilador do Visual Basic passa automaticamente os parâmetros por referência quando necessário.|Na maioria dos casos, o compilador do Visual c# automaticamente passa os parâmetros por referência quando necessário. Para obter mais informações, consulte [parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md).|  
+|Passando parâmetros por referência|Parâmetros opcionais na maioria dos assemblies de interoperabilidade primários do Microsoft Office podem ser passados por valor. No entanto, em alguns assemblies de interoperabilidade primários, os parâmetros opcionais que aceitam os tipos de referência devem ser transmitidos por referência.<br /><br /> Para obter mais informações sobre parâmetros de tipo de valor e referência, consulte [passando argumentos por valor e por referência &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) e [passando parâmetros &#40;C&#35; Guia de programação&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Nenhum trabalho adicional é necessário para passar parâmetros por referência. O compilador do Visual Basic passa automaticamente os parâmetros por referência quando necessário.|Na maioria dos casos, o compilador do Visual c# automaticamente passa os parâmetros por referência quando necessário. Para obter mais informações, consulte [parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Propriedades com parâmetros|Algumas propriedades aceitam parâmetros e atuam como funções de somente leitura.|Visual Basic oferece suporte às propriedades que aceitam parâmetros.|Visual c# oferece suporte às propriedades que aceitam parâmetros.|  
 |Associação tardia|Associação tardia consiste em determinar as propriedades de objetos em tempo de execução, em vez de variáveis de conversão para o tipo de objeto em tempo de design.|Visual Basic executa a associação tardia quando **Option Strict** está desativado. Quando **Option Strict** está ativada, você deverá converter explicitamente objetos e tipos de uso no <xref:System.Reflection> namespace para acessar membros de associação tardia. Para obter mais informações, consulte [associação tardia em soluções do Office](../vsto/late-binding-in-office-solutions.md).|Visual c# executa a associação tardia em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Para obter mais informações, consulte [associação tardia em soluções do Office](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,7 +116,7 @@ ms.lasthandoff: 01/10/2018
   
 |Recurso|Descrição|Suporte do Visual Basic e Visual c#|  
 |-------------|-----------------|-----------------------------------------|  
-|Índices de matriz|O limite inferior de matriz de coleções de aplicativos do Microsoft Office começa com 1. Visual Basic e Visual c# usam matrizes de base 0. Para obter mais informações, consulte [matrizes &#40; C &#35; Guia de programação &#41; ](/dotnet/csharp/programming-guide/arrays/index) e [matrizes no Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Para acessar o primeiro item de uma coleção no modelo de objeto de um aplicativo do Microsoft Office, use o índice 1, em vez de 0.|  
+|Índices de matriz|O limite inferior de matriz de coleções de aplicativos do Microsoft Office começa com 1. Visual Basic e Visual c# usam matrizes de base 0. Para obter mais informações, consulte [matrizes &#40;C&#35; guia de programação&#41; ](/dotnet/csharp/programming-guide/arrays/index) e [matrizes no Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Para acessar o primeiro item de uma coleção no modelo de objeto de um aplicativo do Microsoft Office, use o índice 1, em vez de 0.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)   

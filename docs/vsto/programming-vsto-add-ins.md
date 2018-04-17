@@ -1,12 +1,10 @@
 ---
 title: Programando suplementos do VSTO | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
 - VST.ProjectItem.AddinProject
@@ -34,13 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 192b366b4d41fed0baf0cca4af8e57fa00dc249a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-vsto-add-ins"></a>Programando suplementos do VSTO
   Quando você estende um aplicativo do Microsoft Office, criando um suplemento do VSTO, você escreve código diretamente em relação a `ThisAddIn` classe em seu projeto. Você pode usar essa classe para executar tarefas como acessar o modelo de objeto do aplicativo host do Microsoft Office, personalizando a interface do usuário (IU) do aplicativo e expor os objetos no seu suplemento do VSTO para outras soluções do Office.  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Alguns aspectos de escrever código em projetos de suplemento do VSTO são diferentes de outros tipos de projetos no Visual Studio. Muitas dessas diferenças são causadas pela maneira como o Office modelos de objeto são expostos para código gerenciado. Para obter mais informações, consulte [escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md).  
   
- Para obter informações gerais sobre suplementos do VSTO e outros tipos de soluções que você pode criar usando as ferramentas de desenvolvimento do Office no Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Para obter informações gerais sobre suplementos do VSTO e outros tipos de soluções que você pode criar usando as ferramentas de desenvolvimento do Office no Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-thisaddin-class"></a>Usando a classe ThisAddIn  
  Você pode começar a escrever seu código de suplemento do VSTO no `ThisAddIn` classe. O Visual Studio gera automaticamente essa classe no ThisAddIn (em [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) ou arquivo de código ThisAddIn.cs (em c#) em seu projeto de suplemento do VSTO. O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automaticamente cria uma instância dessa classe para você quando o aplicativo do Microsoft Office carrega o suplemento do VSTO.  
@@ -108,7 +107,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
   
 -   [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)  
   
-###  <a name="AccessingDocuments"></a>Acessar um documento quando inicia o aplicativo do Office  
+###  <a name="AccessingDocuments"></a> Acessar um documento quando inicia o aplicativo do Office  
  Nem todos os [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplicativos abrem um documento automaticamente quando você inicia e nenhum do [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplicativos abrem um documento, quando você iniciá-los. Portanto, não adicione código de `ThisAdd-In_Startup` manipulador de eventos se o código requer um documento a ser aberto. Em vez disso, adicione esse código para um evento que o aplicativo do Office emite quando um usuário cria ou abre um documento. Dessa forma, você pode garantir que um documento está aberto antes de seu código executa operações nele.  
   
  O exemplo de código a seguir funciona com um documento do Word somente quando o usuário cria um documento ou abre um documento existente.  

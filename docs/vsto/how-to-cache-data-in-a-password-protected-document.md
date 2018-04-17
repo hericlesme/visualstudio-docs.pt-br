@@ -1,12 +1,10 @@
 ---
 title: 'Como: armazenar em Cache dados em um documento protegido por senha | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Como armazenar dados em cache em um documento protegido por senha
   Se você adicionar dados para o cache de dados em um documento ou a pasta de trabalho que esteja protegida com uma senha, as alterações nos dados armazenados em cache não são salvas automaticamente. Você pode salvar as alterações aos dados armazenados em cache, substituindo os dois métodos em seu projeto.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Os dados em cache em uma pasta de trabalho do Excel que é protegido por senha  
   
-1.  No `ThisWorkbook` classe ou uma da `Sheet`  *n*  classes, marcar um campo ou propriedade pública a ser armazenado em cache. Para obter mais informações, consulte [Caching Data](../vsto/caching-data.md).  
+1.  No `ThisWorkbook` classe ou uma da `Sheet` *n* classes, marcar um campo ou propriedade pública a ser armazenado em cache. Para obter mais informações, consulte [Caching Data](../vsto/caching-data.md).  
   
 2.  Substituir o <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> método o `ThisWorkbook` classe e remover a proteção da pasta de trabalho.  
   

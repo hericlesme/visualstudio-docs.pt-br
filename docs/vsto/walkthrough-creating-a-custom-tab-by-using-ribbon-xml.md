@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Criando uma guia usando o XML da faixa de opções | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Criando uma guia usando o XML da faixa de opções | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1b736ace651854b3b6a527685e150f6f1ec7194c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 759aee9692ee905e33ce55ff068b74d4a289c78a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>Instruções passo a passo: criando uma guia usando o XML da faixa de opções
   Este passo a passo demonstra como criar uma guia faixa de opções personalizada usando o **da faixa de opções (XML)** item.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
      Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre o **ThisAddIn.cs** ou **ThisAddIn** arquivo de código e adiciona o **MyRibbonAddIn** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o **ThisAddIn.cs** ou **ThisAddIn** arquivo de código e adiciona o **MyRibbonAddIn** projeto **Gerenciador de soluções**.  
   
 ## <a name="creating-the-vsto-add-ins-tab"></a>Criando a guia de suplementos do VSTO  
  Para criar o **Add-Ins** guia, adicione um **da faixa de opções (XML)** item ao seu projeto. Posteriormente neste passo a passo, você irá adicionar alguns botões para este guia.  
@@ -151,7 +150,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Personalize a faixa de opções de outro aplicativo do Office. Para obter mais informações sobre os aplicativos que oferecem suporte a personalização da faixa de opções, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
   
--   Personalize a faixa de opções de um aplicativo do Office usando o Designer de faixa de opções. Para obter mais informações, consulte [Designer da faixa de opções](../vsto/ribbon-designer.md).  
+-   Personalize a faixa de opções de um aplicativo do Office usando o Designer de faixa de opções. Para obter mais informações, consulte [Fitas](../vsto/ribbon-designer.md).  
   
 -   Crie um painel de ações personalizadas. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).  
   

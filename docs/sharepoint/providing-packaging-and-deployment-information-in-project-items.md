@@ -1,12 +1,10 @@
 ---
-title: "Fornecimento de empacotamento e informações de implantação em itens de projeto | Microsoft Docs"
-ms.custom: 
+title: Fornecimento de empacotamento e informações de implantação em itens de projeto | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SafeControlEntries
 - VS.SharePointTools.Project.ProjectOutputReference
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: adc98932391e726e1704ebe88ec0a9120f7bb678
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 078715380bb5ddc570d745d76fabe4d8a264eef0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Fornecendo informações de pacote e implantação em itens de projeto
   Todos os itens de projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] têm propriedades que você pode usar para fornecer dados adicionais quando o projeto é implantado no SharePoint. Estas são as seguintes propriedades:  

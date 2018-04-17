@@ -1,12 +1,10 @@
 ---
 title: Recursos disponibilizados pelo aplicativo do Office e pelo tipo de projeto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b79c7a913e8ce06b1d833f78aad9e8565d54aff2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff8128f9c142193d9fcde2f139e29a3fb4f3326e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Funcionalidades disponibilizadas pelo aplicativo do Office e pelo tipo de projeto
   O Visual Studio tem vários tipos de modelos de projeto que oferecem suporte a cenários comerciais diferentes para aplicativos do Microsoft Office, incluindo os seguintes tipos:  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Suplementos do VSTO.  
   
- Nem todos os aplicativos podem usar cada tipo de projeto. Por exemplo, os projetos no nível de documento estão disponíveis apenas para o Microsoft Office Word e Microsoft Office Excel. Da mesma forma, alguns recursos estão disponíveis somente para determinados tipos de projetos ou aplicativos. Por exemplo, o painel de ações está disponível apenas no nível de documento e extensões de faixa de opções estão disponíveis apenas para alguns aplicativos. Para obter mais informações sobre os diferentes tipos de projeto, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Nem todos os aplicativos podem usar cada tipo de projeto. Por exemplo, os projetos no nível de documento estão disponíveis apenas para o Microsoft Office Word e Microsoft Office Excel. Da mesma forma, alguns recursos estão disponíveis somente para determinados tipos de projetos ou aplicativos. Por exemplo, o painel de ações está disponível apenas no nível de documento e extensões de faixa de opções estão disponíveis apenas para alguns aplicativos. Para obter mais informações sobre os diferentes tipos de projeto, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Modelos de projeto do Office estão disponíveis apenas em algumas edições do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [Configurando um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -69,8 +68,8 @@ ms.lasthandoff: 01/10/2018
 |Designer visual do documento.|Projetos no nível de documento.|[Projetos do Office no ambiente do Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Consulte também  
- [Guia de Introdução &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Visão geral do painel de ações](../vsto/actions-pane-overview.md)   
  [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
  [Criando regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)   

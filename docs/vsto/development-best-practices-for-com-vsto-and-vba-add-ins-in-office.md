@@ -1,23 +1,24 @@
 ---
-title: "Desenvolvimento melhor práticas para VBA, VSTO e COM suplementos do Office | Microsoft Docs"
-ms.custom: 
+title: Desenvolvimento melhor práticas para VBA, VSTO e COM suplementos do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Práticas recomendadas de desenvolvimento de COM, o VSTO e o VBA suplementos do Office
   Se você estiver desenvolvendo suplementos do VSTO, COM ou do VBA para o Office, siga as práticas recomendadas de desenvolvimento descritas neste artigo.   Isso ajuda a garantir:
@@ -62,7 +63,7 @@ Clientes que solicitam ISVs para fornecer instruções de suporte para o COM, o 
 
 Para fornecer instruções de suporte para aplicativos de cliente do Office (por exemplo, Word ou Excel), verifique primeiro se suplementos executado na versão atual do Office e, em seguida, confirme a fornecer atualizações se seu suplemento quebras em uma versão futura. Não é necessário que testar seus suplementos quando a Microsoft lança uma nova compilação, ou uma atualização do Office. Microsoft raramente altera a plataforma de extensibilidade COM, o VSTO e o VBA no Office, e essas alterações serão bem documentadas.
 
->Importante: A Microsoft mantém uma lista de suplementos com suporte para relatórios de preparação e informações de contato do ISV. Para obter o suplemento listado, consulte [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Importante: A Microsoft mantém uma lista de suplementos com suporte para relatórios de preparação e informações de contato do ISV. Para obter o suplemento listado, consulte [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Use o Monitor de processo para ajudar a depurar instalação ou problemas de carregamento
 Se o suplemento tem problemas de compatibilidade durante a instalação ou carga, eles podem estar relacionados a problemas de acesso de arquivo ou do registro. Use [Process Monitor](/sysinternals/downloads/procmon) ou uma ferramenta semelhante de depuração para registrar e comparar o comportamento em um ambiente de trabalho para ajudar a identificar o problema.

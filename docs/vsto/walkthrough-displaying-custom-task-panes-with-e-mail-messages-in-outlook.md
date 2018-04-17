@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Exibindo painéis tarefa personalizada com mensagens de email no Outlook | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Exibindo painéis tarefa personalizada com mensagens de email no Outlook | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ad77a685f3100533f790ec6ae82cd11201128902
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e1fd5acf3ea2c4c6d12931b04f6360ada697378f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>Instruções passo a passo: exibindo painéis Tarefa Personalizada com mensagens de emails no Outlook
   Este passo a passo demonstra como exibir uma instância exclusiva de um painel tarefa personalizada com cada mensagem de email que é criado ou aberto. Os usuários podem exibir ou ocultar o painel de tarefas usando um botão na faixa de opções de cada mensagem de email.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Criar um **do suplemento do Outlook** projeto com o nome **OutlookMailItemTaskPane**. Use o **do suplemento do Outlook** modelo de projeto. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre o **ThisAddIn.cs** ou **ThisAddIn** arquivo de código e adiciona o **OutlookMailItemTaskPane** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o **ThisAddIn.cs** ou **ThisAddIn** arquivo de código e adiciona o **OutlookMailItemTaskPane** projeto **Gerenciador de soluções**.  
   
 ## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Criando a Interface do usuário do painel de tarefas personalizados  
  Não há nenhum designer visual para painéis de tarefas personalizados, mas você pode criar um controle de usuário com a interface do usuário que você deseja. O painel de tarefas personalizados neste suplemento do VSTO tem uma interface do usuário simple que contém um <xref:System.Windows.Forms.TextBox> controle. Posteriormente neste passo a passo, você irá adicionar o controle de usuário para o painel de tarefas.  

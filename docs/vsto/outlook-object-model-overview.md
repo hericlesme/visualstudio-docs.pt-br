@@ -1,13 +1,10 @@
 ---
-title: "Visão geral de modelo de objeto do Outlook | Microsoft Docs"
-ms.custom: 
+title: Visão geral de modelo de objeto do Outlook | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.OutlookAddin
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 481a18d40f17aa5488afabf1dd04f3cf6ed345b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 9dbf629961a72bc1294da4f3abea563476922716
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="outlook-object-model-overview"></a>Visão geral do modelo de objeto do Outlook
   Para desenvolver suplementos do VSTO para Outlook do Microsoft Office, você pode interagir com os objetos que são fornecidos pelo modelo de objeto do Outlook. O modelo de objeto do Outlook fornece interfaces e classes que representam os itens na interface do usuário. Por exemplo, o <xref:Microsoft.Office.Interop.Outlook.Application> objeto representa o aplicativo inteiro, o <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> objeto representa uma pasta que contém as mensagens de email ou outros itens, e o <xref:Microsoft.Office.Interop.Outlook.MailItem> objeto representa uma mensagem de email.  
@@ -67,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 -   O <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> propriedade, que você pode usar para acessar as janelas que exibem o conteúdo de um único item, como uma solicitação de reunião ou de mensagem de email.  
   
- Para obter uma instância do <xref:Microsoft.Office.Interop.Outlook.Application> de objeto, use o campo de aplicativo do `ThisAddIn` classe em seu projeto. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+ Para obter uma instância do <xref:Microsoft.Office.Interop.Outlook.Application> de objeto, use o campo de aplicativo do `ThisAddIn` classe em seu projeto. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Para evitar avisos de segurança quando você usar propriedades e métodos que estão bloqueados pelo protetor de modelo de objeto do Outlook, obter objetos do Outlook do campo de aplicativo de `ThisAddIn` classe. Para obter mais informações, consulte [considerações de segurança específicas para soluções do Office](../vsto/specific-security-considerations-for-office-solutions.md).  
@@ -104,7 +101,7 @@ ms.lasthandoff: 01/10/2018
  Para obter um exemplo que mostra como acessar um padrão <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> e criar um novo <xref:Microsoft.Office.Interop.Outlook.MAPIFolder>, consulte [como: programaticamente criar pasta itens personalizados](../vsto/how-to-programmatically-create-custom-folder-items.md).  
   
 ### <a name="mailitem-object"></a>Objeto MailItem  
- O <xref:Microsoft.Office.Interop.Outlook.MailItem> objeto representa uma mensagem de email. <xref:Microsoft.Office.Interop.Outlook.MailItem>objetos geralmente estão em pastas, tais como **caixa de entrada**, **itens enviados**, e **caixa de saída**. <xref:Microsoft.Office.Interop.Outlook.MailItem>expõe as propriedades e métodos que podem ser usados para criar e enviar mensagens de email.  
+ O <xref:Microsoft.Office.Interop.Outlook.MailItem> objeto representa uma mensagem de email. <xref:Microsoft.Office.Interop.Outlook.MailItem> objetos geralmente estão em pastas, tais como **caixa de entrada**, **itens enviados**, e **caixa de saída**. <xref:Microsoft.Office.Interop.Outlook.MailItem> expõe as propriedades e métodos que podem ser usados para criar e enviar mensagens de email.  
   
  Para obter um exemplo que mostra como criar uma mensagem de email, consulte [como: criar programaticamente um Item de email](../vsto/how-to-programmatically-create-an-e-mail-item.md).  
   
@@ -114,16 +111,16 @@ ms.lasthandoff: 01/10/2018
  Para obter um exemplo que mostra como criar um compromisso, consulte [como: criar programaticamente uma solicitação de reunião](../vsto/how-to-programmatically-create-a-meeting-request.md).  
   
 ### <a name="taskitem-object"></a>Objeto TaskItem  
- O <xref:Microsoft.Office.Interop.Outlook.TaskItem> objeto representa uma tarefa a ser executada em um intervalo de tempo especificado. <xref:Microsoft.Office.Interop.Outlook.TaskItem>objetos estão localizados no **tarefas** pasta.  
+ O <xref:Microsoft.Office.Interop.Outlook.TaskItem> objeto representa uma tarefa a ser executada em um intervalo de tempo especificado. <xref:Microsoft.Office.Interop.Outlook.TaskItem> objetos estão localizados no **tarefas** pasta.  
   
  Para criar uma tarefa, use o [CreateItem](http://msdn.microsoft.com/en-us/771707fb-5f34-473d-9fdf-09a6a7f55ece) método o <xref:Microsoft.Office.Interop.Outlook.Application> de objeto e passar o valor <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> para o parâmetro.  
   
 ### <a name="contactitem-object"></a>Objeto ContactItem  
- O <xref:Microsoft.Office.Interop.Outlook.ContactItem>objeto representa um contato de **contatos** pasta. <xref:Microsoft.Office.Interop.Outlook.ContactItem>os objetos contêm uma variedade de informações de contato para as pessoas que eles representam, como endereços, endereços de email e números de telefone.  
+ O <xref:Microsoft.Office.Interop.Outlook.ContactItem>objeto representa um contato de **contatos** pasta. <xref:Microsoft.Office.Interop.Outlook.ContactItem> os objetos contêm uma variedade de informações de contato para as pessoas que eles representam, como endereços, endereços de email e números de telefone.  
   
  Para obter um exemplo que mostra como criar um novo contato, consulte [como: adicionar uma entrada a contatos do Outlook programaticamente](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Para obter um exemplo que mostra como pesquisar um contato existente, consulte [como: programaticamente procurar um contato específico](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
   
-##  <a name="refdoc"></a>Usando a documentação de modelo de objeto do Outlook  
+##  <a name="refdoc"></a> Usando a documentação de modelo de objeto do Outlook  
  Para obter informações completas sobre o modelo de objeto do Outlook, você pode consultar para a referência de assembly de interoperabilidade primária (PIA) do Outlook e a referência de modelo de objeto VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Referência de Assembly de interoperabilidade primária  

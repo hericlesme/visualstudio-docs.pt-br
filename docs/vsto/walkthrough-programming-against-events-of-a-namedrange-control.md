@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Programando em eventos de um controle NamedRange | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - worksheets, automating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a06e8aa544cdaff2e75d8af942f8aea68e7bc960
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 623177120d58b7abd29b57d55db22b8490057bab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>Instruções passo a passo: programando em eventos de um controle NamedRange
   Este passo a passo demonstra como adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle a uma planilha do Microsoft Office Excel e o programa em relação a seus eventos usando ferramentas de desenvolvimento do Office no Visual Studio.  

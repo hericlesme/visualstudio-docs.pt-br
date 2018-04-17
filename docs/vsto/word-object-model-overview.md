@@ -1,12 +1,10 @@
 ---
-title: "Visão geral do modelo de objeto do Word | Microsoft Docs"
-ms.custom: 
+title: Visão geral do modelo de objeto do Word | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a6f9163543272d784b0f8347acf275f74023ccf8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: aae1d5648b2db72a4e5ddd6b792f2b3aed846e76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="word-object-model-overview"></a>Visão geral do modelo de objeto do Word
   Ao desenvolver soluções do Word no Visual Studio, você interage com o modelo de objeto do Word. Esse modelo de objeto consiste em classes e interfaces que são fornecidos no assembly de interoperabilidade primário para o Word e são definidos no <xref:Microsoft.Office.Interop.Word> namespace.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Trabalhando com tabelas](../vsto/working-with-tables.md)  
   
-##  <a name="understanding"></a>Noções básicas sobre o modelo de objeto do Word  
+##  <a name="understanding"></a> Noções básicas sobre o modelo de objeto do Word  
  O Word fornece centenas de objetos com o qual você pode interagir. Esses objetos são organizados em uma hierarquia que segue rigorosamente a interface do usuário. Na parte superior da hierarquia é o <xref:Microsoft.Office.Interop.Word.Application> objeto. Esse objeto representa a instância atual do Word. O <xref:Microsoft.Office.Interop.Word.Application> objeto contém o <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, e <xref:Microsoft.Office.Interop.Word.Range> objetos. Cada um desses objetos tem vários métodos e propriedades que você pode acessar para manipular e interagir com o objeto.  
   
  A ilustração a seguir mostra uma exibição desses objetos na hierarquia de modelo de objeto do Word.  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="application-object"></a>Objeto de aplicativo  
  O <xref:Microsoft.Office.Interop.Word.Application> objeto representa o aplicativo Word e é o pai de todos os outros objetos. Seus membros geralmente se aplicam a palavra como um todo. Você pode usar suas propriedades e métodos para controlar o ambiente do Word.  
   
- Em projetos de suplemento do VSTO, você pode acessar o <xref:Microsoft.Office.Interop.Word.Application> objeto usando o `Application` campo o `ThisAddIn` classe. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+ Em projetos de suplemento do VSTO, você pode acessar o <xref:Microsoft.Office.Interop.Word.Application> objeto usando o `Application` campo o `ThisAddIn` classe. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
  Em projetos de nível de documento, você pode acessar o <xref:Microsoft.Office.Interop.Word.Application> objeto usando o <xref:Microsoft.Office.Tools.Word.Document.Application%2A> propriedade o `ThisDocument` classe.  
   
@@ -112,13 +111,13 @@ ms.lasthandoff: 01/10/2018
   
 -   Você pode nomear o indicador em tempo de design.  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark>objetos são salvos com o documento e, portanto, não são excluídos quando o código de execução é interrompida ou o documento é fechado.  
+-   <xref:Microsoft.Office.Interop.Word.Bookmark> objetos são salvos com o documento e, portanto, não são excluídos quando o código de execução é interrompida ou o documento é fechado.  
   
 -   Indicadores podem ser ocultados ou tornar visíveis pela configuração o <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> propriedade o <xref:Microsoft.Office.Interop.Word.View> do objeto para **false** ou **true**.  
   
  O Visual Studio estende o <xref:Microsoft.Office.Interop.Word.Bookmark> objeto fornecendo o <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host se comporta como um nativo <xref:Microsoft.Office.Interop.Word.Bookmark>, mas tem eventos adicionais e recursos de associação de dados. Você pode associar dados a um controle de indicador em um documento da mesma maneira que você associar dados a um controle de caixa de texto em um Windows Form. Para obter mais informações, consulte [indicador controle](../vsto/bookmark-control.md).  
   
-##  <a name="WordOMDocumentation"></a>Usando a documentação de modelo de objeto do Word  
+##  <a name="WordOMDocumentation"></a> Usando a documentação de modelo de objeto do Word  
  Para obter informações completas sobre o modelo de objeto do Word, você pode consultar para a referência de assembly de interoperabilidade primária (PIA) do Word e do Visual Basic para referência de modelo de objeto Applications (VBA).  
   
 ### <a name="primary-interop-assembly-reference"></a>Referência de Assembly de interoperabilidade primária  

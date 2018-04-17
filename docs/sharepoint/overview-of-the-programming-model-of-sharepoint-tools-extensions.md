@@ -1,12 +1,10 @@
 ---
-title: "Extensões de ferramentas de visão geral do modelo de programação do SharePoint | Microsoft Docs"
-ms.custom: 
+title: Extensões de ferramentas de visão geral do modelo de programação do SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8eaa1f5d1cfe8120ec6a01c2fe7f646cf90be44a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a52d05dd22ae88deecc2d79d3ab3de7d3c3b6344
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Visão geral do modelo de programação das extensões de ferramentas do SharePoint
   Quando você cria uma extensão para as ferramentas do SharePoint no Visual Studio, começar com a implementação de uma ou mais interfaces de extensibilidade que são expostas pelas ferramentas do SharePoint. Na maioria dos casos, você também usará outros tipos fornecidos pelas ferramentas do SharePoint para implementar recursos em sua extensão. Em alguns cenários, você também pode usar tipos de outros modelos de objeto fornecidos pelo Visual Studio e do SharePoint. Você deve entender a finalidade de cada um desses modelos de objeto e como usá-los uns com os outros para criar extensões para ferramentas do SharePoint.  
   
 ## <a name="extending-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Estendendo as ferramentas do SharePoint com a implementação de Interfaces de extensibilidade  
- O Visual Studio usa o Managed Extensibility Framework (MEF) no .NET Framework 4 para fornecer o modelo de extensibilidade para as ferramentas do SharePoint. MEF é uma API (implementada no assembly System.ComponentModel.Composition) que permite que os aplicativos para expor pontos de extensibilidade e descobrir e carregar extensões de tempo de execução. Para obter mais informações sobre o MEF, consulte [Managed Extensibility Framework &#40; MEF &#41; ](/dotnet/framework/mef/index).  
+ O Visual Studio usa o Managed Extensibility Framework (MEF) no .NET Framework 4 para fornecer o modelo de extensibilidade para as ferramentas do SharePoint. MEF é uma API (implementada no assembly System.ComponentModel.Composition) que permite que os aplicativos para expor pontos de extensibilidade e descobrir e carregar extensões de tempo de execução. Para obter mais informações sobre o MEF, consulte [Managed Extensibility Framework &#40;MEF&#41;](/dotnet/framework/mef/index).  
   
  Para estender as ferramentas do SharePoint, implemente uma ou mais interfaces de extensibilidade que são expostas pelo Visual Studio. Você também deve aplicar o <xref:System.ComponentModel.Composition.ExportAttribute>, e ferramentas específicas do SharePoint adicional atributos conforme necessário, para sua implementação de interface. A tabela a seguir lista as interfaces que você pode implementar para estender as ferramentas do SharePoint.  
   
@@ -64,12 +63,12 @@ ms.lasthandoff: 01/10/2018
 |--------------|---------------|-----------------|  
 |Microsoft.VisualStudio.SharePoint.dll|<xref:Microsoft.VisualStudio.SharePoint>|Contém tipos que podem ser usados para estender e automatizar o sistema de projeto do SharePoint. Por exemplo, você pode estender os itens de projeto e projetos internos do SharePoint, ou você pode criar seus próprios itens de projeto. Para obter mais informações, consulte [estendendo o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).|  
 ||<xref:Microsoft.VisualStudio.SharePoint.Deployment>|Contém tipos que podem ser usados para estender o processo de implantação para projetos do SharePoint, como criar suas próprias etapas de implantação e configurações de implantação. Para obter mais informações, consulte [estendendo SharePoint empacotamento e implantação](../sharepoint/extending-sharepoint-packaging-and-deployment.md).|  
-||<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Contém tipos que podem ser usados para estender nós sob o **conexões do SharePoint** nó no **Server Explorer** janela, ou para definir novos tipos de nós. Para obter mais informações, consulte [estendendo o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|  
+||<xref:Microsoft.VisualStudio.SharePoint.Explorer>|Contém tipos que podem ser usados para estender nós sob o **conexões do SharePoint** nó no **Server Explorer** janela, ou para definir novos tipos de nós. Para obter mais informações, consulte [Estendendo o Nó de Conexões do SharePoint no Gerenciador de Servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|  
 ||<xref:Microsoft.VisualStudio.SharePoint.Features>|Contém tipos que você usa para acessar as definições de recurso em um projeto do SharePoint.|  
 ||<xref:Microsoft.VisualStudio.SharePoint.Packages>|Contém tipos que você usa para acessar a definição do pacote em uma solução do SharePoint.|  
 ||<xref:Microsoft.VisualStudio.SharePoint.Validation>|Contém tipos que você pode usar para personalizar o comportamento de validação de pacote e de recurso para projetos do SharePoint. Para obter mais informações, consulte [como: Criar recurso de personalizada e regras de validação de pacote para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).|  
 |Microsoft.VisualStudio.SharePoint.Commands.dll|<xref:Microsoft.VisualStudio.SharePoint.Commands>|Contém tipos que você pode usar para criar personalizado *comandos do SharePoint*. Um comando do SharePoint é um método que chama o modelo de objeto de servidor do SharePoint de uma extensão de ferramentas do SharePoint. Para obter mais informações, consulte [chamando os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|  
-|Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Contém tipos que você pode usar para obter informações sobre interno **Server Explorer** nós que representam componentes individuais em um site do SharePoint, como um nó que representa uma lista, um campo ou um tipo de conteúdo. Para obter mais informações, consulte [estendendo o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|  
+|Microsoft.VisualStudio.SharePoint.Explorer.Extensions.dll|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>|Contém tipos que você pode usar para obter informações sobre interno **Server Explorer** nós que representam componentes individuais em um site do SharePoint, como um nó que representa uma lista, um campo ou um tipo de conteúdo. Para obter mais informações, consulte [Estendendo o Nó de Conexões do SharePoint no Gerenciador de Servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).|  
   
 ### <a name="visual-studio-automation-object-model"></a>Modelo de objeto de automação do Visual Studio  
  O modelo de objeto de automação do Visual Studio fornece APIs que você pode usar para automatizar projetos do Visual Studio e o IDE. Use o modelo de objeto do Visual Studio para executar tarefas relacionadas ao projeto que não são específicas para projetos do SharePoint ou executar outras tarefas de automação geral no Visual Studio. Tradicionalmente, esse modelo de objeto é geralmente usado em macros e suplementos do Visual Studio, mas você também pode usá-lo em extensões de ferramentas do SharePoint.  
@@ -88,7 +87,7 @@ ms.lasthandoff: 01/10/2018
  Para obter mais informações sobre o modelo de objeto de integração, consulte [visão geral do modelo de automação](/visualstudio/extensibility/internals/automation-model-overview) e [referência de SDK do Visual Studio](/visualstudio/extensibility/visual-studio-sdk-reference).  
   
 ### <a name="sharepoint-object-models"></a>Modelos de objeto do SharePoint  
- Extensões de ferramentas do SharePoint podem usar APIs do SharePoint para modificar um site do SharePoint ou para recuperar dados de um site do SharePoint. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] fornece dois modelos de objeto diferentes: um modelo de objeto de servidor e um modelo de objeto do cliente.  
+ Extensões de ferramentas do SharePoint podem usar APIs do SharePoint para modificar um site do SharePoint ou para recuperar dados de um site do SharePoint. [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] fornece dois modelos de objeto diferentes: um modelo de objeto de servidor e um modelo de objeto do cliente.  
   
  Você pode usar APIs em qualquer modelo de objeto em uma extensão de ferramentas do SharePoint, mas cada modelo de objeto tem algumas vantagens e desvantagens no contexto de extensões de ferramentas do SharePoint. Para obter mais informações, consulte [chamando os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   

@@ -1,13 +1,10 @@
 ---
-title: "Solucionando problemas de erros em soluções do Office | Microsoft Docs"
-ms.custom: 
+title: Solucionando problemas de erros em soluções do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Solucionando problemas de erros em soluções do Office
   Você pode encontrar problemas ao executar as seguintes tarefas ao desenvolver soluções do Office no Visual Studio:  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Depurando projetos](#debugging)  
   
-##  <a name="creating"></a>Criar, atualizar e abrir projetos  
+##  <a name="creating"></a> Criar, atualizar e abrir projetos  
  Você pode encontrar os seguintes erros ao criar ou abrir projetos do Office.  
   
 ### <a name="the-project-cannot-be-created"></a>Não é possível criar o projeto  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Depois de terminar de atualizar o projeto, você pode desinstalar o Visual Studio 2005 Tools para Office Runtime segundo de edição de computador de desenvolvimento, se ele não está sendo usado por outras soluções do Office.  
   
-##  <a name="designers"></a>Usando os Designers  
+##  <a name="designers"></a> Usando os Designers  
  Você pode encontrar os seguintes erros quando você trabalha com o documento, a pasta de trabalho ou o designer de planilha no nível de documento.  
   
 ### <a name="designer-failed-to-load-correctly"></a>O designer não pôde carregar corretamente  
@@ -128,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações sobre as interfaces de evento em PIAs do Office, consulte [visão geral de Classes e Interfaces de Assemblies de interoperabilidade primários do Office](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
   
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Não é possível referenciar Office PIA Classes nos projetos que visam o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Não é possível referenciar Office PIA Classes nos projetos que visam o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], código que faz referência a uma classe que é definida em um PIA do Office não será compilado por padrão. Classes de PIAs usarem a convenção de nomenclatura *objectname*classe, como <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Por exemplo, o código a seguir de um projeto de suplemento do VSTO Word não será compilado.  
   
 ```vb  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  Mesmo que você importou o namespace do Word ou Excel e tem acesso a todas as classes dentro dele, você deve qualificar totalmente todos os tipos com o Word ou Excel, para remover a ambiguidade de namespace.  
   
-##  <a name="building"></a>Criando projetos  
+##  <a name="building"></a> Criando projetos  
  Você pode encontrar os seguintes erros ao compilar projetos do Office.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Não é possível criar um projeto no nível do documento com base em um documento com permissões restritas  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Erros de compilador ocorrem depois que um controle NamedRange for excluído  
  Se você excluir um <xref:Microsoft.Office.Tools.Excel.NamedRange> não pode ser removido do seu projeto do controle de uma planilha que não seja a planilha ativa no designer, o código gerado automaticamente e podem ocorrer erros de compilador. Para certificar-se de que o código é removido, você sempre deve selecionar a planilha que contém o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle para facilitar a planilha ativa antes de excluir o controle. Se o código gerado automaticamente não será excluído quando você excluir o controle, você pode causar o designer excluir o código de ativação a planilha e fazer uma alteração para que a planilha se torna marcada como modificada. Quando você recriar o projeto, o código é removido.  
   
-##  <a name="debugging"></a>Depurando projetos  
+##  <a name="debugging"></a> Depurando projetos  
  Você pode encontrar os seguintes erros quando você depurar projetos do Office.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Prompt para desinstalar aparece quando você publica e instala uma solução no computador de desenvolvimento  

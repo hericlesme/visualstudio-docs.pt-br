@@ -1,12 +1,10 @@
 ---
-title: "Programando personalizações no nível do documento | Microsoft Docs"
-ms.custom: 
+title: Programando personalizações no nível do documento | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Sheet3
 - thisWorkbook
@@ -29,13 +27,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5f44b7d5a283d6e2946eb26e5036f47b09729de8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-document-level-customizations"></a>Programando personalizações no nível do documento
   Quando você estende o Microsoft Office Word ou o Microsoft Office Excel usando uma personalização no nível do documento, você pode executar as seguintes tarefas:  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
  Alguns aspectos de escrever código em projetos de nível de documento são diferentes de outros tipos de projetos no Visual Studio. Muitas dessas diferenças são causadas pela maneira como o Office modelos de objeto são expostos para código gerenciado. Para obter mais informações, consulte [escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md).  
   
- Para obter informações gerais sobre as personalizações no nível do documento e outros tipos de soluções que você pode criar usando as ferramentas de desenvolvimento do Office no Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Para obter informações gerais sobre as personalizações no nível do documento e outros tipos de soluções que você pode criar usando as ferramentas de desenvolvimento do Office no Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>Usando as Classes geradas em projetos no nível de documento  
  Quando você cria um projeto no nível do documento, o Visual Studio gera automaticamente uma classe no projeto que você pode usar para começar a escrever seu código. Para o Word e Excel, o Visual Studio gera classes diferentes:  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 -   `ThisWorkbook`: deriva de <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.  
   
--   `Sheet` *n* : deriva de <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
+-   `Sheet` *n*: deriva de <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
   
  Essas classes base redirecionam todas as chamadas para seus membros para internas implementações de interfaces de item de host correspondente no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Por exemplo, se você chamar o <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> método do `ThisDocument` classe, o <xref:Microsoft.Office.Tools.Word.DocumentBase> classe redireciona essa chamada para a implementação interna do <xref:Microsoft.Office.Tools.Word.Document> interface no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   

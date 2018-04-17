@@ -1,12 +1,10 @@
 ---
 title: Arquitetura de suplementos do VSTO | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], architecture
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a8abb77978731a9fa5cd43acdcb4928944c605b1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 94c8a9fa83cd4a37918c22ae0e38ab23c3ca94d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Arquitetura de suplementos do VSTO
   Suplementos do VSTO criados usando as ferramentas de desenvolvedor do Office no Visual Studio têm recursos arquitetônicos que enfatizam a estabilidade e segurança e permitem que eles trabalham em conjunto com o Microsoft Office. Este tópico descreve os seguintes aspectos de suplementos do VSTO:  
@@ -37,19 +36,19 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Para obter informações gerais sobre como criar suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) e [Introdução Programando suplementos do VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
+ Para obter informações gerais sobre como criar suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [obtendo iniciado Programando suplementos do VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
   
-##  <a name="UnderstandingAddIns"></a>Noções básicas sobre os suplementos do VSTO  
+##  <a name="UnderstandingAddIns"></a> Noções básicas sobre os suplementos do VSTO  
  Quando você usa as ferramentas de desenvolvedor do Office no Visual Studio para criar um suplemento do VSTO, você pode criar um assembly de código gerenciado que é carregado por um aplicativo do Microsoft Office. Depois que o assembly é carregado, o suplemento do VSTO pode responder a eventos que são gerados no aplicativo (por exemplo, quando um usuário clica em um item de menu). O suplemento do VSTO também pode chamar no modelo de objeto para automatizar e estender o aplicativo e ele pode usar qualquer uma das classes no [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- O assembly se comunica com componentes COM, do aplicativo por meio do assembly de interoperabilidade primária do aplicativo. Para obter mais informações, consulte [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md) e [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ O assembly se comunica com componentes COM, do aplicativo por meio do assembly de interoperabilidade primária do aplicativo. Para obter mais informações, consulte [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md) e [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Se vários suplementos do VSTO estão instalados para um aplicativo, cada suplemento do VSTO é carregado em um domínio de aplicativo diferente. Isso significa que um VSTO suplemento que se comporta incorretamente não pode fazer com que outros suplementos do VSTO falhar. Ele também ajuda a garantir que, quando o aplicativo for fechado, todos os suplemento do VSTO assemblies são descarregados da memória. Para obter mais informações sobre domínios de aplicativo, consulte [domínios de aplicativo](/dotnet/framework/app-domains/application-domains).  
   
 > [!NOTE]  
 >  Suplementos do VSTO que você cria usando as ferramentas de desenvolvedor do Office no Visual Studio são projetados para ser utilizada somente quando o host de aplicativo do Microsoft Office é iniciado por um usuário final. Se o aplicativo for iniciado por meio de programação (por exemplo, usando automação), o suplemento do VSTO pode não funcionar conforme o esperado.  
   
-##  <a name="AddinComponents"></a>Componentes de suplementos do VSTO  
+##  <a name="AddinComponents"></a> Componentes de suplementos do VSTO  
  Embora o assembly do suplemento do VSTO é o principal componente, há vários outros componentes que desempenham um papel importante em como os aplicativos do Microsoft Office descobrirem e carreguem suplementos do VSTO.  
   
 ### <a name="registry-entries"></a>Entradas do registro  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações, consulte [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-##  <a name="HowAddinsWork"></a>Como os suplementos do VSTO trabalhar com aplicativos do Microsoft Office  
+##  <a name="HowAddinsWork"></a> Como os suplementos do VSTO trabalhar com aplicativos do Microsoft Office  
  Quando um usuário inicia um aplicativo do Microsoft Office, o aplicativo usa o manifesto de implantação e o manifesto do aplicativo para localizar e carregar a versão mais atual do assembly do suplemento do VSTO. A ilustração a seguir mostra a arquitetura básica desses suplementos do VSTO.  
   
  ![Arquitetura de suplemento do office de 2007](../vsto/media/office07addin.png "arquitetura de suplemento do Office de 2007")  

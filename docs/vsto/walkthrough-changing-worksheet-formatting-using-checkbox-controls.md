@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Alterando a formatação da planilha usando controles CheckBox | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Alterando a formatação da planilha usando controles CheckBox | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 196fb88af44d12338416bc2f00f5dc955d5046e8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 35394b5f45e3c1e456dfcfae8f4b6db50af12147
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Instruções passo a passo: alterando a formatação da planilha usando controles CheckBox
   Este passo a passo mostra os fundamentos de como usar caixas de seleção em uma planilha do Microsoft Office Excel para alterar a formatação. Você usará ferramentas de desenvolvimento do Office no Visual Studio para criar e adicionar código ao seu projeto. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [amostras de desenvolvimento do Office e explicações passo a passo](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
     |Propriedade|Valor|  
     |--------------|-----------|  
     |**Nome**|**applyUnderlineFont**|  
-    |**Texto**|**Sublinhado**|  
+    |**Texto**|**sublinhado**|  
   
 7.  Selecione todos os controles de caixa de seleção três mantendo a tecla CTRL.  
   

@@ -1,12 +1,10 @@
 ---
 title: 'Como: criar programaticamente novas pastas de trabalho | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - workbooks, creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1a1ed1679b5a50616219ef7f398261c72053c9a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0ba2054258beb762a6b554a49b7a64a77f83dd7a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-create-new-workbooks"></a>Como criar novas pastas de trabalho programaticamente
   Quando você cria uma pasta de trabalho por meio de programação, é um nativo <xref:Microsoft.Office.Interop.Excel.Workbook> do objeto, não um <xref:Microsoft.Office.Tools.Excel.Workbook> item de host.  

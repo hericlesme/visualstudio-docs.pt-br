@@ -1,12 +1,10 @@
 ---
 title: 'Como: adicionar controles NamedRange a planilhas | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ef0ec1846a4ef75200fa6d37f137ca1ab1d70f48
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fff4299b694dacd00d5f32adced3ef5a6a10f1c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Como adicionar controles NamedRange a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a uma planilha do Excel do Microsoft Office em tempo de design e em tempo de execução no nível de documento.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.NamedRange> controles, consulte [controle NamedRange](../vsto/namedrange-control.md).  
   
-##  <a name="designtime"></a>Adicionando controles NamedRange em tempo de Design  
+##  <a name="designtime"></a> Adicionando controles NamedRange em tempo de Design  
  Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles em uma planilha em um projeto no nível do documento em tempo de design: de dentro do Excel do Visual Studio **caixa de ferramentas**e o **fontes de dados** janela.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -76,17 +75,17 @@ ms.lasthandoff: 01/10/2018
   
      Uma associação de dados <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é adicionado à planilha. Para obter mais informações, consulte [Vinculação de dados e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
-##  <a name="runtimedoclevel"></a>Adicionando controles NamedRange em tempo de execução em um projeto no nível do documento  
+##  <a name="runtimedoclevel"></a> Adicionando controles NamedRange em tempo de execução em um projeto no nível do documento  
  Você pode adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle por meio de programação à sua planilha em tempo de execução. Isso permite que você crie os controles de host em resposta a eventos. Criado dinamicamente intervalos nomeados não são mantidos na planilha de forma que os controles de host quando a planilha está fechada. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Para adicionar um controle NamedRange a uma planilha programaticamente  
   
-1.  No <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> manipulador de eventos do `Sheet1`, insira o código a seguir para adicionar o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle a célula **A1** e defina seu <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade`Hello world!`  
+1.  No <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> manipulador de eventos do `Sheet1`, insira o código a seguir para adicionar o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle a célula **A1** e defina seu <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade `Hello world!`  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]  
   
-##  <a name="runtimeaddin"></a>Adicionando controles NamedRange em tempo de execução em um projeto de suplemento do VSTO  
+##  <a name="runtimeaddin"></a> Adicionando controles NamedRange em tempo de execução em um projeto de suplemento do VSTO  
  Você pode adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle programaticamente para qualquer planilha aberta em um projeto de suplemento do VSTO. Criado dinamicamente intervalos nomeados não são mantidos na planilha de forma que os controles de host quando a planilha está fechada. Para obter mais informações, consulte [Estendendo documentos do Word e pastas de trabalho do Excel no suplemento do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Para adicionar um controle NamedRange a uma planilha programaticamente  

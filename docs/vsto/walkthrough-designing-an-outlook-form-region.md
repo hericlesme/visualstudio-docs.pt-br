@@ -1,13 +1,10 @@
 ---
-title: "Passo a passo: Criando uma região de formulário do Outlook | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Criando uma região de formulário do Outlook | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Instruções passo a passo: criando uma região de formulário do Outlook
   Regiões de formulário personalizado estendem formulários do Microsoft Office Outlook padrão ou personalizados. Este passo a passo, você criará uma região de formulário personalizado que aparece como uma nova página na janela do Inspetor de um item de contato. Esta região de formulário exibe um mapa de cada endereço listado para o contato, enviando as informações de endereço para o Windows Live pesquisa site Local. Para obter informações sobre regiões de formulário, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).  
@@ -159,7 +156,7 @@ ms.lasthandoff: 01/10/2018
     |Tipo de endereço|Endereço|  
     |------------------|-------------|  
     |**Business**|**St. para principal 4567 Buffalo, Nova York**|  
-    |**Casa**|**St. para norte 1234 Buffalo, Nova York**|  
+    |**Início**|**St. para norte 1234 Buffalo, Nova York**|  
     |**Outros**|**3456 Main St. Seattle, WA**|  
   
 4.  Salve e feche o item de contato.  

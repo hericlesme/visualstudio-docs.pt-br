@@ -1,13 +1,10 @@
 ---
-title: "Depurando soluções do SharePoint | Microsoft Docs"
-ms.custom: 
+title: Depurando soluções do SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.WebConfigModificationDialog
 - VS.SharePointTools.Project.DebuggingNotEnabled
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85317332cd6b142bb8e0e916e3d7ac80e4aa836c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Depurando soluções do SharePoint
   Você pode depurar soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Quando você iniciar a depuração, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implanta os arquivos de projeto no servidor do SharePoint e, em seguida, abre uma instância do site do SharePoint no navegador da Web. As seções a seguir explicam como depurar aplicativos do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Habilitar informações de depuração aprimoradas](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a>Habilitando a depuração  
+##  <a name="EnableDebug"></a> Habilitando a depuração  
  Quando você depura uma solução do SharePoint no primeiro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], uma caixa de diálogo alerta você que o arquivo Web. config não está configurado para habilitar a depuração. (O arquivo Web. config é criado quando você instala o servidor do SharePoint. Para obter mais informações, consulte [trabalhando com arquivos Web. config](http://go.microsoft.com/fwlink/?LinkID=149266).) A caixa de diálogo oferece a opção de executar o projeto sem depuração ou modificando o arquivo Web. config para habilitar a depuração. Se você escolher a primeira opção, o projeto será executado normalmente. Se você escolher a segunda opção, o arquivo Web. config está configurado para:  
   
 -   Ativar a pilha de chamadas (`CallStack="true"`)  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Desabilitar a depuração de compilação (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a>Processo de implantação e a depuração F5  
+##  <a name="Deployment"></a> Processo de implantação e a depuração F5  
  Quando você executar o projeto do SharePoint no modo de depuração, o processo de implantação do SharePoint executa as seguintes tarefas:  
   
 1.  Executa os comandos de pré-implantação personalizáveis.  
@@ -118,16 +115,16 @@ ms.lasthandoff: 01/10/2018
   
 12. Exibe a página do site, lista ou biblioteca apropriada no navegador da Web.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Exibe uma mensagem de status na janela de saída após a conclusão de cada tarefa. Se uma tarefa não pode ser concluída, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] exibe uma mensagem de erro na janela lista de erros.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Exibe uma mensagem de status na janela de saída após a conclusão de cada tarefa. Se uma tarefa não pode ser concluída, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] exibe uma mensagem de erro na janela lista de erros.  
   
-##  <a name="Features"></a>Recursos de projeto do SharePoint  
+##  <a name="Features"></a> Recursos de projeto do SharePoint  
  Um recurso é uma unidade portátil e modular da funcionalidade que simplifica a modificação de sites usando definições de site. Também é um pacote de [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementos (WSS) que pode ser ativado para um escopo específico e que ajuda os usuários a realizar uma tarefa ou uma meta específica. Modelos são implantados como recursos.  
   
  Quando você executar um projeto no modo de depuração, o processo de implantação cria uma pasta no *recurso* diretório em %COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES. Nomes de recurso tem o formato *nome do projeto*_Feature*x*, como TestProject_Feature1.  
   
  A pasta da solução no diretório do recurso contém um *da definição de recurso* arquivo e um *definição de fluxo de trabalho* arquivo. O arquivo de definição de recurso (Feature) descreve os arquivos processos do projeto o arquivo de definição de projeto (Elements) descreve o modelo de projeto. Elements pode ser encontrado em **Solution Explorer**, mas Feature é gerado quando o pacote de solução é criado. Para obter mais informações sobre esses arquivos, consulte [projeto do SharePoint e modelos de Item de projeto](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-##  <a name="Workflow"></a>Depurando fluxos de trabalho  
+##  <a name="Workflow"></a> Depurando fluxos de trabalho  
  Quando você depurar projetos de fluxo de trabalho, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adiciona o modelo de fluxo de trabalho (dependendo do tipo) para uma biblioteca ou uma lista. Você pode iniciar o modelo de fluxo de trabalho manualmente ou por adicionando ou atualizando um item. Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para depurar o fluxo de trabalho.  
   
 > [!NOTE]  
@@ -137,12 +134,12 @@ ms.lasthandoff: 01/10/2018
   
  Por exemplo, se você especificou que o fluxo de trabalho pode ser iniciado manualmente, inicie o fluxo de trabalho diretamente do item na lista ou biblioteca. Para obter mais informações sobre como iniciar um fluxo de trabalho manualmente, consulte [iniciar manualmente um fluxo de trabalho em um item do documento](http://go.microsoft.com/fwlink/?LinkID=79938).  
   
-##  <a name="FeatureEvents"></a>Receptores de evento do recurso de depuração  
+##  <a name="FeatureEvents"></a> Receptores de evento do recurso de depuração  
  Por padrão, quando você executa um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplicativo do SharePoint, seus recursos serão ativados automaticamente para você no servidor do SharePoint. No entanto, isso causa problemas quando você depura receptores de evento de recurso, como quando um recurso é ativado por [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ele é executado em um processo diferente que o depurador. Isso significa que algumas funcionalidades de depuração, como pontos de interrupção, não funcionarão corretamente.  
   
  Para desabilitar a ativação automática de recurso no SharePoint e permitir a depuração adequada de receptores de evento de recurso, defina o valor do projeto do **configuração de implantação ativa** propriedade **ativação não** antes de depurar. Em seguida, depois de começar a depurar seu aplicativo do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], manualmente ativar o recurso no SharePoint. Para ativar o recurso, abra o **ações do Site** menu no SharePoint, escolha **configurações de Site**, escolha o **gerenciar recursos de Site** link e, em seguida, escolha o **Ativar** botão ao lado do recurso, para continuar a depuração normalmente.  
   
-##  <a name="EnhancedDebug"></a>Habilitar informações de depuração aprimoradas  
+##  <a name="EnhancedDebug"></a> Habilitar informações de depuração aprimoradas  
  Devido a interações complexas, às vezes, entre o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo (devenv.exe), o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (vssphost4.exe) o processo de host do SharePoint, SharePoint e a camada do WCF, diagnosticar erros que ocorrem durante a compilação, implantação e assim por diante pode ser um desafio. Para ajudá-lo a resolver esses erros, você pode habilitar as informações de depuração aprimoradas. Para fazer isso, vá para a seguinte chave do registro no registro do Windows:  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  

@@ -1,12 +1,10 @@
 ---
-title: "Localizando soluções do SharePoint | Microsoft Docs"
-ms.custom: 
+title: Localizando soluções do SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a1ca2b08bda0a3336b573da7df910872e13470b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Localizando soluções do SharePoint
   O processo de preparar seus aplicativos para que eles podem ser usados em todo o mundo é conhecido como localização. Localização está convertendo recursos para uma cultura específica. Para obter mais informações, consulte [Globalizing e Localizando aplicativos](/visualstudio/ide/globalizing-and-localizing-applications). Este tópico fornece uma visão geral de como localizar uma solução do SharePoint.  
@@ -113,7 +112,7 @@ $Resources:String ID
 ### <a name="localizing-code"></a>Localizando o código  
  Além de localização de cadeias de caracteres de recurso e [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] marcação, você também precisa localizar as cadeias de caracteres de mensagem e cadeias de caracteres de erro que aparecem no código de sua solução. Localizados informativas e mensagens de erro estão contidas em assemblies de satélite. Assemblies satélites contêm cadeias de caracteres que são visíveis aos usuários, como [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] exceções, como mensagens de texto e de saída.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]usa o modelo padrão de hub e spoke do .NET Framework. O hub ou o assembly de programa principal contém os recursos de idioma padrão. Raios ou assemblies de satélite, contêm os recursos específicos do idioma. Para obter mais informações, consulte [Empacotamento e implantação de recursos](http://go.microsoft.com/fwlink/?LinkId=179280). Assemblies de satélite são compilados dos arquivos de recursos (. resx). Quando você adicionar arquivos de recursos específicos de idioma para o projeto e o pacote de solução, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compila os arquivos de recurso em assemblies de satélite chamados *nome do projeto*. Resources.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa o modelo padrão de hub e spoke do .NET Framework. O hub ou o assembly de programa principal contém os recursos de idioma padrão. Raios ou assemblies de satélite, contêm os recursos específicos do idioma. Para obter mais informações, consulte [Empacotamento e implantação de recursos](http://go.microsoft.com/fwlink/?LinkId=179280). Assemblies de satélite são compilados dos arquivos de recursos (. resx). Quando você adicionar arquivos de recursos específicos de idioma para o projeto e o pacote de solução, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compila os arquivos de recurso em assemblies de satélite chamados *nome do projeto*. Resources.  
   
  Como com marcação ASPX, localizar o código de aplicativo do SharePoint, adicionando itens de projeto de arquivos de recursos separados para seu projeto. um para o idioma padrão e uma para cada idioma de localizado. No entanto, conforme mencionado anteriormente, se você já tiver arquivos de recursos para localizar marcação ASPX, você pode reutilizá-los para localização de código. Se você precisar criar arquivos de recursos, nomeie o arquivo de recurso de idioma padrão de sua escolha concatenada com uma extensão. resx. Nomeie os arquivos de recurso localizado o mesmo nome anexado com a cultura de idioma específico [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Defina a propriedade de ação de compilação de cada arquivo de recurso para recurso inserido para habilitar a criação de conjuntos de recursos de satélite.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Depurando extensões para ferramentas do SharePoint no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Depurando extensões para ferramentas do SharePoint no Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ead91600a4f62899f2b7182f2d7248afa77651d3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7f976db455fc0cd847c648eb586b95fb81f6d5fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depurando extensões para ferramentas do SharePoint no Visual Studio
   Você pode depurar extensões de ferramentas do SharePoint na instância experimental ou regular do Visual Studio. Se você precisar solucionar problemas de comportamento de uma extensão, você também pode modificar os valores do registro para exibir informações de erro adicionais e para configurar como o Visual Studio executa comandos do SharePoint.  

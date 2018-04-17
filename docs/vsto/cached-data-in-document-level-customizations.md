@@ -1,12 +1,10 @@
 ---
-title: "Dados em personalizações no nível do documento em cache | Microsoft Docs"
-ms.custom: 
+title: Dados em personalizações no nível do documento em cache | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1fe9465c3f238941ace0d5b6fc438c7d5d93ec64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0919e046f9e50578df46853c6db9f60cea2f71e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dados armazenados em cache em personalizações no nível do documento
   É o principal objetivo de personalizações no nível do documento separar dados de exibição em documentos do Office. Dados referem-se às informações armazenadas no documento, incluindo números e texto. Modo de exibição refere-se a interface do usuário e o modelo de objeto do Microsoft Office Word e Microsoft Office Excel.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Para obter mais informações sobre personalizações no nível do documento, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) e [arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md).  
+ Para obter mais informações sobre personalizações no nível do documento, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [arquitetura de personalizações em nível de documento](../vsto/architecture-of-document-level-customizations.md).  
   
 ## <a name="understanding-the-cached-data-programming-model"></a>Compreendendo o modelo de programação de dados armazenados em cache  
  A ilha de dados pode conter qualquer objeto em sua solução que atenda a certos requisitos. Esses objetos incluem <xref:System.Data.DataSet> objetos, <xref:System.Data.DataTable> objetos e qualquer outro objeto que pode ser serializado pela <xref:System.Xml.Serialization.XmlSerializer> classe. Para obter mais informações, consulte consulte [Caching Data](../vsto/caching-data.md).  

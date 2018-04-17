@@ -1,12 +1,10 @@
 ---
-title: "Assemblies de interoperabilidade primários do Office | Microsoft Docs"
-ms.custom: 
+title: Assemblies de interoperabilidade primários do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office primary interop assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2ab565dfbc4fec21c646aa72b54f3694d99e6a1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-primary-interop-assemblies"></a>Assemblies de interoperabilidade primários do Office
   Para usar os recursos de um aplicativo do Microsoft Office a partir de um projeto do Office, você deve usar o PIA (assembly de interoperabilidade primário ) para o aplicativo. O PIA permite que código gerenciado interaja com modelo de objeto baseado em COM de um aplicativo do Microsoft Office.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações sobre assemblies de interoperabilidade primários, consulte [Assemblies de interoperabilidade primários](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
   
-##  <a name="separateassemblies"></a>Separe os Assemblies de interoperabilidade primários para criar e executar projetos  
+##  <a name="separateassemblies"></a> Separe os Assemblies de interoperabilidade primários para criar e executar projetos  
  O Visual Studio usa diferentes conjuntos de PIAs no computador de desenvolvimento. Esses diferentes conjuntos de assemblies estão nos seguintes locais:  
   
 -   Uma pasta no diretório de arquivos de programas.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
  Os PIAs do Office não são necessários em computadores de usuário final para executar soluções do Office. Para obter mais informações, consulte [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md).  
   
-##  <a name="usingfeatures"></a>Usando recursos de vários aplicativos do Microsoft Office em um único projeto  
+##  <a name="usingfeatures"></a> Usando recursos de vários aplicativos do Microsoft Office em um único projeto  
  Cada modelo de projeto do Office em Visual Studio é projetado para funcionar com um único aplicativo do Microsoft Office. Para usar recursos em vários aplicativos do Microsoft Office ou usar recursos em um aplicativo ou componente que não tem projeto no Visual Studio, você deve adicionar uma referência aos PIAs necessários.  
   
  Na maioria dos casos, você deve adicionar referências aos PIAs instalados pelo Visual Studio no diretório %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\. Estas versões dos assemblies aparecem no **Framework** guia do **Manager referência** caixa de diálogo. Para obter mais informações, consulte [como: destino Office aplicativos por meio de Assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Alguns assemblies são adicionados a um projeto automaticamente quando um assembly que lhes faz referência é adicionado. Por exemplo, as referências aos assemblies Office.dll e Microsoft.Vbe.Interop.dll são adicionadas automaticamente quando você adiciona uma referência aos assemblies do Word, Excel, Outlook, Microsoft Forms ou Graph.  
   
-##  <a name="pialist"></a>Assemblies de interoperabilidade primários para aplicativos do Microsoft Office  
+##  <a name="pialist"></a> Assemblies de interoperabilidade primários para aplicativos do Microsoft Office  
  A tabela a seguir lista os assemblies de interoperabilidade primários disponíveis para [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
 |Aplicativo ou componente do Office|Nome do assembly de interoperabilidade primário|  
@@ -118,6 +117,6 @@ ms.lasthandoff: 01/10/2018
  [Soluções de projeto](../vsto/project-solutions.md)   
  [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)   
  [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)   
- [Referência geral &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Referência geral &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
   
   

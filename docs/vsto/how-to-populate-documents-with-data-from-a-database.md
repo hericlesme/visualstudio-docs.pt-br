@@ -1,12 +1,10 @@
 ---
 title: 'Como: preencher documentos com dados de um banco de dados | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - data, adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0a5a88cf34e0710869aaf4ac82d78cb79b37ffde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bfbdb5b71a84ea2f3ab9a86cc2d2df33213e5a98
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Como preencher documentos com dados de um banco de dados
   Você pode acessar dados em nível de documento do Microsoft Office da mesma maneira que você acessar dados em projetos de formulários do Windows. Use as mesmas ferramentas e código para trazer os dados de um banco de dados para sua solução, e você pode usar controles de formulários do Windows para exibir os dados.  

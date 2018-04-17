@@ -1,13 +1,10 @@
 ---
 title: 'Passo a passo: Depurando um aplicativo do SharePoint usando o IntelliTrace | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace
 
@@ -58,7 +55,7 @@ Você precisa dos seguintes componentes para concluir esta instrução passo a p
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Criar um receptor de recursos</a>
+## <a name="BKMK_CreateReceiver"></a> Criar um receptor de recursos
 
 Primeiro, crie um projeto vazio do SharePoint que tem um receptor de recursos.
 
@@ -76,7 +73,7 @@ Primeiro, crie um projeto vazio do SharePoint que tem um receptor de recursos.
 
 4. Abra o menu de atalho para Feature1.feature e, em seguida, escolha **adicionar receptor de evento** para adicionar um módulo de código para o recurso.
 
-## <a name="BKMK_AddCode">Adicione código para o receptor de recursos</a>
+## <a name="BKMK_AddCode"></a> Adicione código para o receptor de recursos
 
 Em seguida, adicione código para dois métodos no receptor de recursos: `FeatureActivated` e `FeatureDeactivating`. Esses métodos disparam sempre que um recurso é ativado ou desativado no SharePoint, respectivamente.
 
@@ -250,7 +247,7 @@ Em seguida, adicione código para dois métodos no receptor de recursos: `Featur
     }
     ```
 
-## <a name="BKMK_Test1">O projeto de teste</a>
+## <a name="BKMK_Test1"></a> O projeto de teste
 
 Agora que o código é adicionado para o receptor e o coletor de dados está em execução, implantar e executar a solução do SharePoint para testar se ele funciona corretamente.
 
@@ -277,7 +274,7 @@ Agora que o código é adicionado para o receptor e o coletor de dados está em 
 
      O manipulador de eventos FeatureDeactivating() gera um erro.
 
-## <a name="BKMK_CollectDiagnosticData">Coletar dados do IntelliTrace usando o Microsoft Monitoring Agent</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Coletar dados do IntelliTrace usando o Microsoft Monitoring Agent
 
 Se você instalar o agente de monitoramento da Microsoft no sistema que está executando o SharePoint, você pode depurar soluções do SharePoint usando dados que são mais específicos que as informações genéricas IntelliTrace retorna. O agente funciona fora do Visual Studio usando cmdlets do PowerShell para capturar informações de depuração durante a execução de solução do SharePoint.
 
@@ -302,7 +299,7 @@ Se você instalar o agente de monitoramento da Microsoft no sistema que está ex
 
      **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
 
-## <a name="BKMK_DebugSolution">Depurar e corrigir a solução do SharePoint</a>
+## <a name="BKMK_DebugSolution"></a> Depurar e corrigir a solução do SharePoint
 
 Agora você pode exibir o arquivo de log do IntelliTrace no Visual Studio para localizar e corrigir o erro na solução do SharePoint.
 
