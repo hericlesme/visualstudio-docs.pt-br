@@ -1,25 +1,28 @@
 ---
 title: Editar assinaturas no Portal do administrador | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Saiba como os administradores podem editar atribuições de assinatura.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Editando atribuições de assinatura do Visual Studio
 
+Como administrador de assinaturas, você tem a capacidade de fazer alterações nas assinaturas atribuídas às pessoas na organização.  Este artigo descreve os tipos de alterações que você pode fazer e fornece as etapas necessárias. 
+
 ## <a name="making-changes-to-subscriber-information"></a>Fazendo alterações nas informações do assinante
 Você pode editar as informações do assinante para corrigir erros ou para atualizar as informações. 
-**Observe que a edição do endereço de email do assinante fará com que os benefícios existentes sejam redefinidos.**
+> [!NOTE]
+> Editar o endereço de email de um assinante fará com que todos os benefícios existentes sejam redefinidos.
 
 Para editar um assinante, selecione as reticências (...) que aparecem ao lado do endereço de email do assinante ao passar o mouse sobre ele. Será exibida uma lista suspensa.  Selecione **Editar** para modificar os detalhes do assinante. Também é possível clicar duas vezes na linha do assinante na grade para abrir a janela de edição.
 
@@ -53,7 +56,7 @@ Você pode editar vários assinantes de uma vez usando o processo de edição em
 
     ![Editando uma licença – upload do arquivo de edições em massa](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  Depois de carregar o arquivo, será exibida uma notificação informando que o upload foi bem-sucedido. 
+5.  Depois de carregar o arquivo, será exibida uma notificação informando que o upload foi bem-sucedido. Neste ponto, suas edições serão refletidas nas informações do assinante. 
 
     ![Editando uma licença – conclusão do upload das edições em massa](_img\edit-license\edit-license-bulk-upload-complete.png)
 

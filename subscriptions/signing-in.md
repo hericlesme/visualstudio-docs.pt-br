@@ -1,21 +1,21 @@
 ---
 title: Entrar em assinaturas do Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: Como entrar em sua assinatura do Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-your-visual-studio-subscription"></a>Entrar na assinatura do Visual Studio
+# <a name="signing-in-to-your-visual-studio-subscription"></a>Entrando em sua assinatura do Visual Studio
 
 As etapas para entrar na assinatura do Visual Studio dependem do tipo de conta que você está usando.  Por exemplo, você pode estar usando uma MSA (conta da Microsoft) ou um endereço de email fornecido pela empresa ou escola.  
 
@@ -25,7 +25,7 @@ Três métodos diferentes de entrada são abordados neste artigo:
 3. [Usar uma Conta da Microsoft para entrar em uma conta corporativa ou de estudante](#using-your-microsoft-account-to-sign-in-to-a-work-or-school-account)
 
 ## <a name="signing-in-with-your-microsoft-account-msa"></a>Entrar com sua MSA (Conta da Microsoft)
-1. Acesse [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Visite [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Insira o endereço de email fornecido quando você configurou ou adquiriu a assinatura do Visual Studio.
     
    > [!NOTE] 
@@ -39,7 +39,7 @@ Três métodos diferentes de entrada são abordados neste artigo:
 Ao acessar a assinatura do Visual Studio Dev Essentials pela primeira vez, você verá uma caixa de diálogo de boas-vindas.  Clique em **Confirmar** para aceitar os termos e as condições do programa.
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>Entrar com sua conta corporativa ou de estudante 
-1. Acesse [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Visite [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída.
     
    > [!NOTE]

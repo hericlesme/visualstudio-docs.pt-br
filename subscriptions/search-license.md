@@ -1,28 +1,28 @@
 ---
 title: Pesquisa e filtragem | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can locate individual subscribers or groups in the Administrator Portal.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fddd8f950969d77ac879d8570bba21468f657123
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Saiba como os administradores podem localizar assinantes individuais ou grupos no portal do administrador.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 45786b846cb62f5c02d6cc1e0e1c9fcb7dbb1993
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Pesquisando e filtrando assinantes nas assinaturas do Visual Studio
+# <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Pesquisando e filtrando assinantes em assinaturas do Visual Studio
 O Portal de Administração de Assinaturas do Visual Studio permite encontrar um subconjunto específico de assinantes com base em vários critérios. Você pode filtrar a lista de assinantes por nome, endereço de email, nível de assinatura e várias outras informações. 
 
 1.  Para pesquisar um grupo específico de assinantes, na parte superior da tabela, clique em **Filtrar**.
 
     ![Filtrar assinantes](_img\edit-license\filter-list.png)
 
-2.  Serão exibidos vários campos que podem ser usados para filtrar. Selecione os critérios que deseja usar como a base da pesquisa e, em seguida, clique em **Filtrar**. Em seguida, será exibida uma lista de assinantes que correspondem aos critérios escolhidos.
+2.  Serão exibidos vários campos que podem ser usados como critério de pesquisa. Selecione os critérios que você deseja usar como base da pesquisa e, em seguida, clique em **Filtrar**. Em seguida, será exibida uma lista de assinantes que correspondem aos critérios escolhidos.
 
     ![Localizar assinantes](_img\search-filter\search-filter-find.png)
 

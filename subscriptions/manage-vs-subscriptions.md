@@ -1,25 +1,30 @@
 ---
 title: Gerenciar assinaturas do Visual Studio
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to get the most out of your Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
+
+O [Portal do Assinante](https://my.visualstudio.com) do Visual Studio oferece a capacidade de gerenciar todas as suas assinaturas e associações a programas em um único local.  Você pode fazer alterações no seu perfil, usar todos os benefícios incluídos nas assinaturas e mudar de assinatura com rapidez e facilidade.  
+
 ## <a name="signing-in-to-the-portal"></a>Entrando no portal
 Bem-vindo à sua assinatura do Visual Studio!  Sua assinatura fornece todos os softwares e benefícios que você precisa para ficar por dentro de tudo sobre código, incluindo software, créditos mensais do Azure, ferramentas de colaboração, privilégios de treinamento, suporte e muito mais. Tudo o que há de mais recente e de melhor na Microsoft.  Para usar o portal, você precisará entrar.
+
 ### <a name="first-time-access"></a>Primeiro acesso
 As etapas para usar sua assinatura pela primeira vez dependem de como você a adquiriu.  
+
 #### <a name="microsoft-store"></a>Microsoft Store
 Se você tiver comprado uma assinatura do Visual Studio na Microsoft Store, as etapas de ativação poderão ser iniciadas na **Página de confirmação** ou no **Email de confirmação** do pagamento.  
 1.  Na "Página de confirmação" ou no "Email de confirmação", clique em **Clique aqui para entrar**.  Você será redirecionado para https://my.visualstudio.com/subscriptions/activate.
@@ -48,46 +53,48 @@ Se sua organização tiver um Azure Active Directory, mas você não tiver uma c
 5.  Insira sua senha
 6.  Clique em **Entrar** 
 
-### <a name="managing-multiple-subscriptions"></a>Gerenciando várias assinaturas
+## <a name="managing-multiple-subscriptions"></a>Gerenciando várias assinaturas
 O portal de assinaturas do Visual Studio reúne todas as suas assinaturas e programas do Visual Studio em uma única experiência de portal aprimorada.  Por exemplo, você pode ter uma assinatura padrão, como o Visual Studio Enterprise, para usar no trabalho e uma assinatura mensal do Visual Studio Professional ou uma associação ao Visual Studio Dev Essentials para usar em casa. 
-#### <a name="which-subscription-am-i-using"></a>Qual assinatura estou usando?
+
+### <a name="which-subscription-am-i-using"></a>Qual assinatura estou usando?
 Na página Benefícios, a assinatura em uso será exibida na faixa azul em destaque.  Ela também será exibida no canto superior direito da página.
 
-![A assinatura ativa](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+   ![A assinatura ativa](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
-#### <a name="to-switch-between-subscriptions-you-can"></a>Para alternar entre as assinaturas, você pode:
+### <a name="to-switch-between-subscriptions-you-can"></a>Para alternar entre as assinaturas, você pode:
 - Clicar na lista suspensa no canto superior direito e escolher a assinatura na lista
 - Clicar na guia Assinaturas e, em seguida, clicar na assinatura desejada
 
-![Mudando de assinatura](_img\manage-vs-subscriptions\change-subscription-resized.png)
+   ![Mudando de assinatura](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
-#### <a name="if-your-subscription-is-not-visible"></a>Se sua assinatura não estiver visível...
+### <a name="if-your-subscription-is-not-visible"></a>Se sua assinatura não estiver visível...
 - Ela pode ter expirado.  Somente as assinaturas ativas são exibidas no Portal do Assinante.
 - Ela pode estar associada um endereço de email diferente. Por exemplo, se você entrar em uma assinatura do Visual Studio Professional com seu email corporativo ou de estudante e tiver uma associação ao Visual Studio Dev Essentials associada à sua Conta da Microsoft, somente será exibida a assinatura correspondente ao endereço de email usado para entrar no Portal do Assinante.  Para ver a outra assinatura, você precisará sair e, em seguida, entrar com o outro endereço de email.
 - Se a sua empresa compra assinaturas por meio de uma Licença de Volume, é possível que o administrador não tenha atribuído uma assinatura a você ou reatribuído a sua assinatura a outro usuário.  
 
-### <a name="renewing-my-subscriptions"></a>Renovando minhas assinaturas
+## <a name="renewing-my-subscriptions"></a>Renovando minhas assinaturas
 **Assinaturas padrão**
 - Microsoft Store: se você tiver comprado sua assinatura na [Microsoft Store](http://www.microsoft.com/store), você também poderá renová-la na Microsoft Store. 
 - Licença de volume: se a sua empresa compra assinaturas por meio de uma Licença de Volume, o administrador deverá contatar um revendedor para renovar suas assinaturas.
 
-**Assinaturas de nuvem –** as assinaturas de nuvem não precisam ser renovadas.  Enquanto a sua assinatura estiver sendo paga, ela permanecerá ativa. 
+**Assinaturas de nuvem:** as assinaturas de nuvem não precisam ser renovadas.  Enquanto a sua assinatura estiver sendo paga, ela permanecerá ativa. 
 
-**Assinaturas adquiridas por meio de programas –** se você receber a sua assinatura por meio de um programa, ela estará vinculada à sua participação no programa.  Fale com os seus contatos do programa para obter informações adicionais. 
+**Assinaturas adquiridas por meio de programas:** se você receber sua assinatura por meio de um programa, ela estará vinculada à sua participação no programa.  Fale com os seus contatos do programa para obter informações adicionais. 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials –** o Dev Essentials é um programa gratuito e as associações não expiram.  
+**Visual Studio Dev Essentials:** o Dev Essentials é um programa gratuito e as associações não expiram.  
 
-### <a name="transferring-subscriptions"></a>Transferindo assinaturas
+## <a name="transferring-subscriptions"></a>Transferindo assinaturas
 Se a sua assinatura tiver sido comprada por meio do Microsoft Volume Licensing e você precisar reatribuí-la para outra pessoa da organização, o administrador deverá fazer isso. É possível transferir assinaturas de varejo para outro usuário contatando o Atendimento ao Cliente.  Assinaturas gratuitas ou “Proibida a revenda” não podem ser transferidas. 
 
 
-### <a name="managing-my-profile"></a>Gerenciando meu perfil
+## <a name="managing-my-profile"></a>Gerenciando meu perfil
+O portal de assinaturas permite criar e gerenciar um perfil para facilitar o gerenciamento de suas assinaturas.  Você pode fazer alterações em suas informações de identidade e associar outras identidades de entrada de contas existentes do Azure e do VSTS às suas assinaturas usando identidades alternativas. 
 
-#### <a name="changing-profile-information"></a>Alterando informações de perfil
+### <a name="changing-profile-information"></a>Alterando informações de perfil
 Você pode alterar facilmente as informações de contato e as preferências em seu perfil.  
 1.  Clique em seu nome no canto superior direito do Portal do Assinante.
 2.  Clique no botão **Editar perfil**.
@@ -97,7 +104,7 @@ Você pode alterar facilmente as informações de contato e as preferências em 
 
 ![Editar informações de perfil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-#### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Vinculando minha assinatura a assinaturas existentes do VSTS ou do Azure
+### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Vinculando minha assinatura a assinaturas existentes do VSTS ou do Azure
 Se você entrar em sua assinatura usando uma MSA (conta da Microsoft) pessoal e tiver uma assinatura que inclua o Visual Studio Team Services ou o Microsoft Azure usando uma conta corporativa ou de estudante gerenciada pelo Azure, será possível vincular as duas assinaturas. Isso é chamado de "conta alternativa" e permite usar sua MSA para entrar na assinatura e continuar tendo acesso aos recursos existentes do Azure, do VSTS ou do IDE associados à sua conta corporativa ou de estudante. 
 
 Mesmo que ambas as contas usem o mesmo endereço de email, você precisará adicionar sua conta corporativa ou de estudante como uma alternativa para usar os benefícios nas duas contas. 

@@ -10,15 +10,15 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>Gerenciamento de Direitos de Administrador no Portal do Administrador de Assinaturas do Visual Studio
 
 ## <a name="overview"></a>Visão geral 
-No Portal do Administrador de Assinaturas do Visual Studio (https://manage.visualstudio.com), há duas funções de gerenciamento:
+No portal do administrador de assinaturas do Visual Studio (https://manage.visualstudio.com), existem duas funções de gerenciamento:
 
 **Superadministradores:** ao configurar uma organização pela primeira vez, o Contato Principal ou para Notificações torna-se um superadministrador por padrão. O contato principal ou para notificações pode optar por atribuir superadministradores ou administradores adicionais. Além de gerenciar assinaturas para assinantes individuais, os superadministradores podem adicionar e remover outros administradores e superadministradores. Se houver mais de dois superadministradores no sistema, um superadministrador poderá excluir todos, exceto os dois últimos por segurança. 
 

@@ -1,19 +1,19 @@
 ---
-title: "Benefício Microsoft Azure | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to activate the Azure benefit included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: a0587e063aa73666a0e97460b8d92f4614b3b116
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Benefício Microsoft Azure | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/3/2017
+ms.topic: Get-Started-Article
+description: Saiba como ativar o benefício Azure incluído em sua assinatura do Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: c6cf951186072d973867df5f5c346062eee62938
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Usando o Microsoft Azure nas assinaturas do Visual Studio
 
@@ -44,23 +44,23 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 | Visual Studio Enterprise – Desenvolvedor de Software e Serviços de MCT | Crédito mensal de US$150         |   Sim                                                        |
 *Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)  
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
 
 ## <a name="activation-steps"></a>Etapas de Ativação
 
-1.  Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Localize o bloco Azure na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.   
 
-![Bloco do Azure](_img\vs-azure\vs-azure-tile.png)
+    ![Bloco do Azure](_img\vs-azure\vs-azure-tile.png)
 
 3.  Preencha as informações necessárias para criar sua assinatura do Azure, clique na caixa de seleção para aceitar os termos e condições e, em seguida, clique em **Inscrever-se**: 
 
-![Inscrição do Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    ![Inscrição do Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Quando sua conta estiver pronta, você terá a opção de escolher um plano de suporte do Azure (vendido separadamente) ou de começar a usar sua assinatura do Azure.  
 
-![Preparação do Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    ![Preparação do Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
     
 5.  O Painel do Azure será carregado e, na primeira utilização, haverá a opção de fazer um tour.  O tour consiste em uma série de dicas de tela que indicarão como você pode realizar uma variedade de tarefas e localizar informações relevantes.  Ao concluir ou fechar o tour, o Painel do Azure será exibido. 
 
@@ -75,9 +75,36 @@ R: O envio de um incidente de suporte do Portal do Azure é um processo de três
 3. Envie um incidente de suporte.
 Visite a documentação do [Suporte Técnico](/visualstudio/subscriptions/vs-tech-support) para encontrar os detalhes completos. 
 
+### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: Recebi uma mensagem informando que meu acesso ao Azure vai expirar em breve.  O que posso fazer para continuar usando o Azure?
+
+R: Você está recebendo este email porque usa o benefício do Azure associado à sua assinatura do Visual Studio, e essa assinatura expirou ou foi removida.  Para continuar a usar o Azure, você tem várias opções:
+
+**Ação recomendada:**
+
+Para continuar a usar seu crédito e seus descontos do Azure para o Visual Studio, execute uma das seguintes etapas: 
+
+Se alguém da sua equipe ou da organização compra as assinaturas em seu nome, contate o administrador do Visual Studio da organização e solicite uma assinatura do Visual Studio que o autorize à quantidade de crédito mensal do Azure de que você precisa.   Solicite que o administrador atribua a nova assinatura à mesma ID de usuário à qual sua assinatura anterior era atribuída, para que você não precise se preocupar em transferir sua assinatura do Azure.
+
+
+Se você puder comprar uma assinatura diretamente, siga um destes procedimentos: 
+1.  Compre uma assinatura de nuvem anual [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) ou [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) do Visual Studio por meio do Visual Studio Marketplace. 
+2.  Usufrua de um desconto de 50% ou maior ao renovar sua assinatura atual por meio da [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
+
+Compare todas as [assinaturas e seus benefícios](https://www.visualstudio.com/vs/pricing/).
+
+Se você tiver outra assinatura ativa do Visual Studio no **mesmo** nível de assinatura em uma conta da Microsoft, você poderá vinculá-la a este benefício do Azure adicionando uma [alternativa conta](/manage-vs-subscriptions#linking-my-subscription-to-existing-vsts-or-azure-subscriptions/) no portal de assinaturas do Visual Studio. Se isso não funcionar, você também poderá tentar [transferir o benefício do Azure](/azure/billing/billing-subscription-transfer/) para a assinatura ativa do Visual Studio.
+
+Se você tiver outra assinatura ativa do Visual Studio em um nível de assinatura **diferente** e em uma conta da Microsoft, contate o [suporte do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) para obter assistência.
+
+Se sua assinatura tiver um limite de gastos e você não executar nenhuma ação antes que ela expire, sua assinatura do Azure será desabilitada. Para convertê-la em uma oferta paga conforme o uso e continuar a usá-la, adicione um meio de pagamento e [remova seu limite de gastos](/azure/billing/billing-spending-limit/).
+
+Se você preferir não continuar com esta assinatura do Azure do Visual Studio, você poderá transferir seus recursos, como máquinas virtuais e bancos de dados, para outra assinatura do Azure e [cancelar](http://azure.microsoft.com/support/cancel-account/) esta assinatura a qualquer momento. 
+
+Se você acha que recebeu este email por engano, contate o [atendimento ao cliente do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). 
+
 ## <a name="support-resources"></a>Recursos de suporte
 -  Precisa de Ajuda com o Azure?  Confira estes recursos:
     - Suporte técnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-    - [Documentação do Azure](/visualstudio/azure/)
+    - [Documentação do Azure](/azure/)
 -  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
 -  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 

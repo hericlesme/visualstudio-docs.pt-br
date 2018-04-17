@@ -1,10 +1,10 @@
 ---
-title: "Saiba mais sobre desenvolvimento móvel com o Xamarin | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+title: Saiba mais sobre desenvolvimento móvel com o Xamarin | Microsoft Docs
+ms.custom: ''
+ms.date: 03/30/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 ms.technology: vs-ide-mobile
@@ -13,18 +13,18 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - xamarin
-ms.openlocfilehash: 6dcfd6be29d8ba978605301412f7ee918deda8f2
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 30d2bf7dbcacec6490bf36584b62c200bfab0da8
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Saiba mais sobre desenvolvimento móvel com o Xamarin
 
-Este tópico direciona você a materiais de visão geral que ajudam a entender o desenvolvimento de aplicativos móveis de plataforma cruzada com o Xamarin. Se você não ainda tiver instalado o Visual Studio e o Xamarin, inicie primeiro o processo de [Instalação](../cross-platform/setup-and-install.md), depois volte aqui para trabalhar com esses recursos enquanto os instaladores estão em execução.  
+Este artigo lista várias visões gerais que podem ajudá-lo a entender o desenvolvimento de aplicativos móveis multiplataforma com o Xamarin. Se você não ainda tiver instalado o Visual Studio e o Xamarin, inicie primeiro o processo de [Instalação](../cross-platform/setup-and-install.md), depois volte aqui para trabalhar com esses recursos enquanto os instaladores estão em execução.  
   
 > [!NOTE]
-> Salvo indicação em contrário, sugerimos inicialmente ler somente as páginas vinculadas diretamente aqui, e não páginas subsidiárias. Se o processo de instalação ainda estiver em execução após você concluir esta lista, fique à vontade para voltar e explorar tópicos adicionais.  
+> Salvo indicação contrária, inicialmente é possível ler somente as páginas vinculadas diretamente daqui e não páginas secundárias. Se o processo de instalação ainda estiver em execução após você concluir esta lista, fique à vontade para voltar e explorar tópicos adicionais.  
 >   
 > Também fique à vontade para examinar os tópicos marcados como "Fundamentos" e para voltar aos tópicos de "Aprofundamento" mais tarde.  
   
@@ -32,7 +32,7 @@ Este tópico direciona você a materiais de visão geral que ajudam a entender o
 
 *10 a 20 minutos*  
   
-1.  [Aplicativos móveis no Visual Studio com Xamarin](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) fornece um breve resumo das principais características do Xamarin.  
+1.  [Aplicativos móveis no Visual Studio com Xamarin](https://www.visualstudio.com/xamarin/) (visualstudio.com) fornece um rápido resumo das principais características do Xamarin.  
   
 2.  [Building Cross-Platform Mobile Apps using C# and Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Criando aplicativos móveis de plataforma cruzada usando C# e Visual Studio) (Channel9, 15m16s) com o grande especialista em Xamarin, James Montemagno. Os primeiros três minutos são uma visão geral do Xamarin, seguida de demonstrações de código.  
   
@@ -40,72 +40,83 @@ Este tópico direciona você a materiais de visão geral que ajudam a entender o
 
 *5 a 15 minutos*  
   
--   O computador Windows com Visual Studio e Xamarin é onde você fará a maior parte de seu trabalho. Nesse computador, você compila diretamente aplicativos Android e Windows e os executa e depura em um dispositivo ou emulador. Além disso, remotamente, você compila, executa e depura aplicativos iOS por meio do Mac. O Visual Studio no computador Windows também pode se conectar ao designer de storyboard iOS e ao simulador de iOS.  
+-   Você fará a maior parte do trabalho no computador Windows com o Visual Studio e o Xamarin instalados. Nesse computador, você cria aplicativos Android e Windows, executa e depura esses aplicativos na área de trabalho, em dispositivos ou em emuladores diretamente. Também é possível criar, executar e depurar aplicativos iOS remotamente usando o Mac. O Visual Studio no computador Windows também pode se conectar ao designer de storyboard iOS e ao simulador de iOS.  
   
--   O Mac com Xcode e Xamarin serve como o host de build/assinatura e o ambiente de tempo de execução para aplicativos iOS. Compilações para iOS do Visual Studio no computador Windows são delegadas a esse Mac. Ao depurar um aplicativo iOS do Visual Studio, ele é executado no simulador de iOS no Mac ou diretamente em um dispositivo vinculado conectado ao Mac. Nesse caso, você interagirá com o aplicativo no Mac ou quase nele e terá sua experiência de depuração no Visual Studio.  
+-   O Mac com o Xcode e o Visual Studio para Mac instalados funciona como o host de build, o host de assinatura e o ambiente de tempo de execução para aplicativos iOS. O computador Windows delega os builds do iOS a esse Mac. O aplicativo é executado em um simulador do iOS no Mac, ou diretamente em um dispositivo vinculado conectado ao Mac. Você pode interagir com o aplicativo no Mac, mas realizar a experiência de depuração no Visual Studio.
   
-Esses relacionamentos são ilustradas abaixo, e você pode ler mais sobre como trabalhar com aplicativos iOS em [Introdução ao Xamarin.IOS para Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
+Essas relações são ilustradas abaixo.  
   
 ![O relacionamento entre computadores de desenvolvimento Windows e Mac em um ambiente de Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Saiba 1")  
+
+> [!NOTE]
+> O Windows Phone é mostrado neste diagrama para fins de integridade. Ao usar a plataforma Xamarin, a opção de compartilhamento de código recomendada é uma biblioteca .NET Standard 2.0, que é incompatível com dispositivos Windows Phone ou Windows 10 Mobile. 
+
+Leia mais sobre como trabalhar com aplicativos iOS em [Introdução ao Xamarin.iOS para Visual Studio](/xamarin/ios/get-started/installation/windows/introduction-to-xamarin-ios-for-visual-studio/).
   
 ## <a name="essentials-how-projects-are-structured"></a>Fundamentos: Como projetos são estruturados  
 
 *10 a 30 minutos*  
   
-1.  [Opções de compartilhamento de código](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Recomendamos usar a opção de bibliotecas de classes portáteis, pois ela dá melhor suporte ao uso apenas das APIs do .NET que têm suporte em todas as plataformas de destino. A maior parte do código de lógica de negócios residirá na PCL, incluindo o acesso a bancos de dados, chamadas para APIs REST e chamadas para componentes de Xamarin portáteis (consulte [Aprofundamento: Componentes do Xamarin](#components) no final deste tópico). Código de interface do usuário comum gravado com Xamarin.Forms também pode residir em uma PCL.  
+1.  [Opções de compartilhamento de código](/xamarin/cross-platform/app-fundamentals/code-sharing/). Para novos aplicativos, você deve usar uma biblioteca do .NET Standard para compartilhar o código. A maior parte do código da lógica de negócios reside na biblioteca do .NET Standard, incluindo o acesso a bancos de dados, chamadas a APIs REST e chamadas a componentes portáteis do Xamarin. (Confira [Aprofundamento: componentes do Xamarin](#components) no final deste artigo). O código da interface do usuário comum escrito com o Xamarin.Forms também reside em uma biblioteca do .NET Standard.  
   
-2.  (Opcional) [Estudo de caso: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com), descreve algumas das melhores práticas de design e estrutura de um aplicativo completo, como estruturar o projeto com uma PCL para o código compartilhado que separa os dados, acesso a dados e camadas de negócios.  
+2.  (Opcional) O [Estudo de caso: Tasky](/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky/) descreve algumas práticas recomendadas para o design e a estrutura de um aplicativo completo, incluindo a estruturação do projeto com um código compartilhado que separa os dados, acesso a dados e camadas de negócios.  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Fundamentos: camadas de interface do usuário nativas e do Xamarin.Forms  
 
 *10 a 40 minutos*  
   
-O Xamarin fornece duas maneiras de compilar ótimos aplicativos nativos: Xamarin nativo e Xamarin.Forms.  
+O Xamarin oferece duas maneiras de criar excelentes aplicativos: Xamarin nativo e Xamarin.Forms.  
   
-Com o Xamarin nativo, você escrever código de interface do usuário separado para cada plataforma de destino: iOS, Android e Windows.  Com essa abordagem, você tem acesso direto a APIs específicas da plataforma, o que permite uma experiência de interface do usuário personalizada por plataforma.  Você também tem acesso completo aos controles e ao designer nativo para cada plataforma para ajudar na compilação da interface do usuário respectiva.  
+Com o Xamarin nativo, você escreve um código de interface do usuário separado para cada plataforma de destino: iOS, Android e Windows.  Com essa abordagem, você tem acesso direto às APIs específicas da plataforma para projetar uma experiência de interface do usuário personalizada para cada plataforma.  Você também tem acesso completo aos controles e ao designer nativo para cada plataforma para ajudar na compilação da interface do usuário respectiva.  
   
-O Xamarin.Forms fornece um conjunto geral de APIs que permite que você escreva uma camada de interface do usuário compartilhada para todas as plataformas em uma biblioteca de classes portátil.  O Xamarin.Forms renderiza para controles nativos em cada plataforma de destino para dar uma aparência nativa.  Em vez de usar um designer, com o Xamarin.Forms, você compila sua interface do usuário usando C# e XAML.  
+O Xamarin.Forms fornece um conjunto geral de APIs que permite escrever uma camada de interface do usuário compartilhada para todas as plataformas em uma única biblioteca do .NET Standard.  O Xamarin.Forms executa a renderização para controles nativos em cada plataforma de destino para fornecer uma aparência nativa.  Em vez de usar um designer, você cria a interface do usuário usando C# e XAML.  
+
+A maioria dos desenvolvedores usam o Xamarin.Forms. Essa é a rota recomendada para desenvolvedores novos no Xamarin. A abordagem do Xamarin nativo é mais difícil e requer um conhecimento maior das plataformas de destino.
   
 Não é necessário decidir qual abordagem adotar antecipadamente; os aplicativos podem ser implementados usando uma combinação de Xamarin nativo e Xamarin.Forms:  
   
--   Use o Xamarin.Forms para criar telas de finalidade geral que fornecem interface do usuário e recursos semelhantes entre plataformas, como logons, formulários de contato e resultados da pesquisa.  
+-   Use o Xamarin.Forms para criar telas de uso geral. Elas fornecem interfaces do usuário e recursos semelhantes entre as plataformas, como logons, formulários de contato e resultados da pesquisa.  
   
--   Use uma variedade de funcionalidades de personalização no Xamarin.Forms para ajustar a interface do usuário por plataforma. Isso inclui a API OnPlatform, que pode ser usada do código e do XAML, criar uma exibição personalizada, estender um renderizador existente e criar um renderizador personalizado.  
+-   Use uma variedade de recursos de personalização no Xamarin.Forms para ajustar a interface do usuário de acordo com cada plataforma. A opção de personalização mais simples envolve a API `OnPlatform`. Você também pode criar exibições personalizadas, estender os renderizadores existentes e criar renderizadores personalizados.  
   
--   Se necessário, use o Xamarin nativo para criar telas que usam recursos interface do usuário exclusivos de cada plataforma, por exemplo, uma tela que usa manipulação de imagem e captura com a câmera nativa.  
+-   Se necessário, use o Xamarin nativo para criar telas que usem recursos de interface do usuário exclusivos de cada plataforma. Um exemplo é uma tela que usa a captura da câmera e a manipulação de imagem nativas.  
   
-É recomendável sempre iniciar com uma solução do Xamarin.Forms para configurar o compartilhamento de código de interface do usuário entre plataformas e usar as funcionalidades de personalização para fazer ajustes específicos da plataforma. Se e quando precisar de telas totalmente específicas da plataforma, você poderá adicioná-las individualmente usando o Xamarin nativo.  
+Em geral, o melhor é começar com uma solução do Xamarin.Forms para configurar o compartilhamento do código da interface do usuário entre as plataformas. Use os recursos de personalização para fazer os ajustes específicos da plataforma. Se e quando precisar de telas totalmente específicas da plataforma, você poderá adicioná-las individualmente usando o Xamarin nativo.  
   
 Para saber mais:  
   
-1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) fornece uma breve visão geral e os prós e contras do Xamarin.Forms versus camadas nativas da interface do usuário (ou seja, Xamarin.iOS e Xamarin.Android).  
+1.  O [Xamarin.Forms](/xamarin/xamarin-forms/) fornece uma breve visão geral e os prós e contras do Xamarin.Forms em relação às camadas de interface do usuário nativa (ou seja, o Xamarin.iOS e o Xamarin.Android).  
   
 2.  Os primeiros três minutos do vídeo de James Montemagno, [Xamarin.Forms: Native iOS, Android & Windows apps with C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Xamarin.Forms: aplicativos iOS, Android e Windows nativos com C# e XAML), (Channel9 13m3s) fornece outra visão geral e você pode continuar assistindo demonstrações.  
   
-3.  (Opcional) [Uma Introdução ao Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
+3.  (Opcional) [Uma introdução ao Xamarin.Forms](/xamarin/xamarin-forms/get-started/introduction-to-xamarin-forms/)  
   
-4.  (Opcional) Veja exemplos de como usar o OnPlatform para personalização na documentação de [Classe de Dispositivo](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) (xamarin.com)  
+4.  (Opcional) Veja exemplos de uso de `OnPlatform` para personalização na documentação [Classe de Dispositivo](/xamarin/xamarin-forms/platform/device/)
   
-5.  (Opcional) [Multiplataforma – Compartilhar código de interface do usuário em plataformas móveis com Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) de Jason Smith (MSDN Magazine) descreve as diferentes opções de personalização com o Xamarin.Forms, cujos detalhes são abordados em [Personalizando controles em cada plataforma](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
+5.  (Opcional) [Multiplataforma – compartilhar código de interface do usuário em plataformas móveis com o Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) de Jason Smith (MSDN Magazine) descreve as diferentes opções de personalização do Xamarin.Forms, cujos detalhes são abordados em [Renderizadores Personalizados](/xamarin/xamarin-forms/app-fundamentals/custom-renderer/).  
   
 ## <a name="deeper-dive-debugging-with-emulators"></a>Aprofundamento: Depurando com emuladores  
 
 *10 a 15 minutos*  
   
-Para depurar seus aplicativos de plataforma cruzada sem precisar usar um dispositivo físico, você precisará usar o seguinte:  
+Para depurar seus aplicativos multiplataforma sem precisar usar um dispositivo físico, você precisará usar os emuladores discutidos aqui:  
   
-1.  **Um emulador do Android.** Dependendo da versão do Windows que você está usando, recomendamos o Emulador do Microsoft Visual Studio para Android ou o Xamarin Player, que oferecem desempenho rápido e dão suporte a uma variedade de funcionalidades de dispositivo:  
+### <a name="microsofts-android-emulator"></a>Android Emulador da Microsoft 
+
+É recomendável que você use o [Emulador do Microsoft Visual Studio para Android](~/cross-platform/visual-studio-emulator-for-android.md), que é instalado com o Visual Studio.  O vídeo [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Emulador do Visual Studio para Android) (Channel9, 5m55s) oferece uma visão geral e uma demonstração.  
   
-    -   **Computadores Windows 8+:** é altamente recomendado usar o [Emulador do Visual Studio para Android](https://www.visualstudio.com/en-us/features/msft-android-emulator-vs.aspx) da Microsoft, que é instalado com o Visual Studio.  O vídeo [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Emulador do Visual Studio para Android) (Channel9, 5m55s) oferece uma visão geral e uma demonstração.  
+### <a name="apples-ios-simulator"></a>Simulador do iOS da Apple
+
+Para saber mais, leia [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (Introdução ao Simulador de iOS) (apple.com).  
   
-    -   **Windows 7 ou anterior/Windows em execução no Mac OS X**: use o [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
+### <a name="microsofts-windows-phone-emulator"></a>Emulator para Windows Phone da Microsoft.
+
+Para saber mais, leia [Testar com o Emulador Microsoft para Windows 10 Mobile](/windows-uwp/windows-apps-src/debug-test-perf/test-with-the-emulator/).  
   
-2.  **Simulador do iOS da Apple.** Para saber mais, leia [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (Introdução ao Simulador de iOS) (apple.com).  
-  
-3.  **Emulador do Windows Phone da Microsoft.** Para saber mais, leia [Windows Phone Emulator for Windows Phone 8](../debugger/run-windows-phone-apps-in-the-emulator.md) (Emulador do Windows Phone para Windows Phone 8).  
-  
-##  <a name="components"></a> Aprofundamento: Componentes do Xamarin  
+<a name="components" /> 
+
+## <a name="deeper-dive-xamarin-components"></a>Aprofundamento: componentes do Xamarin  
 
 *10 minutos*  
   
-Muitas funcionalidades estendidas estão disponíveis para aplicativos Xamarin por meio de componentes Xamarin. É possível encontrar todo o catálogo disponível para download em [http://components.xamarin.com/](http://components.xamarin.com/), que inclui componentes para outros controles de interface do usuário, autenticação, uma variedade de serviços de nuvem, como o Microsoft Azure, e muito mais.
+Muitas funcionalidades estendidas estão disponíveis para aplicativos Xamarin por meio de componentes Xamarin. Encontre o catálogo completo disponível para download em [http://components.xamarin.com/](http://components.xamarin.com/), que inclui componentes para outros controles adicionais da interface do usuário, autenticação, uma variedade de serviços de nuvem, como o Microsoft Azure, e muito mais.

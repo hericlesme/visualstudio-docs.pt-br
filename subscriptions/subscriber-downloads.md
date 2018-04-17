@@ -1,21 +1,21 @@
 ---
 title: Usar os downloads do assinante nas assinaturas do Visuals Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Saiba como localizar e baixar os produtos da Microsoft incluídos na sua assinatura do Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visual Studio
+# <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visuals Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.  
 Você precisa estar conectado à sua assinatura para acessar a guia [Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs). 
 
@@ -34,7 +34,7 @@ Há várias razões pelas quais determinados produtos podem não estar disponív
 ## <a name="what-do-i-get"></a>O que eu posso obter?
 O número e os tipos de downloads dependem do seu nível de assinatura e das suas associações ao programa.  Os assinantes com assinaturas padrão do Visual Studio Enterprise, por exemplo, podem ter downloads disponíveis diferentes dos de assinantes que obtêm suas assinaturas por meio de uma assinatura do programa Microsoft Partner Network ou BizSpark.  Para saber mais sobre quais downloads estão disponíveis para cada nível de assinatura, baixe a lista de [Produtos por nível de benefício](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Como fazer para localizar downloads no portal do assinante? 
 Somente os downloads incluídos na sua assinatura são exibidos na página [Downloads](https://my.visualstudio.com/downloads/featured).  Se você tiver mais de uma assinatura ou associação ao programa, os downloads mostrados serão referentes a **assinatura mais alta** que você tiver, mesmo que você esteja exibindo uma assinatura diferente no momento.  Por exemplo, se você tiver uma assinatura do Visual Studio Professional e uma associação ao Visual Studio Dev Essentials associadas à mesma ID de conexão, os downloads mostrados serão os incluídas na assinatura do Professional, mesmo que você esteja exibindo os benefícios do Dev Essentials no momento.  

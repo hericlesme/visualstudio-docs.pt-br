@@ -1,35 +1,37 @@
 ---
 title: Assinaturas do Visual Studio - Localizar o contato principal | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/22/2018
-Ms.topic: Get-Started-Article
-Description: Visual Studio Subscriptions - Locating the Primary Contact
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 0834d51d8d743c282ddbb5699440608b5d1935a7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/22/2018
+ms.topic: Get-Started-Article
+description: Assinaturas do Visual Studio – Localizando o Contato Principal
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a50fef244d7b656271adf36544166c9f8256c1ae
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Localizar o contato principal associado a assinaturas do Visual Studio
+# <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Localizando o Contato Principal associado a assinaturas do Visual Studio
 
-1. Para localizar seu contato principal, visite o Centro de Serviços de Licenciamento por Volume em: https://www.Microsoft.com/licensing/servicecenter e clique em **Entrar**.
+Para concluir a integração da organização ao portal de administração de assinaturas, você precisará identificar seu Contato Principal.  Este artigo explica onde localizar essas informações.
 
-![Entre no VLSC](_img/locate-primary-contact/vlsc-sign-in.png)
+1. Para localizar seu Contato Principal, visite o Centro de Empresas da Microsoft em: https://www.Microsoft.com/licensing/servicecenter e clique em **Entrar**.
+
+    ![Entre no VLSC](_img/locate-primary-contact/vlsc-sign-in.png)
 
 2. Na guia Licenças, selecione **Resumo do Relacionamento** na lista suspensa.
 
-![Escolha Relacionamento](_img/locate-primary-contact/vlsc-relationship.png)
+    ![Escolha Relacionamento](_img/locate-primary-contact/vlsc-relationship.png)
 
 3. Selecione o número de contrato aplicável. 
 
-![Escolha Contrato](_img/locate-primary-contact/vlsc-agreement.png)
+    ![Escolha Contrato](_img/locate-primary-contact/vlsc-agreement.png)
 
 4. Selecione a guia **Contatos**.  O Contato Principal aparecerá na lista de contatos associados ao contrato. 
 
- ![Escolha Contatos](_img/locate-primary-contact/vlsc-contacts.png)
+    ![Escolha Contatos](_img/locate-primary-contact/vlsc-contacts.png)
  

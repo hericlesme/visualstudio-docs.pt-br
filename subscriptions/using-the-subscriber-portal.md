@@ -1,23 +1,23 @@
 ---
-title: "Como usar o Portal do Assinante ‒ http://my.visualstudio.com | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the full range of benefits available to you on the Visual Studio subscriptions portal
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2c2939ff8b4d20f2db7dd736c6a0dee28785645c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Usando o Portal do Assinante – http://my.visualstudio.com | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/04/2018
+ms.topic: Get-Started-Article
+description: Saiba mais sobre a gama completa de benefícios disponíveis para você no portal de assinaturas do Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Como usar o Portal do Assinante ‒ my.<span></span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Usando o Portal do Assinante – my.<span></span>visualstudio<span></span>.com
 
-O Portal de Assinaturas do Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), é o recurso centralizado para aproveitar a gama completa de benefícios fornecidos por meio da assinatura do Visual Studio. 
+O portal de assinaturas do Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), é seu recurso “tudo em um” para aproveitar a gama completa de benefícios fornecidos pela sua assinatura do Visual Studio. 
 
 O uso do portal requer que você entre com a identidade associada à a assinatura.  Pode ser a MSA (Conta da Microsoft) ou um endereço de email fornecido por uma organização, como sua empresa ou escola.  Saiba mais sobre como [entrar](/visualstudio/subscriptions/signing-in).
 

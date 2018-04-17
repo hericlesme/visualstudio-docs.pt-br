@@ -1,25 +1,30 @@
 ---
-title: "Onde posso encontrar mais informações sobre o gerenciamento de assinaturas? | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/29/2017
-Ms.topic: Get-Started-Article
-Description: Find More Information About Subscription Management?
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Saiba mais sobre o gerenciamento de assinaturas | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/13/2018
+ms.topic: Get-Started-Article
+description: Encontre mais informações sobre o gerenciamento de assinaturas
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: f3294d37202dd8a9454fdeb056f35b298fdba554
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="where-can-i-find-more-information-about-subscription-management"></a>Onde posso encontrar mais informações sobre o gerenciamento de assinaturas?
+# <a name="learn-about-subscription-management"></a>Saiba mais sobre o gerenciamento de assinaturas
 
-Os recursos de gerenciamento de assinatura estão disponíveis para os clientes que adquiriram assinaturas através do VLSC (Centro de Serviço de Licenciamento por Volume), de um MPSA (Contrato de Produtos e Serviços da Microsoft) ou de uma assinatura do Visual Studio Cloud.  
+Os recursos de gerenciamento de assinatura estão disponíveis para os clientes que adquiriram assinaturas por meio de um Contrato de Licenciamento por Volume, de um MPSA (Contrato de Produtos e Serviços Microsoft) ou de uma assinatura de nuvem do Visual Studio.  
 
-Considerando os canais de compras diferentes, é importante para os Administradores de Assinatura saber como suas assinaturas foram adquiridas para que as permissões e os guias de usuário apropriados possam ser utilizados. 
+Considerando os diferentes canais de compras, é importante que os Administradores de Assinatura saibam como suas assinaturas foram compradas para que as permissões e as configurações de usuário apropriadas possam ser aplicadas. Informações para saber como configurar administradores para cada tipo de contrato podem ser encontradas na seção Acessando o portal. 
 
 A equipe de Assinaturas do Visual Studio criou o "[Portal de Administração de Assinaturas](https://www.visualstudio.com/subscriptions-administration/) do Visual Studio".  O objetivo desse portal é ajudar os administradores de assinatura a compreender rapidamente as ferramentas e recursos disponíveis para atribuir e gerenciar assinaturas em sua organização. 
 
+No Portal de Administração de Assinaturas, você pode aprender tópicos como:
+- Gerenciando assinaturas no [portal de gerenciamento de assinaturas](https://manage.visualstudio.com).
+- Gerenciando assinaturas por meio do Centro de Empresas da Microsoft para as organizações que ainda não foram migradas para o portal de gerenciamento de assinaturas. 
+- Migrando para o novo portal.
+- Outras dicas e truques específicos para os administradores de assinaturas.

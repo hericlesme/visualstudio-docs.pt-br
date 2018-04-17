@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Acessando o Portal do administrador de assinaturas do Visual Studio
 ## <a name="for-mpsa"></a>Para MPSA
@@ -35,22 +35,22 @@ Se você precisar de informações sobre como configurar um administrador, assis
 Se você já foi configurado como administrador, acesse diretamente o [Portal do administrador](https://manage.visualstudio.com) de assinaturas do Visual Studio.
 
 ## <a name="for-cloud-subscriptions"></a>Para assinaturas de Nuvem
-Ao comprar assinaturas de Nuvem do Visual Studio, você é automaticamente configurado como um administrador dessas assinaturas.  Se você já as comprou, poderá gerenciá-las em [https://manage.visualstudio.com](https://manage.visualstudio.com).
+Ao comprar assinaturas de Nuvem do Visual Studio, você é automaticamente configurado como um administrador dessas assinaturas.  Se você já tiver comprado assinaturas, será possível gerenciá-las em [https://manage.visualstudio.com](https://manage.visualstudio.com).
 
-Para comprar assinaturas de Nuvem do Visual Studio, visite o Visual Studio Marketplace em [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions).
+Para comprar assinaturas de nuvem do Visual Studio, visite o Visual Studio Marketplace em [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions).
 
 
 ## <a name="for-programs-subscriptions"></a>Para assinaturas de Programas
 
 ### <a name="microsoft-bizspark"></a>Microsoft BizSpark
-Se você é um administrador do Microsoft BizSpark, você pode gerenciar as assinaturas do Visual Studio da sua organização no **My BizSpark** entrando em: [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
+Se você for um administrador do Microsoft BizSpark, você poderá gerenciar as assinaturas do Visual Studio da organização em **My BizSpark** entrando em: [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
 
-Encontre mais informações sobre o programa Microsoft BizSpark em [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
+Encontre mais informações sobre o programa Microsoft BizSpark, em [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
 
 
 ### <a name="imagine"></a>Imagine
-Se você é um administrador do Microsoft Imagine, visite [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
+Se você for um administrador do Microsoft Imagine, visite [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
 
 
 ### <a name="partner"></a>Parceiro
-Para obter mais informações sobre as assinaturas do Visual Studio da MPN (Microsoft Partner Network), dê uma olhada neste artigo e obtenha recursos para ajudá-lo a comprá-las e gerenciá-las: [https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).
+Para obter mais informações sobre as assinaturas do Visual Studio do MPN (Microsoft Partner Network), confira este artigo para obter recursos que ajudam a comprar e gerenciar assinaturas: [https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).

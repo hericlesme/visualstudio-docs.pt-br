@@ -10,13 +10,13 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>Como renovar uma assinatura adquirida por meio da Microsoft Store?
-Visão geral: assinaturas de varejo geralmente são compradas na Microsoft Store e podem ser identificadas como "Varejo" examinando as informações das assinaturas disponíveis em https://my.visualstudio.com/subscriptions. 
+Visão geral: as assinaturas de varejo geralmente são compradas na Microsoft Store e podem ser identificadas como "Varejo" ao examinar as informações sobre as assinaturas disponíveis em https://my.visualstudio.com/subscriptions. 
 
 ## <a name="renew-your-subscription"></a>Renovar sua assinatura: 
 
@@ -34,4 +34,4 @@ Você pode ativar a assinatura por meio da "Página de Confirmação" do pagamen
 2. Entre em sua assinatura.  (Para obter ajuda, [entre](/visualstudio/subscriptions/signing-in)).
 3. Insira as informações da Chave do Produto (Product Key) disponíveis na "Página de Confirmação" do pagamento ou no "Email de Confirmação" e clique em **Ativar**.
     ![Insira a chave do produto](_img//buy-retail/enter-product-key.png)
-4. A assinatura deve estar visível em [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+4. Agora, a assinatura deve estar visível em [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).

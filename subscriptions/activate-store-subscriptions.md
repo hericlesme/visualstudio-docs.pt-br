@@ -1,19 +1,19 @@
 ---
 title: Como ativar assinaturas do Visual Studio adquiridas na Microsoft Store | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/25/2018
-Ms.topic: Get-Started-Article
-Description: Learn how to activate Visual Studio subscriptions you purchased in the Microsoft Store.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 5c8809221bcf4cfd2a92ec97411ea60623ee2f93
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/25/2018
+ms.topic: Get-Started-Article
+description: Saiba como ativar assinaturas do Visual Studio compradas na Microsoft Store.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Como ativar uma assinatura adquirida na Microsoft Store?
 Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft Store, as etapas de ativação poderão ser iniciadas na "Página de Confirmação" ou no "Email de Confirmação" de pagamento recebido após a compra. 
@@ -21,7 +21,7 @@ Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft S
 > [!NOTE] 
 > Se você não receber um email, valide o endereço de email e verifique as pastas de lixo eletrônico 
   
-## <a name="activate-your-subscription"></a>Ativar sua assinatura: 
+## <a name="activate-your-subscription"></a>Ative sua assinatura: 
 1. Clique em **Clique aqui para entrar**. 
 2. Você será levado para [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 3. Insira o endereço de email que exige o acesso à assinatura do Visual Studio e clique em **Continuar**.
