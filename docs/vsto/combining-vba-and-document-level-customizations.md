@@ -1,12 +1,10 @@
 ---
-title: "Combinando VBA e personalizações no nível do documento | Microsoft Docs"
-ms.custom: 
+title: Combinando VBA e personalizações no nível do documento | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
 - VST.VBAInterop.ProjectLoadFailure
@@ -26,13 +24,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 63f316d3ac6fefbef37735cddc8fb7a87a8d4bfb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 01870498522ce138925fdaaf4c6ada9b13961f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>Combinando VBA e personalizações no nível do documento
   Você pode usar o Visual Basic para o código do VBA em um documento que faz parte de uma personalização no nível do documento para o Microsoft Office Word ou o Microsoft Office Excel. Você pode chamar o código do VBA no documento do assembly de personalização, ou você pode configurar seu projeto para habilitar o código do VBA no documento para chamar o código no assembly de personalização.  
@@ -118,7 +117,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
     3.  Definir o **ReferenceAssemblyFromVbaProject** propriedade de qualquer classe de item de host do projeto a **True**. Isso incorpora a biblioteca de tipos do assembly de personalização para o assembly e adiciona uma referência à biblioteca de tipos para o projeto do VBA no documento.  
   
- Para obter instruções detalhadas, consulte [como: expor código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) e [como: expor código para VBA em um Visual C &#35; Projeto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Para obter instruções detalhadas, consulte [como: expor código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) e [como: expor código para VBA em um Visual C&#35; projeto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  O **EnableVbaCallers** e **ReferenceAssemblyFromVbaProject** propriedades estão disponíveis apenas no **propriedades** janela no tempo de design; eles não podem ser usados em tempo de execução . Para exibir as propriedades, abra o designer de um item de host em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações sobre as tarefas específicas que executa o Visual Studio quando você definir essas propriedades, consulte [tarefas executadas pelas propriedades do Item de Host](#PropertyTasks).  
   
@@ -146,7 +145,7 @@ Sub MyMacro()
 End Sub  
 ```  
   
- Esta propriedade é uma maneira mais conveniente para chamar o assembly de personalização que usar o `GetManagedClass` método diretamente. `CallVSTOAssembly`Retorna um objeto que representa o host de classe de item que é exposta para VBA. Os membros e os parâmetros de método do objeto retornado exibidas no IntelliSense.  
+ Esta propriedade é uma maneira mais conveniente para chamar o assembly de personalização que usar o `GetManagedClass` método diretamente. `CallVSTOAssembly` Retorna um objeto que representa o host de classe de item que é exposta para VBA. Os membros e os parâmetros de método do objeto retornado exibidas no IntelliSense.  
   
  O `CallVSTOAssembly` propriedade tem uma declaração que é semelhante ao seguinte código. Esse código supõe que você tenha expostos a `Sheet1` classe de item em um projeto de pasta de trabalho do Excel chamado de host `ExcelWorkbook1` para VBA.  
   
@@ -177,7 +176,7 @@ GetManagedClass(pdispInteropObject Object) As Object
   
  Esse método retorna um objeto que representa a classe que é exposto para VBA. Os membros e os parâmetros de método do objeto retornado exibidas no IntelliSense.  
   
-##  <a name="Guidelines"></a>Diretrizes para adicionar o código do VBA no documento  
+##  <a name="Guidelines"></a> Diretrizes para adicionar o código do VBA no documento  
  Há várias cópias diferentes do documento em que você pode adicionar código VBA que chamam a personalização no nível do documento.  
   
  Ao desenvolver e testar sua solução, você pode escrever o código do VBA no documento que é aberta ao depurar ou executar o projeto no Visual Studio (ou seja, o documento na pasta de saída de compilação). No entanto, qualquer código do VBA que você adicionar a este documento será substituído na próxima vez que você compilar o projeto, como Visual Studio substitui o documento na pasta de saída de compilação com uma cópia do documento da pasta de projeto principal.  
@@ -204,7 +203,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="on-the-end-user-computer"></a>No computador do usuário final  
  Se os usuários finais são os desenvolvedores VBA que chamem serviços que fornecem a personalização de nível de documento, você pode informar como chamar o seu código usando o `CallVSTOAssembly` propriedade ou o `GetManagedClass` método em suas cópias do documento. Quando você publicar atualizações para a solução, o código do VBA no documento no computador do usuário final não será substituído, porque o documento não é modificado pelo publicar atualizações.  
   
-##  <a name="PropertyTasks"></a>Tarefas executadas pelas propriedades do Item de Host  
+##  <a name="PropertyTasks"></a> Tarefas executadas pelas propriedades do Item de Host  
  Quando você usa o **EnableVbaCallers** e **ReferenceAssemblyFromVbaProject** propriedades, o Visual Studio executará conjuntos diferentes de tarefas.  
   
 ### <a name="enablevbacallers"></a>EnableVbaCallers  
@@ -254,9 +253,9 @@ GetManagedClass(pdispInteropObject Object) As Object
   
 ## <a name="see-also"></a>Consulte também  
  [Como: expor código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Como: expor código para VBA em um Visual C &#35; Projeto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Como: expor código para VBA em um Visual C&#35; projeto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Passo a passo: Chamando código do VBA em um projeto do Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Passo a passo: Chamando código de VBA em um Visual C &#35; Projeto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Passo a passo: Chamando código do VBA em um Visual C&#35; projeto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
  [VBA e soluções do Office no Visual Studio comparadas](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Programando personalizações no nível do documento](../vsto/programming-document-level-customizations.md)  

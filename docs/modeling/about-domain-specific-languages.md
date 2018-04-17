@@ -1,23 +1,21 @@
 ---
-title: "Sobre linguagens específicas do domínio | Microsoft Docs"
-ms.custom: 
+title: Sobre linguagens específicas do domínio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 89293e0b684881767b6357b88469dc69ddc71902
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 
@@ -79,9 +77,9 @@ Uma linguagem específica de domínio gráfica deve incluir os seguintes recurso
 
 Uma linguagem específica de domínio deve ter um conjunto relativamente pequeno de elementos que podem ser facilmente definidas e estendidos para representar construções específicas do domínio. Uma notação consiste em formas, que representam os elementos, e conectores, que representam as relações entre os elementos na superfície de um diagrama gráfico. Em [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], as formas podem ser estendidas e refinadas para representar os elementos da sua linguagem específica de domínio.  
   
-### <a name="domain-model"></a>Domain Model
+### <a name="domain-model"></a>Modelo de domínio
 
-Uma linguagem específica de domínio deve combinar o conjunto de elementos e as relações entre eles em uma gramática coerente. Ele também deve definir se combinações de elementos e relações são válidas. Por exemplo, linguagens de programação normalmente evitar herança circular, em que uma classe é derivada de uma classe de segundo e a segunda classe é derivada da classe primeiro. Restrições também podem ser usadas para expressar a lógica de negócios, por exemplo, uma pessoa não pode ser um dependente de si próprio. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]usa as restrições para expressar os tipos de restrições que exigem mais idiomas de domínio específico.  
+Uma linguagem específica de domínio deve combinar o conjunto de elementos e as relações entre eles em uma gramática coerente. Ele também deve definir se combinações de elementos e relações são válidas. Por exemplo, linguagens de programação normalmente evitar herança circular, em que uma classe é derivada de uma classe de segundo e a segunda classe é derivada da classe primeiro. Restrições também podem ser usadas para expressar a lógica de negócios, por exemplo, uma pessoa não pode ser um dependente de si próprio. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa as restrições para expressar os tipos de restrições que exigem mais idiomas de domínio específico.  
   
 ### <a name="artifact-generation"></a>Geração de artefato
 
@@ -89,7 +87,7 @@ Um dos principais motivos de uma linguagem específica de domínio é gerar um a
   
 ### <a name="serialization"></a>Serialização
 
-Uma linguagem específica de domínio deve ser persistida em alguma forma que pode ser editada, salvo, fechada e recarregada. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]usa um formato XML que lhe permite definir e personalizar como sua linguagem específica de domínio é serializada ou persistente.  
+Uma linguagem específica de domínio deve ser persistida em alguma forma que pode ser editada, salvo, fechada e recarregada. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa um formato XML que lhe permite definir e personalizar como sua linguagem específica de domínio é serializada ou persistente.  
   
 ### <a name="integration-with-visual-studio"></a>Integração com o Visual Studio
 

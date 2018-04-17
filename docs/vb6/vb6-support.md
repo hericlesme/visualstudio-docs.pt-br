@@ -1,8 +1,8 @@
 ---
-title: "Política de suporte para o Visual Basic 6.0 | Microsoft Docs"
+title: Política de suporte para o Visual Basic 6.0 | Microsoft Docs
 ms.date: 08/28/2017
 ms.technology: devlang-vb
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -13,11 +13,11 @@ author: paulyuk
 ms.author: paulyuk
 ms.workload:
 - paulyuk
-ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Política de suporte para o Visual Basic 6.0 no Windows
 
@@ -73,7 +73,7 @@ Para obter detalhes específicos sobre os arquivos incluídos em cada grupo de s
 
 Suporte a e/ou envio de binários de tempo de execução do Visual Basic 6.0 em versões do Windows não altera a política de suporte para o IDE do Visual Basic 6.0 ou o IDE do Visual Studio 6.0 como um todo. Os produtos tirado do suporte estendido em 8 de abril de 2008.
 
-Detalhes do ciclo de vida de suporte de produtos da Microsoft podem ser encontrados em http://support.microsoft.com/gp/lifepolicy. Como parte desse ciclo de vida de suporte, a Microsoft continuará dar suporte ao tempo de execução do Visual Basic 6.0 versões com suporte do Windows para o tempo de vida do suporte desses sistemas operacionais. Por exemplo, isso significa que o tempo de execução do Visual Basic 6.0 terá suporte no Windows Server 2003 até junho de 2008 para o suporte base e de junho de 2013 para suporte estendido.
+Detalhes sobre o ciclo de vida de suporte de produtos da Microsoft podem ser encontrados em http://support.microsoft.com/gp/lifepolicy. Como parte desse ciclo de vida de suporte, a Microsoft continuará dar suporte ao tempo de execução do Visual Basic 6.0 versões com suporte do Windows para o tempo de vida do suporte desses sistemas operacionais. Por exemplo, isso significa que o tempo de execução do Visual Basic 6.0 terá suporte no Windows Server 2003 até junho de 2008 para o suporte base e de junho de 2013 para suporte estendido.
 Para obter mais detalhes sobre o ciclo de vida de suporte ou para obter informações sobre opções adicionais de suporte, visite nossa página de suporte em http://www.microsoft.com/support.
 
 ## <a name="64-bit-windows"></a>Windows de 64 bits
@@ -149,7 +149,7 @@ Esta seção fornece informações adicionais sobre os sistemas operacionais que
 
 
 > [!NOTE]
-> &#42;  Suporte de tempo de execução do VB6 é limitado pelo ciclo de vida de suporte do Windows.  Por exemplo, se o sistema operacional de destino está em suporte estendido, VB6 não pode ter um nível maior de suporte que suporte estendido.  O [folha de fatos do ciclo de vida de suporte do Windows](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) contém informações de ciclo de vida adicionais sobre versões atuais e anteriores do Windows.
+> &#42;Suporte de tempo de execução do VB6 é limitado pelo ciclo de vida de suporte do Windows.  Por exemplo, se o sistema operacional de destino está em suporte estendido, VB6 não pode ter um nível maior de suporte que suporte estendido.  O [folha de fatos do ciclo de vida de suporte do Windows](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) contém informações de ciclo de vida adicionais sobre versões atuais e anteriores do Windows.
 
 ## <a name="visual-basic-60-runtime-usage-inside-vba-and-office"></a>Uso de tempo de execução do Visual Basic 6.0 em VBA e do Office
 
@@ -180,20 +180,20 @@ Se você encontrar um problema com o aplicativo do Visual Basic 6.0 em execuçã
 | | | | |
 |---|---|---|---|
 |atl.dll|         msadcor.dll|     msorcl32.dll|   ole2.dll|
-|asycfilt.dll|    msadcs.dll|      msvbvm60.dll|   ole32.dll|
+|Asycfilt|    msadcs.dll|      msvbvm60.dll|   ole32.dll|
 |comcat.dll|      msadds.dll|      msvcirt.dll|    oleaut32.dll|
 |compobj.dll|     msaddsr.dll|     msvcrt.dll|     oleaut32.dll|
 |dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   oledb32.dll|
 |dcomcnfg.exe|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
 |dllhost.exe|     msador15.dll|    mtxoci.dll|     oledlg.dll|
-|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
+|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   OLEPRO32|
 |ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
 |expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
 |hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
 |hhctrl.ocx|      msdaer.dll|      odbccp32.cpl|   rpcrt4.dll|
-|imagehlp.dll|    msdaora.dll|     odbccp32.dll|   scrrun.dll|
+|Imagehlp.dll|    msdaora.dll|     odbccp32.dll|   scrrun.dll|
 |iprop.dll|       msdaosp.dll|     odbccr32.dll|   secur32.dll|
-|itircl.dll|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
+|itircl|      msdaprst.dll|    odbccu32.dll|   simpdata.tlb|
 |itss.dll|        msdaps.dll|      odbcint.dll|    sqloledb.dll|
 |mfc40.dll|       msdasc.dll|      odbcji32.dll|   sqlsrv32.dll|
 |mfc42.dll|       msdasql.dll|     odbcjt32.dll|   stdole2.tlb|
@@ -210,10 +210,10 @@ Se você encontrar um problema com o aplicativo do Visual Basic 6.0 em execuçã
 |---|---|---|---|
 |comct232.ocx |msbind.dll   |msdbrptr.dll  |msstdfmt.dll| 
 |comct332.ocx |mscdrun.dll  |msflxgrd.ocx  |msstkprp.dll| 
-|comctl32.ocx |mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
+|Comctl32 |mschrt20.ocx |mshflxgd.ocx  |mswcrun.dll|  
 |comdlg32.ocx |mscomct2.ocx |mshtmpgr.dll  |mswinsck.ocx| 
 |dbadapt.dll  |mscomctl.ocx |msinet.ocx    |picclp32.ocx| 
-|dbgrid32.ocx |mscomm32.ocx |msmapi32.ocx  |richtx32.ocx| 
+|dbgrid32.ocx |mscomm32.ocx |Msmapi32.ocx  |richtx32.ocx| 
 |dblist32.ocx |msdatgrd.ocx |msmask32.ocx  |sysinfo.ocx|  
 |mci32.ocx    |msdatlst.ocx |msrdc20.ocx   |tabctl32.ocx| 
 |msadodc.ocx  |msdatrep.ocx |msrdo20.dll

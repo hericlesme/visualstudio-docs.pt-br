@@ -1,12 +1,10 @@
 ---
 title: Estendendo as ferramentas do SharePoint no Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: db0afa41641cd9d5ae04cfe6d391dbf0fe814f0f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d5ad6f27574fcb7bd8a859bcd21ac65e159596e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-sharepoint-tools-in-visual-studio"></a>Estendendo as ferramentas do SharePoint no Visual Studio
   Ferramentas do SharePoint no Visual Studio atendem aos requisitos de muitos cenários de desenvolvimento de aplicativos. No entanto, talvez você descubra que os casos em que eles não fornecem a funcionalidade que você ou outros desenvolvedores exigem. Nesses casos, você pode estender as ferramentas do SharePoint para criar a funcionalidade que você precisa.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Estendendo nós existentes. Por exemplo, você pode adicionar um novo nó filho em um nó existente, ou você pode adicionar um item de menu de atalho a um nó e executar tarefas quando um desenvolvedor clica no item de menu.  
   
- Para obter mais informações, consulte [estendendo o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
+ Para obter mais informações, consulte [Estendendo o Nó de Conexões do SharePoint no Gerenciador de Servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ## <a name="development-computer-requirements"></a>Requisitos do computador de desenvolvimento  
  Para criar extensões para ferramentas do SharePoint, seu computador de desenvolvimento deve atender os mesmos requisitos para a criação de soluções do SharePoint no Visual Studio. Para obter mais informações, consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  [Estendendo o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Estendendo o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Conceitos de programação e recursos para extensões de ferramentas do SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Referência &#40; Extensibilidade de ferramentas do SharePoint &#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
+ [Referência &#40;extensibilidade de ferramentas do SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [Depurando extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [Implantando extensões para as Ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

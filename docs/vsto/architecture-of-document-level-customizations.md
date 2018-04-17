@@ -1,13 +1,10 @@
 ---
-title: "Arquitetura de personalizações no nível do documento | Microsoft Docs"
-ms.custom: 
+title: Arquitetura de personalizações no nível do documento | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,17 +19,17 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09a8700086ec8a718e14764f807e57fcb1f882f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 659950fee0e292a0e0c37a82bb8a18fe2783824d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitetura de personalizações no nível do documento
-  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]inclui projetos para criar personalizações no nível de documento para o Microsoft Office Word e Microsoft Office Excel. Este tópico descreve os seguintes aspectos de personalizações no nível do documento:  
+  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] inclui projetos para criar personalizações no nível de documento para o Microsoft Office Word e Microsoft Office Excel. Este tópico descreve os seguintes aspectos de personalizações no nível do documento:  
   
 -   [Personalizações de Noções básicas sobre](#UnderstandingCustomizations)  
   
@@ -42,14 +39,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Para obter informações gerais sobre como criar personalizações no nível do documento, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md), [Introdução a personalizações no nível do documento da programação para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), e [Introdução a personalizações no nível do documento da programação para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+ Para obter informações gerais sobre como criar personalizações no nível do documento, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [obtendo iniciado de programação em nível de documento personalizações para o Word ](../vsto/getting-started-programming-document-level-customizations-for-word.md), e [Introdução a personalizações no nível do documento da programação para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
-##  <a name="UnderstandingCustomizations"></a>Noções básicas sobre personalizações  
+##  <a name="UnderstandingCustomizations"></a> Noções básicas sobre personalizações  
  Quando você usa as ferramentas de desenvolvedor do Office no Visual Studio para criar uma personalização no nível do documento, você pode criar um assembly de código gerenciado que está associado um documento específico. Um documento ou a pasta de trabalho com um assembly vinculado deve ter extensões de código gerenciado. Para obter mais informações, consulte [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md).  
   
  Quando um usuário abre o documento, o assembly é carregado pelo aplicativo do Microsoft Office. Depois que o assembly é carregado, a personalização pode responder a eventos enquanto o documento está aberto. A personalização também pode chamar o modelo de objeto para automatizar e estender o aplicativo enquanto o documento está aberto, e ele pode usar qualquer uma das classes no [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- O assembly se comunica com componentes COM, do aplicativo por meio do assembly de interoperabilidade primária do aplicativo. Para obter mais informações, consulte [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md) e [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ O assembly se comunica com componentes COM, do aplicativo por meio do assembly de interoperabilidade primária do aplicativo. Para obter mais informações, consulte [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md) e [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Se um usuário abre várias personalizações em nível de documento ao mesmo tempo, cada assembly é carregado em um domínio de aplicativo diferente. Isso significa que uma solução que se comporta incorretamente não pode fazer com que outras soluções de falha. Personalizações no nível do documento são projetadas para trabalhar com um único documento em um único domínio de aplicativo. Eles não são projetados para comunicação entre documentos. Para obter mais informações sobre domínios de aplicativo, consulte [domínios de aplicativo](/dotnet/framework/app-domains/application-domains).  
   
@@ -102,7 +99,7 @@ ms.lasthandoff: 01/10/2018
   
  Se desejar que os usuários finais para usar as personalizações nos seguintes formatos de arquivo, crie e implante uma personalização que usa um dos formatos de arquivo com suporte especificados na tabela acima. Depois de instalar a personalização, os usuários finais podem salvar o documento no documento XML do Word (* xml) formato ou o documento XML do Word 2003 (\*xml) formato e a personalização continuarão a funcionar como esperado.  
   
-##  <a name="Components"></a>Componentes de personalizações  
+##  <a name="Components"></a> Componentes de personalizações  
  Os principais componentes de uma personalização são o documento e o assembly. Além desses componentes, há várias outras partes que desempenham um papel importante em como os aplicativos do Microsoft Office descobrirem e carregue as personalizações.  
   
 ### <a name="deployment-manifest-and-application-manifest"></a>O manifesto de implantação e o manifesto do aplicativo  
@@ -113,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações, consulte [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-##  <a name="HowCustomizationsWork"></a>Como as personalizações trabalham com aplicativos do Microsoft Office  
+##  <a name="HowCustomizationsWork"></a> Como as personalizações trabalham com aplicativos do Microsoft Office  
  Quando um usuário abre um documento que faz parte de uma personalização do Microsoft Office, o aplicativo usa o manifesto de implantação que está vinculado ao documento para localizar e carregar a versão mais atual do assembly de personalização. O local do manifesto de implantação é armazenado em uma propriedade de documento personalizadas denominada assemblylocation. A cadeia de caracteres que identifica este local é inserida na propriedade quando você compila a solução.  
   
  Os pontos de manifesto da implantação para o manifesto de aplicativo, que aponta para o assembly mais recente. Para obter mais informações, consulte [manifestos de aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).  

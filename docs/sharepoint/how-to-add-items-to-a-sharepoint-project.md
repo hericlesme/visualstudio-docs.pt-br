@@ -1,13 +1,10 @@
 ---
 title: 'Como: adicionar itens a um projeto do SharePoint | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b37e97ddf0a6ffd119c920b384d0536eb943fa3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 41d36dc5c7f4f2d904a69d9053ed0f669b1a86c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Como adicionar itens a um projeto do SharePoint
   Soluções do SharePoint contêm um ou mais projetos, cada uma delas contém vários itens de projeto do SharePoint. Depois que você abre ou cria uma solução do SharePoint, você pode adicionar itens novos ou existentes para esses projetos. Por exemplo, novos projetos de fluxo de trabalho vem com um formulário padrão denominado Default. aspx, mas você pode substituir esse formulário com um formulário de novo ou diferente ou adicione outro formulário ASPX.  

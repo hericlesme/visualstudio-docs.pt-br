@@ -1,12 +1,10 @@
 ---
 title: '&lt;ponto de entrada&gt; elemento (desenvolvimento do Office no Visual Studio) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - entryPoint element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2416a50707d36295a6ddb1c2388f6ee9ef37b113
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f4bd7a9a119a5e604461f44bb166f19e063ab4af
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;ponto de entrada&gt; elemento (desenvolvimento do Office no Visual Studio)
   Cada `entryPoint` elemento o `vstav3` namespace identifica um assembly de personalização deve ser executado quando isso [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplicativo está instalado.  
@@ -46,12 +45,12 @@ ms.lasthandoff: 01/10/2018
 |---------------|-----------------|  
 |`class`|Necessário. Identifica um assembly de personalização para ser executado. A sintaxe para esse atributo é *NamespaceName.ClassName*.|  
   
- `entryPoint`tem o seguinte elemento.  
+ `entryPoint` tem o seguinte elemento.  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
  Necessário. O `assemblyIdentity` elemento no `vstav3` namespace refere-se a um existente `assemblyIdentity` elemento o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] o manifesto do aplicativo.  
   
- A função de `assemblyIdentity` e seus atributos é definido em [&#60; assemblyIdentity &#62; Elemento &#40; Aplicativo ClickOnce &#41; ](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
+ A função de `assemblyIdentity` e seus atributos é definido em [ &#60;assemblyIdentity&#62; elemento &#40;aplicativo ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
   
 ## <a name="document-level-customization-example"></a>Exemplo de personalização de nível de documento  
   

@@ -1,12 +1,10 @@
 ---
 title: Criando um modelo de conectividade de dados corporativos | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Criando um modelo de Conectividade de Dados Corporativos
   Você pode desenvolver um modelo para o serviço de conectividade de dados de negócios (BDC) com a adição de entidades e os métodos para um arquivo de modelo. Uma entidade descreve uma coleção de campos de dados. Por exemplo, uma entidade pode representar uma tabela em um banco de dados. Um método executa uma tarefa, como adicionar, excluir ou atualizar dados representados pelas entidades. Para obter mais informações, consulte [Integrando dados corporativos no SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  O Visual Studio permite que você copie descritores de tipo entre os parâmetros do modelo. Por exemplo, você pode definir um descritor de tipo nomeado `CustomerTD` para o parâmetro de retorno de `GetCustomer` método. Você pode copiar o `CustomerTD` tipo de descritor no **Explorer BDC**e, em seguida, cole esse descritor de tipo para o parâmetro de entrada do `CreateCustomer` método. Isso impede que você precisar definir o descritor do mesmo tipo, mais de uma vez.  
   
-##  <a name="MethodInstances"></a>Instâncias de método  
+##  <a name="MethodInstances"></a> Instâncias de método  
  Quando você cria um método, o Visual Studio adiciona uma instância de método padrão. Uma instância de método é uma referência a um método, mais os valores padrão para os parâmetros. Um único método pode ter várias instâncias de método. Cada instância é uma combinação de assinatura de método e um conjunto de valores padrão. Para obter mais informações, consulte [como: definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Quando você executar o projeto, as instâncias de método aparecem em uma lista suspensa acima da lista do SharePoint. Os usuários podem escolher as instâncias de método para exibir os dados.  

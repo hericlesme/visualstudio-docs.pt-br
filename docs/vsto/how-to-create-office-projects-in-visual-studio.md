@@ -1,12 +1,10 @@
 ---
 title: 'Como: criar projetos do Office no Visual Studio | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
 - VST.SelectDocWizard.Http
@@ -23,16 +21,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 60addb19ba78734237e6ccf888cdb69f2629f98c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Como criar projetos do Office no Visual Studio
-  Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar o suplemento do VSTO e nível de documento personalizações para aplicativos do Microsoft Office. Para obter mais informações sobre esses tipos de projetos, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar o suplemento do VSTO e nível de documento personalizações para aplicativos do Microsoft Office. Para obter mais informações sobre esses tipos de projetos, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -149,7 +148,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Se você usar um documento existente em um [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] de projeto, use apenas os documentos que foram criados ou convertidos em [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Da mesma forma, se você usar um documento existente em uma palavra 2010 do projeto, use somente os documentos que foram criados ou convertidos para o Word 2010. Determinados recursos serão desabilitados no documento se você usar um documento que foi criado em uma versão anterior do Word. Se você tentar escrever código que use esses recursos, você poderá encontrar erros em seu projeto. Para converter um documento, abra-o em [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou Word 2010, no **arquivo** guia na faixa de opções, escolha **informações**, **converter**.  
   
-8.  Escolha **concluir**.  
+8.  Escolha **Concluir**.  
   
 9. Adicione a pasta do projeto e suas subpastas à lista de locais confiáveis na Central de confiabilidade do Word nos seguintes casos:  
   

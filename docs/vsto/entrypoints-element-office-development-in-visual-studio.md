@@ -1,13 +1,10 @@
 ---
 title: '&lt;Pontos&gt; elemento (desenvolvimento do Office no Visual Studio) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de60c2164bfbb0f7f8f483ab937fed23ecea9195
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a620dae22e6fd67e3d880cbd87e8883911f28845
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;Pontos&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `entryPoints` elemento do `vstav3` namespace contém tudo o `entryPoint` elementos associados a uma solução do Office.  
@@ -49,10 +46,10 @@ ms.lasthandoff: 01/10/2018
 |---------------|-----------------|  
 |id|Necessário para a implantação de vários projeto. O nome da solução Office. A id não pode conter o símbolo de igual (=).|  
   
- `entryPoints`tem os seguintes elementos.  
+ `entryPoints` tem os seguintes elementos.  
   
 ### <a name="entrypoint"></a>entryPoint  
- Necessário. A função da `entryPoint` elemento o `vstav3` namespace está definido em [&#60; ponto de entrada &#62; Elemento &#40; desenvolvimento do Office no Visual Studio &#41; ](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
+ Necessário. A função da `entryPoint` elemento o `vstav3` namespace está definido em [ &#60;entryPoint&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Exemplo de personalização de nível de documento  
   

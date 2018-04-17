@@ -1,10 +1,8 @@
 ---
-title: "Procurar e reorganizar mapas de código | Microsoft Docs"
-ms.custom: 
+title: Procurar e reorganizar mapas de código | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.dgmlgraph.layouthelp
 - vs.progression.graphdocument
@@ -22,15 +20,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0cf2bb7618be6c18b4702f8bed636cf91f2863db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fb231c5a13bcc4a82eec140d3f2f482ae6c20941
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Procurar e reorganizar mapa de códigos
 Reorganize itens em mapas de código para torná-los mais fáceis de ler e melhorar o desempenho.  
@@ -43,14 +41,14 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
   
 -   Você pode exibir mapas de código e fazer edições limitadas em mapas de código no Visual Studio Professional.  
   
-##  <a name="ManageLargeGraphs"></a>Começar a trabalhar com mapas de código  
+##  <a name="ManageLargeGraphs"></a> Começar a trabalhar com mapas de código  
  Criar um mapa de código (consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md) para obter mais detalhes). Se você não quiser aguardar o mapa concluir a geração, clique o **Cancelar** link a qualquer momento para parar o processo de geração. No entanto, você não verá os detalhes de todas as dependências e links se você fizer isso.  
   
  Depois de gerar o mapa, começar com estas dicas para revisar seu código:  
   
 -   Examinar os clusters de dependência natural no código. Na barra de ferramentas do mapa, escolha **Layout**, **Clusters rápidos**![botão Clusters rápidos na barra de ferramentas de gráfico](../modeling/media/quickclustersicon.gif "QuickClustersIcon"). Consulte [alterar o layout de mapa](#Selecting).  
   
-     ![Gráfico de dependência &#45; Layout de Clusters rápido](../modeling/media/dependencygraph_quickclusters.png "DependencyGraph_QuickClusters")  
+     ![Gráfico de dependência &#45; layout de Clusters rápidos](../modeling/media/dependencygraph_quickclusters.png "DependencyGraph_QuickClusters")  
   
 -   Organize o mapa em áreas pequenas, agrupando nós relacionados. Recolhe os grupos para ver apenas as dependências intergroup, que aparecem automaticamente. Consulte [nós de grupo](#OrganizeGroups).  
   
@@ -58,7 +56,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
   
 -   Maximize o desempenho de mapas grandes. Consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md) para obter mais informações. Por exemplo, ativar **Skip Build** na barra de ferramentas mapa para que o Visual Studio não recriar sua solução quando você atualiza os itens do mapa.  
   
-##  <a name="Selecting"></a>Alterar o layout de mapa  
+##  <a name="Selecting"></a> Alterar o layout de mapa  
   
 |**To**|**Execute estas etapas**|  
 |------------|-----------------------------|  
@@ -69,7 +67,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
 |Altere o layout dentro de um grupo, independentemente de outros nós e grupos no mapa.|Selecione um nó e abra o menu de atalho. Escolha **Layout** e selecione um estilo de layout.<br /><br /> - ou -<br /><br /> Selecione um nó e expandi-lo e mostra os nós filhos. Clique no título de nó para mostrar a barra de ferramentas pop-up do grupo e abrir o **alterar o estilo de layout do grupo de**![gráfico de dependência &#45; barra de ferramentas do grupo &#45; layout](../modeling/media/dependencygraph_grouptoolbar.gif "DependencyGraph_ GroupToolbar") lista. Selecione um dos layouts de árvore, **Clusters rápidos**, ou **exibição de lista** (que organiza o conteúdo de grupo em uma lista).<br /><br /> Consulte [nós de grupo](#OrganizeGroups) para obter mais detalhes.|  
 |Desfazer uma ação no mapa.|Pressione **CTRL** + **Z** ou use o Visual Studio **desfazer** comando.|  
   
-##  <a name="Explore"></a>Procurar o mapa  
+##  <a name="Explore"></a> Procurar o mapa  
   
 |**To**|**Execute estas etapas**|  
 |------------|-----------------------------|  
@@ -77,11 +75,11 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
 |Amplie ou reduzir o mapa.|Gire a roda do mouse.<br /><br /> - ou -<br /><br /> Use o **Zoom** lista suspensa na barra de ferramentas de mapa de código.<br /><br /> - ou -<br /><br /> Use os atalhos de teclado. Para aumentar o zoom, pressione **CTRL + SHIFT +.** (ponto). Para reduzir, pressione **CTRL + SHIFT +,** (vírgula).|  
 |Amplie uma área específica usando o mouse.|Mantenha o botão direito do mouse ao desenhar um retângulo ao redor da área que lhe interessam.|  
 |Redimensionar e ajustar o mapa em sua janela.|Escolha **Ajustar nível de Zoom** do **Zoom** lista na barra de ferramentas de mapa de código.<br /><br /> - ou -<br /><br /> Clique o **Aplicar Zoom para ajustar** ícone ![ícone Zoom na barra de ferramentas do mapa](../modeling/media/almcodemapzoomicon.png "ALMCodeMapZoomIcon") na barra de ferramentas de mapa de código. Teclado: pressione **CTRL + 0** (zero).|  
-|Localize um nó no mapa por seu nome. **Dica:** isso funciona somente para itens no mapa. Para localizar itens em sua solução, mas não no mapa, encontrá-los no **Solution Explorer**e, em seguida, arraste-os para o mapa. (Arraste sua seleção ou na barra de ferramentas do Gerenciador de soluções, clique em **Mostrar no mapa de códigos**).|1.  Escolha o **localizar** ícone ![ícone localizar na barra de ferramentas do mapa](../modeling/media/almcodemapfindicon.png "ALMCodeMapFindIcon") na barra de ferramentas de mapa de código (teclado: pressione **CTRL + F**) para mostrar a caixa de pesquisa no canto superior direito do mapa.<br />2.  Digite o nome do item e pressione **retornar** ou clique no ícone "Lupa". O primeiro item que corresponde a sua pesquisa aparece selecionado no mapa.<br />3.  Para personalizar sua pesquisa, abra a lista suspensa e escolha uma opção de pesquisa. As opções são **Localizar próximo**, **Localizar anterior**, e **Selecionar tudo**. Em seguida, clique no botão correspondente ao lado da caixa de texto de pesquisa.<br />     ![Pesquisar a lista de opções &#45; para baixo a lista](../modeling/media/almcodemapssearchdropdown.png "ALMCodeMapsSearchDropDown")<br />     Como alternativa, use o teclado: pressione **F3** para selecionar o próximo nó correspondente ou **SHIFT + F3** para selecionar o nó correspondente anterior.<br />4.  Selecione qualquer uma das opções que especificam como os termos de pesquisa são tratados clicando nos ícones abaixo a caixa de texto de pesquisa.<br />     ![Opções de correspondência de pesquisa](../modeling/media/almcodemapssearchmatchicons.png "ALMCodeMapsSearchMatchIcons")<br />     As opções são, da esquerda para a direita, caso correspondência confidenciais, somente palavras inteiras, usar sintaxe de expressão regular do .NET, expandir automaticamente os grupos para mostrar as correspondências entre itens. **Importante:** você pode usar a caixa de pesquisa para localizar correspondências em grupos recolhidos somente se os grupos foram previamente expandidos. Para localizar esses correspondências e expandir seus grupos pai automaticamente, escolha esta opção na caixa de pesquisa.|  
+|Localize um nó no mapa por seu nome. **Dica:** isso funciona somente para itens no mapa. Para localizar itens em sua solução, mas não no mapa, encontrá-los no **Solution Explorer**e, em seguida, arraste-os para o mapa. (Arraste sua seleção ou na barra de ferramentas do Gerenciador de soluções, clique em **Mostrar no mapa de códigos**).|1.  Escolha o **localizar** ícone ![ícone localizar na barra de ferramentas do mapa](../modeling/media/almcodemapfindicon.png "ALMCodeMapFindIcon") na barra de ferramentas de mapa de código (teclado: pressione **CTRL + F**) para mostrar a caixa de pesquisa no canto superior direito do mapa.<br />2.  Digite o nome do item e pressione **retornar** ou clique no ícone "Lupa". O primeiro item que corresponde a sua pesquisa aparece selecionado no mapa.<br />3.  Para personalizar sua pesquisa, abra a lista suspensa e escolha uma opção de pesquisa. As opções são **Localizar próximo**, **Localizar anterior**, e **Selecionar tudo**. Em seguida, clique no botão correspondente ao lado da caixa de texto de pesquisa.<br />     ![Lista de opções de pesquisa&#45;para baixo na lista](../modeling/media/almcodemapssearchdropdown.png "ALMCodeMapsSearchDropDown")<br />     Como alternativa, use o teclado: pressione **F3** para selecionar o próximo nó correspondente ou **SHIFT + F3** para selecionar o nó correspondente anterior.<br />4.  Selecione qualquer uma das opções que especificam como os termos de pesquisa são tratados clicando nos ícones abaixo a caixa de texto de pesquisa.<br />     ![Opções de correspondência de pesquisa](../modeling/media/almcodemapssearchmatchicons.png "ALMCodeMapsSearchMatchIcons")<br />     As opções são, da esquerda para a direita, caso correspondência confidenciais, somente palavras inteiras, usar sintaxe de expressão regular do .NET, expandir automaticamente os grupos para mostrar as correspondências entre itens. **Importante:** você pode usar a caixa de pesquisa para localizar correspondências em grupos recolhidos somente se os grupos foram previamente expandidos. Para localizar esses correspondências e expandir seus grupos pai automaticamente, escolha esta opção na caixa de pesquisa.|  
 |Selecione todos os nós não selecionados.|Abra o menu de atalho para os nós selecionados. Escolha **selecione**, **Inverter seleção**.|  
 |Selecione nós adicionais que vinculam às selecionado.|Abra o menu de atalho para os nós selecionados. Escolha **selecione** e uma destas opções:<br /><br /> -Para selecionar nós adicionais que vinculam diretamente para o nó selecionado, escolha **dependências de entrada**.<br />-Para selecionar nós adicionais que vinculam diretamente do nó selecionado, escolha **dependências de saída**.<br />-Para selecionar nós adicionais que o link de e para o nó selecionado, escolha **ambos**.<br />-Para selecionar todos os nós que o link de e para o nó selecionado, escolha **subgráfico conectado**.<br />-Para selecionar todos os filhos do nó selecionado, escolha **filhos**.|  
   
-##  <a name="FilterNodes"></a>Nós de filtro e links  
+##  <a name="FilterNodes"></a> Nós de filtro e links  
   
 |**To**|**Execute estas etapas**|  
 |------------|-----------------------------|  
@@ -92,7 +90,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
   
  Os ícones mostrados no painel de legenda do mapa refletem as configurações que você faz na lista. Para mostrar ou ocultar o painel de legenda, clique o **legenda** na barra de ferramentas de mapa de código.  
   
-##  <a name="Inspect"></a>Examine nós e links  
+##  <a name="Inspect"></a> Examine nós e links  
  Mapas de código mostram esses tipos de links:  
   
 -   Um link individual representa uma única relação entre dois nós.  
@@ -107,13 +105,13 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
 |**To**|**Execute estas etapas**|  
 |------------|-----------------------------|  
 |Consulte para obter mais informações sobre um nó ou um link.|Mova o ponteiro do mouse sobre o nó ou link até que uma dica de ferramenta é exibida.<br /><br /> A dica de ferramenta para um link agregado lista as dependências individuais que ele representa.<br /><br /> - ou -<br /><br /> Abra o menu de atalho para o nó ou link. Escolha **editar**, **propriedades**.|  
-|Mostrar ou ocultar o conteúdo de um grupo.|-Para expandir um grupo, abra o menu de atalho para o nó e escolha **grupo**, **expandir**.<br />     - ou -<br />     Mova o ponteiro do mouse sobre o nó até que o botão de divisa (seta para baixo) é exibido. Clique neste botão para expandir o grupo. Teclado: para expandir ou recolher o grupo selecionado, pressione a **mais** chave (**+**) ou o **menos** chave ( **-** ).<br />-Para recolher um grupo, abra o menu de atalho para o nó e escolha **grupo**, **recolher**.<br />     - ou -<br />     Mova o ponteiro do mouse sobre um grupo até que seja exibido no botão de divisa (seta para cima). Clique neste botão para recolher o grupo.<br />-Para expandir todos os grupos, pressione **CTRL** + **um** para selecionar todos os nós. Abra o menu de atalho para o mapa e escolha **grupo**, **expandir**. **Observação:** este comando não estará disponível se expandir todos os grupos de gerar problemas de memória ou um mapa inutilizável. É recomendável que você expandir o mapa somente para o nível de detalhes importantes para você.<br />-Para recolher todos os grupos, abra o menu de atalho de um nó ou para o mapa. Escolha **grupo**, **Recolher tudo**.|  
+|Mostrar ou ocultar o conteúdo de um grupo.|-Para expandir um grupo, abra o menu de atalho para o nó e escolha **grupo**, **expandir**.<br />     - ou -<br />     Mova o ponteiro do mouse sobre o nó até que o botão de divisa (seta para baixo) é exibido. Clique neste botão para expandir o grupo. Teclado: para expandir ou recolher o grupo selecionado, pressione a **mais** chave (**+**) ou o **menos** chave (**-**).<br />-Para recolher um grupo, abra o menu de atalho para o nó e escolha **grupo**, **recolher**.<br />     - ou -<br />     Mova o ponteiro do mouse sobre um grupo até que seja exibido no botão de divisa (seta para cima). Clique neste botão para recolher o grupo.<br />-Para expandir todos os grupos, pressione **CTRL** + **um** para selecionar todos os nós. Abra o menu de atalho para o mapa e escolha **grupo**, **expandir**. **Observação:** este comando não estará disponível se expandir todos os grupos de gerar problemas de memória ou um mapa inutilizável. É recomendável que você expandir o mapa somente para o nível de detalhes importantes para você.<br />-Para recolher todos os grupos, abra o menu de atalho de um nó ou para o mapa. Escolha **grupo**, **Recolher tudo**.|  
 |Consulte a definição de código de um namespace, tipo ou membro.|Abra o menu de atalho para o nó e escolha **ir para definição**.<br /><br /> -ou-<br /><br /> Clique duas vezes no nó. Para grupos expandidos, clique duas vezes o cabeçalho de grupo.<br /><br /> -ou-<br /><br /> Selecione o nó e pressione **F12**.<br /><br /> Por exemplo:<br /><br /> -Para um namespace que contém uma classe, o arquivo de código para a classe abre para mostrar a definição de classe. Em outros casos, o **localizar resultados de símbolos** janela mostra uma lista de arquivos de código. **Observação:** quando você executar essa tarefa em um namespace do Visual Basic, o arquivo de código por trás de namespace não abre. Esse problema também ocorre quando você executar essa tarefa em um grupo de nós selecionados que incluem um namespace do Visual Basic. Para contornar esse problema, navegar manualmente para o arquivo de código por trás de namespace ou omita o nó para o namespace de sua seleção.<br />-Para uma classe ou uma classe parcial, o arquivo de código para essa classe é aberto para exibir a definição de classe.<br />-Para um método, o arquivo de código para a classe pai abre para mostrar a definição de método.|  
 |Examine as dependências e itens que participam de um link de agregação.|Selecione os links que você está interessado e abra o menu de atalho de sua seleção. Escolha **Mostrar Links participantes** ou **Mostrar Links participantes no novo mapa de código**.<br /><br /> O Visual Studio expande os grupos em ambas as extremidades do link e mostra apenas esses itens e dependências que participam do link. **Observação:** ao examinar as dependências entre os itens em grupos parciais, você poderá ver esse comportamento: <ul><li>Links para itens que não participam analisá desaparecem do mapa, embora esses links ainda existem.</li><li>Suponha que você examina um link para um item em um grupo parcial e examina um link diferentes no mesmo item mais tarde. Durante o exame de segundo, o grupo de destino parcial mostra apenas os itens de seu primeiro exame. Não são exibidos links e itens de destino que não participam de seu primeiro exame mas participem de seu segundo exame.</li></ul> Para ver itens de um grupo ausentes, escolha **filhos buscar novamente**![buscar novamente filhos ícone](../modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon") (que indica que nem todos os membros de um grupo de aparecer no mapa). Você também pode tentar suas ações de desfazer (teclado: pressione **CTRL + Z**) e examine as dependências em um mapa de novo.|  
 |Examine as dependências em vários nós em diferentes grupos.|Expanda os grupos para que você possa ver todos os seus filhos. Selecione todos os nós que lhe interessam, incluindo seus filhos. O mapa mostra os links entre grupos entre os nós selecionados.<br /><br /> Para selecionar todos os nós em um grupo, pressione e segure **SHIFT** e o botão esquerdo do mouse enquanto você desenhar um retângulo ao redor do grupo. Para selecionar todos os nós em um mapa, pressione **CTRL**+**um**. **Dica:** para mostrar os links entre grupos em todos os momentos, escolha **Layout** na barra de ferramentas mapa **avançado**, **Mostrar todos os Links entre grupos**.|  
 |Consulte os itens que faz referência a um nó ou link.|Abra o menu de atalho para o nó e escolha **localizar todas as referências**. **Observação:** isso se aplica somente quando o `Reference` atributo está definido para o nó ou link no arquivo de .dgml do mapa. Para adicionar referências a itens de nós ou links, consulte [mapeia Personalizar código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|  
   
-##  <a name="HidingShowing"></a>Ocultar ou Mostrar nós e links  
+##  <a name="HidingShowing"></a> Ocultar ou Mostrar nós e links  
  Ocultar nós os impede de participar de algoritmos de layout. Por padrão, links de grupo cruzado permanecem ocultos. Links de grupo cruzado são links individuais que conectam nós entre os grupos. Quando os grupos são recolhidos, o mapa agrega todos os links entre grupos em único links entre grupos. Quando você expande um grupo e seleciona nós dentro do grupo, os links de grupo cruzado são exibidos e mostram as dependências nesse grupo.  
   
 > [!CAUTION]
@@ -136,19 +134,19 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
 |Mostre apenas os links entre grupos para nós selecionados.|**Mostrar Links entre grupos em nós selecionados**|  
 |Oculte todos os links.|**Ocultar todos os Links**. Para exibir links novamente, escolha uma das opções listadas acima.|  
   
-##  <a name="OrganizeGroups"></a>Nós de grupo  
+##  <a name="OrganizeGroups"></a> Nós de grupo  
   
 |**To**|**Execute estas etapas**|  
 |------------|-----------------------------|  
 |Mostra nós de contêiner como nós de grupo ou nós folha.|Para mostrar nós de contêiner como nós folha: selecione os nós, abra o menu de atalho de sua seleção e escolha **grupo**, **converter para folha**.<br /><br /> Para mostrar nós de contêiner como nós de grupo: selecione os nós, abra o menu de atalho de sua seleção e escolha **grupo**, **converter para o grupo**.|  
-|Altere o layout dentro de um grupo.|Selecione o grupo, abra o menu de atalho, escolha **Layout**e selecione o estilo de layout desejado.<br /><br /> - ou -<br /><br /> 1.  Selecione o grupo e verifique se que ele é expandido.<br />2.  Clique no cabeçalho de grupo novamente e a barra de ferramentas do grupo é exibida.<br />     ![Gráfico de dependência &#45; barra de ferramentas do grupo](../modeling/media/dependencygraph_group.png "DependencyGraph_Group")<br />3.  Abra o **alterar o estilo de layout do grupo de** lista ![gráfico de dependência &#45; barra de ferramentas do grupo &#45; layout](../modeling/media/dependencygraph_grouptoolbar.gif "DependencyGraph_GroupToolbar") e escolha o layout estilo desejado.<br /><br /> **Exibição de lista** reorganiza os membros do grupo na lista. **Gráfico de padrão** redefine o layout de grupo para o layout padrão de mapa. Para outras opções, consulte [alterar o layout de mapa](#Selecting).|  
+|Altere o layout dentro de um grupo.|Selecione o grupo, abra o menu de atalho, escolha **Layout**e selecione o estilo de layout desejado.<br /><br /> - ou -<br /><br /> 1.  Selecione o grupo e verifique se que ele é expandido.<br />2.  Clique no cabeçalho de grupo novamente e a barra de ferramentas do grupo é exibida.<br />     ![Gráfico de dependência &#45; barra de ferramentas do grupo](../modeling/media/dependencygraph_group.png "DependencyGraph_Group")<br />3.  Abra o **alterar o estilo de layout do grupo de** lista ![gráfico de dependência &#45; barra de ferramentas do grupo &#45; layout](../modeling/media/dependencygraph_grouptoolbar.gif "DependencyGraph_GroupToolbar") e escolha o estilo de layout desejado.<br /><br /> **Exibição de lista** reorganiza os membros do grupo na lista. **Gráfico de padrão** redefine o layout de grupo para o layout padrão de mapa. Para outras opções, consulte [alterar o layout de mapa](#Selecting).|  
 |Adicione um nó a um grupo.|Arraste o nó para o grupo.<br /><br /> Enquanto você arrasta o nó, o Visual Studio exibe um indicador para mostrar que você está movendo o nó.<br /><br /> Também é possível arrastar nós para fora de um grupo.|  
 |Adicione um nó a um nó de grupo.|Arraste o nó para o nó de destino. Você pode converter qualquer nó de destino em um grupo, adicionando nós a ele.|  
 |Grupo de nós selecionados.|1.  Selecione os nós que você deseja agrupar. Uma barra de ferramentas pop-up aparece acima o último nó em que você selecionar.<br />     ![Barra de ferramentas de gráfico de dependência](../modeling/media/depedencygraph_toolbar.png "DepedencyGraph_Toolbar")<br />2.  Na barra de ferramentas, escolha o ícone quarto **agrupar os nós selecionados** (se o nó é expandido ele terá cinco em vez de quatro ícones). Digite o nome para o novo grupo e pressione **retornar**.<br />     - ou -<br />     Selecione os nós que você deseja agrupar e abra o menu de atalho para a sua seleção. Escolha **grupo**, **adicionar grupo de pai**, digite o nome para o novo grupo e pressione **retornar**.<br /><br /> Você pode renomear um grupo. Abra o menu de atalho para o grupo e escolha **editar**, **propriedades** para abrir a janela de propriedades do Visual Studio. No **rótulo** propriedade, renomeie o grupo conforme necessário.|  
 |Remova grupos.|Selecione o grupo ou os grupos que você deseja remover. Abra o menu de atalho de sua seleção e escolha **grupo**, **remover grupo**.|  
 |Remova nós de seu grupo pai.|Selecione os nós que você deseja mover. Abra o menu de atalho de sua seleção e escolha **grupo**, **remover do pai**. Isso remove nós de backup para seu avô, ou para fora do grupo se eles tiverem nenhum grupo avô.<br /><br /> - ou -<br /><br /> Selecione os nós e arraste-os para fora do grupo.|  
   
-##  <a name="AddRemoveNodesLinks"></a>Adicionar, remover ou renomear nós, links e comentários  
+##  <a name="AddRemoveNodesLinks"></a> Adicionar, remover ou renomear nós, links e comentários  
  Você pode exibir mais ou menos itens em um mapa para fazer drill down ou para simplificar o mapa. Você também pode renomear itens e adicionar comentários aos itens.  
   
 > [!CAUTION]
@@ -254,7 +252,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
   
 -   Alterar a cor de plano de fundo do elemento ou limpar o sinalizador de acompanhamento, escolhendo **editar**, **outras cores de sinalizador**.  
   
-##  <a name="ChangeStyleCodeOrLink"></a>Alterar o estilo de um elemento de código ou link  
+##  <a name="ChangeStyleCodeOrLink"></a> Alterar o estilo de um elemento de código ou link  
  Você pode alterar os ícones em elementos de código e as cores dos elementos de código e links usando cores e ícones predefinidos. Por exemplo, você pode escolher uma cor para realçar os elementos de código e links que têm uma certa categoria ou propriedade. Isso permite identificar e se concentrar em áreas específicas do mapa. Você pode especificar cores e ícones personalizados, editando o arquivo de .dgml do mapa. consulte [mapeia Personalizar código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 #### <a name="to-apply-a-predefined-color-or-icon-to-code-elements-or-links-with-a-certain-category-or-property"></a>Para aplicar uma cor predefinida ou um ícone para elementos de código ou links com uma certa categoria ou propriedade  
@@ -263,7 +261,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
   
 2.  No **legenda** caixa, veja se a categoria de elemento de código ou propriedade já aparece na lista.  
   
-3.  Se a lista não inclui a categoria ou propriedade, escolha  **+**  no **legenda** caixa e, em seguida, escolha **propriedade nó**, **categoria de nó** , **Vincular propriedade**, ou **vincular categoria**. Em seguida, escolha a categoria ou propriedade. A categoria ou propriedade aparece agora o **legenda** caixa.  
+3.  Se a lista não inclui a categoria ou propriedade, escolha **+** no **legenda** caixa e, em seguida, escolha **propriedade nó**, **categoria de nó** , **Vincular propriedade**, ou **vincular categoria**. Em seguida, escolha a categoria ou propriedade. A categoria ou propriedade aparece agora o **legenda** caixa.  
   
     > [!NOTE]
     >  Para criar e atribuir uma categoria ou uma propriedade a um elemento de código, você pode editar arquivo de .dgml do mapa. consulte [mapeia Personalizar código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
@@ -275,7 +273,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
     |**Para alterar o**|**Choose**|  
     |-----------------------|----------------|  
     |Cor do plano de fundo|**Tela de Fundo**|  
-    |Cor do contorno|**Stroke**|  
+    |Cor do contorno|**Traço**|  
     |Cor do texto (uma letra "f" é exibida para mostrar o resultado)|**Em primeiro plano**|  
     |Ícone|**Ícones**|  
   
@@ -291,7 +289,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
     > [!NOTE]
     >  Você pode reorganizar, excluir ou desativar temporariamente os estilos de **legenda** caixa. Consulte [editar a caixa legenda](#ModifyLegend).  
   
-##  <a name="ModifyLegend"></a>Editar caixa de legenda  
+##  <a name="ModifyLegend"></a> Editar caixa de legenda  
  Você pode reorganizar, excluir ou desativar temporariamente os estilos de **legenda** caixa:  
   
 1.  Abra o menu de atalho para um estilo de **legenda** caixa.  
@@ -305,7 +303,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
     |Mover o estilo para cima|**Mover para cima**|  
     |Mover o elemento de código para baixo|**Mover para baixo**|  
   
-##  <a name="CopyLegend"></a>Estilos de cópia a partir de um mapa para outro  
+##  <a name="CopyLegend"></a> Estilos de cópia a partir de um mapa para outro  
   
 1.  Verifique se o **legenda** caixa aparece no mapa de origem. Se não estiver visível, na barra de ferramentas do mapa, clique em **legenda**.  
   
@@ -313,7 +311,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
   
 3.  Cole a legenda para o mapa de destino.  
   
-##  <a name="MergeMaps"></a>Mapas de códigos de mesclagem  
+##  <a name="MergeMaps"></a> Mapas de códigos de mesclagem  
  Você pode mesclar mapas, copiando e colando os elementos de código entre mapas. Se os identificadores de elemento de código correspondem, funções de elementos de código de colá-lo como uma operação de mesclagem. Para facilitar essa tarefa, coloque todos os assemblies ou binários que você deseja visualizar na mesma pasta, para que o caminho completo de cada assembly ou binário é o mesmo para cada mapa que você deseja mesclar.  
   
  Como alternativa, você pode arrastar esses assemblies ou binários para o mesmo mapa dessa pasta.  

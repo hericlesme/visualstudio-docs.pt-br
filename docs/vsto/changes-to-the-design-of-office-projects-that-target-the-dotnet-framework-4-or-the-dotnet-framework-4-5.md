@@ -1,12 +1,10 @@
 ---
-title: "Alterações na estrutura de projetos do Office como destino o .NET Framework 4 ou o .NET Framework 4.5 | Microsoft Docs"
-ms.custom: 
+title: Alterações na estrutura de projetos do Office como destino o .NET Framework 4 ou o .NET Framework 4.5 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Alterações no design dos projetos do Office destinados ao .NET Framework 4 ou ao .NET Framework 4.5
   A partir do [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio introduziu algumas alterações na estrutura de projetos do Office destinados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Se você estiver familiarizado com projetos do Office em versões anteriores do Visual Studio, você deve estar atento essas alterações antes de desenvolver projetos do Office que essas versões do .NET Framework 4.0 ou posterior. Por padrão, todos os projetos que você cria usando o Visual Studio 2013 ou posterior direcionam ao .NET Framework 4.0 ou posterior.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |A sintaxe dos métodos GetVstoObject e HasVstoObject foi alterada|Você deve passar o objeto Globals.Factory para esses métodos ao acessá-los em objetos nativos dos assemblies de interoperabilidade primários (PIAs), ou você pode acessar esses métodos no objeto que é retornado pela propriedade Globals.Factory em seu projeto. Para obter mais informações, consulte [Atualizando projetos do Excel e Word que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Os eventos de controles de conteúdo do Word são associados com delegados de novo.|Você deve modificar qualquer código que trata os eventos de controles de conteúdo do Word para especificar os delegados de novo. Para obter mais informações, consulte [Atualizando projetos do Excel e Word que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |As classes OLEObject e OLEControl foram renomeadas.|Você deve modificar qualquer código que usa instâncias dessas classes para usar <xref:Microsoft.Office.Tools.Excel.ControlSite> ou <xref:Microsoft.Office.Tools.Word.ControlSite> objetos em vez disso. Para obter mais informações, consulte [Atualizando projetos do Excel e Word que você migrar para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Classes de item de host, como `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, e `ThisAddIn`, deixará de fornecer um método Dispose que pode ser substituído.|Você precisa mover qualquer código de substituição do método Dispose para o manipulador de eventos de desligamento da classe de item de host, por exemplo, `ThisAddIn_Shutdown`e remova a substituição do método Dispose da classe de item de host.|  
+|Classes de item de host, como `ThisWorkbook`, `Sheet` *n*, `ThisDocument`, e `ThisAddIn`, deixará de fornecer um método Dispose que pode ser substituído.|Você precisa mover qualquer código de substituição do método Dispose para o manipulador de eventos de desligamento da classe de item de host, por exemplo, `ThisAddIn_Shutdown`e remova a substituição do método Dispose da classe de item de host.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Migrando soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

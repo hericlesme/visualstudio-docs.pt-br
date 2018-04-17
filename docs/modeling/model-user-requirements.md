@@ -1,24 +1,22 @@
 ---
-title: "Requisitos de usuário do modelo | Microsoft Docs"
-ms.custom: 
+title: Requisitos de usuário do modelo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1401328b53f03d6ff1121e93ac7e56ebba0e585e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3837c6876c8eb1beecea13fb501a78c764555d9e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 
@@ -59,7 +57,7 @@ Você pode criar várias exibições diferentes dos requisitos dos usuários.  C
   
  Observe que a maioria dos tipos de diagrama pode ser usada para outras finalidades. Para obter uma visão geral dos tipos de diagrama, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).
   
-##  <a name="BusinessRules"></a>Mostrando as regras de negócio
+##  <a name="BusinessRules"></a> Mostrando as regras de negócio
 
 Uma regra de negócios é um requisito que não está associado um caso de uso específico e deve ser observado em todo o sistema.  
   
@@ -79,7 +77,7 @@ Uma regra de negócios é um requisito que não está associado um caso de uso e
 |--------------------|----------|  
 |Como desenvolver o código que segue as regras de negócio|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a>Que descreve a qualidade dos requisitos de serviço
+##  <a name="QoSRequirements"></a> Que descreve a qualidade dos requisitos de serviço
 
 Há várias categorias de qualidade de requisito de serviço. Elas incluem o seguinte:  
   

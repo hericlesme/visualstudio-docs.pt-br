@@ -1,12 +1,10 @@
 ---
-title: "Painéis de tarefas personalizados | Microsoft Docs"
-ms.custom: 
+title: Painéis de tarefas personalizados | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefa personalizados
   Painéis de tarefas estão os painéis de interface do usuário que são normalmente encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Painéis de tarefas personalizados oferecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar recursos da solução. Por exemplo, a interface pode conter controles que execute o código para modificar documentos ou exibir dados de uma fonte de dados.  
@@ -129,7 +128,7 @@ ms.lasthandoff: 01/10/2018
   
  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa automaticamente os recursos usados pelo painel de tarefas personalizado quando o suplemento do VSTO é descarregado. Não chame o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> métodos o `ThisAddIn_Shutdown` manipulador de eventos em seu projeto. Esses métodos lançará um <xref:System.ObjectDisposedException>, pois o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa os recursos usados pelo <xref:Microsoft.Office.Tools.CustomTaskPane> antes do objeto `ThisAddIn_Shutdown` é chamado. Para obter mais informações sobre `ThisAddIn_Shutdown`, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a>Gerenciamento de painéis de tarefas personalizados em várias janelas de aplicativo  
+##  <a name="Managing"></a> Gerenciamento de painéis de tarefas personalizados em várias janelas de aplicativo  
  Quando você cria um painel tarefa personalizada em um aplicativo que usa várias janelas para exibir documentos e outros itens, você precisa realizar etapas adicionais para garantir que o painel de tarefas seja visível quando o usuário esperava que fosse.  
   
  Painéis de tarefas personalizados em todos os aplicativos são associados com uma janela de quadro do documento, que apresenta uma exibição de um documento ou item para o usuário. O painel de tarefas é visível apenas quando a janela associada é visível. No entanto, nem todos os aplicativos usam janelas de quadro do documento da mesma maneira.  
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração de vídeo relacionada, consulte [como fazer i: gerenciar painéis de tarefas nos suplementos do VSTO Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
-##  <a name="Outlook"></a>Outlook  
+##  <a name="Outlook"></a> Outlook  
  Quando você cria um painel tarefa personalizada para o Outlook, o painel de tarefas está associado uma janela de navegador ou Inspetor específica. Pesquisadores são janelas que exibem o conteúdo de uma pasta e inspetores são janelas que exibem um item como uma mensagem de email ou uma tarefa.  
   
  Se você quiser exibir um painel tarefa personalizada com o windows Explorer ou o Inspetor vários, você precisa criar uma nova instância do painel de tarefas personalizado quando uma janela de navegador ou Inspetor é aberta. Para fazer isso, manipular um evento que é gerado quando uma janela de navegador ou Inspetor é criada e, em seguida, criar o painel de tarefas no manipulador de eventos. Você também pode manipular eventos de navegador e Inspetor para ocultar ou exibir os painéis de tarefas dependendo de qual janela está visível.  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
  Se você não remover explicitamente o painel de tarefas, o windows Outlook podem exibir várias instâncias do painel de tarefas personalizadas. Outlook recicla, às vezes, windows e windows reciclados mantém referências a quaisquer painéis de tarefas personalizados que estavam anexados a eles.  
   
-##  <a name="WordAndInfoPath"></a>Word, InfoPath e PowerPoint  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath e PowerPoint  
  Word, InfoPath e PowerPoint exibe cada documento em uma janela do quadro de documento diferente. Quando você cria um painel tarefa personalizada para esses aplicativos, o painel de tarefas é associado somente um documento específico. Se o usuário abrir um documento diferente, o painel de tarefas personalizado está oculto até que o documento anterior esteja visível novamente.  
   
  Se você quiser exibir um painel tarefa personalizada com vários documentos, crie uma nova instância do painel de tarefas personalizado quando o usuário cria um novo documento ou abre um documento existente. Para fazer isso, manipular eventos que são gerados quando um documento é criado ou aberto e, em seguida, criar o painel de tarefas nos manipuladores de eventos. Você também pode manipular eventos de documento para ocultar ou exibir os painéis de tarefas dependendo de qual documento está visível.  

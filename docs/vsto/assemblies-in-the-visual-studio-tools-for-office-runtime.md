@@ -1,13 +1,10 @@
 ---
 title: Assemblies nos Visual Studio Tools for Office Runtime | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,20 +12,20 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22750553e714c0aa02577ee95753e7d5b2bf13f4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 34ce422757ad7e7f7152920252eff6e0c2277261
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assemblies em tempo de execução do Visual Studio Tools para Office
   Quando você cria um projeto do Office, o Visual Studio adiciona automaticamente as referências para o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] assemblies que são usados para o tipo de projeto e o destino do .NET Framework do projeto. Há assemblies diferentes nas extensões do Office para o .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obter mais informações sobre as extensões do Office, consulte [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Assemblies nas extensões do Office para o .NET Framework 4 e o[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
- A tabela a seguir lista os assemblies que são incluídos nas extensões do Office para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obter a documentação sobre os tipos nesses assemblies e namespaces, consulte [referência gerenciada &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
+## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Assemblies nas extensões do Office para o .NET Framework 4 e o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+ A tabela a seguir lista os assemblies que são incluídos nas extensões do Office para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obter a documentação sobre os tipos nesses assemblies e namespaces, consulte [referência gerenciada &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
   
 |Nome do assembly|Descrição|  
 |-------------------|-----------------|  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
 |Microsoft.Office.Tools.Word.v4.0.Utilities.dll|Fornece os seguintes tipos:<br /><br /> -Base classes para gerado `ThisDocument` classe em projetos de nível de documento para Word.<br />-Controles de formulários do Windows que você pode usar em documentos em projetos do Word.|  
   
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Assemblies nas extensões do Office para o .NET Framework 3.5  
- A tabela a seguir lista os assemblies que são incluídos nas extensões do Office para o .NET Framework 3.5. Para obter a documentação sobre os namespaces e classes nesses assemblies, consulte a seguinte seção de referência na documentação do Visual Studio 2008: [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ A tabela a seguir lista os assemblies que são incluídos nas extensões do Office para o .NET Framework 3.5. Para obter a documentação sobre os namespaces e classes nesses assemblies, consulte a seguinte seção de referência na documentação do Visual Studio 2008: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
 |Nome do assembly|Descrição|  
 |-------------------|-----------------|  

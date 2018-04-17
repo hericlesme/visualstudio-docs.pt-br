@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: b60aadee-3bf9-48c3-b2eb-4d5524e927ad
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e85b24889b29d56588f27796ff6891c14c4d3a2
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: c95f383573241edb2bbc31961d60c16d06b03f9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Aplicativos de fluxo de trabalho desenvolvendo que usam o .NET 3,0 ou o .NET Framework 3.5
 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] fornece o Designer de fluxo de trabalho do Windows para criar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplicativos voltados para o [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]. O designer usa a interface do usuário e de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para a compilação e a depuração de aplicativos gráficos de fluxo de trabalho.

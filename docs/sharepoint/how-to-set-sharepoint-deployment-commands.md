@@ -1,13 +1,10 @@
 ---
-title: "Como: definir comandos de implantação do SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Como: definir comandos de implantação do SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +14,21 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f465deaaca406c28aab177434e72de9746fb101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8779ba4ee4cf9803982d9849b3af7c83930d8a5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Como definir comando de implantação do SharePoint
   Você pode personalizar o processo de implantação, definindo comandos pré e pós-implantação. Esses comandos são executados antes e depois de outras ações de implantação quando você depura soluções do SharePoint no Visual Studio.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>Para adicionar um comando de pré-implantação  
   
-1.  Na barra de menus, escolha **projeto**, *ProjectName***propriedades**.  
+1.  Na barra de menus, escolha **projeto**, * * ProjectName**propriedades**.  
   
 2.  Escolha o **SharePoint** guia.  
   
@@ -41,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="to-add-a-post-deployment-command"></a>Para adicionar um comando de pós-implantação  
   
-1.  Na barra de menus, escolha **projeto**, *ProjectName***propriedades**.  
+1.  Na barra de menus, escolha **projeto**, * * ProjectName**propriedades**.  
   
 2.  Escolha o **SharePoint** guia.  
   

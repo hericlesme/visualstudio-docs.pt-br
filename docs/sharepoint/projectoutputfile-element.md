@@ -1,13 +1,10 @@
 ---
 title: Elemento ProjectOutputFile | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - ProjectOutputFile element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b57f00960629d65f264f22532a16202d6ae5d7a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 52898168eb0debf047613a03702647195ab7d3cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectoutputfile-element"></a>Elemento ProjectOutputFile
   Representa a saída de um projeto separado para incluir com o item de projeto quando ele é implantado no SharePoint.  
@@ -46,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|**ProjectId**|Necessário **xs: string** atributo.<br /><br /> O GUID do projeto dependente que tem a saída que você deseja incluir. Isso corresponde do **ProjectGuid** elemento no arquivo de projeto dependente.|  
+|**projectId**|Necessário **xs: string** atributo.<br /><br /> O GUID do projeto dependente que tem a saída que você deseja incluir. Isso corresponde do **ProjectGuid** elemento no arquivo de projeto dependente.|  
 |**ProjectPath**|Necessário **xs: string** atributo.<br /><br /> O caminho relativo, incluindo o nome de arquivo do projeto do projeto dependente que tem a saída que você deseja incluir. Esse caminho é relativo à pasta raiz do projeto do SharePoint que contém o item de projeto do SharePoint.|  
 |**Target**|Opcional **xs: string** atributo.<br /><br /> O caminho onde a saída do projeto dependente deve ser implantado no servidor do SharePoint, relativo à pasta raiz de implantação. A pasta raiz de implantação é determinada pelo tipo de implantação especificado pelo **tipo** atributo.<br /><br /> Para obter mais informações, consulte as descrições para o **caminho de implantação** e **raiz de implantação** propriedades do SharePoint itens de projeto do [desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Tipo**|Necessário **xs: string** atributo.<br /><br /> O tipo de implantação a ser usado para a saída do projeto dependente. Para obter mais informações sobre os valores possíveis, consulte a descrição para o **tipo de implantação** propriedades de itens de projeto do SharePoint no [desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  

@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Criando uma etapa de implantação para projetos SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Criando uma etapa de implantação para projetos SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Instruções passo a passo: criando uma etapa de implantação para projetos SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui várias etapas de implantação interna, mas você também pode criar seus próprios.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Escolha o **projeto VSIX** modelo, nomeie o projeto **UpgradeDeploymentStep**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **UpgradeDeploymentStep** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **UpgradeDeploymentStep** projeto **Gerenciador de soluções**.  
   
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Escolha o **biblioteca de classes** modelo de projeto, nomeie o projeto **DeploymentStepExtension**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **DeploymentStepExtension** projeto à solução e abre o arquivo de código Class1 padrão.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **DeploymentStepExtension** projeto à solução e abre o arquivo de código Class1 padrão.  
   
 5.  Exclua o arquivo de código Class1 do projeto.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Escolha o **concluir** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o projeto EmployeesListDefinition.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o projeto EmployeesListDefinition.  
   
 8.  Abra o menu de atalho para o projeto EmployeesListDefinition, escolha **adicionar**e, em seguida, escolha **Novo Item**.  
   
@@ -289,11 +288,11 @@ ms.lasthandoff: 01/10/2018
   
     3.  **Padrão (em branco)** é escolhido no **criar uma lista personalizada com base em:** lista.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o item de lista de funcionários com uma coluna de título e uma única instância vazia e abre o Designer da lista.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o item de lista de funcionários com uma coluna de título e uma única instância vazia e abre o Designer da lista.  
   
 12. No Designer de lista, no **colunas** guia, escolha o **digite um nome de coluna nova ou existente** de linha e, em seguida, adicione as seguintes colunas no **nome da coluna de exibição** lista:  
   
-    1.  Primeiro nome  
+    1.  Nome  
   
     2.  Empresa  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      O Editor de propriedades/Designer é aberto.  
   
-4.  No **exibições** guia, escolha o **email** coluna e, em seguida, escolha o  **<**  chave para mover a coluna do **selecionado colunas**lista para o **colunas disponíveis** lista.  
+4.  No **exibições** guia, escolha o **email** coluna e, em seguida, escolha o **<** chave para mover a coluna do **selecionado colunas**lista para o **colunas disponíveis** lista.  
   
      Essa ação remove esses campos do modo de exibição padrão de **funcionários** lista no site do SharePoint.  
   

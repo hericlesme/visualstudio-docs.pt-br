@@ -1,12 +1,10 @@
 ---
 title: 'Como: abrir programaticamente os arquivos de texto como pastas de trabalho | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - text files, opening as workbooks
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 45d2b85ea8c005d56ddc076d0b758a0c9e4a2d67
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: cafe64ce693972bd9c254a6bdfc1dcbf70f004c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Como abrir arquivos de texto como pastas de trabalho programaticamente
   Você pode abrir um arquivo de texto como uma pasta de trabalho. Você deve passar o nome do arquivo de texto que você deseja abrir. Você pode especificar vários parâmetros opcionais, como o número da linha para iniciar analisar e o formato de coluna de dados no arquivo.  

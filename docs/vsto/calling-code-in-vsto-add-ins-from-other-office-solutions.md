@@ -1,12 +1,10 @@
 ---
-title: "Chamando código em suplementos do VSTO de outras soluções do Office | Microsoft Docs"
-ms.custom: 
+title: Chamando código em suplementos do VSTO de outras soluções do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - calling code from VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c21ea9555a125503230faa92a5e6508c192a8175
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1f256cf8fd0b5c89a0d9e6a9733680aac9257cd4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>Chamando código em suplementos do VSTO por meio de outras soluções do Office
   Você pode expor um objeto no seu suplemento do VSTO para outras soluções, incluindo outras soluções do Microsoft Office. Isso é útil se o suplemento do VSTO fornece um serviço que você deseja habilitar outras soluções para usar. Por exemplo, se você tiver um suplemento do VSTO para o Microsoft Office Excel que executa cálculos nos dados financeiros de um serviço Web, outras soluções podem executar esses cálculos chamando o suplemento do Excel VSTO em tempo de execução.  
@@ -87,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Como alternativa, você pode expor o [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interface definindo o <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> de atributo para o valor de AutoDispatch ou AutoDual o <xref:System.Runtime.InteropServices.ClassInterfaceType> enumeração. Se você fizer isso, você não precisa declarar os métodos em uma interface separada. No entanto, o código VBA pode chamar métodos públicos e não-estático em sua classe, incluindo métodos obtidos de classes base, como <xref:System.Object>. Além disso, os clientes fora do processo que usam associação inicial não é possível chamar sua classe.  
   
-###  <a name="outofproc"></a>Expondo Classes para clientes fora do processo  
+###  <a name="outofproc"></a> Expondo Classes para clientes fora do processo  
  Se você quiser expor uma classe no seu suplemento do VSTO para clientes fora do processo, você deve derivar a classe de <xref:System.Runtime.InteropServices.StandardOleMarshalObject> para garantir que os clientes fora do processo podem chamar seu objeto exposto do suplemento do VSTO. Caso contrário, as tentativas para obter uma instância do objeto exposto em um cliente fora de processo podem falhar inesperadamente.  
   
  Isso ocorre porque todas as chamadas ao modelo de objeto de um aplicativo do Office devem ser feitas no thread da interface do usuário principal, mas chegarão chamadas de um cliente fora de processo para o objeto em um thread de (chamada de procedimento remoto) de RPC arbitrário. O mecanismo de empacotamento COM o .NET Framework não mudará threads e, em vez disso, ele tentará realizar marshaling da chamada para o objeto no thread RPC de entrada em vez do thread de interface do usuário principal. Se o objeto é uma instância de uma classe que deriva de <xref:System.Runtime.InteropServices.StandardOleMarshalObject>, chamadas de entrada para seu objeto são empacotadas automaticamente para o thread em que foi criado o objeto exposto, que será o thread de interface do usuário principal do aplicativo host.  

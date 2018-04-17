@@ -1,12 +1,10 @@
 ---
 title: 'Como: adicionar controles Chart a planilhas | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 74ea64dc0f73d642d3d5ea7e693eda42c8d882c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d951b70566231db956ef8771b022937af5ee5807
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Como adicionar controles Chart a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles a uma planilha do Excel do Microsoft Office em tempo de design e em tempo de execução em personalizações no nível do documento. Você também pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles em tempo de execução em suplementos do VSTO.  
@@ -38,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.Chart> controles, consulte [controle de gráfico](../vsto/chart-control.md).  
   
-##  <a name="designtime"></a>Adicionando controles de gráfico em tempo de Design  
+##  <a name="designtime"></a> Adicionando controles de gráfico em tempo de Design  
  Você pode adicionar o <xref:Microsoft.Office.Tools.Excel.Chart> controle à sua planilha da mesma maneira que você adicionará um gráfico de dentro do aplicativo.  
   
 > [!NOTE]  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  No **Selecionar fonte de dados** caixa de diálogo, clique em **Okey**.  
   
-##  <a name="runtimedoclevel"></a>Adicionando controles de gráfico em tempo de execução em um projeto no nível do documento  
+##  <a name="runtimedoclevel"></a> Adicionando controles de gráfico em tempo de execução em um projeto no nível do documento  
  Você pode adicionar o <xref:Microsoft.Office.Tools.Excel.Chart> controle dinamicamente em tempo de execução. Criado dinamicamente gráficos não são mantidos no documento de forma que os controles de host quando o documento é fechado. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Para adicionar um controle de gráfico em uma planilha programaticamente  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]  
   
-##  <a name="runtimeaddin"></a>Adicionando controles de gráfico em tempo de execução em um projeto de suplemento do VSTO  
+##  <a name="runtimeaddin"></a> Adicionando controles de gráfico em tempo de execução em um projeto de suplemento do VSTO  
  Você pode adicionar um <xref:Microsoft.Office.Tools.Excel.Chart> controle programaticamente para qualquer planilha aberta em um projeto de suplemento do VSTO. Para obter mais informações, consulte [Estendendo documentos do Word e pastas de trabalho do Excel no suplemento do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
  Controles de gráfico criado dinamicamente não são mantidos na planilha de forma que os controles de host quando a planilha está fechada. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  

@@ -1,12 +1,10 @@
 ---
 title: Criar recursos do SharePoint | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-features"></a>Criando Funcionalidades do SharePoint
   Você pode usar um recurso do SharePoint para agrupar itens de projeto do SharePoint relacionados para facilitar a implantação. Você pode criar recursos, definir escopos e marcar outros recursos como dependências usando o Designer de recursos do SharePoint. O designer também gera um manifesto, que é um arquivo XML que descreve cada recurso.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 |Propriedade|Descrição|  
 |--------------|-----------------|  
-|Título|Opcional. O título padrão do recurso é definido como *SolutionName**FeatureName*.|  
+|Título|Opcional. O título padrão do recurso é definido como *SolutionName * * FeatureName*.|  
 |Descrição|Opcional. A descrição do recurso do SharePoint.|  
 |Escopo|Necessário. Se um recurso for criado usando **Solution Explorer**, o escopo é definido na Web por padrão.<br /><br /> -Farm: Ative um recurso para um farm de servidores inteiro.<br /><br /> -Site: Ative um recurso para todos os sites em uma coleção de sites.<br /><br /> -Web: Ative um recurso para um site específico.<br /><br /> -WebApplication: Ative um recurso para todos os sites da web em um aplicativo web.|  
 |Itens da solução|Todos os itens do SharePoint que pode ser adicionado ao recurso.|  

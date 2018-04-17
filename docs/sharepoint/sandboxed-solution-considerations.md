@@ -1,12 +1,10 @@
 ---
-title: "Considerações sobre a solução em área restrita | Microsoft Docs"
-ms.custom: 
+title: Considerações sobre a solução em área restrita | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerações de solução em área restrita
   *Soluções em modo seguro* são um recurso do Microsoft SharePoint 2010 que permite que os usuários da coleção de site carregar suas próprias soluções de código personalizado. Uma solução em área restrita comum é carregar suas próprias Web Parts de usuários.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Um aplicativo em modo seguro do SharePoint é executado em um processo monitorado seguro que tem acesso a uma parte limitada do Web farm. Microsoft SharePoint 2010 usa uma combinação de recursos, galerias de solução, solução de monitoramento e uma estrutura de validação para habilitar soluções em modo seguro.  
   
 ## <a name="specifying-project-trust-level"></a>Especificar o nível de confiança do projeto  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]dá suporte a soluções em modo seguro através de uma propriedade booleana projeto chamadas *solução em área restrita*. Essa propriedade pode ser definida a qualquer momento no projeto, ou ele pode ser especificado quando você cria o projeto no **Assistente de personalização do SharePoint**.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dá suporte a soluções em modo seguro através de uma propriedade booleana projeto chamadas *solução em área restrita*. Essa propriedade pode ser definida a qualquer momento no projeto, ou ele pode ser especificado quando você cria o projeto no **Assistente de personalização do SharePoint**.  
   
 > [!NOTE]  
 >  Alterando o *solução em área restrita* propriedade de um projeto após sua criação pode causar erros de validação.  
@@ -74,7 +73,7 @@ ms.lasthandoff: 01/10/2018
  No WSS 3.0, soluções podem ser implantadas somente para o nível do farm. Isso significa que potencialmente perigosos ou desestabilizar soluções podem ser implantadas que afetado do Web farm inteiro e todos os conjuntos de sites e aplicativos que são executados sob ele. No entanto, usando soluções em modo seguro, você pode implantar suas soluções para uma subárea do farm, um conjunto de sites específicas. Para fornecer proteção adicional, o assembly da solução não é carregado no principal [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processo (w3wp.exe). Em vez disso, ele é carregado em um processo separado (SPUCWorkerProcess.exe). Esse processo é monitorado e implementa cotas e limitação para proteger o farm de soluções em modo seguro que executam atividades prejudiciais, como a execução de loops rígidos que consomem os ciclos de CPU.  
   
 ## <a name="site-collection-solution-gallery"></a>Galeria de soluções do conjunto de sites  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]2010 tem um recurso que é conhecido como a "Galeria de soluções de coleta de site". Você pode acessar esse recurso na página do SharePoint 2010 Central Administration ou abrindo o **ações do Site** menu, escolha **configurações de Site**e, em seguida, escolhendo o **soluções** link em **galerias** no site do SharePoint. Galerias de solução são repositórios de soluções que permitem que os administradores de coleção de sites gerenciar soluções em seus conjuntos de sites.  
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 tem um recurso que é conhecido como a "Galeria de soluções de coleta de site". Você pode acessar esse recurso na página do SharePoint 2010 Central Administration ou abrindo o **ações do Site** menu, escolha **configurações de Site**e, em seguida, escolhendo o **soluções** link em **galerias** no site do SharePoint. Galerias de solução são repositórios de soluções que permitem que os administradores de coleção de sites gerenciar soluções em seus conjuntos de sites.  
   
  A Galeria de soluções é uma biblioteca de documentos armazenada na raiz da Web do site do SharePoint. A Galeria de soluções substitui os modelos de site e oferece suporte a pacotes de solução. Quando um arquivo de pacote (. wsp) de solução do SharePoint é carregado, ele é processado como uma solução em área restrita.  
   
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   Suporte para todas as Web Parts que derivam de`System.Web.UI.WebControls.WebParts.WebPart`  
+-   Suporte para todas as Web Parts que derivam de `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Web Parts  
   
