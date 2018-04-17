@@ -1,12 +1,10 @@
 ---
 title: 'Como: redimensionar controles NamedRange | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - ranges, resizing in Excel
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91d44f3ddd65c9e949c44b50d069c91c7beef5b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6d475f9140607ba0ae7415a60a9589aef11a44a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Como redimensionar controles NamedRange
   Você pode definir o tamanho de um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle quando você adiciona a um documento do Microsoft Office Excel; no entanto, você pode redimensioná-la mais tarde.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Redimensionar controles NamedRange em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)  
   
-##  <a name="designtime"></a>Redimensionar controles NamedRange em tempo de Design  
+##  <a name="designtime"></a> Redimensionar controles NamedRange em tempo de Design  
  Você pode redimensionar um intervalo nomeado redefinindo seu tamanho no **definir nome** caixa de diálogo.  
   
 #### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Para redimensionar um intervalo nomeado usando a caixa de diálogo Definir nome  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Clique em **OK**.  
   
-##  <a name="runtimedoclevel"></a>Redimensionar controles NamedRange em tempo de execução em um projeto no nível de documento  
+##  <a name="runtimedoclevel"></a> Redimensionar controles NamedRange em tempo de execução em um projeto no nível de documento  
  Você pode redimensionar um intervalo nomeado programaticamente usando o <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> propriedade.  
   
 > [!NOTE]  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
   
-##  <a name="runtimeaddin"></a>Redimensionar controles NamedRange em tempo de execução em um projeto de suplemento do VSTO  
+##  <a name="runtimeaddin"></a> Redimensionar controles NamedRange em tempo de execução em um projeto de suplemento do VSTO  
  Você pode redimensionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle em qualquer planilha aberta em tempo de execução. Para obter mais informações sobre como adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> para uma planilha usando um suplemento do VSTO, consulte [como: adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 #### <a name="to-resize-a-named-range-programmatically"></a>Para redimensionar um intervalo nomeado programaticamente  

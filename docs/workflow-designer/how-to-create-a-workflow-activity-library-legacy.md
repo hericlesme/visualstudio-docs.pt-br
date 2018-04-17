@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d6fb1aebc6810a271eda8806fe6ac83060f73f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 18fa570f732f71336ce5a2f5e8e56d1185366afa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Como: Crie uma biblioteca de atividade de fluxo de trabalho (o legados)
 
@@ -26,7 +26,7 @@ Siga estas etapas para criar um projeto de biblioteca de atividades de fluxo de 
 
 1.  Inicie o Visual Studio.
 
-2.  Sobre o **arquivo** , aponte para **novo**e, em seguida, selecione **projeto**.
+2.  No menu **Arquivo**, aponte para **Novo** e selecione **Projeto**.
 
      A caixa de diálogo **Novo Projeto** é aberta.
 

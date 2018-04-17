@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Criando seu primeiro suplemento VSTO para Outlook | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3f92c898b6eb8ba0f143e0a2069e35c70cc6e6b2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d748ef190ef60de5ae7f7300051bb1b524462d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>Passo a passo: criando seu primeiro suplemento VSTO para Outlook
-  Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office Outlook. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual item do Outlook estiver aberto. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office Outlook. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual item do Outlook estiver aberto. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -67,12 +66,12 @@ ms.lasthandoff: 01/10/2018
   
 7.  Clique em **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstOutlookAddIn** projeto e abrirá o **ThisAddIn** arquivo de código no editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstOutlookAddIn** projeto e abrirá o **ThisAddIn** arquivo de código no editor.  
   
 ## <a name="writing-code-that-adds-text-to-each-new-mail-message"></a>Escrevendo código que adiciona o texto para cada nova mensagem de email  
  Em seguida, adicione código ao arquivo de código ThisAddIn. O novo código usa o modelo de objeto do Outlook para adicionar texto para cada nova mensagem de email. Por padrão, o arquivo de código da classe ThisAddIn contém o seguinte código gerado:  
   
--   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do Outlook. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
+-   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do Outlook. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
   
 -   O `ThisAddIn_Startup` e `ThisAddIn_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o Outlook carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar o suplemento do VSTO quando ele é carregado e para limpar os recursos usados pelo seu suplemento do VSTO quando ela é descarregada. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   
@@ -128,7 +127,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>Próximas etapas  
  Agora que você criou um básico do VSTO suplemento para Outlook, você pode aprender mais sobre como desenvolver um suplemento do VSTO com estes tópicos:  
   
--   Tarefas de programação gerais que você pode executar usando os suplementos do VSTO para Outlook. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Tarefas de programação gerais que você pode executar usando os suplementos do VSTO para Outlook. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
 -   Usando o modelo de objeto do Outlook. Para obter mais informações, consulte [soluções do Outlook](../vsto/outlook-solutions.md).  
   

@@ -1,23 +1,21 @@
 ---
-title: "Depuração XSLT | Microsoft Docs"
-ms.custom: 
+title: Depuração XSLT | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0d610a7410232104428281d90bf7c67992e2a378
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3ab34eead94f6d70fb18a8c6a6a2194abba460c2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-xslt"></a>Depuração do XSLT
 Você pode usar o depurador do Visual Studio para depurar XSLT. O depurador oferece suporte pontos de interrupção, estados de execução XSLT de exibição, e assim por diante. Depuração XSLT está disponível no Visual Studio Team System e na edição professional.  

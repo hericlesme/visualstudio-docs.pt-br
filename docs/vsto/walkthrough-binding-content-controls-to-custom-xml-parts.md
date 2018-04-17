@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Associando controles de conteúdo a partes XML personalizadas | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Associando controles de conteúdo a partes XML personalizadas | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Instruções passo a passo: associando controles de conteúdo a partes XML personalizadas
   Este passo a passo demonstra como associar controles de conteúdo em uma personalização de nível de documento para Word para dados XML que são armazenados no documento.  
@@ -64,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Criar um projeto de documento do Word com o nome **EmployeeControls**. Crie um novo documento para a solução. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre um novo documento do Word no designer e adiciona o **EmployeeControls** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre um novo documento do Word no designer e adiciona o **EmployeeControls** projeto **Gerenciador de soluções**.  
   
 ## <a name="adding-content-controls-to-the-document"></a>Adicionando controles de conteúdo do documento  
  Crie uma tabela que contém três tipos diferentes de controles de conteúdo em que o usuário pode exibir ou editar informações sobre o funcionário.  

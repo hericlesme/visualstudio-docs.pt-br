@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Vinculação de dados de um serviço em um VSTO suplemento projeto | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Vinculação de dados de um serviço em um VSTO suplemento projeto | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], scrolling database records
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 386a8c14ebb831a47c6d08d6fd45f9c3d614263d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a89b9455051031b3faa0a44102f2fe97dca97d89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Passo a passo: Associando a dados de um serviço em um projeto de suplemento do VSTO
   Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este passo a passo demonstra como adicionar controles a um documento do Microsoft Office Word, vincular controles a dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.  
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  No **endereço** campo, digite a seguinte URL:  
   
-     **http://Services.msdn.microsoft.com/contentservices/contentservice.asmx**  
+     **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**  
   
 4.  Click **Go**.  
   

@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Criando seu primeiro suplemento VSTO para Project | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1e1b768a8d812d3a4c0222bbb3e762c0f5046f56
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3572f07a9bb0e3fc9a38ec55ae260e19dd671620
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-project"></a>Passo a passo: Criando seu primeiro suplemento VSTO para Project
-  Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office Project. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual projeto estiver aberto. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office Project. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual projeto estiver aberto. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
   
@@ -67,12 +66,12 @@ ms.lasthandoff: 01/10/2018
   
 7.  Clique em **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstProjectAddIn** projeto e abrirá o **ThisAddIn** arquivo de código no editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstProjectAddIn** projeto e abrirá o **ThisAddIn** arquivo de código no editor.  
   
 ## <a name="writing-code-that-adds-a-new-task-to-a-project"></a>Escrevendo código que adiciona uma nova tarefa a um projeto  
  Em seguida, adicione código ao arquivo de código ThisAddIn. O novo código usa o modelo de objeto do projeto para adicionar uma nova tarefa a um projeto. Por padrão, o arquivo de código da classe ThisAddIn contém o seguinte código gerado:  
   
--   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do projeto. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
+-   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do projeto. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
   
 -   O `ThisAddIn_Startup` e `ThisAddIn_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o projeto carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar o suplemento do VSTO quando ele é carregado e para limpar os recursos usados pelo seu suplemento do VSTO quando ela é descarregada. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   

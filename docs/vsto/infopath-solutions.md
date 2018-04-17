@@ -1,12 +1,10 @@
 ---
-title: "Soluções InfoPath | Microsoft Docs"
-ms.custom: 
+title: Soluções InfoPath | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], InfoPath
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4e59b91ff6159af8f6e5736621c0443d3d96c8b5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9db28542e4141767be55241b98e0a6b762b0e236
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="infopath-solutions"></a>Soluções InfoPath
   O Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para o Microsoft Office InfoPath 2013 e InfoPath 2010. O InfoPath não está disponível no Office 2016.  
@@ -45,9 +44,9 @@ ms.lasthandoff: 01/10/2018
 >  Visual Studio 2015 não inclui os projetos de modelo de formulário do InfoPath que foram fornecidos nas versões anteriores do Visual Studio. Você também não pode usar o Visual Studio 2015 para abrir ou editar um projeto de modelo de formulário do InfoPath foi criado em uma versão anterior do Visual Studio. No entanto, você pode abrir e editar um projeto de modelo de formulário do InfoPath usando Visual Studio Tools for Applications. Para obter mais informações, consulte [trabalhar com projetos de 2008 do VSTO em InfoPath 2010.](http://go.microsoft.com/fwlink/?LinkID=218903).  
   
 ## <a name="automating-infopath-by-using-an-add-in"></a>Automatizando o InfoPath usando um suplemento  
- Para acessar o modelo de objeto do InfoPath do Office VSTO e suplementos criados usando ferramentas de desenvolvimento do Office no Visual Studio, use o `Application` campo o `ThisAddIn` classe em seu projeto. O `Application` campo retorna um <xref:Microsoft.Office.Interop.InfoPath.Application> objeto que representa a instância atual do InfoPath. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+ Para acessar o modelo de objeto do InfoPath do Office VSTO e suplementos criados usando ferramentas de desenvolvimento do Office no Visual Studio, use o `Application` campo o `ThisAddIn` classe em seu projeto. O `Application` campo retorna um <xref:Microsoft.Office.Interop.InfoPath.Application> objeto que representa a instância atual do InfoPath. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
- Quando você chama o modelo do objeto do InfoPath de um suplemento do VSTO, você pode usar tipos fornecidos no assembly de interoperabilidade primário para InfoPath. O assembly de interoperabilidade primária atua como uma ponte entre o código gerenciado no suplemento do VSTO e o modelo de objeto COM do InfoPath. Todos os tipos no assembly de interoperabilidade primário do InfoPath são definidos no <xref:Microsoft.Office.Interop.InfoPath> namespace. Para obter mais informações sobre o assembly de interoperabilidade primária do InfoPath, consulte [sobre o Microsoft Office InfoPath Assembly de interoperabilidade primário](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Para obter mais informações sobre assemblies de interoperabilidade primários em geral, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) e [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
+ Quando você chama o modelo do objeto do InfoPath de um suplemento do VSTO, você pode usar tipos fornecidos no assembly de interoperabilidade primário para InfoPath. O assembly de interoperabilidade primária atua como uma ponte entre o código gerenciado no suplemento do VSTO e o modelo de objeto COM do InfoPath. Todos os tipos no assembly de interoperabilidade primário do InfoPath são definidos no <xref:Microsoft.Office.Interop.InfoPath> namespace. Para obter mais informações sobre o assembly de interoperabilidade primária do InfoPath, consulte [sobre o Microsoft Office InfoPath Assembly de interoperabilidade primário](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72). Para obter mais informações sobre assemblies de interoperabilidade primários em geral, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="customizing-the-user-interface-of-infopath-by-using-an-add-in"></a>Personalizando a Interface do usuário do InfoPath usando um suplemento  
  Quando você criar um suplemento do VSTO para InfoPath, você tem várias opções diferentes de personalização da interface do usuário. A tabela a seguir lista algumas dessas opções.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Consulte também  
  [Sobre o Assembly de interoperabilidade primária do InfoPath do Microsoft Office](http://msdn.microsoft.com/en-us/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
  [Guia de Introdução Programando suplementos do VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   

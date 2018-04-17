@@ -1,5 +1,5 @@
 ---
-title: "Como: criar aplicativos de Console de fluxo de trabalho de máquina de estado (o legados) | Microsoft Docs"
+title: 'Como: criar aplicativos de Console de fluxo de trabalho de máquina de estado (o legados) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: d6170b5d-5d4f-48e1-8257-c78604f27eac
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d345afcddaae2e3a139fbf7861b78f57774ead6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bc38466c29bbe88202561daf5ee9097367040310
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Como: Criar aplicativos de console do fluxo de trabalho do computador de estado (o legados)
 Siga estas etapas para criar um projeto de aplicativo de Console de fluxo de trabalho de máquina de estado usando o Designer de fluxo de trabalho herdado do Windows fornecida pelo [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -25,7 +25,7 @@ Siga estas etapas para criar um projeto de aplicativo de Console de fluxo de tra
 
 1.  Inicie o Visual Studio.
 
-2.  Sobre o **arquivo** , aponte para **novo**e, em seguida, selecione **projeto**.
+2.  No menu **Arquivo**, aponte para **Novo** e selecione **Projeto**.
 
      A caixa de diálogo **Novo Projeto** é aberta.
 

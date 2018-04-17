@@ -9,14 +9,14 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd8875fe9215f3ee8f0f187b84c0d38833764e3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f7db449f538f09a247bc3c67ee26f487a6c81eb0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="flowchart-activity-designer"></a>Designer de atividade do fluxograma
 A atividade de <xref:System.Activities.Statements.Flowchart> é usada para criar fluxos de trabalho que definem e gerencia controles de fluxo complexos. <xref:System.Activities.Statements.Flowchart> pode ser criado em código ou usando [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Este tópico documenta a experiência de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] . O designer de atividade de fluxo de trabalho do Designer de fluxo de trabalho do Windows permite aos desenvolvedores criar fluxos de trabalho de maneira natural.

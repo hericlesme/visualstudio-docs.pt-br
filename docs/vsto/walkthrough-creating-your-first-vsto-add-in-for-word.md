@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Criando seu primeiro suplemento VSTO para Word | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3452bd5e550ab724dc6c236515579869814a9237
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Passo a passo: criando o seu primeiro suplemento VSTO para o Word
   Este passo a passo introdutório mostra como criar um suplemento do VSTO para o Microsoft Office Word. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual documentos estiverem abertos.  
@@ -67,12 +66,12 @@ ms.lasthandoff: 01/10/2018
   
 7.  Clique em **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstWordAddIn** do projeto e abre o arquivo de código da classe ThisAddIn no editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstWordAddIn** do projeto e abre o arquivo de código da classe ThisAddIn no editor.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-document"></a>Escrevendo código para adicionar texto ao documento salvo  
  Em seguida, adicione código ao arquivo de código ThisAddIn. O novo código usa o modelo de objeto do Word para adicionar texto clichê para cada documento salvo. Por padrão, o arquivo de código da classe ThisAddIn contém o seguinte código gerado:  
   
--   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do Word. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
+-   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do Word. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
   
 -   O `ThisAddIn_Startup` e `ThisAddIn_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o Word carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar o suplemento do VSTO quando ele é carregado e para limpar os recursos usados pelo seu suplemento do VSTO quando ela é descarregada. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   
@@ -137,7 +136,7 @@ ms.lasthandoff: 01/10/2018
 -   Implantação de suplementos do VSTO para Word: [implantar uma solução Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Soluções do Word](../vsto/word-solutions.md)   
  [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   
  [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)   

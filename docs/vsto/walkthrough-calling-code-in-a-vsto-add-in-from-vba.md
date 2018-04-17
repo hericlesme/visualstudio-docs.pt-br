@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Chamando código em um suplemento do VSTO por meio do VBA | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Chamando código em um suplemento do VSTO por meio do VBA | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - calling code from VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 677ddfef196c79d1dd696889fd16dcfa0300ccff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 74ca5c12acf7b3bde5a009d5a45d4741451b1760
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Passo a passo: chamando código em um suplemento do VSTO por meio do VBA
   Este passo a passo demonstra como expor um objeto em um suplemento do VSTO para outras soluções do Microsoft Office, incluindo o Visual Basic for Applications (VBA) e suplementos do VSTO COM.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Criar um projeto de suplemento do VSTO do Excel com o nome **ExcelImportData**, usando o modelo de projeto de suplemento do VSTO do Excel. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre o **ThisAddIn.cs** ou **ThisAddIn** arquivo de código e adiciona o **ExcelImportData** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o **ThisAddIn.cs** ou **ThisAddIn** arquivo de código e adiciona o **ExcelImportData** projeto **Gerenciador de soluções**.  
   
 ## <a name="defining-a-class-that-you-can-expose-to-other-office-solutions"></a>Definindo uma classe que você pode expor para outras soluções do Office  
  O objetivo deste passo a passo é chamar o `ImportData` método de uma classe denominada `AddInUtilities` no seu suplemento do VSTO do código do VBA. Esse método grava uma cadeia de caracteres na célula A1 da planilha ativa.  
@@ -147,7 +146,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>Próximas etapas  
  Você pode aprender mais sobre como programar o suplemento do VSTO com estes tópicos:  
   
--   Use o `ThisAddIn` classe para automatizar o aplicativo de host e executar outras tarefas em projetos de suplemento do VSTO. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Use o `ThisAddIn` classe para automatizar o aplicativo de host e executar outras tarefas em projetos de suplemento do VSTO. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
 -   Crie um painel tarefa personalizada em um suplemento do VSTO. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md) e [como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   

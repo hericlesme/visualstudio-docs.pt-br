@@ -1,13 +1,10 @@
 ---
-title: "Usando controles WPF em soluções do Office | Microsoft Docs"
-ms.custom: 
+title: Usando controles WPF em soluções do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - WPF [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ee8c574f6f654aca166844d85a30f2d3d9d4c3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d4aa0fce1700f6608d36231a3ab38db97e5ce826
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>Usando controles WPF em soluções do Office
   Embora soluções criadas usando as ferramentas de desenvolvimento do Office no Visual Studio são projetadas para trabalhar com diretamente com controles de formulários do Windows, você também pode usar controles WPF em suas soluções. Windows Presentation Foundation (WPF) é uma alternativa para formulários do Windows para a criação de interfaces do usuário. WPF usa uma linguagem de marcação chamada Extensible Application marcação idioma (XAML) para fornecer novas técnicas para a incorporação de documentos, mídia e interface do usuário. Para obter mais informações, consulte [Introdução ao WPF no Visual Studio 2015](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs).  

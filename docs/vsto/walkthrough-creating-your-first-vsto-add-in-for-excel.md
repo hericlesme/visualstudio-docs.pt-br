@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Criando seu primeiro suplemento VSTO para Excel | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: de2b241cd44adebecd91ee097ebf8f8875915937
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6c68bd90f1a0a106771bd011e9baf91552678ac6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>Passo a passo: criando o primeiro suplemento do VSTO para Excel
   Este passo a passo introdutório mostra como criar um suplemento de nível de aplicativo para o Microsoft Office Excel. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de quais pastas de trabalho estão abertas.  
@@ -67,12 +66,12 @@ ms.lasthandoff: 01/10/2018
   
 7.  Clique em **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstExcelAddIn** do projeto e abre o arquivo de código da classe ThisAddIn no editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstExcelAddIn** do projeto e abre o arquivo de código da classe ThisAddIn no editor.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-workbook"></a>Escrevendo código para adicionar texto para a pasta de trabalho salva  
  Em seguida, adicione código ao arquivo de código ThisAddIn. O novo código usa o modelo de objeto do Excel para inserir texto clichê na primeira linha da planilha ativa. A planilha ativa é a planilha é aberta quando o usuário salva a pasta de trabalho. Por padrão, o arquivo de código da classe ThisAddIn contém o seguinte código gerado:  
   
--   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do Excel. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
+-   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do Excel. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
   
 -   O `ThisAddIn_Startup` e `ThisAddIn_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o Excel carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar o suplemento do VSTO quando ele é carregado e para limpar os recursos usados pelo seu suplemento quando ele é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   
@@ -134,7 +133,7 @@ ms.lasthandoff: 01/10/2018
 -   Implantação de suplementos do VSTO para Excel: [implantar uma solução Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Soluções do Excel](../vsto/excel-solutions.md)   
  [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   
  [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)   

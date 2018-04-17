@@ -1,12 +1,10 @@
 ---
 title: '&lt;postActions&gt; elemento (desenvolvimento do Office no Visual Studio) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - <postActions> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbe0708ce97eb6410f006b6dcdc8d8194907b9c1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2c4dafa1c5ac7ef296ba388ecdfd93d00afef708
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `postActions` elemento do `vstav3` namespace contém tudo o `postAction` elementos que descrevem as ações de pós-implantação, que são executados após a instalação de soluções do Office.  
@@ -45,10 +44,10 @@ ms.lasthandoff: 01/10/2018
   
  O `postActions` elemento não tem atributos.  
   
- `postActions`tem o seguinte elemento.  
+ `postActions` tem o seguinte elemento.  
   
 ### <a name="postaction"></a>postAction  
- Opcional. A função da `postAction` elemento o `vstav3` namespace está definido em [&#60; postAction &#62; Elemento &#40; desenvolvimento do Office no Visual Studio &#41; ](../vsto/postaction-element-office-development-in-visual-studio.md).  
+ Opcional. A função da `postAction` elemento o `vstav3` namespace está definido em [ &#60;postAction&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Exemplo de ação de pós-implantação  
   

@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 683c482436e968ff9d2a1bd4ce0bbb8e173a5520
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 444ea597fd6c76c8312369afcbc497e640bace6f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="terminateworkflow-activity-designer"></a>Designer de atividade de TerminateWorkflow
 O **TerminateWorkflow** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.TerminateWorkflow> atividade.
@@ -39,4 +39,4 @@ O **TerminateWorkflow** designer de atividade é usado para criar e configurar u
 ## <a name="see-also"></a>Consulte também
 
 - [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
-- [Persist](../workflow-designer/persist-activity-designer.md)
+- [Manter](../workflow-designer/persist-activity-designer.md)

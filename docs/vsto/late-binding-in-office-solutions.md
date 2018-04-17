@@ -1,12 +1,10 @@
 ---
-title: "Associação tardia em soluções do Office | Microsoft Docs"
-ms.custom: 
+title: Associação tardia em soluções do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - casting, object to specific type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Associação tardia em soluções do Office
   Alguns tipos de modelos de objeto dos aplicativos do Office fornecem funcionalidade que está disponível por meio de recursos de associação tardia. Por exemplo, alguns métodos e propriedades podem retornar diferentes tipos de objetos, dependendo do contexto do aplicativo do Office, e alguns tipos podem expor métodos ou propriedades em diferentes contextos.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  Na maioria dos casos, a documentação de referência lista os possíveis tipos de valor de retorno para um membro que retorna um <xref:System.Object>. Convertendo ou convertendo o objeto habilita IntelliSense para o objeto no Editor de códigos.  
   
- Para obter informações sobre a conversão em Visual Basic, consulte [implícita e explícita conversões &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) e [função CType &#40; Visual Basic &#41; ](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Para obter informações sobre a conversão em Visual Basic, consulte [conversões explícitas e implícitas &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) e [função CType &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Exemplos  
  O exemplo de código a seguir demonstra como converter um objeto para um tipo específico em um projeto do Visual Basic onde **Option Strict** está em. Esse tipo de projeto, é necessário converter explicitamente o <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> propriedade para um <xref:Microsoft.Office.Interop.Excel.Range>. Este exemplo requer que um projeto de nível de documento do Excel com uma classe de planilha denominada `Sheet1`.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Consulte também  
  [Escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
  [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Usando o tipo dinâmico &#40; C &#35; Guia de programação &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Usando o tipo dynamic &#40;C&#35; guia de programação&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Instrução Option Strict](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflexão (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexão (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  

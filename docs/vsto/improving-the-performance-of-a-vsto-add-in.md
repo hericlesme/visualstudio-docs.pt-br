@@ -1,24 +1,23 @@
 ---
 title: Melhorando o desempenho de um suplemento do VSTO | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Melhorando o desempenho de um suplemento do VSTO
   Você pode dar aos usuários uma experiência melhor otimizando suplementos do VSTO que você cria para o Office aplicativos para que eles iniciarem rapidamente, desligar, abrir itens e executar outras tarefas. Se o suplemento do VSTO para Outlook, você também pode reduzir a chance de que seu suplemento do VSTO será desabilitado devido ao baixo desempenho. Você pode aumentar o desempenho de seu suplemento do VSTO implementando as estratégias a seguir:  
@@ -33,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações sobre como otimizar um suplemento do VSTO do Outlook, consulte [critérios de desempenho para manter os suplementos do VSTO habilitados](http://go.microsoft.com/fwlink/?LinkID=266503).  
   
-##  <a name="Load"></a>Carregar o suplemento do VSTO sob demanda  
+##  <a name="Load"></a> Carregar o suplemento do VSTO sob demanda  
  Você pode configurar um suplemento do VSTO para carregar somente nas seguintes circunstâncias:  
   
 -   Na primeira vez que o usuário inicia o aplicativo depois que o suplemento do VSTO é instalado.  
@@ -82,11 +81,11 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     Para obter informações sobre como criar um evento de pós-compilação em um projeto c#, consulte [como: especificar eventos de compilação &#40; C &#35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Para obter informações sobre como criar um evento de pós-compilação em um projeto c#, consulte [como: especificar eventos de compilação &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     Para obter informações sobre como criar um evento de pós-compilação em um projeto do Visual Basic, consulte [como: especificar eventos de compilação &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Para obter informações sobre como criar um evento de pós-compilação em um projeto do Visual Basic, consulte [como: especificar eventos de compilação &#40;Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
-##  <a name="Publish"></a>Publicar soluções do Office usando o Windows Installer  
+##  <a name="Publish"></a> Publicar soluções do Office usando o Windows Installer  
  Se você publicar sua solução usando o Windows Installer, o Visual Studio 2010 Tools para Office Runtime ignora as etapas a seguir, quando o suplemento do VSTO é carregado.  
   
 -   Validação do esquema de manifesto.  
@@ -100,7 +99,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações, consulte [Implantando uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Bypass"></a>Reflexão de faixa de opções de Bypass  
+##  <a name="Bypass"></a> Reflexão de faixa de opções de Bypass  
  Se você criar uma solução usando [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], certifique-se de que seus usuários instalou a versão mais recente do Visual Studio 2010 Tools para Office Runtime quando você implanta a solução. Versões mais antigas do que em tempo de execução são refletidas em assemblies de solução para localizar as personalizações da faixa de opções. Esse processo pode causar o suplemento do VSTO carregar mais lentamente.  
   
  Como alternativa, você pode impedir que qualquer versão do Visual Studio 2010 Tools for Office Runtime usando a reflexão para identificar as personalizações da faixa de opções. Para seguir essa estratégia, substituir o `CreateRibbonExtensibility` método e objetos de retorno explicitamente da faixa de opções. Se o suplemento do VSTO não contém quaisquer personalizações da faixa de opções, retorno `null` dentro do método.  
@@ -110,7 +109,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-##  <a name="Perform"></a>Executar operações caras em um Thread de execução separado  
+##  <a name="Perform"></a> Executar operações caras em um Thread de execução separado  
  Considere a execução de tarefas demoradas (como tarefas de longa execução, conexões de banco de dados ou outros tipos de chamadas de rede) em um thread separado. Para obter mais informações, consulte [suporte a Threading no Office](../vsto/threading-support-in-office.md).  
   
 > [!NOTE]  

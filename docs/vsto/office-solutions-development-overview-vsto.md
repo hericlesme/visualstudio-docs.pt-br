@@ -1,12 +1,10 @@
 ---
-title: "Visão geral do desenvolvimento de soluções Office (VSTO) | Microsoft Docs"
-ms.custom: 
+title: Visão geral do desenvolvimento de soluções Office (VSTO) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f36b75b8c8c3cde4441520819ab566696d1d9066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Visão geral do desenvolvimento de soluções do Office (VSTO)
   Ao usar o Microsoft Office como front-end para soluções, você pode tirar proveito das ferramentas, como os recursos de processamento de texto no Word, os recursos de análise de dados do Excel e os recursos de gerenciamento de email do Outlook e interfaces de usuário do Microsoft Office familiar . Você pode desenvolver soluções no Visual Studio para personalizar os aplicativos do Office e adicionar os recursos específicos que necessários para seus processos de negócios. Por exemplo, você pode transformar palavras em um gerador de contrato que monta contratos fora das partes pré-existentes que podem ser feitas editável ou não editável. Com o Excel, você pode criar uma planilha de orçamento automatizada personalizada para projetos diferentes. Os usuários também podem tirar soluções do office offline, que torna mais prático do que seria se você usar uma arquitetura baseada na web a soluções complexas.  
@@ -29,7 +28,7 @@ ms.lasthandoff: 01/10/2018
  Este tópico fornece uma visão geral dos tipos de soluções do Office que você pode criar usando o Visual Studio Tools para modelos do Office (VSTO) disponíveis nas ferramentas de desenvolvedor do Office no Visual Studio. Para obter informações gerais sobre como desenvolver com o Office, consulte o [Office Developer Center](https://dev.office.com/).  
   
 ## <a name="choosing-an-office-project-type"></a>Escolhendo um tipo de projeto do Office  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fornece os seguintes tipos de modelos de projeto para desenvolvimento do Office com base em VSTO:  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornece os seguintes tipos de modelos de projeto para desenvolvimento do Office com base em VSTO:  
   
 -   **Personalizações no nível do documento** estão associados um documento específico.  
   
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="document-level-customizations"></a>Personalizações no nível de documento  
  Personalizações no nível do documento consistem em um assembly que está associado um único documento, a pasta de trabalho ou o modelo no Microsoft Office Word ou o Microsoft Office Excel. O assembly é carregado quando o documento associado é aberto. Recursos que você criar personalizações estão disponíveis somente quando o documento associado é aberto. As personalizações não podem fazer alterações em todo o aplicativo, como exibir uma nova guia de faixa de opções ou de item de menu quando qualquer documento está aberto.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]inclui ferramentas para ajudá-lo a criar personalizações no nível do documento. O documento que você personalizar hospedado como uma superfície de design em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], que permite que o documento de design arrastando e soltando os controles nele. Muitos outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] recursos estão disponíveis em projetos de nível de documento, como os controles de formulários do Windows, associação de dados de arrastar e soltar e um depurador integrado.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclui ferramentas para ajudá-lo a criar personalizações no nível do documento. O documento que você personalizar hospedado como uma superfície de design em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], que permite que o documento de design arrastando e soltando os controles nele. Muitos outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] recursos estão disponíveis em projetos de nível de documento, como os controles de formulários do Windows, associação de dados de arrastar e soltar e um depurador integrado.  
   
  Para obter mais informações sobre personalizações, consulte os tópicos a seguir:  
   
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="vsto-add-ins"></a>Suplementos do VSTO  
  Suplementos do VSTO consistem em um assembly que está associado um aplicativo do Microsoft Office. Normalmente, o suplemento do VSTO é executado quando o aplicativo associado é iniciado, embora os usuários também podem carregar suplementos do VSTO depois que o aplicativo já está em execução. Recursos em suplementos do VSTO que você cria estão disponíveis para o aplicativo em si, independentemente de qual documentos estiverem abertos.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]inclui ferramentas para ajudá-lo a criar suplementos do VSTO. Projetos de suplemento inclui uma classe gerada automaticamente que representa o suplemento do VSTO. Essa classe fornece propriedades e eventos que você pode usar para acessar o modelo de objeto do aplicativo host e executar o código quando o suplemento do VSTO é carregado e desligar. Muitos outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] recursos estão disponíveis em projetos do suplemento do VSTO, como formulários do Windows e um depurador integrado.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclui ferramentas para ajudá-lo a criar suplementos do VSTO. Projetos de suplemento inclui uma classe gerada automaticamente que representa o suplemento do VSTO. Essa classe fornece propriedades e eventos que você pode usar para acessar o modelo de objeto do aplicativo host e executar o código quando o suplemento do VSTO é carregado e desligar. Muitos outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] recursos estão disponíveis em projetos do suplemento do VSTO, como formulários do Windows e um depurador integrado.  
   
  Para obter mais informações sobre os suplementos do VSTO, consulte os tópicos a seguir:  
   
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  Para soluções do Office do VSTO é imposta por uma série de verificações de segurança que o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] faz quando ele é instalado e carrega a solução. Essas verificações incluem verificar se o local do manifesto de implantação é confiável ou se o certificado usado para assinar o manifesto de implantação é confiável. Para obter mais informações, consulte [Protegendo soluções do Office](../vsto/securing-office-solutions.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Guia de Introdução &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Introdução a personalizações no nível do documento da programação para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   

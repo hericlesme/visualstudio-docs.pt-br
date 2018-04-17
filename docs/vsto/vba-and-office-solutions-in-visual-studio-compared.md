@@ -1,12 +1,10 @@
 ---
-title: "VBA e soluções do Office no Visual Studio comparadas | Microsoft Docs"
-ms.custom: 
+title: VBA e soluções do Office no Visual Studio comparadas | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,18 +13,19 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], VBA compared to
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d6b2fd1cbf3ad2d58575b22b55f7ec1dc40b6ed4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a5a92727f08729fc7f8a871d0528c9e652d92f8a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Soluções VBA e do Office no Visual Studio comparadas
   Microsoft Visual Basic for Applications (VBA) usa o código não gerenciado é integrado com aplicativos do Office. Projetos do Microsoft Office criados usando o Visual Studio permitem aproveitar as ferramentas de design do Visual Studio e .NET Framework.  
   
- Para obter informações sobre os tipos de soluções do Office que você pode criar usando o Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Para obter informações sobre os tipos de soluções do Office que você pode criar usando o Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="comparison"></a>Comparação  
  A tabela a seguir fornece uma comparação básica entre soluções VBA e soluções do Office no Visual Studio.  
@@ -49,12 +48,12 @@ ms.lasthandoff: 01/10/2018
  Você pode chamar código VBA de soluções do Office criadas usando o Visual Studio, e você também pode chamar código em soluções do Office criadas usando o Visual Studio por meio do VBA. A técnica específica difere dependendo se sua solução do Office é um suplemento do VSTO ou uma personalização no nível do documento. Para obter mais informações, consulte [chamando código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) e [combinando VBA e personalizações no nível do documento](../vsto/combining-vba-and-document-level-customizations.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Chamando código em suplementos do VSTO de outras soluções do Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Combinando VBA e personalizações no nível do documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Protegendo soluções do Office](../vsto/securing-office-solutions.md)   
- [Guia de Introdução &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   
   

@@ -1,12 +1,10 @@
 ---
-title: "Visão geral de modelos de projeto do Office | Microsoft Docs"
-ms.custom: 
+title: Visão geral de modelos de projeto do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-project-templates-overview"></a>Visão geral dos modelos do Office Project
   As ferramentas de desenvolvedor do Microsoft Office no Visual Studio incluem modelos de projeto para criar os seguintes tipos de soluções do Office:  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Suplementos do VSTO](#AppLevel)  
   
- Para obter uma comparação detalhada desses tipos de soluções do Office, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Para obter uma comparação detalhada desses tipos de soluções do Office, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Os modelos de projeto do Office estão disponíveis no **novo projeto** caixa de diálogo de **Office** nó do **Visual c#** e **Visual Basic**nós de linguagem. Cada modelo gera um projeto com configuração adequada para o aplicativo de destino, incluindo referências de assembly e configurações de depuração.  
   
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  As ferramentas de desenvolvimento do Office estão incluídas em determinadas edições do Visual Studio. Para obter mais informações, consulte [Configurando um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-##  <a name="DocLevel"></a>Personalizações no nível do documento  
+##  <a name="DocLevel"></a> Personalizações no nível do documento  
  O **Office** nó o **novo projeto** caixa de diálogo fornece os seguintes modelos de projeto para que você começou a criar personalizações no nível de documento para Word e Excel:  
   
 -   **Word 2013 e o documento do VSTO 2016**  
@@ -94,7 +93,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Instruções passo a passo: criando a primeira personalização no nível de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
-##  <a name="AppLevel"></a>Suplementos do VSTO  
+##  <a name="AppLevel"></a> Suplementos do VSTO  
  O **Office/SharePoint** nó o **novo projeto** caixa de diálogo fornece os seguintes modelos de projeto para ajudá-lo a iniciar a criação de suplementos do VSTO.  
   
 -   **Suplemento do Excel 2013 e 2016 VSTO**  
@@ -160,7 +159,7 @@ ms.lasthandoff: 01/10/2018
 |Os usuários podem abrir e modificar um documento, a menos que ele seja definido para ser somente leitura. Todas as alterações salvas são mantidas no original.|Os usuários podem abrir um modelo para criar uma cópia local como um novo documento. Eles não podem modificar o original, a menos que recebam permissões especiais.|  
 |Quando aberto, o documento gera o evento <xref:Microsoft.Office.Tools.Word.Document.Open>.|Quando aberto, o modelo gera o evento <xref:Microsoft.Office.Tools.Word.Document.New>.|  
   
-##  <a name="Limitations"></a>Limitações de modelos globais e suplementos Excel (arquivos. xla)  
+##  <a name="Limitations"></a> Limitações de modelos globais e suplementos Excel (arquivos. xla)  
  Documentos, pastas de trabalho e modelos podem não funcionar corretamente modelos globais ou Excel suplementos do VSTO (arquivos. xla).  
   
 ## <a name="word-templates"></a>Modelos do Word  

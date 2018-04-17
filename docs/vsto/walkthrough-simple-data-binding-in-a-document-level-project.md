@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Associação de dados simples em um projeto no nível de documento | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Associação de dados simples em um projeto no nível de documento | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95029c946939bf0918e15034625ad31c1e5897b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Instruções passo a passo: associação de dados simples em um projeto no nível do documento
   Este passo a passo demonstra os conceitos básicos de associação de dados em um projeto no nível do documento. Um único campo de dados em um banco de dados do SQL Server está associado a um intervalo nomeado no Microsoft Office Excel. Passo a passo também mostra como adicionar controles que permitem que você percorra todos os registros na tabela.  
@@ -181,7 +180,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Confirme se o primeiro registro é exibido nas células **A1** e **B1**.  
   
-3.  Clique o  **>**  (`Button3`) botão e confirme se o próximo registro aparece na célula **A1** e **B1**.  
+3.  Clique o **>** (`Button3`) botão e confirme se o próximo registro aparece na célula **A1** e **B1**.  
   
 4.  Clique nos outros botões de rolagem para confirmar que o registro é alterado conforme o esperado.  
   

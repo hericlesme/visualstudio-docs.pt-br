@@ -1,18 +1,18 @@
 ---
-title: "Como: definir pontos de interrupção em fluxos de trabalho | Microsoft Docs"
+title: 'Como: definir pontos de interrupção em fluxos de trabalho | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ed757fab518d9cfe23b26186e6bded06eafe1e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: e4112e74336faf1fb456ebd94dd7c7617747a11f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Como: Definir pontos de interrupção em fluxos de trabalho
 Quando você usar o Designer de fluxo de trabalho do Windows, você pode definir pontos de interrupção em seus fluxos de trabalho de gráficos como você faria no código do Visual Basic ou c#. Como esperado, a execução de fluxo de trabalho que ele pare em cada ponto de interrupção esse definido.

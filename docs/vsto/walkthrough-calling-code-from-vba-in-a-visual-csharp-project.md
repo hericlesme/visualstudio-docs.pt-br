@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Chamando código do VBA em um projeto do Visual c# | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Chamando código do VBA em um projeto do Visual c# | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 109ae2e89cf30078c910ff313ea203c576906037
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Instruções passo a passo: chamando código de VBA em um projeto do Visual C#
   Este passo a passo demonstra como chamar um método em uma personalização de nível de documento do Microsoft Office Excel do Visual Basic para código Applications (VBA) na pasta de trabalho. O procedimento envolve três etapas básicas: adicionar um método para o `Sheet1` classe de item de host, expor o método para o código do VBA na pasta de trabalho e, em seguida, chame o método do código do VBA na pasta de trabalho.  
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Clique em **Finalizar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre o **WorkbookWithVBA** pasta de trabalho no designer e adiciona o **CallingCodeFromVBA** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o **WorkbookWithVBA** pasta de trabalho no designer e adiciona o **CallingCodeFromVBA** projeto **Gerenciador de soluções**.  
   
 ## <a name="trusting-the-location-of-the-workbook"></a>Confiando o local da pasta de trabalho  
  Antes de você pode expor o código em sua solução para o código do VBA na pasta de trabalho, você deve confiar VBA na pasta de trabalho para executar. Há várias maneiras de fazer isso. Neste passo a passo, você irá realizar essa tarefa confiar no local da pasta de trabalho no **Central de confiabilidade** no Excel.  
@@ -185,7 +184,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Clique em **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]gera uma nova interface chamada `ISheet1`, e ela modifica a definição do `Sheet1` de classe para que ele implementa o `ISheet1` interface. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]também abre o **ISheet1.cs** arquivo no Editor de códigos.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] gera uma nova interface chamada `ISheet1`, e ela modifica a definição do `Sheet1` de classe para que ele implementa o `ISheet1` interface. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] também abre o **ISheet1.cs** arquivo no Editor de códigos.  
   
 5.  No **ISheet1.cs** de arquivo, substitua o `ISheet1` interface declaração com o código a seguir. Este código faz o `ISheet1` interface pública e ela se aplica a <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo para tornar a interface visível para COM.  
   
@@ -253,6 +252,6 @@ ms.lasthandoff: 01/10/2018
  [Combinando VBA e personalizações no nível do documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Personalizações no nível do documento da programação](../vsto/programming-document-level-customizations.md)   
  [Como: expor código para VBA em um projeto do Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Como: expor código para VBA em um Visual C &#35; Projeto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Como: expor código para VBA em um Visual C&#35; projeto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Instruções passo a passo: chamando o código pelo VBA em um projeto do Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

@@ -1,12 +1,10 @@
 ---
 title: 'Como: programaticamente inserir texto em documentos do Word | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], replacing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3e54850bd4cdd66786474f3f823e5e73dc54d344
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Como inserir texto em documentos do Word programaticamente
   Há três maneiras principais para inserir texto em documentos do Microsoft Office Word:  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
 ## <a name="inserting-text-using-typetext"></a>Inserindo texto usando TypeText  
- O <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> método insere texto na seleção. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>se comporta de maneira diferente dependendo das opções definidas no computador do usuário. O código no procedimento a seguir declara uma <xref:Microsoft.Office.Interop.Word.Selection> variável de objeto e desativa o **sobrescrever** opção se ele está ativado. Se o **sobrescrever** opção é ativada, e qualquer texto ao lado do cursor será substituído.  
+ O <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> método insere texto na seleção. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> se comporta de maneira diferente dependendo das opções definidas no computador do usuário. O código no procedimento a seguir declara uma <xref:Microsoft.Office.Interop.Word.Selection> variável de objeto e desativa o **sobrescrever** opção se ele está ativado. Se o **sobrescrever** opção é ativada, e qualquer texto ao lado do cursor será substituído.  
   
 #### <a name="to-insert-text-using-the-typetext-method"></a>Para inserir texto usando o método TypeText  
   
@@ -123,7 +122,7 @@ ms.lasthandoff: 01/10/2018
   
  Você também pode usar o <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> método o <xref:Microsoft.Office.Interop.Word.Selection> objeto, que simula a funcionalidade da tecla BACKSPACE no teclado. No entanto, quando se trata de inserção e manipulação de texto, o <xref:Microsoft.Office.Interop.Word.Range> objeto oferece mais controle.  
   
- O exemplo a seguir mostra o código completo. Para usar este exemplo, execute o código do `ThisDocument` ou `ThisAddIn` classe em seu projeto.  
+ O exemplo a seguir mostra todo o código. Para usar este exemplo, execute o código do `ThisDocument` ou `ThisAddIn` classe em seu projeto.  
   
  [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
  [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  

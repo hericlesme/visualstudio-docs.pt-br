@@ -1,13 +1,10 @@
 ---
-title: "Atualizando personalizações da faixa de opções em projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5 | Microsoft Docs"
-ms.custom: 
+title: Atualizando personalizações da faixa de opções em projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d3c2e834b3a618bf033ef7f37ca8bbac7d0efcf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualizando personalizações da Faixa de Opções nos projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5
   Se o projeto contém uma personalização da faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** item de projeto, você deve fazer as seguintes alterações para o código do projeto, se a estrutura de destino for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou mais tarde.  
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Em projetos do Visual Basic, localize o `ThisRibbonCollection` classe no final do arquivo. Modifique a declaração da classe para que ele não herda de Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection.  
   
-##  <a name="ribboncontrols"></a>Criando controles de faixa de opções  
+##  <a name="ribboncontrols"></a> Criando controles de faixa de opções  
  Você deve modificar qualquer código que instancia dinamicamente os controles de faixa de opções. Em projetos direcionados ao .NET Framework 3.5, controles de faixa de opções são classes que você pode instanciar diretamente em determinados cenários. Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou versões posteriores, esses controles são interfaces que você não pode instanciar diretamente. Você deve criar os controles usando métodos fornecidos pelo <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objeto.  
   
  Existem duas maneiras de acessar o objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:  
@@ -151,14 +148,14 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|  
   
-##  <a name="ribbonevents"></a>Faixa de opções de manipulação de eventos  
+##  <a name="ribbonevents"></a> Faixa de opções de manipulação de eventos  
  Você deve modificar qualquer código que trata os eventos de controles de faixa de opções. Em projetos direcionados ao .NET Framework 3.5, esses eventos são manipulados pelo genérica <xref:System.EventHandler%601> delegate. Em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou versões posteriores, esses eventos estão agora controlados pelos outros delegados.  
   
  A tabela a seguir lista os eventos de faixa de opções e os delegados que estão associados com eles em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.  
   
 |evento|Delegado a ser usado em [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|  
 |-----------|---------------------------------------------------------------------------------------------------|  
-|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>evento em uma classe gerada da faixa de opções|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
+|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> evento em uma classe gerada da faixa de opções|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   

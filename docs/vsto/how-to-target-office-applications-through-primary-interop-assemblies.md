@@ -1,12 +1,10 @@
 ---
-title: "Como: destinar aplicativos do Office por meio de Assemblies de interoperabilidade primários | Microsoft Docs"
-ms.custom: 
+title: 'Como: destinar aplicativos do Office por meio de Assemblies de interoperabilidade primários | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], automating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f6634a8aa51c1c09180a249212752e440c5841e8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bfe02a06403621c2429dd8be965b3ab1b5c41b2c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como destinar aplicativos do Office por meio de assemblies de interoperabilidade primários
   Quando você cria um novo projeto do Office, o Visual Studio adiciona automaticamente as referências para os Microsoft Office assemblies de interoperabilidade primários (PIAs) que são necessários para compilar seu projeto. Você deve adicionar referências a outros PIAs nos seguintes cenários:  

@@ -1,18 +1,18 @@
 ---
-title: "Designers de atividade de tempo de execução | Microsoft Docs"
+title: Designers de atividade de tempo de execução | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 874bd63a044c3e1483bea7ec54af03b17b7e11bd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 3069d4c5dde1235e9563c26c10af586001af007c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="runtime-activity-designers"></a>Designer de atividade do tempo de execução
 Os designers de atividade de tempo de execução são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar o designer de atividade de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] .

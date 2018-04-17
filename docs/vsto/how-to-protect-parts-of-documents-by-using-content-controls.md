@@ -1,12 +1,10 @@
 ---
-title: "Como: proteger partes de documentos usando controles de conteúdo | Microsoft Docs"
-ms.custom: 
+title: 'Como: proteger partes de documentos usando controles de conteúdo | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - GroupContentControl
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 444fd63ecfe1fc74161920b17a3c7caead5a434a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a72603f71395bbbf8e167b6a2361f7d8b2a30a6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Como proteger partes de documentos usando controles de conteúdo
   Quando você protege a parte de um documento, impedir que os usuários alterar ou excluir o conteúdo na parte do documento. Há várias maneiras que você pode proteger partes de um documento do Microsoft Office Word usando os controles de conteúdo:  
@@ -37,7 +36,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-##  <a name="EditDeleteControl"></a>Protegendo um controle de conteúdo  
+##  <a name="EditDeleteControl"></a> Protegendo um controle de conteúdo  
  Você pode impedir que os usuários editar ou excluir um controle de conteúdo, definindo propriedades do controle em um projeto no nível de documento em tempo de design ou em tempo de execução.  
   
  Você também pode proteger os controles de conteúdo que você adicionar a um documento em tempo de execução usando um projeto de suplemento do VSTO. Para obter mais informações, consulte [como: adicionar controles de conteúdo para documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md).  

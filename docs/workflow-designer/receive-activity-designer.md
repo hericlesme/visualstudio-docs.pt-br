@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8058b13dd488ddca2237056048673529c379256
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receive-activity-designer"></a>Recebe o designer de atividades
 O **Receive** designer de atividade é usado para criar e configurar um <xref:System.ServiceModel.Activities.Receive> atividade. Uma atividade de <xref:System.ServiceModel.Activities.Receive> é uma atividade que receberá uma mensagem que pode ser um tipo interno como <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> ou <xref:System.Xml.Linq.XElement>, ou um contrato definido de dados, o contrato de mensagem, ou a classe XML que pode ser serializada.
@@ -47,7 +47,7 @@ O **Receive** designer de atividade é usado para criar e configurar um <xref:Sy
 |<xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>|False|Especifica uma coleção de tipos conhecidos para a operação de serviço implementada por esta atividade de <xref:System.ServiceModel.Activities.Receive> . Esta propriedade deve ser usada em conjunto com a propriedade de <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> definida como <xref:System.Runtime.Serialization.DataContractSerializer>. É ignorada se <xref:System.Xml.Serialization.XmlSerializer> é usado.<br /><br /> Clique no botão de reticências ao lado de **KnownTypes** campo na grade de propriedades para exibir o **Editor de coleção do tipo** caixa de diálogo com a qual você pode adicionar tipos relevantes. Para obter mais informações sobre como usar essa caixa, consulte o [caixa de diálogo do Editor de coleção de tipo](../workflow-designer/type-collection-editor-dialog-box.md) tópico.|
 |<xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>|False|Especifica <xref:System.Net.Security.ProtectionLevel> para a mensagem.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> significa somente autenticação.<br />2. <xref:System.Net.Security.ProtectionLevel> significa assinar dados para ajudar a garantir a integridade dos dados transmitidos.<br />3. <xref:System.Net.Security.ProtectionLevel> significa criptografar e assinar os dados para ajudar a garantir a confidencialidade e a integridade dos dados transmitidos.|
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|Especifica o tipo de serializador para usar a operação de serviço implementada pela atividade de <xref:System.ServiceModel.Activities.Receive> . O valor padrão é <xref:System.Runtime.Serialization.DataContractSerializer>, que serializa e desserializa uma instância de um tipo em um fluxo XML ou em um documento que usa um contrato fornecido de dados. <xref:System.Xml.Serialization.XmlSerializer> também pode ser usado se mais controle sobre é necessário XML.|
-|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Especifica o cabeçalho da ação de mensagem. Se ele não for definido explicitamente, seu valor padrão é: https://tempuri.org/ {namespace de contrato de serviço} / {nome do contrato de serviço} / {nome da operação}.|
+|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Especifica o cabeçalho da ação de mensagem. Se ele não for definido explicitamente, seu valor padrão é: https://tempuri.org/{service namespace de contrato} / {nome do contrato de serviço} / {nome da operação}.|
 
 ## <a name="see-also"></a>Consulte também
 

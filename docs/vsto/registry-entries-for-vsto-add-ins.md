@@ -1,12 +1,10 @@
 ---
 title: Entradas do registro para suplementos VSTO | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - registry entries [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4be05e4fb1b4fc74467f1607acaa3e84a6bdef95
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5e4c410a6f934c7b4fe4c6239bdfe07364af3152
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas do Registro para suplementos VSTO
   Quando você implanta suplementos do VSTO que são criados usando o Visual Studio, você deve criar um conjunto específico de entradas do registro. Essas entradas de registro fornecem informações que permite que o aplicativo do Microsoft Office descobrir e carregar o suplemento do VSTO.  
@@ -79,9 +78,9 @@ ms.lasthandoff: 01/10/2018
 |**Descrição**|REG_SZ|Necessário. Uma breve descrição do suplemento do VSTO.<br /><br /> Essa descrição é exibida quando o usuário seleciona o suplemento do VSTO no **Add-Ins** painel do **opções** caixa de diálogo no aplicativo do Microsoft Office.|  
 |**Nome amigável**|REG_SZ|Necessário. Um nome descritivo do Add-in do VSTO que é exibido no **suplementos COM** caixa de diálogo no aplicativo do Microsoft Office. O valor padrão é a ID do suplemento do VSTO|  
 |**LoadBehavior**|REG_DWORD|Necessário. Um valor que especifica quando o aplicativo tenta carregar o suplemento do VSTO e o estado atual do VSTO Add-in (carregado ou não carregado).<br /><br /> Por padrão, essa entrada é definida como 3, que especifica que o suplemento do VSTO é carregado na inicialização. Para obter mais informações, consulte [LoadBehavior valores](#LoadBehavior). **Observação:** se um usuário desativa o suplemento do VSTO, essa ação modifica **LoadBehavior** valor no hive do registro HKEY_CURRENT_USER. Para cada usuário, o valor de **LoadBehavior** valor na seção HKEY_CURRENT_USER substitui o padrão **LoadBehavior** definida na seção HKEY_LOCAL_MACHINE.|  
-|**Manifesto**|REG_SZ|Necessário. O caminho completo do manifesto de implantação para o suplemento do VSTO. O caminho pode ser um local no computador local, um servidor Web (HTTP) ou um compartilhamento de rede (UNC).<br /><br /> Se você usar o Windows Installer para implantar a solução, você deve adicionar o prefixo **file:///** para o **manifesto** caminho. Você também deve acrescentar a cadeia de caracteres **&#124; vstolocal** (ou seja, o caractere de pipe **&#124;** seguido por **vstolocal**) ao final desse caminho. Isso garante que sua solução será carregada a partir da pasta de instalação, em vez de cache do ClickOnce. Para obter mais informações, consulte [Implantando uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Observação:** quando você criar um suplemento do VSTO no computador de desenvolvimento, o Visual Studio anexa automaticamente o **&#124; vstolocal** cadeia de caracteres para esta entrada do registro.|  
+|**Manifesto**|REG_SZ|Necessário. O caminho completo do manifesto de implantação para o suplemento do VSTO. O caminho pode ser um local no computador local, um servidor Web (HTTP) ou um compartilhamento de rede (UNC).<br /><br /> Se você usar o Windows Installer para implantar a solução, você deve adicionar o prefixo **file:///** para o **manifesto** caminho. Você também deve acrescentar a cadeia de caracteres  **&#124;vstolocal** (ou seja, o caractere de pipe **&#124;** seguido por **vstolocal**) ao final desse caminho. Isso garante que sua solução será carregada a partir da pasta de instalação, em vez de cache do ClickOnce. Para obter mais informações, consulte [Implantando uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Observação:** quando você criar um suplemento do VSTO no computador de desenvolvimento, o Visual Studio anexa automaticamente o  **&#124;vstolocal** cadeia de caracteres para esta entrada do registro.|  
   
-###  <a name="OutlookEntries"></a>Entradas do registro para regiões de formulário do Outlook  
+###  <a name="OutlookEntries"></a> Entradas do registro para regiões de formulário do Outlook  
  Se você criar uma região de formulário personalizado em um suplemento do VSTO para Outlook, entradas de registro adicionais são usadas para registrar a região de formulário com o Outlook. Essas entradas são criadas em uma chave do registro diferente para cada classe de mensagem que dá suporte a região do formulário. Essas chaves do registro estão no local a seguir, onde *raiz* é HKEY_CURRENT_USER ou HKEY_LOCAL_MACHINE.  
   
  *Raiz*\Software\Microsoft\Office\Outlook\FormRegions\\*classe message*  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações sobre as entradas de registro de região de formulário, consulte [especificar o local de uma região de formulário em um formulário personalizado](http://msdn.microsoft.com/library/office/ff868998.aspx). Para obter mais informações sobre regiões de formulário do Outlook, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).  
   
-##  <a name="LoadBehavior"></a>Valores de LoadBehavior  
+##  <a name="LoadBehavior"></a> Valores de LoadBehavior  
  O **LoadBehavior** entrada sob o *raiz*\Software\Microsoft\Office\\*nome do aplicativo*\Addins\\*suplemento ID* chave contém uma combinação bit a bit de valores que especificam o comportamento de tempo de execução do suplemento do VSTO. O bit mais baixo (os valores 0 e 1) indica se o suplemento do VSTO está descarregado ou carregado. Outros bits indicam quando o aplicativo tenta carregar o suplemento do VSTO.  
   
  Normalmente, o **LoadBehavior** entrada se destina a ser definido como 0, 3 ou 16 (em decimal) quando o suplemento do VSTO é instalado em computadores de usuários finais. Por padrão, o Visual Studio define o **LoadBehavior** entrada de seu suplemento do VSTO para 3 quando você compila ou publicá-lo.  

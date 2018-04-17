@@ -1,12 +1,10 @@
 ---
 title: 'Como: programaticamente pesquisar e substituir texto em documentos | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text searches
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 658da08ee7d61651b02d7d42158637dad7ab16c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9967fb6bb0b9ecf377763c25037089bf600145c6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text--in-documents"></a>Como localizar e substituir texto em documentos programaticamente
   O <xref:Microsoft.Office.Interop.Word.Find> objeto é um membro de ambos os <xref:Microsoft.Office.Interop.Word.Selection> e o <xref:Microsoft.Office.Interop.Word.Range> objetos e você pode usar qualquer um para pesquisar texto em documentos do Microsoft Office Word. O comando Substituir é uma extensão do comando Localizar.  
@@ -113,11 +112,11 @@ ms.lasthandoff: 01/10/2018
   
 2.  Use o <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método o <xref:Microsoft.Office.Interop.Word.Find> objeto para substituir cada item encontrado. Para especificar quais itens para substituir, use o *substituir* parâmetro. Esse parâmetro pode ser um dos seguintes <xref:Microsoft.Office.Interop.Word.WdReplace> valores:  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll>substitui todos os itens localizados.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> substitui todos os itens localizados.  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone>substitui a nenhum dos itens encontrados.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> substitui a nenhum dos itens encontrados.  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne>substitui o primeiro item encontrado.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> substitui o primeiro item encontrado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: definir opções de pesquisa no Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   

@@ -1,5 +1,5 @@
 ---
-title: "Modos de exibição do fluxo de trabalho sequencial (herdado) | Microsoft Docs"
+title: Modos de exibição do fluxo de trabalho sequencial (herdado) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 135f24b9-1b37-442b-9ef8-f0f2108a3212
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f412fa9afee6aa768447fc226553fd68970e646
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Exibições sequenciais de fluxo de trabalho (legados)
 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] Fornece um Designer de fluxo de trabalho herdado do Windows que pode ser usado para o destino de [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

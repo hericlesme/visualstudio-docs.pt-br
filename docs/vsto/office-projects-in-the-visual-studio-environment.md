@@ -1,12 +1,10 @@
 ---
 title: Projetos do Office no ambiente do Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.WordDocument
 - VST.ProjectItem.ExcelWorkbook
@@ -43,13 +41,14 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a937f98a11ab9c8cb9723637be902808dce86563
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80a8f866cb43eb6279cca45bebc94c54af898eab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projetos do Office no ambiente do Visual Studio
   Os projetos do Microsoft Office têm uma experiência de desenvolvimento semelhante a outros tipos de projeto no Visual Studio, como projetos do Windows Forms. Quando você criar ou abrir um projeto do Office, os itens de projeto aparecem na **Gerenciador de soluções**. Para projetos no nível de documento, o documento (isto é, o documento do Word ou a pasta de trabalho do Excel) é aberto no Visual Studio e se comporta como um designer visual.  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="temporary-certificates"></a>Certificados temporários  
  Projetos do Office também incluem um certificado temporário chamado *nome do projeto*_TemporaryKey.pfx. Esse certificado é usado para assinar o aplicativo e os manifestos de implantação do projeto durante o desenvolvimento. Para obter mais informações, consulte [concedendo confiança a soluções do Office](../vsto/granting-trust-to-office-solutions.md) e [Protegendo soluções do Office](../vsto/securing-office-solutions.md).  
   
-###  <a name="hiddenfiles"></a>Arquivos de projeto ocultos  
+###  <a name="hiddenfiles"></a> Arquivos de projeto ocultos  
  Vários arquivos de projeto são ocultados por padrão. Esses arquivos são gerados pelo Visual Studio e diferem por tipo de projeto. Para exibir os arquivos ocultos, clique em **Mostrar todos os arquivos** na **Gerenciador de soluções**.  
   
  Não modifique os arquivos de projeto ocultos. A alteração direta desses arquivos não tem suporte e pode corromper seu projeto. Os arquivos de projeto ocultos são regenerados sempre que determinadas alterações ocorrerem no documento. Se você fizer alterações manuais em um arquivo de projeto oculto, essas alterações serão perdidas quando o arquivo for regenerado.  

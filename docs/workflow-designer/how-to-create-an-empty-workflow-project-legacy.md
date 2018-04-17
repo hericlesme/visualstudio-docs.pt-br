@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce595536d1e26d029556ca03a26428f6b425fff
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 961425eb7f3b4d412ddcb572bc21a91bdde6e957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Como: Crie um fluxo de trabalho vazio Project (o legados)
 Siga estas etapas para criar um projeto vazio do fluxo de trabalho usando o Designer de fluxo de trabalho herdado do Windows fornecida pelo [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -25,7 +25,7 @@ Siga estas etapas para criar um projeto vazio do fluxo de trabalho usando o Desi
 
 1.  Inicie o Visual Studio.
 
-2.  Sobre o **arquivo** , aponte para **novo**e, em seguida, selecione **projeto**.
+2.  No menu **Arquivo**, aponte para **Novo** e selecione **Projeto**.
 
      A caixa de diálogo **Novo Projeto** é aberta.
 

@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Sincronizando um painel tarefa personalizada com o botão faixa de opções | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Sincronizando um painel tarefa personalizada com o botão faixa de opções | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +23,14 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff3252a1ae234615cc4d4ed83a07d98a15092bee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Instruções passo a passo: sincronizando um painel Tarefa Personalizada com uma botão de faixa de opções
   Este passo a passo demonstra como criar um painel tarefa personalizada que os usuários podem ocultar ou exibir um botão de alternância na faixa de opções. Você sempre deve criar um elemento de interface do usuário do usuário, como um botão, o que os usuários podem clicar para exibir ou ocultar o painel de tarefas, como aplicativos do Microsoft Office não fornecem uma maneira padrão para os usuários mostrar ou ocultar painéis de tarefas personalizados.  
@@ -65,10 +64,10 @@ ms.lasthandoff: 01/10/2018
   
 1.  Criar um projeto de suplemento do Excel com o nome **SynchronizeTaskPaneAndRibbon**, usando o modelo de projeto de suplemento do Excel. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre o **ThisAddIn.cs** ou **ThisAddIn** arquivo de código e adiciona o **SynchronizeTaskPaneAndRibbon** projeto **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o **ThisAddIn.cs** ou **ThisAddIn** arquivo de código e adiciona o **SynchronizeTaskPaneAndRibbon** projeto **Solution Explorer**.  
   
 ## <a name="adding-a-toggle-button-to-the-ribbon"></a>Adicionar um botão de alternância para a faixa de opções  
- Uma das diretrizes de design de aplicativo do Office é que os usuários sempre devem ter o controle de interface do usuário do aplicativo do Office. Para permitir que os usuários controlem o painel de tarefas, você pode adicionar um botão de alternância de faixa de opções que mostra e oculta o painel de tarefas. Para criar um botão de alternância, adicione um **faixa de opções (Visual Designer)** item ao projeto. O designer ajuda a adicionar e posicionar controles, definir propriedades de controle e tratar eventos de controle. Para obter mais informações, consulte [Designer da faixa de opções](../vsto/ribbon-designer.md).  
+ Uma das diretrizes de design de aplicativo do Office é que os usuários sempre devem ter o controle de interface do usuário do aplicativo do Office. Para permitir que os usuários controlem o painel de tarefas, você pode adicionar um botão de alternância de faixa de opções que mostra e oculta o painel de tarefas. Para criar um botão de alternância, adicione um **faixa de opções (Visual Designer)** item ao projeto. O designer ajuda a adicionar e posicionar controles, definir propriedades de controle e tratar eventos de controle. Para obter mais informações, consulte [Fitas](../vsto/ribbon-designer.md).  
   
 #### <a name="to-add-a-toggle-button-to-the-ribbon"></a>Para adicionar um botão de alternância para a faixa de opções  
   

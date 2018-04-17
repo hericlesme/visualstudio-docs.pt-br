@@ -1,12 +1,10 @@
 ---
 title: Gerenciando documentos em um servidor usando a classe ServerDocument | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2120e7c70abaddd4f51c0214a2c5ae517cf955cc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ef676de4ff352a557019f68037203364a97834d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Gerenciando documentos em um servidor usando a classe ServerDocument
   Você pode usar a classe ServerDocument o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para gerenciar vários aspectos das personalizações no nível do documento, mesmo se o Microsoft Office Word e Microsoft Office Excel não são instalados. Você pode executar as seguintes tarefas:  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Se você tiver um aplicativo herdado que usa a classe ServerDocument no Visual Studio Tools para Office system (versão 3.0 Runtime), o Visual Studio Tools para Office system (versão 3.0 Runtime) deve ser instalado em computadores que executam o aplicativo. O Visual Studio 2010 Tools para Office Runtime não é possível executar esses aplicativos.  
   
-##  <a name="CachedData"></a>Trabalhando com dados armazenados em cache no documento  
+##  <a name="CachedData"></a> Trabalhando com dados armazenados em cache no documento  
  A classe ServerDocument fornece membros, que você pode usar para trabalhar com o cache de dados em documentos personalizados. Para obter mais informações sobre os dados armazenados em cache, consulte [Caching Data](../vsto/caching-data.md) e [acessar dados em documentos no servidor](../vsto/accessing-data-in-documents-on-the-server.md).  
   
  A tabela a seguir lista os membros que você pode usar para trabalhar com dados armazenados em cache.  
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
 |Para determinar se um documento tem um cache de dados.|O método <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A>.|  
 |Para acessar os dados armazenados em cache em um documento.<br /><br /> Para obter mais informações, consulte [acessar dados em documentos no servidor](../vsto/accessing-data-in-documents-on-the-server.md).|A propriedade de <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> .|  
   
-##  <a name="CustomizationInfo"></a>Gerenciando a personalização do documento  
+##  <a name="CustomizationInfo"></a> Gerenciando a personalização do documento  
  Você pode usar os membros da classe ServerDocument para gerenciar o assembly de personalização associado um documento. Por exemplo, você pode remover programaticamente a personalização de um documento para que o documento não é parte de uma personalização.  
   
  A tabela a seguir lista os membros que você pode usar para gerenciar o assembly de personalização.  

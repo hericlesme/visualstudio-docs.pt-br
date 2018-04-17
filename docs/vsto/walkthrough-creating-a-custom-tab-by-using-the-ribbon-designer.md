@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Criando uma guia personalizada usando o Designer de faixa de opções | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Criando uma guia personalizada usando o Designer de faixa de opções | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Instruções passo a passo: criando uma guia usando o designer da faixa de opções
   Usando o Designer de faixa de opções, você pode criar uma guia personalizada e, em seguida, adicionar e posicionar controles nele.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio abre a nova pasta de trabalho no designer e adiciona o **MyExcelRibbon** projeto **Gerenciador de soluções**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a>Criando painéis de ações  
+##  <a name="BKMK_CreateActionsPanes"></a> Criando painéis de ações  
  Adicione dois painéis de ações personalizadas ao projeto. Posteriormente, você irá adicionar botões de mostram e ocultar esses painéis de ações para a guia personalizada.  
   
 #### <a name="to-create-actions-panes"></a>Para criar painéis de ações  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Repita as etapas 1 a 5 para criar um painel de ações de segundo e um rótulo. Definir o **texto** propriedade do rótulo do segundo para **2 do painel de ações**.  
   
-##  <a name="BKMK_CreateCustomTab"></a>Criando uma guia  
+##  <a name="BKMK_CreateCustomTab"></a> Criando uma guia  
  Uma das diretrizes de design de aplicativo do Office é que os usuários sempre devem ter o controle de interface do usuário do aplicativo do Office. Para adicionar esse recurso para os painéis de ações, você pode adicionar botões de mostram e ocultar cada painel de ações de uma guia na faixa de opções. Para criar uma guia personalizada, adicione uma **faixa de opções (Visual Designer)** item ao projeto. O designer ajuda a adicionar e posicionar controles, definir propriedades de controle e tratar eventos de controle.  
   
 #### <a name="to-create-a-custom-tab"></a>Para criar uma guia personalizada  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. Definir o **rótulo** propriedade **ocultar painel de ações**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a>Ocultando e mostrando painéis de ações, usando os botões na guia personalizada  
+##  <a name="BKMK_HideShowActionsPane"></a> Ocultando e mostrando painéis de ações, usando os botões na guia personalizada  
  A última etapa é adicionar o código que responde ao usuário. Adicionar manipuladores de eventos para o <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> eventos de dois botões e o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> eventos do botão de alternância. Adicione código para esses manipuladores de eventos para habilitar ocultando e mostrando os painéis de ações.  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Para ocultar e Mostrar painéis de ações, usando os botões na guia personalizada  

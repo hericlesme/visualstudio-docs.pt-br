@@ -1,12 +1,10 @@
 ---
-title: "Persistindo dinâmico controles em documentos do Office | Microsoft Docs"
-ms.custom: 
+title: Persistindo dinâmico controles em documentos do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], persisting in the document
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 10f5840b085ce55485734c9287972a743859c3ef
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 220a6e2c0b7e4633f91e7391448d27dddb5895c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Mantendo controles dinâmicos em documentos do Office
   Controles que são adicionados em tempo de execução não são mantidos quando o documento ou a pasta de trabalho é salvo e fechada. O comportamento exato é diferente para controles de host e controles de formulários do Windows. Em ambos os casos, você pode adicionar código à sua solução para recriar os controles quando o usuário reabre o documento.  
@@ -75,9 +74,9 @@ ms.lasthandoff: 01/10/2018
   
 1.  Armazenar informações sobre o tamanho, o local e o estado dos controles quando o documento é salvo ou fechado. Uma personalização de nível de documento, você pode salvar esses dados para o cache de dados no documento. Um VSTO Add-in, você pode salvar esses dados a uma parte XML personalizada no documento.  
   
-2.  Recrie os controles em um evento que é gerado quando o documento é aberto. Em projetos de nível de documento, você pode fazer isso no `Sheet`  *n*  `_Startup` ou `ThisDocument_Startup` manipuladores de eventos. Em projetos de suplemento do VSTO, você pode fazer nesse evento manipuladores para o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> ou <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> eventos.  
+2.  Recrie os controles em um evento que é gerado quando o documento é aberto. Em projetos de nível de documento, você pode fazer isso no `Sheet` *n* `_Startup` ou `ThisDocument_Startup` manipuladores de eventos. Em projetos de suplemento do VSTO, você pode fazer nesse evento manipuladores para o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> ou <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> eventos.  
   
-###  <a name="removingActiveX"></a>Removendo Wrappers ActiveX em um suplemento  
+###  <a name="removingActiveX"></a> Removendo Wrappers ActiveX em um suplemento  
  Quando você adicionar controles de formulários do Windows dinâmicos aos documentos usando um suplemento do VSTO, você pode impedir que os wrappers de ActiveX para os controles que aparecem no documento na próxima vez que ele está sendo usado das seguintes maneiras.  
   
 #### <a name="removing-activex-wrappers-when-the-document-is-opened"></a>Removendo Wrappers ActiveX quando o documento é aberto.  

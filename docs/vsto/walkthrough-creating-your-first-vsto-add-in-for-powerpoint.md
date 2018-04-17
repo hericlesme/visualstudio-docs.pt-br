@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Criando seu primeiro suplemento VSTO para PowerPoint | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: eec0f2eaf7cc415e026a8427f7a881cd7ed15160
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5814262d68d9bf32ee3a0f72e3e0a15811a75a9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Passo a passo: criando o seu primeiro suplemento VSTO para o PowerPoint
-  Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office PowerPoint. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual apresentações estão abertas. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office PowerPoint. Os recursos que você criar este tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual apresentações estão abertas. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
@@ -67,12 +66,12 @@ ms.lasthandoff: 01/10/2018
   
 7.  Clique em **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstPowerPointAddIn** projeto e abrirá o **ThisAddIn** arquivo de código no editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstPowerPointAddIn** projeto e abrirá o **ThisAddIn** arquivo de código no editor.  
   
 ## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Escrevendo código que adiciona o texto para cada novo Slide  
  Em seguida, adicione código ao arquivo de código ThisAddIn. O novo código usa o modelo de objeto do PowerPoint para adicionar uma caixa de texto para cada novo slide. Por padrão, o arquivo de código da classe ThisAddIn contém o seguinte código gerado:  
   
--   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do PowerPoint. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
+-   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para o seu código e fornece acesso ao modelo de objeto do PowerPoint. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.  
   
 -   O `ThisAddIn_Startup` e `ThisAddIn_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o PowerPoint carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar o suplemento do VSTO quando ele é carregado e para limpar os recursos usados pelo seu suplemento do VSTO quando ela é descarregada. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).  
   
@@ -122,7 +121,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>Próximas etapas  
  Agora que você criou um Add-in básico do VSTO para PowerPoint, você pode aprender mais sobre como desenvolver um suplemento do VSTO com estes tópicos:  
   
--   Tarefas de programação gerais que você pode executar nos suplementos do VSTO para PowerPoint. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Tarefas de programação gerais que você pode executar nos suplementos do VSTO para PowerPoint. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
 -   Usando o modelo de objeto do PowerPoint. Para obter mais informações, consulte [soluções PowerPoint](../vsto/powerpoint-solutions.md).  
   

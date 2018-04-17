@@ -1,23 +1,21 @@
 ---
 title: Cache de esquema | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>Cache de esquema
 O editor XML fornece um cache de esquema localizado no diretório de %InstallRoot% \ \ esquemas XML. O cache de esquema é global para todos os usuários em seu computador e inclui esquemas XML padrão que são usados para validação do IntelliSense e de documento XML.  
@@ -29,22 +27,22 @@ O editor XML fornece um cache de esquema localizado no diretório de %InstallRoo
 |Filename|Descrição|  
 |--------------|-----------------|  
 |catalog.xsd|Esquema para arquivos de catálogo do editor XML. Para obter informações sobre catálogos do esquema, consulte abaixo.|  
-|DotNetConfig.xsd|Esquema para arquivos web.config, “http://schemas.microsoft.com/.NETConfiguration/v2.0”.|  
-|msbuild.xsd|O esquema para MSBuild faz arquivos, “http://schemas.microsoft.com/developer/msbuild/2003”.|  
+|DotNetConfig.xsd|Esquema para arquivos Web. config, "http://schemas.microsoft.com/.NETConfiguration/v2.0".|  
+|msbuild.xsd|Esquema para os arquivos MSBuild, "http://schemas.microsoft.com/developer/msbuild/2003".|  
 |msdata.xsd|Para anotações esquema XSD adicionados pela classe de <xref:System.Data.DataSet> , “urna: esquema-Microsoft-COM: XML-msdata”.|  
 |msxsl.xsd|Esquema para extensões do bloco de script do Microsoft XSLT, urna: esquema-Microsoft-COM: XSLT.|  
 |SnippetFormat.xsd|Esquema para os arquivos XML de trecho de código. Para exemplos, consulte %InstallDir% \ \ VC# expansões.|  
-|Soap1.1.xsd|Esquema para o protocolo simples de acesso (SOAP) 1,1 de objeto, http://schemas.xmlsoap.org/soap/envelope/.|  
+|Soap1.1.xsd|Esquema de protocolo de acesso a objeto simples (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|  
 |Soap1.2.xsd|Esquema para o protocolo de acesso simples 1,2 do objeto.|  
-|SiteMapSchema.xsd|Esquema XML para o arquivo do mapa do site do ASP.NET, “http://schemas.microsoft.com/AspNet/SiteMap-File-1.0”.|  
-|wsdl.xsd|Linguagem de descrição de serviço da Web do esquema, http://schemas.xmlsoap.org/wsdl/.|  
-|xenc.xsd|Esquema de criptografia XML, http://www.w3.org/2000/09/xmldsig#.|  
-|xhtml.xsd|Para http://www.w3.org/1999/xhtml esquema XHTML.|  
+|SiteMapSchema.xsd|Esquema de arquivo XML de mapa de site do ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|  
+|wsdl.xsd|Esquema de linguagem de descrição de serviço Web, http://schemas.xmlsoap.org/wsdl/.|  
+|xenc.xsd|Esquema de criptografia de XML, http://www.w3.org/2000/09/xmldsig#.|  
+|xhtml.xsd|Esquema para XHTML http://www.w3.org/1999/xhtml.|  
 |xlink.xsd|Esquema para XLink1.0, http://www.w3.org/1999/xlink.|  
-|xml.xsd|Esquema que descreve o XML: o espaço e XML: atributos de idioma, http://www.w3.org/XML/1998/namespace.|  
+|xml.xsd|Esquema que descreve os atributos XML: space e XML: lang, http://www.w3.org/XML/1998/namespace.|  
 |xmlsig.xsd|Esquema para assinaturas digitais XML, http://www.w3.org/2000/09/xmldsig#.|  
-|xsdschema.xsd|Esquema que descreve o próprio, http://www.w3.org/2001/XMLSchema.|  
-|xslt.xsd|O esquema XML para transformações, http://www.w3.org/1999/XSL/Transform.|  
+|xsdschema.xsd|Esquema que descreve o XSD em si, http://www.w3.org/2001/XMLSchema.|  
+|xslt.xsd|Transformações de esquema XML, http://www.w3.org/1999/XSL/Transform.|  
   
 ## <a name="updating-schemas-in-the-cache"></a>Atualizando esquemas no cache  
  O editor carrega o diretório de cache do esquema quando o pacote de editor XML é carregado e observações para todas as alterações ao executar. Se um esquema foi adicionado, é carregado automaticamente em um índice de memória conhecidos de esquemas. Se um esquema foi removido, ele é removido automaticamente de índice de memória. Se um esquema foi atualizado, invalida automaticamente o cache de memória deste esquema.  

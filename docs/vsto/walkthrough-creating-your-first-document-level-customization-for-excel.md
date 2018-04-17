@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Criando a primeira personalização no nível do documento para Excel | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Criando a primeira personalização no nível do documento para Excel | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Instruções passo a passo: criando a primeira personalização no nível do documento para Excel
   Este passo a passo introdutório mostra como criar uma personalização no nível do documento para o Microsoft Office Excel. Os recursos que você criar este tipo de solução estão disponíveis somente quando uma determinada pasta de trabalho é aberta. Você não pode usar uma personalização no nível do documento para fazer alterações no nível de aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer pasta de trabalho é aberta.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Selecione **criar um novo documento**e clique em **Okey**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o **FirstWorkbookCustomization** do projeto e adiciona os seguintes arquivos ao projeto.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstWorkbookCustomization** do projeto e adiciona os seguintes arquivos ao projeto.  
   
     -   *FirstWorkbookCustomization*. xlsx - representa a pasta de trabalho do Excel no projeto. Contém todas as planilhas e gráficos.  
   
@@ -170,7 +169,7 @@ ms.lasthandoff: 01/10/2018
 -   Implantando as personalizações no nível de documento para Excel: [implantar uma solução Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Soluções do Excel](../vsto/excel-solutions.md)   
  [Personalizações no nível do documento da programação](../vsto/programming-document-level-customizations.md)   
  [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)   

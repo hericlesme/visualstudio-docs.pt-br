@@ -1,12 +1,10 @@
 ---
-title: "Visão geral do modelo de objeto do Visio | Microsoft Docs"
-ms.custom: 
+title: Visão geral do modelo de objeto do Visio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Visio object model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e829842f4e530b014a19f69c567a91dc49bd78e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0e77256d800cb23b61a6680cdf59e60a39c7b57e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visio-object-model-overview"></a>Visão geral do modelo de objeto do Visio
   Para desenvolver soluções do Office para Microsoft Office Visio, você pode interagir com o modelo de objeto do Visio. Esse modelo de objeto consiste em classes e interfaces que são fornecidos no assembly de interoperabilidade primário do Visio e são definidos no namespace Microsoft.Office.Interop.Visio.  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="application-object"></a>Objeto de aplicativo  
  O objeto Microsoft.Office.Interop.Visio.Application representa o aplicativo do Visio e é o pai de todos os outros objetos. Seus membros geralmente se aplicam para o Visio como um todo. Você pode usar as propriedades e métodos de objetos Microsoft.Office.Interop.Visio.ApplicationSettings e o Microsoft.Office.Interop.Visio.Application para controlar o ambiente do Visio.  
   
- Em projetos de suplemento do VSTO, você pode acessar o objeto Microsoft.Office.Interop.Visio.Application usando o `Application` campo o `ThisAddIn` classe. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+ Em projetos de suplemento do VSTO, você pode acessar o objeto Microsoft.Office.Interop.Visio.Application usando o `Application` campo o `ThisAddIn` classe. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
 ### <a name="document-object"></a>Objeto de documento  
  O objeto Microsoft.Office.Interop.Visio.Document é central para programação do Visio. Representa um desenho, estêncil ou arquivo de modelo. Quando você abrir um documento do Visio ou cria um novo documento, você cria um novo objeto Microsoft.Office.Interop.Visio.Document, que é adicionado à coleção Microsoft.Office.Interop.Visio.Documents do objeto Microsoft.Office.Interop.Visio.Application .  

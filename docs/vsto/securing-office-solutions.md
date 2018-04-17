@@ -1,12 +1,10 @@
 ---
-title: "Protegendo soluções do Office | Microsoft Docs"
-ms.custom: 
+title: Protegendo soluções do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 271aad509d5ad2adb764b55f93fa65a8178424bd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a587534406d128655f9c24c9195902afb8e8817b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-office-solutions"></a>Protegendo soluções do Office
   O modelo de segurança para soluções do Office envolve várias tecnologias: o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Central de confiabilidade no Microsoft Office e a zona de sites restritos do Internet Explorer. As seções a seguir descrevem como funcionam os recursos de segurança diferentes:  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="GrantingTrustToSolutions"></a>Concedendo confiança a soluções do Office  
+##  <a name="GrantingTrustToSolutions"></a> Concedendo confiança a soluções do Office  
  Concedendo confiança a soluções do Office significa a modificação da política de segurança de cada usuário final para confiar a solução do Office com base na evidência a seguir:  
   
 -   O certificado usado para assinar o manifesto de implantação.  
@@ -50,16 +49,16 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações, consulte [concedendo confiança a soluções do Office](../vsto/granting-trust-to-office-solutions.md).  
   
-##  <a name="GrantingTrustToDocuments"></a>Concedendo confiança a documentos  
+##  <a name="GrantingTrustToDocuments"></a> Concedendo confiança a documentos  
  Uma personalização no nível do documento exige que o documento seja em um diretório que é designado como um local confiável. Para obter mais informações, consulte [concedendo confiança a documentos](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="GrantingTrustWindowsInstaller"></a>Concedendo confiança ao usar o Windows Installer  
+##  <a name="GrantingTrustWindowsInstaller"></a> Concedendo confiança ao usar o Windows Installer  
  Você pode usar o Windows Installer para criar um arquivo MSI para instalar soluções do Office para o diretório de arquivos de programa, o que exige direitos de administrador. Para soluções do Office no diretório de arquivos de programa, o Visual Studio 2010 Tools para Office Runtime considera essas soluções do Office sejam confiáveis e não exibe o prompt de confiança do ClickOnce.  
   
-##  <a name="Security"></a>Considerações sobre segurança específicas para soluções do Office  
+##  <a name="Security"></a> Considerações sobre segurança específicas para soluções do Office  
  Os recursos de segurança fornecidos pelo [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], e o Microsoft Office pode ajudar a proteger contra uma variedade de possíveis ameaças de segurança em soluções do Office. Para obter mais informações, consulte [considerações de segurança específicas para soluções do Office](../vsto/specific-security-considerations-for-office-solutions.md).  
   
-##  <a name="SecurityDuringDeployment"></a>Segurança durante o desenvolvimento  
+##  <a name="SecurityDuringDeployment"></a> Segurança durante o desenvolvimento  
  Para facilitar o processo de desenvolvimento, o Visual Studio define a política de segurança é necessária para executar e depurar toda vez que você compilar um projeto de sua solução em seu computador. Em alguns cenários, pode ser necessário executar etapas adicionais de segurança para desenvolver o projeto.  
   
 ### <a name="document-level-solutions"></a>Soluções no nível do documento  
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
   
  Pode haver muitos certificados temporários após algum tempo, portanto você deve limpar os certificados temporários ocasionalmente.  
   
-##  <a name="VisualStudioToolsForOfficeRuntime"></a>O Visual Studio Tools for Office Runtime  
+##  <a name="VisualStudioToolsForOfficeRuntime"></a> O Visual Studio Tools for Office Runtime  
  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] tem recursos para verificar a identidade do publicador e as permissões que são concedidas a uma personalização. Ele verifica essas permissões por meio de uma sequência de verificações de segurança.  
   
 ### <a name="security-during-customization-loading"></a>Segurança durante o carregamento de personalização  

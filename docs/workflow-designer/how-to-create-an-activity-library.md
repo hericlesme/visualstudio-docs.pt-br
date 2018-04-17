@@ -5,14 +5,14 @@ ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e3f84636273de253937ebf5c91cff066b9f85
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Como: Crie uma biblioteca de atividade
 As atividades personalizados são usadas para modelar seus processos comerciais específicos em um fluxo de trabalho. O modelo de biblioteca de atividades no [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] foi fornecido para permitir a criação de tais atividades personalizadas visualmente usando o Designer de fluxo de trabalho do Windows.
@@ -36,7 +36,7 @@ As atividades personalizados são usadas para modelar seus processos comerciais 
 7.  No **solução** caixa, digite um nome descritivo para sua solução e clique em **Okey**.
 
     > [!NOTE]
-    > Se você quiser adicionar um aplicativo de console do fluxo de trabalho a uma solução existente, abra essa solução no [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], clique com botão direito da solução de **Solution Explorer**e selecione **adicionar**, em seguida,  **Novo projeto...**  para abrir o **novo projeto** caixa de diálogo. Continuar conforme descrito acima neste procedimento.
+    > Se você quiser adicionar um aplicativo de console do fluxo de trabalho a uma solução existente, abra essa solução no [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], clique com botão direito da solução de **Solution Explorer**e selecione **adicionar**, em seguida, **Novo projeto...** para abrir o **novo projeto** caixa de diálogo. Continuar conforme descrito acima neste procedimento.
 
 8.  O modelo de projeto cria uma definição de atividade em XAML. Designer de fluxo de trabalho do Windows é aberto e exibe a tela para a atividade personalizada.
 

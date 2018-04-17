@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Criando Menus de atalho para indicadores | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Instruções passo a passo: criando menus de atalho para indicadores
   Este passo a passo demonstra como criar menus de atalho para <xref:Microsoft.Office.Tools.Word.Bookmark> controles uma personalização de nível de documento para Word. Quando um usuário clica o texto em um indicador, um menu de atalho aparece e oferece as opções de usuário para formatar o texto.  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Criando o projeto  
+##  <a name="BKMK_CreateProject"></a> Criando o projeto  
  A primeira etapa é criar um projeto de documento do Word no Visual Studio.  
   
 #### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio abre o novo documento do Word no designer e adiciona o **meu Menu de atalho do indicador** projeto **Gerenciador de soluções**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Adicionando texto e indicadores no documento  
+##  <a name="BKMK_addtextandbookmarks"></a> Adicionando texto e indicadores no documento  
  Adicionar texto ao documento e, em seguida, adicione dois indicadores sobrepostos.  
   
 #### <a name="to-add-text-to-your-document"></a>Para adicionar texto ao documento  
@@ -75,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  Selecione as palavras "Criando um menu de atalho quando você clica o texto" e, em seguida, clique em **Okey**.  
   
-     `bookmark1`é adicionado ao documento.  
+     `bookmark1` é adicionado ao documento.  
   
 3.  Adicione outro <xref:Microsoft.Office.Tools.Word.Bookmark> controlar com as palavras "clique o texto em um indicador".  
   
-     `bookmark2`é adicionado ao documento.  
+     `bookmark2` é adicionado ao documento.  
   
     > [!NOTE]  
     >  As palavras "clique o texto" está em ambos os `bookmark1` e `bookmark2`.  
   
  Quando você adiciona um indicador a um documento em tempo de design, um <xref:Microsoft.Office.Tools.Word.Bookmark> controle é criado. Você pode programar vários eventos do indicador. Você pode escrever código no <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> eventos do indicador para que quando o usuário clica o texto no indicador, um menu de atalho é exibido.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Adicionando comandos ao Menu de atalho  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Adicionando comandos ao Menu de atalho  
  Adicione botões de menu de atalho que aparece quando você clica no documento.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>Para adicionar comandos ao menu de atalho  
@@ -146,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Formatar o texto no indicador  
+##  <a name="BKMK_formattextbkmk"></a> Formatar o texto no indicador  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>Para formatar o texto no indicador  
   

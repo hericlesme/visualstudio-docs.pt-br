@@ -1,13 +1,10 @@
 ---
-title: "Solucionando problemas de implantação de solução do Office | Microsoft Docs"
-ms.custom: 
+title: Solucionando problemas de implantação de solução do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Solucionando problemas da implantação de solução do Office
   Este tópico contém informações sobre como resolver problemas comuns que você pode encontrar ao implantar soluções do Office.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Ao baixar assemblies em vez de carregar cópias armazenadas em cache  
   
-1.  Na barra de menus, escolha **projeto**, *ProjectName***propriedades**.  
+1.  Na barra de menus, escolha **projeto**, * * ProjectName**propriedades**.  
   
 2.  Sobre o **aplicativo** escolha **informações de Assembly**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>Reinstalar as soluções do Office faz com que um argumento exceção fora do intervalo  
  Quando você reinstalar uma solução do Office, um <xref:System.ArgumentOutOfRangeException> exceção poderá aparecer com a seguinte mensagem de erro: argumento especificado estava fora do intervalo de valores válidos.  
   
- Essa situação ocorrerá se o uso de maiusculas e minúsculas para a URL para o local de instalação é diferente. Por exemplo, esse erro apareceria se você instalou uma solução do Office do [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) na primeira vez e, em seguida, usado [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) o segunda vez.  
+ Essa situação ocorrerá se o uso de maiusculas e minúsculas para a URL para o local de instalação é diferente. Por exemplo, esse erro apareceria se você instalou uma solução do Office do [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) na primeira vez e, em seguida, usado [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) na segunda vez.  
   
  Para impedir que a mensagem que aparece, use maiusculas e minúsculas mesmo quando você instalar soluções do Office.  
   

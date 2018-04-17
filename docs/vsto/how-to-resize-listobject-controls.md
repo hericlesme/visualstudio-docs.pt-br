@@ -1,12 +1,10 @@
 ---
 title: 'Como: redimensionar controles ListObject | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ListObject control, resizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e018ed60e60c63dd47b5d56b599ea0f0499f561c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 12a81e6bb4a0484b79ad42b8fbab77db97ea82c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-listobject-controls"></a>Como redimensionar controles ListObject
   Definir o tamanho de um <xref:Microsoft.Office.Tools.Excel.ListObject> controle quando você adiciona uma pasta de trabalho do Microsoft Office Excel; no entanto, você pode redimensioná-la mais tarde. Por exemplo, você talvez queira alterar uma lista de colunas de duas a três colunas.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração de vídeo relacionada, consulte [como fazer i: adicionar colunas a um objeto de lista de associação de dados em tempo de execução?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
-##  <a name="designtime"></a>Redimensionar um controle ListObject em tempo de Design  
+##  <a name="designtime"></a> Redimensionar um controle ListObject em tempo de Design  
  Para redimensionar uma lista, clique e arraste uma das alças de dimensionamento, ou você pode redefinir seu tamanho no **redimensionar lista** caixa de diálogo.  
   
 #### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para redimensionar uma lista usando a caixa de diálogo redimensionar lista  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Clique em **OK**.  
   
-##  <a name="runtimedoclevel"></a>Redimensionar um controle ListObject em tempo de execução em um projeto no nível de documento  
+##  <a name="runtimedoclevel"></a> Redimensionar um controle ListObject em tempo de execução em um projeto no nível de documento  
  Você pode redimensionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle em tempo de execução usando o <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> método. Você não pode usar esse método para mover o <xref:Microsoft.Office.Tools.Excel.ListObject> controle para um novo local na planilha. Os cabeçalhos devem permanecer na mesma linha e o redimensionado <xref:Microsoft.Office.Tools.Excel.ListObject> controle deve se sobrepor o objeto da lista original. O redimensionado <xref:Microsoft.Office.Tools.Excel.ListObject> controle deve conter uma linha de cabeçalho e pelo menos uma linha de dados.  
   
 #### <a name="to-resize-a-list-object-programmatically"></a>Para redimensionar um objeto da lista de forma programática  
@@ -73,7 +72,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
-##  <a name="runtimeaddin"></a>Redimensionando um ListObject em tempo de execução em um projeto de suplemento do VSTO  
+##  <a name="runtimeaddin"></a> Redimensionando um ListObject em tempo de execução em um projeto de suplemento do VSTO  
  Você pode redimensionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle em qualquer planilha aberta em tempo de execução. Para obter mais informações sobre como adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> para uma planilha usando um suplemento do VSTO, consulte [como: adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 #### <a name="to-resize-a-list-object-programmatically"></a>Para redimensionar um objeto da lista de forma programática  

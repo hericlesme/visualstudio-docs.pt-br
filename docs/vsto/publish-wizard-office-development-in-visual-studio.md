@@ -1,12 +1,10 @@
 ---
 title: Publicar o Assistente (desenvolvimento do Office no Visual Studio) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de Publicação (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, crie os arquivos de manifesto e crie um programa de instalação.  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Um caminho de convenção de nomenclatura Universal (UNC), como \\\ServerName\MyApplication\\.  
   
--   Uma URL de um site, como http://www.microsoft.com/MyApplication.  
+-   Uma URL de uma web site, como http://www.microsoft.com/MyApplication.  
   
  Por padrão, o local de publicação é *http://localhost/projectname/* se tiver instalado o IIS ou o diretório Publish se você fizer não tem o IIS instalado.  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Consulte também  
  [Implantando uma solução do Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Publicar página, Designer de projeto &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Página de publicação, Designer de projeto &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Implantando uma solução do Office](../vsto/deploying-an-office-solution.md)  
   
   

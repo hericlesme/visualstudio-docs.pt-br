@@ -1,12 +1,10 @@
 ---
-title: "Soluções do Visio | Microsoft Docs"
-ms.custom: 
+title: Soluções do Visio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,18 +17,19 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], Visio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 558ddc7a9c0fee5305052143edaca2b88b097723
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a5cf82776989d21be60c38aff280d7f9613327c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visio-solutions"></a>Soluções do Visio
   O Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para o Microsoft Office Visio. Você pode usar os suplementos do VSTO para automatizar o Visio, estender os recursos do Visio ou personalizar a interface de usuário (IU) do Visio.  
   
- Para obter mais informações sobre os suplementos do VSTO, consulte [obtendo iniciado Programando suplementos do VSTO](../vsto/getting-started-programming-vsto-add-ins.md) e [suplementos da arquitetura do VSTO](../vsto/architecture-of-vsto-add-ins.md). Se você for novo para programação com o Microsoft Office, consulte [Introdução &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
+ Para obter mais informações sobre os suplementos do VSTO, consulte [obtendo iniciado Programando suplementos do VSTO](../vsto/getting-started-programming-vsto-add-ins.md) e [suplementos da arquitetura do VSTO](../vsto/architecture-of-vsto-add-ins.md). Se você for novo para programação com o Microsoft Office, consulte [Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
  **Aplica-se a:** as informações neste tópico se aplicam a projetos de suplemento do VSTO para Visio 2010. Para obter mais informações, consulte [recursos disponibilizados pelo aplicativo do Office e pelo tipo de projeto](../vsto/features-available-by-office-application-and-project-type.md).  
   
@@ -52,9 +51,9 @@ ms.lasthandoff: 01/10/2018
   
  Você pode exibir os procedimentos passo a passo e exemplos para usar o modelo de objeto do Visio para trabalhar com documentos e formas de código [trabalhando com documentos do Visio](../vsto/working-with-visio-documents.md) e [trabalhando com formas do Visio](../vsto/working-with-visio-shapes.md).  
   
- Para acessar o modelo de objeto do Visio de um suplemento do VSTO, use o `Application` campo o `ThisAddIn` classe em seu projeto. O `Application` campo retorna um objeto Microsoft.Office.Interop.Visio.Application que representa a instância atual do Visio. Para obter mais informações, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+ Para acessar o modelo de objeto do Visio de um suplemento do VSTO, use o `Application` campo o `ThisAddIn` classe em seu projeto. O `Application` campo retorna um objeto Microsoft.Office.Interop.Visio.Application que representa a instância atual do Visio. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).  
   
- Quando você chama o modelo de objeto do Visio, você pode usar tipos fornecidos no assembly de interoperabilidade primária (PIA) do Visio. O PIA atua como uma ponte entre o código gerenciado no suplemento do VSTO e o modelo de objeto COM no Visio. Todos os tipos no PIA do Visio são definidos no namespace Microsoft.Office.Interop.Visio. Para obter mais informações sobre assemblies de interoperabilidade primários, consulte [visão geral de desenvolvimento de soluções do Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) e [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
+ Quando você chama o modelo de objeto do Visio, você pode usar tipos fornecidos no assembly de interoperabilidade primária (PIA) do Visio. O PIA atua como uma ponte entre o código gerenciado no suplemento do VSTO e o modelo de objeto COM no Visio. Todos os tipos no PIA do Visio são definidos no namespace Microsoft.Office.Interop.Visio. Para obter mais informações sobre assemblies de interoperabilidade primários, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="visio-object-model-overview"></a>Visão geral do modelo de objeto do Visio  
  Você pode encontrar uma visão geral do modelo de objeto do Visio no [visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md), que inclui links para a referência de modelo de objeto do Visio e os SDKs.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Consulte também  
  [Guia de Introdução Programando suplementos do VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   
