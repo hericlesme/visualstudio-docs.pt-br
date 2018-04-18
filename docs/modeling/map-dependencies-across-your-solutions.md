@@ -2,8 +2,6 @@
 title: Mapear as dependências nas soluções | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -27,15 +25,15 @@ helpviewer_keywords:
 - code exploration, visualizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 8ce84bfc59782a27e517ae1813f3ee43d6cb3718
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
 
@@ -287,7 +285,7 @@ Quando você quiser entender as dependências em seu código, visualize-los Cria
 ##  <a name="SeeSourceHeader"></a> Consulte as dependências entre os arquivos de origem C e C++ e arquivos de cabeçalho  
  Se você quiser criar mapas mais completos para projetos C++, defina a opção de compilador de informações de procura (**/FR**) nesses projetos. Do contrário, uma mensagem é exibida e solicita a definição dessa opção. Se você selecionar **Okey**, define a opção do mapa atual. Você pode optar por ocultar a mensagem para todos os mapas posteriores. Se você ocultar essa mensagem, poderá exibi-la novamente. Defina a seguinte chave do registro `0` ou excluir a chave:  
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
 
  Quando você abre uma solução que contém projetos do Visual C++, pode demorar algum tempo para atualizar o banco de dados do IntelliSense. Durante esse tempo, você não poderá criar mapas de código de cabeçalho (. h ou `#include`) arquivos até que o banco de dados do IntelliSense conclui a atualização. É possível monitorar o andamento da atualização na barra de status do Visual Studio. Para resolver problemas ou mensagens exibidas porque algumas configurações do IntelliSense estão desabilitadas, consulte [solucionar problemas de mapas de código C e C++](#Troubleshooting).  
 
@@ -330,7 +328,7 @@ Quando você quiser entender as dependências em seu código, visualize-los Cria
 
 -   Desativar a adição automática de itens pai com a **incluem pais** na barra de ferramentas de mapa de código.  
 
--   Edite o arquivo de mapa de código diretamente para remover nós e links que não é necessário. Alterar o mapa não afeta o código subjacente. Consulte [mapeia Personalizar código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+-   Edite o arquivo de mapa de código diretamente para remover nós e links que não é necessário. Alterar o mapa não afeta o código subjacente. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
 
  ![Botões SKIP Build e incluir pais](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 
