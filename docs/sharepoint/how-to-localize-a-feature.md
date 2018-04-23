@@ -1,12 +1,10 @@
 ---
 title: 'Como: localizar um recurso | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 08756ce33d97e156d63fd873c63d4d6fc282285b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-localize-a-feature"></a>Como localizar uma funcionalidade
   Por padrão, descrições e títulos de recurso usam valores de cadeia de caracteres codificada. Para localizar o recurso título e descrição, substitua as cadeias de caracteres com expressões que referenciam recursos localizados.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Para localizar o **título** e **descrição** campos no recurso, use o seguinte formato para inserir valores nas caixas:  
   
-     `$Resources:`*ID da cadeia de caracteres*  
+     `$Resources:` *ID da cadeia de caracteres*  
   
      Por exemplo, digite $Resources:**título** no **título do recurso** caixa e $Resources:**descrição** no **descrição do recurso** caixa .  
   

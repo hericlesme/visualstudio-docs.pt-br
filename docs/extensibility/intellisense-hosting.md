@@ -2,26 +2,22 @@
 title: Hospedagem de IntelliSense | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - IntelliSense hosting
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9727b6fcbe3c552273ca521e8fd14ab5e5181eb7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b101460b3867c89862068d99412cd06edb884ef7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intellisense-hosting"></a>Hospedagem do IntelliSense
 Visual Studio permite a hospedagem de IntelliSense. IntellSense hospedagem permite que você fornecer o IntelliSense para código não é hospedado pelo editor de texto do Visual Studio.  

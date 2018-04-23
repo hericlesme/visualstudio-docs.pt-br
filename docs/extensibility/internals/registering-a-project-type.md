@@ -1,27 +1,25 @@
 ---
 title: Registro de um tipo de projeto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>Registro de um tipo de projeto
 Quando você cria um novo tipo de projeto, você deve criar entradas do registro que habilitam [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para reconhecer e trabalhar com o tipo de projeto. Você normalmente cria essas entradas do registro usando um arquivo de script (. rgs) do registro.  
@@ -85,7 +83,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
   
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
-|`@`(Padrão)|REG_SZ|`FigPrj Project VSPackage`|Nome localizável deste registrado VSPackage (tipo de projeto).|  
+|`@` (Padrão)|REG_SZ|`FigPrj Project VSPackage`|Nome localizável deste registrado VSPackage (tipo de projeto).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Caminho da DLL do tipo de projeto. O IDE carrega essa DLL e passa o CLSID VSPackage para `DllGetClassObject` obter <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> para construir o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objeto.|  
 |`CompanyName`|REG_SZ|`Microsoft`|Nome da empresa que desenvolveu o tipo de projeto.|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|Nome para o tipo de projeto.|  

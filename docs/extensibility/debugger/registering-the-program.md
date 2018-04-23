@@ -1,26 +1,24 @@
 ---
 title: Registrando o programa | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: eb61257b80e3f8b4a09819b2b037f342e2ecbee0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-the-program"></a>Registrando o programa
 Depois que o mecanismo de depuração adquiriu uma porta, representado por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, a próxima etapa para habilitar o programa a ser depurado é registrá-lo com a porta. Depois de registrado, o programa está disponível para depuração por uma das seguintes maneiras:  
@@ -35,7 +33,7 @@ Depois que o mecanismo de depuração adquiriu uma porta, representado por um [I
   
 1.  Chamar o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado pela porta.  
   
-     `IDebugPortNotify2::AddProgramNode`requer um ponteiro para um [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
+     `IDebugPortNotify2::AddProgramNode` requer um ponteiro para um [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
   
      Normalmente, quando o sistema operacional ou o ambiente de tempo de execução carrega um programa, ele cria o nó do programa. Se o mecanismo de depuração (DE) é solicitado a carregar o programa a DE cria e registra o nó do programa.  
   

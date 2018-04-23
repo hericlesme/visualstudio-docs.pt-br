@@ -1,12 +1,10 @@
 ---
-title: "Implantando uma solução do Office usando o Windows Installer | Microsoft Docs"
-ms.custom: 
+title: Implantando uma solução do Office usando o Windows Installer | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Implantando uma solução do Office usando o Windows Installer
 Saiba como criar um Windows Installer para sua solução do Office usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -225,7 +224,7 @@ O **redistribuíveis** página contém um item chamado **Microsoft VSTO 2010 Run
   
 4. No bloco de notas, substitua o texto **seu GUID aqui** colando o GUID em seu lugar.  
   
-   O  **&lt;propriedades&gt;**  elemento do arquivo semelhante ao seguinte.  
+   O **&lt;propriedades&gt;** elemento do arquivo semelhante ao seguinte.  
   
   
    ```xml  
@@ -237,7 +236,7 @@ O **redistribuíveis** página contém um item chamado **Microsoft VSTO 2010 Run
   
 6. No **Salvar como** caixa de diálogo, navegue até seu **Desktop** pasta.  
   
-7. No **Salvar como tipo** , escolha **todos os arquivos (&#42;. &#42;)**.  
+7. No **Salvar como tipo** , escolha **todos os arquivos (&#42;.&#42;)** .  
   
 8. No **nome de arquivo** , digite **Visual Studio 2010 Tools para Office Runtime.prq**e, em seguida, escolha o **salvar** botão.  
   
@@ -491,7 +490,7 @@ Para modificar as propriedades personalizadas, crie um programa que remova a per
   
 13. Abra o arquivo de projeto da sua solução no Bloco de Notas. Para projetos do Visual Basic, o nome do arquivo é ExcelWorkbook.vbproj. Para projetos do C#, o nome do arquivo é ExcelWorkbook.csproj.  
   
-14. No arquivo de projeto, procure o  **&lt;ID da solução&gt;**  elemento, copie seu valor para a área de transferência e, em seguida, feche o bloco de notas.  
+14. No arquivo de projeto, procure o **&lt;ID da solução&gt;** elemento, copie seu valor para a área de transferência e, em seguida, feche o bloco de notas.  
   
    Passe esse valor para o aplicativo de console como um parâmetro.  
   
@@ -531,7 +530,7 @@ Para modificar as propriedades personalizadas, crie um programa que remova a per
   
 9. Na barra de menus, escolha **criar**, **OfficeAddInSetup criar**.  
   
-   Após a compilação, você pode localizar o arquivo setup.exe do **OfficeAddInSetup** projeto no seguinte local: *OfficeAddInSetupProjectRoot***\ OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   Após a compilação, você pode localizar o arquivo setup.exe do **OfficeAddInSetup** projeto no seguinte local: *OfficeAddInSetupProjectRoot * \OfficeAddInSetup\Express\SingleImage\DiskImages\ DISCO1\**  
   
   
 ## <a name="see-also"></a>Consulte também  

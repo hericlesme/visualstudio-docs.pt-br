@@ -1,13 +1,10 @@
 ---
-title: "Criando regiões de formulário do Outlook | Microsoft Docs"
-ms.custom: 
+title: Criando regiões de formulário do Outlook | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.OFFICE.TOOLS.OUTLOOK.FORMREGION
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86f325784fdd175b5b449eb4d55d920a3f9df2d4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 550514444e7931b188951bbf05f8d371bc361aca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-outlook-form-regions"></a>Criando regiões de formulário do Outlook
   Você pode usar regiões de formulário para personalizar formulários do Microsoft Office Outlook. Visual Studio fornece ferramentas avançadas que tornam mais fácil para você criar, desenvolver e depurar regiões de formulário.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Implantando uma região de formulário](#Deploying)  
   
-##  <a name="Enhance"></a>Vantagens de usar regiões de formulário  
+##  <a name="Enhance"></a> Vantagens de usar regiões de formulário  
  Regiões de formulário oferecem muitos aprimoramentos sobre desenvolvimento de formulários do Outlook tradicional:  
   
 -   Personalize a página padrão de qualquer formato padrão.  
@@ -64,10 +61,10 @@ ms.lasthandoff: 01/10/2018
   
  Para obter mais informações, consulte [personalizar páginas de formulário e regiões de formulário](http://msdn.microsoft.com/library/office/ff869060.aspx).  
   
-##  <a name="Adding"></a>Adicionando uma região de formulário do Outlook ao seu projeto  
+##  <a name="Adding"></a> Adicionando uma região de formulário do Outlook ao seu projeto  
  Você pode usar o **nova região de formulário do Outlook** Assistente para criar uma nova região de formulário ou importar uma região de formulário projetada no Outlook. Além disso, se você tiver uma região de formulário que você usou em outro projeto de suplemento do VSTO do Outlook, você pode reutilizar sua região de formulário existente.  
   
-###  <a name="CreatingFormRegion"></a>Criando uma nova região de formulário usando o Assistente  
+###  <a name="CreatingFormRegion"></a> Criando uma nova região de formulário usando o Assistente  
  Para criar uma região de formulário, adicione um **região de formulário do Outlook** item a um projeto de suplemento do VSTO do Outlook. Isso inicia o **nova região de formulário do Outlook** assistente.  
   
  Use o Assistente para indicar se você deseja criar uma nova região de formulário ou importar uma região de formulário projetada no Outlook. Para obter mais informações sobre como criar uma nova região de formulário, consulte [usando o Designer de região de formulário](#UsingFormRegionDesigner). Para obter mais informações sobre como usar uma região de formulário projetada no Outlook, consulte [importando uma região de formulário projetada no Outlook](#UsingFormRegionDesignedOutlook).  
@@ -106,12 +103,12 @@ ms.lasthandoff: 01/10/2018
   
  A maioria da classe de fábrica de região de formulário é implementado no arquivo de designer de região de formulário. No entanto, o `FormRegionInitializing` manipulador de eventos é exposto no arquivo de código de região de formulário. Você pode usar este manipulador de eventos para especificar se o Outlook deve exibir a região do formulário. Para obter mais informações, consulte [manipulando eventos de região de formulário](#HandlingFormRegionEvents).  
   
-###  <a name="AddingExistingFormRegion"></a>Adicionando uma região de formulário existente ao seu projeto  
+###  <a name="AddingExistingFormRegion"></a> Adicionando uma região de formulário existente ao seu projeto  
  Se você tiver uma região de formulário do Outlook usado em outro projeto do Outlook, você pode reutilizá-lo em seu projeto de suplemento do VSTO Outlook atual usando o **Add Existing Item** caixa de diálogo.  
   
  A região do formulário existente deve ter um arquivo de código (. cs ou. vb); Você não pode adicionar arquivos de armazenamento de formulário do Outlook (. ofs) usando o **Add Existing Item** caixa de diálogo. No entanto, você pode criar uma nova região de formulário importando um arquivo de armazenamento de formulário do Outlook. Para obter mais informações, consulte [como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
-##  <a name="UsingFormRegionDesigner"></a>Usando o Designer de região de formulário  
+##  <a name="UsingFormRegionDesigner"></a> Usando o Designer de região de formulário  
  O designer de região de formulário ajuda você a criar o layout e a aparência de uma região de formulário. Arraste os controles gerenciados para a superfície do designer, clique duas vezes em controles para abrir os manipuladores de eventos e definir propriedades **propriedades** janela.  
   
 > [!NOTE]  
@@ -129,7 +126,7 @@ ms.lasthandoff: 01/10/2018
   
  O suporte de designer de região de formulário apenas controles gerenciados. Não é possível adicionar controles nativos do Outlook.  
   
-##  <a name="UsingFormRegionDesignedOutlook"></a>Importando uma região de formulário projetada no Outlook  
+##  <a name="UsingFormRegionDesignedOutlook"></a> Importando uma região de formulário projetada no Outlook  
  Quando você cria no Outlook, você pode adicionar controles nativos do Outlook para a região do formulário. Controles nativos do Outlook permitem associar dados do Outlook no tempo de design. No entanto, você não pode usar o designer de região de formulário para adicionar controles gerenciados ou alterar o design da região de formulário.  
   
  Você pode importar regiões de formulário para um projeto de suplemento do VSTO Outlook usando o **nova região de formulário do Outlook** assistente. Sobre o **selecione como você deseja criar a região de formulário** , selecione **importar um arquivo de armazenamento de formulário do Outlook (. ofs)**. Em seguida, você pode navegar para o local de um arquivo de armazenamento de formulário do Outlook (. ofs). (O outlook salva regiões de formulário como arquivos. ofs).  
@@ -138,7 +135,7 @@ ms.lasthandoff: 01/10/2018
   
  Para lidar com eventos em um projeto do Visual Basic, selecione um evento da lista de nomes de método na parte superior do Editor de códigos.  
   
- Para manipular eventos em um projeto c#, inscrever-se para eventos de controle de <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> método. Para obter mais informações, consulte [como: inscrever-se e cancelar a assinatura de eventos &#40; C &#35; Guia de programação &#41; ](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
+ Para manipular eventos em um projeto c#, inscrever-se para eventos de controle de <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> método. Para obter mais informações, consulte [como: inscrever-se e cancelar a assinatura de eventos &#40;C&#35; guia de programação&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
   
  Você pode alterar as propriedades da região de formulário no `InitializeManifest` método da classe de fábrica de região de formulário.  
   
@@ -148,12 +145,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="updating-an-imported-form-regions-design"></a>Atualizando o Design de uma região formulário importado  
  Você pode adicionar, remover ou alterar os controles na região de formulário. Antes de fazer isso, faça backup de qualquer código que você adicionou ao arquivo de código de região de formulário. Em seguida, abra o arquivo. ofs no Outlook, modificar a região do formulário e, em seguida, salve as alterações. Use o **nova região de formulário do Outlook** Assistente para importar o arquivo. ofs modificado. Você pode colar o código para o novo arquivo de código de região de formulário.  
   
-##  <a name="AddingCustomCode"></a>Adicionando código personalizado a uma região de formulário  
+##  <a name="AddingCustomCode"></a> Adicionando código personalizado a uma região de formulário  
  O <xref:Microsoft.Office.Tools.Outlook> namespace fornece acesso para classes que representam a região do formulário, o item do Outlook que exibe a região de formulário e outros itens úteis. O **região de formulário do Outlook** item automaticamente adiciona uma referência a esse assembly no projeto e insere as **usando** ou **importações** instrução na parte superior das arquivo de código de região de formulário.  
   
  Você pode usar propriedades, métodos e classes no namespace Microsoft.Office.Interop.Outlook para realizar a maior parte das tarefas de programação do Outlook. Para obter mais informações sobre o modelo de objeto do Outlook, consulte [visão geral de modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md). Para obter exemplos de tarefas típicas que usar o modelo de objeto do Outlook, consulte [soluções do Outlook](../vsto/outlook-solutions.md).  
   
-###  <a name="HandlingFormRegionEvents"></a>Manipulação de eventos de região de formulário  
+###  <a name="HandlingFormRegionEvents"></a> Manipulação de eventos de região de formulário  
  O **região de formulário do Outlook** item adiciona automaticamente os manipuladores de eventos de três a seguir para o arquivo de código de região de formulário.  
   
 |evento|Descrição|  
@@ -162,7 +159,7 @@ ms.lasthandoff: 01/10/2018
 |FormRegionShowing|Ocorre após uma instância da região do formulário ser criada, mas antes da região do formulário ser exibida.|  
 |FormRegionClosed|Ocorre antes da região do formulário ser fechada.|  
   
-##  <a name="Building"></a>Criar o projeto  
+##  <a name="Building"></a> Criar o projeto  
  Quando você compila um projeto de suplemento do VSTO do Outlook que contém uma região de formulário, o Visual Studio adiciona as informações a seguir no registro:  
   
 -   Uma chave para cada classe de mensagem que está associado uma ou mais regiões de formulário.  
@@ -171,12 +168,12 @@ ms.lasthandoff: 01/10/2018
   
  Outlook usa essas informações para carregar as regiões de formulário.  
   
-##  <a name="Debugging"></a>Depuração de uma região de formulário  
+##  <a name="Debugging"></a> Depuração de uma região de formulário  
  Você pode depurar um Outlook VSTO suplemento que contém uma região de formulário, exatamente como você faria para depurar outras [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos. Quando você inicia o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador, o Visual Studio inicia automaticamente o Outlook.  
   
  Para exibir a região de formulário, você deve abrir o item apropriado do Outlook. Por exemplo, se uma região de formulário adjacente é anexada à parte inferior de um item de email, abra um item de email.  
   
-##  <a name="Deploying"></a>Implantando uma região de formulário  
+##  <a name="Deploying"></a> Implantando uma região de formulário  
  Regiões de formulário são implantados automaticamente com o Add-in do Outlook VSTO associado. Portanto, não é necessário realizar tarefas especiais para implantar uma região de formulário. Para obter mais informações sobre a implantação de suplementos do VSTO, consulte [implantar uma solução Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="related-topics"></a>Tópicos relacionados  

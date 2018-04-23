@@ -1,28 +1,26 @@
 ---
 title: Projetos de aninhamento | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project nesting
 - nested projects
 - projects [Visual Studio SDK], child projects
 - projects [Visual Studio SDK], nesting
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5b91f9dc00b9130f2c239bd3254f78376bc0fdf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 35d0f4f8906acc08733894d1c24b6d8c2199e1f7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="nesting-projects"></a>Projetos de aninhamento
 Os desenvolvedores de aplicativos de empresa que usam o pacote do VS convenientemente podem agrupar tipos semelhantes de projetos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando *aninhamento de projeto*. Por exemplo, o projeto de modelo da empresa usa projetos aninhados para projetos de grupo em categorias. Projetos de fachada de negócios, projetos de interface de usuário da Web e assim por diante são agrupados juntos em uma categoria.  

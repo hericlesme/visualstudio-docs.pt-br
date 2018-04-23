@@ -1,27 +1,25 @@
 ---
-title: "Propriedades de documento personalizadas em um serviço de linguagem herdado | Microsoft Docs"
-ms.custom: 
+title: Propriedades de documento personalizadas em um serviço de linguagem herdado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom document properties, language services [managed package framework]
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d1159ccc35f47b34069461b27239173c1860b18a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc4706a7cd1a666da8562ce78de5af9366c69fab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriedades de documento personalizadas em um serviço de linguagem herdado
 Propriedades do documento podem ser exibidas no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propriedades** janela. Linguagens de programação geralmente não têm propriedades associadas com os arquivos de origem individuais. No entanto, o XML oferece suporte a propriedades de documento que afetam a codificação, o esquema e a folha de estilos.  

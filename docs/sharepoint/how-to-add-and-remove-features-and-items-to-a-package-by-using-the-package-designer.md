@@ -1,13 +1,10 @@
 ---
 title: 'Como: adicionar e remover recursos e itens de um pacote usando o Designer de pacote | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerDesign
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3acae5c521a4b4f6953af095bf56f869f35c91d3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6f807394497bff99e12546f7a1a913adffbff41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Como adicionar e remover funcionalidades e itens de um pacote usando o Package Designer
   Quando você cria uma solução do SharePoint, o Visual Studio adiciona os recursos do SharePoint padrão para o pacote da solução. Antes da implantação final, você pode adicionar e remover itens de projeto do SharePoint e recursos para modificar o pacote do SharePoint.  

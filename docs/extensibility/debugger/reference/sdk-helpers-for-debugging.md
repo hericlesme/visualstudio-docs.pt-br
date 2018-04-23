@@ -1,12 +1,10 @@
 ---
-title: "Auxiliares do SDK para depuração | Microsoft Docs"
-ms.custom: 
+title: Auxiliares do SDK para depuração | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-helpers-for-debugging"></a>Auxiliares do SDK para depuração
 Essas funções e as declarações são funções auxiliares global para implementar mecanismos de depuração, avaliadores de expressão e provedores de símbolo em C++.  
@@ -276,7 +274,7 @@ HRESULT EnumMetricSections(
 >  Todos os GUIDs são armazenados no formato de `{GUID}`. Por exemplo, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Mecanismos de depuração  
- A seguir está a organização das métricas de mecanismos de depuração no registro. `Engine`é o nome do tipo de métrica para um mecanismo de depuração e corresponde ao *[tipo de métrica]* na subárvore de registro acima.  
+ A seguir está a organização das métricas de mecanismos de depuração no registro. `Engine` é o nome do tipo de métrica para um mecanismo de depuração e corresponde ao *[tipo de métrica]* na subárvore de registro acima.  
   
  `Engine`\  
   
@@ -303,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[guid do fornecedor de porta]*|O GUID do fornecedor de porta, se houver. Vários mecanismos de depuração usam o fornecedor de porta padrão e, portanto, não especificam seu próprio fornecedor. Nesse caso, a subchave `PortSupplier` estará ausente.|  
   
 ### <a name="port-suppliers"></a>Fornecedores de porta  
- A seguir está a organização das métricas de fornecedor de porta no registro. `PortSupplier`é o nome do tipo de métrica para um fornecedor de porta e corresponde ao *[tipo de métrica]*.  
+ A seguir está a organização das métricas de fornecedor de porta no registro. `PortSupplier` é o nome do tipo de métrica para um fornecedor de porta e corresponde ao *[tipo de métrica]*.  
   
  `PortSupplier`\  
   
@@ -321,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[classe guid]*|O GUID da classe que implementa este fornecedor de porta|  
   
 ### <a name="symbol-providers"></a>Provedores de símbolo  
- A seguir está a organização das métricas de fornecedor de símbolo no registro. `SymbolProvider`é o nome do tipo de métrica para o provedor de símbolo e corresponde à *[tipo de métrica]*.  
+ A seguir está a organização das métricas de fornecedor de símbolo no registro. `SymbolProvider` é o nome do tipo de métrica para o provedor de símbolo e corresponde à *[tipo de métrica]*.  
   
  `SymbolProvider`\  
   
@@ -349,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[classe guid]*|O GUID da classe que implementa este provedor de símbolo|  
   
 ### <a name="expression-evaluators"></a>Avaliadores de expressão  
- A seguir está a organização das métricas de avaliador de expressão no registro. `ExpressionEvaluator`é o nome do tipo de métrica para o avaliador de expressão e corresponde ao *[tipo de métrica]*.  
+ A seguir está a organização das métricas de avaliador de expressão no registro. `ExpressionEvaluator` é o nome do tipo de métrica para o avaliador de expressão e corresponde ao *[tipo de métrica]*.  
   
 > [!NOTE]
 >  O tipo de métrica para `ExpressionEvaluator` não está definido em dbgmetric.h, como presume-se que todas as alterações de métrica para avaliadores de expressão irá por meio das funções de métrica de avaliador de expressão apropriada (o layout do `ExpressionEvaluator` subchave é um pouco complicada, então os detalhes estão ocultos em dbgmetric.lib).  
@@ -380,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[guid do mecanismo de depuração]*|O GUID de um mecanismo de depuração que este avaliador de expressão funciona com|  
   
 ### <a name="expression-evaluator-extensions"></a>Extensões do avaliador de expressão  
- A seguir está a organização das métricas de extensão do avaliador de expressão no registro. `EEExtensions`é o nome de tipo de métrica para a expressão de extensões do avaliador e corresponde ao *[tipo de métrica]*.  
+ A seguir está a organização das métricas de extensão do avaliador de expressão no registro. `EEExtensions` é o nome de tipo de métrica para a expressão de extensões do avaliador e corresponde ao *[tipo de métrica]*.  
   
  `EEExtensions`\  
   
@@ -395,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[extensão guid]*|O GUID de uma extensão do avaliador de expressão|  
   
 ### <a name="exceptions"></a>Exceções  
- A seguir está a organização das métricas de exceções no registro. `Exception`é o nome do tipo de métrica para as exceções e corresponde à *[tipo de métrica]*.  
+ A seguir está a organização das métricas de exceções no registro. `Exception` é o nome do tipo de métrica para as exceções e corresponde à *[tipo de métrica]*.  
   
  `Exception`\  
   

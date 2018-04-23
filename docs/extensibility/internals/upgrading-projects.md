@@ -1,27 +1,25 @@
 ---
 title: Atualizando projetos | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>Atualizando projetos
 Altera o modelo de projeto de uma versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para o próximo pode exigir que as soluções e projetos ser atualizado para que eles podem executar a versão mais recente. O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece interfaces que podem ser usados para implementar o suporte à atualização em seus próprios projetos.  
@@ -57,7 +55,7 @@ Altera o modelo de projeto de uma versão do [!INCLUDE[vsprvs](../../code-qualit
   
  Para obter mais informações sobre como fazer backup e atualizar projetos, consulte os comentários para IVsProjectUpgrade vsshell2.idl.  
   
-## <a name="upgrading-custom-projects"></a>Atualizando projetos personalizados
+## <a name="upgrading-custom-projects"></a> Atualizando projetos personalizados
 Se você alterar as informações mantidas no arquivo de projeto entre diferentes versões do Visual Studio do produto, você precisará dar suporte ao atualizar o arquivo de projeto do antigo para a nova versão. Para dar suporte a atualização que permite que você participe de **Assistente de conversão do Visual Studio**, implementar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface. Essa interface contém o único mecanismo disponível para a atualização da cópia. A atualização do projeto ocorre como uma parte da solução é aberta. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface é implementada pela fábrica de projeto ou pelo menos deve ser obtido da fábrica de projeto.  
   
  O mecanismo antigo que usa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface também é suportada, mas conceitualmente atualiza o sistema de projeto como parte do projeto aberto. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface, portanto, é chamada pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente mesmo se o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface chamada ou implementada. Essa abordagem permite que você use <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> para implementar a cópia e somente as partes da atualização de projeto e delegar o resto do trabalho a ser realizado no local (possivelmente no novo local), o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> interface.  
@@ -92,7 +90,7 @@ Se você alterar as informações mantidas no arquivo de projeto entre diferente
   
 5.  Use os métodos de <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> pós-atualização relacionados mensagens para o usuário usando o Assistente de migração do Visual Studio.  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>interface é usada para implementar qualquer tipo de atualização de arquivo que deve acontecer como parte da atualização do projeto. Esta interface não é chamada de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, mas é fornecida como um mecanismo para atualizar os arquivos que fazem parte do sistema de projeto, mas o sistema de projeto principal pode não estar ciente diretamente. Por exemplo, essa situação pode ocorrer se o compilador relacionadas a arquivos e as propriedades não são tratadas pela equipe de desenvolvimento mesmo que lida com o restante do sistema de projeto.  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> interface é usada para implementar qualquer tipo de atualização de arquivo que deve acontecer como parte da atualização do projeto. Esta interface não é chamada de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, mas é fornecida como um mecanismo para atualizar os arquivos que fazem parte do sistema de projeto, mas o sistema de projeto principal pode não estar ciente diretamente. Por exemplo, essa situação pode ocorrer se o compilador relacionadas a arquivos e as propriedades não são tratadas pela equipe de desenvolvimento mesmo que lida com o restante do sistema de projeto.  
   
 ### <a name="ivsprojectupgrade-implementation"></a>Implementação de IVsProjectUpgrade  
  Se o sistema de projeto implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> somente, ele não pode participar de **Assistente de conversão do Visual Studio**. No entanto, mesmo se você implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface, você ainda pode delegar a atualização de arquivo para <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implementação.  

@@ -1,12 +1,10 @@
 ---
-title: "Como: instalar o Visual Studio Tools for Office Runtime redistribuível | Microsoft Docs"
-ms.custom: 
+title: 'Como: instalar o Visual Studio Tools for Office Runtime redistribuível | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f76191ca8b41f252e5009c0d3e7e09415f6f081
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 552ef84dc5b4bba8b9f63173d41a43a4efd82a14
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Como instalar o redistribuível de tempo de execução do Visual Studio Tools para Office
   O Visual Studio 2010 Tools para Office Runtime deve ser instalado em cada computador que executa soluções são criadas usando as ferramentas de desenvolvedor do Microsoft Office em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. O tempo de execução é instalado automaticamente quando você instala o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]e o Microsoft Office. Para obter mais informações, consulte [Visual Studio Tools para Office cenários de instalação de tempo de execução](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
      O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]inclui pacotes de idiomas. Se a instalação do Windows é definida para um idioma diferente do inglês, você pode exibir mensagens de tempo de execução no mesmo idioma em que você usa para Windows. Da mesma forma, se os usuários finais instalam o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e, em seguida, execute as soluções em instalações do Windows que são definidas para um idioma diferente do inglês, mensagens de tempo de execução serão exibido no mesmo idioma do Windows. Em alguns casos, talvez seja necessário pacotes de idioma adicionais. Por exemplo, talvez seja necessário pacotes de idioma adicionais se sua cópia do Windows usa mais de uma configuração de idioma, ou se você alternar para outro idioma, depois que você já tiver instalado o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Você pode encontrar os pacotes de idiomas em [Microsoft Visual Studio 2010 Tools para o pacote de idiomas do Microsoft Office System (versão 4.0 Runtime)](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Consulte também  
- [Guia de Introdução &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Configurando um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [Como: configurar um computador para desenvolver soluções do Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [Como: instalar Assemblies de interoperabilidade primários do Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   

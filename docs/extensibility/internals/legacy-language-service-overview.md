@@ -2,26 +2,22 @@
 title: Visão geral do serviço de linguagem herdada | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05805e5cf4b21f4c7d233cab7dd8421ee76f626f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8641a3e009cb5a7b61d8334b6dcb2440d186f4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="legacy-language-service-overview"></a>Visão geral do serviço de linguagem herdada
 Um serviço de linguagem fornece suporte de editor que permite que você implemente certos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recursos. As classes de serviço de linguagem gerenciada pacote MPF (estrutura) oferecem suporte completo para recursos usados e suporte parcial para outros recursos.  

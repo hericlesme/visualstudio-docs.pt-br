@@ -1,29 +1,25 @@
 ---
-title: "Função SccOpenProject | Microsoft Docs"
-ms.custom: 
+title: Função SccOpenProject | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>Função SccOpenProject
 Essa função abre um projeto de controle do código-fonte existente ou cria um novo.  
@@ -70,7 +66,7 @@ SCCRTN SccOpenProject (
  [in] Uma função de retorno de chamada opcional para exibir o texto de saída do plug-in de controle de origem.  
   
  dwFlags  
- [in] Se um novo projeto precisa ser criado se o projeto é desconhecido para a fonte de sinais controlam plug-in. Valor pode ser uma combinação de `SCC_OP_CREATEIFNEW` e`SCC_OP_SILENTOPEN.`  
+ [in] Se um novo projeto precisa ser criado se o projeto é desconhecido para a fonte de sinais controlam plug-in. Valor pode ser uma combinação de `SCC_OP_CREATEIFNEW` e `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>Valor de retorno  
  A implementação de plug-in de controle de origem dessa função deve retornar um dos seguintes valores:  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  A primeira ação que o IDE pode ser necessário para executar pode ser uma chamada para o `SccOpenProject` função ou o [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Por esse motivo, eles têm um idênticos `lpUser` parâmetro.  
   
- `lpAuxProjPath`e`lpProjName` são lidas do arquivo de solução, ou eles são retornados de uma chamada para o `SccGetProjPath` função. Esses parâmetros contêm as cadeias de caracteres que associa o plug-in de controle de origem com o projeto e são significativos para o plug-in. Se essas cadeias de caracteres não estão no arquivo de solução e o usuário não foi solicitado para procurar (que retorna uma cadeia de caracteres por meio de `SccGetProjPath` função), o IDE passa cadeias de caracteres vazias para os `lpAuxProjPath` e `lpProjName`e espera que esses valores sejam atualizados pelo plug-in quando essa função retorna.  
+ `lpAuxProjPath` e`lpProjName` são lidas do arquivo de solução, ou eles são retornados de uma chamada para o `SccGetProjPath` função. Esses parâmetros contêm as cadeias de caracteres que associa o plug-in de controle de origem com o projeto e são significativos para o plug-in. Se essas cadeias de caracteres não estão no arquivo de solução e o usuário não foi solicitado para procurar (que retorna uma cadeia de caracteres por meio de `SccGetProjPath` função), o IDE passa cadeias de caracteres vazias para os `lpAuxProjPath` e `lpProjName`e espera que esses valores sejam atualizados pelo plug-in quando essa função retorna.  
   
- `lpTextOutProc`é um ponteiro para uma função de retorno de chamada fornecida pelo IDE para o plug-in para fins de exibição da saída de resultado do comando de controle de origem. Essa função de retorno de chamada é descrita detalhadamente no [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ `lpTextOutProc` é um ponteiro para uma função de retorno de chamada fornecida pelo IDE para o plug-in para fins de exibição da saída de resultado do comando de controle de origem. Essa função de retorno de chamada é descrita detalhadamente no [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
 > [!NOTE]
 >  Se o plug-in de controle do código-fonte pretende aproveitar isso, ele deve ter configurado o `SCC_CAP_TEXTOUT` sinalizador no [SccInitialize](../extensibility/sccinitialize-function.md). Se esse sinalizador não for definido, ou se o IDE não dá suporte a esse recurso, `lpTextOutProc` será `NULL`.  

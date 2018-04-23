@@ -1,12 +1,10 @@
 ---
 title: Assinando pacotes VSIX | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - signature
 - signing
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ec875e6877b1c3ff1edf38b29c5e72b757021085
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 84166ed96fb49567f4ede3e8e0c4b7e8ba3cc814
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="signing-vsix-packages"></a>Assinando pacotes VSIX
 Assemblies de extensão não precisa ser assinado antes de que podem ser executados no Visual Studio, mas é uma boa prática fazer isso.  
@@ -40,7 +38,7 @@ Assemblies de extensão não precisa ser assinado antes de que podem ser executa
   
 1.  Adicione o VSIX para um projeto.  
   
-2.  Clique com o botão direito no nó do projeto no Gerenciador de soluções, selecionando **Adicionar &#124; Gerenciar pacotes NuGet**.  Para obter mais informações sobre o NuGet e adicionando consulte de pacotes do NuGet, consulte o [NuGet documentação](/NuGet) e [Package Manager UI](/NuGet/Tools/Package-Manager-UI) tópicos.  
+2.  Clique com o botão direito no nó do projeto no Gerenciador de soluções, selecionando **adicionar &#124; gerenciar pacotes NuGet**.  Para obter mais informações sobre o NuGet e adicionando consulte de pacotes do NuGet, consulte o [NuGet documentação](/NuGet) e [Package Manager UI](/NuGet/Tools/Package-Manager-UI) tópicos.  
   
 3.  Procure VSIXSignTool de VisualStudioExtensibility e instale o pacote NuGet.  
   

@@ -1,26 +1,24 @@
 ---
-title: "Como: instalar um plug-in de controle do código-fonte | Microsoft Docs"
-ms.custom: 
+title: 'Como: instalar um plug-in de controle do código-fonte | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4ffabd7adf35956163c8744eae6539e96990f38a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como: instalar um plug-in de controle de origem
 Criar um controle de fonte de plug-in envolve três etapas:  
@@ -32,7 +30,7 @@ Criar um controle de fonte de plug-in envolve três etapas:
 3.  Registre a DLL, tornando as entradas do registro apropriadas.  
   
 ## <a name="integration-with-visual-studio"></a>Integração com o Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]oferece suporte a plug-ins de controle de origem que estão em conformidade com a API de plug-in de controle de origem.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oferece suporte a plug-ins de controle de origem que estão em conformidade com a API de plug-in de controle de origem.  
   
 ### <a name="registering-the-source-control-plug-in"></a>Registrando o plug-in de controle de origem  
  Antes de chama um ambiente de desenvolvimento integrado (IDE) em execução no sistema de controle de origem, ele primeiro deve localizar a fonte de DLL de plug-in que exporta a API de controle.  

@@ -1,21 +1,18 @@
 ---
-title: "Como: usar o contexto de interface do usuário baseada em regras para extensões do Visual Studio | Microsoft Docs"
-ms.custom: 
+title: 'Como: usar o contexto de interface do usuário baseada em regras para extensões do Visual Studio | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Como: usar o contexto de interface do usuário baseada em regras para extensões do Visual Studio
 O Visual Studio permite o carregamento de VSPackages quando determinados conhecidos <xref:Microsoft.VisualStudio.Shell.UIContext>s são ativados. No entanto, esses contextos de interface do usuário não são muito bem com o detalhamento, não deixando os autores de extensão nenhuma opção de mas para selecionar um contexto de interface do usuário disponíveis que ativa antes do ponto realmente desejasse VSPackage para carregar. Para obter uma lista de contextos de interface de usuário bem conhecidos, consulte <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -67,7 +64,7 @@ O Visual Studio permite o carregamento de VSPackages quando determinados conheci
     <CommandFlag>DynamicVisibility</CommandFlag>  
     ```  
   
-3.  Na seção Visibilidades do VSCT, unir os comandos apropriados para o novo UIContext GUID definido em &#1;:  
+3.  Na seção Visibilidades do VSCT, unir os comandos apropriados para o novo UIContext GUID definido em 1 #:  
   
     ```xml  
     <VisibilityConstraints>   

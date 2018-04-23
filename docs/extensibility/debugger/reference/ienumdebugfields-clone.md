@@ -2,28 +2,24 @@
 title: IEnumDebugFields::Clone | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFields::Clone
 helpviewer_keywords:
 - IEnumDebugFields::Clone method
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
-caps.latest.revision: 5
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9b1379f15ac547aa8ee5fcc1014f3f477c1466c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0e582caefd6c6fba214c29747de2221dfc115587
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 Esse método retorna uma cópia da enumeração atual como um objeto separado.  

@@ -1,32 +1,30 @@
 ---
-title: "O que &#39; s no controle do código-fonte | Microsoft Docs"
-ms.custom: 
+title: O que&#39;novo no controle do código-fonte | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-source-control"></a>O que &#39; s no controle de origem
+# <a name="what39s-new-in-source-control"></a>O que&#39;novo no controle de origem
 Em [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] você pode fornecer uma solução de controle de origem profundamente integrado ao implementar um controle de origem VSPackage. Esta seção descreve os recursos de controle de origem VSPackages e fornece uma visão geral das etapas de implementação.  
   
 ## <a name="the-source-control-vspackage"></a>O VSPackage de controle do código-fonte  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]oferece suporte a dois tipos de soluções de controle de origem. Todas as versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você ainda pode integrar uma API de plug-in de controle de origem com base em plug-in. Você também pode criar um VSPackage para controle de origem que fornece uma integração profunda [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] caminho adequado para soluções de controle de origem que exigem um alto nível de sofisticação e autonomia.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oferece suporte a dois tipos de soluções de controle de origem. Todas as versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você ainda pode integrar uma API de plug-in de controle de origem com base em plug-in. Você também pode criar um VSPackage para controle de origem que fornece uma integração profunda [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] caminho adequado para soluções de controle de origem que exigem um alto nível de sofisticação e autonomia.  
   
  Um VSPackage pode adicionar a praticamente qualquer tipo de funcionalidade para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Um controle de origem VSPackage fornece um recurso de controle do código-fonte completo para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], da interface do usuário apresentada ao usuário para a comunicação de back-end com o sistema de controle de origem.  
   

@@ -1,23 +1,21 @@
 ---
-title: "Ferramentas de avaliação para o Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Ferramentas de avaliação para o Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7026a14a4880a47f415f5aecd1c15f8a2423d86e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6a149d9163e61dd49105f123b373ecd9c7c1c278
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Ferramentas de avaliação do Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista de verificação de habilidade para Visual Studio  
@@ -149,7 +147,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Se o campo é um campo obrigatório que deve ser identificado como tal, verifique se:  
   
-    -   o plano de fundo definido como `Environment.ControlEditRequiredBackground` e o primeiro plano é definido como`Environment.ControlEditRequiredHintText`  
+    -   o plano de fundo definido como `Environment.ControlEditRequiredBackground` e o primeiro plano é definido como `Environment.ControlEditRequiredHintText`  
   
     -   há texto de dica dentro do controle que é exibido como **"\<necessário >"**  
   

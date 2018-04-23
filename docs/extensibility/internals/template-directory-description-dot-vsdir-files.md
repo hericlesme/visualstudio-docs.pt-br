@@ -1,27 +1,25 @@
 ---
-title: "Descrição do modelo do diretório (. Arquivos Vsdir) | Microsoft Docs"
-ms.custom: 
+title: Descrição do modelo do diretório (. Arquivos Vsdir) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 14ea2e0bcc11324e6529c70c04c11874ec4a3399
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-directory-description-vsdir-files"></a>Descrição do modelo do diretório (. Arquivos de Vsdir)
 Um arquivo de descrição de pasta do modelo (.vsdir) é um arquivo de texto que permite que o ambiente de desenvolvimento integrado (IDE) para exibir pastas, arquivos. vsz do assistente e os arquivos de modelo que estão associados ao seu projeto em caixas de diálogo. O conteúdo inclui um registro por arquivo ou pasta. Todos os arquivos .vsdir em um local de referência são mesclados, embora .vsdir apenas um arquivo geralmente é fornecido para descrever as várias pastas, assistentes ou arquivos de modelo.  
@@ -35,7 +33,7 @@ HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
 SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124  
 ```  
   
- Nesse caso, os dois registros estão em um arquivo. Uma nova linha (caractere de retorno de carro) separa cada registro. Cada linha representa um tipo de arquivo diferente. Um pipe (&#124;) separa os campos em cada registro. Um único diretório pode conter vários arquivos .vsdir com nomes de arquivo diferentes, ou você pode ter um arquivo de .vsdir para cada tipo de arquivo.  
+ Nesse caso, os dois registros estão em um arquivo. Uma nova linha (caractere de retorno de carro) separa cada registro. Cada linha representa um tipo de arquivo diferente. Um pipe (&#124;) caractere que separa os campos em cada registro. Um único diretório pode conter vários arquivos .vsdir com nomes de arquivo diferentes, ou você pode ter um arquivo de .vsdir para cada tipo de arquivo.  
   
 ## <a name="fields"></a>Campos  
  A tabela a seguir lista os campos especificados para cada registro.  

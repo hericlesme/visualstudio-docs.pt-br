@@ -2,28 +2,24 @@
 title: Função SccBeginBatch | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccBeginBatch
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6415953a350321cb13f2705fa2bb182c278faa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5350484294d02356301839e38b97bea1d40ec27c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccbeginbatch-function"></a>Função SccBeginBatch
 Essa função inicia uma sequência de lote de operações de controle de origem. O [SccEndBatch](../extensibility/sccendbatch-function.md) será chamada para finalizar o lote. Esses lotes não podem ser aninhados.  
@@ -46,7 +42,7 @@ SCCRTN SccBeginBatch(void);
 |SCC_E_UNKNOWNERROR|Falha não específica.|  
   
 ## <a name="remarks"></a>Comentários  
- Lotes de controle do código-fonte são usados para executar as mesmas operações em vários projetos ou em vários contextos. Lotes podem ser usados para eliminar as caixas de diálogo de projeto de redundância da experiência do usuário durante uma operação em lote. O `SccBeginBatch` função e o [SccEndBatch](../extensibility/sccendbatch-function.md) são usados como um par de função para indicar o início e término de uma operação. Eles não podem ser aninhados. `SccBeginBatch`define um sinalizador que indica que uma operação em lote está em andamento.  
+ Lotes de controle do código-fonte são usados para executar as mesmas operações em vários projetos ou em vários contextos. Lotes podem ser usados para eliminar as caixas de diálogo de projeto de redundância da experiência do usuário durante uma operação em lote. O `SccBeginBatch` função e o [SccEndBatch](../extensibility/sccendbatch-function.md) são usados como um par de função para indicar o início e término de uma operação. Eles não podem ser aninhados. `SccBeginBatch` define um sinalizador que indica que uma operação em lote está em andamento.  
   
  Enquanto uma operação em lote estiver em vigor, o plug-in de controle de origem deve apresentar uma caixa de diálogo para qualquer questão de no máximo para o usuário e aplicar a resposta da caixa de diálogo em todas as operações subsequentes.  
   

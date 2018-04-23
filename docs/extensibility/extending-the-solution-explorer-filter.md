@@ -1,26 +1,24 @@
 ---
-title: "Estender o filtro do Pesquisador de objetos de solução | Microsoft Docs"
-ms.custom: 
+title: Estender o filtro do Pesquisador de objetos de solução | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: afcaef724b5fc5f8270e5126e91d421f2e15b946
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 890c3572bf556b92481be204f947b62e6d596264
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Estender o filtro do Pesquisador de objetos de solução
 Você pode estender **Solution Explorer** funcionalidade para mostrar ou ocultar arquivos diferentes de filtro. Por exemplo, você pode criar um filtro que mostra somente classe fábrica arquivos c# no **Solution Explorer**, como este passo a passo demonstra.  

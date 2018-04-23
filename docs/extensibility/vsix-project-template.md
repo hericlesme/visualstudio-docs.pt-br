@@ -1,26 +1,24 @@
 ---
 title: Modelo de projeto do VSIX | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bff05b0b1b05a6b00b7924f0fb5bfc957adba41c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto do VSIX
 Você pode usar o modelo de projeto do VSIX para incluir uma ou mais extensões do Visual Studio em um projeto do VSIX e, em seguida, publique o pacote no [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site da Web.  
@@ -82,7 +80,7 @@ Você pode usar o modelo de projeto do VSIX para incluir uma ou mais extensões 
   
 8.  Compile a solução.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]cria um arquivo de .vsix que contém um arquivo de manifesto do VSIX, um arquivo. XML de [Content_Types] e todos os ativos de extensão que você adicionou ao projeto.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria um arquivo de .vsix que contém um arquivo de manifesto do VSIX, um arquivo. XML de [Content_Types] e todos os ativos de extensão que você adicionou ao projeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema 2.0 de extensão do VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   

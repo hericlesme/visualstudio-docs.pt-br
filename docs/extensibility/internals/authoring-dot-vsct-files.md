@@ -2,26 +2,22 @@
 title: Data de criação. Arquivos de VSCT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>Data de criação. VSCT arquivos
 Este documento mostra como criar um arquivo. VSCT para adicionar itens de menu, barras de ferramentas e outros elementos de interface de usuário para o ambiente de desenvolvimento integrado (IDE) do Visual Studio. Quando você adiciona elementos de interface do usuário para um pacote do Visual Studio (VSPackage) que ainda não tiver um arquivo. VSCT, siga estas etapas.  
@@ -234,7 +230,7 @@ Este documento mostra como criar um arquivo. VSCT para adicionar itens de menu, 
  Alguns tipos de menu e o botão incluem comportamentos especializados. A tabela a seguir descreve algumas menu especializada e tipos de botão. Para outros tipos, consulte o `types` atributo descrições em [elemento Menu](../../extensibility/menu-element.md), [elemento Button](../../extensibility/button-element.md), e [combinação elemento](../../extensibility/combo-element.md).  
   
  Caixa de combinação  
- Uma caixa de combinação é uma lista suspensa que pode ser usada em uma barra de ferramentas. Para adicionar caixas de combinação para a interface do usuário, crie um [combinações](../../extensibility/combos-element.md) elemento o `Commands` elemento. Em seguida, adicione ao `Combos` elemento um `Combo` elemento para cada caixa de combinação adicionar. `Combo`elementos têm os mesmos atributos e filhos como `Button` elementos e também ter `DefaultWidth` e `idCommandList` atributos. O `DefaultWidth` atributo define a largura em pixels e o `idCommandList` pontos de atributo a uma ID de comando que é usada para popular a caixa de combinação. Para obter mais informações, consulte o `Combo` documentação do elemento.  
+ Uma caixa de combinação é uma lista suspensa que pode ser usada em uma barra de ferramentas. Para adicionar caixas de combinação para a interface do usuário, crie um [combinações](../../extensibility/combos-element.md) elemento o `Commands` elemento. Em seguida, adicione ao `Combos` elemento um `Combo` elemento para cada caixa de combinação adicionar. `Combo` elementos têm os mesmos atributos e filhos como `Button` elementos e também ter `DefaultWidth` e `idCommandList` atributos. O `DefaultWidth` atributo define a largura em pixels e o `idCommandList` pontos de atributo a uma ID de comando que é usada para popular a caixa de combinação. Para obter mais informações, consulte o `Combo` documentação do elemento.  
   
  MenuController  
  Um controlador de menu é um botão com uma seta ao lado dele. Clique na seta abre uma lista. Para adicionar um controlador de menu para a interface do usuário, crie um `Menu` elemento e defina seu `type` atributo **MenuController** ou **MenuControllerLatched**, dependendo do comportamento desejado. Para popular um controlador de menu, defina-o como o pai de um `Group` elemento. O controlador de menu exibirá todos os filhos desse grupo na lista suspensa.  

@@ -1,27 +1,25 @@
 ---
-title: "Envio de extensões do Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Envio de extensões do Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSIX deployment
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3c646ec2c5159e6c3551776761baa9328e3d62bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shipping-visual-studio-extensions"></a>Envio de extensões do Visual Studio
 Depois de concluir o desenvolvimento de sua extensão, você pode instalá-lo em outros computadores, compartilhá-lo com seus colegas e amigos ou publicá-lo no Visual Studio Marketplace. Nesta seção, explicaremos tudo o que você precisa fazer para publicar e manter sua extensão: Trabalhando com arquivos .vsix, publicação, localizando e atualizando.  

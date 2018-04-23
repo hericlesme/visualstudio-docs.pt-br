@@ -1,12 +1,10 @@
 ---
 title: 'Como: estender programaticamente intervalos em documentos | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], extending ranges
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 81d3535f7f4e449c5cb56bea78a255b5388d6e94
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 68c5e2811f437a01e171e33f9802503cf4d24922
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Como estender intervalos em documentos programaticamente
   Depois de definir um <xref:Microsoft.Office.Interop.Word.Range> do objeto em um documento do Word do Microsoft Office, você alterar seus pontos inicial e final usando o <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> métodos. O <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> e <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> métodos usam os mesmo dois argumentos, *unidade* e *contagem*. O *contagem* é o número de unidades para mover e o *unidade* argumento pode ser um dos seguintes <xref:Microsoft.Office.Interop.Word.WdUnits> valores:  

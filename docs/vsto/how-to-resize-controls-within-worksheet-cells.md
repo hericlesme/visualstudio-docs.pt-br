@@ -1,12 +1,10 @@
 ---
-title: "Como: redimensionar controles dentro das células da planilha | Microsoft Docs"
-ms.custom: 
+title: 'Como: redimensionar controles dentro das células da planilha | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], resizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 01e9dfbe244d373eaa4e66c13e02c781b32b8691
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b145d4435cdb295c94897424b318d328f995c340
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Como redimensionar controles dentro de células da planilha
   Quando você redimensiona as colunas ou linhas em uma planilha, os controles de host contidos nas células automaticamente redimensionam para a altura ou largura da célula que foi redimensionada. Controles de formulários do Windows não são redimensionados automaticamente por padrão.  

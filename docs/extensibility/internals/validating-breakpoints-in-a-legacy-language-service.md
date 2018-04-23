@@ -1,26 +1,24 @@
 ---
-title: "Validar os pontos de interrupção em um serviço de linguagem herdado | Microsoft Docs"
-ms.custom: 
+title: Validar os pontos de interrupção em um serviço de linguagem herdado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 03bf1534789ba24e1bbf597874ea427057073b61
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validar os pontos de interrupção em um serviço de linguagem herdado
 Um ponto de interrupção indica que a execução do programa deve parar em um momento específico, enquanto ele está sendo executado em um depurador. Um usuário pode colocar um ponto de interrupção em qualquer linha no arquivo de origem, desde que o editor não tem conhecimento sobre o que constitui um local válido para um ponto de interrupção. Quando o depurador é iniciado, todos os pontos de interrupção marcados (chamados pendentes pontos de interrupção) são vinculados para o local apropriado no programa em execução. Ao mesmo tempo em que os pontos de interrupção são validados para garantir que eles marcam os locais de código válido. Por exemplo, um ponto de interrupção em um comentário não é válido, porque não há nenhum código no local no código-fonte. O depurador desabilita os pontos de interrupção inválidos.  

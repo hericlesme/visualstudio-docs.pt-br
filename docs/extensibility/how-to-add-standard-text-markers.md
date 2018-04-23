@@ -2,26 +2,22 @@
 title: 'Como: adicionar marcadores de texto padrão | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
 ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdcdbabae26a9116b1e00910ecef2f83f4075551
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2fc5bf34c9b4200d8d7fef2d9f4a878ca604f886
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-standard-text-markers"></a>Como: adicionar marcadores de texto padrão
 Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão fornecidos com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo.  

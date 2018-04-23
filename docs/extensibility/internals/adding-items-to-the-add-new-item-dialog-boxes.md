@@ -2,26 +2,22 @@
 title: Adicionar itens para o adicionar novo Item caixas de diálogo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 18
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Adicionar itens para o adicionar novo Item caixas de diálogo
 O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo começa com as chaves do registro. Conforme mostrado nas seguintes entradas do registro, a seção de AddItemTemplates contém o caminho do e o nome do diretório em que os itens disponibilizada no **Adicionar Novo Item** caixa de diálogo são colocados.  
@@ -69,7 +65,7 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
  Por exemplo, em um projeto do Visual Basic, você pode ter projetos da Web e projetos de cliente. Formulários da Web não são itens úteis para adicionar a um projeto de cliente e formulários do windows não são itens úteis para adicionar a um projeto do servidor Web. Portanto, você pode criar um diretório de modelo que contém todos os arquivos para os dois tipos de projeto. Em seguida, implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, você pode ocultar itens que não devem ser exibidos com base no tipo de projeto ou configurações de projeto no projeto.  
   
 ## <a name="filtering-project-items"></a>Filtrar itens de projeto  
- `IVsFilterAddProjectItemDlg2`fornece filtragem dos elementos na árvore (painel esquerdo) e arquivos de projeto (painel direito) das seguintes maneiras:  
+ `IVsFilterAddProjectItemDlg2` fornece filtragem dos elementos na árvore (painel esquerdo) e arquivos de projeto (painel direito) das seguintes maneiras:  
   
 -   Os nomes localizados (legendas exibidas na caixa de diálogo que está contida no arquivo .vsdir) fornecidas pelo `IVsFilterAddProjectItemDlg`.  
   

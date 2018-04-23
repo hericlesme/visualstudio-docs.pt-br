@@ -1,29 +1,25 @@
 ---
-title: "Função SccInitialize | Microsoft Docs"
-ms.custom: 
+title: Função SccInitialize | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>Função SccInitialize
 Essa função inicializa o plug-in de controle de origem e fornece recursos e limites para o ambiente de desenvolvimento integrado (IDE).  
@@ -85,7 +81,7 @@ SCCRTN SccInitialize (
   
  O `lpCallerName` e `lpSccName` parâmetros permitem que o IDE e o plug-in de controle de origem para os nomes do exchange. Esses nomes podem ser usados simplesmente para distinguir entre várias instâncias ou, na verdade, eles podem aparecer nos menus ou caixas de diálogo.  
   
- O `lpAuxPathLabel` parâmetro é uma cadeia de caracteres usada como um comentário para identificar o caminho do projeto auxiliar que é armazenado no arquivo de solução e passado para o controle de origem plug-in em uma chamada para o [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]usa a cadeia de caracteres "projeto do SourceSafe:"; outros plug-ins de controle de origem deve abster-se de usar essa cadeia de caracteres específica.  
+ O `lpAuxPathLabel` parâmetro é uma cadeia de caracteres usada como um comentário para identificar o caminho do projeto auxiliar que é armazenado no arquivo de solução e passado para o controle de origem plug-in em uma chamada para o [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] usa a cadeia de caracteres "projeto do SourceSafe:"; outros plug-ins de controle de origem deve abster-se de usar essa cadeia de caracteres específica.  
   
  O `lpSccCaps` parâmetro fornece o controle de origem plug-in um local para armazenar os sinalizadores de bit que indica os recursos do plug-in. (Para obter uma lista completa de funcionalidade os sinalizadores de bit, consulte [sinalizadores de recursos](../extensibility/capability-flags.md)). Por exemplo, se os planos de plug-in para gravar resultados em uma função de retorno de chamada fornecida pelo chamador, o plug-in definiria o recurso bit SCC_CAP_TEXTOUT. Isso seria sinalizar o IDE para criar uma janela de resultados de controle de versão.  
   

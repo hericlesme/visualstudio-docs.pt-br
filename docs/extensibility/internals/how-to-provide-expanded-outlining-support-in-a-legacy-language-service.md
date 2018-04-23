@@ -1,27 +1,25 @@
 ---
-title: "Fornecer suporte em um serviço de linguagem de estrutura de tópicos | Microsoft Docs"
-ms.custom: 
+title: Fornecer suporte em um serviço de linguagem de estrutura de tópicos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
 - language services, supporting outlining
 - outlining, supporting
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1133166560fa371bbb5a2b008175034d48a2a7b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6467a1e3386daedc4a67aa420c06cf01187b8d22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Como: fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado
 Há duas opções para estender o suporte da estrutura de tópicos para seu idioma além de oferecer suporte a **recolher definições** comando. Você pode adicionar regiões controlado pelo editor e adiciona regiões de estrutura de tópicos controlado pelo cliente.  
@@ -31,7 +29,7 @@ Há duas opções para estender o suporte da estrutura de tópicos para seu idio
   
 #### <a name="to-implement-an-editor-controlled-outline-region"></a>Para implementar uma região controlado pelo editor de estrutura de tópicos  
   
-1.  Chamar `QueryService` para<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
+1.  Chamar `QueryService` para <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>  
   
      Isso retorna um ponteiro para <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.  
   

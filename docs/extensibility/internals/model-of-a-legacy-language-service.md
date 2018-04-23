@@ -2,26 +2,22 @@
 title: Modelo de um serviço de linguagem herdado | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 20
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de um serviço de linguagem herdado
 Um serviço de idioma define os elementos e recursos para um idioma específico e é usado para fornecer o editor com informações específicas para esse idioma. Por exemplo, o editor precisa conhecer os elementos e as palavras-chave da linguagem para dar suporte a cores de sintaxe.  
@@ -52,7 +48,7 @@ Modelo de serviço de linguagem básicos
 |Janela de código|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Uma janela de documento que contém um ou mais modos de exibição de texto. Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está no modo de interface de documentos múltiplos (MDI), a janela de código é um filho MDI.|  
 |Exibição de texto|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Uma janela que permite que o usuário navegar e exibir o texto usando o teclado e mouse. Uma exibição de texto é exibida ao usuário como um editor. Você pode usar modos de exibição de texto em janelas do editor comum, a janela de saída e a janela imediata. Além disso, você pode configurar um ou mais modos de exibição de texto dentro de uma janela de código.|  
 |Gerenciador de texto|Gerenciado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> de serviço, do qual você obter um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> ponteiro|Um componente que mantém informações comuns compartilhadas por todos os componentes descritos anteriormente.|  
-|serviço de linguagem|Implementação dependente; implementa<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Um objeto que fornece o editor com informações específicas do idioma, como o realce de sintaxe, a conclusão de instrução e correspondência de chaves.|  
+|serviço de linguagem|Implementação dependente; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Um objeto que fornece o editor com informações específicas do idioma, como o realce de sintaxe, a conclusão de instrução e correspondência de chaves.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Dados de documentos e exibição de documentos em editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)

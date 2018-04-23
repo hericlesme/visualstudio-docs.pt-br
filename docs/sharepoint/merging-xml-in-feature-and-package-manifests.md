@@ -1,13 +1,10 @@
 ---
 title: Mesclando XML em um recurso e pacote manifestos | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81e6f83dd4fc825e885843a47d45485918f7dabe
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ae4eef0cc0e596f6ecd0848363f51c55b606d4a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>Mesclando XML em manifestos de funcionalidade e pacote
   Recursos e pacotes são definidos pela [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivos de manifesto. Esses pacotes manifestos são uma combinação de dados gerados por designers e personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] inseridos no modelo de manifesto pelos usuários. No momento de empacotamento, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mescla personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instruções com o designer fornecido [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar o pacote [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivo de manifesto. Elementos semelhantes, com as exceções disponível mais adiante exceções de mesclagem, são mesclados para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] erros de validação depois de implantar os arquivos para o SharePoint e para fazer o manifesto arquivos menores e mais eficiente.  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
  Você não pode modificar diretamente os arquivos de manifesto de pacote até que você desabilitar os designers de recurso ou pacote. No entanto, você pode adicionar manualmente personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos ao modelo de manifesto por meio de designers de recurso e pacote ou [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Para obter mais informações, consulte [como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) e [como: personalizar um pacote de solução do SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>Processo de mesclagem de manifesto do recurso e pacote  
- Ao combinar elementos personalizados em conjunto com elementos fornecida pelo designer, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa o processo a seguir. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]verifica se cada elemento tem um valor de chave exclusivo. Se um elemento não tiver nenhum valor de chave exclusivo, ele é adicionado ao arquivo de manifesto do pacote. Da mesma forma, os elementos que têm várias chaves não podem ser mesclados. Portanto, eles são adicionados ao arquivo de manifesto.  
+ Ao combinar elementos personalizados em conjunto com elementos fornecida pelo designer, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa o processo a seguir. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verifica se cada elemento tem um valor de chave exclusivo. Se um elemento não tiver nenhum valor de chave exclusivo, ele é adicionado ao arquivo de manifesto do pacote. Da mesma forma, os elementos que têm várias chaves não podem ser mesclados. Portanto, eles são adicionados ao arquivo de manifesto.  
   
  Se um elemento tem uma chave exclusiva, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compara os valores do designer e chaves personalizadas. Se os valores coincidirem, eles mesclagem em um único valor. Se os valores forem diferentes, o valor da chave designer é descartado e o valor de chave personalizado é usado. Coleções também são mescladas. Por exemplo, se o gerado pelo designer [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] e personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] tanto contém uma coleção de Assemblies, o manifesto de pacote contém apenas um conjunto de módulos (assemblies).  
   
 ## <a name="merge-exceptions"></a>Exceções de mesclagem  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]mescla a maioria dos designer [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos junto com personalizada semelhante [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos, desde que eles têm um atributo de identificação único e exclusivo. No entanto, alguns elementos não têm o identificador exclusivo, necessário para [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] a mesclagem. Esses elementos são conhecidos como *mesclar exceções*. Nesses casos, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] não mescla personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos junto com o designer fornecido [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos, mas em vez disso, acrescenta-os ao arquivo de manifesto do pacote.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mescla a maioria dos designer [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos junto com personalizada semelhante [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos, desde que eles têm um atributo de identificação único e exclusivo. No entanto, alguns elementos não têm o identificador exclusivo, necessário para [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] a mesclagem. Esses elementos são conhecidos como *mesclar exceções*. Nesses casos, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] não mescla personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos junto com o designer fornecido [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos, mas em vez disso, acrescenta-os ao arquivo de manifesto do pacote.  
   
  Esta é uma lista de exceções de mesclagem para o recurso e pacote [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivos de manifesto.  
   

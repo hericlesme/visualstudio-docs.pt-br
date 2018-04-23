@@ -1,23 +1,21 @@
 ---
-title: "Página inicial de criar um personalizado | Microsoft Docs"
-ms.custom: 
+title: Página inicial de criar um personalizado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-custom-start-page"></a>Criando uma página de início personalizado
 Você pode criar uma página inicial personalizada, seguindo as etapas neste documento.  
@@ -73,7 +71,7 @@ Você pode criar uma página inicial personalizada, seguindo as etapas neste doc
   
 1.  Copie seu arquivo XAML e quaisquer arquivos de texto de suporte ou marcação arquivos, como o **%USERPROFILE%\My Documentos\Visual Studio 2015\StartPages\\**  pasta.  
   
-2.  Se sua página inicial referenciar os controles ou tipos em assemblies que não estão instalados pelo Visual Studio, copie os assemblies e, em seguida, cole-os em *pasta de instalação do Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Se sua página inicial referenciar os controles ou tipos em assemblies que não estão instalados pelo Visual Studio, copie os assemblies e, em seguida, cole-os em * pasta de instalação do Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  Em um prompt de comando do Visual Studio, digite **/rootsuffix devenv Exp** para abrir uma instância experimental do Visual Studio.  
   

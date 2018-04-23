@@ -1,31 +1,29 @@
 ---
 title: Visualizando e exibindo dados | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
 - debugging [Debugging SDK], visualizing data
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 14e5b641dc5bc51ac066f32332f3fdb2b01d1810
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebaa07c8fe70e1842334b0bf7c28eb7491fd9c44
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizando e exibindo dados
 Visualizadores de tipo e apresentar dados visualizadores personalizados de forma que seja significativo rapidamente para um desenvolvedor. O avaliador de expressão (EE) pode dar suporte a visualizadores de tipo de terceiros bem como fornecer seus próprio visualizadores personalizados.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Determina quantos visualizadores de tipo e os visualizadores personalizados estão associados com o tipo do objeto chamando o [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) método. Se houver Visualizador de pelo menos um tipo ou o visualizador personalizado, o Visual Studio chama o [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) método para recuperar uma lista desses visualizadores e visualizadores (na verdade, uma lista de `CLSID`s que implementam o visualizadores e visualizadores) e apresenta ao usuário.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Determina quantos visualizadores de tipo e os visualizadores personalizados estão associados com o tipo do objeto chamando o [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) método. Se houver Visualizador de pelo menos um tipo ou o visualizador personalizado, o Visual Studio chama o [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) método para recuperar uma lista desses visualizadores e visualizadores (na verdade, uma lista de `CLSID`s que implementam o visualizadores e visualizadores) e apresenta ao usuário.  
   
 ## <a name="supporting-type-visualizers"></a>Suporte a visualizadores de tipo  
  Há um número de interfaces que o EE deve implementar para dar suporte a visualizadores de tipo. Essas interfaces podem ser divididas em duas amplas categorias: aqueles que lista os visualizadores de tipo e aqueles que acessam os dados de propriedade.  
@@ -33,12 +31,12 @@ Visualizadores de tipo e apresentar dados visualizadores personalizados de forma
 ### <a name="listing-type-visualizers"></a>Visualizadores de tipo de listagem  
  O EE dá suporte à lista de visualizadores de tipo em sua implementação de `IDebugProperty3::GetCustomViewerCount` e `IDebugProperty3::GetCustomViewerList`. Esses métodos passam a chamada para os métodos correspondentes [GetCustomViewerCount](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) e [GetCustomViewerList](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md).  
   
- O [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) é obtido chamando [CreateVisualizerService](../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md). Esse método requer o [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md) interface, que é obtida a [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) interface passado para [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). `IEEVisualizerServiceProvider::CreateVisualizerService`também requer o [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) e [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) interfaces que foram passados para `IDebugParsedExpression::EvaluateSync`. A interface final necessária para criar o `IEEVisualizerService` interface é a [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interface, que implementa o EE. Essa interface permite que as alterações sejam feitas para a propriedade sendo visualizada. Todos os dados de propriedade é encapsulado em um [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) interface, que também é implementado pelo EE.  
+ O [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) é obtido chamando [CreateVisualizerService](../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md). Esse método requer o [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md) interface, que é obtida a [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) interface passado para [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). `IEEVisualizerServiceProvider::CreateVisualizerService` também requer o [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) e [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) interfaces que foram passados para `IDebugParsedExpression::EvaluateSync`. A interface final necessária para criar o `IEEVisualizerService` interface é a [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interface, que implementa o EE. Essa interface permite que as alterações sejam feitas para a propriedade sendo visualizada. Todos os dados de propriedade é encapsulado em um [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) interface, que também é implementado pelo EE.  
   
 ### <a name="accessing-property-data"></a>Acessando dados de propriedade  
  Acessando dados de propriedade é feito por meio de [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md) interface. Para obter essa interface, o Visual Studio chama [QueryInterface](/cpp/atl/queryinterface) no objeto de propriedade para obter o [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md) interface (implementado no mesmo objeto que implementa o [ IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) interface) e, em seguida, chama o [GetPropertyProxy](../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) método para obter o `IPropertyProxyEESide` interface.  
   
- Todos os dados passados dentro e fora do `IPropertyProxyEESide` interface é encapsulada no [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md) interface. Essa interface representa uma matriz de bytes e é implementada pelo Visual Studio e o EE. Quando dados uma propriedade dos será alterado, o Visual Studio cria um `IEEDataStorage` objeto contém os novos dados e chamadas [CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) com esse objeto de dados para obter um novo `IEEDataStorage` objeto que, por sua vez, é passado para [InPlaceUpdateObject](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md) para atualizar os dados da propriedade. `IPropertyProxyEESide::CreateReplacementObject`permite que o EE criar uma instância de sua própria classe que implementa o `IEEDataStorage` interface.  
+ Todos os dados passados dentro e fora do `IPropertyProxyEESide` interface é encapsulada no [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md) interface. Essa interface representa uma matriz de bytes e é implementada pelo Visual Studio e o EE. Quando dados uma propriedade dos será alterado, o Visual Studio cria um `IEEDataStorage` objeto contém os novos dados e chamadas [CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) com esse objeto de dados para obter um novo `IEEDataStorage` objeto que, por sua vez, é passado para [InPlaceUpdateObject](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md) para atualizar os dados da propriedade. `IPropertyProxyEESide::CreateReplacementObject` permite que o EE criar uma instância de sua própria classe que implementa o `IEEDataStorage` interface.  
   
 ## <a name="supporting-custom-viewers"></a>Suporte a visualizadores personalizados  
  O sinalizador `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` é definido no `dwAttrib` campo o [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) estrutura (retornado por uma chamada para [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) para indicar que o objeto tem um visualizador personalizado associado com ele. Quando esse sinalizador é definido, o Visual Studio obterá o [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md) de interface do [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface usando [QueryInterface](/cpp/atl/queryinterface).  

@@ -1,26 +1,24 @@
 ---
-title: "Estratégia de implementação do avaliador de expressão | Microsoft Docs"
-ms.custom: 
+title: Estratégia de implementação do avaliador de expressão | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 48b871eeccb5ff561ef4b95689f12a9f58302bc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e67b2496c2e30428cd4cc830526e53cf0cc61fdd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>Estratégia de implementação do avaliador de expressão
 > [!IMPORTANT]
@@ -31,7 +29,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="discussion"></a>Discussão  
  A sequência de implementação possíveis inicia com a implementação [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md). O [analisar](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) e [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) métodos precisam ser implementados para exibir locais. Chamando `IDebugExpressionEvaluator::GetMethodProperty` retorna um `IDebugProperty2` objeto que representa um método: ou seja, um [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) objeto. Métodos não são exibidos no **locais** janela.  
   
- O [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método deve ser implementado em seguida. O mecanismo de depuração (DE) chama esse método para obter uma lista de argumentos e variáveis locais, passando `IDebugProperty2::EnumChildren` um `guidFilter` argumento de `guidFilterLocalsPlusArgs`. `IDebugProperty2::EnumChildren`chamadas [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) e [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), combinando os resultados em uma única enumeração. Consulte [exibindo locais](../../extensibility/debugger/displaying-locals.md) para obter mais detalhes.  
+ O [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) método deve ser implementado em seguida. O mecanismo de depuração (DE) chama esse método para obter uma lista de argumentos e variáveis locais, passando `IDebugProperty2::EnumChildren` um `guidFilter` argumento de `guidFilterLocalsPlusArgs`. `IDebugProperty2::EnumChildren` chamadas [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) e [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md), combinando os resultados em uma única enumeração. Consulte [exibindo locais](../../extensibility/debugger/displaying-locals.md) para obter mais detalhes.  
   
 ## <a name="see-also"></a>Consulte também  
  [Implementando um avaliador de expressão](../../extensibility/debugger/implementing-an-expression-evaluator.md)   

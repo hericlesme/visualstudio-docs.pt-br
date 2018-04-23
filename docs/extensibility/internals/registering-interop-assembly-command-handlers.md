@@ -1,26 +1,24 @@
 ---
 title: Registrando manipuladores de comando do Assembly de interoperabilidade | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a25f8adc91efe9d9e8b96079b4fe2e35145abf25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a4b2c0d40029cbc84d64a4ffe5ee50c59c893b95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrando manipuladores de comando do Assembly de interoperabilidade
 Um VSPackage deve registrar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que o ambiente de desenvolvimento integrado (IDE) roteia seus comandos corretamente.  
@@ -58,7 +56,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 |-------------|-----------------|  
 |\<*Caminho para a DLL de recurso*>|Este é o caminho completo para a DLL que contém o recurso de menu do recurso ou estiver em branco, indicando que os recursos do VSPackage DLL a ser usado (como especificado na subchave pacotes onde o VSPackage em si é registrado).<br /><br /> É comum deixe esse campo em branco.|  
 |\<*ID do recurso de menu*>|Esta é a ID de recurso da `CTMENU` recursos que contém todos os elementos de interface do usuário para o VSPackage como compilados a partir de um [. VSCT](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) arquivo.|  
-|\<*Versão de menu*>|Este é um número usado como uma versão para o `CTMENU` recursos. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]usa esse valor para determinar se ele precisa remerge o conteúdo do `CTMENU` recurso com o cache de todos os `CTMENU` recursos. Um remerge é acionado, executando o comando de instalação devenv.<br /><br /> Esse valor deve ser inicialmente definido como 1 e incrementado após cada alteração no `CTMENU` recursos e antes que ocorra o remerge.|  
+|\<*Versão de menu*>|Este é um número usado como uma versão para o `CTMENU` recursos. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa esse valor para determinar se ele precisa remerge o conteúdo do `CTMENU` recurso com o cache de todos os `CTMENU` recursos. Um remerge é acionado, executando o comando de instalação devenv.<br /><br /> Esse valor deve ser inicialmente definido como 1 e incrementado após cada alteração no `CTMENU` recursos e antes que ocorra o remerge.|  
   
 ### <a name="example"></a>Exemplo  
  Aqui está um exemplo de um par de entradas de recursos:  

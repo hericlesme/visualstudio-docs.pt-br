@@ -2,28 +2,24 @@
 title: Função SccAddFilesFromSCC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAddFilesFromSCC
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd53307323b1db4d5fa9e5407c3a0516f1187f4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc42a7be878ce52f4d951171c6b5cb08e195d564
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccaddfilesfromscc-function"></a>Função SccAddFilesFromSCC
 Essa função adiciona uma lista de arquivos do controle de origem para o projeto aberto no momento.  
@@ -78,7 +74,7 @@ SCCRTN SccAddFilesFromSCC(
 |Valor|Descrição|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|Projeto não está aberto.|  
-|SCC_E_OPNOTPERFORMED|Conexão não está no mesmo projeto, conforme especificado pelo`lpAuxProjPath.`|  
+|SCC_E_OPNOTPERFORMED|Conexão não está no mesmo projeto, conforme especificado pelo `lpAuxProjPath.`|  
 |SCC_E_NOTAUTHORIZED|Usuário não está autorizado a atualizar o banco de dados.|  
 |SCC_E_NONSPECIFICERROR|Erro desconhecido.|  
 |SCC_I_RELOADFILE|Um arquivo ou projeto precisa ser recarregado.|  

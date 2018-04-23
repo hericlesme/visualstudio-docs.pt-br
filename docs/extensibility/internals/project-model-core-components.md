@@ -1,26 +1,24 @@
 ---
 title: Componentes principais do modelo de projeto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2cfb9db9c354eb4c10ece0f5a8259f3d4a104e28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-model-core-components"></a>Componentes principais do projeto modelo
 As tabelas a seguir expandem o modelo de projeto. As tabelas presentes breves descrições das interfaces e serviços identificados no modelo e as interfaces e os serviços associados a objetos específicos. Além disso, as tabelas de detalham de outras interfaces que são opcionais na criação do projeto e na manutenção dependendo dos requisitos do seu tipo de projeto específico.  
@@ -101,7 +99,7 @@ As tabelas a seguir expandem o modelo de projeto. As tabelas presentes breves de
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Fornece a funcionalidade básica do IDE relacionados à interface do usuário, como a capacidade de criar e enumerar janelas de ferramentas ou janelas de documentos ou relatar um erro para o usuário.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|Fornece acesso à barra de status do IDE.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Usado para implementar o modelo de automação. O modelo de projeto, você retornará um objeto de propriedades que permite que você cria uma instância do objeto.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Usado para implementar eventos de área de transferência no objeto de projeto na hierarquia. `SVsUIHierWinClipboardHelper`permite que você corretamente identificador recortar, copiar e colar.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Usado para implementar eventos de área de transferência no objeto de projeto na hierarquia. `SVsUIHierWinClipboardHelper` permite que você corretamente identificador recortar, copiar e colar.|  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

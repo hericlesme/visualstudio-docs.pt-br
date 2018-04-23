@@ -1,26 +1,24 @@
 ---
-title: "Visão geral das opções de configuração | Microsoft Docs"
-ms.custom: 
+title: Visão geral das opções de configuração | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85ee328b278ef9eb1d81acfc5a8299920a221e59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuration-options-overview"></a>Visão geral das opções de configuração
 Projetos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode dar suporte a várias configurações que podem ser criadas, depurado, execução, e/ou implantado. Uma configuração é um tipo de compilação descrito com um conjunto nomeado de propriedades, normalmente switches de compilador e locais de arquivos. Por padrão, novas soluções contêm duas configurações Debug e Release. Essas configurações podem ser aplicadas usando as configurações padrão ou modificadas para atender às suas necessidades específicas de solução e/ou projeto. Alguns pacotes podem ser criados de duas maneiras: como um editor de ActiveX ou como um componente no local. Projetos não é necessário dar suporte a várias configurações, no entanto. Se houver apenas uma configuração, essa configuração é mapeada para todas as configurações de solução.  
@@ -57,15 +55,15 @@ Interfaces de configuração
   
  Algumas observações relacionadas ao diagrama anterior:  
   
--   `IDispatch`é marcado como opcional no objeto de configuração. Especificamente, é opcional para ter interfaces de configuração no objeto de procura.  
+-   `IDispatch` é marcado como opcional no objeto de configuração. Especificamente, é opcional para ter interfaces de configuração no objeto de procura.  
   
--   `IVsDebuggableProjectCfg`é marcado como opcional no objeto de configuração, mas é necessário para suporte à depuração.  
+-   `IVsDebuggableProjectCfg` é marcado como opcional no objeto de configuração, mas é necessário para suporte à depuração.  
   
--   `IVsProjectCfg2`é marcado como opcional no objeto de configuração, mas é necessário para suporte de agrupamento de saída.  
+-   `IVsProjectCfg2` é marcado como opcional no objeto de configuração, mas é necessário para suporte de agrupamento de saída.  
   
 -   O `Config Provider` objeto está marcado como um objeto opcional, mas a opção é onde implementá-lo. Você pode implementar o objeto no objeto de projeto ou em um objeto separado.  
   
--   `IVsCfgProvider2`é necessário para suporte de plataforma e a edição de configuração. `IVsCfgProvider`é suficiente se você não implementar essa funcionalidade.  
+-   `IVsCfgProvider2` é necessário para suporte de plataforma e a edição de configuração. `IVsCfgProvider` é suficiente se você não implementar essa funcionalidade.  
   
 -   Alguns desses objetos mostrados no diagrama como objetos separados podem ser combinados na mesma classe quando for prático com base em suas necessidades de design específico. Em outros tópicos desta seção, no entanto, os objetos e interfaces associadas a esses objetos serão discutidos acordo com o cenário apresentado no diagrama.  
   

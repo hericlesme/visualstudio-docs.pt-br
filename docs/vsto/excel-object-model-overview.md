@@ -1,12 +1,10 @@
 ---
-title: "Visão geral do modelo de objeto do Excel | Microsoft Docs"
-ms.custom: 
+title: Visão geral do modelo de objeto do Excel | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-object-model-overview"></a>Visão geral do modelo de objeto do Excel
   Para desenvolver soluções que usam o Microsoft Office Excel, você pode interagir com os objetos fornecidos pelo modelo de objeto do Excel. Este tópico apresenta os objetos mais importantes:  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  Este tópico fornece uma visão geral sobre o modelo de objeto do Excel. Para obter recursos onde você pode aprender mais sobre todo o modelo de objeto do Excel, consulte [usando a documentação do modelo de objeto do Excel](#ExcelOMDocumentation).  
   
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração de vídeo relacionada, consulte [como fazer i: usar manipuladores de eventos em um Excel 2007 suplemento?](http://go.microsoft.com/fwlink/?LinkID=130291), e [como fazer i: Use formas para criar uma bolha O gráfico no Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração de vídeo relacionada, consulte [como fazer i: usar manipuladores de eventos em um Excel 2007 suplemento?](http://go.microsoft.com/fwlink/?LinkID=130291), e [como fazer i: Use formas para criar um gráfico de bolhas no Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="accessing-objects-in-an-excel-project"></a>Acessando objetos em um projeto do Excel  
  Quando você cria um novo projeto de suplemento do VSTO para Excel, o Visual Studio cria automaticamente um arquivo de código ThisAddIn ou ThisAddIn.cs. Você pode acessar o objeto do aplicativo usando `Me.Application` ou `this.Application`.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |Sheet2.vb|Sheet2.cs|  
 |Sheet3.vb|Sheet3.cs|  
   
- Você pode usar o `Globals` classe em seu projeto para acessar `ThisWorkbook`, `Sheet1`, `Sheet2`, ou `Sheet3` de fora da respectiva classe. Para obter mais informações, consulte [acesso Global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md). A exemplo a seguir chama o <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> método `Sheet1` independentemente se o código é colocado em um do `Sheet`  *n*  classes ou `ThisWorkbook` classe.  
+ Você pode usar o `Globals` classe em seu projeto para acessar `ThisWorkbook`, `Sheet1`, `Sheet2`, ou `Sheet3` de fora da respectiva classe. Para obter mais informações, consulte [acesso Global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md). A exemplo a seguir chama o <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> método `Sheet1` independentemente se o código é colocado em um do `Sheet` *n* classes ou `ThisWorkbook` classe.  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]  
@@ -102,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  O Visual Studio estende o <xref:Microsoft.Office.Interop.Excel.Range> objeto fornecendo o <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> tipos. Esses tipos tem a maioria dos mesmos recursos que um <xref:Microsoft.Office.Interop.Excel.Range> objeto, bem como novos recursos, como a capacidade de associação de dados e os novos eventos. Para obter mais informações, consulte [controle NamedRange](../vsto/namedrange-control.md) e [controle XmlMappedRange](../vsto/xmlmappedrange-control.md).  
   
-##  <a name="ExcelOMDocumentation"></a>Usando a documentação do modelo de objeto do Excel  
+##  <a name="ExcelOMDocumentation"></a> Usando a documentação do modelo de objeto do Excel  
  Para obter informações completas sobre o modelo de objeto do Excel, você pode consultar para a referência de assembly de interoperabilidade primária (PIA) do Excel e a referência de modelo de objeto VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Referência de Assembly de interoperabilidade primária  

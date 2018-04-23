@@ -1,12 +1,10 @@
 ---
-title: "Informações de parâmetro em um Service1 de idioma herdado | Microsoft Docs"
-ms.custom: 
+title: Informações de parâmetro em um Service1 de idioma herdado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 A dica de ferramenta de informações do parâmetro IntelliSense fornece aos usuários com dicas sobre onde eles estão em uma construção de linguagem.  
@@ -40,7 +38,7 @@ A dica de ferramenta de informações do parâmetro IntelliSense fornece aos usu
   
  As dicas de ferramentas de informações de parâmetro são iniciadas pelo serviço de idioma por meio de interceptação de comando. Para interceptar caracteres de usuário, o objeto de serviço de linguagem deve implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> de interface e passa o modo de exibição de texto um ponteiro para o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementação, chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> método no <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface. O filtro de comando intercepta comandos digitados na janela de código. Monitore as informações de comando para saber quando exibir informações de parâmetro para o usuário. Você pode usar o mesmo filtro de comando para a conclusão de instrução, marcadores de erro e assim por diante.  
   
- Quando você digita uma palavra-chave para a qual o serviço de linguagem pode fornecer dicas, em seguida, o serviço de linguagem cria um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objeto e chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> método no <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface para notificar o IDE para exibir uma dica. Criar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objeto usando `VSLocalCreateInstance` e especificando coclass `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance`é uma função definida no vsdoc.h de arquivo de cabeçalho que chama `QueryService` para o registro local e chamadas `CreateInstance` nesse objeto para o `CLSID_VsMethodTipWindow`.  
+ Quando você digita uma palavra-chave para a qual o serviço de linguagem pode fornecer dicas, em seguida, o serviço de linguagem cria um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objeto e chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> método no <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface para notificar o IDE para exibir uma dica. Criar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objeto usando `VSLocalCreateInstance` e especificando coclass `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` é uma função definida no vsdoc.h de arquivo de cabeçalho que chama `QueryService` para o registro local e chamadas `CreateInstance` nesse objeto para o `CLSID_VsMethodTipWindow`.  
   
 ## <a name="providing-a-method-tip"></a>Fornecer uma dica de método  
  Para fornecer uma dica de método, chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> método o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> interface, passando a implementação do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interface.  

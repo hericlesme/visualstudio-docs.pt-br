@@ -1,12 +1,10 @@
 ---
-title: "Como: adicionar um método Updater | Microsoft Docs"
-ms.custom: 
+title: 'Como: adicionar um método Updater | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], updating entity instances
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 506d22358493d7b38a6cdfac6cee9efd97435943
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fc7c946a89c8ba05ffed443816d6ce4e9056b88b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-an-updater-method"></a>Como adicionar um método Updater
   Você pode habilitar os usuários atualizem dados comerciais em uma lista externa do SharePoint, criando uma *Updater* método. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  

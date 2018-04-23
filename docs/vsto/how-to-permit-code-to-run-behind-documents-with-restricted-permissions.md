@@ -1,12 +1,10 @@
 ---
-title: "Como: permitir a execução por trás de documentos com permissões restritas de código | Microsoft Docs"
-ms.custom: 
+title: 'Como: permitir a execução por trás de documentos com permissões restritas de código | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 09336e72cc9e1e1bc0a407314d4fa9fd6bc2a2c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: eb5b9421bd6d0228a93ba7ba7516c9ebc7b7c761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Como permitir que o código execute documentos code-behind com permissões restritas
   Você pode usar o recurso de gerenciamento de direitos de informação (IRM) do Microsoft Office para restringir permissões para um documento ou a pasta de trabalho. Por padrão, o código por trás de um documento do Microsoft Office Word restrito ou pasta de trabalho do Microsoft Office Excel não é permitido para execução. Você pode alterar o padrão para que as extensões de código gerenciado podem acessar o modelo de objeto e sua solução funcione.  

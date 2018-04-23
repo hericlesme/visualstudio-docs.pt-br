@@ -1,12 +1,10 @@
 ---
 title: 'Como: adicionar controles a documentos do Office dos Windows Forms | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 937c64f8fadf8763d4e5b3ad32489262cddafdfd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ebd26c78e30e522b3d961d42226fc42825eb2a2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Como adicionar controles dos Windows Forms a documentos do Office
   Você pode adicionar controles de formulários do Windows para o Microsoft Office Excel e documentos do Microsoft Office Word em tempo de design em projetos de nível de documento. Em tempo de execução, você pode adicionar controles em personalizações no nível do documento em suplementos do VSTO. Por exemplo, você pode adicionar um <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> controlar à sua planilha para que os usuários podem selecionar em uma lista de opções.  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração de vídeo relacionada, consulte [como fazer i: adicionar controles a uma superfície de documento em tempo de execução?](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
-##  <a name="designtime"></a>Adicionando controles em tempo de Design  
+##  <a name="designtime"></a> Adicionando controles em tempo de Design  
  Há várias maneiras de adicionar controles de formulários do Windows para o documento em um projeto no nível do documento em tempo de design.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -102,8 +101,8 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Quando você seleciona um controle no Excel, você verá **=EMBED("WinForms.Control.Host","")** no **barra de fórmulas**. Esse texto é necessário e não deve ser excluído.  
   
-##  <a name="runtimedoclevel"></a>Adicionando controles em tempo de execução no nível de documento  
- Programaticamente, você pode adicionar controles de formulários do Windows para um documento em tempo de execução. No Word, use métodos do <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> propriedade o `ThisDocument` classe. No Excel, use métodos do <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> propriedade de um `Sheet`  *n*  classe. Cada método tem várias sobrecargas que permitem que você especifique o local do controle de maneiras diferentes.  
+##  <a name="runtimedoclevel"></a> Adicionando controles em tempo de execução no nível de documento  
+ Programaticamente, você pode adicionar controles de formulários do Windows para um documento em tempo de execução. No Word, use métodos do <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> propriedade o `ThisDocument` classe. No Excel, use métodos do <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> propriedade de um `Sheet` *n* classe. Cada método tem várias sobrecargas que permitem que você especifique o local do controle de maneiras diferentes.  
   
  Quando você adicionar um controle de formulários do Windows para um documento em tempo de execução, o controle não é persistido no documento quando o documento é fechado. Você pode recriar o controle na próxima vez em que o documento for aberto. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]  
   
-##  <a name="runtimeaddin"></a>Adicionando controles em tempo de execução em suplementos do VSTO  
+##  <a name="runtimeaddin"></a> Adicionando controles em tempo de execução em suplementos do VSTO  
  Você pode adicionar controles de formulários do Windows por meio de programação para qualquer documento aberto em tempo de execução. Primeiro, gere um item de host que se baseia em uma planilha ou documento aberto. Em seguida, no Word, use métodos do <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade do novo item de host. No Excel, use métodos de <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> propriedade do novo item de host. Cada método tem várias sobrecargas que permitem que você especifique o local do controle de maneiras diferentes.  
   
  Quando você adicionar um controle de formulários do Windows para um documento em tempo de execução, o controle não é persistido no documento quando o documento é fechado. Você pode recriar o controle na próxima vez em que o documento for aberto. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  

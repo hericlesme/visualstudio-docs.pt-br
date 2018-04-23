@@ -1,26 +1,24 @@
 ---
-title: "Estrutura VSPackage (VSPackage de controle do código-fonte) | Microsoft Docs"
-ms.custom: 
+title: Estrutura VSPackage (VSPackage de controle do código-fonte) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 168aa0f7b93d20afaa30924dc17f05e0cac465bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 13b811b504259bf10440419b3cb4029a4c239c5e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Estrutura VSPackage (VSPackage de controle de origem)
 O SDK do pacote de controle de origem fornece diretrizes para criar um VSPackage que permitem que um implementador de controle de origem para integrar a funcionalidade de controle de origem com o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente. Um VSPackage é um componente COM que normalmente é carregado sob demanda, o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE), de acordo com os serviços que estão sendo anunciados pelo pacote em suas entradas do registro. Cada VSPackage deve implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Um VSPackage geralmente consome serviços oferecidos pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE e proffers alguns serviços da sua própria.  

@@ -1,26 +1,24 @@
 ---
-title: "Como: Depurar um mecanismo de depuração personalizado | Microsoft Docs"
-ms.custom: 
+title: 'Como: Depurar um mecanismo de depuração personalizado | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0b814b441846479163aad4e003480cc9cfadde44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 95a2db2bc5e8990f536abc851941c337a1dee277
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Como: Depurar um mecanismo de depuração personalizado
 Um tipo de projeto inicia o mecanismo de depuração (DE) do <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Isso significa que o DE é iniciado sob o controle da instância do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controlar o tipo de projeto. No entanto, essa instância do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] não é possível depurar o DE. A seguir está as etapas para permitir que você depure seu personalizado DE.  

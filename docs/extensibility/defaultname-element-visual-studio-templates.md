@@ -2,28 +2,24 @@
 title: Elemento DefaultName (modelos do Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#DefaultName
 helpviewer_keywords:
 - DefaultName element [Visual Studio project templates]
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
-caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a20bd878e9c6f85e03ff0738ed2a92d274f6232
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e67d8970859906e839abf89e85e38c24c2d88066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Elemento DefaultName (modelos do Visual Studio)
 Especifica o nome que o sistema de projeto do Visual Studio gerará para o projeto ou item quando ele é criado.  

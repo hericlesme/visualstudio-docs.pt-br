@@ -1,12 +1,10 @@
 ---
-title: "Expor listas de símbolos fornecidos para o Gerenciador de objetos | Microsoft Docs"
-ms.custom: 
+title: Expor listas de símbolos fornecidos para o Gerenciador de objetos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
 - IVsLibrary2 interface, lists of symbols
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1fc34c363fb62a8cf2a6d902a6e897886627e508
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cabecd989f0074335251b1880a3d479f9bac5a64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Como: expor listas de símbolos fornecidas pela biblioteca para o Gerenciador de objeto
 As ferramentas de navegação de símbolo **exibição de classe**, **Pesquisador de objetos**, **Pesquisador de chamadas** e **localizar resultados de símbolos**, passar solicitações para os novos dados o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos. O Gerenciador de objeto localiza as bibliotecas apropriadas e solicita novas listas de símbolos. As bibliotecas de respondem, fornecendo dados solicitados para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos chama os métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface para obter os dados e o utiliza para popular ou atualizar os modos de exibição das ferramentas de navegação de símbolo.  

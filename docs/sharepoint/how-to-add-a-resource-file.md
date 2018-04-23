@@ -1,12 +1,10 @@
 ---
 title: 'Como: adicionar um arquivo de recurso | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, resource files
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 47cae5fac3ddbcbc34535176701d0293ae4f66ba
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 132a5b5933b1bc96244238570091e522f8af91d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-resource-file"></a>Como adicionar um arquivo de recurso
   Os comandos para adicionar arquivos de recurso é no menu de atalho do nó da solução e nós de recurso no Gerenciador de soluções. Para obter mais informações, consulte [Localizando soluções do SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  No **adicionar recurso** caixa de diálogo caixa, escolha uma cultura para o arquivo de recurso, como o inglês (Estados Unidos).  
   
-     Esta etapa adiciona um arquivo de recurso global para sua solução no formato, o recurso*x***.** *cultura***.** resx, como Resource1.en-us.  
+     Esta etapa adiciona um arquivo de recurso global para sua solução no formato, recurso * x***.*** cultura ***.** resx, como Resource1.en-us.  
   
 5.  Quando o **Editor de recurso** abre no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adicionar recursos para o arquivo de recurso.  
   
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Em **Solution Explorer**, abra o menu de atalho para o nome de um recurso sob o **recursos** nó e, em seguida, escolha **adicionar recurso do recurso**.  
   
-     Esta etapa adiciona um arquivo de recurso para o recurso no formato, *ResourceFileName***.** *cultura***.** resx, como Feature1.en-us.  
+     Esta etapa adiciona um arquivo de recurso para o recurso no formato, * ResourceFileName***.*** cultura ***.** resx, como Feature1.en-us.  
   
 3.  Quando o **Editor de recurso** abre no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adicionar recursos para o arquivo de recurso.  
   

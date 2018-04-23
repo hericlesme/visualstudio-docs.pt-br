@@ -1,30 +1,28 @@
 ---
 title: Expondo os tipos de Designers visuais | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-types-to-visual-designers"></a>Expondo os tipos de Designers visuais
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]deve ter acesso a definições de classe e tipo em tempo de design para exibir um designer visual. Classes são carregadas de um conjunto predefinido de assemblies que incluem o conjunto completo de dependência do projeto atual (referências e suas dependências). Ele também pode ser necessário para designers visuais para classes de acesso e tipos que são definidos em arquivos gerados por ferramentas personalizadas.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve ter acesso a definições de classe e tipo em tempo de design para exibir um designer visual. Classes são carregadas de um conjunto predefinido de assemblies que incluem o conjunto completo de dependência do projeto atual (referências e suas dependências). Ele também pode ser necessário para designers visuais para classes de acesso e tipos que são definidos em arquivos gerados por ferramentas personalizadas.  
   
  O [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemas de projeto dão suporte para acessar tipos e classes geradas por meio portátil temporário arquivos executáveis (PEs temporário). Qualquer arquivo gerado por uma ferramenta personalizada pode ser compilado em um assembly temporário para que os tipos podem ser carregados a partir desses assemblies e expostos aos designers. A saída de cada ferramenta personalizada é compilada em um PE temporário separado, e o êxito ou falha desta compilação temporários depende apenas se o arquivo gerado pode ser compilado. Mesmo que um projeto não pode ser compilado como um todo, individuais PEs temporário ainda podem estar disponíveis para designers.  
   
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
  Ferramentas personalizadas que se beneficiar do suporte de PE temporário devem seguir as regras a seguir:  
   
--   `GeneratesDesignTimeSource`deve ser definido como 1 no registro.  
+-   `GeneratesDesignTimeSource` deve ser definido como 1 no registro.  
   
      Nenhuma compilação de arquivo executável do programa ocorre sem essa configuração.  
   

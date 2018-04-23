@@ -1,13 +1,10 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 235d98ba6a5ca665857b8a18db5ca823ecc0c7c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Quando o usuário executa uma operação de controle de origem de dentro do ambiente de desenvolvimento integrado (IDE), o plug-in de controle do código-fonte talvez queira transmitir mensagens de erro ou de status relacionadas à operação. O plug-in pode exibir suas próprias caixas de mensagem para essa finalidade. No entanto, para integração perfeita mais, o plug-in pode passar cadeias de caracteres para o IDE, que são exibidos em seu modo nativo de exibir informações de status. O mecanismo para isso é o `LPTEXTOUTPROC` ponteiro de função. O IDE implementa essa função (descrita em mais detalhes abaixo) para exibir o status e erros.  
@@ -75,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>Estruturas  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a>SccMsgDataIsCancelled  
+###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp  
 typedef struct {  
@@ -85,7 +81,7 @@ typedef struct {
   
  Essa estrutura é enviada com o `SCC_MSG_BACKGROUND_IS_CANCELLED` mensagem. Ele é usado para comunicar-se a ID da operação em segundo plano que foi cancelada.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a>SccMsgDataOnBeforeGetFile  
+###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp  
 typedef struct {  
@@ -96,7 +92,7 @@ typedef struct {
   
  Essa estrutura é enviada com o `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` mensagem. Ele é usado para transmitir o nome do arquivo que está prestes a ser recuperado e a ID da operação em segundo plano que está fazendo a recuperação.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a>SccMsgDataOnAfterGetFile  
+###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp  
 typedef struct {  
@@ -108,7 +104,7 @@ typedef struct {
   
  Essa estrutura é enviada com o `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` mensagem. Ele é usado para comunicar o resultado de recuperar o arquivo especificado, bem como a ID da operação em segundo plano que fez a recuperar. Consulte os valores de retorno para o [SccGet](../extensibility/sccget-function.md) para o que pode ser fornecido como resultado.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a>SccMsgDataOnMessage  
+###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  

@@ -1,27 +1,23 @@
 ---
-title: "Os sinalizadores de bit usados por comandos específicos | Microsoft Docs"
-ms.custom: 
+title: Os sinalizadores de bit usados por comandos específicos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Sinalizadores de bit usados por comandos específicos
 O comportamento de um número de funções da API de plug-in de controle de origem pode ser modificado, definindo um ou mais bits em um único valor. Esses valores são conhecidos como os sinalizadores de bit. O sinalizadores de bit vários utilizada a API de plug-in de controle de origem são detalhados aqui, agrupados por função em que os utiliza.  
@@ -40,7 +36,7 @@ O comportamento de um número de funções da API de plug-in de controle de orig
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|O plug-in de controle de origem é esperado para detectar automaticamente se o arquivo é texto ou binário.|  
 |`SCC_FILETYPE_TEXT`|0x01|Tipo de arquivo é texto.|  
-|`SCC_FILETYPE_BINARY`|0x04|Tipo de arquivo é binário. **Observação:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` sinalizadores são mutuamente exclusivos. Defina exatamente um ou nenhum.|  
+|`SCC_FILETYPE_BINARY`|0x04|Tipo de arquivo é binário. **Observação:** `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` sinalizadores são mutuamente exclusivos.   Defina exatamente um ou nenhum.|  
 |`SCC_ADD_STORELATEST`|0x02|Armazenar a versão mais recente somente (sem deltas).|  
   
 ## <a name="diff-flags"></a>Sinalizadores de comparação  

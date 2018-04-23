@@ -1,12 +1,10 @@
 ---
-title: "Personalizando uma faixa de opções para InfoPath | Microsoft Docs"
-ms.custom: 
+title: Personalizando uma faixa de opções para InfoPath | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], InfoPath
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 40cf51fce578540a5ea27a96e3482e5d7f906754
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a3e5121285f66059a898ce64fc4107903f371485
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-a-ribbon-for-infopath"></a>Personalizando uma faixa de opções para InfoPath
-  Quando você personaliza a faixa de opções no Microsoft Office InfoPath, você deve considerar onde a faixa de opções personalizada será exibida no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]pode exibir a faixa de opções os seguir três tipos de janelas de aplicativo do InfoPath:  
+  Quando você personaliza a faixa de opções no Microsoft Office InfoPath, você deve considerar onde a faixa de opções personalizada será exibida no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] pode exibir a faixa de opções os seguir três tipos de janelas de aplicativo do InfoPath:  
   
 -   Janelas que exibem um modelo de formulário é aberto no modo de design.  
   

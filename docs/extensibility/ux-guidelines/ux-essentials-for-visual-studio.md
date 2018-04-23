@@ -1,23 +1,21 @@
 ---
-title: "Conceitos básicos UX para o Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Conceitos básicos UX para o Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Conceitos básicos UX para o Visual Studio
 ## <a name="best-practices"></a>Práticas recomendadas  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 Forçar o usuário leia texto explicativo antes de ignorar a interface do usuário é um antidentro padrão de do Visual Studio. Links de vídeo corretamente projetado deve exibir uma dica de ferramenta com informações adicionais no hover e clicando na "&times;" deve ignorar a mensagem sem necessidade de interação adicional.
 
 
- ![Explicação texto anti #45; padrão &#45; incorreto](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Padrão de link de vídeo incorreto
+ ![Texto explicativo anti&#45;padrão &#45; incorreto](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Padrão de link de vídeo incorreto
   
 #### <a name="result"></a>Resultado  
  Em vez de um botão Fechar simple (um clique), o usuário será forçado a usar dois cliques para simplesmente ignorar a interface do usuário em cada local que os links de vídeos aparecem.  
@@ -116,7 +114,7 @@ Forçar o usuário leia texto explicativo antes de ignorar a interface do usuár
 #### <a name="alternatives"></a>Alternativas  
  O design correto para essa situação seria seguem o padrão comum para o Internet Explorer, o Office e o Visual Studio: no foco, o usuário pode ver a descrição de dica de ferramenta e um clique oculta a interface do usuário.  
   
- ![Explicação texto anti #45; padrão &#45; correto](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti padrão corretos")<br />Padrão de link de vídeo correto
+ ![Texto explicativo anti&#45;padrão &#45; correto](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti padrão corretos")<br />Padrão de link de vídeo correto
   
 ### <a name="using-command-bars-for-settings"></a>Usando as barras de comando para configurações  
  **A Figura** representa esse anti-padrão: colocar uma configuração abaixo de um botão de comando que se aplica a mais do que apenas o comando. Nesse esboço, há comandos além de iniciar depuração — como o modo de exibição no navegador, iniciar sem depurar e intervir — que respeitará a configuração selecionada.  

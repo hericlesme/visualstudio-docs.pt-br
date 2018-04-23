@@ -2,28 +2,24 @@
 title: IEnumDebugFrameInfo2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFrameInfo2
 helpviewer_keywords:
 - IEnumDebugFrameInfo2
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fce74b91512ee22eda7ce8c3e61de0ac03636d2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 858250c3c951880cf905ea6ee150f1ff61008204
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Essa interface enumera [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estruturas.  

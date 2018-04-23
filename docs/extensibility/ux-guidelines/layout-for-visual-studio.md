@@ -1,28 +1,26 @@
 ---
 title: Layout para o Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Layout para o Visual Studio
 A maioria das caixas de diálogo do Visual Studio [layout da caixa de diálogo de utilitário](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que são o unthemed caixas de diálogo padrão que seguem [princípios de layout de caixa de diálogo Windows Desktop](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Como o Visual Studio se move para atualizar sua interface do usuário, algumas das caixas de diálogo mais proeminentes têm um novo design que estabelece-los como definição de produto experiências. Essas [layout da caixa de diálogo com tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tem uma aparência com tema.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Layout da caixa de diálogo de utilitário  
+##  <a name="BKMK_UtilityDialogLayout"></a> Layout da caixa de diálogo de utilitário  
   
 -   Todos os controles dentro de uma caixa de diálogo do utilitário devem iniciar na parte superior/esquerda e para baixo de fluxo.  
   
@@ -104,7 +102,7 @@ A maioria das caixas de diálogo do Visual Studio [layout da caixa de diálogo d
   
 -   O comprimento da linha deve ser uma largura à vontade para um usuário analisar e ler. Uma caixa de diálogo média deve ser não mais de 550 pixels de largura.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>Botões de comando interna  
+####  <a name="BKMK_InteriorCommandButtons"></a> Botões de comando interna  
  Nas caixas de diálogo mais complexas, um controle interno pode ter seu próprio botões relacionados, o que podem afetar onde se encontram botões de confirmação da caixa de diálogo.  
   
 -   Use os botões de alinhamento vertical (coluna) do interior quando **Okey**/**Cancelar** são orientados horizontalmente no canto inferior direito.  
@@ -124,7 +122,7 @@ A maioria das caixas de diálogo do Visual Studio [layout da caixa de diálogo d
 #### <a name="browse-button"></a>[Procurar...] botão  
  **[Procurar...]**  botões que seguem uma caixa de texto devem digitar "Procurar …" por completo, incluindo as reticências. Se o espaço é forte ou há vários **[procurar...]**  botões na tela, o botão podem ser reduzido para apenas as reticências.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Layout da caixa de diálogo com tema  
+##  <a name="BKMK_ThemedDialogLayout"></a> Layout da caixa de diálogo com tema  
  Caixas de diálogo com tema do Visual Studio têm uma aparência mais clara e oferecem mais espaço em branco. Tipografia fornece mais ênfase e interesse, oferecendo mais abrir espaçamento e uma variação de tamanhos de fonte e pesos. Sempre que possível, as barras de título e o chrome foram reduzidas ou removidas. O layout dessas caixas de diálogo deve seguir este padrão básico:  
   
 1.  O plano de fundo da caixa de diálogo está em branco.  

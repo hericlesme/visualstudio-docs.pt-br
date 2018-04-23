@@ -1,23 +1,21 @@
 ---
 title: Elemento AppliesTo (modelos do Visual Studio) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelos do Visual Studio)
 Especifica uma expressão opcional para correspondência de um ou mais recursos. (Consulte <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>.) Os recursos são expostos pelos tipos de projeto por meio da hierarquia como uma propriedade <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. Dessa maneira, o modelo pode ser compartilhado por vários tipos de projeto que têm recursos aplicáveis comuns.  
@@ -56,7 +54,7 @@ Especifica uma expressão opcional para correspondência de um ou mais recursos.
   
  A sintaxe da expressão válida é definida como:  
   
--   A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit) ".  
+-   A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
 -   O "&#124;" é o operador OR.  
   
@@ -68,7 +66,7 @@ Especifica uma expressão opcional para correspondência de um ou mais recursos.
   
 -   Uma expressão nula ou vazia é avaliada como uma correspondência.  
   
--   Recursos de projeto podem ser qualquer caractere, exceto esses caracteres reservados: "' :;,+-*/\\! ~ &#124; & %$@^()={} <> []? \t\b\n\r  
+-   Recursos de projeto podem ser qualquer caractere, exceto esses caracteres reservados: "' :;,+-*/\\! ~&#124;& %$@^()={} <> []? \t\b\n\r  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra três modelos diferentes. `Template1` aplica-se a todos os tipos de projeto do C# ou a qualquer outro tipo de projeto que ofereça suporte ao recurso `WindowsAppContainer`. `Template2` aplica-se a todos os projetos do C# de qualquer tipo. `Template3` aplica-se aos projetos do C# que não são projetos `WindowsAppContainer`.  

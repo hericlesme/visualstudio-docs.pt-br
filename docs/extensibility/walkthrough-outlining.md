@@ -1,27 +1,23 @@
 ---
-title: "Instruções passo a passo: Estrutura de tópicos | Microsoft Docs"
-ms.custom: 
+title: 'Instruções passo a passo: Estrutura de tópicos | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8360daf5ff1e7d94d995bdbefee6228a47e47db8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-outlining"></a>Instruções passo a passo: estrutura de tópicos
 Você pode implementar recursos de linguagem, como a estrutura de tópicos definindo os tipos de regiões de texto que você deseja expandir ou recolher. Você pode definir regiões no contexto de um serviço de idioma, você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e aplica a definição de região a somente esse tipo ou você pode aplicar as definições de região como um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como definir e exibir regiões de estrutura de tópicos.  

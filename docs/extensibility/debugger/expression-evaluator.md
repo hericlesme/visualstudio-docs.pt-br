@@ -1,27 +1,25 @@
 ---
-title: "Avaliador de expressão | Microsoft Docs"
-ms.custom: 
+title: Avaliador de expressão | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK]
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8dd2cc4409dbdb7650454715e133fd76dda5b780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator"></a>Avaliador de expressão
 Avaliadores de expressão (EE) examinam a sintaxe de um idioma para analisar e avaliar expressões e variáveis em tempo de execução, permitindo que eles sejam exibidos pelo usuário quando o IDE no modo de interrupção.  
@@ -33,7 +31,7 @@ Avaliadores de expressão (EE) examinam a sintaxe de um idioma para analisar e a
   
 2.  Obtém o pacote de depuração um `IDebugExpressionContext2` de objeto um [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interface e, em seguida, chama o `IDebugStackFrame2::ParseText` método para obter um [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto.  
   
-3.  As chamadas de pacote de depuração a [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) método ou o [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) método para obter o valor da expressão. `IDebugExpression2::EvaluateAsync`é chamado da janela de comando/imediato. Todos os outros componentes de interface do usuário chamar `IDebugExpression2::EvaluateSync`.  
+3.  As chamadas de pacote de depuração a [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) método ou o [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) método para obter o valor da expressão. `IDebugExpression2::EvaluateAsync` é chamado da janela de comando/imediato. Todos os outros componentes de interface do usuário chamar `IDebugExpression2::EvaluateSync`.  
   
 4.  O resultado da avaliação da expressão é um [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto, que contém o nome, o tipo e o valor do resultado da avaliação de expressão.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Projetando e criando soluções do Office | Microsoft Docs"
-ms.custom: 
+title: Projetando e criando soluções do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f5a0163d422e5bb04e3c43b5455cc94dde06f09
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e43824ed3fa34a7cd22b98fb25f946f36cb8eab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-and-creating-office-solutions"></a>Projetando e criando soluções do Office
   Visual Studio fornece modelos de projeto que você pode usar para criar vários tipos diferentes de soluções do Office. Esta seção da documentação descreve os modelos de projeto e fornece orientação sobre como criar projetos do Office. Para obter informações sobre como implementar as personalizações de interface de usuário e código depois de ter criado seu projeto, consulte [desenvolvendo soluções do Office](../vsto/developing-office-solutions.md).  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  Se o Visual Studio altera o destino do .NET Framework para o seu projeto e você estiver usando o ClickOnce para implantar sua solução, certifique-se de que você também pode selecionar a versão correspondente do .NET Framework no **pré-requisitos** caixa de diálogo. Esta seleção não será alterada automaticamente quando você altera a estrutura de destino para o seu projeto. Para obter mais informações, consulte [como: instalar pré-requisitos em computadores de usuário final para executar soluções do Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
->  Você não pode direcionar o .NET Framework 3.5 ou anterior em projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] exigem recursos que foram introduzidos do[!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+>  Você não pode direcionar o .NET Framework 3.5 ou anterior em projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] exigem recursos que foram introduzidos do [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
 ### <a name="understanding-when-the-office-pias-are-required-on-end-user-computers"></a>Noções básicas sobre quando PIAs do Office são necessárias em computadores de usuário final  
  Por padrão, assemblies de interoperabilidade primários do Office (PIAs) não precisam ser instalados em computadores de usuário final, se o **Embed Interop Types** propriedade cada referência de PIA do Office no projeto é definida como **True**, que é o valor padrão. Nesse cenário, as informações de tipo para os tipos PIA que são usados pela sua solução são inseridas no assembly de solução quando você compilar o projeto. Em tempo de execução, as informações de tipo inserido são usadas em vez dos PIAs a chamada ao modelo de objeto com base em COM o aplicativo do Office. Para obter mais informações sobre como os tipos de PIAs são inseridos em sua solução, consulte [equivalência de tipo e tipos de interoperabilidade inserido](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  

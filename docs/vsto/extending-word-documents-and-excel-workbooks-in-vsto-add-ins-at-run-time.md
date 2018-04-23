@@ -1,12 +1,10 @@
 ---
-title: "Estendendo documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução | Microsoft Docs"
-ms.custom: 
+title: Estendendo documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - HasVstoObject method
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5cd29d7de596704087eb1326791e4fc9df9921a6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0f95c7cb0dfa5fb867807e32366157839725db85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Estendendo documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução
   Você pode usar um suplemento do VSTO para personalizar os documentos do Word e pastas de trabalho do Excel das seguintes maneiras:  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
-##  <a name="AddControls"></a>Adicionando controles gerenciados a documentos e planilhas  
+##  <a name="AddControls"></a> Adicionando controles gerenciados a documentos e planilhas  
  Depois de gerar um <xref:Microsoft.Office.Tools.Word.Document> ou <xref:Microsoft.Office.Tools.Excel.Worksheet>, você pode adicionar controles ao documento ou planilha esses estendidos objetos representam. Para fazer isso, use a propriedade de controles do <xref:Microsoft.Office.Tools.Word.Document> ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Você pode adicionar controles de formulários do Windows ou *hospedar controles*. Um controle de host é fornecida pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que encapsula um controle correspondente no assembly de interoperabilidade primária do Word ou Excel. Um controle de host expõe todos o comportamento do objeto Office nativo subjacente, mas também gera eventos e podem ser associado a dados usando o modelo de associação de dados de formulários do Windows. Para obter mais informações, consulte [itens de Host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md).  
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]  
   
-##  <a name="HasVstoObject"></a>Determinando se um objeto do Office foi estendido  
+##  <a name="HasVstoObject"></a> Determinando se um objeto do Office foi estendido  
  Para determinar se um objeto estendido já foi gerado para um determinado objeto Office nativo, use o método HasVstoObject. Este método retorna **true** se já tiver sido gerado um objeto estendido; caso contrário, retornará **false**.  
   
  Use o método Globals.Factory.HasVstoMethod. Passe o objeto nativo do Word ou Excel, como um <xref:Microsoft.Office.Interop.Word.Document> ou <xref:Microsoft.Office.Interop.Excel.Worksheet>, que você deseja testar para um objeto estendido.  

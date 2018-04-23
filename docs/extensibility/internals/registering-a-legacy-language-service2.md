@@ -1,27 +1,25 @@
 ---
 title: Registrando um gratuito2 de idioma herdado | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar um serviço de linguagem herdado
 As seções a seguir fornecem listas de entradas do registro para o idioma de várias opções de serviço disponíveis no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,9 +31,9 @@ As seções a seguir fornecem listas de entradas do registro para o idioma de v�
   
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  
-|(Padrão)|REG_SZ|*\<GUID >*|GUID do serviço de linguagem.|  
+|(Padrão)|REG_SZ|*\<GUID &GT;*|GUID do serviço de linguagem.|  
 |LangResID|REG_DWORD|0x0 0xffff|O identificador de recurso (ResID) para o nome de texto localizado do idioma da cadeia de caracteres.|  
-|Pacote|REG_SZ|*\<GUID >*|GUID do VSPackage.|  
+|Pacote|REG_SZ|*\<GUID &GT;*|GUID do VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Especifica se o **conclusão de instrução** opções no **opções** caixa de diálogo estão habilitados.|  
 |ShowSmartIndent|REG_DWORD|0-1|Especifica se a opção de selecionar **inteligente** recuo a **opções** caixa de diálogo está habilitada.|  
 |RequestStockColors|REG_DWORD|0-1|Especifica se personalizado ou cores padrão são usadas para palavras-chave de cor.|  
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Nome da guia da caixa de ferramentas para tornar padrão quando o editor está ativo.|  
 |DisplayName|REG_SZ|resID|Nome para exibir o **abrir com** caixa de diálogo. O nome é a ID de recurso de cadeia de caracteres ou um nome no formato padrão.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Usado para o **abrir com** comando de menu. Se você não deseja listar o editor de texto padrão na lista de editores disponíveis para um tipo de arquivo específico, defina esse valor como 1.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID >*|Usado para qualquer serviço de linguagem que pode abrir um arquivo com o suporte da página de código. Por exemplo, quando você abre um arquivo. txt usando o **abrir com** de comando, opções são fornecidas para usar o editor de código fonte com e sem codificação.<br /><br /> O GUID especificado no nome da subchave destina-se a fábrica do editor de página de código; é o GUID vinculado especificado nesta entrada do registro específica para a fábrica do editor regular. A finalidade dessa entrada é que se o IDE não abrir um arquivo usando o editor padrão, o IDE tentará usar o editor de Avançar na lista. Este editor próxima não deve ser a fábrica do editor de página de código porque esta fábrica de editor é basicamente o mesmo que a fábrica do editor que falhou.|  
-|Pacote|REG_SZ|*\<GUID >*|VSPackage GUID para ResID do nome para exibição.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Usado para qualquer serviço de linguagem que pode abrir um arquivo com o suporte da página de código. Por exemplo, quando você abre um arquivo. txt usando o **abrir com** de comando, opções são fornecidas para usar o editor de código fonte com e sem codificação.<br /><br /> O GUID especificado no nome da subchave destina-se a fábrica do editor de página de código; é o GUID vinculado especificado nesta entrada do registro específica para a fábrica do editor regular. A finalidade dessa entrada é que se o IDE não abrir um arquivo usando o editor padrão, o IDE tentará usar o editor de Avançar na lista. Este editor próxima não deve ser a fábrica do editor de página de código porque esta fábrica de editor é basicamente o mesmo que a fábrica do editor que falhou.|  
+|Pacote|REG_SZ|*\<GUID &GT;*|VSPackage GUID para ResID do nome para exibição.|  
   
 ### <a name="example"></a>Exemplo  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  
 |(Padrão)|REG_SZ||Não utilizado.|  
-|*\<GUID >*|REG_SZ|""|Chave para os modos de exibição lógicos tem suportada. Você pode ter como muitos desses conforme necessário. O nome da entrada do registro que é importante, não o valor, que é sempre uma cadeia de caracteres vazia.|  
+|*\<GUID &GT;*|REG_SZ|""|Chave para os modos de exibição lógicos tem suportada. Você pode ter como muitos desses conforme necessário. O nome da entrada do registro que é importante, não o valor, que é sempre uma cadeia de caracteres vazia.|  
   
 ### <a name="example"></a>Exemplo  
   

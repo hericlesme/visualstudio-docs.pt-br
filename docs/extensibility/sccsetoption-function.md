@@ -1,29 +1,25 @@
 ---
-title: "Função SccSetOption | Microsoft Docs"
-ms.custom: 
+title: Função SccSetOption | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 916378ea594d14c9493535b3a28e72ea49ed4733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccsetoption-function"></a>Função SccSetOption
 Esta função define opções que controlam o comportamento do plug-in de controle de origem.  
@@ -75,7 +71,7 @@ SCCRTN SccSetOption(
  Se `nOption` é `SCC_OPT_EVENTQUEUE`, o IDE é desabilitar (ou reabilitar) processamento em segundo plano. Por exemplo, durante uma compilação, o IDE pode instruir o plug-in para interromper o processamento ocioso em qualquer tipo de controle de origem. Após a compilação, ele seria reabilitar o processamento em segundo plano para manter fila de eventos do plug-in atualizado. Correspondente para o `SCC_OPT_EVENTQUEUE` valor `nOption`, há dois valores possíveis para `dwVal`, ou seja, `SCC_OPT_EQ_ENABLE` e `SCC_OPT_EQ_DISABLE`.  
   
 ## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- Se o valor de `nOption` é `SCC_OPT_HASCANCELMODE`, o IDE permite aos usuários cancelar operações longas. Configuração `dwVal` para `SCC_OPT_HCM_NO` (o padrão) indica que o IDE não tem nenhum modo de cancelamento. O plug-in de controle de origem deve oferecer seu próprio botão Cancelar se desejar que o usuário poderá cancelar. `SCC_OPT_HCM_YES`indica que o IDE fornece a capacidade de cancelar uma operação, o SCC plug-in não necessário exibir seu próprio botão Cancelar. Se o IDE define `dwVal` para `SCC_OPT_HCM_YES`, prepare-se para responder a `SCC_MSG_STATUS` e `DOCANCEL` mensagens enviadas para o `lpTextOutProc` função de retorno de chamada (consulte [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Se o IDE não definir essa variável, o plug-in não deve enviar essas duas mensagens.  
+ Se o valor de `nOption` é `SCC_OPT_HASCANCELMODE`, o IDE permite aos usuários cancelar operações longas. Configuração `dwVal` para `SCC_OPT_HCM_NO` (o padrão) indica que o IDE não tem nenhum modo de cancelamento. O plug-in de controle de origem deve oferecer seu próprio botão Cancelar se desejar que o usuário poderá cancelar. `SCC_OPT_HCM_YES` indica que o IDE fornece a capacidade de cancelar uma operação, o SCC plug-in não necessário exibir seu próprio botão Cancelar. Se o IDE define `dwVal` para `SCC_OPT_HCM_YES`, prepare-se para responder a `SCC_MSG_STATUS` e `DOCANCEL` mensagens enviadas para o `lpTextOutProc` função de retorno de chamada (consulte [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Se o IDE não definir essa variável, o plug-in não deve enviar essas duas mensagens.  
   
 ## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
  Se nOption for definido como `SCC_OPT_NAMECHANGEPFN`e de origem permitem plug-in de controle e o IDE, o plug-in pode, na verdade, renomear ou mover um arquivo durante uma operação de controle de origem. O `dwVal` será definida como um ponteiro de função de tipo [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). Durante uma operação de controle de origem, o plug-in pode chamar essa função, passando três parâmetros. Esses são o nome antigo (com o caminho totalmente qualificado) de um arquivo, o novo nome (com o caminho totalmente qualificado) do arquivo e um ponteiro para informações que têm relevância para o IDE. O IDE envia esse ponteiro última chamando `SccSetOption` com `nOption` definida como `SCC_OPT_USERDATA`, com `dwVal` apontando para os dados. Suporte para essa função é opcional. Um plug VSSCI-que usa essa capacidade deve inicializar suas função ponteiro dados variáveis de usuário e a `NULL`, e ele não deve chamar uma função de renomeação, a menos que ele tem um. Ele também deverá estar preparado para manter o valor foi fornecido ou alterá-lo em resposta a uma nova chamada para `SccSetOption`. Isso não acontece no meio de uma operação de comando de controle de origem, mas isso pode ocorrer entre comandos.  

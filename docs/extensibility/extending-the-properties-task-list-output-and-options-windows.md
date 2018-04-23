@@ -1,12 +1,10 @@
 ---
-title: "Estendendo propriedades, lista de tarefas, saída e opções Windows | Microsoft Docs"
-ms.custom: 
+title: Estendendo propriedades, lista de tarefas, saída e opções Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Estendendo propriedades, lista de tarefas, saída e opções Windows
 Você pode acessar qualquer janela de ferramenta no Visual Studio. Este passo a passo mostra como integrar as informações sobre a janela de ferramenta em um novo **opções** página e uma nova configuração no **propriedades** página e também como gravar o **delistadetarefas** e **saída** windows.  
@@ -150,7 +148,7 @@ Você pode acessar qualquer janela de ferramenta no Visual Studio. Este passo a 
   
      Quando a janela da ferramenta está disponível para os usuários, os itens na caixa de listagem serão representados por TodoItems. Quando o usuário seleciona um desses itens, na caixa de listagem, o **propriedades** janela exibirá informações sobre o item.  
   
-     Para tornar dados disponíveis no **propriedades** janela, você transforma os dados em propriedades públicas que têm dois atributos especiais, `Description` e `Category`. `Description`é o texto que aparece na parte inferior do **propriedades** janela. `Category`determina onde a propriedade deve ser exibida quando o **propriedades** janela é exibida no **categorizado** exibição. Na figura a seguir, o **propriedades** janela está **categorizado** exibição, o **nome** propriedade no **ToDo Fields** categoria é selecionado e a descrição do **nome** propriedade é exibida na parte inferior da janela.  
+     Para tornar dados disponíveis no **propriedades** janela, você transforma os dados em propriedades públicas que têm dois atributos especiais, `Description` e `Category`. `Description` é o texto que aparece na parte inferior do **propriedades** janela. `Category` determina onde a propriedade deve ser exibida quando o **propriedades** janela é exibida no **categorizado** exibição. Na figura a seguir, o **propriedades** janela está **categorizado** exibição, o **nome** propriedade no **ToDo Fields** categoria é selecionado e a descrição do **nome** propriedade é exibida na parte inferior da janela.  
   
      ![Janela propriedades](../extensibility/media/t5properties.png "T5Properties")  
   

@@ -2,32 +2,28 @@
 title: Visão geral de integração de controle de origem | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 19d75936e21729729dfeafaa041d800acbe01caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-overview"></a>Visão geral de integração de controle do código-fonte
 Esta seção compara as duas formas de integrar o controle de origem do Visual Studio; um controle de origem plug-in e um VSPackage que fornece uma solução de controle de origem e destaca os novos recursos de controle de origem. O Visual Studio permite manual alternando o controle de origem VSPackages e plug-ins de controle de origem, bem como com base em solução de comutação automática.  
   
 ## <a name="source-control-integration"></a>Integração de controle de origem  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]oferece suporte a dois tipos de opções de integração de controle de origem. Todas as versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você ainda pode integrar um plug-in com base na API de plug-in de controle do código-fonte (anteriormente também conhecida como a API MSSCCI), e que fornece funcionalidade de controle de origem básico usando o Visual Studio fonte (de interface de usuário de controle INTERFACE DO USUÁRIO). Um controle de origem VSPackage, por outro lado, fornece uma integração profundo nova [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] caminho adequado para a integração de controle de origem que exige um alto nível de sofisticação e autonomia no seu modelo de controle de origem.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oferece suporte a dois tipos de opções de integração de controle de origem. Todas as versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você ainda pode integrar um plug-in com base na API de plug-in de controle do código-fonte (anteriormente também conhecida como a API MSSCCI), e que fornece funcionalidade de controle de origem básico usando o Visual Studio fonte (de interface de usuário de controle INTERFACE DO USUÁRIO). Um controle de origem VSPackage, por outro lado, fornece uma integração profundo nova [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] caminho adequado para a integração de controle de origem que exige um alto nível de sofisticação e autonomia no seu modelo de controle de origem.  
   
  ![Visão geral do controle de origem](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")  
   
@@ -61,7 +57,7 @@ Esta seção compara as duas formas de integrar o controle de origem do Visual S
 -   É mais fácil de implementar um plug-in de um controle de origem VSPackage de controle de origem.  
   
 ## <a name="source-control-vspackage"></a>VSPackage de controle do código-fonte  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]permite a integração total no Visual Studio com controle total da funcionalidade de controle de origem e uma substituição completa da interface de usuário de controle de origem fornecidos pelo Visual Studio. Um controle de origem VSPackage é registrado com o Visual Studio e fornece funcionalidade de controle de origem. Embora várias VSPackages de controle de origem pode ser registrado com o Visual Studio, apenas um deles pode ser ativo a qualquer momento. Um controle de origem VSPackage tem controle total sobre a aparência e a funcionalidade de controle de origem no Visual Studio enquanto estiver ativo. Todos os outros controle de origem VSPackages que podem ser registrados no sistema está inativo e não exibirá nenhuma interface do usuário em todos os.  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] permite a integração total no Visual Studio com controle total da funcionalidade de controle de origem e uma substituição completa da interface de usuário de controle de origem fornecidos pelo Visual Studio. Um controle de origem VSPackage é registrado com o Visual Studio e fornece funcionalidade de controle de origem. Embora várias VSPackages de controle de origem pode ser registrado com o Visual Studio, apenas um deles pode ser ativo a qualquer momento. Um controle de origem VSPackage tem controle total sobre a aparência e a funcionalidade de controle de origem no Visual Studio enquanto estiver ativo. Todos os outros controle de origem VSPackages que podem ser registrados no sistema está inativo e não exibirá nenhuma interface do usuário em todos os.  
   
  Implementação de um controle de origem VSPackage requer uma estratégia "tudo ou nada". O criador de um controle de origem VSPackage deve investir uma quantidade significativa de esforço na implementação de um número de interfaces de controle de origem e novos elementos de interface do usuário (caixas de diálogo, menus e barras de ferramentas) para cobrir a funcionalidade de controle de origem inteiro. Consulte [criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md) para obter mais detalhes.  
   

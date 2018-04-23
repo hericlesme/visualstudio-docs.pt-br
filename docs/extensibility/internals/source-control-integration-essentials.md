@@ -1,30 +1,28 @@
 ---
-title: "Conceitos básicos de integração de controle de origem | Microsoft Docs"
-ms.custom: 
+title: Conceitos básicos de integração de controle de origem | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Conceitos básicos de integração de controle de origem
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]dá suporte a dois tipos de integração de controle de origem: um plug-in de controle de origem que fornece a funcionalidade básica e é criado usando a API de plug-in de controle de origem (anteriormente conhecida como a API MSSCCI) e uma solução de integração de controle de origem baseado em VSPackage que fornece a funcionalidade mais robusta.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a dois tipos de integração de controle de origem: um plug-in de controle de origem que fornece a funcionalidade básica e é criado usando a API de plug-in de controle de origem (anteriormente conhecida como a API MSSCCI) e uma solução de integração de controle de origem baseado em VSPackage que fornece a funcionalidade mais robusta.  
   
 ## <a name="source-control-plug-in"></a>Plug-in de controle de origem  
  Um plug-in de controle de origem é gravado como uma DLL que implementa a API de plug-in de controle de origem. Funcionalidade de integração de controle de origem e de registro é fornecida por meio da API. Essa abordagem é mais fácil de implementar do que um controle de origem VSPackage e usa o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface de usuário (UI) para a maioria das operações de controle de origem.  

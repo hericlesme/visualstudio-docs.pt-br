@@ -1,26 +1,24 @@
 ---
 title: Iniciando um programa | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 714d751e9855b5567bf76ccd902fada727e14ba1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="launching-a-program"></a>Iniciando um programa
 Os usuários que desejam depurar um programa podem pressionar F5 para executar o depurador do IDE. Isso inicia uma série de eventos que resultam, por fim, o IDE conectar-se ao mecanismo de depuração (DE), que por sua vez conectado, ou anexado, o programa da seguinte maneira:  

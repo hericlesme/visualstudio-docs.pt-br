@@ -2,26 +2,22 @@
 title: Dados de documento e documento de exibição em editores personalizados | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-caps.latest.revision: 23
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb445ca70ac74cf2601e9f1035549bb686fca798
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dados de documento e visualização de documentos em editores personalizados
 Um editor personalizado consiste em duas partes: um objeto de dados de documento e um objeto de exibição do documento. Como os nomes sugerem, o objeto de dados de documento representa os dados de texto a ser exibida e o objeto de exibição de documento (ou "view") representa uma ou mais janelas no qual exibir o objeto de dados de documento.  
@@ -29,9 +25,9 @@ Um editor personalizado consiste em duas partes: um objeto de dados de documento
 ## <a name="document-data-object"></a>Objeto de dados de documento  
  Um objeto de dados de documento é uma representação de dados de texto no buffer de texto. É um objeto COM que armazena o texto do documento e outras informações, manipula a persistência de documento e permite que vários modos de exibição de seus dados. Para saber mais, veja  
   
- <xref:EnvDTE80.Window2.DocumentData%2A>e [documento Windows](../extensibility/internals/document-windows.md).  
+ <xref:EnvDTE80.Window2.DocumentData%2A> e [documento Windows](../extensibility/internals/document-windows.md).  
   
- Designers e editores personalizados podem optar por usar o <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> seu próprios buffer personalizado ou objeto. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>segue o modelo de incorporação simplificado para um editor padrão, dá suporte a vários modos de exibição e fornece interfaces de evento que são usados para gerenciar vários modos de exibição.  
+ Designers e editores personalizados podem optar por usar o <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> seu próprios buffer personalizado ou objeto. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> segue o modelo de incorporação simplificado para um editor padrão, dá suporte a vários modos de exibição e fornece interfaces de evento que são usados para gerenciar vários modos de exibição.  
   
 ## <a name="document-view-object"></a>Objeto de exibição de documento  
  Uma janela que exibe o código e outro texto é conhecida como um documento do modo de exibição ou exibição. Quando você cria um editor, você pode escolher uma única visualização, no qual o texto é exibido em uma única janela, ou uma exibição de várias, no qual o texto é exibido em mais de uma janela. Sua escolha depende de seu aplicativo. Por exemplo, se você precisar de uma edição lado a lado, escolha exibir vários. Cada exibição é associada uma entrada no ambiente de desenvolvimento integrado do (IDE) a tabela de documento (RDT) em execução. Windows de modo de exibição pertencem a um projeto ou um <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto.  

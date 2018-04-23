@@ -1,26 +1,24 @@
 ---
 title: Adicionando uma barra de ferramentas para uma janela de ferramentas | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-caps.latest.revision: "48"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 07b5eea4fe6d5f58ec4b05563af253aeef0c5f6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 47ff5f69ff559ea1c08d0ae9bdd7192a257c844e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Adicionando uma barra de ferramentas para uma janela de ferramenta
 Este passo a passo mostra como adicionar uma barra de ferramentas para uma janela de ferramenta.  

@@ -1,13 +1,10 @@
 ---
-title: "Guia de Introdução (desenvolvimento do SharePoint no Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Guia de Introdução (desenvolvimento do SharePoint no Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +14,21 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81874b1b17f7e0ced2325170ee8cfafdf85413d9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2e887109c1edb6bad2ee130c6623d5b7538167ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-sharepoint-development-in-visual-studio"></a>Introdução (desenvolvimento do SharePoint no Visual Studio)
   Esta seção ajuda você a começar a trabalhar com [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para desenvolver soluções do SharePoint que aproveitam [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].  
   
  Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) e [suplementos do SharePoint criar](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
- O SharePoint oferece uma plataforma de colaboração baseada na Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Fornece que muitos modelos de projeto para criação de sites do SharePoint e o conteúdo, inclusive definições de lista e definições de site, modelos de conectividade de dados de negócios e fluxos de trabalho. Além disso, você pode criar extensões para os projetos do SharePoint e as ferramentas no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+ O SharePoint oferece uma plataforma de colaboração baseada na Web. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fornece que muitos modelos de projeto para criação de sites do SharePoint e o conteúdo, inclusive definições de lista e definições de site, modelos de conectividade de dados de negócios e fluxos de trabalho. Além disso, você pode criar extensões para os projetos do SharePoint e as ferramentas no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ## <a name="in-this-section"></a>Nesta seção  
   

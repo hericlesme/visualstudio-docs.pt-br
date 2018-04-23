@@ -1,28 +1,26 @@
 ---
 title: Determinando qual Editor abre um arquivo em um projeto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
 - projects [Visual Studio SDK], determining which editor opens file
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f7c69bc08d0f1bb72a37b76fca2d402d73036deb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d8fe054fa8e630b2f6c54cb78ef75b6c10ff74d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Determinando que Editor abre um arquivo em um projeto
 Quando um usuário abre um arquivo em um projeto, o ambiente passa por um processo de sondagem, eventualmente abrindo o editor apropriado ou o criador do arquivo. O procedimento inicial empregado pelo ambiente é o mesmo para editores padrão e personalizados. O ambiente usa uma variedade de critérios quando o editor para usar para abrir um arquivo de sondagem e o VSPackage deve coordenar com o ambiente durante esse processo.  

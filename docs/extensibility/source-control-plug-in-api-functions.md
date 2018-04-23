@@ -1,27 +1,23 @@
 ---
-title: "Funções de API de plug-in de controle de origem | Microsoft Docs"
-ms.custom: 
+title: Funções de API de plug-in de controle de origem | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: beaab13c76b3d50f97662e66c1f72dc83161e96d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a834c4352ea2444c2669a57f760ed373999b07dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funções de API de plug-in de controle de origem
 A API de plug-in de controle de origem contém as seguintes funções, que devem ser implementadas pelo plug-in de acordo com essa API de controle de origem. As assinaturas de cada função e a semântica associada com os sinalizadores de bit e outros parâmetros são descritos em detalhes nesta referência.  

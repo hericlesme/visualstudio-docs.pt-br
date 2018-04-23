@@ -1,26 +1,24 @@
 ---
-title: "Padrões de aplicativo para o Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Padrões de aplicativo para o Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a793651660c456213c0e91c0d6c6474cccf3f7d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
-##  <a name="BKMK_WindowInteractions"></a>Interações de janela  
+##  <a name="BKMK_WindowInteractions"></a> Interações de janela  
   
 ### <a name="overview"></a>Visão geral  
 Os dois tipos de janela principal usados no Visual Studio são editores de documento e janelas de ferramenta. Raras, mas possível, é grandes caixas de diálogo sem janela restrita. Embora essas sejam tudo sem janela restrita no shell, seus padrões são fundamentalmente diferentes. Esta seção aborda a diferença entre janelas de documentos, janelas de ferramentas e caixas de diálogo sem janela restrita. Padrões da caixa de diálogo modal são abordadas em [caixas de diálogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).  
@@ -42,7 +40,7 @@ Pense cuidadosamente sobre que tipo de contêiner que você precisa. Consideraç
 | **Instâncias** | *Várias instâncias*<br /><br /> Vários editores podem ser abertos no mesmo momento e edição de arquivos diferente, embora alguns editores também permitem que o mesmo arquivo para ser aberto em mais de um editor (usando o **janela &gt; nova janela** comando).<br /><br /> Um único editor pode estar editando um ou vários arquivos ao mesmo tempo (Designer de projeto). | *Único ou vários instance*<br /><br /> Conteúdo alterado para refletir o contexto (como o navegador de propriedade) ou enviar por push o foco/contexto para outras janelas (lista de tarefas, o Gerenciador de soluções).<br /><br /> Janelas de ferramentas de instância única e várias instâncias devem ser associadas à janela do documento ativo a menos que haja um motivo convincente não para. | *Instância única* |  
 | **Exemplos** | **Editores de texto**, como o editor de códigos<br /><br /> **Superfícies de design**, como o designer de formulários ou uma superfície de modelagem<br /><br /> **Controlar layouts semelhantes a caixas de diálogo**, como o Designer de manifesto | O **Solution Explorer** fornece uma solução e projetos contidos dentro da solução<br /><br /> O **Server Explorer** fornece uma exibição hierárquica de servidores e conexões de dados que o usuário opta por abrir na janela. Abrindo um objeto da hierarquia de banco de dados, como uma consulta, abre uma janela de documento e permite que o usuário editar a consulta.<br /><br /> O **navegador de propriedade** exibe propriedades para o objeto selecionado em uma janela de documento ou outra janela de ferramenta. As propriedades são apresentadas em uma exibição hierárquica de grade ou em controles de caixa de diálogo semelhante complexos e permitir que o usuário definir os valores dessas propriedades. | |  
   
-##  <a name="BKMK_ToolWindows"></a>Janelas de ferramentas  
+##  <a name="BKMK_ToolWindows"></a> Janelas de ferramentas  
   
 ### <a name="overview"></a>Visão geral  
 Janelas de ferramentas oferecem suporte a um trabalho do usuário que ocorre em janelas de documento. Eles podem ser usados para exibir uma hierarquia que representa um objeto raiz fundamental que o Visual Studio fornece e pode manipular.  
@@ -149,7 +147,7 @@ O Gerenciador de soluções e a janela localizar resultados são exemplos de jan
 | Registra ||  
 | Threads ||  
   
-##  <a name="BKMK_DocumentEditorConventions"></a>Convenções de editor do documento  
+##  <a name="BKMK_DocumentEditorConventions"></a> Convenções de editor do documento  
   
 ### <a name="document-interactions"></a>Interações de documento  
 O "documento bem" é o maior espaço dentro do IDE e onde o usuário geralmente concentrou atenção para concluir suas tarefas, assistidas por janelas de ferramentas complementares. Editores de documento representam as unidades fundamentais de trabalho que o usuário é aberta e salva no Visual Studio. Eles mantêm um forte senso de seleção associado ao Gerenciador de soluções ou outras janelas de hierarquia ativo. O usuário deve ser capaz de apontar para uma dessas janelas de hierarquia e saber onde o documento está contido e sua relação para a solução, o projeto ou outro objeto raiz fornecido por um pacote do Visual Studio.  
@@ -257,7 +255,7 @@ Também há vários tipos de editor não que usam o documento também. Embora el
   
 -   Usuários devem ser capazes de interagir com os controles usando o teclado, ativando o editor e percorrer controles ou mnemônico padrão.  
   
-##  <a name="BKMK_Dialogs"></a>Caixas de diálogo  
+##  <a name="BKMK_Dialogs"></a> Caixas de diálogo  
   
 ### <a name="introduction"></a>Introdução  
 Caixas de diálogo no Visual Studio normalmente devem dar suporte a uma unidade discreta de trabalho do usuário e, em seguida, ser descartadas.  
@@ -313,12 +311,12 @@ Considere as diferenças entre esses tipos básicos de caixas de diálogo:
   
 -   [Assistentes](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) são úteis para direcionar o usuário por meio de uma sequência lógica de etapas para a conclusão de uma tarefa. Uma série de opções é oferecida em painéis sequenciais, às vezes, introduzindo diferentes fluxos de trabalho ("branches") dependentes de uma escolha feita no painel anterior.  
   
-####  <a name="BKMK_SimpleDialogs"></a>Caixas de diálogo simples  
+####  <a name="BKMK_SimpleDialogs"></a> Caixas de diálogo simples  
 Uma caixa de diálogo é uma apresentação de controles em uma única janela modal. Esta apresentação pode incluir variações dos padrões de controle complexo, como um seletor de campo. Para caixas de diálogo simples, siga o layout geral padrão, bem como qualquer layout específicas necessárias para agrupamentos de controle complexo.
   
 ![> criar chave de nome forte é um exemplo de uma caixa de diálogo simple no Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-01_createstrongnamekey.png "01_CreateStrongNameKey 0704")<br />Criar chave de nome forte é um exemplo de uma caixa de diálogo simple no Visual Studio.
   
-####  <a name="BKMK_LayeredDialogs"></a>Caixas de diálogo em camadas  
+####  <a name="BKMK_LayeredDialogs"></a> Caixas de diálogo em camadas  
 Caixas de diálogo em camadas incluem guias, painéis e árvores incorporados. Eles são usados para maximizar imóveis quando há vários grupos de controles oferecidos em uma única parte da interface do usuário. Os agrupamentos são colocadas em camadas para que o usuário pode escolher qual o agrupamento para ver a qualquer momento.  
   
 No caso mais simples, o mecanismo para alternar entre agrupamentos é um controle guia. Há várias alternativas disponíveis. Consulte priorizar e camadas de como escolher o estilo mais apropriado.  
@@ -327,7 +325,7 @@ O **ferramentas &gt; opções** caixa de diálogo é um exemplo de uma caixa de 
   
 ![Ferramentas > Opções é um exemplo de uma caixa de diálogo em camadas no Visual Studio. ] (../../extensibility/ux-guidelines/media/0704-02_toolsoptions.png "02_ToolsOptions 0704")<br />Ferramentas > Opções é um exemplo de uma caixa de diálogo em camadas no Visual Studio.
   
-####  <a name="BKMK_Wizards"></a>Assistentes  
+####  <a name="BKMK_Wizards"></a> Assistentes  
 Assistentes são úteis para direcionar o usuário por meio de uma sequência lógica de etapas na conclusão de uma tarefa. Uma série de opções oferecidas nos painéis sequenciais, e o usuário deve continuar em cada etapa antes de prosseguir para a próxima. Depois que os padrões suficientes estiverem disponíveis, o **concluir** botão é habilitado.  
   
  Modais assistentes são usados para tarefas que:  
@@ -408,7 +406,7 @@ Não use as teclas de acesso para **Okey**, **Cancelar**, ou **ajuda** botões. 
 #### <a name="imagery"></a>Imagens  
 Use imagens moderadamente em caixas de diálogo. Não use ícones grandes em caixas de diálogo para usar o espaço. Use imagens somente se eles são uma parte importante de transmitir a mensagem para o usuário, como ícones de aviso ou animações de status.  
   
-###  <a name="BKMK_PrioritizingAndLayering"></a>Priorize e divisão em camadas  
+###  <a name="BKMK_PrioritizingAndLayering"></a> Priorize e divisão em camadas  
   
 #### <a name="prioritizing-your-ui"></a>Priorizando a interface do usuário  
 Talvez seja necessário trazer certos elementos de interface do usuário para o forefront e coloque comportamento mais avançado e as opções (incluindo comandos obscuros) em caixas de diálogo. Coloque funcionalidades mais comumente usadas para o forefront fazer espaço para ele e torná-lo visível por padrão na interface de usuário com um rótulo de texto quando a caixa de diálogo é exibida.  
@@ -423,7 +421,7 @@ Há vantagens e desvantagens de métodos diferentes de dispondo em camadas da in
 | Mecanismo de troca | Vantagens e uso apropriado | Uso inadequado e desvantagens |  
 | --- | --- | --- |  
 | Controle de guia | Agrupar logicamente páginas de diálogo em conjuntos relacionados<br /><br />Útil para menos de cinco (ou o número de guias que cabem em uma linha na caixa de diálogo) páginas de controles relacionados na caixa de diálogo<br /><br />Rótulos de guia devem ser curtos: uma ou duas palavras que podem identificar facilmente o conteúdo<br /><br />Um estilo de caixa de diálogo comuns do sistema<br /><br />Exemplo: **Explorador de arquivos &gt; propriedades de itens** | Pode ser difícil fazer descritivos rótulos curtos<br /><br />Em geral não dimensionado para mais de cinco guias em uma caixa de diálogo<br /><br />Inadequado se você tiver muitos guias para uma linha (use uma técnica alternativa camadas)<br /><br />Não é extensível |  
-| Navegação de barra lateral | Dispositivo de alternância Simple que pode acomodar mais categorias de guias<br /><br />Lista simples de categorias (nenhuma hierarquia)<br /><br />Extensível<br /><br />Exemplo: **personalizar... &gt;Adicione o comando** | Não um bom uso de espaço horizontal se houver menos de três grupos<br /><br />Tarefa pode ser melhor adequada para uma lista suspensa |  
+| Navegação de barra lateral | Dispositivo de alternância Simple que pode acomodar mais categorias de guias<br /><br />Lista simples de categorias (nenhuma hierarquia)<br /><br />Extensível<br /><br />Exemplo: **personalizar... &gt; Adicione o comando** | Não um bom uso de espaço horizontal se houver menos de três grupos<br /><br />Tarefa pode ser melhor adequada para uma lista suspensa |  
 | Controle de árvore | Permite categorias ilimitadas<br /><br />Permite o agrupamento e/ou a hierarquia de categorias<br /><br />Extensível<br /><br />Exemplo: **ferramentas &gt; opções** | Hierarquias aninhadas muito podem causar a rolagem horizontal excessiva<br /><br />O Visual Studio tem um overabundance dos modos de exibição de árvore |  
 | Wizard | Ajuda na conclusão de tarefas por guiar o usuário pelas etapas sequenciais, com base em tarefa: o assistente representa uma tarefa de alto nível e os painéis individuais representam subtarefas necessárias para realizar a tarefa geral<br /><br />Útil quando a tarefa cruza os limites de interface do usuário, como quando o usuário caso contrário, teria que usar vários editores e janelas para concluir a tarefa de ferramentas<br /><br />Útil quando a tarefa requer ramificação<br /><br />Útil quando a tarefa contém dependências entre as etapas<br /><br />Útil quando várias tarefas semelhantes com bifurcação de uma decisão podem ser apresentadas em uma caixa de diálogo para reduzir o número de caixas de diálogo semelhantes diferentes | Apropriado para qualquer tarefa que não requer um fluxo de trabalho sequencial<br /><br />Os usuários podem se tornar sobrecarregado e confundido por um assistente com muitas etapas<br /><br />Assistentes inerentemente limitaram espaço na tela |  
   
@@ -437,7 +435,7 @@ Como alternativa, uma interface de usuário que oferece todos os recursos dispon
 ##### <a name="adaptive-ui"></a>Interface do usuário adaptável  
 Mostrar ou ocultar a interface do usuário com base no uso ou a experiência do usuário automaticamente relatado é outra maneira de apresentar necessária da interface do usuário enquanto oculta a outras partes. Isso não é recomendado no Visual Studio, como os algoritmos para decidir quando mostrar ou ocultar a interface do usuário podem ser complicados e as regras sempre serão incorreta do mesmo conjunto de casos.  
   
-##  <a name="BKMK_Projects"></a>Projetos  
+##  <a name="BKMK_Projects"></a> Projetos  
   
 ### <a name="projects-in-the-solution-explorer"></a>Projetos no Gerenciador de soluções  
 A maioria dos projetos são classificadas como base de referência, com base no diretório ou misto. Todos os três tipos de projetos têm suporte simultaneamente no Gerenciador de soluções. A raiz da experiência do usuário ao trabalhar com projetos ocorre dentro desta janela. Embora nós diferentes de projeto são projetos de tipo de modo misto, diretório ou referência, há um padrão de interação comum que deve ser aplicado como um ponto de partida antes divergentes em padrões do usuário específica do projeto.  
@@ -508,19 +506,19 @@ O usuário deve sempre ser capaz de determinar o efeito de uma operação de arr
 | Nenhum modificador | Ação | Mover | Link |  
 | Nenhum modificador | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original |  
 | Nenhum modificador | Origem | Referência de exclusões para o item original | Retém o item original |  
-| Nenhum modificador | Resultado | `DROPEFFECT_MOVE`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_LINK`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
+| Nenhum modificador | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
 | SHIFT + arrastar | Ação | Mover | Nenhum drop |  
 | SHIFT + arrastar | Destino | Adiciona a referência ao item original | Nenhum drop |  
 | SHIFT + arrastar | Origem | Referência de exclusões para o item original | Nenhum drop |  
-| SHIFT + arrastar | Resultado | `DROPEFFECT_MOVE`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | Nenhum drop |  
+| SHIFT + arrastar | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | Nenhum drop |  
 | CTRL + arrastar | Ação | Copiar | Nenhum drop |  
 | CTRL + arrastar | Destino | Adiciona a referência ao item original | Nenhum drop |  
 | CTRL + arrastar | Origem | Mantém a referência ao item original | Nenhum drop |  
-| CTRL + arrastar | Resultado | `DROPEFFECT_COPY`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | Nenhum drop |  
+| CTRL + arrastar | Resultado | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | Nenhum drop |  
 | Ctrl + Shift + arrastar | Ação | Link | Link |  
 | Ctrl + Shift + arrastar | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original |  
 | Ctrl + Shift + arrastar | Origem | Mantém a referência ao item original | Retém o item original |  
-| Ctrl + Shift + arrastar | Resultado | `DROPEFFECT_LINK`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_LINK`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
+| Ctrl + Shift + arrastar | Resultado | `DROPEFFECT_LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
 | Ctrl + Shift + arrastar | Observação | Mesmo que o comportamento de arrastar e soltar para atalhos no Windows Explorer. ||  
 | Recortar/colar | Ação | Mover | Link |  
 | Recortar/colar | Destino | Adiciona a referência ao item original | Adiciona a referência ao item original |  
@@ -538,15 +536,15 @@ A tabela a seguir resume as operações de arrastar e soltar (bem como Recortar/
 | --- | --- | --- | --- |  
 | Nenhum modificador | Ação | Mover | Mover |  
 | Nenhum modificador | Destino | Item de cópias para local de destino | Item de cópias para local de destino |  
-| Nenhum modificador | Origem | Referência de exclusões para o item original | Referência de exclusões para o item original | | Nenhum modificador | Resultado | `DROPEFFECT_MOVE`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_MOVE`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
+| Nenhum modificador | Origem | Referência de exclusões para o item original | Referência de exclusões para o item original | | Nenhum modificador | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
 | SHIFT + arrastar | Ação | Mover | Mover |  
 | SHIFT + arrastar | Destino | Item de cópias para local de destino | Item de cópias para local de destino |  
 | SHIFT + arrastar | Origem | Referência de exclusões para o item original | Exclui o item do local original |
-| SHIFT + arrastar | Resultado | `DROPEFFECT_MOVE`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_MOVE`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
+| SHIFT + arrastar | Resultado | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
 | CTRL + arrastar | Ação | Copiar | Copiar |  
 | CTRL + arrastar | Destino | Item de cópias para local de destino | Item de cópias para local de destino |  
 | CTRL + arrastar | Origem | Mantém a referência ao item original | Mantém a referência ao item original |  
-| CTRL + arrastar | Resultado | `DROPEFFECT_COPY`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_COPY`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
+| CTRL + arrastar | Resultado | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |  
 | Ctrl + Shift + arrastar | | Nenhum drop | Nenhum drop |  
 | Recortar/colar | Ação | Mover | Mover |  
 | Recortar/colar | Destino | Item de cópias para local de destino | Item de cópias para local de destino |  
@@ -565,19 +563,19 @@ A tabela a seguir resume as operações de arrastar e soltar (bem como Recortar/
 | Nenhum modificador | Ação | Mover | Mover |
 | Nenhum modificador | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |
 | Nenhum modificador | Origem | Referência de exclusões para o item original | Referência de exclusões para o item original |
-| Nenhum modificador | Resultado | `DROPEFFECT_ MOVE`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ MOVE`é retornado como a ação de `::Drop` e o item é excluído do local original no armazenamento |
+| Nenhum modificador | Resultado | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e o item é excluído do local original no armazenamento |
 | SHIFT + arrastar | Ação | Mover | Mover |
 | SHIFT + arrastar | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |
 | SHIFT + arrastar | Origem | Referência de exclusões para o item original | Exclui o item do local original | 
-| SHIFT + arrastar | Resultado | `DROPEFFECT_ MOVE`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ MOVE`é retornado como a ação de `::Drop` e o item é excluído do local original no armazenamento |
+| SHIFT + arrastar | Resultado | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ MOVE` é retornado como a ação de `::Drop` e o item é excluído do local original no armazenamento |
 | CTRL + arrastar | Ação | Copiar | Copiar |
 | CTRL + arrastar | Destino | Adiciona a referência ao item original | Item de cópias para local de destino |
 | CTRL + arrastar | Origem | Mantém a referência ao item original | Retém o item original |
-| CTRL + arrastar | Resultado | `DROPEFFECT_ COPY`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ COPY`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
+| CTRL + arrastar | Resultado | `DROPEFFECT_ COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ COPY` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
 | Ctrl + Shift + arrastar | Ação | Link | Link |
 | Ctrl + Shift + arrastar | Destino | Adiciona a referência ao item original | Adiciona a referência ao item de origem original |
 | Ctrl + Shift + arrastar | Origem | Mantém a referência ao item original | Retém o item original |
-| Ctrl + Shift + arrastar | Resultado | `DROPEFFECT_ LINK`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ LINK`é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
+| Ctrl + Shift + arrastar | Resultado | `DROPEFFECT_ LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento | `DROPEFFECT_ LINK` é retornado como a ação de `::Drop` e item permanece no local original no armazenamento |
 | Recortar/colar | Ação | Mover | Mover |
 | Recortar/colar | Destino | Item de cópias para local de destino | Item de cópias para local de destino |
 | Recortar/colar | Origem | Referência de exclusões para o item original | Exclui o item do local original |

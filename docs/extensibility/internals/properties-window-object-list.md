@@ -2,26 +2,22 @@
 title: Lista de objetos de janela de propriedades | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: feec1e85287b3a1c24ce3c328227ba0455ae044b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b6b7d238f7ce64122ac18a52dab59afb063ce47e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-object-list"></a>Lista de objetos de janela de propriedades
 A lista de objetos no **propriedades** janela é uma lista suspensa que permite que você altere a seleção para outros objetos disponíveis dentro de um ou mais períodos selecionados. Selecionar um objeto diferente de dentro desta lista dispara uma chamada para <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> para informar o ambiente que um novo objeto foi selecionado. As informações exibidas no **propriedades** janela for alterada para mostrar as propriedades associadas ao objeto selecionado recentemente.  

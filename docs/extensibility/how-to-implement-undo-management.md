@@ -2,26 +2,22 @@
 title: 'Como: implementar o gerenciamento de desfazer | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf57b24d81e193294f5ab90f71af07b229ec5839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b01b7b8edf5ebe4b8c3e5277e87f9797860b552f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-undo-management"></a>Como: implementar o gerenciamento de desfazer
 É a principal interface usada para o gerenciamento de desfazer <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, que é implementado pelo ambiente. Para dar suporte ao gerenciamento de desfazer, implementar unidades de desfazer separado (ou seja, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, que pode conter várias etapas individuais.  

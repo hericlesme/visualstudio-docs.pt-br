@@ -1,29 +1,25 @@
 ---
-title: "Função SccQueryInfo | Microsoft Docs"
-ms.custom: 
+title: Função SccQueryInfo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bda59c3bf674354e38fa306abe1fbb673f40e19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e2838709d7c2c2ad6e6b1eeef36c2cc0018a1a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccqueryinfo-function"></a>Função SccQueryInfo
 Esta função obtém as informações de status para um conjunto de arquivos selecionados no controle de origem.  
@@ -69,11 +65,11 @@ SCCRTN SccQueryInfo(
   
  Ao usar essa função para check-out de arquivos, observe o seguinte `MSSCCI` requisitos de status:  
   
--   `SCC_STATUS_OUTBYUSER`é definido quando o usuário atual fez check-out do arquivo.  
+-   `SCC_STATUS_OUTBYUSER` é definido quando o usuário atual fez check-out do arquivo.  
   
--   `SCC_STATUS_CHECKEDOUT`não é possível definir a menos que `SCC_STATUS_OUTBYUSER` está definido.  
+-   `SCC_STATUS_CHECKEDOUT` não é possível definir a menos que `SCC_STATUS_OUTBYUSER` está definido.  
   
--   `SCC_STATUS_CHECKEDOUT`só é definido quando o arquivo é extraído no diretório de trabalho designado.  
+-   `SCC_STATUS_CHECKEDOUT` só é definido quando o arquivo é extraído no diretório de trabalho designado.  
   
 -   Se o arquivo está com check-out pelo usuário atual em um diretório que não seja o diretório de trabalho, `SCC_STATUS_OUTBYUSER` está definida, mas `SCC_STATUS_CHECKEDOUT` não é.  
   

@@ -1,26 +1,24 @@
 ---
-title: "Suporte para a barra de navegação em um serviço de linguagem herdado | Microsoft Docs"
-ms.custom: 
+title: Suporte para a barra de navegação em um serviço de linguagem herdado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d4dd17f3bb1bd50a97b24b42cf40edc27bf51db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Suporte para a barra de navegação em um serviço de linguagem herdado
 Barra de navegação na parte superior do editor de modo de exibição exibe os tipos e membros no arquivo. Tipos são mostrados no menu suspenso à esquerda e os membros são mostrados no canto direito lista suspensa. Quando o usuário seleciona um tipo, o cursor é colocado na primeira linha do tipo. Quando o usuário seleciona um membro, o cursor é colocado na definição do membro. As caixas de lista suspensa são atualizadas para refletir o local atual do cursor.  

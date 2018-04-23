@@ -1,27 +1,25 @@
 ---
-title: "Mecanismo de depuração de criar um personalizado | Microsoft Docs"
-ms.custom: 
+title: Mecanismo de depuração de criar um personalizado | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
 - debug engines, custom
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0edee6528919cfe28c542be850b9a104188ce403
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 66ec73a13a3494ae6642e6d0f7397c9f3c1f0b0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-custom-debug-engine"></a>Criando um mecanismo de depuração personalizado
 Um mecanismo de depuração (DE) é um componente que permite a depuração de arquiteturas de tempo de execução específicas. Normalmente, há apenas uma implementação DE por ambiente de tempo de execução.  

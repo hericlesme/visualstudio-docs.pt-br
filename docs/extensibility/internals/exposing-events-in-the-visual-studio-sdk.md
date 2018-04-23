@@ -1,29 +1,27 @@
 ---
-title: "Expõe eventos no Visual Studio SDK | Microsoft Docs"
-ms.custom: 
+title: Expõe eventos no Visual Studio SDK | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 74a9ff54d14b6212d0fc484acd2bd25fad18bb87
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 02ddcf0c2321f6f4c07170117c6474b993c340f4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Expõe eventos no Visual Studio SDK
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]permite que você da fonte de eventos por meio de automação. É recomendável que você os eventos de projetos e itens de projeto de origem.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite que você da fonte de eventos por meio de automação. É recomendável que você os eventos de projetos e itens de projeto de origem.  
   
  Eventos são recuperados pelos consumidores de automação do <xref:EnvDTE.DTEClass.Events%2A> objeto ou <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). O ambiente chama `IDispatch::Invoke` usando o `DISPATCH_METHOD` ou `DISPATCH_PROPERTYGET` sinalizadores para retornar um evento.  
   

@@ -2,28 +2,24 @@
 title: Função SccAddFromScc | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce2d9d179fd46bcc63340c911437486e1a459195
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccaddfromscc-function"></a>Função SccAddFromScc
 Esta função permite que o usuário procurar arquivos que já estão no sistema de controle de origem e depois fazer parte desses arquivos do projeto atual. Por exemplo, essa função pode obter um arquivo de cabeçalho comuns para o projeto atual sem copiar o arquivo. A matriz de retorno de arquivos, `lplpFileNames`, contém a lista de arquivos que o usuário deseja adicionar ao projeto do IDE.  
@@ -66,9 +62,9 @@ SCCRTN SccAddFromScc (
   
  Quando a chamada para o `SccAddFromScc` função retornar, o plug-in tem valores atribuídos para `lpnFiles` e `lplpFileNames`, alocação de memória para a matriz de nome de arquivo conforme necessário (Observe que essa alocação substitui o ponteiro em `lplpFileNames`). O plug-in de controle de origem é responsável por colocar todos os arquivos no diretório do usuário ou na pasta designação especificado. O IDE, em seguida, adiciona os arquivos para o projeto do IDE.  
   
- Por fim, o IDE chama esta função uma segunda vez, passando `NULL` para `lpnFiles`. Isso é interpretado como um sinal especial pelo controle de origem de plug-in para liberar a memória alocada para a matriz de nome de arquivo em`lplpFileNames``.`  
+ Por fim, o IDE chama esta função uma segunda vez, passando `NULL` para `lpnFiles`. Isso é interpretado como um sinal especial pelo controle de origem de plug-in para liberar a memória alocada para a matriz de nome de arquivo em `lplpFileNames``.`  
   
- `lplpFileNames`é um `char ***` ponteiro. O plug-in de controle de origem coloca um ponteiro para uma matriz de ponteiros para os nomes de arquivo, passando a lista, portanto, o modo padrão para esta API.  
+ `lplpFileNames` é um `char ***` ponteiro. O plug-in de controle de origem coloca um ponteiro para uma matriz de ponteiros para os nomes de arquivo, passando a lista, portanto, o modo padrão para esta API.  
   
 > [!NOTE]
 >  Versões iniciais da API VSSCI não forneceu um modo para indicar o projeto de destino para os arquivos adicionados. Para acomodar isso, a semântica do `lplpFIleNames` parâmetro foram aprimoradas para torná-lo um parâmetro de entrada/saída, em vez de um parâmetro de saída. Se apenas um único arquivo for especificado, ou seja, o valor apontado por `lpnFiles` = 1, então o primeiro elemento da `lplpFileNames` contém a pasta de destino. Para usar essa nova semântica, as chamadas IDE o `SccSetOption` funcionar com o `nOption`parâmetro definido como `SCC_OPT_SHARESUBPROJ`. Se um plug-in de controle de origem não oferece suporte a semântica, ele retorna `SCC_E_OPTNOTSUPPORTED`. Fazer assim desabilita o uso do **adicionar do controle de origem** recurso. Se um plug-in oferece suporte ao **adicionar do controle de origem** recurso (`SCC_CAP_ADDFROMSCC`), ele deve oferecer suporte a nova semântica e retornar `SCC_I_SHARESUBPROJOK`.  

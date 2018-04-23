@@ -1,12 +1,10 @@
 ---
 title: Acesso global a objetos em projetos do Office | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bdfc9b62e6dc94560693c072526e1f2989ddec15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
   Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma classe denominada `Globals` no projeto. Você pode usar o `Globals` classe para acessar vários itens de projeto diferente em tempo de execução de qualquer código no projeto.  
@@ -46,9 +45,9 @@ ms.lasthandoff: 01/10/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="how-to-use-the-globals-class"></a>Como usar a classe Globals  
- `Globals`é uma classe estática que mantém referências a determinados itens em seu projeto. Usando o `Globals` classe, você pode acessar os seguintes itens de qualquer código no projeto em tempo de execução:  
+ `Globals` é uma classe estática que mantém referências a determinados itens em seu projeto. Usando o `Globals` classe, você pode acessar os seguintes itens de qualquer código no projeto em tempo de execução:  
   
--   O `ThisWorkbook` e `Sheet`  *n*  classes em um projeto de modelo ou pasta de trabalho do Excel. Você pode acessar esses objetos usando o `Globals.ThisWorkbook` e `Sheet`  *n*  propriedades.  
+-   O `ThisWorkbook` e `Sheet` *n* classes em um projeto de modelo ou pasta de trabalho do Excel. Você pode acessar esses objetos usando o `Globals.ThisWorkbook` e `Sheet` *n* propriedades.  
   
 -   O `ThisDocument` classe em um projeto de modelo ou documento do Word. Você pode acessar esse objeto usando o `Globals.ThisDocument` propriedade.  
   

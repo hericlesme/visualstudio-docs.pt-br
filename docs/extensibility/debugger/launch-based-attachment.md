@@ -1,26 +1,24 @@
 ---
 title: Anexo com base em Iniciar | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - debug engines, attaching to programs
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d05f0b8d8fd0190391da831351b65d873eac4efc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 892518cc92286f9415e39c96b6ed2afa8eb0d792
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="launch-based-attachment"></a>Anexo de lançamento
 Anexo com base em Iniciar em um programa é automático. Quando o processo que hospeda o programa é iniciado pelo SDM, anexo de inicialização segue um caminho semelhante a que o método de anexo manual. Para obter informações, consulte [anexando ao programa](../../extensibility/debugger/attaching-to-the-program.md).  

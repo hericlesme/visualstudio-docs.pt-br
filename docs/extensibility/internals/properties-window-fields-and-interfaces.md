@@ -2,26 +2,22 @@
 title: Campos de janela de propriedades e Interfaces | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a286d8cc782305b746789f56af431d7a62f8e2fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces e os campos da janela de propriedades
 O modelo de seleção determinar quais informações são exibidas no **propriedades** janela baseia-se na janela que tem o foco no IDE. Cada janela e objeto dentro da janela selecionada, podem ter seu objeto de contexto de seleção enviada por push para o contexto da seleção global. O ambiente atualiza o contexto da seleção global com valores de um quadro de janela quando essa janela tem o foco. Quando o foco for alterado, portanto não o contexto da seleção.  
@@ -49,7 +45,7 @@ O modelo de seleção determinar quais informações são exibidas no **propried
   
  Por fim, a parte inferior da **propriedades** janela também contém uma descrição do campo selecionado no **propriedades** grade da janela. Para obter mais informações, consulte [obter descrições dos campos na janela de propriedades](#getting-field-descriptions-from-the-properties-window).  
   
-## <a name="updating-property-values-in-the-properties-window"></a>Atualizando valores de propriedade na janela Propriedades
+## <a name="updating-property-values-in-the-properties-window"></a> Atualizando valores de propriedade na janela Propriedades
 Há duas maneiras para manter o **propriedades** janela em sincronia com as alterações de valor de propriedade. A primeira é para chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface, que fornece acesso à funcionalidade básica de janelas, incluindo o acesso e criação de janelas de ferramenta e documento fornecidos pelo ambiente de. As etapas a seguir descrevem esse processo de sincronização.  
   
 ### <a name="updating-property-values-using-ivsuishell"></a>Atualizando valores de propriedade usando IVsUIShell  
@@ -67,7 +63,7 @@ Há duas maneiras para manter o **propriedades** janela em sincronia com as alte
   
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Considerações na implementação da interface IConnection  
   
-1.  `IConnection`fornece acesso a um objeto de enumerador subdiretório com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface. Ele também fornece acesso a conexão ponto sub objetos, cada um dos que implementa o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface.  
+1.  `IConnection` fornece acesso a um objeto de enumerador subdiretório com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface. Ele também fornece acesso a conexão ponto sub objetos, cada um dos que implementa o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface.  
   
 2.  Qualquer objeto de procura é responsável por implementar um <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> eventos. O **propriedades** janela informará para o conjunto de eventos por meio de `IConnection`.  
   
@@ -75,9 +71,9 @@ Há duas maneiras para manter o **propriedades** janela em sincronia com as alte
   
 4.  Um cliente pode chamar o `IConnection` interface para obter acesso a um objeto de enumerador subdiretório com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface. O <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface poderá então ser chamada para enumerar os pontos de conexão para cada interface IID (ID) de saída.  
   
-5.  `IConnection`também pode ser chamado para obter acesso a objetos de subdiretório de ponto de conexão com o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para cada saída IID. Por meio de <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface, um cliente inicia ou Finaliza um loop de consultoria com o objeto conectável e a sincronização do cliente. O cliente também pode chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para obter um objeto de enumerador com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interface para enumerar as conexões que ele conhece.  
+5.  `IConnection` também pode ser chamado para obter acesso a objetos de subdiretório de ponto de conexão com o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para cada saída IID. Por meio de <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface, um cliente inicia ou Finaliza um loop de consultoria com o objeto conectável e a sincronização do cliente. O cliente também pode chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para obter um objeto de enumerador com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interface para enumerar as conexões que ele conhece.  
   
-## <a name="getting-field-descriptions-from-the-properties-window"></a>Obter descrições dos campos na janela de propriedades
+## <a name="getting-field-descriptions-from-the-properties-window"></a> Obter descrições dos campos na janela de propriedades
 Na parte inferior do **propriedades** janela, uma área de descrição exibe informações relacionadas ao campo de propriedade selecionada. Esse recurso é ativado por padrão. Se você deseja ocultar o campo de descrição, com o botão direito do **propriedades** janela e clique em **descrição**. Isso também remove a marca de seleção ao lado de **descrição** título na janela do menu. Você pode exibir o campo novamente, seguindo as mesmas etapas para alternar **descrição** novamente.  
   
  As informações no campo de descrição vêm de <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Cada método, interface, coclass e assim por diante podem ter um não localizado `helpstring` atributo na biblioteca de tipos. O **propriedades** janela recupera a cadeia de caracteres de <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>.  

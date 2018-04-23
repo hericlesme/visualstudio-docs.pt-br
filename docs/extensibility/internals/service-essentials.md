@@ -2,33 +2,29 @@
 title: Conceitos básicos do serviço | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a9858109c9fe0d8af0d00621b717417a0c0e53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="service-essentials"></a>Informações gerais de serviço
-Um serviço é um contrato entre dois VSPackages. Um VSPackage fornece um conjunto específico de interfaces para outro VSPackage consumir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]é uma coleção de VSPackages que fornece serviços a outros VSPackages.  
+Um serviço é um contrato entre dois VSPackages. Um VSPackage fornece um conjunto específico de interfaces para outro VSPackage consumir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é uma coleção de VSPackages que fornece serviços a outros VSPackages.  
   
  Por exemplo, você pode usar o serviço de SVsActivityLog para obter uma interface IVsActivityLog, que você pode usar para gravar no log de atividade. Para obter mais informações, consulte [como: usar o Log de atividades](../../extensibility/how-to-use-the-activity-log.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]também fornece alguns serviços internos que não estão registrados. VSPackages pode substituir internos ou outros serviços, fornecendo uma substituição de serviço. É permitida somente um serviço de substituição para qualquer serviço.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] também fornece alguns serviços internos que não estão registrados. VSPackages pode substituir internos ou outros serviços, fornecendo uma substituição de serviço. É permitida somente um serviço de substituição para qualquer serviço.  
   
  Os serviços não têm nenhuma capacidade de descoberta. Portanto, você deve saber o identificador de serviço (SID) de um serviço que você deseja consumir e você deve saber quais interfaces que ele fornece. A documentação de referência para o serviço fornece essas informações.  
   
@@ -70,7 +66,7 @@ Um serviço é um contrato entre dois VSPackages. Um VSPackage fornece um conjun
   
 Você pode obter a maioria dos serviços do Visual Studio chamando estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método.  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>se baseia em um serviço em cache o provedor que é inicializado na primeira vez que qualquer VSPackage derivado do pacote é localizado. Você deve garantir que essa condição for atendida, ou então ser preparada para um serviço nulo.  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> se baseia em um serviço em cache o provedor que é inicializado na primeira vez que qualquer VSPackage derivado do pacote é localizado. Você deve garantir que essa condição for atendida, ou então ser preparada para um serviço nulo.  
   
 Felizmente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> funciona corretamente na maioria das vezes.  
   

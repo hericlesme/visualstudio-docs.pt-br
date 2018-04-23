@@ -1,27 +1,23 @@
 ---
 title: 'Passo a passo: Criando um glifo de margem | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc813ed3c29c2fe0a4cac1c348ffed18ae8fd2d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 811985ef45fb43b08b771f2bc417a512c290726c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Passo a passo: Criando um glifo de margem
 Você pode personalizar a aparência das margens do editor usando extensões de editor personalizado. Este passo a passo coloca um glifo personalizado na margem do indicador, sempre que a palavra "todo" é exibida em um comentário do código.  
@@ -59,7 +55,7 @@ Você pode personalizar a aparência das margens do editor usando extensões de 
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]  
   
-5.  Implementar `GenerateGlyph` definindo o elemento de interface do usuário do usuário de glifo. `TodoTag`é definido mais adiante neste passo a passo.  
+5.  Implementar `GenerateGlyph` definindo o elemento de interface do usuário do usuário de glifo. `TodoTag` é definido mais adiante neste passo a passo.  
   
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]  

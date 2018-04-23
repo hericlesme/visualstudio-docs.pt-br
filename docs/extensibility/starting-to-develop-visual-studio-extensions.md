@@ -1,26 +1,24 @@
 ---
-title: "Começando a desenvolver extensões do Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Começando a desenvolver extensões do Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 09/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 44403b5d60fc13666ffc6ec00558b80ef3a50ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Começando a desenvolver extensões do Visual Studio
 Se você nunca escreveu uma extensão do Visual Studio antes, você provavelmente terá algumas perguntas. São listados algumas das mais comuns aqui. Se você não vir as informações que você está procurando, use os botões de comentários (**esta página foi útil?** na parte inferior da tela) para solicitar que você deseja.  
@@ -60,7 +58,7 @@ Se você nunca escreveu uma extensão do Visual Studio antes, você provavelment
   
 -   [Shell isolado do Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
   
-##  <a name="BKMK_ProjectTemplate"></a>Quais modelos de projeto são fornecidos pelo VSSDK?  
+##  <a name="BKMK_ProjectTemplate"></a> Quais modelos de projeto são fornecidos pelo VSSDK?  
  Os dois tipos principais de extensões são extensões VSPackages e MEF. Em geral, VSPackage extensões são usadas para extensões de usarem ou estendem a comandos, janelas de ferramentas e projetos. Extensões MEF são usadas para estender ou personalizar o editor do Visual Studio.  
   
  Para extensões do Visual c# e Visual Basic, o VSSDK fornece um modelo de projeto VSIX vazio que pode ser usado junto com os novos modelos de item que criam comandos de menu, janelas de ferramentas e extensões do editor. Você também pode usar este modelo para modelos de projeto de pacote, trechos de código e outros artefatos para distribuição a outros usuários.  

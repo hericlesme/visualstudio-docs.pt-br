@@ -1,28 +1,24 @@
 ---
-title: "Notificações e o andamento para o Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Notificações e o andamento para o Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 237ed5c382a6ac880b0be59165a33ad338370976
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificações e o andamento para o Visual Studio
-##  <a name="BKMK_NotificationSystems"></a>Sistemas de notificação  
+##  <a name="BKMK_NotificationSystems"></a> Sistemas de notificação  
   
 ### <a name="overview"></a>Visão geral  
  Há várias maneiras para informar ao usuário que está acontecendo no Visual Studio sobre suas tarefas de desenvolvimento de software.  
@@ -61,14 +57,14 @@ ms.lasthandoff: 02/01/2018
   
 ### <a name="notification-methods"></a>Métodos de notificação  
   
-####  <a name="BKMK_ModalErrorMessageDialogs"></a>Caixas de diálogo de mensagem de erro modal  
+####  <a name="BKMK_ModalErrorMessageDialogs"></a> Caixas de diálogo de mensagem de erro modal  
  Uma caixa de diálogo de mensagem de erro modal é usada para exibir uma mensagem de erro que exige confirmação ou a ação do usuário.  
   
  ![Mensagem de erro modal](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "01_ModalErrorMessage 0901")  
   
  **Uma caixa de diálogo de mensagem de erro modal alertar o usuário de uma cadeia de caracteres de conexão inválido para um banco de dados**  
   
-####  <a name="BKMK_IDEStatusBar"></a>Barra de status IDE  
+####  <a name="BKMK_IDEStatusBar"></a> Barra de status IDE  
  A probabilidade de que os usuários Observe o texto da barra de status correlaciona experiência geral e experiência específica com a plataforma Windows. A base de clientes do Visual Studio tende a ser experientes em ambas as áreas, embora bem até mesmo usuários do Windows poderá perder as alterações na barra de status. Portanto, a barra de status é usada apenas para fins informativos ou como uma indicação de redundância melhor para as informações apresentadas em outro lugar. Qualquer tipo de informações importantes que o usuário deve resolver imediatamente deve ser fornecido em uma caixa de diálogo ou na janela da ferramenta de notificações.  
   
  A barra de status do Visual Studio foi projetada para permitir vários tipos de informação a ser exibida. Ele é dividido em regiões para comentários, designer, barra de progresso, animação e cliente.  
@@ -81,24 +77,24 @@ ms.lasthandoff: 02/01/2018
   
  **Cores da barra de status IDE**  
   
-####  <a name="BKMK_EmbeddedInfobar"></a>Barra de informações inserida  
+####  <a name="BKMK_EmbeddedInfobar"></a> Barra de informações inserida  
  Uma barra de informações pode ser usada na parte superior de uma janela de documento ou janela de ferramenta para informar o usuário de um estado ou uma condição. Ele também pode oferecer comandos para que o usuário pode ter uma maneira fácil agir. Na barra de informações é um controle de shell padrão. Evite criar seus próprios, que atuará e exibida inconsistente com outras pessoas no IDE. Consulte [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) para obter detalhes de implementação e orientações de uso.  
   
  ![Incorporado a barra de informações](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "03_EmbeddedInfobar 0901")  
   
  **Uma barra de informações é inserido em uma janela de documento, alertar o usuário que é o IDE no modo de depuração histórico e o editor não responderá da mesma maneira como faz no modo de depuração padrão.**  
   
-####  <a name="BKMK_MouseCursorChanges"></a>Alterações de cursor do mouse  
+####  <a name="BKMK_MouseCursorChanges"></a> Alterações de cursor do mouse  
  Ao alterar o cursor do mouse, use cores que são associadas ao serviço VSColor e já estão associados com o cursor. Alterações de cursor podem ser usadas para indicar uma operação em andamento, bem como regiões em que o usuário está focalizando um destino que pode ser arrastado, solta ou usado para selecionar um objeto de ocorrências.  
   
  Use o cursor do mouse ocupado/espera somente quando o tempo de CPU disponível todo deve ser reservado para uma operação, impedindo que o usuário expressar qualquer entrada adicional. Na maioria dos casos com aplicativos bem escritos usando multithreading, quando os usuários são impedidos de executar outras operações de vezes devem ser raros.  
   
  Tenha em mente que o cursor muda é úteis como uma indicação de redundância para as informações apresentadas em outro lugar. Não confie em uma alteração de cursor como a única maneira de se comunicar com o usuário, especialmente ao tentar transmitir algo que é essencial que o usuário deve resolver.  
   
-####  <a name="BKMK_NotSysProgressIndicators"></a>Indicadores de progresso  
+####  <a name="BKMK_NotSysProgressIndicators"></a> Indicadores de progresso  
  Indicadores de progresso são importantes para apresentar os comentários do usuário durante os processos que levam mais de alguns segundos para concluir. Indicadores de progresso podem ser mostradas no local (perto o ponto de partida da ação em andamento), em uma barra de status incorporada em uma caixa de diálogo modal ou na barra de status do Visual Studio. Siga as orientações em [indicadores de progresso](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) sobre seu uso e a implementação.  
   
-####  <a name="BKMK_VSNotificationsToolWindow"></a>Janela do Visual Studio notificações  
+####  <a name="BKMK_VSNotificationsToolWindow"></a> Janela do Visual Studio notificações  
  A janela de notificações do Visual Studio notifica os desenvolvedores sobre licenciamento, ambiente (Visual Studio), extensões e atualizações. Os usuários podem descartar notificações individuais ou podem optar por ignorar certos tipos de notificações. A lista de notificações ignoradas é gerenciada em um **Ferramentas > Opções** página.  
   
  A janela de notificações não é atualmente extensível.  
@@ -107,33 +103,33 @@ ms.lasthandoff: 02/01/2018
   
  **Janela de ferramentas do Visual Studio notificações**  
   
-####  <a name="BKMK_ErrorList"></a>Lista de erros  
+####  <a name="BKMK_ErrorList"></a> Lista de erros  
  Uma notificação dentro da lista de erro indicar erros e avisos que ocorreram durante a compilação e ou processo de compilação e permite que o usuário navegue em código para esse erro de código específico.  
   
  ![Lista de erros](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "08_ErrorList 0901")  
   
  **Lista de erros no Visual Studio**  
   
-####  <a name="BKMK_EmbeddedStatusBars"></a>Barras de status inserido  
+####  <a name="BKMK_EmbeddedStatusBars"></a> Barras de status inserido  
  Como a barra de status do IDE é dinâmica, com seu contexto de região de cliente definido para a janela do documento ativo e informações de atualização no contexto do usuário e/ou respostas de sistema, é difícil a manter uma exibição contínua das informações de status em longo prazo processos assíncronos. Por exemplo, a barra de status do IDE não é apropriada para notificações de resultados de execução de teste para várias execuções de e/ou seleção de item podem ser acionados imediatamente. É importante manter essas informações de status no contexto da janela do documento ou uma ferramenta onde o usuário faz uma seleção ou inicia um processo.  
   
  ![Barra de status incorporada](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "09_EmbeddedStatusBar 0901")  
   
  **Barra de status incorporada no Visual Studio**  
   
-####  <a name="BKMK_WindowsTray"></a>Notificações de bandeja do Windows  
+####  <a name="BKMK_WindowsTray"></a> Notificações de bandeja do Windows  
  Do Windows na área de notificação está ao lado do sistema de relógio na barra de tarefas do Windows. Muitos utilitários e componentes de software fornecem ícones nessa área para que o usuário pode obter um menu de contexto para tarefas de todo o sistema, como alterar a resolução da tela ou obter atualizações de software.  
   
  Notificações de nível de ambiente devem ser apresentadas no hub de notificações do Visual Studio, e não a área de notificação do Windows.  
   
-####  <a name="BKMK_NotificationBubbles"></a>Bolhas de notificação  
+####  <a name="BKMK_NotificationBubbles"></a> Bolhas de notificação  
  Bolhas de notificação podem aparecer como informativo em um editor/designer ou como parte da área de notificação do Windows. O usuário considera esses bolhas problemas que possam resolver mais tarde, que é um benefício para notificações críticas. Bolhas são inadequadas para obter informações importantes que o usuário deve resolver imediatamente. Se você usar bolhas de notificação no Visual Studio, siga o [orientação de área de trabalho do Windows para bolhas de notificação](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
  ![Balão de notificação](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "07_NotificationBubbles 0901")  
   
  **Balão de notificação na área de notificação do Windows usada para o Visual Studio**  
   
-##  <a name="BKMK_ProgressIndicators"></a>Indicadores de progresso  
+##  <a name="BKMK_ProgressIndicators"></a> Indicadores de progresso  
   
 ### <a name="overview"></a>Visão geral  
  Indicadores de progresso são uma parte importante de um sistema de notificação para apresentar os comentários do usuário. Eles informam o usuário quando processos e as operações serão concluídas. Tipos de indicador familiar incluem barras de progresso, girando cursores e ícones animados. O tipo e o posicionamento de um indicador de andamento depende do contexto, incluindo o que está sendo relatado e quanto tempo o processo ou operação levará para completar.  
@@ -287,7 +283,7 @@ ms.lasthandoff: 02/01/2018
   
  **Janela de saída com o status do processo contínuo e aguarde de mensagens**  
   
-##  <a name="BKMK_Infobars"></a>Infobars  
+##  <a name="BKMK_Infobars"></a> Infobars  
   
 ### <a name="overview"></a>Visão geral  
  Infobars dar ao usuário um indicador perto de seu ponto de atenção e usando o controle de barra de informações compartilhadas garante a consistência em aparência e interação.  
@@ -476,13 +472,13 @@ public interface IVsInfoBarUIEvents
   
 ```  
   
-##  <a name="BKMK_ErrorValidation"></a>Validação de erro  
+##  <a name="BKMK_ErrorValidation"></a> Validação de erro  
  Quando um usuário insere informações que não é aceitáveis, como quando um campo obrigatório é ignorado, ou quando dados são inseridos no formato incorreto, é melhor usar a validação de controle ou comentários perto o controle em vez de usar uma caixa de diálogo de erro pop-up bloqueio.  
   
 ### <a name="field-validation"></a>Validação de campo  
  Validação de formulário e o campo consiste em três componentes: um controle, um ícone e uma dica de ferramenta. Embora vários tipos de controles podem usar isso, uma caixa de texto será usada como um exemplo.  
   
- ![Validação de campo &#40; em branco &#41; ] (../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
+ ![Validação de campo &#40;em branco&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
   
  Se o campo é obrigatório, deve haver marca d'água de texto que informando  **\<necessário >** e o plano de fundo do campo deve ser clara amarelo (VSColor: `Environment.ControlEditRequiredBackground`) e o primeiro plano deve ser cinza (VSColor: `Environment.ControlEditRequiredHintText`):  
   
@@ -515,7 +511,7 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>Texto de aviso no local  
  Quando houver espaço disponível para colocar a mensagem de erro próximo controle em um estado de erro, isso é preferível a usar a dica de ferramenta autônoma.  
   
- ![No &#45; aviso de local](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
+ ![Em&#45;colocar aviso](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
   
  **Texto de aviso no local**  
   

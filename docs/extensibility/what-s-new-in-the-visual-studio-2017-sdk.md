@@ -1,25 +1,23 @@
 ---
-title: O que &#39; s no SDK do Visual Studio 2017 | Microsoft Docs
-ms.custom: 
+title: O que&#39;novo no SDK do Visual Studio 2017 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f6b27e60f1cc47b236ed2d3516313537a6121be5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: abc1f12a5a6c7368bc47e8f4e924d109dcf87f57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>O que &#39; s no SDK do Visual Studio de 2017
+# <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>O que&#39;novo no SDK do Visual Studio de 2017
 
 O Visual Studio SDK tem os seguintes recursos novos e atualizados para 2017 do Visual Studio.
 

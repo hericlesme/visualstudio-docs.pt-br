@@ -1,12 +1,10 @@
 ---
 title: Estendendo o sistema de projeto do SharePoint | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e79808ef9d5d4712d67426b202046615c8ab14b2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2a76a56eccb1d65e8b64b691d0da29e8b9d30637
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-sharepoint-project-system"></a>Estendendo o sistema de projeto do SharePoint
   Você pode criar soluções do SharePoint usando um conjunto de modelos de projeto e modelos de item no Visual Studio. Esses modelos atendem aos requisitos de vários cenários de desenvolvimento, mas você pode descobrir alguns casos em que eles não fornecem funcionalidade necessária. Nesses casos, você pode estender o sistema de projeto do SharePoint.  

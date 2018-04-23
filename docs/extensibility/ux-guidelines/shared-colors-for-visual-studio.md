@@ -1,23 +1,21 @@
 ---
 title: Compartilhado cores para o Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9093eef6166c86eb6e1ffdf602b4fb75841834d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-colors-for-visual-studio"></a>Cores de compartilhado para o Visual Studio
 Quando você estiver criando uma interface do usuário que usa os elementos comuns de shell do Visual Studio, ou você deseja que o elemento de interface para ser consistente com recursos semelhantes, use nomes de token existentes nos arquivos de definição de pacote para escolher e atribuir cores. Isso garante que a interface do usuário permanece consistente com o ambiente geral do Visual Studio e que atualiza automaticamente quando os temas são adicionados ou atualizados.  
@@ -858,7 +856,7 @@ Menu suspenso de caixa pesquisa tem o potencial de ser um pouco mais complexo do
 | Plano de fundo de link | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Marcas de gradiente para este token não é usado na interface do usuário com tema.) |
 | Em primeiro plano (texto do Link) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a>Modos de exibição de árvore  
+###  <a name="BKMK_TreeView"></a> Modos de exibição de árvore  
 Várias janelas de ferramentas, incluindo o Gerenciador de soluções, Gerenciador de servidores e modo de exibição de classe, implementam um esquema de organização hierárquico cujas cores são controlados por nomes de cor no `TreeView` categoria. Todos os itens em uma exibição de árvore têm cores de plano de fundo e texto. Itens que têm aninhada elementos filho também possuem glifos que indicam se o item é expandido ou recolhido.  
 
 ![Exibição de árvore (corte de funcionários)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Exibição de árvore (corte de funcionários)
@@ -1041,7 +1039,7 @@ O Designer de manifesto foi projetado como uma maneira de tornar mais fácil edi
 
 ## <a name="command-structures"></a>Estruturas de comando  
 
-###  <a name="BKMK_CommandMenus"></a>Menus  
+###  <a name="BKMK_CommandMenus"></a> Menus  
 Menus podem ocorrer em vários locais dentro do Visual Studio: barra de menu principal, inserida no documento ou a ferramenta windows ou no botão direito do mouse em vários locais em todo o IDE. Implementações de menus associados com outros elementos de interface do usuário são discutidas na seção do elemento do respectivos. Você sempre deve usar a implementação de menu padrão fornecida pelo ambiente do Visual Studio. No entanto, em alguns casos raros talvez você não tenha acesso para os menus padrão do Visual Studio. Nessas situações, use os seguintes nomes de token para garantir que a interface do usuário é consistente com outros menus no Visual Studio.  
 
 ![Menu do Visual Studio (corte de funcionários)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Menu do Visual Studio (corte de funcionários)
@@ -1282,7 +1280,7 @@ Um grupo de barra de comando consiste em um conjunto relacionado de controles da
 | Em primeiro plano (texto) | `Environment.CommandBarTextInactive` |
 | Borda | N/D |
 
-####  <a name="BKMK_CommandComboBox"></a>Caixas de combinação de barra de comando
+####  <a name="BKMK_CommandComboBox"></a> Caixas de combinação de barra de comando
 
 > [!IMPORTANT]
 > Caixas de combinação são semelhantes às listas suspensas, mas incluam uma região de texto editável. Se a lista suspensa não incluir um texto editável região, use os tokens de cor para [listas suspensas de barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
@@ -1307,7 +1305,7 @@ Um grupo de barra de comando consiste em um conjunto relacionado de controles da
 
 **Botão de lista suspensa da barra de comandos: padrão de estado**  
 
-![Combinação caixa drop &#45; para baixo botão](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Botão de lista suspensa da barra de comandos
+![Descarte de caixa de combinação&#45;para baixo do botão](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Botão de lista suspensa da barra de comandos
 
 | Elemento | Nome do token: Category.color |
 | --- | --- |
@@ -1414,7 +1412,7 @@ Um grupo de barra de comando consiste em um conjunto relacionado de controles da
 | Informações preliminares | Nenhum |
 | Em primeiro plano (glifo) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a>Comando barra listas suspensas
+####  <a name="BKMK_CommandDropDown"></a> Comando barra listas suspensas
 
 > [!IMPORTANT]
 >  Listas suspensas são semelhantes às caixas de combinação, mas não têm regiões de texto editável. Se a lista suspensa inclui uma área de texto editável, use os tokens de cor para [caixas de combinação da barra de comando](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
@@ -1489,7 +1487,7 @@ Um grupo de barra de comando consiste em um conjunto relacionado de controles da
 
  **Campo de seleção de lista suspensa de barra de comando: pressionado estado**  
 
-![Remover &#45; para o campo de seleção pressionado](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Pressionado comando barra campo seleção suspensa
+![Descartar&#45;para baixo do campo de seleção pressionado](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Pressionado comando barra campo seleção suspensa
 
 | Elemento | Nome do token: Category.color |
 | --- | --- |

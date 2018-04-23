@@ -1,26 +1,24 @@
 ---
-title: "Registro e seleção (VSPackage de controle do código-fonte) | Microsoft Docs"
-ms.custom: 
+title: Registro e seleção (VSPackage de controle do código-fonte) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1d7bcdb8f930430ac00335777e2c088ce52a34bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro e seleção (VSPackage de controle de origem)
 Um controle de origem VSPackage deve ser registrado para expô-lo para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se mais de um controle de origem VSPackage é registrado, o usuário pode selecionar quais VSPackage carregar em momentos apropriados. Consulte [VSPackages](../../extensibility/internals/vspackages.md) para obter mais detalhes sobre VSPackages e como registrá-los.  
@@ -53,7 +51,7 @@ Um controle de origem VSPackage deve ser registrado para expô-lo para o [!INCLU
 ## <a name="selecting-a-source-control-package"></a>Selecionando um pacote de controle de origem  
  Vários de plug-ins baseada em API de plug-in de controle de origem e VSPackages podem ser registrados simultaneamente de controle de origem. O processo de selecionar um plug-in de controle de origem ou o VSPackage deve garantir que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carrega o plug-in ou VSPackage no momento apropriado e pode adiar a carregar componentes desnecessários até que eles são necessários. Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve remover todos os da interface do usuário de outros VSPackages inativos, incluindo itens de menu, caixas de diálogo e barras de ferramentas e exibir a interface do usuário para o VSPackage active.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]carrega um controle de origem VSPackage quando é executada a qualquer uma das seguintes operações:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carrega um controle de origem VSPackage quando é executada a qualquer uma das seguintes operações:  
   
 -   Solução é aberta (quando a solução estiver sob controle do código-fonte).  
   
@@ -64,14 +62,14 @@ Um controle de origem VSPackage deve ser registrado para expô-lo para o [!INCLU
  Um controle de origem que VSPackage deve carregar todos os componentes necessários apenas quando eles realmente vai ser usado (conhecido como carregamento atrasado).  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>Troca automática VSPackage baseado na solução  
- Manualmente, você pode trocar VSPackages de controle de origem por meio de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **opções** caixa de diálogo do **controle de origem** categoria. Troca automática de pacotes por solução significa que um pacote de controle de origem que foram designado para uma determinada solução é automaticamente definido como ativa quando essa solução é aberta. Cada pacote de controle de origem deve implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Controla a alternância entre os dois plug-ins de controle (Implementando a API de plug-in de controle de origem) de origem e VSPackages do controle de origem.  
+ Manualmente, você pode trocar VSPackages de controle de origem por meio de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **opções** caixa de diálogo do **controle de origem** categoria. Troca automática de pacotes por solução significa que um pacote de controle de origem que foram designado para uma determinada solução é automaticamente definido como ativa quando essa solução é aberta. Cada pacote de controle de origem deve implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Controla a alternância entre os dois plug-ins de controle (Implementando a API de plug-in de controle de origem) de origem e VSPackages do controle de origem.  
   
  O pacote de adaptador de controle de origem é usado para alternar para qualquer baseada em API de plug-in de controle de origem plug-in. O processo de alternar para o pacote intermediário do adaptador de controle de origem e determinar quais plug-in de controle de origem deve ser definido como ativo ou inativo é transparente ao usuário. O pacote do adaptador está sempre ativo quando qualquer plug-in de controle de origem está ativo. Alternar entre dois valores de plug-ins de controle de origem para simplesmente carregar e descarregar a DLL de plug-in. No entanto, alternar para um controle de origem VSPackage, envolve a interagir com o IDE para carregar o VSPackage apropriado.  
   
  Um controle de origem VSPackage é chamado quando nenhuma solução é aberta e a chave do registro para o VSPackage está no arquivo de solução. Quando a solução é aberta, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] localiza o valor do registro e carrega o controle de origem apropriado VSPackage. Controle de origem de todos os VSPackages deve ter as entradas do Registro descritas acima. Uma solução que está sob controle de origem está marcada como sendo associado a um controle de origem em particular VSPackage. Fonte controle VSPackages deve implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> para habilitar automático com base em solução VSPackage troca.  
   
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Interface do usuário para seleção de pacote e a alternância de Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Fornece uma interface do usuário para controle de origem VSPackage e seleção de plug-in no **opções** caixa de diálogo do **controle de origem** categoria. Ele permite que o usuário para selecionar o plug-in de controle de origem ativa ou VSPackage. Inclui uma lista suspensa:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Fornece uma interface do usuário para controle de origem VSPackage e seleção de plug-in no **opções** caixa de diálogo do **controle de origem** categoria. Ele permite que o usuário para selecionar o plug-in de controle de origem ativa ou VSPackage. Inclui uma lista suspensa:  
   
 -   Todos os pacotes de controle de origem instalados  
   

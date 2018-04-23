@@ -1,27 +1,25 @@
 ---
 title: Recursos em VSPackages | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d252f61a9f634f4bb8435626c41c586bbe5cb839
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-in-vspackages"></a>Recursos em VSPackages
 Você pode inserir recursos localizados em nativo da interface do usuário DLLs satélite, DLLs satélite gerenciado, ou em um VSPackage gerenciado em si.  
@@ -85,7 +83,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>Notas de implementação  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]carregamento de atrasos de VSPackages sempre que possível. Uma consequência de incorporação de um arquivo CTO em um VSPackage é que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve carregar todos os tais VSPackages na memória durante a instalação, quando ele cria uma tabela de comandos mesclada. Recursos podem ser extraídos de um VSPackage examinando os metadados sem executar código no VSPackage. O VSPackage não foi inicializado neste momento, portanto, a perda de desempenho é mínimo.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carregamento de atrasos de VSPackages sempre que possível. Uma consequência de incorporação de um arquivo CTO em um VSPackage é que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve carregar todos os tais VSPackages na memória durante a instalação, quando ele cria uma tabela de comandos mesclada. Recursos podem ser extraídos de um VSPackage examinando os metadados sem executar código no VSPackage. O VSPackage não foi inicializado neste momento, portanto, a perda de desempenho é mínimo.  
   
  Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] solicitações de um recurso de um VSPackage após a instalação, esse pacote é provável que já seja carregado e inicializado, portanto, a perda de desempenho é mínimo.  
   

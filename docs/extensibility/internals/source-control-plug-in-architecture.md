@@ -2,26 +2,22 @@
 title: Arquitetura de plug-in de controle de origem | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-caps.latest.revision: 24
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 498f3aeb87855a0dac5afacc1baa7e2e816375f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitetura de plug-in de controle de origem
 Você pode adicionar suporte a controle de origem para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) implementando e anexando um plug-in de controle de origem. O IDE conecta-se para o plug-in por meio da API de plug-in de controle de origem bem definido de controle de origem. O IDE expõe os recursos de controle de versão do sistema de controle de origem, fornecendo uma interface do usuário (UI) que consiste em barras de ferramentas e comandos de menu. O plug-in de controle de origem implementa a funcionalidade de controle de origem.  

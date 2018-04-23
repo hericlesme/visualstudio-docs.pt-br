@@ -1,26 +1,24 @@
 ---
-title: "Processar depuração Manager | Microsoft Docs"
-ms.custom: 
+title: Processar depuração Manager | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - machine debug manager
 - debugging [Debugging SDK], Machine Debug Manager
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e14010492b0fd086bef2bd79232a32beb54dbd84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d3ce0979b02ac3b0e8bb01f038c9883f5dcfd766
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="process-debug-manager"></a>Gerenciador de depuração do processo
 O Gerenciador de depuração do processo (PDM) é um componente do Visual Studio que gerencia os programas e processos, tornando-os disponíveis para a sessão de depuração manager e os mecanismos de depuração.  

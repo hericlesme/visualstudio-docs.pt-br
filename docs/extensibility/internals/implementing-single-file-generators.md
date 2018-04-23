@@ -1,27 +1,25 @@
 ---
-title: "Implementando geradores de arquivo único | Microsoft Docs"
-ms.custom: 
+title: Implementando geradores de arquivo único | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom tools, implementing
 - projects [Visual Studio SDK], extensibility
 - projects [Visual Studio SDK], managed custom tools
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b9fed2f4118600c48ad6cb769c8e697b06ae77d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71db8036634cfc266db3c585c48317262f48b367
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-single-file-generators"></a>Implementando geradores de arquivo único
 Uma ferramenta personalizada — também conhecido como um gerador de arquivo único — podem ser usados para estender o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] e [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemas de projeto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Uma ferramenta personalizada é um componente COM que implementa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interface. Usando esta interface, uma ferramenta personalizada transforma um único arquivo de entrada em um único arquivo de saída. O resultado da transformação pode ser o código-fonte, ou qualquer outra saída que é útil. Dois exemplos de arquivos de código gerados por ferramenta personalizado são o código gerado em resposta a alterações em um designer visual e os arquivos gerados usando WSDL Web Services Description Language ().  

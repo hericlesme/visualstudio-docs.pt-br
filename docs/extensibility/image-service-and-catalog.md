@@ -1,22 +1,19 @@
 ---
-title: "Serviço e o catálogo de imagem | Microsoft Docs"
-ms.custom: 
+title: Serviço e o catálogo de imagem | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Catálogo e o serviço de imagem
 Este guia contém orientações e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagem introduzido no Visual Studio 2015.  
@@ -447,11 +444,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
         this.BitmapIndex = <Value>;  
         ```  
   
-    2.  Consulte a etapa &#1; a "Como fazer uso Monikers de imagem em uma nova janela de ferramenta?" seção acima.  
+    2.  Consulte a etapa 1 # a "Como fazer uso Monikers de imagem em uma nova janela de ferramenta?" seção acima.  
   
 2.  O comando para abrir a janela da ferramenta.  
   
-    -   Consulte a etapa &#2; a "Como fazer uso Monikers de imagem em uma nova janela de ferramenta?" seção acima.  
+    -   Consulte a etapa 2 # a "Como fazer uso Monikers de imagem em uma nova janela de ferramenta?" seção acima.  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Como usar identificadores de imagem em um arquivo. VSCT?  
  Atualize o arquivo. VSCT conforme indicado pelos comentários das linhas abaixo:  
@@ -660,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Exemplos  
  Várias das amostras do Visual Studio no GitHub foram atualizadas para mostrar como usar o serviço de imagem como parte de vários pontos de extensibilidade do Visual Studio.  
   
- Verificar [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) para os exemplos mais recentes.  
+ Verificar [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) para os exemplos mais recentes.  
   
 ### <a name="tooling"></a>Ferramentas  
  Um conjunto de ferramentas de suporte para o serviço de imagem foi criado para ajudar a criar/atualizar a interface do usuário que funciona com o serviço de imagem. Para obter mais informações sobre cada ferramenta, consulte a documentação fornecida com as ferramentas. As ferramentas são incluídas como parte do [SDK do Visual Studio 2015.](http://msdn.microsoft.com/library/bb166441.aspx)  

@@ -2,26 +2,22 @@
 title: 'Como: implementar marcadores de erro | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41c1bf063ea074df217934a00f73291a10e051d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f1360f88dba797f96af766f65c9ee41abd6fc808
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-error-markers"></a>Como: implementar marcadores de erro
 Marcadores de erro (ou um sublinhado vermelho ondulado) é as personalizações do editor de texto para implementar mais difícil. No entanto, os benefícios que eles oferecem aos usuários do seu VSPackage agora podem exceder o custo para fornecê-los. Marcadores de erro sutilmente marcam o texto que o analisador de linguagem considerar incorreto com uma linha vermelha curvada ou ondulada. Este indicador ajuda a programadores visualmente exibindo o código incorreto.  

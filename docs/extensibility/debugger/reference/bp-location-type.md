@@ -1,29 +1,25 @@
 ---
 title: BP_LOCATION_TYPE | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_TYPE
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 919cef75834c6606cf4980b3a0e861302f29b73a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: db35e354b2cfbe91b9c6041dc6239d2dfd2531f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Especifica o tipo de local do ponto de interrupção para uma solicitação de ponto de interrupção.  
@@ -122,7 +118,7 @@ public enum enum_BP_LOCATION_TYPE {
   
  Tipo de local de ponto de interrupção é composto de um tipo de ponto de interrupção e um tipo de local. Isso significa que o tipo de local de ponto de interrupção nunca é apenas um tipo de ponto de interrupção (por exemplo, `BPT_CODE`) ou um tipo de local (por exemplo, `BPLT_FILE_LINE`). Constantes predefinidas para todos os tipos de local de ponto de interrupção atualmente com suporte são incluídos nesta enumeração (`BPLT_CODE_FILE_LINE` por meio de `BPLT_DATA_STRING`).  
   
- `BPT_CODE`e `BPT_DATA` são membros de [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração.  
+ `BPT_CODE` e `BPT_DATA` são membros de [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração.  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

@@ -2,24 +2,20 @@
 title: Cores e estilos para o Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 07/31/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9522d5773fd74eabcd3b7fce84b7bd56e0cd2a
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5cee3ec1308ee103d279a0d77ded4092e4ccf9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Usando a cor do Visual Studio
@@ -294,7 +290,7 @@ Vários elementos de interface de usuário comuns já definidas de cores de alto
 
 | Cor do sistema | Uso |
 | --- | --- |
-| ActiveCaption | -Active IDE e glifos de botão de janela rafted no hover e pressione<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de barra de status padrão |
+| Legenda ativa | -Active IDE e glifos de botão de janela rafted no hover e pressione<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de barra de status padrão |
 | ActiveCaptionText | -Active IDE e windows rafted de primeiro plano da barra de título (texto e glifos)<br />-Em segundo plano e da borda dos botões de janela ativa no hover e pressione |
 | Controle | -Caixa de combinação lista suspensa e pesquisa de padrão de controle e desabilitados em segundo plano, incluindo o botão suspenso<br />-Plano de fundo do botão encaixe destino<br />-Plano de fundo de barra de comando<br />-Plano de fundo de janela de ferramenta |
 | ControlDark | -Plano de fundo IDE<br />-Separadores de barra de menu e comando<br />-Borda da barra de comando<br />-Sombras menu<br />-Ferramenta de borda da guia janela padrão e passe o mouse e separador<br />-Bem documento plano de fundo de botão de estouro<br />-Borda de glifo de destino encaixe |
@@ -302,11 +298,11 @@ Vários elementos de interface de usuário comuns já definidas de cores de alto
 | ControlLight |-Borda de guia ocultar automaticamente<br />-Borda da lista suspensa e de caixa de combinação<br />-Encaixar a borda e o plano de fundo de destino |
 | ControlLightLight | -Borda provisional focada selecionada |
 | ControlText | -Glifo de lista suspensa e de caixa de combinação<br />-Texto da guia ferramenta janela desmarcada |
-| GrayText |-Caixa de combinação e a lista suspensa desabilitadas borda, glifos de lista suspensa, texto e texto do item de menu<br />-Texto do menu desabilitado<br />-Texto do cabeçalho pesquisa controle 'Opções de pesquisa'<br />-Separador de seção de controle pesquisa |
+| Texto cinza |-Caixa de combinação e a lista suspensa desabilitadas borda, glifos de lista suspensa, texto e texto do item de menu<br />-Texto do menu desabilitado<br />-Texto do cabeçalho pesquisa controle 'Opções de pesquisa'<br />-Separador de seção de controle pesquisa |
 | Realce | -Todos os hover e planos de fundo pressionados e bordas, exceto combinação botão suspenso em segundo plano e documento bem estouro botão borda da caixa<br />-Planos de fundo de item selecionado |
-| HighlightText | -Todas as em foco e pressionados foregrounds (texto e glifos)<br />-Ferramenta focada janela e documento guia janela controle em primeiro plano<br />-Borda de barra de título de janela de ferramenta focada<br />-Primeiro plano de guia provisional focada, selecionada<br />-Botão border documento bem estouro no hover e pressione<br />-Borda de ícone selecionado|
+| Texto realçado | -Todas as em foco e pressionados foregrounds (texto e glifos)<br />-Ferramenta focada janela e documento guia janela controle em primeiro plano<br />-Borda de barra de título de janela de ferramenta focada<br />-Primeiro plano de guia provisional focada, selecionada<br />-Botão border documento bem estouro no hover e pressione<br />-Borda de ícone selecionado|
 | HotTrack | -Barra de rolagem thumb em segundo plano e pressione a borda<br />-Barra de rolagem glifos de seta em pressione |
-| InactiveCaption | -IDE inativo e glifos de botão de janela rafted em foco<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de controle de pesquisa desabilitado |
+| Legenda inativa | -IDE inativo e glifos de botão de janela rafted em foco<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de controle de pesquisa desabilitado |
 | InactiveCaptionText | -Primeiro plano de barra de título rafted windows (texto e glifos) e IDE inativo<br />-Plano de fundo de botões de janela inativa e borda em foco<br />-Borda e plano de fundo do botão ferramenta foco janela<br />-Primeiro plano de controle de pesquisa desabilitado |
 | Menu | -Plano de fundo de menu suspenso<br />-Marca de seleção Check e desabilitados em segundo plano |
 | MenuText | -Borda de menu suspenso<br />-Marcas de seleção<br />-Glifos menu<br />-Texto do menu suspenso<br />-Borda de ícone selecionado |
@@ -359,7 +355,7 @@ Preencha o registro com dois valores:
 
 O serviço especificado no registro deve fornecer uma implementação de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> para o grupo correspondente.
 
-![Implementation of IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Implementação de `IVsFontAndColorGroup`
+![Implementação de interface IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "a_FontAndColorGroup 0304")<br />Implementação de `IVsFontAndColorGroup`
 
 ### <a name="to-implement-ide-support"></a>Para implementar o suporte IDE
 Implementar [GetObject](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), que retorna um uma [IVsFontAndColorDefaults](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) interface ou um <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> interface IDE para cada categoria ou grupo GUID fornecida.

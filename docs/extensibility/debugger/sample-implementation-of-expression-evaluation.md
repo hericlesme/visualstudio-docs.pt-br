@@ -1,33 +1,31 @@
 ---
-title: "Exemplo de implementação de avaliação de expressão | Microsoft Docs"
-ms.custom: 
+title: Exemplo de implementação de avaliação de expressão | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
 - expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fe39048edb15e3997b74ca3a7047085da6f042fc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 9edc31a8bc403f4f6dfcb16847d3cfce5d99b526
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Exemplo de implementação de avaliação de expressão
 > [!IMPORTANT]
 >  No Visual Studio 2015, essa maneira de implementar avaliadores de expressão foi preterida. Para obter informações sobre como implementar avaliadores de expressão do CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Para uma **inspecionar** expressão de janela, o Visual Studio chamadas [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para produzir um [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto. `IDebugExpressionContext2::ParseText`instancia um avaliador de expressão (EE) e chama [analisar](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para obter um [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.  
+ Para uma **inspecionar** expressão de janela, o Visual Studio chamadas [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para produzir um [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto. `IDebugExpressionContext2::ParseText` instancia um avaliador de expressão (EE) e chama [analisar](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para obter um [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.  
   
  Essa implementação de `IDebugExpressionEvaluator::Parse` executa as seguintes tarefas:  
   

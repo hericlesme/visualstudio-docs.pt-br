@@ -1,27 +1,23 @@
 ---
-title: "Mecanismo de depuração | Microsoft Docs"
-ms.custom: 
+title: Mecanismo de depuração | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1816d19425897a2f63fa7e5cbe30771bd5eac3d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-engine"></a>Mecanismo de depuração
 Um mecanismo de depuração (DE) funciona com o sistema operacional ou interpretador para fornecer serviços de depuração, como avaliação de expressão, os pontos de interrupção e controle de execução. O DE é responsável por monitorar o estado de um programa que está sendo depurado. Para fazer isso, o DE usa qualquer métodos estão disponíveis para ele no tempo de execução com suporte, se da CPU ou APIs fornecidos pelo tempo de execução.  
@@ -37,7 +33,7 @@ Um mecanismo de depuração (DE) funciona com o sistema operacional ou interpret
 > [!NOTE]
 >  Embora haja em implementações DE separadas para o Transact-SQL e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] compartilham um único DE.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Habilita depuração depuração mecanismos para executar uma das seguintes maneiras: no mesmo processo que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de shell ou no mesmo processo que o programa de destino que está sendo depurado. O segundo formulário normalmente ocorre quando o processo que está sendo depurado é realmente um script em execução sob um intérprete e o mecanismo de depuração deve ter conhecimento profundo do intérprete para monitorar o script. Observe que, nesse caso, o interpretador é realmente um tempo de execução; mecanismos de depuração são para implementações de tempo de execução específica. Além disso, a implementação de um único DE pode ser dividida em limites de processo e de máquina (por exemplo, a depuração remota).  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Habilita depuração depuração mecanismos para executar uma das seguintes maneiras: no mesmo processo que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de shell ou no mesmo processo que o programa de destino que está sendo depurado. O segundo formulário normalmente ocorre quando o processo que está sendo depurado é realmente um script em execução sob um intérprete e o mecanismo de depuração deve ter conhecimento profundo do intérprete para monitorar o script. Observe que, nesse caso, o interpretador é realmente um tempo de execução; mecanismos de depuração são para implementações de tempo de execução específica. Além disso, a implementação de um único DE pode ser dividida em limites de processo e de máquina (por exemplo, a depuração remota).  
   
  O DE expõe o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaces de depuração. Toda a comunicação está usando COM. Se o DE é carregado no processo, fora do processo ou em outro computador, ele não afeta a comunicação de componente.  
   

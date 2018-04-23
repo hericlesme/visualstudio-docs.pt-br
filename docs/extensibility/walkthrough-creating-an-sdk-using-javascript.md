@@ -1,23 +1,21 @@
 ---
 title: 'Passo a passo: Criando um SDK usando JavaScript | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2132269329c8b6af3ac846596adea7b3462db5bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Passo a passo: Criando um SDK usando JavaScript
 Este passo a passo ensina como usar JavaScript para criar uma simple matemática SDK como um Visual Studio extensão (VSIX).  Passo a passo é dividida por estas partes:  
@@ -31,7 +29,7 @@ Este passo a passo ensina como usar JavaScript para criar uma simple matemática
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para acompanhar este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createSimpleMathVSIX"></a>Para criar o projeto do SDK de extensão SimpleMathVSIX  
+##  <a name="createSimpleMathVSIX"></a> Para criar o projeto do SDK de extensão SimpleMathVSIX  
   
 1.  Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
@@ -142,7 +140,7 @@ Este passo a passo ensina como usar JavaScript para criar uma simple matemática
   
 21. Reinicie o Visual Studio.  
   
-##  <a name="createSampleApp"></a>Para criar um aplicativo de exemplo que usa o SDK  
+##  <a name="createSampleApp"></a> Para criar um aplicativo de exemplo que usa o SDK  
   
 1.  Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
@@ -315,7 +313,7 @@ Este passo a passo ensina como usar JavaScript para criar uma simple matemática
   
 11. Escolha a tecla F5 para compilar e executar o aplicativo.  
   
-12. No aplicativo de interface do usuário, digite os dois números, selecione uma operação e, em seguida, escolha o  **=**  botão. O resultado correto é exibido.  
+12. No aplicativo de interface do usuário, digite os dois números, selecione uma operação e, em seguida, escolha o **=** botão. O resultado correto é exibido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md)

@@ -1,13 +1,10 @@
 ---
-title: "&lt;personalização&gt; elemento (desenvolvimento do Office no Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: '&lt;personalização&gt; elemento (desenvolvimento do Office no Visual Studio) | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8e1c2c21fe5cf3a038066a47f50fe4b813b277e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 4384dd8bea4fc5829362ccdb06ea3912607cd263
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;personalização&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `customization` elemento o `vstov4` namespace descreve uma solução específica. Os elementos filho são diferentes para personalizações no nível do documento e suplementos do VSTO.  
@@ -68,13 +65,13 @@ ms.lasthandoff: 01/10/2018
  O `customization` elemento tem o seguinte elemento filho.  
   
 #### <a name="document"></a>documento  
- O `document` elemento o `vstov4` namespace está definido em [&#60; documento &#62; Elemento &#40; desenvolvimento do Office no Visual Studio &#41; ](../vsto/document-element-office-development-in-visual-studio.md).  
+ O `document` elemento o `vstov4` namespace está definido em [ &#60;documento&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md).  
   
 ### <a name="vsto-add-ins"></a>Suplementos do VSTO  
  O `customization` elemento tem o seguinte elemento filho.  
   
 #### <a name="appaddin"></a>appAddin  
- O `appAddin` elemento o `vstov4` namespace está definido em [&#60; appAddin &#62; Elemento &#40; desenvolvimento do Office no Visual Studio &#41; ](../vsto/appaddin-element-office-development-in-visual-studio.md).  
+ O `appAddin` elemento o `vstov4` namespace está definido em [ &#60;appAddin&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>Exemplo de uma personalização no nível do documento  
   

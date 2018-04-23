@@ -1,27 +1,25 @@
 ---
-title: "Criando grupos reutilizáveis de botões | Microsoft Docs"
-ms.custom: 
+title: Criando grupos reutilizáveis de botões | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-caps.latest.revision: "44"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c2ac175d2fd267500f19e9f22cd46d88dcc9f314
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97ee7cc2ec63a94036472ccce07b1dc9fa736504
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Criando grupos reutilizáveis de botões
 Um grupo de comando é uma coleção de comandos que sempre aparecem juntos em um menu ou barra de ferramentas. Qualquer grupo de comando pode ser usado novamente atribuindo a ele a menus pai diferente na seção do arquivo. VSCT CommandPlacements.  
@@ -46,7 +44,7 @@ Um grupo de comando é uma coleção de comandos que sempre aparecem juntos em u
     </GuidSymbol>  
     ```  
   
-     Por padrão, o modelo de item de comando cria um grupo chamado **MyGroup** e um botão que tem o nome que você forneceu, junto com uma entrada de IDSymbol para cada um.  
+     Por padrão, o modelo de item de comando cria um grupo chamado **MyMenuGroup** e um botão que tem o nome que você forneceu, junto com uma entrada de IDSymbol para cada um.  
   
 5.  Na seção grupos, crie um elemento de grupo que tem os mesmos atributos GUID e a ID como os fornecidos na seção de símbolos. Você também pode usar um grupo existente ou usar a entrada que é fornecida pelo modelo de comando, como no exemplo a seguir. Esse grupo é exibido no **ferramentas** menu  
   

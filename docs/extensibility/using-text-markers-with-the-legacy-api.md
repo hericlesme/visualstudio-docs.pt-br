@@ -1,27 +1,23 @@
 ---
 title: Usar marcadores de texto com a API herdado | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Usar marcadores de texto com a API herdado
 Um marcador de texto é um intervalo flutuante de texto em um buffer que pode afetar a exibição e o comportamento de uma região de texto. Marcadores de incluem os pontos de interrupção, indicadores, sublinhados ondulados e regiões de somente leitura. Marcadores de texto são basicamente diferentes das cores de sintaxe. Cores de sintaxe é uma maneira rápida de se comunicar a sintaxe de linguagem que está associada uma região do texto. Cores de sintaxe geral é solicitado ao Windows redesenha a tela, quando a velocidade é importante. Cores de sintaxe altera somente a cor do texto. Marcadores de texto podem alterar muitas outras propriedades de texto. Marcadores de texto podem "flutuar" e aplicar um comportamento especial e cores.  

@@ -2,28 +2,24 @@
 title: Elemento folder (modelos de projeto do Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento de pasta (modelos de projeto do Visual Studio)
 Especifica uma pasta que será adicionada ao projeto.  
@@ -56,7 +52,7 @@ Especifica uma pasta que será adicionada ao projeto.
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|`Folder`|Especifica uma pasta para adicionar ao projeto. `Folder`os elementos podem conter filho `Folder` elementos.|  
+|`Folder`|Especifica uma pasta para adicionar ao projeto. `Folder` os elementos podem conter filho `Folder` elementos.|  
 |[Item de projeto](../extensibility/projectitem-element-visual-studio-item-templates.md)|Especifica um arquivo para adicionar ao projeto.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -66,7 +62,7 @@ Especifica uma pasta que será adicionada ao projeto.
 |[Projeto](../extensibility/project-element-visual-studio-templates.md)|Elemento filho opcional de [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Comentários  
- `Folder`é um filho opcional de `Project`.  
+ `Folder` é um filho opcional de `Project`.  
   
  Você pode usar qualquer um dos seguintes métodos para organizar itens de projeto em pastas em um modelo:  
   

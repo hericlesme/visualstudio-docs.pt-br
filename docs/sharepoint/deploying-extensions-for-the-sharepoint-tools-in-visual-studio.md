@@ -1,13 +1,10 @@
 ---
-title: "Implantando extensões para ferramentas do SharePoint no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Implantando extensões para ferramentas do SharePoint no Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implantando extensões para as ferramentas do SharePoint no Visual Studio
   Para implantar uma extensão de ferramentas do SharePoint, criar um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) que contém o assembly de extensão e outros arquivos que você quer distribuir com a extensão. Um pacote do VSIX é um arquivo compactado que segue o padrão de Open Packaging Conventions (OPC). Pacotes do VSIX tem a extensão de .vsix.  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Em **Solution Explorer**, abra o menu de atalho para o seu projeto de modelo de projeto ou Item de modelo e, em seguida, escolha **descarregar projeto**.  
   
-7.  Abra o menu de atalho para o nó do projeto novamente e, em seguida, escolha **editar***YourTemplateProjectName***. csproj** ou **editar**  *YourTemplateProjectName***. vbproj**.  
+7.  Abra o menu de atalho para o nó do projeto novamente e, em seguida, escolha **editar***YourTemplateProjectName***. csproj** ou **editar***YourTemplateProjectName***. vbproj**.  
   
 8.  Localize o seguinte `VSTemplate` elemento no arquivo de projeto.  
   

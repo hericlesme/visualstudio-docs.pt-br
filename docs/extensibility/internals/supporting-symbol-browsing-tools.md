@@ -1,12 +1,10 @@
 ---
-title: "Suporte a ferramentas de navegação de símbolo | Microsoft Docs"
-ms.custom: 
+title: Suporte a ferramentas de navegação de símbolo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
 - browsers, symbol browsers
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 78a4e910dbd2c6063f4bdf7b0dff3f27f79b218e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 08185f64310da610253dc35e69323b17ab0177fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Suporte a ferramentas de navegação de símbolo
 **Pesquisador de objetos**, **exibição de classe**, **Pesquisador de chamadas** e **localizar resultados de símbolos** ferramentas oferecem funcionalidades no Visual Studio de navegação de símbolo. Essas ferramentas exibem modos de exibição de árvore hierárquica de símbolos e mostram as relações entre os símbolos na árvore. Os símbolos podem representar namespaces, objetos, classes, membros de classe e outros elementos de linguagem contidos em vários componentes. Os componentes incluem projetos do Visual Studio, externos [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] componentes e bibliotecas de tipos (. tlb). Para obter mais informações, consulte [Exibindo a estrutura do código](../../ide/viewing-the-structure-of-code.md).  

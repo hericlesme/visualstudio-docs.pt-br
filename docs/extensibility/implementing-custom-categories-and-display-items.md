@@ -2,27 +2,23 @@
 title: Implementação de categorias personalizadas e itens de exibição | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25f1f708f32e90fad73462463e38738b01600c34
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 9593a7addcd9a3f100f45f69e7e692c396e33bfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementação de categorias personalizadas e itens de exibição
 Um VSPackage pode fornecer controle de fontes e cores de texto para o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) por meio de categorias personalizadas e itens de exibição.

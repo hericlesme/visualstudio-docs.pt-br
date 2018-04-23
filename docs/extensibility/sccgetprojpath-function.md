@@ -1,29 +1,25 @@
 ---
-title: "Função SccGetProjPath | Microsoft Docs"
-ms.custom: 
+title: Função SccGetProjPath | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ce41826a3a0d778c5a417496d47f290e97806fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7ef5041b483e85e0806827f7d1188d432b476c5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccgetprojpath-function"></a>Função SccGetProjPath
 Essa função solicita ao usuário para um caminho de projeto, que é uma cadeia de caracteres que seja significativa apenas para o plug-in de controle de origem. Ele é chamado quando o usuário é:  
@@ -98,14 +94,14 @@ SCCRTN SccGetProjPath (
 ## <a name="remarks"></a>Comentários  
  O objetivo dessa função é para o IDE adquirir os parâmetros `lpProjName` e `lpAuxProjPath`. Depois que o plug-in de controle de origem solicita ao usuário essas informações, ele passa essas duas cadeias de caracteres para o IDE. O IDE persistir essas cadeias de caracteres em seu arquivo de solução e os passa para o [SccOpenProject](../extensibility/sccopenproject-function.md) sempre que o usuário abrir este projeto. Essas cadeias de caracteres de habilitem o plug-in rastrear as informações associadas a um projeto.  
   
- Quando a função é chamada primeiro, `lpAuxProjPath` é definido como uma cadeia de caracteres vazia. `lProjName`também pode ser vazio, ou pode conter o nome de projeto IDE para que o plug-in de controle de origem pode usar ou ignorar. Quando a função retorna com êxito, o plug-in retorna as duas cadeias de caracteres correspondentes. O IDE não faz nenhuma suposição sobre essas cadeias de caracteres, não usá-los e não permitirá que o usuário para modificá-las. Se o usuário deseja alterar as configurações, o IDE chamará `SccGetProjPath` novamente, passando os mesmos valores ele recebeu a hora anterior. Assim, o plug-in controle total sobre essas duas cadeias de caracteres.  
+ Quando a função é chamada primeiro, `lpAuxProjPath` é definido como uma cadeia de caracteres vazia. `lProjName` também pode ser vazio, ou pode conter o nome de projeto IDE para que o plug-in de controle de origem pode usar ou ignorar. Quando a função retorna com êxito, o plug-in retorna as duas cadeias de caracteres correspondentes. O IDE não faz nenhuma suposição sobre essas cadeias de caracteres, não usá-los e não permitirá que o usuário para modificá-las. Se o usuário deseja alterar as configurações, o IDE chamará `SccGetProjPath` novamente, passando os mesmos valores ele recebeu a hora anterior. Assim, o plug-in controle total sobre essas duas cadeias de caracteres.  
   
  Para `lpUser`, o IDE pode passar um nome de usuário, ou simplesmente pode transmitir um ponteiro para uma cadeia de caracteres vazia. Se houver um nome de usuário, o plug-in de controle de origem deve usá-lo como padrão. No entanto, se nenhum nome foi aprovado ou se o logon falhou com o nome fornecido, o plug-in deve solicitar ao usuário um logon e passe o nome de volta `lpUser` quando ele recebe um logon válido. Como o plug-in pode alterar essa cadeia de caracteres, o IDE sempre será alocar um buffer de tamanho (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
 >  A primeira ação que executa o IDE pode ser uma chamada para o `SccOpenProject` função ou o `SccGetProjPath` função. Portanto, eles têm um idênticos `lpUser` parâmetro, que permite que o controle de origem plug-in para o logon do usuário a qualquer momento. Mesmo se o retorno da função indica uma falha, o plug-in deve preencher essa cadeia de caracteres com um nome de logon válido.  
   
- `lpLocalPath`é o diretório onde o usuário mantém o projeto. Pode ser uma cadeia de caracteres vazia. Se não houver nenhum diretório atualmente definido (como no caso de um usuário tentar baixar um projeto do sistema de controle de origem) e se `bAllowChangePath` é `TRUE`, o plug-in de controle de origem pode solicitar a entrada do usuário ou use outro método para colocar seu possui a cadeia de caracteres em `lpLocalPath`. Se `bAllowChangePath` é `FALSE`, o plug-in não deve alterar a cadeia de caracteres, porque o usuário já está trabalhando no diretório especificado.  
+ `lpLocalPath` é o diretório onde o usuário mantém o projeto. Pode ser uma cadeia de caracteres vazia. Se não houver nenhum diretório atualmente definido (como no caso de um usuário tentar baixar um projeto do sistema de controle de origem) e se `bAllowChangePath` é `TRUE`, o plug-in de controle de origem pode solicitar a entrada do usuário ou use outro método para colocar seu possui a cadeia de caracteres em `lpLocalPath`. Se `bAllowChangePath` é `FALSE`, o plug-in não deve alterar a cadeia de caracteres, porque o usuário já está trabalhando no diretório especificado.  
   
  Se o usuário cria um novo projeto a ser colocado sob controle de origem, o plug-in de controle de origem pode não realmente criá-lo no sistema de controle de origem no momento `SccGetProjPath` é chamado. Em vez disso, ele passa novamente a cadeia de caracteres juntamente com um valor diferente de zero para `pbNew`, indicando que o projeto será criado no sistema de controle de origem.  
   

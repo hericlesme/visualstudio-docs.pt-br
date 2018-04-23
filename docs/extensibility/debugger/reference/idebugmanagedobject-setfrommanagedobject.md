@@ -2,28 +2,24 @@
 title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugManagedObject::SetFromManagedObject
 helpviewer_keywords:
 - IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-caps.latest.revision: 9
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0526c060175a6e00a7b45a7ef2e347dba0d89e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3d240c931db24cc353d7bb461645771eb4520921
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 Define o valor da instância do objeto de classe de valor da instância da classe de valor fornecido como um parâmetro.  

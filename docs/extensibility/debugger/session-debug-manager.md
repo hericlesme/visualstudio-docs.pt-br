@@ -1,12 +1,10 @@
 ---
-title: "Sessão de depuração Manager | Microsoft Docs"
-ms.custom: 
+title: Sessão de depuração Manager | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - session debug manager, unifying session views
 - session debug manager, broadcasting
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7d7acd147fd8d2b73b2172900baf7e1f49808e9a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 001c0b954cd47b9825a6982f2474d6fd6d415e23
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="session-debug-manager"></a>Gerenciador de sessão de depuração
 O Gerenciador de sessão de depuração (SDM) gerencia qualquer número de mecanismos de depuração (DE) qualquer número de programas em vários processos em qualquer número de máquinas de depuração. Além de ser um mecanismo de depuração multiplexador, o SDM fornece uma exibição unificada da sessão de depuração para o IDE.  

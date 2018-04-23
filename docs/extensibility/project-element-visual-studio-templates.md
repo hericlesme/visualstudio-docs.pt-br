@@ -2,29 +2,25 @@
 title: Elemento (modelos do Visual Studio) do projeto | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 16
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fd8881d484f35a0183d83d1b540fc2249e9c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-element-visual-studio-templates"></a>Elemento de projeto (Modelos do Visual Studio)
 Especifica os arquivos ou diretórios a serem adicionados ao projeto.  
@@ -75,9 +71,9 @@ Especifica os arquivos ou diretórios a serem adicionados ao projeto.
   
  O `Project` elemento é usado para especificar um projeto e, portanto, só é válido em modelos de projeto.  
   
- `Project`elementos podem ter [pasta](../extensibility/folder-element-visual-studio-project-templates.md) elementos filhos ou [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) elementos filhos, mas não uma combinação dos dois `Folder` e `ProjectItem` elementos filhos.  
+ `Project` elementos podem ter [pasta](../extensibility/folder-element-visual-studio-project-templates.md) elementos filhos ou [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) elementos filhos, mas não uma combinação dos dois `Folder` e `ProjectItem` elementos filhos.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Renomeia automaticamente o nome do arquivo de projeto com base no nome inserido pelo usuário no **novo projeto** caixa de diálogo. Use o `TargetFileName` se você deseja fornecer um nome de arquivo alternativo para os arquivos de projeto criados com o modelo de atributo.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Renomeia automaticamente o nome do arquivo de projeto com base no nome inserido pelo usuário no **novo projeto** caixa de diálogo. Use o `TargetFileName` se você deseja fornecer um nome de arquivo alternativo para os arquivos de projeto criados com o modelo de atributo.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.  

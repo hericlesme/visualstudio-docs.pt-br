@@ -1,27 +1,23 @@
 ---
 title: 'Passo a passo: Adicionando recursos para um Editor personalizado | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Passo a passo: Adicionando recursos para um Editor personalizado
 Depois de criar um editor personalizado, você pode adicionar mais recursos a ele.  
@@ -148,7 +144,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
   
 -   Para evitar que o comando de menu lotado na interface de usuário, você deve usar os comandos existentes no IDE antes da criação de novos comandos. Comandos compartilhados são definidos em SharedCmdDef.vsct e ShellCmdDef.vsct. Esses arquivos são instalados por padrão no subdiretório VisualStudioIntegration\Common\Inc do seu [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalação.  
   
--   `ISelectionContainer`pode expressar único e de várias seleções. Cada objeto selecionado é implementado como um `IDispatch` objeto.  
+-   `ISelectionContainer` pode expressar único e de várias seleções. Cada objeto selecionado é implementado como um `IDispatch` objeto.  
   
 -   Implementa o IDE `IOleUndoManager` como um serviço acessível de uma <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> ou como um objeto que pode ser instanciado pelo <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Implementa o editor de `IOleUndoUnit` interface para cada `Undo` ação.  
   

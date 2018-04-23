@@ -1,25 +1,24 @@
 ---
-title: "Passo a passo: Criando um Item de projeto de ação personalizada com um modelo de Item, parte 2 | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Criando um Item de projeto de ação personalizada com um modelo de Item, parte 2 | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Instruções passo a passo: criando um item de projeto de ação com um modelo de item, parte 2
   Depois de definir um tipo personalizado do item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um Assistente para o modelo. Você pode usar o Assistente para coletar informações de usuários quando eles usam o modelo para adicionar uma nova instância do item de projeto para um projeto. As informações que você coletar podem ser usadas para inicializar o item de projeto.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Escolha o **biblioteca de controle de usuário do WPF** modelo de projeto, nomeie o projeto **ItemTemplateWizard**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **ItemTemplateWizard** projeto à solução.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **ItemTemplateWizard** projeto à solução.  
   
 6.  Exclua o item de UserControl1 do projeto.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Para obter mais informações sobre o `WizardExtension` elemento, consulte [elemento WizardExtension &#40; Modelos do Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Para obter mais informações sobre o `WizardExtension` elemento, consulte [elemento WizardExtension &#40;modelos do Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Salve e feche o arquivo.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      O **as configurações da lista** página será exibida.  
   
-4.  Sob o **comunicações** título na parte superior da página, escolha o **SharePoint Developer Center** vincular, verifique se o navegador abre o site http://msdn.microsoft.com/sharepoint/ default. aspx e, em seguida, feche o navegador.  
+4.  Sob o **comunicações** título na parte superior da página, escolha o **SharePoint Developer Center** vincular, verifique se o navegador abre o site http://msdn.microsoft.com/sharepoint/default.aspxe, em seguida, feche o navegador.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Limpando o computador de desenvolvimento  
  Depois de concluir o teste de item de projeto, remova o modelo de item de projeto da instância experimental do Visual Studio.  

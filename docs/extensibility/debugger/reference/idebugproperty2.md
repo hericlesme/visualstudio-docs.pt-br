@@ -2,28 +2,24 @@
 title: IDebugProperty2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2
 helpviewer_keywords:
 - IDebugProperty2 interface
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc1305fb8534dc8e14192268913290aef25f2cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb0cd134d30da277ddc1f984e0cf9e57dd5e4963
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Essa interface representa uma propriedade de quadro de pilha, uma propriedade de documento do programa ou outra propriedade. A propriedade normalmente é o resultado de uma avaliação de expressão.  
@@ -41,7 +37,7 @@ IDebugProperty2 : IUnknown
  O DE implementa essa interface para representar um determinado tipo de valor. Por exemplo, o valor pode ser um valor numérico como resultado de uma avaliação de expressão, um contexto de memória usado para exibir a memória ou uma lista de registros e seus valores.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Chamar [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obter essa interface, que representa o resultado de uma avaliação. `IDebugExpression2::EvaluateAsync`Retorna a essa interface, enviando um [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interface SDM, que por sua vez, chama [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) ao recuperar a propriedade.  
+ Chamar [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para obter essa interface, que representa o resultado de uma avaliação. `IDebugExpression2::EvaluateAsync` Retorna a essa interface, enviando um [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interface SDM, que por sua vez, chama [GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md) ao recuperar a propriedade.  
   
  [GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md) retorna essa interface para fornecer o documento de script associados.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Tarefas comuns na programação do Office | Microsoft Docs"
-ms.custom: 
+title: Tarefas comuns na programação do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 65a20b5d65ba49789aea857459bd6a4d316195eb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-tasks-in-office-programming"></a>Tarefas comuns na programação do Office
   Este tópico foi criado para ajudá-lo a encontrar as respostas para as seguintes categorias de perguntas comuns sobre como programar soluções do Office usando o Visual Studio.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Tarefas de implantação](#deployment).  
   
-##  <a name="projects"></a>A instalação e tarefas gerais  
+##  <a name="projects"></a> A instalação e tarefas gerais  
   
 -   [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Como: Mostrar erros de Interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
-##  <a name="ui"></a>Tarefas de personalização de Interface do usuário  
+##  <a name="ui"></a> Tarefas de personalização de Interface do usuário  
   
 ### <a name="controls-on-documents-and-worksheets"></a>Controles em documentos e planilhas  
   
@@ -109,7 +108,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Como: adicionar comandos a Menus de atalho](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
-##  <a name="excel"></a>Tarefas de automação do Excel  
+##  <a name="excel"></a> Tarefas de automação do Excel  
   
 -   [Como: exibir uma cadeia de caracteres em uma célula de planilha programaticamente](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md).  
   
@@ -143,7 +142,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Como: classificar os dados em planilhas programaticamente](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
   
-##  <a name="word"></a>Tarefas de automação do Word  
+##  <a name="word"></a> Tarefas de automação do Word  
   
 -   [Como: criar novos documentos programaticamente](../vsto/how-to-programmatically-create-new-documents.md).  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Como: programaticamente contar caracteres em documentos](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
-##  <a name="data"></a>Tarefas de dados  
+##  <a name="data"></a> Tarefas de dados  
   
 ### <a name="data-bound-controls"></a>Controles associados a dados  
   
@@ -207,17 +206,17 @@ ms.lasthandoff: 01/10/2018
   
 -   [Como: adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
-##  <a name="server"></a>Tarefas de gerenciamento de documentos no servidor  
+##  <a name="server"></a> Tarefas de gerenciamento de documentos no servidor  
   
 -   [Como: remover extensões de código gerenciado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
   
 -   [Como: anexar extensões de código gerenciado a documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
   
-##  <a name="security"></a>Tarefas de segurança  
+##  <a name="security"></a> Tarefas de segurança  
   
 -   [Como: assinar soluções do Office](../vsto/how-to-sign-office-solutions.md).  
   
-##  <a name="deployment"></a>Tarefas de implantação  
+##  <a name="deployment"></a> Tarefas de implantação  
   
 -   [Como: publicar uma solução do Office usando o ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
@@ -234,7 +233,7 @@ ms.lasthandoff: 01/10/2018
 -   [Como: alterar o caminho de instalação de uma solução do Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Consulte também  
- [Guia de Introdução &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Recursos disponibilizados pelo aplicativo do Office e pelo tipo de projeto](../vsto/features-available-by-office-application-and-project-type.md)   
  [Explicações passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)  
   

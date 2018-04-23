@@ -1,27 +1,23 @@
 ---
-title: "Abrindo uma janela de ferramenta dinâmica | Microsoft Docs"
-ms.custom: 
+title: Abrindo uma janela de ferramenta dinâmica | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 197bda3f825d0e709c1bc9ae08d8f0018b8b07c5
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: bdd3a4a8d85ed7d0f5884e7f11b8778eb3b420a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Abrindo uma janela de ferramenta dinâmico
 Janelas de ferramenta normalmente são abertas de um comando em um menu ou uma tecla de atalho equivalente. Às vezes, no entanto, talvez seja necessário uma janela de ferramenta que abre sempre que um contexto específico de interface do usuário se aplica e fecha quando o contexto de interface do usuário já não se aplica. Esses tipos de janelas de ferramenta são chamados *dinâmico* ou *automaticamente visíveis*.  

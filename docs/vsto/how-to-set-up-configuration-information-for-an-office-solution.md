@@ -1,12 +1,10 @@
 ---
-title: "Como: configurar as informações de configuração para uma solução do Office | Microsoft Docs"
-ms.custom: 
+title: 'Como: configurar as informações de configuração para uma solução do Office | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - configuration files [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6f604fa40a9816d5e46593bc50fcb91f82d13325
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9659872fa6cb4e294d1757412862c10e42cde2e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Como configurar informações de definição para uma solução do Office
   Você pode usar arquivos de configuração para definir as configurações que são específicas às suas soluções do Office. Você pode especificar configurações como a política de associação de assembly, objetos de comunicação remota, depuração e configurações de rastreamento.  

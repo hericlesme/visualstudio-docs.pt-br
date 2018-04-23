@@ -1,23 +1,21 @@
 ---
-title: "Perguntas Frequentes: Convertendo suplementos para extensões de VSPackage | Microsoft Docs"
-ms.custom: 
+title: 'Perguntas Frequentes: Convertendo suplementos para extensões de VSPackage | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Perguntas frequentes: convertendo suplementos em extensões VSPackage
 Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studio, você precisa criar uma extensão do VSIX. Aqui estão as respostas para algumas perguntas frequentes sobre como converter um suplemento do Visual Studio em uma extensão do VSIX.  
@@ -41,7 +39,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Pode converter meu projeto de suplemento para um projeto do VSIX?  
  Um projeto de suplemento não pode ser convertido diretamente a um projeto do VSIX porque os mecanismos usados em projetos do VSIX não são iguais em projetos de suplemento. O modelo de projeto do VSIX, além de modelos de item de projeto direita tem muitos códigos que torna relativamente fácil de colocá-lo e em execução como uma extensão do VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a>Como iniciar o desenvolvimento de extensões VSIX?  
+##  <a name="BKMK_StartDeveloping"></a> Como iniciar o desenvolvimento de extensões VSIX?  
  Aqui está como você faz uma VSIX que tem um comando de menu:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Para tornar uma extensão do VSIX com um comando de menu  
@@ -56,7 +54,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
      Sobre o **ferramentas** menu (na instância experimental), você verá um botão chamado **nome do comando meu**. Quando você escolhe este botão, uma mensagem deve aparecer: **em TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a>Como executar o código em um VSPackage?  
+##  <a name="BKMK_RunAddin"></a> Como executar o código em um VSPackage?  
  Código de suplemento geralmente é executado de uma entre duas maneiras:  
   
 -   Acionado por um comando de menu (o código está no método de `IDTCommandTarget.Exec`)  

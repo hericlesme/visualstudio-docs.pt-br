@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Chamando o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Chamando o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Instruções passo a passo: chamando o modelo do objeto de cliente do SharePoint em uma extensão do Gerenciador de Servidores
   Este passo a passo demonstra como chamar o modelo de objeto do cliente do SharePoint de uma extensão para o **conexões do SharePoint** nó **Server Explorer**. Para obter mais informações sobre como usar o modelo de objeto do cliente do SharePoint, consulte [chamando os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -82,7 +81,7 @@ Conhecimento sobre os conceitos a seguir é útil, mas não necessário para con
   
 6.  No **nome** , digite **WebPartNode**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **WebPartNode** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **WebPartNode** projeto **Gerenciador de soluções**.  
   
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão  
   
@@ -96,7 +95,7 @@ Conhecimento sobre os conceitos a seguir é útil, mas não necessário para con
   
 5.  No **nome** , digite **WebPartNodeExtension**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **WebPartNodeExtension** projeto à solução e abre o arquivo de código Class1 padrão.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **WebPartNodeExtension** projeto à solução e abre o arquivo de código Class1 padrão.  
   
 6.  Exclua o arquivo de código Class1 do projeto.  
   
@@ -287,6 +286,6 @@ Conhecimento sobre os conceitos a seguir é útil, mas não necessário para con
  [Estendendo o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Passo a passo: Estendendo o Gerenciador de servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Editor de imagens para ícones](/cpp/windows/image-editor-for-icons)   
- [Criar um ícone ou outra imagem &#40; Editor de imagens para ícones &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Criando um ícone ou outra imagem &#40;Editor de imagens para ícones&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

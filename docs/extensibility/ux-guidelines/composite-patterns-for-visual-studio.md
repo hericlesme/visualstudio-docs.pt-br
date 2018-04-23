@@ -1,23 +1,21 @@
 ---
-title: "Padrões compostos para o Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Padrões compostos para o Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões compostos para o Visual Studio
 Padrões compostos combinam elementos de design e interação em configurações distintas. Alguns dos mais importantes compostos padrões no Visual Studio em relação a consistência incluem:  
@@ -32,7 +30,7 @@ Padrões compostos combinam elementos de design e interação em configurações
   
 -   [Entrada de toque](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>Visualização de dados  
+##  <a name="BKMK_DataVisualization"></a> Visualização de dados  
   
 ### <a name="overview"></a>Visão geral  
  Os gráficos são uma maneira visual para agregar e visualizar dados para aprimorar a tomada de decisões. Eles podem ajudar os usuários enfrentados muitos dados, mas pouco significando ver o que merece atenção e que pode ser uma ação.  
@@ -85,7 +83,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 |![Amostra 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Amostra B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>Interface do usuário no objeto e inspecionar  
+##  <a name="BKMK_OnObjectUI"></a> Interface do usuário no objeto e inspecionar  
  Esta seção fornece o contexto para inspecionar, também conhecida como exibição de inspeção de código, um tipo de interface do usuário no objeto exclusivo para o Visual Studio.  
   
 ### <a name="overview"></a>Visão geral  
@@ -251,7 +249,7 @@ Padrões compostos combinam elementos de design e interação em configurações
   
 -   **Nunca** exibir o conteúdo em foco que parece ser editável ou convida interação do usuário. Esse comportamento pode frustrar os usuários se eles tentarem move o cursor sobre o conteúdo de detalhes, como o comportamento padrão de uma dica de ferramenta é descartar imediatamente quando o cursor não estiver mais sobre o mestre de conteúdo que o produziu.  
   
-##  <a name="BKMK_SelectionModels"></a>Modelos de seleção  
+##  <a name="BKMK_SelectionModels"></a> Modelos de seleção  
   
 ### <a name="overview"></a>Visão geral  
  Um modelo de seleção é o mecanismo usado para indicar e confirmar as operações em um ou mais objetos de interesse na interface do usuário. Este tópico discute os padrões de interação de seleção nos editores de documento do Visual Studio: editores de texto, superfícies de design e superfícies de modelagem.  
@@ -309,7 +307,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 #### <a name="region-selection-box-selection"></a>Seleção de região (seleção de caixa)  
  Visual Studio oferece suporte a seleções de região no editor de texto, e isso é chamado de seleção da caixa. Caixa de seleção permite que o usuário selecione uma região do texto que não seguem o fluxo de texto normal. Assim como acontece com a seleção de texto padrão, a seleção deve ser contígua. Caixa de seleção é iniciada, mantendo a tecla Alt pressionada enquanto arrasta o mouse. Caixa de seleção também pode ser iniciada, mantendo pressionadas as teclas Alt e Shift ao usar as teclas de direção para indicar a região da seleção. Caixa de seleção usa o realce de seleção normal e mostra o cursor do ponto de inserção piscando no final da área de seleção.  
   
- ![Regionais &#40; caixa de &#41; a seleção no Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
+ ![Regional &#40;caixa&#41; seleção no Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
   
  **Seleção de região (caixa) no Visual Studio**  
   
@@ -394,19 +392,19 @@ Padrões compostos combinam elementos de design e interação em configurações
   
  **Seleção principal com duas seleções secundárias**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>Aparência da seleção de objeto gráfico  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aparência da seleção de objeto gráfico  
  As alças de seleção são desenhados em um padrão retangular ao redor da caixa delimitadora do objeto de quadrados. O gráfico a seguir mostra exemplos de vários estados em que um objeto gráfico pode ter com a alça de dimensionamento e aparência de edição no local. O tamanho dos identificadores deve ser vinculado a borda da janela e o uso de métricas de borda de **GetSystemMetrics** API.  
   
 |Estado|Aparência|Detalhes do Visual|  
 |-----------|----------------|--------------------|  
 |**Não selecionado**|Padrão|![Padrão de estado do botão](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState")||  
-|**Seleção principal**|Redimensionável|![Seleção principal com alças de redimensionamento](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Seleção principal com Redimensionar alças &#40; ampliado &#41; ] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
-|**Seleção principal**|Não redimensionável|![Alças de redimensionamento da seleção principal sem](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Seleção principal sem redimensionar alças &#40; ampliado &#41; ] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
-|**Seleção principal**|Bloqueado|![Seleção principal bloqueada](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Seleção principal bloqueado &#40; ampliado &#41; ] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
-|**Seleção secundária**|Redimensionável|![Seleção secundária com alças de redimensionamento](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Seleção secundária Redimensionar alças &#40; ampliado &#41; ] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
-|**Seleção secundária**|Não redimensionável|![Alças de redimensionamento da seleção secundária sem](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Seleção secundária sem redimensionamento &#40; ampliado &#41; ] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
-|**Seleção secundária**|Bloqueado|![Seleção secundária bloqueada](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Seleção secundária bloqueado &#40; ampliado &#41; ] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
-|**Interface do usuário ativa**|Padrão|![Estado ativo da interface do usuário](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Interface do usuário do estado ativo &#40; ampliado &#41; ] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
+|**Seleção principal**|Redimensionável|![Seleção principal com alças de redimensionamento](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Seleção principal com alças de redimensionamento &#40;ampliado&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
+|**Seleção principal**|Não redimensionável|![Alças de redimensionamento da seleção principal sem](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Alças de redimensionamento da seleção principal sem &#40;ampliado&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
+|**Seleção principal**|Bloqueado|![Seleção principal bloqueada](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Seleção principal bloqueada &#40;ampliado&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
+|**Seleção secundária**|Redimensionável|![Seleção secundária com alças de redimensionamento](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Seleção secundária com alças de redimensionamento &#40;ampliado&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
+|**Seleção secundária**|Não redimensionável|![Alças de redimensionamento da seleção secundária sem](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Seleção secundária sem redimensionamento &#40;ampliado&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
+|**Seleção secundária**|Bloqueado|![Seleção secundária bloqueada](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Seleção secundária bloqueada &#40;ampliado&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
+|**Interface do usuário ativa**|Padrão|![Estado ativo da interface do usuário](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Estado ativo da interface do usuário &#40;ampliado&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>Exibir modelos de seleção  
   
@@ -475,7 +473,7 @@ Padrões compostos combinam elementos de design e interação em configurações
   
 -   A tecla F2 ativa a edição no local para a célula selecionada atualmente.  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>Persistência e salvar as configurações  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> Persistência e salvar as configurações  
   
 ### <a name="overview"></a>Visão geral  
  Embora cada componente de software no Visual Studio é geralmente responsável por seu próprio estado e persistência, o Visual Studio automaticamente salva as configurações em alguns casos, como com posições e tamanhos de janela. A tabela a seguir é uma combinação de configurações salvas automaticamente e que exigem um usuário explícito ou programada a ação a ser executada.  
@@ -510,7 +508,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 #### <a name="profile-specific-layouts"></a>Layouts de perfil específico  
  Cada perfil inclui layouts de janela de ferramenta, organizados em modo familiar personas desenvolvedor específico (espera que os desenvolvedores do Visual C++ ver o **Solution Explorer** no lado esquerdo do IDE, enquanto os desenvolvedores do c# esperam ver o  **Gerenciador de soluções** à direita). Layouts de janela específico para o perfil são carregados depois que o usuário escolhe um perfil na inicialização. Um autor do pacote deve determinar o layout da janela mais adequado para a experiência de seus clientes, sabendo que as alterações feitas pelo usuário para a configuração de janela, em seguida, sejam persistentes.  
   
-##  <a name="BKMK_TouchInput"></a>Entrada de toque  
+##  <a name="BKMK_TouchInput"></a> Entrada de toque  
  Os usuários estão cada vez mais usando produtos de desenvolvimento da Microsoft em dispositivos de toque. No entanto, há barreiras que dificultam a usar ferramentas de desenvolvimento em dispositivos de toque. Os usuários esperam que nossos produtos para fornecer uma experiência de toque confiável e precisas. O objetivo dessas diretrizes é informar decisões sobre quais recursos de toque para incorporar e encorajar uma experiência consistente de toque em Visual Studio e produtos relacionados.  
   
 ### <a name="levels-of-experience"></a>Níveis de experiência  

@@ -2,32 +2,28 @@
 title: Botões da janela de propriedades | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 361333fdfceda28ecd78dc54145fded716ee81eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-buttons"></a>Botões da janela de propriedades
 Dependendo do idioma de desenvolvimento e o tipo de produto, determinados botões são exibidos por padrão na barra de ferramentas para a **propriedades** janela. Em todos os casos, o **categorizado**, **Alphabetized**, **propriedades**, e **páginas de propriedade** botões são exibidos. Em Visual c# e Visual Basic, o **eventos** botão também é exibido. Em determinados projetos Visual C++, o **VC + + mensagens** e **VC substitui** botões são exibidos. Botões adicionais podem ser exibidos para outros tipos de projeto. Para obter mais informações sobre botões de **propriedades** janela, consulte [janela propriedades](../../ide/reference/properties-window.md).  
   
 ## <a name="implementation-of-properties-window-buttons"></a>Implementação de botões de janela de propriedades  
- Quando você clica o **categorizado** botão, chamadas do Visual Studio a <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interface no objeto que tem o foco para classificar suas propriedades por categoria. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>é implementado o `IDispatch` objeto que é apresentado para o **propriedades** janela.  
+ Quando você clica o **categorizado** botão, chamadas do Visual Studio a <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interface no objeto que tem o foco para classificar suas propriedades por categoria. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> é implementado o `IDispatch` objeto que é apresentado para o **propriedades** janela.  
   
  Há 11 categorias de propriedade predefinidos, que têm valores negativos. Você pode definir as categorias personalizadas, mas é recomendável que você está atribuindo valores positivos para diferenciá-los a categorias predefinidas.  
   

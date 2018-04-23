@@ -2,28 +2,24 @@
 title: IDebugCoreServer3 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer3
 helpviewer_keywords:
 - IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-caps.latest.revision: 8
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9456ddbe7588217e4864f6f8c8b994bc9323ab76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5066521dbed42790d508becc1a3591dff3ae559d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Essa interface fornece acesso às informações sobre o processo está em execução no servidor.  

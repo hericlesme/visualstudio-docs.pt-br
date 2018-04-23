@@ -1,29 +1,27 @@
 ---
-title: "Lista de serviços disponíveis | Microsoft Docs"
-ms.custom: 
+title: Lista de serviços disponíveis | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
-caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6f2caeaee433fc0c47d8332c4443d104e26a7ee7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-of-available-services"></a>Lista de serviços disponíveis
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]e os seguintes serviços de suporte do SDK do Visual Studio. Alguns pacotes oferecem seus próprios serviços que não estão listados aqui — por exemplo, serviços de idioma não possuem um único GUID de serviço. Você deve usar o nome do idioma para localizar o GUID do serviço de linguagem no registro.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e os seguintes serviços de suporte do SDK do Visual Studio. Alguns pacotes oferecem seus próprios serviços que não estão listados aqui — por exemplo, serviços de idioma não possuem um único GUID de serviço. Você deve usar o nome do idioma para localizar o GUID do serviço de linguagem no registro.  
   
  Use os GUIDs de serviço listados aqui ou obtido de outra origem (por exemplo, serviços de idioma) para obter a interface principal ou interfaces mostrados com cada serviço.  
   

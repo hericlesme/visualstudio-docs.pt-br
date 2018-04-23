@@ -1,26 +1,24 @@
 ---
-title: "Objetos de contexto da seleção | Microsoft Docs"
-ms.custom: 
+title: Objetos de contexto da seleção | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d97dd10661beb5acb28b464a8bc0d88ba5946924
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 04ccc4a57ac7af144c134761119433b7533e9bec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto da seleção
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) usa um objeto de contexto global de seleção para determinar o que deve ser exibido no IDE. Cada janela no IDE pode ter seu próprio objeto de contexto de seleção enviada por push para o contexto da seleção global. O IDE atualiza o contexto da seleção global com valores de uma janela quando a janela tem o foco. Para obter mais informações, consulte [comentários para o usuário](../../extensibility/internals/feedback-to-the-user.md).  

@@ -2,28 +2,24 @@
 title: IDebugEntryPointEvent2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugEntryPointEvent2
 helpviewer_keywords:
 - IDebugEntryPointEvent2 interface
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed45b6d0166a92e9547b7ad76e189108cd2b5e02
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3fa36778960818fa6e4bfbd94f1718a01b2b6294
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 O mecanismo de depuração (DE) envia essa interface para o Gerenciador de sessão de depuração (SDM) quando o programa está prestes a executar sua primeira instrução do código do usuário.  

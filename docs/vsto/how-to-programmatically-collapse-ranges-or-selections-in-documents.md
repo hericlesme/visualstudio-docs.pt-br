@@ -1,12 +1,10 @@
 ---
-title: "Como: programaticamente recolher intervalos ou seleções em documentos | Microsoft Docs"
-ms.custom: 
+title: 'Como: programaticamente recolher intervalos ou seleções em documentos | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,20 +16,21 @@ helpviewer_keywords:
 - collapsing ranges
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c3d3c4d81f8da08e90d7d5588ecaed8e548824a5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d4ce27e141e03b6a3cc84b00321026052893ad9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Como recolher intervalos ou seleções em documentos programaticamente
   Se você estiver trabalhando com um <xref:Microsoft.Office.Interop.Word.Range> ou <xref:Microsoft.Office.Interop.Word.Selection> do objeto, você talvez queira alterar a seleção para um ponto de inserção antes de inserir o texto, para evitar a substituição de texto existente. Tanto o <xref:Microsoft.Office.Interop.Word.Range> e <xref:Microsoft.Office.Interop.Word.Selection> objetos têm um método de recolher, que usam o <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valores de enumeração:  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart>Recolhe a seleção até o início da seleção. Esse é o padrão se você não especificar um valor de enumeração.  
+-   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Recolhe a seleção até o início da seleção. Esse é o padrão se você não especificar um valor de enumeração.  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd>Recolhe a seleção até o final da seleção.  
+-   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> Recolhe a seleção até o final da seleção.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   

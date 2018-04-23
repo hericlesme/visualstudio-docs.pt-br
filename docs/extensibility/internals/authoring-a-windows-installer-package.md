@@ -1,26 +1,24 @@
 ---
-title: "Criação de um pacote do Windows Installer | Microsoft Docs"
-ms.custom: 
+title: Criação de um pacote do Windows Installer | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2055f57e78c348f3f8e53187126588f382f0b944
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 215e1496d35059448cf11457658b7d1270b5677d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-a-windows-installer-package"></a>Criação de um pacote do Windows Installer
 Unidades de dados do modelo do Windows Installer. Em vez de escrever um script de procedimento para copiar arquivos e gravar as entradas do registro, por exemplo, você cria linhas e colunas em tabelas de banco de dados que contêm dados de arquivo e registro.  
@@ -49,9 +47,9 @@ Unidades de dados do modelo do Windows Installer. Em vez de escrever um script d
   
 -   Conjunto de Ferramentas XML do Windows Installer  
   
-     O conjunto de ferramentas cria pacotes do Windows Installer XML dos arquivos de origem. O conjunto de ferramentas é um projeto de código-fonte aberto da Microsoft. Você pode baixar o código-fonte e os executáveis de [http://sourceforge.net/projects/wix](http://sourceforge.net/projects/wix).  
+     O conjunto de ferramentas cria pacotes do Windows Installer XML dos arquivos de origem. O conjunto de ferramentas é um projeto de código-fonte aberto da Microsoft. Você pode baixar o código-fonte e os executáveis de [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
- Para os produtos comerciais integram [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], consulte [http://visualstudiogallery.com](http://visualstudiogallery.com/).  
+ Para os produtos comerciais integram [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], consulte [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
   
 ## <a name="see-also"></a>Consulte também  
  [Instalar VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

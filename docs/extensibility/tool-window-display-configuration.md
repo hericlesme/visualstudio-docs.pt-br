@@ -1,26 +1,24 @@
 ---
-title: "Ferramenta de configuração de exibição da janela | Microsoft Docs"
-ms.custom: 
+title: Ferramenta de configuração de exibição da janela | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramenta
 Quando um VSPackage registra uma janela de ferramenta, a posição padrão, tamanho, estilo de encaixe e outras informações de visibilidade é especificado em valores opcionais. Para obter mais informações sobre o registro da janela da ferramenta, consulte [janelas de ferramenta no registro](../extensibility/tool-windows-in-the-registry.md)  
@@ -44,7 +42,7 @@ HKEY_LOCAL_MACHINE\
 |Nome|REG_SZ|"O nome curto aqui"|Um nome curto que descreve a janela da ferramenta. Usado somente para referência no registro.|  
 |Float|REG_SZ|"X1, Y1, X2, Y2"|Quatro valores separados por vírgula. X1, Y1 é a coordenada do canto superior esquerdo da janela de ferramentas. X2, Y2 é a coordenada do canto inferior direito. Todos os valores estão em coordenadas da tela.|  
 |Estilo|REG_SZ|"MDI"<br /><br /> "Flutuar"<br /><br /> "Vincular"<br /><br /> "Guias"<br /><br /> "AlwaysFloat"|Uma palavra-chave especificando inicial exibir o estado da janela de ferramentas.<br /><br /> "MDI" = encaixado com janela MDI.<br /><br /> "Flutuar" = flutuante.<br /><br /> "Vincular" = vinculado a outra janela (especificada na entrada de janela).<br /><br /> "Guias" = combinada com outra janela de ferramenta.<br /><br /> "AlwaysFloat" = não pode ser encaixada.<br /><br /> Para obter mais informações, consulte a seção de comentários abaixo.|  
-|Janela|REG_SZ|*\<GUID >*|O GUID de uma janela para que a janela da ferramenta pode ser vinculada ou com guias. O GUID pode pertencer a uma das suas próprias janelas ou as janelas do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
+|Janela|REG_SZ|*\<GUID &GT;*|O GUID de uma janela para que a janela da ferramenta pode ser vinculada ou com guias. O GUID pode pertencer a uma das suas próprias janelas ou as janelas do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
 |{1&gt;Orientação&lt;1}|REG_SZ|"Esquerda"<br /><br /> "Direita"<br /><br /> "Top"<br /><br /> "Inferior"|Consulte a seção de comentários abaixo.|  
 |DontForceCreate|REG_DWORD|0 ou 1|Quando essa entrada estiver presente e seu valor não for zero, a janela é carregada, mas não imediatamente exibida.|  
   
@@ -91,7 +89,7 @@ HKEY_LOCAL_MACHINE\
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
 |(Padrão)|REG_SZ|Nenhum|Deixe em branco.|  
-|*\<GUID >*|REG_DWORD ou REG_SZ|0 ou uma cadeia de caracteres descritiva.|Opcional. Nome da entrada deve ser o GUID de um comando que exigem a visibilidade. O valor contém apenas uma cadeia de caracteres informativa. Normalmente, o valor é um `reg_dword` definido como 0.|  
+|*\<GUID &GT;*|REG_DWORD ou REG_SZ|0 ou uma cadeia de caracteres descritiva.|Opcional. Nome da entrada deve ser o GUID de um comando que exigem a visibilidade. O valor contém apenas uma cadeia de caracteres informativa. Normalmente, o valor é um `reg_dword` definido como 0.|  
   
 ### <a name="example"></a>Exemplo  
   

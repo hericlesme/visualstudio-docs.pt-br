@@ -1,27 +1,25 @@
 ---
 title: Dentro do Visual Studio SDK | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fff6b720c11f3342a5894489186f57d397dd91b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Por dentro do SDK do Visual Studio
 Esta seção fornece informações detalhadas sobre as extensões do Visual Studio, incluindo arquitetura do Visual Studio, componentes, serviços, esquemas, utilitários e assim por diante.  
@@ -94,7 +92,7 @@ Exibição geral da arquitetura do Visual Studio
   
  Para obter mais informações, consulte [projetos](../../extensibility/internals/projects.md) e [soluções](../../extensibility/internals/solutions.md).  
   
-## <a name="project-and-item-templates"></a>Modelos de projeto e Item  
+## <a name="project-and-item-templates"></a>Modelos de item e de projeto  
  O Visual Studio inclui modelos de projeto predefinidos e modelos de item de projeto. Você pode também fazer seus próprios modelos ou adquirir modelos da comunidade e integrá-las no Visual Studio. O [Galeria de códigos do MSDN](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) é o lugar certo para modelos e extensões.  
   
  Modelos contêm a estrutura do projeto e arquivos básicos que são necessárias para criar um determinado tipo de aplicativo, controle, biblioteca ou classe. Quando você deseja desenvolver software que se parece com um dos modelos, criar um projeto com base no modelo e, em seguida, modifique os arquivos no projeto.  

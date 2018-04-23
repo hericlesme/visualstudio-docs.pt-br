@@ -2,28 +2,24 @@
 title: IDebugCodeContext2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2
 helpviewer_keywords:
 - IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-caps.latest.revision: 10
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75403c0597b2285aa9117f3ffb51acd01c967f3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b46ec36a93ac91647a3f17aac28187519ca2447
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Essa interface representa a posição inicial de uma instrução de código. Para a maioria das arquiteturas de tempo de execução atualmente, um contexto de código pode ser pensado como um endereço no fluxo de execução do programa.  
@@ -49,7 +45,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Obtém as informações de idioma para este contexto de código.|  
   
 ## <a name="remarks"></a>Comentários  
- A principal diferença entre um `IDebugCodeContext2` interface e um [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface é que um `IDebugCodeContext2` sempre é alinhado à instrução. Isso significa que um `IDebugCodeContext2` sempre está apontando para o início de uma instrução, enquanto um `IDebugMemoryContext2` pode apontar para qualquer bytes de memória na arquitetura de tempo de execução. `IDebugCodeContext2`é incrementado por instruções em vez do tamanho de armazenamento básico (normalmente bytes).  
+ A principal diferença entre um `IDebugCodeContext2` interface e um [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface é que um `IDebugCodeContext2` sempre é alinhado à instrução. Isso significa que um `IDebugCodeContext2` sempre está apontando para o início de uma instrução, enquanto um `IDebugMemoryContext2` pode apontar para qualquer bytes de memória na arquitetura de tempo de execução. `IDebugCodeContext2` é incrementado por instruções em vez do tamanho de armazenamento básico (normalmente bytes).  
   
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: msdbg.h  

@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 1 | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Instruções passo a passo: criando um item de projeto da coluna de site com um modelo de projeto, parte 1
   Projetos SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio, criar seus próprios tipos de item de projeto do SharePoint e, em seguida, associá-los a um modelo de projeto. Neste passo a passo, você definirá um tipo de item de projeto para a criação de uma coluna de site e, em seguida, você criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto da coluna de site.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  Este é um passo a passo autônoma. Depois de concluir este passo a passo, você pode melhorar o item de projeto com a adição de um Assistente para o modelo de projeto. Para obter mais informações, consulte [passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Você pode baixar um exemplo que contém os projetos concluídos, código e outros arquivos para este passo a passo no seguinte local: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Você pode baixar um exemplo que contém os projetos concluídos, código e outros arquivos para este passo a passo no seguinte local: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisará dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  No **nome** , digite **SiteColumnProjectItem**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **SiteColumnProjectItem** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **SiteColumnProjectItem** projeto **Gerenciador de soluções**.  
   
 #### <a name="to-create-the-project-template-project"></a>Para criar o projeto de modelo de projeto  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  No **nome** , digite **SiteColumnProjectTemplate**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **SiteColumnProjectTemplate** projeto à solução.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **SiteColumnProjectTemplate** projeto à solução.  
   
 6.  Exclua o arquivo de código Class1 do projeto.  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  No **nome** , digite **ProjectItemTypeDefinition** e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **ProjectItemTypeDefinition** projeto à solução e abre o arquivo de código Class1 padrão.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **ProjectItemTypeDefinition** projeto à solução e abre o arquivo de código Class1 padrão.  
   
 5.  Exclua o arquivo de código Class1 do projeto.  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   Adiciona `ProjectItem` elementos para cada filethat do incluídos em cada instância de projeto.  
   
-    -   Usa o namespace "http://schemas.microsoft.com/developer/vstemplate/2005". Outros arquivos de projeto nesta solução usam o namespace de "http://schemas.microsoft.com/developer/msbuild/2003". Portanto, as mensagens de aviso de esquema XML serão geradas, mas você pode ignorá-los neste passo a passo.  
+    -   Usa o namespace "http://schemas.microsoft.com/developer/vstemplate/2005". Outros arquivos de projeto desta solução usam o "http://schemas.microsoft.com/developer/msbuild/2003" namespace. Portanto, as mensagens de aviso de esquema XML serão geradas, mas você pode ignorá-los neste passo a passo.  
   
      Para obter mais informações sobre o conteúdo dos arquivos. vstemplate, consulte [referência de esquema de modelo do Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   

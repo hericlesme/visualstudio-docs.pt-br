@@ -1,12 +1,10 @@
 ---
 title: 'Passo a passo: Estendendo um tipo de Item de projeto do SharePoint | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e2f39fc15d73b2019e739d7695f40cf0e3fd0940
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Instruções passo a passo: estendendo um tipo de item do projeto do SharePoint
   Você pode usar o **modelo de conectividade de dados corporativos** item de projeto para criar um modelo para o serviço de conectividade de dados de negócios (BDC) no SharePoint. Por padrão, quando você cria um modelo usando o item de projeto, os dados no modelo não são exibidos aos usuários. Você também deve criar uma lista externa no SharePoint para permitir que os usuários exibir os dados.  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  No **nome** , digite **GenerateExternalDataLists**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **GenerateExternalDataLists** projeto **Gerenciador de soluções**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **GenerateExternalDataLists** projeto **Gerenciador de soluções**.  
   
 7.  Se o arquivo source.extension.vsixmanifest não abrir automaticamente, abra o menu de atalho do projeto GenerateExternalDataLists e, em seguida, escolha **abrir**  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  No **nome** , digite **BdcProjectItemExtension**e, em seguida, escolha o **Okey** botão.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o **BdcProjectItemExtension** projeto à solução e abre o arquivo de código Class1 padrão.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **BdcProjectItemExtension** projeto à solução e abre o arquivo de código Class1 padrão.  
   
 6.  Exclua o arquivo de código Class1 do projeto.  
   

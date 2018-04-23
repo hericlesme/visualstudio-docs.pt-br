@@ -1,12 +1,10 @@
 ---
-title: "Como: criar uma extensão de projeto do SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Como: criar uma extensão de projeto do SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 04/28/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fb0c28ee6f9408ed417f570ce4a3ab1dc500c295
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a47e7c4fbd78241d52b30ed80ab59eb548ab97d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Como criar uma extensão do projeto do SharePoint
   Crie uma extensão de projeto quando você deseja adicionar funcionalidade a qualquer projeto do SharePoint que está aberto no Visual Studio. Para obter mais informações, consulte [estendendo o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  

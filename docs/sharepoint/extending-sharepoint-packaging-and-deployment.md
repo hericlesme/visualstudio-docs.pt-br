@@ -1,13 +1,10 @@
 ---
-title: "Estendendo o SharePoint empacotamento e implantação | Microsoft Docs"
-ms.custom: 
+title: Estendendo o SharePoint empacotamento e implantação | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c91c78e6ab78ac39eb5c53c32a70ead895129df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>Estendo pacote e implantação do SharePoint
   Você pode estender o empacotamento e o processo de implantação para projetos do SharePoint.
@@ -33,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  Para uma explicação passo a passo que demonstre como criar uma etapa de implantação, consulte [passo a passo: Criando uma etapa de implantação personalizada para projetos SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ##  <a name="creating-deployment-configurations"></a>Criando configurações de implantação  
- Uma configuração de implantação é um conjunto de etapas de implantação que é executado para um determinado projeto, mas pode afetar todos os itens de projeto do SharePoint. Cada configuração de implantação inclui um conjunto de etapas que é executado quando o projeto é implantado e outro conjunto que é executado quando o projeto está recolhido. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]inclui duas configurações de implantação interna, mas você também pode criar seus próprios. Quando você cria uma configuração de implantação, você pode incluir etapas de implantação interna e etapas de implantação que você criar.  
+ Uma configuração de implantação é um conjunto de etapas de implantação que é executado para um determinado projeto, mas pode afetar todos os itens de projeto do SharePoint. Cada configuração de implantação inclui um conjunto de etapas que é executado quando o projeto é implantado e outro conjunto que é executado quando o projeto está recolhido. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] inclui duas configurações de implantação interna, mas você também pode criar seus próprios. Quando você cria uma configuração de implantação, você pode incluir etapas de implantação interna e etapas de implantação que você criar.  
   
  Para uma explicação passo a passo que demonstre como criar uma configuração de implantação, consulte [passo a passo: Criando uma etapa de implantação personalizada para projetos SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   

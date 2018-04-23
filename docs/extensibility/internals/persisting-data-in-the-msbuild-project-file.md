@@ -2,26 +2,22 @@
 title: Manter os dados no arquivo de projeto MSBuild | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 12
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 324f9dfd4e381e9580e4940f06f652ef64d9d3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Manter os dados no arquivo de projeto do MSBuild
 Talvez seja necessário um subtipo de projeto manter dados específicos de subtipo para o arquivo de projeto para uso posterior. Um subtipo de projeto usa a persistência de arquivo de projeto para atender aos seguintes requisitos:  
@@ -45,7 +41,7 @@ Talvez seja necessário um subtipo de projeto manter dados específicos de subti
 ## <a name="persisting-build-related-information"></a>Manter informações de compilação  
  Persistência de dados úteis para a criação de um projeto é tratada pelo MSBuild. O sistema de MSBuild mantém uma tabela mestre de informações relacionadas à compilação. Subtipos de projeto são responsáveis por acessar esses dados para obter e definir valores de propriedade. Subtipos de projeto também podem ampliar a tabela de dados relacionados a compilação Adicionando propriedades adicionais para ser persistente e remover propriedades de forma que eles não são persistentes.  
   
- Para modificar os dados do MSBuild, um subtipo de projeto é responsável por recuperar o objeto de propriedade de MSBuild do sistema de projeto base por <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>é uma interface implementada no sistema de projeto principal e as agregação consultas de subtipo de projeto para ela executando `QueryInterface`.  
+ Para modificar os dados do MSBuild, um subtipo de projeto é responsável por recuperar o objeto de propriedade de MSBuild do sistema de projeto base por <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> é uma interface implementada no sistema de projeto principal e as agregação consultas de subtipo de projeto para ela executando `QueryInterface`.  
   
  O procedimento a seguir descreve as etapas para remover uma propriedade usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
   

@@ -2,26 +2,22 @@
 title: Comandos que devem ser executados após a instalação | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-caps.latest.revision: 22
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84f1651f311fbad7aefe40a2744c61dc7d81725c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que devem ser executados após a instalação
 Se você implantar sua extensão por meio de um arquivo. msi, você deve executar `devenv /setup` como parte da instalação para que o Visual Studio para descobrir suas extensões.  
@@ -73,7 +69,7 @@ Se você implantar sua extensão por meio de um arquivo. msi, você deve executa
  Ações personalizadas devem ser criadas para a tabela InstallExecuteSequence para agendá-los para execução durante a instalação. Use a propriedade correspondente em cada linha da coluna de condição para impedir que a ação personalizada sejam executados se essa versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] não está instalado no sistema.  
   
 > [!NOTE]
->  `Null`propriedades avaliadas como `False` quando usado em condições.  
+>  `Null` propriedades avaliadas como `False` quando usado em condições.  
   
  O valor da coluna de sequência para cada ação personalizada depende de outros valores de sequência no pacote do Windows Installer. Valores de sequência devem ser, de modo que as ações personalizadas devenv.exe executar como perto possível imediatamente antes da ação padrão InstallFinalize.  
   

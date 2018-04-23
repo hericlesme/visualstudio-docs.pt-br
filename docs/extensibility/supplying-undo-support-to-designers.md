@@ -1,27 +1,23 @@
 ---
 title: Fornecendo suporte aos Designers de desfazer | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornecendo suporte de desfazer para Designers
 Designers, editores, como o normalmente precisam dar suporte a operações de desfazer para que os usuários podem reverter suas alterações recentes ao modificar um elemento de código.  
@@ -30,7 +26,7 @@ Designers, editores, como o normalmente precisam dar suporte a operações de de
   
  Implementações de designer que precisam para fornecer suporte para o recurso desfazer:  
   
--   Fornece gerenciamento de desfazer ao implementar a classe base abstrata<xref:System.ComponentModel.Design.UndoEngine>  
+-   Fornece gerenciamento de desfazer ao implementar a classe base abstrata <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   Forneça persistência e CodeDOM dão suporte ao implementar a <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e <xref:System.ComponentModel.Design.IComponentChangeService> classes.  
   
@@ -73,7 +69,7 @@ Designers, editores, como o normalmente precisam dar suporte a operações de de
   
  O SDK de ambiente fornece suporte de CodeDOM e persistência fornecendo:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>como um implementações das<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> como um implementações das <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  Um <xref:System.ComponentModel.Design.IComponentChangeService> fornecidos pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]' host de design.  
   
@@ -100,7 +96,7 @@ Designers, editores, como o normalmente precisam dar suporte a operações de de
   
 -   Alterações de propriedade são feitas por meio de <xref:System.ComponentModel.TypeDescriptor> objeto.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>eventos são gerados manualmente quando uma alteração não pode ser desfeita é confirmada.  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> eventos são gerados manualmente quando uma alteração não pode ser desfeita é confirmada.  
   
 -   A modificação no designer de foi criada dentro do contexto de um <xref:System.ComponentModel.Design.DesignerTransaction>.  
   

@@ -1,27 +1,25 @@
 ---
 title: Usando Assemblies de interoperabilidade do Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, interop assemblies
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ca0ff9a75d72bc723b767a43f12123094a520644
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Usando Assemblies de interoperabilidade do Visual Studio
 Assemblies de interoperabilidade do Visual Studio permitem que aplicativos gerenciados acessar as interfaces COM que fornecem a extensibilidade do Visual Studio. Há algumas diferenças entre as interfaces normais e suas versões de interoperabilidade. Por exemplo, HRESULTs são geralmente representados como valores de int e precisam ser manipulados da mesma maneira como exceções e parâmetros (especialmente os parâmetros de saída) são tratados de forma diferente.  
@@ -32,7 +30,7 @@ Assemblies de interoperabilidade do Visual Studio permitem que aplicativos geren
  Por padrão, <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> gera uma exceção sempre que é passado um HRESULT que tem um valor menor que zero. Em casos onde tais HRESULTs são valores aceitáveis e nenhuma exceção deve ser gerada, os valores de HRESULTS adicionais devem ser passados para <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> depois que os valores são testados. Se o HRESULT que está sendo testado corresponde a quaisquer valores HRESULT passados explicitamente para <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, nenhuma exceção é lançada.  
   
 > [!NOTE]
->  O <xref:Microsoft.VisualStudio.VSConstants> classe contém constantes para os HRESULTS comuns, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.S_OK> e <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTS, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> e <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants>também fornece o <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> e <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> métodos que correspondem às macros êxito e falha no COM.  
+>  O <xref:Microsoft.VisualStudio.VSConstants> classe contém constantes para os HRESULTS comuns, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.S_OK> e <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTS, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> e <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> também fornece o <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> e <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> métodos que correspondem às macros êxito e falha no COM.  
   
  Por exemplo, considere a seguinte chamada de função, na qual <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> é um valor de retorno aceitável, mas qualquer outro HRESULT menor que zero representa um erro.  
   
@@ -47,7 +45,7 @@ Assemblies de interoperabilidade do Visual Studio permitem que aplicativos geren
 ## <a name="returning-hresults-to-com-from-managed-code"></a>Retornando HRESULTS para COM do código gerenciado  
  Se nenhuma exceção ocorrer, gerenciados código retorna <xref:Microsoft.VisualStudio.VSConstants.S_OK> para a função COM que o chamou. Interoperabilidade COM oferece suporte a exceções comuns que são fortemente tipadas no código gerenciado. Por exemplo, um método que recebe um inaceitável `null` argumento lança um <xref:System.ArgumentNullException>.  
   
- Se você não tiver certeza de qual exceção a ser lançada, mas você sabe o HRESULT que você deseja retornar ao COM, você pode usar o <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> método para lançar uma exceção apropriada. Isso funciona mesmo com um erro não padrão, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>tenta mapear o HRESULT passado a uma exceção fortemente tipada. Se não for possível, ele lança uma exceção COM genéricos em vez disso. O resultado final é que o HRESULT que você passar para <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> de código gerenciado é retornado para a função COM que o chamou.  
+ Se você não tiver certeza de qual exceção a ser lançada, mas você sabe o HRESULT que você deseja retornar ao COM, você pode usar o <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> método para lançar uma exceção apropriada. Isso funciona mesmo com um erro não padrão, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> tenta mapear o HRESULT passado a uma exceção fortemente tipada. Se não for possível, ele lança uma exceção COM genéricos em vez disso. O resultado final é que o HRESULT que você passar para <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> de código gerenciado é retornado para a função COM que o chamou.  
   
 > [!NOTE]
 >  Exceções de comprometem o desempenho e são destinadas para indicar as condições de programa anormal. Condições que ocorrem com frequência devem ser manipulada embutida, em vez de uma exceção lançada.  

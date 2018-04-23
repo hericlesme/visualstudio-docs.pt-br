@@ -1,12 +1,10 @@
 ---
-title: "Arquitetura de soluções do Office no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Arquitetura de soluções do Office no Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], architecture
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 021d080cd37044f0365b8535f1df99c1669cf092
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5b62fc532ba2caeaaf07bb4069aaa5a41820f804
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Arquitetura de soluções do Office no Visual Studio
   Os tópicos nesta seção fornecem informações sobre o funcionam das soluções criadas usando as ferramentas de desenvolvedor do Office no Visual Studio.  
@@ -47,16 +46,16 @@ ms.lasthandoff: 01/10/2018
  Explica como as propriedades de documento personalizadas funcionam em personalizações no nível do documento.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Visão geral sobre o desenvolvimento de soluções do Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Visão geral sobre o desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Fornece uma introdução ao uso do Microsoft Office como uma plataforma para desenvolver soluções de negócios.  
   
- [Guia de Introdução &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Fornece links para informações sobre como configurar um computador de desenvolvimento para criar Office soluções, como começar a criar soluções e o que mudou desde as versões anteriores das ferramentas de desenvolvedor do Office no Visual Studio.  
   
  [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
  Fornece links para informações sobre como criar soluções do Office.  
   
- [Referência geral &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Referência geral &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Fornece links para informações sobre o usuário elementos da interface em projetos do Office, o aplicativo e manifestos de implantação para projetos do Office e APIs no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
   

@@ -1,27 +1,25 @@
 ---
-title: "Adicionar um controle de usuário para a página inicial | Microsoft Docs"
-ms.custom: 
+title: Adicionar um controle de usuário para a página inicial | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 448eba0d13a9501c328da79fa31fa66f4376d5df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2bec2b4ab834eb55bd34a80f9e6a30931e3cd325
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adicionar um controle de usuário para a página inicial
 Este passo a passo mostra como adicionar uma referência DLL para uma página inicial personalizada. O exemplo adiciona um controle de usuário para a solução, cria o controle de usuário e, em seguida, faz referência ao assembly compilado do arquivo. XAML de página inicial. Uma nova guia hospeda o controle de usuário, que funciona como um navegador da Web básico.  
@@ -178,7 +176,7 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
   
 1.  Copie seu arquivo XAML e quaisquer arquivos de texto de suporte ou marcação arquivos, como o **%USERPROFILE%\My Documentos\Visual Studio 2015\StartPages\\**  pasta.  
   
-2.  Se sua página inicial referenciar os controles ou tipos em assemblies que não estão instalados pelo Visual Studio, copie os assemblies e, em seguida, cole-os em *pasta de instalação do Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Se sua página inicial referenciar os controles ou tipos em assemblies que não estão instalados pelo Visual Studio, copie os assemblies e, em seguida, cole-os em * pasta de instalação do Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  Em um prompt de comando do Visual Studio, digite **/rootsuffix devenv Exp** para abrir uma instância experimental do Visual Studio.  
   

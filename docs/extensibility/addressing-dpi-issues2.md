@@ -1,22 +1,19 @@
 ---
-title: "Endereçamento de DPI Problemas2 | Microsoft Docs"
-ms.custom: 
+title: Endereçamento de DPI Problemas2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc0801d3fb43188ac3371ed7e5e7394b0e3aad72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="addressing-dpi-issues"></a>Resolvendo problemas de DPI
 Um número crescente de dispositivos é fornecidos com telas "alta resolução". Normalmente, essas telas têm mais de 200 pixels por polegada (ppi). Trabalhar com um aplicativo nesses computadores exigirá o conteúdo a ser expandido para atender às necessidades de exibir o conteúdo em uma distância de exibição normal para o dispositivo. A partir de 2014, o destino principal de alta densidade exibe é móvel (tablets, laptops clamshell e celulares) de dispositivos de computação.  

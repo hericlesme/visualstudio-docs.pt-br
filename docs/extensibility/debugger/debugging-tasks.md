@@ -1,27 +1,23 @@
 ---
-title: "Tarefas de depuração | Microsoft Docs"
-ms.custom: 
+title: Tarefas de depuração | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1a6ffff4d3ac0410ca3de7e2cd595119763e88b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 77cc933c49e15786221fd1cd3eb7e242118527a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-tasks"></a>Tarefas de depuração
 Para depurar um programa, ele deve ser iniciado e um mecanismo de depuração (DE) deve ser anexado a ele, caso contrário, o DE deve ser anexado a um programa iniciado anteriormente. Depois de conectado, o DE deve gerar determinados eventos de inicialização. Em resposta, o pacote de depuração tenta associar os pontos de interrupção definidos no IDE. Quando o programa atingir um ponto de interrupção associado, ele é interrompida e aguarda a entrada do usuário.  

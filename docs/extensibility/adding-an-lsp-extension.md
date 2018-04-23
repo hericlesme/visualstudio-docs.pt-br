@@ -1,25 +1,21 @@
 ---
-title: "Adicionar uma extensão do protocolo de idioma do servidor | Microsoft Docs"
-ms.custom: 
+title: Adicionar uma extensão do protocolo de idioma do servidor | Microsoft Docs
+ms.custom: ''
 ms.date: 11/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: bb6c82eab6878e99c9840ed593d9b9993056d391
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Adicionar uma extensão do protocolo de idioma do servidor
 
@@ -56,17 +52,17 @@ inicializado | sim
 desligamento | sim
 Sair | sim
 $/ cancelRequest | sim
-window/showMessage | sim
+janela/showMessage | sim
 window/showMessageRequest | sim
-window/logMessage | sim
+janela/logMessage | sim
 evento de telemetria / |
-client/registerCapability |
-client/unregisterCapability |
+cliente/registerCapability |
+cliente/unregisterCapability |
 workspace/didChangeConfiguration | sim
 workspace/didChangeWatchedFiles | sim
 espaço de trabalho/símbolo | sim
 workspace/executeCommand | sim
-workspace/applyEdit | sim
+espaço de trabalho/applyEdit | sim
 textDocument/publishDiagnostics | sim
 textDocument/didOpen | sim
 textDocument/didChange | sim
@@ -75,10 +71,10 @@ textDocument/willSaveWaitUntil |
 textDocument/didSave | sim
 textDocument/didClose | sim
 textDocument/conclusão | sim
-completion/resolve | sim
+conclusão e resolver | sim
 textDocument/hover | sim
 textDocument/signatureHelp | sim
-textDocument/references | sim
+textDocument/referências | sim
 textDocument/documentHighlight |
 textDocument/documentSymbol | sim
 textDocument/formatação | sim
@@ -90,7 +86,7 @@ textDocument/codeLens |
 codeLens/resolve |
 textDocument/documentLink |
 documentLink/resolve |
-textDocument/rename | sim
+textDocument/renomear | sim
 
 ## <a name="getting-started"></a>Guia de Introdução
 
@@ -117,7 +113,7 @@ Crie uma nova dependência semelhante ao seguinte:
 * **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
 * **Intervalo de versão**: [1.0,2.0)
 * **Como a dependência é resolvida**: instalado por usuário
-* **Download URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
+* **URL de download**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
 
 > [!NOTE]
 > O **baixar URL** devem ser preenchidos para os usuários a instalar sua extensão saibam como instalar a dependência necessária.
@@ -336,7 +332,7 @@ Siga estas etapas abaixo para adicionar suporte para configurações para sua ex
 
   ![Editar vspackage ativo](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
+  * **Tipo**: Microsoft.VisualStudio.VsPackage
   * **Origem**: arquivo no sistema de arquivos
   * **Caminho**: [caminho do arquivo pkgdef]
 

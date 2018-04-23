@@ -1,34 +1,32 @@
 ---
-title: "Guia de Introdução ao depurador extensibilidade | Microsoft Docs"
-ms.custom: 
+title: Guia de Introdução ao depurador extensibilidade | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 98d6e0200c1a68ae3819d3276ce8a04aaada2e78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Guia de Introdução ao depurador de extensibilidade
 O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece as informações que você deve ter para criar e personalizar os componentes do depurador usados para depurar programas de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]depuração adicionou melhorias derivadas a usabilidade ampla teste executado no anterior [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuradores. Você pode usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração para percorrer um aplicativo de vários idioma, ou você pode implementar durante a execução de edição de variáveis durante a depuração de aplicativos e soluções de vários idiomas.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração adicionou melhorias derivadas a usabilidade ampla teste executado no anterior [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuradores. Você pode usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração para percorrer um aplicativo de vários idioma, ou você pode implementar durante a execução de edição de variáveis durante a depuração de aplicativos e soluções de vários idiomas.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]depuração é executada fora do processo com o programa que está sendo depurado e, portanto, menos intrusiva no espaço de processo do aplicativo. Portanto, é mais fácil de escrever componentes que interagem com o depurador sem afetar seu programa de depuração.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] depuração é executada fora do processo com o programa que está sendo depurado e, portanto, menos intrusiva no espaço de processo do aplicativo. Portanto, é mais fácil de escrever componentes que interagem com o depurador sem afetar seu programa de depuração.  
   
  Usar melhor o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], você deve estar familiarizado com o seguinte:  
   

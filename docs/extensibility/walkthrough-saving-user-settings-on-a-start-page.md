@@ -1,23 +1,21 @@
 ---
-title: "Passo a passo: Salvando as configurações do usuário em uma página de início | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Salvando as configurações do usuário em uma página de início | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8ea4d4a07ed9f61f20ca2b3f79b99d3a2ebfa0b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Passo a passo: Salvando as configurações do usuário em uma página de início
 Você pode persistir as configurações do usuário para sua página inicial. Seguindo este passo a passo, você pode criar um controle que salva uma configuração no registro quando o usuário clica em um botão e, em seguida, recupera a configuração toda vez que carrega a página de início. Como o modelo de projeto de página inicial inclui um controle de usuário personalizável, e o XAML de página inicial padrão chama esse controle, você não precisa modificar a página de início em si.  

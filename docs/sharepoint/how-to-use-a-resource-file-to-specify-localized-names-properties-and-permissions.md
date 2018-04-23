@@ -1,12 +1,10 @@
 ---
-title: "Como: usar um arquivo de recurso para especificar nomes localizados, propriedades e permissões | Microsoft Docs"
-ms.custom: 
+title: 'Como: usar um arquivo de recurso para especificar nomes localizados, propriedades e permissões | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], resource strings
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 144d81b2835479ee8cfdff0657814070cff813db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 58c8d74e29144a525eb33031fb98e25051d0305f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Como usar um arquivo de recurso para especificar nomes localizados, propriedades e permissões
   Usando um arquivo de recursos, fornecer nomes localizados, definir propriedades e aplicar permissões tor objetos que são definidos em um modelo de conectividade de dados de negócios (BDC). Para especificar essas informações, você adiciona um **recursos de conectividade de dados de negócios** item a um projeto que contém um **modelo de conectividade de dados corporativos** item. Em seguida, especifique nomes, propriedades e permissões editando o XML para o arquivo de recurso.  

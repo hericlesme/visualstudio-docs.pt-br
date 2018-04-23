@@ -1,13 +1,10 @@
 ---
-title: "Configurando um computador para desenvolver soluções do Office | Microsoft Docs"
-ms.custom: 
+title: Configurando um computador para desenvolver soluções do Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b63b3b495b9cb15ea3e9eeedcecedb3a384f8a0
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 59c00639ce839962c06cacf3c036a5cd8f74b508
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-a-computer-to-develop-office-solutions"></a>Configurando um computador para desenvolver soluções do Office
 
@@ -54,7 +51,7 @@ Se você continuar tendo problemas, consulte [suporte adicional para erros em so
 
 ## <a name="see-also"></a>Consulte também
 
-[Guia de Introdução &#40; desenvolvimento do Office no Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+[Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
 [Como configurar um computador para desenvolver soluções do Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
 [Como instalar o tempo de execução redistribuível das Ferramentas do Visual Studio para o Office](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
 [Como instalar assemblies de interoperabilidade primários do Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

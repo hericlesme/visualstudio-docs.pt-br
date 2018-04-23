@@ -1,13 +1,10 @@
 ---
-title: "Solução de problemas do SharePoint empacotamento e implantação | Microsoft Docs"
-ms.custom: 
+title: Solução de problemas do SharePoint empacotamento e implantação | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
 - VS.SharePointTools.Project.PackageRetraction
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b30c17b9b20c59085fc8a684e3b9735daa0e019c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Solucionando problemas de pacote e implantação do SharePoint
   Este tópico abrange vários problemas que você pode encontrar ao empacotar e implantar soluções do SharePoint.
@@ -42,7 +39,7 @@ ms.lasthandoff: 03/02/2018
  Para diagnosticar entre o Visual Studio, SharePoint e outras camadas, você pode usar a chave de registro EnableDiagnostics para exibir o rastreamento de pilha. Para obter mais informações, consulte [soluções do SharePoint de depuração](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="adding-project-output-to-the-solution-package"></a>Adicionando Saída do Projeto ao Pacote de Solução
- Você pode adicionar a saída do projeto para um pacote por meio do Designer de pacote. No entanto, quando você adiciona a saída do projeto, certifique-se de que a plataforma do projeto corresponda à plataforma da solução do SharePoint. Recomendamos que você use o **qualquer CPU** destino da plataforma para os assemblies que você deseja implantar em um servidor do SharePoint. Para obter mais informações, consulte [página de compilação, Designer de projeto &#40; Visual Basic &#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) e [Avançado da caixa de diálogo de configurações de compilador &#40; Visual Basic &#41; ](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Você pode adicionar a saída do projeto para um pacote por meio do Designer de pacote. No entanto, quando você adiciona a saída do projeto, certifique-se de que a plataforma do projeto corresponda à plataforma da solução do SharePoint. Recomendamos que você use o **qualquer CPU** destino da plataforma para os assemblies que você deseja implantar em um servidor do SharePoint. Para obter mais informações, consulte [página de compilação, Designer de projeto &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) e [caixa de diálogo de configurações de compilador avançadas &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
 
 ## <a name="validation-warnings-and-errors"></a>Avisos e Erros de Validação
  As ferramentas de desenvolvimento do SharePoint no Visual Studio executam etapas de validação para verificar se o pacote de solução está formado corretamente. Você também pode criar etapas de validação personalizada para seus recursos e pacotes. Para obter mais informações, consulte [como: Criar recurso de personalizada e regras de validação de pacote para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).

@@ -1,12 +1,10 @@
 ---
-title: "Passo a passo: Criar uma coluna de Site, o tipo de conteúdo e a lista do SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Criar uma coluna de Site, o tipo de conteúdo e a lista do SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Instruções passo a passo: criar uma coluna de site, tipo de conteúdo e lista do SharePoint
   Os procedimentos a seguir demonstram como criar colunas personalizadas de site do SharePoint — ou *campos*— bem como um tipo de conteúdo que usa as colunas de site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>Criar colunas de Site personalizadas  
+##  <a name="BKMK_CreatingCustSiteCols"></a> Criar colunas de Site personalizadas  
  Este exemplo cria uma lista de gerenciamento de pacientes em um hospital. Primeiro, você deve criar um projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e adicionar colunas de site, da seguinte maneira.  
   
 #### <a name="to-create-the-project"></a>Para criar o projeto  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Usando o mesmo procedimento, adicione mais duas colunas de site para o projeto: **ID do paciente** (tipo = "Integer") e **nome Doctor** (tipo = "Text"). Definir seu valor de grupo **clínica Site colunas**.  
   
-##  <a name="BKMK_CreateCustContType"></a>Criando um tipo de conteúdo personalizado  
+##  <a name="BKMK_CreateCustContType"></a> Criando um tipo de conteúdo personalizado  
  Em seguida, crie um tipo de conteúdo, com base no tipo de conteúdo contatos — que inclui as colunas de site que você criou no procedimento anterior. Baseando um tipo de conteúdo em um tipo de conteúdo existente, você pode poupar tempo porque o tipo de conteúdo base fornece várias colunas de site para uso no novo tipo de conteúdo.  
   
 #### <a name="to-create-a-custom-content-type"></a>Para criar um tipo de conteúdo personalizado  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. Na barra de menus, escolha **arquivo**, **Salvar tudo**e, em seguida, feche o designer de tipo de conteúdo.  
   
-##  <a name="BKMK_CreateList"></a>Criando uma lista  
+##  <a name="BKMK_CreateList"></a> Criando uma lista  
  Agora, crie uma lista que usa as novas colunas de site e o tipo de conteúdo.  
   
 #### <a name="to-create-a-list"></a>Para criar uma lista  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. No **nome de coluna** , escolha **paciente nome**, verifique se o **classificação** coluna é definida como **crescente**e, em seguida, escolha o  **Okey** botão.  
   
-##  <a name="BKMK_TestApp"></a>Testando o aplicativo  
+##  <a name="BKMK_TestApp"></a> Testando o aplicativo  
  Agora que as colunas de um site personalizado, o tipo de conteúdo e a lista estiverem prontos, implantá-los para o SharePoint e execute o aplicativo para testá-lo.  
   
 #### <a name="to-test-the-application"></a>Para testar o aplicativo  

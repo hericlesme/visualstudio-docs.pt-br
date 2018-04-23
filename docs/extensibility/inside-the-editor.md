@@ -1,27 +1,23 @@
 ---
 title: Dentro do Editor | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-editor"></a>Dentro do Editor
 O editor é composto de um número de subsistemas diferentes, que são projetados para impedir que o editor de texto separado de modelo a exibição de texto e a interface do usuário.  
@@ -50,7 +46,7 @@ O editor é composto de um número de subsistemas diferentes, que são projetado
   
 -   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a>Visão geral dos subsistemas  
+##  <a name="overview"></a> Visão geral dos subsistemas  
   
 ### <a name="text-model-subsystem"></a>Subsistema do modelo de texto  
  O subsistema de modelo de texto é responsável por que representa o texto e habilitar sua manipulação. O subsistema de modelo de texto contém o <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface, que descreve a sequência de caracteres que devem ser exibidos pelo editor. Esse texto pode ser modificado, rastreado e manipulado de várias maneiras. O modelo de texto também fornece tipos para os seguintes aspectos:  
@@ -80,7 +76,7 @@ O editor é composto de um número de subsistemas diferentes, que são projetado
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Examinar mais detalhadamente o modelo de texto e a exibição de texto  
   
-###  <a name="textmodel"></a>O modelo de texto  
+###  <a name="textmodel"></a> O modelo de texto  
  O subsistema de modelo de texto consiste em diferentes grupos de tipos de texto. Isso inclui o buffer de texto, os instantâneos de texto e os intervalos de texto.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>Buffers de texto e texto instantâneos  
@@ -135,7 +131,7 @@ abXefYj
   
  Apenas uma <xref:Microsoft.VisualStudio.Text.ITextEdit> objeto pode ser instanciado para um buffer de texto a qualquer momento, e todas as edições de texto devem ser executadas no thread que possui o buffer de texto (se a propriedade tenha sido solicitada). Uma edição de texto pode ser abandonada chamando seu `Cancel` método ou seu `Dispose` método.  
   
- <xref:Microsoft.VisualStudio.Text.ITextBuffer>também fornece `Insert()`, `Delete()`, e `Replace()` métodos semelhantes aos encontrados no <xref:Microsoft.VisualStudio.Text.ITextEdit> interface. Chamar esses tem o mesmo efeito que criar um <xref:Microsoft.VisualStudio.Text.ITextEdit> objeto, fazendo a chamada semelhante e, em seguida, aplicar a edição.  
+ <xref:Microsoft.VisualStudio.Text.ITextBuffer> também fornece `Insert()`, `Delete()`, e `Replace()` métodos semelhantes aos encontrados no <xref:Microsoft.VisualStudio.Text.ITextEdit> interface. Chamar esses tem o mesmo efeito que criar um <xref:Microsoft.VisualStudio.Text.ITextEdit> objeto, fazendo a chamada semelhante e, em seguida, aplicar a edição.  
   
 #### <a name="tracking-points-and-tracking-spans"></a>Pontos de controle e intervalos de rastreamento  
  Um <xref:Microsoft.VisualStudio.Text.ITrackingPoint> representa uma posição de caractere em um buffer de texto. Se o buffer for editado de maneira que faz com que a posição do caractere a ser deslocado, o ponto de controle se desloca com ele. Por exemplo, se um ponto de controle se refere à posição 10 em um buffer e cinco caracteres são inseridos no início do buffer, o ponto de controle, em seguida, refere-se à posição 15. Se uma inserção ocorrer em precisamente a posição indicada pelo ponto de controle, seu comportamento é determinado pelo seu <xref:Microsoft.VisualStudio.Text.PointTrackingMode>, que pode ser `Positive` ou `Negative`. Se o modo de controle for positivo, que o ponto de controle refere-se para o mesmo caractere, que agora está no final da inserção; Se o modo de controle for negativo, o ponto de controle se refere ao primeiro caractere inserido na posição original. Se o caractere na posição que é representado por um ponto de controle for excluído, o ponto de controle muda para o primeiro caractere que segue o intervalo excluído. Por exemplo, se um ponto de controle se refere ao caractere na posição 5, e os caracteres em posições 3 a 6 são excluídos, o ponto de controle refere-se para o caractere na posição 3.  
@@ -153,7 +149,7 @@ abXefYj
   
  Os desenvolvedores podem definir seus próprios tipos de conteúdo e registrá-los usando o <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Muitos recursos do editor podem ser definidos em relação a um tipo específico de conteúdo usando o <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Por exemplo, margens de editor, ornamentos e manipuladores de mouse podem ser definidos para que elas se aplicam somente aos editores que exibem tipos específicos de conteúdo.  
   
-###  <a name="textview"></a>A exibição de texto  
+###  <a name="textview"></a> A exibição de texto  
  A parte de modo de exibição do padrão de controller (MVC) de modo de exibição de modelo define a exibição de texto, a formatação do modo de exibição, os elementos gráficos, como a barra de rolagem e o cursor. Todos os elementos de apresentação do editor do Visual Studio são baseados em WPF.  
   
 #### <a name="text-views"></a>Modos de exibição de texto  
@@ -181,7 +177,7 @@ abXefYj
 #### <a name="formatted-text"></a>Texto formatado  
  O texto que é exibido em uma exibição de texto é composto de <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> objetos. Cada linha da exibição de texto corresponde a uma linha de texto no modo de exibição de texto. Longas linhas no buffer de texto subjacente podem ser parcialmente obscurecidas (se a quebra automática não estiver habilitada) ou divididas em várias linhas de exibição de texto. O <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> interface contém métodos e propriedades para o mapeamento entre as coordenadas e caracteres e para os ornamentos que podem ser associados à linha.  
   
- <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>objetos são criados usando um <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> interface. Se você estiver preocupado apenas com o texto que é exibido atualmente no modo de exibição, você pode ignorar a origem da formatação. Se você estiver interessado no formato de texto que não é exibido no modo de exibição (por exemplo, para dar suporte a um rich text recortar e colar), você pode usar <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> para formatar o texto em um buffer de texto.  
+ <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> objetos são criados usando um <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> interface. Se você estiver preocupado apenas com o texto que é exibido atualmente no modo de exibição, você pode ignorar a origem da formatação. Se você estiver interessado no formato de texto que não é exibido no modo de exibição (por exemplo, para dar suporte a um rich text recortar e colar), você pode usar <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> para formatar o texto em um buffer de texto.  
   
  Formatos de exibição de texto de um <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> por vez.  
   
@@ -202,7 +198,7 @@ abXefYj
   
 -   IntelliSense  
   
-###  <a name="tagsandclassifiers"></a>As marcas e classificadores  
+###  <a name="tagsandclassifiers"></a> As marcas e classificadores  
  Marcas são marcadores que estão associados um intervalo de texto. Podem ser apresentados de maneiras diferentes, por exemplo, usando cores de texto, sublinhados, gráficos ou pop-ups. Classificadores são um tipo de marca.  
   
  Outros tipos de marcas são <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> para realce de texto, <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> para a estrutura de tópicos, e <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> para erros de compilação.  
@@ -234,14 +230,14 @@ abXefYj
   
  Um <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> é um mapa de um tipo de classificação para um conjunto de propriedades de formatação de texto. A implementação do mapa do formato no editor manipula todas as exportações de formatos de classificação.  
   
-###  <a name="adornments"></a>Adornos  
+###  <a name="adornments"></a> Adornos  
  Adornos são efeitos gráficos que não estão diretamente relacionados a fonte e a cor dos caracteres na exibição de texto. Por exemplo, o sublinhado Rabisco vermelho que é usado para marcar não compilar o código em muitas linguagens de programação é um adorno inserido e dicas de ferramenta são ornamentos pop-up. Adornos são derivados de <xref:System.Windows.UIElement> e implementar <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Dois tipos especializados de marca de adorno são o <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, para ornamentos que ocupam o mesmo espaço que o texto em uma exibição, e o <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, para o sublinhado Rabisco.  
   
  Adornos inseridos são gráficos que fazem parte do modo de exibição de texto formatado. Eles são organizados em diferentes camadas de ordem Z. Há três camadas internas, da seguinte maneira: texto, o cursor e a seleção. No entanto, os desenvolvedores podem definir mais camadas e colocá-los na ordem em relação um ao outro. Os três tipos de adornos inseridos são ornamentos relativos a texto (que move quando move o texto e são excluídas quando o texto é excluído), ornamentos relativos a exibição (que têm a ver com texto não partes da exibição) e controlado pelo proprietário ornamentos (os desenvolvedor deve gerenciar sua colocação).  
   
  Pop-up ornamentos são gráficos que aparecem em uma janela pequena acima da exibição de texto, por exemplo, as dicas de ferramenta.  
   
-###  <a name="projection"></a>Projeção  
+###  <a name="projection"></a> Projeção  
  Projeção é uma técnica para a criação de um tipo de buffer de texto que não armazena, na verdade, texto, mas em vez disso, combina o texto dos outros buffers de texto diferente. Por exemplo, um buffer de projeção pode ser usado para concatenar o texto dos dois outros buffers e apresentará o resultado como se ele está em um buffer, ou para ocultar partes do texto em um buffer. Um buffer de projeção pode agir como um buffer de origem para outro buffer de projeção. Um conjunto de buffers que são relacionadas pela projeção pode ser construído para reorganizar o texto de várias maneiras diferentes. (Esse conjunto também é conhecido como um *gráfico buffer*.) O recurso de estrutura de tópicos de texto do Visual Studio é implementado usando um buffer de projeção para ocultar o texto recolhido e o editor do Visual Studio para páginas ASP.NET usa projeção para oferecer suporte a idiomas inseridos, como Visual Basic e c#.  
   
  Um <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> é criado usando <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Um buffer de projeção é representado por uma sequência ordenada de <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objetos que são conhecidos como *intervalos de origem*. O conteúdo desses intervalos é apresentado como uma cadeia de caracteres. Os buffers de texto do qual as extensões de origem são desenhadas são nomeados *buffers de origem*. Os clientes de um buffer de projeção não precisa estar ciente de que ele difere de um buffer de texto comum.  
@@ -275,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>Eventos e Buffers de projeção  
  Quando um buffer de projeção é modificado, as modificações são enviadas do buffer de projeção para os buffers que dependem dele. Depois que todos os buffers são modificados, são gerados eventos de alteração de buffer, iniciando com o buffer de nível mais profundo.  
   
-###  <a name="outlining"></a>Estrutura de tópicos  
+###  <a name="outlining"></a> Estrutura de tópicos  
  Estrutura de tópicos é a capacidade de expandir ou recolher diferentes blocos de texto em uma exibição de texto. Estrutura de tópicos é definida como um tipo de <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, na mesma maneira que ornamentos são definidos. A <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> é uma marca que define uma região de texto que pode ser expandida ou recolhida. Para usar a estrutura de tópicos, você deve importar o <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> para obter um <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Enumera o Gerenciador de estrutura de tópicos, recolhe e expande os diferentes blocos, que são representados como <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> objetos e gera eventos adequadamente.  
   
-###  <a name="mousebindings"></a>Associações de mouse  
+###  <a name="mousebindings"></a> Associações de mouse  
  Associações de mouse vincular movimentos de mouse a comandos diferentes. As associações de mouse são definidas usando um <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, e as associações de chave são definidas usando um <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. O <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> automaticamente todas as associações de instancia e conecta-se para eventos de mouse no modo de exibição.  
   
  O <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> interface contém manipuladores de eventos de pós-processamento e pré-processar para eventos de mouse diferente. A alça de um dos eventos, você pode substituir alguns dos métodos na <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a>Operações do Editor  
+###  <a name="editoroperations"></a> Operações do Editor  
  Operações do Editor podem ser usadas para automatizar a interação com o editor, para scripts ou outros propósitos. Você pode importar o <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> para operações de acesso em um determinado <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Você pode usar esses objetos para modificar a seleção, rolar a exibição ou mover o cursor para diferentes partes da exibição.  
   
-###  <a name="intellisense"></a>IntelliSense  
+###  <a name="intellisense"></a> IntelliSense  
  O IntelliSense dá suporte a conclusão de instrução, a Ajuda de assinatura (também conhecido como informações de parâmetro), informações rápidas e lâmpadas.  
   
  Conclusão de instrução fornece listas pop-up de conclusões potenciais para nomes de método, os elementos XML e outros elementos de codificação ou marcação. Em geral, um gesto do usuário invoca uma sessão de conclusão. A sessão exibe a lista de possíveis conclusões e o usuário pode selecionar um ou descartar a lista. O <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> é responsável por criar e disparar o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. O <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> calcula o <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> de itens de conclusão para a sessão.  

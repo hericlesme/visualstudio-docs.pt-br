@@ -1,27 +1,25 @@
 ---
-title: "Escolhendo entre VSPackages compartilhados e com controle de versão | Microsoft Docs"
-ms.custom: 
+title: Escolhendo entre VSPackages compartilhados e com controle de versão | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SxS
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 20613722410bbe57231177eefafec79184d7741f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ce7f58d664c6a186146272af16324be2fee90983
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Escolhendo entre VSPackages compartilhados e com controle de versão
 Diferentes versões do Visual Studio podem coexistir no mesmo computador. VSPackages pode dar suporte a qualquer combinação de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versões.  

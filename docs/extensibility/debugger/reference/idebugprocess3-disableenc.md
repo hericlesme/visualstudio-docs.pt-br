@@ -2,28 +2,24 @@
 title: IDebugProcess3::DisableENC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::DisableENC
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fba3718052b708b5c5d88306c022ed9c397a99cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2da464c82332f6fc4f9bcd57ee8197e111e9fa0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Esse método explicitamente desativa edita e continuar com esse processo (e todos os programas que ele contém). Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.  

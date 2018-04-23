@@ -1,23 +1,21 @@
 ---
-title: "Criando um adorno de exibição, comandos e configurações | Microsoft Docs"
-ms.custom: 
+title: Criando um adorno de exibição, comandos e configurações | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Passo a passo: Criando um adorno de exibição, comandos e configurações (guias de coluna)
 Você pode estender o editor de texto/código do Visual Studio com comandos e efeitos de exibição.  Este tópico mostra como começar com um recurso de extensão populares, guias de coluna.  Guias de coluna são visualmente leves linhas desenhadas em modo de exibição do editor de texto para ajudá-lo a gerenciar seu código para as larguras das colunas específicas.  Código especificamente formatado pode ser importante para os exemplos incluem em documentos, postagens de blog ou relatórios de erros.  
@@ -54,13 +52,13 @@ Você pode estender o editor de texto/código do Visual Studio com comandos e ef
   
 -   Há um `ColumnGuideCommands` objeto que implementa os comandos do usuário e conecta os manipuladores de comando para comandos declarado no arquivo. VSCT.  
   
- **VSIX**.  Use **arquivo &#124; Novo...**  comando para criar um projeto.  Escolha o nó de extensibilidade em c# no painel de navegação à esquerda e escolha **projeto VSIX** no painel direito.  Digite o nome ColumnGuides e escolha **Okey** para criar o projeto.  
+ **VSIX**.  Use **arquivo &#124; novo...**  comando para criar um projeto.  Escolha o nó de extensibilidade em c# no painel de navegação à esquerda e escolha **projeto VSIX** no painel direito.  Digite o nome ColumnGuides e escolha **Okey** para criar o projeto.  
   
- **Exibir adornos**.  Pressione o botão direito do ponteiro no nó do projeto no Gerenciador de soluções.  Escolha o **Adicionar &#124; Novo Item...**  comando para adicionar um novo item de adorno de exibição.  Escolha **extensibilidade &#124; Editor de** no painel de navegação à esquerda e escolha **Editor visor adorno** no painel direito.  Digite o nome ColumnGuideAdornment como o nome do item e escolha **adicionar** para adicioná-lo.  
+ **Exibir adornos**.  Pressione o botão direito do ponteiro no nó do projeto no Gerenciador de soluções.  Escolha o **adicionar &#124; Novo Item...**  comando para adicionar um novo item de adorno de exibição.  Escolha **extensibilidade &#124; Editor** no painel de navegação à esquerda e escolha **Editor visor adorno** no painel direito.  Digite o nome ColumnGuideAdornment como o nome do item e escolha **adicionar** para adicioná-lo.  
   
  Você pode ver este modelo de item adicionado dois arquivos ao projeto (bem como referências e assim por diante): ColumnGuideAdornment.cs e ColumnGuideAdornmentTextViewCreationListener.cs.  Os modelos apenas desenhar um retângulo de roxo no modo de exibição.  Abaixo você alterar algumas linhas no ouvinte de criação de exibição e substituir o conteúdo de ColumnGuideAdornment.cs.  
   
- **Comandos**.  Pressione o botão direito do ponteiro no nó do projeto no Gerenciador de soluções.  Escolha o **Adicionar &#124; Novo Item...**  comando para adicionar um novo item de adorno de exibição.  Escolha **extensibilidade &#124; VSPackage** no painel de navegação à esquerda e escolha **comando personalizado** no painel direito.  Digite o nome ColumnGuideCommands como o nome do item e escolha **adicionar** para adicioná-lo.  Além de várias referências, adicionar o pacote e os comandos adicionados ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs e ColumnGuideCommandsPackage.vsct.  A seguir, você substituirá o conteúdo dos arquivos e o sobrenome para definir e implementar os comandos.  
+ **Comandos**.  Pressione o botão direito do ponteiro no nó do projeto no Gerenciador de soluções.  Escolha o **adicionar &#124; Novo Item...**  comando para adicionar um novo item de adorno de exibição.  Escolha **extensibilidade &#124; VSPackage** no painel de navegação à esquerda e escolha **comando personalizado** no painel direito.  Digite o nome ColumnGuideCommands como o nome do item e escolha **adicionar** para adicioná-lo.  Além de várias referências, adicionar o pacote e os comandos adicionados ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs e ColumnGuideCommandsPackage.vsct.  A seguir, você substituirá o conteúdo dos arquivos e o sobrenome para definir e implementar os comandos.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Configurar o ouvinte de criação de exibição de texto  
  Abra ColumnGuideAdornmentTextViewCreationListener.cs no editor.  Esse código implementa um manipulador para sempre que o Visual Studio cria os modos de exibição de texto.  Há atributos que controlam quando o manipulador é chamado dependendo das características do modo de exibição.  
@@ -1214,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`tem que investigar um pouco para obter um <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> exibição do código.  Se o rastreamento por meio de `GetActiveTextView`, `GetActiveView`, e `GetTextViewFromVsTextView`, você pode ver como fazer isso.  A seguir está o código relevante abstraído, começando com a seleção atual, em seguida, obtendo quadro da seleção e Obtendo DocView do quadro como um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, obtendo um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> do IVsTextView, obtendo um host do modo de exibição, e Por fim o IWpfTextView:  
+ `GetCurrentEditorColumn` tem que investigar um pouco para obter um <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> exibição do código.  Se o rastreamento por meio de `GetActiveTextView`, `GetActiveView`, e `GetTextViewFromVsTextView`, você pode ver como fazer isso.  A seguir está o código relevante abstraído, começando com a seleção atual, em seguida, obtendo quadro da seleção e Obtendo DocView do quadro como um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, obtendo um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> do IVsTextView, obtendo um host do modo de exibição, e Por fim o IWpfTextView:  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1288,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  Com a coluna atual em mãos onde o usuário clicou, o código apenas chama no Gerenciador de configurações para adicionar ou remover a coluna.  O Gerenciador de configurações de aciona o evento ao qual todos os `ColumnGuideAdornment` objetos escutam.  Quando o evento é acionado, esses objetos atualizar seus modos de exibição de texto associada com novas configurações de guia de coluna.  
   
 ## <a name="invoking-command-from-the-command-window"></a>Invocar comando na janela de comando  
- O exemplo de guias de coluna permite aos usuários invocar os dois comandos na janela de comando como uma forma de extensibilidade.  Se você usar o **exibição &#124; Outras janelas &#124; Janela de comando** de comando, você pode ver a janela de comando.  Você pode interagir com a janela de comando digitando "Editar" e com a conclusão de nome de comando e fornecer o argumento 120, você tem o seguinte:  
+ O exemplo de guias de coluna permite aos usuários invocar os dois comandos na janela de comando como uma forma de extensibilidade.  Se você usar o **exibição &#124; outras janelas &#124; janela comando** de comando, você pode ver a janela de comando.  Você pode interagir com a janela de comando digitando "Editar" e com a conclusão de nome de comando e fornecer o argumento 120, você tem o seguinte:  
   
 ```  
 > Edit.AddColumnGuide 120  

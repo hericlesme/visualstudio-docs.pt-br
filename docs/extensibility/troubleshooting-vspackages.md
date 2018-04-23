@@ -1,26 +1,24 @@
 ---
 title: Solucionando problemas de VSPackages | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c4c2fc24775cee3d40857166d3415f90b2adf756
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73c754de72238671dd10235e792c43fb6d0a1b5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 Estes são problemas comuns que você pode ter com o VSPackage e dicas para resolver os problemas.  
@@ -103,7 +101,7 @@ Estes são problemas comuns que você pode ter com o VSPackage e dicas para reso
   
     2.  Adicione esse **símbolo local do arquivo (. PDB)**:  
   
-         [http://MSDL.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)  
+         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)  
   
     3.  Para melhorar o desempenho, especifique uma pasta de cache de símbolo, por exemplo:  
   

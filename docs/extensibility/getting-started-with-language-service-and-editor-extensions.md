@@ -2,26 +2,22 @@
 title: Introdução ao serviço de linguagem e as extensões de Editor | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-caps.latest.revision: 21
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e36f4a6b0f8cb37a5ede782c24c7593285b7705
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introdução ao serviço de linguagem e extensões do Editor
 Você pode usar extensões de editor para adicionar recursos de serviço de linguagem, como a estrutura de tópicos, correspondência de chaves, IntelliSense e lâmpadas para sua linguagem de programação ou a qualquer tipo de conteúdo. Você também pode personalizar a aparência e comportamento do editor do Visual Studio, por exemplo texto cores, margens, ornamentos e outros elementos visuais. Você também pode definir seu próprio tipo de conteúdo e especificar a aparência e o comportamento dos modos de exibição de texto no qual o conteúdo será exibido.  
