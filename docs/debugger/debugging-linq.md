@@ -1,12 +1,9 @@
 ---
 title: Depurando LINQ | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +16,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52b4c9eb74207e966c17a212b9a9181293581297
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-linq"></a>Depurando LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferece suporte à depuração de código de consulta integrado da linguagem (LINQ), com algumas restrições. A maioria dos recursos de depuração funcionam com instruções LINQ, incluindo a depuração, definição de pontos de interrupção e exibição de resultados em janelas de depuração. Este tópico descreve as principais limitações de depuração de LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>Exibindo resultados de LINQ  
+##  <a name="BKMK_ViewingLINQResults"></a> Exibindo resultados de LINQ  
  É possível exibir o resultado de uma declaração LINQ usando DataTips, a janela de observação, e a caixa de diálogo QuickWatch. Ao usar uma janela de origem, você pode pausar o ponteiro em uma consulta na janela de origem e um DataTip aparecerá. É possível copiar uma variável LINQ e colá-la na janela de observação ou na caixa de diálogo QuickWatch.  
   
  Em LINQ, uma consulta não é avaliada quando é criada ou declarada, mas somente quando a consulta é usada. Portanto, a consulta não terá um valor até ser avaliada. Para obter uma descrição completa de criação de consulta e avaliação, consulte [Introdução às consultas do LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) ou [gravar sua consulta LINQ primeiro](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -44,7 +41,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Avaliar uma consulta pode resultar em efeitos colaterais, que são alterações no valor dos dados ou no estado do seu programa. Nem todas as consultas têm efeitos colaterais. Para determinar se uma consulta pode ser avaliada com segurança sem efeitos colaterais, você deverá compreender o código que implementa a consulta.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Revisão e LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Revisão e LINQ  
  Quando estiver depurando o código LINQ, a depuração terá algumas diferenças de comportamento que você deve saber.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -108,7 +105,7 @@ End Function
   
  A consulta revisada chama a função `IsEven` em cada passo por meio de `items`. É possível usar as janelas de depuração para ver se cada item está de acordo com a condição especificada, e você pode percorrer o código em `IsEven`. O predicado neste exemplo é bastante simples. No entanto, se você tem um predicado mais difícil que precisa depurar, essa técnica pode ser muito útil.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Editar e continuar não tem suporte para LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Editar e continuar não tem suporte para LINQ  
  Editar e continuar dá suporte a alterações em consultas LINQ com limitações. Para obter detalhes, consulte [EnC suporte para alterações](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Consulte também  

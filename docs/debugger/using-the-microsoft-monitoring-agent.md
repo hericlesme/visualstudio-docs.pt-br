@@ -1,23 +1,20 @@
 ---
 title: Usando o Microsoft Monitoring Agent | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a7df107cbf6170e603978358d49df167596208a4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usando o Microsoft Monitoring Agent
 Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e do SharePoint 2010 ou 2013 aplicativos para erros, problemas de desempenho ou outros problemas usando **Microsoft Monitoring Agent**. Você pode salvar eventos de diagnóstico do agente em um arquivo de log do IntelliTrace (.iTrace). Em seguida, você pode abrir o log no Visual Studio Enterprise (mas não nas edições Professional ou comunidade) para depurar problemas com todas as ferramentas de diagnóstico do Visual Studio. Você também pode coletar dados de diagnóstico do IntelliTrace e método executando o agente em **rastreamento** modo. Microsoft Monitoring Agent podem ser integrado com [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) e [do System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado.  
@@ -35,10 +32,10 @@ Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e d
   
 3.  [Etapa 3: Salvar registrado eventos](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a>Etapa 1: Configurar o agente de monitoramento da Microsoft  
+##  <a name="SetUpMonitoring"></a> Etapa 1: Configurar o agente de monitoramento da Microsoft  
  Configure o agente autônomo no servidor Web para realizar o monitoramento local sem alterar seu aplicativo. Se você usar o System Center 2012, consulte [instalar o Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
   
-###  <a name="SetUpStandaloneMMA"></a>Configurar o agente independente  
+###  <a name="SetUpStandaloneMMA"></a> Configurar o agente independente  
   
 1.  Verifique se:  
   
@@ -67,7 +64,7 @@ Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e d
   
 ### <a name="q--a"></a>Perguntas e respostas  
   
-####  <a name="PowerShell2"></a>P: E se eu tiver o Windows PowerShell 2.0?  
+####  <a name="PowerShell2"></a> P: E se eu tiver o Windows PowerShell 2.0?  
  **R:** é altamente recomendável que você use o PowerShell 3.0. Do contrário, você precisará importar os cmdlets do Microsoft Monitoring Agent PowerShell sempre que executar o PowerShell. Você também não terá acesso ao conteúdo baixável da Ajuda.  
   
 1.  Abra um **do Windows PowerShell** ou **o Windows PowerShell ISE** janela de prompt de comando como administrador.  
@@ -78,7 +75,7 @@ Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e d
   
 3.  [Visite a TechNet](http://technet.microsoft.com/systemcenter/default) para obter o conteúdo da Ajuda mais recente.  
   
-####  <a name="FullPermissionsITLog"></a>P: como configurar permissões para o pool de aplicativos?  
+####  <a name="FullPermissionsITLog"></a> P: como configurar permissões para o pool de aplicativos?  
  **R:** usar as janelas **icacls** de comando ou use o Windows Explorer (ou Explorador de arquivos). Por exemplo:  
   
 -   Para configurar as permissões com o Windows **icacls** comando:  
@@ -109,7 +106,7 @@ Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e d
   
     7.  Verifique se o pool de aplicativos tem **ler & executar** permissões.  
   
-##  <a name="MonitorEvents"></a>Etapa 2: Iniciar o monitoramento de seu aplicativo  
+##  <a name="MonitorEvents"></a> Etapa 2: Iniciar o monitoramento de seu aplicativo  
  Usar o Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) comando para iniciar o monitoramento de seu aplicativo. Se você usar o System Center 2012, consulte [Monitorando aplicativos Web com o Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
   
 1.  No seu servidor web, abra um **do Windows PowerShell** ou **o Windows PowerShell ISE** janela de prompt de comando como administrador.  
@@ -148,7 +145,7 @@ Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e d
   
 ### <a name="q--a"></a>Perguntas e respostas  
   
-####  <a name="Minimizing"></a>P: como faço a maioria dos dados sem desacelerar o meu aplicativo?  
+####  <a name="Minimizing"></a> P: como faço a maioria dos dados sem desacelerar o meu aplicativo?  
  **R:** Microsoft Monitoring Agent pode coletar muitos dados e afeta o desempenho do seu aplicativo dependendo dos dados que você optar por coletar e como coletá-los. Estas são algumas das maneiras de obter a maioria dos dados sem deixar seu aplicativo mais lento:  
   
 -   Para aplicativos Web e aplicativos do SharePoint, o agente grava os dados de todos os aplicativos que compartilham o pool de aplicativos especificado. Isso talvez deixe mais lento qualquer aplicativo que compartilhe o mesmo pool de aplicativos, mesmo que você possa restringir a coleta aos módulos de um único aplicativo. Para evitar que outros aplicativos fiquem mais lentos, hospede cada aplicativo em seu próprio pool de aplicativos.  
@@ -229,7 +226,7 @@ Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e d
   
  O agente registra valores de `id`, `Employee.Id`, `Employee.Name` e o objeto `Employee` retornado pelo método `AlterEmployee`. Entretanto, o agente não registra informações sobre o objeto `Address` que não sejam se ele era nulo ou não. O agente também não registra dados sobre variáveis locais no método `AlterEmployee`, a menos que outros métodos usem essas variáveis locais como parâmetros em que eles são gravados como parâmetros de método.  
   
-##  <a name="SaveEvents"></a>Etapa 3: Salvar registrado eventos  
+##  <a name="SaveEvents"></a> Etapa 3: Salvar registrado eventos  
  Quando você encontrar um erro ou um problema de desempenho, salve os eventos registrados em um log do IntelliTrace. O agente só criará o log se tiver registrado eventos. Se você usar o System Center 2012, consulte [Monitorando aplicativos Web com o Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Salvar eventos registrados, mas continuar monitorando  

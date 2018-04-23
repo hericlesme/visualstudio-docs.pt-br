@@ -1,25 +1,22 @@
 ---
-title: Criar e configurar conjuntos de dados no Visual Studio | Microsoft Docs
-ms.custom: 
+title: Criar e configurar conjuntos de dados no Visual Studio
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: da81d141e453e0106d329565338f7893b4fad758
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: d7aac502f32941d825fda77c43ae07e82c4e9db3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Criar e configurar conjuntos de dados no Visual Studio
 
@@ -93,4 +90,4 @@ Este procedimento mostra como adicionar uma tabela de banco de dados mesmo que v
 
 ## <a name="see-also"></a>Consulte também
 
-[Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

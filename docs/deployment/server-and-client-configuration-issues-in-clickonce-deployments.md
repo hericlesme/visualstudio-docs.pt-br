@@ -1,12 +1,9 @@
 ---
-title: "Servidor e problemas de configuração de cliente em implantações do ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Servidor e problemas de configuração de cliente em implantações do ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - Windows applications, ClickOnce deployments
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
-caps.latest.revision: "33"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 077333237d1b384208355be7edb1aeb184678a05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar o Internet Information Services (IIS) no Windows Server e a implantação contém um tipo de arquivo que o Windows não reconhece, como um arquivo do Microsoft Word, o IIS recusará a transmitir o arquivo e a implantação não terá êxito.  
@@ -51,7 +48,7 @@ Se você usar o Internet Information Services (IIS) no Windows Server e a implan
  Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo funcionará bem com SSL, exceto quando o Internet Explorer gera um aviso sobre o certificado SSL. O prompt pode ser gerado quando há algo errado com o certificado, tais como quando os nomes de site não coincidem ou o certificado expirou. Para fazer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] trabalha em uma conexão SSL, certifique-se de que o certificado está atualizado e que os dados do certificado correspondem aos dados do site.  
   
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce e autenticação de Proxy  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]fornece suporte para autenticação integrada do Windows do proxy a partir do .NET Framework 3.5. Não há diretivas de Machine. config específica serão necessárias. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]não dá suporte para outros protocolos de autenticação como básica ou Digest.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fornece suporte para autenticação integrada do Windows do proxy a partir do .NET Framework 3.5. Não há diretivas de Machine. config específica serão necessárias. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não dá suporte para outros protocolos de autenticação como básica ou Digest.  
   
  Você também pode aplicar um hotfix para .NET Framework 2.0 para habilitar esse recurso. Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkId=158730.  
   
@@ -96,7 +93,7 @@ Se você usar o Internet Information Services (IIS) no Windows Server e a implan
  Se você usar o Visual Studio para publicar um aplicativo ClickOnce, você não pode especificar uma unidade mapeada como o local de instalação. No entanto, você pode modificar o aplicativo ClickOnce para instalar de uma unidade mapeada usando o gerador de manifesto e o Editor (Mage.exe e MageUI.exe). Para obter mais informações, consulte [Mage.exe (ferramenta de edição e geração de manifesto)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) e [MageUI.exe (ferramenta de edição, cliente gráfico e geração de manifesto)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocolo FTP não tem suporte para instalação de aplicativos  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]dá suporte à instalação de aplicativos de qualquer servidor da Web HTTP 1.1 ou o servidor de arquivos. Não há suporte para o FTP, o protocolo de transferência de arquivo, para instalar aplicativos. Você pode usar o FTP para publicar aplicativos somente. A tabela a seguir resume essas diferenças:  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dá suporte à instalação de aplicativos de qualquer servidor da Web HTTP 1.1 ou o servidor de arquivos. Não há suporte para o FTP, o protocolo de transferência de arquivo, para instalar aplicativos. Você pode usar o FTP para publicar aplicativos somente. A tabela a seguir resume essas diferenças:  
   
 |Tipo de URL|Descrição|  
 |--------------|-----------------|  
@@ -122,7 +119,7 @@ Se você usar o Internet Information Services (IIS) no Windows Server e a implan
   
 -   Se você criar um tipo de MIME com a extensão "*" e o tipo MIME "application/octet-stream", ele permitirá arquivos desbloqueado do tipo de arquivo a ser baixado. (No entanto, bloqueado arquivo não podem ser baixados tipos como. aspx e. asmx).  
   
- Para obter instruções específicas sobre como configurar os tipos de MIME no Windows Server, consulte o artigo da Base de dados de Conhecimento Microsoft KB326965, "IIS 6.0 Does não servem desconhecido tipos MIME" em [http://support.microsoft.com/default.aspx?scid=kb;en-us;326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+ Para obter instruções específicas sobre como configurar os tipos de MIME no Windows Server, consulte o artigo da Base de dados de Conhecimento Microsoft KB326965, "IIS 6.0 Does não servem desconhecido tipos MIME" em [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Mapeamentos de tipo de conteúdo  
  Ao publicar por meio de HTTP, o tipo de conteúdo (também conhecido como o tipo MIME) para o arquivo. Application deve ser "application/x-ms-application." Se você tiver [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] instalado no servidor, isso será definido para você automaticamente. Se isso não estiver instalado, você precisa criar uma associação de tipo MIME para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vroot do aplicativo (ou todo o servidor).  

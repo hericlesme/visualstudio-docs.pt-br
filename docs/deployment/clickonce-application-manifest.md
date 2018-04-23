@@ -1,12 +1,9 @@
 ---
 title: Manifesto do aplicativo ClickOnce | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,21 +12,21 @@ helpviewer_keywords:
 - application manifests [ClickOnce]
 - ClickOnce, application manifests
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a7df31b2d76639ec0eedc353e857fc1c0c8df39b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52d5a288444b1e98df75e6748fa31176b27211b0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-application-manifest"></a>Manifesto de aplicativo ClickOnce
 Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto do aplicativo é um arquivo XML que descreve um aplicativo que é implantado usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]manifestos de aplicativo têm os seguintes elementos e atributos.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos de aplicativo têm os seguintes elementos e atributos.  
   
 |Elemento|Descrição|Atributos|  
 |-------------|-----------------|----------------|  
