@@ -1,12 +1,10 @@
 ---
-title: "Itens de host e visão geral dos controles de Host | Microsoft Docs"
-ms.custom: 
+title: Itens de host e visão geral dos controles de Host | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -38,13 +36,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 84e0b2cf74eb8c0d3faca8d1c28d3bea91c87f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="host-items-and-host-controls-overview"></a>Visão geral dos Controles de Host e dos Itens de Host
   Itens de host e controles de host são tipos que ajudam a fornecer o modelo de programação para soluções do Office que são criadas usando as ferramentas de desenvolvimento do Office no Visual Studio. Itens de host e controles de host tornam interagir com os modelos de objeto do Microsoft Office Word e Microsoft Office Excel, que são baseados em COM, mais como interagir com os objetos gerenciados, como controles de formulários do Windows.  
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
  O <xref:Microsoft.Office.Tools.Excel.Workbook> item de host não agir como um contêiner para controles que têm uma interface do usuário. Em vez disso, o designer para este item de host funciona como uma bandeja de componente, que permite que você arrasta um componente, como um <xref:System.Data.DataSet>, para sua superfície de design. Para obter mais informações, consulte [Item de Host de pasta de trabalho](../vsto/workbook-host-item.md).  
   
- Itens de host não podem ser criados programaticamente projetos no nível de documento. Em vez disso, use o `ThisDocument`, `ThisWorkbook`, ou `Sheet`  *n*  classes que gera automaticamente em seu projeto do Visual Studio em tempo de design. Essas classes geradas derivam de itens de host, e eles fornecem um ponto de entrada para seu código. Para obter mais informações, consulte [limitações programáticas de itens de Host e controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Itens de host não podem ser criados programaticamente projetos no nível de documento. Em vez disso, use o `ThisDocument`, `ThisWorkbook`, ou `Sheet` *n* classes que gera automaticamente em seu projeto do Visual Studio em tempo de design. Essas classes geradas derivam de itens de host, e eles fornecem um ponto de entrada para seu código. Para obter mais informações, consulte [limitações programáticas de itens de Host e controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>Noções básicas sobre itens de Host em projetos de suplemento do VSTO  
  Quando você criar um suplemento do VSTO, você não tem acesso a qualquer item de host por padrão. No entanto, você pode gerar <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, e <xref:Microsoft.Office.Tools.Excel.Worksheet> hospedar itens no Word e suplementos do Excel VSTO em tempo de execução.  

@@ -1,12 +1,10 @@
 ---
-title: "Como: obter dados para um nó SharePoint interno no Gerenciador de servidores | Microsoft Docs"
-ms.custom: 
+title: 'Como: obter dados para um nó SharePoint interno no Gerenciador de servidores | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cf70fe2e24f88ba64ab648d18d93907de0ddbfaf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f448ec8d7cfe22495aa3f7b2ce9191f106205c33
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Como obter dados para um nó SharePoint interno no Gerenciador de Servidores
-  Para cada nó SharePoint interno no **Server Explorer**, você pode obter dados para o componente do SharePoint subjacente que representa o nó. Para obter mais informações, consulte [estendendo o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
+  Para cada nó SharePoint interno no **Server Explorer**, você pode obter dados para o componente do SharePoint subjacente que representa o nó. Para obter mais informações, consulte [Estendendo o Nó de Conexões do SharePoint no Gerenciador de Servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir demonstra como obter dados para a lista do SharePoint subjacente que representa uma lista de nós em **Server Explorer**. Por padrão, nós da lista têm um **exibir no navegador** item de menu de contexto que você pode clicar para abrir a lista em um navegador da Web. Este exemplo estende a nós da lista, adicionando um **exibição no Visual Studio** item de menu de contexto que abre as listas diretamente no Visual Studio. O código que acessa os dados de lista para o nó obter a URL da lista para abrir no Visual Studio.  

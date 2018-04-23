@@ -1,26 +1,24 @@
 ---
-title: "Configuração de compilação de projeto | Microsoft Docs"
-ms.custom: 
+title: Configuração de compilação de projeto | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2d8f37068d197d133ba8798703c8f82093261aca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d78ac1cabc356db162639d3eb19d0bff71e295e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para criação
 A lista de configurações de solução para uma determinada solução é gerenciada pela caixa de diálogo Configurações da solução.  
@@ -51,9 +49,9 @@ Dependências do projeto
 > [!NOTE]
 >  Foram adicionados projetos na lista que têm suas caixas de seleção marcadas, mas esmaecidos pelo ambiente de devido a dependências explícitas especificado pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces e não pode ser alterado. Por exemplo, adicionando uma referência de projeto de um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projeto para outro projeto automaticamente adiciona uma dependência de compilação que só pode ser removida se você excluir a referência. Os projetos cujas caixas de seleção estão desmarcadas e esmaecidos não podem ser selecionados porque isso criaria um loop de dependência (por exemplo, Project1 seria dependente Project2 e Project2 seria dependente Project1), que deve parar a compilação.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]processos de compilação incluem a compilação típica e as operações de link que são invocadas com um único comando de compilação. Também haverá suporte para dois outros processos de compilação: uma operação de limpeza para excluir todos os itens de saída de uma compilação anterior e uma verificação de atualização para determinar se um item de saída em uma configuração foi alterada.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] processos de compilação incluem a compilação típica e as operações de link que são invocadas com um único comando de compilação. Também haverá suporte para dois outros processos de compilação: uma operação de limpeza para excluir todos os itens de saída de uma compilação anterior e uma verificação de atualização para determinar se um item de saída em uma configuração foi alterada.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>objetos de retorno correspondente <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (retornado de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) para gerenciar seus processos de compilação. Para relatar o status de uma operação de compilação enquanto estiver ocorrendo, configurações de fazer chamadas para <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, uma interface implementada pelo ambiente e qualquer outro objeto interessado nos eventos de status de compilação.  
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> objetos de retorno correspondente <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (retornado de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) para gerenciar seus processos de compilação. Para relatar o status de uma operação de compilação enquanto estiver ocorrendo, configurações de fazer chamadas para <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, uma interface implementada pelo ambiente e qualquer outro objeto interessado nos eventos de status de compilação.  
   
  Após a criação, as definições de configuração podem ser usadas para determinar se eles podem ser executados sob o controle do depurador. Implementam configurações <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> para oferecer suporte à depuração.  
   
