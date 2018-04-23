@@ -1,13 +1,9 @@
 ---
-title: "Definir um observador variáveis no Visual Studio | Microsoft Docs"
+title: Definir um observador variáveis no Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +15,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 187c9e682877a0f0633e7d3210454d40cae9de0f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Definir variáveis usando as janelas de QuickWatch no Visual Studio e observar um observador
 Enquanto você está depurando, você pode usar o **inspecionar** e **QuickWatch** windows para inspecionar variáveis e expressões.  A diferença é que o **inspecionar** janela pode exibir várias variáveis, enquanto o **QuickWatch** janela exibe uma única variável ao mesmo tempo. 
@@ -122,7 +118,7 @@ int main()
   
  ![Observe o erro de expressão](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a>Atualizando valores de inspeção estão desatualizados  
+##  <a name="bkmk_refreshWatch"></a> Atualizando valores de inspeção estão desatualizados  
  Em determinadas circunstâncias, você verá um ícone de atualização (uma seta circular) quando uma expressão é avaliada no **inspecionar** janela.  Por exemplo, se você tiver desativada de avaliação de propriedade (**Ferramentas > Opções > Depuração > Habilitar avaliação de propriedades e outras chamadas de função implícitas**), e você tiver o código a seguir:  
   
 ```csharp  
@@ -153,7 +149,7 @@ static void Main(string[] args)
   
  Se você vir um ícone que é um círculo com duas linhas onduladas semelhantes threads, a expressão foi avaliada não devido a uma possível dependência entre threads. Em outras palavras, a avaliar o código requer outros threads em seu aplicativo seja executado temporariamente. Quando você está no modo de interrupção, todos os threads em seu aplicativo normalmente estão parados. Permitir que outros threads executar temporariamente pode fazer com que inesperado afeta o estado do programa e faz com que o depurador ignore eventos como pontos de interrupção e as exceções geradas nesses threads.  
   
-##  <a name="bkmk_sideEffects"></a>Efeitos colaterais e expressões  
+##  <a name="bkmk_sideEffects"></a> Efeitos colaterais e expressões  
  Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliar a expressão a seguir altera o valor de `var1`:  
   
 ```  
@@ -168,7 +164,7 @@ var1 = var2
   
  Quando a avaliação de propriedades ou chamadas de função implícita está desativada, você pode forçar a avaliação usando o **CA** modificador de formato (para c# somente). Consulte [Formatar especificadores em c#](../debugger/format-specifiers-in-csharp.md).  
   
-## <a name="bkmk_objectIds"></a>Usando IDs de objeto da janela de inspeção (c# e Visual Basic)  
+## <a name="bkmk_objectIds"></a> Usando IDs de objeto da janela de inspeção (c# e Visual Basic)  
 
  Há momentos em que você deseja observar o comportamento de um objeto específico. Por exemplo, você talvez queira controlar um objeto referenciado por uma variável local depois que essa variável estiver fora do escopo. Em c# e Visual Basic, você pode criar IDs para instâncias específicas de tipos de referência de objeto e usá-los na janela Inspeção e em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  
   
@@ -217,7 +213,7 @@ public class Program
   
 2.  Iniciar a depuração e quando a execução é interrompida no ponto de interrupção, localize a variável no **locais** janela, clique duas vezes e selecione **Verifique a ID do objeto**.  
   
-3.  Você deve ver uma  **$**  mais um número no **locais** janela, que representa a ID de objeto.  
+3.  Você deve ver uma **$** mais um número no **locais** janela, que representa a ID de objeto.  
   
 4.  Adicione a ID de objeto para a janela inspeção.  
   

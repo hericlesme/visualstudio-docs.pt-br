@@ -1,13 +1,8 @@
 ---
-title: "Passo a passo: Analisando código C/C++ em busca de defeitos | Microsoft Docs"
-ms.custom: 
+title: 'Instruções passo a passo: analisando código do C/C++ em busca de defeitos'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -15,18 +10,18 @@ helpviewer_keywords:
 - code analysis tool, walkthroughs
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ccb07eacd12918692e3ee2036886e7d5e2e16a2
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 60cdc07b35480509152fd09fefb484557358fba0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Instruções passo a passo: analisando código do C/C++ em busca de defeitos
 
-Este passo a passo demonstra como analisar o código C/C++ em busca de possíveis defeitos de código usando a ferramenta de análise de código para código C/C++. 
+Este passo a passo demonstra como analisar o código C/C++ em busca de possíveis defeitos de código usando a ferramenta de análise de código para código C/C++.
 
 - Execute análise de código em código nativo.
 - Analise os avisos de defeito de código.
@@ -169,7 +164,7 @@ Este passo a passo demonstra como analisar o código C/C++ em busca de possívei
 
    ```cpp
    . . .
-   LinkedList *newNode = NULL; 
+   LinkedList *newNode = NULL;
    if (NULL == node)
    {
         return NULL;
