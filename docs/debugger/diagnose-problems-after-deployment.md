@@ -1,23 +1,20 @@
 ---
-title: "Diagnosticar problemas após a implantação | Microsoft Docs"
-ms.custom: 
-ms.date: 06/20/2017
-ms.reviewer: 
-ms.suite: 
+title: Diagnosticar problemas após a implantação | Microsoft Docs
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
-caps.latest.revision: "60"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 562222296ca79a568a3b68aac55a879c8f2f51b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 54a29e25c19d3dae18efd967a4fb26e1cd4f576a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnosticar problemas após a implantação
 Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantação usando o IntelliTrace, inclua informações de compilação com a versão para permitir que o Visual Studio localize automaticamente os arquivos de origem e símbolos corretos que são necessárias para depurar o log do IntelliTrace.  
@@ -34,18 +31,14 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 -   Visual Studio Enterprise (mas não nas edições Professional ou comunidade) para examinar os dados de diagnósticos e depurar seu código com o IntelliTrace  
 
-##  <a name="SetUpBuild"></a>Etapa 1: Incluir informações com sua versão de compilação  
+##  <a name="SetUpBuild"></a> Etapa 1: Incluir informações com sua versão de compilação  
  Configure seu processo de compilação para criar um manifesto de compilação (BuildInfo.config file) de seu projeto Web e inclua esse manifesto em sua liberação. Esse manifesto contém informações sobre o projeto, sobre o controle do código-fonte e o sistema de compilação utilizados para criar uma compilação específica. Essas informações ajudam o Visual Studio a encontrar o código-fonte e os símbolos correspondentes após abrir o log do IntelliTrace para revisar os eventos registrados.  
 
-###  <a name="AutomatedBuild"></a>Criar o manifesto de compilação para uma compilação automatizada usando o Team Foundation Server  
-
- Siga essas etapas caso use Team Foundation Version Control ou Git.
-  
- **Etapa 2:** [etapa 2: versão de seu aplicativo](#DeployRelease)  
+###  <a name="AutomatedBuild"></a> Criar o manifesto de compilação para uma compilação automatizada usando o Team Foundation Server  
   
  Siga essas etapas caso use Team Foundation Version Control ou Git.  
  
- ####  <a name="TFS2017"></a>O Team Foundation Server de 2017
+ ####  <a name="TFS2017"></a> O Team Foundation Server de 2017
 
  Configure sua definição de compilação para adicionar os locais de seu código-fonte, compilação e símbolos ao manifesto de compilação (BuildInfo.config file). O Team Foundation Build automaticamente cria esse arquivo e coloca-o em sua pasta de saída do projeto.
   
@@ -55,7 +48,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
   
 2.  Se você criar um novo modelo, escolha o modelo do ASP.NET Core (.NET Framework). 
   
-     ![Escolha o modelo de processo de compilação &#45; 2017 TFS](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+     ![Escolha o modelo de processo de compilação &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
 3.  Especifique onde salvar o arquivo de símbolos (PDB) de forma que o código-fonte seja indexado automaticamente.  
   
@@ -72,8 +65,10 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
      Qualquer um que possa acessar seu servidor Web pode ver esses locais no manifesto de compilação. Certifique-se de que o servidor de código-fonte é seguro.
   
 6.  Execute uma nova compilação.  
+  
+    Vá para [etapa 2: versão de seu aplicativo](#DeployRelease)  
 
-####  <a name="TFS2013"></a>O Team Foundation Server 2013  
+####  <a name="TFS2013"></a> O Team Foundation Server 2013  
  Configure sua definição de compilação para adicionar os locais de seu código-fonte, compilação e símbolos ao manifesto de compilação (BuildInfo.config file). O Team Foundation Build automaticamente cria esse arquivo e coloca-o em sua pasta de saída do projeto.  
 
 1.  [Edite sua definição de compilação ou criar uma nova definição de compilação.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
@@ -82,7 +77,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 2.  Escolha o modelo padrão (TfvcTemplate.12.xaml) ou seu próprio modelo personalizado.  
 
-     ![Escolha o modelo de processo de compilação &#45; No TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+     ![Escolha o modelo de processo de compilação &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
 
 3.  Especifique onde salvar o arquivo de símbolos (PDB) de forma que o código-fonte seja indexado automaticamente.  
 
@@ -116,9 +111,9 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 6.  Execute uma nova compilação.  
 
- **Etapa 2:** [etapa 2: versão de seu aplicativo](#DeployRelease)  
+    Vá para [etapa 2: versão de seu aplicativo](#DeployRelease)  
 
-####  <a name="TFS2012_2010"></a>O Team Foundation Server 2012 ou 2010  
+####  <a name="TFS2012_2010"></a> O Team Foundation Server 2012 ou 2010  
  Siga estas etapas para criar automaticamente o arquivo de manifesto de compilação (BuildInfo.config) para seu projeto e colocá-lo na pasta de saída do projeto. O arquivo é exibido como "*ProjectName*. BuildInfo.config"na pasta de saída, mas é renomeado"BuildInfo.config"na pasta de implantação depois de publicar seu aplicativo.  
 
 1.  Instale o Visual Studio 2013 (qualquer edição) no servidor do Team Foundation Build.  
@@ -141,9 +136,9 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 4.  Execute uma nova compilação.  
 
- **Etapa 2:** [etapa 2: versão de seu aplicativo](#DeployRelease)  
+    Vá para [etapa 2: versão de seu aplicativo](#DeployRelease)  
 
-###  <a name="ManualBuild"></a>Criar o manifesto de compilação para uma compilação manual usando o Visual Studio  
+###  <a name="ManualBuild"></a> Criar o manifesto de compilação para uma compilação manual usando o Visual Studio  
  Siga estas etapas para criar automaticamente o arquivo de manifesto de compilação (BuildInfo.config) para seu projeto e colocá-lo na pasta de saída do projeto. O arquivo é exibido como "*ProjectName*. BuildInfo.config"na pasta de saída, mas é renomeado"BuildInfo.config"na pasta de implantação depois de publicar seu aplicativo.  
 
 1.  Em **Solution Explorer**, descarregue o projeto da web.  
@@ -168,9 +163,9 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 4.  Execute uma nova compilação.  
 
- **Etapa 2:** [etapa 2: versão de seu aplicativo](#DeployRelease)  
+    Vá para [etapa 2: versão de seu aplicativo](#DeployRelease)  
 
-###  <a name="MSBuild"></a>Criar o manifesto de compilação para uma compilação manual usando o MSBuild.exe  
+###  <a name="MSBuild"></a> Criar o manifesto de compilação para uma compilação manual usando o MSBuild.exe  
  Adicione estes argumentos de compilação ao executar uma compilação:  
 
  **/p:GenerateBuildInfoConfigFile = true**  
@@ -179,7 +174,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
  **/p:BuildSymbolStorePath =**\<*caminho dos símbolos*>  
 
-##  <a name="DeployRelease"></a>Etapa 2: Versão de seu aplicativo  
+##  <a name="DeployRelease"></a> Etapa 2: Versão de seu aplicativo  
  Se você usar o [Web.Deploy pacote](http://msdn.microsoft.com/library/dd394698.aspx) que foi criado pelo processo de compilação para implantar seu aplicativo, o manifesto de compilação é renomeado automaticamente de "*ProjectName*. BuildInfo.config"para"BuildInfo.config"e é colocado na mesma pasta com o arquivo Web. config de seu aplicativo em seu servidor web.  
 
  Se você usar outros métodos para implantar seu aplicativo, certifique-se de que o manifesto de compilação é renomeado de "*ProjectName*. BuildInfo.config"para"BuildInfo.config"e é colocado na mesma pasta com o arquivo Web. config de seu aplicativo no servidor web.  
@@ -187,7 +182,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 ## <a name="step-3-monitor-your-app"></a>Etapa 3: monitorar seu aplicativo  
  Configure o monitoramento do desempenho de aplicativos no seu servidor Web para que você possa monitorar a ocorrência de problemas em seu aplicativo, registrar eventos de diagnóstico e salvar esses eventos em um arquivo de log do IntelliTrace. Consulte [monitorar sua versão para problemas de implantação](../debugger/using-the-intellitrace-stand-alone-collector.md).  
 
-##  <a name="InvestigateEvents"></a>Etapa 4: Localizar o problema  
+##  <a name="InvestigateEvents"></a> Etapa 4: Localizar o problema  
  Você precisará Visual Studio Enterprise no seu computador de desenvolvimento ou em outro computador para examinar os eventos registrados e depurar seu código usando o IntelliTrace. Você também pode usar ferramentas como CodeLens, mapas do depurador e mapas de código para ajudar no diagnóstico do problema.  
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Abrir o log do IntelliTrace e a solução correspondente  
@@ -208,7 +203,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
      Caso contrário, escolha outro espaço de trabalho ou crie um novo espaço de trabalho. O Visual Studio mapeará a ramificação inteira para esse espaço de trabalho.  
 
-     ![Abrir do controle de origem &#45; Criar novo espaço de trabalho](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![Abrir do controle de origem &#45; criar novo espaço de trabalho](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
 
      Para criar um espaço de trabalho com mapeamentos específicos ou um nome que não é o nome do computador, escolha **gerenciar**.  
 
@@ -254,11 +249,11 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
      Agora você pode examinar outros valores registrados, a pilha de chamadas, ou usar o **IntelliTrace** janela [mover para trás ou para frente "no tempo", entre outros eventos registrados](../debugger/intellitrace.md), código relacionado e os valores registrados no Esses pontos no tempo. [O que é todos esses outros eventos e informações no log do IntelliTrace?](../debugger/using-saved-intellitrace-data.md)  
 
-###  <a name="WhatElse"></a>O que mais pode fazer aqui?  
+###  <a name="WhatElse"></a> O que mais pode fazer aqui?  
 
 -   [Obter mais informações sobre esse código](../ide/find-code-changes-and-other-history-with-codelens.md). Para localizar referências a esse código, seu histórico de alterações, bugs relacionados, itens de trabalho, as revisões de código ou testes de unidade - tudo sem sair do editor - usam indicadores CodeLens no editor.  
 
-     ![CodeLens &#45; Exibir referências a esse código](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![CodeLens &#45; exibir referências a esse código](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
 
      ![CodeLens &#45; Exibir histórico de alterações por este código](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
 
@@ -268,12 +263,12 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
 ###  <a name="FAQ"></a> Perguntas e respostas  
 
-####  <a name="WhyInclude"></a>P: por que incluem informações sobre meu projeto, controle de origem, compilação e símbolos com minha versão?  
+####  <a name="WhyInclude"></a> P: por que incluem informações sobre meu projeto, controle de origem, compilação e símbolos com minha versão?  
  O Visual Studio usa essas informações para encontrar a solução e o código-fonte correspondentes para a versão que está tentando depurar. Após abrir o log do IntelliTrace e selecionar um evento para iniciar a depuração, o Visual Studio usa símbolos para encontrar e mostrar o código onde ocorreu o evento. Você pode então visualizar os valores que estão registrados e avançar ou retornar através da execução do seu código.  
 
  Se você estiver usando o TFS e essas informações não estiverem no manifesto de compilação (arquivo BuildInfo.config), a aparência Visual Studio para a fonte de correspondência e os símbolos em seu TFS conectado no momento. Você recebe uma solicitação para escolher um TFS diferente caso o Visual Studio não encontre o TFS correto ou o código-fonte correspondente.  
 
-####  <a name="InvalidConfigFile"></a>P: o log do IntelliTrace não contém informações sobre meu aplicativo implantado. Por que isso ocorreu? O que devo fazer?  
+####  <a name="InvalidConfigFile"></a> P: o log do IntelliTrace não contém informações sobre meu aplicativo implantado. Por que isso ocorreu? O que devo fazer?  
  Isso pode ter acontecer quando ao implantar do seu computador de desenvolvimento ou quando não está conectado ao TFS durante a implantação.  
 
 1.  Vá para sua pasta de implantação do projeto.  
@@ -377,12 +372,12 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
         </Build>  
         ```  
 
-####  <a name="IneligibleWorkspace"></a>P: por que o Visual Studio dizer que meu espaço de trabalho selecionado não é elegível?  
+####  <a name="IneligibleWorkspace"></a> P: por que o Visual Studio dizer que meu espaço de trabalho selecionado não é elegível?  
  **R:** o espaço de trabalho selecionado não tem qualquer mapeamento entre a pasta de controle de origem e uma pasta local. Para criar um mapeamento para esse espaço de trabalho, escolha **gerenciar**. Caso contrário, escolha um espaço de trabalho já mapeado ou crie um novo espaço de trabalho.  
 
  ![Abrir do controle de origem com nenhum espaço de trabalho mapeado](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
 
-####  <a name="ChooseTeamProject"></a>P: por que eu não pode continuar até que escolher uma coleção de equipe ou uma coleção diferente?  
+####  <a name="ChooseTeamProject"></a> P: por que eu não pode continuar até que escolher uma coleção de equipe ou uma coleção diferente?  
  **R:** isso pode acontecer por qualquer um dos seguintes motivos:  
 
 -   O Visual Studio não está conectado ao TFS.  
@@ -397,12 +392,12 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
 
      O TFS especificado pode não ter mais o código-fonte compatível ou nem mesmo existir, talvez porque você migrou para um novo TFS. Se o TFS especificado não existir, o Visual Studio poderá atingir o tempo limite depois de cerca de um minuto e depois será solicitado que você se conecte a uma coleção diferente. Para prosseguir, conecte-se ao servidor TFS correto.  
 
-     ![Abrir do controle de origem &#45; migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![Abrir do controle de origem &#45; migrados](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
-####  <a name="WhatWorkspace"></a>P: o que é um espaço de trabalho?  
+####  <a name="WhatWorkspace"></a> P: o que é um espaço de trabalho?  
  **R:** sua [espaço de trabalho armazena uma cópia da fonte de](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) para que você pode desenvolver e testá-lo separadamente antes de verificação no seu trabalho. Se você ainda não tem um espaço de trabalho mapeado especificamente para a solução ou o projeto encontrado, o Visual Studio solicitará a escolha de um espaço de trabalho disponível ou a criação de um novo espaço de trabalho com o nome do computador como o nome padrão do espaço de trabalho.  
 
-####  <a name="UntrustedSymbols"></a>P: por que recebo a seguinte mensagem sobre símbolos não confiáveis?  
+####  <a name="UntrustedSymbols"></a> P: por que recebo a seguinte mensagem sobre símbolos não confiáveis?  
  ![Depurar com caminho de símbolos não confiável? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **R:** esta mensagem aparece quando o caminho de símbolos no arquivo de manifesto de compilação (\<*ProjectName*>. BuildInfo.config) não está incluído na lista de caminhos confiáveis de símbolo. Você pode adicionar o caminho à lista de caminhos de símbolos nas opções do depurador.

@@ -1,12 +1,9 @@
 ---
-title: "Solucionando problemas de erros específicos nas implantações do ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Solucionando problemas de erros específicos nas implantações do ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - troubleshooting ClickOnce deployments
 - ClickOnce deployment, troubleshooting
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
-caps.latest.revision: "13"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ffa7449347fe5e898f2984237dfc8908e3bb2003
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9829a80916f6e18e9adaf3d0e41fe825541438
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Solução de problemas com erros específicos nas implantações do ClickOnce
 Este tópico lista os seguintes erros comuns que podem ocorrer quando você implanta um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e fornece etapas para resolver cada problema.  
@@ -72,13 +69,13 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
   
 -   Verifique se o intervalo de atualização no manifesto de implantação. Se esse intervalo é definido para um intervalo periódico, como uma vez a cada seis horas, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não verificarão de uma atualização até que esse intervalo. Você pode alterar o manifesto para verificar se há uma atualização toda vez que o aplicativo for iniciado. Alterar o intervalo de atualização é uma opção conveniente durante o tempo de desenvolvimento para verificar as atualizações estão sendo instaladas, mas ela reduz a velocidade de ativação de aplicativo.  
   
--   Tente reiniciar o aplicativo no menu Iniciar. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]possivelmente foram detectados a atualização em segundo plano, mas será solicitado a instalar os bits na próxima ativação.  
+-   Tente reiniciar o aplicativo no menu Iniciar. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possivelmente foram detectados a atualização em segundo plano, mas será solicitado a instalar os bits na próxima ativação.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante a atualização você receber um erro que tenha a seguinte entrada de log: "a referência na implantação não corresponde à identidade definida no manifesto do aplicativo"  
  Esse erro pode ocorrer porque você editar manualmente os manifestos de aplicativo e implantação e ter causado a descrição da identidade de um assembly em um manifesto para ficarem fora de sincronia com o outro. A identidade de um conjunto consiste em seu nome, versão, cultura e token de chave pública. Examine as descrições de identidade em seus manifestos e corrija qualquer diferença.  
   
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Primeira vez que a ativação do CD-ROM ou disco local for bem-sucedida, mas subsequente ativação do Menu Iniciar não for bem-sucedida  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]usa a URL do provedor de implantação para receber atualizações para o aplicativo. Verifique se o local que aponta para a URL está correto.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa a URL do provedor de implantação para receber atualizações para o aplicativo. Verifique se o local que aponta para a URL está correto.  
   
 #### <a name="error-cannot-start-the-application"></a>Erro: "não é possível iniciar o aplicativo"  
  Essa mensagem de erro geralmente indica que há um problema ao instalar este aplicativo para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] armazenar. O aplicativo tem um erro ou o armazenamento está corrompido. O arquivo de log pode informar onde ocorreu o erro.  
@@ -132,11 +129,11 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
 |Não é possível continuar. O aplicativo está formatado incorretamente. Para obter assistência, entre em contato com o Editor do aplicativo.<br /><br /> Validação de aplicativo não teve êxito. Não é possível continuar.<br /><br /> Não é possível recuperar os arquivos de aplicativo. Arquivos corrompidos na implantação.|Um dos arquivos de manifesto da implantação sintaticamente não é válido ou contém um hash que não pode ser reconciliado com o arquivo correspondente. Esse erro também pode indicar que o manifesto inserido dentro de um assembly está corrompido. Crie novamente sua implantação e recompilar o aplicativo, ou localizar e corrigir os erros manualmente em seus manifestos.|  
 |Não é possível recuperar o aplicativo. Erro de autenticação.<br /><br /> Instalação do aplicativo não teve êxito. Não é possível localizar arquivos de aplicativos no servidor. Entre em contato com o Editor do aplicativo ou o administrador para obter assistência.|Não não possível baixar um ou mais arquivos na implantação porque você não tem permissão para acessá-los. Isso pode ser causado por um erro proibido 403 sendo retornados por um servidor Web, que pode ocorrer se um dos arquivos na sua implantação termina com uma extensão que faz com que o servidor Web tratá-lo como um arquivo protegido. Além disso, um diretório que contém um ou mais dos arquivos do aplicativo pode exigir um nome de usuário e uma senha para acessar.|  
 |Não é possível baixar o aplicativo. O aplicativo não tem arquivos necessários. Para obter assistência, contate o fornecedor do aplicativo ou o administrador do sistema.|Um ou mais dos arquivos listados no manifesto do aplicativo não podem ser encontrado no servidor. Verifique se você carregou arquivos dependentes de todos da implantação e tente novamente.|  
-|Download do aplicativo não teve êxito. Verifique sua conexão de rede ou contate o administrador do sistema ou o provedor de serviços de rede.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]não é possível estabelecer uma conexão de rede para o servidor. Examine a disponibilidade do servidor e o estado da sua rede.|  
+|Download do aplicativo não teve êxito. Verifique sua conexão de rede ou contate o administrador do sistema ou o provedor de serviços de rede.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não é possível estabelecer uma conexão de rede para o servidor. Examine a disponibilidade do servidor e o estado da sua rede.|  
 |URLDownloadToCacheFile falhou com HRESULT '\<número >'. Ocorreu um erro ao tentar baixar '\<arquivo >'.|Se um usuário tiver definido a opção de segurança avançada do Internet Explorer "Avisar ao alterar o modo de segurança" no computador de destino de implantação, e se a URL de instalação do aplicativo ClickOnce que está sendo instalado é redirecionada de não seguro para um site seguro (ou o contrário), a instalação falhará porque o aviso do Internet Explorer interrompe-lo.<br /><br /> Para resolver esse problema, você pode fazer o seguinte:<br /><br /> -Desmarque a opção de segurança.<br />-Certifique-se de que a URL de instalação não será redirecionada de forma que altera os modos de segurança.<br />-Remover o redirecionamento completamente e aponte para a URL de instalação atual.|  
 |Ocorreu um erro gravar no disco rígido. Pode haver espaço suficiente disponível no disco. Para obter assistência, contate o fornecedor do aplicativo ou o administrador do sistema.|Isso pode indicar que o espaço em disco suficiente para armazenar o aplicativo, mas ele também pode indicar um erro de e/s mais geral quando você está tentando salvar os arquivos do aplicativo para a unidade.|  
 |Não é possível iniciar o aplicativo. Não há espaço suficiente disponível no disco.|O disco rígido está cheio. Desmarque desativar espaço e tente executar o aplicativo novamente.|  
-|Muitas ativações implantadas estão tentando carregar ao mesmo tempo.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]limita o número de diferentes aplicativos que podem ser iniciados ao mesmo tempo. Isso é basicamente para ajudar a proteger contra tentativas mal-intencionadas iniciar ataques de negação de serviço contra o local [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] serviço; os usuários que tente iniciar o mesmo aplicativo repetidamente em sucessão rápida, apenas acabará com uma única instância das aplicativo.|  
+|Muitas ativações implantadas estão tentando carregar ao mesmo tempo.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] limita o número de diferentes aplicativos que podem ser iniciados ao mesmo tempo. Isso é basicamente para ajudar a proteger contra tentativas mal-intencionadas iniciar ataques de negação de serviço contra o local [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] serviço; os usuários que tente iniciar o mesmo aplicativo repetidamente em sucessão rápida, apenas acabará com uma única instância das aplicativo.|  
 |Atalhos não podem ser ativados pela rede.|Atalhos para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo só pode ser iniciado no disco rígido local. Eles não podem ser iniciados através da abertura de uma URL que aponta para um arquivo de atalho em um servidor remoto.|  
 |O aplicativo é muito grande para ser executado online em confiança parcial. Para obter assistência, contate o fornecedor do aplicativo ou o administrador do sistema.|Um aplicativo executado em confiança parcial não pode ser maior do que a metade do tamanho da cota de aplicativo online, que por padrão é 250 MB.|  
   

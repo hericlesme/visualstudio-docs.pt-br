@@ -1,12 +1,9 @@
 ---
-title: "Referência de esquema de pacote e produto | Microsoft Docs"
-ms.custom: 
+title: Referência de esquema de pacote e produto | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -25,16 +22,16 @@ helpviewer_keywords:
 - package files [ClickOnce]
 - Windows Installer, bootstrapper elements
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
-caps.latest.revision: "7"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="product-and-package-schema-reference"></a>Referência de esquema de produto e pacote
 Um *arquivo produto* é um manifesto XML que descreve todas as dependências externas exigidas por um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Exemplos de dependências externas a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e o Microsoft Data Access Components (MDAC). Um arquivo de pacote é semelhante a um arquivo de produto, mas é usado para instalar os componentes dependentes de cultura de uma dependência, como assemblies localizados, contratos de licença e documentação.  
@@ -54,7 +51,7 @@ Um *arquivo produto* é um manifesto XML que descreve todas as dependências ext
 ## <a name="remarks"></a>Comentários  
  O esquema do pacote é consumido pelos Setup.exe, um programa de stub gerado pela tarefa de inicialização de Build MS que contém pouca lógica embutida de seu próprio. O esquema controla todos os aspectos do processo de instalação.  
   
- `InstallChecks`os testes que setup.exe deve executar a existência de um determinado pacote. `PackageFiles`lista todos os pacotes que o processo de instalação pode ter para instalar, se um determinado teste falhar. Cada entrada de comando em comandos executa um dos testes descritos por `InstallChecks`e especifica quais `PackageFile` executar deve o teste falhar. Você pode usar o `Strings` elemento para localizar nomes de produtos e mensagens de erro, para que você pode usar uma única instalação binária para instalar seu aplicativo para qualquer número de idiomas.  
+ `InstallChecks` os testes que setup.exe deve executar a existência de um determinado pacote. `PackageFiles` lista todos os pacotes que o processo de instalação pode ter para instalar, se um determinado teste falhar. Cada entrada de comando em comandos executa um dos testes descritos por `InstallChecks`e especifica quais `PackageFile` executar deve o teste falhar. Você pode usar o `Strings` elemento para localizar nomes de produtos e mensagens de erro, para que você pode usar uma única instalação binária para instalar seu aplicativo para qualquer número de idiomas.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir demonstra um arquivo completa do produto para instalar o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  

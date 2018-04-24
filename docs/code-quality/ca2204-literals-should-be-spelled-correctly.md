@@ -1,5 +1,5 @@
 ---
-title: 'CA2204: Literais devem ser grafadas corretamente | Microsoft Docs'
+title: 'CA2204: os literais do recurso devem ter a ortografia correta'
 ms.date: 03/28/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: b0bbcbb6-c92d-4c14-8ef7-9c8b38c791a6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdfee3a45035de83037122942144e154db35bd3b
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 81989ebce0319669a03d62a504f87a0500400cd9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204: os literais do recurso devem ter a ortografia correta
 

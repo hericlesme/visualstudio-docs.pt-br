@@ -1,12 +1,9 @@
 ---
-title: "Como: exibir informações de rastreamento do WPF | Microsoft Docs"
-ms.custom: 
+title: 'Como: exibir informações de rastreamento do WPF | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,19 +13,19 @@ helpviewer_keywords:
 - WPF, debugging
 - debugging, WPF
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e210d575b17552d7b5e4d6dc126335ff3711ee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 99fc861c627a094f9f5e4e67a6b034ecdd407688
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Como exibir informações de acompanhamento WPF
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações no **saída** janela. Para exibir informações de rastreamento de depuração, o rastreamento do WPF deve ser habilitado.  
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações no **saída** janela. Para exibir informações de rastreamento de depuração, o rastreamento do WPF deve ser habilitado.  
   
  Você pode habilitar o rastreamento do WPF no arquivo App.config ou programaticamente usando a classe <xref:System.Diagnostics.PresentationTraceSources>. É uma maneira mais fácil para habilitar o rastreamento de WPF usando o **opções** janela. O rastreamento do WPF para aplicativos Web não tem suporte.  
   

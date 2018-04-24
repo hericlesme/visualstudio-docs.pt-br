@@ -1,13 +1,9 @@
 ---
-title: "Como depurar funções de API do Windows? | Microsoft Docs"
-ms.custom: 
+title: Como depurar funções de API do Windows? | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.api
 dev_langs:
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - Windows API, debugging API functions
 - APIs, debugging
 ms.assetid: 7c126f57-62ab-4d94-9805-632d696ba1f0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ed3dbd6c67fe247ea514a9d41780584ae8f1e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28d9aa387861de41b7d3f782fec85d8d26c7d3ae
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Como depurar funções de API do Windows?
 Se você desejar depurar uma função de API do Windows que tenha os símbolos do NT carregados, deverá fazer o seguinte.  

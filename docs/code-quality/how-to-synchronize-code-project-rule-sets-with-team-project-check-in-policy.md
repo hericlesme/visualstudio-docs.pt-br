@@ -1,5 +1,5 @@
 ---
-title: 'Como: sincronizar conjuntos de regras do projeto de código com política de Check-in do projeto de equipe | Microsoft Docs'
+title: Como sincronizar conjuntos de regras do projeto de código com política de check-in do projeto de equipe
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a619178001ef95f5d19d80abda5c4ab2237a0f
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 1bb6f97495eec73e52751f79d92e2f078bd13b24
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Como sincronizar conjuntos de regras do projeto de código com política de check-in do projeto de equipe
 

@@ -1,26 +1,22 @@
 ---
-title: "Como: criar ou atualizar políticas de seleção da análise de código padrão | Microsoft Docs"
-ms.custom: 
+title: Como criar ou atualizar políticas de check-in de análise do código padrão
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fba16ee285faeafdc37fc38e6b5bb0a0725a46
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 
@@ -53,10 +49,10 @@ Depois de especificar uma política de check-in para código gerenciado, os memb
 
 Marque ou desmarque as opções a seguir:
 
-    |Opção|Descrição|  
-    |------------|-----------------|  
-    |**Impor check-in para conter somente os arquivos que fazem parte da solução atual.**|Análise de código pode executar somente em arquivos especificados em arquivos de configuração de solução e projeto. Essa política garante que todo o código que faz parte de uma solução é analisado.|  
-    |**Impor análise de código C/C++ (/Analyze)**|Requer que todos os projetos C ou C++ ser criado com a / opção analyze do compilador para executar a análise de código antes que eles podem fazer check-in.|  
+    |Opção|Descrição|
+    |------------|-----------------|
+    |**Impor check-in para conter somente os arquivos que fazem parte da solução atual.**|Análise de código pode executar somente em arquivos especificados em arquivos de configuração de solução e projeto. Essa política garante que todo o código que faz parte de uma solução é analisado.|
+    |**Impor análise de código C/C++ (/Analyze)**|Requer que todos os projetos C ou C++ ser criado com a / opção analyze do compilador para executar a análise de código antes que eles podem fazer check-in.|
     |**Impor análise de código para código gerenciado**|Requer que todos os projetos gerenciados executar análise de código e compilar antes que eles podem fazer check-in.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Para especificar um conjunto de regras gerenciado
@@ -65,7 +61,7 @@ Marque ou desmarque as opções a seguir:
 
     - Selecione um conjunto de regras padrão do Microsoft.
 
-    - Para selecionar um conjunto de regras personalizadas, clique em  **\<Selecionar conjunto de regras de controle de origem... >**e, em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:
+    - Para selecionar um conjunto de regras personalizadas, clique em  **\<Selecionar conjunto de regras de controle de origem... >** e, em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:
 
     - **$/** `TeamProjectName` **/** `VersionControlPath`
 

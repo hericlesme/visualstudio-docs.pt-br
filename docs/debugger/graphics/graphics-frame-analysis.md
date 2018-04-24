@@ -1,25 +1,21 @@
 ---
-title: "Análise de quadros de gráficos | Microsoft Docs"
-ms.custom: 
+title: Análise de quadros de gráficos | Microsoft Docs
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 9fe34c421d06fea1e4eefc064d344727382ca1d8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-frame-analysis"></a>Análise de Quadros de Gráficos
 Use a análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.  
@@ -75,7 +71,7 @@ Use a análise de quadros de gráficos no analisador de gráficos do Visual Stud
 #### <a name="timeline"></a>Linha do tempo  
  A linha do tempo mostra uma visão geral dos horários de chamadas de desenho em relação umas às outras. Como barras maiores correspondem a horários de desenho maiores, você pode usá-las para localizar rapidamente as chamadas de desenho mais custosas no quadro. Quando o quadro capturado contiver um número muito grande de chamadas de desenho, diversas chamadas de desenho são combinadas em uma única barra, cujo comprimento é a soma dessas chamadas de desenho.  
   
- ![A linha do tempo mostra o desenho &#45; chame os custos. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![A linha do tempo mostra o desenho&#45;chamar os custos. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Você pode deixar o ponteiro sobre uma barra para ver a qual evento de chamada de desenho a barra corresponde. Escolher a barra faz com que a lista de eventos seja sincronizada com esse evento.  
   
@@ -137,7 +133,7 @@ Use a análise de quadros de gráficos no analisador de gráficos do Visual Stud
   
  A Análise de Quadro limita o número de novas tentativas a 10. Se sua plataforma tiver um gerenciamento de energia ou clock-gating agressivo, isso pode fazer com que a Análise de Quadro falhe e relate um erro por ter excedido o limite de novas tentativas. Se a plataforma permitir, você pode atenuar esse problema redefinindo o gerenciamento de energia e a aceleração da velocidade de clock de sua plataforma para que sejam menos agressivos.  
   
-##  <a name="HardwareSupport"></a>Suporte de hardware  
+##  <a name="HardwareSupport"></a> Suporte de hardware  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Consultas de carimbos de data/hora e oclusão  
  Carimbos de data/hora têm suporte em todas as plataformas compatíveis com Análise de Quadro. Consultas de oclusão de profundidade, necessárias para o contador de Pixels Obstruídos, são suportadas em plataformas com nível de recurso de suporte 9.2 ou superior.  
@@ -175,7 +171,7 @@ Use a análise de quadros de gráficos no analisador de gráficos do Visual Stud
 ### <a name="warp"></a>WARP  
  A análise de quadro deve ser usada para analisar e aprimorar o desempenho de renderização em hardwares reais. Executar análise de quadros em dispositivos de distorção não será impedida, mas não é geralmente vantajoso pois WARP em execução em uma CPU high-end é mais lenta que até mesmo as GPUs modernas menos capacidade e desempenho WARP pode variar muito, dependendo da CPU específica ele está em execução.  
   
-##  <a name="Variants"></a>Variantes  
+##  <a name="Variants"></a> Variantes  
  Cada alteração que torna a análise de quadros à forma como um quadro é processado durante a reprodução é conhecida como um *variante*. As variantes examinadas pela Análise de Quadro correspondem a alterações comuns e relativamente fáceis que podem ser feitas para aprimorar o desempenho de renderização ou a qualidade visual do aplicativo; por exemplo, reduzir o tamanho das texturas, usar a compactação de texturas ou habilitar diferentes tipos de suavização. As variantes substituem o contexto de renderização e os parâmetros comuns do seu aplicativo. Segue um resumo:  
   
 |Variante|Descrição|  

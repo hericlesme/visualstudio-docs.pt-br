@@ -1,25 +1,21 @@
 ---
-title: 'Início rápido: Análise de código para C/C++ | Microsoft Docs'
-ms.custom: ''
+title: 'Início Rápido: análise de código para C/C++'
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b892fa9c737561399de3edad569102a8d79ab02
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e43c505716fe437f53ac1d1b8e7921ec76e153d0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Início rápido: Análise de código para C/C++
 

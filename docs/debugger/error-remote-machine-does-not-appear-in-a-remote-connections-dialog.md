@@ -1,27 +1,24 @@
 ---
-title: "Erro: O computador remoto não aparecem em uma caixa de diálogo conexões remotas | Microsoft Docs"
-ms.custom: 
+title: 'Erro: O computador remoto não aparecem em uma caixa de diálogo conexões remotas | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 72a891219b24f1cb80ec9e65988f57ebfb04fcd6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c52a2ebd99b052171220fd8a06f1ae7ff5dc258e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Erro: O computador remoto não aparecem em uma caixa de diálogo conexões remotas
 Se o computador remoto não for exibido na caixa de diálogo conexões remotas, verifique as seguintes causas comuns.  

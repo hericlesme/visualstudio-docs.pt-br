@@ -2,24 +2,19 @@
 title: O depurador de janelas no Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c792594920cff47dfeac8331a73938a2512dcf
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: fa0c7fb04b05ef1ec1c83fe744458fdcc6ca3743
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Saiba mais sobre as janelas do depurador no Visual Studio
 
@@ -33,8 +28,8 @@ Você pode abrir a maioria das janelas do depurador enquanto você está depuran
 |Saída|CTRL + ALT + DEL|[Janela de Saída](../ide/reference/output-window.md)|
 |Inspeção|CTRL + ALT + W, (1, 2, 3, 4)|[Janelas Inspeção e Inspeção Rápida](../debugger/watch-and-quickwatch-windows.md)|
 |QuickWatch|SHIFT + F9|[Janelas Inspeção e Inspeção Rápida](../debugger/watch-and-quickwatch-windows.md)|
-|Autos|CTRL+ALT+V, A|[Janelas Autos e Locais](../debugger/autos-and-locals-windows.md)|
-|Locais|CTRL+ALT+V, L|[Janelas Autos e Locais](../debugger/autos-and-locals-windows.md)|
+|Autos|CTRL + ALT + V, UM|[Janelas Autos e Locais](../debugger/autos-and-locals-windows.md)|
+|Locais|CTRL + ALT + V, L|[Janelas Autos e Locais](../debugger/autos-and-locals-windows.md)|
 |Pilhas de chamadas|CTRL + ALT + C|[Como usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md)|
 |Imediato|CTRL + ALT + I|[Janela Imediata](../ide/reference/immediate-window.md)|
 |Pilhas paralelas|CTR: + SHIFT + D, S|[Usando a janela Pilhas Paralelas](../debugger/using-the-parallel-stacks-window.md)|
@@ -45,7 +40,7 @@ Você pode abrir a maioria das janelas do depurador enquanto você está depuran
 |Tarefas|CTR: + SHIFT + D, K|[Usando a janela Tarefas](../debugger/using-the-tasks-window.md)|
 |Depuração de Python interativa|SHIFT + ALT + I|[REPL de Python interativo](../python/python-interactive-repl-in-visual-studio.md)|
 |Console do JavaScript|CTRL + ALT + V, C|[Início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Explorador do DOM|CTRL+ALT+V, D|[Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)|
+|Explorador do DOM|CTRL + ALT + V, D|[Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Árvore Visual dinâmica|-|[Inspecione as propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Gerenciador de propriedade em tempo real|-|[Inspecione as propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md)|
 |Processos|CTRL + ALT + Z|[Depurar threads e processos](../debugger/debug-threads-and-processes.md)|

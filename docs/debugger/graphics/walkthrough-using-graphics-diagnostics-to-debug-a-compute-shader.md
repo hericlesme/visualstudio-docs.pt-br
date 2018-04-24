@@ -1,23 +1,20 @@
 ---
-title: "Passo a passo: Usando diagnóstico de gráficos para depurar um sombreador computado | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Usando diagnóstico de gráficos para depurar um sombreador computado | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b26772dd0cb74d90a8b7a401961fd33f86521a82
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Instruções passo a passo: usando diagnóstico de gráficos para depurar um sombreador computado
 Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráficos do Visual Studio para investigar um sombreador de computação que gera resultados incorretos.  
@@ -56,7 +53,7 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
   
 2.  Inspecione o **lista de eventos de gráfico** para o evento de desenho que renderiza o conjunto de dados. Para facilitar essa tarefa, digite `Draw` no **pesquisa** caixa no canto superior direito do **lista de eventos de gráfico** janela. Isso filtra a lista para que ele contém apenas os eventos que têm "Desenhar" nos títulos. Nesse cenário, você descobrir que eles desenhar eventos ocorreu:  
   
-     ![A lista de eventos &#40; EL &#41; mostra desenha eventos. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![A lista de eventos &#40;EL&#41; mostra desenha eventos. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  Percorrer cada evento de desenho enquanto você observa o destino de renderização na guia do documento de log de gráficos.  
   
@@ -102,11 +99,11 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
   
 6.  Examine o código-fonte do sombreador computação para a etapa de cálculo de força. Nesse cenário, você determinar que a origem do erro está aqui.  
   
-     ![Depuração de ForceCS &#95; Sombreador de cálculo simples. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![Depuração de ForceCS&#95;simples de computação do sombreador. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  Depois de determinar o local do erro, você pode parar a depuração e modificar o código-fonte sombreador computado para calcular corretamente a distância entre as partículas de interação. Nesse cenário, basta alterar a linha `float2 diff = N_position + P_position;` para `float2 diff = N_position - P_position;`:  
   
- ![O computação corrigido &#45; código de sombreador. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![O computação corrigido&#45;código de sombreador. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  Nesse cenário, porque os sombreadores de computação são compilados no tempo de execução, você pode apenas reiniciar o aplicativo depois de fazer as alterações para observar como eles afetam a simulação. Não é necessário recompilar o aplicativo. Quando você executa o aplicativo, você descobre que agora a simulação funcione corretamente.  
   

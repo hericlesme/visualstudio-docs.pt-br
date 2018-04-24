@@ -1,86 +1,83 @@
 ---
-title: "Avisos de diretrizes de núcleos de C++ | Microsoft Docs"
-ms.custom: 
+title: Avisos de diretrizes de núcleos de C++
 ms.date: 08/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
-manager: ghogen
+manager: wpickett
 ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: da68b1ea4783ca1bd35d29218960e1c616f7c32f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de diretrizes de núcleos de C++
 As diretrizes de núcleos de C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado por especialistas de C++ e designers. Visual Studio atualmente oferece suporte a um subconjunto dessas regras como parte de suas ferramentas de análise de código do C++. Os verificadores de diretriz de núcleo são instalados por padrão no Visual Studio de 2017 e são [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
-  
-## <a name="the-c-core-guidelines-project"></a>O projeto de diretrizes de núcleos de C++  
- As diretrizes de núcleos de C++ criado por Bjarne Stroustrup e outros, são um guia para usar o C++ moderno com segurança e eficácia. As diretrizes enfatizam a segurança de tipo estático e segurança de recursos. Eles identificarem maneiras de eliminar ou minimizar as partes mais propensas a erros do idioma e sugerem como tornar seu código mais simples e mais funcionais, de forma confiável. Essas diretrizes são mantidas pela base de C++ padrão. Para obter mais informações, consulte a documentação, [diretrizes de núcleos de C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)e acessar os arquivos de projeto de documentação de diretrizes de núcleos de C++ em [GitHub](https://github.com/isocpp/CppCoreGuidelines).  
-  
-## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Habilitar as diretrizes de C++ Core verificar na análise de código  
- Você pode habilitar a análise de código em seu projeto, selecionando o **habilitar análise de código na compilação** caixa de seleção no **análise de código** seção o **páginas de propriedade** caixa de diálogo seu projeto.  
-  
- ![Página de propriedades de configurações gerais de análise de código](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")  
-  
- As regras de verificação de núcleo do C++ são extensões para os conjuntos de regra padrão que são executados quando a análise de código está habilitada. Porque as regras de verificação de núcleo de C++ estão em desenvolvimento, algumas regras são bem estabelecidas e alguns não estejam prontos para uso em todo o código, mas podem ainda ser informativo. As regras são divididas em dois grupos: liberado e experimental. Você pode optar por executar as regras de lançamento ou experimentais nas propriedades de seu projeto.  
-  
- ![Página de propriedades para configurações de extensões de análise de código](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
-  
- Para habilitar ou desabilitar os conjuntos de regras C++ Core verificar, abra o **páginas de propriedade** caixa de diálogo para seu projeto. Em **propriedades de configuração**, expanda **análise de código**, **extensões**. Na lista suspensa ao lado de controle **habilitar C++ Core verificar (liberados)** ou **habilitar C++ Core verificar (Experimental)**, escolha **Sim** ou **não**. Escolha **Okey** ou **aplicar** para salvar suas alterações.  
-  
-## <a name="examples"></a>Exemplos  
- Aqui está um exemplo de alguns dos problemas que podem encontrar as regras de verificação de núcleo do C++:  
-  
-```cpp  
-// CoreCheckExample.cpp  
-// Add CppCoreCheck package and enable code analysis in build for warnings.  
-  
-int main()  
-{  
-    int arr[10];           // warning C26494  
-    int* p = arr;          // warning C26485  
-  
-    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1  
-    {  
-        int* q = p + 1;    // warning C26481 (suppressed)  
-        p = q++;           // warning C26481 (suppressed)  
-    }  
-  
-    return 0;  
-}  
-```  
-  
- Este exemplo demonstra alguns avisos que podem encontrar as regras de verificação de núcleo do C++:  
-  
--   C26494 é regra Type.5: sempre inicializar um objeto.  
-  
--   C26485 é regra Bounds.3: decay nenhum ponteiro de matriz.  
-  
--   C26481 é regra Bounds.1: não usar aritmética de ponteiro. Use `span` em seu lugar.  
-  
- Se o conjunto de regras de análise código C++ Core verificar está instalados e habilitados quando você compila seu código, os dois primeiros são saída, mas a terceira é suprimida. Aqui está a saída da compilação do código de exemplo:  
-  
+
+## <a name="the-c-core-guidelines-project"></a>O projeto de diretrizes de núcleos de C++
+ As diretrizes de núcleos de C++ criado por Bjarne Stroustrup e outros, são um guia para usar o C++ moderno com segurança e eficácia. As diretrizes enfatizam a segurança de tipo estático e segurança de recursos. Eles identificarem maneiras de eliminar ou minimizar as partes mais propensas a erros do idioma e sugerem como tornar seu código mais simples e mais funcionais, de forma confiável. Essas diretrizes são mantidas pela base de C++ padrão. Para obter mais informações, consulte a documentação, [diretrizes de núcleos de C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)e acessar os arquivos de projeto de documentação de diretrizes de núcleos de C++ em [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+
+## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Habilitar as diretrizes de C++ Core verificar na análise de código
+ Você pode habilitar a análise de código em seu projeto, selecionando o **habilitar análise de código na compilação** caixa de seleção no **análise de código** seção o **páginas de propriedade** caixa de diálogo seu projeto.
+
+ ![Página de propriedades de configurações gerais de análise de código](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+
+ As regras de verificação de núcleo do C++ são extensões para os conjuntos de regra padrão que são executados quando a análise de código está habilitada. Porque as regras de verificação de núcleo de C++ estão em desenvolvimento, algumas regras são bem estabelecidas e alguns não estejam prontos para uso em todo o código, mas podem ainda ser informativo. As regras são divididas em dois grupos: liberado e experimental. Você pode optar por executar as regras de lançamento ou experimentais nas propriedades de seu projeto.
+
+ ![Página de propriedades para configurações de extensões de análise de código](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+
+ Para habilitar ou desabilitar os conjuntos de regras C++ Core verificar, abra o **páginas de propriedade** caixa de diálogo para seu projeto. Em **propriedades de configuração**, expanda **análise de código**, **extensões**. Na lista suspensa ao lado de controle **habilitar C++ Core verificar (liberados)** ou **habilitar C++ Core verificar (Experimental)**, escolha **Sim** ou **não**. Escolha **Okey** ou **aplicar** para salvar suas alterações.
+
+## <a name="examples"></a>Exemplos
+ Aqui está um exemplo de alguns dos problemas que podem encontrar as regras de verificação de núcleo do C++:
+
+```cpp
+// CoreCheckExample.cpp
+// Add CppCoreCheck package and enable code analysis in build for warnings.
+
+int main()
+{
+    int arr[10];           // warning C26494
+    int* p = arr;          // warning C26485
+
+    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1
+    {
+        int* q = p + 1;    // warning C26481 (suppressed)
+        p = q++;           // warning C26481 (suppressed)
+    }
+
+    return 0;
+}
+```
+
+ Este exemplo demonstra alguns avisos que podem encontrar as regras de verificação de núcleo do C++:
+
+-   C26494 é regra Type.5: sempre inicializar um objeto.
+
+-   C26485 é regra Bounds.3: decay nenhum ponteiro de matriz.
+
+-   C26481 é regra Bounds.1: não usar aritmética de ponteiro. Use `span` em seu lugar.
+
+ Se o conjunto de regras de análise código C++ Core verificar está instalados e habilitados quando você compila seu código, os dois primeiros são saída, mas a terceira é suprimida. Aqui está a saída da compilação do código de exemplo:
+
 ```Output
-1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------  
-1>  CoreCheckExample.cpp  
-1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.exe  
-1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)  
-c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(6): warning C26494: Variable 'arr' is uninitialized. Always initialize an object. (type.5: http://go.microsoft.com/fwlink/p/?LinkID=620421)  
-c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(7): warning C26485: Expression 'arr': No array to pointer decay. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)  
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========  
-```  
-  
-As diretrizes de núcleos de C++ existem para ajudá-lo a escrever código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, é fácil suprimi-lo diretamente no código. Você pode usar o `gsl::suppress` atributo para impedir C++ Core verificar detectar e relatar qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você mesmo pode suprimir todo o perfil de limites, escrevendo `[[gsl::suppress(bounds)]]` sem a inclusão de um número específico de regra.  
+1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------
+1>  CoreCheckExample.cpp
+1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.exe
+1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)
+c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(6): warning C26494: Variable 'arr' is uninitialized. Always initialize an object. (type.5: http://go.microsoft.com/fwlink/p/?LinkID=620421)
+c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(7): warning C26485: Expression 'arr': No array to pointer decay. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+```
+
+As diretrizes de núcleos de C++ existem para ajudá-lo a escrever código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, é fácil suprimi-lo diretamente no código. Você pode usar o `gsl::suppress` atributo para impedir C++ Core verificar detectar e relatar qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você mesmo pode suprimir todo o perfil de limites, escrevendo `[[gsl::suppress(bounds)]]` sem a inclusão de um número específico de regra.
 
 ## <a name="supported-rule-sets"></a>Suporte para conjuntos de regras
-Conforme novas regras são adicionadas para o verificador de diretrizes de núcleos de C++, pode aumentar o número de avisos que são produzidas para o código já existente. Você pode usar conjuntos de regras predefinidas para filtrar os tipos de regras para permitir. A partir do Visual Studio 2017 versão 15,3, os conjuntos de regra com suporte são: 
+Conforme novas regras são adicionadas para o verificador de diretrizes de núcleos de C++, pode aumentar o número de avisos que são produzidas para o código já existente. Você pode usar conjuntos de regras predefinidas para filtrar os tipos de regras para permitir. A partir do Visual Studio 2017 versão 15,3, os conjuntos de regra com suporte são:
   - **Regras de ponteiro de proprietário** impor [verifica de gerenciamento de recursos relacionados ao proprietário<T> das diretrizes de núcleos de C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **Regras constantes** impor [relacionados const verificações das diretrizes de núcleos de C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
@@ -127,8 +124,8 @@ Ele pode ser usado para suprimir avisos em expressões e instruções do bloco d
 
 // Supress all warnings from the 'r' rule group (resource management) in block.
 [[gsl::suppress(r)]]
-{ 
-    new int; 
+{
+    new int;
 }
 
 // Suppress only one specific warning number.
@@ -139,11 +136,11 @@ Ele pode ser usado para suprimir avisos em expressões e instruções do bloco d
 {
     int *p = new int;
 }
-```  
+```
 
 ## <a name="suppressing-analysis-by-using-command-line-options"></a>Supressão de análise, usando as opções de linha de comando
  Em vez de #pragmas, você pode usar as opções de linha de comando na página de propriedades do arquivo para suprimir avisos para um projeto ou um único arquivo. Por exemplo, para desabilitar o aviso 26400 para um arquivo:
- 
+
  1) Clique no arquivo em **Gerenciador de soluções**
 
  2) Escolha **propriedades | C / C++ | Linha de comando**
@@ -152,14 +149,14 @@ Ele pode ser usado para suprimir avisos em expressões e instruções do bloco d
 
  Você pode usar a opção de linha de comando para desabilitar temporariamente todos os análise de código para um arquivo, especificando `/analyze-`. Isso gerará o aviso *D9025 substituindo '/ANALYZE' com ' /ANALYZE -'*, que irá lembrá-lo para habilitar a análise de código novamente mais tarde.
 
- ## <a name="corecheck_per_file"></a>Habilitar o verificador de diretrizes de núcleos C++ em arquivos de projeto específico
+ ## <a name="corecheck_per_file"></a> Habilitar o verificador de diretrizes de núcleos C++ em arquivos de projeto específico
 Às vezes, pode ser útil para análise de código foco e ainda aproveitar o Visual Studio IDE. Abaixo está um cenário de exemplo que pode ser usado para projetos grandes para economizar tempo de compilação e tornar mais fácil para os resultados do filtro.
 1.  No shell de comando do conjunto de `esp.extension` e `esp.annotationbuildlevel` variáveis de ambiente.
 2.  Inicie o Visual Studio no shell de comando para herdar essas variáveis.
 3.  Carregue seu projeto e abra suas propriedades.
 4.  Habilitar análise de código, selecione os conjuntos de regra apropriado, mas não habilitar extensões de análise de código.
 5.  Vá para o arquivo que você deseja analisar com o verificador de diretrizes de núcleos de C++ e abra suas propriedades.
-6.  Escolha **C / C++ \Command opções de linha de** e adicione`/analyze:plugin EspXEngine.dll`
+6.  Escolha **C / C++ \Command opções de linha de** e adicione `/analyze:plugin EspXEngine.dll`
 7.  Desabilitar o uso de cabeçalho pré-compilado (**C / C++ \Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado e se o último foi compilado com as opções de projeto padrão, ele não será compatível.
 8.  Recompile o projeto. As verificações de PREFast comuns devem ser executado em todos os arquivos. Porque o verificador de diretrizes de núcleos de C++ não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
@@ -205,34 +202,34 @@ Se você usar um sistema de compilação não depende de MSBuild ainda é possí
 Você precisará definir algumas variáveis de ambiente e usar opções de linha de comando adequadas para o compilador. É melhor trabalhar no ambiente do "Prompt de comando de ferramentas nativas" para que você não precisa pesquisar caminhos específicos para o compilador, incluir diretórios, etc.
 
 1.  **Variáveis de ambiente**
-  - `set esp.extensions=cppcorecheck.dll`Isso informa ao mecanismo para carregar o módulo de diretrizes de núcleos de C++.
-  - `set esp.annotationbuildlevel=ignore`Isso desabilita a lógica que processa as anotações SAL. Anotações não afetam a análise de código no verificador de diretrizes de núcleos de C++ ainda usa seu processamento de tempo (às vezes, muito tempo). Essa configuração é opcional, mas altamente recomendado.
-  - `set caexcludepath=%include%`É altamente recomendável que você desabilite avisos que são acionados em cabeçalhos padrão. Você pode adicionar mais caminhos aqui, por exemplo, o caminho para os cabeçalhos comuns em seu projeto.
+  - `set esp.extensions=cppcorecheck.dll` Isso informa ao mecanismo para carregar o módulo de diretrizes de núcleos de C++.
+  - `set esp.annotationbuildlevel=ignore` Isso desabilita a lógica que processa as anotações SAL. Anotações não afetam a análise de código no verificador de diretrizes de núcleos de C++ ainda usa seu processamento de tempo (às vezes, muito tempo). Essa configuração é opcional, mas altamente recomendado.
+  - `set caexcludepath=%include%` É altamente recomendável que você desabilite avisos que são acionados em cabeçalhos padrão. Você pode adicionar mais caminhos aqui, por exemplo, o caminho para os cabeçalhos comuns em seu projeto.
 2.  **Opções de linha de comando**
-  - `/analyze`Permite análise de código (Considere também usar /ANALYZE: apenas e /ANALYZE: quiet).
-  - `/analyze:plugin EspXEngine.dll`Esta opção carrega o mecanismo de extensões de análise de código para o PREfast. Esse mecanismo, por sua vez, carrega o verificador de diretrizes de núcleos de C++.
+  - `/analyze`  Permite análise de código (Considere também usar /ANALYZE: apenas e /ANALYZE: quiet).
+  - `/analyze:plugin EspXEngine.dll` Esta opção carrega o mecanismo de extensões de análise de código para o PREfast. Esse mecanismo, por sua vez, carrega o verificador de diretrizes de núcleos de C++.
 
 
 
-## <a name="use-the-guideline-support-library"></a>Use a biblioteca de suporte de diretriz  
- A biblioteca de suporte de diretriz foi projetada para ajudá-lo a seguir as diretrizes de núcleos. O GSL inclui definições que permitem que você substitua construções propensas a erro alternativas mais seguras. Por exemplo, você pode substituir um `T*, length` par de parâmetros com o `span<T>` tipo. O GSL está disponível em [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é o código-fonte aberto, para que você pode exibir as fontes, fazer comentários ou contribuir. O projeto pode ser encontrado em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+## <a name="use-the-guideline-support-library"></a>Use a biblioteca de suporte de diretriz
+ A biblioteca de suporte de diretriz foi projetada para ajudá-lo a seguir as diretrizes de núcleos. O GSL inclui definições que permitem que você substitua construções propensas a erro alternativas mais seguras. Por exemplo, você pode substituir um `T*, length` par de parâmetros com o `span<T>` tipo. O GSL está disponível em [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é o código-fonte aberto, para que você pode exibir as fontes, fazer comentários ou contribuir. O projeto pode ser encontrado em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a>Use as diretrizes a verificação de núcleo de C++ em projetos do Visual Studio 2015  
-  Se você usar o Visual Studio 2015, os conjuntos de regras de análise de código C++ Core Check não são instalados por padrão. Você deve executar algumas etapas adicionais antes de habilitar as ferramentas de análise de código C++ Core verificar no Visual Studio 2015. Microsoft fornece suporte para projetos do Visual Studio 2015 usando um pacote do Nuget. O pacote é chamado Microsoft.CppCoreCheck e está disponível em [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este pacote requer que você tem pelo menos o Visual Studio 2015 com atualização 1 instalado.  
-  
- O pacote também instala outro pacote como uma dependência, uma biblioteca de suporte diretriz (GSL) somente cabeçalho. O GSL também está disponível no GitHub em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).  
+ ## <a name="vs2015_corecheck"></a> Use as diretrizes a verificação de núcleo de C++ em projetos do Visual Studio 2015
+  Se você usar o Visual Studio 2015, os conjuntos de regras de análise de código C++ Core Check não são instalados por padrão. Você deve executar algumas etapas adicionais antes de habilitar as ferramentas de análise de código C++ Core verificar no Visual Studio 2015. Microsoft fornece suporte para projetos do Visual Studio 2015 usando um pacote do Nuget. O pacote é chamado Microsoft.CppCoreCheck e está disponível em [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este pacote requer que você tem pelo menos o Visual Studio 2015 com atualização 1 instalado.
 
- Por causa da forma que as regras de análise de código são carregadas, você deve instalar o pacote Microsoft.CppCoreCheck NuGet em cada projeto de C++ que você deseja verificar no Visual Studio 2015.  
-  
-#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Para adicionar o pacote de Microsoft.CppCoreCheck ao seu projeto no Visual Studio 2015  
-  
-1.  Em **Solution Explorer**, com o botão direito para abrir o menu de contexto do projeto na solução que você deseja adicionar o pacote. Escolha **gerenciar pacotes NuGet** para abrir o **NuGet Package Manager**.  
-  
-2.  No **NuGet Package Manager** janela, procure Microsoft.CppCoreCheck.  
-  
-     ![Janela do Gerenciador de pacotes do NuGet mostra o pacote de CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")  
-  
-3.  Selecione o pacote de Microsoft.CppCoreCheck e, em seguida, escolha o **instalar** botão para adicionar as regras para seu projeto.  
-  
- O pacote NuGet adiciona um arquivo. targets do MSBuild adicional ao seu projeto que é invocado quando você habilitar a análise de código em seu projeto. Esse arquivo. targets adiciona as regras de verificação de núcleo de C++ como uma extensão adicional para a ferramenta de análise de código do Visual Studio. Quando o pacote for instalado, você pode usar a caixa de diálogo páginas de propriedades para habilitar ou desabilitar as regras de lançamento e experimentais.  
-  
+ O pacote também instala outro pacote como uma dependência, uma biblioteca de suporte diretriz (GSL) somente cabeçalho. O GSL também está disponível no GitHub em [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+ Por causa da forma que as regras de análise de código são carregadas, você deve instalar o pacote Microsoft.CppCoreCheck NuGet em cada projeto de C++ que você deseja verificar no Visual Studio 2015.
+
+#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Para adicionar o pacote de Microsoft.CppCoreCheck ao seu projeto no Visual Studio 2015
+
+1.  Em **Solution Explorer**, com o botão direito para abrir o menu de contexto do projeto na solução que você deseja adicionar o pacote. Escolha **gerenciar pacotes NuGet** para abrir o **NuGet Package Manager**.
+
+2.  No **NuGet Package Manager** janela, procure Microsoft.CppCoreCheck.
+
+     ![Janela do Gerenciador de pacotes do NuGet mostra o pacote de CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+
+3.  Selecione o pacote de Microsoft.CppCoreCheck e, em seguida, escolha o **instalar** botão para adicionar as regras para seu projeto.
+
+ O pacote NuGet adiciona um arquivo. targets do MSBuild adicional ao seu projeto que é invocado quando você habilitar a análise de código em seu projeto. Esse arquivo. targets adiciona as regras de verificação de núcleo de C++ como uma extensão adicional para a ferramenta de análise de código do Visual Studio. Quando o pacote for instalado, você pode usar a caixa de diálogo páginas de propriedades para habilitar ou desabilitar as regras de lançamento e experimentais.
+

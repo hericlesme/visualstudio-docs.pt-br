@@ -1,13 +1,9 @@
 ---
 title: Depurar JavaScript usando o console | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -16,17 +12,16 @@ helpviewer_keywords:
 - JavaScript Console
 - JavaScript debugging
 - debugging, JavaScript
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3069f0528d346a2168bbb37535089d00e23aa15
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b21cd5a4c0e6852553c2ca601d22eb9f45bb48d7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript usando o console no Visual Studio
   
@@ -51,7 +46,7 @@ ms.lasthandoff: 01/19/2018
   
  Usando a janela Console do JavaScript, você pode interagir com seu aplicativo sem parar e reiniciar o depurador. Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obter informações sobre outros recursos, como usando o Explorador do DOM e configuração de pontos de interrupção, de depuração do JavaScript, consulte [início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InteractiveConsole"></a>Depurar usando a janela do Console do JavaScript  
+##  <a name="InteractiveConsole"></a> Depurar usando a janela do Console do JavaScript  
  As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar interativamente um erro de codificação JavaScript.  
   
 > [!NOTE]
@@ -197,7 +192,7 @@ ms.lasthandoff: 01/19/2018
   
      Para a página default.html completa contendo o código de exemplo corrigido, consulte [código de exemplo depurar HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
-##  <a name="InteractiveDebuggingBreakMode"></a>Modo de depuração e quebrar interativo  
+##  <a name="InteractiveDebuggingBreakMode"></a> Modo de depuração e quebrar interativo  
  Você pode usar pontos de interrupção e fazer step-into do código enquanto está usando ferramentas de depuração JavaScript como a janela Console do JavaScript. Quando um programa que está sendo executado no depurador encontra um ponto de interrupção, o depurador suspende temporariamente a execução do programa. Quando a execução é suspensa, o programa alterna do modo de execução para o modo de interrupção. Você pode retomar a execução a qualquer momento.  
   
  Quando um programa está no modo de interrupção, você pode usar a janela Console do JavaScript para executar scripts e comandos válidos no contexto de execução do script atual. Neste procedimento, você usará a versão corrigida do aplicativo `FlipView` que você criou anteriormente para demonstrar o uso do modo de interrupção.  
@@ -238,14 +233,14 @@ ms.lasthandoff: 01/19/2018
   
      Para alternar de volta para o Visual Studio, pressione F12 ou Alt+Tab.  
   
-##  <a name="SinglelineMultilineMode"></a>Modo de linha única e modo de várias linhas na janela do Console do JavaScript  
+##  <a name="SinglelineMultilineMode"></a> Modo de linha única e modo de várias linhas na janela do Console do JavaScript  
  O aviso de entrada na janela Console do JavaScript oferece suporte ao modo de linha única e ao modo de várias linhas. O procedimento de depuração interativa neste tópico fornece um exemplo de como usar os dois modos. Você pode pressionar Ctrl+Alt+M para alternar entre os modos.  
   
  O modo de linha única fornece um histórico de entrada. Você pode navegar por esse histórico usando as teclas de seta para cima e seta para baixo. O modo de linha única limpa o aviso de entrada quando você executa scripts. Para executar um script no modo de linha única, pressione Enter.  
   
  O modo de várias linhas não limpa o aviso de entrada quando você executa scripts. Quando você alternar para o modo de linha do modo de várias linhas, você pode limpar a linha de entrada pressionando **limpar entrada** (o "X" vermelho). Para executar um script no modo de várias linhas, pressione Ctrl+Enter ou escolha o símbolo de seta no canto inferior direito da janela.  
   
-##  <a name="Switching"></a>Alternar o contexto de execução do script  
+##  <a name="Switching"></a> Alternar o contexto de execução do script  
  A janela Console do JavaScript permite que você interaja com um único contexto de execução, que representa uma única instância da plataforma host da Web (WWAHost.exe) de cada vez. Em alguns cenários, seu aplicativo pode iniciar outra instância do host, por exemplo, quando você usa um `iframe`, um contrato compartilhado, um web worker ou um controle `WebView`. Se outra instância do host está em execução, você pode selecionar um contexto de execução diferente enquanto executa o aplicativo selecionando o contexto de execução no **destino** lista.  
   
  A ilustração a seguir mostra a lista de destino na janela Console do JavaScript.  

@@ -1,29 +1,25 @@
 ---
 title: DisassemblyData | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DisassemblyData
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e97d2cc15e3b613fa56d2d4df1d5df8c68f9b06
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4276009244f1d49b89311d5d158a34bebf3fcf23
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Descreve uma instrução de desmontagem para o ambiente de desenvolvimento integrado (IDE) para exibir.  
@@ -124,6 +120,7 @@ using System;
 using System.Runtime.InteropServices;  
   
 namespace MyNamespace  
+{
     class MyClass  
     {  
         string EncodeData(string documentString,  
@@ -150,7 +147,7 @@ namespace MyNamespace
             }  
             // Copy guid data bytes to string as wide characters.  
             // Assumption: sizeof(char) == 2.  
-            for (int i = 0; i < guidDataLength; i++)  
+            for (int i = 0; i < guidDataLength / sizeof(char); i++)  
             {  
                 returnString += (char)Marshal.ReadInt16(pBuffer, i * sizeof(char));  
             }  
@@ -206,7 +203,7 @@ namespace MyNamespace
                for (int i = 0; i < guidDataLength; i++)  
                {  
                    Marshal.WriteByte(pGuidBuffer, i,  
-                                     Marshal.ReadByte(pBuffer, bufferOffset + i);  
+                                     Marshal.ReadByte(pBuffer, bufferOffset + i));  
                }  
                bufferOffset += guidDataLength;  
                checksumGuid = (Guid)Marshal.PtrToStructure(pGuidBuffer, typeof(Guid));  

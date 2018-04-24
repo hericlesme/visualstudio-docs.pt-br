@@ -1,23 +1,18 @@
 ---
-title: Conjunto de regras misto regras recomendadas | Microsoft Docs
-ms.custom: 
+title: Conjunto de regras recomendadas misto
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bbfc45e481cddb9fbf07e8755a48eda403796eb
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: b84c218ad6a369cfc5d9f06a5f5833fb277692ee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de regras recomendadas misto
 
@@ -98,7 +93,7 @@ Microsoft misto recomendado regras enfocam os problemas mais críticos e comuns 
 |[C6314](../code-quality/c6314.md)|Bit a bit- ou precedência|
 |[C6317](../code-quality/c6317.md)|Não não complemento|
 |[C6318](../code-quality/c6318.md)|Exceção continuar a pesquisa|
-|[C6319](../code-quality/c6319.md)|Ignored By Comma|
+|[C6319](../code-quality/c6319.md)|Ignorado por vírgula|
 |[C6324](../code-quality/c6324.md)|Cópia de cadeia de caracteres em vez de comparação de cadeia de caracteres|
 |[C6328](../code-quality/c6328.md)|Incompatibilidade potencial de tipo de argumento|
 |[C6331](../code-quality/c6331.md)|Sinalizadores inválidos VirtualFree|
@@ -218,7 +213,7 @@ Microsoft misto recomendado regras enfocam os problemas mais críticos e comuns 
 |[C28253](../code-quality/c28253.md)|Anotação inconsistente para função: o parâmetro tem outras anotações nesta instância.|
 |[C28254](../code-quality/c28254.md)|dynamic_cast<>() não tem suporte nas anotações|
 |[C28262](../code-quality/c28262.md)|Foi encontrado um erro de sintaxe na anotação na função, para anotação|
-|[C28263](../code-quality/c28263.md)|Foi encontrado um erro de sintaxe em uma anotação condicional na anotação intrínseca| 
+|[C28263](../code-quality/c28263.md)|Foi encontrado um erro de sintaxe em uma anotação condicional na anotação intrínseca|
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|

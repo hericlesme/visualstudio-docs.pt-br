@@ -1,29 +1,24 @@
 ---
-title: "Exibição de threads | Microsoft Docs"
-ms.custom: 
+title: Exibição de threads | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.threadsview
 helpviewer_keywords:
 - Threads view
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 21ace8efe2491a394d7abfc6402894a2fe11e6f9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="threads-view"></a>Modo de Exibição de Threads
 O modo de exibição de Threads é uma lista simples de todos os threads associados com o windows em seu sistema. A ID do Thread e o nome do módulo para cada thread são mostrados. Os processos não são incluídos, mas você pode localizar facilmente o processo que possui um thread selecionado.  
@@ -34,7 +29,7 @@ O modo de exibição de Threads é uma lista simples de todos os threads associa
   
 1.  Do **Spy** menu, escolha **Threads**.  
   
- ![Spy º 43; &#43; Exibição de threads](../debugger/media/spy--_threads.png "Spy + + _Threads")  
+ ![Spy&#43; &#43; exibição de Threads](../debugger/media/spy--_threads.png "Spy + + _Threads")  
 Exibição de Threads do Spy + +  
   
  A figura acima mostra a exibição de Threads.  

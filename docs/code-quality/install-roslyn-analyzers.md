@@ -1,5 +1,5 @@
 ---
-title: Instalar analisadores de Roslyn no Visual Studio | Microsoft Docs
+title: Instalar analisadores de Roslyn no Visual Studio
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d21b0ab9c5db64c9b5874480c3735bfbb365384
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 8a3b40b3b471e6bb57da561ac51f23086a0f01bd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalar analisadores de plataforma de compilador do .NET
 

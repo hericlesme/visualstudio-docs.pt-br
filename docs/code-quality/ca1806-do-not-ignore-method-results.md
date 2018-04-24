@@ -1,12 +1,8 @@
 ---
-title: "CA1806: Não ignore resultados do método | Microsoft Docs"
-ms.custom: 
+title: 'CA1806: não ignore resultados do método'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CA1806
 - DoNotIgnoreMethodResults
@@ -14,85 +10,84 @@ helpviewer_keywords:
 - CA1806
 - DoNotIgnoreMethodResults
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 58da9a40f8cbbf8a506feb35dcba8a8e9f405899
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 605222de258598e1022288b50f0a30ba87777fdc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: não ignore resultados do método
-|||  
-|-|-|  
-|NomeDoTipo|DoNotIgnoreMethodResults|  
-|CheckId|CA1806|  
-|Categoria|Microsoft.Usage|  
-|Alteração Significativa|Não separáveis|  
-  
-## <a name="cause"></a>Causa  
- Há várias razões possíveis para este aviso:  
-  
--   Um novo objeto é criado, mas nunca foi usado.  
-  
--   Um método que cria e retorna uma nova cadeia de caracteres é chamado e a nova cadeia de caracteres nunca é usada.  
-  
--   Um método COM ou P/Invoke que retorna um código de erro HRESULT que nunca é usado. Descrição da Regra  
-  
- Criação do objeto desnecessário e a coleta de lixo associados do objeto não utilizado degradar o desempenho.  
-  
- Cadeias de caracteres são imutáveis e métodos como string. ToUpper retorna uma nova instância de uma cadeia de caracteres em vez de modificar a instância da cadeia de caracteres o método de chamada.  
-  
- Ignorar o código de erro ou HRESULT pode resultar em comportamento inesperado em condições de erro ou a condições de recursos insuficientes.  
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Se o método um cria uma nova instância do objeto B que nunca é usado, passe a instância como um argumento para outro método ou atribua a instância a uma variável. Se a criação do objeto é desnecessária, remova o-o.- ou -  
-  
- Se o método um chama o método B, mas não usa a nova instância da cadeia de caracteres que retorna o método B. Passe a instância como um argumento para outro método, atribua a instância a uma variável. Ou remova a chamada se ela for desnecessária.  
-  
- -ou-  
-  
- Se o método um chama o método B, mas não usa o HRESULT ou código de erro que o método retorna. Use o resultado em uma instrução condicional, atribua o resultado a uma variável ou passá-lo como um argumento para outro método.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- Não suprima um aviso dessa regra, a menos que o ato de criar o objeto alguns finalidade.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra uma classe que ignora o resultado da chamada de String. trim.  
-  
+|||
+|-|-|
+|NomeDoTipo|DoNotIgnoreMethodResults|
+|CheckId|CA1806|
+|Categoria|Microsoft.Usage|
+|Alteração Significativa|Não separáveis|
+
+## <a name="cause"></a>Causa
+ Há várias razões possíveis para este aviso:
+
+-   Um novo objeto é criado, mas nunca foi usado.
+
+-   Um método que cria e retorna uma nova cadeia de caracteres é chamado e a nova cadeia de caracteres nunca é usada.
+
+-   Um método COM ou P/Invoke que retorna um código de erro HRESULT que nunca é usado. Descrição da Regra
+
+ Criação do objeto desnecessário e a coleta de lixo associados do objeto não utilizado degradar o desempenho.
+
+ Cadeias de caracteres são imutáveis e métodos como string. ToUpper retorna uma nova instância de uma cadeia de caracteres em vez de modificar a instância da cadeia de caracteres o método de chamada.
+
+ Ignorar o código de erro ou HRESULT pode resultar em comportamento inesperado em condições de erro ou a condições de recursos insuficientes.
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Se o método um cria uma nova instância do objeto B que nunca é usado, passe a instância como um argumento para outro método ou atribua a instância a uma variável. Se a criação do objeto é desnecessária, remova o-o.- ou -
+
+ Se o método um chama o método B, mas não usa a nova instância da cadeia de caracteres que retorna o método B. Passe a instância como um argumento para outro método, atribua a instância a uma variável. Ou remova a chamada se ela for desnecessária.
+
+ -ou-
+
+ Se o método um chama o método B, mas não usa o HRESULT ou código de erro que o método retorna. Use o resultado em uma instrução condicional, atribua o resultado a uma variável ou passá-lo como um argumento para outro método.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ Não suprima um aviso dessa regra, a menos que o ato de criar o objeto alguns finalidade.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir mostra uma classe que ignora o resultado da chamada de String. trim.
+
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir corrige a violação anterior atribuindo o resultado da string. Trim novamente para a variável que foi chamado no.  
-  
+ [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir corrige a violação anterior atribuindo o resultado da string. Trim novamente para a variável que foi chamado no.
+
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra um método que não usa um objeto que ele cria.  
-  
+ [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir mostra um método que não usa um objeto que ele cria.
+
 > [!NOTE]
->  Essa violação não pode ser reproduzida no Visual Basic.  
+>  Essa violação não pode ser reproduzida no Visual Basic.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]   
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir corrige a violação anterior, removendo a desnecessária criação de um objeto.  
+ [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir corrige a violação anterior, removendo a desnecessária criação de um objeto.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)] 
+ [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
 
 <!-- Examples don't exist for the below... -->
 <!--
-## Example  
- The following example shows a method that ignores the error code that the native method GetShortPathName returns.  
-  
-## Example  
- The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.  
+## Example
+ The following example shows a method that ignores the error code that the native method GetShortPathName returns.
+
+## Example
+ The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.
 -->

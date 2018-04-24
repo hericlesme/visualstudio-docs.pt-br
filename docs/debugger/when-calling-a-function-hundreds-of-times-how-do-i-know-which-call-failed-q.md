@@ -1,13 +1,9 @@
 ---
-title: "Durante a chamada de uma função centenas de vezes, como sei qual chamada falhou? | Microsoft Docs"
-ms.custom: 
+title: Durante a chamada de uma função centenas de vezes, como sei qual chamada falhou? | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.functions
 dev_langs:
@@ -28,17 +24,16 @@ helpviewer_keywords:
 - functions [debugger]
 - Skip Count
 ms.assetid: 66cfac86-f5be-4d3a-9329-d44cd74bc586
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f36e482f7c5028f5a6e81d8fba21bb78763cb01a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac6edf60616a3cbf67d05282ebd15798749b263f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Durante a chamada de uma função centenas de vezes, como sei qual chamada falhou?
 ## <a name="problem-description"></a>Descrição do problema  

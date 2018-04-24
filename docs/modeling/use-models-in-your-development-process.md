@@ -1,23 +1,20 @@
 ---
-title: Usar modelos no processo de desenvolvimento | Microsoft Docs
-ms.custom: ''
+title: Usar modelos no processo de desenvolvimento
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5e75a3a56ddc272f296ef5cca5afcfd360d4ba1
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: b814f35e8c93ff8204fe39943dbaafbce03376a0
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 
@@ -141,11 +138,11 @@ Tipos diferentes de diagrama são úteis para descrever o design em diferentes n
 
 ## <a name="see-also"></a>Consulte também
 
-[Usar modelos de desenvolvimento ágil](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
-[criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
-[requisitos de usuário de modelo](../modeling/model-user-requirements.md)
-[modelo do aplicativo arquitetura](../modeling/model-your-app-s-architecture.md)
-[desenvolver testes de um modelo de](../modeling/develop-tests-from-a-model.md)
-[estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)
+- [Usar modelos de desenvolvimento ágil](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
+- [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)
+- [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)
+- [Desenvolver testes por meio de um modelo](../modeling/develop-tests-from-a-model.md)
+- [Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

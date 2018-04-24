@@ -1,26 +1,21 @@
 ---
-title: "Como: criar um Item de trabalho para um defeito de código gerenciado | Microsoft Docs"
-ms.custom: 
+title: Como criar um item de trabalho para um defeito de código gerenciado
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
 - code analysis, creating work items
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 695380527ed47c4a6bc3c820c028d88555938359
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: 41e4a507015a630eb31c86048e785ea179899ccf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Como criar um item de trabalho para um defeito de código gerenciado
 

@@ -1,5 +1,5 @@
 ---
-title: Criar uma regra de análise de código personalizado definida no Visual Studio | Microsoft Docs
+title: Criar uma regra de análise de código personalizado definida no Visual Studio
 ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - Development Edition, rule sets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a094b6c59eb4e1d95949dc35a5c0479edb4d5a76
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: f9297d862b0fa47ecc4f5b7b08f6b754e1b5dfc3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="custom-rule-sets"></a>Conjuntos de regras personalizados
 

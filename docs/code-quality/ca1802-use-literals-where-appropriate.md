@@ -1,12 +1,8 @@
 ---
-title: 'CA1802: Usar literais quando apropriado | Microsoft Docs'
-ms.custom: 
+title: 'CA1802: usar literais quando apropriado'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - UseLiteralsWhereAppropriate
 - CA1802
@@ -14,43 +10,43 @@ helpviewer_keywords:
 - UseLiteralsWhereAppropriate
 - CA1802
 ms.assetid: 2515e4cd-9e61-486d-b067-58ba1a743ce4
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c2e7841091d3ad5ca093b35b62cca1fdbe6b6a69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 861e03251a8d3f8ee461b82afdbc6ff55b254684
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: usar literais quando apropriado
-|||  
-|-|-|  
-|NomeDoTipo|UseLiteralsWhereAppropriate|  
-|CheckId|CA1802|  
-|Categoria|Microsoft.Performance|  
-|Alteração Significativa|Não recentes|  
-  
-## <a name="cause"></a>Causa  
- Um campo está declarado `static` e `readonly` (`Shared` e `ReadOnly` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e é inicializada com um valor que é computáveis em tempo de compilação.  
-  
-## <a name="rule-description"></a>Descrição da Regra  
- O valor de um `static``readonly` campo é calculado em tempo de execução quando o construtor estático para o tipo de declaração é chamado. Se o `static``readonly` campo é inicializado quando é declarado e um construtor estático não é declarado explicitamente, o compilador emite um construtor estático para inicializar o campo.  
-  
- O valor de um `const` campo é calculado em tempo de compilação e armazenado nos metadados, que aumenta o desempenho de tempo de execução quando ele é comparado com um `static``readonly` campo.  
-  
- Como o valor atribuído ao campo de destino é computáveis em tempo de compilação, altere a declaração para um `const` campo para que o valor é computado em tempo de compilação em vez de em tempo de execução.  
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Para corrigir uma violação desta regra, substitua o `static` e `readonly` modificadores com o `const` modificador.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- É seguro suprimir um aviso dessa regra ou desabilitar a regra, se o desempenho não for um problema.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra um tipo `UseReadOnly`, que viola a regra e um tipo, `UseConstant`, que atende a regra.  
-  
+|||
+|-|-|
+|NomeDoTipo|UseLiteralsWhereAppropriate|
+|CheckId|CA1802|
+|Categoria|Microsoft.Performance|
+|Alteração Significativa|Não recentes|
+
+## <a name="cause"></a>Causa
+ Um campo está declarado `static` e `readonly` (`Shared` e `ReadOnly` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e é inicializada com um valor que é computáveis em tempo de compilação.
+
+## <a name="rule-description"></a>Descrição da Regra
+ O valor de um `static``readonly` campo é calculado em tempo de execução quando o construtor estático para o tipo de declaração é chamado. Se o `static``readonly` campo é inicializado quando é declarado e um construtor estático não é declarado explicitamente, o compilador emite um construtor estático para inicializar o campo.
+
+ O valor de um `const` campo é calculado em tempo de compilação e armazenado nos metadados, que aumenta o desempenho de tempo de execução quando ele é comparado com um `static``readonly` campo.
+
+ Como o valor atribuído ao campo de destino é computáveis em tempo de compilação, altere a declaração para um `const` campo para que o valor é computado em tempo de compilação em vez de em tempo de execução.
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Para corrigir uma violação desta regra, substitua o `static` e `readonly` modificadores com o `const` modificador.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ É seguro suprimir um aviso dessa regra ou desabilitar a regra, se o desempenho não for um problema.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir mostra um tipo `UseReadOnly`, que viola a regra e um tipo, `UseConstant`, que atende a regra.
+
  [!code-vb[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/VisualBasic/ca1802-use-literals-where-appropriate_1.vb)]
  [!code-csharp[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/CSharp/ca1802-use-literals-where-appropriate_1.cs)]

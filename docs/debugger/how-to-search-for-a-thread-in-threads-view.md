@@ -1,27 +1,22 @@
 ---
-title: "Como: procurar um Thread na exibição de Threads | Microsoft Docs"
-ms.custom: 
+title: 'Como: procurar um Thread na exibição de Threads | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6aa48e8a83263ed31a36c97020a0f495a7a50f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b5eee67e195821f89dbd820f930288eb24f20a11
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Como procurar um thread na exibição de threads
 Você pode procurar um segmento específico no modo de exibição de Threads por meio de sua cadeia de caracteres de ID ou o módulo de thread como critério de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrará os atributos do thread selecionado na árvore de thread.  

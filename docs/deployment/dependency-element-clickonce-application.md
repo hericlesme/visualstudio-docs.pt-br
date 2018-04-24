@@ -1,12 +1,9 @@
 ---
-title: "&lt;dependência&gt; elemento (aplicativo ClickOnce) | Microsoft Docs"
-ms.custom: 
+title: '&lt;dependência&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,16 +23,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: "34"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependência&gt; elemento (aplicativo ClickOnce)
 Identifica uma dependência de plataforma ou assembly que é necessária para o aplicativo.  
@@ -98,7 +95,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 ### <a name="dependentos"></a>dependentOS  
  Opcional. Contém o `osVersionInfo` elemento. O `dependentOS` e `dependentAssembly` elementos são mutuamente exclusivos: um ou outro deve existir para um `dependency` elemento, mas não ambos.  
   
- `dependentOS`suporta os seguintes atributos.  
+ `dependentOS` suporta os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
@@ -124,7 +121,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 ### <a name="dependentassembly"></a>dependentAssembly  
  Opcional. Contém o `assemblyIdentity` elemento. O `dependentOS` e `dependentAssembly` elementos são mutuamente exclusivos: um ou outro deve existir para um `dependency` elemento, mas não ambos.  
   
- `dependentAssembly`tem os seguintes atributos.  
+ `dependentAssembly` tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
@@ -140,7 +137,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`name`|Necessário. Identifica o nome do aplicativo.|  
-|`version`|Necessário. Especifica o número de versão do aplicativo no seguinte formato:`major.minor.build.revision`|  
+|`version`|Necessário. Especifica o número de versão do aplicativo no seguinte formato: `major.minor.build.revision`|  
 |`publicKeyToken`|Opcional. Especifica uma cadeia hexadecimal de 16 caracteres que representa os último 8 bytes do `SHA-1` valor de hash da chave pública em que o aplicativo ou o assembly está assinado. A chave pública usada para assinar o catálogo deve ser 2048 bits ou mais.|  
 |`processorArchitecture`|Opcional. Especifica o processador. Os valores válidos são `x86` para Windows de 32 bits e `I64` para Windows de 64 bits.|  
 |`language`|Opcional. Identifica os códigos de idioma de duas partes, como EN-US do assembly.|  
@@ -148,7 +145,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 ### <a name="hash"></a>hash  
  O `hash` elemento é um filho opcional de `assemblyIdentity` elemento. O `hash` elemento não tem atributos.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]usa um algoritmo hash de todos os arquivos em um aplicativo como uma verificação de segurança, para garantir que nenhum dos arquivos foram alterados após a implantação. Se o `hash` elemento não for incluído, essa verificação não será executada. Portanto, omitindo o `hash` elemento não é recomendado.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa um algoritmo hash de todos os arquivos em um aplicativo como uma verificação de segurança, para garantir que nenhum dos arquivos foram alterados após a implantação. Se o `hash` elemento não for incluído, essa verificação não será executada. Portanto, omitindo o `hash` elemento não é recomendado.  
   
 ### <a name="dsigtransforms"></a>DSIG:Transforms  
  O `dsig:Transforms` elemento é um filho obrigatório a `hash` elemento. O `dsig:Transforms` elemento não tem atributos.  

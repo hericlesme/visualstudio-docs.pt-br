@@ -1,5 +1,5 @@
 ---
-title: Conjuntos de regras de análise de código no Visual Studio | Microsoft Docs
+title: Conjuntos de regras de análise de código no Visual Studio
 ms.date: 04/02/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6ac4a771efc34fcee8cdf46d21bf7a265da17b
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 3a445aecdd5a9f02bca8d43e42646c991742a626
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Conjuntos de regras de uso para agrupar regras de análise de código
 

@@ -1,29 +1,26 @@
 ---
-title: "Erro: Você não tem permissão para inspecionar o processo de &#39; identidade de s | Microsoft Docs"
-ms.custom: 
+title: 'Erro: Você não tem permissão para inspecionar o processo&#39;identidade de s | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f51087d4f7882c34826942a898328640107a5ac6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f37cf6f6a1a72435b549942fa03d821c900718a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erro: Você não tem permissão para inspecionar o processo de &#39; identidade s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erro: Você não tem permissão para inspecionar o processo&#39;identidade s
 Você não tem permissão para inspecionar a identidade do processo. Isto pode ocorrer devido à configuração do sistema.  
   
  O depurador não pôde inspecionar a identidade do processo, que são informações necessárias para depuração. A causa mais provável é que os Serviços de Terminal estão sendo desabilitados. O serviço dos Serviços de Terminal é habilitado por padrão. Siga estas etapas para habilitá-lo novamente.  
@@ -56,7 +53,7 @@ Você não tem permissão para inspecionar a identidade do processo. Isto pode o
   
 1.  Clique em **iniciar** e, em seguida, clique com botão direito **meu computador**.  
   
-2.  Escolha **propriedades**.  
+2.  Escolha **Propriedades**.  
   
      O **propriedades do sistema** janela é exibida.  
   

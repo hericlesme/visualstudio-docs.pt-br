@@ -1,12 +1,9 @@
 ---
 title: 'Como: testar e depurar um visualizador | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - visualizers, debugging
 - debugging [Visual Studio], visualizers
 ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
-caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 75102abacbf93c90b6c24d2884224dd9dd1e1bae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 860d6bd5f89ff85f3abf75f1beceb62b6b860d54
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Como testar e depurar um visualizador
 Quando você tiver gravado um visualizador, precisará depurá-lo e testá-lo.  

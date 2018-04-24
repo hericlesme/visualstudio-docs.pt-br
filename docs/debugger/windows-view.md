@@ -1,36 +1,31 @@
 ---
-title: "Modo de exibição do Windows | Microsoft Docs"
-ms.custom: 
+title: Modo de exibição do Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
 - Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94aae2c271b0b9030d63597fe8100e8c8f2bccbe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f1379071a095f5ad1e0c28ec69ed813cb6212fff
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="windows-view"></a>Exibição de janelas
 Quando você abre pela primeira vez Spy + +, Windows exibe uma árvore de todas as janelas e controles no sistema. O nome de classe e identificador de janela são mostrados. A janela de área de trabalho atual está na parte superior da árvore. Todas as outras janelas são filhos da área de trabalho e são listadas de acordo com a hierarquia de janela padrão. As janelas irmãs aparecem na lista expansible recuada abaixo de seus pais.  
   
  A figura a seguir mostra uma exibição de Spy + + Windows comuns com o nó superior expandido.  
   
- ![Spy º 43; &#43; Modo de exibição Windows](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
+ ![Spy&#43; &#43; exibição Windows](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
 Exibição de janelas do Spy + +  
   
  A janela de área de trabalho atual está na parte superior da árvore. Todas as outras janelas são filhos da área de trabalho e são listadas de acordo com a hierarquia de janela padrão, com as janelas irmãs ordenadas por ordem Z. Você pode expandir ou recolher a qualquer nó pai da árvore clicando o + ou - símbolo ao lado do nó.  

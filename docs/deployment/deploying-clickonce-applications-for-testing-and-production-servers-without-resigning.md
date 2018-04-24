@@ -1,12 +1,9 @@
 ---
-title: "Implantando aplicativos ClickOnce para teste e os servidores de produção sem assinar novamente | Microsoft Docs"
-ms.custom: 
+title: Implantando aplicativos ClickOnce para teste e os servidores de produção sem assinar novamente | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - deploymentProvider tag
 - manifests [ClickOnce]
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ec7265f91d5c202d5885b7f1994aa6f037d6d2ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b4c71e1bd6f224fdd0198ce7850c92364126d7e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Implantando aplicativos ClickOnce para servidores de teste e produção sem assinar novamente
 Este tópico apresenta um novo recurso do ClickOnce introduzida no .NET Framework versão 3.5, o que permite a implantação de aplicativos ClickOnce a partir de vários locais de rede sem assinar novamente ou alterar o ClickOnce manifestos.  
@@ -54,13 +51,13 @@ Este tópico apresenta um novo recurso do ClickOnce introduzida no .NET Framewor
   
  O ponto chave ser lembrado é que os aplicativos que excluem um `deploymentProvider` não é possível alterar o local de instalação durante as atualizações, até que eles são fornecidos uma atualização que inclui o `deploymentProvider` marca novamente.  
   
- Aqui estão dois exemplos para esclarecer esse ponto. No primeiro exemplo, você publica um aplicativo ClickOnce que não tem nenhum `deploymentProvider` marca e você solicitar aos usuários para instalá-lo de http://www.adatum.com/MyApplication/. Se você decidir que deseja publicar a próxima atualização do aplicativo de http://subdomain.adatum.com/MyApplication/, você não terá nenhuma maneira de indicando isso no manifesto de implantação que reside no http://www.adatum.com/MyApplication/. Você pode fazer uma das duas coisas:  
+ Aqui estão dois exemplos para esclarecer esse ponto. No primeiro exemplo, você publica um aplicativo ClickOnce que não tem nenhum `deploymentProvider` marca e você solicitar aos usuários para instalá-lo do http://www.adatum.com/MyApplication/. Se você decidir que deseja publicar a próxima atualização do aplicativo de http://subdomain.adatum.com/MyApplication/, você terá nenhuma maneira de indicando isso no manifesto de implantação que reside no http://www.adatum.com/MyApplication/. Você pode fazer uma das duas coisas:  
   
 -   Diga aos seus usuários para desinstalar a versão anterior e instalar a nova versão de um novo local.  
   
 -   Incluir uma atualização em http://www.adatum.com/MyApplication/ que inclui um `deploymentProvider` apontando para http://www.adatum.com/MyApplication/. Em seguida, solte outra atualização posterior com `deploymentProvider` apontando para http://subdomain.adatum.com/MyApplication/.  
   
- No segundo exemplo, você publica um aplicativo ClickOnce que especifique `deploymentProvider`, e, em seguida, decidir para removê-lo. Uma vez a nova versão sem `deploymentProvider` foi baixado para os clientes, você não poderá redirecionar o caminho usado para atualizações até que a versão do seu aplicativo de `deploymentProvider` restaurado. Assim como acontece com o primeiro exemplo, `deploymentProvider` inicialmente deve apontar para o local de atualização atual, não seu novo local. Nesse caso, se você tentar inserir um `deploymentProvider` que se refere a http://subdomain.adatum.com/MyApplication/, a próxima atualização irá falhar.  
+ No segundo exemplo, você publica um aplicativo ClickOnce que especifique `deploymentProvider`, e, em seguida, decidir para removê-lo. Uma vez a nova versão sem `deploymentProvider` foi baixado para os clientes, você não poderá redirecionar o caminho usado para atualizações até que a versão do seu aplicativo de `deploymentProvider` restaurado. Assim como acontece com o primeiro exemplo, `deploymentProvider` inicialmente deve apontar para o local de atualização atual, não seu novo local. Nesse caso, se você tentar inserir uma `deploymentProvider` que se refere a http://subdomain.adatum.com/MyApplication/, a próxima atualização irá falhar.  
   
 ## <a name="creating-a-deployment"></a>Criar uma implantação  
  Para obter orientação passo a passo sobre a criação de implantações que podem ser implantadas de diferentes locais da rede, consulte [passo a passo: Implantando manualmente um aplicativo ClickOnce que Does não exigem assinando novamente e preserva a identidade visual informações](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

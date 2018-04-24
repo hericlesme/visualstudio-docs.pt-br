@@ -1,13 +1,9 @@
 ---
-title: "Como depurar uma violação de acesso C++? | Microsoft Docs"
-ms.custom: 
+title: Como depurar uma violação de acesso C++? | Microsoft Docs
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
 dev_langs:
@@ -19,17 +15,16 @@ helpviewer_keywords:
 - access violation debugging
 - debugging [Visual Studio], access violations
 ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24d3eed91a659dc8f0d114369bdba45dd2973375
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b131ba4acf761a11aa9f39807d1db3202b021c9d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Como depurar uma violação de acesso C++?
 ## <a name="problem-description"></a>Descrição do problema  

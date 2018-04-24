@@ -1,5 +1,5 @@
 ---
-title: Análise de código gerenciado no Visual Studio de código | Microsoft Docs
+title: Análise de código para código gerenciado no Visual Studio
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - managed code, code analysis
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d654cb3a7f0d0e952b447337603718c20eaee3e
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 727a63d122871ff452365eea66e9a6e63a7c67b0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Visão geral da análise de código para código gerenciado
 

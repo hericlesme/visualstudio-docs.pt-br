@@ -1,26 +1,21 @@
 ---
-title: Diretrizes do Visual Studio C++ Core verificador referência | Microsoft Docs
-ms.custom: ''
+title: Referência do Visual Studio C++ Core diretrizes verificador
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0825ea42ca74b224574299846504dfde7dd6f809
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 6d68ed1d7002ac0e92d3a8c3e32226cb3a38c3f0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referência de verificador de diretrizes do principal de C++
 
@@ -29,7 +24,7 @@ Esta seção lista os avisos do verificador de diretrizes de núcleos de C++. Pa
 > [!NOTE]
 > Alguns avisos pertencem a mais de um grupo, e não todos os avisos tem um tópico de referência completa.
 
-## <a name="ownerpointer-group"></a>OWNER_POINTER Group
+## <a name="ownerpointer-group"></a>Grupo de OWNER_POINTER
 
 [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md) retornar um objeto no escopo, em vez de um alocados no heap se ele tem um construtor de movimento. Consulte [diretrizes de núcleos de C++ R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
@@ -125,7 +120,7 @@ A expressão 'expr % % %': Nenhuma matriz de decay do ponteiro. Consulte [Bounds
 
 ## <a name="style-group"></a>Grupo de estilo
 
-[C26438 NO_GOTO](C26438.md) Avoid `goto`. Consulte [diretrizes de núcleos de C++ ES.76](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es76-avoid-goto).
+[C26438 NO_GOTO](C26438.md) evitar `goto`. Consulte [diretrizes de núcleos de C++ ES.76](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es76-avoid-goto).
 
 ## <a name="function-group"></a>Grupo de funções
 
@@ -173,7 +168,7 @@ Consulte [diretrizes de núcleos de C++: f. 6: se sua função pode não lançar
 [C26474 NO_IMPLICIT_CAST](C26474.md) não conversão entre tipos de ponteiro quando a conversão pode ser implícita. Consulte [Type.1 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md) não usar C conversões de estilo de função. Consulte [diretrizes de núcleos de C++ ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).
- 
+
 [C26490 NO_REINTERPRET_CAST](c26490.md) não use `reinterpret_cast`. Consulte [Type.1 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26491 NO_STATIC_DOWNCAST](c26490.md) não use `static_cast` downcasts. Consulte [Type.2 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
@@ -181,7 +176,7 @@ Consulte [diretrizes de núcleos de C++: f. 6: se sua função pode não lançar
 [C26492 NO_CONST_CAST](c26492.md) não use `const_cast` para eliminar `const`. Consulte [Type.3 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26493 NO_CSTYLE_CAST](c26493.md) não usar conversões do estilo C. Consulte [Type.4 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
- 
+
 [C26494 VAR_USE_BEFORE_INIT](c26494.md) variável '% variável %' não foi inicializado. Sempre inicialize um objeto. Consulte [Type.5 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26495 MEMBER_UNINIT](c26495.md) variável '% variável %' não foi inicializado. Sempre inicialize uma variável de membro. Consulte [Type.6 de diretrizes de núcleos de C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).

@@ -1,13 +1,9 @@
 ---
-title: "Como: usar verificações em tempo de execução nativas | Microsoft Docs"
-ms.custom: 
+title: 'Como: usar verificações em tempo de execução nativas | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -38,17 +34,16 @@ helpviewer_keywords:
 - stack pointers
 - arrays [Visual Studio], debugging
 ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a36edb5901f8ab67360e276f6a8ff5a2a8d51530
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6d47b39086f0363bd0bc610ec047213142fb7fec
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Como usar verificações de tempo de execução nativas
 No Visual C++, você pode usar nativo [runtime_checks](/cpp/preprocessor/runtime-checks) para capturar erros de tempo de execução comuns, como:  

@@ -1,13 +1,9 @@
 ---
-title: "&lt;customErrorReporting&gt; elemento (implantação do ClickOnce) | Microsoft Docs"
-ms.custom: 
+title: '&lt;customErrorReporting&gt; elemento (implantação do ClickOnce) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - <customErrorReporting> element [ClickOnce deployment manifest]
 ms.assetid: 7d31816e-c692-46b5-9cc9-753284b3bcda
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6b6726ebf45522834d916897f456952b66a3605
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 41ade854a37127443735e1c197c080aad3d5bd93
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; elemento (implantação do ClickOnce)
 Especifica um URI para mostrar quando ocorre um erro.  

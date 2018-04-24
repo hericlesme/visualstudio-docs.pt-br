@@ -1,12 +1,9 @@
 ---
-title: "Limitações na depuração de Script | Microsoft Docs"
-ms.custom: 
+title: Limitações na depuração de Script | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - script debugging, limitations
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c51a9b9ad5a349261d1898310ccb0125293ab5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f6679e781e564a58d6a98b7d0190f2f2b4e9fa74
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="limitations-on-script-debugging"></a>Limitações na depuração de script
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] suporta a depuração de script do lado do cliente, sujeito às restrições neste tópico.  
@@ -36,7 +33,7 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] suporta a depuraçã
   
 -   Os pontos de interrupção devem ser definidos dentro dos blocos de `<script>`. Não é possível mapear pontos de interrupção em scripts embutidos ou em blocos de `<% %>`.  
   
--   A URL do navegador da página deve conter o nome da página. Por exemplo, http://microsoft.com/default.apsx. O mapeamento de pontos de interrupção não pode reconhecer um redirecionamento de um endereço, por exemplo, http://microsoft.com para a página padrão.  
+-   A URL do navegador da página deve conter o nome da página. Por exemplo, http://microsoft.com/default.apsx. Mapeamento de ponto de interrupção não pode reconhecer um redirecionamento de um endereço como http://microsoft.com para a página padrão.  
   
 -   O ponto de interrupção deve ser definido na página especificada na URL do navegador, não em um arquivo de controle ASPX (ascx), uma página mestre ou outro arquivo incluído por essa página. Não é possível mapear pontos de interrupção definidos em páginas incluídas.  
   

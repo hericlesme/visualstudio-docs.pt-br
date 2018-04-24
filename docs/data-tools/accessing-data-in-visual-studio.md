@@ -1,7 +1,7 @@
 ---
-title: Acessando dados no Visual Studio | Microsoft Docs
+title: Acesso a dados no Visual Studio
 ms.date: 11/04/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - "80025080"
 helpviewer_keywords:
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 82717e8b0eb8b4b751fc8c5ed983695ff6b6fc4a
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: a7c7e031eb3fbe0330ab752882c8ac89eb7617bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Acesso a dados no Visual Studio
 
@@ -33,8 +33,8 @@ A lista a seguir mostra apenas alguns os muitos sistemas de banco de dados e arm
 
 ||||
 |-|-|-|
-|Banco de dados SQL|Azure Cosmos DB|Armazenamento (blobs, tabelas, filas, arquivos)|
-|SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
+|Banco de dados SQL|Banco de dados do Azure Cosmos|Armazenamento (blobs, tabelas, filas, arquivos)|
+|SQL Data Warehouse|Banco de dados do SQL Server Stretch|StorSimple|
 
 E muito mais...
 

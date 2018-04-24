@@ -1,22 +1,22 @@
 ---
-title: Analisadores de Roslyn no Visual Studio | Microsoft Docs
+title: Analisadores de Roslyn no Visual Studio
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35b052c795ae10b7d7c4f96c8c4fce72ecbee839
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f5a434a47bac73aef86e83d220605b196fc2a74a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Visão geral dos analisadores de plataforma de compilador do .NET
 

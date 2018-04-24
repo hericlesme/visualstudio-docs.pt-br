@@ -1,5 +1,5 @@
 ---
-title: 'CA1704: Os identificadores devem ser grafados corretamente | Microsoft Docs'
+title: 'CA1704: os identificadores do recurso devem ter a ortografia correta'
 ms.date: 03/28/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: f2c7a44d-1690-44ca-9cd0-681b04b12b2a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 327429abac6ec32670ef5eca4d7983552944bbbf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c6fe8c51ce1fc2bd93fca26b52b3ef5daf223b8b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: os identificadores do recurso devem ter a ortografia correta
 

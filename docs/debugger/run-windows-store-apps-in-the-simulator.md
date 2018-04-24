@@ -1,28 +1,25 @@
 ---
 title: Executar aplicativos UWP no simulador | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Executar aplicativos UWP no simulador
 O simulador do Visual Studio para aplicativos UWP é um aplicativo de área de trabalho que simula um aplicativo UWP. Normalmente, você deve depurar no computador local, um dispositivo conectado ou um computador remoto. No entanto, em alguns cenários, convém usar o simulador do Visual Studio para emular um tamanho da tela física diferentes e a resolução. Você também pode simular eventos comuns de toque e rotação e simular propriedades de conexão de rede.
@@ -34,12 +31,12 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo de área de t
 > [!IMPORTANT]
 >  O simulador do Visual Studio 2015 não inclui o botão de localização geográfica. Isso ocorre porque o simulador do Windows 10 não inclui a simulação de localização geográfica.
   
-##  <a name="BKMK_Set_the_simulator_as_the_target"></a>Definir o simulador como o destino  
+##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Definir o simulador como o destino  
  Para executar seu aplicativo UWP no simulador, selecione **simulador** na lista suspensa lista ao lado de **iniciar depuração** botão na **padrão** barra de ferramentas. Essa opção só estará disponível se seu aplicativo **mínima da plataforma de destino. Versão** é menor ou igual ao sistema operacional no computador de desenvolvimento. 
   
  ![Em execução no simulador](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
-##  <a name="BKMK_Choose_an_interaction_mode"></a>Escolha um modo de interação  
+##  <a name="BKMK_Choose_an_interaction_mode"></a> Escolha um modo de interação  
  Você pode escolher os seguintes modos de interação  
   
 -   ![Botão modo](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") modo do Mouse: define o modo de interação para gestos do mouse. Esses gestos incluem cliques, cliques duplos e arrastos.  
@@ -78,10 +75,10 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo de área de t
   
     -   Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de girar o objeto no sentido horário.  
   
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a>Habilitar ou desabilitar sempre em modo superior  
+##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Habilitar ou desabilitar sempre em modo superior  
  Você pode configurar a janela do simulador para ficar sempre por cima das outras janelas. O **alternar janela superior** botão habilita ou desabilita o **sempre visível** modo da janela do simulador.  
   
-##  <a name="BKMK_Change_the_device_orientation"></a>Alterar a orientação do dispositivo  
+##  <a name="BKMK_Change_the_device_orientation"></a> Alterar a orientação do dispositivo  
  Você pode alternar a orientação do dispositivo entre retrato e paisagem girando o simulador 90 graus em qualquer direção.  
   
 > [!NOTE]
@@ -90,7 +87,7 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo de área de t
 > [!NOTE]
 >  Se você gira o simulador de modo que uma borda dele fica maior do que a tela em que ele é exibido, o simulador é automaticamente redimensionado para caber na tela. O simulador não é redimensionado para o tamanho original se você o gira novamente.  
   
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a>Alterar o tamanho de tela simulados e resolução  
+##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Alterar o tamanho de tela simulados e resolução  
  Para alterar o tamanho de tela simulados e a resolução, escolha o **alterar resolução** botão na paleta e escolha um novo tamanho e a resolução da lista.  
   
  O tamanho da tela e a resolução são listados como *polegadas de largura de tela, pixel largura X altura em pixel*. Observe que tanto o tamanho como a resolução da tela são simulados. As coordenadas de local no simulador são convertidas nas coordenadas do tamanho e da resolução do dispositivo selecionado.  
@@ -98,7 +95,7 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo de área de t
 > [!NOTE]
 >  Você pode salvar versões dimensionadas de imagens de bitmap em seu aplicativo, e o Windows carregará a imagem correta para a escala atual. Para obter mais informações, consulte [gratuito de Design e a interface do usuário](/windows/uwp/layout/design-and-ui-intro). No entanto, se você alterar a resolução do simulador de modo que o Windows selecione uma imagem diferente para ajustar à resolução, será preciso parar e reiniciar a sessão de depuração para exibir a nova imagem.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Fazer uma captura de tela de seu aplicativo para enviar à Microsoft Store  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Fazer uma captura de tela de seu aplicativo para enviar à Microsoft Store  
  Quando você enviar um aplicativo Microsoft Store, você deve incluir capturas de tela do aplicativo.  
   
 > [!NOTE]
@@ -110,7 +107,7 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo de área de t
   
      ![Menu de contexto de configurações de captura de tela](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
-##  <a name="BKMK_Simulate_network_connection_properties"></a>Simular propriedades de conexão de rede  
+##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propriedades de conexão de rede  
  Você pode ajudar os usuários do seu aplicativo a gerenciar o custo de conexões de rede limitada pelo reconhecimento de rede conexão custo ou dados status alterações no plano de manutenção e habilitação do seu aplicativo usar essas informações para evitar incorrer em custos adicionais para roaming ou exceder um limite de transferência de dados especificado. O [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) APIs permitem que você responda aos [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) eventos que assinar. Consulte [início rápido: restrições de custo de gerenciamento de rede limitada](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar ou testar seu código de percepção de custo de rede, o simulador pode imitar as propriedades de uma rede que são expostas por meio de [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objeto retornado por [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
@@ -147,7 +144,7 @@ O simulador do Visual Studio para aplicativos UWP é um aplicativo de área de t
   
  [Como disparar eventos para suspender, retomar e em segundo plano em aplicativos UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
-##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Navegar no simulador com o teclado  
+##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar no simulador com o teclado  
  Você pode navegar a barra de ferramentas do simulador pressionando **CTRL + ALT + seta para cima** para alternar o foco da janela do simulador na barra de ferramentas do simulador. Use o **seta para cima** e **seta para baixo** para mover entre os botões da barra de ferramentas.  
   
  Você pode fechar o simulador pressionando **CTRL + ALT + F4**.  

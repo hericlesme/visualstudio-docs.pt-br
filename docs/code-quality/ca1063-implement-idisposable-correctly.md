@@ -1,11 +1,8 @@
 ---
-title: 'CA1063: Implementar IDisposable corretamente | Microsoft Docs'
-ms.custom: 
+title: 'CA1063: implementar IDisposable corretamente'
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
 - CA1063
@@ -15,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29a2fbb82fd2795c675bfa249e213488913745a9
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: implementar IDisposable corretamente
 

@@ -1,36 +1,31 @@
 ---
-title: "A exibição de mensagens | Microsoft Docs"
-ms.custom: 
+title: A exibição de mensagens | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
 - Messages view
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 31baccc88b25979dfc92fed6217bec3b0ef16a55
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="messages-view"></a>Exibição de mensagens
 Cada janela tem um fluxo de mensagem associado. Uma janela de exibição de mensagens exibe este fluxo de mensagem. O identificador de janela, o código de mensagem e a mensagem são mostrados. Você pode criar um modo de exibição de mensagens para um thread ou processo. Isso permite que você exiba as mensagens enviadas a todos os windows pertencentes a um processo específico ou thread, que é particularmente útil para a captura de mensagens de inicialização de janela.  
   
  Uma janela de exibição de mensagens típica é exibida abaixo. Observe que a primeira coluna contém o identificador de janela, e a segunda coluna contém um código de mensagem (explicado em [códigos de mensagem](../debugger/message-codes.md)). Mensagem decodificada parâmetros e valores de retorno são à direita.  
   
- ![Spy º 43; &#43; A exibição de mensagens](../debugger/media/spy--_messagesview.png "Spy + + _MessagesView")  
+ ![Spy&#43; &#43; a exibição de mensagens](../debugger/media/spy--_messagesview.png "Spy + + _MessagesView")  
 Exibição de mensagens do Spy + +  
   
 ## <a name="procedures"></a>Procedimentos  

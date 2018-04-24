@@ -1,13 +1,9 @@
 ---
-title: "Erro: O servidor web não é configurado corretamente | Microsoft Docs"
-ms.custom: 
+title: 'Erro: O servidor web não é configurado corretamente | Microsoft Docs'
+ms.custom: ''
 ms.date: 09/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.remote.projnotconfigured
 dev_langs:
@@ -17,17 +13,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd7ea7deea749831ebf26d3f8a406b1e3ad63fb0
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: c9ff79148af491ee27aeae20b66b4d7b742bef6b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: o servidor Web não foi configurado corretamente
 

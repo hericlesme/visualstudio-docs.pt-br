@@ -1,12 +1,9 @@
 ---
 title: Localizando aplicativos ClickOnce | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,16 +18,16 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce applications
 - console applications, ClickOnce applications
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
-caps.latest.revision: "16"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c3d7ebc762c7b1feb895323f7ef9ee0180ce954e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="localizing-clickonce-applications"></a>Localização de aplicativos ClickOnce
 A localização é o processo de tornar o aplicativo apropriado para uma cultura específica. Esse processo envolve a conversão de texto de interface de usuário para um idioma específico de região, usando a data correta e a formatação de moeda, ajuste o tamanho dos controles em um formulário, e controles de espelhamento da direita para a esquerda, se necessário.  
@@ -60,7 +57,7 @@ A localização é o processo de tornar o aplicativo apropriado para uma cultura
 ## <a name="generate-one-deployment-for-each-culture"></a>Gerar uma implantação para cada cultura  
  Essa estratégia de implantação, você deve gerar várias implantações. Em cada implantação incluir somente o assembly satélite necessário para uma cultura específica e marcar a implantação mais específico para aquela cultura.  
   
- Para usar este método em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], defina o **idioma publicar** propriedade o **publicar** guia para a região desejada. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]incluirá automaticamente o assembly satélite necessário para a região que você selecionar e excluirá todos os outros assemblies de satélite da implantação.  
+ Para usar este método em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], defina o **idioma publicar** propriedade o **publicar** guia para a região desejada. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] incluirá automaticamente o assembly satélite necessário para a região que você selecionar e excluirá todos os outros assemblies de satélite da implantação.  
   
  Você pode realizar a mesma coisa usando a ferramenta de MageUI.exe no Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Use o **popular** botão o **arquivos** guia de manifesto do aplicativo para excluir todos os outros assemblies de satélite do diretório de aplicativo e, em seguida, defina o **cultura**campo o **nome** guia para o manifesto de implantação no MageUI.exe. Essas etapas incluem não só o assembly satélite correto, mas também definem o `language` atributo no `assemblyIdentity` elemento em seu manifesto de implantação para a cultura correspondente.  
   

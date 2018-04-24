@@ -1,21 +1,21 @@
 ---
-title: Erros de FxCopCmd | Microsoft Docs
+title: erros de FxCopCmd
 ms.date: 10/19/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: gewarren
 author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b407167a772a82b56c39ba222dc3c1f563f5c012
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 3928eb62baa16296ab009118c4e3b075e7dd3268
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="fxcopcmd-tool-errors"></a>Erros de ferramenta (fxcopcmd)
 

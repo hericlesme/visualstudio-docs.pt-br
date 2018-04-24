@@ -1,23 +1,18 @@
 ---
-title: Usando conjuntos de regras para especificar as regras do C++ para executar | Microsoft Docs
-ms.custom: ''
+title: Usando conjuntos de regras para especificar as regras do C++ para execução
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 400b3228c1039ff7b859f769949c0c82c1939954
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: ad464b11538dd8a3faf2bdf26cd7e3b2bc9650dd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Use conjuntos de regras para especificar as regras do C++ para executar
 

@@ -1,11 +1,8 @@
 ---
-title: "Depurando, caixa de diálogo Opções | Microsoft Docs"
-ms.custom: 
+title: Depurando, caixa de diálogo Opções | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -21,16 +18,16 @@ helpviewer_keywords:
 - Options dialog box, debugging
 - debugging [Visual Studio], settings and preparation
 ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2b8547acd579927b69cd5766d0d7b9193bcb8d3
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-options-dialog-box"></a>Depurando, Caixa de Diálogo Opções
 O **depuração** pasta, no **opções** caixa de diálogo de **ferramentas** , fornece as seguintes páginas, que permitem que você especifique o depurador opções da ferramenta.  

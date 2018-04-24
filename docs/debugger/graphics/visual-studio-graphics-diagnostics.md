@@ -1,27 +1,22 @@
 ---
-title: "Diagnóstico de gráficos do Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Diagnóstico de gráficos do Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: fa69c550-62a7-41b5-bb1f-7eb04af1a6e8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69965b35d919c4170c54cbfa1eed5d5a52dc8287
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e48abba7c137e40cef1e03f9d127adea08145e9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos do Visual Studio
 O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gravação e, em seguida, analisando problemas de desempenho e a renderização em aplicativos do Direct3D. Diagnóstico de gráficos pode ser usado em aplicativos que estão em execução localmente no seu PC com Windows, em um emulador de dispositivo do Windows ou em um computador remoto ou o dispositivo.  
@@ -37,7 +32,7 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
  Continuar a [visão geral](overview-of-visual-studio-graphics-diagnostics.md) para saber mais sobre o que o diagnóstico de gráficos do Visual Studio oferece.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Visão Geral](overview-of-visual-studio-graphics-diagnostics.md)  
+ [Visão geral](overview-of-visual-studio-graphics-diagnostics.md)  
  Apresenta o fluxo de trabalho e as ferramentas de Diagnóstico de Gráficos.  
   
  [Introdução](getting-started-with-visual-studio-graphics-diagnostics.md)  

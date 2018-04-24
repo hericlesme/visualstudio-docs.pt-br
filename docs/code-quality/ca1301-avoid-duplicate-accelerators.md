@@ -1,10 +1,8 @@
 ---
-title: 'CA1301: Evitar aceleradores duplicados | Microsoft Docs'
-ms.custom: ''
+title: 'CA1301: evitar aceleradores duplicados'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1301
 - AvoidDuplicateAccelerators
@@ -17,39 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b9e2855827fb0befe69dafe08981b10a12d0700
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a323ce01201dd4a3650d6da0ddde8edfeea0512
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: evitar aceleradores duplicados
-|||  
-|-|-|  
-|NomeDoTipo|AvoidDuplicateAccelerators|  
-|CheckId|CA1301|  
-|Categoria|Microsoft.Globalization|  
-|Alteração Significativa|Não recentes|  
-  
-## <a name="cause"></a>Causa  
- Estende um tipo <xref:System.Windows.Forms.Control?displayProperty=fullName> e contém dois ou mais controles de nível superior que têm chaves de acesso idênticos são armazenadas em um arquivo de recurso.  
-  
-## <a name="rule-description"></a>Descrição da Regra  
- Uma tecla de acesso, também conhecida como acelerador, dá ao teclado acesso a um controle usando-se a tecla ALT. Quando vários controles têm teclas de acesso duplicadas, o comportamento da tecla de acesso não é bem definido. O usuário pode não ser capaz de acessar o controle desejado usando a chave de acesso e um controle diferente daquele que é destinado deve estar habilitado.  
-  
- A implementação atual desta regra ignora itens de menu. No entanto, os itens de menu no submenu mesmo não devem ter chaves de acesso idênticos.  
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Para corrigir uma violação desta regra, definirá as chaves de acesso exclusivo para todos os controles.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- Não suprima um aviso nessa regra.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra um formulário mínimo que contém dois controles que têm chaves de acesso idênticos. As chaves são armazenadas em um arquivo de recurso, que não é exibido; No entanto, seus valores aparecerão no comentados out `checkBox.Text` linhas. O comportamento de aceleradores duplicados pode ser examinado trocando o `checkBox.Text` linhas com suas contrapartes comentados. No entanto, nesse caso, o exemplo não irá gerar um aviso da regra.  
-  
- [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:System.Resources.ResourceManager?displayProperty=fullName>   
- [Recursos em aplicativos de área de trabalho](/dotnet/framework/resources/index)
+|||
+|-|-|
+|NomeDoTipo|AvoidDuplicateAccelerators|
+|CheckId|CA1301|
+|Categoria|Microsoft.Globalization|
+|Alteração Significativa|Não recentes|
+
+## <a name="cause"></a>Causa
+ Estende um tipo <xref:System.Windows.Forms.Control?displayProperty=fullName> e contém dois ou mais controles de nível superior que têm chaves de acesso idênticos são armazenadas em um arquivo de recurso.
+
+## <a name="rule-description"></a>Descrição da Regra
+ Uma tecla de acesso, também conhecida como acelerador, dá ao teclado acesso a um controle usando-se a tecla ALT. Quando vários controles têm teclas de acesso duplicadas, o comportamento da tecla de acesso não é bem definido. O usuário pode não ser capaz de acessar o controle desejado usando a chave de acesso e um controle diferente daquele que é destinado deve estar habilitado.
+
+ A implementação atual desta regra ignora itens de menu. No entanto, os itens de menu no submenu mesmo não devem ter chaves de acesso idênticos.
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Para corrigir uma violação desta regra, definirá as chaves de acesso exclusivo para todos os controles.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ Não suprima um aviso nessa regra.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir mostra um formulário mínimo que contém dois controles que têm chaves de acesso idênticos. As chaves são armazenadas em um arquivo de recurso, que não é exibido; No entanto, seus valores aparecerão no comentados out `checkBox.Text` linhas. O comportamento de aceleradores duplicados pode ser examinado trocando o `checkBox.Text` linhas com suas contrapartes comentados. No entanto, nesse caso, o exemplo não irá gerar um aviso da regra.
+
+ [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
+
+## <a name="see-also"></a>Consulte também
+ <xref:System.Resources.ResourceManager?displayProperty=fullName> [Recursos em aplicativos de área de trabalho](/dotnet/framework/resources/index)

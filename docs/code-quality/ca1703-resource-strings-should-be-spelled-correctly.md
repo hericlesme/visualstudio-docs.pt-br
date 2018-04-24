@@ -1,5 +1,5 @@
 ---
-title: 'CA1703: as cadeias de caracteres de recurso devem ter grafia correta | Microsoft Docs'
+title: 'CA1703: as cadeias de caracteres do recurso devem ter a ortografia correta'
 ms.date: 03/28/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: 693f4970-f512-40cb-ae3b-a0f3a5c6d6f1
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1227849992cf91a208563020583b19af48b13d42
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 22b6dd429c9f2a5e0c3fb1ef3e9e34a7a0fe1a63
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: as cadeias de caracteres do recurso devem ter a ortografia correta
 

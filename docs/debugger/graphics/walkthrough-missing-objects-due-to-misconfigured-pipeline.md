@@ -1,23 +1,20 @@
 ---
 title: 'Passo a passo: Objetos ausentes devido ao Pipeline configurado incorretamente | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8b6809f3238c4d239d6d07f0df35d9b4a035d945
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2833c3ae2a8f03b69314db9e3723a640c4327587
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Instruções passo a passo: objetos ausentes devido ao pipeline configurado incorretamente
 Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ferramentas de diagnóstico de gráficos para investigar um objeto que está faltando devido a um sombreador de pixel não definida.  
@@ -88,7 +85,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/in
 1.  Localizar o `PSSetShader` chamada que corresponde ao objeto ausente. No **lista de eventos de gráfico** janela, digite "desenhado. PSSetShader"no **pesquisa** caixa no canto superior direito do **lista de eventos de gráfico** janela. Isso filtra a lista para que ele contém apenas os eventos de "PSSetShader" e que têm "Desenhar" nos títulos. Escolha o primeiro `PSSetShader` chamada que aparece antes da chamada de desenho do objeto ausente.  
   
     > [!NOTE]
-    >  `PSSetShader`não aparecerá no **lista de eventos de gráfico** janela se ela não foi definida durante esse período. Normalmente isso ocorre apenas se o sombreador de pixel apenas uma é usada para todos os objetos, ou se o `PSSetShader` chamada acidentalmente foi ignorada durante esse período. Em ambos os casos, é recomendável que você procurar o código-fonte do aplicativo para `PSSetShader` chamadas e use tradicional de técnicas de depuração para examinar o comportamento dessas chamadas.  
+    >  `PSSetShader` não aparecerá no **lista de eventos de gráfico** janela se ela não foi definida durante esse período. Normalmente isso ocorre apenas se o sombreador de pixel apenas uma é usada para todos os objetos, ou se o `PSSetShader` chamada acidentalmente foi ignorada durante esse período. Em ambos os casos, é recomendável que você procurar o código-fonte do aplicativo para `PSSetShader` chamadas e use tradicional de técnicas de depuração para examinar o comportamento dessas chamadas.  
   
 2.  Abra o **pilha de chamadas do evento de gráficos** janela. Sobre o **diagnóstico de gráficos** barra de ferramentas, escolha **pilha de chamadas do evento de gráficos**.  
   
@@ -101,7 +98,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/in
   
  Para corrigir o problema, atribua o sombreador de pixel correto usando o primeiro parâmetro do `ID3D11DeviceContext::PSSetShader` chamada à API.  
   
- ![Corrigido C# 43; &#43; código-fonte](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+ ![Corrigido C&#43; &#43; código-fonte](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
  Depois de corrigir o código, você poderá recriá-lo e executar o aplicativo novamente para verificar se o problema de renderização é resolvido:  
   

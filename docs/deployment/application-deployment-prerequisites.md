@@ -1,12 +1,9 @@
 ---
-title: "Pré-requisitos de implantação de aplicativo | Microsoft Docs"
-ms.custom: 
+title: Pré-requisitos de implantação de aplicativo | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 48f72640bdf8efc53b278e4600c6b262dc1a26bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Pré-requisitos de implantação de aplicativos
 Para garantir que seu aplicativo será instalado e executará com êxito, você deve primeiro garantir que todos os componentes dos quais o aplicativo depende já estejam instalados no computador de destino. Por exemplo, a maioria dos aplicativos criados usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tem uma dependência sobre o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; a versão correta do tempo de execução de linguagem comum deve estar presente no computador de destino antes a instalação do aplicativo.  
@@ -48,7 +45,7 @@ Para garantir que seu aplicativo será instalado e executará com êxito, você 
   
 -   A versão mínima de todos os assemblies que devem ser pré-instalados no cache do assembly global (GAC), conforme especificado pelas declarações de dependência do assembly no manifesto do assembly.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]pode detectar os pré-requisitos ausentes, e você pode instalar os pré-requisitos usando um inicializador. Para obter mais informações, consulte [como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode detectar os pré-requisitos ausentes, e você pode instalar os pré-requisitos usando um inicializador. Para obter mais informações, consulte [como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Para alterar os valores nos manifestos gerados pelas ferramentas, tais como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e MageUI.exe, você precisa editar o manifesto do aplicativo em um editor de texto e assinar novamente os manifestos do aplicativo e de implantação. Para obter mais informações, consulte [como: assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
@@ -78,9 +75,9 @@ Para garantir que seu aplicativo será instalado e executará com êxito, você 
 |---------------------------|-----------------|  
 |**-?, -h, - ajuda**|Exibe uma caixa de diálogo de Ajuda.|  
 |**-url, - componentsurl**|Mostra a URL armazenada e a URL dos componentes para esta configuração.|  
-|**-url =**`location`|Configura a URL em que Setup.exe consultará o aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
-|**-componentsurl =**`location`|Configura a URL em que Setup.exe consultará as dependências, tais como o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true` **&#124;**`false`|Quando `true`, baixa as dependências de um local preferencial no site do fornecedor. Isso substitui o **- componentsurl** configuração. Quando `false`, baixa as dependências da URL especificada pelo **- componentsurl**.|  
+|**-url =** `location`|Configura a URL em que Setup.exe consultará o aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
+|**-componentsurl =** `location`|Configura a URL em que Setup.exe consultará as dependências, tais como o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Quando `true`, baixa as dependências de um local preferencial no site do fornecedor. Isso substitui o **- componentsurl** configuração. Quando `false`, baixa as dependências da URL especificada pelo **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Suporte a sistemas operacionais  
  O bootstrapper do Visual Studio não é compatível com o Windows Server 2008 Server Core ou o Windows Server 2008 R2 Server Core, que fornece um ambiente de servidor de baixa manutenção com funcionalidade limitada. Por exemplo, a opção de instalação do Server Core oferece suporte somente ao perfil do .NET Framework 3.5 Server Core, de modo que os recursos do Visual Studio que dependem do .NET Framework completo não poderão ser executados.  

@@ -1,12 +1,9 @@
 ---
-title: "Criando aplicativos ClickOnce para que outros usuários para implantar | Microsoft Docs"
-ms.custom: 
+title: Criando aplicativos ClickOnce para que outros usuários para implantar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,16 +21,16 @@ helpviewer_keywords:
 - ClickOnce applications, deployed by others
 - ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-caps.latest.revision: "10"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Criando aplicativos ClickOnce para a implantação por terceiros
 Nem todos os desenvolvedores que estão criando as implantações do ClickOnce planeja implantar os próprios aplicativos. Muitas delas basta empacotar seu aplicativo usando o ClickOnce e entregar os arquivos para um cliente, como uma grande empresa. O cliente torna-se de um responsável para hospedar o aplicativo em sua rede. Este tópico discute alguns dos problemas inerentes essas implantações em versões do .NET Framework anteriores à versão 3.5. Em seguida, descreve uma nova solução fornecida usando o novo recurso de "usar o manifesto de confiança" no .NET Framework 3.5. Finalmente, ele conclui com estratégias recomendadas para a criação de implantações do ClickOnce para clientes que ainda estão usando versões mais antigas do .NET Framework.  

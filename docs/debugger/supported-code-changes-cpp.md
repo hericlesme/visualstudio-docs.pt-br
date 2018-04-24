@@ -1,12 +1,9 @@
 ---
-title: "Alterações de código (C++) com suporte | Microsoft Docs"
-ms.custom: 
+title: Alterações de código (C++) com suporte | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -23,23 +20,23 @@ helpviewer_keywords:
 - what's new [C#], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
-caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8b3ced43c776cc948467d68b2112fb808dd2a48c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C++)
 Editar e continuar para o Visual C++ manipula a maioria dos tipos de alterações de código. Porém, algumas alterações não podem ser aplicadas durante a execução do programa. Para aplicar essas alterações sem suporte, você deverá parar a execução e criar uma versão atualizada do código.  
   
  Consulte [editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) para obter informações sobre como trabalhar com editar e continuar para C++ no Visual Studio.  
   
-##  <a name="BKMK_Unsupported_changes"></a>Não há suporte para alterações  
+##  <a name="BKMK_Unsupported_changes"></a> Não há suporte para alterações  
  As seguintes alterações de C/C++ não podem ser aplicadas durante uma sessão de depuração:  
   
 -   A maioria das alterações aos dados globais ou estáticos.  
@@ -68,7 +65,7 @@ Editar e continuar para o Visual C++ manipula a maioria dos tipos de alteraçõe
   
 -   Editar e Continuar não atualiza bibliotecas estáticas. Se você fizer uma alteração em uma biblioteca estática, a execução continuará com a versão antiga e nenhum aviso será emitido.  
   
-##  <a name="BKMK_Unsupported_scenarios"></a>Cenários sem suporte  
+##  <a name="BKMK_Unsupported_scenarios"></a> Cenários sem suporte  
  Editar e Continuar para C/C++ está indisponível nos seguintes cenários de depuração:  
   
 -   Depurando aplicativos nativos compilados com [/Zo (aprimorar a otimização de depuração)](/cpp/build/reference/zo-enhance-optimized-debugging)  
@@ -93,9 +90,9 @@ Editar e continuar para o Visual C++ manipula a maioria dos tipos de alteraçõe
   
 -   Depurando uma versão antiga do código depois que uma nova versão não é compilada devido a erros de compilação.  
   
-##  <a name="BKMK_Linking_limitations"></a>Limitações de vinculação  
+##  <a name="BKMK_Linking_limitations"></a> Limitações de vinculação  
   
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a>Opções do vinculador que desativam Editar e continuar  
+###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opções do vinculador que desativam Editar e continuar  
  As opções de vinculador a seguir desabilitam Editar e Continuar:  
   
 -   Configuração **/OPT: REF**, **/OPT: ICF**, ou **/incremental: no** desativa editar e continuar com o seguinte aviso:  
@@ -112,7 +109,7 @@ Editar e continuar para o Visual C++ manipula a maioria dos tipos de alteraçõe
   
 -   Definir qualquer opção que evite a criação de um arquivo de banco de dados do programa (.pdb) desabilita Editar e Continuar sem aviso específico.  
   
-###  <a name="BKMK_Auto_relinking_limitations"></a>Vinculando novamente limitações de auto  
+###  <a name="BKMK_Auto_relinking_limitations"></a> Vinculando novamente limitações de auto  
  Por padrão, Editar e Continuar vincula novamente o programa ao final de uma sessão de depuração para criar um executável atualizado.  
   
  Editar e Continuar não pode vincular o programa novamente se você o depurá-lo a partir de um local diferente do local de compilação original. Uma mensagem informa que você precisa recompilar manualmente.  
@@ -129,7 +126,7 @@ Editar e continuar para o Visual C++ manipula a maioria dos tipos de alteraçõe
   
 3.  Limpar o **vincular novamente as alterações de código após a depuração** caixa de seleção.  
   
-##  <a name="BKMK_Precompiled_Header_Limitations"></a>Limitações de cabeçalho pré-compilado  
+##  <a name="BKMK_Precompiled_Header_Limitations"></a> Limitações de cabeçalho pré-compilado  
  Por padrão, Editar e Continuar carrega e processa cabeçalhos pré-compilados no plano de fundo para acelerar o processamento de alterações de código. O carregamento de cabeçalhos pré-compilados requer a alocação de memória física, o que pode ser um problema se você estiver compilando em um computador com RAM limitada. Você pode determinar se isso pode ser um problema usando o Gerenciador de tarefas do Windows para determinar a quantidade de memória física disponível enquanto você está depurando. Se esse valor for maior que o tamanho dos cabeçalhos pré-compilados, Editar e Continuar não terá problemas. Se o valor for menor que o tamanho dos cabeçalhos pré-compilados, você pode impedir que Editar e Continuar carregue cabeçalhos pré-compilados no plano de fundo.  
   
  **Para desabilitar o carregamento de plano de fundo de cabeçalhos pré-compilados para editar e continuar**  
@@ -140,7 +137,7 @@ Editar e continuar para o Visual C++ manipula a maioria dos tipos de alteraçõe
   
 3.  Limpar o **permitir pré-compilação** caixa de seleção.  
   
-##  <a name="BKMK_IDL_Attribute_Limitations"></a>Limitações de atributos IDL  
+##  <a name="BKMK_IDL_Attribute_Limitations"></a> Limitações de atributos IDL  
  Editar e Continuar não regeneram arquivos IDL (definição da interface). Consequentemente, as alterações aos atributos de IDL não serão refletidas ao depurar. Para ver o resultado das alterações em atributos IDL, você deve parar a depuração e recriar seu aplicativo. Editar e Continuar não gera um erro ou um aviso se os atributos de IDL tiverem sido alterados. Para obter mais informações, consulte [atributos IDL](/cpp/windows/idl-attributes).  
   
 ## <a name="see-also"></a>Consulte também  

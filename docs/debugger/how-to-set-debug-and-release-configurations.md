@@ -1,13 +1,9 @@
 ---
-title: "Como: definir depuração e configurações de versão | Microsoft Docs"
+title: 'Como: definir depuração e configurações de versão | Microsoft Docs'
 ms.custom: H1HackMay2017
 ms.date: 04/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -32,17 +28,16 @@ helpviewer_keywords:
 - release builds, switching to debug build
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca61d09bb1d2ab09c6991f0cd50cc302dff7fb77
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Como: definir depuração e configurações no Visual Studio de versão
 Projetos do Visual Studio têm versão separada e configurações para o programa de depuração. Como o nome sugere, você deve criar a versão de depuração para depuração e a versão de lançamento para a distribuição da versão final.  

@@ -1,12 +1,9 @@
 ---
-title: "Preparação da depuração: Tipos de projeto do Visual C++ | Microsoft Docs"
-ms.custom: 
+title: 'Preparação da depuração: Tipos de projeto do Visual C++ | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8cc51e55af477edfac65b79ca29e26b720510c55
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 64d49d799c0ec0b3845a262c248d2438572ecd5d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparação de depuração: tipos de projeto Visual C++
 Esta seção descreve como depurar os tipos de projeto básicos criados pelos modelos de projeto do [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].  
@@ -45,16 +42,16 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
   
  [Aplicativos do Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a>Definições de propriedade recomendadas  
+##  <a name="BKMK_Recommended_Property_Settings"></a> Definições de propriedade recomendadas  
  Certas propriedades devem ser definidas da mesma maneira para todos os cenários não gerenciados de depuração. As tabelas a seguir exibem as configurações de propriedade recomendadas. As configurações não listadas aqui podem variar entre os tipos de projeto não gerenciados diferentes. Para obter mais informações, consulte [configurações de projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>Propriedades de configuração &#124; C/C++ &#124; Nó de otimização  
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>Propriedades de configuração &#124; C/C++ &#124; nó de otimização  
   
 |Nome da Propriedade|Configuração|  
 |-------------------|-------------|  
 |**Optimization**|Definido como **desabilitado (/ 0D).** O código otimizado é mais difícil de depurar porque as instruções geradas não correspondem diretamente ao código-fonte. Se você achar que seu programa tem um erro que aparece somente no código otimizado, você pode ativar essa configuração, mas lembre-se de que o código mostrado no **desmontagem** janela é gerada de fonte otimizada que talvez não corresponda a que você vê na sua fonte Windows. Outros recursos, como depuração, podem não se comportar como esperado.|  
   
-### <a name="configuration-properties-124-linker-124-debugging-node"></a>Propriedades de configuração &#124; Vinculador &#124; Nó de depuração  
+### <a name="configuration-properties-124-linker-124-debugging-node"></a>Propriedades de configuração &#124; vinculador &#124; nó de depuração  
   
 |Nome da Propriedade|Configuração|  
 |-------------------|-------------|  
@@ -62,14 +59,14 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
   
  [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a>Projetos do Win32  
+##  <a name="BKMK_Win32_Projects"></a> Projetos do Win32  
  Os aplicativos Win32 são programas do Windows tradicionais escritos em C ou C++. Depurar esse tipo de aplicativo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é simples.  
   
  Os aplicativos Win32 incluem aplicativos do MFC e projetos do ATL. Eles usam APIs do Windows e podem usar MFC ou ATL, mas não usam Common Language Runtime (CLR). Podem, no entanto, chamar código gerenciado que usa o CLR.  
   
  O procedimento a seguir explica como depurar um projeto do Win32 de dentro do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Outro modo de depurar um aplicativo Win32 é iniciar o aplicativo fora do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e anexar a ele. Para obter mais informações, consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a>Para depurar um aplicativo C ou C++ Win32  
+###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Para depurar um aplicativo C ou C++ Win32  
   
 1.  Abra o projeto no Visual Studio.  
   
@@ -77,7 +74,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
   
 3.  A depuração usando as técnicas discutidas na [Noções básicas do depurador](../debugger/debugger-basics.md).  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a>Para definir manualmente uma configuração de depuração  
+###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Para definir manualmente uma configuração de depuração  
   
 1.  Sobre o **exibição** menu, clique em **páginas de propriedade**.  
   
@@ -99,7 +96,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
   
  [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a>Aplicativos do Windows Forms (.NET)  
+##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplicativos do Windows Forms (.NET)  
  O **aplicativos de formulários do Windows (.NET)** modelo cria um [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplicativo do Windows Forms. Para obter mais informações, consulte [Como criar um projeto de aplicativos do Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Depurar esse tipo de aplicativo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é semelhante a depurar em aplicativos gerenciados do Windows Forms.  

@@ -1,12 +1,9 @@
 ---
 title: 'Como: depurar com a origem do Code Center Premium | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - Code Center Premium
 - debugging [Visual Studio], Code Center Premium
 ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d7405deed95f14314215b869a02bcf8a1afddea2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e549cac4606394e5e47fb43c377320965eddbf3e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Como depurar com a origem do Code Center Premium
 Com o depurador do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você pode depurar a origem compartilhada segura do Microsoft MSDN Code Center Premium.  
@@ -57,7 +54,7 @@ Com o depurador do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Certifique-se de incluir a barra à direita **/**  no final do caminho.  
+    >  Certifique-se de incluir a barra à direita**/** no final do caminho.  
   
      Mova esses locais até a parte superior da lista para garantir que os símbolos sejam carregados primeiro.  
   
@@ -114,7 +111,7 @@ Com o depurador do [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long
      `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Certifique-se de incluir a barra à direita **/**  no final do caminho.  
+    >  Certifique-se de incluir a barra à direita**/** no final do caminho.  
   
 4.  Para cada projeto gerenciado na sua solução, faça o seguinte  
   

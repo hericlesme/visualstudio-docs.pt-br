@@ -1,13 +1,9 @@
 ---
-title: "&lt;dependência&gt; elemento (implantação do ClickOnce) | Microsoft Docs"
-ms.custom: 
+title: '&lt;dependência&gt; elemento (implantação do ClickOnce) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,17 +22,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 72e217413a428c8c22712ac3a90836b1ea4fbc35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependência&gt; elemento (implantação do ClickOnce)
 Identifica a versão do aplicativo para instalar e o local do manifesto do aplicativo.  
@@ -98,7 +93,7 @@ Identifica a versão do aplicativo para instalar e o local do manifesto do aplic
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`Name`|Necessário. Identifica o nome do aplicativo.|  
-|`Version`|Necessário. Especifica o número de versão do aplicativo, no seguinte formato:`major.minor.build.revision`|  
+|`Version`|Necessário. Especifica o número de versão do aplicativo, no seguinte formato: `major.minor.build.revision`|  
 |`publicKeyToken`|Necessário. Especifica uma cadeia hexadecimal de 16 caracteres que representa os último 8 bytes de hash SHA-1 da chave pública em que o aplicativo ou o assembly está assinado. A chave pública usada para fazer logon deve ser 2048 bits ou superior.|  
 |`processorArchitecture`|Necessário. Especifica o microprocessador. Os valores válidos são `x86` para Windows de 32 bits e `IA64` para Windows de 64 bits.|  
 |`Language`|Opcional. Identifica os códigos de idioma de duas partes do assembly. Por exemplo, EN-US, que significa para inglês (EUA). O padrão é `neutral`. Elemento de `asmv2` namespace.|  
@@ -107,7 +102,7 @@ Identifica a versão do aplicativo para instalar e o local do manifesto do aplic
 ## <a name="hash"></a>hash  
  O `hash` elemento é um filho opcional de `file` elemento. O `hash` elemento não tem atributos.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]usa um algoritmo hash de todos os arquivos em um aplicativo como uma verificação de segurança para garantir que nenhum dos arquivos foram alterados após a implantação. Se o `hash` elemento não for incluído, essa verificação não será executada. Portanto, omitindo o `hash` elemento não é recomendado.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa um algoritmo hash de todos os arquivos em um aplicativo como uma verificação de segurança para garantir que nenhum dos arquivos foram alterados após a implantação. Se o `hash` elemento não for incluído, essa verificação não será executada. Portanto, omitindo o `hash` elemento não é recomendado.  
   
 ## <a name="dsigtransforms"></a>DSIG:Transforms  
  O `dsig:Transforms` elemento é um filho obrigatório a `hash` elemento. O `dsig:Transforms` elemento não tem atributos.  

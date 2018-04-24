@@ -1,24 +1,24 @@
 ---
-title: 'Passo a passo: Criando um processador de diretiva | Microsoft Docs'
+title: 'Instruções passo a passo: criando um processador de diretiva'
 ms.date: 11/04/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 6cb1ac5fa679b9cdd66bede0b0852704188585cc
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 322de4ea4cd5c92f57e46daa4a8256b7a212c0a3
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Passo a passo: Criar um processador de diretiva
 
@@ -658,7 +658,7 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
     |----------|----------|----------|
     |(Padrão)|REG_SZ|(valor não definido)|
     |Classe|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |CodeBase|REG_SZ|**\<Caminho para sua solução >**CustomDP\bin\Debug\CustomDP.dll|
+    |CodeBase|REG_SZ|**\<Caminho para sua solução >** CustomDP\bin\Debug\CustomDP.dll|
 
      Se você colocou o assembly no GAC, os valores deverão se parecer com o seguinte:
 

@@ -1,13 +1,9 @@
 ---
 title: 'Como: depurar servidores COM | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -23,17 +19,16 @@ helpviewer_keywords:
 - debugging [C++], ADI applications
 - container information
 ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0aedd0f60464ed56bfeb8f6f2e3147680641ea6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-com-servers"></a>Como depurar servidores COM
 Depurar os aplicativos de servidor COM apresenta um conjunto exclusivo de problemas que nem sempre são fáceis de resolver.  

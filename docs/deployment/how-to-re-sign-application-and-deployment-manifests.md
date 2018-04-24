@@ -1,12 +1,9 @@
 ---
-title: "Como: assinar novamente os manifestos de aplicativo e implantação | Microsoft Docs"
-ms.custom: 
+title: 'Como: assinar novamente os manifestos de aplicativo e implantação | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, signing manifests
 - Office development in Visual Studio, signing manifests
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
-caps.latest.revision: "17"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e3c6551269df19c554dfa50409108bf952c4b326
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ba634ffb30d6459c940811f0ea080f8b71a37f34
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Como assinar manifestos de aplicativo e implantação novamente
 Depois de fazer alterações às propriedades de implantação no manifesto do aplicativo para aplicativos de formulários do Windows, os aplicativos do Windows Presentation Foundation (xbap) ou soluções do Office, você deve assinar novamente o aplicativo e manifestos de implantação com um certificado. Esse processo garante que arquivos violados não estão instalados nos computadores dos usuários finais.  

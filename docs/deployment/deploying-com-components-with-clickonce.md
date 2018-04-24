@@ -1,12 +1,9 @@
 ---
 title: Implantando componentes do COM o ClickOnce | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +15,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implantando componentes do COM com o ClickOnce
 Implantação de componentes legados COM tradicionalmente foi uma tarefa difícil. Componentes precisam ser registrado globalmente e, portanto, podem causar efeitos colaterais indesejáveis entre aplicativos sobrepostos. Essa situação geralmente não é um problema em aplicativos do .NET Framework porque componentes são completamente isolados a um aplicativo ou são compatíveis com o lado a lado. O Visual Studio permite que você implante componentes isolados no sistema de operacional superior ou o Windows XP.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Fornece um mecanismo fácil e seguro para implantar seus aplicativos .NET. No entanto, se seus aplicativos usam componentes COM herdados, você precisará executar etapas adicionais para implantá-los. Este tópico descreve como implantar componentes COM isolados e fazem referência a componentes nativo (por exemplo, do Visual C++ ou Visual Basic 6.0).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Fornece um mecanismo fácil e seguro para implantar seus aplicativos .NET. No entanto, se seus aplicativos usam componentes COM herdados, você precisará executar etapas adicionais para implantá-los. Este tópico descreve como implantar componentes COM isolados e fazem referência a componentes nativo (por exemplo, do Visual C++ ou Visual Basic 6.0).  
   
- Para obter mais informações sobre a implantação de componentes COM isolados, consulte "Simplifique a implantação de aplicativos com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro" em [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Para obter mais informações sobre a implantação de componentes COM isolados, consulte "Simplifique a implantação de aplicativos com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro" em [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>COM sem registro  
  COM sem registro é uma nova tecnologia de implantação e ativando a isoladas componentes do COM. Ele funciona, colocando a biblioteca de tipos de todas as do componente e informações de registro que é normalmente instaladas no registro do sistema em um arquivo XML chamado um manifesto, armazenados na mesma pasta que o aplicativo.  
@@ -44,7 +41,7 @@ Implantação de componentes legados COM tradicionalmente foi uma tarefa difíci
  Quando o gerador de manifesto encontra uma referência COM isolado, enumera todos os `CoClass` entradas na biblioteca de tipos do componente, correspondência de cada entrada com seus dados de registro correspondente e geração de manifesto definições para o COM todos os classes no arquivo de biblioteca de tipo.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Implantação de componentes COM sem registro usando o ClickOnce  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]tecnologia de implantação é adequada para a implantação de componentes COM isolado, porque ambos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro exige que um componente tem um manifesto para ser implantado.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia de implantação é adequada para a implantação de componentes COM isolado, porque ambos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro exige que um componente tem um manifesto para ser implantado.  
   
  Normalmente, o autor do componente deve fornecer um manifesto. Caso contrário, no entanto, o Visual Studio é capaz de gerar um manifesto automaticamente para um componente COM. A geração de manifesto é executada durante o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] processo de publicação; para obter mais informações, consulte [publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md). Esse recurso também permite que você aproveite os componentes herdados que você criou em ambientes de desenvolvimento anteriores, como Visual Basic 6.0.  
   

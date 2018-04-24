@@ -1,12 +1,9 @@
 ---
 title: '&lt;arquivo&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +19,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fccbd816d578a95e3e43e15c83d615756dcddcb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;arquivo&gt; elemento (aplicativo ClickOnce)
 Identifica todos os arquivos nonassembly baixado e usado pelo aplicativo.  
@@ -95,7 +92,7 @@ Identifica todos os arquivos nonassembly baixado e usado pelo aplicativo.
 |`name`|Necessário. Identifica o nome do arquivo.|  
 |`size`|Necessário. Especifica o tamanho, em bytes, do arquivo.|  
 |`group`|Opcional, se o `optional` atributo não for especificado ou definido como `false`; obrigatório se `optional` é `true`. O nome do grupo ao qual este arquivo pertence. O nome pode ser qualquer valor de cadeia de caracteres Unicode escolhido pelo desenvolvedor e é usado para baixar os arquivos sob demanda com o <xref:System.Deployment.Application.ApplicationDeployment> classe.|  
-|`optional`|Opcional. Especifica se esse arquivo deve executar download quando o aplicativo é o primeiro, ou se o arquivo deve residir apenas no servidor até que o aplicativo solicitá-lo sob demanda. Se `false` ou indefinido, o arquivo é baixado quando o aplicativo é executado ou instalado. Se `true`, um `group` deve ser especificado para o manifesto de aplicativo válido. `optional`não pode ser verdadeiro se `writeableType` for especificado com o valor `applicationData`.|  
+|`optional`|Opcional. Especifica se esse arquivo deve executar download quando o aplicativo é o primeiro, ou se o arquivo deve residir apenas no servidor até que o aplicativo solicitá-lo sob demanda. Se `false` ou indefinido, o arquivo é baixado quando o aplicativo é executado ou instalado. Se `true`, um `group` deve ser especificado para o manifesto de aplicativo válido. `optional` não pode ser verdadeiro se `writeableType` for especificado com o valor `applicationData`.|  
 |`writeableType`|Opcional. Especifica que este arquivo é um arquivo de dados. Atualmente, o único valor válido é `applicationData`.|  
   
 ## <a name="typelib"></a>TypeLib  
@@ -160,7 +157,7 @@ Identifica todos os arquivos nonassembly baixado e usado pelo aplicativo.
 ## <a name="hash"></a>hash  
  O `hash` elemento é um filho opcional de `file` elemento. O `hash` elemento não tem atributos.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]usa um algoritmo hash de todos os arquivos em um aplicativo como uma verificação de segurança, para garantir que nenhum dos arquivos foram alterados após a implantação. Se o `hash` elemento não for incluído, essa verificação não será executada. Portanto, omitindo o `hash` elemento não é recomendado.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa um algoritmo hash de todos os arquivos em um aplicativo como uma verificação de segurança, para garantir que nenhum dos arquivos foram alterados após a implantação. Se o `hash` elemento não for incluído, essa verificação não será executada. Portanto, omitindo o `hash` elemento não é recomendado.  
   
  Se um manifesto contém um arquivo que não é transformado em hash, que manifesto não pode ser digitalmente assinados, pois os usuários não é possível verificar o conteúdo de um arquivo sem hash.  
   

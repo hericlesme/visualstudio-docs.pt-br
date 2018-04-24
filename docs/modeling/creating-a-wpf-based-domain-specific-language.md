@@ -1,26 +1,25 @@
 ---
-title: "Criando uma linguagem específica de domínio baseados no WPF | Microsoft Docs"
-ms.custom: 
+title: Criando uma linguagem específica do domínio baseada no WPF
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4983d22d46f8e15b3b32189c2862bc6fca76f977
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d20dd1790d9915b763de6e52a023d41823a1ebfb
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="creating-a-wpf-based-domain-specific-language"></a>Criando uma linguagem específica do domínio baseada no WPF
-Você pode criar uma linguagem específica de domínio que tem um designer do WPF em vez de um designer gráfico.  
-  
- Informações e exemplos sobre esse recurso podem ser encontrados no site da visualização do Visual Studio e ferramentas de modelagem em [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)  
-  
-## <a name="see-also"></a>Consulte também  
- [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
+# <a name="create-a-wpf-based-domain-specific-language"></a>Criar uma linguagem específica de domínio baseados no WPF
+
+Você pode criar uma linguagem específica de domínio que tem um designer do WPF em vez de um designer gráfico.
+
+Informações e exemplos sobre esse recurso podem ser encontrados na visualização do Visual Studio e no site de ferramentas de modelagem em [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
+
+## <a name="see-also"></a>Consulte também
+
+- [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)

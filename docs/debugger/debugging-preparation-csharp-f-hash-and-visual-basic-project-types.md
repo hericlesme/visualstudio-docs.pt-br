@@ -1,12 +1,9 @@
 ---
-title: "Preparação da depuração: C#, F # e Visual Basic tipos de projeto | Microsoft Docs"
-ms.custom: 
+title: 'Preparação da depuração: C#, F # e Visual Basic tipos de projeto | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - debugging [C#]
 - debugger, settings by project type
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 5ca8bb777369054d7d83e75bcdcf8055aa083660
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 4d590a186f5198feea6a89320897d9d4fa5c4481
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparação de depuração: tipos de projeto C#, F# e Visual Basic
 Os tópicos nessa seção descrevem como depurar os tipos de projeto C#, F# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] criados pelos modelos de projeto do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

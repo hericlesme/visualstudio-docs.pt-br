@@ -1,32 +1,27 @@
 ---
 title: 'Como: usar a ferramenta localizador | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f358adbd8721a55d278c392018463d49e5a8a60e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-use-the-finder-tool"></a>Como usar a ferramenta Localizador
 Você pode usar a ferramenta de localizador de **encontrar janela** caixa de diálogo para exibir a janela Propriedades e mensagens. A ferramenta localizador também pode localizar janelas filho desabilitado e distinguir qual janela para realçar se desabilitada filho windows sobreposição.  
   
- ![Spy º 43; &#43; Caixa de diálogo da janela localizar](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find")  
+ ![Spy&#43; &#43; janela caixa de diálogo Localizar](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find")  
 Ferramenta de localização na caixa de diálogo Localizar janela  
   
  A figura acima mostra a caixa de diálogo Localizar janela após a etapa 3 abaixo.  

@@ -1,13 +1,9 @@
 ---
 title: '&lt;Comandos&gt; elemento (Bootstrapper) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ac3ae61012bec5f8134a48714678110951c03b76
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Comandos&gt; elemento (Bootstrapper)
 O `Commands` elemento implementa testes descritos pelos elementos sob o `InstallChecks` elemento e declara qual pacote de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bootstrapper deve ser instalado se o teste falhar.  
@@ -96,7 +91,7 @@ O `Commands` elemento implementa testes descritos pelos elementos sob o `Install
 ## <a name="bypassif"></a>BypassIf  
  O `BypassIf` elemento é um filho de `InstallConditions` elemento e descreve uma condição positiva sob a qual o comando não deve ser executado. Cada `InstallConditions` elemento pode ter zero ou mais `BypassIf` elementos.  
   
- `BypassIf`tem os seguintes atributos.  
+ `BypassIf` tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
@@ -108,7 +103,7 @@ O `Commands` elemento implementa testes descritos pelos elementos sob o `Install
 ## <a name="failif"></a>FailIf  
  O `FailIf` elemento é um filho de `InstallConditions` elemento e descreve uma condição positiva sob a qual a instalação deverá parar. Cada `InstallConditions` elemento pode ter zero ou mais `FailIf` elementos.  
   
- `FailIf`tem os seguintes atributos.  
+ `FailIf` tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
@@ -119,10 +114,10 @@ O `Commands` elemento implementa testes descritos pelos elementos sob o `Install
 |`Schedule`|Opcional. O nome de um `Schedule` marca que define quando essa regra deve ser avaliada.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- O `ExitCodes` elemento é um filho de `Command` elemento. O `ExitCodes` elemento contém um ou mais `ExitCode` elementos, que determinam o que deve fazer a instalação em resposta a um código de saída de um pacote. Pode haver um opcional `ExitCode` elemento sob um `Command` elemento. `ExitCodes`não tem atributos.  
+ O `ExitCodes` elemento é um filho de `Command` elemento. O `ExitCodes` elemento contém um ou mais `ExitCode` elementos, que determinam o que deve fazer a instalação em resposta a um código de saída de um pacote. Pode haver um opcional `ExitCode` elemento sob um `Command` elemento. `ExitCodes` Não tem atributos.  
   
 ## <a name="exitcode"></a>ExitCode  
- O `ExitCode` elemento é um filho de `ExitCodes` elemento. O `ExitCode` elemento determina o que deve fazer a instalação em resposta a um código de saída de um pacote. `ExitCode`não contém nenhum elemento filho e tem os seguintes atributos.  
+ O `ExitCode` elemento é um filho de `ExitCodes` elemento. O `ExitCode` elemento determina o que deve fazer a instalação em resposta a um código de saída de um pacote. `ExitCode` não contém nenhum elemento filho e tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  

@@ -1,13 +1,9 @@
 ---
-title: "Erro: Não é possível iniciar a depuração no servidor Web | Microsoft Docs"
-ms.custom: 
+title: 'Erro: Não é possível iniciar a depuração no servidor Web | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -27,17 +23,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: e58f8152d5c927271161bbf9615b1dfe3944e6dd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: não foi possível iniciar a depuração no servidor Web
 
@@ -59,32 +54,32 @@ O `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 - [O depurador não pode se conectar ao computador remoto](#cannot_connect)
 - [Consulte a Ajuda para erros comuns de configuração. Executando a página da Web fora do depurador pode fornecer mais informações.](#see_help)
 
-## <a name="IISlist"></a>O IIS não lista um site que coincide com a inicialização url
+## <a name="IISlist"></a> O IIS não lista um site que coincide com a inicialização url
 
 - Reinicie o Visual Studio como administrador e repita a depuração. (Alguns cenários de depuração do ASP.NET requerem privilégios elevados.)
 
     Você pode configurar o Visual Studio para sempre executar como administrador clicando com o ícone de atalho do Visual Studio, escolha **Propriedades > Avançado**e, em seguida, escolhendo para sempre executar como administrador.
 
-## <a name="web_server_config"></a>O servidor web não está configurado corretamente
+## <a name="web_server_config"></a> O servidor web não está configurado corretamente
 
 - Consulte [erro: O servidor web não está configurado corretamente](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
-## <a name="unabletoconnect"></a>Não é possível se conectar ao servidor da Web
+## <a name="unabletoconnect"></a> Não é possível se conectar ao servidor da Web
 
 - Tem executando o Visual Studio e o servidor Web no mesmo computador e a depuração usando **F5** (em vez de **anexar ao processo**)? Abra as propriedades do projeto e certifique-se de que o projeto está configurado para se conectar ao servidor da Web correto e iniciar a URL. (Abra **Propriedades > Web > servidores** ou **Propriedades > Depurar** dependendo do tipo de projeto. Para um projeto de formulários da Web, abra **páginas de propriedade > Iniciar Opções > servidor**.)
 
 - Caso contrário, reinicie o Pool de aplicativos e, em seguida, reinicie o IIS. Para obter mais informações, consulte [Verifique a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="webservertimeout"></a>O servidor web não respondeu em tempo adequado
+## <a name="webservertimeout"></a> O servidor web não respondeu em tempo adequado
 
 - Redefina o IIS e repita a depuração. Várias instâncias do depurador podem ser anexadas ao processo IIS; uma redefinição encerra-los. Para obter mais informações, consulte [Verifique a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="msvsmon"></a>O microsoft visual studio remote debugging monitor(msvsmon.exe) parece não estar em execução no computador remoto
+## <a name="msvsmon"></a> O microsoft visual studio remote debugging monitor(msvsmon.exe) parece não estar em execução no computador remoto
 
 - Se você estiver depurando em um computador remoto, verifique se você tem [instalado e estiver executando o depurador remoto](../debugger/remote-debugging.md). Se a mensagem mencionar um firewall, verifique se o [corrigir portas no firewall](../debugger/remote-debugger-port-assignments.md) estão abertos, especialmente se você estiver usando um firewall de terceiros.
 - Se você estiver usando um arquivo de HOSTS, verifique se que ele está configurado corretamente. Por exemplo, se a depuração usando **F5** (em vez de **anexar ao processo**), precisa incluir a mesma URL de projeto como suas propriedades de projeto do arquivo HOSTS **Propriedades > Web > servidores**  ou **Propriedades > Depurar**, dependendo de seu tipo de projeto.
 
-## <a name="server_error"></a>O servidor remoto retornou um erro
+## <a name="server_error"></a> O servidor remoto retornou um erro
 
 Verifique seu [arquivo de log do IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) para subcódigos de erro e informações adicionais e esta IIS 7 [postagem de blog](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
 
@@ -93,24 +88,24 @@ Além disso, aqui estão alguns dos códigos de erro comuns e algumas sugestões
 - Servidor (503) não está disponível. O Pool de aplicativos pode ter parado devido a uma erro ou alteração de configuração. Reinicie o Pool de aplicativos.
 - (404) não encontrado. Certifique-se de que o Pool de aplicativos está configurado para a versão correta do ASP.NET.
 
-## <a name="aspnet"></a>Não foi possível iniciar a depuração do ASP.NET
+## <a name="aspnet"></a> Não foi possível iniciar a depuração do ASP.NET
 
 - Reinicie o Pool de aplicativos e reinicie o IIS. Para obter mais informações, consulte [Verifique a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
 - Se você estiver fazendo URL regrava, um Web. config básico com regravações nenhuma URL de teste. Consulte o **Observação** sobre a URL de reconfiguração de módulo em [Verifique a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="cannot_connect"></a>O depurador não pode se conectar ao computador remoto
+## <a name="cannot_connect"></a> O depurador não pode se conectar ao computador remoto
 
 Se você estiver depurando localmente, esse erro pode ocorrer porque o Visual Studio é um aplicativo de 32 bits, portanto, ele usa a versão de 64 bits do depurador remoto para depurar aplicativos de 64 bits. Abra as propriedades do projeto e certifique-se de que o projeto está configurado para conectar-se para o servidor Web e a URL correta. (Abra **Propriedades > Web > servidores** ou **Propriedades > Depurar** dependendo do tipo de projeto.)
 
 Além disso, se você estiver usando um arquivo de HOSTS, verifique se que ele está configurado corretamente. Por exemplo, os HOSTS do arquivo precisa incluir a mesma URL de projeto como suas propriedades de projeto, **Propriedades > Web > servidores** ou **Propriedades > Depurar**, dependendo de seu tipo de projeto.
 
-## <a name="see_help"></a>Consulte a Ajuda para erros comuns de configuração. Executando a página da Web fora do depurador pode fornecer mais informações.
+## <a name="see_help"></a> Consulte a Ajuda para erros comuns de configuração. Executando a página da Web fora do depurador pode fornecer mais informações.
 
 - Você está executando o Visual Studio e o servidor Web no mesmo computador? Abra as propriedades do projeto e certifique-se de que o projeto está configurado para se conectar ao servidor da Web correto e iniciar a URL. (Abra **Propriedades > Web > servidores** ou **Propriedades > Depurar** dependendo do tipo de projeto.)
 
 - Se isso não funcionar ou se você estiver depurando remotamente, siga as etapas [Verifique a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a>Verifique a configuração do IIS
+##  <a name="vxtbshttpservererrorsthingstocheck"></a> Verifique a configuração do IIS
 
 Depois de fazer as etapas descritas aqui para resolver o problema e antes de tentar novamente depurar, você talvez precise redefinir o IIS. Você pode fazer isso abrindo um prompt de comando e digitando `iisreset`. 
 

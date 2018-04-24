@@ -1,13 +1,9 @@
 ---
 title: '&lt;Agendas&gt; elemento (Bootstrapper) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <Schedules> element [bootstrapper]
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a4cbc6b4f5ebd400d90466ccfa353d679a766580
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Agendas&gt; elemento (Bootstrapper)
 O `Schedules` elemento contém `Schedule` elementos, que definem a horários específicos em quais comandos definidos pelo `Command` elemento deve ser executado.  
@@ -51,7 +46,7 @@ O `Schedules` elemento contém `Schedule` elementos, que definem a horários esp
 ## <a name="schedule"></a>Agendamento  
  O `Schedule` elemento é um filho de `Schedules` elemento. Um `Schedules` elemento deve ter pelo menos um `Schedule` elemento.  
   
- `Schedule`tem o seguinte atributo.  
+ `Schedule` tem o seguinte atributo.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  

@@ -1,5 +1,5 @@
 ---
-title: Editor de conjunto de regras de análise de código no Visual Studio de uso | Microsoft Docs
+title: Use o Editor de conjunto de regra de análise de código no Visual Studio
 ms.date: 04/-4/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c861a6beda6b0196ec03987915b1503f4cc55a19
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 3bd9f02142b803cc9a09fce79cb687ea521dea9e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Editor de conjunto de regras de análise de código de uso
 

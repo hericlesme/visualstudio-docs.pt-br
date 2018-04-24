@@ -1,23 +1,20 @@
 ---
-title: "Referência (Captura programática) | Microsoft Docs"
-ms.custom: 
+title: Referência (Captura programática) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3755dbb95dc220d070219fbac4a03885d5ed0158
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dd6ea361d0cec07e3f1fe1a3d5b6771ec7fcb5d6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="reference-programmatic-capture"></a>Referência (captura programática)
 Diagnóstico de gráficos dá suporte a controle programático sobre seus recursos de captura, por meio de captura programática API. Você pode usar essa API para alternar e adicionar mensagens para o diagnóstico de gráficos HUD (visor), inicializar e criar gráficos arquivos de log e capturar informações de gráficos.  
@@ -43,4 +40,4 @@ Diagnóstico de gráficos dá suporte a controle programático sobre seus recurs
 |Título|Descrição|  
 |-----------|-----------------|  
 |[Capturando informações de gráficos](capturing-graphics-information.md)|Mostra como capturar informações de gráficos do seu aplicativo com base em DirectX para que você possa usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ferramentas de diagnóstico de gráficos para diagnosticar problemas de renderização.|  
-|[Visão Geral](overview-of-visual-studio-graphics-diagnostics.md)|Mostra como o diagnóstico de gráficos podem ajudá-lo a depurar erros de processamento em aplicativos e jogos do DirectX.|
+|[Visão geral](overview-of-visual-studio-graphics-diagnostics.md)|Mostra como o diagnóstico de gráficos podem ajudá-lo a depurar erros de processamento em aplicativos e jogos do DirectX.|

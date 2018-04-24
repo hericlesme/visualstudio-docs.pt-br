@@ -1,10 +1,8 @@
 ---
-title: 'CA1501: Evitar herança excessiva | Microsoft Docs'
-ms.custom: ''
+title: 'CA1501: evitar herança excessiva'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1501
 - AvoidExcessiveInheritance
@@ -17,34 +15,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f91c762a283f53970e600ff081ffa5e7b74298
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 488ab877764b0b7dcd3c14885387c4a58115d5df
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: evitar herança excessiva
-|||  
-|-|-|  
-|NomeDoTipo|AvoidExcessiveInheritance|  
-|CheckId|CA1501|  
-|Categoria|Microsoft.Maintainability|  
-|Alteração Significativa|Quebra|  
-  
-## <a name="cause"></a>Causa  
- Um tipo está mais de quatro níveis abaixo na hierarquia de herança.  
-  
-## <a name="rule-description"></a>Descrição da Regra  
- As hierarquias de tipo profundamente aninhado podem ser difíceis de seguir, compreender e manter. Essa regra limita a análise de hierarquias no mesmo módulo.  
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Para corrigir uma violação desta regra, derivar o tipo de um tipo base que é menos detalhado na hierarquia de herança ou eliminar alguns dos tipos de base intermediários.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- É seguro suprimir um aviso dessa regra. No entanto, o código pode ser mais difíceis de manter. Observe que, dependendo da visibilidade de tipos de base, resolver violações desta regra pode criar as alterações recentes. Por exemplo, removendo tipos base públicos é uma alteração significativa.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra um tipo que viola a regra.  
-  
+|||
+|-|-|
+|NomeDoTipo|AvoidExcessiveInheritance|
+|CheckId|CA1501|
+|Categoria|Microsoft.Maintainability|
+|Alteração Significativa|Quebra|
+
+## <a name="cause"></a>Causa
+ Um tipo está mais de quatro níveis abaixo na hierarquia de herança.
+
+## <a name="rule-description"></a>Descrição da Regra
+ As hierarquias de tipo profundamente aninhado podem ser difíceis de seguir, compreender e manter. Essa regra limita a análise de hierarquias no mesmo módulo.
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Para corrigir uma violação desta regra, derivar o tipo de um tipo base que é menos detalhado na hierarquia de herança ou eliminar alguns dos tipos de base intermediários.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ É seguro suprimir um aviso dessa regra. No entanto, o código pode ser mais difíceis de manter. Observe que, dependendo da visibilidade de tipos de base, resolver violações desta regra pode criar as alterações recentes. Por exemplo, removendo tipos base públicos é uma alteração significativa.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir mostra um tipo que viola a regra.
+
  [!code-csharp[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/CSharp/ca1501-avoid-excessive-inheritance_1.cs)]
  [!code-vb[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/VisualBasic/ca1501-avoid-excessive-inheritance_1.vb)]

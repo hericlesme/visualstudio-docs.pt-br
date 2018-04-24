@@ -1,12 +1,9 @@
 ---
-title: "Como: Page Up ou para baixo na memória | Microsoft Docs"
-ms.custom: 
+title: 'Como: Page Up ou para baixo na memória | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - Disassembly window, viewing memory space
 - Memory window, paging up or down in memory
 ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0499fbf29e9bb16d0f5ff99c42f031d06e4fb4de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c87dc65bd48d47e54c4c46099c264a0c7051957
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Como subir ou descer a página na memória
 Quando você exibir o conteúdo da memória em um **memória** janela ou **desmontagem** janela, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.  

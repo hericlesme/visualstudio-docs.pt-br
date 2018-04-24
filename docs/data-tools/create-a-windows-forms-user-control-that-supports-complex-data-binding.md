@@ -1,11 +1,7 @@
 ---
-title: "Criar um controle de usuário do Windows Forms com associação de dados | Microsoft Docs"
-ms.custom: 
+title: Criar um controle de usuário do Windows Forms com associação de dados
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +11,15 @@ helpviewer_keywords:
 - user controls [Visual Studio], complex data binding
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: dc3ebe35c7b9697921e50a9ea310723128b494be
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à associação de dados complexos
 
@@ -113,7 +110,7 @@ Esta etapa adiciona um <xref:System.Windows.Forms.DataGridView> ao controle de u
 ## <a name="add-the-required-data-binding-attribute"></a>Adicione o atributo de associação de dados necessário
 
 Para controles complexos que suportam associação de dados, você pode implementar o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>Para implementar o atributo ComplexBindingProperties
 
 1. Opção de **ComplexDataGridView** controle a exibição de código. (No **exibição** menu, selecione **código**.)
@@ -175,7 +172,7 @@ Você pode criar os controles associados a dados, arrastando itens a partir de *
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário
 
-Arraste principal **clientes** nó a partir de **fontes de dados** janela para o formulário. Verifique o **ComplexDataGridView** controle é usado para exibir os dados da tabela.  
+Arraste principal **clientes** nó a partir de **fontes de dados** janela para o formulário. Verifique o **ComplexDataGridView** controle é usado para exibir os dados da tabela.
 
 ## <a name="running-the-application"></a>Executando o aplicativo
 
@@ -193,6 +190,6 @@ Dependendo dos requisitos do aplicativo, existem várias etapas que você pode r
 
 ## <a name="see-also"></a>Consulte também
 
-[Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Controles dos Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Controles dos Windows Forms](/dotnet/framework/winforms/controls/index)

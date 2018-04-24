@@ -1,22 +1,18 @@
 ---
-title: "Adicionar novas conexões | Microsoft Docs"
-ms.custom: 
+title: Adicionar novas conexões
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-caps.latest.revision: "14"
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 26a45e8fe44e2e0945a105711ae84b1082d5c891
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>Adicionar novas conexões
 
@@ -40,9 +36,9 @@ Para criar uma conexão ao banco de dados, clique o **Adicionar Conexão** ícon
 
 ![Ícone de Conexão de novo Gerenciador do servidor](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata ícone de Conexão nova do Server Explorer")
 
-Isso abre o **Adicionar Conexão** caixa de diálogo. Aqui, podemos digitou o nome da instância LocalDB do SQL Server.  
+Isso abre o **Adicionar Conexão** caixa de diálogo. Aqui, podemos digitou o nome da instância LocalDB do SQL Server.
 
-![Adicionar nova Conexão](../data-tools/media/raddata-add-new-connection-dialog.png "raddata adicionar nova caixa de diálogo de Conexão")  
+![Adicionar nova Conexão](../data-tools/media/raddata-add-new-connection-dialog.png "raddata adicionar nova caixa de diálogo de Conexão")
 
 ## <a name="change-the-provider"></a>Alterar o provedor
 
@@ -60,4 +56,4 @@ Se o teste for bem-sucedido, você estará pronto para criar um *fonte de dados*
 
 ## <a name="see-also"></a>Consulte também
 
-[Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

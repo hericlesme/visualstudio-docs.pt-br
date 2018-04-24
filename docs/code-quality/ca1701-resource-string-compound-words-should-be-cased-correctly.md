@@ -1,5 +1,5 @@
 ---
-title: 'CA1701: Palavras compostas de cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente | Microsoft Docs'
+title: 'CA1701: as palavras compostas da cadeia de caracteres do recurso devem ter maiúsculas e minúsculas corretas'
 ms.date: 03/28/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: 4ddbe09f-24b8-4c47-9373-a06f4487ca0d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a4fbd4327760daf5a864fa57bfbf5f0c2c6d0d
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: b875a22cf070ac433206e8b404dfd71aa64d3acd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: as palavras compostas da cadeia de caracteres do recurso devem ter maiúsculas e minúsculas corretas
 

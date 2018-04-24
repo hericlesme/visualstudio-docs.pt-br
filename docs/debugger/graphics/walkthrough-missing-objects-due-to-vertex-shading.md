@@ -1,23 +1,20 @@
 ---
-title: "Passo a passo: Objetos ausentes devido ao sombreamento de vértice | Microsoft Docs"
-ms.custom: 
+title: 'Passo a passo: Objetos ausentes devido ao sombreamento de vértice | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f374bbbdf30a80bdea70b789da5d5febbeee7a82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Instruções passo a passo: objetos ausentes devido ao sombreamento de vértice
 Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ferramentas de diagnóstico de gráficos para investigar um objeto que está faltando devido a um erro que ocorre durante o estágio de sombreador de vértice.  
@@ -124,7 +121,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/in
   
  Para corrigir o problema, você move a linha de código que define o valor de `m_marbleConstantBufferData.projection` após a linha que inicializa o valor da variável local `projection`.  
   
- ![Corrigido C# 43; &#43; código-fonte](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![Corrigido C&#43; &#43; código-fonte](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  Depois de corrigir o código, você poderá recriá-lo e executar o aplicativo novamente para descobrir se o problema de renderização é resolvido:  
   

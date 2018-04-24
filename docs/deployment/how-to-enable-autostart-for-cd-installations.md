@@ -1,12 +1,9 @@
 ---
-title: "Como: habilitar o AutoStart para instalações do CD | Microsoft Docs"
-ms.custom: 
+title: 'Como: habilitar o AutoStart para instalações do CD | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,21 +13,21 @@ helpviewer_keywords:
 - ClickOnce deployment, installation on CD or DVD
 - deploying applications [ClickOnce], installation on CD or DVD
 ms.assetid: caaec619-900c-4790-90e3-8c91f5347635
-caps.latest.revision: "17"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e830e1be1b7b36e53fd45bc11457452db805ae02
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 230f0491993b3804c3147e727900de2647ff7bda
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Como habilitar o AutoStart para instalações por CD
 Ao implantar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo por meio de uma mídia removível, como CD-ROM ou DVD-ROM, você pode habilitar `AutoStart` para que o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é iniciado automaticamente quando a mídia for inserida.  
   
- `AutoStart`pode ser habilitada no **publicar** página do **Project Designer**.  
+ `AutoStart` pode ser habilitada no **publicar** página do **Project Designer**.  
   
 ### <a name="to-enable-autostart"></a>Para habilitar o AutoStart  
   

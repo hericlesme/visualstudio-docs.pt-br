@@ -1,23 +1,20 @@
 ---
 title: 'Como: publicar um aplicativo do WPF com estilos visuais habilitados | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
-author: mairaw
-ms.author: mairaw
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b265806a15d5a2b3f08862432c7c8e2a94d119c5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como publicar um aplicativo WPF com estilos visuais habilitados
 Estilos visuais permitem a aparência de controles comuns para mudar de acordo com o tema escolhido pelo usuário. Por padrão, estilos visuais não estão habilitados para aplicativos do Windows Presentation Foundation (WPF), portanto você deve habilitá-las manualmente. No entanto, habilitar estilos visuais para um aplicativo do WPF e, em seguida, a solução de publicação causa um erro. Este tópico descreve como resolver esse erro e o processo para publicar um aplicativo do WPF com estilos visuais habilitados. Para obter mais informações sobre estilos visuais, consulte [visão geral de estilos](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Para obter mais informações sobre a mensagem de erro, consulte [de solução de problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -34,7 +31,7 @@ Estilos visuais permitem a aparência de controles comuns para mudar de acordo c
   
  Em seguida, você pode mover os arquivos publicados para o local do qual você deseja que os usuários finais para instalar o aplicativo.  
   
-##  <a name="BKMK_publishsolwovs"></a>Publicar a solução sem estilos visuais habilitados  
+##  <a name="BKMK_publishsolwovs"></a> Publicar a solução sem estilos visuais habilitados  
   
 1.  Certifique-se de que seu projeto não possui estilos visuais habilitados. Primeiro, verifique o arquivo de manifesto do projeto para o XML a seguir. Em seguida, se o XML estiver presente, coloque o XML com uma marca de comentário.  
   
@@ -48,7 +45,7 @@ Estilos visuais permitem a aparência de controles comuns para mudar de acordo c
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Para abrir o arquivo de manifesto em um projeto do Visual Basic  
   
-    1.  Na barra de menus, escolha **projeto**, *ProjectName***propriedades**, onde *ProjectName* é o nome do seu projeto.  
+    1.  Na barra de menus, escolha **projeto**, * * ProjectName**propriedades**, onde *ProjectName* é o nome do seu projeto.  
   
          As páginas de propriedade para o seu projeto WPF aparecem.  
   
@@ -58,7 +55,7 @@ Estilos visuais permitem a aparência de controles comuns para mudar de acordo c
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Para abrir o arquivo de manifesto em um projeto c#  
   
-    1.  Na barra de menus, escolha **projeto**, *ProjectName***propriedades**, onde *ProjectName* é o nome do seu projeto.  
+    1.  Na barra de menus, escolha **projeto**, * * ProjectName**propriedades**, onde *ProjectName* é o nome do seu projeto.  
   
          As páginas de propriedade para o seu projeto WPF aparecem.  
   
@@ -73,7 +70,7 @@ Estilos visuais permitem a aparência de controles comuns para mudar de acordo c
   
 2.  Criar e publicar sua solução. Para obter mais informações sobre como publicar a solução, consulte [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a>Criar um arquivo de manifesto  
+##  <a name="BKMK_CreateManifest"></a> Criar um arquivo de manifesto  
   
 1.  Cole o seguinte XML em um arquivo do bloco de notas.  
   
@@ -94,7 +91,7 @@ Estilos visuais permitem a aparência de controles comuns para mudar de acordo c
     > [!NOTE]
     >  Procedimentos restantes supõem que o nome desse arquivo é **themes.manifest** e que o arquivo é salvo no diretório C:\temp do computador.  
   
-##  <a name="BKMK_embedmanifest"></a>Inserir o arquivo de manifesto para o arquivo executável da solução publicado  
+##  <a name="BKMK_embedmanifest"></a> Inserir o arquivo de manifesto para o arquivo executável da solução publicado  
   
 1.  Abra o **Prompt de comando do Visual Studio**.  
   
@@ -107,7 +104,7 @@ Estilos visuais permitem a aparência de controles comuns para mudar de acordo c
     > -   A solução está localizada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      A solução é publicada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   A versão mais recente dos arquivos do aplicativo publicado está localizada no seguinte diretório:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   A versão mais recente dos arquivos do aplicativo publicado está localizada no seguinte diretório: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  Você não precisa usar o nome ou os locais de diretório descritos acima. O nome e locais descritos acima são usados apenas para ilustrar as etapas necessárias para publicar sua solução.  
   
@@ -123,7 +120,7 @@ Estilos visuais permitem a aparência de controles comuns para mudar de acordo c
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>Assinar os manifestos de aplicativo e implantação  
+##  <a name="BKMK_signappdeplyman"></a> Assinar os manifestos de aplicativo e implantação  
   
 1.  No prompt de comando, execute o seguinte comando para remover o `.deploy` extensão do arquivo executável na pasta atual.  
   

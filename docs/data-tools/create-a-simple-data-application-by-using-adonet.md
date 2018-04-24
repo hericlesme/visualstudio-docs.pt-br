@@ -1,22 +1,22 @@
 ---
-title: Criar um aplicativo simples de dados usando o ADO.NET no Visual Studio | Microsoft Docs
+title: Criar um aplicativo simples de dados usando o ADO.NET no Visual Studio
 ms.date: 08/23/2017
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab9c63e3601fb58bd2c25f84cf7ac8cda34f5b91
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 9501b9f33290f3b2116d6b84371675682e8deb05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo simples de dados usando o ADO.NET
 
@@ -86,9 +86,9 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 |Controles para o formulário de navegação|Propriedades|
 |--------------------------------------|----------------|
-|Botão|Name = btnGoToAdd|
-|Botão|Name = btnGoToFillOrCancel|
-|Botão|Name = btnExit|
+|Botão|Nome = btnGoToAdd|
+|Botão|Nome = btnGoToFillOrCancel|
+|Botão|Nome = btnExit|
 
  **Formulário de NewCustomer**
 
@@ -99,11 +99,11 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 |TextBox|Nome = txtCustomerName|
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = True|
 |Botão|Name = btnCreateAccount|
-|NumericUpdown|DecimalPlaces = 0<br /><br /> Máximo = 5000<br /><br /> Name = numOrderAmount|
-|DateTimePicker|Formato = curto<br /><br /> Name = dtpOrderDate|
-|Botão|Name = btnPlaceOrder|
+|NumericUpdown|DecimalPlaces = 0<br /><br /> Máximo = 5000<br /><br /> Nome = numOrderAmount|
+|DateTimePicker|Formato = curto<br /><br /> Nome = dtpOrderDate|
+|Botão|Nome = btnPlaceOrder|
 |Botão|Name = btnAddAnotherAccount|
-|Botão|Name = btnAddFinish|
+|Botão|Nome = btnAddFinish|
 
  **Formulário FillOrCancel**
 
@@ -113,10 +113,10 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 |----------------------------------------|----------------|
 |TextBox|Nome = txtOrderID|
 |Botão|Name = btnFindByOrderID|
-|DateTimePicker|Formato = curto<br /><br /> Name = dtpFillDate|
-|DataGridView|Name = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|
-|Botão|Name = btnCancelOrder|
-|Botão|Name = btnFillOrder|
+|DateTimePicker|Formato = curto<br /><br /> Nome = dtpFillDate|
+|DataGridView|Nome = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|
+|Botão|Nome = btnCancelOrder|
+|Botão|Nome = btnFillOrder|
 |Botão|Nome = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Armazenar a cadeia de caracteres de conexão

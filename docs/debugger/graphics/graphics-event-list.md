@@ -1,27 +1,22 @@
 ---
-title: "Lista de eventos de gráfico | Microsoft Docs"
-ms.custom: 
+title: Lista de eventos de gráfico | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3640a1bbb06de7b05eeb62f847504690921b324
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos de elementos gráficos no analisador de gráficos do Visual Studio para explorar os eventos de Direct3D que foram registrados durante a renderização de um quadro de seu aplicativo ou um jogo.  
@@ -75,8 +70,8 @@ Use a lista de eventos de elementos gráficos no analisador de gráficos do Visu
 |----------|-----------------------|  
 |(sem ícone)|Evento em geral<br /> Qualquer evento que não seja um evento definido pelo usuário, um grupo de eventos definido pelo usuário ou um evento de desenho.|  
 |![O ícone de evento draw](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento de desenho<br /> Marca um evento de desenho ocorrido durante o quadro capturado.|  
-|![O usuário &#45; ícone de marcador de eventos definida](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupo de eventos definido pelo usuário<br /> Eventos relacionados a grupos, conforme definido pelo aplicativo.|  
-|![O usuário &#45; ícone de marcador de eventos definida](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcador de evento definido pelo usuário<br /> Marca um local específico, conforme definido pelo aplicativo.|  
+|![O usuário&#45;definido pelo ícone de marcador de evento](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupo de eventos definido pelo usuário<br /> Eventos relacionados a grupos, conforme definido pelo aplicativo.|  
+|![O usuário&#45;definido pelo ícone de marcador de evento](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcador de evento definido pelo usuário<br /> Marca um local específico, conforme definido pelo aplicativo.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>A marcação eventos definidos pelo usuário em seu aplicativo  
  Os eventos definidos pelo usuário são específicos do aplicativo. É possível usá-los para correlacionar eventos significativos ocorridos no aplicativo com eventos na Lista de Eventos de Gráficos. Por exemplo, é possível criar grupos de eventos definidos pelo usuário para organizar eventos relacionados, como os que renderizam a interface do usuário, em grupos ou em hierarquias de forma que você possa navegar na lista de eventos mais facilmente ou criar marcadores quando determinados tipos de objetos forem utilizados para encontrar de maneira fácil os eventos de gráficos na lista de eventos.  
@@ -106,7 +101,7 @@ Use a lista de eventos de elementos gráficos no analisador de gráficos do Visu
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##Recurso histórico Visual Studio 2017 e maior contêm o **recurso histórico** janela.  Selecionando o ícone de Observação ![ícone inspecionar](media/gfx_watch.png) ao lado de uma entrada no **lista de eventos** janela abrirá o **recurso histórico** janela mostrada abaixo:
+## Recurso histórico Visual Studio 2017 e maior contêm o **recurso histórico** janela.  Selecionando o ícone de Observação ![ícone inspecionar](media/gfx_watch.png) ao lado de uma entrada no **lista de eventos** janela abrirá o **recurso histórico** janela mostrada abaixo:
 
 ![Histórico de recursos](media/gfx_diag_resource_history.png)
 

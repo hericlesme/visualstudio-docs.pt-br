@@ -1,12 +1,9 @@
 ---
-title: "Erro: O Monitor de depuração remota do Microsoft Visual Studio no computador remoto está em execução como um usuário diferente | Microsoft Docs"
-ms.custom: 
+title: 'Erro: O Monitor de depuração remota do Microsoft Visual Studio no computador remoto está em execução como um usuário diferente | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: reference
+ms.topic: troubleshooting
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - Remote Debugging Monitor
 - remote debugging, Remote Debugging Monitor
 - msvsmon.exe
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f6575dc0d0a71481efff1da7808c7fbc62f94e56
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e2bdc731b65a8d451b6882914e8bed1abca2139b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Erro: o Monitor de Depuração Remota do Microsoft Visual Studio no computador remoto está sendo executado como um usuário diferente
 Ao tentar fazer a depuração remota, você pode receber a seguinte mensagem de erro:  

@@ -1,21 +1,18 @@
 ---
-title: "Propriedades de funções do domínio | Microsoft Docs"
-ms.custom: 
+title: Propriedades de funções de domínio
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61537deec73a5da8d647639a588641d7cf773da3
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: ead7128c998b8c4ed97acac0f6da0f08113e7bef
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-roles"></a>Propriedades de funções de domínio
 As propriedades na tabela a seguir estão associadas com uma função de domínio. Para obter informações sobre as funções de domínio, consulte [compreensão de modelos, Classes e relacionamentos](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizar e estender uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -38,11 +35,12 @@ As propriedades na tabela a seguir estão associadas com uma função de domíni
 |Categoria|A categoria na qual a propriedade gerada aparece no **propriedades** janela no designer de gerado. Se esta propriedade estiver vazia, a propriedade gerada aparece sob o **Misc** categoria|< nenhum\>|
 |Descrição|A descrição que é usada para documentar código e é usada na interface de usuário do designer gerado.<br /><br /> A descrição aparece na dica de ferramenta IntelliSense para a propriedade gerada na classe de player de função.|`Description for` *o nome completo da função*|
 |Nome de Exibição|O nome que é exibido no designer gerado para a função de domínio.|O valor ajustado da propriedade Name.|
-|Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a Ajuda de F1 para a função de domínio.|\<none>|
+|Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a Ajuda de F1 para a função de domínio.|\<Nenhum >|
 |Nome de exibição da propriedade|O nome que é exibido no designer gerado para a propriedade de função gerado.|O valor ajustado da propriedade de nome de propriedade.|
 
 > [!NOTE]
->  O valor padrão de um nome para exibição é com base no valor da propriedade associada inserindo espaços antes de cada caractere em letra maiuscula que é precedido por um caractere em minúscula e que não é seguido por outro caractere maiusculo.
+> O valor padrão de um nome para exibição é com base no valor da propriedade associada inserindo espaços antes de cada caractere em letra maiuscula que é precedido por um caractere em minúscula e que não é seguido por outro caractere maiusculo.
 
 ## <a name="see-also"></a>Consulte também
- [Propriedades de relacionamentos de domínios](../modeling/properties-of-domain-relationships.md)
+
+- [Propriedades de relacionamentos de domínios](../modeling/properties-of-domain-relationships.md)

@@ -1,5 +1,5 @@
 ---
-title: Referência de conjunto de regra de análise de código do Visual Studio | Microsoft Docs
+title: Referência de conjunto de regra de análise de código do Visual Studio
 ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - code analysis, rule sets reference
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f9a66cae477ada0a6167ef7ffd4a0df1c64feae
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 0fbf59a40cd11e14906f59fc8dd2d7b7a0bf706e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referência do conjunto de regras da análise de código
 

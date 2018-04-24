@@ -1,26 +1,22 @@
 ---
-title: "Como gerar dados de métricas de código no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Como gerar dados de métricas de código no Visual Studio
 ms.date: 12/12/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52726b521d3887dee31b74b0ba110aa8d25350e5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: c412c90d77534a3359eb2ae640ba3a83cfddbc8b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como: gerar dados de métricas de código
 

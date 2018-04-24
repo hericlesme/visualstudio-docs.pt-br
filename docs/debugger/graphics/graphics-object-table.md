@@ -1,27 +1,24 @@
 ---
-title: "Tabela do objeto de gráfico | Microsoft Docs"
-ms.custom: 
+title: Tabela do objeto de gráfico | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.datavisualizer
 - vs.graphics.objecttable
 - vs.graphics.bufferviewer
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d58c219069efcc98fccaa52dff5bd156212ea64d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-object-table"></a>Tabela de objetos de gráfico
 A tabela de objeto de gráficos na análise de gráficos do Visual Studio ajuda você a entender os objetos de Direct3D que dão suporte a um quadro de seu aplicativo ou um jogo.  
@@ -106,11 +103,11 @@ A tabela de objeto de gráficos na análise de gráficos do Visual Studio ajuda 
 |**half4**|Um vetor que contém quatro valores de ponto flutuante de 16 bits.|  
 |**double**|Um valor de ponto flutuante de 64 bits.|  
 |**int**|Um valor inteiro com sinal de 32 bits. Mesmo que **4 bytes**.|  
-|**Int64**|Um valor inteiro com sinal de 64 bits. Mesmo que **8 bytes**.|  
+|**int64**|Um valor inteiro com sinal de 64 bits. Mesmo que **8 bytes**.|  
 |**xint**|Um valor hexadecimal de 32 bits. Mesmo que **x4byte**.|  
 |**xint64**|Um valor hexadecimal de 64 bits. Mesmo que **x8byte**.|  
 |**uint**|Um valor inteiro sem sinal de 32 bits. Mesmo que **u4byte**.|  
-|**UInt64**|Um valor inteiro sem sinal de 64 bits. Mesmo que **u8byte**.|  
+|**uint64**|Um valor inteiro sem sinal de 64 bits. Mesmo que **u8byte**.|  
 |**bool**|Um valor booleano (`true` ou `false`). Cada valor booleano é representado por um valor de 32 bits.|  
   
 ## <a name="see-also"></a>Consulte também  

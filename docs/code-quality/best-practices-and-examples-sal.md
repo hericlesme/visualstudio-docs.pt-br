@@ -1,23 +1,18 @@
 ---
-title: "Práticas recomendadas e exemplos (SAL) | Microsoft Docs"
-ms.custom: 
+title: Práticas recomendadas e exemplos (SAL)
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c6f505d5e44aec47f88a7955b5b5d98b2699e4
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: d26f5329f530af2d6547f44b73ded82c5db53f4f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="best-practices-and-examples-sal"></a>Práticas recomendadas e exemplos (SAL)
 Aqui estão algumas maneiras de obter o máximo de fora do código-fonte código anotação idioma (SAL) e evitar alguns problemas comuns.
@@ -71,7 +66,7 @@ void Func2(_Out_ int *p1)
 
 Se uma função é exibida em um limite de confiança, é recomendável que você use o `_Pre_defensive_` anotação.  O modificador de "defesa" modifica certas anotações para indicar que, no ponto de chamada, a interface deve ser verificada estritamente, mas no corpo de implementação deve presumir que podem ser passados parâmetros incorretos. Nesse caso, `_In_ _Pre_defensive_` é preferencial em um limite de confiança para indicar que, embora um chamador obterá um erro ao tentar passar NULL, o corpo da função será analisado como se o parâmetro pode ser NULL e qualquer tentativa de cancelar a referência de ponteiro sem primeiro a verificação de NULL será sinalizada.  Um `_Post_defensive_` anotação também está disponível para uso em retornos de chamada, em que a parte confiável é considerada o chamador e o código não confiável é o código de chamada.
 
-## <a name="outwrites"></a>\_Out\_writes\_
+## <a name="outwrites"></a>\_Limite\_grava\_
 
 O exemplo a seguir demonstra um uso indevido comuns de `_Out_writes_`.
 

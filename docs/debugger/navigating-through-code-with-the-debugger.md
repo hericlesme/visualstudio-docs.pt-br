@@ -1,13 +1,9 @@
 ---
-title: "Navegar pelo código com o depurador do Visual Studio | Microsoft Docs"
+title: Navegar pelo código com o depurador do Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 helpviewer_keywords:
@@ -15,17 +11,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: ae96b360620a58fa323d080e6262c7f2966fa160
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
 Familiarize-se com os comandos e atalhos para navegar pelo código no depurador e que tornará mais rápida e fácil de localizar e resolver problemas em seu aplicativo. Enquanto você navegar pelo código no depurador, você pode inspecionar o estado do seu aplicativo ou saber mais sobre o seu fluxo de execução.  
@@ -41,13 +36,13 @@ Familiarize-se com os comandos e atalhos para navegar pelo código no depurador 
   
  Quando você depura, a linha amarela mostra o código que executará a seguir.  
   
- ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Noções básicas sobre&#95;quebra&#95;modo](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Durante a depuração, você pode alternar entre os comandos **F5**, **F11** e usar outros recursos descritos neste tópico (como pontos de interrupção) para obter o código que você deseja examinar rapidamente.  
   
  A maioria dos recursos do depurador, como a exibição de valores de variáveis na janela locais ou avaliar expressões na janela Inspeção, estão disponíveis apenas enquanto o depurador está em pausa (também chamado de *modo de interrupção*). Quando o depurador é pausado, o estado do aplicativo está suspenso durante a funções, variáveis, e os objetos permanecem na memória. No modo de interrupção, você pode examinar as posições dos elementos e estados para procurar por violações ou erros. Para alguns tipos de projeto, você também pode fazer ajustes para o aplicativo no modo de interrupção. Para assistir um vídeo mostrando esses recursos, consulte [guia de Introdução com o depurador](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Entrar no código, linha por linha  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Entrar no código, linha por linha  
  Para interromper em cada linha de código (cada instrução) durante a depuração, use o **F11** atalho de teclado (ou **depurar** > **intervir** no menu).  
   
 > [!TIP]
@@ -75,7 +70,7 @@ Familiarize-se com os comandos e atalhos para navegar pelo código no depurador 
   
  Para rastrear visualmente a pilha de chamadas durante a depuração em funções, consulte [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Step_over_Step_out"></a>Percorrer o código, ignorando a funções  
+##  <a name="BKMK_Step_over_Step_out"></a> Percorrer o código, ignorando a funções  
  Ao executar o código no depurador, geralmente você vai perceber que você não precisa ver o que acontece em uma função específica (não se preocupa- ou se você souber que ele funciona, como o código de biblioteca bem testada). Usar esses comandos para saltar entre código (as funções ainda forem executados, obviamente, mas o depurador ignora-los).  
   
 |Comando de teclado|Menu Comando|Descrição|  
@@ -86,7 +81,7 @@ Familiarize-se com os comandos e atalhos para navegar pelo código no depurador 
 > [!TIP]
 >  Se você precisa localizar o ponto de entrada em seu aplicativo, inicie com **F10** ou **F11**. Esses comandos geralmente são úteis quando você estiver verificando o estado do aplicativo ou ao tentar encontrar mais informações sobre seu fluxo de execução.  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Executar até um local específico ou uma função  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Executar até um local específico ou uma função  
  Geralmente o método preferencial de depuração de código, esses métodos são úteis quando você sabe exatamente o código que deseja inspecionar ou, pelo menos você souber onde você deseja iniciar a depuração.  
   
 -   **Defina pontos de interrupção no código**  
@@ -132,7 +127,7 @@ Familiarize-se com os comandos e atalhos para navegar pelo código no depurador 
   
      ![Escolha a caixa de diálogo de pontos de interrupção](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a>Mova o ponteiro para alterar o fluxo de execução  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Mova o ponteiro para alterar o fluxo de execução  
  Enquanto o depurador está pausado, você pode mover o ponteiro de instrução para definir a próxima instrução de código a ser executado. Uma seta amarela na margem de uma fonte ou janela de desmontagem marca o local da próxima instrução a ser executada. Movendo essa seta, você pode ignorar uma parte do código ou retornar a uma linha executada anteriormente. É possível usar esse procedimento para situações como ignorar uma seção de código que contém um bug conhecido.  
   
  ![Mover o ponteiro](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")
@@ -190,5 +185,5 @@ Familiarize-se com os comandos e atalhos para navegar pelo código no depurador 
   
 3.  Escolha **carregar símbolos** no menu de contexto.  
   
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a>Entrar em propriedades e operadores em código gerenciado  
+##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Entrar em propriedades e operadores em código gerenciado  
  O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em propriedades ou operadores, escolha **depurar** > **opções**. Sobre o **depuração** > **geral** página, desmarque o **percorrer propriedades e operadores (somente gerenciado)** caixa de seleção

@@ -1,22 +1,18 @@
 ---
-title: "Como: habilitar e desabilitar análise de código automática para código gerenciado | Microsoft Docs"
-ms.custom: 
+title: Como habilitar e desabilitar análise de código automática para código gerenciado
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e7699d8e5d7cbf9b63149e20fd9212cae14448d
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: e47e2b760c65e64ee8c5fcad145a45c27e43adc8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Como: habilitar e desabilitar análise de código automática para código gerenciado
 

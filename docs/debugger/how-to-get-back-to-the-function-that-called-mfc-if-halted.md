@@ -1,13 +1,9 @@
 ---
-title: "Como: Voltar para a função que chamou MFC em caso de parada | Microsoft Docs"
-ms.custom: 
+title: 'Como: Voltar para a função que chamou MFC em caso de parada | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.mfc
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - programs, halting
 - functions [debugger]
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ca8a71327f4d561d8fef2c0e2d6cbf82cd9061
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 356e9f4950e62f3ac1399b1e79ee2fe400cec47b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Como retornar à função que chamou MFC em caso de parada
 > [!NOTE]

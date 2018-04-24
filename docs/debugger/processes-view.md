@@ -1,29 +1,24 @@
 ---
-title: "Exibição de processos | Microsoft Docs"
-ms.custom: 
+title: Exibição de processos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
 helpviewer_keywords:
 - Processes view
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4cd848f2e771a2207e89d67eddbead22d2180990
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="processes-view"></a>Exibição de processos
 A tela processos exibe uma árvore de todos os processos ativos no sistema. O nome do módulo e o ID de processo são mostrados. Se você deseja examinar um processo de determinado sistema, que normalmente corresponde a um programa em execução, use o modo de exibição de processos. Processos são identificados por nomes de módulo ou são designados "processos do sistema".  
@@ -38,7 +33,7 @@ A tela processos exibe uma árvore de todos os processos ativos no sistema. O no
   
 1.  Do **Spy** menu, escolha **processos**.  
   
- ![Spy º 43; &#43; Exibição de processos](../debugger/media/spy--_processes.png "Spy + + _Processes")  
+ ![Spy&#43; &#43; exibição de processos](../debugger/media/spy--_processes.png "Spy + + _Processes")  
 Exibição de processos do Spy + +  
   
  A figura acima mostra a exibição de processos com processos e threads nós expandidos.  

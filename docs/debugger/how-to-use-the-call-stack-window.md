@@ -2,12 +2,8 @@
 title: Exibir a pilha de chamadas do depurador do Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/06/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
 dev_langs:
@@ -29,17 +25,16 @@ helpviewer_keywords:
 - stack, switching stack frames
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d20a1ac9f1a09b93f577c6aa90f550ccd6ff0def
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Exibir a pilha de chamadas e usar a janela pilha de chamadas do depurador do Visual Studio
 
@@ -71,7 +66,7 @@ Código não-usuário é qualquer código que não é mostrado quando [Just My C
   
 **[\<Código externo >]**  
   
-## <a name="bkmk_switch"></a>Alternar para outro quadro de pilha (alterar o contexto do depurador)
+## <a name="bkmk_switch"></a> Alternar para outro quadro de pilha (alterar o contexto do depurador)
   
 1.  No **pilha de chamadas** janela, com o botão direito do quadro de pilha cujo código e os dados que você deseja exibir.
 
@@ -113,9 +108,9 @@ Se você estiver usando o Visual Studio Enterprise (apenas), você pode exibir m
 
 ## <a name="change-the-optional-information-displayed"></a>Alterar as informações opcionais exibidas  
   
--   Clique com botão direito do **pilha de chamadas** janela e definir ou limpar **Mostrar \<**  *as informações que você deseja*  **>** .  
+-   Clique com botão direito do **pilha de chamadas** janela e definir ou limpar **Mostrar \< ***as informações que você deseja***>**.  
   
-## <a name="bkmk_symbols"></a>Carregar símbolos para um módulo
+## <a name="bkmk_symbols"></a> Carregar símbolos para um módulo
 No **pilha de chamadas** janela, você pode carregar símbolos para o código que não possui símbolos carregados no momento de depuração. Esses símbolos podem ser símbolos do .NET Framework ou do sistema baixados dos servidores públicos de símbolo da Microsoft ou de símbolos em um caminho de símbolo no computador que você está depurando.  
   
 Consulte [especificar símbolo (. PDB) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  

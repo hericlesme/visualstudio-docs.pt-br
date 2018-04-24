@@ -1,13 +1,9 @@
 ---
-title: "Usar pontos de interrupção no depurador do Visual Studio | Microsoft Docs"
+title: Usar pontos de interrupção no depurador do Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -35,17 +31,16 @@ f1_keywords:
 helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Você pode definir pontos de interrupção quando você deseja interromper a execução do depurador, talvez para ver o estado de variáveis de código ou para examinar a pilha de chamadas. Eles são uma das técnicas de depuração mais importantes na caixa de ferramentas do desenvolvedor.  
@@ -197,7 +192,7 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
   
 2.  Iniciar a depuração e quando a execução é interrompida no ponto de interrupção, localizar o ponto de interrupção a **locais** janela, clique duas vezes e selecione **Verifique a ID do objeto**.  
   
-     Você deve ver uma  **$**  mais um número no **locais** janela. Este é o ID de objeto.  
+     Você deve ver uma **$** mais um número no **locais** janela. Este é o ID de objeto.  
   
 3.  Adicione um novo ponto de interrupção condicional no ponto em que você deseja investigar, por exemplo quando o objeto está para ser adicionado à coleção.  
   

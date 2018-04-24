@@ -1,13 +1,9 @@
 ---
-title: "Gerenciar exceções com o depurador do Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Gerenciar exceções com o depurador do Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +29,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 4ed17cc303bfb7194c7f438e32afb1be7f484eb5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
@@ -145,7 +140,7 @@ Se você selecionar uma exceção no **configurações de exceção** janela, a 
   
  ![Restaurar padrões nas configurações de exceção](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>Informar o depurador para continuar se houver exceções não tratadas pelo usuário  
+##  <a name="BKMK_UserUnhandled"></a> Informar o depurador para continuar se houver exceções não tratadas pelo usuário  
  Se você estiver depurando o código .NET ou JavaScript com [Just My Code](../debugger/just-my-code.md), você pode fazer o depurador não para interromper as exceções que não são manipuladas no código do usuário, mas são manipuladas em outro lugar.  
   
 1.  No **configurações de exceção** janela, abra o menu de contexto clicando duas vezes na janela e, em seguida, selecionando **Mostrar colunas**. (Se você tiver desativado **Just My Code**, você não verá esse comando.)  
@@ -156,7 +151,7 @@ Se você selecionar uma exceção no **configurações de exceção** janela, a 
   
  Por exemplo, aplicativos web ASP.NET lidar com exceções, convertendo-os para um código de status HTTP 500 ([tratamento de exceção na API do ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), que não pode ajudá-lo a determinar a origem da exceção. No exemplo a seguir, o código de usuário faz uma chamada para `String.Format()` que gera um <xref:System.FormatException>. A execução é interrompida da seguinte maneira:  
   
- ![quebras de usuário &#45; exceção unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![quebra no usuário&#45;exceção unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Adicionar e excluir exceções  
  Você pode adicionar e excluir exceções. Você pode excluir qualquer tipo de exceção de qualquer categoria selecionando a exceção e clicando o **excluir** botão (o sinal de subtração) a **configurações de exceção** barra de ferramentas ou clicando duas vezes a exceção e selecionando **excluir** no menu de contexto. Excluir uma exceção tem o mesmo efeito como tendo a exceção desmarcada, o que é que o depurador não será interrompido quando ela é gerada.  
@@ -190,7 +185,7 @@ public class GenericException<T> : Exception
 Você pode definir condições de exceções no **configurações de exceção** caixa de diálogo. Condições atualmente com suporte incluem os nomes de módulo para incluir ou excluir da exceção. Definindo nomes de módulo como condições, você pode optar por interromper a exceção apenas em módulos de código específico, ou você pode evitar a quebra de módulos específicos.
 
 > [!NOTE]
-> Adicionando condições a uma exceção é novo no[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> Adicionando condições a uma exceção é novo no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Para adicionar exceções condicionais, escolha o **Editar condição** ícone na caixa de diálogo Configurações de exceção caixa ou clique a exceção e escolha **editar condições**.
 

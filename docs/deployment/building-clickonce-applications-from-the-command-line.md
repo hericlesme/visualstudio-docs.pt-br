@@ -1,12 +1,9 @@
 ---
 title: Compilando aplicativos ClickOnce a partir da linha de comando | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: "23"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4488f32b135d766f494bc94946fbf77d42eb1e95
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilando aplicativos ClickOnce a partir da linha de comando
 Em [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], você pode criar projetos de linha de comando, mesmo se eles são criados no ambiente de desenvolvimento integrado (IDE). Na verdade, você pode recompilar um projeto criado com [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] em outro computador que tenha apenas o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalado. Isso permite que você reproduza uma compilação usando um processo automatizado, por exemplo, em uma compilação central de laboratório ou usando scripts avançados técnicas além do escopo de compilar o projeto em si.  
@@ -75,7 +72,7 @@ Em [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
   
      Esta etapa é opcional, mas garante que os novos arquivos foram todos produzidos pela compilação de linha de comando.  
   
-5.  Digite `msbuild /target:publish`.  
+5.  Digite `msbuild /target:publish` no terminal integrado.  
   
  As etapas acima produzirá uma completa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação de aplicativo em uma subpasta do seu projeto chamado P**blicar**. CmdLineDemo.application é o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o manifesto de implantação. A pasta CmdLineDemo_1.0.0.0 contém os arquivos CmdLineDemo.exe e CmdLineDemo.exe.manifest, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o manifesto do aplicativo. Setup.exe é o bootstrapper, que, por padrão, está configurado para instalar o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. A pasta DotNetFX contém redistribuíveis para o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Este é o conjunto inteiro de arquivos que necessários para implantar seu aplicativo na Web ou por meio de CD/DVD ou UNC.  
   
@@ -112,7 +109,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Propriedades de publicação são controladas no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do **publicar**, **segurança**, e **assinatura** páginas de propriedade a **Designer de projeto** . Abaixo está uma descrição das propriedades de publicação, juntamente com uma indicação de como cada um é configurada em várias páginas de propriedade do designer do aplicativo:  
   
--   `AssemblyOriginatorKeyFile`Determina o arquivo de chave usado para assinar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos de aplicativo. Essa mesma chave também pode ser usado para atribuir um nome forte a seus assemblies. Essa propriedade é definida no **assinatura** página do **Project Designer**.  
+-   `AssemblyOriginatorKeyFile` Determina o arquivo de chave usado para assinar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos de aplicativo. Essa mesma chave também pode ser usado para atribuir um nome forte a seus assemblies. Essa propriedade é definida no **assinatura** página do **Project Designer**.  
   
  As seguintes propriedades são definidas no **segurança** página:  
   
@@ -122,41 +119,41 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  As seguintes propriedades são definidas no **publicar** página:  
   
--   `PublishUrl`é o local onde o aplicativo será publicado no IDE. Ele é inserido no [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto do aplicativo se nem o `InstallUrl` ou `UpdateUrl` propriedade for especificada.  
+-   `PublishUrl` é o local onde o aplicativo será publicado no IDE. Ele é inserido no [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto do aplicativo se nem o `InstallUrl` ou `UpdateUrl` propriedade for especificada.  
   
--   `ApplicationVersion`Especifica a versão do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Este é um número de versão de quatro dígitos. Se o último dígito é um "*", em seguida, o `ApplicationRevision` substituirá o valor inserido no manifesto no momento da compilação.  
+-   `ApplicationVersion` Especifica a versão do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Este é um número de versão de quatro dígitos. Se o último dígito é um "*", em seguida, o `ApplicationRevision` substituirá o valor inserido no manifesto no momento da compilação.  
   
--   `ApplicationRevision`Especifica a revisão. Este é um inteiro que é incrementado toda vez que você publica no IDE. Observe que não é incrementado automaticamente para compilações executadas na linha de comando.  
+-   `ApplicationRevision` Especifica a revisão. Este é um inteiro que é incrementado toda vez que você publica no IDE. Observe que não é incrementado automaticamente para compilações executadas na linha de comando.  
   
--   `Install`Determina se o aplicativo é um aplicativo de execução da Web ou de um aplicativo instalado.  
+-   `Install` Determina se o aplicativo é um aplicativo de execução da Web ou de um aplicativo instalado.  
   
--   `InstallUrl`(não mostrado) é o local em que usuários instalem o aplicativo. Se especificado, esse valor é gravado no bootstrapper setup.exe se o `IsWebBootstrapper` propriedade está habilitada. Ele também é inserido na se manifesto do aplicativo a `UpdateUrl` não for especificado.  
+-   `InstallUrl` (não mostrado) é o local em que usuários instalem o aplicativo. Se especificado, esse valor é gravado no bootstrapper setup.exe se o `IsWebBootstrapper` propriedade está habilitada. Ele também é inserido na se manifesto do aplicativo a `UpdateUrl` não for especificado.  
   
--   `SupportUrl`(não mostrado) é o local vinculado a **adicionar ou remover programas** caixa de diálogo para um aplicativo instalado.  
+-   `SupportUrl` (não mostrado) é o local vinculado a **adicionar ou remover programas** caixa de diálogo para um aplicativo instalado.  
   
  As seguintes propriedades são definidas **atualizações do aplicativo** caixa de diálogo, acessada a partir de **publicar** página.  
   
--   `UpdateEnabled`Indica se o aplicativo deve verificar se há atualizações.  
+-   `UpdateEnabled` Indica se o aplicativo deve verificar se há atualizações.  
   
--   `UpdateMode`Especifica o primeiro plano ou atualizações em segundo plano.  
+-   `UpdateMode` Especifica o primeiro plano ou atualizações em segundo plano.  
   
--   `UpdateInterval`Especifica a frequência com a qual o aplicativo deve verificar se há atualizações.  
+-   `UpdateInterval` Especifica a frequência com a qual o aplicativo deve verificar se há atualizações.  
   
--   `UpdateIntervalUnits`Especifica se o `UpdateInterval` valor está em unidades de horas, dias ou semanas.  
+-   `UpdateIntervalUnits` Especifica se o `UpdateInterval` valor está em unidades de horas, dias ou semanas.  
   
--   `UpdateUrl`(não mostrado) é o local em que o aplicativo receberá atualizações. Se especificado, esse valor é inserido no manifesto do aplicativo.  
+-   `UpdateUrl` (não mostrado) é o local em que o aplicativo receberá atualizações. Se especificado, esse valor é inserido no manifesto do aplicativo.  
   
 -   As seguintes propriedades são definidas **opções de publicação** caixa de diálogo, acessada a partir de **publicar** página.  
   
--   `PublisherName`Especifica o nome do publicador exibido no prompt mostrado durante a instalação ou execução do aplicativo. No caso de um aplicativo instalado, ele também é usado para especificar o nome da pasta no **iniciar** menu.  
+-   `PublisherName` Especifica o nome do publicador exibido no prompt mostrado durante a instalação ou execução do aplicativo. No caso de um aplicativo instalado, ele também é usado para especificar o nome da pasta no **iniciar** menu.  
   
--   `ProductName`Especifica o nome do produto exibido no prompt mostrado durante a instalação ou execução do aplicativo. No caso de um aplicativo instalado, ele também é usado para especificar o nome do atalho no **iniciar** menu.  
+-   `ProductName` Especifica o nome do produto exibido no prompt mostrado durante a instalação ou execução do aplicativo. No caso de um aplicativo instalado, ele também é usado para especificar o nome do atalho no **iniciar** menu.  
   
 -   As seguintes propriedades são definidas **pré-requisitos** caixa de diálogo, acessada a partir de **publicar** página.  
   
--   `BootstrapperEnabled`Determina se deve gerar bootstrapper setup.exe.  
+-   `BootstrapperEnabled` Determina se deve gerar bootstrapper setup.exe.  
   
--   `IsWebBootstrapper`Determina se o bootstrapper setup.exe funciona através da Web ou no modo baseado em disco.  
+-   `IsWebBootstrapper` Determina se o bootstrapper setup.exe funciona através da Web ou no modo baseado em disco.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL e UpdateURL  
  A tabela a seguir mostra as quatro opções de URL para a implantação do ClickOnce.  

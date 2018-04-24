@@ -1,28 +1,25 @@
 ---
 title: Depurar XAML no Blend | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML no Blend
 Você pode usar as ferramentas no [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] para depurar o XAML em seu aplicativo. Quando você cria um projeto, os erros são exibidos no **resultados** painel. Clique duas vezes em um erro para localizar a marcação relacionada ao erro. Se você precisar de mais espaço de trabalho, você pode ocultar o **resultados** painel pressionando F12.  
@@ -64,7 +61,7 @@ Você pode usar as ferramentas no [!INCLUDE[blend_first](../debugger/includes/bl
   
 5.  No **local** texto, verifique se o local do projeto.  
   
-6.  No **idioma** lista, clique em **Visual C#**e, em seguida, clique em **Okey** para criar o projeto.  
+6.  No **idioma** lista, clique em **Visual C#** e, em seguida, clique em **Okey** para criar o projeto.  
   
 7.  Clique na superfície de design e, em seguida, clique em **Exibir código-fonte** para alternar para **divisão** exibição.  
   
@@ -109,13 +106,13 @@ Você pode usar as ferramentas no [!INCLUDE[blend_first](../debugger/includes/bl
   
 1.  Clique duas vezes no primeiro erro da lista. A descrição é "O valor '<' não é um válido em um atributo". Quando você clica duas vezes no erro, o ponteiro encontra o local correspondente no código. O `<` que precede `Button` é válido e não um atributo, conforme sugerido na mensagem de erro. Se você observar a linha de código precedente, notará que as marcas de aspas de fechamento para o atributo `Top` estão faltando. Digite as marcas de aspas de fechamento. Observe que a lista de erros no **resultados** painel será atualizado para refletir as alterações.  
   
-2.  Clique duas vezes a descrição "'0' não é válido no início de um nome." `Margin="0,149,0,0"`parece estar bem formada. No entanto, observe que a codificação de cor da `Margin` não corresponde a outras instâncias de `Margin` no código. Como as marcas de cotação de fechamento estão faltando do par de nome/valor precedente (`VerticalAlignment="Top`), `Margin="` que é lido como parte do valor do atributo precedente, e 0 é lido como o início de um par de nome/valor. Digite as marcas de aspas de fechamento para `Top`. A lista de erros no **resultados** painel será atualizado para refletir as alterações.  
+2.  Clique duas vezes a descrição "'0' não é válido no início de um nome." `Margin="0,149,0,0"` parece estar bem formada. No entanto, observe que a codificação de cor da `Margin` não corresponde a outras instâncias de `Margin` no código. Como as marcas de cotação de fechamento estão faltando do par de nome/valor precedente (`VerticalAlignment="Top`), `Margin="` que é lido como parte do valor do atributo precedente, e 0 é lido como o início de um par de nome/valor. Digite as marcas de aspas de fechamento para `Top`. A lista de erros no **resultados** painel será atualizado para refletir as alterações.  
   
 3.  Clique duas vezes no erro restante, "A marcação XML de fechamento 'Button' é discrepante." O ponteiro está localizado no fechamento **grade** marca (`</Grid>`), sugerindo que o erro está dentro do `Grid` objeto. Observe que o segundo objeto `Button` está sem a marca de fechamento. Depois de adicionar o fechamento `/`, o **resultados** painel lista é atualizada. Agora que esses erros iniciais foram resolvidos, dois erros adicionais foram identificados.  
   
 4.  Clique duas vezes em "O membro 'content' não é reconhecido nem acessível." O `c` em `content` deve estar em maiúsculas. Substitua o "c" minúsculo pelo "c" maiúsculo.  
   
-5.  Clique duas vezes em "A propriedade 'Mame' não existe no namespace 'http://schemas.microsoft.com/winfx/2006/xaml'." O "M" em "Mame" deve ser um "N." Substitua o "M" com um "N". Agora que o XAML pode ser analisado, o aplicativo aparece na superfície de design.  
+5.  Clique duas vezes em "a propriedade 'Mame' não existe no 'http://schemas.microsoft.com/winfx/2006/xaml' namespace." O "M" em "Mame" deve ser um "N." Substitua o "M" com um "N". Agora que o XAML pode ser analisado, o aplicativo aparece na superfície de design.  
   
      ![Depurar XAML no Blend para Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
   

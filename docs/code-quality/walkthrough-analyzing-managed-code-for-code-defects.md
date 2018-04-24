@@ -1,24 +1,21 @@
 ---
-title: "Instruções passo a passo Analisando código gerenciado em busca de defeitos de código | Microsoft Docs"
-ms.custom: 
+title: Instruções passo a passo Analisando código gerenciado em busca de defeitos de código | Microsoft Docs
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1c708f31d31dd811017015cd37c7e60d49beef9
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Passo a passo: Analisando código gerenciado para código defeitos
 
@@ -30,9 +27,9 @@ Este passo a passo o orienta o processo de usar a análise de código para anali
 
 ### <a name="to-create-a-class-library"></a>Para criar uma biblioteca de classes
 
-1. Sobre o **arquivo** menu, escolha **novo** > **projeto...** .
+1. No menu **Arquivo**, escolha **Novo** > **Projeto...**.
 
-1. No **novo projeto** caixa de diálogo caixa, expanda **instalado** > **Visual C#**e, em seguida, escolha **área de trabalho clássica do Windows**.
+1. No **novo projeto** caixa de diálogo caixa, expanda **instalado** > **Visual C#** e, em seguida, escolha **área de trabalho clássica do Windows**.
 
 1. Escolha o **biblioteca de classes (.NET Framework)** modelo.
 
@@ -63,21 +60,21 @@ Este passo a passo o orienta o processo de usar a análise de código para anali
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>Para analisar um projeto gerenciado em busca de defeitos de código
 
 1. Selecione o projeto CodeAnalysisManagedDemo na **Gerenciador de soluções**.
-  
+
 1. No menu **Projeto**, clique em **Propriedades**.
-  
+
      A página de propriedades CodeAnalysisManagedDemo é exibida.
-  
+
 1. Escolha o **análise de código** guia.
-  
+
 1. Verifique se **habilitar análise de código na compilação** é verificada.
-  
+
 1. Do **executar esse conjunto de regras** lista suspensa, selecione **Microsoft todas as regras**.
-  
+
 1. Sobre o **arquivo** menu, clique em **salvar itens selecionados**e, em seguida, feche as páginas de propriedades.
-  
+
 1. No **criar** menu, clique em **CodeAnalysisManagedDemo criar**.
-  
+
     Os avisos de compilação de projeto CodeAnalysisManagedDemo são mostrados no **lista de erros** e **saída** windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Corrija os problemas de análise de código
@@ -112,7 +109,7 @@ Este passo a passo o orienta o processo de usar a análise de código para anali
 
    1. Adicione o código `using System.Runtime.Serialization;` para o início do arquivo Class1.cs.
 
-   1. Em seguida, adicione o construtor`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. Em seguida, adicione o construtor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
    [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Adicione o seguinte construtor para essa classe: demo() pública
 

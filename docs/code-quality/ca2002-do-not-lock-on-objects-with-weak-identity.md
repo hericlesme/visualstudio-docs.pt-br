@@ -1,11 +1,8 @@
 ---
-title: 'CA2002: Não bloquear objetos com identidade fraca | Microsoft Docs'
-ms.custom: ''
+title: 'CA2002: não bloquear objetos com identidade fraca'
 ms.date: 01/31/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 - CA2002
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e27af6104b06b1f6a01ae6a98bfe88e8a0e967b1
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 868ed0e1b4b5581473f7c7bde98f6f40e29f0664
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: não bloquear objetos com identidade fraca
 
@@ -84,7 +81,7 @@ O exemplo a seguir mostra alguns bloqueios de objeto que violam a regra.
 
 ## <a name="see-also"></a>Consulte também
 
-<xref:System.Threading.Monitor>  
-<xref:System.AppDomain>  
-[bloqueio de instrução (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)  
+<xref:System.Threading.Monitor>
+<xref:System.AppDomain>
+[Instrução (c#) Lock](/dotnet/csharp/language-reference/keywords/lock-statement)
 [Instrução SyncLock (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

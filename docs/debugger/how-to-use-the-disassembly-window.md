@@ -1,13 +1,9 @@
 ---
-title: "Exibir o código de desmontagem no depurador do Visual Studio | Microsoft Docs"
+title: Exibir o código de desmontagem no depurador do Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - Disassembly window
 - machine code
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c53f5404eb127f2f5eb9ec844024beafaad22e86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 46c0ae689a9d514983aeb747bebc6cb9905c6e11
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Exibir o código de desmontagem no depurador do Visual Studio
 Este recurso está disponível somente se a depuração de nível de endereço está habilitada a **opções** caixa de diálogo, **depuração** nó. Não está disponível para depuração de Script ou SQL.  

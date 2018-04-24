@@ -1,12 +1,8 @@
 ---
-title: 'CA2101: Especificar marshaling para argumentos de cadeia de caracteres P Invoke | Microsoft Docs'
-ms.custom: 
+title: 'CA2101: Especificar marshaling para argumentos de cadeia de caracteres P Invoke'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - SpecifyMarshalingForPInvokeStringArguments
 - CA2101
@@ -14,40 +10,40 @@ helpviewer_keywords:
 - CA2101
 - SpecifyMarshalingForPInvokeStringArguments
 ms.assetid: 9d1abfc3-d320-41e0-9f6e-60cefe6ffe1b
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 15191983d08bfc99848e4a16c0059c075b234bb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8171c318d419edc49410c44d381e82f088014082
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: especificar marshaling para argumentos da cadeia de caracteres P/Invoke
-|||  
-|-|-|  
-|NomeDoTipo|SpecifyMarshalingForPInvokeStringArguments|  
-|CheckId|CA2101|  
-|Categoria|Microsoft.Globalization|  
-|Alteração Significativa|Não recentes|  
-  
-## <a name="cause"></a>Causa  
- Invocação de uma plataforma membro permite chamadores parcialmente confiáveis, tem um parâmetro de cadeia de caracteres e não empacotar explicitamente a cadeia de caracteres.  
-  
-## <a name="rule-description"></a>Descrição da Regra  
- Quando você converter de Unicode em ANSI, é possível que nem todos os caracteres Unicode podem ser representados em uma página de código ANSI específica. *Mapeamento de melhor ajuste* tenta resolver esse problema, substituindo um caractere para o caractere que não pode ser representado. O uso desse recurso pode causar uma potencial vulnerabilidade de segurança porque você não pode controlar o caractere que é escolhido. Por exemplo, um código mal-intencionado pode criar uma cadeia de caracteres Unicode que contém caracteres que não são encontrados em uma página de código específico, que são convertidos em caracteres especiais do sistema de arquivos, como intencionalmente '... ' ou '/'. Observe também que as verificações de segurança para caracteres especiais ocorrem com frequência para que a cadeia de caracteres é convertida em ANSI.  
-  
- Mapeamento de melhor ajuste é o padrão para a conversão não gerenciado, WChar para MByte. A menos que você desabilite explicitamente o mapeamento de melhor ajuste, seu código pode conter uma vulnerabilidade de segurança explorável devido a esse problema.  
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Para corrigir uma violação desta regra, tipos de dados de cadeia de caracteres para empacotá-lo explicitamente.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- Não suprima um aviso nessa regra.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra um método que viola essa regra e, em seguida, mostra como corrigir a violação.  
-  
+|||
+|-|-|
+|NomeDoTipo|SpecifyMarshalingForPInvokeStringArguments|
+|CheckId|CA2101|
+|Categoria|Microsoft.Globalization|
+|Alteração Significativa|Não recentes|
+
+## <a name="cause"></a>Causa
+ Invocação de uma plataforma membro permite chamadores parcialmente confiáveis, tem um parâmetro de cadeia de caracteres e não empacotar explicitamente a cadeia de caracteres.
+
+## <a name="rule-description"></a>Descrição da Regra
+ Quando você converter de Unicode em ANSI, é possível que nem todos os caracteres Unicode podem ser representados em uma página de código ANSI específica. *Mapeamento de melhor ajuste* tenta resolver esse problema, substituindo um caractere para o caractere que não pode ser representado. O uso desse recurso pode causar uma potencial vulnerabilidade de segurança porque você não pode controlar o caractere que é escolhido. Por exemplo, um código mal-intencionado pode criar uma cadeia de caracteres Unicode que contém caracteres que não são encontrados em uma página de código específico, que são convertidos em caracteres especiais do sistema de arquivos, como intencionalmente '... ' ou '/'. Observe também que as verificações de segurança para caracteres especiais ocorrem com frequência para que a cadeia de caracteres é convertida em ANSI.
+
+ Mapeamento de melhor ajuste é o padrão para a conversão não gerenciado, WChar para MByte. A menos que você desabilite explicitamente o mapeamento de melhor ajuste, seu código pode conter uma vulnerabilidade de segurança explorável devido a esse problema.
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Para corrigir uma violação desta regra, tipos de dados de cadeia de caracteres para empacotá-lo explicitamente.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ Não suprima um aviso nessa regra.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir mostra um método que viola essa regra e, em seguida, mostra como corrigir a violação.
+
  [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

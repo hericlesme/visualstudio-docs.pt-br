@@ -1,13 +1,8 @@
 ---
-title: "A janela de resultados de métricas de código no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: A janela de resultados de métricas de código no Visual Studio
 ms.date: 12/12/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codemetrics.output
 helpviewer_keywords:
@@ -16,14 +11,14 @@ helpviewer_keywords:
 - results window, code metrics
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 0053bcc23d8bb56a052e8d9203c08ce3ed17f2f9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-the-code-metrics-results-window"></a>Usando a janela de resultados de métricas de código
 

@@ -1,13 +1,9 @@
 ---
-title: "Expressões no depurador | Microsoft Docs"
-ms.custom: 
+title: Expressões no depurador | Microsoft Docs
+ms.custom: ''
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 helpviewer_keywords:
@@ -20,17 +16,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 - debugging [Visual Studio], variable evaluation
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1a477a7d02171eecea51b26f796d9c958c09eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dccd4af0c14787ef34c1c558f83ecb2d6f0c1cea
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui avaliadores de expressão que funcionam quando você insere uma expressão no **QuickWatch** caixa de diálogo, **inspecionar** janela, ou **imediato** janela. Os avaliadores de expressão também estão em funcionamento no **pontos de interrupção** janela e muitos outros locais no depurador.
@@ -90,7 +85,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Usando funções intrínsecas do depurador para manter o estado  
+###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Usando funções intrínsecas do depurador para manter o estado  
  As funções intrínsecas do depurador oferecem uma maneira de chamar determinadas funções C/C++ em expressões sem alterar o estado do aplicativo.  
   
  Funções intrínsecas do depurador:  
@@ -122,7 +117,7 @@ int main()
   
 -   Não há suporte para conversões boxing e unboxing.  
   
--   `Sizeof`Não há suporte para o operador.  
+-   `Sizeof` Não há suporte para o operador.  
   
 ## <a name="c---unsupported-expressions"></a>C# - não há suporte para expressões  
   
@@ -131,7 +126,7 @@ int main()
   
  Os seguintes recursos de objetos dinâmicos não têm suporte:  
   
--   Os operadores compostos `+=`, `-=`, `%=`, `/=`, e`*=`  
+-   Os operadores compostos `+=`, `-=`, `%=`, `/=`, e `*=`  
   
 -   Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento  
   
@@ -155,7 +150,7 @@ int main()
   
  Os seguintes recursos de objetos dinâmicos não têm suporte:  
   
--   Os operadores compostos `+=`, `-=`, `%=`, `/=`, e`*=`  
+-   Os operadores compostos `+=`, `-=`, `%=`, `/=`, e `*=`  
   
 -   Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento  
   

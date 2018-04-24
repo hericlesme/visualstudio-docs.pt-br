@@ -1,35 +1,33 @@
 ---
-title: "A classe selecionada não pode ser excluída porque ele é usado como um tipo de retorno para um ou mais métodos DataContext | Microsoft Docs"
-ms.custom: 
+title: A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 78107218af8c4b32e1cace3137fa15fe31fcbc52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: c1460f8e3484633643d5b7bc9c7df181989b83ff
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
-O tipo de retorno de um ou mais métodos de <xref:System.Data.Linq.DataContext> é a classe de entidade selecionada. Excluindo um classe de entidade que é usada como o tipo de retorno para um método de <xref:System.Data.Linq.DataContext> fará com que a compilação do projeto falhar. Para excluir a classe selecionada de entidade, identifica os métodos de <xref:System.Data.Linq.DataContext> que a usam e definem seus tipos de retorno para uma classe diferente de entidade.  
-  
- Para reverter os tipos de retorno de <xref:System.Data.Linq.DataContext> métodos para seus tipos originais gerado automaticamente, primeiro exclua o <xref:System.Data.Linq.DataContext> método do painel de métodos e, em seguida, arraste o objeto da **Server Explorer** / **Pesquisador de objetos de banco de dados** para Object Relational Designer novamente.  
-  
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
-  
-1.  Identificar <xref:System.Data.Linq.DataContext> métodos que usam a classe de entidade como um tipo de retorno, selecionando um <xref:System.Data.Linq.DataContext> método nos métodos de painel e inspecionando o **tipo de retorno** propriedade o **propriedades** janela .  
-  
-2.  Definir o **tipo de retorno** para uma classe de entidade diferente ou exclua o <xref:System.Data.Linq.DataContext> método do painel de métodos.  
-  
+
+O tipo de retorno de um ou mais métodos de <xref:System.Data.Linq.DataContext> é a classe de entidade selecionada. Excluindo um classe de entidade que é usada como o tipo de retorno para um método de <xref:System.Data.Linq.DataContext> fará com que a compilação do projeto falhar. Para excluir a classe selecionada de entidade, identifica os métodos de <xref:System.Data.Linq.DataContext> que a usam e definem seus tipos de retorno para uma classe diferente de entidade.
+
+Para reverter os tipos de retorno de <xref:System.Data.Linq.DataContext> métodos para seus tipos originais gerado automaticamente, primeiro exclua o <xref:System.Data.Linq.DataContext> método do painel de métodos e, em seguida, arraste o objeto da **Server Explorer** / **Pesquisador de objetos de banco de dados** para Object Relational Designer novamente.
+
+## <a name="to-correct-this-error"></a>Para corrigir este erro
+
+1. Identificar <xref:System.Data.Linq.DataContext> métodos que usam a classe de entidade como um tipo de retorno, selecionando um <xref:System.Data.Linq.DataContext> método nos métodos de painel e inspecionando o **tipo de retorno** propriedade o **propriedades** janela .
+
+2. Definir o **tipo de retorno** para uma classe de entidade diferente ou exclua o <xref:System.Data.Linq.DataContext> método do painel de métodos.
+
 ## <a name="see-also"></a>Consulte também
-[Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)  
-[LINQ to SQL tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+
+- [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
+- [LINQ to SQL tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

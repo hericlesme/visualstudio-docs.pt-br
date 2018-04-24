@@ -1,13 +1,9 @@
 ---
-title: "JIT otimização e depuração | Microsoft Docs"
-ms.custom: 
+title: JIT otimização e depuração | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +13,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], optimized code
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23de1ec4e053a87c4f91cf7b599f49b8fe318015
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 9a9b18ab38c7c19fa5208d34439bd3133099e8bc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="jit-optimization-and-debugging"></a>Otimização e depuração JIT
 **Como as otimizações funcionam no .NET:** se você está tentando depurar o código, é mais fácil quando que o código é **não** otimizado. Isso ocorre porque quando o código está otimizado, o compilador e o tempo de execução de fazem alterações para o código de CPU emitido para que ele é executado mais rapidamente, mas tem um mapeamento menos direto ao código-fonte original. Isso significa que depuradores são geralmente não é possível informar o valor de variáveis locais e a revisão de código e os pontos de interrupção podem não funcionar conforme o esperado.

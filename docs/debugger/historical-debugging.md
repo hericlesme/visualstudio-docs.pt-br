@@ -1,23 +1,20 @@
 ---
-title: "Depuração histórica | Microsoft Docs"
-ms.custom: 
+title: Depuração histórica | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
-caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0107109cfa5b15b8db0c84b304e8e1daae5dfbfa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a75dfc04bd5ce3b1e61cc2c8e8fe293c13560cf9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="historical-debugging"></a>Depuração histórica
 Depuração histórica é um modo de depuração que depende das informações coletadas pelo IntelliTrace. Ele permite que retroceder e Avançar pela execução de seu aplicativo e inspecionar o estado.  

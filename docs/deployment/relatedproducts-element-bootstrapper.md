@@ -1,13 +1,9 @@
 ---
 title: '&lt;RelatedProducts&gt; elemento (Bootstrapper) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -22,17 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: 
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 548c1002eae581dc0e231f8dd2e28ee4a8376e27
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 574b7180efb7495b755d823c798ffa0c21339390
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elemento (Bootstrapper)
 O `RelatedProducts` elemento define outros produtos que dependem de ou que estão incluídos no produto atual.  
@@ -61,7 +56,7 @@ O `RelatedProducts` elemento define outros produtos que dependem de ou que estã
 ## <a name="dependsonproduct"></a>DependsOnProduct  
  O `DependsOnProduct` elemento significa que o produto atual variam de acordo com o produto e que o produto deve ser instalado antes do ano atual. Ele é um filho de `RelatedProducts` elemento. Um `RelatedProducts` elemento pode ter um ou mais `DependsOnProduct` elementos.  
   
- `DependsOnProduct`tem o seguinte atributo.  
+ `DependsOnProduct` tem o seguinte atributo.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
@@ -73,7 +68,7 @@ O `RelatedProducts` elemento define outros produtos que dependem de ou que estã
 ## <a name="includesproduct"></a>IncludesProduct  
  O `IncludesProduct` elemento significa que um produto é incluído com a instalação atual e não requer uma instalação separada. Ele é um filho de `RelatedProducts` elemento. Um `RelatedProducts` elemento pode ter um ou mais `IncludesProduct` elementos.  
   
- `IncludesProduct`tem o seguinte atributo.  
+ `IncludesProduct` tem o seguinte atributo.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  

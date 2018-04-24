@@ -1,27 +1,24 @@
 ---
 title: Dicas e truques no depurador do Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/15/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dacce06dc59724b7f8feba8f84d2b781ba56ed9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 729ea8e59f0b6efd6006308719cba19fbc8b5690
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Saiba mais sobre dicas de produtividade e truques para o depurador no Visual Studio
 
@@ -80,7 +77,7 @@ Alterando o fluxo de execução, você pode fazer coisas como caminhos de execu�
 
     ![Criar uma ID de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
   
-4.  Você deve ver uma  **$**  mais um número no **locais** janela. Essa variável é a ID de objeto.
+4.  Você deve ver uma **$** mais um número no **locais** janela. Essa variável é a ID de objeto.
   
 5.  Clique com botão direito a variável de ID de objeto e escolha **Adicionar inspeção**.
 

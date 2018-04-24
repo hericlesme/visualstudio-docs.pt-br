@@ -1,23 +1,19 @@
 ---
-title: "Guia de Introdução ao diagnóstico de gráficos do Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Guia de Introdução ao diagnóstico de gráficos do Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 05/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: c2804b07db0b7cf8d01c8578877d4b722d6ceb96
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guia de Introdução ao diagnóstico de gráficos do Visual Studio
 Nesta seção você preparará usar o diagnóstico de gráficos pela primeira vez, em seguida, você capturar quadros de um aplicativo Direct3D e examine-os no analisador de gráficos.  
@@ -32,7 +28,7 @@ Nesta seção você preparará usar o diagnóstico de gráficos pela primeira ve
   
  Para obter informações sobre como instalar as ferramentas de gráficos, consulte [instalar ferramentas de gráficos para 10 Windows](#InstallGraphicsTools).  
   
-##  <a name="InstallGraphicsTools"></a>Instalar ferramentas de gráficos para Windows 10  
+##  <a name="InstallGraphicsTools"></a> Instalar ferramentas de gráficos para Windows 10  
  No Windows 10, a infraestrutura de diagnóstico de gráficos é fornecida por um recurso opcional do Windows chamado *ferramentas de gráficos*. Este recurso é necessário para capturar e reproduzir informações de gráficos no Windows 10, independentemente se o aplicativo que está sendo capturado destinos de uma versão anterior do windows ou a versão do Direct3D que ele usa. Você pode optar por instalar o recurso ferramentas de gráficos antecipadamente; Caso contrário, será instalado sob demanda na primeira vez que você iniciar uma sessão de diagnóstico de gráficos do Visual Studio.  
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Para instalar as ferramentas de gráficos para o Windows 10  

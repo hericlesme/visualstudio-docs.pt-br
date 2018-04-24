@@ -1,12 +1,9 @@
 ---
 title: Protegendo aplicativos ClickOnce | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: "45"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 13ec12009a48d841a991519ab929794279fe2a5e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="securing-clickonce-applications"></a>Protegendo aplicativos ClickOnce
 Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estão sujeitos às restrições de segurança de acesso a código no .NET Framework para ajudar a limitar o acesso que o código tem a recursos e operações protegidos. Por esse motivo, é importante compreender as implicações de segurança de acesso a código para desenvolver seus aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] adequadamente. Seus aplicativos podem usar o modo Confiança Total ou zonas parciais, como as zonas da Internet e intranet, para limitar o acesso.  
@@ -45,11 +42,11 @@ Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
  As permissões padrão são baseadas no local do qual a versão original do aplicativo foi implantada; as atualizações para o aplicativo herdarão as permissões. Se o aplicativo estiver configurado para verificar se há atualizações de um local na Web ou rede e uma versão mais recente estiver disponível, a instalação original poderá receber permissões para a zona da Internet ou intranet em vez de permissões de confiança total. Para evitar solicitações aos usuários, um administrador de sistema poderá especificar uma política de implantação ClickOnce que defina um editor de aplicativos específico como uma fonte confiável. Para computadores nos quais esta política é implantada, as permissões serão concedidas automaticamente e o usuário não será interpelado. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Para configurar a implantação do aplicativo de confiança, o certificado poderá ser instalado no computador ou em nível corporativo. Para obter mais informações, consulte [como: adicionar um editor confiável para um computador cliente para aplicativos ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Políticas de segurança de acesso a código  
- Permissões para um aplicativo são determinadas pelas configurações de [ \<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) elemento do manifesto do aplicativo. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]gera automaticamente essas informações com base nas configurações do projeto **segurança** página de propriedades. Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é concedido somente as permissões específicas que solicita a ele. Por exemplo, onde o acesso ao arquivo exige permissões de confiança total, se o aplicativo solicitar permissão de acesso a arquivos, ele receberá apenas permissão de acesso a arquivos, não permissões de confiança total. Ao desenvolver seu aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], certifique-se de solicitar apenas as permissões específicas que o aplicativo precisa. Na maioria dos casos, você pode usar zonas da Internet ou intranet local para limitar seu aplicativo à confiança parcial. Para obter mais informações, consulte [como: definir uma zona de segurança para um aplicativo ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Se seu aplicativo exigir permissões personalizadas, você poderá criar uma zona personalizada. Para obter mais informações, consulte [como: definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Permissões para um aplicativo são determinadas pelas configurações de [ \<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) elemento do manifesto do aplicativo. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gera automaticamente essas informações com base nas configurações do projeto **segurança** página de propriedades. Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é concedido somente as permissões específicas que solicita a ele. Por exemplo, onde o acesso ao arquivo exige permissões de confiança total, se o aplicativo solicitar permissão de acesso a arquivos, ele receberá apenas permissão de acesso a arquivos, não permissões de confiança total. Ao desenvolver seu aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], certifique-se de solicitar apenas as permissões específicas que o aplicativo precisa. Na maioria dos casos, você pode usar zonas da Internet ou intranet local para limitar seu aplicativo à confiança parcial. Para obter mais informações, consulte [como: definir uma zona de segurança para um aplicativo ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Se seu aplicativo exigir permissões personalizadas, você poderá criar uma zona personalizada. Para obter mais informações, consulte [como: definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Incluir uma permissão que não faça parte do conjunto de permissões padrão para a zona da qual o aplicativo será implantado fará com que o usuário final seja solicitado a conceder permissão no momento da instalação ou atualização. Para evitar solicitações aos usuários, um administrador de sistema poderá especificar uma política de implantação ClickOnce que defina um editor de aplicativos específico como uma fonte confiável. Em computadores onde esta política é implantada, permissões serão concedidas automaticamente e o usuário não será interpelado.  
   
- Como um desenvolvedor, você é responsável por garantir que seu aplicativo seja executado com as permissões apropriadas. Se o aplicativo solicitar permissões fora de uma zona durante o tempo de execução, uma exceção de segurança poderá aparecer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]permite que você depure seu aplicativo na zona de segurança de destino. e fornece ajuda para o desenvolvimento de aplicativos seguros. Para obter mais informações, consulte [como: depurar um aplicativo ClickOnce com permissões restritas](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Como um desenvolvedor, você é responsável por garantir que seu aplicativo seja executado com as permissões apropriadas. Se o aplicativo solicitar permissões fora de uma zona durante o tempo de execução, uma exceção de segurança poderá aparecer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite que você depure seu aplicativo na zona de segurança de destino. e fornece ajuda para o desenvolvimento de aplicativos seguros. Para obter mais informações, consulte [como: depurar um aplicativo ClickOnce com permissões restritas](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Para obter mais informações sobre a segurança de acesso do código e ClickOnce, consulte [Code Access Security para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
@@ -66,7 +63,7 @@ Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não oferece suporte à autenticação baseada em formulários ASP.NET, pois ela usa cookies persistentes; eles representam um risco à segurança porque residem no cache do Internet Explorer e podem ser violados. Portanto, se você estiver implantando aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], não haverá suporte a qualquer cenário de autenticação além da autenticação do Windows.  
   
 ## <a name="passing-arguments"></a>Passando argumentos  
- Uma consideração adicional sobre segurança ocorrerá se você tiver que passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]os desenvolvedores podem fornecer uma cadeia de caracteres de consulta para aplicativos implantados pela Web. A cadeia de caracteres de consulta assume a forma de uma série de pares nome-valor no fim da URL utilizada para iniciar o aplicativo:  
+ Uma consideração adicional sobre segurança ocorrerá se você tiver que passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os desenvolvedores podem fornecer uma cadeia de caracteres de consulta para aplicativos implantados pela Web. A cadeia de caracteres de consulta assume a forma de uma série de pares nome-valor no fim da URL utilizada para iniciar o aplicativo:  
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   

@@ -1,27 +1,24 @@
 ---
 title: Implantar aplicativos UWP do Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: fda8e9b09fadfb57145331b1fc09acc1687e58e7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP do Visual Studio
   
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/19/2018
   
 -   Implantação de um aplicativo que será depurado quando é iniciado por outro aplicativo ou método.
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Como implantar um aplicativo UWP  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Como implantar um aplicativo UWP  
  Implantar manualmente um aplicativo é simples:  
   
 1.  Se você está implantando para um dispositivo remoto, especifique o nome ou o endereço IP do dispositivo na página de propriedade do projeto de inicialização do aplicativo. (As etapas para fazer isso são listadas a seguir neste tópico.)  
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/19/2018
   
 3.  Sobre o **criar** menu, escolha **implantar**  
   
-##  <a name="BKMK_How_to_specify_a_remote_device"></a>Como especificar um dispositivo remoto  
+##  <a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto  
 
 **Pré-requisitos**  
   
@@ -81,7 +78,7 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
   
  **Especificar o dispositivo remoto em uma página de projeto de JavaScript ou Visual C++**  
   
- ![C &#43; &#43; Propriedades de depuração remota do projeto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43; propriedades para depuração remota do projeto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  Escolha **depurador remoto** do **depurador a iniciar** lista.  
   
@@ -95,7 +92,7 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
   
 2.  Digite o nome de rede do dispositivo remoto no **máquina remota** caixa ou clique em **localizar** para escolher o dispositivo do **Selecionar Conexão de depurador remoto** caixa de diálogo.  
   
-##  <a name="BKMK_Deployment_options"></a>Opções de implantação  
+##  <a name="BKMK_Deployment_options"></a> Opções de implantação  
  Você pode definir as opções de implantação a seguir na página de propriedade de depuração do projeto de inicialização.  
   
  **Permitir Loopback de rede**  

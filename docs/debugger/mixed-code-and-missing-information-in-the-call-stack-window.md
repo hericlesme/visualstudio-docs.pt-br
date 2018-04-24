@@ -1,12 +1,9 @@
 ---
-title: "Misto código e informações ausentes na janela pilha de chamadas | Microsoft Docs"
-ms.custom: 
+title: Misto código e informações ausentes na janela pilha de chamadas | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -23,16 +20,16 @@ helpviewer_keywords:
 - mixed-mode debugging, call stack
 - stepping, out of managed code
 ms.assetid: dd628427-e8d6-4fc2-b524-9d6393ea5376
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a234529f13217cabf59a8d3827427e2f5341fb53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b2733cbf5d9b833ac23ee573e1f39e9c8750224
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Código misto e informações ausentes na janela Pilha de Chamadas
 Devido às diferenças entre as pilhas de chamadas para código gerenciado e nativo, o depurador nem sempre pode mostrar a pilha de chamadas completa quando os tipos de código são misturados. Quando código nativo chama código gerenciado, você pode observar as discrepâncias a seguir no **pilha de chamadas** janela:  

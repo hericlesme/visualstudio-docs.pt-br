@@ -1,13 +1,9 @@
 ---
 title: Exibir os valores do registro no depurador do Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.registers
 dev_langs:
@@ -24,17 +20,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], Registers window
 - Registers window
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7aa89b6e8d36c3eb47168c8672fb7eea1e3507db
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7630ab56ef738febcf80058916272958e267a386
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Exibir valores de registrar e usar a janela registra no depurador do Visual Studio
 A janela de registradores só estará disponível se a depuração de nível de endereço está habilitada no **opções** caixa de diálogo, **depuração** nó **geral** categoria.  

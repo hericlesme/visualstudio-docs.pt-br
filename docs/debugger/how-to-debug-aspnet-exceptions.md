@@ -1,12 +1,9 @@
 ---
-title: "Como: depurar exceções ASP.NET | Microsoft Docs"
-ms.custom: 
+title: 'Como: depurar exceções ASP.NET | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - ASP.NET, exceptions
 - exceptions, ASP.NET
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 82c81f2998497f047550e35397dc870338ed977e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 5923818e93170ded1f857ac20d42cd6134aed5d3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Como depurar exceções do ASP.NET
 Exceções de depuração é uma parte importante do desenvolvimento de um robusto [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativo. Informações gerais sobre como depurar exceções estão no [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md).  

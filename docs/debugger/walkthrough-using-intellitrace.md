@@ -1,32 +1,27 @@
 ---
 title: Exibir eventos com o IntelliTrace | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc3067ea154c8b9a5f6e180f397c5421f2be470
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 3fd43297dcf6a15e7d064809a5c4b5091f51ac63
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Exibir eventos com o IntelliTrace no Visual Studio
 Você pode usar o IntelliTrace para coletar informações sobre eventos específicos ou as categorias de eventos ou chamadas de função individuais além de eventos. Os procedimentos a seguir mostram como fazer isso.  
   
  Você pode usar o IntelliTrace na edição Enterprise do Visual Studio, mas não nas edições Professional ou da comunidade.  
   
-##  <a name="GettingStarted"></a>Configurar o Intellitrace  
+##  <a name="GettingStarted"></a> Configurar o Intellitrace  
  Você pode tentar a depuração com apenas eventos do IntelliTrace. Os eventos do IntelliTrace são eventos do depurador, exceções, eventos do .NET Framework e outros eventos do sistema. Você deve ativar ou desativar eventos específicos para controlar os eventos que registros do IntelliTrace antes de iniciar a depuração. Para obter mais informações, consulte [funcionalidades do IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Ative o evento do IntelliTrace para acesso a arquivos. Vá para o **Ferramentas > Opções > IntelliTrace > eventos do IntelliTrace** página e, em seguida, expanda o **arquivo** categoria. Verifique o **arquivo** categoria de evento. Isso faz com que todos os arquivos eventos (acessar, fechar, excluir) a ser verificada.
@@ -74,7 +69,7 @@ Você pode usar o IntelliTrace para coletar informações sobre eventos específ
   
      Captura de tela a seguir é do Visual Studio 2015 atualização 1.  
   
-     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")  
+     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1 SingleEvent")  
   
      Você pode escolher o link de pathname para abrir o arquivo. Se o nome de caminho completo não estiver disponível, o **abrir arquivo** caixa de diálogo é exibida.  
   
@@ -82,7 +77,7 @@ Você pode usar o IntelliTrace para coletar informações sobre eventos específ
   
      Captura de tela a seguir é do Visual Studio 2015 atualização 1.  
   
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging Update1")  
   
 4.  Se você não encontrou o bug, tente examinar outros eventos que levam ao bug. Você também pode ter informações de registro de chamadas do IntelliTrace para que você possa percorrer chamadas de função. 
   
