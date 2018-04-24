@@ -194,4 +194,6 @@
 ##### [Tarefa UidManager](uidmanager-task.md)
 ##### [Tarefa UpdateManifestForBrowserApplication](updatemanifestforbrowserapplication-task.md)
 ### [Caracteres especiais para escape](special-characters-to-escape.md)
+## [Usando o MSBuild programaticamente](msbuild-api.md)
+### [Atualizando para o MSBuild 15](updating-an-existing-application.md)
 ## [Glossário do MSBuild](msbuild-glossary.md)

@@ -2,28 +2,23 @@
 title: Personalizado (Debug Interface Access SDK) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Custom symbol
 ms.assetid: a219fc83-d2a8-4bc5-b7e1-bfafeb247f16
-caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e367a96bd24840e734ada21d45ee35dfaee36b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 11d6cff8865fa0e19611399b4c2f4bf7e60f6bf1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Custom (SDK de Acesso à Interface de Depuração)
 Alguns compiladores introduzem símbolos que não são identificados por qualquer um dos tipos de símbolo lexical padrão. Esses símbolos são identificados por um `SymTagCustom` marca.  
