@@ -1,28 +1,23 @@
 ---
-title: Selecionar um ambiente para um projeto | Microsoft Docs
+title: Seleção de um ambiente para um projeto
 description: No Gerenciador de Soluções do Visual Studio, você pode atribuir um interpretador do Python específico (ambiente) a ser usado para qualquer projeto, ignorando o ambiente padrão. Você também pode criar e gerenciar ambientes virtuais.
-ms.custom: ''
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 28070c9864162c7af5c68644dedb296107af81d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Selecionar um interpretador e ambiente Python para uso em um projeto
+# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Selecionar um intérprete e ambiente Python para uso em um projeto
 
 Todo o código em um projeto do Python é executado dentro do contexto de um ambiente específico. O Visual Studio também utiliza esse ambiente para depuração, preenchimentos de importação e membro, verificação de sintaxe e todas as outras tarefas que exigem um ambiente.
 
@@ -50,7 +45,7 @@ O menu de contexto no nó **Ambientes do Python** também fornece comandos adici
 
 ## <a name="using-virtual-environments"></a>Usar ambientes virtuais
 
-Um ambiente virtual é uma combinação exclusiva de um interpretador Python específico e um conjunto específico de bibliotecas diferente de outros ambientes conda e globais. Um ambiente virtual é específico a um projeto e é mantido em uma pasta do projeto. Essa pasta contém as bibliotecas instaladas do ambiente, bem como um arquivo `pyvenv.cfg` que especifica o caminho do *interpretador de base* do ambiente em outro lugar no sistema de arquivos. Ou seja, um ambiente virtual não contém uma cópia do interpretador, apenas um link para ele. 
+Um ambiente virtual é uma combinação exclusiva de um intérprete Python específico e um conjunto específico de bibliotecas diferente de outros ambientes conda e globais. Um ambiente virtual é específico a um projeto e é mantido em uma pasta do projeto. Essa pasta contém as bibliotecas instaladas do ambiente, bem como um arquivo `pyvenv.cfg` que especifica o caminho do *interpretador de base* do ambiente em outro lugar no sistema de arquivos. Ou seja, um ambiente virtual não contém uma cópia do interpretador, apenas um link para ele. 
 
 Um benefício de usar um ambiente virtual é que, à medida que você desenvolve um projeto ao longo do tempo, o ambiente virtual sempre reflete as dependências exatas do projeto. Um ambiente compartilhado global, por outro lado, contém qualquer número de bibliotecas, não importa se você as usa no projeto ou não. É possível criar facilmente um arquivo `requirements.txt` pelo ambiente virtual, que é usado para reinstalar essas dependências em outro computador de desenvolvimento ou produção. Para saber mais, veja [Gerenciar pacotes necessários com requirements.txt](managing-required-packages-with-requirements-txt.md).
 
@@ -111,7 +106,7 @@ No Gerenciador de Soluções, expanda qualquer nó de um ambiente específico pa
 
 Para instalar novos pacotes, clique com o botão direito no ambiente e selecione **Instalar Pacote da Python...** para alternar para a guia **Pacotes** na janela **Ambientes de Python**. Insira uma termo de pesquisa (geralmente o nome do pacote) e o Visual Studio exibirá os pacotes correspondentes.
 
-No Visual Studio, os pacotes (e as dependências) são baixados no [PyPI (Índice do Pacote do Python)](https://pypi.python.org/pypi), no qual você também pode pesquisar os pacotes disponíveis. A barra de status e a janela de saída do Visual Studio mostram informações sobre a instalação. Para desinstalar um pacote, clique com o botão direito do mouse nele e selecione **Remover**.
+No Visual Studio, os pacotes (e as dependências) são baixados no [PyPI (Índice do Pacote do Python)](https://pypi.org), no qual você também pode pesquisar os pacotes disponíveis. A barra de status e a janela de saída do Visual Studio mostram informações sobre a instalação. Para desinstalar um pacote, clique com o botão direito do mouse nele e selecione **Remover**.
 
 Saiba que as entradas exibidas podem não ser precisas e a instalação e desinstalação podem não ser confiáveis nem estar disponíveis. O Visual Studio usa o gerenciador de pacotes do PIP, se disponível, e o baixa e o instala quando necessário. O Visual Studio também pode usar o gerenciador de pacotes easy_install. Os pacotes instalados usando `pip` ou `easy_install` por meio da linha de comando também são exibidos.
 

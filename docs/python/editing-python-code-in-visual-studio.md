@@ -1,27 +1,21 @@
 ---
-title: Como editar código do Python | Microsoft Docs
+title: Editando o código do Python
 description: A edição de Python no Visual Studio fornece recursos de IntelliSense, trechos de código e navegação, juntamente com formatação, lint e refatoração.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e9d5a3b18e7193786ea2b6d0bf2dfb038828e78
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="editing-python-code"></a>Editando o código do Python
 
@@ -97,7 +91,7 @@ Ao escrever o código que chama uma função, a ajuda da assinatura é exibida q
 
 Focalizar o ponteiro do mouse em um identificador exibe uma dica de ferramenta Informações Rápidas. Dependendo do identificador, Informações Rápidas poderá exibir os possíveis valores ou tipos, toda a documentação disponível, tipos de retorno e localizações de definição:
 
-![Informações rápidas](media/code-editing-quick-info.png)
+![Informação Rápida](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Coloração de código
 

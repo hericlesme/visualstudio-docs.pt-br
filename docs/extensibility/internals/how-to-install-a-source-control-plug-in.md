@@ -37,7 +37,7 @@ Criar um controle de fonte de plug-in envolve três etapas:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Para registrar a fonte de DLL de plug-in de controle  
   
-1.  Adicione duas entradas na chave HKEY_LOCAL_MACHINE na subchave SOFTWARE que especifica a subchave do nome da empresa seguido a subchave de nome de produto. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\\*[nome da empresa]*\\*[nome do produto]*\\*[entrada]* = valor. As duas entradas sempre são chamadas SCCServerName e SCCServerPath. Cada um é uma cadeia de caracteres regular.  
+1.  Adicione duas entradas na chave HKEY_LOCAL_MACHINE na subchave SOFTWARE que especifica a subchave do nome da empresa seguido a subchave de nome de produto. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nome da empresa]*\\ *[nome do produto]*\\ *[entrada]* = valor. As duas entradas sempre são chamadas SCCServerName e SCCServerPath. Cada um é uma cadeia de caracteres regular.  
   
      Por exemplo, se o nome da empresa é a Microsoft e seu produto de controle de origem é chamado SourceSafe, esse caminho de registro será HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe. Essa subchave, a primeira entrada, SCCServerName, é uma cadeia de caracteres legíveis pelo usuário nomear seu produto. A segunda entrada, SCCServerPath, é o caminho completo para a fonte de controlar a DLL de plug-in que o IDE deve se conectar. O exemplo a seguir fornece exemplos de entradas do registro:  
   
@@ -66,7 +66,7 @@ Criar um controle de fonte de plug-in envolve três etapas:
   
 3.  Adicione a subchave SourceCodeControlProvider, sob a chave HKEY_LOCAL_MACHINE na subchave do SOFTWARE.  
   
-     Essa subchave, a entrada do registro ProviderRegKey é definido como uma cadeia de caracteres que representa a subchave que você colocou no registro na etapa 1. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = SOFTWARE\\*[nome da empresa]*\\*[nome do produto]*.  
+     Essa subchave, a entrada do registro ProviderRegKey é definido como uma cadeia de caracteres que representa a subchave que você colocou no registro na etapa 1. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = SOFTWARE\\ *[nome da empresa]*\\ *[nome do produto]*.  
   
      A seguir está o conteúdo de exemplo para essa subchave.  
   
@@ -79,7 +79,7 @@ Criar um controle de fonte de plug-in envolve três etapas:
   
 4.  Crie uma subchave denominada InstalledSCCProviders sob a subchave SourceCodeControlProvider e, em seguida, coloque uma entrada que subchave.  
   
-     O nome desta entrada é o nome legível do usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor é, uma vez, a subchave criada na etapa 1. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\*[nome de exibição]* = SOFTWARE\\*[nome da empresa]* \\ *[nome do produto]*.  
+     O nome desta entrada é o nome legível do usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor é, uma vez, a subchave criada na etapa 1. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[nome de exibição]* = SOFTWARE\\ *[nome da empresa]* \\ *[nome do produto]*.  
   
      Por exemplo:  
   
@@ -102,7 +102,7 @@ Criar um controle de fonte de plug-in envolve três etapas:
 > [!NOTE]
 >  O IDE não carregar DLLs de caminhos relativos (por exemplo,.\NewProvider.DLL). Especifique um caminho completo para a DLL (por exemplo, c:\Providers\NewProvider.DLL). Isso aumenta a segurança do IDE, impedindo que o carregamento de DLLs de plug-in não autorizados ou representadas.  
   
- Para localizar a DLL da segunda forma, o IDE procura na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders para todas as entradas*.* Cada entrada tem um nome e um valor. O IDE exibe uma lista desses nomes para o usuário*.* Quando o usuário escolhe um nome, o IDE localiza o valor para o nome selecionado que aponta para uma subchave. O IDE procurará uma entrada de chamada SccServerPath nessa subchave em HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL correta.  
+ Para localizar a DLL da segunda forma, o IDE procura na subchave HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders para todas as entradas *.* Cada entrada tem um nome e um valor. O IDE exibe uma lista desses nomes para o usuário *.* Quando o usuário escolhe um nome, o IDE localiza o valor para o nome selecionado que aponta para uma subchave. O IDE procurará uma entrada de chamada SccServerPath nessa subchave em HKEY_LOCAL_MACHINE. O valor desta entrada aponta o IDE para a DLL correta.  
   
  Um plug-in de controle de origem precisa dar suporte a ambas as maneiras de localizar a DLL e, consequentemente, defina ProviderRegKey, substituindo qualquer configuração anterior. Mais importante, ele deve adicionar próprio à lista de InstalledSccProviders para que o usuário pode ter uma escolha de qual plug-in de controle de origem a ser usado.  
   

@@ -143,7 +143,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  No **modelos** painel, escolha o **lista** modelo, altere o nome para **pacientes**e, em seguida, escolha o **adicionar** botão.  
   
-5.  Deixe o **personalizar a lista com base em** definindo como **padrão (em branco)**e, em seguida, escolha o **concluir** botão.  
+5.  Deixe o **personalizar a lista com base em** definindo como **padrão (em branco)** e, em seguida, escolha o **concluir** botão.  
   
 6.  No Designer de lista, escolha o **tipos de conteúdo** botão para exibir o **configurações de tipo de conteúdo** caixa de diálogo.  
   

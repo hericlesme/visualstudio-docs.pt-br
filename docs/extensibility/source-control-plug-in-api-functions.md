@@ -85,7 +85,7 @@ A API de plug-in de controle de origem contém as seguintes funções, que devem
 ## <a name="requirements"></a>Requisitos  
  Cabeçalho: scc.h  
   
- (Fornecido no SDK do ambiente comum inclui pasta, por padrão *[unidade]*\Program Files\VSIP 8.0\EnvSDK\common\inc; também é fornecido na pasta com o exemplo de MSSCCI VSIP *[unidade]*\Program Files\VSIP 8.0\MSSCCI).  
+ (Fornecido no SDK do ambiente comum inclui pasta, por padrão *[unidade]* \Program Files\VSIP 8.0\EnvSDK\common\inc; também é fornecido na pasta com o exemplo de MSSCCI VSIP *[unidade]* \Program Files\VSIP 8.0\MSSCCI).  
   
 ## <a name="see-also"></a>Consulte também  
  [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)   

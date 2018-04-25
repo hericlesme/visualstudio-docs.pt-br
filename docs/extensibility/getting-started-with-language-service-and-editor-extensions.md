@@ -66,7 +66,7 @@ Você pode usar extensões de editor para adicionar recursos de serviço de ling
 ## <a name="running-extensions-in-the-experimental-instance"></a>Extensões em execução na instância Experimental  
  Você pode proteger a sua versão de trabalho do Visual Studio enquanto estiver desenvolvendo uma extensão, implantando-a na seguinte pasta experimental (no Windows Vista e Windows 7):  
   
- *% LOCALAPPDATA %*\VisualStudio\10.0Exp\Extensions\\*empresa*\\*ExtensionID*  
+ *% LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*empresa*\\*ExtensionID*  
   
  onde *% LOCALAPPDATA %* é o nome do usuário conectado, *empresa* é o nome da empresa que possui a extensão, e *ExtensionID* é a ID da extensão.  
   

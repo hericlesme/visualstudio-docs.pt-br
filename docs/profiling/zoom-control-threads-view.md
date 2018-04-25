@@ -1,29 +1,24 @@
 ---
-title: "Controle de zoom (exibição de threads) | Microsoft Docs"
-ms.custom: 
+title: Controle de zoom (exibição de threads) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
 helpviewer_keywords:
 - Concurrency Visualizer, Zoom Control (Threads View)
 ms.assetid: 7f9bda07-53a8-4f11-9846-a3e31064c596
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9d240defd8788408a585d5ff33b2561e517027
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5d9a0392e13c74f36b3a9d30610cc101d3c078f9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="zoom-control-threads-view"></a>Controle de zoom (exibição de threads)
 O controle de zoom é um controle deslizante que ajuda você a ampliar e reduzir a linha do tempo para que seja possível focar áreas de interesse específico. Uma vez que esse controle amplia o centro da exibição da linha do tempo, centralize a área de interesse antes de ampliá-la.  

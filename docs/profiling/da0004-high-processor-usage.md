@@ -1,28 +1,25 @@
 ---
 title: 'DA0004: alto uso de processador | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAHighProcessorUsage
 - vs.performance.rules.DA0004
 - vs.performance.DA0004
 - vs.performance.4
 ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2612be6fd6980b6134c283ae0f6e6edf4155c955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dab522c19971e734e5a42f607d99f38f8e44930d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: uso do processador elevado
 |||  
@@ -42,4 +39,4 @@ ms.lasthandoff: 12/22/2017
  Durante essa execução de criação de perfil, os processadores estavam consistentemente muito ocupados. A alta utilização da CPU pode indicar um aplicativo associado à CPU. Geralmente, perfis instrumentados não são a maneira mais eficiente de investigar cenários de uso da CPU. Em geral, a amostragem é mais eficaz quando você está criando o perfil de aplicativos que gastam muito tempo para executar instruções no processador.  
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Considere uma nova criação de perfil do aplicativo usando o método de amostragem em vez do método de instrumentação, a menos que você precise de tempos de função ou esteja mais interessado em entender a entrada/saída do que os afunilamentos do processador.
+ Considere uma nova criação de perfil do aplicativo usando o método de amostragem em vez do método de instrumentação, a menos que você precise de tempos de função ou esteja mais interessado em entender a entrada/saída do que os gargalos do processador.

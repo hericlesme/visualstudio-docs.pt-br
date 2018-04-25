@@ -1,25 +1,21 @@
 ---
-title: "Como limitar a instrumentação a DLLs específicas | Microsoft Docs"
-ms.custom: 
+title: Como limitar a instrumentação a DLLs específicas | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 971cf339139302502fa8b25ffa1bd6e916456a18
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 6ca2c966c395edf189cbab04c20cdb77c6b0e4e3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
 
@@ -37,7 +33,7 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 
 5. Clique em **Concluir** para sair do assistente e exibir a nova sessão de desempenho na janela **Gerenciador de Desempenho**.
 
-6. Clique com o botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Projeto de Destino**.
+6. Clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Projeto de Destino**.
 
 7. Na lista **Adicionar Projeto de Destino**, selecione o projeto executável que você deseja usar para exercer a DLL.
 
@@ -67,12 +63,12 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 
 6. Clique em **Concluir** para sair do assistente e exibir a nova sessão de desempenho na janela **Gerenciador de Desempenho**.
 
-7. Opcional. Para adicionar mais arquivos .dll, clique com o botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Selecione os arquivos na caixa de diálogo **Adicionar Binário de Destino**.
+7. Opcional. Para adicionar mais arquivos .dll, clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Selecione os arquivos na caixa de diálogo **Adicionar Binário de Destino**.
 
     > [!NOTE]
     > Não especifique o arquivo executável (.exe) que exerce as DLLs.
 
 ## <a name="see-also"></a>Consulte também
 
-[Controlar a coleta de dados](../profiling/controlling-data-collection.md)  
+[Controlando a coleta de dados](../profiling/controlling-data-collection.md)  
 [Como limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

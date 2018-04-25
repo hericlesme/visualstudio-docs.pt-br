@@ -1,16 +1,15 @@
 ---
-title: "Passo a passo – Incluindo um pacote NuGet no seu projeto | Microsoft Docs"
-description: "Este documento aborda como incluir um pacote NuGet em um projeto Xamarin. Ele explica a descoberta e download de um pacote, apresentando também os recursos de integração do IDE."
+title: Passo a passo – Incluindo um pacote NuGet no projeto
+description: Este documento aborda como incluir um pacote NuGet em um projeto Xamarin. Ele explica a descoberta e download de um pacote, apresentando também os recursos de integração do IDE.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: cb927b14e3637edd7e16c78fbed01fa4e9522652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>Incluindo um pacote NuGet no projeto
 

@@ -68,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  
-|(Padrão)|REG_SZ|texto|O valor padrão pode ser usado para o nome do idioma do documento. O nome dessa chave é um GUID de um avaliador de expressão que tem uma entrada correspondente em  *\<VS Reg raiz >*\AD7Metrics\Expression avaliador.|  
+|(Padrão)|REG_SZ|texto|O valor padrão pode ser usado para o nome do idioma do documento. O nome dessa chave é um GUID de um avaliador de expressão que tem uma entrada correspondente em  *\<VS Reg raiz >* \AD7Metrics\Expression avaliador.|  
   
 ### <a name="example"></a>Exemplo  
   
@@ -159,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>Entradas do registro para opções de modo de exibição lógico  
- O *VS Reg raiz*\Editors\\*Editor GUI >*\LogicalViews chave pode conter os seguintes valores.  
+ O *VS Reg raiz*\Editors\\*Editor GUI >* \LogicalViews chave pode conter os seguintes valores.  
   
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  

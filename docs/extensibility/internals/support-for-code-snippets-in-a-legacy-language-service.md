@@ -52,7 +52,7 @@ Um trecho de código é um trecho de código é inserido no arquivo de origem. O
   
  Geralmente, há dois locais onde são armazenados os arquivos de modelo de trecho de código: 1) em que o idioma foi instalado e 2) na pasta do usuário. Esses locais são adicionados ao registro até que o Visual Studio **Gerenciador de trechos de código** pode localizar os trechos de código. A pasta do usuário é onde os trechos de código criados pelo usuário são armazenados.  
   
- O layout de pasta comum para os arquivos de modelo de trecho de código instalado tem esta aparência: *[Raiz_da_instalação]*\\*[TestLanguage]*\snippets.\\*[LCID]*\Snippets.  
+ O layout de pasta comum para os arquivos de modelo de trecho de código instalado tem esta aparência: *[Raiz_da_instalação]*\\ *[TestLanguage]* \snippets.\\ *[LCID]* \Snippets.  
   
  *[Raiz_da_instalação]*  é a pasta de instalação no seu idioma.  
   
@@ -60,7 +60,7 @@ Um trecho de código é um trecho de código é inserido no arquivo de origem. O
   
  *[LCID]*  é a ID de localidade. Isso é que as versões localizadas de como os trechos de código são armazenados. Por exemplo, a ID de localidade para o inglês é 1033, portanto *[LCID]* é substituído pelo 1033.  
   
- Um arquivo adicional deve ser fornecido e que é um arquivo de índice, geralmente chamado SnippetsIndex.xml ou ExpansionsIndex.xml (você pode usar qualquer nome de arquivo válido que termina em. xml). Esse arquivo é normalmente armazenado na *[Raiz_da_instalação]*\\*[TestLanguage]* pasta e especifica o local exato da pasta de trechos de código, bem como a ID de idioma e o GUID do idioma serviço que usa os trechos de código. O caminho exato do arquivo de índice é colocado no registro, conforme descrito posteriormente em "Instalar as entradas do Registro". Aqui está um exemplo de um arquivo SnippetsIndex.xml:  
+ Um arquivo adicional deve ser fornecido e que é um arquivo de índice, geralmente chamado SnippetsIndex.xml ou ExpansionsIndex.xml (você pode usar qualquer nome de arquivo válido que termina em. xml). Esse arquivo é normalmente armazenado na *[Raiz_da_instalação]*\\ *[TestLanguage]* pasta e especifica o local exato da pasta de trechos de código, bem como a ID de idioma e o GUID do idioma serviço que usa os trechos de código. O caminho exato do arquivo de índice é colocado no registro, conforme descrito posteriormente em "Instalar as entradas do Registro". Aqui está um exemplo de um arquivo SnippetsIndex.xml:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +81,7 @@ Um trecho de código é um trecho de código é inserido no arquivo de origem. O
   
  Este exemplo supõe que você instalou o serviço de idioma na pasta de instalação do Visual Studio. O LCID % é substituído por ID de localidade atual do usuário Vários \<SnippetDir > marcas podem ser adicionados, uma para cada diretório diferente e a localidade. Além disso, uma pasta de trecho de código pode conter subpastas, cada um deles é identificada no arquivo de índice com o \<SnippetSubDir > marca inserida em um \<SnippetDir > marca.  
   
- Os usuários também podem criar seus próprios trechos de código para o seu idioma. Eles normalmente são armazenados na pasta de configurações do usuário, por exemplo *[TestDocs]*\Code trechos\\*[TestLanguage]*\Test trechos de código, onde *[TestDocs]* é o local da pasta de configurações do usuário para o Visual Studio.  
+ Os usuários também podem criar seus próprios trechos de código para o seu idioma. Eles normalmente são armazenados na pasta de configurações do usuário, por exemplo *[TestDocs]* \Code trechos\\ *[TestLanguage]* \Test trechos de código, onde *[TestDocs]* é o local da pasta de configurações do usuário para o Visual Studio.  
   
  Os seguintes elementos de substituição podem ser colocados no caminho armazenado no \<DirPath > marca no arquivo de índice.  
   
@@ -91,7 +91,7 @@ Um trecho de código é um trecho de código é inserido no arquivo de origem. O
 |Raiz_da_instalação %|Pasta de instalação raiz para o Visual Studio, por exemplo, C:\Program Files\Microsoft Visual Studio 8.|  
 |% ProjDir %|Pasta que contém o projeto atual.|  
 |% ProjItem %|Pasta que contém o item de projeto atual.|  
-|% TestDocs %|Na pasta de configurações do usuário, por exemplo, C:\Documents and Settings\\*[username]*Documents\Visual Studio\8.|  
+|% TestDocs %|Na pasta de configurações do usuário, por exemplo, C:\Documents and Settings\\ *[username]* Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Habilitando trechos de código para seu serviço de linguagem  
  Você pode ativar o trechos de código para o serviço de linguagem, adicionando o <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> de atributo para o VSPackage (consulte [registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obter detalhes). O <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> e <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parâmetros são opcionais, mas você deve incluir o `SearchPaths` parâmetro nomeado para informar o **Gerenciador de trechos de código** do local de trechos de código.  

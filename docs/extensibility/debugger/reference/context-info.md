@@ -52,7 +52,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>Membros  
  dwFields  
- Uma combinação de sinalizadores de ele [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeração que especifica quais campos são preenchidos**.**  
+ Uma combinação de sinalizadores de ele [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeração que especifica quais campos são preenchidos **.**  
   
  bstrModuleUrl  
  O nome do módulo onde se encontra o contexto.  

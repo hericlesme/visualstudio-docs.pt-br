@@ -63,7 +63,7 @@ Você pode criar um arquivo. VSCT baseado em XML de um arquivo de origem do coma
   
 1.  Obtenha uma cópia da linguagem Perl.  
   
-2.  Obtenha uma cópia do script Perl ConvertCTCToVSCT.pl, geralmente localizada no  *\<caminho de instalação do SDK do Visual Studio >*\VisualStudioIntegration\Tools\bin pasta.  
+2.  Obtenha uma cópia do script Perl ConvertCTCToVSCT.pl, geralmente localizada no  *\<caminho de instalação do SDK do Visual Studio >* \VisualStudioIntegration\Tools\bin pasta.  
   
 3.  Obtenha uma cópia do arquivo de origem .ctc que você deseja converter.  
   
@@ -98,7 +98,7 @@ Você pode criar um arquivo. VSCT baseado em XML de um arquivo binário .cto exi
   
 3.  No Visual Studio Prompt de comando, vá para o diretório que contém os arquivos .cto e .ctsym.  
   
-4.  Tipo **vsct.exe** *ctofilename * .cto** * vsctfilename***. VSCT -S***symfilename ***.ctsym**.  
+4.  Tipo **vsct.exe** *ctofilename * .cto** * vsctfilename ***. VSCT -S***symfilename ***.ctsym**.  
   
      `ctofilename` é o nome do arquivo .cto, `vsctfilename` é o nome do arquivo vsct para criar, e `symfilename` é o nome do arquivo .ctsym.  
   

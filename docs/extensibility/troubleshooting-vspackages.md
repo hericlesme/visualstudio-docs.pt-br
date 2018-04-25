@@ -68,7 +68,7 @@ Estes são problemas comuns que você pode ter com o VSPackage e dicas para reso
   
     1.  Encontre o CLSID do VSPackage na seção de pacotes do registro:  
   
-         Studio HKLM\Software\Microsoft\Visual\\*\<versão >*\Packages  
+         Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \Packages  
   
     2.  Verifique se o caminho fornecido pelo subchave SatelliteDll está correto.  
   
@@ -121,7 +121,7 @@ Estes são problemas comuns que você pode ter com o VSPackage e dicas para reso
   
 2.  Para código não gerenciado, localize o CLSID do VSPackage no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nó de registro CLSID:  
   
-     Studio HKLM\Software\Microsoft\Visual\\*\<versão >*\CLSID  
+     Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \CLSID  
   
  Certifique-se de que a entrada InprocServer32 tem o caminho correto da dll VSPackage.  
   

@@ -28,7 +28,7 @@ Para proteger seu ambiente de desenvolvimento do Visual Studio de aplicativos n�
   
  Se você deseja iniciar a instância experimental do Visual Studio fora de uma solução específica, execute o seguinte comando na janela de comando:  
   
- "*\<Caminho de instalação do visual studio >*\Common7\IDE\devenv.exe" RootSuffix Exp  
+ "*\<Caminho de instalação do visual studio >* \Common7\IDE\devenv.exe" RootSuffix Exp  
   
 > [!NOTE]
 >  A instância experimental é gravada no registro sob o `<version number>Exp` e `<version number>Exp_Config` nós. Por exemplo é a área de registro experimental do Visual Studio 2015  

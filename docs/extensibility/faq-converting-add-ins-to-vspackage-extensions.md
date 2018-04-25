@@ -67,7 +67,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
 1.  Criar VSPackage que possui um comando de menu. (Para obter mais informações, consulte [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  *\<o nome do projeto >*Package.cs.)  
+2.  Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  *\<o nome do projeto >* Package.cs.)  
   
 3.  Inclua as seguintes instruções `using` no arquivo:  
   
@@ -129,7 +129,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Obter o objeto DTE de um VSPackage  
   
-1.  Em um projeto do VSIX com um modelo de item de pacote do Visual Studio, procure o  *\<nome do projeto >*Package.cs arquivo. Essa é a classe derivada de <xref:Microsoft.VisualStudio.Shell.Package>; poderá ajudar a interagir com o Visual Studio. Nesse caso, use o <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> para obter o objeto <xref:EnvDTE80.DTE2>.  
+1.  Em um projeto do VSIX com um modelo de item de pacote do Visual Studio, procure o  *\<nome do projeto >* Package.cs arquivo. Essa é a classe derivada de <xref:Microsoft.VisualStudio.Shell.Package>; poderá ajudar a interagir com o Visual Studio. Nesse caso, use o <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> para obter o objeto <xref:EnvDTE80.DTE2>.  
   
 2.  Inclua estas instruções `using`:  
   
@@ -161,7 +161,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
 1.  Criar um VSPackage que tem um comando de menu, como no [como começar a desenvolver extensões VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) seção.  
   
-2.  Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  *\<o nome do projeto >*Package.cs.)  
+2.  Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  *\<o nome do projeto >* Package.cs.)  
   
 3.  Inclua estas instruções `using`:  
   
@@ -209,7 +209,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
 1.  Criar um VSPackage que tem um comando de menu, como no [como começar a desenvolver extensões VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) seção.  
   
-2.  Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  *\<o nome do projeto >*Package.cs.)  
+2.  Abra o arquivo que contém a definição do VSPackage. (Em um projeto c#, ele tem  *\<o nome do projeto >* Package.cs.)  
   
 3.  Inclua estas instruções `using`:  
   

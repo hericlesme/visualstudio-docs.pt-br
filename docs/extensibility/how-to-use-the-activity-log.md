@@ -48,7 +48,7 @@ VSPackages pode gravar mensagens no log de atividade. Esse recurso é especialme
   
 1.  Execute o Visual Studio com o [/Log](../ide/reference/log-devenv-exe.md) opção de linha de comando para gravar ActivityLog.xml no disco durante a sessão.
 
-2.  Depois de fechar o Visual Studio, localizar o log de atividades na subpasta para dados do Visual Studio: *% AppData %*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
+2.  Depois de fechar o Visual Studio, localizar o log de atividades na subpasta para dados do Visual Studio: *% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
 3.  Abra o log de atividades com qualquer editor de texto. Aqui está uma entrada típica:  
   

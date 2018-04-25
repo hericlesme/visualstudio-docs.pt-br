@@ -420,7 +420,7 @@ HRESULT EnumMetricSections(
 |*[exceção]*|Um nome para uma exceção: por exemplo, **com_error** ou **Control-Break**. Esses nomes também são usados para identificar uma exceção em particular para o usuário.|  
   
 ## <a name="requirements"></a>Requisitos  
- Esses arquivos estão localizados no [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] diretório de instalação do SDK (por padrão, *[unidade]*\Program Files\Microsoft SDK do Visual Studio 2010\\).  
+ Esses arquivos estão localizados no [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] diretório de instalação do SDK (por padrão, *[unidade]* \Program Files\Microsoft SDK do Visual Studio 2010\\).  
   
  Cabeçalho: includes\dbgmetric.h  
   

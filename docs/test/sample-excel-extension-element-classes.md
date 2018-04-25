@@ -1,18 +1,18 @@
 ---
-title: "Extensão do Excel de amostra: classes de elemento | Microsoft Docs"
+title: 'Extensão do Excel de amostra: classes de elemento | Microsoft Docs'
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91f3e3055d2ba98052ec2fd368db9aea08b81971
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1dce9745db1acf031c67d5221f6a176d94fb6f77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>Extensão do Excel de amostra: classes de elemento
 A extensão usa classes derivadas de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> e representam o controle de Planilha e o controle de Célula no [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].
@@ -44,7 +44,7 @@ A extensão usa classes derivadas de <xref:Microsoft.VisualStudio.TestTools.UITe
 ## <a name="utilities-and-excelutilities-classes"></a>Classes Utilities e ExcelUtilities
  A classe `ExcelUtilities` interna fornece alguns valores de constantes, tal como o nome da tecnologia e um método que determina se o identificador de janela fornecido representa uma planilha do Excel.
 
- A classe `Utilities` tem métodos auxiliares que retornam uma variedade de informações sobre a interface do usuário. Alguns métodos usam chamadas diretas em DLLs do sistema externo, como **USER32.DLL** e **OLEACC.DLL**, para obter os identificadores de janela da interface do usuário**.**
+ A classe `Utilities` tem métodos auxiliares que retornam uma variedade de informações sobre a interface do usuário. Alguns métodos usam chamadas diretas em DLLs do sistema externo, como **USER32.DLL** e **OLEACC.DLL**, para obter os identificadores de janela da interface do usuário **.**
 
 ## <a name="see-also"></a>Consulte também
 

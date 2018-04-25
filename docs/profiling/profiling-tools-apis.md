@@ -1,23 +1,20 @@
 ---
-title: "APIs de Ferramentas de Criação de Perfil | Microsoft Docs"
-ms.custom: 
+title: APIs de Ferramentas de Criação de Perfil | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b02eecfaaecb365519daa8cd59fd29252bc3340f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b759d5ac7f86fe366a5a0394b4c288904ef5c589
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="profiling-tools-apis"></a>APIs de ferramentas de criação de perfil
 Você pode inserir métodos gerenciados ou nativos das APIs das ferramentas de criação de perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para controlar a coleta de dados em uma execução de geração de perfil. Esta seção descreve os métodos das APIs e descreve como usá-los.  

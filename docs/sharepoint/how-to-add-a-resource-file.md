@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  No **adicionar recurso** caixa de diálogo caixa, escolha uma cultura para o arquivo de recurso, como o inglês (Estados Unidos).  
   
-     Esta etapa adiciona um arquivo de recurso global para sua solução no formato, recurso * x***.*** cultura ***.** resx, como Resource1.en-us.  
+     Esta etapa adiciona um arquivo de recurso global para sua solução no formato, recurso * x ***.*** cultura ***.** resx, como Resource1.en-us.  
   
 5.  Quando o **Editor de recurso** abre no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adicionar recursos para o arquivo de recurso.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Em **Solution Explorer**, abra o menu de atalho para o nome de um recurso sob o **recursos** nó e, em seguida, escolha **adicionar recurso do recurso**.  
   
-     Esta etapa adiciona um arquivo de recurso para o recurso no formato, * ResourceFileName***.*** cultura ***.** resx, como Feature1.en-us.  
+     Esta etapa adiciona um arquivo de recurso para o recurso no formato, * ResourceFileName ***.*** cultura ***.** resx, como Feature1.en-us.  
   
 3.  Quando o **Editor de recurso** abre no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], adicionar recursos para o arquivo de recurso.  
   

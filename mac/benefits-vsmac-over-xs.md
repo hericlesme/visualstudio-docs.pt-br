@@ -1,18 +1,19 @@
 ---
-title: "Benefícios do Visual Studio para Mac em relação ao Xamarin Studio | Microsoft Docs"
+title: Benefícios do Visual Studio para Mac em relação ao Xamarin Studio
+description: ''
+ms.topic: overview
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: 08e693e92d6d07da21f8230f9c1de49f071c05e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Benefícios do Visual Studio para Mac em relação ao Xamarin Studio 
- 
+
 O Visual Studio para Mac substituiu o Xamarin Studio como um IDE completo no Mac. Ele fornece recursos que permitem desenvolver aplicativos Web e serviços, aplicativos de plataforma cruzada móveis e de área de trabalho e jogos. Além disso, ele torna a integração com o Azure muito fácil, seja para publicar no Azure ou criar no Azure Functions. Ele tem tudo o que você esperaria de um IDE moderno, incluindo um editor de código-fonte completo, um depurador poderoso, um espaço de trabalho personalizável, integração com o GIT e um sistema avançado de extensão, todos projetados nativamente para o Mac. 
 
 Outros recursos incluem: 

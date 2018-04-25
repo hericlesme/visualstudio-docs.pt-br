@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 37079cfaa1204cd8ce7a77e1e2f5aa91ea844ea5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/19/2018
+---
 1. Inicie o Visual Studio e selecione **Arquivo > Novo > Projeto**.
 
 1. Na caixa de diálogo **Novo Projeto**, pesquise "Python", selecione o modelo "Do código Python existente", forneça um nome e um local para o projeto e selecione **OK**.

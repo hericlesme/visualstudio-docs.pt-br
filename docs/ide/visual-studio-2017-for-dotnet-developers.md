@@ -3,19 +3,19 @@ title: Visual Studio 2017 para desenvolvedores do .NET | Microsoft Docs
 description: Visão geral das funcionalidades Visual Studio 2017 para ajudá-lo a codificar mais rápido no .NET.
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 31291814c2158c9aeb8d48b1b7b3073a4ccbcaf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guia de produtividade do Visual Studio 2017 para Desenvolvedores do .NET
 
@@ -96,10 +96,10 @@ O Visual Studio 2017 tem muitos recursos para ajudar você a pesquisar e navegar
 |- | - | -| 
 | Localizar Todas as Referências | **Shift+F12**| Os resultados são coloridos e podem ser agrupados por projeto, definição etc. Também é possível “bloquear” resultados. |
 | Ir Para Implementação | **Ctrl+F12** | É possível usar “Ir para definição” na palavra-chave `override` para navegar até o membro substituído |
-| Ir para definição | **F12** ou **Ctrl+Click**| Ou pressione **Ctrl** enquanto clica para navegar até a definição | 
+| Ir para definição | **F12** ou **Ctrl+Clique**| Ou pressione **Ctrl** enquanto clica para navegar até a definição | 
 | Inspecionar Definição | **Alt+F12** | Exibição embutida de uma definição |
 | Visualizador de Estrutura | Linhas cinzas pontilhadas entre chaves | Passe o mouse para ver a estrutura do código |
-| Navegação para assemblies descompilados | **F12** ou **Ctrl+Click** | Navegue até a origem externa (descompilado com ILSpy) habilitando o recurso: **Ferramentas > Opções > Editor de Texto > C# > Avançado > Habilitar a navegação para origens descompiladas**. |
+| Navegação para assemblies descompilados | **F12** ou **Ctrl+Clique** | Navegue até a origem externa (descompilado com ILSpy) habilitando o recurso: **Ferramentas > Opções > Editor de Texto > C# > Avançado > Habilitar a navegação para origens descompiladas**. |
 
 ![Ir para Todos e Localizar Todas as Referências](../ide/media/VSIDE_Productivity_Navigation.png)
 

@@ -38,7 +38,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
 
 1.  Crie um GUID arbitrário.
 
-     Esse GUID é usado para identificar exclusivamente uma categoria**.** Esta categoria reutiliza a especificação de cores e fontes de padrão do IDE.
+     Esse GUID é usado para identificar exclusivamente uma categoria **.** Esta categoria reutiliza a especificação de cores e fontes de padrão do IDE.
 
     > [!NOTE]
     >  Ao recuperar dados de fontes e cores com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou outras interfaces, VSPackages usar esse GUID para fazer referência a informações internas.
@@ -51,7 +51,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
 
 1.  Construa um tipo especial de entrada de registro de categoria no seguinte local:
 
-     [HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >*\FontAndColors\\*\<categoria >*]
+     [HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >* \FontAndColors\\*\<categoria >*]
 
      *\<Categoria >* é o nome da categoria não localizada.
 

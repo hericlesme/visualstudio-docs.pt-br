@@ -43,9 +43,9 @@ Este passo a passo mostra como criar uma nativo matemática biblioteca C++ SDK, 
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]  
   
-5.  Em **Solution Explorer**, abra o menu de atalho para **solução 'NativeMath'**e, em seguida, escolha **adicionar**, **novo projeto**.  
+5.  Em **Solution Explorer**, abra o menu de atalho para **solução 'NativeMath'** e, em seguida, escolha **adicionar**, **novo projeto**.  
   
-6.  Na lista de modelos, expanda **Visual C++**e, em seguida, selecione o **o componente de tempo de execução do Windows** modelo. No **nome** , especifique `NativeMathWRT`e, em seguida, escolha o **Okey** botão.  
+6.  Na lista de modelos, expanda **Visual C++** e, em seguida, selecione o **o componente de tempo de execução do Windows** modelo. No **nome** , especifique `NativeMathWRT`e, em seguida, escolha o **Okey** botão.  
   
 7.  Atualize Class1. h para corresponder a este código:  
   
@@ -59,7 +59,7 @@ Este passo a passo mostra como criar uma nativo matemática biblioteca C++ SDK, 
   
 ##  <a name="createVSIX"></a> Para criar o projeto de extensão NativeMathVSIX  
   
-1.  Em **Solution Explorer**, abra o menu de atalho para **solução 'NativeMath'**e, em seguida, escolha **adicionar**, **novo projeto**.  
+1.  Em **Solution Explorer**, abra o menu de atalho para **solução 'NativeMath'** e, em seguida, escolha **adicionar**, **novo projeto**.  
   
 2.  Na lista de modelos, expanda **Visual C#**, **extensibilidade**e, em seguida, selecione **projeto VSIX**. No **nome** , especifique **NativeMathVSIX**e, em seguida, escolha o **Okey** botão.
   
@@ -95,7 +95,7 @@ Este passo a passo mostra como criar uma nativo matemática biblioteca C++ SDK, 
                 \Neutral  
     ```  
   
-9. Em **Solution Explorer**, abra o menu de atalho para **solução 'NativeMath'**e, em seguida, escolha **Abrir pasta no Explorador de arquivos**.  
+9. Em **Solution Explorer**, abra o menu de atalho para **solução 'NativeMath'** e, em seguida, escolha **Abrir pasta no Explorador de arquivos**.  
   
 10. No **Explorador de arquivos**, copie $SolutionRoot$\NativeMath\NativeMath.h e, em seguida, em **Solution Explorer**, no **NativeMathVSIX** projeto, cole-o no $SolutionRoot$ \ Pasta NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include\.  
   

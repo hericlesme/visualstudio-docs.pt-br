@@ -44,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |onet.XML|Especifica a configuração do novo site, os componentes do modelo de definição de site e o comportamento padrão. Essas configurações podem incluir atributos como os tipos de conteúdo que são habilitados, os modos de exibição de lista padrão, arquivos de modelo de documento e Web parts incluídas com o site. Por padrão, o `Modules` seção lista os arquivos a serem adicionadas ao site do SharePoint e como eles são configurados.|  
 |webtemp_*SiteDefinitionName*. XML|Especifica as configurações de definição de site que aparece no **seleção de modelo** seção o **novo Site do SharePoint** página.|  
   
- Por padrão, todas as definições de site são armazenadas no *unidade:*pasta \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates. Cada definição de site tem sua própria subpasta.  
+ Por padrão, todas as definições de site são armazenadas no *unidade:* pasta \Program Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates. Cada definição de site tem sua própria subpasta.  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   

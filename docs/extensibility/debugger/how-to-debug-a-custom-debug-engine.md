@@ -59,7 +59,7 @@ Um tipo de projeto inicia o mecanismo de depuração (DE) do <xref:Microsoft.Vis
   
 1.  Iniciar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no hive do registro normal e carga seu projeto de tipo de projeto (isto é, a origem para o tipo de projeto, não uma instanciação de seu tipo de projeto).  
   
-2.  Abra as propriedades do projeto e acesse o **depurar** página. Para o **comando**, digite o caminho para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (por padrão, isso é *[unidade]*\Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
+2.  Abra as propriedades do projeto e acesse o **depurar** página. Para o **comando**, digite o caminho para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (por padrão, isso é *[unidade]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe).  
   
 3.  Para o **argumentos de comando**, tipo `/rootsuffix exp` para o hive de registro experimental (criado quando VSIP foi instalado).  
   

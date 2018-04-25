@@ -34,9 +34,9 @@ Se você quiser criar um marcador de texto personalizado para enfatizar ou organ
   
 1.  Crie uma entrada de registro da seguinte maneira:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >*\Text Editor\External marcadores\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* \Text Editor\External marcadores\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*é um `GUID` usado para identificar o marcador que está sendo adicionado  
+     *\<MarkerGUID >* é um `GUID` usado para identificar o marcador que está sendo adicionado  
   
      *\<Versão >* é a versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], por exemplo 8.0  
   
@@ -45,7 +45,7 @@ Se você quiser criar um marcador de texto personalizado para enfatizar ou organ
     > [!NOTE]
     >  O caminho raiz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma raiz alternativa quando o shell do Visual Studio é inicializado, para obter mais informações, consulte [De linha de comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Criar quatro valores em HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >*\Text Editor\External marcadores\\*\<MarkerGUID >*  
+2.  Criar quatro valores em HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* \Text Editor\External marcadores\\*\<MarkerGUID >*  
   
     -   (Padrão)  
   

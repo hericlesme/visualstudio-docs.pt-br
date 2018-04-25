@@ -35,7 +35,7 @@ Você pode usar o modelo de projeto do VSIX para criar uma extensão ou para uma
   
     2.  No menu **Projeto**, clique em **Exportar Modelo**. Conclua as etapas do assistente.  
   
-         Um arquivo. zip é criado no %USERPROFILE%\My Documentos\Visual Studio  *\<versão >*\My exportado modelos\\.  
+         Um arquivo. zip é criado no %USERPROFILE%\My Documentos\Visual Studio  *\<versão >* \My exportado modelos\\.  
   
 2.  Crie um projeto vazio do VSIX.  
   

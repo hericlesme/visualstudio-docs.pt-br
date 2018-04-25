@@ -58,7 +58,7 @@ Especifica o tipo de projeto um modelos de item aparecerá no. Esse elemento é 
 ## <a name="remarks"></a>Comentários  
  `TemplateGroupID` é um elemento.  
   
- O valor de `TemplateGroupID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<o número de versão >*\Projects\\) para modelos de filtro que aparecem no **Adicionar Novo Item** caixa de diálogo.  
+ O valor de `TemplateGroupID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<o número de versão >* \Projects\\) para modelos de filtro que aparecem no **Adicionar Novo Item** caixa de diálogo.  
   
 |Valor do Visual C++|Significado|  
 |------------------------|-------------|  

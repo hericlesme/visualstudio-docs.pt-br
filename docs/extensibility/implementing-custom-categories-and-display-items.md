@@ -47,7 +47,7 @@ Um VSPackage pode fornecer controle de fontes e cores de texto para o [!INCLUDE[
 
 ## <a name="to-create-or-identify-categories"></a>Para criar ou identificar categorias
 
--   Construir um tipo especial de entrada de registro de categoria em [HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >*\FontAndColors\\`<Category>`]
+-   Construir um tipo especial de entrada de registro de categoria em [HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >* \FontAndColors\\`<Category>`]
 
      *\<Categoria >* é o nome da categoria não localizada.
 
@@ -62,7 +62,7 @@ Um VSPackage pode fornecer controle de fontes e cores de texto para o [!INCLUDE[
 
 ## <a name="to-create-or-identify-groups"></a>Para criar ou identificar grupos
 
--   Construir um tipo especial de entrada de registro de categoria em [HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >*\FontAndColors\\  *\<grupo >*]
+-   Construir um tipo especial de entrada de registro de categoria em [HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >* \FontAndColors\\  *\<grupo >*]
 
      *\<grupo >* é o nome do grupo não localizada.
 

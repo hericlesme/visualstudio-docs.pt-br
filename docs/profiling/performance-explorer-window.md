@@ -1,13 +1,9 @@
 ---
 title: Janela do Gerenciador de Desempenho | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performanceexplorer
 - vs.performance.explorer
@@ -15,14 +11,14 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b3c7111ddda71d070456c409b95f53c04f0063
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f27d1436aaeb0ec75876edf9119dff93f7539483
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-explorer-window"></a>Janela do Performance Explorer
 
@@ -50,12 +46,12 @@ A janela do **Gerenciador de Desempenho** contém um controle de árvore que exi
 
 - **Nome da Sessão** – A raiz do controle de árvore contém o nome da sessão. Clique com o botão direito do mouse no nome de sessão para definir as propriedades de sessão ou para iniciar o aplicativo de destino e o criador de perfil.
 
-- **Destinos** – Exibe os nomes dos binários que devem ser criados na sessão. Clique com o botão direito do mouse em **Destinos** para adicionar ou remover um binário, projeto do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou site. Clique com o botão direito do mouse no nome de um destino para definir propriedades para o binário individual.
+- **Destinos** – Exibe os nomes dos binários que devem ser criados na sessão. Clique com botão direito do mouse em **Destinos** para adicionar ou remover um binário, projeto do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou site. Clique com o botão direito do mouse no nome de um destino para definir propriedades para o binário individual.
 
-- **Relatórios** – Exibe os nomes dos arquivos de dados do criador de perfil que são gerados para a sessão. Clique com o botão direito do mouse em **Relatórios** para adicionar um relatório existente ou comparar dois arquivos de dados do criador de perfil. Clique com o botão direito do mouse em um nome de relatório para abrir, remover ou exportar um arquivo de dados do criador de perfil.
+- **Relatórios** – Exibe os nomes dos arquivos de dados do criador de perfil que são gerados para a sessão. Clique com botão direito do mouse em **Relatórios** para adicionar um relatório existente ou comparar dois arquivos de dados do criador de perfil. Clique com o botão direito do mouse em um nome de relatório para abrir, remover ou exportar um arquivo de dados do criador de perfil.
 
 ## <a name="see-also"></a>Consulte também
 
 [Visões gerais](../profiling/overviews-performance-tools.md)  
 [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)  
-[Controlar a coleta de dados](../profiling/controlling-data-collection.md)
+[Controlando a coleta de dados](../profiling/controlling-data-collection.md)

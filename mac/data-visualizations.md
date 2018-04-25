@@ -1,17 +1,16 @@
 ---
-title: "Depuração – Visualizações de dados"
-description: "A depuração é uma parte comum e necessária da programação. O Visual Studio para Mac contém um pacote inteiro de recursos para facilitar a depuração. Este artigo examina as diferentes visualizações de dados que podem ser exibidas ao inspecionar objetos no depurador."
+title: Depuração – Visualizações de dados
+description: A depuração é uma parte comum e necessária da programação. O Visual Studio para Mac contém um pacote inteiro de recursos para facilitar a depuração. Este artigo examina as diferentes visualizações de dados que podem ser exibidas ao inspecionar objetos no depurador.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1c228718dc528e0ab34c9af328aee1c8259fa8b5
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="data-visualizations"></a>Visualizações de dados
 
@@ -64,7 +63,7 @@ O visualizador exibirá um `NSBezierPath`:
 ![Visualização de curva de Bézier](media/data-visualizations-image16.png)
 
 
-## <a name="string"></a>Cadeia de caracteres
+## <a name="string"></a>Cadeia de Caracteres
 
 Uma cadeia de caracteres inferior a 100 caracteres será exibida por completo, sem uma visualização. Cadeias de caracteres mais longas serão exibidas por completo na versão prévia. Cadeias de caracteres são editáveis e o visualizador acompanha um botão Editar para permitir que o valor de cadeia de caracteres seja editado na visualização ou no Editor de Valor de Cadeia de Caracteres, mostrado abaixo:
 

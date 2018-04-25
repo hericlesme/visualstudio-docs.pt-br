@@ -1,22 +1,18 @@
 ---
-title: Como compilar e executar o exemplo de LinqToXmlDataBinding | Microsoft Docs
-ms.custom: 
+title: 'Como: Compilar e executar o exemplo de LinqToXmlDataBinding'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f4259e51650b9af1788195b39fc8a72becbfde
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: de5515d96d5aa0dff30082207e7f20fd7981fc89
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Como: Compilar e executar o exemplo de LinqToXmlDataBinding
 
@@ -82,6 +78,6 @@ O programa de LinqToXmlDataBinding permite que o usuário para exibir e manipula
 
 ## <a name="see-also"></a>Consulte também
 
-[Vinculação de dados de WPF usando o exemplo LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)  
-[Passo a passo: Exemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)  
-[Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Vinculação de dados de WPF usando o exemplo LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
+- [Passo a passo: Exemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Visão geral do Visual Studio IDE](../ide/visual-studio-ide.md)

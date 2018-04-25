@@ -34,7 +34,7 @@ Projetos da Web criar aplicativos da Web. Você pode usar um projeto da Web para
   
     -   Um projeto de aplicativo Web (WAP) produz um único arquivo executável que combina o código para todas as páginas da Web inteligentes, bem como todos os arquivos de origem na pasta /App_Code.  
   
--   O arquivo de solução para um projeto da Web está localizado separadamente do site em si. Por padrão, os arquivos de solução estão localizados em \Documents and Settings\\*sua*documentos \My\\*\<Visual Studio # # # >*\Projects\\ *YourWebSite*.  
+-   O arquivo de solução para um projeto da Web está localizado separadamente do site em si. Por padrão, os arquivos de solução estão localizados em \Documents and Settings\\*sua*documentos \My\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Se você deseja manter o arquivo de solução com o site da Web, movê-lo lá e reabri-lo.  

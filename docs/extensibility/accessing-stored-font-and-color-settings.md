@@ -25,7 +25,7 @@ ms.lasthandoff: 04/16/2018
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) armazena as configurações modificadas para fontes e cores no registro. Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface para acessar essas configurações.
 
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Para iniciar a persistência de estado de fontes e cores
- Informações de fonte e cor são armazenadas por categoria no seguinte local do registro: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<versão do Visual Studio >*\FontAndColors\\  *\<CategoryGUID >*], onde  *\<CategoryGUID >* é o GUID de categoria.
+ Informações de fonte e cor são armazenadas por categoria no seguinte local do registro: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<versão do Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], onde  *\<CategoryGUID >* é o GUID de categoria.
 
  Portanto, para iniciar a persistência, um VSPackage deve:
 
