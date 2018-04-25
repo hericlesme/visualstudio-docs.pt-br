@@ -1,13 +1,10 @@
 ---
-title: "Noções sobre plataformas de build| Microsoft Docs"
-ms.custom: 
+title: Noções sobre plataformas de build| Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.build.newsolutionplatform
 - vs.build.editprojectplatforms
@@ -17,17 +14,16 @@ f1_keywords:
 helpviewer_keywords:
 - build platforms [Visual Studio]
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 47d4efb409c2779327c4914422b7e37becd6e3c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-build-platforms"></a>Noções sobre plataformas de build
 Você pode armazenar versões diferentes de propriedades de solução e de projeto que se aplicam a plataformas de destino diferentes. Por exemplo, você pode criar uma configuração de depuração que se destina a uma plataforma x86 e uma configuração de depuração que se destina a uma plataforma x64. Você pode alterar rapidamente a plataforma ativa para que você possa compilar várias configurações com facilidade.  
