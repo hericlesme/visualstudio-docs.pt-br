@@ -2,12 +2,8 @@
 title: Depurar um pacote de aplicativo instalado (UWP) | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: ffddb3f49f4603c6f09bb12ef81d4c45bf0210c7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Depurar um pacote de aplicativo instalado no Visual Studio (UWP)
 
@@ -62,7 +57,7 @@ Para obter mais informações sobre esses recursos, consulte o postagem de blog 
 > [!NOTE]
 > O Visual Studio também pode anexar a qualquer processo em execução do aplicativo UWP selecionando **depurar**e, em seguida, **anexar ao processo**. Anexar a um processo em execução não exige o projeto original do Visual Studio, mas ao carregar os símbolos do processo ajudará significativamente ao depurar um processo que você não tem o código original.
   
-## <a name="remote"></a>Depurar um aplicativo instalado ou em execução em um computador remoto 
+## <a name="remote"></a> Depurar um aplicativo instalado ou em execução em um computador remoto 
 
 Quando você depura um pacote de aplicativos instalados em um computador remoto pela primeira vez, o Visual Studio instala a versão correta das ferramentas remotas para o seu dispositivo de destino. Seu dispositivo de destino deve ser um computador com Windows 10, o dispositivo XBox, HoloLens e IoT.
 

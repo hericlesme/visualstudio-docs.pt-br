@@ -1,13 +1,9 @@
 ---
 title: Bloco | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +11,16 @@ helpviewer_keywords:
 - nested scopes
 - Block symbol
 ms.assetid: 95b7b0c1-ecc9-405f-8456-5f9cfb866498
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 637758d8d66095ddf1d986c6abf638fc7e1ab548
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce6e33c3631d8cff9fd02b6626614babc8e6d157
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="block"></a>Bloco
 Cada bloco de código é identificado por um `SymTagBlock` símbolo. Símbolos de bloco são usados para identificar os escopos aninhados dentro de funções.  

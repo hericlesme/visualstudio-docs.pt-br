@@ -1,13 +1,9 @@
 ---
 title: Operador de contexto do depurador (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.operators
 dev_langs:
@@ -23,22 +19,21 @@ helpviewer_keywords:
 - debugging [C++], expressions
 - native expression evaluator
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cae22698a0200dc0971f45dbcfd7b28005f8f0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4640739f72046e1c223229bfc33ba34dcafb520f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operador de contexto no depurador do Visual Studio (C++)
 Você pode usar o operador de contexto em C++ para qualificar um local de ponto de interrupção, o nome da variável ou expressão. O operador de contexto é útil para especificar um nome de um escopo externo que está oculto por um nome local.  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a>Sintaxe  
+##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintaxe  
  Há duas maneiras de especificar o contexto:  
   
 1.  {, [*módulo*]} *expressão*  

@@ -1,12 +1,8 @@
 ---
 title: Erro de DCOM ao tentar contatar o computador remoto. O acesso foi negado. | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.dcom_access_denied
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - remote DCOM access denied error
 - DCOM, access errors
 ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a861d3af9ae02fbbfc4fac2b38cc76058c8a3caf
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 8533201bfd052b2131ba302e8e1c451f62e5b50a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Erro de DCOM ao tentar contatar o computador remoto. O acesso foi negado.
 Depuração remota usa DCOM para se comunicar entre os computadores locais e remotos nas seguintes situações:  

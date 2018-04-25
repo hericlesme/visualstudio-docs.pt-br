@@ -2,12 +2,8 @@
 title: COM e ActiveX depuração | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - debugging COM containers
 - ActiveX controls, debugging
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
-caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2854a74bd8da32db5d954a0e68a33a484b7eb493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab4bb2de79d0148154bfe7d9fceb70de322efda8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="com-and-activex-debugging"></a>Depuração de COM e ActiveX
 Essa seção fornece dicas sobre depuração de aplicativos COM e controles ActiveX.  

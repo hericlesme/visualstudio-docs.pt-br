@@ -1,13 +1,9 @@
 ---
-title: "Inspecionar variáveis nas janelas de locais e Autos | Microsoft Docs"
+title: Inspecionar variáveis nas janelas de locais e Autos | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -15,17 +11,16 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspecionar variáveis nos Autos e janelas de locais no Visual Studio
 O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **Depurar > Windows > Autos**) e o **locais** janela (durante a depuração **CTRL + ALT + V, L**, ou **Depurar > Windows > locais**) são muito úteis quando você deseja ver os valores de variáveis enquanto está depurando. O **locais** janela exibe as variáveis definidas no escopo local, que geralmente é a função ou método que está sendo executado atualmente. O **Autos** janela exibe variáveis usadas ao redor da linha atual (o local onde o depurador está parado). Exatamente quais variáveis são exibidos nessa janela são diferentes em idiomas diferentes. Consulte [o que as variáveis que aparecem na janela Autos?](#bkmk_whatvariables) abaixo.  
@@ -37,7 +32,7 @@ Matrizes e objetos são exibidos na janela Autos e locais, como controles de ár
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
-## <a name="bkmk_whatvariables"></a>Quais variáveis são exibidos na janela Autos?  
+## <a name="bkmk_whatvariables"></a> Quais variáveis são exibidos na janela Autos?  
  Você pode usar o **Autos** janela no código c#, Visual Basic e C++. O **Autos** não tem suporte JavaScript ou F #.  
   
  Em c# e Visual Basic, o **Autos** janela exibe qualquer variável usada na linha atual ou anterior. Por exemplo, se você declara quatro variáveis e defini-las da seguinte maneira:
@@ -81,7 +76,7 @@ Matrizes e objetos são exibidos na janela Autos e locais, como controles de ár
   
  Você também pode ver os valores de retorno de funções e métodos em determinadas circunstâncias. Consulte [ver os valores de retorno de chamadas de método](#bkmk_returnValue) abaixo.  
   
-##  <a name="bkmk_returnValue"></a>Exibição de valores de retorno de chamadas de método  
+##  <a name="bkmk_returnValue"></a> Exibição de valores de retorno de chamadas de método  
  No código .NET e C++, você pode examinar valores de retorno quando você entra em ou fora de uma chamada de método. Essa funcionalidade é útil quando o resultado de uma chamada de método não é armazenado em uma variável local, por exemplo, quando um método é usado como um parâmetro ou valor de retorno de outro método.  
   
  O código c# a seguir adiciona os valores de retorno das duas funções:  

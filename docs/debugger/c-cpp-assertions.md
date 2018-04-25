@@ -1,12 +1,9 @@
 ---
-title: "Asserções C/C++ | Microsoft Docs"
-ms.custom: 
+title: Asserções C/C++ | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -28,16 +25,16 @@ helpviewer_keywords:
 - Assertion Failed dialog box
 - failures, finding locations
 ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a53c03f1ab2c8680329f17bfa36a49b12062bff5
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fcef94e9333b9c1050b76744351723924baaf0ab
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="cc-assertions"></a>Asserções C/C++
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em um ponto específico em seu programa. Se essa condição não for verdadeira, a declaração falhará, a execução do seu programa for interrompida e o [caixa de diálogo Falha de asserção](../debugger/assertion-failed-dialog-box.md) é exibida.  
@@ -77,17 +74,17 @@ Uma instrução de declaração especifica uma condição que você espera ser v
   
 -   [Localizando sem tratamento de erros](#BKMK_Testing_error_conditions_)  
   
-##  <a name="BKMK_How_assertions_work"></a>Como declarações funcionam  
+##  <a name="BKMK_How_assertions_work"></a> Como declarações funcionam  
  Quando o depurador é interrompido devido a uma asserção MFC ou da biblioteca em tempo de execução C, então, se a origem está disponível, o depurador navega até o ponto no arquivo de origem onde a asserção ocorreu. A mensagem de asserção é exibida em ambos os [janela de saída](../ide/reference/output-window.md) e o **falha de asserção** caixa de diálogo. Você pode copiar a mensagem de declaração de **saída** janela para uma janela de texto se você deseja salvá-la para referência futura. O **saída** janela pode conter outras mensagens de erro. Examine essas mensagens com cuidado, pois elas fornecem indícios da causa da falha de asserção.  
   
  Use asserções para detectar erros durante o desenvolvimento. Em geral, use uma asserção para cada suposição. Por exemplo, se você supõe que um argumento não é NULL, use uma asserção para testar essa suposição.  
   
  [Neste tópico](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a>Asserções em compilações de depuração e liberação  
+##  <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a> Asserções em compilações de depuração e liberação  
  As instruções de declaração são compiladas apenas se `_DEBUG` é definido. Caso contrário, o compilador trata as asserções como instruções nulas. Em virtude disso, as instruções de declaração não impõem nenhuma sobrecarga ou custo de desempenho no seu programa da versão final, e permitem que você evite usar políticas `#ifdef`.  
   
-##  <a name="BKMK_Side_effects_of_using_assertions"></a>Efeitos colaterais usando asserções  
+##  <a name="BKMK_Side_effects_of_using_assertions"></a> Efeitos colaterais usando asserções  
  Quando adicionar asserções ao seu código, verifique se elas não têm efeitos colaterais. Por exemplo, considere a seguinte asserção que altera o valor de `nM`:  
   
 ```  
@@ -95,7 +92,7 @@ ASSERT(nM++ > 0); // Don't do this!
   
 ```  
   
- Como a expressão `ASSERT` não é avaliada na versão de liberação do programa, `nM` terá valores diferentes nas versões de depuração e de liberação. Para evitar esse problema em MFC, você pode usar o [verificar](/cpp/mfc/reference/diagnostic-services#verify) macro em vez de `ASSERT`.  `VERIFY`avalia a expressão em todas as versões, mas não verifica o resultado na versão de lançamento.  
+ Como a expressão `ASSERT` não é avaliada na versão de liberação do programa, `nM` terá valores diferentes nas versões de depuração e de liberação. Para evitar esse problema em MFC, você pode usar o [verificar](/cpp/mfc/reference/diagnostic-services#verify) macro em vez de `ASSERT`.  `VERIFY` avalia a expressão em todas as versões, mas não verifica o resultado na versão de lançamento.  
   
  Tenha cuidado especial quando usar chamadas de função em instruções de declaração, porque a avaliação de uma função pode ter efeitos colaterais inesperados.  
   
@@ -108,7 +105,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
   
  [Neste tópico](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_CRT_assertions"></a>Asserções CRT  
+##  <a name="BKMK_CRT_assertions"></a> Asserções CRT  
  CRTDBG. Arquivo de cabeçalho H define o [macros Assert e asserte](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) para a verificação de asserção.  
   
 |Macro|Resultado|  
@@ -160,7 +157,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
   
  [Neste tópico](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_MFC_assertions"></a>Declarações de MFC  
+##  <a name="BKMK_MFC_assertions"></a> Declarações de MFC  
  MFC define o [ASSERT](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) macro para verificação de asserção. Também define os métodos `MFC ASSERT_VALID` e `CObject::AssertValid` para verificar o estado interno de um objeto derivado de `CObject`.  
   
  Se o argumento da macro `ASSERT` do MFC for avaliado como zero ou false, a macro interromperá a execução do programa e alerta o usuário; caso contrário, a execução continuará.  
@@ -182,7 +179,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
   
  A macro `ASSERT` não produz nenhum código na versão de liberação. Se você precisa avaliar a expressão na versão de lançamento, use o [verificar](/cpp/mfc/reference/diagnostic-services#verify) macro em vez de ASSERT.  
   
-###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>MFC ASSERT_VALID e CObject::AssertValid  
+###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID e CObject::AssertValid  
  O [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid) método fornece verificações de tempo de execução do estado interno de um objeto. Embora não seja necessário substituir `AssertValid` quando você deriva a sua classe de `CObject`, é possível tornar sua classe mais confiável fazendo isso. `AssertValid` deve executar asserções em todas as variáveis de membro do objeto para verificar se contêm valores válidos. Por exemplo, ela deve verificar se as variáveis de membro do ponteiro não são NULL.  
   
  O exemplo a seguir mostra como declarar uma função `AssertValid`:  
@@ -267,14 +264,14 @@ void CMyData::AssertValid( ) const
   
  Este é um mecanismo avançado quando você compila para depuração. Quando posteriormente você compila para liberação, o mecanismo é desativado automaticamente.  
   
-###  <a name="BKMK_Limitations_of_AssertValid"></a>Limitações de AssertValid  
+###  <a name="BKMK_Limitations_of_AssertValid"></a> Limitações de AssertValid  
  Uma asserção disparada indica que o objeto está incorretamente definido e a execução será parada. No entanto, uma falta de asserção apenas indica que nenhum problema foi encontrado, mas que não há garantia de que o objeto seja bom.  
   
  [Neste tópico](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Using_assertions"></a>Usando asserções  
+##  <a name="BKMK_Using_assertions"></a> Usando asserções  
   
-###  <a name="BKMK_Catching_logic_errors"></a>Captura de erros de lógica  
+###  <a name="BKMK_Catching_logic_errors"></a> Captura de erros de lógica  
  Você pode definir uma asserção em uma condição que deve ser verdadeira de acordo com a lógica do programa. A asserção não tem nenhum efeito a menos que ocorra um erro lógico.  
   
  Por exemplo, suponha que você esteja simulando moléculas de gás em um contêiner e que a variável `numMols` representa o número total de moléculas. Esse número não pode ser menor que zero, então você pode incluir uma instrução de declaração de MFC como esta:  
@@ -294,7 +291,7 @@ _ASSERT(numMols >= 0);
   
  [Neste tópico](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Checking_results_"></a>Verificando resultados  
+###  <a name="BKMK_Checking_results_"></a> Verificando resultados  
  As asserções são valiosas para testar operações cujos resultados não são óbvios em uma inspeção visual rápida.  
   
  Por exemplo, considere o seguinte código, que atualiza a variável `iMols` com base no conteúdo da lista vinculada apontada por `mols`:  
@@ -317,7 +314,7 @@ _ASSERT(iMols<=numMols); // CRT version
   
  [Neste tópico](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Testing_error_conditions_"></a>Localizando sem tratamento de erros  
+###  <a name="BKMK_Testing_error_conditions_"></a> Localizando sem tratamento de erros  
  Você pode usar asserções para testar condições de erro em um ponto no seu código onde todos os erros devem ser manipulados. No exemplo a seguir, uma rotina gráfica retorna um código de erro ou zero para êxito.  
   
 ```  

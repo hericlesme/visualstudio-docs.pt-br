@@ -1,13 +1,9 @@
 ---
-title: "Uso da biblioteca de depuração CRT | Microsoft Docs"
-ms.custom: 
+title: Uso da biblioteca de depuração CRT | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
 dev_langs:
@@ -29,17 +25,16 @@ helpviewer_keywords:
 - DEBUG linker option [C++]
 - /LDd compiler function [C++]
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 420dcc98aad4f4ca2ad76d16b7f4c6c7c51d2beb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e550a5fa705f3c85b3464046cd3c92d96bc47ca
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="crt-debug-library-use"></a>Uso da biblioteca de depuração CRT
 A biblioteca em tempo de execução C fornece amplo suporte à depuração. Para usar uma das bibliotecas de depuração CRT, você deve vincular com [/Debug](/cpp/build/reference/debug-generate-debug-info) e compile com **/MDd**, **/MTd**, ou **/LDd**.  

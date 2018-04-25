@@ -1,12 +1,9 @@
 ---
-title: "Depuração de ASP.NET: Requisitos do sistema | Microsoft Docs"
-ms.custom: 
+title: 'Depuração de ASP.NET: Requisitos do sistema | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +13,16 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, system requirements
 - debugging ASP.NET Web applications, security requirements
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 9cf9517775b5729507252a259485ad8d6cc276ff
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: a0d591c9f68e5331b2047ee749fff148c8844937
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuração do ASP.NET: requisitos do sistema
 Este tópico descreve os requisitos de software e segurança para [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] cenários de depuração:  

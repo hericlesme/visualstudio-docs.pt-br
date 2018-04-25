@@ -1,13 +1,9 @@
 ---
-title: "COM as ferramentas de depuração | Microsoft Docs"
-ms.custom: 
+title: COM as ferramentas de depuração | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -22,17 +18,16 @@ helpviewer_keywords:
 - ActiveX controls, debugging
 - debugging [C++], COM
 ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6ddf648f28139c4805c6d417e3f353d494c48bb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 00c801ddfce436d4867af9f7012c0abe785ed68a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="com-debugging-tools"></a>Ferramentas de depuração COM
 Este tópico lista as ferramentas que podem ajudá-lo a testar e inspecionar programas COM.  

@@ -1,27 +1,22 @@
 ---
-title: "Referência de API para extensibilidade do IntelliTrace | Microsoft Docs"
-ms.custom: 
+title: Referência de API para extensibilidade do IntelliTrace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, API reference
 ms.assetid: 46e6c648-293b-45c2-a29e-cca9c36cd865
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d82c76a5a20a001947a8057ab5996f716370f29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 907b47aacf7ad0d63c79f22dcf992ac042dd2e7e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referência API para o extensibilidade do IntelliTrace
 Usando as informações contidas nesta seção, você pode usar APIs de extensibilidade do IntelliTrace para ler e decodificar arquivos .itrace em seu aplicativo.  

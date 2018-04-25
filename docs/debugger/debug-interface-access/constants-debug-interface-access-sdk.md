@@ -2,29 +2,24 @@
 title: Constantes (SDK de acesso à Interface de depuração) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - constants, DIA SDK
 - DIA SDK, constants
 ms.assetid: aca4ec77-bc08-4cdd-a6ce-8d4a28ea5ea3
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8241190650bf395e1e4e2467b4862119cd2b10dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c77febb7ad9f41880fef604849af75aa065ff593
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (SDK de Acesso à Interface de Depuração)
 Constantes de cadeia de caracteres podem ser usados para identificar várias seções de um arquivo de banco de dados (PDB) do programa depuração por meio do SDK do DIA.  

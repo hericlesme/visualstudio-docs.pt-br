@@ -2,28 +2,23 @@
 title: ': Set_addressmap | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaAddressMap::set_addressMap method
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681e0bae46497d9b581e89340069937370831777
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a1c934dc998818973b5de4106c3df952ad24f22f
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 Fornece um mapa de endereço para dar suporte a conversões de layout de imagem.  
@@ -46,7 +41,7 @@ HRESULT set_addressMap (
  [in] Uma matriz de [estrutura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md) estruturas que definem o mapa de conversão.  
   
  `imagetoSymbols`  
- [in] `TRUE` se o `data` parâmetro define um mapa do novo layout de imagem ao seu layout original (conforme descrito pelos símbolos de depuração). `FALSE`Se `data` é um mapa para o novo layout de imagem obtido seu layout original.  
+ [in] `TRUE` se o `data` parâmetro define um mapa do novo layout de imagem ao seu layout original (conforme descrito pelos símbolos de depuração). `FALSE` Se `data` é um mapa para o novo layout de imagem obtido seu layout original.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
