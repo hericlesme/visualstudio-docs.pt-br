@@ -1,7 +1,9 @@
 ---
-title: Criando projetos de fluxo de trabalho herdado | Microsoft Docs
+title: Designer de fluxo de trabalho - criar projetos de fluxo de trabalho herdado
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9988e85fe791e543b2b191b256e64099d5a3b658
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>Criando projetos herdados de fluxo de trabalho
-Esta seção descreve como criar projetos de fluxo de trabalho usando o Designer de fluxo de trabalho do Windows fornecido pelo vs2010 herdado. [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado propriedades [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Inclui informações sobre como usar os modelos de projeto de fluxo de trabalho que são listados na tabela a seguir.
+
+Esta seção descreve como criar projetos de fluxo de trabalho usando o Designer de fluxo de trabalho herdado do Windows fornecida pelo Visual Studio 2010. O Designer de fluxo de trabalho herdados tem como alvo o .NET Framework versão 3.5 ou o WinFX. Inclui informações sobre como usar os modelos de projeto de fluxo de trabalho que são listados na tabela a seguir.
 
 |Modelo de projeto|Descrição|
 |----------------------|-----------------|
@@ -29,25 +32,6 @@ Esta seção descreve como criar projetos de fluxo de trabalho usando o Designer
 |Aplicativo de console do fluxo de trabalho do computador de estado|Um projeto para criar um aplicativo de console do fluxo de trabalho do computador de estado.|
 |Biblioteca de fluxo de trabalho do computador de estado|Um projeto para criar uma biblioteca de fluxo de trabalho do computador de estado.|
 |Fluxo de trabalho vazio Projeto|Um projeto vazio para criar um aplicativo de fluxo de trabalho.|
-
-## <a name="in-this-section"></a>Nesta seção
- [Como criar projetos de fluxo de trabalho (herdados)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
-
- [Como criar aplicativos de console de fluxo de trabalho sequenciais (herdado)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
-
- [Como criar uma biblioteca sequencial de fluxo de trabalho (herdado)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
-
- [Como criar uma biblioteca de atividade de fluxo de trabalho (herdado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
-
- [Como criar aplicativos de console do fluxo de trabalho da máquina de estado (herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
-
- [Como criar uma biblioteca de fluxo de trabalho da máquina de estado (herdado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
-
- [Como criar um projeto de fluxo de trabalho vazio (herdado)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
-
- [Como configurar propriedades do projeto de fluxo de trabalho (herdado)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
-
- [Como adicionar um novo item em um projeto de fluxo de trabalho (herdado)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>Consulte também
 
