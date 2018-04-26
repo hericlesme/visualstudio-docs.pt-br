@@ -1,7 +1,9 @@
 ---
-title: Inicializar a caixa de diálogo correlação | Microsoft Docs
+title: Designer de fluxo de trabalho - inicializar a caixa de diálogo de correlação
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aac62d4439c2280e977ef929c79bb103348c170a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 93ce95c7a821d243af842170ba30ec82647933ab
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicializar a caixa de diálogo correlação
 
@@ -29,7 +31,7 @@ O **inicializar correlação** no Designer de fluxo de trabalho do Windows, a ca
 
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Para iniciar a caixa de diálogo correlação inicializar
 
--   Clique em **exibição** no **InitializeCorrelation** atividade designer ou selecione um <xref:System.ServiceModel.Activities.InitializeCorrelation> atividade em [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] e, em seguida, clique no botão de reticências ao lado de <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propriedade no a grade de propriedade.
+-   Clique em **exibição** no **InitializeCorrelation** atividade designer ou selecione um <xref:System.ServiceModel.Activities.InitializeCorrelation> atividade no Designer de fluxo de trabalho e, em seguida, clique no botão de reticências ao lado de <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propriedade no grade de propriedade.
 
 ## <a name="see-also"></a>Consulte também
 

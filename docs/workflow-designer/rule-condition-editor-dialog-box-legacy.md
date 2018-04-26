@@ -1,7 +1,9 @@
 ---
-title: Caixa de diálogo Editor de condição de regra (herdado) | Microsoft Docs
+title: Designer de fluxo de trabalho - caixa de diálogo Editor de condição de regra (herdado)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62b74956dc12e19a5594585e8d356b77ae5549b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f723894f175cbf031c3a2ac61ed9eaec8e1c94f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Regra a caixa de diálogo editor de condição (o legados)
 
-Este tópico descreve como usar o **Editor de condição de regra** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Este tópico descreve como usar o **Editor de condição de regra** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use o Designer de fluxo de trabalho herdado quando você precisa direcionar o .NET Framework versão 3.5 ou o WinFX.
 
 Criar e modificar condições declarativas de regra usando o **Editor de condição de regra** caixa de diálogo. Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
 

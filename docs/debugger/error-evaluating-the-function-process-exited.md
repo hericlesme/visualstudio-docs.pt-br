@@ -1,25 +1,25 @@
 ---
-title: 'Erro: O processo de destino foi encerrado durante a avaliação da função &#39;função&#39; | Microsoft Docs'
+title: 'Erro: O processo de destino foi encerrado com código &#39;código&#39; ao avaliar a função &#39;função&#39; | Microsoft Docs'
 ms.custom: ''
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
-- vs.debug.error.process_exit_func_eval_abort
+- vs.debug.error.process_exit_during_func_eval
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ff03ef364c21e20151547effe8bfbf5935fe7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e9221ccf162180a89cc88b1ceebcf55be39eef
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="error-the-target-process-exited-while-evaluating-the-function-39function39"></a>Erro: O processo de destino foi encerrado durante a avaliação da função &#39;função&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erro: O processo de destino foi encerrado com código &#39;código&#39; ao avaliar a função &#39;função&#39;
 
-Mensagem de texto completo: O processo de destino foi encerrado durante a avaliação da função 'function'. Consulte a janela Saída para o código de saída do processo de destino.
+Mensagem de texto completo: O processo de destino foi encerrado com o código 'code' durante a avaliação da função 'function'.
 
 Para tornar mais fácil inspecionar o estado dos objetos do .NET, o depurador automaticamente forçar o processo depurado para executar código adicional (normalmente métodos getter de propriedade e `ToString` funções). Na maioria dos cenários, essas funções concluída com êxito ou lançam exceções que podem ser capturadas pelo depurador. No entanto, há algumas situações em que as exceções não podem ser detectadas porque ultrapassar os limites de kernel, exigem bombeamento de mensagens do usuário ou são irrecuperáveis. Como resultado, um getter de propriedade ou método ToString que executa o código que explicitamente encerra o processo (por exemplo, chamadas de `ExitProcess()`) ou lança uma exceção sem tratamento que não pode ser capturada (por exemplo, `StackOverflowException`) terminará o processo depurado e término da sessão de depuração. Se você receber essa mensagem de erro, isso ocorreu.
  

@@ -1,6 +1,7 @@
 ---
 title: Erros do aplicativo de análise do código
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
@@ -14,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b058612095bbb18d8e596beaecc1998be2e805a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3a9efc0ddb207bfc027f0eee0ae0cbb5bbbca330
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-application-errors"></a>Erros do aplicativo de análise do código
 Esta seção é uma referência de mensagens de erro que são gerados pela ferramenta de análise de código gerenciado. Para obter ajuda sobre uma mensagem de erro específica, digite o número do erro no **procure** caixa no índice.

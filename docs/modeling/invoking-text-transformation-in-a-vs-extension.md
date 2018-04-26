@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6fc7190fc8cf2661dd64bbcb6f335d0e63a04e29
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 20c4c9e9c91fd93a190463bc35fe016be4cdf838
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Invocando transformação de texto em uma extensão VS
 Se você estiver escrevendo uma extensão do Visual Studio como um comando de menu ou [linguagem específica de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), você pode usar o serviço de modelagem de texto para transformar modelos de texto. Obtenha o serviço <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> e converta-o em <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.

@@ -1,7 +1,9 @@
 ---
-title: Designer de atividade de atraso | Microsoft Docs
+title: Designer de fluxo de trabalho - Designer de atividade de atraso
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Delay.UI
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7159330588151d4845184fcb6688b20f8d13afd0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e22c80712bcb0c792fb929ae85b84912122a0bc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="delay-activity-designer"></a>Atrasar o designer de atividades
+
 O **atraso** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Delay> atividade.
 
 ## <a name="the-delay-activity"></a>A atividade do atraso
- A atividade de <xref:System.Activities.Statements.Delay> atrasa a execução de um fluxo de trabalho para uma quantidade de tempo especificada.
+
+A atividade de <xref:System.Activities.Statements.Delay> atrasa a execução de um fluxo de trabalho para uma quantidade de tempo especificada.
 
 ### <a name="using-the-delay-activity-designer"></a>Usando o designer de atividade do atraso
- O **atraso** designer de atividade pode ser encontrado no **primitivos** categoria do **caixa de ferramentas**, que é acessado clicando o **ferramentas**guia o [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
 
- O **atraso** designer de atividades pode ser arrastado o **caixa de ferramentas** e removidos no [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superfície onde quer que as atividades geralmente são colocados, tais como dentro um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.Delay> com uma opção <xref:System.Activities.Activity.DisplayName%2A> de atraso. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **atraso** designer de atividade ou o **DisplayName** caixa da grade de propriedade.
+O **atraso** designer de atividade pode ser encontrado no **primitivos** categoria do **caixa de ferramentas**, que é acessado clicando o **ferramentas**guia do Designer de fluxo de trabalho (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
+
+O **atraso** designer de atividades pode ser arrastado do **caixa de ferramentas** e descartado para a superfície do Designer de fluxo de trabalho onde quer que as atividades geralmente são colocados, tais como dentro um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.Delay> com uma opção <xref:System.Activities.Activity.DisplayName%2A> de atraso. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **atraso** designer de atividade ou o **DisplayName** caixa da grade de propriedade.
 
 ### <a name="the-delay-properties"></a>As propriedades do atraso
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Delay> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade e alguns deless podem ser editados na superfície do designer de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Delay> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade e eles alguns podem ser editados na superfície de fluxo de trabalho Designerdesigner.
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|

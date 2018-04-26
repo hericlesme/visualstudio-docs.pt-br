@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5030babe9ef469dc9e580878b6fb51f64b499e33
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 01a55cbf2bf8d741594bae273389086e50dcc981
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizando campos de texto e imagem
 Quando você define um decorador de texto em uma forma, ele é representado por um campo de texto. Para obter exemplos de inicialização de campos de texto e outros ShapeFields, inspecione Dsl\GeneratedCode\Shapes.cs em sua solução DSL.

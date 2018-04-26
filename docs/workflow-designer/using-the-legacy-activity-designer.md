@@ -1,7 +1,9 @@
 ---
-title: Usando o Designer de atividade herdado | Microsoft Docs
+title: Designer de fluxo de trabalho - usando o Designer de atividade herdado
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - activities, configuring
 - custom activities
@@ -15,19 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c69c2dfdd6fb81bcb6a544f27da0874a7dc99331
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdf7ae585697db19293362a31c5751d44c7421c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-activity-designer"></a>Usando o designer herdado de atividades
-Este tópico descreve como usar o designer de atividade no Designer de fluxo de trabalho herdado do Windows. Use o designer herdado na definição [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- O designer de atividade permite que você crie suas próprias atividades personalizados.
+Este tópico descreve como usar o designer de atividade no Designer de fluxo de trabalho herdado do Windows. Use o designer herdado durante o direcionamento do .NET Framework versão 3.5 ou o WinFX.
+
+O designer de atividade permite que você crie suas próprias atividades personalizados.
 
 ## <a name="creating-a-custom-activity"></a>Criando uma atividade personalizado
- Siga estas etapas para criar uma atividade personalizado utilizando o designer de atividade:
+
+Siga estas etapas para criar uma atividade personalizado utilizando o designer de atividade:
 
 1.  Sobre o **projeto** menu, clique em **Adicionar atividade**.
 
@@ -39,10 +43,11 @@ Este tópico descreve como usar o designer de atividade no Designer de fluxo de 
 
 3.  Digite um nome de atividade ou mantenha o nome padrão e, em seguida, clique em **adicionar**.
 
- Você também pode criar um conjunto de atividades personalizadas, criando um novo projeto do tipo **biblioteca de atividades de fluxo de trabalho**. Para obter mais informações sobre esse tipo de projeto, consulte [como: criar uma biblioteca de atividades de fluxo de trabalho (legados)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
+Você também pode criar um conjunto de atividades personalizadas, criando um novo projeto do tipo **biblioteca de atividades de fluxo de trabalho**. Para obter mais informações sobre esse tipo de projeto, consulte [como: criar uma biblioteca de atividades de fluxo de trabalho (legados)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
 
 ## <a name="configuring-an-activity"></a>Configurando uma atividade
- Quando o designer de atividade estiver ativo, você pode usar o navegador de propriedade para configurar as propriedades listadas na tabela a seguir.
+
+Quando o designer de atividade estiver ativo, você pode usar o navegador de propriedade para configurar as propriedades listadas na tabela a seguir.
 
 |Propriedade|Comentários|
 |--------------|--------------|
@@ -52,7 +57,8 @@ Este tópico descreve como usar o designer de atividade no Designer de fluxo de 
 |**Habilitado**|Definido como **True** por padrão para habilitar a validação e execução da atividade. Definido como **False** para desabilitar a execução da atividade e a validação. Para obter informações sobre a execução da atividade e a validação, consulte [atividades de fluxo de trabalho de desenvolvimento](http://go.microsoft.com/fwlink?LinkID=65024).|
 
 ## <a name="adding-child-activities"></a>Adicionando atividades filhos
- Você pode arrastar atividades filhos da caixa de ferramentas para a atividade que você está criando. Você pode então configurar cada atividade filho usando o navegador de propriedade.
+
+Você pode arrastar atividades filhos da caixa de ferramentas para a atividade que você está criando. Você pode então configurar cada atividade filho usando o navegador de propriedade.
 
 ## <a name="see-also"></a>Consulte também
 

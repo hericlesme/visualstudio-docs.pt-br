@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77a33546d02738ae03e4da5180aa15e2b94f91ea
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ff0f020f2ab7558df6cc6f7865500a9910718145
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substituindo e estendendo as classes geradas
 A definição de DSL é uma plataforma na qual você pode criar um conjunto poderoso de ferramentas se baseiam em uma linguagem específica de domínio. Muitas extensões e adaptações podem ser feitas por substituir e estender as classes que são geradas a partir da definição de DSL. Essas classes incluem não apenas as classes de domínio que você definiu explicitamente no diagrama DSL definição, mas também a outras classes que definem a caixa de ferramentas, explorer, serialização e assim por diante.

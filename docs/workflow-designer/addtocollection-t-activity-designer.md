@@ -1,7 +1,9 @@
 ---
-title: AddToCollection&lt;T&gt; Designer de atividade | Microsoft Docs
+title: Designer de fluxo de trabalho - AddToCollection<T> Designer de atividade
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c961c8ab893b1d8b4a2d519d8b9dce27fd6f93c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; Designer de atividade
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Designer de atividade
+
 O **AddToCollection\<T >** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.AddToCollection%601> atividade.
 
-## <a name="the-addtocollectiont-activity"></a>O AddToCollection < T\> atividade
- A atividade de <xref:System.Activities.Statements.AddToCollection%601> adiciona um item a uma coleção.
+## <a name="the-addtocollectiont-activity"></a>O AddToCollection\<T > atividade
+
+A atividade de <xref:System.Activities.Statements.AddToCollection%601> adiciona um item a uma coleção.
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>Usando o AddToCollection\<T > Designer de atividade
- O **AddToCollection\<T >** designer de atividade pode ser encontrado no **coleção** categoria do **caixa de ferramentas**, que é acessado clicando o  **Caixa de ferramentas** guia do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
 
- O **AddToCollection\<T >** designer de atividades pode ser arrastado o **caixa de ferramentas** e removidos no [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superfície onde quer que as atividades geralmente são colocados, tais como dentro um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.AddToCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de AddToCollection < Int32\>. (Por padrão, o *TypeArgument* é **Int32**. Isso pode ser alterado na grade de propriedade.) O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **AddToCollection < T\>**  designer de atividade ou o **DisplayName** caixa da grade de propriedade. Outras propriedades devem ser editadas na grade de propriedade.
+O **AddToCollection\<T >** designer de atividade pode ser encontrado no **coleção** categoria do **caixa de ferramentas**, que é acessado clicando o  **Caixa de ferramentas** guia do Designer de fluxo de trabalho (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
 
-### <a name="the-addtocollectiont-properties"></a>O AddToCollection < T\> propriedades
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.AddToCollection%601> e descreve como elas são usadas no designer.
+O **AddToCollection\<T >** designer de atividades pode ser arrastado do **caixa de ferramentas** e descartado para a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocados, tais como dentro de um <xref:System.Activities.Statements.Sequence>. Descartando o **AddToCollection\<T >** designer de atividade cria um <xref:System.Activities.Statements.AddToCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de AddToCollection < Int32\>. (Por padrão, o *TypeArgument* é **Int32**. TypeArgument pode ser alterada na grade de propriedades.) O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **AddToCollection < T\>**  designer de atividade ou o **DisplayName** caixa da grade de propriedade. Outras propriedades devem ser editadas na grade de propriedade.
+
+### <a name="the-addtocollectiont-properties"></a>O AddToCollection\<T > Propriedades
+
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.AddToCollection%601> e descreve como elas são usadas no designer.
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|

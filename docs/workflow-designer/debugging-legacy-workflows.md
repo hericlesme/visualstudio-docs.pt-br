@@ -1,7 +1,9 @@
 ---
-title: Depuração de fluxos de trabalho herdados | Microsoft Docs
+title: Designer de fluxo de trabalho - depuração de fluxos de trabalho herdados
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>Depurando fluxos de trabalho herdados
 
-Se você estiver usando o Designer de fluxo de trabalho herdado do Windows em [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] criem [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplicativos que target.NET Framework 3.0 ou 3.5, você pode depurar seus fluxos de trabalho como qualquer outro programa, definindo pontos de interrupção, anexando a processos e examinando os threads e a pilha de chamadas. Você também tem a opção de depurar remotamente.
+Se você estiver usando o Designer de fluxo de trabalho herdado do Windows no Visual Studio para criar aplicativos do Windows Workflow Foundation (WF) que target.NET Framework 3.0 ou 3.5, você pode depurar seus fluxos de trabalho como qualquer outro programa, definindo pontos de interrupção, anexando a processos e examinando threads e a pilha de chamadas. Você também tem a opção de depurar remotamente.
 
 > [!NOTE]
 > Se várias versões do Visual Studio tiverem sido instaladas e desinstaladas no computador, a depuração do WF3 poderá falhar com uma das duas possibilidades a seguir:
@@ -32,7 +34,7 @@ Se você estiver usando o Designer de fluxo de trabalho herdado do Windows em [!
 >
 > Se qualquer um desses cenários ocorrer durante a depuração de fluxos de trabalho do .NET Framework 3.0 ou 3.5, execute um reparo da instalação do Visual Studio.
 
- O [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] integra-se com as seguintes janelas de depuração padrão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
+ O Windows Workflow Foundation integra-se com as seguintes janelas de depuração padrão do Visual Studio:
 
 -   **Ponto de interrupção**: funciona conforme o esperado, mas você especifica uma atividade para o nome da função.
 

@@ -1,7 +1,9 @@
 ---
-title: Selecione a caixa de diálogo condição (o legados) | Microsoft Docs
+title: Designer de fluxo de trabalho - caixa de diálogo Selecionar condição (o legados)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
 helpviewer_keywords:
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 836cd63ecaa19be46617422d3cede2f04291992e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Selecione a caixa de diálogo condição (o legados)
-Este tópico descreve como usar o **condição selecione** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- O **condição selecione** caixa de diálogo é usada para selecionar uma condição declarativa de regra a ser atribuído à propriedade de condição de uma atividade. Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
+Este tópico descreve como usar o **condição selecione** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use o Designer de fluxo de trabalho herdado quando você precisa direcionar o .NET Framework versão 3.5 ou o WinFX.
+
+O **condição selecione** caixa de diálogo é usada para selecionar uma condição declarativa de regra a ser atribuído à propriedade de condição de uma atividade. Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -31,9 +34,9 @@ Este tópico descreve como usar o **condição selecione** caixa de diálogo no 
 
 -   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 
- Para obter informações sobre como acessar o **condição selecione** caixa de diálogo, consulte [como: criar uma condição declarativa de regra (herdado)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+Para obter informações sobre como acessar o **condição selecione** caixa de diálogo, consulte [como: criar uma condição declarativa de regra (herdado)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
- A tabela a seguir descreve os elementos de interface de usuário do **condição selecione** caixa de diálogo.
+A tabela a seguir descreve os elementos de interface de usuário do **condição selecione** caixa de diálogo.
 
 |Elemento da Interface do Usuário|Descrição|
 |----------------|-----------------|

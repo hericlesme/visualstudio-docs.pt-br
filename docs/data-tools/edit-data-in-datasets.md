@@ -12,14 +12,15 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9acc81270ecf9c0dfc60d3e1cfed524e0ce97f5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 256b22281f64a1a04f8d691f2f48cc7b0295b1a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-data-in-datasets"></a>Editar dados em conjuntos de dados
 Você editar dados em tabelas de dados, assim como você editar os dados em uma tabela em qualquer banco de dados. O processo pode incluir inserir, atualizar e excluir registros na tabela. Em um formulário de associação de dados, você pode especificar quais campos são editáveis pelo usuário. Nesses casos, a infraestrutura de associação de dados trata todos os controle de alterações para que as alterações podem ser enviadas no banco de dados mais tarde. Se você programaticamente fazer edições em dados e quiser enviar essas alterações no banco de dados, você deve usar os objetos e métodos que fazem o controle de alterações para você.

@@ -13,14 +13,15 @@ ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e2f3085be670a3344bc8239de5e4dfe4c8f11303
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd0aa9ae269da4cfd4ae5ab3dfb45e96052d75fe
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles WPF a um conjunto de dados
 Neste passo a passo, você criará um aplicativo WPF que contém controles de associação de dados. Os controles são associados a registros de produto que são encapsulados em um conjunto de dados. Você também adicionará botões para navegar pelos produtos e salvar alterações em registros de produtos.

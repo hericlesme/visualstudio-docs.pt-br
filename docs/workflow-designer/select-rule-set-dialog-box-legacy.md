@@ -1,7 +1,9 @@
 ---
-title: Selecione a caixa de diálogo conjunto de regra (herdado) | Microsoft Docs
+title: Designer de fluxo de trabalho - Selecionar conjunto de regras de caixa de diálogo (legados)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Selecione a caixa de diálogo conjunto de regras (o legados)
-Este tópico descreve como usar o **Selecionar conjunto de regras** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- O **Selecionar conjunto de regras** caixa de diálogo é usada para selecionar um conjunto de regras que você pode usar com um [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) atividade. Para obter informações sobre como acessar o **Selecionar conjunto de regras** caixa de diálogo, consulte [como: criar a regra um PolicyActivity definida (herdado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Este tópico descreve como usar o **Selecionar conjunto de regras** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use o Designer de fluxo de trabalho herdado quando você precisa direcionar o .NET Framework versão 3.5 ou o WinFX.
 
- A tabela a seguir descreve os elementos de interface de usuário do **Selecionar conjunto de regras** caixa de diálogo.
+O **Selecionar conjunto de regras** caixa de diálogo é usada para selecionar um conjunto de regras que você pode usar com um [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) atividade. Para obter informações sobre como acessar o **Selecionar conjunto de regras** caixa de diálogo, consulte [como: criar a regra um PolicyActivity definida (herdado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
+A tabela a seguir descreve os elementos de interface de usuário do **Selecionar conjunto de regras** caixa de diálogo.
 
 |Elemento da Interface do Usuário|Descrição|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ Este tópico descreve como usar o **Selecionar conjunto de regras** caixa de di�
  Para obter mais informações sobre como criar e editar conjuntos de regras, consulte [definir Editor de caixa de diálogo regra (herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
-> O editor das regras de novas [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] que é usado para direcionar [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] não oferece suporte Multitargeting.
+> O editor de regras do Designer de fluxo de trabalho herdado que é usada para direcionar o .NET Framework versão 3.5 ou o WinFX não oferece suporte multiplataforma.
 
  Para obter mais informações sobre condições, consulte [usando condições em fluxos de trabalho](http://go.microsoft.com/fwlink?LinkID=65009).
 

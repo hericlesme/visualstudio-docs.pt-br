@@ -1,18 +1,20 @@
 ---
-title: 'Como: adicionar atividades à caixa de ferramentas | Microsoft Docs'
+title: 'Designer de fluxo de trabalho - como: adicionar atividades à caixa de ferramentas'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb101f5dff84f7e8d586ce33c63adbe30fa0dbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edb752ca64afd899ac9b3e463b9d29e4b3b68a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Como: Adicione atividades a caixa de ferramentas
 
@@ -27,7 +29,7 @@ As atividades podem ser adicionadas para o **caixa de ferramentas** em sua solu�
 3.  Compile o projeto. Se a compilação for bem-sucedida, uma nova categoria no **caixa de ferramentas** chamado "\<*nome do projeto*>" com a atividade personalizada incluída nessa categoria é exibida.
 
     > [!NOTE]
-    > Se a caixa de ferramentas é reiniciada, as atividades personalizados serão removidas, mesmo se a solução é compilado novamente. Para preencher novamente a caixa de ferramentas com atividades personalizados depois que redefinido, reinicie [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+    > Se a caixa de ferramentas é reiniciada, as atividades personalizados serão removidas, mesmo se a solução é compilado novamente. Para preencher novamente a caixa de ferramentas com atividades personalizadas depois que ele foi redefinido, reinicie o Visual Studio 2010.
 
     > [!NOTE]
     > A caixa de ferramentas só pode mostrar uma atividade de um determinado nome. Se duas atividades diferentes assemblies com o mesmo nome de classe, somente um exibirá.

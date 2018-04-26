@@ -1,7 +1,9 @@
 ---
-title: Caixa de diálogo de configuração tema (legados) | Microsoft Docs
+title: Designer de fluxo de trabalho - caixa de diálogo de configuração tema (legados)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
 helpviewer_keywords:
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ec33bbce8ee8ac770607d77918547fdbd705ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07ae376a09afd73c5744f7d1587c637a4b55410d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Caixa de diálogo de configuração tema (legados)
-Este tópico descreve como usar o **configuração de tema** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Um tema define o plano de fundo e de primeiro plano as cores, estilos, ícones, e outros elementos visuais de um fluxo de trabalho. Você pode salvar temas para reutilização por outros fluxos de trabalho.
+Este tópico descreve como usar o **configuração de tema** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use o Designer de fluxo de trabalho herdado quando você precisa direcionar o .NET Framework versão 3.5 ou o WinFX.
 
- Criar e editar temas usando o **configuração de tema** caixa de diálogo. Para abrir a caixa de diálogo, selecione **criar novo tema** no **fluxo de trabalho** menu ou com o botão direito do fluxo de trabalho superfície de design e selecione **criar novo tema**.
+Um tema define o plano de fundo e de primeiro plano as cores, estilos, ícones, e outros elementos visuais de um fluxo de trabalho. Você pode salvar temas para reutilização por outros fluxos de trabalho.
 
- A tabela a seguir descreve os elementos de interface de usuário do **configuração de tema** caixa de diálogo.
+Criar e editar temas usando o **configuração de tema** caixa de diálogo. Para abrir a caixa de diálogo, selecione **criar novo tema** no **fluxo de trabalho** menu ou com o botão direito do fluxo de trabalho superfície de design e selecione **criar novo tema**.
+
+A tabela a seguir descreve os elementos de interface de usuário do **configuração de tema** caixa de diálogo.
 
 |Elemento da Interface do Usuário|Descrição|
 |----------------|-----------------|

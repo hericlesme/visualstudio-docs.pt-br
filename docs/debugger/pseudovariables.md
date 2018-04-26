@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariáveis no depurador do Visual Studio
 Pseudovariáveis são termos usados para exibir certas informações em uma janela variável ou o **QuickWatch** caixa de diálogo. Você pode inserir um pseudovariável da mesma maneira que incorporaria uma variável normal. As pseudovariáveis não são variáveis, no entanto, e não correspondem aos nomes de variáveis em seu programa.  
@@ -49,7 +49,7 @@ $handles
 |`$` *RegisterName*<br /><br /> ou<br /><br /> `@` *RegisterName*|Exibe o conteúdo do registro de *registername*.<br /><br /> Normalmente, você pode exibir conteúdo do registro simplesmente inserindo o nome do registro. A única vez que você precisa usar essa sintaxe é quando o nome do registro sobrecarrega um nome de variável. Se o nome do registro for igual ao nome da variável no escopo atual, o depurador interpretará o nome como um nome de variável. Ou seja, quando `$` *registername* ou `@` *registername* é útil.|  
 |`$clk`|Exibe a hora em ciclos de relógio.|  
 |`$user`|Exibe uma estrutura com informações de conta para a conta que executa o aplicativo. Por motivo de segurança, as informações de senha não são exibidas.|  
-|`$exceptionstack`|Exibe o rastreamento de pilha da exceção atual de Tempo de Execução do Windows. `$ exceptionstack` funciona apenas em aplicativos UWP. `$ exceptionstack` não tem suporte para exceções de C++ e SHE|  
+|`$exceptionstack`|Exibe o rastreamento de pilha da exceção atual de Tempo de Execução do Windows. `$ exceptionstack` funciona apenas em aplicativos UWP. `$ exceptionstack` Não há suporte para exceções C++ e SEH|  
 |`$ReturnValue`|Mostra o valor retornado de um método .NET Framework.|  
   
  No C# e no Visual Basic, você pode usar as pseudovariáveis mostradas na tabela:  

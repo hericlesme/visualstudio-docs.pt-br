@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c0490e69ef63dc109ef0563d27a6412f7b54746
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7b97151ba98a4d854802d96205aefa59fbbdbfac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regras propagam alterações dentro do modelo
 Você pode criar uma regra do repositório para propagar uma alteração de um elemento para outro em visualização e modelagem SDK (VMSDK). Quando ocorre uma alteração para qualquer elemento no repositório de regras são agendadas para ser executado, normalmente quando a transação externa é confirmada. Há tipos diferentes de regras para diferentes tipos de eventos, como adicionar um elemento ou excluí-lo. Você pode anexar as regras para tipos específicos de elementos, formas ou diagramas. Muitos recursos internos são definidos por regras: por exemplo, regras de garantem que um diagrama é atualizado quando o modelo é alterado. Você pode personalizar sua linguagem específica de domínio adicionando suas próprias regras.

@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e41ece25a3dbf3caec47f55c6eb8ec865805d17b
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 303e7abfd2ea820de660ed70df915765f11b68a5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da web contém "\<html >..." e todas as outras partes padrão de uma página HTML. Inserido no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.

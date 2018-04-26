@@ -36,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04834f335fd4c9a49a2ef4de6b55adf6443d6e7c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Você pode definir pontos de interrupção quando você deseja interromper a execução do depurador, talvez para ver o estado de variáveis de código ou para examinar a pilha de chamadas. Eles são uma das técnicas de depuração mais importantes na caixa de ferramentas do desenvolvedor.  
@@ -247,8 +247,7 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
 |**$PNAME**|Nome do processo|  
 |**$TID**|id do thread|  
 |**$TNAME**|Nome do thread|  
-|**$TICK**||  
-|**$TNAME**||  
+|**$TICK**|Contagem de escala (do Windows `GetTickCount`)|  
   
 ##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Rótulos de ponto de interrupção  
  Rótulos de ponto de interrupção são usados somente no **pontos de interrupção** janela para classificar e filtrar a lista de pontos de interrupção. Para adicionar um rótulo para um ponto de interrupção, escolha a linha do ponto de interrupção e, em seguida, escolha **rótulo** no menu de contexto.  

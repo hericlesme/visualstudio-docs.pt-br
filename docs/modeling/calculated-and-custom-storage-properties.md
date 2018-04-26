@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1bdf6d413287f75fa57ef80525a43f86cd55c74d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ee7f51bd4921a86996f9bc82742649f1b0812a65
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 Todas as propriedades de domínio em uma domínio específico DSL (linguagem) podem ser exibidas para o usuário no diagrama e no seu Gerenciador de idioma e podem ser acessadas pelo código do programa. No entanto, as propriedades diferem da forma que seus valores são armazenados.

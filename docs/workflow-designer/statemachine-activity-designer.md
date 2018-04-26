@@ -1,7 +1,9 @@
 ---
-title: Designer de atividade de StateMachine | Microsoft Docs
+title: Designer de fluxo de trabalho - Designer de atividade de StateMachine
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - StateMachine Designer
 - System.Activities.Statements.StateMachine.UI
@@ -11,20 +13,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2e036c1921f5c6219947de9109f3a94092fa5395
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="statemachine-activity-designer"></a>Designer de atividade de StateMachine
+
 A atividade de <xref:System.Activities.Statements.StateMachine> contém uma coleção de estados e modelos de fluxos de trabalho usando o paradigma familiar do computador de estado.
 
 ## <a name="using-the-statemachine-activity-designer"></a>Usando o designer de atividade de StateMachine
- Para adicionar um <xref:System.Activities.Statements.StateMachine> atividade, arraste o **StateMachine** designer de atividade do **máquina de estado** seção o **caixa de ferramentas** e solte-o para o fluxo de trabalho do Windows Superfície do Designer. Para adicionar um estado filho a este <xref:System.Activities.Statements.StateMachine> atividade, arraste um <xref:System.Activities.Statements.State> ou <xref:System.Activities.Core.Presentation.FinalState> do **caixa de ferramentas** e solte-a para o **StateMachine**.
+
+Para adicionar um <xref:System.Activities.Statements.StateMachine> atividade, arraste o **StateMachine** designer de atividade do **máquina de estado** seção o **caixa de ferramentas** e solte-o para o fluxo de trabalho do Windows Superfície do Designer. Para adicionar um estado filho a este <xref:System.Activities.Statements.StateMachine> atividade, arraste um <xref:System.Activities.Statements.State> ou <xref:System.Activities.Core.Presentation.FinalState> do **caixa de ferramentas** e solte-a para o **StateMachine**.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Propriedades de atividade de StateMachine em Designer de Fluxo de Trabalho
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.StateMachine> que podem ser definidas usando o designer de fluxo de trabalho e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade e alguns podem ser editados na superfície de designer.
+
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.StateMachine> que podem ser definidas usando o designer de fluxo de trabalho e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade e alguns podem ser editados na superfície de designer.
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|

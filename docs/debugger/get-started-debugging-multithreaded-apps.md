@@ -1,5 +1,6 @@
 ---
-title: Começar a depurar aplicativos multithread | Microsoft Docs
+title: Aprenda a depurar aplicativos multithread
+description: Depurar usando o windows pilhas paralelas e inspeção paralela no Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.technology: vs-ide-debug
@@ -18,13 +19,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 067f28cfbc90d26088b37eb40b730edca37533d2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb178a0a048a3696fc2c1ec642127906c8b83424
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Começar a depuração de um aplicativo multithread no Visual Studio
+# <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Começar a depurar aplicativos multithread no Visual Studio
 Visual Studio fornece várias ferramentas e elementos de interface do usuário para ajudá-lo a depurar aplicativos multithread. Este tutorial mostra como usar marcadores de thread, o **pilhas paralelas** janela, o **inspeção paralela** janela pontos de interrupção condicionais e pontos de interrupção de filtro. Este tutorial leva apenas alguns minutos, mas concluí-la irá familiarizá-lo com os recursos para depurar aplicativos multithread.
 
 |         |         |

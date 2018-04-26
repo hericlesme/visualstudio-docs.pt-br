@@ -6,14 +6,15 @@ ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58acdbba70ca60f5b48f1748ca9ea4ca3ad09f3e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0b81d67d6897826ab2f6de1e3b48663b18bffdb1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Como: criar LINQ para classes SQL mapeadas para tabelas e exibições (Object Relational Designer)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classes que são mapeados para tabelas de banco de dados e modos de exibição são chamados *classes de entidade*. A classe da entidade é mapeado para um registro, enquanto as propriedades individuais de uma classe de entidade mapeiam para as colunas individuais que compõem um registro. Criar classes de entidade com base em tabelas de banco de dados ou exibições arrastando tabelas ou exibições do **Server Explorer**/**Pesquisador de objetos de banco de dados** até o [LINQ to SQL Tools no O Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). O [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] gera as classes e se aplica a específica [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atributos para habilitar [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funcionalidade (a comunicação de dados e recursos de edição a <xref:System.Data.Linq.DataContext>). Para obter informações detalhadas sobre [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] classes, consulte [o LINQ no modelo de objeto do SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).

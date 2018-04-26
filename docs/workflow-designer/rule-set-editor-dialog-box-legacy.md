@@ -1,7 +1,9 @@
 ---
-title: Conjunto de regras de caixa de diálogo Editor (herdado) | Microsoft Docs
+title: Designer de fluxo de trabalho - (herdado) de caixa de diálogo Editor de conjunto de regras
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Caixa de diálogo do editor de regra (legados)
-Este tópico descreve como usar o **Editor de conjunto de regra** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- O **Editor de conjunto de regras** caixa de diálogo é usada para criar e modificar [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) regra conjuntos, que são serializados em um arquivo. rules.
+Este tópico descreve como usar o **Editor de conjunto de regra** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use o Designer de fluxo de trabalho herdado quando você precisa direcionar o .NET Framework versão 3.5 ou o WinFX.
+
+O **Editor de conjunto de regras** caixa de diálogo é usada para criar e modificar [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) regra conjuntos, que são serializados em um arquivo. rules.
 
 > [!NOTE]
 > Se você quiser abrir o arquivo. Rules com o **Editor XML com codificação**, primeiro você deve fechar a janela designer associada para o fluxo de trabalho ou atividade.
 
- Para obter informações sobre como acessar o **Editor de conjunto de regras** caixa de diálogo, consulte [como: criar a regra um PolicyActivity definida (herdado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Para obter informações sobre como acessar o **Editor de conjunto de regras** caixa de diálogo, consulte [como: criar a regra um PolicyActivity definida (herdado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
-> O editor das regras de novas [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] que é usado para direcionar [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] não oferece suporte Multitargeting.
+> O editor de regras do Designer de fluxo de trabalho herdado que é usada para direcionar o .NET Framework versão 3.5 ou o WinFX não oferece suporte multiplataforma.
 
- A tabela a seguir descreve os elementos de interface de usuário do **Editor de conjunto de regra** caixa de diálogo.
+A tabela a seguir descreve os elementos de interface de usuário do **Editor de conjunto de regra** caixa de diálogo.
 
 |Elemento da Interface do Usuário|Descrição|
 |----------------|-----------------|

@@ -1,7 +1,9 @@
 ---
-title: 'Como: adicionar um novo Item a um projeto de fluxo de trabalho (legados) | Microsoft Docs'
+title: 'Designer de fluxo de trabalho - como: adicionar um novo Item a um projeto de fluxo de trabalho (legados)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Como: Adicionar um novo item em um fluxo de trabalho Project (o legados)
-Depois de criar um projeto de fluxo de trabalho usando o Designer de fluxo de trabalho herdado do Windows fornecida pelo [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] que tem como alvo o o [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], você pode adicionar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] itens e outros familiar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] itens de sua projeto.
 
- A tabela a seguir lista os itens de [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] que você pode adicionar a um projeto de fluxo de trabalho.
+Depois de criar um projeto de fluxo de trabalho usando o Designer de fluxo de trabalho do Windows fornecida pelo Visual Studio 2010 que tem como alvo o .NET Framework versão 3.5 ou o WinFX herdado, você pode adicionar itens do Windows Workflow Foundation (WF) e outros familiares Visual Studio itens ao seu projeto.
+
+A tabela a seguir lista os itens do Windows Workflow Foundation que você pode adicionar a um projeto de fluxo de trabalho.
 
 |Item|Descrição|
 |----------|-----------------|
@@ -33,7 +36,7 @@ Depois de criar um projeto de fluxo de trabalho usando o Designer de fluxo de tr
 |Fluxo de trabalho do computador de estado (código)|Um trabalho do computador de estado com a definição de trabalho em um código de arquivo e de usuário do designer de código em um arquivo separado código.|
 |Fluxo de trabalho do computador de estado (com separação de código)|Um trabalho do computador de estado com a definição de trabalho expressa como a marcação de fluxo de trabalho e o código do usuário em um arquivo separado código.|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>Para adicionar um novo item em um fluxo de trabalho projeto
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>Para adicionar um novo item em um fluxo de trabalho projeto
 
 1.  Sobre o **projeto** menu, clique em **adicionar um novo Item**.
 

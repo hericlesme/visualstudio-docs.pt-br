@@ -1,6 +1,7 @@
 ---
 title: Conjunto de regras mínimas misto
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f5e64c0c8c8893caac738df5616140d7379c56
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 160990ad1e7ffd3dd31e445e167db0e14d08ca99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus projetos do C++ que dão suporte a Common Language Runtime, inclusive falhas potenciais de segurança e falhas de aplicativo. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que cria para seus projetos em C++ que dão suporte a Common Language Runtime.

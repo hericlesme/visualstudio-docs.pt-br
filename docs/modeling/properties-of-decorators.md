@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d99ec880b00583726b0f0c3aa7368b0f5860f847
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0521936dd155c162d045b451f4570ef9a1958c8b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-decorators"></a>Propriedades de decoradores
 Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparecer em conectores ou formas no diagrama. As tabelas a seguir mostram as propriedades para os três tipos de decorador. Algumas das propriedades aparecem somente em decoradores forma ou somente em decoradores de conector.

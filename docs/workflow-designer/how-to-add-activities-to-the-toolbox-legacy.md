@@ -1,7 +1,9 @@
 ---
-title: 'Como: adicionar atividades à caixa de ferramentas (herdado) | Microsoft Docs'
+title: 'Designer de fluxo de trabalho - como: adicionar atividades à caixa de ferramentas (o legados)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Toolbox, adding activities
 - activities, adding to Toolbox
@@ -11,16 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 779735cb1d163db9e7b05e2892d01a991a4a4c2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99a8e1cef2ff5ddd526133355c608fa5218573d1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Como: Adicione atividades a caixa de ferramentas (o legados)
-Ao criar uma solução de fluxo de trabalho com o Designer de fluxo de trabalho herdado do Windows que tem como destino o [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], atividades personalizadas podem ser adicionadas ao projeto de fluxo de trabalho e seus designers colocados no **caixa de ferramentas** para facilitar o acesso. Você também pode adicionar atividades diretamente para o **caixa de ferramentas** de uma biblioteca de vínculo dinâmico (DLL).
 
-### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Para adicionar uma atividade à caixa de ferramentas de uma DLL
+Ao criar uma solução de fluxo de trabalho com o Designer de fluxo de trabalho herdado do Windows que tem como alvo o .NET Framework versão 3.5 ou o WinFX, atividades personalizadas podem ser adicionadas ao projeto de fluxo de trabalho e seus designers colocada no **caixa de ferramentas** para facilitar o acesso. Você também pode adicionar atividades diretamente para o **caixa de ferramentas** de uma biblioteca de vínculo dinâmico (DLL).
+
+## <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Para adicionar uma atividade à caixa de ferramentas de uma DLL
 
 1.  Clique com botão direito a superfície da janela da caixa de ferramentas em **Windows Workflow**e, em seguida, clique em **escolher itens**.
 

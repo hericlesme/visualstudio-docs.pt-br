@@ -1,7 +1,9 @@
 ---
-title: Vincular a uma atividade&#39;caixa de diálogo de propriedade s (herdado) | Microsoft Docs
+title: Designer de fluxo de trabalho - associar a uma atividade&#39;caixa de diálogo de propriedade s (herdado)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Vincular a uma atividade&#39;caixa de diálogo de propriedade s (herdado)
-Este tópico descreve como usar o **associar a propriedade de uma atividade** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Associar à caixa de diálogo de propriedade de uma atividade (legados)
+
+Este tópico descreve como usar o **associar a propriedade de uma atividade** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use o Designer de fluxo de trabalho herdado quando você precisa direcionar o .NET Framework versão 3.5 ou o WinFX.
 
  Um tipo de instância de propriedade de dependência pode ser associado a propriedade pública ou ao evento de outra atividade. Para obter mais informações sobre associação de atividade, consulte [usando propriedades de dependência](http://go.microsoft.com/fwlink?LinkID=65007).
 

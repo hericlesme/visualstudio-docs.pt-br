@@ -12,12 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 474dd6e1ec655b27c9b447bcb3197c07dba56ecf
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 780c9c98bc6be110a0c8bc987a70aeea3344d0e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
 Você pode usar formas de imagem para especificar como as classes de domínio são exibidos em um designer gerado. Define uma forma de imagem ao definir o `Image` propriedade da classe para um arquivo de imagem predefinida. Há suporte para os seguintes formatos:

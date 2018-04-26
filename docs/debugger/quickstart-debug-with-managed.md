@@ -1,5 +1,6 @@
 ---
-title: Depurar com código gerenciado usando o depurador do Visual Studio | Microsoft Docs
+title: Depurar o código gerenciado | Microsoft Docs
+description: Depurar c# ou Visual Basic usando o depurador do Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
 ms.technology: vs-ide-debug
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e209ef4385466be1009b19dde850751695344afe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e895fe9844740fbb3fdd670ff53dfe0b72dbdfb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Depurar com código gerenciado usando o depurador do Visual Studio
+# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Início rápido: Depurar com código gerenciado usando o depurador do Visual Studio
 
 O depurador do Visual Studio fornece muitos recursos poderosos para ajudá-lo a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 

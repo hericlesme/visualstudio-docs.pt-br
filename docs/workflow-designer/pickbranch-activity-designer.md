@@ -1,7 +1,9 @@
 ---
-title: Designer de atividade de PickBranch | Microsoft Docs
+title: Designer de fluxo de trabalho - Designer de atividade de PickBranch
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
@@ -10,26 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c7fbb7dcacbf8d790e161a2af864c7a5e7e2c35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ea106a96a5d6b81ee0b0b898c881eb752582f8d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pickbranch-activity-designer"></a>Designer de atividade de PickBranch
+
 <xref:System.Activities.Statements.PickBranch> fornece um caminho de execução baseado em uma atividade de <xref:System.Activities.Statements.Pick> que pode ser acionada por um evento de entrada.
 
 ## <a name="pickbranch"></a>PickBranch
- os objetos de<xref:System.Activities.Statements.PickBranch> estão contidos na coleção de <xref:System.Activities.Statements.Pick.Branches%2A> de uma atividade de <xref:System.Activities.Statements.Pick> . Cada <xref:System.Activities.Statements.PickBranch> está contido em uma ramificação de atividade de <xref:System.Activities.Statements.Pick> e pode ser executado devido a qualquer evento de entrada que serve como um disparador. Dessa forma o Designer de fluxo de trabalho do Windows fornece a modelagem de fluxo de controle com base em eventos. Cada <xref:System.Activities.Statements.PickBranch> contém <xref:System.Activities.Statements.PickBranch.Trigger%2A> e <xref:System.Activities.Statements.PickBranch.Action%2A>.
+
+os objetos de<xref:System.Activities.Statements.PickBranch> estão contidos na coleção de <xref:System.Activities.Statements.Pick.Branches%2A> de uma atividade de <xref:System.Activities.Statements.Pick> . Cada <xref:System.Activities.Statements.PickBranch> está contido em uma ramificação de atividade de <xref:System.Activities.Statements.Pick> e pode ser executado devido a qualquer evento de entrada que serve como um disparador. Dessa forma o Designer de fluxo de trabalho do Windows fornece a modelagem de fluxo de controle com base em eventos. Cada <xref:System.Activities.Statements.PickBranch> contém <xref:System.Activities.Statements.PickBranch.Trigger%2A> e <xref:System.Activities.Statements.PickBranch.Action%2A>.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Como usar o designer de atividade de picareta
- O **PickBranch** designer pode ser encontrado no **fluxo de controle** categoria do **caixa de ferramentas**, que é acessado clicando o **caixa de ferramentas** guia [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X).
 
- Dois vazio <xref:System.Activities.Statements.PickBranch> objetos com exibem nomes de **Branch1** e **Branch2** são criados por padrão como elementos de um <xref:System.Activities.Statements.Pick> atividade quando o **escolher** designer de atividade inicialmente é descartado para a [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Esses respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valores de propriedade podem ser editados no **PickBranch** cabeçalho designer ou dentro de **propriedades** janela para cada ramificação.
+O **PickBranch** designer pode ser encontrado no **fluxo de controle** categoria do **caixa de ferramentas**, que é acessado clicando o **caixa de ferramentas** guia no Designer de fluxo de trabalho (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X).
 
- Há duas maneiras de adicionar <xref:System.Activities.Statements.PickBranch> objetos para a coleção de um <xref:System.Activities.Statements.Pick> objeto: arrastando e soltando o **PickBranch** designer do **caixa de ferramentas** ou usando o menu de contexto dentro de **escolher** superfície de design:
+Dois vazio <xref:System.Activities.Statements.PickBranch> objetos com exibem nomes de **Branch1** e **Branch2** são criados por padrão como elementos de um <xref:System.Activities.Statements.Pick> atividade quando o **escolher** designer de atividade é descartado inicialmente no Designer de fluxo de trabalho. Esses respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valores de propriedade podem ser editados no **PickBranch** cabeçalho designer ou dentro de **propriedades** janela para cada ramificação.
 
-1.  O **PickBranch** designer cria um <xref:System.Activities.Statements.PickBranch> quando ele é arrastado do **caixa de ferramentas** e descartado em uma das ramificações de um **escolher** designer de atividade sobre o [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superfície. Novos objetos de <xref:System.Activities.Statements.PickBranch> podem ser colocados dentro do designer de <xref:System.Activities.Statements.Pick> para a esquerda ou direita de todos os elementos existentes de <xref:System.Activities.Statements.PickBranch> já contidos na coleção. Ao arrastar um **PickBranch** designer para o **escolher** designer com o mouse, o **escolher** designer usa uma faixa cinza azul vertical para indicar onde o <xref:System.Activities.Statements.PickBranch> é adicionado para o posicionamento de um determinado mouse.
+Há duas maneiras de adicionar <xref:System.Activities.Statements.PickBranch> objetos para a coleção de um <xref:System.Activities.Statements.Pick> objeto: arrastando e soltando o **PickBranch** designer do **caixa de ferramentas** ou usando o menu de contexto dentro de **escolher** superfície de design:
+
+1.  O **PickBranch** designer cria um <xref:System.Activities.Statements.PickBranch> quando ele é arrastado do **caixa de ferramentas** e descartado em uma das ramificações de um **escolher** designer de atividade sobre o Superfície do Designer de fluxo de trabalho. Novos objetos de <xref:System.Activities.Statements.PickBranch> podem ser colocados dentro do designer de <xref:System.Activities.Statements.Pick> para a esquerda ou direita de todos os elementos existentes de <xref:System.Activities.Statements.PickBranch> já contidos na coleção. Ao arrastar um **PickBranch** designer para o **escolher** designer com o mouse, o **escolher** designer usa uma faixa cinza azul vertical para indicar onde o <xref:System.Activities.Statements.PickBranch> é adicionado para o posicionamento de um determinado mouse.
 
 2.  Clique com botão direito **escolher** designer de atividade (mas não dentro **PickBranch** designer) para obter um menu de contexto e selecione **criar ramificação** para adicionar um novo <xref:System.Activities.Statements.PickBranch>. Observe que o novo <xref:System.Activities.Statements.PickBranch> é adicionada à direita do existente <xref:System.Activities.Statements.PickBranch> objetos no **escolher** designer.
 
@@ -46,7 +51,7 @@ ms.lasthandoff: 04/16/2018
  Certifique-se de selecionar o **PickBranch** designer, como selecionar uma das atividades dentro de seu **gatilho** ou **ação** caixas exclui uma dessas atividades por engano e não o <xref:System.Activities.Statements.PickBranch> objeto.
 
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>Propriedades de PickBranch em Designer de Fluxo de Trabalho
- A tabela a seguir mostra as propriedades mais úteis de <xref:System.Activities.Statements.PickBranch> e descreve como usá-los em [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ A tabela a seguir mostra o mais útil <xref:System.Activities.Statements.PickBranch> propriedades e descreve como usá-los no Designer de fluxo de trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|

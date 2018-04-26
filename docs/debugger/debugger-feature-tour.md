@@ -1,6 +1,6 @@
 ---
-title: Tour pelos recursos – do depurador Visual Studio | Microsoft Docs
-description: Faça um tour pelo depurador do Visual Studio
+title: Primeiro examinar o depurador
+description: Dar uma olhada rápida os diferentes recursos do depurador do Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Início rápido: Primeiro examinar o depurador do Visual Studio
+# <a name="first-look-at-the-visual-studio-debugger"></a>Primeiro examinar o depurador do Visual Studio
 
 Este tópico apresenta os recursos do depurador do Visual Studio. Se você deseja acompanhar abrindo seu próprio aplicativo no Visual Studio, você pode fazer isso ou você pode acompanhar um aplicativo de exemplo usando o [guia do Iniciante](../debugger/getting-started-with-the-debugger.md).
 
@@ -157,7 +157,7 @@ Durante a depuração, clique em um objeto e escolha **Adicionar inspeção**.
 
 ![Janela Inspecionar](../debugger/media/dbg-tour-watch-window.png "janela Inspecionar")
 
-Neste exemplo, você tem uma inspeção ativada a `File` objeto e você pode ver seu valor alterar quando você percorre o depurador. Ao contrário de outras janelas variável, o **inspecionar** windows sempre mostrar as variáveis que você está observando (estão esmaecidos quando fora do escopo).
+Neste exemplo, você tem uma inspeção ativada a `f` objeto e você pode ver seu valor alterar quando você percorre o depurador. Ao contrário de outras janelas variável, o **inspecionar** windows sempre mostrar as variáveis que você está observando (estão esmaecidos quando fora do escopo).
 
 Para obter mais informações, consulte [definir uma inspeção usando a observação e QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ Para obter mais informações, consulte [depurar aplicativos do ASP.NET ao vivo 
 
 Para obter mais informações, consulte a página [View snapshots using IntelliTrace step-back](../debugger/how-to-use-intellitrace-step-back.md) (Exibir instantâneos usando o retrocesso do IntelliTrace).
 
-## <a name="more-features-to-look-at"></a>Mais recursos para examinar
+## <a name="next-steps"></a>Próximas etapas
 
--   [Dicas e truques do depurador](../debugger/debugger-tips-and-tricks.md) Saiba como aumentar sua produtividade com o depurador.
+Neste tutorial, você teve uma visão geral de muitos recursos do depurador. Talvez você queira uma análise mais detalhada desses recursos usando um aplicativo de exemplo
 
--   [Editar e continuar](../debugger/edit-and-continue.md) para um subconjunto de idiomas (c#, C++, Visual Basic), o recurso Editar e continuar permite que você edite o código no meio de uma sessão de depuração.
-
--   [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md) descreve como depurar aplicativos multithread. 
-
--   [Depuração remota](../debugger/remote-debugging.md) descreve como depurar aplicativos em execução em outros computadores ou dispositivos. 
-  
--   [IntelliTrace](../debugger/intellitrace.md) descreve o recurso IntelliTrace no Visual Studio Enterprise. Você pode usá-lo para registro e rastreamento de histórico de execução do seu código.
-
--   [Uso de rede](../profiling/network-usage.md) descreve uma ferramenta de criação de perfil que você pode usar para depurar serviços da web e outros recursos de rede no Windows aplicativos UWP (Universal). Use a ferramenta para examinar as cargas.
-
--   [SDK de acesso à Interface de depuração](../debugger/debug-interface-access/debug-interface-access-sdk.md) descreve o Microsoft Debug Interface Access Software Development Kit (SDK do DIA). O DIA SDK fornece acesso a informações de depuração armazenadas em arquivos de banco de dados do programa (.pdb) gerados por ferramentas de pós-compilador da Microsoft.  
-
-## <a name="see-also"></a>Consulte também  
- [Depurando no Visual Studio](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [Aprenda a depurar usando o Visual Studio](../debugger/getting-started-with-the-debugger.md)

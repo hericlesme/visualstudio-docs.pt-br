@@ -6,14 +6,15 @@ ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d086157761bbade92e7b79973876d18bc52f2fd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ffec139089f77a1d5c3ffd855e16f12b31e35c17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Como: criar métodos DataContext mapeados para procedimentos armazenados e funções (Object Relational Designer)
 Procedimentos armazenados e funções podem ser adicionadas para o [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] como <xref:System.Data.Linq.DataContext> métodos. Chamar o método e passar os parâmetros necessários executa a função ou procedimento armazenado no banco de dados e retorna os dados no tipo de retorno de <xref:System.Data.Linq.DataContext> método. Para obter informações detalhadas sobre <xref:System.Data.Linq.DataContext> métodos, consulte [métodos DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md).

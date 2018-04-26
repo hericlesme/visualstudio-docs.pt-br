@@ -1,6 +1,7 @@
 ---
 title: Validar o sistema durante o desenvolvimento
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4ebc815f474f1b8a1c59c9736f9014ba02e523
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="validate-your-system-during-development"></a>Validar o sistema durante o desenvolvimento
 O Visual Studio pode ajudar a manter seu software consistente com os requisitos dos usuários e a arquitetura do seu sistema.

@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4747d41377d3f7cccce9142d0659251d3199714a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 Você pode permitir que um elemento ser arrastado para outra, da caixa de ferramentas ou em uma operação de colar ou mover a operação. Você pode fazer com que os elementos movidos vinculados para os elementos de destino, usando as relações que você especificar.

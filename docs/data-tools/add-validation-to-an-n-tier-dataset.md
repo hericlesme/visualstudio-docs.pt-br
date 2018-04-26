@@ -13,14 +13,15 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed9bcb4521b5e9bdad839563aae1c566d20a5681
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8fbbf6a28d63e755929cc9d8a6c62ff7649b2f1c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Adicionar validação a um conjunto de dados de n camadas
 Adicionando validação a um conjunto de dados que é separado em uma solução de n-camadas é basicamente o mesmo que adicionar validação a um conjunto de dados de arquivo único (um conjunto de dados em um único projeto). É o local sugerido para executar a validação de dados durante o <xref:System.Data.DataTable.ColumnChanging> e/ou <xref:System.Data.DataTable.RowChanging> eventos de uma tabela de dados.

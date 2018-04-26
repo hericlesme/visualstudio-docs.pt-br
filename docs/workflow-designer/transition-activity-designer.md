@@ -1,7 +1,9 @@
 ---
-title: Designer de atividade de transição | Microsoft Docs
+title: Designer de fluxo de trabalho - Designer de atividade de transição
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25b00c38110e8a97d5e5465f3e170bef9c28bb88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f63369c67470378856133b912e6da48f924bb45
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transition-activity-designer"></a>Fazer a transição o designer de atividades
+
 <xref:System.Activities.Statements.Transition> representa a transição entre dois estados.
 
 ## <a name="using-the-transition-activity-designer"></a>Usando o designer de atividade de transição
- O designer de atividade de transição permite que você configure uma transição entre dois estados.
+
+O designer de atividade de transição permite que você configure uma transição entre dois estados.
 
 ### <a name="transition-properties-in-the-workflow-designer"></a>Propriedades de transição em Designer de Fluxo de Trabalho
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Transition> que podem ser definidas usando o designer de fluxo de trabalho e descreve como elas são usadas no designer.
+
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Transition> que podem ser definidas usando o designer de fluxo de trabalho e descreve como elas são usadas no designer.
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|
@@ -35,12 +40,13 @@ ms.lasthandoff: 04/16/2018
 |**Destino**|verdadeiro|Indica o estado que as transições do computador de estado após a transição concluírem. Isso corresponde à propriedade de <xref:System.Activities.Statements.Transition.To%2A> de transição no modelo de objeto. Clicando no nome do estado de destino alterna a exibição do designer para uma exibição expandida de estado. Esse valor é definido quando a transição é criada e pode ser modificada arrastando a seta que se conecta a transição para estado de destino no designer.|
 
 ### <a name="creating-transitions"></a>Criar transições
- As transições são criados arrastando uma linha de um estado para outro, ou soltando um estado em triângulos que aparecem quando um estado é arrastado sobre outro estado. Para criar uma transição, arrastando passa o mouse sobre a borda do estado de origem, e arraste uma linha de estado da fonte para o estado de destino. Para criar uma transição soltando-se, arraste o estado de destino e focalizar-lo sobre o estado de origem, e solte-o em um dos quatro triângulos que aparecem em torno do estado de exibição source. O estado de destino pode ser um novo estado que arrastados o **caixa de ferramentas**, ou um estado existente arrastado do designer de fluxo de trabalho.
+
+As transições são criados arrastando uma linha de um estado para outro, ou soltando um estado em triângulos que aparecem quando um estado é arrastado sobre outro estado. Para criar uma transição, arrastando passa o mouse sobre a borda do estado de origem, e arraste uma linha de estado da fonte para o estado de destino. Para criar uma transição soltando-se, arraste o estado de destino e focalizar-lo sobre o estado de origem, e solte-o em um dos quatro triângulos que aparecem em torno do estado de exibição source. O estado de destino pode ser um novo estado que arrastados o **caixa de ferramentas**, ou um estado existente arrastado do designer de fluxo de trabalho.
 
 > [!NOTE]
 > Um único estado em um computador de estado pode ter até 76 transições criadas utilizando o designer de fluxo de trabalho. O limite nas transições para um estado para fluxos de trabalho criados fora de designer é delimitado somente por recursos do sistema.
 
- As transições compartilhadas do disparador são o conjunto de transições que compartilham o mesmo evento do disparador. Um disparador compartilhado permite a progressão condicional a um estado de destino com base na classificação de expressões configuradas para várias transições que compartilham um evento comuns de disparador. Para adicionar ações adicionais para uma transição e criar uma transição compartilhada, clique no círculo que indica o início de transição desejada e arraste-o para estado desejado. A nova transição compartilhar um disparador mesmo que a transição inicial, mas terá uma condição e uma ação exclusivos. Transições compartilhadas também podem ser criadas de dentro do designer de transição clicando **adicionar compartilhado transição de gatilho** na parte inferior do designer de transição e, em seguida, selecionar o estado de destino desejado do  **Estados disponíveis para conexão** lista suspensa.
+As transições compartilhadas do disparador são o conjunto de transições que compartilham o mesmo evento do disparador. Um disparador compartilhado permite a progressão condicional a um estado de destino com base na classificação de expressões configuradas para várias transições que compartilham um evento comuns de disparador. Para adicionar ações adicionais para uma transição e criar uma transição compartilhada, clique no círculo que indica o início de transição desejada e arraste-o para estado desejado. A nova transição compartilhar um disparador mesmo que a transição inicial, mas terá uma condição e uma ação exclusivos. Transições compartilhadas também podem ser criadas de dentro do designer de transição clicando **adicionar compartilhado transição de gatilho** na parte inferior do designer de transição e, em seguida, selecionar o estado de destino desejado do  **Estados disponíveis para conexão** lista suspensa.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,7 +1,9 @@
 ---
-title: ExistsInCollection&lt;T&gt; Designer de atividade | Microsoft Docs
+title: Designer de fluxo de trabalho - ExistsInCollection&lt;T&gt; Designer de atividade
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
@@ -10,24 +12,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6175fdc9c0af417acb8bcfe9d4297172b31a2e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; Designer de atividade
+# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > Designer de atividade
+
 O **ExistsInCollection\<T >** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.ExistsInCollection%601> atividade.
 
-## <a name="the-existsincollectiont-activity"></a>O ExistsInCollection < T\> atividade
+## <a name="the-existsincollectiont-activity"></a>O ExistsInCollection\<T > atividade
  A atividade de <xref:System.Activities.Statements.ExistsInCollection%601> determina se um item específico existe em uma coleção específico.
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Usando o ExistsInCollection\<T > Designer de atividade
- O **ExistsInCollection\<T >** designer de atividade pode ser encontrado no **coleção** categoria do **caixa de ferramentas**, que é acessado clicando o  **Caixa de ferramentas** guia de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
+ O **ExistsInCollection\<T >** designer de atividade pode ser encontrado no **coleção** categoria do **caixa de ferramentas**, que é acessado clicando o  **Caixa de ferramentas** guia do Designer de fluxo de trabalho (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
 
- O **ExistsInCollection\<T >** designer de atividades pode ser arrastado o **caixa de ferramentas** e ignorados para o [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superfície onde quer que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.ExistsInCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de ExistsInCollection < Int32\>. (Por padrão, o *TypeArgument* é **Int32**. Pode ser alterado na grade de propriedade.)  O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **ExistsInCollection < T\>**  designer de atividade ou o **DisplayName** caixa da grade de propriedade. Outras propriedades devem ser editadas na grade de propriedade.
+ O **ExistsInCollection\<T >** designer de atividades pode ser arrastado do **caixa de ferramentas** e descartado para a superfície do Designer de fluxo de trabalho onde quer que as atividades geralmente são colocados, tais como dentro um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.ExistsInCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de ExistsInCollection < Int32\>. (Por padrão, o *TypeArgument* é **Int32**. Pode ser alterado na grade de propriedade.)  O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **ExistsInCollection < T\>**  designer de atividade ou o **DisplayName** caixa da grade de propriedade. Outras propriedades devem ser editadas na grade de propriedade.
 
-### <a name="the-existsincollectiont-properties"></a>O ExistsInCollection < T\> propriedades
+### <a name="the-existsincollectiont-properties"></a>O ExistsInCollection\<T > Propriedades
  A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.ExistsInCollection%601> e descreve como elas são usadas no designer.
 
 |Nome da Propriedade|Necessária|Uso|

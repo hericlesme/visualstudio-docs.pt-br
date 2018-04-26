@@ -1,27 +1,29 @@
 ---
-title: 'Como: criar uma biblioteca de atividades | Microsoft Docs'
+title: 'Designer de fluxo de trabalho - como: criar uma biblioteca de atividades'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef62a5098581042a4995d6c522e0757c361e9d4f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Como: Crie uma biblioteca de atividade
-As atividades personalizados são usadas para modelar seus processos comerciais específicos em um fluxo de trabalho. O modelo de biblioteca de atividades no [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] foi fornecido para permitir a criação de tais atividades personalizadas visualmente usando o Designer de fluxo de trabalho do Windows.
+As atividades personalizados são usadas para modelar seus processos comerciais específicos em um fluxo de trabalho. O modelo de biblioteca de atividades no Visual Studio 2010 foi fornecido para que você possa criar essas atividades personalizadas visualmente usando o Designer de fluxo de trabalho do Windows.
 
 ### <a name="to-create-a-workflow-activity-library"></a>Para criar uma biblioteca de atividade de fluxo de trabalho
 
-1.  Inicie o [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+1.  Inicie o Visual Studio 2010.
 
-2.  Sobre o **arquivo** , aponte para **novo**e, em seguida, selecione **projeto...** .
+2.  No menu **Arquivo**, aponte para **Novo** e selecione **Projeto**.
 
      A caixa de diálogo **Novo Projeto** é aberta.
 
@@ -36,7 +38,7 @@ As atividades personalizados são usadas para modelar seus processos comerciais 
 7.  No **solução** caixa, digite um nome descritivo para sua solução e clique em **Okey**.
 
     > [!NOTE]
-    > Se você quiser adicionar um aplicativo de console do fluxo de trabalho a uma solução existente, abra essa solução no [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], clique com botão direito da solução de **Solution Explorer**e selecione **adicionar**, em seguida, **Novo projeto...** para abrir o **novo projeto** caixa de diálogo. Continuar conforme descrito acima neste procedimento.
+    > Se você quiser adicionar um aplicativo de console do fluxo de trabalho a uma solução existente, abra a solução no Visual Studio 2010, clique com botão direito a solução em **Solution Explorer**e selecione **adicionar**, em seguida,  **Novo projeto** para abrir o **novo projeto** caixa de diálogo. Continuar conforme descrito acima neste procedimento.
 
 8.  O modelo de projeto cria uma definição de atividade em XAML. Designer de fluxo de trabalho do Windows é aberto e exibe a tela para a atividade personalizada.
 

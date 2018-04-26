@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 070f49b09086d463a13470f389a4857225b7add9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 2f2e0671229635eb3dd5fdd50aca15ce11d1ac3a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
 Um *decorador* é um ícone ou a linha de texto que aparece em uma forma em uma domínio específico DSL (linguagem). Você pode fazer o decorador aparecem e desaparecem dependendo do estado das propriedades no modelo. Por exemplo, em uma forma que representa uma pessoa, você pode ter diferentes ícones que aparecem dependendo o sexo da pessoa, o número de filhos e assim por diante.

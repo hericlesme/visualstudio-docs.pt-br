@@ -1,7 +1,9 @@
 ---
-title: 'Como: usar o Designer do argumento | Microsoft Docs'
+title: 'Designer de fluxo de trabalho - como: usar o Designer do argumento'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f4af6e06bbebe3f543deed68ff85f4cd0a39be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b94656c7242c4bc6bc1dd1430230dac62a5322f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-argument-designer"></a>Como: Use o designer do argumento
-Em comparação com versões anteriores de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o designer do argumento facilita permitir que os dados e fluam fora de uma atividade. O designer é acessado clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer contém uma lista de argumentos que aparecem em um formato tabular e podem ser classificados por cada um dos cabeçalhos de coluna, exceto para o **valor padrão** coluna. Cada argumento contiver um nome, a direção de in/out/in-out/property, o tipo, e o valor padrão de expressão (se houver). O nome e o valor padrão de expressão são campos editáveis de texto, e o tipo e direção são gota- suspensa. Para obter mais informações, consulte [variáveis e argumentos (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
-### <a name="to-create-a-new-argument"></a>Para criar um novo argumento
+Em comparação com versões anteriores do .NET Framework, o designer do argumento facilita a permitir que os dados fluem para dentro e fora de uma atividade. O designer é acessado clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer contém uma lista de argumentos que aparecem em um formato tabular e podem ser classificados por cada um dos cabeçalhos de coluna, exceto para o **valor padrão** coluna. Cada argumento contiver um nome, a direção de in/out/in-out/property, o tipo, e o valor padrão de expressão (se houver). O nome e o valor padrão de expressão são campos editáveis de texto, e o tipo e direção são gota- suspensa. Para obter mais informações, consulte [variáveis e argumentos (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
-1.  Abra uma solução de fluxo de trabalho ou de atividade em [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+## <a name="to-create-a-new-argument"></a>Para criar um novo argumento
+
+1.  Abra uma solução de fluxo de trabalho ou atividade no Visual Studio 2010.
 
 2.  Abra o designer de argumentos clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer dos argumentos aparece.
 

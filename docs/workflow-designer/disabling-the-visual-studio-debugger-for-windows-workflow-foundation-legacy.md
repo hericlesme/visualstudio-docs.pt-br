@@ -1,7 +1,9 @@
 ---
-title: Desativando o depurador do Visual Studio para Windows Workflow Foundation (legados) | Microsoft Docs
+title: Designer de fluxo de trabalho - desativando o depurador do Visual Studio para Windows Workflow Foundation (legados)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, disabling debugger
 - debugging workflows, disabling debugger
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609062f3f84538f7c1655cd5ca82971fc608f62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473ee507e35f5ec5df902df64ee34326dcf90a2b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Desativando o depurador do Visual Studio para Windows Workflow Foundation (legados)
 
-Este tópico descreve como desabilitar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando o arquivo de configuração durante a criação do depurador [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplicativos no Designer de fluxo de trabalho herdado do Windows. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Este tópico descreve como desabilitar o depurador do Visual Studio usando o arquivo de configuração ao criar aplicativos do Windows Workflow Foundation (WF) no Designer de fluxo de trabalho herdado do Windows. Use o Designer de fluxo de trabalho herdado quando você precisa direcionar o .NET Framework versão 3.5 ou o WinFX.
 
- Por padrão, o depurador de [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] para [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] é habilitado para um processo host. Para desabilitar a depuração de fluxo de trabalho, você deve explicitamente desativá-lo adicionando uma entrada de "DisableWorkflowDebugging"  **\<switches >** elemento o  **\<System. Diagnostics >**seção do arquivo de configuração de host.
+ Por padrão, o Visual Studio depurador para Windows Workflow Foundation (WF) está habilitado para um processo de host. Para desabilitar a depuração de fluxo de trabalho, você deve explicitamente desativá-lo adicionando uma entrada de "DisableWorkflowDebugging"  **\<switches >** elemento o  **\<System. Diagnostics >** seção do arquivo de configuração de host.
 
  O exemplo a seguir mostra como modificar o arquivo de configuração do host para desativar a depuração de fluxo de trabalho.
 

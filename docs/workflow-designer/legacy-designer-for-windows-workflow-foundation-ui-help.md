@@ -1,7 +1,9 @@
 ---
-title: Designer herdado para a Ajuda de interface do usuário do Windows Workflow Foundation | Microsoft Docs
+title: Designer de fluxo de trabalho - Designer herdado para ajuda de interface do usuário do Windows Workflow Foundation
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - UI reference
 - Visual Studio 2005 Extensions for Windows Workflow Foundation, UI reference
@@ -12,13 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5aa9e108113abe1e26226027e27a3867e28a61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8b3a84926f933e2e7f5d97a6e2f3562f2807560
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Designer herdado para a ajuda do Windows Workflow Foundation interface de usuário
-Esta seção contém tópicos da Ajuda contextual para o Designer de fluxo de trabalho herdado do Windows no [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Use o designer herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Você pode acessar esses tópicos do [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] interface de usuário, pressionando **F1** quando herdado [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] caixa de diálogo é aberta.
+Esta seção contém tópicos da Ajuda contextual para o Designer de fluxo de trabalho herdado do Windows no Visual Studio 2010. Use o designer herdado quando é necessário direcionar o .NET Framework versão 3.5 ou o WinFX.
+
+Você pode acessar esses tópicos na interface de usuário do Visual Studio pressionando **F1** quando uma caixa de diálogo do Designer de fluxo de trabalho herdada é aberta.

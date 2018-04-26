@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 50753da026f091d541bffd664f0aa964b4cba3f0
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7020d3f49d5a693d2b64891c089138be4c073115
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 Você pode personalizar a aparência e o comportamento da janela Propriedades no seu domínio-DSL (linguagem específica) em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio estão listada na janela Propriedades. Isso permite ver e editar os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para campos de forma no diagrama.

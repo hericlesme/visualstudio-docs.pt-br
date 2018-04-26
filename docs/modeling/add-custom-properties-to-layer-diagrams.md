@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2766f6487b6cf2fb39140eb9678afc9999e39545
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 915a65129b3131bf599903681b1e504d5d16d902
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Adicionar propriedades personalizadas a diagramas de dependência
 Quando você escreve o código de extensão para diagramas de dependência, você pode armazenar valores com qualquer elemento em um diagrama de dependência. Os valores serão mantidas quando o diagrama é salvo e aberto novamente. Você também pode ter essas propriedades aparecem no **propriedades** janela para que os usuários podem ver e editá-los. Por exemplo, você pode permitir que os usuários especificar uma expressão regular para cada camada e escrever código de validação para verificar se os nomes das classes em cada camada está de acordo com o padrão especificado pelo usuário.

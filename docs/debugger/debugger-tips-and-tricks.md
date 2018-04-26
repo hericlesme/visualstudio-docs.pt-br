@@ -1,5 +1,6 @@
 ---
-title: Dicas e truques no depurador do Visual Studio | Microsoft Docs
+title: Dicas e truques no depurador do Visual Studio
+description: Saiba mais sobre o dicas de produtividade para o depurador do Visual Studio
 ms.custom: ''
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
@@ -14,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 729ea8e59f0b6efd6006308719cba19fbc8b5690
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb4fb2c32f74a764e092e0e6f65685a358d64f54
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Saiba mais sobre dicas de produtividade e truques para o depurador no Visual Studio
 

@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 668ef447673897ce02d5d988ce20839006fead09
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 34c8c26343eef22d3b36ad70d4d7d484de76d866
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
 Modelos de texto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornecem uma maneira útil de geração de texto de qualquer tipo. Você pode usar modelos de texto para gerar o texto em tempo de execução como parte do seu aplicativo e em tempo de design para gerar alguns dos seus códigos de projeto. Este tópico resume a mais frequentes "Como fazer...?" perguntas.

@@ -1,7 +1,9 @@
 ---
-title: Designer de atividade de recebimento | Microsoft Docs
+title: Designer de fluxo de trabalho - Designer de atividade de recebimento
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -10,29 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7573c126ce8e11143d3b39a637c44649d15acf95
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="receive-activity-designer"></a>Recebe o designer de atividades
+
 O **Receive** designer de atividade é usado para criar e configurar um <xref:System.ServiceModel.Activities.Receive> atividade. Uma atividade de <xref:System.ServiceModel.Activities.Receive> é uma atividade que receberá uma mensagem que pode ser um tipo interno como <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> ou <xref:System.Xml.Linq.XElement>, ou um contrato definido de dados, o contrato de mensagem, ou a classe XML que pode ser serializada.
 
 ## <a name="the-receive-activity"></a>A atividade de receptor
- A atividade de <xref:System.ServiceModel.Activities.Receive> pode receber um item único ou vários itens dependendo do tipo de recebem o conteúdo usado. Uma atividade de <xref:System.ServiceModel.Activities.SendReply> pode ser associada a uma atividade de <xref:System.ServiceModel.Activities.Receive> que receberá uma mensagem como parte de um padrão de troca de solicitação/resposta de mensagem no serviço.
+
+A atividade de <xref:System.ServiceModel.Activities.Receive> pode receber um item único ou vários itens dependendo do tipo de recebem o conteúdo usado. Uma atividade de <xref:System.ServiceModel.Activities.SendReply> pode ser associada a uma atividade de <xref:System.ServiceModel.Activities.Receive> que receberá uma mensagem como parte de um padrão de troca de solicitação/resposta de mensagem no serviço.
 
 ### <a name="using-the-receive-activity-designer"></a>Usando o designer de atividade de receptor
- O **Receive** designer de atividade pode ser encontrado no **mensagens** categoria do **caixa de ferramentas**, que é acessado clicando o **ferramentas**guia o [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
+ O **Receive** designer de atividade pode ser encontrado no **mensagens** categoria do **caixa de ferramentas**, que é acessado clicando o **ferramentas**guia no Designer de fluxo de trabalho (como alternativa, selecione **barra de ferramentas** do **exibição** menu ou CTRL + ALT + X.)
 
- O **Receive** designer de atividades pode ser arrastado o **caixa de ferramentas** e removidos no [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] superfície onde quer que as atividades geralmente são colocadas. Isso cria uma atividade de <xref:System.ServiceModel.Activities.Receive> com <xref:System.Activities.Activity.DisplayName%2A> padrão Receive. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **Receive** designer de atividade ou o **DisplayName** caixa da grade de propriedade.
+ O **Receive** designer de atividades pode ser arrastado do **caixa de ferramentas** e descartado para a superfície do Designer de fluxo de trabalho onde quer que as atividades geralmente são colocadas. Isso cria uma atividade de <xref:System.ServiceModel.Activities.Receive> com <xref:System.Activities.Activity.DisplayName%2A> padrão Receive. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **Receive** designer de atividade ou o **DisplayName** caixa da grade de propriedade.
 
  Para criar um <xref:System.ServiceModel.Activities.SendReply> atividade e associá-lo a selecionado <xref:System.ServiceModel.Activities.Receive> atividade, com o botão direito a **Receive** clique em designer de atividade de **SendReply criar** item no menu de contexto e o **SendReplyToReceive** designer aparece abaixo do **Receive** designer. A atividade de <xref:System.ServiceModel.Activities.SendReply> é uma atividade que envia a mensagem de resposta como parte de um padrão de troca de solicitação/resposta de mensagem no serviço. Ele pode ser configurado com o **SendReplyToReceive** designer.
 
  Como alternativa, o **ReceiveAndSendReply** designer de modelo no **mensagens** categoria do **caixa de ferramentas** pode ser usado para criar um par de pré-configurado<xref:System.ServiceModel.Activities.Receive>e <xref:System.ServiceModel.Activities.SendReply> atividade. Para obter mais informações sobre o uso do **ReceiveAndSendReply** e **SendReplyToReceive** modelo, consulte o [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) tópico.
 
 ### <a name="the-receive-activity-properties"></a>As propriedades de atividade de receptor
- A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities.Receive> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedades ou na superfície de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] . A única propriedade necessário é a propriedade de <xref:System.ServiceModel.Activities.Receive.OperationName%2A> .
+ A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities.Receive> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedades ou na superfície do Designer de fluxo de trabalho. A única propriedade necessário é a propriedade de <xref:System.ServiceModel.Activities.Receive.OperationName%2A> .
 
 |Nome da Propriedade|Necessária|Uso|
 |-------------------|--------------|-----------|

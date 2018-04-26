@@ -1,7 +1,9 @@
 ---
-title: 'Como: criar uma regra de PolicyActivity definida (herdado) | Microsoft Docs'
+title: 'Designer de fluxo de trabalho - como: criar uma regra de PolicyActivity definida (o legados)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
 - Rule Set Editor dialog box
@@ -14,22 +16,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4911912aa46f5dc8a6aea9b9b20e87c1f83e576f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 57142fc21bc9db03a338f20a27e20b8af51b48cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Como: Criar uma regra de PolicyActivity definida (o legados)
 
-Este tópico descreve como criar uma regra de atividade de política definida usando o Designer de fluxo de trabalho herdado do Windows que tem como destino o [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Este tópico descreve como criar uma regra de atividade de política definida usando o Designer de fluxo de trabalho herdado do Windows que tem como destino o .NET Framework versão 3.5 ou o WinFX.
 
  Após você ter arrastado um **política** item de atividade do **caixa de ferramentas** à superfície de design de fluxo de trabalho, você deve selecionar uma regra existente ou criar uma nova regra definida para o [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) atividade. Selecione uma regra existente, definida por meio do [Selecionar regra de caixa de diálogo conjunto (herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) e criar conjuntos de regras usando o [definir Editor de caixa de diálogo regra (herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!NOTE]
 > Você pode abrir o [definir Editor de caixa de diálogo regra (herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) caixa de diálogo diretamente clicando duas vezes em um [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) atividade na superfície de design de fluxo de trabalho.
 
-### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Para selecionar ou criar uma regra definida para uma atividade de PolicyActivity
+## <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Para selecionar ou criar uma regra definida para uma atividade de PolicyActivity
 
 1.  Clique com botão direito do [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)e, em seguida, clique em **propriedades** para abrir o **propriedades** janela.
 

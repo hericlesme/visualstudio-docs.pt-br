@@ -1,7 +1,9 @@
 ---
-title: Navegue e selecione uma caixa de diálogo de tipo .NET | Microsoft Docs
+title: Designer de fluxo de trabalho - procurar e selecione uma caixa de diálogo de tipo .NET
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
@@ -11,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04aba24d3dffc96fb8e5288d74322258fa77ce19
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4d136c98acd2719abd07f8feb2f9def48ec6b2ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 
@@ -34,7 +36,7 @@ No **propriedades** designers, como o designer de variáveis, quando você selec
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selecionando um tipo de valor ou tipo de referência de navegador de tipo
 
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para selecionar um valor ou uma referência digite de navegador de tipo
+### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para selecionar um valor ou uma referência digite de navegador de tipo
 
 1.  No **nome do tipo** , digite o nome do tipo que você deseja usar.
 
@@ -44,7 +46,7 @@ No **propriedades** designers, como o designer de variáveis, quando você selec
 
     -   Digitar caracteres suficientes no **nome do tipo** caixa para identificar exclusivamente o tipo que você deseja usar e, em seguida, pressione enter para selecionar o tipo
 
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para selecionar um tipo genérico de navegador de tipo
+### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para selecionar um tipo genérico de navegador de tipo
 
 1.  No **nome do tipo** caixa, digite o nome do tipo que você deseja usar.
 

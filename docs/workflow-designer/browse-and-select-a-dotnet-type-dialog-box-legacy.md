@@ -1,7 +1,9 @@
 ---
-title: Navegue e selecione uma caixa de diálogo de tipo .NET (legados) | Microsoft Docs
+title: Designer de fluxo de trabalho - procurar e selecione uma caixa de diálogo de tipo .NET (legados)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a283caa664bb208613a695cb4afb8873caba3645
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23e311aa8e87fe799bc8ea22a22ffd8e789b3dcd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET (legados)
-Este tópico descreve como usar o **procurar e selecionar um tipo .NET** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+
+Este tópico descreve como usar o **procurar e selecionar um tipo .NET** caixa de diálogo no Designer de fluxo de trabalho herdado do Windows. Use o Designer de fluxo de trabalho herdado quando você precisa direcionar o .NET Framework versão 3.5 ou o WinFX.
 
  No **propriedades** janela, quando você seleciona propriedades que usam um tipo .NET Framework em um assembly referenciado, um botão de reticências **[...]**  aparece no final da caixa de texto da propriedade. Clique o **[...]**  abre o **procurar e selecionar um tipo .NET** caixa de diálogo. Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore assemblies referenciados. Por exemplo, quando você estiver usando o Designer de atividade no **propriedades** janela, clique no **classe Base** reticências **[...]**  para selecionar outra classe base para uma atividade de árvore de Assemblies referenciados.
 

@@ -6,14 +6,15 @@ ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20e21d801172469d0afe28d0b2aebc42a1eec401
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2d9f2c60a51d5e8a17b1fecf249e7a24a4ac25f0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Object Relational Designer)
 Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Objetos e executados como métodos típicos do <xref:System.Data.Linq.DataContext>. Eles também podem ser usados para substituir o padrão [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] comportamento de tempo de execução que executa inserções, atualizações e exclusões quando as alterações são salvas de classes de entidade para um banco de dados (por exemplo, ao chamar o <xref:System.Data.Linq.DataContext.SubmitChanges%2A> método).

@@ -1,6 +1,7 @@
 ---
 title: Avisos da análise de código para código gerenciado
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -16,11 +17,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 201bc04e2a5d030d40a060feda2a9e3e9ad6d45e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a8c092543dc24be8ac84f683196f73c8fb264f9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Avisos da análise de código para código gerenciado
 A ferramenta de análise de código gerenciado fornece avisos que indicam as violações de regra nas bibliotecas de código gerenciado. Os avisos são organizados em áreas de regra, como design, localização, desempenho e segurança. Cada aviso significa uma violação de uma regra de análise de código gerenciado. Esta seção fornece discussões detalhadas e exemplos de cada aviso de análise de código gerenciado.

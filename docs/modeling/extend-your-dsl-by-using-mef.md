@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a54aca1e3732f366172abc0b4acea92cd28c6fae
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 8cc48c70cd6fe8bd45ed65b96732d3db31a386e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estender a DSL usando MEF
 Você pode estender sua linguagem específica de domínio (DSL) usando o Managed Extensibility Framework (MEF). Você ou outros desenvolvedores poderão gravar extensões para o DSL sem alterar a definição de DSL e o código do programa. Essas extensões incluem comandos de menu, manipuladores de arrastar e soltar e validação. Os usuários poderão instalar o DSL e opcionalmente instalar extensões para ele.

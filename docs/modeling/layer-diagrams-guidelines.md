@@ -12,12 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 79c13cc878ee97968b82f86e3ba01c7eecd10b0c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 9ce90746d89dd41c1f53d7150d83afaa2e2bad46
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependência: diretrizes
 Descreve a arquitetura do aplicativo em um nível alto criando *diagramas de dependência* no Visual Studio. Certifique-se de que seu código permaneça consistente com esse design, validando seu código com um diagrama de dependência. Você também pode incluir validação de camada no processo de compilação. Consulte [vídeo do Channel 9: Design e validar sua arquitetura usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=252073).

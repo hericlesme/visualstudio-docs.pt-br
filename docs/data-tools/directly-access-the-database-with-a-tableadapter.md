@@ -21,14 +21,15 @@ ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b1a3b35cc491ed91e07316444c31cf4a29ef1517
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9985d9e072163bab722edde403ee1ec8aa801a69
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Acessar diretamente o banco de dados com um TableAdapter
 Além de `InsertCommand`, `UpdateCommand`, e `DeleteCommand`, TableAdapters são criados com métodos que podem ser executados diretamente no banco de dados. Esses métodos (`TableAdapter.Insert`, `TableAdapter.Update`, e `TableAdapter.Delete`) pode ser chamado para manipular os dados diretamente no banco de dados.

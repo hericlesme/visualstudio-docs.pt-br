@@ -1,7 +1,9 @@
 ---
-title: 'Como: criar uma condição declarativa de regra (herdado) | Microsoft Docs'
+title: 'Designer de fluxo de trabalho - como: criar uma condição declarativa de regra (herdado)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Como: Crie uma condição declarativa de regra (o legados)
-Este tópico descreve como declarar uma condição de regra usando o Designer de fluxo de trabalho herdado do Windows que tem como destino o [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] ou [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Uma instrução de condição for avaliada como **True** ou **False**. Uma condição de regra declarativa é uma instrução de condição que é criada usando o [caixa de diálogo de Editor de condição de regra (herdado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) e armazenados como XML com o fluxo de trabalho. Pode incluir os predicados que comparam o estado de fluxo de trabalho e a algebra booleano que combina vários predicados.
+Este tópico descreve como declarar uma condição de regra usando o Designer de fluxo de trabalho herdado do Windows que tem como destino o .NET Framework versão 3.5 ou o WinFX.
 
- As condições declarativas de regras são usadas nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
+Uma instrução de condição for avaliada como **True** ou **False**. Uma condição de regra declarativa é uma instrução de condição que é criada usando o [caixa de diálogo de Editor de condição de regra (herdado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) e armazenados como XML com o fluxo de trabalho. Pode incluir os predicados que comparam o estado de fluxo de trabalho e a algebra booleano que combina vários predicados.
+
+As condições declarativas de regras são usadas nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
 
 -   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ Este tópico descreve como declarar uma condição de regra usando o Designer de
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Para criar uma condição de regra declarativamente usando o editor de condição de regra
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Para criar uma condição de regra declarativamente usando o editor de condição de regra
 
 1.  A atividade **propriedades** janela, clique no **condição** propriedade ou **UntilCondition** propriedade, dependendo da atividade.
 

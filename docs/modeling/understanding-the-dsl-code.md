@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ced29b2936f8bec00df3907ffaf54bd06c32ad80
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode ser usada para ler e atualizar instâncias da DSL no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.

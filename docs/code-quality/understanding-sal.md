@@ -1,6 +1,7 @@
 ---
 title: Noções básicas de SAL
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
@@ -9,11 +10,11 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 928ecfc2ebe652ae307d506d0747746d02c7c269
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 82d6719ee57000ebec8ad88a90543031e0d3eeb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 A linguagem de anotação do código-fonte do Microsoft (SAL) fornece um conjunto de anotações que você pode usar para descrever como uma função usa as garantias de que ele faz quando ela estiver concluída, as suposições que faz sobre eles e seus parâmetros. As anotações são definidas no arquivo de cabeçalho `<sal.h>`. Análise de código do Visual Studio para C++ usa anotações de SAL para modificar a sua análise de funções. Para obter mais informações sobre SAL 2.0 para desenvolvimento de driver do Windows, consulte [SAL 2.0 anotações para Windows Drivers](http://go.microsoft.com/fwlink/?LinkId=250979).
