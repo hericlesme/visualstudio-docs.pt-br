@@ -1,19 +1,20 @@
 ---
-title: "Documentação do Visual Studio | Microsoft Docs"
-description: "Saiba como o Visual Studio ajuda você a desenvolver aplicativos usando uma variedade de linguagens de programação."
+title: Documentação do Visual Studio
+description: Saiba como o Visual Studio ajuda você a desenvolver aplicativos usando uma variedade de linguagens de programação.
+ms.date: 01/01/2018
 layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5005e4aa6a41b2062f2dab62d577edb5f91674
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: ed2caa7d2e70aa10ab9f8f4f37b08c1f59d6d325
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-documentation"></a>Documentação do Visual Studio
 

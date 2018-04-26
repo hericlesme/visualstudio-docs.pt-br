@@ -295,6 +295,7 @@
 #### [Não é possível anexar ao processo](unable-to-attach-to-the-process.md)
 #### [Caixa de diálogo de Mensagem de Erro de Editar e Continuar](edit-and-continue-error-message-dialog-box.md)
 #### [Erro: a avaliação da função 'função' atingiu o tempo limite e precisou ser interrompida de forma não segura](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Erro: o processo de destino foi encerrado com o código 'code' durante a avaliação da função 'function'](error-evaluating-the-function-process-exited.md)
 #### [Erro: não foi possível se conectar ao SQL Server no computador remoto](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Erro: não é possível acessar a interface de depuração do SQL Server](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Erro: o SQL não consegue localizar SSDEBUGPS](error-sql-can-t-find-ssdebugps.md)
