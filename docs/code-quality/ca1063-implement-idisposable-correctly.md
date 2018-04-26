@@ -1,6 +1,7 @@
 ---
 title: 'CA1063: implementar IDisposable corretamente'
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: implementar IDisposable corretamente
 
@@ -60,7 +61,7 @@ Todos os tipos IDisposable devem implementar o padrão Dispose corretamente.
 
 Examine seu código e determinar que as seguintes resoluções corrigirá essa violação.
 
-- Remova IDisposable da lista de interfaces que são implementados por {0} e substituir a implementação Dispose da classe base em vez disso.
+- Remova IDisposable da lista de interfaces implementadas por {0} e substituir a implementação Dispose da classe base em vez disso.
 
 - Remova o finalizador do tipo {0}, substitua Dispose (bool disposing) e coloque a lógica de finalização no caminho do código onde "disposing" é false.
 
@@ -70,7 +71,7 @@ Examine seu código e determinar que as seguintes resoluções corrigirá essa v
 
 - Renomear {0} 'Dispose' e certifique-se de que ele é declarado como público e lacrado.
 
-- Certifique-se de que {0} é declarado como protegido, virtual e sem lacre.
+- Verifique se {0} é declarado como protegido, virtual e sem lacre.
 
 - Modificar {0} para que ele chama Dispose (True), em seguida, chama GC. SuppressFinalize na instância atual do objeto ('this' ou 'Me' no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e, em seguida, retorna.
 

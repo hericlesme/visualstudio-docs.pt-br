@@ -1,9 +1,9 @@
 ---
-title: 'Tutorial 1: criar um visualizador de imagens | Microsoft Docs'
+title: 'Tutorial 1: Criar um visualizador de imagens'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 Neste tutorial, você cria um programa que carrega uma imagem de um arquivo e a exibe em uma janela. Você aprende a arrastar controles como botões e caixas de imagem no formulário, definir as respectivas propriedades e usar contêineres para redimensionar suavemente o formulário. Você também pode começar a escrever código. Você aprenderá como:  
-  
+
 -   Crie um novo projeto.  
-  
+
 -   Testar (depurar) um aplicativo.  
-  
+
 -   Adicionar controles básicos como caixas de seleção e botões para um formulário.  
-  
+
 -   Posicionar controles em um formulário usando layouts.  
-  
+
 -   Adicionar as caixas de diálogo **Abrir Arquivo** e **Cor** a um formulário.  
-  
+
 -   Escrever código usando o IntelliSense e trechos de código.  
-  
+
 -   Escrever métodos de manipulador de eventos.  
-  
+
  Quando você terminar, seu programa será como a imagem a seguir.  
-  
+
  ![Imagem que você cria neste tutorial](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Mostre que você cria neste tutorial  
-  
+
  Para baixar uma versão concluída do exemplo, consulte [Exemplo de tutorial completo do Visualizador de Imagens](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
-  
+
  ![link para o vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para ver uma versão em vídeo deste tópico, consulte [Como eu faço para: criar um visualizador de imagens no Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Como eu faço para: criar um visualizador de imagens em C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
-  
+
 > [!NOTE]
 >  Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio. O Visual C# e o Visual Basic são abordados neste tutorial, portanto concentre-se nas informações específicas da linguagem de programação que você está usando.  
 >   
 >  Para ver o código para Visual Basic, escolha a guia **VB** na parte superior dos blocos de código e, para ver o código para Visual C#, escolha a guia **C#**. Se estiver interessado em aprender sobre o Visual C++, consulte [Introdução](../ide/getting-started-with-cpp-in-visual-studio.md) e [Tutorial da linguagem C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Se você estiver interessado em aprender a escrever aplicativos UWP do Visual C# ou Visual Basic, consulte [Criar aplicativos UWP](https://developer.microsoft.com/windows/apps).
-  
+
 ## <a name="related-topics"></a>Tópicos relacionados  
-  
+
 |Título|Descrição|  
 |-----------|-----------------|  
 |[Etapa 1: criar um projeto de aplicativo do Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Comece criando um projeto de aplicativo do Windows Forms.|  

@@ -1,9 +1,8 @@
 ---
-title: Como gerenciar a quebra automática de linha no editor | Microsoft Docs
-ms.custom: ''
+title: Como gerenciar a quebra de texto no Editor
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -15,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edd81a4c4168d7733b21ec84123e984e42b71063
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08fe7ac16eff2c7ebf398b0483034a324eb02d91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Como gerenciar a quebra de texto no Editor
 
@@ -31,26 +30,26 @@ ms.lasthandoff: 04/16/2018
 ## <a name="procedure"></a>Procedimento
 
 ### <a name="to-set-word-wrap-preferences"></a>Para definir preferências de quebra automática de linha
-  
-1.  No menu **Ferramentas**, selecione **Opções**.  
-  
-2.  Na pasta **Editor de Texto**, escolha as opções **Gerais** na subpasta **Todas as Linguagens** para definir essa opção globalmente.  
-  
-     – ou —  
-  
-     Escolha as opções **Gerais** na subpasta da linguagem na qual você está programando.  
-  
-3.  Em **Configurações**, marque ou desmarque a opção **Quebra automática de linha**.  
-  
-     Quando a opção **Quebra automática de linha** estiver selecionada, a opção **Mostrar glifos visuais para quebra automática de linha** será habilitada.  
-  
-4.  Selecione a opção **Mostrar glifos visuais para quebra automática de linha** caso prefira exibir um indicador de seta de retorno em que uma linha longa é quebrada em uma segunda linha. Desmarque esta opção se você preferir não exibir setas indicadoras.  
-  
+
+1.  No menu **Ferramentas**, selecione **Opções**.
+
+2.  Na pasta **Editor de Texto**, escolha as opções **Gerais** na subpasta **Todas as Linguagens** para definir essa opção globalmente.
+
+     – ou —
+
+     Escolha as opções **Gerais** na subpasta da linguagem na qual você está programando.
+
+3.  Em **Configurações**, marque ou desmarque a opção **Quebra automática de linha**.
+
+     Quando a opção **Quebra automática de linha** estiver selecionada, a opção **Mostrar glifos visuais para quebra automática de linha** será habilitada.
+
+4.  Selecione a opção **Mostrar glifos visuais para quebra automática de linha** caso prefira exibir um indicador de seta de retorno em que uma linha longa é quebrada em uma segunda linha. Desmarque esta opção se você preferir não exibir setas indicadoras.
+
     > [!NOTE]
-    >  Essas setas de lembrete não são adicionadas ao seu código: elas são apenas para exibição.  
-  
+    >  Essas setas de lembrete não são adicionadas ao seu código: elas são apenas para exibição.
+
 ## <a name="see-also"></a>Consulte também
 
-[Personalizando o editor](../../ide/customizing-the-editor.md)  
-[Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)  
-[Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personalizando o editor](../../ide/customizing-the-editor.md)
+- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
+- [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)

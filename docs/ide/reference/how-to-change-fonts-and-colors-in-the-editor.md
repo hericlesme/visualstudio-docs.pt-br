@@ -1,9 +1,8 @@
 ---
-title: Como alterar fontes e cores no editor | Microsoft Docs
-ms.custom: ''
+title: Como alterar fontes e cores usadas no Editor
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -17,43 +16,45 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0510cbc9d6f98f9c36347c6be93d768e483aa24a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Como alterar fontes e cores usadas no Editor
-É possível alterar a face de fonte padrão, ajustar o tamanho da fonte e alterar as cores de primeiro plano e da tela de fundo para várias opções **Exibir itens** de texto no Editor de Código. Ao alterar as configurações de fonte, tenha em mente as seguintes informações:  
-  
--   As configurações de **Fonte** e **Tamanho** são globais para todos os elementos de texto em todos os editores [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
--   Os nomes de fontes de largura fixa são listados em negrito.  
-  
--   As opções **Primeiro plano do item**, **Tela de fundo do Item** e **Negrito** podem ser definidas para cada tipo de elemento de texto. Por exemplo, se você alterar as cores e selecionar **Negrito** para **Comentário** e **Indicadores**, outros tipos de elementos de texto não serão afetados.  
-  
+É possível alterar a face de fonte padrão, ajustar o tamanho da fonte e alterar as cores de primeiro plano e da tela de fundo para várias opções **Exibir itens** de texto no Editor de Código. Ao alterar as configurações de fonte, tenha em mente as seguintes informações:
+
+-   As configurações de **Fonte** e **Tamanho** são globais para todos os elementos de texto em todos os editores [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+-   Os nomes de fontes de largura fixa são listados em negrito.
+
+-   As opções **Primeiro plano do item**, **Tela de fundo do Item** e **Negrito** podem ser definidas para cada tipo de elemento de texto. Por exemplo, se você alterar as cores e selecionar **Negrito** para **Comentário** e **Indicadores**, outros tipos de elementos de texto não serão afetados.
+
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos na **Ajuda**, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-### <a name="to-change-the-default-font-face-size-and-colors"></a>Para alterar a face de fonte padrão, o tamanho e as cores  
-  
-1.  Selecione **Opções** no menu **Ferramentas** e, na pasta **Ambiente**, selecione **Fontes e Cores**.  
-  
-     A [caixa de diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) é aberta.  
-  
-2.  Em **Mostrar configurações de**, selecione **Editor de Texto**.  
-  
-3.  Modifique as opções **Fonte** e **Tamanho** para alterar a face de fonte e o tamanho de todos os elementos de texto em todos os editores.  
-  
-4.  Selecione o item apropriado em **Exibir itens** e, em seguida, modifique as opções **Primeiro plano do item** e **Tela de fundo do item**.  
-  
+> As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos na **Ajuda**, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+
+
+### <a name="to-change-the-default-font-face-size-and-colors"></a>Para alterar a face de fonte padrão, o tamanho e as cores
+
+1.  Selecione **Opções** no menu **Ferramentas** e, na pasta **Ambiente**, selecione **Fontes e Cores**.
+
+     A [caixa de diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) é aberta.
+
+2.  Em **Mostrar configurações de**, selecione **Editor de Texto**.
+
+3.  Modifique as opções **Fonte** e **Tamanho** para alterar a face de fonte e o tamanho de todos os elementos de texto em todos os editores.
+
+4.  Selecione o item apropriado em **Exibir itens** e, em seguida, modifique as opções **Primeiro plano do item** e **Tela de fundo do item**.
+
     > [!TIP]
-    >  Clique em **Usar Padrões** para redefinir as configurações padrão.  
-  
-5.  Clique em **OK**.  
-  
-## <a name="see-also"></a>Consulte também  
- [Personalizando o editor](../../ide/customizing-the-editor.md)   
- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)   
- [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+    >  Clique em **Usar Padrões** para redefinir as configurações padrão.
+
+5.  Clique em **OK**.
+
+## <a name="see-also"></a>Consulte também
+
+- [Personalizando o editor](../../ide/customizing-the-editor.md)
+- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
+- [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

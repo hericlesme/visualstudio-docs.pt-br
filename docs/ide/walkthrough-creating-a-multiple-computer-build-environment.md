@@ -1,9 +1,8 @@
 ---
-title: 'Passo a passo: criando um ambiente de build de vários computadores | Microsoft Docs'
-ms.custom: ''
+title: 'Instruções passo a passo: criando um ambiente de build de vários computadores'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c2efa01078cb089055cb48fbb80e9c1ffcde0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52c7623aff3c2aec4753f628eb9a24ecf6937275
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Instruções passo a passo: criando um ambiente de build de vários computadores
 
@@ -415,5 +414,5 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
 ## <a name="see-also"></a>Consulte também
 
-[Preparando uma máquina de teste para executar um executável de depuração](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)  
-[Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)
+- [Preparando uma máquina de teste para executar um executável de depuração](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)

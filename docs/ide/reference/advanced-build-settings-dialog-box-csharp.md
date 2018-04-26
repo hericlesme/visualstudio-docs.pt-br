@@ -1,10 +1,9 @@
 ---
-title: Caixa de diálogo Configurações de Build Avançadas (C#) | Microsoft Docs
-ms.custom: ''
+title: Caixa de diálogo Configurações de Build Avançadas (C#)
 ms.date: 06/20/2017
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
@@ -15,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 406b25a3130b69b94486e866479e819dc68e70a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc9900927218e543b4e7ba962d7ea019d927c8a8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações de Build Avançadas (C#)
 
@@ -83,4 +82,5 @@ Para obter mais informações, consulte [/debug (opções do compilador C#)](/do
 
 ## <a name="see-also"></a>Consulte também
 
- [Opções do Compilador C#](/dotnet/csharp/language-reference/compiler-options/index) [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Opções do compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
+- [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)

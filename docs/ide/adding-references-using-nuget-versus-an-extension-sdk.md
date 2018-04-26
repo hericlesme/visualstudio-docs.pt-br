@@ -1,20 +1,19 @@
 ---
-title: Adicionando referências usando o NuGet versus um SDK de Extensão | Microsoft Docs
-ms.custom: ''
+title: Adicionando referências usando o NuGet versus um SDK de Extensão
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d4bfd9be5fdcf4544f9bc5c28482cb579af5033
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Adicionar referências usando o NuGet versus um SDK de Extensão
 
@@ -69,4 +68,4 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 
 ## <a name="see-also"></a>Consulte também
 
-[Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)
+- [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)

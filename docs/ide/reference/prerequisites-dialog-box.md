@@ -1,10 +1,9 @@
 ---
-title: Caixa de diálogo Pré-requisitos | Microsoft Docs
-ms.custom: ''
+title: Caixa de diálogo Pré-requisitos
 ms.date: 01/18/2018
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
@@ -14,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e19ed464586346d8a40f26ab2e8b4d172effb40d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37400624d81c533e6ecddb9d6278b5b372410525
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Caixa de diálogo Pré-requisitos
 

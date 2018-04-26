@@ -1,10 +1,9 @@
 ---
-title: Opções, Editor de Texto, XAML, Formatação | Microsoft Docs
-ms.custom: ''
+title: Opções, Editor de Texto, XAML, Formatação
 ms.date: 01/17/2017
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.XAML.Miscellaneous
@@ -33,84 +32,85 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 401e0f6c5da01413042eb30f336a7e2081e84ba1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opções, Editor de Texto, XAML, Formatação
-Use a página de propriedades **Formatação** para especificar como elementos e atributos são formatados nos documentos XAML. Para abrir a caixa de diálogo **Opções**, clique no menu **Ferramentas** e clique em **Opções**. Para acessar a página de propriedades de **Formatação**, expanda o nó **Editor de Texto**, **XAML**, **Formatação**.  
+Use a página de propriedades **Formatação** para especificar como elementos e atributos são formatados nos documentos XAML. Para abrir a caixa de diálogo **Opções**, clique no menu **Ferramentas** e clique em **Opções**. Para acessar a página de propriedades de **Formatação**, expanda o nó **Editor de Texto**, **XAML**, **Formatação**.
 
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="auto-formatting-events"></a>Eventos de Formatação Automática  
- Formatação automática pode ocorrer quando qualquer um dos eventos a seguir é detectado.  
 
--   Preenchimento de uma marcação de fim ou de uma marcação simples.  
+## <a name="auto-formatting-events"></a>Eventos de Formatação Automática
+ Formatação automática pode ocorrer quando qualquer um dos eventos a seguir é detectado.
 
--   Preenchimento de uma marcação de início.  
+-   Preenchimento de uma marcação de fim ou de uma marcação simples.
 
--   Colando da área de transferência.  
+-   Preenchimento de uma marcação de início.
 
--   Comandos de teclado de formatação.  
+-   Colando da área de transferência.
 
-Você pode especificar os eventos que causam formatação automática.  
+-   Comandos de teclado de formatação.
 
-|||  
-|-|-|  
-|**Ao preencher a marcação de fim ou der marca simples**|Formatação automática ocorre quando você termina de digitar uma marcação de fim ou uma marcação simples. Uma marcação simples não tem atributos, por exemplo `<Button />`.|  
-|**Ao preencher uma marcação de início**|Formatação automática ocorre quando você termina de digitar uma marcação de início.|  
-|**Ao colar da área de transferência**|Formatação automática ocorre quando você cola XAML da área de transferência para a exibição XAML.|  
+Você pode especificar os eventos que causam formatação automática.
 
-## <a name="quotation-mark-style"></a>Estilo de Aspas  
- Essa configuração indica se os valores de atributo são colocados entre aspas simples ou duplas. O formatador automático e o preenchimento automático IntelliSense usam essa configuração.  
+|||
+|-|-|
+|**Ao preencher a marcação de fim ou der marca simples**|Formatação automática ocorre quando você termina de digitar uma marcação de fim ou uma marcação simples. Uma marcação simples não tem atributos, por exemplo `<Button />`.|
+|**Ao preencher uma marcação de início**|Formatação automática ocorre quando você termina de digitar uma marcação de início.|
+|**Ao colar da área de transferência**|Formatação automática ocorre quando você cola XAML da área de transferência para a exibição XAML.|
 
- Ao definir essa opção, apenas atributos subsequentemente adicionados usando o designer ou manualmente na exibição XAML são afetados.  
+## <a name="quotation-mark-style"></a>Estilo de Aspas
+ Essa configuração indica se os valores de atributo são colocados entre aspas simples ou duplas. O formatador automático e o preenchimento automático IntelliSense usam essa configuração.
 
-|||  
-|-|-|  
-|**Aspas duplas (")**|Valores de atributos são colocados entre aspas duplas.<br /><br /> `<Button Name="button1">Hello</Button>`|  
-|**Aspas simples (')**|Valores de atributos são colocados entre aspas simples.<br /><br /> `<Button Name='button1'>Hello</Button>`|  
+ Ao definir essa opção, apenas atributos subsequentemente adicionados usando o designer ou manualmente na exibição XAML são afetados.
 
-## <a name="tag-wrapping"></a>Automática de marca  
- Você pode especificar um comprimento de linha para disposição de marcação. Quando a disposição de marcação está habilitada, qualquer XAML adicionado posteriormente usando o designer será disposto adequadamente.  
+|||
+|-|-|
+|**Aspas duplas (")**|Valores de atributos são colocados entre aspas duplas.<br /><br /> `<Button Name="button1">Hello</Button>`|
+|**Aspas simples (')**|Valores de atributos são colocados entre aspas simples.<br /><br /> `<Button Name='button1'>Hello</Button>`|
 
-|||  
-|-|-|  
-|**Encapsular marcações que excedam o comprimento especificado**|Especifica se as linhas são dispostas no comprimento de linha especificado por **Comprimento**.|  
-|**Comprimento**|O número de caracteres que uma linha pode conter. Se necessário, algumas linhas XAML poderão exceder o comprimento de linha especificado.|  
+## <a name="tag-wrapping"></a>Automática de marca
+ Você pode especificar um comprimento de linha para disposição de marcação. Quando a disposição de marcação está habilitada, qualquer XAML adicionado posteriormente usando o designer será disposto adequadamente.
 
-## <a name="attribute-spacing"></a>Espaçamento de Atributos  
- Use essa configuração para controlar como os atributos são organizados no documento XAML  
+|||
+|-|-|
+|**Encapsular marcações que excedam o comprimento especificado**|Especifica se as linhas são dispostas no comprimento de linha especificado por **Comprimento**.|
+|**Comprimento**|O número de caracteres que uma linha pode conter. Se necessário, algumas linhas XAML poderão exceder o comprimento de linha especificado.|
 
-|||  
-|-|-|  
-|**Preservar novas linhas e espaços entre atributos**|Novas linhas e espaços entre atributos não são afetados por formatação automática.<br /><br /> `<Button Height="23"   Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
-|**Inserir um espaço único entre os atributos**|Atributos ocupam uma linha, com um espaço separando atributos adjacentes. Configurações de disposição de marcação são aplicadas.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|  
-|**Posicionar cada atributo em uma linha separada**|Cada atributo ocupa sua própria linha. Isso é útil quando existem muitos atributos.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
-|**Posicionar primeiro atributo na mesma linha que a marcação de início**|Quando essa opção está marcada, o primeiro atributo aparece na mesma linha que a marcação de início do elemento.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
+## <a name="attribute-spacing"></a>Espaçamento de Atributos
+ Use essa configuração para controlar como os atributos são organizados no documento XAML
 
-## <a name="element-spacing"></a>Espaçamento de Elementos  
- Use essa configuração para controlar como os elementos são organizados no documento XAML  
+|||
+|-|-|
+|**Preservar novas linhas e espaços entre atributos**|Novas linhas e espaços entre atributos não são afetados por formatação automática.<br /><br /> `<Button Height="23"   Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Inserir um espaço único entre os atributos**|Atributos ocupam uma linha, com um espaço separando atributos adjacentes. Configurações de disposição de marcação são aplicadas.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
+|**Posicionar cada atributo em uma linha separada**|Cada atributo ocupa sua própria linha. Isso é útil quando existem muitos atributos.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Posicionar primeiro atributo na mesma linha que a marcação de início**|Quando essa opção está marcada, o primeiro atributo aparece na mesma linha que a marcação de início do elemento.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
 
-|||  
-|-|-|  
-|**Preservar novas linhas no conteúdo**|Linhas vazias no conteúdo do elemento não são removidas.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|  
-|**Recolher várias linhas vazias no conteúdo para uma linha única**|Linhas vazias no conteúdo do elemento são recolhidas em uma única linha.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|  
-|**Remover linhas vazias no conteúdo**|Todas as linhas vazias no conteúdo do elemento são removidas.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|  
+## <a name="element-spacing"></a>Espaçamento de Elementos
+ Use essa configuração para controlar como os elementos são organizados no documento XAML
 
-## <a name="miscellaneous-section-auto-insert"></a>Seção Diversos, Inserção Automática  
- Use essa configuração para controlar quando marcas e aspas são geradas automaticamente.  
+|||
+|-|-|
+|**Preservar novas linhas no conteúdo**|Linhas vazias no conteúdo do elemento não são removidas.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
+|**Recolher várias linhas vazias no conteúdo para uma linha única**|Linhas vazias no conteúdo do elemento são recolhidas em uma única linha.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
+|**Remover linhas vazias no conteúdo**|Todas as linhas vazias no conteúdo do elemento são removidas.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
 
-|||  
-|-|-|  
-|**Marcas de fechamento**|Especifica se a marcação de fechamento de um elemento é gerada automaticamente ao você fechar a marcação de abertura com o caractere de maior que (>).|  
-|**Aspas de atributo**|Especifica se as aspas de fechamento são geradas quando um valor de atributo é selecionado na lista suspensa de preenchimento de declaração.|  
-|**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento (}) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura ({).|  
-|**Vírgulas para separar parâmetros MarkupExtension**|Especifica se vírgulas são geradas quando você digita mais de um parâmetro em uma extensão de marcação.|  
+## <a name="miscellaneous-section-auto-insert"></a>Seção Diversos, Inserção Automática
+ Use essa configuração para controlar quando marcas e aspas são geradas automaticamente.
+
+|||
+|-|-|
+|**Marcas de fechamento**|Especifica se a marcação de fechamento de um elemento é gerada automaticamente ao você fechar a marcação de abertura com o caractere de maior que (>).|
+|**Aspas de atributo**|Especifica se as aspas de fechamento são geradas quando um valor de atributo é selecionado na lista suspensa de preenchimento de declaração.|
+|**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento (}) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura ({).|
+|**Vírgulas para separar parâmetros MarkupExtension**|Especifica se vírgulas são geradas quando você digita mais de um parâmetro em uma extensão de marcação.|
 
 ## <a name="see-also"></a>Consulte também
 
-[XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
+- [XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

@@ -1,9 +1,9 @@
 ---
-title: Caixa de ferramentas, Guia HTML | Microsoft Docs
-ms.custom: ''
+title: Caixa de Ferramentas, Guia HTML
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff609631cec69e0d32cb74e5857cd3bb8df5ab94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
 
@@ -163,7 +163,7 @@ Insere um elemento `textarea`. É possível redimensionar a área de texto ou us
 Ao arrastar **Área de texto** para a superfície do modo de exibição de Design, uma marcação HTML como a seguinte é inserida no documento:
 
 ```html
-<textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea> 
+<textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>
 ```
 
 > [!IMPORTANT]
@@ -178,7 +178,7 @@ Insere um elemento `table`.
 Ao arrastar **Tabela** para a superfície do modo de exibição de Design, uma marcação HTML como a seguinte é inserida no documento:
 
 ```html
-<table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table> 
+<table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
 **Image**
@@ -233,4 +233,4 @@ Ao arrastar **Div** para a superfície do modo de exibição de Design, uma marc
 
 ## <a name="see-also"></a>Consulte também
 
-[Caixa de Ferramentas](../../ide/reference/toolbox.md)
+- [Caixa de Ferramentas](../../ide/reference/toolbox.md)
