@@ -1,6 +1,6 @@
 ---
 title: Usando conjuntos de regras para especificar as regras do C++ para execução
-ms.date: 11/04/2016
+ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,15 +9,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571d54bb6bdf3673da8e40d6075c5b961d248fe5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Use conjuntos de regras para especificar as regras do C++ para executar
 
-No Visual Studio, você pode criar e modificar um personalizado *conjunto de regras* para atender às necessidades específicas do projeto associadas com a análise de código. Para criar uma regra personalizada de C++ definido, um projeto de C/C++ deve ser aberto no IDE do Visual Studio. Você, em seguida, abra um conjunto de regras padrão no editor de conjunto de regras e, em seguida, adicionar ou remove regras específicas e, opcionalmente, altere a ação que ocorre quando a análise de código determina que uma regra que foi violada.
+No Visual Studio, você pode criar e modificar um personalizado *conjunto de regras* para atender às necessidades específicas do projeto associadas com a análise de código. Conjuntos de regras padrão são armazenados em `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+
+**Visual Studio 2017 versão 15,7** você pode criar conjuntos de regra personalizada usando qualquer texto editor e aplicá-las em compilações de linha de comando, independentemente do que criar o sistema que você está usando. Para obter mais informações, consulte [/ANALYZE: ruleset](/cpp/build/reference/analyze-code-quality).
+
+Para criar uma regra personalizada de C++ definida no Visual Studio, um projeto de C/C++ deve ser aberto no IDE do Visual Studio. Você, em seguida, abra um conjunto de regras padrão no editor de conjunto de regras e, em seguida, adicionar ou remove regras específicas e, opcionalmente, altere a ação que ocorre quando a análise de código determina que uma regra que foi violada.
 
 Para criar uma nova regra personalizada definida, você pode salvá-lo usando um novo nome de arquivo. O conjunto de regras personalizado é automaticamente atribuído ao projeto.
 
@@ -72,3 +76,20 @@ Para criar uma nova regra personalizada definida, você pode salvá-lo usando um
 - Para alternar entre mostrar e ocultar as regras que são atribuídas a **nenhum** ação, escolha **Mostrar regras que não estão habilitadas**.
 
 - Para adicionar ou remover conjuntos de regras do padrão para o conjunto de regras atual do Microsoft, escolha **adicionar ou remover conjuntos de regras filhas**.
+
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>Para criar uma conjunto de regras em um editor de texto
+
+Você pode criar um conjunto de regras personalizado no texto de um editor, armazená-lo em qualquer local com um `.ruleset` extensão e aplicar com o [/ANALYZE: ruleset](/cpp/build/reference/analyze-code-quality) opção de compilador.
+
+O exemplo a seguir mostra que uma regra básica definir o arquivo que você pode usar como ponto de partida:
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```

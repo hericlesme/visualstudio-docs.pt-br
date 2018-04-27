@@ -2,8 +2,8 @@
 title: Visão geral do painel de ações | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 902301021a698dfd0f6e9f09b000c1e4e403e029
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="actions-pane-overview"></a>Visão geral do painel Ações
   Um painel de ações é uma personalizável **ações do documento** painel de tarefas que está anexado a um documento específico do Microsoft Office Word ou pasta de trabalho do Microsoft Office Excel. Ele está hospedado dentro do painel de tarefas do Office junto com outros painéis de tarefas interna, como o **origem XML** no Excel ou o **estilos e formatação** painel de tarefas no Word. Você pode usar controles de formulários do Windows ou controles do WPF para criar a interface de usuário do painel de ações.  

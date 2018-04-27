@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecda4cc1ab237bed9e377f977295e19c74893673
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 
@@ -30,7 +30,7 @@ Políticas do check-in de análise de código são definidas nas configurações
 
 - Para código gerenciado, você deve definir a política de check-in, especificando um *conjunto de regras* que contém um subconjunto das regras de análise de código.
 
-- Para o código C/C++, a política de check-in requer que todas as regras de análise de código serão executadas. Você pode adicionar as diretivas de pré-processador para desabilitar regras específicas para os projetos de código individuais em seu projeto de equipe.
+- Para código C/C++, no Visual Studio 2017 versão 15.6 e anteriores, a política de check-in requer que todas as regras de análise de código serão executadas. Você pode adicionar as diretivas de pré-processador para desabilitar regras específicas para os projetos de código individuais em seu projeto de equipe. No 15,7 e posterior, você pode usar **/ANALYZE: ruleset** para especificar quais regras a serem executadas. Para obter mais informações, consulte [usando conjuntos de regras para especificar as regras do C++ para executar](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
 Depois de especificar uma política de check-in para código gerenciado, os membros da equipe podem sincronizar suas configurações de análise de código para projetos de código para as configurações de política de projeto de equipe.
 
