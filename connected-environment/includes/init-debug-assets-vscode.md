@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: dbf7482acb02c6347c9c0d0765ef962cfb43a050
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-debug-assets-with-the-vs-code-extension"></a>Inicializar ativos de depuração com a extensão do VS Code
 Primeiro, precisamos configurar nosso projeto de código para que o VS Code possa se comunicar com o ambiente de desenvolvimento no Azure. A extensão do VS Code para Connected Environment fornece um comando auxiliar para definir a configuração de depuração. 
 
