@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 50f39b6fc292bba2081d8eb5c3bc87d6f9041b49
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="actions-pane-overview"></a>Visão geral do painel Ações
-  Um painel de ações é uma personalizável **ações do documento** painel de tarefas que está anexado a um documento específico do Microsoft Office Word ou pasta de trabalho do Microsoft Office Excel. Ele está hospedado dentro do painel de tarefas do Office junto com outros painéis de tarefas interna, como o **origem XML** no Excel ou o **estilos e formatação** painel de tarefas no Word. Você pode usar controles de formulários do Windows ou controles do WPF para criar a interface de usuário do painel de ações.  
+  Um painel de ações é uma personalizável **ações do documento** painel de tarefas que está anexado a um documento específico do Microsoft Office Word ou pasta de trabalho do Microsoft Office Excel. O painel de ações está hospedado dentro do painel de tarefas do Office junto com outros painéis de tarefas interna, como o **origem XML** no Excel ou o **estilos e formatação** painel de tarefas no Word. Você pode usar controles de formulários do Windows ou controles do WPF para criar a interface de usuário do painel de ações.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  O painel de ações é diferente de painéis de tarefas personalizados. Painéis de tarefas personalizados estão associados com o aplicativo, não é um documento específico. Você pode criar painéis de tarefas personalizados no suplemento do VSTO para alguns aplicativos do Microsoft Office. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).  
 
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração de vídeo relacionada, consulte [como fazer i: Use WPF controles dentro de um Excel painel Ações?](http://go.microsoft.com/fwlink/?LinkId=132763).  
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração de vídeo relacionada, consulte [como fazer i: Use WPF controles dentro de um Excel painel Ações?](http://go.microsoft.com/fwlink/?LinkId=132763).
 
 ## <a name="displaying-the-actions-pane"></a>Exibir o painel de ações  
  O painel de ações é representado pela <xref:Microsoft.Office.Tools.ActionsPane> classe. Quando você cria um projeto no nível do documento, uma instância desta classe está disponível no seu código usando o `ActionsPane` campo o `ThisWorkbook` (para Excel) ou `ThisDocument` (para o Word) de classe em seu projeto. Para exibir o painel Ações, adicione um controle de formulários do Windows para o <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriedade o `ActionsPane` campo. O exemplo de código a seguir adiciona um controle chamado `actions` para o painel de ações.  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/27/2018
  O painel de ações se torna visível em tempo de execução assim que você adicionar um controle explicitamente a ele. Depois que o painel de ações é exibido, você pode adicionar ou remover controles em resposta a ações do usuário dinamicamente. Normalmente, você adiciona o código para exibir o painel de ações no `Startup` manipulador de eventos do `ThisDocument` ou `ThisWorkbook` para que o painel de ações é visível quando o usuário primeiro abre o documento. No entanto, você talvez queira exibir o painel de ações apenas em resposta a uma ação do usuário no documento. Por exemplo, você pode adicionar o código para o `Click` eventos de um controle no documento.  
 
 ### <a name="adding-multiple-controls-to-the-actions-pane"></a>Adicionando vários controles para o painel de ações  
- Se você estiver adicionando vários controles para o painel de ações, na maioria dos casos você deve agrupar os controles em um controle de usuário e, em seguida, adicione o controle de usuário para o <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriedade. Esse processo inclui as seguintes etapas:  
+ Quando você adiciona vários controles para o painel de ações, você deve agrupar os controles em um controle de usuário e, em seguida, adicione o controle de usuário para o <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriedade. Esse processo inclui as seguintes etapas:  
 
 1.  Criar a interface do usuário (IU) do painel Ações, adicionando um **controle do painel Ações** ou **controle de usuário** item ao seu projeto. Esses itens incluem um Windows Forms personalizados <xref:System.Windows.Forms.UserControl> classe. O **controle do painel Ações** e **controle de usuário** itens são equivalentes; a única diferença é o seu nome.  
 
@@ -79,12 +79,12 @@ ms.lasthandoff: 04/27/2018
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]  
 
 ### <a name="clearing-the-actions-pane-when-the-document-is-opened"></a>Limpar o ações painel quando o documento é aberto.  
- Se o usuário salva o documento, enquanto o painel de ações está visível, o painel de ações é visível toda vez que o documento for aberto, se o painel de ações contém todos os controles ou não. Se você deseja controlar quando ele for exibido, chame o <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> método o `ActionsPane` campo o `Startup` manipulador de eventos do `ThisDocument` ou `ThisWorkbook` para garantir que o painel de ações não estiver visível quando o documento é aberto.  
+ Quando um usuário salva o documento, enquanto o painel de ações está visível, o painel de ações está visível toda vez que o documento for aberto, se o painel de ações contém todos os controles ou não. Se você deseja controlar quando ele for exibido, chame o <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> método o `ActionsPane` campo o `Startup` manipulador de eventos do `ThisDocument` ou `ThisWorkbook` para garantir que o painel de ações não estiver visível quando o documento é aberto.  
 
 ### <a name="determining-when-the-actions-pane-is-closed"></a>Determinar quando o painel de ações está fechado  
  Não há nenhum evento que é gerado quando o painel de ações está fechado. Embora o <xref:Microsoft.Office.Tools.ActionsPane> classe tiver um <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> evento, esse evento não é gerado quando o usuário final para fechar o painel de ações. Em vez disso, esse evento é gerado quando os controles no painel de ações são ocultos por chamar o <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método ou definindo o <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propriedade **false**.  
 
- Se o usuário final fecha o painel de ações, o usuário pode exibi-la novamente, executando um dos procedimentos a seguir na interface do usuário (IU) do aplicativo.  
+ Quando o usuário fecha o painel de ações, o usuário pode exibi-lo novamente, executando um dos procedimentos a seguir na interface do usuário (IU) do aplicativo.  
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Para exibir o painel de ações, usando a interface do usuário do Word ou Excel  
 
@@ -129,7 +129,7 @@ ms.lasthandoff: 04/27/2018
 ## <a name="resizing-the-actions-pane"></a>Redimensionar o painel de ações  
  Você não pode alterar diretamente o tamanho de um <xref:Microsoft.Office.Tools.ActionsPane> porque o <xref:Microsoft.Office.Tools.ActionsPane> é inserido no painel de tarefas. No entanto, você pode alterar programaticamente a largura do painel de tarefas, definindo o <xref:Microsoft.Office.Core.CommandBar.Width%2A> propriedade o <xref:Microsoft.Office.Core.CommandBar> que representa o painel de tarefas. Você pode alterar a altura do painel de tarefas se ele está encaixado na horizontal ou é flutuante.  
 
- Redimensionar programaticamente o painel de tarefas geralmente não é recomendável porque o usuário deve ser capaz de selecionar o tamanho do painel de tarefas que melhor atenda às suas necessidades. No entanto, se você precisa redimensionar a largura do painel de tarefas, você pode usar o código a seguir para alcançar essa tarefa.  
+ Redimensionar programaticamente o painel de tarefas não é recomendado porque o usuário deve ser capaz de selecionar o tamanho do painel de tarefas que melhor atenda às suas necessidades. No entanto, se você precisa redimensionar a largura do painel de tarefas, você pode usar o código a seguir para alcançar essa tarefa.  
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
  [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]  
