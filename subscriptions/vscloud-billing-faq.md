@@ -1,22 +1,24 @@
 ---
 title: Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio Enterprise e do Visual Studio Professional
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/2/2018
-Ms.topic: Get-Started-Article
-Description: Billing questions for cloud subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7c89c562ab49ffd95af7cfce699d13aa8a639c81
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/02/2018
+ms.topic: Get-Started-Article
+description: Perguntas sobre cobrança para assinaturas de nuvem.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://www.visualstudio.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
+
+## <a name="general-purchasing-questions"></a>Perguntas gerais sobre compras
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>P: Posso comprar assinaturas de nuvem do Visual Studio usando uma ordem de compra?
 R: Não. Todas as assinaturas de nuvem do Visual Studio precisam ser compradas usando uma assinatura do Azure. (Considere isso como sua conta de cobrança do Azure.)
@@ -79,7 +81,7 @@ Além disso, o desconto aplica-se somente aos encargos em um determinado períod
 
 ### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>P: Posso usar os créditos mensais do Azure como um assinante do Visual Studio para comprar mais assinaturas de nuvem do Visual Studio?
 
-R: Não, não é possível usar os [créditos mensais do Azure como um assinante do Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) para pagar por compras do Visual Studio Marketplace. Nenhuma compra de assinatura de nuvem do Visual Studio será cobrada em seu cartão de crédito.
+R: Não, não é possível usar os [créditos mensais do Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) como um assinante do Visual Studio para pagar por compras no Visual Studio Marketplace. Nenhuma compra de assinatura de nuvem do Visual Studio será cobrada em seu cartão de crédito.
 Antes de fazer compras, você precisará [remover seu limite de gastos](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>P: Qual é a diferença entre as assinaturas de nuvem anuais e mensais?

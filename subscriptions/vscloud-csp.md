@@ -1,19 +1,19 @@
 ---
 title: Compra de assinatura de nuvem do Visual Studio para CSPs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Informações para Provedores de Soluções na Nuvem como comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
 
@@ -78,7 +78,7 @@ Aqui está a maneira de interpretar os dados dessa planilha:
 Oferecemos um desconto de 5% para a compra da sexta unidade (para um determinado cliente) a cada mês da assinatura do Visual Studio. É por isso que aparecem duas linhas para cada opção de assinatura. Uma linha mostra um "Valor Mínimo" igual a 0, que você deve interpretar como o preço base da primeira à quinta unidade. A outra linha mostra um "Valor Mínimo" igual a 5, que é o preço com 5% de desconto aplicado à sexta unidade e às próximas.
 
 
-## <a name="faq"></a>Perguntas Frequentes
+## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: Como os encargos **mensais** da assinatura de nuvem são processados?
 R: Na primeira compra, vamos cobrar uma quantidade proporcional para cobrir os dias restantes do mês em questão. Por exemplo, se uma compra de 10 assinaturas de nuvem mensais do Visual Studio Professional for feita no dia 15 de abril, serão cobradas cinco unidades porque há 15 dias restantes do mês de 30 dias ou 50%, e será cobrada a proporção de 50% das unidades. Em primeiro de maio e a cada mês seguinte até o cancelamento, será cobrado o total de 10 unidades.
 

@@ -1,11 +1,9 @@
 ---
-title: "Trechos de Código | Microsoft Docs"
-ms.custom: 
+title: Trechos de código
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -14,18 +12,18 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippets"></a>Trechos de código
 
@@ -97,10 +95,10 @@ Se você alterar `newPropertyValue` para `m_property`, cada instância de `newPr
 
 ## <a name="see-also"></a>Consulte também
 
-[Instruções passo a passo: criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md)  
-[Como distribuir trechos de código](../ide/how-to-distribute-code-snippets.md)  
-[Práticas recomendadas para usar trechos de código](../ide/best-practices-for-using-code-snippets.md)  
-[Solução de problemas de trechos](../ide/troubleshooting-snippets.md)  
-[Trechos de código C#](../ide/visual-csharp-code-snippets.md)  
-[Trechos de código do Visual C++](../ide/visual-cpp-code-snippets.md)  
-[Referência de esquema dos trechos de código](../ide/code-snippets-schema-reference.md)
+- [Instruções passo a passo: criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Como distribuir trechos de código](../ide/how-to-distribute-code-snippets.md)
+- [Melhores práticas para usar trechos de código](../ide/best-practices-for-using-code-snippets.md)
+- [Solução de problemas de trechos](../ide/troubleshooting-snippets.md)
+- [Trechos de código C#](../ide/visual-csharp-code-snippets.md)
+- [Trechos de código do Visual C++](../ide/visual-cpp-code-snippets.md)
+- [Referência de esquema dos trechos de código](../ide/code-snippets-schema-reference.md)

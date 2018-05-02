@@ -1,26 +1,20 @@
 ---
-title: Visualizar dados com as Ferramentas do R para Visual Studio | Microsoft Docs
+title: Visualizando dados com R
 description: Como plotar dados em programas de R no Visual Studio, usando janelas de plotagem.
-ms.custom: 
 ms.date: 06/29/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 962a7a5685a5d4a1d4ad5466710377d4885ad398
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Criando gráficos de dados visuais com R
 
@@ -57,7 +51,7 @@ A barra de ferramentas da janela de gráficos contém comandos aplicáveis e a m
 | ![Botão Nova janela de gráficos](media/plotting-toolbar-01-new-plot-window.png) | Nova janela de gráficos | Cria uma janela de gráficos separada com seu próprio histórico. Consulte [Várias janelas de gráficos](#multiple-plot-windows). |
 | ![Botão Ativar janela de gráficos](media/plotting-toolbar-02-activate-plot-window.png) | Ativar a janela de gráficos | Define a janela de gráficos atual como a janela ativa, de modo que os próximos comandos `plot` sejam renderizados para essa janela. Consulte [Várias janelas de gráficos](#multiple-plot-windows). Consulte [Várias janelas de gráficos](#multiple-plot-windows). |
 | ![Botão Janela de histórico de gráficos](media/plotting-toolbar-03-plot-history.png) | Janela de histórico de gráficos | Abre uma janela com todos os gráficos no histórico mostrados como miniaturas. Consulte [Histórico de gráficos](#plot-history). |
-| ![Botões Histórico de gráficos](media/plotting-toolbar-04-plot-history-arrows.png) | Gráfico anterior/seguinte |  Navega para gráfico anterior ou seguinte no histórico. Você também pode navegar no histórico com Ctrl+Alt+F11 (anterior) e Ctrl+Alt+F12 (seguinte). Consulte [Histórico de gráficos](#plot-history). |
+| ![Botões Histórico de gráficos](media/plotting-toolbar-04-plot-history-arrows.png) | Gráfico anterior/seguinte |  Navega para gráfico anterior ou seguinte no histórico. Você também pode navegar no histórico com Ctrl + Alt + F11 (anterior) e Ctrl + Alt + F12 (seguinte). Consulte [Histórico de gráficos](#plot-history). |
 | ![Botão Salvar como imagem](media/plotting-toolbar-05-save-as-image.png)| Salvar como imagem | Solicita um nome de arquivo e salva o gráfico atual (o conteúdo da janela, no tamanho da janela) em um arquivo de imagem. Os formatos disponíveis são `.png`, `.jpg`, `.bmp` e `.tif`. |
 | ![Botão Salvar como PDF](media/plotting-toolbar-06-save-as-pdf.png)| Salvar como PDF | Salva o gráfico atual em um arquivo PDF, usando o tamanho da janela atual. O gráfico será renderizado novamente se o PDF for dimensionado. |
 | ![Botão Copiar como bitmap](media/plotting-toolbar-07-copy-as-bitmap.png)| Copiar como bitmap | Copia o gráfico na área de transferência como um bitmap de varredura, usando o tamanho da janela atual. | 
@@ -77,7 +71,7 @@ O comportamento padrão do tipo "arrastar e soltar" é copiar. Para mover, arras
 
 ## <a name="plot-history"></a>Histórico de gráficos
 
-Os comandos de gráficos são mantidos em um histórico de gráficos de cada janela, garantindo que todos os gráficos dentro de uma sessão sejam preservados. Para navegar no histórico, use os botões de seta na barra de ferramentas da janela de gráficos ou Ctrl+Alt+F11 e Ctrl+Alt+F12. Você também pode remover gráficos individuais ou limpar todos os gráficos na janela, novamente usando os botões da barra de ferramentas ou os comandos de menu **Ferramentas do R > Gráficos**.
+Os comandos de gráficos são mantidos em um histórico de gráficos de cada janela, garantindo que todos os gráficos dentro de uma sessão sejam preservados. Para navegar no histórico, use os botões de seta na barra de ferramentas da janela de gráficos ou Ctrl + Alt + F11 e Ctrl + Alt + F12. Você também pode remover gráficos individuais ou limpar todos os gráficos na janela, novamente usando os botões da barra de ferramentas ou os comandos de menu **Ferramentas do R > Gráficos**.
 
 Para ver a coleção inteira de gráficos, abra a janela de histórico de gráficos usando o botão de barra de ferramentas ou **Ferramentas do R > Gráficos > Janela de histórico de gráficos**.
 O histórico fornece uma lista de miniaturas dos gráficos que foram exibidos nessa janela, agrupadas por diferentes janelas de gráficos (ou dispositivos). Usar os botões de zoom na barra de ferramentas altera o tamanho das miniaturas.

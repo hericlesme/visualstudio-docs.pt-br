@@ -1,16 +1,15 @@
 ---
-title: Habilitar a assinatura para o Visual Studio para Mac | Microsoft Docs
+title: Habilitar a assinatura para o Visual Studio para Mac
 description: Este artigo descreve como usar sua conta da Microsoft para ativar sua assinatura e desbloquear recursos no Visual Studio para Mac
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 9202229c1562c89e0ddd9852113d63dc85e0bcd2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4d4e2485b1fe536cae92a419b3d0f1a9e20556c8
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="enable-subscription"></a>Habilitar Assinatura
 
@@ -28,7 +27,7 @@ Para começar a usar uma assinatura, faça logon no Visual Studio para Mac segui
 
 Se sua assinatura tiver expirado, você terá duas opções:
 
-1. Renovar sua assinatura. Você pode renovar sua assinatura navegando para [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
+1. Renovar sua assinatura. Você pode renovar sua assinatura navegando até [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/).
 
 2. Se você tiver outra conta com uma assinatura ativa, poderá adicioná-la ao Visual Studio para Mac conforme detalhado no artigo [Adicionar várias contas de usuário](~/signing-in.md). O Visual Studio para Mac detectará a melhor licença disponível de todas as contas que você adicionou. 
 

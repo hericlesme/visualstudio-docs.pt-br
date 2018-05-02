@@ -1,15 +1,9 @@
 ---
-title: 'Início rápido: Criar um projeto Python usando o Cookiecutter | Microsoft Docs'
+title: Início Rápido – Criar um projeto Python usando o Cookiecutter
 description: Neste início rápido, crie um projeto do Visual Studio para Python usando um modelo do Cookiecutter.
-ms.custom: mvc
 ms.date: 09/22/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6ba3c034c199853b3cf6b08e026a6d9c78e47d3
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: c8e4ec1691dc1826fa6772d6d69723659245cece
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Início rápido: criar um projeto por meio de um modelo do Cookiecutter
 

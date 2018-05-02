@@ -1,17 +1,16 @@
 ---
-title: Instalar o Visual Studio para Mac | Microsoft Docs
-description: "Instruções sobre como instalar o Visual Studio para Mac e os componentes adicionais necessários para o desenvolvimento de plataforma cruzada."
+title: Instalar o Visual Studio para Mac
+description: Instruções sobre como instalar o Visual Studio para Mac e os componentes adicionais necessários para o desenvolvimento de plataforma cruzada.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 9069e85f5d0bf0d6b8031065619b48f7302b7411
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurar e instalar o Visual Studio para Mac
 
@@ -23,11 +22,11 @@ Para trabalhar com iOS no Visual Studio você precisará do seguinte:
 
 * Um Mac com macOS Sierra 10.12 ou superior
 * Xcode 8.3 ou posterior. A versão estável mais recente geralmente é recomendada.
-* Uma ID da Apple. Se você ainda não tiver uma ID da Apple, crie uma nova em https://appleid.apple.com. Será necessário ter uma ID da Apple para instalar e entrar no Xcode.
+* Uma ID da Apple. Se ainda não tiver uma ID da Apple, crie uma nova em https://appleid.apple.com. Será necessário ter uma ID da Apple para instalar e entrar no Xcode.
 
 ## <a name="install"></a>Instalar o
 
-1. Baixar o Visual Studio para Mac de [https://www.visualstudio.com/](https://www.visualstudio.com/)
+1. Faça download do Visual Studio para Mac em [https://www.visualstudio.com/](https://www.visualstudio.com/)
 
 2. Depois que o pacote do instalador for baixado, clique no arquivo **VisualStudioInstaller.dmg** para montar o instalador e executá-lo clicando duas vezes no logotipo, conforme ilustrado na imagem a seguir:
 

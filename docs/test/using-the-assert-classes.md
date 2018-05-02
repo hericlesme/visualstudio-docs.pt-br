@@ -1,8 +1,9 @@
 ---
-title: Usando as classes Assert para teste de unidade no Visual Studio | Microsoft Docs
+title: Usando as classes Assert para teste de unidade no Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -13,17 +14,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ff40f25e9beffa848185fe2c1f95df96928543d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d56477822fa2d965902d9442d47e2c3ab24d656
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-assert-classes"></a>Usar as classes Assert
 
 Use as classes Assert do namespace UnitTestingFramework para verificar a funcionalidade específica. Um método de teste de unidade executa o código de um método em seu código de desenvolvimento, mas relata a exatidão do comportamento do código somente se você incluir instruções Assert.
 
 ## <a name="kinds-of-asserts"></a>Tipos de Assert
+
  O namespace <xref:Microsoft.VisualStudio.TestTools.UnitTesting> fornece vários tipos de classes Assert:
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
@@ -47,7 +49,7 @@ Use as classes Assert do namespace UnitTestingFramework para verificar a funcion
  A AssertInconclusiveException será lançada quando um teste produzir um resultado Inconclusivo. Normalmente, uma instrução Assert é adicionada a um teste em que você ainda está trabalhando para indicar que ele ainda não está pronto para ser executado.
 
 > [!NOTE]
->  Uma estratégia alternativa seria marcar um teste que não está pronto para ser executado com o atributo Ignore. No entanto, a desvantagem é que não é fácil gerar um relatório sobre o número de testes que restaram para implementar.
+> Uma estratégia alternativa é marcar um teste que não está pronto para ser executado com o atributo Ignore. No entanto, a desvantagem é que não é fácil gerar um relatório sobre o número de testes que restaram para implementar.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
 

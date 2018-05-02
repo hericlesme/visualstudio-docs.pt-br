@@ -1,13 +1,10 @@
 ---
 title: Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy | Microsoft Docs
-description: ''
+description: Examine as URLs de domínio, as portas e os protocolos que você pode querer adicionar à lista de permissões ou abrir se sua organização usar um firewall ou um servidor proxy
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -20,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
+
 Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há URLs de domínio que você talvez queira adicionar à "lista de permissões" e portas e protocolos que talvez você queira abrir para que tenha a melhor experiência ao instalar e usar o Visual Studio e os Serviços do Azure.
 
 * **[Instalar o Visual Studio](#install-visual-studio)**: essas tabelas incluem as URLs de domínio na lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
@@ -34,10 +32,13 @@ Se você ou sua organização usa medidas de segurança como um firewall ou um s
 * **[Usar o Visual Studio e Serviços do Azure](#use-visual-studio-and-azure-services)**: essa tabela inclui as URLs de domínio na lista de permissões e as portas e protocolos a serem abertos para que você tenha acesso a todos os recursos e serviços desejados.
 
 ## <a name="install-visual-studio"></a>Instalar o Visual Studio
+
 ### <a name="urls-to-whitelist"></a>URLs a serem adicionadas à lista de permissões
+
 Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus servidores de download, aqui estão as URLs que talvez você deseje adicionar à lista de permissões como confiáveis na interface do usuário ou em seus scripts de implantação.
 
 #### <a name="microsoft-domains"></a>Domínios da Microsoft
+
 | Domain | Finalidade |
 | ------ | ------- |
 | go.microsoft.com | Resolução da URL de instalação |
@@ -57,6 +58,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>Domínios que não são da Microsoft
+
 | Domain | Instala essas cargas de trabalho |
 | ------ | ------- |
 | archive.apache.org |  Desenvolvimento móvel com JavaScript (Cordova) |
@@ -72,7 +74,9 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Usar o Visual Studio e Serviços do Azure
+
 ### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URLs a serem adicionadas à lista de permissões e portas e protocolos a serem abertos
+
 Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o Visual Studio ou Serviços do Azure por trás de um firewall ou servidor proxy, aqui estão as URLs que devem ser adicionadas à lista de permissões e as portas e protocolos que talvez você deseje abrir.
 
 | Cenário ou serviço | Ponto de extremidade DNS | Protocolo | Porta | Descrição |
@@ -116,18 +120,21 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 |Empacotar serviço | [conta].visualstudio.com <br/> [conta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | *.npmjs.org, *.nuget.org e *.nodejs.org são necessários somente para determinados cenários de tarefas de compilação (por exemplo, instalador de ferramentas do NuGet, instalador de ferramenta de nós) ou se você quiser usar upstreams públicos com os Feeds.  Três domínios são necessários para a funcionalidade principal do serviço de empacotamento. |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>Solucionar problemas de erros relacionados à rede
+
 Às vezes, você pode encontrar erros relacionados à rede ou ao proxy ao instalar ou usar o Visual Studio atrás de um firewall ou servidor proxy. Para obter mais informações sobre as soluções para essas mensagens de erro, consulte a página [Solução de erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="get-support"></a>Obter suporte
+
 Aqui estão algumas outras opções de suporte para você:
+
 * Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
 * Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
-* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
+* Você pode acompanhar os problemas do produto e encontrar respostas na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) (Comunidade de desenvolvedores do Visual Studio).
+* Também é possível interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opção requer uma conta do [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Consulte também
+
 * [Solução de erros relacionados à rede no Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 * [Instalar o Visual Studio 2017](install-visual-studio.md)

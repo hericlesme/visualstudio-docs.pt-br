@@ -1,15 +1,9 @@
 ---
-title: 'Início Rápido: clonar um repositório de código do Python | Microsoft Docs'
+title: 'Início Rápido: clonando um repositório de código Python'
 description: Neste início rápido, crie um projeto de Python em Visual Studio por meio da clonagem do repositório de koans do Python usando o Visual Studio Team Explorer.
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Início Rápido: clonar um repositório de código do Python no Visual Studio
 
@@ -31,7 +25,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 2. Inicie o Visual Studio.
 
-3. Selecione **Exibir > Team Explorer...** para abrir a janela do **Team Explorer** em que é possível se conectar ao GitHub ou ao Visual Studio Team Services ou clonar um repositório. Se a página **Conectar** não estiver exibida abaixo, selecione o ícone de plug na barra de ferramentas superior, que levará você à página.
+3. Selecione **Exibir > Team Explorer** para abrir a janela do **Team Explorer**, em que é possível se conectar ao GitHub ou ao Visual Studio Team Services ou clonar um repositório. Se a página **Conectar** não estiver exibida abaixo, selecione o ícone de plug na barra de ferramentas superior, que levará você à página.
 
     ![Janela do Team Explorer mostrando o Visual Studio Team Services, o GitHub e a clonagem de um repositório](media/team-explorer.png)
 
@@ -42,7 +36,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 5. Após a conclusão da clonagem, o repositório será exibido na lista **Repositórios Git Locais**. Clique duas vezes em que nome para navegar até o dashboard do repositório no **Team Explorer**.
 
-6. Em **Soluções**, selecione **Nova...** .
+6. Em **Soluções**, selecione **Nova**.
 
     ![Janela do Team Explorer, criando um novo projeto com base em um clone](media/team-explorer-new-project.png)
 
@@ -52,7 +46,7 @@ Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python
 
 9. No **Gerenciador de Soluções**, expanda o nó `python3`, clique com botão direito do mouse em `contemplate_koans.py` e selecione **Definir como Arquivo de Inicialização**. Esta etapa informa ao Visual Studio qual arquivo deve ser usado ao executar o projeto.
 
-10. Selecione **Projeto > Propriedades de Koans...** no menu, selecione a guia **Geral** e defina o **Diretório de Trabalho** como "python3". Esta etapa é necessária porque, por padrão, o Visual Studio define o diretório de trabalho como a raiz do projeto em vez da localização do arquivo de inicialização (`python3\contemplate_koans.py`, que você também pode ver nas propriedades do projeto). O código do programa procurará um arquivo `koans.txt` na pasta de trabalho, portanto sem a alteração desse valor, você vê um erro de tempo de execução.
+10. Selecione **Projeto > Propriedades de Koans** no menu, selecione a guia **Geral** e defina o **Diretório de Trabalho** como "python3". Esta etapa é necessária porque, por padrão, o Visual Studio define o diretório de trabalho como a raiz do projeto em vez da localização do arquivo de inicialização (`python3\contemplate_koans.py`, que você também pode ver nas propriedades do projeto). O código do programa procurará um arquivo `koans.txt` na pasta de trabalho, portanto sem a alteração desse valor, você vê um erro de tempo de execução.
 
     ![Configurar o diretório de trabalho para um projeto do Python](media/projects-set-working-directory.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Selecionar configuração de execução para um teste de carga no Visual Studio | Microsoft Docs
+title: Selecionar configuração de execução para um teste de carga no Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dc521cf8e0218fabd691493fdb65fb46471e05bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como selecionar a configuração de execução ativa para um teste de carga
 
@@ -43,7 +44,8 @@ No Editor de testes de carga, a configuração de execução ativa é identifica
      A configuração de execução selecionada torna-se ativa, e permanece ativa até que você selecione uma configuração de execução para ser ativa.
 
 > [!NOTE]
->  Você pode substituir a configuração de execução ativa definindo uma variável de ambiente denominada `Test.UseRunSetting=<run setting name>`. Isso é útil quando você executa um teste de carga a partir da linha de comando ou de um arquivo em lotes. Isso permite escolher configurações de execução diferentes sem abrir o teste de carga.
+> Você pode substituir a configuração de execução ativa definindo uma variável de ambiente denominada `Test.UseRunSetting=<run setting name>`. Isso é útil quando você executa um teste de carga a partir da linha de comando ou de um arquivo em lotes. Isso permite escolher configurações de execução diferentes sem abrir o teste de carga.
+
 
 ## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Especificando a configuração de execução a ser usada na linha de comando
  Você pode substituir as configurações de execução padrão no teste de carga definindo uma variável de ambiente na linha de comando:

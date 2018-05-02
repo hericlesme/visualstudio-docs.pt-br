@@ -1,36 +1,30 @@
 ---
-title: Modelo de projeto do Serviço de Nuvem do Azure para Python | Microsoft Docs
+title: Modelo de projeto do Serviço de Nuvem do Azure para Python
 description: Uma visão geral do modelo do Visual Studio para serviços de nuvem do Azure escritos em Python, incluindo a implantação de função, dependências e solução de problemas.
-ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projetos do serviço de nuvem do Azure para Python
 
 O Visual Studio fornece modelos para ajudá-lo a começar a criar Serviços de Nuvem do Azure usando o Python.
 
-Um [serviço de nuvem](http://go.microsoft.com/fwlink/?LinkId=306052) consiste em várias *funções de trabalho* e *funções web*, sendo que cada uma executa uma tarefa separada conceitualmente, mas pode ser replicada separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Quanto ao Python, qualquer estrutura Web que dá suporte ao WSGI pode ser usada para gravam um aplicativo desse tipo (com suporte no [Modelo de Projeto Web](python-web-application-project-templates.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Geralmente, elas fazem uso de bibliotecas de [dados](http://go.microsoft.com/fwlink/?LinkId=401571) e de [serviço de aplicativo](http://go.microsoft.com/fwlink/?LinkId=401572), que podem ser instaladas com [`pip install azure`](http://pypi.org/project/azure).
+Um [serviço de nuvem](https://docs.microsoft.com/azure/cloud-services/) consiste em várias *funções de trabalho* e *funções web*, sendo que cada uma executa uma tarefa separada conceitualmente, mas pode ser replicada separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Quanto ao Python, qualquer estrutura Web que dá suporte ao WSGI pode ser usada para gravam um aplicativo desse tipo (com suporte no [Modelo de Projeto Web](python-web-application-project-templates.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Normalmente, elas usam pacotes dentro do pacote "azure", que é instalado com o [ `pip install azure` ](http://pypi.org/project/azure).
 
-Este artigo contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](http://go.microsoft.com/fwlink/?linkid=254360).
+Este artigo contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 
 ## <a name="create-a-project"></a>Criar um projeto
 

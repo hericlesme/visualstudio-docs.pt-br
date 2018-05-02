@@ -1,6 +1,7 @@
 ---
-title: Testes de unidade para métodos genéricos no Visual Studio | Microsoft Docs
+title: Testes de unidade para métodos genéricos no Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 
@@ -115,7 +116,8 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
->  Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, consulte [Como depurar durante a execução de um teste em uma solução do ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, consulte [Como depurar durante a execução de um teste em uma solução do ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: usando uma restrição de tipo
  Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo não atendida. A primeira seção mostra código do projeto de código em teste. A restrição de tipo está realçada.

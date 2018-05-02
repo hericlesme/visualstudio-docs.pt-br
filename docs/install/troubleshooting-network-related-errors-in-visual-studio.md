@@ -1,14 +1,11 @@
 ---
-title: Solução de erros relacionados à rede ao instalar ou usar o Visual Studio | Microsoft Docs
-description: ''
+title: Solução de erros relacionados à rede ao instalar ou usar o Visual Studio
+description: Encontre soluções para erros relacionados à rede ou ao proxy que você pode encontrar ao instalar ou usar o Visual Studio por trás de um firewall ou um servidor proxy.
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
-ms.topic: conceptual
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
+ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -21,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 41fed015f4ad80c3c3b74bc77ea3b9cc6ed8eb18
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solução de erros relacionados à rede ao instalar ou usar o Visual Studio
+
 Temos soluções para os erros mais comuns relacionadas à rede ou ao proxy que você pode encontrar ao instalar ou usar o Visual Studio atrás de um firewall ou um servidor proxy.
 
 ## <a name="error-proxy-authorization-required"></a>Erro: “Autorização de proxy necessária”
 
 Esse erro geralmente ocorre quando os usuários estão conectados à Internet por meio de um servidor proxy e o servidor proxy bloqueia as chamadas que o Visual Studio faz para alguns recursos de rede.
 
-### <a name="to-fix-this-error"></a>Para corrigir esse erro:
+### <a name="to-fix-this-proxy-error"></a>Para corrigir esse erro de proxy
 
 - Reinicie o Visual Studio. Uma caixa de diálogo de autenticação de proxy deverá aparecer. Insira suas credenciais na caixa de diálogo quando solicitado.
 
@@ -80,7 +78,7 @@ Se você estiver usando o Visual Studio em uma rede privada que tem um firewall,
 
 O Visual Studio usa o TLS (protocolo TLS) 1.2 para se conectar aos recursos de rede. Os dispositivos de segurança de algumas redes privadas bloqueiam determinadas conexões de servidor quando o Visual Studio usa o protocolo TLS 1.2.
 
-### <a name="to-fix-this-error"></a>Para corrigir esse erro:
+### <a name="to-fix-this-connection-error"></a>Para corrigir esse erro de conexão
 
 Habilite as conexões para as seguintes URLs:
 
@@ -113,17 +111,19 @@ Habilite as conexões para as seguintes URLs:
  > [!NOTE]
  > As URLs de servidor NuGet privadas podem não estar incluídas nesta lista. Você pode verificar os servidores NuGet que estamos usando em %APPData%\Nuget\NuGet.Config.
 
-
 ## <a name="get-support"></a>Obter suporte
+
 Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas de instalação ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
+
 * Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
 * Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
-* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
+* Você pode acompanhar os problemas do produto e encontrar respostas na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) (Comunidade de desenvolvedores do Visual Studio).
+* Também é possível interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opção requer uma conta do [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Consulte também
+
 * [Instalar e usar o Visual Studio atrás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 * [Instalar o Visual Studio 2017](install-visual-studio.md)

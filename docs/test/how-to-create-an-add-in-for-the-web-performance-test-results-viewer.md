@@ -1,5 +1,5 @@
 ---
-title: Criar um suplemento do Visual Studio para o Visualizador de Resultados de Teste de Desempenho Web | Microsoft Docs
+title: Criar um suplemento do Visual Studio para o visualizador de resultados de testes de desempenho Web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa163381415060d189899e7defd64a8935c4ea94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 720a5d7ca5dfd0d8ab21100fa41c5b249a99858d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como criar um complemento do Visual Studio para o Visualizador de Resultados de Teste de Desempenho Web
 

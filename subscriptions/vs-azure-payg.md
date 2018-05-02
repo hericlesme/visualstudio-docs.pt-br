@@ -1,24 +1,24 @@
 ---
-title: "Benefício PAYG do Azure"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to set up your Azure Pay-As-You-Go account.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4add5862ba05a588a3320b3f2530787ff153c974
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+title: Benefício PAYG do Azure
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Saiba como configurar sua conta de Pago Conforme o Uso do Azure.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cd1b545e4b3f6300431c6bfd7c28c9998572dacf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="setting-up-azure-devtest-pay-as-you-go-subscription"></a>Configurando a assinatura de Pago Conforme o Uso de Desenvolvimento/Teste do Azure
+# <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Configurando uma assinatura Paga Conforme o Uso de Desenvolvimento/Teste do Azure
 Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso de Desenvolvimento e de Teste, permitindo a colaboração com outros assinantes e também o isolamento entre as equipes e os ambientes.  Você recebe taxas por hora com desconto exclusivas para desenvolvimento/teste e direitos de uso de nuvem para seu software de assinatura no Azure.
 
-1.  Para usar o benefício de assinatura Pago Conforme o Uso do Azure, clique no link **Ativar** na parte inferior do bloco do benefício.   
+1.  Para usar o benefício da assinatura Paga Conforme o Uso do Azure, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no link **Ativar** na parte inferior do bloco do benefício.   
 
     ![Bloco PAYG do Azure](_img\vs-azure-payg\vs-azure-payg-tile.png) 
 

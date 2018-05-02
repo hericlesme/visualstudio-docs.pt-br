@@ -1,8 +1,9 @@
 ---
-title: Configurações e plataformas para testes de IU codificados no Visual Studio | Microsoft Docs
+title: Configurações e plataformas para testes de interface do usuário codificados no Visual Studio
 ms.date: 2015-10-04
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
@@ -10,18 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 82d44d08353ed048ff51c90ea9a4b5c061a2dc2d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: caa1fd5317cf7f5bfd7a7f5a309734002112cc6a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurações e plataformas compatíveis para testes de IU codificados e gravações das ações
 
 As configurações e as plataformas de testes de IU codificados com suporte no Visual Studio Enterprise são listadas na tabela a seguir. Essas configurações também se aplicam às gravações de ação criadas usando o [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)].
 
 > [!NOTE]
->  O processo de teste de IU codificado deve ter os mesmos privilégios que o aplicativo testado.
+> O processo de teste de IU codificado deve ter os mesmos privilégios que o aplicativo testado.
+
 
  **Requisitos**
 
@@ -37,7 +39,8 @@ As configurações e as plataformas de testes de IU codificados com suporte no V
 |.NET|.NET 2.0, 3.0, 3.5, 4 e 4.5. **Observação:** o [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] e o Visual Studio exigirão o .NET 4 para funcionar. No entanto, há suporte para os aplicativos desenvolvidos usando as versões listadas do .NET.|
 
 > [!NOTE]
->  *Sincronização de interface do usuário* é um recurso em que a reprodução é verificada na fila de mensagens de cada controle. Se um controle não respondeu ao evento enviado para ele, o evento será enviado novamente.
+> *Sincronização de interface do usuário* é um recurso em que a reprodução é verificada na fila de mensagens de cada controle. Se um controle não respondeu ao evento enviado para ele, o evento será enviado novamente.
+
 
 ## <a name="platform-support"></a>Suporte de plataforma
 

@@ -1,19 +1,20 @@
 ---
-title: Analisar o uso de memória no Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Medir o uso de memória em seus aplicativos
+description: Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico integrada ao depurador.
+ms.custom: mvc
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de4cf17e02391db4430bcd41fb8cfa2ea09b98f7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7f12caeb35e2c5c100069c3a5df066775beb5af3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Uso de memória de perfil no Visual Studio
 Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico **Uso de Memória** integrada ao depurador. A ferramenta Uso de Memória permite que você obtenha um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa para entender o impacto do uso de memória dos tipos de objeto. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  

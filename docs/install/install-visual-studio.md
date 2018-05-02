@@ -3,11 +3,8 @@ title: Instalar o Visual Studio 2017 | Microsoft Docs
 description: Saiba como instalar o Visual Studio, passo a passo.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -22,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f6acdd338b0ae8d23fba338c8564d2bd95ad45
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: c39496b09c72c6c5eb72fb1c5bedb59285d01347
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-visual-studio-2017"></a>Instalar o Visual Studio 2017
+
 Bem-vindo a uma nova maneira de instalar o Visual Studio! Em nossa versão mais recente, facilitamos a seleção e instalação apenas dos recursos necessários. Também reduzimos os volumes mínimos do Visual Studio para que ele seja instalado mais rapidamente e com menor impacto ao sistema.
 
 Quer saber mais sobre quais são as outras novidades nesta versão? Consulte nossas [notas de versão](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
@@ -62,7 +60,7 @@ Em seguida, baixe o arquivo bootstrapper do Visual Studio. Para fazer isso, cliq
 
 Em seguida, execute o arquivo bootstrapper para instalar o Instalador do Visual Studio. Esse novo instalador leve inclui tudo o que você precisa para instalar e personalizar o Visual Studio 2017.
 
-1.  Da sua pasta **Downloads**, clique duas vezes no inicializador que corresponde ou é semelhante a um dos seguintes arquivos:
+1. Da sua pasta **Downloads**, clique duas vezes no inicializador que corresponde ou é semelhante a um dos seguintes arquivos:
 
   * **vs_enterprise.exe** para Visual Studio Enterprise
   * **vs_professional.exe** para Visual Studio Professional
@@ -70,7 +68,7 @@ Em seguida, execute o arquivo bootstrapper para instalar o Instalador do Visual 
 
   Se você receber um aviso de Controle de Conta de Usuário, clique em **Sim**.
 
-2.  Solicitaremos sua confirmação dos [Termos de Licença](https://www.visualstudio.com/license-terms/) da Microsoft e da [Política de Privacidade](https://go.microsoft.com/fwlink/?LinkID=824704) da Microsoft. Clique em **Continue**.  
+2. Solicitaremos sua confirmação dos [Termos de Licença](https://www.visualstudio.com/license-terms/) da Microsoft e da [Política de Privacidade](https://go.microsoft.com/fwlink/?LinkID=824704) da Microsoft. Clique em **Continue**.  
 
    ![Termos de Licença e Política de Privacidade](media/vs2017-privacy-and-license-terms.PNG "Termos de Licença e Política de Privacidade da Microsoft")
 
@@ -78,20 +76,20 @@ Em seguida, execute o arquivo bootstrapper para instalar o Instalador do Visual 
 
 Após a instalação do instalador, use-o para personalizar sua instalação selecionando os conjuntos de recursos ou cargas de trabalho desejados. Veja como.
 
-1.  Encontre a carga de trabalho desejada na tela **Instalando o Visual Studio**.
+1. Encontre a carga de trabalho desejada na tela **Instalando o Visual Studio**.
 
  ![Selecione uma carga de trabalho na caixa de diálogo de instalação da Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
 
      Por exemplo, escolha a carga de trabalho de “Desenvolvimento de área de trabalho do .NET”. Ela vem com o editor de núcleo padrão, que inclui o suporte à edição de código básico para mais de 20 linguagens, a capacidade de abrir e editar o código de qualquer pasta sem precisar de um projeto e o controle do código-fonte integrado.  
 
-2.  Depois de selecionar as cargas desejadas, clique em **Instalar**.
+2. Depois de selecionar as cargas desejadas, clique em **Instalar**.
 
     Em seguida, serão exibidas telas de status que mostram o progresso da instalação do Visual Studio.
 
-3.  Depois que as novas cargas de trabalho e os componentes forem instalados, clique em **Inicializar**.  
+3. Depois que as novas cargas de trabalho e os componentes forem instalados, clique em **Inicializar**.  
 
 > [!TIP]
->  A qualquer momento após a instalação, você pode instalar as cargas de trabalho ou os componentes não instalados inicialmente. Caso o Visual Studio esteja aberto, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Outra opção é abrir o **Instalador do Visual Studio** no menu Iniciar. Assim, é possível selecionar as cargas de trabalho ou os componentes que você deseja instalar e, em seguida, clicar e **Modificar**.  
+> A qualquer momento após a instalação, você pode instalar as cargas de trabalho ou os componentes não instalados inicialmente. Caso o Visual Studio esteja aberto, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Outra opção é abrir o **Instalador do Visual Studio** no menu Iniciar. Assim, é possível selecionar as cargas de trabalho ou os componentes que você deseja instalar e, em seguida, clicar e **Modificar**.  
 
 |         |         |
 |---------|---------|
@@ -121,8 +119,8 @@ Por padrão, o programa do instalador tenta encontrar a correspondência do idio
 
 Outra maneira de alterar o idioma padrão é executar o instalador a partir da linha de comando. Por exemplo, é possível forçar o instalador a ser executado em inglês usando o seguinte comando: `vs_installer.exe --locale en-US`. O instalador memorizará essa configuração quando for executado na próxima vez. O instalador dá suporte aos seguintes tokens de idioma: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru e tr-tr.
 
-
 ## <a name="step-7---start-developing"></a>Etapa 7 – Começar a desenvolver
+
 1. Após a conclusão da instalação do Visual Studio, clique no botão **Iniciar** para ver a [Introdução ao desenvolvimento com o Visual Studio](../ide/get-started-developing-with-visual-studio.md).
 
 2. Clique em **Arquivo** e, em seguida, clique em **Novo Projeto**.
@@ -132,15 +130,18 @@ Outra maneira de alterar o idioma padrão é executar o instalador a partir da l
    Para [compilar um aplicativo em C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), clique em **Instalado**, expanda **Visual C#** e, em seguida, selecione o tipo de projeto C# que deseja compilar.
 
 ## <a name="get-support"></a>Obter suporte
+
 Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
+
 * Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
 * Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
-* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
+* Você pode acompanhar os problemas do produto e encontrar respostas na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) (Comunidade de desenvolvedores do Visual Studio).
+* Também é possível interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opção requer uma conta do [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Consulte também
+
 * [Atualizar o Visual Studio 2017](update-visual-studio.md)
 * [Modificar o Visual Studio 2017](modify-visual-studio.md)
 * [Desinstalar o Visual Studio 2017](uninstall-visual-studio.md)

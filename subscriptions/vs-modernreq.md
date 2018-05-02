@@ -1,53 +1,26 @@
 ---
-title: "O benefício MODERNRequirements nas assinaturas do Visual Studio | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the ModernRequirements suite of products included in selected Visual Studio Enterprise subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4ff6c7db66547bc2d4da05bf9aec087113c64cbe
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: O benefício MODERNRequirements nas assinaturas do Visual Studio | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Saiba mais sobre o pacote de produtos ModernRequirements incluído em assinaturas selecionadas do Visual Studio Enterprise.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: c16033488db6e23e935f355183db7d7049690ba5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>O benefício MODERNRequirements4TFS nas assinaturas do Visual Studio
 
-## <a name="overview"></a>Visão geral
-
 Assinaturas selecionadas do Visual Studio incluem uma assinatura de seis meses do MODERNRequirements SmartOffice 4TFS e do ModernRequirements4TFS.  O MODERNRequirements SmartOffice4TFS estende os recursos do TFS ou do Visual Studio Team Services com relatórios baseados no Microsoft Word e criação rápida e simplificada em rich text.  O ModernRequirements4TFS fornece linhas de base de item de trabalho e recursos de simulação de HTML5.  
 
-## <a name="eligibility"></a>Qualificação
-| Nível de Assinatura/Programa                                                  | Benefício               | Renovável?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | Seis meses              |  Sim                                                               |
-| Visual Studio Enterprise anual                                               | Seis meses              |  Sim                                                               |
-| Visual Studio Enterprise mensal                                              | Não disponível         |                                                                    |
-| Visual Studio Professional Standard                                           | Não disponível         |                                                                    |
-| Visual Studio Professional anual                                             | Não disponível         |                                                                    | 
-| Visual Studio Professional mensal                                            | Não disponível         |                                                                    |
-| Visual Studio Test Pro                                                        | Não disponível         |                                                                    |
-| Plataformas MSDN                                                                | Não disponível         |                                                                    |
-| Visual Studio Dev Essentials                                                  | Não disponível         |                                                                    |
-| Visual Studio Enterprise – NFR<sup>1</sup>                                               | Seis meses              |  Sim                                                               |
-| Visual Studio Enterprise - FTE                                                | Seis meses              |  Sim                                                               |
-| Visual Studio Enterprise ‒ Microsoft Partner Network                          | Seis meses              |  Sim                                                               |
-| Visual Studio Professional – Microsoft Partner Network                        | Não disponível         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Não disponível         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Não disponível         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Não disponível         |                                                                    |
-| Microsoft Certified Trainer ‒ Software e Serviços                             | Não disponível         |                                                                    |
-| Microsoft Certified Trainer ‒ Desenvolvedor de Software e Serviços                   | Não disponível         |                                                                    |
 
-<sup>1</sup>  *Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)*  
-
-Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
-
-## <a name="activation-steps"></a>Etapas de Ativação
+## <a name="activation-steps"></a>Etapas de ativação
 1.  Para usar o benefício MODERNRequirementsTFS, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Localize o bloco MODERNRequirements4TFS na seção de Ferramentas e clique no link **Obter Código** na parte inferior esquerda do bloco.   
 
@@ -109,8 +82,19 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://m
 
 22. Quando o Word for aberto, você verá que a guia SmartWord4TFS foi adicionada. Clique na guia para exibir o conjunto de ferramentas do SmartWord4TFS. 
 
-## <a name="faq"></a>Perguntas Frequentes
-*Verifique aqui se há atualizações*
+## <a name="eligibility"></a>Qualificação
+| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Seis meses       |  Nº  Disponível apenas para novos assinantes          |
+| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | Não disponível                                                          |NA     |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                                          |NA     |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                                          |NA     |
+| Visual Studio Dev Essentials | NA  |Não disponível                                                          |NA     |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
+
+<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), FTE.  Exclui: Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Partner), RD (Diretor regional).  MCT Software & Services.*
+
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Precisa de ajuda com produtos do ModernRequirements?  Visite https://www.modernrequirements.com/support-2/.

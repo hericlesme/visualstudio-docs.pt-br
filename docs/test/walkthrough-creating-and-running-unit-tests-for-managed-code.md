@@ -1,6 +1,7 @@
 ---
-title: 'Passo a passo: criando e executando testes de unidade para código gerenciado no Visual Studio | Microsoft Docs'
+title: 'Passo a passo: criando e executando testes de unidade para código gerenciado no Visual Studio'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: a34fded72a0d04f3920e0d7a76f9550993b520e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b60317f46fc8676d51618e5c79545e752008072
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: criar e executar testes de unidade para código gerenciado
 
@@ -45,10 +46,12 @@ Este passo a passo guiará você pela criação, execução e personalização d
  [Usar testes da unidade para melhorar o código](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)
 
 > [!NOTE]
->  Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O Gerenciador de testes também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o Gerenciador de Testes. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
+> Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O Gerenciador de testes também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o Gerenciador de Testes. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
+
 
 > [!NOTE]
->  Para obter informações sobre como executar testes de uma linha de comando, consulte [Passo a passo: Usando o utilitário de teste da linha de comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+> Para obter informações sobre como executar testes de uma linha de comando, consulte [Passo a passo: Usando o utilitário de teste da linha de comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

@@ -1,12 +1,9 @@
 ---
 title: Instalar em ambientes de rede não confiável ou de baixa largura de banda | Microsoft Docs
-description: Descreve como o instalador do Visual Studio funciona em condições de rede não confiável e explica como baixar os arquivos de instalação antes de iniciar a instalação.
+description: Saiba como usar o instalador do Visual Studio quando sua rede não for confiável ou quando você tiver pouca largura de banda, bem como usar a linha de comando para fazer baixar os arquivos de instalação.
 ms.date: 01/17/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Visual Studio
@@ -16,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9a0263c79e1dd2c7d0aacc5f405185cad3c3e7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Instalar o Visual Studio 2017 em ambientes de rede não confiável ou de baixa largura de banda
 
@@ -108,15 +105,18 @@ Use este comando para executar a instalação:
 | zh-TW | Chinês – Tradicional |
 
 ## <a name="get-support"></a>Obter suporte
+
 Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
+
 * Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
 * Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
-* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
+* Você pode acompanhar os problemas do produto e encontrar respostas na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) (Comunidade de desenvolvedores do Visual Studio).
+* Também é possível interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opção requer uma conta do [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Consulte também
+
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

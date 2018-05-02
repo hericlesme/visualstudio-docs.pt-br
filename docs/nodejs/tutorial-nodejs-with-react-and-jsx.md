@@ -1,6 +1,6 @@
 ---
-title: Criar um aplicativo Node.js e React – Visual Studio | Microsoft Docs
-description: Neste tutorial, você cria um aplicativo Node.js e React no Visual Studio
+title: Criar um aplicativo Node.js e React
+description: Neste tutorial, você cria um aplicativo usando ferramentas Node.js para Visual Studio
 ms.custom: mvc
 ms.date: 02/19/2018
 ms.technology: vs-nodejs
@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 21debd24f69b79cb2dbbf9e9ceea928ac9dd851e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf9e3d470c18651d769b94805ea4a17bbf531884
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 O Visual Studio permite criar facilmente um projeto de Node.js e aproveitar o IntelliSense e outros recursos internos que dão suporte a Node.js. Neste tutorial para Visual Studio, você cria um projeto de aplicativo Web Node.js de um modelo do Visual Studio. Em seguida, você cria um aplicativo simples usando o React.

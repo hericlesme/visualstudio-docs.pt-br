@@ -1,5 +1,5 @@
 ---
-title: Adicionar contadores a conjuntos de contadores para testes de carga no Visual Studio | Microsoft Docs
+title: Adicionar contadores a conjuntos de contadores para testes de carga no Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,21 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 153e7369397b961338b4c4c495cfd953f5271c0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Como adicionar contadores a conjuntos de contadores usando o Editor de Teste de Carga
 
 Quando cria um teste de carga com o **Assistente de Teste de Carga**, você adiciona um conjunto inicial de contadores. Isso oferece um conjunto de contadores predefinidos para seu teste de carga. Para obter mais informações, consulte [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 > [!NOTE]
->  Se os testes de carga forem distribuídos por computadores remotos, os contadores de agente e controlador serão mapeados para os conjuntos de contadores de agente e controlador. Para obter mais informações sobre como usar computadores remotos no teste de carga, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
+> Se os testes de carga forem distribuídos por computadores remotos, os contadores de agente e controlador serão mapeados para os conjuntos de contadores de agente e controlador. Para obter mais informações sobre como usar computadores remotos no teste de carga, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).
+
 
  Você gerencia os contadores no **Editor de Teste de Carga**. Os conjuntos de contadores que já foram adicionados ao teste ficam visíveis no nó **Conjuntos de contadores** do teste de carga. Depois que você cria um teste de carga, você pode adicionar novos contadores aos conjuntos de contadores existentes.
 

@@ -1,17 +1,16 @@
 ---
-title: "Ações de Build"
+title: Ações de Build
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 78b0e715ca44c613b6a7ee839c0656e301308588
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="build-actions"></a>Ações de Build 
+# <a name="build-actions"></a>Ações de Build
 
 Todos os arquivos em um projeto do Visual Studio para Mac tem uma ação de build que controla o que acontece com o arquivo durante um build. Elas podem ser definidas clicando com o botão direito do mouse em qualquer arquivo e navegando para **Ação de Build**, conforme ilustrado abaixo:
 
@@ -26,4 +25,4 @@ Algumas das ações de build comuns para projetos C# são:
 
 É possível selecionar mais de um arquivo no gerenciador de Soluções, permitindo que você defina a ação de build para vários arquivos ao mesmo tempo.
 
-Além disso, há ações de build para projetos específicos. Por exemplo, projetos Xamarin.iOS têm a ação de build **BundleResource**, que adiciona o arquivo como parte do pacote de aplicativo. Informações sobre as ações de build específicas do Xamarin.Android podem ser encontradas no guia de [processo de build](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#Build_Actions) em developer.xamarin.com.
+Além disso, há ações de build para projetos específicos. Por exemplo, projetos Xamarin.iOS têm a ação de build **BundleResource**, que adiciona o arquivo como parte do pacote de aplicativo. Informações sobre as ações de build específicas do Xamarin.Android podem ser encontradas no guia de [processo de build](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).

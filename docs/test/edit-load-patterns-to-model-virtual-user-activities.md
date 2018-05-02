@@ -1,5 +1,5 @@
 ---
-title: Padrões de carga para testes de carga no Visual Studio | Microsoft Docs
+title: Padrões de carga para testes de carga no Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar padrões de carga para modelar atividades de usuário virtual
 
@@ -43,7 +44,8 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
  Por exemplo, uma carga em etapa com uma contagem **Usuário inicial** de um, **Contagem máxima de usuários** de 100, **Duração da etapa (segundos)** de 10 e **Contagem de usuário em etapas** de 1 cria um padrão de carga do usuário que começa em 1, aumenta em 1 a cada 10 segundos até alcançar 100 usuários.
 
 > [!NOTE]
->  Se a duração total do teste for menor que o tempo necessário para passar à carga de usuário máxima, o teste irá parar depois da duração decorrida e não alcançará o destino Contagem Máxima de Usuários.
+> Se a duração total do teste for menor que o tempo necessário para passar à carga de usuário máxima, o teste irá parar depois da duração decorrida e não alcançará o destino Contagem Máxima de Usuários.
+
 
  Você pode usar a meta da etapa para aumentar a carga até o servidor atingir um ponto em que o desempenho diminui significativamente. À medida que a carga aumentar, o servidor acabará ficando sem recursos. A carga em etapa é uma boa maneira de determinar o número de usuários em que ela ocorre. Com a carga em etapa, você também precisa monitorar recursos do agente atentamente para ter certeza de que os agentes possam gerar a carga desejada.
 
@@ -117,12 +119,14 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
  Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades do padrão de carga associadas a um cenário para níveis que atendam às suas necessidades de teste.
 
 > [!NOTE]
->  Para obter uma lista completa das propriedades de cenário de teste da carga e suas descrições, consulte [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+> Para obter uma lista completa das propriedades de cenário de teste da carga e suas descrições, consulte [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
+
 
  Um padrão de carga especifica o número de usuários virtuais ativos durante um teste de carga e a taxa em que os novos usuários são adicionados. Você pode escolher um dos três padrões disponíveis: padrão em etapa, constante e baseado em meta. Para obter mais informações, consulte [Especificando o número de usuários virtuais com padrões de carga em um cenário de teste de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
->  Você também pode alterar as propriedades de carga programaticamente usando um plug-in de teste de carga. Para obter mais informações, consulte [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
+> Você também pode alterar as propriedades de carga programaticamente usando um plug-in de teste de carga. Para obter mais informações, consulte [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
+
 
 ### <a name="to-change-the-load-pattern"></a>Para alterar o padrão de carga
 

@@ -1,37 +1,20 @@
 ---
-title: "Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de memória usando a linha de comando | Microsoft Docs"
-ms.custom: 
+title: Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de memória usando a linha de comando | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
-caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3de39533453db343e8020994db140399214ce8b8
-
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 456e8fff1b4e484648c1e30a9b588a4f5923fc91
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de memória usando a linha de comando
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) do .NET Framework e coletar dados de memória.  
@@ -126,8 +109,3 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 ## <a name="see-also"></a>Consulte também  
  [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

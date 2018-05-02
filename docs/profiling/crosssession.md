@@ -1,23 +1,20 @@
 ---
 title: CrossSession | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 079e0ec1b2bad2ca01a698c474c37de6d5d7dfd6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1ae3c401a08df3eefa6f2ebe247aa7404f6b4ed2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="crosssession"></a>CrossSession
 A opção **CrossSession** do VSPerfCmd.exe permite que o criador de perfil colete dados de qualquer sessão de console. A opção **CrossSession** deve ser usada com a opção **Iniciar**.  
@@ -39,10 +36,10 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Iniciar:** `Method`  
  A opção **Iniciar** inicializa o criador de perfil para o método de criação de perfil especificado.  
   
- **Anexar:** *PID*[**,***PID*]  
+ **Attach:** *PID*[**,***PID*]  
  Inicia a criação de perfil dos processos especificados.  
   
- **Desanexar**[**:***PID*[,*PID*]]  
+ **Detach**[**:***PID*[,*PID*]]  
  Para a criação de perfil dos processos especificados.  
   
 ## <a name="example"></a>Exemplo  

@@ -1,6 +1,7 @@
 ---
-title: Desenvolvimento Orientado por Testes com o Gerenciador de Testes no Visual Studio | Microsoft Docs
+title: Desenvolvimento Orientado por Testes com o Gerenciador de Testes no Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b40ec7940e3c070bb1a29bd1753ed183bf67e22c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento Orientado por Testes com o Gerenciador de Testes
 
@@ -60,10 +61,12 @@ ms.lasthandoff: 04/16/2018
  **Para depurar um teste,** abra o menu de atalho para um ou mais testes e escolha **Depurar Testes Selecionados**.
 
 > [!IMPORTANT]
->  Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.
+> Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.
+
 
 > [!NOTE]
->  Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para obter mais informações, consulte [Usando diferentes estruturas de teste com o Gerenciador de Testes](#frameworks).
+> Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para obter mais informações, consulte [Usando diferentes estruturas de teste com o Gerenciador de Testes](#frameworks).
+
 
 ##  <a name="walkthrough"></a> Passo a passo: Usando testes de unidade para desenvolver um método
  Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para obter mais informações, consulte [Usando diferentes estruturas de teste](#frameworks).

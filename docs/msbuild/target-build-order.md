@@ -2,25 +2,21 @@
 title: Ordem de build de destinos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 18
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9936c1529f0fbb5161d4cd766b1ce5eb0fc847c1
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="target-build-order"></a>Ordem de build de destinos
 Os destinos deverão ser ordenados se a entrada para um destino depender da saída de outro. É possível usar esses atributos para especificar a ordem na qual os destinos são executados:  
@@ -114,6 +110,8 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
 2.  Os destinos especificados na linha de comando pela opção **/target** são executados. Se você não especificar nenhum destino na linha de comando, os destinos `DefaultTargets` serão executados. Se nenhum deles estiver presente, o primeiro destino encontrado será executado.  
   
 3.  O atributo `Condition` do destino é avaliado. Se o atributo `Condition` estiver presente e for avaliado como `false`, o destino não será executado e não terá nenhum efeito adicional no build.
+
+    Destinos que listam o destino condicional em `BeforeTargets` ou `AfterTargets` ainda são executados na ordem prescrita
   
 4.  Antes de um destino ser executado, seus destinos `DependsOnTargets` são executados.  
   

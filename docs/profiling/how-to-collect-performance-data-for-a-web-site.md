@@ -1,13 +1,9 @@
 ---
 title: Como coletar dados de desempenho de um site da Web | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -20,14 +16,14 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9cefe31201a3b67ba176a56fed58bbe155bcf0
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Como coletar dados de desempenho de um site da Web
 
@@ -82,7 +78,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
 
 5. Na caixa **Qual URL ou Caminho executará seu aplicativo Web** na terceira página do assistente, insira a URL para a home page do aplicativo e, em seguida, clique em **Avançar**.
 
-    - Para o site da Web baseado em um servidor (IIS), digite uma URL como **http://localhost/MySite/default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] no computador local na raiz do aplicativo do MySite tenha seu perfil criado e a página default.aspx nesse site seja iniciada no Internet Explorer para iniciar a sessão.
+    - Para um site baseado em servidor (IIS), digite uma URL como **http://localhost/MySite/default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] no computador local na raiz do aplicativo do MySite tenha seu perfil criado e a página default.aspx nesse site seja iniciada no Internet Explorer para iniciar a sessão.
 
     - Para um site da Web baseado em um arquivo, digite um caminho como file///**c:\WebSites\MySite\default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] localizado em c:\webSites\MySite tenha seu perfil criado e a página http://localhost:nnnn/MySite/default.aspx seja iniciada no Internet Explorer para iniciar a sessão.
 

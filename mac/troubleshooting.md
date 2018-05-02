@@ -1,21 +1,21 @@
 ---
-title: "Solução de problemas | Microsoft Docs"
-description: 
+title: Solução de problemas com o Visual Studio para Mac
+description: Problemas comuns e resoluções para usuários do Visual Studio para Mac.
+ms.topic: troubleshooting
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 4e483548e916bf00b07c472b18adac8504b6e967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a802bf950b5f759a41f88fb9260449fadcea8974
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="troubleshooting"></a>Solução de problemas
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>Exibindo logs no Visual Studio para Mac
- 
+
 Os logs podem ser encontrados navegando para o item de menu **Ajuda > abrir Diretório de Log**, conforme ilustrado abaixo:
 
 ![Item de menu Abrir diretório de logs](media/troubleshooting-image1.png)

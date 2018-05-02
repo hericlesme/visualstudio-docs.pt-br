@@ -1,21 +1,19 @@
 ---
-title: "Como acompanhar o código personalizando a barra de rolagem | Microsoft Docs"
-ms.custom: 
+title: Como acompanhar o código personalizando a barra de rolagem
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0262dd7573eb990fb56f03bfa668a4b8e9d95878
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Como acompanhar o código personalizando a barra de rolagem
 
@@ -25,7 +23,7 @@ Quando você está trabalhando com arquivos de código longo, pode ser difícil 
 
 1. É possível configurar a barra de rolagem para mostrar alterações de código, pontos de interrupção, erros e indicadores.
 
-    Abra a página de opções da **Barra de Rolagem**, selecionando **Ferramentas** > **Opções** > **Editor de Texto**  >  **Todas as Linguagens** ou uma linguagem específica, ou inserindo a **barra de rolagem** na janela Início Rápido.
+    Abra a página de opções da **Barra de Rolagem**, selecionando **Ferramentas** > **Opções** > **Editor de Texto**  >  **Todas as Linguagens** ou uma linguagem específica, ou digitando **barra de rolagem** na janela **Início Rápido**.
 
 2. Selecione **Mostrar anotações sobre a barra de rolagem vertical** e selecione as anotações que deseja ver.
 
@@ -47,7 +45,7 @@ Quando você está trabalhando com arquivos de código longo, pode ser difícil 
 
     Na página de opções **Barra de Rolagem**, selecione **Usar modo de barra para barra de rolagem vertical** ou **Usar modo de mapa para barra de rolagem vertical**. Você pode escolher a largura na lista suspensa **Visualização da fonte**.
 
-    Veja qual é a aparência do exemplo de pesquisa quando o modo de mapa está ativado e a largura está definida como Médio:
+    Veja qual é a aparência do exemplo de pesquisa quando o modo de mapa está ativado e a largura está definida como **Médio**:
 
     ![A barra de rolagem no modo de mapa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
@@ -59,4 +57,4 @@ Quando você está trabalhando com arquivos de código longo, pode ser difícil 
 
 ## <a name="see-also"></a>Consulte também
 
-[Gravando código no editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Escrever código no editor](../ide/writing-code-in-the-code-and-text-editor.md)

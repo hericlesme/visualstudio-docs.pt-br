@@ -1,12 +1,9 @@
 ---
 title: Elemento Project (MSBuild) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - <Project> element [MSBuild]
 - Project element [MSBuild]
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf347f135368b2452170e7ebfa9c987ed19adf77
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 44f63cf4517320b9acea0d289723a511dfeb9570
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="project-element-msbuild"></a>Elemento Project (MSBuild)
 Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -66,7 +62,7 @@ Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../ex
 |`Sdk`|Atributo opcional. <br /><br /> O nome e a versão opcional do SDK a ser usado para criar instruções Import implícitas adicionadas ao arquivo .proj. Se nenhuma versão for especificada, o MSBuild tentará resolver uma versão padrão.  Por exemplo `<Project Sdk="Microsoft.NET.Sdk" />` ou `<Project Sdk="My.Custom.Sdk/1.0.0" />`.|  
 |`ToolsVersion`|Atributo opcional.<br /><br /> A versão do conjunto de ferramentas MSBuild usada para determinar os valores para $(MSBuildBinPath) e $(MSBuildToolsPath).|  
 |`TreatAsLocalProperty`|Atributo opcional.<br /><br /> Nomes de propriedade não serão considerados globais. Esse atributo impede que as propriedades específicas de linha de comando substituam valores de propriedade definidos em um arquivo de projeto ou destinos e todas as importações subsequentes. Várias propriedades são separadas por ponto e vírgula (;).<br /><br /> Normalmente, propriedades globais substituem os valores de propriedade que são definidos no arquivo de projeto ou destinos. Se a propriedade está listada no valor `TreatAsLocalProperty`, o valor da propriedade global não substitui os valores de propriedade definidos no arquivo e as importações subsequentes. Para obter mais informações, consulte [Como compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Observação:** defina as propriedades globais no prompt de comando usando a opção **/property** (ou **/p**). Você também pode definir ou modificar as propriedades globais para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa MSBuild. Para mais informações, consulte [Tarefa do MSBuild](../msbuild/msbuild-task.md).|  
-|`Xmlns`|Atributo opcional.<br /><br /> Quando for especificado, o atributo `xmlns` deve ter o valor de “http://schemas.microsoft.com/developer/msbuild/2003”.|  
+|`Xmlns`|Atributo opcional.<br /><br /> Quando especificado, o atributo `xmlns` deve ter o valor "http://schemas.microsoft.com/developer/msbuild/2003".|  
 
 ### <a name="child-elements"></a>Elementos filho  
 

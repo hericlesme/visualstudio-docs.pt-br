@@ -1,26 +1,23 @@
 ---
-title: "Coletando dados de tempo detalhados usando a instrumentação | Microsoft Docs"
-ms.custom: 
+title: Coletando dados de tempo detalhados usando a instrumentação | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
 - instrumentation profiling method
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7bc5b81349c64c3b3422fb16b9cf578d0b8496ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d4ae0813b2405fe81b5c6c92fbd2cfed0a6faee2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Coletando dados de tempo detalhados usando a instrumentação
 O método de instrumentação das Ferramentas de Criação [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] injeta código de criação de perfil em uma cópia de um módulo. O código registra cada entrada, saída e a chamada de função das funções no módulo durante uma execução de criação de perfil. O método de instrumentação é útil para coletar informações detalhadas de tempo sobre uma seção do seu código e para compreender o impacto das operações de entrada e saída sobre o desempenho do aplicativo.  

@@ -1,26 +1,21 @@
 ---
-title: Como os caminhos de pesquisa de Python são aplicados | Microsoft Docs
+title: Como caminhos de pesquisa de Python são aplicados
 description: Uma visão geral de como o Visual Studio usa caminhos de pesquisa do Python nos projetos e ambientes.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ebb5ac043253db76cc9613ac67e5d980d911bd3
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 94770d1591d1f4d80fadd2a0f868dfedfd84999a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Como o Visual Studio usa caminhos de pesquisa de Python
 
@@ -43,6 +38,6 @@ Se estiver usando regularmente os mesmos caminhos de pesquisa e o conteúdo não
 ## <a name="see-also"></a>Consulte também
 
 - [Gerenciando ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
+- [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
 - [Usando requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)

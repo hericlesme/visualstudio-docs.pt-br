@@ -1,8 +1,9 @@
 ---
-title: Classes auxiliares estáticas | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest | Microsoft Docs
+title: Classes auxiliares estáticas | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd414382889e02f209e9cd64155f9e9baad75534
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="static-helper-classes"></a>Classes auxiliares estáticas
 
@@ -32,8 +33,7 @@ Algumas classes permitem que você interaja com o mecanismo de raciocínio do In
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-Uma classe estática usada para expressar suposições, tais como [pré-condições](test-generation.md#precondition), nos [testes de unidade parametrizados](test-generation.md#parameterized-unit-testing).
-Os métodos dessa classe podem ser usados para filtrar as entradas de teste indesejáveis.
+Uma classe estática usada para expressar suposições, tais como [pré-condições](test-generation.md#precondition), nos [testes de unidade parametrizados](test-generation.md#parameterized-unit-testing). Os métodos dessa classe podem ser usados para filtrar as entradas de teste indesejáveis.
 
 Se a condição assumida não valer para alguma entrada de teste, uma **PexAssumeFailedException** é lançada. Isso fará com que o teste seja ignorado silenciosamente.
 
@@ -173,4 +173,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>Recebeu comentários?
 
-Poste suas ideias e solicitações de recursos no  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Poste suas ideias e solicitações de recursos em [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

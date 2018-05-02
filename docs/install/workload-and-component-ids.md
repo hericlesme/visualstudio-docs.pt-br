@@ -1,5 +1,5 @@
 ---
-title: IDs de carga de trabalho e de componente do Visual Studio 2017 | Microsoft Docs
+title: IDs de carga de trabalho e de componente do Visual Studio 2017
 description: Usar as IDs de carga de trabalho e de componente para instalar o Visual Studio usando uma linha de comando ou para especificar como uma dependência em um manifesto do VSIX
 keywords: ''
 author: TerryGLee
@@ -12,18 +12,19 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 46450ab0b4c98f6d8155e71433a40e61464d792b
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 405b1ad26a131eef7ccbeba632547a88f751497e
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>IDs de carga de trabalho e de componente do Visual Studio 2017
+
 Clique nos nomes de edição na tabela a seguir para ver as IDs de carga de trabalho e de componente disponíveis que você precisa para instalar o Visual Studio usando uma linha de comando ou para especificar como uma dependência em um manifesto do VSIX.
 
 | **Edição** | **ID** | **Descrição** |
@@ -42,15 +43,18 @@ Clique nos nomes de edição na tabela a seguir para ver as IDs de carga de trab
 Para obter mais informações sobre como usar essas listas, consulte as páginas [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) e [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 ## <a name="get-support"></a>Obter suporte
+
 Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
+
 * Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
 * Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
-* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
+* Você pode acompanhar os problemas do produto e encontrar respostas na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) (Comunidade de desenvolvedores do Visual Studio).
+* Também é possível interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opção requer uma conta do [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Consulte também
+
 * [Guia do administrador do Visual Studio para Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Criar uma instalação offline do Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Exemplos de parâmetros de linha de comando para a instalação do Visual Studio 2017](command-line-parameter-examples.md)

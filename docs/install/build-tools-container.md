@@ -1,12 +1,10 @@
 ---
-title: Instalar ferramentas de build em um contêiner | Microsoft Docs
+title: Instalar Ferramentas de Build do Visual Studio em um contêiner
+description: Saiba como instalar as Ferramentas de Build do Visual Studio em um contêiner do Windows para oferecer suporte a fluxos de trabalho de CI e CD (integração contínua e entrega contínua).
 ms.custom: ''
-ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
@@ -14,13 +12,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a63b954c87e6b5308e499be2422948fa865964
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: d9dc5b1add4f81e91d0ea0e2cdc20e2581116525
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="install-build-tools-into-a-container"></a>Instalar ferramentas de build em um contêiner
+# <a name="install-build-tools-into-a-container"></a>Instalar Ferramentas de Build em um contêiner
 
 É possível instalar as Ferramentas de Build do Visual Studio em um contêiner do Windows para oferecer suporte a fluxos de trabalho de CI e CD (integração contínua e entrega contínua). Este artigo orienta sobre quais alterações de configuração do Docker são necessárias, bem como quais [cargas de trabalho e componentes](workload-component-id-vs-build-tools.md) podem ser instalados em um contêiner.
 
@@ -46,7 +44,7 @@ O Hyper-V não está habilitado por padrão. Ele deve ser habilitado para inicia
 
 ## <a name="step-2-install-docker-for-windows"></a>Etapa 2. Instalar o Docker para Windows
 
-Caso você use o Windows 10, é possível baixar e instalar a [Docker Community Edition para Windows](https://www.docker.com/docker-windows). Use o PowerShell para [instalar a Docker Enterprise Edition para Windows Server 2016](https://docs.docker.com/engine/installation/windows/docker-ee) por meio do DSC (Desired State Configuration) ou um [provedor de pacote](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server) para uma instalação única e simples.
+Caso você use o Windows 10, é possível baixar e instalar a [Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Se usar o Windows Server 2016, siga as [instruções para instalar o Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
 
 ## <a name="step-3-switch-to-windows-containers"></a>Etapa 3. Alternar para os contêineres do Windows
 
@@ -116,7 +114,7 @@ As Ferramentas de Build do Visual Studio e, em grande medida, o Visual Studio, e
 
 ## <a name="step-5-create-and-build-the-dockerfile"></a>Etapa 5. Criar e compilar o Dockerfile
 
-É necessário salvar o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do arquivo é simplesmente "Dockerfile", ele será reconhecido por padrão.
+Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do arquivo é simplesmente "Dockerfile", ele será reconhecido por padrão.
 
 > [!NOTE]
 > Este Dockerfile de exemplo apenas exclui SDKs do Windows mais antigas que não podem ser instaladas nos contêineres. Versões mais antigas fazem com que o comando de build falhe.
@@ -137,22 +135,22 @@ As Ferramentas de Build do Visual Studio e, em grande medida, o Visual Studio, e
 3. Salve o conteúdo a seguir em C:\BuildTools\Dockerfile.
 
    ```dockerfile
-   # Use the latest Windows Server Core image.
-   FROM microsoft/windowsservercore
+   # escape=`
 
-   # Download useful tools to C:\Bin.
-   ADD https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe C:\\Bin\\nuget.exe
+   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
+   FROM microsoft/dotnet-framework:4.7.1
 
-   # Download the Build Tools bootstrapper outside of the PATH.
-   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\\TEMP\\vs_buildtools.exe
+   # Download the Build Tools bootstrapper.
+   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Add C:\Bin to PATH and install Build Tools excluding workloads and components with known issues.
-   RUN setx /m PATH "%PATH%;C:\Bin" \
-    && C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache --installPath C:\BuildTools --all \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 \
-       --remove Microsoft.VisualStudio.Component.Windows81SDK \
+   # Install Build Tools excluding workloads and components with known issues.
+   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+       --installPath C:\BuildTools `
+       --all `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+       --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
    # Start developer command prompt with any other commands specified.
@@ -162,13 +160,16 @@ As Ferramentas de Build do Visual Studio e, em grande medida, o Visual Studio, e
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
+   > [!NOTE]
+   > Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie sua imagem no [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou mais recente.
+
 4. Execute o seguinte comando nesse diretório.
 
    ```shell
    docker build -t buildtools2017:latest -m 2GB .
    ```
 
-   Este comando compila o Dockerfile no diretório atual usando 2 GB de memória. O 1 GB padrão não é suficiente quando algumas cargas de trabalho são instaladas. No entanto, é possível compilar com apenas 1 GB de memória, de acordo com os requisitos de build.
+   Este comando cria o Dockerfile no diretório atual usando 2 GB de memória. O 1 GB padrão não é suficiente quando algumas cargas de trabalho são instaladas. No entanto, é possível criar com apenas 1 GB de memória, de acordo com os requisitos de build.
 
    A imagem final contém uma marca "buildtools2017:latest", então, é possível executá-la facilmente em um contêiner como "buildtools2017", visto que a marca "mais recente" é o padrão se nenhuma marca for especificada. Caso queira utilizar uma versão específica das Ferramentas de Build do Visual Studio 2017 em um [cenário mais avançado](advanced-build-tools-container.md), em vez disso, é possível marcar o contêiner com um número de build específico do Visual Studio, assim como "mais recente", para que os contêineres usem uma versão específica constantemente.
 
@@ -186,13 +187,15 @@ Agora que a imagem foi criada, é possível executá-la em um contêiner para fa
 Para usar essa imagem no fluxo de trabalho CI/CD, publique-a no seu próprio [Registro de Contêiner do Azure](https://azure.microsoft.com/services/container-registry) ou em outro [registro Docker](https://docs.docker.com/registry/deploying) interno, assim, os servidores só precisarão efetuar pull.
 
 ## <a name="get-support"></a>Obter suporte
+
 Às vezes, as coisas podem dar errado. Caso a instalação do Visual Studio falhe, confira a página [Solução de problemas de instalação e atualização do Visual Studio 2017](troubleshooting-installation-issues.md). Se nenhuma das etapas de solução de problemas ajudar, entre em contato conosco por meio de um chat ao vivo para obter ajuda com a instalação (somente em inglês). Para saber mais detalhes, confira a [página de suporte do Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Aqui estão algumas outras opções de suporte:
+
 * Você pode nos relatar problemas do produto por meio da ferramenta [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md), exibida no Instalador do Visual Studio e no IDE do Visual Studio.
 * Você pode compartilhar uma sugestão de produto conosco no [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* É possível acompanhar os problemas do produto na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/), além de fazer perguntas e encontrar respostas.
-* Você pode também interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
+* Você pode acompanhar os problemas do produto e encontrar respostas na [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) (Comunidade de desenvolvedores do Visual Studio).
+* Também é possível interagir conosco e com outros desenvolvedores do Visual Studio por meio das [conversas sobre o Visual Studio na comunidade do Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opção requer uma conta do [GitHub](https://github.com/).)
 
 ## <a name="see-also"></a>Consulte também
 

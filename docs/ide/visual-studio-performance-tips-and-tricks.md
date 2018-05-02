@@ -1,33 +1,27 @@
 ---
-title: Dicas e truques de desempenho do Visual Studio | Microsoft Docs
+title: Dicas e truques de desempenho do Visual Studio
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3ac89442c7f0242fca3238a32bfb60d1cb2e1b4e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
 As recomendações de desempenho do Visual Studio destinam-se a situações de baixa memória, o que podem ocorrer em casos raros. Nessas situações, é possível otimizar determinados recursos do Visual Studio que você talvez não esteja usando. As dicas a seguir não devem ser consideradas como as recomendações gerais.
 
 > [!NOTE]
-> Se você estiver tendo dificuldades para usar o produto devido a problemas de memória, conte para nós pela ferramenta de comentários.
+> Se você estiver tendo dificuldades para usar o produto devido a problemas de memória, conte para nós pela [ferramenta de comentários](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="optimize-your-environment"></a>Otimizar seu ambiente
 
@@ -86,7 +80,7 @@ Algumas ferramentas ou extensões podem desativadas para melhorar o desempenho.
 
 ### <a name="managed-language-services-roslyn"></a>Serviços de linguagem gerenciados (Roslyn)
 
-Para obter mais informações sobre as considerações de desempenho do .NET Compiler Platform (“Roslyn’), consulte Performance considerations for large solutions (Considerações de desempenho para grandes soluções) em https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions.
+Para obter mais informações sobre as considerações de desempenho do .NET Compiler Platform (“Roslyn"), consulte [Considerações de desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Desabilitar análise de solução completa**
 
@@ -108,7 +102,7 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
     Extensões são componentes de software adicionais acrescentados ao Visual Studio que fornecem uma funcionalidade nova ou estendem a funcionalidade existente. Extensões geralmente podem ser uma fonte de problemas de recursos de memória. Se você estiver tendo problemas de recursos de memória, tente desabilitar as extensões, uma por vez, para ver como ele afeta o cenário ou o fluxo de trabalho.
 
-    Para desabilitar as extensões, acesse **Ferramentas | Extensões e Atualizações** e desabilite uma extensão específica.
+    Para desabilitar as extensões, acesse **Ferramentas** > **Extensões e Atualizações** e desabilite uma extensão específica.
 
 - **Desabilitar o XAML Designer**
 
@@ -132,4 +126,5 @@ Para ver uma descrição detalhada do coletor de lixo CLR, consulte [Noções b�
 
 ## <a name="see-also"></a>Consulte também
 
-[Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Otimizar o desempenho do Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Blog do Visual Studio – Carregar soluções mais rapidamente com o Visual Studio 2017 versão 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

@@ -1,57 +1,29 @@
 ---
-title: "Aprimore suas habilidades de ciência de dados hoje mesmo com o benefício DataCamp em assinaturas selecionadas do Visual Studio. | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/20108
-Ms.topic: Get-Started-Article
-Description: Learn about the DataCamp training subscription included with selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 9ca8cc7d70b7078366d136618ac523c9133490fb
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Aprimore suas habilidades de ciência de dados hoje mesmo com o benefício DataCamp em assinaturas selecionadas do Visual Studio. | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/20108
+ms.topic: Get-Started-Article
+description: Saiba mais sobre a assinatura de treinamento do DataCamp incluída na assinatura do Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 
-## <a name="overview"></a>Visão geral
 As assinaturas qualificadas do Visual Studio incluem assinaturas do DataCamp.  Com o DataCamp, você aprende todas as habilidades de ciência de dados necessárias no conforto do seu navegador. Você escolhe quando e o que aprender. Sem software para instalar e sem requisitos especiais de hardware, aprender ciência de dados é mais fácil do que nunca.
 
 A duração do benefício do DataCamp depende da sua assinatura do Visual Studio.
 
-## <a name="eligibility"></a>Qualificação
-| Nível de Assinatura/Programa                                                  | Benefício               | Renovável?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
-| Visual Studio Enterprise anual                                               | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
-| Visual Studio Enterprise mensal                                              | Não disponível         |                                                                    |
-| Visual Studio Professional Standard                                           | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
-| Visual Studio Professional anual                                             | 3 meses              |  Nº Disponível apenas para novos assinantes.                            | 
-| Visual Studio Professional mensal                                            | Não disponível         |                                                                    |
-| Visual Studio Test Pro                                                        | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
-| Plataformas MSDN                                                                | 3 meses              |  Nº Disponível apenas para novos assinantes.                            |
-| Visual Studio Dev Essentials                                                  | 2 meses              |  Nº Disponível apenas para novos assinantes.                            |
-| Visual Studio Enterprise – NFR<sup>1</sup>                                               | Não disponível         |                                                                    |
-| Visual Studio Enterprise - FTE                                                | Não disponível         |                                                                    |
-| Visual Studio Enterprise ‒ Microsoft Partner Network                          | Não disponível         |                                                                    |
-| Visual Studio Professional – Microsoft Partner Network                        | Não disponível         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Não disponível         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Não disponível         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Não disponível         |                                                                    |
-| Microsoft Certified Trainer ‒ Software e Serviços                             | Não disponível         |                                                                    |
-| Microsoft Certified Trainer ‒ Desenvolvedor de Software e Serviços                   | Não disponível         |                                                                    |
+## <a name="activation-steps"></a>Etapas de ativação  
 
-<sup>1</sup>  *Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)*  
-
-Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
-
-
-## <a name="activation-steps"></a>Etapas de Ativação  
-
-1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do benefício do DataCamp na categoria "Desenvolvimento Profissional" e clique em **Ativar**.
 
@@ -61,17 +33,17 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://m
 
     ![Criar nova conta no DataCamp](_img\vs-datacamp\vs-datacamp-create-account.png)
 
-> [!NOTE]
-> Quando você começar a criar a conta, poderá receber a seguinte mensagem de erro: "Opa!  Seu código promocional é inválido ou expirou."  Isso ocorre, porque quando seu código promocional é criado, ele expira após alguns minutos.  Se você receber essa mensagem, bastará voltar para a página [Benefícios](https://my.visualstudio.com/benefits) e clicar no link **Ativar** no bloco do benefício do DataCamp.  
+    > [!NOTE]
+    > Quando você começar a criar a conta, poderá receber a seguinte mensagem de erro: "Opa!  Seu código promocional é inválido ou expirou."  Isso ocorre, porque quando seu código promocional é criado, ele expira após alguns minutos.  Se você receber essa mensagem, bastará voltar para a página [Benefícios](https://my.visualstudio.com/benefits) e clicar no link **Ativar** no bloco do benefício do DataCamp.  
 
 4. Depois de criar uma conta, você pode escolher um roteiro de aprendizagem.  As opções incluem:
     - Aprendizado de R para ciência de dados
     - Aprendizado de Python para ciência de dados
     - Desenvolver seu conjunto de qualificações de ciência de dados
 
-Basta clicar no roteiro escolhido para começar. 
+    Basta clicar no roteiro escolhido para começar.   
 
-   ![Escolha de roteiro no DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
+     ![Escolha de roteiro no DataCamp](_img\vs-datacamp\vs-datacamp-choose-path.png)
 
 5. Depois de selecionar o roteiro, é possível refinar ainda mais seu roteiro de aprendizagem selecionando uma meta.  Por exemplo, se você escolher o caminho "Desenvolver seu conjunto de qualificações de ciência de dados", as opções a seguir serão exibidas. Escolha uma opção ou clique em **Não sei.  Mostre-me todos os caminhos de carreiras** para criar um roteiro mais amplo. 
 
@@ -88,8 +60,25 @@ Basta clicar no roteiro escolhido para começar.
 
 Você pode parar a qualquer momento e retomar seu treinamento na próxima sessão.  Basta acessar [http://www.datacamp.com](http://www.datacamp.com) e entrar.  O seu painel será exibido e você poderá retomar o treinamento exatamente onde parou. Basta clicar em **Continuar Treinamento**. ![Treinamento Contínuo no DataCamp](_img\vs-datacamp\vs-datacamp-continue-training.png)
 
-## <a name="faq"></a>Perguntas Frequentes
-*Verifique aqui se há atualizações*
+## <a name="eligibility"></a>Qualificação
+
+| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, | 3 meses       |  Nº  Disponível apenas para novos assinantes          |
+| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | 3 meses                                                            |  Nº  Disponível apenas para novos assinantes           |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Nº  Disponível apenas para novos assinantes           |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  Nº  Disponível apenas para novos assinantes           |
+| Visual Studio Dev Essentials | N/D  | 2 meses | Nº Disponível apenas para novos assinantes |
+| Visual Studio Enterprise (Padrão, nuvem anual)  | NFR<sup>1</sup> |Não disponível  | N/D |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
+
+
+
+<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), FTE, MVP (Microsoft Valued Partner), RD (Diretor regional), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
+
+
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Precisa de ajuda para usar o DataCamp?  Confira estes recursos:

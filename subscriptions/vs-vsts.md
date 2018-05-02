@@ -1,19 +1,19 @@
 ---
 title: Benefícios do VSTS para assinantes do Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Saiba como você pode usar o VSTS (Visual Studio Team Services) como um assinante do Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Benefícios do VSTS (Visual Studio Team Services) para assinantes do Visual Studio
 
@@ -26,12 +26,14 @@ Quando você entra no VSTS usando a identidade que foi usada para ativar sua ass
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Padrão, nuvem anual, nuvem mensal)   | VL, Azure, Retail, MPN, BizSpark, NFR<sup>1</sup>, FTE  | Básico, Test Manager, Gerenciamento de Pacotes, CI/CD (integração contínua/entrega contínua) auto-hospedada       |  Sim          |
-| Visual Studio Professional (Padrão, nuvem anual, nuvem mensal) | VL, Azure, Retail                                       | Basic                                                            |  Sim          |
+| Visual Studio Enterprise (Padrão, nuvem anual, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado, FTE  | Básico, Test Manager, Gerenciamento de Pacotes, CI/CD (integração contínua/entrega contínua) auto-hospedada       |  Sim          |
+| Visual Studio Professional (Padrão, nuvem anual, nuvem mensal) | VL, Azure, Retail,                                        | Basic                                                            |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Básico, Test Manager                                              |  Sim          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Básico, Test Manager                                              |  Sim          |
 
-<sup>1</sup>  *Inclui: NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)*
+<sup>1</sup>  *Inclui:  NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor regional), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), FTE, MCT Software & Services Developer. Exclui: MCT Software & Services, Imagine.*
+
+
 
 Saiba mais sobre os recursos do VSTS:
 - [Básico](https://www.visualstudio.com/team-services/compare-features/)

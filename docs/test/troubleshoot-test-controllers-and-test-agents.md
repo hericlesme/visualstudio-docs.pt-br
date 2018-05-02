@@ -1,7 +1,7 @@
 ---
-title: Solução de problemas com controladores e agentes de teste no Visual Studio | Microsoft Docs
+title: Solução de problemas com controladores e agentes de teste no Visual Studio
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estratégias para solução de problemas de controladores e agentes de teste em testes de carga
 
@@ -27,7 +28,8 @@ Este artigo aborda alguns problemas comuns que você pode encontrar ao trabalhar
  Ao executar um teste de carga, você pode receber erros ao tentar se conectar a um computador do agente de teste e coletar contadores de desempenho. O serviço Registro Remoto é o serviço responsável por fornecer dados do contador de desempenho a um computador remoto. Em alguns sistemas operacionais, o serviço Registro Remoto não é iniciado automaticamente. Para corrigir esse problema, inicie manualmente o serviço Registro Remoto.
 
 > [!NOTE]
->  É possível acessar o serviço Registro Remoto no **Painel de Controle.** Escolha **Ferramentas Administrativas** e **Serviços**.
+> É possível acessar o serviço Registro Remoto no **Painel de Controle.** Escolha **Ferramentas Administrativas** e **Serviços**.
+
 
  Outra causa desse problema é que você não tem permissões suficientes para ler os contadores de desempenho. Para execuções de teste locais, a conta de usuário que está executando o teste deverá ser membro do grupo Usuários Avançados ou superior, ou ser membro do grupo Usuários do Monitor de Desempenho. Para execuções de teste remotas, a conta que o controlador está configurado para executar deve ser membro do grupo Usuários Avançados ou superior, ou ser membro do grupo Usuários do Monitor de Desempenho.
 
@@ -87,7 +89,8 @@ Este artigo aborda alguns problemas comuns que você pode encontrar ao trabalhar
  Esse erro pode ser causado pela instalação do controlador de teste em um computador que tenha mais de um adaptador de rede.
 
 > [!NOTE]
->  Também é possível instalar agentes de teste com êxito e não ver esse problema até tentar executar um teste.
+> Também é possível instalar agentes de teste com êxito e não ver esse problema até tentar executar um teste.
+
 
  Para corrigir este erro, você deve associar o controlador de teste a um dos adaptadores de rede. Você precisa definir a propriedade `BindTo` no controlador de teste e alterar o agente de teste para se referir ao controlador de teste por endereço IP, e não por nome. As etapas são fornecidas nos procedimentos a seguir.
 

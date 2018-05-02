@@ -2,11 +2,8 @@
 title: Tarefa Exec | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, Exec task
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
-caps.latest.revision: 20
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec3a4f2507baa3a1ee5f2543722d5c13503af2b0
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="exec-task"></a>Tarefa Exec
 Executa o programa ou comando especificado pelo uso dos argumentos especificados.  
@@ -53,7 +49,7 @@ Executa o programa ou comando especificado pelo uso dos argumentos especificados
 |`WorkingDirectory`|Parâmetro `String` opcional.<br /><br /> Especifica o diretório no qual o comando será executado.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa tarefa é útil quando uma tarefa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] específica do trabalho que você deseja executar não está disponível. No entanto, a tarefa `Exec`, ao contrário de uma tarefa mais específica, não é capaz de coletar a saída da ferramenta ou comando que ela executa.  
+ Essa tarefa é útil quando uma tarefa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] específica do trabalho que você deseja executar não está disponível. Entretanto, a tarefa `Exec`, diferente de tarefas mais específicas, não pode realizar operações adicionais de processamento ou condicionais com base no resultado da ferramenta ou do comando executado.
   
  A tarefa `Exec` chama cmd.exe em vez de invocar um processo diretamente.  
   

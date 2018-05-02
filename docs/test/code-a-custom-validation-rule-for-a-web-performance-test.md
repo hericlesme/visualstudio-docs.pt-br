@@ -1,5 +1,5 @@
 ---
-title: Codificando uma regra de validação personalizada para um teste de desempenho Web no Visual Studio | Microsoft Docs
+title: Codificando uma regra de validação personalizada para um teste de desempenho Web no Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,13 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0c2e3eb6d9b0411a078c5d7531105230dfc82457
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Codificando uma regra de validação personalizada para um teste de desempenho Web
 
@@ -59,7 +60,7 @@ Você pode criar suas próprias regras de validação. Para fazer isso, você de
 O código a seguir mostra uma implementação de uma regra de validação personalizada. Essa regra de validação imita o comportamento da regra de validação de marca obrigatória predefinida. Use este exemplo como ponto de partida para suas próprias regras de validação personalizadas.
 
 > [!WARNING]
->  As propriedades públicas no código de um validador personalizado não podem conter valores nulos.
+> As propriedades públicas no código de um validador personalizado não podem conter valores nulos.
 
 ```csharp
 using System;

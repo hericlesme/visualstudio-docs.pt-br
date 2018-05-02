@@ -1,6 +1,6 @@
 ---
-title: Seleção de um ambiente para um projeto
-description: No Gerenciador de Soluções do Visual Studio, você pode atribuir um interpretador do Python específico (ambiente) a ser usado para qualquer projeto, ignorando o ambiente padrão. Você também pode criar e gerenciar ambientes virtuais.
+title: Selecionar um interpretador e um ambiente Python para um projeto
+description: Como atribuir o ambiente Python para usar para um projeto do Visual Studio, além de instruções sobre como criar ambientes virtuais.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Selecionar um intérprete e ambiente Python para uso em um projeto
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Como atribuir qual ambiente Python é usado para um projeto
 
 Todo o código em um projeto do Python é executado dentro do contexto de um ambiente específico. O Visual Studio também utiliza esse ambiente para depuração, preenchimentos de importação e membro, verificação de sintaxe e todas as outras tarefas que exigem um ambiente.
 

@@ -1,56 +1,28 @@
 ---
-title: "O benefício Xamarin University nas assinaturas do Visual Studio | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Xamarin University Training subscription included with selected Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8b9b5f887e717f49099582ff95183ee559b9018a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: O benefício Xamarin University nas assinaturas do Visual Studio | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Saiba mais sobre a assinatura de treinamento do Xamarin University incluída na assinatura do Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 742c7a45136fe364310623c80167e0205e416a1e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Benefício de treinamento no Xamarin University nas assinaturas do Visual Studio
-
-## <a name="overview"></a>Visão geral
+# <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Benefício de treinamento do Xamarin University em assinaturas do Visual Studio
 
 Compile aplicativos nativos para iOS e Android em C# com cursos gravados e palestras de convidados.  
 -  O Treinamento em Xamarin University Mobile para Visual Studio Dev Essentials fornece os fundamentos acesso a doze cursos e três palestras de convidados. 
 -  O Treinamento em Xamarin University Mobile para assinaturas do Visual Studio Professional e do Visual Studio Enterprise inclui os mesmos cursos e palestras que a oferta do Visual Studio Dev Essentials, ALÉM DE MAIS 18 cursos e seis palestras.
 
-## <a name="eligibility"></a>Qualificação
-| Nível de Assinatura/Programa                                                  | Benefício                 | Renovável?                                                         |
-|-------------------------------------------------------------------------------|-------------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Enterprise anual                                               | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Enterprise mensal                                              | Não disponível           |                                                                    |
-| Visual Studio Professional Standard                                           | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Professional anual                                             | 30 cursos, 9 palestras  |                                                                    | 
-| Visual Studio Professional mensal                                            | Não disponível           |                                                                    |
-| Visual Studio Test Pro                                                        | Não disponível           |                                                                    |
-| Plataformas MSDN                                                                | Não disponível           |                                                                    |
-| Visual Studio Dev Essentials                                                  | 12 cursos, 3 palestras  |                                                                    |
-| Visual Studio Enterprise – NFR<sup>1</sup>                                               | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Enterprise - FTE                                                | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Enterprise ‒ Microsoft Partner Network                          | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Professional – Microsoft Partner Network                        | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | 30 cursos, 9 palestras  |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | 30 cursos, 9 palestras  |                                                                    |
-| Microsoft Certified Trainer ‒ Software e Serviços                             | Não disponível           |                                                                    |
-| Microsoft Certified Trainer ‒ Desenvolvedor de Software e Serviços                   | 30 cursos, 9 palestras  |                                                                    |
-
-<sup>1</sup>  *Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)*  
-
-Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
-
-## <a name="activation-steps"></a>Etapas de Ativação
-1.  Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs). 
+## <a name="activation-steps"></a>Etapas de ativação
+1.  Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs). 
 2.  Localize o bloco Treinamento em Xamarin University na seção de Desenvolvimento Profissional e clique no link **Obter Código** no canto inferior esquerdo do bloco do benefício.   Você receberá uma notificação de que o código do cupom foi recuperado com êxito.  Clique em **Ativar** para continuar.
 
     ![Bloco do benefício Treinamento do Xamarin University](_img\vs-xamarin\vs-xamarin-tile.png)
@@ -58,16 +30,29 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://m
 3.  Na página de registro, preencha suas informações de contato, clique na caixa de seleção para aceitar os termos de uso a política de privacidade e clique em **Ativar benefício**. 
 
     ![Registro do benefício Treinamento do Xamarin University](_img\vs-xamarin\vs-xamarin-registration-resized.png)
-
-
-
 4.  E isso é tudo!  Agora que você já ativou o benefício Treinamento do Xamarin University, você será direcionado à página Xamarin University Mobile Training for Microsoft Visual Studio (Treinamento móvel do Xamarin University para Microsoft Visual Studio) e estará pronto para começar a aprendizagem.  
 
     ![Home page do benefício Treinamento do Xamarin University](_img\vs-xamarin\vs-xamarin-home-resized.png)
 
-## <a name="faq"></a>Perguntas Frequentes
+## <a name="eligibility"></a>Qualificação
+| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | 30 cursos, 9 palestras       |  Sim |
+| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | 30 cursos, 9 palestras       |  Sim |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  NA        |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                             |  NA        |
+| Visual Studio Dev Essentials | NA  | 12 cursos, 3 palestras                                             |  Sim        |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
+
+<sup>1</sup>*Inclui: NFR (Não para revenda), VSIP (Visual Studio Industry Partner).  MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Partner), RD (Diretor regional).   Exclui: MCT Software & Services.*
+
+
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+
+
+## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q--what-topics-are-covered-in-the-classes-and-lectures"></a>P: Quais tópicos são abordados nas aulas e palestras?
-R: Você encontrará uma lista completa dos cursos e palestras para as duas ofertas em: https://www.xamarin.com/university/mobile-training 
+R: você encontrará uma lista completa dos cursos e palestras de ambas as ofertas em:  https://www.xamarin.com/university/mobile-training 
 
 ### <a name="q-im-already-a-xamarin-university-subscriber-does-this-affect-my-xamarin-university-mobile-training-benefit"></a>P: Já sou um assinante do Xamarin University. Isso afeta o benefício de Treinamento em Xamarin University Mobile?
 R: Não, os assinantes atuais do Xamarin University terão acesso completo à assinatura anual do Xamarin University, incluindo cursos ao vivo, materiais e palestras de convidados. Basta entrar em university.xamarin.com.  

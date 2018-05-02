@@ -1,26 +1,21 @@
 ---
-title: Usar um arquivo requirements.txt para gerenciar os requisitos do pacote | Microsoft Docs
+title: Usando um arquivo requirements.txt para gerenciar requisitos do pacote
 description: Você pode usar um arquivo requirements.txt para gerenciar as dependências de um projeto. Se você receber um projeto que contém um arquivo requirements.txt, você pode instalar facilmente essas dependências em uma única etapa.
-ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9d1a35d8ba34561c56ca14261591c7b80bacdb0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 447eda835a9ea3114f06a6f1a854475191934fad
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="managing-required-packages-with-requirementstxt"></a>Gerenciar os pacotes necessários com requirements.txt
 

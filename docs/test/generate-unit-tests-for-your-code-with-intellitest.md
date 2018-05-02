@@ -1,6 +1,7 @@
 ---
-title: Gerar testes de unidade para seu código com o IntelliTest no Visual Studio | Microsoft Docs
+title: Gerar testes de unidade para seu código com o IntelliTest no Visual Studio
 ms.date: 2015-10-05
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a6929db0b5100ed57ba6d7c3113ede5b7431aa4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af013fe81ca464f6433b35429e3bbf077f78e2f7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Gerar testes de unidade para seu código com o IntelliTest
 O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Uma análise de caso é realizada para cada branch condicional do código. Por exemplo, instruções `if`, declarações e todas as operações que podem gerar exceções são analisadas. Essa análise é usada para gerar dados de teste para um teste de unidade parametrizado de todos os métodos, criando testes de unidade com alta cobertura de código.

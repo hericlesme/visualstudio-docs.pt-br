@@ -1,57 +1,30 @@
 ---
-title: "Benefício do LinkedIn Learning em assinaturas do Visual Studio | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the LinkedIn Learning benefit included as part of a LinkedIn Premium subscription included in selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8ef318cb7cdefefc079b230f0e44fdeb5f0c2d8f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Benefício do LinkedIn Learning em assinaturas do Visual Studio | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Saiba mais sobre o benefício LinkedIn Learning incluído como parte de uma assinatura Premium do LinkedIn incluída em assinaturas selecionadas do Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 71b6fca12acf1ee1ebd552622a41412f1d1ba269
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>O benefício LinkedIn Learning em assinaturas do Visual Studio
 
-## <a name="overview"></a>Visão geral
 Desbloqueie o poder do LinkedIn com acesso a pessoas, insights e habilidades necessárias para avançar em sua carreira.  Conheça as habilidades mais esperadas de negócios, tecnologia e criatividade com especialistas do setor.
 
 Assinaturas selecionadas do Visual Studio incluem uma assinatura do LinkedIn Premium, que inclui o LinkedIn Learning.  A duração da assinatura Premium depende do tipo de assinatura do Visual Studio que você tem.
 É necessário ter uma conta do LinkedIn para aproveitar o benefício do LinkedIn Learning.  Caso ainda não tenha, você terá a chance de criar uma antes de ativar sua assinatura Premium.  
 
-## <a name="eligibility"></a>Qualificação
-| Nível de Assinatura/Programa                                                  | Benefício               | Renovável?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | Seis meses              |  Não                                                                |
-| Visual Studio Enterprise anual                                               | Seis meses              |  Não                                                                |
-| Visual Studio Enterprise mensal                                              | Não disponível         |                                                                    |
-| Visual Studio Professional Standard                                           | 3 meses              |  Não                                                                |
-| Visual Studio Professional anual                                             | 3 meses              |  Não                                                                | 
-| Visual Studio Professional mensal                                            | Não disponível         |                                                                    |
-| Visual Studio Test Pro                                                        | 3 meses              |  Não                                                                |
-| Plataformas MSDN                                                                | 3 meses              |  Não                                                                |
-| Visual Studio Dev Essentials                                                  | 3 meses              |  Não                                                                |
-| Visual Studio Enterprise – NFR<sup>1</sup>                                               | Seis meses              |  Não                                                                |
-| Visual Studio Enterprise - FTE                                                | Não disponível         |                                                                    |
-| Visual Studio Enterprise ‒ Microsoft Partner Network                          | Não disponível         |                                                                    |
-| Visual Studio Professional – Microsoft Partner Network                        | Não disponível         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Não disponível         |                                                                    |
-| Visual Studio Enterprise – Imagine (Premium)                                  | Não disponível         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Não disponível         |                                                                    |
-| Microsoft Certified Trainer ‒ Software e Serviços                             | Não disponível         |                                                                    |
-| Microsoft Certified Trainer ‒ Desenvolvedor de Software e Serviços                   | Não disponível         |                                                                    |
-
-<sup>1</sup>  *Inclui NFR (Proibida a revenda), MVP (Microsoft Valued Partner), RD (Diretor de Região), VSIP (Visual Studio Industry Partner)*  
-
-Não tem certeza de qual assinatura você está usando?  Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas a seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
-
-## <a name="activation-steps"></a>Etapas de Ativação
+## <a name="activation-steps"></a>Etapas de ativação
 Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning:
-1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do LinkedIn Learning na categoria Educação e clique no link **Obter código**.
 
@@ -117,8 +90,25 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
 
     ![Página de Aprendizado do LinkedIn Learning](_img\vs-linkedin\vs-linkedin-learning-home.png)
 
-## <a name="faq"></a>Perguntas Frequentes
-*Verifique aqui se há atualizações*
+## <a name="eligibility"></a>Qualificação
+| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (Padrão, nuvem anual)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Seis meses       |  Nº  Disponível apenas para novos assinantes          |
+| Visual Studio Professional (Padrão, nuvem anual) | VL, Azure, Retail                                       | 3 meses                                                            |Nº  Disponível apenas para novos assinantes         |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 3 meses                                             |  Nº  Disponível apenas para novos assinantes         |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 3 meses                                              | Nº  Disponível apenas para novos assinantes         |
+| Visual Studio Dev Essentials | NA  | 3 meses |Nº  Disponível apenas para novos assinantes |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
+
+<sup>1</sup>*Inclui: NFR (Não para revenda), VSIP (Visual Studio Industry Partner).  Exclui: MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Microsoft Valued Partner), RD (Diretor regional).  MCT Software & Services.*
+
+
+
+Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
+
+## <a name="frequently-asked-questions"></a>Perguntas frequentes
+### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>P: Se eu renovar minha assinatura, o benefício LinkedIn Learning também será renovado?
+R: Não, a oferta LinkedIn Learning está disponível somente para novos assinantes. 
 
 ## <a name="support-resources"></a>Recursos de suporte
 -  Precisa de ajuda com o LinkedIn Learning?  Confira estes recursos:

@@ -1,24 +1,25 @@
 ---
-title: Introdução à linguagem C++ no Visual Studio | Microsoft Docs
+title: Introdução ao C++ no Visual Studio
+description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="get-started-with-c-in-visual-studio"></a>Introdução à linguagem C++ no Visual Studio
+# <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
 Complete este guia de início rápido para se familiarizar com várias ferramentas e caixas de diálogo que poderá usar ao desenvolver aplicativos em C++ com o Visual Studio. Crie um aplicativo de console no estilo “Olá, Mundo” enquanto aprende mais sobre o trabalho no IDE (ambiente de desenvolvimento integrado).
 
@@ -52,7 +53,7 @@ O Visual Studio usa os *projetos* para organizar o código em um aplicativo e as
 
 1. Escolha o botão **OK** para criar sua solução e projeto de aplicativo.
 
-   O projeto e a solução HelloApp, com os arquivos básicos para um aplicativo de console Windows, são criados e automaticamente carregados no **Gerenciador de Soluções**. O arquivo HelloApp.cpp é aberto no editor de códigos. Estes itens aparecem no **Gerenciador de Soluções**:
+   O projeto e a solução HelloApp, com os arquivos básicos para um aplicativo de console Windows, são criados e automaticamente carregados no **Gerenciador de Soluções**. O arquivo *HelloApp.cpp* é aberto no editor de códigos. Estes itens aparecem no **Gerenciador de Soluções**:
 
    ![Arquivos da solução no Gerenciador de Soluções](../ide/media/get-started-cpp-solution-explorer.png "Arquivos da solução no Gerenciador de Soluções")
 
@@ -62,7 +63,7 @@ Em seguida, adicione o código para exibir a palavra “Hello” na janela do co
 
 ### <a name="to-edit-code-in-the-editor"></a>Para editar o código no editor
 
-1. No arquivo HelloApp.cpp, insira uma linha em branco antes da linha `return 0;` e, em seguida, digite este código:
+1. No arquivo *HelloApp.cpp*, insira uma linha em branco antes da linha `return 0;` e, em seguida, digite este código:
 
    ```cpp
    cout << "Hello\n";
@@ -76,9 +77,9 @@ Em seguida, adicione o código para exibir a palavra “Hello” na janela do co
 
    ![Erro na janela Lista de Erros](../ide/media/get-started-cpp-error-list.png "Erro na janela Lista de Erros")
 
-   Uma declaração está ausente em seu código para [std::cout](/cpp/standard-library/iostream), que está em \<iostream > arquivo de cabeçalho.
+   Uma declaração está ausente em seu código para [std::cout](/cpp/standard-library/iostream), que está no arquivo de cabeçalho *\<iostream>*.
 
-1. Para incluir o cabeçalho iostream, digite este código após `#include "stdafx.h"`:
+1. Para incluir o cabeçalho *iostream*, digite este código após `#include "stdafx.h"`:
 
    ```cpp
    #include <iostream>
@@ -105,11 +106,11 @@ Você pode depurar o HelloApp para ver se a palavra “Hello” aparece na janel
 
 ### <a name="to-debug-the-app"></a>Para depurar o aplicativo
 
-1. Para iniciar o depurador, escolha **Depurar > Iniciar Depuração** na barra de menus.
+Para iniciar o depurador, escolha **Depurar > Iniciar Depuração** na barra de menus.
 
-   ![Iniciar o comando de depuração no menu Depurar](../ide/media/get-started-cpp-start-debugging-menu.png "Iniciar o comando de depuração no menu Depurar")
+![Iniciar o comando de depuração no menu Depurar](../ide/media/get-started-cpp-start-debugging-menu.png "Iniciar o comando de depuração no menu Depurar")
 
-   O depurador inicia e executa o código. A janela de console (uma janela separada que se parece com um prompt de comando) é exibida por alguns segundos mas fecha rapidamente quando o depurador interrompe a execução. Para ver o texto, você precisa definir um ponto de interrupção para interromper a execução do programa.
+O depurador inicia e executa o código. A janela de console (uma janela separada que se parece com um prompt de comando) é exibida por alguns segundos mas fecha rapidamente quando o depurador interrompe a execução. Para ver o texto, você precisa definir um ponto de interrupção para interromper a execução do programa.
 
 ### <a name="to-add-a-breakpoint"></a>Para adicionar um ponto de interrupção
 
@@ -129,7 +130,7 @@ Você pode depurar o HelloApp para ver se a palavra “Hello” aparece na janel
 
 1. Para interromper a depuração, pressione **Shift + F5**.
 
-Para obter mais informações sobre a depuração de projeto do console, consulte [Projetos de Console](../debugger/debugging-preparation-console-projects.md).
+Para obter mais informações sobre a depuração de projeto do console, consulte [Projetos de console](../debugger/debugging-preparation-console-projects.md).
 
 ## <a name="build-a-release-version-of-the-app"></a>Criar uma versão de lançamento do app
 
@@ -153,8 +154,8 @@ Parabéns por concluir este guia de início rápido! Se desejar explorar mais ex
 
 ## <a name="see-also"></a>Consulte também
 
-[Usando o IDE do Visual Studio para desenvolvimento de área de trabalho do C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Passo a passo: criar um aplicativo simples com o C# ou o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Dicas de produtividade para o Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
-[Exemplos do Visual Studio](../ide/visual-studio-samples.md)  
-[Introdução ao desenvolvimento com o Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+- [Usando o IDE do Visual Studio para desenvolvimento de área de trabalho do C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
+- [Passo a passo: criar um aplicativo simples com o C# ou o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Dicas de produtividade para o Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Exemplos do Visual Studio](../ide/visual-studio-samples.md)
+- [Introdução ao desenvolvimento com Visual Studio](../ide/get-started-developing-with-visual-studio.md)

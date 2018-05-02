@@ -1,27 +1,20 @@
 ---
-title: "Integrando o SQL Server às Ferramentas do R para Visual Studio | Microsoft Docs"
-description: "O Visual Studio oferece suporte à criação e execução de consultas SQL de R e a capacidade do R de trabalhar com procedimentos armazenados."
-ms.custom: 
+title: Integrando o SQL Server com R
+description: O Visual Studio oferece suporte à criação e execução de consultas SQL de R e a capacidade do R de trabalhar com procedimentos armazenados.
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-- SQL
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 31d02ffb64539f906d91f68d18c6ad52b347e4e6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>Trabalhando com o SQL Server e R
 
@@ -40,7 +33,7 @@ O excelente suporte do Visual Studio para SQL Server ajuda os cientistas de dado
 
 As RTVS dão suporte para adição de consultas SQL em projetos R, permitindo que você desenvolva consultas SQL iterativamente em um contexto separado até obter os resultados que está procurando.
 
-Para adicionar um arquivo de consulta SQL, clique com o botão direito do mouse no projeto no Gerenciador de Soluções, selecione **Adicionar > Novo Item...** e selecione o tipo de arquivo de **Consulta SQL**:
+Para adicionar um arquivo de consulta SQL, clique com botão direito do mouse no projeto no Gerenciador de Soluções, selecione **Adicionar > Novo Item...** e selecione o tipo de arquivo de **Consulta SQL**:
 
 ![Adicionar item de consulta SQL a um projeto](media/sql-add-item.png)
 
@@ -117,7 +110,7 @@ Depois que estiver satisfeito com seu código SQL, integre-o ao código R em `St
 
 Como você pode ver, essa etapa simples gera automaticamente o código R para abrir o arquivo `.sql`, lê seu conteúdo em uma cadeia de caracteres e o passa para o pacote RODBC para enviá-lo ao SQL Server.
 
-Agora você pode escrever interativamente o código R que manipula o dataframe `InputDataSet`, conforme o desejado. Lembre-se de que basta selecionar o código R no editor e enviá-lo à [janela interativa](interactive-repl-for-r-in-visual-studio.md) pressionando Ctrl+Enter.
+Agora você pode escrever interativamente o código R que manipula o dataframe `InputDataSet`, conforme o desejado. Lembre-se de que basta selecionar o código R no editor e enviá-lo à [janela interativa](interactive-repl-for-r-in-visual-studio.md) pressionando Ctrl + Enter.
 
 `StoredProcedure.Template.sql`, por fim, contém o modelo para gerar o procedimento armazenado SQL:
 
