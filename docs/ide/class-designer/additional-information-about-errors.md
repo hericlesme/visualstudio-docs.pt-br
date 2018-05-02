@@ -1,10 +1,9 @@
 ---
-title: Informações adicionais sobre erros do Designer de Classe | Microsoft Docs
-ms.custom: ''
+title: Erros do Designer de Classe
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
 - vs.classdesigner.CPlusPlusNoTypeFound
@@ -31,22 +30,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd6223786db06506c1fa4ac9b6bd3118eb5e3d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0af8686af556ca24cdbc9e0a51206f4f0728206
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Informações adicionais sobre erros do Designer de Classe
-O Designer de Classe não controla o local dos arquivos de origem, de forma que modificar a estrutura do projeto ou mover os arquivos de origem no projeto pode fazer com que o Designer de Classe perca o controle do tipo (especialmente o tipo de origem de um typedef, classes base ou tipos de associação). É possível receber um erro como **O Designer de Classe não pode exibir este tipo**. Se você fizer isso, arraste o código-fonte realocado ou modificado para o diagrama de classe, para exibi-lo novamente.  
-  
-Você pode obter ajuda com outros erros e avisos nos seguintes recursos:  
-  
-[Trabalhando com código do Visual C++](working-with-visual-cpp-code.md)  
-Inclui informações de solução de problemas sobre como exibir o C++ em um diagrama de classe.  
-  
-[Fórum do Designer de Classe do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754)  
-Fornece um fórum para perguntas e problemas com o Designer de Classe.  
-  
+
+O **Designer de Classe** não controla o local dos arquivos de origem, portanto, modificar a estrutura do projeto ou mover os arquivos de origem no projeto pode fazer com que o **Designer de Classe** perca o controle do tipo (especialmente o tipo de origem de um typedef, de classes base ou de tipos de associação). É possível receber um erro como **O Designer de Classe não pode exibir este tipo**. Se você fizer isso, arraste o código-fonte realocado ou modificado para o diagrama de classe, para exibi-lo novamente.
+
+## <a name="resources"></a>Recursos
+
+Você pode obter ajuda com outros erros e avisos nos seguintes recursos:
+
+- [Trabalhando com o código do Visual C++](working-with-visual-cpp-code.md) inclui informações de solução de problemas de como exibir C++ em um diagrama de classe.
+- O [Fórum do Designer de Classe do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) fornece um fórum para perguntas sobre o **Designer de Classe**.
+
 ## <a name="see-also"></a>Consulte também
-[Projetando e exibindo classes e tipos](designing-and-viewing-classes-and-types.md)
+
+- [Projetando e exibindo classes e tipos](designing-and-viewing-classes-and-types.md)

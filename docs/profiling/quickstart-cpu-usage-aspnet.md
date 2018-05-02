@@ -1,6 +1,7 @@
 ---
-title: Analisar dados de uso da CPU (ASP.NET) | Microsoft Docs
-ms.custom: ''
+title: Analisar dados de uso da CPU (ASP.NET)
+description: Medir o desempenho do aplicativo em aplicativos ASP.NET usando a ferramenta de diagnóstico de uso da CPU
+ms.custom: mvc
 ms.date: 12/05/2017
 ms.technology: vs-ide-debug
 ms.topic: quickstart
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: e93f7ae71b8d95b8d444856c34dc6181818e0a58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3309435600991db85540c95dc969206619438e51
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Analisar dados de uso da CPU no Visual Studio | Microsoft Docs (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Início Rápido: analisar dados de uso da CPU no Visual Studio (ASP.NET)
 
 O Visual Studio fornece muitos recursos poderosos para ajudar a analisar problemas de desempenho em seu aplicativo. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos. Aqui, vamos examinar a ferramenta para identificar os gargalos de desempenho devido ao alto uso da CPU. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
 

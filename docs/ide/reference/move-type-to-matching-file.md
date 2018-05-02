@@ -1,7 +1,7 @@
 ---
-title: Refatoração Mover tipo para arquivo correspondente no Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Mover o tipo para refatoração de arquivo correspondente no Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cabe20e6cf84b69bf711831d1a402f67fd908c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 00fab87a8fed4d1dcd9b4899551d68eaab28d46a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refatoração Mover um tipo para um arquivo correspondente
 
@@ -63,4 +63,4 @@ Esta refatoração aplica-se a:
 
 ## <a name="see-also"></a>Consulte também
 
-[Refatoração](../refactoring-in-visual-studio.md)
+- [Refatoração](../refactoring-in-visual-studio.md)

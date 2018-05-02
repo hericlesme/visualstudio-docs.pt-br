@@ -2,6 +2,7 @@
 title: 'Início Rápido: Criar seu primeiro aplicativo da Plataforma Universal do Windows no Visual Studio com XAML e C# | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Início Rápido: Criar seu primeiro aplicativo da Plataforma Universal do Windows no Visual Studio com XAML e C&#35;
 
@@ -31,7 +32,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
 1. Abra o Visual Studio 2017.
 
-2. Na barra de menus superior, selecione **Arquivo** > **Novo** > **Projeto...**.
+2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
 3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** e, em seguida, escolha **Universal do Windows**. No painel do meio, escolha **Aplicativo em Branco (Universal do Windows)**. Em seguida, nomeie o projeto como *HelloWorld* e escolha **OK**.
 
@@ -54,7 +55,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Adicionar um botão à tela de Design
 
-1. No **Gerenciador de Soluções**, clique duas vezes em **MainPage.xaml** para abrir o modo divisão.
+1. No **Gerenciador de Soluções**, clique duas vezes em *MainPage.xaml* para abrir o modo divisão.
 
   ![Abra o MainPage.xaml no Gerenciador de Soluções ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
@@ -66,7 +67,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
   ![Clique na Caixa de Ferramentas para abrir a janela de submenu Caixa de Ferramentas](../ide/media/uwp-toolbox.png)
 
-  (Se a opção Caixa de Ferramentas não for exibida, ela poderá ser aberta na barra de menus. Para fazer isso, escolha **Exibição** > **Barra de Ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
+  (Se a opção **Caixa de Ferramentas** não for exibida, ela poderá ser aberta na barra de menus. Para fazer isso, escolha **Exibição** > **Barra de Ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
 
 3. Clique no ícone **Fixar** para encaixar a janela Caixa de Ferramentas.
 
@@ -76,17 +77,17 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
    ![Clique no controle de Botão e arraste-o para a tela de Design](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Se você examinar o código no Editor de XAML, verá que o botão também foi adicionado lá:
+  Se você examinar o código no **Editor XAML**, verá que o botão também foi adicionado lá:
 
   ![Clique no controle de Botão e arraste-o para a tela de Design](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Adicionar um rótulo para o botão
 
-1. No Editor de XAML, altere o valor de Conteúdo do Botão de "Botão" para "Olá, Mundo!"
+1. No **Editor de XAML**, altere o valor de Conteúdo do Botão de "Botão" para "Olá, Mundo!"
 
    ![Altere o valor do conteúdo do botão para Olá, Mundo](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Observe que o botão no Designer XAML também é alterado.
+2. Observe que o botão no **Designer XAML** muda muito.
 
    ![O botão é alterado para Olá, Mundo na tela de design](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ O termo "Manipulador de eventos" parece complicado, mas é apenas outro nome par
 
 1. Clique duas vezes no controle de botão na tela de design.
 
-2.  Edite o código do manipulador de eventos em *MainPage.xaml.cs*, a página code-behind.
+2. Edite o código do manipulador de eventos em *MainPage.xaml.cs*, a página code-behind.
 
  É aqui que as coisas ficam interessantes. O manipulador de eventos padrão tem esta aparência:
 
@@ -121,7 +122,7 @@ O termo "Manipulador de eventos" parece complicado, mas é apenas outro nome par
 
 #### <a name="what-did-we-just-do"></a>O que nós acabamos de fazer?
 
-O código usa algumas APIs do Windows para criar um objeto de sintetização de voz e, em seguida, fornece um texto para ele dizer. (Para obter mais informações de como usar SpeechSynthesis, veja <xref:System.Speech.Synthesis>.)
+O código usa algumas APIs do Windows para criar um objeto de sintetização de voz e, em seguida, fornece um texto para ele dizer. (Para obter mais informações de como usar `SpeechSynthesis`, confira <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 

@@ -1,18 +1,19 @@
 ---
 title: Criar um ambiente de desenvolvimento do .NET Core com contêineres usando o Kubernetes na nuvem – Etapa 5 – Chamar outro contêiner | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Desenvolvimento rápido no Kubernetes com contêineres e microsserviços no Azure
 keywords: Docker, Kubernetes, Azure, AKS, Serviço de Contêiner do Azure, contêineres
-manager: ghogen
-ms.openlocfilehash: 15ca1db26bc57aafa704a57b4464b31a1ada8c92
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 6ef3a79d0b79feae64adcaebe31daa48ba75ab75
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>Introdução ao Connected Environment com .NET Core
 
@@ -29,7 +30,7 @@ Por motivo de tempo, vamos baixar o código de exemplo de um repositório do Git
 ## <a name="run-mywebapi"></a>Executar a *mywebapi*
 1. Abra a pasta `mywebapi` em uma *janela do VS Code separada*.
 1. Pressione F5 e espere que o serviço seja criado e implantado. Você saberá que ele está pronto quando a barra de depuração do VS Code aparecer.
-1. Anote a URL do ponto de extremidade, que será parecida com http://localhost:\<portnumber\>. **Dica: a barra de status do VS Code exibirá uma URL clicável.** Pode parecer que o contêiner está sendo executado localmente, mas, na verdade, ele está sendo executado no nosso ambiente de desenvolvimento no Azure. O motivo para o endereço do localhost é que a `mywebapi` não definiu nenhum ponto de extremidade público e somente pode ser acessada por meio da instância do Kubernetes. Para sua conveniência e para facilitar a interação com o serviço privado em seu computador local, o Connected Environment cria um túnel SSH temporário para o contêiner em execução no Azure.
+1. Anote a URL do ponto de extremidade, ela será parecida com http://localhost:\<portnumber\>. **Dica: a barra de status do VS Code exibirá uma URL clicável.** Pode parecer que o contêiner está sendo executado localmente, mas, na verdade, ele está sendo executado no nosso ambiente de desenvolvimento no Azure. O motivo para o endereço do localhost é que a `mywebapi` não definiu nenhum ponto de extremidade público e somente pode ser acessada por meio da instância do Kubernetes. Para sua conveniência e para facilitar a interação com o serviço privado em seu computador local, o Connected Environment cria um túnel SSH temporário para o contêiner em execução no Azure.
 1. Quando a `mywebapi` estiver pronta, abra o navegador no endereço do localhost. Acrescente `/api/values` à URL para invocar a API GET padrão para o `ValuesController`. 
 1. Se todas as etapas foram bem-sucedidas, será exibida uma resposta do serviço `mywebapi`.
 

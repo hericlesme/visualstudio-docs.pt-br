@@ -1,7 +1,7 @@
 ---
-title: Identificando e personalizando atalhos de teclado no Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Identificar e personalizar atalhos de teclado no Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
@@ -19,13 +19,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b277c587fc92f9ce6c38815e2b07c74fa6ea3bc3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificação e personalização de atalhos de teclado no Visual Studio
+# <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar e personalizar atalhos de teclado no Visual Studio
 
 Você pode identificar atalhos de teclado para comandos do Visual Studio, personalizar esses atalhos e exportá-los para que outras pessoas os usem. Muitos atalhos sempre invocam os mesmos comandos, mas o comportamento de um atalho pode variar de acordo com as seguintes condições:
 
@@ -33,18 +33,18 @@ Você pode identificar atalhos de teclado para comandos do Visual Studio, person
 
 - Se você personalizou o comportamento do atalho.
 
-- Em que contexto você está quando escolhe o atalho. Por exemplo, o atalho F2 invocará o comando Edit.EditCell se você estiver usando o Designer de Configurações e o comando File.Rename se estiver usando o Team Explorer.
+- Em que contexto você está quando escolhe o atalho. Por exemplo, o atalho **F2** invocará o comando `Edit.EditCell` se você estiver usando o **Designer de Configurações** e o comando `File.Rename` se você estiver usando o **Team Explorer**.
 
-Independentemente das configurações, da personalização e do contexto, você sempre pode localizar e alterar um atalho de teclado na caixa de diálogo **Opções**. Também é possível procurar os atalhos de teclado padrão de várias dezenas de comandos em [Atalhos de teclado padrão para comandos frequentes](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), e pode encontrar uma lista completa de todos os atalhos padrão (com base nas Configurações Gerais de Desenvolvimento) em [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Independentemente das configurações, da personalização e do contexto, você sempre pode localizar e alterar um atalho de teclado na caixa de diálogo **Opções**. Também é possível procurar os atalhos de teclado padrão de dezenas de comandos em [Atalhos de teclado padrão para comandos usados com frequência](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) e pode encontrar uma lista completa de todos os atalhos padrão (com base nas **Configurações Gerais de Desenvolvimento**) em [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 Se um atalho for atribuído a um comando no contexto Global e em mais nenhum outro contexto, esse atalho sempre invocará o comando em questão. Porém, um atalho pode ser atribuído a um comando no contexto Global e a um comando diferente em um contexto específico. Se você usar tal atalho quando estiver no contexto específico, o atalho invocará o comando para o contexto específico, e não para o contexto Global.
 
 > [!NOTE]
 > Suas configurações e a edição do Visual Studio podem alterar os nomes e os locais dos comandos de menu, bem como as opções que aparecem nas caixas de diálogo. Este tópico se baseia nas **Configurações Gerais de Desenvolvimento**.
 
-## <a name="identifying-a-keyboard-shortcut"></a>Identificando um atalho de teclado
+## <a name="identify-a-keyboard-shortcut"></a>Identificar um atalho de teclado
 
-1. Na barra de menus, escolha **Ferramentas**, **Opções**.
+1. Na barra de menus, escolha **Ferramentas** > **Opções**.
 
 2. Expanda **Ambiente** e escolha **Teclado**.
 
@@ -56,15 +56,15 @@ Se um atalho for atribuído a um comando no contexto Global e em mais nenhum out
 
 4. Na lista, escolha o comando correto.
 
-    Por exemplo, você pode escolher **View.SolutionExplorer**.
+    Por exemplo, você pode escolher `View.SolutionExplorer`.
 
 5. Se o comando tiver um atalho de teclado, ele será exibido na lista **Atalho(s) para o comando selecionado**.
 
    ![Exibir um atalho para um comando especificado](../ide/media/viewshortcut.png "ViewShortcut")
 
-## <a name="customizing-a-keyboard-shortcut"></a>Personalizando um atalho de teclado
+## <a name="customize-a-keyboard-shortcut"></a>Personalizar um atalho de teclado
 
-1. Na barra de menus, escolha **Ferramentas**, **Opções**.
+1. Na barra de menus, escolha **Ferramentas** > **Opções**.
 
 2. Expanda a pasta **Ambiente** e escolha **Teclado**.
 
@@ -72,19 +72,19 @@ Se um atalho for atribuído a um comando no contexto Global e em mais nenhum out
 
 4. Na lista, escolha o comando ao qual você deseja atribuir um atalho de teclado.
 
-Na lista **Usar novo atalho em**, escolha a área do recurso em que deseja usar o atalho.
+    Na lista **Usar novo atalho em**, escolha a área do recurso em que deseja usar o atalho.
 
-    For example, you can choose **Global** if you want the shortcut to work in all contexts. You can use any shortcut that isn't mapped (as Global) in another editor. Otherwise, the editor overrides the shortcut.
+    Por exemplo, você pode escolher **Global** se desejar que o atalho funcione em todos os contextos. É possível usar qualquer atalho que não esteja mapeado (como Global) em outro editor. Caso contrário, o editor substitui o atalho.
 
     > [!NOTE]
-    > You can't assign the following keys as part of a keyboard shortcut in **Global**: Print Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, the Windows logo key, the Application key, any of the Arrow keys, or Enter; Num Lock, Delete, or Clear on the numeric keypad; the Ctrl+Alt+Delete key combination.
+    > Não é possível atribuir as seguintes teclas como parte de um atalho de teclado em **Global**: Print Scrn/Sys Rq, Scroll Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, a tecla do logotipo do Windows, a tecla Aplicativo, qualquer uma das teclas de direção ou Enter e, no teclado numérico Num Lock, Delete ou Clear, nem a combinação Ctrl+Alt+Delete.
 
 6. Na caixa **Pressionar tecla(s) de atalho**, digite o atalho que deseja usar.
 
     > [!NOTE]
-    > É possível criar um atalho que combine uma letra com a tecla Alt, a tecla Ctrl, ou ambas. Você também pode criar um atalho que combine a tecla Shift e uma letra com a tecla Alt, a tecla Ctrl, ou ambas.
+    > Você pode criar um atalho que combine uma letra com a tecla **Alt** e/ou com a tecla **Ctrl**. Você também pode criar um atalho que combine a tecla **Shift** e uma letra com a tecla **Alt** e/ou a tecla **Ctrl**.
 
-     Se um atalho já estiver atribuído a outro comando, ele aparecerá na caixa **Atalho usado atualmente por**. Nesse caso, escolha a tecla Backspace para excluir esse atalho antes de tentar outro.
+     Se um atalho já estiver atribuído a outro comando, ele aparecerá na caixa **Atalho usado atualmente por**. Nesse caso, escolha a tecla **Backspace** para excluir esse atalho antes de tentar outro.
 
     ![Especificar um atalho diferente para um comando](../ide/media/reassignshortcut.png "ReassignShortcut")
 
@@ -93,13 +93,13 @@ Na lista **Usar novo atalho em**, escolha a área do recurso em que deseja usar 
     > [!NOTE]
     > Se você especificar um atalho diferente para um comando, escolha o botão **Atribuir** e, em seguida, **Cancelar**; a caixa de diálogo é fechada, mas a alteração não é revertida.
 
-## <a name="sharing-custom-keyboard-shortcuts"></a>Compartilhando atalhos de teclado personalizados
+## <a name="share-custom-keyboard-shortcuts"></a>Compartilhar atalhos de teclado personalizados
 
 Você pode compartilhar os atalhos de teclado personalizados exportando-os para um arquivo e fornecendo o arquivo a outras pessoas para que elas importem os dados.
 
 ### <a name="to-export-only-keyboard-shortcuts"></a>Para exportar apenas atalhos de teclado
 
-1. Na barra de menus, escolha **Ferramentas**, **Importar e Exportar Configurações**.
+1. Na barra de menus, escolha **Ferramentas** > **Importar e Exportar Configurações**.
 
 2. Escolha **Exportar configurações de ambiente selecionadas** e escolha o botão **Avançar**.
 
@@ -111,11 +111,11 @@ Você pode compartilhar os atalhos de teclado personalizados exportando-os para 
 
 5. Nas caixas **Que nome deseja dar a seu arquivo de configurações?** e **Armazenar meu arquivo de configurações neste diretório**, deixe os valores padrão ou especifique valores diferentes e escolha o botão **Finalizar**.
 
-    Por padrão, seus atalhos são salvos em um arquivo na pasta %USERPROFILE%\Documentos\Visual Studio 2017\Configurações. O nome do arquivo reflete a data em que você exportou as configurações, e a extensão é .vssettings.
+    Por padrão, seus atalhos são salvos em um arquivo na pasta *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. O nome do arquivo reflete a data de quando as configurações foram exportadas, e a extensão é *.vssettings*.
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Para importar apenas atalhos de teclado
 
-1. Na barra de menus, escolha **Ferramentas**, **Importar e Exportar Configurações**.
+1. Na barra de menus, escolha **Ferramentas** > **Importar e Exportar Configurações**.
 
 2. Escolha o botão de opção **Importar configurações de ambiente selecionadas** e o botão **Avançar**.
 
@@ -133,4 +133,4 @@ Você pode compartilhar os atalhos de teclado personalizados exportando-os para 
 
 ## <a name="see-also"></a>Consulte também
 
-[Recursos de Acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
+- [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

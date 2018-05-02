@@ -1,6 +1,7 @@
 ---
-title: Ações Rápidas | Microsoft Docs
+title: Ações Rápidas
 ms.date: 03/28/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -11,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 941980eff8fc2474df9555b326278abdb9b26dac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quick-actions"></a>Ações Rápidas
 
@@ -42,7 +43,7 @@ Para qualquer idioma, terceiros podem oferecer diagnósticos e sugestões person
 
 ## <a name="to-see-potential-fixes"></a>Para ver as possíveis correções
 
-Clique na seta para baixo ou no link Mostrar possíveis correções para exibir uma lista de ações rápidas que a lâmpada pode executar para você.
+Clique na seta para baixo em ou no link **Mostrar possíveis correções** para exibir uma lista de ações rápidas que a lâmpada pode realizar para você.
 
 ![Lâmpada expandida](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
@@ -51,4 +52,4 @@ Clique na seta para baixo ou no link Mostrar possíveis correções para exibir 
 - [Geração de código no Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Ações Rápidas Comuns](../ide/common-quick-actions.md)
 - [Estilos de código e ações rápidas](../ide/code-styles-and-quick-actions.md)
-- [Escrevendo e refatorando código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [Escrever e refatorar o código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)

@@ -1,9 +1,9 @@
 ---
-title: Parâmetros de modelo de projeto e de item do Visual do Studio | Microsoft Docs
-ms.custom: ''
+title: Parâmetros de modelo de projeto e de item Visual do Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 
-Usando parâmetros em seus modelos, você pode substituir os valores das principais partes do modelo, como nomes de classe e namespaces, quando o modelo é instanciado. Esses parâmetros são substituídos pelo assistente de modelo que é executado em segundo plano quando um usuário escolhe **OK** ou **Adicionar** nas caixas de diálogo **Novo Projeto** ou **Adicionar Novo Item**.
+Você poderá substituir os valores do modelo quando for criada uma instância dele. Para configurar essa funcionalidade, use *parâmetros de modelo*. Os parâmetros de modelo podem ser usados para substituir valores, como nomes de classes e namespaces, no modelo. O assistente de modelo que é executado em segundo plano quando um usuário adiciona um novo item ou projeto substitui esses parâmetros.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Declarando e habilitando parâmetros de modelo
 
@@ -38,7 +38,7 @@ Parâmetros de modelo são declarados no formato $*parâmetro*$. Por exemplo:
 
 1. Defina o atributo `ReplaceParameters` do elemento `ProjectItem` como `true`.
 
-1. No arquivo de código do item de projeto, inclua parâmetros conforme apropriado. Por exemplo, o parâmetro a seguir especifica que o nome de projeto safe seja usado para o namespace em um arquivo:
+1. No arquivo de código do item de projeto, inclua parâmetros conforme apropriado. Por exemplo, o parâmetro a seguir especifica que o nome do projeto seguro é usado para o namespace em um arquivo:
 
     ```csharp
     namespace $safeprojectname$
@@ -118,5 +118,5 @@ No arquivo .vstemplate do modelo de projeto, inclua o atributo `ReplaceParameter
 
 ## <a name="see-also"></a>Consulte também
 
-[Personalizando modelos](../ide/customizing-project-and-item-templates.md)  
-[Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Personalizando modelos](../ide/customizing-project-and-item-templates.md)
+- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)

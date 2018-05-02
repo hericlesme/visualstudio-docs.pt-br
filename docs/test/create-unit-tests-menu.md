@@ -1,6 +1,7 @@
 ---
-title: Criar stubs de método de teste de unidade no Visual Studio | Microsoft Docs
+title: Criar stubs de método de teste de unidade no Visual Studio
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8a5f33cfc8ebc7a45f02e3626289d496eac66e37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39c59d76d10c2028214b2a1ea15ff139000e3080
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Criar stubs de método de teste de unidade com o comando Criar Testes de Unidade
 
@@ -58,7 +59,7 @@ As extensões da estrutura de teste também estão disponíveis no Visual Studio
 
 ## <a name="when-should-i-use-this-feature"></a>Quando devo usar esse recurso?
 
-Use este recurso sempre que precisar criar testes de unidade, mas especialmente quando estiver testando o código existente que tem muito pouca ou nenhuma cobertura do teste e nenhuma documentação. Em outras palavras, onde há especificação de código limitada ou inexistente. Ele implementa efetivamente uma abordagem semelhante aos [Testes de Unidade Inteligentes](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) que caracterizam o comportamento observado do código.
+Use este recurso sempre que precisar criar testes de unidade, mas especialmente quando estiver testando o código existente que tem muito pouca ou nenhuma cobertura do teste e nenhuma documentação. Em outras palavras, onde há uma especificação de código limitada ou inexistente. Ele implementa efetivamente uma abordagem semelhante aos [Testes de Unidade Inteligentes](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) que caracterizam o comportamento observado do código.
 
 No entanto, esse recurso é igualmente aplicável para a situação em que o desenvolvedor começa escrevendo um código e o usa para inicializar a disciplina de teste de unidade. Dentro do fluxo de codificação, o desenvolvedor talvez queira criar rapidamente um stub de método de teste de unidade (com uma classe de teste adequada e um projeto de teste adequado) para uma determinada parte do código.
 

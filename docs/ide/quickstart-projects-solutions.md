@@ -1,7 +1,7 @@
 ---
-title: Introdução aos projetos e às soluções no Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Introdução a projetos e soluções no Visual Studio
 ms.date: 12/11/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606b08608eea275a25a1a097ed75b7554a99f6a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Início rápido: Projetos e soluções
 
@@ -39,7 +39,7 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
    O Visual Studio é aberto e você provavelmente verá a **Página Inicial** ocupando a maior parte do espaço da janela.
 
-1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto...**
+1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 
    A caixa de diálogo **Novo Projeto** é aberta.
 
@@ -53,13 +53,13 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
 Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um projeto vazio e adicionar os itens necessários ao projeto.
 
-1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** do **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto...**
+1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** do **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
 
    A caixa de diálogo **Adicionar Novo Projeto** é aberta.
 
 1. No painel esquerdo, expanda a opção **Visual C#** e escolha **Área de Trabalho Clássica do Windows**. Em seguida, no painel central, selecione **Projeto Vazio (.NET Framework)**. Nomeie o projeto como “QuickDate” e, então, selecione o botão **OK**.
 
-   Um projeto chamado “QuickDate” aparecerá abaixo da solução no **Gerenciador de Soluções**. Atualmente, ele contém um único arquivo chamado **App.config**.
+   Um projeto chamado “QuickDate” aparecerá abaixo da solução no **Gerenciador de Soluções**. Atualmente, ele contém um único arquivo chamado *App.config*.
 
    > [!NOTE]
    > Se você não vir a opção **Visual C#** no painel esquerdo da caixa de diálogo, será necessário instalar a carga de trabalho **Desenvolvimento de área de trabalho do .NET**. Uma maneira fácil de fazer isso é escolher o link **Abrir Instalador do Visual Studio** no canto inferior esquerdo da caixa de diálogo. Após o início do **Instalador do Visual Studio**, escolha a carga de trabalho **Desenvolvimento para área de trabalho em .NET** e, em seguida, o botão **Modificar**.
@@ -70,15 +70,15 @@ Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um
 
 Temos um projeto vazio&mdash;vamos adicionar um arquivo de código.
 
-1. Ao clicar com o botão direito do mouse ou no menu de contexto **QuickDate** do **Gerenciador de Soluções**, selecione **Adicionar** > **Novo Item...**.
+1. Ao clicar com o botão direito do mouse ou no menu de contexto de **QuickDate** no **Gerenciador de Soluções**, selecione **Adicionar** > **Novo Item**.
 
    A caixa de diálogo **Adicionar Novo Item** é aberta.
 
 1. Expanda a opção **Itens do Visual C#** e, em seguida, escolha **Código**. No painel central, selecione **Classe**. Nomeie o arquivo como “Calendar” e, então, escolha o botão **Adicionar**.
 
-   Um arquivo chamado “Calendar.cs” é adicionado ao projeto. O **.cs** no final é a extensão de arquivo que é fornecida aos arquivos de código C#. O arquivo é exibido na hierarquia do projeto visual no **Gerenciador de Soluções** e seu conteúdo é aberto no editor.
+   Um arquivo chamado *Calendar.cs* é adicionado ao projeto. O *.cs* no final é a extensão de arquivo que é fornecida aos arquivos de código C#. O arquivo é exibido na hierarquia do projeto visual no **Gerenciador de Soluções** e seu conteúdo é aberto no editor.
 
-1. Substitua o conteúdo do arquivo **Calendar.cs** pelo código a seguir.
+1. Substitua o conteúdo do arquivo *Calendar.cs* pelo código a seguir.
 
    ```csharp
    using System;
@@ -110,13 +110,13 @@ Temos um projeto vazio&mdash;vamos adicionar um arquivo de código.
 
 Vamos adicionar um projeto de teste de unidade em nossa solução. Desta vez, vamos começar de um modelo de projeto. Portanto, não precisamos adicionar um arquivo de código extra no projeto.
 
-1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** do **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto...**
+1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** do **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
 
    A caixa de diálogo **Adicionar Novo Projeto** é aberta.
 
 1. No painel esquerdo, expanda a opção **Visual Basic** e escolha a categoria **Teste**. No painel central, selecione **Projeto de Teste de Unidade (.NET Framework)**. Nomeie o projeto como “QuickTest” e, então, escolha o botão **OK**.
 
-   Um segundo projeto é adicionado ao **Gerenciador de Soluções** e um arquivo chamado **UnitTest1.vb** é aberto no editor. O **.vb** é a extensão de arquivo que é fornecida aos arquivos de código do Visual Basic.
+   Um segundo projeto é adicionado ao **Gerenciador de Soluções** e um arquivo chamado *UnitTest1.vb* é aberto no editor. O *.vb* é a extensão de arquivo que é fornecida aos arquivos de código do Visual Basic.
 
    ![Gerenciador de Soluções com dois projetos](media/quickstart-projects-solution-explorer.png)
 
@@ -124,7 +124,7 @@ Vamos adicionar um projeto de teste de unidade em nossa solução. Desta vez, va
 
 Vamos usar o novo projeto de teste de unidade para testar nosso método no projeto **QuickDate**. Portanto, precisamos adicionar uma referência a esse projeto. Isso cria uma dependência de build entre os dois projetos, o que significa que o **QuickDate** será compilado antes do **QuickTest** quando a solução for compilada.
 
-1. Escolha o nó **Referências** no projeto **QuickTest** e, ao clicar com o botão direito do mouse ou no menu de contexto, escolha **Adicionar Referência...**
+1. Escolha o nó **Referências** no projeto **QuickTest** e, ao clicar com o botão direito do mouse ou no menu de contexto, escolha **Adicionar Referência**.
 
    ![Adicionar menu de referência](media/quickstart-projects-add-reference.png)
 
@@ -136,7 +136,7 @@ Vamos usar o novo projeto de teste de unidade para testar nosso método no proje
 
 ## <a name="add-test-code"></a>Adicionar código de teste
 
-1. Agora vamos adicionar o código de teste para o arquivo de código do Visual Basic. Substitua o conteúdo do **UnitTest1.vb** pelo seguinte código.
+1. Agora vamos adicionar o código de teste para o arquivo de código do Visual Basic. Substitua o conteúdo do *UnitTest1.vb* pelo seguinte código.
 
    ```vb
    <TestClass()> Public Class UnitTest1
@@ -150,7 +150,7 @@ Vamos usar o novo projeto de teste de unidade para testar nosso método no proje
 
    Você verá uma linha sinuosa vermelha em alguns dos códigos. Nós corrigiremos esse erro ao tornar o projeto de teste um [assembly amigável](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) para o projeto **QuickDate**.
 
-1. De volta ao projeto **QuickDate**, abra o arquivo **Calendar.cs**, se ele já não estiver aberto e adicione a seguinte instrução de uso e o atributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> para resolver o erro no projeto de teste.
+1. De volta ao projeto **QuickDate**, abra o arquivo *Calendar.cs*, se ele já não estiver aberto e adicione a seguinte instrução de uso e o atributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> para resolver o erro no projeto de teste.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -168,7 +168,7 @@ A linha no arquivo do código C# que contém o atributo <xref:System.Runtime.Com
 
 1. No **Gerenciador de Soluções**, selecione o projeto **QuickTest**. Ao clicar com o botão direito do mouse ou no menu de contexto, selecione **Propriedades** ou pressione **Alt**+**Enter**.
 
-   As páginas de propriedades do projeto são abertas na guia **Aplicativo**. Observe que o nome do assembly do projeto **QuickTest** é, de fato, “QuickTest”. Se você quisesse alterá-lo, este é o local em que o modificaria. Então, no momento em que você compilasse o projeto de teste, o nome do arquivo executável resultante seria alterado de **QuickTest.exe** para o que você tivesse escolhido.
+   As páginas de propriedades do projeto são abertas na guia **Aplicativo**. Observe que o nome do assembly do projeto **QuickTest** é, de fato, “QuickTest”. Se você quisesse alterá-lo, este é o local em que o modificaria. Então, no momento em que você compilasse o projeto de teste, o nome do arquivo executável resultante seria alterado de *QuickTest.exe* para o que você tivesse escolhido.
 
    ![Propriedades de projeto](media/quickstart-projects-properties.png)
 
@@ -178,14 +178,14 @@ A linha no arquivo do código C# que contém o atributo <xref:System.Runtime.Com
 
 Se você quiser verificar se seu teste de unidade está funcionando, selecione **Teste** > **Executar** > **Todos os Testes** na barra de menus. Uma janela chamada **Gerenciador de Testes** será aberta e você verá que o teste **TestGetCurrentDate** será aprovado.
 
-Parabéns por concluir este guia de início rápido! Logo depois, talvez você queira explorar alguns dos outros guias de início rápido do Visual Studio ou saber mais sobre a [criação de projetos e de soluções](../ide/creating-solutions-and-projects.md).
+Parabéns por concluir este Guia de Início Rápido! Em seguida, talvez você queira explorar alguns dos outros guias de Início Rápido do Visual Studio ou saber mais sobre como [Criar projetos e soluções](../ide/creating-solutions-and-projects.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Início rápido: Personalizar o Editor e o IDE do Visual Studio](../ide/quickstart-personalize-the-ide.md)
 - [Início rápido: Codificação no editor](../ide/quickstart-editor.md)
-- [Gerenciando propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)
-- [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)
+- [Gerenciar propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)
+- [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md)
 - [Desenvolver código no Visual Studio sem projetos ou soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Visão geral do IDE do Visual Studio](../ide/visual-studio-ide.md)

@@ -1,6 +1,7 @@
 ---
-title: Geração de teste | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest | Microsoft Docs
+title: Geração de teste | Ferramenta de teste para desenvolvedores do Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>Geração de teste
 
-No teste de unidade tradicional, são necessários vários componentes para compor um teste:
+Nos testes de unidade tradicionais, um teste de consiste em várias coisas:
+
+* Uma [sequência de chamadas de método](test-generation.md#test-generators)
+* Os argumentos com os quais os métodos são chamados. Os argumentos são as [entradas de teste](input-generation.md)
+* Validação do comportamento pretendido do aplicativo testado informando um conjunto de [declarações](#assumptions-and-assertions)
+
+A seguir está um exemplo de estrutura de teste:
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-O teste é composto por diferentes aspectos:
-
-* Ele corrige uma [sequência de chamadas de método](test-generation.md#test-generators)
-* Ele corrigirá os argumentos com os quais os métodos são chamados, os argumentos são as [entradas de teste](input-generation.md)
-* Ele valida o comportamento pretendido do aplicativo testado um informando um conjunto de [declarações](#assumptions-and-assertions)
 
 O IntelliTest geralmente pode determinar valores de argumento relevantes para [Testes de Unidade Parametrizados](#parameterized-unit-testing) mais gerais, o que fornece a sequência das chamadas de método e declarações.
 
@@ -243,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Recebeu comentários?
 
-Poste suas ideias e solicitações de recursos no  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Poste suas ideias e solicitações de recursos em [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

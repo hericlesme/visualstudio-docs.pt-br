@@ -1,9 +1,8 @@
 ---
-title: IntelliSense do Visual Basic | Microsoft Docs
-ms.custom: ''
+title: Visual Basic IntelliSense
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ff32ed0452efb5e413d730a69293147fec4c7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1334cb7f890f3924ca0720b4704e573a67058356
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense para arquivos de código do Visual Basic
 
@@ -57,4 +56,4 @@ No Visual Basic, as listas de conclusão do IntelliSense têm dois controles de 
 
 ## <a name="see-also"></a>Consulte também
 
-[Usando o IntelliSense](../ide/using-intellisense.md)
+- [Usando o IntelliSense](../ide/using-intellisense.md)
