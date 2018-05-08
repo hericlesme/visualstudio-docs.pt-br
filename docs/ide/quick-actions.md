@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="quick-actions"></a>Ações Rápidas
 
@@ -24,10 +24,10 @@ As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o có
 
 É possível usar as Ações rápidas para:
 
-- aplicar uma correção de código para uma violação de regra do [analisador de código](../code-quality/roslyn-analyzers-overview.md)
-- [suprimir](../code-quality/use-roslyn-analyzers.md) uma violação de regra do analisador de código
-- aplicar uma refatoração (por exemplo, [embutir uma variável temporária](../ide/reference/inline-temporary-variable.md))
-- gerar código (por exemplo, [introduzir uma variável local](../ide/reference/introduce-local-variable.md))
+- Aplicar uma correção de código para uma violação de regra do [analisador de código](../code-quality/roslyn-analyzers-overview.md)
+- [Suprimir](../code-quality/use-roslyn-analyzers.md) uma violação de regra do analisador de código
+- Aplicar uma refatoração (por exemplo, [embutir uma variável temporária](../ide/reference/inline-temporary-variable.md))
+- Gerar um código (por exemplo, [introduzir uma variável local](../ide/reference/introduce-local-variable.md))
 
 As Ações Rápidas podem ser aplicadas usando o ícone de Lâmpada ![Ícone de lâmpada pequeno](media/vs2015_lightbulbsmall.png) ou pressionando **Ctrl**+**.** quando o cursor estiver em uma linha de código para a qual uma ação está disponível. Você verá uma lâmpada se houver um rabisco vermelho e o Visual Studio tiver uma sugestão para corrigir o problema. Por exemplo se você tiver um erro indicado por um rabisco vermelho, uma lâmpada aparecerá quando correções estiverem disponíveis para esse erro.
 

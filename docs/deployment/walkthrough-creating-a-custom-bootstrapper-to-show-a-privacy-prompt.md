@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um Bootstrapper personalizado para mostrar uma privacidade Prompt | Microsoft Docs'
+title: 'Passo a passo: Criar um bootstrapper personalizado com um aviso de privacidade | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Instruções passo a passo: criando um bootstrapper personalizado para mostrar um prompt de privacidade
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: Criar um bootstrapper personalizado com um aviso de privacidade
 Você pode configurar aplicativos ClickOnce para atualizar automaticamente quando assemblies com as versões de arquivo mais recentes e assembly estiverem disponíveis. Para certificar-se de que os clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Em seguida, eles podem optar por conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ela não instala.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
   
 -   Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Criando uma caixa de diálogo de consentimento de atualização  
+## <a name="create-an-update-consent-dialog-box"></a>Criar uma caixa de diálogo de consentimento de atualização  
  Para exibir um aviso de privacidade, crie um aplicativo que solicita que o leitor de consentimento para atualizações automáticas para o aplicativo.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Para criar uma caixa de diálogo de consentimento  
@@ -136,7 +136,7 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
   
 26. Sobre o **criar** menu, clique em **BuildSolution**.  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>Criar o pacote de inicializador personalizado  
+## <a name="create-the-custom-bootstrapper-package"></a>Criar o pacote de inicializador personalizado  
  Para mostrar o prompt de privacidade para os usuários finais, você pode criar um pacote de bootstrapper personalizado para o aplicativo de diálogo de consentimento de atualização e incluí-lo como um pré-requisito em todos os aplicativos ClickOnce.  
   
  Esse procedimento demonstra como criar um pacote de bootstrapper personalizado ao criar os seguintes documentos:  
@@ -228,7 +228,7 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
   
 6.  Se necessário, crie um novo arquivo de manifesto de package.xml e um novo documento do EULA para os termos de licença de software para cada localidade. Por exemplo, se você criou subdiretórios para localidades fr e de, criar arquivos de manifesto package.xml separado e os termos de licença de software e salvá-los para os subdiretórios fr e de.  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Configurando o aplicativo de consentimento de atualização como um pré-requisito  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Defina o consentimento de atualização do aplicativo como um pré-requisito  
  No Visual Studio, você pode definir o aplicativo de atualização de consentimento como um pré-requisito.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para definir o aplicativo de consentimento de atualização como um pré-requisito  
@@ -246,7 +246,7 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
   
 5.  Clique em **OK**.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Criar e testar o programa de instalação  
+## <a name="create-and-test-the-setup-program"></a>Criar e testar o programa de instalação  
  Depois de definir o aplicativo de atualização de consentimento como pré-requisito, você pode gerar o instalador e bootstrapper para seu aplicativo.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Para criar e testar o programa de instalação clicando não concordo  

@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 
@@ -34,7 +34,7 @@ Parâmetros de modelo são declarados no formato $*parâmetro*$. Por exemplo:
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>Para habilitar a substituição de parâmetro nos modelos
 
-1. No arquivo .vstemplate do modelo, localize o elemento `ProjectItem` que corresponde ao item para o qual você deseja habilitar a substituição de parâmetro.
+1. No arquivo *.vstemplate* do modelo, localize o elemento `ProjectItem` que corresponde ao item para o qual você deseja habilitar a substituição de parâmetro.
 
 1. Defina o atributo `ReplaceParameters` do elemento `ProjectItem` como `true`.
 
@@ -63,7 +63,7 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |SpecificSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `SpecificSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `SpecificSolutionName` estará em branco.|
 |userdomain|O domínio do usuário atual.|
 |username|O nome de usuário atual.|
-|webnamespace|O nome do site da Web atual. Esse parâmetro é usado no modelo de formulário da Web para assegurar nomes de classe exclusivos. Se o site da Web estiver no diretório raiz do servidor Web, esse parâmetro de modelo será resolvido para o diretório raiz do servidor Web.|
+|webnamespace|O nome do site atual. Este parâmetro é usado no modelo de formulário da Web para garantir nomes de classe exclusivos. Se o site estiver no diretório raiz do servidor Web, esse parâmetro de modelo será resolvido para o diretório raiz do servidor Web.|
 |ano|O ano atual no formato AAAA.|
 
 > [!NOTE]
@@ -73,7 +73,7 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 
 Você pode especificar seus próprios valores e parâmetros de modelo, além dos parâmetros de modelo reservados padrão, que são usados durante a substituição de parâmetros. Para obter mais informações, consulte [Elemento CustomParameters (modelos do Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>Exemplo: usando o nome do projeto para um nome de arquivo
+## <a name="example-use-the-project-name-for-a-file-name"></a>Exemplo: usar o nome do projeto para um nome de arquivo
 
 Você pode especificar nomes de arquivo variáveis para itens de projeto usando um parâmetro no atributo `TargetFileName`.
 
@@ -90,7 +90,7 @@ O exemplo a seguir especifica que o nome de um arquivo executável usa o nome do
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>Exemplo: usando o nome seguro do projeto para o nome do namespace
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemplo: usar o nome seguro do projeto para o nome do namespace
 
 Para usar o nome seguro do projeto para o namespace em um arquivo de classe C#, use a seguinte sintaxe:
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-No arquivo .vstemplate do modelo de projeto, inclua o atributo `ReplaceParameters="true"` ao referenciar o arquivo:
+No arquivo *.vstemplate* do modelo de projeto, inclua o atributo `ReplaceParameters="true"` quando fizer referência ao arquivo:
 
 ```xml
 <TemplateContent>
@@ -118,5 +118,5 @@ No arquivo .vstemplate do modelo de projeto, inclua o atributo `ReplaceParameter
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizando modelos](../ide/customizing-project-and-item-templates.md)
+- [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)

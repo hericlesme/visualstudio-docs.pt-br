@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe35a9a0e9b1e4b2e04e978f2b32cb38439b76cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="manage-application-resources-net"></a>Gerenciar recursos do aplicativo (.NET)
 
@@ -35,9 +35,9 @@ Para obter mais informações sobre recursos em aplicativos de área de trabalho
 
 Em um projeto de código gerenciado, abra a janela de propriedades do projeto. Você pode abrir a janela Propriedades das seguintes maneiras:
 
-- clicando com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecionando **Propriedades**
-- digitando “propriedades do projeto” na janela **Início Rápido**
-- escolhendo **Alt**+**Enter** na janela **Gerenciador de Soluções**
+- Clicando com o botão direito do mouse no nó do projeto, no **Gerenciador de Soluções**, e selecionar **Propriedades**
+- Digitando "propriedades do projeto" na janela do **Início Rápido**
+- Escolhendo **Alt**+**Enter** na janela do **Gerenciador de Soluções**
 
 Selecione a guia **Recursos**. Você poderá adicionar um arquivo *.resx* se o projeto ainda não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.
 
