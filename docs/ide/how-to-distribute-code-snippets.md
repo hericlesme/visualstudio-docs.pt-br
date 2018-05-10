@@ -14,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e867bafff9c41aff525557484189693950b7b468
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1841dc30fce8e3799191ff9e2d91b94c7d8ac96b
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-distribute-code-snippets"></a>Como distribuir trechos de código
 
@@ -74,7 +74,7 @@ Neste procedimento, usaremos o mesmo trecho de código Hello World criado no [Pa
 
 2.  Adicione as seguintes linhas ao arquivo.
 
-    ```
+    ```txt
     // Visual Basic
     [$RootKey$\Languages\CodeExpansions\Basic\Paths]
     "HelloWorldVB"="$PackageFolder$"

@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
 Esta caixa de diálogo permite que você defina o build de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] e configurações de projeto relacionadas ao log de build e tipos de arquivo de suporte.
@@ -71,10 +71,10 @@ Esta caixa de diálogo permite que você defina o build de [!INCLUDE[vcprvc](../
 ## <a name="extensions-to-hide"></a>Extensões a serem ocultadas
   Especifica as extensões de nome de arquivo dos arquivos que não serão exibidos no **Gerenciador de Soluções** quando **Mostrar Todos os Arquivos** for habilitado.
 
- ## <a name="build-customization-search-path"></a>Caminho de pesquisa de personalização do build
+## <a name="build-customization-search-path"></a>Caminho de pesquisa de personalização do build
   Especifica a lista de diretórios que contêm arquivos de .rules, que o ajudarão a definir regras de build para seus projetos.
 
-# <a name="solution-explorer-mode"></a>Modo do Gerenciador de Soluções
+## <a name="solution-explorer-mode"></a>Modo do Gerenciador de Soluções
  **Mostrar somente arquivos no projeto**
 
   Configura o **Gerenciador de Soluções** para exibir apenas os arquivos no projeto.

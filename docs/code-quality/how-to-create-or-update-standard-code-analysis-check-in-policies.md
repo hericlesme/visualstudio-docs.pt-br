@@ -1,5 +1,5 @@
 ---
-title: Como criar ou atualizar políticas de check-in de análise do código padrão
+title: Criar ou atualizar políticas de seleção da análise de código padrão
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 
@@ -34,7 +34,7 @@ Políticas do check-in de análise de código são definidas nas configurações
 
 Depois de especificar uma política de check-in para código gerenciado, os membros da equipe podem sincronizar suas configurações de análise de código para projetos de código para as configurações de política de projeto de equipe.
 
-### <a name="to-open-the-check-in-policy-editor"></a>Para abrir o editor de política de check-in
+## <a name="to-open-the-check-in-policy-editor"></a>Para abrir o editor de política de check-in
 
 1. No Team Explorer, clique com botão direito no nome do projeto de equipe, aponte para **as configurações de projeto de equipe**e, em seguida, clique em **controle de origem**.
 
@@ -46,28 +46,28 @@ Depois de especificar uma política de check-in para código gerenciado, os memb
 
     - Clique duas vezes em existente **análise de código** item o **tipo de política** lista para alterar a política.
 
-### <a name="to-set-policy-options"></a>Para definir opções de política
+## <a name="to-set-policy-options"></a>Para definir opções de política
 
 Marque ou desmarque as opções a seguir:
 
-    |Opção|Descrição|
-    |------------|-----------------|
-    |**Impor check-in para conter somente os arquivos que fazem parte da solução atual.**|Análise de código pode executar somente em arquivos especificados em arquivos de configuração de solução e projeto. Essa política garante que todo o código que faz parte de uma solução é analisado.|
-    |**Impor análise de código C/C++ (/Analyze)**|Requer que todos os projetos C ou C++ ser criado com a / opção analyze do compilador para executar a análise de código antes que eles podem fazer check-in.|
-    |**Impor análise de código para código gerenciado**|Requer que todos os projetos gerenciados executar análise de código e compilar antes que eles podem fazer check-in.|
+|Opção|Descrição|
+|------------|-----------------|
+|**Impor check-in para conter somente os arquivos que fazem parte da solução atual.**|Análise de código pode executar somente em arquivos especificados em arquivos de configuração de solução e projeto. Essa política garante que todo o código que faz parte de uma solução é analisado.|
+|**Impor análise de código C/C++ (/Analyze)**|Requer que todos os projetos C ou C++ ser criado com a / opção analyze do compilador para executar a análise de código antes que eles podem fazer check-in.|
+|**Impor análise de código para código gerenciado**|Requer que todos os projetos gerenciados executar análise de código e compilar antes que eles podem fazer check-in.|
 
-### <a name="to-specify-a-managed-rule-set"></a>Para especificar um conjunto de regras gerenciado
+## <a name="to-specify-a-managed-rule-set"></a>Para especificar um conjunto de regras gerenciado
 
-- Do **executar esse conjunto de regras** lista, use um dos seguintes métodos:
+Do **executar esse conjunto de regras** lista, use um dos seguintes métodos:
 
-    - Selecione um conjunto de regras padrão do Microsoft.
+- Selecione um conjunto de regras padrão do Microsoft.
 
-    - Para selecionar um conjunto de regras personalizadas, clique em  **\<Selecionar conjunto de regras de controle de origem... >** e, em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:
+- Selecione uma regra personalizada definida clicando  **\<Selecionar conjunto de regras de controle de origem... >**. Em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:
 
-    - **$/** `TeamProjectName` **/** `VersionControlPath`
+   **$/** `TeamProjectName` **/** `VersionControlPath`
 
-    - Para obter mais informações sobre como criar e implementar uma regra de política de check-in personalizado definido, consulte [políticas de Check-in implementando personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Para obter mais informações sobre como criar e implementar uma regra de política de check-in personalizado definido, consulte [políticas de Check-in implementar personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Consulte também
 
-[Criando e usando políticas de check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Criar e usar as políticas do check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

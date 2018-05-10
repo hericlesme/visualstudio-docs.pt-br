@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Adicionar referências usando o NuGet versus um SDK de Extensão
 
@@ -50,7 +50,7 @@ A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os r
 |O mecanismo se integra aos manifestos do aplicativo.|S|O SDK deve aprovar conceitos específicos do [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] para que o empacotamento e F5 funcionem corretamente com os SDKs disponíveis no [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)].|S|O conteúdo do NuGet se torna parte do projeto. Nenhuma consideração F5 especial é necessária.|
 |O mecanismo implanta os arquivos de não referência (por exemplo, implante a estrutura de testes na qual os testes de aplicativos [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] serão executados).|S|Se você soltar os arquivos na pasta *\redist*, eles serão implantados automaticamente.|S||
 |O mecanismo adiciona automaticamente os SDKs da plataforma no IDE do Visual Studio.|S|Se você soltar o SDK do [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou do Windows Phone em um local específico com um layout específico, o SDK será automaticamente integrado a todos os recursos do Visual Studio.|N||
-|O mecanismo dá suporte a um computador de desenvolvedor limpo. (Ou seja, não é necessária nenhuma instalação e a simples recuperação do controle do código-fonte funcionará.)|N|Como você referencia um SDK, é necessário verificar fazer check-in na sua solução e no SDK separadamente. É possível fazer check-in do SDK nos dois locais de não Registro padrão dos quais o MSBuild itera SDKs (para obter detalhes, consulte [Creating a Software Development Kit (Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md))). Como alternativa, se um local personalizado for composto dos SDKs, será possível especificar o código a seguir no arquivo de projeto:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Em seguida, faça check-in dos SDKs nesse local.|S|É possível fazer check-out da solução e o Visual Studio reconhece imediatamente e age nos arquivos.|
+|O mecanismo dá suporte a um computador de desenvolvedor limpo. (Ou seja, não é necessária nenhuma instalação e a simples recuperação do controle do código-fonte funcionará.)|N|Como você referencia um SDK, é necessário verificar fazer check-in na sua solução e no SDK separadamente. É possível fazer check-in do SDK nos dois locais de não Registro padrão dos quais o MSBuild itera SDKs (para obter detalhes, consulte [Creating a Software Development Kit (Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md))). Como alternativa, se um local personalizado for composto dos SDKs, será possível especificar o código a seguir no arquivo de projeto:<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> Em seguida, faça check-in dos SDKs nesse local.|S|É possível fazer check-out da solução e o Visual Studio reconhece imediatamente e age nos arquivos.|
 |É possível ingressar a uma grande comunidade existente de autores de pacotes.|N/D|A comunidade é nova.|S||
 |É possível ingressar em uma grande comunidade existente de consumidores de pacotes.|N/D|A comunidade é nova.|S||
 |É possível ingressar em um ecossistema de parceiros (galerias personalizadas, repositórios e assim por diante).|N/D|Os repositórios disponíveis incluem Visual Studio Marketplace, o Centro de Download da Microsoft e a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|S||

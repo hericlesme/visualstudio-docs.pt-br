@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93d3e4323638d40f003247a2c5bd35c812cc1c69
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3373f1e1a23ae0373a9c49a39a924398ebe143e0
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 Registra toda a atividade no arquivo de log para resolução de problemas. Este arquivo aparece depois de você chamar `devenv /log` pelo menos uma vez. Por padrão, o arquivo de log é:
@@ -29,7 +29,7 @@ Registra toda a atividade no arquivo de log para resolução de problemas. Este 
 
 ## <a name="syntax"></a>Sintaxe
 
-```
+```cmd
 Devenv /log Path\NameOfLogFile
 ```
 

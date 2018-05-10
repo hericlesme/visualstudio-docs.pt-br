@@ -1,23 +1,22 @@
 ---
-title: Como relatar um problema com o Visual Studio 2017 | Microsoft Docs
+title: Como relatar um problema com o Visual Studio 2017
+description: Saiba como relatar um problema com o Visual Studio 2017 para a Microsoft para que possamos diagnosticá-lo e corrigi-lo.
 ms.custom: ''
 ms.date: 03/11/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 809f9121be867785e6d92966ccf92b012740daab
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Como relatar um problema com o Visual Studio 2017
 
@@ -31,7 +30,7 @@ Se você ainda não fez isso, entre no Visual Studio antes de relatar um problem
 2. Se você não estiver conectado, selecione **Entrar**; essa opção está do lado direito da ferramenta, conforme mostrado na captura de tela a seguir.
 3. Siga as instruções na tela para se conectar.
 
- ![Conectar para relatar um problema](../ide/media/sign-in-new-ux.png "Conectar para relatar um problema")  
+ ![Conectar para relatar um problema](../ide/media/sign-in-new-ux.png "Conectar para relatar um problema")
 
 ## Pesquisar e votar em problemas semelhantes <a name="search_and_vote"></a>
 
@@ -73,7 +72,7 @@ Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar 
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Relatar um problema ao usar o Instalador do Visual Studio
 
-Se não for possível concluir a instalação do Visual Studio ou acessar a ferramenta de comentários dentro do Visual Studio, você poderá relatar um problema usando o Instalador do Visual Studio. Para fazer isso, escolha o ícone de comentários no canto superior direito do Instalador do Visual Studio.
+Se não for possível concluir a instalação do Visual Studio ou acessar a ferramenta de comentários dentro do Visual Studio, você poderá relatar um problema usando o **Instalador do Visual Studio**. Para fazer isso, escolha o ícone de comentários no canto superior direito do **Instalador do Visual Studio**.
 
  ![É possível pressionar Tab até acessar o botão Fornecer Comentários no Instalador do Visual Studio para abrir a ferramenta de comentários](../install/media/report-a-problem.png)
 

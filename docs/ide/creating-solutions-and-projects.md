@@ -1,12 +1,9 @@
 ---
-title: "Criar soluções e projetos no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Criar soluções e projetos no Visual Studio
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-solutions-and-projects"></a>Criar soluções e projetos
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 ![Hierarquia de projeto/solução](./media/vside-proj-soln.png)
 
-Você pode exibir suas soluções e projetos em uma janela de ferramentas chamada **Gerenciador de Soluções**. A captura de tela a seguir mostra uma solução de exemplo no Gerenciador de Soluções (BikeSharing.Xamarin-UWP) que contém dois projetos: BikeSharing.Clients.Core e BikeSharing.Clients.Windows. Cada projeto contém vários arquivos, pastas e referências. O nome do projeto em negrito é o *projeto de inicialização*, ou seja, o projeto que é iniciado quando você executa o aplicativo. Você pode especificar qual projeto é o projeto de inicialização.
+Você pode exibir suas soluções e projetos em uma janela de ferramentas chamada **Gerenciador de Soluções**. A captura de tela a seguir mostra uma solução de exemplo no **Gerenciador de Soluções** (**BikeSharing.Xamarin-UWP**) que contém dois projetos: **BikeSharing.Clients.Core** e **BikeSharing.Clients.Windows**. Cada projeto contém vários arquivos, pastas e referências. O nome do projeto em negrito é o *projeto de inicialização*, ou seja, o projeto que é iniciado quando você executa o aplicativo. Você pode especificar qual projeto é o projeto de inicialização.
 
 ![Gerenciador de Soluções com projetos](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ Dito isso, soluções e projetos não são necessários para desenvolver aplicat
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Para criar um projeto com base em um modelo de projeto
 
-1. Há várias maneiras de criar um novo projeto no Visual Studio. Na Página Inicial, digite o nome de um modelo de projeto na caixa **Pesquisar modelos de projeto** ou escolha o link **Criar novo projeto** para abrir a caixa de diálogo **Novo Projeto**. Você também pode escolher **Arquivo** > **Novo** > **Projeto...** na barra de menus ou escolher o botão **Novo Projeto** na barra de ferramentas.
+1. Há várias maneiras de criar um novo projeto no Visual Studio. Na **Página Inicial**, digite o nome de um modelo de projeto na caixa **Pesquisar modelos de projeto** ou escolha o link **Criar novo projeto** para abrir a caixa de diálogo **Novo Projeto**. Você também pode escolher **Arquivo** > **Novo** > **Projeto...** na barra de menus ou escolher o botão **Novo Projeto** na barra de ferramentas.
 
   ![Página inicial](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ Dito isso, soluções e projetos não são necessários para desenvolver aplicat
 
 1. Escolha o botão **OK** para criar a solução e o projeto.
 
-1. Se você quiser adicionar mais um projeto à solução, escolha o nó da solução no Gerenciador de Soluções e, na barra de menus, escolha **Projeto** > **Adicionar novo item**.
+1. Se você quiser adicionar mais um projeto à solução, escolha o nó da solução no **Gerenciador de Soluções** e, na barra de menus, escolha **Projeto** > **Adicionar novo item**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Criar um projeto com base em arquivos de código existentes
 
@@ -122,10 +119,10 @@ Para criar um projeto temporário, primeiro acesse **Ferramentas** > **Opções*
 
 ## <a name="delete-a-solution-project-or-item"></a>Excluir uma solução, um projeto ou um item
 
-Você pode excluir as soluções e seu conteúdo permanentemente, mas não usando o IDE do Visual Studio. A exclusão de itens dentro do Visual Studio somente os remove da solução ou do projeto atual. Para excluir permanentemente do sistema uma solução ou outro componente, use o Explorador de Arquivos para excluir a pasta que contém os arquivos de solução .sln e .suo. No entanto, antes de excluir permanentemente uma solução, é recomendável que você faça backup de todos os projetos ou arquivos, caso sejam necessários novamente.
+Você pode excluir as soluções e seu conteúdo permanentemente, mas não usando o IDE do Visual Studio. A exclusão de itens dentro do Visual Studio somente os remove da solução ou do projeto atual. Para excluir permanentemente do sistema uma solução ou outro componente, use o Explorador de Arquivos para excluir a pasta que contém os arquivos de solução *.sln* e *.suo*. No entanto, antes de excluir permanentemente uma solução, é recomendável que você faça backup de todos os projetos ou arquivos, caso sejam necessários novamente.
 
 > [!NOTE]
-> O arquivo .suo é um arquivo oculto que não é exibido com as configurações padrão do Explorador de Arquivos. Para mostrar arquivos ocultos, no menu **Exibir** do Explorador de Arquivos, marque a caixa de seleção **Itens Ocultos**.
+> O arquivo *.suo* é um arquivo oculto que não é exibido com as configurações padrão do Explorador de Arquivos. Para mostrar arquivos ocultos, no menu **Exibir** do Explorador de Arquivos, marque a caixa de seleção **Itens Ocultos**.
 
 ### <a name="to-permanently-delete-a-solution"></a>Para excluir permanentemente uma solução
 
@@ -137,7 +134,7 @@ Você pode excluir as soluções e seu conteúdo permanentemente, mas não usand
 
 ## <a name="see-also"></a>Consulte também
 
-[Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)  
-[Repositórios de software livre da Microsoft no GitHub](https://github.com/Microsoft)  
-[Exemplos do Visual Studio](../ide/visual-studio-samples.md)  
-[Exemplos de código para desenvolvedores](https://code.msdn.microsoft.com/)
+- [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)
+- [Repositórios de software livre da Microsoft no GitHub](https://github.com/Microsoft)
+- [Exemplos do Visual Studio](../ide/visual-studio-samples.md)
+- [Exemplos de código para desenvolvedores](https://code.msdn.microsoft.com/)

@@ -12,21 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 994a1b0677930128d36c4a3218f0231879b7a43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 4b7df8a53cafda94922cc7b296f0ff52868335f5
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Instruções passo a passo: conectando um host a um processador de diretriz gerado
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Passo a passo: Conecte-se um Host para um processador de diretiva gerado
+
 Você pode escrever seu próprio host que processa os modelos de texto. Um host personalizado básico é demonstrado em [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Você pode estender o host para adicionar funções, como a geração de vários arquivos de saída.
 
- Neste passo a passo, você expandir seu host personalizado para que ele oferece suporte a modelos de texto que chamam processadores de diretivas. Quando você define uma linguagem específica de domínio, ele gera um *processador de diretiva* para o modelo de domínio. O processador de diretiva facilita para os usuários criem modelos que acessar o modelo, reduzindo a necessidade de escrever o assembly e importar diretivas nos modelos.
+Neste passo a passo, você expandir seu host personalizado para que ele oferece suporte a modelos de texto que chamam processadores de diretivas. Quando você define uma linguagem específica de domínio, ele gera um *processador de diretiva* para o modelo de domínio. O processador de diretiva facilita para os usuários criem modelos que acessar o modelo, reduzindo a necessidade de escrever o assembly e importar diretivas nos modelos.
 
-> [!WARNING]
->  Este passo a passo se baseia no [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Execute primeiro esse passo a passo.
+> [!NOTE]
+> Este passo a passo se baseia no [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Execute primeiro esse passo a passo.
 
- Esta explicação passo a passo inclui as seguintes tarefas:
+Esta explicação passo a passo inclui as seguintes tarefas:
 
 -   Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para gerar um processador de diretiva com base em um modelo de domínio.
 
@@ -35,7 +39,8 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 -   Testando o host personalizado com o processador de diretiva gerado.
 
 ## <a name="prerequisites"></a>Pré-requisitos
- Para definir uma DSL, é necessário ter instalados os seguintes componentes:
+
+Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 |||
 |-|-|
@@ -45,12 +50,11 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- Além disso, você deve ter a transformação de modelo de texto personalizado criada no [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Além disso, você deve ter a transformação de modelo de texto personalizado criada no [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Usando ferramentas de linguagem específica de domínio para gerar um processador de diretiva
- Neste passo a passo, você pode usar o Assistente de Designer de linguagem específica de domínio para criar uma linguagem específica de domínio para a solução DSLMinimalTest.
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Use as ferramentas de linguagem específica de domínio para gerar um processador de diretiva
 
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Usar ferramentas de linguagem específica de domínio para gerar um processador de diretiva com base em um modelo de domínio
+Neste passo a passo, você pode usar o Assistente de Designer de linguagem específica de domínio para criar uma linguagem específica de domínio para a solução DSLMinimalTest.
 
 1.  Crie uma solução de linguagem específica de domínio que tem as seguintes características:
 
@@ -62,12 +66,12 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 
     -   Nome da empresa: Fabrikam
 
-     Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Para obter mais informações sobre como criar uma solução de linguagem específica de domínio, consulte [como: criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2.  No menu **Compilar**, clique em **Compilar Solução**.
 
     > [!IMPORTANT]
-    >  Esta etapa gera o processador de diretiva e adiciona a chave para ele no registro.
+    > Esta etapa gera o processador de diretiva e adiciona a chave para ele no registro.
 
 3.  No menu **Depuração**, clique em **Iniciar Depuração**.
 
@@ -81,10 +85,9 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 
 6.  Salve a solução e, em seguida, feche o Designer de linguagem específica de domínio.
 
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Conectar um Host de modelo de texto personalizado a um processador de diretiva
- Depois de gerar o processador de diretiva, você conectar o processador de diretiva e o host de modelo de texto personalizado que você criou na [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Conectar a um Host de modelo de texto personalizado para um processador de diretiva
 
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Para se conectar a um host de modelo de texto personalizado para o processador de diretiva gerado
+Depois de gerar o processador de diretiva, você conectar o processador de diretiva e o host de modelo de texto personalizado que você criou na [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 1.  Abra a solução CustomHost.
 
@@ -119,7 +122,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 5.  Localize o código para a propriedade `StandardAssemblyReferences`e substituí-lo com o código a seguir:
 
     > [!NOTE]
-    >  Nesta etapa, você deve adicionar referências aos assemblies que são exigidos pelo processador de diretiva gerado que darão suporte a seu host.
+    > Nesta etapa, você deve adicionar referências aos assemblies que são exigidos pelo processador de diretiva gerado que darão suporte a seu host.
 
     ```csharp
     //the host can provide standard assembly references
@@ -155,7 +158,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 6.  Localize o código para a função `ResolveDirectiveProcessor`e substituí-lo com o código a seguir:
 
     > [!IMPORTANT]
-    >  Este código contém referências embutido com o nome do processador de diretiva gerado para o qual você deseja se conectar. Você pode facilmente fazer isso mais gerais, caso em que ele procura todos os processadores de diretiva listado no registro e tenta encontrar uma correspondência. Nesse caso, o host trabalharia com qualquer processador de diretiva gerado.
+    > Este código contém referências embutido com o nome do processador de diretiva gerado para o qual você deseja se conectar. Você pode facilmente fazer isso mais gerais, caso em que ele procura todos os processadores de diretiva listado no registro e tenta encontrar uma correspondência. Nesse caso, o host trabalharia com qualquer processador de diretiva gerado.
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -230,17 +233,18 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 
 8.  No menu **Compilar**, clique em **Compilar Solução**.
 
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>O Host personalizado com o processador de diretiva de teste
- Para testar o host de modelo de texto personalizado, primeiro você deve escrever um modelo de texto que chama o processador de diretiva gerado. Em seguida, executar o host personalizado, passá-lo para o nome do modelo de texto e verificar que a diretiva é processada corretamente.
+## <a name="test-the-custom-host-with-the-directive-processor"></a>O Host personalizado com o processador de diretiva de teste
 
-#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para criar um modelo de texto para testar o host personalizado
+Para testar o host de modelo de texto personalizado, primeiro você deve escrever um modelo de texto que chama o processador de diretiva gerado. Em seguida, executar o host personalizado, passá-lo para o nome do modelo de texto e verificar que a diretiva é processada corretamente.
+
+### <a name="create-a-text-template-to-test-the-custom-host"></a>Criar um modelo de texto para testar o host personalizado
 
 1.  Criar um arquivo de texto e nomeie- `TestTemplateWithDP.tt`. Você pode usar qualquer editor de texto, como o bloco de notas, para criar o arquivo.
 
 2.  Adicione o seguinte ao arquivo de texto:
 
     > [!NOTE]
-    >  A linguagem de programação do modelo de texto não precisa corresponder ao host personalizado.
+    > A linguagem de programação do modelo de texto não precisa corresponder ao host personalizado.
 
     ```csharp
     Text Template Host Test
@@ -313,7 +317,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 
 4.  Salve e feche o arquivo.
 
-#### <a name="to-test-the-custom-host"></a>Para testar o host personalizado
+### <a name="test-the-custom-host"></a>Testar o host personalizado
 
 1.  Abra uma janela do Prompt de Comando.
 
@@ -324,7 +328,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    >  Em vez de digitar o endereço, você pode navegar até o arquivo CustomHost.exe em **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.
+    > Em vez de digitar o endereço, você pode navegar até o arquivo CustomHost.exe em **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.
 
 3.  Digite um espaço.
 
@@ -335,7 +339,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    >  Em vez de digitar o endereço, você pode navegar até o arquivo TestTemplateWithDP.txt em **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.
+    > Em vez de digitar o endereço, você pode navegar até o arquivo TestTemplateWithDP.txt em **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.
 
      O aplicativo de host personalizado é executado e inicia o processo de transformação de modelo de texto.
 

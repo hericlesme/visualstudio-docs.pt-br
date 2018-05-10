@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3d0a9f8f730808cd8179599669342b530f921a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8f8a310832f0691b4bc4056baddeb1fbbad78f8
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: Usando uma tecla de atalho com uma extensão de Editor
 Você pode responder a teclas de atalho em sua extensão de editor. A instrução a seguir mostra como adicionar um adorno de exibição para uma exibição de texto usando uma tecla de atalho. Este passo a passo é baseada no modelo de editor de adorno de visor, e permite que você adicione o adorno usando o caractere +.  
@@ -46,8 +46,21 @@ Você pode responder a teclas de atalho em sua extensão de editor. A instruçã
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
+
+No arquivo de classe KeyBindingTestTextViewCreationListener.cs, alterar o nome de AdornmentLayer de **KeyBindingTest** para **PurpleCornerBox**:
   
-## <a name="defining-the-command-filter"></a>Definindo o filtro de comando  
+    ```csharp  
+    [Export(typeof(AdornmentLayerDefinition))]  
+    [Name("PurpleCornerBox")]  
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+    public AdornmentLayerDefinition editorAdornmentLayer;  
+    ```  
+
+## <a name="handling-typechar-command"></a>Tratar o comando TIPOCARAC
+Antes do Visual Studio 2017 versão 15.6 a única maneira de lidar com os comandos em uma extensão de editor foi implementando um <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> com base em filtros de comando. Visual Studio 2017 versão 15.6 introduziu uma abordagem simplificada moderna com base em manipuladores de comandos do editor. As próximas duas seções demonstram como lidar com um comando usando tanto a abordagem moderna e herdada.
+
+## <a name="defining-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Definindo o filtro de comando (antes do Visual Studio 2017 versão 15.6)
+
  O filtro de comando é uma implementação de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, que trata o comando instanciando o adorno.  
   
 1.  Adicione um arquivo de classe e denomine- `KeyBindingCommandFilter`.  
@@ -90,7 +103,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 6.  Implementar o `QueryStatus()` método da seguinte maneira.  
   
-    ```vb  
+    ```csharp  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
     {  
         return m_nextTarget.QueryStatus(ref pguidCmdGroup, cCmds, prgCmds, pCmdText);  
@@ -121,7 +134,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-## <a name="adding-the-command-filter"></a>Adicionar o filtro de comando  
+## <a name="adding-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Adicionar o filtro de comando (antes do Visual Studio 2017 versão 15.6)
  O provedor de adorno deve adicionar um filtro de comando para a exibição de texto. Neste exemplo, o provedor implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> para escutar eventos de criação de exibição de texto. Este provedor de adorno também exporta a camada de adorno, que define a ordem Z do adorno.  
   
 1.  No arquivo KeyBindingTestTextViewCreationListener, adicione o seguinte usando instruções:  
@@ -139,16 +152,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  Na definição de camada de adorno, alterar o nome de AdornmentLayer de **KeyBindingTest** para **PurpleCornerBox**.  
-  
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
-  
-3.  Para obter o adaptador de exibição de texto, você deve importar o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+2.  Para obter o adaptador de exibição de texto, você deve importar o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +160,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Alterar o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que ele adiciona o `KeyBindingCommandFilter`.  
+3.  Alterar o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que ele adiciona o `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +169,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  O `AddCommandFilter` manipulador obtém o adaptador de exibição de texto e adiciona o filtro de comando.  
+4.  O `AddCommandFilter` manipulador obtém o adaptador de exibição de texto e adiciona o filtro de comando.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -188,11 +192,90 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
         }  
     }  
     ```  
+
+## <a name="implement-a-command-handler-starting-in-visual-studio-2017-version-156"></a>Implementar um manipulador de comando (começando na versão 15.6 2017 de Visual Studio)
+
+Primeiro, atualize as referências do projeto Nuget para fazer referência o API de editor mais recente:
+
+1. Clique com botão direito no projeto e selecione **gerenciar pacotes Nuget**.
+
+2. Em **Nuget Package Manager**, selecione o **atualizações** guia, selecione o **selecionar todos os pacotes** caixa de seleção e, em seguida, selecione **atualização**.
+
+O manipulador de comando é uma implementação de <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, que trata o comando instanciando o adorno.  
   
+1.  Adicione um arquivo de classe e denomine- `KeyBindingCommandHandler`.  
+  
+2.  Adicione o seguinte usando instruções.  
+  
+    ```csharp  
+    using Microsoft.VisualStudio.Commanding;
+    using Microsoft.VisualStudio.Text.Editor;
+    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+    using Microsoft.VisualStudio.Utilities;
+    using System.ComponentModel.Composition;   
+    ```  
+  
+3.  A classe denominada KeyBindingCommandHandler deve herdar de `ICommandHandler<TypeCharCommandArgs>`e exportá-lo como <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+  
+    ```csharp  
+    [Export(typeof(ICommandHandler))]
+    [ContentType("text")]
+    [Name("KeyBindingTest")]
+    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+    ```  
+  
+4.  Adicione um nome para exibição do manipulador de comando:  
+  
+    ```csharp  
+    public string DisplayName => "KeyBindingTest";
+    ```  
+    
+5.  Implementar o `GetCommandState()` método da seguinte maneira. Porque o manipulador de comandos lida com o comando TIPOCARAC do núcleo editor, poderá delegar habilitando o comando para o editor de núcleo.
+  
+    ```csharp  
+    public CommandState GetCommandState(TypeCharCommandArgs args)
+    {
+        return CommandState.Unspecified;
+    } 
+    ```  
+  
+6.  Implementar o `ExecuteCommand()` método para que ele adiciona uma caixa roxa para o modo de exibição se um + caractere é digitado. 
+  
+    ```csharp  
+    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+    {
+        if (args.TypedChar == '+')
+        {
+            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+                "KeyBindingTextAdorned", out bool adorned) && adorned;
+            if (!alreadyAdorned)
+            {
+                new PurpleCornerBox((IWpfTextView)args.TextView);
+                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+            }
+        }
+
+        return false;
+    }
+    ```  
+ 7. Copiar a definição de camada de adorno de arquivo KeyBindingTestTextViewCreationListener.cs para o KeyBindingCommandHandler.cs e, em seguida, exclua o arquivo de KeyBindingTestTextViewCreationListener.cs:
+ 
+    ```csharp  
+    /// <summary>
+    /// Defines the adornment layer for the adornment. This layer is ordered
+    /// after the selection layer in the Z-order.
+    /// </summary>
+    [Export(typeof(AdornmentLayerDefinition))]
+    [Name("PurpleCornerBox")]
+    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+    private AdornmentLayerDefinition editorAdornmentLayer;    
+    ```  
+
 ## <a name="making-the-adornment-appear-on-every-line"></a>Tornando o adorno aparecem em cada linha  
- O adorno original é exibido em cada caractere 'a' em um arquivo de texto. Agora que alteramos o código para adicionar o adorno em resposta ao caractere '+', ele adiciona o adorno somente na linha em que a '+' é digitado. Podemos alterar o código de adornos para que o adorno mais uma vez é exibido em cada 'a'.  
+
+O adorno original é exibido em cada caractere 'a' em um arquivo de texto. Agora que alteramos o código para adicionar o adorno em resposta ao caractere '+', ele adiciona o adorno somente na linha em que a '+' é digitado. Podemos alterar o código de adornos para que o adorno mais uma vez é exibido em cada 'a'.  
   
- No arquivo KeyBindingTest.cs, altere o método CreateVisuals() para iterar por todas as linhas no modo de exibição para decorar o caractere 'a'.  
+No arquivo KeyBindingTest.cs, altere o método CreateVisuals() para iterar por todas as linhas no modo de exibição para decorar o caractere 'a'.  
   
 ```csharp  
 private void CreateVisuals(ITextViewLine line)  

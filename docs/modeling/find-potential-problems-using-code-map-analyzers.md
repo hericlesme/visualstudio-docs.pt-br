@@ -15,13 +15,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 67aa9353f02af88b595f5d973c600683f77682fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e300603280b6c0b57d7397699786f2d3c6ff8317
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Encontrar possíveis problemas usando analisadores de mapa de códigos
+
 Execute analisadores em mapas de código para ajudá-lo a identificar o código que pode ser excessivamente complexas ou que pode ser aperfeiçoado. Por exemplo, você pode usar esses analisadores:
 
 |**Para localizar o código que tem**|**Examine essas áreas para ver se**|
@@ -32,15 +33,15 @@ Execute analisadores em mapas de código para ajudá-lo a identificar o código 
 
 ## <a name="analyze-code-maps"></a>Analisar o mapa de códigos
 
-1.  Na barra de ferramentas do mapa, escolha **Layout**, **analisadores**e, em seguida, o analisador que você deseja executar:
+Na barra de ferramentas do mapa, escolha **Layout** > **analisadores**e, em seguida, o analisador que você deseja executar:
 
-    |**Analisador**|**Para identificar nós que**|
-    |------------------|--------------------------------|
-    |**Analisador de referências circulares**|Tem dependências circulares entre si. **Observação:** dependências circulares que estão no **genéricos** grupo não são mostrados no mapa quando você expande o grupo.|
-    |**Localizar o analisador de Hubs**|Estão na 25% principais de nós conectados altamente<br /><br /> **Para ocultar todos os outros nós no mapa**<br /><br /> -Abra o menu de atalho para o mapa, escolha **avançado**, **selecione**, **ocultar desmarcado**.<br />     O mapa oculta os nós não selecionados, e o Analisador identifica novos nós como hubs.|
-    |**Analisador de nós não referenciada**|Não tem referências de todos os outros nós. **Cuidado:** Verifique se cada um desses casos antes supondo que o código não é usado. Não foi encontradas determinadas dependências como dependências XAML e tempo de execução estaticamente no código.|
+|**Analisador**|**Para identificar nós que**|
+|------------------|--------------------------------|
+|**Analisador de referências circulares**|Tem dependências circulares entre si. **Observação:** dependências circulares que estão no **genéricos** grupo não são mostrados no mapa quando você expande o grupo.|
+|**Localizar o analisador de Hubs**|Estão na 25% principais de nós conectados altamente<br /><br /> **Para ocultar todos os outros nós no mapa**<br /><br /> -Abra o menu de atalho para o mapa, escolha **avançado**, **selecione**, **ocultar desmarcado**.<br />     O mapa oculta os nós não selecionados, e o Analisador identifica novos nós como hubs.|
+|**Analisador de nós não referenciada**|Não tem referências de todos os outros nós. **Cuidado:** Verifique se cada um desses casos antes supondo que o código não é usado. Não foi encontradas determinadas dependências como dependências XAML e tempo de execução estaticamente no código.|
 
- Analisadores de mapa de código continue em execução depois que você aplicá-los. Se você alterar o mapa, analisadores aplicados serão automaticamente reprocessar o mapa atualizado. Para interromper a execução de um analisador, na barra de ferramentas do mapa, escolha **Layout**, **analisadores**. Desative o analisador selecionado.
+Analisadores de mapa de código continue em execução depois que você aplicá-los. Se você alterar o mapa, analisadores aplicados serão automaticamente reprocessar o mapa atualizado. Para interromper a execução de um analisador, na barra de ferramentas do mapa, escolha **Layout** > **analisadores**. Desative o analisador selecionado.
 
 > [!TIP]
 > Se você tiver um mapa muito grande, executar um analisador pode causar um limite de exceção de memória. Se isso ocorrer, edite o mapa para reduzir o escopo ou gerar uma menor e, em seguida, executar o analisador.

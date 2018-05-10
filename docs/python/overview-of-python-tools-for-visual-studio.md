@@ -1,15 +1,9 @@
 ---
-title: Visão geral do suporte do Python no Visual Studio no Windows | Microsoft Docs
-description: Resumo dos recursos do Visual Studio, que fazem dele o melhor IDE do Python no Windows [também conhecido como PTVS (Ferramentas Python para Visual Studio)]
-ms.custom: ''
+title: Visão geral do suporte para Python no Visual Studio no Windows
+description: Resumo dos recursos do Python no Visual Studio, que fazem dele o melhor IDE do Python no Windows (também conhecido como PTVS, Ferramentas Python para Visual Studio).
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -17,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="working-with-python-in-visual-studio-windows"></a>Trabalhar com o Python no Visual Studio (Windows)
+# <a name="working-with-python-in-visual-studio-on-windows"></a>Trabalhando com o Python no Visual Studio no Windows
 
 O Python é uma linguagem de programação popular confiável, flexível, fácil de aprender, de uso gratuito em todos os sistemas operacionais e com suporte em uma sólida comunidade de desenvolvedores e várias bibliotecas gratuitas. O Python permite todas as formas de desenvolvimento, incluindo aplicativos Web, serviços Web, aplicativos de área de trabalho, scripts e computação científica, além de ser usado por diversas universidades, cientistas, desenvolvedores amadores e também desenvolvedores profissionais. Saiba mais sobre a linguagem em [python.org](https://www.python.org) e em [Python para iniciantes](https://www.python.org/about/gettingstarted/).
 
@@ -94,6 +88,7 @@ Modelos de projeto e de item automatizam o processo de configuração de diferen
 Para saber mais:
 
 - Docs: [Gerenciando projetos Python](managing-python-projects-in-visual-studio.md)
+- Documentos: [referência de modelos de item](python-item-templates.md)
 - Docs: [Modelos de projeto Python](managing-python-projects-in-visual-studio.md#project-templates)
 - Docs: [Trabalhando com C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
 - Docs de recursos gerais do Visual Studio: [Modelos de projeto e de item](../ide/creating-project-and-item-templates.md#visual-studio-templates)
@@ -174,13 +169,15 @@ R. Geralmente, o Python é uma linguagem interpretada, com a qual o código é e
 Os recursos do Python podem ser instalados nas seguintes edições do Visual Studio, conforme é descrito no [guia de instalação](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (todas as edições)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (todas as edições)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
+- Visual Studio 2015 (todas as edições)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express para Web, Atualização 2 ou posterior
 - Visual Studio 2013 Express para Área de Trabalho, Atualização 2 ou posterior
 - Visual Studio 2013 (edição Pro ou superior)
 - Visual Studio 2012 (edição Pro ou superior)
 - Visual Studio 2010 SP1 (edição Pro ou superior; o .NET 4.5 é necessário)
+
+O Visual Studio 2015 e versões anteriores estão disponíveis em [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
 
 > [!Important]
 > Somente há suporte e manutenção completos para os recursos na versão mais recente do Visual Studio. Os recursos estão disponíveis nas versões mais antigas, mas não recebem manutenção ativa.
@@ -301,6 +298,6 @@ Os recursos do Python podem ser instalados nas seguintes edições do Visual Stu
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- [Ponte do WFastCGI entre o IIS e o Python](https://pypi.python.org/pypi/wfastcgi) (python.org)
+- [Ponte do WFastCGI entre o IIS e o Python](https://pypi.org/p/wfastcgi) (pypi.org)
 - [Cursos gratuitos do Python na Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Top Python Questions (Principais perguntas sobre Python) na Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

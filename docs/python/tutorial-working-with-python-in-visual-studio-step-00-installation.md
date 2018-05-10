@@ -1,27 +1,21 @@
 ---
-title: Trabalhar com o Python, Etapa 0, Instalação | Microsoft Docs
-description: Etapa 0 (pré-requisitos) de um tutorial básico para trabalhar com Python no Visual Studio, abordando como instalar o suporte a Python no Visual Studio.
-ms.custom: mvc
+title: Trabalhando com Tutorial do Python, etapa 0, instalação
+description: Etapa 0 (pré-requisitos de instalação) de um passo a passo básico sobre trabalhar com o Python no Visual Studio.
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: af6bfa2e1739e60e6c0a5eca625f358b528ebd85
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: bc3f85e776fa7ec45bd157a9cffe99f6ac0b1aac
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalar o suporte ao Python no Visual Studio
 
@@ -44,14 +38,14 @@ ms.lasthandoff: 03/28/2018
 
     ![Testando o Python por meio da janela interativa](media/installation-interactive-test.png)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-step"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Etapa 1: criar um projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- [Identificar manualmente um interpretador Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 - [Instalar o suporte do Python no Visual Studio 2015 e anterior](installing-python-support-in-visual-studio.md).
 - [Locais de instalação](installing-python-support-in-visual-studio.md#install-locations).
 

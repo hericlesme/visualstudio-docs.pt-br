@@ -1,12 +1,9 @@
 ---
-title: Criar modelos da Web para Visual Studio | Microsoft Docs
-ms.custom: 
+title: Criar modelos da Web para Visual Studio
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -14,31 +11,31 @@ helpviewer_keywords:
 - project templates [Visual Studio], Web
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f94823131e568b3f1f254ead9d760210a4c9c1e0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manually-create-web-templates"></a>Como criar manualmente modelos da Web
 
-Criar um modelo de Web é diferente de criar outros tipos de modelos. Como modelos de projeto Web aparecem na caixa de diálogo **Adicionar Novo Site** e itens de projetos da Web são categorizados por linguagem de programação, o arquivo .vstemplate deve especificar o modelo como um modelo de Web e identificar a linguagem de programação.
+Criar um modelo de Web é diferente de criar outros tipos de modelos. Como modelos de projeto Web aparecem na caixa de diálogo **Adicionar Novo Site** e itens de projetos da Web são categorizados por linguagem de programação, o arquivo *vstemplate* deve especificar o modelo como um modelo de Web e identificar a linguagem de programação.
 
 > [!NOTE]
-> Os modelos da Web devem conter um arquivo vazio .webproj que deve ser referenciado no arquivo .vstemplate no atributo `File` do elemento `Project`. Embora os projetos Web não requerem um arquivo de projeto .\*proj, é necessário criar esse arquivo de stub para que o modelo da Web funcione corretamente.
+> Os modelos da Web devem conter um arquivo vazio *.webproj* que deve ser referenciado no arquivo *vstemplate* no atributo `File` do elemento `Project`. Embora os projetos Web não requerem um arquivo de projeto *.proj*, é necessário criar esse arquivo de stub para que o modelo da Web funcione corretamente.
 
-### <a name="to-manually-create-a-web-template"></a>Para criar manualmente um modelo da Web
+## <a name="to-manually-create-a-web-template"></a>Para criar manualmente um modelo da Web
 
 1. Crie um projeto Web.
 
 1. Modifique ou exclua os arquivos no projeto ou adicione novos arquivos ao projeto.
 
-1. Crie um arquivo XML e salve-o com uma extensão de nome de arquivo .vstemplate, no mesmo diretório que o projeto. Não o adicione ao projeto no Visual Studio.
+1. Crie um arquivo XML e salve-o com uma extensão de nome de arquivo *vstemplate*, no mesmo diretório que o projeto. Não o adicione ao projeto no Visual Studio.
 
-1. Edite o arquivo XML .vstemplate para fornecer metadados do modelo de projeto. Para obter mais informações, consulte o [exemplo a seguir](#example).
+1. Edite o arquivo XML *vstemplate* para fornecer metadados do modelo de projeto. Para obter mais informações, consulte o [exemplo a seguir](#example).
 
-1. Localize o elemento `ProjectType` no arquivo .vstemplate e defina o valor de texto para `Web`.
+1. Localize o elemento `ProjectType` no arquivo *vstemplate* e defina o valor de texto para `Web`.
 
 1. Após o elemento `ProjectType`, adicione um elemento `ProjectSubType` e defina o valor de texto como a linguagem de programação do modelo. A linguagem de programação pode ter um dos seguintes valores:
 
@@ -56,13 +53,13 @@ Criar um modelo de Web é diferente de criar outros tipos de modelos. Como model
     </TemplateData>
     ```
 
-1. Selecione os arquivos no modelo (isso inclui o arquivo .vstemplate), clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)**. Os arquivos são compactados em um arquivo .zip.
+1. Selecione os arquivos em seu modelo (isso inclui o arquivo *vstemplate*), clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)**. Os arquivos são compactados em um arquivo *.zip*.
 
-1. Coloque o arquivo de modelo .zip no diretório de modelo de projeto do Visual Studio. Por padrão, esse diretório é %USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates.
+1. Coloque o arquivo de modelo *.zip* no diretório de modelo de projeto do Visual Studio. Por padrão, esse diretório é *%USERPROFILE%\Documents\Visual Studio \<Versão\>\ProjectTemplates*.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um arquivo .vstemplate básico para um modelo de projeto Web:
+O exemplo a seguir mostra um arquivo *vstemplate* básico para um modelo de projeto Web:
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"
@@ -87,5 +84,5 @@ O exemplo a seguir mostra um arquivo .vstemplate básico para um modelo de proje
 
 ## <a name="see-also"></a>Consulte também
 
-[Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)  
-[Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)
+- [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)

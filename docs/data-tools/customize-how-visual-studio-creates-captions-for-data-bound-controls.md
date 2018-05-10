@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
+
 Quando você arrasta itens do [janela fontes de dados](add-new-data-sources.md) para um designer, uma consideração especial entra em jogo: os nomes de coluna nos rótulos de legenda são reformatados em uma cadeia de caracteres mais legível quando duas ou mais palavras são encontradas concatenados. Você pode personalizar a maneira na qual esses rótulos são criados, definindo o **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valores em o **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** chave do registro.
 
 > [!NOTE]
@@ -48,15 +49,15 @@ A tabela a seguir lista as configurações padrão interno para esses valores do
 > [!CAUTION]
 > Você deve ser muito cuidado ao fazer qualquer coisa no Editor do registro. Faça backup do registro antes de editá-lo. Se você usar o Editor do Registro incorretamente, você poderá causar sérios problemas que talvez exijam a reinstalação do sistema operacional. A Microsoft não garante que os problemas causados por você usando o Editor do Registro incorretamente podem ser resolvidos. Use o Editor do Registro por sua conta e risco.
 >
->  O seguinte artigo da Base de conhecimento contém instruções para fazer backup, editar e restaurar o registro: [descrição do registro do Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> O seguinte artigo da Base de conhecimento contém instruções para fazer backup, editar e restaurar o registro: [descrição do registro do Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar o comportamento de legenda inteligente da janela fontes de dados
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificar o comportamento de legenda inteligente da janela fontes de dados
 
 1.  Abra uma janela de comando clicando em **iniciar** e **executar**.
 
 2.  Tipo `regedit` no **executar** caixa de diálogo e clique em **Okey**.
 
-3.  Expanda o **HKEY_CURRENT_USER**, **Software*, **Microsoft**, **VisualStudio** nó.
+3.  Expanda o **HKEY_CURRENT_USER**, **Software**, **Microsoft**, **VisualStudio** nó.
 
 7.  Com o botão direito do **15.0** nó e criar um novo **chave** chamado `Data Designers`.
 
@@ -80,7 +81,7 @@ A tabela a seguir lista as configurações padrão interno para esses valores do
 
     Na próxima vez que você arrasta itens do **fontes de dados** janela, os rótulos de legenda são criados usando os novos valores de registro fornecidos.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Para desativar o recurso de legenda inteligente
+## <a name="turn-off-the-smart-captioning-feature"></a>Desativar o recurso de legenda inteligente
 
 1.  Abra uma janela de comando clicando em **iniciar** e **executar**.
 

@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e4366235973a3e4aa090f5a2c65b346d40067c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 25fe5a4e75ddf349210a936f47d99c94ec70c240
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 Atualiza o arquivo de solução e todos os seus arquivos de projeto, ou o arquivo de projeto especificado, para os formatos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] atuais para esses arquivos.
 
 ## <a name="syntax"></a>Sintaxe
 
-```
+```cmd
 devenv SolutionFile | ProjectFile /upgrade
 ```
 
@@ -48,7 +48,7 @@ devenv SolutionFile | ProjectFile /upgrade
 ## <a name="example"></a>Exemplo
  Este exemplo atualiza um arquivo de solução chamado "MyProject.sln" na pasta padrão para soluções [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-```
+```cmd
 devenv "MyProject.sln" /upgrade
 ```
 

@@ -1,21 +1,19 @@
 ---
-title: "Usar Inspecionar Definição no Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Usar Inspecionar Definição no Visual Studio
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como visualizar e editar códigos usando a janela Inspecionar Definição (Alt+F12)
 
@@ -67,7 +65,7 @@ Quando você começa a editar dentro de uma janela **Espiar Definição**, o arq
 
 1. Clique em **OK** para fechar a caixa de diálogo **Opções**.
 
-   ![Configurando a opção de espiar definição com o clique do mouse](../ide/media/editor_options_peek_view.png)  
+   ![Configurando a opção de espiar definição com o clique do mouse](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Atalhos de teclado para Inspecionar Definição
 
@@ -75,18 +73,18 @@ Você pode usar estes atalhos de teclado com a janela **Inspecionar Definição*
 
 |Funcionalidade|Atalho de teclado|
 |-------------------|:-----------------------:|
-|Abrir a janela de definição|Alt+F12|
-|Fechar a janela de definição|ESC|
-|Promover a janela de definição para uma guia de documento regular|Shift+Alt+Home|
-|Navegar entre janelas de definição|Ctrl+Alt+- e Ctrl+Alt+=|
-|Navegar entre vários resultados|F8 e Shift+F8|
-|Alternar entre a janela do editor de códigos e a janela de definição|Shift+Esc|
+|Abrir a janela de definição|**Alt**+**F12**|
+|Fechar a janela de definição|**Esc**|
+|Promover a janela de definição para uma guia de documento regular|**Shift**+**Alt**+**Home**|
+|Navegar entre janelas de definição|**Ctrl**+**Alt**+**-** e **Ctrl**+**Alt**+**=**|
+|Navegar entre vários resultados|**F8** e **Shift**+**F8**|
+|Alternar entre a janela do editor de códigos e a janela de definição|**Shift**+**Esc**|
 
 > [!NOTE]
 > Você também pode usar os mesmos atalhos de teclado para editar código em uma janela **Inspecionar Definição**, como usa em qualquer outro lugar no Visual Studio.
 
 ## <a name="see-also"></a>Consulte também
 
-[Navegando no código](../ide/navigating-code.md)  
-[Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)  
-[Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md)
+- [Navegar pelo código](../ide/navigating-code.md)
+- [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)
+- [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md)

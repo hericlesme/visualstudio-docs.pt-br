@@ -1,27 +1,21 @@
 ---
-title: Como depurar código do Python | Microsoft Docs
+title: Depurando código em Python
 description: Um passo a passo dos recursos de depuração no Visual Studio, especificamente para código Python, incluindo pontos de interrupção, passo a passo, inspeção dos valores, observação de exceções e depuração na janela interativa.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>Depurando o código do Python
 
@@ -131,7 +125,7 @@ O comando de menu **Depurar > Janelas > Configurações de Exceção** abre uma 
 
 A caixa de seleção de cada exceção controla se o depurador *sempre* interrompe quando é acionado. Marque essa caixa quando desejar interromper com mais frequência para uma exceção específica.
 
-Por padrão, a maioria das exceções interromperá quando um manipulador de exceção não puder ser encontrado no código-fonte. Para alterar esse comportamento, clique com o botão direito do mouse em qualquer exceção e marque ou desmarque a opção **Continuar Quando Não For Tratada no Código do Usuário**. Desmarque essa caixa quando desejar interromper com menos frequência para uma exceção.
+Por padrão, a maioria das exceções interromperá quando um manipulador de exceção não puder ser encontrado no código-fonte. Para alterar esse comportamento, clique com o botão direito do mouse em qualquer exceção e modifique a opção **Continuar Quando Não For Tratada no Código do Usuário**. Desmarque essa caixa quando desejar interromper com menos frequência para uma exceção.
 
 Para configurar uma exceção que não aparece nessa lista, clique no botão **Adicionar** para adicioná-la. O nome deve corresponder ao nome completo da exceção.
 

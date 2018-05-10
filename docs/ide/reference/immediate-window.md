@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27b11142880f71ed653371bd23ae01e51f50b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="immediate-window"></a>Janela imediata
 A janela **Imediato** é usada para depurar e avaliar expressões, executar instruções, imprimir valores de variáveis e assim por diante. Ela permite inserir expressões a serem avaliadas ou executadas pela linguagem de desenvolvimento durante a depuração. Para exibir a janela **Imediato**, abra um projeto para edição, escolha **Windows** no menu **Depurar** e selecione **Imediato**, ou pressione CTRL + ALT + I.
@@ -32,13 +32,13 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
 ## <a name="displaying-the-values-of-variables"></a>Exibindo os valores de variáveis
  Essa janela pode ser particularmente útil ao depurar um aplicativo. Por exemplo, para verificar o valor de uma variável `varA`, você pode usar o [Comando Imprimir](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  O ponto de interrogação (?) é um alias para `Debug.Print`, portanto, esse comando também pode ser escrito:
 
-```
+```cmd
 >? varA
 ```
 
@@ -100,7 +100,7 @@ Não é possível usar a avaliação de expressão em tempo de design em tipos d
 
  Na janela **Imediato**, um sinal de igual (=) é interpretado como um operador de atribuição. Assim, por exemplo, o comando
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
@@ -108,7 +108,7 @@ Não é possível usar a avaliação de expressão em tempo de design em tipos d
 
  Na janela **Comando**, por outro lado, o sinal de igual (=) é interpretado como um operador de comparação. Você não pode usar operações de atribuição na janela **Comando**. Dessa forma, por exemplo, se os valores das variáveis `varA` e `varB` forem diferentes, o comando
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 

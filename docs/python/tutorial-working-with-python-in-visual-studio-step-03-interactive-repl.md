@@ -1,27 +1,21 @@
 ---
-title: Trabalhar com o Python, Etapa 3, a Janela REPL Interativa | Microsoft Docs
-description: Etapa 3 de um tutorial básico para trabalhar com Python no Visual Studio, abordando como a janela REPL Python interativa.
-ms.custom: mvc
+title: Trabalhando com o Tutorial do Python, etapa 3, a janela REPL interativa
+description: Etapa 3 de um passo a passo básico das funcionalidades do Python no Visual Studio, abordando a janela REPL interativa do Python.
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437dc0b64c3fb9b1a92c4651ad66e5cec867d66b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Etapa 3: usando a janela interativa REPL
 
@@ -31,7 +25,7 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
 1. Abra a janela interativa clicando com o botão direito do mouse no ambiente de projeto do Python no Gerenciador de Soluções (como "Python 3.6 (32 bits)", mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir > Outras Janelas > Janelas Interativas do Python** no menu principal do Visual Studio.
 
-1. A janela interativa abre-se abaixo do editor com o prompt padrão `>>>` de REPL do Python. A lista suspensa **Ambiente** permite selecionar um interpretador específico com o qual trabalhar. Se você também quiser deixar a janela interativa maior, arraste o separador entre as duas janelas:
+1. A janela interativa abre-se abaixo do editor com o prompt padrão `>>>` de REPL do Python. A lista suspensa **Ambiente** permite selecionar um intérprete específico com o qual trabalhar. Se você também quiser deixar a janela interativa maior, arraste o separador entre as duas janelas:
 
     ![Janela interativa Python: arrastando para redimensionar](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -95,7 +89,7 @@ A *janela interativa* do Visual Studio para Python oferece uma experiência avan
 
 1. O que você acabou de fazer é usar o ambiente de REPL rápido da janela interativa para trabalhar em detalhes de uma pequena parte de código e, em seguida, adicionou convenientemente esse código ao arquivo de origem do seu projeto. Agora, ao executar o código novamente com CTRL + F5 (ou **Depurar > Iniciar Sem Depurar**), você verá exatamente os resultados desejados.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-step"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Executando o código no depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

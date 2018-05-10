@@ -9,11 +9,11 @@ description: Saiba como os administradores podem atribuir licenças aos assinant
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b035f748f6d99595bc2570b54a4d6413cab72af5
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Atribuindo licenças no portal do administrador de assinaturas do Visual Studio
 
@@ -30,12 +30,14 @@ Se você tiver licenças disponíveis para assinaturas do Visual Studio, será p
 
 3.  Insira as informações do novo assinante nos campos do formulário. Se sua organização estiver usando o Azure Active Directory, este campo terá uma função de pesquisa para localizar pessoas no diretório atual, permitindo selecionar o usuário correto nos resultados da pesquisa. Quando você selecionar a pessoa, o nome, o email de conexão e o email de notificação serão populados automaticamente, como é mostrado abaixo. 
 
-    Se sua organização tiver um email diferente para receber emails do que o usado para entrar, haverá a opção de inseri-lo aqui. Selecione o hiperlink que indica "Email de comunicação diferente do email de conexão?". 
+    Se sua organização não estiver usando o Azure AD (Active Directory), mas tiver um email diferente para receber emails do que o usado para entrar, você terá a opção de inseri-lo aqui. Selecione o hiperlink rotulado "Adicionar um email diferente para receber comunicação". 
 
-    Se desejar que este assinante tenha acesso a downloads de software quando entrar no [Portal de assinaturas do Visual Studio](https:/my.visualstudio.com?wt.mc_id=o~msft~docs), deixe a caixa de seleção Downloads marcada. Se optar por desmarcar esta caixa, o usuário não terá acesso aos downloads de software, mas ainda terá acesso a todos os outros benefícios incluídos na assinatura. Quando terminar, clique em **Adicionar**.
+    **Acesso a downloads:**  
+    Se desejar que este assinante tenha acesso a downloads de software quando entrar no [Portal de assinaturas do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), deixe a alternância de downloads habilitada. Se optar por desabilitar downloads, o usuário não terá acesso aos downloads de software, mas ainda terá acesso a todos os outros benefícios incluídos na assinatura. 
+    
+    Quando terminar de escolher as opções para o assinante, clique em **Adicionar**.
 
     ![Inserir informações do assinante](_img\assign-license-add\add-subscriber-1.png)
-
     ![Inserir informações do assinante](_img\assign-license-add\add-subscriber-2.png)
 
 4.  Depois de adicionar o assinante, um email de atribuição será enviado automaticamente para o novo assinante com outras instruções. É possível enviar o Email de atribuição novamente a qualquer momento selecionando o assinante e clicando no botão **Reenviar** no menu superior.
@@ -43,7 +45,7 @@ Se você tiver licenças disponíveis para assinaturas do Visual Studio, será p
     ![Assinante adicionado](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Atribuições em massa
-1.  Para adicionar vários assinantes de uma vez, navegue até a guia **Assinantes**. Na faixa de opções na parte superior, clique em **Adição em Massa**. 
+1.  Para adicionar vários assinantes de uma vez, navegue até a guia **Gerenciar assinantes**. Na faixa de opções na parte superior, clique em **Adição em Massa**. 
 
     ![Adição em Massa](_img\assign-license-add\bulk-assign-add.png)
 
@@ -51,13 +53,11 @@ Se você tiver licenças disponíveis para assinaturas do Visual Studio, será p
 
     ![Carregar vários assinantes](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  Na planilha do Excel, preencha os campos com as informações dos indivíduos para os quais deseja atribuir assinaturas. Referência é um campo opcional. Se você preencher alguma parte do modelo incorretamente, será exibida uma mensagem de erro descrevendo o problema. Salve o arquivo no disco rígido quando terminar.
+3.  Na planilha do Excel, preencha os campos com as informações dos indivíduos para os quais deseja atribuir assinaturas. Referência é um campo opcional. Se você preencher alguma parte do modelo incorretamente, será exibida uma mensagem de erro descrevendo o problema. Salve o arquivo localmente depois de concluído.
 **Para que não haja problemas com o upload, observe as seguintes práticas recomendadas:**
     - Verifique se nenhum dos campos do formulário contém vírgulas.
     - Remova os espaços antes e depois dos campos do formulário, como nomes de usuários.
-    - Verifique se os nomes dos usuários não contêm espaços extras entre os nomes ou sobrenomes de duas partes (por exemplo, nomes de duas partes como "Maggie May" não devem ser digitados como "Maggie  May", pois o sistema não removerá o espaço extra)
-
-    ![Modelo de adição em massa](_img\assign-license-add\bulk-template.png)
+    - Verifique se os nomes dos usuários não contêm espaços extras entre os nomes ou sobrenomes de duas partes (por exemplo, nomes de duas partes como "Maggie May" não devem ser digitados como "Maggie  May", pois o sistema não removerá o espaço extra) ![Modelo de Adição em Massa](_img\assign-license-add\bulk-template.png)
 
 4.  Retorne ao Portal de Administração de Assinaturas do Visual Studio e na caixa de diálogo Carregar Vários Assinantes, clique em **Procurar**. Navegue até o arquivo do Excel que você salvou e clique em **OK**. O andamento do upload será exibido na tela. 
 

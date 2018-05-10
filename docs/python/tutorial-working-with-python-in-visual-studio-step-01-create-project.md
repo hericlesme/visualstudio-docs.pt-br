@@ -1,27 +1,21 @@
 ---
-title: Trabalhar com o Python, Etapa 1, Criar um projeto | Microsoft Docs
-description: Etapa 1 de um tutorial básico para trabalhar com Python no Visual Studio, descrevendo o tutorial inteiro, os pré-requisitos e percorrendo o processo de criação de um novo projeto em Python.
-ms.custom: mvc
+title: Trabalhando com o Tutorial do Python, Etapa 1, criar um projeto
+description: Visão geral e Etapa 1 de um passo a passo básico das funcionalidades do Python no Visual Studio, incluindo pré-requisitos e a criação de um novo projeto do Python.
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c97af84d02b1dcf6fb60f8dad06bf3bd6975a4e3
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Trabalhando com o Python no Visual Studio
 
@@ -37,9 +31,7 @@ O Visual Studio fornece suporte de linguagem de primeira classe para o Python. E
 - [Etapa 5: instalando pacotes e gerenciando ambientes do Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Etapa 6: trabalhando com Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Pré-requisitos
-
-- Visual Studio 2017 com a carga de trabalho do Python instalada. Consulte a [Etapa 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md) para obter instruções.
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>Etapa 1: criar um novo projeto do Python
 
@@ -75,7 +67,7 @@ Neste tutorial você começará com um projeto simples, contendo um único arqui
 
     Clique com o botão direito do mouse em qualquer nó ou item no Gerenciador de Soluções para acessar um menu de comandos aplicáveis. Por exemplo, o comando **Renomear** permite que você altere o nome de qualquer nó ou item, incluindo o projeto e a solução.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-step"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Escrevendo e executando um código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

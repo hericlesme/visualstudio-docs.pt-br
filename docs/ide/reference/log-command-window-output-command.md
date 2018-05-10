@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16eb42011a15539193e9d69724d299c73e5cecc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2de9b21f55765706a56110aee84959b2003e994e
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="log-command-window-output-command"></a>Comando Saída da Janela Log de Comando
 Copia todas as entradas e saídas da janela **Comando** para um arquivo.
 
 ## <a name="syntax"></a>Sintaxe
 
-```
+```cmd
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
@@ -58,19 +58,19 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="examples"></a>Exemplos
  Este exemplo cria um novo arquivo de log, cmdlog, e inicia o log de comando.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
  Este exemplo interrompe os comandos de log.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
  Este exemplo retoma o log de comandos no arquivo de log usado anteriormente.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /on
 ```
 

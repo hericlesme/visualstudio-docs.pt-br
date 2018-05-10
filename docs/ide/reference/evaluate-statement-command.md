@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2ec882bb2fdc9d0f3b74a0552c85a7b286617c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="evaluate-statement-command"></a>Comando Avaliar Instrução
 Avalia e exibe a instrução fornecida.
 
 ## <a name="syntax"></a>Sintaxe
 
-```
+```cmd
 Debug.EvaluateStatement text
 ```
 
@@ -38,7 +38,7 @@ Debug.EvaluateStatement text
 
  Na janela **Comando**, um sinal de igual (=) é interpretado como um operador de comparação. Dessa forma, por exemplo, se os valores das variáveis `a` e `b` forem diferentes, o comando
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -46,7 +46,7 @@ Debug.EvaluateStatement text
 
  Na janela **Imediato**, por outro lado, um sinal de igual (=) é interpretado como um operador de atribuição. Assim, por exemplo, o comando
 
-```
+```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
@@ -54,7 +54,7 @@ Debug.EvaluateStatement text
 
 ## <a name="example"></a>Exemplo
 
-```
+```cmd
 >Debug.EvaluateStatement(a+b)
 ```
 

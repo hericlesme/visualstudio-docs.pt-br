@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>Janela Comando
 A janela **Comando** é usada para executar comandos ou aliases diretamente no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Você pode executar tanto comandos de menu quanto comandos que não aparecem em nenhum menu. Para exibir a janela **Comando**, escolha **Outras Janelas** no menu **Exibir** e selecione **Janela Comando**.
@@ -30,13 +30,13 @@ A janela **Comando** é usada para executar comandos ou aliases diretamente no I
 ## <a name="displaying-the-values-of-variables"></a>Exibindo os valores de variáveis
  Para verificar o valor de uma variável `varA`, use o [Comando Imprimir](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  O ponto de interrogação (?) é um alias para `Debug.Print`, portanto, esse comando também pode ser escrito:
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ A janela **Comando** é usada para executar comandos ou aliases diretamente no I
 ## <a name="parameters-switches-and-values"></a>Parâmetros, Opções e Valores
  Alguns comandos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] têm argumentos, opções e valores obrigatórios e opcionais. Certas regras se aplicam ao lidar com esses comandos. A seguir está um exemplo de um comando avançado para esclarecer a terminologia.
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Se opções de formato curto forem combinadas em um grupo e receberem um determi
 ## <a name="escape-characters"></a>Caracteres de escape
  Um caractere de acento circunflexo (^) em uma linha de comando significa que o caractere imediatamente a seguir é interpretado literalmente, em vez de como um caractere de controle. Isso pode ser usado para inserir aspas retas ("), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo,
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

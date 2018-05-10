@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Como: implementar projetos aninhados
+
 Quando você cria um tipo de projeto aninhado não há são uma várias etapas adicionais que devem ser implementadas. Um projeto principal tem algumas das responsabilidades mesmo que a solução tem para seus projetos aninhados (filho). O projeto principal é um contêiner de projetos semelhantes a uma solução. Em particular, há vários eventos que devem ser gerados pela solução e pelos projetos pai para criar a hierarquia de projetos aninhados. Esses eventos são descritos no seguinte processo para a criação de projetos aninhados.
 
-### <a name="to-create-nested-projects"></a>Para criar projetos aninhados
+## <a name="create-nested-projects"></a>Criar projetos aninhados
 
 1.  O ambiente de desenvolvimento integrado (IDE) carrega as informações de inicialização e o arquivo de projeto do projeto pai chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface. O projeto pai é criado e adicionado à solução.
 
     > [!NOTE]
-    >  Neste ponto, é muito cedo no processo para o projeto pai criar o projeto aninhado porque o projeto pai deve ser criado antes da criação de projetos do filho. Seguindo essa sequência, o projeto pai pode aplicar configurações aos projetos filho e os projetos filho podem adquirir informações dos projetos pai, se necessário. Essa sequência é se ela é necessária por clientes como o controle do código fonte (SCC) e o Gerenciador de soluções.
+    > Neste ponto, é muito cedo no processo para o projeto pai criar o projeto aninhado porque o projeto pai deve ser criado antes da criação de projetos do filho. Seguindo essa sequência, o projeto pai pode aplicar configurações aos projetos filho e os projetos filho podem adquirir informações dos projetos pai, se necessário. Essa sequência é se ela é necessária por clientes como o controle do código fonte (SCC) e o Gerenciador de soluções.
 
      O projeto pai deve aguardar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método a ser chamado pelo IDE para criar seu aninhado (filho) projeto ou projetos.
 
@@ -57,7 +58,7 @@ Quando você cria um tipo de projeto aninhado não há são uma várias etapas a
      Se ele ainda não existir, o projeto pai cria um GUID para cada projeto aninhado chamando `CoCreateGuid`.
 
     > [!NOTE]
-    >  `CoCreateGuid` é uma API COM chamado quando um GUID a ser criado. Para obter mais informações, consulte `CoCreateGuid` e GUIDs na biblioteca MSDN.
+    > `CoCreateGuid` é uma API COM chamado quando um GUID a ser criado. Para obter mais informações, consulte `CoCreateGuid` e GUIDs na biblioteca MSDN.
 
      O projeto pai armazena esse GUID em seu arquivo de projeto a ser recuperado na próxima vez que ele é aberto no IDE. Consulte a etapa 4 para obter mais informações relacionadas a chamada de `AddVirtualProjectEX` para recuperar o `guidProjectID` para o projeto filho.
 
@@ -66,7 +67,7 @@ Quando você cria um tipo de projeto aninhado não há são uma várias etapas a
      Como projetos pai e filho são instanciados programaticamente, você pode definir propriedades de projetos aninhados neste momento.
 
     > [!NOTE]
-    >  Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode pedir se o projeto pai tem qualquer contexto para aquele item verificando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Dessa forma, você pode adicionar atributos adicionais de ajuda dinâmica e opções de menu específicas para projetos aninhados individuais.
+    > Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode pedir se o projeto pai tem qualquer contexto para aquele item verificando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Dessa forma, você pode adicionar atributos adicionais de ajuda dinâmica e opções de menu específicas para projetos aninhados individuais.
 
 10. A hierarquia é criada para exibição no Gerenciador de soluções com uma chamada para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.
 
@@ -78,15 +79,12 @@ Quando você cria um tipo de projeto aninhado não há são uma várias etapas a
 
      Quando um projeto aninhado é fechado porque o usuário fechou a solução ou específicos do projeto em si, o outro método `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, é chamado. O projeto pai encapsula chamadas para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> método com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> métodos para notificar os ouvintes de eventos de solução que os projetos aninhados estão sendo fechados.
 
- Os tópicos a seguir lidam com vários outros conceitos a serem considerados ao implementar projetos aninhados:
+Os tópicos a seguir lidam com vários outros conceitos a serem considerados ao implementar projetos aninhados:
 
- [Considerações para descarregar e recarregar projetos aninhados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
-
- [Suporte do assistente para projetos aninhados](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [Implementar manipulação de comando para projetos aninhados](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [Filtrar a caixa de diálogo Adicionar Item para projetos aninhados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [Considerações para descarregar e recarregar projetos aninhados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Suporte do assistente para projetos aninhados](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [Implementar manipulação de comando para projetos aninhados](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [Filtrar a caixa de diálogo Adicionar Item para projetos aninhados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
 ## <a name="see-also"></a>Consulte também
 

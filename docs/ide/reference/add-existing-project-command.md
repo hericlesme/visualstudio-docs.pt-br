@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ce42ae8a13decd48e4e41a02b18f5baeb875d6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c030358eb071613e98d473845708b01235683ded
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-existing-project-command"></a>Comando Adicionar Projeto Existente
 Adiciona um projeto existente à solução atual.
 
 ## <a name="syntax"></a>Sintaxe
 
-```
+```cmd
 File.AddExistingProject filename
 ```
 
@@ -43,7 +43,7 @@ File.AddExistingProject filename
 ## <a name="example"></a>Exemplo
  Este exemplo adiciona o projeto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], TestProject1, à solução atual.
 
-```
+```cmd
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
 ```
 

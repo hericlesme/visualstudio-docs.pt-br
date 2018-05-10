@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a50f61debeb312f0da14e4d8aa848e50abc9cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0762287c47494b0dd0d3f4d444d7143c8688ec2b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe (Designer de Classe)
 
@@ -32,8 +32,8 @@ As seguintes ações do mouse têm suporte em diagramas de classe:
 |Combinação do mouse|Contexto|Descrição|
 |-----------------------|-------------|-----------------|
 |Clicar duas vezes|Elementos de forma|Abre o editor de códigos.|
-||Conector de pirulito|Expande/recolhe o pirulito.|
-||Rótulo do conector de pirulito|Invoca o comando **Mostrar Interface**.|
+|Clicar duas vezes|Conector de pirulito|Expande/recolhe o pirulito.|
+|Clicar duas vezes|Rótulo do conector de pirulito|Invoca o comando **Mostrar Interface**.|
 |Botão de rolagem do mouse|Diagrama de classe|Rolar verticalmente.|
 |SHIFT + botão de rolagem do mouse|Diagrama de classe|Rolar horizontalmente.|
 |CTRL + botão de rolagem do mouse|Diagrama de classe|Zoom.|
@@ -60,12 +60,12 @@ As seguintes ações do teclado têm suporte em diagramas de classe:
 |Chave|Contexto|Descrição|
 |---------|-------------|-----------------|
 |Teclas de direção|Dentro das formas de tipo|Navegação em estilo de árvore pelo conteúdo da forma (há suporte para o encapsulamento da forma). As teclas para a esquerda e para a direita expandem/recolhem o item atual se ele for expansível e navegam até o pai se ele não for (consulte a navegação do modo de exibição em árvore para ver o comportamento detalhado).|
-||Formas de nível superior|Mover formas no diagrama.|
+|Teclas de direção|Formas de nível superior|Mover formas no diagrama.|
 |SHIFT + teclas de direção|Dentro das formas de tipo|Criar uma seleção contínua que consiste em elementos de forma, como membros, tipos aninhados ou compartimentos. Esses atalhos não dão suporte ao encapsulamento.|
 |HOME|Dentro das formas de tipo|Navegue até o título de forma de nível superior.|
-||Formas de nível superior|Navegue até a primeira forma no diagrama.|
+|HOME|Formas de nível superior|Navegue até a primeira forma no diagrama.|
 |END|Dentro das formas de tipo|Navegue até o último elemento visível dentro da forma.|
-||Formas de nível superior|Navegue até a última forma no diagrama.|
+|END|Formas de nível superior|Navegue até a última forma no diagrama.|
 |SHIFT + HOME|Dentro da forma de tipo|Seleciona elementos dentro da forma, começando pelo item atual e terminando com o item superior na mesma forma.|
 |SHIFT + END|Dentro da forma de tipo|O mesmo que SHIFT + HOME, mas na direção de cima para baixo.|
 |ENTER|Todos os contextos|Invoca a ação padrão na forma, o que também está disponível por meio de um clique duplo. Na maioria dos casos, essa ação é Exibir Código, mas alguns elementos a definem de maneira diferente (pirulitos, cabeçalhos de compartimento, rótulos de pirulito).|
@@ -75,7 +75,7 @@ As seguintes ações do teclado têm suporte em diagramas de classe:
 |ALT + SHIFT + L|Dentro de formas de tipo + em formas de tipo.|Navega para o pirulito da forma selecionada atualmente, se ele estiver presente.|
 |ALT + SHIFT + B|Dentro de formas de tipo + em formas de tipo.|Se lista de tipos base for mostrada na forma de tipo e tiver mais de um item, isso alternará o estado de expansão da lista (expandir/recolher).|
 |DELETE|Em formas de tipo e de comentário|Invoca o comando **Remover do Diagrama**.|
-||Em todo o resto.|Invoca o comando **Excluir do Código** (membros, parâmetros, associações, herança, rótulos de pirulito).|
+|DELETE|Em todo o resto.|Invoca o comando **Excluir do Código** (membros, parâmetros, associações, herança, rótulos de pirulito).|
 |CTRL + DELETE|Todos os contextos|Invoca o comando **Excluir do Código** na seleção.|
 |TAB|Todos os contextos|Navega até o próximo filho dentro do mesmo pai (dá suporte a encapsulamento).|
 |SHIFT+TAB|Todos os contextos|Navega até o filho anterior dentro do mesmo pai (dá suporte a encapsulamento).|

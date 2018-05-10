@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Criando uma extensão com um modelo de Item Editor
 Você pode usar modelos de item que são incluídos no SDK do Visual Studio para criar extensões de editor básico que adiciona classificadores, ornamentos e as margens no Editor. Os modelos de item editor estão disponíveis para projetos do Visual c# ou Visual Basic VSIX.  
@@ -36,7 +36,7 @@ Você pode usar modelos de item que são incluídos no SDK do Visual Studio para
   
     -   EditorClassifier1.cs contém o `EditorClassifier1` classe.  
   
-    -   EditorClassifier1ClassificationDefinition.cs contém o `OEditorClassifier1ClassificationDefinition` classe.  
+    -   EditorClassifier1ClassificationDefinition.cs contém o `EditorClassifier1ClassificationDefinition` classe.  
   
     -   EditorClassifier1Format.cs contém o `EditorClassifier1Format` classe.  
   
@@ -57,7 +57,7 @@ Você pode usar modelos de item que são incluídos no SDK do Visual Studio para
   
     -   TextAdornment1.cs contém o `TextAdornment1` classe.  
   
-    -   extAdornment1TextViewCreationListener.cs contém o `TextAdornment1TextViewCreationListener` classe.  
+    -   TextAdornment1TextViewCreationListener.cs contém o `TextAdornment1TextViewCreationListener` classe.  
   
 4.  Compile o projeto e comece a depuração. A instância experimental aparece. Se você abrir um arquivo de texto, todos os 'a' caracteres de texto são realçados em vermelho em um plano de fundo azul.  
   
@@ -88,7 +88,7 @@ Você pode usar modelos de item que são incluídos no SDK do Visual Studio para
   
 1.  No **novo projeto** caixa de diálogo caixa, expanda **Visual C#** ou **Visual Basic** e, em seguida, clique em **extensibilidade**. No **modelos** painel, selecione **projeto VSIX**. Na caixa **Nome**, digite `MarginExtension`. Clique em **OK**.  
   
-2.  No **Solution Explorer**, com o botão direito no nó do projeto e selecione **Adicionar / Novo Item**. Vá para o Visual c# **extensibilidade** nó e selecione **Editor visor adorno**. Deixe o nome de arquivo padrão (EditorMargin1.cs/vb).  
+2.  No **Solution Explorer**, com o botão direito no nó do projeto e selecione **Adicionar / Novo Item**. Vá para o Visual c# **extensibilidade** nó e selecione **Editor margem**. Deixe o nome de arquivo padrão (EditorMargin1.cs/vb).  
   
 3.  Há dois arquivos de código, da seguinte maneira:  
   

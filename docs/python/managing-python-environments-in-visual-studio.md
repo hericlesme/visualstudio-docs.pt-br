@@ -1,28 +1,23 @@
 ---
-title: Como gerenciar ambientes Python e interpretadores | Microsoft Docs
-description: Como usar a janela Ambientes do Python no Visual Studio para gerenciar ambientes globais e virtuais, configurar ambientes personalizados, instalar interpretadores Python, instalar pacotes, configurar caminhos de pesquisa e gerenciar ambientes para projetos do Visual Studio.
-ms.custom: ''
+title: Gerenciar ambientes e interpretadores Python
+description: Use a janela Ambientes Python para gerenciar ambientes globais, virtuais e conda, para instalar interpretadores e pacotes Python e atribuir ambientes a projetos do Visual Studio.
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-environments-in-visual-studio"></a>Gerenciando ambientes do Python no Visual Studio
+# <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
 Um *ambiente* Python é um contexto em que você executa o código Python e inclui ambientes globais, virtuais e conda. Um ambiente é composto por um interpretador, uma biblioteca (normalmente a Biblioteca Padrão do Python) e um conjunto de pacotes instalados. Juntos, esses componentes determinam quais constructos de linguagem e qual sintaxe são válidos, qual funcionalidade do sistema operacional pode ser acessada e quais pacotes podem ser usados.
 
@@ -91,12 +86,12 @@ Abaixo da lista de ambientes há um seletor de lista suspensa para as opções *
 
 Se nenhum ambiente aparecer, isso significa que o Visual Studio não conseguiu detectar as instalações de Python nos locais padrão. Por exemplo, você pode ter instalado o Visual Studio 2017 mas limpou todas as opções de interpretador nas opções do instalador para a carga de trabalho do Python. Da mesma forma, você pode ter instalado o Visual Studio 2015 ou anterior, mas não instalou um interpretador manualmente (confira [Como instalar interpretadores Python](installing-python-interpreters.md)).
 
-Se você souber que tem um interpretador Python em seu computador, mas o Visual Studio (qualquer versão) não detectá-lo, use o comando **+Personalizado...**  para especificar o local manualmente. Confira a próxima seção, [Identificar manualmente um ambiente existente](#manually-identifying-an-existing-environment).
+Se você souber que tem um intérprete Python em seu computador, mas o Visual Studio (qualquer versão) não detectá-lo, use o comando **+Personalizado...**  para especificar o local manualmente. Confira a próxima seção, [Identificar manualmente um ambiente existente](#manually-identifying-an-existing-environment).
 
 > [!Tip]
 > O Visual Studio detecta atualizações para um interpretador existente, como a atualização do Python 2.7.11 para 2.7.14 usando os instaladores de python.org. Durante o processo de instalação, o ambiente mais antigo desaparece da lista **Ambientes Python** antes de a atualização aparecer em seu lugar.
 >
-> No entanto, se você mover manualmente um interpretador e seu ambiente usando o sistema de arquivos, o Visual Studio não saberá o novo local. Para saber mais, veja [Mover um interpretador](installing-python-interpreters.md#moving-an-interpreter).
+> No entanto, se você mover manualmente um interpretador e seu ambiente usando o sistema de arquivos, o Visual Studio não saberá o novo local. Para saber mais, veja [Mover um intérprete](installing-python-interpreters.md#moving-an-interpreter).
 
 ## <a name="manually-identifying-an-existing-environment"></a>Identificar manualmente um ambiente existente
 
@@ -123,7 +118,7 @@ Use as etapas a seguir para identificar um ambiente que está instalado em um lo
 ## <a name="see-also"></a>Consulte também
 
 - [Instalar interpretadores do Python](installing-python-interpreters.md)
-- [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
+- [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
 - [Usando requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Caminhos de pesquisa](search-paths.md)
 - [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)

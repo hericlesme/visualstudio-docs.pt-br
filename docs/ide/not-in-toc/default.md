@@ -1,18 +1,21 @@
 ---
-title: "Página padrão para F1 no Visual Studio | Microsoft Docs"
+title: Página padrão para ajuda com F1
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 - vs.ambient
-manager: ghogen
+manager: douge
+author: gewarren
+ms.author: gewarren
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 65f5e31060f745adfd5dd18460b0a9984064f660
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # Ajuda com F1
 
