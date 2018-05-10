@@ -1,15 +1,15 @@
 ---
 title: Introdução do Visual Studio para Mac
-description: ''
+description: Este artigo apresenta os recursos do Visual Studio para Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 4b4b8e9cb55e3a4cf2d81e7cf7234ea47ad06f0e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Introdução do Visual Studio para Mac
 
@@ -72,7 +72,7 @@ O Visual Studio tem seu próprio gerenciador de SDK do Android integrado.
 
 Para aplicativos Android, o Visual Studio para Mac inclui seu próprio designer, que funciona com arquivos Android `.axml` para construir visualmente interfaces do usuário. O Visual Studio para Mac abrirá esses arquivos no seu designer Android, conforme mostrado nesta imagem:
 
-![](media/intro-image31.png)
+![Designer de Interface do Usuário Android](media/intro-image31.png)
 
 Para saber mais sobre o designer Android, consulte o documento [Visão geral do designer](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview).
 
@@ -80,7 +80,7 @@ Para saber mais sobre o designer Android, consulte o documento [Visão geral do 
 
 O iOS Designer está totalmente integrado com o Visual Studio para Mac e permite a edição visual de arquivos .xib e de Storyboard para criar interfaces do usuário do iOS, tvOS e WatchOS e transições. A interface do usuário pode ser criada usando a funcionalidade do tipo "arrastar e soltar" entre a Caixa de Ferramentas e o Design Surface, usando uma abordagem intuitiva para manipulação de eventos. O Designer do iOS também dá suporte a [controles personalizados](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/) com o benefício adicional de renderização em tempo de design.
 
-![](media/intro-image30.png)
+![Designer de Storyboard do iOS](media/intro-image30.png)
 
 Para saber mais sobre como usar o Designer do iOS, consulte os documentos do [Designer](https://developer.xamarin.com/guides/ios/user_interface/designer).
 
@@ -109,7 +109,7 @@ O Xamarin Profiler tem três instrumentos disponíveis para criação de perfil.
 
 O Xamarin Inspector fornece um console C# interativo com ferramentas para os usuários. Ele pode ser usado como um auxílio para depuração ou diagnóstico ao inspecionar aplicativos dinâmicos, como uma ferramenta de ensino, como uma ferramenta de documentação ou uma ferramenta de testes.
 
-![](media/intro-inspector.png)
+![Xamarin Inspector](media/intro-inspector.png)
 
 Ele consiste em um aplicativo autônomo que fornece um console C# avançado para várias plataformas de programação (Android, iOS, Mac e Windows), bem como integração no fluxo de trabalho de depuração de seu IDE.
 

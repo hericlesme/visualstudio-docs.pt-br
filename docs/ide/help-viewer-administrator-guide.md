@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19fde51de5e63a0cde9adebd28ad29fc295c6e9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
 
@@ -38,7 +38,7 @@ Se você não tiver acesso à Internet em seu ambiente de rede, o Help Viewer po
 
 Você pode usar o **Gerenciador de Conteúdo da Ajuda** (*HlpCtntMgr.exe*) para implantar conteúdo de Ajuda local da Internet em computadores cliente. Use a seguinte sintaxe:
 
-```
+```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
@@ -137,7 +137,7 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
 
 2.  Crie um arquivo *.bat* para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações. Por exemplo:
 
-    ```
+    ```cmd
     REM - copy pre-ripped content to ProgramData
     Xcopy %~dp0HelpLibrary2 %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2\ /y /e /k /o
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)

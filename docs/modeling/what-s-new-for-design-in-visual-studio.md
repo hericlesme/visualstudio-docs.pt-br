@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e36bbd95146f8a8b1095fefaa7882ff5f88d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novidades no design no Visual Studio
 
@@ -64,18 +64,13 @@ Para obter mais detalhes, consulte [esta postagem de blog](https://blogs.msdn.mi
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-<a name="VersionSupport"></a>
-## <a name="version-support-for-architecture-and-modeling-tools"></a>Suporte de versão para a arquitetura e ferramentas de modelagem
+## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Suporte de versão para a arquitetura e ferramentas de modelagem
 
-O Visual Studio está disponível em várias versões. Nem todos eles oferecem suporte para a arquitetura e modelagem de ferramentas. A tabela a seguir mostra a disponibilidade de cada ferramenta.
+Visual Studio 2015 está disponível em várias versões. Nem todos eles oferecem suporte para a arquitetura e ferramentas de modelagem. A tabela a seguir mostra a disponibilidade de cada ferramenta.
 
 |**Recurso**|**Enterprise**|**Professional**|**Comunidade**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mapas de código**|Sim|Consulte a Observação (1)|-|-|
-|**Diagramas de dependência**|Sim|Consulte a Observação (2)|Consulte a Observação (2)|-|
+|**Mapas de código**|Sim|Só oferece suporte à leitura de mapas de código, filtragem código mapas, adicionar novos nós genéricos e criar um novo gráfico direcionado de uma seleção.|-|-|
+|**Diagramas de dependência**|Sim|Dá suporte apenas à leitura de diagramas de dependência.|Dá suporte apenas à leitura de diagramas de dependência.|-|
 |**Direcionado gráficos** (diagramas DGML)|Sim|Sim|Sim|-|
 |**Clone de código**|Sim|-|-|-|
-
-Observação (1): Tem suporte apenas para leitura mapas de código, a filtragem de mapas de código, adicionar novos nós genéricos e criar um novo gráfico direcionado de uma seleção.
-
-Observação (2): Somente dá suporte à leitura de diagramas de dependência.
