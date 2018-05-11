@@ -13,15 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 81b58a2162d7240e32e1fb2d45e462ec551155e7
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 05/10/2018
 ---
 1. Se você pretende implantar seus aplicativos com a implantação da Web no Visual Studio, instale a versão mais recente da implantação da Web no servidor.
 
-    Para instalar a implantação da Web, use o [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Implantação da Web você encontrar na guia aplicativos. Você também pode obter um instalador diretamente a partir de [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
+    Para instalar a implantação da Web, use o [Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Para localizar o link do instalador de plataforma da Web do IIS, selecione **IIS** no painel esquerdo do Gerenciador do servidor. O servidor e selecione **serviços de informações da Internet (IIS) Manager**.)
+
+    O Web Platform Installer, você encontrará implantação da Web na guia aplicativos. Você também pode obter um instalador diretamente a partir de [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
 
 2. Verificar se implantação da Web está funcionando corretamente abrindo **painel de controle > sistema e segurança > Ferramentas administrativas > serviços** e certifique-se de que **o serviço de agente de implantação Web** está em execução (a nome do serviço é diferente em versões mais antigas).
 

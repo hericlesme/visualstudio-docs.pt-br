@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publicar um aplicativo web ou um aplicativo .NET Core em um site usando a ferramenta de publicação do Visual Studio
 
@@ -24,13 +24,19 @@ Você pode usar o **publicar** ferramenta para publicar aplicativos ASP.NET em u
 
 Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Python no Visual Studio. Para Node. js, as etapas são suportadas, mas a interface do usuário é diferente.
 
+## <a name="prerequisites"></a>Pré-requisitos
+
+* Você deve ter o Visual Studio de 2017 instalado e o **ASP.NET** e **do .NET Framework** cargas de trabalho de desenvolvimento. Para um aplicativo .NET Core, você também precisa de **.NET Core** carga de trabalho.
+
+    Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
+
 ## <a name="create-a-new-project"></a>Criar um novo projeto 
 
 1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
 
 1. Em **Visual C#** ou **Visual Basic**, escolha **Web**e, em seguida, no painel central, escolha um **o aplicativo Web do ASP.NET (.NET Framework)** ou (c# somente) **aplicativo Web do ASP.NET Core**e, em seguida, clique em **Okey**.
 
-1. Escolha **MVC**, certifique-se de que **sem autenticação** está selecionado e, em seguida, clique em **Okey**.
+1. Escolha **MVC** (ou escolha **aplicativo Web (Model-View-Controller)** para .NET Core), certifique-se de que **sem autenticação** está selecionado e, em seguida, clique em **Okey** .
 
 1. Digite um nome como **MyWebApp** e clique em **Okey**.
 
@@ -44,7 +50,9 @@ Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Pyt
 
     ![Escolher publicar](../deployment/media/quickstart-publish-aspnet.png "escolher publicar")
 
-1. No **publicar** painel, escolha **IIS, FTP, etc**.
+1. Se você tiver configurado anteriormente quaisquer perfis de publicação, o **publicar** painel é exibido. Clique em **criar novo perfil**.
+
+1. No **escolher um destino de publicação** caixa de diálogo caixa, escolha **IIS, FTP, etc**.
 
     ![Escolha o IIS, FTP, etc.](../deployment/media/quickstart-publish-iis-ftp.png "escolha IIS, FTP, etc.")
 
@@ -56,7 +64,7 @@ Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Pyt
 
 1. No **publicar método** campo, escolha um método como **implantação da Web** ou **FTP**.
 
-    As configurações que você vê próxima correspondem ao seu método de publicação.
+    As configurações que você vê próxima correspondem ao seu método de publicação. A implantação da Web simplifica a implantação de aplicativos Web e sites para servidores IIS e deve ser instalada como um aplicativo no servidor. Use o [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) para instalá-lo.
 
 1. Configurar as configurações necessárias para o método de publicação e clique em **Conexão validar**.
 
@@ -74,4 +82,7 @@ Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Pyt
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Implantar o ASP.NET no IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+Este guia de início rápido, você aprendeu a usar o Visual Studio para criar um perfil de publicação. Você também pode configurar a publicação de uma perfil com a importação de configurações de publicação.
+
+> [!div class="nextstepaction"]
+> [Importar configurações de publicação e implantar em IIS](tutorial-import-publish-settings-iis.md)

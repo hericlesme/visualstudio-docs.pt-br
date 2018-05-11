@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Depuração remota ASP.NET Core no IIS no Azure no Visual Studio de 2017
 
@@ -83,18 +83,19 @@ No Visual Studio, você pode publicar e depurar seu aplicativo para uma instânc
 
 Você pode criar uma VM do Azure para o Windows Server e, em seguida, instalar e configurar o IIS e outros componentes de software necessárias. Isso leva mais tempo que a implantação para um serviço de aplicativo do Azure e requer que você siga as etapas restantes neste tutorial.
 
-Primeiro, siga todas as etapas descritas em [instalar e executar o IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
+Primeiro, siga todas as etapas descritas em [instalar e executar o IIS](/azure/virtual-machines/windows/quick-create-portal).
 
 Quando você abre a porta 80 no grupo de segurança de rede, também abra a porta 4022 para o depurador remoto. Dessa forma, você não precisará abri-lo mais tarde.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Atualizar configurações de segurança do navegador no Windows Server
 
-Dependendo de suas configurações de segurança do navegador, isso pode economizar tempo para adicionar os seguintes sites confiáveis no seu navegador para que você pode facilmente baixar o software descrito neste tutorial. Acesso a esses sites pode ser necessários:
+Dependendo de suas configurações de segurança do navegador, isso pode economizar tempo para adicionar os seguintes sites confiáveis no seu navegador para que o mais rapidamente, você pode baixar o software descrito neste tutorial. Acesso a esses sites pode ser necessários:
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 Se você estiver usando o Internet Explorer, você pode adicionar sites confiáveis, vá para **opções da Internet > Segurança > Sites confiáveis > Sites**. Essas etapas são diferentes para outros navegadores. (Se você precisar baixar uma versão mais antiga do depurador remoto do my.visualstudio.com, alguns sites confiáveis adicionais são necessário para entrar.)
 
@@ -113,7 +114,7 @@ Quando você baixar o software, você pode receber solicitações para conceder 
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a> Configurar o site da Web ASP.NET no computador Windows Server
+### <a name="BKMK_deploy_asp_net"></a> Configurar o site da Web do ASP.NET no computador Windows Server
 
 1. Abra o **serviços de informações da Internet (IIS) Manager** e vá para **Sites**.
 
