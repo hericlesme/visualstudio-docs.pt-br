@@ -58,13 +58,13 @@ interface IManagedAddin : IUnknown
   
 1.  O aplicativo descobre suplementos do VSTO procurando entradas na seguinte chave do registro:  
   
-     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nome do aplicativo >*\Addins\  
+     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nome do aplicativo >* \Addins\  
   
      Cada entrada na chave do registro é uma ID exclusiva do suplemento do VSTO. Normalmente, isso é o nome do assembly do suplemento do VSTO.  
   
 2.  O aplicativo procura um `Manifest` entrada na entrada para cada suplemento do VSTO.  
   
-     Gerenciado suplementos do VSTO podem armazenar o caminho completo de um manifesto no `Manifest` entrada HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nome do aplicativo >*\Addins\\  *\<na ID de->*. Um manifesto é um arquivo (normalmente, um arquivo XML) que fornece informações que são usadas para ajudar a carregar o suplemento do VSTO.  
+     Gerenciado suplementos do VSTO podem armazenar o caminho completo de um manifesto no `Manifest` entrada HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nome do aplicativo >* \Addins\\  *\<na ID de->*. Um manifesto é um arquivo (normalmente, um arquivo XML) que fornece informações que são usadas para ajudar a carregar o suplemento do VSTO.  
   
 3.  Se o aplicativo encontra uma `Manifest` entrada, o aplicativo tenta carregar um componente do carregador do suplemento do VSTO gerenciado. O aplicativo faz isso ao tentar criar um objeto COM que implementa a interface IManagedAddin.  
   
