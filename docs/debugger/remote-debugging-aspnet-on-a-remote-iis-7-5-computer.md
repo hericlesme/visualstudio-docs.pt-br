@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuração remota ASP.NET em um computador remoto do IIS
 Para depurar um aplicativo ASP.NET que tenha sido implantado no IIS, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo e, em seguida, anexe ao seu aplicativo em execução do Visual Studio.
@@ -74,11 +74,17 @@ Se você quiser obter informações mais detalhadas para instalar o ASP.NET no I
 
 2. Reiniciar o sistema (ou execute **net stop foi /y** seguido por **net start-w3svc** em um prompt de comando para acompanhar uma alteração no caminho do sistema).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Opcional) Instalar Web implantar 3.6 para servidores no Windows Server de hospedagem
+
+Em alguns cenários, pode ser mais rápido para importar configurações de publicação no Visual Studio, em vez de configurar manualmente as opções de implantação. Se você preferir importar publicar configurações em vez de configurar o perfil de publicação no Visual Studio, consulte [importar configurações de publicação e implantar em IIS](../deployment/tutorial-import-publish-settings-iis.md). Caso contrário, permanecem neste tópico e continue lendo. Se você concluir o artigo sobre como importar configurações de publicação e implantar o aplicativo com êxito, em seguida, retorne a este tópico e iniciar na seção em [baixar as ferramentas remotas](#BKMK_msvsmon).
+
 ## <a name="BKMK_install_webdeploy"></a> (Opcional) Instalar Web implantar 3.6 no Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> Configurar o site da Web ASP.NET no computador Windows Server
+
+Se você estiver importando as configurações de publicação, você poderá ignorar esta seção.
 
 1. Abra o Windows Explorer e crie uma nova pasta, **C:\Publish**, onde você irá implantar posteriormente o projeto ASP.NET.
 

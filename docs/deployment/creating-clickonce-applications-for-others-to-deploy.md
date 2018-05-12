@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Criando aplicativos ClickOnce para a implantação por terceiros
 Nem todos os desenvolvedores que estão criando as implantações do ClickOnce planeja implantar os próprios aplicativos. Muitas delas basta empacotar seu aplicativo usando o ClickOnce e entregar os arquivos para um cliente, como uma grande empresa. O cliente torna-se de um responsável para hospedar o aplicativo em sua rede. Este tópico discute alguns dos problemas inerentes essas implantações em versões do .NET Framework anteriores à versão 3.5. Em seguida, descreve uma nova solução fornecida usando o novo recurso de "usar o manifesto de confiança" no .NET Framework 3.5. Finalmente, ele conclui com estratégias recomendadas para a criação de implantações do ClickOnce para clientes que ainda estão usando versões mais antigas do .NET Framework.  
@@ -57,7 +57,7 @@ Nem todos os desenvolvedores que estão criando as implantações do ClickOnce p
   
  Usar um certificado autoassinado para o manifesto de implantação apresenta várias vantagens. Eliminando a necessidade do cliente obter ou criar seu próprio certificado Authenticode, `<useManifestForTrust>` simplifica a implantação do cliente, permitindo que o desenvolvedor manter sua própria identidade de identidade visual do aplicativo. O resultado é um conjunto de implantações assinados que são mais seguros e ter identidades de aplicativo único. Isso elimina o conflito potencial que pode ocorrer de implantar o mesmo aplicativo em vários clientes.  
   
- Para obter informações passo a passo sobre como criar uma implantação de ClickOnce com `<useManifestForTrust>` habilitado, consulte [passo a passo: Implantando manualmente um aplicativo ClickOnce que Does não exigem assinando novamente e preserva a identidade visual informações](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Para obter informações passo a passo sobre como criar uma implantação de ClickOnce com `<useManifestForTrust>` habilitado, consulte [passo a passo: Implantando manualmente um aplicativo ClickOnce que Does não exigem assinando novamente e preserva a identidade visual informações](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Manifesto de aplicativo como para confiança funciona em tempo de execução  
  Para obter um melhor entendimento de como usar o manifesto do aplicativo para confiança funciona em tempo de execução, considere o exemplo a seguir. Um aplicativo ClickOnce que tem como alvo o .NET Framework 3.5 é criado pela Microsoft. O manifesto do aplicativo usa o `<useManifestForTrust>` elemento e é assinada pela Microsoft. A Adventure Works assina o manifesto de implantação usando um certificado autoassinado. Adventure Works, os clientes são configurados para confiar em qualquer aplicativo assinado pela Microsoft.  
@@ -99,6 +99,6 @@ Nem todos os desenvolvedores que estão criando as implantações do ClickOnce p
  A desvantagem desse método é que ele requer que o cliente para instalar as ferramentas do SDK do .NET Framework e ter um desenvolvedor ou administrador do sistema que é qualificada para usá-los. Alguns clientes podem exigir uma solução que requer pouco ou nenhum esforço técnico de sua parte.  
   
 ## <a name="see-also"></a>Consulte também  
- [Implantando aplicativos ClickOnce para teste e os servidores de produção sem assinar novamente](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [Implantando aplicativos ClickOnce para teste e os servidores de produção sem assinar novamente](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  (Instruções passo a passo: implantando manualmente um aplicativo ClickOnce)  
- [Passo a passo: implantando manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Passo a passo: implantando manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

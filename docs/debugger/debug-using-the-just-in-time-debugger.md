@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador Just-in-no Visual Studio
 Depuração Just-In-Time inicia o Visual Studio automaticamente quando uma exceção ou a falha ocorre em um aplicativo que está em execução fora do Visual Studio. Isso permite que você teste seu aplicativo quando o Visual Studio não está em execução e iniciar a depuração com o Visual Studio quando ocorre um problema.
@@ -178,4 +178,4 @@ static void Main(string[] args)
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)   
  [Just-In-Time, depuração, a caixa de diálogo Opções](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

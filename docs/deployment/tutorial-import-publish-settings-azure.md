@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publicar um aplicativo para o serviço de aplicativo do Azure importando as configurações de publicação no Visual Studio
 
 Você pode usar o **publicar** ferramenta para importar configurações de publicação e, em seguida, implante seu aplicativo. Neste artigo, podemos usar configurações de publicação para o serviço de aplicativo do Azure, mas você pode usar etapas semelhantes para importar configurações de publicação [IIS](../deployment/tutorial-import-publish-settings-iis.md). Em alguns cenários, o uso de uma publicação de perfil de configurações pode ser mais rápido do que a configuração manual de implantação para o serviço para cada instalação do Visual Studio.
 
-Estas etapas se aplicam a aplicativos ASP.NET, o ASP.NET Core e o núcleo do .NET no Visual Studio. As etapas correspondem ao Visual Studio 2017 versão 15.6.
+Estas etapas se aplicam a aplicativos ASP.NET, o ASP.NET Core e o núcleo do .NET no Visual Studio. Você também pode importar as configurações de publicação [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) aplicativos. As etapas correspondem ao Visual Studio 2017 versão 15.6.
 
 Neste tutorial, você irá:
 
@@ -30,10 +30,10 @@ Neste tutorial, você irá:
 > * Importar o arquivo de configurações de publicação no Visual Studio
 > * Implantar o aplicativo do serviço de aplicativo do Azure
 
-Um arquivo de configurações de publicação (*. publishsettings) é diferente de um perfil de publicação (*. pubxml) criado no Visual Studio. Um arquivo de configurações de publicação é criado pelo serviço de aplicativo do Azure e, em seguida, ele pode ser importado para o Visual Studio.
+Um arquivo de configurações de publicação (*\*. publishsettings*) é diferente de um perfil de publicação (*\*. pubxml*) criado no Visual Studio. Um arquivo de configurações de publicação é criado pelo serviço de aplicativo do Azure e, em seguida, ele pode ser importado para o Visual Studio.
 
 > [!NOTE]
-> Se você só precisa copiar um perfil de publicação do Visual Studio (\*arquivo. pubxml) de uma instalação do Visual Studio para outro, você pode encontrar o perfil de publicação,  *\<profilename\>. pubxml*, no  *\\< projectname\>\Properties\PublishProfiles* pasta para os tipos de projeto gerenciado. Para sites, procure o *\App_Data* pasta. Os perfis de publicação são arquivos XML do MSBuild.
+> Se você só precisa copiar um perfil de publicação do Visual Studio (*\*. pubxml* arquivo) de uma instalação do Visual Studio para outro, você pode encontrar o perfil de publicação,  *\<profilename\>. pubxml*, além de  *\\< projectname\>\Properties\PublishProfiles* pasta para os tipos de projeto gerenciado. Para sites, procure o *\App_Data* pasta. Os perfis de publicação são arquivos XML do MSBuild.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

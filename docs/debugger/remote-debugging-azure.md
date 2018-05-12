@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Depuração remota ASP.NET Core no IIS no Azure no Visual Studio de 2017
 
@@ -110,11 +110,17 @@ Quando você baixar o software, você pode receber solicitações para conceder 
 
 3. Reiniciar o sistema (ou execute **net stop foi /y** seguido por **net start-w3svc** em um prompt de comando para acompanhar uma alteração no caminho do sistema).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Opcional) Instalar Web implantar 3.6 para servidores no Windows Server de hospedagem
+
+Em alguns cenários, pode ser mais rápido para importar configurações de publicação no Visual Studio, em vez de configurar manualmente as opções de implantação. Se você preferir importar publicar configurações em vez de configurar o perfil de publicação no Visual Studio, consulte [importar configurações de publicação e implantar em IIS](../deployment/tutorial-import-publish-settings-iis.md). Caso contrário, permanecem neste tópico e continue lendo. Se você concluir o artigo sobre como importar configurações de publicação e implantar o aplicativo com êxito, em seguida, retorne a este tópico e iniciar na seção em [baixar as ferramentas remotas](#BKMK_msvsmon).
+
 ### <a name="BKMK_install_webdeploy"></a> (Opcional) Instalar Web implantar 3.6 no Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> Configurar o site da Web do ASP.NET no computador Windows Server
+
+Se você estiver importando as configurações de publicação, você poderá ignorar esta seção.
 
 1. Abra o **serviços de informações da Internet (IIS) Manager** e vá para **Sites**.
 
