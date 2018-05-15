@@ -1,7 +1,7 @@
 ---
 title: Implantar em uma pasta local - Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,17 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Implantar um aplicativo web ou aplicativo .NET Core para uma pasta local usando a ferramenta de publicação do Visual Studio
 
 Você pode usar o **publicar** ferramenta para publicar seu aplicativo para uma pasta local. 
 
 Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Python no Visual Studio. Para Node. js, as etapas são suportadas, mas a interface do usuário é diferente.
+
+## <a name="prerequisites"></a>Pré-requisitos
+
+* Você deve ter o Visual Studio de 2017 instalado e o **do .NET Framework** e **.NET Core** cargas de trabalho de desenvolvimento instalada.
+
+    Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto 
 
@@ -40,7 +46,9 @@ Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Pyt
 
     ![Escolher publicar](../deployment/media/quickstart-publish.png "escolher publicar")
 
-1. No **publicar** painel, escolha **pasta**.
+1. Se você tiver configurado anteriormente quaisquer perfis de publicação, o **publicar** painel é exibido. Clique em **criar novo perfil**.
+
+1. No **escolher um destino de publicação** caixa de diálogo caixa, escolha **pasta**.
 
     ![Escolha a pasta](../deployment/media/quickstart-publish-folder.png "Escolher pasta")
 

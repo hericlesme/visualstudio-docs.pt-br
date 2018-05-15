@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4838e44549f762e609913c92d677832d897edb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0584aac376345bc508e5f2088decd45b8c64783b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Instruções passo a passo: implantando manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual
-Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, atribua a ele a um cliente para publicar e implantar, o cliente tenha sido tradicionalmente atualizar o manifesto de implantação e assiná-lo novamente. Enquanto que ainda é o método preferencial na maioria dos casos, o .NET Framework 3.5 permite que você crie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações que podem ser implantadas por clientes sem precisar gerar um novo manifesto de implantação. Para obter mais informações, consulte [implantação ClickOnce aplicativos para teste e os servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, atribua a ele a um cliente para publicar e implantar, o cliente tenha sido tradicionalmente atualizar o manifesto de implantação e assiná-lo novamente. Enquanto que ainda é o método preferencial na maioria dos casos, o .NET Framework 3.5 permite que você crie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações que podem ser implantadas por clientes sem precisar gerar um novo manifesto de implantação. Para obter mais informações, consulte [implantação ClickOnce aplicativos para teste e os servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
  Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, forneça a um cliente para publicar e implantar, o aplicativo pode usar a identidade visual do cliente ou pode preservar a sua identidade visual. Por exemplo, se o aplicativo é um aplicativo proprietário único, você deseja preservar sua identidade visual. Se o aplicativo altamente personalizado para cada cliente, você talvez queira usar a identidade visual do cliente. O .NET Framework 3.5 permite preservar sua identidade visual, informações do fornecedor e assinatura de segurança quando você concede a um aplicativo de uma organização para implantar. Para obter mais informações, consulte [criando aplicativos de ClickOnce para outras pessoas para implantar](../deployment/creating-clickonce-applications-for-others-to-deploy.md).  
   

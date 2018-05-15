@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08025ed5d5e3806e04501c46a96e1df5f85b31fb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Escolhendo uma estratégia de atualização do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode fornecer atualizações automáticas para o aplicativo. Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo lê periodicamente seu arquivo de manifesto de implantação para ver se há atualizações para o aplicativo. Se disponível, a nova versão do aplicativo será baixada e executada. Para proporcionar eficiência, somente os arquivos que foram alterados serão baixados.  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 >  Atualizações de aplicativos necessitam de conectividade de rede. Se uma conexão de rede não estiver presente, o aplicativo será executado sem verificar se há atualizações, independentemente da estratégia de atualização que você escolher.  
   
 > [!NOTE]
->  No .NET Framework 2.0 e .NET Framework 3.0, quando seu aplicativo verificar se há atualizações, antes ou após a inicialização, ou ao usar as APIs <xref:System.Deployment.Application>, você deverá definir `deploymentProvider` no manifesto de implantação. O `deploymentProvider` elemento correspondente no Visual Studio para o **atualizar local** campo o **atualizações** caixa de diálogo do **publicar** guia. Essa regra é consentida no .NET Framework 3.5. Para obter mais informações, consulte [implantação ClickOnce aplicativos para teste e os servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+>  No .NET Framework 2.0 e .NET Framework 3.0, quando seu aplicativo verificar se há atualizações, antes ou após a inicialização, ou ao usar as APIs <xref:System.Deployment.Application>, você deverá definir `deploymentProvider` no manifesto de implantação. O `deploymentProvider` elemento correspondente no Visual Studio para o **atualizar local** campo o **atualizações** caixa de diálogo do **publicar** guia. Essa regra é consentida no .NET Framework 3.5. Para obter mais informações, consulte [implantação ClickOnce aplicativos para teste e os servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Verificando se há atualizações após a inicialização do aplicativo  
  Ao usar esta estratégia, o aplicativo tentará localizar e ler o arquivo de manifesto de implantação em segundo plano enquanto estiver em execução. Se uma atualização estiver disponível, na próxima vez que o usuário executar o aplicativo, o download e a instalação da atualização serão solicitados.  
