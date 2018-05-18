@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Criando e configurando membros de tipos (Designer de Classe)
 É possível adicionar esses membros aos tipos em um diagrama de classe e configurá-los na Janela **Detalhes da Classe**:
@@ -57,8 +57,8 @@ ms.lasthandoff: 04/26/2018
 
 |Tarefa|Conteúdo de suporte|
 |----------|------------------------|
-|**Introdução:** antes de criar e configurar membros de tipo, você precisa abrir a janela **Detalhes da Classe**.|-   [Abrindo a janela Detalhes da Classe](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Observações de uso de Detalhes da Classe](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Exibição de informações somente leitura](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Atalhos de teclado e do mouse no diagrama de classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Criar e modificar membros de tipo:** você pode criar membros, modificar membros e adicionar parâmetros a um método usando a janela **Detalhes da Classe**.|-   [Criando membros](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Modificando membros de tipo](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Adicionando parâmetros aos métodos](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Introdução:** antes de criar e configurar membros de tipo, você precisa abrir a janela **Detalhes da Classe**.|-   [Abrir a janela Detalhes da Classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Observações sobre uso de detalhes da classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Exibição de informações somente leitura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Criar e modificar membros de tipo:** você pode criar membros, modificar membros e adicionar parâmetros a um método usando a janela **Detalhes da Classe**.|-   [Criar membros](creating-and-configuring-type-members.md#create-members)<br />-   [Modificar membros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Adicionar parâmetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Abra a janela Detalhes da Classe
 Por padrão, a janela **Detalhes da Classe** é exibida automaticamente quando você abre um novo diagrama de classe (confira [Como adicionar diagramas de classe a projetos](how-to-add-class-diagrams-to-projects.md)). Também é possível abrir a janela **Detalhes da Classe** explicitamente, das maneiras a seguir.
@@ -157,7 +157,7 @@ Cada linha de membro exibe os seguintes elementos:
 
 -   **\<adicionar membro>**
 
-     A última linha na janela **Detalhes da Classe** contém o texto **\<adicionar membro>** na célula **Nome**. Se você clicar nessa célula, será possível criar um novo membro. Para obter mais informações, consulte [Criando membros](creating-and-configuring-type-members.md#CreateMembers).
+     A última linha na janela **Detalhes da Classe** contém o texto **\<adicionar membro>** na célula **Nome**. Se você clicar nessa célula, será possível criar um novo membro. Para obter mais informações, consulte [Criar membros](creating-and-configuring-type-members.md#create-members).
 
 -   **Propriedades do membro na janela Propriedades**
 
@@ -207,14 +207,14 @@ As linhas de parâmetro contém os seguintes itens:
 
 -   **\<adicionar parâmetro>**
 
-     A última linha de parâmetro de um membro contém o texto **<add parameter>** na célula **Nome**. Clicar nessa célula permite criar um novo parâmetro. Para obter mais informações, consulte [Para adicionar um parâmetro a um método](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     A última linha de parâmetro de um membro contém o texto **<add parameter>** na célula **Nome**. Clicar nessa célula permite criar um novo parâmetro. Para obter mais informações, consulte [Para adicionar um parâmetro a um método](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Propriedades do parâmetro na janela Propriedades**
 
 A janela Propriedades exibe as mesmas propriedades de parâmetro exibidas na janela **Detalhes da Classe**: **Nome**, **Tipo**, **Modificador**, **Resumo** e também a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.
 
 > [!NOTE]
-> Para adicionar um parâmetro a um delegado, consulte [Criando membros](creating-and-configuring-type-members.md#CreateMembers).
+> Para adicionar um parâmetro a um representante, consulte [Criar membros](creating-and-configuring-type-members.md#create-members).
 
 
 > [!NOTE]

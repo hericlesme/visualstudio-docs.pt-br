@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd97ae6cd610931f4b55deafb878f6c6067b6ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-print-class-diagrams-class-designer"></a>Como imprimir diagramas de classe (Designer de Classe)
+# <a name="how-to-print-class-diagrams"></a>Como imprimir diagramas de classe
 
 É possível imprimir um diagrama de classe usando o recurso de impressão do Visual Studio.
 
 ## <a name="to-print-a-class-diagram"></a>Para imprimir um diagrama de classe
 
-1.  Exiba o diagrama de classe. (Se necessário, selecione a guia do diagrama de classe para exibi-lo.)
+1.  Abra o diagrama de classe.
 
 2.  Clique em **Imprimir** no menu **Arquivo**.
 
-     O diagrama de classe inteiro será impresso. Pode ser necessário ajustar as configurações na caixa de diálogo Configurar Página para imprimir em um tamanho apropriado.
+O diagrama de classe inteiro é impresso. Pode ser necessário ajustar as configurações na caixa de diálogo **Configuração de Página** para imprimir em um tamanho apropriado.
 
 ## <a name="see-also"></a>Consulte também
 

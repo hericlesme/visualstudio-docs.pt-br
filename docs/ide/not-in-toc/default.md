@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: adf65277f4ec7566464f737bf8b4ab5913043bcc
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # Ajuda com F1
 
@@ -37,4 +37,4 @@ Se você estiver procurando pela ajuda com F1 em uma palavra-chave ou nome de AP
 
 ## Ajude-nos a melhorar a F1
 
-Ajude-nos a melhorar a experiência de ajuda da tecla F1, deixando comentários sobre o que você estava procurando quando pressionou **F1**. Por exemplo, em qual símbolo ou janela seu cursor estava? Use o botão **Fornecer comentários sobre a documentação** abaixo. Obrigado!
+Ajude-nos a melhorar a experiência da ajuda com F1. Registre um problema com a ajuda do produto clicando no botão **Fornecer comentários sobre o produto** abaixo. Inclua com o que você buscava ajuda quando pressionou **F1**, por exemplo, o símbolo ou janela em que o cursor se encontrava. Obrigado!

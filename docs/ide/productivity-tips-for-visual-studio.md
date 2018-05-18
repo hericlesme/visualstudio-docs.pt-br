@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -37,7 +37,7 @@ Escreva código mais rapidamente usando os seguintes recursos.
 
      Para inserir um trecho, na barra de menus, escolha **Editar** > **IntelliSense** > **Inserir Trecho** ou **Cercar com**, ou abra o menu de atalho em um arquivo e escolha **Trecho** > **Inserir Trecho** ou **Cercar com**. Para obter mais informações, consulte [Trechos de Código](../ide/code-snippets.md).
 
-- **Corrija erros de código embutidos**. As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o código de maneira fácil com uma única ação. Essas ações podem ser aplicadas usando o ícone de Lâmpada ![Ícone de lâmpada pequeno](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") ou pressionando **Alt**+**Enter** ou **Ctrl**+**.** quando o cursor estiver sobre a linha de código apropriada. Consulte [Ações Rápidas](quick-actions.md) para obter mais informações.
+- **Corrija erros de código embutidos**. As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o código de maneira fácil com uma única ação. Essas ações podem ser aplicadas usando os ícones de chave de fenda ![ícone de chave de fenda](media/screwdriver-icon.png) ou de lâmpada ![ícone de lâmpada](media/light-bulb-icon.png) ou pressionando **Alt**+**Enter** ou **Ctrl**+**.** quando o cursor estiver sobre a linha de código apropriada. Consulte [Ações Rápidas](quick-actions.md) para obter mais informações.
 
 - **Exibir e editar a definição de um elemento de código**. Você pode exibir e editar rapidamente o módulo no qual um elemento de código, como um membro, uma variável ou um local, é definido.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: criar um aplicativo simples com o C# ou o Visual Basic'
+title: 'Passo a passo: Criar um aplicativo simples com o C# ou o Visual Basic'
 ms.date: 10/03/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
@@ -13,13 +13,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0b386af06bb977a6319cf52b92806b150747ca5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 99cf1990f668641b9570ff1e295f04e8f08e53ed
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Passo a passo: criar um aplicativo simples com o C# ou o Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Passo a passo: Criar um aplicativo simples com o C# ou o Visual Basic
 Ao concluir este passo a passo, você estará familiarizado com vários designers, ferramentas e caixas de diálogo que poderão ser usados no desenvolvimento de aplicativos com o Visual Studio. Você vai criar um aplicativo "Olá, Mundo", simples, projetar a interface do usuário, adicionar código e depurar erros enquanto aprende sobre o trabalho no IDE (ambiente de desenvolvimento integrado).
 
 ##  <a name="BKMK_ConfigureIDE"></a> Configurar o IDE
@@ -36,36 +36,36 @@ Depois que o Visual Studio for iniciado, você verá as janelas de ferramentas, 
 ### <a name="create-the-project"></a>Criar o projeto
 Ao criar um aplicativo no Visual Studio, você cria primeiro um projeto e uma solução. Para este exemplo, você criará um projeto do WPF (Windows Presentation Foundation).
 
-#### <a name="to-create-the-wpf-project"></a>Para criar o projeto WPF
+#### <a name="create-the-wpf-project"></a>Criar o projeto WPF
 
-1.  Crie um novo projeto. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto...**.
+1.  Crie um novo projeto. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 
      ![Na barra de menus, escolha Arquivo, Novo, Projeto](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
 
-2.  Escolha o modelo de Aplicativo WPF do Visual Basic ou do Visual C#, selecionando no painel esquerdo **Instalados**, **Visual C#**, **Área de Trabalho Clássica do Windows**, por exemplo e, em seguida, escolhendo **Aplicativo WPF (.NET Framework)** no painel central.  Nomeie o projeto HelloWPFApp na parte inferior da caixa de diálogo Novo Projeto.
+2.  Escolha o modelo de Aplicativo WPF do Visual Basic ou do Visual C# escolhendo no painel esquerdo **Instalados** > **Visual C#** > **Área de Trabalho Clássica do Windows**, por exemplo e, em seguida, escolhendo **Aplicativo WPF (.NET Framework)** no painel central.  Nomeie o projeto `HelloWPFApp` na parte inferior da caixa de diálogo **Novo Projeto**.
 
      ![Criar um Projeto WPF do C#, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")
 
-O Visual Studio cria o projeto e a solução HelloWPFApp e o **Gerenciador de Soluções** mostra os diversos arquivos. O WPF Designer mostra um modo de exibição de design e um modo de exibição XAML de MainWindow.xaml em um modo divisão. É possível deslizar o divisor para mostrar mais ou menos de cada exibição.  É possível optar por ver apenas a exibição visual ou apenas a exibição XAML. (Para obter mais informações, consulte [Designer do WPF para Desenvolvedores do Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Os seguintes itens aparecem no **Gerenciador de Soluções**:
+O Visual Studio cria o projeto e a solução HelloWPFApp e o **Gerenciador de Soluções** mostra os diversos arquivos. O **Designer do WPF** mostra um modo de exibição de Design e um modo de exibição XAML de *MainWindow.xaml* em um modo divisão. É possível deslizar o divisor para mostrar mais ou menos de cada exibição.  É possível optar por ver apenas a exibição visual ou apenas a exibição XAML. (Para obter mais informações, consulte [Designer do WPF para desenvolvedores do Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca).) Os seguintes itens aparecem no **Gerenciador de Soluções**:
 
 ![Gerenciador de Soluções com os arquivos do HelloWPFApp carregados](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")
 
 Depois de criar o projeto, você poderá personalizá-lo. Ao usar a janela **Propriedades** (encontrada no menu **Exibir**), é possível exibir e alterar opções para itens de projeto, controles e outros itens em um aplicativo.
 
-#### <a name="to-change-the-name-of-mainwindowxaml"></a>Para alterar o nome de MainWindow.xaml
+#### <a name="change-the-name-of-mainwindowxaml"></a>Alterar o nome de MainWindow.xaml
 Vamos dar um nome mais específico para MainWindow.
 
-1. No **Gerenciador de Soluções**, selecione MainWindow.xaml. Você deverá ver a janela **Propriedades**, mas se ela não for exibida, escolha o menu **Exibir** e, em seguida, o item **Janela Propriedades**.
+1. No **Gerenciador de Soluções**, selecione *MainWindow.xaml*. Você deverá ver a janela **Propriedades**, mas se ela não for exibida, escolha o menu **Exibir** e, em seguida, o item **Janela Propriedades**.
 2. Altere a propriedade **Nome de Arquivo** para `Greetings.xaml`.
 
      ![Janela Propriedades com nome de arquivo realçado](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE-FilenameinPropertiesWindow")
 
-     O **Gerenciador de Soluções** mostra que o nome do arquivo agora é Greetings.xaml e o arquivo de código aninhado agora é chamado de Greetings.xaml.vb ou Greetings.xaml.cs. Esse arquivo de código é aninhado sob o nó do arquivo .xaml para mostrar que eles são intimamente relacionados.
+     O **Gerenciador de Soluções** mostra que o nome do arquivo agora é *Greetings.xaml* e o arquivo de código aninhado agora é chamado de *Greetings.xaml.vb* ou *Greetings.xaml.cs*. Esse arquivo de código é aninhado sob o nó do arquivo *.xaml* para mostrar que eles estão intimamente relacionados.
 
 ### <a name="design-the-user-interface-ui"></a>Criar a interface do usuário
-Adicionaremos três tipos de controle a este aplicativo: um controle TextBlock, dois controles RadioButton e um controle Button.
+Adicionaremos três tipos de controles a este aplicativo: um controle <xref:System.Windows.Controls.TextBlock>, dois controles <xref:System.Windows.Controls.RadioButton> e um controle <xref:System.Windows.Controls.Button>.
 
-#### <a name="to-add-a-textblock-control"></a>Para adicionar um controle TextBlock
+#### <a name="add-a-textblock-control"></a>Adicionar um controle TextBlock
 
 1.  Abra a janela **Caixa de ferramentas** escolhendo o menu **Exibir** e o item **Caixa de ferramentas**.
 
@@ -85,7 +85,7 @@ A marcação XAML deve ter uma aparência semelhante a esta:
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
 ```
 
-#### <a name="to-customize-the-text-in-the-text-block"></a>Para personalizar o texto no bloco de texto
+#### <a name="customize-the-text-in-the-text-block"></a>Personalizar o texto no bloco de texto
 
 1.  Na exibição XAML, localize a marcação de TextBlock e altere o atributo Text:
 
@@ -93,11 +93,11 @@ A marcação XAML deve ter uma aparência semelhante a esta:
    Text="Select a message option and then choose the Display button."
    ```
 
-2.  Se necessário, centralize novamente o TextBlock e salve as alterações pressionando **CTRL-S** ou usando o item de menu **Arquivo**.
+2.  Se necessário, centralize novamente o TextBlock e salve as alterações pressionando **Ctrl**+**S** ou usando o item de menu **Arquivo**.
 
 Em seguida, você adicionará dois controles [RadioButton](/dotnet/framework/wpf/controls/radiobutton) ao formulário.
 
-#### <a name="to-add-radio-buttons"></a>Para adicionar botões de opção
+#### <a name="add-radio-buttons"></a>Adicionar botões de opção
 
 1.  Na **Caixa de Ferramentas**, localize o controle **RadioButton**.
 
@@ -109,21 +109,21 @@ Em seguida, você adicionará dois controles [RadioButton](/dotnet/framework/wpf
 
      ![Formulário Greetings com bloco de texto e dois botões de opção](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")
 
-3.  Na janela **Propriedades** do controle RadioButton esquerdo, altere a propriedade **Nome** (a propriedade na parte superior da janela **Propriedades**) para **HelloButton**.
+3.  Na janela **Propriedades** do controle RadioButton esquerdo, altere a propriedade **Nome** (a propriedade na parte superior da janela **Propriedades**) para `HelloButton`.
 
      ![Janela Propriedades de RadioButton](../ide/media/exploreide-buttonproperties.png "exploreide-buttonproperties")
 
-4.  Na janela **Propriedades** do controle RadioButton direito, altere a propriedade **Nome** para **GoodbyeButton** e salve as alterações.
+4.  Na janela **Propriedades** do controle RadioButton direito, altere a propriedade **Name** para `GoodbyeButton` e, em seguida, salve as alterações.
 
 Agora você pode adicionar o texto de exibição para cada controle RadioButton. O procedimento a seguir atualiza a propriedade **Conteúdo** de um controle RadioButton.
 
-#### <a name="to-add-display-text-for-each-radio-button"></a>Para adicionar o texto de exibição para cada botão de opção
+#### <a name="add-display-text-for-each-radio-button"></a>Adicionar o texto de exibição de cada botão de opção
 
-1.  Na superfície de design, abra o menu de atalho de HelloButton, pressionando o botão direito do mouse em HelloButton, escolha **Editar Texto** e, em seguida, insira "Hello".
+1.  Na área de design, abra o menu de atalho de HelloButton pressionando o botão direito do mouse em HelloButton, escolha **Editar Texto** e, em seguida, insira `Hello`.
 
-2.  Abra o menu de atalho de GoodbyeButton, pressionando o botão direito do mouse sobre GoodbyeButton, escolha **Editar Texto** e, em seguida, digite "Goodbye".
+2.  Abra o menu de atalho de GoodbyeButton pressionando o botão direito do mouse em GoodbyeButton, escolha **Editar Texto** e, em seguida, insira `Goodbye`.
 
-### <a name="to-set-a-radio-button-to-be-checked-by-default"></a>Para definir que um botão de opção permaneça marcado por padrão
+### <a name="set-a-radio-button-to-be-checked-by-default"></a>Definir que um botão de opção faça check-in por padrão
 Nesta etapa, definiremos que o HelloButton permaneça marcado por padrão, de maneira que um dos botões de dois opção esteja sempre selecionado.
 
 Na exibição XAML, localize a marcação do HelloButton e adicione um atributo **IsChecked**:
@@ -134,7 +134,7 @@ IsChecked="True"
 
 O elemento final da interface do usuário que você adicionará é um controle de [Botão](/dotnet/framework/wpf/controls/button).
 
-#### <a name="to-add-the-button-control"></a>Para adicionar o controle de botão
+#### <a name="add-the-button-control"></a>Adicionar o controle de botão
 
 1.  Na **Caixa de Ferramentas**, localize o controle de **Botão** e, em seguida, adicione-o à superfície de design sob os controles RadioButton, arrastando-o para o formulário no modo de exibição de Design.
 
@@ -146,13 +146,13 @@ O elemento final da interface do usuário que você adicionará é um controle d
 
      ![Formulário Greetings com rótulos de controle](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")
 
-### <a name="add-code-to-the-display-button"></a>Adicionar código ao botão Exibir
-Quando esse aplicativo é executado, uma caixa de mensagem é exibida depois que um usuário escolhe um botão de opção e, em seguida, escolhe o botão **Exibir**. Uma caixa de mensagem será exibida para Olá e outra para Até logo. Para criar esse comportamento, você adicionará código ao evento Button_Click em Greetings.xaml.vb ou em Greetings.xaml.cs.
+### <a name="add-code-to-the-display-button"></a>Adicionar um código ao botão de exibição
+Quando esse aplicativo é executado, uma caixa de mensagem é exibida depois que um usuário escolhe um botão de opção e, em seguida, escolhe o botão **Exibir**. Uma caixa de mensagem será exibida para Olá e outra para Até logo. Para criar esse comportamento, você adicionará um código ao evento `Button_Click` em *Greetings.xaml.vb* ou *Greetings.xaml.cs*.
 
 #### <a name="add-code-to-display-message-boxes"></a>Adicionar código a caixas de mensagem de exibição
 1.  Na superfície de design, clique duas vezes no botão **Exibição**.
 
-     Greetings.xaml.vb ou Greetings.xaml.cs é aberto, com o cursor no evento Button_Click.
+     *Greetings.xaml.vb* ou *Greetings.xaml.cs* é aberto, com o cursor no evento `Button_Click`.
 
     ```vb
     Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
@@ -190,12 +190,12 @@ Quando esse aplicativo é executado, uma caixa de mensagem é exibida depois que
 3.  Salve o aplicativo.
 
 ##  <a name="BKMK_DebugTest"></a> Depurar e testar o aplicativo
-Em seguida, você depurará o aplicativo para procurar erros e testar se ambas as caixas de mensagem são exibidas corretamente. As instruções a seguir descrevem como compilar e iniciar o depurador, mas, posteriormente, é possível ler [Compilando um aplicativo WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) e [Depurando o WPF](../debugger/debugging-wpf.md) para obter mais informações.
+Em seguida, você depurará o aplicativo para procurar erros e testar se ambas as caixas de mensagem são exibidas corretamente. As instruções a seguir descrevem como criar e iniciar o depurador, mas, posteriormente, leia [Compilar um aplicativo WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) e [Depurar o WPF](../debugger/debugging-wpf.md) para obter mais informações.
 
 ### <a name="find-and-fix-errors"></a>Localizar e corrigir erros
-Nesta etapa, você encontrará o erro que nós causamos anteriormente alterando o nome do arquivo MainWindow.xaml.
+Nesta etapa, você encontrará o erro que causamos anteriormente alterando o nome do arquivo *MainWindow.xaml*.
 
-#### <a name="to-start-debugging-and-find-the-error"></a>Para iniciar a depuração e localizar o erro
+#### <a name="start-debugging-and-find-the-error"></a>Iniciar a depuração e localizar o erro
 
 1.  Inicie o depurador selecionando **Depurar** e **Iniciar Depuração**.
 
@@ -203,26 +203,26 @@ Nesta etapa, você encontrará o erro que nós causamos anteriormente alterando 
 
      Uma janela de **Modo de Interrupção** é exibida e a janela **Saída** indica que houve uma IOException: não é possível localizar o recurso 'mainwindow.xaml'.
 
-2.  Interrompa o depurador, escolhendo **Depurador**, **Interromper a Depuração**.
+2.  Interrompa o depurador escolhendo **Depurador** > **Interromper a Depuração**.
 
      ![Comando Parar Depuração no menu Depurar](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")
 
-Renomeamos o MainWindow.xaml como Greetings.xaml no início deste passo a passo, mas o código ainda se refere ao mainwindow.xaml como o URI de inicialização do aplicativo. Portanto, o projeto não pode ser iniciado.
+Renomeamos o *MainWindow.xaml* como *Greetings.xaml* no início deste passo a passo, mas o código ainda se refere a *MainWindow.xaml* como o URI de inicialização do aplicativo. Portanto, o projeto não pode ser iniciado.
 
-#### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>Para especificar Greetings.xaml como o URI de inicialização
+#### <a name="specify-greetingsxaml-as-the-startup-uri"></a>Especificar Greetings.xaml como o URI de inicialização
 
-1.  No **Gerenciador de Soluções**, abra o arquivo App.xaml (no projeto de C#) ou o arquivo Application.xaml (no projeto do Visual Basic).
+1.  No **Gerenciador de Soluções**, abra o arquivo *App.xaml* (no projeto do C#) ou o arquivo *Application.xaml* (no projeto do Visual Basic).
 
 2.  Altere `StartupUri="MainWindow.xaml"` para `StartupUri="Greetings.xaml"` e salve as alterações.
 
-Inicie o depurador novamente (pressione **F5**). Você deve ver a janela Saudações do aplicativo. Agora, feche a janela do aplicativo para parar a depuração.
+Inicie o depurador novamente (pressione **F5**). Você deverá ver a janela **Saudações** do aplicativo. Agora, feche a janela do aplicativo para parar a depuração.
 
-### <a name="to-debug-with-breakpoints"></a>Para depurar com pontos de interrupção
-Você pode testar o código durante a depuração ao adicionar alguns pontos de interrupção. Você pode adicionar pontos de interrupção escolhendo **Depurar**, **Alternar Ponto de Interrupção**, clicando na margem esquerda do editor ao lado da linha de código em que você deseja que a interrupção ocorra ou pressionando **F9**.
+### <a name="debug-with-breakpoints"></a>Depurar com pontos de interrupção
+Você pode testar o código durante a depuração ao adicionar alguns pontos de interrupção. Você pode adicionar pontos de interrupção escolhendo **Depurar** > **Ativar/Desativar Ponto de Interrupção**, clicando na margem esquerda do editor ao lado da linha de código em que você deseja que a interrupção ocorra ou pressionando **F9**.
 
-#### <a name="to-add-breakpoints"></a>Para adicionar pontos de interrupção
+#### <a name="add-breakpoints"></a>Adicionar pontos de interrupção
 
-1.  Abra Greetings.xaml.vb ou Greetings.xaml.cs e selecione a linha a seguir: `MessageBox.Show("Hello.")`
+1.  Abra *Greetings.xaml.vb* ou *Greetings.xaml.cs* e selecione a seguinte linha: `MessageBox.Show("Hello.")`
 
 2.  Adicione um ponto de interrupção por meio do menu selecionando **Depurar** e, em seguida, **Ativar/Desativar Ponto de Interrupção**.
 
@@ -238,7 +238,7 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
      A linha `MessageBox.Show("Hello.")` é realçada em amarelo. Na parte inferior do IDE, as janelas Automáticos, Locais e Inspeção estão encaixadas juntas no lado esquerdo e as janelas Pilha de Chamadas, Pontos de Interrupção, Comando, Imediato e Saída estão encaixadas no lado direito.
 
-6.  Na barra de menus, escolha **Depurar**, **Depuração Circular**.
+6.  Na barra de menus, escolha **Depurar** > **Depuração Circular**.
 
      O aplicativo retomará a execução e uma caixa de mensagem com a palavra "Olá" será exibida.
 
@@ -252,14 +252,14 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
 10. Feche a janela do aplicativo para parar a depuração.
 
-11. Na barra de menus, escolha **Depurar**, **Desabilitar Todos os Pontos de Interrupção**.
+11. Na barra de menus, escolha **Depurar** > **Desabilitar Todos os Pontos de Interrupção**.
 
 ### <a name="build-a-release-version-of-the-application"></a>Criar uma versão de lançamento do aplicativo
  Agora que você verificou que tudo está funcionando, já pode preparar um build de versão do aplicativo.
 
-#### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Para limpar os arquivos de solução e criar uma versão de lançamento
+#### <a name="clean-the-solution-files-and-build-a-release-version"></a>Limpar os arquivos de solução e criar uma versão de lançamento
 
-1.  No menu principal, selecione **Build**, **Limpar solução**, para excluir arquivos intermediários e arquivos de saída criados durante builds anteriores. Isso não é necessário, mas limpa as saídas de build de depuração.
+1.  No menu principal, selecione **Build** > **Limpar solução** para excluir arquivos intermediários e arquivos de saída criados durante builds anteriores. Isso não é necessário, mas limpa as saídas de build de depuração.
 
      ![O comando Limpar Solução no menu Compilar](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")
 
@@ -271,10 +271,10 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
      ![Comando Compilar Solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-Parabéns por concluir este passo a passo! É possível encontrar o .exe compilado na solução e no diretório do projeto (…\HelloWPFApp\HelloWPFApp\bin\Release\\). Se desejar explorar mais exemplos, consulte [Amostras do Visual Studio](../ide/visual-studio-samples.md).
+Parabéns por concluir este passo a passo! Encontre o *.exe* compilado na solução e no diretório do projeto (*...\HelloWPFApp\HelloWPFApp\bin\Release*). Se desejar explorar mais exemplos, consulte [Amostras do Visual Studio](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Novidades no Visual Studio 2017](../ide/whats-new-in-visual-studio.md)
-- [Introdução ao desenvolvimento com o Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+- [Introdução ao desenvolvimento com Visual Studio](../ide/get-started-developing-with-visual-studio.md)
 - [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md)

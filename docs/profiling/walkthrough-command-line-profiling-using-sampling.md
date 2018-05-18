@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Instruções passo a passo: criação de perfil de linha de comando usando amostragem
 
@@ -54,13 +54,13 @@ A amostragem é um método de criação de perfil pelo qual um processo específ
 
 4. Digite o comando a seguir para definir as variáveis de ambiente apropriadas:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. Inicie criação de perfil executando VSPerfCmd.exe, que é a ferramenta de linha de comando que controla o criador de perfil. O comando a seguir inicia o aplicativo e o criador de perfil no modo de amostragem:
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ A amostragem é um método de criação de perfil pelo qual um processo específ
 
 9. Desligue o criador de perfil. Digite o seguinte comando:
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. Use o comando a seguir para redefinir as variáveis de ambiente:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ A amostragem é um método de criação de perfil pelo qual um processo específ
 
     - Gere um arquivo de valores separados por vírgulas (.csv) usando a ferramenta de linha de comando VSPerfReport.exe. Para gerar relatórios de uso fora do IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], use o seguinte comando:
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

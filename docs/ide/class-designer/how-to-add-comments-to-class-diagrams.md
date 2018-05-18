@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 372e92c2edb9110d6fdde45cb5381c7b420b4b03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Como adicionar comentários a diagramas de classe (Designer de Classe)
+# <a name="how-to-add-comments-to-class-diagrams"></a>Como adicionar comentários a diagramas de classe
 
 Você pode usar formas de comentário para anotar os diagramas de classe. Uma forma de comentário tem uma propriedade, **Texto**, na qual você pode digitar texto. Formas de comentário existem apenas na superfície do diagrama, e não no código.
 

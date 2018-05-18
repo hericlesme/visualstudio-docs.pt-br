@@ -2,16 +2,22 @@
 layout: LandingPage
 title: Implantando seus aplicativos no Visual Studio | Microsoft Docs
 description: Saiba como usar o Visual Studio 2017 para implantar aplicativos, serviços e componentes.
+ms.topic: landing-page
 ms.technology: vs-ide-deployment
-ms.openlocfilehash: 269cf84fcb1a1928983c9a9c12f97dd616eae7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.author: mikejo
+author: mikejo5000
+manager: douge
+ms.openlocfilehash: 141348fc5521eb0ffe3989ba5a0d76a251308515
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="deployment-in-visual-studio"></a>Implantação no Visual Studio
 
 O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implantar seus aplicativos.
+
+<h2>Experimente a implantação do Visual Studio com "Guias de Início Rápido" de 5 minutos</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -21,11 +27,11 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implanta
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visão geral dos recursos de implantação</h3>
+                        <h3>Introdução às opções de implantação</h3>
                     </div>
                 </div>
             </div>
@@ -39,7 +45,7 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implanta
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +63,7 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implanta
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,11 +81,88 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implanta
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Implantar no Serviço de Aplicativo do Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>Aprofundar-se com os tutoriais</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/dotnet/core/deploying/deploy-with-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Implantar um aplicativo .NET Core</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows/uwp/packaging/packaging-uwp-apps">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Empacotar um aplicativo UWP para a Microsoft Store</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Implantar o ASP.NET no Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows/uwp/porting/desktop-to-uwp-packaging-dot-net">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Empacotar um aplicativo da área de trabalho para a Microsoft Store (C#, C++)</h3>
                     </div>
                 </div>
             </div>
@@ -93,7 +176,7 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implanta
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Python.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -105,17 +188,35 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implanta
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <a href="tutorial-import-publish-settings-azure.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Implantação no Visual C++</h3>
+                        <h3>Importar configurações de publicação e implantar no Serviço de Aplicativo do Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="tutorial-import-publish-settings-iis.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Importar configurações de publicação e implantar no IIS</h3>
                     </div>
                 </div>
             </div>
@@ -129,11 +230,29 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a implanta
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Implantar um aplicativo da área de trabalho usando o ClickOnce</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Saiba mais sobre a implantação no Visual C++</h3>
                     </div>
                 </div>
             </div>

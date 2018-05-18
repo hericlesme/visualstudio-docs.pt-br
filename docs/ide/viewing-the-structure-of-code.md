@@ -1,5 +1,5 @@
 ---
-title: Exibindo a estrutura do código no Visual Studio
+title: Exibir a estrutura do código no Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>Exibir a estrutura do código
 
@@ -56,11 +56,11 @@ Caso tenha sido realizado o check-in do seu projeto para controle do código-fon
 
 ### <a name="class-view-toolbar"></a>Barra de Ferramentas Modo de Exibição de Classe
 
-A barra de ferramentas Modo de Exibição de Classe contém os comandos a seguir.
+A barra de ferramentas **Modo de Exibição de Classe** contém os comandos a seguir.
 
 |||
 |-|-|
-|**Nova Pasta**|Cria uma pasta ou subpasta virtual na qual você pode organizar os elementos usados com frequência. Eles são salvos no arquivo de solução ativo (.suo). Após você renomear ou excluir um elemento em seu código, ele pode aparecer em uma pasta virtual como um nó de erro. Para corrigir esse problema, exclua o nó de erro. Se tiver renomeado um elemento, você pode movê-lo da hierarquia do projeto para a pasta novamente.|
+|**Nova Pasta**|Cria uma pasta ou subpasta virtual na qual você pode organizar os elementos usados com frequência. Eles são salvos no arquivo da solução ativa (*.suo*). Após você renomear ou excluir um elemento em seu código, ele pode aparecer em uma pasta virtual como um nó de erro. Para corrigir esse problema, exclua o nó de erro. Se tiver renomeado um elemento, você pode movê-lo da hierarquia do projeto para a pasta novamente.|
 |**Voltar**|Navega para o item selecionado anteriormente.|
 |**Avançar**|Navega para o item selecionado seguinte.|
 |**Exibir em Diagrama de Classe** (somente em projetos de código gerenciado)|É disponibilizado quando você seleciona um namespace ou tipo no **Modo de Exibição de Classe**. Quando um namespace é selecionado, o diagrama de classe mostra todos os tipos contidos nele. Quando um tipo é selecionado, o diagrama de classe mostra apenas esse tipo.|
@@ -90,7 +90,7 @@ O menu de atalho no **Modo de Exibição de Classe** pode conter os seguintes co
 |**Ir para Definição**|Localiza a definição do elemento no código-fonte ou no **Pesquisador de Objetos** se o elemento não estiver definido no projeto aberto.|
 |**Procurar definição**|Exibe o item selecionado no **Pesquisador de Objetos**.|
 |**Localizar Todas as Referências**|Localiza o item do objeto selecionado e exibe os resultados em uma janela **Localizar Resultados**.|
-|**Filtrar por Tipo** (somente código gerenciado)|Exibe apenas o namespace ou o tipo selecionado. É possível remover o filtro escolhendo o botão **Limpar Localizar** (X) ao lado da caixa **Localizar**.|
+|**Filtrar por Tipo** (somente código gerenciado)|Exibe apenas o namespace ou o tipo selecionado. Remova o filtro escolhendo o botão **Limpar Localizar** (**X**) ao lado da caixa **Localizar**.|
 |**Copiar**|Copia o nome totalmente qualificado do item.|
 |**Classificar em Ordem Alfabética**|Lista tipos e membros em ordem alfabética por nome.|
 |**Classificar por Tipo de Membro**|Lista tipos e membros ordenados segundo o tipo (de forma que classes precedam interfaces, interfaces precedam representantes e métodos precedam propriedades).|
@@ -130,11 +130,11 @@ O menu de atalho na janela **Hierarquia de Chamada** contém os comandos a segui
 
 A janela **Pesquisador de Objetos** exibe descrições do código em seus projetos.
 
-Você pode filtrar os componentes que deseja exibir usando a lista suspensa na parte superior da janela. Componentes personalizados podem incluir executáveis de código gerenciado, assemblies de biblioteca, bibliotecas de tipos e arquivos .ocx. Não é possível adicionar componentes personalizados C++. Configurações personalizadas são salvas no diretório de aplicativo do usuário do Visual Studio, %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.
+Você pode filtrar os componentes que deseja exibir usando a lista suspensa na parte superior da janela. Componentes personalizados podem incluir executáveis de código gerenciado, assemblies de biblioteca, bibliotecas de tipos e arquivos *.ocx*. Não é possível adicionar componentes personalizados C++. Configurações personalizadas são salvas no diretório de aplicativos do usuário do Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 O painel esquerdo do **Pesquisador de Objetos** mostra assemblies. É possível expandir os assemblies para exibir os namespaces que eles contêm e, em seguida, expandir os namespaces para exibir os tipos que eles contêm. Quando você seleciona um tipo, seus membros (como propriedades e métodos) são listados no painel direito. O painel inferior direito exibe informações detalhadas sobre o item selecionado.
 
-Você pode pesquisar um item específico usando a caixa **Pesquisar** na parte superior da janela. As pesquisas não diferenciam maiúsculas de minúsculas. Os resultados da pesquisa são exibidos no painel esquerdo. Para limpar uma pesquisa, escolha o botão **Limpar Pesquisa** (X) ao lado da caixa **Pesquisar**.
+Você pode pesquisar um item específico usando a caixa **Pesquisar** na parte superior da janela. As pesquisas não diferenciam maiúsculas de minúsculas. Os resultados da pesquisa são exibidos no painel esquerdo. Para limpar uma pesquisa, escolha o botão **Limpar Pesquisa** (**X**) ao lado da caixa **Pesquisar**.
 
 O **Pesquisador de Objetos** mantém controle das seleções feitas, e você pode navegar entre suas seleções usando os botões **Avançar** e **Voltar** na barra de ferramentas.
 
@@ -185,7 +185,7 @@ A Janela de **Definição de Código** exibe a definição de um membro ou tipo 
 Embora essa janela seja somente leitura, você pode definir pontos de interrupção ou indicadores nela. Para modificar a definição exibida, escolha **Editar Definição** no menu de atalho. Isso abre o arquivo de origem no editor de códigos e move o ponto de inserção para a linha em que a definição começa.
 
 > [!NOTE]
-> A partir do Visual Studio 2015, a Janela de Definição de Código somente pode ser usada com o código C++.
+> A partir do Visual Studio 2015, a janela **Definição de Código** pode ser usada somente com o código C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menu de atalho de Definição de Código
 
@@ -193,8 +193,8 @@ O menu de atalho na Janela de **Definição de Código** pode conter os seguinte
 
 |||
 |-|-|
-|**Ações e Refatorações Rápidas...**||
-|**Renomear...**||
+|**Ações Rápidas e Refatorações**||
+|**Renomear**||
 |**Gerar Grafo de Arquivos de Inclusão**||
 |**Inspecionar Definição**||
 |**Ir para Definição**|Localiza a definição (ou definições, para classes parciais) e as exibe em uma janela **Localizar Resultados**.|

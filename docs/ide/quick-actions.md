@@ -1,5 +1,5 @@
 ---
-title: Ações Rápidas
+title: Ações rápidas, lâmpadas e chaves de fenda
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quick-actions"></a>Ações Rápidas
 
@@ -29,21 +29,27 @@ As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o có
 - Aplicar uma refatoração (por exemplo, [embutir uma variável temporária](../ide/reference/inline-temporary-variable.md))
 - Gerar um código (por exemplo, [introduzir uma variável local](../ide/reference/introduce-local-variable.md))
 
-As Ações Rápidas podem ser aplicadas usando o ícone de Lâmpada ![Ícone de lâmpada pequeno](media/vs2015_lightbulbsmall.png) ou pressionando **Ctrl**+**.** quando o cursor estiver em uma linha de código para a qual uma ação está disponível. Você verá uma lâmpada se houver um rabisco vermelho e o Visual Studio tiver uma sugestão para corrigir o problema. Por exemplo se você tiver um erro indicado por um rabisco vermelho, uma lâmpada aparecerá quando correções estiverem disponíveis para esse erro.
+As Ações Rápidas podem ser aplicadas usando os ícones de lâmpada ![Ícone de lâmpada](media/light-bulb-icon.png) ou de chave de fenda ![ícone de chave de fenda](media/screwdriver-icon.png) ou pressionando **Ctrl**+**.** quando o cursor estiver em uma linha de código para a qual uma ação está disponível. Você verá uma lâmpada erro ![ícone de lâmpada de erro](media/error-light-bulb-icon.png) se houver um rabisco vermelho, indicando um erro e o Visual Studio terá uma solução disponível para esse erro.
 
 Para qualquer idioma, terceiros podem oferecer diagnósticos e sugestões personalizados, por exemplo, como parte de um SDK, e as lâmpadas do Visual Studio são acesas de acordo com essas regras.
 
-## <a name="to-see-a-light-bulb"></a>Para ver uma lâmpada
+## <a name="icons"></a>Ícones
 
-1. Em muitos casos, as lâmpadas aparecem espontaneamente ao focalizar o mouse no ponto de um erro ou na margem esquerda do editor ao mover o cursor em uma linha que contém um erro. Quando você vir um rabisco vermelho, poderá focalizar o mouse sobre ele para exibir a lâmpada. Você também poderá fazer com que uma lâmpada seja exibida ao usar o mouse ou o teclado para ir para qualquer lugar da linha em que ocorre o problema.
+O ícone exibido quando uma Ação Rápida fica disponível oferece uma indicação do tipo de correção ou que a refatoração está disponível. O ícone de *chave de fenda* ![ícone de chave de fenda](media/screwdriver-icon.png) indica apenas que há ações disponíveis para alterar o código, mas você não deve necessariamente usá-las. O ícone de *lâmpada amarela* ![ícone de lâmpada](media/light-bulb-icon.png) indica que há ações disponíveis que você *deve* executar para melhorar o seu código. O ícone de *lâmpada de erro* ![ícone de lâmpada de erro](media/error-light-bulb-icon.png) indica que há uma ação disponível que corrige um erro no seu código.
 
-1. Pressione **Ctrl**+**.** em qualquer lugar de uma linha para invocar a lâmpada e ir diretamente para a lista de possíveis correções.
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>Para ver uma lâmpada ou chave de fenda
+
+- Se uma correção estiver disponível, lâmpadas serão exibidas espontaneamente quando você passar o mouse no local de um erro.
 
    ![Lâmpada com o mouse focalizando](../ide/media/vs2015_lightbulb_hover.png)
 
+- Lâmpadas e chaves de fenda são exibidas na margem esquerda do editor quando você move o cursor para uma linha de código para o qual uma Ação Rápida está disponível.
+
+- Pressione **Ctrl**+**.** em qualquer lugar em uma linha para ver uma lista de Ações Rápidas e refatorações disponíveis.
+
 ## <a name="to-see-potential-fixes"></a>Para ver as possíveis correções
 
-Clique na seta para baixo em ou no link **Mostrar possíveis correções** para exibir uma lista de ações rápidas que a lâmpada pode realizar para você.
+Selecione a seta para baixo ao lado da lâmpada ou do link **Mostrar possíveis correções** para exibir uma lista de Ações Rápidas disponíveis.
 
 ![Lâmpada expandida](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

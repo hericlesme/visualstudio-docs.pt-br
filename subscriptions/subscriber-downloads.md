@@ -9,11 +9,11 @@ description: Saiba como localizar e baixar os produtos da Microsoft incluídos n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 28239e7588e99573d709db08255c38142c907098
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visuals Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.  
@@ -24,7 +24,7 @@ Em geral, todos os produtos comerciais e para o consumidor da Microsoft relevant
 
 Há várias razões pelas quais determinados produtos podem não estar disponíveis para assinantes:
 
-- **O produto não está incluído em seu nível de assinatura ou programa.** [Saiba mais](https://www.visualstudio.com/vs/pricing/) sobre o software e os benefícios disponíveis com a sua assinatura ou [baixe a lista completa](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_) de produtos disponíveis por nível de assinatura. Alguns programas, como o [Microsoft Partner Network](https://partner.microsoft.com/), fornecem assinaturas do Visual Studio como parte de seus benefícios.  As assinaturas não incluem todos os produtos incluídos nas assinaturas do Visual Studio compradas. Os assinantes desses programas devem encaminhar suas dúvidas a disponibilidade dos downloads de produtos para as equipes de suporte desses programas.
+- **O produto não está incluído em seu nível de assinatura ou programa.** [Saiba mais](https://www.visualstudio.com/vs/pricing/) sobre o software e os benefícios disponíveis com a sua assinatura ou [baixe a lista completa](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) de produtos disponíveis por nível de assinatura. Alguns programas, como o [Microsoft Partner Network](https://partner.microsoft.com/), fornecem assinaturas do Visual Studio como parte de seus benefícios.  As assinaturas não incluem todos os produtos incluídos nas assinaturas do Visual Studio compradas. Os assinantes desses programas devem encaminhar suas dúvidas a disponibilidade dos downloads de produtos para as equipes de suporte desses programas.
 - **O produto não está incluído nas assinaturas.** Alguns produtos da Microsoft não estão incluídos nas assinaturas devido a termos de licenciamento especiais, restrições técnicas ou relevância do desenvolvedor. Se desejar sugerir que um produto seja adicionado à assinatura, envie um email para o [Atendimento ao Cliente](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
 - **O produto está publicamente disponível.** Algumas ferramentas, SDKs, DDKs e service packs estão publicamente disponíveis no [Centro de Download da Microsoft](https://www.microsoft.com/download). Alguns desses produtos podem não estar publicados nos Downloads.
 - **O produto ainda não foi lançado.**  Muitas versões de pré-lançamento (beta) e Release Candidate estão disponíveis nos Downloads. Entretanto, nem todas as betas podem ser incluídas. Por exemplo, algumas betas exigem qualificação ou registros especiais. Para obter mais informações sobre programas técnicos beta abertos, acesse o [Microsoft Connect](http://connect.microsoft.com/).

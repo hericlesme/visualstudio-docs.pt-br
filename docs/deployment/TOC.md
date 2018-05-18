@@ -1,5 +1,5 @@
 # [Documentação de implantação](index.md)
-# Visão geral
+# Visão Geral
 ## [Visão geral da implantação](deploying-applications-services-and-components-resources.md)
 # Guias de Início Rápido
 ## [Introdução à implantação](deploying-applications-services-and-components.md)
@@ -14,6 +14,8 @@
 ### [Compilando aplicativos ClickOnce por meio da linha de comando](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
 ### [Publicar um aplicativo do ASP.NET Core no Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Importar configurações de publicação e implantar no Azure](tutorial-import-publish-settings-azure.md)
+### [Importar configurações de publicação e implantar no IIS](tutorial-import-publish-settings-iis.md)
 ### [Implantação contínua do ASP.NET Core no Azure com o Git](/aspnet/core/publishing/azure-continuous-deployment)
 ### [Implantar o ASP.NET no IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
 ## Nativo

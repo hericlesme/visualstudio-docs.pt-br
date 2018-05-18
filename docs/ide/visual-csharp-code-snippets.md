@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-code-snippets"></a>Trechos de código C#
 
@@ -26,7 +26,7 @@ Os trechos de código são trechos de código prontos que você pode inserir rap
 
  Você pode inserir um trecho de código no local do cursor ou inserir um trecho de código envolvido com o código atualmente selecionado. A Unidade de Inserção de Trecho de Código é invocada por meio dos comandos **Inserir Trecho de Código** ou **Envolver Com** no menu do **IntelliSense** ou usando os atalhos de teclado **Ctrl**+**K**,**X** ou **Ctrl**+**K**,**S**, respectivamente.
 
- A Unidade de Inserção de Trecho de Código exibe o nome do trecho de código de todos os trechos de código disponíveis. A Unidade de Inserção de Trecho de Código também inclui uma caixa de diálogo de entrada em que você pode digitar o nome ou parte do nome do trecho de código. A Unidade de Inserção de Trecho de Código realça a correspondência mais próxima de um nome de trecho de código. Ao pressionar **Tab** a qualquer momento, a Unidade de Inserção de Trecho de Código será fechada e o trecho de código selecionado será inserido. Ao pressionar **Esc** ou clicar com o mouse no Editor de Código, a Unidade de Inserção de Trecho de Código será fechada sem inserir um trecho de código.
+ A **Unidade de Inserção de Trecho de Código** exibe o nome do trecho de código de todos os trechos de código disponíveis. A Unidade de Inserção de Trecho de Código também inclui uma caixa de diálogo de entrada em que você pode digitar o nome ou parte do nome do trecho de código. A Unidade de Inserção de Trecho de Código realça a correspondência mais próxima de um nome de trecho de código. Ao pressionar **Tab** a qualquer momento, a Unidade de Inserção de Trecho de Código será fechada e o trecho de código selecionado será inserido. Ao pressionar **Esc** ou clicar com o mouse no editor de códigos, a Unidade de Inserção de Trecho de Código será ignorada sem inserir um trecho de código.
 
 ## <a name="default-code-snippets"></a>Trechos de código padrão
 
@@ -57,7 +57,7 @@ Por padrão, os trechos de código a seguir são incluídos no Visual Studio par
 |iterator|Cria um iterador.|Dentro de uma classe ou um struct.|
 |iterindex|Cria um par de iterador e indexador "nomeado" usando uma classe aninhada.|Dentro de uma classe ou um struct.|
 |bloqueio|Cria um bloco [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
-|mbox|Cria uma chamada para <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Talvez seja necessário adicionar uma referência para System.Windows.Forms.dll.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
+|mbox|Cria uma chamada para <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Talvez seja necessário adicionar uma referência a *System.Windows.Forms.dll*.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |namespace|Cria uma declaração de [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dentro de um namespace (incluindo o namespace global).|
 |prop|Cria uma declaração de [propriedade autoimplementada](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dentro de uma classe ou um struct.|
 |propfull|Cria uma declaração de propriedade com os acessadores `get` e `set`.|Dentro de uma classe ou um struct.|
@@ -78,4 +78,4 @@ Por padrão, os trechos de código a seguir são incluídos no Visual Studio par
 - [Funções de trecho de código](../ide/code-snippet-functions.md)
 - [Trechos de código](../ide/code-snippets.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
-- [Como usar trechos de código Surround-with](../ide/how-to-use-surround-with-code-snippets.md)
+- [Como usar trechos de código surround-with](../ide/how-to-use-surround-with-code-snippets.md)

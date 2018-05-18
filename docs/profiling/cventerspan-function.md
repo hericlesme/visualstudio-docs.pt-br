@@ -26,18 +26,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e069b13f3ceda00383bda8d0c33d74059e785f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 48f8d5ac3b53650398f707f67f1d5806b72bce58
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="cventerspan-function"></a>Função CvEnterSpan
 Marca o início de um novo intervalo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```C  
 HRESULT CvEnterSpanW(  
     _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,   
     _Out_ PCV_SPAN* ppSpan,   
@@ -116,10 +116,10 @@ HRESULT CvEnterSpanExVA(
  Contexto de série de marcador válido. Não pode ser NULL.  
   
  `pMessage`  
- Cadeia de formato da mensagem. Não pode ser NULL.  
+ Cadeia de caracteres em formato de mensagem. Não pode ser NULL.  
   
  `ppSpan`  
- Endereço da variável que conterá o objeto de intervalo resultante. O endereço não pode ser NULL; a variável pode ter qualquer valor.  
+ O endereço da variável que conterá o objeto de intervalo resultante. O endereço não pode ser NULL; a variável pode ter qualquer valor.  
   
 ## <a name="return-value"></a>Valor retornado  
  S_OK quando a mensagem é gravada com êxito. Código de erro em caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.  

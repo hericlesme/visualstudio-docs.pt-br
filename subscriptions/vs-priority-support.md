@@ -3,21 +3,21 @@ title: Benefício de Suporte Prioritário da assinatura do Visual Studio | Micro
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 05/07/2018
 ms.topic: Get-Started-Article
 description: Saiba mais sobre o benefício de Suporte Prioritário incluído nas assinaturas do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Suporte Prioritário em assinaturas do Visual Studio
 
-O benefício de Suporte Prioritário fornece acesso a uma variedade de fóruns da comunidade de suporte em que você pode pesquisar postagens existentes ou fazer novas perguntas.  Se a pergunta não for respondida pela comunidade dentro de dois dias, a equipe de suporte da Microsoft fornecerá uma resposta.  
+O benefício de Suporte Prioritário fornece acesso a uma variedade de fóruns da comunidade de suporte em que você pode pesquisar postagens existentes ou fazer novas perguntas.  Se a comunidade não responder sua dúvida dentro de dois dias, a equipe de suporte da Microsoft fornecerá uma resposta.  
 
 Os assinantes com assinaturas selecionadas do Visual Studio estão qualificados para receber suporte prioritário por meio de um grande número de fóruns que abrangem diversos tópicos.
 

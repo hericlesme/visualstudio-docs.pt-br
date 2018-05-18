@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="editing-python-code"></a>Editando o código do Python
 
@@ -33,7 +33,7 @@ Também é possível usar o Pesquisador de Objetos do Visual Studio (**Exibir > 
 
 ## <a name="intellisense"></a>IntelliSense
 
-O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring).
+O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). O Visual Studio 2017 versão 15.7 e posteriores também dão suporte a [dicas de tipo](#type-hints).
 
 Para melhorar o desempenho, o IntelliSense no **Visual Studio 2017 versão 15.5** e anteriores depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do Gerenciador de Soluções) da guia **IntelliSense** (veja [Referência à janela Ambientes](python-environments-window-tab-reference.md#intellisense-tab)).
 
@@ -77,6 +77,46 @@ Digitar @ inicia um decorador e mostra os decoradores possíveis. Muitos desses 
 
 > [!Tip]
 > É possível configurar o comportamento de preenchimentos por meio de **Ferramentas > Opções > Editor de Texto > Python > Avançado**. Dentre eles, **Filtrar lista com base na cadeia de caracteres de pesquisa**: aplica a filtragem de sugestões de preenchimento à medida que você digita (o padrão é marcado); **Preenchimento de membro exibe a interseção dos membros** mostra apenas os preenchimentos que têm suporte em todos os tipos possíveis (o padrão é desmarcado). Consulte [Opções – Resultados de Conclusão](python-support-options-and-settings-in-visual-studio.md#completion-results).
+
+### <a name="type-hints"></a>Dicas de tipo
+
+*Visual Studio 2017 versão 15.7 e posteriores.*
+
+As "dicas de tipo" no Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/)) (python.org) são uma sintaxe de anotação para funções e classes que indicam os tipos de argumentos, valores de retorno e atributos de classe. O IntelliSense exibe dicas de tipo quando você focaliza argumentos, variáveis e chamadas de função que contêm essas anotações.
+
+No exemplo a seguir, a classe `Vector` é declarada como `List[float]` e a função `scale` contém dicas de tipo para seus argumentos e o valor retornado. Passar o mouse sobre uma chamada da função mostra as dicas de tipo:
+
+![Passar o mouse sobre uma chamada de função para revelar dicas de tipo](media/code-editing-type-hints1.png)
+
+No exemplo a seguir, você pode ver como os atributos anotados da classe `Employee` aparecem no pop-up de conclusão de IntelliSense para um atributo:
+
+![Conclusão do IntelliSense exibindo dicas de tipo](media/code-editing-type-hints2.png)
+
+Também é útil validar as dicas de tipo em todo o seu projeto, pois erros normalmente não aparecerão até o tempo de execução. Para isso, o Visual Studio integra a ferramenta padrão da indústria MyPy usando o comando de menu de contexto **Python > Executar Mypy** no **Gerenciador de Soluções**:
+
+![Execute o comando de menu de contexto MyPy no Gerenciador de Soluções](media/code-editing-type-hints-run-mypy.png)
+
+A execução do comando solicitará que você instale o pacote do MyPy, se necessário. Em seguida, o Visual Studio executará o MyPy para validar as dicas de tipo em todos os arquivos Python do projeto. Os erros aparecem na janela **Lista de Erros** do Visual Studio. Selecionar um item na janela navega para a linha apropriada no seu código.
+
+Como um exemplo simples, a definição de função a seguir contém uma dica de tipo que indica que o argumento `input` é do tipo `str`, enquanto a chamada para essa função tenta passar um número inteiro:
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+Usar o comando **Execute Mypy** neste código gera o seguinte erro:
+
+![Exemplo de resultado de MyPy validando dicas de tipo](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> Para versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* (`.pyi`). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, consulte [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Criar stubs para módulos de Python) no wiki do projeto MyPy.
+>
+> No momento, o Visual Studio não dá suporte a dicas de tipo nos comentários.
 
 ### <a name="signature-help"></a>Ajuda da assinatura
 

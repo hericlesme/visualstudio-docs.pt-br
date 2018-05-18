@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1aa969b3c40f4b653b45bbb0da0e5ad3d56bb5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Como alterar entre notação de membro e notação de associação (Designer de Classe)
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Como alterar entre notação de membro e notação de associação no Designer de Classe
 
 No **Designer de Classe**, você pode alterar a maneira que o diagrama de classe representa uma relação de associação entre dois tipos de notação de membro para notação de associação e vice-versa. Membros exibidos como linhas de associação geralmente fornecem uma visualização útil de como os tipos estão relacionados.
 
@@ -41,9 +41,7 @@ No **Designer de Classe**, você pode alterar a maneira que o diagrama de classe
 
 ## <a name="to-change-association-notation-to-member-notation"></a>Para alterar de notação de associação para notação de membro
 
--   No diagrama de classe, clique com o botão direito do mouse na linha de associação e escolha **Mostrar como Propriedade** ou **Mostrar como Campo**, conforme apropriado.
-
-     A linha de associação desaparece e a propriedade é exibida no compartimento apropriado em sua forma de tipo no diagrama.
+No diagrama de classe, clique com o botão direito do mouse na linha de associação e escolha **Mostrar como Propriedade** ou **Mostrar como Campo**, conforme apropriado. A linha de associação desaparece e a propriedade é exibida no compartimento apropriado em sua forma de tipo no diagrama.
 
 ## <a name="see-also"></a>Consulte também
 

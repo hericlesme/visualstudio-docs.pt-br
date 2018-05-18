@@ -11,15 +11,18 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0aa5b844b3743ab80c11971caa26340effe671
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Como dividir uma classe em classes parciais (Designer de Classe)
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Como dividir uma classe em classes parciais no Designer de Classe
 
 Você pode usar a palavra-chave `partial` (`Partial` em Visual Basic) para dividir a declaração de uma classe ou estrutura entre várias declarações. Você pode usar quantas declarações parciais desejar.
 
@@ -36,30 +39,11 @@ Os exemplos a seguir dividem a definição da classe `Employee` em duas declara�
 > [!NOTE]
 > O Visual Basic usa definições de classe parcial para separar o código gerado pelo Visual Studio do código de autoria do usuário. O código é separado em arquivos de origem distintos. Por exemplo, o **Windows Form Designer** define classes parciais para controles, como `Form`. Você não deve modificar o código gerado nesses controles.
 
-
 Para obter mais informações sobre tipos parciais no Visual Basic, consulte [Parcial](/dotnet/visual-basic/language-reference/modifiers/partial).
 
-## <a name="visual-basic-example"></a>Exemplo do Visual Basic
+## <a name="example"></a>Exemplo
 
-Para dividir uma definição de classe no Visual Basic, use a palavra-chave `Partial`, conforme mostrado no exemplo a seguir.
-
-```vb
-' First part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateWorkHours()
-    End Sub
-End Class
-
-' Second part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateTaxes()
-    End Sub
-End Class
-```
-
-## <a name="c-example"></a>Exemplo do C#
-
-Para dividir uma definição de classe no C#, use a palavra-chave `partial`, conforme mostrado no exemplo a seguir.
+Para dividir uma definição de classe, use a palavra-chave `partial` (`Partial` no Visual Basic), conforme mostrado no exemplo a seguir:
 
 ```csharp
 // First part of class definition.
@@ -79,9 +63,23 @@ public partial class Employee
 }
 ```
 
+```vb
+' First part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateWorkHours()
+    End Sub
+End Class
+
+' Second part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateTaxes()
+    End Sub
+End Class
+```
+
 ## <a name="see-also"></a>Consulte também
 
 - [Classes e métodos parciais](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
-- [(partial (tipo)](/dotnet/csharp/language-reference/keywords/partial-type)
+- [partial (tipo) (Referência do C#)](/dotnet/csharp/language-reference/keywords/partial-type)
 - [partial (método) (Referência do C#)](/dotnet/csharp/language-reference/keywords/partial-method)
-- [Parcial](/dotnet/visual-basic/language-reference/modifiers/partial)
+- [Parcial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

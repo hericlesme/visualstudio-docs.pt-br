@@ -1,15 +1,15 @@
 ---
-title: Passo a passo – Incluindo um pacote NuGet no projeto
+title: Incluindo um pacote NuGet no projeto
 description: Este documento aborda como incluir um pacote NuGet em um projeto Xamarin. Ele explica a descoberta e download de um pacote, apresentando também os recursos de integração do IDE.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>Incluindo um pacote NuGet no projeto
 
@@ -26,8 +26,6 @@ Para demonstrar a funcionalidade do pacote NuGet, vejamos primeiro como criar um
 Primeiro, crie um projeto chamado `HelloNuget` conforme ilustrado abaixo. Este exemplo mostra o modelo de Aplicativo de exibição única do iOS, mas funcionaria com qualquer tipo de projeto compatível:
 
 ![Criar novo projeto do iOS](media/nuget-walkthrough-NewProject.png)
-
-<a name="Adding_a_Package" class="injected"></a>
 
 ## <a name="adding-a-package"></a>Adicionar um pacote
 
@@ -50,9 +48,9 @@ Use a caixa de pesquisa no canto superior direito para localizar um pacote espec
 
 Depois que o pacote for baixado, ele será adicionado ao seu projeto. A solução mudará da seguinte maneira:
 
-*   O nó **Referências** conterá uma lista de todos os assemblies que fazem parte de um pacote NuGet.
-*   O nó **Pacotes** exibe cada pacote NuGet que você baixou. Você pode atualizar ou remover um pacote da lista.
-*   Um arquivo **packages.config** será adicionado ao projeto. Esse arquivo XML é usado pelo IDE para controlar quais versões do pacote são referenciada neste projeto. Esse arquivo não deve ser editado manualmente e deve ser mantido no controle de versão. Observe que é possível usar um arquivo project.json em vez de um arquivo packages.config. O arquivo project.json é um formato de arquivo de pacote novo introduzido com o NuGet 3, que dá suporte à restauração transitiva. Informações mais detalhadas sobre o project.json podem ser encontradas na [Documentação do NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). O arquivo project.json precisa ser adicionado manualmente e o projeto fechado e reaberto para que o arquivo possa ser usado no Visual Studio para Mac.
+* O nó **Referências** conterá uma lista de todos os assemblies que fazem parte de um pacote NuGet.
+* O nó **Pacotes** exibe cada pacote NuGet que você baixou. Você pode atualizar ou remover um pacote da lista.
+* Um arquivo **packages.config** será adicionado ao projeto. Esse arquivo XML é usado pelo IDE para controlar quais versões do pacote são referenciada neste projeto. Esse arquivo não deve ser editado manualmente e deve ser mantido no controle de versão. Observe que é possível usar um arquivo project.json em vez de um arquivo packages.config. O arquivo project.json é um formato de arquivo de pacote novo introduzido com o NuGet 3, que dá suporte à restauração transitiva. Informações mais detalhadas sobre o project.json podem ser encontradas na [Documentação do NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). O arquivo project.json precisa ser adicionado manualmente e o projeto fechado e reaberto para que o arquivo possa ser usado no Visual Studio para Mac.
 
 ## <a name="using-nuget-packages"></a>Usando pacotes NuGet
 
@@ -60,8 +58,9 @@ Depois que o pacote NuGet foi adicionado e as referências de projeto foram atua
 
 Verifique se você adicionou as diretivas `using` necessárias na parte superior do arquivo:
 
-
-    using Newtownsoft.json;
+```csharp
+using Newtownsoft.json;
+```
 
 A maioria dos NuGet fornecem informações adicionais, como um LEIAME ou um link da página do Projeto para a fonte do Nuget. Normalmente, um link para isso é encontrado na sinopse do pacote na página Adicionar pacotes:
 

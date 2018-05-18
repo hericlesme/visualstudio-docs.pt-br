@@ -13,13 +13,13 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-visual-basic-in-visual-studio"></a>Introdução ao Visual Basic no Visual Studio
+# <a name="get-started-with-visual-basic-in-visual-studio"></a>Introdução ao Visual Basic no Visual Studio
 
 Neste tutorial para o Visual Basic (VB), você usará o Visual Studio para criar e executar alguns aplicativos de console diferentes e explorar alguns recursos do [IDE (ambiente de desenvolvimento integrado)](visual-studio-ide.md) do Visual Studio enquanto isso.
 
@@ -55,7 +55,7 @@ Primeiro, criaremos um projeto de aplicativo do Visual Basic. O tipo de projeto 
 
 1. Abra o Visual Studio 2017.
 
-2. Na barra de menus superior, selecione **Arquivo** > **Novo** > **Projeto...**.
+2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
 3. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **Visual Basic** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo como *HelloWorld*.  
 
@@ -74,8 +74,7 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
    ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: usar a barra de menus Ferramentas
-
-1. Cancele a caixa de diálogo **Novo Projeto** e, na barra de menus superior, escolha **Ferramentas** > **Obter Ferramentas e Recursos...**.
+1. Cancele a caixa de diálogo **Novo Projeto**; em seguida, vá até a barra de menus superior e escolha **Ferramentas** > **Obter Ferramentas e Recursos**.
 
 2. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.   
 
@@ -107,8 +106,7 @@ Vamos criar um aplicativo que solicita o nome e o exibe juntamente com a data e 
 5. Pressione qualquer tecla para fechar a janela de console.
 
 ## <a name="create-a-calculate-this-application"></a>Criar um aplicativo “Calcular isso”
-
-1. Abra o Visual Studio 2017 e, na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto...**.
+1. Abra o Visual Studio 2017 e, na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
 2. Na caixa de diálogo **Novo Projeto**, no painel esquerdo, expanda **Visual Basic** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo como *CalculateThis*.  
 
@@ -145,4 +143,4 @@ Parabéns por concluir este tutorial. Para saber ainda mais sobre o Visual Basic
 * [Novidades no Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense para arquivos de código do Visual Basic](visual-basic-specific-intellisense.md)
 * [Referência da linguagem Visual Basic](/dotnet/visual-basic/language-reference/index)
-* Curso em vídeo [Conceitos básicos do Visual Basic para iniciantes completos](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+* Curso em vídeo [Visual Basic fundamentals for absolute beginners (Conceitos básicos do Visual Basic para iniciantes absolutos)](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)

@@ -1,20 +1,21 @@
 ---
 title: Ações de Build
+description: Este artigo descreve as diferentes ações de build que podem ser usadas para projetos em C#
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 889414d391a4a894879399317d782df58a8bacb3
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="build-actions"></a>Ações de Build
 
 Todos os arquivos em um projeto do Visual Studio para Mac tem uma ação de build que controla o que acontece com o arquivo durante um build. Elas podem ser definidas clicando com o botão direito do mouse em qualquer arquivo e navegando para **Ação de Build**, conforme ilustrado abaixo:
 
-![](media/projects-and-solutions-image1.png)
+![Selecionando ação de compilação de build no Gerenciador de Soluções](media/projects-and-solutions-image1.png)
 
 Algumas das ações de build comuns para projetos C# são:
 

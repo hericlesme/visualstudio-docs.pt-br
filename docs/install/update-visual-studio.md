@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c0a53ca3a5b7eb292a2b2bdd1e95b9319205bcf3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Atualizar o Visual Studio 2017 para a versão mais recente
 
@@ -54,7 +54,7 @@ Quando houver uma atualização, haverá um sinalizador de notificação corresp
      A atualização continuará. Em seguida, quando ele for concluído, o Visual Studio será reiniciado.
 
      > [!NOTE]
-     > Se você executar o Visual Studio em modo de administrador, será necessário reiniciar manualmente o Visual Studio após a atualização.    
+     > Quando você executar o Visual Studio em modo de administrador, será necessário reiniciar manualmente o Visual Studio após a atualização.
 
 ### <a name="use-the-ide"></a>Usar o IDE
 
@@ -71,7 +71,7 @@ Você pode verificar se há uma atualização e, em seguida, instalar a atualiza
    A atualização continua conforme descrito na seção anterior e, em seguida, o Visual Studio é reiniciado após a atualização ser concluída com êxito.
 
    > [!NOTE]
-   > Se você executar o Visual Studio em modo de administrador, será necessário reiniciar manualmente o Visual Studio após a atualização.  
+   > Quando você executar o Visual Studio em modo de administrador, será necessário reiniciar manualmente o Visual Studio após a atualização.
 
 ### <a name="use-the-visual-studio-installer"></a>Usar o instalador do Visual Studio
 

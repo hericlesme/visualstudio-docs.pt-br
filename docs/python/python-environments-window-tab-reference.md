@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -36,7 +36,7 @@ Fornece informações básicas e comandos para o ambiente:
 
 | Comando | Descrição |
 | --- | --- |
-| Tornar este ambiente padrão para novos projetos | Definir o ambiente ativo, o que pode fazer com que o Visual Studio pare de responder brevemente enquanto ele carrega o banco de dados do IntelliSense. Ambientes com muitos pacotes podem parar de responder por um período maior. |
+| Tornar este ambiente padrão para novos projetos | Definir o ambiente ativo, o que pode fazer com que o Visual Studio (2017 versão 15.5 e anteriores) pare de responder brevemente enquanto carrega o banco de dados do IntelliSense. Ambientes com muitos pacotes podem parar de responder por um período maior. |
 | Visitar o site do distribuidor | Abre um navegador para a URL fornecida para a distribuição de Python. Python 3. x, por exemplo, vai para python.org. |
 | Abrir a janela interativa | Abre a [janela interativa (REPL)](python-interactive-repl-in-visual-studio.md) para esse ambiente dentro do Visual Studio, aplicando quaisquer [scripts de inicialização (veja abaixo)](#startup-scripts). |
 | Explorar scripts interativos | Veja os [scripts de inicialização](#startup-scripts). |
@@ -75,7 +75,7 @@ Se estiver disponível, conterá detalhes, conforme descrito na tabela abaixo. S
 
 *Também chamada de "pip" em versões anteriores.*
 
-Gerencia os pacotes instalados no ambiente, permitindo também pesquisar e instalar novos (incluindo as dependências).
+Gerencia os pacotes instalados no ambiente usando PIP, permitindo também pesquisar e instalar novos (incluindo as dependências). No Visual Studio 2017 versão 15.7 e em versões posteriores, aparece uma opção de **Pacotes (Conda)**, que usa o gerenciador de pacotes Conda. (Se não vir essa opção, defina a opção **Ferramentas** > **Opções** > **Python** > **Experimental** > **Usar gerenciador de pacotes Conda quando estiver disponível (em vez de PIP)** e reinicie o Visual Studio.)
 
 Os pacotes que já estão instalados são exibidos com controles para atualizar (uma seta para cima) e desinstalar (X em um círculo) o pacote:
 
@@ -105,7 +105,8 @@ Mostra o status atual do banco de dados de preenchimento do IntelliSense:
 
 ![Guia IntelliSense de Ambientes do Python](media/environments-intellisense-tab.png)
 
-No **Visual Studio 2017 versão 15.5** e anteriores, as conclusões do IntelliSense dependem de um banco de dados que é compilado para essa biblioteca. A criação do banco de dados é feita em segundo plano quando uma biblioteca é instalada, mas pode levar algum tempo e não pode ser concluída quando você começa a escrever código. O **Visual Studio 2017 versão 15.6** e posterior usa um método mais rápido para fornecer conclusões que não dependem do banco de dados a menos que você escolha especificamente habilitá-lo.
+- No **Visual Studio 2017 versão 15.5** e anteriores, as conclusões do IntelliSense dependem de um banco de dados que é compilado para essa biblioteca. A criação do banco de dados é feita em segundo plano quando uma biblioteca é instalada, mas pode levar algum tempo e não pode ser concluída quando você começa a escrever código.
+- O **Visual Studio 2017 versão 15.6** e versões posteriores usam um método mais rápido para fornecer conclusões que não dependem do banco de dados por padrão. Por esse motivo, a guia é rotulada **IntelliSense [banco de dados desabilitado]**. É possível habilitar o banco de dados desmarcando a opção **Ferramentas** > **Opções** > **Python** > **Experimental** > **Usar novo estilo de IntelliSense para ambientes**.
 
 Quando o Visual Studio detecta um novo ambiente (ou você adiciona um), ele começa a compilar o banco de dados automaticamente, analisando os arquivos de origem da biblioteca. Esse processo pode levar de um minuto a uma hora ou mais, dependendo do que está instalado. (O Anaconda, por exemplo, é fornecido com várias bibliotecas e leva algum tempo para compilar o banco de dados.) Depois de concluído, você obtém um IntelliSense detalhado não precisa atualizar o banco de dados novamente (com o botão **Atualizar Banco de Dados**) quando instalar mais bibliotecas.
 

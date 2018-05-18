@@ -13,29 +13,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c03af9c65b6263164c1e8b697fcf2d5708505a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b34328a4bff4abdd2db29e9a41e9d04ba43d4f9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Como copiar elementos do diagrama de classe para um documento do Microsoft Office (Designer de Classe)
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Como copiar elementos do diagrama de classe para um documento do Microsoft Office
 
-Você pode copiar formas de um diagrama de classe do .NET (arquivo .cd) para outros documentos. Você obterá uma cópia da forma ou seu código subjacente com base no tipo de documento no qual colá-la. Para copiar formas de diagramas de classes UML em um projeto de modelagem, consulte [Exportar diagramas como imagens](../../modeling/export-diagrams-as-images.md).
+É possível copiar formas de um diagrama de classe do .NET (arquivo *.cd*) para outros documentos. Você receberá uma cópia da forma ou seu código subjacente com base no tipo de documento no qual colá-la. Para copiar formas de diagramas de classes UML em um projeto de modelagem, consulte [Exportar diagramas como imagens](../../modeling/export-diagrams-as-images.md).
 
-## <a name="to-copy-a-single-element"></a>Para copiar um único elemento
+## <a name="copy-a-single-element"></a>Copiar um único elemento
 
--   Clique com o botão direito do mouse na forma e escolha **Copiar Imagem**.
+Clique com o botão direito do mouse na forma e escolha **Copiar Imagem**.
 
-## <a name="to-copy-several-elements"></a>Para copiar vários elementos
+## <a name="copy-several-elements"></a>Copiar vários elementos
 
 1.  Selecione as formas no diagrama que você deseja copiar.
 
 2.  Clique com o botão direito do mouse na seleção e escolha **Copiar Imagem**.
 
-## <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Para copiar todos os elementos em um diagrama de classe
+## <a name="copy-all-the-elements-in-a-class-diagram"></a>Copiar todos os elementos em um diagrama de classe
 
-1.  Clique com o botão direito do mouse na superfície do diagrama e escolha **Selecionar tudo**. (Teclado: **Ctrl + A**)
+1.  Clique com o botão direito do mouse na superfície do diagrama e escolha **Selecionar tudo** ou pressione **Ctrl + A**.
 
 2.  No menu **Editar**, selecione **Copiar Imagem**.
 

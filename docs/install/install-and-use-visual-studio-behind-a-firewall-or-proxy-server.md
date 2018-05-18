@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -117,7 +117,7 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 | Instantâneo <br>Depurador | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependente da versão do Visual Studio) | 1. Consultar arquivo .json para o tamanho do SKU do serviço de aplicativo <br>2. Várias chamadas do RM do Azure <br>3. Chamada de aquecimento do site por meio de  <br>4. Ponto de extremidade Kudu do Serviço de Aplicativo de destino do cliente <br>5. Consultar versão da Extensão de Site publicada em nuget.org <br>6. Canal de depuração remota |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |HTTPS|443 |Usada para exibir, enviar, executar e gerenciar trabalhos ASA <br><br> Usada para navegar em clusters HDI e enviar, diagnosticar e depurar trabalhos HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | HTTPS | 443 | Usada para compilar, enviar, exibir, diagnosticar e depurar os trabalhos, usada para navegar em arquivos ADLS, usada para carregar e baixar arquivos |
-|Empacotar serviço | [conta].visualstudio.com <br/> [conta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | *.npmjs.org, *.nuget.org e *.nodejs.org são necessários somente para determinados cenários de tarefas de compilação (por exemplo, instalador de ferramentas do NuGet, instalador de ferramenta de nós) ou se você quiser usar upstreams públicos com os Feeds.  Três domínios são necessários para a funcionalidade principal do serviço de empacotamento. |
+|Empacotar serviço | [conta].visualstudio.com <br/> [conta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | *.npmjs.org, *.nuget.org e *.nodejs.org são necessários somente para determinados cenários de tarefas de build (por exemplo: instalador de ferramentas do NuGet, instalador de ferramenta de nós) ou se você desejar usar upstreams públicos com os Feeds. Os outros três domínios são necessários para a funcionalidade principal do serviço de empacotamento. |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Solucionar problemas de erros relacionados à rede

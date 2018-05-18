@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Como exibir tipos existentes (Designer de Classe)
+# <a name="how-to-view-existing-types-in-class-designer"></a>Como exibir tipos existentes no Designer de Classe
 
 Para ver um tipo existente e seus membros, adicione sua forma a um diagrama de classe.
 
@@ -36,13 +36,13 @@ Para criar tipos em diagramas de classe, confira [Como criar tipos usando o Desi
 
 2.  No projeto localizado no **Gerenciador de Soluções**, arraste um arquivo de código-fonte para o diagrama de classe.
 
-    > [!WARNING]
+    > [!NOTE]
     > Se sua solução tiver um projeto que compartilha código por vários aplicativos, você poderá arrastar arquivos ou código para um diagrama de classe apenas das seguintes fontes:
     >
-    > -   Do projeto de aplicativo que contém o diagrama
-    > -   De um projeto compartilhado que foi importado pelo projeto de aplicativo
-    > -   De um projeto referenciado
-    > -   De um assembly
+    > - Do projeto de aplicativo que contém o diagrama
+    > - De um projeto compartilhado que foi importado pelo projeto de aplicativo
+    > - De um projeto referenciado
+    > - De um assembly
 
     As formas que representam os tipos definidos no arquivo de código-fonte aparecem no diagrama na posição para a qual você arrastou o arquivo.
 
@@ -60,9 +60,7 @@ Quando você exibe um tipo no diagrama pela primeira vez, sua forma aparece reco
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Para exibir o conteúdo de um projeto em um diagrama de classe
 
-- No **Gerenciador de Soluções** ou no **Modo de Exibição de Classe**, clique com o botão direito do mouse no projeto e escolha **Exibir** e, em seguida, escolha **Exibir Diagrama de Classe**.
-
-     Um Diagrama de Classe populado automaticamente é criado.
+No **Gerenciador de Soluções** ou no **Modo de Exibição de Classe**, clique com o botão direito do mouse no projeto e escolha **Exibir** e, em seguida, escolha **Exibir Diagrama de Classe**. Um Diagrama de Classe populado automaticamente é criado.
 
 ## <a name="see-also"></a>Consulte também
 

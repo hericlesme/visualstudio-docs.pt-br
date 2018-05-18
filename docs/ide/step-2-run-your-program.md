@@ -11,53 +11,53 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ddf84220db840f49df2d7841857d09284f08ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a1962cbfde96d26236fba7f68a227db25a189650
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="step-2-run-your-program"></a>Etapa 2: Executar o programa
 Ao criar uma nova solução, você na verdade cria um programa que é executado. Ele não faz muita coisa — apenas exibe uma janela vazia que mostra **Form1** na barra de título. Mas se ela funciona, você está prestes a descobrir.  
-
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
-
-### <a name="to-run-your-program"></a>Para executar o programa  
+  
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, veja o [Tutorial 1: Criar um Visualizador de Imagens no Visual Basic – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou o [Tutorial 1: Criar um Visualizador de Imagens em C# – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
+  
+## <a name="to-run-your-program"></a>Para executar o programa  
 
 1.  Use um dos seguintes métodos para executar seu programa.  
 
     -   Pressione a tecla **F5**.  
-
-    -   Na barra de menus, escolha **Depurar**, **Iniciar Depuração**.  
-
+  
+    -   Na barra de menus, escolha **Depurar** > **Iniciar Depuração**.  
+  
     -   Na barra de ferramentas, clique no botão **Iniciar Depuração**, que aparece da seguinte maneira.  
 
          ![Botão Iniciar barra de ferramentas de depuração](../ide/media/express_icondebug.png "Express_IconDebug")  
-Botão da barra de ferramentas Iniciar Depuração  
-
+Botão da barra de ferramentas **Iniciar Depuração**  
+  
 2.  O Visual Studio executa o seu programa e uma janela chamada **Form1** aparece. O diagrama a seguir mostra o programa que você acabou de criar. O programa está em execução e logo você o fará adições a ele.  
 
      ![Programa de aplicativo do Windows Form em execução](../ide/media/express_firstrun.png "Express_FirstRun")  
-Programa de aplicativo do Windows Form executando  
-
+Programa de aplicativo do **Windows Forms** em execução  
+  
 3.  Volte para o ambiente de desenvolvimento integrado do Visual Studio (IDE) e examine a nova barra de ferramentas. Outros botões aparecem na barra de ferramentas quando você executa um programa. Esses botões permitem fazer coisas como parar e iniciar seu programa, e ajudam você a rastrear erros (bugs) que ele pode ter. Para este exemplo, estamos simplesmente usando-o para iniciar e parar o programa.  
 
      ![Barra de ferramentas de depuração](../ide/media/express_debugtoolbar.png "Express_DebugToolbar")  
-Barra de ferramentas de depuração  
-
+Barra de ferramentas de **depuração**  
+  
 4.  Use um dos seguintes métodos para pausar seu programa.  
 
     -   Na barra de ferramentas, clique no botão **Parar Depuração**.  
-
-    -   Na barra de menus, escolha **Depurar**, **Parar Depuração**.  
-
-    -   Clique no botão X no canto superior da janela **Form1**.  
-
+  
+    -   Na barra de menus, escolha **Depurar** > **Parar Depuração**.  
+  
+    -   Clique no botão **X** no canto superior da janela **Form1**.  
+  
     > [!NOTE]
-    >  Ao executar o programa dentro do IDE, isso é chamado de *depuração* porque normalmente você faz isso para localizar e corrigir bugs (erros) no programa. Embora esse programa seja pequeno e ainda não faça realmente nada, ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, consulte [Noções básicas sobre depuração](../debugger/debugger-basics.md).  
-
-### <a name="to-continue-or-review"></a>Para continuar ou revisar  
-
--   Para ir para a próxima etapa do tutorial, consulte [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).  
-
--   Para retornar à etapa anterior do tutorial, consulte [Etapa 1: Criar um projeto de Aplicativo do Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+    >  Ao executar o programa dentro do IDE, isso é chamado de depuração porque normalmente você faz isso para localizar e corrigir bugs (erros) no programa. Embora esse programa seja pequeno e ainda não faça realmente nada, ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, veja [Noções básicas sobre depuração](../debugger/debugger-basics.md).  
+  
+## <a name="to-continue-or-review"></a>Para continuar ou revisar  
+  
+-   Para ir para a próxima etapa do tutorial, veja [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).  
+  
+-   Para retornar à etapa anterior do tutorial, veja [Etapa 1: criar um projeto de Aplicativo do Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).

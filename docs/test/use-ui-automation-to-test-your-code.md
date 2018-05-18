@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b97eb0c6ed496da29acb65ddc07b9f25f58b7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 897ce97da798509253bf3f7d93a79735cc354965
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar automação de interface do usuário para testar código
 
@@ -79,7 +79,7 @@ Para obter mais informações sobre quais plataformas e configurações têm sup
     > [!WARNING]
     > Todas as ações realizadas na área de trabalho serão registradas. Pause a gravação se estiver realizando ações que possam levar à exclusão de dados confidenciais na gravação.
 
-     **Para excluir ações** registradas por equívoco, escolha **Editar Ações**.
+     **Para excluir ações** registradas por equívoco, escolha **Editar Etapas**.
 
      **Para gerar um código** que replicará as ações, escolha o ícone **Gerar Código** e digite um nome e uma descrição para o método de teste de IU codificado.
 

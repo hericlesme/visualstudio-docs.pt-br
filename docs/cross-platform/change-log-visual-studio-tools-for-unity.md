@@ -5,16 +5,16 @@ ms.date: 03/23/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
 Log de alterações de Ferramentas do Visual Studio para Unity.
@@ -84,7 +84,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Integração:**
 
     -   Somente recarrega projetos em alterações externas (com a limitação).
- 
+
 ## <a name="3601"></a>3.6.0.1
  Lançado em 24/01/2018
 
@@ -93,9 +93,9 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Integração:**
 
     -   Correção de pdb automático para conversão de símbolo de depuração de mdb.
-    
+
     -   Correção de chamada indireta para EditorPrefs.GetBool afetando o inspetor ao tentar alterar o tamanho da matriz.
- 
+
 ## <a name="3600"></a>3.6.0.0
  Lançado em 10/01/2018
 
@@ -112,7 +112,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Depurador:**
 
     -   Adicionado o suporte para atributos de DebuggerHidden/DebuggerStepThrough com o novo tempo de execução do Unity.
-    
+
 -   **Assistentes:**
 
     -   Introduza 'Última' versão para os assistentes.
@@ -126,7 +126,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 -   **Depurador:**
 
     -   Correção de uma corrida na manipulação de eventos recentes.
-    
+
 -   **Assistentes:**
 
     -   Atualize o contexto do roslyn antes de inserir o método.

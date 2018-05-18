@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d0e459fe1bd9960c46a1816add1f79e4d5507d5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc032fc89b6dee609fa3c69ebd210aa8adefd17c
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
 A ferramenta VSPerfCLREnv é usada para definir variáveis de ambiente que são necessárias para criar o perfil de um aplicativo .NET Framework. Ela usa a seguinte sintaxe:
 
-```
+```cmd
 VsPerfCLREnv [/option]
 ```
 
@@ -45,7 +45,7 @@ As opções **InteractionOn** e **GlobalInteractionOn** permitem a coleta de dad
 
 O exemplo a seguir inclui dados de interação de camadas em uma execução de criação de perfil que usa o método de amostragem:
 
-```
+```cmd
 VSPerfCLREnv /SampleOn
 VSPerfCLREnv /InteractionOn
 VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe
@@ -53,7 +53,7 @@ VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe
 
 O exemplo a seguir inclui dados de interação de camadas em uma execução de criação de perfil para um serviço Windows:
 
-```
+```cmd
 VSPerfCLREnv /GlobalSampleOn
 VSPerfCLREnv /GlobalInteractionOn
 REM Restart the computer and start the service

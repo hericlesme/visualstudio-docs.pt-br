@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e610644713d630ce4f54befa8535c3b00c7aaf92
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4c27d6ba2e5041596b171d1a2538c154c0fad8d8
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="mark"></a>Marca
 A opção **Marca** do VSPerfCmd.exe insere as informações especificadas no arquivo de dados de criação de perfil. Marca pode ser listada em um relatório VSPerfReport separado ou na exibição de Relatório de marca da interface do usuário do criador de perfil. **Marca** pode ser usada para especificar os pontos inicial e final em relatórios e exibir filtros.  
@@ -23,7 +23,7 @@ A opção **Marca** do VSPerfCmd.exe insere as informações especificadas no ar
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /Mark:MarkID,[MarkName]  
 ```  
   
@@ -37,7 +37,7 @@ VSPerfCmd.exe /Mark:MarkID,[MarkName]
 ## <a name="example"></a>Exemplo  
  Este exemplo insere uma marca com uma ID de 123 e o nome da marca de "TestMark".  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe  
 VSPerfCmd.exe /Mark:123,TestMark  

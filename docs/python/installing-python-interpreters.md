@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="installing-python-interpreters"></a>Instalar interpretadores do Python
 
@@ -27,7 +27,7 @@ Para o **Visual Studio 2015 e versões anteriores**, é necessário instalar man
 
 O Visual Studio (todas as versões) detecta automaticamente cada interpretador Python instalado e seu ambiente verificando o Registro (seguindo [PEP 514 - Registro do Python no Registro do Windows](https://www.python.org/dev/peps/pep-0514/)).
 
-Se o Visual Studio não detectar um ambiente instalado, confira [Identificar manualmente um ambiente existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+Se o Visual Studio não detectar um ambiente instalado, consulte [Identificar manualmente um ambiente existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 O Visual Studio mostra todos os ambientes conhecidos na [janela Ambientes de Python](managing-python-environments-in-visual-studio.md) e detecta automaticamente as atualizações para interpretadores existentes.
 
@@ -45,7 +45,7 @@ Para os desenvolvedores que desejam fornecer novas formas de detecção para amb
 
 Se você mover um interpretador existente para um novo local usando o sistema de arquivos, o Visual Studio não detectará automaticamente a alteração.
 
-- Se você tiver especificado originalmente o local do interpretador por meio da janela **Ambientes de Python**, edite ambiente usando a guia **Configurar** nessa janela para identificar o novo local. Confira [Identificar manualmente um ambiente existente](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- Se você tiver especificado originalmente o local do interpretador por meio da janela **Ambientes de Python**, edite ambiente usando a guia **Configurar** nessa janela para identificar o novo local. Consulte [Identificar manualmente um ambiente existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 - Se você instalou o interpretador usando um programa de instalação, use as etapas a seguir para reinstalar o interpretador no novo local:
 

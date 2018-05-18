@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
-O IntelliSense para C++ está disponível para arquivos autônomos, bem como para arquivos que fazem parte de um projeto em C++. Em projetos multiplaforma, alguns recursos do IntelliSense estão disponíveis nos arquivos .cpp e .c no projeto de código compartilhado, mesmo quando você está em um contexto Android ou iOS.
+O IntelliSense para C++ está disponível para arquivos autônomos, bem como para arquivos que fazem parte de um projeto em C++. Em projetos multiplataforma, alguns recursos do IntelliSense estão disponíveis nos arquivos *.cpp* e *.c* no projeto de código compartilhado, mesmo quando você está em um contexto Android ou iOS.
 
 ## <a name="intellisense-features-in-c"></a>Recursos do IntelliSense em C++
 
@@ -73,23 +73,23 @@ Há um aplicativo OpenGLES configurado para build no Android e no iOS. A ilustra
 
 Observe o seguinte:
 
-- A ramificação #else na linha 8 é esmaecida para indicar a região inativa, pois __ANDROID\_\_ está definido para o projeto Android.
+- O branch `#else` na linha 8 é esmaecido para indicar uma região inativa, pois `__ANDROID__` está definido para o projeto Android.
 
-- A variável de saudação na linha 11 é inicializada com o identificador HELLO, que tem uma linha ondulada roxa. Isso ocorre porque nenhum identificador HELLO é definido no projeto iOS atualmente inativo. Embora a linha de projeto 11 fosse compilada no Android, ela não seria no iOS. Uma vez que esse é um código compartilhado, que é algo que você deve alterar, embora ele compile na configuração ativa no momento.
+- A variável de saudação na linha 11 é inicializada com o identificador `HELLO`, que tem uma linha ondulada roxa. Isso ocorre porque nenhum identificador `HELLO` está definido no projeto iOS atualmente inativo. Embora a linha de projeto 11 fosse compilada no Android, ela não seria no iOS. Uma vez que esse é um código compartilhado, que é algo que você deve alterar, embora ele compile na configuração ativa no momento.
 
-- A Linha 12 tem linha ondulada vermelha no identificador BYE; esse identificador não está definido no projeto ativo atualmente selecionado.
+- A linha 12 tem uma linha ondulada vermelha no identificador `BYE`; esse identificador não está definido no projeto ativo atualmente selecionado.
 
-Agora, altere o projeto ativo para iOS.StaticLibrary e observe como as linhas onduladas mudam.
+Agora, altere o projeto ativo para **iOS.StaticLibrary** e observe como as linhas onduladas mudam.
 
 ![iOS está selecionado como o projeto ativo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 Observe o seguinte:
 
-- A ramificação #ifdef na linha 6 é esmaecida para indicar a região inativa, pois __ANDROID\_\_ não está definido para o projeto iOS.
+- O branch `#ifdef` na linha 6 é esmaecido para indicar uma região inativa, pois `__ANDROID__` não está definido para o projeto iOS.
 
-- A variável de saudação na linha 11 é inicializada com o identificador HELLO, que agora tem uma linha ondulada vermelha. Isso ocorre porque nenhum identificador HELLO está definido no projeto iOS inativo no momento.
+- A variável de saudação na linha 11 é inicializada com o identificador `HELLO`, que agora tem uma linha ondulada vermelha. Isso ocorre porque nenhum identificador `HELLO` está definido no projeto iOS atualmente ativo.
 
-- A linha 12 tem linha ondulada roxa no identificador BYE; esse identificador não está definido no projeto Android.NativeActivity inativo no momento.
+- A linha 12 tem uma linha ondulada roxa no identificador `BYE`; esse identificador não está definido no projeto **Android.NativeActivity** atualmente inativo.
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense para arquivos autônomos
 
@@ -97,10 +97,10 @@ Ao abrir um arquivo único fora de qualquer projeto, você ainda obtém o Intell
 
 ![IntelliSense de arquivo único do Visual C&#43;&#43;](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-Por padrão, IntelliSense de arquivo único usa apenas diretórios de inclusão padrão para localizar arquivos de cabeçalho. Para adicionar mais diretórios, abra o menu de atalho no nó Solução e adicione seu diretório à lista **Depurar Código-Fonte**, como mostra a ilustração a seguir:
+Por padrão, IntelliSense de arquivo único usa apenas diretórios de inclusão padrão para localizar arquivos de cabeçalho. Para adicionar mais diretórios, abra o menu de atalho no nó **Solução** e adicione seu diretório à lista **Depurar Código-Fonte**, como mostra a seguinte ilustração:
 
 ![Adicionando um caminho a um arquivo de cabeçalho.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usando o IntelliSense](../ide/using-intellisense.md)
+- [Usar o IntelliSense](../ide/using-intellisense.md)

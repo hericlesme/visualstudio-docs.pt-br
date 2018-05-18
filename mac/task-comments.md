@@ -1,15 +1,15 @@
 ---
 title: Comentários da Tarefa
-description: ''
+description: Adicionando comentários de tarefa ao seu código
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: c119af47cc3b592033a68b0ec543afa86140c77a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ca74c6429ed721a6c11bd71d024668cc695274e9
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="task-comments"></a>Comentários da Tarefa
 

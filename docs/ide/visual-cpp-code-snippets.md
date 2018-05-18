@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Trechos de código do Visual C++
 
@@ -23,9 +23,9 @@ No Visual Studio, você pode usar trechos de código para adicionar código comu
 
 Você pode adicionar um trecho de código em um local específico no seu código (inserção) ou envolver algum código selecionado com um trecho de código.
 
-## <a name="inserting-a-code-snippet"></a>Inserindo um trecho de código
+## <a name="insert-a-code-snippet"></a>Inserir um trecho de código
 
-Para inserir um trecho de código, abra um arquivo de código do C++ (.cpp ou .h), clique em algum lugar dentro do arquivo e siga um destes procedimentos:
+Para inserir um trecho de código, abra um arquivo de código C++ (*.cpp* ou *.h*), clique em algum lugar dentro do arquivo e siga um destes procedimentos:
 
 - Clique com o botão direito do mouse para obter o menu de contexto e selecione **Inserir Trecho**
 
@@ -41,9 +41,9 @@ Você deve ver uma lista de opções que começam com **#if**. Ao selecionar **#
 #endif // 0
 ```
 
-Em seguida, você pode substituir o 0 pela condição correta.
+Em seguida, você pode substituir o **0** pela condição correta.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Usar um trecho de código para envolver o código selecionado
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Usar um trecho de código para envolver o código selecionado
 
 Para usar um trecho de código para envolver o código selecionado, selecione uma linha (ou várias linhas) e siga um destes procedimentos:
 
@@ -51,7 +51,7 @@ Para usar um trecho de código para envolver o código selecionado, selecione um
 
 - No menu **Editar** > **IntelliSense**, selecione **Envolver Com**
 
-- Usando o teclado, pressione: **CTRL**+**K**+**S**
+- Usando o teclado, pressione: **Ctrl**+**K**+**S**
 
 Selecione **#if**. Você deve ver algo parecido com isso:
 
@@ -71,7 +71,7 @@ Os nomes da maioria dos trechos de código são auto-explicativos, mas alguns no
 
 ## <a name="class-vs-classi"></a>Class versus classi
 
-O trecho **class** fornece a definição de uma classe chamada MyClass, com o construtor e o destruidor padrão apropriado, em que as definições do construtor e do destruidor estão localizadas fora da classe:
+O trecho **class** fornece a definição de uma classe chamada `MyClass`, com o construtor e o destruidor padrão apropriado, em que as definições do construtor e do destruidor estão localizadas fora da classe:
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-O trecho de código **classi** também fornece a definição de uma classe chamada MyClass, mas o construtor e o destruidor padrão estão definidos dentro da definição de classe:
+O trecho de código **classi** também fornece a definição de uma classe chamada `MyClass`, mas o construtor e o destruidor padrão são definidos dentro da definição de classe:
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-Se você inserir o trecho de destruidor, ele fornecerá um destruidor para a SomeClass:
+Se você inserir o trecho de destruidor, ele fornecerá um destruidor para `SomeClass`:
 
 ```cpp
 class SomeClass {

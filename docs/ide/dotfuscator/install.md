@@ -23,11 +23,11 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cfacf9f394e411cc89a6722aaf03ac74bc114f63
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29915018da1a2b8b0f50d5381748b53c1048e970
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Instalar o Dotfuscator Community Edition (CE)
 
@@ -43,12 +43,12 @@ No entanto, é fácil de instalar o Dotfuscator CE mesmo que você já tenha ins
 
 Você pode instalar o Dotfuscator CE no IDE do Visual Studio:
 
-1. No barra de pesquisa **Início Rápido** (Ctrl + Q), digite `dotfuscator`. <br/> <br/> ![](media/install_from_vs_12.png) <br/> <br/>
+1. No barra de pesquisa **Início Rápido** (Ctrl + Q), digite `dotfuscator`. <br/> <br/> ![Início Rápido](media/install_from_vs_12.png) <br/> <br/>
 2. Nos resultados do Início Rápido mostrado, no cabeçalho *Instalar*, selecione **PreEmptive Protection – Dotfuscator (Componente Individual)**.
   * Se, em vez disso, você visualizar, no cabeçalho *Menus*, **Ferramentas – PreEmptive Protection – Dotfuscator**, o Dotfuscator CE já estará instalado. Para obter detalhes de uso, consulte [a página de Introdução do Guia completo do usuário do CE Dotfuscator][get-started].
 3. Uma janela do Instalador do Visual Studio será inicializada, pré-configurada com instalar Dotfuscator CE.
   * Você pode ser solicitado a fornecer credenciais de administrador para continuar.
-4. Feche todas as instâncias do IDE do Visual Studio. <br/> <br/> ![](media/install_from_vs_345.png) <br/> <br/>
+4. Feche todas as instâncias do IDE do Visual Studio. <br/> <br/> ![Clicar em Instalar](media/install_from_vs_345.png) <br/> <br/>
 5. Na janela do Instalador do Visual Studio, clique em *Instalar*.
 
 Quando a instalação estiver concluída, você poderá começar a usar Dotfuscator CE. Para obter detalhes, consulte [a página de Introdução do Guia do usuário completo do CE Dotfuscator][get-started].
@@ -58,13 +58,13 @@ Quando a instalação estiver concluída, você poderá começar a usar Dotfusca
 Se você ainda não tiver instalado o Visual Studio 2017, poderá obter o instalador do [site do Visual Studio][2017-install].
 Quando executado, ele exibirá as opções de instalação para a edição selecionada do Visual Studio.
 
-![](media/install_ui.png)
+![Opções de instalação](media/install_ui.png)
 
 Então você pode instalar o Dotfuscator CE como um componente individual do Visual Studio 2017:
 
 1. Selecione a guia **Componentes individuais**.
-2. Em *Ferramentas de código*, marque o item *PreEmptive Protection – Dotfuscator*.<br/> <br/> ![](media/install_individually_12.png) <br/> <br/>
-3. O painel *Resumo* exibe *PreEmptive Protection – Dotfuscator* na seção *Componentes Individuais*. <br/> <br/> ![](media/install_individually_3.png) <br/> <br/>
+2. Em *Ferramentas de código*, marque o item *PreEmptive Protection – Dotfuscator*.<br/> <br/> ![Componentes individuais](media/install_individually_12.png) <br/> <br/>
+3. O painel *Resumo* exibe *PreEmptive Protection – Dotfuscator* na seção *Componentes Individuais*. <br/> <br/> ![Painel de resumo](media/install_individually_3.png) <br/> <br/>
 4. Defina quaisquer outras configurações de instalação conforme apropriado para seu ambiente.
 5. Quando estiver pronto para instalar o Visual Studio, clique no botão *Instalar*.
 
@@ -72,13 +72,13 @@ Quando a instalação estiver concluída, você poderá começar a usar Dotfusca
 
 ## <a name="see-also"></a>Consulte também
 
-[Este tópico no Guia do Usuário completo do Dotfuscator CE][full]
+[This topic in the full Dotfuscator CE User Guide]: https://www.preemptive.com/dotfuscator/ce/docs/help/
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-- [2017-install]: https://www.visualstudio.com/downloads/#vs-2017
-- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+[2017-install]:  https://www.visualstudio.com/downloads/#vs-2017
+[get-started]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-- [download]: https://www.preemptive.com/products/dotfuscator/downloads
+[download]:  https://www.preemptive.com/products/dotfuscator/downloads
 
-- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_install.html
+[full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/intro_install.html

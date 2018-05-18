@@ -1,5 +1,5 @@
 ---
-title: 'Instruções passo a passo: criando um trecho de código'
+title: 'Passo a passo: Criar um trecho de código'
 ms.date: 10/27/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,16 +19,16 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b5d71994539f313a7a9296d7f753174139756f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>Instruções passo a passo: criando um trecho de código
-Você pode criar um trecho de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Você pode adicionar o trecho à instalação do Visual Studio usando o botão Importar no Gerenciador de Trechos de Código (**Ferramentas**, **Gerenciador de Trechos de Código...**).
+# <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Criar um trecho de código
+Você pode criar um trecho de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Adicione o trecho à instalação do Visual Studio usando o botão **Importar** no **Gerenciador de Trechos de Código** (**Ferramentas** > **Gerenciador de Trechos de Código**).
 
-## <a name="snippet-template"></a>Modelo de Trecho
+## <a name="snippet-template"></a>Modelo de trecho
  A seguir está o modelo básico de trecho:
 
 ```xml
@@ -48,15 +48,15 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
 </CodeSnippets>
 ```
 
-### <a name="to-create-a-code-snippet"></a>Para criar um trecho de código
+### <a name="create-a-code-snippet"></a>Para criar um trecho de código
 
 1.  Crie um novo arquivo XML no Visual Studio e adicione o modelo mostrado acima.
 
-2.  Preencha o título do trecho, por exemplo, "Hello World VB", no elemento Title.
+2.  Preencha o título do trecho, por exemplo, "Hello World VB", no elemento **Title**.
 
-3.  Preencha a linguagem do trecho no atributo Linguagens do elemento Código. Para este exemplo, use "VB".
+3.  Preencha a linguagem do trecho no atributo **Languages** do elemento **Code**. Para este exemplo, use "VB".
 
-4.  Adicione algum código na seção CDATA dentro do elemento de Código, por exemplo:
+4.  Adicione um código na seção **CDATA** dentro do elemento **Code**, por exemplo:
 
     ```xml
     <Code Language="VB">
@@ -64,11 +64,11 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
     </Code>
     ```
 
-5.  Salve o trecho como VBCodeSnippet.snippet.
+5.  Salve o trecho como *VBCodeSnippet.snippet*.
 
-### <a name="to-add-a-code-snippet-to-visual-studio"></a>Para adicionar um trecho de código ao Visual Studio
+### <a name="add-a-code-snippet-to-visual-studio"></a>Adicionar um trecho de código ao Visual Studio
 
-1.  Você pode adicionar seus próprios trechos à instalação do Visual Studio usando o Gerenciador de Trechos de Código. Abra o Gerenciador de Trechos de Código (**Ferramentas**, **Gerenciador de Trechos de Código...**).
+1.  Você pode adicionar seus próprios trechos à instalação do Visual Studio usando o Gerenciador de Trechos de Código. Abra o **Gerenciador de Trechos de Código** (**Ferramentas** > **Gerenciador de Trechos de Código**).
 
 2.  Clique no botão **Importar**.
 
@@ -78,19 +78,19 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
 
 5.  O trecho é copiado para o seguinte local:
 
-     %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets
+     *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
-6.  Teste seu trecho de código abrindo um projeto do Visual Basic e abrindo um arquivo de código. No arquivo, escolha **Trechos**, **Inserir Trecho** no menu de contexto e, em seguida, **Meus Trechos de Código**. Você deve ver um trecho chamado **Meu Trecho de Código do Visual Basic**. Clique duas vezes nesse item.
+6.  Teste seu trecho de código abrindo um projeto do Visual Basic e abrindo um arquivo de código. No arquivo, escolha **Trechos** > **Inserir Trecho** no menu de contexto e, em seguida, **Meus Trechos de Código**. Você deve ver um trecho chamado **Meu Trecho de Código do Visual Basic**. Clique duas vezes nesse item.
 
     `Console.WriteLine("Hello, World!")` é inserido no arquivo de código.
 
-### <a name="adding-description-and-shortcut-fields"></a>Adicionando campos de atalho e descrição
+### <a name="add-description-and-shortcut-fields"></a>Adicionar campos de descrição e de atalho
 
-1.  Campos de descrição fornecem mais informações sobre o trecho de código quando exibidos no Gerenciador de Trechos de Código. O atalho é uma marcação que os usuários podem digitar para inserir seu trecho. Edite o trecho de código que você adicionou, abrindo o arquivo %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet.
+1.  Campos de descrição fornecem mais informações sobre o trecho de código quando exibidos no Gerenciador de Trechos de Código. O atalho é uma marcação que os usuários podem digitar para inserir seu trecho. Edite o trecho adicionado abrindo o arquivo *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
 
-2.  Adicione os elementos Autor e Descrição ao elemento de Cabeçalho e preencha-os.
+2.  Adicione os elementos **Author** e **Description** ao elemento **Header** e preencha-os.
 
-3.  O elemento Cabeçalho deve ser semelhante a isto:
+3.  O elemento **Header** deve ser parecido com este:
 
     ```xml
     <Header>
@@ -100,9 +100,9 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
     </Header>
     ```
 
-4.  Abra o Gerenciador de Trechos de Código e selecione seu trecho de código. No painel à direita, você deverá ver os campos Descrição e Autor agora preenchidos.
+4.  Abra o **Gerenciador de Trechos de Código** e selecione o trecho de código. No painel direito, você deverá ver que os campos **Descrição** e **Autor** agora estão populados.
 
-5.  Para adicionar um atalho, adicione um elemento Atalho junto dos elementos Autor e Descrição:
+5.  Para adicionar um atalho, adicione um elemento **Shortcut** junto aos elementos **Author** e **Description**:
 
     ```xml
     <Header>
@@ -119,13 +119,13 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
 
     O trecho de código é inserido.
 
-### <a name="to-add-references-and-imports"></a>Para adicionar referências e importações
+### <a name="add-references-and-imports"></a>Adicionar referências e importações
 
-1.  Você pode adicionar uma referência a um projeto, usando o elemento Referências e adicionar uma declaração Importações, usando o elemento Importações. (Isso também funciona para C#). Por exemplo, se você alterar `Console.WriteLine` no código de exemplo para `MessageBox.Show`, talvez seja necessário adicionar o assembly System.Windows.Forms.dll ao projeto.
+1.  Adicione uma referência a um projeto usando o elemento **References** e adicione uma declaração Imports usando o elemento **Imports**. (Isso também funciona para C#). Por exemplo, se você alterar `Console.WriteLine` no exemplo de código para `MessageBox.Show`, talvez seja necessário adicionar o assembly *System.Windows.Forms.dll* ao projeto.
 
 2.  Abra seu trecho.
 
-3.  Adicione o elemento Referências sob o elemento Trecho:
+3.  Adicione o elemento **References** sob o elemento **Snippet**:
 
     ```xml
     <References>
@@ -135,7 +135,7 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
     </References>
     ```
 
-4.  Adicione o elemento Importações sob o elemento Trecho:
+4.  Adicione o elemento **Imports** sob o elemento **Snippet**:
 
     ```xml
     <Imports>
@@ -145,7 +145,7 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
     </Imports>
     ```
 
-5.  Altere a seção CDATA para o seguinte:
+5.  Altere a seção **CDATA** para o seguinte:
 
     ```xml
     <![CDATA[MessageBox.Show("Hello, World!")]]>
@@ -155,21 +155,21 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
 
 7.  Abra um projeto do Visual Basic e adicione o trecho.
 
-8.  Você verá uma instrução Importações no alto do arquivo de código:
+8.  Você verá uma instrução `Imports` na parte superior do arquivo de código:
 
     ```vb
     Imports System.Windows.Forms
     ```
 
-9. Examine as propriedades do projeto. A guia Referências inclui uma referência para a System.Windows.Forms.dll.
+9. Examine as propriedades do projeto. A guia **References** inclui uma referência à *System.Windows.Forms.dll*.
 
-### <a name="adding-replacements"></a>Adicionando substituições
+### <a name="add-replacements"></a>Adicionar substituições
 
 1.  Você pode querer que partes dos trechos de código sejam substituídas pelo usuário, por exemplo, se você adicionar uma variável e quiser que o usuário a substitua por uma no projeto atual. Você pode fornecer dois tipos de substituições: literais e objetos. Literais são cadeias de caracteres de algum tipo (literais de cadeias de caracteres, nomes de variáveis ou representações de cadeia de caracteres de valores numéricos). Objetos são instâncias de um tipo que não cadeia de caracteres. Neste procedimento, você declarará uma substituição de literal e uma substituição de objeto e alterará o código para fazer referência a essas substituições.
 
 2.  Abra seu trecho.
 
-3.  Este exemplo usa uma cadeia de conexão do SQL, então você precisa alterar os elementos Importações e Referências para adicionar as referências apropriadas:
+3.  Este exemplo usa uma cadeia de conexão SQL e, portanto, você precisa alterar os elementos **Imports** e **References** para adicionar as referências apropriadas:
 
     ```xml
     <References>
@@ -190,7 +190,7 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
     </Imports>
     ```
 
-4.  Para declarar uma substituição de literal para a cadeia de conexão SQL, adicione um elemento de Declarações sob o elemento de Trecho e, nele, adicione um elemento Literal com subelementos para a ID, a dica de ferramenta e o valor padrão para a substituição:
+4.  Para declarar uma substituição de literal para a cadeia de conexão SQL, adicione um elemento **Declarations** sob o elemento **Snippet** e, a ele, adicione um elemento **Literal** com subelementos para a ID, a dica de ferramenta e o valor padrão para a substituição:
 
     ```xml
     <Declarations>
@@ -202,7 +202,7 @@ Você pode criar um trecho de código com apenas algumas etapas. Tudo o que voc�
     </Declarations>
     ```
 
-5.  Para declarar uma substituição de objeto para a conexão SQL, adicione um elemento de Objeto dentro do elemento de Declarações e adicione subelementos para a ID, o tipo de objeto, a dica de ferramenta e o valor padrão. O elemento Declarações resultante deve ter esta aparência:
+5.  Para declarar uma substituição de objeto para a conexão SQL, adicione um elemento **Object** dentro do elemento **Declarations** e adicione subelementos para a ID, o tipo de objeto, a dica de ferramenta e o valor padrão. O elemento **Declarations** resultante deve ter esta aparência:
 
     ```xml
     <Declarations>

@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Como configurar um ambiente Python no Serviço de Aplicativo do Azure
 
@@ -46,7 +46,7 @@ O suporte personalizável ao Python no Serviço de Aplicativo do Azure é fornec
 
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Escolhendo uma versão do Python por meio do Azure Resource Manager
 
-Se você estiver implantando um Serviço de Aplicativo com um modelo do Azure Resource Manager, adicione a extensão de site como um recurso. A extensão é exibida como um recurso aninhado com o tipo `siteextensions` e o nome de [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+Se você estiver implantando um Serviço de Aplicativo com um modelo do Azure Resource Manager, adicione a extensão de site como um recurso. Especificamente, a extensão é exibida como um recurso aninhado (um objeto `resources` em `resources`) com o tipo `siteextensions` e o nome de [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
 Por exemplo, depois de adicionar uma referência a `python361x64` (Python 3.6.1 x64), o modelo poderá ficar parecido com o seguinte (algumas propriedades foram omitidas):
 

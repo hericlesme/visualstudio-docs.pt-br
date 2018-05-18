@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refatorando classes e tipos (Designer de Classe)
 
@@ -40,8 +40,9 @@ Quando você refatora o código, ele fica mais fácil de entender, manter e mais
 |----------|------------------------|
 |**Classes de refatoração:** você pode usar as operações de refatoração para dividir uma classe em classes parciais ou para implementar uma classe base abstrata.|-   [Como dividir uma classe em classes parciais](how-to-split-a-class-into-partial-classes.md)|
 |**Trabalho com interfaces:** no Designer de Classe, você pode implementar uma interface no diagrama de classe se ela for conectada a uma classe que fornece o código para os métodos de interface.|-   [Como implementar uma interface](how-to-implement-an-interface.md)|
-|**Refatoração de tipos, membros de tipo e parâmetros:** usando o Designer de Classe, você pode renomear tipos, substituir membros de tipo ou movê-los de um tipo para outro. Você também pode criar tipos que permitem valor nulo.|-   [Renomeando tipos e membros de tipo](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Como mover membros de tipo de um tipo para o outro](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [Como criar um tipo que permite valor nulo](how-to-create-a-nullable-type.md)|
+|**Refatoração de tipos, membros de tipo e parâmetros:** usando o Designer de Classe, você pode renomear tipos, substituir membros de tipo ou movê-los de um tipo para outro. Você também pode criar tipos que permitem valor nulo.|-   [Renomear tipos e membros de tipo](refactoring-classes-and-types.md#rename)<br />-   [Mover membros de tipo de um tipo para outro](refactoring-classes-and-types.md#move)<br />-   [Como criar um tipo que permite valor nulo](how-to-create-a-nullable-type.md)|
 
+<a name="rename"></a>
 ### <a name="rename-types-and-type-members"></a>Renomear tipos e membros de tipo
 
 No Designer de Classe, você pode renomear um tipo ou um membro de um tipo no diagrama de classe ou na janela Propriedades. Na janela Detalhes da Classe, você pode alterar o nome de um membro, mas não um tipo. A renomeação de um tipo ou membro do tipo propaga para todas as janelas e locais de código onde o nome antigo é exibido.
@@ -77,6 +78,7 @@ No Designer de Classe, você pode renomear um tipo ou um membro de um tipo no di
 
      O novo nome propagada para todas as janelas e locais de código no projeto atual em que o nome antigo é exibido.
 
+<a name="move"></a>
 ### <a name="move-type-members-from-one-type-to-another"></a>Mover membros de tipo de um tipo para outro
 
 Usando o **Designer de Classe**, você poderá mover um membro de tipo de um tipo para outro, se ambos estiverem visíveis no diagrama de classe atual.

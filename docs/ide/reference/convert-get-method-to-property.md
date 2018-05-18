@@ -14,11 +14,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 291f7a52bfbb702960259e2643967ff0a8e782dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8195817c50679fd5b297b35eaf29aca0145a330b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refatorações para converter o método Get em propriedade/converter uma propriedade no método Get
 
@@ -28,7 +28,7 @@ Essas refatorações aplicam-se a:
 
 ## <a name="convert-get-method-to-property"></a>Converter o método Get em propriedade
 
-**O quê:** permite converter um método Get em uma propriedade (e opcionalmente seu método Set) e vice-versa.
+**O quê:** permite converter um método Get em uma propriedade (e opcionalmente seu método Set).
 
 **Quando:** você tem um método Get que não contêm nenhuma lógica.
 

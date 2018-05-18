@@ -1,15 +1,15 @@
 ---
 title: Entrando no Visual Studio para Mac
-description: ''
+description: Como centrar entrar no Visual Studio para Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 52727912877ddfa4a71ced858461083d924503b1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 60af04ec6a26e5f60ba2b1d95cf8e9e17e868e8a
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Entrando no Visual Studio para Mac
 
@@ -25,17 +25,17 @@ Para entrar no Visual Studio para Mac, faça o seguinte:
 
 1. Clique no link Entrar na página inicial para exibir a caixa de diálogo Contas e pressione o botão **Entrar**:
 
-    ![](media/signing-in-image12.png)
+    ![Caixa de diálogo Contas no Visual Studio para Mac](media/signing-in-image12.png)
 
 2. Insira suas Credenciais da Microsoft:
 
-    ![](media/signing-in-image13.png)
+    ![Caixa de diálogo de credenciais da Microsoft](media/signing-in-image13.png)
 
     Você não poderá usar as credenciais do Xamarin para entrar no Visual Studio para Mac.
 
 3.  Depois de entrar com êxito, você verá seu tipo de licença. Nessa caixa de diálogo, você poderá adicionar contas adicionais da Microsoft que você pode querer usar:
 
-    ![](media/signing-in-image14.png)
+    ![Você entrou com sucesso](media/signing-in-image14.png)
 
 ## <a name="adding-multiple-user-accounts"></a>Adicionar várias contas de usuário
 

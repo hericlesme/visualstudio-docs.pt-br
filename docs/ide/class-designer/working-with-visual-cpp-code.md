@@ -20,31 +20,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="work-with-visual-c-code-class-designer"></a>Trabalhar com código do Visual C++ (Designer de Classe)
+# <a name="work-with-visual-c-code-in-class-designer"></a>Trabalhar com código do Visual C++ no Designer de Classe
 
 O **Designer de Classe** exibe uma superfície de design visual chamada de *diagrama de classe* que fornece uma representação visual dos elementos de código no projeto. É possível usar diagramas de classe para criar e visualizar classes e outros tipos em um projeto.
 
 O **Designer de Classe** é compatível com os seguintes elementos de código C++:
 
--   Classe (semelhante a uma forma de classe gerenciada, com exceção de que ela pode ter vários relacionamentos de herança)
+- Classe (semelhante a uma forma de classe gerenciada, com exceção de que ela pode ter vários relacionamentos de herança)
 
--   Classe anônima (exibe o nome gerado do Modo de Exibição de Classe para o tipo anônimo)
+- Classe anônima (exibe o nome gerado do Modo de Exibição de Classe para o tipo anônimo)
 
--   Classe de modelo
+- Classe de modelo
 
--   Estrutura
+- Estrutura
 
--   Enum
+- Enum
 
--   Macro (exibe a exibição pós-processada da macro)
+- Macro (exibe a exibição pós-processada da macro)
 
--   DefTipo
+- DefTipo
 
 > [!NOTE]
 > Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, consulte [Diagramas de classe UML: Referência](../../modeling/uml-class-diagrams-reference.md).
@@ -65,23 +65,23 @@ Se um diagrama de classe não for atualizado com as alterações feitas no códi
 
 O **Designer de Classe** pode não conseguir resolver tipos pelos seguintes motivos:
 
--   O tipo está em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciando referências em um projeto](../managing-references-in-a-project.md).
+- O tipo está em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciando referências em um projeto](../managing-references-in-a-project.md).
 
--   O tipo não está no escopo correto e, portanto, o **Designer de Classe** não pode localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.
+- O tipo não está no escopo correto e, portanto, o **Designer de Classe** não pode localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.
 
--   O tipo não existe (ou foi comentado). Para corrigir esse erro, verifique se você não comentou nem excluiu o tipo.
+- O tipo não existe (ou foi comentado). Para corrigir esse erro, verifique se você não comentou nem excluiu o tipo.
 
--   O tipo está localizado em uma biblioteca referenciada por uma diretiva #import. Uma possível solução alternativa é adicionar o código gerado (o arquivo .tlh) manualmente a uma diretiva #include no arquivo de cabeçalho.
+- O tipo está localizado em uma biblioteca referenciada por uma diretiva #import. Uma possível solução alternativa é adicionar o código gerado (o arquivo .tlh) manualmente a uma diretiva #include no arquivo de cabeçalho.
 
--   Verifique se o **Designer de Classe** é compatível com o tipo inserido. Consulte [Limitações de elementos de código C++](#limitations-for-c-code-elements).
+- Verifique se o **Designer de Classe** é compatível com o tipo inserido. Consulte [Limitações de elementos de código C++](#limitations-for-c-code-elements).
 
 O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'**. Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as seguintes medidas:
 
--   Verifique se o tipo existe. Verifique se você não comentou nem excluiu o código-fonte acidentalmente.
+- Verifique se o tipo existe. Verifique se você não comentou nem excluiu o código-fonte acidentalmente.
 
--   Tente resolver o tipo. O tipo pode estar em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciando referências em um projeto](../managing-references-in-a-project.md).
+- Tente resolver o tipo. O tipo pode estar em um projeto ou assembly que não é referenciado no projeto que contém o diagrama de classe. Para corrigir esse erro, adicione uma referência ao projeto ou ao assembly que contém o tipo. Para obter mais informações, consulte [Gerenciando referências em um projeto](../managing-references-in-a-project.md).
 
--   Verifique se o tipo está no escopo correto para que o Designer de Classe possa localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.
+- Verifique se o tipo está no escopo correto para que o Designer de Classe possa localizá-lo. Verifique se o código não tem uma declaração `using`, `imports` ou `#include` ausente. Além disso, verifique se você não moveu o tipo (ou um tipo relacionado) para fora do namespace em que ele estava originalmente localizado.
 
 ### <a name="troubleshoot-other-error-messages"></a>Solucionar problemas de outras mensagens de erro
 
@@ -89,25 +89,25 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 ## <a name="limitations-for-c-code-elements"></a>Limitações para elementos de código C++
 
--   Quando um projeto do Visual C++ é carregado, o **Designer de Classe** funciona em modo somente leitura. É possível alterar o diagrama de classe, mas não é possível salvar alterações do diagrama de classe de volta no código-fonte.
+- Quando um projeto do Visual C++ é carregado, o **Designer de Classe** funciona em modo somente leitura. É possível alterar o diagrama de classe, mas não é possível salvar alterações do diagrama de classe de volta no código-fonte.
 
--   O **Designer de Classe** é compatível com somente a semântica nativa do C++. Para projetos do Visual C++ compilados em código gerenciado, o **Designer de Classe** visualizará apenas os elementos de código que forem tipos nativos. Portanto, é possível adicionar um diagrama de classe a um projeto, mas o **Designer de Classe** não permitirá a visualização de elementos nos quais a propriedade `IsManaged` esteja definida como `true` (ou seja, tipos de valor e tipos de referência).
+- O **Designer de Classe** é compatível com somente a semântica nativa do C++. Para projetos do Visual C++ compilados em código gerenciado, o **Designer de Classe** visualizará apenas os elementos de código que forem tipos nativos. Portanto, é possível adicionar um diagrama de classe a um projeto, mas o **Designer de Classe** não permitirá a visualização de elementos nos quais a propriedade `IsManaged` esteja definida como `true` (ou seja, tipos de valor e tipos de referência).
 
--   Para projetos do Visual C++, o **Designer de Classe** lê somente a definição do tipo. Por exemplo, suponha que você defina um tipo em um arquivo de cabeçalho (.h) e defina seus membros em um arquivo de implementação (.cpp). Se você invocar “Exibir Diagrama de Classe” no arquivo de implementação (.cpp), o **Designer de Classe** não exibirá nada. Como outro exemplo, se você invocar “Exibir Diagrama de Classe” em um arquivo .cpp que use uma instrução `#include` para incluir outros arquivos, mas que não contenha nenhuma definição de classe real, o **Designer de Classe** não exibirá nada novamente.
+- Para projetos do Visual C++, o **Designer de Classe** lê somente a definição do tipo. Por exemplo, suponha que você defina um tipo em um arquivo de cabeçalho (.h) e defina seus membros em um arquivo de implementação (.cpp). Se você invocar “Exibir Diagrama de Classe” no arquivo de implementação (.cpp), o **Designer de Classe** não exibirá nada. Como outro exemplo, se você invocar “Exibir Diagrama de Classe” em um arquivo .cpp que use uma instrução `#include` para incluir outros arquivos, mas que não contenha nenhuma definição de classe real, o **Designer de Classe** não exibirá nada novamente.
 
--   Arquivos IDL (.idl), que definem interfaces COM e bibliotecas de tipo, não exibem diagramas, a menos que sejam compilados para o código C++ nativo.
+- Arquivos IDL (.idl), que definem interfaces COM e bibliotecas de tipo, não exibem diagramas, a menos que sejam compilados para o código C++ nativo.
 
--   O **Designer de Classe** não é compatível com funções e variáveis globais.
+- O **Designer de Classe** não é compatível com funções e variáveis globais.
 
--   **Designer de Classe** não é compatível com uniões. Esse é um tipo especial de classe no qual a memória alocada é apenas a quantidade necessária para o maior membro de dados da união.
+- **Designer de Classe** não é compatível com uniões. Esse é um tipo especial de classe no qual a memória alocada é apenas a quantidade necessária para o maior membro de dados da união.
 
--   O **Designer de Classe** não exibe tipos de dados básicos como `int` e `char`.
+- O **Designer de Classe** não exibe tipos de dados básicos como `int` e `char`.
 
--   O **Designer de Classe** não exibe tipos que são definidos fora do projeto atual se o projeto não tem referências corretas para esses tipos.
+- O **Designer de Classe** não exibe tipos que são definidos fora do projeto atual se o projeto não tem referências corretas para esses tipos.
 
--   O **Designer de Classe** pode exibir tipos aninhados, mas não as relações entre um tipo aninhado e outros tipos.
+- O **Designer de Classe** pode exibir tipos aninhados, mas não as relações entre um tipo aninhado e outros tipos.
 
--   O **Designer de Classe** não pode exibir tipos que são nulos ou derivados de um tipo nulo.
+- O **Designer de Classe** não pode exibir tipos que são nulos ou derivados de um tipo nulo.
 
 ## <a name="see-also"></a>Consulte também
 

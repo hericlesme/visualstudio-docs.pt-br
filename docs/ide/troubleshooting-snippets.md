@@ -1,5 +1,5 @@
 ---
-title: Solucionando problemas de trechos
+title: Solução de problemas de trechos de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0151ff22146d745c42204ec66b9f5d35c2c8b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dea93f5c575afc96af188ab2e92e2ee12b929549
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="troubleshooting-snippets"></a>Solucionando problemas de trechos
+# <a name="troubleshoot-snippets"></a>Solução de problemas de trechos de código
 
 Normalmente, problemas com trechos de código IntelliSense são causados por dois problemas: um arquivo de trecho corrompido ou conteúdo inválido no arquivo de trecho.
 
-## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>O trecho não pode ser arrastado do Explorador de Arquivos para um arquivo de origem do Visual Studio
+## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Não é possível arrastar o trecho do Explorador de Arquivos para um arquivo de origem do Visual Studio
 
 -   Talvez o XML no arquivo de trecho esteja corrompido. O **Editor XML** em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode localizar problemas na estrutura XML.
 

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-content-manager-overrides"></a>Substituições do Gerenciador de Conteúdo da Ajuda
 
@@ -24,7 +24,7 @@ Você pode alterar o comportamento padrão do Help Viewer e dos recursos relacio
 
 1. Crie um arquivo *.pkgdef* com a primeira linha igual a `[$RootKey$\Help]`.
 
-2. Adicione qualquer ou todos os valores de chave do Registro descritos na tabela a seguir em linhas separadas, por exemplo `“UseOnlineHelp”=dword:00000001`.
+2. Adicione qualquer ou todos os valores de chave do Registro descritos na tabela a seguir em linhas separadas, por exemplo `"UseOnlineHelp"=dword:00000001`.
 
 3. Copie o arquivo para *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edição\>\Common7\IDE\CommonExtensions*.
 
@@ -45,12 +45,12 @@ Você pode alterar o comportamento padrão do Help Viewer e dos recursos relacio
 
 ```
 [$RootKey$\Help]
-“NewContentAndUpdateService”=”https://some.service.endpoint”
-“UseOnlineHelp”=dword:00000001
-“OnlineBaseUrl”=”https://some.service.endpoint”
-“OnlineHelpPreferenceDisabled”=dword:00000000
-“DisableManageContent”=dword:00000000
-“DisableFirstRunHelpSelection”=dword:00000001
+"NewContentAndUpdateService"="https://some.service.endpoint"
+"UseOnlineHelp"=dword:00000001
+"OnlineBaseUrl"="https://some.service.endpoint"
+"OnlineHelpPreferenceDisabled"=dword:00000000
+"DisableManageContent"=dword:00000000
+"DisableFirstRunHelpSelection"=dword:00000001
 ```
 
 ## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Usar o Editor do Registro para alterar o comportamento do Help Viewer
@@ -60,11 +60,11 @@ Os dois comportamentos a seguir podem ser controlados através da definição de
 |Tarefa|Chave do Registro|Valor|Dados|
 |----------|-----|------|----|
 |Substituir a prioridade do trabalho BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (em um computador de 64 bits)\Microsoft\Help\v2.3|BITSPriority|**foreground**, **high**, **normal** ou **low**|
-|Aponte para o repositório de conteúdo local no compartilhamento de rede|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
+|Aponte para o repositório de conteúdo local no compartilhamento de rede|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Guia do administrador do Visualizador da Ajuda](../ide/help-viewer-administrator-guide.md)
+- [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)
 - [Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda](../ide/command-line-arguments-for-the-help-content-manager.md)
 - [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
 - [Modificar o shell isolado usando o arquivo .pkgdef](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

@@ -1,5 +1,5 @@
 ---
-title: Usando expressões regulares no Visual Studio
+title: Usar expressões regulares no Visual Studio
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dae1c3d62fce5ba8b3991e41bade1d612b74647
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-regular-expressions-in-visual-studio"></a>Usando expressões regulares no Visual Studio
+# <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
 O Visual Studio usa [expressões regulares do .NET Framework](/dotnet/standard/base-types/regular-expressions) para localizar e substituir texto.
 
@@ -32,7 +32,7 @@ O Visual Studio usa [expressões regulares do .NET Framework](/dotnet/standard/b
 
 Para usar um grupo de captura numerado, coloque o grupo entre parênteses no padrão de expressão regular. Use `$number`, em que `number` é um inteiro começando em 1, para especificar um grupo numerado específico em um padrão de substituição. Por exemplo, a expressão regular agrupada `(\d)([a-z])` define dois grupos: o primeiro grupo contém um único dígito decimal e o segundo grupo contém um único caractere entre **a** e **z**. A expressão localiza quatro correspondências na cadeia de caracteres a seguir: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` referencia somente o primeiro grupo e converte a cadeia de caracteres em **z1 z2 z3 z4**.
 
-Para obter informações sobre as expressões regulares que são usadas em padrões de substituição, confira [Substituições em expressões regulares (guia do .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
+Para obter informações sobre as expressões regulares usadas em padrões de substituição, consulte [Substituições em expressões regulares (guia do .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Exemplos de expressões regulares
 
@@ -74,4 +74,4 @@ Estes são alguns exemplos:
 
 ## <a name="see-also"></a>Consulte também
 
-- [Localizando e substituindo texto](../ide/finding-and-replacing-text.md)
+- [Localizar e substituir texto](../ide/finding-and-replacing-text.md)

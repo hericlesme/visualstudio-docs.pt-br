@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analisar a capacidade de resposta de interface do usuário HTML em Aplicativos Universais do Windows
 Este tópico descreve como isolar problemas de desempenho nos aplicativos usando o Criador de Perfil de Capacidade de Resposta da Interface do Usuário, uma ferramenta de desempenho disponível para Aplicativos Universais do Windows.  
@@ -100,7 +100,7 @@ Este tópico descreve como isolar problemas de desempenho nos aplicativos usando
   
     -   Use a opção [Exibir a linha do tempo da sessão de diagnóstico](#Ruler) para exibir [Marcar código para análise](#ProfileMark), eventos de ciclo de vida do aplicativo, a linha do tempo associada a esses eventos e a linha do tempo para dados nos outros gráficos.  
   
-    -   Use o [Gráfico da utilização da CPU](#CPUutilization) para exibir informações gerais sobre a atividade da CPU e o tipo de trabalho com o qual ela está lidando durante um determinado período de tempo. Períodos de atividade excessiva da CPU têm maior probabilidade de causar problemas de capacidade de resposta e quadros ignorados.  
+    -   Use o [Gráfico da utilização da CPU](#CPUUtilization) para exibir informações gerais sobre a atividade da CPU e o tipo de trabalho com o qual ela está lidando durante um determinado período de tempo. Períodos de atividade excessiva da CPU têm maior probabilidade de causar problemas de capacidade de resposta e quadros ignorados.  
   
     -   Se você estiver desenvolvendo um jogo ou um aplicativo de mídia avançado, use a opção [Exibir representação visual da taxa de transferência (FPS)](#VisualThroughput) para identificar períodos nos quais a taxa de quadros caiu.  
   

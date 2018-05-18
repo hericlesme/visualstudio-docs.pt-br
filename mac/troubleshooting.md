@@ -6,11 +6,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 4a6b5d2f3c5e6c84307d70308773dd353c6de883
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 135a71f18451eb209f9f351ae9224c1606bc50d6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="troubleshooting"></a>Solução de problemas
 
@@ -28,7 +28,7 @@ Quando uma exceção é detectada, uma bolha de exceção é exibida. Para exibi
 
 Isso exibirá a caixa de diálogo **Mostrar detalhes**, fornecendo mais informações sobre a exceção:
 
-![](media/troubleshooting-image3.png)
+![Mostrar a caixa de diálogo de detalhes](media/troubleshooting-image3.png)
 
 Seções importantes da caixa de diálogo, numeradas acima, são descritas em detalhes a seguir:
 

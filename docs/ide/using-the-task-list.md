@@ -1,5 +1,5 @@
 ---
-title: Usando a lista de tarefas
+title: Usar a Lista de Tarefas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fb071186d816e852c695ffe1cceed29d23ff8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-the-task-list"></a>Usando a lista de tarefas
+# <a name="use-the-task-list"></a>Usar a Lista de Tarefas
 
 Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens, como `TODO` e `HACK`, ou tokens personalizados, e para gerenciar atalhos que levarão você diretamente a um local predefinido no código. Clique no item na lista para ir até seu local no código-fonte.
 
@@ -30,29 +30,29 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
 Quando a **Lista de Tarefas** é aberta, ela aparece na parte inferior da janela do aplicativo.
 
-### <a name="to-open-the-task-list"></a>Para abrir a Lista de Tarefas
+### <a name="open-the-task-list"></a>Abrir a Lista de Tarefas
 
-- No menu **Exibir**, escolha **Lista de Tarefas** (Teclado: Ctrl+\\,T).
+- No menu **Exibir**, escolha **Lista de Tarefas** (Teclado: **Ctrl**+**\\**,**T**).
 
     ![Janela Lista de Tarefas](../ide/media/vs2015_task_list.png "vs2015_task_list")
 
-### <a name="to-change-the-sort-order-of-the-list"></a>Para alterar a ordem de classificação da lista
+### <a name="change-the-sort-order-of-the-list"></a>Alterar a ordem de classificação da lista
 
 - Clique no cabeçalho de qualquer coluna. Para refinar ainda mais os resultados da pesquisa, pressione Shift e clique em um segundo cabeçalho de coluna.
 
-     Se preferir, no menu de atalho, escolha **Classificar por** e escolha um cabeçalho. Para refinar ainda mais os resultados da pesquisa, pressione Shift e escolha um segundo cabeçalho.
+     Se preferir, no menu de atalho, escolha **Classificar por** e escolha um cabeçalho. Para refinar ainda mais os resultados da pesquisa, pressione **Shift** e escolha um segundo cabeçalho.
 
-### <a name="to-show-or-hide-columns"></a>Para mostrar ou ocultar colunas
+### <a name="show-or-hide-columns"></a>Mostrar ou ocultar colunas
 
 - No menu de atalho, escolha **Mostrar Colunas**. Escolha as colunas que você deseja mostrar ou ocultar.
 
-### <a name="to-change-the-order-of-the-columns"></a>Para alterar a ordem das colunas
+### <a name="change-the-order-of-the-columns"></a>Alterar a ordem das colunas
 
 - Arraste o cabeçalho de qualquer coluna para o local desejado.
 
 ## <a name="user-tasks"></a>Tarefas do usuário
 
-O recurso de tarefa do usuário foi removido desde o Visual Studio 2015. Quando você abre uma solução que tem dados de tarefa de usuário do Visual Studio 2013 e anteriores, os dados de tarefa do usuário em seu arquivo .suo não serão afetados, mas as tarefas do usuário não serão exibidas na lista de tarefas.
+O recurso de tarefa do usuário foi removido desde o Visual Studio 2015. Quando você abrir uma solução que tem os dados de tarefa do usuário do Visual Studio 2013 e anterior, os dados de tarefa do usuário no arquivo *.suo* não serão afetados, mas as tarefas do usuário não serão exibidas na lista de tarefas.
 
 Se você quiser continuar a acessar e atualizar os dados de tarefa do usuário, abra o projeto no Visual Studio 2013 e copie o conteúdo de quaisquer tarefas do usuário para sua ferramenta de gerenciamento de projeto preferida (como o Team Foundation Server).
 
@@ -74,11 +74,11 @@ Uma vez que `TODO` é um token pré-definido, esse comentário aparece como uma 
 
 ###  <a name="customTokens"></a> Tokens personalizados
 
-Por padrão, o Visual Studio inclui os seguintes tokens: HACK, TODO, UNDONE, NOTE. Eles não diferenciam maiúsculas de minúsculas.
+Por padrão, o Visual Studio inclui os seguintes tokens: `HACK`, `TODO`, `UNDONE`, `NOTE`. Eles não diferenciam maiúsculas de minúsculas.
 
 Também é possível criar seus próprios tokens personalizados.
 
-#### <a name="to-create-a-custom-token"></a>Para criar um token personalizado
+#### <a name="create-a-custom-token"></a>Criar um token personalizado
 
 1. No menu **Ferramentas**, escolha **Opções**.
 
@@ -96,7 +96,7 @@ Também é possível criar seus próprios tokens personalizados.
 
 Por padrão, os comentários TODO em C++ são exibidos na janela **Lista de Tarefas**. Você pode alterar esse comportamento.
 
-#### <a name="to-turn-off-c-todo-comments"></a>Para desligar os comentários TODO em C++
+#### <a name="turn-off-c-todo-comments"></a>Desligar os comentários TODO no C++
 
 No menu **Ferramentas**, selecione **Opções** > **Editor de Texto** > **C/C++** > **Exibir** > **Enumerar Tarefas de Comentário** e defina o valor como false.
 
@@ -106,9 +106,9 @@ Um *atalho* é um indicador no código que é controlado na **Lista de Tarefas**
 
 ![Ícone de atalho de lista de tarefas do Visual Studio](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
 
-### <a name="to-create-a-shortcut"></a>Para criar um atalho
+### <a name="create-a-shortcut"></a>Criar um atalho
 
-Para criar um atalho, insira o ponteiro no código no local em que deseja colocar um atalho. Escolha **Editar** > **Indicadores** > **Adicionar Atalho da Lista de Tarefas** ou pressione **Ctrl** + **K**, **Ctrl** + **H**.
+Para criar um atalho, insira o ponteiro no código no local em que deseja colocar um atalho. Escolha **Editar** > **Indicadores** > **Adicionar Atalho da Lista de Tarefas** ou pressione **Ctrl**+**K**, **Ctrl**+**H**.
 
 Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.
 

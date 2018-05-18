@@ -9,11 +9,11 @@ description: Saiba mais sobre os benefícios incluídos na sua assinatura do Vis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Benefícios incluídos na sua assinatura do Visual Studio
 
@@ -40,5 +40,8 @@ Como assinante do Visual Studio, você também tem acesso a vários tipos de sup
 - Obtenha ajuda de membros da comunidade nos fóruns de Suporte Prioritário.  Se os membros da comunidade não puderem responder sua pergunta, especialistas da Microsoft fornecerão uma resposta. 
 - Tem dúvidas sobre o Azure?  Confira os serviços da Comunidade do Azure e do Chat de Consultoria do Azure.  
 
-Para obter mais informações sobre os benefícios incluídos na sua assinatura, confira a página de preços do Visual Studio.  Informações sobre benefícios específicos, incluindo quais assinaturas os apresentam, estão disponíveis no tópico **Usando os benefícios do assinante** abaixo. 
+> [!NOTE] 
+> Sua assinatura também pode vir com acesso a downloads de software.  Para obter mais informações sobre downloads, incluindo quais downloads estão incluídos com sua assinatura, acesse [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+
+Para obter mais informações sobre os benefícios incluídos na sua assinatura, confira a [página de preços do Visual Studio](https://www.visualstudio.com/vs/pricing/).  Informações sobre benefícios específicos, incluindo quais assinaturas os apresentam, estão disponíveis no tópico **Usando os benefícios do assinante** abaixo. 
 

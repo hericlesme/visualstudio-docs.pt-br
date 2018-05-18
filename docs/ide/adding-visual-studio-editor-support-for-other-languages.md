@@ -18,21 +18,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ae9b9dcbed2886344ab8e81932dbd7ad03adfa1f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3178738b707069fdf885c9821b7b7f1e17b246c
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
-# <a name="adding-visual-studio-editor-support-for-other-languages"></a>Adicionando suporte para outras linguagens ao editor do Visual Studio
+# <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
+
 Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à navegação por meio de diferentes linguagens de computador e como é possível adicionar suporte ao editor do Visual Studio para outras linguagens.
 
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Colorização de sintaxe, preenchimento de declaração e suporte Navegar até
- Os recursos no editor do Visual Studio como colorização de sintaxe, preenchimento de declaração e Navegar até podem ajudá-lo a ler, criar e editar seu código mais facilmente. A captura de tela a seguir mostra um exemplo de edição de um script Perl no Visual Studio. A sintaxe é automaticamente colorizada. Por exemplo, os comentários no código são coloridos em verde, o código é em preto, os caminhos são em vermelho e as instruções são em azul. O editor do Visual Studio aplica automaticamente a colorização de sintaxe a qualquer linguagem que ele dá suporte. Além disso, quando você começar a inserir uma palavra-chave ou objeto de linguagem conhecido, o preenchimento de declaração exibe uma lista de possíveis declarações e objetos. O preenchimento de declaração pode ajudá-lo a criar código de maneira mais rápida e fácil.
 
- ![Colorização de sintaxe no script Perl](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+Os recursos no editor do Visual Studio como colorização de sintaxe, preenchimento de declaração e Navegar até podem ajudá-lo a ler, criar e editar seu código mais facilmente. A captura de tela a seguir mostra um exemplo de edição de um script Perl no Visual Studio. A sintaxe é automaticamente colorizada. Por exemplo, os comentários no código são coloridos em verde, o código é em preto, os caminhos são em vermelho e as instruções são em azul. O editor do Visual Studio aplica automaticamente a colorização de sintaxe a qualquer linguagem que ele dá suporte. Além disso, quando você começar a inserir uma palavra-chave ou objeto de linguagem conhecido, o preenchimento de declaração exibe uma lista de possíveis declarações e objetos. O preenchimento de declaração pode ajudá-lo a criar código de maneira mais rápida e fácil.
 
- No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenchimento de declaração básico para as seguintes linguagens usando [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se sua linguagem favorita não estiver na tabela, não se preocupe – é possível adicioná-la.
+![Colorização de sintaxe no script Perl](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+
+No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenchimento de declaração básico para as seguintes linguagens usando [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se sua linguagem favorita não estiver na tabela, não se preocupe – é possível adicioná-la.
 
 |||||||
 |-|-|-|-|-|-|
@@ -43,7 +45,7 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
 |CSS|INI|LUA|R|Swift|XML|
 |Docker|Jade|Marca|Ruby|TypeScript|YAML|
 
- Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.
+Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.
 
 -   Ir
 
@@ -61,16 +63,17 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
 
 -   C#
 
-Todos esses tipos de arquivo têm os recursos descritos anteriormente, mesmo se o suporte para uma linguagem determinada ainda não tenha sido instalado. Instalar suporte especializado para algumas linguagens pode oferecer suporte a outras linguagens, como IntelliSense ou outros recursos de linguagem avançados como Light Bulbs.
+Todos esses tipos de arquivo terão os recursos descritos anteriormente, mesmo se o suporte para uma linguagem determinada ainda não tiver sido instalado. Instalar suporte especializado para algumas linguagens pode oferecer suporte a outras linguagens, como IntelliSense ou outros recursos de linguagem avançados como lâmpadas.
 
-## <a name="adding-support-for-non-supported-languages"></a>Adicionando suporte para linguagens sem suporte
- A Atualização 1 do Visual Studio 2015 e versões posteriores oferecem suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web – um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, será possível adicionar suporte a ela sozinho na Atualização 1 do Visual Studio 2015 ou posteriormente, criando um modelo de pacote TextMate para trechos e gramáticas de linguagem.
+## <a name="add-support-for-non-supported-languages"></a>Adicionar suporte para linguagens sem suporte
 
- Adicione novas Gramáticas TextMate para o Visual Studio na seguinte pasta:
+A Atualização 1 do Visual Studio 2015 e versões posteriores oferecem suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web – um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, poderá adicionar suporte a ela sozinho na Atualização 1 do Visual Studio 2015 ou posterior, criando um modelo de pacote TextMate para trechos e gramáticas de linguagem.
 
- *%userprofile%\\.vs\Extensions*
+Adicione novas Gramáticas TextMate para o Visual Studio na seguinte pasta:
 
- Nesse caminho base, adicione as pastas a seguir se forem aplicáveis à sua situação:
+*%userprofile%\\.vs\Extensions*
+
+Nesse caminho base, adicione as pastas a seguir se forem aplicáveis à sua situação:
 
 |Nome da Pasta|Descrição|
 |-----------------|-----------------|
@@ -78,12 +81,11 @@ Todos esses tipos de arquivo têm os recursos descritos anteriormente, mesmo se 
 |*\Syntaxes*|A pasta da gramática. Contém os arquivos *.json* da gramática para a linguagem, como *Matlab.json*.|
 |*\Snippets*|A pasta de trechos. Contém trechos da linguagem.|
 
- No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >*. Se a pasta de extensões não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
+No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >*. Se a pasta de extensões não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
 
- Para obter detalhes sobre como criar Gramáticas TextMate, consulte [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML (TextMate – Introdução a gramáticas de linguagem: como adicionar realce de sintaxe do código-fonte inserido no HTML)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Observações sobre como criar uma gramática de linguagem e um tema personalizado para um pacote Textmate)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+Para obter detalhes sobre como criar Gramáticas TextMate, consulte [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML (TextMate – Introdução a gramáticas de linguagem: como adicionar realce de sintaxe do código-fonte inserido no HTML)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Observações sobre como criar uma gramática de linguagem e um tema personalizado para um pacote Textmate)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Melhorias do Navegar até do Visual Studio 2013](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)
-- [Instruções passo a passo: criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md)
-- [Passo a passo: exibição do preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Passo a passo: criar um trecho de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Passo a passo: exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)

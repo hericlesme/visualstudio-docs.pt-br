@@ -5,18 +5,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/26/2018
+ms.date: 05/07/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f307043d49ee05245fe6e4c766a151f3d78c6c2
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2bf24a2274fbf16827ce8e3102bee022c9f33eba
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio 2017
 
@@ -24,6 +24,9 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.8.0 Versão prévia 1.0 | Visualizar | 7 de maio de 2018 | 15.8.27705.0 |
+| 15.7.0 | Versão | 7 de maio de 2018 | 15.7.27703.1 |
+| 15.7.0 Versão prévia 6.0 | Visualizar | 3 de maio de 2018 | 15.7.27701.1 |
 | 15.7.0 Versão prévia 5.0 | Visualizar | 26 de abril de 2018 | 15.7.27625.0 |
 | 15.6.7 | Versão | 26 de abril de 2018 | 15.6.27428.2043 |
 | 15.0.13 | Versão | 26 de abril de 2018 | 15.0.26228.31 |

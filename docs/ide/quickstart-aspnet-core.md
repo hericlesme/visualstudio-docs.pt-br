@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -70,7 +70,7 @@ Primeiro, você criará um projeto de aplicativo Web ASP.NET Core. O tipo de pro
 
    ![Lista de Erros](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. Na janela do editor, coloque o cursor em uma linha que contenha o erro e, em seguida, escolha a **lâmpada Ações Rápidas** na margem esquerda. No menu suspenso, escolha **using System;** para adicionar essa diretiva no topo do arquivo e resolver os erros.
+1. Na janela do editor, coloque o cursor em um linha que contenha o erro e, em seguida, escolha a lâmpada Ações Rápidas na margem esquerda. No menu suspenso, escolha **using System;** para adicionar essa diretiva no topo do arquivo e resolver os erros.
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 

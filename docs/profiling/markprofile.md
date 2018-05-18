@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e4f93446c49120afb43202f457af39439ca1bc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="markprofile"></a>MarkProfile
 O método `MarkProfile` insere uma marca de perfil no arquivo .vsp. A criação de perfil para o thread que contém a função `MarkProfile` deve ser ON para a marca a ser inserida.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );  
 ```  
   
@@ -66,7 +66,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="example"></a>Exemplo  
  O código a seguir ilustra a função MarkProfile.  
   
-```  
+```cpp  
 void ExerciseMarkProfile()  
 {  
     // Declare and initialize variables to pass to   

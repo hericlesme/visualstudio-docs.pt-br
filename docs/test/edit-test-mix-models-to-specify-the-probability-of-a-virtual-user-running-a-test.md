@@ -11,18 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3f06eac67207209932073899ae0277f9a156b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Editar modelos de combinação de testes para especificar a probabilidade de um usuário virtual executar um teste
+# <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Editar modelos de combinação de testes para especificar a probabilidade de um usuário virtual executar um teste
 
 O *modelo de combinação de testes* especifica a probabilidade de um usuário virtual executar um determinado teste em um cenário de teste de carga. Isso permite a você simular a carga de forma mais realista. Em vez de ter apenas um fluxo de trabalho com seus aplicativos, você pode ter vários fluxos de trabalho, que é uma aproximação de como os usuários finais interagem com seus aplicativos.
 
 ## <a name="test-mix-model-options"></a>Opções do modelo de combinação de testes
- Você pode especificar uma das seguintes opções de modelo da combinação de testes para seu cenário de teste de carga:
+
+Você pode especificar uma das seguintes opções de modelo da combinação de testes para seu cenário de teste de carga:
 
 -   **Baseado no número total de testes:** determina qual teste de desempenho Web ou teste de unidade é executado quando um usuário virtual inicia uma iteração de teste. No final do teste de carga, o número de vezes que um teste específico foi executado corresponde à distribuição de teste atribuída. Use esse modelo da combinação de testes quando você estiver baseando a combinação em porcentagens de transações em um log do IIS ou em dados de produção.
 
@@ -79,5 +80,5 @@ Usando o Editor de Teste de Carga, você pode alterar o modelo de combinação d
 
 ## <a name="see-also"></a>Consulte também
 
-- [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
+- [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
