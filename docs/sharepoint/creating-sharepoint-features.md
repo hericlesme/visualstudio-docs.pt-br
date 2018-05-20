@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-sharepoint-features"></a>Criando Funcionalidades do SharePoint
   Você pode usar um recurso do SharePoint para agrupar itens de projeto do SharePoint relacionados para facilitar a implantação. Você pode criar recursos, definir escopos e marcar outros recursos como dependências usando o Designer de recursos do SharePoint. O designer também gera um manifesto, que é um arquivo XML que descreve cada recurso.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |Propriedade|Descrição|  
 |--------------|-----------------|  
-|Título|Opcional. O título padrão do recurso é definido como *SolutionName * * FeatureName*.|  
+|Título|Opcional. O título padrão do recurso é definido como *SolutionName* *FeatureName*.|  
 |Descrição|Opcional. A descrição do recurso do SharePoint.|  
 |Escopo|Necessário. Se um recurso for criado usando **Solution Explorer**, o escopo é definido na Web por padrão.<br /><br /> -Farm: Ative um recurso para um farm de servidores inteiro.<br /><br /> -Site: Ative um recurso para todos os sites em uma coleção de sites.<br /><br /> -Web: Ative um recurso para um site específico.<br /><br /> -WebApplication: Ative um recurso para todos os sites da web em um aplicativo web.|  
 |Itens da solução|Todos os itens do SharePoint que pode ser adicionado ao recurso.|  

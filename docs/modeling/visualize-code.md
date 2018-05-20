@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 027a73343683b7953e70b597a8f9a222b56eb01f
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 5db66307ef9c0099e152e46c0aac761519881cd3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="visualize-code"></a>Visualizar código
 
@@ -37,22 +37,14 @@ Para ver quais versões do Visual Studio oferecem suporte a cada recurso, consul
 
 |||
 |-|-|
-|**Compreenda o código e suas relações:**<br /><br /> Mapear relações entre partes específicas de código.<br /><br /> Consulte uma visão geral das relações em seu código para toda a solução.<br /><br /> **Observação**: nesta versão do Visual Studio, o termo *mapa de códigos* é usado no lugar de *gráfico de dependência*.|- [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />- [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Encontrar possíveis problemas usando analisadores de mapa de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
+|**Compreenda o código e suas relações:**<br /><br /> Mapear relações entre partes específicas de código.<br /><br /> Consulte uma visão geral das relações em seu código para toda a solução.|- [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />- [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Encontrar possíveis problemas usando analisadores de mapa de código](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Compreenda as estruturas de classe:**<br /><br /> Visualize a estrutura de classes em um projeto Criando diagramas de classe do código.|[Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
 |**Descrever o design de alto nível do sistema e validar o código em relação a esse design:**<br /><br /> Descreva o design de alto nível do sistema e suas dependências pretendidas Criando diagramas de dependência. Valide o código em relação a esse design e verifique se as dependências no código permanecem consistentes com o design.|- [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
-
-## <a name="external-resources"></a>Recursos externos
-
-|**Categoria**|**Links**|
-|------------------|---------------|
-|**Fóruns**|- [Visualização do Visual Studio e ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visualização do Visual Studio e modelagem SDK (ferramentas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Diários e artigos técnicos**|[Fórum do MSDN arquitetura](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Consulte também
 
 - [Cenário: alterar o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
-- [Análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md)
+- [Analisar e modelar a arquitetura](../modeling/analyze-and-model-your-architecture.md)
 - [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
 

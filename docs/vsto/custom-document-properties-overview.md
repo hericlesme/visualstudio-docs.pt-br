@@ -1,5 +1,5 @@
 ---
-title: Visão geral de propriedades de documento personalizadas | Microsoft Docs
+title: Visão geral de propriedades de documento personalizadas
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="custom-document-properties-overview"></a>Visão geral de propriedades de documento personalizadas
 
-Quando você compila um projeto no nível do documento, o Visual Studio adiciona duas propriedades personalizadas para o documento no projeto: \_AssemblyLocation e \_AssemblyName. Quando um usuário abre um documento, o aplicativo do Microsoft Office procura essas propriedades de documento personalizadas. Se existirem no documento, o aplicativo carrega o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], que inicia a personalização. Para obter mais informações, consulte [arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Quando você compila um projeto no nível do documento, o Visual Studio adiciona duas propriedades personalizadas para o documento no projeto: \_AssemblyLocation e \_AssemblyName. Quando um usuário abre um documento, o aplicativo do Microsoft Office procura essas propriedades de documento personalizadas. Se existirem no documento, o aplicativo carrega o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], que inicia a personalização. Para obter mais informações, consulte [soluções de arquitetura do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -54,8 +54,8 @@ Esta propriedade contém uma cadeia de caracteres que fornece detalhes sobre o m
 
 ## <a name="see-also"></a>Consulte também
 
-[Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)
-[manifestos de aplicativo e implantação em soluções do Office ](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
- [Como: publicar uma solução do Office usando o ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[como: criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md)
+- [Manifestos de aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Como: publicar uma solução do Office usando ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Como: criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar partes XML personalizadas aos documentos usando suplementos VSTO | Microsoft Docs'
+title: 'Como: adicionar partes XML personalizadas aos documentos usando suplementos VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d06918a9b1d2bf1bec3f39d3e58352665d07e5c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d652f0890b32197bb13a3f73221f9ee2a92bcfc8
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Como adicionar partes XML personalizadas aos documentos usando suplementos VSTO
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Como: adicionar partes XML personalizadas aos documentos usando suplementos VSTO
   Você pode armazenar dados XML nos seguintes tipos de documentos, criando uma parte XML personalizada em um suplemento do VSTO:  
   
 -   Uma pasta de trabalho do Microsoft Office Excel.  
@@ -37,9 +37,9 @@ ms.lasthandoff: 04/16/2018
   
 -   Uma apresentação do PowerPoint do Microsoft Office.  
   
- Para obter mais informações, consulte [visão geral de partes de XML personalizado](../vsto/custom-xml-parts-overview.md).  
+ Para obter mais informações, consulte [visão geral de partes XML personalizadas](../vsto/custom-xml-parts-overview.md).  
   
- **Aplica-se a:** as informações neste tópico se aplicam a projetos no nível de aplicativo para Excel, PowerPoint e Word. Para obter mais informações, consulte [recursos disponibilizados pelo aplicativo do Office e pelo tipo de projeto](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Aplica-se a:** as informações neste tópico se aplicam a projetos no nível de aplicativo para Excel, PowerPoint e Word. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e de aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Para adicionar uma parte XML personalizada a uma pasta de trabalho do Excel  
   
@@ -84,7 +84,7 @@ ms.lasthandoff: 04/16/2018
  Para simplificar, este exemplo usa uma cadeia de caracteres XML que é definida como uma variável local no método. Normalmente, você deverá obter o XML de uma fonte externa, como um arquivo ou um banco de dados.  
   
 ## <a name="see-also"></a>Consulte também  
- [Visão geral de partes XML personalizadas](../vsto/custom-xml-parts-overview.md)   
- [Como adicionar partes XML personalizadas no nível do documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+ [Visão geral das partes XML personalizada](../vsto/custom-xml-parts-overview.md)   
+ [Como: adicionar partes XML personalizadas a personalizações no nível do documento](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
   

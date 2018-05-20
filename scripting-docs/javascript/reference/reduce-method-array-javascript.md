@@ -1,12 +1,13 @@
 ---
-title: "Método reduce (Array) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Método reduce (Array) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>Método reduce (Array) (JavaScript)
 Chama a função de retorno de chamada especificada para todos os elementos em uma matriz. O valor retornado da função de retorno de chamada é o resultado acumulado e é fornecido como um argumento na próxima chamada para a função de retorno de chamada.  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>Comentários  
  Se um `initialValue` for fornecido, o `reduce` chamadas de método de `callbackfn` função uma vez para cada elemento presente na matriz, no índice de ordem crescente. Se um `initialValue` não for fornecido, o `reduce` chamadas de método de `callbackfn` função em cada elemento, começando com o segundo elemento.  
   
- O valor de retorno da função de retorno de chamada é fornecido como o `previousValue` argumento na próxima chamada para a função de retorno de chamada. O valor de retorno da última chamada para a função de retorno de chamada é o valor de retorno de `reduce` método.  
+ O valor de retorno da função de retorno de chamada é fornecido como o `accumulator` argumento na próxima chamada para a função de retorno de chamada. O valor de retorno da última chamada para a função de retorno de chamada é o valor de retorno de `reduce` método.  
   
  A função de retorno de chamada não é chamada para elementos ausentes da matriz.  
   
@@ -68,7 +69,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>Sintaxe da função de retorno de chamada  
  A sintaxe da função de retorno de chamada é a seguinte:  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  Você pode declarar a função de retorno de chamada usando até quatro parâmetros.  
   
@@ -76,7 +77,7 @@ array1.reduce(callbackfn[, initialValue])
   
 |Argumento de retorno de chamada|Definição|  
 |-----------------------|----------------|  
-|`previousValue`|O valor da chamada anterior para a função de retorno de chamada. Se um `initialValue` é fornecido para o `reduce` método, o `previousValue` é `initialValue` na primeira vez em que a função é chamada.|  
+|`accumulator`|O valor da chamada anterior para a função de retorno de chamada. Se um `initialValue` é fornecido para o `reduce` método, o `accumulator` é `initialValue` na primeira vez em que a função é chamada.|  
 |`currentValue`|O valor do elemento da matriz atual.|  
 |`currentIndex`|O índice numérico do elemento da matriz atual.|  
 |`array1`|O objeto de matriz que contém o elemento.|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  Se um `initialValue` é fornecido para o método de redução:  
   
--   O argumento `previousValue` é `initialValue`.  
+-   O argumento `accumulator` é `initialValue`.  
   
 -   O `currentValue` argumento é o valor do primeiro elemento presente na matriz.  
   
  Se um `initialValue` não é fornecida:  
   
--   O `previousValue` argumento é o valor do primeiro elemento presente na matriz.  
+-   O `accumulator` argumento é o valor do primeiro elemento presente na matriz.  
   
 -   O `currentValue` argumento é o valor do segundo elemento presente na matriz.  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |O elemento é excluído da matriz.|Não, a menos que esse elemento já tenha sido passado para a função de retorno de chamada.|  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir concatena os valores de matriz em uma cadeia de caracteres, separando os valores com "::". Como nenhum valor inicial é fornecida para o `reduce` método, a primeira chamada para a função de retorno de chamada tem "abc" como o `previousValue` argumento e "def" como o `currentValue` argumento.  
+ O exemplo a seguir concatena os valores de matriz em uma cadeia de caracteres, separando os valores com "::". Como nenhum valor inicial é fornecida para o `reduce` método, a primeira chamada para a função de retorno de chamada tem "abc" como o `accumulator` argumento e "def" como o `currentValue` argumento.  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  O exemplo a seguir adiciona os valores em uma matriz. O `currentIndex` e `array1` parâmetros são usados na função de retorno de chamada.  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  O exemplo a seguir obtém uma matriz que contém apenas os valores que estão entre 1 e 10 na outra matriz. O valor inicial fornecido para o `reduce` método é uma matriz vazia.  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  

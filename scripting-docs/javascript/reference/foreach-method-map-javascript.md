@@ -1,27 +1,28 @@
 ---
-title: "Método forEach (Map) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Método forEach (Map) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9cdf0adc-77c7-4407-8ba7-ada0fb09e507
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d0ffa12b9a1995df14f4868872238cdc45b674a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 549d7d625fb4dfe88b2db69e6aa0ff66c7e90f66
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="foreach-method-map-javascript"></a>Método forEach (Map) (JavaScript)
 Executa a ação especificada para cada elemento em um mapa.  
@@ -37,7 +38,7 @@ mapObj.forEach(callbackfn[, thisArg])
  Necessário. Um objeto `Map`.  
   
  `callbackfn`  
- Necessário. A função que `forEach` chama uma vez para cada elemento no mapa. `callbackfn`aceita até três argumentos. `forEach`chamadas de `callbackfn` função uma vez para cada elemento no mapa.  
+ Necessário. A função que `forEach` chama uma vez para cada elemento no mapa. `callbackfn` aceita até três argumentos. `forEach` chamadas de `callbackfn` função uma vez para cada elemento no mapa.  
   
  `thisArg`  
  Opcional. Um objeto que o `this` pode referir-se na palavra-chave de `callbackfn` função. Se `thisArg` for omitido, `undefined` será usado como o valor de `this`.  
@@ -68,8 +69,8 @@ m.set(2, "red");
 m.set("colors", 2);  
 m.set({x:1}, 3);  
   
-m.forEach(function (item, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+m.forEach(function (value, key, mapObj) {  
+    document.write(value.toString() + "<br />");  
 });  
   
 document.write("<br />");  

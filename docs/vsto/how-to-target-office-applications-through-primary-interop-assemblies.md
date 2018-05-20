@@ -1,5 +1,5 @@
 ---
-title: 'Como: destinar aplicativos do Office por meio de Assemblies de interoperabilidade primários | Microsoft Docs'
+title: 'Como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bfe02a06403621c2429dd8be965b3ab1b5c41b2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32ff157e3986836ac13472c4a9ed8a7b01f06e04
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como destinar aplicativos do Office por meio de assemblies de interoperabilidade primários
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários
   Quando você cria um novo projeto do Office, o Visual Studio adiciona automaticamente as referências para os Microsoft Office assemblies de interoperabilidade primários (PIAs) que são necessários para compilar seu projeto. Você deve adicionar referências a outros PIAs nos seguintes cenários:  
   
 -   Você deseja usar os recursos de outros aplicativos do Microsoft Office em seu projeto. Por exemplo, você talvez queira usar recursos do Microsoft Office Excel em um projeto para o Microsoft Office Word.  
@@ -36,18 +36,18 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-### <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Para adicionar uma referência a um assembly de interoperabilidade primária  
+## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Para adicionar uma referência a um assembly de interoperabilidade primária  
   
 1.  Abra seu projeto do Office e selecione o nome do projeto no **Gerenciador de soluções**.  
   
 2.  No menu **Projeto**, clique em **Adicionar Referência**.  
   
-3.  Sobre o **Framework** , selecione o PIA desejado no **nome do componente** lista. Para obter mais informações sobre os assemblies interoperabilidade primárias para Microsoft Office disponíveis, consulte [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
+3.  Sobre o **Framework** , selecione o PIA desejado no **nome do componente** lista. Para obter mais informações sobre os assemblies interoperabilidade primárias para Microsoft Office disponíveis, consulte [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
   
-     Se os destinos do projeto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, o **Embed Interop Types** propriedade para a referência de assembly está definida como **True** por padrão. Usando essa configuração, sua solução não requer o PIA em computadores de usuários finais. Para obter mais informações, consulte [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md).  
+     Se os destinos do projeto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, o **Embed Interop Types** propriedade para a referência de assembly está definida como **True** por padrão. Usando essa configuração, sua solução não requer o PIA em computadores de usuários finais. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).  
   
     > [!NOTE]  
-    >  Em projetos do Office, sempre adicionar referências a PIAs do Office usando o **.NET** guia do **adicionar referência** caixa de diálogo, em vez do **COM** guia. Para obter mais informações, consulte [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
+    >  Em projetos do Office, sempre adicionar referências a PIAs do Office usando o **.NET** guia do **adicionar referência** caixa de diálogo, em vez do **COM** guia. Para obter mais informações, consulte [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).  
   
 4.  Clique em **OK**.  
   
@@ -55,8 +55,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Consulte também  
  [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md)   
- [Escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
- [Desenvolvendo soluções do Office](../vsto/developing-office-solutions.md)   
- [Como instalar assemblies de interoperabilidade primários do Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)   
+ [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
+ [Como: assemblies de interoperabilidade primários do Office de instalação](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Desenvolvimento melhor práticas para VBA, VSTO e COM suplementos do Office | Microsoft Docs
+title: Práticas recomendadas de desenvolvimento de COM, o VSTO e o VBA suplementos do Office
 ms.custom: ''
 ms.date: 07/25/2017
 ms.technology:
@@ -14,13 +14,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Práticas recomendadas de desenvolvimento de COM, o VSTO e o VBA suplementos do Office
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Práticas recomendadas de desenvolvimento de COM, o VSTO e o VBA suplementos do Office
   Se você estiver desenvolvendo suplementos do VSTO, COM ou do VBA para o Office, siga as práticas recomendadas de desenvolvimento descritas neste artigo.   Isso ajuda a garantir:
 
 -  Compatibilidade de suplementos em diferentes versões e implantações do Office.
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
  Não é recomendável ter o suplemento detectar se o Office é instalado durante o processo de instalação do suplemento. Se o Office não estiver instalado, você pode instalar o suplemento e o usuário será capaz de acessá-lo após a instalação do Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Use os tipos de interoperabilidade inseridos (NoPIA)  
-Se sua solução usa o .NET 4.0 ou posterior, use tipos de interoperabilidade inseridos (NoPIA) em vez de dependendo o escritório principal Interop Assemblies (PIA) redistribuível. Usando a incorporação de tipo reduz o tamanho da instalação da solução e garante a compatibilidade futura. Office 2010 foi a última versão do Office que acompanha o PIA redistribuível. Para obter mais informações, consulte [passo a passo: inserindo informações de tipos do Microsoft Office Assemblies](https://msdn.microsoft.com/en-us/library/ee317478.aspx) e [equivalência de tipo e tipos de interoperabilidade inserido](/windows/uwp/porting/desktop-to-uwp-root).
+Se sua solução usa o .NET 4.0 ou posterior, use tipos de interoperabilidade inseridos (NoPIA) em vez de dependendo o escritório principal Interop Assemblies (PIA) redistribuível. Usando a incorporação de tipo reduz o tamanho da instalação da solução e garante a compatibilidade futura. Office 2010 foi a última versão do Office que acompanha o PIA redistribuível. Para obter mais informações, consulte [passo a passo: incorporação de informações de tipo de assemblies do Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) e [equivalência de tipos e tipos de interoperabilidade inseridos](/windows/uwp/porting/desktop-to-uwp-root).
 
 Se sua solução usar uma versão anterior do .NET, é recomendável que você atualize sua solução para usar o .NET 4.0 ou posterior. Usando o .NET 4.0 ou posterior reduz pré-requisitos de tempo de execução em versões mais recentes do Windows.
   

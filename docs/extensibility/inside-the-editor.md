@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>Dentro do Editor
 O editor é composto de um número de subsistemas diferentes, que são projetados para impedir que o editor de texto separado de modelo a exibição de texto e a interface do usuário.  
@@ -59,7 +59,7 @@ O editor é composto de um número de subsistemas diferentes, que são projetado
   
  O subsistema de modelo de texto é livre de conceitos de interface do usuário. Por exemplo, não é responsável por formatação de texto ou o layout de texto, e ele não tem conhecimento de ornamentos visual que possam estar associados com o texto.  
   
- Os tipos públicos do subsistema de modelo de texto estão contidos no Microsoft.VisualStudio.Text.Data.dll e Microsoft.VisualStudio.CoreUtilitiy.dll, que depende apenas de biblioteca de classe base do .NET Framework e o Managed Extensibility Framework (MEF).  
+ Os tipos públicos do subsistema de modelo de texto estão contidos no Microsoft.VisualStudio.Text.Data.dll e Microsoft.VisualStudio.CoreUtility.dll, que depende apenas de biblioteca de classe base do .NET Framework e o Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Subsistema do modo de exibição de texto  
  O subsistema do modo de exibição de texto é responsável por formatação e exibição de texto. Os tipos neste subsistema são divididos em duas camadas, dependendo se os tipos se baseiam no Windows Presentation Foundation (WPF). Os tipos mais importantes são <xref:Microsoft.VisualStudio.Text.Editor.ITextView> e <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, que controlam o conjunto de linhas de texto que devem ser exibidas e também o cursor, a seleção e os recursos para o adorno de texto usando elementos de UI do WPF. Este subsistema também fornece a área de exibição de margens ao redor do texto. Essas margens podem ser estendidas e podem conter tipos diferentes de efeitos visuais e conteúdos. Exemplos de margens são linha número exibe e barras de rolagem.  

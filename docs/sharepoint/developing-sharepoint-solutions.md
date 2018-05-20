@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2269a457ee8466a5c119659e048f506cd85e4ed3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Desenvolvendo soluções do SharePoint
   Vários modelos de tipo de projeto do SharePoint estão disponíveis em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para a criação de sites do SharePoint e os elementos do site. Para obter uma lista dos tipos de projeto disponíveis, consulte [projeto do SharePoint e modelos de Item de projeto](../sharepoint/sharepoint-project-and-project-item-templates.md). A seguir está uma descrição dos elementos e propriedades de um projeto do SharePoint.  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
  Quando um recurso é adicionado a um projeto do SharePoint, ele aparece na **Solution Explorer** como um nó com o padrão de nome de recurso*x*.feature, onde *x* é um número exclusivo. Depois que um recurso é implantado no servidor do SharePoint, um administrador do SharePoint pode ativar o, tornando-o disponível aos usuários do site do SharePoint.  
   
 #### <a name="package-node"></a>Nó de pacote  
- O **pacote** nó contém um único arquivo que serve como o mecanismo de distribuição para o projeto do SharePoint. Esse arquivo, conhecido como um *solução * * pacote*, é. Com base em CAB com um. Extensão WSP. Um pacote de solução é um arquivo implantável e reutilizável que contém um conjunto de recursos, definições de site e assemblies que se aplicam a sites do SharePoint e que você pode habilitar ou desabilitar individualmente. O **pacote** nó também sempre contém um arquivo chamado Package.wspdef, um [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivo de definição para o pacote. Quando um pacote é implantado para o servidor que está executando o SharePoint, o administrador do SharePoint pode instalá-lo e ativar seus recursos.  
+ O **pacote** nó contém um único arquivo que serve como o mecanismo de distribuição para o projeto do SharePoint. Esse arquivo, conhecido como um *pacote de solução*, é. Com base em CAB com um. Extensão WSP. Um pacote de solução é um arquivo implantável e reutilizável que contém um conjunto de recursos, definições de site e assemblies que se aplicam a sites do SharePoint e que você pode habilitar ou desabilitar individualmente. O **pacote** nó também sempre contém um arquivo chamado Package.wspdef, um [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivo de definição para o pacote. Quando um pacote é implantado para o servidor que está executando o SharePoint, o administrador do SharePoint pode instalá-lo e ativar seus recursos.  
   
  Você pode exibir ou alterar o conteúdo do pacote no Designer de pacote, clicando duas vezes no nó do pacote ou abrindo o menu de atalho e, em seguida, escolhendo **abrir**. Para obter mais informações, consulte [criando pacotes da solução SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   

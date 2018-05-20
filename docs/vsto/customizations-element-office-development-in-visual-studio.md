@@ -1,5 +1,5 @@
 ---
-title: '&lt;personalizações&gt; elemento (desenvolvimento do Office no Visual Studio) | Microsoft Docs'
+title: '&lt;personalizações&gt; elemento (desenvolvimento do Office no Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7174f4f04914a120454d9977516e7c2443cbadda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef7aa93494ef2b2a33ab4533e217bd37ccd07420
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;personalizações&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `customizations` elemento o `vstov4` namespace contém todas as informações sobre como instalar e carregar cada solução do Office.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Sintaxe de personalizações no nível do documento  
   
-```  
+```xml
 <customizations>  
   <customization  
     id  
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax-for-vsto-add-ins"></a>Sintaxe de suplementos do VSTO  
   
-```  
+```xml
 <customizations>  
   <customization  
     id  
@@ -63,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
  O `customizations` elemento tem o seguinte elemento filho.  
   
-### <a name="customization"></a>personalização  
+### <a name="customization"></a>Personalização  
  Necessário. O `customization` elemento o `vstov4` namespace está definido em [ &#60;personalização&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>Exemplo de uma personalização no nível do documento  
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Código  
   
-```  
+```xml
 <vstov4:customizations   
   xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
   <vstov4:customization>  
@@ -93,7 +93,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Código  
   
-```  
+```xml
 <vstov4:customizations   
   xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
   <vstov4:customization>  
@@ -124,6 +124,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Consulte também  
  [Manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifesto de aplicativo ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
+ [Manifesto do aplicativo ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

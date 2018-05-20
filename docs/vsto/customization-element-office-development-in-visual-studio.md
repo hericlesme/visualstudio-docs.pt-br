@@ -1,5 +1,5 @@
 ---
-title: '&lt;personalização&gt; elemento (desenvolvimento do Office no Visual Studio) | Microsoft Docs'
+title: '&lt;personalização&gt; elemento (desenvolvimento do Office no Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4384dd8bea4fc5829362ccdb06ea3912607cd263
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02cf84dd225eadd1dcd9c1f20040811e654ebbc0
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;personalização&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `customization` elemento o `vstov4` namespace descreve uma solução específica. Os elementos filho são diferentes para personalizações no nível do documento e suplementos do VSTO.  
   
 ## <a name="syntax-for-document-level-customizations"></a>Sintaxe de personalizações no nível do documento  
   
-```  
+```xml
 <customization  
   id  
   <document  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax-for-vsto-add-ins"></a>Sintaxe de suplementos do VSTO  
   
-```  
+```xml
 <customization  
   id  
   <appAddin  
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/16/2018
 |---------------|-----------------|  
 |`id`|Necessário para a implantação de vários projeto. O `id` elemento identifica exclusivamente uma solução do Office.|  
   
-### <a name="document-level-customizations"></a>Personalizações no nível de documento  
+### <a name="document-level-customizations"></a>Personalizações no nível do documento  
  O `customization` elemento tem o seguinte elemento filho.  
   
 #### <a name="document"></a>documento  
@@ -80,7 +80,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Código  
   
-```  
+```xml
 <vstov4:customization>  
   <vstov4:document   
     solutionId="73e" />  
@@ -94,7 +94,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Código  
   
-```  
+```xml  
 <vstov4:customization>  
   <vstov4:appAddIn   
     application="Outlook"   
@@ -122,6 +122,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Consulte também  
  [Manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifesto de aplicativo ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
+ [Manifesto do aplicativo ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

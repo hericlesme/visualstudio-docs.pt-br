@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Alterando a formatação do documento usando controles CheckBox | Microsoft Docs'
+title: 'Passo a passo: Alterar a formatação do documento usando controles CheckBox'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecbb0036fc74cf5d0d27ea61283ec5b733dca1a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Instruções passo a passo: alterando a formatação do documento usando controles CheckBox
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Passo a passo: Alterar a formatação do documento usando controles CheckBox
   Este passo a passo demonstra como usar controles de formulários do Windows em uma personalização no nível do documento para o Microsoft Office Word para alterar a formatação de texto.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -47,21 +47,21 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## <a name="creating-the-project"></a>Criando o Projeto  
+## <a name="create-the-project"></a>Criar o projeto  
  A primeira etapa é criar um projeto de Documento do Word.  
   
-#### <a name="to-create-a-new-project"></a>Para criar um novo projeto  
+### <a name="create-a-new-project"></a>Criar um novo projeto  
   
 1.  Criar um projeto de documento do Word com o nome **formatação do Word meu**. No assistente, selecione **criar um novo documento**.  
   
-     Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Para obter mais informações, consulte [como: projetos do Office criar no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre o novo documento do Word no designer e adiciona o **formatação do Word Meus** projeto **Gerenciador de soluções**.  
   
-## <a name="adding-text-and-controls-to-the-word-document"></a>Adicionando texto e controles para o documento do Word  
+## <a name="add-text-and-controls-to-the-word-document"></a>Adicionar texto e controles para o documento do Word  
  Para este passo a passo, adicione três caixas de seleção e algum texto em uma <xref:Microsoft.Office.Tools.Word.Bookmark> controle para o documento do Word. As caixas de seleção apresentará opções para o usuário para a formatação de texto.  
   
-#### <a name="to-add-three-check-boxes"></a>Para adicionar três caixas de seleção  
+### <a name="add-three-check-boxes"></a>Adicionar três caixas de seleção  
   
 1.  Verifique se o documento é aberto no designer do Visual Studio.  
   
@@ -92,7 +92,7 @@ ms.lasthandoff: 04/16/2018
     |**Nome**|**applyUnderlineFont**|  
     |**Texto**|**sublinhado**|  
   
-#### <a name="to-add-text-and-a-bookmark-control"></a>Para adicionar texto e um controle de indicador  
+### <a name="add-text-and-a-bookmark-control"></a>Adicionar texto e um controle de indicador  
   
 1.  Mover o ponto de inserção abaixo dos controles da caixa de seleção e digite o seguinte texto:  
   
@@ -110,10 +110,10 @@ ms.lasthandoff: 04/16/2018
   
  Em seguida, escreva o código para formatar o texto quando uma caixa de seleção é marcada ou desmarcada.  
   
-## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatação de texto quando a caixa de verificação é marcada ou desmarcada  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatar o texto quando uma caixa de seleção é marcada ou desmarcada  
  Quando o usuário seleciona uma opção de formatação, altere o formato do texto do documento.  
   
-#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>Para alterar a formatação quando uma caixa de seleção está selecionada  
+### <a name="change-formatting-when-a-check-box-is-selected"></a>Alterar a formatação quando uma caixa de seleção está selecionada  
   
 1.  Clique com botão direito `ThisDocument` na **Solution Explorer**e, em seguida, clique em **Exibir código** no menu de atalho.  
   
@@ -140,12 +140,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## <a name="testing-the-application"></a>Testando o aplicativo  
+## <a name="test-the-application"></a>Testar o aplicativo  
  Agora você pode testar o documento para verificar se o texto está formatado corretamente quando você marca ou desmarca uma caixa de seleção.  
   
-#### <a name="to-test-your-document"></a>Para testar o documento  
+### <a name="test-your-document"></a>Teste seu documento  
   
-1.  Pressione F5 para executar o projeto.  
+1.  Pressione **F5** para executar o projeto.  
   
 2.  Marque ou desmarque uma caixa de seleção.  
   
@@ -154,16 +154,15 @@ ms.lasthandoff: 04/16/2018
 ## <a name="next-steps"></a>Próximas etapas  
  Este passo a passo mostra as Noções básicas de usando caixas de seleção e alterar programaticamente o texto de formatação em documentos do Word. Estas são algumas tarefas que podem vir a seguir:  
   
--   Use um botão para preencher uma caixa de texto. Para obter mais informações, consulte [passo a passo: exibindo texto em uma caixa de texto em um documento usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Use um botão para preencher uma caixa de texto. Para obter mais informações, consulte [passo a passo: exibir texto em uma caixa de texto em um documento usando um botão](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, consulte [passo a passo: atualizando um gráfico em um documento usando botões](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, consulte [passo a passo: atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
--  
-  
+
 ## <a name="see-also"></a>Consulte também  
  [Explicações passo a passo usando o Word](../vsto/walkthroughs-using-word.md)   
  [Explicações passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)   
  [Controle NamedRange](../vsto/namedrange-control.md)   
- [Limitações de controles do Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

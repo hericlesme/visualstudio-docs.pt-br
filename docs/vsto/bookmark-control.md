@@ -1,5 +1,5 @@
 ---
-title: Controle indicador | Microsoft Docs
+title: controle Indicador
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.prod: visual-studio-dev15
@@ -19,20 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68934d202fbffc162b6888ab3a45cdf0b7fd439d
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 60ab9db37f3ed41de4afcdecbf2c9e83ffb5c2f6
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="bookmark-control"></a>Controle de indicador
+# <a name="bookmark-control"></a>controle Indicador
   O controle <xref:Microsoft.Office.Tools.Word.Bookmark> é um indicador que tem um nome exclusivo, expõe eventos e pode ser vinculado a dados. O indicador pode ser usado como um espaço reservado para marcar um item ou local em um documento do Microsoft Office Word. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle é uma combinação de um <xref:Microsoft.Office.Interop.Word.Bookmark> objeto e um <xref:Microsoft.Office.Interop.Word.Range> objeto.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto em tempo de execução. Para obter mais informações, consulte [como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+ Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto em tempo de execução. Para obter mais informações, consulte [como: Adicionar indicador controles a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
-## <a name="binding-data-to-the-control"></a>Associação de dados ao controle
+## <a name="bind-data-to-the-control"></a>Associar dados ao controle
  Um <xref:Microsoft.Office.Tools.Word.Bookmark> controle oferece suporte à associação de dados simples. O indicador deve ser associado a uma fonte de dados usando o <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> propriedade. A propriedade de associação de dados padrão do indicador é o <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> propriedade.
 
  Se os dados no conjunto de dados associado são atualizados, o <xref:Microsoft.Office.Tools.Word.Bookmark> controle mostra as alterações.
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/28/2018
 ## <a name="formatting"></a>Formatação
  Formatação que pode ser aplicado a um <xref:Microsoft.Office.Interop.Word.Bookmark> pode ser aplicado a um <xref:Microsoft.Office.Tools.Word.Bookmark> controle. Essa formatação inclui fontes, recuos, espaçamento, numeração e estilos.
 
-## <a name="assigning-text-to-the-bookmark"></a>Atribuindo o texto para o indicador
+## <a name="assign-text-to-the-bookmark"></a>Atribuir o texto para o indicador
  Uma diferença adicional entre um <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto e um <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle é como ele se comporta quando o texto é atribuído para o indicador. Se você atribuir o texto para um comprimento zero <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>, o texto é anexado à direita do indicador e o indicador permanece comprimento zero. No entanto, se você atribuir o texto para um comprimento zero <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>, o texto será inserido no indicador e o comprimento do indicador se expande para o número total de caracteres inseridos.
 
  O <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle também tem o <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> propriedade. Esta propriedade é diferente do <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> propriedade que está disponível no <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> propriedade de um <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controle, ou o <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> propriedade de um <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> objeto.
@@ -52,10 +52,10 @@ ms.lasthandoff: 04/28/2018
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Use essa propriedade para exibir o texto dentro do indicador e deixar o indicador no documento. A atribuição de texto para o indicador expande o intervalo do indicador e não exclui o indicador.<br /><br /> Por exemplo, `Bookmark1.Text = "Hello world"` insere o texto do indicador e deixa o indicador intacto.|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Use esta propriedade para exibir o texto no local do indicador e excluir automaticamente o indicador. Por exemplo, `Bookmark1.Range.Text = "Hello world"` insere o texto no indicador e exclui o indicador.|
 
-## <a name="renaming-the-control-at-design-time"></a>Renomear o controle em tempo de Design
+## <a name="rename-the-control-at-design-time"></a>Renomeie o controle em tempo de design
  Em projetos de nível de documento, quando você arrasta um <xref:Microsoft.Office.Tools.Word.Bookmark> controlar do **caixa de ferramentas** ao documento, o Visual Studio gera automaticamente um nome para o controle. Você pode alterar o nome do controle no **propriedades** janela.
 
-## <a name="overlapping-controls"></a>Sobreposição de controles
+## <a name="overlapping-controls"></a>Os controles sobrepostos
  Controles de indicador podem se sobrepõem uns aos outros. O mesmo texto pode ser compartilhado por mais de um indicador. Quando você atribui o novo texto para um dos indicadores de sobreposição, ele contém apenas o novo texto e os indicadores não se sobrepõem. O outro indicador agora contém apenas o texto que não foi compartilhado entre os indicadores de sobreposição originais.
 
  A tabela a seguir mostra como a frase "Este é o texto de exemplo". é compartilhado por dois indicadores sobrepostos:
@@ -112,8 +112,8 @@ Os seguintes eventos estão disponíveis para o <xref:Microsoft.Office.Tools.Wor
 
 ## <a name="see-also"></a>Consulte também
 
-- [Automatizando o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
-- [Como adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Instruções passo a passo: criando menus de atalho para indicadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [Associando dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Limitações programáticas de itens de Host e Controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
+- [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Passo a passo: Criar menus de atalho para indicadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
