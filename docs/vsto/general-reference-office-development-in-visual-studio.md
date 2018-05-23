@@ -1,5 +1,5 @@
 ---
-title: Referência geral (desenvolvimento do Office no Visual Studio) | Microsoft Docs
+title: Referência geral (desenvolvimento do Office no Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 91c8f8003f610e9cf4aa440fa0175bb13267896e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Referência geral (desenvolvimento do Office no Visual Studio)
   Esta seção contém os detalhes técnicos sobre projetos do Microsoft Office no Visual Studio.  
@@ -44,13 +44,13 @@ ms.lasthandoff: 04/16/2018
  Lista os tópicos que explicam as mensagens de erro para projetos do Office.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Fornece links para informações sobre instalação, modelos de projeto, assemblies de interoperabilidade primários do Office e o que há de novo no desenvolvimento do Office.  
   
  [Explicações passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)  
  Descreve os exemplos de código e orientações passo a passo para a criação de projetos do Office no Visual Studio, que pode ajudá-lo a aprender e fazer experiências com a sintaxe, estrutura e técnicas usadas para criar soluções do Office.  
   
- [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
  Fornece links para informações sobre como começar a criação de projetos do Office usando o Visual Studio.  
   
   

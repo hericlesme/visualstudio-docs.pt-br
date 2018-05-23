@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d6d01b9f9ed0db8588124b71c982b2d37aa86ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Como criar um receptor de evento para uma instância da lista específica
   Um receptor de evento de instância de lista responde a eventos que ocorrem em qualquer instância de uma definição de lista. Embora o modelo de receptor de evento não habilitar o direcionamento de uma instância de lista específica, você pode modificar um receptor de evento com escopo em uma definição de lista para responder a eventos em uma instância de lista específica.  
@@ -55,13 +55,13 @@ ms.lasthandoff: 04/16/2018
   
      O receptor de evento atualmente faz referência a definição da lista de anúncios usando a seguinte linha:  
   
-    ```  
+    ```xml  
     <Receivers ListTemplateId="104">  
     ```  
   
      Altere esta linha para o seguinte texto:  
   
-    ```  
+    ```xml  
     <Receivers ListUrl="Lists/TestAnnouncements">  
     ```  
   

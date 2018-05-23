@@ -1,5 +1,5 @@
 ---
-title: Acesso global a objetos em projetos do Office | Microsoft Docs
+title: Acesso global a objetos em projetos do Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,11 +33,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d81d94c07345fa54c5758919b2a0c6dfde166503
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
   Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma classe denominada `Globals` no projeto. Você pode usar o `Globals` classe para acessar vários itens de projeto diferente em tempo de execução de qualquer código no projeto.  
@@ -53,9 +53,9 @@ ms.lasthandoff: 04/16/2018
   
 -   O `ThisAddIn` classe em um projeto de suplemento do VSTO. Você pode acessar esse objeto usando o `Globals.ThisAddIn` propriedade.  
   
--   Todas as faixas de opções em seu projeto personalizados usando o Designer de faixa de opções. Você pode acessar as faixas de opções usando o `Globals.Ribbons` propriedade. Para obter mais informações, consulte [acessando a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md).  
+-   Todas as faixas de opções em seu projeto personalizados usando o Designer de faixa de opções. Você pode acessar as faixas de opções usando o `Globals.Ribbons` propriedade. Para obter mais informações, consulte [acessar a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md).  
   
--   Todas as regiões de formulário Outlook em um projeto de suplemento do VSTO do Outlook. Você pode acessar as regiões de formulário usando o `Globals.FormRegions` propriedade. Para obter mais informações, consulte [acessando uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md).  
+-   Todas as regiões de formulário Outlook em um projeto de suplemento do VSTO do Outlook. Você pode acessar as regiões de formulário usando o `Globals.FormRegions` propriedade. Para obter mais informações, consulte [acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md).  
   
 -   Um objeto de fábrica que permite criar controles de faixa de opções e hospedar itens em tempo de execução em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Você pode acessar esse objeto usando o `Globals.Factory` propriedade. Esse objeto é uma instância de uma classe que implementa uma as seguintes interfaces:  
   
@@ -72,19 +72,19 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## <a name="initializing-the-globals-class"></a>Inicializar a classe Globals  
+## <a name="initialize-the-globals-class"></a>Inicializar a classe Globals  
  Código que tenta usar o `Globals` classe antes do documento ou um suplemento do VSTO está completamente inicializado pode gerar uma exceção de tempo de execução. Por exemplo, usando `Globals` quando declarando uma variável de nível de classe pode falhar porque o `Globals` classe não pode ser inicializada com referências a todos os itens de host antes do objeto declarado é instanciado.  
   
 > [!NOTE]  
 >  O `Globals` classe nunca é inicializada no tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade do `Globals` classe de dentro de uma classe de controle de usuário, você deve se a propriedade retorna **nulo** antes de tentar usar o objeto retornado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Acessando a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Acessando uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)   
- [Itens de host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md)   
- [Item de Host do documento](../vsto/document-host-item.md)   
- [Item de Host de pasta de trabalho](../vsto/workbook-host-item.md)   
- [Item de Host de planilha](../vsto/worksheet-host-item.md)   
- [Escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
+ [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Acesso a uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Itens de host e visão geral dos controles de host](../vsto/host-items-and-host-controls-overview.md)   
+ [Item de host do documento](../vsto/document-host-item.md)   
+ [Item de host de pasta de trabalho](../vsto/workbook-host-item.md)   
+ [Item de host de planilha](../vsto/worksheet-host-item.md)   
+ [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
   
   

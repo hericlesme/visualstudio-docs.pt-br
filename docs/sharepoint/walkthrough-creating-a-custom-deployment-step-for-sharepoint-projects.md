@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9052136a58b0c6cd3246b7c7b61c89bf637a8cf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Instruções passo a passo: criando uma etapa de implantação para projetos SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui várias etapas de implantação interna, mas você também pode criar seus próprios.  
@@ -161,9 +161,7 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-create-the-deployment-configuration"></a>Para criar a configuração de implantação  
   
-1.  
-  
-2.  No **DeploymentStepExtension** de projeto, abra o arquivo de código DeploymentConfigurationExtension e, em seguida, cole o seguinte código para ele.  
+1.  No **DeploymentStepExtension** de projeto, abra o arquivo de código DeploymentConfigurationExtension e, em seguida, cole o seguinte código para ele.  
   
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
@@ -306,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 15. No arquivo Elements, substitua o padrão XML no arquivo pelo XML a seguir. Esse XML altera o nome da lista para **funcionários** e adiciona informações de um funcionário que possui chamada Jim Hance.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  
@@ -357,7 +355,7 @@ ms.lasthandoff: 04/16/2018
   
      Quando você terminar, o arquivo deve conter o seguinte XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  

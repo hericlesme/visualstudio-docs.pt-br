@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea55cbba9115b88ab9bbf763ec489dce7ad7556e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1805ea5b09eac6fbe1efffe8581c347c586442cd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="projectitem-element"></a>Elemento ProjectItem
-  Representa um item de projeto do SharePoint. Este é o elemento raiz necessário do arquivo. spdata.  
+  Representa um item de projeto do SharePoint. Esse elemento, o elemento raiz necessário do arquivo the.spdata.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```xml  
 <ProjectItem DefaultFile = "File that opens in the editor when you open the project item"  
     FeatureReceiverClass = "Class that implements a feature receiver for the project item"  
     FeatureReceiverAssembly = "Assembly that defines a feature receiver for the project item"  
@@ -48,11 +48,11 @@ ms.lasthandoff: 04/16/2018
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|**DefaultFile**|Opcional **xs: string** atributo.<br /><br /> O caminho relativo, incluindo o nome do arquivo, do arquivo que é aberto no editor do Visual Studio quando você abre o item de projeto do SharePoint no **Gerenciador de soluções**. O caminho é relativo da pasta que contém o arquivo. spdata.|  
+|**DefaultFile**|Opcional **xs: string** atributo.<br /><br /> O caminho relativo, incluindo o nome do arquivo, do arquivo que é aberto no editor do Visual Studio quando você abre o item de projeto do SharePoint no **Gerenciador de soluções**. O caminho é relativo da pasta que contém o `.spdata` arquivo.|  
 |**FeatureReceiverClass**|Opcional **xs: string** atributo.<br /><br /> O nome totalmente qualificado de uma classe de receptor de recurso para este item de projeto do SharePoint. Para obter mais informações sobre os destinatários de recurso, consulte [fornecendo empacotamento e informações de implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |**FeatureReceiverAssembly**|Opcional **xs: string** atributo.<br /><br /> Especifica o nome totalmente qualificado de um assembly que define um receptor de recursos para este item de projeto do SharePoint. Para obter mais informações sobre os destinatários de recurso, consulte [fornecendo empacotamento e informações de implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Para obter mais informações sobre nomes de assembly totalmente qualificado, consulte [nomes de Assembly](/dotnet/framework/app-domains/assembly-names).|  
 |**SupportedTrustLevels**|Opcional **xs: string** atributo.<br /><br /> Especifica os níveis de confiança que dá suporte a este item de projeto do SharePoint. Esse valor pode ser uma das seguintes cadeias de caracteres: em modo seguro, FullTrust, ou tudo. O valor All Especifica Sandboxed e FullTrust.<br /><br /> Em um tipo de item de projeto do SharePoint personalizado, o valor deste atributo corresponde ao valor que você atribui ao <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriedade na implementação do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Se você especificar um valor diferente para esse atributo, o Visual Studio substitui o valor para que ele especifique o mesmo nível de confiança que você especificar o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propriedade.|  
-|**SupportedDeploymentScopes**|Opcional **xs: string** atributo.<br /><br /> Especifica os escopos de implantação que dá suporte a este item de projeto do SharePoint. Esse valor é uma cadeia de caracteres delimitada por vírgulas que consiste em uma ou mais das seguintes cadeias de caracteres: Farm, Site, Web, aplicativo Web ou pacote. Por exemplo, "Web Site".<br /><br /> Em um tipo de item de projeto do SharePoint personalizado, o valor deste atributo corresponde ao valor que você atribui ao <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriedade na implementação do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Se você especificar um valor diferente para esse atributo, o Visual Studio substitui o valor para que ele especifique o mesmo nível de confiança que você especificar o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriedade.|  
+|**SupportedDeploymentScopes**|Opcional **xs: string** atributo.<br /><br /> Especifica os escopos de implantação que dá suporte a este item de projeto do SharePoint. Esse valor é uma cadeia de caracteres delimitada por vírgulas que consiste em uma ou mais das seguintes cadeias de caracteres: Farm, Site, Web, aplicativo Web ou pacote. Por exemplo: `Web, Site`<br /><br /> Em um tipo de item de projeto do SharePoint personalizado, o valor deste atributo corresponde ao valor que você atribui ao <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriedade na implementação do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Se você especificar um valor diferente para esse atributo, o Visual Studio substitui o valor para que ele especifique o mesmo nível de confiança que você especificar o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propriedade.|  
 |**Tipo**|Necessário **xs: string** atributo.<br /><br /> O identificador do item de projeto do SharePoint. Em um tipo de item de projeto do SharePoint personalizado, o identificador é a cadeia de caracteres que você passa para o <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para obter mais informações, consulte [como: definir um tipo de Item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Para obter uma lista de identificadores para os itens de projeto do SharePoint internos incluídos com o Visual Studio, consulte [estendendo itens de projeto do SharePoint](../sharepoint/extending-sharepoint-project-items.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -61,8 +61,8 @@ ms.lasthandoff: 04/16/2018
 |-------------|-----------------|  
 |[ExtensionData](../sharepoint/extensiondata-element.md)|Elemento opcional.<br /><br /> Representa uma coleção de itens de dados personalizados que são associados ao item de projeto do SharePoint.<br /><br /> Você pode incluir apenas um **ExtensionData** elemento.|  
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Elemento opcional.<br /><br /> Representa uma coleção de valores de propriedade que são incluídos com um recurso quando ele é implantado no SharePoint.<br /><br /> Você pode incluir apenas um **FeatureProperties** elemento.|  
-|[Arquivos](../sharepoint/files-element.md)|Opcional **FileCollectionType** elemento.<br /><br /> Especifica os arquivos para implantar com o item de projeto do SharePoint, como arquivos de elemento de recurso e a saída de projetos dependentes do SharePoint.<br /><br /> Você deve incluir um **arquivos** ou um **ProjectItemFolder** elemento, mas não ambos.|  
-|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Opcional **ProjectItemFolderType** elemento.<br /><br /> Representa uma pasta mapeada.<br /><br /> Você deve incluir um **arquivos** ou um **ProjectItemFolder** elemento, mas não ambos.|  
+|[Arquivos](../sharepoint/files-element.md)|Opcional **FileCollectionType** elemento.<br /><br /> Especifica os arquivos para implantar com o item de projeto do SharePoint, como arquivos de elemento de recurso e a saída de projetos dependentes do SharePoint.<br /><br /> Incluir um **arquivos** ou um **ProjectItemFolder** elemento, mas não ambos.|  
+|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|Opcional **ProjectItemFolderType** elemento.<br /><br /> Representa uma pasta mapeada.<br /><br /> Incluir um **arquivos** ou um **ProjectItemFolder** elemento, mas não ambos.|  
 |[SafeControls](../sharepoint/safecontrols-element.md)|Elemento opcional.<br /><br /> Representa uma coleção de controles ASPX e Web Parts que são designados como seguro para qualquer usuário acesse qualquer página ASPX no site do SharePoint.<br /><br /> Você pode incluir apenas um **SafeControls** elemento.|  
   
 ### <a name="parent-elements"></a>Elementos pai  

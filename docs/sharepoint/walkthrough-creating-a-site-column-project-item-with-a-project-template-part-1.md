@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Instruções passo a passo: criando um item de projeto da coluna de site com um modelo de projeto, parte 1
   Projetos SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio, criar seus próprios tipos de item de projeto do SharePoint e, em seguida, associá-los a um modelo de projeto. Neste passo a passo, você definirá um tipo de item de projeto para a criação de uma coluna de site e, em seguida, você criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto da coluna de site.  
@@ -203,13 +203,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  No arquivo de projeto, localize o seguinte `VSTemplate` elemento.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
     ```  
   
 4.  Substitua este elemento XML a seguir.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  No projeto SiteColumnProjectTemplate, substitua o conteúdo do arquivo Elements XML a seguir.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   
@@ -280,7 +280,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  No projeto SiteColumnProjectTemplate, substitua o conteúdo do arquivo SharePointProjectItem.spdata pelo XML a seguir.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.SiteColumn" DefaultFile="Elements.xml"   
                  xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -304,7 +304,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  No projeto SiteColumnProjectTemplate, substitua o conteúdo do arquivo Feature1.feature pelo XML a seguir.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="$guid4$" featureId="$guid4$"   
              imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="Site Column Feature1" version=""  
@@ -330,7 +330,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  No projeto SiteColumnProjectTemplate, substitua o conteúdo do arquivo de pacote com o XML a seguir.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0"   
              Id="$guid3$" solutionId="$guid3$" resetWebServer="false" name="$safeprojectname$"   
@@ -357,7 +357,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Se você estiver criando um modelo de projeto do Visual c#, use o seguinte XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -393,7 +393,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Se você estiver criando um modelo de projeto do Visual Basic, use o seguinte XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
       <TemplateData>  
@@ -445,7 +445,7 @@ ms.lasthandoff: 04/16/2018
   
     -   Se você estiver criando um modelo de projeto do Visual c#, use o seguinte XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  
@@ -525,7 +525,7 @@ ms.lasthandoff: 04/16/2018
   
     1.  Se você estiver criando um modelo de projeto do Visual Basic, use o seguinte XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
       <PropertyGroup>  

@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07c9347bbfb42e3c2e20a1b4ecf6d852c567edbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b559239b537be4a57ff0815f67d8c50acb8b1ed
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-localize-code"></a>Como localizar código
   Código não localizado usa valores de cadeia de caracteres codificada. Para localizar cadeias de caracteres de código, substituí-las por chamadas para <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, que é um método que faz referência a recursos localizados.  
@@ -62,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
 11. Localize todas as cadeias de caracteres codificadas em seu código que são visíveis aos usuários, como o texto de interface do usuário, erros e texto da mensagem. Substituí-las por uma chamada para o <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> método usando a seguinte sintaxe:  
   
-    ```  
+    ```csharp  
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")  
     ```  
   

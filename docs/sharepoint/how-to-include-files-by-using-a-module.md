@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6af9ef6114a3ac187c50d17f16c39c89b08370dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: daea134298e84e7ddddf419da2124924fe9ef121
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Como: Incluir arquivos usando um módulo
   *Módulos* (não deve ser confundido com [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] módulos) são contêineres que permitem que você implantar arquivos como páginas mestras ASPX, arquivos de texto ou imagens no SharePoint.  
@@ -59,7 +59,7 @@ ms.lasthandoff: 04/16/2018
   
 8.  Para todos os arquivos que você deseja exibir em uma biblioteca de documentos, acrescente o `Type="GhostableInLibrary"` atributo de entrada na Elements. Por exemplo,  
   
-    ```  
+    ```xml  
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />  
     ```  
   

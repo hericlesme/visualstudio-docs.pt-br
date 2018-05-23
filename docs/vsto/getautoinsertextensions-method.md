@@ -1,5 +1,5 @@
 ---
-title: Método GetAutoInsertExtensions | Microsoft Docs
+title: Método GetAutoInsertExtensions
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67f6bfcb0ee38acf9abb604f28fa95eeaa605fde
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="getautoinsertextensions-method"></a>Método GetAutoInsertExtensions
   Obtém informações sobre os aplicativos do Office que serão inseridos automaticamente durante a depuração.  
@@ -26,22 +26,22 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```c  
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
 ```  
   
-#### <a name="parameters"></a>Parâmetros  
+### <a name="parameters"></a>Parâmetros  
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
 |*psaExtensionNames*|Os nomes de extensão dos aplicativos do Office.|  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um valor HRESULT que indica se o método foi concluída com êxito.  
   
 ## <a name="remarks"></a>Comentários  
- Cada aplicativo do Office a ser inserido é retornado como um nome de extensão de aplicativo do Office, que corresponde a um valor em HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer. O host deve pesquisar esses valores no registro e, em seguida, inserir automaticamente as extensões.  
+ Cada aplicativo do Office a ser inserido é retornado como um nome de extensão de aplicativo do Office, que corresponde a um valor em **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. O host deve pesquisar esses valores no registro e, em seguida, inserir automaticamente as extensões.  
   
   

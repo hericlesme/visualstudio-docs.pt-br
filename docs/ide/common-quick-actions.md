@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>Ações Rápidas comuns
 
@@ -24,9 +24,13 @@ As seções deste tópico listam algumas das **Ações Rápidas** comuns aplicá
 
 ## <a name="actions-that-fix-errors"></a>Ações que corrigem erros
 
+Nesta seção, as Ações Rápidas corrigem erros no código que podem fazer com que um build falhe. Quando as Ações Rápidas estão disponíveis para corrigir um erro em uma linha de código, o ícone exibido na margem ou abaixo do rabisco vermelho é uma lâmpada com um "x" vermelho.
+
+![Ícone de erro e menu das Ações Rápidas](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Corrigir o símbolo ou a palavra-chave incorreta
 
-Se você digitar incorretamente um tipo ou uma palavra-chave no Visual Studio acidentalmente, essa Ação Rápida corrigirá esse erro de forma automática para você. Você verá esses itens no menu de lâmpada como **"Alterar '*palavra digitada incorretamente*' para '*palavra correta*'**".  Por exemplo:
+Se você digitar incorretamente um tipo ou uma palavra-chave no Visual Studio acidentalmente, essa Ação Rápida corrigirá esse erro de forma automática. Você verá esses itens no menu de lâmpada como **"Alterar '*palavra digitada incorretamente*' para '*palavra correta*'**".  Por exemplo:
 
 ```csharp
 // Before
@@ -94,44 +98,6 @@ private void MyMethod()
 |  ID do erro | Linguagens Aplicáveis |  Versão compatível |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# e Visual Basic | Visual Studio 2017 versão 15.3 |
-
-### <a name="make-method-synchronous"></a>Tornar o método síncrono
-
-Ao usar a palavra-chave `async` ou `Async` em um método, espera-se que, em algum lugar desse método, a palavra-chave `await` ou `Await` também seja usada.  No entanto, se esse não for o caso, uma Ação Rápida será exibida, que permitirá tornar o método síncrono, removendo a palavra-chave `async` ou `Async` e alterando o tipo de retorno. Use a opção **Tornar o método síncrono** do menu Ações Rápidas.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  ID do erro | Linguagens Aplicáveis |  Versão compatível |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# e Visual Basic | Visual Studio 2015 Atualização 2 |
 
 ### <a name="make-method-asynchronous"></a>Tornar o método assíncrono
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | ID do diagnóstico | Linguagens Aplicáveis | Versão compatível |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
+
+### <a name="make-method-synchronous"></a>Tornar o método síncrono
+
+Ao usar a palavra-chave `async` ou `Async` em um método, espera-se que, em algum lugar desse método, a palavra-chave `await` ou `Await` também seja usada.  No entanto, se esse não for o caso, uma Ação Rápida será exibida, que permitirá tornar o método síncrono, removendo a palavra-chave `async` ou `Async` e alterando o tipo de retorno. Use a opção **Tornar o método síncrono** do menu Ações Rápidas.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  ID do erro | Linguagens Aplicáveis |  Versão compatível |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# e Visual Basic | Visual Studio 2015 Atualização 2 |
 
 ## <a name="see-also"></a>Consulte também
 

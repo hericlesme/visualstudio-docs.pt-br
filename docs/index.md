@@ -4,11 +4,11 @@ hide_bc: true
 title: Documentação do Visual Studio | Microsoft Docs
 description: Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.topic: hub-page
-ms.openlocfilehash: 4dcf3ff02db54d1a0d6b2e45d3418caf1d908783
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e97752779c09c89107e784a0001737a8f5d77e2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -537,7 +537,7 @@ ms.lasthandoff: 04/16/2018
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Node.js</h3>
-                                                    <p>Crie aplicativos de rede escaláveis usando Node.js, um tempo de execução JavaScript orientado a eventos assíncrono.</p>
+                                                    <p>Crie aplicativos de rede escalonáveis usando Node.js, um tempo de execução assíncrono do JavaScript controlado por evento.</p>
                                                 </div>
                                             </div>
                                         </div>

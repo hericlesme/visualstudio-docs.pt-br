@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: a077aae7104d1e8b96fdebffd70355a05daa19f4
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: df5ce60e9d7a05d8cc7c9ebbe173dd30a0a0edf4
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/14/2018
 ---
 # Perguntas Frequentes sobre o Visual Studio IntelliCode
 
@@ -40,6 +40,13 @@ Os desenvolvedores podem [baixar uma extensão experimental](https://go.microsof
 
 Com o IntelliCode, a lista de conclusão sugere a API que mais provavelmente é a correta para o desenvolvedor usar, em vez de apresentar uma simples lista de membros em ordem alfabética. Ele usa o contexto de código atual do desenvolvedor e padrões baseados em 2000 projetos de software livre de alta qualidade do GitHub, cada um deles com mais de 100 estrelas, para fornecer essa lista dinâmica. Os resultados formam um modelo que prevê as chamadas à API mais prováveis e mais relevantes.
 
+## P: As sugestões de conclusão do IntelliCode são boas?
+
+Estamos usando as recomendações do IntelliCode internamente na Microsoft há algum tempo e acreditamos que as sugestões são úteis. No entanto, só poderemos confirmar a utilidade dessas recomendações quando vocês a usarem ao codificar. Gostaríamos que vocês experimentassem a [extensão IntelliCode](https://go.microsoft.com/fwlink/?linkid=872707) no Visual Studio. Conte-nos como ela funciona para você e envie-nos seus comentários. Também treinaremos nosso modelo com base no que vocês escolherem em nossas recomendações e atualizaremos a extensão conforme o modelo se aperfeiçoa.
+
+> [!NOTE]
+> Nenhum código definido pelo usuário é coletado. Confira a pergunta sobre [privacidade](#privacy).
+
 ## P. Qual é o futuro do IntelliCode?
 
 Estamos explorando uma ampla gama de maneiras de aumentar a produtividade do desenvolvedor usando IA e outras técnicas avançadas. No build 2018, fornecemos uma visão antecipada de alguns dos cenários em que acreditamos que a IA possa ajudar os desenvolvedores, mas há muitos mais! Estamos interessados em saber mais dos desenvolvedores que fazem experimentos com o que mostramos, portanto, inscreva-se para receber notícias e atualizações em [https://aka.ms/intellicode](https://aka.ms/intellicode).
@@ -52,11 +59,19 @@ No momento, não temos nenhum anúncio relacionado a preços.
 
 O IntelliSense assistido por IA do IntelliCode está, atualmente, em sua primeira versão prévia experimental. Continuaremos atualizando a extensão experimental e adicionaremos mais recursos no futuro. Não temos nenhuma agenda para uma versão final, mas apreciamos os comentários de desenvolvedores para que possamos fornecer as melhores experiências possíveis. Você pode se inscrever para receber notícias e atualizações em [https://aka.ms/intellicode](https://aka.ms/intellicode).
 
-## P. Essa experiência só está disponível no Visual Studio?
+## P. Essa experiência só está disponível no Visual Studio e para o C#?
 
 A experiência foi mostrada no build 2018 no Visual Studio de 2017 em uma base de código C#. No entanto, estamos ansiosos para expandir o IntelliCode para mais idiomas e ferramentas da família do Visual Studio no futuro.
 
-## P: E quanto à privacidade? Vocês estão enviando meu código para a nuvem? Quais dados do cliente estão sendo enviados à Microsoft?
+## P. Qual versão do Visual Studio é necessária para executar essa extensão?
+
+A extensão IntelliCode do Visual Studio é compatível com o Visual Studio 2017 versão 15.7, versão prévia 5 e posteriores (todas as SKUs). A instalação da extensão será interrompida pela mensagem "Esta extensão não é instalável em nenhum dos produtos atualmente instalados." se a versão mínima exigida não estiver instalada.
+
+## P. Essa experiência só está disponível em inglês?
+
+O IntelliCode é uma extensão em versão prévia hoje, e estamos ansiosos para saber o quanto essas funcionalidades são úteis para um conjunto mais amplo de clientes. Quando o IntelliCode deixar de ser uma versão prévia, certamente consideraremos os locais e idiomas que terão suporte primeiro e como ele será oferecido, com base nos seus comentários. 
+
+## <a name="privacy"/> P: E quanto à privacidade? Vocês estão enviando meu código para a nuvem? Quais dados do cliente estão sendo enviados à Microsoft?
 
 Os desenvolvedores são convidados a experimentar o Visual Studio IntelliCode como uma extensão de versão prévia experimental. A finalidade da extensão é permitir que os desenvolvedores testem os recursos do IntelliCode e forneçam comentários à equipe do produto.
 

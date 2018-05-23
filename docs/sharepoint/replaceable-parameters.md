@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>Parâmetros substituíveis
   Parâmetros substituíveis, ou *tokens*, pode ser usado em arquivos de projeto para fornecer valores para os itens de solução do SharePoint cujos valores reais não são conhecidos no tempo de design. Eles são semelhantes em função para o padrão [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de modelo. Para obter mais informações, consulte [parâmetros de modelo](/visualstudio/ide/template-parameters).  
   
 ## <a name="token-format"></a>Formato do token  
- Tokens começam e terminam com um caractere de cifrão ($). Todos os tokens usados são substituídos por valores reais quando um projeto é empacotado em um arquivo de pacote (. wsp) de solução do SharePoint no momento da implantação. Por exemplo, o token **$SharePoint.Package.Name$** pode resolver para a cadeia de caracteres "Pacote do SharePoint de teste".  
+ Tokens começam e terminam com um caractere de cifrão ($). Na implantação, todos os tokens usados são substituídos por valores reais quando um projeto é empacotado em um pacote de solução do SharePoint (arquivo. wsp). Por exemplo, o token **$SharePoint.Package.Name$** pode resolver para a cadeia de caracteres "Pacote do SharePoint de teste".  
   
 ## <a name="token-rules"></a>Regras de token  
  As seguintes regras se aplicam aos tokens:  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  Tokens que não seguem estas regras são ignorados sem fornecer um aviso ou erro.  
   
- A substituição de tokens de valores de cadeia de caracteres é feita imediatamente após a transformação de manifesto, permitindo que modelos manifestos editados por um usuário para usar tokens.  
+ A substituição de tokens de valores de cadeia de caracteres é feita imediatamente após a transformação de manifesto. Essa substituição permite que o usuário edite os modelos de manifesto com tokens.  
   
 ### <a name="token-name-resolution"></a>Resolução de nome do token  
  Na maioria dos casos, um token resolve para um valor específico, independentemente de onde ele está contido. No entanto, se o token estiver relacionado a um pacote ou um recurso, valor do token depende de onde ele está contido. Por exemplo, se um recurso está no pacote um, em seguida, o token `$SharePoint.Package.Name$` resolve para o valor "Pacote A." Se o mesmo recurso está no pacote B, em seguida, `$SharePoint.Package.Name$` resolve para o "Pacote B."  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  Essas extensões são definidas pelo `<TokenReplacementFileExtensions>` elemento no arquivo Microsoft.VisualStudio.SharePoint.targets, localizado em de... \\< arquivos de programas\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools pasta.  
   
- No entanto, você pode adicionar extensões de arquivo adicionais à lista. Para fazer isso, adicione um `<TokenReplacementFileExtensions>` elemento para qualquer PropertyGroup no arquivo de projeto do SharePoint que está definido antes do \<importação > do arquivo de destinos do SharePoint.  
+ No entanto, você pode adicionar extensões de arquivo adicionais à lista. Adicionar um `<TokenReplacementFileExtensions>` elemento para qualquer PropertyGroup no arquivo de projeto do SharePoint que está definido antes do \<importação > do arquivo de destinos do SharePoint.  
   
 > [!NOTE]  
 >  Como a substituição do token ocorre depois que um projeto é compilado, você não deve adicionar extensões de arquivo para tipos de arquivo que são compilados, como. cs,. vb ou. resx. Tokens são substituídos somente em arquivos que não são compilados.  
   
- Por exemplo, para adicionar as extensões de nome de arquivo ".myextension" e ".yourextension" à lista de extensões de nome de arquivo de substituição do token, adicione o seguinte em um arquivo. csproj:  
+ Por exemplo, para adicionar as extensões de nome de arquivo ".myextension" e ".yourextension" à lista de extensões de nome de arquivo de substituição do token, você adicionaria o seguinte para uma `.csproj` arquivo:  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- Como alternativa, você pode adicionar a extensão diretamente para o arquivo. targets. No entanto, isso altera a lista de extensões de todos os projetos do SharePoint empacotados no sistema local, não apenas seu próprio. Isso pode ser conveniente quando você o desenvolvedor exclusivo no sistema ou se precisam de mais de seus projetos-lo. No entanto, porque é específicas do sistema, essa abordagem não é muito portáteis e, portanto, é recomendável que você adicionar as extensões para o arquivo de projeto em vez disso.  
+ Você pode adicionar a extensão diretamente para o arquivo. targets. No entanto, isso altera a lista de extensões de todos os projetos do SharePoint empacotados no sistema local, não apenas seu próprio. Isso pode ser conveniente quando você o desenvolvedor exclusivo no sistema ou se precisam de mais de seus projetos-lo. No entanto, porque é específicas do sistema, essa abordagem não é muito portáteis e, portanto, é recomendável que você adicionar as extensões para o arquivo de projeto em vez disso.  
   
 ## <a name="see-also"></a>Consulte também  
  [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  

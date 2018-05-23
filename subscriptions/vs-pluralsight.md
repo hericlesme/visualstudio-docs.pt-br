@@ -9,11 +9,11 @@ description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b4782c1da48b21fffcb0ebc5abc05b56a8116ae0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -82,7 +82,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 | Visual Studio Enterprise (NFR<sup>1</sup> ) | Programa                                       | Não disponível                                  |NA|
 <sup>1</sup>  *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner),BizSpark, MCT Software & Services, MCT Software & Services Developer, MVP (Microsoft Valued Partner), RD (diretor regional), MPN (Microsoft Partner Network), FTE, Imagine.*
 
-<sup>2</sup> *Após a expiração das assinaturas do Pluralsight, você pode se qualificar para receber 12 meses de acesso a 50 cursos do Pluralsight selecionados em uma de três áreas de estudo.  O benefício do Pluralsight é somente para uso único, vinculado ao indivíduo.  Depois que o assinante consome o benefício, ele não é restaurado. Consulte as perguntas frequentes abaixo para obter mais detalhes.*
+<sup>2</sup>  *O benefício do Pluralsight é somente para uso único, vinculado ao indivíduo.  Depois que o assinante consome o benefício, ele não é restaurado. Consulte as perguntas frequentes abaixo para obter mais detalhes.  Após a expiração das assinaturas do Pluralsight, você pode se qualificar para receber 12 meses de acesso a 50 cursos do Pluralsight selecionados em uma de três áreas de estudo.*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
 

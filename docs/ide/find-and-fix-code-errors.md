@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -91,17 +91,15 @@ Os avisos novos ou atualizados são exibidos na guia **Lista de Erros** na parte
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Usar as lâmpadas para corrigir ou refatorar o código
 
-As [lâmpadas](../ide/quick-actions.md) são um novo recurso do Visual Studio que permitem que você refatore o código embutido. Elas são uma maneira fácil de corrigir avisos comuns com rapidez e eficiência no código C#, C++ e Visual Basic. Para acessá-las, clique com o botão direito do mouse em uma linha ondulada de aviso e selecione **Ações Rápidas** ou pressione **Ctrl**+**.** quando o cursor estiver na linha com a linha ondulada colorida. Você verá uma lista de possíveis correções ou refatorações que podem ser aplicadas àquela linha de código.
+As [Ações Rápidas](../ide/quick-actions.md), disponíveis nos ícones de lâmpada ou chave de fenda, permitem refatorar o código embutido. Elas são uma maneira fácil de corrigir avisos comuns com rapidez e eficiência no código C#, C++ e Visual Basic. Para acessá-las, clique com o botão direito do mouse em uma linha ondulada de aviso e selecione **Ações Rápidas e refatorações**. Outra opção é pressionar **Ctrl**+ **quando o cursor estiver na linha ondulada de aviso** ou selecionar o ícone de lâmpada ou chave de fenda na margem. Você verá uma lista de possíveis correções ou refatorações que podem ser aplicadas àquela linha de código.
 
 ![Visualização da lâmpada do Visual Studio](../ide/media/quick-actions-options.png)
 
-As lâmpadas podem ser usadas sempre que os analisadores de código determinam que há uma oportunidade para corrigir, refatorar ou melhorar o código. Clique em qualquer linha de código, clique com o botão direito do mouse para abrir o menu de contexto e selecione **Ações Rápidas** (ou, novamente, se preferir eficiência, pressione **Ctrl**+**.**). Se opções de refatoração ou melhoria estiverem disponíveis, elas serão exibidas. Caso contrário, a mensagem **Nenhuma opção rápida disponível aqui** é exibida no canto inferior esquerdo do IDE.
+As Ações Rápidas podem ser usadas sempre que os analisadores de código determinam que há uma oportunidade para corrigir, refatorar ou melhorar o código. Clique em qualquer linha de código, clique com o botão direito do mouse para abrir o menu de contexto e selecione **Ações Rápidas e refatorações**. Se opções de refatoração ou melhoria estiverem disponíveis, elas serão exibidas. Caso contrário, a mensagem **Nenhuma ação rápida disponível aqui** é exibida no canto inferior esquerdo do IDE.
 
-![Texto 'sem opção' da lâmpada do Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Texto "Nenhuma ação rápida disponível aqui"](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Com experiência, você poderá usar rapidamente as teclas de direção e **Ctrl**+**.** para verificar se há oportunidades de refatoração das opções rápidas e limpar seu código!
-
-Para obter mais informações sobre lâmpadas, leia [Ações Rápidas](../ide/quick-actions.md).
+Com experiência, você poderá usar rapidamente as teclas de direção e **Ctrl**+**.** para verificar se há oportunidades fáceis de refatoração e limpar seu código.
 
 ## <a name="debug-your-running-code"></a>Depurar seu código em execução
 

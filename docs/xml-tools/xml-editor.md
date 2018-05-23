@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba02c3ff7d87daeda71c872e67df25ad345c6989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac3c30f0db4c2aa1dc606348604efce3bb3ddac
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="xml-editor"></a>Editor de XML
 
@@ -53,11 +53,8 @@ O [profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md) cria detalhados de 
 
 O [ferramenta de hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) permite que você adicione pontos de interrupção em folhas de estilo incluído e/ou regras de modelo interno.
 
-## <a name="related-sections"></a>Seções relacionadas
-
-- [Escrevendo código no editor de](../ide/writing-code-in-the-code-and-text-editor.md) fornece informações sobre o editor de texto.
-- [Referência de padrões XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), a linguagem de definição de esquema XML (XSD) e XSLT.
-
 ## <a name="see-also"></a>Consulte também
 
+- [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md) fornece informações sobre o editor de texto.
+- [Referência de padrões XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), a linguagem de definição de esquema XML (XSD) e XSLT.
 - [Ferramentas XML no Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

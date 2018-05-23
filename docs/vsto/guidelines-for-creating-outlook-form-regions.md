@@ -1,5 +1,5 @@
 ---
-title: Regiões de formulário de diretrizes para criação de Outlook | Microsoft Docs
+title: Diretrizes para criação de regiões de formulário do Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="guidelines-for-creating-outlook-form-regions"></a>Diretrizes para criar regiões de formulário do Outlook
+# <a name="guidelines-for-creating-outlook-form-regions"></a>Diretrizes para criação de regiões de formulário do Outlook
   As informações a seguir podem ajudá-lo a otimizar as regiões de formulário e evitar possíveis problemas:  
   
--   [Usando nomes de região de formulário](#UsingFormRegions).  
+-   [Use nomes de região de formulário](#UsingFormRegions).  
   
--   [Desabilitando a herança de região de formulário](#DisablingInheritance).  
+-   [Desativar a herança de região de formulário](#DisablingInheritance).  
   
--   [Noções básicas sobre tipos e mensagem de nomes de classe](#ClassNames).  
+-   [Compreender tipos e nomes de classe de mensagem](#ClassNames).  
   
 -   [Criando regiões de formulário adjacentes para o painel de leitura](#ReadingPane).  
   

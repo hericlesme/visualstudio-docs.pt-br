@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Instruções passo a passo: criando um item de projeto de ação com um modelo de item, parte 2
   Depois de definir um tipo personalizado do item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um Assistente para o modelo. Você pode usar o Assistente para coletar informações de usuários quando eles usam o modelo para adicionar uma nova instância do item de projeto para um projeto. As informações que você coletar podem ser usadas para inicializar o item de projeto.  
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Se você estiver desenvolvendo um projeto do Visual Basic, remova o `ItemTemplateWizard` namespace do `WizardWindow` nome da classe a `x:Class` atributo do `Window` elemento. Esse elemento é na primeira linha do XAML. Quando terminar, a primeira linha deve se parecer com o código a seguir:  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -187,7 +187,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Em uma janela de Prompt de comando do Visual Studio, execute o seguinte comando, substituindo *PathToWizardAssembly* com o caminho completo para o assembly ItemTemplateWizard.dll criado para o projeto ItemTemplateWizard em seu desenvolvimento computador.  
   
-    ```  
+    ```xml  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  No final do arquivo, adicione o seguinte `WizardExtension` elemento entre o `</TemplateContent>` e `</VSTemplate>` marcas. Substitua o *YourToken* valor o `PublicKeyToken` atributo com o token de chave pública que você obteve no procedimento anterior.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ItemTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=YourToken</Assembly>  
       <FullClassName>ItemTemplateWizard.CustomActionWizard</FullClassName>  
@@ -221,7 +221,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  No projeto ItemTemplate, substitua o conteúdo do arquivo Elements XML a seguir.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="$IdValue$"  

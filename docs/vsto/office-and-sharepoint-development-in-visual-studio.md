@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desenvolvimento do Office e do SharePoint no Visual Studio
   Você pode estender o Microsoft Office e SharePoint, criando um aplicativo simples ou suplemento que os usuários baixem do [Office Store](https://store.office.com/) ou uma unidade organizacional do catálogo ou criando uma solução baseada no .NET Framework que os usuários de instalar em um computador.  
@@ -50,11 +50,7 @@ ms.lasthandoff: 04/16/2018
   
  ![Aplicativos para Office e SharePoint modelo conceitual](../vsto/media/officeandsharepointapps2015.png "aplicativos para Office e SharePoint modelo conceitual")  
   
- **Saiba mais**  
-  
-|Para|Consulte|  
-|--------|---------|  
-|Saiba mais sobre as ferramentas de desenvolvimento Napa Office 365.|[Ferramentas de desenvolvimento do Office 365 Napa](https://msdn.microsoft.com/library/dn974046.aspx)|  
+
   
 ### <a name="build-an-office-add-in"></a>Criar um suplemento do Office  
  Para estender a funcionalidade do Office, crie um suplemento do Office. Ele é basicamente uma página da Web que é hospedada em um aplicativo do Office como Word, Excel, Outlook e PowerPoint. Seu aplicativo pode adicionar funcionalidade a documentos, planilhas, mensagens de email, compromissos, apresentações e projetos.  
@@ -71,7 +67,6 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Saiba mais sobre os suplementos do Office e, em seguida, crie um.|[Suplementos do Office](http://msdn.microsoft.com/office/dn448457)|  
 |Compare as diferentes maneiras em que você pode estender o Office e decidir se deve usar um aplicativo ou um suplemento do Office.|[Roteiro para Office suplementos do VSTO e VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Saiba mais sobre as ferramentas de desenvolvimento Napa Office 365.|[Ferramentas de desenvolvimento do Office 365 Napa](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Criar um suplemento do SharePoint  
  Para estender o SharePoint para os usuários, crie um suplemento do SharePoint. É basicamente um aplicativo autônomo, pequeno, fácil de usar que resolve a necessidade dos usuários ou business.  
@@ -88,8 +83,7 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Saiba mais sobre os suplementos do SharePoint e, em seguida, crie um.|[Suplementos do SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Compare os suplementos para SharePoint com tradicionais soluções de SharePoint.|[Suplementos de SharePoint, em comparação com as soluções do SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Escolha se deseja criar um suplemento do SharePoint ou uma solução do SharePoint.|[Decidir entre o SharePoint add-ins e soluções do SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Saiba mais sobre as ferramentas de desenvolvimento Napa Office 365.|[Ferramentas de desenvolvimento do Office 365 Napa](https://msdn.microsoft.com/library/dn974046.aspx)|  
+|Escolha se deseja criar um suplemento do SharePoint ou uma solução do SharePoint.|[Decidir entre o SharePoint add-ins e soluções do SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Criar um suplemento do VSTO  
  Crie um suplemento de VSTO para Office 2007 ou o Office 2010 de destino, ou estender o Office 2013 e Office 2016 além do que é possível com os suplementos do Office. Suplementos do VSTO executados apenas na área de trabalho. Os usuários precisam instalar suplementos do VSTO, para que eles sejam normalmente mais difícil de implantar e oferecer suporte.  No entanto, o suplemento do VSTO pode ser integrado melhor com o Office. Por exemplo, ele pode adicionar controles à Faixa de Opções do Office e executar tarefas de automação avançadas como mesclar documentos ou modificar gráficos. Você pode aproveitar o .NET Framework e usar o C# e o Visual Basic para interagir com objetos do Office.  

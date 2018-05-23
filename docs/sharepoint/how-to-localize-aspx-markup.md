@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9dd127fea21a53b9a29082f536ac8c0404299c63
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b43a8833ea84c4f6d191200bcf3af80815deb03a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-localize-aspx-markup"></a>Como localizar marcação ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] páginas (. aspx) normalmente usam valores de cadeia de caracteres codificada. Para localizar essas cadeias de caracteres, substitua-os com expressões que referenciam recursos localizados.  
@@ -52,13 +52,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  No [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] marcação para a página ASPX página ou controle, substitua as cadeias de caracteres codificadas com valores que usam o seguinte formato:  
   
-    ```  
+    ```aspx-csharp  
     <%$Resources:Resource File Name, String ID%>  
     ```  
   
      Por exemplo, para localizar o texto de um controle de rótulo em uma página de aplicativo, você alteraria:  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
     <asp:Label ID="lbl" runat="server" Text="Label text"></asp:Label>  
     </asp:Content>  
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
      para  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
     <asp:Label ID="lbl" runat="server" Text="<%$Resources:MyAppResources,String1%>"></asp:Label>  
     </asp:Content>  

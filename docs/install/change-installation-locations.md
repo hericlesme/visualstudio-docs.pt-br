@@ -13,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0460e61fea7e617e497a46c55f8af811ba2e24fe
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Alterar os locais de instalação no Visual Studio 2017
 
@@ -32,14 +32,14 @@ Veja como.
   > [!IMPORTANT]
   > Se você interromper a instalação e retomá-la mais tarde, o Visual Studio continuará de onde parou. Ou seja, o progresso da instalação se aplicará ao que ainda precisa ser baixado e instalado e não iniciará da contagem anterior.
 
-2. Na seção **Visual Studio**, aceite os valores padrão. Isso instala o produto principal e inclui arquivos específicos desta versão do Visual Studio.
+2. Na seção **IDE do Visual Studio**, aceite o padrão. Isso instala o produto principal e inclui arquivos específicos desta versão do Visual Studio.
 
  > [!IMPORTANT]
  > Se a unidade do sistema é uma SSD (unidade de estado sólido), este é o motivo para recomendarmos que você aceite o local padrão na unidade do sistema: ao desenvolver com o Visual Studio, você lê e grava em muitos arquivos, o que aumenta a atividade de E/S de disco.  É melhor escolher sua unidade mais rápida para lidar com a carga.
 
 2. Na seção **Cache de download**, decida se você deseja manter o cache de download e, em seguida, marque ou desmarque **Manter cache de download** de acordo com sua opção. <br><br>Se você optar por não manter o cache de download, o local será usado somente temporariamente. Além disso, essa ação não afetará ou excluirá arquivos de instalações anteriores. (Para limpar todos os pacotes de instalação, você precisará modificar as instalações anteriores separadamente.)
 
-3. Na seção **Cache de download**, especifique a unidade na qual deseja armazenar os manifestos e os arquivos de instalação. <br><br>Por exemplo, se você selecionar a carga de trabalho **Desenvolvimento para desktop com C++** o tamanho temporário necessário será de 1,58 GB na unidade do sistema, que será liberado assim que a instalação for concluída.
+3. Na seção **Cache de download**, especifique a unidade na qual deseja armazenar os manifestos e os arquivos de instalação. <br><br>Por exemplo, se você selecionar a carga de trabalho "Desenvolvimento para desktop com C++", o tamanho temporário necessário será de 1,58 GB na unidade do sistema, que será liberado assim que a instalação for concluída.
 
  > [!NOTE]
  > Primeiro, os arquivos são baixados em uma pasta temporária na unidade do sistema e, posteriormente, são excluídos após o Visual Studio verificar e, em seguida, movê-los para a pasta de cache de download. Se você optar por manter o cache de download em uma unidade diferente, o Visual Studio ainda precisará de espaço em disco equivalente ao tamanho do cache de download na unidade do sistema.

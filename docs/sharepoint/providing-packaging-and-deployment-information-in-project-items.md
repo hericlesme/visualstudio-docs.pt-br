@@ -29,11 +29,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 078715380bb5ddc570d745d76fabe4d8a264eef0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0c12c01566011ed93d83cd9ecc0dd417edd0b1b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Fornecendo informações de pacote e implantação em itens de projeto
   Todos os itens de projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] têm propriedades que você pode usar para fornecer dados adicionais quando o projeto é implantado no SharePoint. Estas são as seguintes propriedades:  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
  Quando você adiciona um valor de propriedade de recurso para um item de projeto, o valor é adicionado como um elemento no manifesto do recurso do item. Em um projeto de modelo de conectividade de dados de negócios (BDC), por exemplo, a propriedade de recurso ModelFileName aparece como:  
   
-```  
+```xml  
 <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />   
 ```  
   
