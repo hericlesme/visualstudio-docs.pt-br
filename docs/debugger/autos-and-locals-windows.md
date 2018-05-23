@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspecionar variáveis nos Autos e janelas de locais no Visual Studio
 O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **Depurar > Windows > Autos**) e o **locais** janela (durante a depuração **CTRL + ALT + V, L**, ou **Depurar > Windows > locais**) são muito úteis quando você deseja ver os valores de variáveis enquanto está depurando. O **locais** janela exibe as variáveis definidas no escopo local, que geralmente é a função ou método que está sendo executado atualmente. O **Autos** janela exibe variáveis usadas ao redor da linha atual (o local onde o depurador está parado). Exatamente quais variáveis são exibidos nessa janela são diferentes em idiomas diferentes. Consulte [o que as variáveis que aparecem na janela Autos?](#bkmk_whatvariables) abaixo.  
@@ -28,7 +28,7 @@ O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **Depurar >
 Se você precisar de mais informações sobre depuração básica, consulte [guia de Introdução com o depurador](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinando objetos na janela Autos e locais  
-Matrizes e objetos são exibidos na janela Autos e locais, como controles de árvore. Clique na seta à esquerda do nome da variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de um [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) objeto o **locais** janela:  
+Matrizes e objetos são exibidos na janela Autos e locais, como controles de árvore. Clique na seta à esquerda do nome da variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de um [FileStream](/dotnet/api/system.io.filestream) objeto o **locais** janela:  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   

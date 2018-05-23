@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Escolhendo uma estratégia de implantação do ClickOnce
 Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; a estratégia escolhida depende principalmente do tipo de aplicativo que você está implantando. As três estratégias de implantação são as seguintes:  
@@ -46,15 +46,6 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
   
  Essa é a estratégia de implantação padrão.  
   
-## <a name="install-from-a-cd"></a>Instalação de um CD  
- Ao usar essa estratégia, seu aplicativo será implantado em mídia removível como um CD-ROM ou DVD. Assim como acontece com a opção anterior, quando o usuário optar por instalar o aplicativo, ele é instalado e iniciado e itens são adicionados ao **iniciar** menu e **adicionar ou remover programas** na **controle Painel**.  
-  
- Essa estratégia funcionará melhor para aplicativos que serão implantados para usuários sem conectividade de rede persistente ou com conexões de baixa largura de banda. Como o aplicativo é instalado de mídia removível, nenhuma conexão de rede é necessária para instalação; no entanto, conectividade de rede ainda é necessária para atualizações do aplicativo.  
-  
- Para habilitar essa estratégia de implantação no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], clique em **de um CD-ROM ou DVD-ROM** no **como instalado** página do Assistente de publicação.  
-  
- Para habilitar manualmente essa estratégia de implantação, altere o **deploymentProvider** marca no manifesto de implantação. (No Visual Studio, essa propriedade é exposta como **URL de instalação** no **publicar** página no Designer de projeto. É no Mage.exe **local iniciar**.)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Iniciação do aplicativo da Web ou de um compartilhamento de rede  
  Esta estratégia é como a primeira, exceto que o aplicativo se comporta como um aplicativo Web. Quando o usuário clica em um link em uma página da Web (ou clica duas vezes em um ícone no compartilhamento de arquivos), o aplicativo é iniciado. Quando os usuários fechem o aplicativo, ele não está mais disponível no computador local; nada é adicionado a **iniciar** menu ou **adicionar ou remover programas** na **painel de controle**.  
   
@@ -66,6 +57,15 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
  Para habilitar essa estratégia de implantação no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], clique em **não instalam o aplicativo** no **instalar ou executar da Web** página do Assistente de publicação.  
   
  Para habilitar essa estratégia de implantação, manualmente, altere o **instalar** marca no manifesto de implantação. (O valor pode ser **true** ou **false**. Em Mage.exe, use o **Online somente** opção o **tipo de aplicativo** lista.)  
+
+## <a name="install-from-a-cd"></a>Instalação de um CD  
+ Ao usar essa estratégia, seu aplicativo será implantado em mídia removível como um CD-ROM ou DVD. Assim como acontece com a opção anterior, quando o usuário optar por instalar o aplicativo, ele é instalado e iniciado e itens são adicionados ao **iniciar** menu e **adicionar ou remover programas** na **controle Painel**.  
+  
+ Essa estratégia funcionará melhor para aplicativos que serão implantados para usuários sem conectividade de rede persistente ou com conexões de baixa largura de banda. Como o aplicativo é instalado de mídia removível, nenhuma conexão de rede é necessária para instalação; no entanto, conectividade de rede ainda é necessária para atualizações do aplicativo.  
+  
+ Para habilitar essa estratégia de implantação no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], clique em **de um CD-ROM ou DVD-ROM** no **como instalado** página do Assistente de publicação.  
+  
+ Para habilitar manualmente essa estratégia de implantação, altere o **deploymentProvider** marca no manifesto de implantação. (No Visual Studio, essa propriedade é exposta como **URL de instalação** no **publicar** página no Designer de projeto. É no Mage.exe **local iniciar**.)  
   
 ## <a name="web-browser-support"></a>Suporte a navegadores da Web  
  Os aplicativos destinados ao .NET Framework 3.5 podem ser instalados usando qualquer navegador.  

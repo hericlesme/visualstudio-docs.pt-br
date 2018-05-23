@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7df107cbf6170e603978358d49df167596208a4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2cf84975f96ca2d1935da7f750f5c120d72eb112
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usando o Microsoft Monitoring Agent
-Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e do SharePoint 2010 ou 2013 aplicativos para erros, problemas de desempenho ou outros problemas usando **Microsoft Monitoring Agent**. Você pode salvar eventos de diagnóstico do agente em um arquivo de log do IntelliTrace (.iTrace). Em seguida, você pode abrir o log no Visual Studio Enterprise (mas não nas edições Professional ou comunidade) para depurar problemas com todas as ferramentas de diagnóstico do Visual Studio. Você também pode coletar dados de diagnóstico do IntelliTrace e método executando o agente em **rastreamento** modo. Microsoft Monitoring Agent podem ser integrado com [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) e [do System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado.  
+Você pode monitorar localmente os aplicativos web hospedados no IIS ASP.NET e do SharePoint 2010 ou 2013 aplicativos para erros, problemas de desempenho ou outros problemas usando **Microsoft Monitoring Agent**. Você pode salvar eventos de diagnóstico do agente em um arquivo de log do IntelliTrace (.iTrace). Em seguida, você pode abrir o log no Visual Studio Enterprise (mas não nas edições Professional ou comunidade) para depurar problemas com todas as ferramentas de diagnóstico do Visual Studio. Você também pode coletar dados de diagnóstico do IntelliTrace e método executando o agente em **rastreamento** modo. Microsoft Monitoring Agent podem ser integrado com [Application Insights](/azure/application-insights/) e [do System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado.  
   
 > [!NOTE]
 >  Você também pode coletar dados de diagnóstico e de método do IntelliTrace para web, SharePoint, WPF e aplicativos de formulário do Windows em computadores remotos sem alterar o ambiente de destino usando o **coletor autônomo do IntelliTrace**. O coletor autônomo tem um impacto de desempenho maior do que a execução do agente de monitoramento da Microsoft **Monitor** modo. Consulte [usando o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  

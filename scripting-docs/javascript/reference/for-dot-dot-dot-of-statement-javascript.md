@@ -1,27 +1,28 @@
 ---
-title: "loop for... de instrução (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: loop for... de instrução (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 7872b0b2-5701-4d72-9b52-ed13991542cc
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47154261fd4817ba95b8884bd6482a87e044a5a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2373d319347f927304c32cb47856405a1d69a6b2
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="forof-statement-javascript"></a>Instrução for...of (JavaScript)
 Executa uma ou mais instruções para cada valor de um iterador obtido de um objeto que pode ser iterado.  
@@ -39,7 +40,7 @@ for (variable of object) {
  Necessário. Uma variável que pode ser qualquer valor da propriedade de `object`.  
   
  `object`  
- Necessário. Um objeto que pode ser iterado, como um `Array`, `Map`, `Set`, ou um objeto que implementa o [interfaces de iterador](http://msdn.microsoft.com/en-us/3692355a-a703-4d43-8fb5-c03b4b7e8db1).  
+ Necessário. Um objeto que pode ser iterado, como um `Array`, `Map`, `Set`, ou um objeto que implementa o [interfaces de iterador](../../javascript/advanced/iterators-and-generators-javascript.md).  
   
  `statements`  
  Opcional. Uma ou mais instruções a serem executadas para cada valor de um `object`. Pode ser uma instrução composta.  

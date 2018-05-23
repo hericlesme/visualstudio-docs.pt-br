@@ -21,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dccd4af0c14787ef34c1c558f83ecb2d6f0c1cea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 063fe4f61e6e3d8e8ed9e54b990029f2cf408e24
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui avaliadores de expressão que funcionam quando você insere uma expressão no **QuickWatch** caixa de diálogo, **inspecionar** janela, ou **imediato** janela. Os avaliadores de expressão também estão em funcionamento no **pontos de interrupção** janela e muitos outros locais no depurador.
@@ -122,7 +122,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - não há suporte para expressões  
   
 ### <a name="dynamic-objects"></a>Objetos dinâmicos  
- Você pode usar variáveis em expressões de depurador estaticamente são digitadas como dinâmica. Quando os objetos que implementam o [IDynamicMetaObjectProvider Interface](http://msdn.microsoft.com/Library/e887a72d-ebe2-4253-a7e8-3d8d05154647) são avaliadas na janela Inspeção, uma exibição dinâmica nó seja adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.  
+ Você pode usar variáveis em expressões de depurador estaticamente são digitadas como dinâmica. Quando os objetos que implementam <xref:System.Dynamic.IDynamicMetaObjectProvider> são avaliadas na janela Inspeção, uma exibição dinâmica nó seja adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.  
   
  Os seguintes recursos de objetos dinâmicos não têm suporte:  
   
