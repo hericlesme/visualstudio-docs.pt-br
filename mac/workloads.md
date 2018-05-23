@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 2d5fa2a153b91799417430823cc3b3199daec4b6
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 42d0f9682f2f0c54b86fc24cdfd5d82569ddbb5b
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Cargas de trabalho do Visual Studio para Mac
 
@@ -33,8 +33,8 @@ Para obter mais informações sobre como usar o .NET Core, consulte a [documenta
 
 ## <a name="aspnet-core-web-applications"></a>Aplicativos Web ASP.NET Core
 
-Para saber mais sobre como começar a usar o ASP.NET Core no Visual Studio para Mac, confira o guia [Introdução ao ASP.NET Core](~/asp-net-core.md) ou confira [laboratório prático](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) de aplicativos Web do ASP.NET Core.
+Para saber mais sobre como começar a usar o ASP.NET Core no Visual Studio para Mac, confira o guia [Introdução ao ASP.NET Core](asp-net-core.md) ou confira [laboratório prático](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) de aplicativos Web do ASP.NET Core.
 
 ## <a name="cross-platform-unity-game-development"></a>Desenvolvimento de jogos do Unity de plataforma cruzada
 
-Para começar a compilar jogos do Unity, consulte a [Página de configuração](~/setup-vsmac-tools-unity.md) e o [guia para usar as Ferramentas do Unity](~/using-vsmac-tools-unity.md) ou confira o [laboratório prático](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started) do Unity.
+Para começar a compilar jogos do Unity, consulte a [Página de configuração](setup-vsmac-tools-unity.md) e o [guia para usar as Ferramentas do Unity](using-vsmac-tools-unity.md) ou confira o [laboratório prático](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started) do Unity.

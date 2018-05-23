@@ -9,11 +9,11 @@ description: Saiba mais sobre os benefícios incluídos na sua assinatura do Vis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Benefícios incluídos na sua assinatura do Visual Studio
 
@@ -22,7 +22,7 @@ As assinaturas do Visual Studio oferecem o conjunto mais abrangente de recursos 
 Os benefícios são agrupados em três categorias:
 
 ## <a name="tools"></a>Ferramentas
-A categoria Ferramentas fornece acesso a uma ampla variedade de benefícios, incluindo os principais benefícios como o [IDE do Visual Studio](/vs-ide-benefit/), o [Visual Studio Team Services](/vs-vsts/) e o [Azure](/vs-azure/).  Dependendo de seu nível de assinatura, você verá também contas de Desenvolvedor do Office 365 e do Windows, o Visual Studio App Center e os benefícios de parceiros como WhiteSource Bolt e ModernRequirements.
+A categoria Ferramentas fornece acesso a uma ampla variedade de benefícios, incluindo os principais benefícios como o [IDE do Visual Studio](vs-ide-benefit.md), o [Visual Studio Team Services](vs-vsts.md) e o [Azure](vs-azure.md).  Dependendo de seu nível de assinatura, você verá também contas de Desenvolvedor do Office 365 e do Windows, o Visual Studio App Center e os benefícios de parceiros como WhiteSource Bolt e ModernRequirements.
 
 ## <a name="professional-development"></a>Desenvolvimento profissional
 Para ajudar você a aprimorar continuamente seu conjunto de qualificações e acompanhar as tecnologias mais recentes, fornecemos acesso a alguns dos melhores treinamentos online disponíveis dos líderes do setor. Exemplos do excelente conteúdo disponível incluem:

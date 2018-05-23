@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Introdução do Visual Studio para Mac
 
@@ -27,7 +27,7 @@ Este artigo apresenta uma pesquisa de várias seções do Visual Studio para Mac
 
 ## <a name="installation"></a>Instalação
 
-Siga as etapas no guia de [Instalação](~/installation.md) para baixar e instalar o Visual Studio para Mac.
+Siga as etapas no guia de [Instalação](installation.md) para baixar e instalar o Visual Studio para Mac.
 
 ## <a name="language-support"></a>Suporte ao idioma
 
@@ -117,8 +117,8 @@ Para saber mais, consulte o guia do [Xamarin Inspector](https://developer.xamari
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* **Faça o tour** – para obter uma visão geral de vários dos principais recursos do Visual Studio para Mac, consulte o [Tour do IDE](~/ide-tour.md) do Visual Studio para Mac.
-* **Instalação** – para saber mais sobre como baixar e instalar o Visual Studio, consulte o guia de [Instalação](~/installation.md).
+* **Faça o tour** – para obter uma visão geral de vários dos principais recursos do Visual Studio para Mac, consulte o [Tour do IDE](ide-tour.md) do Visual Studio para Mac.
+* **Instalação** – para saber mais sobre como baixar e instalar o Visual Studio, consulte o guia de [Instalação](installation.md).
 * **Tutoriais do Xamarin** – para saber mais sobre como desenvolver um código com o Xamarin, acesse o Xamarin [Developer Center](https://developer.xamarin.com).
 * **Vídeos** – para saber mais sobre outros recursos e aspectos do Visual Studio para Mac, confira os vídeos no site da [Xamarin University](https://university.xamarin.com).
 * **Laboratórios práticos** – para começar a trabalhar com várias cargas de trabalho incluídas no Visual Studio para Mac, confira os [laboratórios práticos](https://github.com/Microsoft/vs4mac-labs).

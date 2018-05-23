@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: db49b08f5a56a1a60e8f9c44d0e5b7630143b472
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurar e instalar o Visual Studio para Mac
 
@@ -58,7 +58,7 @@ Para trabalhar com iOS no Visual Studio você precisará do seguinte:
       - Aplicativos Xamarin totalmente plataforma cruzada: selecione as plataformas **Android**, **iOS** e **macOS**.
   * **Aplicativos .NET Core**: selecione a plataforma **.NET Core**.
   * **Aplicativos Web ASP.NET Core**: selecione a plataforma **.NET Core**.
-  * **Desenvolvimento de jogos em Unity em plataforma cruzada**: nenhuma plataforma adicional precisa ser instalada além do Visual Studio para Mac. Confira o [Guia de instalação do Unity](~/setup-vsmac-tools-unity.md) para saber mais sobre como instalar a extensão do Unity.
+  * **Desenvolvimento de jogos em Unity em plataforma cruzada**: nenhuma plataforma adicional precisa ser instalada além do Visual Studio para Mac. Confira o [Guia de instalação do Unity](setup-vsmac-tools-unity.md) para saber mais sobre como instalar a extensão do Unity.
 
   Esta tela de instalação exibe a versão e o tamanho de cada componente individual. Você pode clicar em cada componente para exibir uma lista de dependências desse componente (para Android), consultar pacotes adicionais que ele baixa (para .NET Core) ou exibir os aplicativos adicionais necessários (iOS e macOS):
 
@@ -112,4 +112,4 @@ A instalação do Visual Studio para Mac permite que você comece a escrever có
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplicativos .NET Core, aplicativos Web do ASP.NET Core, desenvolvimento de jogos em Unity
 
-Para outras cargas de trabalho, confira a página [Cargas de trabalho](~/workloads.md).
+Para outras cargas de trabalho, confira a página [Cargas de trabalho](workloads.md).

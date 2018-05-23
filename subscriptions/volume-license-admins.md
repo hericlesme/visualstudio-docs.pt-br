@@ -9,11 +9,11 @@ description: Saiba como os administradores de assinaturas podem acessar o portal
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Acessando o portal e gerenciando administradores – para assinaturas adquiridas por meio de VL (licenciamento por volume)
 
@@ -36,7 +36,7 @@ Quando sua organização estiver pronta para ser integrada ao Portal de Administ
 
      a. No email, os contatos principal e para notificações recebem um link exclusivo e os três últimos dígitos do PCN (Número do Cliente Público).  (Se os Contatos Principais ou para Notificações receberem mais de um email, isso significará que eles têm mais de um PCN. Eles precisarão concluir o processo usando o link exclusivo do PCN referenciado em cada email.)
 
-     b. Para obter o PCN inteiro, o Contato Principal precisará entrar no Centro de Empresas da Microsoft. [Instruções para localizar o PCN](/find-pcn/) 
+     b. Para obter o PCN inteiro, o Contato Principal precisará entrar no Centro de Empresas da Microsoft. [Instruções para localizar o PCN](find-pcn.md) 
 
      c. Depois de obter o PCN, ele precisará selecionar o link exclusivo que permitirá sua entrada. Ele poderá entrar usando uma conta corporativa ou de estudante (se sua organização estiver no AAD) ou uma conta MSA (conta da Microsoft) se sua organização não estiver no AAD. 
 
@@ -46,6 +46,6 @@ Quando sua organização estiver pronta para ser integrada ao Portal de Administ
 
 3.  Acessando o novo portal de gerenciamento de assinaturas. Depois da migração da organização, serão enviados emails para os superadministradores e administradores recém-adicionados convidando-os para acessar o novo portal e começar a gerenciar assinaturas.  
 
-Se você precisar ser adicionado no novo Portal de Administração de Assinaturas do Visual Studio e não souber quem é seu contato principal/para notificações, você poderá encontrar essa informação depois de entrar no [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Confira o tópico [Localizar seu Contato Principal](/find-primary-contact/) para obter as etapas para localizar seu Contato Principal/para Notificações no Centro de Empresas da Microsoft.
+Se você precisar ser adicionado no novo Portal de Administração de Assinaturas do Visual Studio e não souber quem é seu contato principal/para notificações, você poderá encontrar essa informação depois de entrar no [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Confira o tópico [Localizar seu Contato Principal](find-primary-contact.md) para obter as etapas para localizar seu Contato Principal/para Notificações no Centro de Empresas da Microsoft.
 
 Se você já tiver sido configurado como administrador, acesse diretamente o Portal de Administração de assinaturas do Visual Studio em: [https://manage.visualstudio.com](https://manage.visualstudio.com). 

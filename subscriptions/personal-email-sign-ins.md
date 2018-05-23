@@ -9,11 +9,11 @@ description: 'As assinaturas do Visual Studio: por que estou vendo endereços do
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3ac8a86bae706b4a68b8e3ccde94a9ee84d608a9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a9b0e02acd0c362759997938cec91983a5d48547
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Assinaturas do Visual Studio: por que estão aparecendo endereços do Hotmail ou do Gmail para os assinantes? 
 
@@ -34,6 +34,6 @@ Por fim, como a migração do administrador obtém dados do VLSC sobre o "Endere
 
 ## <a name="solution"></a>Solução
 
-Para corrigir o problema, você precisará editar as informações do assinante para atualizar os endereços de email de entrada.  Podem ser feitas edições em assinantes individuais ou em massa. Para obter mais informações, acesse [Editar uma assinatura](/visualstudio/subscriptions/edit-license).  
+Para corrigir o problema, você precisará editar as informações do assinante para atualizar os endereços de email de entrada.  Podem ser feitas edições em assinantes individuais ou em massa. Para obter mais informações, acesse [Editar uma assinatura](edit-license.md).  
 
 Depois de atualizar os endereços de email de assinantes, convém notificá-lo de que as informações de logon foram alteradas.  Você também receberá um email com essas informações atualizadas.   

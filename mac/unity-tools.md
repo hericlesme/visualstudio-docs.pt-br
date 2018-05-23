@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 5f910d58f5972c3df27a4efd950d893c8de35f4b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: b8384c3595627e288e2ef05cf9135242d37e6d36
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Ferramentas do Visual Studio para Mac para Unity
 
@@ -43,7 +43,7 @@ As Ferramentas do Visual Studio para Mac para Unity dá suporte a todos os recur
 
 ### <a name="powerful-refactoring-and-context-actions"></a>Ações de refatoração e de contexto avançadas
 
-Escreva mais código utilizável com os menus rápido e atalhos de teclado para [renomear, refatoração e ações de contexto](/visualstudio/mac/refactoring).
+Escreva mais código utilizável com os menus rápido e atalhos de teclado para [renomear, refatoração e ações de contexto](refactoring.md).
 
 ### <a name="browse-and-add-new-files"></a>Procure e adicione novos arquivos
 
@@ -51,15 +51,15 @@ Procure projetos do Unity e [adicione pastas, scripts ou sombreadores](using-vsm
 
 ### <a name="use-familiar-key-bindings"></a>Use associações de teclas familiares
 
-Aumente a produtividade usando as associações de teclas que você já conhece. O Visual Studio para Mac fornece [associações de teclas](/visualstudio/mac/customizing-the-ide) familiares para muitos IDEs populares, como o Visual Studio no Windows, ReSharper, Visual Studio Code e Xcode.
+Aumente a produtividade usando as associações de teclas que você já conhece. O Visual Studio para Mac fornece [associações de teclas](customizing-the-ide.md) familiares para muitos IDEs populares, como o Visual Studio no Windows, ReSharper, Visual Studio Code e Xcode.
 
 ### <a name="customize-the-visual-theme"></a>Personalize o tema visual
 
-Dê um descanso para os olhos com o [tema escuro](/visualstudio/mac/customizing-the-ide) incluso.
+Dê um descanso para os olhos com o [tema escuro](customizing-the-ide.md) incluso.
 
 ## <a name="tips-for-unity-developers-getting-started-with-visual-studio-for-mac"></a>Dicas para desenvolvedores do Unity que estão começando a usar o Visual Studio para Mac
 
 Esses links explicam recursos úteis para desenvolvedores do Unity que estão começando a usar o Visual Studio para Mac:
 
-* [Personalizando o IDE](/visualstudio/mac/customizing-the-ide) – Saiba como [trocar o tema visual](/visualstudio/mac/customizing-the-ide#dark-theme) ou mudar para um esquema de [associação de teclas](/visualstudio/mac/customizing-the-ide#key-bindings) mais familiar.
-* [Editor de código-fonte](/visualstudio/mac/source-editor) – Saiba como o Visual Studio para Mac pode tornar mais rápida e fácil a tarefa de escrever um código melhor, incluindo [atalhos de teclado](/visualstudio/mac/keyboard-shortcuts) comuns.
+* [Personalizando o IDE](customizing-the-ide.md) – Saiba como [trocar o tema visual](customizing-the-ide.md#dark-theme) ou mudar para um esquema de [associação de teclas](customizing-the-ide.md#key-bindings) mais familiar.
+* [Editor de código-fonte](source-editor.md) – Saiba como o Visual Studio para Mac pode tornar mais rápida e fácil a tarefa de escrever um código melhor, incluindo [atalhos de teclado](keyboard-shortcuts.md) comuns.

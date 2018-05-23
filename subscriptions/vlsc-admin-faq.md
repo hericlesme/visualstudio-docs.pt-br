@@ -9,11 +9,11 @@ description: Perguntas frequentes sobre migração de administrador no Centro de
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migração de administração de assinaturas do Visual Studio
 
@@ -78,7 +78,7 @@ Você continuará gerenciando assinaturas por meio do Centro de Empresas da Micr
 Entre no [Centro de Empresas da Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e navegue até o caminho a seguir: **Assinaturas** > **Assinaturas do Visual Studio**. O PCN está localizado abaixo dos **Resultados de número de cliente/contrato**. Obtenha diretrizes passo a passo de como localizar seu PCN neste [artigo de ajuda](/find-pcn/). 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>Como saber quem é o Contato Principal ou o Contato para Notificações?
-Entre no [Centro de Empresas da Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e navegue até o caminho a seguir: **Licenças > Resumo de Relação** selecione sua **ID de Licenciamento > Contatos**. Obtenha diretrizes passo a passo de como descobrir quem é o Contato Principal ou o Contato para Notificações neste [artigo de ajuda](/find-primary-contact/). 
+Entre no [Centro de Empresas da Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e navegue até o caminho a seguir: **Licenças > Resumo de Relação** selecione sua **ID de Licenciamento > Contatos**. Obtenha diretrizes passo a passo de como descobrir quem é o Contato Principal ou o Contato para Notificações neste [artigo de ajuda](find-primary-contact.md). 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>E se o Contato Principal ou o Contato para Notificações não estiver mais na empresa ou não estiver disponível para concluir a integração?
 Você precisará [contatar o suporte](https://www.visualstudio.com/subscriptions/support/#talktous) e fornecer o email que usou no Centro de Empresas da Microsoft para gerenciar assinaturas. Depois de verificar, o suporte poderá ajudá-lo no processo de integração. 
@@ -106,8 +106,8 @@ Para obter as informações mais atualizadas sobre essa migração, visite a [p�
 
 - Assinaturas do Visual Studio e [suporte](https://www.visualstudio.com/subscriptions/support/) de gerenciamento 
 
-- [Como localizar meu PCN](/find-pcn/)
+- [Como localizar meu PCN](find-pcn.md)
 
-- [Como localizar meu Contato Principal ou para Notificações](/find-primary-contact/) 
+- [Como localizar meu Contato Principal ou para Notificações](find-primary-contact.md) 
 
 - [Vídeo](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) para integrar sua organização e gerenciar administradores 
