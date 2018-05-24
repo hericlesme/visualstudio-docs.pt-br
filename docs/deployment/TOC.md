@@ -1,5 +1,5 @@
 # [Documentação de implantação](index.md)
-# Visão Geral
+# Visão geral
 ## [Visão geral da implantação](deploying-applications-services-and-components-resources.md)
 # Guias de Início Rápido
 ## [Introdução à implantação](deploying-applications-services-and-components.md)
@@ -8,26 +8,26 @@
 ## [Implantar no Azure](quickstart-deploy-to-azure.md)
 # Tutoriais
 ## .NET
-### [Implantar um aplicativo do .NET Core com a ferramenta Publicar](/dotnet/core/deploying/deploy-with-vs)
-### [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+### [Implantar um aplicativo do .NET Core com a ferramenta Publicar](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 ### [Compilando aplicativos ClickOnce por meio da linha de comando](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
-### [Publicar um aplicativo do ASP.NET Core no Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Publicar um aplicativo do ASP.NET Core no Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Importar configurações de publicação e implantar no Azure](tutorial-import-publish-settings-azure.md)
 ### [Importar configurações de publicação e implantar no IIS](tutorial-import-publish-settings-iis.md)
-### [Implantação contínua do ASP.NET Core no Azure com o Git](/aspnet/core/publishing/azure-continuous-deployment)
-### [Implantar o ASP.NET no IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+### [Implantação contínua do ASP.NET Core no Azure com o Git](/aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Implantar o ASP.NET no IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Nativo
-### [Implantação no Visual C++](/cpp/ide/deployment-in-visual-cpp)
-### [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-### [Implantar um aplicativo nativo usando o ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
+### [Implantação no Visual C++...](/cpp/ide/deployment-in-visual-cpp)
+### [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Implantar um aplicativo nativo usando o ClickOnce...](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
 ## UWP
-### [Empacotar um aplicativo UWP usando o Visual Studio](/windows/uwp/packaging/packaging-uwp-apps)
+### [Empacotar um aplicativo UWP usando o Visual Studio](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Node.js
-### [Publicar no site do Azure usando a Implantação da Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
+### [Publicar no site do Azure usando a Implantação da Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Python
-### [Publicar no Serviço de Aplicativo do Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
+### [Publicar no Serviço de Aplicativo do Azure](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 # Guias de instruções
 ## [Segurança e implantação do ClickOnce](clickonce-security-and-deployment.md)
 ### [Escolhendo uma estratégia de implantação do ClickOnce](choosing-a-clickonce-deployment-strategy.md)
@@ -50,7 +50,7 @@
 #### [Como assinar arquivos de instalação com SignTool.exe (ClickOnce)](how-to-sign-setup-files-with-signtool-exe-clickonce.md)
 ### [Publicando aplicativos ClickOnce](publishing-clickonce-applications.md)
 #### [Criando aplicativos ClickOnce para a implantação por terceiros](creating-clickonce-applications-for-others-to-deploy.md)
-#### [Implantando aplicativos ClickOnce para servidores de teste e produção sem assinar novamente](deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)
+#### [Implantando aplicativos ClickOnce para servidores de teste e produção sem assinar novamente](deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 #### [Acessando dados locais e remotos em aplicativos ClickOnce](accessing-local-and-remote-data-in-clickonce-applications.md)
 #### [Implantando componentes do COM com o ClickOnce](deploying-com-components-with-clickonce.md)
 #### [Compilando aplicativos ClickOnce por meio da linha de comando](building-clickonce-applications-from-the-command-line.md)
@@ -82,7 +82,7 @@
 ##### [Passo a passo: baixando assemblies sob demanda com a API de implantação do ClickOnce](walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 #### [Passo a passo: baixando assemblies satélite sob demanda com a API de implantação do ClickOnce usando o designer](walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)
 #### [Passo a passo: implantando um aplicativo ClickOnce manualmente](walkthrough-manually-deploying-a-clickonce-application.md)
-##### [Passo a passo: implantando manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual](walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+##### [Passo a passo: implantando manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual](walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
 #### [Instruções passo a passo: baixando assemblies satélite por demanda com a API de implantação do ClickOnce](walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 #### [Passo a passo: criando um instalador personalizado para um aplicativo ClickOnce](walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)
 ### [Escolhendo uma estratégia de atualização do ClickOnce](choosing-a-clickonce-update-strategy.md)
