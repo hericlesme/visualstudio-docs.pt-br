@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Instruções passo a passo: criando um item de projeto de ação com um modelo de item, parte 2
   Depois de definir um tipo personalizado do item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um Assistente para o modelo. Você pode usar o Assistente para coletar informações de usuários quando eles usam o modelo para adicionar uma nova instância do item de projeto para um projeto. As informações que você coletar podem ser usadas para inicializar o item de projeto.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/22/2018
 -   Depuração e teste o assistente.  
   
 > [!NOTE]  
->  Você pode baixar um exemplo que contém os projetos concluídos, código e outros arquivos para este passo a passo no seguinte local: [arquivos de projeto para orientações de extensibilidade de ferramentas do SharePoint](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Você pode baixar um exemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para executar este passo a passo, você deve primeiro criar a solução CustomActionProjectItem Concluindo [passo a passo: Criando um Item de projeto de ação personalizado com um modelo de Item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  

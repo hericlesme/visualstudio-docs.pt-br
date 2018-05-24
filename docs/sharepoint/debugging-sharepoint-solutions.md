@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Depurando soluções do SharePoint
   Você pode depurar soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Quando você iniciar a depuração, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implanta os arquivos de projeto no servidor do SharePoint e, em seguida, abre uma instância do site do SharePoint no navegador da Web. As seções a seguir explicam como depurar aplicativos do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  Quando você depurar projetos de fluxo de trabalho, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adiciona o modelo de fluxo de trabalho (dependendo do tipo) para uma biblioteca ou uma lista. Você pode iniciar o modelo de fluxo de trabalho manualmente ou por adicionando ou atualizando um item. Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para depurar o fluxo de trabalho.  
   
 > [!NOTE]  
->  Se você adicionar referências a outros assemblies, verifique se que esses assemblies são instalados no cache de assembly global ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Caso contrário, a solução de fluxo de trabalho falhará. Para obter informações sobre como instalar assemblies, consulte [iniciar manualmente um fluxo de trabalho em um documento ou item](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  Se você adicionar referências a outros assemblies, verifique se que esses assemblies são instalados no cache de assembly global ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Caso contrário, a solução de fluxo de trabalho falhará. Para obter informações sobre como instalar assemblies, consulte [iniciar manualmente um fluxo de trabalho em um documento ou item](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  No entanto, o processo de implantação não inicia o fluxo de trabalho. Você deve iniciar o fluxo de trabalho do site do SharePoint. Você também pode iniciar o fluxo de trabalho usando um aplicativo cliente, como o Microsoft Office Word 2010, ou usando o código do lado do servidor separado. Use uma das abordagens especificadas no **Assistente de personalização do SharePoint**.  
   
- Por exemplo, se você especificou que o fluxo de trabalho pode ser iniciado manualmente, inicie o fluxo de trabalho diretamente do item na lista ou biblioteca. Para obter mais informações sobre como iniciar um fluxo de trabalho manualmente, consulte [iniciar manualmente um fluxo de trabalho em um item do documento](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ Por exemplo, se você especificou que o fluxo de trabalho pode ser iniciado manualmente, inicie o fluxo de trabalho diretamente do item na lista ou biblioteca. Para obter mais informações sobre como iniciar um fluxo de trabalho manualmente, consulte [iniciar manualmente um fluxo de trabalho em um item do documento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
 ##  <a name="FeatureEvents"></a> Receptores de evento do recurso de depuração  
  Por padrão, quando você executa um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplicativo do SharePoint, seus recursos serão ativados automaticamente para você no servidor do SharePoint. No entanto, isso causa problemas quando você depura receptores de evento de recurso, como quando um recurso é ativado por [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ele é executado em um processo diferente que o depurador. Isso significa que algumas funcionalidades de depuração, como pontos de interrupção, não funcionarão corretamente.  

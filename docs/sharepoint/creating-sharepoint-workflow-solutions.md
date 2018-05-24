@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Criando soluções de fluxo de trabalho do SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornece ferramentas para ajudá-lo a criar fluxos de trabalho personalizados que gerenciam o ciclo de vida de documentos e itens de lista em um site do SharePoint. Itens fornecidos incluem um designer, um conjunto de controles de atividade e as referências de assembly necessárias. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] também inclui o **Assistente de personalização do SharePoint**, para ajudar a criar e configurar os fluxos de trabalho.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>Fluxos de trabalho no SharePoint  
  Quando você adiciona um fluxo de trabalho a uma lista ou biblioteca do SharePoint, você pode impor um processo de negócios em todos os itens na lista ou biblioteca. Um fluxo de trabalho descreve as ações que o sistema ou os usuários devem executar em cada item, como o envio do item a ser editado e, em seguida, revisado. Essas ações, conhecidas como *atividades*, são os blocos de construção do fluxo de trabalho.  
   
- Você pode criar fluxos de trabalho do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implantá-los em um site do SharePoint. Depois que um fluxo de trabalho é implantado no SharePoint, você pode associá-lo com uma lista ou biblioteca. Ele pode então ser iniciado automaticamente, por um processo, ou manualmente, por um usuário. Para obter mais informações sobre a operação de fluxo de trabalho, consulte [usando fluxos de trabalho para gerenciar processos](http://go.microsoft.com/fwlink/?LinkId=79757).  
+ Você pode criar fluxos de trabalho do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implantá-los em um site do SharePoint. Depois que um fluxo de trabalho é implantado no SharePoint, você pode associá-lo com uma lista ou biblioteca. Ele pode então ser iniciado automaticamente, por um processo, ou manualmente, por um usuário. Para obter mais informações sobre a operação de fluxo de trabalho, consulte [SharePoint desenvolver fluxos de trabalho usando o Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>Criando fluxos de trabalho do SharePoint personalizado  
  Dois projetos de fluxo de trabalho do SharePoint estão disponíveis em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **fluxo de trabalho sequencial** e **fluxo de trabalho de máquina de estado**.  

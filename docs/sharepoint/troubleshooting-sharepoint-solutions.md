@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba8f84db31cbe41e8bd3f62a7806de0a6d2ea58e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12de0ea2e9638c7ab523bbda0e623c84d0182aad
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Solucionando problemas de soluções do SharePoint
   Os seguintes problemas ou alertas que podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [depuração soluções de fluxo de trabalho do SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -135,7 +135,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Instalar [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Certifique-se de que você tem acesso de administrador para o site do SharePoint. Para obter mais informações, consulte o [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artigo Online [conceder acesso ao site de portal](http://go.microsoft.com/fwlink/?LinkId=98310).  
+-   Certifique-se de que você tem acesso de administrador para o site do SharePoint. Para obter mais informações, consulte o [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artigo Online [atribuir ou remover administradores de aplicativos de serviço no SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Evento de Web de exclusão de site não ocorre no projeto do receptor de evento  
  Quando você cria um projeto de receptor de evento e selecione determinados eventos da Web, como "um site está sendo excluído", ocorre o evento nunca.  
