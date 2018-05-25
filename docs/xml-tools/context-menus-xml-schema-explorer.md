@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus de contexto (XML Schema Explorer)
 
 Os seguintes itens de menu de contexto são usados para executar pesquisas esquema- específicas e outras operações.
 
-## <a name="node-type-schema-set"></a>Tipo de nó: Conjunto de esquema
+## <a name="node-type-schema-set"></a>Tipo de nó: conjunto de esquema
 
 A tabela a seguir descreve as opções que estão disponíveis para um nó do esquema.
 
@@ -42,7 +42,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Mostrar elementos globais**|Localiza e realces todos elementos globais no namespace selecionado.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se ainda não estiver aberto). Esta janela exibe informações sobre o nó.|
 
-## <a name="node-type-file"></a>Tipo de nó: Arquivo
+## <a name="node-type-file"></a>Tipo de nó: arquivo
  A tabela a seguir descreve as opções que estão disponíveis para um nó de arquivo.
 
 |Opção|Descrição|
@@ -54,7 +54,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Modo de exibição de código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se ainda não estiver aberto). Esta janela exibe informações sobre o nó.|
 
-## <a name="all-global-node-types"></a>Todos os tipos de nós globais
+## <a name="all-global-node-types"></a>Todos os tipos de nó global
  A tabela a seguir descreve as opções que estão disponíveis para todos os nós globais.
 
 |Opção|Descrição|
@@ -64,7 +64,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Modo de exibição de código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se ainda não estiver aberto). Esta janela exibe informações sobre o nó.|
 
-## <a name="node-type-element"></a>Tipo de nó: Elemento
+## <a name="node-type-element"></a>Tipo de nó: elemento
  Além das opções do nó globais descritos acima, o menu de contexto para nós do elemento tem as seguintes opções:
 
 |Opção|Descrição|
@@ -76,7 +76,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Cabeçalhos de grupo de substituição de apresentação**|Para elementos globais que são membros de um grupo de substituição, localiza e ressalta os cabeçotes qualquer diretos e indiretos para o elemento selecionado, como o seguinte:<br /><br /> -Um cabeçalho de grupo de substituição especificado no elemento selecionado.<br />-Um cabeçalho de grupo de substituição especificado em seu elemento principal.|
 |**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
 
-## <a name="node-type-global-types"></a>Tipo de nó: Tipos globais
+## <a name="node-type-global-types"></a>Tipo de nó: tipos globais
  Além das opções do nó globais descritos acima, o menu de contexto para nós globais do tipo tem as seguintes opções:
 
 |Opção|Descrição|
@@ -86,7 +86,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Mostrar todos os tipos derivados**|Localiza e realça todos os tipos que direta e indiretamente são derivados do tipo selecionado.|
 |**Mostrar todos os ancestrais**|Mostrar todos os tipos de base pai ().|
 
-## <a name="node-type-attribute"></a>Tipo de nó: Atributo
+## <a name="node-type-attribute"></a>Tipo de nó: atributo
  Além das opções do nó globais descritos acima, o menu de contexto para nós de atributo tem as seguintes opções:
 
 |Opção|Descrição|
@@ -95,7 +95,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Vá para o atributo Original**|Para referências de atributo, navega para a definição real do atributo.|
 |**Mostrar todas as referências**|Para atributos globais, localiza e realça todas as referências (outros atributos que têm `ref="selectedAttribute"`) para o atributo selecionado.|
 
-## <a name="node-type-attribute-group"></a>Tipo de nó: Grupo de atributo
+## <a name="node-type-attribute-group"></a>Tipo de nó: grupo de atributos
  Além das opções do nó globais descritos acima, o menu de contexto para nós do grupo de atributo tem as seguintes opções:
 
 |Opção|Descrição|
@@ -104,7 +104,7 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 |**Mostrar todos os membros**|Localiza e realces todos os membros do grupo de atributo.|
 |**Mostrar todas as referências**|Localiza e realça todas as referências (grupos de atributo que têm `ref="selectedAttributeGroup"`) para o grupo selecionado de atributo.|
 
-## <a name="node-type-named-group"></a>Tipo de nó: Grupo nomeado
+## <a name="node-type-named-group"></a>Tipo de nó: denominado grupo
  Além das opções do nó globais descritos acima, o menu de contexto para nós nome de grupo tem as seguintes opções:
 
 |Opção|Descrição|
@@ -116,4 +116,4 @@ A tabela a seguir descreve as opções que estão disponíveis para um nó do es
 ## <a name="see-also"></a>Consulte também
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
-- [Pesquisando pelo conjunto de esquema](../xml-tools/searching-the-schema-set.md)
+- [Pesquisando o conjunto de esquema](../xml-tools/searching-the-schema-set.md)

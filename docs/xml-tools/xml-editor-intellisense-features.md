@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b87f9d1b850ce93851d78a8b43420ae473c41
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="xml-editor-intellisense-features"></a>Funcionalidades do IntelliSense o editor XML
+# <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense do Editor de XML
 
-O editor XML fornece os recursos do IntelliSense comparáveis a outros editores de linguagem fornecidos no Visual Studio. Esta seção explica como você pode usar o IntelliSense com a linguagem de definição de esquema XML (XSD) e documentos XSLT.
+O editor de XML fornece recursos do IntelliSense completos comparáveis a outros editores de idioma fornecidas no Visual Studio. Esta seção explica como você pode usar o IntelliSense com a linguagem de definição de esquema XML (XSD) e documentos XSLT.
 
-## <a name="intellisense-in-an-xsd-document"></a>O IntelliSense em um documento XSD
+## <a name="intellisense-in-an-xsd-document"></a>IntelliSense em um documento XSD
  Depois que um esquema é associado com o documento, obter uma lista suspensa de elementos esperados qualquer momento que você digitar `"<"` ou clique no **exibir uma lista de membros do objeto** na barra de ferramentas do editor XML. Para obter informações sobre como associar esquemas com documentos XML, consulte [validação de documento XML](../xml-tools/xml-document-validation.md).
 
  Quando você digita o ESPAÇO de dentro de uma marca inicial, você também obtém uma lista suspensa que mostra todos os atributos que podem ser adicionados ao elemento atual.
@@ -31,7 +31,7 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
 
  Dicas de ferramenta também aparece nessas IntelliSense listas com base em `xsd:annotation` e informações de `xsd:documentation` encontrado no esquema associado.
 
-## <a name="intellisense-in-an-xslt-document"></a>O IntelliSense em um documento XSLT
+## <a name="intellisense-in-an-xslt-document"></a>IntelliSense em um documento do XSLT
  Após adicionar um modelo nomeado ou um atributo para o documento de fonte, você pode usar o IntelliSense para inserir o seguinte:
 
 -   Nomes definidos de atributo.
@@ -73,14 +73,14 @@ Para obter mais informações, consulte [passo a passo: usando XSLT IntelliSense
 
 -   Termina uma declaração de DTD: `>`
 
-O editor XML também tem a capacidade de inserir uma declaração de namespace se você selecionar um elemento qualificado namespace ou o atributo de uma lista do IntelliSense e de namespace para esse elemento ou atributo ainda não está no escopo.
+O editor de XML também tem a capacidade de inserir um namespace de declaração se você selecionar um elemento de qualificado de namespace ou atributo de uma lista do IntelliSense e o namespace do elemento ou atributo ainda não está no escopo.
 
 Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense onde o prefixo é associado ao namespace de `http://books` que não foi declarada no documento, o editor XML insere a declaração de namespace necessário para você. O seguinte é o texto resultante XML:
 
 `<e:Book xmlns:e="http://books"`
 
-## <a name="brace-matching"></a>Correspondência de chave
- O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (CTRL) para ignorar uma chave da chave correspondente.
+## <a name="brace-matching"></a>Correspondência de chaves
+ O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl**+**]**) para saltar de uma chave para a chave correspondente.
 
  O editor XML faz isso para os seguintes itens:
 
@@ -98,8 +98,8 @@ Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense
 
 -   Abrindo e fechando aspas em atributos.
 
-## <a name="modifying-the-intellisense-options"></a>Alterando as opções do IntelliSense
- Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas configurações de opções de ferramentas.
+## <a name="modify-the-intellisense-options"></a>Modificar as opções do IntelliSense
+ Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso, modificando o **ferramentas** > **opções** configurações.
 
  O **inserir automaticamente** seção o **diversos** página controla o comportamento a seguir:
 
@@ -109,7 +109,7 @@ Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense
 |Aspas de atributo|O valor do atributo das inserções que quando você digite um novo nome de atributo.|
 |Outra marcação|Comentários, CDATA termina, DOCTYPE, instruções de processamento, e outras declarações de marcação.|
 
-#### <a name="to-change-the-auto-completion-behavior"></a>Para alterar o comportamento de preenchimento automático
+### <a name="to-change-the-auto-completion-behavior"></a>Para alterar o comportamento de preenchimento automático
 
 1.  Selecione **Opções** no menu **Ferramentas**.
 

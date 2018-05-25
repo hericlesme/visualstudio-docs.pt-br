@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f598f01116d7ce2aec5759c411e456083f6932b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerencia um trecho de um esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: gerar um fragmento de XML de um esquema XML
 
-O editor XML tem a capacidade de gerar trechos de um esquema de linguagem de definição de esquema XML (XSD). Por exemplo, porque você está criando um arquivo XML, quando posicionado próximo ao nome do elemento, você pode pressionar a tecla TAB para preencher o elemento com os dados XML gerados de informações de esquema para esse elemento.
+O editor XML tem a capacidade de gerar trechos de um esquema de linguagem de definição de esquema XML (XSD). Por exemplo, como criar um arquivo XML, enquanto posicionado ao lado do nome do elemento, você pode pressionar **guia** para preencher o elemento com dados XML gerados a partir das informações de esquema para esse elemento.
 
 Este recurso está disponível somente nos elementos. As seguintes regras também se aplicam:
 
@@ -44,12 +44,12 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
 ## <a name="example"></a>Exemplo
 
- As etapas nesta seção mostrar como usar o recurso esquema- gerado de trecho XML do editor XML.
+ As etapas nesta seção mostram como usar o recurso de trecho de código do XML de esquema gerado do Editor de XML.
 
 > [!NOTE]
 > Antes de iniciar estes procedimentos, salve o arquivo de esquema para o seu computador local.
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-la com um esquema XML
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-lo a um esquema XML
 
 1.  Sobre o **arquivo** , aponte para **novo**e clique em **arquivo**.
 
@@ -69,7 +69,7 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
 6.  Clique em **OK**.
 
-     O esquema XML agora está associado com o documento XML.
+     O esquema XML agora está associada ao documento XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Para gerar um trecho XML
 
@@ -85,11 +85,11 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
      **Entre em contato com** para adicionar o elemento raiz.
 
-3.  Selecione **contato** na lista de membros e pressione ENTER.
+3.  Selecione **contato** na lista de membros e pressione **Enter**.
 
      O editor adiciona a tag de início `<Contact` e posicionar o cursor após o nome do elemento.
 
-4.  Pressione a tecla TAB para gerar dados XML para o elemento de `Contact` com base em suas informações de esquema.
+4.  Pressione **guia** para gerar dados XML para o `Contact` elemento com base em suas informações de esquema.
 
 ## <a name="input"></a>Entrada
 
@@ -157,5 +157,5 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trechos de código XML](../xml-tools/xml-snippets.md)
-- [Como usar trechos de código XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Trechos XML](../xml-tools/xml-snippets.md)
+- [Como: usar XML trechos de código](../xml-tools/how-to-use-xml-snippets.md)

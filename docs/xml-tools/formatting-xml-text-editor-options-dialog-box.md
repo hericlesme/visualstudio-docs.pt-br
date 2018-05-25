@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1046655812bf88f51af7590fd1b39ccea11f8eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatação, XML, editor de texto, a caixa de diálogo opções
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatação, XML, editor de texto, caixa de diálogo Opções
 
 Esta caixa de diálogo permite que você especifique as configurações de formatação para o editor XML. Você pode acessar o **opções** na caixa de diálogo de **ferramentas** menu.
 
@@ -42,7 +42,7 @@ Esta caixa de diálogo permite que você especifique as configurações de forma
 </item>
 ```
 
-## <a name="auto-reformat"></a>Reformatação Automática
+## <a name="auto-reformat"></a>Reformatação automática
  **Ao colar da área de transferência**
 
  Reformatar o texto XML colado da área de transferência.
@@ -51,7 +51,7 @@ Esta caixa de diálogo permite que você especifique as configurações de forma
 
  Reformatar o elemento quando a marca de fim é concluída.
 
-## <a name="mixed-content"></a>Conteúdo Misto
+## <a name="mixed-content"></a>Conteúdo misto
  **Preservar o conteúdo misto por padrão**
 
  Determina se o editor reformate conteúdo misturado. Por padrão, o editor tenta reformatar conteúdo misturado, a não ser que quando o conteúdo for encontrado em um escopo de `xml:space="preserve"` .
@@ -67,5 +67,5 @@ Esta caixa de diálogo permite que você especifique as configurações de forma
 
 ## <a name="see-also"></a>Consulte também
 
-- [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)
-- [Componentes do editor de XML](../xml-tools/xml-editor-components.md)
+- [Propriedades de documento XML, janela de propriedades](../xml-tools/xml-document-properties-properties-window.md)
+- [Componentes do Editor de XML](../xml-tools/xml-editor-components.md)

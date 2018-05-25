@@ -1,5 +1,5 @@
 ---
-title: 'Como: adicionar controles de indicador a documentos do Word | Microsoft Docs'
+title: 'Como: adicionar controles de indicador a documentos do Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,28 +19,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a33160ba534a1ee6bd56238cffaa2064e4332ec1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c2814847270df70126cb8f286acdc152ddbed046
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Como adicionar controles de indicador a documentos do Word
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>Como: adicionar controles de indicador a documentos do Word
   Em projetos de nível de documento, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para qualquer documento aberto em tempo de execução.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  Este tópico descreve as seguintes tarefas:  
   
--   [Adicionando controles de indicador em tempo de design](#designtime)  
+-   [Adicionar controles de indicador em tempo de design](#designtime)  
   
--   [Adicionando controles de indicador em tempo de execução em um projeto no nível do documento](#runtimedoclevel)  
+-   [Adicionar controles de indicador em tempo de execução em um projeto no nível de documento](#runtimedoclevel)  
   
--   [Adicionando controles de indicador em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)  
+-   [Adicionar controles de indicador em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)  
   
- Para obter mais informações sobre <xref:Microsoft.Office.Tools.Word.Bookmark> controles, consulte [indicador controle](../vsto/bookmark-control.md).  
+ Para obter mais informações sobre <xref:Microsoft.Office.Tools.Word.Bookmark> controles, consulte [controle indicador](../vsto/bookmark-control.md).  
   
-##  <a name="designtime"></a> Adicionando controles de indicador em tempo de Design  
+##  <a name="designtime"></a> Adicionar controles de indicador em tempo de Design  
  Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles para o documento em um projeto no nível do documento em tempo de design:  
   
 -   No Visual Studio **caixa de ferramentas**.  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Do **fontes de dados** janela.  
   
-     Você pode arrastar o <xref:Microsoft.Office.Tools.Word.Bookmark> controle para o documento a partir de **fontes de dados** janela. Isso é útil quando você deseja associar o controle de dados ao mesmo tempo. Você pode adicionar o controle de host da mesma maneira que você adicionaria um controle de formulário do Windows do **fontes de dados** janela. Para obter mais informações, consulte [Vinculação de dados e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+     Você pode arrastar o <xref:Microsoft.Office.Tools.Word.Bookmark> controle para o documento a partir de **fontes de dados** janela. Isso é útil quando você deseja associar o controle de dados ao mesmo tempo. Você pode adicionar o controle de host da mesma maneira que você adicionaria um controle de formulário do Windows do **fontes de dados** janela. Para obter mais informações, consulte [associação de dados e o Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -79,14 +79,14 @@ ms.lasthandoff: 04/16/2018
   
 3.  No **indicador** caixa de diálogo, digite o nome do novo indicador e clique em **adicionar**.  
   
-##  <a name="runtimedoclevel"></a> Adicionando controles de indicador em tempo de execução em um projeto no nível do documento  
+##  <a name="runtimedoclevel"></a> Adicionar controles de indicador em tempo de execução em um projeto no nível de documento  
  Você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles programaticamente para o documento em tempo de execução usando métodos do <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade o `ThisDocument` classe em seu projeto. Há duas sobrecargas do método que você pode usar para adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle das seguintes maneiras:  
   
 -   Adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> em um intervalo especificado.  
   
 -   Adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> que se baseia em um indicador nativo do documento (ou seja, um <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Criado dinamicamente <xref:Microsoft.Office.Tools.Word.Bookmark> controles não são mantidos no documento quando o documento é fechado. No entanto, um nativo <xref:Microsoft.Office.Interop.Word.Bookmark> permanecerá no documento. Você pode recriar um <xref:Microsoft.Office.Tools.Word.Bookmark> que se baseia em um indicador nativo na próxima vez em que o documento for aberto. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Criado dinamicamente <xref:Microsoft.Office.Tools.Word.Bookmark> controles não são mantidos no documento quando o documento é fechado. No entanto, um nativo <xref:Microsoft.Office.Interop.Word.Bookmark> permanecerá no documento. Você pode recriar um <xref:Microsoft.Office.Tools.Word.Bookmark> que se baseia em um indicador nativo na próxima vez em que o documento for aberto. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Para adicionar um controle de indicador a um documento programaticamente  
   
@@ -98,16 +98,16 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Se você desejar criar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle de uma já existente <xref:Microsoft.Office.Interop.Word.Bookmark>, use o <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> método e passe existentes no <xref:Microsoft.Office.Interop.Word.Bookmark>.  
   
-##  <a name="runtimeaddin"></a> Adicionando controles de indicador em tempo de execução em um projeto de suplemento do VSTO  
+##  <a name="runtimeaddin"></a> Adicionar controles de indicador em tempo de execução em um projeto de suplemento do VSTO  
  Você pode adicionar <xref:Microsoft.Office.Tools.Word.Bookmark> controles programaticamente para qualquer documento aberto em tempo de execução usando um suplemento do VSTO. Para fazer isso, gerar um <xref:Microsoft.Office.Tools.Word.Document> hospedar o item com base em um documento aberto e usar os métodos do <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriedade deste item de host. Há duas sobrecargas do método que você pode usar para adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> controle das seguintes maneiras:  
   
 -   Adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> em um intervalo especificado.  
   
 -   Adicionar um <xref:Microsoft.Office.Tools.Word.Bookmark> que se baseia em um indicador nativo do documento (ou seja, um <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Criado dinamicamente <xref:Microsoft.Office.Tools.Word.Bookmark> controles não são mantidos no documento quando o documento é fechado. No entanto, um nativo <xref:Microsoft.Office.Interop.Word.Bookmark> permanecerá no documento. Você pode recriar um <xref:Microsoft.Office.Tools.Word.Bookmark> que se baseia em um indicador nativo na próxima vez em que o documento for aberto. Para obter mais informações, consulte [persistência de controles dinâmicos em documentos do Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Criado dinamicamente <xref:Microsoft.Office.Tools.Word.Bookmark> controles não são mantidos no documento quando o documento é fechado. No entanto, um nativo <xref:Microsoft.Office.Interop.Word.Bookmark> permanecerá no documento. Você pode recriar um <xref:Microsoft.Office.Tools.Word.Bookmark> que se baseia em um indicador nativo na próxima vez em que o documento for aberto. Para obter mais informações, consulte [manter controles dinâmicos em documentos do Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Para obter mais informações sobre como gerar itens de host em projetos de suplemento do VSTO, consulte [Estendendo documentos do Word e pastas de trabalho do Excel no suplemento do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Para obter mais informações sobre como gerar itens de host em projetos de suplemento do VSTO, consulte [documentos de estender o Word e pastas de trabalho do Excel no suplemento do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Para adicionar um controle de indicador em um intervalo especificado  
   
@@ -128,12 +128,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]  
   
 ## <a name="see-also"></a>Consulte também  
- [Automatizando o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)   
- [Itens de host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md)   
- [Adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Limitações programáticas de itens de Host e controles de Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Suplementos de programação para o VSTO](../vsto/programming-vsto-add-ins.md)   
- [Personalizações no nível do documento da programação](../vsto/programming-document-level-customizations.md)   
- [Como redimensionar controles de indicador](../vsto/how-to-resize-bookmark-controls.md)  
+ [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)   
+ [Itens de host e visão geral dos controles de host](../vsto/host-items-and-host-controls-overview.md)   
+ [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Programa de suplementos do VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Programa personalizações no nível do documento](../vsto/programming-document-level-customizations.md)   
+ [Como: redimensionar controles de indicador](../vsto/how-to-resize-bookmark-controls.md)  
   
   

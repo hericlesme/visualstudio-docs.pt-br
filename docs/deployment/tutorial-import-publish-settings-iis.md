@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publicar um aplicativo no IIS, importando as configurações de publicação no Visual Studio
 
@@ -38,13 +38,11 @@ Um arquivo de configurações de publicação (*\*. publishsettings*) é diferen
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você deve ter instalado o Visual Studio e o **ASP.NET** e **do .NET Framework** cargas de trabalho de desenvolvimento. Para um aplicativo .NET Core, você também precisa de **.NET Core** carga de trabalho.
+* Você deve ter o Visual Studio de 2017 instalado e o **ASP.NET** e **do .NET Framework** cargas de trabalho de desenvolvimento. Para um aplicativo .NET Core, você também precisa de **.NET Core** carga de trabalho.
 
     Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
 
-    As etapas neste artigo são baseadas no Visual Studio de 2017
-
-* Para gerar o arquivo de configurações de publicação do IIS, você deve ter um computador que executa o Windows Server 2012 com a função de servidor Web do IIS 8.0 configurada corretamente e o ASP.NET 4.5 ou o ASP.NET Core instalado. Para o ASP.NET Core, consulte [publicar no IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Para o ASP.NET 4.5, consulte [IIS 8.0 usando ASP.NET 3.5 e o ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Para gerar o arquivo de configurações de publicação do IIS, você deve ter um computador que executa o Windows Server 2012 ou Windows Server 2016, e você deve ter a função de servidor Web do IIS configurada corretamente. O ASP.NET 4.5 ou o ASP.NET Core também deve ser instalado. Para o ASP.NET Core, consulte [publicar no IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Para o ASP.NET 4.5, consulte [IIS 8.0 usando ASP.NET 3.5 e o ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Criar um novo projeto ASP.NET no Visual Studio
 
@@ -68,62 +66,13 @@ Um arquivo de configurações de publicação (*\*. publishsettings*) é diferen
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Criar o arquivo de configurações de publicação no IIS no Windows Server
 
-1. No IIS, clique com botão direito do **Default Web Site**, escolha **implantar** > **configurar Web implantar publicação**.
-
-    ![Definir a configuração de implantação da Web](../deployment/media/tutorial-configure-web-deploy-publishing.png)
-
-1. No **configurar Web implantar publicação** caixa de diálogo caixa, examine as configurações.
-
-1. Clique em **instalação**.
-
-    No **resultados** painel, a saída mostra que os direitos de acesso foi concedida ao usuário especificado e que um arquivo com um *. publishsettings* foi gerada no local mostrado na extensão de arquivo a caixa de diálogo.
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <publishData>
-      <publishProfile
-        publishUrl="https://myhostname:8172/msdeploy.axd"
-        msdeploySite="Default Web Site"
-        destinationAppUrl="http://myhostname:80/"
-        mySQLDBConnectionString=""
-        SQLServerDBConnectionString=""
-        profileName="Default Settings"
-        publishMethod="MSDeploy"
-        userName="myhostname\myusername" />
-    </publishData>
-    ```
-
-    Dependendo da configuração do Windows Server e o IIS, você verá valores diferentes. Aqui estão alguns detalhes sobre os valores que você verá:
-
-    * O *msdeploy.axd* arquivo referenciado no `publishUrl` atributo é um arquivo de manipulador HTTP geradas dinamicamente para implantação da Web. (Para fins de teste, `http://myhostname:8172` geralmente funcionam bem.)
-    * O `publishUrl` porta geralmente é definida como porta 8172, que é o padrão para a implantação da Web.
-    * O `destinationAppUrl` porta geralmente é definida para a porta 80, que é o padrão para o IIS.
-    * Se não for possível conectar-se ao host remoto no Visual Studio usando o nome do host (em etapas posteriores), teste o endereço IP no lugar do nome de host.
-
-    > [!NOTE]
-    > Se você estiver publicando para o IIS em execução em uma VM do Azure, as portas do IIS e a implantação da Web devem ser abertas no grupo de segurança de rede. Para obter informações detalhadas, consulte [instalar e executar o IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
-
-1. Copie esse arquivo para o computador onde você está executando o Visual Studio.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importar as configurações de publicação no Visual Studio e implantar
 
-1. No computador em que o projeto ASP.NET aberto no Visual Studio, clique com botão direito no projeto no Gerenciador de soluções e escolha **publicar**.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-1. Se você tiver configurado anteriormente quaisquer perfis de publicação, o **publicar** painel é exibido. Clique em **criar novo perfil**.
-
-1. No **escolher um destino de publicação** caixa de diálogo, clique em **importar perfil**.
-
-    ![Escolher publicar](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Navegue até o local do arquivo de configurações de publicação que você criou na seção anterior.
-
-1. No **importar o arquivo de configurações de publicação** caixa de diálogo, navegue até e selecione o perfil que você criou na seção anterior e clique em **abrir**.
-
-    O Visual Studio inicia o processo de implantação e a janela de saída mostra o progresso e os resultados.
-
-    Se você obtiver uma implantação de quaisquer erros, clique em **configurações** para editar as configurações. Modificar as configurações e clique em **validar** para testar as novas configurações.
-
-    ![Editar as configurações na ferramenta de publicação](../deployment/media/tutorial-configure-publish-settings-in-tool.png)
+Depois que o aplicativo implanta com êxito, ele deve ser iniciado automaticamente. Se ele não for iniciado no Visual Studio, inicie o aplicativo no IIS. Para o ASP.NET Core, você precisa certificar-se de que o pool de aplicativos campo para o **DefaultAppPool** é definido como **sem código gerenciado**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

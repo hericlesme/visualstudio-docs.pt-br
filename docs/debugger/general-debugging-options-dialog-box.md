@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Caixa de diálogo Geral, Depuração, Opções
 O **Ferramentas > Opções > Depuração > geral** página permite que você defina as seguintes opções:  
@@ -94,11 +94,11 @@ Informe ao depurador do Visual Studio para obter os arquivos de origem dos servi
 - **Permitir que o servidor de origem para assemblies de confiança parcial (somente gerenciado)**  
     Quando o suporte do servidor de origem é ativado, esta configuração substitui o comportamento padrão de não recuperar as fontes dos assemblies de confiança parcial.  
 
-- **Habilitar o suporte de link de origem**  
+**Habilitar suporte a vínculo da fonte**  
     Informa o depurador do Visual Studio para baixar os arquivos de origem para os arquivos. PDB que contêm informações de Link de origem. Para obter mais informações sobre o Link de origem, consulte o [especificação de Link de origem](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
-    >  Como o vínculo da fonte baixará os arquivos usando http ou https, verifique se que você confia que o arquivo. PDB.  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **Realce a linha inteira para pontos de interrupção e instrução atual (C++)**  
 Quando o depurador realça um ponto de interrupção ou uma declaração atual, realça a linha inteira.  

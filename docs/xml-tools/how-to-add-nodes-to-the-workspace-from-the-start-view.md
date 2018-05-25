@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4169e4a294e326c5def15fcb310f944f5a618dd3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d66e9c8817bfb170c6eaf77b5d6153d0559ff8d4
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Como: Adicionar nós ao modo de exibição de espaço de trabalho do início
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Como: adicionar nós ao espaço de trabalho do modo de exibição de iniciar
 
-Este tópico descreve como adicionar nós global para o [espaço de trabalho de Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md) do [exibição início](../xml-tools/start-view.md).
+Este tópico descreve como adicionar nós global para o [espaço de trabalho do Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md) do [exibição início](../xml-tools/start-view.md).
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Para adicionar nós do início para o modo de espaço de trabalho
 

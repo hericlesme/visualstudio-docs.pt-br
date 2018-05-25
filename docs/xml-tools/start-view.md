@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>O modo de Início
 
@@ -26,9 +26,9 @@ A exibição início contém duas seções principais, o *marca d'água* e **def
 
 ## <a name="watermark"></a>Marca de agua
 
-O painel de marca de agua contém uma lista de links para todas as exibições, editor XML, e XML Schema Explorer de designer XSD. Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”
+O painel de marca d'água contém uma lista de links para todas as exibições do Designer de XSD, Editor de XML e **XML Schema Explorer**. Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”
 
-## <a name="schema-set-details"></a>Para obter detalhes de esquema
+## <a name="schema-set-details"></a>Detalhes do conjunto de esquema
 
 O **definir detalhes de esquema** painel lista os tipos de nó do esquema global e exibe o número de instâncias de cada tipo no esquema. Você pode usar o **adicionar** links ao lado de tipos de nó para adicionar novos nós ao espaço de trabalho.
 
@@ -42,9 +42,9 @@ Os seguintes botões estão ativados na barra de ferramentas do designer XSD qua
 
 |Opção|Descrição|
 |------------|-----------------|
-|**Mostrar o modo de início**|Alterna a O modo de Início. Este modo de exibição pode ser acessado usando o atalho de teclado: **CTRL + 1**.|
-|**Mostrar exibição do modelo de conteúdo**|Alterna a O modo do modelo de conteúdo. Este modo de exibição pode ser acessado usando o atalho de teclado: **CTRL + 2**.|
-|**Mostrar exibição do gráfico**|Alterna a O modo de gráfico. Este modo de exibição pode ser acessado usando o atalho de teclado: **CTRL + 3**.|
+|**Mostrar o modo de início**|Alterna a O modo de Início. Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl**+**1**.|
+|**Mostrar exibição do modelo de conteúdo**|Alterna a O modo do modelo de conteúdo. Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl**+**2**.|
+|**Mostrar exibição do gráfico**|Alterna a O modo de gráfico. Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Consulte também
 

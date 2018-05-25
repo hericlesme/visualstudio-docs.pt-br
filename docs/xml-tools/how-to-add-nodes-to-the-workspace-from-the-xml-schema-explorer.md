@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 010cdbbb23b1e376ec12e7a6a6a903664a069d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Como: Adicionar nós ao espaço de trabalho XML Schema Explorer
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Como: adicionar nós ao espaço de trabalho do Gerenciador de esquema XML
 
-Este tópico explica como adicionar nós a [espaço de trabalho do Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md) do Gerenciador de esquema XML. Isso pode ser obtido arrastando e soltando-os nós XML Schema Explorer em uma exibição do designer XSD, ou usando o menu de contexto do gerenciador de esquema XML. Você também pode adicionar os nós que são realçadas como resultado de uma pesquisa executada por XML Schema Explorer. Para obter mais informações, consulte [como: adicionar esquema definido pesquisa resultados nós ao espaço de trabalho](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+Este tópico explica como adicionar nós a [espaço de trabalho do Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md) do **XML Schema Explorer**. Isso pode ser feito arrastando e soltando nós do **XML Schema Explorer** em uma exibição de Designer de XSD ou usando o **XML Schema Explorer** menu de contexto. Você também pode adicionar nós realçados como resultado de uma pesquisa executada pelo **XML Schema Explorer**. Para obter mais informações, consulte [como: adicionar nós de resultados de pesquisa de conjunto de esquema para o espaço de trabalho](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
-> Somente nós globais podem ser adicionados para o [espaço de trabalho de Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md).
+> Somente nós globais podem ser adicionados para o [espaço de trabalho do Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md).
 
-## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Para adicionar nós através do menu de contexto XML Explorer
+## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Para adicionar nós por meio do menu de contexto do Gerenciador de XML
 
 1.  Siga as etapas em [como: criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
@@ -33,11 +33,11 @@ Este tópico explica como adicionar nós a [espaço de trabalho do Designer de e
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Para arrastar e soltar sobre um nó para uma visualização
 
-1.  Clique com o botão direito do mouse no nó de `PurchaseOrderType` no modo de gráfico. Selecione **Mostrar em XML Schema Explorer**.
+1.  Clique com botão direito no `PurchaseOrderType` nó no modo de exibição de gráfico. Selecione **Mostrar em XML Schema Explorer**.
 
-     O nó é realçado em XML Schema Explorer.
+     O nó é realçado no **XML Schema Explorer**.
 
-2.  Clique com o botão direito no `PurchaseOrderType` nó no Pesquisador de objetos de esquema XML e selecione **Mostrar todas as referências**.
+2.  Clique com o botão direito no `PurchaseOrderType` nó o **XML Schema Explorer** e selecione **Mostrar todas as referências**.
 
      O nó de `purchaseOrder` é realçado.
 
@@ -51,7 +51,7 @@ Este tópico explica como adicionar nós a [espaço de trabalho do Designer de e
 
      ![Pesquisa de palavra-chave do XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Os resultados de pesquisa são realçadas em XML Schema Explorer e marcados por escalas na barra de rolagem vertical.
+     Os resultados da pesquisa são realçados no **XML Schema Explorer** e marcado pelo tiques na barra de rolagem vertical.
 
 2.  Adicionar os resultados da pesquisa para o espaço de trabalho clicando o **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo.
 

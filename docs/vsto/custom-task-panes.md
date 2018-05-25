@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4dff9c5f8602f1e11ef020400a11d7d165b23b04
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Painéis de tarefas estão os painéis de interface do usuário que são normalmente encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Painéis de tarefas personalizados oferecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar recursos da solução. Por exemplo, a interface pode conter controles que execute o código para modificar documentos ou exibir dados de uma fonte de dados.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 05/17/2018
 ### <a name="familiar-user-interface"></a>Interface de usuário familiar  
  Os usuários de aplicativos do Microsoft Office System já estão familiarizados com o uso de painéis de tarefas, como o **estilos e formatação** painel de tarefas no Word. Painéis de tarefas personalizados se comportam como outros painéis de tarefas no Microsoft Office system. Os usuários podem encaixar painéis de tarefas personalizados para diferentes lados da janela do aplicativo ou pode arrastar painéis de tarefas personalizados para qualquer local na janela. Você pode criar um VSTO suplemento que exibe vários painéis de tarefas personalizados ao mesmo tempo, e os usuários podem controlar individualmente cada painel de tarefas.  
   
-### <a name="windows-forms-support"></a>suporte ao Windows Forms  
+### <a name="windows-forms-support"></a>Suporte ao Windows forms  
  A interface do usuário de um painel tarefa personalizada que você cria usando as ferramentas de desenvolvimento do Office no Visual Studio se baseia em controles de formulários do Windows. Você pode usar o Designer de formulários do Windows familiares para criar a interface do usuário para um painel tarefa personalizada. Você também pode usar o suporte à associação de dados em formulários do Windows para associar a uma fonte de dados a controles no painel de tarefas.  
   
 ## <a name="create-a-custom-task-pane"></a>Criar um painel tarefa personalizada  
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="access-the-application-from-the-task-pane"></a>Acessar o aplicativo de painel de tarefas  
  Se quiser automatizar o aplicativo do controle do usuário, você pode acessar diretamente o modelo de objeto usando `Globals.ThisAddIn.Application` em seu código. Estático `Globals` classe fornece acesso para o `ThisAddIn` objeto. O `Application` campo desse objeto é o ponto de entrada no modelo de objeto do aplicativo.  
   
- Para obter mais informações sobre o `Application` campo o `ThisAddIn` de objeto, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md). Para uma explicação passo a passo que demonstra como automatizar um aplicativo de um painel tarefa personalizada, consulte [passo a passo: automatizar um aplicativo de um painel tarefa personalizada](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Para obter mais informações sobre o `Globals` de classe, consulte [Global de acesso a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Para obter mais informações sobre o `Application` campo o `ThisAddIn` de objeto, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md). Para uma explicação passo a passo que demonstra como automatizar um aplicativo de um painel tarefa personalizada, consulte [passo a passo: automático, um aplicativo de um painel tarefa personalizada](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Para obter mais informações sobre o `Globals` de classe, consulte [Global de acesso a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Gerenciar a interface do usuário do painel de tarefas  
  Depois de criar o painel de tarefas, você pode usar propriedades e eventos de <xref:Microsoft.Office.Tools.CustomTaskPane> objeto para controlar a interface do usuário do painel de tarefas e para responder quando o usuário altera o painel de tarefas.  
@@ -147,11 +147,6 @@ ms.lasthandoff: 05/17/2018
  Se você quiser exibir um painel tarefa personalizada com o windows Explorer ou o Inspetor vários, você precisa criar uma nova instância do painel de tarefas personalizado quando uma janela de navegador ou Inspetor é aberta. Para fazer isso, manipular um evento que é gerado quando uma janela de navegador ou Inspetor é criada e, em seguida, criar o painel de tarefas no manipulador de eventos. Você também pode manipular eventos de navegador e Inspetor para ocultar ou exibir os painéis de tarefas dependendo de qual janela está visível.  
   
  Para associar o painel de tarefas com um Explorer ou Inspetor específico, use o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método para criar o painel de tarefas e, em seguida, passe o <xref:Microsoft.Office.Interop.Outlook.Explorer> ou <xref:Microsoft.Office.Interop.Outlook.Inspector> o objeto para o *janela* parâmetro. Para obter mais informações sobre a criação de painéis de tarefas personalizados, consulte [visão geral de painéis de tarefas personalizados](../vsto/custom-task-panes.md).  
-  
- Para uma explicação passo a passo que demonstre como criar um painel de tarefas para cada mensagem de email é aberto, consulte [passo a passo: exibir painéis de tarefas personalizada com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
-  
-### <a name="outlook-events"></a>Eventos do Outlook  
- Para monitorar o estado do windows Explorer, você pode manipular os eventos relacionados ao Pesquisador de objetos a seguir:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   

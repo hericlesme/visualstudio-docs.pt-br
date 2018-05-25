@@ -1,7 +1,7 @@
 ---
 title: Depuração remota no Visual Studio | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422714c1180ef94d32d8d323c796ed2c84258bf3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debugging"></a>Depuração remota
 Você pode depurar um aplicativo do Visual Studio que foi implantado em um computador diferente. Para fazer isso, você deve usar o depurador remoto do Visual Studio.
@@ -47,22 +47,63 @@ Se você apenas deseja baixar e instalar o depurador remoto e não é necessári
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
+## <a name="unblock_msvsmon"></a> Desbloquear o download das ferramentas remotas no Windows Server
+
+As configurações de segurança padrão no Internet Explorer no Windows Server podem ser demorado fazer o download de componentes, como as ferramentas remotas.
+
+* Configuração de segurança reforçada está habilitada no Internet Explorer, que impede que você abrir sites e acessar recursos da web, a menos que o domínio que contém o recurso seja explicitamente permitido (isto é, confiável).
+
+* No Windows Server 2016, uma configuração padrão **opções da Internet** > **segurança** > **Internet**  >   **Nível personalizado** > **Downloads** também desabilita downloads de arquivos. Se você optar por baixar as ferramentas remotas diretamente no Windows Server, você deve habilitar o download do arquivo.
+
+Para baixar as ferramentas no Windows Server, recomendamos o seguinte:
+
+* Baixar as ferramentas remotas em um computador diferente, como a um Visual Studio em execução e, em seguida, copie o *.exe* arquivo para o Windows Server.
+
+* Executar o depurador remoto [de um compartilhamento de arquivo](#fileshare_msvsmon) no seu computador do Visual Studio.
+
+* Baixe as ferramentas remotas diretamente no Windows Server e aceitar as solicitações para adicionar sites confiáveis. Sites modernos geralmente incluem muitos recursos de terceiros, para que isso pode resultar em uma grande quantidade de solicitações. Além disso, todos os links redirecionados precisará ser adicionado manualmente. Você pode optar por adicionar alguns dos sites confiáveis antes de iniciar o download. Vá para **opções da Internet > Segurança > Sites confiáveis > Sites** e adicione os seguintes sites.
+
+  * visualstudio.com
+  * download.visualstudio.microsoft.com
+  * sobre: em branco
+
+  Para versões mais antigas do depurador no my.visualstudio.com, adicione esses sites adicionais para certificar-se de que o logon for bem-sucedido:
+
+  * microsoft.com
+  * go.microsoft.com
+  * download.microsoft.com
+  * My.VisualStudio.com
+  * login.microsoftonline.com
+  * login.Live.com
+  * Secure.aadcdn.microsoftonline p.com
+  * msft.STS.microsoft.com
+  * AUTH.GFX.MS
+  * app.vssps.visualstudio.com
+  * vlscppe.microsoft.com
+  * Query.prod.cms.RT.microsoft.com
+
+    Se você optar por adicionar esses domínios ao baixar as ferramentas remotas, escolha **adicionar** quando solicitado.
+
+    ![Caixa de diálogo de conteúdo bloqueado](../debugger/media/remotedbg-blocked-content.png)
+
+    Quando você baixar o software, você obtém algumas solicitações adicionais para conceder permissão para carregar vários scripts do site da web e recursos. Em my.visualstudio.com, recomendamos que você adicione os domínios adicionais para certificar-se de que o logon for bem-sucedido.
+
 ### <a name="fileshare_msvsmon"></a> (Opcional) Para executar o depurador remoto de um compartilhamento de arquivo
 
-Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com Visual Studio Community, Professional ou Enterprise já instalado. Para alguns cenários, a maneira mais fácil de configurar a depuração remota é executar o depurador remoto (msvsmon.exe) de um compartilhamento de arquivos. Para limitações de uso, consulte a página de Ajuda do depurador remoto (**Ajuda > uso** no depurador remoto).
+Você pode encontrar o depurador remoto (*msvsmon.exe*) em um computador com Visual Studio Community, Professional ou Enterprise já instalado. Para alguns cenários, a maneira mais fácil de configurar a depuração remota é executar o depurador remoto (msvsmon.exe) de um compartilhamento de arquivos. Para limitações de uso, consulte a página de Ajuda do depurador remoto (**Ajuda > uso** no depurador remoto).
 
-1. Localizar **msvsmon.exe** no diretório correspondente de sua versão do Visual Studio. Para o Visual Studio Enterprise 2017:
+1. Localizar *msvsmon.exe* no diretório correspondente de sua versão do Visual Studio. Para o Visual Studio Enterprise 2017:
 
-      **Programa arquivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      *Programa arquivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
       
-      **Programa arquivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      *Programa arquivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. Compartilhamento de **depurador remoto** pasta no computador do Visual Studio.
 
-3. No computador remoto, execute **msvsmon.exe**. Siga o [instruções de instalação](#bkmk_setup).
+3. No computador remoto, execute *msvsmon.exe*. Siga o [instruções de instalação](#bkmk_setup).
 
 > [!TIP] 
-> Para instalação de linha de comando e referência de linha de comando, consulte a página de ajuda para **msvsmon.exe** digitando ``msvsmon.exe /?`` na linha de comando no computador com Visual Studio instalado (ou vá para **Ajuda > uso**do depurador remoto).
+> Para instalação de linha de comando e referência de linha de comando, consulte a página de ajuda para *msvsmon.exe* digitando ``msvsmon.exe /?`` na linha de comando no computador com Visual Studio instalado (ou vá para **Ajuda > uso**do depurador remoto).
   
 ## <a name="requirements_msvsmon"></a> Requisitos
 

@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4feb40ba843da5c3f2e5f7de9b8d554debf6fcc6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Como: Obter uma visão geral de um conjunto de esquema usando a exibição do gráfico
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Como: obter uma visão geral de um esquema definido usando o modo de exibição de gráfico
 
 Este tópico descreve como usar o [exibição de gráfico](../xml-tools/graph-view.md) para ver uma exibição de alto nível de nós em um conjunto de esquema e as relações entre os nós.
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para criar um novo arquivo XSD e exibir o elemento raiz no modo do modelo de conteúdo
 
-1.  Crie um novo arquivo de esquema XML e salve o arquivo como Relationships.xsd.
+1.  Criar um novo arquivo de esquema XML e salve o arquivo como *Relationships.xsd*.
 
 2.  Clique o **Use o Editor de XML para exibir e editar o arquivo de esquema XML subjacente** link no modo de exibição de iniciar.
 
@@ -30,9 +30,9 @@ Este tópico descreve como usar o [exibição de gráfico](../xml-tools/graph-vi
 
 4.  Clique em qualquer lugar no Editor de XML e selecione **Designer de exibição**.
 
-5.  Selecione o modo de gráfico da barra de ferramentas XSD.
+5.  Selecione o modo de exibição de gráfico do **barra de ferramentas XSD**.
 
-6.  Selecione **esquema definido** nó no XML Schema Explorer e arraste o nó para criar suface do modo de exibição de gráfico. Você deve ver todos os nós globais, e as setas que conectam os nós que possuem relações.
+6.  Selecione **esquema definido** nó o **XML Schema Explorer** e arraste o nó para criar suface do modo de exibição de gráfico. Você deve ver todos os nós globais, e as setas que conectam os nós que possuem relações.
 
      ![Modo de exibição de gráfico](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
 

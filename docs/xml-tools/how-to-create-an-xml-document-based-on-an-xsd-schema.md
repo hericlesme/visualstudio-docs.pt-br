@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec095bd3228eb2291f77bf9fadceb0b74d8a37
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como criar um documento XML baseado em um esquema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como: criar um documento XML com base em um esquema XSD
 
 O **gerar XML de exemplo** recurso gera um arquivo XML de exemplo com base em seu arquivo de esquema XML (XSD).
 
@@ -46,7 +46,7 @@ Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se
 
 2.  No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), com o botão direito do `PurchaseOrder` elemento global. Selecione **gerar XML de exemplo**.
 
-     Quando você selecionar essa opção, o arquivo PurchaseOrder.xml com o conteúdo XML de exemplo a seguir será gerado e aberto no Editor de XML:
+     Quando você seleciona essa opção, PurchaseOrder. *xml* arquivo com o conteúdo XML de exemplo a seguir será gerado e aberto no Editor de XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -77,4 +77,4 @@ Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trabalhando com os dados XML](../xml-tools/working-with-xml-data.md)
+- [Trabalhando com dados XML](../xml-tools/working-with-xml-data.md)
