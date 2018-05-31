@@ -18,11 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdc89faaebff31981e7cece07c8530600f32454
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447954"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Criar e exibir classes e tipos com o Designer de Classe
 
@@ -58,5 +59,5 @@ Depois de ajustar um ou mais diagramas de classe, copie-os em documentos do Micr
 
 ## <a name="see-also"></a>Consulte também
 
-- [Escrever o código no editor](../writing-code-in-the-code-and-text-editor.md)
+- [Recursos do Editor de Códigos](../writing-code-in-the-code-and-text-editor.md)
 - [Mapear as dependências nas soluções](../../modeling/map-dependencies-across-your-solutions.md)

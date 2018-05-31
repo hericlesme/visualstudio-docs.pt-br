@@ -10,24 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d194ddfb83570b4e2a5461dc70a0368215aaca5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cece8a5b97f3a9c78bdda8c5e841661d2b4d58d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335574"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de simultaneidade usando a linha de comando
 Este tópico descreve como usar ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) do .NET Framework e coletar dados de simultaneidade de thread e processo  
   
 > [!NOTE]
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para saber mais, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Enquanto o criador de perfil estiver anexado ao aplicativo, você pode pausar e retomar a coleta de dados. Para concluir uma sessão de criação de perfil, o Criador de perfil não pode mais estar anexado ao aplicativo e o Criador de perfil deve ser desligado explicitamente.  
   
-## <a name="starting-the-application-with-the-profiler"></a>Iniciar o Aplicativo com o Criador de Perfil  
+## <a name="start-the-application-with-the-profiler"></a>Iniciar o aplicativo com o criador de perfil  
  Para iniciar um aplicativo de destino do .NET Framework com o criador de perfil, use VSPerfClrEnv.exe para definir as variáveis de criação de perfil do .NET Framework. Use as opções **/start** e **/launch** do VSPerfCmd para inicializar o criador de perfil e iniciar o aplicativo. Você pode especificar **/start** e **/launch** e suas opções respectivas em uma única linha de comando. Você também pode adicionar a opção **/globaloff** à linha de comando para pausar a coleta de dados no início do aplicativo de destino. Use **/globalon** em uma linha de comando separada para começar a coletar dados.  
   
-#### <a name="to-start-an-application-with-the-profiler"></a>Para iniciar um aplicativo com o Criador de Perfil  
+#### <a name="to-start-an-application-with-the-profiler"></a>Para iniciar um aplicativo com o criador de perfil  
   
 1.  Abra uma janela do prompt de comando.  
   
@@ -67,7 +68,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
     |[/console](../profiling/console.md)|Inicia o aplicativo de destino de linha de comando em uma janela separada.|  
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|Especifica a versão do CLR (Common Language Runtime) a ser analisada quando mais de uma versão de tempo de execução for carregada em um aplicativo.|  
   
-## <a name="controlling-data-collection"></a>Controlando coleção de dados  
+## <a name="control-data-collection"></a>Controlar a coleta de dados  
  Enquanto o aplicativo de destino estiver em execução, você pode controlar a coleta de dados iniciando e parando a gravação de dados no arquivo usando as opções de VSPerfCmd.exe. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como o início ou o desligamento do aplicativo.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
@@ -80,7 +81,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) ou interrompe (**/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|  
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** começa a coletar dados para o processo especificado pela ID de processo (`PID`) ou pelo nome de processo (ProcName). **/detach** interrompe a coleta de dados para o processo especificado ou para todos os processos se nenhum processo específico for especificado.|  
   
-## <a name="ending-the-profiling-session"></a>Encerrando a sessão de criação de perfil  
+## <a name="end-the-profiling-session"></a>Encerrar a sessão de criação de perfil  
  Para encerrar uma sessão de criação de perfil, o criador de perfil não pode estar coletando dados. Você pode parar a coleta de dados de simultaneidade ao fechar o aplicativo analisado ou ao invocar a opção **VSPerfCmd /detach**. Depois, você invoca a opção **VSPerfCmd /shutdown** para desligar o criador de perfil e fechar o arquivo de dados de criação de perfil. O comando **VSPerfClrEnv /off** limpa as variáveis de ambiente da criação de perfil.  
   
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
@@ -98,4 +99,4 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
   
 ## <a name="see-also"></a>Consulte também  
- [Coleta de Dados de Simultaneidade](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)
+ [Coletar dados de simultaneidade](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)

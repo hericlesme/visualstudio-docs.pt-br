@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262901"
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Adicionando dados de interação entre camadas da linha de comando
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Adicionar dados de interação entre camadas por meio da linha de comando
 
 A criação de perfil de interação de camadas fornece informações adicionais sobre os tempos de execução síncronos que o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] chama em funções de aplicativos de várias camadas que se comunicam com um ou mais bancos de dados.
 
@@ -30,7 +31,7 @@ Para coletar dados de interação de camadas em aplicativos da área de trabalho
 
 A criação de perfil de interação de camadas pode ser coletada usando qualquer edição do Visual Studio. No entanto, os dados de criação de perfil de interação de camadas só podem ser exibidos no Visual Studio Enterprise.
 
-**Coletando dados TIP em um computador remoto**
+**Coletar dados TIP em um computador remoto**
 
 Para coletar os dados de interação de camadas em um computador remoto, você deve copiar o arquivo **vs_profiler_***\<Platform>***_***\<Language>***.exe** da pasta *%VSInstallDir%***\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
 
@@ -38,17 +39,17 @@ Para coletar os dados de interação de camadas em um computador remoto, você d
 
 Os dados de interação entre camadas só podem ser exibidos no Microsoft Visual Studio Enterprise. Os relatórios de interação de camadas baseados em arquivo por meio de [VSPerfReport](../profiling/vsperfreport.md) não estão disponíveis.
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Adicionando dados de interação de camadas com VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Adicionar dados de interação de camadas com VSPerfCmd
 
 A ferramenta de linha de comando VSPerfASPNETCmd permite acessar toda a funcionalidade disponível nas Ferramentas de Criação de Perfil. Para adicionar interação de camadas a dados de criação de perfil coletados usando VSPerfCmd, você deve usar o utilitário **VSPerfCLREnv** para definir e remover as variáveis de ambiente que permitem dados de interação de camadas. As opções que você especificar e os procedimentos necessários para coletar dados dependem do tipo de aplicativo cujo perfil está sendo criado.
 
-## <a name="profiling-stand-alone-applications"></a>Criando perfil de aplicativos autônomos
+## <a name="profile-stand-alone-applications"></a>Criar perfil de aplicativos autônomos
 
 Para adicionar dados de interação de camadas a um aplicativo que não é executado por outro processo, como um aplicativo da área de trabalho do Windows que faz chamadas do [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] síncronas para um banco de dados do SQL Server, use a opção **VSPerfClrEnv /InteractionOn** para definir as variáveis de ambiente e a opção **VSPerfClrEnv /InteractionOff** para removê-las.
 
 No exemplo a seguir, um aplicativo de área de trabalho do Windows tem o perfil criado usando o método de instrumentação e dados de interação de camadas são coletados.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Um exemplo de criação de perfil de um aplicativo da área de trabalho do Windows
+### <a name="profile-a-windows-desktop-application-example"></a>Criar perfil de um exemplo de aplicativo da área de trabalho do Windows
 
 1. Abra uma janela de prompt de comando com privilégios de administrador. Clique em **Iniciar**, aponte para **Todos os Programas** e, em seguida, aponte para **Acessórios**. Clique com o botão direito do mouse em **Prompt de Comando** e, em seguida, clique em **Executar Como Administrador**.
 
@@ -79,9 +80,9 @@ No exemplo a seguir, um aplicativo de área de trabalho do Windows tem o perfil 
     vsperfclrenv /off
     ```
 
-Para obter mais informações, consulte [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Para saber mais, confira [Criação de perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Serviços de criação de perfil
+## <a name="profile-services"></a>Serviços de perfil
 
 Para criar perfil de serviços, incluindo aplicativos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], use a opção **VSPerfClrEnv /GlobalInteractionOn** para definir as variáveis de ambiente e a opção **VSPerfClrEnv /GlobalInteractionOff** para removê-las.
 
@@ -89,7 +90,7 @@ Para criar perfil de serviços, incluindo aplicativos Web do [!INCLUDE[vstecasp]
 
 No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método de instrumentação e dados de interação de camadas são coletados.
 
-### <a name="profiling-a-windows-service-example"></a>Exemplo de criação de perfil de um serviço Windows
+### <a name="profile-a-windows-service-example"></a>Criação de perfil de um serviço do Windows
 
 1. Se necessário, instale o serviço.
 
@@ -101,7 +102,7 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
     vsperfclrenv /globaltraceon
     ```
 
-4. Inicialize as variáveis de ambiente TIP. Digite o seguinte comando
+4. Inicialize as variáveis de ambiente TIP. Digite o seguinte comando:
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -145,7 +146,7 @@ Para obter mais informações, consulte um dos seguintes tópicos:
 
 [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Adicionando dados de interação de camadas com VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Adicionar dados de interação de camadas com VSPerfASPNETCmd
 
 A ferramenta de linha de comando VSPerfASPNETCmd permite criar facilmente o perfil de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Em comparação com a ferramenta de linha de comando **VSPerfCmd**, as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Esses recursos do VSPerfASPNETCmd deixam extremamente fácil a coleta de dados de interação de camadas.
 

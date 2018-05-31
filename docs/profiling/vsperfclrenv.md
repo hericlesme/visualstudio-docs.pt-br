@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc032fc89b6dee609fa3c69ebd210aa8adefd17c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5623cfc9d6f72805e4ced489ef7a786aaad155e6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446225"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -84,7 +85,7 @@ A tabela a seguir descreve as opções de VSPerfCLREnv para criação de perfil 
 
 ## <a name="vsperfclrenv-options-for-global-profiling"></a>Opções de VSPerfCLREnv para criação de perfil global
 
-Para criar o perfil de um serviço gerenciado, como um aplicativo Web ASP .NET que é iniciado pelo sistema operacional, em vez de ser iniciado pelo usuário, use as opções de criação de perfil global das opções de VSPerfCLREnv. A tabela a seguir descreve as versões globais das opções de VSPerfCLREnv. Essas opções definem as variáveis de ambiente adequadas no Registro.
+Para criar o perfil de um serviço gerenciado, como um aplicativo Web ASP.NET que é iniciado pelo sistema operacional, em vez de ser iniciado pelo usuário, use as opções de criação de perfil global das opções de VSPerfCLREnv. A tabela a seguir descreve as versões globais das opções de VSPerfCLREnv. Essas opções definem as variáveis de ambiente adequadas no Registro.
 
 |Opção|Descrição|
 |------------|-----------------|
@@ -112,4 +113,4 @@ Se o ambiente certo não foi definido durante a criação de perfil, um aviso se
 
 ## <a name="see-also"></a>Consulte também
 
-[Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

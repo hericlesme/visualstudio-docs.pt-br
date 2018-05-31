@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a135115dc6d004e8b853822d4fc6024d5aec84
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 2cc2d1da953e0c358241a06ff99e7e47b014bd29
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269109"
 ---
 # <a name="attach"></a>Attach
 A opção **Anexar** do VSPerfCmd.exe inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).  
@@ -76,6 +77,6 @@ VSPerfCmd.exe /Attach:12345
   
 ## <a name="see-also"></a>Consulte também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Criar perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criar perfil de aplicativos Web do ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)
