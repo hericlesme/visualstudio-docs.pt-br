@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 624e66486dfd2c4e75b12cfdce1d3758ab37de60
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448331"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Instruções passo a passo: desenvolvimento de teste antes da codificação com o recurso gerar com base no uso
 
@@ -160,7 +161,7 @@ Suponha que a especificação afirme que um novo `Automobile` poderá ser coloca
 ## <a name="see-also"></a>Consulte também
 
 - [Gerar com base no uso](../ide/visual-csharp-intellisense.md#generate-from-usage)
-- [Escrever código](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Usar o IntelliSense](../ide/using-intellisense.md)
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Ações rápidas](../ide/quick-actions.md)

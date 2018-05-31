@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449134"
 ---
 # <a name="editing-python-code"></a>Editando o código do Python
 
@@ -27,7 +28,7 @@ O editor também é integrado à janela interativa no Visual Studio, tornando ma
 |---|---|
 | ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) para uma demonstração da edição do código Python (2min30s).|
 
-Para obter uma documentação geral sobre como editar o código no Visual Studio, consulte [Escrevendo código no editor de código e de texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte também [Estrutura de tópicos no Visual Studio](../ide/outlining.md), que ajuda você a manter o foco em seções específicas do código.
+Para obter uma documentação geral sobre edição do código no Visual Studio, confira [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md). Consulte também [Estrutura de tópicos no Visual Studio](../ide/outlining.md), que ajuda você a manter o foco em seções específicas do código.
 
 Também é possível usar o Pesquisador de Objetos do Visual Studio (**Exibir > Outras Janelas > Pesquisador de Objetos** ou Ctrl+W, J) para inspecionar as classes Python definidas em cada módulo e as funções definidas nessas classes.
 
@@ -82,7 +83,7 @@ Digitar @ inicia um decorador e mostra os decoradores possíveis. Muitos desses 
 
 *Visual Studio 2017 versão 15.7 e posteriores.*
 
-As "dicas de tipo" no Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/)) (python.org) são uma sintaxe de anotação para funções e classes que indicam os tipos de argumentos, valores de retorno e atributos de classe. O IntelliSense exibe dicas de tipo quando você focaliza argumentos, variáveis e chamadas de função que contêm essas anotações.
+As "dicas de tipo" no Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/)) (python.org) são uma sintaxe de anotação para funções e classes que indicam os tipos de argumentos, valores retornados e atributos de classe. O IntelliSense exibe dicas de tipo quando você focaliza argumentos, variáveis e chamadas de função que contêm essas anotações.
 
 No exemplo a seguir, a classe `Vector` é declarada como `List[float]` e a função `scale` contém dicas de tipo para seus argumentos e o valor retornado. Passar o mouse sobre uma chamada da função mostra as dicas de tipo:
 
@@ -182,7 +183,7 @@ Selecionar esse código e escolher o comando **Envolver com** exibe uma lista de
 
 ![Gerenciador de Trechos de Código](media/code-editing-code-snippets-manager.png)
 
-Para criar seus próprios trechos de código, consulte [Passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md).
+Para criar seus próprios trechos de código, consulte [Passo a passo: criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 Se você escrever um ótimo trecho de código que gostaria de compartilhar, fique à vontade para postá-lo em linhas gerais e [contar para nós](https://github.com/Microsoft/PTVS/issues). Talvez possamos incluí-lo em uma versão futura do Visual Studio.
 

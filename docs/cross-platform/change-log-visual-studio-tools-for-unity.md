@@ -1,7 +1,7 @@
 ---
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,53 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266070"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="3701"></a>3.7.0.1
+ Lançado em 2018-05-07
+
+### <a name="bug-fixes"></a>Correções de bug
+
+-   **Instalador:**
+
+    -   Correção de problema de dependência ao usar builds experimentais.
+
+## <a name="3700"></a>3.7.0.0
+ Lançado em 2018-05-07
+
+### <a name="new-features"></a>Novos recursos
+
+-   **Depuração:**
+
+    -   Adição de suporte para depuração orquestrada (depuração de vários players/editores na mesma sessão do Visual Studio).
+    
+    -   Adição de suporte para depuração de player USB no Android.
+    
+    -   Adição de suporte para depuração de player UWP/IL2CPP.
+
+-   **Avaliação:**
+
+    -   Adição de suporte para especificadores hexadecimais.
+    
+    -   Experiência de avaliação da janela de inspeção aprimorada.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+-   **Integração:**
+
+    -   Correção do uso de configurações de exceção.
+
+-   **Geração do Projeto:**
+
+    -   Exclusão de unidades de compilação do gerenciador de pacotes da geração.
 
 ## <a name="3605"></a>3.6.0.5
  Lançado em 13/03/2018
@@ -26,7 +65,7 @@ Log de alterações de Ferramentas do Visual Studio para Unity.
 
 -   **Geração do Projeto:**
 
-    -   Foi adicionado o suporte para o gerador de projeto novo no Unity 2018.1
+    -   Adicionado o suporte para o gerador de projeto novo no Unity 2018.1.
 
 ### <a name="bug-fixes"></a>Correções de bug
 

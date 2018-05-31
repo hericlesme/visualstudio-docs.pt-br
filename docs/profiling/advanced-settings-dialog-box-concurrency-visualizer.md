@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262770"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
 Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simultânea, você pode controlar como os rastreamentos são coletados.  A caixa de diálogo tem guias para símbolos, Apenas Meu Código, buffer, filtragem, eventos CLR, marcadores, provedores e arquivos.  
@@ -65,7 +66,7 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
   
  Você pode usar a lista de nível de importância para filtrar os eventos que tenham importância ou nível ETW menor que o valor especificado.  
   
-### <a name="configuring-an-existing-provider"></a>Configurando um provedor existente  
+### <a name="configure-an-existing-provider"></a>Configurar um provedor existente  
  Para editar as configurações que estão associadas um provedor existente, selecione-o na lista e escolha o botão **Editar provedor**.  Você pode alterar as configurações de filtragem, nome e GUID.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtrar dados de marcador dos relatórios de Visualização Simultânea  

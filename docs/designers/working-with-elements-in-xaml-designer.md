@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34269184"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo no XAML, no código ou usando o XAML Designer. Este tópico descreve como trabalhar com elementos no Designer XAML no Visual Studio ou Blend for Visual Studio.
@@ -53,7 +54,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
         -   **Enviar para Trás** para enviar o elemento para a parte posterior da ordem.
 
-     Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** inferior será exibido na frente quando houver sobreposição de elementos.
+     Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** superior será exibido na frente quando houver sobreposição de elementos.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Alterando o alinhamento de um elemento
  Você pode alinhar elementos na prancheta usando comandos de menu ou arrastando os elementos para guias de alinhamento.
@@ -74,7 +75,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
      Quando as bordas estão alinhadas, um *limite de alinhamento* é exibido para indicar o alinhamento. O limite de alinhamento é exibido como uma linha vermelha tracejada. Os limites de alinhamento só são exibidos quando a opção de **ajuste a guias de alinhamento** está habilitada. Para ver uma ilustração da prancheta que mostra um limite de alinhamento, consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="changing-the-an-elements-margins"></a>Alterando as margens de um elemento
+## <a name="changing-an-elements-margins"></a>Alterar as margens de um elemento
  As margens no XAML Designer determinam o espaço vazio ao redor de um elemento na prancheta. Por exemplo, as margens especificam o espaço entre as bordas externas de um elemento e os limites de um painel `Grid` que contém o elemento. As margens também especificam o espaço entre os elementos que estão contidos em um `StackPanel`.
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Para alterar as margens de um elemento na janela Propriedades

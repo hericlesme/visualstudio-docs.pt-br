@@ -1,6 +1,6 @@
 ---
-title: Exibindo a hierarquia de chamada no Visual Studio
-ms.date: 01/10/2018
+title: Localizar chamadas para um método
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,33 +13,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f5cfc65f23924f9ee1e9203e115feae13f454b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52fdaf277d8c20801c5d48d90de472d24ab88bda
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448344"
 ---
 # <a name="view-call-hierarchy"></a>Exibir hierarquia de chamada
 
-Ao exibir a hierarquia de chamada para seu código, você pode navegar por todas as chamadas de e para um método, propriedade ou construtor selecionado. Isso permite compreender melhor como o código flui, bem como avaliar os efeitos das alterações no código. Você pode examinar vários níveis de código para exibir cadeias complexas de chamadas de método e pontos de entrada adicionais para o código. Isso permite que você explore todos os possíveis caminhos de execução.
+Ao exibir a hierarquia de chamadas para seu o código, você poderá navegar todas as chamadas de, a às vezes para, um método, propriedade ou construtor selecionado. Isso permite compreender melhor como o código flui, bem como avaliar os efeitos das alterações no código. Você pode examinar vários níveis de código para exibir cadeias complexas de chamadas de método e pontos de entrada adicionais para o código. Isso permite que você explore todos os possíveis caminhos de execução.
 
 No Visual Studio, você pode exibir uma hierarquia de chamada em tempo de design. Isso significa que você não precisa definir um ponto de interrupção e iniciar o depurador para exibir a pilha de chamadas de tempo de execução.
 
 ## <a name="use-the-call-hierarchy-window"></a>Usar a janela Hierarquia de Chamada
 
-Para exibir a janela **Hierarquia de Chamada**, clique com o botão direito do mouse no nome de um método, propriedade ou chamada de construtor e, em seguida, clique em **Exibir Hierarquia de Chamada**.
+Para exibir a janela **Hierarquia de Chamada**, clique com o botão direito no editor de código no nome de uma chamada de método, propriedade ou construtor e clique em **Exibir Hierarquia de Chamadas**.
 
-O nome do membro é exibido em um painel de modo de exibição de árvore na janela **Hierarquia de Chamada**. Se você expandir o nó membro, os subnós **Chamadas para** *nome do membro* e **Chamadas de** *nome do membro* serão exibidos. A ilustração a seguir mostra esses nós na janela **Hierarquia de Chamada**.
+O nome do membro é exibido em um painel de modo de exibição de árvore na janela **Hierarquia de Chamada**. Se você expandir o nó membro, os subnós **Chamadas para** *nome do membro* e para C++, **Chamadas de** *nome do membro* serão exibidos.
 
-![Hierarquia de Chamada com um nó aberto](../../ide/reference/media/onenode.png "OneNode")
+Para o código C++, você pode ver as chamadas de e para um membro:
+
+![Hierarquia de chamadas do código C++ no Visual Studio](media/call-hierarchy-cpp.png)
+
+Para código em C# e em Visual Basic, você pode ver as chamadas para um membro, mas não chamadas de:
+
+![Hierarquia de chamadas do código C# no Visual Studio](media/call-hierarchy-csharp.png)
 
 - Se você expandir o nó **Chamadas para**, todos os membros que chamam o membro selecionado serão exibidos.
 
-- Se você expandir o nó **Chamadas de**, todos os membros que são chamados pelo membro selecionado serão exibidos.
+- Para C++, se você expandir o nó **Chamadas de**, todos os membros que são chamados pelo membro selecionado serão exibidos.
 
-Você pode, então, expandir cada um dos membros desses subnós em nós **Chamadas para** e **Chamadas de**. Isso permite navegar pela pilha de chamadores, conforme mostrado na ilustração a seguir.
+Assim, você pode expandir cada membro que chama a fim de ver os nós **Chamadas para**, e para C++, **Chamadas de**. Isso permite navegar pela pilha de chamadores, conforme mostrado na imagem a seguir:
 
-![Hierarquia de chamada com vários nós abertos](../../ide/media/multiplenodes.png "MultipleNodes")
+![Janela da Hierarquia de chamadas com vários níveis expandidos](media/call-hierarchy-csharp-expanded.png)
 
 Para membros definidos como virtuais ou abstratos, um nó **Substitui o nome do método** é exibido. Para membros de interface, um nó **Implementa o nome do método** é exibido. Esses nós expansíveis aparecem no mesmo nível que os nós **Chamadas para** e **Chamadas de**.
 
@@ -49,12 +56,12 @@ Quando você seleciona um membro filho no painel do modo de exibição de árvor
 
 - O painel de detalhes **Hierarquia de Chamada** exibe todas as linhas de código em que esse membro filho é chamado pelo membro pai.
 
-- A **Janela de Definição de Código**, se estiver aberta, exibe o código do membro selecionado (apenas C++). Para obter mais informações sobre a janela, consulte [Exibindo a estrutura do código](../../ide/viewing-the-structure-of-code.md).
+- A janela de **Definição de Código**, se estiver aberta, exibe o código do membro selecionado (apenas C++). Para saber mais sobre essa janela, confira [Exibir a estrutura do código](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> O recurso Hierarquia de Chamada não encontra referências do grupo ao método, que incluem os locais a que um método é adicionado como manipulador de eventos ou é atribuído a um delegado. Para localizar todas as referências a um método, você pode usar o comando **Localizar Todas as Referências**.
+> O recurso **Hierarquia de Chamadas** não encontra referências do grupo ao método, que incluem os locais a que um método é adicionado como manipulador de eventos ou é atribuído a um representante. Para localizar todas as referências a um método, você pode usar o comando **Localizar Todas as Referências**.
 
-### <a name="shortcut-menu-items"></a>Itens do menu de atalho
+## <a name="shortcut-menu-items"></a>Itens do menu de atalho
 
 A tabela a seguir descreve várias opções de menu de atalho que são disponibilizadas quando você clica com o botão direito do mouse em um nó no painel do modo de exibição de árvore.
 
