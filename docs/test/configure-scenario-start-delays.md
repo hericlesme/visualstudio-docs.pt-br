@@ -1,5 +1,5 @@
 ---
-title: Configurar atrasos de início de cenário para testes de carga no Visual Studio
+title: Configurar atrasos de início de cenário para testes de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448474"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurar atrasos de início de cenário em testes de carga
 
@@ -72,11 +73,11 @@ A propriedade **Desabilitar durante Aquecimento** é definida usando a janela Pr
 
      O **Editor de Teste de Carga** é exibido. A árvore do teste de carga é exibida.
 
-2. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você deseja especificar os agentes a serem usados.
+2. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você quer alterar o comportamento de aquecimento.
 
 3. No menu **Exibir**, selecione **Janela de Propriedades**.
 
-     As categorias e as propriedades do cenário são exibidas na janela Propriedades.
+     As categorias e as propriedades do cenário são exibidas na janela **Propriedades**.
 
      Na propriedade **Desabilitar durante aquecimento**, selecione **Verdadeiro** ou **Falso**.
 

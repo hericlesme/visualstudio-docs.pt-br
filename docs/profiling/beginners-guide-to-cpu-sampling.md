@@ -16,13 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee85f9946e16b0ecaafa196e1b197304ccde3bd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267943"
 ---
-# <a name="beginners-guide-to-cpu-sampling"></a>Guia do Iniciante para amostragem de CPU
+# <a name="beginners-guide-to-cpu-sampling"></a>Guia do iniciante para amostragem de CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.
 
 > [!NOTE]
@@ -32,10 +33,10 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
   
  Em intervalos especificados, o método de **Amostragem** coleta informações sobre as funções que estão em execução em seu aplicativo. Depois de concluir uma execução de criação de perfil, a exibição **Resumo** dos dados de criação de perfil mostra a árvore de chamadas de função mais ativa, chamada de **Afunilamento**, em que foi executada a maior parte do trabalho no aplicativo. A exibição também lista as funções que executaram o trabalho mais individual e fornece um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem.  
   
- Se a **Amostragem** não fornecer os dados que você precisa, outros métodos de coleção das ferramentas de criação de perfil fornecem diferentes tipos de informações que poderão ser úteis. Para obter mais informações sobre esses outros métodos, consulte [How to: Choose Collection Method](../profiling/how-to-choose-collection-methods.md) (Instruções: escolher métodos de coleta).  
+ Se a **Amostragem** não fornecer os dados que você precisa, outros métodos de coleção das ferramentas de criação de perfil fornecem diferentes tipos de informações que poderão ser úteis. Para saber mais sobre esses outros métodos, veja [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Ao analisar o código que chama as funções do Windows, você deverá verificar se tem os arquivos .pdb mais recentes. Sem esses arquivos, as exibições de relatório listarão nomes de funções do Windows criptografadas e difíceis de entender. Para obter mais informações de como verificar se você tem os arquivos necessários, consulte [How to: Reference Windows Symbol Information](../profiling/how-to-reference-windows-symbol-information.md) (Instruções: informações sobre símbolos do Windows de referência).  
+>  Ao analisar o código que chama as funções do Windows, você deverá verificar se tem os arquivos .pdb mais recentes. Sem esses arquivos, as exibições de relatório listarão nomes de funções do Windows criptografadas e difíceis de entender. Para saber mais de como verificar se você tem os arquivos necessários, veja [Como consultar informações sobre símbolos do Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ##  <a name="Step1"></a> Criar e executar uma sessão de desempenho  
  Para obter os dados que precisa analisar, você deve primeiro criar uma sessão de desempenho e, em seguida, executar a sessão. O **Assistente de Desempenho** permite executar esses dois procedimentos.  
@@ -68,7 +69,7 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
   
  Recomendamos que você comece a analisar os dados examinando o **Afunilamento** e, em seguida, a lista de funções que estão fazendo a maior parte do trabalho e, finalmente, se concentrando em outras funções usando o **Linha do Tempo de Resumo**. Você também pode exibir sugestões e avisos de criação de perfil na janela **Lista de Erros**.  
   
- Lembre-se de que o método de amostragem pode não oferecer as informações que você precisa. Por exemplo, as amostras somente são coletadas quando o aplicativo está executando o código de modo de usuário. Portanto, algumas funcionalidades, como operações de entrada e saída, não são capturadas pela amostragem. As Ferramentas de Criação de Perfil fornecem vários métodos de coleta que podem permitir que você se concentre nos dados mais importantes. Para obter mais informações sobre os outros métodos, consulte [How to: Choose Collection Methods](../profiling/how-to-choose-collection-methods.md) (Instruções: escolher métodos de coleta).  
+ Lembre-se de que o método de amostragem pode não oferecer as informações que você precisa. Por exemplo, as amostras somente são coletadas quando o aplicativo está executando o código de modo de usuário. Portanto, algumas funcionalidades, como operações de entrada e saída, não são capturadas pela amostragem. As Ferramentas de Criação de Perfil fornecem vários métodos de coleta que podem permitir que você se concentre nos dados mais importantes. Para saber mais sobre os outros métodos, veja [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md).  
   
  Cada área enumerada na figura está relacionada a uma etapa do procedimento.  
   
@@ -121,7 +122,7 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
   
 4.  Depois que você executar novamente a sessão, outro arquivo de dados será adicionado à pasta **Relatórios** da sessão no **Gerenciador de Desempenho**. Selecione tanto os dados de criação perfil originais quanto os novos, clique com o botão direito do mouse na seleção e, em seguida, clique em **Comparar Relatórios de Desempenho**.  
   
-     Uma nova janela de relatório é aberta, exibindo os resultados da comparação. Para obter mais informações sobre como usar a exibição de comparação, consulte [How to: Compare Performance Data Files](../profiling/how-to-compare-performance-data-files.md) (Instruções: comparar arquivos de dados de desempenho).
+     Uma nova janela de relatório é aberta, exibindo os resultados da comparação. Para saber mais sobre como usar a exibição de comparação, veja [Como comparar arquivos de dados de desempenho](../profiling/how-to-compare-performance-data-files.md).
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)   

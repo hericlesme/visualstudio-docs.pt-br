@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 860449ea4bd4d8aa3ea6c36ab7ff3572c2679488
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264425"
 ---
-# <a name="blocking-time-profile-report"></a>Bloqueando relatório de perfil de tempo
+# <a name="blocking-time-profile-report"></a>Relatório de perfil de tempo de bloqueio
 Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilhas de chamadas específicas para cada categoria de bloqueio (por exemplo, "E/S" ou "Sincronização"). O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias de preempção. Para criar o relatório do perfil de bloqueio, a ferramenta coleta chamadas à API de bloqueio e acumula-as em uma árvore de pilhas de chamadas. Dados mostrados nesses relatórios variam pelo intervalo de tempo atual, por threads ocultos e os dois filtros a seguir que podem ser aplicados:  
   
 -   Se Apenas Meu Código for selecionado, serão apresentados somente os registros de ativação com código do usuário, mais um nível abaixo do código de usuário.  
@@ -34,30 +35,30 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
   
 |Nome da coluna|Descrição|  
 |-----------------|-----------------|  
-|Nome|O nome da função para cada nível da pilha de chamadas.|  
-|Instâncias|O número de instâncias da chamada de bloqueio para o período de tempo visível.|  
-|Tempo de bloqueio inclusivo|O tempo total de bloqueio gasto para todas as pilhas acumuladas para esse nível de árvore de pilha de chamadas. O número inclusivo é a soma do tempo de bloqueio exclusivo para essa função e o tempo de bloqueio exclusivo para todos os nós filho.|  
-|Tempo de bloqueio exclusivo|O tempo total de bloqueio gasto durante o qual essa função é o nível mais baixo da pilha de chamadas. Uma entrada da pilha de chamadas exclusiva que tem um alto tempo de bloqueio exclusivo pode ser uma função de interesse.|  
-|Categoria de API/espera|Mostrado somente para funções do nível mais baixo da pilha de chamadas. Quando a assinatura da chamada de bloqueio é reconhecida, o nome da API do bloqueio é fornecido. Se a assinatura não for reconhecida, as informações relatadas pelo kernel serão fornecidas.|  
-|Detalhes|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|  
+|**Nome**|O nome da função para cada nível da pilha de chamadas.|  
+|**Instâncias**|O número de instâncias da chamada de bloqueio para o período de tempo visível.|  
+|**Tempo de Bloqueio Inclusivo**|O tempo total de bloqueio gasto para todas as pilhas acumuladas para esse nível de árvore de pilha de chamadas. O número inclusivo é a soma do tempo de bloqueio exclusivo para essa função e o tempo de bloqueio exclusivo para todos os nós filho.|  
+|**Tempo de bloqueio exclusivo**|O tempo total de bloqueio gasto durante o qual essa função é o nível mais baixo da pilha de chamadas. Uma entrada da pilha de chamadas exclusiva que tem um alto tempo de bloqueio exclusivo pode ser uma função de interesse.|  
+|**Categoria de API/Espera**|Mostrado somente para funções do nível mais baixo da pilha de chamadas. Quando a assinatura da chamada de bloqueio é reconhecida, o nome da API do bloqueio é fornecido. Se a assinatura não for reconhecida, as informações relatadas pelo kernel serão fornecidas.|  
+|**Detalhes**|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|  
   
 ### <a name="synchronization"></a>Sincronização  
- O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de sincronização](../profiling/synchronization-time.md)  
+ O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, confira [Tempo de sincronização](../profiling/synchronization-time.md)  
   
 ### <a name="sleep"></a>Sleep  
- O relatório de Suspensão mostra as chamadas responsáveis pelo tempo de bloqueio atribuído ao tempo gasto em suspensão e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de suspensão](../profiling/sleep-time.md).  
+ O relatório de Suspensão mostra as chamadas responsáveis pelo tempo de bloqueio atribuído ao tempo gasto em suspensão e os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, confira [Tempo de suspensão](../profiling/sleep-time.md).  
   
 ### <a name="io"></a>E/S  
- O relatório de E/S mostra as chamadas responsáveis por segmentos que estão bloqueando E/S e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de E/S (Exibição Threads)](../profiling/i-o-time-threads-view.md).  
+ O relatório de E/S mostra as chamadas responsáveis por segmentos que estão bloqueando E/S e os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, veja [Tempo de E/S (exibição de threads)](../profiling/i-o-time-threads-view.md).  
   
 ### <a name="memory-management"></a>Gerenciamento de memória  
- O relatório de Gerenciamento de Memória mostra as chamadas responsáveis por segmentos que estão bloqueando operações de gerenciamento na memória e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de gerenciamento de memória](../profiling/memory-management-time.md).  
+ O relatório de Gerenciamento de Memória mostra as chamadas responsáveis por segmentos que estão bloqueando operações de gerenciamento na memória e os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, confira [Tempo de gerenciamento de memória](../profiling/memory-management-time.md).  
   
 ### <a name="preemption"></a>Preempção  
- O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias.  Você pode expandir cada processo para exibir os threads específicos que substituíram threads no processo atual e exibir uma divisão de instâncias de preempção por thread. Esse relatório de bloqueio é menos acionável que outros porque preempção normalmente é imposta sobre seu processo pelo sistema operacional e não por um problema no seu código. Para obter mais informações, consulte [Tempo de preempção](../profiling/preemption-time.md).  
+ O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias.  Você pode expandir cada processo para exibir os threads específicos que substituíram threads no processo atual e exibir uma divisão de instâncias de preempção por thread. Esse relatório de bloqueio é menos acionável que outros porque preempção normalmente é imposta sobre seu processo pelo sistema operacional e não por um problema no seu código. Para saber mais, confira [Tempo de preempção](../profiling/preemption-time.md).  
   
 ### <a name="ui-processing"></a>Processamento de interface do usuário  
- O relatório de Processamento de interface do usuário mostra as chamadas responsáveis por bloquear segmentos que estão bloqueando em blocos de processamento de interface do usuário e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de processamento de interface do usuário](../profiling/ui-processing-time.md).  
+ O relatório de Processamento de interface do usuário mostra as chamadas responsáveis por bloquear segmentos que estão bloqueando em blocos de processamento de interface do usuário e os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, confira [Tempo de processamento de interface do usuário](../profiling/ui-processing-time.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+ [Exibição de threads](../profiling/threads-view-parallel-performance.md)

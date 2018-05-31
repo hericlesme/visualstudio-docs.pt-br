@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448409"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 A ferramenta **VSPerfCmd.exe** é usada para iniciar e interromper a coleta de dados de desempenho. Ela usa a seguinte sintaxe:  
@@ -54,7 +55,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn e ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Pausa a criação de perfil do thread especificado. Use **ThreadOff** apenas ao criar um perfil com o método de instrumentação.|  
 |[Mark](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Insere uma marca no arquivo de dados de criação de perfil, com texto opcional.|  
   
-## <a name="sampling-method-options"></a>Opções do método de amostragem  
+## <a name="sample-method-options"></a>Opções do método de amostragem  
  As opções a seguir só estarão disponíveis quando você estiver usando o método de criação de perfil de amostragem.  
   
 |Opção|Descrição|  
@@ -66,7 +67,7 @@ VSPerfCmd [/U] [/options]
 |[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Para a criação de perfil dos processos especificados. Os processos podem ser identificados pela id do processo ou pelo nome do processo. Se nenhum processo for especificado, a criação de perfil será interrompida para todos os processos.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Coleta dados de alocação de memória e de tempo de vida do objeto .NET. Use somente com a opção **VSPerfCmdLaunch**.|  
   
-### <a name="sampling-interval-options"></a>Opções do intervalo de amostragem  
+### <a name="sample-interval-options"></a>Opções do intervalo de amostragem  
  As opções a seguir especificam o tipo e a duração dos intervalos de amostragem. O padrão é **Timer**. Você também pode especificar um contador de CPU como o intervalo usando a opção **Counter**. Essas opções só podem ser especificadas com **Launch** ou com o primeiro **Attach** de uma sessão de criação de perfil.  
   
 |Opção|Descrição|  

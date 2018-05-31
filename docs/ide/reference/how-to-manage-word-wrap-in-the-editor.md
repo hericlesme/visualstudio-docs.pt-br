@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08fe7ac16eff2c7ebf398b0483034a324eb02d91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 36945273c58211865eccf464d810fb276598b665
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447982"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Como gerenciar a quebra de texto no Editor
 
@@ -52,4 +53,4 @@ ms.lasthandoff: 04/26/2018
 
 - [Personalizando o editor](../../ide/customizing-the-editor.md)
 - [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
-- [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)
