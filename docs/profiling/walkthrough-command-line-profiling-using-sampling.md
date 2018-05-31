@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criação de perfil de linha de comando usando amostragem | Microsoft Docs'
+title: 'Passo a passo: criação de perfil de linha de comando usando amostragem | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446537"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Instruções passo a passo: criação de perfil de linha de comando usando amostragem
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: criação de perfil de linha de comando usando amostragem
 
 Este passo a passo demonstra como criar um perfil de um aplicativo usando ferramentas de linha de comando e amostragem para identificar problemas de desempenho.
 
@@ -101,7 +102,7 @@ A amostragem é um método de criação de perfil pelo qual um processo específ
 ## <a name="see-also"></a>Consulte também
 
 [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)  
-[Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)  
+[Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
 [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)  
 [Exibições de relatório de desempenho](../profiling/performance-report-views.md)

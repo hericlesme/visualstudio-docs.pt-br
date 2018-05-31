@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41e41b4448bcec34a24464f4f62e85d0765436d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267796"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analisar o uso de rede em aplicativos UWP
 A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as operações de rede executadas usando a [API Windows.Web.Http](/uwp/api/windows.web.http). Analisar os dados pode ajudar a resolver problemas, como problemas de autenticação e acesso, uso incorreto de cache e exibição ruim e desempenho de download.  
@@ -24,12 +25,12 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 > [!NOTE]
 >  Para obter uma descrição mais completa da ferramenta de rede, consulte [Introducing Visual Studio's network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx) (Apresentando a ferramenta de rede do Visual Studio).  
   
-## <a name="collecting-network-tool-data"></a>Coleta de dados da ferramenta de rede  
+## <a name="collect-network-tool-data"></a>Coletar dados da ferramenta de rede  
  Você deve executar a ferramenta de **rede** com um projeto aberto do Visual Studio no computador do Visual Studio.  
   
 1.  Abra o projeto no Visual Studio.  
   
-2.  No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha **Rede**, **Iniciar**.  
+2.  No menu, clique em **Depurar/Criador de Perfil de Desempenho**. Escolha **Rede**, **Iniciar**.  
   
 3.  A ferramenta de rede começa coletando o tráfego HTTP do seu aplicativo.  
   
@@ -37,11 +38,11 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
   
 4.  Selecione **Parar** para fechar o aplicativo.  
   
- A janela de relatório deve ser semelhante a:  
+ A janela de relatório deve ser semelhante a essa:  
   
  ![A janela de rede](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>Análise de dados  
+## <a name="analyze-data"></a>Analisar dados  
  Você pode analisar o tráfego HTTP capturado enquanto o aplicativo é executado ou mesmo depois que o aplicativo foi fechado, selecionando qualquer uma das operações de rede exibidas no modo de exibição de resumo.  
   
  A exibição de resumo da **rede** mostra dados para cada operação de rede na execução do seu aplicativo. Escolha um cabeçalho de coluna para classificar a lista ou escolha os tipos de conteúdo para exibir na exibição de filtro **Tipo de conteúdo**.  
@@ -74,6 +75,6 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 ## <a name="see-also"></a>Consulte também  
  [Executar Ferramentas de Criação de Perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Blog do Visual Studio: apresentando o inspetor de rede do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Channel 9 Video: VS Diagnostics tools - New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Vídeo do Channel 9: ferramentas de diagnóstico do VS – novo criador de perfil de rede)  
+ [Channel 9 Video: VS Diagnostics tools - New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Vídeo do Channel 9: Ferramentas de diagnóstico do VS – novo criador de perfil de rede)  
  [Criação de perfis no Visual Studio](../profiling/index.md)  
  [Tour pelos recursos de criação de perfil](../profiling/profiling-feature-tour.md)

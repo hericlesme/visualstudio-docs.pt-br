@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Usar APIs do criador de perfil | Microsoft Docs'
+title: 'Passo a passo: usar APIs do criador de perfil | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448916"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Instruções passo a passo: usando APIs do criador de perfil
+# <a name="walkthrough-using-profiler-apis"></a>Passo a passo: usar APIs do criador de perfil
 O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Você usará as APIs do criador de perfil para limitar a quantidade de dados coletados durante a criação de perfil de instrumentação.  
   
  As etapas neste passo a passo geralmente se aplicam a um aplicativo C/C++. Para cada idioma, você precisará configurar o ambiente de compilação adequadamente.  
@@ -51,7 +52,7 @@ DataCollection.CurrentId);
   
  Você pode desativar a coleta de dados na linha de comando sem o uso de uma chamada de API. As etapas a seguir pressupõem que o ambiente de compilação de linha de comando está configurado para executar as ferramentas de criação de perfil e como suas ferramentas de desenvolvimento. Isso inclui as configurações necessárias para VSInstr e VSPerfCmd. Confira as Ferramentas de criação de perfil de linha de comando.  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>Limitação da coleta de dados usando APIs do criador de perfil  
+## <a name="limit-data-collection-using-profiler-apis"></a>Limitar a coleta de dados usando APIs do criador de perfil  
   
 #### <a name="to-create-the-code-to-profile"></a>Para criar o código para o perfil  
   
@@ -163,4 +164,4 @@ DataCollection.CurrentId);
  <xref:Microsoft.VisualStudio.Profiler>   
  [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Introdução](../profiling/getting-started-with-performance-tools.md)   
- [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Criar perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

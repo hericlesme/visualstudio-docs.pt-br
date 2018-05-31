@@ -19,25 +19,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34446687"
 ---
-# <a name="encodings-and-line-breaks"></a>Codificações e quebras de linha
+# <a name="encodings-and-line-endings"></a>Codificações e términos de linha
 
 Os seguintes caracteres são interpretados como quebras de linha no Visual Studio:
 
--   CR LF: retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A
+- CR LF: retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A
 
--   LF: alimentação de linha, caractere Unicode 000A
+- LF: alimentação de linha, caractere Unicode 000A
 
--   NEL: próxima linha, caractere Unicode 0085
+- NEL: próxima linha, caractere Unicode 0085
 
--   LS: separador de linha, caractere Unicode 2028
+- LS: separador de linha, caractere Unicode 2028
 
--   PS: separador de parágrafo, caractere Unicode 2029
+- PS: separador de parágrafo, caractere Unicode 2029
 
 O texto copiado de outros aplicativos mantém a codificação original e os caracteres de quebra de linha. Por exemplo, quando você copia texto do Bloco de notas e o cola em um arquivo de texto no Visual Studio, o texto tem as mesmas configurações que ele tinha no Bloco de notas.
 
@@ -56,4 +57,4 @@ Você pode usar a caixa de diálogo **Arquivo** > **Opções de Salvamento Avan�
 
 ## <a name="see-also"></a>Consulte também
 
-- [Escrevendo código no editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)

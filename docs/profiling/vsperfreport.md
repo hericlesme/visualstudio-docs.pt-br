@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448068"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Ferramenta de linha de comando VSPerfReport é usada para criar relatórios usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ferramentas de criação de perfil de arquivos de dados de criação de perfil. O formato de relatório padrão é um arquivo .csv.  
@@ -42,10 +43,10 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
  `vspfilename1 and vspfilename2` devem ser arquivos .vsp ou .vsps válidos.  
   
-## <a name="symbol-files"></a>Arquivos de Símbolo  
+## <a name="symbol-files"></a>Arquivos de símbolo  
  Para exibir informações de símbolo como nomes de função e números de linha, o VSPerfReport necessita de acesso aos arquivos de símbolo (.PDB) dos componentes analisados e aos arquivos de símbolo do Windows. Para saber mais, confira [Como especificar locais de arquivos de símbolo na linha de comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
-## <a name="general-report-options"></a>Opções de Relatório Geral  
+## <a name="general-report-options"></a>Opções de relatório geral  
  A tabela a seguir descreve o opções e as opções que selecionar os dados a serem relatados de formatação do relatório geral.  
   
 |Opções|Descrição|  
@@ -79,7 +80,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**Thread:**[*threadid*]|Mostra apenas os dados do thread especificado.|  
 |**Thread:**[*threadid,processid*]|Mostra apenas os dados do thread especificado associado ao processo especificado.|  
   
-## <a name="difference-report-options"></a>Opções de Relatório de Diferença  
+## <a name="difference-report-options"></a>Opções de relatório de diferenças  
  A tabela a seguir descreve as opções para comparar arquivos de relatório.  
   
 |Opções|Descrição|  

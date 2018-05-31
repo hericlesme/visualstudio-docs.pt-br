@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82ceb7879fcfca709ff6e94de81ae76ef908e07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265962"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analisar o uso de memória do JavaScript em aplicativos UWP
 O analisador de memória do JavaScript está disponível no Visual Studio para ajudar você a entender o uso de memória e a localizar vazamentos de memória em seus aplicativos UWP compilados para o Windows usando JavaScript. Os aplicativos com suporte incluem aplicativos para Aplicativos Universais do Windows.
@@ -50,7 +51,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
 2.  Se estiver executando o aplicativo pelo Visual Studio, na lista **Iniciar Depuração** na barra de ferramentas **Padrão**, escolha o destino de depuração do seu projeto: **Máquina Local** ou **Dispositivo**.  
   
-3.  Na barra de menus, escolha **Depurar**, **Criador de Perfil de Desempenho...**.  
+3.  Na barra de menus, escolha **Depurar** > **Criador de Perfil de Desempenho**.  
   
      Por padrão, o projeto de inicialização atual é analisado. Se desejar alterar o destino da análise, escolha **Alterar Destino**.  
   
@@ -164,7 +165,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 14. Se houver muitos objetos na exibição de objetos restantes, tente isolar ainda mais o período no qual o vazamento de memória está ocorrendo e tire novamente mais três instantâneos. Para isolar ainda mais a perda de memória, use [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands), [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands) e outros dados de uso de memória disponíveis no analisador de memória.  
   
 ##  <a name="LiveMemory"></a> Exibir resumo do uso de memória em tempo real  
- A exibição do resumo do uso de memória em tempo real fornece um gráfico de uso de memória para o aplicativo em execução e uma coleção de todos os quadros de resumo de instantâneos. Nesta exibição, você pode executar tarefas básicas como obter instantâneos, analisar informações resumidas e navegar para outros modos de exibição. Quando você parar a coleta de dados, o gráfico de memória desaparecerá e você verá apenas a exibição [Ver resumo de instantâneo](#SnapshotSummary).  
+ A exibição de resumo do uso de memória em tempo real fornece um gráfico de uso de memória para o aplicativo em execução e uma coleção de todos os quadros de resumo de instantâneos. Nesta exibição, você pode executar tarefas básicas como obter instantâneos, analisar informações resumidas e navegar para outros modos de exibição. Quando você parar a coleta de dados, o gráfico de memória desaparecerá e você verá apenas a exibição [Ver resumo de instantâneo](#SnapshotSummary).  
   
  O gráfico de memória mostra uma exibição em tempo real da memória do processo do aplicativo, que inclui bytes particulares, a memória nativa e o heap de JavaScript. O gráfico de memória é uma exibição rolável da memória do processo. Veja como ela se parece:  
   
@@ -318,7 +319,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
 -   `console.takeHeapSnapshot` obtém um instantâneo de heap que aparece no analisador de memória de JavaScript. Esse comando é um dos [Comandos do Console JavaScript](../debugger/javascript-console-commands.md).  
   
--   `performance.mark` define uma marca de usuário (o triângulo invertido) que aparece na linha de tempo do gráfico de memória na exibição resumida durante a execução do aplicativo. Esse comando usa um argumento de cadeia de caracteres que descreve o evento e aparece como uma dica de ferramenta no gráfico de memória. Essa descrição não deve exceder 100 caracteres.  
+-   `performance.mark` define uma marca de usuário (o triângulo invertido) que aparece na linha do tempo do gráfico de memória na exibição resumida durante a execução do aplicativo. Esse comando usa um argumento de cadeia de caracteres que descreve o evento e aparece como uma dica de ferramenta no gráfico de memória. Essa descrição não deve exceder 100 caracteres.  
   
 > [!TIP]
 >  Use `console.takeHeapSnapshot` para acelerar a análise ao repetir cenários de uso de memória.  

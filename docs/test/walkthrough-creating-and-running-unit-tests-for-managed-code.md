@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 29472e2590a767c98c5674bce14712171f16fdbf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449254"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: criar e executar testes de unidade para código gerenciado
 
@@ -29,7 +30,7 @@ Este passo a passo orienta você pela criação, execução e personalização d
 > Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
 
 > [!NOTE]
-> Para obter informações sobre como executar testes em uma linha de comando, consulte [Passo a passo: Usar o utilitário de teste da linha de comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+> Para obter informações sobre como executar testes em uma linha de comando, consulte [Passo a passo: usar o utilitário de teste da linha de comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

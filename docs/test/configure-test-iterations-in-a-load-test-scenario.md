@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a78921ff3415203a26da570a1966e41538ac5535
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448435"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iterações de teste em um cenário de teste de carga
 
@@ -46,24 +47,24 @@ A propriedade de **Número máximo de iterações de teste** controla o número 
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Para especificar o máximo de iterações de teste
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  O Editor de Testes de Carga é exibido. A árvore do teste de carga é exibida.
+2. O Editor de Testes de Carga é exibido. A árvore do teste de carga é exibida.
 
-3.  Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você deseja especificar o número máximo de iterações de teste.
+3. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você deseja especificar o número máximo de iterações de teste.
 
-4.  No menu **Exibir**, selecione **Janela de Propriedades**.
+4. No menu **Exibir**, selecione **Janela de Propriedades**.
 
      As categorias e as propriedades do cenário são exibidas na janela Propriedades.
 
-5.  Na caixa de texto da propriedade de **Número máximo de iterações de teste**, digite um valor que indique o número máximo de testes para executar no cenário quando o teste de carga for executado.
+5. Na caixa de texto da propriedade de **Número máximo de iterações de teste**, digite um valor que indique o número máximo de testes para executar no cenário quando o teste de carga for executado.
 
     > [!NOTE]
     > Usar um valor de 0 para a propriedade de **Número máximo de iterações de teste** não especifica nenhuma iteração máxima.
 
-6.  Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Número máximo de iterações de teste**.
+6. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Número máximo de iterações de teste**.
 
-## <a name="specifying-think-times-between-test-iterations-for-a-scenario"></a>Especificando tempos de processamento entre iterações de teste para um cenário
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Especificar tempos de processamento entre iterações de teste para um cenário
 
 A propriedade de **Tempo de processamento entre iterações de teste** é definida usando a janela Propriedades para editar as propriedades do cenário de teste de carga no Editor de Teste de Carga.
 
@@ -72,21 +73,21 @@ A propriedade de **Tempo de processamento entre iterações de teste** é usada 
 > [!NOTE]
 > Para obter uma lista completa das propriedades de cenário de teste da carga e suas descrições, consulte [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
-### <a name="to-specify-the-think-times-between-test-iterations"></a>Para especificar os tempos de processamento entre iterações de teste
+### <a name="to-specify-the-think-time-between-test-iterations"></a>Para especificar o tempo de processamento entre iterações de teste
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
      O **Editor de Teste de Carga** é exibido. A árvore do teste de carga é exibida.
 
-2.  Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual deseja especificar os agentes a serem usados.
+2. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você quer especificar o tempo de processamento.
 
-3.  No menu **Exibir**, selecione **Janela de Propriedades**.
+3. No menu **Exibir**, selecione **Janela de Propriedades**.
 
      As categorias e as propriedades do cenário são exibidas na janela Propriedades.
 
-4.  O valor da propriedade **Tempo de processamento entre iterações de teste**, digite um número que represente os segundos a esperar antes de começar a próxima iteração de teste.
+4. O valor da propriedade **Tempo de processamento entre iterações de teste**, digite um número que represente os segundos a esperar antes de começar a próxima iteração de teste.
 
-5.  Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Tempo de processamento entre iterações de teste**.
+5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Tempo de processamento entre iterações de teste**.
 
 ## <a name="see-also"></a>Consulte também
 

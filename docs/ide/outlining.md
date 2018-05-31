@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62e6d5c7667bf697eeb190d69a996886fbee643f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6c8102eb2bc94785d36256fc0c5653146cc5c76
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447200"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
 
@@ -53,4 +54,4 @@ Você também pode usar o SDK do Visual Studio para definir as regiões de texto
 
 ## <a name="see-also"></a>Consulte também
 
-- [Escrever o código no editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)

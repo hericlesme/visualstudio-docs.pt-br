@@ -12,16 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262617"
 ---
-# <a name="filtering-report-views"></a>Filtrando exibições de relatório
+# <a name="filter-report-views"></a>Filtrar exibições de relatório
 Você pode aplicar filtros para arquivos de dados de criação de perfil para limitar os dados de criação de perfil que são exibidos nas exibições de Relatório de Desempenho e exportados para arquivos de relatório. Você pode limitar um relatório aos dados entre os valores de carimbo de data/hora e limitar os dados a processos e threads específicos. Você pode salvar filtros em um arquivo e, em seguida, criar um filtro em um arquivo de dados de criação de perfil diferente importando o filtro salvo.  
   
- Você também pode limitar um relatório a um segmento de tempo usando a linha de tempo gráfica na Exibição de Resumo. Consulte [Como filtrar exibições de relatório por meio da linha do tempo de resumo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Você também pode limitar um relatório a um segmento de tempo usando a linha do tempo gráfica na Exibição de Resumo. Consulte [Como filtrar exibições de relatório por meio da linha do tempo de resumo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
  Para excluir o código do sistema e de terceiros de um relatório, consulte [Como filtrar exibições de relatório de ferramentas de criação de perfil do filtro para exibir Apenas Meu Código](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
@@ -42,7 +43,6 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
     |**Operador**|Selecione o operador que especifica o relacionamento que deseja na cláusula entre o campo e o valor.<br /><br /> =    É igual a<br /><br /> <>  Não é igual a<br /><br /> <    Menor que<br /><br /> >    Maior que<br /><br /> <=  Menor ou igual a<br /><br /> >= Maior ou igual a|  
     |**Value**|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|  
   
-3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Para criar um filtro de relatório do criador de perfil na exibição de Relatório de Marcas  
   

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52dd9ccce2d7ea2aab36895c186c25ad5207de7a
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264189"
 ---
 # <a name="stopprofile"></a>StopProfile
 A função `StopProfile` define o contador como 0 (off) para o nível de criação de perfil especificado.  
@@ -44,8 +45,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  O identificador de processo ou thread gerado pelo sistema.  
   
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
- A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
+## <a name="property-valuereturn-value"></a>Valor da propriedade/valor retornado  
+ A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor retornado pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
 |----------------|-----------------|  
@@ -65,7 +66,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="net-framework-equivalent"></a>Equivalente ao .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## <a name="function-information"></a>Informações de Função  
+## <a name="function-information"></a>Informações de função  
  Cabeçalho: declarado em VSPerf.h  
   
  Biblioteca de importação: VSPerf.lib  

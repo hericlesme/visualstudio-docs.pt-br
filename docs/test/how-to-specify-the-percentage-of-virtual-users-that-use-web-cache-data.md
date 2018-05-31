@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66b6ccc1d62cdbf163a67d5c76d310f896766819
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447252"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Como especificar a porcentagem de usuários virtuais que usam dados de cache da Web
 
@@ -29,26 +30,26 @@ A propriedade **Percentual de novos usuários** afeta a maneira como o teste de 
 
 Se você estiver testando a carga de um site que tem um número significativo de usuários de retorno que provavelmente têm imagens e outros conteúdos armazenados em cache localmente, uma configuração de 100% para a propriedade de **Percentual de novos usuários** gerará mais solicitações de download do que aconteceria no uso real. Nesse caso, você deve calcular o percentual de visitas ao site que são de usuários de primeira vez do site e definir a propriedade de **Percentual de novos usuários** adequadamente.
 
-## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Para especificar os agentes a usar em um cenário
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Para especificar a porcentagem de novos usuários para um cenário
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
      O **Editor de Teste de Carga** é exibido. A árvore do teste de carga é exibida.
 
-2.  Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual deseja especificar os agentes a serem usados.
+2. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário do qual você queira alterar o novo valor de porcentagem de usuário.
 
-3.  No menu **Exibir**, selecione **Janela de Propriedades**.
+3. No menu **Exibir**, selecione **Janela de Propriedades**.
 
      As categorias e as propriedades do cenário são exibidas na janela Propriedades.
 
-4.  Defina o valor da propriedade **Percentual de novos usuários** digitando um número para o percentual de novos usuários.
+4. Defina o valor da propriedade **Percentual de Novos Usuários** digitando um número para o percentual de novos usuários.
 
-5.  Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Percentual de novos usuários**.
+5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Percentual de Novos Usuários**.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
+- [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
-- [Editando padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)

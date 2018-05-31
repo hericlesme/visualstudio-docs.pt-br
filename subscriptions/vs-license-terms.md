@@ -9,11 +9,12 @@ description: Termos de licença das assinaturas do Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454708"
 ---
 **TERMOS DE LICENÇA DE SOFTWARE DA MICROSOFT PARA AS SEGUINTES ASSINATURAS DO VISUAL STUDIO:**
 
@@ -128,7 +129,7 @@ SE VOCÊ ESTIVER EM CONFORMIDADE COM ESTES TERMOS DE LICENÇA, VOCÊ TERÁ OS DI
     (às vezes conhecido como "multiplexação" ou "pooling"), não reduz o número de nenhum tipo de licença que você precisa.
 
 
-8. **ATIVAÇÃO OBRIGATÓRIA.** A ativação associa o uso do software a um dispositivo específico. Durante a ativação, o software enviará informações sobre o dispositivo e o software à Microsoft. Essas informações incluem a versão, o idioma e a chave do produto (Product Key) do software, o endereço do protocolo IP do dispositivo e as informações extraídas da configuração de hardware do dispositivo. Para obter mais informações, consulte [microsoft.com/piracy/activation.mspx.[(http://microsoft.com/piracy/activation.mspx))] Usando o software, você autoriza a transmissão dessas informações. Antes de ativar, você terá o direito de usar a versão do software instalada durante o processo de instalação. **O direito de usar o software após o período especificado no processo de instalação é limitado, a não ser que ele seja ativado.** O motivo é impedir seu uso não licenciado. Você não poderá continuar usando o software depois desse período, se você não ativá-lo. Se o dispositivo estiver conectado à Internet, o software poderá se conectar automaticamente à Microsoft para realizar a ativação. Você também pode ativar o software manualmente pela Internet ou por telefone. Se você fizer isso, poderão ser cobradas as taxas aplicáveis do serviço de Internet e de telefone. Além disso, poderá ser necessário reativar o software se os componentes do computador ou o software forem alterados. **O software ficará exibindo um lembrete para a ativação até que você a execute.**
+8. **ATIVAÇÃO OBRIGATÓRIA.** A ativação associa o uso do software a um dispositivo específico. Durante a ativação, o software envia informações sobre o dispositivo e o software à Microsoft. Essas informações incluem a versão, o idioma e a chave do produto (Product Key) do software, o endereço do protocolo IP do dispositivo e as informações extraídas da configuração de hardware do dispositivo. Para saber mais, confira [Ativação de produto da Microsoft](https://www.microsoft.com/en-us/piracy/mpa.aspx). Usando o software, você autoriza a transmissão dessas informações. Antes de ativar, você terá o direito de usar a versão do software instalada durante o processo de instalação. **O direito de usar o software após o período especificado no processo de instalação é limitado, a não ser que ele seja ativado.** O motivo é impedir seu uso não licenciado. Você não poderá continuar usando o software depois desse período, se você não ativá-lo. Se o dispositivo estiver conectado à Internet, o software poderá se conectar automaticamente à Microsoft para realizar a ativação. Você também pode ativar o software manualmente pela Internet ou por telefone. Se você fizer isso, poderão ser cobradas as taxas aplicáveis do serviço de Internet e de telefone. Além disso, poderá ser necessário reativar o software se os componentes do computador ou o software forem alterados. **O software ficará exibindo um lembrete para a ativação até que você a execute.**
 
 9. **VALIDAÇÃO.**
 

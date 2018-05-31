@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264450"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analisar o consumo de recursos e a Atividade de Thread de Interface do Usuário (XAML)
 Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrigir problemas de desempenho relacionados à interação com o aplicativo em aplicativos XAML. Essa ferramenta ajuda a melhorar o desempenho de aplicativos XAML fornecendo uma exibição detalhada do consumo de recursos dos aplicativos. Você pode analisar o tempo gasto pelo seu aplicativo para preparar quadros de interface do usuário (layout e renderização), atender a solicitações de rede e de disco e em cenários como Inicialização de Aplicativo, Carregamento de Página e redimensionamento do Windows.  
   
- **Linha do Tempo do Aplicativo** é uma das ferramentas que você pode começar com o comando **Debug / Performance Profiler...**.  
+ **Linha do Tempo do Aplicativo** é uma das ferramentas que você pode começar com o comando **Debug** > **Performance Profiler**.  
   
  Essa ferramenta substitui a ferramenta de **Capacidade de Resposta da Interface do Usuário XAML** que fazia parte do conjunto de ferramentas de diagnóstico para o Visual Studio 2013.  
   
@@ -46,7 +47,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
   
 1.  Abra seu aplicativo XAML.  
   
-2.  Clique em **Depurar/Criador de Perfil de Desempenho...**. Você deve ver uma lista de ferramentas de criação de perfil na janela .diagsession.  
+2.  Clique em **Depurar/Criador de Perfil de Desempenho**. Você deve ver uma lista de ferramentas de criação de perfil na janela .diagsession.  
   
 3.  Selecione **Linha do tempo do aplicativo** e, em seguida, clique em **Iniciar** na parte inferior da janela.  
   
@@ -96,7 +97,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
 |||  
 |-|-|  
 |**Parsing**|Tempo gasto analisando arquivos XAML e criando objetos.<br /><br /> Expandir um nó de **Análise** em **Detalhes da linha do tempo** exibe a cadeia de dependências de todos os arquivos XAML analisados como resultado do evento raiz. Isso permitirá identificar a criação de objeto e a análise de arquivos desnecessárias em cenários sensíveis a desempenho e otimizá-los.|  
-|**Layout**|Em aplicativos grandes, milhares de elementos podem ser mostrados na tela ao mesmo tempo. Isso pode resultar em uma baixa taxa de quadros de interface do usuário e a capacidade de resposta do aplicativo correspondentemente baixa. O evento Layout determina com precisão o custo de estabelecer cada elemento (ou seja, o tempo gasto em Arrange, Measure, ApplyTemplate, ArrangeOverride e ArrangeOverride) e cria as árvores visuais que participaram de uma passagem do Layout. Você pode usar essa visualização para determinar quais das suas árvores lógicas precisam de remoção ou para avaliar outros mecanismos de adiamento para otimizar sua passagem de layout.|  
+|**Layout**|Em aplicativos grandes, milhares de elementos podem ser mostrados na tela ao mesmo tempo. Isso pode resultar em uma baixa taxa de quadros de interface do usuário e a capacidade de resposta do aplicativo correspondentemente baixa. O evento Layout determina com precisão o custo de estabelecer cada elemento (ou seja, o tempo gasto em Arrange, Measure, ApplyTemplate, ArrangeOverride e ArrangeOverride) e cria as árvores visuais que participaram de uma passagem do Layout. Você pode usar essa visualização para determinar quais das suas árvores lógicas precisam de ajustes, ou para avaliar outros mecanismos de adiamento para otimizar sua passagem de layout.|  
 |**Render**|Tempo gasto desenhando elementos XAML na tela.|  
 |**I/0**|Tempo gasto na recuperação de dados do disco local ou de recursos de rede acessados por meio da [API WinINet (Microsoft Windows Internet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Código do Aplicativo**|Tempo gasto executando código do aplicativo (usuário) que não está relacionado a análise ou layout.|  

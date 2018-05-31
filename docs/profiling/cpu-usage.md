@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 267d0a55ae648c68ed4228b3ad4a206bad1f5148
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265022"
 ---
 # <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
 Quando você precisa investigar problemas de desempenho no aplicativo, um bom começo é entender como ele usa a CPU. A ferramenta **Uso da CPU** mostra a você os momentos em que a CPU está gastando tempo executando o código do Visual C++, Visual C#/Visual Basic e JavaScript. A partir do Visual Studio 2015 Atualização 1, é possível ver um detalhamento por função do uso da CPU sem sair do depurador. É possível ativar e desativar a criação de perfil da CPU durante a depuração e exibir os resultados quando a execução é interrompida, por exemplo, em um ponto de interrupção.  
@@ -40,7 +41,7 @@ Aqui, mostramos como coletar e analisar o uso da CPU com builds de versão. Para
   
     -   Para aplicativos Windows Phone, a coleta de dados diretamente do **Dispositivo** fornece os dados mais precisos.  
   
-2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
+2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho**.  
   
 3.  Escolha **Uso da CPU** e, em seguida, **Iniciar**.  
   
@@ -56,7 +57,7 @@ Aqui, mostramos como coletar e analisar o uso da CPU com builds de versão. Para
   
  ![Relatório de CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
-## <a name="analyze-the-cpu-usage-report"></a>Analise o relatório de uso da CPU  
+## <a name="analyze-the-cpu-usage-report"></a>Analisar o relatório de uso da CPU  
   
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> A árvore de chamadas de Uso da CPU  
  Para começar a compreender as informações da árvore de chamadas, escolha novamente o segmento `GetMaxNumberButton_Click`, e veja os detalhes da árvore de chamadas.  
@@ -90,7 +91,7 @@ Aqui, mostramos como coletar e analisar o uso da CPU com builds de versão. Para
   
 |||  
 |-|-|  
-|**CPU total (%)**|![Equação de % total de dados](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> A porcentagem de atividade da CPU do aplicativo no intervalo de tempo selecionado que foi usado por chamadas para as funções e as funções chamadas pela função. Observe que isso é diferente do gráfico de linha de tempo **Utilização da CPU**, que compara a atividade total do aplicativo em um intervalo de tempo com a capacidade total disponível da CPU.|  
+|**CPU total (%)**|![Equação de % total de dados](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> A porcentagem de atividade da CPU do aplicativo no intervalo de tempo selecionado que foi usado por chamadas para as funções e as funções chamadas pela função. Observe que isso é diferente do gráfico de linha do tempo **Utilização da CPU**, que compara a atividade total do aplicativo em um intervalo de tempo com a capacidade total disponível da CPU.|  
 |**CPU própria (%)**|![Equação % própria](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> A porcentagem de atividade da CPU do aplicativo no intervalo de tempo selecionado que foi usada pelas chamadas para as funções, exceto a atividade das funções chamadas pela função.|  
 |**CPU total (ms)**|O número de milissegundos gastos em chamadas para a função no intervalo de tempo escolhido e as funções chamadas pela função.|  
 |**CPU própria (ms)**|O número de milissegundos gastos em chamadas para a função no intervalo de tempo escolhido e as funções chamadas pela função.|  
@@ -99,7 +100,7 @@ Aqui, mostramos como coletar e analisar o uso da CPU com builds de versão. Para
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funções assíncronas na árvore de chamadas de Uso da CPU  
  Quando o compilador encontra um método assíncrono, ele cria uma classe oculta para controlar a execução do método. Conceitualmente, a classe é um computador de estado que inclui uma lista de funções geradas pelo compilador que chamam as operações do método original de modo assíncrono, os retornos de chamadas, o agendador e os iteradores necessários para executá-los corretamente. Quando o método original é chamado por um método pai, o tempo de execução remove o método do contexto de execução do pai e executa os métodos da classe oculta no contexto do código do sistema e do Framework que controla a execução do aplicativo. Os métodos assíncronos são geralmente, mas nem sempre, executados em uma ou mais segmentos diferentes. Esse código é mostrado na árvore de chamadas de Uso da CPU como filhos do nó **[Código Externo]** logo abaixo do nó superior da árvore.  
   
- Para ver isso em nosso exemplo, escolha novamente o segmento `GetMaxNumberAsyncButton_Click` na linha de tempo.  
+ Para ver isso em nosso exemplo, escolha novamente o segmento `GetMaxNumberAsyncButton_Click` na linha do tempo.  
   
  ![GetMaxNumberAsyncButton&#95;Clique em seleção de relatório](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   

@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267839"
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
 
-Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem das Ferramentas de Criação de Perfil do Visual Studio. Para obter mais informações sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) no site da Microsoft.
+Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem das Ferramentas de Criação de Perfil do Visual Studio. Para obter mais informações sobre HPC, consulte [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) no site da Microsoft.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -57,7 +58,7 @@ Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 |*%FxPath%*|Caminho para o instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Na mídia de instalação do Visual Studio, o caminho é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
 |*%ProfilerPath%*|Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Na mídia de instalação do Visual Studio, o caminho é: Standalone Profiler\x64\vs_profiler.exe|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>Criação de perfil em um nó de computação HPC
+## <a name="profile-on-an-hpc-compute-node"></a>Criar perfil um nó de computação HPC
 
 Você pode configurar uma sessão de criação de perfil usando o Assistente de Desempenho HPC para especificar as informações de destino e de cluster HPC. Você pode definir outras opções nas páginas de propriedade de sessão de desempenho. As Ferramentas de Criação de Perfil implantam automaticamente os binários de destino e iniciam o criador de perfil e o aplicativo do HPC.
 
@@ -105,7 +106,7 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
 10. Clique em **Finalizar**.
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Definindo propriedades de criação de perfil HPC usando páginas de propriedade da sessão de desempenho
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Configurar as propriedades de criação de perfil HPC usando páginas de propriedade da sessão de desempenho
 
 Você pode alterar as propriedades de sessão de desempenho definidas no Assistente de criação de perfil HPC na página Propriedades de inicialização do HPC da página de propriedades de sessão de desempenho. Defina as opções adicionais na página Propriedades Avançadas do HPC.
 

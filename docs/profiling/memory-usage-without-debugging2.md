@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265718"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analisar o uso de memória sem o depurador do Visual Studio
 Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o seguinte  
@@ -35,7 +36,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
 1.  Abra um projeto universal do Windows em C# no Visual Studio.  
   
-2.  Na barra de menus, escolha **Depurar/Criador de Perfil de Desempenho...**.  
+2.  Na barra de menus, escolha **Depurar** > **Criador de Perfil de Desempenho**.  
   
 3.  Selecione **Uso de Memória** e, em seguida, escolha o botão **Iniciar** na parte inferior da página.  
   

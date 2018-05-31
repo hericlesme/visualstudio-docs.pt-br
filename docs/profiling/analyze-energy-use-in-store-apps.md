@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 187f6c7cdbbcb99d5c1ac336e922c4a2fedbb44d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336052"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analisar o uso de energia em aplicativos UWP
 O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar o consumo de energia de aplicativos UWP em dispositivos tablet de baixa capacidade executados o tempo todo ou parte do tempo usando apenas a própria bateria. Em um dispositivo alimentado por bateria, um aplicativo que consome muita energia pode causar grande insatisfação do cliente fazendo com que ele acabe desinstalando o programa. A otimização do consumo de energia pode aumentar a adoção e o uso de seu aplicativo pelos clientes.  
@@ -49,7 +50,7 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
   
  ![Marcas de usuário na linha do tempo](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
- A marca aparece como um triângulo laranja na linha de tempo no momento em que o método é executado. A mensagem e a hora são exibidas como uma dica de ferramenta quando você passa o cursor do mouse sobre a marca. Se duas ou mais marcas de usuário ficarem próximas, elas serão mescladas e os dados de dica de ferramenta serão combinados. Você pode aplicar zoom na linha de tempo para separar as marcas.  
+ A marca aparece como um triângulo laranja na linha do tempo no momento em que o método é executado. A mensagem e a hora são exibidas como uma dica de ferramenta quando você passa o cursor do mouse sobre a marca. Se duas ou mais marcas de usuário ficarem próximas, elas serão mescladas e os dados de dica de ferramenta serão combinados. Você pode aplicar zoom na linha do tempo para separar as marcas.  
   
  **Adicionar marcas a código C#, Visual Basic, C++**  
   
@@ -61,7 +62,7 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
 >  -   Windows.Foundation.Diagnostics LoggingChannel implementa a interface [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) (projetada como [System.IDisposable](/dotnet/api/system.idisposable) em C# e VB). Para evitar vazamento de recursos do sistema operacional, chame [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) em C# e VB) quando tiver terminado com um canal de registro em log.  
 > -   Cada canal de registro em log aberto deve ter um nome exclusivo. Tentar criar um novo canal de registro em log com o mesmo nome de um canal não descartado gera uma exceção.  
   
- Consulte [Exemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) do Windows SDK para obter exemplos.  
+ Consulte [Exemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) do SDK do Windows para obter exemplos.  
   
  **Adicionar marcas ao código JavaScript**  
   
@@ -123,7 +124,7 @@ if (performance && performance.mark) {
 |||  
 |-|-|  
 |![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|O arquivo de relatório é chamado Report*AAAAMMDD-HHMM*.diagsession. Você poderá alterar o nome se decidir salvar o relatório.|  
-|![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
+|![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|A linha do tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
 |![Etapa 3](../profiling/media/procguid_3.png "ProcGuid_3")|Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.|  
 |![Etapa 4](../profiling/media/procguid_4.png "ProcGuid_4")|O gráfico **Consumo de Energia** é um gráfico de várias linhas que exibe a alteração na saída de potência causada por um recurso do dispositivo durante uma sessão de criação de perfil. O criador de perfil Consumo de Energia controla a energia usada pela CPU, pela atividade de rede e pelo monitor.|  
 |![Etapa 5](../profiling/media/procguid_6.png "ProcGuid_6")|O gráfico **Recursos (Ativado/Desativado)** fornece detalhes dos custos de energia de rede. A barra **Rede** representa o tempo em que a conexão de rede permaneceu aberta. A barra filha **Transferência de Dados** corresponde ao tempo em que o aplicativo recebeu ou enviou dados pela rede.|  

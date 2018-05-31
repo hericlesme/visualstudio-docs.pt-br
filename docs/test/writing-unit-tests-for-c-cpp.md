@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 227b12f2da07d3d610f3d043348dc59680fc17ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449176"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -74,7 +75,7 @@ O arquivo .cpp no projeto de teste tem um método e uma classe stub definidos pa
 
 ![Adicionar diretivas de inclusão](media/cpp-write-test-methods.png "Teste C++ adicionar inclusão aos arquivos de cabeçalho")
 
-TEST_CLASS e TEST_METHOD fazem parte do [Microsoft Native Test Framework]((microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). O **Gerenciador de Testes** descobre os métodos de teste em outras estruturas com suporte, de maneira semelhante.
+TEST_CLASS e TEST_METHOD fazem parte do [Framework de Teste Nativo da Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). O **Gerenciador de Testes** descobre os métodos de teste em outras estruturas com suporte, de maneira semelhante.
 
 Um TEST_METHOD retorna nulo. Para produzir um resultado do teste, use os métodos estáticos na classe `Assert` para testar os resultados reais em relação a o que é esperado. No exemplo a seguir, suponha que `MyClass` tem um construtor que se apropria de uma `std::string`. É possível testar se o construtor inicializa a classe conforme o esperado da seguinte forma:
 
