@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268263"
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Executando ferramentas de criação de perfil com ou sem o depurador
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar Ferramentas de Criação de Perfil com ou sem o depurador
 O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas das quais (por exemplo, **Utilização de CPU** e **Uso de Memória**) podem ser executadas com ou sem o depurador. Ferramentas de desempenho de não depurador não devem ser executadas em configurações de versão, enquanto ferramentas integradas ao depurador destinam-se a ser executadas em configurações de depuração.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Devo executar a ferramenta com ou sem o depurador?  
@@ -39,9 +40,9 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar  
  A seção a seguir lida com a depuração local. Você pode descobrir mais sobre a depuração em um dispositivo ou a depuração remota nas próximas seções.  
   
-1.  Abra o projeto que você deseja depurar e clique em **Depurar / Iniciar Depuração** (ou **Iniciar** na barra de ferramentas ou **F5**).  
+1.  Abra o projeto que você deseja depurar e clique em **Depurar** > **Iniciar Depuração** (ou **Iniciar** na barra de ferramentas ou **F5**).  
   
-2.  A janela **Ferramentas de Diagnóstico** é exibida automaticamente, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar/Windows/Mostrar Ferramentas de Diagnóstico**.  
+2.  A janela **Ferramentas de Diagnóstico** é exibida automaticamente, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.  
   
 3.  Execute os cenários dos quais deseja coletar dados.  
   
@@ -51,7 +52,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Você pode optar por ver **Uso de Memória** ou **Utilização de CPU** (ou ambos) com as configurações **Selecionar Ferramentas** na barra de ferramentas. Se você estiver executando o Visual Studio Enterprise, poderá habilitar ou desabilitar o IntelliTrace em **Ferramentas / Opções / IntelliTrace**.  
+4.  Você pode optar por ver **Uso de Memória** ou **Utilização de CPU** (ou ambos) com as configurações **Selecionar Ferramentas** na barra de ferramentas. Se você estiver executando o Visual Studio Enterprise, poderá habilitar ou desabilitar o IntelliTrace em **Ferramentas** > **Opções** > **IntelliTrace**.  
   
 5.  A sessão de diagnóstico termina quando você interrompe a depuração.  
   
@@ -72,7 +73,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
 1.  Abra o projeto no Visual Studio.  
   
-2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho...** (Tecla de atalho: Alt + F2).  
+2.  No menu **Depurar**, escolha **Criador de Perfil de Desempenho** (Tecla de atalho: **Alt**+**F2**).  
   
 3.  Na página de inicialização de diagnóstico, escolha uma ou mais ferramentas para executar na sessão. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Quando você escolhe uma ferramenta de diagnóstico, as seleções de ferramentas que não podem ser executadas na mesma sessão de diagnóstico são desabilitadas. Veja aqui como suas escolhas podem parecer para um aplicativo UWP em C#:  
   
@@ -99,14 +100,14 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
 |||  
 |-|-|  
-|![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
+|![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|A linha do tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
 |![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.|  
 |![Etapa 3](../profiling/media/procguid_3.png "ProcGuid_3")|Uma ferramenta exibe um ou mais grafos mestres. Se sua sessão de diagnóstico for criada com várias ferramentas, todos os grafos mestres serão exibidos.|  
 |![Etapa 4](../profiling/media/procguid_4.png "ProcGuid_4")|Você pode recolher e expandir os gráficos individuais.|  
 |![Etapa 5](../profiling/media/procguid_6.png "ProcGuid_6")|Quando seus dados incluem informações de várias ferramentas, os detalhes da ferramenta são coletados sob as guias.|  
 |![Etapa 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Uma ferramenta poder ter uma ou mais exibições de detalhes. A exibição é filtrada pela região selecionada da linha do tempo.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Configurando o destino da análise para outro dispositivo  
+## <a name="set-the-analysis-target-to-another-device"></a>Configurar o destino da análise para outro dispositivo  
  Além de iniciar o aplicativo a partir do projeto do Visual Studio, você também pode executar sessões de diagnóstico em destinos alternativos. Por exemplo, você pode diagnosticar problemas de desempenho em uma versão de seu aplicativo que foi instalado por meio da Windows Store.  
   
  ![Escolha o destino da análise de ferramentas de diagnóstico](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

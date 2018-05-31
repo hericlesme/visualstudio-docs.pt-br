@@ -1,6 +1,6 @@
 ---
-title: Exibir a estrutura do código no Visual Studio
-ms.date: 11/04/2016
+title: Exibir a estrutura de código usando o modo de exibição de classe, hierarquia de chamadas, pesquisador de objetos e janela de definição de código
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,7 +13,7 @@ f1_keywords:
 - vs.componentpicker
 - vs.callbrowser
 helpviewer_keywords:
-- document outline window.
+- document outline window
 - Visual Studio, object browser
 - call hierarchy
 - Visual Studio, document outline window
@@ -27,26 +27,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336133"
 ---
-# <a name="view-the-structure-of-code"></a>Exibir a estrutura do código
+# <a name="view-the-structure-of-code-using-different-tool-windows"></a>Exibir a estrutura do código usando janelas de ferramentas diferentes
 
-É possível examinar objetos e membros em projetos do Visual Studio, componentes do .NET Framework, componentes COM, DLL (bibliotecas de vínculo dinâmico) e TLB (bibliotecas de tipos).
+Você pode examinar as classes e seus membros no Visual Studio usando várias janelas de ferramentas, incluindo **Modo de Exibição de Classe**, **Hierarquia de Chamadas**, **Pesquisador de Objetos** e **Definição de Código** (somente C++). Essas ferramentas podem examinar código em projetos do Visual Studio, componentes do .NET Framework, componentes COM, DLL (bibliotecas de vínculo dinâmico) e TLB (bibliotecas de tipos).
 
-Também é possível usar o **Gerenciador de Soluções** para procurar os tipos e membros em seus projetos, pesquisar símbolos, exibir a hierarquia de chamada de um método, localizar referências de símbolos e muito mais, sem precisar mudar entre as várias janelas de ferramentas listadas anteriormente.
+Também é possível usar o **Gerenciador de Soluções** para procurar os tipos e membros em seus projetos, pesquisar símbolos, exibir a hierarquia de chamada de um método, localizar referências de símbolos e muito mais, sem precisar mudar entre as várias janelas de ferramentas.
 
-Se tiver o Visual Studio Enterprise, você poderá usar mapas de código para visualizar a estrutura do código e suas dependências em toda a solução, bem como detalhar as partes interessantes do código. Para obter mais informações, consulte [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
-
-> [!NOTE]
-> A edição do Visual Studio e as configurações que você está usando podem afetar os recursos no IDE. Eles podem ser diferentes dos descritos neste tópico.
+Se tiver o Visual Studio Enterprise, você poderá usar *mapas de código* para visualizar a estrutura do código e suas dependências em toda a solução. Para saber mais, confira [Mapear as dependências com mapas de código](../modeling/map-dependencies-across-your-solutions.md).
 
 ## <a name="class-view-visual-basic-c-c"></a>Modo de Exibição de Classe (Visual Basic, C#, C++)
 
-O **Modo de Exibição de Classe** é mostrado como parte do **Gerenciador de Soluções**, bem como em uma janela separada. A janela **Modo de Exibição de Classe** exibe os elementos de um aplicativo. O painel superior exibe namespaces, tipos, interfaces, enumerações e classes, e o painel inferior exibe os membros que pertencem ao tipo selecionado no painel superior. Usando essa janela, você pode passar para definições de membro no código-fonte (ou no **Pesquisador de Objetos** se o elemento for definido fora de sua solução).
+O **Modo de Exibição de Classe** é mostrado como parte do **Gerenciador de Soluções**, e como uma janela separada. **Modo de Exibição de Classe** exibe os elementos de um aplicativo. O painel superior exibe namespaces, tipos, interfaces, enumerações e classes, e o painel inferior exibe os membros que pertencem ao tipo selecionado no painel superior. Usando essa janela, você pode passar para definições de membro no código-fonte (ou no **Pesquisador de Objetos** se o elemento for definido fora de sua solução).
 
 Não é necessário compilar um projeto para exibir seus elementos no **Modo de Exibição de Classe**. A janela é atualizada conforme você modifica o código em seu projeto.
 
@@ -56,7 +54,7 @@ Caso tenha sido realizado o check-in do seu projeto para controle do código-fon
 
 ### <a name="class-view-toolbar"></a>Barra de Ferramentas Modo de Exibição de Classe
 
-A barra de ferramentas **Modo de Exibição de Classe** contém os comandos a seguir.
+A barra de ferramentas **Modo de Exibição de Classe** contém os comandos a seguir:
 
 |||
 |-|-|
@@ -67,7 +65,7 @@ A barra de ferramentas **Modo de Exibição de Classe** contém os comandos a se
 
 ### <a name="class-view-settings"></a>Configurações do Modo de Exibição de Classe
 
-O botão **Configurações do Modo de Exibição de Classe** na barra de ferramentas tem as seguintes configurações.
+O botão **Configurações do Modo de Exibição de Classe** na barra de ferramentas tem as seguintes configurações:
 
 |||
 |-|-|
@@ -83,7 +81,7 @@ O botão **Configurações do Modo de Exibição de Classe** na barra de ferrame
 
 ### <a name="class-view-shortcut-menu"></a>Menu de atalho do Modo de Exibição de Classe
 
-O menu de atalho no **Modo de Exibição de Classe** pode conter os seguintes comandos, dependendo do tipo de projeto selecionado.
+O menu de atalho no **Modo de Exibição de Classe** pode conter os seguintes comandos, dependendo do tipo de projeto selecionado:
 
 |||
 |-|-|
@@ -103,19 +101,19 @@ O menu de atalho no **Modo de Exibição de Classe** pode conter os seguintes co
 
 ## <a name="call-hierarchy-window-visual-basic-c-c"></a>Janela de hierarquia de chamada (Visual Basic, C#, C++)
 
-A janela **Hierarquia de Chamada** mostra onde um determinado método (ou propriedade ou construtor) é chamado e lista os métodos que são chamados desse método. É possível exibir vários níveis de grafo de chamadas, que mostra as relações de chamador/computador chamado entre os métodos em um escopo especificado.
+A janela **Hierarquia de Chamadas** mostra onde um determinado método ou propriedade é chamada. Também lista os métodos que são chamados a partir desse método. É possível exibir vários níveis de grafo de chamadas, que mostra as relações Exibição do Chamador/Receptor entre os métodos em um escopo especificado.
 
-Você pode exibir a janela **Hierarquia de Chamada** selecionando um método (ou propriedade ou construtor) e, em seguida, escolhendo **Exibir Hierarquia de Classe** no menu de atalho. A exibição deve se parecer com a imagem a seguir.
+Você pode exibir a janela **Hierarquia de Chamada** selecionando um método (ou propriedade ou construtor) no editor e, em seguida, escolhendo **Exibir Hierarquia de Chamadas** no menu de atalho. A exibição deve se parecer com a imagem a seguir:
 
-![Hierarquia de chamada com vários nós abertos](../ide/media/multiplenodes.png "MultipleNodes")
+![Exibir a hierarquia de chamadas no Visual Studio](../ide/media/multiplenodes.png)
 
-Usando a lista suspensa na barra de ferramentas, é possível especificar o escopo da hierarquia: a solução, o projeto atual ou o documento atual.
+Usar a lista suspensa na barra de ferramentas, é possível especificar o escopo da hierarquia: a solução, o projeto atual ou o documento atual.
 
 O painel principal exibe as chamadas do método e para ele, e o painel **Chamar Sites** exibe o local da chamada selecionada. Para membros virtuais ou abstratos, um nó **Substitui o nome do método** é exibido. Para membros de interface, um nó **Implementa o nome do método** é exibido.
 
-A janela **Hierarquia de Chamada** não encontra referências do grupo do método, que incluem os locais nos quais um método é adicionado como um manipulador de eventos ou é atribuído a um delegado. Para localizar essas referências, use o comando **Localizar todas as referências**.
+A janela **Hierarquia de Chamada** não encontra referências do grupo do método, que incluem os locais nos quais um método é adicionado como um manipulador de eventos ou é atribuído a um representante. Para localizar essas referências, use o comando **Localizar todas as referências**.
 
-O menu de atalho na janela **Hierarquia de Chamada** contém os comandos a seguir.
+O menu de atalho na janela **Hierarquia de Chamada** contém os comandos a seguir:
 
 |||
 |-|-|
@@ -142,7 +140,7 @@ O **Pesquisador de Objetos** mantém controle das seleções feitas, e você pod
 
 ### <a name="object-browser-settings"></a>Configurações do Pesquisador de Objetos
 
-Usando o botão **Configurações do Pesquisador de Objetos** na barra de ferramentas, você pode especificar um dos seguintes modos de exibição.
+Usar o botão **Configurações do Pesquisador de Objetos** na barra de ferramentas, você pode especificar um dos seguintes modos de exibição:
 
 |||
 |-|-|
@@ -160,7 +158,7 @@ Usando o botão **Configurações do Pesquisador de Objetos** na barra de ferram
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandos do menu de atalho do Pesquisador de Objetos
 
-O menu de atalho no **Pesquisador de Objetos** pode conter os seguintes comandos, dependendo do tipo de item selecionado.
+O menu de atalho no **Pesquisador de Objetos** pode conter os seguintes comandos, dependendo do tipo de item selecionado:
 
 |||
 |-|-|
@@ -185,7 +183,7 @@ A Janela de **Definição de Código** exibe a definição de um membro ou tipo 
 Embora essa janela seja somente leitura, você pode definir pontos de interrupção ou indicadores nela. Para modificar a definição exibida, escolha **Editar Definição** no menu de atalho. Isso abre o arquivo de origem no editor de códigos e move o ponto de inserção para a linha em que a definição começa.
 
 > [!NOTE]
-> A partir do Visual Studio 2015, a janela **Definição de Código** pode ser usada somente com o código C++.
+> A partir do Visual Studio 2015, a janela de **Definição de Código** pode ser usada somente com o código C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menu de atalho de Definição de Código
 
@@ -214,7 +212,7 @@ O menu de atalho na Janela de **Definição de Código** pode conter os seguinte
 |**Editar Definição**|Move o ponto de inserção para a definição na janela de código.|
 |**Escolher Codificação**|Abre a janela **Codificação** para que você possa definir uma codificação para o arquivo.|
 
-### <a name="document-outline-window"></a>Janela Estrutura de Tópicos de Documento
+## <a name="document-outline-window"></a>Janela Estrutura de Tópicos de Documento
 
 É possível usar a janela **Estrutura de Tópicos do Documento** em conjunto com exibições de designer, como o designer de uma página XAML ou um designer do Windows Forms, ou com páginas HTML. Esta janela exibe os elementos em um modo de exibição de árvore para que você pode exibir a estrutura lógica do formulário ou página e localizar controles que estão incorporados profundamente ou ocultos.
 

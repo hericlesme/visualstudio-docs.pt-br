@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e86f8f856963a979b8e64ba0e613cdb73685a9a0
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449163"
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Trabalhando com o Python no Visual Studio no Windows
 
@@ -57,7 +58,7 @@ Para saber mais:
 - Docs: [Formatação do código](formatting-python-code.md)
 - Docs: [Refatoração](refactoring-python-code.md)
 - Docs: [Linting](linting-python-code.md)
-- Docs sobre recursos gerais do Visual Studio: [Escrevendo código no editor de código e de texto](../ide/writing-code-in-the-code-and-text-editor.md)
+- Documentos de recursos gerais do Visual Studio: [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Janela Interativa
 

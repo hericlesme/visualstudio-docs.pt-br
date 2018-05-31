@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859a3687e2dde0d5bedb9f4084bb83b844ca28e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c4b915f632179ff118247e8c046ce980a824ea2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448081"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizar tarefas de compilação e depuração para desenvolvimento de "Pasta Aberta"
 
@@ -315,4 +316,4 @@ As configurações lidas no arquivo *.gitignore* são aplicadas ao seu diretóri
 - [Projetos de pasta aberta para C++](/cpp/ide/non-msbuild-projects)
 - [Projetos CMake em C++](/cpp/ide/cmake-tools-for-visual-cpp)
 - [Referência a NMAKE](/cpp/build/nmake-reference)
-- [Escrevendo código no editor de código e texto](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)

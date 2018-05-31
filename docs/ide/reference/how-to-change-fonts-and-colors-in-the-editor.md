@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447811"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Como alterar fontes e cores usadas no Editor
 É possível alterar a face de fonte padrão, ajustar o tamanho da fonte e alterar as cores de primeiro plano e da tela de fundo para várias opções **Exibir itens** de texto no Editor de Código. Ao alterar as configurações de fonte, tenha em mente as seguintes informações:
@@ -56,5 +57,5 @@ ms.lasthandoff: 04/26/2018
 
 - [Personalizando o editor](../../ide/customizing-the-editor.md)
 - [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
-- [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

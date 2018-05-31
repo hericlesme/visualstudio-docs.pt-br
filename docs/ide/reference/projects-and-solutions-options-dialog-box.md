@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266335"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Soluções e Projetos, caixa de diálogo Opções
 Define o comportamento de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] relacionado a projetos e soluções. Para acessar essas opções, selecione **Ferramentas > Opções**, expanda **Projetos e Soluções** e clique em **Geral**.
@@ -70,6 +71,12 @@ Quando estiver selecionado, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs
 **Solicitar antes de mover arquivos para um novo local**
 
 Quando selecionado, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] exibe uma caixa de mensagem de confirmação antes que os locais dos arquivos sejam alterados por ações no Gerenciador de Soluções.
+
+**Reabrir documentos no carregamento da solução (Visual Studio 2017 versão 15.8 versão prévia 2 e posterior)**
+ 
+Durante o carregamento da solução, reabra automaticamente documentos que estavam abertos na sessão anterior. Após a seleção, os documentos que estavam abertos na última vez em que esta solução foi fechada são abertos automaticamente quando a solução é carregada.
+
+Reabrir certos tipos de arquivos ou designers pode atrasar o carregamento da solução. Desmarque esta opção para melhorar o desempenho do carregamento de solução, se você não quiser restaurar o contexto anterior da solução.
 
 ## <a name="locations-tab-options"></a>Opções da guia Locais
 

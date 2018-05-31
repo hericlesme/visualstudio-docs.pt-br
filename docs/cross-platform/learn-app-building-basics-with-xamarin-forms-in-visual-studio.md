@@ -10,11 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 608eebc113c9df7a8978299cc69907e28d81a16f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e25f75d0a1cd5e1b9989172a76d8cf8139957e2c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454669"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Aprender as noções básicas de criação de aplicativos com o Xamarin.Forms no Visual Studio
 
@@ -49,7 +50,7 @@ Estas etapas criam uma solução do Xamarin.Forms que contém uma biblioteca de 
   
 1. No Visual Studio, crie uma nova solução de **Aplicativo de Plataforma Cruzada (Xamarin.Forms)** e dê a ela o nome de **WeatherApp**. Procure o modelo selecionando **Visual C#** e **Plataforma Cruzada** na lista à esquerda.  
     
-    ![Criando um novo projeto de aplicativo do Xamarin.Forms multiplataforma](../cross-platform/media/crossplat-xamarin-formsguide-2.png "FormsGuide 2 do Xamarin CrossPlat")
+    ![Criando um novo projeto de aplicativo do Xamarin.Forms de plataforma cruzada](../cross-platform/media/crossplat-xamarin-formsguide-2.png "FormsGuide 2 do Xamarin CrossPlat")
 
     Se o modelo não estiver lá, poderá ser necessário instalar o Xamarin ou habilitar o recurso do Visual Studio 2017. Confira [Instalar e configurar](../cross-platform/setup-and-install.md).  
 
