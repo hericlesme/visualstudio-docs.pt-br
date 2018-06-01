@@ -1,5 +1,5 @@
 ---
-title: Segurança e explicações passo a passo de implantação | Microsoft Docs
+title: Explicações passo a passo de segurança e implantação
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a0d68bceffaf26297ca8a1709978cf3447520c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 724050648aa7190844bad1e751d75fa22ccdebc8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693137"
 ---
-# <a name="security-and-deployment-walkthroughs"></a>Instruções passo a passo de segurança e implantação
+# <a name="security-and-deployment-walkthroughs"></a>Explicações passo a passo de segurança e implantação
   Os tópicos a seguir demonstram como você pode definir a política de segurança para permitir que sua solução executar e como você pode implantar sua solução do Office.  
   
 ## <a name="security-topics"></a>Tópicos de segurança  
- [Como assinar soluções do Office](../vsto/how-to-sign-office-solutions.md)  
+ [Como: assinar soluções do Office](../vsto/how-to-sign-office-solutions.md)  
  Fornece informações sobre como você pode conceder confiança para a solução usando um certificado.  
   
- [Como configurar a segurança da lista de inclusões](../vsto/how-to-configure-inclusion-list-security.md)  
+ [Como: configurar a segurança da lista de inclusão](../vsto/how-to-configure-inclusion-list-security.md)  
  Explica como configurar o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] prompt confiável para controlar se os usuários finais recebem a opção de instalação de soluções do Office.  
   
 ## <a name="deployment-topics"></a>Tópicos de implantação  
@@ -50,29 +51,29 @@ ms.lasthandoff: 04/16/2018
  [Como: preparar o IIS para a implantação de soluções do Office](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  Descreve como configurar o tipo MIME no Microsoft Internet Information Services (IIS) para o manifesto de implantação.  
   
- [Como: atualizar soluções do Office implantado](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [Como: Atualização implantada soluções do Office](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  Fornece informações sobre como atualizar uma solução do Office usando o **Assistente de publicação**.  
   
  [Como: alterar o caminho de instalação de uma solução do Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
  Fornece informações sobre como alterar o caminho de instalação de uma solução do Office.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Instruções passo a passo para usar o Word](../vsto/walkthroughs-using-word.md)  
+ [Explicações passo a passo usando o Word](../vsto/walkthroughs-using-word.md)  
  Lista os guias passo a passo que fornecem uma introdução a soluções do Office no Visual Studio e ajudam a ilustrar como você pode criar aplicativos que se beneficiam do Word.  
   
- [Instruções passo a passo para usar o Excel](../vsto/walkthroughs-using-excel.md)  
+ [Explicações passo a passo usando o Excel](../vsto/walkthroughs-using-excel.md)  
  Lista os guias passo a passo que fornecem uma introdução a soluções do Office no Visual Studio e ajudam a ilustrar como você pode criar aplicativos que se beneficiam do Excel.  
   
- [Instruções passo a passo de dados em soluções do Office](../vsto/data-in-office-solutions-walkthroughs.md)  
+ [Dados em instruções passo a passo de soluções do Office](../vsto/data-in-office-solutions-walkthroughs.md)  
  Lista os guias passo a passo que ilustram como trabalhar com dados em suas soluções.  
   
- [Guia de Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Fornece links para informações sobre instalação, modelos de projeto, assemblies de interoperabilidade primários do Office e o que há de novo no desenvolvimento do Office.  
   
  [Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)  
  Lista de perguntas frequentes sobre a programação com soluções do Office no Visual Studio e fornece links para tópicos que podem ajudar a resolver problemas comuns.  
   
- [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
  Fornece links para informações sobre como criar soluções do Word e Excel e a função de assemblies em sua solução.  
   
 ## <a name="see-also"></a>Consulte também  

@@ -1,5 +1,5 @@
 ---
-title: Executando soluções em versões diferentes do Microsoft Office | Microsoft Docs
+title: Executar soluções em versões diferentes do Microsoft Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,15 +19,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e228f407edd38e173da78c092c0cca7061a661a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 153b8faa356ceed9eecc5c616c2330f980728e49
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693962"
 ---
-# <a name="running-solutions-in-different-versions-of-microsoft-office"></a>Executando soluções em versões diferentes do Microsoft Office
+# <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Executar soluções em versões diferentes do Microsoft Office
     
-## <a name="running-office-solutions-created-by-using-visual-studio-2010-and-above"></a>Executando soluções do Office criadas usando o Visual Studio 2010 e posterior  
+## <a name="run-office-solutions-created-by-using-visual-studio-2010-and-above"></a>Execute as soluções do Office criadas usando o Visual Studio 2010 e posterior  
   
 |Versão do Office direcionado pelo modelo de projeto|Destino do .NET Framework do projeto<sup>1</sup>|Versões do Office que pode executar a solução|Tempo de execução necessário no computador do usuário final|  
 |--------------------------------------------------------|------------------------------------------------------|--------------------------------------------------|-------------------------------------------|  
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
  2. Nesse cenário, a solução será executado sem erros no sistema Microsoft Office 2007 somente se ela não usa recursos que são novos no [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
-## <a name="running-office-solutions-created-by-using-versions-of-visual-studio-prior-to-visual-studio-2010"></a>Executando o Office soluções criadas pelo usando versões do Visual Studio antes do Visual Studio 2010  
+## <a name="run-office-solutions-created-by-using-versions-of-visual-studio-prior-to-visual-studio-2010"></a>Execute as soluções do Office criadas usando versões do Visual Studio antes do Visual Studio 2010  
  Aplicativos do Microsoft Office podem executar soluções criadas usando versões do Visual Studio antes do Visual Studio 2010. Em alguns casos, essas soluções necessitam de versões diferentes do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Versões diferentes do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pode ser instalada lado a lado no mesmo computador.  
   
  A tabela a seguir mostra quais versões do Microsoft Office podem executar soluções criadas pelo uso de versões anteriores do Visual Studio e quais versões do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] e o .NET Framework são necessárias para cada solução.  
@@ -51,17 +52,17 @@ ms.lasthandoff: 04/16/2018
 |Uma das seguintes edições do Visual Studio 2005 com VSTO 2005 SE<sup>2</sup> instalado:<br /><br /> -O visual Studio 2005 Tools para Office<br />-O visual Studio Team System 2005<br />-O visual Studio 2005 Professional|Sistema Microsoft Office 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (somente 32 bits<sup>3</sup>)<br /><br /> Sistema Microsoft Office 2007|O Visual Studio 2005 Tools para Office segundo o tempo de execução de edição|.NET framework 2.0, .NET Framework 3.0 ou do .NET Framework 3.5|  
 |Qualquer uma das seguintes edições do Visual Studio:<br /><br /> -O visual Studio 2008 Professional<br />-O visual Studio Team System 2008<br />-O visual Studio 2005 Tools para Office (com ou sem o VSTO 2005 SE<sup>2</sup> instalado)<br />-O visual Studio Team System 2005 (com ou sem o VSTO 2005 SE<sup>2</sup> instalado)<br />-O visual Studio 2005 Professional com VSTO 2005 SE<sup>2</sup> instalado|O Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (somente 32 bits<sup>3</sup>)<br /><br /> Sistema Microsoft Office 2007<br /><br /> O Microsoft Office 2003|O Visual Studio 2005 Tools para Office segundo o tempo de execução de edição|.NET framework 2.0, .NET Framework 3.0 ou do .NET Framework 3.5|  
   
- 1. [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplicativos incluem o Visual Studio 2010 Tools for Office Runtime. Portanto, esses aplicativos sempre usam o Visual Studio 2010 Tools para Office Runtime em vez do Visual Studio Tools para o Microsoft Office system (versão 3.0 Runtime) nesse cenário. Aplicativos no sistema Microsoft Office 2007 podem usar o Visual Studio 2010 Tools para Office Runtime ou o Visual Studio Tools para o Microsoft Office system (versão 3.0 Runtime).  
+ 1. [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplicativos incluem o Visual Studio 2010 Tools para Office runtime. Portanto, esses aplicativos sempre usam o Visual Studio 2010 Tools para Office runtime em vez do Visual Studio Tools para o Microsoft Office system (versão 3.0 Runtime) nesse cenário. Aplicativos no sistema Microsoft Office 2007 podem usar o Visual Studio 2010 Tools para Office Runtime ou o Visual Studio Tools para o Microsoft Office system (versão 3.0 Runtime).  
   
  2. VSTO 2005 SE é um suplemento gratuito do Visual Studio que fornece modelos de projeto de suplemento do VSTO para o Microsoft Office 2003 e o Microsoft Office 2007. Ele pode ser instalado com o Visual Studio 2005 Professional, Visual Studio 2005 Tools para Office ou uma edição do Visual Studio Team System 2005. Para obter mais informações, consulte [Visual Studio 2005 Tools para Office Second Edition](http://go.microsoft.com/fwlink/?LinkId=148446).  
   
  3. Soluções do Office que exigem o Visual Studio 2005 Tools para Office Runtime segundo de edição não são compatíveis com as versões de 64 bits do [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]. Para executar essas soluções na edição de 64 bits do [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], você deve atualizar o projeto para [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] ou a um projeto do Visual Studio 2008 que tem como alvo o Microsoft Office 2007.  
   
 ## <a name="see-also"></a>Consulte também  
- [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)   
  [Ferramentas do Visual Studio para visão geral de tempo de execução do Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Ferramentas do Visual Studio para cenários de instalação de tempo de execução do Office](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
- [Configurando um computador para desenvolver soluções do Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
+ [Configurar um computador para desenvolver soluções do Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
   
   

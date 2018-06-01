@@ -28,18 +28,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 088afa321e5f4026735e88c3068900b0bfc8c07c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691473"
 ---
-# <a name="bdc-model-design-tools-overview"></a>Visão geral de ferramentas de design do modelo BDC
+# <a name="bdc-model-design-tools-overview"></a>Visão geral de ferramentas de design de modelo BDC
   Você pode criar um modelo de conectividade de dados de negócios (BDC) usando o Designer de BDC, o **detalhes de método BDC** janela e o **Explorer BDC**.  
   
  O **Explorer BDC** permite procurar o modelo, o modelo de pesquisa e definir descritores de tipo.  
   
-## <a name="bdc-designer"></a>Designer BDC  
+## <a name="bdc-designer"></a>Designer BDC
  O Designer de BDC permite definir as entidades no modelo e organizar visualmente suas relações com uma outra. Use o Designer de BDC para realizar as seguintes tarefas:  
   
 -   Adicione entidades no modelo.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Para abrir o Designer de BDC, duas vezes no arquivo de modelo em seu projeto, ou abra o menu de atalho para o arquivo de modelo e, em seguida, escolha **abrir**. Adicionar uma entidade no modelo arrastando ou copiando um **entidade** do **caixa de ferramentas** no designer. Para criar uma associação entre duas entidades, escolha o **associação** controlar o **caixa de ferramentas**, escolha a entidade de primeiro e, em seguida, escolha a segunda entidade.  
   
-## <a name="bdc-method-details-window"></a>Janela de detalhes de método BDC  
+## <a name="bdc-method-details-window"></a>Janela de detalhes de método BDC
  Use o **detalhes de método BDC** janela para definir os parâmetros, instâncias e descritores de um método de filtro.  
   
  Você pode gerar rapidamente o localizador de localizador específico, criador, Updater, métodos e Deleter no **detalhes de método BDC** janela. Quando você gerar esses métodos, o Visual Studio adiciona metadados, como parâmetros, instâncias e descritores de tipo para o método. Você pode modificar esses metadados para satisfazer o seu cenário específico.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
  Expandir ou recolher nós o **detalhes de método BDC** janela para definir parâmetros, instâncias e os descritores de filtro. Use o **Explorer BDC** para definir os descritores de tipo.  
   
-## <a name="bdc-explorer"></a>BDC Explorer  
+## <a name="bdc-explorer"></a>BDC Explorer
  O **Explorer BDC** exibe os elementos que compõem o modelo. Para abrir o **Explorer BDC**, na barra de menus, escolha **exibição**, **outras janelas**, **Explorer BDC**. Para procurar o modelo, expanda nós no **Explorer BDC**. Cada nó representa um elemento no XML do arquivo de modelo.  
   
  Como escolher nós o **BDC Explorer**, as propriedades de cada nó que você escolher aparecem no **propriedades** janela. Muitas dessas propriedades correspondem aos atributos no arquivo de modelo. Você pode procurar o modelo usando a caixa de pesquisa na parte superior do **Explorer BDC**.  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  O **Explorer BDC** não exibe identificadores, as propriedades personalizadas, cadeias de caracteres localizadas, os grupos de associação, ações, descritores de filtros, listas de controle de ação e os valores de parâmetro padrão.  
   
-### <a name="defining-type-descriptors"></a>Definindo descritores de tipo  
+### <a name="define-type-descriptors"></a>Definir os descritores de tipo
  Use o **Explorer BDC** para definir os descritores de tipo. O Gerenciador de BDC permite definir um descritor de tipo de uma vez e, em seguida, reutilizar esse descritor de tipo em outro lugar no seu modelo. Para fazer isso, um descritor de tipo de copiar e colá-la em qualquer outro parâmetro ou descritor de tipo.  
   
 > [!NOTE]  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
  Para obter mais informações, consulte [como: definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Como: criar um modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Como: adicionar uma entidade em um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Como: adicionar um método Finder](../sharepoint/how-to-add-a-finder-method.md)   
@@ -91,4 +92,4 @@ ms.lasthandoff: 04/16/2018
  [Criando um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Designando um modelo de Conectividade de Dados Corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
-  
+ 

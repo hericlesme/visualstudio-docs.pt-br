@@ -1,5 +1,5 @@
 ---
-title: Visão geral do modelo de objeto de faixa de opções | Microsoft Docs
+title: Visão geral do modelo de objeto de faixa de opções
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2be8f0ecdb4f2d7a8ea379474c4b5ec0062d2b57
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692955"
 ---
-# <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto da faixa de opções
-  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expõe um modelo de objeto fortemente tipada que você pode usar para obter e definir as propriedades de controles de faixa de opções em tempo de execução. Por exemplo, dinamicamente você pode preencher os controles de menu, ou mostrar e ocultar controles contextualmente. Você também pode adicionar controles de guias e grupos para uma faixa de opções, mas antes da faixa de opções é carregada pelo aplicativo do Office. Para obter informações, consulte [configuração de propriedades que se tornam somente leitura](#SettingReadOnlyProperties).  
+# <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto de faixa de opções
+  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expõe um modelo de objeto fortemente tipada que você pode usar para obter e definir as propriedades de controles de faixa de opções em tempo de execução. Por exemplo, dinamicamente você pode preencher os controles de menu, ou mostrar e ocultar controles contextualmente. Você também pode adicionar controles de guias e grupos para uma faixa de opções, mas antes da faixa de opções é carregada pelo aplicativo do Office. Para obter informações, consulte [definir propriedades que se tornam somente leitura](#SettingReadOnlyProperties).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- Esse modelo de objeto da faixa de opções consiste principalmente o [classe da faixa de opções](#RibbonClass), [eventos de faixa de opções](#RibbonEvents), e [Classes de controle de faixa de opções](#RibbonControlClasses).  
+ Esse modelo de objeto da faixa de opções consiste principalmente o [faixa classe](#RibbonClass), [eventos de faixa de opções](#RibbonEvents), e [classes de controle de faixa de opções](#RibbonControlClasses).  
   
 ##  <a name="RibbonClass"></a> Classe de faixa de opções  
  Quando você adiciona um novo **faixa de opções (Visual Designer)** item a um projeto, o Visual Studio adiciona um **faixa de opções** classe ao seu projeto. O **faixa de opções** classe herda o <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> classe.  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separador**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**Guia**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**Tab**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
  O <xref:Microsoft.Office.Tools.Ribbon> namespace usa o prefixo "Faixa de opções" para esses tipos para evitar uma colisão de nomes com os nomes de classes de controle de <xref:System.Windows.Forms> namespace.  
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>Tarefas comuns usando as propriedades de controles de faixa de opções  
  Cada `Ribbon` controle contém propriedades que você pode usar para executar várias tarefas, como atribuir um rótulo a um controle, ou ocultando e mostrando controles.  
   
- Em alguns casos, propriedades se tornar somente leitura após o carregamento ou um controle é adicionado a um menu dinâmico. Para obter mais informações, consulte [propriedades de configuração que torne-se somente leitura](#SettingReadOnlyProperties).  
+ Em alguns casos, propriedades se tornar somente leitura após as cargas de faixa de opções ou após um controle é adicionado a um menu dinâmico. Para obter mais informações, consulte [definir propriedades que se tornam somente leitura](#SettingReadOnlyProperties).  
   
  A tabela a seguir descreve algumas das tarefas que você pode executar usando `Ribbon` propriedades do controle.  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/16/2018
 |Adicione dados definidos pelo usuário a um controle.|Use a propriedade de marca.|  
 |Obter os itens uma <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, ou<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> controle.|Use a propriedade de itens.|  
 |Adicionar itens a um <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, ou <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> controle.|Use a propriedade de itens.|  
-|Adicionar controles a um <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Use a propriedade de itens.<br /><br /> Para adicionar controles para o <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> depois que a faixa de opções é carregada no aplicativo do Office, você deve definir o <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propriedade **true** antes de faixa de opções é carregada no aplicativo do Office. Para obter informações, consulte [configuração de propriedades que se tornam somente leitura](#SettingReadOnlyProperties).|  
+|Adicionar controles a um <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Use a propriedade de itens.<br /><br /> Para adicionar controles para o <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> depois que a faixa de opções é carregada no aplicativo do Office, você deve definir o <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propriedade **true** antes de faixa de opções é carregada no aplicativo do Office. Para obter informações, consulte [definir propriedades que se tornam somente leitura](#SettingReadOnlyProperties).|  
 |Obter o item selecionado de um <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, ou <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use a propriedade SelectedItem. Para uma <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, use o <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> propriedade.|  
 |Obter os grupos em um <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Use a propriedade <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|  
 |Especifique o número de linhas e colunas que aparecem em um <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> e <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propriedades.|  
@@ -98,35 +99,35 @@ ms.lasthandoff: 04/16/2018
   
 -   No construtor do **faixa de opções** classe.  
   
--   No método de CreateRibbonExtensibilityObject a `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe do seu projeto.  
+-   No `CreateRibbonExtensibilityObject` método o `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe do seu projeto.  
   
- Menus dinâmicos fornecem algumas exceções. Você pode criar novos controles, definir suas propriedades e, em seguida, adicioná-los para um menu dinâmico em tempo de execução, mesmo depois que a faixa de opções que contém o menu é carregada.  
+ Menus dinâmicos fornecem algumas exceções. Você pode criar novos controles, definir suas propriedades e adicioná-los para um menu dinâmico em tempo de execução, mesmo depois que a faixa de opções que contém o menu é carregada.  
   
  Propriedades de controles que você adicionar a um menu dinâmico podem ser definidas a qualquer momento.  
   
- Para obter mais informações, consulte [propriedades que torne-se somente leitura](#ReadOnlyProperties).  
+ Para obter mais informações, consulte [propriedades que se tornam somente leitura](#ReadOnlyProperties).  
   
-### <a name="setting-properties-in-the-constructor-of-the-ribbon"></a>Definindo propriedades no construtor da faixa de opções  
+### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>Definir propriedades no construtor da faixa de opções  
  Você pode definir as propriedades de um `Ribbon` controle no construtor do **faixa de opções** classe. Esse código deve aparecer após a chamada para o `InitializeComponent` método. O exemplo a seguir adiciona um novo botão a um grupo se a hora atual for 17:00 horário do Pacífico (UTC-8) ou posterior.  
   
  Adicione o código a seguir.  
   
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
+ [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
+ [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
   
  Em projetos Visual c# que você atualizou do Visual Studio 2008, o construtor aparece no arquivo de código da faixa de opções.  
   
  Em projetos do Visual Basic, ou em projetos do Visual c# que você criou no [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], o construtor aparece no arquivo de código de Designer de faixa de opções. Esse arquivo é denominado *YourRibbonItem*. Designer.cs ou *YourRibbonItem*. VB. Para ver esse arquivo em projetos do Visual Basic, você deve primeiro clique o **Mostrar todos os arquivos** botão no Gerenciador de soluções.  
   
-### <a name="setting-properties-in-the-createribbonextensibilityobject-method"></a>Definindo propriedades no método CreateRibbonExtensibilityObject  
- Você pode definir as propriedades de um `Ribbon` controlar quando você substituir o método CreateRibbonExtensibilityObject o `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe do seu projeto. Para obter mais informações sobre o método CreateRibbonExtensibilityObject, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
+### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>Definir propriedades no método CreateRibbonExtensibilityObject  
+ Você pode definir as propriedades de um `Ribbon` controlar quando você substituir o `CreateRibbonExtensibilityObject` método o `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe do seu projeto. Para obter mais informações sobre o `CreateRibbonExtensibilityObject` método, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).  
   
- O exemplo a seguir define as propriedades de faixa de opções no método de CreateRibbonExtensibilityObject a `ThisWorkbook` classe de um projeto de pasta de trabalho do Excel.  
+ O exemplo a seguir define as propriedades de faixa de opções no `CreateRibbonExtensibilityObject` método o `ThisWorkbook` classe de um projeto de pasta de trabalho do Excel.  
   
  Adicione o código a seguir.  
   
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
+ [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
+ [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
 ###  <a name="ReadOnlyProperties"></a> Propriedades que se tornam somente leitura  
  A tabela a seguir mostra as propriedades que só podem ser definidas antes do carregamento de faixa de opções.  
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/16/2018
 |**Guias**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Título**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
   
-### <a name="setting-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Definindo propriedades para faixas de opções que aparecem em inspetores do Outlook  
+### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Definir as propriedades de faixas de opções que aparecem em inspetores do Outlook  
  Uma nova instância da faixa de opções é criada toda vez que um usuário abre um Inspetor no qual a faixa de opções é exibida. No entanto, você pode definir as propriedades listadas na tabela acima, antes da primeira instância da faixa de opções é criada. Após a primeira instância é criada, essas propriedades se tornar somente leitura porque a primeira instância define o arquivo XML que usa o Outlook para carregar a faixa de opções.  
   
  Se você tem lógica condicional que define qualquer uma dessas propriedades para um valor diferente quando outras instâncias da faixa de opções são criadas, esse código não terá nenhum efeito.  
@@ -187,16 +188,15 @@ ms.lasthandoff: 04/16/2018
 |*e*|Um <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contém um <xref:Microsoft.Office.Core.IRibbonControl>. Use este controle para acessar qualquer propriedade que não está disponível no modelo de objeto da faixa de opções fornecido pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Consulte também  
- [Acessando a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
  [Como: personalizar a faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Designer de faixa de opções](../vsto/ribbon-designer.md)   
- [Passo a passo: Criando uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Passo a passo: Atualizando os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [Personalizando uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)   
  [Como: adicionar controles à exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Como: exportar uma faixa de opções do Designer de faixa de opções de XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Como mostrar erros de interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)  
-  
-  
+ [Como: exportar uma faixa de opções do Designer de faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Como: suplemento Mostrar erros de interface do usuário](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ 

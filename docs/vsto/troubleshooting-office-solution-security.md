@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7edb1826816ea4f20d66b91a7f9819ef394ce98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693312"
 ---
 # <a name="troubleshooting-office-solution-security"></a>Solucionando problemas de segurança da solução do Office
   Este tópico contém dicas para resolver problemas comuns que você pode encontrar ao trabalhar com Protegendo soluções do Office.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>Confiável não podem ser instaladas soluções de Sites restritos  
- Os usuários não é possível instalar uma solução de um local da web se o site da web estiver na zona de sites restritos do Internet Explorer. Isso é verdadeiro mesmo se a solução é assinada com um certificado confiável.  
+ Os usuários não é possível instalar uma solução de um local da web se o site estiver na zona de sites restritos do Internet Explorer. Isso é verdadeiro mesmo se a solução é assinada com um certificado confiável.  
   
  A URL do manifesto de implantação pode ser categorizada em um dos cinco zonas:  
   

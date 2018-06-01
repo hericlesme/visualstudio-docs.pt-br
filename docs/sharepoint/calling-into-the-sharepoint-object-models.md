@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3795b7c920415ee733e08132234de381cf610aba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 795fd4a146aaedbfb4035cfc028bd37e0b0282fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691707"
 ---
-# <a name="calling-into-the-sharepoint-object-models"></a>Chamando os modelos de objeto do SharePoint
+# <a name="calling-into-the-sharepoint-object-models"></a>A chamada para os modelos de objeto do SharePoint
   Quando você criar extensões para ferramentas do SharePoint no Visual Studio, você terá que chamar as APIs do SharePoint para realizar certas tarefas. Por exemplo, se você criar uma etapa de implantação para projetos do SharePoint, você talvez precise chamar as APIs para executar algumas tarefas para implantar soluções do SharePoint.  
   
  [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] fornecem dois modelos de objeto diferentes que você pode usar extensões de ferramentas do SharePoint: um modelo de objeto de servidor e um modelo de objeto do cliente. Cada modelo de objeto tem vantagens e desvantagens no contexto de extensões de ferramentas do SharePoint.  
   
  Para obter uma visão geral dos modelos de objeto do SharePoint, consulte [visão geral sobre as extensões de ferramentas de programação modelo do SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   
-## <a name="using-the-client-object-model-in-extension-projects"></a>Usando o modelo de objeto do cliente em projetos de extensão  
+## <a name="using-the-client-object-model-in-extension-projects"></a>Usando o modelo de objeto do cliente em projetos de extensão
  Quando você desenvolve uma extensão para as ferramentas do SharePoint, você pode usar o modelo de objeto do cliente em seu projeto como qualquer outro conjunto de APIs gerenciadas. Você pode adicionar referências a assemblies no modelo de objeto de cliente ao seu projeto e você pode chamar APIs no modelo de objeto de cliente diretamente do seu código.  
   
  No entanto, o modelo de objeto do cliente tem duas desvantagens no contexto de extensões de ferramentas do SharePoint:  
@@ -42,9 +43,9 @@ ms.lasthandoff: 04/16/2018
   
  Para uma explicação passo a passo que demonstra como usar o modelo de objeto do cliente em uma extensão de ferramentas do SharePoint no Visual Studio, consulte [passo a passo: chamando o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
-## <a name="using-the-server-object-model-in-extension-projects"></a>Usando o modelo de objeto de servidor em projetos de extensão  
+## <a name="using-the-server-object-model-in-extension-projects"></a>Usando o modelo de objeto de servidor em projetos de extensão
  O modelo de objeto de servidor é um superconjunto do modelo de objeto de cliente. Quando você usa o modelo de objeto de servidor, você pode usar todos os recursos que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] expor por meio de programação.  
-  
+
  Extensões de ferramentas do SharePoint podem usar as APIs no modelo de objeto do servidor, mas eles não é possível chamar as APIs diretamente. O modelo de objeto de servidor pode ser chamado apenas de um processo de 64 bits que tem como destino o .NET Framework 3.5. No entanto, extensões de ferramentas do SharePoint exigem o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e que são executados no processo do Visual Studio de 32 bits. Isso impede que as extensões de ferramentas do SharePoint referenciar os assemblies no modelo de objeto do SharePoint server diretamente.  
   
  Se você quiser usar o modelo de objeto de servidor em uma extensão de ferramentas do SharePoint, você deve criar um personalizado *comando SharePoint* para chamar a API. Você pode definir o comando do SharePoint em um assembly secundário que pode chamar diretamente o modelo de objeto do servidor. No seu projeto de extensão, você chamar o comando do SharePoint indiretamente por meio do método ExecuteCommand de um <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> objeto.  
@@ -53,12 +54,11 @@ ms.lasthandoff: 04/16/2018
   
  Para instruções passo a passo que demonstre como criar e usar comandos do SharePoint, consulte [passo a passo: Criando uma etapa de implantação personalizada para projetos SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) e [passo a passo: estendendo o Gerenciador de servidores Web de exibição Partes](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-### <a name="understanding-how-sharepoint-commands-are-executed"></a>Noções básicas sobre como SharePoint comandos são executados  
+### <a name="understand-how-sharepoint-commands-are-executed"></a>Entender como os comandos do SharePoint são executados
  Módulos (assemblies) que definem os comandos do SharePoint é carregados em um processo de host de 64 bits, chamado vssphost4.exe. Depois de chamar um comando do SharePoint em uma extensão de ferramentas do SharePoint, o comando é executado pelo vssphost4.exe em vez do processo do Visual Studio de 32 bits (devenv.exe). Você pode controlar alguns aspectos de como os comandos do SharePoint são executados, definindo valores no registro. Para obter mais informações, consulte [depuração extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Como: criar um comando do SharePoint](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [Como: executar um comando do SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Visão geral do modelo de programação das extensões das Ferramentas do SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  
   

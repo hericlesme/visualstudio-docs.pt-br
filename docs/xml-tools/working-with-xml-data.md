@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693715"
 ---
 # <a name="working-with-xml-data"></a>Trabalhando com dados XML
 
@@ -35,7 +36,7 @@ Os recursos adicionais incluem:
 
 - Suporte para editar folhas de estilos XSLT, incluindo suporte a IntelliSense.
 
-- XML Schema Explorer.
+- **XML Schema Explorer**.
 
 ## <a name="xml-schema-designer"></a>Designer de esquema XML
 
@@ -49,11 +50,11 @@ O Visual Studio dá suporte a depuração de folhas de estilos XSLT. Usando o de
 
 [Depuração XSLT](../xml-tools/debugging-xslt.md) discute como depurar usando o depurador do Visual Studio de folhas de estilo.
 
-[Referência de padrões de XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), linguagem de definição de esquema XML (XSD) e XSLT.
+[Referência de padrões XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), linguagem de definição de esquema XML (XSD) e XSLT.
 
 [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) fornece uma explicação sobre as ferramentas de tempo de design para a criação de conjuntos de dados.
 
-[XML Web Services no código gerenciado](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) discute como criar e implantar XML Web services e como acessar serviços Web XML.
+[Serviços Web XML no código gerenciado](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) discute como criar e implantar XML Web services e como acessar serviços Web XML.
 
 ## <a name="see-also"></a>Consulte também
 

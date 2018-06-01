@@ -1,5 +1,5 @@
 ---
-title: Publicar o Assistente (desenvolvimento do Office no Visual Studio) | Microsoft Docs
+title: Publicar o Assistente (desenvolvimento do Office no Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692714"
 ---
-# <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de Publicação (desenvolvimento do Office no Visual Studio)
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Publicar o Assistente (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, crie os arquivos de manifesto e crie um programa de instalação.  
   
  Para acessar esse assistente, no **criar** menu, escolha **publicar** *SolutionName*. Você também pode acessar o **Assistente de publicação** de **Gerenciador de soluções**. Abra o menu de atalho para o nó do projeto e escolha **publicar**.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/16/2018
   
  Digite o local como um caminho de disco, compartilhamento de arquivos, site FTP ou URL do site ou clique o **procurar** botão para procurar o local. O caminho pode ser nos seguintes formatos:  
   
--   Um caminho relativo ou absoluto no formato padrão do Windows, como C:\Deploy\MyApplication ou \MyApplication.  
+-   Um caminho relativo ou absoluto no padrão Windows formato, como *C:\Deploy\MyApplication* ou *\MyApplication*.  
   
--   Um caminho de convenção de nomenclatura Universal (UNC), como \\\ServerName\MyApplication\\.  
+-   Um caminho de convenção de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.  
   
 -   Uma URL de uma web site, como http://www.microsoft.com/MyApplication.  
   
@@ -68,8 +69,8 @@ ms.lasthandoff: 04/16/2018
  O Visual Studio não gravar o CD ou DVD. Você deve copiar a saída para um CD ou DVD manualmente.  
   
 ## <a name="see-also"></a>Consulte também  
- [Implantando uma solução do Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Implantar uma solução do Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Página de publicação, Designer de projeto &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
- [Implantando uma solução do Office](../vsto/deploying-an-office-solution.md)  
+ [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Personalização da interface do usuário do Office | Microsoft Docs
+title: Personalização da interface do usuário do Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,11 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a35ca6a868aa1fff2a4bd4bfbd3ec466d5a2107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0152fea139d6351c947412260247c47f79bb6b66
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692454"
 ---
 # <a name="office-ui-customization"></a>Personalização da interface do usuário do Office
   Você pode personalizar a interface do usuário (UI) de aplicativos do Microsoft Office usando as ferramentas de desenvolvedor do Office no Visual Studio. Este tópico descreve os recursos de interface do usuário que você pode personalizar as seções a seguir:  
@@ -78,34 +79,34 @@ ms.lasthandoff: 04/16/2018
   
  O Visual Studio não fornece um designer ou APIs para personalizar o modo de exibição Backstage. No entanto, se você adicionar um **da faixa de opções (XML)** item ao seu projeto do Office, você pode adicionar o XML para o arquivo XML da faixa de opções para personalizar o modo de exibição Backstage. Para obter mais informações sobre **da faixa de opções (XML)** itens, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).  
   
- Para obter mais informações sobre como personalizar o modo de exibição Backstage, consulte [introdução para o modo de exibição do Office 2010 Backstage para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizar a exibição do Office 2010 Backstage para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182188).  
+ Para obter mais informações sobre como personalizar o modo de exibição Backstage, consulte [Introdução à exibição Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizar o modo de exibição Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
 ##  <a name="FormRegion"></a> Regiões de formulário do Outlook  
  Use regiões de formulário para adicionar funcionalidade personalizada aos formulários padrão do Microsoft Office Outlook. Você pode criar regiões de formulário que estendem qualquer formulário existente com os campos adicionais ou controles. Se você criar uma nova região de formulário usando as ferramentas de desenvolvimento do Office no Visual Studio, você pode usar somente os controles de formulários do Windows na região de formulário. Se você importar uma região de formulário projetada no Outlook, você pode usar somente os controles do Outlook nativo.  
   
  Você pode criar regiões de formulário que ocupam diferentes áreas da interface do usuário do Outlook. Por exemplo, regiões de formulário adjacentes são exibidos na parte inferior da primeira página de um formulário, e cada região de formulário adjacente é recolhido. Você também pode adicionar uma região de formulário separado que é exibido como uma página de forma mais completa e que podem aparecer em qualquer formato padrão existente ou um formulário personalizado.  
   
- Para obter mais informações, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).  
+ Para obter mais informações, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="Controls"></a> Controles em documentos  
  Você pode adicionar uma variedade de controles a documentos do Word e planilhas do Excel. Por exemplo, você talvez queira adicionar um controle de seletor de data para um documento para que o usuário possa inserir datas em um formato padrão ou colocar um botão em uma planilha para enviar dados para um banco de dados.  
   
- Ao desenvolver projetos no nível de documento para Excel ou Word, você pode usar o designer do Visual Studio para adicionar controles para o documento ou a pasta de trabalho em seu projeto em tempo de design, ou você pode adicionar programaticamente os controles em tempo de execução. Quando você desenvolver projetos de suplemento do VSTO para Excel ou Word, você pode adicionar programaticamente controles para qualquer documento aberto ou a pasta de trabalho em tempo de execução.  
+ Ao desenvolver projetos no nível de documento para Excel ou Word, você pode usar o designer do Visual Studio para adicionar controles para o documento ou a pasta de trabalho em seu projeto em tempo de design, ou você pode adicionar programaticamente os controles em tempo de execução. Quando você desenvolver projetos de suplemento do VSTO para Excel ou Word, você pode adicionar programaticamente os controles para qualquer documento aberto ou a pasta de trabalho em tempo de execução.  
   
- Para obter mais informações, consulte [itens de Host e visão geral dos controles de Host](../vsto/host-items-and-host-controls-overview.md) e [controles dos Windows Forms na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Para obter mais informações, consulte [itens de Host e visão geral dos controles de host](../vsto/host-items-and-host-controls-overview.md) e [controles na visão geral de documentos do Office dos Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Menus de atalho  
- Um menu de atalho aparece quando você clica em um documento ou uma janela de aplicativo. Você pode definir um menu de atalho aparecem após um evento, como quando um usuário clica um documento, a pasta de trabalho ou o controle de host. Você pode adicionar um número de comandos de menu diferente ou controles para um menu de atalho. Crie menus de atalho por meio de XML. Se você adicionar um **da faixa de opções (XML)** item ao seu projeto do Office, você pode adicionar o XML para o arquivo XML da faixa de opções para criar menus de atalho. Para obter mais informações sobre como usar XML para criar menus de atalho, consulte [como: adicionar comandos a Menus de atalho](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Um menu de atalho aparece quando você clica em um documento ou uma janela de aplicativo. Você pode definir um menu de atalho aparecem após um evento, como quando um usuário clica um documento, a pasta de trabalho ou o controle de host. Você pode adicionar um número de comandos de menu diferente ou controles para um menu de atalho. Crie menus de atalho por meio de XML. Se você adicionar um **da faixa de opções (XML)** item ao seu projeto do Office, você pode adicionar o XML para o arquivo XML da faixa de opções para criar menus de atalho. Para obter mais informações sobre como usar XML para criar menus de atalho, consulte [como: adicionar comandos a menus de atalho](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visão geral da faixa de opções](../vsto/ribbon-overview.md)   
- [Controles em Visão geral de documentos do Office do Windows Forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Controles em Visão geral de documentos do Office do Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Visão geral do painel de ações](../vsto/actions-pane-overview.md)   
- [Criando regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)   
+ [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)   
  [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)   
- [Usando controles WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md)   
+ [Use os controles do WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Como: exibir a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Como: Mostrar erros de Interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [Instruções passo a passo: coletando dados usando um Formulário do Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
+ [Como: suplemento Mostrar erros de interface do usuário](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Passo a passo: Coletar dados usando um formulário do Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
   
   

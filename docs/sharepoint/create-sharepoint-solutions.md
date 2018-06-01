@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691598"
 ---
 # <a name="create-sharepoint-solutions"></a>Criar soluções do SharePoint
   Você pode criar aplicativos do SharePoint no Visual Studio como uma alternativa a criá-los no SharePoint Designer. O Visual Studio promove rápido desenvolvimento do SharePoint, fornecendo recursos como ferramentas avançadas de depuração, IntelliSense, conclusão da instrução e modelos de projeto. O Visual Studio também aproveita as ferramentas avançadas com base no .NET Framework e idiomas. Você pode desenvolver projetos do SharePoint usando o Visual Basic ou Visual c#, e você pode desenvolver um aplicativo para projetos do SharePoint usando JavaScript.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![Centro de desenvolvedores do MSDN](../sharepoint/media/vs-icon-msdndevcenter.gif "MSDN Developer Center")|**Centros de desenvolvedor do MSDN**<br /><br /> -   [Centro de desenvolvimento do Visual Studio](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [Centro do desenvolvedor do SharePoint](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [SharePoint Server Developer Center](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [Centro de desenvolvedores do SharePoint Designer](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [Centro de desenvolvedores do ASP.NET](http://msdn.microsoft.com/aa336522.aspx)|  
 |![Fornecendo comentários](../sharepoint/media/vs-icon-feedback.gif "enviando comentários")|**Fornecendo comentários**<br /><br /> Envie seu feedback sobre o Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Forneça seu feedback sobre a documentação do Visual Studio:<br /><br /> -   **Modo de exibição leve.** Se você estiver na parte superior de qualquer tópico, você pode escolher o **classificar este tópico** link para ir até a parte inferior do tópico, onde é possível especificar **Sim** ou **não** em resposta a **Você achou isso útil?** Você pode selecionar uma ou mais das caixas de seleção que serão exibidos se você escolheu **não**, fornecem mais informações na caixa de texto, ou ambas. Quando você terminar, escolha o **enviar** botão.<br />-   **Exibição sem scripts.** Na parte superior do tópico, escolha o **comentários** link para fornecer comentários no Fórum do MSDN, TechNet e comentários de biblioteca de expressão.<br />-   **Modo de exibição clássico.** Na parte superior do tópico, escolha o **clique para classificar e fornecer Feedback** ícones para fornecer comentários sobre o tópico para a equipe de documentação.|  
   
-  
+ 

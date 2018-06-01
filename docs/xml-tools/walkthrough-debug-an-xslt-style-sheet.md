@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c2b986318940dc7103997eaef1681d2c239e01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebc8e8f8700690a2ae74fcc91384fb77b238ea33
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693390"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Passo a passo: Depurar uma folha de estilos XSLT
 
@@ -32,13 +33,13 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
 
 1.  Do **arquivo** , aponte para **abrir**e clique em **arquivo**.
 
-2.  Localize o arquivo belowAvg.xsl e clique em **abrir**.
+2.  Localize o *belowAvg.xsl* de arquivo e clique em **abrir**.
 
      A folha de estilos é aberta no editor XML.
 
 3.  Clique no botão Procurar (**...** ) sobre o **entrada** campo da janela de propriedades do documento.
 
-4.  Localize o arquivo books.xml e clique em **abrir**.
+4.  Localize o *books.xml* de arquivo e clique em **abrir**.
 
      Isso define o arquivo de documento de origem que é usado para a transformação XSLT.
 
@@ -48,25 +49,25 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
 
 Isso inicia o processo de depuração e abre várias o windows que são usadas pelo depurador.
 
-Há duas janelas que exibem o documento de entrada e estilos sobrepor. O depurador usar essas janelas para mostrar o estado atual de execução. O depurador é posicionado no elemento de `xsl:if` de folha de estilos e no primeiro nó de livro no arquivo de books.xml.
+Há duas janelas que exibem o documento de entrada e estilos sobrepor. O depurador usar essas janelas para mostrar o estado atual de execução. O depurador está posicionado no `xsl:if` elemento da folha de estilos e no primeiro nó de catálogo no *books.xml* arquivo.
 
-A janela locais exibe todas as variáveis locais e seus valores atuais. Isso inclui variáveis definidos na folha de estilos e também variáveis que o depurador usa para controlar os nós que estão atualmente no contexto.
+O **locais** janela exibe todas as variáveis locais e seus valores atuais. Isso inclui variáveis definidos na folha de estilos e também variáveis que o depurador usa para controlar os nós que estão atualmente no contexto.
 
 O **saída XSL** janela exibe a saída da transformação XSL. Esta janela é separada do **saída do Visual Studio** janela.
 
-## <a name="watch-window"></a>Observação de janela
+## <a name="watch-window"></a>Janela Inspecionar
 
 ### <a name="to-use-the-watch-window"></a>Para usar a janela de observação
 
 1.  Do **depurar** , aponte para **Windows**, aponte para **inspecionar**e clique em **inspecionar 1**.
 
-     Isso torna a observação 1 janela visível.
+     Isso torna o **inspecionar 1** visível da janela.
 
-2.  Tipo `$bookAverage` no **nome** campo e pressione ENTER.
+2.  Tipo `$bookAverage` no **nome** campo e pressione **Enter**.
 
      O valor da variável de `$bookAverage` é exibido na janela.
 
-3.  Tipo `self::node()` no **nome** campo e pressione ENTER.
+3.  Tipo `self::node()` no **nome** campo e pressione **Enter**.
 
      `self::node()` é uma expressão XPath que avalia ao nó atual de contexto. O valor da expressão XPath de `self::node()` é o primeiro nó de livro. Isso é alterado como nós progredimos com a transformação.
 
@@ -74,26 +75,26 @@ O **saída XSL** janela exibe a saída da transformação XSL. Esta janela é se
 
      Isso permite que você possa ver o valor do custo do livro e você pode facilmente compará-lo ao valor de `$bookAverage` . Porque o custo de livro abaixo de média, a condição de `xsl:if` deve obterá êxito.
 
-## <a name="step-through-the-code"></a>Avançar no código
+## <a name="step-through-the-code"></a>Percorrer o código
  O depurador permite que você execute a linha de código por vez.
 
 ### <a name="to-step-through-the-code"></a>Para depurar código
 
 1.  Pressione **F5** para continuar.
 
-     Porque o primeiro nó de livro tiver satisfeito a condição de `xsl:if` , o nó de livro é adicionada à janela de saída XSL. O depurador continuará a ser executado até que está localizado novamente no elemento de `xsl:if` na folha de estilos. O depurador é posicionado agora no segundo nó de livro no arquivo de books.xml.
+     Porque o primeiro nó de catálogo satisfeita o `xsl:if` condição, o nó de catálogo é adicionado para o **saída XSL** janela. O depurador continuará a ser executado até que está localizado novamente no elemento de `xsl:if` na folha de estilos. O depurador agora é posicionado no segundo nó Catálogo de *books.xml* arquivo.
 
-     Na janela Watch1 o valor de `self::node()` alterações no segundo nó de livro. Examinando o valor do elemento de preço, você pode determinar que o preço está acima da média, então a condição de `xsl:if` deve falhar.
+     No **inspecionar 1** janela o `self::node()` valor é alterado para o segundo nó de catálogo. Examinando o valor do elemento de preço, você pode determinar que o preço está acima da média, então a condição de `xsl:if` deve falhar.
 
 2.  Pressione **F5** para continuar.
 
-     Porque o segundo nó de livro não está de acordo com a condição de `xsl:if` , o nó de livro não é adicionada à janela de saída XSL. O depurador continuará a ser executado até que está localizado novamente no elemento de `xsl:if` na folha de estilos. O depurador é posicionado agora no terceiro nó de `book` no arquivo de books.xml.
+     Porque o segundo nó de catálogo não atende a `xsl:if` condição, o nó de catálogo não é adicionado ao **saída XSL** janela. O depurador continuará a ser executado até que está localizado novamente no elemento de `xsl:if` na folha de estilos. Agora, o depurador é posicionado na terceira `book` nó o *books.xml* arquivo.
 
-     Na janela Watch1 o valor de `self::node()` alterações para o terceiro nó de livro. Examinando o valor do elemento de `price` , você pode determinar que o preço abaixo de média, então a condição de `xsl:if` deve obterá êxito.
+     No **inspecionar 1** janela o `self::node()` valor é alterado para o terceiro nó de catálogo. Examinando o valor do elemento de `price` , você pode determinar que o preço abaixo de média, então a condição de `xsl:if` deve obterá êxito.
 
 3.  Pressione **F5** para continuar.
 
-     Porque a condição de `xsl:if` foi encontrada, o terceiro livro é adicionada à janela de saída XSL. Todos os livros no documento XML foram processados e paradas do depurador.
+     Porque o `xsl:if` condição foi atendida, o catálogo de terceiro é adicionado para o **saída XSL** janela. Todos os livros no documento XML foram processados e paradas do depurador.
 
 ## <a name="sample-files"></a>Arquivos de exemplo
 
