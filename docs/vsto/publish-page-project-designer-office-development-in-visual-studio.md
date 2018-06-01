@@ -1,5 +1,5 @@
 ---
-title: Página de publicação, Project Designer (desenvolvimento do Office no Visual Studio) | Microsoft Docs
+title: Página de publicação, Designer de projeto (desenvolvimento do Office no Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,19 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692838"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publicar Página, Designer de Projeto (desenvolvimento do Office no Visual Studio)
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Página de publicação, Designer de projeto (desenvolvimento do Office no Visual Studio)
   O **publicar** página do **Project Designer** é usado para configurar as propriedades de implantação.  
   
  Para acessar essa página, selecione o projeto no **Gerenciador de soluções**e, em seguida, o **projeto** menu, escolha *Projectname* **propriedades** . Se o **publicar** página não for exibida, escolha o **publicar** guia.  
   
 > [!NOTE]  
->  Você também pode definir o local de publicação **Assistente de publicação**. Para obter mais informações, consulte [Como publicar uma solução do Office usando o ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  Você também pode definir o local de publicação **Assistente de publicação**. Para obter mais informações, consulte [como: publicar uma solução do Office usando o ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  **Local da pasta de publicação (site da web, servidor ftp ou caminho do arquivo)**  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  Opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*) relativo (*publicar\\*), ou um local totalmente qualificado (*\\\servername\foldername* ou http://*servername/foldername*).  
   
- Por padrão, o local de publicação é *http://localhost/projectname/* se tiver instalado o IIS ou o diretório Publish se você fizer não tem o IIS instalado.  
+ Por padrão, o local de publicação é *http://localhost/projectname/* se você tiver o IIS instalado, ou o *publicar\\*  directory se você não tiver o IIS instalado.  
   
  **URL da Pasta de Instalação**  
  Opcional.  
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
  Para obter mais informações sobre como alterar o **a linguagem de publicação**, consulte [como: alterar o idioma de publicação para um aplicativo ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
- **Versão da Publicação**  
+ **Versão da publicação**  
  Define o número de versão para a personalização. Quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Uma nova pasta é criada para cada versão durante o processo de compilação para evitar a substituição da versão anteriormente publicada. Cada parte da versão de publicação (**principais**, **secundária**, **criar**, **revisão**) pode conter até cinco dígitos.  
   
  **Incrementar automaticamente a revisão com cada versão**  
@@ -111,8 +112,8 @@ ms.lasthandoff: 04/16/2018
  Publica o aplicativo usando as configurações atuais. Equivalente a **concluir** no botão o **Assistente de publicação**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Implantando uma solução do Office](../vsto/deploying-an-office-solution.md)   
- [Implantando uma solução do Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)   
+ [Implantar uma solução do Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Pré-requisitos de solução do Office para implantação](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

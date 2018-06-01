@@ -10,20 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6884f5b97d52e8d0671f1ccb73a1dabd739afee1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693819"
 ---
-# <a name="walkthrough-using-xml-editor-features"></a>Passo a passo: Usando funcionalidades do editor XML
+# <a name="walkthrough-use-xml-editor-features"></a>Passo a passo: Usar recursos do editor de XML
 
 As etapas nessa explicação passo a passo mostram como criar um novo documento XML. A explicação passo a passo também usa alguns dos recursos do editor XML que tornam valioso para criar XML.
 
 > [!NOTE]
-> Antes de iniciar a explicação passo a passo, salve o arquivo de hireDate.xsd (incluído abaixo neste tópico) para seu computador local.
+> Antes de iniciar o passo a passo, salve o *hireDate.xsd* arquivo (incluído abaixo neste tópico) para o computador local.
 
-## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-la com um esquema XML
+## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-lo a um esquema XML
 
 1.  Sobre o **arquivo** , aponte para **novo**e clique em **arquivo**.
 
@@ -39,7 +40,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
      O **esquema XSD aberto** caixa de diálogo é exibida.
 
-5.  Selecione o arquivo hireDate.xsd e clique em **abrir**.
+5.  Selecione o *hireDate.xsd* de arquivo e clique em **abrir**.
 
 6.  Clique em **OK**.
 
@@ -59,7 +60,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
     -   **funcionário** para adicionar o elemento raiz.
 
-2.  Selecione **<!-** para adicionar um nó de comentário e pressione ENTER.
+2.  Selecione **<!-** para adicionar um nó de comentário e pressione **Enter**.
 
      O editor insere uma marca de fim do comentário e colocar o cursor entre o início e marcas de comentário final.
 
@@ -71,7 +72,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 5.  Tipo `>` para a marca de fechamento.
 
-6.  O editor adiciona a marca de fim. A marca de fim é adicionada com um a linha subescrita ondulada que indica um erro de validação. A dica de ferramenta exibe a mensagem: O elemento “empregado” tem conteúdo incompleto. 'ID' esperado.
+6.  O editor adiciona a marca de fim. A marca de fim é adicionada com um a linha subescrita ondulada que indica um erro de validação. O **dica de ferramenta** exibe a mensagem: **o elemento 'funcionário' apresenta conteúdo incompleto. Esperado 'ID'**.
 
 7.  Tipo `<` e selecione **ID** da lista de membros. Digite `>`.
 
@@ -79,17 +80,17 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 8.  Tipo **abc**.
 
-     O **abc** texto tiver um sublinhado ondulado. A dica de ferramenta exibe a mensagem: O elemento “identificação” tem um valor inválido de acordo com seu tipo de dados.
+     O **abc** texto tiver um sublinhado ondulado. O **dica de ferramenta** exibe a mensagem: **o elemento 'ID' tem um valor inválido de acordo com seu tipo de dados**.
 
-9. Clique com o botão direito no elemento de ID e selecione **ir para definição**.
+9. Clique no elemento de ID e selecione **ir para definição**.
 
-     O editor abre o arquivo de hireDate.xsd em uma nova janela de documento e posicionar o cursor na definição de elemento do esquema de identificação.
+     Abre o editor de *hireDate.xsd* arquivo em uma nova janela de documento e posiciona o cursor na definição de elemento de esquema de ID.
 
 10. Retornar para o arquivo XML e substitua o **abc** texto com **123**.
 
-     O sublinhado e o ToolTip ondulados são desmarcados no valor do elemento ID. A dica de ferramenta para a marca de fim do funcionário agora exibe a mensagem: O elemento “empregado” tem conteúdo incompleto. “Data de admissão esperada”.
+     O sublinhado ondulado e **dica de ferramenta** são limpos com o valor do elemento de ID. O **dica de ferramenta** para o final do funcionário marca agora exibe a mensagem: **o elemento 'funcionário' apresenta conteúdo incompleto. Esperado 'Data de contratação'**.
 
-11. Coloque o cursor após a marca de fim de identificação, digite `<`, data de admissão select da lista de membros, e digite dentro `>`.
+11. Coloque o cursor após a marca de fim de ID, digite `<`, selecione **data de contratação** na lista de membros e, em seguida, digite `>`.
 
      O editor adicione o elemento XML, `<hire-date></hire-date>`, e posicionar o cursor após a marca de início da data de admissão.
 
@@ -105,11 +106,11 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 1.  Do **arquivo** menu, selecione **Salvar como**.
 
-     O **salvar arquivo como** caixa de diálogo é exibida. O nome de arquivo padrão é “XMLFile1”.
+     O **salvar arquivo como** caixa de diálogo é exibida. O nome de arquivo padrão é *'XMLFile1'*.
 
 2.  Insira o nome do arquivo e o local para o documento XML e clique em **salvar**.
 
-## <a name="hiredatexsd-file"></a>hireDate.xsd Arquivo
+## <a name="hiredatexsd-file"></a>arquivo hireDate.xsd
  O seguinte arquivo de esquema é usado por passo a passo.
 
 ```xml

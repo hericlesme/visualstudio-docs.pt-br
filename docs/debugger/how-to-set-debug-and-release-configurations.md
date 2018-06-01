@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690660"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Como: definir depuração e configurações no Visual Studio de versão
 Projetos do Visual Studio têm versão separada e configurações para o programa de depuração. Como o nome sugere, você deve criar a versão de depuração para depuração e a versão de lançamento para a distribuição da versão final.  
@@ -60,7 +61,7 @@ Você pode alterar a configuração de compilação do **criar** menu, na barra 
   
      Essa barra de ferramentas não está disponível em edições Express. Você pode usar o **compilar solução F6** e **iniciar depuração F5** itens de menu para escolher a configuração.
 
-## <a name="BKMK_symbols_release"></a>Gerar arquivos de símbolo (.pbd) para um build
+## <a name="BKMK_symbols_release"></a>Gerar arquivos de símbolo (. PDB) para um build
 
 Para a maioria dos tipos de projeto, os arquivos. PDB são gerados por padrão para ambos os depuração e compilações de lançamento, mas as configurações padrão são diferentes dependendo de seu tipo de projeto específico e a versão do Visual Studio. Você pode configurar se o compilador gera arquivos. PDB e que tipo de informação de depuração para incluir.
 

@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4610a2574fbd822e4468436655668cff3892270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693559"
 ---
-# <a name="xml-document-properties-properties-window"></a>Propriedades de documento XML, a janela de propriedades
+# <a name="xml-document-properties-properties-window"></a>Propriedades de documento XML, janela de propriedades
 
 O **propriedades** janela fornece informações básicas sobre o documento ativo no Editor de XML. As propriedades que estão disponíveis varia dependendo do tipo de documento XML que está atualmente ativa.
 
@@ -54,4 +55,4 @@ O **propriedades** janela fornece informações básicas sobre o documento ativo
 ## <a name="see-also"></a>Consulte também
 
 - [Editor de XML](../xml-tools/xml-editor.md)
-- [Componentes do editor de XML](../xml-tools/xml-editor-components.md)
+- [Componentes do Editor de XML](../xml-tools/xml-editor-components.md)

@@ -1,5 +1,5 @@
 ---
-title: Entradas do registro para suplementos VSTO | Microsoft Docs
+title: Entradas do registro para suplementos do VSTO
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,43 +19,44 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e4c410a6f934c7b4fe4c6239bdfe07364af3152
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2aaec6df10a39d9f07938502a30eaa0a5d4ee9d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692890"
 ---
-# <a name="registry-entries-for-vsto-add-ins"></a>Entradas do Registro para suplementos VSTO
+# <a name="registry-entries-for-vsto-add-ins"></a>Entradas do registro para suplementos do VSTO
   Quando você implanta suplementos do VSTO que são criados usando o Visual Studio, você deve criar um conjunto específico de entradas do registro. Essas entradas de registro fornecem informações que permite que o aplicativo do Microsoft Office descobrir e carregar o suplemento do VSTO.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Quando você compila seu projeto, o Visual Studio cria essas entradas do registro no computador de desenvolvimento para que você pode facilmente executar e depurar o suplemento do VSTO. Se você usar o ClickOnce para implantar o suplemento do VSTO, as entradas do registro serão criadas automaticamente no computador do usuário final. Se você usar o Windows Installer para implantar o suplemento do VSTO, você deve configurar o projeto do InstallShield Limited Edition para criar as entradas do registro no computador do usuário final.  
+ Quando você compila seu projeto, o Visual Studio cria essas entradas do registro no computador de desenvolvimento para que você pode facilmente executar e depurar o suplemento do VSTO. Se você usar o ClickOnce para implantar o suplemento do VSTO, as entradas do registro são criadas automaticamente no computador do usuário final. Se você usar o Windows Installer para implantar o suplemento do VSTO, você deve configurar o projeto do InstallShield Limited Edition para criar as entradas do registro no computador do usuário final.  
   
  Para obter mais informações sobre como as entradas do registro são usadas durante o processo de carregamento de suplementos do VSTO, consulte [suplementos da arquitetura do VSTO](../vsto/architecture-of-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Neste tópico, o texto *na ID de-* representa uma ID exclusiva para o suplemento do VSTO. Por padrão, a ID é o nome do seu assembly do suplemento do VSTO.  
   
-## <a name="registering-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrando o VSTO Add-ins para os usuário atual vs. Todos os usuários  
+## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrar o suplemento do VSTO para o usuário atual e todos os usuários  
  Quando um suplemento do VSTO é instalado, ele pode ser registrado duas maneiras:  
   
--   Somente o usuário atual (ou seja, ele está disponível somente para o usuário que está conectado ao computador quando o suplemento do VSTO é instalado). Nesse caso, as entradas do registro são criadas em HKEY_CURRENT_USER.  
+-   Somente o usuário atual (ou seja, ele é disponível somente para o usuário que estiver conectado ao computador quando o suplemento do VSTO está instalado). Nesse caso, as entradas do registro são criadas sob o **HKEY_CURRENT_USER**.  
   
--   Para todos os usuários (ou seja, qualquer usuário que faz logon no computador pode usar o suplemento do VSTO). Nesse caso, as entradas do registro são criadas em HKEY_LOCAL_MACHINE.  
+-   Para todos os usuários (ou seja, qualquer usuário que fizer logon no computador pode usar o suplemento do VSTO). Nesse caso, as entradas do registro são criadas em **HKEY_LOCAL_MACHINE**.  
   
  Todos os suplementos do VSTO que você cria usando o Visual Studio podem ser registrados para o usuário atual. No entanto, os suplementos do VSTO podem ser registrados para todos os usuários somente em determinados cenários. Nesses cenários dependem da versão do Microsoft Office no computador e como o suplemento do VSTO foi implantado.  
   
 ### <a name="microsoft-office-version"></a>Versão do Microsoft Office  
- Aplicativos do Office podem carregar suplementos do VSTO que são registrados em HKEY_LOCAL_MACHINE ou HKEY_CURRENT_USER.  
+ Aplicativos do Office podem carregar suplementos do VSTO que são registrados em **HKEY_LOCAL_MACHINE** ou **HKEY_CURRENT_USER**.  
   
- Para carregar os suplementos do VSTO que são registrados em HKEY_LOCAL_MACHINE, os computadores devem ter o pacote de atualização 976477 instalado. Para obter mais informações, consulte [http://go.microsoft.com/fwlink/?LinkId=184923](http://go.microsoft.com/fwlink/?LinkId=184923).  
+ Para carregar os suplementos do VSTO que são registrados em **HKEY_LOCAL_MACHINE**, os computadores devem ter o pacote de atualização 976477 instalado. Para obter mais informações, consulte [http://go.microsoft.com/fwlink/?LinkId=184923](http://go.microsoft.com/fwlink/?LinkId=184923).  
   
 ### <a name="deployment-type"></a>Tipo de implantação  
- Se você usar o ClickOnce para implantar um suplemento do VSTO, o suplemento do VSTO pode ser registrado apenas para o usuário atual. Isso ocorre porque o ClickOnce oferece suporte apenas a criação de chaves em HKEY_CURRENT_USER. Se você quiser registrar um suplemento do VSTO para todos os usuários em um computador, você deve usar o Windows Installer para implantar o suplemento do VSTO. Para obter mais informações sobre esses tipos de implantação, consulte [Implantando uma solução do Office por usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) e [Implantando uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Se você usar o ClickOnce para implantar um suplemento do VSTO, o suplemento do VSTO pode ser registrado apenas para o usuário atual. Isso ocorre porque o ClickOnce oferece suporte apenas a criação de chaves em **HKEY_CURRENT_USER**. Se você quiser registrar um suplemento do VSTO para todos os usuários em um computador, você deve usar o Windows Installer para implantar o suplemento do VSTO. Para obter mais informações sobre esses tipos de implantação, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) e [implantar uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
 ## <a name="registry-entries"></a>Entradas do registro  
- As entradas de registro do suplemento do VSTO necessárias estão localizadas na seguinte chave do registro para todos os aplicativos, exceto o Visio, onde *raiz* é HKEY_CURRENT_USER ou HKEY_LOCAL_MACHINE.  
+ As entradas de registro do suplemento do VSTO necessárias estão localizadas na seguinte chave do registro para todos os aplicativos, exceto o Visio, onde *raiz* é **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE** .  
   
  **Todos os aplicativos, exceto o Visio**  
   
@@ -77,17 +78,17 @@ ms.lasthandoff: 04/16/2018
 |-----------|----------|-----------|  
 |**Descrição**|REG_SZ|Necessário. Uma breve descrição do suplemento do VSTO.<br /><br /> Essa descrição é exibida quando o usuário seleciona o suplemento do VSTO no **Add-Ins** painel do **opções** caixa de diálogo no aplicativo do Microsoft Office.|  
 |**Nome amigável**|REG_SZ|Necessário. Um nome descritivo do Add-in do VSTO que é exibido no **suplementos COM** caixa de diálogo no aplicativo do Microsoft Office. O valor padrão é a ID do suplemento do VSTO|  
-|**LoadBehavior**|REG_DWORD|Necessário. Um valor que especifica quando o aplicativo tenta carregar o suplemento do VSTO e o estado atual do VSTO Add-in (carregado ou não carregado).<br /><br /> Por padrão, essa entrada é definida como 3, que especifica que o suplemento do VSTO é carregado na inicialização. Para obter mais informações, consulte [LoadBehavior valores](#LoadBehavior). **Observação:** se um usuário desativa o suplemento do VSTO, essa ação modifica **LoadBehavior** valor no hive do registro HKEY_CURRENT_USER. Para cada usuário, o valor de **LoadBehavior** valor na seção HKEY_CURRENT_USER substitui o padrão **LoadBehavior** definida na seção HKEY_LOCAL_MACHINE.|  
-|**Manifesto**|REG_SZ|Necessário. O caminho completo do manifesto de implantação para o suplemento do VSTO. O caminho pode ser um local no computador local, um servidor Web (HTTP) ou um compartilhamento de rede (UNC).<br /><br /> Se você usar o Windows Installer para implantar a solução, você deve adicionar o prefixo **file:///** para o **manifesto** caminho. Você também deve acrescentar a cadeia de caracteres  **&#124;vstolocal** (ou seja, o caractere de pipe **&#124;** seguido por **vstolocal**) ao final desse caminho. Isso garante que sua solução será carregada a partir da pasta de instalação, em vez de cache do ClickOnce. Para obter mais informações, consulte [Implantando uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Observação:** quando você criar um suplemento do VSTO no computador de desenvolvimento, o Visual Studio anexa automaticamente o  **&#124;vstolocal** cadeia de caracteres para esta entrada do registro.|  
+|**LoadBehavior**|REG_DWORD|Necessário. Um valor que especifica quando o aplicativo tenta carregar o suplemento do VSTO e o estado atual do VSTO Add-in (carregado ou não carregado).<br /><br /> Por padrão, essa entrada é definida como 3, que especifica que o suplemento do VSTO é carregado na inicialização. Para obter mais informações, consulte [LoadBehavior valores](#LoadBehavior). **Observação:** se um usuário desativa o suplemento do VSTO, essa ação modifica **LoadBehavior** valor o **HKEY_CURRENT_USER** hive do registro. Para cada usuário, o valor da **LoadBehavior** valor na seção HKEY_CURRENT_USER substitui o padrão **LoadBehavior** definido no **HKEY_LOCAL_MACHINE** hive.|  
+|**Manifesto**|REG_SZ|Necessário. O caminho completo do manifesto de implantação para o suplemento do VSTO. O caminho pode ser um local no computador local, um servidor Web (HTTP) ou um compartilhamento de rede (UNC).<br /><br /> Se você usar o Windows Installer para implantar a solução, você deve adicionar o prefixo **file:///** para o **manifesto** caminho. Você também deve acrescentar a cadeia de caracteres  **&#124;vstolocal** (ou seja, o caractere de pipe **&#124;** seguido por **vstolocal**) ao final desse caminho. Isso garante que sua solução será carregada a partir da pasta de instalação, em vez de cache do ClickOnce. Para obter mais informações, consulte [implantar uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Observação:** quando você criar um suplemento do VSTO no computador de desenvolvimento, o Visual Studio anexa automaticamente o  **&#124;vstolocal** cadeia de caracteres para esta entrada do registro.|  
   
 ###  <a name="OutlookEntries"></a> Entradas do registro para regiões de formulário do Outlook  
- Se você criar uma região de formulário personalizado em um suplemento do VSTO para Outlook, entradas de registro adicionais são usadas para registrar a região de formulário com o Outlook. Essas entradas são criadas em uma chave do registro diferente para cada classe de mensagem que dá suporte a região do formulário. Essas chaves do registro estão no local a seguir, onde *raiz* é HKEY_CURRENT_USER ou HKEY_LOCAL_MACHINE.  
+ Se você criar uma região de formulário personalizado em um suplemento do VSTO para Outlook, entradas de registro adicionais são usadas para registrar a região de formulário com o Outlook. Essas entradas são criadas em uma chave do registro diferente para cada classe de mensagem que dá suporte a região do formulário. Essas chaves do registro estão no local a seguir, onde *raiz* é **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE**.  
   
  *Raiz*\Software\Microsoft\Office\Outlook\FormRegions\\*classe message*  
   
- Como as outras entradas do registro compartilhadas por todos os suplementos do VSTO, Visual Studio cria o formulário região entradas de registro no computador de desenvolvimento quando você compilar o projeto. Se você usar o ClickOnce para implantar o suplemento do VSTO, as entradas do registro serão criadas automaticamente no computador do usuário final. Se você usar o Windows Installer para implantar o suplemento do VSTO, você deve configurar o projeto do InstallShield Limited Edition para criar as entradas do registro no computador do usuário final.  
+ Como as outras entradas do registro compartilhadas por todos os suplementos do VSTO, Visual Studio cria o formulário região entradas de registro no computador de desenvolvimento quando você compilar o projeto. Se você usar o ClickOnce para implantar o suplemento do VSTO, as entradas do registro são criadas automaticamente no computador do usuário final. Se você usar o Windows Installer para implantar o suplemento do VSTO, você deve configurar o projeto do InstallShield Limited Edition para criar as entradas do registro no computador do usuário final.  
   
- Para obter mais informações sobre as entradas de registro de região de formulário, consulte [especificar o local de uma região de formulário em um formulário personalizado](http://msdn.microsoft.com/library/office/ff868998.aspx). Para obter mais informações sobre regiões de formulário do Outlook, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).  
+ Para obter mais informações sobre as entradas de registro de região de formulário, consulte [especificar o local de uma região de formulário em um formulário personalizado](http://msdn.microsoft.com/library/office/ff868998.aspx). Para obter mais informações sobre regiões de formulário do Outlook, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> Valores de LoadBehavior  
  O **LoadBehavior** entrada sob o *raiz*\Software\Microsoft\Office\\*nome do aplicativo*\Addins\\*suplemento ID* chave contém uma combinação bit a bit de valores que especificam o comportamento de tempo de execução do suplemento do VSTO. O bit mais baixo (os valores 0 e 1) indica se o suplemento do VSTO está descarregado ou carregado. Outros bits indicam quando o aplicativo tenta carregar o suplemento do VSTO.  
@@ -109,7 +110,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Consulte também  
  [Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [Arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Criando soluções do Office](../vsto/building-office-solutions.md)   
- [Implantando uma solução do Office](../vsto/deploying-an-office-solution.md)  
+ [Criar soluções do Office](../vsto/building-office-solutions.md)   
+ [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)  
   
   

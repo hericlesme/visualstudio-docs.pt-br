@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31fd55358023e0ec3b11fbb048bdfa2b240b1859
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693832"
 ---
 # <a name="xml-document-validation"></a>Validação de documento XML
 
@@ -22,7 +23,7 @@ O Editor XML verifica a sintaxe do XML 1.0 e também executa validação de dado
 
  Os esquemas usados na validação são encontrados correspondendo o `targetNamespace` de um esquema compilado com a declaração xmlns do elemento. Os esquemas compilados são carregados de um dos seguintes locais, listados por ordem de prioridade:
 
--   Do nome de arquivo especificado no **esquemas** campo da janela de propriedades do documento.
+-   Do nome de arquivo especificado no **esquemas** campo do documento **propriedades** janela.
 
 -   Um esquema ou DTD embutido.
 
@@ -39,10 +40,10 @@ Os esquemas também podem ser encontrados nos seguintes locais adicionais quando
 -   Um esquema do diretório de cache de esquema.
 
 ## <a name="xslt-files"></a>Arquivos XSLT
- Ao editar um arquivo XSLT, o arquivo de xslt.xsd localizado no cache de esquema é usado para validação. Os erros de validação são mostrados como sublinhados ondulados azuis. Os erros do compilador XSLT são mostrados como sublinhados ondulados vermelhos.
+ Ao editar um arquivo XSLT, o *xslt.xsd* arquivo localizado no cache do esquema é usado para validação. Os erros de validação são mostrados como sublinhados ondulados azuis. Os erros do compilador XSLT são mostrados como sublinhados ondulados vermelhos.
 
-## <a name="xml-schema-xsd-files"></a>Arquivos XSD (esquema XML)
- Ao editar um arquivo de esquema XML, o arquivo de xsdschema.xsd localizado no cache de esquema é usado para validação. Os erros de validação são mostrados como sublinhados ondulados azuis. Todos os erros de compilação também são mostrados com traços ondulados vermelhos.
+## <a name="xml-schema-xsd-files"></a>Arquivos de esquema (XSD) XML
+ Ao editar um arquivo de esquema XML, o *xsdschema.xsd* arquivo localizado no cache do esquema é usado para validação. Os erros de validação são mostrados como sublinhados ondulados azuis. Todos os erros de compilação também são mostrados com traços ondulados vermelhos.
 
 ## <a name="see-also"></a>Consulte também
 

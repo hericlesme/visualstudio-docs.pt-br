@@ -1,5 +1,5 @@
 ---
-title: Considerações sobre segurança específicas para soluções do Office | Microsoft Docs
+title: Considerações sobre segurança específicas para soluções do Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,18 +21,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f799a0ef393def5c77249f51a26278bd419ac523
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7da9446a4a5e4538164b09d1f11733f7bde3de24
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693351"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerações sobre segurança específicas para soluções do Office
   Os recursos de segurança fornecidos pelo Microsoft .NET Framework e do Microsoft Office podem ajudar a proteger as soluções do Office contra possíveis ameaças de segurança. Este tópico explica essas ameaças e fornece recomendações para ajudar a proteger contra elas. Ela também inclui informações sobre como as configurações de segurança do Microsoft Office afetam soluções do Office.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Confiável código é redefinido em um novo documento mal-intencionado  
+## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Código confiável é redefinido em um novo documento mal-intencionado  
  Um invasor pode executar código confiável destina-se para uma finalidade específica, por exemplo, fazer o download de informações pessoais para um aplicativo de emprego, e reutilizá-lo em outro documento, como uma planilha. O código não sabe que o documento original não está em execução e outras ameaças, como revelar informações pessoais ou execução de código com privilégios maiores, quando aberto por outro usuário pode abrir. Como alternativa, o invasor simplesmente pode modificar os dados na planilha, de modo que, quando enviado para a vítima, ele se comporta inesperadamente. Alterando os valores, fórmulas ou características de apresentação de uma planilha vinculada ao código, é possível que um usuário mal-intencionado atacar a outro usuário, enviando um arquivo modificado. Também é possível que os usuários que não deveriam ser consulte Modificando os valores na planilha de informações de acesso.  
   
  Como o local do assembly e o local do documento devem ter evidências suficientes para executar, esse ataque não é fácil de montagem. Por exemplo, documentos em anexos de email ou em servidores da intranet não confiáveis não tem permissões suficientes para executar.  
@@ -58,19 +59,19 @@ ms.lasthandoff: 04/16/2018
   
 -   Se o Outlook é usado com o Exchange, um administrador pode habilitar ou desabilitar a proteção de modelo de objeto para todos os suplementos do VSTO no computador, ou o administrador pode especificar que certos suplementos do VSTO podem ser executada sem encontrar o protetor de modelo de objeto. Os administradores também podem modificar o comportamento de proteção de modelo de objeto para determinadas áreas do modelo de objeto. Por exemplo, administradores podem permitir automaticamente suplemento do VSTO enviar email programaticamente, mesmo que a proteção de modelo de objeto esteja habilitada.  
   
- A partir do Outlook 2007, o comportamento de proteção de modelo de objeto foi alterado para melhorar a experiência de desenvolvedor e o usuário enquanto ajuda a proteger o Outlook. Para obter mais informações, consulte [alterações de segurança de código no Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
+ A partir do Outlook 2007, o comportamento de proteção de modelo de objeto foi alterado para melhorar a experiência de desenvolvedor e o usuário enquanto ajuda a proteger o Outlook. Para obter mais informações, consulte [código alterações de segurança no Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
-### <a name="minimizing-object-model-guard-warnings"></a>Minimizando avisos de proteção do modelo de objeto  
- Para evitar avisos de segurança quando você usar métodos e propriedades restritas, certifique-se de que seu suplemento do VSTO obtém objetos do Outlook do `Application` campo o `ThisAddIn` classe em seu projeto. Para obter mais informações sobre esse campo, consulte [Programando suplementos do VSTO](../vsto/programming-vsto-add-ins.md).  
+### <a name="minimize-object-model-guard-warnings"></a>Minimizar os avisos de proteção do modelo de objeto  
+ Para evitar avisos de segurança quando você usar métodos e propriedades restritas, certifique-se de que seu suplemento do VSTO obtém objetos do Outlook do `Application` campo o `ThisAddIn` classe em seu projeto. Para obter mais informações sobre esse campo, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).  
   
- Somente objetos do Outlook obtidos do objeto podem ser confiável para a proteção de modelo de objeto. Por outro lado, os objetos que são obtidos de um novo objeto Microsoft.Office.Interop.Outlook.Application não são confiáveis e restrito de propriedades e métodos gerará avisos de segurança se a proteção de modelo de objeto é ativada.  
+ Somente objetos do Outlook obtidos do objeto podem ser confiável para a proteção de modelo de objeto. Em contraste, os objetos que são obtidos de um novo `Microsoft.Office.Interop.Outlook.Application` objeto não são confiáveis e restrito de propriedades e métodos gerará avisos de segurança se a proteção de modelo de objeto é ativada.  
   
- O exemplo de código a seguir exibe um aviso de segurança se a proteção de modelo de objeto é ativada. A propriedade para a classe Microsoft.Office.Interop.Outlook.MailItem é restringida pela proteção de modelo de objeto. O objeto Microsoft.Office.Interop.Outlook.MailItem não é confiável porque o código obtém a ele de um Microsoft.Office.Interop.Outlook.Application que é criado usando o **novo** operador, em vez de obtenção do `Application` campo.  
+ O exemplo de código a seguir exibe um aviso de segurança se a proteção de modelo de objeto é ativada. O `To` propriedade o `Microsoft.Office.Interop.Outlook.MailItem` classe é restringida pela proteção de modelo de objeto. O `Microsoft.Office.Interop.Outlook.MailItem` objeto não é confiável porque o código obtém de uma `Microsoft.Office.Interop.Outlook.Application` que é criado usando o **novo** operador, em vez de obtenção do `Application` campo.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- O exemplo de código a seguir demonstra como usar o restrito a propriedade de um objeto de Microsoft.Office.Interop.Outlook.MailItem que é confiável para a proteção de modelo de objeto. O código usa a confiável `Application` campo para obter o Microsoft.Office.Interop.Outlook.MailItem.  
+ O exemplo de código a seguir demonstra como usar o restrito à propriedade de um `Microsoft.Office.Interop.Outlook.MailItem` objeto que é confiável para a proteção de modelo de objeto. O código usa a confiável `Application` campo para obter o `Microsoft.Office.Interop.Outlook.MailItem`.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
@@ -78,17 +79,17 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Se o Outlook é usado com o Exchange, em seguida, obter todos os objetos do Outlook do `ThisAddIn.Application` não garante que o suplemento do VSTO será capaz de acessar todo o modelo de objeto do Outlook. Por exemplo, se um administrador do Exchange define automaticamente o Outlook negar todas as tentativas de acessar informações de endereço usando o modelo de objeto do Outlook, Outlook não permitirá que o exemplo de código anterior acessar a propriedade To, mesmo que use o exemplo de código o confiável `ThisAddIn.Application` campo.  
   
-### <a name="specifying-which-add-ins-to-trust-when-using-exchange"></a>Especificar os complementos para confiança ao usar o Exchange  
+### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Especifique quais suplementos confiança ao usar o Exchange  
  Quando o Outlook é usado com o Exchange, os administradores podem especificar que certos suplementos do VSTO podem ser executada sem encontrar o protetor de modelo de objeto. Outlook suplementos do VSTO criados por meio de soluções do Office no Visual Studio não podem ser confiáveis individualmente; elas só podem ser confiáveis como um grupo.  
   
- Outlook confia um VSTO suplemento com base em um código hash da DLL de ponto de entrada do suplemento do VSTO. Todos os Outlook suplementos do VSTO que se destinam a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usar a mesma DLL de ponto de entrada (VSTOLoader.dll). Isso significa que, se um administrador confia qualquer VSTO suplemento que tem como alvo o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para ser executada sem encontrar o protetor de modelo de objeto e todos os outros suplementos do VSTO que tem como alvo o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] também são confiáveis. Para obter mais informações sobre como confiar em específicos suplementos do VSTO para ser executada sem encontrar o protetor de modelo de objeto, consulte [especificar o método usa o Outlook para gerenciar recursos de prevenção de vírus](http://go.microsoft.com/fwlink/?LinkId=128773).  
+ Outlook confia um VSTO suplemento com base em um código hash da DLL de ponto de entrada do suplemento do VSTO. Todos os Outlook suplementos do VSTO que se destinam a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usar a mesma DLL de ponto de entrada (*VSTOLoader.dll*). Isso significa que, se um administrador confia qualquer VSTO suplemento que tem como alvo o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para ser executada sem encontrar o protetor de modelo de objeto e todos os outros suplementos do VSTO que tem como alvo o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] também são confiáveis. Para obter mais informações sobre como confiar em específicos suplementos do VSTO para ser executada sem encontrar o protetor de modelo de objeto, consulte [especificar o método usa o Outlook para gerenciar recursos de prevenção de vírus](http://go.microsoft.com/fwlink/?LinkId=128773).  
   
 ## <a name="permission-changes-do-not-take-effect-immediately"></a>As alterações não entram em vigor imediatamente  
  Se o administrador ajusta as permissões para um documento ou um assembly, os usuários deverão encerrar e, em seguida, reinicie todos os aplicativos do Office para essas alterações devem ser aplicadas.  
   
  Outros aplicativos que hospedam aplicativos do Microsoft Office também podem impedir que as novas permissões de imposição. Os usuários devem fechar todos os aplicativos que usam o Office, hospedado ou autônomo, quando as políticas de segurança são alteradas.  
   
-## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Configurações da Central de confiabilidade do Microsoft Office System não afetam os suplementos ou personalizações no nível do documento  
+## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Configurações da Central de confiança do Microsoft Office System não afetam suplementos ou personalizações no nível do documento  
  Os usuários podem impedir suplementos do VSTO carregamento, definindo uma opção no **Central de confiabilidade**. No entanto, suplementos do VSTO e personalizações de nível de documento criadas por meio de soluções do Office no Visual Studio não são afetadas por essas configurações de confiança.  
   
  Se o usuário impede que suplementos do VSTO carregamento usando o **Central de confiabilidade**, não carregará os seguintes tipos de suplementos do VSTO:  
@@ -118,6 +119,6 @@ ms.lasthandoff: 04/16/2018
 6.  No painel de detalhes, selecione **suplementos sejam assinados por um fornecedor confiável aplicativo exigir** ou **desabilitar todos os complementos do aplicativo**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Protegendo soluções do Office](../vsto/securing-office-solutions.md)  
+ [Proteger as soluções do Office](../vsto/securing-office-solutions.md)  
   
   

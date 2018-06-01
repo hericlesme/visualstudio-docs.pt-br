@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693793"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Passo a passo: Profiler XSLT
 
@@ -88,7 +89,7 @@ Os procedimentos a instrução a seguir exigem que o Visual Studio e .NET Framew
 
 5.  Você também pode classificar os dados clicando em nomes de coluna.
 
-### <a name="select-calltree-view"></a>Selecione o modo de CallTree
+### <a name="select-call-tree-view"></a>Selecione o modo de exibição de árvore de chamadas
 
 1.  Selecione **exibição de árvore de chamadas** no **exibição atual** lista suspensa. Esta exibição é um modo de exibição de árvore de execução do programa.
 
@@ -110,4 +111,4 @@ Os procedimentos a instrução a seguir exigem que o Visual Studio e .NET Framew
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: usando a hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Passo a passo: Usando a hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

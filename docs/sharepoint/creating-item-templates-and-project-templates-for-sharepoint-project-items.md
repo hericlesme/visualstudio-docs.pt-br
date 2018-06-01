@@ -20,20 +20,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94f93d58933ad0aba6cde985dc260fe3341aa5d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691957"
 ---
-# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Criando modelos de item e de projeto para itens de projeto do SharePoint
+# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Criando modelos de projeto do SharePoint para itens de projeto e modelos de item
   Quando você define um tipo de item de projeto do SharePoint personalizado, você pode associá-lo com um modelo de item ou um modelo de projeto para que outros desenvolvedores podem usar o item de projeto no Visual Studio. Você também pode criar um Assistente para o modelo.  
   
  Por exemplo, o Visual Studio não inclui um modelo de projeto ou o modelo de item para adicionar um campo a um site do SharePoint. Você pode definir um tipo de item de projeto do SharePoint que representa um campo e, em seguida, criar um modelo de item que outros desenvolvedores podem usar para adicionar o item de campo para um projeto do SharePoint. Ou, você pode construir um modelo de projeto para que os desenvolvedores podem criar um novo projeto do SharePoint que contém o item de campo. Em ambos os casos, você também pode fornecer um assistente que é exibida quando os desenvolvedores usam o modelo. Este assistente pode coletar informações de desenvolvedores para configurar o novo item ou projeto.  
   
  Modelos de item e projeto são arquivos. zip que contenham arquivos que são usados pelo Visual Studio para criar um item de projeto ou o projeto. Para obter mais informações sobre os conceitos básicos de modelos de item e projeto, consulte [criando modelos de projeto e Item](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a> Criando modelos de Item  
+## <a name="create-item-templates"></a>Criar modelos de item
  Quando você cria um modelo de item para um item de projeto do SharePoint, há alguns arquivos que são sempre obrigatórias e arquivos opcionais que podem ser usados por determinados tipos de itens de projeto. Para uma explicação passo a passo que demonstra como definir um tipo de item de projeto do SharePoint e criar um modelo de item para ele, consulte [passo a passo: Criando um Item de projeto de ação personalizado com um modelo de Item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  A tabela a seguir lista os arquivos necessários para criar um modelo de item para um item de projeto do SharePoint.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
 |.aspx|Um arquivo de página do ASP.NET. Esse arquivo contém marcação XML que define uma página de aplicativo.|  
 |arquivos. cs ou. vb|Esses arquivos de código definem o comportamento das personalizações do SharePoint que têm um modelo de programação que pode ser acessado de Visual c# ou código do Visual Basic, como páginas de aplicativos, Web parts e fluxos de trabalho.|  
   
-## <a name="creating-project-templates"></a>Criando modelos de projeto  
+## <a name="create-project-templates"></a>Criar modelos de projeto
  Quando você cria um modelo de projeto do SharePoint, há alguns arquivos que estão sempre arquivos necessários e opcionais que podem ser usados por determinados tipos de projetos. Normalmente, os projetos do SharePoint incluem pelo menos um item de projeto do SharePoint. No entanto, isso não é necessário. Por exemplo, você pode definir um modelo de projeto do SharePoint que se destina a ser usado apenas para implantar soluções do SharePoint criadas em outros projetos.  
   
  Para uma explicação passo a passo que demonstra como definir um tipo de item de projeto do SharePoint e criar um modelo de projeto para ele, consulte [passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -77,12 +78,12 @@ ms.lasthandoff: 04/16/2018
 |*nome do recurso*.feature|Esse arquivo define um recurso do SharePoint que é usado para agrupar vários itens de projeto para a implantação. Quando você usar o Designer de recursos para personalizar um recurso em seu projeto, o Visual Studio armazena dados sobre o recurso neste arquivo. Se você quiser agrupar os itens de projeto em recursos diferentes, você pode incluir vários arquivos .feature.<br /><br /> Quando você cria um modelo de projeto do SharePoint personalizado, é recomendável que você incluir o conteúdo mínimo necessário em cada arquivo .feature, e que você configure recursos por meio de APIs no <xref:Microsoft.VisualStudio.SharePoint.Features> namespace em uma extensão que está associada com o modelo de projeto. Se você fizer isso, o modelo de projeto está protegido contra alterações futuras na estrutura do arquivo .feature. Para obter um exemplo que demonstra como criar um arquivo .feature com somente o mínimo necessário conteúdo, consulte [passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Se você quiser modificar um arquivo .feature diretamente, você pode verificar o conteúdo usando o esquema em % arquivos de programas (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd.|  
 |*nome do recurso*. Template|Esse arquivo fornece a base para o arquivo de manifesto do recurso (Feature) para cada recurso que é gerado a partir do projeto. Você pode adicionar conteúdo a este arquivo se desejar especificar um comportamento que não se destina a ser alterado pelos usuários do seu tipo de projeto. Para obter mais informações, consulte [blocos de construção: recursos](http://go.microsoft.com/fwlink/?LinkId=169183) e [Feature](http://go.microsoft.com/fwlink/?LinkId=177795) arquivos.<br /><br /> Quando você cria um pacote de solução do projeto, o Visual Studio mescla o conteúdo de cada par de *featureName*arquivo .feature e *featureName*. Arquivos de Template para um arquivo de manifesto do recurso. Para obter mais informações sobre a criação de pacotes de soluções, consulte [como: criar um pacote de solução do SharePoint (wsp)](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b).|  
   
-## <a name="creating-wizards-for-item-templates-and-project-templates"></a>Criando assistentes para modelos de Item e projeto  
+## <a name="create-wizards-for-item-templates-and-project-templates"></a>Criar os assistentes para modelos de item e projeto
  Depois de definir um tipo de item de projeto do SharePoint e associá-lo a um modelo de item ou projeto, você também pode criar um assistente. O assistente exibe quando um desenvolvedor usa o modelo de item para adicionar o item de projeto do SharePoint a um projeto, ou quando um desenvolvedor usa o modelo de projeto para criar um novo projeto que contém o item de projeto do SharePoint. O assistente pode ser usado para coletar informações de desenvolvedores e inicializar o novo item de projeto do SharePoint.  
   
  Para instruções passo a passo que demonstre como criar assistentes para modelos de item e projeto, consulte [passo a passo: Criando um Item de projeto de ação personalizado com um modelo de Item, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) e [passo a passo: Criando um Site Item de projeto de coluna com um modelo de projeto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Definindo tipos de Item de projeto do SharePoint personalizado](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Passo a passo: Criando um Item de projeto de ação personalizada com um modelo de Item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Passo a passo: Criando um Item de projeto de ação personalizada com um modelo de Item, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
@@ -90,4 +91,4 @@ ms.lasthandoff: 04/16/2018
  [Passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [Criando modelos de projeto e de item](/visualstudio/ide/creating-project-and-item-templates)  
   
-  
+ 

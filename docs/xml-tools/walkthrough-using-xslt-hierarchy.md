@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693439"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Passo a passo: Usando a hierarquia XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Passo a passo: Usar hierarquia XSLT
 
 A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML. Uma folha de estilos XSLT frequentemente usa `includes` e instruções de `imports` . A compilação parte da folha de estilos principal, mas quando você verá um erro no resultado de criar uma folha de estilos XSLT, o erro pode vir de uma fonte diferente da folha de estilos principal. Corrigir o erro ou editar a folha de estilos podem exigir acesso incluiu ou importaram folhas de estilos. Percorrer de folha de estilo no depurador pode abrir folhas de estilo embutidas e importados, e você pode querer adicionar um ponto de interrupção em algum ponto de uma ou mais das folhas de estilo embutidas.
 
@@ -47,7 +48,7 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </COLLECTION>
     ```
 
-1. Adicione o seguinte `xslincludefile.xsl`:
+1. Adicione o seguinte *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </xsl:stylesheet>
     ```
 
-3.  Adicione o seguinte arquivo de `xslinclude.xsl` :
+3.  Adicione o seguinte *xslinclude.xsl* arquivo:
 
     ```xml
     <?xml version='1.0'?>
@@ -112,4 +113,4 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Criador de Perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Passo a passo: o criador de perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)

@@ -1,5 +1,5 @@
 ---
-title: Primeiro examinar o depurador
+title: Introdução ao depurador
 description: Dar uma olhada rápida os diferentes recursos do depurador do Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691086"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primeiro examinar o depurador do Visual Studio
 
@@ -76,7 +77,7 @@ No depurador, passe o mouse sobre uma linha de código até que o **executar em,
 
 ![Execute a clique](../debugger/media/dbg-tour-run-to-click-2.png "executar em, clique em")
 
->  [!NOTE] 
+> [!NOTE]
 > O **executar a clique** botão (execução aqui) é novo no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Clique o **executar a clique** botão (execução aqui). O depurador avança para a linha de código em que você clicou.
@@ -104,7 +105,6 @@ Se você tiver definido os pontos de interrupção, o depurador faz uma pausa no
 Pressione F5 até atingir a linha de código em que você selecionou **executar até o Cursor**.
 
 Esse comando é útil quando você estiver editando o código e deseja definir um ponto de interrupção temporário rapidamente e iniciar o depurador.
-
 
 > [!NOTE]
 > Você pode usar **executar até o Cursor** no **pilha de chamadas** janela enquanto você está depurando.
@@ -179,7 +179,7 @@ Você também pode usar os menus de atalho do **pilha de chamadas** janela para 
 ## <a name="examine-an-exception"></a>Examine a exceção
 
 Quando seu aplicativo lançará uma exceção, o depurador leva você para a linha de código que lançou a exceção.
-     
+
 ![Auxiliar de exceção](../debugger/media/dbg-tour-exception-helper.png "auxiliar de exceção")
 
 Neste exemplo, o **auxiliar de exceção** mostra um `System.Argument` exceção e uma mensagem de erro que afirma que o caminho não é um formato inválido. Portanto, sabemos que o erro ocorreu em um argumento de método ou função.
@@ -188,7 +188,7 @@ Neste exemplo, o `DirectoryInfo` chamada forneceu o erro na cadeia de caracteres
 
 O auxiliar de exceção é um ótimo recurso que pode ajudá-lo a depurar erros. Você também pode fazer coisas como exibir detalhes do erro e adicione uma inspeção do auxiliar de exceção. Ou, se necessário, você pode alterar as condições para lançar a exceção específica.
 
->  [!NOTE] 
+>  [!NOTE]
 > O auxiliar de exceção substitui o Assistente de exceção no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda o **configurações de exceção** nó para ver mais opções sobre como lidar com esse tipo de exceção, mas você não precisa alterar nada para este tour!
@@ -209,7 +209,7 @@ Para obter mais informações, consulte [depurar aplicativos do ASP.NET ao vivo 
 
 É possível navegar e exibir instantâneos usando os botões **Voltar** e **Avançar** na barra de ferramentas Depurar. Esses botões navegam pelos eventos exibidos na guia **Eventos** na janela **Ferramentas de Diagnóstico**.
 
-![Etapa para trás e frente botões](../debugger/media/intellitrace-step-back-icons-description.png  "botões etapa com versões anteriores e Avançar")  
+![Etapa para trás e frente botões](../debugger/media/intellitrace-step-back-icons-description.png  "botões etapa com versões anteriores e Avançar")
 
 Para obter mais informações, consulte a página [View snapshots using IntelliTrace step-back](../debugger/how-to-use-intellitrace-step-back.md) (Exibir instantâneos usando o retrocesso do IntelliTrace).
 

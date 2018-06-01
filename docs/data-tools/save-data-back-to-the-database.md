@@ -1,5 +1,5 @@
 ---
-title: Salvar dados no banco de dados
+title: Salvar dados novamente no banco de dados
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691128"
 ---
-# <a name="save-data-back-to-the-database"></a>Salvar dados no banco de dados
+# <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 O conjunto de dados é uma cópia na memória dos dados. Se você modificar esses dados, é uma boa prática para salvar as alterações no banco de dados. Você fazer isso em uma das três maneiras:
 
 -   Chamando um dos métodos de atualização de um TableAdapter
@@ -221,7 +222,7 @@ Depois que as alterações foram feitas em um conjunto de dados, você pode tran
 
  Como uma ilustração de como as atualizações são feitas, suponha que seu aplicativo usa um conjunto de dados que contém uma única tabela de dados. O aplicativo busca duas linhas do banco de dados. Após a recuperação, a tabela de dados na memória tem esta aparência:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ Depois que as alterações foram feitas em um conjunto de dados, você pode tran
 
  Seu aplicativo altera o status de Nancy Buchanan como "Preferencial". Como resultado desta alteração, o valor da <xref:System.Data.DataRow.RowState%2A> propriedade para aquela linha muda de <xref:System.Data.DataRowState.Unchanged> para <xref:System.Data.DataRowState.Modified>. O valor de <xref:System.Data.DataRow.RowState%2A> propriedade para a primeira linha permanece <xref:System.Data.DataRowState.Unchanged>. A tabela de dados agora tem esta aparência:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

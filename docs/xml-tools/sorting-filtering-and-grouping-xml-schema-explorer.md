@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693663"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Classificação, filtragem e agrupamento (XML Schema Explorer)
 
-Este tópico descreve as opções que estão disponíveis por meio de **opções de agrupamento, filtragem e classificação** menu na barra de ferramentas do Pesquisador de objetos de esquema XML.
+Este tópico descreve as opções que estão disponíveis por meio de **opções de agrupamento, filtragem e classificação** menu o **XML Schema Explorer** barra de ferramentas.
 
 ## <a name="filter-options"></a>Opções de filtro
 
@@ -32,7 +33,7 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
 ## <a name="sorting-options"></a>Opções de classificação
 
- As seguintes opções de classificação estão disponíveis. O padrão é **classificar por tipo**. O tipo por opções não se aplica a arquivos e para namespaces.
+ As seguintes opções de classificação estão disponíveis. O padrão é **classificar por tipo**. **Classificar por** opções não se aplicam a arquivos e namespaces.
 
 -   **Classificar por tipo**.
 
@@ -78,6 +79,6 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
  O **ordem do documento** opção está disponível quando o **Mostrar arquivos de esquema** opção é selecionada. Quando **ordem do documento** for selecionada, nós globais são exibidos na ordem em que aparecem no arquivo de esquema.
 
-## <a name="persisting-sortfilter-options"></a>Gravando o tipo/opções de filtro
+## <a name="persisting-sortfilter-options"></a>Opções de classificação/filtro persistentes
 
  A classificação, filtragem, e opções de agrupamento são salvas no Registro para cada usuário, não importa qual a solução ou arquivos estavam aberta quando as configurações foram alteradas.
