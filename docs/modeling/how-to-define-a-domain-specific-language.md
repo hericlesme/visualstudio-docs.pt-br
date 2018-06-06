@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750422"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma linguagem específica de domínio (DSL), você pode criar uma solução do Visual Studio de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
@@ -48,7 +49,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
 1.  Criar uma solução com o **linguagem específica de domínio** modelo, que pode ser encontrado em **outros tipos/extensibilidade de projeto** no **novo projeto** caixa de diálogo.
 
-     ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png)
 
      Quando você clica em **Okey**, o **Assistente de linguagem específica de domínio** abre e exibe uma lista de soluções do modelo DSL.
 
@@ -86,7 +87,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
  A interface do usuário agora se assemelha à imagem a seguir.
 
- ![designer de DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![designer de DSL](../modeling/media/dsl_designer.png)
 
  Essa solução define uma linguagem específica de domínio. Para obter mais informações, consulte [visão geral da Interface do usuário específica de domínio idioma ferramentas](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -99,7 +100,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
  Se você executar uma solução que você criou do **mínimo idioma** modelo, o Visual Studio experimental será parecida com o exemplo a seguir:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  Experimente com as ferramentas. Crie elementos e os conecte.
 
@@ -139,11 +140,11 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
  A figura a seguir mostra as classes e relações que fazem parte da DSL usada de exemplo neste tópico.
 
- ![Relações de referência e inserindo](../modeling/media/music_classes.png "Music_Classes")
+ ![Relações de referência e inserindo](../modeling/media/music_classes.png)
 
  A próxima figura é um modelo de exemplo desta DSL:
 
- ![Modelo de instância de DSL gerado](../modeling/media/music_instance.png "Music_Instance")
+ ![Modelo de instância de DSL gerado](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  "Modelo" refere-se a uma instância de sua DSL que os usuários criam e geralmente é exibida como um diagrama. Este tópico discute o diagrama da Definição de DSL e os diagramas de modelo que aparecem quando sua DSL é usada.
@@ -235,7 +236,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Para definir uma classe de elementos que aparece como formas em um diagrama
 
-1.  **Definir e testar uma classe de domínio, conforme descrito em**[Definindo Classes de domínio](#classes) **.** 
+1.  **Definir e testar uma classe de domínio, conforme descrito em**[Definindo Classes de domínio](#classes) **.**
 
     -   O pai da classe deve ser a classe raiz. Ou seja, deve haver uma relação de incorporação entre a classe raiz e a nova classe de domínio.
 
@@ -285,7 +286,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
     4.  Certifique-se de que haja uma marca de seleção ao lado de cada nome de decorador.
 
-     ![Janela de detalhes de DSL e mapeamentos de forma](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![Janela de detalhes de DSL e mapeamentos de forma](../modeling/media/dsldetailswindow.png)
 
 7.  **Tornar um item de caixa de ferramentas para criar elementos da classe de domínio.**
 
@@ -331,7 +332,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
  Por exemplo, se Álbuns de música e Artistas forem exibidos como formas no diagrama, será possível definir um relação chamada ArtistsAppearedOnAlbums, a qual vincula os Artistas aos Álbuns nos quais eles trabalharam. Veja o exemplo na figura.
 
- ![Modelo de instância de DSL gerado](../modeling/media/music_instance.png "Music_Instance")
+ ![Modelo de instância de DSL gerado](../modeling/media/music_instance.png)
 
  As relações de referência também podem vincular elementos do mesmo tipo. Por exemplo, em uma DSL que representa uma árvore genealógica, a relação entre pais e seus filhos é uma relação de referência de Pessoa a Pessoa.
 
@@ -348,7 +349,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
  **Defina a propriedade permite duplicatas da relação,** se mais de um link da mesma classe pode existir entre o mesmo par de elementos de modelo. Por exemplo, você poderia permitir que um Professor ensinasse mais de uma Matéria para o mesmo Aluno.
 
- ![Mapas para os conectores de forma](../modeling/media/music_connector.png "Music_Connector")
+ ![Mapas de formas para conectores](../modeling/media/music_connector.png)
 
  Para obter mais informações, consulte [propriedades de domínio relações](../modeling/properties-of-domain-relationships.md) e [propriedades de funções de domínio](../modeling/properties-of-domain-roles.md).
 
@@ -411,11 +412,11 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 ##  <a name="compartments"></a> Definição de formas que contêm listas: formas do compartimento
  Uma forma do compartimento contém uma ou mais listas de itens. Por exemplo, em uma DSL de Biblioteca de Músicas, você poderia usar formas do compartimento para representar os Álbuns de música. Em cada Álbum, há uma lista de Canções.
 
- ![Forma do compartimento](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![Forma do compartimento](../modeling/media/compartmentshape.png)
 
  No método mais simples de obter esse efeito em uma definição de DSL, você define uma classe de domínio para o contêiner e uma classe de domínio para cada lista. A classe de contêiner é mapeada para a forma do compartimento.
 
- ![Mapa de formas](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![Mapa de formas](../modeling/media/music_mapcomp.png)
 
  Para obter mais informações, consulte [propriedades de compartimento formas](../modeling/properties-of-compartment-shapes.md).
 
@@ -505,7 +506,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
 7.  Abra o Gerenciador de linguagens. Verifique se você pode ver os nós do contêiner com os nós do item de lista dentro.
 
- ![Pesquisador de objetos gerado de DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Pesquisador de objetos gerado de DSL](../modeling/media/music_explorer.png)
 
  Depois de testar inicialmente uma forma do compartimento, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [personalizar e estender uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 

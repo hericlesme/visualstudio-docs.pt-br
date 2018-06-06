@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c1869f11d4202237d628ff3f15f73906822ec47
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692516"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764914"
 ---
-# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Criar colunas de site, tipos de conteúdo e listas do SharePoint
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Criar colunas de site, tipos de conteúdo e listas do SharePoint
   Visual Studio fornece modelos de item de projeto para muitos diferentes fundamentais itens do SharePoint, incluindo *lista* e *tipos de conteúdo*, que podem incorporar as colunas de site (ou  *campos*). Os designers de novo para tipos de conteúdo e listas facilitam a criação desses itens mais fácil.  
   
 ## <a name="site-columns"></a>Colunas de site
  Colunas de site são um dos elementos mais básicos, que você pode adicionar a um projeto do SharePoint. Uma coluna de site representa um tipo de dados, como um número de telefone, um comentário ou o nome da cidade de um contato em uma lista de contatos.  
   
- O novo modelo de item de projeto de coluna de site facilita criar colunas de site que na versão anterior do Visual Studio. Depois de criar uma nova coluna de site, você pode modificar o XML no arquivo de Elements da coluna de site para incluir as informações desejadas, como seu nome de exibição, seu tipo de dados e o grupo no qual você deseja que a coluna de site apareça no SharePoint. Para obter mais informações sobre colunas de site, consulte [Introdução às colunas](http://go.microsoft.com/fwlink/?LinkId=224996).  
+ O novo modelo de item de projeto de coluna de site facilita criar colunas de site que na versão anterior do Visual Studio. Depois de criar uma nova coluna de site, você pode modificar o XML na coluna de site *Elements* arquivo para incluir as informações desejadas, como seu nome de exibição, seu tipo de dados e o grupo no qual você deseja que a coluna de site sejam exibidos no SharePoint. Para obter mais informações sobre colunas de site, consulte [Introdução às colunas](http://go.microsoft.com/fwlink/?LinkId=224996).  
   
 ## <a name="content-types-and-lists"></a>Listas e tipos de conteúdo
  Listas e tipos de conteúdo estão entre com mais frequência elementos usados no SharePoint.  

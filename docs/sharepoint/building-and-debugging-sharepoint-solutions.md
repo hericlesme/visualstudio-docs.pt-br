@@ -18,31 +18,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e04f60ea5cfe72235bac6630b413c9c437255681
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4d0bc3185b0684f96bf31cc127cd852448afe772
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691281"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765064"
 ---
-# <a name="building-and-debugging-sharepoint-solutions"></a>Compilando e depurando de soluções do SharePoint
+# <a name="build-and-debug-sharepoint-solutions"></a>Criar e depurar soluções do SharePoint
   Em geral, compilando e depurando de soluções do SharePoint é o mesmo que a criação e depuração de outros tipos de projetos em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Os tópicos nesta seção explicam as diferenças existentes.  
   
 ## <a name="project-output-for-sharepoint-solutions"></a>Saída do projeto para soluções do SharePoint
- Criar soluções do SharePoint cria um arquivo de pacote (. wsp) da solução e assemblies. A tabela a seguir mostra os locais desses arquivos durante uma compilação.  
+ Criação de soluções do SharePoint cria módulos (assemblies) e um pacote de solução (*. wsp*) arquivos. A tabela a seguir mostra os locais desses arquivos durante uma compilação.  
   
 |Criar um item|Pasta de saída|  
 |----------------|-------------------|  
-|Assembly, banco de dados do programa (PDB) e arquivos. wsp.|*ProjectName*\bin\debug ou *ProjectName*\bin\Release.|  
-|Arquivos de item de projeto do SharePoint.|*ProjectName*\pkg\debug ou *ProjectName*\pkg\release|  
-|Crie arquivos intermediários.|*ProjectName*\obj\debug ou *ProjectName*\obj\release|  
-|Arquivos de pacote intermediários.|*ProjectName*\pkgobj\debug ou *ProjectName*\pkgobj\release|  
+|Assembly, o banco de dados do programa (*. PDB*), e *. wsp* arquivos.|*{ProjectName} \bin\debug* ou *{ProjectName} \bin\Release.*|  
+|Arquivos de item de projeto do SharePoint.|*{ProjectName} \pkg\debug* ou *\pkg\release {ProjectName}*|  
+|Crie arquivos intermediários.|*{ProjectName} \obj\debug* ou *\obj\release {ProjectName}*|  
+|Arquivos de pacote intermediários.|*{ProjectName} \pkgobj\debug* ou *\pkgobj\release {ProjectName}*|  
   
 ## <a name="build-sharepoint-solutions"></a>Criar soluções do SharePoint
  Para criar soluções do SharePoint, o computador de desenvolvimento deve ter a versão correta do servidor do SharePoint instalado. Caso contrário, criação de soluções do SharePoint é o mesmo que a criação de outros tipos de projetos em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [como: criar soluções de SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>Depurar e testar soluções do SharePoint
- Antes de depurar, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] copia o pacote. wsp para o servidor do SharePoint, ativa o Site e os recursos de escopo de Web e, em alguns casos, o projeto é iniciado. Em outros casos, você terá que abrir o projeto manualmente. Para obter mais informações, consulte [Solucionando problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) e [soluções do SharePoint de depuração](../sharepoint/debugging-sharepoint-solutions.md).  
+ Antes de depurar, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cópias de *. wsp* pacote para o servidor do SharePoint, ativa o Site e os recursos de escopo de Web e, em alguns casos, o projeto é iniciado. Em outros casos, você terá que abrir o projeto manualmente. Para obter mais informações, consulte [Solucionando problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) e [soluções do SharePoint de depuração](../sharepoint/debugging-sharepoint-solutions.md).  
   
 ## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>Depurar e verifique se as soluções do SharePoint usando recursos do ALM
  Os recursos do Visual Studio ALM, como testes de unidade e IntelliTrace permitem que você mais precisa identificar problemas em suas soluções do SharePoint. Criação de perfil permite que você localize e identificar áreas de problema de desempenho em suas soluções do SharePoint. Para obter mais informações, consulte [Verificando e depurando código do SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md) e [criação de perfil de desempenho de aplicativos do SharePoint](../sharepoint/profiling-the-performance-of-sharepoint-applications.md).  

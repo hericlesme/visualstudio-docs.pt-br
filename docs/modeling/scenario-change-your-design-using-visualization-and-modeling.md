@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 829fd8ed601eae28d367e4b2f3de0a5c7b709985
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750162"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -150,13 +151,13 @@ Agora uma refeição deve estimar o custo de atender o novo requisito. Isso depe
 
  Por exemplo, o desenvolvedor cria um mapa de código. Ela ajusta seu escopo para se concentrar em áreas que serão afetadas do novo cenário. Essas áreas são selecionadas e realçadas no mapa:
 
- ![Gráfico de dependência de Namespace](../modeling/media/namespace_reviewsystem.png "Namespace_ReviewSystem")
+ ![Gráfico de dependência de Namespace](../modeling/media/namespace_reviewsystem.png)
 
  **Mapa de código de Namespace**
 
  O desenvolvedor expande os namespaces selecionados para ver suas classes, métodos e relações:
 
- ![Gráfico de dependência de namespace expandido](../modeling/media/dep_reviewsystem.png "Dep_ReviewSystem")
+ ![Gráfico de dependência de namespace expandido](../modeling/media/dep_reviewsystem.png)
 
  **Mapa de código namespace expandido com links entre grupos visíveis**
 
@@ -177,7 +178,7 @@ Agora uma refeição deve estimar o custo de atender o novo requisito. Isso depe
 
  Por exemplo, o diagrama de dependência a seguir descreve as dependências entre camadas e o número de artefatos que estão associados a cada camada:
 
- ![Diagrama de dependência do sistema de pagamento integrada](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagrama de dependência do sistema de pagamento integrado](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagrama de dependência**
 
@@ -277,19 +278,19 @@ Por exemplo, uma refeição agora deve estimar o custo de atualização de compo
 
 O mapa a seguir mostra as dependências entre a classe PaymentProcessing e outras partes do sistema refeição agora, que aparecem selecionadas:
 
-![Gráfico de dependência para o sistema de pagamento agora uma refeição](../modeling/media/dep_dnpayment.png "Dep_DNPayment")
+![Gráfico de dependência para o sistema de pagamento refeição agora](../modeling/media/dep_dnpayment.png)
 
 **Mapa de código para o sistema de pagamento refeição agora**
 
 O desenvolvedor explora o mapa, expandindo a classe PaymentProcessing e selecionando a seus membros para ver as áreas que são potencialmente afetadas:
 
-![Métodos PaymentProcessing e dependências](../modeling/media/depgraph_expandeddn.png "DepGraph_ExpandedDN")
+![Métodos PaymentProcessing e dependências](../modeling/media/depgraph_expandeddn.png)
 
 **Métodos dentro da classe PaymentProcessing e suas dependências**
 
 Gerar o mapa a seguir para o sistema de pagamento Zulu inspecionar suas classes, métodos e as dependências. A equipe vê que o sistema Zulu também pode exigir o trabalho para interagir com as outras partes do refeição agora:
 
-![Gráfico de dependência para o sistema de pagamento Zulu](../modeling/media/depgraph_lucernepay.png "DepGraph_LucernePay")
+![Gráfico de dependência para o sistema de pagamento Zulu](../modeling/media/depgraph_lucernepay.png)
 
 **Mapa de código para o sistema de pagamento Zulu**
 
@@ -297,7 +298,7 @@ Ambas as equipes trabalham juntos para determinar as alterações que são neces
 
 Após a reorganização de código, as equipes de geram um novo mapa de código para ver a estrutura atualizada e relações:
 
-![Gráfico de dependência com o código reorganizado](../modeling/media/depgraph_integrated.png "DepGraph_Integrated")
+![Gráfico de dependência com o código reorganizado](../modeling/media/depgraph_integrated.png)
 
 **Mapa de códigos com o código reorganizado**
 
@@ -338,7 +339,7 @@ Este mapa mostra a classe PaymentApprover agora está no namespace DinnerNow.Bus
 
  Para ajudar a Zulu descrever e discutir as entidades que participam no caso de uso de pagamento de processo, eles desenhar o diagrama de classe a seguir:
 
- ![Processar entidades de pagamento no diagrama de classe](../modeling/media/uml_payentities.png "UML_PayEntities")
+ ![Entidades de pagamento de processo no diagrama de classe](../modeling/media/uml_payentities.png)
 
  **Entidades de pagamento de processo em um diagrama de classe**
 
@@ -346,7 +347,7 @@ Este mapa mostra a classe PaymentApprover agora está no namespace DinnerNow.Bus
 
  Durante o desenvolvimento, Zulu usa o diagrama de classe a seguir para descrever e discutir os detalhes de cada classe:
 
- ![Processar os detalhes de entidade de pagamento em um diagrama de classe](../modeling/media/uml_payment.png "UML_Payment")
+ ![Processar os detalhes de entidade de pagamento em um diagrama de classe](../modeling/media/uml_payment.png)
 
  **Detalhes de pagamento do processo no diagrama de classe**
 
@@ -407,7 +408,7 @@ Como ponto de partida para explorar e discutir as classes existentes, você pode
 
  Para manter o código consistente com o design, uma refeição agora e Zulu usam o seguinte diagrama de dependência para validar o código, à medida que ele evolui:
 
- ![Diagrama de dependência do sistema de pagamento integrada](../modeling/media/layer_integrated_dnlucerne.png "Layer_Integrated_DNLucerne")
+ ![Diagrama de dependência do sistema de pagamento integrado](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagrama de dependência para uma refeição agora integrado ao Zulu**
 
@@ -417,13 +418,13 @@ Como ponto de partida para explorar e discutir as classes existentes, você pode
 
  O mapa de código a seguir mostra as novo chamadas entre o refeição agora e PaymentApprover:
 
- ![Gráfico de dependência atualizado com o sistema integrado](../modeling/media/depgraph_intsystem.png "DepGraph_IntSystem")
+ ![Gráfico de dependência atualizado com o sistema integrado](../modeling/media/depgraph_intsystem.png)
 
  **Mapa de códigos com chamadas de método atualizado**
 
  Agora uma refeição comentários depois que eles confirmam que o sistema funciona conforme o esperado, o código de PaymentProcessing. Os relatórios de validação de camada são limpos e o mapa de código resultante mostra que não há mais dependências PaymentProcessing existem:
 
- ![Gráfico de dependência sem PaymentProcessing](../modeling/media/depgraph_nomore.png "DepGraph_NoMore")
+ ![Gráfico de dependência sem PaymentProcessing](../modeling/media/depgraph_nomore.png)
 
  **Mapa de código sem PaymentProcessing**
 

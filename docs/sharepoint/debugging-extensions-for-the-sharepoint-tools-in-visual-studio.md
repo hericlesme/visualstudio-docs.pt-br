@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7f976db455fc0cd847c648eb586b95fb81f6d5fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a4e2e6f3858833be49caf59d4d53fc1f8a131f10
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765288"
 ---
-# <a name="debugging-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depurando extensões para ferramentas do SharePoint no Visual Studio
+# <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depurar extensões para ferramentas do SharePoint no Visual Studio
   Você pode depurar extensões de ferramentas do SharePoint na instância experimental ou regular do Visual Studio. Se você precisar solucionar problemas de comportamento de uma extensão, você também pode modificar os valores do registro para exibir informações de erro adicionais e para configurar como o Visual Studio executa comandos do SharePoint.  
   
-## <a name="debugging-extensions-in-the-experimental-instance-of-visual-studio"></a>Extensões de depuração na instância Experimental do Visual Studio  
+## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>Depurar extensões na instância experimental do Visual Studio
  Para proteger seu ambiente de desenvolvimento do Visual Studio contra danos acidentais por extensões não testadas, o SDK do Visual Studio fornece uma instância alternativa do Visual Studio, chamada de *instância experimental*, que você pode usar Para instalar e testar as extensões. Desenvolver novas extensões usando a instância regular do Visual Studio, mas depurar e executá-los na instância experimental. Para obter mais informações, consulte [a instância Experimental](/visualstudio/extensibility/the-experimental-instance).  
   
  Se você usar um projeto do VSIX para implantar sua extensão, e o projeto do VSIX é o projeto de inicialização em sua solução, o Visual Studio automaticamente instala e executa a extensão na instância experimental ao depurar sua solução. O projeto de inicialização é o projeto que é iniciado quando você depura uma solução que contém vários projetos. Para obter mais informações sobre como usar um projeto do VSIX para implantar a sua extensão, consulte [implantação de extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
@@ -41,18 +42,18 @@ ms.lasthandoff: 04/16/2018
   
 -   [Instruções passo a passo: chamando o modelo do objeto de cliente do SharePoint em uma extensão do Gerenciador de Servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)  
   
-## <a name="debugging-extensions-in-the-regular-instance-of-visual-studio"></a>Extensões de depuração na instância Regular do Visual Studio  
+## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>Depurar extensões na instância regular do Visual Studio
  Se você deseja depurar seu projeto de extensão na instância regular do Visual Studio, primeiro instale a extensão na instância regular. Em seguida, anexe o depurador a um segundo processo do Visual Studio. Depois que você tiver terminado, você pode remover a extensão de forma que ele não mais carrega no computador de desenvolvimento.  
   
 #### <a name="to-install-the-extension"></a>Para instalar a extensão  
   
 1.  Feche todas as instâncias do Visual Studio.  
   
-2.  Na pasta de saída de compilação para o projeto de extensão, abra o arquivo .vsix clicando duas vezes nele ou abrindo o menu de atalho e, em seguida, escolhendo **abrir**:  
+2.  Na pasta de saída de compilação para o projeto de extensão, abra o *.vsix* arquivo clicando duas vezes nele ou abrindo o menu de atalho e, em seguida, escolhendo **abrir**:  
   
 3.  No **instalador de extensão do Visual Studio** caixa de diálogo caixa, escolha a edição do Visual Studio para o qual você deseja instalar a extensão e, em seguida, escolha o **instalar** botão.  
   
-     Visual Studio instala os arquivos de extensão para %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*nome do autor*\\*nome de extensão* \\ *versão*. As últimas três pastas nesse caminho são construídas a partir de `Author`, `Name`, e `Version` elementos no arquivo extension.vsixmanifest para a extensão.  
+     Visual Studio instala os arquivos de extensão para %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\\*nome do autor*\\*nome de extensão* \\ *versão*. As últimas três pastas nesse caminho são construídas a partir de `Author`, `Name`, e `Version` elementos o *extension.vsixmanifest* arquivo para a extensão.  
   
 4.  Depois que o Visual Studio instala a extensão, escolha o **fechar** botão.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Na barra de menus, escolha **depurar**, **anexar ao processo**.  
   
-5.  No **processos disponíveis** , escolha devenv.exe. Essa entrada refere-se à segunda instância do Visual Studio; Essa é a instância que você deseja depurar na sua extensão de projeto.  
+5.  No **processos disponíveis** , escolha *devenv.exe*. Essa entrada refere-se à segunda instância do Visual Studio; Essa é a instância que você deseja depurar na sua extensão de projeto.  
   
 6.  Escolha o **Attach** botão.  
   
@@ -92,8 +93,8 @@ ms.lasthandoff: 04/16/2018
   
 4.  Escolha o **reiniciar agora** botão para concluir a desinstalação.  
   
-## <a name="debugging-sharepoint-commands"></a>Depuração de comandos do SharePoint  
- Se você quiser depurar um comando do SharePoint que faz parte de uma extensão de ferramentas do SharePoint, você deve anexar o depurador ao processo vssphost4.exe. Este é o processo de host de 64 bits que executa comandos do SharePoint. Para obter mais informações sobre comandos do SharePoint e vssphost4.exe, consulte [chamando os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+## <a name="debug-sharepoint-commands"></a>Depuração de comandos do SharePoint
+ Se você quiser depurar um comando do SharePoint que faz parte de uma extensão de ferramentas do SharePoint, você deve anexar o depurador a *vssphost4.exe* processo. Este é o processo de host de 64 bits que executa comandos do SharePoint. Para obter mais informações sobre comandos do SharePoint e *vssphost4.exe*, consulte [chamando os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Para anexar o depurador ao processo vssphost4.exe  
   
@@ -101,17 +102,17 @@ ms.lasthandoff: 04/16/2018
   
 2.  Na instância do Visual Studio, no qual você estiver executando o depurador, na barra de menus, escolha **depurar**, **anexar ao processo**.  
   
-3.  No **processos disponíveis** , escolha vssphost.exe.  
+3.  No **processos disponíveis** , escolha *vssphost.exe*.  
   
     > [!NOTE]  
-    >  Se vssphost.exe não aparecer na lista, você deve iniciar o processo de vssphost4.exe na instância do Visual Studio, no qual você está executando a extensão. Normalmente, isso é feito executando uma ação que faz com que o Visual Studio para se conectar ao site do SharePoint no computador de desenvolvimento. Por exemplo, o Visual Studio inicia vssphost4.exe quando você expande um nó de conexão de site (um nó que exiba uma URL do site) sob o **conexões do SharePoint** nó no **Server Explorer** janela, ou quando você Adicione determinados itens de projeto do SharePoint, como **instância de lista** ou **receptor de evento** itens para um projeto do SharePoint.  
+    >  Se vssphost.exe não aparecer na lista, você deve iniciar o *vssphost4.exe* processo na instância do Visual Studio, no qual você está executando a extensão. Normalmente, isso é feito executando uma ação que faz com que o Visual Studio para se conectar ao site do SharePoint no computador de desenvolvimento. Por exemplo, o Visual Studio inicia *vssphost4.exe* quando você expande um nó de conexão de site (um nó que exiba uma URL do site) sob o **conexões do SharePoint** nó o **Gerenciador de servidores**  janela, ou quando você adiciona determinados itens de projeto do SharePoint, como **instância de lista** ou **receptor de evento** itens para um projeto do SharePoint.  
   
 4.  Escolha o **Attach** botão.  
   
 5.  Na instância do Visual Studio que está sendo depurado, execute as etapas que são necessárias para executar o comando.  
   
-## <a name="modifying-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modificar valores de registro para ajudar a depurar SharePoint extensões de ferramentas  
- Quando você depura uma extensão de ferramentas do SharePoint no Visual Studio, você pode modificar os valores do registro para ajudar a solucionar a extensão. Os valores existem sob a chave HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools. Esses valores não existem por padrão.  
+## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modificar valores do registro para ajudar a depurar extensões de ferramentas do SharePoint
+ Quando você depura uma extensão de ferramentas do SharePoint no Visual Studio, você pode modificar os valores do registro para ajudar a solucionar a extensão. Os valores existem sob o **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** chave. Esses valores não existem por padrão.  
   
  Para ajudar a solucionar qualquer extensão de ferramentas do SharePoint, você pode criar e definir o valor de EnableDiagnostics. A tabela a seguir descreve esse valor.  
   
@@ -123,14 +124,13 @@ ms.lasthandoff: 04/16/2018
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|AttachDebuggerToHostProcess|REG_DWORD que especifica se deve exibir uma caixa de diálogo que permite que você anexe o depurador ao vssphost4.exe assim que ele é iniciado. Isso é útil se o comando que você deseja depurar é executado pelo vssphost.exe imediatamente após ele ser iniciado, e não há tempo suficiente para anexar o depurador manualmente antes do comando é executado. Para exibir a caixa de diálogo, chamadas de vssphost4.exe a <xref:System.Diagnostics.Debugger.Break%2A> método quando ele for iniciado.<br /><br /> Para habilitar esse comportamento, defina esse valor como 1. Para desativar esse comportamento, defina esse valor como 0 ou exclua esse valor.<br /><br /> Se você definir esse valor como 1, você talvez queira aumentar o valor de HostProcessStartupTimeout para dar tempo suficiente para anexar o depurador antes do Visual Studio espera vssphost4.exe para sinalizar que ele foi iniciado com êxito.|  
+|AttachDebuggerToHostProcess|REG_DWORD que especifica se deve exibir uma caixa de diálogo que permite que você anexar o depurador a *vssphost4.exe* assim que ele é iniciado. Isso é útil se o comando que você deseja depurar é executado pelo vssphost.exe imediatamente após ele ser iniciado, e não há tempo suficiente para anexar o depurador manualmente antes do comando é executado. Para exibir a caixa de diálogo, *vssphost4.exe* chama o <xref:System.Diagnostics.Debugger.Break%2A> método quando ele for iniciado.<br /><br /> Para habilitar esse comportamento, defina esse valor como 1. Para desativar esse comportamento, defina esse valor como 0 ou exclua esse valor.<br /><br /> Se você definir esse valor como 1, você também pode desejar aumentar o valor de HostProcessStartupTimeout para dar tempo suficiente para anexar o depurador antes de espera do Visual Studio *vssphost4.exe* para sinalizar que ele foi iniciado com êxito.|  
 |ChannelOperationTimeout|REG_DWORD que especifica o tempo, em segundos, que o Visual Studio aguarda um comando do SharePoint a ser executado. Se o comando não é executado no momento, um <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> é gerada.<br /><br /> O padrão é 120 segundos.|  
-|HostProcessStartupTimeout|REG_DWORD que especifica o tempo, em segundos, que o Visual Studio aguarda vssphost4.exe sinalizar que ele foi iniciado com êxito. Se vssphost4.exe não indica um início bem-sucedido no momento, um <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> é gerada.<br /><br /> O padrão é 60 segundos.|  
-|maxReceivedMessageSize|REG_DWORD que especifica o tamanho máximo permitido, em bytes, das mensagens do WCF que são transmitidas entre o Visual Studio e vssphost4.exe.<br /><br /> O padrão é 1.048.576 bytes (1 MB).|  
-|MaxStringContentLength|REG_DWORD que especifica o tamanho máximo permitido, em bytes, de cadeias de caracteres que são transmitidas entre o Visual Studio e vssphost4.exe.<br /><br /> O padrão é 1.048.576 bytes (1 MB).|  
+|HostProcessStartupTimeout|REG_DWORD que especifica o tempo, em segundos, que o Visual Studio aguarda *vssphost4.exe* para sinalizar que ele foi iniciado com êxito. Se *vssphost4.exe* não indica um início bem-sucedido no momento, um <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> é gerada.<br /><br /> O padrão é 60 segundos.|  
+|maxReceivedMessageSize|REG_DWORD que especifica o tamanho máximo permitido, em bytes, das mensagens do WCF que são transmitidas entre o Visual Studio e *vssphost4.exe*.<br /><br /> O padrão é 1.048.576 bytes (1 MB).|  
+|MaxStringContentLength|REG_DWORD que especifica o tamanho máximo permitido, em bytes, de cadeias de caracteres que são passadas entre o Visual Studio e *vssphost4.exe*.<br /><br /> O padrão é 1.048.576 bytes (1 MB).|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Estendendo as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Implantando extensões para as Ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
-  
+

@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691128"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748053"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 O conjunto de dados é uma cópia na memória dos dados. Se você modificar esses dados, é uma boa prática para salvar as alterações no banco de dados. Você fazer isso em uma das três maneiras:
@@ -60,7 +60,7 @@ Se você estiver familiarizado com TableAdapters, você pode ir diretamente para
 
  Se você enviar as alterações no banco de dados, uma segunda etapa é necessária. Se você não estiver usando controles associados a dados, você precisa chamar manualmente o método Update do mesmo TableAdapter (ou adaptador de dados) que você usou para preencher o conjunto de dados. No entanto, você também pode usar adaptadores diferentes, por exemplo, para mover dados de uma fonte de dados para outra ou para atualizar várias fontes de dados. Se você não estiver usando a associação de dados e é salvar as alterações para tabelas relacionadas, você precisa instanciar manualmente uma variável da classe TableAdapterManager gerado automaticamente e, em seguida, chame o método UdpateAll.
 
- ![Atualizações de conjunto de dados do Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates") processo e a função do DataRowVersion em uma atualização bem-sucedida de atualização de dois estágios
+ ![Atualizações de conjunto de dados do Visual Basic](../data-tools/media/vbdatasetupdates.gif) processo e a função do DataRowVersion em uma atualização bem-sucedida de atualização de dois estágios
 
  Um conjunto de dados contém coleções de tabelas, que contém uma coleção de linhas. Se você pretende atualizar uma fonte de dados mais tarde, você deve usar os métodos na propriedade DataTable.DataRowCollection ao adicionar ou remover linhas. Os métodos de realizar o controle de alterações que é necessário para atualizar a fonte de dados. Se você chamar a coleção RemoveAt na propriedade de linhas, a exclusão não ser comunicada de volta para o banco de dados.
 

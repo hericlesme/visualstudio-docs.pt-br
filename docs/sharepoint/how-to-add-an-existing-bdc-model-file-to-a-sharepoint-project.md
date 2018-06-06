@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8a6b42a9cff28cc57365081bc4a041524ece7fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ca7f4befcb75a48e5b03637c143edfdd81b428a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767735"
 ---
-# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Como adicionar um arquivo de modelo BDC existente a um projeto do SharePoint
-  Você pode personalizar o pacote e reimplantar um modelo de conectividade de dados de negócios (BDC) usando o Visual Studio para adicionar o arquivo de modelo (.bdcm) a qualquer projeto de farm do SharePoint. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Como: adicionar um arquivo de modelo BDC existente a um projeto do SharePoint
+  Você pode personalizar, pacotes e reimplantar um modelo de conectividade de dados de negócios (BDC) usando o Visual Studio para adicionar o arquivo de modelo (*.bdcm*) a qualquer projeto de farm do SharePoint. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Para adicionar um arquivo de modelo BDC a um projeto do SharePoint  
   
 1.  Em **Solution Explorer**, escolha a pasta para um projeto do SharePoint.  
   
-2.  Na barra de menus, escolha **projeto**, **Add Existing Item**.  
+2.  Na barra de menus, escolha **projeto** > **Add Existing Item**.  
   
 3.  No **Add Existing Item** caixa de diálogo, navegue até o local do arquivo de definição de modelo que você deseja adicionar ao seu projeto, escolha o arquivo e, em seguida, escolha o **adicionar** botão.  
   
@@ -49,11 +50,11 @@ ms.lasthandoff: 04/16/2018
   
      O **modelo de conectividade de dados corporativos** item é adicionado ao projeto.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Criando um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Como: criar um modelo BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Como: usar um arquivo de recurso para especificar nomes localizados, propriedades e permissões](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Como: incluir um Assembly personalizado em um recurso BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrando dados corporativos ao SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
-  
+ 

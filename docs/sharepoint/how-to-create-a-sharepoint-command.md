@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbfaeba966a2608f67ff63b0de39f13669a7169f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 026c15241ace87a3d7454afb2439e045d06ce67b
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767657"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>Como criar um novo comando do SharePoint
+# <a name="how-to-create-a-sharepoint-command"></a>Como: criar um comando do SharePoint
   Se você quiser usar o modelo de objeto de servidor em uma extensão de ferramentas do SharePoint, você deve criar um personalizado *comando SharePoint* para chamar a API. Você pode definir o comando do SharePoint em um assembly que pode chamar diretamente o modelo de objeto do servidor.  
   
  Para obter mais informações sobre a finalidade de comandos do SharePoint, consulte [chamando os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -77,11 +78,10 @@ ms.lasthandoff: 04/16/2018
 -   Microsoft. SharePoint  
   
 ## <a name="deploying-the-command"></a>Implantando o comando  
- Para implantar o comando, inclua o assembly de comando na mesma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) com o assembly de extensão que usa o comando. Você também deve adicionar uma entrada para o assembly de comando no arquivo extension.vsixmanifest. Para obter mais informações, consulte [implantação de extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Para implantar o comando, inclua o assembly de comando na mesma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensão (*vsix*) pacote com o assembly de extensão que usa o comando. Você também deve adicionar uma entrada para o assembly de comando no arquivo extension.vsixmanifest. Para obter mais informações, consulte [implantação de extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [A chamada para os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [Como: executar um comando do SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Instruções passo a passo: estendendo o Gerenciador de Servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
   

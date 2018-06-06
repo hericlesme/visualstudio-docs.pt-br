@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb13e88e07741327088e8d138dfcf8b92a9075a6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a353d7a61f9bc1dbb83d37ad419c3d2fbdf656ba
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746553"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Passo a passo: Analisando código gerenciado para código defeitos
 
@@ -30,7 +31,7 @@ Este passo a passo o orienta o processo de usar a análise de código para anali
 
 1. No menu **Arquivo**, escolha **Novo** > **Projeto...**.
 
-1. No **novo projeto** caixa de diálogo caixa, expanda **instalado** > **Visual C#** e, em seguida, escolha **área de trabalho clássica do Windows**.
+1. No **novo projeto** caixa de diálogo caixa, expanda **instalado** > **Visual C#** e, em seguida, escolha **Windows Desktop**.
 
 1. Escolha o **biblioteca de classes (.NET Framework)** modelo.
 

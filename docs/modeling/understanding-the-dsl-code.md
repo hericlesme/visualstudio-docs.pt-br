@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27581387b9775d2e2cf4401c811dab09b15c3722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748667"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode ser usada para ler e atualizar instâncias da DSL no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.
@@ -28,7 +29,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
 
  Pressione F5 e experimente, se ainda não estiver familiarizado com esse modelo de solução. Observe especificamente que é possível criar portas arrastando uma ferramenta de porta para um componente e que é possível conectar portas.
 
- ![Componentes e portas interconectadas](../modeling/media/componentsample.png "ComponentSample")
+ ![Componentes e portas interconectadas](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>A Estrutura da Solução DSL
  O **Dsl** projeto define a API para seu DSL. O **DslPackage** projeto define como ele se integra com [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Também é possível adicionar seus próprios projetos, que também podem conter código gerado a partir do modelo.

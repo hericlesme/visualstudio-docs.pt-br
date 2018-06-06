@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751735"
 ---
 # <a name="search-the-schema-set"></a>Pesquisar o conjunto de esquema
 
@@ -28,7 +29,7 @@ O **XML Schema Explorer** permite que você pesquise o esquema definido das segu
 
  Executar pesquisas de palavra-chave inserindo uma subcadeia de caracteres no **pesquisa SchemaSet** caixa de texto do **XML Schema Explorer** barra de ferramentas.
 
- ![Pesquisa de palavra-chave do XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Pesquisa de palavra-chave do XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif)
 
  O **XML Schema Explorer** procura o esquema definido para os seguintes atributos:
 
@@ -48,7 +49,7 @@ O **XML Schema Explorer** permite que você pesquise o esquema definido das segu
 
  Você pode adicionar os resultados da pesquisa para o espaço de trabalho clicando o **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo.
 
- ![Resultado da pesquisa do XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Resultado da pesquisa do XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Limpar resultados da pesquisa
 

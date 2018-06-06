@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ff9571adc23c9ddc86de96736b9d37ef1cec5d3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a937310ddbb866cbe046ea2975f8d76e75fe2a98
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691812"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766959"
 ---
 # <a name="featureproperty-element"></a>Elemento FeatureProperty
   Representa uma propriedade personalizada que está incluída com um recurso quando ele é implantado no SharePoint. Após a implantação de um recurso, você pode acessar a propriedade em seu código.  
@@ -32,7 +32,7 @@ ms.locfileid: "34691812"
     Value = "Property value" />  
 ```  
   
-## <a name="attributes-and-elements"></a>Atributos e elementos  
+## <a name="attributes-and-elements"></a>Atributos e elementos
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -42,10 +42,10 @@ ms.locfileid: "34691812"
 |**Chave**|Necessário **xs: string** atributo.<br /><br /> A chave é usada para armazenar e recuperar o valor da propriedade. Cada propriedade deve ter uma chave que é exclusiva dentro do recurso.|  
 |**Value**|Necessário **xs: string** atributo.<br /><br /> O valor da propriedade.|  
   
-### <a name="child-elements"></a>Elementos filho  
+### <a name="child-elements"></a>Elementos filho
  nenhuma.  
   
-### <a name="parent-elements"></a>Elementos pai  
+### <a name="parent-elements"></a>Elementos pai
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691812"
 ## <a name="remarks"></a>Comentários  
  Para obter mais informações sobre as propriedades do recurso, consulte [fornecendo empacotamento e informações de implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Informações do elemento  
+## <a name="element-information"></a>Informações do elemento
   
 |||  
 |-|-|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691812"
 |**Arquivo de validação**|ProjectItemModelSchema.xsd|  
 |**Pode estar vazio**|Não|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Referência de esquema de Item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Fornecendo informações de pacote e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

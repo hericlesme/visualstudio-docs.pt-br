@@ -19,18 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767771"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Como adicionar e remover assemblies adicionais
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Como: adicionar e remover assemblies adicionais
   Se um pacote do SharePoint depende de outros assemblies para funcionalidade ou dados, você pode adicionar os assemblies ao seu pacote de solução (. wsp). Dessa forma, o servidor do SharePoint assegura que os assemblies personalizados são instalados com um pacote.  
   
  Você também pode adicionar e alterar os controles seguros e arquivos de recurso de classe associados com os assemblies.  
   
-## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Adicionando Assemblies adicionais, os controles de seguros e recursos de classe  
+## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Adicionando assemblies adicionais, os controles de seguros e recursos de classe  
  Você pode adicionar assemblies adicionais para o pacote de solução do SharePoint. Implantar assemblies adicionais em uma solução em área restrita para o cache de assembly global, mas os itens de projeto do SharePoint em uma solução em área restrita serão adicionados para o banco de dados de conteúdo. Você também pode adicionar controles de seguros e recursos de classe para esses assemblies adicionais. Para obter mais informações sobre controles de seguras, consulte [fornecendo empacotamento e informações de implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ou "Criando uma entrada SafeControl" em [implantação de Web Parts do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
 #### <a name="to-add-an-existing-assembly"></a>Para adicionar um assembly existente  
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  No **nome de arquivo** coluna, escolha o botão de reticências (![elipse ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "elipse ASP.NET Mobile Designer")) e escolha o recurso de classe que você deseja adicionar.  
   
-## <a name="deleting-custom-assemblies"></a>Excluindo Assemblies personalizados  
+## <a name="deleting-custom-assemblies"></a>Excluindo assemblies personalizados  
  Você pode excluir conjuntos de um pacote do SharePoint ou excluir recursos de classe e controles de seguros de assemblies existentes.  
   
 #### <a name="to-delete-an-existing-assembly"></a>Para excluir um assembly existente  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  Pressione a tecla Delete.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Criar recursos do SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Como adicionar e remover itens de funcionalidades do SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746810"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectar a dados em um banco de dados do Access (Windows Forms)
 Você pode se conectar a um banco de dados do Access (um arquivo. mdf ou um arquivo. accdb) usando o Visual Studio. Depois de definir a conexão, os dados aparecem no **fontes de dados** janela. Nela, é possível arrastar tabelas ou exibições para os formulários.
@@ -37,7 +38,7 @@ Você pode se conectar a um banco de dados do Access (um arquivo. mdf ou um arqu
 
 2.  Sobre o **exibição** menu, selecione **outras janelas** > **fontes de dados**.
 
-     ![Exibir outras fontes de dados do Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Exibir outras fontes de dados do Windows](../data-tools/media/viewdatasources.png)
 
 3.  No **fontes de dados** janela, clique em **adicionar nova fonte de dados**.
 
@@ -59,7 +60,7 @@ Você pode se conectar a um banco de dados do Access (um arquivo. mdf ou um arqu
 
 9. Volta o **Adicionar Conexão** caixa de diálogo, selecione **Microsoft Office 12.0 Access Database Engine OLE DB Provider** do **provedor OLE DB** suspensa.
 
-     ![OLE DB Provider do Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![OLE DB Provider do Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Se você não vir **Microsoft Office 12.0 Access Database Engine OLE DB Provider** na lista suspensa de provedor do OLE DB, você talvez precise instalar o [2007 Office System Driver: componentes de conectividade de dados](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ Você pode se conectar a um banco de dados do Access (um arquivo. mdf ou um arqu
 
 2.  Sobre o **exibição** menu, selecione **outras janelas** > **fontes de dados**.
 
-     ![Exibir outras fontes de dados do Windows](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Exibir outras fontes de dados do Windows](../data-tools/media/viewdatasources.png)
 
 3.  No **fontes de dados** janela, clique em **adicionar nova fonte de dados**.
 
@@ -103,7 +104,7 @@ Você pode se conectar a um banco de dados do Access (um arquivo. mdf ou um arqu
 
 8.  No **nome de arquivo de banco de dados**, especifique o caminho e o nome do arquivo. mdb que você deseja se conectar a e, em seguida, selecione **Okey**.
 
-     ![Adicionar o arquivo de banco de dados de acesso de Conexão](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Adicionar o arquivo de banco de dados de acesso de Conexão](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Selecione **próximo** no **escolha sua Conexão de dados** página.
 

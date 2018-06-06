@@ -1,5 +1,5 @@
 ---
-title: Lidar com uma exceção de simultaneidade
+title: Tratar uma exceção de simultaneidade
 ms.date: 09/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,13 +20,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24338b2a6bc49a9a1a2a77e6395f60013c4465b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c68a093effe39597fc2802bc54f471dbce8b1bf5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752327"
 ---
-# <a name="handle-a-concurrency-exception"></a>Lidar com uma exceção de simultaneidade
+# <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são gerados quando dois usuários tentam alterar os mesmos dados em um banco de dados ao mesmo tempo. Neste passo a passo, você cria um aplicativo do Windows que ilustra como capturar uma <xref:System.Data.DBConcurrencyException>, localize a linha que causou o erro e aprender uma estratégia para como lidar com ele.
 
  Este passo a passo leva você através do seguinte processo:
@@ -72,7 +73,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 1. No Visual Studio, no **arquivo** menu, selecione **novo**, **projeto...** .
 
-2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **área de trabalho clássica do Windows**.
+2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **Windows Desktop**.
 
 3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
 

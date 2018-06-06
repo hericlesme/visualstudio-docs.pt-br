@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d0b60bb4e7048e2dc49774ec69d3eea4fc0ce6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745796"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo simples de dados usando o ADO.NET
 
@@ -83,7 +84,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
  **Formulário de navegação**
 
- ![Caixa de diálogo de navegação](../data-tools/media/simpleappnav.png "SimpleAppNav")
+ ![Caixa de diálogo de navegação](../data-tools/media/simpleappnav.png)
 
 |Controles para o formulário de navegação|Propriedades|
 |--------------------------------------|----------------|
@@ -93,7 +94,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
  **Formulário de NewCustomer**
 
- ![Adicionar um novo cliente e fazer um pedido](../data-tools/media/simpleappnewcust.png "SimpleAppNewCust")
+ ![Adicionar um novo cliente e fazer um pedido](../data-tools/media/simpleappnewcust.png)
 
 |Controles para o formulário NewCustomer|Propriedades|
 |---------------------------------------|----------------|
@@ -108,7 +109,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
  **Formulário FillOrCancel**
 
- ![Preencha ou cancelar pedidos](../data-tools/media/simpleappcancelfill.png "SimpleAppCancelFill")
+ ![Preencha ou cancelar pedidos](../data-tools/media/simpleappcancelfill.png)
 
 |Controles do formulário FillOrCancel|Propriedades|
 |----------------------------------------|----------------|

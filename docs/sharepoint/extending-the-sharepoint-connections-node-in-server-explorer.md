@@ -17,23 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0eabca43f604d92ecab78dccae281a450f7c0400
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 433923234b890564d21915d56a906fe10060e4ae
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766266"
 ---
-# <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Estendendo o nó Conexões do SharePoint no Gerenciador de Servidores
-  No Visual Studio, você pode conectar-se a sites locais do SharePoint no computador de desenvolvimento usando o **conexões do SharePoint** nó o**Server Explorer** janela. Esse nó exibe vários componentes de sites locais do SharePoint em uma exibição de árvore hierárquica. Por exemplo, você pode exibir as listas, bibliotecas de documentos e tipos de conteúdo em sites locais. Para obter mais informações sobre como usar **Server Explorer** para se conectar a sites locais do SharePoint, consulte [pesquisa do SharePoint conexões usando o Server Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
+# <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estender o nó de conexões do SharePoint no Gerenciador de servidores
+  No Visual Studio, você pode conectar-se a sites locais do SharePoint no computador de desenvolvimento usando o **conexões do SharePoint** nó o **Server Explorer** janela. Esse nó exibe vários componentes de sites locais do SharePoint em uma exibição de árvore hierárquica. Por exemplo, você pode exibir as listas, bibliotecas de documentos e tipos de conteúdo em sites locais. Para obter mais informações sobre como usar **Server Explorer** para se conectar a sites locais do SharePoint, consulte [pesquisa do SharePoint conexões usando o Server Explorer](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  
   
  Você pode estender o **conexões do SharePoint** nó com a criação de extensões para nós existentes ou criando um tipo de nó personalizados e adicioná-lo para a hierarquia de nós.  
   
-## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Tarefas para expandir o nó de conexões do SharePoint  
+## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>Tarefas para expandir o nó de conexões do SharePoint
  Para estender um nó existente, criar uma extensão do Visual Studio que implementa o <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface. Quando você estende um nó, você pode adicionar funcionalidade para o nó, como seus próprios itens de menu de atalho ou propriedades personalizadas. Para obter mais informações, consulte [como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
  Para criar um tipo de nó personalizados, criar uma extensão do Visual Studio que implementa o <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface. Criar um nó de personalizado se você quiser exibir os componentes de sites do SharePoint que não são exibidos no **Server Explorer** por padrão. Por exemplo, **Server Explorer** não exibir a Galeria de Web Part de um site do SharePoint por padrão, mas você pode adicionar um nó personalizado que faz isso. Para obter mais informações, consulte [como: adicionar um nó do SharePoint personalizado para o Gerenciador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md) e [passo a passo: estendendo o Gerenciador de servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## <a name="adding-custom-properties-to-nodes"></a>Adicionando propriedades personalizadas para nós  
+## <a name="add-custom-properties-to-nodes"></a>Adicionar propriedades personalizadas para nós
  Quando você estende um nó ou cria um tipo de nó personalizados, você pode adicionar propriedades personalizadas para o nó. As propriedades aparecem no **propriedades** janela quando o nó é selecionado.  
   
  Há dois tipos de propriedades personalizadas, que você pode adicionar a um nó:  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Propriedades que exibem dados de leitura/gravação personalizado. Para obter um exemplo de código que demonstra como fazer isso, consulte [como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
-## <a name="getting-data-for-built-in-nodes"></a>Obtendo dados para os nós internos  
+## <a name="get-data-for-built-in-nodes"></a>Obter dados para nós internos
  Todos os nós internos fornecidos pelo Visual Studio incluem alguns dados sobre o componente do SharePoint que eles representam. Por exemplo, um nó que representa uma lista no site do SharePoint fornece alguns dados sobre a lista, como o título e a URL da exibição padrão da lista.  
   
  Para acessar esses dados, recuperar um objeto de dados do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriedade o <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objeto que representa o nó que você está interessado. O tipo do objeto de dados depende do tipo do nó.  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
  Para obter mais informações sobre como usar o <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriedade, consulte [associando dados personalizados com extensões de ferramentas do SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Passo a passo: Estendendo o Gerenciador de servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Como: estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Como: adicionar um nó do SharePoint personalizado para o Gerenciador de servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   

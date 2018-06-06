@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751696"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 
@@ -22,7 +23,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
  A imagem a seguir mostra a visualização de gráfico com seis nós globais na superfície de design.
 
- ![Modo de exibição de gráfico do Designer de esquema XML](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![Exibição do gráfico do Designer de Esquema XML](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Superfície de design
 
@@ -34,7 +35,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
  Se a superfície de design é em branco, o Editor de XML, o **XML Schema Explorer**, e a marca d'água são mostradas. O *marca d'água* é uma lista de links para todas as exibições de Designer de XSD.
 
- ![Designer XSD. Modo de exibição de gráfico](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![Designer XSD; Exibição do gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”
 
@@ -98,7 +99,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
  Os seguintes botões da barra de ferramentas XSD são ativados quando a exibição do gráfico está ativo.
 
- ![Ferramentas de Designer de esquema XML](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Barra de ferramentas do Designer de Esquema XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opção|Descrição|
 |------------|-----------------|

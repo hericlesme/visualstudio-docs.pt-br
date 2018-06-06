@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690920"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747034"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Criar um banco de dados e adicionar tabelas no Visual Studio
 Você pode usar o Visual Studio para criar e atualizar um arquivo de banco de dados local no SQL Server Express LocalDB. Você também pode criar um banco de dados executando instruções Transact-SQL a **Pesquisador de objetos do SQL Server** janela de ferramenta no Visual Studio. Neste tópico, vamos criar um arquivo. mdf e adicionar tabelas e chaves usando o Designer de tabela.
@@ -36,7 +36,7 @@ Para concluir este passo a passo, você deve ter opcional **armazenamento de dad
 
 3.  Na lista de modelos de item, role para baixo e selecione **banco de dados baseado em serviço**.
 
-     ![Caixa de diálogo de modelos de item](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![Caixa de diálogo de modelos de item](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  Nome do banco de dados **SampleDatabase**e, em seguida, selecione o **adicionar** botão.
 
@@ -95,7 +95,7 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
 
     Você deve ver algo parecido com isso:
 
-    ![Designer de tabela](../data-tools/media/raddata-table-designer.png "raddata Designer de tabela")
+    ![Designer de Tabela](../data-tools/media/raddata-table-designer.png)
 
 7.  No canto superior esquerdo do **Designer de tabela**, selecione o **atualização** botão.
 
@@ -130,7 +130,7 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
 ### <a name="to-create-a-foreign-key"></a>Para criar uma chave estrangeira
 1.  No painel de contexto no lado direito da grade, abra o menu de atalho **chaves estrangeiras**e, em seguida, selecione **adicionar nova chave estrangeira**, como mostra a ilustração a seguir.
 
-     ![Adicionar uma chave estrangeira no Designer de tabela](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Adicionar uma chave estrangeira no Designer de tabela](../data-tools/media/foreignkey.png)
 
 2.  Na caixa de texto que aparece, substitua **ToTable** com `Customers`.
 

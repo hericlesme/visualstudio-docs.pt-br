@@ -24,20 +24,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a0607bcd05fcb0d63fcc9bff40dfffeb2c45b8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02a6daf7a3155113ecd06d991b337b54fb0d7cd4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768125"
 ---
-# <a name="how-to-add-a-deleter-method"></a>Como adicionar um método Deleter
-  Você pode habilitar um usuário final excluir um registro de dados de uma lista em um site do SharePoint, adicionando um *Deleter* método para o modelo. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-deleter-method"></a>Como: adicionar um método Deleter
+  Você pode habilitar um usuário final excluir um registro de dados de uma lista em um site do SharePoint, adicionando um método Deleter para o modelo. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-deleter-method"></a>Para criar um método Deleter  
   
-1.  No designer de BDC, escolha uma entidade.  
+1.  Sobre o **BDC Designer**, escolha uma entidade.  
   
-2.  Na barra de menus, escolha **exibição**, **outras janelas**, **detalhes de método BDC**.  
+2.  Na barra de menus, escolha **exibição** > **outras janelas** > **detalhes de método BDC**.  
   
      O **detalhes de método BDC** janela será aberta. Para obter mais informações sobre esta janela, consulte [visão geral de ferramentas de Design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
      [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Como: adicionar um método Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Como: adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   
