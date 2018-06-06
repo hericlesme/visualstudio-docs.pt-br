@@ -1,5 +1,5 @@
 ---
-title: '&lt;atualizar&gt; elemento (desenvolvimento do Office no Visual Studio) | Microsoft Docs'
+title: '&lt;atualizar&gt; elemento (desenvolvimento do Office no Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f0e1fdc26e285ce9b6a1fd5ecc1aa638fe909b8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767602"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;atualizar&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `update` elemento Especifica o intervalo no qual a solução irá verificar atualizações.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```xml  
 <update  
   enabled>  
   <expiration  
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`maximumAge`|-Necessário. Defina isso como um número inteiro.|  
+|`maximumAge`|   Necessário. Defina isso como um número inteiro.|  
 |`unit`|Necessário. Definir `unit` para um dos seguintes valores:<br /><br /> -   **Horas**<br />-   **Dias**<br />-   **Semanas**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Exemplo de sempre verificar atualizações  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Código  
   
-```  
+```xml  
 <vstav3:update enabled="true" />  
 ```  
   
@@ -77,16 +78,16 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Código  
   
-```  
+```xml  
 <vstav3:update enabled="true">  
     <vstav3:expiration maximumAge="7" unit="days" />  
 </vstav3:update>  
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Implantando uma solução do Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [Implantar uma solução do Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [Manifesto de aplicativo ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
+ [Manifesto do aplicativo ClickOnce](/visualstudio/deployment/clickonce-application-manifest)  
   
   

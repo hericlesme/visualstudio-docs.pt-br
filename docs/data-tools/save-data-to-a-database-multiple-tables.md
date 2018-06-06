@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5be0cccd71a356a78a04c3d15cdb2f080e30c9e4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b087c9f92576edbd3f13ec89ff8716feb95be3e1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752353"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados de um formulário em um aplicativo do Windows, editar e enviá-los atualizados de volta para o banco de dados. Essa explicação passo a passo cria um formulário que exibe dados de duas tabelas relacionadas e mostra como editar registros e salvar alterações no banco de dados. Este exemplo usa as tabelas `Customers` e `Orders` do banco de dados de exemplo Northwind.
@@ -70,7 +71,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 1. No Visual Studio, no **arquivo** menu, selecione **novo**, **projeto...** .
 
-2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **área de trabalho clássica do Windows**.
+2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **Windows Desktop**.
 
 3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
 

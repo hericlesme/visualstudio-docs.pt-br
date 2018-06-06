@@ -22,20 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0424c6561b063b17f384215021a1300122dcbb1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd566eacba7f94cfe7617e9396440c90dc32f51e
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767118"
 ---
-# <a name="how-to-add-a-creator-method"></a>Como adicionar um método Creator
-  Um método Creator adiciona novos dados à fonte de dados de uma entidade. O serviço de conectividade de dados de negócios (BDC) chama este método quando os usuários escolhem o **Novo Item** botão na faixa de opções de uma lista com base no modelo. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-creator-method"></a>Como: adicionar um método Creator
+  Um método Creator adiciona novos dados à fonte de dados de uma entidade. O serviço de conectividade de dados de negócios (BDC) chama este método quando os usuários escolhem o **Novo Item** botão o **faixa de opções** de uma lista com base no modelo. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-add-a-creator-method"></a>Para adicionar um método Creator  
   
-1.  No designer de BDC, escolha uma entidade.  
+1.  Sobre o **BDC Designer**, escolha uma entidade.  
   
-2.  Na barra de menus, escolha **exibição**, **outras janelas**, **detalhes de método BDC**.  
+2.  Na barra de menus, escolha **exibição** > **outras janelas** >**detalhes de método BDC**.  
   
      O **detalhes de método BDC** janela será aberta. Para obter mais informações sobre essa janela, consulte [visão geral de ferramentas de Design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
      [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Como: adicionar um método Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Como: adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   

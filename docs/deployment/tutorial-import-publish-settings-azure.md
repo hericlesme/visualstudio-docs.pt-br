@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 88dc37e555f6ceb30584d4a1c17b96506219631a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766734"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publicar um aplicativo para o serviço de aplicativo do Azure importando as configurações de publicação no Visual Studio
 
@@ -37,9 +38,9 @@ Um arquivo de configurações de publicação (*\*. publishsettings*) é diferen
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você deve ter o Visual Studio de 2017 instalado e o **ASP.NET** e **do .NET Framework** cargas de trabalho de desenvolvimento. Para um aplicativo .NET Core, você também precisa de **.NET Core** carga de trabalho.
+* Você deve ter o Visual Studio de 2017 instalado e o **ASP.NET** e. **NET Framework** cargas de trabalho de desenvolvimento. Para um aplicativo .NET Core, você também precisa do. **NET Core** carga de trabalho.
 
-    Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
+    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
 * Crie um serviço de aplicativo do Azure. Para obter instruções detalhadas, consulte [implantar um aplicativo web do ASP.NET Core para o Azure usando o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). 
 
@@ -92,11 +93,11 @@ Um arquivo de configurações de publicação (*\*. publishsettings*) é diferen
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importar as configurações de publicação no Visual Studio e implantar
 
-[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+[!INCLUDE [import publish settings](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste tutorial, você criou um arquivo de configurações de publicação, importá-la para o Visual Studio e implantado um aplicativo ASP.NET para o serviço de aplicativo do Azure.
+Neste tutorial, você criou um arquivo de configurações de publicação, importá-la para o Visual Studio e implantado um aplicativo ASP.NET para o serviço de aplicativo do Azure. Talvez você queira obter uma visão geral das opções de publicação no Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Introdução à implantação](../deployment/deploying-applications-services-and-components.md)

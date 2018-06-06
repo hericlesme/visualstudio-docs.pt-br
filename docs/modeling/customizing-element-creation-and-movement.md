@@ -13,11 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7d86dd961a5192d63cee9501eb16aaf51b3fd629
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4563756e42b5c0bdc1a56e938ca6326e04b104
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748653"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 Você pode permitir que um elemento ser arrastado para outra, da caixa de ferramentas ou em uma operação de colar ou mover a operação. Você pode fazer com que os elementos movidos vinculados para os elementos de destino, usando as relações que você especificar.
@@ -38,7 +39,7 @@ Você pode permitir que um elemento ser arrastado para outra, da caixa de ferram
 
  A responsabilidade de um EMD é decidir como um objeto ou grupo de objetos deve ser mesclado em um local específico no modelo. Em particular, ele decide quais relações devem ser inicializadas para vincular o grupo mesclado no modelo. Você também pode personalizá-lo para definir propriedades e criar objetos adicionais.
 
- ![DSL&#45;EMD&#95;mesclar](../modeling/media/dsl-emd_merge.png "DSL EMD_Merge") a função de uma diretiva de mesclagem do elemento
+ ![DSL&#45;EMD&#95;mesclar](../modeling/media/dsl-emd_merge.png) a função de uma diretiva de mesclagem do elemento
 
  Um EMD é gerado automaticamente quando você define um relacionamento de incorporação. Esse padrão EMD cria uma instância da relação, quando os usuários adicionam novas instâncias filho para o pai. Você pode modificar essas EMDs padrão, por exemplo, adicionando o código personalizado.
 
@@ -47,7 +48,7 @@ Você pode permitir que um elemento ser arrastado para outra, da caixa de ferram
 ## <a name="defining-an-element-merge-directive"></a>Definindo uma diretiva de mesclagem do elemento
  Você pode adicionar as diretivas de mesclagem do elemento para classes de domínio, relações de domínio, formas, conectores e diagramas. Você pode adicionar ou encontrá-los no Pesquisador de objetos de DSL na classe de domínio de recebimento. A classe de recebimento é a classe de domínio do elemento que já está no modelo e, em que o elemento novo ou copiado será mesclado.
 
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")
+ ![DSL&#45;EMD&#95;detalhes](../modeling/media/dsl-emd_details.png)
 
  O **classe indexação** é a classe de domínio de elementos que podem ser mescladas em membros da classe de recebimento. Instâncias de subclasses da classe indexação também serão mescladas por este EMD, a menos que você defina **aplica-se à subclasses** como False.
 

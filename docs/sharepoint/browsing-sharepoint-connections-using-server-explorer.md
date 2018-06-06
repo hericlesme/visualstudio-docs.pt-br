@@ -21,15 +21,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5631699f324451034d0d5c66161c004c793add37
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8d19dc2cb621cc99b94524806d63eebba137668a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691411"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765850"
 ---
-# <a name="browsing-sharepoint-connections-that-use-server-explorer"></a>Pesquisa de conexões do SharePoint que usam o Gerenciador de servidores
-  Agora você pode procurar conexões locais do SharePoint no **Server Explorer**. Usando essa técnica, você pode navegar por meio dos componentes de um site do SharePoint em seu sistema. Componentes do site do SharePoint, como definições de listas e tipos de conteúdo, aparecem em um nó chamado **conexões do SharePoint** na exibição de árvore de **Server Explorer**. Para exibir **Server Explorer**, na barra de menus, escolha **exibição**, **Server Explorer**. Além de exibir os componentes do site do SharePoint, você pode remover itens, exibir suas propriedades ou atualizar a exibição de árvore usando comandos no menu de atalho.  
+# <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Procurar conexões do SharePoint usando o Gerenciador de servidores
+  Agora você pode procurar conexões locais do SharePoint no **Server Explorer**. Usando essa técnica, você pode navegar por meio dos componentes de um site do SharePoint em seu sistema. Componentes do site do SharePoint, como definições de listas e tipos de conteúdo, aparecem em um nó chamado **conexões do SharePoint** na exibição de árvore de **Server Explorer**. Para exibir **Server Explorer**, na barra de menus, escolha **exibição** > **Server Explorer**. Além de exibir os componentes do site do SharePoint, você pode remover itens, exibir suas propriedades ou atualizar a exibição de árvore usando comandos no menu de atalho.  
   
 > [!IMPORTANT]  
 >  Para procurar um site do SharePoint, você deve ser um administrador do conjunto de sites do SharePoint, e você deve estar executando o Visual Studio como administrador do computador local. Caso contrário, o site será exibido na **Server Explorer**, mas você não pode expandir o nó. Para verificar se você for um administrador do conjunto de sites, abra o site em um navegador da web, abra o **ações do Site** menu, escolha **permissões de Site**e, em seguida, o **permissões: Team Site** página, escolha o **administradores** comando o **gerenciar** grupo na faixa de opções. O nome será exibido na caixa de texto se você for um administrador de conjunto de sites. Se o **administradores** comando não aparece no grupo de gerenciamento na faixa de opções, você não é um administrador do conjunto de sites e você deve obter as permissões apropriadas do administrador do site.  

@@ -15,11 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 357101a9430eb8d22aeab39179a0a4f70f0dc1bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f39ddf910f120c30cf8ef55e77d4fe09f645e148
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748521"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 É necessário definir os itens da caixa de ferramentas para os elementos que deseja disponibilizar para os usuários adicionarem aos seus modelos. Há dois tipos de ferramentas: ferramentas de elemento e ferramentas de conexão. No designer gerado, um usuário pode selecionar uma ferramenta do elemento para arrastar formas para o diagrama e pode selecionar uma ferramenta de conexão para desenhar links entre as formas. Em geral, as ferramentas do elemento permitem aos usuários adicionarem instâncias de classe de domínio aos seus modelos e as ferramentas de conexão permitem que eles adicionem instâncias de relações de domínio.
@@ -199,17 +200,17 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Conexão recebidas por um OutPort de um componente aninhado**
 
- ![Construtor Conexão](../modeling/media/connectionbuilder_3.png "ConnectionBuilder_3")
+ ![Construtor de Conexão](../modeling/media/connectionbuilder_3.png)
 
  Portanto, pode ser desejável especificar que uma conexão pode vir de um componente aninhado para uma OutPort. Para especificar tal uma conexão, defina **usa personalizado aceitar** no **InPort** tipo como função de origem e o **OutPort** tipo como função de destino no **DSL detalhes**  janela conforme mostrado nas ilustrações a seguir:
 
  **Link conecte-se a diretiva no Explorer DSL**
 
- ![Imagem do construtor de Conexão](../modeling/media/connectionbuilder_4a.png "ConnectionBuilder_4a")
+ ![Imagem do construtor de Conexão](../modeling/media/connectionbuilder_4a.png)
 
  **Link conecte-se a diretiva na janela de detalhes DSL**
 
- ![](../modeling/media/connectionbuilder_4b.png "ConnectionBuilder_4b")
+ ![](../modeling/media/connectionbuilder_4b.png)
 
  É necessário fornecer métodos na classe ConnectionBuilder:
 

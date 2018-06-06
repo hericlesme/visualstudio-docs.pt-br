@@ -1,5 +1,5 @@
 ---
-title: Salvar os dados com o TableAdapter DBDirect métodos
+title: Salvar os dados com os métodos TableAdapter DBDirect
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747541"
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com o TableAdapter DBDirect métodos
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
 Este passo a passo fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações de banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados chamando o indivíduo `Insert`, `Update`, e `Delete` métodos conforme necessário para seu aplicativo (em vez de sobrecarregados `Update` método que executa a atualização Instruções INSERT e DELETE todas em uma chamada).
 
  Durante este passo a passo, você aprenderá a:
@@ -63,7 +64,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 1. No Visual Studio, no **arquivo** menu, selecione **novo**, **projeto...** .
 
-2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **área de trabalho clássica do Windows**.
+2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **Windows Desktop**.
 
 3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
 

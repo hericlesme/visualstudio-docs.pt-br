@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747385"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Vincular controles a dados no Visual Studio
 Você pode exibir dados para usuários do seu aplicativo pela associação de dados a controles. Você pode criar esses controles associados a dados, arrastando itens a partir de **fontes de dados** window em uma superfície de design ou controles em uma superfície no Visual Studio.
@@ -45,7 +46,7 @@ Você pode exibir dados para usuários do seu aplicativo pela associação de da
 ## <a name="data-sources-window"></a>janela Fontes de Dados
  Fontes de dados estão disponíveis para o projeto como itens no **fontes de dados** janela. Esta janela está visível ou é acessível a partir de **exibição** menu, quando uma superfície de design do formulário é a janela ativa em seu projeto. Você pode arrastar itens desta janela para criar controles que estão associados aos dados subjacentes, e você também pode configurar as fontes de dados clicando com o.
 
- ![Janela fontes de dados](../data-tools/media/raddata-data-sources-window.png "raddata janela de fontes de dados")
+ ![janela Fontes de Dados](../data-tools/media/raddata-data-sources-window.png)
 
  Para cada tipo de dados que aparece no **fontes de dados** janela, um controle padrão é criado quando você arrastar o item para o designer. Antes de você arrastar um item a partir de **fontes de dados** janela, você pode alterar o controle que será criado. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

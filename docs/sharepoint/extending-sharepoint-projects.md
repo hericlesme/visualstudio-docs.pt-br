@@ -17,32 +17,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 622596249e92d73dd4f504a445d43405847e9629
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab99253efbef61a3a041f261e44e8944bc7d6024
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764147"
 ---
-# <a name="extending-sharepoint-projects"></a>Estendendo projetos SharePoint
+# <a name="extend-sharepoint-projects"></a>Estender projetos SharePoint
   Crie uma extensão de projeto quando você desejar personalizar os recursos de nível de projeto de projetos do SharePoint. Por exemplo, você pode adicionar propriedades de projeto personalizados ou responder a eventos de nível de projeto que são gerados quando o usuário desenvolve uma solução do SharePoint no Visual Studio.  
   
-## <a name="creating-project-extensions"></a>Criando extensões de projeto  
+## <a name="create-project-extensions"></a>Criar extensões de projeto
  Para estender um item de projeto, criar um assembly de extensão do Visual Studio que implementa o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interface. Para obter mais informações, consulte [como: criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
  Quando você cria uma extensão de projeto, você também pode adicionar a seguinte funcionalidade para os projetos do SharePoint:  
   
--   Adicione um item de menu de atalho. O item de menu é exibido quando você abrir o menu de atalho para um nó de projeto do SharePoint no **Solution Explorer** clicando duas vezes no nó ou selecioná-la e, em seguida, escolha a tecla Shift + F10 chaves. Para obter mais informações, consulte [como: adicionar um Item de Menu de atalho a projetos do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).  
+-   Adicione um item de menu de atalho. O item de menu é exibido quando você abrir o menu de atalho para um nó de projeto do SharePoint no **Solution Explorer** clicando duas vezes no nó ou selecioná-la e, em seguida, escolher o **Shift** +  **F10** chaves. Para obter mais informações, consulte [como: adicionar um Item de Menu de atalho a projetos do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md).  
   
 -   Adicione uma propriedade personalizada. A propriedade aparece no **propriedades** janela quando você escolhe um projeto do SharePoint no **Gerenciador de soluções**. Para obter mais informações, consulte [como: adicionar uma propriedade a projetos SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
   
  Para uma explicação passo a passo que demonstre como criar, implantar e testar uma extensão de projeto, consulte [passo a passo: Criando uma extensão de projeto do SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).  
   
-## <a name="understanding-the-relationship-between-project-extensions-and-project-instances"></a>Noções básicas sobre a relação entre as extensões de projeto e instâncias de projeto  
+## <a name="understand-the-relationship-between-project-extensions-and-project-instances"></a>Compreender a relação entre as extensões de projeto e instâncias de projeto
  Quando você cria uma extensão de projeto, a extensão carrega quando qualquer tipo de projeto do SharePoint é aberto em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclui vários modelos de projeto do SharePoint como definições de lista, tipos de conteúdo e receptores de evento. No entanto, há apenas um tipo de projeto do SharePoint. Os tipos de projeto que aparecem no **novo projeto** caixa de diálogo são apenas os modelos que juntos agrupar um ou mais itens de projeto do SharePoint. Como há apenas um tipo de projeto do SharePoint, as extensões criadas para um projeto se aplicam a todos os projetos do SharePoint. Por exemplo, você não pode criar uma extensão que se aplica apenas a um **tipo de conteúdo** projeto.  
   
  Para acessar uma instância específica do projeto, lidar com uma da <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> eventos do *projectService* parâmetro em sua implementação do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> método. Por exemplo, para determinar quando um projeto do SharePoint é adicionado a uma solução, tratar o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> evento. Para obter mais informações, consulte [como: criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Como: criar uma extensão de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Como: adicionar um Item de Menu de atalho a projetos do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [Como: adicionar uma propriedade a projetos do SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   

@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745588"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 No contexto das ferramentas de dados .NET no Visual Studio, o termo *fonte de dados* refere-se a objetos .NET que se conectar a um repositório de dados e expõem os dados a um aplicativo .NET. Os designers do Visual Studio podem consumir a saída da fonte de dados para gerar o código de boilerplate que vincula os dados para formulários, quando você arrasta e solta os objetos de banco de dados do **fontes de dados** janela. Esse tipo de fonte de dados pode ser:
@@ -39,11 +40,11 @@ No contexto das ferramentas de dados .NET no Visual Studio, o termo *fonte de da
 
  Criar e editar fontes de dados usando o **Assistente de configuração de fonte de dados** em um aplicativo Windows Forms ou Windows Presentation Foundation. Para Entity Framework, primeiro crie suas classes de entidade e, em seguida, inicie o assistente selecionando **projeto** > **adicionar nova fonte de dados** (descritos em mais detalhes posteriormente neste artigo).
 
- ![Assistente de configuração da fonte de dados](../data-tools/media/data-source-configuration-wizard.png "Assistente de configuração da fonte de dados")
+ ![Assistente para Configuração da Fonte de Dados](../data-tools/media/data-source-configuration-wizard.png)
 
  Depois de criar uma fonte de dados, ele aparece no **fontes de dados** janela da ferramenta (Alt + Shift + D ou **exibição** > **outras janelas**  >  **Fonte de dados**). Você pode arrastar uma fonte de dados de **fontes de dados** janela em uma superfície de design do formulário ou controle. Isso faz com que o código clichê seja gerado, o código que exibe os dados que se origina no repositório de dados para o usuário. A ilustração a seguir mostra um conjunto de dados foi descartado em um Windows form. Se você selecionou F5 no aplicativo, os dados do banco de dados subjacente apareceria em controles do formulário.
 
- ![Operação de arrastar a fonte de dados](../data-tools/media/raddata-data-source-drag-operation.png "raddata fonte de dados de operação de arrastar")
+ ![Operação de arrastar de fonte de dados](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Fonte de dados para um banco de dados ou um arquivo de banco de dados
 
@@ -53,15 +54,15 @@ No contexto das ferramentas de dados .NET no Visual Studio, o termo *fonte de da
 ### <a name="entity-classes"></a>Classes de entidade
  Para criar um modelo do Entity Framework como uma fonte de dados, primeiro execute o **Assistente de modelo de dados de entidade** para criar as classes de entidade (**projeto** > **Adicionar Novo Item**  >  **Modelo de dados de entidade ADO.NET**).
 
- ![Novo item de projeto de modelo do Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata item de projeto de modelo de nova Entity Framework")
+ ![Novo item de projeto de modelo do Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  Escolha o método pelo qual você deseja gerar o modelo.
 
- ![Assistente de modelo de dados de entidade](../data-tools/media/raddata-entity-data-model-wizard.png "raddata Assistente de modelo de dados de entidade")
+ ![Assistente de modelo de dados de entidade](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  Adicione o modelo como uma fonte de dados. As classes que foram geradas aparecem no **Assistente de configuração de fonte de dados** quando você escolhe o **objetos** categoria.
 
- ![Assistente de configuração de fonte de dados com Classes de entidade](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata Assistente de configuração de fonte de dados com Classes de entidade")
+ ![Assistente de configuração de fonte de dados com Classes de entidade](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Fonte de dados para um serviço
  Para criar uma fonte de dados de um serviço, execute o **Assistente de configuração de fonte de dados** e escolha o **Service** tipo de fonte de dados. Isso é apenas um atalho para o **adicionar referência de serviço** caixa de diálogo, você também pode acessar clicando com o projeto no **Solution Explorer** e selecionando **adicionar referência de serviço** .

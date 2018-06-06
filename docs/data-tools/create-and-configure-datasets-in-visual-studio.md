@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8cbe95887e9a29fa98932a18c240bc558201fc43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746566"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Criar e configurar conjuntos de dados no Visual Studio
 
@@ -31,37 +32,37 @@ Você cria um tipo <xref:System.Data.DataSet> classe no Visual Studio em tempo d
 
 2.  Escolha o tipo de fonte de dados que você irá se conectar.
 
-     ![Assistente de configuração da fonte de dados](../data-tools/media/data-source-configuration-wizard.png "Assistente de configuração da fonte de dados")
+     ![Assistente para Configuração da Fonte de Dados](../data-tools/media/data-source-configuration-wizard.png)
 
 3.  Para bancos de dados, escolha o banco de dados ou bancos de dados que serão a fonte de dados para o conjunto de dados.
 
-     ![Fonte de dados escolha uma conexão](../data-tools/media/data-source-choose-a-connection.png "fonte de dados escolha uma conexão")
+     ![Fonte de dados escolha uma conexão](../data-tools/media/data-source-choose-a-connection.png)
 
 4.  Escolha as tabelas (ou colunas individuais), procedimentos armazenados, funções e exibições do banco de dados que você deseja ser representado no conjunto de dados.
 
-     ![Escolha os objetos de banco de dados](../data-tools/media/raddata-chose-objects.png "raddata escolher objetos")
+     ![Escolha os objetos de banco de dados](../data-tools/media/raddata-chose-objects.png)
 
 5.  Clique em **Finalizar**.
 
 6.  O conjunto de dados aparece como um nó em **Solution Explorer**:
 
-     ![Conjunto de dados no Gerenciador de soluções](../data-tools/media/dataset-in-solution-explorer.png "conjunto de dados no Gerenciador de soluções")
+     ![Conjunto de dados no Gerenciador de soluções](../data-tools/media/dataset-in-solution-explorer.png)
 
      Clicar nesse nó e o conjunto de dados aparece no **DataSet Designer**. Observe que cada tabela no conjunto de dados tem um objeto TableAdapter associado, que é representado na parte inferior. O adaptador de tabela é usado para preencher o conjunto de dados e, opcionalmente, para enviar comandos ao banco de dados.
 
-     ![Designer de conjunto de dados](../data-tools/media/dataset-designer.png "Designer de conjunto de dados")
+     ![Designer de conjunto de dados](../data-tools/media/dataset-designer.png)
 
 7.  As linhas de relação que conectam as tabelas representam relações de tabela, conforme definido no banco de dados. Por padrão, as restrições de chave estrangeira em um banco de dados são representadas como uma relação somente, com a atualização e excluir regras definidas como none. Normalmente, que é o que você deseja. No entanto, você pode clicar em linhas para abrir o **relação** caixa de diálogo, onde você pode alterar o comportamento de atualizações hierárquicas. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md) e [atualização hierárquica](../data-tools/hierarchical-update.md).
 
-     ![Caixa de diálogo de relação de conjunto de dados](../data-tools/media/raddata-relation-dialog.png "caixa de diálogo de relação raddata")
+     ![Caixa de diálogo de relação de conjunto de dados](../data-tools/media/raddata-relation-dialog.png)
 
 8.  Clique em uma tabela, o adaptador de tabela ou o nome da coluna em uma tabela para ver suas propriedades no **propriedades** janela. Você pode modificar alguns dos valores aqui. Lembre-se de que você está modificando o conjunto de dados, não o banco de dados de origem.
 
-     ![Propriedades de coluna do conjunto de dados](../data-tools/media/dataset-column-properties.png "propriedades de coluna do conjunto de dados")
+     ![Propriedades de coluna do conjunto de dados](../data-tools/media/dataset-column-properties.png)
 
 9. Você pode adicionar novas tabelas ou adaptadores de tabelas para o conjunto de dados, ou adicionar novas consultas para adaptadores de tabela existente ou especificar novas relações entre tabelas, arrastando os itens do **caixa de ferramentas** guia. Este guia é exibida quando o **DataSet Designer** esteja em foco.
 
-     ![Caixa de ferramentas do conjunto de dados](../data-tools/media/raddata-dataset-toolbox.png "raddata caixa de ferramentas do conjunto de dados")
+     ![Caixa de ferramentas do conjunto de dados](../data-tools/media/raddata-dataset-toolbox.png)
 
 10. Em seguida, você provavelmente desejará especificar como preencher o conjunto de dados com dados. Para fazer isso, você deve usar o **TableAdapter Assistente de configuração**. Para obter mais informações, consulte [preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -75,7 +76,7 @@ Este procedimento mostra como adicionar uma tabela de banco de dados mesmo que v
 
 3.  Clique com botão direito no nó do conjunto de dados e selecione **configurar fonte de dados com o assistente**.
 
-     ![Menu de contexto de fonte de dados](../data-tools/media/data-source-context-menu.png "menu de contexto de fonte de dados")
+     ![Menu de contexto de fonte de dados](../data-tools/media/data-source-context-menu.png)
 
 4.  Use o Assistente para especificar quais tabelas adicionais, ou procedimentos armazenados ou outro objeto de banco de dados, para adicionar ao conjunto de dados.
 

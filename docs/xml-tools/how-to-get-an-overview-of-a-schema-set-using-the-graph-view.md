@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05f690d76d61ffd52abbc7b73cf162d7f6609708
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751891"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Como: obter uma visão geral de um esquema definido usando o modo de exibição de gráfico
 
@@ -34,7 +35,7 @@ Este tópico descreve como usar o [exibição de gráfico](../xml-tools/graph-vi
 
 6.  Selecione **esquema definido** nó o **XML Schema Explorer** e arraste o nó para criar suface do modo de exibição de gráfico. Você deve ver todos os nós globais, e as setas que conectam os nós que possuem relações.
 
-     ![Modo de exibição de gráfico](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
+     ![Exibição de gráfico](../xml-tools/media/relationshipingraphview.gif)
 
 7.  Clique em qualquer nó na superfície de design e examine a barra de rastreamento para ver onde o nó selecionado é localizado no conjunto de esquema.
 

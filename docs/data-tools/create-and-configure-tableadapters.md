@@ -1,5 +1,5 @@
 ---
-title: Crie e configure os TableAdapters
+title: Criar e configurar TableAdapters
 ms.date: 09/01/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c59128fe0ed0c1053c044431bbde68fb5906de31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76c00f33bfcf277dcad9fdda32661b29e08bbfc3
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748951"
 ---
-# <a name="create-and-configure-tableadapters"></a>Crie e configure os TableAdapters
+# <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. Conecte-se ao banco de dados, executadas consultas ou procedimentos armazenados e retorne um novos dados de tabela ou uma existente de preenchimento <xref:System.Data.DataTable> com os dados retornados. TableAdapters também pode enviar dados atualizados do seu aplicativo no banco de dados.
 
 TableAdapters são criados para você quando você executa uma das seguintes ações:
@@ -40,7 +41,7 @@ Para obter uma introdução a TableAdapters, consulte [preencher conjuntos de da
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Use o Assistente de configuração do TableAdapter
 Execute o **Assistente de configuração TableAdapter** para criar ou editar TableAdapters e seus DataTables associados. Você pode configurar um TableAdapter existente clicando no **Dataset Designer**.
 
-![Assistente de configuração do adaptador de tabela de raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png "raddata Assistente de configuração do adaptador de tabela")
+![raddata Assistente de configuração do adaptador de tabela](../data-tools/media/raddata-table-adapter-configuration-wizard.png)
 
 Se você arrastar um novo TableAdapter da caixa de ferramentas quando o **Dataset Designer** está no foco, o assistente é iniciado e solicita que você especifique quais dados o TableAdapter de origem deve se conectar ao. Na página seguinte, o assistente perguntará que tipo de comandos que ele deve usar para se comunicar com o banco de dados, instruções SQL ou procedimentos armazenados. (Você não verá isso se você estiver configurando um TableAdapter que já está associado uma fonte de dados.)
 
@@ -63,7 +64,7 @@ O **opções avançadas** no assistente permitem que você:
 ## <a name="configure-a-tableadapters-fill-method"></a>Configurar o método Fill do TableAdapter
 Às vezes, você talvez queira alterar o esquema de tabela do TableAdapter. Para fazer isso, você modificar primário do TableAdapter `Fill` método. TableAdapters são criados com um primário `Fill` método que define o esquema da tabela de dados associada. O principal `Fill` método é baseado na consulta ou procedimento armazenado que você inseriu quando configurou originalmente o TableAdapter. É o primeiro método (superior) sob a tabela de dados no Designer de conjunto de dados.
 
-![TableAdapter com várias consultas](../data-tools/media/tableadapter.gif "TableAdapter")
+![TableAdapter com várias consultas](../data-tools/media/tableadapter.gif)
 
 As alterações que fizer no TableAdapter principal do `Fill` método são refletidas no esquema da tabela de dados associada. Por exemplo, remover uma coluna da consulta no principal `Fill` método também remove a coluna da tabela de dados associada. Além disso, remover a coluna do principal `Fill` método remove a coluna de quaisquer consultas adicionais para aquele TableAdapter.
 

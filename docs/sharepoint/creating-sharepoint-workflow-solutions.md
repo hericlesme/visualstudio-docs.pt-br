@@ -23,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc78726146b67a39f8e8988dda6c7d2baf5c49b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0c496c6d460b11efc4ccb6e1d8e7b5489efacd93
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691918"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766435"
 ---
-# <a name="creating-sharepoint-workflow-solutions"></a>Criando soluções de fluxo de trabalho do SharePoint
+# <a name="create-sharepoint-workflow-solutions"></a>Criar soluções de fluxo de trabalho do SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornece ferramentas para ajudá-lo a criar fluxos de trabalho personalizados que gerenciam o ciclo de vida de documentos e itens de lista em um site do SharePoint. Itens fornecidos incluem um designer, um conjunto de controles de atividade e as referências de assembly necessárias. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] também inclui o **Assistente de personalização do SharePoint**, para ajudar a criar e configurar os fluxos de trabalho.  
   
  Para obter a lista de pré-requisitos para a criação de projetos do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], consulte [requisitos para desenvolver soluções do SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Para obter mais informações sobre o SharePoint, consulte [tecnologias e produtos do Microsoft SharePoint](http://go.microsoft.com/fwlink/?LinkId=178470).  
@@ -53,7 +53,7 @@ ms.locfileid: "34691918"
   
  Para obter mais informações sobre os tipos de fluxo de trabalho, consulte [tipos de fluxo de trabalho](http://go.microsoft.com/fwlink/?LinkId=178995).  
   
-### <a name="using-the-wizard"></a>Usando o Assistente
+### <a name="use-the-wizard"></a>Use o Assistente
  Quando você cria um projeto de fluxo de trabalho do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], primeiro você especifique suas configurações no **Assistente de personalização do SharePoint**. O assistente usa essas configurações para criar um projeto no **Gerenciador de soluções**. Este projeto contém um arquivo de código, vários arquivos que são usados para implantar o fluxo de trabalho, e as referências aos assemblies que são necessárias para criar um fluxo de trabalho do SharePoint personalizado.  
   
  Depois de criar o fluxo de trabalho, você pode modificar suas propriedades na janela Propriedades. Embora a maioria das propriedades de fluxo de trabalho pode ser alterado diretamente na janela Propriedades, algumas exigem que você clica em um botão de reticências (![elipse ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "elipse ASP.NET Mobile Designer")) para Altere seus valores. Esse botão reinicia o **Assistente de personalização do SharePoint**. Depois que você definir a propriedade valor de alterações, escolha o **concluir** botão para finalizá-los.  
@@ -124,7 +124,7 @@ ms.locfileid: "34691918"
  Você também pode coletar informações de usuários usando as propriedades de um item na lista ou biblioteca do SharePoint. O arquivo de código principal (workflow1 ou Workflow1.vb) declara uma instância da classe Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties chamada `workflowProperties`. Use o `workflowProperties` objeto para acessar as propriedades da biblioteca ou lista no código. Para obter um exemplo, consulte [passo a passo: Criando e depurando uma solução de fluxo de trabalho do SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).  
   
 ## <a name="debug-a-sharepoint-workflow-template"></a>Depurar um modelo de fluxo de trabalho do SharePoint
- Você pode depurar um projeto de fluxo de trabalho do SharePoint o mesmo durante a depuração outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos baseados na Web. Quando você inicia o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa as configurações que você especificar o **Assistente de personalização do SharePoint** para abrir o site do SharePoint apropriado e associar automaticamente o modelo de fluxo de trabalho com a lista ou biblioteca apropriada. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] também anexa o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do depurador para o [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processo chamado w3wp.exe.  
+ Você pode depurar um projeto de fluxo de trabalho do SharePoint o mesmo durante a depuração outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos baseados na Web. Quando você inicia o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usa as configurações que você especificar o **Assistente de personalização do SharePoint** para abrir o site do SharePoint apropriado e associar automaticamente o modelo de fluxo de trabalho com a lista ou biblioteca apropriada. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] também anexa o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do depurador para o [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processo chamado *w3wp.exe*.  
   
  Para testar o fluxo de trabalho, você deve iniciá-lo manualmente. Para obter mais informações, consulte a seção "Depuração de fluxos de trabalho" em [soluções do SharePoint de depuração](../sharepoint/debugging-sharepoint-solutions.md). Para obter mais informações sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depuração de aplicativo na Web, consulte [Depurando aplicativos da Web e o Script](/visualstudio/debugger/debugging-web-applications-and-script).  
   
@@ -140,7 +140,7 @@ ms.locfileid: "34691918"
 |-----------|-----------------|  
 |[Instruções passo a passo: criando e depurando uma solução de fluxo de trabalho do SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Leva você passo a passo sobre a criação e depuração de um simples [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fluxo de trabalho.|  
 |[Instruções passo a passo: criando um fluxo de trabalho com associação e formulários de inicialização](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Leva você passo a passo para criar um mais completo [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] conclui o fluxo de trabalho com formulários de associação e inicialização.|  
-|[Instruções passo a passo: adicionar uma página de aplicativo a um fluxo de trabalho](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Amplia o tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) adicionando uma página de aplicativo. aspx adicionais que relata os dados inseridos no fluxo de trabalho.|  
+|[Instruções passo a passo: adicionar uma página de aplicativo a um fluxo de trabalho](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Amplia o tópico [passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) adicionando mais *. aspx* página que relata os dados inseridos no fluxo de trabalho do aplicativo.|  
 |[Instruções passo a passo: criar uma atividade personalizada de fluxo de trabalho do site](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Demonstra como executar duas tarefas principais: criar um fluxo de trabalho de nível de site e criar uma atividade de fluxo de trabalho personalizado.|  
 |[Instruções passo a passo: importar um fluxo de trabalho reutilizável do designer do SharePoint para o Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Demonstra como importar reutilizáveis fluxos de trabalho criados no SharePoint Designer 2010 em um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.|  
   

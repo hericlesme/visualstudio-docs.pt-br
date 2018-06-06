@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0507fe16dd910fe61c4816594125b690c350a1a6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 051285d1a2b3fc1c32a813fbfd8aa778befa0545
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691364"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764869"
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Associando dados personalizados a extensões de ferramentas do SharePoint
+# <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Associar dados personalizados a extensões de ferramentas do SharePoint
   Você pode adicionar dados personalizados a certos objetos em extensões de ferramentas do SharePoint. Isso é útil quando você tiver dados em uma parte de sua extensão que você deseja acessar posterior do código em sua extensão. Em vez de implementar uma maneira personalizada para armazenar e acessar dados, você pode associar os dados um objeto em sua extensão e, em seguida, recuperar os dados do mesmo objeto mais tarde.  
   
  Adicionando dados personalizados a objetos também é útil quando você quiser preservar os dados que são relevantes para um item específico no Visual Studio. Extensões de ferramentas do SharePoint são carregadas apenas uma vez no Visual Studio, para sua extensão pode trabalhar com vários itens diferentes (como projetos, itens de projeto ou **Server Explorer** nós) a qualquer momento. Se você tiver dados personalizados que são relevantes apenas para um item específico, você pode adicionar os dados para o objeto que representa o item.  
@@ -87,5 +87,6 @@ ms.locfileid: "34691364"
  [Passo a passo: Criando um Item de projeto de ação personalizada com um modelo de Item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Passo a passo: Estendendo o Gerenciador de servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Como: adicionar uma propriedade a projetos do SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [Como: adicionar uma propriedade a um tipo de Item de projeto do SharePoint personalizado] (.. /SharePoint/How-to-Add-a-property-to-a-Custom-SharePoint-Project-Item-Type.MD   
+ [Como adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
+   
  

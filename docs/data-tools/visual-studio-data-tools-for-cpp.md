@@ -12,11 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: fa732c8b2fbf55b1cb2c8b80a06cf1ab18d6b50c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e74fca7109a19c789215424526eef6190b568c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752392"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Ferramentas de dados do Visual Studio para C++
 
@@ -34,11 +35,11 @@ Para tirar proveito da funcionalidade personalizada no SQL Server 2005 e posteri
 
 3.  Use o SQL Server Management Studio para anexar o arquivo mdf descompactado para o localDB. Início do SQL Server Management Studio, conecte-se ao (localdb) \MSSQLLocalDB.
 
-     ![Caixa de diálogo de conexão do SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS caixa de diálogo de conexão")
+     ![Caixa de diálogo de conexão do SSMS](../data-tools/media/raddata-ssms-connect-dialog.png)
 
      Em seguida, clique com botão direito no nó de localdb no painel esquerdo e escolha **Attach**.
 
-     ![SSMS anexar banco de dados](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS anexar banco de dados")
+     ![SSMS anexar banco de dados](../data-tools/media/raddata-ssms-attach-database.png)
 
 4.  Baixe a amostra de SDK do Windows de ODBC e descompacte-o para um novo local. Este exemplo mostra os comandos básicos do ODBC que são usados para se conectar a um banco de dados e emitir consultas e comandos. Você pode aprender mais sobre essas funções no [Microsoft ODBC Open Database Connectivity ()](/sql/odbc/microsoft-open-database-connectivity-odbc). Quando você primeiro carrega a solução (está na pasta C++), o Visual Studio oferecem atualizar a solução para a versão atual do Visual Studio. Clique em **Sim**.
 
@@ -67,7 +68,7 @@ E esse diretório de biblioteca:
 
 8.  Pressione F5 para compilar e executar o aplicativo. Você deve ver uma caixa de diálogo do driver que solicita que você insira um banco de dados. Digite `(localdb)\MSSQLLocalDB`e verifique **Conexão confiável do uso**. Press **OK**. Você deve ver um console com as mensagens que indicam uma conexão bem-sucedida. Você também verá um prompt de comando em que você pode digitar uma instrução SQL. A tela a seguir mostra um exemplo de consulta e os resultados:
 
-     ![Saída de consulta de exemplo do ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "raddata saída de consulta de exemplo do ODBC")
+     ![Saída de consulta de exemplo do ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 
 ## <a name="see-also"></a>Consulte também
 

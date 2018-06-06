@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b2fc6b7a729be412b48c331eb5029df617d35c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c9fd9337682abbcd7325a849b95846be3af118d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747174"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Passo a passo: Criando um serviço WCF simples no Windows Forms
 Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] de serviço, testá-lo e, em seguida, acessá-lo de um aplicativo Windows Forms.
@@ -37,12 +38,12 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-t
 
 2.  No **novo projeto** caixa de diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó e clique em **WCF**, seguido por **WCF Biblioteca de serviço**. Clique em **Okey** para abrir o projeto.
 
-     ![O projeto de biblioteca de serviços WCF](../data-tools/media/wcf1.PNG "wcf1")
+     ![O projeto de biblioteca de serviços WCF](../data-tools/media/wcf1.png)
 
     > [!NOTE]
     >  Isso cria um serviço de trabalho que pode ser testado e acessado. As duas etapas a seguir demonstram como você pode modificar o método padrão para usar um tipo de dados diferente. Em um aplicativo real, você também deve adicionar suas próprias funções para o serviço.
 
-3.  ![O arquivo IService1](../data-tools/media/wcf2.png "wcf2")
+3.  ![O arquivo IService1](../data-tools/media/wcf2.png)
 
      Em **Solution Explorer**, clique duas vezes em IService1.vb ou Iservice1 e localize a seguinte linha:
 
@@ -56,7 +57,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-t
 
      No código acima, observe o `<OperationContract()>` ou `[OperationContract]` atributos. Esses atributos são necessários para qualquer método exposto pelo serviço.
 
-4.  ![O arquivo Service1](../data-tools/media/wcf3.png "wcf3")
+4.  ![O arquivo Service1](../data-tools/media/wcf3.png)
 
      Em **Solution Explorer**, clique duas vezes em Service1 ou Service1 e localize a seguinte linha:
 
@@ -76,15 +77,15 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-t
 
 2.  No **cliente de teste do WCF** de formulário, clique duas vezes o **GetData** método em **IService1**. O **GetData** guia será exibida.
 
-     ![O GetData&#40; &#41; método](../data-tools/media/wcf4.png "wcf4")
+     ![O GetData&#40; &#41; método](../data-tools/media/wcf4.png)
 
 3.  No **solicitação** caixa, selecione a **valor** campo e digite `Hello`.
 
-     ![O campo de valor](../data-tools/media/wcf5.png "wcf5")
+     ![O campo de valor](../data-tools/media/wcf5.png)
 
 4.  Clique o **Invoke** botão. Se um **aviso de segurança** caixa de diálogo for exibida, clique em **Okey**. O resultado será exibido no **resposta** caixa.
 
-     ![O resultado na caixa de resposta](../data-tools/media/wcf6.png "wcf6")
+     ![O resultado na caixa de resposta](../data-tools/media/wcf6.png)
 
 5.  Sobre o **arquivo** menu, clique em **saída** para fechar o formulário de teste.
 
@@ -96,13 +97,13 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-t
 
 2.  No **novo projeto** caixa de diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó e selecione **Windows**e, em seguida, selecione **Aplicativo dos Windows Forms**. Clique em **Okey** para abrir o projeto.
 
-     ![Projeto de aplicativo do Windows Forms](../data-tools/media/wcf7.png "wcf7")
+     ![Projeto de aplicativo do Windows Forms](../data-tools/media/wcf7.png)
 
 3.  Clique com botão direito **WindowsApplication1** e clique em **adicionar referência de serviço**. O **adicionar referência de serviço** caixa de diálogo será exibida.
 
 4.  No **adicionar referência de serviço** caixa de diálogo, clique em **Discover**.
 
-     ![A caixa de diálogo Adicionar referência de serviço](../data-tools/media/wcf8.png "wcf8")
+     ![A caixa de diálogo Adicionar referência de serviço](../data-tools/media/wcf8.png)
 
      **Service1** será exibido no **serviços** painel.
 
@@ -114,7 +115,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-t
 
 2.  Do **caixa de ferramentas**, arraste um `TextBox` controle, uma `Label` controle e um `Button` controle para o formulário.
 
-     ![Adicionando controles ao formulário](../data-tools/media/wcf9.png "wcf9")
+     ![Adicionando controles ao formulário](../data-tools/media/wcf9.png)
 
 3.  Clique duas vezes o `Button`e adicione o seguinte código no `Click` manipulador de eventos:
 
@@ -125,7 +126,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../data-t
 
 5.  Pressione **F5** para executar o projeto. Digite algum texto e clique no botão. Exibirá o rótulo "você digitou:" e o texto que você inseriu.
 
-     ![O formulário mostra o resultado](../data-tools/media/wcf10.png "wcf10")
+     ![O formulário mostra o resultado](../data-tools/media/wcf10.png)
 
 ## <a name="see-also"></a>Consulte também
 

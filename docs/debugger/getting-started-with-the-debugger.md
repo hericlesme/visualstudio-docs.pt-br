@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f3d4c27f0aedf879137b3ef7a154fb7dd6f9164
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766253"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Tutorial: Saiba como depurar usando o Visual Studio
 
@@ -39,6 +40,14 @@ Neste tutorial, você irá:
 > * Inspecionar variáveis em dicas de dados e janelas do depurador
 > * Examinar a pilha de chamadas
 > * Usar o auxiliar de exceção
+
+## <a name="prerequisites"></a>Pré-requisitos
+
+* Você deve ter o Visual Studio de 2017 instalado e o. **NET desenvolvimento de área de trabalho** carga de trabalho.
+
+    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
+
+    Se você precisa instalar a carga de trabalho, mas já tiver o Visual Studio, clique no **abrir instalador do Visual Studio** link no painel esquerdo do **novo projeto** caixa de diálogo (selecione **arquivo**  >  **Novo** > **projeto**). O Instalador do Visual Studio é iniciado. Escolha o. **NET desenvolvimento de área de trabalho** carga de trabalho, escolha **modificar**.
 
 ## <a name="start-the-debugger"></a>Inicie o depurador!
 

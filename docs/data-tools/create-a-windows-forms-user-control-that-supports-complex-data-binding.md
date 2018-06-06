@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a1922c3b79a718b3a239280561bf954165332e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e48e6a3a5694a518f30b3d9ec749d01b1e7127b8
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746498"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à associação de dados complexos
 
@@ -80,7 +81,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 1. No Visual Studio, no **arquivo** menu, selecione **novo**, **projeto...** .
 
-1. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **área de trabalho clássica do Windows**.
+1. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **Windows Desktop**.
 
 1. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
 

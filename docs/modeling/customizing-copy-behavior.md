@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748368"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma linguagem específica de domínio (DSL) criada com o SDK de Visualização e Modelagem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode alterar o que acontece quando o usuário copia e cola elementos.
@@ -29,7 +30,7 @@ Em uma linguagem específica de domínio (DSL) criada com o SDK de Visualizaçã
 
  Esta regra aplica-se recursivamente aos elementos e links copiados.
 
- ![Copiado e colado elementos](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Elementos copiados e colados](../modeling/media/dslcopypastedefault.png)
 
  Os elementos e links copiados são serializados e armazenados em um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que é colocado na área de transferência.
 
@@ -217,7 +218,7 @@ Consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-t
 ##  <a name="customizeLinks"></a> Personalizando comportamento de cópia de Link
  Quando o usuário copia um elemento, o comportamento padrão é que todos os elementos incorporados também sejam copiados. Você pode modificar o comportamento de cópia padrão. Na definição de DSL, selecione uma função em um dos lados de uma relação e no conjunto de janela de propriedades de **cópia propaga** valor.
 
- ![Propaga a propriedade de cópia da função de domínio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Propaga a propriedade de cópia da função de domínio](../modeling/media/dslpropagatescopy.png)
 
  Há três valores:
 
@@ -227,7 +228,7 @@ Consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-t
 
 -   Propagar cópia para link e usuário oposto - o grupo copiado inclui uma cópia do elemento na outra extremidade do link.
 
- ![Efeito de cópia com PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Efeito de cópia com PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
  As mudanças que você fizer afetarão os elementos e a imagem que é copiada.
 
@@ -237,9 +238,9 @@ Consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-t
 > [!TIP]
 >  Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [navegar e atualizar um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Diagrama de sequência para a operação de cópia](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Diagrama de sequência para a operação de cópia](../modeling/media/dslcopyseqdiagram.png)
 
- ![Diagrama de sequência de operação de colagem](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Diagrama de sequência de operação de colagem](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>Para definir seus próprios ElementOperations
 

@@ -1,5 +1,5 @@
 ---
-title: Criar um formulário do Windows para pesquisar dados
+title: Criar um Windows Form para pesquisar dados
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,13 +16,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e04b0e4ef2f77381e305b992c5457bc46dc8261
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d4fe1106556e94155a0d01d3d7c9983d5ed122ad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746722"
 ---
-# <a name="create-a-windows-form-to-search-data"></a>Criar um formulário do Windows para pesquisar dados
+# <a name="create-a-windows-form-to-search-data"></a>Criar um Windows Form para pesquisar dados
 Um cenário de aplicativo comum exibirá dados selecionados em um formulário. Por exemplo, você pode querer exibir os pedidos de um cliente específico ou os detalhes de um pedido específico. Nesse cenário, um usuário insere informações em um formulário e uma consulta é executada com a entrada do usuário como parâmetro, ou seja, os dados são selecionados com base em uma consulta parametrizada. A consulta retorna apenas os dados que satisfazem os critérios inseridos pelo usuário. Este passo a passo mostra como criar uma consulta que retorna clientes de uma cidade específica, como mudar a interface do usuário para que os usuários possam inserir o nome de uma cidade e pressionar um botão para executar a consulta.
 
  O uso de consultas parametrizadas ajuda a tornar seu aplicativo eficiente, permitindo que o banco de dados funcione melhor, filtrando registros rapidamente. Por outro lado, se você solicitar uma tabela de banco de dados inteiro, transferi-la através da rede e, em seguida, use a lógica do aplicativo para localizar os registros que você deseja, seu aplicativo pode se tornar lento ineficiente.
@@ -70,7 +71,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 1. No Visual Studio, no **arquivo** menu, selecione **novo**, **projeto...** .
 
-2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **área de trabalho clássica do Windows**.
+2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **Windows Desktop**.
 
 3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
 

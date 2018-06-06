@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89b5a5130264dc46e953ee87f048a768d756ce9c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f79e80b5b4e4e14772548ad92e8886150749b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749051"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 
@@ -63,7 +64,7 @@ Uma regra de negócios é um requisito que não está associado um caso de uso e
 
  Muitas regras de negócio são restrições nas relações entre as classes conceituais. Você pode escrever esses *estático * * as regras de negócio* como comentários associados as classes relevantes em um diagrama conceitual de classe. Por exemplo:
 
- ![Regra em comentário anexado à classe Order. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")
+ ![Regra em comentário anexado à classe Order.](../modeling/media/uml_reqmcd2.png)
 
  *Regras de negócio dinâmico* restringir as sequências permitidas de eventos. Por exemplo, você deve usar um diagrama de sequência ou uma atividade para mostrar que um usuário deve fazer logon antes de executar outras operações no sistema.
 

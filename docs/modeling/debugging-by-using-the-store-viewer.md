@@ -12,11 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c46e84caba16abbe9ba9d166076d1ee48d34fd94
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5424fc8e3bdf80f5a6f19086f4e73360af95dad7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748404"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Depurando por meio do Visualizador de Repositório
 Com o Visualizador de armazenar, você pode examinar o estado de um *armazenar* usado pelo [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. O Visualizador de armazenar exibe todos os elementos de modelo de domínio que estão em uma loja específica, juntamente com as propriedades de elemento e links entre os elementos.
@@ -44,7 +45,7 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ### <a name="using-store-viewer"></a>Usando o Visualizador de armazenamento
  Quando abre o Visualizador de armazenamento, uma janela de Windows Forms sem janela restrita aparece, como mostra a ilustração a seguir.
 
- ![](../modeling/media/storeviewer2.png "storeviewer2") armazenar Visualizador
+ ![](../modeling/media/storeviewer2.png) Visualizador de armazenamento
 
  O Visualizador de armazenamento possui três painéis: o painel esquerdo, o painel superior direito e o painel inferior direito. O painel esquerdo é uma exibição de árvore dos tipos de `DomainDataDirectory` membro de um repositório. Se você expandir o nó da partição e clique em um elemento, as propriedades aparecem no painel superior direito. Se o elemento estiver vinculado a outros elementos, os elementos adicionais aparecem no painel inferior direito. Se você clicar duas vezes um elemento no painel inferior direito, o elemento é realçado no painel esquerdo.
 

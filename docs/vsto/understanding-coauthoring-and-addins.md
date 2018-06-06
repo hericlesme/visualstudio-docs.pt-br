@@ -1,5 +1,5 @@
 ---
-title: Noções básicas sobre coautoria e suplementos | Microsoft Docs
+title: Entender coautoria e suplementos
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 911db43b820a05928f97e727568582f939560e9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768164"
 ---
-# <a name="understanding-coauthoring-and-add-ins"></a>Noções básicas sobre coautoria e suplementos
+# <a name="understand-coauthoring-and-add-ins"></a>Entender coautoria e suplementos
 
 Coautoria é um recurso de área de trabalho do Excel para Windows que permite que você edite uma pasta de trabalho hospedada na nuvem (ou seja, o OneDrive, o OneDrive for Business ou SharePoint Online) simultaneamente com outros usuários. Com a adição desse recurso, talvez seja necessário fazer ajustes para sua solução do Excel para garantir que ele funcione sem problemas mesmo quando os usuários são coautoria. Consulte [sobre coautoria no Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
 

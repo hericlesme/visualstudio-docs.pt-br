@@ -16,19 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b06f956cec9f26aff59089be4e29affcd6d73ad8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7214a472eff3b9181362932828f3ffee2f4fbe48
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767391"
 ---
 # <a name="form-support-in-workflows"></a>Suporte de formulário em fluxos de trabalho
   Quatro tipos de formulários podem ser usados em um fluxo de trabalho: associação, inicialização, tarefa e modificação. Esses tipos de formulário podem ser baseados em um formulário ASPX ou um formulário do InfoPath. O nível de suporte que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornece para um formulário específico depende de vários fatores, que são descritos nas tabelas a seguir. Para obter mais informações sobre os tipos de formulário de fluxo de trabalho, consulte [visão geral de formulários de fluxo de trabalho](http://go.microsoft.com/fwlink/?LinkId=185228) no site do MSDN.  
   
-## <a name="xml-refactoring"></a>Refatoração de XML  
+## <a name="xml-refactoring"></a>Refatoração de XML
  Quando você adiciona um formulário de associação ou o início de ASPX para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] item de projeto de fluxo de trabalho, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] automaticamente refatora o XML no arquivo Elements XML do fluxo de trabalho para manter o atributo que se refere ao formulário de associação ou o início sincronizado sempre que o caminho de implantação ou o nome do formulário é atualizado ou o formulário é excluído. No entanto, quando você usar outros tipos de formulário em um fluxo de trabalho, como um formulário de tarefa ou modificação, o arquivo Elements não é refatorado.  
   
-## <a name="form-support-in-new-visual-studio-workflows"></a>Suporte de formulário em novos fluxos de trabalho do Visual Studio  
+## <a name="form-support-in-new-visual-studio-workflows"></a>Suporte de formulário em novos fluxos de trabalho do Visual Studio
  A seguinte tabela lista [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] suporte para tipos de forma diferente em formulários ASPX ou InfoPath em fluxos de trabalho que são criados no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 |Tipo de formulário|Fluxo de trabalho criado no Visual Studio com um formulário ASPX|Fluxo de trabalho criado no Visual Studio usando um formulário do InfoPath|  
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/16/2018
 |Tarefa|-Nenhum modelo de formulário de tarefa ASPX está disponível em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Você deve criar uma página de aplicativo e adicione o código a ele.<br />-O arquivo Elements do fluxo de trabalho não é refatorado.<br />-Para obter mais informações, consulte [formulários de tarefa de fluxo de trabalho (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187674)|-Não há nenhum modelo de formulário de tarefa do InfoPath em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Não há nenhuma integração entre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e o Designer do InfoPath.<br />-O arquivo Elements do fluxo de trabalho não é refatorado.|  
 |Modificação|-Nenhum modelo de formulário de modificação ASPX está disponível em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para adicionar um formulário de modificação, você deve criar uma página de aplicativo e adicione o código a ele.<br />-O arquivo Elements do fluxo de trabalho não é refatorado. Você deve editar manualmente-lo conforme apropriado.<br />-Para obter mais informações, consulte [formulários de modificação de fluxo de trabalho (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187675)|-Não há nenhum modelo de formulário do InfoPath modificação em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].<br />-Não há nenhuma integração entre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e o Designer do InfoPath.<br />-O arquivo Elements do fluxo de trabalho não é refatorado.|  
   
-## <a name="form-support-in-imported-sharepoint-reusable-workflows"></a>Suporte de formulário em fluxos de trabalho reutilizáveis importado do SharePoint  
+## <a name="form-support-in-imported-sharepoint-reusable-workflows"></a>Suporte de formulário em importado do SharePoint fluxos de trabalho reutilizáveis
  A seguinte tabela lista [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] suporte para tipos de forma diferente em formulários ASPX ou InfoPath em fluxos de trabalho reutilizáveis do SharePoint que são importados para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 |Tipo de formulário|Fluxo de trabalho reutilizável que tenha um formulário ASPX importado do SharePoint Designer|Fluxo de trabalho reutilizável que tenha um formulário do InfoPath importado do SharePoint Designer|  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
 |Tarefa|-O formulário é referenciado no arquivo Elements do fluxo de trabalho.<br />-O arquivo Elements do fluxo de trabalho não é refatorado.|-O formulário é importado, mas não é referenciado em Elements do fluxo de trabalho.<br />-O arquivo Elements do fluxo de trabalho não é refatorado. **Observação:** regras e propriedades devem ser adicionadas e alteradas para este cenário funcione.|  
 |Modificação|Não aplicável. Não não possível criar formulários de modificação ASPX no SharePoint Designer.|Não aplicável. Formulários de modificação do InfoPath não não possível criar no SharePoint Designer, exceto para o fluxo de trabalho de servidor do SharePoint interno, que não está incluído no arquivo. wsp quando o fluxo de trabalho é exportado.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [Criação de soluções de fluxo de trabalho do SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Importando itens de um site existente do SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  

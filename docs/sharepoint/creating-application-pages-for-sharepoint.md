@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691973"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764999"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>Criando páginas de aplicativo do SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Criar páginas de aplicativo para o SharePoint
   Um *página de aplicativo* é uma página da Web do ASP.NET que é projetada para uso em um site do SharePoint. Páginas de aplicativo são um tipo especializado de página ASP.NET. A principal diferença entre uma página de aplicativo e uma página ASP.NET padrão é que uma página de aplicativo contém conteúdo que é mesclado com uma página mestre do SharePoint. Uma página mestra permite que as páginas de aplicativos que compartilham a mesma aparência e comportamento como outras páginas em um site.  
   
  O Visual Studio permite que você crie páginas de aplicativo usando um designer. O designer exibe uma área de conteúdo para cada espaço reservado para conteúdo que é definido em uma página mestra. Você pode criar a página de aplicativo arrastando controles a essas áreas de conteúdo.  
@@ -55,7 +55,7 @@ ms.locfileid: "34691973"
   
 |Arquivo|Descrição|  
 |----------|-----------------|  
-|Arquivo de página do ASP.NET (. aspx)|Contém a marcação XML que define a página.|  
+|Arquivo de página do ASP.NET (*. aspx*)|Contém a marcação XML que define a página.|  
 |Arquivo de código de página do aplicativo|Contém o código por trás da página do aplicativo. Adicione o código que trata os eventos nesse arquivo.|  
 |Arquivo de código de designer de página do aplicativo|Contém o código que é gerado pelo designer. Não edite esse arquivo diretamente.|  
   

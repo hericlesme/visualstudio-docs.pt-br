@@ -9,11 +9,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5ea053e6b3f448311118b733c30b9ade5160288d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747086"
 ---
 # <a name="add-new-connections"></a>Adicionar novas conexões
 
@@ -35,23 +36,23 @@ Você pode testar sua conexão a um banco de dados ou serviço e explorar o cont
 
 Para criar uma conexão ao banco de dados, clique o **Adicionar Conexão** ícone no **Gerenciador de servidores**, ou com o botão direito em **Server Explorer** no **dados Conexões** nó e selecione **Adicionar Conexão**. A partir daqui, você também pode se conectar a um banco de dados em outro servidor, um serviço do SharePoint ou um serviço do Azure.
 
-![Ícone de Conexão de novo Gerenciador do servidor](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata ícone de Conexão nova do Server Explorer")
+![Ícone de Conexão de novo Gerenciador do servidor](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
 Isso abre o **Adicionar Conexão** caixa de diálogo. Aqui, podemos digitou o nome da instância LocalDB do SQL Server.
 
-![Adicionar nova Conexão](../data-tools/media/raddata-add-new-connection-dialog.png "raddata adicionar nova caixa de diálogo de Conexão")
+![Adicionar nova Conexão](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Alterar o provedor
 
 Se a fonte de dados não é o desejado, clique no **alteração** botão para escolher uma nova fonte de dados e/ou em um novo provedor de dados do ADO.NET. O novo provedor pode solicitar suas credenciais, dependendo de como você configurou.
 
-![Alterar o provedor de dados AD0.NET](../data-tools/media/raddata-change-ad0.net-data-provider.png "raddata provedor de dados de alteração de AD0.NET")
+![Provedor de dados AD0.NET de alteração](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>Testar a conexão
 
 Depois de escolher a fonte de dados, clique em **Conexão de teste**. Se não for bem-sucedida, você precisará solucionar problemas com base na documentação do fornecedor.
 
-![Testar Conexão](../data-tools/media/raddata-test-connection.png "raddata Conexão de teste")
+![Conexão de teste](../data-tools/media/raddata-test-connection.png)
 
 Se o teste for bem-sucedido, você estará pronto para criar um *fonte de dados*, que é um termo do Visual Studio que realmente significa um *modelo de dados* que se baseia no banco de dados subjacente ou do serviço.
 

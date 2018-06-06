@@ -21,7 +21,7 @@ ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691598"
 ---
 # <a name="create-sharepoint-solutions"></a>Criar soluções do SharePoint

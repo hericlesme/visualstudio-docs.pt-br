@@ -1,5 +1,5 @@
 ---
-title: Criar diagramas de dependência do seu código
+title: Criar diagramas de dependência do código
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,17 +14,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3a34d52bb4b9af535d1b11843967ac5b9619a153
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73f3cf2bbb5903a3c2dda8c531f28e9aa81facad
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749695"
 ---
-# <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do seu código
+# <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do código
 
 Para visualizar a arquitetura de alto nível, a lógica do seu sistema de software, criar um *diagrama de dependência* no Visual Studio. Para certificar-se de que seu código permaneça consistente com esse design, valide seu código com um diagrama de dependência. Você pode criar diagramas de dependência para projetos do Visual c# e Visual Basic. Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-![Criar um diagrama de dependência](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+![Criar um diagrama de dependência](../modeling/media/layerdiagramvisualizecode.png)
 
 Um diagrama de dependência permite organizar os itens de solução do Visual Studio em grupos lógicos, abstract chamados *camadas*. É possível usar camadas para descrever as tarefas principais realizadas por esses artefatos ou os componentes principais do sistema. Cada camada pode conter outras camadas que descrevem tarefas mais detalhadas. Você também pode especificar se destina ou existente *dependências* entre camadas. Essas dependências, representadas como setas, mostram quais camadas podem usar ou atualmente usam a funcionalidade representada por outras camadas. Para manter controle arquitetônico do código, mostre as dependências desejadas no diagrama e, em seguida, valide o código no diagrama.
 

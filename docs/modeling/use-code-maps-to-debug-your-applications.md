@@ -18,16 +18,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d6200e96e0c0715ef2a2bf2af00f84597d284a72
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 006db4f3fd820a25b0c413deabce3da5faa70cec
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750266"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de códigos para depurar aplicativos
 Mapas de código podem ajudá-lo a evitar se perder em grandes bases de código, de código não familiar ou código herdado. Por exemplo, quando você estiver depurando, você talvez precise examine o código de vários arquivos e projetos. Usar mapas de códigos para navegar em torno de trechos de código e entender as relações entre eles. Dessa forma, você não precisa manter o controle desse código de cabeça ou desenhe um diagrama separado. Portanto, quando o trabalho for interrompido, o código mapeia atualização ajuda sua memória sobre o código que você está trabalhando.
 
- ![Mapa de código &#45; mapear relações no código](../modeling/media/codemapstoryboardpaint.png "CodeMapStoryboardPaint")
+ ![Mapa de código &#45; mapear relações no código](../modeling/media/codemapstoryboardpaint.png)
 
  **Mostra uma seta verde que onde o cursor aparece no editor**
 
@@ -38,28 +39,28 @@ Mapas de código podem ajudá-lo a evitar se perder em grandes bases de código,
 
  Quando você desenhar uma linha e escolha **desfazer o último traço**, nada acontecerá até você desenha a próxima linha.
 
- ![Mapa de código &#45; bug de reprodução](../modeling/media/codemapstoryboardpaint0.png "CodeMapStoryboardPaint0")
+ ![Mapa de código &#45; bug de reprodução](../modeling/media/codemapstoryboardpaint0.png)
 
  Assim, você começa a investigação procurando o método `Undo`. Você o encontra na classe `PaintCanvas`.
 
- ![Mapa de código &#45; encontrar código](../modeling/media/codemapstoryboardpaint1.png "CodeMapStoryboardPaint1")
+ ![Mapa de código &#45; localizar código](../modeling/media/codemapstoryboardpaint1.png)
 
 ## <a name="start-mapping-the-code"></a>Começar a mapear o código
  Iniciar agora mapeando o `undo` método e suas relações. No editor de códigos, você adiciona o método `undo` e os campos aos quais faz referência a um novo mapa de códigos. Quando você cria um novo mapa, ele pode demorar algum tempo para indexar o código. Isso ajuda a executar mais rapidamente as operações posteriores.
 
- ![Mapa de código &#45; Mostrar campos relacionados e método](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")
+ ![Mapa de código &#45; Mostrar método e os campos relacionados](../modeling/media/codemapstoryboardpaint3.png)
 
 > [!TIP]
 >  O realce verde mostra os últimos itens que foram adicionados ao mapa. A seta verde mostra a posição do cursor no código. As setas entre os itens representam relações diferentes. Você pode obter mais informações sobre os itens no mapa de mover o mouse sobre eles e examinando seus dicas de ferramenta.
 
- ![Mapa de código &#45; Mostrar dicas de ferramenta](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")
+ ![Mapa de código &#45; Mostrar dicas de ferramenta](../modeling/media/codemapstoryboardpaint4.png)
 
 ## <a name="navigate-and-examine-code-from-the-map"></a>Navegar e examinar o código no mapa
  Para ver a definição de código para cada campo, clique duas vezes no campo no mapa ou selecione o campo e pressione **F12**. A seta verde alterna itens no mapa. O cursor no editor de códigos também se move automaticamente.
 
- ![Mapa de código &#45; examinar a definição de campo](../modeling/media/codemapstoryboardpaint5.png "CodeMapStoryboardPaint5")
+ ![Mapa de código &#45; examinar a definição de campo](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Mapa de código &#45; examinar a definição de campo](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")
+ ![Mapa de código &#45; examinar a definição de campo](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 >  Também é possível mover a seta verde no mapa movendo-se o cursor no editor de códigos.
@@ -67,70 +68,70 @@ Mapas de código podem ajudá-lo a evitar se perder em grandes bases de código,
 ## <a name="understand-relationships-between-pieces-of-code"></a>Compreender as relações entre as partes do código
  Agora você deseja saber qual o outro código interage com os campos `history` e `paintObjects`. É possível adicionar todos os métodos que referenciam esses campos no mapa. Você pode fazer isso de mapa ou de código no editor.
 
- ![Mapa de código &#45; localizar todas as referências](../modeling/media/codemapstoryboardpaint6.png "CodeMapStoryboardPaint6")
+ ![Mapa de código &#45; localizar todas as referências](../modeling/media/codemapstoryboardpaint6.png)
 
- ![Abra um mapa de código do editor de códigos](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")
+ ![Abra um mapa de código do editor de códigos](../modeling/media/codemapstoryboardpaint6a.png)
 
 > [!NOTE]
 >  Se você adicionar itens de um projeto que é compartilhado entre vários aplicativos, como o Windows Phone ou da Windows Store, em seguida, esses itens apareçam sempre com o projeto de aplicativo atualmente ativas no mapa. Portanto, se você alterar o contexto para outro projeto de aplicativo, também altera o contexto no mapa para qualquer recém-adicionado itens de projeto compartilhado. Operações realizadas com um item no mapa se aplicam apenas aos itens que compartilham o mesmo contexto.
 
  Altere o layout para reorganizar o fluxo de relações e para facilitar a leitura do mapa. Também é possível mover itens pelo mapa arrastando-os.
 
- ![Mapa de código &#45; alterar layout](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")
+ ![Mapa de código &#45; alterar o layout](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 >  Por padrão, **Layout Incremental** está ativado. Isso reorganiza o mapa o menos possível quando você adiciona novos itens. Para reorganizar mapa de inteiro sempre que você adicionar novos itens, desativar **Layout Incremental**.
 
- ![Mapa de código &#45; alterar layout](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")
+ ![Mapa de código &#45; alterar o layout](../modeling/media/codemapstoryboardpaint7.png)
 
  Vamos examinar esses métodos. No mapa, clique duas vezes o **PaintCanvas** método, ou selecione este método e pressione **F12**. Você aprende que esse método cria `history` e `paintObjects` como listas vazias.
 
- ![Mapa de código &#45; examinar a definição de método](../modeling/media/codemapstoryboardpaint8.png "CodeMapStoryboardPaint8")
+ ![Mapa de código &#45; examinar a definição de método](../modeling/media/codemapstoryboardpaint8.png)
 
  Agora repita as mesmas etapas para examinar a definição do método `clear`. Você aprende que `clear` realiza algumas tarefas com `paintObjects` e `history`. Em seguida, ele chama o método `Repaint`.
 
- ![Mapa de código &#45; examinar a definição de método](../modeling/media/codemapstoryboardpaint9.png "CodeMapStoryboardPaint9")
+ ![Mapa de código &#45; examinar a definição de método](../modeling/media/codemapstoryboardpaint9.png)
 
  Agora examine a definição do método `addPaintObject`. Ele também realiza algumas tarefas com `history` e `paintObjects`. Ele também chama `Repaint`.
 
- ![Mapa de código &#45; examinar a definição de método](../modeling/media/codemapstoryboardpaint10.png "CodeMapStoryboardPaint10")
+ ![Mapa de código &#45; examinar a definição de método](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>Encontre o problema examinando o mapa
  Aparentemente, todos os métodos que modificam `history` e `paintObjects` chamam `Repaint`. Ainda assim, o método `undo` não chama `Repaint`, mesmo que `undo` modifique os mesmos campos. Então você acha que é possível corrigir esse problema chamando `Repaint` em `undo`.
 
- ![Mapa de código &#45; localizar ausente chamada de método](../modeling/media/codemapstoryboardpaint11.png "CodeMapStoryboardPaint11")
+ ![Mapa de código &#45; localizar ausente chamada de método](../modeling/media/codemapstoryboardpaint11.png)
 
  Se você não tivesse um mapa para mostrar essa chamada perdida, poderia ser bem mais difícil encontrar esse problema, especialmente com um código mais complexo.
 
 ## <a name="share-your-discovery-and-next-steps"></a>Compartilhar a descoberta e as próximas etapas
  Antes de você ou alguma outra pessoa corrigir esse bug, é possível fazer anotações no mapa sobre o problema e como corrigi-lo.
 
- ![Mapa de código &#45; itens de comentário e o sinalizador para acompanhamento](../modeling/media/codemapstoryboardpaint12.png "CodeMapStoryboardPaint12")
+ ![Mapa de código &#45; itens de comentário e o sinalizador para acompanhamento](../modeling/media/codemapstoryboardpaint12.png)
 
  Por exemplo, é possível adicionar comentários ao mapa e sinalizar itens usando cores.
 
- ![Mapa de código &#45; comentada e itens sinalizados](../modeling/media/codemapstoryboardpaint12a.png "CodeMapStoryboardPaint12A")
+ ![Mapa de código &#45; comentada e itens sinalizados](../modeling/media/codemapstoryboardpaint12a.png)
 
  Se tiver o Microsoft Outlook instalado, você poderá enviar por email o mapa para outras pessoas. Também é possível exportar o mapa como uma imagem ou em outro formato.
 
- ![Mapa de código &#45; compartilhamento, exportação, mail](../modeling/media/codemapstoryboardpaint13.png "CodeMapStoryboardPaint13")
+ ![Mapa de código &#45; compartilhamento, exportação, email](../modeling/media/codemapstoryboardpaint13.png)
 
 ## <a name="fix-the-problem-and-show-what-you-did"></a>Corrigir o problema e mostrar o que você fez
  Para corrigir esse bug, adicione a chamada de `Repaint` ao `undo`.
 
- ![Mapa de código &#45; Adicionar chamada de método ausente](../modeling/media/codemapstoryboardpaint14.png "CodeMapStoryboardPaint14")
+ ![Mapa de código &#45; Adicionar chamada de método ausente](../modeling/media/codemapstoryboardpaint14.png)
 
  Para confirmar a correção, reinicie a sessão de depuração e tente reproduzir o erro. Escolhendo agora **desfazer o último traço** funciona conforme o esperado e confirma que você fez a correção correta.
 
- ![Mapa de código &#45; confirmar código corrigir](../modeling/media/codemapstoryboardpaint15.png "CodeMapStoryboardPaint15")
+ ![Mapa de código &#45; confirmar a correção de código](../modeling/media/codemapstoryboardpaint15.png)
 
  É possível atualizar o mapa para mostrar a correção feita.
 
- ![Mapa de código &#45; mapa de atualização com ausente chamada de método](../modeling/media/codemapstoryboardpaint16.png "CodeMapStoryboardPaint16")
+ ![Mapa de código &#45; mapa de atualização com ausente chamada de método](../modeling/media/codemapstoryboardpaint16.png)
 
  Agora, seu mapa mostra um link entre **desfazer** e **redesenhar**.
 
- ![Mapa de código &#45; mapa atualizadas com a chamada de método](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")
+ ![Mapa de código &#45; mapa atualizadas com a chamada de método](../modeling/media/codemapstoryboardpaint17.png)
 
 > [!NOTE]
 >  Ao atualizar o mapa, você talvez veja uma mensagem afirmando que o índice de código usado para criar o mapa foi atualizado. Isso significa que alguém alterou o código, o que faz o mapa não corresponder ao código atual. Isso não impede você de atualizar o mapa, mas talvez precise recriar o mapa para confirmar se ele corresponde ao código.

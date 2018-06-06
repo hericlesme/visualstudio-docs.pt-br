@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691526"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765720"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Criando web parts para SharePoint
+# <a name="create-web-parts-for-sharepoint"></a>Criar web parts para SharePoint
   Usando web parts, você pode modificar o conteúdo, a aparência e o comportamento das páginas de um site do SharePoint usando um navegador. Web parts são controles do servidor que é executado dentro de uma página de web part: eles são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [blocos de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Você pode criar e depurar web parts em um site do SharePoint usando modelos do Visual Studio.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691526"
   
 |Arquivo|Descrição|  
 |----------|-----------------|  
-|Elements|Contém informações que o arquivo de definição de recurso em seu projeto usa para implantar a web part.|  
+|*Elements*|Contém informações que o arquivo de definição de recurso em seu projeto usa para implantar a web part.|  
 |arquivo. WebPart|Fornece informações que precisa para exibir a web part em uma galeria de web parts de SharePoint.|  
 |Arquivo de código|Contém métodos que adicionar controles para a web part e que geram conteúdo personalizado dentro da web part.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691526"
 |Nome do controle|Descrição|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Insere um menu do ASP. Para obter mais informações, consulte [visão geral do controle de Menu](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Insere um **LINK** elemento na página. aspx e aplica um ou mais folhas de estilos externas definidas pelo **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Insere um controle de DateTime na página. aspx.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Insere uma validação de segurança na página. aspx|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Insere um **LINK** elemento para o *. aspx* página e aplica um ou mais folhas de estilos externas definidas pelo **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Insere um controle de DateTime para o *. aspx* página.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Insere uma validação de segurança para o *. aspx* página|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Retorna uma propriedade de uma lista especificada.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Retorna uma propriedade global do site atual.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Insere um link para um RSS feed na página. aspx.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Insere um link para um RSS feed para o *. aspx* página.|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Fornece propriedades e métodos para o registro de recursos, como scripts, em uma página para que eles podem ser solicitados quando a página é renderizada.|  
-|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Aplica um tema para a página. aspx.|  
+|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Aplica um tema para o *. aspx* página.|  
   
 ## <a name="debug-a-web-part"></a>Depurar uma web part
  Você pode depurar um projeto do SharePoint que contém uma web part exatamente como você faria para depurar outros projetos do Visual Studio. Quando você inicia o depurador do Visual Studio, o Visual Studio abrirá o site do SharePoint.  

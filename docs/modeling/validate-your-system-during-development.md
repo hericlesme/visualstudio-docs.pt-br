@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9965f5bbe747bfdeed876e90888c7b18d71a8097
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 807cdbac4284d7725de2e155ecd5a9a89344a774
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749935"
 ---
 # <a name="validate-your-system-during-development"></a>Validar o sistema durante o desenvolvimento
 O Visual Studio pode ajudar a manter seu software consistente com os requisitos dos usuários e a arquitetura do seu sistema.
@@ -34,7 +35,7 @@ O Visual Studio pode ajudar a manter seu software consistente com os requisitos 
 
 |**Categoria**|**Links**|
 |------------------|---------------|
-|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug sete: Noções básicas sobre o código e o Design do sistema com o Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: arquitetura de um aplicativo usando um diagrama de dependência](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN How Do I: como validar o código usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif) [Channel 9: Doug sete: Noções básicas sobre o código e o Design do sistema com o Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif) [Channel 9: arquitetura de um aplicativo usando um diagrama de dependência](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif) [série MSDN How Do I: como validar o código usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Fóruns**|-   [Visualização do Visual Studio e ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visualização do Visual Studio e modelagem SDK (ferramentas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|-   [O Visual Studio ALM + Blog do Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Diários e artigos técnicos**|[Centro de arquitetura do MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|

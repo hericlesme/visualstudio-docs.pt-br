@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766546"
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publicar um aplicativo web ou um aplicativo .NET Core em um site usando a ferramenta de publicação do Visual Studio
 
@@ -26,9 +27,9 @@ Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Pyt
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você deve ter o Visual Studio de 2017 instalado e o **ASP.NET** e **do .NET Framework** cargas de trabalho de desenvolvimento. Para um aplicativo .NET Core, você também precisa de **.NET Core** carga de trabalho.
+* Você deve ter o Visual Studio de 2017 instalado e o **desenvolvimento ASP.NET e web** carga de trabalho e. **Desenvolvimento de área de trabalho NET** carga de trabalho. Para um aplicativo .NET Core, é necessário o. **NET Core** carga de trabalho.
 
-    Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
+    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto 
 
@@ -85,4 +86,4 @@ Essas etapas se aplicam ao ASP.NET, ASP.NET Core, .NET Core e aplicativos de Pyt
 Este guia de início rápido, você aprendeu a usar o Visual Studio para criar um perfil de publicação. Você também pode configurar a publicação de uma perfil com a importação de configurações de publicação.
 
 > [!div class="nextstepaction"]
-> [Importar configurações de publicação e implantar em IIS](tutorial-import-publish-settings-iis.md)
+> [Importar configurações de publicação e implantar no IIS](tutorial-import-publish-settings-iis.md)

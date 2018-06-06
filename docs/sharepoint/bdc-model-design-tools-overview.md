@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8ba5f5464a770342b2e2266bf0327160d37cc109
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691473"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765746"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Visão geral de ferramentas de design de modelo BDC
   Você pode criar um modelo de conectividade de dados de negócios (BDC) usando o Designer de BDC, o **detalhes de método BDC** janela e o **Explorer BDC**.  
@@ -56,14 +56,14 @@ ms.locfileid: "34691473"
   
  Você pode gerar rapidamente o localizador de localizador específico, criador, Updater, métodos e Deleter no **detalhes de método BDC** janela. Quando você gerar esses métodos, o Visual Studio adiciona metadados, como parâmetros, instâncias e descritores de tipo para o método. Você pode modificar esses metadados para satisfazer o seu cenário específico.  
   
- Para abrir o **detalhes de método BDC** janela, na barra de menus, escolha **exibição**, **outras janelas**, **detalhes de método BDC**.  
+ Para abrir o **detalhes de método BDC** janela, na barra de menus, escolha **exibição** > **outras janelas** > **detalhes de método BDC** .  
   
  Para exibir os métodos de **detalhes de método BDC** janela, escolha a entidade no Designer de BDC. Os métodos da entidade selecionada aparecem no **detalhes de método BDC** janela. Se você não escolher uma entidade no Designer de BDC, o **detalhes de método BDC** janela não exibe nenhuma informação.  
   
  Expandir ou recolher nós o **detalhes de método BDC** janela para definir parâmetros, instâncias e os descritores de filtro. Use o **Explorer BDC** para definir os descritores de tipo.  
   
 ## <a name="bdc-explorer"></a>BDC Explorer
- O **Explorer BDC** exibe os elementos que compõem o modelo. Para abrir o **Explorer BDC**, na barra de menus, escolha **exibição**, **outras janelas**, **Explorer BDC**. Para procurar o modelo, expanda nós no **Explorer BDC**. Cada nó representa um elemento no XML do arquivo de modelo.  
+ O **Explorer BDC** exibe os elementos que compõem o modelo. Para abrir o **Explorer BDC**, na barra de menus, escolha **exibição** > **outras janelas** > **Explorer BDC**. Para procurar o modelo, expanda nós no **Explorer BDC**. Cada nó representa um elemento no XML do arquivo de modelo.  
   
  Como escolher nós o **BDC Explorer**, as propriedades de cada nó que você escolher aparecem no **propriedades** janela. Muitas dessas propriedades correspondem aos atributos no arquivo de modelo. Você pode procurar o modelo usando a caixa de pesquisa na parte superior do **Explorer BDC**.  
   

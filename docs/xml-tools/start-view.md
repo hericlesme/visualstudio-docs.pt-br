@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751839"
 ---
 # <a name="start-view"></a>O modo de Início
 
@@ -22,7 +23,7 @@ O modo de Início é o ponto iniciando para o designer de (XSD) de esquema XML. 
 
 A exibição início contém duas seções principais, o *marca d'água* e **definir detalhes de esquema** painel. Também inclui a barra de ferramentas, que está disponível em todas as exibições de designer XSD.
 
-![Exibição de início do Designer de esquema XML](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![Exibição inicial do Designer de Esquema XML](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Marca de agua
 
@@ -36,7 +37,7 @@ O **definir detalhes de esquema** painel lista os tipos de nó do esquema global
 
 Você pode navegar entre a exibição de início, a [exibição do modelo de conteúdo](../xml-tools/content-model-view.md) e [exibição de gráfico](../xml-tools/graph-view.md) na barra de ferramentas do Designer de esquema XML.
 
-![Ferramentas de Designer de esquema XML](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![Barra de ferramentas do Designer de Esquema XML](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Os seguintes botões estão ativados na barra de ferramentas do designer XSD quando a exibição de Início é ativa:
 

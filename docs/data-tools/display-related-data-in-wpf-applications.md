@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746540"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Exibir dados relacionados em aplicativos WPF
 Em alguns aplicativos, você talvez queira trabalhar com dados que vêm de várias tabelas ou entidades que estão relacionadas entre si em uma relação pai-filho. Por exemplo, você talvez queira exibir uma grade que exibe os clientes de um `Customers` tabela. Quando o usuário seleciona um cliente específico, outro grade exibe os pedidos do cliente de um relacionados `Orders` tabela.
@@ -53,7 +54,7 @@ Você pode criar controles associados a dados que exibem dados relacionados arra
 
      A figura a seguir demonstra o relacionados **pedidos** tabela do **clientes** tabela em um conjunto de dados a **fontes de dados** janela.
 
-     ![Janela fontes de dados mostrando a relação](../data-tools/media/datasources2.gif "DataSources2")
+     ![Relação de exibição de janela fontes de dados](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>Consulte também
 

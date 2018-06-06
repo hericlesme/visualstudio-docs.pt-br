@@ -30,16 +30,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ee400201ff76745612e7fe7ce36020ba5234a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 111a1180f694b57a4e5ae013a41128a4a7e9e9f5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748680"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.
 
- ![Depuração com pilhas de chamadas em mapas de código](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
+ ![Depuração com pilhas de chamadas em mapas de código](../debugger/media/debuggermap_overview.png)
 
  Itens necessários:
 
@@ -71,60 +72,60 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
 2.  Depois que o aplicativo entra no modo de interrupção ou entrar em uma função, escolha **mapa de código**. (Teclado: **Ctrl** + **Shift** + **`**)
 
-     ![Escolha o mapa de código para iniciar a pilha de chamadas de mapeamento](../debugger/media/debuggermap_choosecodemap.png "DebuggerMap_ChooseCodeMap")
+     ![Escolha o mapa de código para iniciar a pilha de chamadas de mapeamento](../debugger/media/debuggermap_choosecodemap.png)
 
      A pilha de chamadas atual aparece em laranja em um novo mapeamento de código:
 
-     ![Consulte a pilha de chamadas no mapa de códigos](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
+     ![Consulte a pilha de chamadas no mapa de códigos](../debugger/media/debuggermap_seeundocallstack.png)
 
      O mapa será atualizado automaticamente enquanto você continua a depuração. Consulte [atualizar o mapa com a seguinte pilha de chamadas](#UpdateMap).
 
 ##  <a name="MakeNotes"></a> Verifique as observações sobre o código
  Adicione comentários para acompanhar o que está acontecendo no código. Para adicionar uma nova linha em um comentário, pressione **Shift + Return**.
 
- ![Adicione um comentário para a pilha de chamadas no mapa de códigos](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
+ ![Adicione um comentário para a pilha de chamadas no mapa de códigos](../debugger/media/debuggermap_addcomment.png)
 
 ##  <a name="UpdateMap"></a> Atualizar o mapa com a seguinte pilha de chamadas
  Execute o aplicativo até o próximo ponto de interrupção ou siga uma função. O mapa adiciona uma nova pilha de chamadas.
 
- ![Mapa de código de atualização com a seguinte pilha de chamadas](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
+ ![Mapa de código de atualização com a seguinte pilha de chamadas](../debugger/media/debuggermap_addclearcallstack.png)
 
 ##  <a name="AddRelatedCode"></a> Adicione o código relacionado ao mapa
  Agora você tem um mapa - o em seguida? Se você estiver trabalhando com c# ou Visual Basic, adicione itens, como campos, propriedades e outros métodos, para controlar o que está acontecendo no código.
 
  Clique duas vezes em um método para ver sua definição de código, ou use o menu de atalho para o método. (Teclado: selecione o método no mapa e pressione **F12**)
 
- ![Ir para definição de código para um método no mapa de códigos](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
+ ![Ir para definição de código para um método no mapa de códigos](../debugger/media/debuggermap_gotocodedefinition.png)
 
  Adicione os itens que você deseja rastrear no mapa.
 
- ![Mostrar campos em um método no mapa de códigos de pilha de chamada](../debugger/media/debuggermap_showfields.png "DebuggerMap_ShowFields")
+ ![Mostrar campos em um método no mapa de códigos de pilha de chamada](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
 >  Por padrão, a adição de itens no mapa também adiciona os nós do grupo pai, como a classe, o namespace e o assembly. Embora seja útil, você pode manter o mapa simples desativando esse recurso usando o **pais incluem** botão na barra de ferramentas do mapa ou pressionando **CTRL** para adicionar itens.
 
- ![Campos relacionados a um método no mapa de códigos de pilha de chamada](../debugger/media/debuggermap_showedfields.png "DebuggerMap_ShowedFields")
+ ![Campos relacionados a um método no mapa de códigos de pilha de chamada](../debugger/media/debuggermap_showedfields.png)
 
  Aqui, você pode visualizar facilmente quais métodos usam os mesmos campos. Os itens mais recentemente adicionados aparecem em verde.
 
  Continue criando o mapa para ver mais código.
 
- ![Consulte os métodos que usam um campo: mapa de códigos de pilha de chamada](../debugger/media/debuggermap_findallreferences.png "DebuggerMap_FindAllReferences")
+ ![Consulte os métodos que usam um campo: mapa de códigos de pilha de chamada](../debugger/media/debuggermap_findallreferences.png)
 
- ![Os métodos que usam um campo no mapa de códigos de pilha de chamada](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
+ ![Métodos que usam um campo no mapa de códigos de pilha de chamada](../debugger/media/debuggermap_foundallreferences.png)
 
 ##  <a name="FindBugs"></a> Localizar erros usando o mapa
  Visualizar seu código pode ajudar a localizar bugs com mais rapidez. Por exemplo, suponha que você está investigando um bug em um programa de desenho. Quando você desenha uma linha e tenta desfazê-la, nada acontece até que você desenhe outra linha.
 
  Para definir pontos de interrupção `clear`, `undo`, e `Repaint` métodos, iniciar a depuração e criar um mapa de como esta:
 
- ![Adicionar outra pilha de chamadas para o mapa de códigos](../debugger/media/debuggermap_addpaintobjectcallstack.png "DebuggerMap_AddPaintObjectCallStack")
+ ![Adicionar outra pilha de chamadas para o mapa de código](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
  Você observará que todos os gestos do usuário no mapa chamam `Repaint`, exceto para `undo`. Isso pode explicar por que `undo` não funciona imediatamente.
 
  Após corrigir o bug e continuar executando o programa, o mapa adicionará a nova chamada de `undo` para `Repaint`:
 
- ![Adicionar nova pilha de chamada de método no mapa de códigos](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
+ ![Adicionar nova pilha de chamada de método no mapa de códigos](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
 ##  <a name="QA"></a> Perguntas e respostas
 
@@ -132,11 +133,11 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
      Por padrão, somente seu próprio código aparece no mapa. Para ver o código externo, ligue- **pilha de chamadas** janela:
 
-     ![Exibir o código externo usando a janela pilha de chamadas](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
+     ![Exibir o código externo usando a janela pilha de chamadas](../debugger/media/debuggermap_callstackmenu.png)
 
      ou desativar **habilitar apenas meu código** no Visual Studio, opções de depuração:
 
-     ![Mostrar código externo usando a caixa de diálogo Opções](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
+     ![Mostrar código externo usando a caixa de diálogo Opções](../debugger/media/debuggermap_debugoptions.png)
 
 -   **Alterar o mapa afeta o código?**
 
@@ -160,11 +161,11 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
      É possível exportar o mapa, enviá-lo a outras pessoas se tiver o Microsoft Outlook ou salvá-lo em sua solução para que você possa verificá-lo no Controle de versão do Team Foundation.
 
-     ![Mapa de códigos de pilha de chamada de compartilhamento com outros](../debugger/media/debuggermap_sharewithothers.png "DebuggerMap_ShareWithOthers")
+     ![Mapa de códigos de pilha de chamada de compartilhamento com outras pessoas](../debugger/media/debuggermap_sharewithothers.png)
 
 -   **Como posso impedir que o mapa da adição de pilhas de chamadas de novo automaticamente?**
 
-     Escolha ![botão &#45; pilha de chamadas Mostrar no mapa de códigos automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") na barra de ferramentas do mapa. Para adicionar manualmente a pilha de chamadas atual no mapa, pressione **Ctrl** + **Shift** + **`**.
+     Escolha ![botão &#45; pilha de chamadas Mostrar no mapa de códigos automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif) na barra de ferramentas do mapa. Para adicionar manualmente a pilha de chamadas atual no mapa, pressione **Ctrl** + **Shift** + **`**.
 
      O mapa continuará realce pilhas de chamadas existente no mapa durante a depuração.
 
@@ -172,7 +173,7 @@ Crie um mapa de código para rastrear visualmente a pilha de chamadas durante a 
 
      Para obter mais informações sobre um item, mova o ponteiro do mouse sobre ele e examine a dica de ferramenta do item. Você também pode examinar o **legenda** para saber o que significa que cada ícone.
 
-     ![O que significam os ícones no mapa de código da pilha de chamada? ] (../debugger/media/debuggermap_showlegend.png "DebuggerMap_ShowLegend")
+     ![O que significam os ícones no mapa de código da pilha de chamada?](../debugger/media/debuggermap_showlegend.png)
 
  Consulte:
 

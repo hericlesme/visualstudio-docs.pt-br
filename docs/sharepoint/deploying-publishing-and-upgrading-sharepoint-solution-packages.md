@@ -21,31 +21,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aac96c7954a52a3277b08efcd89fa24a743117be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76dce0877a5b8726249b0cdaa617e8e503de8d32
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765980"
 ---
-# <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Implantando, publicando e atualizando pacotes de soluções do SharePoint
+# <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implantar, publicar e atualizar os pacotes de solução do SharePoint
   Depois de desenvolver uma solução do SharePoint no Visual Studio, você pode implantar seu arquivo de pacote (. wsp) em um servidor SharePoint local ou publicá-lo em um servidor SharePoint local ou remoto. Se você implantar os arquivos, você pode personalizar como os arquivos de pacote (. wsp) são implantados.  
   
 > [!NOTE]  
 >  Atualmente, apenas as soluções em modo seguro podem ser publicadas em servidores remotos do SharePoint. Para obter mais informações, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).  
   
-## <a name="deploying-publishing-and-upgrading"></a>Implantando, publicando e atualizando  
+## <a name="deploy-publish-and-upgrade"></a>Implantar, publicar e atualizar
  *Implantando* refere-se a cópia de um arquivo de solução do SharePoint criado a partir de um projeto do SharePoint no Visual Studio para um host local. Em uma solução de implantação, você pode configurar as etapas de implantação, como Reciclando o pool de serviços de informações da Internet (IIS), ativar a solução após a implantação e assim por diante. Para implantar, usar o **implantar** comando o **criar** menu. Para obter mais informações, consulte [como: editar uma configuração de implantação do SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) e [como: implantar e publicar uma solução do SharePoint a um Site do SharePoint Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
  *Publicando* se refere a carregar um arquivo de solução do SharePoint em modo seguro em um SharePoint remoto site; isto é, um site localizado em outro sistema. Você também pode publicar um arquivo de solução em modo seguro do SharePoint para um local do SharePoint, mas independentemente se o site publicado é local ou remoto, você não pode configurar suas etapas de implantação.  
   
  *Atualizando* refere-se para atualizar uma existente remotamente ou localmente publicada solução do SharePoint. Depois que as alterações são feitas para a solução do SharePoint no Visual Studio, altere o nome de arquivo do pacote da solução, republicar a solução e, em seguida, atualizar a solução após ela republica com êxito. Se você republicar uma solução localmente publicada, você pode substituir o arquivo de solução existente.  
   
-## <a name="deploying-packages"></a>Implantando pacotes  
+## <a name="deploy-packages"></a>Implantar pacotes
  Você pode implantar os arquivos de pacote para o servidor do SharePoint no computador de desenvolvimento para teste e depuração. Você também pode criar um arquivo de pacote que você pode instalar em outro computador, escolhendo o **publicar no sistema de arquivos** botão de opção de **publicar** caixa de diálogo. O pacote é criado e copiado para o caminho de arquivo local especificado. Para implantar uma solução do SharePoint para o servidor local, use o **implantar** comando o **criar** menu. Para obter mais informações, consulte [como: implantar e publicar uma solução do SharePoint a um Site do SharePoint Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  
   
  Para saber como implantar uma definição de lista, adicionar um receptor de evento e use o Designer de pacote e o Designer de recursos, consulte [passo a passo: Implantando uma definição de lista de tarefas de projeto](../sharepoint/walkthrough-deploying-a-project-task-list-definition.md).  
   
-## <a name="customizing-the-deployment-process"></a>Personalizando o processo de implantação  
+## <a name="customize-the-deployment-process"></a>Personalizar o processo de implantação
  A tabela a seguir mostra as duas configurações de implantação que você pode usar ao depurar e implantar uma solução do SharePoint.  
   
 |Configuração de implantação|Descrição|  
@@ -54,20 +55,19 @@ ms.lasthandoff: 04/16/2018
 |Nenhuma ativação|Essa configuração de implantação é executado as mesmas etapas, como a configuração padrão, mas ignora a etapa de ativação.|  
   
  Você pode criar suas próprias configurações de implantação para concluir uma única etapa ou alterar a ordem das etapas no processo de implantação. Para obter mais informações, consulte [como: editar uma configuração de implantação do SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
-  
+
  Você também pode adicionar comandos a serem executados antes e após a implantação. Para obter mais informações, consulte [como: definir comandos de implantação do SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).  
   
-## <a name="publishing-packages-to-a-remote-or-local-server"></a>Publicar pacotes em um servidor Local ou remoto  
+## <a name="publish-packages-to-a-remote-or-local-server"></a>Publicar pacotes em um servidor local ou remoto
  Para publicar uma solução do SharePoint em modo seguro em um servidor remoto, na barra de menus, escolha **criar**, **publicar**e, em seguida, no **publicar** caixa de diálogo caixa, escolha o **Publicar no Site do SharePoint** botão de opção, fornecendo a URL do servidor remoto, como **https://someremoteserver.sharepoint.microsoftonline.com**.  
   
  Para publicar uma solução do SharePoint para um servidor local, no **publicar** caixa de diálogo caixa, escolha o **publicar no sistema de arquivos** botão de opção, fornecendo um caminho de sistema local.  
   
  Depois de uma solução com êxito publica no SharePoint, a solução aparece no **Galeria de soluções** onde você pode ativá-la. Para obter mais informações, consulte [como: implantar, publicar e atualizar soluções do SharePoint em um servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
-### <a name="upgrading-published-packages"></a>Atualizando pacotes publicados  
+### <a name="upgrade-published-packages"></a>Atualizar pacotes publicados
  Se você fizer alterações em um projeto do SharePoint no Visual Studio depois que ele é publicado, o pacote publicado deve ser atualizado para incluir as alterações. Para atualizar com êxito, um pacote deve ter um nome exclusivo. Se um pacote com o mesmo nome for encontrado no site do SharePoint - que pode ocorrer quando você estiver atualizando um aplicativo existente - os alertas de um erro se o nome do arquivo estão em conflito e permite que você renomeie o pacote. Depois de republicação, o novo pacote é exibido no site do SharePoint e pode ser atualizado. Um pacote atualizado atualiza a solução usando os dados do pacote mais antigo e ativa a solução no SharePoint. Para obter mais informações, consulte [como: implantar, publicar e atualizar soluções do SharePoint em um servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Empacotando e implantando recursos do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 59f273c511a24b1139b03421c2ca59871350aec3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43e75e69899f74fb67980172c546cdc99d41d173
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747138"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 *N-camadas* aplicativos de dados são aplicativos de dados que são separados em várias *camadas*. Também chamado de "aplicativos distribuídos" e "aplicativos multicamadas", aplicativos de n camadas separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Ao desenvolver aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que constituem o aplicativo.
@@ -58,7 +59,7 @@ O *camada intermediária* é a camada que a camada de apresentação e os camada
 
 A ilustração a seguir mostra os recursos e tecnologias que estão disponíveis no Visual Studio e onde eles podem caber na camada intermediária de um aplicativo de n camadas.
 
-![Componentes da camada de meio](../data-tools/media/ntiermid.png "NtierMid") camada intermediária
+![Componentes da camada de meio](../data-tools/media/ntiermid.png) camada intermediária
 
 A camada intermediária normalmente se conecta à camada de dados usando uma conexão de dados. Esta conexão de dados é normalmente armazenado no componente de acesso de dados.
 
@@ -67,7 +68,7 @@ O *da camada de dados* é basicamente o servidor que armazena dados de um aplica
 
 A ilustração a seguir mostra os recursos e tecnologias que estão disponíveis no Visual Studio e onde eles podem caber na camada de dados de um aplicativo de n camadas.
 
-![Componentes da camada de dados](../data-tools/media/ntierdatatier.png "ntierdatatier") da camada de dados
+![Componentes da camada de dados](../data-tools/media/ntierdatatier.png) da camada de dados
 
 A camada de dados não pode ser acessada diretamente do cliente na camada de apresentação. Em vez disso, o componente de acesso de dados na camada intermediária é usado para comunicação entre as camadas de dados e de apresentação.
 

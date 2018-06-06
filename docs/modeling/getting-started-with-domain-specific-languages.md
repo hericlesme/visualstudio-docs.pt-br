@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61fdb4b652b7fe74f3baf80c6e9d6332914a9a1e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77fe0d04b49cf12401c38b4a8842a14d6f84ccd2
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750253"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introdução às linguagens específicas do domínio
 Este tópico explica os conceitos básicos de definindo e usando uma linguagem específica de domínio (DSL) criada com o SDK de modelagem para Visual Studio.
@@ -28,7 +29,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
  Quando você tiver criado uma DSL, você pode distribuí-lo como parte de um pacote de extensão de integração do Visual Studio (VSIX). Os usuários trabalham com DSL no Visual Studio:
 
- ![Diagrama de árvore de família, caixa de ferramentas e explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Pesquisador de objetos, caixa de ferramentas e diagrama de árvore de família](../modeling/media/familyt_instance.png)
 
  A notação é apenas parte de uma DSL. Junto com a notação, o pacote do VSIX inclui ferramentas que os usuários podem aplicar para ajudar a editar e gerar material de seus modelos.
 
@@ -60,7 +61,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
 3.  Clique em **Designer de linguagem específica de domínio**.
 
-     ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png)
 
 4.  No **nome** , digite **FamilyTree**. Clique em **OK**.
 
@@ -87,7 +88,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
  A interface do usuário agora se assemelha à imagem a seguir.
 
- ![designer de DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![designer de DSL](../modeling/media/dsl_designer.png)
 
  Essa solução define uma linguagem específica de domínio. Para obter mais informações, consulte [visão geral da Interface do usuário específica de domínio idioma ferramentas](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -136,7 +137,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
  O Visual Studio experimental será parecida com o exemplo a seguir:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>O conteúdo de um modelo
  O conteúdo de um arquivo que é uma instância de uma DSL é chamado um *modelo*. O modelo contém *modelo * * elementos* e *links* entre os elementos. A definição de DSL Especifica quais tipos de elementos de modelo e links podem existir no modelo. Por exemplo, em uma DSL criada usando o modelo de idioma mínima, há um tipo de elemento de modelo e um tipo de link.
@@ -196,7 +197,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
 1.  No diagrama DslDefinition, renomeie **ExampleModel** para **FamilyTreeModel**, **ExampleElement** para **pessoa**,  **Destinos** para **pais**, e **fontes** para **filhos**. Você pode clicar em cada rótulo para alterá-la.
 
-     ![Diagrama de definição de DSL &#45; modelo de árvore de família](../modeling/media/familyt_person.png "FamilyT_Person")
+     ![Diagrama de definição de DSL &#45; modelo de árvore de família](../modeling/media/familyt_person.png)
 
 2.  Renomeie as ferramentas de elemento e o conector.
 
@@ -255,7 +256,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
     4.  Selecione cada novo decorator e na janela Propriedades, defina o **posição** campo. Isso determina qual o valor da propriedade de domínio será exibido na forma. Por exemplo, definir **InnerBottomLeft** e **InnerBottomRight**.
 
-         ![Definição de forma do compartimento](../modeling/media/familyt_compartment.png "FamilyT_Compartment")
+         ![Definição de forma do compartimento](../modeling/media/familyt_compartment.png)
 
 3.  Mapear os decoradores para as propriedades.
 
@@ -271,7 +272,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
 6.  Em um arquivo. TT, você pode adicionar o código que obtém as propriedades de cada pessoa.
 
- ![Diagrama de árvore de família, caixa de ferramentas e explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")
+ ![Pesquisador de objetos, caixa de ferramentas e diagrama de árvore de família](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definir novas Classes
  Você pode adicionar classes de domínio e relações em um modelo. Por exemplo, você pode criar uma nova classe para representar cidades e uma nova relação para representar que uma pessoa que estiveram ativos em uma cidade.
@@ -297,7 +298,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
     1.  Clique o **relação de referência** ferramenta, clique em pessoa e, em seguida, clique em cidade.
 
-         ![Fragmento da definição de DSL: raiz da árvore de família](../modeling/media/familyt_root.png "FamilyT_Root")
+         ![Fragmento da definição de DSL: raiz da árvore de família](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         >  Relações de referência representam referências cruzadas de uma parte da árvore modelo para outro.
@@ -322,7 +323,7 @@ Se você for novo no DSLs, recomendamos que você leia o **laboratório de ferra
 
     2.  Use o **mapa de elemento de diagrama** ferramenta para vincular o novo conector para a relação entre a pessoa e cidade.
 
-         ![Definição de árvore com mapa de formas adicionado](../modeling/media/familyt_shapemap.png "FamilyT_ShapeMap")
+         ![Definição de árvore com mapa de formas adicionado](../modeling/media/familyt_shapemap.png)
 
 6.  Crie uma ferramenta de elemento para fazer uma cidade de novo.
 

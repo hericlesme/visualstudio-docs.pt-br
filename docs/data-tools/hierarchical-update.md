@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747463"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 *Atualização hierárquica* refere-se ao processo de salvar dados atualizados (de um dataset com duas ou mais tabelas relacionadas) para um banco de dados, mantendo as regras de integridade referencial. *A integridade referencial* refere-se às regras de consistência fornecido pelas restrições em um banco de dados que controlam o comportamento de inserindo, atualizando e excluindo registros relacionados. Por exemplo, é a integridade referencial que impõe a criação de um registro de cliente antes de permitir pedidos a ser criado para esse cliente.  Para obter mais informações sobre as relações em conjuntos de dados, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Habilitar atualização hierárquica em um conjunto de dados
  Por padrão, a atualização hierárquica está habilitada para todos os novos conjuntos de dados que são adicionados ou criados em um projeto. Ativar ou desativar o atualização hierárquica definindo a **atualização hierárquica** propriedade de um conjunto de dados tipado no conjunto de dados para **True** ou **False**:
 
- ![Configuração de atualização hierárquica](../data-tools/media/hierarchical-update-setting.png "configuração de atualização hierárquica")
+ ![Configuração de atualização hierárquica](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Criar uma nova relação entre tabelas
  Para criar uma nova relação entre duas tabelas, no Designer de conjunto de dados, selecione a barra de título de cada tabela, clique com botão direito e selecione **Adicionar relação**.
 
- ![Atualização hierárquica Adicionar menu relação](../data-tools/media/hierarchical-update-add-relation-menu.png "atualização hierárquica Adicionar menu de relação")
+ ![Menu de relação de adição de atualização hierárquica](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Entender as restrições foreign key, atualizações em cascata e exclusões
  É importante compreender como restrições de chave estrangeira e comportamento em cascata no banco de dados são criados no código gerado do conjunto de dados.

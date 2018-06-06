@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41d36dc5c7f4f2d904a69d9053ed0f669b1a86c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a64da6c7289aa8af67436ca38404ef3d050b5ab
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768099"
 ---
-# <a name="how-to-add-items-to-a-sharepoint-project"></a>Como adicionar itens a um projeto do SharePoint
+# <a name="how-to-add-items-to-a-sharepoint-project"></a>Como: adicionar itens a um projeto do SharePoint
   Soluções do SharePoint contêm um ou mais projetos, cada uma delas contém vários itens de projeto do SharePoint. Depois que você abre ou cria uma solução do SharePoint, você pode adicionar itens novos ou existentes para esses projetos. Por exemplo, novos projetos de fluxo de trabalho vem com um formulário padrão denominado Default. aspx, mas você pode substituir esse formulário com um formulário de novo ou diferente ou adicione outro formulário ASPX.  
   
 ### <a name="to-add-a-new-project-item-to-a-sharepoint-solution"></a>Para adicionar um novo item de projeto a uma solução do SharePoint  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Em **Solution Explorer**, escolha o nó do projeto.  
   
-3.  Na barra de menus, escolha **projeto**, **Adicionar Novo Item** para exibir o **Adicionar Novo Item** caixa de diálogo.  
+3.  Na barra de menus, escolha **projeto** > **Adicionar Novo Item** para exibir o **Adicionar Novo Item** caixa de diálogo.  
   
 4.  No **modelos instalados** lista, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.  
   
@@ -46,12 +47,11 @@ ms.lasthandoff: 04/16/2018
   
 2.  Em **Solution Explorer**, escolha o nó do projeto.  
   
-3.  Na barra de menus, escolha **projeto**, **Add Existing Item** para exibir o **Add Existing Item** caixa de diálogo.  
+3.  Na barra de menus, escolha **projeto** > **Add Existing Item** para exibir o **Add Existing Item** caixa de diálogo.  
   
 4.  Navegue até a pasta que contém o item que você deseja adicionar, clique em e, em seguida, escolha o **adicionar** botão.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte também
  [Projeto do SharePoint e modelos de Item de projeto](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

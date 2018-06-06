@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35733a737f10fccab7d9fd6cab350478182b2259
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 329214cded185a15fa1ef21b162955957523f5fc
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746995"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Instruções passo a passo: criando um aplicativo de dados de N camadas
 *N-camadas* aplicativos de dados são aplicativos que acessam dados e são separados em várias camadas lógicas, ou *camadas*. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).
@@ -49,7 +50,7 @@ Durante este passo a passo, você executará as seguintes etapas:
 
 -   Gravar código para preencher as tabelas de dados.
 
-![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") para uma versão de vídeo deste tópico, consulte [vídeo como fazer: criar um aplicativo de dados de N camadas](http://go.microsoft.com/fwlink/?LinkId=115188).
+![link para vídeo](../data-tools/media/playvideo.gif) para uma versão de vídeo deste tópico, consulte [vídeo como fazer: criar um aplicativo de dados de N camadas](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
@@ -78,7 +79,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 1. No Visual Studio, no **arquivo** menu, selecione **novo**, **projeto...** .
 
-2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **área de trabalho clássica do Windows**.
+2. Expanda **Visual C#** ou **Visual Basic** no painel esquerdo, selecione **Windows Desktop**.
 
 3. No painel central, selecione a **biblioteca de classes** tipo de projeto.
 
@@ -289,7 +290,7 @@ Este passo a passo demonstra como acessar a camada de acesso de dados usando um 
 
 1.  Com o botão direito na solução no Gerenciador de soluções e escolha **adicionar**, **novo projeto...** .
 
-2.  No **novo projeto** caixa de diálogo, no painel esquerdo, selecione **área de trabalho clássica do Windows**. No painel central, selecione **aplicativo do Windows Forms**.
+2.  No **novo projeto** caixa de diálogo, no painel esquerdo, selecione **Windows Desktop**. No painel central, selecione **aplicativo do Windows Forms**.
 
 3.  Nomeie o projeto **projeto** e clique em **Okey**.
 

@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749470"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Criando uma linguagem específica do domínio baseada no Windows Forms
 Você pode usar formulários do Windows para exibir o estado de um modelo de linguagem específica de domínio (DSL), em vez de usar um diagrama DSL. Este tópico o orienta a associação de um formulário do Windows a uma DSL, usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] visualização e modelagem SDK.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") instância de um DSL, mostrando uma interface de usuário de formulário do Windows e o Gerenciador de modelos.
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) instância de um DSL, mostrando uma interface de usuário de formulário do Windows e o Gerenciador de modelos.
 
 ## <a name="creating-a-windows-forms-dsl"></a>Criando uma DSL de formulários do Windows
  O **mínimo Designer do WinForm** modelo DSL cria uma DSL mínimo que você pode modificar para atender às suas próprias necessidades.
@@ -68,7 +69,7 @@ Você pode usar formulários do Windows para exibir o estado de um modelo de lin
 ## <a name="updating-the-dsl-definition"></a>Atualizando a definição de DSL
  A seguinte que definição de DSL é usada neste passo a passo.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>Para atualizar a definição de DSL
 
@@ -127,7 +128,7 @@ Você pode usar formulários do Windows para exibir o estado de um modelo de lin
 
      As propriedades e relacionamentos da classe do modelo aparecem na janela de fontes de dados.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>Para conectar-se o seu modelo para um formulário
 
@@ -172,7 +173,7 @@ Você pode usar formulários do Windows para exibir o estado de um modelo de lin
 
 -   Isso garante que, quando o usuário seleciona uma linha, a janela Propriedades exibe as propriedades do elemento de modelo correspondente, em vez de linha de grade de dados.
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4") esquema dos links entre fontes de dados e exibições.
+ ![DslWpf4](../modeling/media/dslwpf4.png) esquema dos links entre fontes de dados e exibições.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Para concluir as associações ao DSL
 
@@ -301,7 +302,7 @@ Você pode usar formulários do Windows para exibir o estado de um modelo de lin
 
      Você deve ser capaz de editar o nome do elemento na exibição de grade de dados. Você também pode excluí-lo de lá.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Sobre o código para adicionar um elemento
  Para os novos botões de elemento, o seguinte código alternativo é um pouco mais simples.
