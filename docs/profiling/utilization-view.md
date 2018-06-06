@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447980"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477100"
 ---
 # <a name="utilization-view"></a>Exibição da utilização
 A **Exibição de Utilização** exibe informações sobre a CPU, GPU e outros recursos do sistema usados pelo processo atual (escolha **Analisar** > **Visualizador de Simultaneidade** para iniciar o visualizador de simultaneidade). Ela mostra a utilização média do núcleo pelo processo analisado, o processo ocioso, o processo do Sistema e outros processos em execução no sistema ao longo do tempo. Ela não mostra qual núcleo específico está ativo em um determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com capacidade de 50% durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado. A exibição é gerada pela divisão do tempo de criação de perfil em segmentos de tempo curto. Para cada segmento, o grafo plota o número médio de threads de processos em execução nos núcleos lógicos durante esse intervalo.  
@@ -47,7 +47,7 @@ A **Exibição de Utilização** exibe informações sobre a CPU, GPU e outros r
   
  Se você estiver usando a GPU por meio do C++ AMP ou DirectX, poderá ser interessante identificar o número de mecanismos GPU em uso ou de áreas em que a GPU é inesperadamente ociosa.  
   
-## <a name="zooming"></a>Aplicar zoom  
+## <a name="zoom"></a>Aplicar Zoom  
  Para ampliar o gráfico de Utilização de CPU ou de GPU, selecione uma seção ou use a ferramenta de controle deslizante de zoom acima do gráfico. A configuração de zoom persiste conforme você muda para outros modos. Para reduzir novamente, use a ferramenta de controle deslizante de zoom. Também é possível ampliar usando Ctrl+scroll.  
   
 ## <a name="see-also"></a>Consulte também  

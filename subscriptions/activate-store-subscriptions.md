@@ -9,11 +9,12 @@ description: Saiba como ativar assinaturas do Visual Studio compradas na Microso
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 751f2fb7931c2081be8c146b6bc3959cc60c2a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477269"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Como ativar uma assinatura adquirida na Microsoft Store?
 Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft Store, as etapas de ativação poderão ser iniciadas na "Página de Confirmação" ou no "Email de Confirmação" de pagamento recebido após a compra. 
@@ -32,7 +33,7 @@ Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft S
 7. Após entrar com êxito, a janela "Ativar sua assinatura do Visual Studio" aparecerá.
 8. Insira as informações da chave do produto (Product Key) disponíveis na "Página de Confirmação" do pagamento ou no "Email de Confirmação" e clique em **Ativar**.
 
-    ![Insira a chave do produto](_img/buy-retail/enter-product-key.png)
+    <img alt="Enter product key" src="_img/buy-retail/enter-product-key.png" style="border: 1px solid #CCCCCC" />
 
 9. Agora, a assinatura deve estar visível na página [Assinaturas](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) e você deve ter acesso a todos os benefícios de sua assinatura. 
 

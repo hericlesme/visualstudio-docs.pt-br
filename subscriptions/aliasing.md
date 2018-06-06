@@ -9,11 +9,12 @@ description: A entrada poderá falhar se forem usados aliases ou nomes amigávei
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477646"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>A entrada nas assinaturas do Visual Studio poderá falhar ao usar aliases
 
@@ -48,25 +49,26 @@ Siga estas etapas para adicionar um novo assinante com uma conta de diretório.
 1. Acesse o [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (Volume Licensing Service Center) e entre.
 2. Na página Administrador do VLSC, clique em **Assinaturas** e em **Assinaturas do Visual Studio**.
 
-    ![Menu de Assinaturas](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. Clique no **Número do Contrato** associado à assinatura do Visual Studio.
 
-    ![Selecionar Contrato](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
 4. Clique em **Atribuir Assinatura**.
 
-    ![Atribuir Assinatura](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. Selecione o **Nível de Assinatura** desejado.
 
-    ![Nível de Assinatura](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. Valide que você tem assinaturas disponíveis para atribuir e clique em **Avançar**.
 7.  Insira os detalhes do assinante e o endereço do diretório no campo Endereço de Email e clique em **Avançar**.
 
-    ![Endereço de email](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. Valide as informações do assinante e clique em **Concluir**.
 
 9. Notifique o assinante de que a assinatura foi provisionada usando o [modelo](#notifying-your-subscribers-with-directory-addresses) abaixo.

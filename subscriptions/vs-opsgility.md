@@ -9,11 +9,12 @@ description: Conheça o benefício de treinamento Opsgility incluído com a assi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477606"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>O benefício Opsgility nas assinaturas do Visual Studio
 
@@ -52,8 +53,6 @@ Assinaturas selecionadas do Visual Studio incluem um ano de acesso ao treinament
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas. 
 
 ## <a name="support-resources"></a>Recursos de suporte
--  Precisa de ajuda com o Opsgility?  Confira estes recursos:
-    - [PERGUNTAS FREQUENTES](https://www.opsgility.com/Home/FAQ)
-    - Envie um tíquete de suporte por meio da página [Entre em contato](https://www.opsgility.com/SupportTicket). 
+-  Precisa de ajuda com o Opsgility?  Envie um tíquete de suporte por meio da página [Entre em contato](https://www.opsgility.com/SupportTicket). 
 -  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://www.visualstudio.com/subscriptions/support/) do Visual Studio.
 -  Tem alguma pergunta sobre o IDE do Visual Studio, o Visual Studio Team Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://www.visualstudio.com/support/). 

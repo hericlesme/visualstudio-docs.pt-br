@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3309435600991db85540c95dc969206619438e51
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477282"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Início Rápido: analisar dados de uso da CPU no Visual Studio (ASP.NET)
 
@@ -49,13 +50,13 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
 1. No Gerenciador de Soluções, abra `Models/Data.cs` e adicione a seguinte instrução `using` à parte superior do arquivo:
 
-    ```cs
+    ```csharp
     using System.Threading;
     ```
 
 1. Em Data.cs, substitua o código a seguir:
 
-    ```cs
+    ```csharp
     public class Data
     {
     }
@@ -63,7 +64,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
     com este código:
 
-    ```cs
+    ```csharp
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
@@ -133,7 +134,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
 1. No Gerenciador de Soluções, abra Controller/HomeControllers.cs e substitua o código a seguir:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         ViewBag.Message = "Your application description page.";
@@ -144,7 +145,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 
     com este código:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         Models.Simple s = new Models.Simple();
