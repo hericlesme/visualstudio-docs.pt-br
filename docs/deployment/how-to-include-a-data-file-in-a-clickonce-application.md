@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8240e4bb8ba540fcdd4453e39d9fa6b00b31bef2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815539"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Como incluir um arquivo de dados em um aplicativo ClickOnce
 Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo instalar é atribuído a um diretório de dados no disco local do computador de destino, onde o aplicativo pode gerenciar seus próprios dados. Arquivos de dados podem incluir arquivos de qualquer tipo: arquivos de texto, arquivos XML ou até mesmo arquivos de banco de dados (. mdb) do Microsoft Access. Os procedimentos a seguir mostram como adicionar um arquivo de dados de qualquer tipo em seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.  
@@ -35,7 +36,7 @@ Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativ
   
 2.  Atualize o manifesto do aplicativo para o arquivo de dados da lista.  
   
-     **v 1.0.0.0 do imagem -u v1.0.0.0\Application.manifest - FromDirectory**  
+     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
      Para executar essa tarefa cria novamente a lista de arquivos em seu manifesto de aplicativo e também gera automaticamente as assinaturas de hash.  
   
@@ -53,13 +54,11 @@ Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativ
   
      Você deve assinar novamente o manifesto de implantação porque o hash do manifesto do aplicativo foi alterado.  
   
-     **-cf cert_file - pwd senha de manifesto do aplicativo de -s de imagem**  
+     `mage -s app manifest -cf cert_file -pwd password`
   
-     **manifesto do aplicativo manifesto - appm -u implantação da imagem**  
+     `mage -u deployment manifest -appm app manifest`
   
-     **manifesto de implantação de -s de imagem - cf certfile - pwd senha**  
-  
-2.  
+     `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Para incluir um arquivo de dados usando MageUI.exe  
   

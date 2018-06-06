@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c05d1317c2b8040baf23c98cff8a032f14f47798
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815068"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Como usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework
 Você pode implantar um aplicativo que tem como alvo de várias versões do .NET Framework usando a tecnologia de implantação do ClickOnce. Isso exige que você deseja gera e atualizar os manifestos de aplicativo e implantação.  
@@ -85,13 +86,13 @@ Você pode implantar um aplicativo que tem como alvo de várias versões do .NET
   
 2.  Adicionar `group="framework"` para a dependência do XML para os assemblies de sentinela (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, e `System.Data.Entity`). Por exemplo, o XML deve ter a seguinte aparência:  
   
-    ```  
+    ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
 3.  Atualizar o número da versão do `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime para o número de versão para o .NET Framework que é o menor denominador comum. Por exemplo, se o aplicativo tem como alvo o .NET Framework 3.5 e [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], use o 2.0.50727.0 número de versão e o XML devem ser semelhante ao seguinte:  
   
-    ```  
+    ```xml  
     <dependency>  
       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  

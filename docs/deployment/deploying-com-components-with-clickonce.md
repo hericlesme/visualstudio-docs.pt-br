@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815867"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implantando componentes do COM com o ClickOnce
 Implantação de componentes legados COM tradicionalmente foi uma tarefa difícil. Componentes precisam ser registrado globalmente e, portanto, podem causar efeitos colaterais indesejáveis entre aplicativos sobrepostos. Essa situação geralmente não é um problema em aplicativos do .NET Framework porque componentes são completamente isolados a um aplicativo ou são compatíveis com o lado a lado. O Visual Studio permite que você implante componentes isolados no sistema de operacional superior ou o Windows XP.  
@@ -69,7 +70,7 @@ Implantação de componentes legados COM tradicionalmente foi uma tarefa difíci
   
 4.  Em Class1. vb, adicione o seguinte código após o código gerado para o `New` método:  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ Implantação de componentes legados COM tradicionalmente foi uma tarefa difíci
   
 8.  Clique duas vezes no botão para adicionar o código do manipulador e no arquivo de código, adicione código para que o manipulador lê da seguinte maneira:  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  

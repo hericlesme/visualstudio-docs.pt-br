@@ -18,18 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ab58cb90f9486c3a233d5173db340be3ee5f034
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e6b12f1a5d50e2636d3c8478e6b6a9efe50384a5
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815659"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; elemento (implantação do ClickOnce)
 O elemento de nível superior para o manifesto de implantação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```xml  
   
       <assembly    
    manifestVersion  
@@ -48,7 +49,7 @@ O elemento de nível superior para o manifesto de implantação.
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir ilustra uma `assembly` elemento em um manifesto de implantação para um aplicativo implantado usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Este exemplo de código é parte de um exemplo maior fornecido para o [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) tópico.  
   
-```  
+```xml  
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"  
   manifestVersion="1.0"  

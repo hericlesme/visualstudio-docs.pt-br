@@ -16,18 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5637bad77e2d4e09d6d04007f0e0da3ed8af68df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c02a7fb2ab17d5a8f8a8e141814be432a119bf82
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814954"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Assinatura&gt; elemento (implantação do ClickOnce)
 Contém as informações necessárias para assinar digitalmente o manifesto de implantação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
-```  
+```xml  
   
       <Signature>   
    XML signature information   
@@ -35,14 +36,14 @@ Contém as informações necessárias para assinar digitalmente o manifesto de i
 ```  
   
 ## <a name="remarks"></a>Comentários  
- Um manifesto de implantação usando uma assinatura do envelope de assinatura é opcional, mas recomendado. Para obter mais informações sobre a assinatura XML arquivos Consulte World Wide Web Consortium recomendação, "Assinatura XML sintaxe e processamento," descrito em [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Um manifesto de implantação usando uma assinatura do envelope de assinatura é opcional, mas recomendado. Para obter mais informações sobre como assinar arquivos XML, consulte a World Wide Web Consortium recomendação, "Assinatura XML sintaxe e processamento," descrito em [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
  Se você deseja assinar o manifesto, hashes devem ser fornecidos para todos os arquivos. Um manifesto com arquivos que não são transformadas em hash não pode ser assinado, porque os usuários não é possível verificar o conteúdo dos arquivos sem hash.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir ilustra uma `Signature` elemento em um manifesto de implantação usado em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação.  
   
-```  
+```xml  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
   <SignedInfo>  
     <CanonicalizationMethod Algorithm=  

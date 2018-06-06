@@ -21,13 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816036"
 ---
-# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: Criar um bootstrapper personalizado com um aviso de privacidade
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: criar um bootstrapper personalizado com um aviso de privacidade
 Você pode configurar aplicativos ClickOnce para atualizar automaticamente quando assemblies com as versões de arquivo mais recentes e assembly estiverem disponíveis. Para certificar-se de que os clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Em seguida, eles podem optar por conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ela não instala.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -165,7 +166,7 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
   
 2.  No arquivo Product, adicione o seguinte código XML. Certifique-se de que você não substituir o código XML existente.  
   
-    ```  
+    ```xml  
     <Product  
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       ProductCode="Microsoft.Sample.EULA">  
@@ -197,7 +198,7 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
   
 2.  No arquivo package.xml, adicione o seguinte código XML para definir a localidade e incluem os termos de licença de software. Certifique-se de que você não substituir o código XML existente.  
   
-    ```  
+    ```xml  
     <Package   
       xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  
       Name="DisplayName"  
