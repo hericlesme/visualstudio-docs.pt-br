@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745757"
 ---
 # <a name="view-type-and-member-definitions"></a>Exibir Definições de Membro e de Tipo
 
@@ -61,7 +62,7 @@ Quando você executa o comando **Ir para Definição** ou **Inspecionar Definiç
 
 Por exemplo, se você executar o comando **Ir para Definição** para o <xref:System.Console>, os metadados para o <xref:System.Console> aparecerão no editor de código como o código-fonte de C#. O código será semelhante a sua declaração, mas não exibirá uma implementação.
 
-![Metadados como Origem](../ide/media/metadatasource.png "MetadataSource")
+![Metadados como origem](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > Quando você tenta executar o comando **Ir para Definição** ou **Inspecionar Definição** para tipos ou membros que estão marcados como internos, o Visual Studio não exibe seus metadados como código-fonte, independentemente se o assembly de referência for um amigo ou não.

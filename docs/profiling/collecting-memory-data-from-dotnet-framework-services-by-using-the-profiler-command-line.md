@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e94932749523cea906cd60442971b93160b6c13
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8989209a5abefb05f0f3f9b90357ab0f2a895786
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268146"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690894"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Coletar dados de memória por meio de serviços do .NET Framework usando a linha de comando do criador de perfil
 Esta seção descreve os procedimentos e as opções para coletar alocação de memória e dados de tempo de vida do objeto para um serviço [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usando o método de amostragem na linha de comando.  
@@ -26,7 +26,7 @@ Esta seção descreve os procedimentos e as opções para coletar alocação de 
 |----------|---------------------|  
 |**Anexar o criador de perfil a um serviço .NET**|-   [Como anexar o criador de perfil a um serviço do .NET para coletar dados de memória](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
 |**Instrument a .NET service and collect .NET memory data (Instrumentar um serviço do .NET e coletar dados de memória do .NET)**|-   [Como instrumentar um serviço do .NET Framework e coletar dados de memória](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletar dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tarefas relacionadas
   

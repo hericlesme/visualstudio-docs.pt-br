@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751336"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores e regras de limite para computadores em um teste de carga
 
@@ -51,7 +52,7 @@ Os dados dos contadores são coletados no servidor e em qualquer computador em q
 
 Há três categorias de contador: porcentagens, contagens e médias. Alguns exemplos são % de uso de CPU, contagens de bloqueio do SQL Server, e solicitações por segundo do IIS.
 
-![Conjuntos de contadores de teste de carga](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Conjuntos de contadores de teste de carga](../test/media/loadtestcountersets.png)
 
 Os dados de desempenho para solicitações HTTP individuais são relatados pelo computador que executa um teste. como um computador agente. Para solicitações, você pode monitorar dados como o tempo médio para o primeiro byte, o tempo de resposta e solicitações por segundo.
 

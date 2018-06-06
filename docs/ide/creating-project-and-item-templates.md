@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573252"
 ---
 # <a name="project-and-item-templates"></a>Modelos de projeto e de item
 
@@ -46,14 +47,10 @@ Quando esses arquivos são compactados em um arquivo *.zip* e colocados na pasta
 
 Para obter mais informações sobre pastas de modelo, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="starter-kits"></a>Kits de Início
-
-Kits de início são modelos avançados que podem ser compartilhados com outros membros da comunidade. Os kits de início incluem exemplos de código que pode ser compilado, documentação e outros recursos para ajudar os usuários a aprenderem novas ferramentas e técnicas de programação enquanto compilam aplicativos úteis e reais. Os conteúdos e procedimentos básicos dos Kits de início são iguais aos dos modelos. Para obter mais informações, consulte [Como criar kits de início](../ide/how-to-create-starter-kits.md).
-
 ## <a name="see-also"></a>Consulte também
 
 - [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Como criar modelos de item](../ide/how-to-create-item-templates.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
-- [Personalizando modelos](../ide/customizing-project-and-item-templates.md)
+- [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Pacotes do NuGet em modelos do Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

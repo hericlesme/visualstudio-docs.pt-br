@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b293c5a6fe64324cb306933d90049548e7a6098
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765161"
 ---
 # <a name="net-memory-allocations-view"></a>Exibição de alocações da memória do .NET
 A exibição de Alocações lista os tipos criados durante a execução de criação de perfil. Cada tipo é o nó raiz de uma árvore de chamadas que exibe os caminhos de execução de função que resultaram em alocações do tipo.  
@@ -34,7 +35,7 @@ A exibição de Alocações lista os tipos criados durante a execução de cria�
   
  Os dados de uma função exibem o número de objetos criados e o número de bytes alocados para objetos do tipo pai.  
   
-## <a name="highlighting-the-execution-hot-path"></a>Realce do afunilamento de execução  
+## <a name="highlight-the-execution-hot-path"></a>Realçar o afunilamento de execução  
  É possível encontrar o caminho de execução da árvore de chamadas que criou a maioria dos objetos do tipo pai.  
   
 -   Para exibir o caminho mais ativo, clique com o botão direito do mouse no tipo ou na função e, em seguida, clique em **Expandir Afunilamento**.  

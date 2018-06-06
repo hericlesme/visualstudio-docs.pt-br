@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc94838423cea7eeab8cef6357267609394352b
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747620"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -64,7 +65,7 @@ Também é possível criar modelos de item e de projeto personalizados. Para obt
 
 Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções** para exibir e gerenciar o projeto, a solução e seus itens associados. A ilustração a seguir mostra o **Gerenciador de Soluções** com uma solução em C# que contém dois projetos.
 
-![Gerenciador de Soluções](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
+![Gerenciador de Soluções](../ide/media/vs2015_solution_explorer.png)
 
 ## <a name="see-also"></a>Consulte também
 

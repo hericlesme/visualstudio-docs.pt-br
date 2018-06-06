@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ddc360e6146678730d1844e4762ac3f6112a97d3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572560"
 ---
 # <a name="how-to-update-existing-templates"></a>Como atualizar modelos existentes
 
@@ -72,4 +73,3 @@ Você pode atualizar um modelo existente sem usar o **Assistente de Exportação
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
-- [Como criar kits de início](../ide/how-to-create-starter-kits.md)

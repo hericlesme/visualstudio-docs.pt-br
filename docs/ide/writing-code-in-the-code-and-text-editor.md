@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572385"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
@@ -87,6 +88,6 @@ Para obter mais informações sobre como personalizar o editor, consulte [Person
 ## <a name="see-also"></a>Consulte também
 
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
-- [Introdução ao C++ no Visual Studio](../ide/quickstart-cpp.md)
+- [Introdução ao C++ no Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Introdução ao C# e ao ASP.NET no Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Introdução ao Python no Visual Studio](../ide/quickstart-python.md)
