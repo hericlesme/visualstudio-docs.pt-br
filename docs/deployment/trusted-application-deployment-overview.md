@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572235"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral da implantação de aplicativos confiáveis
 Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que têm permissões elevadas usando a tecnologia de implantação de aplicativos confiáveis.  
@@ -86,7 +87,7 @@ Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](.
  Implantação de aplicativo confiável é específica para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]e só pode ser usado com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos.  
   
 ### <a name="sign-the-deployment"></a>Assinar a implantação  
- Depois de obter seu certificado, você deve usar para assinar sua implantação. Se você estiver implantando seu aplicativo usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Assistente de publicação, o assistente gerará automaticamente um certificado de teste para você se você não especificou um certificado por conta própria. Você também pode usar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] janela do Designer de projeto, no entanto, para fornecer um certificado fornecido por uma autoridade de certificação.  Também consulte [como: publicar um aplicativo ClickOnce usando o Assistente de publicação] (http://msdn.microsoft.com/library/31kztyey\(v=vs.110\).  
+ Depois de obter seu certificado, você deve usar para assinar sua implantação. Se você estiver implantando seu aplicativo usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Assistente de publicação, o assistente gerará automaticamente um certificado de teste para você se você não especificou um certificado por conta própria. Você também pode usar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] janela do Designer de projeto, no entanto, para fornecer um certificado fornecido por uma autoridade de certificação.  Consulte também [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  Não é recomendável que o aplicativo ser implantado com um certificado de teste.  

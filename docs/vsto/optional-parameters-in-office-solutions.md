@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b03f6112ebf44a89da3b4d5cbf6f7ff23f54b9c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571974"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parâmetros opcionais em soluções do Office
   Muitos métodos nos modelos de objeto dos aplicativos do Microsoft Office aceitam parâmetros opcionais. Se você usar o Visual Basic para desenvolver uma solução do Office no Visual Studio, você não precisa passar um valor para parâmetros opcionais, como os valores padrão são usados automaticamente para cada parâmetro ausente. Na maioria dos casos, você também pode omitir os parâmetros opcionais em projetos do Visual c#. No entanto, você não pode omitir opcional **ref** parâmetros de `ThisDocument` classe em projetos de nível de documento do Word.  
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="using-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Usando parâmetros opcionais dos métodos na classe ThisDocument em projetos Visual c# no nível de documento para Word  
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Usar parâmetros opcionais dos métodos na classe ThisDocument em projetos Visual c# no nível de documento para Word  
  O modelo de objeto do Word contém vários métodos com opcional **ref** parâmetros que aceitam <xref:System.Object> valores. No entanto, você não pode omitir opcional **ref** parâmetros dos métodos de gerado `ThisDocument` classe no Visual c# projetos no nível de documento para Word. Visual c# permite omitir opcional **ref** parâmetros apenas para os métodos das interfaces, não classes. Por exemplo, o exemplo de código a seguir não é compilado, porque você não pode omitir opcional **ref** parâmetros do <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> método o `ThisDocument` classe.  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
@@ -68,10 +69,10 @@ ms.lasthandoff: 04/16/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Para obter mais informações sobre parâmetros de tipo de valor e referência, consulte [passando argumentos por valor e por referência &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) e [passando parâmetros &#40;C&#35; Guia de programação&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Para obter mais informações sobre parâmetros de tipo de valor e referência, consulte [passar argumentos por valor e por referência &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (para Visual Basic) e [passar parâmetros &#40;C&#35; Guia de programação&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Consulte também  
- [Desenvolvendo soluções do Office](../vsto/developing-office-solutions.md)   
- [Escrevendo código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
+ [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)   
+ [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)  
   
   

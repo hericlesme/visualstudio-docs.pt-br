@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6b2143c7a2fd39cd7a8d2df797f68a706a2ec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4758fbebea12b014f92bed59e851210509cdbb9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573122"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: usar XML trechos de código
 
@@ -22,7 +23,7 @@ Você pode chamar trechos XML usando os dois seguintes comandos no menu de atalh
 
 Depois que o trecho XML foi adicionado ao editor, todos os campos editáveis no trecho estão realçados em amarelo, e o cursor está localizado no primeiro campo editável.
 
-## <a name="insert-snippet"></a>Inserir o trecho de código
+## <a name="insert-snippet"></a>Inserir Trecho
 
 Os procedimentos a seguir descrevem como acessar o **Inserir trecho** comando.
 
@@ -49,7 +50,7 @@ Os procedimentos a seguir descrevem como acessar o **Inserir trecho** comando.
 
 3. Selecione um trecho da lista usando o mouse ou digitando o nome do trecho de código e pressionando **guia** ou **Enter**.
 
-### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Para inserir trechos com o IntelliSense concluir a lista de palavras
+### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Inserir trechos de código através da lista do IntelliSense completar palavra
 
 1. Posicionar o cursor onde você deseja inserir o trecho XML.
 
@@ -79,7 +80,7 @@ Os procedimentos a seguir descrevem como acessar o **Surround With** comando.
 > [!NOTE]
 > O **Surround With** comando também está disponível por meio do atalho de teclado (**Ctrl**+**K**, em seguida, **Ctrl** + **S**).
 
-### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar a bordadura com o menu de contexto
+### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar Surround With no menu de contexto
 
 1. Selecione o texto para colocar no editor XML.
 
@@ -89,7 +90,7 @@ Os procedimentos a seguir descrevem como acessar o **Surround With** comando.
 
 3. Selecione um trecho da lista usando o mouse ou digitando o nome do trecho de código e pressionando **guia** ou **Enter**.
 
-### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Para usar surround com o menu do IntelliSense
+### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Para usar Surround com o menu do IntelliSense
 
 1. Selecione o texto para colocar no editor XML.
 
@@ -99,7 +100,7 @@ Os procedimentos a seguir descrevem como acessar o **Surround With** comando.
 
 3. Selecione um trecho da lista usando o mouse ou digitando o nome do trecho de código e pressionando **guia** ou **Enter**.
 
-## <a name="using-xml-snippets"></a>Usando trechos XML
+## <a name="use-xml-snippets"></a>Use trechos XML
 
 Uma vez que você escolher um trecho XML, o texto de trecho de código é inserido automaticamente a posição do cursor. Todos os campos editáveis no trecho são realçadas, e o primeiro campo editável é automaticamente selecionado. O campo selecionado é convertido.
 
@@ -109,10 +110,10 @@ Somente a primeira instância de um campo dado é editável. Quando esse campo �
 
 Pressionar **Enter** ou **Esc** cancela a edição de campos e retorna o editor normal.
 
-As cores padrão para campos do trecho de código editável podem ser alteradas modificando a configuração de campo de trecho de código no **fontes e cores** painel do **opções** caixa de diálogo. Para obter mais informações, consulte [como: alterar fontes e cores no Editor de](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+As cores padrão para campos do trecho de código editável podem ser alteradas modificando o **campo de trecho de código** definindo no **fontes e cores** painel do **opções** caixa de diálogo. Para obter mais informações, consulte [como: alterar fontes e cores no editor de](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trechos de código XML](../xml-tools/xml-snippets.md)
-- [Como gerenciar um trecho de código de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-- [Como criar trechos de código XML](../xml-tools/how-to-create-xml-snippets.md)
+- [Trechos XML](../xml-tools/xml-snippets.md)
+- [Como: gerar um fragmento de XML de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Como: Crie trechos XML](../xml-tools/how-to-create-xml-snippets.md)

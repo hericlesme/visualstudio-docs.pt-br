@@ -10,21 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2e2b7a9e6511faaa1941d65f6b328a07b10f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ae7595121fcefa36998a88b53aae466d3a726cb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573317"
 ---
-# <a name="integration-with-xml-editor"></a>Integração com editor XML
+# <a name="integration-with-xml-editor"></a>Integração com o editor de XML
 
 O designer de esquema XML está integrado com o editor XML. Se você modificar um arquivo XSD no Editor de XML, a alteração será refletida no [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Se você tiver o [exibição de gráfico](../xml-tools/graph-view.md) ou [exibição do modelo de conteúdo](../xml-tools/content-model-view.md) aberto, a alteração também será refletida lá. Você pode navegar entre o designer de esquema XML e o editor XML das seguintes maneiras:
 
 -   No Editor de XML, clique em um nó e selecione **Mostrar em XML Schema Explorer**.
 
--   Na exibição de gráfico e XML Schema Explorer, clique duas vezes em um nó, ou um nó e selecione **Exibir código**. Na exibição do modelo de conteúdo, clique em um nó e selecione **Exibir código**.
+-   No modo de exibição de gráfico e o **XML Schema Explorer**, clique duas vezes em um nó, ou um nó e selecione **Exibir código**. Na exibição do modelo de conteúdo, clique em um nó e selecione **Exibir código**.
 
-A captura de tela a seguir mostra um esquema XML aberto em XML Schema Explorer. XML Schema Explorer exibe o esquema definido em um modo de exibição de árvore. O editor XML exibe a exibição do texto do nó que está atualmente ativa em XML Schema Explorer.
+Captura de tela a seguir mostra um esquema XML aberto no **XML Schema Explorer**. O **XML Schema Explorer** exibe o esquema definido em uma exibição de árvore. O Editor de XML exibe o texto do nó que está ativo no momento o **XML Schema Explorer**.
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 

@@ -24,11 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c7bd0f38d413fbd3d809773a124699e0e883287d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572160"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desenvolvimento do Office e do SharePoint no Visual Studio
   Você pode estender o Microsoft Office e SharePoint, criando um aplicativo simples ou suplemento que os usuários baixem do [Office Store](https://store.office.com/) ou uma unidade organizacional do catálogo ou criando uma solução baseada no .NET Framework que os usuários de instalar em um computador.  
@@ -49,8 +50,6 @@ ms.lasthandoff: 05/22/2018
  Esses suplementos têm volumes muito pequenos em comparação com suplementos do VSTO e soluções e você pode criá-los usando quase qualquer tecnologia, como JavaScript, HTML5, CSS3 e XML de programação da web.  Para começar, use as ferramentas de desenvolvedor do Office no Visual Studio ou a ferramenta de baseado na web leve codinome Napa Office 365 ferramentas de desenvolvimento, que lhe permite criar projetos, gravar o código e execute-los em um navegador.  
   
  ![Aplicativos para Office e SharePoint modelo conceitual](../vsto/media/officeandsharepointapps2015.png "aplicativos para Office e SharePoint modelo conceitual")  
-  
-
   
 ### <a name="build-an-office-add-in"></a>Criar um suplemento do Office  
  Para estender a funcionalidade do Office, crie um suplemento do Office. Ele é basicamente uma página da Web que é hospedada em um aplicativo do Office como Word, Excel, Outlook e PowerPoint. Seu aplicativo pode adicionar funcionalidade a documentos, planilhas, mensagens de email, compromissos, apresentações e projetos.  

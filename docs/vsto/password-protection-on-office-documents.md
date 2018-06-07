@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5d85f1dc0aa54da22b02259aea372f2ad6dd42ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a278677b40f8da703c7f3287851c2f82fb95a21c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572706"
 ---
-# <a name="password-protection-on-office-documents"></a>Proteção de senha em documentos do Office
+# <a name="password-protection-on-office-documents"></a>Proteção por senha em documentos do Office
   É possível definir uma senha em seus documentos do Microsoft Office Word e pastas de trabalho do Excel do Microsoft Office para que eles não podem ser abertos por alguém que não sabe a senha. Essa opção é chamada de **senha em aberto**.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Consulte também  
  [Proteção de documento em soluções de nível de documento](../vsto/document-protection-in-document-level-solutions.md)   
  [Gerenciamento de direitos de informação e visão geral de extensões de código gerenciado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Como: permitir que o código em execução atrás de documentos com permissões restritas](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [Projetando e criando soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Como: permitir que o código seja executado atrás de documentos com permissões restritas](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

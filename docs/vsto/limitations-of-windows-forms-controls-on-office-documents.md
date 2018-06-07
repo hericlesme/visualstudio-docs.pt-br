@@ -1,5 +1,5 @@
 ---
-title: Limitações do Windows Forms a controles em documentos do Office | Microsoft Docs
+title: Limitações de controles de Windows Forms em documentos do Office
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572953"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitações de controles dos Windows Forms em documentos do Office
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitações de controles de Windows Forms em documentos do Office
 
 Há algumas diferenças entre os controles de formulários do Windows que são adicionados a documentos do Microsoft Office Word ou planilhas do Excel do Microsoft Office e controles de formulários do Windows que são adicionados ao Windows Forms. Por exemplo, quando você adiciona um <xref:Microsoft.Office.Tools.Word.Controls.Button> controlar como um documento, propriedades <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, e <xref:System.Windows.Forms.Control.TabIndex> não se comportar como esperado.
 
@@ -35,7 +36,7 @@ Muitas dessas diferenças são causadas pela maneira que os controles são hospe
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
-## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Limitações de métodos e propriedades de controles de formulários do Windows
+## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Limitações de métodos e propriedades de controles de Windows Forms
 
 Há vários métodos e propriedades de controles de formulários do Windows que não funcionam da mesma forma em um documento como fariam em um formulário do Windows e, portanto, é recomendável que elas não usada. Por exemplo, definir propriedades como <xref:System.Windows.Forms.Control.Dock> e <xref:System.Windows.Forms.Control.Anchor> só afeta a posição do controle em relação à caixa de controles ActiveX, em vez do documento. A seguir está uma lista de métodos sem suporte e as propriedades de controles de formulários do Windows para o Word e Excel:
 
@@ -66,7 +67,7 @@ Você também não é possível definir o <xref:System.Windows.Forms.Control.Lef
 
 - Você pode adicionar um controle de formulários do Windows para um documento do Word em tempo de design. Você pode alterar isso, modificando o controle no designer.
 
-## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Diferenças em controles dos Windows Forms em documentos do Office
+## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Diferenças em controles de Windows Forms em documentos do Office
 
 Controles de formulários do Windows geralmente têm o mesmo comportamento em um documento do Office como eles em um formulário do Windows, mas existem algumas diferenças. A tabela a seguir descreve as diferenças que existem para controles de Windows Forms em documentos do Office.
 
@@ -83,19 +84,19 @@ Controles de formulários do Windows geralmente têm o mesmo comportamento em um
 |Redimensionamento de controle|Se você redimensiona um controle no documento usando um dos oito alças de dimensionamento, as novas dimensões do controle não são refletidas no **propriedades** janela até que o controle é remarcado.|
 |Comportamento de controle|Controles em uma planilha do Excel podem se comportar de forma imprevisível quando a janela de planilha é dividida. Por exemplo, acesso a um <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> na planilha pode estar disponível apenas em uma das janelas.|
 |Nomeação de controle|Você não pode usar palavras reservadas para controles de nome. Por exemplo, se você adicionar um <xref:Microsoft.Office.Tools.Excel.Controls.Button> em uma planilha e altere o nome para **sistema**, erros ocorrem quando você compilar o projeto.|
-|Programaticamente, adicionando controles|Não use o construtor do controle para adicionar um controle para o documento em tempo de execução. Em vez disso, use os métodos auxiliares fornecidos pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Por exemplo, usar o <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> para adicionar um botão em uma planilha. Se você quiser adicionar um controle que não há suporte para esses métodos auxiliares, você pode usar o método AddControl. Para obter mais informações, consulte [adicionando controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Programaticamente, adicionando controles|Não use o construtor do controle para adicionar um controle para o documento em tempo de execução. Em vez disso, use os métodos auxiliares fornecidos pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Por exemplo, usar o <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> para adicionar um botão em uma planilha. Se você quiser adicionar um controle que não há suporte para esses métodos auxiliares, você pode usar o `AddControl` método. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).|
 |Controles de cópias|Se você copiar um controle de formulários do Windows e cole-o em um documento em tempo de execução, um contêiner vazio controle ActiveX será colado no documento. O controle de formulários do Windows não aparece no novo local e código atrás do controle original não é copiado para o contêiner de controle ActiveX.|
 
 ## <a name="limitations-in-document-level-projects"></a>Limitações no nível de documento
 
 Algumas limitações do uso de controles de Windows Forms em documentos são exclusivas a projetos no nível do documento.
 
-### <a name="control-support-at-design-time"></a>Suporte de controle em tempo de Design
+### <a name="control-support-at-design-time"></a>Suporte de controle em tempo de design
 
 Determinados controles de formulários do Windows são removidos do **caixa de ferramentas** quando uma planilha do Excel ou um documento do Word é aberto no designer do Visual Studio. Isso é devido a limitações técnicas ou porque a funcionalidade já está disponível no Word ou Excel. Suportam a todos os controles de formulários do Windows e outros componentes que aparecem em projetos do Excel e Word o **caixa de ferramentas** quando o documento tem o foco, e você também pode adicionar controles de terceiros para uma planilha ou documento.
 
 > [!NOTE]
-> Todos os controles são removidos do **caixa de ferramentas** quando um documento está protegido. Para obter informações sobre proteção de documentos, consulte [proteção de documentos no nível do documento soluções](../vsto/document-protection-in-document-level-solutions.md).
+> Todos os controles são removidos do **caixa de ferramentas** quando um documento está protegido. Para obter informações sobre proteção de documentos, consulte [proteção em nível de documento soluções do documento](../vsto/document-protection-in-document-level-solutions.md).
 
 > [!NOTE]
 > Controles de terceiros devem ter o <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo definido como **true** para ser usada em uma solução do Office.
@@ -178,13 +179,13 @@ Os controles e componentes a seguir não estão disponíveis no **caixa de ferra
 
 - <xref:System.Windows.Forms.ToolStripPanel>
 
-### <a name="support-for-legacy-activex-controls"></a>Suporte para controles do ActiveX herdado
+### <a name="support-for-legacy-activex-controls"></a>Suporte para controles ActiveX herdados
 
 Se você criar um projeto do Office de nível de documento que usa um documento do Word existente ou a pasta de trabalho do Excel que contém os controles ActiveX, a funcionalidade dos controles ActiveX não é perdida; No entanto, não há nenhum suporte para a adição de novos controles ActiveX para seus documentos no Visual Studio. Por exemplo, se o seu documento do Word tem um botão do **controle** caixa de ferramentas que executa uma macro Visual Basic for Applications (VBA), ele continuará a executar a macro depois que o documento foi usado em um projeto do Office. No entanto, é recomendável que você remova os controles ActiveX e macros VBA e substituí-los com controles de formulários do Windows e código gerenciado.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
-- [Visão geral de controles do Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Adicionando controles a documentos do Office no tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Como adicionar controles do Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Controles de formulários do Windows na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [Como: adicionar controles de Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

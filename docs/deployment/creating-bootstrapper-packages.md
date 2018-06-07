@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d3cc80a6ca29583fdc445b507aeb8f87267459d8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572719"
 ---
 # <a name="create-bootstrapper-packages"></a>Criar pacotes de bootstrapper
 O programa de instalação é um instalador genérico que pode ser configurado para detectar e instalar componentes redistribuíveis como arquivos do Windows Installer (.msi) e programas executáveis. O instalador também é conhecido como bootstrapper. Ele é programado por um conjunto de manifestos XML que especificam os metadados para gerenciar a instalação do componente.  Cada componente redistribuível ou pré-requisito, que aparece no **pré-requisitos** caixa de diálogo de ClickOnce é um pacote de bootstrapper. Um pacote de bootstrapper é um grupo de diretórios e arquivos que contém arquivos de manifesto que descrevem como o pré-requisito deve ser instalado. 
@@ -86,7 +87,7 @@ A tabela a seguir mostra as propriedades que são preenchidas automaticamente pe
 |ApplicationName|O nome do aplicativo.|  
 |ProcessorArchitecture|O processador e bits por palavra da plataforma de destino de um executável. Os valores incluem o seguinte:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|O número de versão para os sistemas operacionais Microsoft Windows 95, Windows 98 ou Windows ME. A sintaxe da versão é Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).xaspx)|O número de versão para os sistemas operacionais Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. A sintaxe da versão é Major.Minor.ServicePack.|  
+|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|O número de versão para os sistemas operacionais Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. A sintaxe da versão é Major.Minor.ServicePack.|  
 |[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|A versão de assembly do Windows Installer (msi.dll) executado durante a instalação.|  
 |[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Essa propriedade será definida se o usuário tiver privilégios de administrador. Os valores são verdadeiro ou falso.|  
 |InstallMode|O modo de instalação indica de onde o componente precisa ser instalado. Os valores incluem o seguinte:<br /><br /> -HomeSite - pré-requisitos estão instalados no site do fornecedor.<br />-SpecificSite - pré-requisitos estão instalados no local que você selecionar.<br />-SameSite - pré-requisitos estão instalados no mesmo local que o aplicativo.|  

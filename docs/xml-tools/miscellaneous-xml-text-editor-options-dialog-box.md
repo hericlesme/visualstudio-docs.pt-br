@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dfc0a4e3841f30c2be81b60b2e86d9fd29bb801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571764"
 ---
-# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Caixa de diálogo Diversos, XML, Editor de Texto, Opções
+# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Diversos, XML, Editor de texto, caixa de diálogo Opções
 
 Esta caixa de diálogo permite que você altere a automático e as configurações de esquema para o editor XML. Você pode acessar o **opções** na caixa de diálogo de **ferramentas** menu.
 
@@ -24,7 +25,7 @@ Esta caixa de diálogo permite que você altere a automático e as configuraçõ
 > Essas configurações estão disponíveis quando você seleciona o **Editor de texto** pasta, o **XML** pasta e, em seguida, o **diversos** opção o **opções** caixa de diálogo.
 
 
-## <a name="auto-insert"></a>AutoInserção
+## <a name="auto-insert"></a>Inserir automaticamente
  **Fechar marcas**
 
  Se a configuração de autocompletar é verificada, o editor adiciona automaticamente uma marca de fim quando você digita um sinal de maior (>) para fechar uma tag de início, se a marca não é fechada. Este é o comportamento padrão.
@@ -70,5 +71,5 @@ Esta caixa de diálogo permite que você altere a automático e as configuraçõ
 
 ## <a name="see-also"></a>Consulte também
 
-- [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)
+- [Propriedades de documento XML, janela de propriedades](../xml-tools/xml-document-properties-properties-window.md)
 - [Componentes do editor de XML](../xml-tools/xml-editor-components.md)

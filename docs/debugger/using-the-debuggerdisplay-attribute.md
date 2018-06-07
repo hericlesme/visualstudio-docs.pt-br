@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573239"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usando o atributo DebuggerDisplay
 O [classe DebuggerDisplayAttribute](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controla como um objeto, propriedade ou campo é exibido nas janelas de variáveis do depurador. Esse atributo pode ser aplicado aos tipos delegados, propriedades, campos e assemblies.  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+O ", nq" sufixo informa o avaliador de expressão para remover as aspas ao exibir o valor final (nq = sem aspas). 
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra como usar `DebuggerDisplay` junto com `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando exibido em uma janela de variáveis do depurador, como o **inspecionar** janela, ela produz uma expansão parecida com esta:  
