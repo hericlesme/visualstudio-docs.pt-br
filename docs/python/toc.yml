@@ -49,6 +49,18 @@
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: 6 – Usar o modelo Pesquisa Projeto Web Django
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: Conheça o Flask no Visual Studio
+      items:
+        - name: 1 – Criar um projeto e solução
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: 2 – Criar um aplicativo Flask
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3 – Servir arquivos estáticos e adicionar páginas
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: 4 – Usar o modelo Projeto Web Flask
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: 5 – Usar o modelo Pesquisas Projeto Web Flask
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: Conceitos
   items:
     - name: Projetos do Python

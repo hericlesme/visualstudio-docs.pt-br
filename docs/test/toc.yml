@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Criar um suplemento para o visualizador de resultados
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: Usar a automação da interface do usuário para testar o código
+- name: Automação de teste de interface do usuário
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 'Instruções passo a passo: criando, editando e mantendo um teste de IU codificado'
+    - name: 'Passo a passo: criar, editar e manter um teste de IU codificado'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: Testar aplicativos Windows UWP com testes de interface do usuário codificados
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: Testar aplicativos Windows UWP e 8.1 do Windows Phone com testes de UI codificados
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: Definir uma propriedade de automação exclusiva para controles UWP para teste
+    - name: Testar aplicativos UWP com testes de IU codificados
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: Definir uma propriedade de automação exclusiva para controles UWP
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Usar controles HTML5 em testes de IU codificados
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: Criar um teste de IU codificado controlado por dados
       href: creating-a-data-driven-coded-ui-test.md
-    - name: Fazer testes de IU codificados esperarem por eventos específicos durante a reprodução
+    - name: Aguardar eventos específicos durante a reprodução
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: Usar navegadores da Web diferentes com testes de IU codificados
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: Habilitar testes de IU codificado dos controles
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: Configurações e plataformas compatíveis para testes de IU codificados e gravações das ações
+    - name: Configurações e plataformas com suporte
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: Estender testes de IU codificados e gravações da ação para dar suporte ao Microsoft Excel
+    - name: Estender a estrutura de teste de IU codificado
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: Complemento do Excel de amostra para testes de IU codificado
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: Interface de comunicador do Excel de amostra
-          href: sample-excel-communicator-interface.md
-        - name: Extensão de teste de IU codificado de amostra para Excel
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: 'Extensão de exemplo do Excel: classe ExtensionPackage'
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: 'Extensão de exemplo do Excel: classe TechnologyManager'
-              href: sample-excel-extension-technologymanager-class.md
-            - name: 'Extensão de exemplo do Excel: classe PropertyProvider'
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: 'Extensão do Excel de amostra: classes de elemento'
-              href: sample-excel-extension-element-classes.md
-            - name: 'Extensão de exemplo do Excel: classe ActionFilter'
-              href: sample-excel-extension-actionfilter-class.md
 - name: Lab Management de teste
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
