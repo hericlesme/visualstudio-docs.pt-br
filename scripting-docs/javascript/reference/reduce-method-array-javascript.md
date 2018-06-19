@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264770"
 ---
 # <a name="reduce-method-array-javascript"></a>Método reduce (Array) (JavaScript)
 Chama a função de retorno de chamada especificada para todos os elementos em uma matriz. O valor retornado da função de retorno de chamada é o resultado acumulado e é fornecido como um argumento na próxima chamada para a função de retorno de chamada.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482068"
 ---
 # <a name="hlsl-shader-debugger"></a>Depurador de sombreador HLSL
 O depurador HLSL no analisador de gráficos do Visual Studio ajuda a entender o funcionamento do seu código de sombreador HLSL sob condições reais do seu aplicativo.  

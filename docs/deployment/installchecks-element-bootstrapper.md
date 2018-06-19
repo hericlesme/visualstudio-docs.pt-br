@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566167"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (Bootstrapper)
 O `InstallChecks` elemento dá suporte a partir de uma variedade de testes para o computador local para garantir que todos os pré-requisitos apropriados para um aplicativo foi instalados.  

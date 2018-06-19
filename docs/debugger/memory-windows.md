@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477541"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Usar as janelas de memória no depurador do Visual Studio
 O **memória** janela fornece uma exibição no espaço de memória que é usado pelo seu aplicativo. O **inspecionar** janela, **QuickWatch** caixa de diálogo, **Autos** janela, e **locais** janela Mostrar o conteúdo de variáveis, que são armazenados em locais específicos na memória. Mas o **memória** janela mostra a imagem em larga escala. Esta exibição pode ser conveniente para examinar grandes partes de dados (buffers ou grandes cadeias de caracteres, por exemplo) que não são exibidas corretamente nas outras janelas. No entanto, o **memória** janela não é limitada a exibir dados. Ela exibirá tudo no espaço de memória, não importa se o conteúdo for dados, código ou bits aleatórios de lixo na memória não atribuída.  

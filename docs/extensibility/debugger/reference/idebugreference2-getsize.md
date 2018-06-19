@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122269"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 Obtém o tamanho, em bytes, do valor de referência. Reservado para uso futuro.  

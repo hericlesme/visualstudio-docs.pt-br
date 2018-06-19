@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472052"
 ---
 # <a name="1x1-viewport-size-variant"></a>Variação de tamanho do visor 1x1
 Reduz as dimensões do visor em todos os destinos de renderização para 1 x 1 pixels.  

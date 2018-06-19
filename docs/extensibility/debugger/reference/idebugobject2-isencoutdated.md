@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122516"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 Este método determina se o status de editar e continuar do objeto ou do contêiner pai está desatualizado. O avaliador de expressão personalizada não implementa esse método e sempre retorna `E_NOTIMPL`.  

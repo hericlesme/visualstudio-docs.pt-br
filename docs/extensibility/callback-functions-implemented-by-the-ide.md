@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109682"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funções de retorno de chamada implementadas pelo IDE
 Para fazer a integração com o ambiente de desenvolvimento integrado (IDE) como contínua possível e para fornecer uma experiência unificada do usuário final, o plug-in de controle de origem pode usar funções de retorno de chamada que são implementadas pelo IDE. O plug-in pode chamar essas funções em momentos apropriados durante uma operação de controle de origem para passar informações para o IDE; o IDE pode exibir essas informações como os elementos inseridos na sua UI nativo. O usuário tem uma experiência menos fragmentada neste cenário que se o plug-in empregado sua própria interface do usuário.  

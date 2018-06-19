@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122750"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 Obtém o programa no qual um thread está em execução.  

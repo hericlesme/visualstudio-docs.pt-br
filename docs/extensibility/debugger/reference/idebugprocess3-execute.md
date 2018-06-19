@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31118733"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Continua a execução desse processo de um estado parado. Qualquer estado de execução anterior (como uma etapa) está desmarcado e executar novamente o processo é iniciado.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108148"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Criando uma extensão com um comando de Menu
 Este passo a passo mostra como criar uma extensão com um comando de menu que inicia o bloco de notas.  
