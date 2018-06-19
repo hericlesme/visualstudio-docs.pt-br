@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132323"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Criando o Editor de núcleo usando a API herdado
 O editor é responsável por funções, como inserção, exclusão, copiar e colar de edição de texto. Ele combina essas funções com aqueles fornecidos pelos serviços de idioma, como cor de texto, recuo e conclusão de instrução do IntelliSense.  

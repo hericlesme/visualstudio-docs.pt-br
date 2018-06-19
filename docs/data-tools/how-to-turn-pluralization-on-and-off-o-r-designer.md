@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921677"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Como: ative em pluralization e off (Object Relational Designer)
 Por padrão, quando você arrastar objetos de banco de dados que têm nomes que terminam em s ou propriedades de **Server Explorer**/**Pesquisador de objetos de banco de dados** até o [LINQ to SQL Tools no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), os nomes das classes de entidades geradas são alterados de plural a forma singular. Isso é feito a representa mais precisamente o fato que a classe instanciado de entidade mapeia para um único registro de dados. Por exemplo, adicione uma tabela de clientes para os resultados de [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] em uma classe de entidade chamada Cliente porque a classe conterá dados para apenas um único cliente.

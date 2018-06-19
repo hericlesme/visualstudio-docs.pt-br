@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132917"
 ---
 # <a name="options-and-options-pages"></a>Opções e páginas de opções
 Clicando em **opções** no **ferramentas** menu abre o **opções** caixa de diálogo. As opções na caixa de diálogo são coletivamente chamadas de páginas de opções. O controle de árvore no painel de navegação inclui as categorias de opções, e cada categoria tem páginas de opções. Quando você selecionar uma página, suas opções são exibidas no painel direito. Essas páginas permitem que você altere os valores das opções que determinam o estado de um VSPackage.  

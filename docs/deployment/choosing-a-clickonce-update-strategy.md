@@ -23,6 +23,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065683"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Escolhendo uma estratégia de atualização do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode fornecer atualizações automáticas para o aplicativo. Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo lê periodicamente seu arquivo de manifesto de implantação para ver se há atualizações para o aplicativo. Se disponível, a nova versão do aplicativo será baixada e executada. Para proporcionar eficiência, somente os arquivos que foram alterados serão baixados.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33995774"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Alterar os locais de instalação no Visual Studio 2017
 

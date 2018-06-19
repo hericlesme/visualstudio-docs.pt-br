@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134429"
 ---
 # <a name="delayed-document-loading"></a>Atraso de carregamento de documentos
 Quando um usuário reabre uma solução do Visual Studio, a maioria dos documentos associados não é carregada imediatamente. O quadro de janela de documento é criado em um estado pendente de inicialização e um documento de espaço reservado (chamado de um quadro de stub) é colocado na tabela de documento em execução (RDT).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132728"
 ---
 # <a name="editor-imports"></a>Editor de importações
 Você pode importar um número de serviços de editor, fábricas e os agentes que fornecem a extensão com tipos diferentes de acesso para o editor de núcleo. Por exemplo, você pode importar o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> fornecer um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> para um determinado tipo de conteúdo. (Este navegador permite que executar diferentes tipos de pesquisas em um buffer de texto).  

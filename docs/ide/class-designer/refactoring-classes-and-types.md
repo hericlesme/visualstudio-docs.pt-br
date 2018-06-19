@@ -26,6 +26,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957427"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refatorar classes e tipos no Designer de Classe
 

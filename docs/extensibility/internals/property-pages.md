@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133254"
 ---
 # <a name="property-pages"></a>Páginas de propriedade
 Usuários podem exibir e alterar propriedades de configuração dependente e - independentes de projeto usando as páginas de propriedade. Um **páginas de propriedade** botão é habilitado no **propriedades** janela ou na barra de ferramentas do Gerenciador de soluções para objetos que fornecem um modo de exibição de página de propriedade do objeto selecionado. Páginas de propriedade são criadas pelo ambiente e estão disponíveis para projetos e soluções. Mas, no entanto, também é possível tornar disponíveis para itens de projeto que tornam o usam de propriedades dependentes de configuração. Esse recurso pode ser usado quando os arquivos dentro de um projeto exigem configurações de comutador de compilador diferentes ser compilado corretamente.  

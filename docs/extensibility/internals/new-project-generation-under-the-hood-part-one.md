@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133754"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nova geração de projeto: Nos bastidores, parte 1
 Já pensou sobre como criar seu próprio tipo de projeto? Saber o que realmente acontece quando você cria um novo projeto? Vamos dar uma olhada nos bastidores e ver o que realmente está acontecendo.  

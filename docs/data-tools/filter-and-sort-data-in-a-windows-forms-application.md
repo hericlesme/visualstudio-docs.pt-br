@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924963"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrar e classificar dados em um aplicativo do Windows Forms
 Filtrar dados definindo o <xref:System.Windows.Forms.BindingSource.Filter%2A> propriedade com uma expressão de cadeia de caracteres que retorna os registros desejados.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126839"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelos do Visual Studio)
 Especifica se o **procurar** botão está disponível no **novo projeto** caixa de diálogo, para que os usuários podem modificar facilmente o diretório padrão onde um novo projeto é salvo.  

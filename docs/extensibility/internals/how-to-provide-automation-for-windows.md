@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129466"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Como: fornecem automação para Windows
 Você pode fornecer automação para o documento e janelas de ferramenta. Fornecimento de automação é recomendável sempre que você deseja disponibilizar os objetos de automação em uma janela, e o ambiente ainda não fornece um objeto de automação prontas, como ocorre com uma lista de tarefas.

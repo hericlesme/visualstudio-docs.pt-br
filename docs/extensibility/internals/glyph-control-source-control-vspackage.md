@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130710"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Controle de glifo (VSPackage de controle de origem)
 Parte da integração profunda disponível para VSPackages do controle de origem é a capacidade de exibir suas próprias glifos para indicar o status dos itens no controle de origem.  

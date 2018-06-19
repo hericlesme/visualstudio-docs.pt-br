@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137762"
 ---
 # <a name="what39s-new-in-source-control"></a>O que&#39;novo no controle de origem
 Em [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] você pode fornecer uma solução de controle de origem profundamente integrado ao implementar um controle de origem VSPackage. Esta seção descreve os recursos de controle de origem VSPackages e fornece uma visão geral das etapas de implementação.  

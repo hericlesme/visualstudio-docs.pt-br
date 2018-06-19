@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148373"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Passo a passo: Usando um comando do Shell com uma extensão de Editor
 De um VSPackage, você pode adicionar recursos, como comandos de menu para o editor. Este passo a passo mostra como adicionar um adorno em uma exibição de texto no editor de invocando um comando de menu.  

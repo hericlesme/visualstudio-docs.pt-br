@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128059"
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
 O `GuidSymbol` elemento contém o GUID do par GUID:ID que representa um menu, o grupo ou o comando. A ID vêm de um `IDSymbol` elemento o `GuidSymbol` elemento. O `GuidSymbol` elemento tem um `name` atributo que forneça um nome amigável para o GUID, que está contido no `value` atributo.  

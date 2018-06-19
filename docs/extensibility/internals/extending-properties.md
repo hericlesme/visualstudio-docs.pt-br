@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131656"
 ---
 # <a name="extending-properties"></a>Estendendo propriedades
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **propriedades** janela é um navegador de propriedade universal para componentes COM e COM+ e dá suporte a todos os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produtos. O **propriedades** janela funciona com `ITypeInfo` COM+ metadados para listar as propriedades de tempo de design para o objeto atualmente selecionado em qualquer outra janela no ambiente de desenvolvimento integrado (IDE) e informações de tipo.  

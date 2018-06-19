@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952294"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como interceptar um clique em uma forma ou um decorador
 Os procedimentos a seguir demonstram como interceptar um clique em uma forma ou um decorador de ícone. Pode interceptar cliques, cliques duplos, arrasta, e outros gestos e fazer com que o elemento responder.

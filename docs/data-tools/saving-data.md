@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923423"
 ---
 # <a name="saving-data"></a>Salvar Dados
 Salvar dados é que o processo de persistir alterado dados no modelo de dados do aplicativo para o armazenamento de dados original, geralmente um banco de dados relacional, como o SQL Server.

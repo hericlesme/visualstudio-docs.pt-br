@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923384"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Como: criar uma associação entre classes LINQ to SQL (Object Relational Designer)
 As associações entre classes de entidade no [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] são análogas às relações entre tabelas em um banco de dados. Você pode criar associações entre classes de entidade usando o **Editor de associação** caixa de diálogo.

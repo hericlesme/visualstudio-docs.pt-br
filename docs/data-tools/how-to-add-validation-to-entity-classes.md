@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923119"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Como: adicionar validação a classes de entidade
 *Validando* classes de entidade é o processo de confirmar que os valores inseridos em objetos de dados estão em conformidade com as restrições no esquema de um objeto e também as regras estabelecidas para o aplicativo. Validar dados antes de enviar atualizações para o base de dados subjacente é uma boa prática que reduz erros. Também reduz o número potencial de processamentos entre um aplicativo e o base de dados.

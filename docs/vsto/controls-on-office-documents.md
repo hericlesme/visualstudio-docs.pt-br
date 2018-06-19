@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263131"
 ---
 # <a name="controls-on-office-documents"></a>Controles em documentos do Office
   Você pode usar as ferramentas de desenvolvimento do Office no Visual Studio para adicionar controles de formulários do Windows e *hospedar controles* para documentos do Word e planilhas do Excel. Controles de host são objetos que estendem a vários objetos de interface de usuário nos modelos de objeto do Word e Excel.  

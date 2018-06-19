@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134572"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>O scanner e o analisador de serviço de linguagem herdados
 O analisador é o núcleo do serviço de linguagem. As classes de idioma gerenciado pacote MPF (estrutura) exigem um analisador de linguagem para selecionar as informações sobre o código que está sendo exibido. Um analisador separa o texto em símbolos lexicais e identifica os tokens de tipo e a funcionalidade.  

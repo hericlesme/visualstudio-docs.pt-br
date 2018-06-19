@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268354"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Como: validar dados quando uma nova linha é adicionada a um controle ListObject
   Os usuários podem adicionar novas linhas para um <xref:Microsoft.Office.Tools.Excel.ListObject> controle associado a dados. Você pode validar os dados do usuário antes de confirmar as alterações para a fonte de dados.  

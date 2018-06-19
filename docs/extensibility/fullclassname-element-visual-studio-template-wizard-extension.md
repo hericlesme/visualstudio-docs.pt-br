@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127667"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (Extensão do Assistente de Modelo do Visual Studio)
 O nome totalmente qualificado da classe que implementa o `IWizard` interface.  

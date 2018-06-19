@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918524"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar e limpar projetos e soluções no Visual Studio
 Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para ver um tutorial passo a passo, veja [Instruções passo a passo: criação de um aplicativo](../ide/walkthrough-building-an-application.md).

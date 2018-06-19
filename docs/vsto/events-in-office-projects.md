@@ -40,6 +40,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448708"
 ---
 # <a name="events-in-office-projects"></a>Eventos em projetos do Office
   Cada modelo de projeto do Office automaticamente gera vários manipuladores de eventos. Manipuladores de eventos para personalizações no nível do documento são ligeiramente diferentes de manipuladores de eventos para suplementos do VSTO.  

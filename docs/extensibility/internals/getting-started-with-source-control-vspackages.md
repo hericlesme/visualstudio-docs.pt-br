@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133404"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Guia de Introdução ao VSPackages de controle do código-fonte
 Um VSPackage de controle de origem é uma alternativa mais avançada para o plug-in de controle de origem. (Consulte [criar um plug-in de controle de origem](../../extensibility/internals/creating-a-source-control-plug-in.md) para obter mais informações sobre a fonte de plug-ins de controle.) Um VSPackage de controle de origem permite controle completo sobre o modelo de controle de origem, recursos e interface do usuário (IU), e ela se integra a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente como um VSPackage.  

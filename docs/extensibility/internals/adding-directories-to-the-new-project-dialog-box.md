@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128063"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Adicionando pastas a caixa de diálogo Novo projeto
 Quando você criar novos tipos de projeto, você também pode registrar um novo diretório no **novo projeto** caixa de diálogo para exibi-los para uso como modelos. O exemplo de código a seguir explica como registrar um novo diretório, também conhecido como um nó. No exemplo, modelos expostos pelo VSPackage CLSID_Package são registrados. Como resultado, o lado esquerdo do **novo projeto** caixa de diálogo oferece o nó adicional, com um nome determinado pelo recurso Folder_Label_ResID. Esse recurso é carregado do DLL de satélite VSPackage.  

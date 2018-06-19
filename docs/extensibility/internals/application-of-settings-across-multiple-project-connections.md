@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129200"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplicativo de configurações em várias conexões de projeto
 Um plug-in de controle de origem criados usando o código-fonte controle plug-in API 1.2, pode usar uma operação em lote para executar a mesma operação de controle de origem em vários contextos de conexão ou de vários projetos. Lotes podem ser usados para eliminar a redundância, caixas de diálogo da experiência do usuário por projeto.  

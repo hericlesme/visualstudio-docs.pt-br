@@ -11,6 +11,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33884293"
 ---
 # <a name="updating-visual-studio-for-mac"></a>Atualizando o Visual Studio para Mac
 

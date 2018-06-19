@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137334"
 ---
 # <a name="sccuncheckout-function"></a>Função SccUncheckout
 Essa função Desfaz uma operação de check-out anterior, restaurando assim o conteúdo do arquivo selecionado ou arquivos para o estado antes do check-out. Todas as alterações feitas desde o check-out no arquivo serão perdidas.  

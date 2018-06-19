@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142180"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Essa é uma função de retorno de chamada fornecida para o [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) função para atualizar um conjunto de diretórios e (opcionalmente) os nomes de arquivo para descobrir que estão sob o controle de origem.  

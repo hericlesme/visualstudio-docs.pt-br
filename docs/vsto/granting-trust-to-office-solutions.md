@@ -23,6 +23,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447239"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Relação de confiança de concessão para soluções do Office
   Relação de confiança de concessão para meios de soluções Office modificando a política de segurança de cada computador de destino para o conjunto de solução, o manifesto do aplicativo, o manifesto de implantação e documento de confiança. Relação de confiança pode ser concedida para a solução do Office por você ou o usuário final.  

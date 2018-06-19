@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265322"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Chamar o código em suplementos do VSTO de outras soluções do Office
   Você pode expor um objeto no seu suplemento do VSTO para outras soluções, incluindo outras soluções do Microsoft Office. Isso é útil se o suplemento do VSTO fornece um serviço que você deseja habilitar outras soluções para usar. Por exemplo, se você tiver um suplemento do VSTO para o Microsoft Office Excel que executa cálculos nos dados financeiros de um serviço Web, outras soluções podem executar esses cálculos chamando o suplemento do Excel VSTO em tempo de execução.  

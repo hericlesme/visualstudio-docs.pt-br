@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129034"
 ---
 # <a name="document-windows"></a>Janelas de documento
 No Visual Studio, um *janela de documento* é uma janela de quadros filho que está associada uma janela de interface de documentos múltiplos (MDI). Janelas de documento são geralmente usadas para a exibição e a modificação do código-fonte ou texto, mas também podem hospedar outros tipos funcionais. Janelas de documento:  

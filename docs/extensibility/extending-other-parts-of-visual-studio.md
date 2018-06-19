@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133656"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Estendendo a outras partes do Visual Studio
 Há muitos mais partes da IU do Visual Studio que você pode estender. Aqui, mostramos alguns.  

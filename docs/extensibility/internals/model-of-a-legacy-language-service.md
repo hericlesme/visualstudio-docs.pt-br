@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131565"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de um serviço de linguagem herdado
 Um serviço de idioma define os elementos e recursos para um idioma específico e é usado para fornecer o editor com informações específicas para esse idioma. Por exemplo, o editor precisa conhecer os elementos e as palavras-chave da linguagem para dar suporte a cores de sintaxe.  

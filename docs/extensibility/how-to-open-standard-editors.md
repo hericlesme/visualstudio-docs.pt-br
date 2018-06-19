@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129252"
 ---
 # <a name="how-to-open-standard-editors"></a>Como: abrir editores padrão
 Quando você abrir um editor padrão, deixar o IDE determinar um editor padrão para um tipo de arquivo designado, em vez de especificar um editor específico do projeto para o arquivo.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141682"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Suporte para o SDK do Visual Studio
 Várias opções de suporte estão disponíveis para clientes que tenham perguntas sobre como estender o ambiente de desenvolvimento integrado (IDE) do Visual Studio.  

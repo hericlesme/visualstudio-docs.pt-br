@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128242"
 ---
 # <a name="editor-factories"></a>Fábricas de editor
 Uma fábrica de editor cria objetos do editor e o coloca em um quadro de janela, conhecido como um modo de exibição físico. Ele cria os dados de documento e objetos de exibição de documento que são necessários para criar editores e designers. Uma fábrica de editor é necessário para criar o editor de núcleo do Visual Studio e qualquer editor padrão. Um editor personalizado também pode ser criado com uma fábrica de editor.  

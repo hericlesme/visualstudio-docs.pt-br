@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127090"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: usar o Log de atividades
 VSPackages pode gravar mensagens no log de atividade. Esse recurso é especialmente útil para depuração VSPackages em ambientes de varejo.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922647"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserir novos registros em um banco de dados
 Para inserir novos registros em um banco de dados, você pode usar o `TableAdapter.Update` método, ou um dos métodos DBDirect do TableAdapter (especificamente o `TableAdapter.Insert` método). Para obter mais informações, consulte [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
