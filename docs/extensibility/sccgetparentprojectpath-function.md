@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142021"
 ---
 # <a name="sccgetparentprojectpath-function"></a>Função SccGetParentProjectPath
 Esta função determina o caminho do projeto pai de um projeto especificado. Esta função é chamada quando o usuário adiciona um projeto do Visual Studio para controle de origem.  

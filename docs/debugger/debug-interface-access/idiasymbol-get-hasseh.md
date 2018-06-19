@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463046"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 Recupera um sinalizador que especifica se a função contém qualquer [manipulação de exceções estruturado (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (por exemplo, Try /\__except blocos).  

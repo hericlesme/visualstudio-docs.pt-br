@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142387"
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto do VSIX
 Você pode usar o modelo de projeto do VSIX para incluir uma ou mais extensões do Visual Studio em um projeto do VSIX e, em seguida, publique o pacote no [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site da Web.  

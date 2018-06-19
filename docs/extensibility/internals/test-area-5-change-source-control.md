@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134328"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de teste 5: Alterar o controle de origem
 Essa área de plug-in de teste de controle de origem abrange alterando o controle de origem por meio de **alterar controle de origem** comando.  

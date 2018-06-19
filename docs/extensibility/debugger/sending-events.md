@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125741"
 ---
 # <a name="sending-events"></a>Envio de eventos
 O mecanismo para comunicação entre o depurador e o mecanismo de depuração (DE) é um modelo de evento com base em DCOM. Os eventos são enviados como objetos COM, e cada evento tem parâmetros que especificam o seguinte:  

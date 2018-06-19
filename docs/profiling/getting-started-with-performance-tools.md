@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576437"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introdução às ferramentas de desempenho
 Esta seção fornece uma visão geral dos conceitos e tarefas que você aplicará ao coletar, exibir e analisar o desempenho do código usando as Ferramentas de Desempenho do Visual Studio.  

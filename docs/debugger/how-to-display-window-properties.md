@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473180"
 ---
 # <a name="how-to-display-window-properties"></a>Como exibir Propriedades da Janela
 Para obter mais informações sobre uma janela listada na [exibição Windows](../debugger/windows-view.md), use o [janela caixa de diálogo de propriedades](../debugger/window-properties-dialog-box.md).  

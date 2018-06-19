@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567987"
 ---
 # <a name="logging-in-msbuild"></a>Registrando em logs no MSBuild
 O registro em logs oferece uma maneira de monitorar o andamento de um build. O registro em logs captura eventos de build, mensagens, avisos e erros em um arquivo de log.  

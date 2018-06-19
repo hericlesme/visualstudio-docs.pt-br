@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573753"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Tarefas do MSBuild específicas ao Visual C++
 Tarefas fornecem o código que é executado durante o processo de compilação. Quando o Visual C++ é instalado, as tarefas a seguir estão disponíveis, além das que são instaladas com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obter mais informações, confira [visão geral do MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).  

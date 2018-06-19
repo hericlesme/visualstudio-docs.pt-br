@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146758"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Passo a passo: Exibindo Inforapida dicas de ferramenta
 QuickInfo é um recurso do IntelliSense que exibe as assinaturas de método e descrições de quando um usuário move o ponteiro sobre um nome de método. Você pode implementar recursos de idioma como Inforapida definindo os identificadores para o qual você deseja fornecer Inforapida descrições e, em seguida, criando uma dica de ferramenta para exibir o conteúdo. Você pode definir Inforapida no contexto de um serviço de idioma, você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e exibir Inforapida apenas desse tipo ou Inforapida podem ser exibidos para um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como exibir Inforapida para o tipo de conteúdo "texto".  

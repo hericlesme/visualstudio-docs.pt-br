@@ -25,6 +25,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262027"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Como: destinar a interface de usuário multilíngue do Office
   A Interface de usuário multilíngue (MUI) é um recurso do Microsoft Office que permite que o usuário final para alterar o idioma da interface do usuário (IU). Por exemplo, um usuário final trabalhando com uma interface do usuário em inglês pode alterar o idioma da interface do usuário para espanhol.  

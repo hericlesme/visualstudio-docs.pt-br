@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481470"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Caixa de diálogo Aviso de Código Obsoleto
 Essa caixa de diálogo aparece quando você fez alterações para o nativo de código que **editar e continuar** não foi possível aplicar imediatamente. Como resultado, alguns códigos nativos no quadro de pilhas atual agora está expirado, ou seja, obsoleto. Para obter mais informações, consulte [como: trabalhar com código obsoleto](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  

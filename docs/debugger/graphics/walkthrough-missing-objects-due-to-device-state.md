@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480496"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Instruções passo a passo: objetos ausentes devido ao estado do dispositivo
 Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar um objeto que está ausente devido à configurada incorretamente o estado do dispositivo.  

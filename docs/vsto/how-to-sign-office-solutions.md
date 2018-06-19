@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262185"
 ---
 # <a name="how-to-sign-office-solutions"></a>Como: assinar soluções do Office
   Se você assinar uma solução, você pode conceder confiança para a solução usando o certificado como evidência. Você pode usar o mesmo certificado para várias soluções e todas as soluções serão confiáveis sem atualizações de política de segurança adicional.  

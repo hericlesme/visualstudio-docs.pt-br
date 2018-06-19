@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481821"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar arquivos de despejo com o Visual Studio
 Arquivos de despejo com ou sem heaps; criar um arquivo de despejo de memória. abrir um arquivo de despejo de memória; Localize os binários, o do pdb e o arquivo de origem para um arquivo de despejo.

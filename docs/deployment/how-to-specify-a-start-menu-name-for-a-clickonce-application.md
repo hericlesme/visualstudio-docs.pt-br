@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558861"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Como especificar um nome no menu Iniciar para um aplicativo ClickOnce
 Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo está instalado para utilização online e offline, uma entrada é adicionada para o **iniciar** menu e **adicionar ou remover programas** lista. Por padrão, o nome de exibição é igual ao nome do assembly de aplicativo, mas você pode alterar o nome de exibição, definindo **nome do produto** no **opções de publicação** caixa de diálogo.  

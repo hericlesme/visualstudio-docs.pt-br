@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477869"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
 O documento de Log de gráficos é o registro de eventos de elementos gráficos que ocorreu enquanto o aplicativo estiver em execução em uma sessão de diagnóstico de gráficos. Após ser gravado, você pode examinar o log no analisador de gráficos do Visual Studio para diagnosticar problemas de desempenho e a renderização.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477830"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos de elementos gráficos no analisador de gráficos do Visual Studio para explorar os eventos de Direct3D que foram registrados durante a renderização de um quadro de seu aplicativo ou um jogo.  

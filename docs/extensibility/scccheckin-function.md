@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138848"
 ---
 # <a name="scccheckin-function"></a>Função SccCheckin
 Essa função verifica no anteriormente arquivos com check-out ao sistema de controle de origem, armazenar as alterações e criar uma nova versão. Esta função é chamada com uma contagem e uma matriz de nomes de arquivos para fazer check-in.  

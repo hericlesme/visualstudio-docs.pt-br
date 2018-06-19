@@ -31,6 +31,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065072"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Criando aplicativos ClickOnce para a implantação por terceiros
 Nem todos os desenvolvedores que estão criando as implantações do ClickOnce planeja implantar os próprios aplicativos. Muitas delas basta empacotar seu aplicativo usando o ClickOnce e entregar os arquivos para um cliente, como uma grande empresa. O cliente torna-se de um responsável para hospedar o aplicativo em sua rede. Este tópico discute alguns dos problemas inerentes essas implantações em versões do .NET Framework anteriores à versão 3.5. Em seguida, descreve uma nova solução fornecida usando o novo recurso de "usar o manifesto de confiança" no .NET Framework 3.5. Finalmente, ele conclui com estratégias recomendadas para a criação de implantações do ClickOnce para clientes que ainda estão usando versões mais antigas do .NET Framework.  

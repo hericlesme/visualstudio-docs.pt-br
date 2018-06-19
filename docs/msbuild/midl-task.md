@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575719"
 ---
 # <a name="midl-task"></a>Tarefa MIDL
 Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe. Para obter mais informações, consulte “MIDL Command-Line Reference” (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

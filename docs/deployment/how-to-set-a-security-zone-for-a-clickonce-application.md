@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564542"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Como definir uma zona de segurança para um aplicativo ClickOnce
 Ao definir permissões de segurança para um aplicativo ClickOnce de acesso do código, você precisa iniciar com um conjunto básico de permissões no **segurança** página do **Project Designer**.  

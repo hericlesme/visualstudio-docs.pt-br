@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477724"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Como: alternar entre modos de exibição e o Editor de XML
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480655"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Executar aplicativos UWP no simulador
 O simulador do Visual Studio para aplicativos UWP é um aplicativo de área de trabalho que simula um aplicativo UWP. Normalmente, você deve depurar no computador local, um dispositivo conectado ou um computador remoto. No entanto, em alguns cenários, convém usar o simulador do Visual Studio para emular um tamanho da tela física diferentes e a resolução. Você também pode simular eventos comuns de toque e rotação e simular propriedades de conexão de rede.

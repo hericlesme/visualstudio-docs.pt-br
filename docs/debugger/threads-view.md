@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476891"
 ---
 # <a name="threads-view"></a>Modo de Exibição de Threads
 O modo de exibição de Threads é uma lista simples de todos os threads associados com o windows em seu sistema. A ID do Thread e o nome do módulo para cada thread são mostrados. Os processos não são incluídos, mas você pode localizar facilmente o processo que possui um thread selecionado.  

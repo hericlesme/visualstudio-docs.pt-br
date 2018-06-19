@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561994"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Como depurar um aplicativo ClickOnce com permissões restritas
 Como desenvolvedor, você provavelmente está executando seu computador de desenvolvimento com permissões de confiança total, portanto você não verá as exceções de segurança mesmo quando estiver depurando um aplicativo ClickOnce que o usuário final pode ver quando executá-lo com permissões restritas.  

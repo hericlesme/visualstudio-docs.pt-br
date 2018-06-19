@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135439"
 ---
 # <a name="legacy-language-service-essentials"></a>Informações gerais de serviço de linguagem herdada
 Você deve fornecer um serviço de linguagem para integrar uma linguagem de programação em Visual Studio. Este tópico explica os recursos disponíveis nos serviços de linguagem herdada.  

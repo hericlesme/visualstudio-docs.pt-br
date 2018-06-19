@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478757"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Definir variáveis usando as janelas de QuickWatch no Visual Studio e observar um observador
 Enquanto você está depurando, você pode usar o **inspecionar** e **QuickWatch** windows para inspecionar variáveis e expressões.  A diferença é que o **inspecionar** janela pode exibir várias variáveis, enquanto o **QuickWatch** janela exibe uma única variável ao mesmo tempo. 

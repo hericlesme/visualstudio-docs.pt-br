@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477515"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guia de Introdução ao diagnóstico de gráficos do Visual Studio
 Nesta seção você preparará usar o diagnóstico de gráficos pela primeira vez, em seguida, você capturar quadros de um aplicativo Direct3D e examine-os no analisador de gráficos.  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567467"
 ---
 # <a name="findappconfigfile-task"></a>Tarefa FindAppConfigFile
 Localiza o arquivo app.config, se houver, nas listas fornecidas.  

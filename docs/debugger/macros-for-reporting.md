@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476904"
 ---
 # <a name="macros-for-reporting"></a>Macros para relatórios
 Você pode usar o **rptn**, e **rptfn** macros, definidas em CRTDBG. H para substituir o uso de `printf` instruções para depuração. Essas macros desaparecem automaticamente em sua versão de compilação quando **Debug** não estiver definida, portanto não é necessário colocá-los em **#ifdef**s.  
