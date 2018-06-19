@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141090"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Desinstalando um VSPackage com o Windows Installer
 A maior parte do tempo, o Windows Installer pode desinstalar o VSPackage apenas por "Desfazer" o que fez para instalar o VSPackage. As ações personalizadas são discutidos em [comandos que deve ser executado após a instalação](../../extensibility/internals/commands-that-must-be-run-after-installation.md) deve ser executado após a desinstalação também. Como as chamadas para devenv.exe ocorrerem antes da ação padrão InstallFinalize para instalação e desinstalação, as entradas de tabela personalizada e InstallExecuteSequence atender a ambos os casos.  

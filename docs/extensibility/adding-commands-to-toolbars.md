@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102363"
 ---
 # <a name="adding-commands-to-toolbars"></a>Adicionando comandos em barras de ferramentas
 Uma barra de ferramentas é uma faixa horizontal ou vertical que contém botões associados a comandos. Você pode adicionar seus próprios comandos em barras de ferramentas em muitas janelas diferentes no Visual Studio: a janela principal do Visual Studio, o Gerenciador de soluções e janelas de ferramenta personalizada.  

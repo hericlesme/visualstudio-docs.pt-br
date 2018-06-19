@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142624"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Passo a passo: Criando um glifo de margem
 Você pode personalizar a aparência das margens do editor usando extensões de editor personalizado. Este passo a passo coloca um glifo personalizado na margem do indicador, sempre que a palavra "todo" é exibida em um comentário do código.  

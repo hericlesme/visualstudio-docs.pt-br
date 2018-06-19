@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107940"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Criando um sistema de projeto básico, parte 2
 A primeiro passo a passo da série, [criando um sistema básico de projeto, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), mostra como criar um sistema de projeto básico. Este passo a passo se baseia no sistema de projeto básico, adicionando um modelo do Visual Studio, uma página de propriedades e outros recursos. Você deve concluir a primeiro passo a passo antes de iniciar este.  

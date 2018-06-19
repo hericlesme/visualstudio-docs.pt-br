@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704019"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: Usando uma tecla de atalho com uma extensão de Editor
 Você pode responder a teclas de atalho em sua extensão de editor. A instrução a seguir mostra como adicionar um adorno de exibição para uma exibição de texto usando uma tecla de atalho. Este passo a passo é baseada no modelo de editor de adorno de visor, e permite que você adicione o adorno usando o caractere +.  

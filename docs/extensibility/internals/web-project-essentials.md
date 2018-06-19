@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140989"
 ---
 # <a name="web-project-essentials"></a>Conceitos básicos de projeto da Web
 Projetos da Web criar aplicativos da Web. Você pode usar um projeto da Web para criar um aplicativo Web que tem inteligentes páginas da Web. Uma página da Web inteligente tem código de servidor que processa a página da Web sob demanda.  

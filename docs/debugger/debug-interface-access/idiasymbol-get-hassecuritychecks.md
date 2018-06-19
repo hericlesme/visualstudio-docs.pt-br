@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468119"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 Recupera um sinalizador que especifica se a função ou o compiland foi compilada com verificações de segurança de saturação de buffer (por exemplo, o [/GS (verificação de segurança do Buffer)](/cpp/build/reference/gs-buffer-security-check) opção de compilador).  

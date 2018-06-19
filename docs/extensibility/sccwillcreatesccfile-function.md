@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137048"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Função SccWillCreateSccFile
 Esta função determina se o plug-in de controle de origem suporta a criação do MSSCCPRJ. Arquivos SCC para cada um dos arquivos de determinado.  

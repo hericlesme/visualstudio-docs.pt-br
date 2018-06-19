@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135346"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces (VSPackage de controle de origem) e serviços relacionados
 Esta seção lista todas as interfaces relacionadas VSPackage de controle de fonte do [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. O controle de origem VSPackage implementa algumas dessas interfaces e usa outros para realizar tarefas de controle de origem.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953986"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 Você pode personalizar a aparência e o comportamento da janela Propriedades no seu domínio-DSL (linguagem específica) em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio estão listada na janela Propriedades. Isso permite ver e editar os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para campos de forma no diagrama.

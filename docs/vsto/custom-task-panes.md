@@ -33,6 +33,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548577"
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Painéis de tarefas estão os painéis de interface do usuário que são normalmente encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Painéis de tarefas personalizados oferecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar recursos da solução. Por exemplo, a interface pode conter controles que execute o código para modificar documentos ou exibir dados de uma fonte de dados.  

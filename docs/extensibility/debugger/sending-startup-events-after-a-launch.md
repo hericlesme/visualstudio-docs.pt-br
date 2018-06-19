@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135748"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Envio de eventos de inicialização após uma inicialização
 Depois que o mecanismo de depuração (DE) é anexado ao programa, ele envia uma série de eventos de inicialização para a sessão de depuração.  

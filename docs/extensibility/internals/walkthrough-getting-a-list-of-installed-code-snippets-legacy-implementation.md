@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141347"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Passo a passo: Obtendo uma lista de trechos de código instalado (herdado de implementação)
 Um trecho de código é um trecho de código que pode ser inserido no buffer de origem com um comando de menu (o que permite escolher entre uma lista de trechos de código instalado) ou por um atalho de trecho de código a seleção de uma lista de conclusão do IntelliSense.  

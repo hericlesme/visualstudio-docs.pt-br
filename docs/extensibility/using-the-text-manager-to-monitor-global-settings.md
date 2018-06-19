@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141666"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Usando o Gerenciador de texto para monitorar as configurações globais
 Se você implementar um editor de núcleo, você deve monitorar as alterações feitas em configurações globais, porque essas alterações podem afetar sua instância do editor. Você pode controlar as alterações de escuta para eventos gerados pelo Gerenciador de texto. Por exemplo, quando você especificar uma preferência global para a aparência ou o comportamento de um componente no editor de núcleo, como seu objeto de dados de documento, o Gerenciador de texto armazena essas informações e comunica-se a todos os clientes afetados.  

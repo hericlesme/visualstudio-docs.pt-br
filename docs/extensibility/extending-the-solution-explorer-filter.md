@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135490"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Estender o filtro do Pesquisador de objetos de solução
 Você pode estender **Solution Explorer** funcionalidade para mostrar ou ocultar arquivos diferentes de filtro. Por exemplo, você pode criar um filtro que mostra somente classe fábrica arquivos c# no **Solution Explorer**, como este passo a passo demonstra.  

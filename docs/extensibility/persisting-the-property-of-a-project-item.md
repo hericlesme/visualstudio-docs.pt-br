@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138048"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Manter a propriedade de um Item de projeto
 Talvez você queira manter uma propriedade que você adicionar a um item de projeto, como o autor de um arquivo de origem. Você pode fazer isso ao armazenar a propriedade no arquivo de projeto.

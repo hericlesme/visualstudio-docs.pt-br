@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107836"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Chamado pelo Gerenciador de depuração de sessão (SDM) para indicar que um evento de depuração síncrona, enviado anteriormente pelo mecanismo de depuração (DE) para o SDM, foi recebido e processado.  

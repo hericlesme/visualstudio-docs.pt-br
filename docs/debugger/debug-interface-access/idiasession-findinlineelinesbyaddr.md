@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464593"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções embutidas, diretamente ou indiretamente, pelo símbolo de pai especificado e está contida dentro do intervalo especificado.  

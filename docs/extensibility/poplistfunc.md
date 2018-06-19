@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138558"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Esse retorno de chamada é fornecido para o [SccPopulateList](../extensibility/sccpopulatelist-function.md) pelo IDE e é usada pelo plug-in de controle de origem para atualizar uma lista de arquivos ou diretórios (também é fornecido para o `SccPopulateList` função).  

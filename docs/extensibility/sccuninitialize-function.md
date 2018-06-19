@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140489"
 ---
 # <a name="sccuninitialize-function"></a>Função SccUninitialize
 Essa função limpa qualquer alocações ou criadas por uma chamada anterior para as conexões abertas a [SccInitialize](../extensibility/sccinitialize-function.md) em preparação para desligar o plug-in de controle de origem.  

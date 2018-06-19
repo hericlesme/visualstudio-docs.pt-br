@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136517"
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento de nome (Modelos do Visual Studio)
 Especifica o nome do modelo como ele aparece no **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.  

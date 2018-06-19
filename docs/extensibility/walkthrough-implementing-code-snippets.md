@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148682"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Passo a passo: Implementando trechos de código
 Você pode criar trechos de código e incluí-los em uma extensão de editor, para que os usuários da extensão podem adicioná-los para seu próprio código.  

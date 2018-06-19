@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144272"
 ---
 # <a name="visual-studio-sdk"></a>SDK do Visual Studio
 O SDK do Visual Studio ajuda você a ampliar os recursos do Visual Studio ou integrar novos recursos do Visual Studio. Você pode distribuir suas extensões a outros usuários, bem como para o Visual Studio Marketplace. A seguir está algumas das maneiras em que você pode estender o Visual Studio:  
