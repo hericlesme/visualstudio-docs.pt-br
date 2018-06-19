@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465178"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 Essa função recupera um sinalizador que indica se nenhuma ordenação da pilha pode ser feito como parte da verificação de buffer de pilha ([/GS (verificação de segurança do Buffer)](/cpp/build/reference/gs-buffer-security-check) opção de compilador).  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645866"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Se o mecanismo de Script do Windows permite que o texto do código de origem para obter os procedimentos a serem adicionados ao script, ele implementa o `IActiveScriptParseProcedure32` interface. Interpretado para linguagens de scripts com nenhum ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IActiveScriptParse32` ou `IPersist`*) para adicionar os procedimentos de script ao namespace.  

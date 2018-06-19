@@ -1,14 +1,14 @@
 ---
 title: Interface IActiveScriptProfilerCallback | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 76f9164b-b086-4b29-ac79-76f9c76f1d11
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724576"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>Interface IActiveScriptProfilerCallback
 Fornece métodos que são usados pelo mecanismo de script para notificar um objeto do criador de perfil, quando ocorrem eventos. Essa interface é implementada pelo objeto do criador de perfil.  

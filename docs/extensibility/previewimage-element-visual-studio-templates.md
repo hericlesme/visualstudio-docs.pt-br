@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136800"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Elemento PreviewImage (modelos do Visual Studio)
 Especifica a imagem de visualização, como um nome de arquivo para a imagem de visualização que aparecerá no **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.  

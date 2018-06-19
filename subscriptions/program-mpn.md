@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863619"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira. 

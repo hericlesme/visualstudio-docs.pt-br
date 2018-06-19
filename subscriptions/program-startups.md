@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863645"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Assinaturas do Visual Studio oferecidas para startups
 As startups qualificadas que entram no programa Microsoft para Startups recebem cinco [assinaturas de nuvem mensais do Visual Studio Enterprise](https://www.visualstudio.com/vs/pricing/). Essas são as mesmas assinaturas que são oferecidas no mercado, sem nenhuma limitação ou restrição específica. Cada assinatura precisa ser atribuída a um usuário final (que é o usuário licenciado) para que o usuário possa executar o Visual Studio e ser reconhecido como um assinante do Visual Studio Enterprise no VSTS.

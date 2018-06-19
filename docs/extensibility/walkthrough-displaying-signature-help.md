@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148620"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Passo a passo: Exibindo a Ajuda de assinatura
 Ajuda da assinatura (também conhecido como *informações de parâmetro*) exibe a assinatura de um método em uma dica de ferramenta quando um usuário digita o caractere de início da lista de parâmetro (normalmente um parêntese de abertura). Como um parâmetro e o separador de parâmetro (geralmente uma vírgula) são digitados, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito. Você pode definir a assinatura ajuda no contexto de um serviço de idioma, você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e exibir a Ajuda de assinatura para esse tipo de apenas, ou você pode exibir a Ajuda de assinatura para um tipo de conteúdo existente (por exemplo, "texto"). Este passo a passo mostra como exibir a Ajuda de assinatura para o tipo de conteúdo "texto".  

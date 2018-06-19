@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135060"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Adicionar itens para o adicionar novo Item caixas de diálogo
 O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo começa com as chaves do registro. Conforme mostrado nas seguintes entradas do registro, a seção de AddItemTemplates contém o caminho do e o nome do diretório em que os itens disponibilizada no **Adicionar Novo Item** caixa de diálogo são colocados.  

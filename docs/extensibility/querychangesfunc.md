@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139803"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Essa é uma função de retorno de chamada usada pelo [SccQueryChanges](../extensibility/sccquerychanges-function.md) operação para enumerar uma coleção de nomes de arquivo e determinar o status de cada arquivo.  

@@ -23,9 +23,10 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "29899939"
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Protótipos e herança de protótipos
 Em JavaScript, um `prototype` é uma propriedade de funções e de objetos que são criados por funções de construtor. O protótipo de uma função é um objeto. Seu principal uso é quando uma função é usada como um construtor.  
