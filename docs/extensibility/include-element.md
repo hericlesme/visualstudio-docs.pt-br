@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133291"
 ---
 # <a name="include-element"></a>Incluir elemento
 O elemento Include Especifica um arquivo que pode ser localizado no fornecido incluir o caminho para ser inserida no arquivo atual.  Todos os símbolos e tipos definidos farão parte do resultado compilado.  

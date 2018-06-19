@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131482"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de roteamento de comando
 No Visual Studio comandos são tratados por um número de diferentes componentes. Comandos são roteados do contexto interno, que é baseado na seleção atual, para o contexto mais externo de (também conhecido como global). Para obter mais informações, consulte [disponibilidade](../../extensibility/internals/command-availability.md).  

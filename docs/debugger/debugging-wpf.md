@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479813"
 ---
 # <a name="debugging-wpf"></a>Depurando WPF
 O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] fornece recursos adicionais para facilitar a depuração de aplicativos do WPF.  

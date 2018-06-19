@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103351"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Atalhos de teclado de associação para itens de Menu
 Para associar um atalho de teclado a um comando de menu personalizado, adicione uma entrada para o arquivo. VSCT para o pacote. Este tópico explica como mapear um atalho de teclado para um botão personalizado, o item de menu ou o comando da barra de ferramentas e como aplicar o mapeamento de teclado no editor padrão ou limitá-lo a um editor personalizado.  

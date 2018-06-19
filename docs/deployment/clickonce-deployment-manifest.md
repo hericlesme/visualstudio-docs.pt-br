@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560317"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto de implantação do ClickOnce
 Um manifesto de implantação é um arquivo XML que descreve um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, incluindo a identificação do atual [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] versão do aplicativo para implantar.  

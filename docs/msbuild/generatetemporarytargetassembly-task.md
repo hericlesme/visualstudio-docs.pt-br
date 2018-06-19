@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578540"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Tarefa GenerateTemporaryTargetAssembly
 A tarefa [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] gera um assembly se pelo menos uma página <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> em um projeto referencia um tipo declarado localmente no projeto. O assembly gerado será removido após concluir o processo de build ou se o processo de build falhar.  

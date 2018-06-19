@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129635"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminação de ~ SAK arquivos
 No código-fonte controle plug-in API 1.2, o ~ arquivos SAK foram substituídos por sinalizadores de recursos e novas funções que detecta se um plug-in de controle de origem dá suporte a arquivo MSSCCPRJ e check-outs compartilhados.  

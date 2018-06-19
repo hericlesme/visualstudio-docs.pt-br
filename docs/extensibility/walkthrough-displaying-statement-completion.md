@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147109"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Passo a passo: Exibindo a conclusão de instrução
 Você pode implementar a conclusão de instrução com base no idioma definindo os identificadores para o qual você deseja fornecer conclusão e, em seguida, disparar uma sessão de conclusão. Você pode definir a conclusão de instrução no contexto de um serviço de idioma, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e exibir conclusão apenas desse tipo de, ou você pode acionar a conclusão de um tipo de conteúdo existente — por exemplo, "texto sem formatação". Este passo a passo mostra como disparar a conclusão de instrução para o tipo de conteúdo "texto sem formatação", que é o tipo de conteúdo de arquivos de texto. O tipo de conteúdo "texto" é o ancestral de todos os outros tipos de conteúdo, incluindo o código e arquivos XML.  

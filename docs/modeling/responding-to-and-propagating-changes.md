@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953999"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Respondendo a alterações e propagando-as
 Quando um elemento é criado, excluído ou atualizado, você pode escrever código que se propaga a alteração para outras partes do modelo, ou para recursos externos como arquivos, bancos de dados ou outros componentes.

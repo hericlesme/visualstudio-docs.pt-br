@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473271"
 ---
 # <a name="how-to-display-message-properties"></a>Como exibir Propriedades da Mensagem
 Para obter mais informações sobre uma mensagem listada na [exibição de mensagens](../debugger/messages-view.md), use o [caixa de diálogo de propriedades de mensagem](../debugger/message-properties-dialog-box.md).  

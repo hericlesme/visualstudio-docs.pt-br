@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134490"
 ---
 # <a name="how-to-update-the-status-bar"></a>Como: atualizar a barra de Status
 O **barra de Status** uma barra de controle que está localizada na parte inferior de muitas janelas de aplicativo que contém uma ou mais linhas de texto de status ou indicadores.  

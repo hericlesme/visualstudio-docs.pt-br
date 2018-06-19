@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562176"
 ---
 # <a name="localizing-clickonce-applications"></a>Localização de aplicativos ClickOnce
 A localização é o processo de tornar o aplicativo apropriado para uma cultura específica. Esse processo envolve a conversão de texto de interface de usuário para um idioma específico de região, usando a data correta e a formatação de moeda, ajuste o tamanho dos controles em um formulário, e controles de espelhamento da direita para a esquerda, se necessário.  

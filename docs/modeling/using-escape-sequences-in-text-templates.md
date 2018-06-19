@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950381"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Usando sequências de escape em modelos de texto
 Você pode usar sequências de escape em modelos de texto para gerar marcas de modelo de texto e (em c# somente código) para caracteres de controle de escape e aspas.

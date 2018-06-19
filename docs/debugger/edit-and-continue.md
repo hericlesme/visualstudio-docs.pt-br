@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471964"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Edite o código e continuar a depuração no Visual Studio (c#, VB, C++)
 Editar e Continuar é um recurso que economiza tempo e permite que você faça alterações no seu código-fonte enquanto o programa está no modo de interrupção. Quando você retomar a execução do programa escolhendo um comando de execução como **continuar** ou **etapa**, editar e continuar automaticamente aplica as alterações de código com algumas limitações. Isso permite que você faça alterações no código durante uma sessão de depuração, em vez de ter que parar, recompilar o programa inteiro e reiniciar a sessão de depuração.  

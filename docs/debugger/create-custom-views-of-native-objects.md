@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927159"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Criar exibições personalizadas de objetos nativos no depurador do Visual Studio
 A estrutura de Natvis do Visual Studio permite que você personalize a forma como o Visual Studio exibe os tipos nativos nas janelas de variáveis do depurador (por exemplo, o **inspecionar** janela, **locais** janela e em  **DataTips**.

@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979182"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 A tabela a seguir lista propriedades frequentemente usadas que são definidas nos arquivos de projeto do Visual Studio ou incluídas nos arquivos .targets que o MSBuild fornece.  

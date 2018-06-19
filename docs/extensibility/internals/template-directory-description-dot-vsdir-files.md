@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133982"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Descrição do modelo do diretório (. Arquivos de Vsdir)
 Um arquivo de descrição de pasta do modelo (.vsdir) é um arquivo de texto que permite que o ambiente de desenvolvimento integrado (IDE) para exibir pastas, arquivos. vsz do assistente e os arquivos de modelo que estão associados ao seu projeto em caixas de diálogo. O conteúdo inclui um registro por arquivo ou pasta. Todos os arquivos .vsdir em um local de referência são mesclados, embora .vsdir apenas um arquivo geralmente é fornecido para descrever as várias pastas, assistentes ou arquivos de modelo.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130036"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Política de modelo e na janela Propriedades
 Quando um projeto está contido dentro de um projeto de modelo de empresa, projeto modelo enterprise pode impor a política. Política de modelo torna-se um sistema de restrição que pode ser usado para definir valores padrão para propriedades, ocultar propriedades, adicionar propriedades e assim por diante.  

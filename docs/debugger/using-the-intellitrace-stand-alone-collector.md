@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478997"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Usar o coletor autônomo do IntelliTrace
 O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico do IntelliTrace para seus aplicativos em servidores de produção ou em outros ambientes sem instalar o Visual Studio no computador de destino e sem alterar o ambiente do sistema de destino. O coletor autônomo do IntelliTrace funciona em aplicativos da web do SharePoint, WPF e Windows Forms. Quando você terminar a coleta de dados, basta excluir o coletor para desinstalá-lo.  

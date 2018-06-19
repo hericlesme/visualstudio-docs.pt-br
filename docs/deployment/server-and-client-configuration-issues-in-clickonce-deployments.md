@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562618"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar o Internet Information Services (IIS) no Windows Server e a implantação contém um tipo de arquivo que o Windows não reconhece, como um arquivo do Microsoft Word, o IIS recusará a transmitir o arquivo e a implantação não terá êxito.  

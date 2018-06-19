@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133177"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nova geração de projeto: Nos bastidores, segunda parte
 Em [nova geração de projeto: sob o escopo, uma parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) , vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou um **Visual C# Windows Application**, preenchido de **nome** e **local** caixas de texto e Okey clicado.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473193"
 ---
 # <a name="how-to-control-messages-view"></a>Como controlar a exibição de mensagens
 Com Spy + +, você tem controle considerável sobre o conteúdo de um [exibição de mensagens](../debugger/messages-view.md) janela. Você pode [iniciar e parar](../debugger/how-to-start-and-stop-the-message-log-display.md) exibir as mensagens a qualquer momento e você pode especificar:  

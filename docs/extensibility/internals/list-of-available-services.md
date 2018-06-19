@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135903"
 ---
 # <a name="list-of-available-services"></a>Lista de serviços disponíveis
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e os seguintes serviços de suporte do SDK do Visual Studio. Alguns pacotes oferecem seus próprios serviços que não estão listados aqui — por exemplo, serviços de idioma não possuem um único GUID de serviço. Você deve usar o nome do idioma para localizar o GUID do serviço de linguagem no registro.  

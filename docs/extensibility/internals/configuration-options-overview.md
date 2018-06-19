@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132463"
 ---
 # <a name="configuration-options-overview"></a>Visão geral das opções de configuração
 Projetos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode dar suporte a várias configurações que podem ser criadas, depurado, execução, e/ou implantado. Uma configuração é um tipo de compilação descrito com um conjunto nomeado de propriedades, normalmente switches de compilador e locais de arquivos. Por padrão, novas soluções contêm duas configurações Debug e Release. Essas configurações podem ser aplicadas usando as configurações padrão ou modificadas para atender às suas necessidades específicas de solução e/ou projeto. Alguns pacotes podem ser criados de duas maneiras: como um editor de ActiveX ou como um componente no local. Projetos não é necessário dar suporte a várias configurações, no entanto. Se houver apenas uma configuração, essa configuração é mapeada para todas as configurações de solução.  

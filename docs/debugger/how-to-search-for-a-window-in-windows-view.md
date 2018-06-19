@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473430"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Como procurar uma janela na exibição de janelas
 Você pode procurar uma janela específica no modo de exibição do Windows usando seu identificador, legenda, classe ou uma combinação de suas legenda e a classe como critério de pesquisa. Você também pode especificar a direção inicial da pesquisa. Os campos na caixa de diálogo mostrará os atributos da janela selecionada na árvore de janela.  

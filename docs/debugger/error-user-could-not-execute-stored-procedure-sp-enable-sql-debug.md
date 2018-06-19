@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472417"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>Erro: o usuário não conseguiu executar o procedimento armazenado sp_enable_sql_debug
 A depuração do Procedimento Armazenado sp_enable_sql_debug não pode ser executada no servidor. Isso pode ser causado por:  

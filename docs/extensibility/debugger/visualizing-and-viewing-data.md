@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132476"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizando e exibindo dados
 Visualizadores de tipo e apresentar dados visualizadores personalizados de forma que seja significativo rapidamente para um desenvolvedor. O avaliador de expressão (EE) pode dar suporte a visualizadores de tipo de terceiros bem como fornecer seus próprio visualizadores personalizados.  

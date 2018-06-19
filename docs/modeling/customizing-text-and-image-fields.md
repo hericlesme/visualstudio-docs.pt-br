@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953125"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizando campos de texto e imagem
 Quando você define um decorador de texto em uma forma, ele é representado por um campo de texto. Para obter exemplos de inicialização de campos de texto e outros ShapeFields, inspecione Dsl\GeneratedCode\Shapes.cs em sua solução DSL.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135670"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para trechos de código em um serviço de linguagem herdado
 Um trecho de código é um trecho de código é inserido no arquivo de origem. O trecho de código em si é um modelo baseado em XML com um conjunto de campos. Esses campos são realçados depois que o trecho de código é inserido e pode ter valores diferentes dependendo do contexto no qual o trecho de código é inserido. Imediatamente depois de inserido o trecho de código, o serviço de linguagem pode formatar o trecho de código.  

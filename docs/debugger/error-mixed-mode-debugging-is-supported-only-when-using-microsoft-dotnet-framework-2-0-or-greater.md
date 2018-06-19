@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473648"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Erro: a depuração de modo misto só é suportada durante o uso do Microsoft .NET Framework 2.0 ou superior
 Para depurar código nativo e gerenciado misto, você deverá ter o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versão 2.0, 3.0. 3.5 ou 4.0. Depuração de modo misto com versões anteriores do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] não tem suporte.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129939"
 ---
 # <a name="feedback-to-the-user"></a>Comentários para o usuário
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE), comentários visuais sobre funcionalidade disponível é baseada na seleção atual do usuário e o contexto da seleção global. A tabela a seguir lista a funcionalidade que está disponível em contextos de seleção diferente.  

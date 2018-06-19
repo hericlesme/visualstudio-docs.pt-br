@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975540"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar a estrutura de MSTest em testes de unidades
 

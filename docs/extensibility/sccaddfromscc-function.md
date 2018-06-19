@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139946"
 ---
 # <a name="sccaddfromscc-function"></a>Função SccAddFromScc
 Esta função permite que o usuário procurar arquivos que já estão no sistema de controle de origem e depois fazer parte desses arquivos do projeto atual. Por exemplo, essa função pode obter um arquivo de cabeçalho comuns para o projeto atual sem copiar o arquivo. A matriz de retorno de arquivos, `lplpFileNames`, contém a lista de arquivos que o usuário deseja adicionar ao projeto do IDE.  

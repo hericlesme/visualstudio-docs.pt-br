@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950001"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Como usar transações para atualizar o modelo
 Transações Certifique-se de que as alterações feitas no armazenamento são tratadas como um grupo. As alterações que são agrupadas podem ser confirmadas ou revertidas como uma única unidade.

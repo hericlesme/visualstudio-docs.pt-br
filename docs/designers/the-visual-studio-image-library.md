@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921186"
 ---
 # <a name="the-visual-studio-image-library"></a>A Biblioteca de Imagens do Visual Studio
 

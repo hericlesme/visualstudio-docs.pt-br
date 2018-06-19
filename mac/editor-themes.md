@@ -10,6 +10,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865013"
 ---
 # <a name="editor-themes"></a>Temas do editor
 Os temas do editor podem ser alterados para qualquer um dos 10 esquemas de cores fornecidos por padrão no Visual Studio para Mac por meio das opções do menu **Visual Studio > Preferências... > Editor de Texto > Temas de Cores**:

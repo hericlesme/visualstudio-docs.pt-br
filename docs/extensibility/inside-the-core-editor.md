@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130431"
 ---
 # <a name="inside-the-core-editor"></a>Dentro do Editor de núcleo
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principal é um conjunto de vários componentes que permitem que você modifique e consultar informações textuais. Se você tiver personalizado o editor de núcleo usando a API herdada, você pode continuar a usar essas personalizações, que serão roteadas por meio de adaptadores de editor. Recomenda-se, no entanto, que você os adapte suas personalizações para o novo editor de API.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137171"
 ---
 # <a name="objects"></a>Objetos
 As informações de referência a seguir explicam os objetos que são usados para criar uma instância do editor de texto principal.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946826"
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Personalizando a apresentação no diagrama
 O diagrama é a principal área de apresentação de um designer de linguagem específica do domínio. Geralmente, os usuários usam o diagrama para construir seus modelos. Você pode personalizar o diagrama, conforme descrito nos tópicos a seguir.

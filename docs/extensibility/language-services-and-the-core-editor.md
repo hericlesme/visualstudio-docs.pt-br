@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138474"
 ---
 # <a name="language-services-and-the-core-editor"></a>Serviços de idioma e o Editor de núcleo
 Editores do Visual Studio são frequentemente associadas um serviço de linguagem. Entre outras coisas, um serviço de linguagem fornece cores de sintaxe, a conclusão de instrução, IntelliSense e formatação de texto.  

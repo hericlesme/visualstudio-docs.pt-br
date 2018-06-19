@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474382"
 ---
 # <a name="reference-programmatic-capture"></a>Referência (captura programática)
 Diagnóstico de gráficos dá suporte a controle programático sobre seus recursos de captura, por meio de captura programática API. Você pode usar essa API para alternar e adicionar mensagens para o diagnóstico de gráficos HUD (visor), inicializar e criar gráficos arquivos de log e capturar informações de gráficos.  

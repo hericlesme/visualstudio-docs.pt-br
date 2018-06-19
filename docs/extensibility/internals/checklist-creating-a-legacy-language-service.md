@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133203"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Lista de verificação: Criar um serviço de linguagem herdado
 A lista de verificação a seguir resume as etapas básicas que você deve executar para criar um serviço de idioma para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor de núcleo. Integre seu serviço de idioma em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve criar um avaliador de expressão de depuração. Para obter mais informações, consulte [escrevendo um avaliador de expressão CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) no [extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

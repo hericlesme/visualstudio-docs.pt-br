@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948087"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Gerando código a partir de uma linguagem específica do domínio
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece uma maneira eficiente para gerar o código, documentos, arquivos de configuração e outros artefatos de dados representados em modelos. Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], você pode criar um conjunto de classes que representam os dados e você pode escrever seus modelos de texto em classes cujos nomes e propriedades refletirem esses dados.

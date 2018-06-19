@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132555"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Criando pastas de contêiner pai para soluções
 Na API plug-in para fonte de controle de versão 1.2, um usuário pode especificar um destino de controle de origem de raiz única para todos os projetos da Web dentro da solução. Essa única raiz é chamado de um Super unificado raiz (SUR).  

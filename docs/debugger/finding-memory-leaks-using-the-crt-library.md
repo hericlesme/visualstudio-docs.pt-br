@@ -36,6 +36,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477856"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Localizando perdas de memória usando a biblioteca CRT
 Vazamentos de memória, definidos como a falha em desalocar corretamente a memória anteriormente alocada, estão entre os bugs mais sutis e difíceis de detectar em aplicativos C/C++. Um vazamento de memória pequeno não pode ser observado no início, mas ao longo do tempo, um vazamento de memória progressivo pode causar os sintomas que variam de desempenho reduzido a falhar quando o aplicativo é executado sem memória. Pior, um aplicativo de escape que usa toda a memória disponível pode causar a falha de outro aplicativo, criando a confusão a respeito de que o aplicativo é responsável. Até mesmo vazamentos de memória aparentemente inofensivos podem ser sintomáticos de outros problemas que devem ser corrigidos.  

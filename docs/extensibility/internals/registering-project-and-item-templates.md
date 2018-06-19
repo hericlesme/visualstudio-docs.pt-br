@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133741"
 ---
 # <a name="registering-project-and-item-templates"></a>Registro de modelos de projeto e Item
 Tipos de projeto devem registrar os diretórios onde se encontram os modelos de projeto e item de projeto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa as informações de registro associadas os tipos de projeto para determinar o que mostrar o **adicionar novo projeto** e **Adicionar Novo Item** caixas de diálogo.  

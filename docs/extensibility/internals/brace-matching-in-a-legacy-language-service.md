@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131957"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Chave de correspondência em um serviço de linguagem herdado
 Correspondência de chaves ajuda o desenvolvedor a acompanhar os elementos de linguagem que precisam ser feitos juntos, como parênteses e as chaves. Quando um desenvolvedor insere uma chave de fechamento, a chave de abertura é realçada.  

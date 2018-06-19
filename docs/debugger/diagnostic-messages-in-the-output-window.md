@@ -33,6 +33,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474577"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Enviar mensagens de diagnóstico para a janela de saída
 Você pode gravar mensagens de tempo de execução para o **saída** janela usando o `Debug` classe ou o `Trace` classe, que fazem parte do <xref:System.Diagnostics> biblioteca de classe. Use a classe de Depuração se você emitir uma saída apenas na versão de Depuração do programa. Use a classe de Rastreamento se você quiser uma saída nas versões de Depuração e de Inicialização.  

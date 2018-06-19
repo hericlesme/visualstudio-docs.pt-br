@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474018"
 ---
 # <a name="debugger-project-settings"></a>Configurações de projeto do depurador
 Determinadas configurações de projeto também afetam a depuração. Essas configurações determinam coisas como quais diretórios o depurador analisa, os comandos e os argumentos de comando usados para iniciar o programa e o tipo de informações de depuração criadas para o programa. Você pode alterar essas configurações no **páginas de propriedade** caixa de diálogo.  

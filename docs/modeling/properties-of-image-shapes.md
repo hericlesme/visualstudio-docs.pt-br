@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952622"
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
 Você pode usar formas de imagem para especificar como as classes de domínio são exibidos em um designer gerado. Define uma forma de imagem ao definir o `Image` propriedade da classe para um arquivo de imagem predefinida. Há suporte para os seguintes formatos:

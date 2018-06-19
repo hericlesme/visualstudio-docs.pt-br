@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572316"
 ---
 # <a name="xdcmake-task"></a>Tarefa XDCMake
 Encapsula a ferramenta de Documentação XML (xdcmake.exe), que mescla arquivos de comentário (.xdc) do documento XML com um arquivo .xml.  

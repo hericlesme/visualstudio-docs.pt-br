@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31970979"
 ---
 # <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Associar à caixa de diálogo de propriedade de uma atividade (legados)
 

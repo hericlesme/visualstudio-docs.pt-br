@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131730"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Criar instâncias de projeto por meio de fábricas de projeto
 Projeto tipos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usar um *fábrica de projeto* para criar instâncias de objetos do projeto. Uma fábrica de projeto é semelhante a uma fábrica de classe padrão para objetos cocreatable. No entanto, os objetos do projeto não estão cocreatable: só pode ser criados usando uma fábrica de projeto.  

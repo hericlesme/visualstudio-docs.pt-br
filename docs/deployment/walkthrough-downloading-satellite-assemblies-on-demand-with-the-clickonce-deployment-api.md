@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561370"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Instruções passo a passo: baixando assemblies satélite por demanda com a API de implantação do ClickOnce
 Aplicativos de formulários do Windows podem ser configurados para várias culturas com o uso de assemblies de satélite. Um *assembly satélite* é um assembly que contém recursos de aplicativos para uma cultura diferente de cultura do padrão do aplicativo.  

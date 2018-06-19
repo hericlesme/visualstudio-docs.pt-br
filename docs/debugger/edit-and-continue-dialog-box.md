@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473131"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Caixa de diálogo Editar e Continuar
 (Somente nativo) Essa caixa de diálogo aparece quando você tiver editado o código durante a depuração e **editar e continuar** reconhece que ele pode aplicar alterações de código. Para obter mais informações, consulte [editar e continuar](../debugger/edit-and-continue.md).  
