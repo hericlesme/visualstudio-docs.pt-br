@@ -1,12 +1,13 @@
 ---
 title: Modo Estrito (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1038
@@ -25,7 +26,7 @@ helpviewer_keywords:
 - strict mode
 - use strict
 ms.assetid: 0f27022a-f41c-4504-965c-5a2701f342cd
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -34,6 +35,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569566"
 ---
 # <a name="strict-mode-javascript"></a>Modo estrito (JavaScript)
 Modo estrito é uma maneira de introduzir uma melhor verificação de erros em seu código. Quando você usa o modo estrito, você não pode, por exemplo, usar variáveis declaradas implicitamente, nem atribuir um valor a uma propriedade somente leitura ou tampouco adicionar uma propriedade a um objeto que não é extensível. As restrições estão listadas na seção [Restrições em código no modo estrito](../../javascript/advanced/strict-mode-javascript.md#rest), mais adiante neste tópico. Para obter informações adicionais sobre o modo estrito, consulte [Especificação da linguagem ECMAScript, 5ª edição](http://www.ecma-international.org/publications/standards/Ecma-262.htm).  

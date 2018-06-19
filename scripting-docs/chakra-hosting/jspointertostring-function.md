@@ -1,18 +1,18 @@
 ---
-title: "Função JsPointerToString | Microsoft Docs"
-ms.custom: 
+title: Função JsPointerToString | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsPointerToString
 helpviewer_keywords:
 - JsPointerToString function
 ms.assetid: c71ce07e-4359-450c-afbf-a6ab7d48dddf
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568186"
 ---
 # <a name="jspointertostring-function"></a>Função JsPointerToString
 Cria um valor de cadeia de caracteres de um ponteiro de cadeia de caracteres.  

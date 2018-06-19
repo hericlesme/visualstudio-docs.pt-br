@@ -1,12 +1,13 @@
 ---
-title: "Escopo variável (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Escopo variável (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569316"
 ---
 # <a name="variable-scope-javascript"></a>Escopo variável (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tem dois escopos: global e local. Uma variável declarada fora de uma definição de função é global e o valor dela é acessível e pode ser modificado por todo o programa. Uma variável que é declarada dentro de uma definição de função é local. Ela é criada e destruída cada vez que a função é executada e ela não pode ser acessada por nenhum código fora da função. O JavaScript não dá suporte a escopo de bloco (no qual um conjunto de chaves `{. . .}` define um novo escopo), exceto no caso especial de variáveis de escopo de bloco.  

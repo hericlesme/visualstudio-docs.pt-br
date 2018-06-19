@@ -1,13 +1,13 @@
 ---
-title: "Throw deve ser seguido por uma expressão na mesma linha de origem | Microsoft Docs"
-ms.custom: 
+title: Throw deve ser seguido por uma expressão na mesma linha de origem | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1035
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633126"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>O lançamento deve ser seguido por uma expressão na mesma linha de origem
 Você usou o `throw` palavra-chave, mas não seguiu-lo com uma expressão na mesma linha de origem. Um `throw` consiste em duas partes: o `throw` palavra-chave, seguido pela expressão seja gerada. Por exemplo:  

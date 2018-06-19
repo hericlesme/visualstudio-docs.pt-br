@@ -1,18 +1,18 @@
 ---
-title: "Função JsIsRuntimeExecutionDisabled | Microsoft Docs"
-ms.custom: 
+title: Função JsIsRuntimeExecutionDisabled | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsIsRuntimeExecutionDisabled
 helpviewer_keywords:
 - JsIsRuntimeExecutionDisabled function
 ms.assetid: 77490280-fb84-4614-a1f0-6ac31e3bd607
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568196"
 ---
 # <a name="jsisruntimeexecutiondisabled-function"></a>Função JsIsRuntimeExecutionDisabled
 Retorna um valor que indica se a execução do script está desabilitada no tempo de execução.  

@@ -1,12 +1,13 @@
 ---
 title: Objeto WinRTError (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - WinRTError object [JavaScript]
 - JavaScript, WinRTError object
 ms.assetid: d75ab8e5-e729-4d86-90fd-ea228c30dd66
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640886"
 ---
 # <a name="winrterror-object-javascript"></a>Objeto WinRTError (JavaScript)
 Quanto um Tempo de Execução do Windows retorna um HRESULT que indica falha, o JavaScript o converte em um erro especial de Tempo de Execução do Windows. Isso só acontece em aplicativos [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] e quando o Tempo de Execução do Windows está disponível como parte do namespace de JavaScript global.  

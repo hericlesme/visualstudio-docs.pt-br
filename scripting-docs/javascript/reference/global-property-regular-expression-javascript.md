@@ -1,13 +1,13 @@
 ---
-title: "Propriedade global (Expressão Regular) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Propriedade global (Expressão Regular) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Global
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - global property
 ms.assetid: 76a0f115-0d89-4aca-86d5-932895c6d649
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637426"
 ---
 # <a name="global-property-regular-expression-javascript"></a>Propriedade global (expressão regular) (JavaScript)
 Retorna um valor booliano que indica o estado do sinalizador global (**g**) usado com uma expressão regular. O padrão é **false**. Somente leitura.  

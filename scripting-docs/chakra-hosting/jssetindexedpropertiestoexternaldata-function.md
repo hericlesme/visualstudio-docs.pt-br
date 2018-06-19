@@ -1,14 +1,14 @@
 ---
-title: "Função JsSetIndexedPropertiesToExternalData | Microsoft Docs"
-ms.custom: 
+title: Função JsSetIndexedPropertiesToExternalData | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: cee2d86d-ed42-4acb-86ef-95a67e63d0d6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568846"
 ---
 # <a name="jssetindexedpropertiestoexternaldata-function"></a>Função JsSetIndexedPropertiesToExternalData
 Define as propriedades indexadas de um objeto para dados externos. Os dados externos serão usados como repositório de backup para as propriedades indexadas do objeto e acessadas como uma matriz tipada.  

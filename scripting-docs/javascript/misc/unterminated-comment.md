@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633696"
 ---
 # <a name="unterminated-comment"></a>Comentário não finalizado
 Início de um bloco de comentário de várias linhas, mas não terminou corretamente-lo. Comentários de várias linhas começam com um "/\*" combinação e terminar com o inverso "\*/" combinação. A seguir está um exemplo:  

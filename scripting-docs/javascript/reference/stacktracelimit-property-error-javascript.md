@@ -1,13 +1,13 @@
 ---
 title: stackTraceLimit propriedade (Error) (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Error.stackTraceLimit
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - error stack [JavaScript]
 - JavaScript stack trace limit
 ms.assetid: 127ef8e8-892e-4263-9ebc-03364af01212
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640566"
 ---
 # <a name="stacktracelimit-property-error-javascript"></a>stackTraceLimit Propriedade (Error) (JavaScript)
 Obtém ou define o limite de rastreamento de pilha, que é equivalente ao número de quadros de erro para exibir. O limite padrão é 10.  

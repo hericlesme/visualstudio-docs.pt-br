@@ -1,18 +1,18 @@
 ---
-title: "Função JsParseSerializedScript | Microsoft Docs"
-ms.custom: 
+title: Função JsParseSerializedScript | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsParseSerializedScript
 helpviewer_keywords:
 - JsParseSerializedScript function
 ms.assetid: 40d0c7c4-fd5b-46ed-9e65-38c2db2fc859
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568676"
 ---
 # <a name="jsparseserializedscript-function"></a>Função JsParseSerializedScript
 Analisa um script serializado e retorna uma função representando o script.  

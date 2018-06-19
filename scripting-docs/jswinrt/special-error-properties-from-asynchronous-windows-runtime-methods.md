@@ -1,15 +1,16 @@
 ---
-title: "Propriedades de erro especial de métodos assíncronos do Windows Runtime | Microsoft Docs"
-ms.custom: 
+title: Propriedades de erro especial de métodos assíncronos do Windows Runtime | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -18,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571406"
 ---
 # <a name="special-error-properties-from-asynchronous-windows-runtime-methods"></a>Propriedades de erro especial de métodos assíncronos do Windows Runtime
 Pode ser difícil depurar os métodos assíncronos do Windows Runtime em JavaScript, porque o erro pode ser gerado de algum ponto aprofundado na pilha de chamadas. O objeto JavaScript `Error` tem propriedades adicionais que aparecem somente quando o erro é gerado de um método assíncrono do Windows Runtime quando o aplicativo está sendo executado no modo de depuração.  

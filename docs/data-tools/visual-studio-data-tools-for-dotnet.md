@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33864714"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Ferramentas de dados do Visual Studio para .NET
 

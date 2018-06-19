@@ -1,12 +1,13 @@
 ---
-title: "Recursão (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Recursão (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - recursive procedures
 - function calls, recursive
 ms.assetid: 885855a6-3838-457d-9eb4-cce1ccaa5a8d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568886"
 ---
 # <a name="recursion-javascript"></a>Recursão (JavaScript)
 Recursão é uma técnica de programação importante, em que uma função chama a si mesma.  

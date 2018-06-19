@@ -1,14 +1,14 @@
 ---
 title: Borda de destino vs. Mecanismos herdados em APIs de JsRT | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569596"
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>Borda de destino vs. Mecanismos herdados em APIs JsRT
 Começando no Windows 10, uma das alterações que fizemos ao Chakra (o mecanismo JavaScript), que é alinhado com a estratégia de navegador do Windows 10 de dar suporte a um novo mecanismo de renderização de borda, é dar suporte a dois mecanismos Chakra diferentes:  

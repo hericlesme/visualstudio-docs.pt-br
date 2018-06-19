@@ -1,19 +1,20 @@
 ---
-title: "Representações de DateTime e TimeSpan do Windows Runtime | Microsoft Docs"
-ms.custom: 
+title: Representações de DateTime e TimeSpan do Windows Runtime | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime dates and times
 - TimeSpan [JavaScript]
 - DateTime [JavaScript]
 ms.assetid: 9743e9ac-9054-463e-8264-427183e4905f
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571416"
 ---
 # <a name="windows-runtime-datetime-and-timespan-representations"></a>Representações de DateTime e TimeSpan do Windows Runtime
 A representação em JavaScript das datas e das horas é diferente da versão do Tempo de Execução do Windows. A estrutura [DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx) do Windows Runtime é representada em JavaScript como um [Date](../javascript/reference/date-object-javascript.md) com um repositório de backup correspondente aos dados `DateTime` (e tem um intervalo e uma precisão diferentes em relação ao JavaScript `Date`). Se você modificar esse objeto `Date` personalizado, ele se tornará um `Date` JavaScript padrão e perderá a precisão. Os valores `Date` JavaScript podem ser passados para um `DateTime` do Tempo de Execução do Windows, o que pode resultar em exceções de marshaling.  

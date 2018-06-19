@@ -1,13 +1,13 @@
 ---
-title: "Propriedade ignoreCase (Expressão Regular) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Propriedade ignoreCase (Expressão Regular) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ignoreCase
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - IgnoreCase property
 ms.assetid: 816f0df5-5a82-44a5-a4ab-dbc91fa76e61
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637856"
 ---
 # <a name="ignorecase-property-regular-expression-javascript"></a>Propriedade ignoreCase (expressão regular) (JavaScript)
 Retorna um valor booliano que indica o estado do sinalizador ignoreCase (**,**) usado com uma expressão regular. O padrão é **false**. Somente leitura.  

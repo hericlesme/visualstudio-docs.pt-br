@@ -23,6 +23,7 @@ ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335795"
 ---
 # <a name="foreach-method-map-javascript"></a>Método forEach (Map) (JavaScript)
 Executa a ação especificada para cada elemento em um mapa.  

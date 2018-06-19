@@ -25,6 +25,7 @@ ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29753491"
 ---
 # <a name="javascript-version-information"></a>JavaScript Informações da versão
 Versões diferentes de JavaScript oferecem suporte a diferentes conjuntos de elementos JavaScript. Os aplicativos [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] oferecem suporte a um conjunto de recursos ligeiramente diferente daqueles do Internet Explorer.  

@@ -1,14 +1,14 @@
 ---
-title: "Referência (Tempo de Execução do JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Referência (Tempo de Execução do JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 0bfe50da-fd79-4e00-9458-bc667769b415
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24570156"
 ---
 # <a name="reference-javascript-runtime"></a>Referência (Tempo de Execução do JavaScript)
 APIs do JsRT (Tempo de Execução do JavaScript) permitem que você adicione recursos de script para aplicativos de área de trabalho e do lado do servidor em execução no Windows.  

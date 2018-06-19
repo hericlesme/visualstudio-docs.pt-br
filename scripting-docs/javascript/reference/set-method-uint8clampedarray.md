@@ -1,19 +1,20 @@
 ---
-title: "definir o método (Uint8ClampedArray) | Microsoft Docs"
-ms.custom: 
+title: definir o método (Uint8ClampedArray) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 1298443d-5c4c-4329-9ad2-35e213dca157
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639466"
 ---
 # <a name="set-method-uint8clampedarray"></a>Método set (Uint8ClampedArray)
 Define um valor ou uma matriz de valores.  

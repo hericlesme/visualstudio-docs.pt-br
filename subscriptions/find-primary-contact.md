@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30862790"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Localizando o Contato Principal associado a assinaturas do Visual Studio
 

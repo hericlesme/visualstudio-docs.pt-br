@@ -1,18 +1,18 @@
 ---
-title: "Usar métodos assíncronos do Windows Runtime | Microsoft Docs"
-ms.custom: 
+title: Usar métodos assíncronos do Windows Runtime | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - JavaScript, Windows Runtime asynchronous methods
 ms.assetid: 70756833-44f7-4383-827f-2ac781558082
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571446"
 ---
 # <a name="using-windows-runtime-asynchronous-methods"></a>Usar métodos assíncronos do Windows Runtime
 Muitos métodos do Tempo de Execução do Windows, especialmente os que demoram muito para serem concluídos, são assíncronos. Esses métodos normalmente retornam uma ação ou uma operação assíncrona (por exemplo, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress` ou `Windows.Foundation.IAsyncOperationWithProgress`). Esses métodos são representados em JavaScript pelo padrão [CommonJS/Promises/A](http://go.microsoft.com/fwlink/p/?LinkId=244434). Ou seja, eles retornam um objeto Promise com uma função [then](https://msdn.microsoft.com/en-us/library/windows/apps/br229728.aspx) para a qual você deve fornecer uma função `completed` que identifique o resultado caso a operação seja bem-sucedida. Se não quiser fornecer um manipulador de erros, use a função [done](https://msdn.microsoft.com/en-us/library/windows/apps/hh701079.aspx) em vez da função `then`.  

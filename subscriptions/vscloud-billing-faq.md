@@ -14,6 +14,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33957126"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://www.visualstudio.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.

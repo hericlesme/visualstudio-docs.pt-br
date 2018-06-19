@@ -1,13 +1,13 @@
 ---
-title: "Função Math.log (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Função Math.log (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - log
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - log method
 - Math object
 ms.assetid: 5d617fb5-4b27-404e-842f-eea5549a7c1a
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638906"
 ---
 # <a name="mathlog-function-javascript"></a>Função Math.log (JavaScript)
 Retorna o logaritmo natural (base `e`) de um número.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065151"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visuals Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.  

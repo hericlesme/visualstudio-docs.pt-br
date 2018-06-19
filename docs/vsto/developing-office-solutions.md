@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268182"
 ---
 # <a name="develop-office-solutions"></a>Desenvolver soluções do Office
   Depois que você criar um projeto usando as ferramentas de desenvolvedor do Office no Visual Studio e configurar os arquivos de projeto, você pode começar a se concentrar em implementar o código e a interface do usuário personalizada (UI).  

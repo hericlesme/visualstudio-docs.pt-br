@@ -1,14 +1,14 @@
 ---
 title: Interfaces do Windows Script | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4c750627-6797-4857-9f5e-e5f54371f83c
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571846"
 ---
 # <a name="windows-script-interfaces"></a>Interfaces do Windows Script
 Interfaces do Microsoft Windows Script fornecem uma maneira para um aplicativo adicionar scripts e automação OLE. Hosts de script que dependem do Windows Script podem usar mecanismos de script de várias fontes e fornecedores para o script entre componentes. A tarefa de implementar o script em si – idioma, sintaxe, formato persistente, o modelo de execução e assim por diante – é deixada para o respectivo fornecedor.  

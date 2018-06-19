@@ -20,6 +20,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448383"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;Pontos&gt; elemento (desenvolvimento do Office no Visual Studio)
   O `entryPoints` elemento do `vstav3` namespace contém tudo o `entryPoint` elementos associados a uma solução do Office.  

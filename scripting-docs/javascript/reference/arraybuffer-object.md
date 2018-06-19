@@ -1,19 +1,20 @@
 ---
 title: Objeto ArrayBuffer | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9fda1261-f450-493b-b3db-ecfa9ca93cd7
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634316"
 ---
 # <a name="arraybuffer-object"></a>Objeto ArrayBuffer
 Representa um buffer bruto de dados binários, usado para armazenar dados para as diferentes matrizes digitadas. `ArrayBuffers`não é possível ler ou gravar diretamente, mas pode ser passado para uma matriz tipada ou [objeto DataView](../../javascript/reference/dataview-object.md) para interpretar o buffer bruto conforme necessário.  

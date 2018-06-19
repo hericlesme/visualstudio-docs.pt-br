@@ -20,6 +20,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103483"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
 Use a página **Compilar** do **Designer de Projeto** para especificar as propriedades de configuração de build do projeto. Essa página se aplica somente a projetos do [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
