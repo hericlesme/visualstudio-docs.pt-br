@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916742"
 ---
 # <a name="reliability-warnings"></a>Avisos de confiabilidade
 Avisos de confiabilidade oferecem suporte a confiabilidade de biblioteca e o aplicativo, como uso de memória e thread correto.

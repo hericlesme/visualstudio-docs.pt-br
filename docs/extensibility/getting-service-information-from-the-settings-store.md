@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127497"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Obtendo informações do serviço de repositório de configurações
 Você pode usar o repositório de configurações para localizar todos os serviços disponíveis ou para determinar se um serviço específico está instalado. Você deve saber o tipo de classe de serviço.  

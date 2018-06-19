@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132028"
 ---
 # <a name="source-control-integration-essentials"></a>Conceitos básicos de integração de controle de origem
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a dois tipos de integração de controle de origem: um plug-in de controle de origem que fornece a funcionalidade básica e é criado usando a API de plug-in de controle de origem (anteriormente conhecida como a API MSSCCI) e uma solução de integração de controle de origem baseado em VSPackage que fornece a funcionalidade mais robusta.  

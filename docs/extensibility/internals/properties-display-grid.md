@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134058"
 ---
 # <a name="properties-display-grid"></a>Grade de exibição de propriedades
 O **propriedades** janela exibe campos dentro de uma grade. A coluna esquerda contém os nomes de propriedade; a coluna à direita contém os valores de propriedade.  

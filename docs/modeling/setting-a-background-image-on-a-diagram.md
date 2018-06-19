@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949887"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Definindo uma imagem de plano de fundo em um diagrama
 No SDK de Visualização e Modelagem do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode configurar a imagem de plano de fundo para um designer gerado usando código personalizado.

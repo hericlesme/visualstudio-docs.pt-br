@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132185"
 ---
 # <a name="project-configuration-for-output"></a>Configuração de projeto para saída
 Cada configuração pode dar suporte a um conjunto de processos de compilação que produzir saída de itens, como arquivos executáveis ou de recurso. Esses itens de saída são particulares para o usuário e podem ser colocados em grupos que vinculam tipos relacionados de saída, como arquivos executáveis (.exe,. dll,. lib) e arquivos de origem (. idl, arquivos. h).  

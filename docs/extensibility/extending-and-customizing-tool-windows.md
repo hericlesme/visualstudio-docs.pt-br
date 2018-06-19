@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129229"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Estender e personalizar as janelas de ferramentas
 Visual Studio fornece vários tipos diferentes de windows, por exemplo, janelas de ferramentas, janelas de documento e caixa de diálogo. Outras janelas, como a janela Propriedades, a janela de saída e a janela lista de tarefas, são tipos de janelas de ferramentas.  

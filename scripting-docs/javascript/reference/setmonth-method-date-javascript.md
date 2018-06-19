@@ -1,13 +1,13 @@
 ---
-title: "Método setMonth (Date) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Método setMonth (Date) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setMonth
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Month method
 - setMonth method
 ms.assetid: 4f5be295-d536-46c0-b3a4-ad06457efe82
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640256"
 ---
 # <a name="setmonth-method-date-javascript"></a>Método setMonth (Date) (JavaScript)
 Define o valor de mês de `Date` usando o horário local do objeto.  

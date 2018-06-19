@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922436"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Atalhos de teclado do Designer XAML
 Atalhos de teclado no Designer XAML podem acelerar seu trabalho reduzindo em um único atalho de teclado uma ação que normalmente exigiria vários cliques com o botão do mouse.

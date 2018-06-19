@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134657"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Como: atualizar uma extensão do Visual Studio
 Você pode atualizar uma extensão do Visual Studio em seu sistema usando **extensões e atualizações** para instalar a versão atualizada. Se você criar uma versão atualizada de uma extensão, significam como atualizados aumentando o número de versão no manifesto do VSIX.  

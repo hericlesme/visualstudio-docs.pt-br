@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128904"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Guia de Introdução com Plug-ins de controle de origem
 Para criar um controle de origem plug-in, você deve criar uma DLL que implementa funções definidas na API de plug-in de controle de origem, e, em seguida, para registrar a DLL com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para torná-lo disponível para uso no controle de versão do código fonte.  

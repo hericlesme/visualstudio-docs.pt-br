@@ -1,13 +1,13 @@
 ---
-title: "Método toLocaleLowerCase (String) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Método toLocaleLowerCase (String) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toLocaleLowerCase
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toLocaleLowerCase method
 ms.assetid: add894d3-d14a-4dbc-a9b9-7ad1d3a2e581
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640466"
 ---
 # <a name="tolocalelowercase-method-string-javascript"></a>Método toLocaleLowerCase (String) (JavaScript)
 Converte todos os caracteres alfabéticos em minúsculas, levando em conta a localidade atual do ambiente de host.  

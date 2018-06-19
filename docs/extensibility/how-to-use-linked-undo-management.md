@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127631"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Como: usar o gerenciamento de desfazer vinculado
 Desfazer vinculado permite ao usuário desfazer simultaneamente as mesmo edições em vários arquivos. Por exemplo, as alterações no texto simultâneas em vários arquivos de programa, como um arquivo de cabeçalho e um arquivo de Visual C++, é uma transação desfazer vinculado. Capacidade de desfazer vinculado está incorporada a implementação do ambiente do Gerenciador de desfazer, e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> permite manipular esse recurso. Desfazer vinculado é implementado por uma unidade para desfazer pai que pode vincular pilhas de desfazer separado para ser tratado como uma unidade única de desfazer. O procedimento para usar desfazer vinculado é detalhado na seção a seguir.  

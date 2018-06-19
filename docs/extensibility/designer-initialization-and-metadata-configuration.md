@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132741"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicialização de Designer e a configuração de metadados
 Manipulação dos atributos de metadados e o filtro associado a um designer ou um componente do designer fornece um mecanismo para aplicativos definir quais ferramentas são usadas por um designer específico para lidar com diferentes <xref:System.Type> objetos (como estruturas de dados classes ou entidades gráficas), quando o designer está disponível e como o Visual Studio IDE é configurado para oferecer suporte ao designer (para instância que **caixa de ferramentas** categoria ou guia está disponível).  

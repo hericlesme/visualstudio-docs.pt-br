@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132783"
 ---
 # <a name="saving-a-standard-document"></a>Salvar um documento padrão
 O ambiente trata a salvar, salvar como e salvar todos os comandos. Quando um usuário seleciona **salvar**, **Salvar como**, ou **Salvar tudo** do **arquivo** menu ou fecha a solução, resultando em um  **Salvar todos os**, ocorre o seguinte processo.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133359"
 ---
 # <a name="custom-colorable-items"></a>Itens pode ser coloridos personalizados
 Você pode substituir a lista de tipos para colorir, como palavras-chave e comentários, Implementando itens pode ser coloridos personalizados como parte de seu serviço de linguagem.  

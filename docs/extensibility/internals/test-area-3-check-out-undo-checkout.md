@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134959"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de teste 3: Check-Out / desfazer check-out
 Essa área de plug-in de teste de controle de origem aborda itens de edição e reversão do armazenamento de versão por meio de **Check-Out** e **desfazer check-out** comandos.  

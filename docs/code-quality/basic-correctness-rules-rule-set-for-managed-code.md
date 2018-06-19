@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900624"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção básico para código gerenciado
 O conjunto de regras de correção básico se concentra em erros de lógica e erros comuns no uso de APIs do framework. As regras básicas de correção incluem as regras no conjunto de regras mínimo recomendado regras. Para obter mais informações, consulte [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) deve incluir esse conjunto de regras para expandir a lista de avisos que o mínimo recomendado de relatório de regras.

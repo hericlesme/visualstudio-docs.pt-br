@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130003"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Determinando que Editor abre um arquivo em um projeto
 Quando um usuário abre um arquivo em um projeto, o ambiente passa por um processo de sondagem, eventualmente abrindo o editor apropriado ou o criador do arquivo. O procedimento inicial empregado pelo ambiente é o mesmo para editores padrão e personalizados. O ambiente usa uma variedade de critérios quando o editor para usar para abrir um arquivo de sondagem e o VSPackage deve coordenar com o ambiente durante esse processo.  

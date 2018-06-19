@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131643"
 ---
 # <a name="solutions-overview"></a>Visão geral das soluções
 Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para criar um aplicativo. As informações de status e projeto pertencente à solução são armazenados em dois arquivos de solução diferentes. O arquivo de solução (. sln) é baseado em texto e pode ser colocado sob controle do código fonte e compartilhado entre os usuários. O arquivo de opção (. suo) de usuário de solução é binário. Como resultado, o arquivo. suo não pode ser colocado sob controle do código fonte e contém informações específicas do usuário.  

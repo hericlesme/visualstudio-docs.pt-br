@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946475"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imagens
 No Visual Studio, você pode salvar diagramas em formatos de somente leitura de modelagem para que você pode compartilhá-los com os participantes, usuários ou membros da equipe de projeto que não usam a mesma versão do Visual Studio.

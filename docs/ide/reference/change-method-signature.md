@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946319"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refatoração Alterar uma assinatura de método
 

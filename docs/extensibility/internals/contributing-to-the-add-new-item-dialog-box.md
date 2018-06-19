@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129216"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Que contribuem para a adicionar a caixa de diálogo Novo Item
 Um subtipo de projeto pode fornecer um novo diretório completo de itens para o **Adicionar Novo Item** caixa de diálogo Registrar **Adicionar Item** modelos sob o `Projects` subchave do registro.  

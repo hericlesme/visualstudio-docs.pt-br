@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133702"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Como: usar o contexto de interface do usuário baseada em regras para extensões do Visual Studio
 O Visual Studio permite o carregamento de VSPackages quando determinados conhecidos <xref:Microsoft.VisualStudio.Shell.UIContext>s são ativados. No entanto, esses contextos de interface do usuário não são muito bem com o detalhamento, não deixando os autores de extensão nenhuma opção de mas para selecionar um contexto de interface do usuário disponíveis que ativa antes do ponto realmente desejasse VSPackage para carregar. Para obter uma lista de contextos de interface de usuário bem conhecidos, consulte <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  

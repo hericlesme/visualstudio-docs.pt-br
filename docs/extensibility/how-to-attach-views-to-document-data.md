@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128455"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Como: anexar modos de exibição para dados de documento
 Se você tiver um novo modo de exibição de documento, você poderá anexá-lo a um objeto de dados de documento existente.  

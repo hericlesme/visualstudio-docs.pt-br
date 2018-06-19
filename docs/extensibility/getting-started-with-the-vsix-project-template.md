@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129187"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Guia de Introdução com o modelo de projeto do VSIX
 Você pode usar o modelo de projeto do VSIX para criar uma extensão ou para uma extensão existente para a implantação do pacote. O modelo de projeto do VSIX tem versões do Visual Basic e Visual c# e é instalado como parte do SDK do Visual Studio.  

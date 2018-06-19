@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131869"
 ---
 # <a name="source-control-vspackage-architecture"></a>Arquitetura de VSPackage de controle do código-fonte
 Um pacote de controle de origem é um VSPackage que usa os serviços que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE fornece. Em troca, um pacote de controle de origem fornece sua funcionalidade como um serviço de controle de origem. Além disso, um pacote de controle de origem é uma alternativa mais versátil que o plug-in para integrar o controle de origem em um controle de origem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

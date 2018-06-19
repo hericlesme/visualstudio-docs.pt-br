@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145952"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guia de teste para Plug-ins de controle de origem
 Esta seção fornece orientação para testar o controle de origem plug-in com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. É fornecida uma visão geral abrangente de áreas mais comuns de teste, bem como algumas das áreas mais complexas que podem ser problemáticas. Esta visão geral não deve ser uma lista completa de casos de teste.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126865"
 ---
 # <a name="icon-element"></a>Elemento de ícone
 O atributo de guid da marca do ícone é o guid de um bitmap definido.  O atributo id seleciona o slot na faixa de bitmap. Esse elemento é opcional.  Se esse elemento é omitido o valor de **guidOfficeIcon:msotcidNoIcon** será implícita.  

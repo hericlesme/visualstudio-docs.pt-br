@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127225"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Como: registrar eventos de Buffer de texto com a API herdado de
 Se você estiver acessando o buffer de texto usando a API herdada, você deve registrar para eventos de buffer de texto conforme mostrado no procedimento a seguir.  

@@ -1,13 +1,13 @@
 ---
-title: "Método setSeconds (Date) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Método setSeconds (Date) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setSeconds
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - setSeconds method
 - seconds method
 ms.assetid: 986ffa54-1db6-4af2-ab8b-8353f64f0b57
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640166"
 ---
 # <a name="setseconds-method-date-javascript"></a>Método setSeconds (Date) (JavaScript)
 Define o valor de segundos no `Date` usando o horário local do objeto.  

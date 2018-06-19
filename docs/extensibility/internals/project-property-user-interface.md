@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132421"
 ---
 # <a name="project-property-user-interface"></a>Interface de usuário de propriedades do projeto
 Um subtipo de projeto pode usar os itens no projeto **páginas de propriedade** caixa de diálogo conforme eles são fornecidos pelo projeto base, ocultar ou tornar os controles somente leitura e páginas inteiras fornecido ou adicionar páginas de subtipo específicas do projeto para o **Páginas de propriedade** caixa de diálogo.

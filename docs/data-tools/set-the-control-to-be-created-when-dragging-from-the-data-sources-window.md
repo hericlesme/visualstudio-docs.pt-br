@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922330"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Definir o controle a ser criado quando arrastado da janela fontes de dados
 Você pode criar controles associados a dados, arrastando itens a partir de **fontes de dados** janela para o designer do WPF ou o designer de formulários do Windows. Cada item de **fontes de dados** janela possui um controle padrão que é criado quando você arrastá-la para o designer. No entanto, você pode escolher criar um controle diferente.

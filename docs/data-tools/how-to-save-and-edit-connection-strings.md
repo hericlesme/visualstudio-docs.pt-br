@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916886"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Como salvar e editar cadeias de conexão
 Cadeias de caracteres de Conexão em aplicativos do Visual Studio podem ser salvo no arquivo de configuração do aplicativo (também chamado de configurações do aplicativo), ou embutidos diretamente em seu aplicativo. Salvar cadeias de conexão no arquivo de configuração do aplicativo simplifica a tarefa de realizar a manutenção de seu aplicativo. Se a cadeia de conexão precisar ser alterada, você poderá atualizá-la no arquivo de configurações do aplicativo (em vez de alterá-la no código-fonte e recompilar o aplicativo).

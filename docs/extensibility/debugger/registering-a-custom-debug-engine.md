@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126282"
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registrando um mecanismo de depuração personalizado
 O mecanismo de depuração deve se registrar como uma fábrica de classe segue as convenções de COM, bem como registrar com o Visual Studio por meio da subchave do registro do Visual Studio.  
