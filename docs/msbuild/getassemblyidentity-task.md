@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568819"
 ---
 # <a name="getassemblyidentity-task"></a>Tarefa GetAssemblyIdentity
 Recupera as identidades do assembly dos arquivos especificados e gera como saída as informações de identidade.  

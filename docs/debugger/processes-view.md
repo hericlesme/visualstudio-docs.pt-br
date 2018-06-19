@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474840"
 ---
 # <a name="processes-view"></a>Exibição de processos
 A tela processos exibe uma árvore de todos os processos ativos no sistema. O nome do módulo e o ID de processo são mostrados. Se você deseja examinar um processo de determinado sistema, que normalmente corresponde a um programa em execução, use o modo de exibição de processos. Processos são identificados por nomes de módulo ou são designados "processos do sistema".  

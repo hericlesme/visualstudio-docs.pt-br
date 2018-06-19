@@ -14,6 +14,7 @@ ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335678"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configuração de administradores para assinaturas de nuvem do Visual Studio
 

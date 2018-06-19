@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476969"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Cadeias de caracteres de exibição em um visualizador de cadeia de caracteres no Visual Studio
 Enquanto você está depurando, você pode abrir um visualizador de cadeia de caracteres em cadeias de caracteres de exibição que são muito longos para exibição em uma janela de dica ou depurador de dados. Em muitos cenários, o visualizador pode ajudar a identificar as cadeias de caracteres malformadas.

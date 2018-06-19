@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565686"
 ---
 # <a name="application-deployment-prerequisites"></a>Pré-requisitos de implantação de aplicativos
 Para garantir que seu aplicativo será instalado e executará com êxito, você deve primeiro garantir que todos os componentes dos quais o aplicativo depende já estejam instalados no computador de destino. Por exemplo, a maioria dos aplicativos criados usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tem uma dependência sobre o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; a versão correta do tempo de execução de linguagem comum deve estar presente no computador de destino antes a instalação do aplicativo.  

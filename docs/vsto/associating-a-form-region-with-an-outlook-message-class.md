@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268224"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associar uma região de formulário uma classe de mensagem do Outlook
   Você pode especificar quais itens do Microsoft Office Outlook exibem uma região de formulário, associando a região de formulário com a classe de mensagem de cada item. Por exemplo, se você deseja acrescentar uma região de formulário para a parte inferior de um item de email, você pode associar a região de formulário com o `IPM.Note` classe da mensagem.  

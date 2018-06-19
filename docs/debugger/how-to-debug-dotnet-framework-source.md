@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475633"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Como depurar a origem do .NET Framework
 Para depurar o código-fonte do .NET Framework, você deve ter acesso aos símbolos para o código de depuração. Você também precisará habilitar a depuração em código-fonte do .NET Framework.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262506"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como: aplicativos do Office de destino por meio de assemblies de interoperabilidade primários
   Quando você cria um novo projeto do Office, o Visual Studio adiciona automaticamente as referências para os Microsoft Office assemblies de interoperabilidade primários (PIAs) que são necessários para compilar seu projeto. Você deve adicionar referências a outros PIAs nos seguintes cenários:  

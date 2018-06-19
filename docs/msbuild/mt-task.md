@@ -31,6 +31,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578751"
 ---
 # <a name="mt-task"></a>Tarefa MT
 Encapsula a Ferramenta de Manifesto da Microsoft, a mt.exe. Para obter mais informações, consulte “Mt.exe” no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

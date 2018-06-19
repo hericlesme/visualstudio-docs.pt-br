@@ -12,6 +12,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453849"
 ---
 # <a name="installing-preview-releases"></a>Instalando versões prévias
 

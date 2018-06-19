@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477713"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Exibir eventos com o IntelliTrace no Visual Studio
 Você pode usar o IntelliTrace para coletar informações sobre eventos específicos ou as categorias de eventos ou chamadas de função individuais além de eventos. Os procedimentos a seguir mostram como fazer isso.  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558926"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Implantação do ClickOnce no Windows Vista
 Criando aplicativos no Visual Studio para controle de conta de usuário (UAC) no Windows Vista normalmente gera um manifesto inserido, como dados binários codificados XML no arquivo executável do aplicativo. Como aplicativos ClickOnce e COM sem registro exigem um manifesto externo, o Visual Studio gera um arquivo para esses tipos de projetos que contêm os dados UAC em vez de um manifesto inserido. Por padrão, o Visual Studio usa informações de um arquivo chamado App. manifest para gerar informações de manifesto de UAC externo (para implantação do ClickOnce e COM sem registro), ou para incorporá-lo no arquivo executável do aplicativo (para todos os outros casos). O Visual Studio fornece as seguintes opções de geração de manifesto:  

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475529"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Exibir o código de desmontagem no depurador do Visual Studio
 Este recurso está disponível somente se a depuração de nível de endereço está habilitada a **opções** caixa de diálogo, **depuração** nó. Não está disponível para depuração de Script ou SQL.  

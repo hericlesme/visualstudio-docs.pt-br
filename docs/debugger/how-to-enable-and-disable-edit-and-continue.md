@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480447"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Como: habilitar e desabilitar editar e continuar (c#, VB, C++)
 Você pode desabilitar ou habilitar editar e continuar no **opções** caixa de diálogo em tempo de design. Não é possível alterar essa configuração enquanto você está depurando.  

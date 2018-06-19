@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454630"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspecionar variáveis nos Autos e janelas de locais no Visual Studio
 O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **Depurar > Windows > Autos**) e o **locais** janela (durante a depuração **CTRL + ALT + V, L**, ou **Depurar > Windows > locais**) são muito úteis quando você deseja ver os valores de variáveis enquanto está depurando. O **locais** janela exibe as variáveis definidas no escopo local, que geralmente é a função ou método que está sendo executado atualmente. O **Autos** janela exibe variáveis usadas ao redor da linha atual (o local onde o depurador está parado). Exatamente quais variáveis são exibidos nessa janela são diferentes em idiomas diferentes. Consulte [o que as variáveis que aparecem na janela Autos?](#bkmk_whatvariables) abaixo.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865329"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Passo a passo: Conecte-se um Host para um processador de diretiva gerado
 

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557691"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Como o ClickOnce executa atualizações de aplicativos
 ClickOnce usa as informações de versão do arquivo especificadas no manifesto de implantação do aplicativo para decidir se deseja atualizar os arquivos do aplicativo. Depois que uma atualização começa, o ClickOnce usa uma técnica chamada *patch de arquivo* para evitar o download redundante dos arquivos de aplicativo.  

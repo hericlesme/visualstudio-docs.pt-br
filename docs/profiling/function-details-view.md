@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578303"
 ---
 # <a name="function-details-view"></a>Exibição de detalhes da função
 A janela **Exibição Detalhes da Função** exibe as seguintes informações:  

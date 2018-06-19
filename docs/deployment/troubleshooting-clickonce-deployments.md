@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561851"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Solução de problemas de implantações do ClickOnce
 Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações.  

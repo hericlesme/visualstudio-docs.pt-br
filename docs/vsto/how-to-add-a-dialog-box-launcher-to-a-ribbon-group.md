@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548379"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Como: adicionar um iniciador de caixa de diálogo a um grupo de faixa de opções
   Você pode adicionar um iniciador de caixa de diálogo a qualquer grupo em uma faixa de opções. Um iniciador de caixa de diálogo é um pequeno ícone que aparece em um grupo. Os usuários clique nesse ícone para abrir caixas de diálogo relacionadas ou painéis de tarefas que fornecem mais opções relacionadas ao grupo.  

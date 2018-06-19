@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477362"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Ferramentas para depurar threads e processos no Visual Studio
 *Threads* e *processos* são conceitos relacionados em ciência da computação. Ambos representam sequências de instruções que devem executar em uma ordem específica. Instruções em threads ou processos separados, entretanto, podem ser executados em paralelo.  

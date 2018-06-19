@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31563369"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Exemplos e instruções passo a passo para implantações ClickOnce
 Esta seção contém orientações passo a passo que ilustram a sintaxe, estrutura e técnicas usadas para implantar o Windows Forms, WPF e aplicativos de console, aplicativos de exemplo e código de exemplo.  
