@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110023"
 ---
 # <a name="debug-package"></a>Depurar pacote
 O pacote de depuração é executado no shell do Visual Studio e gerencia todos da interface do usuário. Ele consome o interfaces de depuração do Visual Studio e se comunica com o Gerenciador de sessão de depuração (SDM).  

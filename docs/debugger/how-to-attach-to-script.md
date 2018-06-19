@@ -25,6 +25,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454339"
 ---
 # <a name="how-to-attach-to-script"></a>Como anexar ao script
 Este tópico explica como anexar manualmente o depurador do Visual Studio para um arquivo de script para depuração.  

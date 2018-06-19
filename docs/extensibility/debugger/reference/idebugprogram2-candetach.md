@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115061"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
 Determina se um mecanismo de depuração (DE) poderá desanexar do programa.  

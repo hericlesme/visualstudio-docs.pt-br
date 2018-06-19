@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115155"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Esse método define o idioma que o processo será hospedado em. Esse idioma, em seguida, pode ser usado pelo mecanismo de depuração (DE) para carregar o avaliador de expressão apropriada.  
