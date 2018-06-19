@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965155"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Trabalhando com o Gerenciador de Linguagem Específica do Domínio
 O **DSL Explorer** exibe vários tipos de informações em uma exibição de árvore. Para obter mais informações sobre a maioria dos itens no Gerenciador de DSL, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md).

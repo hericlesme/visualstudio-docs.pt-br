@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965818"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Criar código personalizado e plug-ins para testes de carga
 

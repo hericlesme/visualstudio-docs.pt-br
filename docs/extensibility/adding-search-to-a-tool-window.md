@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032064"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adicionando a pesquisa a uma janela de ferramenta
 Quando você cria ou atualiza uma janela de ferramenta em sua extensão, você pode adicionar a mesma funcionalidade de pesquisa que aparece em outro lugar no Visual Studio. Essa funcionalidade inclui os seguintes recursos:  

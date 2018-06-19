@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954346"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurando um modelo de texto T4
 Você pode definir pontos de interrupção em modelos de texto. Para depurar um modelo de texto de tempo de design, salve o arquivo de modelo de texto e, em seguida, escolha **depurar T4 modelo** no menu de atalho do arquivo no Gerenciador de soluções. Para depurar um modelo de texto de tempo de execução, simplesmente depure o aplicativo ao qual ele pertence.

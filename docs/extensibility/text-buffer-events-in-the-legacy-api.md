@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143066"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Eventos de Buffer de texto na API herdado
 O objeto de buffer de texto emite vários eventos diferentes que permitem que você responda às situações diferentes.  

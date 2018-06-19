@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148240"
 ---
 # <a name="upgrading-projects"></a>Atualizando projetos
 Altera o modelo de projeto de uma versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para o próximo pode exigir que as soluções e projetos ser atualizado para que eles podem executar a versão mais recente. O [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fornece interfaces que podem ser usados para implementar o suporte à atualização em seus próprios projetos.  

@@ -1,13 +1,13 @@
 ---
-title: "Usando o método bind (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Usando o método bind (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this object [JavaScript]
 ms.assetid: f608f95b-3b9d-437a-a67a-5a4ef8f6c07f
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +26,7 @@ ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/05/2018
+ms.locfileid: "28987861"
 ---
 # <a name="using-the-bind-method-javascript"></a>Usando o método bind (JavaScript)
 O método de JavaScript `bind` possui vários usos. Normalmente, ele é usado para preservar o contexto de execução para uma função que executa em outro contexto. `bind` cria uma nova função com o mesmo corpo da função original. O primeiro argumento passado para `bind` especifica o valor da palavra-chave `this` na função associada. Você também pode passar argumentos opcionais adicionais para `bind`. Para obter exemplos de usos adicionais, consulte o [Método bind (Function)](../../javascript/reference/bind-method-function-javascript.md). Para um exemplo de como usar `bind` para aplicar parcialmente as funções, consulte [Padrões e dicas de programação assíncrona no Hilo JavaScript (Windows Store)](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx).  

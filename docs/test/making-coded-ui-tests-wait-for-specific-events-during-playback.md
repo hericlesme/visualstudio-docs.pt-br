@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975840"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Fazendo testes de IU codificado aguardar eventos específicos durante a reprodução
 

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103431"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
 Esta caixa de diálogo permite que você defina o build de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] e configurações de projeto relacionadas ao log de build e tipos de arquivo de suporte.

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954741"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como adicionar um comando ao menu de atalho
 É possível adicionar comandos de menu à linguagem específica do domínio (DSL) para que seus usuários possam executar tarefas que são específicas de sua DSL. Os comandos aparecem no menu de contexto (atalho) quando os usuários clicam com o botão direito do mouse no diagrama. Você pode definir um comando para aparecer no menu apenas em circunstâncias específicas. Por exemplo, você pode tornar o comando visível apenas quando o usuário clicar em tipos específicos de elementos ou em elementos em estados específicos.

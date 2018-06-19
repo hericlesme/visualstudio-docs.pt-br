@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975514"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da web contém "\<html >..." e todas as outras partes padrão de uma página HTML. Inserido no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.

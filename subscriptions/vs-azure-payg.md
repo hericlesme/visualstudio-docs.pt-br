@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31195316"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Configurando uma assinatura Paga Conforme o Uso de Desenvolvimento/Teste do Azure
 Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso de Desenvolvimento e de Teste, permitindo a colaboração com outros assinantes e também o isolamento entre as equipes e os ambientes.  Você recebe taxas por hora com desconto exclusivas para desenvolvimento/teste e direitos de uso de nuvem para seu software de assinatura no Azure.

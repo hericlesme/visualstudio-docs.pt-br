@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143880"
 ---
 # <a name="walkthrough-outlining"></a>Instruções passo a passo: estrutura de tópicos
 Você pode implementar recursos de linguagem, como a estrutura de tópicos definindo os tipos de regiões de texto que você deseja expandir ou recolher. Você pode definir regiões no contexto de um serviço de idioma, você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e aplica a definição de região a somente esse tipo ou você pode aplicar as definições de região como um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como definir e exibir regiões de estrutura de tópicos.  

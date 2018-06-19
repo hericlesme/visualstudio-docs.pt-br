@@ -25,6 +25,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106928"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
 

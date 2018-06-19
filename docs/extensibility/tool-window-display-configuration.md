@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143687"
 ---
 # <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramenta
 Quando um VSPackage registra uma janela de ferramenta, a posição padrão, tamanho, estilo de encaixe e outras informações de visibilidade é especificado em valores opcionais. Para obter mais informações sobre o registro da janela da ferramenta, consulte [janelas de ferramenta no registro](../extensibility/tool-windows-in-the-registry.md)  

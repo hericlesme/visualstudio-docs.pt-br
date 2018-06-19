@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031544"
 ---
 # <a name="step-2-writing-and-running-code"></a>Etapa 2: escrevendo e executando um código
 

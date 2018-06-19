@@ -25,6 +25,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031638"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: não marcar enums com FlagsAttribute
 

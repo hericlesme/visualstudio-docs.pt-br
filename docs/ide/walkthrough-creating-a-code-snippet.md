@@ -24,6 +24,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425151"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Criar um trecho de código
 Você pode criar um trecho de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Adicione o trecho à instalação do Visual Studio usando o botão **Importar** no **Gerenciador de Trechos de Código** (**Ferramentas** > **Gerenciador de Trechos de Código**).

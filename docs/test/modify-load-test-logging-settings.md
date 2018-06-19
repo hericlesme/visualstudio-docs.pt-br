@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968188"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar configurações de registro em log de testes de carga
 

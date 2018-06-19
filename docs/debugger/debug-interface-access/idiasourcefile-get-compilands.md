@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460691"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
 Recupera um enumerador de compilandos que têm números de linha referenciar este arquivo.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144876"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornecendo suporte de desfazer para Designers
 Designers, editores, como o normalmente precisam dar suporte a operações de desfazer para que os usuários podem reverter suas alterações recentes ao modificar um elemento de código.  

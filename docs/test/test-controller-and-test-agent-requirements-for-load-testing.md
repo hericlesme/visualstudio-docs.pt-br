@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974852"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Test Controller e requisitos de Test Agent para testes de carga
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143313"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Passo a passo: Exibindo a correspondência de chaves
 Você pode implementar recursos de idioma como correspondência definindo as chaves que você deseja corresponder e, em seguida, adicionar uma marca de marcador de texto para correspondência de chaves quando o cursor estiver em uma das chaves de chaves. Você pode definir chaves no contexto de um idioma, você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e aplicar as marcas a apenas esse tipo ou você pode aplicar marcas para um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar a chave de correspondência de marcas para o tipo de conteúdo "texto".  

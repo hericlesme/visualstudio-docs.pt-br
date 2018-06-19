@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457820"
 ---
 # <a name="dia2dump-sample"></a>Exemplo de Dia2dump
 O exemplo de Dia2dump é instalado com o Visual Studio e contém a origem dia2dump.cpp. O executável compilado é executado na linha de comando e exibe o conteúdo de um arquivo de banco de dados (. PDB) do programa inteiro.  

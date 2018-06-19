@@ -28,6 +28,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031560"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 

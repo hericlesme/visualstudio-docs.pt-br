@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975866"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Como: Fluxos de trabalho de depuração ASP.NET-Based (legados)
 

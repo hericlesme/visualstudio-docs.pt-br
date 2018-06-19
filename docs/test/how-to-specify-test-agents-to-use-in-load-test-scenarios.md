@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968489"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Como especificar agentes de teste para usar em cenários de teste de carga
 

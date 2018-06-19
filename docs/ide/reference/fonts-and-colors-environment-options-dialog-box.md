@@ -33,6 +33,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954223"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.

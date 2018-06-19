@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967228"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabalhando com o diagrama de definição de DSL
 O diagrama de um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é uma ferramenta importante para definir a linguagem específica de domínio. É possível adicionar elementos ao seu modelo de domínio e definir as relações no diagrama e é possível modificar o layout do diagrama para torná-lo mais legível.

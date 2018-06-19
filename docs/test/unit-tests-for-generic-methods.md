@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977277"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 

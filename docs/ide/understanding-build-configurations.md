@@ -32,6 +32,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425119"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 

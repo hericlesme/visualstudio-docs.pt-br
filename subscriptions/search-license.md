@@ -14,6 +14,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031176"
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Pesquisando e filtrando assinantes em assinaturas do Visual Studio
 O Portal de Administração de Assinaturas do Visual Studio permite encontrar um subconjunto específico de assinantes com base em vários critérios. Você pode filtrar a lista de assinantes por nome, endereço de email, nível de assinatura e várias outras informações. 

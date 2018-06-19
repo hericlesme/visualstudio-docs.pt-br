@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966648"
 ---
 # <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>Como especificar com que frequência os logs de teste são salvos usando o Editor de Teste de Carga
 

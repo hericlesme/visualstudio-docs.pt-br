@@ -24,6 +24,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143521"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Quando o usuário executa uma operação de controle de origem de dentro do ambiente de desenvolvimento integrado (IDE), o plug-in de controle do código-fonte talvez queira transmitir mensagens de erro ou de status relacionadas à operação. O plug-in pode exibir suas próprias caixas de mensagem para essa finalidade. No entanto, para integração perfeita mais, o plug-in pode passar cadeias de caracteres para o IDE, que são exibidos em seu modo nativo de exibir informações de status. O mecanismo para isso é o `LPTEXTOUTPROC` ponteiro de função. O IDE implementa essa função (descrita em mais detalhes abaixo) para exibir o status e erros.  

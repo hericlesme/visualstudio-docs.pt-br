@@ -22,6 +22,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425495"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Geração de código e modelos de texto T4
 

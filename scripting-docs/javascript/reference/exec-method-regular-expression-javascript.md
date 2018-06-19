@@ -1,13 +1,13 @@
 ---
-title: "Método Exec (Expressão Regular) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Método Exec (Expressão Regular) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - exec
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - matching strings
 - Exec method
 ms.assetid: 83092452-60cc-4218-b4ae-af9e3cb96c34
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637036"
 ---
 # <a name="exec-method-regular-expression-javascript"></a>Método exec (expressão regular) (JavaScript)
 Executa uma pesquisa em uma cadeia de caracteres usando um padrão de expressão regular e retorna uma matriz que contém os resultados da pesquisa.  

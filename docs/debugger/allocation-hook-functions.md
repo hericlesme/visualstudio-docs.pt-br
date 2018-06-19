@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460102"
 ---
 # <a name="allocation-hook-functions"></a>Funções de gancho da alocação
 Uma função de gancho de alocação, instalada usando [crtsetallochook](/cpp/c-runtime-library/reference/crtsetallochook), é chamado sempre que a memória é alocada, realocada ou liberada. Esse tipo de gancho pode ser usada para muitas finalidades diferentes. Use-o para testar como um aplicativo trata situações de memória insuficiente, por exemplo, ou para examinar padrões de alocação ou registrar informações de alocação para análise posterior.  

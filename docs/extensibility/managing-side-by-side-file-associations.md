@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146800"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Gerenciamento de associações de arquivo lado a lado
 Se seu VSPackage fornece associações de arquivo, você deve decidir como lidar com instalações lado a lado em que uma versão específica do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deve ser chamado para abrir um arquivo. Formatos de arquivo incompatível composta o problema.  

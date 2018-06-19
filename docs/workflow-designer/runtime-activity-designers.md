@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31971539"
 ---
 # <a name="runtime-activity-designers"></a>Designer de atividade do tempo de execução
 Os designers de atividade de tempo de execução são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar os designers de atividade do Designer de fluxo de trabalho.

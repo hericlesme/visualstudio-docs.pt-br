@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144889"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Passo a passo: Vinculação de um tipo de conteúdo para uma extensão de nome de arquivo
 Você pode definir seu próprio tipo de conteúdo e vincular uma extensão de nome de arquivo usando as extensões do editor Managed Extensibility Framework (MEF). Em alguns casos, a extensão de nome de arquivo já foi definida por um serviço de linguagem; No entanto, para usá-lo com MEF você ainda deve vinculá-lo para um tipo de conteúdo.  

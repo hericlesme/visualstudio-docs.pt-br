@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31149010"
 ---
 # <a name="layout-for-visual-studio"></a>Layout para o Visual Studio
 A maioria das caixas de diálogo do Visual Studio [layout da caixa de diálogo de utilitário](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que são o unthemed caixas de diálogo padrão que seguem [princípios de layout de caixa de diálogo Windows Desktop](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Como o Visual Studio se move para atualizar sua interface do usuário, algumas das caixas de diálogo mais proeminentes têm um novo design que estabelece-los como definição de produto experiências. Essas [layout da caixa de diálogo com tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tem uma aparência com tema.  

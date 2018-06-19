@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148656"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamento de novo ou alterado com adaptadores de Editor
 Se você estiver atualizando o código escrito em relação a versões anteriores do editor de núcleo do Visual Studio, e você planeja usar o editor adaptadores (ou correções) em vez de usar a nova API, você deve estar ciente das seguintes diferenças no comportamento dos adaptadores de editor em relação ao editor de núcleo anterior.  

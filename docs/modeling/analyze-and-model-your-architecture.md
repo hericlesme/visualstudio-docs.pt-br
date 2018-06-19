@@ -37,6 +37,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106954"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analisar e modelar a sua arquitetura
 Verifique se que seu aplicativo atende aos requisitos arquitetônicos usando a arquitetura do Visual Studio e ferramentas para criar e modelo do seu aplicativo de modelagem.

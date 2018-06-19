@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969123"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Como usar a API de teste de desempenho Web
 

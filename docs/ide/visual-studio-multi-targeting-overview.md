@@ -20,6 +20,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425083"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multiplataforma no Visual Studio
 

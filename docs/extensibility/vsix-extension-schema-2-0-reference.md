@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148643"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência de esquema 2.0 de extensão do VSIX
 Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um pacote do VSIX. O formato de arquivo é regido por um esquema. Oferece suporte a versão 2.0 do esquema, a adição de atributos e tipos personalizados.  O esquema do manifesto é extensível. O carregador do manifesto ignora elementos e atributos que não entende XML.  
