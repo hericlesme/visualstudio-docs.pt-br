@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109958"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalização do Windows de código usando a API herdado
 Uma janela de código é um objeto de janela de documento que oferece suporte a um ou mais modos de exibição de texto. Os recursos exatos de uma janela de código dependem do serviço de idioma associado. No modo de interface de documentos múltiplos (MDI), a janela de código é o quadro de filho MDI.  

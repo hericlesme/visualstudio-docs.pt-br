@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108780"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Sinalizadores de bit usados por comandos específicos
 O comportamento de um número de funções da API de plug-in de controle de origem pode ser modificado, definindo um ou mais bits em um único valor. Esses valores são conhecidos como os sinalizadores de bit. O sinalizadores de bit vários utilizada a API de plug-in de controle de origem são detalhados aqui, agrupados por função em que os utiliza.  

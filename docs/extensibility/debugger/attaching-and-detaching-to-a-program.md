@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110062"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Anexar e desanexar para um programa
 Anexar o depurador requer o envio de sequência correta de métodos e eventos com os atributos apropriados.  

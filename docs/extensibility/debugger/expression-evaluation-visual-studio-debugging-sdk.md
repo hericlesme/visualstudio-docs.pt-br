@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109799"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Avaliação de expressão (Visual Studio SDK de depuração)
 Durante o modo de interrupção, o IDE deve ser capaz de avaliar expressões simples envolvendo diversas variáveis do programa. Para fazer isso, o mecanismo de depuração (DE) deve ser capaz de analisar e avaliar uma expressão que é inserida em uma das janelas do IDE.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31892697"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Métodos anônimos e análise de código
 Um *método anônimo* é um método que não tem nome. Métodos anônimos com mais frequência são usados para passar um bloco de código como um parâmetro de representante.

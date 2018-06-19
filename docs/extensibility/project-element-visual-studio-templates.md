@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139257"
 ---
 # <a name="project-element-visual-studio-templates"></a>Elemento de projeto (Modelos do Visual Studio)
 Especifica os arquivos ou diretórios a serem adicionados ao projeto.  

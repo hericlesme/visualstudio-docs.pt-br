@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902133"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: os enums devem ter valor zero
 |||
