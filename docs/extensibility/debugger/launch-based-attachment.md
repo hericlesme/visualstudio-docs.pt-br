@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099370"
 ---
 # <a name="launch-based-attachment"></a>Anexo de lançamento
 Anexo com base em Iniciar em um programa é automático. Quando o processo que hospeda o programa é iniciado pelo SDM, anexo de inicialização segue um caminho semelhante a que o método de anexo manual. Para obter informações, consulte [anexando ao programa](../../extensibility/debugger/attaching-to-the-program.md).  
