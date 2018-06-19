@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31105204"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Solicitações que todos os programas que estão sendo depurado por este mecanismo de depuração (DE) para interromper a execução da próxima vez que um dos seus threads tentará executar.  

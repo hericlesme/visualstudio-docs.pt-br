@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926373"
 ---
 # <a name="edit-data-in-datasets"></a>Editar dados em conjuntos de dados
 Você editar dados em tabelas de dados, assim como você editar os dados em uma tabela em qualquer banco de dados. O processo pode incluir inserir, atualizar e excluir registros na tabela. Em um formulário de associação de dados, você pode especificar quais campos são editáveis pelo usuário. Nesses casos, a infraestrutura de associação de dados trata todos os controle de alterações para que as alterações podem ser enviadas no banco de dados mais tarde. Se você programaticamente fazer edições em dados e quiser enviar essas alterações no banco de dados, você deve usar os objetos e métodos que fazem o controle de alterações para você.

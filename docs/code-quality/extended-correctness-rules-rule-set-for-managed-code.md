@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926542"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção estendido para código gerenciado
 O conjunto de regras de correção estendido Microsoft maximiza os erros de uso de lógica e do framework que são relatados pela análise de código. É dada ênfase adicional em cenários específicos, como interoperabilidade COM e aplicativos móveis. Você deve considerar como essa regra definir se um desses cenários se aplicar ao seu projeto ou para localizar problemas adicionais no seu projeto.

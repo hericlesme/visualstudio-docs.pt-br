@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107492"
 ---
 # <a name="creating-a-settings-category"></a>Criar uma categoria de configurações
 Neste passo a passo, você cria uma categoria de configurações do Visual Studio e usá-lo para salvar os valores e restaurar os valores de um arquivo de configurações. Uma categoria de configuração é um grupo de propriedades relacionadas que aparecem como um "ponto de configurações personalizadas;" ou seja, como uma caixa de seleção de **importar e exporta configurações** assistente. (Você pode encontrar o **ferramentas** menu.) As configurações são salvas ou restauradas como uma categoria e configurações individuais não são exibidas no assistente. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099331"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Alterar configurações de exibição usando a API herdado
 As configurações para os principais recursos do editor, como quebra automática de linha, a margem de seleção e o espaço virtual, podem ser alteradas pelo usuário por meio do **opções** caixa de diálogo. No entanto, também é possível alterar essas configurações por meio de programação.  

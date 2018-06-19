@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098661"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Acessando as camadas de texto usando a API herdado
 Normalmente, uma camada de texto encapsula alguns aspectos do layout de texto. Por exemplo, uma camada de "uma função no tempo" oculta o texto antes e depois de uma função que contém o cursor (ponto de inserção de texto).  

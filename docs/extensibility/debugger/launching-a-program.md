@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103858"
 ---
 # <a name="launching-a-program"></a>Iniciando um programa
 Os usuários que desejam depurar um programa podem pressionar F5 para executar o depurador do IDE. Isso inicia uma série de eventos que resultam, por fim, o IDE conectar-se ao mecanismo de depuração (DE), que por sua vez conectado, ou anexado, o programa da seguinte maneira:  

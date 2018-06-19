@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102376"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personalizando Menus e controles do Editor usando a API herdado
 Um serviço de idioma ou um modo de exibição de texto pode controlar os controles no editor e menus de contexto. As páginas nesta seção detalham sobre como trabalhar com esses recursos.  

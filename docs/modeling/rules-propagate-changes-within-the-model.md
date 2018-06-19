@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952753"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regras propagam alterações dentro do modelo
 Você pode criar uma regra do repositório para propagar uma alteração de um elemento para outro em visualização e modelagem SDK (VMSDK). Quando ocorre uma alteração para qualquer elemento no repositório de regras são agendadas para ser executado, normalmente quando a transação externa é confirmada. Há tipos diferentes de regras para diferentes tipos de eventos, como adicionar um elemento ou excluí-lo. Você pode anexar as regras para tipos específicos de elementos, formas ou diagramas. Muitos recursos internos são definidos por regras: por exemplo, regras de garantem que um diagrama é atualizado quando o modelo é alterado. Você pode personalizar sua linguagem específica de domínio adicionando suas próprias regras.

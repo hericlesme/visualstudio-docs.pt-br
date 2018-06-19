@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101372"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Criando um mecanismo de depuração personalizado
 Um mecanismo de depuração (DE) é um componente que permite a depuração de arquiteturas de tempo de execução específicas. Normalmente, há apenas uma implementação DE por ambiente de tempo de execução.  

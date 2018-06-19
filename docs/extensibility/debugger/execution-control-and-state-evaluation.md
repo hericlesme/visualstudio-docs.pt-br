@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098167"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Controle de execução e avaliação de estado
 Depurando um aplicativo requer a implementação de recursos de controle, execução, como depuração em funções, parando em pontos de interrupção e continuando a execução. Depuração de bases de dados do Visual Studio seu controle de execução em eventos enviados entre componentes do depurador.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103078"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Adicionar um Menu a barra de menus do Visual Studio
 Este passo a passo mostra como adicionar um menu a barra de menus do ambiente de desenvolvimento integrado (IDE) do Visual Studio. A barra de menus do IDE contém categorias de menu como **arquivo**, **editar**, **exibição**, **janela**, e **ajuda** .  

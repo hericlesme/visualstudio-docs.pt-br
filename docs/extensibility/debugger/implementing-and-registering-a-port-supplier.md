@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103169"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementando e registrando um fornecedor de porta
 A função de um fornecedor de porta é rastrear e fornecer portas, que por sua vez, gerenciar processos. No momento em que uma porta precisa ser criado, o fornecedor de porta é instanciado usando CoCreate com o GUID do fornecedor de porta (o Gerenciador de sessão de depuração [SDM] usará o usuário selecionado do fornecedor de porta ou o fornecedor de porta especificado pelo sistema de projeto). O SDM chamará [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para ver se todas as portas podem ser adicionadas. Se uma porta pode ser adicionada, uma nova porta é solicitada ao chamar [adicionar porta](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) e passá-lo um [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) que descreve a porta. `AddPort` Retorna uma nova porta representada por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface.  

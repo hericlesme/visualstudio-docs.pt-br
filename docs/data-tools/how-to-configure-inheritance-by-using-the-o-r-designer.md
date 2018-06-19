@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925369"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Como: configurar a herança usando Object Relational Designer
 [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Na tabela única de herança, há uma tabela de banco de dados único que contém campos para as informações de pai e informações de filho. Com dados relacionais, uma coluna discriminatória contém o valor que determina qual classe qualquer registro pertence.

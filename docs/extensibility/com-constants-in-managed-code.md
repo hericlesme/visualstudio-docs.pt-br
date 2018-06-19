@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101882"
 ---
 # <a name="com-constants-in-managed-code"></a>Constantes de COM em código gerenciado
 Estrutura de pacote gerenciado (MPF) faz com que algumas constantes COM padrão disponível para código gerenciado. Essas constantes estão listados abaixo para referência.  

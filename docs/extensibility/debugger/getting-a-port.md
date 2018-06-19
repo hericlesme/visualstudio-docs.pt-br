@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102987"
 ---
 # <a name="getting-a-port"></a>Obtendo uma porta
 Uma porta representa uma conexão a uma máquina que processos estão em execução. Esse computador pode ser o computador local ou em um computador remoto (que possivelmente pode estar executando um sistema operacional não baseado em Windows, consulte [portas](../../extensibility/debugger/ports.md) para obter mais informações).  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926235"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Passo a passo: Depurar um aplicativo multithread no Visual Studio usando a janela Threads
 O Visual Studio fornece um **Threads** elementos para ajudá-lo a depurar aplicativos multithread de interface de janela e outro usuário. Este tutorial mostra como usar o **Threads** janela e **local do depurador** barra de ferramentas. Para obter informações sobre outras ferramentas, consulte [começar a depurar aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md). Este tutorial leva apenas alguns minutos, mas concluí-la irá familiarizá-lo com os recursos para depurar aplicativos multithread.   

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102311"
 ---
 # <a name="expression-evaluator"></a>Avaliador de expressão
 Avaliadores de expressão (EE) examinam a sintaxe de um idioma para analisar e avaliar expressões e variáveis em tempo de execução, permitindo que eles sejam exibidos pelo usuário quando o IDE no modo de interrupção.  

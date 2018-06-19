@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101931"
 ---
 # <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
 Descreve a resolução de um ponto de interrupção em um local específico.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103234"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referência da API (depuração no Visual Studio)
 A seção de referência inclui uma visão geral conceitual da API, um guia que mostra a sintaxe e uso de todos os elementos de API e uma variedade de exemplos de código. Todas as referências são listadas em ordem alfabética por categoria.  

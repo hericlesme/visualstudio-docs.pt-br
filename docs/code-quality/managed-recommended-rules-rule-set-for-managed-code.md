@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924804"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Conjunto de regras recomendadas gerenciado para código gerenciado
 Você pode usar o Microsoft Managed recomendado conjunto de regras para focalizar os problemas mais críticos do código gerenciado, inclusive falhas potenciais de segurança, falhas de aplicativo e outros erros importantes de lógica e design. Você deve incluir esse conjunto de regras em qualquer conjunto personalizado que você criar para seus projetos.

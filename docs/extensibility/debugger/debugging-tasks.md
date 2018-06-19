@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101130"
 ---
 # <a name="debugging-tasks"></a>Tarefas de depuração
 Para depurar um programa, ele deve ser iniciado e um mecanismo de depuração (DE) deve ser anexado a ele, caso contrário, o DE deve ser anexado a um programa iniciado anteriormente. Depois de conectado, o DE deve gerar determinados eventos de inicialização. Em resposta, o pacote de depuração tenta associar os pontos de interrupção definidos no IDE. Quando o programa atingir um ponto de interrupção associado, ele é interrompida e aguarda a entrada do usuário.  

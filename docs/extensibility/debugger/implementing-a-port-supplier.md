@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098986"
 ---
 # <a name="implementing-a-port-supplier"></a>Implementando um fornecedor de porta
 Um fornecedor de porta fornece portas de solicitação para o Gerenciador de sessão de depuração (SDM). Um fornecedor de porta deve ser implementado durante a depuração em uma máquina não DCOM ou quando um novo dispositivo precisa de suporte. Por exemplo, para fornecer a depuração para um telefone celular, você pode implementar um fornecedor de porta que fornece as portas que se conectam para o telefone celular (talvez por meio de IV ou uma conexão de célula) e enumera os processos e programas em execução no telefone.  

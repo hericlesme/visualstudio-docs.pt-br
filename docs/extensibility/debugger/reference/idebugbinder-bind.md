@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100059"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 Esse método obtém o contexto de memória ou o objeto que contém o valor atual do símbolo.  

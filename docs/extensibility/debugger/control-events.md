@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101655"
 ---
 # <a name="control-events"></a>Eventos de controle
 Você deve enviar eventos durante a execução controlada de seu programa. Todos os eventos são enviados usando a [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) de interface e ter atributos que exigem que você implemente o [IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) método.  

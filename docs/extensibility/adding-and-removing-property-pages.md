@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101284"
 ---
 # <a name="adding-and-removing-property-pages"></a>Adicionando e removendo páginas de propriedade
 O Designer de projeto fornece um local centralizado para gerenciar as propriedades do projeto, configurações e recursos no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ele aparece como uma única janela no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrado (IDE) do ambiente de desenvolvimento e contém um número de painéis à direita que são acessados pelas guias à esquerda. Os painéis (também conhecidos como páginas de propriedade) no Designer de projeto variam de acordo com o idioma e o tipo de projeto. O Designer de projeto podem ser acessado com o **propriedades** comando o **projeto** menu.  

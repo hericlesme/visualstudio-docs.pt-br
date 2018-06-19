@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100524"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Habilitar um programa a ser depurado
 Antes do mecanismo de depuração (DE) pode depurar um programa, você deve primeiro iniciar DE ou anexá-lo para um programa existente.  

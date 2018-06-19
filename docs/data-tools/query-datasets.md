@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926688"
 ---
 # <a name="query-datasets"></a>Conjuntos de dados de consulta
 Para procurar por registros específicos em um conjunto de dados, use o método FindBy no DataTable, escrever sua própria instrução foreach para executar um loop pela coleção de linhas da tabela, ou usar [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).

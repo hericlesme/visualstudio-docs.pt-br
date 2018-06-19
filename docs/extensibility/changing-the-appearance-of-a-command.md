@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099077"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Alterando a aparência de um comando
 Você pode fornecer comentários ao usuário alterando a aparência de um comando. Por exemplo, talvez seja um comando para ter uma aparência diferente quando ele não está disponível. Você pode ativar ou desativar a comandos, ocultar ou mostrá-los, ou marque ou desmarque-os no menu.  

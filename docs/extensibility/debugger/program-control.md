@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102084"
 ---
 # <a name="program-control"></a>Controle do programa
 No Visual Studio de depuração, todos os procedimentos passo a passo e continuar rotinas ocorrerem no nível do programa:  

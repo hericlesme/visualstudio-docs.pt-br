@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946800"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Ativar/Desativar Ponto de Interrupção
 Ativa ou desativa o ponto de interrupção dependendo de seu estado atual, no local atual do arquivo.

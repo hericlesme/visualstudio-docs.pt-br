@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102194"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Criar e gerenciar caixas de diálogo modais
 Quando você cria uma caixa de diálogo modal dentro do Visual Studio, certifique-se de que a janela pai da caixa de diálogo está desabilitada enquanto a caixa de diálogo é exibida e habilite novamente a janela pai depois que a caixa de diálogo é fechada. Se você não fizer isso, você pode receber o erro: "Microsoft Visual Studio não pode desligar porque uma caixa de diálogo modal está ativa. Feche a caixa de diálogo ativa e tente novamente."  

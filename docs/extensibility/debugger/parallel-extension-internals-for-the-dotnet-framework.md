@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100605"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Recursos internos de extensão paralelas para o .NET Framework
 Esta seção descreve os tipos internos, métodos e campos de classes que ajudam você implementam um depurador personalizado para extensões paralelas para o .NET Framework.  

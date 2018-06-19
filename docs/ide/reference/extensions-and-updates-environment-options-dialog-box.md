@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943300"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Caixa de diálogo de extensões e atualizações, ambiente, opções
 Use esta página para definir opções de como o Visual Studio executa atualizações e como extensões são atualizadas e descobertas.
