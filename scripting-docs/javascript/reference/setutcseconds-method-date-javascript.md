@@ -1,13 +1,13 @@
 ---
-title: "Método setUTCSeconds (Date) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Método setUTCSeconds (Date) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - setUTCSeconds
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - UTC times, setting
 - seconds method
 ms.assetid: e035e282-b39d-4d1d-8771-c17542fd6493
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640536"
 ---
 # <a name="setutcseconds-method-date-javascript"></a>Método setUTCSeconds (Date) (JavaScript)
 Define o valor de segundos no `Date` usando o Horário Coordenado Universal (UTC) do objeto.  

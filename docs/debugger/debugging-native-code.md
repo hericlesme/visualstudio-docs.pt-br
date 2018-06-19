@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472900"
 ---
 # <a name="debugging-native-code"></a>Depurando código nativo
 A seção aborda alguns problemas comuns de depuração e técnicas para aplicativos nativos. As técnicas abordadas nesta seção são de alto nível. Para os mecanismos de usar o depurador do Visual Studio, consulte [Debugger Roadmap](../debugger/debugger-basics.md).  

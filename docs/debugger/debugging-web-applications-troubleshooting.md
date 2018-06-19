@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470849"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: solucionando problemas
 Esta seção contém procedimentos comuns que podem ser usados para resolver erros.  

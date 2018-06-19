@@ -1,13 +1,13 @@
 ---
-title: "Método substring (String) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Método substring (String) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640926"
 ---
 # <a name="substring-method-string-javascript"></a>Método substring (String) (JavaScript)
 Retorna a subcadeia de caracteres no local especificado em uma `String` objeto.  
@@ -52,7 +53,7 @@ Retorna a subcadeia de caracteres no local especificado em uma `String` objeto.
 ## <a name="remarks"></a>Comentários  
  O `substring` método retorna uma cadeia de caracteres que contém a subcadeia de caracteres `start` até, mas não incluindo `end`.  
   
- O **subcadeia de caracteres** método usa o menor valor de `start` e `end` como o ponto de início da subcadeia de caracteres. Por exemplo, strvar.substring (0, 3**)** e a mesma subcadeia de caracteres de retorno de strvar.substring (3, 0).  
+ O **subcadeia de caracteres** método usa o menor valor de `start` e `end` como o ponto de início da subcadeia de caracteres. Por exemplo, strvar.substring (0, 3 **)** e a mesma subcadeia de caracteres de retorno de strvar.substring (3, 0).  
   
  Se qualquer um dos `start` ou `end` é `NaN` ou negativo, ele é substituído por zero.  
   

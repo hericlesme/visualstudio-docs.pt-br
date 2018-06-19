@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472718"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
 No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Especifique as configurações do depurador no **opções** caixa de diálogo.  

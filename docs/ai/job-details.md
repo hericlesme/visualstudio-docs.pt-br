@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29709818"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Exibir detalhes e desempenho do trabalho recentes
 Depois que os trabalhos forem enviados, será possível exibir a lista de trabalhos para ver seus status, duração e mais.

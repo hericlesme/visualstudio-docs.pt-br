@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148592"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Serviço de linguagem e pontos de extensão de Editor
 O editor fornece pontos de extensão que você pode estender como partes do componente Managed Extensibility Framework (MEF), incluindo a maioria dos recursos de serviço de linguagem. Essas são as categorias de ponto de extensão principal:  

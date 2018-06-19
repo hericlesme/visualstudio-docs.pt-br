@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463296"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que constam embutida, diretamente ou indiretamente, este símbolo dentro do intervalo especificado.  

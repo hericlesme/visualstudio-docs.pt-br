@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465103"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 Recupera o deslocamento do local do símbolo. Usado quando o [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) é `LocIsRegRel` ou `LocIsBitField`.  

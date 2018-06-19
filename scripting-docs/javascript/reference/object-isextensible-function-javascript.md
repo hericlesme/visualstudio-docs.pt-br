@@ -1,12 +1,13 @@
 ---
-title: "Função Object isextensible (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Função Object isextensible (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - Object.isExtensible function [JavaScript]
 - isExtensible function [JavaScript]
 ms.assetid: a7d10beb-0d01-4e2d-8263-59ff07ac4352
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641096"
 ---
 # <a name="objectisextensible-function-javascript"></a>Função Object.isExtensible (JavaScript)
 Retorna um valor que indica se novas propriedades podem ser adicionadas a um objeto.  
