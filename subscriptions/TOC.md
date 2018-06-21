@@ -64,7 +64,7 @@
 #### [Assinaturas expiradas](handle-expired-license.md)
 #### [Assinantes que entram com emails pessoais](personal-email-sign-ins.md)
 ## Adquirir assinaturas do Visual Studio
-### [Comparar as opções de assinatura](https://www.visualstudio.com/vs/pricing)
+### [Comparar as opções de assinatura](https://visualstudio.microsoft.com/vs/pricing)
 ### Comprar assinaturas de nuvem
 #### [Visão geral](vscloud-overview.md)
 #### [Perguntas frequentes sobre faturamento](vscloud-billing-faq.md)
@@ -75,8 +75,8 @@
 #### [Microsoft para startups](program-startups.md)
 ## Recursos
 ### [White paper de licenciamento do Visual Studio](http://aka.ms/vslicensing)
-### [Comparar opções e preços de assinatura](https://www.visualstudio.com/vs/pricing)
-### [Comparar os recursos do IDE do Visual Studio](https://www.visualstudio.com/vs/compare)
-### [Suporte à administração e às assinaturas do Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
+### [Comparar opções e preços de assinatura](https://visualstudio.microsoft.com/vs/pricing)
+### [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
+### [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [Termos de licenciamento por volume](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [MPSA (Contrato de Produtos e Serviços da Microsoft)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)
