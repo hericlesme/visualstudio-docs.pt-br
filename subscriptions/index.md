@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 400282de2a523e849a736e899c69edb555ed0df4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29795312"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327184"
 ---
 # <a name="visual-studio-subscriptions"></a>Assinaturas do Visual Studio
 As assinaturas do Visual Studio são um conjunto abrangente de recursos para criar, implantar e gerenciar grandes aplicativos em suas plataformas e dispositivos preferidos, incluindo Windows, iOS, Android e Linux.  Os benefícios das assinaturas são: acesso a ferramentas para desenvolvedores, serviços de nuvem e software, treinamento e suporte para necessidades de desenvolvimento e teste.
@@ -149,7 +149,6 @@ Os assinantes entram em [https://my.visualstudio.com](https://my.visualstudio.co
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio para Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server e CAL do TFS</li>
                         </ul>                        
                     </div>
@@ -166,8 +165,8 @@ Os assinantes entram em [https://my.visualstudio.com](https://my.visualstudio.co
                         <p>Com a assinatura do Visual Studio, você recebe créditos Azure todo mês e pode acessar gratuitamente os serviços do Azure, além de taxas de desenvolvimento e teste com desconto e acesso exclusivo a uma galeria de imagens disponível apenas para assinantes com máquinas virtuais pré-configuradas. De acordo com a sua assinatura, os serviços de nuvem podem incluir:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Assinatura de Desenvolvedor do Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Conta de Desenvolvedor do Windows</a></li>
                             <li>Power BI Pro</li>
