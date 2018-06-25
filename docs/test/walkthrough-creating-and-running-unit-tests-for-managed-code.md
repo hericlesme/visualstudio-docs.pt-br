@@ -15,22 +15,22 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449254"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767680"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: criar e executar testes de unidade para código gerenciado
 
-Este passo a passo orienta você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade do Microsoft para código gerenciado e o **Gerenciador de Testes** do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Em seguida, você pode alterar o código do projeto e executar os testes novamente.
+Este artigo orienta você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade da Microsoft para código gerenciado e o **Gerenciador de Testes** do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Em seguida, você pode alterar o código do projeto e executar os testes novamente.
 
 > [!NOTE]
 > Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
 
 > [!NOTE]
-> Para obter informações sobre como executar testes em uma linha de comando, consulte [Passo a passo: usar o utilitário de teste da linha de comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+> Para obter informações sobre como executar testes em uma linha de comando, consulte [Passo a passo: Usar o utilitário de teste da linha de comando](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -42,23 +42,20 @@ Este passo a passo orienta você pela criação, execução e personalização d
 
 2. No menu **Arquivo**, selecione **Novo** > **Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+   A caixa de diálogo **Novo Projeto** é exibida.
 
 3. Em **Modelos Instalados**, clique em **Visual C#**.
 
 4. Na lista de tipos de aplicativos, clique em **Biblioteca de Classes**.
 
-5. Na caixa **Nome**, digite `Bank` e clique em **OK**.
+5. Na caixa **Nome**, digite **Bank** e, em seguida, clique em **OK**.
 
-    > [!NOTE]
-    > Se o nome "Banco" já foi usado, escolha outro nome para o projeto.
+   O novo projeto Bank é criado e exibido no **Gerenciador de Soluções** com o arquivo *Class1.cs* aberto no editor de códigos.
 
-     O novo projeto Bank é criado e exibido no **Gerenciador de Soluções** com o arquivo *Class1.cs* aberto no editor de códigos.
+   > [!NOTE]
+   > Se *Class1.cs* não estiver aberto no Editor de Códigos, clique duas vezes no arquivo *Class1.cs* no **Gerenciador de Soluções** para abri-lo.
 
-    > [!NOTE]
-    > Se o arquivo *Class1.cs* não estiver aberto no Editor de Códigos, clique duas vezes no arquivo *Class1.cs* no Gerenciador de Soluções para abri-lo.
-
-6. Copie o código-fonte do [Projeto de Exemplo para Criar Testes de Unidade](../test/sample-project-for-creating-unit-tests.md) e substitua o conteúdo original de *Class1.cs* pelo código copiado.
+6. Copie o código-fonte do [Projeto de exemplo para criação de testes de unidade](../test/sample-project-for-creating-unit-tests.md) e substitua o conteúdo original de *Class1.cs* pelo código copiado.
 
 7. Salve o arquivo como *BankAccount.cs*.
 
@@ -94,11 +91,11 @@ public void Debit(double amount)
 
 4. Na caixa **Nome**, insira `BankTests` e, em seguida, selecione **OK**.
 
-     O projeto **BankTests** é adicionado à solução **Bank**.
+   O projeto **BankTests** é adicionado à solução **Bank**.
 
 5. No projeto **BankTests** adicione uma referência ao projeto **Bank**.
 
-     No Gerenciador de Soluções, selecione **Referências** no projeto **BankTests** e, em seguida, escolha **Adicionar Referência** no menu de contexto.
+   No Gerenciador de Soluções, selecione **Referências** no projeto **BankTests** e, em seguida, escolha **Adicionar Referência** no menu de contexto.
 
 6. Na caixa de diálogo Gerenciador de Referências, expanda **Solução** e marque o item **Banco**.
 
@@ -143,7 +140,7 @@ Os requisitos mínimos para uma classe de teste são:
 
 - O atributo `[TestClass]` é necessário na estrutura de teste de unidade do Microsoft para código gerenciado de qualquer classe que contenha métodos de teste de unidade que você queira executar no Gerenciador de Testes.
 
-- Cada método de teste que você queira executar com o Gerenciador de Testes deve ter o atributo `[TestMethod]`.
+- Cada método de teste que você deseja executar com o Gerenciador de Testes precisa ter o atributo `[TestMethod]`.
 
 Pode haver outras classes em um projeto de teste de unidade que não têm o atributo `[TestClass]` e pode haver outros métodos em classes de teste que não têm o atributo `[TestMethod]`. Você pode usar essas classes e métodos em seus métodos de teste.
 
@@ -212,13 +209,13 @@ Um método de teste deve atender aos seguintes requisitos:
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Corrigir o código e executar os testes novamente
 
-**Analisar os resultados de teste**
+### <a name="analyze-the-test-results"></a>Analisar os resultados de teste
 
 O resultado do teste contém uma mensagem que descreve a falha. Para o método `AreEquals`, a mensagem exibe o que era esperado (o parâmetro **Expected\<*value*>**) e o que foi, de fato, recebido (o parâmetro **Actual\<*value*>**). Você esperava que o saldo diminuísse, mas em vez disso, na verdade, ele aumentou pelo valor do saque.
 
 O teste de unidade revelou um bug: o valor do saque foi *adicionado* ao saldo da conta quando deveria ser *subtraído*.
 
-**Corrigir o bug**
+### <a name="correct-the-bug"></a>Corrigir o bug
 
 Para corrigir o erro, substitua a linha:
 
@@ -232,22 +229,22 @@ por:
 m_balance -= amount;
 ```
 
-**Executar novamente o teste**
+### <a name="rerun-the-test"></a>Executar o teste novamente
 
-No Gerenciador de testes, escolha **Executar Todos** para executar novamente o teste. A barra verde/vermelho fica verde, indicando aprovação no teste, e o teste é movido para o grupo **Testes Aprovados**.
+No Gerenciador de testes, escolha **Executar Todos** para executar novamente o teste. A barra verde/vermelho fica verde para indicar que o teste foi aprovado, e o teste é movido para o grupo **Testes Aprovados**.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Usar testes de unidade para melhorar o código
 
 Esta seção descreve como um processo iterativo de análise, desenvolvimento de testes de unidade e refatoração pode ajudá-lo a tornar seu código de produção mais robusto e eficiente.
 
-**Analisar os problemas**
+### <a name="analyze-the-issues"></a>Analisar os problemas
 
 Você criou um método de teste para confirmar que um valor válido é deduzido corretamente no método `Debit`. Agora, verifique se o método gera uma <xref:System.ArgumentOutOfRangeException> se o valor do débito é:
 
 - maior que o saldo ou
 - menor que zero.
 
-**Criar os métodos de teste**
+### <a name="create-the-test-methods"></a>Criar os métodos de teste
 
 Crie um método de teste para verificar o comportamento correto quando o valor do débito é menor que zero:
 
@@ -278,11 +275,11 @@ Para testar o caso quando o valor retirado é maior que o saldo, realize as segu
 
 3. Definir `debitAmount` para um número maior que o saldo.
 
-**Executar os testes**
+### <a name="run-the-tests"></a>Executar os testes
 
 A execução dos dois métodos de teste demonstra que os testes funcionam corretamente.
 
-**Continuar a análise**
+### <a name="continue-the-analysis"></a>Continuar a análise
 
 No entanto, os dois últimos métodos de teste também são preocupantes. Você não pode ter certeza de qual condição no método em teste gera a exceção quando um dos testes é executado. Uma forma de diferenciar as duas condições, que é um valor de débito negativo ou um valor maior que o saldo, aumentará a confiança nos testes.
 
@@ -292,11 +289,11 @@ Observe novamente o método em teste e veja que ambas as instruções condiciona
 throw new ArgumentOutOfRangeException("amount");
 ```
 
-Há um construtor que você pode usar que relata informações muito mais ricas: <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` inclui o nome do argumento, o valor do argumento e uma mensagem definida pelo usuário. Refatore o método em teste para usar esse construtor. Melhor ainda, use membros de tipo disponíveis publicamente para especificar os erros.
+Há um construtor que você pode usar que relata informações muito mais ricas: <xref:System.ArgumentOutOfRangeException.%23ctor(System.String,System.Object,System.String)> inclui o nome do argumento, o valor do argumento e uma mensagem definida pelo usuário. Refatore o método em teste para usar esse construtor. Melhor ainda, use membros de tipo disponíveis publicamente para especificar os erros.
 
-**Refatorar o código em teste**
+### <a name="refactor-the-code-under-test"></a>Refatorar o código em teste
 
-Primeiro, defina duas constantes para as mensagens de erro no escopo da classe. Coloque-as na classe em teste (`Bank`):
+Primeiro, defina duas constantes para as mensagens de erro no escopo da classe. Coloque-as na classe em teste, BankAccount:
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -317,7 +314,7 @@ Em seguida, modifique as duas instruções condicionais no método `Debit`:
     }
 ```
 
-**Refatorar os métodos de teste**
+### <a name="refactor-the-test-methods"></a>Refatorar os métodos de teste
 
 Remova o atributo do método de teste `ExpectedException` e, em vez disso, capture a exceção gerada e verifique sua mensagem associada. O método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> fornece a capacidade de comparar duas cadeias de caracteres.
 
@@ -345,9 +342,9 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-**Testar, gravar e analisar novamente**
+### <a name="retest-rewrite-and-reanalyze"></a>Testar, gravar e analisar novamente
 
-Suponha que há um bug no método em teste e que o método `Debit` ainda não *gerou* um <xref:System.ArgumentOutOfRangeException>. Desconsidere a geração da mensagem correta com a exceção. Atualmente, o método de teste não lida com esse caso. Se o valor `debitAmount` for válido (ou seja, menor que o saldo mas maior que zero), nenhuma exceção será capturada e, portanto, a declaração nunca será acionada. Ainda assim, o método de teste é aprovado. Isso não é bom, pois você deseja que o método de teste falhe se nenhuma exceção é gerada.
+Suponha que haja um bug no método em teste e que o método `Debit` ainda não gerou uma <xref:System.ArgumentOutOfRangeException>. Desconsidere a geração da mensagem correta com a exceção. Atualmente, o método de teste não lida com esse caso. Se o valor `debitAmount` for válido (ou seja, menor que o saldo mas maior que zero), nenhuma exceção será capturada e, portanto, a declaração nunca será acionada. Ainda assim, o método de teste é aprovado. Isso não é bom, pois você deseja que o método de teste falhe se nenhuma exceção é gerada.
 
 Esse é um bug no método de teste. Para resolver o problema, adicione uma declaração <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> ao final do método de teste para lidar com o caso em que nenhuma exceção é gerada.
 

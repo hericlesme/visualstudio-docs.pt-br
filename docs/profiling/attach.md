@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc2d1da953e0c358241a06ff99e7e47b014bd29
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269109"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690621"
 ---
 # <a name="attach"></a>Attach
-A opção **Anexar** do VSPerfCmd.exe inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).  
+A opção **Attach** do *VSPerfCmd.exe* inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).  
   
  Para usar a opção **Anexar**, você deve especificar o método de **exemplo** na opção de início.  
   

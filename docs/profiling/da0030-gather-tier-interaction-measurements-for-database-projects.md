@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dca42fb108c2465db2b882957ea2bbcb25cd5ef8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7d53bd0975edfcaf02b0383834eb53db7716c982
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766188"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: coletar medições de interação de camada para projetos de banco de dados
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: coletar medidas de interação de camada para projetos de banco de dados
 |||  
 |-|-|  
 |ID de regra|DA0030|  
@@ -32,14 +33,14 @@ ms.lasthandoff: 04/19/2018
 ## <a name="cause"></a>Causa  
  Chamadas a métodos <xref:System.Data> são uma proporção significativa dos dados de criação de perfil e não foram coletados dados de interação de camada na execução de criação de perfil. Considere a criação de perfil novamente e a adição de dados de interação de camada.  
   
-## <a name="rule-description"></a>Descrição da Regra  
+## <a name="rule-description"></a>Descrição da regra  
  Essa regra é acionada sempre que há uma atividade significativa nas funções que residem nos namespaces System.Data, incluindo <xref:System.Data.Linq><xref:System.Data.Linq>.  
   
  Aplicativos de várias camadas usam serviços em camadas para suas camadas de apresentação e de dados. Geralmente, a camada de dados é um processo separado que executa um sistema de gerenciamento de banco de dados como o Microsoft SQL Server. A camada de dados ainda pode estar em execução em um computador separado do restante do aplicativo. Os perfis de amostragem fornecem uma análise mínima das funções e dos serviços executados fora do processo ou remotamente.  
   
  As ferramentas de criação de perfil podem coletar informações de tempo para aplicativos de várias camadas que interagem com uma camada de dados do Microsoft SQL Server usando chamadas assíncronas a serviços do ADO.NET. É necessário habilitar explicitamente a Criação de Perfil de Interação de Camada. Ela não é ativada por padrão.  
   
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
+## <a name="how-to-fix-violations"></a>Como corrigir violações  
  Essa regra se destina apenas a fins informativos e pode não exigir ação corretiva.  
   
- Para obter informações sobre como adicionar dados de interação de camada a dados de criação de perfil por meio da IDE do Visual Studio, consulte [Coletando dados de interação de camada](../profiling/collecting-tier-interaction-data.md). Para obter informações sobre como adicionar dados de interação de camada por meio da linha de comando, consulte [Coletando dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+ Para obter informações sobre como adicionar dados de interação de camada a dados de criação de perfil por meio do IDE do Visual Studio, confira [Coletar dados de interação de camada](../profiling/collecting-tier-interaction-data.md). Para obter informações sobre como adicionar dados de interação de camada por meio da linha de comando, confira [Coletar dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md).

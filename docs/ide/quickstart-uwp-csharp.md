@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765863"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Início Rápido: Criar seu primeiro aplicativo da Plataforma Universal do Windows no Visual Studio com XAML e C&#35;
 
 Nesta introdução de 5 a 10 minutos ao IDE (ambiente de desenvolvimento integrado) do Visual Studio, você criará um aplicativo "Olá, Mundo" que poderá ser executado em qualquer dispositivo Windows 10. Para fazer isso, você usará um modelo de projeto da UWP (Plataforma Universal do Windows), a linguagem XAML e a linguagem de programação C#.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
 ## <a name="create-a-project"></a>Criar um projeto
 
@@ -59,7 +60,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
   ![Abra o MainPage.xaml no Gerenciador de Soluções ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Existem dois painéis: o **Designer XAML**, que inclui uma tela de design e o **Editor de XAML**, no qual você pode adicionar ou alterar o código.    
+  Existem dois painéis: o **Designer XAML**, que inclui uma tela de design e o **Editor de XAML**, no qual você pode adicionar ou alterar o código.
 
   ![O painel Designer XAML no editor de XAML](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ O código usa algumas APIs do Windows para criar um objeto de sintetização de 
 
 1. Escolha **Computador Local** para iniciar o aplicativo.
 
-   ![Clique em um computador local para iniciar e depurar seu aplicativo UWP](../ide/media/uwp-start-or-debug.png "Clique em um computador local para iniciar e depurar seu aplicativo UWP")
+   ![Clique em um Computador Local para iniciar e depurar o aplicativo UWP](../ide/media/uwp-start-or-debug.png)
 
    (Como alternativa, você pode escolher **Depurar** > **Iniciar Depuração** na barra de menus ou pressionar **F5** para iniciar seu aplicativo.)
 

@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765662"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -135,6 +136,7 @@ Aqui estão algumas outras opções de suporte para você:
 
 ## <a name="see-also"></a>Consulte também
 
+* [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Solução de erros relacionados à rede no Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Instalar o Visual Studio 2017](install-visual-studio.md)
+

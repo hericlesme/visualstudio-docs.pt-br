@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448409"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573135"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-A ferramenta **VSPerfCmd.exe** é usada para iniciar e interromper a coleta de dados de desempenho. Ela usa a seguinte sintaxe:  
+A ferramenta *VSPerfCmd.exe* é usada para iniciar e interromper a coleta de dados de desempenho. Ela usa a seguinte sintaxe:  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- As tabelas a seguir descrevem as opções da ferramenta **VSPerfCmd.exe**.  
+ As tabelas a seguir descrevem as opções da ferramenta *VSPerfCmd.exe*.  
   
 |Opção|Descrição|  
 |------------|-----------------|  
@@ -44,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|Exibe uma lista de contadores de CPU válido para a máquina atual.|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|Especifica um evento de contador de desempenho do Windows para incluir com os dados de marca. Use somente com **Start**.|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Especifica o intervalo de tempo (em milissegundos) entre os eventos de coleta de dados do contador de desempenho do Windows. Use com **WinCounter**.|  
-|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Controla a coleta de eventos especificados do ETW (Rastreamento de Eventos para Windows). Os dados de ETW são coletados em um arquivo .itl que não é o arquivo de dados de criação de perfil (.vsp).|  
+|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Controla a coleta de eventos especificados do ETW (Rastreamento de Eventos para Windows). Os dados do ETW são coletados em um arquivo .*itl* que não é o arquivo de dados de criação de perfil (.*vsp*).|  
 |[Status](../profiling/status.md)|Exibe o estado do criador de perfil, informações sobre processos que estão passando pela criação de perfil e contas que possuem autoridade para controlar o criador de perfil.|  
 |[Shutdown](../profiling/shutdown.md)[**:**`n`]|Fecha o arquivo de dados de criação de perfil e desativa o criador de perfil.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Retoma a coleta de dados após uma chamada para **VSPerfCmdGlobalOff**.|  
@@ -63,8 +63,8 @@ VSPerfCmd [/U] [/options]
 |[Launch](../profiling/launch.md) **:** *Executable*|Inicia o aplicativo especificado e começa a criação de perfil.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Especifica argumentos de linha de comando a serem passados para o aplicativo iniciado.|  
 |[Console](../profiling/console.md)|Inicia o comando especificado em uma nova janela de prompt de comando.|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Inicia a criação de perfil dos processos especificados. Os processos podem ser identificados pela id do processo ou pelo nome do processo.|  
-|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Para a criação de perfil dos processos especificados. Os processos podem ser identificados pela id do processo ou pelo nome do processo. Se nenhum processo for especificado, a criação de perfil será interrompida para todos os processos.|  
+|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Inicia a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo.|  
+|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Para a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo. Se nenhum processo for especificado, a criação de perfil será interrompida para todos os processos.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Coleta dados de alocação de memória e de tempo de vida do objeto .NET. Use somente com a opção **VSPerfCmdLaunch**.|  
   
 ### <a name="sample-interval-options"></a>Opções do intervalo de amostragem  

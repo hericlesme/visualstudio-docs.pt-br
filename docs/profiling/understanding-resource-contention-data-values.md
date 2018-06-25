@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc41ee4c3c9f53d45245c6c305d7f8e221757f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c06722e9270269ca674370d5bf8b1925d850ce00
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477399"
 ---
-# <a name="understanding-resource-contention-data-values"></a>Noções básicas sobre valores de dados de contenção de recurso
+# <a name="understand-resource-contention-data-values"></a>Noções básicas sobre valores de dados de contenção de recurso
 
 Perfis de contenção de recursos coletam informações de pilha de chamadas detalhadas sempre que segmentos concorrentes em um aplicativo são forçados a aguardar o acesso a um recurso compartilhado.
 

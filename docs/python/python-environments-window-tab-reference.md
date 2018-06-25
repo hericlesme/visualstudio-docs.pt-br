@@ -1,7 +1,7 @@
 ---
 title: Referência da janela de ambientes do Python
 description: Detalhes sobre cada uma das guias que aparecem na janela Ambientes de Python no Visual Studio.
-ms.date: 05/07/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ba46e41c8d6cd4feec4adc04f1470eed7744242
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572118"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -75,7 +76,7 @@ Se estiver disponível, conterá detalhes, conforme descrito na tabela abaixo. S
 
 *Também chamada de "pip" em versões anteriores.*
 
-Gerencia os pacotes instalados no ambiente usando PIP, permitindo também pesquisar e instalar novos (incluindo as dependências). No Visual Studio 2017 versão 15.7 e em versões posteriores, aparece uma opção de **Pacotes (Conda)**, que usa o gerenciador de pacotes Conda. (Se não vir essa opção, defina a opção **Ferramentas** > **Opções** > **Python** > **Experimental** > **Usar gerenciador de pacotes Conda quando estiver disponível (em vez de PIP)** e reinicie o Visual Studio.)
+Gerencia os pacotes instalados no ambiente usando PIP, permitindo também pesquisar e instalar novos (incluindo as dependências). No Visual Studio 2017 versão 15.7 e posterior, uma guia **Pacotes (Conda)** é exibida, que usa o gerenciador de pacotes do Conda. (Se não vir essa opção, defina a opção **Ferramentas** > **Opções** > **Python** > **Experimental** > **Usar gerenciador de pacotes Conda quando estiver disponível (em vez de PIP)** e reinicie o Visual Studio.)
 
 Os pacotes que já estão instalados são exibidos com controles para atualizar (uma seta para cima) e desinstalar (X em um círculo) o pacote:
 
@@ -85,11 +86,19 @@ Inserir um termo de pesquisa filtra a lista de pacotes instalados, bem como os p
 
 ![Guia de pacotes de ambientes do Python com uma pesquisa em "num"](media/environments-pip-tab.png)
 
-Também é possível inserir diretamente qualquer comando `pip install` na caixa de pesquisa, incluindo sinalizadores como `--user` ou `--no-deps`.
+Como você pode ver na imagem acima, os resultados da pesquisa mostram vários pacotes que correspondem ao termo de pesquisa; a primeira entrada na lista, no entanto, é um comando para executar `pip install <name>` diretamente. Caso esteja na guia **Pacotes (Conda)**, você verá `conda install <name>`:
+
+![Guia Pacotes do Conda mostrando um comando conda install](media/environments-conda-tab-install.png)
+
+Em ambos os casos, você pode personalizar a instalação pela adição de argumentos na caixa de pesquisa após o nome do pacote. Quando você inclui argumentos, os resultados da pesquisa mostram `pip install` ou `conda install` seguido do conteúdo da caixa de pesquisa:
+
+![Usando argumentos em comandos pip e conda install](media/environments-pip-tab-arguments.png)
 
 Instalar um pacote cria subpastas dentro da pasta `Lib` do ambiente no sistema de arquivos. Por exemplo, se você tiver Python 3.6 instalados em `c:\Python36`, os pacotes são instalados em `c:\Python36\Lib`, se você tiver o Anaconda3 instalado em `c:\Program Files\Anaconda3`, os pacotes serão instalados em `c:\Program Files\Anaconda3\Lib`.
 
-No último caso, como o ambiente está localizado em uma área protegida do sistema de arquivos, `c:\Program Files`, o Visual Studio deve executar `pip install` com privilégios elevados para permitir que ele crie subpastas do pacote. Quando a elevação é necessária, o Visual Studio exibe o prompt, "Podem ser necessários privilégios de administrador para instalar, atualizar ou remover pacotes para esse ambiente":
+### <a name="granting-administrator-privileges-for-package-install"></a>Concedendo privilégios de administrador à instalação do pacote
+
+Ao instalar os pacotes em um ambiente que está localizado em uma área protegida do sistema de arquivos, como `c:\Program Files\Anaconda3\Lib`, o Visual Studio deve executar `pip install` com privilégios elevados para permitir que ele crie subpastas do pacote. Quando a elevação é necessária, o Visual Studio exibe o prompt, "Podem ser necessários privilégios de administrador para instalar, atualizar ou remover pacotes para esse ambiente":
 
 ![Solicitação de elevação para a instalação do pacote](media/environments-pip-elevate.png)
 
@@ -98,6 +107,18 @@ No último caso, como o ambiente está localizado em uma área protegida do sist
 Selecionar **Sempre elevar ao instalar o u remover pacotes** impede que a caixa de diálogo apareça para o ambiente em questão. Para fazer a caixa de diálogo aparecer novamente, vá para **Ferramentas > Opções > Ferramentas do Python > Geral** e selecione o botão **Redefinir todas as caixas de diálogo permanentemente ocultas**.
 
 Nessa mesma guia de opções, você também pode selecionar **Sempre executar o PIP como administrador** para suprimir a caixa de diálogo para todos os ambientes. Consulte [Opções – guia Geral](python-support-options-and-settings-in-visual-studio.md#general-options).
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>Restrições de segurança com versões mais antigas do Python
+
+Ao usar o Python 2.6, 3.1 e 3.2, o Visual Studio mostra o aviso "Devido a restrições de segurança, a instalação por meio da Internet pode não funcionar nesta versão do Python":
+
+![Mensagem sobre as restrições de pip install com a versão mais antiga do Python](media/environments-old-version-restriction.png)
+
+O motivo para o aviso é que, com essas versões mais antigas do Python, `pip install` não contém suporte para o protocolo TLS 1.2, que é necessário para baixar pacotes da origem do pacote, pypi.org. Os builds personalizados do Python podem dar suporte ao TLS 1.2; nesse caso, `pip install` poderá funcionar.
+
+É possível baixar o `get-pip.py` apropriado para um pacote em [bootstrap.pypa.io](https://bootstrap.pypa.io/), baixar manualmente um pacote em [pypi.org](https://pypi.org/) e, em seguida, instalar o pacote dessa cópia local.
+
+No entanto, a recomendação é apenas atualizar para o Python 2.7 ou 3.3+; nesse caso, o aviso não é exibido.
 
 ## <a name="intellisense-tab"></a>Guia IntelliSense
 

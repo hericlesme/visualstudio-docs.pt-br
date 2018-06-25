@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: criação de perfil de linha de comando usando amostragem | Microsoft Docs'
+title: 'Passo a passo: Criação de perfil de linha de comando usando amostragem | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dc5a4c5774a4290d8811026d4c522e4d9e972e4e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446537"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572147"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: criação de perfil de linha de comando usando amostragem
 
@@ -43,7 +43,7 @@ Neste passo a passo, você seguirá estas etapas:
 A amostragem é um método de criação de perfil pelo qual um processo específico é monitorado periodicamente para determinar a função ativa. Os dados resultantes fornecem uma contagem da frequência da função na parte superior da pilha de chamadas, quando o processo foi amostrado.
 
 > [!NOTE]
-> As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do Visual Studio. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). O PeopleTrax é um aplicativo de 32 bits.
+> As ferramentas de linha de comando das Ferramentas de Criação de Perfil estão localizadas no subdiretório *\Team Tools\Performance Tools* do diretório de instalação do Visual Studio. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). O PeopleTrax é um aplicativo de 32 bits.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Para criar o perfil do aplicativo PeopleTrax usando o método de amostragem
 
@@ -59,13 +59,13 @@ A amostragem é um método de criação de perfil pelo qual um processo específ
     VSPerfCLREnv /sampleon
     ```
 
-5. Inicie criação de perfil executando VSPerfCmd.exe, que é a ferramenta de linha de comando que controla o criador de perfil. O comando a seguir inicia o aplicativo e o criador de perfil no modo de amostragem:
+5. Inicie a criação de perfil executando *VSPerfCmd.exe*, que é a ferramenta de linha de comando que controla o criador de perfil. O comando a seguir inicia o aplicativo e o criador de perfil no modo de amostragem:
 
     ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
-     O processo do criador de perfil é iniciado e anexado ao processo PeopleTrax.exe. O processo do criador de perfil começa a gravar os dados de criação de perfil coletados no arquivo de relatório.
+     O processo do criador de perfil é iniciado e anexado ao processo *PeopleTrax.exe*. O processo do criador de perfil começa a gravar os dados de criação de perfil coletados no arquivo de relatório.
 
 6. Clique em **Get People**.
 
@@ -87,13 +87,13 @@ A amostragem é um método de criação de perfil pelo qual um processo específ
     VSPerfCLREnv /sampleoff
     ```
 
-11. A criação de perfil de dados é armazenada no arquivo the.vsp. Analise os resultados usando um dos seguintes métodos:
+11. Os dados de criação de perfil são armazenados no arquivo .*vsp*. Analise os resultados usando um dos seguintes métodos:
 
-    - Abra o arquivo the.vsp no IDE do Visual Studio.
+    - Abra o arquivo .*vsp* no IDE do Visual Studio.
 
          – ou —
 
-    - Gere um arquivo de valores separados por vírgulas (.csv) usando a ferramenta de linha de comando VSPerfReport.exe. Para gerar relatórios de uso fora do IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], use o seguinte comando:
+    - Gere um arquivo de valores separados por vírgula (.*csv*) usando a ferramenta de linha de comando *VSPerfReport.exe*. Para gerar relatórios de uso fora do IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], use o seguinte comando:
 
         ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all

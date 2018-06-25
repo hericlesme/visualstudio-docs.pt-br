@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e3aee55728f312aaa1ff7d8c44a6bbd6c04bfd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766695"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Analisar desempenho de aplicativos no Visual Studio
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
@@ -35,7 +36,7 @@ O Hub de diagnósticos oferece várias outras opções para executar e gerenciar
 |---------|---------|
 |  ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo")  |    [Assista a um vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) sobre como usar as ferramentas de diagnóstico que mostra como analisar o uso da CPU e como analisar o uso de memória. |
 
-Neste tópico, abordaremos a análise do uso de CPU no fluxo de trabalho de depuração normal. Você também pode analisar o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Neste artigo, abordaremos a análise do uso de CPU no fluxo de trabalho de depuração normal. Você também pode analisar o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 > [!NOTE]
 > Para o .NET Core e o ASP.NET Core, a ferramenta de uso da CPU atualmente não fornece resultados precisos com PBDs portáteis. Use PDBs completos.
@@ -46,7 +47,7 @@ Neste tutorial, você irá:
 > * Coletar dados de uso da CPU
 > * Analisar os dados de uso da CPU
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Etapa 1: Coletar dados de criação de perfil 
+## <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil 
   
 1.  Abra o projeto que deseja depurar no Visual Studio e defina um ponto de interrupção no aplicativo no ponto em que deseja examinar o uso da CPU.
 
@@ -97,7 +98,7 @@ Neste tutorial, você irá:
 
      Neste ponto, você pode começar a analisar os dados.
 
-## <a name="Step2"></a> Etapa 2: Analisar os dados de uso da CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Etapa 2: Analisar os dados de uso de CPU
 
 Recomendamos que você comece a analisar os dados examinando a lista de funções em Uso da CPU, identificando as funções que fazem a maior parte do trabalho e, em seguida, fazendo uma análise mais detalhada de cada uma.
 
@@ -143,9 +144,9 @@ Aqui há mais informações sobre os valores de coluna:
 
 - **Módulos** O nome do módulo que contém a função ou o número de módulos que contêm as funções em um nó [Código Externo].
 
-## <a name="BKMK_External_Code"></a>Exibir código externo
+## <a name="view-external-code"></a>Exibir código externo
 
-O código externo é uma função nos componentes do sistema e do framework executados pelo código que você grava. O código externo inclui funções que iniciam e param o aplicativo, elaboram a interface do usuário, controlam a segmentação e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não está interessado em código externo, portanto, a ferramenta Uso de CPU reúne as funções externas de um método de usuário em um nó **[External Code]**.
+O código externo são funções nos componentes do sistema e da estrutura executadas pelo código escrito. O código externo inclui funções que iniciam e param o aplicativo, elaboram a interface do usuário, controlam a segmentação e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não está interessado em código externo, portanto, a ferramenta Uso de CPU reúne as funções externas de um método de usuário em um nó **[External Code]**.
   
 Se você quiser exibir os caminhos de chamada do código externo, escolha **Mostrar Código Externo** na lista **Filtrar exibição** e, em seguida, escolha **Aplicar**.  
   
@@ -156,7 +157,7 @@ Saiba que muitas correntes de chamada de código externo são muito aninhadas, d
 Use a caixa de pesquisa para localizar um nó que você esteja procurando e use a barra de rolagem horizontal para exibir os dados.
 
 > [!TIP]
-> Ao analisar o código externo que chama as funções do Windows, você deverá verificar se tem os arquivos .pdb mais recentes. Sem esses arquivos, as exibições de relatório listarão nomes de funções do Windows criptografadas e difíceis de entender. Para obter mais informações de como verificar se você tem os arquivos necessários, consulte [Specify Symbol (.pdb) and Source Files in the Debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) (Especificar arquivos de símbolo (.pdb) e de origem no depurador).
+> Se você analisar um código externo que chama funções do Windows, deverá garantir que tem os arquivos .*pdb* mais atuais. Sem esses arquivos, as exibições de relatório listarão nomes de funções do Windows criptografadas e difíceis de entender. Para obter mais informações sobre como garantir que você tem os arquivos necessários, confira [Especificar arquivos de símbolo (.*pdb*) e de origem no depurador](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

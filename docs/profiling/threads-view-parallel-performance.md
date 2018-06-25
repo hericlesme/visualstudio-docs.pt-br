@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573161"
 ---
-# <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho em paralelo)
+# <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho paralelo)
 A **Exibição de Threads** é a mais detalhada e cheia de recursos do Visualizador de Simultaneidade (escolha **Analisar** > **Visualizador de Simultaneidade** para iniciar o visualizador de simultaneidade). Ao usar essa exibição, é possível identificar se os threads estão sendo executados ou bloqueados devido à sincronização, E/S ou a algum outro motivo.  
   
  Durante a análise do perfil, a Visualização Simultânea examina todos os eventos de alternância de contexto do sistema operacional em cada thread do aplicativo. Alternâncias de contexto podem ocorrer por vários motivos, como estes:  
@@ -54,7 +55,7 @@ A **Exibição de Threads** é a mais detalhada e cheia de recursos do Visualiza
   
 -   Entenda as dependências entre os threads de trabalho e os caminhos críticos de execução.  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>Examinando threads e intervalos de tempo específicos  
+## <a name="examine-specific-time-intervals-and-threads"></a>Examinar threads e intervalos de tempo específicos  
  A Exibição Threads mostra uma linha do tempo. É possível aplicar zoom e panorâmica à linha do tempo para examinar intervalos e threads específicos do aplicativo. No eixo X é mostrado o tempo e no eixo Y são mostrados vários canais:  
   
 -   Dois canais de E/S para cada unidade de disco do sistema, um canal para leituras e outro para gravações.  
@@ -99,7 +100,7 @@ Modo de Exibição de Threads
   
  Para obter um perfil de execução para todos os threads habilitados (não ocultos) no intervalo de tempo selecionado, escolha o botão **Execução** na legenda ativa.  
   
-### <a name="timeline-graph"></a>Gráfico de linha do tempo  
+### <a name="timeline-graph"></a>Grafo de linha do tempo  
  O gráfico de linha do tempo mostra a atividade de todos os threads no processo e todos os dispositivos de disco físico no computador host. Ele também exibe a atividade da GPU e eventos de marcador.  É possível ampliar para exibir mais detalhes ou reduzir para exibir um intervalo de tempo mais longo. Você também pode selecionar pontos no gráfico para obter detalhes sobre categorias, horas de início, durações e estados da pilha de chamadas.  
   
  No gráfico de linha do tempo, uma cor indica o estado de um thread em determinado momento. Por exemplo, segmentos verdes estavam sendo executados, segmentos vermelhos foram bloqueados para sincronização, segmentos amarelos foram impedidos e segmentos roxos foram usados na E/S do dispositivo. É possível usar essa exibição para examinar o equilíbrio de trabalho entre os threads envolvidos em um loop paralelo ou em tarefas simultâneas. Se um thread estiver levando mais tempo para ser concluído do que os outros, o trabalho poderá estar desbalanceado. É possível usar essas informações para melhorar o desempenho do programa distribuindo o trabalho de modo mais uniforme entre os threads.  
@@ -121,31 +122,31 @@ Modo de Exibição de Threads
 #### <a name="execution"></a>Execução  
  O Relatório de Execução mostra o detalhamento do tempo gasto pelo aplicativo na execução.  
   
- Para localizar a linha de código em que o tempo de execução é gasto, expanda a árvore de chamadas e, no menu de atalho da entrada da árvore de chamadas, escolha **Exibir Fonte** ou **Exibir Sites de Chamada**. **Exibir Fonte** localiza a linha de código executada. **Exibir Sites de Chamada** localiza a linha de código que chamou a linha de código executada. Se houver apenas um único site de chamada, a linha de código será realçada. Se existirem vários sites de chamada, você poderá selecionar o site desejado na caixa de diálogo exibida e, em seguida, escolher o botão **Ir para fonte** para realçar o código do site de chamada. Geralmente, é mais útil localizar o site de chamada que tem a maioria das instâncias, mais tempo ou ambos. Para obter mais informações, consulte [Relatório de perfil de execução](../profiling/execution-profile-report.md).  
+ Para localizar a linha de código em que o tempo de execução é gasto, expanda a árvore de chamadas e, no menu de atalho da entrada da árvore de chamadas, escolha **Exibir Fonte** ou **Exibir Sites de Chamada**. **Exibir Fonte** localiza a linha de código executada. **Exibir Sites de Chamada** localiza a linha de código que chamou a linha de código executada. Se houver apenas um único site de chamada, a linha de código será realçada. Se existirem vários sites de chamada, você poderá selecionar o site desejado na caixa de diálogo exibida e, em seguida, escolher o botão **Ir para fonte** para realçar o código do site de chamada. Geralmente, é mais útil localizar o site de chamada que tem a maioria das instâncias, mais tempo ou ambos. Para obter mais informações, confira [Relatório de perfil de execução](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Sincronização  
- O relatório de sincronização mostra as chamadas responsáveis por blocos de sincronização, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de sincronização](../profiling/synchronization-time.md).  
+ O relatório de sincronização mostra as chamadas responsáveis por blocos de sincronização, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, confira [Tempo de sincronização](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>E/S  
- O relatório de E/S mostra as chamadas responsáveis por blocos de E/S, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de E/S (Exibição Threads)](../profiling/i-o-time-threads-view.md).  
+ O relatório de E/S mostra as chamadas responsáveis por blocos de E/S, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, confira [Tempo de E/S (exibição de threads)](../profiling/i-o-time-threads-view.md).  
   
 #### <a name="sleep"></a>Sleep  
- O relatório de suspensão mostra as chamadas responsáveis por blocos de suspensão, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de suspensão](../profiling/sleep-time.md).  
+ O relatório de suspensão mostra as chamadas responsáveis por blocos de suspensão, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, confira [Tempo de suspensão](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Gerenciamento de memória  
- O relatório de gerenciamento de memória mostra as chamadas em que ocorreram blocos de gerenciamento de memória, junto com os tempo de bloqueio agregados de cada pilha de chamadas. É possível usar essas informações para identificar as áreas que apresentam problemas de coleta de lixo ou de paginação em excesso.  Para obter mais informações, consulte [Tempo de gerenciamento de memória](../profiling/memory-management-time.md).  
+ O relatório de gerenciamento de memória mostra as chamadas em que ocorreram blocos de gerenciamento de memória, junto com os tempo de bloqueio agregados de cada pilha de chamadas. É possível usar essas informações para identificar as áreas que apresentam problemas de coleta de lixo ou de paginação em excesso.  Para saber mais, confira [Tempo de gerenciamento de memória](../profiling/memory-management-time.md).  
   
 #### <a name="preemption"></a>Preempção  
- O relatório de Preempção mostra as instâncias em que os processos do sistema impediram o processo atual e os threads individuais que substituíram os threads no processo atual. É possível usar essas informações para identificar os processos e os threads que são mais responsáveis pela preempção. Para obter mais informações, consulte [Tempo de preempção](../profiling/preemption-time.md).  
+ O relatório de Preempção mostra as instâncias em que os processos do sistema impediram o processo atual e os threads individuais que substituíram os threads no processo atual. É possível usar essas informações para identificar os processos e os threads que são mais responsáveis pela preempção. Para saber mais, confira [Tempo de preempção](../profiling/preemption-time.md).  
   
 #### <a name="ui-processing"></a>Processamento de interface do usuário  
- O relatório de processamento de interface do usuário mostra as chamadas responsáveis por blocos de processamento de interface do usuário, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de processamento de interface do usuário](../profiling/ui-processing-time.md).  
+ O relatório de processamento de interface do usuário mostra as chamadas responsáveis por blocos de processamento de interface do usuário, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, confira [Tempo de processamento de interface do usuário](../profiling/ui-processing-time.md).  
   
-#### <a name="per-thread-summary"></a>Por Resumo de Thread  
- Esta guia mostra uma exibição de coluna codificada por cores do tempo total gasto por cada thread no estado de execução, bloqueio, E/S e outros estados. As colunas são rotuladas na parte inferior. Ao ajustar o nível de zoom no gráfico de linha do tempo, essa guia é atualizada automaticamente. Em alguns níveis de zoom, alguns threads podem não ser exibidos. Quando isso ocorre, elipses são exibidas à direita. Se o thread desejado não for exibido, será possível ocultar outros threads. Para obter mais informações, consulte [Relatório de resumo por thread](../profiling/per-thread-summary-report.md).  
+#### <a name="per-thread-summary"></a>Por resumo de thread  
+ Esta guia mostra uma exibição de coluna codificada por cores do tempo total gasto por cada thread no estado de execução, bloqueio, E/S e outros estados. As colunas são rotuladas na parte inferior. Ao ajustar o nível de zoom no gráfico de linha do tempo, essa guia é atualizada automaticamente. Em alguns níveis de zoom, alguns threads podem não ser exibidos. Quando isso ocorre, elipses são exibidas à direita. Se o thread desejado não for exibido, será possível ocultar outros threads. Para obter mais informações, confira [Relatório de resumo por thread](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Operações de disco  
- Esta guia mostra quais processos e threads estavam envolvidos na E/S de disco em nome do processo atual, quais arquivos foram cobertos (por exemplo, DLLs carregadas), quantos bytes foram lidos e outras informações. É possível usar esse relatório para avaliar o tempo gasto no acesso a arquivos durante a execução, especialmente quando o processo parece estar associado à E/S. Para obter mais informações, consulte [Relatório de operações de disco](../profiling/disk-operations-report-threads-view.md).  
+ Esta guia mostra quais processos e threads estavam envolvidos na E/S de disco em nome do processo atual, quais arquivos foram cobertos (por exemplo, DLLs carregadas), quantos bytes foram lidos e outras informações. É possível usar esse relatório para avaliar o tempo gasto no acesso a arquivos durante a execução, especialmente quando o processo parece estar associado à E/S. Para obter mais informações, confira [Relatório de operações de disco](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Visualização Simultânea](../profiling/concurrency-visualizer.md)

@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e801404fbf3356b597471d7c3dda23264eb0c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765382"
 ---
-# <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleção
+# <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleta
 
 As Ferramentas de Criação de Perfil do Visual Studio dão suporte a três métodos de coleta de dados de desempenho: amostragem, instrumentação e simultaneidade. Você também pode usar o método de amostragem ou instrumentação para coletar dados de tempo de vida e de alocação de memória do .NET.
 
@@ -52,7 +53,7 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 
 1. No **Gerenciador de Desempenho**, selecione a sessão de desempenho.
 
-     Um nome de arquivo de sessão de desempenho tem uma extensão .psess.
+     Um nome de arquivo de sessão de desempenho tem uma extensão .*psess*.
 
 2. Clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.
 
@@ -80,7 +81,7 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 
 6. (Opcional) Clique em **Também coletar informações de tempo de vida do objeto .NET** para coletar dados sobre as gerações de coleta de lixo nas quais a memória do objeto foi recuperada.
 
-     Para obter informações sobre as outras opções que estão disponíveis ao coletar dados de memória do .NET, consulte [Coletando a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
+     Para obter informações sobre as outras opções disponíveis durante a coleta de dados da memória do .NET, confira [Coletar dados de tempo de vida e de alocação de memória do .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Para selecionar a coleta de dados de simultaneidade usando as propriedades da sessão de desempenho
 
@@ -92,6 +93,6 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 
 ## <a name="see-also"></a>Consulte também
 
-[Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)  
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
 [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)  
 [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)

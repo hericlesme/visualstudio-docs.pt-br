@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c59395eb74f2c79c6a7d7e1b9c56f420e9705a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a86c7171b781f85ae4679209519267adcadcc090
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573304"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Como serializar informações de símbolo
-Você pode serializar os símbolos que são necessários para analisar seu aplicativo. A serialização de símbolos adiciona símbolos no arquivo .vsp. Ao adicionar informações de símbolo no arquivo .vsp, outras pessoas podem analisar um relatório de desempenho sem ter acesso aos símbolos originais. Se os símbolos não forem serializados, você deverá ter os arquivos originais instrumentados .exe e .pdb para analisar o arquivo .vsp.  
+Você pode serializar os símbolos que são necessários para analisar seu aplicativo. A serialização de símbolos adiciona símbolos ao arquivo .*vsp*. Ao adicionar informações de símbolo ao arquivo .*vsp*, outras pessoas podem analisar um relatório de desempenho sem ter acesso aos símbolos originais. Se os símbolos não forem serializados, você precisará ter os arquivos originais instrumentados .*exe* e .*pdb* para analisar o arquivo .*vsp*.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Para serializar informações de símbolo automaticamente  
   
@@ -35,6 +36,6 @@ Você pode serializar os símbolos que são necessários para analisar seu aplic
 3.  Em **Configuração Geral**, selecione **Serializar informações de símbolo automaticamente**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
- [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)   
+ [Como referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [Como salvar arquivos de relatório analisados](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)

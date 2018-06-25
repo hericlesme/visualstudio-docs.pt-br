@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765093"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Como coletar dados do contador de CPU
 
-Um contador de evento de CPU é usado para coletar dados de desempenho específicos de hardware. Este tópico mostra como coletar dados do contador de eventos quando você usa a método de criação de perfil de instrumentação.
+Um contador de evento de CPU é usado para coletar dados de desempenho específicos de hardware. Este artigo mostra como coletar dados do contador de eventos quando você usa o método de criação de perfil de instrumentação.
 
 Dois tipos de eventos do contador de CPU ocorrem:
 
@@ -40,11 +41,11 @@ Dois tipos de eventos do contador de CPU ocorrem:
 
 - Eventos de ramificação.
 
- Você pode coletar dados do contador de desempenho de duas formas no Criador de perfil:
+ Colete dados do contador de desempenho de duas formas no criador de perfil:
 
 - Colete dados de um ou mais contadores ao analisar por instrumentação.
 
-- Especifique um evento de contador como o intervalo de amostragem, quando você analisar por amostragem. Para obter mais informações, consulte [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md).
+- Especifique um evento de contador como o intervalo de amostragem, quando você analisar por amostragem. Para obter mais informações, confira [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Para coletar dados de contador de desempenho de CPU ao analisar por instrumentação
 
@@ -61,7 +62,7 @@ Dois tipos de eventos do contador de CPU ocorrem:
 
 ## <a name="see-also"></a>Consulte também
 
-[Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)  
+[Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)  
 [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)  
 [Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)  
 [Como escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)

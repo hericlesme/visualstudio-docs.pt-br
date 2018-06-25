@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c364c977ebd7f1160bd9265f2a0228bd2e514442
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454604"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765824"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 Neste tutorial para desenvolvimento no Visual Studio usando Node.js e Express, você criará um aplicativo Web Node.js simples, adicionará código a ele, explorará alguns recursos do IDE e executará o aplicativo. Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
@@ -27,17 +27,33 @@ Neste tutorial, você aprenderá como:
 > [!div class="checklist"]
 > * Criar um projeto Node.js
 > * Adicionar código
-> * Usar o IntelliSense
+> * Usar o IntelliSense para editar o código
 > * Executar o aplicativo
-> * Atingir um ponto de interrupção
+> * Atingir um ponto de interrupção no depurador
+
+## <a name="before-you-begin"></a>Antes de começar
+
+Aqui está algumas perguntas frequentes rápidas para apresentar alguns conceitos principais.
+
+### <a name="what-is-nodejs"></a>O que é o Node.js?
+
+O Node.js é um ambiente de tempo de execução do JavaScript do servidor que executa o JavaScript no servidor.
+
+### <a name="what-is-npm"></a>O que é o npm?
+
+npm é o gerenciador de pacotes padrão do Node.js. O gerenciador de pacotes facilita para os programadores publicar e compartilhar o código-fonte das bibliotecas do Node.js e foi projetado para simplificar a instalação, a atualização e a desinstalação de bibliotecas.
+
+### <a name="what-is-express"></a>O que é o Express?
+
+O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servidor do Node.js para criação de aplicativos Web. O Express permite que você use e escolha diferentes estruturas front-end para criar uma interface do usuário, como o Pug (anteriormente chamado de Jade). O Pug é usado neste tutorial.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de desenvolvimento de Node.js.
 
-    Se você ainda não instalou o Visual Studio, clique [aqui](http://www.visualstudio.com) para instalá-lo gratuitamente.
+    Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalá-lo gratuitamente.
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
 * Você precisa ter o tempo de execução do Node.js instalado.
 
@@ -45,32 +61,41 @@ Neste tutorial, você aprenderá como:
 
     Este tutorial foi testado com o Node.js 8.10.0.
 
-## <a name="create-a-project"></a>Criar um projeto
-Primeiro, você criará um projeto de aplicativo Web Node.js.
+## <a name="create-a-new-nodejs-project"></a>Criar um projeto Node.js
+
+O Visual Studio gerencia arquivos de um único aplicativo em um *projeto*. O projeto inclui os arquivos de configuração, recursos e código-fonte.
+
+Neste tutorial, você começará com um projeto simples que contém o código para um aplicativo Node.js e Express.
 
 1. Abra o Visual Studio 2017.
 
-1. Na barra de menus superior, selecione **Arquivo** > **Novo** > **Projeto...**.
+1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
-1. Na caixa de diálogo **Novo projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, selecione **Aplicativo Basic Azure Node.js Express 4** e, em seguida, escolha **OK**.
+1. Na caixa de diálogo **Novo projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, selecione **Aplicativo Node.js Express 4 Básico do Azure** e, em seguida, escolha **OK**.
 
-     Se não vir o modelo de projeto **Aplicativo Basic Azure Node.js Express 4**, você deverá instalar a carga de trabalho de **desenvolvimento do Node.js** primeiro.
+     Se o modelo de projeto **Aplicativo Node.js Express 4 Básico do Azure** não for exibido, você precisará instalar a carga de trabalho de **desenvolvimento do Node.js** primeiro (confira os Pré-requisitos para obter instruções).
 
-    O Visual Studio cria a nova solução e abre seu projeto. O arquivo de projeto *app.js* é aberto no editor (painel esquerdo).
+    O Visual Studio cria a solução e abre o projeto no painel direito. O arquivo de projeto *app.js* é aberto no editor (painel esquerdo).
 
-    - O seu projeto está realçado em negrito, usando o nome que você forneceu na caixa de diálogo **Novo Projeto**. No sistema de arquivos, este projeto é representado por um arquivo *.njsproj* na pasta do projeto. Você pode definir propriedades e variáveis de ambiente associadas ao projeto clicando com o botão direito do mouse no projeto e escolhendo **Propriedades**. Você pode fazer o ciclo com outras ferramentas de desenvolvimento, porque o arquivo de projeto não faz alterações personalizadas na fonte do projeto Node.js.
+    ![Estrutura do projeto](../nodejs/media/tutorial-project-structure.png)
 
-    - No nível superior está uma solução que, por padrão, tem o mesmo nome que o projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados.
+    (1) Realçado em **negrito** no projeto, usando o nome fornecido na caixa de diálogo **Novo Projeto**. No sistema de arquivos, este projeto é representado por um arquivo *.njsproj* na pasta do projeto. Você pode definir propriedades e variáveis de ambiente associadas ao projeto clicando com o botão direito do mouse no projeto e escolhendo **Propriedades**. Você pode fazer o ciclo com outras ferramentas de desenvolvimento, porque o arquivo de projeto não faz alterações personalizadas na fonte do projeto Node.js.
 
-    - O nó de npm mostra os pacotes npm instalados. Você pode clicar com o botão direito do mouse no nó de npm para pesquisar e instalar pacotes de npm usando uma caixa de diálogo.
+    (2) No nível superior, há uma solução que, por padrão, tem o mesmo nome do projeto. Uma solução, representada por um arquivo *.sln* no disco, é um contêiner para um ou mais projetos relacionados.
 
-    - Arquivos de projeto como *app.js* aparecem no nó do projeto. *app.js* é o arquivo de inicialização do projeto.
+    (3) O nó do npm mostra os pacotes npm instalados. Clique com o botão direito do mouse no nó do npm para pesquisar e instalar pacotes npm usando uma caixa de diálogo ou instalar e atualizar pacotes usando as configurações de *package.json* e as opções de clique com o botão direito do mouse no nó do npm.
+
+    (4) *package.json* é um arquivo usado pelo npm para gerenciar versões e dependências de pacote para os pacotes instalados localmente.
+
+    (5) Os arquivos de projeto como *app.js* são mostrados no nó do projeto. *app.js* é o arquivo de inicialização do projeto e é por isso que ele é exibido em **negrito**. Defina o arquivo de inicialização clicando com o botão direito do mouse em um arquivo no projeto e selecionando **Definir como arquivo de inicialização do Node.js**.
 
 1. Abra o nó **npm** e certifique-se de que todos os pacotes de npm necessários estejam presentes.
 
-    Se algum deles estiver ausente (ícone de ponto de exclamação), clique com o botão direito do mouse no nó **npm** e escolha **Instalar Pacotes npm Ausentes**.
+    Se um pacote estiver ausente (ícone de ponto de exclamação), clique com o botão direito do mouse no nó **npm** e escolha **Instalar Pacotes npm Ausentes**.
 
 ## <a name="add-some-code"></a>Adicionar código
+
+O aplicativo usa o Pug para a estrutura front-end de JavaScript. O Pug usa o código de marcação simples que é compilado em HTML. (O Pug é definido como o mecanismo de exibição em *app.js*. O código que define o mecanismo de exibição em *app.js* é `app.set('view engine', 'pug');`.)
 
 1. No Gerenciador de Soluções (painel direito), abra a pasta de exibições e abra *index.pug*.
 
@@ -96,7 +121,7 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-    O código anterior adiciona uma marcação para gerar dinamicamente uma página HTML com um título e uma mensagem de boas-vindas. A página também inclui o código para exibir uma imagem que muda sempre que você pressiona um botão.
+    O código anterior é usado para gerar dinamicamente uma página HTML com um título e uma mensagem de boas-vindas. A página também inclui o código para exibir uma imagem que muda sempre que você pressiona um botão.
 
 1. Na pasta de rotas, abra *index.js*.
 
@@ -123,15 +148,17 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
     });
     ```
     
-    O código anterior define a página atual usando o objeto roteador Express e renderiza a página, passando o título e o objeto de dados para a página.
+    O código anterior define a página atual usando o objeto roteador Express e renderiza a página, passando o título e o objeto de dados para a página. O arquivo *index.pug* é especificado aqui como a página a ser carregada quando *index.js* for executado. *index.js* é configurado como a rota padrão no código *app.js* (não mostrado).
 
     Para demonstrar os vários recursos do Visual Studio, incluímos um erro na linha de código que contém `res.render`. Precisamos corrigir o erro antes de poder executar o aplicativo. Corrigiremos o erro na próxima seção.
 
 ## <a name="use-intellisense"></a>Usar o IntelliSense
 
+O IntelliSense é uma ferramenta do Visual Studio que ajuda você na codificação.
+
 1. Em *index.js*, vá para a linha de código que contém `res.render`.
 
-1. Coloque o cursor após a cadeia de caracteres `data`, digite `: get` e o IntelliSense mostrará a função `getData`. Selecione `getData`.
+1. Coloque o cursor após a cadeia de caracteres `data`, digite `: get` e o IntelliSense mostrará a função `getData` definida anteriormente no código. Selecione `getData`.
 
     ![Usar o IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
@@ -141,7 +168,7 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
     A última linha desta mensagem informa que o interpretador de JavaScript esperava uma vírgula (`,`).
 
-1. Clique na guia **Lista de Erros**.
+1. No painel inferior, clique na guia **Lista de Erros**.
 
     Você verá o aviso e a descrição juntamente com o nome de arquivo e número de linha.
 
@@ -149,7 +176,11 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
 1. Corrija o código adicionando a vírgula (`,`) antes de `"data"`.
 
+    Quando for corrigida, a linha de código deverá ter esta aparência: `res.render('index', { title: 'Express', "data": getData() });`
+
 ## <a name="set-a-breakpoint"></a>Definir um ponto de interrupção
+
+Executaremos o aplicativo com o depurador do Visual Studio anexado. Antes de fazermos isso, precisamos definir um ponto de interrupção.
 
 1. Em *index.js*, clique na medianiz esquerda antes da seguinte linha de código para definir um ponto de interrupção:
 
@@ -195,7 +226,7 @@ Primeiro, você criará um projeto de aplicativo Web Node.js.
 
     Na caixa de diálogo **Serviço de Aplicativo**, você pode entrar na sua conta do Azure e conectar-se a assinaturas do Azure existentes.
 
-1. Siga as etapas restantes para selecionar uma assinatura, escolha ou crie um grupo de recursos, escolha ou crie um plano de serviço de aplicativo e, em seguida, siga as etapas quando solicitado para publicar no Azure. Para obter instruções mais detalhadas, consulte [Publicar no site do Azure usando a implantação da Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy).
+1. Siga as etapas restantes para selecionar uma assinatura, escolha ou crie um grupo de recursos, escolha ou crie um plano de serviço de aplicativo e, em seguida, siga as etapas quando solicitado para publicar no Azure. Para obter instruções mais detalhadas, confira [Publicar no site do Azure usando a implantação da Web](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy).
 
 1. A janela **Saída** mostra o andamento na implantação para o Azure.
 

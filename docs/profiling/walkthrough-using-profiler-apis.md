@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: usar APIs do criador de perfil | Microsoft Docs'
+title: 'Passo a passo: Usar APIs do criador de perfil | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448916"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572967"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Passo a passo: usar APIs do criador de perfil
 O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Você usará as APIs do criador de perfil para limitar a quantidade de dados coletados durante a criação de perfil de instrumentação.  
@@ -31,9 +31,9 @@ O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferram
   
  O criador de perfil do Visual Studio permite que você limite a coleta de dados. Este passo a passo oferece um exemplo de como limitar a coleta de dados usando as APIs do criador de perfil. O criador de perfil do Visual Studio fornece uma API para controlar a coleta de dados de dentro de um aplicativo.  
   
- Para o código nativo, as APIs do criador de perfil do Visual Studio estão em VSPerf.dll. Por padrão, VSPerf.h e VSPerf.lib, e a biblioteca de importação, VSPerf.lib, estão localizados no diretório Microsoft Visual Studio 9\Team Tools\Performance Tools.  
+ Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
   
- Para o código gerenciado, as APIs do criador de perfil estão na Microsoft.VisualStudio.Profiler.dll. Essa DLL está no diretório Microsoft Visual Studio 9\Team Tools\Performance Tools. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Profiler>.  
+ Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Este passo a passo pressupõe que a escolha do ambiente de desenvolvimento está configurada para dar suporte à depuração e amostragem. Os tópicos a seguir fornecem uma visão geral desses pré-requisitos:  
@@ -59,7 +59,7 @@ DataCollection.CurrentId);
 1.  Crie um novo projeto C# no Visual Studio, ou use uma compilação de linha de comando, dependendo de sua preferência.  
   
     > [!NOTE]
-    >  A compilação deve fazer referência à biblioteca Microsoft.VisualStudio.Profiler.dll, localizada no diretório Microsoft Visual Studio 9\Team Tools\Performance Tools.  
+    >  O build precisa referenciar a biblioteca *Microsoft.VisualStudio.Profiler.dll*, localizada no diretório *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
   
 2.  Copie e cole o código a seguir em seu projeto:  
   
@@ -118,7 +118,7 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Para coletar e exibir dados no IDE do Visual Studio  
   
-1.  Abra o IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. No menu **Analisar**, aponte para **Criador de Perfil** e, em seguida, selecione **Nova Sessão de Desempenho**  
+1.  Abra o IDE do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. No menu **Analisar**, aponte para **Criador de Perfil** e, em seguida, selecione **Nova Sessão de Desempenho**.  
   
 2.  Adicione o binário compilado à lista **Destinos** na janela **Gerenciador de Desempenho**. Clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Localize o binário na caixa de diálogo **Adicionar Binário de Destino** e clique em **Abrir**.  
   
@@ -158,10 +158,10 @@ DataCollection.CurrentId);
   
 8.  Digite este comando:**VSPerfReport /calltrace:\<filename>.vsp**  
   
-     Um arquivo .csv é criado no diretório atual com os dados de desempenho resultantes.  
+     Um arquivo .*csv* é criado no diretório atual com os dados de desempenho resultantes.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Introdução](../profiling/getting-started-with-performance-tools.md)   
- [Criar perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

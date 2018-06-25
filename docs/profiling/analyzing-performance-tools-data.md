@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b5f5000ab18360d5146603862381e056b37284
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263220"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690846"
 ---
 # <a name="analyze-performance-tools-data"></a>Analisar dados de ferramentas de desempenho
 Os relatórios de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permitem exibir e analisar problemas de desempenho do aplicativo. Esta seção apresenta uma visão geral dos relatórios de desempenho e das exibições que podem ser usados para examinar dados de desempenho.  
@@ -34,7 +34,7 @@ Os relatórios de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsp
 |----------|---------------------|  
 |**Usar regras de desempenho para identificar problemas rapidamente:** regras de desempenho das Ferramentas de Criação de Perfil identificam problemas comuns e ajudam a navegar facilmente no código-fonte que contém o problema. Tópicos de ajuda detalhados com frequência podem sugerir uma solução.|-   [Usar regras de desempenho para analisar dados](../profiling/using-performance-rules-to-analyze-data.md)|  
 |**Entender os detalhes da exibição de relatório:** exibições de relatório das Ferramentas de Criação de Perfil apresentam dados de desempenho agregados para processos, threads, módulos e funções de uma execução de criação de perfil. Os dados exibidos dependem do método de criação de perfil usado para coletar os dados.|-   [Exibições de relatório de desempenho](../profiling/performance-report-views.md)|  
-|**Configurar, classificar e filtrar exibições de relatório:** você pode especificar e ordenar as colunas de dados a exibir em um relatório, classificar as linhas do relatório e filtrar os dados para incluir somente um segmento de tempo especificado por você.|-   [Personalizar exibições de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)|  
+|**Configurar, classificar e filtrar exibições de relatório:** você pode especificar e ordenar as colunas de dados a exibir em um relatório, classificar as linhas do relatório e filtrar os dados para incluir somente um segmento de tempo especificado por você.|-   [Personalizar as exibições de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Comparar arquivos de dados de desempenho](../profiling/comparing-performance-data-files.md)  
