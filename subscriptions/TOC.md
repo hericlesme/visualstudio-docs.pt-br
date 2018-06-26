@@ -1,4 +1,5 @@
 # [Assinaturas do Visual Studio](index.md)
+## [Novidades](whats-new-in-subscriptions.md)
 ## Experiências de assinante
 ### [Usar o Portal do Assinante](using-the-subscriber-portal.md)
 #### [Ativar assinaturas de varejo](activate-store-subscriptions.md)

@@ -8,12 +8,12 @@
   items:
     - name: Introdução à implantação
       href: deploying-applications-services-and-components.md
-    - name: Implantar em uma pasta local
-      href: quickstart-deploy-to-local-folder.md
+    - name: Implantar no Serviço de Aplicativo do Azure
+      href: quickstart-deploy-to-azure.md
     - name: Implantar um site
       href: quickstart-deploy-to-a-web-site.md
-    - name: Implantar no Azure
-      href: quickstart-deploy-to-azure.md
+    - name: Implantar em uma pasta local
+      href: quickstart-deploy-to-local-folder.md
 - name: Tutoriais
   items:
     - name: .NET
