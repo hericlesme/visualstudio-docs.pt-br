@@ -84,6 +84,8 @@
               items:
                 - name: 'Instruções passo a passo: criando uma tarefa embutida'
                   href: walkthrough-creating-an-inline-task.md
+            - name: Tarefas embutidas do MSBuild com RoslynCodeTaskFactory
+              href: msbuild-roslyncodetaskfactory.md
         - name: Comparando propriedades e itens
           href: comparing-properties-and-items.md
         - name: Caracteres especiais no MSBuild
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Tarefa Delete
               href: delete-task.md
+            - name: Tarefa DownloadFile
+              href: downloadfile-task.md
             - name: Tarefa Error
               href: error-task.md
             - name: Tarefa Exec
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: Tarefa UnregisterAssembly
               href: unregisterassembly-task.md
+            - name: Tarefa de descompactação
+              href: unzip-task.md
             - name: Tarefa UpdateManifest
               href: updatemanifest-task.md
             - name: Tarefa Vbc
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: Tarefa XslTransformation
               href: xsltransformation-task.md
+            - name: Tarefa ZipDirectory
+              href: zipdirectory-task.md
         - name: Condições do MSBuild
           href: msbuild-conditions.md
         - name: Constructos condicionais do MSBuild
